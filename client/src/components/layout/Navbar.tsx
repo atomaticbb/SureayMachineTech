@@ -29,9 +29,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer group">
-              <img 
-                src="/likun-logo.svg" 
-                alt="Likun Logo" 
+              <img
+                src="/likun-logo.svg"
+                alt="Likun Logo"
                 className="w-10 h-10 transition-transform group-hover:scale-110"
               />
               <span className="text-foreground font-bold text-sm tracking-wider group-hover:text-primary transition-colors">
@@ -42,7 +42,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <Link key={item.path} href={item.path}>
                 <span
                   className={`text-sm font-medium tracking-wide transition-colors cursor-pointer ${
@@ -77,7 +77,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-4 border-t border-border">
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <Link key={item.path} href={item.path}>
                 <div
                   className={`block py-2 text-sm font-medium tracking-wide transition-colors cursor-pointer ${

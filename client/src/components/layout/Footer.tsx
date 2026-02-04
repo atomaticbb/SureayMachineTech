@@ -16,8 +16,9 @@ export default function Footer() {
               LIKUN MACHINERY
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Professional manufacturer of high-performance shredder blades and cutting tools. 
-              Direct factory pricing with superior wear resistance.
+              Professional manufacturer of high-performance shredder blades and
+              cutting tools. Direct factory pricing with superior wear
+              resistance.
             </p>
           </div>
 
@@ -27,10 +28,18 @@ export default function Footer() {
               QUICK LINKS
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">Products</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Materials & Metallurgy</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Custom OEM Services</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">About Us</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Products
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Materials & Metallurgy
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Custom OEM Services
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                About Us
+              </li>
             </ul>
           </div>
 
@@ -40,10 +49,18 @@ export default function Footer() {
               PRODUCTS
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">Single Shaft Blades</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Dual Shaft Blades</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Hook Blades</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Granulator Blades</li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Single Shaft Blades
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Dual Shaft Blades
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Hook Blades
+              </li>
+              <li className="hover:text-primary transition-colors cursor-pointer">
+                Granulator Blades
+              </li>
             </ul>
           </div>
 
@@ -55,7 +72,10 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 text-primary flex-shrink-0" />
-                <span>Bowang High-tech Industrial Development Zone, Ma'anshan City, China</span>
+                <span>
+                  Bowang High-tech Industrial Development Zone, Ma'anshan City,
+                  China
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-primary flex-shrink-0" />
@@ -72,10 +92,17 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2026 Likun Machinery & Cutting Tools Co., Ltd. All rights reserved.</p>
+            <p>
+              © 2026 Likun Machinery & Cutting Tools Co., Ltd. All rights
+              reserved.
+            </p>
             <div className="flex gap-6">
-              <span className="hover:text-primary transition-colors cursor-pointer">Privacy Policy</span>
-              <span className="hover:text-primary transition-colors cursor-pointer">Terms of Service</span>
+              <span className="hover:text-primary transition-colors cursor-pointer">
+                Privacy Policy
+              </span>
+              <span className="hover:text-primary transition-colors cursor-pointer">
+                Terms of Service
+              </span>
             </div>
           </div>
         </div>

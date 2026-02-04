@@ -15,7 +15,6 @@ import ProductDetailMetal from "./pages/ProductDetailMetal";
 import ProductDetailPlastic from "./pages/ProductDetailPlastic";
 import Applications from "./pages/Applications";
 
-
 function Router() {
   return (
     <Switch>
@@ -44,9 +43,7 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="dark"
-      >
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
           <Router />
