@@ -51,26 +51,48 @@ export default function Home() {
     },
   ];
 
-  const features = [
+  const processSteps = [
     {
-      icon: Flame,
-      title: "30-50% Longer Lifespan",
-      description: "Extended blade durability reduces replacements and production downtime",
+      step: "Step 1",
+      title: "Customer Confirms Drawings",
+      description: "Detailed technical review and specification confirmation with customer requirements",
+      image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=80",
     },
     {
-      icon: Gauge,
-      title: "Batch Consistency",
-      description: "Predictable performance eliminates quality variance between production runs",
+      step: "Step 2",
+      title: "Material Cutting",
+      description: "Precision cutting of premium steel materials to exact dimensions",
+      image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=600&q=80",
     },
     {
-      icon: Shield,
-      title: "Premium Materials",
-      description: "D2, SKD11, and carbide-tipped options for maximum wear resistance",
+      step: "Step 3",
+      title: "Quenching Process",
+      description: "Controlled heat treatment to achieve optimal hardness and toughness",
+      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80",
     },
     {
-      icon: Factory,
-      title: "Factory Direct Pricing",
-      description: "Save 30% on OEM costs with direct manufacturer pricing",
+      step: "Step 4",
+      title: "Initial Hardness Inspection After Quenching",
+      description: "Rigorous hardness testing to verify heat treatment effectiveness",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80",
+    },
+    {
+      step: "Step 5",
+      title: "Processing",
+      description: "CNC machining and grinding to achieve precise cutting edges and tolerances",
+      image: "https://images.unsplash.com/photo-1565689157206-0fddef7589a2?w=600&q=80",
+    },
+    {
+      step: "Step 6",
+      title: "Inspection",
+      description: "Comprehensive quality control including dimensional and visual inspection",
+      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80",
+    },
+    {
+      step: "Step 7",
+      title: "Final Product Storage",
+      description: "Proper packaging and storage ensuring product protection until delivery",
+      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80",
     },
   ];
 
@@ -202,31 +224,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How We Help Section */}
+      {/* Our Process Section */}
       <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              How We Help
+              Our Process
             </h2>
             <p className="text-xl text-muted-foreground">
-              We optimize material selection and heat treatment to match exactly what your equipment needs.
+              From customer confirmation to final delivery, every step ensures precision and quality
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {features.map((feature, index) => (
-              <div key={index} className="flex gap-6 p-6 bg-background rounded-sm border border-border hover:border-primary transition-all duration-300 group">
-                <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-sm bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <feature.icon className="text-primary" size={28} />
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {processSteps.map((process, index) => (
+              <Card key={index} className="overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={process.image}
+                    alt={process.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-foreground">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
-                </div>
-              </div>
+                <CardContent className="p-6 space-y-3">
+                  <div className="text-sm font-bold text-primary">{process.step}</div>
+                  <h3 className="text-lg font-bold text-foreground">{process.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{process.description}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
