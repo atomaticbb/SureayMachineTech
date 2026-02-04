@@ -217,12 +217,9 @@ export default function ProductDetail() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="specs" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 bg-card border border-border">
+              <TabsList className="grid w-full grid-cols-2 bg-card border border-border">
                 <TabsTrigger value="specs" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                   Specifications
-                </TabsTrigger>
-                <TabsTrigger value="compatibility" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                  Compatibility
                 </TabsTrigger>
                 <TabsTrigger value="applications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                   Applications
@@ -248,38 +245,6 @@ export default function ProductDetail() {
                         in length with various thickness options (15mm, 20mm, 25mm, 30mm, 40mm). Contact us with your 
                         machine model or drawings for a custom quote.
                       </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-
-              <TabsContent value="compatibility" className="mt-8">
-                <Card className="bg-card border-border">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-foreground mb-6">Compatible Machine Models</h3>
-                    <div className="space-y-6">
-                      {compatibleMachines.map((machine, index) => (
-                        <div key={index} className="p-6 bg-background rounded-sm border border-border">
-                          <h4 className="text-xl font-bold text-primary mb-4">{machine.brand}</h4>
-                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            {machine.models.map((model, idx) => (
-                              <div key={idx} className="flex items-center gap-2">
-                                <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                                <span className="text-sm text-muted-foreground">{model}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-8 text-center">
-                      <p className="text-muted-foreground mb-4">
-                        Don't see your machine model listed? We likely have it in our database.
-                      </p>
-                      <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                        Check Compatibility
-                        <ArrowRight className="ml-2" size={16} />
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>
