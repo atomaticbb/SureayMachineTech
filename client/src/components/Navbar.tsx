@@ -28,10 +28,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
-            <div className="flex items-center gap-2 cursor-pointer group">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-destructive flex items-center justify-center blade-edge-highlight">
-                <span className="text-primary-foreground font-bold text-sm font-mono">L</span>
-              </div>
+            <div className="flex items-center gap-3 cursor-pointer group">
+              <img 
+                src="/likun-logo.svg" 
+                alt="Likun Logo" 
+                className="w-10 h-10 transition-transform group-hover:scale-110"
+              />
               <span className="text-foreground font-bold text-sm tracking-wider group-hover:text-primary transition-colors">
                 LIKUN SHREDDER BLADES & KNIVES
               </span>

@@ -18,8 +18,10 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const processScrollRef = useRef<HTMLDivElement>(null);
   const compatibleBrands = [
     "WEIMA", "SSI", "UNTHA", "VECOPLAN", "LINDNER", "HAMMEL"
   ];
@@ -118,6 +120,32 @@ export default function Home() {
       description: "100% quality verification before shipping",
     },
   ];
+
+  // Auto-scroll for Our Process section
+  useEffect(() => {
+    const scrollContainer = processScrollRef.current;
+    if (!scrollContainer) return;
+
+    let scrollPosition = 0;
+    const cardWidth = 320 + 24; // card width (w-80 = 320px) + gap (gap-6 = 24px)
+    const totalCards = processSteps.length;
+
+    const autoScroll = setInterval(() => {
+      scrollPosition += cardWidth;
+      
+      // Reset to start when reaching the end
+      if (scrollPosition >= cardWidth * totalCards) {
+        scrollPosition = 0;
+      }
+      
+      scrollContainer.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+    }, 3000); // Scroll every 3 seconds
+
+    return () => clearInterval(autoScroll);
+  }, [processSteps.length]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -236,7 +264,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="overflow-x-auto pb-4">
+          <div ref={processScrollRef} className="overflow-x-auto pb-4 scroll-smooth">
             <div className="flex gap-6 min-w-max">
               {processSteps.map((process, index) => (
                 <Card key={index} className="w-80 flex-shrink-0 overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group">

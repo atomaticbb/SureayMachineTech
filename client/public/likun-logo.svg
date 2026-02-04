@@ -1,0 +1,50 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Industrial blade-inspired logo for Likun Machinery -->
+  
+  <!-- Outer hexagon frame (industrial nut shape) -->
+  <path d="M100 10 L170 50 L170 150 L100 190 L30 150 L30 50 Z" 
+        stroke="#FF4500" 
+        stroke-width="4" 
+        fill="none"
+        stroke-linejoin="miter"/>
+  
+  <!-- Inner blade edge design -->
+  <g transform="translate(100, 100)">
+    <!-- Central "L" for Likun with sharp blade edges -->
+    <path d="M-30 -50 L-30 30 L10 30 L10 20 L-20 20 L-20 -50 Z" 
+          fill="#FF4500"/>
+    
+    <!-- Diagonal blade cut accent -->
+    <path d="M15 -40 L45 -10 L40 -5 L10 -35 Z" 
+          fill="#FF4500"/>
+    
+    <!-- Secondary blade element -->
+    <path d="M-40 -30 L-35 -35 L-5 -5 L-10 0 Z" 
+          fill="#FF6B35" 
+          opacity="0.8"/>
+    
+    <!-- Precision cutting edge detail -->
+    <line x1="-30" y1="40" x2="30" y2="40" 
+          stroke="#FF4500" 
+          stroke-width="3" 
+          stroke-linecap="square"/>
+    
+    <!-- Industrial gear teeth accent (bottom) -->
+    <rect x="-35" y="45" width="8" height="10" fill="#FF4500"/>
+    <rect x="-20" y="45" width="8" height="10" fill="#FF4500"/>
+    <rect x="-5" y="45" width="8" height="10" fill="#FF4500"/>
+    <rect x="10" y="45" width="8" height="10" fill="#FF4500"/>
+    <rect x="25" y="45" width="8" height="10" fill="#FF4500"/>
+  </g>
+  
+  <!-- Company name text -->
+  <text x="100" y="180" 
+        font-family="'Rajdhani', sans-serif" 
+        font-size="16" 
+        font-weight="700" 
+        fill="#FF4500" 
+        text-anchor="middle"
+        letter-spacing="2">
+    LIKUN
+  </text>
+</svg>
