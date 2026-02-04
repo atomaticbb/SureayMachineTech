@@ -162,43 +162,6 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Compatible Brands */}
-      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
-        <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Shop by Machine Brand
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Direct replacement blades for leading shredder manufacturers
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {compatibleBrands.map((brand, index) => (
-              <Card
-                key={index}
-                className="bg-background border-border hover:border-primary transition-all duration-300 group cursor-pointer"
-              >
-                <CardContent className="p-8 space-y-4 text-center">
-                  <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors font-mono">
-                    {brand.name}
-                  </h3>
-                  <p className="text-muted-foreground">{brand.models}</p>
-                  <Button
-                    variant="ghost"
-                    className="text-primary hover:text-primary-foreground hover:bg-primary"
-                  >
-                    View Compatible Blades
-                    <ArrowRight className="ml-2" size={16} />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Material Options */}
       <section className="py-24 bg-background">
         <div className="container">

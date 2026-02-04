@@ -163,31 +163,38 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: "⏱️",
+                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
                 title: "Premature Wear",
                 description: "Blades dulling too fast, forcing frequent changeovers and halting production lines.",
               },
               {
-                icon: "📊",
+                image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
                 title: "Unstable Performance",
                 description: "Inconsistent cutting quality leading to material jams and reprocessing needs.",
               },
               {
-                icon: "💰",
+                image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
                 title: "Excessive OEM Costs",
                 description: "Paying premium prices for brand-name replacement blades with standard durability.",
               },
               {
-                icon: "⚠️",
+                image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
                 title: "Quality Variance",
                 description: "Unpredictable lifespan between batches making maintenance planning impossible.",
               },
             ].map((issue, index) => (
-              <Card key={index} className="bg-card border-border hover:border-primary transition-all duration-300">
-                <CardContent className="p-6 space-y-4">
-                  <div className="text-4xl">{issue.icon}</div>
+              <Card key={index} className="bg-card border-border hover:border-primary transition-all duration-300 overflow-hidden group">
+                <div className="relative aspect-video overflow-hidden">
+                  <img
+                    src={issue.image}
+                    alt={issue.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
+                </div>
+                <CardContent className="p-6 space-y-3">
                   <h3 className="text-xl font-bold text-foreground">{issue.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{issue.description}</p>
+                  <p className="text-muted-foreground leading-relaxed text-sm">{issue.description}</p>
                 </CardContent>
               </Card>
             ))}
