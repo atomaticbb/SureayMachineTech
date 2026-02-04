@@ -11,8 +11,8 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Download, Package, Ruler, Shield, Zap } from "lucide-react";
 import { useState, useEffect } from "react";
 
