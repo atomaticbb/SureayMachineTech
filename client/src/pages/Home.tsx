@@ -110,19 +110,19 @@ export default function Home() {
             alt="Shredder Blade"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-background/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
         </div>
 
         {/* Hero Content */}
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-8">
-            <div className="bg-background/90 backdrop-blur-sm p-8 rounded-sm border border-border">
-              <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight tracking-tight">
-                ENGINEERING THE
-                <span className="block text-primary mt-2">SHARPEST EDGE</span>
-                FOR THE TOUGHEST WASTE
-              </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed mt-6">
+            <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight tracking-tight">
+              ENGINEERING THE
+              <span className="block text-primary mt-2">SHARPEST EDGE</span>
+              FOR THE TOUGHEST WASTE
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
               Maximize your shredder's uptime with replacement blades designed for superior wear resistance
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -140,7 +140,6 @@ export default function Home() {
               >
                 Find Your Blade
               </Button>
-            </div>
             </div>
           </div>
         </div>
@@ -164,38 +163,31 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+                icon: "⏱️",
                 title: "Premature Wear",
                 description: "Blades dulling too fast, forcing frequent changeovers and halting production lines.",
               },
               {
-                image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+                icon: "📊",
                 title: "Unstable Performance",
                 description: "Inconsistent cutting quality leading to material jams and reprocessing needs.",
               },
               {
-                image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
+                icon: "💰",
                 title: "Excessive OEM Costs",
                 description: "Paying premium prices for brand-name replacement blades with standard durability.",
               },
               {
-                image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
+                icon: "⚠️",
                 title: "Quality Variance",
                 description: "Unpredictable lifespan between batches making maintenance planning impossible.",
               },
             ].map((issue, index) => (
-              <Card key={index} className="bg-card border-border hover:border-primary transition-all duration-300 overflow-hidden group">
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={issue.image}
-                    alt={issue.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
-                </div>
-                <CardContent className="p-6 space-y-3">
+              <Card key={index} className="bg-card border-border hover:border-primary transition-all duration-300">
+                <CardContent className="p-6 space-y-4">
+                  <div className="text-4xl">{issue.icon}</div>
                   <h3 className="text-xl font-bold text-foreground">{issue.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">{issue.description}</p>
+                  <p className="text-muted-foreground leading-relaxed">{issue.description}</p>
                 </CardContent>
               </Card>
             ))}
