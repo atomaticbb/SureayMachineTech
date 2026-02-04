@@ -110,19 +110,19 @@ export default function Home() {
             alt="Shredder Blade"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-background/20 to-transparent"></div>
         </div>
 
         {/* Hero Content */}
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-8">
-            <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight tracking-tight">
-              ENGINEERING THE
-              <span className="block text-primary mt-2">SHARPEST EDGE</span>
-              FOR THE TOUGHEST WASTE
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
+            <div className="bg-background/90 backdrop-blur-sm p-8 rounded-sm border border-border">
+              <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight tracking-tight">
+                ENGINEERING THE
+                <span className="block text-primary mt-2">SHARPEST EDGE</span>
+                FOR THE TOUGHEST WASTE
+              </h1>
+              <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed mt-6">
               Maximize your shredder's uptime with replacement blades designed for superior wear resistance
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -140,6 +140,7 @@ export default function Home() {
               >
                 Find Your Blade
               </Button>
+            </div>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ export default function Contact() {
             alt="Factory"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/95 to-background"></div>
         </div>
 
         <div className="container relative z-10">
