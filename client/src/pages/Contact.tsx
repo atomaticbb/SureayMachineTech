@@ -150,12 +150,19 @@ export default function Contact() {
               </Card>
             </div>
 
-            {/* Right Column - Contact Info & Map */}
-            <div className="space-y-8">
+            {/* Right Column - Contact Info */}
+            <div>
               {/* Contact Information */}
               <Card className="bg-card border-border">
                 <CardContent className="p-8 space-y-6">
-                  <h3 className="text-2xl font-bold text-foreground">Contact Information</h3>
+                  <div className="space-y-3">
+                    <h2 className="text-3xl font-bold text-foreground">
+                      Contact Information
+                    </h2>
+                    <p className="text-muted-foreground">
+                      Reach out to us through any of these channels
+                    </p>
+                  </div>
                   
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
@@ -207,26 +214,7 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              {/* Factory Map */}
-              <Card className="bg-card border-border overflow-hidden">
-                <div className="aspect-video">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107350.36181634434!2d120.44!3d31.87!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b3c1c8e8e8e8e8%3A0x8e8e8e8e8e8e8e8e!2sZhangjiagang%2C%20Suzhou%2C%20Jiangsu%2C%20China!5e0!3m2!1sen!2sus!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-                <CardContent className="p-6">
-                  <h4 className="font-bold text-foreground mb-2">Visit Our Factory</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Schedule a factory tour to see our manufacturing process and quality control firsthand
-                  </p>
-                </CardContent>
-              </Card>
+
             </div>
           </div>
         </div>
