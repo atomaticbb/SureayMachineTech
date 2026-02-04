@@ -11,6 +11,8 @@ import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/ProductDetail";
+import ProductDetailMetal from "./pages/ProductDetailMetal";
+import ProductDetailPlastic from "./pages/ProductDetailPlastic";
 import Applications from "./pages/Applications";
 
 
@@ -20,6 +22,8 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/products"} component={Products} />
       <Route path={"/products/single-shaft"} component={ProductDetail} />
+      <Route path={"/products/metal"} component={ProductDetailMetal} />
+      <Route path={"/products/plastic"} component={ProductDetailPlastic} />
       <Route path={"/materials"} component={Materials} />
       <Route path={"/custom"} component={Custom} />
       <Route path={"/about"} component={About} />

@@ -1,6 +1,6 @@
 /*
- * Design: Forged Aesthetics - Product catalog with blade-cut sections
- * Grid layout with metal texture cards and forge orange accents
+ * Design: Forged Aesthetics - Products catalog page
+ * Showcasing 3 main product categories
  */
 
 import { Button } from "@/components/ui/button";
@@ -11,69 +11,51 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Products() {
-  const productCategories = [
+  const products = [
     {
+      id: "single-shaft",
       title: "Single Shaft Shredder Blades",
-      description: "High-torque single shaft blades for primary size reduction of bulky materials",
-      specs: ["D2/SKD11 Steel", "58-62 HRC", "Custom Dimensions"],
+      slug: "/products/single-shaft",
       image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
+      description: "High-performance single shaft shredder blades engineered for maximum wear resistance and superior cutting efficiency across diverse waste materials.",
+      features: [
+        "Available in standard sizes: 35×35×23, 40×40×25, 45×45×22, 50×50×30, 80×80×25mm",
+        "High alloy tool steel construction for extended service life",
+        "Customizable dimensions for specific machine models",
+        "Optimized heat treatment for impact resistance",
+        "Suitable for tires, plastics, biomass, wood, and textiles",
+      ],
+      applications: ["Plastic recycling", "Tire shredding", "Wood processing", "Textile waste", "General waste"],
     },
     {
-      title: "Dual Shaft Shredder Blades",
-      description: "Interlocking blade pairs for aggressive cutting of tough materials",
-      specs: ["Carbide Tipped Options", "Hook & Flat Designs", "WEIMA/SSI Compatible"],
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
-    },
-    {
-      title: "Granulator Blades",
-      description: "Precision ground blades for fine particle size reduction",
-      specs: ["Mirror Finish Edge", "±0.05mm Tolerance", "Extended Lifespan"],
+      id: "metal",
+      title: "Shredder Blades for Metal",
+      slug: "/products/metal",
       image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+      description: "Heavy-duty metal shredder blades designed to handle ferrous and non-ferrous metals with exceptional edge retention and minimal downtime.",
+      features: [
+        "Materials: 6CrW2Si, Cr12MoV, H13, H13K, W6Mo5CrV2, W18Cr4V",
+        "Superior hardness (58-62 HRC) for cutting steel, aluminum, copper",
+        "Precision ground cutting edges for clean, burr-free cuts",
+        "Vacuum heat treatment for uniform hardness distribution",
+        "Ideal for scrap metal yards and automotive recycling",
+      ],
+      applications: ["Aluminum cans", "Copper wire", "Steel drums", "Automotive parts", "Appliance housings"],
     },
     {
-      title: "Hook Blades",
-      description: "Specialized hook geometry for fiber and textile processing",
-      specs: ["Anti-Wrap Design", "Self-Cleaning", "Reduced Downtime"],
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
-    },
-    {
-      title: "Shredder Block Knives",
-      description: "Heavy-duty block knives for industrial waste shredders",
-      specs: ["Through-Hardened", "Multiple Cutting Edges", "Cost-Effective"],
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-    },
-    {
-      title: "Custom OEM Blades",
-      description: "Engineered to your exact specifications and drawings",
-      specs: ["Reverse Engineering", "Sample Matching", "24-48hr Quotes"],
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
-    },
-  ];
-
-  const compatibleBrands = [
-    {
-      name: "WEIMA",
-      models: "WLK, WL, WKS Series",
-    },
-    {
-      name: "SSI",
-      models: "Quad, Dual, Single Shaft",
-    },
-    {
-      name: "UNTHA",
-      models: "RS, XR, LR Series",
-    },
-    {
-      name: "VECOPLAN",
-      models: "VAZ, VIZ, VHZ Series",
-    },
-    {
-      name: "LINDNER",
-      models: "Jupiter, Micromat, Komet",
-    },
-    {
-      name: "HAMMEL",
-      models: "VB, VC, VD Series",
+      id: "plastic",
+      title: "Shredder Blades for Plastic",
+      slug: "/products/plastic",
+      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
+      description: "Specialized plastic shredder blades optimized for processing various plastic materials with minimal dust generation and consistent particle size.",
+      features: [
+        "Materials: T10A, 9CrSi, Cr12MoV for different plastic types",
+        "Sharp cutting angles designed for clean plastic shearing",
+        "Low friction coating options to prevent material buildup",
+        "Extended blade life on abrasive plastics like PVC and ABS",
+        "Compatible with single and double shaft shredders",
+      ],
+      applications: ["HDPE/PET bottles", "PVC pipes", "Polypropylene packaging", "Plastic film", "Rigid plastics"],
     },
   ];
 
@@ -84,75 +66,91 @@ export default function Products() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-5_1770202027000_na1fn_YmxhZGUtYXJyYXktZGlzcGxheQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTVfMTc3MDIwMjAyNzAwMF9uYTFmbl9ZbXhoWkdVdFlYSnlZWGt0WkdsemNHeGhlUS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Js9imFTDcB1slekk~p7nz6y-L5eaeU2UYFJzNDaXuqQVgH8guHPcsWeRxCHHLDqBi~i3GKAfTe9mvfyNYBlS7ywoOqVRztrBAPXyCZ7inKfzcKJhWJhZI8-ODtpvYK0Qm~nOjIb04u~FnlesHX3n6yDUuncqfGv~ZxJj~H28iJ65tHe6rPIQYAWktAsZQu~FuxxdN0OXJR~STWunEt-0pW47PTNbfXjZ~QFqGWrzhrDz3M4Ruvdcx1sdszJ9p~iYoqYdPZfLhmoQhdDRCHhXkl5HjTdNHxUohpuVGdl2dD-INs8apcHjU-D4kdHIlgTi2imFivr2fb4MA18rDEBw4w__"
-            alt="Blade Array"
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
+          <div className="absolute inset-0 forge-gradient opacity-30"></div>
         </div>
 
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <h1 className="text-5xl md:text-7xl font-black text-foreground">
-              PREMIUM REPLACEMENT
-              <span className="block text-primary mt-2">SHREDDER BLADES</span>
+              OUR
+              <span className="block text-primary mt-2">PRODUCTS</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Direct manufacturer compatible with WEIMA, SSI, Vecoplan, and more. Save 30% on factory direct pricing.
+              Precision-engineered shredder blades for every application
             </p>
           </div>
         </div>
       </section>
 
-      {/* Product Categories */}
+      {/* Products Grid */}
       <section className="py-24 bg-background">
         <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Shop by Blade Type
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Each blade type is engineered for specific applications and material characteristics
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map((product, index) => (
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {products.map((product) => (
               <Card
-                key={index}
-                className="bg-card border-border hover:border-primary transition-all duration-300 group overflow-hidden"
+                key={product.id}
+                className="bg-card border-border overflow-hidden hover:border-primary transition-all duration-300 group flex flex-col"
               >
-                <div className="relative aspect-video overflow-hidden">
+                {/* Product Image */}
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
                 </div>
-                <CardContent className="p-6 space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
-                    {product.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {product.description}
-                  </p>
-                  <div className="space-y-2">
-                    {product.specs.map((spec, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                        <span className="text-sm text-muted-foreground">{spec}</span>
-                      </div>
-                    ))}
+
+                <CardContent className="p-8 flex-1 flex flex-col space-y-6">
+                  {/* Title */}
+                  <div>
+                    <h2 className="text-2xl font-bold text-foreground mb-3">
+                      {product.title}
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {product.description}
+                    </p>
                   </div>
-                  <Link href={index === 0 ? "/products/single-shaft" : "#"}>
+
+                  {/* Features */}
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-foreground mb-3">
+                      Key Features
+                    </h3>
+                    <ul className="space-y-2">
+                      {product.features.slice(0, 3).map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                          <span className="text-sm text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Applications */}
+                  <div>
+                    <h3 className="text-sm font-bold text-foreground mb-2">
+                      Applications
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {product.applications.map((app, idx) => (
+                        <span
+                          key={idx}
+                          className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full"
+                        >
+                          {app}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA Button */}
+                  <Link href={product.slug}>
                     <Button
-                      variant="outline"
-                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-forge-pulse"
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
                     >
                       View Details
-                      <ArrowRight className="ml-2" size={16} />
+                      <ArrowRight className="ml-2" size={18} />
                     </Button>
                   </Link>
                 </CardContent>
@@ -162,114 +160,82 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Material Options */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Material Grade Options
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Choose the right steel grade based on your application requirements
-            </p>
-          </div>
+      {/* Why Choose Us Section */}
+      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom overflow-hidden">
+        <div className="absolute inset-0 z-0 forge-gradient opacity-20"></div>
+        
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-12">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Why Choose Our Shredder Blades?
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                10+ years of manufacturing excellence delivering precision-engineered solutions
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-card border-border hover:border-primary transition-all duration-300">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl font-bold text-primary font-mono">D2</div>
-                <h3 className="text-2xl font-bold text-foreground">Standard Grade</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Excellent wear resistance for general recycling applications. 58-60 HRC hardness.
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="space-y-3">
+                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-lg flex items-center justify-center">
+                  <span className="text-3xl font-black text-primary font-mono">01</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Premium Materials</h3>
+                <p className="text-muted-foreground">
+                  High-alloy tool steel and specialized heat treatment for maximum durability
                 </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Cost-effective</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Good toughness</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Proven reliability</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-2 border-primary relative overflow-hidden">
-              <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 text-xs font-bold rounded-sm">
-                RECOMMENDED
               </div>
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl font-bold text-primary font-mono">SKD11</div>
-                <h3 className="text-2xl font-bold text-foreground">Premium Grade</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Superior wear resistance with enhanced toughness. 60-62 HRC hardness.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">30-50% longer life</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Better edge retention</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Reduced downtime</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
 
-            <Card className="bg-card border-border hover:border-primary transition-all duration-300">
-              <CardContent className="p-8 space-y-4">
-                <div className="text-4xl font-bold text-primary font-mono">TC</div>
-                <h3 className="text-2xl font-bold text-foreground">Carbide Tipped</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Maximum wear resistance for extreme applications. Tungsten carbide inserts.
+              <div className="space-y-3">
+                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-lg flex items-center justify-center">
+                  <span className="text-3xl font-black text-primary font-mono">02</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Custom Solutions</h3>
+                <p className="text-muted-foreground">
+                  Tailored dimensions and specifications to match your exact machine requirements
                 </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Longest lifespan</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Abrasive materials</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                    <span className="text-sm text-muted-foreground">Premium investment</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+              </div>
+
+              <div className="space-y-3">
+                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-lg flex items-center justify-center">
+                  <span className="text-3xl font-black text-primary font-mono">03</span>
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Global Shipping</h3>
+                <p className="text-muted-foreground">
+                  Fast delivery worldwide with comprehensive quality assurance and support
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 bg-card blade-cut-top">
+      <section className="py-24 bg-background">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground">
-              Can't Find Your Part?
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Need Help Choosing the Right Blade?
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              We manufacture custom blades to your exact specifications
+            <p className="text-xl text-muted-foreground">
+              Our technical team can recommend the optimal blade configuration for your specific application
             </p>
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-6 animate-forge-pulse"
-            >
-              Request Custom Quote
-              <ArrowRight className="ml-2" size={20} />
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6"
+              >
+                Get Expert Consultation
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-8 py-6"
+              >
+                Request a Quote
+              </Button>
+            </div>
           </div>
         </div>
       </section>
