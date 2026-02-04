@@ -11,6 +11,7 @@ import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProductDetail from "./pages/ProductDetail";
+import Applications from "./pages/Applications";
 
 
 function Router() {
@@ -23,6 +24,7 @@ function Router() {
       <Route path={"/custom"} component={Custom} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/applications"} component={Applications} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
