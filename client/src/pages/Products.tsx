@@ -89,54 +89,33 @@ export default function Products() {
             {products.map((product) => (
               <Card
                 key={product.id}
-                className="bg-card border-border overflow-hidden hover:border-primary transition-all duration-300 group flex flex-col"
+                className="relative overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group h-[400px]"
               >
-                {/* Product Image */}
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent"></div>
-                </div>
+                {/* Background Image */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                  style={{ backgroundImage: `url(${product.image})` }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background/30"></div>
 
-                <CardContent className="p-8 flex-1 flex flex-col space-y-6">
+                <CardContent className="relative z-10 p-6 h-full flex flex-col justify-end space-y-4">
                   {/* Title */}
                   <div>
-                    <h2 className="text-2xl font-bold text-foreground mb-3">
+                    <h2 className="text-2xl font-bold text-foreground mb-2">
                       {product.title}
                     </h2>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground line-clamp-2">
                       {product.description}
                     </p>
                   </div>
 
-                  {/* Features */}
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-foreground mb-3">
-                      Key Features
-                    </h3>
-                    <ul className="space-y-2">
-                      {product.features.slice(0, 3).map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
                   {/* Applications */}
                   <div>
-                    <h3 className="text-sm font-bold text-foreground mb-2">
-                      Applications
-                    </h3>
                     <div className="flex flex-wrap gap-2">
-                      {product.applications.map((app, idx) => (
+                      {product.applications.slice(0, 4).map((app, idx) => (
                         <span
                           key={idx}
-                          className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full"
+                          className="text-xs px-3 py-1 bg-primary/20 text-primary-foreground rounded-full backdrop-blur-sm"
                         >
                           {app}
                         </span>

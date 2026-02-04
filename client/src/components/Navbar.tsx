@@ -33,7 +33,7 @@ export default function Navbar() {
                 <span className="text-primary-foreground font-bold text-sm font-mono">L</span>
               </div>
               <span className="text-foreground font-bold text-sm tracking-wider group-hover:text-primary transition-colors">
-                LIQUN SHREDDER BLADES & KNIVES
+                LIKUN SHREDDER BLADES & KNIVES
               </span>
             </div>
           </Link>

@@ -171,7 +171,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">Phone</h4>
-                        <p className="text-muted-foreground">+86 512 5820 6666</p>
+                        <p className="text-muted-foreground">+86 155 5175 7389</p>
                         <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM CST</p>
                       </div>
                     </div>
@@ -182,7 +182,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">WhatsApp</h4>
-                        <p className="text-muted-foreground">+86 138 1234 5678</p>
+                        <p className="text-muted-foreground">+86 155 5175 7389</p>
                         <p className="text-sm text-muted-foreground">24/7 Available</p>
                       </div>
                     </div>
@@ -193,8 +193,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-bold text-foreground mb-1">Email</h4>
-                        <p className="text-muted-foreground">info@liqunmachinery.com</p>
-                        <p className="text-muted-foreground">sales@liqunmachinery.com</p>
+                        <p className="text-muted-foreground">info@shredderbladesdirect.com</p>
                       </div>
                     </div>
 
@@ -205,8 +204,8 @@ export default function Contact() {
                       <div>
                         <h4 className="font-bold text-foreground mb-1">Address</h4>
                         <p className="text-muted-foreground">
-                          Zhangjiagang City<br />
-                          Jiangsu Province, China
+                          Bowang High-tech Industrial Development Zone<br />
+                          Ma'anshan City, China
                         </p>
                       </div>
                     </div>

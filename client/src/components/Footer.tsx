@@ -13,10 +13,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-foreground tracking-wider">
-              LIQUN MACHINERY
+              LIKUN MACHINERY
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Professional manufacturer of high-performance shredder blades and knives. 
+              Professional manufacturer of high-performance shredder blades and cutting tools. 
               Direct factory pricing with superior wear resistance.
             </p>
           </div>
@@ -55,15 +55,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 text-primary flex-shrink-0" />
-                <span>Zhangjiagang City, Jiangsu Province, China</span>
+                <span>Bowang High-tech Industrial Development Zone, Ma'anshan City, China</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-primary flex-shrink-0" />
-                <span>+86 512 5820 6666</span>
+                <span>+86 155 5175 7389</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                <span>info@liqunmachinery.com</span>
+                <span>info@shredderbladesdirect.com</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2026 Liqun Machinery. All rights reserved.</p>
+            <p>© 2026 Likun Machinery & Cutting Tools Co., Ltd. All rights reserved.</p>
             <div className="flex gap-6">
               <span className="hover:text-primary transition-colors cursor-pointer">Privacy Policy</span>
               <span className="hover:text-primary transition-colors cursor-pointer">Terms of Service</span>
