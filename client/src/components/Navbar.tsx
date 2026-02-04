@@ -52,7 +52,7 @@ export default function Navbar() {
                 </span>
               </Link>
             ))}
-            <Link href="/custom">
+            <Link href="/contact">
               <Button
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide animate-forge-pulse"
                 size="sm"
@@ -88,7 +88,7 @@ export default function Navbar() {
                 </div>
               </Link>
             ))}
-            <Link href="/custom">
+            <Link href="/contact">
               <Button
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide"
                 size="sm"

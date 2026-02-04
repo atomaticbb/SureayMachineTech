@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Products() {
   const productCategories = [
@@ -145,13 +146,15 @@ export default function Products() {
                       </div>
                     ))}
                   </div>
-                  <Button
-                    variant="outline"
-                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-forge-pulse"
-                  >
-                    View Models
-                    <ArrowRight className="ml-2" size={16} />
-                  </Button>
+                  <Link href={index === 0 ? "/products/single-shaft" : "#"}>
+                    <Button
+                      variant="outline"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-forge-pulse"
+                    >
+                      View Details
+                      <ArrowRight className="ml-2" size={16} />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}

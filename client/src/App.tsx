@@ -9,6 +9,8 @@ import Products from "./pages/Products";
 import Materials from "./pages/Materials";
 import Custom from "./pages/Custom";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+import ProductDetail from "./pages/ProductDetail";
 
 
 function Router() {
@@ -16,9 +18,11 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/products"} component={Products} />
+      <Route path={"/products/single-shaft"} component={ProductDetail} />
       <Route path={"/materials"} component={Materials} />
       <Route path={"/custom"} component={Custom} />
       <Route path={"/about"} component={About} />
+      <Route path={"/contact"} component={Contact} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
