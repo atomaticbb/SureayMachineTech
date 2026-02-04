@@ -236,23 +236,25 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {processSteps.map((process, index) => (
-              <Card key={index} className="overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={process.image}
-                    alt={process.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-6 space-y-3">
-                  <div className="text-sm font-bold text-primary">{process.step}</div>
-                  <h3 className="text-lg font-bold text-foreground">{process.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{process.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="overflow-x-auto pb-4">
+            <div className="flex gap-6 min-w-max">
+              {processSteps.map((process, index) => (
+                <Card key={index} className="w-80 flex-shrink-0 overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={process.image}
+                      alt={process.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <div className="text-sm font-bold text-primary">{process.step}</div>
+                    <h3 className="text-lg font-bold text-foreground">{process.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{process.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
