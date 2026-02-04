@@ -180,31 +180,6 @@ export default function ProductDetail() {
               ></iframe>
             </div>
           </div>
-
-          {/* Video Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {youtubeVideos.map((video, index) => (
-              <Card key={index} className="bg-background border-border hover:border-primary transition-all duration-300 group cursor-pointer overflow-hidden">
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={video.thumbnail}
-                    alt={video.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-background/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center">
-                      <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-primary-foreground border-b-8 border-b-transparent ml-1"></div>
-                    </div>
-                  </div>
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="text-sm font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">
-                    {video.title}
-                  </h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -213,12 +188,9 @@ export default function ProductDetail() {
         <div className="container">
           <div className="max-w-5xl mx-auto">
             <Tabs defaultValue="specs" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 bg-card border border-border">
+              <TabsList className="grid w-full grid-cols-2 bg-card border border-border">
                 <TabsTrigger value="specs" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                   Specifications
-                </TabsTrigger>
-                <TabsTrigger value="compatibility" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                  Compatibility
                 </TabsTrigger>
                 <TabsTrigger value="applications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                   Applications
@@ -249,37 +221,6 @@ export default function ProductDetail() {
                 </Card>
               </TabsContent>
 
-              <TabsContent value="compatibility" className="mt-8">
-                <Card className="bg-card border-border">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold text-foreground mb-6">Compatible Machine Models</h3>
-                    <div className="space-y-6">
-                      {compatibleMachines.map((machine, index) => (
-                        <div key={index} className="p-6 bg-background rounded-sm border border-border">
-                          <h4 className="text-xl font-bold text-primary mb-4">{machine.brand}</h4>
-                          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            {machine.models.map((model, idx) => (
-                              <div key={idx} className="flex items-center gap-2">
-                                <CheckCircle2 className="text-primary flex-shrink-0" size={16} />
-                                <span className="text-sm text-muted-foreground">{model}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-8 text-center">
-                      <p className="text-muted-foreground mb-4">
-                        Don't see your machine model listed? We likely have it in our database.
-                      </p>
-                      <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                        Check Compatibility
-                        <ArrowRight className="ml-2" size={16} />
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
 
               <TabsContent value="applications" className="mt-8">
                 <Card className="bg-card border-border">
