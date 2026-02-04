@@ -7,9 +7,39 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { ArrowRight, CheckCircle2, Download, Mail, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Download, Mail, Phone } from "lucide-react";
+import { useState } from "react";
 
 export default function ProductDetailPlastic() {
+  const bladeImages = [
+    {
+      url: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1200&q=80",
+      title: "Plastic Shredder Blade - Front View",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+      title: "Plastic Shredder Blade - Cutting Edge",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=1200&q=80",
+      title: "Plastic Shredder Blade - Side Profile",
+    },
+    {
+      url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80",
+      title: "Plastic Shredder Blade - Installation",
+    },
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % bladeImages.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + bladeImages.length) % bladeImages.length);
+  };
+
   const keyFeatures = [
     {
       title: "Sharp Cutting Angles",
@@ -72,6 +102,69 @@ export default function ProductDetailPlastic() {
                 <Download className="mr-2" size={20} />
                 Download Brochure
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blades Series Carousel */}
+      <section className="py-16 bg-background">
+        <div className="container">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Blades Series
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Explore our plastic shredder blade designs
+            </p>
+          </div>
+
+          <div className="relative max-w-5xl mx-auto">
+            <div className="aspect-[16/9] rounded-sm overflow-hidden border-2 border-border">
+              <img
+                src={bladeImages[currentImageIndex].url}
+                alt={bladeImages[currentImageIndex].title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/80 hover:bg-background border-2 border-border rounded-full flex items-center justify-center transition-all duration-300 hover:border-primary group"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="text-foreground group-hover:text-primary" size={24} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/80 hover:bg-background border-2 border-border rounded-full flex items-center justify-center transition-all duration-300 hover:border-primary group"
+              aria-label="Next image"
+            >
+              <ChevronRight className="text-foreground group-hover:text-primary" size={24} />
+            </button>
+
+            {/* Indicators */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              {bladeImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentImageIndex
+                      ? "bg-primary w-8"
+                      : "bg-muted-foreground/50 hover:bg-muted-foreground"
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            {/* Image Title */}
+            <div className="mt-4 text-center">
+              <p className="text-sm text-muted-foreground font-medium">
+                {bladeImages[currentImageIndex].title}
+              </p>
             </div>
           </div>
         </div>
@@ -337,6 +430,45 @@ export default function ProductDetailPlastic() {
               </Card>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* Video Showcase Section */}
+      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
+        <div className="container">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              See Our Blades in Action
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Watch real-world performance demonstrations and installation guides
+            </p>
+            <a
+              href="https://www.youtube.com/@machinerytest1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-bold"
+            >
+              Visit Our YouTube Channel
+              <ArrowRight size={20} />
+            </a>
+          </div>
+
+          {/* Featured Video */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="aspect-video rounded-sm overflow-hidden border-2 border-border">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Plastic Shredder Blade Demonstration"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
