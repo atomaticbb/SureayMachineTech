@@ -14,7 +14,7 @@ import {
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Download, Package, Ruler, Shield, Zap } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ProductDetail() {
   const specifications = [
@@ -85,6 +85,15 @@ export default function ProductDetail() {
     setCurrentImageIndex((prev) => (prev - 1 + bladeImages.length) % bladeImages.length);
   };
 
+  // Auto-play carousel
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [currentImageIndex]);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -136,7 +145,7 @@ export default function ProductDetail() {
       {/* Blades Series Carousel */}
       <section className="py-16 bg-background">
         <div className="container">
-          <div className="text-center space-y-4 mb-12">
+          <div className="space-y-4 mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Blades Series
             </h2>
@@ -145,7 +154,7 @@ export default function ProductDetail() {
             </p>
           </div>
 
-          <div className="relative max-w-5xl mx-auto">
+          <div className="relative max-w-3xl">
             <div className="aspect-[16/9] rounded-sm overflow-hidden border-2 border-border">
               <img
                 src={bladeImages[currentImageIndex].url}
