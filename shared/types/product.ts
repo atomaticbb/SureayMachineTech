@@ -1,4 +1,4 @@
-export type ProductCategory = 'single-shaft' | 'metal' | 'plastic' | 'other';
+export type ProductCategory = "single-shaft" | "metal" | "plastic" | "other";
 
 export interface ProductSpecs {
   dimensions?: string;

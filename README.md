@@ -125,6 +125,7 @@ pnpm docker:stop
 ### Adding New Features
 
 #### Frontend Component
+
 ```typescript
 // client/src/components/features/MyComponent.tsx
 import { Button } from '@/components/ui/button';
@@ -135,23 +136,28 @@ export default function MyComponent() {
 ```
 
 #### API Endpoint
+
 ```typescript
 // 1. Add service (server/services/myService.ts)
-export const getData = async () => { /* ... */ };
+export const getData = async () => {
+  /* ... */
+};
 
 // 2. Add controller (server/controllers/myController.ts)
-export const handleGetData = async (req, res, next) => { /* ... */ };
+export const handleGetData = async (req, res, next) => {
+  /* ... */
+};
 
 // 3. Add route (server/routes/myRoutes.ts)
-router.get('/data', handleGetData);
+router.get("/data", handleGetData);
 
 // 4. Add to main router (server/routes/index.ts)
-import myRoutes from './myRoutes.js';
-router.use('/', myRoutes);
+import myRoutes from "./myRoutes.js";
+router.use("/", myRoutes);
 
 // 5. Create API client (client/src/api/myApi.ts)
 export const getData = async () => {
-  const response = await apiClient.get('/data');
+  const response = await apiClient.get("/data");
   return response.data;
 };
 ```
@@ -165,6 +171,7 @@ pnpm build
 ```
 
 This creates:
+
 - Frontend: `dist/public/` (served by Express)
 - Backend: `dist/index.js` (Node.js server)
 
@@ -193,6 +200,7 @@ docker-compose down
 ### Manual Deployment
 
 See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions including:
+
 - Docker deployment
 - PM2 deployment
 - Nginx configuration
@@ -220,6 +228,7 @@ See `.env.example` for all available options.
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 19** - UI library
 - **TypeScript** - Type safety
 - **Vite** - Build tool and dev server
@@ -232,18 +241,21 @@ See `.env.example` for all available options.
 - **Sonner** - Toast notifications
 
 ### Backend
+
 - **Express** - Web framework
 - **TypeScript** - Type safety
 - **Zod** - Request validation
 - **CORS** - Cross-origin support
 
 ### Development
+
 - **pnpm** - Package manager
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 - **esbuild** - Fast bundler for backend
 
 ### Infrastructure
+
 - **Docker** - Containerization
 - **Nginx** - Reverse proxy (recommended)
 - **PM2** - Process manager (alternative)
@@ -251,18 +263,21 @@ See `.env.example` for all available options.
 ## 🏗️ Architecture
 
 ### Frontend Architecture
+
 - **Component-based**: Reusable UI components
 - **API Layer**: Centralized API calls with error handling
 - **Type Safety**: Full TypeScript coverage
 - **State Management**: React hooks and context
 
 ### Backend Architecture
+
 - **MVC Pattern**: Controllers, Services, Routes
 - **Middleware**: Error handling, logging, CORS
 - **Type Safety**: Shared types with frontend
 - **Validation**: Zod schemas for request validation
 
 ### Code Sharing
+
 - **Types**: Shared TypeScript interfaces
 - **Validators**: Shared Zod schemas
 - **Constants**: Shared configuration
@@ -277,9 +292,10 @@ The project uses TypeScript path aliases:
 - `@shared/*` → `shared/*`
 
 Example:
+
 ```typescript
-import { Button } from '@/components/ui/button';
-import { Product } from '@shared/types';
+import { Button } from "@/components/ui/button";
+import { Product } from "@shared/types";
 ```
 
 ### Linting & Formatting
@@ -296,6 +312,7 @@ pnpm format
 ```
 
 Configuration files:
+
 - `.eslintrc.cjs` - ESLint rules
 - `.prettierrc` - Prettier formatting rules
 
@@ -324,6 +341,7 @@ MIT License - see LICENSE file for details
 ## 📧 Contact
 
 For inquiries about the products or this project:
+
 - Email: contact@yourdomain.com
 - Website: https://yourdomain.com
 

@@ -1,5 +1,5 @@
-import { Request, Response, NextFunction } from 'express';
-import * as productService from '../services/productService.js';
+import { Request, Response, NextFunction } from "express";
+import * as productService from "../services/productService.js";
 
 export const getProducts = async (
   req: Request,
@@ -22,7 +22,9 @@ export const getProductById = async (
   try {
     const product = await productService.getProductById(req.params.id);
     if (!product) {
-      return res.status(404).json({ success: false, message: 'Product not found' });
+      return res
+        .status(404)
+        .json({ success: false, message: "Product not found" });
     }
     res.json({ success: true, data: product });
   } catch (error) {

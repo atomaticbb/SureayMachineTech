@@ -1,2 +1,2 @@
 // Re-export types from shared for convenience
-export * from '@shared/types';
+export * from "@shared/types";

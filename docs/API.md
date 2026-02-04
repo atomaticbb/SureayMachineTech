@@ -18,6 +18,7 @@ Check if the API server is running.
 **Endpoint:** `GET /health`
 
 **Response:**
+
 ```json
 {
   "status": "ok",
@@ -36,6 +37,7 @@ Retrieve a list of all products.
 **Endpoint:** `GET /api/products`
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -65,9 +67,11 @@ Retrieve a single product by its ID.
 **Endpoint:** `GET /api/products/:id`
 
 **Parameters:**
+
 - `id` (string, required) - Product ID
 
 **Response (Success):**
+
 ```json
 {
   "success": true,
@@ -82,6 +86,7 @@ Retrieve a single product by its ID.
 ```
 
 **Response (Not Found):**
+
 ```json
 {
   "success": false,
@@ -100,6 +105,7 @@ Submit a contact form inquiry.
 **Endpoint:** `POST /api/contact`
 
 **Request Body:**
+
 ```json
 {
   "name": "John Doe",
@@ -111,6 +117,7 @@ Submit a contact form inquiry.
 ```
 
 **Request Body Schema:**
+
 - `name` (string, required) - Name (2-50 characters)
 - `email` (string, required) - Valid email address
 - `phone` (string, optional) - Phone number
@@ -118,6 +125,7 @@ Submit a contact form inquiry.
 - `message` (string, required) - Message (10-1000 characters)
 
 **Response (Success):**
+
 ```json
 {
   "success": true,
@@ -126,6 +134,7 @@ Submit a contact form inquiry.
 ```
 
 **Response (Validation Error):**
+
 ```json
 {
   "success": false,

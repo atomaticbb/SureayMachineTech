@@ -20,12 +20,14 @@ This guide covers various deployment options for the shredder-blades-website pro
 ## Prerequisites
 
 ### Server Requirements
+
 - **Node.js**: v20 or higher
 - **pnpm**: 10.4.1 or higher (or use corepack)
 - **Memory**: At least 1GB RAM (2GB+ recommended)
 - **Disk Space**: At least 2GB free space
 
 ### Optional
+
 - **Docker**: For containerized deployment
 - **Nginx**: For reverse proxy (recommended)
 - **PM2**: For process management (alternative to Docker)
@@ -77,16 +79,19 @@ VITE_ANALYTICS_WEBSITE_ID=your-website-id
 ### Using Docker Compose (Recommended)
 
 1. **Build and start the container:**
+
 ```bash
 docker-compose up -d
 ```
 
 2. **View logs:**
+
 ```bash
 docker-compose logs -f
 ```
 
 3. **Stop the container:**
+
 ```bash
 docker-compose down
 ```
@@ -94,11 +99,13 @@ docker-compose down
 ### Using Docker CLI
 
 1. **Build the image:**
+
 ```bash
 docker build -t shredder-blades-website .
 ```
 
 2. **Run the container:**
+
 ```bash
 docker run -d \
   --name shredder-blades \
@@ -109,11 +116,13 @@ docker run -d \
 ```
 
 3. **View logs:**
+
 ```bash
 docker logs -f shredder-blades
 ```
 
 4. **Stop the container:**
+
 ```bash
 docker stop shredder-blades
 docker rm shredder-blades
@@ -122,6 +131,7 @@ docker rm shredder-blades
 ### Docker Image Optimization
 
 The Dockerfile uses multi-stage builds to minimize image size:
+
 - **Build stage**: Installs all dependencies and builds the project
 - **Production stage**: Only includes production dependencies and built files
 
@@ -167,6 +177,7 @@ pnpm build
 ```
 
 This will:
+
 1. Build the frontend (Vite) → `dist/public/`
 2. Build the backend (esbuild) → `dist/index.js`
 
@@ -197,20 +208,22 @@ Create `ecosystem.config.js`:
 
 ```javascript
 module.exports = {
-  apps: [{
-    name: 'shredder-blades',
-    script: './dist/index.js',
-    instances: 1,
-    exec_mode: 'cluster',
-    env: {
-      NODE_ENV: 'production',
-      PORT: 3000
+  apps: [
+    {
+      name: "shredder-blades",
+      script: "./dist/index.js",
+      instances: 1,
+      exec_mode: "cluster",
+      env: {
+        NODE_ENV: "production",
+        PORT: 3000,
+      },
+      error_file: "./logs/err.log",
+      out_file: "./logs/out.log",
+      log_file: "./logs/combined.log",
+      time: true,
     },
-    error_file: './logs/err.log',
-    out_file: './logs/out.log',
-    log_file: './logs/combined.log',
-    time: true
-  }]
+  ],
 };
 ```
 
@@ -313,11 +326,13 @@ sudo systemctl reload nginx
 ### Using Certbot (Let's Encrypt)
 
 1. **Install Certbot:**
+
 ```bash
 sudo apt install certbot python3-certbot-nginx -y
 ```
 
 2. **Obtain SSL certificate:**
+
 ```bash
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 ```
@@ -325,6 +340,7 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 3. **Follow the prompts** and Certbot will automatically configure Nginx for HTTPS.
 
 4. **Test auto-renewal:**
+
 ```bash
 sudo certbot renew --dry-run
 ```
@@ -340,7 +356,7 @@ server {
 
     ssl_certificate /path/to/your/certificate.crt;
     ssl_certificate_key /path/to/your/private.key;
-    
+
     ssl_protocols TLSv1.2 TLSv1.3;
     ssl_ciphers HIGH:!aNULL:!MD5;
     ssl_prefer_server_ciphers on;
@@ -372,6 +388,7 @@ server {
 Before deploying to production, ensure:
 
 ### Security
+
 - [ ] Set `NODE_ENV=production`
 - [ ] Configure proper CORS origins in `.env`
 - [ ] Use HTTPS/SSL
@@ -380,6 +397,7 @@ Before deploying to production, ensure:
 - [ ] Use strong passwords for any authentication
 
 ### Performance
+
 - [ ] Enable Nginx caching for static assets
 - [ ] Enable gzip compression
 - [ ] Configure CDN if needed
@@ -387,17 +405,20 @@ Before deploying to production, ensure:
 - [ ] Set up log rotation
 
 ### Monitoring
+
 - [ ] Set up error tracking (e.g., Sentry)
 - [ ] Configure application monitoring
 - [ ] Set up uptime monitoring
 - [ ] Configure log aggregation
 
 ### Backup
+
 - [ ] Set up automated backups
 - [ ] Test backup restoration
 - [ ] Document backup procedures
 
 ### Documentation
+
 - [ ] Document deployment process
 - [ ] Create runbook for common issues
 - [ ] Document rollback procedures
@@ -407,6 +428,7 @@ Before deploying to production, ensure:
 ## Troubleshooting
 
 ### Port Already in Use
+
 ```bash
 # Find process using port 3000
 lsof -i :3000
@@ -418,12 +440,14 @@ kill -9 <PID>
 ```
 
 ### Permission Denied
+
 ```bash
 # Give Node.js permission to bind to port 80
 sudo setcap 'cap_net_bind_service=+ep' $(which node)
 ```
 
 ### Build Failures
+
 ```bash
 # Clear cache and reinstall
 rm -rf node_modules dist
@@ -432,6 +456,7 @@ pnpm build
 ```
 
 ### Out of Memory
+
 ```bash
 # Increase Node.js memory limit
 NODE_OPTIONS="--max-old-space-size=4096" pnpm build
@@ -450,14 +475,14 @@ name: Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
@@ -477,6 +502,7 @@ jobs:
 ## Support
 
 For deployment issues:
+
 1. Check server logs
 2. Review Nginx error logs: `sudo tail -f /var/log/nginx/error.log`
 3. Check application logs: `pm2 logs` or `docker logs`

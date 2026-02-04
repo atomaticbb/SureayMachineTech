@@ -13,8 +13,10 @@ export default function Applications() {
   const applications = [
     {
       title: "Plastic Recycling",
-      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
-      description: "High-performance blades designed for processing various plastic materials including HDPE, PET, PVC, and polypropylene.",
+      image:
+        "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
+      description:
+        "High-performance blades designed for processing various plastic materials including HDPE, PET, PVC, and polypropylene.",
       materials: [
         "Plastic bottles and containers",
         "PVC pipes and profiles",
@@ -31,8 +33,10 @@ export default function Applications() {
     },
     {
       title: "Metal Recycling",
-      image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
-      description: "Heavy-duty blades engineered to handle ferrous and non-ferrous metals, aluminum cans, copper wire, and sheet metal scrap.",
+      image:
+        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
+      description:
+        "Heavy-duty blades engineered to handle ferrous and non-ferrous metals, aluminum cans, copper wire, and sheet metal scrap.",
       materials: [
         "Aluminum beverage cans",
         "Copper wire and cables",
@@ -49,8 +53,10 @@ export default function Applications() {
     },
     {
       title: "Solid Waste",
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
-      description: "Robust blades for municipal solid waste processing, reducing volume for landfill diversion and material recovery.",
+      image:
+        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80",
+      description:
+        "Robust blades for municipal solid waste processing, reducing volume for landfill diversion and material recovery.",
       materials: [
         "Household garbage",
         "Commercial refuse",
@@ -67,8 +73,10 @@ export default function Applications() {
     },
     {
       title: "E-Waste",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
-      description: "Specialized blades for electronic waste recycling, safely processing circuit boards, computer components, and consumer electronics.",
+      image:
+        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+      description:
+        "Specialized blades for electronic waste recycling, safely processing circuit boards, computer components, and consumer electronics.",
       materials: [
         "Computer cases and monitors",
         "Circuit boards and PCBs",
@@ -85,8 +93,10 @@ export default function Applications() {
     },
     {
       title: "Industrial Waste",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
-      description: "Industrial-grade blades for manufacturing waste streams including production scrap, defective products, and process waste.",
+      image:
+        "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=800&q=80",
+      description:
+        "Industrial-grade blades for manufacturing waste streams including production scrap, defective products, and process waste.",
       materials: [
         "Production line rejects",
         "Manufacturing scrap",
@@ -120,7 +130,8 @@ export default function Applications() {
               <span className="block text-primary mt-2">APPLICATIONS</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Engineered solutions for every recycling and waste processing challenge
+              Engineered solutions for every recycling and waste processing
+              challenge
             </p>
           </div>
         </div>
@@ -137,7 +148,9 @@ export default function Applications() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                   {/* Image */}
-                  <div className={`relative aspect-video lg:aspect-auto overflow-hidden ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
+                  <div
+                    className={`relative aspect-video lg:aspect-auto overflow-hidden ${index % 2 === 1 ? "lg:order-2" : ""}`}
+                  >
                     <img
                       src={app.image}
                       alt={app.title}
@@ -165,8 +178,13 @@ export default function Applications() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {app.materials.map((material, idx) => (
                           <div key={idx} className="flex items-start gap-2">
-                            <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={18} />
-                            <span className="text-sm text-muted-foreground">{material}</span>
+                            <CheckCircle2
+                              className="text-primary flex-shrink-0 mt-0.5"
+                              size={18}
+                            />
+                            <span className="text-sm text-muted-foreground">
+                              {material}
+                            </span>
                           </div>
                         ))}
                       </div>
@@ -181,16 +199,16 @@ export default function Applications() {
                         {app.benefits.map((benefit, idx) => (
                           <li key={idx} className="flex items-start gap-2">
                             <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span className="text-muted-foreground">{benefit}</span>
+                            <span className="text-muted-foreground">
+                              {benefit}
+                            </span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     <div>
-                      <Button
-                        className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold"
-                      >
+                      <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
                         Request Application-Specific Quote
                         <ArrowRight className="ml-2" size={18} />
                       </Button>
@@ -206,14 +224,15 @@ export default function Applications() {
       {/* CTA Section */}
       <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom overflow-hidden">
         <div className="absolute inset-0 z-0 forge-gradient opacity-20"></div>
-        
+
         <div className="container relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Not Sure Which Blade Fits Your Application?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Our technical team can analyze your specific waste stream and recommend the optimal blade configuration
+              Our technical team can analyze your specific waste stream and
+              recommend the optimal blade configuration
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

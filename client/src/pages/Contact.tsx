@@ -42,7 +42,8 @@ export default function Contact() {
               <span className="block text-primary mt-2">TOUCH</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Request a quote, ask technical questions, or discuss your blade requirements
+              Request a quote, ask technical questions, or discuss your blade
+              requirements
             </p>
           </div>
         </div>
@@ -61,7 +62,8 @@ export default function Contact() {
                       Send Us a Message
                     </h2>
                     <p className="text-muted-foreground">
-                      Fill out the form and we'll get back to you within 24-48 hours
+                      Fill out the form and we'll get back to you within 24-48
+                      hours
                     </p>
                   </div>
 
@@ -69,7 +71,9 @@ export default function Contact() {
                     {/* Personal Info */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name" className="text-foreground">Full Name *</Label>
+                        <Label htmlFor="name" className="text-foreground">
+                          Full Name *
+                        </Label>
                         <Input
                           id="name"
                           placeholder="John Smith"
@@ -78,7 +82,9 @@ export default function Contact() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email" className="text-foreground">Email *</Label>
+                        <Label htmlFor="email" className="text-foreground">
+                          Email *
+                        </Label>
                         <Input
                           id="email"
                           type="email"
@@ -91,7 +97,9 @@ export default function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="company" className="text-foreground">Company</Label>
+                        <Label htmlFor="company" className="text-foreground">
+                          Company
+                        </Label>
                         <Input
                           id="company"
                           placeholder="Your Company Ltd."
@@ -99,7 +107,9 @@ export default function Contact() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-foreground">Phone</Label>
+                        <Label htmlFor="phone" className="text-foreground">
+                          Phone
+                        </Label>
                         <Input
                           id="phone"
                           type="tel"
@@ -111,23 +121,31 @@ export default function Contact() {
 
                     {/* Inquiry Details */}
                     <div className="space-y-2">
-                      <Label htmlFor="inquiry-type" className="text-foreground">Inquiry Type *</Label>
+                      <Label htmlFor="inquiry-type" className="text-foreground">
+                        Inquiry Type *
+                      </Label>
                       <Select required>
                         <SelectTrigger className="bg-background border-border">
                           <SelectValue placeholder="Select inquiry type" />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="quote">Request a Quote</SelectItem>
-                          <SelectItem value="technical">Technical Question</SelectItem>
+                          <SelectItem value="technical">
+                            Technical Question
+                          </SelectItem>
                           <SelectItem value="order">Order Status</SelectItem>
-                          <SelectItem value="partnership">Partnership</SelectItem>
+                          <SelectItem value="partnership">
+                            Partnership
+                          </SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message" className="text-foreground">Message *</Label>
+                      <Label htmlFor="message" className="text-foreground">
+                        Message *
+                      </Label>
                       <Textarea
                         id="message"
                         placeholder="Please provide details about your inquiry..."
@@ -163,16 +181,22 @@ export default function Contact() {
                       Reach out to us through any of these channels
                     </p>
                   </div>
-                  
+
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Phone className="text-primary" size={24} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">Phone</h4>
-                        <p className="text-muted-foreground">+86 155 5175 7389</p>
-                        <p className="text-sm text-muted-foreground">Mon-Fri 9AM-6PM CST</p>
+                        <h4 className="font-bold text-foreground mb-1">
+                          Phone
+                        </h4>
+                        <p className="text-muted-foreground">
+                          +86 155 5175 7389
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          Mon-Fri 9AM-6PM CST
+                        </p>
                       </div>
                     </div>
 
@@ -181,9 +205,15 @@ export default function Contact() {
                         <MessageSquare className="text-primary" size={24} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">WhatsApp</h4>
-                        <p className="text-muted-foreground">+86 155 5175 7389</p>
-                        <p className="text-sm text-muted-foreground">24/7 Available</p>
+                        <h4 className="font-bold text-foreground mb-1">
+                          WhatsApp
+                        </h4>
+                        <p className="text-muted-foreground">
+                          +86 155 5175 7389
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          24/7 Available
+                        </p>
                       </div>
                     </div>
 
@@ -192,8 +222,12 @@ export default function Contact() {
                         <Mail className="text-primary" size={24} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">Email</h4>
-                        <p className="text-muted-foreground">info@shredderbladesdirect.com</p>
+                        <h4 className="font-bold text-foreground mb-1">
+                          Email
+                        </h4>
+                        <p className="text-muted-foreground">
+                          info@shredderbladesdirect.com
+                        </p>
                       </div>
                     </div>
 
@@ -202,9 +236,12 @@ export default function Contact() {
                         <MapPin className="text-primary" size={24} />
                       </div>
                       <div>
-                        <h4 className="font-bold text-foreground mb-1">Address</h4>
+                        <h4 className="font-bold text-foreground mb-1">
+                          Address
+                        </h4>
                         <p className="text-muted-foreground">
-                          Bowang High-tech Industrial Development Zone<br />
+                          Bowang High-tech Industrial Development Zone
+                          <br />
                           Ma'anshan City, China
                         </p>
                       </div>
@@ -212,8 +249,6 @@ export default function Contact() {
                   </div>
                 </CardContent>
               </Card>
-
-
             </div>
           </div>
         </div>

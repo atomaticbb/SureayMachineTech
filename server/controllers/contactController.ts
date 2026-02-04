@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express';
-import { ContactFormSchema } from '../../shared/validators/contact.js';
-import { sendContactEmail } from '../services/emailService.js';
+import { Request, Response, NextFunction } from "express";
+import { ContactFormSchema } from "../../shared/validators/contact.js";
+import { sendContactEmail } from "../services/emailService.js";
 
 export const submitContactForm = async (
   req: Request,
@@ -10,10 +10,10 @@ export const submitContactForm = async (
   try {
     const data = ContactFormSchema.parse(req.body);
     await sendContactEmail(data);
-    
+
     res.json({
       success: true,
-      message: 'Contact form submitted successfully',
+      message: "Contact form submitted successfully",
     });
   } catch (error) {
     next(error);
