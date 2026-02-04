@@ -128,33 +128,37 @@ export default function ProductDetailPlastic() {
             </p>
           </div>
 
-          <div className="relative max-w-3xl">
-            <div className="aspect-[16/9] rounded-sm overflow-hidden border-2 border-border">
-              <img
-                src={bladeImages[currentImageIndex].url}
-                alt={bladeImages[currentImageIndex].title}
-                className="w-full h-full object-cover"
-              />
+          {/* Horizontal Card Grid */}
+          <div className="relative overflow-hidden">
+            <div 
+              className="flex gap-6 transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentImageIndex * (100 / bladeImages.length)}%)` }}
+            >
+              {bladeImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3"
+                >
+                  <Card className="overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={image.url}
+                        alt={image.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <CardContent className="p-4">
+                      <p className="text-center font-medium text-foreground">
+                        {image.title}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
             </div>
 
-            {/* Navigation Buttons */}
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/80 hover:bg-background border-2 border-border rounded-full flex items-center justify-center transition-all duration-300 hover:border-primary group"
-              aria-label="Previous image"
-            >
-              <ChevronLeft className="text-foreground group-hover:text-primary" size={24} />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/80 hover:bg-background border-2 border-border rounded-full flex items-center justify-center transition-all duration-300 hover:border-primary group"
-              aria-label="Next image"
-            >
-              <ChevronRight className="text-foreground group-hover:text-primary" size={24} />
-            </button>
-
-            {/* Indicators */}
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {/* Navigation Dots */}
+            <div className="flex justify-center gap-2 mt-6">
               {bladeImages.map((_, index) => (
                 <button
                   key={index}
@@ -167,13 +171,6 @@ export default function ProductDetailPlastic() {
                   aria-label={`Go to image ${index + 1}`}
                 />
               ))}
-            </div>
-
-            {/* Image Title */}
-            <div className="mt-4 text-center">
-              <p className="text-sm text-muted-foreground font-medium">
-                {bladeImages[currentImageIndex].title}
-              </p>
             </div>
           </div>
         </div>
