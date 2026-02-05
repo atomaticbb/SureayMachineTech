@@ -93,19 +93,19 @@ export default function ProductDetail() {
 
   const bladeImages = [
     {
-      url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+      url: "/images/shredder_blades/industrial-waste.webp",
       title: "Single Shaft Blade - Front View",
     },
     {
-      url: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=1200&q=80",
+      url: "/images/shredder_blades/plastic-shredder-blades-knives.webp",
       title: "Single Shaft Blade - Side Profile",
     },
     {
-      url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80",
+      url: "/images/shredder_blades/plastic-waste.webp",
       title: "Single Shaft Blade - Cutting Edge Detail",
     },
     {
-      url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+      url: "/images/shredder_blades/shrederblade-msw.webp",
       title: "Single Shaft Blade - Installation",
     },
   ];
@@ -139,11 +139,12 @@ export default function ProductDetail() {
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-5_1770202027000_na1fn_YmxhZGUtYXJyYXktZGlzcGxheQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTVfMTc3MDIwMjAyNzAwMF9uYTFmbl9ZbXhoWkdVdFlYSnlZWGt0WkdsemNHeGhlUS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Js9imFTDcB1slekk~p7nz6y-L5eaeU2UYFJzNDaXuqQVgH8guHPcsWeRxCHHLDqBi~i3GKAfTe9mvfyNYBlS7ywoOqVRztrBAPXyCZ7inKfzcKJhWJhZI8-ODtpvYK0Qm~nOjIb04u~FnlesHX3n6yDUuncqfGv~ZxJj~H28iJ65tHe6rPIQYAWktAsZQu~FuxxdN0OXJR~STWunEt-0pW47PTNbfXjZ~QFqGWrzhrDz3M4Ruvdcx1sdszJ9p~iYoqYdPZfLhmoQhdDRCHhXkl5HjTdNHxUohpuVGdl2dD-INs8apcHjU-D4kdHIlgTi2imFivr2fb4MA18rDEBw4w__"
+            src="/images/shredder_blades/hero.webp"
             alt="Single Shaft Blades"
             className="w-full h-full object-cover opacity-30"
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         </div>
 
         <div className="container relative z-10">
@@ -214,6 +215,8 @@ export default function ProductDetail() {
                         src={image.url}
                         alt={image.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <CardContent className="p-4">

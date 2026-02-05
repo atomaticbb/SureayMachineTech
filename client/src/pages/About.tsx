@@ -52,11 +52,12 @@ export default function About() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-2_1770202043000_na1fn_c2hyZWRkZXItbWFjaGluZS1vcGVyYXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTJfMTc3MDIwMjA0MzAwMF9uYTFmbl9jMmh5WldSa1pYSXRiV0ZqYUdsdVpTMXZjR1Z5WVhScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=m2YQ~h4KExwt4q43UV1NAPaNgcAMVusyYgM4eep8-2x9B~SLKoNRbJj3zI0brtto5euOQXjlHhPVKvKphfEEz8BWSMjJQAm22n9Zre0aICxGkHnerUtXMnfUCZNHLKWvqD6dy53E~C8XCXT2O2dEwdSO4t9FS8cx8Q~P4~P2OrhKT-Avv39qM1OdA~cLAC6snVpcv71DLPZ6WFh9WUvtMKKPtPUesww-yKxuoSt4UUGChDEWXxMMoX~s5bgWKctxOyHl9Uw8OSjdBGB-IhOb8x2ONQe8H6~G-AKGtDCkQROUwbtLzuC2g8ktpz8KORorAj4DJ-K66X5of-SDFW512g__"
+            src="/images/about/factory.webp"
             alt="Factory"
             className="w-full h-full object-cover opacity-30"
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         </div>
 
         <div className="container relative z-10">
@@ -207,11 +208,12 @@ export default function About() {
               </div>
               <div className="relative aspect-square rounded-sm overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80"
+                  src="/images/common/metal-industrial-1.webp"
                   alt="Manufacturing Facility"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent"></div>
               </div>
             </div>
           </div>

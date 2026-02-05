@@ -4,6 +4,7 @@
  */
 
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
@@ -28,17 +29,25 @@ export default function Footer() {
               QUICK LINKS
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Products
+              <li>
+                <Link to="/products" className="hover:text-primary transition-colors cursor-pointer">
+                  Products
+                </Link>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Materials & Metallurgy
+              <li>
+                <Link to="/materials" className="hover:text-primary transition-colors cursor-pointer">
+                  Materials & Metallurgy
+                </Link>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Custom OEM Services
+              <li>
+                <Link to="/applications" className="hover:text-primary transition-colors cursor-pointer">
+                  Custom OEM Services
+                </Link>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                About Us
+              <li>
+                <Link to="/about" className="hover:text-primary transition-colors cursor-pointer">
+                  About Us
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,17 +58,20 @@ export default function Footer() {
               PRODUCTS
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Single Shaft Blades
+              <li>
+                <Link to="/products/single-shaft" className="hover:text-primary transition-colors cursor-pointer">
+                  Single Shaft Shredder Blades
+                </Link>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Dual Shaft Blades
+              <li>
+                <Link to="/products/metal" className="hover:text-primary transition-colors cursor-pointer">
+                  Shredder Blades for Metal
+                </Link>
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Hook Blades
-              </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Granulator Blades
+              <li>
+                <Link to="/products/plastic" className="hover:text-primary transition-colors cursor-pointer">
+                  Shredder Blades for Plastic
+                </Link>
               </li>
             </ul>
           </div>
@@ -97,12 +109,12 @@ export default function Footer() {
               reserved.
             </p>
             <div className="flex gap-6">
-              <span className="hover:text-primary transition-colors cursor-pointer">
+              <Link to="/contact" className="hover:text-primary transition-colors cursor-pointer">
                 Privacy Policy
-              </span>
-              <span className="hover:text-primary transition-colors cursor-pointer">
+              </Link>
+              <Link to="/contact" className="hover:text-primary transition-colors cursor-pointer">
                 Terms of Service
-              </span>
+              </Link>
             </div>
           </div>
         </div>

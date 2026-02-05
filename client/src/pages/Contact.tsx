@@ -8,13 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { Mail, MapPin, MessageSquare, Phone, Send } from "lucide-react";
@@ -28,11 +21,12 @@ export default function Contact() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-2_1770202043000_na1fn_c2hyZWRkZXItbWFjaGluZS1vcGVyYXRpb24.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTJfMTc3MDIwMjA0MzAwMF9uYTFmbl9jMmh5WldSa1pYSXRiV0ZqYUdsdVpTMXZjR1Z5WVhScGIyNC5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=m2YQ~h4KExwt4q43UV1NAPaNgcAMVusyYgM4eep8-2x9B~SLKoNRbJj3zI0brtto5euOQXjlHhPVKvKphfEEz8BWSMjJQAm22n9Zre0aICxGkHnerUtXMnfUCZNHLKWvqD6dy53E~C8XCXT2O2dEwdSO4t9FS8cx8Q~P4~P2OrhKT-Avv39qM1OdA~cLAC6snVpcv71DLPZ6WFh9WUvtMKKPtPUesww-yKxuoSt4UUGChDEWXxMMoX~s5bgWKctxOyHl9Uw8OSjdBGB-IhOb8x2ONQe8H6~G-AKGtDCkQROUwbtLzuC2g8ktpz8KORorAj4DJ-K66X5of-SDFW512g__"
+            src="/images/common/metal-industrial-1.webp"
             alt="Factory"
             className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background"></div>
         </div>
 
         <div className="container relative z-10">
@@ -52,10 +46,10 @@ export default function Contact() {
       {/* Two Column Layout */}
       <section className="py-24 bg-background">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-stretch">
             {/* Left Column - Contact Form */}
-            <div>
-              <Card className="bg-card border-border">
+            <div className="flex">
+              <Card className="bg-card border-border w-full">
                 <CardContent className="p-8 space-y-6">
                   <div className="space-y-3">
                     <h2 className="text-3xl font-bold text-foreground">
@@ -119,29 +113,6 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* Inquiry Details */}
-                    <div className="space-y-2">
-                      <Label htmlFor="inquiry-type" className="text-foreground">
-                        Inquiry Type *
-                      </Label>
-                      <Select required>
-                        <SelectTrigger className="bg-background border-border">
-                          <SelectValue placeholder="Select inquiry type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="quote">Request a Quote</SelectItem>
-                          <SelectItem value="technical">
-                            Technical Question
-                          </SelectItem>
-                          <SelectItem value="order">Order Status</SelectItem>
-                          <SelectItem value="partnership">
-                            Partnership
-                          </SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-
                     <div className="space-y-2">
                       <Label htmlFor="message" className="text-foreground">
                         Message *
@@ -169,9 +140,9 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Contact Info */}
-            <div>
+            <div className="flex">
               {/* Contact Information */}
-              <Card className="bg-card border-border">
+              <Card className="bg-card border-border w-full">
                 <CardContent className="p-8 space-y-6">
                   <div className="space-y-3">
                     <h2 className="text-3xl font-bold text-foreground">

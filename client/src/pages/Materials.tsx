@@ -84,11 +84,12 @@ export default function Materials() {
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-4_1770202029000_na1fn_cHJlY2lzaW9uLW1hY2hpbmluZw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTRfMTc3MDIwMjAyOTAwMF9uYTFmbl9jSEpsWTJsemFXOXVMVzFoWTJocGJtbHVady5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=E71a6ZkfrH6O3EcKHhdGpdrPWi5nKb57brYANRzFKm~vfwArtyXGXZlPce7TXy6jBA0v7WckZpqBmVCrFyCjLJtTAKuX5TU9SB7z3zZuvK9b92~mfqZ2IDB95F88g81ESWHzQWuYjjq0opBIo834yZiAjOiC75uhAtZDMkn6yXLcHKXV6iTEdkPhd8Ivl8bS1uu8hgp~gU9ANtlh6c84fYFDMD7etuEcnk2OalFZ33bppcs3C~LT2SG3uTr~yMF4CuHWHWHvKEjMYurwT8I15t4-gXABxTDp7n6sb92QpOPXJRDTp5WUvkPSUAQurIx8yAYe7-~Z8eWUUjNE6COoyQ__"
+            src="/images/common/industrial-waste-1.webp"
             alt="Precision Machining"
             className="w-full h-full object-cover opacity-30"
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         </div>
 
         <div className="container relative z-10">
@@ -244,11 +245,12 @@ export default function Materials() {
           <div className="mt-16 max-w-5xl mx-auto">
             <div className="relative rounded-sm overflow-hidden aspect-video">
               <img
-                src="https://private-us-east-1.manuscdn.com/sessionFile/atwthpmfUJ1KdGMP3YZhNS/sandbox/JHe2l9yPfpfDg5Wy1OgpOo-img-3_1770202043000_na1fn_YmxhZGUtaGVhdC10cmVhdG1lbnQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvYXR3dGhwbWZVSjFLZEdNUDNZWmhOUy9zYW5kYm94L0pIZTJsOXlQZnBmRGc1V3kxT2dwT28taW1nLTNfMTc3MDIwMjA0MzAwMF9uYTFmbl9ZbXhoWkdVdGFHVmhkQzEwY21WaGRHMWxiblEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Rp4OcZEqGI7oZuizbcWo8Zzs5BeG95rp4N1KUZXoRhvFA~AAHjSFjRfC1Xcb63Kgg1EWkFAFzmXlA7SiJwNjYiyYmK5l9qOBmrEBZoFl6YPb9JHO~Ouyn4U0veqTzcMvTxVMMvZgehCtXAwziXjxm0oBemICptUeGnnBHMLb59Hsy0jqGAW2ashWrXQTKRoiQtQn7APFglajFAM7p3IlIM2GCpAoLou0rd5bMbok~plGjEYjX1HQSHRaabpOBLyOLxM69~xtzbLB3SdXMXisFPguIn8issEPEQljNM-2XT~JEe1wex5hJ-8JIViGWgY9fQNlWy4wdJjCdMZWLcyZHg__"
+                src="/images/common/metal-industrial-1.webp"
                 alt="Heat Treatment"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8">
                 <h3 className="text-3xl font-bold text-foreground mb-2">
                   Vacuum Heat Treatment Process

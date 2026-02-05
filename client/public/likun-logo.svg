@@ -1,50 +1,38 @@
 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Industrial blade-inspired logo for Likun Machinery -->
-  
-  <!-- Outer hexagon frame (industrial nut shape) -->
-  <path d="M100 10 L170 50 L170 150 L100 190 L30 150 L30 50 Z" 
-        stroke="#FF4500" 
-        stroke-width="4" 
+  <!-- Minimalist Industrial Logo for LIKUN -->
+
+  <!-- Simple hexagon outline - industrial precision -->
+  <path d="M100 20 L160 55 L160 145 L100 180 L40 145 L40 55 Z"
+        stroke="#1A365D"
+        stroke-width="3"
         fill="none"
         stroke-linejoin="miter"/>
-  
-  <!-- Inner blade edge design -->
-  <g transform="translate(100, 100)">
-    <!-- Central "L" for Likun with sharp blade edges -->
-    <path d="M-30 -50 L-30 30 L10 30 L10 20 L-20 20 L-20 -50 Z" 
-          fill="#FF4500"/>
-    
-    <!-- Diagonal blade cut accent -->
-    <path d="M15 -40 L45 -10 L40 -5 L10 -35 Z" 
-          fill="#FF4500"/>
-    
-    <!-- Secondary blade element -->
-    <path d="M-40 -30 L-35 -35 L-5 -5 L-10 0 Z" 
-          fill="#FF6B35" 
-          opacity="0.8"/>
-    
-    <!-- Precision cutting edge detail -->
-    <line x1="-30" y1="40" x2="30" y2="40" 
-          stroke="#FF4500" 
-          stroke-width="3" 
-          stroke-linecap="square"/>
-    
-    <!-- Industrial gear teeth accent (bottom) -->
-    <rect x="-35" y="45" width="8" height="10" fill="#FF4500"/>
-    <rect x="-20" y="45" width="8" height="10" fill="#FF4500"/>
-    <rect x="-5" y="45" width="8" height="10" fill="#FF4500"/>
-    <rect x="10" y="45" width="8" height="10" fill="#FF4500"/>
-    <rect x="25" y="45" width="8" height="10" fill="#FF4500"/>
+
+  <!-- Simplified "LK" monogram -->
+  <g transform="translate(100, 90)">
+    <!-- Letter "L" - Bold and geometric -->
+    <path d="M-40 -35 L-40 40 L-10 40 L-10 32 L-32 32 L-32 -35 Z"
+          fill="#1A365D"/>
+
+    <!-- Letter "K" - Angular blade-inspired -->
+    <path d="M0 -35 L0 40 L8 40 L8 5 L30 40 L40 40 L15 0 L40 -35 L30 -35 L8 -5 L8 -35 Z"
+          fill="#1A365D"/>
   </g>
-  
-  <!-- Company name text -->
-  <text x="100" y="180" 
-        font-family="'Rajdhani', sans-serif" 
-        font-size="16" 
-        font-weight="700" 
-        fill="#FF4500" 
+
+  <!-- Precision line accent - minimal detail -->
+  <line x1="60" y1="155" x2="140" y2="155"
+        stroke="#1A365D"
+        stroke-width="2"
+        stroke-linecap="square"/>
+
+  <!-- Company name - clean typography -->
+  <text x="100" y="178"
+        font-family="'Rajdhani', sans-serif"
+        font-size="14"
+        font-weight="700"
+        fill="#1A365D"
         text-anchor="middle"
-        letter-spacing="2">
+        letter-spacing="4">
     LIKUN
   </text>
 </svg>

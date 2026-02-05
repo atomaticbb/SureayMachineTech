@@ -17,7 +17,7 @@ export default function Products() {
       title: "Single Shaft Shredder Blades",
       slug: "/products/single-shaft",
       image:
-        "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
+        "/images/products/single-shredder-blades.webp",
       description:
         "High-performance single shaft shredder blades engineered for maximum wear resistance and superior cutting efficiency across diverse waste materials.",
       features: [
@@ -40,7 +40,7 @@ export default function Products() {
       title: "Shredder Blades for Metal",
       slug: "/products/metal",
       image:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+        "/images/products/double-shredder-blades.webp",
       description:
         "Heavy-duty metal shredder blades designed to handle ferrous and non-ferrous metals with exceptional edge retention and minimal downtime.",
       features: [
@@ -63,7 +63,7 @@ export default function Products() {
       title: "Shredder Blades for Plastic",
       slug: "/products/plastic",
       image:
-        "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
+        "/images/products/four-shredder-blades.webp",
       description:
         "Specialized plastic shredder blades optimized for processing various plastic materials with minimal dust generation and consistent particle size.",
       features: [
@@ -113,16 +113,19 @@ export default function Products() {
             {products.map(product => (
               <Card
                 key={product.id}
-                className="relative overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group h-[400px]"
+                className="overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group flex flex-col"
               >
-                {/* Background Image */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${product.image})` }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-background/30"></div>
+                {/* Image Section */}
+                <div className="relative h-[300px] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
 
-                <CardContent className="relative z-10 p-6 h-full flex flex-col justify-end space-y-4">
+                {/* Content Section */}
+                <CardContent className="p-6 flex flex-col flex-grow space-y-4">
                   {/* Title */}
                   <div>
                     <h2 className="text-2xl font-bold text-foreground mb-2">
@@ -134,12 +137,12 @@ export default function Products() {
                   </div>
 
                   {/* Applications */}
-                  <div>
+                  <div className="flex-grow">
                     <div className="flex flex-wrap gap-2">
                       {product.applications.slice(0, 4).map((app, idx) => (
                         <span
                           key={idx}
-                          className="text-xs px-3 py-1 bg-primary/20 text-primary-foreground rounded-full backdrop-blur-sm"
+                          className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full"
                         >
                           {app}
                         </span>
@@ -221,6 +224,73 @@ export default function Products() {
                   Fast delivery worldwide with comprehensive quality assurance
                   and support
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Manufacturing Process Section */}
+      <section className="relative py-24 bg-background">
+        <div className="container">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Engineered Metallurgy for Different Shaft
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              From raw steel to precision-hardened cutting edges, every step is
+              controlled for consistency
+            </p>
+          </div>
+
+          {/* Manufacturing Steps Timeline */}
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-8 top-0 bottom-0 w-px bg-border hidden md:block"></div>
+
+              <div className="space-y-12">
+                {[
+                  {
+                    title: "Material Selection",
+                    description: "Premium D2/SKD11 steel with verified composition",
+                  },
+                  {
+                    title: "CNC Machining",
+                    description: "Precision cutting to ±0.05mm tolerance",
+                  },
+                  {
+                    title: "Vacuum Heat Treatment",
+                    description: "Controlled hardening to 58-62 HRC",
+                  },
+                  {
+                    title: "Cryogenic Tempering",
+                    description: "Enhanced toughness and wear resistance",
+                  },
+                  {
+                    title: "Final Inspection",
+                    description: "100% quality verification before shipping",
+                  },
+                ].map((step, index) => (
+                  <div key={index} className="relative flex gap-8 items-start">
+                    {/* Step Number */}
+                    <div className="flex-shrink-0 w-16 h-16 rounded-sm bg-primary/10 border-2 border-primary flex items-center justify-center z-10">
+                      <span className="text-2xl font-bold text-primary font-mono">
+                        {(index + 1).toString().padStart(2, "0")}
+                      </span>
+                    </div>
+
+                    {/* Step Content */}
+                    <div className="flex-1 pt-2">
+                      <h3 className="text-2xl font-bold text-foreground mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-lg text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

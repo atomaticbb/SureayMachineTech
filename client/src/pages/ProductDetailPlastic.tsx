@@ -25,15 +25,15 @@ export default function ProductDetailPlastic() {
       title: "Plastic Shredder Blade - Front View",
     },
     {
-      url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+      url: "/images/common/industrial-waste-1.webp",
       title: "Plastic Shredder Blade - Cutting Edge",
     },
     {
-      url: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=1200&q=80",
+      url: "/images/common/metal-industrial-1.webp",
       title: "Plastic Shredder Blade - Side Profile",
     },
     {
-      url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80",
+      url: "/images/common/waste-processing-1.webp",
       title: "Plastic Shredder Blade - Installation",
     },
   ];
@@ -86,11 +86,12 @@ export default function ProductDetailPlastic() {
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1920&q=80"
+            src="/images/common/plastic-recycling-1.webp"
             alt="Plastic Shredder Blades"
             className="w-full h-full object-cover opacity-40"
+            loading="lazy"
+            decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
 
         <div className="container relative z-10">
@@ -159,6 +160,8 @@ export default function ProductDetailPlastic() {
                         src={image.url}
                         alt={image.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <CardContent className="p-4">
