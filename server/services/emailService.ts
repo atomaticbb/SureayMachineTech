@@ -2,7 +2,18 @@ import { Resend } from 'resend';
 import { ContactFormData } from '../../shared/types/contact.js';
 import { prisma } from '../db/client.js';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization - only create when needed and API key exists
+let resend: Resend | null = null;
+
+const getResendClient = (): Resend | null => {
+  if (!process.env.RESEND_API_KEY) {
+    return null;
+  }
+  if (!resend) {
+    resend = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resend;
+};
 
 // HTML 邮件模板
 const createContactEmailHtml = (data: ContactFormData) => `
@@ -160,6 +171,31 @@ export const sendContactEmail = async (
   data: ContactFormData,
   metadata?: { ipAddress?: string; userAgent?: string }
 ): Promise<{ success: boolean; emailLogId?: string }> => {
+  // Check if Resend is configured
+  const resendClient = getResendClient();
+
+  if (!resendClient) {
+    console.warn('⚠️ Resend API key not configured - skipping email send');
+
+    // Still log to database that email would have been sent
+    try {
+      const emailLog = await prisma.emailLog.create({
+        data: {
+          to: process.env.EMAIL_TO || 'contact@yourdomain.com',
+          subject: `新的联系表单提交 - ${data.name}`,
+          templateName: 'contact_form',
+          status: 'skipped',
+          provider: 'resend',
+          errorMessage: 'Resend API key not configured',
+        },
+      });
+      return { success: false, emailLogId: emailLog.id };
+    } catch (dbError) {
+      console.error('Failed to log skipped email to database:', dbError);
+      return { success: false };
+    }
+  }
+
   try {
     console.log('📧 Sending contact email via Resend...', {
       to: process.env.EMAIL_TO,
@@ -167,7 +203,7 @@ export const sendContactEmail = async (
     });
 
     // 1. 发送邮件
-    const result = await resend.emails.send({
+    const result = await resendClient.emails.send({
       from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
       to: process.env.EMAIL_TO || 'contact@yourdomain.com',
       subject: `新的联系表单提交 - ${data.name}`,
