@@ -35,14 +35,16 @@ RUN npm install -g pnpm@10.4.1
 COPY package.json pnpm-lock.yaml ./
 COPY patches ./patches
 
+# Copy Prisma schema before install (needed for postinstall hook)
+COPY --from=builder /app/prisma ./prisma
+
 # Install production dependencies only
 RUN pnpm install --prod --frozen-lockfile
 
-# Copy built files and Prisma from builder
+# Copy built files and generated Prisma client from builder
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
-COPY --from=builder /app/prisma ./prisma
 
 # Create directory for database
 RUN mkdir -p /app/prisma/data
