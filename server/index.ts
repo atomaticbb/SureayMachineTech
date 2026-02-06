@@ -2,10 +2,12 @@ import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
+import cookieParser from "cookie-parser";
 import routes from "./routes/index.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import { corsMiddleware } from "./middleware/cors.js";
+import { analyticsMiddleware } from "./middleware/analytics.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,8 +18,10 @@ async function startServer() {
 
   // 中间件
   app.use(express.json());
+  app.use(cookieParser());
   app.use(corsMiddleware);
   app.use(logger);
+  app.use(analyticsMiddleware);
 
   // 健康检查
   app.get("/health", (req, res) => {

@@ -1,0 +1,91 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// 产品表
+model Product {
+  id           String   @id
+  name         String
+  description  String
+  category     String   // single-shaft, metal, plastic, other
+  image        String
+  specs        String?  // JSON string for ProductSpecs
+  features     String?  // JSON array
+  applications String?  // JSON array
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([category])
+  @@index([isActive])
+}
+
+// 客户联系表
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  company   String?
+  message   String
+  status    String   @default("pending") // pending, replied, closed
+  source    String?  // web, email, phone
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
+// 访问追踪表
+model Analytics {
+  id          String   @id @default(cuid())
+  eventType   String   // page_view, form_submit, product_view, contact_click
+  page        String?  // URL path
+  productId   String?  // 如果是产品相关事件
+  referrer    String?
+  ipAddress   String?
+  userAgent   String?
+  country     String?
+  city        String?
+  sessionId   String?  // 用于追踪用户会话
+  metadata    String?  // JSON string for additional data
+  createdAt   DateTime @default(now())
+
+  @@index([eventType])
+  @@index([page])
+  @@index([productId])
+  @@index([sessionId])
+  @@index([createdAt])
+}
+
+// 邮件发送日志表（可选，用于追踪邮件发送状态）
+model EmailLog {
+  id            String   @id @default(cuid())
+  to            String
+  subject       String
+  templateName  String?
+  status        String   // pending, sent, failed
+  provider      String   @default("resend")
+  providerId    String?  // Resend 返回的邮件 ID
+  errorMessage  String?
+  attemptCount  Int      @default(1)
+  sentAt        DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([status])
+  @@index([to])
+  @@index([createdAt])
+}

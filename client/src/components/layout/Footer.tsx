@@ -8,15 +8,15 @@ import { Link } from "wouter";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-32 bg-card blade-cut-top pt-24 pb-8">
+    <footer className="relative mt-32 bg-[#1A365D] blade-cut-top pt-24 pb-8">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-foreground tracking-wider">
+            <h3 className="text-lg font-bold text-white tracking-wider">
               LIKUN MACHINERY
             </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-gray-300 leading-relaxed">
               Professional manufacturer of high-performance shredder blades and
               cutting tools. Direct factory pricing with superior wear
               resistance.
@@ -25,10 +25,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold text-foreground tracking-wider">
+            <h4 className="text-sm font-bold text-white tracking-wider">
               QUICK LINKS
             </h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>
                 <Link to="/products" className="hover:text-primary transition-colors cursor-pointer">
                   Products
@@ -54,23 +54,18 @@ export default function Footer() {
 
           {/* Products */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold text-foreground tracking-wider">
+            <h4 className="text-sm font-bold text-white tracking-wider">
               PRODUCTS
             </h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link to="/products/single-shaft" className="hover:text-primary transition-colors cursor-pointer">
+                <Link to="/products/single-shaft-shredder-blades" className="hover:text-primary transition-colors cursor-pointer">
                   Single Shaft Shredder Blades
                 </Link>
               </li>
               <li>
-                <Link to="/products/metal" className="hover:text-primary transition-colors cursor-pointer">
-                  Shredder Blades for Metal
-                </Link>
-              </li>
-              <li>
-                <Link to="/products/plastic" className="hover:text-primary transition-colors cursor-pointer">
-                  Shredder Blades for Plastic
+                <Link to="/products/multi-shaft-shredder-blades" className="hover:text-primary transition-colors cursor-pointer">
+                  Multi Shaft Shredder Blades
                 </Link>
               </li>
             </ul>
@@ -78,10 +73,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-sm font-bold text-foreground tracking-wider">
+            <h4 className="text-sm font-bold text-white tracking-wider">
               CONTACT
             </h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
+            <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1 text-primary flex-shrink-0" />
                 <span>
@@ -102,20 +97,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="pt-8 border-t border-gray-600">
+          <div className="flex justify-center items-center text-sm text-gray-300">
             <p>
               © 2026 Likun Machinery & Cutting Tools Co., Ltd. All rights
               reserved.
             </p>
-            <div className="flex gap-6">
-              <Link to="/contact" className="hover:text-primary transition-colors cursor-pointer">
-                Privacy Policy
-              </Link>
-              <Link to="/contact" className="hover:text-primary transition-colors cursor-pointer">
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>

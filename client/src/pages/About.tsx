@@ -102,38 +102,20 @@ export default function About() {
             </h2>
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Founded in 2010 in Zhangjiagang, Jiangsu Province, Liqun
-                Machinery began with a simple mission: to provide recycling
-                facilities with high-quality replacement shredder blades at fair
-                prices. Our founder, a former metallurgical engineer, recognized
-                that many operators were paying premium prices for OEM parts
-                that didn't last as long as they should.
+              <p className="text-2xl font-bold text-foreground">
+                Engineering High-Performance Blades Since 2008
               </p>
 
               <p>
-                We invested heavily in understanding the science of blade
-                performance—not just the geometry, but the metallurgy, heat
-                treatment, and real-world wear patterns. By combining advanced
-                CNC machining with precision heat treatment processes, we
-                developed blades that consistently outperform standard
-                replacements.
+                Since 2008, Liqun Machinery & Cutting Tools has been at the forefront of tackling the industry's most persistent challenge: premature blade failure.
               </p>
 
               <p>
-                Today, we serve customers in over 50 countries, from small
-                recycling operations to large industrial facilities. Our
-                engineering team has reverse-engineered thousands of blade
-                designs, building a comprehensive database that allows us to
-                quickly provide exact replacements for virtually any shredder
-                model.
+                We deliver engineering-driven solutions that extend blade service life by 30%-50% compared to conventional market standards. By merging material science with precision manufacturing, we analyze the specific wear patterns of your recycling applications. Whether processing tires, scrap metal, plastics, or MSW, we optimize blade geometry and metallurgy to minimize wear and maximize throughput.
               </p>
 
               <p className="text-foreground font-semibold">
-                What sets us apart isn't just our manufacturing capability—it's
-                our commitment to understanding each customer's specific
-                challenges and delivering solutions that maximize their
-                equipment uptime and profitability.
+                At Liqun, we don't just supply blades; we are your strategic partner in maximizing production uptime and optimizing shredding efficiency.
               </p>
             </div>
           </div>
@@ -208,7 +190,7 @@ export default function About() {
               </div>
               <div className="relative aspect-square rounded-sm overflow-hidden">
                 <img
-                  src="/images/common/metal-industrial-1.webp"
+                  src="/images/common/Quality-Inspection.webp"
                   alt="Manufacturing Facility"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -272,13 +254,13 @@ export default function About() {
                 Request a Quote
                 <ArrowRight className="ml-2" size={20} />
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-12 py-6"
               >
                 Schedule Factory Tour
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

@@ -13,11 +13,11 @@ import { Link } from "wouter";
 export default function Products() {
   const products = [
     {
-      id: "single-shaft",
+      id: "single-shaft-shredder-blades",
       title: "Single Shaft Shredder Blades",
-      slug: "/products/single-shaft",
+      slug: "/products/single-shaft-shredder-blades",
       image:
-        "/images/products/single-shredder-blades.webp",
+        "/images/products/single-shaft-blades.webp",
       description:
         "High-performance single shaft shredder blades engineered for maximum wear resistance and superior cutting efficiency across diverse waste materials.",
       features: [
@@ -32,53 +32,28 @@ export default function Products() {
         "Tire shredding",
         "Wood processing",
         "Textile waste",
-        "General waste",
       ],
     },
     {
-      id: "metal",
-      title: "Shredder Blades for Metal",
-      slug: "/products/metal",
+      id: "multi-shaft-shredder-blades",
+      title: "Multi Shaft Shredder Blades",
+      slug: "/products/multi-shaft-shredder-blades",
       image:
-        "/images/products/double-shredder-blades.webp",
+        "/images/products/mutil-shaft-blades.webp",
       description:
-        "Heavy-duty metal shredder blades designed to handle ferrous and non-ferrous metals with exceptional edge retention and minimal downtime.",
+        "Heavy-duty multi shaft shredder blades designed for dual and quad shaft shredders, delivering exceptional cutting performance and durability for industrial waste processing.",
       features: [
         "Materials: 6CrW2Si, Cr12MoV, H13, H13K, W6Mo5CrV2, W18Cr4V",
-        "Superior hardness (58-62 HRC) for cutting steel, aluminum, copper",
-        "Precision ground cutting edges for clean, burr-free cuts",
+        "Superior hardness (58-62 HRC) for demanding applications",
+        "Precision ground cutting edges for clean, efficient cuts",
         "Vacuum heat treatment for uniform hardness distribution",
-        "Ideal for scrap metal yards and automotive recycling",
+        "Ideal for metal recycling, e-waste, and heavy-duty waste streams",
       ],
       applications: [
-        "Aluminum cans",
-        "Copper wire",
-        "Steel drums",
+        "Metal recycling",
+        "E-waste processing",
+        "Industrial waste",
         "Automotive parts",
-        "Appliance housings",
-      ],
-    },
-    {
-      id: "plastic",
-      title: "Shredder Blades for Plastic",
-      slug: "/products/plastic",
-      image:
-        "/images/products/four-shredder-blades.webp",
-      description:
-        "Specialized plastic shredder blades optimized for processing various plastic materials with minimal dust generation and consistent particle size.",
-      features: [
-        "Materials: T10A, 9CrSi, Cr12MoV for different plastic types",
-        "Sharp cutting angles designed for clean plastic shearing",
-        "Low friction coating options to prevent material buildup",
-        "Extended blade life on abrasive plastics like PVC and ABS",
-        "Compatible with single and double shaft shredders",
-      ],
-      applications: [
-        "HDPE/PET bottles",
-        "PVC pipes",
-        "Polypropylene packaging",
-        "Plastic film",
-        "Rigid plastics",
       ],
     },
   ];
@@ -109,7 +84,7 @@ export default function Products() {
       {/* Products Grid */}
       <section className="py-24 bg-background">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {products.map(product => (
               <Card
                 key={product.id}

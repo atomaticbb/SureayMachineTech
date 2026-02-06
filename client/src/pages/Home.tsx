@@ -19,6 +19,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useEffect, useRef } from "react";
+import { Link } from "wouter";
 
 export default function Home() {
   const processScrollRef = useRef<HTMLDivElement>(null);
@@ -33,34 +34,34 @@ export default function Home() {
 
   const applications = [
     {
-      title: "Plastic Recycling",
-      image:
-        "/images/common/plastic-recycling-1.webp",
-    },
-    {
       title: "Metal Recycling",
       image:
-        "/images/carousel/blade-detail-1.webp",
+        "/images/applications/Metal-Waste-Recycling.webp",
+    },
+    {
+      title: "Plastic Recycling",
+      image:
+        "/images/applications/Plastic-Waste-Recycling.webp",
     },
     {
       title: "E-waste Recycling",
       image:
-        "/images/carousel/blade-detail-2.webp",
+        "/images/applications/Electronic-Waste-Recycling.webp",
     },
     {
       title: "Tire Recycling",
       image:
-        "/images/carousel/blade-detail-3.webp",
+        "/images/applications/Tires-Waste-Recycling.webp",
     },
     {
       title: "Industrial Waste",
       image:
-        "/images/common/waste-processing-1.webp",
+        "/images/applications/Instudries-Waste-Recycling.webp",
     },
     {
       title: "Municipal Solid Waste",
       image:
-        "/images/common/plastic-recycling-1.webp",
+        "/images/applications/Solid-Waste-Recycling.webp",
     },
   ];
 
@@ -71,7 +72,7 @@ export default function Home() {
       description:
         "Detailed technical review and specification confirmation with customer requirements",
       image:
-        "/images/carousel/blade-detail-4.webp",
+        "/images/process/1-Raw Material Selection.webp",
     },
     {
       step: "Step 2",
@@ -79,7 +80,7 @@ export default function Home() {
       description:
         "Precision cutting of premium steel materials to exact dimensions",
       image:
-        "/images/common/metal-industrial-1.webp",
+        "/images/process/2-Material Choosing.webp",
     },
     {
       step: "Step 3",
@@ -87,7 +88,7 @@ export default function Home() {
       description:
         "Controlled heat treatment to achieve optimal hardness and toughness",
       image:
-        "/images/common/industrial-waste-1.webp",
+        "/images/process/3-Heat Treatment.webp",
     },
     {
       step: "Step 4",
@@ -95,7 +96,7 @@ export default function Home() {
       description:
         "Rigorous hardness testing to verify heat treatment effectiveness",
       image:
-        "/images/common/waste-processing-1.webp",
+        "/images/process/7-Quality Inspection.webp",
     },
     {
       step: "Step 5",
@@ -103,7 +104,7 @@ export default function Home() {
       description:
         "CNC machining and grinding to achieve precise cutting edges and tolerances",
       image:
-        "/images/carousel/blade-detail-5.webp",
+        "/images/process/4-CNC Machining.webp",
     },
     {
       step: "Step 6",
@@ -111,7 +112,7 @@ export default function Home() {
       description:
         "Comprehensive quality control including dimensional and visual inspection",
       image:
-        "/images/common/waste-processing-1.webp",
+        "/images/process/5-Grinding.webp",
     },
     {
       step: "Step 7",
@@ -119,7 +120,7 @@ export default function Home() {
       description:
         "Proper packaging and storage ensuring product protection until delivery",
       image:
-        "/images/carousel/blade-detail-6.webp",
+        "/images/process/8-Packaging.webp",
     },
   ];
 
@@ -155,7 +156,7 @@ export default function Home() {
     if (!carouselTrack) return;
 
     let currentIndex = 0;
-    const cardWidth = 320 + 24; // card width (w-80 = 320px) + gap (gap-6 = 24px)
+    const cardWidth = 384 + 24; // card width (w-96 = 384px) + gap (gap-6 = 24px)
     const maxIndex = 4; // Move 4 times to show step 7 on the right side, then reset
 
     const autoCarousel = setInterval(() => {
@@ -191,7 +192,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero/home-hero.webp"
+            src="/images/hero/shredder-blades.webp"
             alt="Shredder Blade"
             className="w-full h-full object-cover"
             loading="lazy"
@@ -202,24 +203,20 @@ export default function Home() {
         {/* Hero Content */}
         <div className="container relative z-10">
           <div className="max-w-3xl space-y-8">
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-none tracking-tight">
               ENGINEERING THE SHARPEST EDGE
-              {/* <span className="block text-primary mt-2">SHARPEST EDGE</span> */}
-              
               FOR THE TOUGHEST WASTE
             </h1>
-            <p className="text-xl md:text-2xl text-white font-light leading-relaxed">
-              Maximize your shredder's uptime with replacement blades designed
-              for superior wear resistance
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 animate-forge-pulse"
-              >
-                Get a Trial Order Quote
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6 animate-forge-pulse"
+                >
+                  Get a Trial Order Quote
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </Link>
               {/* <Button
                 size="lg"
                 variant="outline"
@@ -236,149 +233,58 @@ export default function Home() {
       </section>
 
       {/* Problem Statement Section */}
-      <section className="py-24 bg-background">
+      <section className="py-16 bg-background">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-4xl mx-auto text-center space-y-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Is Your Shredding Operation Held Back by These Issues?
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Inefficient blades don't just cost money, they cost you production
-              time and peace of mind.
+            <p className="text-lg text-muted-foreground">
+              Inefficient blades cost you production time and money
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               {
-                image:
-                  "/images/common/waste-processing-1.webp",
                 title: "Premature Wear",
                 description:
-                  "Blades dulling too fast, forcing frequent changeovers and halting production lines.",
+                  "Blades dulling too fast, forcing frequent changeovers",
               },
               {
-                image:
-                  "/images/common/industrial-waste-1.webp",
                 title: "Unstable Performance",
                 description:
-                  "Inconsistent cutting quality leading to material jams and reprocessing needs.",
+                  "Inconsistent cutting quality leading to material jams",
               },
               {
-                image:
-                  "/images/common/metal-industrial-1.webp",
                 title: "Excessive OEM Costs",
                 description:
-                  "Paying premium prices for brand-name replacement blades with standard durability.",
+                  "Paying premium prices for standard durability",
               },
               {
-                image:
-                  "/images/common/industrial-waste-2.webp",
                 title: "Quality Variance",
                 description:
-                  "Unpredictable lifespan between batches making maintenance planning impossible.",
+                  "Unpredictable lifespan making maintenance planning impossible",
               },
             ].map((issue, index) => (
               <Card
                 key={index}
-                className="bg-card border-border hover:border-primary transition-all duration-300 overflow-hidden group"
+                className="bg-card border-t-4 border-t-primary border-border hover:shadow-lg transition-all duration-300 group"
               >
-                <div className="relative aspect-video overflow-hidden">
-                  <img
-                    src={issue.image}
-                    alt={issue.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
                 <CardContent className="p-6 space-y-3">
-                  <h3 className="text-xl font-bold text-foreground">
+                  <div className="w-10 h-10 rounded-sm bg-primary/10 flex items-center justify-center mb-2">
+                    <span className="text-xl font-bold text-primary font-mono">
+                      {(index + 1).toString().padStart(2, "0")}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
                     {issue.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {issue.description}
                   </p>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Process Section */}
-      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Our Process
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              From customer confirmation to final delivery, every step ensures
-              precision and quality
-            </p>
-          </div>
-
-          <div
-            ref={processScrollRef}
-            className="overflow-hidden pb-4"
-          >
-            <div className="flex gap-6">
-              {processSteps.map((process, index) => (
-                <Card
-                  key={index}
-                  className="w-80 flex-shrink-0 overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group"
-                >
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={process.image}
-                      alt={process.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <CardContent className="p-6 space-y-3">
-                    <div className="text-sm font-bold text-primary">
-                      {process.step}
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground">
-                      {process.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {process.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Compatible Brands Section */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Compatible With Major Brands
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Direct replacement blades for leading shredder manufacturers
-              worldwide
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-5xl mx-auto">
-            {compatibleBrands.map((brand, index) => (
-              <div
-                key={index}
-                className="aspect-square flex items-center justify-center bg-card border border-border rounded-sm hover:border-primary transition-all duration-300 group"
-              >
-                <span className="text-2xl font-bold text-muted-foreground group-hover:text-primary transition-colors font-mono">
-                  {brand}
-                </span>
-              </div>
             ))}
           </div>
         </div>
@@ -411,20 +317,101 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 flex items-end p-6">
                   <div className="space-y-2">
-                    <h3 className="text-2xl font-bold text-foreground">
+                    <h3 className="text-2xl font-bold text-white">
                       Shredder Blades for
                     </h3>
-                    <p className="text-xl text-primary font-bold">
+                    <p className="text-xl font-bold text-amber-400">
                       {app.title}
                     </p>
                     <ArrowRight
-                      className="text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="text-white opacity-0 group-hover:opacity-100 transition-opacity"
                       size={24}
                     />
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* Compatible Brands Section */}
+      <section className="py-24 bg-background">
+        <div className="container">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Compatible With Major Brands
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Direct replacement blades for leading shredder manufacturers
+              worldwide
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-5xl mx-auto">
+            {compatibleBrands.map((brand, index) => (
+              <div
+                key={index}
+                className="aspect-square flex items-center justify-center bg-card border border-border rounded-sm hover:border-primary transition-all duration-300 group"
+              >
+                <span className="text-2xl font-bold text-muted-foreground group-hover:text-primary transition-colors font-mono">
+                  {brand}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Process Section */}
+      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Our Process
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              From customer confirmation to final delivery, every step ensures
+              precision and quality
+            </p>
+          </div>
+
+          <div
+            ref={processScrollRef}
+            className="overflow-hidden pb-4"
+          >
+            <div className="flex gap-6">
+              {processSteps.map((process, index) => (
+                <Card
+                  key={index}
+                  className="w-96 flex-shrink-0 overflow-hidden border-2 border-border hover:border-primary transition-all duration-300 group p-0"
+                >
+                  <div className="aspect-[16/10] overflow-hidden">
+                    <img
+                      src={process.image}
+                      alt={process.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <CardContent className="p-6 space-y-3">
+                    <div className="flex items-center gap-3">
+                      <span className="text-sm font-bold text-primary">
+                        {process.step}
+                      </span>
+                      <h3 className="text-lg font-bold text-foreground">
+                        {process.title}
+                      </h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {process.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -441,20 +428,22 @@ export default function Home() {
               model
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-6 animate-forge-pulse"
-              >
-                Request a Quote
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-              <Button
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-6 animate-forge-pulse"
+                >
+                  Request a Quote
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </Link>
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-12 py-6"
               >
                 View Product Catalog
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

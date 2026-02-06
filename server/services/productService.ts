@@ -1,39 +1,51 @@
-import { Product } from "../../shared/types/product.js";
-
-// Mock 数据，后续可以替换为数据库查询
-const mockProducts: Product[] = [
-  {
-    id: "single-shaft",
-    name: "Single Shaft Shredder Blades",
-    description: "High-performance single shaft shredder blades",
-    category: "single-shaft",
-    image:
-      "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
-  },
-  {
-    id: "metal",
-    name: "Metal Shredder Blades",
-    description: "Heavy-duty metal recycling blades",
-    category: "metal",
-    image:
-      "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&q=80",
-  },
-  {
-    id: "plastic",
-    name: "Plastic Shredder Blades",
-    description: "Specialized plastic recycling blades",
-    category: "plastic",
-    image:
-      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
-  },
-];
+import { prisma } from '../db/client.js';
+import { Product } from '../../shared/types/product.js';
 
 export const getAllProducts = async (): Promise<Product[]> => {
-  return mockProducts;
+  try {
+    const products = await prisma.product.findMany({
+      where: { isActive: true },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    return products.map((p) => ({
+      id: p.id,
+      name: p.name,
+      description: p.description,
+      category: p.category as Product['category'],
+      image: p.image,
+      specs: p.specs ? JSON.parse(p.specs) : undefined,
+      features: p.features ? JSON.parse(p.features) : undefined,
+      applications: p.applications ? JSON.parse(p.applications) : undefined,
+    }));
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    throw new Error('Failed to fetch products');
+  }
 };
 
-export const getProductById = async (
-  id: string
-): Promise<Product | undefined> => {
-  return mockProducts.find(p => p.id === id);
+export const getProductById = async (id: string): Promise<Product | undefined> => {
+  try {
+    const product = await prisma.product.findUnique({
+      where: { id },
+    });
+
+    if (!product) {
+      return undefined;
+    }
+
+    return {
+      id: product.id,
+      name: product.name,
+      description: product.description,
+      category: product.category as Product['category'],
+      image: product.image,
+      specs: product.specs ? JSON.parse(product.specs) : undefined,
+      features: product.features ? JSON.parse(product.features) : undefined,
+      applications: product.applications ? JSON.parse(product.applications) : undefined,
+    };
+  } catch (error) {
+    console.error('Error fetching product:', error);
+    throw new Error('Failed to fetch product');
+  }
 };

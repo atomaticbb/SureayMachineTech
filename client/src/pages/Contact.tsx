@@ -3,6 +3,7 @@
  * Two-column layout with factory background
  */
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -11,8 +12,67 @@ import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { Mail, MapPin, MessageSquare, Phone, Send } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast.success("Message sent successfully! We'll get back to you soon.");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+      } else {
+        // Handle validation errors
+        if (data.errors && Array.isArray(data.errors)) {
+          data.errors.forEach((error: any) => {
+            toast.error(error.message || "Validation error");
+          });
+        } else {
+          toast.error(data.message || "Failed to send message. Please try again.");
+        }
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("An error occurred. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -61,7 +121,7 @@ export default function Contact() {
                     </p>
                   </div>
 
-                  <form className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit}>
                     {/* Personal Info */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
@@ -72,6 +132,8 @@ export default function Contact() {
                           id="name"
                           placeholder="John Smith"
                           className="bg-background border-border"
+                          value={formData.name}
+                          onChange={handleChange}
                           required
                         />
                       </div>
@@ -84,6 +146,8 @@ export default function Contact() {
                           type="email"
                           placeholder="john@company.com"
                           className="bg-background border-border"
+                          value={formData.email}
+                          onChange={handleChange}
                           required
                         />
                       </div>
@@ -98,6 +162,8 @@ export default function Contact() {
                           id="company"
                           placeholder="Your Company Ltd."
                           className="bg-background border-border"
+                          value={formData.company}
+                          onChange={handleChange}
                         />
                       </div>
                       <div className="space-y-2">
@@ -109,6 +175,8 @@ export default function Contact() {
                           type="tel"
                           placeholder="+1 (555) 123-4567"
                           className="bg-background border-border"
+                          value={formData.phone}
+                          onChange={handleChange}
                         />
                       </div>
                     </div>
@@ -122,6 +190,8 @@ export default function Contact() {
                         placeholder="Please provide details about your inquiry..."
                         rows={6}
                         className="bg-background border-border"
+                        value={formData.message}
+                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -130,8 +200,9 @@ export default function Contact() {
                       type="submit"
                       size="lg"
                       className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6 animate-forge-pulse"
+                      disabled={isSubmitting}
                     >
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                       <Send className="ml-2" size={20} />
                     </Button>
                   </form>

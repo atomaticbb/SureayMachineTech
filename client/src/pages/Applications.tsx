@@ -8,42 +8,43 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Applications() {
   const applications = [
     {
       title: "Plastic Waste",
-      image: "/images/applications/Plastic-Waste.webp",
+      image: "/images/applications/Plastic-Waste-Recycling.webp",
       description:
         "High-performance blades designed for processing various plastic materials including HDPE, PET, PVC, and polypropylene.",
     },
     {
       title: "Metal Scrap",
-      image: "/images/applications/Metal-Scrap.webp",
+      image: "/images/applications/Metal-Waste-Recycling.webp",
       description:
         "Heavy-duty blades engineered to handle ferrous and non-ferrous metals, aluminum cans, copper wire, and sheet metal scrap.",
     },
     {
       title: "Solid Waste",
-      image: "/images/applications/Solid-Waste.webp",
+      image: "/images/applications/Solid-Waste-Recycling.webp",
       description:
         "Robust blades for municipal solid waste processing, reducing volume for landfill diversion and material recovery.",
     },
     {
       title: "Electronic Waste",
-      image: "/images/applications/Electronic-Waste.webp",
+      image: "/images/applications/Electronic-Waste-Recycling.webp",
       description:
         "Specialized blades for electronic waste recycling, safely processing circuit boards, computer components, and consumer electronics.",
     },
     {
       title: "Tires & Rubber",
-      image: "/images/applications/Tires-&-Rubbe.webp",
+      image: "/images/applications/Tires-Waste-Recycling.webp",
       description:
         "Durable blades specifically designed for tire recycling, rubber products, and elastomer materials with excellent cut resistance.",
     },
     {
       title: "Industrial Waste",
-      image: "/images/applications/Solid-Waste.webp",
+      image: "/images/applications/Instudries-Waste-Recycling.webp",
       description:
         "Industrial-grade blades for manufacturing waste streams including production scrap, defective products, and process waste.",
     },
@@ -101,10 +102,12 @@ export default function Applications() {
                   <p className="text-muted-foreground leading-relaxed">
                     {app.description}
                   </p>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
-                    Request Quote
-                    <ArrowRight className="ml-2" size={18} />
-                  </Button>
+                  <Link href="/contact">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
+                      Request Quote
+                      <ArrowRight className="ml-2" size={18} />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -126,20 +129,22 @@ export default function Applications() {
               recommend the optimal blade configuration
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6"
-              >
-                Consult with an Engineer
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-              <Button
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-8 py-6"
+                >
+                  Consult with an Engineer
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </Link>
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-8 py-6"
               >
                 View All Products
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
