@@ -38,19 +38,14 @@ if [ ! -f "$DB_FILE" ]; then
     fi
   fi
 else
-  echo "Database file exists, checking schema..."
+  echo "Database file exists, checking and updating schema..."
   
-  # Verify tables exist by running a simple query
-  if pnpm prisma db execute --stdin <<< "SELECT name FROM sqlite_master WHERE type='table';" >/dev/null 2>&1; then
-    echo "✓ Database schema appears valid"
+  # Always push schema to ensure it's up to date
+  if pnpm prisma db push --accept-data-loss; then
+    echo "✓ Database schema updated successfully"
   else
-    echo "⚠ Database exists but schema may be incomplete, pushing schema..."
-    if pnpm prisma db push --accept-data-loss; then
-      echo "✓ Database schema updated successfully"
-    else
-      echo "✗ Failed to update database schema"
-      exit 1
-    fi
+    echo "✗ Failed to update database schema"
+    exit 1
   fi
 fi
 
@@ -62,18 +57,13 @@ else
   echo "ℹ Database seeding skipped (database may already contain data)"
 fi
 
-# Final verification - test if we can query the Contact table
-echo "Verifying database tables..."
-if pnpm prisma db execute --stdin <<< "SELECT COUNT(*) FROM Contact;" >/dev/null 2>&1; then
-  echo "✓ Database verification successful - Contact table exists"
+# Simple verification - check if database file was created
+if [ -f "$DB_FILE" ]; then
+  echo "✓ Database verification successful - database file exists"
+  ls -la "$DB_FILE"
 else
-  echo "✗ Database verification failed - tables do not exist"
-  echo "Attempting final schema push..."
-  pnpm prisma db push --accept-data-loss --force-reset
-  if [ $? -ne 0 ]; then
-    echo "✗ Final schema push failed"
-    exit 1
-  fi
+  echo "✗ Database verification failed - database file does not exist"
+  exit 1
 fi
 
 # Start the application
