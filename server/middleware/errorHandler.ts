@@ -7,16 +7,16 @@ export interface AppError extends Error {
 }
 
 export const errorHandler = (
-  err: AppError | ZodError,
+  err: any,
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   // Handle Zod validation errors
-  if (err instanceof ZodError) {
-    const errors = err.errors.map(error => ({
-      field: error.path.join('.'),
-      message: error.message,
+  if (err instanceof ZodError || (err.name === 'ZodError' && err.errors)) {
+    const errors = (err.errors || []).map((error: any) => ({
+      field: error.path ? error.path.join('.') : 'unknown',
+      message: error.message || 'Validation error',
     }));
 
     console.error('[VALIDATION ERROR]', errors);
