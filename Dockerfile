@@ -38,7 +38,7 @@ RUN npm install -g pnpm@10.4.1
 COPY package.json pnpm-lock.yaml ./
 COPY patches ./patches
 
-# Copy Prisma schema before install (needed for postinstall hook)
+# Copy Prisma schema and migrations before install (needed for postinstall hook)
 COPY --from=builder /app/prisma ./prisma
 
 # Install production dependencies only
@@ -46,6 +46,10 @@ RUN pnpm install --prod --frozen-lockfile
 
 # Copy built files from builder
 COPY --from=builder /app/dist ./dist
+
+# Copy startup script
+COPY start.sh ./start.sh
+RUN chmod +x start.sh
 
 # Create directory for database
 RUN mkdir -p /app/prisma/data
@@ -62,5 +66,5 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
   CMD node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
 
 # Start application
-CMD ["node", "dist/index.js"]
+CMD ["./start.sh"]
 

@@ -94,15 +94,30 @@ Health Check Interval: 30s
 
 ## Database Initialization
 
-On first deployment, run the database migration:
+**自动初始化**: 新的部署已经包含自动数据库初始化。容器启动时会自动：
+1. 创建所需的数据库目录
+2. 运行 Prisma 迁移
+3. 如果迁移失败，自动执行 schema push 作为备选方案
+4. 可选地为数据库添加种子数据
 
-1. Go to **Terminal** in Coolify
-2. Run:
+如果需要手动操作，可以在 **Terminal** 中运行：
+
+### 检查迁移状态
+```bash
+pnpm db:migrate:status
+```
+
+### 手动运行迁移
 ```bash
 pnpm db:migrate:prod
 ```
 
-Or if you want to seed with sample data:
+### 备选方案（如果迁移失败）
+```bash
+pnpm db:push
+```
+
+### 添加种子数据
 ```bash
 pnpm db:seed
 ```
@@ -174,6 +189,50 @@ If the app doesn't start:
 - ✅ Contact form management
 - ✅ Health check endpoint
 - ✅ CORS configured
+
+## Troubleshooting
+
+### 数据库初始化问题
+
+如果遇到 "No migration found" 错误：
+
+1. **检查迁移文件**:
+   ```bash
+   ls -la /app/prisma/migrations/
+   ```
+
+2. **检查数据库连接**:
+   ```bash
+   echo $DATABASE_URL
+   ls -la /app/prisma/data/
+   ```
+
+3. **手动初始化数据库**:
+   ```bash
+   # 方法 1: 强制推送 schema
+   pnpm prisma db push --accept-data-loss
+   
+   # 方法 2: 重置迁移状态
+   pnpm prisma migrate reset --force
+   pnpm db:migrate:prod
+   ```
+
+4. **查看容器日志**:
+   在 Coolify 的 "Logs" 部分查看详细错误信息
+
+### 常见问题
+
+**Q: 数据库文件丢失**
+A: 确保在 Coolify 中配置了持久化存储卷 `/app/prisma/data`
+
+**Q: 联系表单不工作**
+A: 检查 `RESEND_API_KEY` 环境变量是否设置
+
+**Q: 页面加载慢**
+A: 检查健康检查和资源限制配置
+
+**Q: 构建失败**
+A: 确保使用 Node.js 20+ 和 pnpm 包管理器
 - ✅ Error handling
 
 ## Need Help?
