@@ -51,12 +51,15 @@ COPY --from=builder /app/dist ./dist
 COPY start.sh ./start.sh
 RUN chmod +x start.sh
 
-# Create directory for database
-RUN mkdir -p /app/prisma/data
-
-# Set environment
+# Set environment first
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV DATABASE_URL="file:/app/prisma/data/database.db"
+
+# Create directory for database with proper permissions
+RUN mkdir -p /app/prisma/data && \
+    chmod 755 /app/prisma && \
+    chmod 755 /app/prisma/data
 
 # Expose port
 EXPOSE 3000
