@@ -12,10 +12,13 @@ RUN npm install -g pnpm@10.4.1
 COPY package.json pnpm-lock.yaml ./
 COPY patches ./patches
 
+# Copy Prisma schema (needed for postinstall hook)
+COPY prisma ./prisma
+
 # Install dependencies
 RUN pnpm install --frozen-lockfile
 
-# Copy source code
+# Copy rest of source code
 COPY . .
 
 # Generate Prisma client and build
