@@ -44,10 +44,8 @@ COPY --from=builder /app/prisma ./prisma
 # Install production dependencies only
 RUN pnpm install --prod --frozen-lockfile
 
-# Copy built files and generated Prisma client from builder
+# Copy built files from builder
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules/.prisma ./node_modules/.prisma
-COPY --from=builder /app/node_modules/@prisma ./node_modules/@prisma
 
 # Create directory for database
 RUN mkdir -p /app/prisma/data
