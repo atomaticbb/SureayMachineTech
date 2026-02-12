@@ -104,7 +104,7 @@ export default function Admin() {
       }
     } catch (error) {
       console.error("Failed to fetch contacts:", error);
-      toast.error("Failed to load contacts");
+      toast.error("加载联系人失败");
     } finally {
       setLoading(false);
     }
@@ -121,7 +121,7 @@ export default function Admin() {
       }
     } catch (error) {
       console.error("Failed to fetch analytics:", error);
-      toast.error("Failed to load analytics");
+      toast.error("加载分析数据失败");
     } finally {
       setLoading(false);
     }
@@ -137,12 +137,12 @@ export default function Admin() {
       });
       const data = await res.json();
       if (data.success) {
-        toast.success("Status updated successfully");
+        toast.success("状态更新成功");
         fetchContacts();
       }
     } catch (error) {
       console.error("Failed to update status:", error);
-      toast.error("Failed to update status");
+      toast.error("更新状态失败");
     }
   };
 
@@ -159,7 +159,7 @@ export default function Admin() {
   }, [activeTab, statusFilter, searchTerm]);
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleString("en-US", {
+    return new Date(dateString).toLocaleString("zh-CN", {
       year: "numeric",
       month: "short",
       day: "numeric",
@@ -190,11 +190,11 @@ export default function Admin() {
         <div className="container">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-black text-foreground mb-4">
-              ADMIN
-              <span className="block text-primary mt-2">DASHBOARD</span>
+              管理
+              <span className="block text-primary mt-2">控制台</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Manage contacts and view website analytics
+              管理联系人并查看网站分析数据
             </p>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function Admin() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Total Contacts
+                    总联系数
                   </CardTitle>
                   <Users className="h-4 w-4 text-primary" />
                 </CardHeader>
@@ -217,7 +217,7 @@ export default function Admin() {
                     {statistics.contacts.total}
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
-                    {statistics.contacts.pending} pending
+                    {statistics.contacts.pending} 待处理
                   </p>
                 </CardContent>
               </Card>
@@ -225,7 +225,7 @@ export default function Admin() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Page Views
+                    页面浏览量
                   </CardTitle>
                   <Eye className="h-4 w-4 text-primary" />
                 </CardHeader>
@@ -234,7 +234,7 @@ export default function Admin() {
                     {statistics.analytics.pageViews}
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Last 7 days
+                    最近 7 天
                   </p>
                 </CardContent>
               </Card>
@@ -242,7 +242,7 @@ export default function Admin() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Unique Visitors
+                    独立访客
                   </CardTitle>
                   <TrendingUp className="h-4 w-4 text-primary" />
                 </CardHeader>
@@ -251,7 +251,7 @@ export default function Admin() {
                     {statistics.analytics.uniqueVisitors}
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Last 7 days
+                    最近 7 天
                   </p>
                 </CardContent>
               </Card>
@@ -259,7 +259,7 @@ export default function Admin() {
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle className="text-sm font-medium">
-                    Top Page
+                    热门页面
                   </CardTitle>
                   <TrendingUp className="h-4 w-4 text-primary" />
                 </CardHeader>
@@ -268,7 +268,7 @@ export default function Admin() {
                     {statistics.popularPages[0]?.page || "N/A"}
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">
-                    {statistics.popularPages[0]?.views || 0} views
+                    {statistics.popularPages[0]?.views || 0} 次浏览
                   </p>
                 </CardContent>
               </Card>
@@ -287,13 +287,13 @@ export default function Admin() {
                 variant={activeTab === "contacts" ? "default" : "outline"}
                 onClick={() => setActiveTab("contacts")}
               >
-                Contacts
+                联系人
               </Button>
               <Button
                 variant={activeTab === "analytics" ? "default" : "outline"}
                 onClick={() => setActiveTab("analytics")}
               >
-                Analytics
+                访问分析
               </Button>
             </div>
 
@@ -302,12 +302,12 @@ export default function Admin() {
               <Card>
                 <CardHeader>
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                    <CardTitle>Contact Submissions</CardTitle>
+                    <CardTitle>联系人提交</CardTitle>
                     <div className="flex gap-2 w-full md:w-auto">
                       <div className="relative flex-1 md:flex-none">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                         <Input
-                          placeholder="Search..."
+                          placeholder="搜索..."
                           value={searchTerm}
                           onChange={(e) => setSearchTerm(e.target.value)}
                           className="pl-9 w-full md:w-[200px]"
@@ -318,10 +318,10 @@ export default function Admin() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="all">All Status</SelectItem>
-                          <SelectItem value="pending">Pending</SelectItem>
-                          <SelectItem value="replied">Replied</SelectItem>
-                          <SelectItem value="closed">Closed</SelectItem>
+                          <SelectItem value="all">全部状态</SelectItem>
+                          <SelectItem value="pending">待处理</SelectItem>
+                          <SelectItem value="replied">已回复</SelectItem>
+                          <SelectItem value="closed">已关闭</SelectItem>
                         </SelectContent>
                       </Select>
                       <Button
@@ -337,23 +337,23 @@ export default function Admin() {
                 </CardHeader>
                 <CardContent>
                   {loading ? (
-                    <div className="text-center py-8">Loading...</div>
+                    <div className="text-center py-8">加载中...</div>
                   ) : contacts.length === 0 ? (
                     <div className="text-center py-8 text-muted-foreground">
-                      No contacts found
+                      未找到联系人
                     </div>
                   ) : (
                     <div className="overflow-x-auto">
                       <Table>
                         <TableHeader>
                           <TableRow>
-                            <TableHead>Name</TableHead>
-                            <TableHead>Email</TableHead>
-                            <TableHead>Company</TableHead>
-                            <TableHead>Message</TableHead>
-                            <TableHead>Status</TableHead>
-                            <TableHead>Date</TableHead>
-                            <TableHead>Actions</TableHead>
+                            <TableHead>姓名</TableHead>
+                            <TableHead>邮箱</TableHead>
+                            <TableHead>公司</TableHead>
+                            <TableHead>留言</TableHead>
+                            <TableHead>状态</TableHead>
+                            <TableHead>日期</TableHead>
+                            <TableHead>操作</TableHead>
                           </TableRow>
                         </TableHeader>
                         <TableBody>
@@ -371,7 +371,9 @@ export default function Admin() {
                                 <Badge
                                   className={getStatusColor(contact.status)}
                                 >
-                                  {contact.status}
+                                  {contact.status === "pending" ? "待处理" :
+                                   contact.status === "replied" ? "已回复" :
+                                   contact.status === "closed" ? "已关闭" : contact.status}
                                 </Badge>
                               </TableCell>
                               <TableCell className="text-sm text-muted-foreground">
@@ -389,13 +391,13 @@ export default function Admin() {
                                   </SelectTrigger>
                                   <SelectContent>
                                     <SelectItem value="pending">
-                                      Pending
+                                      待处理
                                     </SelectItem>
                                     <SelectItem value="replied">
-                                      Replied
+                                      已回复
                                     </SelectItem>
                                     <SelectItem value="closed">
-                                      Closed
+                                      已关闭
                                     </SelectItem>
                                   </SelectContent>
                                 </Select>
@@ -415,7 +417,7 @@ export default function Admin() {
               <Card>
                 <CardHeader>
                   <div className="flex justify-between items-center">
-                    <CardTitle>Analytics Records</CardTitle>
+                    <CardTitle>访问分析记录</CardTitle>
                     <Button
                       variant="outline"
                       size="icon"
@@ -428,21 +430,21 @@ export default function Admin() {
                 </CardHeader>
                 <CardContent>
                   {loading ? (
-                    <div className="text-center py-8">Loading...</div>
+                    <div className="text-center py-8">加载中...</div>
                   ) : analytics.length === 0 ? (
                     <div className="text-center py-8 text-muted-foreground">
-                      No analytics data found
+                      未找到分析数据
                     </div>
                   ) : (
                     <div className="overflow-x-auto">
                       <Table>
                         <TableHeader>
                           <TableRow>
-                            <TableHead>Event Type</TableHead>
-                            <TableHead>Page</TableHead>
-                            <TableHead>IP Address</TableHead>
-                            <TableHead>User Agent</TableHead>
-                            <TableHead>Date</TableHead>
+                            <TableHead>事件类型</TableHead>
+                            <TableHead>页面</TableHead>
+                            <TableHead>IP 地址</TableHead>
+                            <TableHead>用户代理</TableHead>
+                            <TableHead>日期</TableHead>
                           </TableRow>
                         </TableHeader>
                         <TableBody>
