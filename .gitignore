@@ -106,7 +106,7 @@ tmpclaude-*-cwd
 *.db
 *.sqlite
 *.sqlite3
-data/
+prisma/data/
 prisma/migrations/
 
 # Vercel
