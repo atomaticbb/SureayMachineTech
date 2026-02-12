@@ -7,13 +7,17 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import Materials from "./pages/Materials";
+import ProductCategory from "./pages/ProductCategory";
+import ProductDetail from "./pages/ProductDetail";
+import MachineListPage from "./pages/MachineListPage";
+import MachineDetail from "./pages/MachineDetail";
+import MoldListPage from "./pages/MoldListPage";
+import BladeListPage from "./pages/BladeListPage";
 import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import ProductSingle from "./pages/Singleshaftblades";
-import ProductMutil from "./pages/Mutilshaftblades";
 import Applications from "./pages/Applications";
+import Blogs from "./pages/Blogs";
 import Admin from "./pages/Admin";
 
 function ScrollToTop() {
@@ -33,13 +37,18 @@ function Router() {
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/products"} component={Products} />
-        <Route path={"/products/single-shaft-shredder-blades"} component={ProductSingle} />
-        <Route path={"/products/multi-shaft-shredder-blades"} component={ProductMutil} />
-        <Route path={"/materials"} component={Materials} />
+        {/* Category routes - must come before slug route */}
+        <Route path={"/products/machinery"} component={MachineListPage} />
+        <Route path={"/products/machinery/:id"} component={MachineDetail} />
+        <Route path={"/products/molds"} component={MoldListPage} />
+        <Route path={"/products/blades"} component={BladeListPage} />
+        {/* Product detail route - must come after category routes */}
+        <Route path={"/products/:slug"} component={ProductDetail} />
         <Route path={"/custom"} component={Custom} />
         <Route path={"/about"} component={About} />
         <Route path={"/contact"} component={Contact} />
         <Route path={"/applications"} component={Applications} />
+        <Route path={"/blogs"} component={Blogs} />
         <Route path={"/admin"} component={Admin} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}

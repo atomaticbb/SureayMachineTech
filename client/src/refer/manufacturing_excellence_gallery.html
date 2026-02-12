@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Manufacturing Excellence Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff6600",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#0f172a", // As requested: Dark Slate
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: minmax(200px, auto);
+            gap: 1.5rem;
+        }
+        .bento-item {
+            position: relative;
+            overflow: hidden;
+            background-color: #1e293b;
+            transition: all 0.3s ease-in-out;
+        }
+        .bento-item:hover {
+            box-shadow: 0 0 25px -5px rgba(255, 102, 0, 0.3);
+        }
+        .image-overlay {
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0) 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-100 antialiased">
+<!-- Section Container -->
+<section class="max-w-7xl mx-auto px-6 py-20 lg:py-32">
+<!-- Header -->
+<div class="mb-16 space-y-4">
+<div class="flex items-center gap-4">
+<div class="h-[2px] w-12 bg-primary"></div>
+<span class="text-primary tracking-[0.3em] text-xs font-bold uppercase">Industrial Precision</span>
+</div>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white max-w-2xl">
+                Engineered from the Ground Up
+            </h2>
+<p class="text-slate-400 max-w-xl text-lg font-light leading-relaxed">
+                Experience the rigorous manufacturing standards behind our CNC Press Brake technology, where heavy-duty engineering meets sub-micron precision.
+            </p>
+</div>
+<!-- Bento Box Gallery -->
+<div class="bento-grid">
+<!-- Featured Large Item (01) -->
+<div class="bento-item rounded-xl col-span-12 lg:col-span-8 lg:row-span-2 group">
+<img alt="CNC Boring Machine" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100" data-alt="CNC boring machine processing a large steel frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97e-JvJ2RbMZm9zK06Pu-KK_MRm-lFrvfMznU5CY_s5eKo2LcoV821bz73nXQwXaiQYiR2NLcGoqfSZHrdngFxeoromvth2yBEnP0JdXaC5MdTD_h94y3wTtsVnuJ2oRLxYoIhBv5V9MsZZfDNNWn01M0iAlaGrfgfGGW2QjvKEiso8XZkVUbjQrtbg1Wu_J66XECerUoHU2DvYpbd-LgtCx_kGpq47VG1CJ6wJ8dsVzjih6_P2CAdPU7amoChj8EgdCqOw-fJ67y"/>
+<div class="image-overlay absolute inset-0 flex flex-col justify-end p-8">
+<div class="flex items-center gap-4 mb-2">
+<div class="h-6 w-1 bg-primary"></div>
+<span class="text-primary font-bold tracking-widest text-sm">01</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Heavy Duty Frame Annealing</h3>
+<p class="text-slate-300 font-light max-w-md hidden md:block">
+                        Proprietary thermal stress relief ensuring long-term structural integrity and zero deformation under peak tonnage.
+                    </p>
+</div>
+</div>
+<!-- Secondary Item (02) -->
+<div class="bento-item rounded-xl col-span-12 md:col-span-6 lg:col-span-4 group">
+<img alt="Precision Welding" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-70 group-hover:opacity-90" data-alt="Close up of robotic precision welding on machine bed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDM_Oi-dh30DN7hlHp4-jqDotSCI1UnL17xHSl-m5kZqzbffza9gclJw_8YFg5ChXTrrdnLopt2SWyRRO4XyoQ06oIFLoSD5h9XhK5PeuiD9DuTfAG2q60HQ0hqs7MSusdEY-eo2TzQh9tCZ9EI6vjfl7CK_OnO5e35iFtL9Lcj8YW8WnsH0onUcAoVz2ye8kuR-XtQ1F4H3nHZxUnJNDgJPW4O3IDlZ7vBeM8NLL61RK1Z0LOJw_teG5cuOryXl_uHrl4p3ciVMSo"/>
+<div class="image-overlay absolute inset-0 flex flex-col justify-end p-6">
+<div class="flex items-center gap-3 mb-1">
+<div class="h-5 w-[2px] bg-primary"></div>
+<span class="text-primary font-bold tracking-widest text-xs uppercase">02</span>
+</div>
+<h4 class="text-xl font-bold text-white uppercase tracking-tight">Gantry Milling ±0.01mm</h4>
+</div>
+</div>
+<!-- Secondary Item (03) -->
+<div class="bento-item rounded-xl col-span-12 md:col-span-6 lg:col-span-4 group">
+<img alt="Cleanroom Assembly" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-70 group-hover:opacity-90" data-alt="Technician assembling hydraulic systems in cleanroom environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGhEdjX3Yn9x5py74fXGlxXVlZwAos3ZDSq324iKxrN0HotudmTARh9PmgEiUS1HumtgPQiiMoK5E8Cs-H0o-Przv5AO4NXhVJBrxwfaBjW4RUGASUi_uiwSS9llA8tUol7bUkarpp4GPFfXlrSkF8gJc1ijTbk6XrrIurfotHyB78ee1Xe0T4R4PQHUd7fkGiZqV3u4_PQifYE3g3ccLewlLmTwINc-HXtYfNoBKLLFpmQTSEMpisBai9Pn3mO2o3Z8Og2L0ftjOI"/>
+<div class="image-overlay absolute inset-0 flex flex-col justify-end p-6">
+<div class="flex items-center gap-3 mb-1">
+<div class="h-5 w-[2px] bg-primary"></div>
+<span class="text-primary font-bold tracking-widest text-xs uppercase">03</span>
+</div>
+<h4 class="text-xl font-bold text-white uppercase tracking-tight">Dust-free Assembly</h4>
+</div>
+</div>
+<!-- Bottom Wide Item (04) - Hidden on mobile if needed or full width -->
+<div class="bento-item rounded-xl col-span-12 lg:col-span-12 h-64 group">
+<img alt="CNC Control Logic" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80" data-alt="Modern CNC control unit with glowing interfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaO4bMk0bLuzby0CPdfpwIlNYjjfgCUFDklwjSY8Fb7XoqLsI0Z1k1J5ZXL0Z5_lAdKU4yeSLB3nHnP3U68NfeiU3FPRKn8KKJiSDmoB3VrXRejEPyyLFDfDDzSUsCavnzDXMzhqmtNZvnVMZrwsmw_F90oJhlZcSFiIXY1vD3JiKu4YOwEjPaPnNmuKdoL2ITQLBuM3WOp-STJWOGXU2wEUZoO-MiIixZSpF_HXMimAzf2j52HWxP79Y7fBaqfQ2wnc2udPhNkdmA"/>
+<div class="image-overlay absolute inset-0 flex flex-col justify-end p-8">
+<div class="flex items-center justify-between w-full">
+<div>
+<div class="flex items-center gap-4 mb-2">
+<div class="h-6 w-1 bg-primary"></div>
+<span class="text-primary font-bold tracking-widest text-sm">04</span>
+</div>
+<h3 class="text-2xl font-bold text-white uppercase">Integrated Logic Control</h3>
+</div>
+<div class="hidden md:flex flex-col items-end text-right">
+<span class="text-slate-400 text-xs uppercase tracking-widest mb-1">Certification</span>
+<span class="text-white font-mono text-lg border-b border-primary/40 pb-1">ISO 9001:2015 COMPLIANT</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Footer -->
+<div class="mt-20 flex flex-col md:flex-row items-center justify-between border-t border-slate-800 pt-10">
+<div class="flex items-center gap-8 mb-8 md:mb-0">
+<div class="text-center">
+<div class="text-3xl font-bold text-white">100%</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500">Ultrasonic Tested</div>
+</div>
+<div class="h-10 w-px bg-slate-800"></div>
+<div class="text-center">
+<div class="text-3xl font-bold text-white">0.005mm</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500">Repeat Accuracy</div>
+</div>
+<div class="h-10 w-px bg-slate-800"></div>
+<div class="text-center">
+<div class="text-3xl font-bold text-white">48h</div>
+<div class="text-[10px] uppercase tracking-widest text-slate-500">Full Load Stress Test</div>
+</div>
+</div>
+<button class="bg-primary hover:bg-orange-500 text-white font-bold py-4 px-10 rounded-lg flex items-center gap-3 transition-all transform hover:-translate-y-1 group">
+<span>DOWNLOAD SPECIFICATIONS</span>
+<span class="material-icons text-xl group-hover:translate-x-1 transition-transform">file_download</span>
+</button>
+</div>
+</section>
+</body></html>

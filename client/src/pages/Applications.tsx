@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Applications() {
@@ -54,21 +54,33 @@ export default function Applications() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      {/* Hero Section - Enhanced Design with Hero Background */}
+      <section className="relative pt-32 pb-20 border-b border-border overflow-hidden min-h-[60vh]">
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 forge-gradient opacity-30"></div>
+          <img
+            src="/images/hero/hero.webp"
+            alt="Applications"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
+            decoding="async"
+          />
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/30"></div>
         </div>
 
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-5xl md:text-7xl font-black text-foreground">
-              BLADE
-              <span className="block text-primary mt-2">APPLICATIONS</span>
+        {/* Content */}
+        <div className="container relative z-10 h-full flex items-center">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
+              <Sparkles size={16} />
+              Industrial Applications
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl">
+              Blade Applications
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              Engineered solutions for every recycling and waste processing
-              challenge
+            <p className="text-xl md:text-2xl text-white/95 max-w-2xl drop-shadow-lg leading-relaxed">
+              Engineered solutions for every recycling and waste processing challenge
             </p>
           </div>
         </div>

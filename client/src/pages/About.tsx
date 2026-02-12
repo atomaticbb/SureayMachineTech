@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import { ArrowRight, Award, Factory, Globe, Users } from "lucide-react";
+import { ArrowRight, Award, Factory, Globe, Users, Sparkles } from "lucide-react";
 
 export default function About() {
   const stats = [
@@ -48,28 +48,33 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden">
+      {/* Hero Section - Enhanced Design with Hero Background */}
+      <section className="relative pt-32 pb-20 border-b border-border overflow-hidden min-h-[60vh]">
+        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/about/factory.webp"
-            alt="Factory"
-            className="w-full h-full object-cover opacity-30"
+            src="/images/hero/hero.webp"
+            alt="About Us"
+            className="w-full h-full object-cover object-center"
             loading="lazy"
             decoding="async"
           />
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/30"></div>
         </div>
 
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-5xl md:text-7xl font-black text-foreground">
-              ENGINEERING
-              <span className="block text-primary mt-2">BLADE EXCELLENCE</span>
-              SINCE 2010
+        {/* Content */}
+        <div className="container relative z-10 h-full flex items-center">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
+              <Sparkles size={16} />
+              About Our Company
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl">
+              Engineering Blade Excellence Since 2010
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              Liqun Machinery specializes in precision-engineered replacement
-              shredder blades for the global recycling industry
+            <p className="text-xl md:text-2xl text-white/95 max-w-2xl drop-shadow-lg leading-relaxed">
+              Xunrui (Sureay) Machinery specializes in industrial shredders, crushers, and recycling equipment for the global waste management industry
             </p>
           </div>
         </div>
@@ -103,19 +108,19 @@ export default function About() {
 
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p className="text-2xl font-bold text-foreground">
-                Engineering High-Performance Blades Since 2008
+                Engineering High-Performance Machinery Since 2008
               </p>
 
               <p>
-                Since 2008, Liqun Machinery & Cutting Tools has been at the forefront of tackling the industry's most persistent challenge: premature blade failure.
+                Since 2008, Xunrui (Sureay) Machinery has been at the forefront of tackling the industry's most persistent challenge: efficient waste processing and recycling.
               </p>
 
               <p>
-                We deliver engineering-driven solutions that extend blade service life by 30%-50% compared to conventional market standards. By merging material science with precision manufacturing, we analyze the specific wear patterns of your recycling applications. Whether processing tires, scrap metal, plastics, or MSW, we optimize blade geometry and metallurgy to minimize wear and maximize throughput.
+                We deliver engineering-driven solutions through our comprehensive range of industrial shredders, crushers, and recycling lines. By merging material science with precision manufacturing, we analyze the specific requirements of your recycling applications. Whether processing tires, scrap metal, plastics, e-waste, or municipal solid waste, we optimize machinery design and build quality to maximize throughput and operational efficiency.
               </p>
 
               <p className="text-foreground font-semibold">
-                At Liqun, we don't just supply blades; we are your strategic partner in maximizing production uptime and optimizing shredding efficiency.
+                At Sureay, we don't just supply machinery; we are your strategic partner in maximizing production uptime and optimizing waste processing efficiency.
               </p>
             </div>
           </div>
@@ -169,9 +174,9 @@ export default function About() {
                   State-of-the-Art Manufacturing
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our 15,000 square meter facility in Zhangjiagang houses
-                  advanced CNC machining centers, vacuum heat treatment
-                  furnaces, and comprehensive quality control equipment.
+                  Our 15,000 square meter facility in Ma'anshan houses
+                  advanced CNC machining centers, assembly workshops,
+                  and comprehensive quality control equipment.
                 </p>
                 <ul className="space-y-3">
                   {[
@@ -243,7 +248,7 @@ export default function About() {
               Partner With Us
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Experience the Liqun difference in blade quality and customer
+              Experience the Sureay difference in machinery quality and customer
               service
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

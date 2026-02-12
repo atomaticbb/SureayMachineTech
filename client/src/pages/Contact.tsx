@@ -96,7 +96,7 @@ export default function Contact() {
               <span className="block text-primary mt-2">TOUCH</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Request a quote, ask technical questions, or discuss your blade
+              Request a quote, ask technical questions, or discuss your machinery
               requirements
             </p>
           </div>
@@ -234,7 +234,7 @@ export default function Contact() {
                           Phone
                         </h4>
                         <p className="text-muted-foreground">
-                          +86 155 5175 7389
+                          +86 15655530829
                         </p>
                         <p className="text-sm text-muted-foreground">
                           Mon-Fri 9AM-6PM CST
@@ -251,7 +251,7 @@ export default function Contact() {
                           WhatsApp
                         </h4>
                         <p className="text-muted-foreground">
-                          +86 155 5175 7389
+                          +86 15655530829
                         </p>
                         <p className="text-sm text-muted-foreground">
                           24/7 Available
@@ -268,7 +268,7 @@ export default function Contact() {
                           Email
                         </h4>
                         <p className="text-muted-foreground">
-                          info@shredderbladesdirect.com
+                          info@sureay.com
                         </p>
                       </div>
                     </div>
@@ -282,9 +282,11 @@ export default function Contact() {
                           Address
                         </h4>
                         <p className="text-muted-foreground">
-                          Bowang High-tech Industrial Development Zone
+                          Industrial Development Zone, Bowang Town
                           <br />
-                          Ma'anshan City, China
+                          Bowang District, Ma'anshan City
+                          <br />
+                          Anhui Province, China
                         </p>
                       </div>
                     </div>

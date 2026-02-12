@@ -110,7 +110,7 @@ const createContactEmailHtml = (data: ContactFormData) => `
   <div class="container">
     <div class="header">
       <h1>📧 新的联系表单提交</h1>
-      <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">来自破碎机刀片网站</p>
+      <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">来自Sureay重型机械官网</p>
     </div>
     <div class="content">
       <div class="field">
