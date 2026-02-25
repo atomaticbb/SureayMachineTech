@@ -62,7 +62,7 @@ export interface Machine {
   id: string;
   name: string;
   fullName: string; // e.g., "WC67K-400/4000 CNC Press Brake"
-  category: "press_brake" | "shearing" | "rolling" | "other";
+  category: "press_brake" | "shearing" | "rolling" | "other" | "recycling_equipment";
   categoryDisplay: string; // e.g., "Press Brake", "Shearing Machine"
   tonnage: "light" | "medium" | "heavy";
   image: string;
@@ -305,6 +305,154 @@ export const machines: Machine[] = [
 
     leadTime: "6-8 weeks",
     relatedMachineIds: ["we67k-250-3200", "wc67y-500-6000", "we67k-160-3200"],
+  },
+  {
+    id: "copper-wire-granulator-sg400",
+    name: "SG-400 Industrial Copper Wire Granulator",
+    fullName: "SG-400 Industrial Copper Wire Granulator",
+    category: "recycling_equipment",
+    categoryDisplay: "Recycling Machinery",
+    image: "/images/products/Granulator-T1-01.webp",
+    badge: "Eco Friendly",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/Granulator-T1-01.webp",
+      "/images/products/Granulator-T1-02.webp",
+      "/images/products/Granulator-T1-03.webp",
+      "/images/products/Granulator-T1-02.webp",
+    ],
+    description: "Compact granulator delivering 99.9% copper-plastic separation from scrap cables.",
+    fullDescription: "The SG-400 Copper Wire Granulator is a state-of-the-art recycling system engineered to maximize copper recovery. By combining heavy-duty crushing, precision air-gravity separation, and advanced dust collection, it processes a wide variety of scrap cables—including household wires, automotive cables, and industrial cords. With a recovery rate of up to 99.9%, it transforms waste into high-value clean copper granules while maintaining a dust-free and environmentally friendly operation.",
+    link: "/products/machinery/copper-wire-granulator-sg400",
+
+    // 💡 控制面板上的四个核心参数 (Dashboard Specs)
+    specs: [
+      { label: "Capacity", value: "200 - 400 kg/h" },
+      { label: "Purity Rate", value: "≥ 99.9%" },
+      { label: "Total Power", value: "35 kW" },
+      { label: "Cable Diameter", value: "1 - 30 mm" }
+    ],
+
+    video: {
+      url: "",
+      poster: "/images/products/Granulator-T1-01.webp"
+    },
+
+    // 💡 核心功能介绍 (Z-Pattern Layout)
+    components: [
+      {
+        id: "heavy-duty-crusher",
+        tag: "SIZE REDUCTION",
+        title: "Heavy-Duty Crusher Unit",
+        description: "Equipped with high-grade alloy steel blades (such as SKD-11 or D2), the primary crusher efficiently chops thick and thin cables into uniform granules, ensuring a smooth and consistent separation process downstream.",
+        image: "/images/products/Granulator-T1-02.webp",
+      },
+      {
+        id: "air-separator",
+        tag: "PRECISION SEPARATION",
+        title: "Advanced Air-Gravity Separator",
+        description: "Utilizes precisely controlled airflow and high-frequency vibration to separate heavier copper granules from lighter plastic insulation based on specific gravity, achieving up to 99.9% purity without the use of water.",
+        image: "/images/products/Granulator-T1-03.webp",
+      },
+      {
+        id: "dust-collection",
+        tag: "ENVIRONMENTAL CONTROL",
+        title: "Integrated Dust Collection System",
+        description: "A powerful pulse-jet dust collector captures microscopic dust and impurities generated during the crushing and separation stages, ensuring a clean, safe, and OSHA-compliant working environment.",
+        image: "/images/products/Granulator-T1-01.webp",
+      },
+      {
+        id: "plc-control",
+        tag: "SMART OPERATION",
+        title: "Intelligent PLC Control Panel",
+        description: "Features a centralized PLC control system with an intuitive interface. Operators can easily monitor performance, adjust airflow parameters, and manage the entire recycling line with single-touch convenience.",
+        image: "/images/products/Granulator-T1-02.webp",
+      }
+    ],
+
+    // 💡 应用场景 (Application Gallery)
+    applicationItems: [
+      {
+        title: 'Automotive Cables',
+        img: '/images/products/Granulator-T1-01.webp'
+      },
+      {
+        title: 'Household Wires',
+        img: '/images/products/Granulator-T1-02.webp'
+      },
+      {
+        title: 'Industrial Cables',
+        img: '/images/products/Granulator-T1-03.webp'
+      },
+      {
+        title: 'Communication Wires',
+        img: '/images/products/Granulator-T1-01.webp'
+      }
+    ],
+
+    // 💡 技术参数表 (Tech Specs Tabs)
+    specCategories: [
+      {
+        id: 'performance',
+        label: 'General Performance',
+        specs: {
+          'Processing Capacity': '200 - 400 kg/h (Varies by material)',
+          'Copper Recovery Rate': '≥ 99.9%',
+          'Applicable Cable Diameter': '1 mm - 30 mm',
+          'Operation Type': 'Dry Separation (Eco-friendly, No Water)',
+          'Noise Level': '< 80 dB'
+        }
+      },
+      {
+        id: 'electrical',
+        label: 'Electrical & Power',
+        specs: {
+          'Total Power': 'Approx. 35 kW',
+          'Main Crusher Motor': '22 kW',
+          'Separator Fan Motor': '4 kW',
+          'Vibration Motor': '1.5 kW',
+          'Standard Voltage': '380V / 50Hz / 3Phase (Customizable)'
+        }
+      },
+      {
+        id: 'dimensions',
+        label: 'Dimensions & Weight',
+        specs: {
+          'Overall Length': '3,500 mm',
+          'Overall Width': '1,800 mm',
+          'Overall Height': '2,400 mm',
+          'Total Weight': 'Approx. 2,800 kg',
+          'Footprint Layout': 'Compact Integrated Design'
+        }
+      }
+    ],
+
+    // 💡 制造工艺与品控 (Bento Grid)
+    manufacturingProcess: [
+      {
+        id: "granulator-m1",
+        number: "01",
+        title: "Heavy-Duty Frame Welding",
+        description: "Built with robust structural steel designed to absorb high-frequency vibrations during the intense crushing process, ensuring decades of stability.",
+        image: "/images/products/Granulator-T1-03.webp",
+        size: "large"
+      },
+      {
+        id: "granulator-m2",
+        number: "02",
+        title: "Dynamic Rotor Balancing",
+        image: "/images/products/Granulator-T1-01.webp",
+        size: "small"
+      },
+      {
+        id: "granulator-m3",
+        number: "03",
+        title: "Airflow System Calibration",
+        image: "/images/products/Granulator-T1-02.webp",
+        size: "small"
+      }
+    ],
+    tonnage: "heavy",
   },
   {
     id: "qc11k-12-3200",

@@ -72,7 +72,7 @@ export default function MachineListPage() {
     hero: {
       title: "Precision CNC\nPress Brakes & Equipment",
       description: "Engineered for heavy industry. Our machinery delivers ±0.01mm accuracy with intelligent servo synchronization.",
-      image: "/images/hero/hero.webp",
+      image: "/images/hero/machine.webp",
     },
     icon: "precision_manufacturing",
     features: [
@@ -103,10 +103,10 @@ export default function MachineListPage() {
         <div className="absolute inset-0 z-0">
           <img
             alt={categoryConfig.subtitle}
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover "
             src={categoryConfig.hero.image}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 to-slate-900/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/75 via-slate-900/55 to-slate-900/50"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-24 lg:py-32 flex flex-col justify-center h-full">
@@ -340,6 +340,54 @@ export default function MachineListPage() {
       </section>
 
 
+      {/* SEO Content & Factory Showcase Section */}
+      <section className="py-20 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left Column: SEO Text Narrative */}
+            <div className="space-y-6">
+
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+                China Leading Manufacturer of <br/>
+                <span className="text-slate-600">CNC Press Brakes & Shearing Machines</span>
+              </h2>
+
+              <div className="text-slate-600 text-base leading-relaxed space-y-4">
+                <p>
+                  Sureay Machinery is a leading manufacturer located in Ma'anshan (Bowang District), the heart of China's sheet metal machinery industry. Since our inception, we have served as a verified source factory for heavy-duty CNC Press Brakes, Guillotine Shears, and Plate Bending Rolls.
+                </p>
+                <p>
+                  With a 50,000m² production base, we offer distinct advantages over trading companies: full oversight of R&D, welding, and assembly processes.
+                </p>
+                <p>
+                  All Sureay equipment is ISO 9001:2015 and CE certified. We utilize premium hydraulic and electrical components from Delem, Schneider, and Bosch-Rexroth to maximize precision and lifespan. Choose Sureay for factory-direct prices and engineering expertise.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: Factory Image (Visual Proof) */}
+            <div className="relative group">
+              {/* Image Container with style */}
+              <div className="relative overflow-hidden shadow-2xl border border-slate-300 aspect-square ">
+                <img
+                  src="/images/common/factory.webp"
+                  alt="Sureay Machinery CNC Workshop in Ma'anshan"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              </div>
+
+              {/* Decorative Element behind image */}
+              <div className="absolute -z-10 top-10 -right-10 w-full h-full border-2 border-[#FF6600]/20 hidden lg:block"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Custom Solution CTA Section */}
       <section className="relative py-24 bg-[#003366] overflow-hidden">
         {/* Technical Blueprint Grid Overlay */}
@@ -397,12 +445,7 @@ export default function MachineListPage() {
               {/* Primary Button */}
               <Link href="/contact">
                 <a className="group relative px-8 py-4 bg-[#FF6600] hover:bg-[#E55A00] text-white font-bold text-center rounded-lg shadow-2xl hover:shadow-[#FF6600]/50 transition-all duration-300 hover:scale-105 transform inline-block">
-                  <span className="flex items-center justify-center gap-2">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                    </svg>
-                    Request Custom Solution
-                  </span>
+                  Request Custom Solution
                 </a>
               </Link>
 
@@ -411,62 +454,10 @@ export default function MachineListPage() {
                 href="https://wa.me/8615655530829?text=Hi%2C%20I%27m%20interested%20in%20custom%20machinery%20solutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 bg-transparent border-2 border-white hover:border-[#FF6600] text-white hover:text-[#FF6600] font-bold text-center rounded-lg transition-all duration-300 hover:scale-105 transform inline-flex items-center justify-center gap-2"
+                className="group relative px-8 py-4 bg-transparent border-2 border-white hover:border-[#FF6600] text-white hover:text-[#FF6600] font-bold text-center rounded-lg transition-all duration-300 hover:scale-105 transform inline-flex items-center justify-center"
               >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  {/* WhatsApp-style chat icon */}
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.413-2.393-1.476-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.335 1.236-3.356 2.258-1.02 1.022-1.756 2.119-2.259 3.357-.553 1.28-.86 2.123-.948 4.255v.004c-.057 1.577.182 2.968.766 4.166 1.216 2.646 3.544 4.518 6.14 4.9h.004c.433.057.946.118 1.926.118.474 0 .9-.025 1.271-.074 1.947-.226 3.328-.986 4.3-2.212.661-.84 1.123-1.841 1.315-3.116.118-.788.118-1.797-.025-2.305-.314-1.054-.945-1.989-1.868-2.777-.788-.672-1.566-1.045-2.554-1.202--1.195-.168-2.319-.168-3.356 0z"/>
-                </svg>
                 Talk to Engineer
               </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* SEO Content & Factory Showcase Section */}
-      <section className="py-20 bg-white border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-            {/* Left Column: SEO Text Narrative */}
-            <div className="space-y-6">
-
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
-                China Leading Manufacturer of <br/>
-                <span className="text-slate-600">CNC Press Brakes & Shearing Machines</span>
-              </h2>
-
-              <div className="text-slate-600 text-base leading-relaxed space-y-4">
-                <p>
-                  Sureay Machinery is a leading manufacturer located in Ma'anshan (Bowang District), the heart of China's sheet metal machinery industry. Since our inception, we have served as a verified source factory for heavy-duty CNC Press Brakes, Guillotine Shears, and Plate Bending Rolls.
-                </p>
-                <p>
-                  With a 50,000m² production base, we offer distinct advantages over trading companies: full oversight of R&D, welding, and assembly processes.
-                </p>
-                <p>
-                  All Sureay equipment is ISO 9001:2015 and CE certified. We utilize premium hydraulic and electrical components from Delem, Schneider, and Bosch-Rexroth to maximize precision and lifespan. Choose Sureay for factory-direct prices and engineering expertise.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column: Factory Image (Visual Proof) */}
-            <div className="relative group">
-              {/* Image Container with style */}
-              <div className="relative overflow-hidden shadow-2xl border border-slate-300 aspect-square ">
-                <img
-                  src="/images/common/factory.webp"
-                  alt="Sureay Machinery CNC Workshop in Ma'anshan"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-              </div>
-
-              {/* Decorative Element behind image */}
-              <div className="absolute -z-10 top-10 -right-10 w-full h-full border-2 border-[#FF6600]/20 hidden lg:block"></div>
             </div>
 
           </div>

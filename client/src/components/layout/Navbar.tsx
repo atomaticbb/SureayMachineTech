@@ -13,42 +13,42 @@ export default function Navbar() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
-  // Check if on detail page (white background pages)
-  const isDetailPage = location.includes('/products/machinery/') ||
-                       location.includes('/products/blades/') ||
-                       location.includes('/products/molds/');
+  // Pages with white/light backgrounds (no dark hero image)
+  const isLightBgPage =
+    location === '/products' ||
+    /^\/products\/blades\/.+/.test(location);
 
-  // Dynamic text color based on page
-  const textColor = isDetailPage ? 'text-slate-900' : 'text-white';
-  const textColorHover = isDetailPage ? 'hover:text-[#FF6600]' : 'hover:text-white';
-  const textColorOpacity = isDetailPage ? 'text-slate-800' : 'text-white/90';
-  const textShadow = isDetailPage ? '' : 'drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]';
-  const textShadowLight = isDetailPage ? '' : 'drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)]';
-
-  // Auto-hide navbar on scroll
+  // Scroll-based navbar hide
   useEffect(() => {
-    const controlNavbar = () => {
-      const currentScrollY = window.scrollY;
-
-      // Always show navbar at the very top
-      if (currentScrollY < 10) {
-        setIsVisible(true);
-      }
-      // Hide when scrolling past 100px
-      else if (currentScrollY > 100) {
-        setIsVisible(false);
-        setMobileMenuOpen(false); // Close mobile menu when hiding
-      }
-
-      setLastScrollY(currentScrollY);
+    const handleScroll = () => {
+      const y = window.scrollY;
+      setScrollY(y);
+      if (y > 100) setMobileMenuOpen(false);
     };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.removeEventListener("scroll", controlNavbar);
-  }, [lastScrollY]);
+  // --- Style derivation ---
+  // Light bg pages: always white bar with dark text
+  // Dark/image pages: transparent at top → white on scroll (>20px) → hidden (>100px)
+  const isHidden   = scrollY > 100;
+  const isScrolled = scrollY > 20;
+
+  // On light bg pages, always use the "scrolled" (white) style
+  const useWhiteBar = isLightBgPage || isScrolled;
+
+  const navBg = useWhiteBar
+    ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm shadow-md'
+    : 'bg-transparent';
+
+  const textColor        = useWhiteBar ? 'text-slate-800 dark:text-white'       : 'text-white';
+  const textColorOpacity = useWhiteBar ? 'text-slate-700 dark:text-slate-300'    : 'text-white/90';
+  const textColorHover   = 'hover:text-[#FF6600]';
+  const textShadow       = useWhiteBar ? '' : 'drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]';
+  const textShadowLight  = useWhiteBar ? '' : 'drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)]';
 
   const navItems = [
     { label: "HOME", path: "/" },
@@ -65,8 +65,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-transparent transition-transform duration-300 ${
-      isVisible ? "translate-y-0" : "-translate-y-full"
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg} ${
+      isHidden ? "-translate-y-full" : "translate-y-0"
     }`}>
       <div className="container">
         <div className="flex items-center justify-between h-20">
@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link href="/">
             <div className="flex items-center gap-3 cursor-pointer group">
               <img
-                src="/likun-logo.svg"
+                src="/sureay.svg"
                 alt="Sureay Logo"
                 className="w-10 h-10 transition-transform group-hover:scale-110"
               />

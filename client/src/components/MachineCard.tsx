@@ -44,28 +44,11 @@ export default function MachineCard({ machine }: MachineCardProps) {
           </h3>
         </div>
 
-        {/* Description / Specs Toggle Area */}
-        <div className="relative h-[70px] mb-3">
-          {/* Description (Default View) */}
-          <div className="absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-300 flex items-center">
-            <p className="text-slate-500 dark:text-slate-400 text-base leading-snug line-clamp-3">
-              {machine.description}
-            </p>
-          </div>
-
-          {/* Specs (Hover View) */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center">
-            <div className="grid grid-cols-2 gap-y-2 gap-x-4 text-sm w-full">
-              {machine.specs.map((spec, index) => (
-                <div key={index} className="flex justify-between">
-                  <span className="text-slate-400">{spec.label}:</span>
-                  <span className="font-bold text-slate-900 dark:text-white">
-                    {spec.value}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Description */}
+        <div className="h-[70px] mb-3 flex items-center">
+          <p className="text-slate-500 dark:text-slate-400 text-base leading-snug line-clamp-3">
+            {machine.description}
+          </p>
         </div>
 
         {/* Footer Link */}

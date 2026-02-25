@@ -1,275 +1,353 @@
 /*
- * Design: Forged Aesthetics - About page with company story and values
- * Industrial imagery with forge aesthetic elements
+ * About Page — "Digital Prospectus" for Sureay Manufacturing
+ * Industrial-muscle design: asymmetric hero, bento facility, timeline, OEM funnel
  */
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import { ArrowRight, Award, Factory, Globe, Users, Sparkles } from "lucide-react";
+import OEMConversionFunnel from "@/components/sections/OEMConversionFunnel";
+import {
+  Award,
+  Factory,
+  Globe,
+  Users,
+  Shield,
+  Flame,
+  Truck,
+} from "lucide-react";
 
 export default function About() {
-  const stats = [
-    { number: "15+", label: "Years Experience" },
-    { number: "50+", label: "Countries Served" },
-    { number: "10,000+", label: "Blade Designs" },
-    { number: "98%", label: "Customer Satisfaction" },
-  ];
-
-  const values = [
-    {
-      icon: Factory,
-      title: "Manufacturing Excellence",
-      description:
-        "State-of-the-art CNC machining centers and heat treatment facilities ensure consistent quality and precision in every blade we produce.",
-    },
-    {
-      icon: Globe,
-      title: "Global Reach",
-      description:
-        "Serving recycling facilities and shredder operators worldwide with responsive support and fast international shipping.",
-    },
-    {
-      icon: Users,
-      title: "Customer Partnership",
-      description:
-        "We work closely with our customers to understand their unique challenges and develop solutions that maximize uptime and reduce costs.",
-    },
-    {
-      icon: Award,
-      title: "Quality Commitment",
-      description:
-        "ISO 9001 certified processes and rigorous quality control ensure every blade meets or exceeds OEM specifications.",
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white dark:bg-slate-900">
       <Navbar />
 
-      {/* Hero Section - Enhanced Design with Hero Background */}
-      <section className="relative pt-32 pb-20 border-b border-border overflow-hidden min-h-[60vh]">
-        {/* Background Image with Overlay */}
+      {/* ═══════════════════════════════════════════════════════════════════
+          1. HERO — Asymmetrical "Industrial Muscle"
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section className="relative bg-slate-900 overflow-hidden">
+        {/* BG Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero/hero.webp"
-            alt="About Us"
-            className="w-full h-full object-cover object-center"
-            loading="lazy"
-            decoding="async"
+            src="/images/about/factory.webp"
+            alt="Sureay Manufacturing Facility"
+            className="w-full h-full object-cover"
           />
-          {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/40 to-black/30"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        {/* Content */}
-        <div className="container relative z-10 h-full flex items-center">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
-              <Sparkles size={16} />
-              About Our Company
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 pt-36 pb-24 lg:pt-44 lg:pb-32">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+              <span className="text-[#FF6600] tracking-[0.2em] text-xs font-bold uppercase">
+                About Sureay
+              </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl">
-              Engineering Blade Excellence Since 2010
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight mb-6">
+              Engineering Blade{" "}
+              <span className="text-[#FF6600]">Excellence</span>{" "}
+              Since 2008
             </h1>
-            <p className="text-xl md:text-2xl text-white/95 max-w-2xl drop-shadow-lg leading-relaxed">
-              Xunrui (Sureay) Machinery specializes in industrial shredders, crushers, and recycling equipment for the global waste management industry
+            <p className="text-lg lg:text-xl text-white max-w-xl leading-relaxed">
+              Xunrui (Sureay) Machinery specializes in high-performance industrial blades, precision machine knives, and recycling equipment — engineered for the world's most demanding production environments.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center space-y-2">
-                <div className="text-5xl md:text-6xl font-black text-primary font-mono">
-                  {stat.number}
+      {/* ═══════════════════════════════════════════════════════════════════
+          2. FACILITY — Bento Box Layout + Embedded Stats
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 lg:py-28 bg-slate-50 dark:bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+
+          {/* Section Header */}
+          <div className="max-w-3xl mb-14">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+              <span className="text-[#FF6600] tracking-[0.2em] text-xs font-bold uppercase">
+                Our Facility
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#003366] dark:text-white leading-tight mb-4">
+              State-of-the-Art Manufacturing
+            </h2>
+            <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+              Our 15,000 m² facility in Ma'anshan houses advanced CNC machining centers, vacuum heat treatment furnaces, and comprehensive metrology equipment.
+            </p>
+          </div>
+
+          {/* Bento Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 lg:gap-5">
+
+            {/* Main: Wide factory floor (large) */}
+            <div className="lg:col-span-7 relative rounded-2xl overflow-hidden group aspect-[4/3] lg:aspect-auto lg:row-span-2">
+              <img
+                src="/images/about/factory-00.webp"
+                alt="Sureay factory floor — CNC machining centers"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 z-10">
+                <p className="text-white font-bold text-lg">CNC Machining Workshop</p>
+                <p className="text-blue-200 text-sm">20+ multi-axis CNC machining centers</p>
+              </div>
+            </div>
+
+            {/* Top-right: CNC closeup */}
+            <div className="lg:col-span-5 relative rounded-2xl overflow-hidden group aspect-video">
+              <img
+                src="/images/process/cnc-precision-grinding.webp"
+                alt="CNC precision grinding of industrial blade"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/80 via-transparent to-transparent"></div>
+              <div className="absolute bottom-5 left-5 z-10">
+                <p className="text-white font-bold text-sm">Precision Grinding</p>
+                <p className="text-blue-200 text-xs">Tight tolerance CNC finishing</p>
+              </div>
+            </div>
+
+            {/* Bottom-right split: Heat Treatment + QC */}
+            <div className="lg:col-span-5 grid grid-cols-2 gap-4 lg:gap-5">
+              <div className="relative rounded-2xl overflow-hidden group aspect-square">
+                <img
+                  src="/images/process/heat-treatment.webp"
+                  alt="Vacuum heat treatment furnace"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 z-10">
+                  <p className="text-white font-bold text-xs">Heat Treatment</p>
                 </div>
-                <div className="text-lg text-muted-foreground">
-                  {stat.label}
+              </div>
+              <div className="relative rounded-2xl overflow-hidden group aspect-square">
+                <img
+                  src="/images/common/Quality-Inspection.webp"
+                  alt="CMM dimensional inspection"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-4 left-4 z-10">
+                  <p className="text-white font-bold text-xs">Quality Control</p>
                 </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Stats Strip — anchored to facility */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+            {[
+              { num: "15+",     label: "Years of Experience" },
+              { num: "10,000+", label: "Blade Designs Delivered" },
+              { num: "98%",     label: "Customer Satisfaction" },
+              { num: "50+",     label: "Countries Served" },
+            ].map((s, i) => (
+              <div key={i} className="text-center py-6 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 shadow-sm">
+                <p className="text-3xl md:text-4xl font-black text-[#003366] dark:text-white tracking-tight">{s.num}</p>
+                <p className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mt-1">{s.label}</p>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
-      {/* Story Section */}
-      <section className="relative py-24 bg-card blade-cut-top blade-cut-bottom">
-        <div className="container">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-12">
+      {/* ═══════════════════════════════════════════════════════════════════
+          3. OUR STORY — Blockquote + Vertical Timeline
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 lg:py-28 bg-white dark:bg-slate-900">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+              <span className="text-[#FF6600] tracking-[0.2em] text-xs font-bold uppercase">
+                Our Journey
+              </span>
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#003366] dark:text-white">
               Our Story
             </h2>
+          </div>
 
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p className="text-2xl font-bold text-foreground">
-                Engineering High-Performance Machinery Since 2008
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-              <p>
-                Since 2008, Xunrui (Sureay) Machinery has been at the forefront of tackling the industry's most persistent challenge: efficient waste processing and recycling.
-              </p>
-
-              <p>
-                We deliver engineering-driven solutions through our comprehensive range of industrial shredders, crushers, and recycling lines. By merging material science with precision manufacturing, we analyze the specific requirements of your recycling applications. Whether processing tires, scrap metal, plastics, e-waste, or municipal solid waste, we optimize machinery design and build quality to maximize throughput and operational efficiency.
-              </p>
-
-              <p className="text-foreground font-semibold">
-                At Sureay, we don't just supply machinery; we are your strategic partner in maximizing production uptime and optimizing waste processing efficiency.
-              </p>
+            {/* Left: Oversized Blockquote */}
+            <div>
+              <blockquote className="border-l-4 border-[#FF6600] pl-6 lg:pl-8 mb-10">
+                <p className="text-2xl lg:text-3xl font-bold text-[#003366] dark:text-white leading-snug italic">
+                  "We don't just supply blades — we are your strategic partner in maximizing uptime and cutting performance."
+                </p>
+              </blockquote>
+              <div className="space-y-5 text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+                <p>
+                  Since 2008, Xunrui (Sureay) Machinery has been at the forefront of precision blade manufacturing. We deliver engineering-driven solutions through our comprehensive range of industrial blades, machine knives, and recycling equipment.
+                </p>
+                <p>
+                  By merging material science with advanced CNC manufacturing, we analyze each customer's application requirements. Whether processing tissue, plastics, metals, or composites, we optimize steel grade selection, heat treatment, and edge geometry to maximize service life and minimize downtime.
+                </p>
+              </div>
             </div>
+
+            {/* Right: Vertical Industrial Timeline */}
+            <div className="relative pl-8 lg:pl-10">
+              {/* Vertical line */}
+              <div className="absolute left-0 top-0 bottom-0 w-px bg-slate-200 dark:bg-slate-700"></div>
+
+              <div className="space-y-10">
+                {[
+                  {
+                    year: "2008",
+                    title: "Founded in Ma'anshan",
+                    desc: "Established as an industrial blade manufacturer with 500 m² workshop and 12 founding engineers.",
+                  },
+                  {
+                    year: "2012",
+                    title: "Expanded to 5,000 m²",
+                    desc: "Added vacuum heat treatment furnaces and CNC grinding lines. Began exporting to Southeast Asia.",
+                  },
+                  {
+                    year: "2016",
+                    title: "ISO 9001 Certification",
+                    desc: "Achieved ISO 9001:2015 certification. Launched OEM partnerships with European machine builders.",
+                  },
+                  {
+                    year: "2020",
+                    title: "15,000 m² Smart Factory",
+                    desc: "Relocated to a modern facility with 20+ CNC centers, metallurgical lab, and CMM inspection stations.",
+                  },
+                  {
+                    year: "2024",
+                    title: "Global Reach: 50+ Countries",
+                    desc: "Serving recycling, paper converting, and plastic processing industries worldwide with 10,000+ blade designs.",
+                  },
+                ].map((milestone, i) => (
+                  <div key={i} className="relative">
+                    {/* Dot on the timeline */}
+                    <div className="absolute -left-8 lg:-left-10 top-1 w-5 h-5 rounded-full bg-white dark:bg-slate-900 border-[3px] border-[#003366] dark:border-blue-400 z-10"></div>
+                    {/* Accent dot for latest */}
+                    {i === 4 && (
+                      <div className="absolute -left-8 lg:-left-10 top-1 w-5 h-5 rounded-full bg-[#FF6600] border-[3px] border-[#FF6600] z-10"></div>
+                    )}
+                    <div>
+                      <span className="inline-block text-[#FF6600] text-xs font-black tracking-[0.2em] uppercase mb-1">
+                        {milestone.year}
+                      </span>
+                      <h3 className="text-lg font-bold text-[#003366] dark:text-white mb-1">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                        {milestone.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Our Values
+      {/* ═══════════════════════════════════════════════════════════════════
+          4. VALUES — Technical Cards + Certification Badge Strip
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section className="py-20 lg:py-28 bg-slate-50 dark:bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3 mb-3">
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+              <span className="text-[#FF6600] tracking-[0.2em] text-xs font-bold uppercase">
+                Our Principles
+              </span>
+              <div className="h-[2px] w-8 bg-[#FF6600]"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#003366] dark:text-white mb-4">
+              Core Values
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The principles that guide everything we do
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
+              The principles that guide every blade we engineer
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {values.map((value, index) => (
+          {/* Values Grid — technical card design */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-5xl mx-auto mb-16">
+            {[
+              {
+                icon: Factory,
+                title: "Manufacturing Excellence",
+                desc: "State-of-the-art CNC machining centers and vacuum heat treatment facilities ensure consistent quality and precision in every blade we produce.",
+              },
+              {
+                icon: Globe,
+                title: "Global Reach",
+                desc: "Serving recycling facilities and industrial operators worldwide with responsive engineering support and fast international shipping.",
+              },
+              {
+                icon: Users,
+                title: "Customer Partnership",
+                desc: "We work closely with OEM machine builders and end-users to understand unique challenges and develop solutions that maximize uptime.",
+              },
+              {
+                icon: Award,
+                title: "Quality Commitment",
+                desc: "ISO 9001 certified processes and rigorous quality control ensure every blade meets or exceeds OEM specifications.",
+              },
+            ].map((v, i) => (
               <div
-                key={index}
-                className="flex gap-6 p-8 bg-card rounded-sm border border-border hover:border-primary transition-all duration-300 group"
+                key={i}
+                className="flex gap-5 p-6 bg-white dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-[#003366] dark:hover:border-blue-500 transition-colors duration-200 group"
               >
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-sm bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <value.icon className="text-primary" size={32} />
-                  </div>
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#003366]/10 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-[#003366]/20 transition-colors">
+                  <v.icon className="w-6 h-6 text-[#003366] dark:text-blue-400" />
                 </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-bold text-foreground">
-                    {value.title}
+                <div>
+                  <h3 className="text-base font-bold text-[#003366] dark:text-white mb-1.5">
+                    {v.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {value.description}
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                    {v.desc}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Facility Section */}
-      <section className="relative py-24 bg-card blade-cut-top">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                  State-of-the-Art Manufacturing
-                </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our 15,000 square meter facility in Ma'anshan houses
-                  advanced CNC machining centers, assembly workshops,
-                  and comprehensive quality control equipment.
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "20+ CNC machining centers with 5-axis capability",
-                    "Vacuum heat treatment furnaces with precise temperature control",
-                    "CMM coordinate measuring machines for dimensional verification",
-                    "Metallurgical lab with optical microscopy and hardness testing",
-                    "ISO 9001:2015 certified quality management system",
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="relative aspect-square rounded-sm overflow-hidden">
-                <img
-                  src="/images/common/Quality-Inspection.webp"
-                  alt="Manufacturing Facility"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-24 bg-background">
-        <div className="container">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          {/* Certifications — horizontal badge strip */}
+          <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl py-8 px-6">
+            <p className="text-center text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400 dark:text-slate-500 mb-6">
               Certifications & Standards
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Committed to international quality and safety standards
             </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {[
-              "ISO 9001:2015",
-              "CE Certified",
-              "SGS Verified",
-              "RoHS Compliant",
-            ].map((cert, index) => (
-              <Card
-                key={index}
-                className="bg-card border-border hover:border-primary transition-all duration-300"
-              >
-                <CardContent className="p-8 text-center">
-                  <Award className="mx-auto text-primary mb-4" size={48} />
-                  <h3 className="text-lg font-bold text-foreground">{cert}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="relative py-32 bg-card blade-cut-top">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-foreground">
-              Partner With Us
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              Experience the Sureay difference in machinery quality and customer
-              service
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-6 animate-forge-pulse"
-              >
-                Request a Quote
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-              {/* <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold text-lg px-12 py-6"
-              >
-                Schedule Factory Tour
-              </Button> */}
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+              {[
+                { icon: Shield, label: "ISO 9001:2015" },
+                { icon: Award,  label: "CE Certified" },
+                { icon: Globe,  label: "SGS Verified" },
+                { icon: Flame,  label: "RoHS Compliant" },
+                { icon: Truck,  label: "Global Door-to-Door" },
+              ].map((cert, i) => (
+                <div key={i} className="flex flex-col items-center gap-2 group">
+                  <div className="w-14 h-14 rounded-full bg-slate-50 dark:bg-slate-700 border-2 border-slate-200 dark:border-slate-600 flex items-center justify-center group-hover:border-[#003366] dark:group-hover:border-blue-400 transition-colors">
+                    <cert.icon className="w-6 h-6 text-[#003366] dark:text-blue-400" />
+                  </div>
+                  <span className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-center">
+                    {cert.label}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
+
         </div>
       </section>
+
+      <OEMConversionFunnel />
 
       <Footer />
     </div>

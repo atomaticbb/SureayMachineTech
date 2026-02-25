@@ -13,6 +13,7 @@ import MachineListPage from "./pages/MachineListPage";
 import MachineDetail from "./pages/MachineDetail";
 import MoldListPage from "./pages/MoldListPage";
 import BladeListPage from "./pages/BladeListPage";
+import BladeDetail from "./pages/BladeDetail";
 import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -42,6 +43,7 @@ function Router() {
         <Route path={"/products/machinery/:id"} component={MachineDetail} />
         <Route path={"/products/molds"} component={MoldListPage} />
         <Route path={"/products/blades"} component={BladeListPage} />
+        <Route path={"/products/blades/:id"} component={BladeDetail} />
         {/* Product detail route - must come after category routes */}
         <Route path={"/products/:slug"} component={ProductDetail} />
         <Route path={"/custom"} component={Custom} />
