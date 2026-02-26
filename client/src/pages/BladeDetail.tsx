@@ -108,39 +108,30 @@ export default function BladeDetail() {
           <TechSpecsSection blade={blade} />
         </div>
 
-        {/* --- Z-Layout 1: Decades of Cutting Excellence (text left, image right) --- */}
-        <div className="mb-16 max-w-7xl mx-auto px-4 lg:px-8">
-          <ZLayoutFeature
-            title="Decades of Cutting Excellence"
-            accentColor="blue"
-            paragraphs={[
-              "The Sureay Co. Inc., has a long history of providing the highest quality industrial knives to the Tissue, film and foil industries.",
-              "As industry technology has progressed, so have Sureay industrial knives. Today, our material expertise is the best in the knife industry. Our experts match the right knife material to your application. Then, we provide an uncompromising heat-treating and finishing process that results in consistent, accurate knives that provide high productivity and cost-effective performance.",
-              "Sureay has expanded our product offering allowing us to provide more solutions for tissue, towel, napkin, sanitary, non-woven, wipes, packaging, and wrapping applications. We now offer roll services, which includes new rolls, repairs and re-coating.",
-            ]}
-            imageSrc="/images/products/blades/tissue-log-saw-blades-04.webp"
-            imageAlt="Sureay precision industrial blade manufacturing"
-            imagePosition="right"
-          />
-        </div>
-
-        {/* --- Z-Layout 2: Engineered for Your Application (image left, text right) --- */}
-        <div className="bg-slate-50/50 dark:bg-slate-800/30 border-y border-slate-100 dark:border-slate-800 py-16">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+        {/* --- Z-Layout Sections (data-driven, per product) --- */}
+        {blade.zLayoutSections?.map((section, i) => {
+          const isMuted = section.background === "muted" || (section.background == null && i % 2 === 1);
+          const inner = (
             <ZLayoutFeature
-              title="Engineered for Your Application"
-              accentColor="orange"
-              paragraphs={[
-                "Every Sureay blade is engineered from the ground up to meet the exact demands of your production line. We work closely with OEM machine builders and end-users to ensure perfect fit, optimal edge geometry, and maximum service life.",
-                "Our advanced CNC grinding and precision balancing processes deliver blades with exceptional concentricity and surface finish. Combined with vacuum heat treatment and cryogenic processing, each blade achieves the ideal hardness profile for consistent, clean cuts across thousands of cycles.",
-                "From standard catalog sizes to fully custom specifications, Sureay delivers with short lead times and full dimensional inspection reports included with every order.",
-              ]}
-              imageSrc="/images/products/blades/tissue-log-saw-blades-03.webp"
-              imageAlt="Sureay blade precision manufacturing process"
-              imagePosition="left"
+              title={section.title}
+              accentColor={section.accentColor}
+              paragraphs={section.paragraphs}
+              imageSrc={section.imageSrc}
+              imageAlt={section.imageAlt}
+              imagePosition={section.imagePosition}
             />
-          </div>
-        </div>
+          );
+
+          return isMuted ? (
+            <div key={i} className="bg-slate-50/50 dark:bg-slate-800/30 border-y border-slate-100 dark:border-slate-800 py-16">
+              <div className="max-w-7xl mx-auto px-4 lg:px-8">{inner}</div>
+            </div>
+          ) : (
+            <div key={i} className="mb-16 max-w-7xl mx-auto px-4 lg:px-8">
+              {inner}
+            </div>
+          );
+        })}
 
         {/* --- Log Saw Engineering Sizing Table (tissue blades only) --- */}
         {blade.id === "tissue-log-saw-blades" && (

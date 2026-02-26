@@ -29,6 +29,16 @@ export interface BladeSpecCategory {
   specs: Record<string, string>;
 }
 
+export interface BladeZLayoutSection {
+  title: string;
+  accentColor?: "blue" | "orange";
+  paragraphs: string[];
+  imageSrc: string;
+  imageAlt: string;
+  imagePosition?: "left" | "right";
+  background?: "default" | "muted";
+}
+
 export interface BladeProcessItem {
   id: string;
   number: string;
@@ -80,6 +90,7 @@ export interface Blade {
   components?: BladeComponent[];
   applicationItems?: BladeApplicationItem[];
   specCategories?: BladeSpecCategory[];
+  zLayoutSections?: BladeZLayoutSection[];
   manufacturingProcess?: BladeProcessItem[];
 
   // === Meta ===
@@ -245,6 +256,35 @@ export const blades: Blade[] = [
       "Factory-direct pricing with fast lead times",
     ],
 
+    zLayoutSections: [
+      {
+        title: "Premium Alloy Steel, Uncompromising Quality",
+        accentColor: "blue",
+        paragraphs: [
+          "Every Sureay alloy blade starts with certified, mill-tested raw material. We source only premium tool steel alloys — 9CrSi for general-purpose cutting, Cr12MoV (D2/SKD-11) for high-abrasion environments, and W6Mo5Cr4V2 (M2 HSS) for elevated-temperature operations.",
+          "Our metallurgists match the steel grade to your exact application, ensuring the optimal balance of hardness, toughness, and wear resistance. Each incoming billet undergoes spectrometer analysis to verify alloy composition before production begins.",
+          "The result: blades that hold their edge longer, resist chipping under impact, and deliver consistent, repeatable cutting performance across thousands of operating hours.",
+        ],
+        imageSrc: "/images/process/premium-steel-selection.webp",
+        imageAlt: "Sureay premium alloy steel material selection",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Precision CNC Machining & Heat Treatment",
+        accentColor: "orange",
+        paragraphs: [
+          "After rough machining, every alloy blade enters our vacuum heat treatment furnace for a precisely controlled hardening cycle. This process achieves uniform 58–62 HRC hardness throughout the entire cross-section while eliminating surface decarburization.",
+          "Post heat treatment, our 5-axis CNC grinding centers machine each blade face, edge angle, and bore to micro-level tolerances (±0.05mm). The result is a perfectly flat, burr-free cutting surface that maximizes contact efficiency.",
+          "Each finished blade is measured on a CMM (Coordinate Measuring Machine) and undergoes hardness spot-checks and edge geometry audits — ensuring zero-defect delivery and full dimensional compliance with your specifications.",
+        ],
+        imageSrc: "/images/process/acuum-heat-treatment.webp",
+        imageAlt: "Sureay vacuum heat treatment and CNC precision grinding",
+        imagePosition: "left",
+        background: "muted",
+      },
+    ],
+
     relatedBladeIds: ["rotary-cutter-blades", "shredder-blades"],
     leadTime: "7-15 business days",
   },
@@ -388,6 +428,35 @@ export const blades: Blade[] = [
         title: "Laser Thickness Measurement",
         image: "/images/products/product.webp",
         size: "small",
+      },
+    ],
+
+    zLayoutSections: [
+      {
+        title: "Engineered for High-Speed Continuous Cutting",
+        accentColor: "blue",
+        paragraphs: [
+          "Our rotary cutter blades are designed for non-stop, high-speed slitting and cutting operations where blade runout of even a few microns can cause material tearing, dust generation, or uneven edges.",
+          "Each blade is ground on advanced 5-axis CNC grinding centers to achieve strict concentricity (within 0.01mm) and parallelism (within 0.005mm). This precision guarantees clean, vibration-free cutting at rotation speeds exceeding 3,000 RPM.",
+          "Beyond standard vacuum heat treatment, our rotary blades undergo deep cryogenic processing (−196 °C) to completely eliminate retained austenite — maximizing structural stability and extending wear life by up to 300% versus conventionally treated blades.",
+        ],
+        imageSrc: "/images/process/cnc-precision-grinding.webp",
+        imageAlt: "Sureay CNC precision grinding for rotary cutter blades",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Custom Edge Profiles for Every Material",
+        accentColor: "orange",
+        paragraphs: [
+          "Whether you need a single bevel for film slitting, a double bevel for paper converting, a square edge for foil cutting, or a custom toothed profile for non-woven materials — our engineering team optimizes the cutting geometry for your specific application.",
+          "We work directly with OEM machine builders (Kampf, Atlas, Dusenbery, Goebel, Tidland) and end-users to ensure perfect fit and optimal performance. Every blade is manufactured 100% per your drawings or physical samples.",
+          "Dynamic balancing is performed on every finished blade to guarantee vibration-free operation, extending machine bearing life and ensuring consistent cut quality across millions of cycles.",
+        ],
+        imageSrc: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp",
+        imageAlt: "Sureay rotary blade custom edge profiles and precision slitting",
+        imagePosition: "left",
+        background: "muted",
       },
     ],
 
@@ -538,6 +607,35 @@ export const blades: Blade[] = [
       },
     ],
 
+    zLayoutSections: [
+      {
+        title: "Built to Withstand the Toughest Waste Streams",
+        accentColor: "blue",
+        paragraphs: [
+          "Shredding operations subject blades to extreme forces — sudden impacts from mixed waste, abrasive contaminants, and high-torque stress at low rotational speeds. Our shredder blades are engineered specifically for this punishing environment.",
+          "We select H13 hot-work tool steel and 6CrW2Si for their superior toughness-hardness balance, preventing blade chipping under sudden high-impact loads. Each blade undergoes vacuum hardening followed by double tempering to achieve a carefully optimized 58–62 HRC hardness profile.",
+          "The result is a blade that resists fracture and premature edge breakdown when processing the most challenging materials — from rigid plastics and e-waste circuit boards to tire chips and mixed municipal solid waste.",
+        ],
+        imageSrc: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
+        imageAlt: "Sureay heavy-duty shredder blades for industrial waste processing",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Precision-Machined for Multi-Shaft Rotor Systems",
+        accentColor: "orange",
+        paragraphs: [
+          "Every shredder blade is CNC-machined to exact axial width tolerances, ensuring proper inter-blade clearance when assembled on multi-shaft rotor stacks. This precision is critical for clean shear-cut action and prevention of material jamming between rotors.",
+          "Our aggressive hook-tooth cutting profile is engineered to maximize bite into tough materials while efficiently ejecting shredded fragments. This geometry significantly reduces power consumption and increases throughput at the same motor load.",
+          "All blades are designed with sufficient material allowance to be re-sharpened 3–6 times, dramatically reducing the total cost of ownership. We provide re-grinding services along with fresh replacement sets for planned maintenance schedules.",
+        ],
+        imageSrc: "/images/products/blades/11-2-2_circular-blade_06.webp",
+        imageAlt: "Sureay shredder blade precision machining for multi-shaft systems",
+        imagePosition: "left",
+        background: "muted",
+      },
+    ],
+
     relatedBladeIds: ["alloy-blades", "granulator-blades"],
     leadTime: "10-20 business days",
   },
@@ -669,6 +767,35 @@ export const blades: Blade[] = [
         title: "Surface Profilometry Check",
         image: "/images/products/product.webp",
         size: "small",
+      },
+    ],
+
+    zLayoutSections: [
+      {
+        title: "Decades of Cutting Excellence",
+        accentColor: "blue",
+        paragraphs: [
+          "The Sureay Co. Inc., has a long history of providing the highest quality industrial knives to the Tissue, film and foil industries.",
+          "As industry technology has progressed, so have Sureay industrial knives. Today, our material expertise is the best in the knife industry. Our experts match the right knife material to your application. Then, we provide an uncompromising heat-treating and finishing process that results in consistent, accurate knives that provide high productivity and cost-effective performance.",
+          "Sureay has expanded our product offering allowing us to provide more solutions for tissue, towel, napkin, sanitary, non-woven, wipes, packaging, and wrapping applications. We now offer roll services, which includes new rolls, repairs and re-coating.",
+        ],
+        imageSrc: "/images/products/blades/tissue-log-saw-blades-04.webp",
+        imageAlt: "Sureay precision tissue log saw blade manufacturing",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Engineered for Your Application",
+        accentColor: "orange",
+        paragraphs: [
+          "Every Sureay tissue blade is engineered from the ground up to meet the exact demands of your converting line. We work closely with OEM machine builders and end-users to ensure perfect fit, optimal edge geometry, and maximum service life.",
+          "Our advanced CNC grinding and multi-stage lapping process delivers blades with a mirror-polish surface finish (Ra ≤ 0.4), drastically reducing paper fiber adhesion, minimizing dust generation, and allowing the blade to glide through tissue webs without tearing.",
+          "From standard catalog sizes to fully custom specifications, Sureay delivers with short lead times and full dimensional inspection reports included with every order.",
+        ],
+        imageSrc: "/images/products/blades/tissue-log-saw-blades-03.webp",
+        imageAlt: "Sureay tissue blade precision manufacturing process",
+        imagePosition: "left",
+        background: "muted",
       },
     ],
 
@@ -807,6 +934,35 @@ export const blades: Blade[] = [
       },
     ],
 
+    zLayoutSections: [
+      {
+        title: "Optimized Blade Profiles for Every Polymer",
+        accentColor: "blue",
+        paragraphs: [
+          "Not all plastics cut the same. Soft LDPE film requires a different cutting approach than rigid ABS injection runners or glass-filled PA66 engineering plastics. Sureay granulator blades are engineered with application-specific edge geometries to deliver clean, uniform granules with minimal fines.",
+          "We offer both straight-edge profiles for general-purpose polymer granulation and V-notch (serrated) profiles for processing thick-walled parts and runners. For glass-fiber or mineral-filled composites, our tungsten carbide insert option provides 5–10× longer service life.",
+          "The cutting gap between rotor blades and bed knife is a critical parameter. Our blades are machined to the exact mounting geometry of your granulator model — ensuring optimal clearance and clean shear-cut action that produces consistent granule quality.",
+        ],
+        imageSrc: "/images/products/blades/11-2-2_circular-blade_05.webp",
+        imageAlt: "Sureay granulator blade profiles for polymer processing",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Maximum Uptime, Minimum Cost per Cut",
+        accentColor: "orange",
+        paragraphs: [
+          "Granulator blades are a consumable — but that doesn't mean they should be disposable. Our blades are manufactured from premium SKD-11, H13, or solid tungsten carbide with sufficient material allowance for 3–6 re-sharpening cycles, dramatically reducing your cost per cut.",
+          "Advanced vacuum heat treatment with optional deep cryogenic processing achieves the ideal hardness-toughness balance (58–64 HRC), preventing premature chipping while maintaining a razor-sharp cutting edge through thousands of operating hours.",
+          "We support all major granulator brands — Rapid, Zerma, Cumberland, Conair, Dreher — and manufacture 100% per your drawings or physical samples. Standard lead time is 7–15 business days.",
+        ],
+        imageSrc: "/images/process/heat-treatment.webp",
+        imageAlt: "Sureay granulator blade heat treatment and quality control",
+        imagePosition: "left",
+        background: "muted",
+      },
+    ],
+
     relatedBladeIds: ["shredder-blades", "alloy-blades"],
     leadTime: "7-15 business days",
   },
@@ -865,6 +1021,36 @@ export const blades: Blade[] = [
     ],
 
     manufacturingProcess: [],
+
+    zLayoutSections: [
+      {
+        title: "Razor-Sharp Precision for the Printing Industry",
+        accentColor: "blue",
+        paragraphs: [
+          "In the printing and publishing industry, cut quality defines the finished product. Our paper cutting blades are ground from high-carbon steel and chrome-vanadium alloys to deliver the razor-sharp, durable cutting edge required for trimming reams, sheets, and stacked booklets.",
+          "Whether you operate a guillotine trimmer, a three-knife booklet trimmer, or a high-speed sheeter, our blades are precision-ground to the exact dimensional specifications of your machine — ensuring perfectly clean, compression-free cuts on every stroke.",
+          "Each blade is heat treated to 58–62 HRC for optimal edge retention, and the cutting angle is customized to your specific paper weight and fiber type to prevent tearing, dust generation, and uneven edges.",
+        ],
+        imageSrc: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp",
+        imageAlt: "Sureay precision paper cutting guillotine blades",
+        imagePosition: "right",
+        background: "default",
+      },
+      {
+        title: "Custom Lengths & Bevel Angles for Every Application",
+        accentColor: "orange",
+        paragraphs: [
+          "We manufacture paper cutting blades up to 1,500mm in length, with customizable single or double bevel angles optimized for your specific paper grade and cutting method. Our engineering team works with you to determine the ideal edge geometry.",
+          "Advanced CNC surface grinding ensures exceptional straightness and flatness across the full blade length. Each blade undergoes a multi-point dimensional inspection to guarantee compliance with your machine manufacturer's specifications.",
+          "Re-sharpening services are available for all our paper blades. Contact us with your machine model or supply a drawing for a rapid quotation — standard lead time is 7–15 business days.",
+        ],
+        imageSrc: "/images/process/5-Grinding.webp",
+        imageAlt: "Sureay paper blade CNC grinding and custom bevel angles",
+        imagePosition: "left",
+        background: "muted",
+      },
+    ],
+
     relatedBladeIds: ["tissue-log-saw-blades", "alloy-blades"],
     leadTime: "7-15 business days",
   },
