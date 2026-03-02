@@ -34,12 +34,12 @@ export default function MachineDetail() {
     return (
       <>
         <Navbar />
-        <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-900">
-          <div className="text-center px-4">
-            <h1 className="text-6xl font-bold text-slate-900 dark:text-white mb-4">404</h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400 mb-8">Machine not found</p>
+        <div className="min-h-screen flex items-center justify-center bg-slate-50">
+          <div className="text-center px-6">
+            <h1 className="text-6xl font-black text-[#001f4d] mb-4">404</h1>
+            <p className="text-xl text-slate-600 mb-8">Machine not found</p>
             <Link href="/products/machinery">
-              <a className="inline-block px-8 py-3 bg-[#003366] text-white font-bold rounded-lg hover:bg-[#FF6600] transition-colors duration-300">
+              <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black uppercase tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
                 Back to Machinery
               </a>
             </Link>
@@ -120,19 +120,31 @@ export default function MachineDetail() {
 
       {/* 9. Related Products: Cross-sell */}
       {relatedMachines.length > 0 && (
-        <section className="max-w-7xl mx-auto py-16 px-4">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Related Machines</h2>
-            <Link href="/products/machinery">
-              <a className="text-[#003366] dark:text-[#FF6600] font-semibold hover:underline">View All →</a>
-            </Link>
+        <div className="bg-slate-50 border-t border-slate-200 py-20">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <div className="mb-10">
+              <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+                You May Also Need
+              </p>
+              <div className="flex items-end justify-between gap-4">
+                <h2 className="font-black text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05]">
+                  Related Machines
+                </h2>
+                <Link href="/products/machinery">
+                  <span className="font-mono text-[10px] text-slate-400 uppercase tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
+                    VIEW ALL →
+                  </span>
+                </Link>
+              </div>
+              <div className="w-14 h-[3px] bg-slate-300 mt-6" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {relatedMachines.map((relatedMachine) => (
+                <MachineCard key={relatedMachine.id} machine={relatedMachine} />
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {relatedMachines.map((relatedMachine) => (
-              <MachineCard key={relatedMachine.id} machine={relatedMachine} />
-            ))}
-          </div>
-        </section>
+        </div>
       )}
 
       {/* 10. Sticky CTA: Mobile Conversion Booster */}

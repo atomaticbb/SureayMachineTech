@@ -1,0 +1,124 @@
+import { useState } from "react";
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ECOSYSTEMS } from "@/data/homeData";
+
+export default function TabEcosystem() {
+  const [activeTab, setActiveTab] = useState(0);
+  const activeEcosystem = ECOSYSTEMS[activeTab];
+
+  return (
+    <section className="bg-white border-t border-slate-200 py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
+
+        {/* Section header */}
+        <div className="mb-12">
+          <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+            Markets We Serve
+          </p>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <h2 className="font-black text-4xl md:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
+              Complete Industry Ecosystems.
+            </h2>
+            <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
+              We don't just supply isolated blades. We engineer complete front-end processing
+              solutions tailored to severe industrial environments.
+            </p>
+          </div>
+          <div className="w-14 h-[3px] bg-slate-300 mt-8" />
+        </div>
+
+        {/* Tab bar */}
+        <div className="flex gap-0 border-b border-slate-200 mb-12 overflow-x-auto">
+          {ECOSYSTEMS.map((eco, i) => {
+            const isActive = i === activeTab;
+            return (
+              <button
+                key={eco.label}
+                onClick={() => setActiveTab(i)}
+                className={[
+                  "flex-shrink-0 px-6 mr-2 text-sm transition-all cursor-pointer whitespace-nowrap",
+                  isActive
+                    ? "text-[#001f4d] font-black uppercase tracking-wider border-b-4 border-[#003366] pb-4"
+                    : "text-slate-500 font-bold uppercase tracking-wider border-b-4 border-slate-200 hover:text-[#001f4d] hover:border-slate-300 pb-4",
+                ].join(" ")}
+              >
+                {eco.label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Tab content */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="flex flex-col lg:flex-row overflow-hidden"
+          >
+            {/* Left — Text, Specs & CTA */}
+            <div className="w-full lg:w-3/5 p-6 lg:p-8 xl:p-10 flex flex-col justify-center bg-white">
+
+              <p className="text-slate-400 font-bold text-[10px] uppercase tracking-[0.35em] mb-3">
+                {activeEcosystem.industry}
+              </p>
+
+              <h3 className="text-2xl font-black text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-3">
+                {activeEcosystem.label}
+              </h3>
+
+              <p className="text-sm text-slate-500 leading-relaxed mb-5 max-w-md">
+                {activeEcosystem.desc}
+              </p>
+
+              {/* Invisible Engineering Grid — borderless spec list */}
+              <div className="flex flex-col border-t border-slate-200">
+                {activeEcosystem.specs.map((spec) => (
+                  <div
+                    key={spec.label}
+                    className="flex flex-col sm:flex-row sm:items-center py-2.5 border-b border-slate-100 last:border-0"
+                  >
+                    <span className="w-full sm:w-1/3 text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-0.5 sm:mb-0">
+                      {spec.label}
+                    </span>
+                    <span className="w-full sm:w-2/3 text-[13px] font-black text-[#003366]">
+                      {spec.value}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <Link href={activeEcosystem.href} className="self-start">
+                <button className="mt-6 inline-flex items-center gap-3 bg-[#003366] text-white px-8 py-3 text-xs font-black uppercase tracking-widest hover:bg-[#001f4d] transition-colors rounded-none shadow-md hover:shadow-lg">
+                  View {activeEcosystem.label} Solutions
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </Link>
+
+            </div>
+
+            {/* Right — Image with white mat padding */}
+            <div className="w-full lg:w-2/5 bg-white p-6 lg:p-8 flex items-center min-h-[280px] lg:min-h-0">
+              <div className="relative w-full h-full min-h-[220px] overflow-hidden">
+                <img
+                  src={activeEcosystem.image}
+                  alt={`${activeEcosystem.label} industrial cutting solutions`}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/30 to-transparent pointer-events-none" />
+              </div>
+            </div>
+
+          </motion.div>
+        </AnimatePresence>
+
+      </div>
+    </section>
+  );
+}

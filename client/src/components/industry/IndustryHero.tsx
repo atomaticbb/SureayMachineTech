@@ -1,0 +1,102 @@
+/*
+ * IndustryHero — Module 1
+ * Charcoal dark hero + 2-col stagger image gallery wall.
+ * LCP: gallery[0] → fetchPriority="high" loading="eager" decoding="sync"
+ * All other gallery images → loading="lazy" decoding="async"
+ */
+
+import type { IndustryHeroData } from "./types";
+
+// Fixed visual rhythm for the two gallery columns
+const COL_A_HEIGHTS = ["h-[320px]", "h-[220px]", "h-[240px]", "h-[210px]"] as const;
+const COL_B_HEIGHTS = ["h-[220px]", "h-[240px]", "h-[240px]", "h-[240px]"] as const;
+const COL_A_IDX     = [0, 2, 4, 6] as const;
+const COL_B_IDX     = [1, 3, 5, 7] as const;
+
+interface Props {
+  data: IndustryHeroData;
+}
+
+export default function IndustryHero({ data }: Props) {
+  return (
+    <section className="bg-[#0b1622] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-10 sm:px-12 lg:px-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.12fr_auto] gap-0">
+
+          {/* ── Left — Copy block ── */}
+          <div className="flex flex-col justify-between py-20 lg:py-42 pl-2 sm:pl-4 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
+            <div>
+
+              <p className="font-bold text-xs text-white/40 uppercase tracking-[0.45em] mb-8">
+                {data.breadcrumb}
+              </p>
+
+              <h1 className="font-black text-[32px] lg:text-[36px] text-[#65AAD6] uppercase tracking-tight leading-[1.1] mb-5 max-w-[520px]">
+                {data.h1}
+              </h1>
+
+              <h2 className="font-bold text-[13px] text-white/80 uppercase tracking-[0.2em] mb-7 max-w-[500px]">
+                {data.h2}
+              </h2>
+
+              <div className="w-14 h-[3px] bg-white/25 mb-9" />
+
+              <p className="text-[#B4D4E9] text-base leading-relaxed mb-6 max-w-[490px] tracking-[0.025em]">
+                {data.body1}
+              </p>
+
+              <p className="text-[#B4D4E9]/70 text-base leading-relaxed max-w-[480px] tracking-wide mb-12">
+                {data.body2}
+              </p>
+
+              <a
+                href={data.ctaHref}
+                className="self-start inline-block bg-white text-[#001f4d] font-black text-[13px] uppercase tracking-widest px-10 py-4 rounded-none hover:bg-slate-200 transition-colors duration-200"
+              >
+                [ View Tooling Matrix ]
+              </a>
+
+            </div>
+          </div>
+
+          {/* ── Right — 8-Image 2-Col Stagger Wall ── */}
+          <div className="hidden lg:flex gap-5 py-[50px] px-3 lg:px-5">
+
+            {/* Column A — indices 0 2 4 6 */}
+            <div className="flex flex-col gap-5">
+              {COL_A_IDX.map((idx, i) => (
+                <div key={idx} className="w-[319.5px] overflow-hidden bg-white flex-shrink-0">
+                  <img
+                    src={data.gallery[idx]?.src}
+                    alt={data.gallery[idx]?.alt}
+                    fetchPriority={idx === 0 ? "high" : undefined}
+                    loading={idx === 0 ? "eager" : "lazy"}
+                    decoding={idx === 0 ? "sync"  : "async"}
+                    className={`w-[319.5px] ${COL_A_HEIGHTS[i]} object-cover`}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Column B — indices 1 3 5 7 */}
+            <div className="flex flex-col gap-5">
+              {COL_B_IDX.map((idx, i) => (
+                <div key={idx} className="w-[319.5px] overflow-hidden bg-white flex-shrink-0">
+                  <img
+                    src={data.gallery[idx]?.src}
+                    alt={data.gallery[idx]?.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className={`w-[319.5px] ${COL_B_HEIGHTS[i]} object-cover`}
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}

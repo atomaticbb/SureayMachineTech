@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { HelmetProvider } from "react-helmet-async";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
@@ -17,9 +18,11 @@ import BladeDetail from "./pages/BladeDetail";
 import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Applications from "./pages/Applications";
 import Blogs from "./pages/Blogs";
 import Admin from "./pages/Admin";
+import PlasticIndustry from "./pages/plastic-industry";
+import MetalIndustry   from "./pages/metal-industry";
+import PaperIndustry   from "./pages/paper-industry";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -49,8 +52,10 @@ function Router() {
         <Route path={"/custom"} component={Custom} />
         <Route path={"/about"} component={About} />
         <Route path={"/contact"} component={Contact} />
-        <Route path={"/applications"} component={Applications} />
-        <Route path={"/blogs"} component={Blogs} />
+        <Route path={"/industry/plastics-recycling"} component={PlasticIndustry} />
+        <Route path={"/industry/metal-processing"}  component={MetalIndustry}   />
+        <Route path={"/industry/paper-tissue"}      component={PaperIndustry}   />
+        <Route path={"/news"} component={Blogs} />
         <Route path={"/admin"} component={Admin} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
@@ -67,14 +72,16 @@ function Router() {
 
 function App() {
   return (
-    <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
+    <HelmetProvider>
+      <ErrorBoundary>
+        <ThemeProvider defaultTheme="light">
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+          </TooltipProvider>
+        </ThemeProvider>
+      </ErrorBoundary>
+    </HelmetProvider>
   );
 }
 

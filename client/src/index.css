@@ -13,10 +13,11 @@
 */
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  /* Cold Steel Brutalism — zero radius everywhere */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -56,6 +57,16 @@
   --color-steel-blue: oklch(0.25 0.03 250);
   --color-steel-dark: oklch(0.15 0.02 250);
   --color-metal-silver: oklch(0.88 0.01 250);
+
+  /* ─── Cold Steel Brutalism Design Tokens ─────────────────────────────── */
+  /* Brand primaries */
+  --color-navy: #001F4D;          /* Deep heavy primary — dominant structural colour */
+  --color-safety-orange: #FF6600; /* Safety Orange — use sparingly as heat accent    */
+  --color-coldgray: #F8FAFC;      /* Engineering-spec background, alternating panels  */
+
+  /* Typography scale */
+  --font-display: "Oswald", sans-serif; /* Condensed display / all headings */
+  --font-body: "Inter", sans-serif;     /* Body copy / UI labels              */
 }
 
 :root {
@@ -69,7 +80,7 @@
   --chart-3: oklch(0.40 0.07 250);
   --chart-4: oklch(0.45 0.06 250);
   --chart-5: oklch(0.50 0.05 250);
-  --radius: 0.25rem; /* Sharp edges for blade aesthetic */
+  --radius: 0px; /* Cold Steel Brutalism — zero radius globally */
 
   /* Light background (concrete texture) */
   --background: oklch(0.97 0.005 250); /* Cool white - concrete feel */
@@ -111,8 +122,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-family: "Inter", sans-serif;
+    @apply bg-white text-slate-900;
+    font-family: var(--font-body, "Inter", sans-serif);
   }
 
   h1,
@@ -121,8 +132,16 @@
   h4,
   h5,
   h6 {
-    font-family: "Rajdhani", sans-serif;
+    font-family: var(--font-display, "Oswald", sans-serif);
     font-weight: 700;
+  }
+
+  /* Engineering-spec numeric alignment — all data tables and metric lists */
+  table,
+  [data-slot="specs"],
+  .specs,
+  .metric {
+    font-variant-numeric: tabular-nums;
   }
 
   code,
@@ -237,6 +256,47 @@
   .bg-radial-pattern {
     background-image: radial-gradient(#ffffff 1px, transparent 1px);
     background-size: 30px 30px;
+  }
+
+  /* ─── Cold Steel Brutalism Utilities ─────────────────────────────────── */
+
+  /**
+   * .btn-brutalist
+   * Primary CTA button — navy block, tracks wide, all-caps.
+   * Hover ignites Safety Orange. ZERO border-radius enforced.
+   */
+  .btn-brutalist {
+    @apply inline-flex items-center justify-center
+           uppercase tracking-widest text-sm font-black
+           border-2 transition-all duration-200
+           rounded-none select-none;
+    background-color: var(--color-navy);
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border-color: var(--color-navy);
+  }
+
+  .btn-brutalist:hover:not(:disabled) {
+    background-color: var(--color-safety-orange);
+    border-color: var(--color-safety-orange);
+    color: #ffffff;
+  }
+
+  .btn-brutalist:disabled {
+    @apply opacity-50 pointer-events-none;
+  }
+
+  /**
+   * .spec-sheet-img
+   * Makes any white-background product photo render like a technical-manual
+   * print-out: desaturated at rest, full colour on focus/hover.
+   */
+  .spec-sheet-img {
+    @apply mix-blend-multiply grayscale transition-all duration-500 object-contain;
+  }
+
+  .spec-sheet-img:hover {
+    @apply grayscale-0;
   }
 }
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#001f4c",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1723",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-image: radial-gradient(circle, #cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .brutalist-border {
+            border: 1px solid #e2e8f0;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top Navigation -->
+<header class="border-b border-slate-200 bg-white dark:bg-background-dark px-6 md:px-12 py-4 flex items-center justify-between sticky top-0 z-50">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1 text-white">
+<span class="material-symbols-outlined !text-2xl">precision_manufacturing</span>
+</div>
+<h2 class="text-primary dark:text-slate-100 text-lg font-extrabold uppercase tracking-tighter font-display">BladeSystem Engineering</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8 uppercase font-mono text-[11px] tracking-widest font-bold">
+<a class="hover:text-primary border-b-2 border-transparent hover:border-primary transition-all pb-1" href="#">Inventory</a>
+<a class="hover:text-primary border-b-2 border-transparent hover:border-primary transition-all pb-1" href="#">CAD_Library</a>
+<a class="hover:text-primary border-b-2 border-transparent hover:border-primary transition-all pb-1" href="#">Metrology</a>
+<a class="hover:text-primary border-b-2 border-transparent hover:border-primary transition-all pb-1" href="#">Archive</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex border border-slate-200 h-10 px-3 items-center gap-2 bg-slate-50">
+<span class="material-symbols-outlined text-slate-400 text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-xs font-mono uppercase w-48" placeholder="SYS_SEARCH_PART_ID..." type="text"/>
+</div>
+<button class="bg-primary text-white font-mono text-xs font-bold uppercase tracking-widest px-6 h-10 hover:bg-opacity-90 transition-colors">
+                    Request_Quote
+                </button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto px-6 md:px-12 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-3 font-mono text-[10px] uppercase tracking-widest text-slate-500 mb-8">
+<a class="hover:text-primary" href="#">Root</a>
+<span class="material-symbols-outlined !text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Production_Inventory</a>
+<span class="material-symbols-outlined !text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Cutting_Hardware</a>
+<span class="material-symbols-outlined !text-xs">chevron_right</span>
+<span class="text-slate-900 font-bold">X-900_Carbide_V4.2</span>
+</nav>
+<!-- Blueprint Hero Wrapper -->
+<section class="border-4 border-primary grid lg:grid-cols-12 overflow-hidden mb-12">
+<div class="lg:col-span-8 bg-slate-100 grid-bg min-h-[500px] flex items-center justify-center relative p-12 border-b lg:border-b-0 lg:border-r border-primary">
+<div class="absolute top-4 left-4 font-mono text-[10px] text-slate-400 leading-none">
+                        [ VIEW_MODE: ISOMETRIC_WIREFRAME ]<br/>REF: CAD_MODEL_778-A
+                    </div>
+<img alt="Technical CAD render of industrial carbide blade" class="max-w-full h-auto mix-blend-multiply grayscale contrast-125" data-alt="Technical CAD drawing of a circular industrial carbide blade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh-EFeXKeQrcm_p3ktm0q443Bz0tClJkdbEola_khzYY-8NIsET4dSfZXJtuW3Pt6CGRuOz7yYi5cWPc2WnU9x_veIvCQO7z5569eoBatcrugW4N5DJDswV8ngLTVpWQ2d_Ksworjx0O0-GySfm9sHmJkwMLkelTUn997ia7fixTg22TEgtOYXieDtkJS_cdJK6ymCxcsKZohmsqmTCjQgvh3OsWG4lCQqLZ60HhhNX6FbhUtNhI06R6pc7ctkrFalG2FBSYYxzWY"/>
+<div class="absolute bottom-4 right-4 flex flex-col items-end gap-1">
+<div class="w-32 h-1 bg-primary"></div>
+<span class="font-mono text-[10px] uppercase">Scale: 1:1.000</span>
+</div>
+</div>
+<div class="lg:col-span-4 bg-white p-8 flex flex-col justify-between">
+<div>
+<div class="font-mono text-xs font-bold text-primary mb-4 uppercase tracking-[0.2em]">[ PRODUCT_SPECIFICATION_SHEET ]</div>
+<h1 class="text-5xl font-black text-slate-900 uppercase leading-[0.9] tracking-tighter mb-6">
+                            Precision Carbide Blade <span class="text-primary italic">V4.2</span>
+</h1>
+<p class="text-slate-600 leading-relaxed font-medium mb-8 max-w-sm">
+                            Engineered for high-tolerance industrial applications requiring 0.002mm edge retention under extreme thermal cycling conditions.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="border border-slate-200 px-3 py-1 font-mono text-[10px] uppercase bg-slate-50">HEAVY_DUTY</span>
+<span class="border border-slate-200 px-3 py-1 font-mono text-[10px] uppercase bg-slate-50">THERMAL_SHIELDED</span>
+<span class="border border-slate-200 px-3 py-1 font-mono text-[10px] uppercase bg-slate-50">TUNGSTEN_CORE</span>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-100 flex items-center justify-between">
+<div class="font-mono">
+<div class="text-[10px] text-slate-400 uppercase">Availability</div>
+<div class="text-sm font-bold text-green-600 uppercase">IN_STOCK_722_UNITS</div>
+</div>
+<div class="font-mono text-right">
+<div class="text-[10px] text-slate-400 uppercase">Batch_No</div>
+<div class="text-sm font-bold uppercase">#B-44021-X</div>
+</div>
+</div>
+</div>
+</section>
+<div class="grid lg:grid-cols-12 gap-12">
+<!-- Technical Audit Blocks (Main Column) -->
+<div class="lg:col-span-8 space-y-0">
+<div class="font-mono text-xs font-bold text-slate-400 mb-6 uppercase tracking-widest">[ TECHNICAL_AUDIT_LOG ]</div>
+<div class="border-y border-slate-200 py-10 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<span class="font-mono text-[10px] text-primary font-bold uppercase bg-primary/10 px-2 py-0.5 tracking-widest">01_MATERIAL_COMPOSITION</span>
+<span class="font-mono text-[10px] text-slate-400">STATUS: VERIFIED</span>
+</div>
+<h3 class="text-2xl font-extrabold uppercase tracking-tight">Crystalline Tungsten Matrix</h3>
+<p class="text-slate-600 leading-relaxed">
+                            The X-900 utilizes a sub-micron grain structure tungsten carbide matrix, reinforced with cobalt-chromium binder for superior fracture toughness. This composition eliminates micro-chipping during high-speed feed cycles.
+                        </p>
+</div>
+<div class="border-b border-slate-200 py-10 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<span class="font-mono text-[10px] text-primary font-bold uppercase bg-primary/10 px-2 py-0.5 tracking-widest">02_COATING_DYNAMICS</span>
+<span class="font-mono text-[10px] text-slate-400">METHOD: PVD_DEPOSITION</span>
+</div>
+<h3 class="text-2xl font-extrabold uppercase tracking-tight">TiAlN Industrial Shield</h3>
+<p class="text-slate-600 leading-relaxed">
+                            Titanium Aluminum Nitride coating provides a protective barrier against oxidation up to 1200°C. The surface friction coefficient is reduced to 0.35, significantly decreasing heat generation during continuous operation.
+                        </p>
+</div>
+<div class="border-b border-slate-200 py-10 flex flex-col gap-4">
+<div class="flex justify-between items-start">
+<span class="font-mono text-[10px] text-primary font-bold uppercase bg-primary/10 px-2 py-0.5 tracking-widest">03_METALLURGICAL_HARDNESS</span>
+<span class="font-mono text-[10px] text-slate-400">TEST: ASTM_E18</span>
+</div>
+<h3 class="text-2xl font-extrabold uppercase tracking-tight">Rockwell 72-HRC Rating</h3>
+<p class="text-slate-600 leading-relaxed">
+                            Validated peak hardness levels across three distinct sample points. Structural integrity remains stable under compressive loads of up to 2500 MPa, ensuring consistent cutting geometry throughout the blade lifespan.
+                        </p>
+</div>
+</div>
+<!-- Sidebar: Metrology Table -->
+<div class="lg:col-span-4">
+<div class="bg-white border border-slate-200 border-t-4 border-t-primary p-6">
+<div class="font-mono text-[10px] font-bold text-slate-400 mb-6 uppercase tracking-widest text-center">
+                            [ VERIFIED PRODUCTION SPECS ]
+                        </div>
+<table class="w-full text-left font-mono text-[11px] uppercase border-collapse">
+<tbody>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Outer_Diameter</td>
+<td class="py-3 text-right font-bold">450.00 MM</td>
+</tr>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Kerf_Thickness</td>
+<td class="py-3 text-right font-bold">3.20 MM</td>
+</tr>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Bore_Diameter</td>
+<td class="py-3 text-right font-bold">30.00 MM</td>
+</tr>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Tooth_Count</td>
+<td class="py-3 text-right font-bold">72_T</td>
+</tr>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Max_RPM</td>
+<td class="py-3 text-right font-bold">5,800 RPM</td>
+</tr>
+<tr class="border-b border-slate-100">
+<td class="py-3 text-slate-400 font-bold">Hook_Angle</td>
+<td class="py-3 text-right font-bold">15° NEG</td>
+</tr>
+<tr>
+<td class="py-3 text-slate-400 font-bold">Tolerance_Class</td>
+<td class="py-3 text-right font-bold">ISO_K10</td>
+</tr>
+</tbody>
+</table>
+<button class="w-full mt-8 border-2 border-primary text-primary font-bold font-mono text-[11px] uppercase tracking-widest py-3 hover:bg-primary hover:text-white transition-all">
+                            Download_Full_PDF_Report
+                        </button>
+</div>
+<!-- Related Inventory -->
+<div class="mt-12">
+<div class="font-mono text-[10px] font-bold text-slate-400 mb-6 uppercase tracking-[0.2em]">
+                            [ SYSTEM QUERY: COMPATIBLE TOOLING ]
+                        </div>
+<div class="space-y-4">
+<div class="border border-slate-200 p-4 flex gap-4 bg-white hover:border-primary transition-colors cursor-pointer group">
+<div class="w-16 h-16 bg-slate-50 flex items-center justify-center border border-slate-100">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary">settings_backup_restore</span>
+</div>
+<div class="flex flex-col justify-center">
+<div class="font-mono text-[10px] text-slate-400">ID: MOUNT-X9</div>
+<div class="text-xs font-bold uppercase font-display group-hover:text-primary transition-colors">Arbor Adapter Plate v2</div>
+</div>
+</div>
+<div class="border border-slate-200 p-4 flex gap-4 bg-white hover:border-primary transition-colors cursor-pointer group">
+<div class="w-16 h-16 bg-slate-50 flex items-center justify-center border border-slate-100">
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary">science</span>
+</div>
+<div class="flex flex-col justify-center">
+<div class="font-mono text-[10px] text-slate-400">ID: COOL-SYN-04</div>
+<div class="text-xs font-bold uppercase font-display group-hover:text-primary transition-colors">Synthetic Coolant Formula</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-200 bg-white px-6 md:px-12 py-12">
+<div class="max-w-[1440px] mx-auto grid md:grid-cols-4 gap-12">
+<div class="col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="bg-primary p-1 text-white">
+<span class="material-symbols-outlined !text-xl">precision_manufacturing</span>
+</div>
+<span class="text-primary font-black uppercase text-sm tracking-tighter">BladeSystem</span>
+</div>
+<p class="font-mono text-[10px] text-slate-400 uppercase leading-relaxed">
+                        Precision engineering since 1984. Built for the most demanding production environments on earth.
+                    </p>
+</div>
+<div class="col-span-1 font-mono text-[10px] uppercase space-y-2">
+<div class="font-bold text-slate-900 mb-4">[ NAVIGATION ]</div>
+<a class="block text-slate-500 hover:text-primary" href="#">Component_Registry</a>
+<a class="block text-slate-500 hover:text-primary" href="#">Supplier_Protocol</a>
+<a class="block text-slate-500 hover:text-primary" href="#">Material_Standards</a>
+</div>
+<div class="col-span-1 font-mono text-[10px] uppercase space-y-2">
+<div class="font-bold text-slate-900 mb-4">[ SUPPORT ]</div>
+<a class="block text-slate-500 hover:text-primary" href="#">Technical_Manuals</a>
+<a class="block text-slate-500 hover:text-primary" href="#">API_Documentation</a>
+<a class="block text-slate-500 hover:text-primary" href="#">Compliance_Audit</a>
+</div>
+<div class="col-span-1 font-mono text-[10px] uppercase">
+<div class="font-bold text-slate-900 mb-4">[ SYSTEM_STATUS ]</div>
+<div class="flex items-center gap-2 text-green-600 font-bold mb-2">
+<span class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></span>
+                        DB_CONNECTION_ONLINE
+                    </div>
+<div class="text-slate-400">SERVER: US-EAST-BRUTAL-01</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-slate-100 flex justify-between items-center font-mono text-[9px] text-slate-400 uppercase tracking-[0.3em]">
+<div>© 2024 BLADESYSTEM ENGINEERING GROUP // ALL_RIGHTS_RESERVED</div>
+<div class="flex gap-6">
+<a href="#">Privacy_Policy</a>
+<a href="#">System_Terms</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
