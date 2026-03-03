@@ -653,9 +653,10 @@ export const blades: Blade[] = [
     image: "/images/products/blades/tissue-log-saw-blades.webp",
     gallery: [
       "/images/products/blades/tissue-log-saw-blades.webp",
-      "/images/products/blades/tissue-log-saw-blades.webp",
-      "/images/products/blades/tissue-log-saw-blades.webp",
-      "/images/products/blades/tissue-log-saw-blades.webp",
+      "/images/products/blades/tissue-log-saw-blades-03.webp",
+      "/images/products/blades/tissue-log-saw-blades-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-01.webp",
+      "/images/products/blades/tissue-log-saw-blades-00.webp",
     ],
     description:
       "Premium Tissue Log Saw Blades for High-Speed Paper Converting",

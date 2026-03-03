@@ -1,188 +1,200 @@
 /**
- * BladeHero Component
- * Displays the product hero section for blade detail pages.
- * Mirrors ProductHero but uses the Blade type and blade-specific breadcrumbs.
+ * BladeHero — ZONE 1: CAD Viewport Hero.
+ * Accepts blade: Blade. Owns activeGalleryIndex state.
+ * Swiss Brutalist: border-2, font-mono eyebrow, font-black title, no dark mode.
  */
 
-import React, { useState } from "react";
+import { useState } from "react";
+import type { CSSProperties } from "react";
 import { Link } from "wouter";
-import { Blade } from "@/data/blades";
+import type { Blade } from "@/data/blades";
 
 interface BladeHeroProps {
   blade: Blade;
 }
 
-export default function BladeHero({ blade }: BladeHeroProps) {
-  const images = blade.gallery && blade.gallery.length > 0 ? blade.gallery : [blade.image];
-  const [activeIdx, setActiveIdx] = useState(0);
+const DOT_GRID_STYLE: CSSProperties = {
+  backgroundImage: "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
+  backgroundSize: "24px 24px",
+};
 
-  const prev = () => setActiveIdx((i) => (i - 1 + images.length) % images.length);
-  const next = () => setActiveIdx((i) => (i + 1) % images.length);
+export default function BladeHero({ blade }: BladeHeroProps) {
+  const [activeGalleryIndex, setActiveGalleryIndex] = useState(0);
+
+  // Gallery — up to 4 images; fall back to main image to fill empty slots
+  const galleryImages: string[] = Array.from(
+    { length: 4 },
+    (_, i) => blade.gallery?.[i] ?? blade.image,
+  );
+
+  // First 4 decisive specs for the hero ledger only
+  const heroSpecs = (blade.specs ?? []).slice(0, 4);
 
   return (
-    <>
-      {/* Top Hero Banner */}
-      <section className="relative w-full h-[320px] md:h-[400px] lg:h-[460px] overflow-hidden">
-        {/* Background Image */}
+    <section
+      aria-label={`${blade.fullName || blade.name} — product hero`}
+      className="border-2 border-[#001f4d] flex flex-col lg:flex-row overflow-hidden lg:max-h-[520px]"
+    >
+      {/* ── Left: CAD Viewport (60%) ─────────────────────────────────── */}
+      <div className="lg:w-[60%] flex flex-col border-b-2 lg:border-b-0 lg:border-r-2 border-[#001f4d] h-[300px] lg:h-auto overflow-hidden">
+
+        {/* Main image area */}
         <div
-          className="absolute inset-0 w-full h-full bg-center bg-cover"
-          style={{ backgroundImage: "url('/images/hero/product-hero.webp')" }}
-        />
-        {/* Overlays */}
-        <div className="absolute inset-0 bg-black/45 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/55 to-transparent z-10"></div>
+          className="flex-grow bg-slate-100 flex items-center justify-center relative overflow-hidden"
+          style={DOT_GRID_STYLE}
+        >
+          {/* Corner annotation — top-left */}
+          <div className="absolute top-4 left-4 font-mono text-[10px] text-slate-700 leading-snug z-10">
+            [ VIEW MODE: PRODUCT RENDER ]<br />
+            REF: {blade.id.toUpperCase()}
+          </div>
 
-        {/* Left-aligned content */}
-        <div className="relative z-20 h-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col justify-center">
-          <div className="max-w-2xl">
-            {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-5">
-              {blade.name}
-            </h1>
+          {/* Active blade image */}
+          <img
+            src={galleryImages[activeGalleryIndex]}
+            alt={blade.fullName || blade.name}
+            className="h-full w-full object-contain p-8 mix-blend-multiply transition-opacity duration-200"
+            loading="eager"
+            decoding="sync"
+          />
 
-            {/* Breadcrumbs */}
-            <nav className="flex items-center gap-2 text-xs md:text-sm font-medium mb-4 text-slate-300/80 uppercase tracking-wider">
-              <Link href="/">
-                <a className="hover:text-white transition-colors hover:underline">Home</a>
-              </Link>
-              <span className="text-slate-500">/</span>
-              <Link href="/products">
-                <a className="hover:text-white transition-colors hover:underline">Products</a>
-              </Link>
-              <span className="text-slate-500">/</span>
-              <Link href="/products/blades">
-                <a className="hover:text-white transition-colors hover:underline">Blades</a>
-              </Link>
-              <span className="text-slate-500">/</span>
-              <span className="text-white">{blade.categoryDisplay}</span>
-            </nav>
+          {/* Category tag — bottom-left */}
+          <div className="absolute bottom-4 left-4 z-10">
+            <span className="font-mono text-[10px] text-slate-700 uppercase tracking-widest">
+              {blade.categoryDisplay}
+            </span>
           </div>
         </div>
-      </section>
 
-      {/* Product Detail Section */}
-      <section className="relative flex flex-col lg:flex-row overflow-hidden bg-white dark:bg-slate-900 min-h-[560px] lg:min-h-[640px]">
-        {/* Left Side: Image Carousel */}
-        <div className="w-full lg:w-1/2 relative bg-white dark:bg-slate-900 flex flex-col items-center justify-center p-6 lg:p-10">
-          {/* Blueprint Grid Background */}
-          <div
-            className="absolute inset-0 pointer-events-none opacity-30"
-            style={{
-              backgroundSize: "40px 40px",
-              backgroundImage:
-                "linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px)",
-            }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/50 dark:to-black/20"></div>
+        {/* Engineering View Selector — thumbnail track */}
+        <div
+          className="shrink-0 h-[76px] border-t border-[#001f4d] bg-white grid grid-cols-4"
+          role="group"
+          aria-label="Gallery thumbnails"
+        >
+          {galleryImages.map((img, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setActiveGalleryIndex(i)}
+              aria-current={activeGalleryIndex === i ? "true" : undefined}
+              aria-label={`View ${i + 1} of ${galleryImages.length}`}
+              className={[
+                "relative cursor-pointer overflow-hidden bg-slate-50 h-full transition-all duration-200",
+                i < 3 ? "border-r border-slate-200" : "",
+                activeGalleryIndex === i
+                  ? "border-b-4 border-b-[#001f4d]"
+                  : "border-b-4 border-b-transparent hover:bg-slate-100",
+              ].join(" ")}
+            >
+              <span className="absolute top-1.5 left-1.5 font-mono text-[8px] text-slate-700 uppercase z-10 leading-none select-none">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <img
+                src={img}
+                alt={`View ${i + 1}`}
+                className={[
+                  "w-full h-full object-contain p-2 mix-blend-multiply transition-all duration-200",
+                  activeGalleryIndex === i
+                    ? ""
+                    : "grayscale opacity-60 hover:opacity-100 hover:grayscale-0",
+                ].join(" ")}
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          ))}
+        </div>
+      </div>
 
-          {/* Main Image */}
-          <div className="relative z-10 w-full flex items-center justify-center">
-            {/* Prev Button */}
-            {images.length > 1 && (
-              <button
-                onClick={prev}
-                className="absolute left-0 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-700/80 shadow hover:bg-white dark:hover:bg-slate-600 transition-colors"
-                aria-label="Previous image"
-              >
-                <svg className="w-5 h-5 text-slate-700 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-            )}
+      {/* ── Right: Spec Ledger (40%) ─────────────────────────────────── */}
+      <div className="lg:w-[40%] bg-white p-5 lg:p-6 flex flex-col justify-between">
+        <div>
+          {/* Document tag */}
+          <p className="font-mono text-[10px] font-bold text-[#003366] uppercase tracking-[0.2em] mb-2">
+            [ Product Specification Sheet ]
+          </p>
 
-            <img
-              key={activeIdx}
-              alt={`${blade.fullName} - image ${activeIdx + 1}`}
-              loading="eager"
-              className="w-full h-auto max-h-[340px] lg:max-h-[400px] object-contain drop-shadow-xl transition-opacity duration-300"
-              src={images[activeIdx]}
-              onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
-            />
+          {/* Product title */}
+          <h1 className="font-black text-3xl text-[#001f4d] uppercase leading-none tracking-tighter mb-2">
+            {blade.fullName || blade.name}
+          </h1>
 
-            {/* Next Button */}
-            {images.length > 1 && (
-              <button
-                onClick={next}
-                className="absolute right-0 z-20 p-2 rounded-full bg-white/80 dark:bg-slate-700/80 shadow hover:bg-white dark:hover:bg-slate-600 transition-colors"
-                aria-label="Next image"
-              >
-                <svg className="w-5 h-5 text-slate-700 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            )}
-          </div>
+          <p className="text-sm text-slate-600 leading-relaxed mb-2">
+            {blade.description}
+          </p>
 
-          {/* Thumbnails */}
-          {images.length > 1 && (
-            <div className="relative z-10 flex gap-2 mt-5 flex-wrap justify-center">
-              {images.map((img, i) => (
-                <button
+          {/* Feature tags */}
+          {blade.features && blade.features.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-2">
+              {blade.features.slice(0, 3).map((f, i) => (
+                <span
                   key={i}
-                  onClick={() => setActiveIdx(i)}
-                  className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 flex-shrink-0 ${
-                    i === activeIdx
-                      ? "border-[#003366] shadow-md scale-105"
-                      : "border-slate-200 dark:border-slate-600 hover:border-[#003366]/50 opacity-70 hover:opacity-100"
-                  }`}
+                  className="border border-slate-200 px-3 py-1 font-mono text-[10px] uppercase bg-slate-50 text-slate-600"
                 >
-                  <img
-                    src={img}
-                    alt={`Thumbnail ${i + 1}`}
-                    className="w-full h-full object-cover"
-                    onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
-                  />
-                </button>
+                  {f}
+                </span>
               ))}
             </div>
           )}
-        </div>
 
-        {/* Right Side: Product Information */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-14 lg:px-14 xl:px-20 relative z-10 bg-white dark:bg-slate-900 border-l border-slate-100 dark:border-white/5">
-          {/* Title */}
-          <div className="mb-6">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 dark:text-white tracking-tight leading-tight max-w-2xl">
-              {blade.name}
-            </h1>
-          </div>
-
-          {/* Description */}
-          <p className="text-md text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl mb-8 line-clamp-4">
-            {blade.fullDescription || blade.description}
-          </p>
-
-          {/* Dashboard Panel - Key Specs */}
-          {blade.specs && blade.specs.length > 0 && (
-            <div className="bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5 lg:p-6 mb-8 shadow-lg max-w-xl">
-              <div className="grid grid-cols-2 gap-y-6 gap-x-8">
-                {blade.specs.slice(0, 4).map((spec, index) => (
-                  <div
-                    key={index}
-                    className="relative pl-4 border-l-2 border-[#FF6600]/20 hover:border-[#FF6600] transition-colors"
-                  >
-                    <p className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">
-                      {spec.label}
-                    </p>
-                    <p className="text-xl lg:text-2xl font-black text-slate-900 dark:text-white">
-                      {spec.value}
-                    </p>
-                  </div>
-                ))}
+          {/* Decisive Specs table — max 4 rows */}
+          {heroSpecs.length > 0 && (
+            <div className="border border-slate-200 border-t-2 border-t-[#001f4d] mb-2">
+              <div className="px-4 py-1.5 border-b border-slate-100 bg-slate-50">
+                <p className="font-mono text-[10px] font-bold text-slate-700 uppercase tracking-widest text-center">
+                  [ Decisive Specifications ]
+                </p>
               </div>
+              <table className="w-full text-left border-collapse">
+                <tbody>
+                  {heroSpecs.map((spec, i) => (
+                    <tr key={i} className="border-b border-slate-100 last:border-b-0">
+                      <th
+                        scope="row"
+                        className="px-4 py-1.5 font-mono text-[10px] text-slate-700 uppercase tracking-widest font-normal"
+                      >
+                        {spec.label}
+                      </th>
+                      <td className="px-4 py-1.5 text-right text-sm font-black text-[#001f4d]">
+                        {spec.value}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
-
-          {/* Action Buttons */}
-          <div className="flex flex-col xl:flex-row items-stretch xl:items-center gap-3 mb-4">
-            <Link href="/contact">
-              <a className="inline-block w-full text-center px-18 py-4 bg-[#003366] text-white font-bold text-base rounded-lg hover:bg-[#FF6600] transition-colors duration-300">
-                Request Quote
-              </a>
-            </Link>
-          </div>
         </div>
-      </section>
-    </>
+
+        {/* Bottom strip: lead time + RFQ CTA */}
+        <div className="pt-3 border-t border-slate-100">
+          <div className="flex items-center justify-between mb-3">
+            <div className="font-mono">
+              <div className="text-[10px] text-slate-700 uppercase tracking-widest mb-0.5">Lead Time</div>
+              <div className="text-sm font-black text-[#001f4d] uppercase">
+                {blade.leadTime ?? "4 – 6 Weeks"}
+              </div>
+            </div>
+            {blade.isFeatured && (
+              <div className="font-mono text-right">
+                <div className="text-[10px] text-slate-700 uppercase tracking-widest mb-0.5">Status</div>
+                <div className="text-sm font-black text-[#001f4d] uppercase">■ Ready to Dispatch</div>
+              </div>
+            )}
+          </div>
+
+          {/* Primary RFQ CTA */}
+          <Link href="/contact">
+            <button
+              type="button"
+              className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm uppercase tracking-widest py-3 rounded-none transition-colors duration-200"
+            >
+              Request Engineering Quote
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }
