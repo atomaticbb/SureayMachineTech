@@ -18,7 +18,6 @@ import type {
   IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
-  OemStep,
   IndustryMaterial,
 } from "@/components/industry/types";
 
@@ -39,34 +38,34 @@ const HERO_DATA: IndustryHeroData = {
     "maintained throughout the full production run.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/metal-industry/hero.webp",               alt: "Metal coil slitting line"                      },
-    { src: "/images/applications/metal-industry/slitter-knives.webp",     alt: "Circular slitter knife set"                    },
-    { src: "/images/applications/metal-industry/shear-blades.webp",       alt: "Guillotine shear blade close-up"               },
-    { src: "/images/applications/metal-industry/steel-coil.webp",         alt: "Cold-rolled steel coil processing"             },
-    { src: "/images/applications/metal-industry/punch-die.webp",          alt: "Precision punch and die set"                   },
-    { src: "/images/applications/metal-industry/carbide-disc.webp",       alt: "Tungsten carbide slitter disc"                 },
-    { src: "/images/applications/metal-industry/cnc-grinding.webp",       alt: "5-axis CNC profile grinding"                   },
-    { src: "/images/applications/metal-industry/cmm-inspection.webp",     alt: "CMM dimensional verification"                  },
+    { src: "/images/applications/metal-industry/Raw%20Material%20Selection.webp",       alt: "Raw material selection for metal processing"    },
+    { src: "/images/applications/metal-industry/blades.webp",                            alt: "Industrial blades for metal processing"          },
+    { src: "/images/applications/metal-industry/hero.webp",                              alt: "Metal industry production hero scene"            },
+    { src: "/images/applications/metal-industry/single-shredder-blades-001-w1200.webp", alt: "Single shredder blades close-up"                   },
+    { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",       alt: "Shredder blade set for heavy-duty metal processing"       },
+    { src: "/images/applications/metal-industry/metal-slitter-knife.webp",               alt: "Metal slitter knife for precision cutting"          },
+    { src: "/images/applications/metal-industry/6-Wire%20Cut.webp",                      alt: "Wire-cut machining process detail"                  },
+    { src: "/images/applications/metal-industry/vacuum-heat-treatment.webp",              alt: "Vacuum heat treatment process"                     },
   ],
 };
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 const PRODUCTS: IndustryProduct[] = [
-  { category: "Slitter Knives", name: "Circular Slitter Knives",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: true,
+  { category: "Slitter Knives", name: "Circular Slitter Knives",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: true,
     desc: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out. Burr-free steel coil slitting." },
-  { category: "Slitter Knives", name: "Tungsten Carbide Slitter Discs", image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Slitter Knives", name: "Tungsten Carbide Slitter Discs", image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
     desc: "Submicron-grain TC slitter discs for stainless steel and abrasive strip materials. Extended tool life versus HSS." },
-  { category: "Slitter Knives", name: "HSS Slitter Knives",             image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Slitter Knives", name: "HSS Slitter Knives",             image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
     desc: "M2 HSS circular knives for mild steel and aluminium coil slitting. Cost-effective OEM-compatible geometry." },
-  { category: "Shear Blades",   name: "Guillotine Shear Blades",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Shear Blades",   name: "Guillotine Shear Blades",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
     desc: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate." },
-  { category: "Shear Blades",   name: "Flying Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Shear Blades",   name: "Flying Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
     desc: "High-speed flying shear tooling for continuous strip processing lines. Matched pairs ground to ±0.01 mm gap tolerance." },
-  { category: "Shear Blades",   name: "Rotary Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Shear Blades",   name: "Rotary Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
     desc: "OEM-specification rotary shear blades for coil-fed blanking and trimming operations." },
-  { category: "Punch Dies",     name: "Precision Punch & Die Sets",     image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Punch Dies",     name: "Precision Punch & Die Sets",     image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
     desc: "EDM-finished punch-and-die sets for high-volume stamping. Tungsten carbide and D2 tooling available." },
-  { category: "Punch Dies",     name: "Tungsten Carbide Insert Dies",   image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife", isFlagship: false,
+  { category: "Punch Dies",     name: "Tungsten Carbide Insert Dies",   image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
     desc: "TC insert dies for ultra-high-volume progressive stamping. OEM bore and flange geometry matched on CMM." },
 ];
 
@@ -91,14 +90,6 @@ const SPECS: IndustrySpec[] = [
   { label: "Material Grade",  mainValue: "SKH-51\\nTC Grade",      subtext: "OEM Grade Selection",   isTextual: true },
   { label: "Core Hardness",   mainValue: "62–66",    unit: "HRC", subtext: "Through-Hardened"       },
   { label: "Surface Finish",  mainValue: "Ra ≤ 0.4", unit: "μm",  subtext: "Ground & Lapped"        },
-];
-
-// ─── OEM Pipeline ─────────────────────────────────────────────────────────────
-const OEM_STEPS: OemStep[] = [
-  { step: "01", name: "Geometry Audit",        desc: "Reverse-engineering of OEM bore, keyway, side face, and run-out specifications.",      phaseKey: "PROTOCOL",  protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.23°N / 121.47°E" },
-  { step: "02", name: "5-Axis CNC Grinding",   desc: "Precision profile grinding and OD turning to exact run-out and diameter tolerances.",  phaseKey: "TOPOLOGY",  protocolVersion: "4.1", technicalTitle: "PROFILE GRINDING",      coords: "48.85°N / 002.35°E" },
-  { step: "03", name: "Vacuum Heat Treatment", desc: "In-house through-hardening cycle tailored for SKH-51 or Tungsten Carbide grades.",     phaseKey: "MACHINING", protocolVersion: "3.0", technicalTitle: "PRECISION HARDENING",   coords: "22.54°N / 114.06°E" },
-  { step: "04", name: "CMM Verification",      desc: "100% dimensional and run-out inspection on calibrated CMM before shipment.",           phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "35.68°N / 139.69°E" },
 ];
 
 // ─── Materials ─────────────────────────────────────────────────────────────────
@@ -128,7 +119,7 @@ export default function MetalIndustry() {
         <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
         <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}               />
         <IndustryMaterialFocus     materials={MATERIALS}                                  />
-        <IndustryOemPipeline       steps={OEM_STEPS}                                      />
+        <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />
       </div>

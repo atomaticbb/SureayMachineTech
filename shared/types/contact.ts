@@ -4,6 +4,7 @@ export interface ContactFormData {
   phone?: string;
   company?: string;
   message: string;
+  inquiryType?: string;
 }
 
 export interface ContactSubmissionResponse {

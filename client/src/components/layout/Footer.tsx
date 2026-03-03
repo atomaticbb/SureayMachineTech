@@ -18,7 +18,7 @@ export default function Footer() {
                   className="w-10 h-10 brightness-0 invert opacity-90"
                 />
                 <span className="text-base font-black text-white tracking-[0.08em] uppercase leading-none">
-                  SUREAY MACHINERY
+                  SUREAY KNIVES
                 </span>
               </div>
             </Link>
@@ -56,28 +56,33 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">
-                  All Products
+                <Link href="/products/blades/alloy-blades" className="hover:text-white transition-colors">
+                  Industrial Alloy Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/machinery" className="hover:text-white transition-colors">
-                  Sheet Metal Machinery
+                <Link href="/products/blades/rotary-cutter-blades" className="hover:text-white transition-colors">
+                  Rotary Cutter Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/molds" className="hover:text-white transition-colors">
-                  Press Brake Molds
+                <Link href="/products/blades/shredder-blades" className="hover:text-white transition-colors">
+                  Shredder Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades" className="hover:text-white transition-colors">
-                  Industrial Blades
+                <Link href="/products/blades/tissue-log-saw-blades" className="hover:text-white transition-colors">
+                  Tissue Log Saw Blades
                 </Link>
               </li>
               <li>
-                <Link href="/custom" className="hover:text-white transition-colors">
-                  Custom OEM / ODM
+                <Link href="/products/blades/granulator-blades" className="hover:text-white transition-colors">
+                  Granulator Blades
+                </Link>
+              </li>
+              <li>
+                <Link href="/products/blades/paper-cutting-blades" className="hover:text-white transition-colors">
+                  Paper Cutting Blades
                 </Link>
               </li>
             </ul>
@@ -126,7 +131,7 @@ export default function Footer() {
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.25em] text-slate-500 mb-1">Address</p>
                 <p className="leading-relaxed">
-                  Industrial Development Zone, Bowang Town,<br />
+                  Industrial Development Zone,<br />
                   Ma'anshan City, Anhui Province, China
                 </p>
               </div>
@@ -139,8 +144,8 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.25em] text-slate-500 mb-1">Email</p>
-                <a href="mailto:sales@sureaymachinery.com" className="hover:text-white transition-colors break-all">
-                  sales@sureaymachinery.com
+                <a href="mailto:info@sureaymachinery.com" className="hover:text-white transition-colors break-all">
+                  info@sureaymachinery.com
                 </a>
               </div>
             </div>

@@ -2,24 +2,20 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { HelmetProvider } from "react-helmet-async";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Switch, useLocation, Redirect } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import Products from "./pages/Products";
-import ProductCategory from "./pages/ProductCategory";
-import ProductDetail from "./pages/ProductDetail";
-import MachineListPage from "./pages/MachineListPage";
-import MachineDetail from "./pages/MachineDetail";
-import MoldListPage from "./pages/MoldListPage";
 import BladeListPage from "./pages/BladeListPage";
 import BladeDetail from "./pages/BladeDetail";
-import Custom from "./pages/Custom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Blogs from "./pages/Blogs";
+import News       from "./pages/News";
+import NewsDetail from "./pages/NewsDetail";
 import Admin from "./pages/Admin";
+import { usePageTracking } from "./hooks/usePageTracking";
+import CookieConsent from "./components/CookieConsent";
 import PlasticIndustry from "./pages/plastic-industry";
 import MetalIndustry   from "./pages/metal-industry";
 import PaperIndustry   from "./pages/paper-industry";
@@ -35,40 +31,39 @@ function ScrollToTop() {
 }
 
 function Router() {
+  usePageTracking();
   return (
     <>
       <ScrollToTop />
       <Switch>
-        <Route path={"/"} component={Home} />
-        <Route path={"/products"} component={Products} />
-        {/* Category routes - must come before slug route */}
-        <Route path={"/products/machinery"} component={MachineListPage} />
-        <Route path={"/products/machinery/:id"} component={MachineDetail} />
-        <Route path={"/products/molds"} component={MoldListPage} />
-        <Route path={"/products/blades"} component={BladeListPage} />
-        <Route path={"/products/blades/:id"} component={BladeDetail} />
-        {/* Product detail route - must come after category routes */}
-        <Route path={"/products/:slug"} component={ProductDetail} />
-        <Route path={"/custom"} component={Custom} />
-        <Route path={"/about"} component={About} />
-        <Route path={"/contact"} component={Contact} />
-        <Route path={"/industry/plastics-recycling"} component={PlasticIndustry} />
-        <Route path={"/industry/metal-processing"}  component={MetalIndustry}   />
-        <Route path={"/industry/paper-tissue"}      component={PaperIndustry}   />
-        <Route path={"/news"} component={Blogs} />
-        <Route path={"/admin"} component={Admin} />
-        <Route path={"/404"} component={NotFound} />
-        {/* Final fallback route */}
+        <Route path="/" component={Home} />
+
+        {/* Products — blade-only architecture */}
+        <Route path="/products">
+          <Redirect to="/products/blades" />
+        </Route>
+        <Route path="/products/blades" component={BladeListPage} />
+        <Route path="/products/blades/:id" component={BladeDetail} />
+
+        {/* Industry verticals */}
+        <Route path="/industry/plastics-recycling" component={PlasticIndustry} />
+        <Route path="/industry/metal-processing"   component={MetalIndustry}   />
+        <Route path="/industry/paper-tissue"       component={PaperIndustry}   />
+
+        {/* Static pages */}
+        <Route path="/about"   component={About}   />
+        <Route path="/contact" component={Contact} />
+        <Route path="/news"      component={News}       />
+        <Route path="/news/:id"  component={NewsDetail} />
+        <Route path="/admin"   component={Admin}   />
+
+        {/* 404 */}
+        <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
     </>
   );
 }
-
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
   return (
@@ -78,6 +73,7 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Router />
+            <CookieConsent />
           </TooltipProvider>
         </ThemeProvider>
       </ErrorBoundary>

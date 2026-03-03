@@ -2,17 +2,19 @@
  * IndustryOemPipeline — Module 4
  * Live operational interface. bg-[#001f4d] blueprint grid.
  * GPU-offloaded pulsing logic-line rail via will-change.
- * Data sourced entirely from OemStep[] prop — no hardcoded metadata.
+ * Steps hardcoded — standard 4-phase OEM engineering protocol.
  */
 
-import type { OemStep } from "./types";
 import { MONO } from "./types";
 
-interface Props {
-  steps: OemStep[];
-}
+const STEPS = [
+  { step: "01", phaseKey: "INTAKE",    protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.56°N / 118.47°E", name: "Requirement Analysis",  desc: "Application audit and original blade specification reverse-engineering to capture exact geometry, steel grade, and tolerance requirements." },
+  { step: "02", phaseKey: "DESIGN",    protocolVersion: "3.1", technicalTitle: "CAD TOPOLOGY",          coords: "31.56°N / 118.47°E", name: "Material & CAD Design", desc: "Steel grade selection, heat treatment specification, and 5-axis CNC toolpath generation against confirmed blueprint data." },
+  { step: "03", phaseKey: "MACHINING", protocolVersion: "4.0", technicalTitle: "PRECISION MANUFACTURE", coords: "31.56°N / 118.47°E", name: "Manufacture & Harden",  desc: "5-axis CNC precision milling followed by in-house vacuum heat treatment to achieve target hardness and core toughness." },
+  { step: "04", phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "31.56°N / 118.47°E", name: "CMM Inspection & Ship", desc: "100% dimensional verification on CMM stations. Hardness report, material certificate, and dimensional data sheet shipped with every order." },
+];
 
-export default function IndustryOemPipeline({ steps }: Props) {
+export default function IndustryOemPipeline() {
   return (
     <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-20 lg:py-28 relative overflow-hidden">
 
@@ -79,7 +81,7 @@ export default function IndustryOemPipeline({ steps }: Props) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-[#0a2d6e]">
-            {steps.map((item, i) => {
+            {STEPS.map((item, i) => {
               const pingDelay = `${i * 0.6}s`;
               return (
                 <div

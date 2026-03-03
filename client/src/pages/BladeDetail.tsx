@@ -18,7 +18,6 @@ import PageMeta from "@/components/common/PageMeta";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
-import type { OemStep } from "@/components/industry/types";
 
 import { getBladeById, getRelatedBlades } from "@/data/blades";
 
@@ -28,15 +27,6 @@ import TrustProtocol from "@/components/product-detail/TrustProtocol";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
-
-// ── OEM pipeline steps ────────────────────────────────────────────────────────
-
-const OEM_STEPS: OemStep[] = [
-  { step: "01", name: "CAD/CAM Analysis",      desc: "Reverse engineering and blueprint verification.",               phaseKey: "PROTOCOL",  protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.23°N / 121.47°E" },
-  { step: "02", name: "5-Axis CNC Machining",  desc: "Precision milling to exact OEM bore/keyway specs.",           phaseKey: "TOPOLOGY",  protocolVersion: "4.1", technicalTitle: "CAD TOPOLOGY",          coords: "48.85°N / 002.35°E" },
-  { step: "03", name: "Vacuum Heat Treatment", desc: "In-house hardening for optimal core toughness.",               phaseKey: "MACHINING", protocolVersion: "3.0", technicalTitle: "PRECISION MANUFACTURE", coords: "22.54°N / 114.06°E" },
-  { step: "04", name: "CMM Verification",      desc: "100% dimensional inspection before shipping.",                 phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "35.68°N / 139.69°E" },
-];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -122,7 +112,7 @@ export default function BladeDetail() {
         <ComprehensiveData blade={blade} />
 
         {/* Zone 5 — Industry OEM Pipeline */}
-        <IndustryOemPipeline steps={OEM_STEPS} />
+        <IndustryOemPipeline />
 
         {/* Zone 6 — Compatible Tooling */}
         <CompatibleTooling blades={relatedBlades} />

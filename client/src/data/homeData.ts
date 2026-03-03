@@ -29,7 +29,7 @@ export const ECOSYSTEMS = [
       { label: "Applications", value: "Granulators, Single-shaft shredders, Pelletizer heads, Screen changers" },
       { label: "Surface",      value: "Ra ≤ 0.8 μm (standard) · Ra ≤ 0.4 μm (mirror, on request)" },
     ],
-    href: "/products?pillar=plastics",
+    href: "/industry/plastics-recycling",
     image: "/images/applications/Plastic-Waste-Recycling.webp",
   },
   {
@@ -43,7 +43,7 @@ export const ECOSYSTEMS = [
       { label: "Applications", value: "Slitting lines, Flying shear, Guillotine cutters, Rotary shear" },
       { label: "Hardness",     value: "58–64 HRC (vacuum heat treated, deformation < 0.01 mm)" },
     ],
-    href: "/products?pillar=metal",
+    href: "/industry/metal-processing",
     image: "/images/applications/Metal-Waste-Recycling.webp",
   },
   {
@@ -57,19 +57,19 @@ export const ECOSYSTEMS = [
       { label: "Applications", value: "Log saws, Rewinders, Slitter-rewinders, Embossing rolls" },
       { label: "Surface",      value: "Ra ≤ 0.4 μm mirror polish — cutting edge radius < 5 μm" },
     ],
-    href: "/products?pillar=paper",
-    image: "/images/hero/blades-hero-04.webp",
+    href: "/industry/paper-tissue",
+    image: "/images/applications/tissue-and-paper.webp",
   },
 ];
 
 // ─── Featured Products ────────────────────────────────────────────────────────
 export const FEATURED_PRODUCTS = [
-  { name: "Tissue Log-Saw Blade",    image: "/images/products/blades/tissue-log-saw-blades.webp",         href: "/products" },
-  { name: "Circular Slitter Blade",  image: "/images/products/blades/11-2-2_circular-blade_01.webp",      href: "/products" },
-  { name: "Metal Shear Blade",       image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",   href: "/products" },
-  { name: "Metal Slitter Knife",     image: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp", href: "/products" },
-  { name: "Granulator Rotor",        image: "/images/products/Granulator-T1-01.webp",                     href: "/products" },
-  { name: "Heavy Slitter Knife",     image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp", href: "/products" },
+  { name: "Tissue Log-Saw Blade",    image: "/images/products/blades/tissue-log-saw-blades.webp",         href: "/products/blades/tissue-log-saw-blades" },
+  { name: "Circular Slitter Blade",  image: "/images/products/blades/11-2-2_circular-blade_01.webp",      href: "/products/blades/alloy-blades" },
+  { name: "Metal Shear Blade",       image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",   href: "/products/blades/shredder-blades" },
+  { name: "Metal Slitter Knife",     image: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp", href: "/products/blades/rotary-cutter-blades" },
+  { name: "Granulator Rotor",        image: "/images/products/Granulator-T1-01.webp",                     href: "/products/blades/granulator-blades" },
+  { name: "Heavy Slitter Knife",     image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp", href: "/products/blades/paper-cutting-blades" },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────

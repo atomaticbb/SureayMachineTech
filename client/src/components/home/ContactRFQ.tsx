@@ -1,4 +1,46 @@
+import { useState } from "react";
+
 export default function ContactRFQ() {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading,   setLoading]   = useState(false);
+  const [error,     setError]     = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    const fd = new FormData(e.currentTarget);
+    const inquiryType  = fd.get("inquiryType") as string;
+    const requirements = fd.get("message")     as string;
+
+    const body = {
+      name:    fd.get("name")  as string,
+      email:   fd.get("email") as string,
+      phone:   (fd.get("phone") as string) || undefined,
+      message: inquiryType ? `[${inquiryType}] ${requirements}` : requirements,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method:  "POST",
+        headers: { "Content-Type": "application/json" },
+        body:    JSON.stringify(body),
+      });
+
+      if (!res.ok) {
+        const json = await res.json().catch(() => ({}));
+        throw new Error(json.message || "Submission failed. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <section className="py-20 lg:py-24 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -104,82 +146,119 @@ export default function ContactRFQ() {
               <h3 className="font-black text-xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Request a Quote</h3>
               <p className="text-xs text-slate-500 mb-6">Our engineering team responds within 24 hours.</p>
 
-              <form className="flex-1 flex flex-col gap-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="John Doe"
-                      className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
-                      required
-                    />
+              {submitted ? (
+                /* ── Success state ─────────────────────────────────────── */
+                <div className="flex-1 flex flex-col items-center justify-center gap-5 py-10 text-center">
+                  <div className="w-14 h-14 bg-[#003366] flex items-center justify-center flex-shrink-0">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                    </svg>
                   </div>
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                      Company Email *
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="john@company.com"
-                      className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
-                      required
-                    />
+                    <p className="font-black text-[11px] text-[#003366] uppercase tracking-[0.25em] mb-2">
+                      RFQ Received
+                    </p>
+                    <p className="font-black text-2xl text-[#001f4d] uppercase tracking-tight leading-tight mb-3">
+                      Thank You.
+                    </p>
+                    <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
+                      Our engineering team will review your requirements and respond within <strong className="text-[#003366]">24 hours</strong>.
+                    </p>
+                  </div>
+                  <div className="w-full border-t border-slate-100 pt-5">
+                    <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.25em]">
+                      ■ ISO 9001:2015 · CMM VERIFIED · OEM GRADE
+                    </p>
                   </div>
                 </div>
+              ) : (
+                /* ── Form ──────────────────────────────────────────────── */
+                <form onSubmit={handleSubmit} className="flex-1 flex flex-col gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                        Your Name *
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="John Doe"
+                        className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                        Company Email *
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="john@company.com"
+                        className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
+                        required
+                      />
+                    </div>
+                  </div>
 
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Inquiry Type
-                  </label>
-                  <select
-                    className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm text-slate-700 focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all bg-white appearance-none"
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Inquiry Type
+                    </label>
+                    <select
+                      name="inquiryType"
+                      className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm text-slate-700 focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all bg-white appearance-none"
+                    >
+                      <option value="">Select inquiry type...</option>
+                      <option value="Custom Blade / Knife Order">Custom Blade / Knife Order</option>
+                      <option value="Plastic Recycling Equipment">Plastic Recycling Equipment</option>
+                      <option value="OEM / ODM Manufacturing">OEM / ODM Manufacturing</option>
+                      <option value="Repair & Re-grinding Service">Repair &amp; Re-grinding Service</option>
+                      <option value="Technical Consultation">Technical Consultation</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Phone / WhatsApp
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="+1 (555) 000-0000"
+                      className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
+                    />
+                  </div>
+
+                  <div className="flex-1">
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      Requirements *
+                    </label>
+                    <textarea
+                      rows={3}
+                      name="message"
+                      placeholder="Describe your blade specifications, quantities, dimensions, materials, or application..."
+                      className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
+                      required
+                    />
+                  </div>
+
+                  {error && (
+                    <p className="text-xs font-bold text-red-600 uppercase tracking-wide border border-red-200 bg-red-50 px-3 py-2">
+                      ✕ {error}
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full bg-[#003366] hover:bg-[#001f4d] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md hover:shadow-lg"
                   >
-                    <option value="">Select inquiry type...</option>
-                    <option value="custom-blade">Custom Blade / Knife Order</option>
-                    <option value="recycling-equipment">Plastic Recycling Equipment</option>
-                    <option value="oem-odm">OEM / ODM Manufacturing</option>
-                    <option value="repair-regrind">Repair &amp; Re-grinding Service</option>
-                    <option value="technical-consultation">Technical Consultation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Phone / WhatsApp
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="+1 (555) 000-0000"
-                    className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
-                  />
-                </div>
-
-                <div className="flex-1">
-                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Requirements *
-                  </label>
-                  <textarea
-                    rows={3}
-                    placeholder="Describe your blade specifications, quantities, dimensions, materials, or application..."
-                    className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
-                    required
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#003366] hover:bg-[#001f4d] text-white py-3.5 font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md hover:shadow-lg"
-                >
-                  Submit RFQ for Engineering Review
-                </button>
-                <p className="text-center text-[11px] text-slate-400 leading-relaxed mt-3">
-                  🔒 ISO 9001:2015 Certified Manufacturing. Non-Disclosure Agreements (NDA) available upon request.
-                </p>
-              </form>
+                    {loading ? "Sending…" : "Submit RFQ for Engineering Review"}
+                  </button>
+                </form>
+              )}
             </div>
 
           </div>

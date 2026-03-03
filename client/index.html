@@ -19,6 +19,35 @@
       rel="stylesheet"
     />
 
+    <!-- Google Analytics 4 — Consent Mode v2 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDTDXJNB51"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // ── Step 1: Privacy by default — all signals denied ─────────────────
+      gtag('consent', 'default', {
+        analytics_storage:  'denied',
+        ad_storage:         'denied',
+        ad_user_data:       'denied',
+        ad_personalization: 'denied',
+      });
+
+      // ── Step 2: Restore granted consent from a previous visit ────────────
+      // Runs before React mounts so the very first page_view is tracked correctly.
+      if (localStorage.getItem('sureay_cookie_v2') === 'granted') {
+        gtag('consent', 'update', {
+          analytics_storage:  'granted',
+          ad_storage:         'granted',
+          ad_user_data:       'granted',
+          ad_personalization: 'granted',
+        });
+      }
+
+      gtag('config', 'G-NDTDXJNB51', { send_page_view: false });
+    </script>
+
     <!-- Schema.org JSON-LD for Manufacturing Business -->
     <script type="application/ld+json">
     {

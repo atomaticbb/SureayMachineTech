@@ -1,12 +1,18 @@
 /*
- * MegaMenu.tsx — Reusable Swiss Brutalist 3-column Mega Menu
- * Renders either a "Products" or "Industry" dropdown from passed data.
- * Zero rounded corners · Deep Navy palette · Framer Motion transitions.
+ * MegaMenu.tsx — Swiss Brutalist 3-Column Mega Menu
+ *
+ * Data is derived from blades.ts (SSOT) via two adapters:
+ *   PRODUCTS_MENU_DATA  — "Tooling Specialist" persona, grouped by blade-type family
+ *   INDUSTRY_MENU_DATA  — "Solution Seeker" persona, grouped by application sector
+ *
+ * Layout: 20% index | 55% matrix | 25% authority viewport
+ * Zero rounded corners · Deep Navy (#001f4d) active states
  */
 
 import { useState } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
+import { blades, type BladeCategoryType } from "../../data/blades";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -20,9 +26,10 @@ export interface MegaItem {
 
 export interface MegaFeatured {
   coverImage: string;
-  subtitle:   string;  // "ACTIVE CATEGORY" | "ACTIVE INDUSTRY"
+  tagline:    string;   // e.g. "PREMIUM GRADE STEEL"
+  subtitle:   string;   // "ACTIVE CATEGORY" | "ACTIVE INDUSTRY"
   title:      string;
-  ctaText:    string;  // "VIEW ALL SOLUTIONS" | "EXPLORE INDUSTRY PAGE"
+  ctaText:    string;
   ctaHref:    string;
 }
 
@@ -34,116 +41,89 @@ export interface MegaCategory {
 }
 
 export interface MegaMenuData {
-  columnLabel:    string;  // "CATEGORIES" | "INDUSTRIES"
-  bottomLinkText: string;  // "→ ALL PRODUCTS" | "→ BROWSE ALL TOOLING"
+  columnLabel:    string;
+  bottomLinkText: string;
   bottomLinkHref: string;
   categories:     MegaCategory[];
 }
 
-// ── Mock Datasets ──────────────────────────────────────────────────────────────
+// ── Data Adapter ───────────────────────────────────────────────────────────────
+
+// Short REF codes for the product matrix cards
+const REF_CODE: Record<BladeCategoryType, string> = {
+  alloy_blades:         "ALY",
+  rotary_blades:        "RCB",
+  shredder_blades:      "SHR",
+  tissue_paper_blades:  "TLS",
+  granulator_blades:    "GRN",
+  paper_cutting_blades: "PCB",
+  other_blades:         "OTH",
+};
+
+const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
+  id:      b.id,
+  name:    b.name,
+  refCode: `${REF_CODE[b.category] ?? "BLD"}-${String(seq).padStart(3, "0")}`,
+  image:   b.image,
+  href:    `/products/blades/${b.id}`,
+});
+
+// ── PRODUCTS Data — grouped by blade-type family ───────────────────────────────
 
 export const PRODUCTS_MENU_DATA: MegaMenuData = {
-  columnLabel:    "CATEGORIES",
-  bottomLinkText: "→ ALL PRODUCTS",
-  bottomLinkHref: "/products",
+  columnLabel:    "PRODUCT TYPES",
+  bottomLinkText: "→ VIEW ALL BLADES",
+  bottomLinkHref: "/products/blades",
   categories: [
     {
-      id: "shredder",
-      title: "SHREDDER BLADES",
+      id:    "cutting",
+      title: "CUTTING BLADES",
       featured: {
-        coverImage: "/images/applications/plastic-industry/single-shredder-blades-001-w1200.webp",
+        coverImage: "/images/products/blades/11-2-2_circular-blade_01.webp",
+        tagline:    "PREMIUM GRADE STEEL",
         subtitle:   "ACTIVE CATEGORY",
-        title:      "SHREDDER BLADES",
-        ctaText:    "VIEW ALL SOLUTIONS",
+        title:      "CUTTING BLADES",
+        ctaText:    "EXPLORE CUTTING BLADES",
         ctaHref:    "/products/blades",
       },
-      items: [
-        { id: "shr-01", refCode: "SHR-01", name: "Single-Shaft Shredder Blades",    image: "/images/applications/plastic-industry/single-shredder-blades-001-w1200.webp", href: "/products/blades" },
-        { id: "shr-02", refCode: "SHR-02", name: "Twin-Shaft Shredder Knives",      image: "/images/applications/plastic-industry/single-shredder-blades-010.webp",        href: "/products/blades" },
-        { id: "shr-03", refCode: "SHR-03", name: "Heavy-Duty Granulator Knives",    image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "grn-01", refCode: "GRN-01", name: "Granulator Rotor Knives",         image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "grn-02", refCode: "GRN-02", name: "Granulator Bed Knives",           image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "plz-01", refCode: "PLZ-01", name: "Strand Pelletizer Cutter Blades", image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-      ],
+      items: blades
+        .filter(b => b.category === "alloy_blades" || b.category === "rotary_blades")
+        .map(bladeToItem),
     },
     {
-      id: "metal",
-      title: "METAL SLITTER KNIVES",
+      id:    "shredding",
+      title: "SHREDDING & GRANULATING",
       featured: {
-        coverImage: "/images/applications/metal-industry/slitter-knives.webp",
+        coverImage: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
+        tagline:    "MAX IMPACT RESISTANCE",
         subtitle:   "ACTIVE CATEGORY",
-        title:      "METAL SLITTER KNIVES",
-        ctaText:    "VIEW ALL SOLUTIONS",
+        title:      "SHREDDING & GRANULATING",
+        ctaText:    "EXPLORE SHREDDER BLADES",
         ctaHref:    "/products/blades",
       },
-      items: [
-        { id: "slt-01", refCode: "SLT-01", name: "Circular Slitter Knives",         image: "/images/products/blades/11-6-2_metal-slitter-knife.webp",  href: "/products/blades/metal-slitter-knife" },
-        { id: "slt-02", refCode: "SLT-02", name: "Tungsten Carbide Slitter Discs",  image: "/images/products/blades/11-6-2_metal-slitter-knife.webp",  href: "/products/blades/metal-slitter-knife" },
-        { id: "slt-03", refCode: "SLT-03", name: "HSS Slitter Knives",              image: "/images/products/blades/11-6-2_metal-slitter-knife.webp",  href: "/products/blades/metal-slitter-knife" },
-        { id: "shr-04", refCode: "SHR-04", name: "Guillotine Shear Blades",         image: "/images/applications/metal-industry/shear-blades.webp",    href: "/products/blades/metal-slitter-knife" },
-        { id: "shr-05", refCode: "SHR-05", name: "Flying Shear Blades",             image: "/images/applications/metal-industry/shear-blades.webp",    href: "/products/blades/metal-slitter-knife" },
-        { id: "die-01", refCode: "DIE-01", name: "Precision Punch & Die Sets",      image: "/images/applications/metal-industry/punch-die.webp",        href: "/products/blades/metal-slitter-knife" },
-      ],
+      items: blades
+        .filter(b => b.category === "shredder_blades" || b.category === "granulator_blades")
+        .map(bladeToItem),
     },
     {
-      id: "tissue",
-      title: "LOG SAW & TISSUE",
+      id:    "paper",
+      title: "PAPER CONVERTING",
       featured: {
-        coverImage: "/images/applications/paper-industry/log-saw-blade.webp",
+        coverImage: "/images/products/blades/tissue-log-saw-blades.webp",
+        tagline:    "ZERO DUST. BURR-FREE.",
         subtitle:   "ACTIVE CATEGORY",
-        title:      "LOG SAW & TISSUE",
-        ctaText:    "VIEW ALL SOLUTIONS",
+        title:      "PAPER CONVERTING",
+        ctaText:    "EXPLORE PAPER BLADES",
         ctaHref:    "/products/blades",
       },
-      items: [
-        { id: "log-01", refCode: "LOG-01", name: "Tissue Log Saw Blades",           image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "log-02", refCode: "LOG-02", name: "Napkin Paper Log Saw Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "log-03", refCode: "LOG-03", name: "TTB / TTBF Log Saw Blades",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "rwd-01", refCode: "RWD-01", name: "Surface Rewinder Knives",         image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "rwd-02", refCode: "RWD-02", name: "Rewinder Perforation Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "slt-04", refCode: "SLT-04", name: "Crush-Cut Slitting Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-      ],
-    },
-    {
-      id: "machinery",
-      title: "SHEET METAL MACHINERY",
-      featured: {
-        coverImage: "/images/applications/metal-industry/cnc-grinding.webp",
-        subtitle:   "ACTIVE CATEGORY",
-        title:      "SHEET METAL MACHINERY",
-        ctaText:    "VIEW ALL SOLUTIONS",
-        ctaHref:    "/products/machinery",
-      },
-      items: [
-        { id: "mch-01", refCode: "MCH-01", name: "CNC Press Brake Machines",        image: "/images/products/machinery/press-brake.webp",      href: "/products/machinery" },
-        { id: "mch-02", refCode: "MCH-02", name: "Hydraulic Sheet Metal Shears",    image: "/images/products/machinery/hydraulic-shear.webp",  href: "/products/machinery" },
-        { id: "mch-03", refCode: "MCH-03", name: "Plate Rolling Machines",          image: "/images/products/machinery/plate-roll.webp",       href: "/products/machinery" },
-        { id: "mch-04", refCode: "MCH-04", name: "Panel Bending Machines",          image: "/images/products/machinery/panel-bender.webp",     href: "/products/machinery" },
-        { id: "mch-05", refCode: "MCH-05", name: "Laser Cutting Systems",           image: "/images/products/machinery/laser-cutting.webp",    href: "/products/machinery" },
-        { id: "mch-06", refCode: "MCH-06", name: "Decoiler Straightener Feeders",   image: "/images/products/machinery/decoiler.webp",         href: "/products/machinery" },
-      ],
-    },
-    {
-      id: "molds",
-      title: "PRESS BRAKE MOLDS",
-      featured: {
-        coverImage: "/images/applications/metal-industry/punch-die.webp",
-        subtitle:   "ACTIVE CATEGORY",
-        title:      "PRESS BRAKE MOLDS",
-        ctaText:    "VIEW ALL SOLUTIONS",
-        ctaHref:    "/products/molds",
-      },
-      items: [
-        { id: "mld-01", refCode: "MLD-01", name: "European Precision Punches",      image: "/images/products/molds/euro-punch.webp",       href: "/products/molds" },
-        { id: "mld-02", refCode: "MLD-02", name: "American Style Tooling",          image: "/images/products/molds/american-tooling.webp", href: "/products/molds" },
-        { id: "mld-03", refCode: "MLD-03", name: "Acute Angle Dies (20°–30°)",      image: "/images/products/molds/acute-die.webp",        href: "/products/molds" },
-        { id: "mld-04", refCode: "MLD-04", name: "Gooseneck Punch Sets",            image: "/images/products/molds/gooseneck.webp",        href: "/products/molds" },
-        { id: "mld-05", refCode: "MLD-05", name: "Deflection Compensated Dies",     image: "/images/products/molds/compensated-die.webp",  href: "/products/molds" },
-        { id: "mld-06", refCode: "MLD-06", name: "OEM Custom Tooling Profiles",     image: "/images/products/molds/custom-tooling.webp",   href: "/products/molds" },
-      ],
+      items: blades
+        .filter(b => b.category === "tissue_paper_blades" || b.category === "paper_cutting_blades")
+        .map(bladeToItem),
     },
   ],
 };
+
+// ── INDUSTRY Data — grouped by application sector ─────────────────────────────
 
 export const INDUSTRY_MENU_DATA: MegaMenuData = {
   columnLabel:    "INDUSTRIES",
@@ -151,80 +131,51 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
   bottomLinkHref: "/products/blades",
   categories: [
     {
-      id: "plastics",
+      id:    "recycling",
       title: "PLASTICS RECYCLING",
       featured: {
-        coverImage: "/images/applications/plastic-industry/hero.webp",
+        coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
+        tagline:    "TACKLING EXTREME ABRASION",
         subtitle:   "ACTIVE INDUSTRY",
         title:      "PLASTICS RECYCLING",
-        ctaText:    "EXPLORE INDUSTRY PAGE",
+        ctaText:    "VIEW SECTOR SOLUTIONS",
         ctaHref:    "/industry/plastics-recycling",
       },
-      items: [
-        { id: "plr-01", refCode: "PLR-01", name: "Single-Shaft Shredder Blades",    image: "/images/applications/plastic-industry/single-shredder-blades-001-w1200.webp", href: "/products/blades" },
-        { id: "plr-02", refCode: "PLR-02", name: "Twin-Shaft Shredder Knives",      image: "/images/applications/plastic-industry/single-shredder-blades-010.webp",        href: "/products/blades" },
-        { id: "plr-03", refCode: "PLR-03", name: "Granulator Rotor Knives",         image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "plr-04", refCode: "PLR-04", name: "Granulator Bed Knives",           image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "plr-05", refCode: "PLR-05", name: "Underwater Pelletizer Hob Cuts",  image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-        { id: "plr-06", refCode: "PLR-06", name: "Strand Pelletizer Cutter Blades", image: "/images/applications/plastic-industry/blades.webp",                             href: "/products/blades" },
-      ],
+      items: blades
+        .filter(b => b.sector === "recycling")
+        .map(bladeToItem),
     },
     {
-      id: "metal",
-      title: "METAL PROCESSING",
-      featured: {
-        coverImage: "/images/applications/metal-industry/hero.webp",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "METAL PROCESSING",
-        ctaText:    "EXPLORE INDUSTRY PAGE",
-        ctaHref:    "/industry/metal-processing",
-      },
-      items: [
-        { id: "met-01", refCode: "MET-01", name: "Circular Slitter Knives",         image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife" },
-        { id: "met-02", refCode: "MET-02", name: "Tungsten Carbide Slitter Discs",  image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife" },
-        { id: "met-03", refCode: "MET-03", name: "HSS Slitter Knives",              image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/metal-slitter-knife" },
-        { id: "met-04", refCode: "MET-04", name: "Guillotine Shear Blades",         image: "/images/applications/metal-industry/shear-blades.webp",   href: "/products/blades/metal-slitter-knife" },
-        { id: "met-05", refCode: "MET-05", name: "Flying Shear Blades",             image: "/images/applications/metal-industry/shear-blades.webp",   href: "/products/blades/metal-slitter-knife" },
-        { id: "met-06", refCode: "MET-06", name: "Precision Punch & Die Sets",      image: "/images/applications/metal-industry/punch-die.webp",      href: "/products/blades/metal-slitter-knife" },
-      ],
-    },
-    {
-      id: "paper",
+      id:    "paper",
       title: "PAPER & TISSUE",
       featured: {
-        coverImage: "/images/applications/paper-industry/hero.webp",
+        coverImage: "/images/applications/tissue-and-paper.webp",
+        tagline:    "PROCESSING HIGH-SPEED LINES",
         subtitle:   "ACTIVE INDUSTRY",
         title:      "PAPER & TISSUE",
-        ctaText:    "EXPLORE INDUSTRY PAGE",
+        ctaText:    "VIEW SECTOR SOLUTIONS",
         ctaHref:    "/industry/paper-tissue",
       },
-      items: [
-        { id: "pap-01", refCode: "PAP-01", name: "Tissue Log Saw Blades",           image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "pap-02", refCode: "PAP-02", name: "Napkin Paper Log Saw Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "pap-03", refCode: "PAP-03", name: "TTB / TTBF Log Saw Blades",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "pap-04", refCode: "PAP-04", name: "Surface Rewinder Knives",         image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "pap-05", refCode: "PAP-05", name: "Rewinder Perforation Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-        { id: "pap-06", refCode: "PAP-06", name: "Crush-Cut Slitting Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades" },
-      ],
+      items: blades
+        .filter(b => b.sector === "paper")
+        .map(bladeToItem),
+    },
+    {
+      id:    "converting",
+      title: "METAL & FILM CONVERTING",
+      featured: {
+        coverImage: "/images/applications/Metal-Waste-Recycling.webp",
+        tagline:    "±0.002 mm TOLERANCE",
+        subtitle:   "ACTIVE INDUSTRY",
+        title:      "METAL & FILM CONVERTING",
+        ctaText:    "VIEW SECTOR SOLUTIONS",
+        ctaHref:    "/industry/metal-processing",
+      },
+      items: blades
+        .filter(b => b.sector === "converting")
+        .map(bladeToItem),
     },
   ],
-};
-
-// ── Animation Variants ─────────────────────────────────────────────────────────
-
-const GRID_VARIANTS = {
-  enter:  { opacity: 0, y: 10 },
-  center: {
-    opacity: 1, y: 0,
-    transition: { type: "spring" as const, stiffness: 500, damping: 45 },
-  },
-  exit:   { opacity: 0, y: -6, transition: { duration: 0.1, ease: "easeIn" } },
-};
-
-const FEATURED_VARIANTS = {
-  enter:  { opacity: 0 },
-  center: { opacity: 1, transition: { duration: 0.2, ease: "easeOut" } },
-  exit:   { opacity: 0, transition: { duration: 0.1 } },
 };
 
 // ── Component ──────────────────────────────────────────────────────────────────
@@ -253,16 +204,16 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
         />
       </AnimatePresence>
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 flex py-7">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 flex py-7 gap-0">
 
-        {/* ── Column 1: Category Index (20%) ───────────────────────────── */}
+        {/* ── Column 1: Category Index (20%) ────────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col">
 
           <p className="font-mono text-[9px] text-slate-300 uppercase tracking-[0.2em] mb-4 pl-4">
             {data.columnLabel}
           </p>
 
-          <div className="flex-1">
+          <nav className="flex-1">
             {data.categories.map((cat) => {
               const isActive = cat.id === activeId;
               return (
@@ -270,7 +221,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                   <div
                     onMouseEnter={() => setActiveId(cat.id)}
                     onClick={onClose}
-                    className={`w-full text-left py-3 pl-4 border-l-2 text-[11px] font-bold tracking-widest uppercase transition-all duration-150 cursor-pointer ${
+                    className={`w-full text-left py-3 pl-4 border-l-2 font-mono text-[11px] font-bold tracking-widest uppercase transition-all duration-150 cursor-pointer ${
                       isActive
                         ? "text-[#001f4d] bg-slate-50 border-[#001f4d]"
                         : "text-slate-500 border-transparent hover:text-[#001f4d] hover:bg-slate-50 hover:border-[#001f4d]"
@@ -281,19 +232,30 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                 </Link>
               );
             })}
-          </div>
+          </nav>
+
+          {/* Bottom "view all" link */}
+          <Link href={data.bottomLinkHref}>
+            <div
+              onClick={onClose}
+              className="mt-6 pl-4 font-mono text-[9px] text-[#003366] uppercase tracking-widest hover:underline cursor-pointer"
+            >
+              {data.bottomLinkText}
+            </div>
+          </Link>
 
         </div>
 
-        {/* ── Column 2: High-Density Matrix (55%) ──────────────────────── */}
+        {/* ── Column 2: Recommendation Matrix (55%) ─────────────────────── */}
         <div className="w-[55%] flex-shrink-0 border-x border-slate-200 px-8">
+
           <AnimatePresence mode="wait">
             <motion.div
               key={activeId + "-grid"}
-              variants={GRID_VARIANTS}
-              initial="enter"
-              animate="center"
-              exit="exit"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ type: "spring", stiffness: 500, damping: 45 }}
               className="grid grid-cols-3 gap-x-6 gap-y-8"
             >
               {active.items.map((item) => (
@@ -317,27 +279,31 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                     </p>
 
                     {/* Product name */}
-                    <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
+                    <p className="font-black text-[10px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
                       {item.name}
                     </p>
+
                   </div>
                 </Link>
               ))}
             </motion.div>
           </AnimatePresence>
+
         </div>
 
-        {/* ── Column 3: Featured Viewport (25%) ────────────────────────── */}
+        {/* ── Column 3: Authority Viewport (25%) ────────────────────────── */}
         <div className="w-[25%] flex-shrink-0 pl-8 flex flex-col">
+
           <AnimatePresence mode="wait">
             <motion.div
               key={activeId + "-featured"}
-              variants={FEATURED_VARIANTS}
-              initial="enter"
-              animate="center"
-              exit="exit"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               className="flex flex-col flex-1"
             >
+
               {/* Cover image with dark overlay */}
               <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
                 <img
@@ -349,21 +315,39 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/85 via-[#001f4d]/35 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-mono text-[9px] text-white/70 uppercase tracking-[0.25em] mb-1.5">
+                  <p className="font-mono text-[9px] text-white/60 uppercase tracking-[0.25em] mb-1.5">
                     {active.featured.subtitle}
                   </p>
-                  <p className="font-black text-xl text-white uppercase leading-tight tracking-tight">
+                  <p className="font-black text-lg text-white uppercase leading-tight tracking-tight">
                     {active.featured.title}
                   </p>
                 </div>
               </div>
 
-              {/* Status strip */}
-              <p className="font-mono text-[8px] text-slate-400 uppercase tracking-widest mt-4">
+              {/* Tagline */}
+              <p className="font-mono text-[9px] text-[#003366] uppercase tracking-[0.22em] font-bold mt-3">
+                ■ {active.featured.tagline}
+              </p>
+
+              {/* CTA Button */}
+              <Link href={active.featured.ctaHref}>
+                <div
+                  onClick={onClose}
+                  className="mt-3 w-full bg-[#001f4d] hover:bg-[#003399] text-white font-mono text-[10px] font-bold tracking-[0.18em] uppercase px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
+                >
+                  <span>{active.featured.ctaText}</span>
+                  <span className="opacity-60 group-hover:opacity-100 transition-opacity">↗</span>
+                </div>
+              </Link>
+
+              {/* Quality strip */}
+              <p className="font-mono text-[8px] text-slate-400 uppercase tracking-widest mt-3">
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
+
             </motion.div>
           </AnimatePresence>
+
         </div>
 
       </div>

@@ -18,7 +18,6 @@ import type {
   IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
-  OemStep,
   IndustryMaterial,
 } from "@/components/industry/types";
 
@@ -52,17 +51,14 @@ const HERO_DATA: IndustryHeroData = {
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 const PRODUCTS: IndustryProduct[] = [
-  { category: "Shredder Blades",  name: "Single-Shaft Shredder Blades",   image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: true  },
-  { category: "Shredder Blades",  name: "Twin-Shaft Shredder Knives",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Rotor Knives",        image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Bed Knives",          image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Pelletizer Blades",name: "Underwater Pelletizer Hob Cuts", image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Pelletizer Blades",name: "Strand Pelletizer Cutter Blades",image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Shredder Blades",  name: "Heavy-Duty Granulator Knives",   image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
-  { category: "Pelletizer Blades",name: "Ring Die Pelletizer Knives",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false },
+  { category: "Shredder Blades",  name: "Single-Shaft Shredder Blades", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: true  },
+  { category: "Shredder Blades",  name: "Twin-Shaft Shredder Knives",   image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: false },
+  { category: "Granulator Blades",name: "Granulator Rotor Knives",      image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/blades/granulator-blades", isFlagship: false },
+  { category: "Granulator Blades",name: "Granulator Bed Knives",        image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/blades/granulator-blades", isFlagship: false },
+  { category: "Shredder Blades",  name: "Heavy-Duty Granulator Knives", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: false },
 ];
 
-const FILTER_CATEGORIES = ["ALL", "SHREDDER BLADES", "GRANULATOR BLADES", "PELLETIZER BLADES"];
+const FILTER_CATEGORIES = ["ALL", "SHREDDER BLADES", "GRANULATOR BLADES"];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -82,14 +78,6 @@ const SPECS: IndustrySpec[] = [
   { label: "Material Grade",  mainValue: "Tungsten\\nCarbide",            subtext: "YG8 / YG15 Alloys",  isTextual: true },
   { label: "Core Hardness",   mainValue: "58–64",           unit: "HRC", subtext: "Vacuum Heat Treat"   },
   { label: "Surface Finish",  mainValue: "Ra ≤ 0.4",        unit: "μm",  subtext: "Mirror Standard"     },
-];
-
-// ─── OEM Pipeline ─────────────────────────────────────────────────────────────
-const OEM_STEPS: OemStep[] = [
-  { step: "01", name: "CAD/CAM Analysis",      desc: "Reverse engineering and blueprint verification.",                        phaseKey: "PROTOCOL",  protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.23°N / 121.47°E" },
-  { step: "02", name: "5-Axis CNC Machining",  desc: "Precision milling to exact OEM bore/keyway specs.",                    phaseKey: "TOPOLOGY",  protocolVersion: "4.1", technicalTitle: "CAD TOPOLOGY",          coords: "48.85°N / 002.35°E" },
-  { step: "03", name: "Vacuum Heat Treatment", desc: "In-house hardening for optimal core toughness.",                        phaseKey: "MACHINING", protocolVersion: "3.0", technicalTitle: "PRECISION MANUFACTURE", coords: "22.54°N / 114.06°E" },
-  { step: "04", name: "CMM Verification",      desc: "100% dimensional inspection before shipping.",                          phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "35.68°N / 139.69°E" },
 ];
 
 // ─── Materials ─────────────────────────────────────────────────────────────────
@@ -119,7 +107,7 @@ export default function PlasticIndustry() {
         <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
         <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}               />
         <IndustryMaterialFocus     materials={MATERIALS}                                  />
-        <IndustryOemPipeline       steps={OEM_STEPS}                                      />
+        <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />
       </div>

@@ -28,6 +28,22 @@ export const errorHandler = (
     });
   }
 
+  // Handle Multer errors (file upload)
+  if (err.name === 'MulterError') {
+    const message =
+      err.code === 'LIMIT_FILE_SIZE'
+        ? 'File is too large. Maximum allowed size is 15 MB.'
+        : `File upload error: ${err.message}`;
+    console.error('[MULTER ERROR]', err.code, err.message);
+    return res.status(400).json({ success: false, message });
+  }
+
+  // Handle fileFilter rejection (plain Error thrown by multer fileFilter)
+  if (err.message && err.message.startsWith('Invalid file type')) {
+    console.error('[FILE TYPE ERROR]', err.message);
+    return res.status(400).json({ success: false, message: err.message });
+  }
+
   // Handle other errors
   const statusCode = (err as AppError).statusCode || 500;
   const message = err.message || "Internal Server Error";

@@ -18,7 +18,6 @@ import type {
   IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
-  OemStep,
   IndustryMaterial,
 } from "@/components/industry/types";
 
@@ -39,14 +38,14 @@ const HERO_DATA: IndustryHeroData = {
     "CMM-verified—for zero-rework drop-in installation.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/paper-industry/hero.webp",               alt: "Tissue log saw converting line"                 },
-    { src: "/images/applications/paper-industry/log-saw-blade.webp",      alt: "Tissue log saw blade close-up"                 },
-    { src: "/images/applications/paper-industry/rewinder.webp",           alt: "Surface rewinder converting operation"          },
-    { src: "/images/applications/paper-industry/tissue-rolls.webp",       alt: "Tissue roll production"                        },
-    { src: "/images/applications/paper-industry/perforation.webp",        alt: "Perforation blade detail"                      },
-    { src: "/images/applications/paper-industry/slitting.webp",           alt: "Paper reel slitting operation"                 },
-    { src: "/images/applications/paper-industry/tooth-profile.webp",      alt: "Blade tooth profile grinding detail"           },
-    { src: "/images/applications/paper-industry/inspection.webp",         alt: "Blade dimensional inspection"                  },
+    { src: "/images/applications/tissue-industry/Raw%20Material%20Selection.webp",       alt: "Raw material selection for tissue processing"    },
+    { src: "/images/applications/tissue-industry/blades.webp",                            alt: "Industrial blades for tissue processing"          },
+    { src: "/images/applications/tissue-industry/hero.webp",                              alt: "Tissue industry production hero scene"            },
+    { src: "/images/applications/tissue-industry/single-shredder-blades-001-w1200.webp", alt: "Single shredder blades close-up"                   },
+    { src: "/images/applications/tissue-industry/single-shredder-blades-010.webp",       alt: "Shredder blade set for heavy-duty tissue processing"       },
+    { src: "/images/applications/tissue-industry/metal-slitter-knife.webp",               alt: "Metal slitter knife for precision cutting"          },
+    { src: "/images/applications/tissue-industry/6-Wire%20Cut.webp",                      alt: "Wire-cut machining process detail"                  },
+    { src: "/images/applications/tissue-industry/acuum-heat-treatment.webp",              alt: "Vacuum heat treatment process"                     },
   ],
 };
 
@@ -93,14 +92,6 @@ const SPECS: IndustrySpec[] = [
   { label: "Surface Finish",      mainValue: "Ra ≤ 0.6", unit: "μm",        subtext: "Mirror Polish"             },
 ];
 
-// ─── OEM Pipeline ─────────────────────────────────────────────────────────────
-const OEM_STEPS: OemStep[] = [
-  { step: "01", name: "Profile Mapping",       desc: "Blade profile mapping: tooth form, grind angle, and OEM clearance tolerances documented.", phaseKey: "PROTOCOL",  protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.23°N / 121.47°E" },
-  { step: "02", name: "CNC Profile Grinding",  desc: "CNC tooth profile grinding matched to OEM log saw geometry and pitch specification.",       phaseKey: "TOPOLOGY",  protocolVersion: "4.1", technicalTitle: "TOOTH GRINDING",        coords: "48.85°N / 002.35°E" },
-  { step: "03", name: "Vacuum Heat Treatment", desc: "Tailored M2/M42 HSS hardening cycle ensuring chip-resistant tooth edge retention.",         phaseKey: "MACHINING", protocolVersion: "3.0", technicalTitle: "HSS HARDENING",         coords: "22.54°N / 114.06°E" },
-  { step: "04", name: "CMM Verification",      desc: "100% verification of profile, diameter, runout, and tooth pitch before shipment.",          phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "35.68°N / 139.69°E" },
-];
-
 // ─── Materials ─────────────────────────────────────────────────────────────────
 const MATERIALS: IndustryMaterial[] = [
   { name: "Virgin Tissue Rolls",  abrasion: "LOW",      grade: "M2 HSS Triple-Ground", image: "/images/materials/virgin-tissue.webp"   },
@@ -128,7 +119,7 @@ export default function PaperIndustry() {
         <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
         <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}               />
         <IndustryMaterialFocus     materials={MATERIALS}                                  />
-        <IndustryOemPipeline       steps={OEM_STEPS}                                      />
+        <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />
       </div>

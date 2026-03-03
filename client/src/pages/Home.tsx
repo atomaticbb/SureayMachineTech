@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Precision Industrial Blades & Recycling Solutions | Sureay Machinery</title>
+        <title>Precision Industrial Blades | Sureay </title>
         <meta
           name="description"
           content="ISO 9001:2015 certified OEM manufacturer of precision industrial blades, granulator knives and recycling machine solutions. ±0.002 mm tolerance. Global export since 2008."
