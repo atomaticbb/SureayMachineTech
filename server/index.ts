@@ -18,39 +18,38 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
-  // 安全响应头
+  // ── 1. Security & Parsers ────────────────────────────────────────────────
   app.use(helmet({
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc:  ["'self'", "'unsafe-inline'"],   // Vite 注入的 inline script
-        styleSrc:   ["'self'", "'unsafe-inline'"],
-        imgSrc:     ["'self'", "data:", "blob:"],
-        connectSrc: ["'self'"],
-        fontSrc:    ["'self'", "data:"],
-        objectSrc:  ["'none'"],
-        frameSrc:   ["'none'"],
+        defaultSrc:  ["'self'"],
+        scriptSrc:   ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com"],
+        styleSrc:    ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        fontSrc:     ["'self'", "https://fonts.gstatic.com", "data:"],
+        imgSrc:      ["'self'", "data:", "blob:", "https://www.google-analytics.com", "https://www.googletagmanager.com"],
+        connectSrc:  ["'self'", "https://www.google-analytics.com", "https://region1.google-analytics.com"],
+        objectSrc:   ["'none'"],
+        frameSrc:    ["'none'"],
       },
     },
-    crossOriginEmbedderPolicy: false, // 避免破坏非 COEP 资源
+    crossOriginEmbedderPolicy: false,
   }));
-
-  // 中间件
   app.use(express.json({ limit: '50kb' }));
   app.use(cookieParser());
   app.use(corsMiddleware);
-  app.use(logger);
-  app.use(analyticsMiddleware);
 
-  // 健康检查
-  app.get("/health", (req, res) => {
+  // ── 2. Healthcheck — early exit before logger / analytics ───────────────
+  app.get("/health", (_req, res) => {
     res.json({ status: "ok", timestamp: new Date().toISOString() });
   });
 
-  // API 路由
+  // ── 3. Logger ────────────────────────────────────────────────────────────
+  app.use(logger);
+
+  // ── 4. API Routes ────────────────────────────────────────────────────────
   app.use("/api", routes);
 
-  // 静态文件服务
+  // ── 5. Static Files ──────────────────────────────────────────────────────
   const staticPath =
     process.env.NODE_ENV === "production"
       ? path.resolve(__dirname, "public")
@@ -58,12 +57,12 @@ async function startServer() {
 
   app.use(express.static(staticPath));
 
-  // SPA 路由回退
-  app.get("*", (_req, res) => {
+  // ── 6. SPA Fallback — analytics scoped to page views only ───────────────
+  app.get("*", analyticsMiddleware, (_req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
   });
 
-  // 错误处理（必须放最后）
+  // ── 7. Error Handler ─────────────────────────────────────────────────────
   app.use(errorHandler);
 
   const port = process.env.PORT || 3000;
