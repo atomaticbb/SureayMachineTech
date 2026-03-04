@@ -110,7 +110,7 @@ export default function MetalIndustry() {
           content="Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureaymachinery.com/industry/metal-processing" />
+        <link rel="canonical" href="https://www.sureay.com/industry/metal-processing" />
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">

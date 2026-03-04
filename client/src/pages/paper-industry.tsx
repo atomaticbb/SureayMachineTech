@@ -110,7 +110,7 @@ export default function PaperIndustry() {
           content="Triple-ground tissue log saw blades, rewinder perforation knives and slitting tooling for high-speed paper and tissue converting lines. OEM-compatible with Fabio Perini, Körber, Fosber."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureaymachinery.com/industry/paper-tissue" />
+        <link rel="canonical" href="https://www.sureay.com/industry/paper-tissue" />
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">

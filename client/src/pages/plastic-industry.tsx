@@ -98,7 +98,7 @@ export default function PlasticIndustry() {
           content="Precision granulator knives, filterless screen changers and pelletizer hob cutters engineered for zero-downtime plastic recycling and extrusion lines. OEM-compatible with EREMA, LINDNER, VECOPLAN."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureaymachinery.com/industry/plastics-recycling" />
+        <link rel="canonical" href="https://www.sureay.com/industry/plastics-recycling" />
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
