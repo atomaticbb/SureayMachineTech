@@ -27,7 +27,7 @@ async function startServer() {
         styleSrc:    ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
         fontSrc:     ["'self'", "https://fonts.gstatic.com", "data:"],
         imgSrc:      ["'self'", "data:", "blob:", "https://www.google-analytics.com", "https://www.googletagmanager.com"],
-        connectSrc:  ["'self'", "https://analytics.google.com", "https://www.google-analytics.com", "https://region1.google-analytics.com"],
+        connectSrc:  ["'self'", "https://analytics.google.com", "https://www.google-analytics.com", "https://region1.google-analytics.com","https://stats.g.doubleclick.net"],
         objectSrc:   ["'none'"],
         frameSrc:    ["'none'"],
       },
