@@ -119,7 +119,7 @@ export default function ContactRFQ() {
                     <div className="flex-1 min-w-0">
                       <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Email Us</div>
                       <div className="text-sm font-bold text-[#003366] group-hover:text-[#004488] transition-colors truncate">
-                        sales@sureaymachinery.com
+                        lynn@sureay.com
                       </div>
                       <div className="mt-1.5 inline-flex items-center gap-1.5 bg-[#003366]/8 border border-[#003366]/20 px-2 py-0.5">
                         <span className="block w-1.5 h-1.5 rounded-full bg-[#003366]" />
