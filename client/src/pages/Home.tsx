@@ -24,7 +24,7 @@ const JSON_LD = JSON.stringify({
       "@type": "ContactPoint",
       telephone: "+86-156-5553-0829",
       contactType: "sales",
-      email: "sales@sureaymachinery.com",
+      email: "lynn@sureay.com",
       availableLanguage: ["English", "Chinese"],
     },
   ],
