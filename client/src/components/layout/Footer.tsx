@@ -18,7 +18,7 @@ export default function Footer() {
                   className="w-10 h-10 brightness-0 invert opacity-90"
                 />
                 <span className="text-base font-black text-white tracking-[0.08em] uppercase leading-none">
-                  SUREAY KNIVES
+                  SUREAY BLADES
                 </span>
               </div>
             </Link>
@@ -56,32 +56,32 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/products/blades/alloy-blades" className="hover:text-white transition-colors">
+                <Link href="/products/alloy-blades" className="hover:text-white transition-colors">
                   Industrial Alloy Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades/rotary-cutter-blades" className="hover:text-white transition-colors">
+                <Link href="/products/rotary-cutter-blades" className="hover:text-white transition-colors">
                   Rotary Cutter Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades/shredder-blades" className="hover:text-white transition-colors">
+                <Link href="/products/shredder-blades" className="hover:text-white transition-colors">
                   Shredder Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades/tissue-log-saw-blades" className="hover:text-white transition-colors">
+                <Link href="/products/tissue-log-saw-blades" className="hover:text-white transition-colors">
                   Tissue Log Saw Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades/granulator-blades" className="hover:text-white transition-colors">
+                <Link href="/products/granulator-blades" className="hover:text-white transition-colors">
                   Granulator Blades
                 </Link>
               </li>
               <li>
-                <Link href="/products/blades/paper-cutting-blades" className="hover:text-white transition-colors">
+                <Link href="/products/paper-cutting-blades" className="hover:text-white transition-colors">
                   Paper Cutting Blades
                 </Link>
               </li>
@@ -144,8 +144,8 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.25em] text-slate-500 mb-1">Email</p>
-                <a href="mailto:info@sureaymachinery.com" className="hover:text-white transition-colors break-all">
-                  info@sureaymachinery.com
+                <a href="mailto:lynn@sureay.com" className="hover:text-white transition-colors break-all">
+                  lynn@sureay.com
                 </a>
               </div>
             </div>

@@ -65,7 +65,7 @@ const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
   name:    b.name,
   refCode: `${REF_CODE[b.category] ?? "BLD"}-${String(seq).padStart(3, "0")}`,
   image:   b.image,
-  href:    `/products/blades/${b.id}`,
+  href:    `/products/${b.id}`,
 });
 
 // ── PRODUCTS Data — grouped by blade-type family ───────────────────────────────
@@ -73,7 +73,7 @@ const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
 export const PRODUCTS_MENU_DATA: MegaMenuData = {
   columnLabel:    "PRODUCT TYPES",
   bottomLinkText: "→ VIEW ALL BLADES",
-  bottomLinkHref: "/products/blades",
+  bottomLinkHref: "/products",
   categories: [
     {
       id:    "cutting",
@@ -84,7 +84,7 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
         subtitle:   "ACTIVE CATEGORY",
         title:      "CUTTING BLADES",
         ctaText:    "EXPLORE CUTTING BLADES",
-        ctaHref:    "/products/blades",
+        ctaHref:    "/products",
       },
       items: blades
         .filter(b => b.category === "alloy_blades" || b.category === "rotary_blades")
@@ -99,7 +99,7 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
         subtitle:   "ACTIVE CATEGORY",
         title:      "SHREDDING & GRANULATING",
         ctaText:    "EXPLORE SHREDDER BLADES",
-        ctaHref:    "/products/blades",
+        ctaHref:    "/products",
       },
       items: blades
         .filter(b => b.category === "shredder_blades" || b.category === "granulator_blades")
@@ -114,7 +114,7 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
         subtitle:   "ACTIVE CATEGORY",
         title:      "PAPER CONVERTING",
         ctaText:    "EXPLORE PAPER BLADES",
-        ctaHref:    "/products/blades",
+        ctaHref:    "/products",
       },
       items: blades
         .filter(b => b.category === "tissue_paper_blades" || b.category === "paper_cutting_blades")
@@ -128,7 +128,7 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
 export const INDUSTRY_MENU_DATA: MegaMenuData = {
   columnLabel:    "INDUSTRIES",
   bottomLinkText: "→ BROWSE ALL TOOLING",
-  bottomLinkHref: "/products/blades",
+  bottomLinkHref: "/products",
   categories: [
     {
       id:    "recycling",
@@ -162,7 +162,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id:    "converting",
-      title: "METAL & FILM CONVERTING",
+      title: "METAL CONVERTING",
       featured: {
         coverImage: "/images/applications/Metal-Waste-Recycling.webp",
         tagline:    "±0.002 mm TOLERANCE",

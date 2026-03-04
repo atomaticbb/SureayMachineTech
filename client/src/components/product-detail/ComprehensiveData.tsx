@@ -61,7 +61,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
       </div>
 
       {/* Download CTA */}
-      <div className="mt-8 flex justify-start">
+      {/* <div className="mt-8 flex justify-start">
         <Link href="/contact">
           <button
             type="button"
@@ -70,7 +70,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
             Download Full Datasheet (PDF)
           </button>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 }

@@ -1,6 +1,6 @@
 /**
- * BladeDetail — Page Orchestrator
- * Route: /products/blades/:id
+ * ProductDetail — Page Orchestrator
+ * Route: /products/:id
  *
  * Zones:
  *   1  BladeHero          — CAD Viewport + Spec Ledger
@@ -30,8 +30,8 @@ import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
-export default function BladeDetail() {
-  const [, params] = useRoute("/products/blades/:id");
+export default function ProductDetail() {
+  const [, params] = useRoute("/products/:id");
   const bladeId = params?.id || "";
   const blade = getBladeById(bladeId);
 
@@ -44,7 +44,7 @@ export default function BladeDetail() {
           <div className="text-center px-6">
             <h1 className="text-6xl font-black text-[#001f4d] mb-4">404</h1>
             <p className="text-xl text-slate-600 mb-8">Blade not found</p>
-            <Link href="/products/blades">
+            <Link href="/products">
               <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black uppercase tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
                 Back to Blades
               </a>
@@ -58,19 +58,27 @@ export default function BladeDetail() {
 
   const relatedBlades = getRelatedBlades(bladeId, 3);
 
-  // JSON-LD Structured Data
+  // JSON-LD Structured Data — Google Rich Results compliant
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: blade.fullName || blade.name,
-    image: blade.image,
+    image: [`https://www.sureay.com${blade.image}`],
     description: blade.fullDescription || blade.description,
-    brand: { "@type": "Brand", name: "Sureay Machinery" },
-    category: blade.categoryDisplay,
+    sku: blade.id,
+    mpn: blade.id,
+    brand: {
+      "@type": "Brand",
+      name: "Sureay Industrial Blades",
+    },
     offers: {
       "@type": "Offer",
-      availability: "https://schema.org/InStock",
+      url: `https://www.sureay.com/products/${blade.id}`,
       priceCurrency: "USD",
+      price: "0.00",
+      priceValidUntil: "2026-12-31",
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
     },
   };
 
@@ -92,7 +100,7 @@ export default function BladeDetail() {
           variant="light"
           items={[
             { label: "Home", href: "/" },
-            { label: "Blades & Knives", href: "/products/blades" },
+            { label: "Blades & Knives", href: "/products" },
             { label: blade.name },
           ]}
         />

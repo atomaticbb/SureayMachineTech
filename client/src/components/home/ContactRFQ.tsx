@@ -1,31 +1,73 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp";
+const MAX_FILE_MB   = 15;
+
+function fmtSize(bytes: number) {
+  if (bytes < 1024)        return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
 
 export default function ContactRFQ() {
-  const [submitted, setSubmitted] = useState(false);
-  const [loading,   setLoading]   = useState(false);
-  const [error,     setError]     = useState("");
+  const [submitted,  setSubmitted]  = useState(false);
+  const [loading,    setLoading]    = useState(false);
+  const [error,      setError]      = useState("");
+  const [attachment, setAttachment] = useState<File | null>(null);
+  const [dragOver,   setDragOver]   = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // ── File helpers ─────────────────────────────────────────────────────────
+  const applyFile = (file: File | null | undefined) => {
+    if (!file) return;
+    if (file.size > MAX_FILE_MB * 1024 * 1024) {
+      setError(`File exceeds ${MAX_FILE_MB} MB limit.`);
+      return;
+    }
+    const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
+    if (!["pdf", "dxf", "dwg", "step", "stp"].includes(ext)) {
+      setError("Invalid file type. Accepted: .pdf .dxf .dwg .step .stp");
+      return;
+    }
+    setError("");
+    setAttachment(file);
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    applyFile(e.target.files?.[0]);
+    e.target.value = "";
+  };
+
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    setDragOver(false);
+    applyFile(e.dataTransfer.files?.[0]);
+  };
+
+  // ── Submit ────────────────────────────────────────────────────────────────
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     setError("");
 
-    const fd = new FormData(e.currentTarget);
-    const inquiryType  = fd.get("inquiryType") as string;
-    const requirements = fd.get("message")     as string;
+    const raw          = new FormData(e.currentTarget);
+    const inquiryType  = raw.get("inquiryType") as string;
+    const requirements = raw.get("message")     as string;
 
-    const body = {
-      name:    fd.get("name")  as string,
-      email:   fd.get("email") as string,
-      phone:   (fd.get("phone") as string) || undefined,
-      message: inquiryType ? `[${inquiryType}] ${requirements}` : requirements,
-    };
+    // Build multipart payload — lets the browser set Content-Type + boundary
+    const fd = new FormData();
+    fd.append("name",    raw.get("name")  as string);
+    fd.append("email",   raw.get("email") as string);
+    fd.append("message", inquiryType ? `[${inquiryType}] ${requirements}` : requirements);
+    const phone = raw.get("phone") as string;
+    if (phone) fd.append("phone", phone);
+    if (attachment) fd.append("attachment", attachment, attachment.name);
 
     try {
       const res = await fetch("/api/contact", {
-        method:  "POST",
-        headers: { "Content-Type": "application/json" },
-        body:    JSON.stringify(body),
+        method: "POST",
+        body:   fd,
+        // Do NOT set Content-Type — browser must set it with the multipart boundary
       });
 
       if (!res.ok) {
@@ -34,6 +76,7 @@ export default function ContactRFQ() {
       }
 
       setSubmitted(true);
+      setAttachment(null);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Submission failed. Please try again.");
     } finally {
@@ -242,6 +285,79 @@ export default function ContactRFQ() {
                       className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
                       required
                     />
+                  </div>
+
+                  {/* ── CAD / Technical Drawing Upload ────────────────── */}
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      CAD / Drawing{" "}
+                      <span className="text-slate-400 normal-case tracking-normal font-normal">
+                        (optional · max {MAX_FILE_MB} MB)
+                      </span>
+                    </label>
+
+                    {/* Hidden native file input */}
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept={ACCEPTED_EXTS}
+                      onChange={handleFileChange}
+                      className="hidden"
+                      aria-label="Attach CAD or technical drawing"
+                    />
+
+                    {attachment ? (
+                      /* ── File selected ─────────────────────────────── */
+                      <div className="flex items-center justify-between gap-3 px-3 py-2.5 border border-[#003366] bg-[#003366]/5">
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <svg className="w-4 h-4 flex-shrink-0 text-[#003366]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                          </svg>
+                          <div className="min-w-0">
+                            <p className="text-xs font-bold text-[#003366] truncate">{attachment.name}</p>
+                            <p className="text-[10px] text-slate-400">
+                              {fmtSize(attachment.size)} · {attachment.name.split(".").pop()?.toUpperCase()}
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setAttachment(null)}
+                          className="flex-shrink-0 text-[10px] font-bold text-slate-400 hover:text-red-600 uppercase tracking-widest transition-colors"
+                          aria-label="Remove attachment"
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    ) : (
+                      /* ── Drop / click zone ─────────────────────────── */
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => fileInputRef.current?.click()}
+                        onKeyDown={(e) => e.key === "Enter" && fileInputRef.current?.click()}
+                        onDragOver={(e) => { e.preventDefault(); setDragOver(true);  }}
+                        onDragLeave={() => setDragOver(false)}
+                        onDrop={handleDrop}
+                        className={`flex items-center gap-3 px-4 py-3 border-2 border-dashed cursor-pointer transition-colors ${
+                          dragOver
+                            ? "border-[#003366] bg-slate-50"
+                            : "border-slate-200 hover:border-[#003366] hover:bg-slate-50"
+                        }`}
+                      >
+                        <svg className="w-4 h-4 flex-shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                        </svg>
+                        <div>
+                          <p className="text-xs font-bold text-slate-600 uppercase tracking-wide">
+                            Upload CAD / Technical Drawing
+                          </p>
+                          <p className="text-[10px] text-slate-400 mt-0.5">
+                            .DXF · .DWG · .PDF · .STEP · .STP — click or drag &amp; drop
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {error && (

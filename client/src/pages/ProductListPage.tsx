@@ -79,14 +79,14 @@ export default function BladeListPage() {
         <div className="flex flex-col lg:flex-row">
 
           {/* Left: Navy Text Panel */}
-          <div className="lg:w-[45%] flex-shrink-0 bg-[#001f4d] px-10 sm:px-14 lg:px-16 py-10 lg:py-20 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10">
+          <div className="lg:w-[45%] flex-shrink-0 bg-[#001f4d] px-10 sm:px-14 lg:px-16 py-8 lg:py-16 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10">
 
             <div>
               <p className="font-mono text-[10px] text-white/40 tracking-[0.35em] uppercase mb-8">
                 [ PRODUCT CATALOGUE — INDUSTRIAL BLADES ]
               </p>
 
-              <h1 className="text-4xl lg:text-7xl font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
+              <h1 className="text-4xl lg:text-5xl font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
                 Industrial<br />Blades &amp;<br />Cutting Tools
               </h1>
 

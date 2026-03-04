@@ -51,21 +51,21 @@ const HERO_DATA: IndustryHeroData = {
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 const PRODUCTS: IndustryProduct[] = [
-  { category: "Slitter Knives", name: "Circular Slitter Knives",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: true,
+  { category: "Slitter Knives", name: "Circular Slitter Knives",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: true,
     desc: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out. Burr-free steel coil slitting." },
-  { category: "Slitter Knives", name: "Tungsten Carbide Slitter Discs", image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
+  { category: "Slitter Knives", name: "Tungsten Carbide Slitter Discs", image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
     desc: "Submicron-grain TC slitter discs for stainless steel and abrasive strip materials. Extended tool life versus HSS." },
-  { category: "Slitter Knives", name: "HSS Slitter Knives",             image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
+  { category: "Slitter Knives", name: "HSS Slitter Knives",             image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
     desc: "M2 HSS circular knives for mild steel and aluminium coil slitting. Cost-effective OEM-compatible geometry." },
-  { category: "Shear Blades",   name: "Guillotine Shear Blades",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
+  { category: "Shear Blades",   name: "Guillotine Shear Blades",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
     desc: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate." },
-  { category: "Shear Blades",   name: "Flying Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
+  { category: "Shear Blades",   name: "Flying Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
     desc: "High-speed flying shear tooling for continuous strip processing lines. Matched pairs ground to ±0.01 mm gap tolerance." },
-  { category: "Shear Blades",   name: "Rotary Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/rotary-cutter-blades", isFlagship: false,
+  { category: "Shear Blades",   name: "Rotary Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
     desc: "OEM-specification rotary shear blades for coil-fed blanking and trimming operations." },
-  { category: "Punch Dies",     name: "Precision Punch & Die Sets",     image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
+  { category: "Punch Dies",     name: "Precision Punch & Die Sets",     image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
     desc: "EDM-finished punch-and-die sets for high-volume stamping. Tungsten carbide and D2 tooling available." },
-  { category: "Punch Dies",     name: "Tungsten Carbide Insert Dies",   image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/blades/alloy-blades", isFlagship: false,
+  { category: "Punch Dies",     name: "Tungsten Carbide Insert Dies",   image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
     desc: "TC insert dies for ultra-high-volume progressive stamping. OEM bore and flange geometry matched on CMM." },
 ];
 

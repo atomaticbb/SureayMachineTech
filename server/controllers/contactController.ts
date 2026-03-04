@@ -1,7 +1,14 @@
 import { Request, Response, NextFunction } from 'express';
+import { fileTypeFromBuffer } from 'file-type';
 import { ContactFormSchema } from '../../shared/validators/contact.js';
 import { sendContactEmail } from '../services/emailService.js';
 import { prisma } from '../db/client.js';
+
+// PDF と DWG のみ magic bytes が既知。DXF / STEP / STP はテキスト形式なので undefined が正常。
+const BINARY_EXT_MIMES: Record<string, string> = {
+  pdf: 'application/pdf',
+  dwg: 'image/vnd.dwg',
+};
 
 export const submitContactForm = async (
   req: Request,
@@ -15,7 +22,25 @@ export const submitContactForm = async (
     // 2. Optional file attachment — populated by multer upload.single('attachment')
     const file = req.file as Express.Multer.File | undefined;
 
-    // 3. Request metadata
+    // 3. Magic bytes validation — prevent renamed executables
+    if (file) {
+      const detected = await fileTypeFromBuffer(file.buffer);
+      const ext      = file.originalname.split('.').pop()?.toLowerCase() ?? '';
+      const expected = BINARY_EXT_MIMES[ext];
+
+      if (expected) {
+        // Binary format: magic bytes must match expected MIME
+        if (!detected || detected.mime !== expected) {
+          return res.status(400).json({ success: false, message: 'File content does not match its declared extension.' });
+        }
+      } else if (detected) {
+        // Text-based format (dxf / step / stp): file-type should return undefined.
+        // If it detected a binary signature, the file is not what it claims to be.
+        return res.status(400).json({ success: false, message: 'File content does not match its declared extension.' });
+      }
+    }
+
+    // 4. Request metadata
     const ipAddress = (req.ip || req.headers['x-forwarded-for'] || req.socket.remoteAddress) as string;
     const userAgent = req.headers['user-agent'] || '';
 
@@ -34,6 +59,9 @@ export const submitContactForm = async (
         phone: data.phone,
         company: data.company,
         message: data.message,
+        inquiryType:    data.inquiryType   ?? null,
+        attachmentName: file?.originalname ?? null,
+        attachmentSize: file?.size         ?? null,
         source: 'web',
         ipAddress,
         userAgent,

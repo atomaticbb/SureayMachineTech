@@ -51,11 +51,11 @@ const HERO_DATA: IndustryHeroData = {
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 const PRODUCTS: IndustryProduct[] = [
-  { category: "Shredder Blades",  name: "Single-Shaft Shredder Blades", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: true  },
-  { category: "Shredder Blades",  name: "Twin-Shaft Shredder Knives",   image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Rotor Knives",      image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/blades/granulator-blades", isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Bed Knives",        image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/blades/granulator-blades", isFlagship: false },
-  { category: "Shredder Blades",  name: "Heavy-Duty Granulator Knives", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/blades/shredder-blades",   isFlagship: false },
+  { category: "Shredder Blades",  name: "Single-Shaft Shredder Blades", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: true  },
+  { category: "Shredder Blades",  name: "Twin-Shaft Shredder Knives",   image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: false },
+  { category: "Granulator Blades",name: "Granulator Rotor Knives",      image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/granulator-blades", isFlagship: false },
+  { category: "Granulator Blades",name: "Granulator Bed Knives",        image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/granulator-blades", isFlagship: false },
+  { category: "Shredder Blades",  name: "Heavy-Duty Granulator Knives", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: false },
 ];
 
 const FILTER_CATEGORIES = ["ALL", "SHREDDER BLADES", "GRANULATOR BLADES"];

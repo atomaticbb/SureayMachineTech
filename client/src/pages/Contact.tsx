@@ -376,10 +376,10 @@ export default function Contact() {
                 Direct Email
               </p>
               <a
-                href="mailto:info@sureay.com"
+                href="mailto:lynn@sureay.com"
                 className="block text-2xl lg:text-3xl font-black text-white uppercase tracking-tight leading-none whitespace-nowrap hover:text-white/70 transition-colors"
               >
-                INFO@SUREAY.COM
+                lynn@sureay.com
               </a>
             </div>
 

@@ -10,8 +10,10 @@ interface SchemaProduct {
   "@context": string;
   "@type": string;
   name: string;
-  image: string;
+  image: string | string[];
   description: string;
+  sku?: string;
+  mpn?: string;
   brand: {
     "@type": string;
     name: string;
@@ -19,8 +21,12 @@ interface SchemaProduct {
   category?: string;
   offers?: {
     "@type": string;
-    availability: string;
+    url?: string;
     priceCurrency: string;
+    price?: string;
+    priceValidUntil?: string;
+    availability: string;
+    itemCondition?: string;
   };
 }
 

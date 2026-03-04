@@ -64,12 +64,12 @@ export const ECOSYSTEMS = [
 
 // ─── Featured Products ────────────────────────────────────────────────────────
 export const FEATURED_PRODUCTS = [
-  { name: "Tissue Log-Saw Blade",    image: "/images/products/blades/tissue-log-saw-blades.webp",         href: "/products/blades/tissue-log-saw-blades" },
-  { name: "Circular Slitter Blade",  image: "/images/products/blades/11-2-2_circular-blade_01.webp",      href: "/products/blades/alloy-blades" },
-  { name: "Metal Shear Blade",       image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",   href: "/products/blades/shredder-blades" },
-  { name: "Metal Slitter Knife",     image: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp", href: "/products/blades/rotary-cutter-blades" },
-  { name: "Granulator Rotor",        image: "/images/products/Granulator-T1-01.webp",                     href: "/products/blades/granulator-blades" },
-  { name: "Heavy Slitter Knife",     image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp", href: "/products/blades/paper-cutting-blades" },
+  { name: "Tissue Log-Saw Blade",    image: "/images/products/blades/tissue-log-saw-blades.webp",         href: "/products/tissue-log-saw-blades" },
+  { name: "Circular Slitter Blade",  image: "/images/products/blades/11-2-2_circular-blade_01.webp",      href: "/products/alloy-blades" },
+  { name: "Metal Shear Blade",       image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",   href: "/products/shredder-blades" },
+  { name: "Metal Slitter Knife",     image: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp", href: "/products/rotary-cutter-blades" },
+  { name: "Granulator Rotor",        image: "/images/products/Granulator-T1-01.webp",                     href: "/products/granulator-blades" },
+  { name: "Heavy Slitter Knife",     image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp", href: "/products/paper-cutting-blades" },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────

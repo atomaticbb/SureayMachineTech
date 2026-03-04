@@ -1,20 +1,23 @@
 import { Request, Response, NextFunction } from 'express';
 import { prisma } from '../db/client.js';
 
-// 获取所有联系人提交记录
+const VALID_STATUSES = ['pending', 'replied', 'closed'] as const;
+const VALID_FOLLOWUP_TYPES = ['Email', 'Call', 'Internal'] as const;
+
+// ── Contacts ──────────────────────────────────────────────────────────────────
+
 export const getContacts = async (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   try {
-    const { page = '1', limit = '20', status, search } = req.query;
-    const pageNum = parseInt(page as string);
+    const { page = '1', limit = '50', status, search } = req.query;
+    const pageNum  = parseInt(page  as string);
     const limitNum = parseInt(limit as string);
-    const skip = (pageNum - 1) * limitNum;
+    const skip     = (pageNum - 1) * limitNum;
 
-    // 构建查询条件
-    const where: any = {};
+    const where: Record<string, unknown> = {};
 
     if (status && status !== 'all') {
       where.status = status;
@@ -22,14 +25,13 @@ export const getContacts = async (
 
     if (search) {
       where.OR = [
-        { name: { contains: search as string } },
-        { email: { contains: search as string } },
+        { name:    { contains: search as string } },
+        { email:   { contains: search as string } },
         { company: { contains: search as string } },
         { message: { contains: search as string } },
       ];
     }
 
-    // 获取总数和记录
     const [total, contacts] = await Promise.all([
       prisma.contact.count({ where }),
       prisma.contact.findMany({
@@ -37,6 +39,9 @@ export const getContacts = async (
         orderBy: { createdAt: 'desc' },
         skip,
         take: limitNum,
+        include: {
+          followUps: { orderBy: { createdAt: 'asc' } },
+        },
       }),
     ]);
 
@@ -45,8 +50,8 @@ export const getContacts = async (
       data: {
         contacts,
         pagination: {
-          page: pageNum,
-          limit: limitNum,
+          page:       pageNum,
+          limit:      limitNum,
           total,
           totalPages: Math.ceil(total / limitNum),
         },
@@ -58,68 +63,102 @@ export const getContacts = async (
   }
 };
 
-// 更新联系人状态
+// ── Status patch ──────────────────────────────────────────────────────────────
+
 export const updateContactStatus = async (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   try {
-    const { id } = req.params;
+    const { id }     = req.params;
     const { status } = req.body;
 
-    if (!['pending', 'replied', 'closed'].includes(status)) {
-      return res.status(400).json({
-        success: false,
-        message: 'Invalid status value',
-      });
+    if (!VALID_STATUSES.includes(status)) {
+      return res.status(400).json({ success: false, message: 'Invalid status value' });
     }
 
     const contact = await prisma.contact.update({
       where: { id },
-      data: { status },
+      data:  { status },
     });
 
-    res.json({
-      success: true,
-      data: contact,
-    });
+    res.json({ success: true, data: contact });
   } catch (error) {
     console.error('Error in updateContactStatus:', error);
     next(error);
   }
 };
 
-// 获取访问记录统计
+// ── Add follow-up (atomic: create note + optional status update) ──────────────
+
+export const addFollowUp = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { id }              = req.params;
+    const { content, type, status } = req.body;
+
+    if (!content || typeof content !== 'string' || !content.trim()) {
+      return res.status(400).json({ success: false, message: 'Follow-up content is required' });
+    }
+
+    const resolvedType = VALID_FOLLOWUP_TYPES.includes(type) ? type : 'Internal';
+
+    const followUp = await prisma.$transaction(async (tx) => {
+      const fu = await tx.followUp.create({
+        data: {
+          contactId: id,
+          content:   content.trim(),
+          type:      resolvedType,
+        },
+      });
+
+      if (status && VALID_STATUSES.includes(status)) {
+        await tx.contact.update({
+          where: { id },
+          data:  { status },
+        });
+      }
+
+      return fu;
+    });
+
+    res.json({ success: true, data: followUp });
+  } catch (error) {
+    console.error('Error in addFollowUp:', error);
+    next(error);
+  }
+};
+
+// ── Analytics ─────────────────────────────────────────────────────────────────
+
 export const getAnalytics = async (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   try {
     const { startDate, endDate, eventType, page = '1', limit = '50' } = req.query;
-    const pageNum = parseInt(page as string);
+    const pageNum  = parseInt(page  as string);
     const limitNum = parseInt(limit as string);
-    const skip = (pageNum - 1) * limitNum;
+    const skip     = (pageNum - 1) * limitNum;
 
-    // 构建查询条件
-    const where: any = {};
+    const where: Record<string, unknown> = {};
 
     if (eventType && eventType !== 'all') {
       where.eventType = eventType;
     }
 
     if (startDate || endDate) {
-      where.createdAt = {};
-      if (startDate) {
-        where.createdAt.gte = new Date(startDate as string);
-      }
-      if (endDate) {
-        where.createdAt.lte = new Date(endDate as string);
-      }
+      const createdAt: Record<string, Date> = {};
+      if (startDate) createdAt.gte = new Date(startDate as string);
+      if (endDate)   createdAt.lte = new Date(endDate   as string);
+      where.createdAt = createdAt;
     }
 
-    // 获取总数和记录
     const [total, analytics] = await Promise.all([
       prisma.analytics.count({ where }),
       prisma.analytics.findMany({
@@ -135,8 +174,8 @@ export const getAnalytics = async (
       data: {
         analytics,
         pagination: {
-          page: pageNum,
-          limit: limitNum,
+          page:       pageNum,
+          limit:      limitNum,
           total,
           totalPages: Math.ceil(total / limitNum),
         },
@@ -148,19 +187,19 @@ export const getAnalytics = async (
   }
 };
 
-// 获取统计概览
+// ── Statistics ────────────────────────────────────────────────────────────────
+
 export const getStatistics = async (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   try {
     const { days = '7' } = req.query;
-    const daysNum = parseInt(days as string);
-    const startDate = new Date();
+    const daysNum    = parseInt(days as string);
+    const startDate  = new Date();
     startDate.setDate(startDate.getDate() - daysNum);
 
-    // 并行查询多个统计数据
     const [
       totalContacts,
       pendingContacts,
@@ -168,15 +207,10 @@ export const getStatistics = async (
       uniqueVisitors,
       popularPages,
     ] = await Promise.all([
-      // 总联系人数
       prisma.contact.count(),
 
-      // 待处理联系人数
-      prisma.contact.count({
-        where: { status: 'pending' },
-      }),
+      prisma.contact.count({ where: { status: 'pending' } }),
 
-      // 总页面浏览量（指定时间段）
       prisma.analytics.count({
         where: {
           eventType: 'page_view',
@@ -184,53 +218,39 @@ export const getStatistics = async (
         },
       }),
 
-      // 独立访客数（基于sessionId）
       prisma.analytics.groupBy({
-        by: ['sessionId'],
+        by:    ['sessionId'],
         where: {
           eventType: 'page_view',
           createdAt: { gte: startDate },
         },
-      }).then(results => results.length),
+      }).then(r => r.length),
 
-      // 最受欢迎的页面
       prisma.analytics.groupBy({
-        by: ['page'],
+        by:    ['page'],
         where: {
           eventType: 'page_view',
           createdAt: { gte: startDate },
         },
-        _count: {
-          page: true,
-        },
-        orderBy: {
-          _count: {
-            page: 'desc',
-          },
-        },
-        take: 10,
+        _count:  { page: true },
+        orderBy: { _count: { page: 'desc' } },
+        take:    10,
       }),
     ]);
 
     res.json({
       success: true,
       data: {
-        contacts: {
-          total: totalContacts,
-          pending: pendingContacts,
-        },
-        analytics: {
-          pageViews: totalPageViews,
-          uniqueVisitors,
-        },
-        popularPages: popularPages.map((p: any) => ({
-          page: p.page,
+        contacts: { total: totalContacts, pending: pendingContacts },
+        analytics: { pageViews: totalPageViews, uniqueVisitors },
+        popularPages: popularPages.map((p: { page: string | null; _count: { page: number } }) => ({
+          page:  p.page,
           views: p._count.page,
         })),
         period: {
-          days: daysNum,
+          days:      daysNum,
           startDate: startDate.toISOString(),
-          endDate: new Date().toISOString(),
+          endDate:   new Date().toISOString(),
         },
       },
     });

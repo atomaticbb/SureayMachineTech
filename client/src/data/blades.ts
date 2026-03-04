@@ -125,7 +125,7 @@ export const blades: Blade[] = [
       "High-performance alloy steel blades for industrial cutting applications. Engineered for maximum wear resistance and edge retention.",
     fullDescription:
       "Our industrial alloy blades are precision-engineered cutting tools manufactured from premium high-grade tool steel alloys including 9CrSi, Cr12MoV, and W6Mo5Cr4V2. Designed for demanding industrial cutting operations that require superior wear resistance, edge retention, and cutting precision. Each blade undergoes advanced vacuum heat treatment to achieve optimal hardness (58–62 HRC) and dimensional stability. Ideal for recycling facilities, paper processing plants, plastic extrusion lines, and food processing operations requiring consistent, high-quality cuts over extended service periods.",
-    link: "/products/blades/alloy-blades",
+    link: "/products/alloy-blades",
     isFeatured: true,
 
     specs: [
@@ -312,7 +312,7 @@ export const blades: Blade[] = [
       "Precision-ground rotary cutter blades manufactured from HSS and tungsten carbide for clean, continuous slitting and cutting operations.",
     fullDescription:
       "Our rotary cutter blades are engineered for high-speed, continuous cutting applications across the plastics, packaging, paper, and converting industries. Manufactured from premium grades of High-Speed Steel (HSS), D2 tool steel, and Tungsten Carbide, these circular knives offer exceptional wear resistance and razor-sharp edge retention. Advanced CNC grinding ensures strict concentricity and micro-level dimensional tolerances, preventing material tearing, minimizing dust generation, and significantly extending blade changeover intervals during high-volume production.",
-    link: "/products/blades/rotary-cutter-blades",
+    link: "/products/rotary-cutter-blades",
     isFeatured: true,
 
     specs: [
@@ -487,7 +487,7 @@ export const blades: Blade[] = [
       "Professional-grade shredder blades for single-shaft and multi-shaft systems processing plastics, tires, e-waste, and MSW.",
     fullDescription:
       "Our heavy-duty shredder blades are engineered for single-shaft and multi-shaft shredding systems that process the most challenging waste materials — including rigid plastics, tires, e-waste, wood pallets, and municipal solid waste. Manufactured from premium grades like 6CrW2Si, Cr12MoV, and H13, each blade features an optimized aggressive cutting geometry designed for high-torque, low-speed applications. Advanced vacuum heat treatment achieves a balanced toughness-hardness profile (58–62 HRC), preventing premature chipping under sudden impact loads while maintaining a razor-sharp cutting edge over extended operating hours.",
-    link: "/products/blades/shredder-blades",
+    link: "/products/shredder-blades",
     isFeatured: true,
 
     specs: [
@@ -662,7 +662,7 @@ export const blades: Blade[] = [
       "Premium Tissue Log Saw Blades for High-Speed Paper Converting",
     fullDescription:
       "Maximize converting line uptime with Sureay’s precision-engineered tissue log saw blades. Built for high-speed cutting of tissue, paper towels, and industrial rolls, they deliver exceptionally clean, dust-free cuts while drastically minimizing blade replacements.",
-    link: "/products/blades/tissue-log-saw-blades",
+    link: "/products/tissue-log-saw-blades",
     isFeatured: true,
 
     specs: [
@@ -827,7 +827,7 @@ export const blades: Blade[] = [
       "Precision granulator blades for plastic granulating and pelletizing systems. Optimized profiles deliver clean granules and extended service life.",
     fullDescription:
       "Granulator blades are the consumable heart of any plastic recycling or pelletizing line. Our blades are engineered for granulators processing every type of polymer — from soft LDPE film to glass-filled PA66 — delivering clean, uniform granules with minimal fines generation. Manufactured from premium grades (SKD-11, H13, or Tungsten Carbide for highly abrasive fillers), each blade is CNC ground to tight tolerances and heat treated to a carefully balanced hardness profile. The result: longer cutting intervals, reduced energy consumption, and consistently on-spec granule output.",
-    link: "/products/blades/granulator-blades",
+    link: "/products/granulator-blades",
     isFeatured: false,
 
     specs: [
@@ -990,7 +990,7 @@ export const blades: Blade[] = [
       "Professional paper cutting blades for printing, converting, and finishing operations. Precision-ground for clean, accurate cuts.",
     fullDescription:
       "Our paper cutting blades are manufactured for the printing and publishing industry, book binderies, and paper converting operations. Ground from high-carbon steel and chrome-vanadium alloys, these blades deliver the razor-sharp, durable cutting edge required for trimming reams, sheets, and stacked booklets without compression or tear.",
-    link: "/products/blades/paper-cutting-blades",
+    link: "/products/paper-cutting-blades",
     isFeatured: false,
 
     specs: [

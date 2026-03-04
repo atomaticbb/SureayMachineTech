@@ -1,8 +1,10 @@
+import 'dotenv/config';
 import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
 import cookieParser from "cookie-parser";
+import helmet from "helmet";
 import routes from "./routes/index.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
@@ -16,8 +18,25 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
+  // 安全响应头
+  app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc:  ["'self'", "'unsafe-inline'"],   // Vite 注入的 inline script
+        styleSrc:   ["'self'", "'unsafe-inline'"],
+        imgSrc:     ["'self'", "data:", "blob:"],
+        connectSrc: ["'self'"],
+        fontSrc:    ["'self'", "data:"],
+        objectSrc:  ["'none'"],
+        frameSrc:   ["'none'"],
+      },
+    },
+    crossOriginEmbedderPolicy: false, // 避免破坏非 COEP 资源
+  }));
+
   // 中间件
-  app.use(express.json());
+  app.use(express.json({ limit: '50kb' }));
   app.use(cookieParser());
   app.use(corsMiddleware);
   app.use(logger);

@@ -51,21 +51,21 @@ const HERO_DATA: IndustryHeroData = {
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 const PRODUCTS: IndustryProduct[] = [
-  { category: "Log Saw Blades",    name: "Tissue Log Saw Blades",           image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: true,
+  { category: "Log Saw Blades",    name: "Tissue Log Saw Blades",           image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: true,
     desc: "Triple-ground M2 HSS log saw blades for tissue and kitchen towel lines. OEM profile-matched to Fabio Perini, Körber, Fosber." },
-  { category: "Log Saw Blades",    name: "Napkin Paper Log Saw Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Log Saw Blades",    name: "Napkin Paper Log Saw Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Fine-tooth M2 HSS blades optimised for facial tissue and napkin log converting. Reduced fibre pull-out geometry." },
-  { category: "Log Saw Blades",    name: "TTB / TTBF Log Saw Blades",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Log Saw Blades",    name: "TTB / TTBF Log Saw Blades",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Through-the-blade (TTB/TTBF) tooth geometry for high-speed automatic log saws. Superior chip clearance at 500+ m/min." },
-  { category: "Rewinder Blades",   name: "Surface Rewinder Knives",         image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Rewinder Blades",   name: "Surface Rewinder Knives",         image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Precision ground rewinder trim and crush-cut knives. Matched upper and lower sets for clean edge quality at the reel." },
-  { category: "Rewinder Blades",   name: "Rewinder Perforation Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Rewinder Blades",   name: "Rewinder Perforation Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "M42 HSS perforation blades with precisely spaced tooth and land geometry for consistent toilet tissue perforation." },
-  { category: "Rewinder Blades",   name: "Tail Tie & Glue Unit Knives",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Rewinder Blades",   name: "Tail Tie & Glue Unit Knives",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Tail tie and dispensing unit knives precision-ground to OEM blade thickness and profile tolerances." },
-  { category: "Slitting Blades",   name: "Crush-Cut Slitting Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Slitting Blades",   name: "Crush-Cut Slitting Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Circular crush-cut slitting knives for light-duty tissue and wet wipe converting. D2 and M2 HSS grades." },
-  { category: "Slitting Blades",   name: "Paper Reel Slitter Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/blades/tissue-log-saw-blades", isFlagship: false,
+  { category: "Slitting Blades",   name: "Paper Reel Slitter Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
     desc: "Upper and lower reel slitter sets for jumbo roll reducing. Matched ground pair ensuring consistent slit width." },
 ];
 

@@ -26,7 +26,7 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
         <h2 className="font-black text-3xl text-[#001f4d] uppercase tracking-tight">
           Compatible Tooling
         </h2>
-        <Link href="/products/blades">
+        <Link href="/products">
           <span className="font-mono text-[10px] text-slate-700 uppercase tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
             View All →
           </span>
