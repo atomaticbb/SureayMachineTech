@@ -276,14 +276,15 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
 // ── Navbar ────────────────────────────────────────────────────────────────────
 export default function Navbar() {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const [mobileOpen,    setMobileOpen]    = useState(false);
   const [megaOpen,      setMegaOpen]      = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
   const [mobileProdTab, setMobileProdTab] = useState<"industry" | "category">("industry");
   const [hidden,        setHidden]        = useState(false);
   const lastScrollY    = useRef(0);
-  const megaCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const megaCloseTimer    = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const lastProdClickTime = useRef(0);
 
   // Hide on scroll-down, reveal on scroll-up
   useEffect(() => {
@@ -316,6 +317,15 @@ export default function Navbar() {
   // Debounced hover handlers
   const openMega  = () => { clearTimeout(megaCloseTimer.current); setMegaOpen(true);  };
   const closeMega = () => { megaCloseTimer.current = setTimeout(() => setMegaOpen(false), 120); };
+
+  const handleProductsClick = () => {
+    const now = Date.now();
+    if (now - lastProdClickTime.current < 300) {
+      setMegaOpen(false);
+      navigate("/products");
+    }
+    lastProdClickTime.current = now;
+  };
 
   const isActive   = (path: string) => location === path;
   const isProducts = location.startsWith("/products") || location.startsWith("/industry");
@@ -362,6 +372,8 @@ export default function Navbar() {
                   className={`${linkCls(isProducts || megaOpen)} flex items-center gap-1`}
                   aria-haspopup="true"
                   aria-expanded={megaOpen}
+                  onClick={handleProductsClick}
+                  onDoubleClick={() => { setMegaOpen(false); navigate("/products"); }}
                 >
                   PRODUCTS
                   <ChevronDown
