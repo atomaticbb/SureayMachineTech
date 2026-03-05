@@ -75,10 +75,17 @@ export default function ProductDetail() {
       "@type": "Offer",
       url: `https://www.sureay.com/products/${blade.id}`,
       priceCurrency: "USD",
-      price: "0.00",
+      price: "0",
       priceValidUntil: "2026-12-31",
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "47",
+      bestRating: "5",
+      worstRating: "1",
     },
   };
 

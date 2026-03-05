@@ -28,6 +28,13 @@ interface SchemaProduct {
     availability: string;
     itemCondition?: string;
   };
+  aggregateRating?: {
+    "@type": string;
+    ratingValue: string | number;
+    reviewCount: string | number;
+    bestRating?: string | number;
+    worstRating?: string | number;
+  };
 }
 
 interface PageMetaProps {
@@ -62,15 +69,16 @@ export default function PageMeta({
     // Add JSON-LD structured data if provided
     let structuredDataScript: HTMLScriptElement | null = null;
     if (schema) {
-      // Remove existing JSON-LD if present
-      const existingScript = document.querySelector('script[type="application/ld+json"]');
+      // Remove only the previously injected dynamic JSON-LD (not the static org schema in index.html)
+      const existingScript = document.querySelector('script[type="application/ld+json"][data-dynamic="true"]');
       if (existingScript) {
         existingScript.remove();
       }
 
-      // Add new JSON-LD script
+      // Add new JSON-LD script tagged so we can find it on next render
       structuredDataScript = document.createElement('script');
       structuredDataScript.type = 'application/ld+json';
+      structuredDataScript.setAttribute('data-dynamic', 'true');
       structuredDataScript.text = JSON.stringify(schema);
       document.head.appendChild(structuredDataScript);
     }
