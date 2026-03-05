@@ -9,31 +9,6 @@ import NewsGrid from "@/components/home/NewsGrid";
 import TechnicalFAQ from "@/components/home/TechnicalFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
-const JSON_LD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": ["Organization", "Manufacturer"],
-  name: "Sureay Machinery Manufacturing Co., Ltd.",
-  alternateName: "Sureay Machinery",
-  url: "https://www.sureay.com",
-  logo: "https://www.sureay.com/sureay.svg",
-  foundingDate: "2008",
-  description:
-    "Precision industrial blades, cutting knives and recycling machine solutions for plastic, metal, and paper industries. ISO 9001:2015 certified OEM/ODM manufacturer.",
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: "+86-156-5553-0829",
-      contactType: "sales",
-      email: "lynn@sureay.com",
-      availableLanguage: ["English", "Chinese"],
-    },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "CN",
-  },
-});
-
 const ITEM_LIST_LD = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -83,7 +58,6 @@ export default function Home() {
         <meta property="og:image" content="https://www.sureay.com/images/hero/homehero.webp" />
 
         {/* JSON-LD structured data */}
-        <script type="application/ld+json">{JSON_LD}</script>
         <script type="application/ld+json">{ITEM_LIST_LD}</script>
       </Helmet>
 
