@@ -32,15 +32,32 @@ const JSON_LD = JSON.stringify({
     "@type": "PostalAddress",
     addressCountry: "CN",
   },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Industrial Blades & Recycling Solutions",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Plastic Recycling Blades" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Metal Processing Knives" } },
-      { "@type": "Offer", itemOffered: { "@type": "Product", name: "Paper & Tissue Blades" } },
-    ],
-  },
+});
+
+const ITEM_LIST_LD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Industrial Blades & Recycling Solutions",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Plastic Recycling Blades",
+      url: "https://www.sureay.com/products/shredder-blades",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Metal Processing Knives",
+      url: "https://www.sureay.com/products/rotary-cutter-blades",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Paper & Tissue Blades",
+      url: "https://www.sureay.com/products/tissue-log-saw-blades",
+    },
+  ],
 });
 
 export default function Home() {
@@ -67,6 +84,7 @@ export default function Home() {
 
         {/* JSON-LD structured data */}
         <script type="application/ld+json">{JSON_LD}</script>
+        <script type="application/ld+json">{ITEM_LIST_LD}</script>
       </Helmet>
 
       <div className="min-h-screen bg-slate-50 pt-[68px]">
