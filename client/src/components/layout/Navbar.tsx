@@ -444,7 +444,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between px-6 h-[74px] border-b border-white/10 flex-shrink-0">
               <Link href="/">
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <img src="/sureay.svg" alt="Sureay Logo" className="w-12 h-12 brightness-0 invert" />
+                  <img src="/sureay-logo.svg" alt="Sureay Logo" className="w-16 h-16 brightness-0 invert" />
                   <span className="font-black text-[11px] tracking-[0.12em] text-white uppercase leading-none">
                     SUREAY BLADES
                   </span>

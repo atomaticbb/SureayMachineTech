@@ -15,7 +15,7 @@ export default function Footer() {
                 <img
                   src="/sureay.svg"
                   alt="Sureay Logo"
-                  className="w-10 h-10 brightness-0 invert opacity-90"
+                  className="w-12 h-12 brightness-0 invert opacity-90"
                 />
                 <span className="text-base font-black text-white tracking-[0.08em] uppercase leading-none">
                   SUREAY BLADES
