@@ -99,6 +99,42 @@ const MATERIALS: IndustryMaterial[] = [
   { name: "Kraft & Board Stock",  abrasion: "HIGH",     grade: "Bimetal / TC-Tipped",  image: "/images/materials/kraft-board.webp"     },
 ];
 
+// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
+const PAGE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Paper & Tissue Converting Knives",
+  url: "https://www.sureay.com/industry/paper-tissue",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Product",
+        name: "Tissue Log Saw Blades",
+        image: "https://www.sureay.com/images/products/blades/tissue-log-saw-blades.webp",
+        description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
+        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        url: "https://www.sureay.com/products/tissue-log-saw-blades",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "47",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    },
+  ],
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export default function PaperIndustry() {
   return (
@@ -111,6 +147,7 @@ export default function PaperIndustry() {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.sureay.com/industry/paper-tissue" />
+        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">

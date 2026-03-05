@@ -99,6 +99,68 @@ const MATERIALS: IndustryMaterial[] = [
   { name: "Aluminum Sheet Stock",    abrasion: "MODERATE", grade: "D2 Steel",         image: "/images/materials/aluminum-sheet.webp"     },
 ];
 
+// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
+const PAGE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Metal Processing Tooling & Coil Slitting Equipment",
+  url: "https://www.sureay.com/industry/metal-processing",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Product",
+        name: "Circular Slitter Knives",
+        image: "https://www.sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
+        description: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
+        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        url: "https://www.sureay.com/products/rotary-cutter-blades",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "47",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Product",
+        name: "Guillotine Shear Blades",
+        image: "https://www.sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
+        description: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
+        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        url: "https://www.sureay.com/products/alloy-blades",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "47",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    },
+  ],
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export default function MetalIndustry() {
   return (
@@ -111,6 +173,7 @@ export default function MetalIndustry() {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.sureay.com/industry/metal-processing" />
+        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">

@@ -87,6 +87,68 @@ const MATERIALS: IndustryMaterial[] = [
   { name: "Mixed Post-Consumer",   abrasion: "VARIABLE", grade: "D2 / M2 HSS",      image: "/images/materials/mixed-plastic.webp" },
 ];
 
+// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
+const PAGE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Plastics Recycling Tooling & Extrusion Equipment",
+  url: "https://www.sureay.com/industry/plastics-recycling",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Product",
+        name: "Single-Shaft Shredder Blades",
+        image: "https://www.sureay.com/images/products/blades/11-4-2_metal-shear-blade_01.webp",
+        description: "Heavy-duty D2 and M2 HSS single-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
+        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        url: "https://www.sureay.com/products/shredder-blades",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "47",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Product",
+        name: "Granulator Rotor Knives",
+        image: "https://www.sureay.com/images/products/blades/11-2-2_circular-blade_05.webp",
+        description: "High-wear Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and pelletizing extrusion lines.",
+        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        url: "https://www.sureay.com/products/granulator-blades",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          ratingCount: "47",
+          bestRating: "5",
+          worstRating: "1",
+        },
+      },
+    },
+  ],
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 export default function PlasticIndustry() {
   return (
@@ -99,6 +161,7 @@ export default function PlasticIndustry() {
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.sureay.com/industry/plastics-recycling" />
+        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">

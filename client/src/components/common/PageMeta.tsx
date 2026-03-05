@@ -31,7 +31,7 @@ interface SchemaProduct {
   aggregateRating?: {
     "@type": string;
     ratingValue: string | number;
-    reviewCount: string | number;
+    ratingCount: string | number;
     bestRating?: string | number;
     worstRating?: string | number;
   };

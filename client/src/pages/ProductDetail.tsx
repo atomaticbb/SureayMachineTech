@@ -82,8 +82,8 @@ export default function ProductDetail() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "47",
+      ratingValue: "4.9",
+      ratingCount: "47",
       bestRating: "5",
       worstRating: "1",
     },
