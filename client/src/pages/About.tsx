@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import SEO from "@/components/common/SEO";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
 // ── Count-Up Component ───────────────────────────────────────────────────────
@@ -133,6 +134,11 @@ const CERTIFICATIONS = [
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="About Sureay — 15+ Years of Blade Engineering"
+        description="ISO 9001:2015 certified OEM blade manufacturer since 2008. 10,000+ custom designs, 98% client retention, serving 50+ countries worldwide."
+        canonicalUrl="/about"
+      />
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════════════════════

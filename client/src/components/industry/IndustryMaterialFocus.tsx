@@ -22,7 +22,7 @@ export default function IndustryMaterialFocus({ materials }: Props) {
           <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
             Application Engineering
           </p>
-          <h2 className="font-black text-3xl md:text-4xl lg:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.0]">
+          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.0]">
             Materials We Process.
           </h2>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
@@ -50,7 +50,7 @@ export default function IndustryMaterialFocus({ materials }: Props) {
               <div className="p-8 flex flex-col flex-grow bg-white">
 
                 <div className="flex justify-end mb-3">
-                  <span style={MONO} className="text-[9px] text-slate-400 uppercase">
+                  <span style={MONO} className="text-[10px] text-slate-400 uppercase">
                     REF ID: {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>

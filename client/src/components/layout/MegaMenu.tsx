@@ -131,48 +131,48 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
   bottomLinkHref: "/products",
   categories: [
     {
-      id:    "recycling",
-      title: "PLASTICS RECYCLING",
+      id:    "recycling-waste",
+      title: "RECYCLING & WASTE MANAGEMENT",
       featured: {
         coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
-        tagline:    "TACKLING EXTREME ABRASION",
+        tagline:    "EXTREME DURABILITY & IMPACT RESISTANCE",
         subtitle:   "ACTIVE INDUSTRY",
-        title:      "PLASTICS RECYCLING",
-        ctaText:    "VIEW SECTOR SOLUTIONS",
-        ctaHref:    "/industry/plastics-recycling",
+        title:      "RECYCLING & WASTE MANAGEMENT",
+        ctaText:    "VIEW RECYCLING SOLUTIONS",
+        ctaHref:    "/plastic-industry",
       },
       items: blades
         .filter(b => b.sector === "recycling")
         .map(bladeToItem),
     },
     {
-      id:    "paper",
-      title: "PAPER & TISSUE",
+      id:    "paper-packaging-converting",
+      title: "PAPER, PACKAGING & CONVERTING",
       featured: {
         coverImage: "/images/applications/tissue-and-paper.webp",
-        tagline:    "PROCESSING HIGH-SPEED LINES",
+        tagline:    "PRECISION CUTTING · ZERO DUST",
         subtitle:   "ACTIVE INDUSTRY",
-        title:      "PAPER & TISSUE",
-        ctaText:    "VIEW SECTOR SOLUTIONS",
-        ctaHref:    "/industry/paper-tissue",
+        title:      "PAPER, PACKAGING & CONVERTING",
+        ctaText:    "VIEW CONVERTING SOLUTIONS",
+        ctaHref:    "/paper-industry",
       },
       items: blades
-        .filter(b => b.sector === "paper")
+        .filter(b => b.sector === "paper" || b.sector === "converting")
         .map(bladeToItem),
     },
     {
-      id:    "converting",
-      title: "METAL CONVERTING",
+      id:    "metal-processing",
+      title: "METAL COIL PROCESSING",
       featured: {
         coverImage: "/images/applications/Metal-Waste-Recycling.webp",
-        tagline:    "±0.002 mm TOLERANCE",
+        tagline:    "HIGH-SPEED SHEAR CUTTING",
         subtitle:   "ACTIVE INDUSTRY",
-        title:      "METAL & FILM CONVERTING",
-        ctaText:    "VIEW SECTOR SOLUTIONS",
-        ctaHref:    "/industry/metal-processing",
+        title:      "METAL COIL PROCESSING",
+        ctaText:    "VIEW METAL SOLUTIONS",
+        ctaHref:    "/metal-industry",
       },
       items: blades
-        .filter(b => b.sector === "converting")
+        .filter(b => b.sector === "metal")
         .map(bladeToItem),
     },
   ],

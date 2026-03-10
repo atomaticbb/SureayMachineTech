@@ -5,6 +5,7 @@
  */
 
 import { Helmet } from "react-helmet-async";
+import SEO from "@/components/common/SEO";
 import Navbar    from "@/components/layout/Navbar";
 import Footer    from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
@@ -13,6 +14,7 @@ import IndustryToolingMatrix      from "@/components/industry/IndustryToolingMat
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline        from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus      from "@/components/industry/IndustryMaterialFocus";
+import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -50,26 +52,19 @@ const HERO_DATA: IndustryHeroData = {
 };
 
 // ─── Products ─────────────────────────────────────────────────────────────────
-const PRODUCTS: IndustryProduct[] = [
-  { category: "Log Saw Blades",    name: "Tissue Log Saw Blades",           image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: true,
-    desc: "Triple-ground M2 HSS log saw blades for tissue and kitchen towel lines. OEM profile-matched to Fabio Perini, Körber, Fosber." },
-  { category: "Log Saw Blades",    name: "Napkin Paper Log Saw Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Fine-tooth M2 HSS blades optimised for facial tissue and napkin log converting. Reduced fibre pull-out geometry." },
-  { category: "Log Saw Blades",    name: "TTB / TTBF Log Saw Blades",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Through-the-blade (TTB/TTBF) tooth geometry for high-speed automatic log saws. Superior chip clearance at 500+ m/min." },
-  { category: "Rewinder Blades",   name: "Surface Rewinder Knives",         image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Precision ground rewinder trim and crush-cut knives. Matched upper and lower sets for clean edge quality at the reel." },
-  { category: "Rewinder Blades",   name: "Rewinder Perforation Blades",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "M42 HSS perforation blades with precisely spaced tooth and land geometry for consistent toilet tissue perforation." },
-  { category: "Rewinder Blades",   name: "Tail Tie & Glue Unit Knives",     image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Tail tie and dispensing unit knives precision-ground to OEM blade thickness and profile tolerances." },
-  { category: "Slitting Blades",   name: "Crush-Cut Slitting Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Circular crush-cut slitting knives for light-duty tissue and wet wipe converting. D2 and M2 HSS grades." },
-  { category: "Slitting Blades",   name: "Paper Reel Slitter Knives",       image: "/images/products/blades/tissue-log-saw-blades.webp", href: "/products/tissue-log-saw-blades", isFlagship: false,
-    desc: "Upper and lower reel slitter sets for jumbo roll reducing. Matched ground pair ensuring consistent slit width." },
-];
+// Dynamically load products from blades.ts where sector === "paper" || sector === "converting"
+const PRODUCTS: IndustryProduct[] = blades
+  .filter(blade => blade.sector === "paper" || blade.sector === "converting")
+  .map((blade, index) => ({
+    category: blade.categoryDisplay,
+    name: blade.name,
+    image: blade.image,
+    href: blade.link,
+    isFlagship: index === 0, // First product is flagship
+    desc: blade.description, // Use blade description from blades.ts
+  }));
 
-const FILTER_CATEGORIES = ["ALL", "LOG SAW BLADES", "REWINDER BLADES", "SLITTING BLADES"];
+const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -139,14 +134,12 @@ const PAGE_SCHEMA = {
 export default function PaperIndustry() {
   return (
     <>
+      <SEO
+        title="Paper & Tissue Converting Knives & Equipment"
+        description="Triple-ground tissue log saw blades, rewinder perforation knives and slitting tooling for high-speed paper and tissue converting lines. OEM-compatible with Fabio Perini, Körber, Fosber."
+        canonicalUrl="/industry/paper-tissue"
+      />
       <Helmet>
-        <title>Paper & Tissue Converting Knives & Equipment | Sureay Machinery</title>
-        <meta
-          name="description"
-          content="Triple-ground tissue log saw blades, rewinder perforation knives and slitting tooling for high-speed paper and tissue converting lines. OEM-compatible with Fabio Perini, Körber, Fosber."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureay.com/industry/paper-tissue" />
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 

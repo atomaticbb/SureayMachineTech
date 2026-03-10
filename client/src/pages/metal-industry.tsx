@@ -5,6 +5,7 @@
  */
 
 import { Helmet } from "react-helmet-async";
+import SEO from "@/components/common/SEO";
 import Navbar    from "@/components/layout/Navbar";
 import Footer    from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
@@ -13,6 +14,7 @@ import IndustryToolingMatrix      from "@/components/industry/IndustryToolingMat
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline        from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus      from "@/components/industry/IndustryMaterialFocus";
+import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -50,26 +52,19 @@ const HERO_DATA: IndustryHeroData = {
 };
 
 // ─── Products ─────────────────────────────────────────────────────────────────
-const PRODUCTS: IndustryProduct[] = [
-  { category: "Slitter Knives", name: "Circular Slitter Knives",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: true,
-    desc: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out. Burr-free steel coil slitting." },
-  { category: "Slitter Knives", name: "Tungsten Carbide Slitter Discs", image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
-    desc: "Submicron-grain TC slitter discs for stainless steel and abrasive strip materials. Extended tool life versus HSS." },
-  { category: "Slitter Knives", name: "HSS Slitter Knives",             image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
-    desc: "M2 HSS circular knives for mild steel and aluminium coil slitting. Cost-effective OEM-compatible geometry." },
-  { category: "Shear Blades",   name: "Guillotine Shear Blades",        image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
-    desc: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate." },
-  { category: "Shear Blades",   name: "Flying Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
-    desc: "High-speed flying shear tooling for continuous strip processing lines. Matched pairs ground to ±0.01 mm gap tolerance." },
-  { category: "Shear Blades",   name: "Rotary Shear Blades",            image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/rotary-cutter-blades", isFlagship: false,
-    desc: "OEM-specification rotary shear blades for coil-fed blanking and trimming operations." },
-  { category: "Punch Dies",     name: "Precision Punch & Die Sets",     image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
-    desc: "EDM-finished punch-and-die sets for high-volume stamping. Tungsten carbide and D2 tooling available." },
-  { category: "Punch Dies",     name: "Tungsten Carbide Insert Dies",   image: "/images/products/blades/11-6-2_metal-slitter-knife.webp", href: "/products/alloy-blades", isFlagship: false,
-    desc: "TC insert dies for ultra-high-volume progressive stamping. OEM bore and flange geometry matched on CMM." },
-];
+// Dynamically load products from blades.ts where sector === "metal"
+const PRODUCTS: IndustryProduct[] = blades
+  .filter(blade => blade.sector === "metal")
+  .map((blade, index) => ({
+    category: blade.categoryDisplay,
+    name: blade.name,
+    image: blade.image,
+    href: blade.link,
+    isFlagship: index === 0, // First product is flagship
+    desc: blade.description, // Use blade description from blades.ts
+  }));
 
-const FILTER_CATEGORIES = ["ALL", "SLITTER KNIVES", "SHEAR BLADES", "PUNCH DIES"];
+const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -165,14 +160,12 @@ const PAGE_SCHEMA = {
 export default function MetalIndustry() {
   return (
     <>
+      <SEO
+        title="Metal Processing Tooling & Coil Slitting Equipment"
+        description="Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC."
+        canonicalUrl="/industry/metal-processing"
+      />
       <Helmet>
-        <title>Metal Processing Tooling & Coil Slitting Equipment | Sureay Machinery</title>
-        <meta
-          name="description"
-          content="Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureay.com/industry/metal-processing" />
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 

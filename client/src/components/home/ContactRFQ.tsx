@@ -85,11 +85,11 @@ export default function ContactRFQ() {
   }
 
   return (
-    <section className="py-20 lg:py-24 bg-white border-t border-slate-200">
+    <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
           <div className="mb-12">
-            <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-2">
+            <p className="text-slate-500 font-bold text-sm uppercase tracking-[0.3em] mb-2">
               Reach Our Team
             </p>
             <h2 className="font-black text-3xl md:text-4xl text-[#003366] uppercase tracking-tight leading-[1.05]">
@@ -103,8 +103,8 @@ export default function ContactRFQ() {
             {/* Left: Contact channels */}
             <div className="flex flex-col gap-5 py-8">
               <div>
-                <h3 className="font-black text-xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Contact Our Team</h3>
-                <p className="text-xs text-slate-500">Discuss your requirements directly with our engineers.</p>
+                <h3 className="font-black text-2xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Contact Our Team</h3>
+                <p className="text-sm text-slate-600">Discuss your requirements directly with our engineers.</p>
               </div>
 
               {/* Email */}
@@ -186,8 +186,8 @@ export default function ContactRFQ() {
 
             {/* Right: Quote form */}
             <div className="bg-white border border-slate-200 shadow-sm rounded-none p-8 flex flex-col">
-              <h3 className="font-black text-xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Request a Quote</h3>
-              <p className="text-xs text-slate-500 mb-6">Our engineering team responds within 24 hours.</p>
+              <h3 className="font-black text-2xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Request a Quote</h3>
+              <p className="text-sm text-slate-600 mb-6">Our engineering team responds within 24 hours.</p>
 
               {submitted ? (
                 /* ── Success state ─────────────────────────────────────── */
@@ -219,7 +219,7 @@ export default function ContactRFQ() {
                 <form onSubmit={handleSubmit} className="flex-1 flex flex-col gap-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                         Your Name *
                       </label>
                       <input
@@ -231,7 +231,7 @@ export default function ContactRFQ() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                      <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                         Company Email *
                       </label>
                       <input
@@ -245,7 +245,7 @@ export default function ContactRFQ() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                       Inquiry Type
                     </label>
                     <select
@@ -263,7 +263,7 @@ export default function ContactRFQ() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                       Phone / WhatsApp
                     </label>
                     <input
@@ -275,7 +275,7 @@ export default function ContactRFQ() {
                   </div>
 
                   <div className="flex-1">
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                       Requirements *
                     </label>
                     <textarea
@@ -289,7 +289,7 @@ export default function ContactRFQ() {
 
                   {/* ── CAD / Technical Drawing Upload ────────────────── */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
+                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
                       CAD / Drawing{" "}
                       <span className="text-slate-400 normal-case tracking-normal font-normal">
                         (optional · max {MAX_FILE_MB} MB)

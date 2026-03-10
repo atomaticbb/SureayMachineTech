@@ -47,7 +47,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
           <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
             Engineered Product Range
           </p>
-          <h2 className="font-black text-3xl md:text-4xl lg:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.0]">
+          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.0]">
             Core Tooling Matrix.
           </h2>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
@@ -94,7 +94,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
                       <span className="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-slate-300 pointer-events-none" />
 
                       <div className="absolute top-0 left-0 z-10">
-                        <span className="inline-block border-l-4 border-[#001f4d] bg-white/80 backdrop-blur-sm text-[#001f4d] font-black text-[9px] uppercase tracking-[0.3em] px-3 py-2">
+                        <span className="inline-block border-l-4 border-[#001f4d] bg-white/80 backdrop-blur-sm text-[#001f4d] font-black text-[10px] uppercase tracking-[0.3em] px-3 py-2">
                           {product.isFlagship ? "★ FLAGSHIP" : product.category}
                         </span>
                       </div>
@@ -113,7 +113,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
                       <h3 className="font-black text-[17px] text-[#001f4d] uppercase tracking-[-0.03em] leading-[1.15] mb-3 line-clamp-2 min-h-[42px]">
                         {product.name}
                       </h3>
-                      <p className="text-[13px] text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
+                      <p className="text-[14px] text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
                         {product.desc ?? (
                           product.isFlagship
                             ? "Extreme-wear grade engineered for maximum continuous uptime. 100% CMM-verified tolerance."

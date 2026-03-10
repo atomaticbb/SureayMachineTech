@@ -1,14 +1,16 @@
 /**
  * Blade Data Structure - Source of Truth for BladeListPage and BladeDetail
- * Mirrors the machines.ts pattern for a consistent data-driven architecture.
  */
 
-// ===== REUSED TYPES (shared structure with machines.ts) =====
+// ===== SHARED TYPES =====
+
+/** Key spec row shown in ProductCard and DecisiveSpecs table */
 export interface BladeSpec {
   label: string;
   value: string;
 }
 
+/** Engineering Advantages card (TechnicalAudit) */
 export interface BladeComponent {
   id: string;
   tag: string;
@@ -18,39 +20,17 @@ export interface BladeComponent {
   link?: string;
 }
 
-export interface BladeApplicationItem {
-  title: string;
-  img: string;
-}
-
-export interface BladeSpecCategory {
-  id: string;
-  label: string;
-  specs: Record<string, string>;
-}
-
-export interface BladeZLayoutSection {
-  title: string;
-  accentColor?: "blue" | "orange";
-  paragraphs: string[];
-  imageSrc: string;
-  imageAlt: string;
-  imagePosition?: "left" | "right";
-  background?: "default" | "muted";
-}
-
-export interface BladeProcessItem {
-  id: string;
-  number: string;
-  title: string;
-  description?: string;
-  image: string;
-  size?: "large" | "small";
-}
-
-export interface BladeVideoConfig {
-  url: string;
-  poster?: string;
+/** One row in the Common Standard Dimensions table (ComprehensiveData) */
+export interface StandardDimension {
+  spec?: string;       // Optional first column: e.g. "450 * 51 * 12/10"
+  dimension?: string;  // Alternative to od: full dimension spec "L × W × T"
+  od?: string;         // Outer Diameter (or Length for straight blades)
+  bolt?: string;       // Alternative to id: bolt hole spec (e.g. "M12")
+  id?: string;         // Inner Diameter / bore (or Width for straight blades)
+  type?: string;       // Alternative to thickness: knife type
+  thickness?: string;  // Blade thickness (circular/disc blades)
+  length?: string;     // Blade length (shredder inserts) or Edge Thickness
+  teeth?: string;      // Tooth count (shredder inserts) or Body Thickness
 }
 
 // ===== BLADE CATEGORY TYPES =====
@@ -64,38 +44,45 @@ export type BladeCategoryType =
   | "other_blades";
 
 // ===== BLADE SECTOR TYPE (second filter axis, mirrors machines.ts `tonnage`) =====
-export type BladeSectorType = "recycling" | "paper" | "converting" | "other";
+export type BladeSectorType = "recycling" | "paper" | "converting" | "metal" | "other";
 
 // ===== MAIN BLADE INTERFACE =====
 export interface Blade {
-  // === Core Fields (List Page) ===
+  // ── List page (always present) ───────────────────────────────────────────
   id: string;
   name: string;
   fullName: string;
   category: BladeCategoryType;
-  sector: BladeSectorType; // second filter axis, mirrors machines.ts `tonnage`
+  sector: BladeSectorType;
   categoryDisplay: string;
   image: string;
-  badge?: string;
-  badgeColor?: "green" | "blue" | "red" | "slate" | "purple" | "orange" | "teal";
   description: string;
   link: string;
-  specs: BladeSpec[]; // 4 key specs for hero dashboard panel
+  specs: BladeSpec[];             // Key specs: ProductCard + DecisiveSpecs table
 
-  // === Detail Page Fields ===
-  gallery?: string[];
-  fullDescription?: string;
-  features?: string[];
-  video?: BladeVideoConfig;
-  components?: BladeComponent[];
-  applicationItems?: BladeApplicationItem[];
-  specCategories?: BladeSpecCategory[];
-  zLayoutSections?: BladeZLayoutSection[];
-  manufacturingProcess?: BladeProcessItem[];
+  // ── Optional list-page decorators ────────────────────────────────────────
+  badge?: string;
+  badgeColor?: "green" | "blue" | "red" | "slate" | "purple" | "orange" | "teal";
 
-  // === Meta ===
+  // ── Detail page ──────────────────────────────────────────────────────────
+  gallery?: string[];             // [0–3] thumbnail track · [4] DecisiveSpecs · [5] ComprehensiveData
+  fullDescription?: string;       // PageMeta description (longer copy)
+  features?: string[];            // BladeHero feature tag pills
+  components?: BladeComponent[];  // TechnicalAudit cards
+  standardDimensions?: StandardDimension[]; // ComprehensiveData table
+
+  // ── Detail page table label overrides (for non-circular blades) ──────────
+  dimensionLabels?: {
+    col0?: string;   // optional first "Specification" column
+    col1?: string;   // replaces "Outer Diameter (OD)"
+    col2?: string;   // replaces "Inner Diameter (ID)"
+    col3?: string;   // replaces "Thickness"
+    col4?: string;   // replaces "Teeth" (length/teeth mode only)
+    caption?: string; // replaces default table footnote
+  };
+
+  // ── Meta / utility ────────────────────────────────────────────────────────
   relatedBladeIds?: string[];
-  leadTime?: string;
   isFeatured?: boolean;
   catalogUrl?: string;
 }
@@ -103,190 +90,104 @@ export interface Blade {
 // ===== BLADE DATA =====
 export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
-  // 1. Alloy Blades
+  // 1. Rotary Slitter Knives & Circular Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
-    id: "alloy-blades",
-    name: "Industrial Alloy Blades",
-    fullName: "Premium Industrial Alloy Steel Cutting Blades",
-    category: "alloy_blades",
-    sector: "recycling",
-    categoryDisplay: "Alloy Blades",
-    image: "/images/products/blades/11-2-2_circular-blade_01.webp",
+    id: "rotary-slitter-knives",
+    name: "Rotary Slitter Knives",
+    fullName: "Industrial Rotary Slitter Knives & Circular Slitting Blades",
+    category: "rotary_blades",
+    sector: "converting", // Changed from "recycling" to "converting" (more accurate industry)
+    categoryDisplay: "Rotary Slitter Knives",
+    image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
     badge: "Best Seller",
     badgeColor: "green",
     gallery: [
-      "/images/products/blades/11-2-2_circular-blade_01.webp",
-      "/images/products/blades/11-2-2_circular-blade_02.webp",
-      "/images/products/blades/11-2-2_circular-blade_03.webp",
-      "/images/products/blades/11-2-2_circular-blade_04.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp", // DecisiveSpecs panel
+      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp", // ComprehensiveData panel - placeholder
     ],
+
+    // Shortened for SEO Meta Description & UI Product Cards (< 155 chars)
     description:
-      "High-performance alloy steel blades for industrial cutting applications. Engineered for maximum wear resistance and edge retention.",
+      "Our circular rotary slitter knives are engineered for continuous, high-speed converting lines. Manufactured to strict ±0.02mm tolerances with ultra-smooth finishes, they ensure clean, dust-free shear and score cutting. Whether processing flexible packaging film, abrasive paper, metal foils, or non-wovens, we deliver customized metallurgy—from D2 to Solid Carbide—to maximize lifespan and minimize downtime.",
+
+    // Structured for B2B reading flow and technical authority
     fullDescription:
-      "Our industrial alloy blades are precision-engineered cutting tools manufactured from premium high-grade tool steel alloys including 9CrSi, Cr12MoV, and W6Mo5Cr4V2. Designed for demanding industrial cutting operations that require superior wear resistance, edge retention, and cutting precision. Each blade undergoes advanced vacuum heat treatment to achieve optimal hardness (58–62 HRC) and dimensional stability. Ideal for recycling facilities, paper processing plants, plastic extrusion lines, and food processing operations requiring consistent, high-quality cuts over extended service periods.",
-    link: "/products/alloy-blades",
+      "Our industrial circular rotary slitter knives are engineered for continuous, high-speed converting lines. Manufactured to strict dimensional tolerances (±0.02mm) with ultra-smooth surface finishes, these blades ensure clean, dust-free shear and score cutting. Whether you are processing flexible packaging film, abrasive paper, metal foils, or non-wovens, we provide customized metallurgical solutions—from standard D2 tool steel to advanced powder metallurgy (PM) and Solid Carbide—to maximize your blade lifespan and minimize machine downtime.\n\n## Industrial Converting Applications\n\nOur circular rotary slitter knives are engineered for continuous-web converting processes, ensuring clean edges, minimal dust generation, and extended run times across a variety of cutting principles and materials.\n\n### By Cutting Method\n\n**Shear Slitting (Top & Bottom Knives):** The scissor action between male and female rotary knives creates a precise shearing cut. This method is ideal for paper, non-wovens, and light plastics, preventing edge deformation and eliminating dust. Proper tangential overlap and knife-to-knife clearance (typically 0.05–0.15 mm) are critical to achieve clean edge quality.\n\n**Crush/Score Cutting (Anvil Cutters):** A hardened circular blade compresses the web against a smooth or grooved rubber-covered anvil roll. This technique is widely used in pressure-sensitive tapes, multi-layer laminates, and flexible packaging where adhesive layers prevent clean shear slitting. The blade profile and anvil hardness are tailored to each substrate to avoid delamination or adhesive squeeze-out.\n\n**Razor Slitting (Single-Knife Trimming):** Ultra-sharp circular knives trim excess material at high speed, primarily used for edge trimming on extrusion lines, cast film, and nonwoven production. The blade is typically free-floating or lightly supported, relying on its extreme sharpness to minimize web tension and prevent edge curl.\n\n### By Material & Industry\n\n**Paper:** Tissue paper, kraft paper, newsprint, coated paper, board stock—our blades deliver clean, dust-free edges essential for high-quality printing and packaging.\n\n**Flexible Plastics:** BOPP, BOPET, cast polypropylene, stretch films, shrink films. Precision-ground knives prevent static cling and edge curl caused by heat buildup.\n\n**Metal Foils:** Aluminum foil, copper foil, battery electrode foils. Solid carbide or powder metallurgy blades are required to resist the extreme abrasiveness and maintain tight tolerances.\n\n**Non-Wovens:** Spunbond, meltblown, medical fabrics, filter media. Specialized edge geometries prevent fiber fraying and material pilling during slitting.\n\n**Tapes & Labels:** Masking tape, duct tape, double-sided adhesive, label stock. Anti-stick coatings (Teflon, DLC) eliminate adhesive buildup, ensuring consistent slit width and reducing cleaning frequency.",
+    link: "/products/rotary-slitter-knives",
     isFeatured: true,
 
     specs: [
-      { label: "Material", value: "9CrSi / Cr12MoV" },
-      { label: "Hardness", value: "58 - 62 HRC" },
-      { label: "Tolerance", value: "±0.05 mm" },
-      { label: "Max Temp", value: "600 °C" },
-    ],
+      { label: "Material", value: "52100, D2, M2 (HSS), ASP23/ASP52 (PM), Solid Carbide" },
+      { label: "Cutting Styles",  value: "Shear Slitting, Score/Crush Cutting, Razor Slitting" },
+      { label: "Surface Finish",  value: "Precision ground to Ra 0.2 - 0.4" },
+      { label: "Tolerance",       value: "Thickness: ±0.002mm | Runout: ≤0.02mm" },
+      { label: "Coatings",        value: "TiN, DLC, Teflon, CrAl (Optional for friction reduction)" },
+      { label: "Application",     value: "Paper & Corrugated Packaging, Flexible Plastics & Films, Metal Foils (Battery & Packaging), Non-Wovens & Textiles, Tapes & Labels" },
+      ],
 
-    video: {
-      url: "",
-      poster: "/images/products/product.webp",
-    },
+    features: [
+      "Ultra-precision thickness and runout tolerances (±0.002mm) to prevent blade wobble at high RPMs.",
+      "Customized metallurgy (D2 to Solid Carbide) tailored to match the abrasiveness of your specific web material.",
+      "Advanced surface coatings (TiN, DLC) available to eliminate adhesive build-up and reduce cutting friction.",
+    ],
 
     components: [
       {
-        id: "vacuum-heat-treatment",
-        tag: "HEAT TREATMENT",
-        title: "Vacuum Heat Treatment Process",
+        id: "multi-material-compatibility",
+        tag: "METALLURGY",
+        title: "Application-Specific Tool Steels",
         description:
-          "Every blade undergoes a precisely controlled vacuum furnace cycle to achieve uniform hardness of 58–62 HRC throughout the entire cross-section, eliminating surface decarburization and ensuring consistent cutting performance from edge to bore.",
-        image: "/images/products/product.webp",
+          "We don't believe in 'one-size-fits-all'. We match the blade material to your web. Choose high-carbon steels for standard paper, M2 High-Speed Steel for tough plastics, or Solid Carbide for highly abrasive metal foils and fiberglass.",
+        image: "/images/products/blades/11-2-2_circular-blade_01.webp",
       },
       {
-        id: "cnc-profile-grinding",
-        tag: "PRECISION GRINDING",
-        title: "5-Axis CNC Profile Grinding",
+        id: "advanced-coating-systems",
+        tag: "EDGE RETENTION",
+        title: "Advanced Surface Treatments",
         description:
-          "Our advanced CNC grinding centers machine every blade face, edge angle, and bore to micro-level tolerances (±0.05mm). The result is a perfectly flat, burr-free cutting surface that maximizes contact efficiency and minimizes material degradation.",
-        image: "/images/products/product.webp",
+          "For converting sticky tapes, adhesives, or high-friction films, our optional TiN, DLC, and Teflon coatings dramatically reduce web drag, prevent material build-up on the blade bevel, and extend the MTBR (Mean Time Between Replacements).",
+        image: "/images/products/blades/11-2-2_circular-blade_02.webp",
       },
       {
-        id: "custom-steel-selection",
-        tag: "MATERIAL SCIENCE",
-        title: "Application-Specific Steel Selection",
+        id: "five-cutting-applications",
+        tag: "PROCESS CAPABILITY",
+        title: "Optimized Edge Geometries",
         description:
-          "We match the steel grade to your specific application. 9CrSi for cost-effective general cutting, Cr12MoV / SKD-11 for high-abrasion environments, and W6Mo5Cr4V2 (M2 HSS) for high-temperature applications — each delivering optimal toughness-hardness balance.",
-        image: "/images/products/product.webp",
-      },
-      {
-        id: "dimensional-inspection",
-        tag: "QUALITY CONTROL",
-        title: "Full Dimensional Inspection",
-        description:
-          "Each finished blade is measured on CMM (Coordinate Measuring Machine) against the drawing specification. Hardness spot-checks and edge geometry audits are performed before packing, guaranteeing zero defect delivery.",
-        image: "/images/products/product.webp",
+          "Available in various edge profiles (single bevel, double bevel, blunt edge) engineered specifically for shear slitting (top/bottom knives), crush/score cutting against hardened anvils, or high-speed rewinder trimming.",
+        image: "/images/products/blades/11-2-2_circular-blade_03.webp",
       },
     ],
 
-    applicationItems: [
-      { title: "Plastic Recycling & Extrusion", img: "/images/products/product.webp" },
-      { title: "Paper & Pulp Processing", img: "/images/products/product.webp" },
-      { title: "Rubber & Tire Cutting", img: "/images/products/product.webp" },
-      { title: "Food Processing Lines", img: "/images/products/product.webp" },
+    // ADDED: Crucial dimensional structure for circular blades (4-column layout)
+    dimensionLabels: {
+      col0: "Blade Type",
+      col1: "Outer Diameter",
+      col2: "Inner Diameter",
+      col3: "Thickness",
+      caption: "* Standard dimensions for shear slitting pairs. Top blades (dished) and bottom blades (multi-groove anvils) work together for precision shear cutting. Custom OD/ID and groove configurations available upon request.",
+    },
+
+    standardDimensions: [
+      // Top Blade (Dished)
+      { spec: "Top Blade (Dished)", od: "75 mm", id: "45 mm", thickness: "1.0 / 1.2 mm" },
+      { spec: "Top Blade (Dished)", od: "100 mm", id: "35 mm", thickness: "1.2 mm" },
+      { spec: "Top Blade (Dished)", od: "118 mm", id: "80 mm", thickness: "1.2 mm" },
+      { spec: "Top Blade (Dished)", od: "150 mm", id: "80 mm", thickness: "2.5 mm" },
+
+      // Bottom Blade (Anvil)
+      { spec: "Bottom Blade (Anvil)", od: "70 mm", id: "45 mm", thickness: "10 / 8 mm" },
+      { spec: "Bottom Blade (Anvil)", od: "80 mm", id: "60 mm", thickness: "20 / 16 mm" },
+      { spec: "Bottom Blade (Anvil)", od: "100 mm", id: "70 mm", thickness: "20 / 16 mm" },
+      { spec: "Bottom Blade (Anvil)", od: "108 mm", id: "80 mm", thickness: "20 / 18 mm" },
     ],
 
-    specCategories: [
-      {
-        id: "materials",
-        label: "Material Options",
-        specs: {
-          "Standard Tool Steel": "9CrSi",
-          "Cold Work Die Steel": "Cr12MoV (D2 / SKD-11)",
-          "High-Speed Steel (HSS)": "W6Mo5Cr4V2 (M2)",
-          "Coating Options": "TiN, TiCN, CrN (optional)",
-          "Max Operating Temp": "Up to 600 °C",
-        },
-      },
-      {
-        id: "dimensions",
-        label: "Dimensional Capabilities",
-        specs: {
-          "Blade Size Range": "40×40×25 mm to 150×150×35 mm",
-          "Thickness Range": "5 mm - 35 mm",
-          "Dimensional Tolerance": "±0.05 mm",
-          "Hardness (Standard)": "58 - 62 HRC",
-          "Weight per Piece": "0.5 kg - 8 kg",
-          "Edge Angle": "20° - 45° (customizable)",
-        },
-      },
-      {
-        id: "compatibility",
-        label: "Compatibility & Lead Time",
-        specs: {
-          "Compatible Equipment": "Major industrial cutters, granulators, shredders",
-          "Custom Manufacturing": "Yes — supply drawings or physical samples",
-          "MOQ": "1 piece (custom) / 10 pieces (standard)",
-          "Standard Lead Time": "7 - 15 business days",
-          "Certification": "ISO 9001:2015",
-        },
-      },
-    ],
-
-    manufacturingProcess: [
-      {
-        id: "alloy-qc-1",
-        number: "01",
-        title: "Raw Material Certification",
-        description:
-          "All incoming steel is verified against mill certificates. Spectrometer analysis confirms the alloy composition before production begins.",
-        image: "/images/products/product.webp",
-        size: "large",
-      },
-      {
-        id: "alloy-qc-2",
-        number: "02",
-        title: "Vacuum Hardening",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-      {
-        id: "alloy-qc-3",
-        number: "03",
-        title: "CMM Final Inspection",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-    ],
-
-    features: [
-      "Premium alloy steel (9CrSi, Cr12MoV, HSS) for maximum wear resistance",
-      "Precision CNC machining with ±0.05mm tolerance",
-      "Vacuum heat treatment for uniform 58–62 HRC hardness",
-      "Custom dimensions and edge angles available",
-      "Compatible with major industrial equipment brands",
-      "ISO 9001:2015 certified manufacturing",
-      "Optional TiN / TiCN coating for extended service life",
-      "Factory-direct pricing with fast lead times",
-    ],
-
-    zLayoutSections: [
-      {
-        title: "Premium Alloy Steel, Uncompromising Quality",
-        accentColor: "blue",
-        paragraphs: [
-          "Every Sureay alloy blade starts with certified, mill-tested raw material. We source only premium tool steel alloys — 9CrSi for general-purpose cutting, Cr12MoV (D2/SKD-11) for high-abrasion environments, and W6Mo5Cr4V2 (M2 HSS) for elevated-temperature operations.",
-          "Our metallurgists match the steel grade to your exact application, ensuring the optimal balance of hardness, toughness, and wear resistance. Each incoming billet undergoes spectrometer analysis to verify alloy composition before production begins.",
-          "The result: blades that hold their edge longer, resist chipping under impact, and deliver consistent, repeatable cutting performance across thousands of operating hours.",
-        ],
-        imageSrc: "/images/process/premium-steel-selection.webp",
-        imageAlt: "Sureay premium alloy steel material selection",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Precision CNC Machining & Heat Treatment",
-        accentColor: "orange",
-        paragraphs: [
-          "After rough machining, every alloy blade enters our vacuum heat treatment furnace for a precisely controlled hardening cycle. This process achieves uniform 58–62 HRC hardness throughout the entire cross-section while eliminating surface decarburization.",
-          "Post heat treatment, our 5-axis CNC grinding centers machine each blade face, edge angle, and bore to micro-level tolerances (±0.05mm). The result is a perfectly flat, burr-free cutting surface that maximizes contact efficiency.",
-          "Each finished blade is measured on a CMM (Coordinate Measuring Machine) and undergoes hardness spot-checks and edge geometry audits — ensuring zero-defect delivery and full dimensional compliance with your specifications.",
-        ],
-        imageSrc: "/images/process/acuum-heat-treatment.webp",
-        imageAlt: "Sureay vacuum heat treatment and CNC precision grinding",
-        imagePosition: "left",
-        background: "muted",
-      },
-    ],
-
-    relatedBladeIds: ["rotary-cutter-blades", "shredder-blades"],
-    leadTime: "7-15 business days",
+    relatedBladeIds: ["rotary-cutter-blades", "paper-cutting-blades"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -297,7 +198,7 @@ export const blades: Blade[] = [
     name: "Rotary Cutter Blades",
     fullName: "High-Performance Rotary Cutter & Slitter Knives",
     category: "rotary_blades",
-    sector: "converting",
+    sector: "metal",
     categoryDisplay: "Rotary Blades",
     image: "/images/products/blades/rotary-cutter-blade-00.webp",
     badge: "High Precision",
@@ -307,6 +208,8 @@ export const blades: Blade[] = [
       "/images/products/blades/rotary-cutter-blade-00.webp",
       "/images/products/blades/rotary-cutter-blade-00.webp",
       "/images/products/blades/rotary-cutter-blade-00.webp",
+      "/images/products/blades/rotary-cutter-blade-00.webp", // DecisiveSpecs panel - placeholder
+      "/images/products/blades/rotary-cutter-blade-00.webp", // ComprehensiveData panel - placeholder
     ],
     description:
       "Precision-ground rotary cutter blades manufactured from HSS and tungsten carbide for clean, continuous slitting and cutting operations.",
@@ -321,11 +224,6 @@ export const blades: Blade[] = [
       { label: "Thickness Tol.", value: "±0.002 mm" },
       { label: "Surface Finish", value: "Ra 0.4 Mirror" },
     ],
-
-    video: {
-      url: "",
-      poster: "/images/products/product.webp",
-    },
 
     components: [
       {
@@ -362,106 +260,7 @@ export const blades: Blade[] = [
       },
     ],
 
-    applicationItems: [
-      { title: "Plastic Film Slitting", img: "/images/products/product.webp" },
-      { title: "Paper Converting", img: "/images/products/product.webp" },
-      { title: "Rubber Processing", img: "/images/products/product.webp" },
-      { title: "Textile & Non-Woven", img: "/images/products/product.webp" },
-    ],
-
-    specCategories: [
-      {
-        id: "specifications",
-        label: "Dimensional Capabilities",
-        specs: {
-          "Outer Diameter (OD)": "20 mm - 1,200 mm",
-          "Inner Diameter (ID)": "Custom machined to any shaft",
-          "Thickness Range": "0.5 mm - 50 mm",
-          "Concentricity Tolerance": "Within 0.01 mm",
-          "Parallelism Tolerance": "Within 0.005 mm",
-          "Thickness Tolerance": "±0.002 mm",
-        },
-      },
-      {
-        id: "materials",
-        label: "Material Options",
-        specs: {
-          "Standard Tool Steel": "D2 (SKD-11), Cr12MoV, 52100",
-          "High-Speed Steel": "M2 (SKH-51), M35, ASP2032",
-          "Premium Grade": "Solid Tungsten Carbide (YG8, YG15)",
-          "Coating Options": "TiN, TiCN, Teflon (friction reduction)",
-          "Hardness Range": "HRC 60-64 / HRA 88-90 (carbide)",
-        },
-      },
-      {
-        id: "compatibility",
-        label: "OEM Compatibility",
-        specs: {
-          "Supported Brands": "Kampf, Atlas, Dusenbery, Goebel, Tidland",
-          "Custom Manufacturing": "100% produced per drawings or physical samples",
-          "Delivery Time": "10 - 20 business days",
-          "MOQ": "1 piece (custom) / 5 pieces (standard)",
-        },
-      },
-    ],
-
-    manufacturingProcess: [
-      {
-        id: "rotary-qc-1",
-        number: "01",
-        title: "Dynamic Balancing Test",
-        description:
-          "Every rotary blade is dynamically balanced to ensure vibration-free performance at rotation speeds exceeding 3,000 RPM.",
-        image: "/images/products/product.webp",
-        size: "large",
-      },
-      {
-        id: "rotary-qc-2",
-        number: "02",
-        title: "Optical Edge Inspection",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-      {
-        id: "rotary-qc-3",
-        number: "03",
-        title: "Laser Thickness Measurement",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-    ],
-
-    zLayoutSections: [
-      {
-        title: "Engineered for High-Speed Continuous Cutting",
-        accentColor: "blue",
-        paragraphs: [
-          "Our rotary cutter blades are designed for non-stop, high-speed slitting and cutting operations where blade runout of even a few microns can cause material tearing, dust generation, or uneven edges.",
-          "Each blade is ground on advanced 5-axis CNC grinding centers to achieve strict concentricity (within 0.01mm) and parallelism (within 0.005mm). This precision guarantees clean, vibration-free cutting at rotation speeds exceeding 3,000 RPM.",
-          "Beyond standard vacuum heat treatment, our rotary blades undergo deep cryogenic processing (−196 °C) to completely eliminate retained austenite — maximizing structural stability and extending wear life by up to 300% versus conventionally treated blades.",
-        ],
-        imageSrc: "/images/process/cnc-precision-grinding.webp",
-        imageAlt: "Sureay CNC precision grinding for rotary cutter blades",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Custom Edge Profiles for Every Material",
-        accentColor: "orange",
-        paragraphs: [
-          "Whether you need a single bevel for film slitting, a double bevel for paper converting, a square edge for foil cutting, or a custom toothed profile for non-woven materials — our engineering team optimizes the cutting geometry for your specific application.",
-          "We work directly with OEM machine builders (Kampf, Atlas, Dusenbery, Goebel, Tidland) and end-users to ensure perfect fit and optimal performance. Every blade is manufactured 100% per your drawings or physical samples.",
-          "Dynamic balancing is performed on every finished blade to guarantee vibration-free operation, extending machine bearing life and ensuring consistent cut quality across millions of cycles.",
-        ],
-        imageSrc: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp",
-        imageAlt: "Sureay rotary blade custom edge profiles and precision slitting",
-        imagePosition: "left",
-        background: "muted",
-      },
-    ],
-
-    relatedBladeIds: ["alloy-blades", "shredder-blades"],
-    leadTime: "10-20 business days",
+    relatedBladeIds: ["rotary-slitter-knives", "shredder-blades"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -470,174 +269,116 @@ export const blades: Blade[] = [
   {
     id: "shredder-blades",
     name: "Shredder Blades",
-    fullName: "Heavy-Duty Single & Multi-Shaft Shredder Blades",
+    fullName: "Premium D2/DC53 Concave Shredder Inserts for Plastic Recycling",
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Shredder Blades",
-    image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-    badge: "Heavy Duty",
-    badgeColor: "slate",
+    image: "/images/products/shredder-blades/shredder-blades-04.webp",
     gallery: [
-      "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-      "/images/products/blades/11-2-2_circular-blade_05.webp",
-      "/images/products/blades/11-2-2_circular-blade_06.webp",
-      "/images/products/blades/11-2-2_circular-blade_04.webp",
+      "/images/products/shredder-blades/shredder-blades-04.webp",
+      "/images/products/shredder-blades/shredder-blades-01.webp",
+      "/images/products/shredder-blades/shredder-blades-02.webp",
+      "/images/products/shredder-blades/shredder-blades-03.webp",
+      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
+      "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp", // ComprehensiveData panel - placeholder
     ],
     description:
-      "Professional-grade shredder blades for single-shaft and multi-shaft systems processing plastics, tires, e-waste, and MSW.",
+      "Sureay Shredder Blades represent the pinnacle of heavy-duty reduction, engineered for extreme durability and high-torque impact resistance. Through advanced CNC machining and specialized heat treatment, we achieve a robust, frictionless edge that glides through bulk plastic waste with zero resistance. This optimized geometry prevents overheating, minimizes downtime, and extends service life. Partner with Sureay for exact-match OEM shredder solutions that guarantee continuous, peak performance.",
     fullDescription:
-      "Our heavy-duty shredder blades are engineered for single-shaft and multi-shaft shredding systems that process the most challenging waste materials — including rigid plastics, tires, e-waste, wood pallets, and municipal solid waste. Manufactured from premium grades like 6CrW2Si, Cr12MoV, and H13, each blade features an optimized aggressive cutting geometry designed for high-torque, low-speed applications. Advanced vacuum heat treatment achieves a balanced toughness-hardness profile (58–62 HRC), preventing premature chipping under sudden impact loads while maintaining a razor-sharp cutting edge over extended operating hours.",
+      "Industrial-grade square and concave shredder inserts designed for single and multi-shaft shredding systems. Engineered to handle contaminated plastics, pipes, and bulky waste while providing four-way indexable life cycles to minimize operational costs.",
     link: "/products/shredder-blades",
     isFeatured: true,
 
     specs: [
-      { label: "Material", value: "H13 / Cr12MoV / 6CrW2Si" },
-      { label: "Hardness", value: "58 - 62 HRC" },
-      { label: "Thickness", value: "15 mm - 40 mm" },
-      { label: "Tolerance", value: "±0.1 mm" },
+      { label: "Material",            value: "D2 (1.2379), DC53, 42CrMo" },
+      { label: "Hardness",            value: "52 - 58 HRC" },
+      { label: "Face Profile",        value: "Concave / Flat / Four-Corner" },
+      { label: "Compatibility",       value: "Vecoplan, Weima, Untha, Lindner" },
+      { label: "Counter-bore",        value: "Precision Milled for M12/M16/M20" },
+      { label: "Tolerance",           value: "±0.05 mm" },
+      { label: "Surface Treatment",   value: "Shot-peened / Optional Coating" },
+      { label: "Application",         value: "Primary reduction of bulk plastic/pipes" },
     ],
-
-    video: {
-      url: "",
-      poster: "/images/products/product.webp",
-    },
 
     components: [
       {
-        id: "impact-resistant-steel",
-        tag: "MATERIAL SELECTION",
-        title: "Impact-Resistant Alloy Steel",
+        id: "indexable-rotation",
+        tag: "EFFICIENCY",
+        title: "4-Way Indexable Rotation",
         description:
-          "H13 hot-work tool steel and 6CrW2Si are selected for their superior toughness-hardness balance, preventing blade chipping under sudden high-impact loads — a critical requirement in shredding operations involving mixed, hard-to-predict waste streams.",
-        image: "/images/products/product.webp",
+          "Square geometry allows for 90° rotation to a fresh cutting edge. Effectively quadruples the lifespan per blade compared to non-indexable alternatives.",
+        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
-        id: "aggressive-geometry",
-        tag: "CUTTING GEOMETRY",
-        title: "Aggressive Hook-Tooth Profile",
+        id: "concave-shear",
+        tag: "GEOMETRY",
+        title: "Self-Centering Concave Face",
         description:
-          "Our shredder blades feature a precisely engineered hook-tooth cutting profile that maximizes bite into tough materials while efficiently ejecting shredded fragments. This geometry significantly reduces power consumption and increases throughput at the same motor load.",
-        image: "/images/products/product.webp",
+          "The concave surface creates a superior shearing action, reducing the heat generated during high-torque processing and preventing material melting.",
+        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
       {
-        id: "multi-shaft-spacers",
-        tag: "SYSTEM COMPATIBILITY",
-        title: "Precision Spacer & Stack System",
+        id: "impact-alloy",
+        tag: "METALLURGY",
+        title: "High-Torque Alloy Base",
         description:
-          "Each shredder blade is machined to exact axial width tolerances, ensuring proper inter-blade clearance when assembled on multi-shaft rotor stacks. This precision stack assembly is critical for clean shear-cut action and prevention of material jamming.",
-        image: "/images/products/product.webp",
-      },
-      {
-        id: "re-sharpenable",
-        tag: "LONG-TERM VALUE",
-        title: "Re-Sharpenable Design",
-        description:
-          "Our shredder blades are designed with sufficient material allowance to be re-sharpened multiple times (typically 3–6 re-grinds per blade), dramatically reducing the total cost of ownership compared to non-resharpened alternatives.",
-        image: "/images/products/product.webp",
+          "Utilizes 42CrMo or D2 tool steel to absorb extreme shock loads. Prevents blade cracking when processing contaminated or metal-inclusive waste.",
+        image: "/images/products/shredder-blades/shredder-blades-03.webp",
       },
     ],
 
-    applicationItems: [
-      { title: "Plastic Waste Recycling", img: "/images/products/product.webp" },
-      { title: "Tire & Rubber Shredding", img: "/images/products/product.webp" },
-      { title: "E-Waste Processing", img: "/images/products/product.webp" },
-      { title: "Municipal Solid Waste", img: "/images/products/product.webp" },
+    dimensionLabels: {
+      col0: "Shredder Model",
+      col1: "Blade Outer Diameter",
+      col2: "Hex Socket",
+      col3: "Blade Thickness",
+      col4: "Blade Spacer Outer Diameter",
+      caption: "* Standard dimensions for multi-shaft shredder systems. All measurements in millimeters (mm). Compatible with Vecoplan, Weima, Untha, Lindner. Custom configurations available.",
+    },
+
+    standardDimensions: [
+      // 200 Series
+      { spec: "200", od: "Φ150", id: "70", length: "12", teeth: "110" },
+      { spec: "200", od: "Φ150", id: "70", length: "15", teeth: "110" },
+
+      // 300 Series
+      { spec: "300", od: "Φ180", id: "80", length: "15", teeth: "120" },
+      { spec: "300", od: "Φ180", id: "80", length: "20", teeth: "130" },
+
+      // 400 Series
+      { spec: "400", od: "Φ180", id: "90", length: "10", teeth: "150" },
+      { spec: "400", od: "Φ180", id: "90", length: "15", teeth: "150" },
+
+      // 500 Series
+      { spec: "500", od: "Φ200", id: "90", length: "10", teeth: "150" },
+      { spec: "500", od: "Φ200", id: "90", length: "20", teeth: "150" },
+      { spec: "500", od: "Φ200", id: "90", length: "15", teeth: "150" },
+
+      // 600 Series
+      { spec: "600", od: "Φ200", id: "140", length: "20", teeth: "180" },
+
+      // 800 Series
+      { spec: "800", od: "Φ250", id: "160", length: "25", teeth: "220" },
+
+      // 1000 Series
+      { spec: "1000", od: "Φ300", id: "180", length: "30", teeth: "250" },
+      { spec: "1000", od: "Φ300", id: "180", length: "30", teeth: "250" },
+
+      // 1200 Series
+      { spec: "1200", od: "Φ350", id: "200", length: "40", teeth: "300" },
+      { spec: "1200", od: "Φ350", id: "220", length: "30", teeth: "320" },
+
+      // 1500 Series
+      { spec: "1500", od: "Φ400", id: "220", length: "40", teeth: "350" },
+      { spec: "1500", od: "Φ400", id: "240", length: "50", teeth: "380" },
+
+      // 2000 Series
+      { spec: "2000", od: "Φ450", id: "260", length: "30", teeth: "400" },
+      { spec: "2000", od: "Φ500", id: "280", length: "50", teeth: "420" },
+      { spec: "2000", od: "Φ700", id: "360", length: "60", teeth: "520" },
     ],
 
-    specCategories: [
-      {
-        id: "performance",
-        label: "Blade Specifications",
-        specs: {
-          "Standard Size Range": "35×35×23 mm to 80×80×30 mm",
-          "Thickness Range": "15 mm - 40 mm",
-          "Dimensional Tolerance": "±0.1 mm",
-          "Unit Weight": "0.8 kg - 12 kg per piece",
-          "Hardness": "58 - 62 HRC",
-          "Available Profiles": "Hook-tooth, flat, custom toothed",
-        },
-      },
-      {
-        id: "materials",
-        label: "Material & Heat Treatment",
-        specs: {
-          "Primary Grades": "H13 (hot-work), 6CrW2Si, Cr12MoV",
-          "Heat Treatment": "Vacuum hardening + double tempering",
-          "Impact Resistance": "High — optimized toughness-hardness balance",
-          "Cryogenic Option": "Available for enhanced wear resistance",
-        },
-      },
-      {
-        id: "compatibility",
-        label: "OEM Compatibility",
-        specs: {
-          "WEIMA": "WLK Series, C Series shredders",
-          "SSI Shredding Systems": "Various models",
-          "Vecoplan": "VAZ, VHZ Series",
-          "UNTHA / Lindner / Hammel": "Supported — supply shaft drawing",
-          "Custom Manufacturing": "Yes — per drawing or physical sample",
-          "Lead Time": "10 - 20 business days",
-        },
-      },
-    ],
-
-    manufacturingProcess: [
-      {
-        id: "shredder-qc-1",
-        number: "01",
-        title: "Billet Forging & Annealing",
-        description:
-          "Blade blanks are forged from certified alloy billets and annealed to relieve internal stress before any machining begins, ensuring a stable, distortion-free final geometry.",
-        image: "/images/products/product.webp",
-        size: "large",
-      },
-      {
-        id: "shredder-qc-2",
-        number: "02",
-        title: "CNC Tooth Profile Milling",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-      {
-        id: "shredder-qc-3",
-        number: "03",
-        title: "Hardness & Impact Testing",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-    ],
-
-    zLayoutSections: [
-      {
-        title: "Built to Withstand the Toughest Waste Streams",
-        accentColor: "blue",
-        paragraphs: [
-          "Shredding operations subject blades to extreme forces — sudden impacts from mixed waste, abrasive contaminants, and high-torque stress at low rotational speeds. Our shredder blades are engineered specifically for this punishing environment.",
-          "We select H13 hot-work tool steel and 6CrW2Si for their superior toughness-hardness balance, preventing blade chipping under sudden high-impact loads. Each blade undergoes vacuum hardening followed by double tempering to achieve a carefully optimized 58–62 HRC hardness profile.",
-          "The result is a blade that resists fracture and premature edge breakdown when processing the most challenging materials — from rigid plastics and e-waste circuit boards to tire chips and mixed municipal solid waste.",
-        ],
-        imageSrc: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-        imageAlt: "Sureay heavy-duty shredder blades for industrial waste processing",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Precision-Machined for Multi-Shaft Rotor Systems",
-        accentColor: "orange",
-        paragraphs: [
-          "Every shredder blade is CNC-machined to exact axial width tolerances, ensuring proper inter-blade clearance when assembled on multi-shaft rotor stacks. This precision is critical for clean shear-cut action and prevention of material jamming between rotors.",
-          "Our aggressive hook-tooth cutting profile is engineered to maximize bite into tough materials while efficiently ejecting shredded fragments. This geometry significantly reduces power consumption and increases throughput at the same motor load.",
-          "All blades are designed with sufficient material allowance to be re-sharpened 3–6 times, dramatically reducing the total cost of ownership. We provide re-grinding services along with fresh replacement sets for planned maintenance schedules.",
-        ],
-        imageSrc: "/images/products/blades/11-2-2_circular-blade_06.webp",
-        imageAlt: "Sureay shredder blade precision machining for multi-shaft systems",
-        imagePosition: "left",
-        background: "muted",
-      },
-    ],
-
-    relatedBladeIds: ["alloy-blades", "granulator-blades"],
-    leadTime: "10-20 business days",
+    relatedBladeIds: ["granulator-knives", "alloy-blades"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -646,7 +387,7 @@ export const blades: Blade[] = [
   {
     id: "tissue-log-saw-blades",
     name: "Tissue Log Saw Blades",
-    fullName: "Ultra-Sharp Tissue Paper Converting & Cutting Blades",
+    fullName: "D2 Ø610 Log Saw Blade For Tissue Paper Cutting",
     category: "tissue_paper_blades",
     sector: "paper",
     categoryDisplay: "Tissue Paper Blades",
@@ -657,25 +398,26 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-00.webp",
+      "/images/products/product.webp", // ComprehensiveData panel - placeholder
     ],
     description:
-      "Premium Tissue Log Saw Blades for High-Speed Paper Converting",
+      "Sureay Log Saw Blades represent the pinnacle of precision for global tissue converting, engineered for extreme durability and flawless edge retention. Through advanced CNC micro-grinding and in-house vacuum heat treatment, we achieve a razor-sharp, frictionless edge that glides through tissue webs with zero resistance. This optimized geometry prevents fiber crushing, minimizes dust, and extends service life. Partner with Sureay for exact-match OEM cutting solutions that guarantee continuous, peak performance.",
     fullDescription:
       "Maximize converting line uptime with Sureay’s precision-engineered tissue log saw blades. Built for high-speed cutting of tissue, paper towels, and industrial rolls, they deliver exceptionally clean, dust-free cuts while drastically minimizing blade replacements.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
 
     specs: [
-      { label: "Material", value: "SKD-11 / Cr12MoV" },
-      { label: "Hardness", value: "56 - 60 HRC" },
-      { label: "Tolerance", value: "±0.02 mm" },
-      { label: "Edge Angle", value: "15° - 25°" },
+      { label: "Material",            value: "D2, M2, HSS" },
+      { label: "Size (OD)",           value: "Max Ø 1200 mm" },
+      { label: "Lateral Run-out",     value: "Max 0.15 mm" },
+      { label: "Edge Run-out",        value: "Max 0.10 mm" },
+      { label: "Parallelism",         value: "0.05 mm" },
+      { label: "Concentricity",       value: "0.30 mm" },
+      { label: "Verticalness",        value: "0.05 mm" },
+      { label: "Inner Hole Size (ID)", value: "Ø 68.26 mm (+0.05 mm)" },
+      { label: "Application",         value: "Log saw machines (Tissue/Paper)" },
     ],
-
-    video: {
-      url: "",
-      poster: "/images/products/product.webp",
-    },
 
     components: [
       {
@@ -683,15 +425,15 @@ export const blades: Blade[] = [
         tag: "SURFACE FINISH",
         title: "Mirror-Polish Grinding (Ra ≤ 0.4)",
         description:
-          "A multi-stage lapping and polishing process achieves a mirror-like surface finish (Ra ≤ 0.4). This ultra-smooth surface drastically reduces paper fiber adhesion, minimizes dust generation, and allows the blade to glide through tissue webs without tearing.",
+          "Reduces paper fiber adhesion and minimizes dust generation. Glides effortlessly through tissue webs without tearing.",
         image: "/images/products/product.webp",
       },
       {
         id: "shallow-bevel",
         tag: "EDGE GEOMETRY",
-        title: "Optimized Shallow Bevel Angle",
+        title: "Shallow Bevel Angle (15°–25°)",
         description:
-          "Our tissue blades are ground to a shallow 15°–25° bevel that minimizes cutting force on delicate tissue webs. This geometry prevents fiber crushing and deformation, delivering a clean, straight cut edge that meets the strict quality standards of premium tissue brands.",
+          "Minimizes cutting force to prevent fiber crushing. Delivers a clean, straight edge that meets premium brand standards.",
         image: "/images/products/product.webp",
       },
       {
@@ -699,277 +441,129 @@ export const blades: Blade[] = [
         tag: "PROTECTIVE COATING",
         title: "Optional Chrome / TiN Coating",
         description:
-          "For high-humidity paper mill environments, we offer an optional hard chrome or TiN coating that provides extra corrosion resistance and reduces surface friction—extending blade service intervals and protecting your converting line investment.",
+          "Provides corrosion resistance for high-humidity paper mills. Reduces surface friction to significantly extend blade service life.",
         image: "/images/products/product.webp",
       },
     ],
 
-    applicationItems: [
-      { title: "Facial Tissue Production", img: "/images/products/product.webp" },
-      { title: "Toilet Paper Manufacturing", img: "/images/products/product.webp" },
-      { title: "Paper Towel Converting", img: "/images/products/product.webp" },
-      { title: "Medical Tissue Products", img: "/images/products/product.webp" },
-    ],
-
-    specCategories: [
-      {
-        id: "dimensions",
-        label: "Dimensional Capabilities",
-        specs: {
-          "Blade Length": "100 mm - 1,500 mm (customizable)",
-          "Thickness Range": "0.8 mm - 5 mm",
-          "Dimensional Tolerance": "±0.02 mm (ultra-precision)",
-          "Surface Finish": "Ra ≤ 0.4 (mirror polished)",
-          "Edge Angle": "15° - 25° (shallow bevel)",
-        },
-      },
-      {
-        id: "materials",
-        label: "Material & Coating",
-        specs: {
-          "Standard Grade": "Cr12MoV (D2), SKD-11",
-          "High-Carbon Option": "T10, 9CrSi",
-          "Hardness": "56 - 60 HRC",
-          "Optional Coating": "Hard Chrome, TiN, Teflon",
-        },
-      },
-      {
-        id: "compatibility",
-        label: "Compatibility",
-        specs: {
-          "Converting Lines": "Universal fit for most tissue rewinders & log saws",
-          "Custom Configurations": "Yes — supply drawings or machine model",
-          "Lead Time": "7 - 15 business days",
-          "Re-Sharpening": "Yes — accepted for re-grinding service",
-        },
-      },
-    ],
-
-    manufacturingProcess: [
-      {
-        id: "tissue-qc-1",
-        number: "01",
-        title: "Precision Surface Grinding",
-        description:
-          "Multi-pass surface grinding with dressing-corrected CBN wheels achieves flatness within 0.005mm and surface finish Ra ≤ 0.8 before the final polish stage.",
-        image: "/images/products/product.webp",
-        size: "large",
-      },
-      {
-        id: "tissue-qc-2",
-        number: "02",
-        title: "Edge Bevel Lapping",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-      {
-        id: "tissue-qc-3",
-        number: "03",
-        title: "Surface Profilometry Check",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-    ],
-
-    zLayoutSections: [
-      {
-        title: "Decades of Cutting Excellence",
-        accentColor: "blue",
-        paragraphs: [
-          "The Sureay Co. Inc., has a long history of providing the highest quality industrial knives to the Tissue, film and foil industries.",
-          "As industry technology has progressed, so have Sureay industrial knives. Today, our material expertise is the best in the knife industry. Our experts match the right knife material to your application. Then, we provide an uncompromising heat-treating and finishing process that results in consistent, accurate knives that provide high productivity and cost-effective performance.",
-          "Sureay has expanded our product offering allowing us to provide more solutions for tissue, towel, napkin, sanitary, non-woven, wipes, packaging, and wrapping applications. We now offer roll services, which includes new rolls, repairs and re-coating.",
-        ],
-        imageSrc: "/images/products/blades/tissue-log-saw-blades-04.webp",
-        imageAlt: "Sureay precision tissue log saw blade manufacturing",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Engineered for Your Application",
-        accentColor: "orange",
-        paragraphs: [
-          "Every Sureay tissue blade is engineered from the ground up to meet the exact demands of your converting line. We work closely with OEM machine builders and end-users to ensure perfect fit, optimal edge geometry, and maximum service life.",
-          "Our advanced CNC grinding and multi-stage lapping process delivers blades with a mirror-polish surface finish (Ra ≤ 0.4), drastically reducing paper fiber adhesion, minimizing dust generation, and allowing the blade to glide through tissue webs without tearing.",
-          "From standard catalog sizes to fully custom specifications, Sureay delivers with short lead times and full dimensional inspection reports included with every order.",
-        ],
-        imageSrc: "/images/products/blades/tissue-log-saw-blades-03.webp",
-        imageAlt: "Sureay tissue blade precision manufacturing process",
-        imagePosition: "left",
-        background: "muted",
-      },
+    standardDimensions: [
+      { od: "Ø 610 mm",  id: "Ø 68.26 mm", thickness: "4.76 mm" },
+      { od: "Ø 610 mm",  id: "Ø 68.26 mm", thickness: "3.80 mm" },
+      { od: "Ø 610 mm",  id: "Ø 82.55 mm", thickness: "4.76 mm" },
+      { od: "Ø 610 mm",  id: "Ø 82.55 mm", thickness: "3.80 mm" },
+      { od: "Ø 680 mm",  id: "Ø 68.26 mm", thickness: "3.80 mm" },
+      { od: "Ø 870 mm",  id: "Ø 60.00 mm", thickness: "6.00 mm" },
+      { od: "Ø 1000 mm", id: "Ø 60.00 mm", thickness: "6.00 mm" },
     ],
 
     relatedBladeIds: ["rotary-cutter-blades", "paper-cutting-blades"],
-    leadTime: "7-15 business days",
   },
 
+  
+
   // ─────────────────────────────────────────────────────────────────────────
-  // 5. Granulator Blades
+  // 6. Granulator blades
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "granulator-blades",
     name: "Granulator Blades",
-    fullName: "High-Wear Granulator & Pelletizer Cutting Blades",
+    fullName: "Industrial Plastic Crusher & Granulator Knives for PET, PVC & PP Recycling",
     category: "granulator_blades",
     sector: "recycling",
     categoryDisplay: "Granulator Blades",
-    image: "/images/products/blades/11-2-2_circular-blade_05.webp",
-    badge: "Wear Resistant",
-    badgeColor: "orange",
+    image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
-      "/images/products/blades/11-2-2_circular-blade_05.webp",
-      "/images/products/blades/11-2-2_circular-blade_06.webp",
-      "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-      "/images/products/blades/11-2-2_circular-blade_03.webp",
+      "/images/products/granulator-blades/granulator-blades-01.webp",
+      "/images/products/granulator-blades/granulator-blades-00.webp",
+      "/images/products/granulator-blades/granulator-blades-02.webp",
+      "/images/products/granulator-blades/granulator-blades-04.webp",
+      "/images/products/granulator-blades/granulator-blades-03.webp",
+      "/images/products/granulator-blades/granulator-blades-05.webp",
     ],
     description:
-      "Precision granulator blades for plastic granulating and pelletizing systems. Optimized profiles deliver clean granules and extended service life.",
+      "Engineered for high-throughput plastic recycling, our crusher and granulator knives deliver aggressive, clean shearing for PET bottles, PVC pipes, and PP scraps. Manufactured from premium wear-resistant tool steel and subjected to strict vacuum heat treatment, these blades maintain exceptional sharpness to maximize crushing efficiency while minimizing plastic dust and fines. Built to withstand high-impact loads, they significantly reduce blade-change downtime. Available in standard OEM dimensions or custom-manufactured to your specific shredder requirements.",
     fullDescription:
-      "Granulator blades are the consumable heart of any plastic recycling or pelletizing line. Our blades are engineered for granulators processing every type of polymer — from soft LDPE film to glass-filled PA66 — delivering clean, uniform granules with minimal fines generation. Manufactured from premium grades (SKD-11, H13, or Tungsten Carbide for highly abrasive fillers), each blade is CNC ground to tight tolerances and heat treated to a carefully balanced hardness profile. The result: longer cutting intervals, reduced energy consumption, and consistently on-spec granule output.",
+      "Engineered for high-impact size reduction of post-consumer and industrial plastics. These blades deliver superior wear resistance and clean granulation, drastically reducing fines and energy consumption in heavy-duty recycling lines.",
     link: "/products/granulator-blades",
-    isFeatured: false,
+    isFeatured: true,
 
     specs: [
-      { label: "Material", value: "SKD-11 / H13 / WC" },
-      { label: "Hardness", value: "58 - 64 HRC" },
-      { label: "Tolerance", value: "±0.05 mm" },
-      { label: "Profile", value: "Straight / V-Notch" },
+      { label: "Material",          value: "D2, SKD-11, DC53,Cr12MoV" },
+      { label: "Hardness",          value: "58 - 62 HRC" },
+      { label: "Bolt-hole Tolerance", value: "±0.02 mm" },
+      { label: "Flatness",          value: "0.05 mm" },
+      { label: "Parallelism",       value: "0.03 mm" },
+      { label: "Bevel Angle",       value: "30° - 55° (Customizable)" },
+      { label: "Heat Treatment",    value: "Vacuum Hardening + Cryogenic Processing" },
+      { label: "Application",       value: "PET, PVC & PP Recycling, Heavy-Duty Scraps" },
+      { label: "Match Machines",    value: "Cumberland, Amacoil, Alpine, Conair/Wortex, Ganutec, Foremost, Nelmor, Mitts & Merrill, Rapid, Hydreclaim, Herbold, Pallman, Dreher, Buss-Condux, IMS, Ramco (R&M), Entoletor and many others" },
     ],
 
-    video: {
-      url: "",
-      poster: "/images/products/product.webp",
-    },
+    features: [
+      "Premium tool steel (D2, SKD-11, HSS, Cr12MoV) for high-impact polymer shearing",
+      "Vacuum heat treatment + deep cryogenic processing (HRC 58–62 hardness + impact toughness)",
+      "Precision CNC-ground edges with ±0.02 mm tolerances for strict rotor-to-bed knife gaps",
+    ],
 
     components: [
       {
-        id: "straight-v-notch",
-        tag: "BLADE PROFILES",
-        title: "Straight & V-Notch Profiles",
+        id: "maximized-regrind-quality",
+        tag: "QUALITY",
+        title: "Maximized Regrind Quality",
         description:
-          "We supply both straight-edge granulator blades for general-purpose polymer granulation, and V-notch (serrated) profiles for processing thick-walled parts and runners. Custom profiles are available from drawings or sample blades.",
-        image: "/images/products/product.webp",
+          "Ultra-sharp, precisely aligned cutting edges shear plastic cleanly rather than tearing it, drastically reducing the generation of unwanted dust and fines.",
+        image: "/images/products/granulator-blades/granulator-blades-01.webp",
       },
       {
-        id: "carbide-option",
-        tag: "EXTREME WEAR RESISTANCE",
-        title: "Tungsten Carbide Insert Option",
+        id: "extended-mtbr",
+        tag: "RELIABILITY",
+        title: "Extended MTBR (Mean Time Between Replacements)",
         description:
-          "For granulating highly abrasive materials (glass-fiber, mineral-filled, or carbon-fiber composites), we offer blades with brazed or solid Tungsten Carbide cutting edges — providing 5–10× longer service life compared to standard tool steel.",
-        image: "/images/products/product.webp",
+          "High wear resistance minimizes the frequency of blade sharpening and replacement, keeping your recycling line running continuously.",
+        image: "/images/products/granulator-blades/granulator-blades-00.webp",
       },
       {
-        id: "precision-clearance",
-        tag: "SYSTEM FIT",
-        title: "Precision Bed Knife Clearance",
+        id: "reduced-motor-load",
+        tag: "EFFICIENCY",
+        title: "Reduced Motor Load",
         description:
-          "The cutting gap between the rotor blades and bed knife is a critical parameter affecting granule quality. Our blades are machined to the exact mounting geometry of your granulator model, ensuring optimal clearance and clean shear-cut action.",
-        image: "/images/products/product.webp",
+          "Optimized cutting angles decrease the shearing force required, lowering the electrical amp draw on your granulator's motor and reducing energy costs per ton.",
+        image: "/images/products/granulator-blades/granulator-blades-02.webp",
       },
     ],
 
-    applicationItems: [
-      { title: "Plastic Film & Bags", img: "/images/products/product.webp" },
-      { title: "Injection Molding Runners", img: "/images/products/product.webp" },
-      { title: "Hollow Blow Molding Scrap", img: "/images/products/product.webp" },
-      { title: "Glass-Fiber Composites", img: "/images/products/product.webp" },
-    ],
+    dimensionLabels: {
+      col0: "Specification",
+      col1: "Dimension (L × W × T)",
+      col2: "Pitch",
+      caption: "* Standard dimensions for rotor and stator knives. Sizes shown in millimeters (mm). Custom dimensions available for all major granulator brands.",
+    },
 
-    specCategories: [
-      {
-        id: "performance",
-        label: "Blade Specifications",
-        specs: {
-          "Standard Profiles": "Straight, V-Notch, Custom",
-          "Dimensional Tolerance": "±0.05 mm",
-          "Hardness (Tool Steel)": "58 - 62 HRC",
-          "Hardness (Carbide)": "HRA 88 - 92",
-          "Re-Sharpening Cycles": "Typically 3 - 6 times per blade",
-        },
-      },
-      {
-        id: "materials",
-        label: "Material Options",
-        specs: {
-          "Standard Grade": "SKD-11 (D2), Cr12MoV",
-          "Impact Grade": "H13 (hot-work die steel)",
-          "Wear Grade": "Solid / Brazed Tungsten Carbide",
-          "Surface Treatment": "Optional PVD coating for reduced friction",
-        },
-      },
-      {
-        id: "compatibility",
-        label: "Compatibility",
-        specs: {
-          "Supported Brands": "Rapid, Zerma, Cumberland, Conair, Dreher",
-          "Custom Fit": "Yes — supply model number or drawing",
-          "Lead Time": "7 - 15 business days",
-        },
-      },
-    ],
+    standardDimensions: [
+      // Double hole
+      { spec: "Double hole", od: "90 × 60 × 8", id: "50" },
+      { spec: "Double hole", od: "90 × 70 × 8", id: "40 / 45 / 50" },
+      { spec: "Double hole", od: "100 × 70 × 8", id: "45 / 50" },
+      { spec: "Double hole", od: "120 × 70 × 8", id: "60" },
 
-    manufacturingProcess: [
-      {
-        id: "gran-qc-1",
-        number: "01",
-        title: "Profile CNC Grinding",
-        description:
-          "Each blade is ground on a dedicated profile grinding center to exact tooth geometry, ensuring perfect stacking alignment on the rotor.",
-        image: "/images/products/product.webp",
-        size: "large",
-      },
-      {
-        id: "gran-qc-2",
-        number: "02",
-        title: "Carbide Brazing (Optional)",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-      {
-        id: "gran-qc-3",
-        number: "03",
-        title: "Clearance Fit Verification",
-        image: "/images/products/product.webp",
-        size: "small",
-      },
-    ],
+      // Triple hole
+      { spec: "Triple hole", od: "126 × 60 × 8", id: "40" },
+      { spec: "Triple hole", od: "140 × 60 × 8", id: "40" },
+      { spec: "Triple hole", od: "150 × 70 × 8", id: "50 / 55" },
+      { spec: "Triple hole", od: "160 × 70 × 8", id: "45" },
+      { spec: "Triple hole", od: "170 × 70 × 8", id: "45" },
+      { spec: "Triple hole", od: "180 × 70 × 8", id: "60" },
 
-    zLayoutSections: [
-      {
-        title: "Optimized Blade Profiles for Every Polymer",
-        accentColor: "blue",
-        paragraphs: [
-          "Not all plastics cut the same. Soft LDPE film requires a different cutting approach than rigid ABS injection runners or glass-filled PA66 engineering plastics. Sureay granulator blades are engineered with application-specific edge geometries to deliver clean, uniform granules with minimal fines.",
-          "We offer both straight-edge profiles for general-purpose polymer granulation and V-notch (serrated) profiles for processing thick-walled parts and runners. For glass-fiber or mineral-filled composites, our tungsten carbide insert option provides 5–10× longer service life.",
-          "The cutting gap between rotor blades and bed knife is a critical parameter. Our blades are machined to the exact mounting geometry of your granulator model — ensuring optimal clearance and clean shear-cut action that produces consistent granule quality.",
-        ],
-        imageSrc: "/images/products/blades/11-2-2_circular-blade_05.webp",
-        imageAlt: "Sureay granulator blade profiles for polymer processing",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Maximum Uptime, Minimum Cost per Cut",
-        accentColor: "orange",
-        paragraphs: [
-          "Granulator blades are a consumable — but that doesn't mean they should be disposable. Our blades are manufactured from premium SKD-11, H13, or solid tungsten carbide with sufficient material allowance for 3–6 re-sharpening cycles, dramatically reducing your cost per cut.",
-          "Advanced vacuum heat treatment with optional deep cryogenic processing achieves the ideal hardness-toughness balance (58–64 HRC), preventing premature chipping while maintaining a razor-sharp cutting edge through thousands of operating hours.",
-          "We support all major granulator brands — Rapid, Zerma, Cumberland, Conair, Dreher — and manufacture 100% per your drawings or physical samples. Standard lead time is 7–15 business days.",
-        ],
-        imageSrc: "/images/process/heat-treatment.webp",
-        imageAlt: "Sureay granulator blade heat treatment and quality control",
-        imagePosition: "left",
-        background: "muted",
-      },
+      // Quadra hole
+      { spec: "Quadra hole", od: "170 × 70 × 8", id: "40" },
+      { spec: "Quadra hole", od: "200 × 70 × 8", id: "50" },
     ],
 
     relatedBladeIds: ["shredder-blades", "alloy-blades"],
-    leadTime: "7-15 business days",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // 6. Paper Cutting Blades
+  // 7. Paper Cutting Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "paper-cutting-blades",
@@ -978,82 +572,192 @@ export const blades: Blade[] = [
     category: "paper_cutting_blades",
     sector: "paper",
     categoryDisplay: "Paper Cutting Blades",
-    image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp",
+    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
     badge: "Precision",
     badgeColor: "teal",
     gallery: [
-      "/images/products/blades/11-6-4_metal-slitter-knife_01.webp",
-      "/images/products/blades/11-6-2_metal-slitter-knife_01.webp",
-      "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-05.webp", 
     ],
     description:
-      "Professional paper cutting blades for printing, converting, and finishing operations. Precision-ground for clean, accurate cuts.",
+      "Engineered for heavy-duty industrial shredding and recycling, our high-performance HSS blades feature exceptional \"red hardness,\" maintaining HRC 62 at up to 500°C for continuous, burr-free shearing. Processed via vacuum heat treatment and precision CNC machining, they guarantee strict ±0.02mm tolerances and a lifespan 4 to 6 times longer than standard tool steel. Whether you need fully-stocked sizes for immediate dispatch or rapid custom manufacturing from your drawings, our factory provides reliable cutting solutions tailored to your specific equipment.",
     fullDescription:
-      "Our paper cutting blades are manufactured for the printing and publishing industry, book binderies, and paper converting operations. Ground from high-carbon steel and chrome-vanadium alloys, these blades deliver the razor-sharp, durable cutting edge required for trimming reams, sheets, and stacked booklets without compression or tear.",
+      "A guillotine paper cutter replacement blade is fundamental to maintaining cutting precision and operational efficiency. Unlike generic spare parts, these specialized blades directly influence finish quality, productivity, and total cost of ownership. Dull or worn blades result in ragged edges, increased dust, and unnecessary mechanical stress. Timely replacement not only restores performance but also protects your cutter from premature wear. These blades serve a wide range of sectors, including commercial printing, book publishing, packaging production, and corporate office environments. Every application demands a blade that delivers clean, accurate, and reliable cuts.",
     link: "/products/paper-cutting-blades",
     isFeatured: false,
 
     specs: [
-      { label: "Material", value: "High Carbon / SKD-11" },
-      { label: "Hardness", value: "58 - 62 HRC" },
-      { label: "Bevel Angle", value: "Customizable" },
-      { label: "Length", value: "Up to 1,500 mm" },
+      { label: "Material",      value: "HSS: M2, SKH-9, SKH-51, SKH-13 / Carbide: YG15, YG20" },
+      { label: "Hardness",      value: "Up to 62 HRC (stable at 500 °C)" },
+      { label: "Process",       value: "Nitrogen Furnace Inlaying + Precision Grinding" },
+      { label: "Lifespan",      value: "4 – 6× longer than standard tool steel" },
+      { label: "Edge Angle",    value: "21°" },
+      { label: "Options",       value: "Sharp edge / Semi-finished edge / Blank knife" },
+      { label: "Tolerance",     value: "L: +2/−1 mm | W: ±1 mm | T: 0/−0.1 mm" },
+      { label: "Application",   value: "Sealing, cross-cutting, die-cutting, packaging, shearing" },
     ],
 
-    components: [],
-    applicationItems: [
-      { title: "Printing Industry", img: "/images/products/product.webp" },
-      { title: "Paper Converting", img: "/images/products/product.webp" },
-      { title: "Book Binding", img: "/images/products/product.webp" },
-      { title: "Carton Cutting", img: "/images/products/product.webp" },
+    features: [
+      "Advanced steel formulations: HSS, standard steel, and TCT inlay optimized for edge retention",
+      "Precision-ground cutting edge for smooth, tear-free cuts across the full blade length",
+      "Extended operational life — reduced resharpening frequency lowers maintenance costs",
+      "Exact manufacturer fit — installs seamlessly into original equipment without modification",
+      "Ready-to-use blades designed for safe, simplified replacement procedures",
+      "Covers commercial printing, book publishing, packaging, and office environments",
     ],
 
-    specCategories: [
+    components: [
       {
-        id: "specifications",
-        label: "Specifications",
-        specs: {
-          "Blade Length": "Up to 1,500 mm",
-          "Material": "High Carbon Steel, SKD-11",
-          "Hardness": "58 - 62 HRC",
-          "Lead Time": "7 - 15 business days",
-        },
+        id: "precision-cutting-performance",
+        tag: "PERFORMANCE",
+        title: "Precision Cutting Performance",
+        description:
+          "Our guillotine paper cutter replacement blades are manufactured to deliver consistently clean and accurate cuts. Ideal for printing shops and binding facilities, they ensure professional results with every operation while reducing paper dust and jagged edges.",
+        image: "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
+      },
+      {
+        id: "enhanced-durability",
+        tag: "DURABILITY",
+        title: "Enhanced Durability & Longevity",
+        description:
+          "Crafted from high-grade steel alloys, these replacement blades maintain their sharpness longer than standard options. This extended service life means fewer blade changes and lower long-term operational costs for your business.",
+        image: "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
+      },
+      {
+        id: "wide-machine-compatibility",
+        tag: "COMPATIBILITY",
+        title: "Wide Machine Compatibility",
+        description:
+          "Designed to meet original equipment specifications, these replacement blades fit most popular guillotine cutter brands and models. They install easily, minimizing downtime and ensuring seamless integration into your workflow.",
+        image: "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       },
     ],
 
-    manufacturingProcess: [],
+    dimensionLabels: {
+      col0: "Specification (mm)",
+      col1: "Length",
+      col2: "Width",
+      col3: "Edge Thickness",
+      col4: "Body Thickness",
+      caption: "* Standard sizes listed above. Custom dimensions available on request.",
+    },
 
-    zLayoutSections: [
-      {
-        title: "Razor-Sharp Precision for the Printing Industry",
-        accentColor: "blue",
-        paragraphs: [
-          "In the printing and publishing industry, cut quality defines the finished product. Our paper cutting blades are ground from high-carbon steel and chrome-vanadium alloys to deliver the razor-sharp, durable cutting edge required for trimming reams, sheets, and stacked booklets.",
-          "Whether you operate a guillotine trimmer, a three-knife booklet trimmer, or a high-speed sheeter, our blades are precision-ground to the exact dimensional specifications of your machine — ensuring perfectly clean, compression-free cuts on every stroke.",
-          "Each blade is heat treated to 58–62 HRC for optimal edge retention, and the cutting angle is customized to your specific paper weight and fiber type to prevent tearing, dust generation, and uneven edges.",
-        ],
-        imageSrc: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp",
-        imageAlt: "Sureay precision paper cutting guillotine blades",
-        imagePosition: "right",
-        background: "default",
-      },
-      {
-        title: "Custom Lengths & Bevel Angles for Every Application",
-        accentColor: "orange",
-        paragraphs: [
-          "We manufacture paper cutting blades up to 1,500mm in length, with customizable single or double bevel angles optimized for your specific paper grade and cutting method. Our engineering team works with you to determine the ideal edge geometry.",
-          "Advanced CNC surface grinding ensures exceptional straightness and flatness across the full blade length. Each blade undergoes a multi-point dimensional inspection to guarantee compliance with your machine manufacturer's specifications.",
-          "Re-sharpening services are available for all our paper blades. Contact us with your machine model or supply a drawing for a rapid quotation — standard lead time is 7–15 business days.",
-        ],
-        imageSrc: "/images/process/5-Grinding.webp",
-        imageAlt: "Sureay paper blade CNC grinding and custom bevel angles",
-        imagePosition: "left",
-        background: "muted",
-      },
+    standardDimensions: [
+      { spec: "450 * 51 * 12/10",       od: "450",  id: "51", length: "12",   teeth: "10" },
+      { spec: "595 * 55 * 13.5/10",     od: "595",  id: "55", length: "13.5", teeth: "10" },
+      { spec: "795 * 60 * 13.5/10",     od: "795",  id: "60", length: "13.5", teeth: "10" },
+      { spec: "895 * 60 * 13.5/10",     od: "895",  id: "60", length: "13.5", teeth: "10" },
+      { spec: "995 * 60 * 14/11",       od: "995",  id: "60", length: "14",   teeth: "11" },
+      { spec: "1095 * 65 * 14/11",      od: "1095", id: "65", length: "14",   teeth: "11" },
+      { spec: "1350 * 80 * 16/13",      od: "1350", id: "80", length: "16",   teeth: "13" },
+      { spec: "2050 * 85 * 16/14",      od: "2050", id: "85", length: "16",   teeth: "14" },
     ],
 
     relatedBladeIds: ["tissue-log-saw-blades", "alloy-blades"],
-    leadTime: "7-15 business days",
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 8. Single Shaft Shredder Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "single-shaft-shredder-blades",
+    name: "Single Shaft Shredder Blades",
+    fullName: "High-Impact Single Shaft Shredder Rotor Knives (Square / Crown Cutters)",
+    category: "shredder_blades",
+    sector: "recycling",
+    categoryDisplay: "Single Shaft Shredder Blades",
+    image: "/images/products/shredder-blades/single-shredder-blades-05.webp",
+    badge: "Heavy Duty",
+    badgeColor: "orange",
+    gallery: [
+      "/images/products/shredder-blades/single-shredder-blades-05.webp",
+      "/images/products/shredder-blades/single-shredder-blades-00.webp",
+      "/images/products/shredder-blades/single-shredder-blades-01.webp",
+      "/images/products/shredder-blades/single-shredder-blades-02.webp",
+      "/images/products/shredder-blades/single-shredder-blades-03.webp",
+      "/images/products/shredder-blades/single-shredder-blades-04.webp",
+    ],
+    // Shortened for SEO Meta Description & UI Product Cards (< 160 chars)
+    description:
+      "Forged from premium cold-work tool steels (DC53, D2, Cr12MoV), our single-shaft shredder rotor knives balance extreme wear resistance with high-impact toughness for heavy volume reduction. Engineered for low-speed, high-torque rotors, these four-edge block knives excel in primary shredding of heavy plastics, wood, biomass, and MSW. The symmetrical square design enables 90° rotation for four usable edges, cutting replacement costs by 75% and drastically reducing downtime.",
+    
+    // Rewritten for better reading flow on the actual product page
+    fullDescription:
+      "Our single-shaft shredder rotor knives are forged from premium cold-work tool steels, specifically selected to balance extreme wear resistance with the high-impact toughness required for heavy volume reduction. Engineered for low-speed, high-torque rotors, these heavy-duty block knives excel in processing dense, bulky materials. They easily handle thick die-face purgings, massive extrusion lumps, heavy-walled PVC/HDPE pipes, as well as hardwood timber, Municipal Solid Waste (MSW), and light electronic waste.",
+    link: "/products/single-shaft-shredder-blades",
+    isFeatured: true,
+
+    specs: [
+      { label: "Material",        value: "DC53, D2 (1.2379), Cr12MoV" },
+      { label: "Hardness",        value: "HRC 58-62" },
+      { label: "Tolerance",       value: "±0.02mm" }, // Added for technical trust
+      { label: "Heat Treatment",  value: "Vacuum heat treatment + deep cryogenic" },
+      { label: "Bolt Hole",       value: "M12 to M24 (countersunk)" },
+      { label: "Edge Design",     value: "Four usable edges (90° rotation)" },
+      { label: "Profile",         value: "Concave / Flat" },
+      { label: "Application",     value: "Heavy Plastics, Wood & Biomass, Waste & Recycling" },
+      { label: "Match Machines",  value: "Vecoplan, Weima, Lindner, Zerma" },
+    ],
+
+    features: [
+      "Four usable cutting edges — rotate 90° when dull, reducing replacement costs by 75%",
+      "Premium tool steels (DC53, D2, Cr12MoV) with HRC 58-62 hardness via vacuum + cryogenic treatment",
+      "Precision CNC-machined concave/flat profiling for optimal biting into dense plastic lumps",
+    ],
+
+    components: [
+      {
+        id: "four-usable-edges",
+        tag: "COST EFFICIENCY",
+        title: "Four Usable Edges (Reduced TCO)",
+        description:
+          "The symmetrical square design features four cutting edges. When one edge dulls, the operator simply loosens the bolt and rotates the knife 90°, cutting blade replacement costs by 75% and drastically reducing maintenance downtime.",
+        image: "/images/products/shredder-blades/single-shredder-blades-00.webp",
+      },
+      {
+        id: "aggressive-profiling",
+        tag: "PERFORMANCE",
+        title: "Aggressive Concave/Flat Profiling",
+        description:
+          "Precision CNC-machined faces ensure optimal 'biting' into smooth, dense plastic lumps, preventing material from bouncing on the rotor during low-speed shredding.",
+        image: "/images/products/shredder-blades/single-shredder-blades-01.webp",
+      },
+      {
+        id: "zero-defect-integrity",
+        tag: "RELIABILITY",
+        title: "Zero-Defect Integrity",
+        description:
+          "Deep cryogenic treatment eliminates internal residual stress, ensuring the blades will not shatter when hitting unexpected foreign objects like hidden metal inclusions.",
+        image: "/images/products/shredder-blades/single-shredder-blades-02.webp",
+      },
+    ],
+
+    dimensionLabels: {
+      col1: "Dimensions (L × W × T)",
+      col2: "Bolt Hole Size",
+      col3: "Knife Type",
+      caption: "* Stator knives (bed knives) and custom rotor blade profiles available. Compatible with major global single-shaft shredder brands.",
+    },
+
+    // FIXED: Changed keys from od/id/thickness to logical terms (spec/bolt/type)
+    standardDimensions: [
+      { spec: "25 × 25 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
+      { spec: "28 × 28 × 23 mm", bolt: "M12",       type: "Square Rotor Knife" },
+      { spec: "30 × 30 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
+      { spec: "30 × 30 × 25 mm", bolt: "M12",       type: "Square Rotor Knife" },
+      { spec: "34 × 34 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
+      { spec: "40 × 40 × 28 mm", bolt: "M14",       type: "Square Rotor Knife" },
+      { spec: "50 × 50 × 30 mm", bolt: "M16",       type: "Square Rotor Knife" },
+      { spec: "60 × 60 × 35 mm", bolt: "M16 / M18", type: "Square Rotor Knife" },
+      { spec: "70 × 70 × 42 mm", bolt: "M20",       type: "Square Rotor Knife" },
+      { spec: "80 × 80 × 45 mm", bolt: "M24",       type: "Square Rotor Knife" },
+    ],
+
+    relatedBladeIds: ["shredder-blades", "granulator-blades"],
   },
 ];
 

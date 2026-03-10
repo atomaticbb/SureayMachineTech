@@ -8,6 +8,7 @@
 import { useRoute, Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SEO from "@/components/common/SEO";
 import { getDispatchById, getAdjacentDispatches } from "@/data/news";
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -44,6 +45,11 @@ export default function NewsDetail() {
 
   return (
     <div className="min-h-screen bg-white antialiased">
+      <SEO
+        title={article.title}
+        description={article.excerpt}
+        canonicalUrl={`/news/${article.id}`}
+      />
       <Navbar />
 
       <main className="pt-[74px]">

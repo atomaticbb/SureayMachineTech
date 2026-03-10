@@ -18,8 +18,8 @@ export default function TabEcosystem() {
             Markets We Serve
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <h2 className="font-black text-4xl md:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
-              Complete Industry Ecosystems.
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
+              Complete Industry Ecosystems
             </h2>
             <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
               We don't just supply isolated blades. We engineer complete front-end processing

@@ -40,7 +40,7 @@ export default function TechnicalFAQ() {
               <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
                 Common Questions
               </p>
-              <h3 className="font-black text-3xl md:text-4xl lg:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.05]">
+              <h3 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05]">
                 Technical FAQ
               </h3>
               <div className="w-14 h-[3px] bg-slate-300 mt-6 mb-4" />

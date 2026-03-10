@@ -5,6 +5,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import cookieParser from "cookie-parser";
 import routes from "./routes/index.js";
+import seoRouter from "./routes/seo.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import { corsMiddleware } from "./middleware/cors.js";
@@ -44,6 +45,9 @@ async function startDevServer() {
 
   // API 路由
   app.use("/api", routes);
+
+  // SEO 文件
+  app.use("/", seoRouter);
 
   // 错误处理（必须放最后）
   app.use(errorHandler);

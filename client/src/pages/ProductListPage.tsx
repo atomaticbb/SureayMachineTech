@@ -7,6 +7,7 @@
 import { useEffect, useRef, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import SEO from "@/components/common/SEO";
 import { Link } from "wouter";
 import { blades, type BladeCategoryType } from "@/data/blades";
 import ProductGrid from "@/components/product/ProductGrid";
@@ -70,6 +71,11 @@ export default function BladeListPage() {
 
   return (
     <div className="min-h-screen bg-white antialiased">
+      <SEO
+        title="Industrial Blades & Cutting Tools"
+        description="Browse Sureay's full catalogue of precision shredder blades, granulator knives and OEM cutting tools. ISO 9001:2015 certified. Custom engineering available."
+        canonicalUrl="/products"
+      />
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════════════════════
@@ -96,21 +102,6 @@ export default function BladeListPage() {
                 </p>
               </div>
             </div>
-{/* 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href="#products"
-                className="bg-white text-[#001f4d] px-7 py-3.5 font-black text-sm uppercase tracking-[0.15em] hover:bg-white/90 transition-colors inline-block text-center"
-              >
-                Explore Products ↓
-              </a>
-              <Link href="/contact">
-                <a className="border-2 border-white/40 text-white px-7 py-3.5 font-black text-sm uppercase tracking-[0.15em] hover:bg-white hover:text-[#001f4d] transition-all duration-300 inline-block text-center">
-                  Request Quote ↗
-                </a>
-              </Link>
-            </div> */}
-
           </div>
 
           {/* Right: Image Viewport */}
@@ -120,11 +111,6 @@ export default function BladeListPage() {
               alt="Industrial Blades & Cutting Tools — Sureay Machinery"
               className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
             />
-            <div className="absolute bottom-0 left-0 bg-white border-t border-r border-slate-200 px-5 py-3">
-              <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
-                FIG. 1.0 — SUREAY HIGH-PERFORMANCE BLADE RANGE
-              </span>
-            </div>
           </div>
 
         </div>
@@ -142,7 +128,7 @@ export default function BladeListPage() {
             {/* ── MOBILE: Horizontal Scrollable Strip ──────────────────────── */}
             <div className="lg:hidden border-b border-slate-200">
               <div className="px-6 pt-4 pb-2">
-                <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase">
+                <p className="font-mono text-[11px] text-slate-400 tracking-[0.35em] uppercase">
                   [ FILTER BY APPLICATION ]
                 </p>
               </div>
@@ -167,14 +153,14 @@ export default function BladeListPage() {
                           });
                         }
                       }}
-                      className={`snap-start flex-shrink-0 px-4 py-2 font-mono text-[11px] font-bold tracking-[0.12em] uppercase whitespace-nowrap border transition-none ${
+                      className={`snap-start flex-shrink-0 px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase whitespace-nowrap border transition-none ${
                         isActive
                           ? "bg-[#001f4d] text-white border-[#001f4d]"
                           : "bg-white text-slate-500 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
                       }`}
                     >
                       {item.label}
-                      <span className={`ml-2 text-[10px] font-black ${isActive ? "text-white/50" : "text-slate-300"}`}>
+                      <span className={`ml-2 text-[11px] font-black ${isActive ? "text-white/50" : "text-slate-300"}`}>
                         {count}
                       </span>
                     </button>
@@ -185,7 +171,7 @@ export default function BladeListPage() {
                 <div className="px-6 pb-3">
                   <button
                     onClick={() => setSelectedCategory("all")}
-                    className="font-mono text-[9px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors"
+                    className="font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors"
                   >
                     [ CLEAR FILTER × ]
                   </button>
@@ -199,7 +185,7 @@ export default function BladeListPage() {
 
                 {/* Header */}
                 <div className="px-6 py-4 border-b border-slate-200">
-                  <p className="font-mono text-[11px] text-slate-900 tracking-[0.35em] uppercase">
+                  <p className="font-mono text-[12px] text-slate-900 tracking-[0.35em] uppercase">
                     [ FILTER BY APPLICATION ]
                   </p>
                 </div>
@@ -215,7 +201,7 @@ export default function BladeListPage() {
                     return (
                       <div key={group.groupLabel}>
                         {group.groupLabel !== "All Products" && (
-                          <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-2 px-1">
+                          <p className="font-mono text-[12px] text-slate-400 tracking-widest uppercase mb-2 px-1">
                             {group.groupLabel}
                           </p>
                         )}
@@ -240,14 +226,14 @@ export default function BladeListPage() {
                                     });
                                   }
                                 }}
-                                className={`w-full flex items-center justify-between px-4 py-2.5 font-mono text-[10px] font-bold tracking-[0.12em] uppercase text-left transition-none border-b border-slate-200 last:border-b-0 ${
+                                className={`w-full flex items-center justify-between px-4 py-2.5 font-mono text-[14px] font-bold tracking-[0.12em] uppercase text-left transition-none border-b border-slate-200 last:border-b-0 ${
                                   isActive
                                     ? "bg-[#001f4d] text-white"
                                     : "bg-white text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
                                 }`}
                               >
                                 <span>{item.label}</span>
-                                <span className={`font-black text-[10px] ${isActive ? "text-white/60" : "text-slate-300"}`}>
+                                <span className={`font-black text-[12px] ${isActive ? "text-white/60" : "text-slate-300"}`}>
                                   {count}
                                 </span>
                               </button>
@@ -264,7 +250,7 @@ export default function BladeListPage() {
                   <div className="px-4 pb-5 border-t border-slate-200 pt-4">
                     <button
                       onClick={() => setSelectedCategory("all")}
-                      className="w-full font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors text-center"
+                      className="w-full font-mono text-[12px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors text-center"
                     >
                       [ CLEAR FILTER × ]
                     </button>
@@ -281,7 +267,7 @@ export default function BladeListPage() {
 
             {/* Grid Header */}
             <div className="px-8 py-4 border-b border-slate-200 flex items-center justify-between">
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase">
+              <p className="font-mono text-[12px] text-slate-400 tracking-[0.35em] uppercase">
                 [ BLADE RANGE — {filteredBlades.length} PRODUCT{filteredBlades.length !== 1 ? "S" : ""} ]
               </p>
             </div>

@@ -123,9 +123,9 @@ function Router() {
           <Route path="/products/:id" component={ProductDetail}   />
 
           {/* Industry verticals */}
-          <Route path="/industry/plastics-recycling" component={PlasticIndustry} />
-          <Route path="/industry/metal-processing"   component={MetalIndustry}   />
-          <Route path="/industry/paper-tissue"       component={PaperIndustry}   />
+          <Route path="/plastic-industry" component={PlasticIndustry} />
+          <Route path="/metal-industry"   component={MetalIndustry}   />
+          <Route path="/paper-industry"   component={PaperIndustry}   />
 
           {/* Static pages */}
           <Route path="/about"    component={About}      />

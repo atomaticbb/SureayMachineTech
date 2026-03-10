@@ -29,11 +29,11 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
           return (
             <span key={i} className="flex items-center">
               {i > 0 && (
-                <span className="text-slate-300 mx-3 font-mono text-[10px]">›</span>
+                <span className="text-slate-300 mx-3 font-mono text-[13px]">›</span>
               )}
               {isLast || !item.href ? (
                 <span
-                  className={`font-mono text-[10px] tracking-[0.2em] uppercase ${
+                  className={`font-mono text-[13px] tracking-[0.15em] uppercase ${
                     isLast
                       ? "font-black text-[#001f4d]"
                       : "text-slate-400"
@@ -43,7 +43,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                 </span>
               ) : (
                 <Link href={item.href}>
-                  <a className="font-mono text-[10px] tracking-[0.2em] uppercase text-slate-400 hover:text-[#001f4d] transition-colors duration-200">
+                  <a className="font-mono text-[13px] tracking-[0.15em] uppercase text-slate-400 hover:text-[#001f4d] transition-colors duration-200">
                     {item.label}
                   </a>
                 </Link>

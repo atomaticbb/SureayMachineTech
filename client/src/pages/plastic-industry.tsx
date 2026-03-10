@@ -5,6 +5,7 @@
  */
 
 import { Helmet } from "react-helmet-async";
+import SEO from "@/components/common/SEO";
 import Navbar    from "@/components/layout/Navbar";
 import Footer    from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
@@ -13,6 +14,7 @@ import IndustryToolingMatrix    from "@/components/industry/IndustryToolingMatri
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline      from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus    from "@/components/industry/IndustryMaterialFocus";
+import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -50,15 +52,18 @@ const HERO_DATA: IndustryHeroData = {
 };
 
 // ─── Products ─────────────────────────────────────────────────────────────────
-const PRODUCTS: IndustryProduct[] = [
-  { category: "Shredder Blades",  name: "Single-Shaft Shredder Blades", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: true  },
-  { category: "Shredder Blades",  name: "Twin-Shaft Shredder Knives",   image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Rotor Knives",      image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/granulator-blades", isFlagship: false },
-  { category: "Granulator Blades",name: "Granulator Bed Knives",        image: "/images/products/blades/11-2-2_circular-blade_05.webp",   href: "/products/granulator-blades", isFlagship: false },
-  { category: "Shredder Blades",  name: "Heavy-Duty Granulator Knives", image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp", href: "/products/shredder-blades",   isFlagship: false },
-];
+// Dynamically load products from blades.ts where sector === "recycling"
+const PRODUCTS: IndustryProduct[] = blades
+  .filter(blade => blade.sector === "recycling")
+  .map((blade, index) => ({
+    category: blade.categoryDisplay,
+    name: blade.name,
+    image: blade.image,
+    href: blade.link,
+    isFlagship: index === 0, // First product is flagship
+  }));
 
-const FILTER_CATEGORIES = ["ALL", "SHREDDER BLADES", "GRANULATOR BLADES"];
+const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -153,14 +158,12 @@ const PAGE_SCHEMA = {
 export default function PlasticIndustry() {
   return (
     <>
+      <SEO
+        title="Plastics Recycling & Extrusion Tooling — Filterless Systems"
+        description="Precision granulator knives, filterless screen changers and pelletizer hob cutters engineered for zero-downtime plastic recycling and extrusion lines. OEM-compatible with EREMA, LINDNER, VECOPLAN."
+        canonicalUrl="/industry/plastics-recycling"
+      />
       <Helmet>
-        <title>Plastics Recycling &amp; Extrusion Tooling — Filterless Systems | Sureay Machinery</title>
-        <meta
-          name="description"
-          content="Precision granulator knives, filterless screen changers and pelletizer hob cutters engineered for zero-downtime plastic recycling and extrusion lines. OEM-compatible with EREMA, LINDNER, VECOPLAN."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.sureay.com/industry/plastics-recycling" />
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 

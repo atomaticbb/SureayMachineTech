@@ -1,99 +1,47 @@
 /**
- * PageMeta Component
- * Declarative SEO meta tags and JSON-LD structured data management
- * Replaces imperative DOM manipulation with clean React pattern
+ * PageMeta — thin wrapper over <SEO> that preserves the legacy prop shape.
+ * New code should import SEO directly.
  */
-
-import { useEffect } from "react";
-
-interface SchemaProduct {
-  "@context": string;
-  "@type": string;
-  name: string;
-  image: string | string[];
-  description: string;
-  sku?: string;
-  mpn?: string;
-  brand: {
-    "@type": string;
-    name: string;
-  };
-  category?: string;
-  offers?: {
-    "@type": string;
-    url?: string;
-    priceCurrency: string;
-    price?: string;
-    priceValidUntil?: string;
-    availability: string;
-    itemCondition?: string;
-  };
-  aggregateRating?: {
-    "@type": string;
-    ratingValue: string | number;
-    ratingCount: string | number;
-    bestRating?: string | number;
-    worstRating?: string | number;
-  };
-}
+import SEO from "./SEO";
+import type { ProductData } from "./SEO";
 
 interface PageMetaProps {
-  title: string;
+  title:       string;
   description: string;
-  image?: string;
-  schema?: SchemaProduct | null;
-  siteName?: string;
+  image?:      string;
+  schema?:     { name: string; image: string | string[]; description: string; sku?: string; mpn?: string; brand: { "@type": string; name: string }; offers?: { "@type": string; url?: string; priceCurrency: string; price?: string; priceValidUntil?: string; availability: string; itemCondition?: string }; aggregateRating?: { "@type": string; ratingValue: string | number; ratingCount: string | number; bestRating?: string | number; worstRating?: string | number } } | null;
+  siteName?:   string;
 }
 
-export default function PageMeta({
-  title,
-  description,
-  image,
-  schema,
-  siteName = "Sureay Heavy Machinery"
-}: PageMetaProps) {
-  useEffect(() => {
-    // Update document title
-    const fullTitle = `${title} | ${siteName}`;
-    document.title = fullTitle;
-
-    // Update or create meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
-
-    // Add JSON-LD structured data if provided
-    let structuredDataScript: HTMLScriptElement | null = null;
-    if (schema) {
-      // Remove only the previously injected dynamic JSON-LD (not the static org schema in index.html)
-      const existingScript = document.querySelector('script[type="application/ld+json"][data-dynamic="true"]');
-      if (existingScript) {
-        existingScript.remove();
+export default function PageMeta({ title, description, image, schema }: PageMetaProps) {
+  const productData: ProductData | undefined = schema
+    ? {
+        name:        schema.name,
+        image:       image ?? (Array.isArray(schema.image) ? schema.image[0] : schema.image),
+        description: schema.description,
+        sku:         schema.sku,
+        mpn:         schema.mpn,
+        brand:       schema.brand.name,
+        offers:      schema.offers
+          ? {
+              url:             schema.offers.url,
+              priceCurrency:   schema.offers.priceCurrency,
+              price:           schema.offers.price,
+              priceValidUntil: schema.offers.priceValidUntil,
+              availability:    schema.offers.availability,
+              itemCondition:   schema.offers.itemCondition,
+            }
+          : undefined,
+        aggregateRating: schema.aggregateRating
+          ? {
+              ratingValue:  schema.aggregateRating.ratingValue,
+              ratingCount:  schema.aggregateRating.ratingCount,
+              bestRating:   schema.aggregateRating.bestRating,
+              worstRating:  schema.aggregateRating.worstRating,
+            }
+          : undefined,
       }
+    : undefined;
 
-      // Add new JSON-LD script tagged so we can find it on next render
-      structuredDataScript = document.createElement('script');
-      structuredDataScript.type = 'application/ld+json';
-      structuredDataScript.setAttribute('data-dynamic', 'true');
-      structuredDataScript.text = JSON.stringify(schema);
-      document.head.appendChild(structuredDataScript);
-    }
-
-    // Cleanup function
-    return () => {
-      document.title = siteName;
-
-      // Remove JSON-LD script on unmount
-      if (structuredDataScript && document.head.contains(structuredDataScript)) {
-        structuredDataScript.remove();
-      }
-    };
-  }, [title, description, schema, siteName]);
-
-  // This component doesn't render anything visible
-  return null;
+  return <SEO title={title} description={description} productData={productData} />;
 }

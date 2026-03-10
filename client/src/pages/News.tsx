@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import SEO from "@/components/common/SEO";
 import { getAllDispatches, getFeaturedDispatch } from "@/data/news";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
@@ -29,6 +30,11 @@ export default function CorporateDispatches() {
 
   return (
     <div className="min-h-screen bg-slate-50 antialiased">
+      <SEO
+        title="Industry Dispatches — Blade Technology & News"
+        description="Latest updates from Sureay: technology innovations, exhibition reports and company milestones in industrial blade manufacturing."
+        canonicalUrl="/news"
+      />
       <Navbar />
 
       <main className="pt-[74px]">

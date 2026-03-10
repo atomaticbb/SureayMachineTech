@@ -21,7 +21,7 @@ function SpecCell({ spec }: { spec: IndustrySpec }) {
             ))}
           </span>
         ) : (
-          <span className="block font-black text-4xl lg:text-[42px] text-[#001f4d] tracking-tight leading-none mb-3">
+          <span className="block font-black text-4xl text-[#001f4d] tracking-tight leading-none mb-3">
             {spec.mainValue}
             {spec.unit && (
               <span className="text-xl tracking-normal ml-1">{spec.unit}</span>
@@ -59,7 +59,7 @@ export default function IndustryBlueprintDashboard({ narrative, specs }: Props) 
             <p className="font-black text-[10px] text-slate-400 uppercase tracking-[0.5em] mb-5">
               [ The Industry Challenge ]
             </p>
-            <h2 className="font-black text-3xl md:text-4xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
               {challengeTitle}
             </h2>
             <p className="text-slate-600 text-[15px] leading-relaxed max-w-[480px] tracking-[0.015em]">
@@ -73,7 +73,7 @@ export default function IndustryBlueprintDashboard({ narrative, specs }: Props) 
             <p className="font-black text-[10px] text-[#65AAD6] uppercase tracking-[0.5em] mb-5">
               [ Sureay Engineered Solution ]
             </p>
-            <h2 className="font-black text-3xl md:text-4xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
               {solutionTitle}
             </h2>
             <p className="text-slate-600 text-[15px] leading-relaxed max-w-[480px] tracking-[0.015em]">

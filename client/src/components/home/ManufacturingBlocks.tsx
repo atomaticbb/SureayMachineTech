@@ -10,8 +10,8 @@ export default function ManufacturingBlocks() {
           <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
             Why Choose Us
           </p>
-          <h2 className="font-black text-3xl md:text-4xl lg:text-[42px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-3xl">
-            Precision Engineering.
+          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-3xl">
+            Precision Engineering
           </h2>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
         </div>

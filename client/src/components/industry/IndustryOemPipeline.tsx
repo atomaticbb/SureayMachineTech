@@ -16,7 +16,7 @@ const STEPS = [
 
 export default function IndustryOemPipeline() {
   return (
-    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-20 lg:py-28 relative overflow-hidden">
+    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-12 lg:py-16 relative overflow-hidden">
 
       {/* Blueprint grid overlay */}
       <div
@@ -56,17 +56,17 @@ export default function IndustryOemPipeline() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative">
 
         {/* Section header */}
-        <div className="mb-16 lg:mb-20">
+        <div className="mb-10 lg:mb-12">
           <p style={MONO} className="text-[10px] text-[#65AAD6] uppercase tracking-[0.5em] mb-5">
             [ OEM_PROTOCOL / ACTIVE ]
           </p>
-          <h2 className="font-black text-3xl md:text-4xl text-white uppercase tracking-tight leading-[1.0] mb-3">
-            OEM Customization Process.
+          <h2 className="font-black text-2xl md:text-3xl text-white uppercase tracking-tight leading-[1.0] mb-3">
+            OEM Customization Process
           </h2>
-          <p className="text-slate-200 text-[14px] max-w-[480px] leading-relaxed">
+          <p className="text-slate-200 text-[15px] max-w-[480px] leading-relaxed">
             Every replacement component passes through a strict 4-phase engineering protocol before shipment.
           </p>
-          <div className="w-14 h-[2px] bg-[#0a2d6e] mt-8" />
+          <div className="w-14 h-[2px] bg-[#0a2d6e] mt-5" />
         </div>
 
         {/* Pipeline: vertical rail + step cards */}
@@ -86,11 +86,11 @@ export default function IndustryOemPipeline() {
               return (
                 <div
                   key={item.step}
-                  className="border-b border-r border-[#0a2d6e] p-8 flex flex-col relative group overflow-hidden hover:bg-white/5 transition-colors duration-300"
+                  className="border-b border-r border-[#0a2d6e] p-5 flex flex-col relative group overflow-hidden hover:bg-white/5 transition-colors duration-300"
                 >
                   {/* Pulsing node on the rail */}
                   <div
-                    className="absolute -left-[41px] lg:-left-[49px] top-8 flex-shrink-0"
+                    className="absolute -left-[41px] lg:-left-[49px] top-5 flex-shrink-0"
                     style={{ animationDelay: pingDelay }}
                   >
                     <div className="relative w-2 h-2">
@@ -111,29 +111,29 @@ export default function IndustryOemPipeline() {
                   </span>
 
                   {/* Tactical coordinate — top right */}
-                  <div className="absolute top-3 right-4">
-                    <span style={MONO} className="text-[8px] text-slate-700 uppercase tracking-[0.1em]">
+                  <div className="absolute top-2 right-4">
+                    <span style={MONO} className="text-[10px] text-slate-700 uppercase tracking-[0.1em]">
                       [ {item.coords} ]
                     </span>
                   </div>
 
                   {/* Phase number */}
-                  <span style={MONO} className="text-[11px] text-[#65AAD6] uppercase tracking-[0.35em] mb-5 block">
+                  <span style={MONO} className="text-[11px] text-[#65AAD6] uppercase tracking-[0.35em] mb-3 block">
                     {item.step}
                   </span>
 
                   {/* Protocol metadata */}
-                  <span style={MONO} className="text-[9px] text-slate-400 uppercase tracking-[0.2em] mb-3 block">
+                  <span style={MONO} className="text-[10px] text-slate-400 uppercase tracking-[0.2em] mb-2 block">
                     [ {item.phaseKey}_V.{item.protocolVersion} ]
                   </span>
 
                   {/* Technical title */}
-                  <h3 className="font-black text-xl text-white uppercase tracking-widest leading-[1.15] mb-4">
+                  <h3 className="font-black text-lg text-white uppercase tracking-widest leading-[1.15] mb-2">
                     {item.technicalTitle}
                   </h3>
 
                   {/* Description — WCAG AA: slate-200 on #001f4d */}
-                  <p className="text-[13px] text-slate-200 leading-relaxed mt-auto">
+                  <p className="text-[15px] text-slate-200 leading-relaxed mt-auto">
                     {item.desc}
                   </p>
 

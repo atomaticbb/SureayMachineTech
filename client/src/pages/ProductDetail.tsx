@@ -2,33 +2,34 @@
  * ProductDetail — Page Orchestrator
  * Route: /products/:id
  *
- * Zones:
+ * Content zones:
  *   1  BladeHero          — CAD Viewport + Spec Ledger
- *   2  TrustProtocol      — Four-item credential strip
- *   3  TechnicalAudit     — Engineering Audit Log + Sticky Viewport
- *   4  ComprehensiveData  — Spec Category Tables
- *   5  IndustryOemPipeline — OEM process pipeline
- *   6  CompatibleTooling  — Related blade cards
+ *   2  DecisiveSpecs      — Image combination + spec table
+ *   3  ComprehensiveData  — Spec Category Tables
+ *   4  TechnicalAudit     — Engineering Audit Log
+ *   5  CompatibleTooling  — Related blade cards
  */
 
 import { useRoute, Link } from "wouter";
+
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageMeta from "@/components/common/PageMeta";
+import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import ContactRFQ from "@/components/home/ContactRFQ";
 
 import { getBladeById, getRelatedBlades } from "@/data/blades";
 
 // Zone sub-components
 import BladeHero from "@/components/product-detail/BladeHero";
-import TrustProtocol from "@/components/product-detail/TrustProtocol";
+import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 
-// ── Component ─────────────────────────────────────────────────────────────────
+// ── Component ────────────────────────────────────────────────────────────────
 
 export default function ProductDetail() {
   const [, params] = useRoute("/products/:id");
@@ -58,44 +59,34 @@ export default function ProductDetail() {
 
   const relatedBlades = getRelatedBlades(bladeId, 3);
 
-  // JSON-LD Structured Data — Google Rich Results compliant
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: blade.fullName || blade.name,
-    image: [`https://www.sureay.com${blade.image}`],
-    description: blade.fullDescription || blade.description,
-    sku: blade.id,
-    mpn: blade.id,
-    brand: {
-      "@type": "Brand",
-      name: "Sureay Industrial Blades",
-    },
-    offers: {
-      "@type": "Offer",
-      url: `https://www.sureay.com/products/${blade.id}`,
-      priceCurrency: "USD",
-      price: "0",
-      priceValidUntil: "2026-12-31",
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "47",
-      bestRating: "5",
-      worstRating: "1",
-    },
-  };
-
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
-      <PageMeta
-        title={`${blade.fullName || blade.name} | Sureay Blades`}
+      <SEO
+        title={blade.fullName || blade.name}
         description={blade.fullDescription || blade.description}
-        image={blade.image}
-        schema={productSchema}
+        canonicalUrl={`/products/${blade.id}`}
+        productData={{
+          name:        blade.fullName || blade.name,
+          image:       blade.image,
+          description: blade.fullDescription || blade.description,
+          sku:         blade.id,
+          mpn:         blade.id,
+          brand:       "Sureay Industrial Blades",
+          offers: {
+            url:             `https://www.sureay.com/products/${blade.id}`,
+            priceCurrency:   "USD",
+            price:           "0",
+            priceValidUntil: "2026-12-31",
+            availability:    "https://schema.org/InStock",
+            itemCondition:   "https://schema.org/NewCondition",
+          },
+          aggregateRating: {
+            ratingValue: "4.9",
+            ratingCount: "47",
+            bestRating:  "5",
+            worstRating: "1",
+          },
+        }}
       />
 
       <Navbar />
@@ -112,25 +103,43 @@ export default function ProductDetail() {
           ]}
         />
 
-        {/* Zone 1 — CAD Viewport Hero */}
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 mt-6">
-          <BladeHero blade={blade} />
+        {/* ── Content ──────────────────────────────────────────────────── */}
+        <div className="max-w-7xl mx-auto px-6 sm:px-12 pt-8">
+          <div className="flex flex-col gap-y-8">
+
+            {/* Zone 1 — CAD Viewport Hero (no inner px, uses outer container padding) */}
+            <BladeHero blade={blade} />
+
+            {/* Zone 1b — Decisive Specifications: image combination + spec table */}
+            <div className="-mx-6 sm:-mx-8">
+              <DecisiveSpecs blade={blade} />
+            </div>
+
+            {/* Zone 3 — Comprehensive Technical Data */}
+            <div className="-mx-6 sm:-mx-8">
+              <ComprehensiveData blade={blade} />
+            </div>
+
+            {/* Zone 4 — Technical Audit Log */}
+            <div className="-mx-6 sm:-mx-8 pt-8">
+              <TechnicalAudit blade={blade} />
+            </div>
+
+          </div>
         </div>
 
-        {/* Zone 2 — Trust Protocol Strip */}
-        <TrustProtocol />
-
-        {/* Zone 3 — Technical Audit Log */}
-        <TechnicalAudit blade={blade} />
-
-        {/* Zone 4 — Comprehensive Technical Data */}
-        <ComprehensiveData blade={blade} />
-
-        {/* Zone 5 — Industry OEM Pipeline */}
-        <IndustryOemPipeline />
+        {/* Zone 5 — Industry OEM Pipeline (full-bleed) */}
+        <div className="mt-16">
+          <IndustryOemPipeline />
+        </div>
 
         {/* Zone 6 — Compatible Tooling */}
-        <CompatibleTooling blades={relatedBlades} />
+        <div className="mt-16">
+          <CompatibleTooling blades={relatedBlades} />
+        </div>
+
+        {/* Zone 7 — Contact / RFQ form */}
+        <ContactRFQ />
 
       </main>
 

@@ -6,6 +6,7 @@ import { fileURLToPath } from "url";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import routes from "./routes/index.js";
+import seoRouter from "./routes/seo.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import { corsMiddleware } from "./middleware/cors.js";
@@ -49,7 +50,10 @@ async function startServer() {
   // ── 4. API Routes ────────────────────────────────────────────────────────
   app.use("/api", routes);
 
-  // ── 5. Static Files ──────────────────────────────────────────────────────
+  // SEO Files — must precede express.static to avoid stale file shadowing
+  app.use("/", seoRouter);
+
+  // Static
   const staticPath =
     process.env.NODE_ENV === "production"
       ? path.resolve(__dirname, "public")

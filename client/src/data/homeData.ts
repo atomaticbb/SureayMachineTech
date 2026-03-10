@@ -108,7 +108,7 @@ export const ARTICLES = [
     title: "2025 Trends in Plastic Recycling: What Equipment Buyers Need to Know",
     excerpt:
       "Post-consumer rPET demand is reshaping granulator blade geometry requirements. We break down the shift toward tighter tolerances and harder steel grades in modern recycling lines.",
-    image: "/images/products/Granulator-T1-01.webp",
+    image: "/images/news/Electronic-Waste-Recycling.webp",
     href: "/news",
   },
   {

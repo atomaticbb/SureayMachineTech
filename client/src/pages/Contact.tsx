@@ -7,6 +7,7 @@
 import { useRef, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import SEO from "@/components/common/SEO";
 import { toast } from "sonner";
 import { gtagEvent } from "@/lib/gtag";
 
@@ -141,6 +142,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-white antialiased">
+      <SEO
+        title="Contact & RFQ — Partner With Sureay Engineering"
+        description="Submit a blade engineering inquiry or request a quote. Reach our technical team via form, email or WhatsApp. CAD file uploads accepted."
+        canonicalUrl="/contact"
+      />
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════════════════════

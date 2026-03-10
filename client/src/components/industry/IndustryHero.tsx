@@ -45,7 +45,7 @@ export default function IndustryHero({ data }: Props) {
                 {data.body1}
               </p>
 
-              <p className="text-[#B4D4E9]/70 text-base leading-relaxed max-w-[480px] tracking-wide mb-12">
+              <p className="text-[#B4D4E9]/70 text-[15px] leading-relaxed max-w-[480px] tracking-wide mb-12">
                 {data.body2}
               </p>
 
