@@ -5,6 +5,19 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+# Install Chromium and required system libs for Puppeteer
+RUN apk add --no-cache \
+    chromium \
+    nss \
+    freetype \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont
+
+# Tell Puppeteer to use the system Chromium instead of downloading its own
+ENV PUPPETEER_SKIP_DOWNLOAD=true
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
+
 # Install pnpm
 RUN npm install -g pnpm@10.4.1
 
