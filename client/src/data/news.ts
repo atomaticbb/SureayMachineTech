@@ -27,7 +27,7 @@ export interface DispatchArticle {
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
-    id:         "fd-01",
+    id:         "facility-expansion-phase-iii",
     tag:        "COMPANY UPDATES",
     date:       "24.OCT.2024",
     title:      "GLOBAL FACILITY EXPANSION PHASE III",
@@ -58,7 +58,55 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 
   // ── Archive Grid ──────────────────────────────────────────────────────────
   {
-    id:       "dp-01",
+    id:       "high-hardness-metal-shear-guide",
+    tag:      "PRODUCT GUIDE",
+    date:     "11.MAR.2026",
+    title:    "WHY CHOOSE HIGH-HARDNESS METAL SHEAR KNIVES?",
+    excerpt:  "Enhance precision and longevity in heavy-duty fabrication. High-hardness shear blades deliver exceptional durability, accuracy, and operational efficiency in industrial metal cutting applications.",
+    image:    "/images/products/granulator-blades/metal-shear-blades-02.webp",
+    readTime: "7 MIN",
+    content: [
+      { type: "h2",       value: "Introduction: The Stakes in Industrial Metal Cutting" },
+      { type: "paragraph", value: "In industries that require precision metal cutting, durability and efficiency are non-negotiable. High-hardness shear blades stand out for their ability to handle tough materials like stainless steel and hot-rolled billets while maintaining extreme sharpness and longevity. By choosing the right blade, steel service centers and fabrication plants can significantly reduce downtime, lower cost-per-cut, and optimize their entire business operation." },
+
+      { type: "h2",       value: "What Are High-Hardness Metal Shear Knives?" },
+      { type: "paragraph", value: "High-hardness shear blades are a class of heavy-duty industrial knives designed to maintain a sharp, durable edge under continuous, high-stress use. Unlike standard off-the-shelf blades, Sureay's Metal Shear Knives are forged from premium tool steels and advanced alloys—such as 9CrSi, Cr12MoV (D2 equivalent), and H13." },
+      { type: "paragraph", value: "Through strict in-house vacuum heat treatment, we achieve an optimal Rockwell hardness rating, typically ranging from 58 to 62 HRC depending on the specific application. This sophisticated hardening process involves both precise heating and quenching to achieve the perfect balance between absolute hardness and impact toughness. The result? A blade that is highly resistant to wear, deformation, and edge chipping, minimizing maintenance and ensuring uninterrupted production." },
+
+      { type: "h2",       value: "Core Applications: Matching the Blade to the Extreme" },
+      { type: "paragraph", value: "High-hardness cutting blades are indispensable in numerous heavy industries due to their resilience and precision. At Sureay, we categorize our metal shear knives based on the exact thermal and mechanical stress of your operation:" },
+      { type: "h3",       value: "Cold-Rolled & Mild Steel Shearing (Standard Duty)" },
+      { type: "paragraph", value: "Utilizing high-carbon steels like T10 and 65Mn (57-59 HRC), these blades are incredibly cost-effective for shearing standard A3 plates and general metal recycling." },
+      { type: "h3",       value: "Stainless & Medium Plate Shearing (Heavy Duty)" },
+      { type: "paragraph", value: "Cutting stainless steel requires extraordinary wear resistance. Our Cr12MoV and 6CrW2Si blades (58-62 HRC) excel in metalworking applications by maintaining a sharp edge over prolonged use." },
+      { type: "h3",       value: "Hot-Rolled Billet Shearing (Extreme Temp)" },
+      { type: "paragraph", value: "Engineered for heavy steel mills, our H13 and LD alloy blades feature extreme 'Red Hardness.' They retain their structural integrity and resist annealing even when shearing hot slabs at extreme temperatures." },
+
+      { type: "h2",       value: "Key Benefits of Upgrading to High-Hardness Blades" },
+      { type: "paragraph", value: "Investing in Sureay's high-hardness shear knives offers transformative benefits to industrial operations:" },
+      { type: "callout",   value: "ENHANCED DURABILITY: High-hardness shear blades are far more wear-resistant, meaning fewer blade changes and longer production runs without interruptions." },
+      { type: "paragraph", value: "Superior Cutting Precision: With their ability to hold a sharp edge, these blades provide clean, burr-free cuts across thick alloy plates. This precision reduces material waste and guarantees edge straightness." },
+      { type: "paragraph", value: "Reduced Maintenance Costs: The longevity and resilience of high-hardness blades directly lower your maintenance overhead. In heavy-use environments, studies estimate that high-hardness blades can reduce annual maintenance costs by up to 40%." },
+
+      { type: "h2",       value: "How to Choose the Right Shear Blade" },
+      { type: "paragraph", value: "Selecting the exact match for your mechanical or hydraulic guillotine shear involves careful consideration of several factors:" },
+      { type: "paragraph", value: "Material Compatibility: Matching the blade material to the specific metal being cut is essential. Do not use a standard T10 carbon blade to cut thick stainless steel; instead, opt for Cr12MoV." },
+      { type: "paragraph", value: "Hardness vs. Toughness: While high hardness increases wear resistance, excessive hardness can make a blade brittle. Sureay engineers expertly balance this by recommending 58-62 HRC for heavy-duty applications, ensuring impact resistance without chipping." },
+      { type: "paragraph", value: "Edge Geometry: Depending on your machine setup, blades can be manufactured with 1, 2, or 4 indexable cutting edges, effectively multiplying the blade's service lifespan." },
+
+      { type: "h2",       value: "Maintenance Tips for Extending Blade Life" },
+      { type: "paragraph", value: "To maximize your ROI on high-hardness shear blades, proper maintenance is crucial:" },
+      { type: "callout",   value: "DYNAMIC CLEARANCE CONTROL: Always adjust the horizontal gap between the upper and lower blades based on the thickness of the metal plate. Incorrect clearance is the #1 cause of edge chipping." },
+      { type: "paragraph", value: "Use Appropriate Materials Only: Cutting materials beyond the blade's design parameters (e.g., cutting titanium with a mild steel blade) can accelerate wear and lead to catastrophic damage." },
+      { type: "paragraph", value: "Timely Sharpening: Regular inspections and scheduled sharpening at the right intervals ensure that blades remain efficient and reduce the tonnage force required from your machine motor." },
+
+      { type: "h2",       value: "Conclusion: Partner with Sureay" },
+      { type: "paragraph", value: "High-hardness shear blades offer unparalleled durability, precision, and cost savings for heavy metal fabrication. Whether you operate in shipbuilding, aviation, structural steel, or a dedicated steel service center, upgrading your guillotine shears with exact-match OEM cutting solutions will guarantee continuous, peak performance." },
+      { type: "paragraph", value: "Ready to equip your facility with the ultimate cutting edge? Contact the Sureay engineering team today for a technical audit and custom blade quotation." },
+    ],
+  },
+  {
+    id:       "cryogenic-treatment-alloy-blades",
     tag:      "TECH INNOVATION",
     date:     "12.SEP.2024",
     title:    "ADVANCED CRYOGENIC TREATMENT FOR ALLOY BLADES",
@@ -77,7 +125,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id:       "dp-02",
+    id:       "k-show-2024-recycling-knives",
     tag:      "EXHIBITIONS",
     date:     "05.AUG.2024",
     title:    "K-SHOW 2024: NEXT-GEN RECYCLING KNIVES DEPLOYED",
@@ -93,7 +141,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id:       "dp-03",
+    id:       "tin-vs-chrome-coating",
     tag:      "TECH INNOVATION",
     date:     "28.JUL.2024",
     title:    "SURFACE METALLURGY: TIN VS. CHROME COATING",
@@ -114,7 +162,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id:       "dp-04",
+    id:       "iso-9001-recertification-2024",
     tag:      "COMPANY UPDATES",
     date:     "14.JUN.2024",
     title:    "ISO 9001:2015 RE-CERTIFICATION COMPLETED",
@@ -129,7 +177,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id:       "dp-05",
+    id:       "log-saw-blade-bevel-angles",
     tag:      "TECH INNOVATION",
     date:     "02.MAY.2024",
     title:    "OPTIMIZING BEVEL ANGLES FOR LOG SAW BLADES",
@@ -145,7 +193,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id:       "dp-06",
+    id:       "chinaplas-2024-oem-partnerships",
     tag:      "EXHIBITIONS",
     date:     "18.APR.2024",
     title:    "CHINAPLAS DEBRIEF: OEM CO-ENGINEERING INITIATIVES",

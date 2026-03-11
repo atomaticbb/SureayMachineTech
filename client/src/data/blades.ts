@@ -41,6 +41,7 @@ export type BladeCategoryType =
   | "tissue_paper_blades"
   | "paper_cutting_blades"
   | "granulator_blades"
+  | "metal_cutting_blades"
   | "other_blades";
 
 // ===== BLADE SECTOR TYPE (second filter axis, mirrors machines.ts `tonnage`) =====
@@ -97,7 +98,7 @@ export const blades: Blade[] = [
     name: "Rotary Slitter Knives",
     fullName: "Industrial Rotary Slitter Knives & Circular Slitting Blades",
     category: "rotary_blades",
-    sector: "converting", // Changed from "recycling" to "converting" (more accurate industry)
+    sector: "converting", // 
     categoryDisplay: "Rotary Slitter Knives",
     image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
     badge: "Best Seller",
@@ -187,80 +188,7 @@ export const blades: Blade[] = [
       { spec: "Bottom Blade (Anvil)", od: "108 mm", id: "80 mm", thickness: "20 / 18 mm" },
     ],
 
-    relatedBladeIds: ["rotary-cutter-blades", "paper-cutting-blades"],
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // 2. Rotary Cutter Blades
-  // ─────────────────────────────────────────────────────────────────────────
-  {
-    id: "rotary-cutter-blades",
-    name: "Rotary Cutter Blades",
-    fullName: "High-Performance Rotary Cutter & Slitter Knives",
-    category: "rotary_blades",
-    sector: "metal",
-    categoryDisplay: "Rotary Blades",
-    image: "/images/products/blades/rotary-cutter-blade-00.webp",
-    badge: "High Precision",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/blades/rotary-cutter-blade-00.webp",
-      "/images/products/blades/rotary-cutter-blade-00.webp",
-      "/images/products/blades/rotary-cutter-blade-00.webp",
-      "/images/products/blades/rotary-cutter-blade-00.webp",
-      "/images/products/blades/rotary-cutter-blade-00.webp", // DecisiveSpecs panel - placeholder
-      "/images/products/blades/rotary-cutter-blade-00.webp", // ComprehensiveData panel - placeholder
-    ],
-    description:
-      "Precision-ground rotary cutter blades manufactured from HSS and tungsten carbide for clean, continuous slitting and cutting operations.",
-    fullDescription:
-      "Our rotary cutter blades are engineered for high-speed, continuous cutting applications across the plastics, packaging, paper, and converting industries. Manufactured from premium grades of High-Speed Steel (HSS), D2 tool steel, and Tungsten Carbide, these circular knives offer exceptional wear resistance and razor-sharp edge retention. Advanced CNC grinding ensures strict concentricity and micro-level dimensional tolerances, preventing material tearing, minimizing dust generation, and significantly extending blade changeover intervals during high-volume production.",
-    link: "/products/rotary-cutter-blades",
-    isFeatured: true,
-
-    specs: [
-      { label: "Material", value: "HSS / Carbide / D2" },
-      { label: "Hardness", value: "HRC 60-64" },
-      { label: "Thickness Tol.", value: "±0.002 mm" },
-      { label: "Surface Finish", value: "Ra 0.4 Mirror" },
-    ],
-
-    components: [
-      {
-        id: "ultra-precision-grinding",
-        tag: "MANUFACTURING EXCELLENCE",
-        title: "Ultra-Precision CNC Grinding",
-        description:
-          "Utilizing advanced 5-axis CNC grinding centers, we achieve strict concentricity and parallelism. This guarantees zero runout during high-speed rotation, providing a flawless, clean cut without damaging the material.",
-        image: "/images/products/product.webp",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "HEAT TREATMENT",
-        title: "Deep Cryogenic Processing",
-        description:
-          "Beyond standard vacuum heat treatment, our rotary blades undergo a deep cryogenic process (−196 °C) to completely eliminate retained austenite. This maximizes structural stability and drastically improves wear resistance against abrasive materials.",
-        image: "/images/products/product.webp",
-      },
-      {
-        id: "custom-edge-profiles",
-        tag: "APPLICATION SPECIFIC",
-        title: "Optimized Edge Geometries",
-        description:
-          "Whether you need a single bevel, double bevel, square edge, or a custom toothed profile, our engineering team optimizes the cutting angle based on your specific material thickness and tensile strength.",
-        image: "/images/products/product.webp",
-      },
-      {
-        id: "dynamic-balancing",
-        tag: "QUALITY CONTROL",
-        title: "Dynamic Balancing Test",
-        description:
-          "Every rotary blade is dynamically balanced to ensure vibration-free performance at rotation speeds exceeding 3,000 RPM, extending machine bearing life and guaranteeing cut quality.",
-        image: "/images/products/product.webp",
-      },
-    ],
-
-    relatedBladeIds: ["rotary-slitter-knives", "shredder-blades"],
+    relatedBladeIds: ["shredder-blades", "paper-cutting-blades"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -378,7 +306,7 @@ export const blades: Blade[] = [
       { spec: "2000", od: "Φ700", id: "360", length: "60", teeth: "520" },
     ],
 
-    relatedBladeIds: ["granulator-knives", "alloy-blades"],
+    relatedBladeIds: ["granulator-blades", "rotary-slitter-knives"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -456,7 +384,7 @@ export const blades: Blade[] = [
       { od: "Ø 1000 mm", id: "Ø 60.00 mm", thickness: "6.00 mm" },
     ],
 
-    relatedBladeIds: ["rotary-cutter-blades", "paper-cutting-blades"],
+    relatedBladeIds: ["shredder-blades", "paper-cutting-blades"],
   },
 
   
@@ -559,7 +487,7 @@ export const blades: Blade[] = [
       { spec: "Quadra hole", od: "200 × 70 × 8", id: "50" },
     ],
 
-    relatedBladeIds: ["shredder-blades", "alloy-blades"],
+    relatedBladeIds: ["shredder-blades", "rotary-slitter-knives"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -657,7 +585,7 @@ export const blades: Blade[] = [
       { spec: "2050 * 85 * 16/14",      od: "2050", id: "85", length: "16",   teeth: "14" },
     ],
 
-    relatedBladeIds: ["tissue-log-saw-blades", "alloy-blades"],
+    relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -758,6 +686,165 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["shredder-blades", "granulator-blades"],
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 1. Rotary Metal Slitters (金属卷材纵剪/分条刀具组)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "metal-coil-slitting-knives",
+    name: "Rotary Metal Slitters",
+    fullName: "Rotary Metal Slitters for Precision Metal Processing",
+    category: "metal_cutting_blades",
+    sector: "metal",
+    categoryDisplay: "Metal Slitting Blades",
+    image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
+    gallery: [
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
+      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
+    ],
+    description:
+      "Upgrade your slitting line with our premium Top & Bottom Slitter Blade Set. Engineered for precision metal processing, this complete tooling setup includes high-precision rotary knives, steel spacers, and rubber stripper rings. Through advanced CNC micro-grinding, we achieve a robust, frictionless edge with thickness tolerances strictly held to ±0.001 mm. Guarantee zero-burr shearing and perfect shaft stacking for steel, aluminum, and copper coils.",
+    fullDescription:
+      "Industrial-grade circular metal knives designed for heavy-duty metal service centers and steel mills. We supply high-precision rotary shear blades alongside perfectly matched steel spacers, rubber bonded stripper rings, and overarm separator discs. Manufactured to micron-level tolerances and lapped to a mirror finish to ensure burr-free shearing of both ferrous (CR/HR, Galvanized) and non-ferrous (Aluminum, Copper, Brass) metal coils.",
+    link: "/products/metal-coil-slitting-knives",
+    isFeatured: true,
+
+    specs: [
+      { label: "Material",            value: "D2, SKD11, Cr12MoV, LD, H13, HSS" },
+      { label: "Hardness",            value: "58 - 64 HRC (Application Dependent)" },
+      { label: "Thickness Tolerance", value: "Up to ±0.001 mm" },
+      { label: "O.D. Tolerance",      value: "Up to ±0.01 mm" },
+      { label: "Parallelism",         value: "Up to 0.002 mm" },
+      { label: "Surface Finish",      value: "Lapped / Polished (Ra ≤ 0.2)" },
+      { label: "Complete Tooling",    value: "Spacers, Rubber Rings, Separators" },
+      { label: "Applications",        value: "Cold/Hot Rolled Steel, Silicon Steel, Galvanized Sheet & Non-Ferrous Foils" },
+    ],
+
+    components: [
+      {
+        id: "micron-tolerance",
+        tag: "PRECISION",
+        title: "Micro-Tolerance Engineering",
+        description:
+          "Engineered with a thickness tolerance of up to ±0.001 mm and parallelism of 0.002 mm (for OD ≤ 420mm). Guarantees zero cumulative error when stacking multiple blades on the slitter arbor.",
+        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
+      },
+      {
+        id: "complete-setup",
+        tag: "SYSTEM",
+        title: "Complete Slitting Tooling",
+        description:
+          "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and separator discs. A fully integrated system ensures perfect tension and burr-free coil rewinding.",
+        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
+      },
+      {
+        id: "alloy-toughness",
+        tag: "METALLURGY",
+        title: "Premium Alloy Selection",
+        description:
+          "From high-chromium D2/SKD11 for cold-rolled steel, to heat-resistant H13 for hot mills. Each blade is vacuum hardened to deliver exceptional wear resistance and edge strength for high-speed metal slitting.",
+        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
+      },
+    ],
+
+    standardDimensions: [
+      { spec: "OD ≤ 250 mm",  od: "OD ≤ 250 mm",  id: "Tolerance: +0.01", thickness: "Tol: ±0.001 mm" },
+      { spec: "OD ≤ 420 mm",  od: "OD ≤ 420 mm",  id: "Tolerance: +0.01", thickness: "Tol: ±0.001 mm" },
+      { spec: "OD ≤ 720 mm",  od: "OD ≤ 720 mm",  id: "Tolerance: +0.01", thickness: "Tol: ±0.005 mm" },
+      { spec: "OD ≤ 1000 mm", od: "OD ≤ 1000 mm", id: "Tolerance: +0.01", thickness: "Tol: ±0.030 mm" },
+      { spec: "OD ≤ 1600 mm", od: "OD ≤ 1600 mm", id: "Tolerance: +0.01", thickness: "Tol: ±0.050 mm" },
+    ],
+
+    relatedBladeIds: ["metal-shear-blades", "alloy-blades"],
+  },
+  
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 2. Metal Shear Knives (金属剪板机直条刀)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "metal-shear-blades",
+    name: "Metal Shear Knives",
+    fullName: "Heavy-Duty Guillotine Shear Blades for Metal Fabrication",
+    category: "metal_cutting_blades",
+    sector: "metal",
+    categoryDisplay: "Metal Shear Knives",
+    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    gallery: [
+      "/images/products/granulator-blades/metal-shear-blades-00.webp",
+      "/images/products/granulator-blades/metal-shear-blades-01.webp",
+      "/images/products/granulator-blades/metal-shear-blades-04.webp",
+      "/images/products/granulator-blades/metal-shear-blades-03.webp",
+      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/granulator-blades/metal-shear-blades-05.webp",
+    ],
+    description:
+      "Sureay Metal Shear Knives represent the pinnacle of durability for global metal fabrication. Through advanced heat treatment and precision grinding, we achieve a robust, impact-resistant cutting edge that shears through mild steel, stainless plates, and hot-rolled billets with extreme accuracy. This optimized geometry prevents edge bowing and guarantees burr-free cuts. Partner with Sureay for exact-match OEM shear knives that ensure continuous, heavy-duty performance.",
+    fullDescription:
+      "Premium straight shear knives designed for mechanical and hydraulic guillotine shears. Serving critical industries including shipbuilding, aviation, and structural steel, our blades are custom-forged from graded tool steels to match your specific material thickness and temperature requirements.",
+    link: "/products/metal-shear-blades",
+    isFeatured: true,
+
+    specs: [
+      { label: "Brand",               value: "Sureay" },
+      { label: "Material",            value: "T10, 9CrSi, 6CrW2Si, Cr12MoV, H13 & Alloy Steels" },
+      { label: "Cold Shearing",       value: "T10, 65Mn (57-59 HRC)" },
+      { label: "Heavy Shearing",      value: "9CrSi, Cr12MoV, 6CrW2Si (58-62 HRC)" },
+      { label: "Hot Shearing",        value: "H13, LD, HSS (High Temp Resistant)" },
+      { label: "Length Capacity",     value: "Up to 6000 mm (Single Piece)" },
+      { label: "Edge Geometry",       value: "1, 2, or 4 Cutting Edges" },
+      { label: "Tolerance",           value: "Precision Ground Parallelism" },
+      { label: "Industries Served",   value: "Metallurgy, Shipbuilding, Aviation, Steel Structures & Fabrication" },
+    ],
+
+    components: [
+      {
+        id: "cold-shearing",
+        tag: "STANDARD DUTY",
+        title: "Cold-Rolled & Mild Steel Shearing",
+        description:
+          "Forged from T8/T10 carbon tool steel and hardened to 57-59 HRC. An incredibly cost-effective solution for cutting standard A3 plates, mild steel, and general scrap recycling without compromising edge integrity.",
+        image: "/images/products/granulator-blades/metal-shear-blades-01.webp",
+      },
+      {
+        id: "stainless-shearing",
+        tag: "HEAVY DUTY",
+        title: "Stainless & Medium Plate Shearing",
+        description:
+          "Utilizing premium low-alloy steels like 9CrSi, 6CrW2Si, and Cr12MoV. Deep-hardened to 58-62 HRC to withstand extreme abrasive wear when shearing stainless steel and thicker alloy plates.",
+        image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      },
+      {
+        id: "hot-shearing",
+        tag: "EXTREME TEMP",
+        title: "Hot-Rolled Billet Shearing",
+        description:
+          "Engineered for heavy steel mills. Made from H13 and LD alloys that retain their hardness and resist annealing at extreme temperatures, perfect for hot shearing billets and heavy slabs.",
+        image: "/images/products/granulator-blades/metal-shear-blades-03.webp",
+      },
+    ],
+
+    standardDimensions: [
+      { spec: "500×70×22",   od: "500 mm",  id: "70 mm",  thickness: "22 mm" },
+      { spec: "508×70×22",   od: "508 mm",  id: "70 mm",  thickness: "22 mm" },
+      { spec: "508×80×25",   od: "508 mm",  id: "80 mm",  thickness: "25 mm" },
+      { spec: "510×80×25",   od: "510 mm",  id: "80 mm",  thickness: "25 mm" },
+      { spec: "1025×80×20",  od: "1025 mm", id: "80 mm",  thickness: "20 mm" },
+      { spec: "1025×100×20", od: "1025 mm", id: "100 mm", thickness: "20 mm" },
+      { spec: "1025×100×25", od: "1025 mm", id: "100 mm", thickness: "25 mm" },
+      { spec: "1100×80×20",  od: "1100 mm", id: "80 mm",  thickness: "20 mm" },
+      { spec: "1100×100×25", od: "1100 mm", id: "100 mm", thickness: "25 mm" },
+      { spec: "1300×80×20",  od: "1300 mm", id: "80 mm",  thickness: "20 mm" },
+      { spec: "1300×125×32", od: "1300 mm", id: "125 mm", thickness: "32 mm" },
+      { spec: "Customized",  od: "Custom Length", id: "Custom Width", thickness: "Per Drawing" },
+    ],
+
+    relatedBladeIds: ["metal-coil-slitting-knives", "alloy-blades"],
   },
 ];
 
