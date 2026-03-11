@@ -16,6 +16,7 @@ const About         = lazy(() => import("./pages/About"));
 const Contact       = lazy(() => import("./pages/Contact"));
 const News          = lazy(() => import("./pages/News"));
 const NewsDetail    = lazy(() => import("./pages/NewsDetail"));
+const FAQ           = lazy(() => import("./pages/FAQ"));
 const Admin         = lazy(() => import("./pages/Admin"));
 const AdminLogin    = lazy(() => import("./pages/AdminLogin"));
 const NotFound      = lazy(() => import("./pages/NotFound"));
@@ -132,6 +133,7 @@ function Router() {
           <Route path="/contact"  component={Contact}    />
           <Route path="/news"     component={News}       />
           <Route path="/news/:id" component={NewsDetail} />
+          <Route path="/faq"      component={FAQ}        />
 
           {/* Admin — login page is public; dashboard is protected */}
           <Route path="/admin/login" component={AdminLogin} />

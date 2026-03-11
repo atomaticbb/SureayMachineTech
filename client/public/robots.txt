@@ -1,0 +1,16 @@
+# Sureay Machine Tech - Robots.txt
+# https://www.sureay.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin or internal pages (if any exist)
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.sureay.com/sitemap.xml
+
+# Crawl delay (optional, adjust if needed)
+# Crawl-delay: 1
