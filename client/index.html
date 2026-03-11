@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <link rel="icon" type="image/svg+xml" href="/sureay-logo.svg" />
-    <link rel="apple-touch-icon" href="/sureay-logo.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1a1a2e" />
     <title>Precision Industrial Blades | Sureay</title>
     <!-- meta description is managed per-page by SEO.tsx (react-helmet-async) -->
     <meta name="keywords" content="industrial blades, granulator knives, shredder blades, OEM blades, recycling blades, precision cutting blades, industrial knife manufacturer" />
@@ -18,14 +25,14 @@
       rel="stylesheet"
     />
 
-    <!-- Google Analytics 4 — Consent Mode v2 -->
+    <!-- Google Analytics 4 鈥?Consent Mode v2 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDTDXJNB51"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      // ── Step 1: Privacy by default — all signals denied ─────────────────
+      // 鈹€鈹€ Step 1: Privacy by default 鈥?all signals denied 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
       gtag('consent', 'default', {
         analytics_storage:  'denied',
         ad_storage:         'denied',
@@ -33,7 +40,7 @@
         ad_personalization: 'denied',
       });
 
-      // ── Step 2: Restore granted consent from a previous visit ────────────
+      // 鈹€鈹€ Step 2: Restore granted consent from a previous visit 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€
       // Runs before React mounts so the very first page_view is tracked correctly.
       if (localStorage.getItem('sureay_cookie_v2') === 'granted') {
         gtag('consent', 'update', {
