@@ -50,13 +50,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords: "blade technology, manufacturing news, technical guides, industrial cutting insights",
   },
 
-  faq: {
-    title: "FAQ | Industrial Blade Manufacturing Questions | Sureay",
-    description:
-      "Expert answers to common questions about blade manufacturing, materials, tolerances, and applications. Learn about lead times, regrinding, coating options, and custom blade specifications from our engineering team.",
-    keywords: "blade manufacturing FAQ, industrial blade questions, custom blade specs, blade materials selection",
-  },
-
   // ── Industry Landing Pages ─────────────────────────────────────────────
 
   plasticIndustry: {
