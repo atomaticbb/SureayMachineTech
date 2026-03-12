@@ -42,7 +42,7 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
   // variant === "list"
   return (
     <Link key={blade.id} href={blade.link}>
-      <a className="group block bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-300 overflow-hidden">
+      <a className="group block bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-300">
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr]">
 
           {/* Left: Image */}
@@ -74,13 +74,13 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
                 {blade.name}
               </h3>
               <div className="relative group/desc">
-                <p className="text-sm text-slate-500 leading-relaxed line-clamp-2 cursor-help">
-                  {blade.description}
+                <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 cursor-help">
+                  {blade.fullDescription || blade.description}
                 </p>
                 {/* Tooltip - only show if text is clamped */}
                 <div className="absolute left-0 top-full mt-1 w-full max-w-md bg-white border-2 border-[#001f4d] p-4 opacity-0 invisible group-hover/desc:opacity-100 group-hover/desc:visible transition-all duration-200 z-50 pointer-events-none">
                   <p className="text-sm text-slate-700 leading-relaxed">
-                    {blade.description}
+                    {blade.fullDescription || blade.description}
                   </p>
                 </div>
               </div>

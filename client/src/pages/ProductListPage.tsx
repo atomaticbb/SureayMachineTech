@@ -125,7 +125,7 @@ export default function BladeListPage() {
             <img
               src="/images/hero/blades-hero-04.webp"
               alt="Industrial Blades & Cutting Tools — Sureay Machinery"
-              className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
+              className="absolute inset-0 w-full h-full object-contain brightness-95 contrast-110 saturate-75"
             />
           </div>
 

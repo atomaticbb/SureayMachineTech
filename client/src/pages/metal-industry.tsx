@@ -47,6 +47,7 @@ const HERO_DATA: IndustryHeroData = {
     { src: "/images/applications/metal-industry/metal-shear-blades-00.webp",       alt: "Metal shear blades for guillotine shearing"      },
     { src: "/images/applications/metal-industry/metal-shear-blades-03.webp",       alt: "Heavy-duty metal shear knife detail"             },
     { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",  alt: "Industrial blades for metal fabrication"         },
+    { src: "/images/applications/metal-industry/metal-slitter-knives-04.webp",  alt: "Industrial metal slitter knives for coil slitting equipment"},
   ],
 };
 

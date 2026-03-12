@@ -13,8 +13,8 @@
 import type { IndustryHeroData } from "./types";
 
 // Fixed visual rhythm for the two gallery columns
-const COL_A_HEIGHTS = ["h-[320px]", "h-[220px]", "h-[240px]", "h-[210px]"] as const;
-const COL_B_HEIGHTS = ["h-[220px]", "h-[240px]", "h-[240px]", "h-[240px]"] as const;
+const COL_A_HEIGHTS = ["h-[310px]", "h-[230px]", "h-[250px]", "h-[240px]"] as const;
+const COL_B_HEIGHTS = ["h-[240px]", "h-[260px]", "h-[260px]", "h-[220px]"] as const;
 const COL_A_IDX     = [0, 2, 4, 6] as const;
 const COL_B_IDX     = [1, 3, 5, 7] as const;
 
