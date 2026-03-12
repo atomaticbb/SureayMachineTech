@@ -40,14 +40,14 @@ const HERO_DATA: IndustryHeroData = {
     "product line keeps your extrusion systems running at peak productivity.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/plastic-industry/Raw%20Material%20Selection.webp",       alt: "Raw material selection for plastic processing"    },
-    { src: "/images/applications/plastic-industry/blades.webp",                            alt: "Industrial blades for plastics recycling"          },
-    { src: "/images/applications/plastic-industry/hero.webp",                              alt: "Plastic industry production hero scene"            },
-    { src: "/images/applications/plastic-industry/single-shredder-blades-001-w1200.webp", alt: "Single shredder blades close-up"                   },
-    { src: "/images/applications/plastic-industry/single-shredder-blades-010.webp",       alt: "Shredder blade set for heavy-duty recycling"       },
-    { src: "/images/applications/plastic-industry/metal-slitter-knife.webp",               alt: "Metal slitter knife for precision cutting"          },
-    { src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",                      alt: "Wire-cut machining process detail"                  },
-    { src: "/images/applications/plastic-industry/acuum-heat-treatment.webp",              alt: "Vacuum heat treatment process"                     },
+    { src: "/images/applications/plastic-industry/single-shredder-blades-04.webp",     alt: "Single shaft shredder blades for plastic"          },
+    { src: "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",   alt: "Multi-shaft shredder blades for plastic recycling" },
+    { src: "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",  alt: "Four-shaft shredder blade assembly"                 },
+    { src: "/images/applications/plastic-industry/shredder-blades-03.webp",            alt: "Shredder blades for heavy-duty plastic recycling"  },
+    { src: "/images/applications/plastic-industry/blades.webp",                        alt: "Industrial blades for plastics recycling"          },
+    { src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",                  alt: "Wire-cut machining process detail"                  },
+    { src: "/images/applications/plastic-industry/Raw%20Material%20Selection.webp",    alt: "Raw material selection for plastic processing"     },
+    { src: "/images/applications/plastic-industry/acuum-heat-treatment.webp",          alt: "Vacuum heat treatment process"                     },
   ],
 };
 
@@ -161,7 +161,13 @@ export default function PlasticIndustry() {
       <SEO
         title="Plastics Recycling & Extrusion Tooling — Filterless Systems"
         description="Precision granulator knives, filterless screen changers and pelletizer hob cutters engineered for zero-downtime plastic recycling and extrusion lines. OEM-compatible with EREMA, LINDNER, VECOPLAN."
-        canonicalUrl="/industry/plastics-recycling"
+        canonicalUrl="/plastic-industry"
+        keywords="plastic recycling blades, granulator knives, shredder blades, PET recycling, PVC processing"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/products" },
+          { name: "Plastics Recycling", url: "/plastic-industry" },
+        ]}
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>

@@ -3,40 +3,86 @@ import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FEATURED_PRODUCTS } from "@/data/homeData";
 
+// Triple the products for seamless infinite scroll
+const LOOP_ITEMS = [...FEATURED_PRODUCTS, ...FEATURED_PRODUCTS, ...FEATURED_PRODUCTS];
+
 export default function AuthorityCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
+  const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const normCooldownRef = useRef(false);
 
-  const scrollCarousel = (dir: "left" | "right") => {
-    if (!carouselRef.current) return;
+  const getItemWidth = (): number => {
     const el = carouselRef.current;
+    if (!el) return 232;
     const item = el.querySelector("[data-carousel-item]") as HTMLElement | null;
-    const itemW = item ? item.offsetWidth + 32 : 232;
-    if (dir === "right") {
-      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 5) {
-        el.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        el.scrollBy({ left: itemW, behavior: "smooth" });
-      }
-    } else {
-      if (el.scrollLeft <= 5) {
-        el.scrollTo({ left: el.scrollWidth, behavior: "smooth" });
-      } else {
-        el.scrollBy({ left: -itemW, behavior: "smooth" });
-      }
+    return item ? item.offsetWidth + 32 : 232; // offsetWidth + gap-8 (32px)
+  };
+
+  // Teleport to middle set when reaching boundaries (invisible to user)
+  const normalise = () => {
+    const el = carouselRef.current;
+    if (!el) return;
+    const oneSetW = el.scrollWidth / 3;
+
+    let jumped = false;
+    if (el.scrollLeft >= oneSetW * 2) {
+      // Scrolled into set 3, teleport to set 2
+      el.scrollLeft -= oneSetW;
+      jumped = true;
+    } else if (el.scrollLeft < oneSetW - 2) {
+      // Scrolled into set 1, teleport to set 2
+      el.scrollLeft += oneSetW;
+      jumped = true;
+    }
+
+    if (jumped) {
+      normCooldownRef.current = true;
+      setTimeout(() => { normCooldownRef.current = false; }, 100);
     }
   };
 
+  // Detect when scrolling has stopped (50ms idle), then normalise
+  const handleScroll = () => {
+    if (normCooldownRef.current) return;
+    if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    scrollTimerRef.current = setTimeout(normalise, 50);
+  };
+
+  const scrollCarousel = (dir: "left" | "right") => {
+    const el = carouselRef.current;
+    if (!el) return;
+    el.scrollBy({
+      left: dir === "right" ? getItemWidth() : -getItemWidth(),
+      behavior: "smooth"
+    });
+  };
+
+  // Initialize scroll to middle set
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    requestAnimationFrame(() => {
+      el.scrollLeft = el.scrollWidth / 3;
+    });
+  }, []);
+
+  // Listen to scroll events for infinite loop normalisation
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    el.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      el.removeEventListener("scroll", handleScroll);
+      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    };
+  }, []);
+
+  // Auto-scroll every 3 seconds
   useEffect(() => {
     const timer = setInterval(() => {
-      if (!carouselRef.current) return;
       const el = carouselRef.current;
-      const item = el.querySelector("[data-carousel-item]") as HTMLElement | null;
-      const itemW = item ? item.offsetWidth + 32 : 232;
-      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 5) {
-        el.scrollTo({ left: 0, behavior: "smooth" });
-      } else {
-        el.scrollBy({ left: itemW, behavior: "smooth" });
-      }
+      if (!el) return;
+      el.scrollBy({ left: getItemWidth(), behavior: "smooth" });
     }, 3000);
     return () => clearInterval(timer);
   }, []);
@@ -68,8 +114,8 @@ export default function AuthorityCarousel() {
               className="flex-1 flex gap-8 overflow-x-auto py-2 [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none" }}
             >
-              {FEATURED_PRODUCTS.map((product) => (
-                <Link href={product.href} key={product.name}>
+              {LOOP_ITEMS.map((product, i) => (
+                <Link href={product.href} key={`${product.name}-${i}`}>
                   <div
                     data-carousel-item
                     className="flex-shrink-0 flex flex-col items-center w-48 group cursor-pointer"

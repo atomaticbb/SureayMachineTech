@@ -20,55 +20,58 @@ export const STATS = [
 export const ECOSYSTEMS = [
   {
     icon: Recycle,
-    label: "Plastic Recycling",
-    industry: "Plastic Industry",
-    desc: "Shredder blades, pelletizer knives, screen changers and granulator rotors precision-engineered for severe abrasion across PET, HDPE, and mixed-polymer recycling lines.",
+    label: "Recycling & Waste Management",
+    industry: "Plastics & Recycling",
+    desc: "From post-consumer PET bottles to mixed municipal solid waste, we supply shredder blades, granulator knives, and pelletizer rotors precision-engineered for maximum throughput and minimum downtime across the full waste reduction chain.",
     specs: [
-      { label: "Materials",    value: "D2, SKD-11 (Cr12MoV), Tungsten Carbide (YG8/YG15)" },
+      { label: "Materials",    value: "D2, DC53, SKD-11 (Cr12MoV), Tungsten Carbide (YG8/YG15)" },
       { label: "Tolerances",   value: "±0.002 mm edge — 100% CMM verified per batch" },
-      { label: "Applications", value: "Granulators, Single-shaft shredders, Pelletizer heads, Screen changers" },
+      { label: "Applications", value: "Single & multi-shaft shredders, Granulators, Pelletizer heads" },
       { label: "Surface",      value: "Ra ≤ 0.8 μm (standard) · Ra ≤ 0.4 μm (mirror, on request)" },
     ],
-    href: "/industry/plastics-recycling",
+    href: "/plastic-industry",
     image: "/images/applications/Plastic-Waste-Recycling.webp",
   },
   {
-    icon: Layers,
-    label: "Metal Processing",
-    industry: "Metal Industry",
-    desc: "Cold-shear blades, slitter knives and heavy-duty guillotine knives manufactured to exact OEM specifications for high-throughput flat-steel and coil-processing lines.",
+    icon: FileText,
+    label: "Paper, Packaging & Converting",
+    industry: "Paper & Converting",
+    desc: "Mirror-polished log-saw blades, guillotine cutter knives, and precision slitter tooling built for continuous, high-speed converting lines. Matched to Fabio Perini, Körber, and all major OEM geometries for zero-rework drop-in installation.",
     specs: [
-      { label: "Materials",    value: "H13, 9CrSi, M2 HSS, LD (Cr12MoV2)" },
-      { label: "Tolerances",   value: "±0.01 mm flatness · ±0.002 mm edge — laser-verified" },
+      { label: "Materials",    value: "M2 HSS, D2, Bi-metal (HSS + carbon steel body)" },
+      { label: "Tolerances",   value: "±0.002 mm TIR · flatness verified on granite surface plate" },
+      { label: "Applications", value: "Log saws, Rewinders, Slitter-rewinders, Guillotine cutters" },
+      { label: "Surface",      value: "Ra ≤ 0.4 μm mirror polish — cutting edge radius < 5 μm" },
+    ],
+    href: "/paper-industry",
+    image: "/images/applications/tissue-industry/tissue-and-paper.webp",
+  },
+  {
+    icon: Layers,
+    label: "Metal Coil Processing",
+    industry: "Metal Processing",
+    desc: "High-precision rotary slitter knives, guillotine shear blades, and complete coil-slitting tooling sets manufactured to micron-level tolerances for ferrous and non-ferrous service centers, steel mills, and heavy fabrication lines.",
+    specs: [
+      { label: "Materials",    value: "D2, SKD11, H13, 9CrSi, M2 HSS, Cr12MoV" },
+      { label: "Tolerances",   value: "Thickness ±0.001 mm · OD ±0.01 mm — laser verified" },
       { label: "Applications", value: "Slitting lines, Flying shear, Guillotine cutters, Rotary shear" },
       { label: "Hardness",     value: "58–64 HRC (vacuum heat treated, deformation < 0.01 mm)" },
     ],
-    href: "/industry/metal-processing",
+    href: "/metal-industry",
     image: "/images/applications/Metal-Waste-Recycling.webp",
-  },
-  {
-    icon: FileText,
-    label: "Paper & Tissue",
-    industry: "Paper Industry",
-    desc: "Mirror-polished log-saw blades (Ra ≤ 0.4 μm), tissue slitters and rewinder doctor blades for high-throughput tissue mills and converting lines.",
-    specs: [
-      { label: "Materials",    value: "M2 HSS, D2, Bi-metal (HSS+carbon steel body)" },
-      { label: "Tolerances",   value: "±0.002 mm TIR · flatness verified on granite surface plate" },
-      { label: "Applications", value: "Log saws, Rewinders, Slitter-rewinders, Embossing rolls" },
-      { label: "Surface",      value: "Ra ≤ 0.4 μm mirror polish — cutting edge radius < 5 μm" },
-    ],
-    href: "/industry/paper-tissue",
-    image: "/images/applications/tissue-and-paper.webp",
   },
 ];
 
 // ─── Featured Products ────────────────────────────────────────────────────────
 export const FEATURED_PRODUCTS = [
-  { name: "Tissue Log-Saw Blade",    image: "/images/products/blades/tissue-log-saw-blades.webp",         href: "/products/tissue-log-saw-blades" },
-  { name: "Circular Slitter Blade",  image: "/images/products/blades/11-2-2_circular-blade_01.webp",      href: "/products/alloy-blades" },
-  { name: "Metal Shear Blade",       image: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",   href: "/products/shredder-blades" },
-  { name: "Metal Slitter Knife",     image: "/images/products/blades/11-6-2_metal-slitter-knife_01.webp", href: "/products/rotary-cutter-blades" },
-  { name: "Heavy Slitter Knife",     image: "/images/products/blades/11-6-4_metal-slitter-knife_01.webp", href: "/products/paper-cutting-blades" },
+  { name: "Rotary Slitter Knives",        image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",    href: "/products/rotary-slitter-knives" },
+  { name: "Shredder Blades",              image: "/images/products/shredder-blades/shredder-blades-04.webp",                 href: "/products/shredder-blades" },
+  { name: "Tissue Paper Blades",          image: "/images/products/blades/tissue-log-saw-blades.webp",                      href: "/products/tissue-log-saw-blades" },
+  { name: "Granulator Blades",            image: "/images/products/granulator-blades/granulator-blades-01.webp",             href: "/products/granulator-blades" },
+  { name: "Paper Cutting Blades",         image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",      href: "/products/paper-cutting-blades" },
+  { name: "Single Shaft Shredder Blades", image: "/images/products/shredder-blades/single-shredder-blades-06.webp",          href: "/products/single-shaft-shredder-blades" },
+  { name: "Metal Slitting Blades",        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",     href: "/products/metal-coil-slitting-knives" },
+  { name: "Metal Shear Knives",           image: "/images/products/granulator-blades/metal-shear-blades-00.webp",           href: "/products/metal-shear-blades" },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
@@ -91,33 +94,3 @@ export const FAQ_ITEMS = [
   },
 ];
 
-// ─── News & Articles ──────────────────────────────────────────────────────────
-export const ARTICLES = [
-  {
-    category: "Technical Guide",
-    date: "January 15, 2025",
-    title: "How to Extend Industrial Blade Service Life by Up to 30%",
-    excerpt:
-      "Vacuum heat treatment, proper alloy selection, and re-grinding intervals are the three levers that separate blades lasting 3 months from blades lasting 9 months.",
-    image: "/images/process/acuum-heat-treatment.webp",
-    href: "/news",
-  },
-  {
-    category: "Industry Insight",
-    date: "December 28, 2024",
-    title: "2025 Trends in Plastic Recycling: What Equipment Buyers Need to Know",
-    excerpt:
-      "Post-consumer rPET demand is reshaping granulator blade geometry requirements. We break down the shift toward tighter tolerances and harder steel grades in modern recycling lines.",
-    image: "/images/news/Electronic-Waste-Recycling.webp",
-    href: "/news",
-  },
-  {
-    category: "Material Science",
-    date: "December 5, 2024",
-    title: "D2 vs SKD-11 vs M2 HSS: Choosing the Right Steel for Your Application",
-    excerpt:
-      "Not all tool steels are equal. This guide compares wear resistance, toughness, and machinability across the three most common blade grades — with real-world application maps.",
-    image: "/images/process/premium-steel-selection.webp",
-    href: "/news",
-  },
-];

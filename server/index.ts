@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import express from "express";
+import compression from "compression";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -19,7 +20,8 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
-  // ── 1. Security & Parsers ────────────────────────────────────────────────
+  // ── 1. Compression & Security & Parsers ────────────────────────────────────
+  app.use(compression());
   app.use(helmet({
     contentSecurityPolicy: {
       directives: {

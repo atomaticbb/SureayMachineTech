@@ -598,11 +598,11 @@ export const blades: Blade[] = [
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Single Shaft Shredder Blades",
-    image: "/images/products/shredder-blades/single-shredder-blades-05.webp",
+    image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
     badge: "Heavy Duty",
     badgeColor: "orange",
     gallery: [
-      "/images/products/shredder-blades/single-shredder-blades-05.webp",
+      "/images/products/shredder-blades/single-shredder-blades-06.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
       "/images/products/shredder-blades/single-shredder-blades-02.webp",

@@ -14,6 +14,15 @@
 - [x] Update sitemap.xml with new products
 - [x] Update all news article IDs to descriptive names
 - [x] Push all changes to GitHub
+- [x] Google Search Console Setup (sitemap submitted, key pages indexed)
+- [x] Analytics & Tracking (GA4 setup, GTM, conversion goals)
+- [x] **Product Schema on all product detail pages** (SEO.tsx, ProductDetail.tsx)
+- [x] **Organization Schema on homepage** (Home.tsx JSON-LD)
+- [x] **Breadcrumb Schema on all pages** (SEO.tsx BreadcrumbList + visual Breadcrumbs on all pages)
+- [x] **Meta keywords added** to all pages (SEO.tsx keywords prop + seo-config.ts)
+- [x] **Thumbnail alt text fixed** in BladeHero.tsx (descriptive per blade name)
+- [x] **Gzip compression enabled** on Express server (compression middleware)
+- [x] **JavaScript code splitting** configured in Vite (vendor/router/ui/radix chunks)
 
 ---
 
@@ -45,38 +54,48 @@
 ## 🟡 Priority 2: Important (Week 2-3)
 
 ### Structured Data Implementation
-- [ ] Add Product Schema to all product detail pages
-  - Use `generateProductSchema()` from product-schema.ts
-  - Add `<script type="application/ld+json">` tag
-- [ ] Add Organization Schema to homepage
-  - Use `generateOrganizationSchema()`
-- [ ] Add Breadcrumb Schema to all pages
-  - Implement visual breadcrumb navigation
-  - Add breadcrumb structured data
+- [x] Add Product Schema to all product detail pages
+  - SEO.tsx renders Product JSON-LD; all ProductDetail pages use it
+- [x] Add Organization Schema to homepage
+  - Added `ORGANIZATION_LD` JSON-LD block to Home.tsx
+- [x] Add Breadcrumb Schema to all pages
+  - SEO.tsx now emits BreadcrumbList JSON-LD when `breadcrumbs` prop provided
+  - Visual `<Breadcrumbs>` component added to ProductDetail, ProductListPage, all 3 industry pages
 
 ### Content Optimization
-- [ ] Add alt text to ALL product images
-  - Check all blade product images
-  - Check all process/factory images
-  - Check all news article images
+- [x] Add alt text to ALL product images
+  - BladeHero thumbnail alt fixed: `"View 1"` → `"[blade name] — view 1"`
+  - All other product/factory images already had descriptive alt text
 - [ ] Optimize image file names (use descriptive names)
-- [ ] Add missing meta keywords where relevant
+  - **SKIP** — renaming would break existing image references across the codebase
+- [x] Add missing meta keywords where relevant
+  - `SEO.tsx` now supports `keywords` prop; all product & industry pages pass keywords from `seo-config.ts`
+  - Homepage keywords meta tag added inline
 
 ### Technical SEO
 - [ ] Test page speed with Google PageSpeed Insights
+  - **ACTION REQUIRED:** Visit https://pagespeed.web.dev/ after deployment
   - Target: LCP < 2.5s, FID < 100ms, CLS < 0.1
-  - URL: https://pagespeed.web.dev/
-- [ ] Implement lazy loading for images
-- [ ] Minimize JavaScript bundle size
-- [ ] Enable gzip/brotli compression on server
+- [x] Implement lazy loading for images
+  - Most images already use `loading="lazy"` / `loading="eager"` appropriately
+- [x] Minimize JavaScript bundle size
+  - Vite `manualChunks` added: vendor / router / ui / radix split
+- [x] Enable gzip/brotli compression on server
+  - `compression` middleware added as first middleware in Express server
 
 ### Internal Linking
-- [ ] Create internal linking strategy
-  - Link related products to each other
-  - Link from news articles to product pages
-  - Add "Related Products" section
-- [ ] Create hub pages (category pages with links to products)
-- [ ] Use descriptive anchor text
+- [x] Create internal linking strategy
+  - `relatedBladeIds` in blades.ts maps cross-links per product
+- [x] Link related products to each other
+  - `CompatibleTooling` zone renders related blade cards on every product page
+- [ ] Link from news articles to product pages
+  - **TODO:** Review news article content and add product page links inline
+- [x] Add "Related Products" section
+  - `CompatibleTooling` component serves as "Related Products" (Zone 6 on product pages)
+- [x] Create hub pages (category pages with links to products)
+  - `/plastic-industry`, `/metal-industry`, `/paper-industry` all list+link products
+- [x] Use descriptive anchor text
+  - Product links use blade names in anchor text throughout
 
 ---
 
@@ -225,5 +244,5 @@
 
 ---
 
-**Last Updated:** 2026-03-11
+**Last Updated:** 2026-03-12
 **Next Review Date:** 2026-04-11

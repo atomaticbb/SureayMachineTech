@@ -40,14 +40,14 @@ const HERO_DATA: IndustryHeroData = {
     "CMM-verified—for zero-rework drop-in installation.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/tissue-industry/Raw%20Material%20Selection.webp",       alt: "Raw material selection for tissue processing"    },
-    { src: "/images/applications/tissue-industry/blades.webp",                            alt: "Industrial blades for tissue processing"          },
-    { src: "/images/applications/tissue-industry/hero.webp",                              alt: "Tissue industry production hero scene"            },
-    { src: "/images/applications/tissue-industry/single-shredder-blades-001-w1200.webp", alt: "Single shredder blades close-up"                   },
-    { src: "/images/applications/tissue-industry/single-shredder-blades-010.webp",       alt: "Shredder blade set for heavy-duty tissue processing"       },
-    { src: "/images/applications/tissue-industry/metal-slitter-knife.webp",               alt: "Metal slitter knife for precision cutting"          },
-    { src: "/images/applications/tissue-industry/6-Wire%20Cut.webp",                      alt: "Wire-cut machining process detail"                  },
-    { src: "/images/applications/tissue-industry/acuum-heat-treatment.webp",              alt: "Vacuum heat treatment process"                     },
+    { src: "/images/applications/tissue-industry/tissue-and-paper.webp",           alt: "Tissue and paper converting"                    },
+    { src: "/images/applications/tissue-industry/virgin-tissue.webp",              alt: "Virgin tissue rolls production"                 },
+    { src: "/images/applications/tissue-industry/granulator-blades-05.webp",       alt: "Granulator blades for paper processing"         },
+    { src: "/images/applications/tissue-industry/paper-cutting-blades-02.webp",    alt: "Paper cutting blades precision"                 },
+    { src: "/images/applications/tissue-industry/blades.webp",                     alt: "Industrial blades for tissue processing"        },
+    { src: "/images/applications/tissue-industry/6-Wire%20Cut.webp",               alt: "Wire-cut machining process detail"              },
+    { src: "/images/applications/tissue-industry/Raw%20Material%20Selection.webp", alt: "Raw material selection for tissue processing"   },
+    { src: "/images/applications/tissue-industry/acuum-heat-treatment.webp",       alt: "Vacuum heat treatment process"                  },
   ],
 };
 
@@ -137,7 +137,13 @@ export default function PaperIndustry() {
       <SEO
         title="Paper & Tissue Converting Knives & Equipment"
         description="Triple-ground tissue log saw blades, rewinder perforation knives and slitting tooling for high-speed paper and tissue converting lines. OEM-compatible with Fabio Perini, Körber, Fosber."
-        canonicalUrl="/industry/paper-tissue"
+        canonicalUrl="/paper-industry"
+        keywords="tissue log saw blades, paper cutting knives, guillotine blades, paper converting, printing industry blades"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/products" },
+          { name: "Paper & Tissue", url: "/paper-industry" },
+        ]}
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>

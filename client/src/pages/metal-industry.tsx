@@ -40,14 +40,13 @@ const HERO_DATA: IndustryHeroData = {
     "maintained throughout the full production run.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/metal-industry/Raw%20Material%20Selection.webp",       alt: "Raw material selection for metal processing"    },
-    { src: "/images/applications/metal-industry/blades.webp",                            alt: "Industrial blades for metal processing"          },
-    { src: "/images/applications/metal-industry/hero.webp",                              alt: "Metal industry production hero scene"            },
-    { src: "/images/applications/metal-industry/single-shredder-blades-001-w1200.webp", alt: "Single shredder blades close-up"                   },
-    { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",       alt: "Shredder blade set for heavy-duty metal processing"       },
-    { src: "/images/applications/metal-industry/metal-slitter-knife.webp",               alt: "Metal slitter knife for precision cutting"          },
-    { src: "/images/applications/metal-industry/6-Wire%20Cut.webp",                      alt: "Wire-cut machining process detail"                  },
-    { src: "/images/applications/metal-industry/vacuum-heat-treatment.webp",              alt: "Vacuum heat treatment process"                     },
+    { src: "/images/applications/metal-industry/cold-rolled-steel.webp",           alt: "Cold rolled steel coil processing"               },
+    { src: "/images/applications/metal-industry/machine.webp",                     alt: "Metal processing machine"                        },
+    { src: "/images/applications/metal-industry/metal-slitter-knives-00.webp",     alt: "Metal slitter knives for coil slitting"          },
+    { src: "/images/applications/metal-industry/metal-slitter-knives-01.webp",     alt: "Rotary metal slitter knives close-up"            },
+    { src: "/images/applications/metal-industry/metal-shear-blades-00.webp",       alt: "Metal shear blades for guillotine shearing"      },
+    { src: "/images/applications/metal-industry/metal-shear-blades-03.webp",       alt: "Heavy-duty metal shear knife detail"             },
+    { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",  alt: "Industrial blades for metal fabrication"         },
   ],
 };
 
@@ -163,7 +162,13 @@ export default function MetalIndustry() {
       <SEO
         title="Metal Processing Tooling & Coil Slitting Equipment"
         description="Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC."
-        canonicalUrl="/industry/metal-processing"
+        canonicalUrl="/metal-industry"
+        keywords="metal slitting knives, guillotine shear blades, coil processing, steel cutting, metal fabrication blades"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/products" },
+          { name: "Metal Processing", url: "/metal-industry" },
+        ]}
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>

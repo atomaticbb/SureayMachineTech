@@ -19,6 +19,7 @@ import Breadcrumbs from "@/components/common/Breadcrumbs";
 import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
+import { getSEO } from "@/utils/seo-config";
 
 import { getBladeById, getRelatedBlades } from "@/data/blades";
 
@@ -58,6 +59,7 @@ export default function ProductDetail() {
   }
 
   const relatedBlades = getRelatedBlades(bladeId, 3);
+  const pageSeo = getSEO(bladeId);
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
@@ -65,6 +67,12 @@ export default function ProductDetail() {
         title={blade.fullName || blade.name}
         description={blade.fullDescription || blade.description}
         canonicalUrl={`/products/${blade.id}`}
+        keywords={pageSeo.keywords}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Blades & Knives", url: "/products" },
+          { name: blade.name, url: `/products/${blade.id}` },
+        ]}
         productData={{
           name:        blade.fullName || blade.name,
           image:       blade.image,

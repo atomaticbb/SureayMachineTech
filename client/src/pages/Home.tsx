@@ -35,6 +35,32 @@ const ITEM_LIST_LD = JSON.stringify({
   ],
 });
 
+const ORGANIZATION_LD = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Sureay Machinery Technology Co., Ltd.",
+  url: "https://www.sureay.com",
+  logo: "https://www.sureay.com/images/logo/sureay-logo.webp",
+  description: "ISO 9001:2015 certified OEM manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting since 2008.",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "CN",
+    addressRegion: "Anhui Province",
+    addressLocality: "Ma'anshan City",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Sales",
+    email: "info@sureay.com",
+    availableLanguage: ["English", "Chinese"],
+  },
+  foundingDate: "2008",
+  numberOfEmployees: {
+    "@type": "QuantitativeValue",
+    value: "50-100",
+  },
+});
+
 export default function Home() {
   return (
     <>
@@ -43,6 +69,10 @@ export default function Home() {
         <meta
           name="description"
           content="ISO 9001:2015 certified OEM manufacturer of precision industrial blades, granulator knives and recycling machine solutions. ±0.002 mm tolerance. Global export since 2008."
+        />
+        <meta
+          name="keywords"
+          content="industrial blades, granulator blades, shredder blades, slitter knives, precision cutting tools, plastic recycling blades, metal processing knives"
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.sureay.com/" />
@@ -59,6 +89,7 @@ export default function Home() {
 
         {/* JSON-LD structured data */}
         <script type="application/ld+json">{ITEM_LIST_LD}</script>
+        <script type="application/ld+json">{ORGANIZATION_LD}</script>
       </Helmet>
 
       <div className="min-h-screen bg-slate-50 pt-[68px]">

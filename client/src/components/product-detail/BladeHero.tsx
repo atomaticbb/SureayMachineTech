@@ -112,7 +112,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             >
               <img
                 src={img}
-                alt={`View ${i + 1}`}
+                alt={`${blade.name} — view ${i + 1}`}
                 className={[
                   "w-full h-full object-contain p-2 mix-blend-multiply transition-all duration-200",
                   activeGalleryIndex === i

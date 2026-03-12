@@ -28,12 +28,19 @@ export interface ProductData {
   };
 }
 
+export interface BreadcrumbItem {
+  name: string;
+  url:  string;
+}
+
 export interface SEOProps {
   title:        string;
   description:  string;
   canonicalUrl?: string;
   productData?:  ProductData;
   noIndex?:      boolean;
+  keywords?:     string;
+  breadcrumbs?:  BreadcrumbItem[];
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -56,6 +63,8 @@ export default function SEO({
   canonicalUrl,
   productData,
   noIndex = false,
+  keywords,
+  breadcrumbs,
 }: SEOProps) {
   const fullTitle      = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
   const canonicalHref  = canonicalUrl ? abs(canonicalUrl) : undefined;
@@ -83,11 +92,25 @@ export default function SEO({
       }
     : null;
 
+  const breadcrumbLd = breadcrumbs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type":    "BreadcrumbList",
+        itemListElement: breadcrumbs.map((item, i) => ({
+          "@type":    "ListItem",
+          position:   i + 1,
+          name:       item.name,
+          item:       abs(item.url),
+        })),
+      }
+    : null;
+
   return (
     <Helmet>
       {/* Core */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
 
@@ -102,6 +125,11 @@ export default function SEO({
       {/* JSON-LD Product schema */}
       {jsonLd && (
         <script type="application/ld+json">{safeJson(jsonLd)}</script>
+      )}
+
+      {/* JSON-LD Breadcrumb schema */}
+      {breadcrumbLd && (
+        <script type="application/ld+json">{safeJson(breadcrumbLd)}</script>
       )}
     </Helmet>
   );

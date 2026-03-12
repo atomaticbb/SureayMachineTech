@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
+import Breadcrumbs from "@/components/common/Breadcrumbs";
 import { Link } from "wouter";
 import { blades, type BladeCategoryType } from "@/data/blades";
 import ProductGrid from "@/components/product/ProductGrid";
@@ -75,13 +76,28 @@ export default function BladeListPage() {
         title="Industrial Blades & Cutting Tools"
         description="Browse Sureay's full catalogue of precision shredder blades, granulator knives and OEM cutting tools. ISO 9001:2015 certified. Custom engineering available."
         canonicalUrl="/products"
+        keywords="industrial blades catalog, cutting tools, rotary blades, shredder knives, granulator blades"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Blades & Knives", url: "/products" },
+        ]}
       />
       <Navbar />
+
+      {/* Navbar-height offset + breadcrumb bar */}
+      <div className="pt-[74px]">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Blades & Knives" },
+          ]}
+        />
+      </div>
 
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 1 — Technical Hero (Left Navy / Right Image)
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="pt-[74px] border-b border-slate-200">
+      <section className="border-b border-slate-200">
         <div className="flex flex-col lg:flex-row">
 
           {/* Left: Navy Text Panel */}
