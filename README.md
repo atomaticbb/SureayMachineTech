@@ -1,102 +1,148 @@
-# Likun Shredder Blades & Knives Website
+# Sureay Machinery Technology - Industrial Blades & Knives Website
 
-A modern, full-stack web application for showcasing industrial shredder blades and cutting tools. Built with React, TypeScript, Express, and featuring a clean MVC architecture.
+A full-stack B2B marketing and product catalog website for [Sureay Machinery Technology Co., Ltd.](https://www.sureay.com), an ISO 9001:2015 certified manufacturer of precision industrial blades and cutting knives based in Ma'anshan City, Anhui Province, China.
 
-## 🚀 Features
+## Features
 
-- **Modern Tech Stack**: React 19, TypeScript, Vite, Express
-- **Component Library**: shadcn/ui with Tailwind CSS
-- **Full-Stack Architecture**: Separated frontend, backend, and shared code
-- **API Layer**: RESTful API with proper error handling
-- **Type Safety**: Full TypeScript coverage with shared types
-- **Validation**: Zod schemas for runtime validation
-- **Docker Ready**: Containerized deployment setup
-- **Production Ready**: ESLint, Prettier, comprehensive documentation
+- **React 19 SPA** with Wouter routing and lazy-loaded pages
+- **Prerendering** via Puppeteer for SEO-friendly static HTML output
+- **Product catalog** with 8 blade categories, filterable grid, and full spec sheets
+- **Contact & RFQ forms** with file upload support (DXF drawings)
+- **Admin CRM dashboard** with JWT authentication, inquiry management, follow-ups, and analytics
+- **Email notifications** via Resend API on form submission
+- **Google Analytics 4** with Consent Mode v2
+- **Structured data** (Schema.org JSON-LD) for Organization, Product, and ItemList
+- **SEO assets**: sitemap.xml, robots.txt, multi-format favicons, canonical tags
+- **Deployable** via Vercel (static frontend) or Docker (full-stack)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Quick Start](#quick-start)
 - [Project Structure](#project-structure)
+- [Pages](#pages)
 - [Development](#development)
 - [Building](#building)
 - [Deployment](#deployment)
-- [Documentation](#documentation)
 - [Tech Stack](#tech-stack)
-- [Contributing](#contributing)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
 - Node.js 20 or higher
-- pnpm (or use corepack)
+- pnpm 10
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/shredder-blades-website.git
-cd shredder-blades-website
-
-# Enable pnpm
-corepack enable
+git clone <repository-url>
+cd SureayMachineTech
 
 # Install dependencies
 pnpm install
 
-# Copy environment variables
+# Set up environment variables
 cp .env.example .env
 # Edit .env with your configuration
+
+# Set up the database
+pnpm db:generate
+pnpm db:seed
 
 # Start development server
 pnpm dev
 ```
 
-The application will be available at `http://localhost:3000`
+The frontend is available at `http://localhost:5173` and the API at `http://localhost:3000`.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-shredder-blades-website/
-├── client/              # Frontend React application
-│   ├── src/
-│   │   ├── api/        # API client layer
-│   │   ├── components/ # React components (layout, features, ui)
-│   │   ├── pages/      # Page components
-│   │   ├── types/      # TypeScript types
-│   │   └── ...
-│   └── index.html
-├── server/             # Backend Express application
-│   ├── controllers/   # Request handlers
-│   ├── middleware/    # Express middleware
-│   ├── routes/        # API routes
-│   ├── services/      # Business logic
-│   └── index.ts       # Server entry point
-├── shared/            # Shared code between client & server
-│   ├── types/        # Shared TypeScript types
-│   └── validators/   # Zod validation schemas
-├── docs/             # Documentation
-│   ├── API.md
-│   ├── STRUCTURE.md
-│   └── DEPLOYMENT.md
-└── ...
+SureayMachineTech/
+├── client/                    # Frontend (React SPA)
+│   ├── index.html             # HTML shell (GA4, favicons, JSON-LD)
+│   ├── public/                # Static assets
+│   │   ├── images/            # Product images (WebP)
+│   │   ├── sitemap.xml
+│   │   ├── robots.txt
+│   │   ├── site.webmanifest
+│   │   └── favicon.ico/.svg/.png
+│   └── src/
+│       ├── App.tsx            # Router, auth guard, lazy loading
+│       ├── pages/             # Page-level route components
+│       ├── components/
+│       │   ├── layout/        # Navbar, Footer, MegaMenu
+│       │   ├── home/          # Hero, AuthorityCarousel, TabEcosystem, ContactRFQ
+│       │   ├── product/       # ProductCard, ProductGrid
+│       │   ├── product-detail/# BladeHero, TechSpecsTable, DecisiveSpecs
+│       │   ├── industry/      # Industry landing page sections
+│       │   ├── common/        # SEO, Breadcrumbs, TrustBadges
+│       │   └── ui/            # shadcn/ui components
+│       ├── data/
+│       │   ├── blades.ts      # Master product catalog (source of truth)
+│       │   ├── homeData.ts    # Home page content
+│       │   └── news.ts        # News/articles
+│       ├── api/               # API client functions
+│       ├── contexts/          # ThemeContext
+│       └── hooks/             # usePageTracking, etc.
+│
+├── server/                    # Backend (Express API)
+│   ├── index.ts               # App entry point + security middleware
+│   ├── routes/                # products, contact, auth, admin, seo
+│   ├── controllers/           # Request handlers
+│   ├── middleware/            # auth, cors, logger, errorHandler, analytics
+│   ├── services/              # Business logic
+│   └── db/                    # Database access layer
+│
+├── shared/                    # Shared types and validators (client + server)
+│   ├── types/
+│   └── validators/            # Zod schemas
+│
+├── prisma/
+│   ├── schema.prisma          # SQLite database schema
+│   └── seed.ts                # Database seed script
+│
+├── scripts/
+│   └── prerender.ts           # Puppeteer SSG prerender script
+│
+├── Dockerfile                 # Multi-stage Docker build
+├── docker-compose.yml
+├── vercel.json                # Vercel deployment config
+└── vite.config.ts
 ```
 
-See [docs/STRUCTURE.md](docs/STRUCTURE.md) for detailed structure documentation.
+## Pages
 
-## 💻 Development
+### Public
+
+| Route | Page |
+|---|---|
+| `/` | Home — hero, authority carousel, manufacturing blocks, product tab ecosystem, news grid, RFQ form |
+| `/products` | Product list — filterable catalog by category and industry sector |
+| `/products/:id` | Product detail — full spec sheet, dimensions table, gallery, trust bar, CTA |
+| `/plastic-industry` | Plastic recycling industry landing page |
+| `/metal-industry` | Metal processing industry landing page |
+| `/paper-industry` | Paper/tissue converting industry landing page |
+| `/about` | Company story and manufacturing capabilities |
+| `/contact` | Contact form with DXF file upload and RFQ |
+| `/news` | Technical articles grid |
+| `/news/:id` | Individual article page |
+
+### Admin (JWT protected)
+
+| Route | Description |
+|---|---|
+| `/admin/login` | Admin login |
+| `/admin` | Dashboard — contacts, inquiries, follow-ups, analytics |
+
+## Development
 
 ### Available Scripts
 
 ```bash
-# Start development server
+# Start development server (frontend + backend concurrently)
 pnpm dev
-
-# Build for production
-pnpm build
-
-# Start production server
-pnpm start
 
 # Type checking
 pnpm type-check
@@ -108,86 +154,75 @@ pnpm lint:fix
 # Format code
 pnpm format
 
-# Docker commands
+# Database
+pnpm db:generate
+pnpm db:seed
+
+# Docker
 pnpm docker:build
 pnpm docker:run
 pnpm docker:stop
 ```
 
-### Development Workflow
+### Environment Variables
 
-1. **Start the dev server**: `pnpm dev`
-2. **Make changes** to frontend or backend
-3. **Hot reload** automatically updates the browser
-4. **Type check**: Run `pnpm type-check` to verify types
-5. **Lint**: Run `pnpm lint` before committing
+Copy `.env.example` to `.env` and configure:
 
-### Adding New Features
+```env
+# Server
+NODE_ENV=development
+PORT=3000
+ALLOWED_ORIGINS=http://localhost:5173
 
-#### Frontend Component
+# Database
+DATABASE_URL=file:./prisma/dev.db
 
-```typescript
-// client/src/components/features/MyComponent.tsx
-import { Button } from '@/components/ui/button';
+# Email (Resend)
+RESEND_API_KEY=your_resend_api_key
+EMAIL_FROM=noreply@sureay.com
+EMAIL_TO=sales@sureay.com
 
-export default function MyComponent() {
-  return <Button>Click me</Button>;
-}
+# Frontend
+VITE_API_URL=http://localhost:3000
 ```
 
-#### API Endpoint
+### Path Aliases
 
-```typescript
-// 1. Add service (server/services/myService.ts)
-export const getData = async () => {
-  /* ... */
-};
+- `@/*` → `client/src/*`
+- `@shared/*` → `shared/*`
 
-// 2. Add controller (server/controllers/myController.ts)
-export const handleGetData = async (req, res, next) => {
-  /* ... */
-};
-
-// 3. Add route (server/routes/myRoutes.ts)
-router.get("/data", handleGetData);
-
-// 4. Add to main router (server/routes/index.ts)
-import myRoutes from "./myRoutes.js";
-router.use("/", myRoutes);
-
-// 5. Create API client (client/src/api/myApi.ts)
-export const getData = async () => {
-  const response = await apiClient.get("/data");
-  return response.data;
-};
-```
-
-## 🏗️ Building
-
-### Development Build
+## Building
 
 ```bash
+# Build frontend (Vite) + run Puppeteer prerender
 pnpm build
-```
 
-This creates:
+# Build frontend + bundle server with esbuild
+pnpm build:full
 
-- Frontend: `dist/public/` (served by Express)
-- Backend: `dist/index.js` (Node.js server)
-
-### Production Build
-
-```bash
-NODE_ENV=production pnpm build
+# Start production server
 pnpm start
 ```
 
-## 🚢 Deployment
+Build output:
 
-### Docker (Recommended)
+- Frontend: `dist/public/` (served by Express or Vercel)
+- Server bundle: `dist/index.js`
+
+## Deployment
+
+### Vercel (Frontend / Static)
+
+The `vercel.json` config builds the frontend and rewrites all routes to `index.html` for SPA mode. Static images are served with long-cache headers.
 
 ```bash
-# Build and run with Docker Compose
+vercel deploy
+```
+
+### Docker (Full-Stack)
+
+```bash
+# Build and start with Docker Compose
 docker-compose up -d
 
 # View logs
@@ -197,161 +232,70 @@ docker-compose logs -f
 docker-compose down
 ```
 
-### Manual Deployment
+The multi-stage Dockerfile installs Chromium for Puppeteer prerendering in the builder stage and produces a minimal production image on Node 20 Alpine. The server exposes port 3000 with a `/health` endpoint.
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions including:
-
-- Docker deployment
-- PM2 deployment
-- Nginx configuration
-- SSL/HTTPS setup
-- Production checklist
-
-### Environment Variables
-
-Key environment variables for production:
+### Key Production Environment Variables
 
 ```env
 NODE_ENV=production
 PORT=3000
-ALLOWED_ORIGINS=https://yourdomain.com
+ALLOWED_ORIGINS=https://www.sureay.com
+DATABASE_URL=file:/app/data/prod.db
+RESEND_API_KEY=...
 ```
 
-See `.env.example` for all available options.
-
-## 📚 Documentation
-
-- [API Documentation](docs/API.md) - REST API endpoints and usage
-- [Project Structure](docs/STRUCTURE.md) - Detailed code organization
-- [Deployment Guide](docs/DEPLOYMENT.md) - Production deployment instructions
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS
-- **shadcn/ui** - Component library
-- **Wouter** - Lightweight routing
-- **Axios** - HTTP client
-- **Zod** - Schema validation
-- **React Hook Form** - Form handling
-- **Sonner** - Toast notifications
+| Technology | Purpose |
+|---|---|
+| React 19 | UI framework |
+| TypeScript | Type safety |
+| Vite 7 | Build tool and dev server |
+| Tailwind CSS v4 | Utility-first styling |
+| shadcn/ui | Component library (Radix UI) |
+| Framer Motion | Animations |
+| Wouter | Lightweight SPA routing |
+| React Hook Form | Form handling |
+| Zod | Schema validation |
+| react-helmet-async | Per-page SEO meta + JSON-LD |
+| Lucide React | Icons |
 
 ### Backend
 
-- **Express** - Web framework
-- **TypeScript** - Type safety
-- **Zod** - Request validation
-- **CORS** - Cross-origin support
-
-### Development
-
-- **pnpm** - Package manager
-- **ESLint** - Code linting
-- **Prettier** - Code formatting
-- **esbuild** - Fast bundler for backend
+| Technology | Purpose |
+|---|---|
+| Express 4 | Web framework |
+| TypeScript | Type safety |
+| Prisma 6 + SQLite | ORM and database |
+| Helmet.js | HTTP security headers |
+| Resend | Transactional email |
+| JWT + bcryptjs | Admin authentication |
+| Zod | Request validation |
 
 ### Infrastructure
 
-- **Docker** - Containerization
-- **Nginx** - Reverse proxy (recommended)
-- **PM2** - Process manager (alternative)
+| Technology | Purpose |
+|---|---|
+| Puppeteer | SSG prerendering for SEO |
+| Docker (Alpine) | Containerization |
+| Vercel | Static frontend hosting |
+| Google Analytics 4 | Analytics with Consent Mode v2 |
+| pnpm 10 | Package manager |
 
-## 🏗️ Architecture
+## Architecture
 
-### Frontend Architecture
+- **Frontend**: React SPA with lazy-loaded routes. Product data lives in `client/src/data/blades.ts` as the single source of truth. API calls go through `client/src/api/`. Per-page SEO is handled by `react-helmet-async` with JSON-LD structured data.
+- **Backend**: Express MVC (controllers → services → db). Contact form submissions are stored in SQLite, trigger email via Resend, and are tracked in the Analytics table. The admin dashboard reads from all tables behind a JWT auth guard.
+- **Prerendering**: `scripts/prerender.ts` uses Puppeteer to crawl all routes and write static HTML files to `dist/public/`, enabling search engine indexing without a server-side rendering framework.
+- **Shared code**: TypeScript interfaces and Zod validators in `shared/` are imported by both client and server to keep types consistent.
 
-- **Component-based**: Reusable UI components
-- **API Layer**: Centralized API calls with error handling
-- **Type Safety**: Full TypeScript coverage
-- **State Management**: React hooks and context
+## License
 
-### Backend Architecture
+MIT License — see LICENSE file for details.
 
-- **MVC Pattern**: Controllers, Services, Routes
-- **Middleware**: Error handling, logging, CORS
-- **Type Safety**: Shared types with frontend
-- **Validation**: Zod schemas for request validation
+## Contact
 
-### Code Sharing
-
-- **Types**: Shared TypeScript interfaces
-- **Validators**: Shared Zod schemas
-- **Constants**: Shared configuration
-
-## 🔧 Configuration
-
-### Path Aliases
-
-The project uses TypeScript path aliases:
-
-- `@/*` → `client/src/*`
-- `@shared/*` → `shared/*`
-
-Example:
-
-```typescript
-import { Button } from "@/components/ui/button";
-import { Product } from "@shared/types";
-```
-
-### Linting & Formatting
-
-```bash
-# Run ESLint
-pnpm lint
-
-# Fix ESLint issues
-pnpm lint:fix
-
-# Format with Prettier
-pnpm format
-```
-
-Configuration files:
-
-- `.eslintrc.cjs` - ESLint rules
-- `.prettierrc` - Prettier formatting rules
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Run tests and linting (`pnpm type-check && pnpm lint`)
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-
-### Development Guidelines
-
-- Follow the existing code style
-- Write meaningful commit messages
-- Update documentation for new features
-- Ensure type safety with TypeScript
-- Test your changes thoroughly
-
-## 📝 License
-
-MIT License - see LICENSE file for details
-
-## 📧 Contact
-
-For inquiries about the products or this project:
-
-- Email: contact@yourdomain.com
-- Website: https://yourdomain.com
-
-## 🙏 Acknowledgments
-
-- [shadcn/ui](https://ui.shadcn.com/) - Beautiful component library
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-- [Vite](https://vitejs.dev/) - Next generation frontend tooling
-- [Express](https://expressjs.com/) - Fast, minimalist web framework
-
----
-
-Made with ❤️ for the industrial recycling industry
+- Website: https://www.sureay.com
+- Company: Sureay Machinery Technology Co., Ltd., Ma'anshan City, Anhui Province, China

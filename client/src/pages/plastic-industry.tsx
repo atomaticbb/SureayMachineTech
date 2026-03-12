@@ -51,6 +51,10 @@ const HERO_DATA: IndustryHeroData = {
   ],
 };
 
+// Preload href for the LCP image (gallery[0]) — 640w variant for 2× retina desktop
+const LCP_IMG = HERO_DATA.gallery[0].src;
+const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
+
 // ─── Products ─────────────────────────────────────────────────────────────────
 // Dynamically load products from blades.ts where sector === "recycling"
 const PRODUCTS: IndustryProduct[] = blades
@@ -170,6 +174,7 @@ export default function PlasticIndustry() {
         ]}
       />
       <Helmet>
+        <link rel="preload" as="image" href={LCP_PRELOAD} />
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 
