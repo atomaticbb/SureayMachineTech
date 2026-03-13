@@ -175,16 +175,13 @@ export const blades: Blade[] = [
     },
 
     standardDimensions: [
-      // Top Blade (Dished)
       { spec: "Top Blade (Dished)", od: "75 mm", id: "45 mm", thickness: "1.0 / 1.2 mm" },
-      { spec: "Top Blade (Dished)", od: "100 mm", id: "35 mm", thickness: "1.2 mm" },
-      { spec: "Top Blade (Dished)", od: "118 mm", id: "80 mm", thickness: "1.2 mm" },
-      { spec: "Top Blade (Dished)", od: "150 mm", id: "80 mm", thickness: "2.5 mm" },
-
-      // Bottom Blade (Anvil)
       { spec: "Bottom Blade (Anvil)", od: "70 mm", id: "45 mm", thickness: "10 / 8 mm" },
+      { spec: "Top Blade (Dished)", od: "100 mm", id: "35 mm", thickness: "1.2 mm" },
       { spec: "Bottom Blade (Anvil)", od: "80 mm", id: "60 mm", thickness: "20 / 16 mm" },
+      { spec: "Top Blade (Dished)", od: "118 mm", id: "80 mm", thickness: "1.2 mm" },
       { spec: "Bottom Blade (Anvil)", od: "100 mm", id: "70 mm", thickness: "20 / 16 mm" },
+      { spec: "Top Blade (Dished)", od: "150 mm", id: "80 mm", thickness: "2.5 mm" },
       { spec: "Bottom Blade (Anvil)", od: "108 mm", id: "80 mm", thickness: "20 / 18 mm" },
     ],
 
@@ -267,21 +264,9 @@ export const blades: Blade[] = [
     standardDimensions: [
       // 200 Series
       { spec: "200", od: "Φ150", id: "70", length: "12", teeth: "110" },
-      { spec: "200", od: "Φ150", id: "70", length: "15", teeth: "110" },
-
-      // 300 Series
-      { spec: "300", od: "Φ180", id: "80", length: "15", teeth: "120" },
-      { spec: "300", od: "Φ180", id: "80", length: "20", teeth: "130" },
-
       // 400 Series
       { spec: "400", od: "Φ180", id: "90", length: "10", teeth: "150" },
-      { spec: "400", od: "Φ180", id: "90", length: "15", teeth: "150" },
-
-      // 500 Series
-      { spec: "500", od: "Φ200", id: "90", length: "10", teeth: "150" },
-      { spec: "500", od: "Φ200", id: "90", length: "20", teeth: "150" },
-      { spec: "500", od: "Φ200", id: "90", length: "15", teeth: "150" },
-
+ 
       // 600 Series
       { spec: "600", od: "Φ200", id: "140", length: "20", teeth: "180" },
 
@@ -290,21 +275,16 @@ export const blades: Blade[] = [
 
       // 1000 Series
       { spec: "1000", od: "Φ300", id: "180", length: "30", teeth: "250" },
-      { spec: "1000", od: "Φ300", id: "180", length: "30", teeth: "250" },
 
       // 1200 Series
       { spec: "1200", od: "Φ350", id: "200", length: "40", teeth: "300" },
-      { spec: "1200", od: "Φ350", id: "220", length: "30", teeth: "320" },
 
       // 1500 Series
       { spec: "1500", od: "Φ400", id: "220", length: "40", teeth: "350" },
-      { spec: "1500", od: "Φ400", id: "240", length: "50", teeth: "380" },
 
       // 2000 Series
       { spec: "2000", od: "Φ450", id: "260", length: "30", teeth: "400" },
-      { spec: "2000", od: "Φ500", id: "280", length: "50", teeth: "420" },
-      { spec: "2000", od: "Φ700", id: "360", length: "60", teeth: "520" },
-    ],
+     ],
 
     relatedBladeIds: ["granulator-blades", "rotary-slitter-knives"],
   },
@@ -469,16 +449,12 @@ export const blades: Blade[] = [
 
     standardDimensions: [
       // Double hole
-      { spec: "Double hole", od: "90 × 60 × 8", id: "50" },
       { spec: "Double hole", od: "90 × 70 × 8", id: "40 / 45 / 50" },
-      { spec: "Double hole", od: "100 × 70 × 8", id: "45 / 50" },
       { spec: "Double hole", od: "120 × 70 × 8", id: "60" },
 
       // Triple hole
       { spec: "Triple hole", od: "126 × 60 × 8", id: "40" },
-      { spec: "Triple hole", od: "140 × 60 × 8", id: "40" },
       { spec: "Triple hole", od: "150 × 70 × 8", id: "50 / 55" },
-      { spec: "Triple hole", od: "160 × 70 × 8", id: "45" },
       { spec: "Triple hole", od: "170 × 70 × 8", id: "45" },
       { spec: "Triple hole", od: "180 × 70 × 8", id: "60" },
 
@@ -675,9 +651,7 @@ export const blades: Blade[] = [
     standardDimensions: [
       { spec: "25 × 25 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
       { spec: "28 × 28 × 23 mm", bolt: "M12",       type: "Square Rotor Knife" },
-      { spec: "30 × 30 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
       { spec: "30 × 30 × 25 mm", bolt: "M12",       type: "Square Rotor Knife" },
-      { spec: "34 × 34 × 20 mm", bolt: "M12",       type: "Square Rotor Knife" },
       { spec: "40 × 40 × 28 mm", bolt: "M14",       type: "Square Rotor Knife" },
       { spec: "50 × 50 × 30 mm", bolt: "M16",       type: "Square Rotor Knife" },
       { spec: "60 × 60 × 35 mm", bolt: "M16 / M18", type: "Square Rotor Knife" },
@@ -831,20 +805,110 @@ export const blades: Blade[] = [
 
     standardDimensions: [
       { spec: "500×70×22",   od: "500 mm",  id: "70 mm",  thickness: "22 mm" },
-      { spec: "508×70×22",   od: "508 mm",  id: "70 mm",  thickness: "22 mm" },
-      { spec: "508×80×25",   od: "508 mm",  id: "80 mm",  thickness: "25 mm" },
       { spec: "510×80×25",   od: "510 mm",  id: "80 mm",  thickness: "25 mm" },
       { spec: "1025×80×20",  od: "1025 mm", id: "80 mm",  thickness: "20 mm" },
-      { spec: "1025×100×20", od: "1025 mm", id: "100 mm", thickness: "20 mm" },
       { spec: "1025×100×25", od: "1025 mm", id: "100 mm", thickness: "25 mm" },
       { spec: "1100×80×20",  od: "1100 mm", id: "80 mm",  thickness: "20 mm" },
       { spec: "1100×100×25", od: "1100 mm", id: "100 mm", thickness: "25 mm" },
       { spec: "1300×80×20",  od: "1300 mm", id: "80 mm",  thickness: "20 mm" },
       { spec: "1300×125×32", od: "1300 mm", id: "125 mm", thickness: "32 mm" },
-      { spec: "Customized",  od: "Custom Length", id: "Custom Width", thickness: "Per Drawing" },
     ],
 
     relatedBladeIds: ["metal-coil-slitting-knives", "alloy-blades"],
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 9. Three-Knife Trimmer Blades (印后装订 / 三面切书机刀片)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "three-knife-trimmer-blades",
+    name: "Three-Knife Trimmer Blades",
+    fullName:
+      "HSS/TC Three-Knife Trimmer Blade Sets for Müller Martini, Heidelberg & Kolbus",
+    category: "paper_cutting_blades",
+    sector: "converting",
+    categoryDisplay: "Bookbinding & Trimmer Knives",
+    badge: "OEM Fit",
+    badgeColor: "blue",
+    image:
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+    gallery: [
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-05.webp",
+    ],
+
+    description:
+      "A complete set of 3 replacement knives (1 Front, 2 Sides) engineered for heavy-duty print finishing. Fully compatible with Müller Martini, Heidelberg, Kolbus, and other major three-knife trimmers. Made of High-Speed Steel (HSS) for unmatched sharpness.",
+    fullDescription:
+      "Industrial-grade replacement cutting blade sets designed to precise OEM specifications for high-speed Müller Martini three-knife trimmers (including 3671 Merit and 3675 Orbit). Each set contains one front knife and two side knives (left/right) manufactured to exact dimensional tolerances, featuring precise M10 threaded holes and mounting slots. Available in High-Speed Steel (HSS, industry equivalent to Duritan) and Tungsten Carbide (TC, equivalent to Widia/Hartmetal) for cutting all kinds of paper, boards, and materials with trouble-free bindery operation.",
+    link: "/products/three-knife-trimmer-blades",
+    isFeatured: true,
+
+    specs: [
+      { label: "Compatible Brands", value: "Müller Martini (Merit, Orbit, etc.), Heidelberg, Kolbus" },
+      { label: "Material",  value: "High Speed Steel (HSS / Duritan) or Tungsten Carbide (TC / Widia)" },
+      { label: "Applications",      value: "Three-Knife Trimmers, Saddle Stitchers, Perfect Glue Binders, Folding Machines" },
+    ],
+
+    features: [
+      "Bi-metallic construction: HSS cutting edge bonded to a shock-absorbing steel body for combined hardness and toughness",
+      "Up to 5× longer service life versus standard bindery knives — fewer changeovers, lower cost-per-cut",
+      "Machined to OEM tolerances for drop-in fit on Muller Martini 3671 Merit, 3675 Orbit, and compatible lines",
+      "Diamond-ground edge delivers flawlessly smooth fore-edges, heads, and tails with zero burr or paper draw",
+      "Custom sizes and hole patterns available — supplied to drawing for full OEM replacement flexibility",
+    ],
+
+    components: [
+      {
+        id: "hss-duritan",
+        tag: "METALLURGY",
+        title: "HSS & Tungsten Carbide Options",
+        description:
+          "Manufactured with premium High-Speed Steel (industry equivalent to Duritan) or fine-grain Tungsten Carbide (TC-F), offering exceptional wear resistance and extended sharpening intervals compared to standard Swedish Steel (SS).",
+        image:
+          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      },
+      {
+        id: "complete-set",
+        tag: "CONFIGURATION",
+        title: "Complete 3-Knife Set Integration",
+        description:
+          "Supplied as a complete, ready-to-install set containing 1 Front Knife and 2 Side (Left/Right) Knives. Each blade features exact OEM mounting slots and M10 threaded holes to guarantee zero-downtime installation.",
+        image:
+          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
+      },
+      {
+        id: "diamond-cut",
+        tag: "PERFORMANCE",
+        title: "Unmatched Sharpness",
+        description:
+          "Engineered for heavy-duty, trouble-free operation. Delivers flawlessly smooth fore-edges, heads, and tails for commercial magazines, catalogs, and perfect-bound books without spine tearing.",
+        image:
+          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Compatible Models",
+      col1: "Type",
+      col2: "Dimensions",
+      col3: "Holes",
+      caption:
+        "Custom sizes available on request.",
+    },
+
+    standardDimensions: [
+      { spec: "Muller Martini\n301, 304, 361", od: "Front",      id: "540×90×12mm",  thickness: "12×M10"         },
+      { spec: "Muller Martini\n301, 304, 361", od: "Left&Right", id: "392×90×12mm",  thickness: "8×M10"          },
+      { spec: "Müller Martini\n3675 Orbit",    od: "Front",      id: "580×115×12mm", thickness: "12×M10, 1×Slot" },
+      { spec: "Müller Martini\n3675 Orbit",    od: "Left&Right", id: "450×115×12mm", thickness: "15×M10, 2×Slot" },
+    ],
+
+    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
   },
 ];
 

@@ -110,6 +110,15 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords: "paper cutting blades, guillotine blades, printing blades, paper guillotine knives",
   },
 
+  "three-knife-trimmer-blades": {
+    title: "HSS/TC Three-Knife Trimmer Blades for Müller Martini, Heidelberg & Kolbus | Sureay",
+    description:
+      "OEM-fit replacement knife sets (1 Front + 2 Side knives) for Müller Martini 301/361/3675 Orbit, Heidelberg, and Kolbus three-knife trimmers. Available in HSS (Duritan) and Tungsten Carbide (TC/Widia). Custom dimensions on request.",
+    keywords:
+      "three knife trimmer blades, Müller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, Heidelberg trimmer knife, Kolbus trimmer blade set, 3 knife trimmer",
+    ogImage: "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+  },
+
   "single-shaft-shredder-blades": {
     title: "Single Shaft Shredder Blades | Square & Crown Rotor Knives | Sureay",
     description:

@@ -381,11 +381,21 @@ export default function Contact() {
               <p className="font-mono text-[10px] text-white/50 tracking-widest uppercase mb-3">
                 Direct Email
               </p>
+              {/* Obfuscated: reversed string + CSS rtl renders as lynn@sureay.com */}
               <a
-                href="mailto:lynn@sureay.com"
-                className="block text-2xl lg:text-3xl font-black text-white uppercase tracking-tight leading-none whitespace-nowrap hover:text-white/70 transition-colors"
+                data-u="lynn"
+                data-d="sureay.com"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const el = e.currentTarget as HTMLAnchorElement;
+                  window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
+                }}
+                className="block text-2xl lg:text-3xl font-black text-white uppercase tracking-tight leading-none whitespace-nowrap hover:text-white/70 transition-colors cursor-pointer"
               >
-                lynn@sureay.com
+                <span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>
+                  moc.yaerus@nnyl
+                </span>
               </a>
             </div>
 

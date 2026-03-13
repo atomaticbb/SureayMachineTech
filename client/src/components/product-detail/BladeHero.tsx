@@ -7,7 +7,6 @@
 
 import { useState, useCallback } from "react";
 import type { CSSProperties } from "react";
-import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import type { Blade } from "@/data/blades";
 
@@ -85,7 +84,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               transition: "transform 0.25s ease",
             }}
             loading="eager"
-            decoding="sync"
+            decoding="async"
           />
 
         </div>
@@ -176,19 +175,22 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               </ul>
             ) : null;
           })()}
+
         </div>
 
         {/* CTA buttons */}
         <div className="mt-6 flex flex-col gap-3">
-          <Link href="/contact">
-            <button
-              type="button"
-              className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
-            >
-              <span>Request Engineering Quote</span>
-              <ArrowRight className="w-5 h-5 shrink-0" />
-            </button>
-          </Link>
+          <a
+            href="#rfq"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("rfq")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
+          >
+            <span>Request Engineering Quote</span>
+            <ArrowRight className="w-5 h-5 shrink-0" />
+          </a>
         </div>
       </div>
     </section>

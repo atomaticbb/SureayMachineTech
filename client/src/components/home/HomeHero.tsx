@@ -8,7 +8,7 @@ export default function HomeHero() {
         src="/images/hero/homehero.webp"
         alt="Sureay Machinery precision industrial blade manufacturing facility"
         fetchPriority="high"
-        decoding="sync"
+        decoding="async"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
 

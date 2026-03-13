@@ -4,10 +4,12 @@
  *
  * Content zones:
  *   1  BladeHero          — CAD Viewport + Spec Ledger
+ *   1b TrustProtocol      — ISO / Heat Treatment credential strip
  *   2  DecisiveSpecs      — Image combination + spec table
- *   3  ComprehensiveData  — Spec Category Tables
+ *   3  ComprehensiveData  — Standard dimension tables
  *   4  TechnicalAudit     — Engineering Audit Log
  *   5  CompatibleTooling  — Related blade cards
+ *   6  ContactRFQ         — In-page RFQ form (#rfq anchor)
  */
 
 import { useRoute, Link } from "wouter";
@@ -17,7 +19,6 @@ import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { getSEO } from "@/utils/seo-config";
 
@@ -29,6 +30,8 @@ import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
+import TrustProtocol from "@/components/product-detail/TrustProtocol";
+import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 
 // ── Component ────────────────────────────────────────────────────────────────
 
@@ -81,18 +84,9 @@ export default function ProductDetail() {
           mpn:         blade.id,
           brand:       "Sureay Industrial Blades",
           offers: {
-            url:             `https://www.sureay.com/products/${blade.id}`,
-            priceCurrency:   "USD",
-            price:           "0",
-            priceValidUntil: "2026-12-31",
-            availability:    "https://schema.org/InStock",
-            itemCondition:   "https://schema.org/NewCondition",
-          },
-          aggregateRating: {
-            ratingValue: "4.9",
-            ratingCount: "47",
-            bestRating:  "5",
-            worstRating: "1",
+            url:          `https://www.sureay.com/products/${blade.id}`,
+            availability: "https://schema.org/InStock",
+            itemCondition:"https://schema.org/NewCondition",
           },
         }}
       />
@@ -118,14 +112,19 @@ export default function ProductDetail() {
             {/* Zone 1 — CAD Viewport Hero (no inner px, uses outer container padding) */}
             <BladeHero blade={blade} />
 
-            {/* Zone 1b — Decisive Specifications: image combination + spec table */}
-            <div className="-mx-6 sm:-mx-8">
-              <DecisiveSpecs blade={blade} />
+            {/* Zone 1b — Trust credentials strip */}
+            <div className="-mx-6 sm:-mx-12">
+              <TrustProtocol />
             </div>
 
-            {/* Zone 3 — Comprehensive Technical Data */}
+            {/* Zone 2 — Comprehensive Technical Data */}
             <div className="-mx-6 sm:-mx-8">
               <ComprehensiveData blade={blade} />
+            </div>
+
+            {/* Zone 3 — Decisive Specifications: image combination + spec table */}
+            <div className="-mx-6 sm:-mx-8">
+              <DecisiveSpecs blade={blade} />
             </div>
 
             {/* Zone 4 — Technical Audit Log */}
@@ -136,21 +135,19 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Zone 5 — Industry OEM Pipeline (full-bleed) */}
-        <div className="mt-16">
-          <IndustryOemPipeline />
-        </div>
-
-        {/* Zone 6 — Compatible Tooling */}
+        {/* Zone 5 — Compatible Tooling */}
         <div className="mt-16">
           <CompatibleTooling blades={relatedBlades} />
         </div>
 
-        {/* Zone 7 — Contact / RFQ form */}
-        <ContactRFQ />
+        {/* Zone 6 — Contact / RFQ form */}
+        <div id="rfq">
+          <ContactRFQ />
+        </div>
 
       </main>
 
+      <WhatsAppFloat />
       <MobileStickyCTA />
       <Footer />
     </div>

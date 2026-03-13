@@ -1,6 +1,6 @@
 /**
  * DecisiveSpecs — Decisive Specifications table.
- * Two-column layout: specs on the left, product image on the right.
+ * Two-column layout: product image on the left, specs table on the right.
  * Header and footnote sit outside the flex row so the image height
  * matches the table height exactly.
  */
@@ -36,10 +36,26 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
         Decisive Specifications
       </h2>
 
-      {/* Flex row: table left, image right — equal height */}
+      {/* Flex row: image left, table right — equal height */}
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-stretch">
 
-        {/* Left — specs table only */}
+        {/* Left — product image */}
+        <div className="flex-1 min-w-0">
+          <div
+            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
+            style={DOT_GRID_STYLE}
+          >
+            <img
+              src={panelImage}
+              alt={blade.fullName || blade.name}
+              className="w-full h-full object-contain p-8 mix-blend-multiply"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        {/* Right — specs table only */}
         <div className="w-full lg:w-[500px] xl:w-[540px] flex-shrink-0">
           <div className="border-t-2 border-t-[#001f4d] border border-slate-300 overflow-hidden h-full">
             <table className="w-full text-left border-collapse">
@@ -62,22 +78,6 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
                 ))}
               </tbody>
             </table>
-          </div>
-        </div>
-
-        {/* Right — product image */}
-        <div className="flex-1 min-w-0">
-          <div
-            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
-            style={DOT_GRID_STYLE}
-          >
-            <img
-              src={panelImage}
-              alt={blade.fullName || blade.name}
-              className="w-full h-full object-contain p-8 mix-blend-multiply"
-              loading="lazy"
-              decoding="async"
-            />
           </div>
         </div>
 
