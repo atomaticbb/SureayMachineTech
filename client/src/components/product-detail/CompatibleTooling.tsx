@@ -15,7 +15,7 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
 
   return (
     <section
-      aria-label="Compatible tooling"
+      aria-label="Related blade categories"
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Header row */}
@@ -24,7 +24,7 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
       </p>
       <div className="flex items-end justify-between gap-4 mb-6">
         <h2 className="font-black text-3xl text-[#001f4d] uppercase tracking-tight">
-          Compatible Tooling
+          Related Blade Categories
         </h2>
         <Link href="/products">
           <span className="font-mono text-[10px] text-slate-700 uppercase tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
