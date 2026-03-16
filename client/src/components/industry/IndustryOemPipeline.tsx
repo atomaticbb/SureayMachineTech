@@ -8,15 +8,39 @@
 import { MONO } from "./types";
 
 const STEPS = [
-  { step: "01", phaseKey: "INTAKE",    protocolVersion: "2.0", technicalTitle: "TECHNICAL AUDIT",       coords: "31.56°N / 118.47°E", name: "Requirement Analysis",  desc: "Application audit and original blade specification reverse-engineering to capture exact geometry, steel grade, and tolerance requirements." },
-  { step: "02", phaseKey: "DESIGN",    protocolVersion: "3.1", technicalTitle: "CAD TOPOLOGY",          coords: "31.56°N / 118.47°E", name: "Material & CAD Design", desc: "Steel grade selection, heat treatment specification, and 5-axis CNC toolpath generation against confirmed blueprint data." },
-  { step: "03", phaseKey: "MACHINING", protocolVersion: "4.0", technicalTitle: "PRECISION MANUFACTURE", coords: "31.56°N / 118.47°E", name: "Manufacture & Harden",  desc: "5-axis CNC precision milling followed by in-house vacuum heat treatment to achieve target hardness and core toughness." },
-  { step: "04", phaseKey: "METROLOGY", protocolVersion: "2.1", technicalTitle: "METROLOGY VALIDATION",  coords: "31.56°N / 118.47°E", name: "CMM Inspection & Ship", desc: "100% dimensional verification on CMM stations. Hardness report, material certificate, and dimensional data sheet shipped with every order." },
+  {
+    step: "01",
+    phaseKey: "INTAKE",
+    technicalTitle: "SEND DRAWING OR SAMPLE",
+    name: "Requirement Intake",
+    desc: "You send the drawing, used sample, machine model, or key dimensions. We review the application, blade geometry, and any known fit or wear issues.",
+  },
+  {
+    step: "02",
+    phaseKey: "REVIEW",
+    technicalTitle: "ENGINEERING REVIEW",
+    name: "Material And Tolerance Confirmation",
+    desc: "Our team confirms steel grade, heat treatment direction, tolerance target, and any OEM-fit details needed before quotation or production approval.",
+  },
+  {
+    step: "03",
+    phaseKey: "PRODUCTION",
+    technicalTitle: "MACHINING AND HARDENING",
+    name: "Production Execution",
+    desc: "The blade moves into CNC machining, heat treatment, and precision grinding based on the approved specification and application requirement.",
+  },
+  {
+    step: "04",
+    phaseKey: "DELIVERY",
+    technicalTitle: "INSPECTION AND SHIPMENT",
+    name: "Final Verification",
+    desc: "Before dispatch, dimensions and hardness are checked and the order is prepared with the required inspection records for delivery.",
+  },
 ];
 
 export default function IndustryOemPipeline() {
   return (
-    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-12 lg:py-16 relative overflow-hidden">
+    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-10 lg:py-12 relative overflow-hidden">
 
       {/* Blueprint grid overlay */}
       <div
@@ -56,21 +80,21 @@ export default function IndustryOemPipeline() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative">
 
         {/* Section header */}
-        <div className="mb-10 lg:mb-12">
+        <div className="mb-8 lg:mb-10">
           <p style={MONO} className="text-[10px] text-[#65AAD6] uppercase tracking-[0.5em] mb-5">
             [ OEM_PROTOCOL / ACTIVE ]
           </p>
           <h2 className="font-black text-2xl md:text-3xl text-white uppercase tracking-tight leading-[1.0] mb-3">
-            OEM Customization Process
+            OEM Process From Drawing Review To Delivery
           </h2>
           <p className="text-slate-200 text-[15px] max-w-[480px] leading-relaxed">
-            Every replacement component passes through a strict 4-phase engineering protocol before shipment.
+            A custom blade order moves through four clear steps so you know what to send, what we confirm, and what gets checked before shipment.
           </p>
           <div className="w-14 h-[2px] bg-[#0a2d6e] mt-5" />
         </div>
 
         {/* Pipeline: vertical rail + step cards */}
-        <div className="relative pl-10 lg:pl-12">
+        <div className="relative pl-8 lg:pl-10">
 
           {/* Animated logic-line rail */}
           <div className="absolute left-3 top-0 bottom-0 w-px bg-[#0a2d6e] overflow-hidden">
@@ -86,7 +110,7 @@ export default function IndustryOemPipeline() {
               return (
                 <div
                   key={item.step}
-                  className="border-b border-r border-[#0a2d6e] p-5 flex flex-col relative group overflow-hidden hover:bg-white/5 transition-colors duration-300"
+                  className="border-b border-r border-[#0a2d6e] p-4 lg:p-5 flex flex-col relative group overflow-hidden hover:bg-white/5 transition-colors duration-300"
                 >
                   {/* Pulsing node on the rail */}
                   <div
@@ -104,36 +128,32 @@ export default function IndustryOemPipeline() {
 
                   {/* Oversized ghost step number */}
                   <span
-                    className="absolute -top-2 right-4 font-black text-[96px] leading-none select-none pointer-events-none tabular-nums transition-transform duration-500 ease-out group-hover:-translate-x-[5px] group-hover:-translate-y-[5px]"
-                    style={{ WebkitTextStroke: "1px #0a2d6e", color: "transparent", ...MONO }}
+                    className="absolute top-1 right-3 font-black text-[72px] leading-none select-none pointer-events-none tabular-nums transition-transform duration-500 ease-out group-hover:-translate-x-[3px] group-hover:-translate-y-[3px]"
+                    style={{ WebkitTextStroke: "1px rgba(10,45,110,0.65)", color: "transparent", ...MONO }}
                   >
                     {item.step}
                   </span>
 
-                  {/* Tactical coordinate — top right */}
-                  <div className="absolute top-2 right-4">
-                    <span style={MONO} className="text-[10px] text-slate-700 uppercase tracking-[0.1em]">
-                      [ {item.coords} ]
-                    </span>
-                  </div>
-
                   {/* Phase number */}
-                  <span style={MONO} className="text-[11px] text-[#65AAD6] uppercase tracking-[0.35em] mb-3 block">
-                    {item.step}
+                  <span style={MONO} className="text-[11px] text-[#65AAD6] uppercase tracking-[0.35em] mb-2 block">
+                    Step {item.step}
                   </span>
 
-                  {/* Protocol metadata */}
                   <span style={MONO} className="text-[10px] text-slate-400 uppercase tracking-[0.2em] mb-2 block">
-                    [ {item.phaseKey}_V.{item.protocolVersion} ]
+                    [ {item.phaseKey} ]
                   </span>
 
                   {/* Technical title */}
-                  <h3 className="font-black text-lg text-white uppercase tracking-widest leading-[1.15] mb-2">
+                  <h3 className="font-black text-base lg:text-lg text-white uppercase tracking-[0.16em] leading-[1.15] mb-2">
                     {item.technicalTitle}
                   </h3>
 
+                  <p className="text-[12px] text-[#65AAD6] uppercase tracking-[0.18em] mb-3">
+                    {item.name}
+                  </p>
+
                   {/* Description — WCAG AA: slate-200 on #001f4d */}
-                  <p className="text-[15px] text-slate-200 leading-relaxed mt-auto">
+                  <p className="text-[14px] text-slate-200 leading-relaxed mt-auto max-w-[22rem]">
                     {item.desc}
                   </p>
 

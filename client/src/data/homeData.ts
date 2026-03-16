@@ -10,10 +10,10 @@ import {
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 export const STATS = [
-  { icon: Clock,          value: 15,  suffix: "+",  label: "Years Experience",  sub: "Est. 2008"        },
-  { icon: Globe2,         value: 50,  suffix: "+",  label: "Global Markets",    sub: "Worldwide Export" },
-  { icon: PenTool,        value: 100, suffix: "%",  label: "Custom Design",     sub: "OEM / ODM"        },
-  { icon: HeadphonesIcon, value: 24,  suffix: "/7", label: "Technical Support", sub: "Response < 5 min" },
+  { icon: Clock,          value: 15,    suffix: "+", label: "Years in Blade Manufacturing", sub: "Est. 2008" },
+  { icon: PenTool,        value: 10000, suffix: "+", label: "Blade Designs Delivered",     sub: "Custom Variants" },
+  { icon: Globe2,         value: 50,    suffix: "+", label: "Countries Served",             sub: "Global Shipments" },
+  { icon: HeadphonesIcon, value: 98,    suffix: "%", label: "Repeat Client Retention",      sub: "Long-Term Supply" },
 ];
 
 // ─── Industry Ecosystems ──────────────────────────────────────────────────────
@@ -22,12 +22,12 @@ export const ECOSYSTEMS = [
     icon: Recycle,
     label: "Recycling & Waste Management",
     industry: "Plastics & Recycling",
-    desc: "From post-consumer PET bottles to mixed municipal solid waste, we supply shredder blades, granulator knives, and pelletizer rotors precision-engineered for maximum throughput and minimum downtime across the full waste reduction chain.",
+    desc: "For shredders, granulators, and recycling lines that need blades matched to abrasive feedstock, impact load, contamination level, and uptime targets.",
     specs: [
-      { label: "Materials",    value: "D2, DC53, SKD-11 (Cr12MoV), Tungsten Carbide (YG8/YG15)" },
-      { label: "Tolerances",   value: "±0.002 mm edge — 100% CMM verified per batch" },
-      { label: "Applications", value: "Single & multi-shaft shredders, Granulators, Pelletizer heads" },
-      { label: "Surface",      value: "Ra ≤ 0.8 μm (standard) · Ra ≤ 0.4 μm (mirror, on request)" },
+      { label: "Typical Lines", value: "Single-shaft shredders, dual-shaft shredders, granulators, pelletizer systems" },
+      { label: "Typical Problems", value: "Fast wear, edge chipping, unstable blade life, inconsistent particle reduction" },
+      { label: "Material Direction", value: "D2, DC53, SKD-11, carbide grades based on abrasion and impact profile" },
+      { label: "What You Can Review", value: "Recommended blade families, material logic, and recycling application examples" },
     ],
     href: "/plastic-industry",
     image: "/images/applications/Plastic-Waste-Recycling.webp",
@@ -36,12 +36,12 @@ export const ECOSYSTEMS = [
     icon: FileText,
     label: "Paper, Packaging & Converting",
     industry: "Paper & Converting",
-    desc: "Mirror-polished log-saw blades, guillotine cutter knives, and precision slitter tooling built for continuous, high-speed converting lines. Matched to Fabio Perini, Körber, and all major OEM geometries for zero-rework drop-in installation.",
+    desc: "For tissue, paper, and packaging lines that need cleaner cuts, longer blade life, and OEM-fit tooling for high-speed converting equipment.",
     specs: [
-      { label: "Materials",    value: "M2 HSS, D2, Bi-metal (HSS + carbon steel body)" },
-      { label: "Tolerances",   value: "±0.002 mm TIR · flatness verified on granite surface plate" },
-      { label: "Applications", value: "Log saws, Rewinders, Slitter-rewinders, Guillotine cutters" },
-      { label: "Surface",      value: "Ra ≤ 0.4 μm mirror polish — cutting edge radius < 5 μm" },
+      { label: "Typical Lines", value: "Log saws, rewinders, slitter-rewinders, guillotine cutters" },
+      { label: "Typical Problems", value: "Poor cut finish, dust generation, short regrind intervals, fit inconsistency" },
+      { label: "Material Direction", value: "M2 HSS, D2, and bi-metal options based on speed, finish, and service life" },
+      { label: "What You Can Review", value: "Blade options by converting process, polish requirement, and OEM platform" },
     ],
     href: "/paper-industry",
     image: "/images/applications/tissue-industry/tissue-and-paper.webp",
@@ -50,12 +50,12 @@ export const ECOSYSTEMS = [
     icon: Layers,
     label: "Metal Coil Processing",
     industry: "Metal Processing",
-    desc: "High-precision rotary slitter knives, guillotine shear blades, and complete coil-slitting tooling sets manufactured to micron-level tolerances for ferrous and non-ferrous service centers, steel mills, and heavy fabrication lines.",
+    desc: "For slitting and shearing lines where burr control, dimensional stability, regrind life, and consistent performance on metal coils drive the tooling decision.",
     specs: [
-      { label: "Materials",    value: "D2, SKD11, H13, 9CrSi, M2 HSS, Cr12MoV" },
-      { label: "Tolerances",   value: "Thickness ±0.001 mm · OD ±0.01 mm — laser verified" },
-      { label: "Applications", value: "Slitting lines, Flying shear, Guillotine cutters, Rotary shear" },
-      { label: "Hardness",     value: "58–64 HRC (vacuum heat treated, deformation < 0.01 mm)" },
+      { label: "Typical Lines", value: "Coil slitting lines, flying shear, guillotine cutters, rotary shear systems" },
+      { label: "Typical Problems", value: "Burr buildup, edge collapse, tolerance drift, short regrind cycles" },
+      { label: "Material Direction", value: "D2, SKD11, H13, M2 HSS, and related grades by strip type and line speed" },
+      { label: "What You Can Review", value: "Knife sets, clearance-critical tooling, and metal-processing application guidance" },
     ],
     href: "/metal-industry",
     image: "/images/applications/Metal-Waste-Recycling.webp",
@@ -64,33 +64,81 @@ export const ECOSYSTEMS = [
 
 // ─── Featured Products ────────────────────────────────────────────────────────
 export const FEATURED_PRODUCTS = [
-  { name: "Rotary Slitter Knives",        image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",    href: "/products/rotary-slitter-knives" },
-  { name: "Shredder Blades",              image: "/images/products/shredder-blades/shredder-blades-04.webp",                 href: "/products/shredder-blades" },
-  { name: "Tissue Paper Blades",          image: "/images/products/blades/tissue-log-saw-blades.webp",                      href: "/products/tissue-log-saw-blades" },
-  { name: "Granulator Blades",            image: "/images/products/granulator-blades/granulator-blades-01.webp",             href: "/products/granulator-blades" },
-  { name: "Paper Cutting Blades",         image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",      href: "/products/paper-cutting-blades" },
-  { name: "Single Shaft Shredder Blades", image: "/images/products/shredder-blades/single-shredder-blades-06.webp",          href: "/products/single-shaft-shredder-blades" },
-  { name: "Metal Slitting Blades",        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",     href: "/products/metal-coil-slitting-knives" },
-  { name: "Metal Shear Knives",           image: "/images/products/granulator-blades/metal-shear-blades-00.webp",           href: "/products/metal-shear-blades" },
+  {
+    name: "Rotary Slitter Knives",
+    image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+    href: "/products/rotary-slitter-knives",
+    tag: "Metal Processing",
+    summary: "For coil slitting lines requiring stable clearance and clean edge quality.",
+  },
+  {
+    name: "Shredder Blades",
+    image: "/images/products/shredder-blades/shredder-blades-04.webp",
+    href: "/products/shredder-blades",
+    tag: "Recycling",
+    summary: "For heavy-duty volume reduction under abrasive and impact-loaded waste streams.",
+  },
+  {
+    name: "Tissue Paper Blades",
+    image: "/images/products/blades/tissue-log-saw-blades.webp",
+    href: "/products/tissue-log-saw-blades",
+    tag: "Converting",
+    summary: "For log saw cutting where polish, sharpness retention, and finish consistency matter.",
+  },
+  {
+    name: "Granulator Blades",
+    image: "/images/products/granulator-blades/granulator-blades-01.webp",
+    href: "/products/granulator-blades",
+    tag: "Size Reduction",
+    summary: "For plastic regrind lines balancing wear life, toughness, and throughput.",
+  },
+  {
+    name: "Paper Cutting Blades",
+    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    href: "/products/paper-cutting-blades",
+    tag: "Paper & Packaging",
+    summary: "For sheeting and converting operations requiring clean cuts and repeatable geometry.",
+  },
+  {
+    name: "Single Shaft Shredder Blades",
+    image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    href: "/products/single-shaft-shredder-blades",
+    tag: "OEM Replacement",
+    summary: "For single-shaft systems where fit, bolt pattern, and material match are critical.",
+  },
+  {
+    name: "Metal Slitting Blades",
+    image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
+    href: "/products/metal-coil-slitting-knives",
+    tag: "Slitting Lines",
+    summary: "For ferrous and non-ferrous service centers requiring tight dimensional control.",
+  },
+  {
+    name: "Metal Shear Knives",
+    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    href: "/products/metal-shear-blades",
+    tag: "Shearing",
+    summary: "For guillotine and flying shear applications where toughness and regrind life lead decisions.",
+  },
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
 export const FAQ_ITEMS = [
   {
-    q: "What steel grades do you stock for industrial blades?",
-    a: "We maintain a full library of D2, SKD-11 (Cr12MoV), H13, 9CrSi, M2 HSS, and tungsten carbide (YG8/YG15) — matched to your abrasion, impact, and temperature profile.",
+    q: "Can you quote from a drawing, worn sample, or basic dimensions?",
+    a: "Yes. We can quote from technical drawings, used blade samples, or a dimension set with machine model, material type, and application details. For OEM replacements, matching fit and tolerance is part of the engineering review.",
   },
   {
-    q: "What dimensional tolerances can you achieve?",
-    a: "Our 5-axis CNC profile grinders achieve ±0.01 mm flatness and ±0.002 mm edge tolerances, verified by CMM inspection on every batch.",
+    q: "What information do you need for an accurate quotation?",
+    a: "The fastest quotations come with blade drawing or sample, material being cut, machine model, hardness or steel preferences if known, and any target concerns such as wear life, edge quality, or downtime reduction.",
   },
   {
-    q: "Do you support custom OEM / ODM blade designs?",
-    a: "Yes. Send us your drawing, sample, or concept. Our engineering team handles reverse engineering, CAD modelling, prototype grinding, and series production.",
+    q: "How do you recommend the right steel grade for different applications?",
+    a: "We match steel grade and heat treatment to abrasion level, impact load, cutting speed, and feedstock. Common options include D2, DC53, SKD11, H13, M2 HSS, and tungsten carbide depending on the operating conditions.",
   },
   {
-    q: "What is your standard lead time for custom orders?",
-    a: "Standard custom blades ship in 15–25 business days after drawing approval. Rush production (7–10 days) is available for repeat specifications.",
+    q: "What tolerances, inspection, and lead times can you support?",
+    a: "Typical production is verified by CMM inspection with edge tolerances down to ±0.002 mm depending on blade type. Standard custom orders usually ship in 15 to 25 business days after drawing approval, with faster repeat-order options available.",
   },
 ];
 

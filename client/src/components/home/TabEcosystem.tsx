@@ -55,11 +55,10 @@ export default function TabEcosystem() {
             </p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
-                Complete Industry Ecosystems
+                Choose Your Industry And Start With The Right Cutting Setup
               </h2>
               <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
-                We don't just supply isolated blades. We engineer complete front-end processing
-                solutions tailored to severe industrial environments.
+                Each path is designed to answer the first practical question: which blade family, material direction, and fit standard match this line.
               </p>
             </div>
             <div className="w-14 h-[3px] bg-slate-300 mt-8" />
@@ -68,7 +67,7 @@ export default function TabEcosystem() {
       </div>
 
       {/* sticky part — tab bar + content locks below navbar */}
-      <section className="sticky top-[68px] bg-white pb-20 lg:pb-24">
+      <section className="sticky top-0 bg-white pb-20 lg:pb-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
           {/* Tab bar */}
@@ -115,6 +114,10 @@ export default function TabEcosystem() {
 
                 <p className="text-sm text-slate-500 leading-relaxed mb-5 max-w-md">
                   {activeEcosystem.desc}
+                </p>
+
+                <p className="text-[11px] font-bold text-[#001f4d] uppercase tracking-[0.22em] mb-3">
+                  Typical Selection Checklist
                 </p>
 
                 {/* Spec list */}
