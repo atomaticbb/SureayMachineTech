@@ -86,7 +86,9 @@ export const submitContactForm = async (
     // 6. Success response
     res.json({
       success: true,
-      message: 'Contact form submitted successfully',
+      message: emailResult.success
+        ? 'Contact form submitted successfully'
+        : 'Inquiry received and saved. If your request is urgent, please contact us by email or WhatsApp.',
       data: {
         contactId: contact.id,
         emailSent:  emailResult.success,

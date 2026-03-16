@@ -7,7 +7,13 @@ export interface ContactFormData {
   inquiryType?: string;
 }
 
+export interface ContactSubmissionData {
+  contactId: string;
+  emailSent: boolean;
+}
+
 export interface ContactSubmissionResponse {
   success: boolean;
   message: string;
+  data?: ContactSubmissionData;
 }

@@ -1,8 +1,40 @@
 import { Request, Response, NextFunction } from 'express';
+import { Prisma } from '@prisma/client';
 import { prisma } from '../db/client.js';
 
 const VALID_STATUSES = ['pending', 'replied', 'closed'] as const;
 const VALID_FOLLOWUP_TYPES = ['Email', 'Call', 'Internal'] as const;
+const DEFAULT_PAGE = 1;
+const DEFAULT_LIMIT = 50;
+const MAX_LIMIT = 100;
+const DEFAULT_DAYS = 7;
+const MAX_DAYS = 90;
+const CUID_PATTERN = /^c[a-z0-9]{24}$/;
+
+function parsePositiveInt(
+  value: string | undefined,
+  fallback: number,
+  max: number
+) {
+  const parsed = Number.parseInt(value ?? '', 10);
+
+  if (Number.isNaN(parsed) || parsed < 1) {
+    return fallback;
+  }
+
+  return Math.min(parsed, max);
+}
+
+function isValidCuid(id: string) {
+  return CUID_PATTERN.test(id);
+}
+
+function isPrismaNotFoundError(error: unknown) {
+  return (
+    error instanceof Prisma.PrismaClientKnownRequestError &&
+    error.code === 'P2025'
+  );
+}
 
 // ── Contacts ──────────────────────────────────────────────────────────────────
 
@@ -13,8 +45,8 @@ export const getContacts = async (
 ) => {
   try {
     const { page = '1', limit = '50', status, search } = req.query;
-    const pageNum  = parseInt(page  as string);
-    const limitNum = parseInt(limit as string);
+    const pageNum = parsePositiveInt(page as string, DEFAULT_PAGE, Number.MAX_SAFE_INTEGER);
+    const limitNum = parsePositiveInt(limit as string, DEFAULT_LIMIT, MAX_LIMIT);
     const skip     = (pageNum - 1) * limitNum;
 
     const where: Record<string, unknown> = {};
@@ -74,8 +106,21 @@ export const updateContactStatus = async (
     const { id }     = req.params;
     const { status } = req.body;
 
+    if (!isValidCuid(id)) {
+      return res.status(400).json({ success: false, message: 'Invalid contact id' });
+    }
+
     if (!VALID_STATUSES.includes(status)) {
       return res.status(400).json({ success: false, message: 'Invalid status value' });
+    }
+
+    const existingContact = await prisma.contact.findUnique({
+      where: { id },
+      select: { id: true },
+    });
+
+    if (!existingContact) {
+      return res.status(404).json({ success: false, message: 'Contact not found' });
     }
 
     const contact = await prisma.contact.update({
@@ -85,6 +130,10 @@ export const updateContactStatus = async (
 
     res.json({ success: true, data: contact });
   } catch (error) {
+    if (isPrismaNotFoundError(error)) {
+      return res.status(404).json({ success: false, message: 'Contact not found' });
+    }
+
     console.error('Error in updateContactStatus:', error);
     next(error);
   }
@@ -101,11 +150,24 @@ export const addFollowUp = async (
     const { id }              = req.params;
     const { content, type, status } = req.body;
 
+    if (!isValidCuid(id)) {
+      return res.status(400).json({ success: false, message: 'Invalid contact id' });
+    }
+
     if (!content || typeof content !== 'string' || !content.trim()) {
       return res.status(400).json({ success: false, message: 'Follow-up content is required' });
     }
 
     const resolvedType = VALID_FOLLOWUP_TYPES.includes(type) ? type : 'Internal';
+
+    const existingContact = await prisma.contact.findUnique({
+      where: { id },
+      select: { id: true },
+    });
+
+    if (!existingContact) {
+      return res.status(404).json({ success: false, message: 'Contact not found' });
+    }
 
     const followUp = await prisma.$transaction(async (tx) => {
       const fu = await tx.followUp.create({
@@ -128,6 +190,10 @@ export const addFollowUp = async (
 
     res.json({ success: true, data: followUp });
   } catch (error) {
+    if (isPrismaNotFoundError(error)) {
+      return res.status(404).json({ success: false, message: 'Contact not found' });
+    }
+
     console.error('Error in addFollowUp:', error);
     next(error);
   }
@@ -142,8 +208,8 @@ export const getAnalytics = async (
 ) => {
   try {
     const { startDate, endDate, eventType, page = '1', limit = '50' } = req.query;
-    const pageNum  = parseInt(page  as string);
-    const limitNum = parseInt(limit as string);
+    const pageNum = parsePositiveInt(page as string, DEFAULT_PAGE, Number.MAX_SAFE_INTEGER);
+    const limitNum = parsePositiveInt(limit as string, DEFAULT_LIMIT, MAX_LIMIT);
     const skip     = (pageNum - 1) * limitNum;
 
     const where: Record<string, unknown> = {};
@@ -196,7 +262,7 @@ export const getStatistics = async (
 ) => {
   try {
     const { days = '7' } = req.query;
-    const daysNum    = parseInt(days as string);
+    const daysNum = parsePositiveInt(days as string, DEFAULT_DAYS, MAX_DAYS);
     const startDate  = new Date();
     startDate.setDate(startDate.getDate() - daysNum);
 

@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import type { ContactSubmissionResponse } from "@shared/types";
 
 const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp";
 const MAX_FILE_MB   = 15;
@@ -10,11 +11,13 @@ function fmtSize(bytes: number) {
 }
 
 export default function ContactRFQ({ productName }: { productName?: string } = {}) {
-  const [submitted,  setSubmitted]  = useState(false);
-  const [loading,    setLoading]    = useState(false);
-  const [error,      setError]      = useState("");
-  const [attachment, setAttachment] = useState<File | null>(null);
-  const [dragOver,   setDragOver]   = useState(false);
+  const [submitted,       setSubmitted]       = useState(false);
+  const [loading,         setLoading]         = useState(false);
+  const [error,           setError]           = useState("");
+  const [submitNotice,    setSubmitNotice]    = useState("");
+  const [emailNoticeOnly, setEmailNoticeOnly] = useState(false);
+  const [attachment,      setAttachment]      = useState<File | null>(null);
+  const [dragOver,        setDragOver]        = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // ── File helpers ─────────────────────────────────────────────────────────
@@ -49,6 +52,8 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
     e.preventDefault();
     setLoading(true);
     setError("");
+    setSubmitNotice("");
+    setEmailNoticeOnly(false);
 
     const raw          = new FormData(e.currentTarget);
     const inquiryType  = raw.get("inquiryType") as string;
@@ -59,7 +64,8 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
     fd.append("name",    raw.get("name")  as string);
     fd.append("email",   raw.get("email") as string);
     const productPrefix = productName ? `[Product: ${productName}] ` : "";
-    fd.append("message", inquiryType ? `${productPrefix}[${inquiryType}] ${requirements}` : `${productPrefix}${requirements}`);
+    fd.append("message", `${productPrefix}${requirements}`);
+    if (inquiryType) fd.append("inquiryType", inquiryType);
     const phone = raw.get("phone") as string;
     if (phone) fd.append("phone", phone);
     if (attachment) fd.append("attachment", attachment, attachment.name);
@@ -71,11 +77,20 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
         // Do NOT set Content-Type — browser must set it with the multipart boundary
       });
 
+      const json = (await res.json().catch(() => ({}))) as ContactSubmissionResponse;
+
       if (!res.ok) {
-        const json = await res.json().catch(() => ({}));
         throw new Error(json.message || "Submission failed. Please try again.");
       }
 
+      const emailSent = json.data?.emailSent ?? true;
+      setSubmitNotice(
+        json.message ||
+          (emailSent
+            ? "Our engineering team will review your requirements and respond within 24 hours."
+            : "Your inquiry has been saved. If your request is urgent, please contact us by email or WhatsApp.")
+      );
+      setEmailNoticeOnly(!emailSent);
       setSubmitted(true);
       setAttachment(null);
     } catch (err) {
@@ -203,14 +218,19 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
                   </div>
                   <div>
                     <p className="font-black text-[11px] text-[#003366] uppercase tracking-[0.25em] mb-2">
-                      RFQ Received
+                      {emailNoticeOnly ? "Inquiry Saved" : "RFQ Received"}
                     </p>
                     <p className="font-black text-2xl text-[#001f4d] uppercase tracking-tight leading-tight mb-3">
-                      Thank You.
+                      {emailNoticeOnly ? "Request Logged." : "Thank You."}
                     </p>
                     <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                      Our engineering team will review your requirements and respond within <strong className="text-[#003366]">24 hours</strong>.
+                      {submitNotice || "Our engineering team will review your requirements and respond within 24 hours."}
                     </p>
+                    {emailNoticeOnly && (
+                      <p className="text-xs text-[#003366] leading-relaxed max-w-xs mx-auto mt-3 font-semibold">
+                        For urgent requests, email lynn@sureay.com or use WhatsApp for immediate follow-up.
+                      </p>
+                    )}
                   </div>
                   <div className="w-full border-t border-slate-100 pt-5">
                     <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.25em]">
