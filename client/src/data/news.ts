@@ -27,6 +27,65 @@ export interface DispatchArticle {
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id:       "d2-vs-skd11-vs-tungsten-carbide",
+    tag:      "PRODUCT GUIDE",
+    date:     "16.MAR.2026",
+    title:    "D2 VS SKD-11 VS TUNGSTEN CARBIDE: A COMPLETE GUIDE TO CHOOSING INDUSTRIAL BLADE MATERIALS",
+    excerpt:  "Compare D2, SKD-11, and tungsten carbide industrial blade materials. Learn about hardness, wear resistance, toughness, cost, and best applications for industrial cutting knives.",
+    image:    "/images/news/choosing-industrial-blades-materials.webp",
+    readTime: "8 MIN",
+    isFeatured: true,
+    content: [
+      { type: "h2",       value: "Introduction" },
+      { type: "paragraph", value: "Choosing the correct material for industrial blades is critical for production efficiency, blade lifespan, and maintenance costs. Three of the most commonly used materials in industrial cutting knives are D2 tool steel, SKD-11 tool steel, and tungsten carbide. Each material has unique advantages in terms of hardness, wear resistance, toughness, and machining cost." },
+      { type: "paragraph", value: "This guide helps engineers and procurement teams select the most suitable material for slitter knives, shredder blades, granulator knives, and recycling cutting tools." },
+      { type: "image",     value: "/images/news/a-complete-guide-to-choosing-industrial-blad-materials.webp" },
+
+      { type: "h2",       value: "D2 Tool Steel" },
+      { type: "paragraph", value: "D2 is a high-carbon, high-chromium cold-work tool steel widely used in industrial blades. It offers a hardness range of 55–62 HRC with excellent wear resistance, good dimensional stability, and easy regrindability — making it cost-effective for most applications." },
+      { type: "callout",   value: "D2 TYPICAL APPLICATIONS: Slitter knives, paper cutting blades, plastic cutting knives, industrial shearing knives." },
+
+      { type: "h2",       value: "SKD-11 Tool Steel" },
+      { type: "paragraph", value: "SKD-11 is the Japanese JIS standard equivalent to D2. Properties are very similar but SKD-11 often shows slightly improved hardenability, toughness, and wear resistance consistency. It reaches 56–61 HRC and is favored in precision cutting knives, die cutting tools, and industrial machine blades where tighter tolerances are required." },
+      { type: "callout",   value: "SKD-11 VS D2: While chemically near-identical, SKD-11 benefits from stricter JIS refining standards, resulting in finer carbide distribution and marginally better impact toughness under cyclic loading." },
+
+      { type: "h2",       value: "Tungsten Carbide" },
+      { type: "paragraph", value: "Tungsten carbide is a sintered composite material made of tungsten carbide particles bonded with cobalt. It is significantly harder than tool steel, reaching 1500–2500 HV. It provides extremely high wear resistance and excellent edge retention, but has low impact resistance and higher manufacturing cost." },
+      { type: "callout",   value: "TUNGSTEN CARBIDE APPLICATIONS: Recycling shredder knives, abrasive material cutting, glass fiber or composite cutting, high-wear environments where blade longevity outweighs regrinding flexibility." },
+
+      { type: "h2",       value: "Material Property Comparison" },
+      { type: "paragraph", value: "Hardness — D2: 55–62 HRC | SKD-11: 56–61 HRC | Tungsten Carbide: 1500–2500 HV. Wear Resistance — D2: High | SKD-11: High | Carbide: Extremely High. Toughness — D2: Medium | SKD-11: Medium-High | Carbide: Low. Regrinding — D2: Easy | SKD-11: Easy | Carbide: Difficult. Cost — D2: Medium | SKD-11: Medium-High | Carbide: High. Impact Resistance — D2: Moderate | SKD-11: Moderate | Carbide: Low." },
+
+      { type: "h2",       value: "Material Selection Guide" },
+      { type: "h3",       value: "High Wear Applications" },
+      { type: "paragraph", value: "Best choice: Tungsten Carbide. Ideal for plastic recycling shredders, fiberglass cutting, and abrasive materials. Advantages include extremely long blade life, reduced downtime, and consistent cutting performance. The primary limitation is higher cost and fragility under impact loads." },
+
+      { type: "h3",       value: "General Industrial Cutting" },
+      { type: "paragraph", value: "Best choice: D2 or SKD-11. Suitable for paper converting lines, plastic sheet cutting, and packaging materials. These steels offer good wear resistance, easy regrinding, and cost-effective total ownership. Most industrial cutting operations fall into this category." },
+
+      { type: "h3",       value: "Applications with Impact Loads" },
+      { type: "paragraph", value: "Best choice: SKD-11 or modified tool steels. When processing mixed recycling waste or materials with metal contamination risk, tool steels provide significantly better toughness and shock resistance than carbide. Choosing carbide in high-impact scenarios can lead to unexpected blade breakage." },
+
+      { type: "h2",       value: "Blade Lifespan Comparison" },
+      { type: "callout",   value: "RELATIVE BLADE LIFESPAN — D2 Steel: 6/10 | SKD-11 Steel: 7/10 | Tungsten Carbide: 10/10. Measured under standardized abrasive cutting conditions. Actual lifespan varies by application, feed rate, and material being processed." },
+
+      { type: "h2",       value: "Maintenance Strategy" },
+      { type: "paragraph", value: "Proper maintenance significantly improves blade life regardless of material choice. Key practices include scheduled regrinding (tool steel blades can typically be re-sharpened multiple times, reducing replacement cost and maintaining cutting precision), material contamination control (install magnetic separators and metal detectors to prevent metal fragments from damaging blades), and effective cooling and lubrication (reduces thermal stress, prevents edge deformation, and improves cutting stability)." },
+
+      { type: "h2",       value: "Common Misconceptions" },
+      { type: "paragraph", value: "\"Harder is always better\" — Not necessarily. Higher hardness often means lower toughness, increasing fracture risk. The optimal material balances hardness against the specific impact and fatigue demands of your application." },
+      { type: "paragraph", value: "\"Carbide works for every application\" — Carbide performs poorly in high-impact environments. Selecting carbide for the wrong scenario leads to unexpected blade breakage and higher total cost than a well-chosen tool steel." },
+
+      { type: "h2",       value: "Quick Selection Checklist" },
+      { type: "paragraph", value: "Before ordering industrial blades, consider: What material is being cut? Is the environment abrasive? Is there risk of metal contamination? How important is blade regrinding? What is the acceptable downtime cost? Answering these questions helps determine the optimal blade material for your operation." },
+
+      { type: "h2",       value: "Conclusion" },
+      { type: "paragraph", value: "Selecting the right blade material balances durability, cost, maintenance, and cutting precision. Use tungsten carbide for high-wear environments where longevity justifies the investment. Use D2 or SKD-11 for most industrial cutting applications where regrindability and cost matter. Always consider impact loads before selecting carbide — a well-chosen material can significantly reduce production downtime and operational cost." },
+    ],
+  },
+
+  // ── Archive Grid ──────────────────────────────────────────────────────────
+  {
     id:         "facility-expansion-phase-iii",
     tag:        "COMPANY UPDATES",
     date:       "24.OCT.2024",
@@ -34,7 +93,6 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     excerpt:    "Commissioning of our new 5,000 m² high-precision CNC grid expands heavy-duty shredder blade production capacity by 40%, establishing Sureay's largest single-facility output in its 16-year operational history.",
     image:      "/images/about/factory-00.webp",
     readTime:   "5 MIN",
-    isFeatured: true,
     content: [
       { type: "h2",       value: "Background & Rationale" },
       { type: "paragraph", value: "Since the original Ma'anshan facility commissioning in 2008, Sureay Machinery has operated under a constrained floor footprint of 10,000 m². The structural limitation reached critical threshold in Q3 2023, when incoming OEM order volume exceeded single-shift throughput capacity by 23%. A systematic capacity audit — conducted jointly by our operations and metallurgical engineering teams — identified three bottleneck nodes: raw stock pre-treatment staging, 5-axis CNC queue depth, and post-heat-treatment CMM throughput." },

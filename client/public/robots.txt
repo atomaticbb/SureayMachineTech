@@ -4,9 +4,10 @@
 User-agent: *
 Allow: /
 
-# Disallow admin or internal pages (if any exist)
+# Disallow admin or internal pages
+Disallow: /admin
 Disallow: /admin/
-Disallow: /_next/
+Disallow: /admin-login
 Disallow: /api/
 
 # Sitemap location

@@ -26,7 +26,7 @@ import type {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
   breadcrumb: "Home / Markets / Metal Processing",
-  h1:   "Metal Processing Tooling & Coil Slitting Equipment",
+  h1:   "Industrial Metal Slitting & Shear Blade Manufacturer",
   h2:   "Slitter Knives, Shear Blades & OEM Wear Parts",
   body1:
     "Sureay Machinery manufactures through-hardened circular slitter knives, guillotine shear " +

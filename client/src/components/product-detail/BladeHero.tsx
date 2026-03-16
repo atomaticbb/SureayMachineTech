@@ -124,13 +124,6 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             </button>
           ))}
         </div>
-
-        {/* Trust strip — below thumbnail track */}
-        <div className="flex items-center justify-center gap-6 px-4 py-2.5 border-t border-slate-100 bg-white">
-          <span className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">■ ISO 9001:2015 Certified</span>
-          <span className="w-px h-3 bg-slate-200" aria-hidden="true" />
-          <span className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">■ Global Door-to-Door Delivery</span>
-        </div>
       </div>
       <div className="lg:col-span-6 p-5 lg:p-8 flex flex-col justify-between lg:border-l lg:border-slate-200">
         <div className="space-y-5">

@@ -9,7 +9,7 @@ function fmtSize(bytes: number) {
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-export default function ContactRFQ() {
+export default function ContactRFQ({ productName }: { productName?: string } = {}) {
   const [submitted,  setSubmitted]  = useState(false);
   const [loading,    setLoading]    = useState(false);
   const [error,      setError]      = useState("");
@@ -58,7 +58,8 @@ export default function ContactRFQ() {
     const fd = new FormData();
     fd.append("name",    raw.get("name")  as string);
     fd.append("email",   raw.get("email") as string);
-    fd.append("message", inquiryType ? `[${inquiryType}] ${requirements}` : requirements);
+    const productPrefix = productName ? `[Product: ${productName}] ` : "";
+    fd.append("message", inquiryType ? `${productPrefix}[${inquiryType}] ${requirements}` : `${productPrefix}${requirements}`);
     const phone = raw.get("phone") as string;
     if (phone) fd.append("phone", phone);
     if (attachment) fd.append("attachment", attachment, attachment.name);
@@ -108,7 +109,10 @@ export default function ContactRFQ() {
               </div>
 
               {/* Email */}
-              <a href="mailto:lynn@sureay.com" className="group block">
+              <a
+                href="mailto:lynn@sureay.com"
+                className="group block"
+              >
                 <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">
@@ -217,6 +221,12 @@ export default function ContactRFQ() {
               ) : (
                 /* ── Form ──────────────────────────────────────────────── */
                 <form onSubmit={handleSubmit} className="flex-1 flex flex-col gap-4">
+                  {productName && (
+                    <div className="flex items-center gap-3 px-4 py-2.5 border border-[#001f4d]/20 bg-[#001f4d]/5">
+                      <span className="font-mono text-[9px] text-[#001f4d] uppercase tracking-widest font-black flex-shrink-0">Product</span>
+                      <span className="font-bold text-sm text-[#001f4d] truncate">{productName}</span>
+                    </div>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">

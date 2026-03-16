@@ -26,7 +26,7 @@ import type {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
   breadcrumb: "Home / Markets / Plastics Recycling",
-  h1:   "Plastics Recycling Tooling & Extrusion Equipment",
+  h1:   "Plastic Recycling Shredder & Granulator Blade Supplier",
   h2:   "Precision Knives, Filterless Systems & OEM Wear Parts",
   body1:
     "Sureay Machinery specializes in manufacturing premium industrial knives, " +

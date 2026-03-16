@@ -142,7 +142,7 @@ export default function ProductDetail() {
 
         {/* Zone 6 — Contact / RFQ form */}
         <div id="rfq">
-          <ContactRFQ />
+          <ContactRFQ productName={blade.name} />
         </div>
 
       </main>

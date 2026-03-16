@@ -13,6 +13,7 @@ import { Link } from "wouter";
 import { blades, type BladeCategoryType } from "@/data/blades";
 import ProductGrid from "@/components/product/ProductGrid";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import ContactRFQ from "@/components/home/ContactRFQ";
 import { gtagEvent } from "@/lib/gtag";
 
 // ── Application-grouped Filter Taxonomy ────────────────────────────────────
@@ -58,12 +59,18 @@ const FACTORY_IMAGES = [
 
 export default function BladeListPage() {
   const [selectedCategory, setSelectedCategory] = useState<BladeCategoryType | "all">("all");
+  const [sortOrder, setSortOrder] = useState<"featured" | "az">("featured");
   const listSectionRef = useRef<HTMLElement | null>(null);
   const didMountRef = useRef<boolean>(false);
 
   const filteredBlades = blades.filter((b) =>
     selectedCategory === "all" ? true : b.category === selectedCategory
   );
+
+  const sortedBlades =
+    sortOrder === "az"
+      ? [...filteredBlades].sort((a, b) => a.name.localeCompare(b.name))
+      : filteredBlades;
 
   useEffect(() => {
     if (!didMountRef.current) { didMountRef.current = true; return; }
@@ -131,6 +138,25 @@ export default function BladeListPage() {
 
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          TRUST STRIP — Est. · ISO · Export Markets
+      ═══════════════════════════════════════════════════════════════════ */}
+      <div className="border-b border-slate-200 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
+          {[
+            { label: "Est.", value: "2008" },
+            { label: "Certified", value: "ISO 9001:2015" },
+            { label: "Export Markets", value: "50+ Countries" },
+            { label: "OEM Custom", value: "From 1 Set" },
+          ].map(({ label, value }) => (
+            <div key={label} className="flex items-center gap-2">
+              <span className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">{label}</span>
+              <span className="font-black text-sm text-[#001f4d] uppercase tracking-tight">{value}</span>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 2 + 3 — Index Sidebar + Archive Matrix
@@ -286,11 +312,19 @@ export default function BladeListPage() {
               <p className="font-mono text-[12px] text-slate-400 tracking-[0.35em] uppercase">
                 [ BLADE RANGE — {filteredBlades.length} PRODUCT{filteredBlades.length !== 1 ? "S" : ""} ]
               </p>
+              <select
+                value={sortOrder}
+                onChange={(e) => setSortOrder(e.target.value as "featured" | "az")}
+                className="font-mono text-[11px] text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
+              >
+                <option value="featured">Sort: Featured</option>
+                <option value="az">Sort: A → Z</option>
+              </select>
             </div>
 
             <div className="p-6 lg:p-8">
               <ProductGrid
-                blades={filteredBlades}
+                blades={sortedBlades}
                 layout="list"
                 onShowAll={() => setSelectedCategory("all")}
               />
@@ -360,6 +394,7 @@ export default function BladeListPage() {
           ZONE 5 — OEM Conversion Funnel
       ═══════════════════════════════════════════════════════════════════ */}
       <IndustryOemPipeline />
+      <ContactRFQ />
 
       <Footer />
     </div>

@@ -8,6 +8,7 @@ import TabEcosystem from "@/components/home/TabEcosystem";
 import NewsGrid from "@/components/home/NewsGrid";
 import TechnicalFAQ from "@/components/home/TechnicalFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
+import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
 const ITEM_LIST_LD = JSON.stringify({
   "@context": "https://schema.org",
@@ -24,7 +25,7 @@ const ITEM_LIST_LD = JSON.stringify({
       "@type": "ListItem",
       position: 2,
       name: "Metal Processing Knives",
-      url: "https://www.sureay.com/products/rotary-cutter-blades",
+      url: "https://www.sureay.com/products/rotary-slitter-knives",
     },
     {
       "@type": "ListItem",
@@ -70,10 +71,6 @@ export default function Home() {
           name="description"
           content="ISO 9001:2015 certified OEM manufacturer of precision industrial blades, granulator knives and recycling machine solutions. ±0.002 mm tolerance. Global export since 2008."
         />
-        <meta
-          name="keywords"
-          content="industrial blades, granulator blades, shredder blades, slitter knives, precision cutting tools, plastic recycling blades, metal processing knives"
-        />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.sureay.com/" />
 
@@ -96,10 +93,11 @@ export default function Home() {
         <Navbar />
         <HomeHero />
         <AuthorityCarousel />
-        <ManufacturingBlocks />
         <TabEcosystem />
-        <NewsGrid />
+        <ManufacturingBlocks />
+        <IndustryOemPipeline />
         <TechnicalFAQ />
+        <NewsGrid />
         <ContactRFQ />
         <Footer />
       </div>

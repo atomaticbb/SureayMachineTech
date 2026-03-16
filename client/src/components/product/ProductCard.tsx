@@ -105,7 +105,7 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             {/* View Details Row */}
             <div className="flex items-center justify-between pt-3 border-t border-slate-100">
               <span className="inline-flex items-center gap-1.5 text-sm font-black text-[#001f4d] uppercase tracking-[0.12em] group-hover:underline underline-offset-4 decoration-2 transition-all">
-                View Details
+                View Specs &amp; Request Quote
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>

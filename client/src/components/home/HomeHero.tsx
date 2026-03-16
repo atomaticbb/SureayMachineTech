@@ -19,7 +19,7 @@ export default function HomeHero() {
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-8 h-[2px] bg-white/50" />
             <p className="text-white/60 font-semibold text-xs uppercase tracking-[0.28em]">
-              Sureay Machinery Manufacturing Co., Ltd.
+              Sureay · Custom OEM Accepted
             </p>
           </div>
 

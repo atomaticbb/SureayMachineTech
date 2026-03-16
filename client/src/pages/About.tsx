@@ -221,6 +221,9 @@ export default function About() {
               </div>
             ))}
           </div>
+          <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase px-8 pb-3 text-right">
+            * Based on 2024 internal records
+          </p>
         </div>
       </section>
 

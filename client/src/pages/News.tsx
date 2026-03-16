@@ -13,7 +13,7 @@ import { getAllDispatches, getFeaturedDispatch } from "@/data/news";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
 
-const CATEGORIES = ["ALL", "TECH INNOVATION", "EXHIBITIONS", "COMPANY UPDATES"];
+const CATEGORIES = ["ALL", "TECH INNOVATION", "PRODUCT GUIDE", "EXHIBITIONS", "COMPANY UPDATES"];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
