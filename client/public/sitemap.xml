@@ -4,7 +4,7 @@
   <!-- ── Core Pages ───────────────────────────────────────────────────────── -->
   <url>
     <loc>https://www.sureay.com/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -125,8 +125,8 @@
   </url>
 
   <url>
-    <loc>https://www.sureay.com/news/facility-expansion-phase-iii</loc>
-    <lastmod>2024-10-24</lastmod>
+    <loc>https://www.sureay.com/news/d2-vs-skd11-vs-tungsten-carbide</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
@@ -134,6 +134,13 @@
   <url>
     <loc>https://www.sureay.com/news/high-hardness-metal-shear-guide</loc>
     <lastmod>2026-03-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.sureay.com/news/facility-expansion-phase-iii</loc>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
@@ -176,13 +183,6 @@
   <url>
     <loc>https://www.sureay.com/news/chinaplas-2024-oem-partnerships</loc>
     <lastmod>2024-04-18</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/news/d2-vs-skd11-vs-tungsten-carbide</loc>
-    <lastmod>2026-03-16</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>

@@ -22,6 +22,38 @@ export interface DispatchArticle {
   content:     NewsContent[];
 }
 
+const DISPATCH_MONTHS: Record<string, number> = {
+  JAN: 0,
+  FEB: 1,
+  MAR: 2,
+  APR: 3,
+  MAY: 4,
+  JUN: 5,
+  JUL: 6,
+  AUG: 7,
+  SEP: 8,
+  OCT: 9,
+  NOV: 10,
+  DEC: 11,
+};
+
+function parseDispatchDate(date: string): number {
+  const [day, month, year] = date.split(".");
+  const monthIndex = DISPATCH_MONTHS[month];
+
+  if (!day || monthIndex === undefined || !year) {
+    return 0;
+  }
+
+  return new Date(Number(year), monthIndex, Number(day)).getTime();
+}
+
+function sortDispatchesByDate(dispatches: DispatchArticle[]): DispatchArticle[] {
+  return [...dispatches].sort(
+    (left, right) => parseDispatchDate(right.date) - parseDispatchDate(left.date)
+  );
+}
+
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
@@ -268,11 +300,13 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
 ];
 
+export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
+
 // ── Helper Functions ──────────────────────────────────────────────────────────
 
 /** All non-featured dispatches, for the archive grid. */
 export function getAllDispatches(): DispatchArticle[] {
-  return ALL_DISPATCHES.filter((d) => !d.isFeatured);
+  return SORTED_DISPATCHES.filter((d) => !d.isFeatured);
 }
 
 /** The single featured dispatch (first one flagged, or first in list). */
@@ -291,10 +325,10 @@ export function getAdjacentDispatches(currentId: string): {
   prev: DispatchArticle | null;
   next: DispatchArticle | null;
 } {
-  const idx = ALL_DISPATCHES.findIndex((d) => d.id === currentId);
+  const idx = SORTED_DISPATCHES.findIndex((d) => d.id === currentId);
   if (idx === -1) return { prev: null, next: null };
   return {
-    prev: idx > 0                          ? ALL_DISPATCHES[idx - 1] : null,
-    next: idx < ALL_DISPATCHES.length - 1 ? ALL_DISPATCHES[idx + 1] : null,
+    prev: idx > 0                            ? SORTED_DISPATCHES[idx - 1] : null,
+    next: idx < SORTED_DISPATCHES.length - 1 ? SORTED_DISPATCHES[idx + 1] : null,
   };
 }

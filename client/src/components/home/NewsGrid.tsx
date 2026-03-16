@@ -1,9 +1,9 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { ALL_DISPATCHES } from "@/data/news";
+import { SORTED_DISPATCHES } from "@/data/news";
 
 // Latest 3 articles — single source of truth shared with /news page
-const LATEST = ALL_DISPATCHES.slice(0, 3);
+const LATEST = SORTED_DISPATCHES.slice(0, 3);
 
 export default function NewsGrid() {
   return (
