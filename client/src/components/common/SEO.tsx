@@ -63,6 +63,13 @@ function hasOfferPrice(offers?: ProductData["offers"]): boolean {
   return Boolean(offers.price || offers.priceSpecification?.price);
 }
 
+function hasEligibleProductSignals(productData?: ProductData): boolean {
+  if (!productData) return false;
+  return Boolean(
+    hasOfferPrice(productData.offers) || productData.aggregateRating
+  );
+}
+
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function SEO({
@@ -78,7 +85,7 @@ export default function SEO({
   const canonicalHref  = canonicalUrl ? abs(canonicalUrl) : undefined;
   const ogImage        = productData ? abs(productData.image) : undefined;
 
-  const jsonLd = productData
+  const jsonLd = productData && hasEligibleProductSignals(productData)
     ? {
         "@context": "https://schema.org",
         "@type":    "Product",
