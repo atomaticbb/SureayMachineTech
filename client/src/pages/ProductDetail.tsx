@@ -83,11 +83,6 @@ export default function ProductDetail() {
           sku:         blade.id,
           mpn:         blade.id,
           brand:       "Sureay Industrial Blades",
-          offers: {
-            url:          `https://www.sureay.com/products/${blade.id}`,
-            availability: "https://schema.org/InStock",
-            itemCondition:"https://schema.org/NewCondition",
-          },
         }}
       />
 

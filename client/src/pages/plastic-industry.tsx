@@ -113,13 +113,6 @@ const PAGE_SCHEMA = {
         description: "Heavy-duty D2 and M2 HSS single-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://www.sureay.com/products/shredder-blades",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
@@ -139,13 +132,6 @@ const PAGE_SCHEMA = {
         description: "High-wear Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and pelletizing extrusion lines.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://www.sureay.com/products/granulator-blades",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",

@@ -115,13 +115,6 @@ const PAGE_SCHEMA = {
         description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://www.sureay.com/products/tissue-log-saw-blades",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",

@@ -16,6 +16,9 @@ export interface ProductData {
     url?:             string;
     priceCurrency?:   string;
     price?:           string;
+    priceSpecification?: {
+      price?: string;
+    };
     priceValidUntil?: string;
     availability?:    string;
     itemCondition?:   string;
@@ -55,6 +58,11 @@ function safeJson(value: unknown): string {
   return JSON.stringify(value).replace(/</g, "\\u003c");
 }
 
+function hasOfferPrice(offers?: ProductData["offers"]): boolean {
+  if (!offers) return false;
+  return Boolean(offers.price || offers.priceSpecification?.price);
+}
+
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function SEO({
@@ -83,7 +91,7 @@ export default function SEO({
           "@type": "Brand",
           name:    productData.brand ?? "Sureay",
         },
-        ...(productData.offers && {
+        ...(hasOfferPrice(productData.offers) && {
           offers: { "@type": "Offer", ...productData.offers },
         }),
         ...(productData.aggregateRating && {

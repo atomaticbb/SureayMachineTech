@@ -31,6 +31,7 @@ export interface ProductSchema {
     "@type": string;
     availability: string;
     priceCurrency?: string;
+    price?: string;
     url: string;
   };
   aggregateRating?: {
@@ -67,12 +68,6 @@ export function generateProductSchema(blade: Blade): ProductSchema {
       },
     },
     image: blade.gallery?.map((img) => `${baseUrl}${img}`) || [`${baseUrl}${blade.image}`],
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      priceCurrency: "USD",
-      url: `${baseUrl}${blade.link}`,
-    },
   };
 }
 

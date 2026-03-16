@@ -115,13 +115,6 @@ const PAGE_SCHEMA = {
         description: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://www.sureay.com/products/rotary-cutter-blades",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
@@ -141,13 +134,6 @@ const PAGE_SCHEMA = {
         description: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://www.sureay.com/products/alloy-blades",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
-          itemCondition: "https://schema.org/NewCondition",
-        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
