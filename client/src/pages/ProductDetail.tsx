@@ -30,6 +30,7 @@ import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
+import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
 import TrustProtocol from "@/components/product-detail/TrustProtocol";
 import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 
@@ -116,11 +117,18 @@ export default function ProductDetail() {
             <div className="-mx-6 sm:-mx-8">
               <ComprehensiveData blade={blade} />
             </div>
+            
+            {/* Inline CTA after dimensions + key specs */}
+            <div className="-mx-6 sm:-mx-8">
+              <InlineRFQPrompt />
+            </div>
 
             {/* Zone 3 — Decisive Specifications: image combination + spec table */}
             <div className="-mx-6 sm:-mx-8">
               <DecisiveSpecs blade={blade} />
             </div>
+
+
 
             {/* Zone 4 — Technical Audit Log */}
             <div className="-mx-6 sm:-mx-8 pt-8">

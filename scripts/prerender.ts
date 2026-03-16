@@ -16,6 +16,7 @@ import { fileURLToPath }           from "url";
 
 // tsx resolves .ts imports at runtime — no compilation step needed
 import { blades } from "../client/src/data/blades.ts";
+import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 
 const __dirname   = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR    = path.resolve(__dirname, "../dist/public");
@@ -31,12 +32,14 @@ const ROUTES: string[] = [
   "/products",
   "/about",
   "/contact",
-  "/industry/plastics-recycling",
-  "/industry/metal-processing",
-  "/industry/paper-tissue",
+  "/plastic-industry",
+  "/metal-industry",
+  "/paper-industry",
   "/news",
   // dynamic product pages — derived from static blade data
   ...blades.map((b) => `/products/${b.id}`),
+  // dynamic news detail pages — derived from static article data
+  ...ALL_DISPATCHES.map((a) => `/news/${a.id}`),
 ];
 
 // ── MIME types (no extra dependency) ──────────────────────────────────────────

@@ -89,7 +89,7 @@ export function createApp({
   app.use("/", seoRouter);
 
   if (staticPath) {
-    app.use(express.static(staticPath));
+    app.use(express.static(staticPath, { redirect: false }));
   }
 
   if (enableSpaFallback && staticPath) {
