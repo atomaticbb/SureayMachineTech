@@ -89,7 +89,22 @@ export function createApp({
   app.use("/", seoRouter);
 
   if (staticPath) {
+    // Serve all static assets (JS, CSS, images, root index.html, paths with
+    // trailing slash that already have index.html). redirect:false prevents
+    // 301 trailing-slash redirects that cause Google crawl loops.
     app.use(express.static(staticPath, { redirect: false }));
+
+    // Probe for a prerendered index.html for clean paths that lack a trailing
+    // slash (e.g. /products/shredder-blades → .../shredder-blades/index.html).
+    // express.static never serves directory index files without a redirect when
+    // redirect:false is set, so we resolve them here before the SPA fallback.
+    app.use((req, res, next) => {
+      if (req.method !== "GET" && req.method !== "HEAD") return next();
+      const probe = path.join(staticPath, req.path, "index.html");
+      res.sendFile(probe, (err) => {
+        if (err) next();
+      });
+    });
   }
 
   if (enableSpaFallback && staticPath) {

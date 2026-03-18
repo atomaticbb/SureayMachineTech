@@ -10,7 +10,7 @@ import {
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 export const STATS = [
-  { icon: Clock,          value: 15,    suffix: "+", label: "Years in Blade Manufacturing", sub: "Est. 2008" },
+  { icon: Clock,          value: 15,    suffix: "+", label: "Years Blade Manufacturing",   sub: "Est. 2008" },
   { icon: PenTool,        value: 10000, suffix: "+", label: "Blade Designs Delivered",     sub: "Custom Variants" },
   { icon: Globe2,         value: 50,    suffix: "+", label: "Countries Served",             sub: "Global Shipments" },
   { icon: HeadphonesIcon, value: 98,    suffix: "%", label: "Repeat Client Retention",      sub: "Long-Term Supply" },

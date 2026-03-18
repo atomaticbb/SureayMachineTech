@@ -58,18 +58,6 @@ function safeJson(value: unknown): string {
   return JSON.stringify(value).replace(/</g, "\\u003c");
 }
 
-function hasOfferPrice(offers?: ProductData["offers"]): boolean {
-  if (!offers) return false;
-  return Boolean(offers.price || offers.priceSpecification?.price);
-}
-
-function hasEligibleProductSignals(productData?: ProductData): boolean {
-  if (!productData) return false;
-  return Boolean(
-    hasOfferPrice(productData.offers) || productData.aggregateRating
-  );
-}
-
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function SEO({
@@ -85,7 +73,7 @@ export default function SEO({
   const canonicalHref  = canonicalUrl ? abs(canonicalUrl) : undefined;
   const ogImage        = productData ? abs(productData.image) : undefined;
 
-  const jsonLd = productData && hasEligibleProductSignals(productData)
+  const jsonLd = productData
     ? {
         "@context": "https://schema.org",
         "@type":    "Product",
@@ -98,7 +86,7 @@ export default function SEO({
           "@type": "Brand",
           name:    productData.brand ?? "Sureay",
         },
-        ...(hasOfferPrice(productData.offers) && {
+        ...(productData.offers && {
           offers: { "@type": "Offer", ...productData.offers },
         }),
         ...(productData.aggregateRating && {

@@ -1,185 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ── Core Pages ───────────────────────────────────────────────────────── -->
+  <!-- Core Pages -->
   <url>
     <loc>https://www.sureay.com/</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/products</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/about</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/contact</loc>
-    <lastmod>2026-03-11</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- ── Product Detail Pages ─────────────────────────────────────────────── -->
-  <url>
-    <loc>https://www.sureay.com/products/rotary-slitter-knives</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/shredder-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/tissue-log-saw-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/granulator-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/paper-cutting-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/single-shaft-shredder-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/metal-coil-slitting-knives</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/metal-shear-blades</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.sureay.com/products/three-knife-trimmer-blades</loc>
-    <lastmod>2026-03-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- ── Industry Landing Pages ───────────────────────────────────────────── -->
+  <!-- Industry Landing Pages -->
   <url>
     <loc>https://www.sureay.com/plastic-industry</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/metal-industry</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/paper-industry</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ── News & Dispatches ─────────────────────────────────────────────────── -->
+  <!-- Product Detail Pages -->
+  <url>
+    <loc>https://www.sureay.com/products/rotary-slitter-knives</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/shredder-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/tissue-log-saw-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/granulator-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/paper-cutting-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/single-shaft-shredder-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/metal-coil-slitting-knives</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/metal-shear-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.sureay.com/products/three-knife-trimmer-blades</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- News -->
   <url>
     <loc>https://www.sureay.com/news</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/d2-vs-skd11-vs-tungsten-carbide</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <url>
-    <loc>https://www.sureay.com/news/high-hardness-metal-shear-guide</loc>
-    <lastmod>2026-03-11</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
-
   <url>
     <loc>https://www.sureay.com/news/facility-expansion-phase-iii</loc>
     <lastmod>2024-10-24</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
+  <url>
+    <loc>https://www.sureay.com/news/high-hardness-metal-shear-guide</loc>
+    <lastmod>2026-03-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://www.sureay.com/news/cryogenic-treatment-alloy-blades</loc>
     <lastmod>2024-09-12</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/k-show-2024-recycling-knives</loc>
     <lastmod>2024-08-05</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/tin-vs-chrome-coating</loc>
     <lastmod>2024-07-28</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/iso-9001-recertification-2024</loc>
     <lastmod>2024-06-14</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/log-saw-blade-bevel-angles</loc>
     <lastmod>2024-05-02</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>
-
   <url>
     <loc>https://www.sureay.com/news/chinaplas-2024-oem-partnerships</loc>
     <lastmod>2024-04-18</lastmod>

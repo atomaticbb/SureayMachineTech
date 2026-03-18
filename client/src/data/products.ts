@@ -19,13 +19,14 @@ import { blades, type Blade, type BladeCategoryType } from "./blades";
 // Maps BladeCategoryType (snake_case in blades.ts) to
 // ProductSubCategory (kebab-case in @shared/types/product).
 const BLADE_SUBCATEGORY_MAP: Record<BladeCategoryType, ProductSubCategory> = {
-  alloy_blades:         "alloy-blades",
-  rotary_blades:        "large-rotary-blades",
-  shredder_blades:      "shredder-blades",
-  tissue_paper_blades:  "tissue-paper-blades",
+  alloy_blades: "alloy-blades",
+  rotary_blades: "large-rotary-blades",
+  shredder_blades: "shredder-blades",
+  tissue_paper_blades: "tissue-paper-blades",
   paper_cutting_blades: "paper-cutting-blades",
-  granulator_blades:    "production-line-blades",
-  other_blades:         "shaped-custom-blades",
+  granulator_blades: "production-line-blades",
+  metal_cutting_blades: "alloy-blades",
+  other_blades: "shaped-custom-blades",
 };
 
 // ─── Adapter ───────────────────────────────────────────────────────────────────
