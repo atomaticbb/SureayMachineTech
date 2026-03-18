@@ -151,7 +151,7 @@ export default function About() {
 
           {/* Left — Solid Text Panel */}
           <motion.div
-            className="flex flex-col px-8 sm:px-12 lg:px-20 py-16 bg-white lg:w-[42%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200 overflow-visible"
+            className="flex flex-col px-5 sm:px-10 lg:px-20 py-10 lg:py-16 bg-white lg:w-[42%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200 overflow-visible"
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease: [0.25, 0.1, 0.25, 1] }}
@@ -163,7 +163,7 @@ export default function About() {
                 About Sureay Machinery
               </p>
 
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-[#001f4d] leading-none tracking-tight uppercase mb-8">
+              <h1 className="text-[clamp(2rem,7vw,4.5rem)] font-black text-[#001f4d] leading-none tracking-tight uppercase mb-8">
                 Engineering<br />Blade<br />Excellence
               </h1>
 
@@ -212,7 +212,7 @@ export default function About() {
                 <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-slate-400">
                   {s.sub}
                 </p>
-                <p className="text-5xl md:text-6xl font-black text-[#001f4d] leading-none tracking-tight">
+                <p className="text-[clamp(2.25rem,7vw,3.75rem)] font-black text-[#001f4d] leading-none tracking-tight">
                   <CountUp to={s.to} suffix={s.suffix} />
                 </p>
                 <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-500 mt-0.5">

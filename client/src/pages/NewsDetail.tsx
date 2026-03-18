@@ -61,7 +61,7 @@ export default function NewsDetail() {
           <div className="lg:grid lg:grid-cols-2">
 
             {/* ── Left: Ledger Panel ─────────────────────────────────────── */}
-            <div className="lg:border-r border-slate-200 border-b lg:border-b-0 p-10 lg:p-16 flex flex-col justify-between">
+            <div className="lg:border-r border-slate-200 border-b lg:border-b-0 p-6 lg:p-16 flex flex-col justify-between">
 
               {/* Top: back-nav + metadata */}
               <div>
@@ -92,7 +92,7 @@ export default function NewsDetail() {
 
               {/* Middle: title + summary */}
               <div className="flex-1 flex flex-col justify-center py-8">
-                <h1 className="text-4xl lg:text-5xl font-black text-[#001f4d] uppercase leading-[1.1] tracking-tight mb-8">
+                <h1 className="text-[clamp(1.75rem,5vw,3rem)] font-black text-[#001f4d] uppercase leading-[1.1] tracking-tight mb-8">
                   {article.title}
                 </h1>
 

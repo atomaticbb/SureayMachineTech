@@ -62,7 +62,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
 
         {/* Main image area — zoom in-place on hover */}
         <div
-          className="h-[400px] bg-slate-100 flex items-center justify-center relative overflow-hidden"
+          className="h-[260px] sm:h-[360px] md:h-[400px] bg-slate-100 flex items-center justify-center relative overflow-hidden"
           style={{ ...DOT_GRID_STYLE, cursor: "zoom-in" }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}

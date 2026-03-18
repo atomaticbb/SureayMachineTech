@@ -101,10 +101,10 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
   }
 
   return (
-    <section className="py-20 lg:py-24 bg-white">
+    <section className="py-10 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
-          <div className="mb-12">
+          <div className="mb-8 lg:mb-12">
             <p className="text-slate-500 font-bold text-sm uppercase tracking-[0.3em] mb-2">
               Reach Our Team
             </p>

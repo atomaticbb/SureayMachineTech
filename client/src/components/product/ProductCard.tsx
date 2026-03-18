@@ -88,7 +88,7 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
 
             {/* Specs Grid */}
             {blade.specs && blade.specs.length > 0 && (
-              <div className="grid grid-cols-4 gap-x-4 pt-4 border-t border-slate-100">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
                 {blade.specs.slice(0, 4).map((spec, i) => (
                   <div key={i}>
                     <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">

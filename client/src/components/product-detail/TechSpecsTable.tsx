@@ -68,7 +68,7 @@ export default function TechSpecsTable({ machineName, categories }: TechSpecsTab
               {Object.entries(activeCategory.specs).map(([key, value], index) => (
                 <div
                   key={key}
-                  className={`flex justify-between px-8 py-4 transition-colors ${
+                  className={`flex flex-col sm:flex-row sm:justify-between px-4 sm:px-8 py-3 gap-1 transition-colors ${
                     index % 2 === 0 ? 'bg-white dark:bg-slate-900' : 'bg-slate-50 dark:bg-slate-800/50'
                   } hover:bg-slate-100 dark:hover:bg-slate-700/50`}
                 >

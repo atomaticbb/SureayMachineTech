@@ -24,7 +24,7 @@ export default function HomeHero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-[42px] font-black text-white leading-[1.05] mb-6 tracking-tight">
+          <h1 className="text-[clamp(1.75rem,6vw,2.75rem)] font-black text-white leading-[1.05] mb-6 tracking-tight">
             Precision Industrial Blades &amp; Recycling Solutions
           </h1>
 
@@ -37,12 +37,12 @@ export default function HomeHero() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4">
             <Link href="/contact">
-              <button className="bg-white text-[#003366] hover:bg-[#003366] hover:text-white px-9 py-3.5 font-black text-sm uppercase tracking-widest transition-all duration-300 shadow-xl rounded-none">
+              <button className="bg-white text-[#003366] hover:bg-[#003366] hover:text-white px-7 sm:px-9 py-3.5 min-h-[44px] font-black text-sm uppercase tracking-widest transition-all duration-300 shadow-xl rounded-none">
                 Get a Quote
               </button>
             </Link>
             <Link href="/products">
-              <button className="bg-transparent text-white border-2 border-white/60 hover:bg-white hover:text-[#003366] hover:border-white px-9 py-3.5 font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none">
+              <button className="bg-transparent text-white border-2 border-white/60 hover:bg-white hover:text-[#003366] hover:border-white px-7 sm:px-9 py-3.5 min-h-[44px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none">
                 View Our Products
               </button>
             </Link>

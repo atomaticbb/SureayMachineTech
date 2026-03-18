@@ -35,30 +35,25 @@ const PRODUCT_GROUPS = [
   {
     group: "CUTTING TOOLING",
     items: [
-      { label: "Circular Slitting Knives", href: "/products" },
-      { label: "Rotary Blades",            href: "/products" },
-      { label: "Alloy Steel Blades",       href: "/products" },
+      { label: "Circular Slitting Knives", href: "/products/rotary-slitter-knives"    },
+      { label: "Rotary Metal Slitters",    href: "/products/metal-coil-slitting-knives" },
+      { label: "Alloy Steel Blades",       href: "/products/metal-shear-blades"       },
     ],
   },
   {
     group: "SHREDDING & RECYCLING",
     items: [
-      { label: "Shredder Blades",   href: "/products" },
-      { label: "Granulator Knives", href: "/products" },
+      { label: "Shredder Blades",          href: "/products/shredder-blades"          },
+      { label: "Granulator Knives",        href: "/products/granulator-blades"        },
+      { label: "Single-Shaft Shredder",    href: "/products/single-shaft-shredder-blades" },
     ],
   },
   {
     group: "PAPER CONVERTING",
     items: [
-      { label: "Tissue Log Saw Blades", href: "/products" },
-      { label: "Paper Cutting Blades",  href: "/products" },
-    ],
-  },
-  {
-    group: "CUSTOM ENGINEERING",
-    items: [
-      { label: "Tungsten Carbide Parts", href: "/products" },
-      { label: "OEM Tooling Solutions",  href: "/contact"         },
+      { label: "Tissue Log Saw Blades",    href: "/products/tissue-log-saw-blades"    },
+      { label: "Paper Cutting Blades",     href: "/products/paper-cutting-blades"     },
+      { label: "Three-Knife Trimmer",      href: "/products/three-knife-trimmer-blades" },
     ],
   },
 ];
@@ -401,7 +396,7 @@ export default function Navbar() {
 
             {/* ── Mobile toggle ──────────────────────────────────────────── */}
             <button
-              className="md:hidden text-slate-700 hover:text-[#003366] transition-colors p-1"
+              className="md:hidden text-slate-700 hover:text-[#003366] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               onClick={() => setMobileOpen((v) => !v)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >

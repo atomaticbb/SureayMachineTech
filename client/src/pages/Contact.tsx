@@ -153,13 +153,13 @@ export default function Contact() {
           1. THE AUTHORITY HERO
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="bg-white pt-[48px]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-4 lg:pt-28 lg:pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-4 lg:pt-28 lg:pb-12">
 
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-8">
             [ INITIATE ENGINEERING INQUIRY ]
           </p>
 
-          <h1 className="text-5xl lg:text-7xl font-black text-[#001f4d] uppercase tracking-tight leading-[1.0] mb-4 max-w-4xl">
+          <h1 className="text-[clamp(2rem,7vw,4.5rem)] font-black text-[#001f4d] uppercase tracking-tight leading-[1.0] mb-4 max-w-4xl">
             Partner With Sureay Engineering
           </h1>
 
@@ -391,7 +391,7 @@ export default function Contact() {
                   const el = e.currentTarget as HTMLAnchorElement;
                   window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
                 }}
-                className="block text-2xl lg:text-3xl font-black text-white uppercase tracking-tight leading-none whitespace-nowrap hover:text-white/70 transition-colors cursor-pointer"
+                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none break-all hover:text-white/70 transition-colors cursor-pointer"
               >
                 <span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>
                   moc.yaerus@nnyl
@@ -408,7 +408,7 @@ export default function Contact() {
                 href="https://wa.me/8615655530829?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-2xl lg:text-3xl font-black text-white uppercase tracking-tight leading-none whitespace-nowrap hover:text-white/70 transition-colors"
+                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none hover:text-white/70 transition-colors"
               >
                 +86 156-5553-0829
               </a>

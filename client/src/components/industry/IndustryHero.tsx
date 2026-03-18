@@ -36,11 +36,11 @@ interface Props {
 export default function IndustryHero({ data }: Props) {
   return (
     <section className="bg-[#0b1622] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-10 sm:px-12 lg:px-14">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-[1.12fr_auto] gap-0">
 
           {/* ── Left — Copy block ── */}
-          <div className="flex flex-col justify-between py-20 lg:py-42 pl-2 sm:pl-4 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
+          <div className="flex flex-col justify-between py-10 lg:py-24 pl-0 sm:pl-2 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
             <div>
 
               <p className="font-bold text-xs text-white/40 uppercase tracking-[0.45em] mb-8">

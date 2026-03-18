@@ -9,7 +9,7 @@ import type { IndustryNarrative, IndustrySpec } from "./types";
 // ── Renders one spec cell ─────────────────────────────────────────────────────
 function SpecCell({ spec }: { spec: IndustrySpec }) {
   return (
-    <div className="border-b border-r border-slate-200 p-8 lg:p-10 flex flex-col justify-between min-h-[220px] hover:bg-slate-50 transition-colors duration-300">
+    <div className="border-b border-r border-slate-200 p-5 sm:p-7 lg:p-10 flex flex-col justify-between min-h-[180px] lg:min-h-[220px] hover:bg-slate-50 transition-colors duration-300">
       <span className="block text-[10.5px] font-black text-slate-400 uppercase tracking-[0.3em]">
         {spec.label}
       </span>

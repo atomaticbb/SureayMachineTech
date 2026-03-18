@@ -61,11 +61,11 @@ export default function CorporateDispatches() {
             </div>
 
             {/* Right: Featured Content */}
-            <div className="lg:w-[40%] bg-[#001f4d] text-white p-10 lg:p-16 flex flex-col justify-center">
+            <div className="lg:w-[40%] bg-[#001f4d] text-white p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
               <p className="font-mono text-[10px] text-cyan-400 tracking-[0.25em] uppercase mb-4">
                 {featured.tag}
               </p>
-              <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight leading-[1.05] mb-6">
+              <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black uppercase tracking-tight leading-[1.05] mb-6">
                 {featured.title}
               </h1>
               <p className="text-white/70 text-sm leading-relaxed mb-10 max-w-md">

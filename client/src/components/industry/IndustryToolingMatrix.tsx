@@ -39,7 +39,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
   };
 
   return (
-    <section id="tooling-matrix" className="bg-slate-50 py-20 lg:py-28">
+    <section id="tooling-matrix" className="bg-slate-50 py-12 lg:py-28">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
         {/* Section header */}
