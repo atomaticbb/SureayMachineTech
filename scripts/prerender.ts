@@ -182,16 +182,38 @@ async function main(): Promise<void> {
 
   const server  = await startStaticServer();
   const browser = await puppeteer.launch({
-    headless: true,
+    // 'shell' uses legacy headless mode — lighter weight, better compatibility
+    // with Docker-in-Docker (DinD) environments where kernel capabilities are
+    // restricted. The new headless mode (headless: true) requires more system
+    // resources that may not be available in Coolify/DinD build contexts.
+    headless: 'shell',
     // pipe:true uses IPC pipe instead of WebSocket for CDP — avoids ECONNRESET
     // crashes that occur in Docker build layers where the kernel restricts
     // unprivileged WebSocket connections to spawned child processes.
     pipe: true,
     args: [
-      "--no-sandbox",            // required inside Docker / rootless containers
+      "--no-sandbox",                  // required inside Docker / rootless
       "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage", // prevents crashes when /dev/shm is small (CI)
+      "--disable-dev-shm-usage",       // use disk instead of /dev/shm
       "--disable-gpu",
+      "--disable-software-rasterizer", // no software GL rasterization
+      "--disable-extensions",
+      "--disable-background-networking",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-renderer-backgrounding",
+      "--disable-hang-monitor",
+      "--disable-ipc-flooding-protection",
+      "--disable-popup-blocking",
+      "--disable-prompt-on-repost",
+      "--disable-breakpad",
+      "--disable-sync",
+      "--disable-translate",
+      "--metrics-recording-only",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--mute-audio",
+      "--hide-scrollbars",
     ],
   });
 
