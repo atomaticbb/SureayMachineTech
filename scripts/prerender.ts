@@ -183,11 +183,17 @@ async function main(): Promise<void> {
   const server  = await startStaticServer();
   const browser = await puppeteer.launch({
     headless: true,
+    // pipe:true uses IPC pipe instead of WebSocket for CDP — avoids ECONNRESET
+    // crashes that occur in Docker build layers where the kernel restricts
+    // unprivileged WebSocket connections to spawned child processes.
+    pipe: true,
     args: [
-      "--no-sandbox",           // required inside Docker / rootless containers
+      "--no-sandbox",            // required inside Docker / rootless containers
       "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",// prevents crashes when /dev/shm is small (CI)
+      "--disable-dev-shm-usage", // prevents crashes when /dev/shm is small (CI)
       "--disable-gpu",
+      "--no-zygote",             // skip zygote process — required when pipe:true
+      "--single-process",        // run renderer in same process; stable in build layers
     ],
   });
 
