@@ -192,8 +192,6 @@ async function main(): Promise<void> {
       "--disable-setuid-sandbox",
       "--disable-dev-shm-usage", // prevents crashes when /dev/shm is small (CI)
       "--disable-gpu",
-      "--no-zygote",             // skip zygote process — required when pipe:true
-      "--single-process",        // run renderer in same process; stable in build layers
     ],
   });
 

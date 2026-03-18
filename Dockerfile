@@ -35,7 +35,10 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 
 # Generate Prisma client and build
-RUN pnpm db:generate && pnpm build:full
+# --mount=type=tmpfs gives Chromium a proper /dev/shm (Docker build layers
+# restrict the kernel's shared-memory device which causes Chrome to crash).
+RUN --mount=type=tmpfs,target=/dev/shm \
+    pnpm db:generate && pnpm build:full
 
 # ===================================
 # Stage 2: Production
