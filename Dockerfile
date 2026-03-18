@@ -42,7 +42,8 @@ COPY prisma ./prisma
 RUN pnpm install --frozen-lockfile
 
 # Manually install Chrome for Puppeteer (pnpm blocks postinstall scripts by default)
-RUN npx puppeteer browsers install chrome
+# Use pnpm exec to ensure we use the project's puppeteer version
+RUN pnpm exec puppeteer browsers install chrome
 
 # Copy rest of source code
 COPY . .
