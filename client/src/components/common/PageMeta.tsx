@@ -9,7 +9,7 @@ interface PageMetaProps {
   title:       string;
   description: string;
   image?:      string;
-  schema?:     { name: string; image: string | string[]; description: string; sku?: string; mpn?: string; brand: { "@type": string; name: string }; offers?: { "@type": string; url?: string; priceCurrency: string; price?: string; priceValidUntil?: string; availability: string; itemCondition?: string }; aggregateRating?: { "@type": string; ratingValue: string | number; ratingCount: string | number; bestRating?: string | number; worstRating?: string | number } } | null;
+  schema?:     { name: string; image: string | string[]; description: string; sku?: string; mpn?: string; brand: { "@type": string; name: string } } | null;
   siteName?:   string;
 }
 
@@ -22,24 +22,6 @@ export default function PageMeta({ title, description, image, schema }: PageMeta
         sku:         schema.sku,
         mpn:         schema.mpn,
         brand:       schema.brand.name,
-        offers:      schema.offers
-          ? {
-              url:             schema.offers.url,
-              priceCurrency:   schema.offers.priceCurrency,
-              price:           schema.offers.price,
-              priceValidUntil: schema.offers.priceValidUntil,
-              availability:    schema.offers.availability,
-              itemCondition:   schema.offers.itemCondition,
-            }
-          : undefined,
-        aggregateRating: schema.aggregateRating
-          ? {
-              ratingValue:  schema.aggregateRating.ratingValue,
-              ratingCount:  schema.aggregateRating.ratingCount,
-              bestRating:   schema.aggregateRating.bestRating,
-              worstRating:  schema.aggregateRating.worstRating,
-            }
-          : undefined,
       }
     : undefined;
 

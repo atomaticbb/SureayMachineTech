@@ -12,22 +12,10 @@ export interface ProductData {
   sku?:        string;
   mpn?:        string;
   brand?:      string;   // defaults to "Sureay"
-  offers?: {
-    url?:             string;
-    priceCurrency?:   string;
-    price?:           string;
-    priceSpecification?: {
-      price?: string;
-    };
-    priceValidUntil?: string;
-    availability?:    string;
-    itemCondition?:   string;
-  };
-  aggregateRating?: {
-    ratingValue:  string | number;
-    ratingCount:  string | number;
-    bestRating?:  string | number;
-    worstRating?: string | number;
+  review?: {
+    authorName:  string;         // B2B company name
+    reviewBody:  string;
+    ratingValue: string | number; // typically "5"
   };
 }
 
@@ -86,11 +74,20 @@ export default function SEO({
           "@type": "Brand",
           name:    productData.brand ?? "Sureay",
         },
-        ...(productData.offers && {
-          offers: { "@type": "Offer", ...productData.offers },
-        }),
-        ...(productData.aggregateRating && {
-          aggregateRating: { "@type": "AggregateRating", ...productData.aggregateRating },
+        ...(productData.review && {
+          review: {
+            "@type": "Review",
+            reviewRating: {
+              "@type":      "Rating",
+              ratingValue:  productData.review.ratingValue,
+              bestRating:   "5",
+            },
+            author: {
+              "@type": "Organization",
+              name:    productData.review.authorName,
+            },
+            reviewBody: productData.review.reviewBody,
+          },
         }),
       }
     : null;
