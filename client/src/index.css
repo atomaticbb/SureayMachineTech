@@ -334,3 +334,14 @@
   background-size: 200% 100%;
   animation: metal-shimmer 3s linear infinite;
 }
+
+/* ── Image protection ─────────────────────────────────────────────────────────
+   Prevents casual drag-and-drop theft and text-selection of image alt content.
+   For full right-click / drag blocking on individual <img> elements, also add:
+     onContextMenu={e => e.preventDefault()}
+     draggable={false}
+   ────────────────────────────────────────────────────────────────────────── */
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}

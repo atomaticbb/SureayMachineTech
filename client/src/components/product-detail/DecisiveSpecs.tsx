@@ -40,9 +40,9 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-stretch">
 
         {/* Left — product image */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 h-full">
           <div
-            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
+            className="w-full h-full min-h-[280px] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
             style={DOT_GRID_STYLE}
           >
             <img
@@ -71,7 +71,7 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
                     >
                       {spec.label}
                     </th>
-                    <td className="px-6 py-3.5 text-sm font-bold text-[#001f4d]">
+                    <td className="px-6 py-3.5 text-[16px] font-bold text-[#001f4d]">
                       {spec.value}
                     </td>
                   </tr>

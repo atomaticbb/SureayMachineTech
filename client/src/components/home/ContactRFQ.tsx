@@ -101,23 +101,23 @@ export default function ContactRFQ({ productName }: { productName?: string } = {
   }
 
   return (
-    <section className="py-10 lg:py-24 bg-white">
+    <section id="contact" className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
-          <div className="mb-8 lg:mb-12">
-            <p className="text-slate-500 font-bold text-sm uppercase tracking-[0.3em] mb-2">
+          <div className="mb-10 lg:mb-14">
+            <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
               Reach Our Team
             </p>
-            <h2 className="font-black text-3xl md:text-4xl text-[#003366] uppercase tracking-tight leading-[1.05]">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#003366] uppercase tracking-tight leading-[1.05]">
               Get in Touch with Our Engineers
             </h2>
-            <div className="w-16 h-[3px] bg-slate-300 mt-4" />
+            <div className="w-16 h-[3px] bg-slate-300 mt-5" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
 
             {/* Left: Contact channels */}
-            <div className="flex flex-col gap-5 py-8">
+            <div className="flex flex-col gap-6 py-10">
               <div>
                 <h3 className="font-black text-2xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">Contact Our Team</h3>
                 <p className="text-sm text-slate-600">Discuss your requirements directly with our engineers.</p>

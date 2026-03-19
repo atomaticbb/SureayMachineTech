@@ -59,9 +59,29 @@ const FACTORY_IMAGES = [
 
 export default function BladeListPage() {
   const [selectedCategory, setSelectedCategory] = useState<BladeCategoryType | "all">("all");
+  const [filterOpen, setFilterOpen] = useState<boolean>(false);
   const [sortOrder, setSortOrder] = useState<"featured" | "az">("featured");
+  const [filterTop, setFilterTop] = useState(74);
   const listSectionRef = useRef<HTMLElement | null>(null);
   const didMountRef = useRef<boolean>(false);
+  const filterScrollRef = useRef(0);
+
+  // Mirror navbar hide/show logic so filter bar tracks navbar position
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      if (y < 10) {
+        setFilterTop(74);
+      } else if (y > filterScrollRef.current + 4) {
+        setFilterTop(0);
+      } else if (y < filterScrollRef.current - 4) {
+        setFilterTop(74);
+      }
+      filterScrollRef.current = y;
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const filteredBlades = blades.filter((b) =>
     selectedCategory === "all" ? true : b.category === selectedCategory
@@ -159,178 +179,119 @@ export default function BladeListPage() {
       </div>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          ZONE 2 + 3 — Index Sidebar + Archive Matrix
+          ZONE 2 + 3 — Filter Bar + Full-Width Product Grid
       ═══════════════════════════════════════════════════════════════════ */}
-      <section id="products" ref={listSectionRef} className="border-b border-slate-200">
-        <div className="lg:grid lg:grid-cols-12">
 
-          {/* ── LEFT: Sidebar Filter ─────────────────────────────────────── */}
-          <aside className="lg:col-span-3 border-b lg:border-b-0 lg:border-r border-slate-200">
+      {/* ── Sticky wrapper: bar + panel track navbar show/hide ────────── */}
+      <div
+        className="sticky z-30 transition-[top] duration-300 ease-in-out"
+        style={{ top: filterTop }}
+      >
 
-            {/* ── MOBILE: Horizontal Scrollable Strip ──────────────────────── */}
-            <div className="lg:hidden border-b border-slate-200">
-              <div className="px-6 pt-4 pb-2">
-                <p className="font-mono text-[11px] text-slate-400 tracking-[0.35em] uppercase">
-                  [ FILTER BY APPLICATION ]
+        {/* Filter / Sort Bar */}
+        <div className="bg-white border-b border-slate-200">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <div className="flex items-center justify-between py-3 gap-4">
+
+              <button
+                onClick={() => setFilterOpen((o) => !o)}
+                className={`inline-flex items-center gap-2 font-mono text-[12px] font-bold tracking-[0.2em] uppercase border px-4 py-2 transition-colors ${
+                  filterOpen || selectedCategory !== "all"
+                    ? "bg-[#001f4d] text-white border-[#001f4d]"
+                    : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
+                }`}
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6h18M7 12h10M11 18h2" />
+                </svg>
+                Filter
+                {selectedCategory !== "all" && (
+                  <span className="bg-white text-[#001f4d] text-[10px] font-black px-1.5 py-0.5 leading-none">1</span>
+                )}
+                <svg className={`w-3 h-3 transition-transform duration-200 ${filterOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div className="flex items-center gap-5">
+                <p className="font-mono text-[11px] text-slate-400 tracking-[0.3em] uppercase hidden sm:block">
+                  {filteredBlades.length} Product{filteredBlades.length !== 1 ? "s" : ""}
                 </p>
+                <select
+                  value={sortOrder}
+                  onChange={(e) => setSortOrder(e.target.value as "featured" | "az")}
+                  className="font-mono text-[11px] text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
+                >
+                  <option value="featured">Sort: Featured</option>
+                  <option value="az">Sort: A → Z</option>
+                </select>
               </div>
-              <div className="flex overflow-x-auto snap-x gap-2 px-6 pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-                {FILTER_GROUPS.flatMap((g) => g.items).map((item) => {
-                  const count =
-                    item.value === "all"
-                      ? blades.length
-                      : blades.filter((b) => b.category === item.value).length;
-                  if (item.value !== "all" && count === 0) return null;
-                  const isActive = selectedCategory === item.value;
-                  return (
-                    <button
-                      key={item.value}
-                      onClick={() => {
-                        setSelectedCategory(item.value);
-                        if (item.value !== "all") {
-                          gtagEvent("view_item_list", {
-                            event_category: "blade_filter",
-                            item_list_name: item.label,
-                            blade_category: item.value,
-                          });
-                        }
-                      }}
-                      className={`snap-start flex-shrink-0 px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase whitespace-nowrap border transition-none ${
-                        isActive
-                          ? "bg-[#001f4d] text-white border-[#001f4d]"
-                          : "bg-white text-slate-500 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
-                      }`}
-                    >
-                      {item.label}
-                      <span className={`ml-2 text-[11px] font-black ${isActive ? "text-white/50" : "text-slate-300"}`}>
-                        {count}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-              {selectedCategory !== "all" && (
-                <div className="px-6 pb-3">
+
+            </div>
+          </div>
+        </div>
+
+        {/* Collapsible Filter Panel — inside sticky so always visible */}
+        <div className={`overflow-hidden transition-all duration-300 bg-slate-50 border-b border-slate-200 ${filterOpen ? "max-h-[300px]" : "max-h-0"}`}>
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
+            <div className="flex flex-wrap gap-2 items-center">
+              {FILTER_GROUPS.flatMap((g) => g.items).map((item) => {
+                const count =
+                  item.value === "all"
+                    ? blades.length
+                    : blades.filter((b) => b.category === item.value).length;
+                if (item.value !== "all" && count === 0) return null;
+                const isActive = selectedCategory === item.value;
+                return (
                   <button
-                    onClick={() => setSelectedCategory("all")}
-                    className="font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors"
+                    key={item.value}
+                    onClick={() => {
+                      setSelectedCategory(item.value);
+                      setFilterOpen(false);
+                      if (item.value !== "all") {
+                        gtagEvent("view_item_list", {
+                          event_category: "blade_filter",
+                          item_list_name: item.label,
+                          blade_category: item.value,
+                        });
+                      }
+                    }}
+                    className={`px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase border transition-none ${
+                      isActive
+                        ? "bg-[#001f4d] text-white border-[#001f4d]"
+                        : "bg-white text-slate-500 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
+                    }`}
                   >
-                    [ CLEAR FILTER × ]
+                    {item.label}
+                    <span className={`ml-2 text-[11px] font-black ${isActive ? "text-white/50" : "text-slate-300"}`}>
+                      {count}
+                    </span>
                   </button>
-                </div>
+                );
+              })}
+              {/* Clear filter — inline with chips */}
+              {selectedCategory !== "all" && (
+                <button
+                  onClick={() => { setSelectedCategory("all"); setFilterOpen(false); }}
+                  className="px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase border border-dashed border-slate-300 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] inline-flex items-center gap-1.5 transition-colors"
+                >
+                  Clear ×
+                </button>
               )}
             </div>
-
-            {/* ── DESKTOP: Sticky Grouped Sidebar ──────────────────────────── */}
-            <div className="hidden lg:block">
-              <div className="lg:sticky lg:top-[74px]">
-
-                {/* Header */}
-                <div className="px-6 py-4 border-b border-slate-200">
-                  <p className="font-mono text-[12px] text-slate-900 tracking-[0.35em] uppercase">
-                    [ FILTER BY APPLICATION ]
-                  </p>
-                </div>
-
-                {/* Filter Groups */}
-                <div className="px-4 py-5 space-y-6">
-                  {FILTER_GROUPS.map((group) => {
-                    const hasItems = group.items.some((item) =>
-                      item.value === "all" || blades.some((b) => b.category === item.value)
-                    );
-                    if (!hasItems) return null;
-
-                    return (
-                      <div key={group.groupLabel}>
-                        {group.groupLabel !== "All Products" && (
-                          <p className="font-mono text-[12px] text-slate-400 tracking-widest uppercase mb-2 px-1">
-                            {group.groupLabel}
-                          </p>
-                        )}
-                        <div className="flex flex-col gap-px border border-slate-200">
-                          {group.items.map((item) => {
-                            const count =
-                              item.value === "all"
-                                ? blades.length
-                                : blades.filter((b) => b.category === item.value).length;
-                            if (item.value !== "all" && count === 0) return null;
-                            const isActive = selectedCategory === item.value;
-                            return (
-                              <button
-                                key={item.value}
-                                onClick={() => {
-                                  setSelectedCategory(item.value);
-                                  if (item.value !== "all") {
-                                    gtagEvent("view_item_list", {
-                                      event_category: "blade_filter",
-                                      item_list_name: item.label,
-                                      blade_category: item.value,
-                                    });
-                                  }
-                                }}
-                                className={`w-full flex items-center justify-between px-4 py-2.5 font-mono text-[14px] font-bold tracking-[0.12em] uppercase text-left transition-none border-b border-slate-200 last:border-b-0 ${
-                                  isActive
-                                    ? "bg-[#001f4d] text-white"
-                                    : "bg-white text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
-                                }`}
-                              >
-                                <span>{item.label}</span>
-                                <span className={`font-black text-[12px] ${isActive ? "text-white/60" : "text-slate-300"}`}>
-                                  {count}
-                                </span>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-
-                {/* Clear Filter */}
-                {selectedCategory !== "all" && (
-                  <div className="px-4 pb-5 border-t border-slate-200 pt-4">
-                    <button
-                      onClick={() => setSelectedCategory("all")}
-                      className="w-full font-mono text-[12px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors text-center"
-                    >
-                      [ CLEAR FILTER × ]
-                    </button>
-                  </div>
-                )}
-
-              </div>
-            </div>
-
-          </aside>
-
-          {/* ── RIGHT: Product Grid ──────────────────────────────────────── */}
-          <div className="lg:col-span-9">
-
-            {/* Grid Header */}
-            <div className="px-8 py-4 border-b border-slate-200 flex items-center justify-between">
-              <p className="font-mono text-[12px] text-slate-400 tracking-[0.35em] uppercase">
-                [ BLADE RANGE — {filteredBlades.length} PRODUCT{filteredBlades.length !== 1 ? "S" : ""} ]
-              </p>
-              <select
-                value={sortOrder}
-                onChange={(e) => setSortOrder(e.target.value as "featured" | "az")}
-                className="font-mono text-[11px] text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
-              >
-                <option value="featured">Sort: Featured</option>
-                <option value="az">Sort: A → Z</option>
-              </select>
-            </div>
-
-            <div className="p-6 lg:p-8">
-              <ProductGrid
-                blades={sortedBlades}
-                layout="list"
-                onShowAll={() => setSelectedCategory("all")}
-              />
-            </div>
-
           </div>
+        </div>
+
+      </div>
+
+      {/* ── Product Grid Section ─────────────────────────────────────── */}
+      <section id="products" ref={listSectionRef} className="border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 lg:py-14">
+          <ProductGrid
+            blades={sortedBlades}
+            layout="grid"
+            onShowAll={() => setSelectedCategory("all")}
+          />
         </div>
       </section>
 

@@ -93,6 +93,14 @@ export interface Blade {
     reviewBody:  string;
     ratingValue: string | number;
   };
+
+  // ── SEO — FAQPage schema (ProductFAQ component) ───────────────────────────
+  // Rendered by <ProductFAQ> just above the RFQ form.
+  // All questions are injected as FAQPage JSON-LD for Google SERP rich results.
+  faqs?: {
+    technical: Array<{ question: string; answer: string }>;
+    company:   Array<{ question: string; answer: string }>;
+  };
 }
 
 // ===== BLADE DATA =====
@@ -197,6 +205,63 @@ export const blades: Blade[] = [
       authorName:  "Flexopak Converting Ltd.",
       reviewBody:  "Running Sureay rotary slitter knives on our BOPP film lines at 450 m/min. Thickness tolerance held at ±0.002mm across a 12-knife arbor stack — slit-width deviation dropped measurably after switching. Edge life on PET liner slitting is approximately 40% longer than our previous supplier. OEM bore dimensions matched exactly on first installation, no rework required.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "What thickness tolerance should I specify for blades on a multi-knife arbor stack?",
+          answer:
+            "For shear slitting of flexible films and foils, specify ±0.002mm thickness tolerance and ≤0.02mm T.I.R. runout. A 0.005mm error per blade compounds across a 12-knife stack, producing visible slit-width deviation and web tension spikes. We grind every blade to these tolerances and verify on a CMM before dispatch.",
+        },
+        {
+          question: "How do I prevent adhesive film transfer and build-up on slitter blade faces?",
+          answer:
+            "Adhesive build-up on blade faces increases friction, raises web temperature, and causes material transfer contamination. We offer TiN (titanium nitride) and DLC (diamond-like carbon) PVD coatings that reduce surface adhesion by up to 80%, extending clean-running intervals on pressure-sensitive tape and adhesive laminate slitting applications.",
+        },
+        {
+          question:
+            "When should I upgrade from D2 to powder-metallurgy (PM) steel for my slitter?",
+          answer:
+            "PM steel (ASP23, ASP52) is recommended when slitting battery-grade aluminium or copper electrode foils for EV cells, fiberglass-reinforced packaging, or silica-coated release liners. These substrates exceed the abrasion ceiling of D2 within a single production run. PM grades deliver uniform carbide distribution and 50–80% longer edge life on highly abrasive substrates.",
+        },
+        {
+          question: "What surface coating is best for slitting pressure-sensitive adhesive tapes at high speed?",
+          answer:
+            "DLC (diamond-like carbon) PVD coating is the top specification for double-coated foam tape and transfer adhesive slitting. It reduces contact angle on the blade face by approximately 35° versus uncoated D2, maintaining consistent slip through 8–12 hour production runs without cleaning stops. TiN is effective for single-faced masking tape and lightly adhesive label stock at a lower coating cost.",
+        },
+        {
+          question: "Can Sureay supply matched top and bottom knife pairs verified to a specified shear clearance?",
+          answer:
+            "Yes. Matched shear pairs — dished top blade and grooved anvil bottom blade — are supplied with knife-to-knife clearance pre-verified against your substrate specification. We record OD, ID, thickness, and designed shear clearance for each matched pair on an engineering data sheet that ships with the tooling, allowing line operators to replicate the clearance setting on every reinstallation.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
 
@@ -304,6 +369,62 @@ export const blades: Blade[] = [
       reviewBody:  "Using Sureay multi-shaft inserts on our Vecoplan VA1500 processing mixed HDPE and PP rigid waste. Counter-bore positional tolerance is measurably tighter than comparable suppliers — no insert micro-rocking after 600 operating hours. Switched to DC53 grade for engineering plastic runs and edge retention on PA66-GF30 improved significantly across all three rotors.",
       ratingValue: "5",
     },
+    faqs: {
+      technical: [
+        {
+          question: "How do I choose between D2 and DC53 for multi-shaft shredding of contaminated plastics?",
+          answer:
+            "D2 (1.2379) is the correct choice for post-consumer plastic bales with residual dirt, moisture, and trace contamination — its high chromium-carbide content delivers reliable abrasion resistance at an economical cost point. Upgrade to DC53 when your feedstock includes glass-reinforced engineering plastics (PA66-GF30, ABS) mixed into contaminated HDPE/PP streams. DC53's finer carbide distribution and 25–35% higher transverse rupture strength extend multi-shaft insert service life significantly on hard-face materials within contaminated waste streams.",
+        },
+        {
+          question: "Why does my shredder generate excessive heat and melt material onto the blade face?",
+          answer:
+            "Heat generation is directly linked to blade face geometry and edge sharpness. A worn, flat-face insert reduces shear efficiency and displaces heat into the material instead of the chip. Our precision-milled concave face reduces shear contact area at each cutting event, dramatically lowering heat build-up and preventing thermoplastic adhesion on the blade.",
+        },
+        {
+          question: "How do I ensure replacement inserts fit my Vecoplan or Weima rotor without micro-rocking?",
+          answer:
+            "Micro-rocking is caused by counter-bore positional tolerance exceeding ±0.1mm. Our inserts are CNC-milled to ±0.05mm on all M12/M16/M20 counter-bores, reverse-engineered from factory-measured OEM rotor samples. This eliminates the progressive counter-bore elongation that forces early rotor rebuilds on lower-tolerance inserts.",
+        },
+        {
+          question: "How often should multi-shaft shredder inserts be indexed on a continuous recycling line?",
+          answer:
+            "On a 16-hour continuous line processing post-consumer HDPE and PP, schedule first indexing at 400–600 operating hours with D2, and 600–800 hours with DC53 on clean feedstock. Contaminated or glass-filled streams reduce these intervals by 30–40%. We recommend fixed tonnage-milestone indexing rather than waiting for visible edge rounding — reactive indexing results in wider variance on output particle size.",
+        },
+        {
+          question: "Do you supply counter-knives and sizing screens as part of a complete shredding tooling system?",
+          answer:
+            "Yes. We manufacture matched stationary counter-knives and perforated sizing screens as a complete two-shaft shredding system. Supplying rotor inserts and counter-knives from the same grinding run ensures consistent shear clearance across the full rotor-to-bed interface — a critical parameter for output particle size control that is compromised when components are sourced separately.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -316,14 +437,14 @@ export const blades: Blade[] = [
     category: "tissue_paper_blades",
     sector: "paper",
     categoryDisplay: "Tissue Paper Blades",
-    image: "/images/products/blades/tissue-log-saw-blades.webp",
+    image: "/images/products/blades/tissue-log-saw-blades-05.webp",
     gallery: [
-      "/images/products/blades/tissue-log-saw-blades.webp",
+      "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-03.webp",
-      "/images/products/blades/tissue-log-saw-blades-02.webp",
+      "/images/products/blades/tissue-log-saw-blades.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/product.webp", // ComprehensiveData panel - placeholder
+      "/images/products/blades/tissue-log-saw-blades-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-00.webp", // ComprehensiveData panel - placeholder
     ],
     description:
       "D2 and M2 HSS large-diameter circular log saw blades for high-speed tissue converting—precision-ground to lateral runout ≤0.15mm, edge runout ≤0.10mm, and parallelism 0.05mm for dust-free, fiber-crush-free cross-cutting of tissue, bath tissue, and paper-towel logs. Standard bore Ø68.26mm (+0.05mm) for Fabio Perini, Casmatic, and PCMC log saws; custom OD to Ø1200mm. Optional TiN or hard-chrome coating extends MTBR in high-humidity paper mills.",
@@ -386,6 +507,62 @@ export const blades: Blade[] = [
       authorName:  "Caspian Paper Industries",
       reviewBody:  "Sureay tissue log saw blades on our Fabio Perini RA line maintain lateral runout under 0.12mm consistently across full production runs. Dust generation is noticeably lower than our previous supplier blades. D2 grade standardised for 300-series tissue with MTBR consistently above 18 million cuts per set before first resharpen.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "What runout tolerances matter most for a high-speed tissue log saw?",
+          answer:
+            "Lateral runout (≤0.15mm) and edge runout (≤0.10mm) are the two critical parameters. Lateral runout beyond 0.15mm causes the blade to oscillate sideways during the cut, generating fiber-crush, dust, and non-perpendicular cut faces. We verify both values on a calibrated CMM for every blade before dispatch, not just batch-sample inspections.",
+        },
+        {
+          question: "How do I minimize dust and fiber tearing during tissue log cross-cutting?",
+          answer:
+            "Dust is generated when a dull or incorrectly bevelled blade tears tissue fibers instead of shearing them. We engineer a shallow bevel angle (15°–25°) matched to your tissue substrate, combined with a mirror-polished face (Ra ≤ 0.4μm) that prevents fiber adhesion. This combination delivers clean cuts and reduces dust below premium brand dust-specification limits.",
+        },
+        {
+          question: "Can you supply blades for Fabio Perini, PCMC, or Casmatic log saws in custom diameters?",
+          answer:
+            "Yes. Standard bore Ø68.26mm (+0.05mm) fits Fabio Perini and PCMC Forte/Elite directly. Ø82.55mm bore covers Casmatic platforms. We also manufacture custom OD from Ø610mm to Ø1200mm to drawing within 10 working days, with dimensional sign-off available before production on first-order tooling.",
+        },
+        {
+          question: "How many cuts can I expect between blade dressing cycles on a standard tissue converting line?",
+          answer:
+            "With D2 grade blades on 300-series 2-ply tissue (85 gsm), MTBR on a Fabio Perini RA line typically runs 15–22 million cuts per set before first resharpen. TiN-coated blades extend this to 25–30 million cuts. High recycled-content tissue, ambient humidity above 80% RH, and feed speeds above 800mm/min all reduce the interval between dressing cycles.",
+        },
+        {
+          question: "Can you supply tissue log saw blades with keyway slots or non-standard bore sizes for retrofit spindles?",
+          answer:
+            "Yes. We manufacture to custom bore tolerance and add keyway slots, drive pin holes, or non-standard bore diameters for retrofit log saw spindle configurations. A dimensional drawing review confirms spindle interface dimensions before any production commitment on first-order custom tooling.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
 
@@ -491,6 +668,62 @@ export const blades: Blade[] = [
       reviewBody:  "Sureay granulator blades on our Cumberland 1220 machines processing PET bottle flake. Face flatness verified at 0.04mm after re-grinding — critical for consistent rotor-to-bed gap. Cryogenic treatment extends time between sharpening cycles by approximately 30% versus conventional heat treatment. Regrind particle size distribution tightened noticeably after switching.",
       ratingValue: "5",
     },
+    faqs: {
+      technical: [
+        {
+          question: "How do I choose between D2, DC53, and Cr12MoV for my granulator?",
+          answer:
+            "D2 is the industry standard for clean plastics like PET and PP. For glass-filled or abrasive polymers, DC53 offers superior wear resistance. If your feed contains occasional metal impurities (like wire or staples), Cr12MoV provides higher impact toughness to prevent edge chipping.",
+        },
+        {
+          question: "What causes excessive dust and fines during plastic granulation?",
+          answer:
+            "It's usually caused by blunt edges or an incorrect bevel angle tearing the plastic instead of shearing it. We optimize the bevel angle (30°–55°) based on your specific polymer to ensure clean cutting, which maximizes your regrind quality and pellet value.",
+        },
+        {
+          question: "Can you match the exact bolt-hole patterns for my specific machine?",
+          answer:
+            "Absolutely. We maintain a vast database of OEM blueprints for Cumberland, Herbold, Rapid, Weima, and more. We CNC-mill all counter-bores to a strict ±0.02mm tolerance to guarantee a perfect drop-in fit without micro-rocking.",
+        },
+        {
+          question: "What rotor knife geometry produces the lowest fines fraction in beside-the-press granulators?",
+          answer:
+            "For beside-the-press in-line granulators on injection moulding lines, a 40°–45° bevel angle with a polished rake face (Ra ≤ 0.8μm) delivers the cleanest, lowest-fines regrind on runner and sprue material. The polished face reduces adhesion in the cutting zone, preventing the micro-welding of HDPE and PP material that generates fines at the high cycle rates typical of continuous injection moulding production.",
+        },
+        {
+          question: "When should I sharpen versus replace my granulator rotor knives?",
+          answer:
+            "The primary indicator is regrind particle size distribution — when the oversize fraction exceeds 8–10% of output weight, rotor knives need sharpening. Secondary indicators are a 15%+ increase in motor amp draw above baseline and elevated dust fraction. Each Sureay blade can typically be resharpened 3–5 times before the bevel geometry reaches minimum usable material depth, at which point replacement is more economical.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -593,6 +826,62 @@ export const blades: Blade[] = [
       authorName:  "Druckhaus Meridian GmbH",
       reviewBody:  "HSS M2 blades from Sureay for our Polar 137 guillotine matched the factory bore and mounting pattern exactly — no modification required on installation. Cutting coated art paper and label stock, the edge held sharp through 95,000 cuts before first resharpen, versus 65,000 cuts with our previous OEM replacement. Supplied sharp-ground and ready to install.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "Should I choose M2 HSS or Tungsten Carbide Tipped (TCT) blades for my guillotine?",
+          answer:
+            "M2 HSS is the correct choice for coated art paper, bond paper, and standard label stock in high-volume print shops — delivering 4–6× longer life than standard carbon steel. Upgrade to TCT (YG15/YG20 carbide inlay) only when cutting carbonless copy paper, high-calcium-carbonate packaging board, or abrasive specialty papers. TCT outperforms HSS 3–5× on these substrates but carries a higher unit cost.",
+        },
+        {
+          question: "How does your blade geometry prevent dust when guillotining thick paper reams?",
+          answer:
+            "We grind every guillotine blade to a precision 21° bevel with face flatness ≤0.05mm across the full length. The sharp, shallow bevel shears each sheet progressively through the ream rather than crushing through the stack — dust is generated by dull or incorrectly bevelled edges that compress paper fibres instead of shearing them. HSS M2 and TCT grades retain this precision bevel geometry significantly longer than carbon steel, so fewer resharpening events mean fewer dust-generating dull-blade cutting cycles per year.",
+        },
+        {
+          question: "Can you supply blades in the exact length and mounting hole pattern my Polar or Wohlenberg machine requires?",
+          answer:
+            "Yes. We stock standard lengths from 450mm to 2050mm to cover Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta, and Challenge series guillotines. Custom lengths, back-edge profiles, and mounting hole patterns are manufactured to drawing within 7 working days. Blades can be supplied sharp-ground, semi-finished, or blank to suit your on-site regrinding setup.",
+        },
+        {
+          question: "How should guillotine blades be stored and handled to prevent premature edge damage before installation?",
+          answer:
+            "Store blades horizontally in original packaging on padded wooden cradles — never stack vertically or allow metal-to-metal contact on the cutting edge. Use plastic or rubber edge guards during handling. Inspect under a 10× loupe before mounting: a 0.2mm edge nick doubles local wear rate within the first 10,000 cuts. Avoid dragging the edge against guide rails during installation.",
+        },
+        {
+          question: "Can you supply paper guillotine blades in semi-finished condition for in-house regrinding?",
+          answer:
+            "Yes. Semi-finished blanks are available in all standard lengths with the body ground to final dimensions but the edge left in pre-ground condition for final dressing to your specific bevel angle and finish. This supply state suits print shops with surface grinding capability, reduces unit cost by 15–20%, and gives full control over final edge geometry and sharpness.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
 
@@ -697,6 +986,62 @@ export const blades: Blade[] = [
       reviewBody:  "Sureay single-shaft inserts on our Lindner Urraco 600 processing post-industrial nylon runners and HDPE pipe scrap. Face flatness consistent at ±0.02mm across the full rotor stack — zero material wrap-back incidents since replacing our previous undersized inserts. The four-edge indexable design reduced our annual tooling expenditure by over 60% versus non-indexable replacements.",
       ratingValue: "5",
     },
+    faqs: {
+      technical: [
+        {
+          question: "Which alloy offers better edge retention for single-shaft rotor blocks cutting rigid purges?",
+          answer:
+            "For dense injection-moulding purges, cold sprues, and thick-wall HDPE or ABS runners on single-shaft rotors at 80–120 RPM, DC53 consistently outperforms D2 on edge retention. Single-shaft impact loading — intermittent high-torque strikes rather than the continuous shear of multi-shaft systems — exposes DC53's superior transverse rupture strength against D2's chromium-carbide wear resistance. DC53 resists the micro-chipping at rotor block cutting faces that D2 develops on ridge-loaded rigid purge material after 300–500 operating hours.",
+        },
+        {
+          question: "What causes rotor stall and material wrap-back in my single-shaft shredder?",
+          answer:
+            "Wrap-back is usually caused by inconsistent face flatness across the rotor insert stack, creating uneven knife-to-bed clearance. Material passes through wide gaps instead of being sheared, circulates back, and clogs the rotor pocket. Our inserts are CNC-machined to ±0.02mm face flatness, ensuring consistent clearance across the full cutting width and eliminating the wrap-back events caused by imprecisely machined inserts.",
+        },
+        {
+          question: "How does the four-edge indexable design reduce my annual tooling cost in practice?",
+          answer:
+            "Each square insert has four independent cutting edges. When one edge dulls, loosen the single mounting bolt, rotate the insert 90° to a fresh edge, and retorque. A full rotor complement indexes in under 15 minutes without removing the rotor shaft. This quadruples the effective service life per blade purchased, reducing annual tooling expenditure by approximately 75% versus non-indexable rotor insert alternatives.",
+        },
+        {
+          question: "What insert geometry should I specify for shredding large-format IBC totes and HDPE drums?",
+          answer:
+            "For thick-wall containers — 1000L IBC totes, 200L drums, bulk bins — specify concave-faced inserts at 50×50mm or 60×60mm with M16 bolt. The concave profile creates a positive rake geometry on the thick wall cross-section, preventing the blade from skiving across the smooth HDPE surface at initial impact rather than penetrating it during the downstroke at 80–100 RPM rotor speed.",
+        },
+        {
+          question: "Can Sureay supply the matching stationary bed knife for my single-shaft shredder?",
+          answer:
+            "Yes. Stationary bed knives are manufactured as matched sets with rotor inserts, with the clearance face ground to the same ±0.02mm tolerance. A matched bed knife eliminates the clearance guesswork introduced when sourcing rotor inserts and bed knives from separate suppliers — inconsistent rotor-to-bed clearance is the most common cause of material wrap-back events on correctly operating single-shaft shredders.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
+    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -776,6 +1121,62 @@ export const blades: Blade[] = [
       authorName:  "Baltic Steel Service Centre",
       reviewBody:  "Sureay D2 circular slitter knives on our 1600mm slitting line processing cold-rolled and galvanized coil. Every knife in the matched set verified within ±0.001mm on our CMM before installation. Burr height on CR steel strip stayed under 0.05mm for the full coil run. Mirror-lapped side faces maintained consistent arbor contact throughout the complete service life.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "What knife clearance should I set for cold-rolled steel versus silicon steel (CRGO)?",
+          answer:
+            "For cold-rolled mild steel (CR, HG, EG), set side clearance at 8–12% of material thickness. For silicon steel (CRGO/CRNO), tighten clearance to 5–8% — silicon steel's extreme hardness and brittleness demand a tighter shear gap to prevent the edge fracturing that produces burr on transformer laminate strips. Excessive clearance on CRGO is the leading cause of slit-width non-conformance in electrical steel processing.",
+        },
+        {
+          question: "Why does my slit-width drift across the full coil width after the first coil?",
+          answer:
+            "Slit-width drift is caused by blade-to-spacer face contact loss from varying thickness tolerances in the arbor stack. Even a 0.002mm blade-thickness inconsistency in a 10-knife stack creates a cumulative 0.02mm lateral shift that widens into visible slit-width deviation at line speed. Our blades are lapped to ±0.001mm thickness tolerance and Ra ≤ 0.2μm face finish, eliminating the air gaps that allow individual blade deflection under lateral slitting load.",
+        },
+        {
+          question: "Can Sureay supply a complete integrated tooling package including spacers and stripper rings?",
+          answer:
+            "Yes. We supply complete matched slitting tooling systems: knife set, precision steel spacers (±0.001mm), rubber bonded stripper rings, and overarm separator discs — all verified as a matched system on a CMM before dispatch. Sourcing all components from a single verified tolerance stack eliminates the cumulative errors that appear when mixing tooling from separate suppliers.",
+        },
+        {
+          question: "What knife clearance and tooling tolerance do I need for slitting lithium battery electrode foils?",
+          answer:
+            "For EV battery electrode foils (8–12μm aluminium cathode, 6–10μm copper anode), side clearance must be held at 0.5–1.0% of material thickness — typically 0.05–0.10mm. This is below reliable manual feeler-gauge measurement; arbor tooling must use precision spacers held to ±0.001mm to achieve consistent clearance across a multi-knife arbor. We supply complete validated tooling packages for electrode foil applications with full CMM dimensional traceability.",
+        },
+        {
+          question: "What maintenance inspection schedule do you recommend to maximize circular slitter knife service life?",
+          answer:
+            "Inspect knife faces weekly under 10× magnification for micro-pitting (corrosive environment) and edge chipping (clearance drift or hard inclusion). Re-lap side faces when Ra exceeds 0.4μm to restore full arbor contact. Disassemble and inspect spacers for scoring every 500,000m of production. Store removed knives in rust-inhibitor oil or nitrogen-purged bags to prevent corrosive pitting during idle periods.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
   
@@ -861,6 +1262,62 @@ export const blades: Blade[] = [
       authorName:  "Metalform Fabrication Inc.",
       reviewBody:  "9CrSi shear blades from Sureay on our Amada 3000mm hydraulic guillotine cutting 304 stainless and mild steel up to 12mm. Parallelism across full blade length measured at 0.04mm — noticeably better than domestic replacements we trialled. Edge held through heavy-cycle production on galvanized sheet with no chipping events across the entire first service interval.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "Which alloy should I use for shearing 304 stainless steel and thick alloy plate?",
+          answer:
+            "We recommend 9CrSi or Cr12MoV (D2 equivalent) for stainless steel (304, 316L, 430, 2205 duplex) and high-strength plates like Hardox 400 or Domex 700. Cr12MoV's high chromium-carbide matrix withstands the severe work-hardening wear imposed by austenitic stainless. For standard mild steel or scrap bale cutting, T10 or 65Mn at HRC 57–59 provides maximum toughness at the lowest cost.",
+        },
+        {
+          question: "What edge profile minimizes burrs when shearing high-tensile steel plates?",
+          answer:
+            "The edge profile that minimizes burr on high-tensile plate (Hardox, Domex, austenitic stainless) is a precision-ground acute bevel with strict full-length parallelism control. The critical factor is contact uniformity: uneven blade-to-blade contact concentrates shear force at one end, producing the compressive rollover and tearing burr characteristic of high-work-hardening steels. Our standard tolerance is ±0.05mm parallelism over 1000mm; premium ±0.02mm is specified for stainless, Hardox 400, and aerospace aluminium applications.",
+        },
+        {
+          question: "Can you manufacture blades to match my TRUMPF, AMADA, or Durma guillotine exactly?",
+          answer:
+            "Yes. We carry OEM-matching dimensions in standard stock for TRUMPF TrumaBend, AMADA QC-67Y, BYSTRONIC Xpert, Durma AD, Haco Atlantic, and Zhiyi QC11Y/K platforms. Single-piece blades up to 6000mm, multi-segment designs for longer tables, and single, double, or quad-edge profiles are all available. Custom lengths and back-edge profiles are manufactured to drawing within 15 working days.",
+        },
+        {
+          question: "Can Sureay manufacture replacement shear blades for obsolete machines where OEM spares are discontinued?",
+          answer:
+            "Yes. For obsolete shear models — Haco, Pacific, older Amada and Trumpf variants — we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of blade profile, mounting holes, and back-edge configuration. Custom production lead time is 15 working days from dimensional sign-off.",
+        },
+        {
+          question: "How do double-edge reversible blades reduce my annual shear tooling cost versus single-edge options?",
+          answer:
+            "A double-edge (reversible) blade provides two independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, flip the blade 180°, retorque — under 10 minutes per blade. This halves blade change events per year and reduces per-cut tooling cost by up to 40% versus single-edge alternatives. Available on all standard guillotine shear configurations up to 4000mm table length.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
 
@@ -960,6 +1417,62 @@ export const blades: Blade[] = [
       authorName:  "Bindery Solutions Europa GmbH",
       reviewBody:  "Sureay HSS Duritan three-knife trimmer set for our Polar TW 66 three-side trimmer. Supplied as a complete matched pair with exact OEM bore and mounting pattern — direct fit with no modification required. Edge on coated art paper held sharp for over 120,000 book blocks before first resharpen. Clean cut edge with no fibre fraying, essential for our high-specification book production.",
       ratingValue: "5",
+    },
+    faqs: {
+      technical: [
+        {
+          question: "Do your trimmer blades fit Kolbus and Müller Martini machines?",
+          answer:
+            "Yes. Our trimmer blades are reverse-engineered to exact OEM specifications, guaranteeing seamless installation and perfect alignment on all major European and Japanese bookbinding lines.",
+        },
+        {
+          question: "Which material delivers the longest life for coated paper?",
+          answer:
+            "For high-volume cutting of coated or recycled paper, we strongly recommend our Tungsten Carbide (TC) inlaid blades. They deliver up to 5 times the cutting life of standard High-Speed Steel (HSS) blades between sharpenings, drastically reducing your machine downtime.",
+        },
+        {
+          question: "How do you prevent blade chipping when cutting thick book blocks?",
+          answer:
+            "We use a proprietary vacuum heat treatment combined with deep cryogenic processing (−80°C). This relieves internal compressive stresses and creates a highly stable, chip-resistant edge structure that cleanly slices through thick book spines.",
+        },
+        {
+          question: "What is the correct installation sequence to prevent binding on a three-knife trimmer set?",
+          answer:
+            "Binding is usually caused by misaligned entry angles between front and side knives — typically a 0.05–0.10mm mounting face runout error accumulated from mixed-tolerance blade sets. Since all three blades in our set are ground in a single production pass, relative alignment is factory-matched. Install all three blades loosely first, torque-set the front knife to establish the head datum, then alternate the side knives to maintain symmetric clamping pressure.",
+        },
+        {
+          question: "What is the lead time for a custom three-knife trimmer set for a machine outside your standard range?",
+          answer:
+            "For machines outside our standard stock range, we need the blade profile drawing or a reference sample set to reverse-engineer. From confirmed drawing to shipped custom set: 12–15 working days. For volume OEM procurement (10+ sets per order), we maintain customer-specific blade programs with dedicated pre-ground stock, delivering within 5 days from call-off.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question: "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+        },
+        {
+          question: "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+        },
+      ],
     },
   },
 ];

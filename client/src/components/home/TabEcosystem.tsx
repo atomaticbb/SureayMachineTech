@@ -55,10 +55,10 @@ export default function TabEcosystem() {
             </p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
               <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
-                Choose Your Industry And Start With The Right Cutting Setup
+                Choose Your Industry. <br />Find Your Blade.
               </h2>
               <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
-                Each path is designed to answer the first practical question: which blade family, material direction, and fit standard match this line.
+                Select your application below to explore blade materials, OEM compatibilities, and cutting solutions tailored to your production line.
               </p>
             </div>
             <div className="w-14 h-[3px] bg-slate-300 mt-8" />
@@ -112,7 +112,7 @@ export default function TabEcosystem() {
                   {activeEcosystem.label}
                 </h3>
 
-                <p className="text-sm text-slate-500 leading-relaxed mb-5 max-w-md">
+                <p className="text-sm text-slate-500 leading-relaxed mb-5">
                   {activeEcosystem.desc}
                 </p>
 
@@ -127,10 +127,10 @@ export default function TabEcosystem() {
                       key={spec.label}
                       className="flex flex-col sm:flex-row sm:items-center py-2.5 border-b border-slate-100 last:border-0"
                     >
-                      <span className="w-full sm:w-1/3 text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-0.5 sm:mb-0">
+                      <span className="w-full sm:w-1/3 text-[13px] font-bold text-slate-700 uppercase tracking-widest mb-0.5 sm:mb-0">
                         {spec.label}
                       </span>
-                      <span className="w-full sm:w-2/3 text-[13px] font-black text-[#003366]">
+                      <span className="w-full sm:w-2/3 text-[16px] font-normal text-[#003366]">
                         {spec.value}
                       </span>
                     </div>

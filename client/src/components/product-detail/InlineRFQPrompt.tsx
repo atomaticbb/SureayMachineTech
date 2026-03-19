@@ -9,11 +9,10 @@ export default function InlineRFQPrompt() {
             [ RFQ Prompt ]
           </p>
           <h3 className="font-black text-xl lg:text-2xl text-[#001f4d] uppercase tracking-tight leading-[1.08] mb-2">
-            Need OEM-Fit Dimensions Or A Custom Blade Quotation?
+            Need a Specific Size or OEM Replacement?
           </h3>
-          <p className="text-sm text-slate-600 leading-relaxed">
-            If the standard sizes are close but not exact, send your drawing, sample, or machine model.
-            We can review fit, material direction, and production requirements before quotation.
+          <p className="text-[16px] text-slate-600 leading-relaxed">
+            Don't see your exact specs? Send us a blueprint, a worn sample, or just your machine model. Our team will review the details and provide a tailored quotation.
           </p>
         </div>
 

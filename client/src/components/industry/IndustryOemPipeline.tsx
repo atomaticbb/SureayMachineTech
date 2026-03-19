@@ -1,8 +1,7 @@
 /*
  * IndustryOemPipeline — Module 4
- * Live operational interface. bg-[#001f4d] blueprint grid.
- * GPU-offloaded pulsing logic-line rail via will-change.
- * Steps hardcoded — standard 4-phase OEM engineering protocol.
+ * Top / Bottom split: left-aligned header above a horizontal stepper.
+ * Swiss Brutalist: dark navy bg, blueprint grid, square nodes, mono labels.
  */
 
 import { MONO } from "./types";
@@ -10,37 +9,29 @@ import { MONO } from "./types";
 const STEPS = [
   {
     step: "01",
-    phaseKey: "INTAKE",
-    technicalTitle: "SEND DRAWING OR SAMPLE",
-    name: "Requirement Intake",
-    desc: "You send the drawing, used sample, machine model, or key dimensions. We review the application, blade geometry, and any known fit or wear issues.",
+    title: "Send Drawing Or Sample",
+    desc: "Send your drawing, used sample, machine model, or key dimensions. We review the application, blade geometry, material being cut, and any known fit or wear issues from your current supplier.",
   },
   {
     step: "02",
-    phaseKey: "REVIEW",
-    technicalTitle: "ENGINEERING REVIEW",
-    name: "Material And Tolerance Confirmation",
-    desc: "Our team confirms steel grade, heat treatment direction, tolerance target, and any OEM-fit details needed before quotation or production approval.",
+    title: "Engineering Review",
+    desc: "Our engineers confirm steel grade, heat treatment direction, tolerance target, edge profile, and all OEM-fit details. Any open questions are resolved before quotation or production approval is issued.",
   },
   {
     step: "03",
-    phaseKey: "PRODUCTION",
-    technicalTitle: "MACHINING AND HARDENING",
-    name: "Production Execution",
-    desc: "The blade moves into CNC machining, heat treatment, and precision grinding based on the approved specification and application requirement.",
+    title: "Machining And Hardening",
+    desc: "The blade moves into CNC machining, vacuum heat treatment, and precision grinding in a controlled sequence. Each stage is tracked against the approved specification to prevent distortion and geometry drift.",
   },
   {
     step: "04",
-    phaseKey: "DELIVERY",
-    technicalTitle: "INSPECTION AND SHIPMENT",
-    name: "Final Verification",
-    desc: "Before dispatch, dimensions and hardness are checked and the order is prepared with the required inspection records for delivery.",
+    title: "Inspection And Shipment",
+    desc: "Final dimensions, hardness, and edge condition are verified against specification before dispatch. The order is packed and shipped with the required inspection records, and material certification documents.",
   },
 ];
 
 export default function IndustryOemPipeline() {
   return (
-    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-10 lg:py-12 relative overflow-hidden">
+    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-16 lg:py-20 relative overflow-hidden">
 
       {/* Blueprint grid overlay */}
       <div
@@ -54,113 +45,92 @@ export default function IndustryOemPipeline() {
         }}
       />
 
-      {/* GPU-offloaded keyframes */}
-      <style>{`
-        @keyframes oem-flow {
-          0%   { top: 0%;               opacity: 0; }
-          5%   {                         opacity: 1; }
-          90%  {                         opacity: 1; }
-          100% { top: calc(100% - 40px); opacity: 0; }
-        }
-        .oem-flow-seg {
-          animation: oem-flow 3.2s ease-in-out infinite;
-          will-change: top, opacity;
-        }
-        @keyframes oem-ping {
-          0%   { transform: scale(1);   opacity: 0.9; }
-          70%  { transform: scale(2.8); opacity: 0;   }
-          100% { transform: scale(2.8); opacity: 0;   }
-        }
-        .oem-node-ping {
-          animation: oem-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-          will-change: transform, opacity;
-        }
-      `}</style>
-
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative">
 
-        {/* Section header */}
-        <div className="mb-8 lg:mb-10">
-          <p style={MONO} className="text-[10px] text-[#65AAD6] uppercase tracking-[0.5em] mb-5">
-            [ OEM_PROTOCOL / ACTIVE ]
+        {/* ── Top: Section header ───────────────────────────────────────────── */}
+        <div className="mb-14 lg:mb-16">
+          <p className="text-[#65AAD6] font-bold text-xs uppercase tracking-[0.3em] mb-4">
+            OEM Custom Manufacturing
           </p>
-          <h2 className="font-black text-2xl md:text-3xl text-white uppercase tracking-tight leading-[1.0] mb-3">
-            OEM Process From Drawing Review To Delivery
-          </h2>
-          <p className="text-slate-200 text-[15px] max-w-[480px] leading-relaxed">
-            A custom blade order moves through four clear steps so you know what to send, what we confirm, and what gets checked before shipment.
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-white uppercase tracking-tight leading-[1.05] max-w-2xl">
+              OEM Process From Drawing To Delivery
+            </h2>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-3 bg-white text-[#001f4d] hover:bg-[#65AAD6] px-6 py-3 text-[13px] font-black uppercase tracking-[0.18em] rounded-none transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
+            >
+              Get In Touch
+            </a>
+          </div>
+          <p className="text-[16px] text-slate-300 leading-relaxed max-w-xl mt-4">
+            A custom blade order moves through four clear steps — so you know
+            what to send, what we confirm, and what gets checked before
+            shipment.
           </p>
-          <div className="w-14 h-[2px] bg-[#0a2d6e] mt-5" />
+          <div className="w-14 h-[3px] bg-[#65AAD6]/40 mt-6" />
         </div>
 
-        {/* Pipeline: vertical rail + step cards */}
-        <div className="relative pl-8 lg:pl-10">
+        {/* ── Bottom: Horizontal stepper ────────────────────────────────────── */}
 
-          {/* Animated logic-line rail */}
-          <div className="absolute left-3 top-0 bottom-0 w-px bg-[#0a2d6e] overflow-hidden">
-            <div
-              className="oem-flow-seg absolute left-0 w-px h-10"
-              style={{ background: "linear-gradient(to bottom, transparent, #65AAD6, transparent)" }}
-            />
-          </div>
+        {/* Desktop (lg+): single continuous line, nodes on top */}
+        <div className="hidden lg:block">
+          <div className="relative">
+            {/* Single h-px line running through the center of all nodes */}
+            <div className="absolute left-0 right-0 h-px bg-white/30" style={{ top: "1.5rem" }} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-[#0a2d6e]">
-            {STEPS.map((item, i) => {
-              const pingDelay = `${i * 0.6}s`;
-              return (
-                <div
-                  key={item.step}
-                  className="border-b border-r border-[#0a2d6e] p-4 lg:p-5 flex flex-col relative group overflow-hidden hover:bg-white/5 transition-colors duration-300"
-                >
-                  {/* Pulsing node on the rail */}
-                  <div
-                    className="absolute -left-[41px] lg:-left-[49px] top-5 flex-shrink-0"
-                    style={{ animationDelay: pingDelay }}
-                  >
-                    <div className="relative w-2 h-2">
-                      <div
-                        className="oem-node-ping absolute inset-0 w-2 h-2 bg-[#65AAD6]"
-                        style={{ animationDelay: pingDelay }}
-                      />
-                      <div className="relative w-2 h-2 bg-[#65AAD6]" />
-                    </div>
+            <div className="grid grid-cols-4 gap-6 px-6">
+              {STEPS.map((item) => (
+                <div key={item.step} className="flex flex-col">
+
+                  {/* Circle node — z-10 sits above the continuous line */}
+                  <div className="relative z-10 w-12 h-12 rounded-full border-2 border-white bg-[#001f4d] flex items-center justify-center flex-shrink-0">
+                    <span style={MONO} className="text-[14px] font-black text-white">
+                      {item.step}
+                    </span>
                   </div>
 
-                  {/* Oversized ghost step number */}
-                  <span
-                    className="absolute top-1 right-3 font-black text-[72px] leading-none select-none pointer-events-none tabular-nums transition-transform duration-500 ease-out group-hover:-translate-x-[3px] group-hover:-translate-y-[3px]"
-                    style={{ WebkitTextStroke: "1px rgba(10,45,110,0.65)", color: "transparent", ...MONO }}
-                  >
-                    {item.step}
-                  </span>
-
-                  {/* Phase number */}
-                  <span style={MONO} className="text-[11px] text-[#65AAD6] uppercase tracking-[0.35em] mb-2 block">
-                    Step {item.step}
-                  </span>
-
-                  <span style={MONO} className="text-[10px] text-slate-400 uppercase tracking-[0.2em] mb-2 block">
-                    [ {item.phaseKey} ]
-                  </span>
-
-                  {/* Technical title */}
-                  <h3 className="font-black text-base lg:text-lg text-white uppercase tracking-[0.16em] leading-[1.15] mb-2">
-                    {item.technicalTitle}
-                  </h3>
-
-                  <p className="text-[12px] text-[#65AAD6] uppercase tracking-[0.18em] mb-3">
-                    {item.name}
-                  </p>
-
-                  {/* Description — WCAG AA: slate-200 on #001f4d */}
-                  <p className="text-[14px] text-slate-200 leading-relaxed mt-auto max-w-[22rem]">
-                    {item.desc}
-                  </p>
+                  {/* Step content */}
+                  <div className="mt-6">
+                    <h3 className="font-black text-white uppercase tracking-tight leading-[1.2] text-[15px] mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-[15px] text-slate-400 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
 
                 </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
+        </div>
+
+        {/* Mobile (below lg): vertical stack, no connecting lines */}
+        <div className="lg:hidden flex flex-col gap-0">
+          {STEPS.map((item, i) => (
+            <div
+              key={item.step}
+              className={`flex gap-5 pb-8 ${i < STEPS.length - 1 ? "border-b border-[#65AAD6]/20 mb-8" : ""}`}
+            >
+              {/* Square node */}
+              <div className="w-11 h-11 rounded-full border-2 border-white bg-[#001f4d] flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span style={MONO} className="text-[13px] font-black text-white">
+                  {item.step}
+                </span>
+              </div>
+
+              {/* Step content */}
+              <div>
+                <h3 className="font-black text-white uppercase tracking-tight leading-[1.2] text-[15px] mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-[15px] text-slate-400 leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
 
       </div>

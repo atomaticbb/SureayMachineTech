@@ -100,27 +100,27 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                     className={i % 2 === 0 ? "bg-white hover:bg-slate-50" : "bg-slate-50/60 hover:bg-slate-50"}
                   >
                     {hasSpec && (
-                      <TableCell className="px-5 py-3 font-mono text-xs text-slate-500 whitespace-pre-line">
+                      <TableCell className="px-5 py-3 font-mono text-[16px] text-slate-500 whitespace-pre-line">
                         {row.spec ?? "—"}
                       </TableCell>
                     )}
-                    <TableCell className="px-5 py-3 font-mono font-medium text-sm text-[#001f4d]">
+                    <TableCell className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
                       {hasSpec ? (row.dimension ?? row.od) : (row.dimension ?? row.spec ?? row.od)}
                     </TableCell>
-                    <TableCell className="px-5 py-3 font-mono font-medium text-sm text-[#001f4d]">
+                    <TableCell className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
                       {row.bolt ?? row.id}
                     </TableCell>
                     {hasLengthTeeth ? (
                       <>
-                        <TableCell className="px-5 py-3 font-mono font-medium text-sm text-[#001f4d]">
+                        <TableCell className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
                           {row.length ?? "—"}
                         </TableCell>
-                        <TableCell className="px-5 py-3 font-mono font-medium text-sm text-[#001f4d]">
+                        <TableCell className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
                           {row.teeth ?? "—"}
                         </TableCell>
                       </>
                     ) : hasCol3 ? (
-                      <TableCell className="px-5 py-3 font-mono font-medium text-sm text-[#001f4d]">
+                      <TableCell className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
                         {row.type ?? row.thickness}
                       </TableCell>
                     ) : null}
@@ -138,9 +138,9 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
         </div>
 
         {/* Right — product image */}
-        <div className="w-full lg:w-[400px] xl:w-[440px] flex-shrink-0">
+        <div className="w-full lg:w-[400px] xl:w-[440px] flex-shrink-0 h-full">
           <div
-            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
+            className="w-full h-full min-h-[280px] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
             style={DOT_GRID_STYLE}
           >
             <img

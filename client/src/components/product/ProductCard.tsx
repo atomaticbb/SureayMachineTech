@@ -1,6 +1,7 @@
 /**
- * ProductCard — blade product card in two variants:
- *   'list'    → full horizontal row used in BladeListPage (image left, specs right)
+ * ProductCard — blade product card in three variants:
+ *   'grid'    → vertical card (large image + title + desc + CTA) for 2-col grid
+ *   'list'    → compact horizontal row used in BladeListPage sidebar layout
  *   'related' → compact horizontal row used in Related Blades section of BladeDetail
  */
 
@@ -9,10 +10,60 @@ import { type Blade } from "@/data/blades";
 
 interface ProductCardProps {
   blade: Blade;
-  variant?: "list" | "related";
+  variant?: "grid" | "list" | "related";
 }
 
 export default function ProductCard({ blade, variant = "list" }: ProductCardProps) {
+
+  // ─── Grid variant: large image + title + desc + CTA ──────────────────────
+  if (variant === "grid") {
+    return (
+      <Link href={blade.link}>
+        <a className="group flex flex-col bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-200 cursor-pointer h-full">
+
+          {/* Large image */}
+          <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden flex-shrink-0">
+            <img
+              src={blade.image}
+              alt={blade.name}
+              className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
+              onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
+            />
+            {blade.badge && (
+              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black uppercase px-2 py-1 tracking-wider">
+                {blade.badge}
+              </span>
+            )}
+            <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black uppercase px-2 py-1 tracking-wider backdrop-blur-sm">
+              OEM Available
+            </span>
+          </div>
+
+          {/* Content */}
+          <div className="p-6 lg:p-8 flex flex-col flex-1 border-t border-slate-100 group-hover:border-[#65AAD6]/20 transition-colors">
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">
+              {blade.categoryDisplay}
+            </p>
+            <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366] uppercase tracking-tight leading-tight mb-4 transition-colors">
+              {blade.name}
+            </h3>
+            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 flex-1 mb-6">
+              {blade.fullDescription || blade.description}
+            </p>
+            <div className="inline-flex items-center gap-2 bg-[#001f4d] group-hover:bg-[#003366] text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
+              View Details
+              <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+
+        </a>
+      </Link>
+    );
+  }
+
+  // ─── Related variant: compact horizontal row ──────────────────────────────
   if (variant === "related") {
     return (
       <Link key={blade.id} href={blade.link}>
@@ -39,10 +90,10 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
     );
   }
 
-  // variant === "list"
+  // ─── List variant: horizontal row (image left, specs right) ──────────────
   return (
     <Link key={blade.id} href={blade.link}>
-      <a className="group block bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-300">
+      <a className="group block bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-300 cursor-pointer">
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr]">
 
           {/* Left: Image */}
@@ -64,56 +115,58 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             </span>
           </div>
 
-          {/* Right: Data, Specs & CTA */}
-          <div className="p-6 flex flex-col justify-between gap-4 border-t md:border-t-0 md:border-l border-slate-100 group-hover:border-[#001f4d]/20 transition-colors">
+          {/* Right: Data, Specs */}
+          <div className="p-6 flex flex-col justify-between gap-4 border-t md:border-t-0 md:border-l border-slate-100 group-hover:border-[#65AAD6]/20 transition-colors">
             <div>
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">
                 {blade.categoryDisplay}
               </p>
-              <h3 className="text-xl font-bold text-[#001f4d] leading-snug mb-2">
+              <h3 className="text-xl font-bold text-[#001f4d] group-hover:text-[#003366] leading-snug mb-2 transition-colors">
                 {blade.name}
               </h3>
-              <div className="relative group/desc">
-                <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 cursor-help">
-                  {blade.fullDescription || blade.description}
-                </p>
-                {/* Tooltip - only show if text is clamped */}
-                <div className="absolute left-0 top-full mt-1 w-full max-w-md bg-white border-2 border-[#001f4d] p-4 opacity-0 invisible group-hover/desc:opacity-100 group-hover/desc:visible transition-all duration-200 z-50 pointer-events-none">
-                  <p className="text-sm text-slate-700 leading-relaxed">
-                    {blade.fullDescription || blade.description}
-                  </p>
+              <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">
+                {blade.fullDescription || blade.description}
+              </p>
+            </div>
+
+            {/* Specs Grid — 3 items: material / hardness / application first */}
+            {blade.specs && blade.specs.length > 0 && (() => {
+              const PRIORITY = ["material", "hardness", "application"];
+              const sorted = [
+                ...PRIORITY.map((key) =>
+                  blade.specs!.find((s) => s.label.toLowerCase().includes(key))
+                ).filter(Boolean),
+                ...blade.specs.filter(
+                  (s) => !PRIORITY.some((key) => s.label.toLowerCase().includes(key))
+                ),
+              ].slice(0, 3) as { label: string; value: string }[];
+
+              return (
+                <div className="grid grid-cols-3 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
+                  {sorted.map((spec, i) => (
+                    <div key={i}>
+                      <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">
+                        {spec.label}
+                      </p>
+                      <p className="text-sm font-bold text-slate-800 leading-tight">
+                        {spec.value}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              </div>
+              );
+            })()}
+
+            {/* Click affordance arrow */}
+            <div className="flex justify-end">
+              <svg
+                className="w-5 h-5 text-slate-300 group-hover:text-[#65AAD6] group-hover:translate-x-1 transition-all duration-200"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
 
-            {/* Specs Grid */}
-            {blade.specs && blade.specs.length > 0 && (
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
-                {blade.specs.slice(0, 4).map((spec, i) => (
-                  <div key={i}>
-                    <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">
-                      {spec.label}
-                    </p>
-                    <p className="text-sm font-bold text-slate-800 leading-tight">
-                      {spec.value}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* View Details Row */}
-            <div className="flex items-center justify-between pt-3 border-t border-slate-100">
-              <span className="inline-flex items-center gap-1.5 text-sm font-black text-[#001f4d] uppercase tracking-[0.12em] group-hover:underline underline-offset-4 decoration-2 transition-all">
-                View Specs &amp; Request Quote
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-              <span className="text-[10px] text-slate-400 uppercase tracking-wider">
-                Custom specs available
-              </span>
-            </div>
           </div>
 
         </div>

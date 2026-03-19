@@ -89,6 +89,44 @@ export function createApp({
   app.use("/", seoRouter);
 
   if (staticPath) {
+    // ── Anti-hotlinking: block cross-origin image embedding ────────────────
+    // Only blocks requests where a Referer header IS present but originates
+    // from a foreign domain — i.e. a competitor's site embedding your images.
+    // No-Referer requests (Googlebot, direct browser access, social scrapers)
+    // pass through untouched so SEO and link previews are never affected.
+    app.use((req, res, next) => {
+      if (
+        (req.method !== "GET" && req.method !== "HEAD") ||
+        !req.path.startsWith("/images/")
+      ) {
+        return next();
+      }
+
+      const referer = (req.headers.referer ??
+        req.headers.referrer) as string | undefined;
+
+      // No Referer = direct access / crawler / social scraper → allow
+      if (!referer) {
+        return next();
+      }
+
+      try {
+        const { hostname } = new URL(referer);
+        if (
+          hostname === "sureay.com" ||
+          hostname.endsWith(".sureay.com") ||
+          hostname === "localhost"
+        ) {
+          return next();
+        }
+      } catch {
+        // Malformed Referer header — deny
+      }
+
+      return res.status(403).send("Direct image access forbidden");
+    });
+    // ───────────────────────────────────────────────────────────────────────
+
     // Serve all static assets (JS, CSS, images, root index.html, paths with
     // trailing slash that already have index.html). redirect:false prevents
     // 301 trailing-slash redirects that cause Google crawl loops.

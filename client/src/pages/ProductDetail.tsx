@@ -33,6 +33,7 @@ import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
 import TrustProtocol from "@/components/product-detail/TrustProtocol";
 import WhatsAppFloat from "@/components/common/WhatsAppFloat";
+import ProductFAQ from "@/components/product-detail/ProductFAQ";
 
 // ── Component ────────────────────────────────────────────────────────────────
 
@@ -103,36 +104,34 @@ export default function ProductDetail() {
         />
 
         {/* ── Content ──────────────────────────────────────────────────── */}
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 pt-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-8">
           <div className="flex flex-col gap-y-8">
 
             {/* Zone 1 — CAD Viewport Hero (no inner px, uses outer container padding) */}
             <BladeHero blade={blade} />
 
             {/* Zone 1b — Trust credentials strip */}
-            <div className="-mx-6 sm:-mx-12">
+            <div className="-mx-4 sm:-mx-8">
               <TrustProtocol />
             </div>
 
             {/* Zone 2 — Comprehensive Technical Data */}
-            <div className="-mx-6 sm:-mx-8">
+            <div className="-mx-4 sm:-mx-8">
               <ComprehensiveData blade={blade} />
             </div>
-            
+
             {/* Inline CTA after dimensions + key specs */}
-            <div className="-mx-6 sm:-mx-8">
+            <div className="-mx-4 sm:-mx-8">
               <InlineRFQPrompt />
             </div>
 
             {/* Zone 3 — Decisive Specifications: image combination + spec table */}
-            <div className="-mx-6 sm:-mx-8">
+            <div className="-mx-4 sm:-mx-8">
               <DecisiveSpecs blade={blade} />
             </div>
 
-
-
             {/* Zone 4 — Technical Audit Log */}
-            <div className="-mx-6 sm:-mx-8 pt-8">
+            <div className="-mx-4 sm:-mx-8 pt-8">
               <TechnicalAudit blade={blade} />
             </div>
 
@@ -144,7 +143,17 @@ export default function ProductDetail() {
           <CompatibleTooling blades={relatedBlades} />
         </div>
 
-        {/* Zone 6 — Contact / RFQ form */}
+        {/* Zone 6 — FAQ (just above RFQ) */}
+        {blade.faqs && (
+          <div className="mt-16">
+            <ProductFAQ
+              faqs={blade.faqs}
+              productName={blade.fullName || blade.name}
+            />
+          </div>
+        )}
+
+        {/* Zone 7 — Contact / RFQ form */}
         <div id="rfq">
           <ContactRFQ productName={blade.name} />
         </div>

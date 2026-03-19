@@ -148,12 +148,8 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
         </div>
 
-        {/* ── Col 2: Product Grid 3×2 (54%) ───────────────────────────── */}
-        <div className="w-[54%] flex-shrink-0 px-8 border-r border-slate-200">
-
-          <p className="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-[0.28em] mb-4">
-            {active.title} — Tooling
-          </p>
+        {/* ── Col 2: Product Grid (expanded) ──────────────────────────── */}
+        <div className="flex-1 min-w-0 px-8">
 
           <AnimatePresence mode="wait">
             <motion.div
@@ -162,14 +158,14 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ type: "spring", stiffness: 500, damping: 45 }}
-              className="grid grid-cols-3 gap-x-5 gap-y-6"
+              className="grid grid-cols-4 gap-x-5 gap-y-6"
             >
-              {active.items.slice(0, 6).map((item) => (
+              {active.items.slice(0, 8).map((item) => (
                 <Link key={item.id} href={item.href}>
                   <div onClick={onClose} className="group cursor-pointer">
 
-                    {/* Product image — 21:9 slab ratio */}
-                    <div className="aspect-[21/9] bg-slate-100 overflow-hidden mb-2">
+                    {/* Product image — square */}
+                    <div className="aspect-square bg-slate-100 overflow-hidden mb-2">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -178,11 +174,6 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-
-                    {/* REF code */}
-                    <p className="font-mono text-[10px] text-slate-400 uppercase tracking-widest mb-0.5">
-                      {item.refCode}
-                    </p>
 
                     {/* Name */}
                     <p className="font-black text-[12px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
@@ -194,73 +185,6 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               ))}
             </motion.div>
           </AnimatePresence>
-
-          <Link href="/products">
-            <div
-              onClick={onClose}
-              className="mt-5 font-mono text-[10px] font-bold text-[#003366] uppercase tracking-[0.22em] hover:underline cursor-pointer"
-            >
-              → View All {active.title} Blades
-            </div>
-          </Link>
-
-        </div>
-
-        {/* ── Col 3: Industry Image + CTA (26%) ───────────────────────── */}
-        <div className="w-[26%] flex-shrink-0 pl-8 flex flex-col">
-
-          {/* Cover image */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeIdx + "-cover"}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="relative aspect-[4/3] overflow-hidden flex-shrink-0 mb-4"
-            >
-              <img
-                src={active.featured.coverImage}
-                alt={active.featured.title}
-                loading="lazy"
-                decoding="async"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              {/* Dark gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/85 via-[#001f4d]/30 to-transparent" />
-              {/* Image caption */}
-              <div className="absolute bottom-0 left-0 right-0 p-3">
-                <p className="font-mono text-[8px] text-white/55 uppercase tracking-[0.25em] mb-1">
-                  {active.featured.subtitle}
-                </p>
-                <p className="font-black text-[13px] text-white uppercase leading-tight tracking-tight">
-                  {active.featured.title}
-                </p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-
-          {/* Upload CAD CTA */}
-          <Link href="/contact">
-            <div
-              onClick={onClose}
-              className="w-full bg-[#001f4d] hover:bg-[#003399] text-white
-                         font-mono text-[11px] font-black tracking-[0.18em] uppercase
-                         px-4 py-3 rounded-none transition-colors duration-150
-                         flex items-center justify-between cursor-pointer group"
-            >
-              <span className="flex items-center gap-2">
-                <Upload className="w-3.5 h-3.5" strokeWidth={2} />
-                Upload CAD
-              </span>
-              <span className="opacity-60 group-hover:opacity-100 transition-opacity">→</span>
-            </div>
-          </Link>
-
-          {/* Quality strip */}
-          <p className="font-mono text-[8px] text-slate-400 uppercase tracking-widest mt-3">
-            ■ ISO 9001:2015 · CMM VERIFIED
-          </p>
 
         </div>
 
