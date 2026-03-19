@@ -115,9 +115,9 @@ export default function ProductDetail() {
               <TrustProtocol />
             </div>
 
-            {/* Zone 2 — Comprehensive Technical Data */}
+            {/* Zone 2 — Decisive Specifications: spec table + image */}
             <div className="-mx-4 sm:-mx-8">
-              <ComprehensiveData blade={blade} />
+              <DecisiveSpecs blade={blade} />
             </div>
 
             {/* Inline CTA after dimensions + key specs */}
@@ -125,9 +125,9 @@ export default function ProductDetail() {
               <InlineRFQPrompt />
             </div>
 
-            {/* Zone 3 — Decisive Specifications: image combination + spec table */}
+            {/* Zone 3 — Comprehensive Technical Data */}
             <div className="-mx-4 sm:-mx-8">
-              <DecisiveSpecs blade={blade} />
+              <ComprehensiveData blade={blade} />
             </div>
 
             {/* Zone 4 — Technical Audit Log */}

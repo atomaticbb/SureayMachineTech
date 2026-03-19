@@ -47,14 +47,16 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366] uppercase tracking-tight leading-tight mb-4 transition-colors">
               {blade.name}
             </h3>
-            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 flex-1 mb-6">
+            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
               {blade.fullDescription || blade.description}
             </p>
-            <div className="inline-flex items-center gap-2 bg-[#001f4d] group-hover:bg-[#003366] text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
+            <div className="mt-auto">
+            <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
               View Details
               <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
               </svg>
+            </div>
             </div>
           </div>
 

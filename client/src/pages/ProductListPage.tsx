@@ -124,59 +124,38 @@ export default function BladeListPage() {
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 1 — Technical Hero (Left Navy / Right Image)
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="border-b border-slate-200">
-        <div className="flex flex-col lg:flex-row">
+      <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden">
 
-          {/* Left: Navy Text Panel */}
-          <div className="lg:w-[45%] flex-shrink-0 bg-[#001f4d] px-5 sm:px-8 lg:px-16 py-6 lg:py-16 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10">
+        {/* Full-bleed background image */}
+        <img
+          src="/images/hero/cnc-machine-produce-blades.png"
+          alt="Industrial Blades & Cutting Tools — Sureay Machinery"
+          className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
+        />
 
-            <div>
-              <p className="font-mono text-[10px] text-white/40 tracking-[0.35em] uppercase mb-8">
-                [ PRODUCT CATALOGUE — INDUSTRIAL BLADES ]
+        {/* Navy panel — diagonal right edge via clip-path */}
+        <div
+          className="absolute inset-y-0 left-0 h-full bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-8 lg:py-16 w-full lg:w-[62%]"
+          style={{ clipPath: "polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%)" }}
+        >
+          <div>
+            <p className="font-mono text-[10px] text-white/40 tracking-[0.35em] uppercase mb-8">
+              [ PRODUCT CATALOGUE — INDUSTRIAL BLADES ]
+            </p>
+
+            <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
+              Industrial<br />Blades &amp;<br />Cutting Tools
+            </h1>
+
+            <div className="border-l-4 border-white/30 pl-5 max-w-xl mb-10">
+              <p className="text-white/70 text-base leading-relaxed">
+                Premium alloy steel blades for recycling, paper, and converting industries — engineered for maximum wear resistance and extended service life.
               </p>
-
-              <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
-                Industrial<br />Blades &amp;<br />Cutting Tools
-              </h1>
-
-              <div className="border-l-4 border-white/30 pl-5 max-w-xl mb-10">
-                <p className="text-white/70 text-base leading-relaxed">
-                  Premium alloy steel blades for recycling, paper, and converting industries — engineered for maximum wear resistance and extended service life.
-                </p>
-              </div>
             </div>
           </div>
-
-          {/* Right: Image Viewport */}
-          <div className="relative flex-1 overflow-hidden min-h-[320px] lg:min-h-0">
-            <img
-              src="/images/hero/blades-hero-04.webp"
-              alt="Industrial Blades & Cutting Tools — Sureay Machinery"
-              className="absolute inset-0 w-full h-full object-contain brightness-95 contrast-110 saturate-75"
-            />
-          </div>
-
         </div>
+
       </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          TRUST STRIP — Est. · ISO · Export Markets
-      ═══════════════════════════════════════════════════════════════════ */}
-      <div className="border-b border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
-          {[
-            { label: "Est.", value: "2008" },
-            { label: "Certified", value: "ISO 9001:2015" },
-            { label: "Export Markets", value: "50+ Countries" },
-            { label: "OEM Custom", value: "From 1 Set" },
-          ].map(({ label, value }) => (
-            <div key={label} className="flex items-center gap-2">
-              <span className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">{label}</span>
-              <span className="font-black text-sm text-[#001f4d] uppercase tracking-tight">{value}</span>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 2 + 3 — Filter Bar + Full-Width Product Grid

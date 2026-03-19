@@ -15,7 +15,7 @@ export default function TechnicalFAQ() {
           {/* Left — Manufacturing Image */}
           <div className="relative overflow-hidden border border-slate-200 h-[400px] lg:h-[440px] lg:sticky lg:top-20 self-start bg-slate-900">
             <img
-              src="/images/process/cnc-precision-grinding.webp"
+              src="/images/common/rfq-qa.webp"
               alt="CNC precision manufacturing — in-house vacuum heat treatment and 5-axis grinding"
               loading="lazy"
               decoding="async"

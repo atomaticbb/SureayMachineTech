@@ -58,7 +58,7 @@ export const ECOSYSTEMS = [
       { label: "What You Can Review", value: "Knife sets, clearance-critical tooling, and metal-processing application guidance" },
     ],
     href: "/metal-industry",
-    image: "/images/applications/Metal-Waste-Recycling.webp",
+    image: "/images/applications/slitting-line-machine-working.webp",
   },
 ];
 

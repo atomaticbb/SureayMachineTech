@@ -275,9 +275,9 @@ export const blades: Blade[] = [
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Shredder Blades",
-    image: "/images/products/shredder-blades/shredder-blades-04.webp",
+    image: "/images/products/shredder-blades/shredder-blades.webp",
     gallery: [
-      "/images/products/shredder-blades/shredder-blades-04.webp",
+      "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-01.webp",
       "/images/products/shredder-blades/shredder-blades-02.webp",
       "/images/products/shredder-blades/shredder-blades-03.webp",
@@ -335,7 +335,7 @@ export const blades: Blade[] = [
       col2: "Hex Socket",
       col3: "Blade Thickness",
       col4: "Blade Spacer Outer Diameter",
-      caption: "* Standard dimensions for multi-shaft shredder systems. All measurements in millimeters (mm). Compatible with Vecoplan, Weima, Untha, Lindner. Custom configurations available.",
+      caption: "* Standard dimensions for multi-shaft shredder systems. Custom configurations available.",
     },
 
     standardDimensions: [
@@ -444,7 +444,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp", // ComprehensiveData panel - placeholder
     ],
     description:
       "D2 and M2 HSS large-diameter circular log saw blades for high-speed tissue converting—precision-ground to lateral runout ≤0.15mm, edge runout ≤0.10mm, and parallelism 0.05mm for dust-free, fiber-crush-free cross-cutting of tissue, bath tissue, and paper-towel logs. Standard bore Ø68.26mm (+0.05mm) for Fabio Perini, Casmatic, and PCMC log saws; custom OD to Ø1200mm. Optional TiN or hard-chrome coating extends MTBR in high-humidity paper mills.",
@@ -581,11 +580,8 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
-      "/images/products/granulator-blades/granulator-blades-04.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/granulator-blades-05.webp",
+      "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
       "D2, SKD-11, and Cr12MoV granulator rotor and stator knives precision-ground to ±0.02mm bolt-hole tolerance for Cumberland, Conair/Wortex, Herbold, Pallmann, and Rapid unit granulators. Bevel angles from 30° to 55° are matched to polymer type—delivering clean, low-fines regrind for closed-loop recycling of PET bottles, PVC pipes, and injection-moulding runners. Vacuum hardening plus deep cryogenic processing stabilizes HRC 58–62 for extended edge retention between sharpening cycles. Custom rotor profiles available to drawing within 10 working days.",
@@ -743,9 +739,8 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
+      "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp", 
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-05.webp", 
     ],
     description:
       "Guillotine paper cutter replacement blades in M2, SKH-9, and SKH-51 HSS or TCT (Tungsten Carbide Tipped) inlay for commercial print shops, bindery lines, and packaging converters. Precision-ground to 21° bevel with face flatness ≤0.05mm—delivering clean, dust-free cross-cuts on coated art paper, multi-layer board, and carbonless copy stock. Standard lengths 450–2050mm; length tolerance +2/−1mm, edge thickness 0/−0.1mm. HSS grades deliver 4–6× longer service life versus standard O1 tool steel—fewer resharpening cycles, lower press-room downtime.",
@@ -1057,10 +1052,7 @@ export const blades: Blade[] = [
     image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
     description:
@@ -1338,11 +1330,8 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-05.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
     ],
 
     description:

@@ -21,7 +21,7 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
   const specs = blade.specs ?? [];
   if (specs.length === 0) return null;
 
-  const panelImage = blade.gallery?.[4] ?? blade.image;
+  const panelImage = blade.gallery?.at(-1) ?? blade.image;
 
   return (
     <section
@@ -36,26 +36,10 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
         Decisive Specifications
       </h2>
 
-      {/* Flex row: image left, table right — equal height */}
-      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-stretch">
+      {/* Flex row: items-start — each column its own height, no cross-stretch */}
+      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
 
-        {/* Left — product image */}
-        <div className="flex-1 min-w-0 h-full">
-          <div
-            className="w-full h-full min-h-[280px] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
-            style={DOT_GRID_STYLE}
-          >
-            <img
-              src={panelImage}
-              alt={blade.fullName || blade.name}
-              className="w-full h-full object-contain p-8 mix-blend-multiply"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
-
-        {/* Right — specs table only */}
+        {/* Left — specs table only */}
         <div className="w-full lg:w-[500px] xl:w-[540px] flex-shrink-0">
           <div className="border-t-2 border-t-[#001f4d] border border-slate-300 overflow-hidden h-full">
             <table className="w-full text-left border-collapse">
@@ -67,17 +51,33 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
                   >
                     <th
                       scope="row"
-                      className="px-6 py-3.5 border-r border-slate-200 font-mono text-[11px] text-slate-600 uppercase tracking-wider font-semibold w-[36%] lg:w-[28%]"
+                      className="px-5 py-3 border-r border-slate-200 font-mono text-[11px] text-slate-600 uppercase tracking-wider font-semibold w-[36%] lg:w-[28%]"
                     >
                       {spec.label}
                     </th>
-                    <td className="px-6 py-3.5 text-[16px] font-bold text-[#001f4d]">
+                    <td className="px-5 py-3 font-mono font-medium text-[14px] text-[#001f4d]">
                       {spec.value}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Right — product image, fixed aspect ratio */}
+        <div className="flex-1 min-w-0">
+          <div
+            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
+            style={DOT_GRID_STYLE}
+          >
+            <img
+              src={panelImage}
+              alt={blade.fullName || blade.name}
+              className="w-full h-full object-contain p-8 mix-blend-multiply"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
