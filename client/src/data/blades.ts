@@ -87,11 +87,10 @@ export interface Blade {
   isFeatured?: boolean;
   catalogUrl?: string;
 
-  // ── SEO — Product review (Google Rich Results) ────────────────────────────
-  review?: {
-    authorName:  string;         // B2B company name (Organization)
-    reviewBody:  string;
-    ratingValue: string | number;
+  // ── SEO — AggregateOffer price range (Google Rich Results) ──────────────
+  offers?: {
+    lowPrice:  number;
+    highPrice: number;
   };
 
   // ── SEO — FAQPage schema (ProductFAQ component) ───────────────────────────
@@ -201,10 +200,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["shredder-blades", "paper-cutting-blades"],
-    review: {
-      authorName:  "Flexopak Converting Ltd.",
-      reviewBody:  "Running Sureay rotary slitter knives on our BOPP film lines at 450 m/min. Thickness tolerance held at ±0.002mm across a 12-knife arbor stack — slit-width deviation dropped measurably after switching. Edge life on PET liner slitting is approximately 40% longer than our previous supplier. OEM bore dimensions matched exactly on first installation, no rework required.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  25,
+      highPrice: 350,
     },
     faqs: {
       technical: [
@@ -364,10 +362,9 @@ export const blades: Blade[] = [
      ],
 
     relatedBladeIds: ["granulator-blades", "rotary-slitter-knives"],
-    review: {
-      authorName:  "EuroRecycling GmbH",
-      reviewBody:  "Using Sureay multi-shaft inserts on our Vecoplan VA1500 processing mixed HDPE and PP rigid waste. Counter-bore positional tolerance is measurably tighter than comparable suppliers — no insert micro-rocking after 600 operating hours. Switched to DC53 grade for engineering plastic runs and edge retention on PA66-GF30 improved significantly across all three rotors.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  45,
+      highPrice: 600,
     },
     faqs: {
       technical: [
@@ -502,10 +499,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["shredder-blades", "paper-cutting-blades"],
-    review: {
-      authorName:  "Caspian Paper Industries",
-      reviewBody:  "Sureay tissue log saw blades on our Fabio Perini RA line maintain lateral runout under 0.12mm consistently across full production runs. Dust generation is noticeably lower than our previous supplier blades. D2 grade standardised for 300-series tissue with MTBR consistently above 18 million cuts per set before first resharpen.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  180,
+      highPrice: 1200,
     },
     faqs: {
       technical: [
@@ -659,10 +655,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["shredder-blades", "rotary-slitter-knives"],
-    review: {
-      authorName:  "Plastco Recycling Corporation",
-      reviewBody:  "Sureay granulator blades on our Cumberland 1220 machines processing PET bottle flake. Face flatness verified at 0.04mm after re-grinding — critical for consistent rotor-to-bed gap. Cryogenic treatment extends time between sharpening cycles by approximately 30% versus conventional heat treatment. Regrind particle size distribution tightened noticeably after switching.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  25,
+      highPrice: 320,
     },
     faqs: {
       technical: [
@@ -817,10 +812,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
-    review: {
-      authorName:  "Druckhaus Meridian GmbH",
-      reviewBody:  "HSS M2 blades from Sureay for our Polar 137 guillotine matched the factory bore and mounting pattern exactly — no modification required on installation. Cutting coated art paper and label stock, the edge held sharp through 95,000 cuts before first resharpen, versus 65,000 cuts with our previous OEM replacement. Supplied sharp-ground and ready to install.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  80,
+      highPrice: 650,
     },
     faqs: {
       technical: [
@@ -976,10 +970,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["shredder-blades", "granulator-blades"],
-    review: {
-      authorName:  "Nordic Industrial Recyclers AS",
-      reviewBody:  "Sureay single-shaft inserts on our Lindner Urraco 600 processing post-industrial nylon runners and HDPE pipe scrap. Face flatness consistent at ±0.02mm across the full rotor stack — zero material wrap-back incidents since replacing our previous undersized inserts. The four-edge indexable design reduced our annual tooling expenditure by over 60% versus non-indexable replacements.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  20,
+      highPrice: 200,
     },
     faqs: {
       technical: [
@@ -1109,10 +1102,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["metal-shear-blades", "alloy-blades"],
-    review: {
-      authorName:  "Baltic Steel Service Centre",
-      reviewBody:  "Sureay D2 circular slitter knives on our 1600mm slitting line processing cold-rolled and galvanized coil. Every knife in the matched set verified within ±0.001mm on our CMM before installation. Burr height on CR steel strip stayed under 0.05mm for the full coil run. Mirror-lapped side faces maintained consistent arbor contact throughout the complete service life.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  50,
+      highPrice: 800,
     },
     faqs: {
       technical: [
@@ -1250,10 +1242,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["metal-coil-slitting-knives", "alloy-blades"],
-    review: {
-      authorName:  "Metalform Fabrication Inc.",
-      reviewBody:  "9CrSi shear blades from Sureay on our Amada 3000mm hydraulic guillotine cutting 304 stainless and mild steel up to 12mm. Parallelism across full blade length measured at 0.04mm — noticeably better than domestic replacements we trialled. Edge held through heavy-cycle production on galvanized sheet with no chipping events across the entire first service interval.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  120,
+      highPrice: 1500,
     },
     faqs: {
       technical: [
@@ -1402,10 +1393,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
-    review: {
-      authorName:  "Bindery Solutions Europa GmbH",
-      reviewBody:  "Sureay HSS Duritan three-knife trimmer set for our Polar TW 66 three-side trimmer. Supplied as a complete matched pair with exact OEM bore and mounting pattern — direct fit with no modification required. Edge on coated art paper held sharp for over 120,000 book blocks before first resharpen. Clean cut edge with no fibre fraying, essential for our high-specification book production.",
-      ratingValue: "5",
+    offers: {
+      lowPrice:  80,
+      highPrice: 650,
     },
     faqs: {
       technical: [

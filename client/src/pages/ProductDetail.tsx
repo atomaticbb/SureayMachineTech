@@ -85,7 +85,7 @@ export default function ProductDetail() {
           sku:         blade.id,
           mpn:         blade.id,
           brand:       "Sureay Industrial Blades",
-          ...(blade.review && { review: blade.review }),
+          ...(blade.offers && { offers: blade.offers }),
         }}
       />
 

@@ -12,10 +12,9 @@ export interface ProductData {
   sku?:        string;
   mpn?:        string;
   brand?:      string;   // defaults to "Sureay"
-  review?: {
-    authorName:  string;         // B2B company name
-    reviewBody:  string;
-    ratingValue: string | number; // typically "5"
+  offers?: {
+    lowPrice:  number;
+    highPrice: number;
   };
 }
 
@@ -74,19 +73,36 @@ export default function SEO({
           "@type": "Brand",
           name:    productData.brand ?? "Sureay",
         },
-        ...(productData.review && {
-          review: {
-            "@type": "Review",
-            reviewRating: {
-              "@type":      "Rating",
-              ratingValue:  productData.review.ratingValue,
-              bestRating:   "5",
+        ...(productData.offers && {
+          offers: {
+            "@type":        "AggregateOffer",
+            lowPrice:        productData.offers.lowPrice,
+            highPrice:       productData.offers.highPrice,
+            priceCurrency:  "USD",
+            offerCount:     "1",
+            availability:   "https://schema.org/PreOrder",
+            shippingDetails: {
+              "@type": "OfferShippingDetails",
+              shippingDestination: {
+                "@type":        "DefinedRegion",
+                addressCountry: "US",
+              },
+              deliveryTime: {
+                "@type": "ShippingDeliveryTime",
+                handlingTime: {
+                  "@type":   "QuantitativeValue",
+                  minValue:  15,
+                  maxValue:  25,
+                  unitCode:  "DAY",
+                },
+                transitTime: {
+                  "@type":   "QuantitativeValue",
+                  minValue:  5,
+                  maxValue:  12,
+                  unitCode:  "DAY",
+                },
+              },
             },
-            author: {
-              "@type": "Organization",
-              name:    productData.review.authorName,
-            },
-            reviewBody: productData.review.reviewBody,
           },
         }),
       }
