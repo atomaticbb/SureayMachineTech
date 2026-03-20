@@ -1,7 +1,7 @@
 import { Router, Request, Response } from "express";
 
 const router = Router();
-const BASE_URL = "https://www.sureay.com";
+const BASE_URL = "https://sureay.com";
 
 // ── GET /robots.txt ───────────────────────────────────────────────────────────
 router.get("/robots.txt", (_req: Request, res: Response) => {

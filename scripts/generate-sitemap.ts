@@ -22,7 +22,7 @@ import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT     = path.resolve(__dirname, "../client/public/sitemap.xml");
-const BASE_URL   = "https://www.sureay.com";
+const BASE_URL   = "https://sureay.com";
 const TODAY      = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

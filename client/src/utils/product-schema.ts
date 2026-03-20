@@ -45,7 +45,7 @@ export interface ProductSchema {
  * Generate Product Schema JSON-LD for a blade product
  */
 export function generateProductSchema(blade: Blade): ProductSchema {
-  const baseUrl = "https://www.sureay.com";
+  const baseUrl = "https://sureay.com";
 
   return {
     "@context": "https://schema.org/",
@@ -79,8 +79,8 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Sureay Machinery Technology Co., Ltd.",
-    url: "https://www.sureay.com",
-    logo: "https://www.sureay.com/images/logo/sureay-logo.webp",
+    url: "https://sureay.com",
+    logo: "https://sureay.com/images/logo/sureay-logo.webp",
     description: "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting since 2008.",
     address: {
       "@type": "PostalAddress",
@@ -118,7 +118,7 @@ export function generateBreadcrumbSchema(items: Array<{ name: string; url: strin
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://www.sureay.com${item.url}`,
+      item: `https://sureay.com${item.url}`,
     })),
   };
 }

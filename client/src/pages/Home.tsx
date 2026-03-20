@@ -21,19 +21,19 @@ const ITEM_LIST_LD = JSON.stringify({
       "@type": "ListItem",
       position: 1,
       name: "Plastic Recycling Blades",
-      url: "https://www.sureay.com/products/shredder-blades",
+      url: "https://sureay.com/products/shredder-blades",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Metal Processing Knives",
-      url: "https://www.sureay.com/products/rotary-slitter-knives",
+      url: "https://sureay.com/products/rotary-slitter-knives",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Paper & Tissue Blades",
-      url: "https://www.sureay.com/products/tissue-log-saw-blades",
+      url: "https://sureay.com/products/tissue-log-saw-blades",
     },
   ],
 });

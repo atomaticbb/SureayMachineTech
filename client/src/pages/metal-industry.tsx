@@ -103,7 +103,7 @@ const PAGE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Metal Processing Tooling & Coil Slitting Equipment",
-  url: "https://www.sureay.com/industry/metal-processing",
+  url: "https://sureay.com/industry/metal-processing",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -111,10 +111,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Circular Slitter Knives",
-        image: "https://www.sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
+        image: "https://sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
         description: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
-        url: "https://www.sureay.com/products/rotary-cutter-blades",
+        url: "https://sureay.com/products/rotary-cutter-blades",
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
@@ -130,10 +130,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Guillotine Shear Blades",
-        image: "https://www.sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
+        image: "https://sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
         description: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
-        url: "https://www.sureay.com/products/alloy-blades",
+        url: "https://sureay.com/products/alloy-blades",
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",

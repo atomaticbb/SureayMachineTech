@@ -104,7 +104,7 @@ const PAGE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Paper & Tissue Converting Knives",
-  url: "https://www.sureay.com/industry/paper-tissue",
+  url: "https://sureay.com/industry/paper-tissue",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -112,10 +112,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Tissue Log Saw Blades",
-        image: "https://www.sureay.com/images/products/blades/tissue-log-saw-blades.webp",
+        image: "https://sureay.com/images/products/blades/tissue-log-saw-blades.webp",
         description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
-        url: "https://www.sureay.com/products/tissue-log-saw-blades",
+        url: "https://sureay.com/products/tissue-log-saw-blades",
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",

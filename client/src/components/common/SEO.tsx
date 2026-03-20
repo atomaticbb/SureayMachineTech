@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 const BRAND    = "Sureay Machinery";
-const BASE_URL = "https://www.sureay.com";
+const BASE_URL = "https://sureay.com";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 

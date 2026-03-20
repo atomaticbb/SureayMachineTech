@@ -1,5 +1,5 @@
 # Sureay Machine Tech - Robots.txt
-# https://www.sureay.com/robots.txt
+# https://sureay.com/robots.txt
 
 User-agent: *
 Allow: /
@@ -11,7 +11,7 @@ Disallow: /admin-login
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.sureay.com/sitemap.xml
+Sitemap: https://sureay.com/sitemap.xml
 
 # Crawl delay (optional, adjust if needed)
 # Crawl-delay: 1
