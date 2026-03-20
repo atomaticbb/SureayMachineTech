@@ -40,14 +40,15 @@ const HERO_DATA: IndustryHeroData = {
     "CMM-verified—for zero-rework drop-in installation.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/tissue-industry/tissue-and-paper.webp",           alt: "Tissue and paper converting"                    },
-    { src: "/images/applications/tissue-industry/virgin-tissue.webp",              alt: "Virgin tissue rolls production"                 },
-    { src: "/images/applications/tissue-industry/granulator-blades-05.webp",       alt: "Granulator blades for paper processing"         },
+    { src: "/images/applications/tissue-industry/tissue-and-paper.webp",           alt: "Tissue and paper converting line"               },
+    { src: "/images/applications/tissue-industry/tissue-log-saw-blades-02.webp",   alt: "Tissue log saw blades"                          },
     { src: "/images/applications/tissue-industry/paper-cutting-blades-02.webp",    alt: "Paper cutting blades precision"                 },
+    { src: "/images/applications/tissue-industry/granulator-blades-05.webp",       alt: "Granulator blades for paper processing"         },
+    { src: "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",   alt: "Rotary slitter knives for tissue converting"    },
+    { src: "/images/applications/tissue-industry/granulator-blades-04.webp",       alt: "Granulator blades close-up"                     },
     { src: "/images/applications/tissue-industry/blades.webp",                     alt: "Industrial blades for tissue processing"        },
-    { src: "/images/applications/tissue-industry/6-Wire%20Cut.webp",               alt: "Wire-cut machining process detail"              },
-    { src: "/images/applications/tissue-industry/Raw%20Material%20Selection.webp", alt: "Raw material selection for tissue processing"   },
-    { src: "/images/applications/tissue-industry/acuum-heat-treatment.webp",       alt: "Vacuum heat treatment process"                  },
+    { src: "/images/applications/tissue-industry/virgin-tissue.webp",              alt: "Virgin tissue rolls production"                 },
+
   ],
 };
 

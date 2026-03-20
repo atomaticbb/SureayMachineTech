@@ -47,7 +47,7 @@ const HERO_DATA: IndustryHeroData = {
     { src: "/images/applications/plastic-industry/blades.webp",                        alt: "Industrial blades for plastics recycling"          },
     { src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",                  alt: "Wire-cut machining process detail"                  },
     { src: "/images/applications/plastic-industry/Raw%20Material%20Selection.webp",    alt: "Raw material selection for plastic processing"     },
-    { src: "/images/applications/plastic-industry/acuum-heat-treatment.webp",          alt: "Vacuum heat treatment process"                     },
+    { src: "/images/applications/plastic-industry/vacuum-heat-treatment.webp",          alt: "Vacuum heat treatment process"                     },
   ],
 };
 

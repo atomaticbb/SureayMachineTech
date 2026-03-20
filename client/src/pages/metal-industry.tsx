@@ -40,14 +40,14 @@ const HERO_DATA: IndustryHeroData = {
     "maintained throughout the full production run.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/metal-industry/cold-rolled-steel.webp",           alt: "Cold rolled steel coil processing"               },
-    { src: "/images/applications/metal-industry/machine.webp",                     alt: "Metal processing machine"                        },
+    { src: "/images/applications/metal-industry/metal-slitter-knives-04.webp",  alt: "Industrial metal slitter knives for coil slitting equipment"},
+    { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",  alt: "Industrial blades for metal fabrication"         },
+    { src: "/images/applications/metal-industry/metal-shear-blades-00.webp",       alt: "Metal shear blades for guillotine shearing"      },
     { src: "/images/applications/metal-industry/metal-slitter-knives-00.webp",     alt: "Metal slitter knives for coil slitting"          },
     { src: "/images/applications/metal-industry/metal-slitter-knives-01.webp",     alt: "Rotary metal slitter knives close-up"            },
-    { src: "/images/applications/metal-industry/metal-shear-blades-00.webp",       alt: "Metal shear blades for guillotine shearing"      },
     { src: "/images/applications/metal-industry/metal-shear-blades-03.webp",       alt: "Heavy-duty metal shear knife detail"             },
-    { src: "/images/applications/metal-industry/single-shredder-blades-010.webp",  alt: "Industrial blades for metal fabrication"         },
-    { src: "/images/applications/metal-industry/metal-slitter-knives-04.webp",  alt: "Industrial metal slitter knives for coil slitting equipment"},
+    { src: "/images/applications/metal-industry/cold-rolled-steel.webp",           alt: "Cold rolled steel coil processing"               },
+    { src: "/images/applications/metal-industry/machine.webp",                     alt: "Metal processing machine"                        },
   ],
 };
 

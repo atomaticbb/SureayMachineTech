@@ -52,7 +52,7 @@ const FILTER_GROUPS: { groupLabel: string; items: FilterItem[] }[] = [
 
 const FACTORY_IMAGES = [
   { src: "/images/process/premium-steel-selection.webp", ref: "REF: PREMIUM STEEL SELECTION",   alt: "Premium Steel Selection" },
-  { src: "/images/process/heat-treatment.webp",          ref: "REF: VACUUM HEAT TREATMENT",      alt: "Vacuum Heat Treatment" },
+  { src: "/images/process/vacuum-heat-treatment.webp",          ref: "REF: VACUUM HEAT TREATMENT",      alt: "Vacuum Heat Treatment" },
   { src: "/images/process/cnc-precision-grinding.webp",  ref: "REF: CNC PRECISION GRINDING",     alt: "CNC Precision Grinding" },
   { src: "/images/process/quality-control.webp",         ref: "REF: RIGOROUS QUALITY CONTROL",   alt: "Rigorous Quality Control" },
 ];
@@ -287,7 +287,7 @@ export default function BladeListPage() {
                 [ MANUFACTURING CAPABILITY ]
               </p>
               <h2 className="text-3xl lg:text-4xl font-black text-[#001f4d] uppercase tracking-tight leading-tight mb-8">
-                Your Trusted Industrial<br />Blade Manufacturer<br />in China
+                Your Trusted Industrial<br />Blade Manufacturer
               </h2>
               <div className="border-l-4 border-[#001f4d] pl-6 space-y-5">
                 <p className="text-slate-600 text-base leading-relaxed">
