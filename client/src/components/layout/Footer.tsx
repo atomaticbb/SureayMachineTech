@@ -59,7 +59,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4 text-[15px]">
               <li>
-                <Link href="/products/shredder-blades" className="hover:text-white transition-colors">
+                <Link href="/products/twin-shaft-blades-recycling" className="hover:text-white transition-colors">
                   Shredder Blades
                 </Link>
               </li>
@@ -84,8 +84,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/products/metal-shear-blades" className="hover:text-white transition-colors">
-                  Metal Shear Blades
+                <Link href="/products/metal-shear-knives" className="hover:text-white transition-colors">
+                  Metal Shear Knives
                 </Link>
               </li>
             </ul>
@@ -114,7 +114,17 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/paper-industry" className="hover:text-white transition-colors">
-                  Paper &amp; Tissue
+                  Paper, Tissue &amp; Corrugated
+                </Link>
+              </li>
+              <li>
+                <Link href="/converting-industry" className="hover:text-white transition-colors">
+                  Flexible Converting
+                </Link>
+              </li>
+              <li>
+                <Link href="/new-energy-industry" className="hover:text-white transition-colors">
+                  New Energy &amp; Battery
                 </Link>
               </li>
             </ul>

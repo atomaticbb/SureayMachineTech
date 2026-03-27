@@ -29,6 +29,8 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
   if (!blade.standardDimensions || blade.standardDimensions.length === 0) return null;
 
   const hasLengthTeeth = blade.standardDimensions.some((r) => r.length !== undefined || r.teeth !== undefined);
+  const hasBoreHooks   = blade.standardDimensions.some((r) => r.bore  !== undefined || r.hooks !== undefined);
+  const hasOem         = blade.standardDimensions.some((r) => r.oem   !== undefined);
   // Only show spec column if col0 label is explicitly defined
   const hasSpec = blade.dimensionLabels?.col0 !== undefined && blade.standardDimensions.some((r) => r.spec !== undefined);
   // Only show col3 if explicitly defined or if there's thickness/type data
@@ -68,7 +70,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
             <img
               src={panelImage}
               alt={blade.fullName || blade.name}
-              className="w-full h-full object-contain p-8 mix-blend-multiply"
+              className="w-full h-full object-contain p-4 mix-blend-multiply"
               loading="lazy"
               decoding="async"
             />
@@ -92,7 +94,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                   <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
                     {col2Label}
                   </TableHead>
-                  {hasLengthTeeth ? (
+                  {hasLengthTeeth || hasBoreHooks ? (
                     <>
                       <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
                         {col3Label}
@@ -102,9 +104,16 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                       </TableHead>
                     </>
                   ) : hasCol3 ? (
-                    <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
-                      {col3Label}
-                    </TableHead>
+                    <>
+                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                        {col3Label}
+                      </TableHead>
+                      {hasOem && (
+                        <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                          {col4Label}
+                        </TableHead>
+                      )}
+                    </>
                   ) : null}
                 </TableRow>
               </TableHeader>
@@ -124,7 +133,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                       {hasSpec ? (row.dimension ?? row.od) : (row.dimension ?? row.spec ?? row.od)}
                     </TableCell>
                     <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {row.bolt ?? row.id}
+                      {hasBoreHooks ? (row.thickness ?? "—") : (row.bolt ?? row.id)}
                     </TableCell>
                     {hasLengthTeeth ? (
                       <>
@@ -135,10 +144,26 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                           {row.teeth ?? "—"}
                         </TableCell>
                       </>
+                    ) : hasBoreHooks ? (
+                      <>
+                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
+                          {row.bore ?? "—"}
+                        </TableCell>
+                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
+                          {row.hooks ?? "—"}
+                        </TableCell>
+                      </>
                     ) : hasCol3 ? (
-                      <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                        {row.type ?? row.thickness}
-                      </TableCell>
+                      <>
+                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
+                          {row.type ?? row.thickness}
+                        </TableCell>
+                        {hasOem && (
+                          <TableCell className="px-3 py-2.5 font-mono text-[14px] text-slate-500">
+                            {row.oem ?? "—"}
+                          </TableCell>
+                        )}
+                      </>
                     ) : null}
                   </TableRow>
                 ))}

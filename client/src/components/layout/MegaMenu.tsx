@@ -51,13 +51,13 @@ export interface MegaMenuData {
 
 // Short REF codes for the product matrix cards
 const REF_CODE: Record<BladeCategoryType, string> = {
-  alloy_blades:         "ALY",
-  rotary_blades:        "RCB",
-  shredder_blades:      "SHR",
-  tissue_paper_blades:  "TLS",
-  granulator_blades:    "GRN",
-  paper_cutting_blades: "PCB",
-  other_blades:         "OTH",
+  slitter_knives:    "SLT",
+  shredder_blades:   "SHR",
+  granulator_blades: "GRN",
+  log_saw_blades:    "LSW",
+  trim_cut_blades:   "TRM",
+  metal_processing:  "MTL",
+  battery_precision: "BAT",
 };
 
 const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
@@ -77,17 +77,17 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
   categories: [
     {
       id:    "cutting",
-      title: "CUTTING BLADES",
+      title: "SLITTING & CONVERTING",
       featured: {
         coverImage: "/images/products/blades/11-2-2_circular-blade_01.webp",
-        tagline:    "PREMIUM GRADE STEEL",
+        tagline:    "PRECISION GROUND · MIRROR FINISH",
         subtitle:   "ACTIVE CATEGORY",
-        title:      "CUTTING BLADES",
-        ctaText:    "EXPLORE CUTTING BLADES",
+        title:      "SLITTING & CONVERTING",
+        ctaText:    "EXPLORE SLITTER KNIVES",
         ctaHref:    "/products",
       },
       items: blades
-        .filter(b => b.category === "alloy_blades" || b.category === "rotary_blades")
+        .filter(b => b.category === "slitter_knives" || b.category === "battery_precision")
         .map(bladeToItem),
     },
     {
@@ -107,17 +107,17 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
     },
     {
       id:    "paper",
-      title: "PAPER CONVERTING",
+      title: "PAPER, TRIM & METAL",
       featured: {
         coverImage: "/images/products/blades/tissue-log-saw-blades.webp",
         tagline:    "ZERO DUST. BURR-FREE.",
         subtitle:   "ACTIVE CATEGORY",
-        title:      "PAPER CONVERTING",
+        title:      "PAPER, TRIM & METAL",
         ctaText:    "EXPLORE PAPER BLADES",
         ctaHref:    "/products",
       },
       items: blades
-        .filter(b => b.category === "tissue_paper_blades" || b.category === "paper_cutting_blades")
+        .filter(b => b.category === "log_saw_blades" || b.category === "trim_cut_blades" || b.category === "metal_processing")
         .map(bladeToItem),
     },
   ],
@@ -132,7 +132,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
   categories: [
     {
       id:    "recycling-waste",
-      title: "RECYCLING & WASTE MANAGEMENT",
+      title: "RECYCLING & WASTE",
       featured: {
         coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
         tagline:    "EXTREME DURABILITY & IMPACT RESISTANCE",
@@ -147,22 +147,22 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id:    "paper-packaging-converting",
-      title: "PAPER, PACKAGING & CONVERTING",
+      title: "PAPER, TISSUE & CORRUGATED",
       featured: {
         coverImage: "/images/applications/tissue-and-paper.webp",
         tagline:    "PRECISION CUTTING · ZERO DUST",
         subtitle:   "ACTIVE INDUSTRY",
-        title:      "PAPER, PACKAGING & CONVERTING",
-        ctaText:    "VIEW CONVERTING SOLUTIONS",
+        title:      "PAPER, TISSUE & CORRUGATED",
+        ctaText:    "VIEW PAPER SOLUTIONS",
         ctaHref:    "/paper-industry",
       },
       items: blades
-        .filter(b => b.sector === "paper" || b.sector === "converting")
+        .filter(b => b.sector === "paper")
         .map(bladeToItem),
     },
     {
       id:    "metal-processing",
-      title: "METAL COIL PROCESSING",
+      title: "METAL PROCESSING",
       featured: {
         coverImage: "/images/applications/Metal-Waste-Recycling.webp",
         tagline:    "HIGH-SPEED SHEAR CUTTING",
@@ -173,6 +173,36 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
       },
       items: blades
         .filter(b => b.sector === "metal")
+        .map(bladeToItem),
+    },
+    {
+      id:    "flexible-converting",
+      title: "FILM & CONVERTING",
+      featured: {
+        coverImage: "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
+        tagline:    "PRECISION FILM & FOIL SLITTING",
+        subtitle:   "ACTIVE INDUSTRY",
+        title:      "FLEXIBLE CONVERTING & PACKAGING",
+        ctaText:    "VIEW CONVERTING SOLUTIONS",
+        ctaHref:    "/converting-industry",
+      },
+      items: blades
+        .filter(b => b.sector === "converting")
+        .map(bladeToItem),
+    },
+    {
+      id:    "new-energy",
+      title: "NEW ENERGY",
+      featured: {
+        coverImage: "/images/applications/metal-industry/metal-slitter-knives-00.webp",
+        tagline:    "ZERO-BURR ELECTRODE SLITTING",
+        subtitle:   "ACTIVE INDUSTRY",
+        title:      "NEW ENERGY & BATTERY",
+        ctaText:    "VIEW NEW ENERGY SOLUTIONS",
+        ctaHref:    "/new-energy-industry",
+      },
+      items: blades
+        .filter(b => b.sector === "new_energy")
         .map(bladeToItem),
     },
   ],

@@ -19,9 +19,11 @@ const NewsDetail    = lazy(() => import("./pages/NewsDetail"));
 const Admin         = lazy(() => import("./pages/Admin"));
 const AdminLogin    = lazy(() => import("./pages/AdminLogin"));
 const NotFound      = lazy(() => import("./pages/NotFound"));
-const PlasticIndustry = lazy(() => import("./pages/plastic-industry"));
-const MetalIndustry   = lazy(() => import("./pages/metal-industry"));
-const PaperIndustry   = lazy(() => import("./pages/paper-industry"));
+const PlasticIndustry    = lazy(() => import("./pages/plastic-industry"));
+const MetalIndustry      = lazy(() => import("./pages/metal-industry"));
+const PaperIndustry      = lazy(() => import("./pages/paper-industry"));
+const NewEnergyIndustry  = lazy(() => import("./pages/new-energy-industry"));
+const ConvertingIndustry = lazy(() => import("./pages/converting-industry"));
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {
@@ -123,9 +125,11 @@ function Router() {
           <Route path="/products/:id" component={ProductDetail}   />
 
           {/* Industry verticals */}
-          <Route path="/plastic-industry" component={PlasticIndustry} />
-          <Route path="/metal-industry"   component={MetalIndustry}   />
-          <Route path="/paper-industry"   component={PaperIndustry}   />
+          <Route path="/plastic-industry"    component={PlasticIndustry}    />
+          <Route path="/metal-industry"      component={MetalIndustry}      />
+          <Route path="/paper-industry"      component={PaperIndustry}      />
+          <Route path="/new-energy-industry" component={NewEnergyIndustry}  />
+          <Route path="/converting-industry" component={ConvertingIndustry} />
 
           {/* Static pages */}
           <Route path="/about"    component={About}      />

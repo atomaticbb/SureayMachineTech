@@ -3,15 +3,22 @@ export type ProductMainCategory = "machinery" | "blades";
 
 // Sub-categories for blades (main focus)
 export type BladeCategory =
-  | "alloy-blades"                   // 合金刀片 ⭐
-  | "large-rotary-blades"            // 大回旋刀片 ⭐
-  | "shredder-blades"                // 撕碎机刀片 ⭐
-  | "tissue-paper-blades"            // 生活用纸刀片 ⭐
-  | "paper-cutting-blades"           // 切纸刀
-  | "production-line-blades"         // 联动线刀片
-  | "shaped-custom-blades"           // 异形刀片
-  | "food-processing-blades"         // 食品刀片
-  | "roller-shear-blades";           // 滚剪刀片
+  // ── Active categories (mapped from BladeCategoryType in blades.ts) ────────
+  | "slitter-knives"                // Rotary slitter · film · corrugated · nonwoven
+  | "shredder-blades"               // Twin-shaft · single-shaft · rubber shredder
+  | "production-line-blades"        // Granulator / plastic crusher knives
+  | "log-saw-blades"                // Tissue log saw blades
+  | "trim-cut-blades"               // Paper guillotine · three-knife trimmer
+  | "metal-processing-blades"       // Metal coil slitting · shear blades · cold saw
+  | "battery-precision-blades"      // New energy — lithium battery electrode slitting
+  // ── Legacy (kept for backward compatibility) ──────────────────────────────
+  | "alloy-blades"
+  | "large-rotary-blades"
+  | "tissue-paper-blades"
+  | "paper-cutting-blades"
+  | "shaped-custom-blades"
+  | "food-processing-blades"
+  | "roller-shear-blades";
 
 // Sub-categories for machinery
 export type MachineryCategory =
@@ -73,20 +80,28 @@ export interface Product {
 // Helper function to get category display name
 export function getCategoryDisplayName(category: ProductSubCategory): string {
   const categoryNames: Record<ProductSubCategory, string> = {
-    "alloy-blades": "Alloy Blades",
-    "large-rotary-blades": "Large Rotary Blades",
-    "shredder-blades": "Shredder Blades",
-    "tissue-paper-blades": "Tissue Paper Blades",
-    "paper-cutting-blades": "Paper Cutting Blades",
-    "production-line-blades": "Production Line Blades",
-    "shaped-custom-blades": "Shaped/Custom Blades",
-    "food-processing-blades": "Food Processing Blades",
-    "roller-shear-blades": "Roller Shear Blades",
-    "screenless-die-head": "Screenless Die Head",
-    "die-head-screen-plate": "Die Head Screen Plate",
-    "die-head-scraper-blade": "Die Head Scraper Blade",
-    "pelletizer": "Pelletizer",
-    "pelletizer-roller-blades": "Pelletizer Roller Blades"
+    // ── Active ──────────────────────────────────────────────────────────────
+    "slitter-knives":            "Slitter Knives",
+    "shredder-blades":           "Shredder Blades",
+    "production-line-blades":    "Granulator Blades",
+    "log-saw-blades":            "Log Saw Blades",
+    "trim-cut-blades":           "Trim & Cut Blades",
+    "metal-processing-blades":   "Metal Processing Blades",
+    "battery-precision-blades":  "Battery Precision Blades",
+    // ── Legacy ──────────────────────────────────────────────────────────────
+    "alloy-blades":              "Alloy Blades",
+    "large-rotary-blades":       "Large Rotary Blades",
+    "tissue-paper-blades":       "Tissue Paper Blades",
+    "paper-cutting-blades":      "Paper Cutting Blades",
+    "shaped-custom-blades":      "Shaped/Custom Blades",
+    "food-processing-blades":    "Food Processing Blades",
+    "roller-shear-blades":       "Roller Shear Blades",
+    // ── Machinery ───────────────────────────────────────────────────────────
+    "screenless-die-head":       "Screenless Die Head",
+    "die-head-screen-plate":     "Die Head Screen Plate",
+    "die-head-scraper-blade":    "Die Head Scraper Blade",
+    "pelletizer":                "Pelletizer",
+    "pelletizer-roller-blades":  "Pelletizer Roller Blades",
   };
   return categoryNames[category];
 }

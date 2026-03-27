@@ -35,17 +35,21 @@ const PRODUCT_GROUPS = [
   {
     group: "CUTTING TOOLING",
     items: [
-      { label: "Circular Slitting Knives", href: "/products/rotary-slitter-knives"    },
-      { label: "Rotary Metal Slitters",    href: "/products/metal-coil-slitting-knives" },
-      { label: "Alloy Steel Blades",       href: "/products/metal-shear-blades"       },
+      { label: "Circular Slitting Knives",    href: "/products/rotary-slitter-knives"             },
+      { label: "Metal Foil & Strip Slitters", href: "/products/metal-foil-strip-slitter-knives"    },
+      { label: "Coil Slitting Knives",       href: "/products/metal-coil-slitting-knives"         },
+      { label: "Metal Shear Knives",           href: "/products/metal-shear-knives"                },
+      { label: "Cold Circular Saw Blades",    href: "/products/metal-cold-saw-blades"              },
     ],
   },
   {
     group: "SHREDDING & RECYCLING",
     items: [
-      { label: "Shredder Blades",          href: "/products/shredder-blades"          },
-      { label: "Granulator Knives",        href: "/products/granulator-blades"        },
-      { label: "Single-Shaft Shredder",    href: "/products/single-shaft-shredder-blades" },
+      { label: "Twin-Shaft Shredder Blades", href: "/products/twin-shaft-blades-recycling" },
+      { label: "Tire Shredder Blades",       href: "/products/tire-shredder-blades"         },
+      { label: "Granulator Knives",          href: "/products/granulator-blades"           },
+      { label: "Single-Shaft Rotor Inserts", href: "/products/single-shaft-rotor-inserts"  },
+      { label: "Single-Shaft Bed Knives",    href: "/products/single-shaft-bed-knives"     },
     ],
   },
   {
@@ -158,14 +162,14 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ type: "spring", stiffness: 500, damping: 45 }}
-              className="grid grid-cols-4 gap-x-5 gap-y-6"
+              className="grid grid-cols-4 gap-x-4 gap-y-4"
             >
               {active.items.slice(0, 8).map((item) => (
                 <Link key={item.id} href={item.href}>
-                  <div onClick={onClose} className="group cursor-pointer">
+                  <div onClick={onClose} className="group cursor-pointer text-center">
 
-                    {/* Product image — square */}
-                    <div className="aspect-square bg-slate-100 overflow-hidden mb-2">
+                    {/* Product image — fixed w-36 h-32 thumbnail */}
+                    <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -176,7 +180,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                     </div>
 
                     {/* Name */}
-                    <p className="font-black text-[12px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
+                    <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
                       {item.name}
                     </p>
 

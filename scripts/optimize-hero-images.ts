@@ -21,6 +21,8 @@ const GALLERY_DIRS = [
   "client/public/images/applications/tissue-industry",
   "client/public/images/applications/plastic-industry",
   "client/public/images/applications/metal-industry",
+  "client/public/images/applications/converting-industry",
+  "client/public/images/applications/energy-industry",
 ];
 
 // Original files > COMPRESS_THRESHOLD bytes will be recompressed in-place

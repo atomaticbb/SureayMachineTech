@@ -28,25 +28,32 @@ const FILTER_GROUPS: { groupLabel: string; items: FilterItem[] }[] = [
     items: [
       { value: "shredder_blades",   label: "Shredder Blades" },
       { value: "granulator_blades", label: "Granulator Blades" },
-      { value: "alloy_blades",      label: "Alloy Blades" },
     ],
   },
   {
-    groupLabel: "Paper Industry",
+    groupLabel: "Paper & Tissue Converting",
     items: [
-      { value: "tissue_paper_blades",  label: "Tissue Paper Blades" },
-      { value: "paper_cutting_blades", label: "Paper Cutting Blades" },
+      { value: "log_saw_blades",  label: "Log Saw Blades" },
+      { value: "trim_cut_blades", label: "Paper Cutting & Trim" },
     ],
   },
   {
     groupLabel: "Slitting & Converting",
     items: [
-      { value: "rotary_blades", label: "Rotary Cutter Blades" },
+      { value: "slitter_knives", label: "Slitter Knives" },
     ],
   },
   {
-    groupLabel: "Other",
-    items: [{ value: "other_blades", label: "Other Blades" }],
+    groupLabel: "Metal Processing",
+    items: [
+      { value: "metal_processing", label: "Metal Processing Blades" },
+    ],
+  },
+  {
+    groupLabel: "New Energy",
+    items: [
+      { value: "battery_precision", label: "Battery Precision Blades" },
+    ],
   },
 ];
 

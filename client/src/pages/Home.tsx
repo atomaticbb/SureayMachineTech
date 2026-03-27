@@ -21,7 +21,7 @@ const ITEM_LIST_LD = JSON.stringify({
       "@type": "ListItem",
       position: 1,
       name: "Plastic Recycling Blades",
-      url: "https://sureay.com/products/shredder-blades",
+      url: "https://sureay.com/products/twin-shaft-blades-recycling",
     },
     {
       "@type": "ListItem",

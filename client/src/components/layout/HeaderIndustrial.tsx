@@ -30,9 +30,10 @@ const SECTORS: Sector[] = [
     title: "Recycling & Waste Management",
     icon: Recycle,
     products: [
-      { id: "shredder-blades", name: "Shredder Blades", href: "/products/shredder-blades" },
-      { id: "single-shaft-shredder-blades", name: "Single Shaft Shredder Blades", href: "/products/single-shaft-shredder-blades" },
-      { id: "granulator-blades", name: "Granulator Blades", href: "/products/granulator-blades" },
+      { id: "twin-shaft-blades-recycling", name: "Twin-Shaft Shredder Blades",  href: "/products/twin-shaft-blades-recycling" },
+      { id: "single-shaft-rotor-inserts",  name: "Single Shaft Rotor Inserts",  href: "/products/single-shaft-rotor-inserts"  },
+      { id: "single-shaft-bed-knives",     name: "Single Shaft Bed Knives",     href: "/products/single-shaft-bed-knives"     },
+      { id: "granulator-blades",           name: "Granulator Blades",           href: "/products/granulator-blades"           },
     ],
   },
   {

@@ -25,14 +25,14 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / Paper & Tissue",
-  h1:   "Paper & Tissue Knife Manufacturer — HSS & TC Grades",
-  h2:   "Log Saw Blades, Rewinder Knives & OEM Wear Parts",
+  breadcrumb: "Home / Markets / Paper, Tissue & Corrugated",
+  h1:   "Paper, Tissue & Corrugated Knife Manufacturer — HSS & TC Grades",
+  h2:   "Log Saw Blades, Slitter Knives, Trimmer Blades & OEM Wear Parts",
   body1:
     "Sureay Machinery manufactures triple-ground tissue log saw blades, rewinder perforation " +
-    "knives, and precision slitting tooling engineered for maximum throughput on high-speed paper " +
-    "and tissue converting lines. Our blade profiles are matched to Fabio Perini, Körber, Fosber " +
-    "and all major OEM geometries.",
+    "knives, precision slitting tooling, and corrugated slitter-scorer blades engineered for " +
+    "maximum throughput on high-speed paper, tissue, and corrugated converting lines. Our blade " +
+    "profiles are matched to Fabio Perini, Körber, Fosber, BHS, Marquip, and all major OEM geometries.",
   body2:
     "Our in-house CNC profile grinding delivers consistent tooth form across the full blade width, " +
     "while our M2 and M42 HSS grades are vacuum-hardened for optimal edge retention at 500+ m/min " +
@@ -57,9 +57,9 @@ const LCP_IMG = HERO_DATA.gallery[0].src;
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
 // ─── Products ─────────────────────────────────────────────────────────────────
-// Dynamically load products from blades.ts where sector === "paper" || sector === "converting"
+// Dynamically load products from blades.ts where sector === "paper"
 const PRODUCTS: IndustryProduct[] = blades
-  .filter(blade => blade.sector === "paper" || blade.sector === "converting")
+  .filter(blade => blade.sector === "paper")
   .map((blade, index) => ({
     category: blade.categoryDisplay,
     name: blade.name,

@@ -6,6 +6,8 @@ import {
   Recycle,
   Layers,
   FileText,
+  Scissors,
+  Zap,
 } from "lucide-react";
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -60,6 +62,34 @@ export const ECOSYSTEMS = [
     href: "/metal-industry",
     image: "/images/applications/slitting-line-machine-working.webp",
   },
+  {
+    icon: Scissors,
+    label: "Film & Flexible Converting",
+    industry: "Film & Converting",
+    desc: "For film slitter-rewinders, label converting lines, and nonwoven slitting systems that demand tight slit-width tolerance and consistent edge quality at 150–600 m/min.",
+    specs: [
+      { label: "Typical Lines", value: "Film slitter-rewinders, label converting lines, nonwoven slitting, PSA tape winding" },
+      { label: "Typical Problems", value: "Edge curl, slit-width deviation, adhesive buildup on blades, short regrind cycles" },
+      { label: "Material Direction", value: "M2 HSS, ASP23 PM steel, D2 with TiN / DLC coating based on substrate and speed" },
+      { label: "What You Can Review", value: "Circular slitter knife families, coating options, and film / nonwoven application examples" },
+    ],
+    href: "/converting-industry",
+    image: "/images/applications/converting-industry.webp",
+  },
+  {
+    icon: Zap,
+    label: "New Energy & Battery",
+    industry: "New Energy",
+    desc: "For lithium-ion battery electrode foil slitting lines where zero-burr Ra ≤ 0.05 μm mirror finish and ±0.001 mm dimensional tolerance are required for ISO Class 7 dry-room cell assembly.",
+    specs: [
+      { label: "Typical Lines", value: "Electrode foil slitting lines, separator film slitting, EV battery cell production" },
+      { label: "Typical Problems", value: "Micro-burr on foil edge, separator puncture, dry-room contamination, short tool life" },
+      { label: "Material Direction", value: "WC-Co submicron carbide K05–K10, Cermet and PCD grades for separator film" },
+      { label: "What You Can Review", value: "Carbide knife specs, CMM certification data, and battery electrode application examples" },
+    ],
+    href: "/new-energy-industry",
+    image: "/images/applications/new-energy-industry.webp",
+  },
 ];
 
 // ─── Featured Products ────────────────────────────────────────────────────────
@@ -100,9 +130,9 @@ export const FEATURED_PRODUCTS = [
     summary: "For sheeting and converting operations requiring clean cuts and repeatable geometry.",
   },
   {
-    name: "Single Shaft Shredder Blades",
+    name: "Single Shaft Rotor Inserts",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
-    href: "/products/single-shaft-shredder-blades",
+    href: "/products/single-shaft-rotor-inserts",
     tag: "OEM Replacement",
     summary: "For single-shaft systems where fit, bolt pattern, and material match are critical.",
   },
@@ -116,7 +146,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Metal Shear Knives",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    href: "/products/metal-shear-blades",
+    href: "/products/metal-shear-knives",
     tag: "Shearing",
     summary: "For guillotine and flying shear applications where toughness and regrind life lead decisions.",
   },

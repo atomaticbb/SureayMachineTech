@@ -67,16 +67,16 @@ export default function TabEcosystem() {
       </div>
 
       {/* sticky part — tab bar + content locks below navbar */}
-      <section className="sticky top-[60px] lg:top-[74px] bg-white pb-10 lg:pb-24">
+      <section className="sticky top-0 pt-[60px] lg:pt-[74px] bg-white pb-10 lg:pb-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
-          {/* Tab bar */}
+          {/* Tab bar — short industry labels */}
           <div className="flex gap-0 border-b border-slate-200 mb-6 lg:mb-12 overflow-x-auto pt-4 lg:pt-6">
             {ECOSYSTEMS.map((eco, i) => {
               const isActive = i === activeTab;
               return (
                 <button
-                  key={eco.label}
+                  key={eco.industry}
                   onClick={() => scrollToTab(i)}
                   className={[
                     "flex-shrink-0 px-4 lg:px-6 mr-1 lg:mr-2 text-xs lg:text-sm transition-all cursor-pointer whitespace-nowrap",
@@ -85,7 +85,7 @@ export default function TabEcosystem() {
                       : "text-slate-500 font-bold uppercase tracking-wider border-b-4 border-slate-200 hover:text-[#001f4d] hover:border-slate-300 pb-3 lg:pb-4",
                   ].join(" ")}
                 >
-                  {eco.label}
+                  {eco.industry}
                 </button>
               );
             })}
@@ -120,7 +120,7 @@ export default function TabEcosystem() {
                   Typical Selection Checklist
                 </p>
 
-                {/* Spec list — limit to 4 items on mobile */}
+                {/* Spec list */}
                 <div className="flex flex-col border-t border-slate-200">
                   {activeEcosystem.specs.slice(0, 4).map((spec) => (
                     <div

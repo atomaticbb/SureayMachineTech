@@ -82,11 +82,32 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords: "rotary slitter knives, circular blades, slitting blades, converting blades, top bottom knives",
   },
 
-  "shredder-blades": {
-    title: "Premium D2/DC53 Shredder Blades | Plastic Recycling Inserts | Sureay",
+  "metal-foil-strip-slitter-knives": {
+    title: "Metal Foil & Strip Slitter Knives | ASP23/ASP52 PM Steel | Sureay",
     description:
-      "Concave shredder blades for plastic recycling machines. D2 tool steel with deep cryogenic treatment. 4-sided indexable rotation extends lifespan 4x. Ideal for HDPE, PP, PET processing. Custom dimensions available.",
-    keywords: "shredder blades, plastic recycling blades, D2 shredder knives, recycling inserts, concave blades",
+      "Precision circular slitter knives for metal service centers. ASP23/ASP52 PM steel and solid carbide options. ±0.001mm thickness tolerance for gang slitting of aluminum foil, copper strips, stainless steel, and silicon steel. Anti-galling mirror-lapped finish.",
+    keywords: "metal foil slitter knives, coil slitting blades, ASP23 slitter knives, silicon steel slitter, aluminum foil slitter knives, gang slitting arbor",
+  },
+
+  "twin-shaft-blades-recycling": {
+    title: "Twin Shaft Shredder Blades | D2/SKD11 for MSW Recycling | Sureay",
+    description:
+      "Heavy-duty D2/SKD11 twin-shaft claw blades for MSW, bulky plastic, and wood pallet recycling. FEA-optimized 3–12 claw geometries. Precision Wire-EDM bores for SSI, Untha, Weima, and Vecoplan systems. Deep cryogenic treatment for maximum wear resistance.",
+    keywords: "twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades",
+  },
+
+  "multi-shaft-blades-metal": {
+    title: "Metal Shredder Blades | H13/42CrMo for Scrap & E-Waste | Sureay",
+    description:
+      "High-impact H13/42CrMo multi-shaft shredder blades for scrap metal, ELV, and e-waste processing. HRC 50–54 toughness-optimized to survive catastrophic shock loads. Heavy splined Wire-EDM bores for Shred-Tech, Forus, and Arjes platforms.",
+    keywords: "metal shredder blades, scrap metal blades, e-waste shredder knives, H13 shredder blades, ELV shredder, metal recycling blades",
+  },
+
+  "twin-shaft-blades-battery": {
+    title: "Li-Ion Battery Shredder Blades | ±0.02mm Precision | Sureay",
+    description:
+      "Precision twin-shaft shredder blades for EV lithium-ion battery pre-shredding. ±0.02mm thickness parallelism for consistent shear clearance on copper and aluminum foils. Corrosion-resistant surface treatments for LiPF6 inert-gas environments.",
+    keywords: "battery shredder blades, lithium battery recycling blades, EV battery shredder, Li-ion battery processing, battery pre-shredding",
   },
 
   "tissue-log-saw-blades": {
@@ -101,6 +122,13 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     description:
       "Heavy-duty granulator blades for PET, PVC & PP recycling. Rotor and stator knives with precision-ground V-edge geometry. Maximize regrind quality, reduce motor load. Extended mean time between regrind (MTBR).",
     keywords: "granulator blades, plastic crusher knives, rotor stator blades, PET recycling, granulator knives",
+  },
+
+  "tire-shredder-blades": {
+    title: "Tire Shredder Blades | 3-Claw Rotary Shear for TDF | Sureay",
+    description:
+      "Premium 3-claw rotary shear blades for primary tire shredding and TDF production. Cru-Wear (PGK) and Modified A8 steel grades. ±0.05mm thickness tolerance. OEM-matched to Barclay, CM, SSI, Untha, Granutech-Saturn. Whole tire and OTR shredding.",
+    keywords: "tire shredder blades, tyre shredder knives, rotary shear blades, TDF blades, tire recycling knives, 3-claw shredder, Barclay shredder blades",
   },
 
   "paper-cutting-blades": {
@@ -119,25 +147,40 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     ogImage: "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
 
-  "single-shaft-shredder-blades": {
-    title: "Single Shaft Shredder Blades | Square & Crown Rotor Knives | Sureay",
+  "single-shaft-rotor-inserts": {
+    title: "Single-Shaft Rotor Inserts | Crown Cutter Knives | Sureay",
     description:
-      "High-impact single-shaft shredder rotor knives for aggressive size reduction. Square and crown profile options. 4 usable cutting edges per blade. Zero-defect integrity testing. Ideal for bulky plastics and thick-wall containers.",
-    keywords: "single shaft shredder blades, rotor knives, square blades, crown cutters, aggressive shredder",
+      "High-impact single-shaft shredder rotor inserts for aggressive size reduction. Concave, crown and V-groove profiles. 4 usable cutting edges per insert. Deep cryogenic treatment. For bulky plastics, thick-wall containers and MSW.",
+    keywords: "single shaft rotor inserts, shredder rotor knives, crown cutters, square rotor inserts, concave shredder blades, 4-way indexable",
+  },
+
+  "single-shaft-bed-knives": {
+    title: "Single Shaft Bed Knives | Stator Knives for Shredders | Sureay",
+    description:
+      "Heavy-duty stator bed knives for single-shaft shredders. Press-quenched D2/DC53/42CrMo, straightness ≤ 0.05mm/m, through-hardened for multiple regrind cycles. Seamless single pieces to 3,500mm. OEM-matched slotted holes for Vecoplan, Weima, Lindner, Zerma.",
+    keywords: "single shaft bed knives, shredder stator knives, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
   },
 
   "metal-coil-slitting-knives": {
-    title: "Rotary Metal Slitters | Precision Metal Coil Slitting Knives | Sureay",
+    title: "Precision Coil Slitting Knives | Metal Slitter Blades | Sureay",
     description:
       "Premium top & bottom slitter blade sets for metal coil processing. Thickness tolerance ±0.001mm, parallelism 0.002mm. Complete tooling with spacers and rubber rings. For steel, aluminum, copper, and galvanized coils.",
     keywords: "metal slitting knives, coil slitting blades, rotary metal slitters, top bottom slitters, steel slitting knives",
   },
 
-  "metal-shear-blades": {
-    title: "Heavy-Duty Metal Shear Knives | Guillotine Shear Blades | Sureay",
+  "metal-shear-knives": {
+    title: "Heavy-Duty Metal Shear Knives | Guillotine & Scrap Shear Blades | Sureay",
     description:
-      "Industrial guillotine shear blades for metal fabrication. Three duty levels: standard (T10 for mild steel), heavy (Cr12MoV for stainless), extreme temp (H13 for hot rolling). Lengths up to 6000mm. Shipbuilding, aviation grade.",
-    keywords: "metal shear blades, guillotine shear knives, steel shear blades, fabrication blades, hydraulic shear knives",
+      "Precision guillotine and scrap shear knives in D2, S1 (6CrW2Si), and H13 tool steels. Ground to ±0.05 mm parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap. Single-piece lengths up to 6000 mm.",
+    keywords: "metal shear knives, guillotine shear blades, steel shear knives, hydraulic shear blades, scrap shear blades, D2 shear blades",
+  },
+
+  "metal-cold-saw-blades": {
+    title: "HSS & TCT Cold Saw Blades | Burr-Free Metal Tube Cutting | Sureay",
+    description:
+      "M2, M35 Cobalt HSS and TCT cold circular saw blades for steel tube, stainless, and aluminum profile cutting. DIN 1837/1840 standard. Burr-free end-face, no HAZ. TiN/TiAlN PVD coatings available. OEM fit for Kaltenbach, Bewo, MEP.",
+    keywords:
+      "cold saw blades, HSS cold saw blades, M35 cobalt cold saw, TCT cold saw blades, metal cold circular saw, tube cutting blades, cold saw blade manufacturer",
   },
 };
 

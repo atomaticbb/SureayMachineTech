@@ -74,7 +74,7 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
             <img
               src={panelImage}
               alt={blade.fullName || blade.name}
-              className="w-full h-full object-contain p-8 mix-blend-multiply"
+              className="w-full h-full object-contain p-4 mix-blend-multiply"
               loading="lazy"
               decoding="async"
             />

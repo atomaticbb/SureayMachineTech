@@ -112,7 +112,7 @@ const PAGE_SCHEMA = {
         image: "https://sureay.com/images/products/blades/11-4-2_metal-shear-blade_01.webp",
         description: "Heavy-duty D2 and M2 HSS single-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
-        url: "https://sureay.com/products/shredder-blades",
+        url: "https://sureay.com/products/twin-shaft-blades-recycling",
       },
     },
     {
