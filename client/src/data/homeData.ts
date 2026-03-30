@@ -33,6 +33,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/plastic-industry",
     image: "/images/applications/Plastic-Waste-Recycling.webp",
+    cta: "Recycling Solutions",
   },
   {
     icon: FileText,
@@ -47,6 +48,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/paper-industry",
     image: "/images/applications/tissue-industry/tissue-and-paper.webp",
+    cta: "Paper & Converting Solutions",
   },
   {
     icon: Layers,
@@ -61,6 +63,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/metal-industry",
     image: "/images/applications/slitting-line-machine-working.webp",
+    cta: "Metal Processing Solutions",
   },
   {
     icon: Scissors,
@@ -75,6 +78,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/converting-industry",
     image: "/images/applications/converting-industry.webp",
+    cta: "Converting Solutions",
   },
   {
     icon: Zap,
@@ -89,38 +93,32 @@ export const ECOSYSTEMS = [
     ],
     href: "/new-energy-industry",
     image: "/images/applications/new-energy-industry.webp",
+    cta: "New Energy Solutions",
   },
 ];
 
 // ─── Featured Products ────────────────────────────────────────────────────────
 export const FEATURED_PRODUCTS = [
   {
-    name: "Rotary Slitter Knives",
-    image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    href: "/products/rotary-slitter-knives",
-    tag: "Metal Processing",
-    summary: "For coil slitting lines requiring stable clearance and clean edge quality.",
-  },
-  {
-    name: "Shredder Blades",
-    image: "/images/products/shredder-blades/shredder-blades-04.webp",
-    href: "/products/shredder-blades",
+    name: "Twin Shaft Shredder Blades",
+    image: "/images/products/shredder-blades/shredder-blades-01.webp",
+    href: "/products/twin-shaft-blades-recycling",
     tag: "Recycling",
     summary: "For heavy-duty volume reduction under abrasive and impact-loaded waste streams.",
   },
   {
-    name: "Tissue Paper Blades",
-    image: "/images/products/blades/tissue-log-saw-blades.webp",
-    href: "/products/tissue-log-saw-blades",
-    tag: "Converting",
-    summary: "For log saw cutting where polish, sharpness retention, and finish consistency matter.",
+    name: "Paper Slitter Knives",
+    image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+    href: "/products/rotary-slitter-knives-paper",
+    tag: "Paper & Packaging",
+    summary: "For high-speed paper slitting lines demanding clean edges and long blade life.",
   },
   {
-    name: "Granulator Blades",
-    image: "/images/products/granulator-blades/granulator-blades-01.webp",
-    href: "/products/granulator-blades",
-    tag: "Size Reduction",
-    summary: "For plastic regrind lines balancing wear life, toughness, and throughput.",
+    name: "Tissue Log Saw Blades",
+    image: "/images/products/blades/tissue-log-saw-blades-05.webp",
+    href: "/products/tissue-log-saw-blades",
+    tag: "Paper & Packaging",
+    summary: "For log saw cutting where polish, sharpness retention, and finish consistency matter.",
   },
   {
     name: "Paper Cutting Blades",
@@ -130,25 +128,32 @@ export const FEATURED_PRODUCTS = [
     summary: "For sheeting and converting operations requiring clean cuts and repeatable geometry.",
   },
   {
-    name: "Single Shaft Rotor Inserts",
-    image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
-    href: "/products/single-shaft-rotor-inserts",
-    tag: "OEM Replacement",
-    summary: "For single-shaft systems where fit, bolt pattern, and material match are critical.",
-  },
-  {
-    name: "Metal Slitting Blades",
-    image: "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    href: "/products/metal-coil-slitting-knives",
-    tag: "Slitting Lines",
-    summary: "For ferrous and non-ferrous service centers requiring tight dimensional control.",
-  },
-  {
     name: "Metal Shear Knives",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
     href: "/products/metal-shear-knives",
-    tag: "Shearing",
+    tag: "Metal Processing",
     summary: "For guillotine and flying shear applications where toughness and regrind life lead decisions.",
+  },
+  {
+    name: "Corrugated Slitter Blades",
+    image: "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
+    href: "/products/corrugated-slitter-scorer-blades",
+    tag: "Paper & Packaging",
+    summary: "For corrugated box lines requiring precise scoring and clean slitting performance.",
+  },
+  {
+    name: "Nonwoven Slitter Knives",
+    image: "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+    href: "/products/nonwoven-slitter-knives",
+    tag: "Converting",
+    summary: "For nonwoven fabric slitting where burr-free edges and stable tension are essential.",
+  },
+  {
+    name: "Battery Slitting Knives",
+    image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+    href: "/products/lithium-battery-slitting-knives",
+    tag: "New Energy",
+    summary: "For electrode foil slitting requiring micron-level precision and zero burr tolerance.",
   },
 ];
 
