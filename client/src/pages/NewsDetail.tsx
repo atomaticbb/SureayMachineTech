@@ -118,6 +118,9 @@ export default function NewsDetail() {
                 src={article.image}
                 alt={article.title}
                 className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75"
+                width={800}
+                height={500}
+                decoding="async"
               />
               {/* Caption plate — bottom-left, borders connect with grid lines */}
               <div className="absolute bottom-0 left-0 bg-white border-t border-r border-slate-200 px-5 py-3">
@@ -226,6 +229,10 @@ export default function NewsDetail() {
                           src={block.value}
                           alt=""
                           className="w-full object-cover brightness-95 contrast-125 saturate-75"
+                          loading="lazy"
+                          decoding="async"
+                          width={800}
+                          height={450}
                         />
                       </div>
                     );

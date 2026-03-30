@@ -66,7 +66,7 @@ export interface Product {
   image: string;
   gallery?: string[];                 // Additional product images
   specs?: ProductSpecs;
-  features?: string[];
+
   applications?: string[];
   compatibleBrands?: string[];        // Compatible equipment brands
   isFeatured?: boolean;               // Show on homepage

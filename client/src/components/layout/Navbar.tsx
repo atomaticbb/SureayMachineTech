@@ -175,6 +175,8 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                         alt={item.name}
                         loading="lazy"
                         decoding="async"
+                        width={144}
+                        height={128}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
@@ -275,6 +277,8 @@ export default function Navbar() {
                   src="/sureay.svg"
                   alt="Sureay Logo"
                   className="w-16 h-16 transition-transform duration-200 group-hover:scale-105"
+                  width={64}
+                  height={64}
                 />
                 <span className="font-black text-[13px] tracking-[0.12em] text-[#001f4d] uppercase leading-none">
                   SUREAY BLADES
@@ -367,7 +371,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between px-6 h-[74px] border-b border-white/10 flex-shrink-0">
               <Link href="/">
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <img src="/sureay-logo.svg" alt="Sureay Logo" className="w-16 h-16 brightness-0 invert" />
+                  <img src="/sureay-logo.svg" alt="Sureay Logo" className="w-16 h-16 brightness-0 invert" width={64} height={64} />
                   <span className="font-black text-[11px] tracking-[0.12em] text-white uppercase leading-none">
                     SUREAY BLADES
                   </span>

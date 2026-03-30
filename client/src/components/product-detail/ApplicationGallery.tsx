@@ -35,6 +35,7 @@ export default function ApplicationGallery({ applications }: ApplicationGalleryP
                 src={application.img}
                 alt={application.title}
                 loading="lazy"
+                decoding="async"
                 width={400}
                 height={500}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"

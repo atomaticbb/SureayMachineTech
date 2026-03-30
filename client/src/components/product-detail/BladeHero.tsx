@@ -35,6 +35,8 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             className="h-full w-full object-contain p-3 mix-blend-multiply"
             loading="eager"
             decoding="async"
+            width={580}
+            height={520}
           />
         </div>
       </div>

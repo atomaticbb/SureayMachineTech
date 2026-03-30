@@ -26,6 +26,10 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             <img
               src={blade.image}
               alt={blade.name}
+              loading="lazy"
+              decoding="async"
+              width={400}
+              height={300}
               className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
               onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
             />
@@ -75,6 +79,9 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
               src={blade.image}
               alt={blade.name}
               loading="lazy"
+              decoding="async"
+              width={80}
+              height={80}
               className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300"
               onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
             />
@@ -103,6 +110,10 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             <img
               src={blade.image}
               alt={blade.name}
+              loading="lazy"
+              decoding="async"
+              width={300}
+              height={220}
               className="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500"
               style={{ minHeight: "220px" }}
               onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}

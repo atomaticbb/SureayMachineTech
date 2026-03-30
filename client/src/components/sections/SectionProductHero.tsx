@@ -29,6 +29,9 @@ export default function ProductHero({ blade, className = "" }: ProductHeroProps)
               src={viewMode === "photo" ? blade.image : "/images/products/blades/tissue-log-saw-blades-00.webp"}
               alt={viewMode === "photo" ? blade.name : `${blade.name} engineering schematic`}
               className="w-full h-full object-contain transition-opacity duration-300"
+              width={800}
+              height={600}
+              decoding="async"
               onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
             />
             <div className="absolute top-4 left-4 z-20 bg-[#003366] text-white text-[10px] uppercase font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">

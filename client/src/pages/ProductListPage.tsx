@@ -135,9 +135,12 @@ export default function BladeListPage() {
 
         {/* Full-bleed background image */}
         <img
-          src="/images/hero/cnc-machine-produce-blades.png"
+          src="/images/hero/cnc-machine-produce-blades.webp"
           alt="Industrial Blades & Cutting Tools — Sureay Machinery"
           className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
+          width={1920}
+          height={500}
+          decoding="async"
         />
 
         {/* Navy panel — diagonal right edge via clip-path */}
@@ -328,6 +331,10 @@ export default function BladeListPage() {
                     src={img.src}
                     alt={img.alt}
                     className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75 transition-transform duration-700 group-hover:scale-[1.04]"
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={300}
                   />
                 </div>
               ))}

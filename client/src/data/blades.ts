@@ -16,7 +16,7 @@ export interface BladeComponent {
   tag: string;
   title: string;
   description: string;
-  image: string;
+  image?: string;
   link?: string;
 }
 
@@ -71,7 +71,6 @@ export interface Blade {
   // ── Detail page ──────────────────────────────────────────────────────────
   gallery?: string[];             // [0–3] thumbnail track · [4] DecisiveSpecs · [5] ComprehensiveData
   fullDescription?: string;       // PageMeta description (longer copy)
-  features?: string[];            // BladeHero feature tag pills
   components?: BladeComponent[];  // TechnicalAudit cards
   standardDimensions?: StandardDimension[]; // ComprehensiveData table
 
@@ -168,12 +167,6 @@ export const blades: Blade[] = [
       },
     ],
 
-    features: [
-      "Matched top-and-bottom shear pairs supplied with pre-verified clearance spec sheet \u2014 eliminates guesswork at the arbor.",
-      "\u00b10.002\u202fmm thickness tolerance & \u22640.02\u202fmm T.I.R. across full production diameter, reducing slit-width deviation on multi-knife arbors.",
-      "Grade selection from 52100 to ASP23 PM and solid carbide maps to your substrate \u2014 from coated paper to EV battery electrode foils.",
-      "Optional DLC and TiN PVD coatings cut adhesive build-up by up to 80%, extending MTBR on PSA tape and laminate lines.",
-    ],
 
     components: [
       {
@@ -182,8 +175,6 @@ export const blades: Blade[] = [
         title: "Application-Specific Tool Steels",
         description:
           "Material matched to your web. 52100 carbon steel for standard paper; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for EV battery foil and fiberglass laminates. Every grade stocked and ready for fast-turn OEM delivery.",
-        image:
-          "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
       },
       {
         id: "advanced-coating-systems",
@@ -191,8 +182,6 @@ export const blades: Blade[] = [
         title: "Anti-Stick PVD Coatings",
         description:
           "TiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting. Lower friction means cooler running, longer edge life, and fewer cleaning stops per shift.",
-        image:
-          "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       },
       {
         id: "five-cutting-applications",
@@ -200,8 +189,6 @@ export const blades: Blade[] = [
         title: "Optimized Edge Geometries",
         description:
           "Single bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim. Profiled for your line speed and web tension \u2014 specify cutting method and substrate and we match the geometry.",
-        image:
-          "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       },
     ],
 
@@ -371,11 +358,6 @@ export const blades: Blade[] = [
       { label: "Application", value: "Tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint" },
     ],
 
-    features: [
-      "±0.002mm dimensional tolerance eliminates blade wobble on high-speed tissue converting (400–600 m/min).",
-      "D2/M2 HSS metallurgy optimized for cellulose fiber abrasion resistance and long campaign life.",
-      "Matched shear pairs with verified clearance specifications reduce fiber dust by 60–70% vs. standard grades.",
-    ],
 
     components: [
       {
@@ -384,7 +366,6 @@ export const blades: Blade[] = [
         title: "Paper-Optimized Alloy Selection",
         description:
           "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.",
-        image: "/images/products/blades/11-2-2_circular-blade_01.webp",
       },
       {
         id: "shear-clearance",
@@ -392,7 +373,6 @@ export const blades: Blade[] = [
         title: "Controlled Shear Clearance for Fiber-Dust-Free Cuts",
         description:
           "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.",
-        image: "/images/products/blades/11-2-2_circular-blade_02.webp",
       },
     ],
 
@@ -491,11 +471,6 @@ export const blades: Blade[] = [
       { label: "Application",    value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper" },
     ],
 
-    features: [
-      "±0.001mm thickness tolerance eliminates cumulative arbor error on gang slitting lines.",
-      "Powder Metallurgy (PM) steels prevent edge micro-chipping on hard metals like silicon steel.",
-      "Mirror-polished faces prevent galling and scratching when slitting soft aluminum and copper.",
-    ],
 
     components: [
       {
@@ -504,7 +479,6 @@ export const blades: Blade[] = [
         title: "Powder Metallurgy (PM) Steel",
         description:
           "ASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2. This sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips.",
-        image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
       },
       {
         id: "cumulative-tolerance",
@@ -512,7 +486,6 @@ export const blades: Blade[] = [
         title: "Zero Cumulative Error",
         description:
           "On gang slitting setups, blade thickness errors stack up quickly. Our ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time.",
-        image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       },
       {
         id: "anti-galling",
@@ -520,7 +493,6 @@ export const blades: Blade[] = [
         title: "Anti-Galling Polish",
         description:
           "Slitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge. Our mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely.",
-        image: "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       },
     ],
 
@@ -622,21 +594,18 @@ export const blades: Blade[] = [
         tag: "ENGINEERING",
         title: "FEA-Optimized Hook Profile",
         description: "Hook geometry designed via Finite Element Analysis to eliminate stress concentrators. 3-claw, 8-claw, and 12-claw configurations provide the correct grabbing force for every feedstock type.",
-        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
         id: "wire-edm",
         tag: "PRECISION",
         title: "Precision Wire-EDM Bores",
         description: "All mounting bores are cut by Wire-EDM to ±0.01mm, guaranteeing a zero-backlash drop-in fit that eliminates the micro-rocking that causes shaft damage and bore elongation.",
-        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
       {
         id: "cryogenic-treatment",
         tag: "METALLURGY",
         title: "Deep Cryogenic Treatment",
         description: "Post-hardening cryogenic processing at −196°C eliminates retained austenite, stabilizing the martensite microstructure for up to 40% greater wear resistance without reducing toughness.",
-        image: "/images/products/shredder-blades/shredder-blades-03.webp",
       },
     ],
 
@@ -748,11 +717,6 @@ export const blades: Blade[] = [
       { label: "Application",       value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)" },
     ],
 
-    features: [
-      "Forged from high-impact alloys (42CrMo / H13) to completely eliminate brittle fracture on solid metal strikes.",
-      "Heavy Wire-EDM splined bores ensure 100% torque transfer, preventing keyway shearing.",
-      "Thick, low-profile hook designs maximize biting force for heavy automotive and structural steel scrap.",
-    ],
 
     components: [
       {
@@ -761,7 +725,6 @@ export const blades: Blade[] = [
         title: "Massive Core Toughness",
         description:
           "Held at HRC 50–54, H13 and 42CrMo alloys provide the massive core elasticity needed to absorb extreme kinetic impacts, avoiding the catastrophic shattering typical of D2 blades.",
-        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
         id: "heavy-spline",
@@ -769,7 +732,6 @@ export const blades: Blade[] = [
         title: "Zero-Slippage Splines",
         description:
           "Full-circumference spline bores machined by Wire-EDM to ±0.01mm ensure zero-slippage torque transfer under extreme shredding loads, eliminating rotor shaft damage.",
-        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
       {
         id: "low-profile-hooks",
@@ -777,7 +739,6 @@ export const blades: Blade[] = [
         title: "Low-Profile Biting Hooks",
         description:
           "1 to 3 heavy-root-thickness hooks provide maximum biting force per stroke for shearing thick metal casings, without the fracture risks associated with multi-claw designs.",
-        image: "/images/products/shredder-blades/shredder-blades-03.webp",
       },
     ],
 
@@ -859,9 +820,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -888,7 +846,6 @@ export const blades: Blade[] = [
         title: "±0.02mm Thickness Parallelism",
         description:
           "Precision ground to ultra-tight thickness tolerances, ensuring consistent shear clearance across the full rotor for clean cuts on copper and aluminum battery foils without folding or rotor wrap-arounds.",
-        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
         id: "corrosion-resistance",
@@ -896,7 +853,6 @@ export const blades: Blade[] = [
         title: "Electrolyte Corrosion Resistance",
         description:
           "Specialized metallurgy and surface treatments provide enhanced resistance to LiPF6-derived HF acid corrosion, extending blade service intervals in aggressive battery recycling chemical environments.",
-        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
       {
         id: "wire-edm-bore",
@@ -904,7 +860,6 @@ export const blades: Blade[] = [
         title: "Wire-EDM Precision Bores",
         description:
           "All bore profiles are machined to ±0.01mm via Wire-EDM, eliminating rotational play that causes shear gap inconsistency during precision battery foil stack processing.",
-        image: "/images/products/shredder-blades/shredder-blades-03.webp",
       },
     ],
 
@@ -1026,12 +981,6 @@ export const blades: Blade[] = [
       },
     ],
 
-    features: [
-      "\u22640.15\u202fmm lateral runout guarantee \u2014 perfectly straight cuts without oscillating and crushing the fragile paper core.",
-      "Heat treatment optimized for continuous in-line CBN sharpening: HRC\u202f58\u201360 ensures clean honing without loading grinding wheels.",
-      "Teflon (PTFE) and Hard Chrome coatings minimize friction, reduce paper dust generation, and resist corrosion in high-humidity mill environments.",
-      "Custom OD from \u00d8610\u202fmm to \u00d81200\u202fmm for JRT and industrial-roll production, manufactured to order in 10 working days.",
-    ],
 
     components: [
       {
@@ -1040,7 +989,6 @@ export const blades: Blade[] = [
         title: "Zero-Wobble Tensioning",
         description:
           "A 610\u202fmm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to \u22640.15\u202fmm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
-        image: "/images/products/blades/tissue-log-saw-blades-05.webp",
       },
       {
         id: "cbn-compatible",
@@ -1048,7 +996,6 @@ export const blades: Blade[] = [
         title: "In-Line CBN Sharpening Ready",
         description:
           "D2 and Cr12MoV blades heat-treated to HRC\u202f58\u201360. This specific hardness range responds cleanly to continuous CBN grinding wheels without loading or glazing them, maintaining a razor edge and protecting your sharpening equipment.",
-        image: "/images/products/blades/tissue-log-saw-blades-01.webp",
       },
       {
         id: "anti-friction",
@@ -1056,7 +1003,6 @@ export const blades: Blade[] = [
         title: "Teflon & Chrome Finishes",
         description:
           "Friction generates heat and explosive paper dust. Hard Chrome or Teflon (PTFE) coated blades lower the coefficient of friction, yielding pristine cut edges on premium 3-ply kitchen towel logs and extending Mean Time Between sharpening cycles.",
-        image: "/images/products/blades/tissue-log-saw-blades-02.webp",
       },
     ],
 
@@ -1212,11 +1158,6 @@ export const blades: Blade[] = [
       { label: "Application",   value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper" },
     ],
 
-    features: [
-      "Bimetallic construction: hard HSS/Carbide edge brazed to a flexible, shock-absorbing steel body.",
-      "Strict \u22640.05\u202fmm face flatness guarantee ensures perfectly square cuts through 5-inch paper reams.",
-      "Tungsten Carbide (TCT) upgrade for abrasive carbonless copy paper, coated art, and recycled board.",
-    ],
 
     components: [
       {
@@ -1225,7 +1166,6 @@ export const blades: Blade[] = [
         title: "Tungsten Carbide Inlays",
         description:
           "Standard blades dull rapidly when cutting abrasive, calcium-carbonate-filled papers. Our Tungsten Carbide Tipped (TCT) blades maintain their razor edge 3\u202f\u2013\u202f5\u00d7 longer than HSS, drastically reducing machine downtime for blade changes on carbonless copy and coated art stock.",
-        image: "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
       },
       {
         id: "face-flatness",
@@ -1233,7 +1173,6 @@ export const blades: Blade[] = [
         title: "Zero Paper Draw",
         description:
           "If a blade is bowed even slightly, hydraulic pressure causes it to deflect mid-cut, producing unequal sizes from the top to the bottom of the stack. We grind our blades to a full-length face flatness of \u22640.05\u202fmm to ensure flawlessly straight vertical cuts through every ream.",
-        image: "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       },
       {
         id: "oem-compatibility",
@@ -1241,7 +1180,6 @@ export const blades: Blade[] = [
         title: "Exact OEM Replacement",
         description:
           "We hold engineering blueprints for Polar, Wohlenberg, Perfecta, and Schneider Senator guillotines. Mounting holes, threads, and back-edge slots are CNC-machined for a guaranteed drop-in fit — no shimming or modification required.",
-        image: "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
       },
     ],
 
@@ -1365,11 +1303,6 @@ export const blades: Blade[] = [
       { label: "Application",         value: "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW" },
     ],
 
-    features: [
-      "Four usable cutting edges — rotate 90° when dull, reducing replacement costs by 75%",
-      "Premium tool steels (DC53, D2, Cr12MoV) with HRC 58–62 hardness via vacuum + cryogenic treatment",
-      "Precision CNC-machined concave/flat profiling for optimal biting into dense plastic lumps",
-    ],
 
     components: [
       {
@@ -1378,7 +1311,6 @@ export const blades: Blade[] = [
         title: "4-Way Indexable Edges",
         description:
           "The symmetrical square design allows for a 90° rotation when dull. This quadruples the lifespan of a single blade, cutting replacement costs by 75% and minimizing maintenance downtime.",
-        image: "/images/products/shredder-blades/single-shredder-blades-00.webp",
       },
       {
         id: "concave-profile",
@@ -1386,7 +1318,6 @@ export const blades: Blade[] = [
         title: "Aggressive Concave Profiling",
         description:
           "Precision CNC-machined concave faces ensure an aggressive bite into smooth, dense plastic lumps, preventing material from bouncing or bridging on the rotor during low-speed shredding.",
-        image: "/images/products/shredder-blades/single-shredder-blades-01.webp",
       },
       {
         id: "cryo-treatment",
@@ -1394,7 +1325,6 @@ export const blades: Blade[] = [
         title: "Deep Cryogenic Tempering",
         description:
           "Processed at −196°C to eliminate internal residual stress. This guarantees the blade will absorb massive kinetic shocks without shattering when hitting hidden metal inclusions.",
-        image: "/images/products/shredder-blades/single-shredder-blades-02.webp",
       },
     ],
 
@@ -1510,11 +1440,6 @@ export const blades: Blade[] = [
       { label: "Application",        value: "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre" },
     ],
 
-    features: [
-      "Strict straightness tolerance (≤ 0.05mm/m) eliminates uneven shear gaps and rotor collisions",
-      "Through-hardened D2/DC53 steel allows for multiple aggressive regrinding cycles",
-      "Precision-machined slotted holes ensure accurate and secure clearance adjustment",
-    ],
 
     components: [
       {
@@ -1523,7 +1448,6 @@ export const blades: Blade[] = [
         title: "Zero-Distortion Straightness",
         description:
           "Press-quenched and precision-ground to eliminate bowing. A perfectly straight bed knife guarantees a uniform shear gap, preventing material from slipping through uncut.",
-        image: "/images/products/shredder-blades/shredder-blades-00.webp",
       },
       {
         id: "deep-hardening",
@@ -1531,7 +1455,6 @@ export const blades: Blade[] = [
         title: "Through-Hardened Core",
         description:
           "Vacuum heat-treated to ensure consistent hardness (HRC 56–60) deep into the core. You can regrind the bevel multiple times without performance loss.",
-        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
         id: "adjustable-mounting",
@@ -1539,7 +1462,6 @@ export const blades: Blade[] = [
         title: "Precision Adjustment Slots",
         description:
           "CNC-milled mounting slots allow technicians to easily advance the bed knife toward the rotor to compensate for wear, maintaining peak shredding efficiency.",
-        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
     ],
 
@@ -1658,11 +1580,6 @@ export const blades: Blade[] = [
       },
     ],
 
-    features: [
-      "Premium tool steel (D2, SKD-11, DC53, Cr12MoV) for high-impact polymer shearing",
-      "Vacuum heat treatment + deep cryogenic processing (HRC 58–62 hardness + impact toughness)",
-      "Precision CNC-ground edges with ±0.02 mm tolerances for strict rotor-to-bed knife gaps",
-    ],
 
     components: [
       {
@@ -1671,7 +1588,6 @@ export const blades: Blade[] = [
         title: "Maximized Regrind Quality",
         description:
           "Ultra-sharp, precisely aligned cutting edges shear plastic cleanly rather than tearing it, drastically reducing the generation of unwanted dust and fines.",
-        image: "/images/products/granulator-blades/granulator-blades-01.webp",
       },
       {
         id: "extended-mtbr",
@@ -1679,7 +1595,6 @@ export const blades: Blade[] = [
         title: "Extended MTBR (Mean Time Between Replacements)",
         description:
           "High wear resistance minimizes the frequency of blade sharpening and replacement, keeping your recycling line running continuously.",
-        image: "/images/products/granulator-blades/granulator-blades-00.webp",
       },
       {
         id: "reduced-motor-load",
@@ -1687,7 +1602,6 @@ export const blades: Blade[] = [
         title: "Reduced Motor Load",
         description:
           "Optimized cutting angles decrease the shearing force required, lowering the electrical amp draw on your granulator's motor and reducing energy costs per ton.",
-        image: "/images/products/granulator-blades/granulator-blades-02.webp",
       },
     ],
 
@@ -1819,11 +1733,6 @@ export const blades: Blade[] = [
       { label: "Application",       value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate" },
     ],
 
-    features: [
-      "Engineered with ±0.001mm thickness tolerance to guarantee zero cumulative error on the slitter arbor.",
-      "Application-specific metallurgy (D2 to H13) to prevent edge chipping on heavy hot-rolled steel plates.",
-      "Complete arbor tooling packages available: matched knives, ultra-precision spacers, and stripper rings.",
-    ],
 
     components: [
       {
@@ -1832,7 +1741,6 @@ export const blades: Blade[] = [
         title: "Micro-Tolerance Engineering",
         description:
           "Engineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm. This guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor.",
-        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
       },
       {
         id: "alloy-toughness",
@@ -1840,7 +1748,6 @@ export const blades: Blade[] = [
         title: "Heavy-Duty Alloy Selection",
         description:
           "From high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills. Each blade is vacuum hardened to deliver exceptional edge strength.",
-        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       },
       {
         id: "complete-setup",
@@ -1848,7 +1755,6 @@ export const blades: Blade[] = [
         title: "Complete Arbor Tooling",
         description:
           "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs. A fully integrated system ensures perfect strip tension and burr-free coil rewinding.",
-        image: "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
       },
     ],
 
@@ -1958,11 +1864,6 @@ export const blades: Blade[] = [
       { label: "Application",        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers" },
     ],
 
-    features: [
-      "Application-matched metallurgy: D2 for wear resistance, S1 (6CrW2Si) for extreme impact in scrap yards.",
-      "Strict ±0.05 mm parallelism guarantees a uniform shear gap, preventing plate tearing and blade rollover.",
-      "Available in single-piece lengths up to 6000 mm, or multi-segment designs for heavy duty scrap shears.",
-    ],
 
     components: [
       {
@@ -1971,7 +1872,6 @@ export const blades: Blade[] = [
         title: "D2 for Stainless & Heavy Plate",
         description:
           "Utilizing premium D2 (Cr12MoV) steel deep-hardened to HRC 58–60. It withstands the extreme abrasive wear and work-hardening forces when shearing stainless steel and thick alloy plates.",
-        image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
       },
       {
         id: "scrap-shearing",
@@ -1979,7 +1879,6 @@ export const blades: Blade[] = [
         title: "S1 Shock-Resisting Steel for Scrap",
         description:
           "For alligator shears and heavy scrap balers, standard blades shatter. We forge these blades from S1 (6CrW2Si) shock-resisting steel, providing massive core toughness to shear rebar and I-beams without fracturing.",
-        image: "/images/products/granulator-blades/metal-shear-blades-03.webp",
       },
       {
         id: "precision-parallelism",
@@ -1987,7 +1886,6 @@ export const blades: Blade[] = [
         title: "Precision Parallelism (±0.05 mm)",
         description:
           "Surface-ground to absolute perfection. Maintaining strict parallelism across lengths up to 6 meters ensures your machine maintains a uniform shear gap, delivering burr-free cuts every time.",
-        image: "/images/products/granulator-blades/metal-shear-blades-01.webp",
       },
     ],
 
@@ -2075,11 +1973,8 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-05.webp",
     ],
 
     description:
@@ -2127,12 +2022,6 @@ export const blades: Blade[] = [
       },
     ],
 
-    features: [
-      "Bimetallic construction bonds a razor-sharp HSS or Carbide edge to a shock-absorbing steel body.",
-      "Tungsten Carbide (TC) options deliver up to 10× longer service life on abrasive coated art papers.",
-      "Mirror-lapped blade faces drastically reduce PUR and EVA glue build-up during continuous trimming.",
-      "Matched 3-piece sets ground to ±0.01 mm thickness tolerance for zero-downtime drop-in installation.",
-    ],
 
     components: [
       {
@@ -2141,8 +2030,6 @@ export const blades: Blade[] = [
         title: "Bimetallic Inlay Technology",
         description:
           "We braze a premium High-Speed Steel (HSS) or Tungsten Carbide edge onto a tough, flexible alloy steel body. This gives you the extreme wear resistance needed for coated paper, without the risk of the blade snapping under heavy clamping pressure.",
-        image:
-          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       },
       {
         id: "matched-sets",
@@ -2150,8 +2037,6 @@ export const blades: Blade[] = [
         title: "Matched 3-Piece Sets",
         description:
           "Supplied as a ready-to-install set (1 Front, 1 Left, 1 Right). All three blades are precision surface-ground in the same batch to a ±0.01 mm thickness tolerance, ensuring zero-downtime installation and perfect alignment.",
-        image:
-          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
       },
       {
         id: "anti-glue-finish",
@@ -2159,8 +2044,6 @@ export const blades: Blade[] = [
         title: "Anti-Glue Mirror Finish",
         description:
           "Cutting through book spines exposes the blade to hot, sticky PUR and EVA adhesives. Our blades are lapped to a microscopic mirror finish, preventing glue drag that would otherwise smear across the book’s edge.",
-        image:
-          "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
       },
     ],
 
@@ -2296,11 +2179,6 @@ export const blades: Blade[] = [
       { label: "Application",    value: "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film" },
     ],
 
-    features: [
-      "Zero-notch Ra ≤ 0.05μm mirror finish — eliminates micro-burrs that cause cell short-circuit.",
-      "Ultra-fine WC-Co carbide (≤0.5μm grain) delivers 8–12× edge life vs. HSS/D2 on abrasive battery foil.",
-      "Cleanroom-ready: ultrasonically cleaned, ISO Class 7 certified packaging, IATF 16949 material certs.",
-    ],
 
     components: [
       {
@@ -2309,7 +2187,6 @@ export const blades: Blade[] = [
         title: "Zero-Notch Mirror Finish",
         description:
           "Every cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding. This eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "ultra-fine-carbide",
@@ -2317,7 +2194,6 @@ export const blades: Blade[] = [
         title: "Ultra-Fine WC-Co Carbide Grade",
         description:
           "Standard industrial carbide uses grain sizes of 1–3μm. Our battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "matched-knife-pairs",
@@ -2325,7 +2201,6 @@ export const blades: Blade[] = [
         title: "Pre-Verified Clearance Pairs",
         description:
           "Upper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil). Each pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation.",
-        image: "/images/products/blades.webp",
       },
     ],
 
@@ -2427,11 +2302,6 @@ export const blades: Blade[] = [
       { label: "Other Tooling Cap.", value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives" },
     ],
 
-    features: [
-      "HIP Sintered Tungsten Carbide guarantees zero internal voids, preventing micro-chipping at the razor edge.",
-      "Rigid 1.0–1.2mm blade body with a razor-lapped apex totally eliminates corrugated flute crushing.",
-      "One-Stop Partner: We manufacture the complete portfolio from thin slitters to FFG slotter & Z cut-off knives.",
-    ],
 
     components: [
       {
@@ -2440,7 +2310,6 @@ export const blades: Blade[] = [
         title: "HIP Sintered Carbide",
         description:
           "Hot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores. This ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact.",
-        image: "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
       },
       {
         id: "zero-crush",
@@ -2448,7 +2317,6 @@ export const blades: Blade[] = [
         title: "Zero-Crush Razor Edge",
         description:
           "A thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish. This slices the flutes cleanly instead of pressing them down.",
-        image: "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
       },
       {
         id: "full-portfolio",
@@ -2456,7 +2324,6 @@ export const blades: Blade[] = [
         title: "Complete Box Plant Tooling",
         description:
           "From Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant.",
-        image: "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       },
     ],
 
@@ -2553,11 +2420,6 @@ export const blades: Blade[] = [
       { label: "OEM Fitment",       value: "Barclay, CM, SSI, Untha, Granutech-Saturn" },
     ],
 
-    features: [
-      "Manufactured from premium Cru-Wear (PGK) and Modified A8 for unmatched durability against steel bead wires",
-      "Strict ±0.05mm (0.002\") thickness tolerance guarantees clean cutting rather than tearing",
-      "Optimized 3-claw design provides maximum grabbing force for whole passenger and truck tires",
-    ],
 
     components: [
       {
@@ -2566,7 +2428,6 @@ export const blades: Blade[] = [
         title: "Cru-Wear (PGK) & Modified A8",
         description:
           "Utilizing OEM-grade premium alloys. Cru-Wear provides ultimate toughness and durability for high-volume lines, while Modified A8 offers the best balance of cost and performance.",
-        image: "/images/products/shredder-blades/shredder-blades-00.webp",
       },
       {
         id: "precise-cutting",
@@ -2574,7 +2435,6 @@ export const blades: Blade[] = [
         title: "Cut, Don't Tear",
         description:
           "Precision ground to ±0.05mm. This ensures a true scissor-like cutting action, preventing wire pull-out, reducing machine wear, and drastically lowering energy consumption.",
-        image: "/images/products/shredder-blades/shredder-blades-01.webp",
       },
       {
         id: "consistent-tdf",
@@ -2582,7 +2442,6 @@ export const blades: Blade[] = [
         title: "Consistent TDF Chips",
         description:
           "Exact blade thicknesses (e.g., 2-inch standard) combined with zero-clearance shearing produce uniform, high-quality Tire Derived Fuel (TDF) chips with minimal exposed wire.",
-        image: "/images/products/shredder-blades/shredder-blades-02.webp",
       },
     ],
 
@@ -2678,11 +2537,6 @@ export const blades: Blade[] = [
       { label: "Application",    value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile" },
     ],
 
-    features: [
-      "Specialist 15°–20° positive rake geometry prevents fibre fraying on loose-structure spunbond-meltblown fabrics.",
-      "ESD surface treatment available for meltblown and electrospun filtration media — eliminates static fibre adhesion.",
-      "Medical-grade supply with full batch traceability certificates for surgical drape and gown converting qualification.",
-    ],
 
     components: [
       {
@@ -2691,7 +2545,6 @@ export const blades: Blade[] = [
         title: "Nonwoven-Optimised Rake Angle",
         description:
           "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "esd-coating",
@@ -2699,7 +2552,6 @@ export const blades: Blade[] = [
         title: "ESD Conductive Coating",
         description:
           "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "medical-traceability",
@@ -2707,7 +2559,6 @@ export const blades: Blade[] = [
         title: "Medical Batch Traceability",
         description:
           "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file.",
-        image: "/images/products/blades.webp",
       },
     ],
 
@@ -2800,11 +2651,6 @@ export const blades: Blade[] = [
       { label: "Application",    value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars" },
     ],
 
-    features: [
-      "True cold cut: leaves a burr-free, square end-face with no heat-affected zone (HAZ) or discoloration.",
-      "M35 (5% Cobalt) upgrade available to conquer the extreme work-hardening of stainless steel.",
-      "Fully resharpenable HSS design allows blades to be reground 10+ times, massively lowering cost-per-cut.",
-    ],
 
     components: [
       {
@@ -2813,8 +2659,6 @@ export const blades: Blade[] = [
         title: "Cold Cut vs. Abrasive Wheels",
         description:
           "Abrasive wheels generate temperatures above 800°C, producing a heat-affected zone (HAZ) and heavy slag that must be ground off. Cold circular sawing operates at low RPM with coolant, keeping the cut face below 200°C. The result is a clean, weld-ready surface right off the machine.",
-        image:
-          "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
       },
       {
         id: "grade-cobalt",
@@ -2822,8 +2666,6 @@ export const blades: Blade[] = [
         title: "M35 Cobalt for Stainless",
         description:
           "Stainless steel (304/316) work-hardens under cutting pressure, instantly dulling standard M2 blades. Our M35 grade contains 5% Cobalt, granting it extreme ‘red hardness’ to slice through austenitic stainless steel without losing edge geometry.",
-        image:
-          "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
       },
       {
         id: "pvd-coatings",
@@ -2831,8 +2673,6 @@ export const blades: Blade[] = [
         title: "TiN & TiAlN Coatings",
         description:
           "While standard steam-treated blades are great for mild steel, upgrading to TiN (Titanium Nitride) or TiAlN PVD coatings drastically reduces friction and heat. This allows for faster feed rates and prevents material from cold-welding to the saw teeth.",
-        image:
-          "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
       },
     ],
 
@@ -2934,11 +2774,6 @@ export const blades: Blade[] = [
       { label: "Cycle Life",       value: "50,000–200,000 chops (material & contamination dependent)" },
     ],
 
-    features: [
-      "S7 shock-resisting steel provides 2× impact toughness vs. D2 — eliminates catastrophic blade fracture.",
-      "4-edge reversible design maximizes service life and reduces downtime for blade indexing.",
-      "Carbide-inlaid option available for heavily contaminated steel scrap streams — 3–5× longer edge life.",
-    ],
 
     components: [
       {
@@ -2947,7 +2782,6 @@ export const blades: Blade[] = [
         title: "S7 Shock-Resisting Alloy Structure",
         description:
           "S7 tool steel achieves its superior toughness through a carefully balanced alloy system: 0.50% carbon (vs. 1.55% in D2) minimizes brittle carbide formation, while chromium (3.25%), molybdenum (1.40%), and tungsten (1.80%) additions provide hardenability and temper resistance. Heat treated to HRC 54–58 rather than the HRC 60–62 typical of D2, S7 sacrifices some abrasion resistance in exchange for double the Charpy impact energy. This is the critical trade-off for scrap chopper applications: the blade must absorb unpredictable shock loads without shattering.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "4-edge-design",
@@ -2955,7 +2789,6 @@ export const blades: Blade[] = [
         title: "Four-Edge Reversible Configuration",
         description:
           "Scrap chopper blades are manufactured as rectangular blocks with four usable cutting edges. When the active edge exhibits visible wear (typically indicated by increased chopping noise or incomplete scrap fracture), the operator indexes the blade 90° to present a fresh edge. This design quadruples the effective service life compared to single-edge blades and reduces non-productive downtime. The blade body geometry is precision-ground to ensure all four edges are parallel within ±0.05mm, preventing uneven loading that would cause premature wear on indexed edges.",
-        image: "/images/products/blades.webp",
       },
       {
         id: "carbide-inlay",
@@ -2963,7 +2796,6 @@ export const blades: Blade[] = [
         title: "Carbide-Inlaid Hybrid Construction",
         description:
           "For steel service centers processing high-carbon or stainless steel trim with heavy mill scale contamination, we offer carbide-inlaid scrap chopper blades. A tungsten carbide insert (typically 6–10mm wide, full blade thickness) is mechanically locked into a precision-ground slot in the S7 body using a shrink-fit or brazed joint. The carbide provides localized wear resistance where the blade contacts the scrap, while the S7 body absorbs the gross impact energy. This construction is the optimal solution for contaminated scrap streams where solid carbide would fracture and solid S7 wears too rapidly.",
-        image: "/images/products/blades.webp",
       },
     ],
 

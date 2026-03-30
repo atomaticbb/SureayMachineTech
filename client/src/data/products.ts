@@ -51,8 +51,7 @@ function bladeToProduct(blade: Blade, index: number): Product {
     subCategory:      BLADE_SUBCATEGORY_MAP[blade.category],
     image:            blade.image,
     gallery:          blade.gallery,
-    features:         blade.features,
-    isFeatured:       blade.isFeatured,
+isFeatured:       blade.isFeatured,
     sortOrder:        index + 1,
     specs,
   };

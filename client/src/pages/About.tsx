@@ -187,6 +187,9 @@ export default function About() {
               src="/images/about/factory.webp"
               alt="Sureay factory floor overview — Ma'anshan facility"
               className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75"
+              width={1200}
+              height={700}
+              decoding="async"
             />
           </div>
 
@@ -253,6 +256,10 @@ export default function About() {
                 src="/images/about/factory-00.webp"
                 alt="Sureay CNC machining workshop — full floor establishing shot"
                 className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75 group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
+                width={800}
+                height={600}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3">
                 <p className="text-xs font-bold uppercase tracking-wide text-[#001f4d]">CNC Machining Workshop</p>
@@ -265,6 +272,10 @@ export default function About() {
                 src="/images/process/cnc-precision-grinding.webp"
                 alt="CNC precision grinding — macro close-up of wheel contact on blade edge"
                 className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.7] group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={340}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d] px-4 py-2.5">
                 <p className="text-[11px] font-bold uppercase tracking-wide text-white">Precision Grinding</p>
@@ -279,6 +290,10 @@ export default function About() {
                   src="/images/process/heat-treatment.webp"
                   alt="Vacuum heat treatment — macro furnace interior with blade batch"
                   className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.65] group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
                   <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">Heat Treatment</p>
@@ -290,6 +305,10 @@ export default function About() {
                   src="/images/common/Quality-Inspection.webp"
                   alt="CMM dimensional inspection — macro probe contact on blade surface"
                   className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.65] group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
                   <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">CMM Quality Control</p>

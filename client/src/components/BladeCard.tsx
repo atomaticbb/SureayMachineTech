@@ -34,6 +34,10 @@ export default function BladeCard({ blade }: BladeCardProps) {
           alt={blade.fullName}
           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
           src={blade.image}
+          loading="lazy"
+          decoding="async"
+          width={400}
+          height={300}
           onError={(e) => {
             e.currentTarget.src = "/images/products/product.webp";
           }}

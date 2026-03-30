@@ -21,6 +21,9 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
           src={images[selectedIndex]}
           alt={`${alt} - Image ${selectedIndex + 1}`}
           className="w-full h-full object-contain p-8 transition-transform duration-500 group-hover:scale-105"
+          width={600}
+          height={600}
+          decoding="async"
           onError={(e) => {
             e.currentTarget.src = "/images/products/machinery.webp";
           }}
@@ -44,6 +47,10 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
                 src={img}
                 alt={`${alt} thumbnail ${index + 1}`}
                 className="w-full h-full object-cover p-2"
+                loading="lazy"
+                decoding="async"
+                width={120}
+                height={120}
                 onError={(e) => {
                   e.currentTarget.src = "/images/products/machinery.webp";
                 }}

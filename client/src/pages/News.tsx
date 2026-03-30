@@ -52,6 +52,9 @@ export default function CorporateDispatches() {
                 src={featured.image}
                 alt={featured.title}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                width={1200}
+                height={500}
+                decoding="async"
               />
               <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-4 py-2">
                 <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
@@ -128,6 +131,10 @@ export default function CorporateDispatches() {
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                      loading="lazy"
+                      decoding="async"
+                      width={400}
+                      height={300}
                     />
                     <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-3 py-1.5">
                       <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest uppercase">

@@ -51,6 +51,9 @@ export default function ZLayoutFeature({
         alt={imageAlt}
         className="w-[90%] h-[90%] object-contain"
         loading="lazy"
+        decoding="async"
+        width={540}
+        height={400}
         onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
       />
     </div>
