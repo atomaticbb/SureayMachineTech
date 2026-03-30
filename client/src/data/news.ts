@@ -118,6 +118,43 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 
   // ── Archive Grid ──────────────────────────────────────────────────────────
   {
+    id:       "shredder-metallurgy-maximizes-recycling-yields",
+    tag:      "TECH INNOVATION",
+    date:     "30.MAR.2026",
+    title:    "THE RECYCLING BOOM: HOW ADVANCED SHREDDER METALLURGY MAXIMIZES MECHANICAL RECYCLING YIELDS",
+    excerpt:  "Discover how upgrading your shredder blades from standard D2 to DC53 or H13 tool steel can prevent catastrophic blade failure, survive tramp metal impacts, and maximize your recycling plant's uptime.",
+    image:    "/images/news/shredder-machine-working.webp",
+    readTime: "7 MIN",
+    content: [
+      { type: "paragraph", value: "In the mechanical recycling industry, profitability isn't just about the volume of material you process; it is strictly measured by continuous machine uptime. As global mandates push for higher percentages of recycled plastics and metals, recycling facilities are processing unprecedented volumes of Municipal Solid Waste (MSW), industrial scrap, and end-of-life tires." },
+      { type: "paragraph", value: "But there is a brutal reality on the tipping floor: waste is never clean." },
+      { type: "paragraph", value: "When processing mixed bales of plastics or wood, shredder rotors inevitably encounter \"tramp metal\" — stray steel bolts, engine blocks, or hidden rebar. When a high-speed shredder blade hits a solid steel inclusion, the kinetic energy is massive. If your blades are made from the wrong metallurgical grade, they won't just dull; they will catastrophically shatter, destroying the rotor shaft and halting your entire line for days." },
+      { type: "paragraph", value: "To maximize yields and survive the chaos of modern recycling, plant managers must look beyond basic blade geometry and understand the science of shredder metallurgy." },
+
+      { type: "h2",       value: "The Brittle Trap: Why Standard D2 Fails in Mixed Waste" },
+      { type: "paragraph", value: "For decades, D2 (1.2379) cold-work tool steel has been the default choice for industrial cutting. Packed with 1.5% Carbon and 12% Chromium, D2 hardens beautifully to HRC 60–62, offering fantastic wear resistance when cutting clean, predictable materials like paper or pure plastic films." },
+      { type: "paragraph", value: "However, D2 achieves this hardness through the formation of massive, brittle chromium carbides in its microstructure. In a heavy-duty twin-shaft shredder application, high hardness equals low impact toughness. When a D2 hook blade bites into a hidden steel bolt, the brittle chromium carbides act as stress-concentration points. The blade snaps, sending broken shards of hardened steel through the cutting chamber, often destroying adjacent knives and the bed anvil in a domino effect." },
+      { type: "callout",  value: "For clean, post-industrial plastic regrind (using granulators), D2 remains a cost-effective choice. But for primary breakdown shredders facing unpredictable MSW, D2 is a ticking time bomb." },
+
+      { type: "h2",       value: "Upgrading the Arsenal: DC53 and H13 Tool Steels" },
+      { type: "paragraph", value: "To conquer extreme impact environments, elite blade manufacturers shift the metallurgical focus from pure \"hardness\" to \"transverse rupture strength\" (toughness)." },
+      { type: "h3",       value: "DC53: The Superior Cold-Work Alternative" },
+      { type: "paragraph", value: "DC53 is an advanced modification of standard D2. Through a refined alloy composition and tighter control over the steel-making process, DC53 eliminates the massive carbide structures found in D2. Heat-treated to HRC 60, DC53 maintains the excellent wear resistance of D2 but delivers double the impact toughness. It is the ultimate choice for heavy-duty single-shaft shredder inserts processing tough, thick-walled plastics, copper cables, and tires where moderate shock loads are expected." },
+      { type: "h3",       value: "H13 (1.2344): The Shock-Absorbing King" },
+      { type: "paragraph", value: "Originally developed for hot-forging dies, H13 hot-work tool steel is the undisputed champion of the scrap yard. It contains lower carbon (0.40%) and utilizes a chromium-molybdenum-vanadium matrix. Hardened to a slightly lower HRC 52–56, H13 possesses massive core toughness. When an H13 twin-shaft shredder blade hits a solid steel engine block, the blade might dent or deform elastically, but it will not shatter. This shock-absorbing characteristic saves the shredder's gearbox, hexagonal shaft, and bearings from catastrophic failure." },
+
+      { type: "h2",       value: "The Ultimate Hybrid: Hardfacing and Surface Armor" },
+      { type: "paragraph", value: "What if you need the extreme shock absorption of H13, but the wear resistance of a carbide blade to process highly abrasive materials like glass-fiber-reinforced plastics or sand-covered agricultural films?" },
+      { type: "paragraph", value: "The answer is Hardfacing (Surface Welding). Leading tooling manufacturers take a tough, shatter-proof core (like H13 or customized alloy steel) and use PTA (Plasma Transferred Arc) welding to overlay a super-hard armor matrix — such as Stellite or Tungsten Carbide grit — directly onto the cutting hooks and wear faces." },
+      { type: "callout",  value: "BIMETALLIC CONSTRUCTION: A blade that absorbs explosive impacts internally, while resisting severe abrasive wear externally — the holy grail of shredding." },
+
+      { type: "h2",       value: "Maximizing Your Shredder's Uptime" },
+      { type: "paragraph", value: "Every recycling line has a unique \"diet.\" Using a one-size-fits-all blade material guarantees you are either overpaying for unnecessary tooling or bleeding money through excessive maintenance downtime." },
+      { type: "paragraph", value: "At Sureay, we engineer our Single Shaft Shredder Blades and Twin Shaft Shredder Knives to perfectly match your specific waste stream. From DC53 concave inserts for high-throughput plastic reduction to massive H13 hook blades for heavy metal and tire processing, our vacuum heat-treatment protocols ensure your tooling survives the most violent impacts your facility can throw at it." },
+      { type: "paragraph", value: "Don't let tramp metal dictate your production schedule. Contact our metallurgical engineering team today for a free wear-analysis of your current shredder blades, and discover how upgrading your alloy can transform your MTBR (Mean Time Between Replacements) from weeks into months." },
+    ],
+  },
+  {
     id:         "facility-expansion-phase-iii",
     tag:        "COMPANY UPDATES",
     date:       "24.OCT.2024",
