@@ -186,9 +186,9 @@ export default function About() {
             <img
               src="/images/about/factory.webp"
               alt="Sureay factory floor overview — Ma'anshan facility"
-              className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75"
-              width={1200}
-              height={700}
+              className="absolute inset-0 w-full h-full object-cover contrast-105"
+              width={1920}
+              height={1078}
               decoding="async"
             />
           </div>
@@ -196,6 +196,7 @@ export default function About() {
         </div>
 
       </section>
+
 
       {/* ═══════════════════════════════════════════════════════════════════
           2. STATS STRIP — Heavy Dashboard with Count-Up
@@ -255,11 +256,11 @@ export default function About() {
               <img
                 src="/images/about/factory-00.webp"
                 alt="Sureay CNC machining workshop — full floor establishing shot"
-                className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75 group-hover:scale-105 transition-transform duration-700"
+                className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-90 group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
                 decoding="async"
-                width={800}
-                height={600}
+                width={1920}
+                height={1233}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3">
                 <p className="text-xs font-bold uppercase tracking-wide text-[#001f4d]">CNC Machining Workshop</p>
