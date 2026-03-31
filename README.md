@@ -13,7 +13,7 @@ A full-stack B2B marketing and product catalog website for [Sureay Machinery Tec
 - **Google Analytics 4** with Consent Mode v2
 - **Structured data** (Schema.org JSON-LD) for Organization, Product, and ItemList
 - **SEO assets**: sitemap.xml, robots.txt, multi-format favicons, canonical tags
-- **Deployable** via Vercel (static frontend) or Docker (full-stack)
+- **Deployable** via Docker + Coolify (full-stack, self-hosted)
 
 ## Table of Contents
 
@@ -104,11 +104,11 @@ SureayMachineTech/
 │   └── seed.ts                # Database seed script
 │
 ├── scripts/
+│   ├── generate-sitemap.ts    # Generates client/public/sitemap.xml
 │   └── prerender.ts           # Puppeteer SSG prerender script
 │
 ├── Dockerfile                 # Multi-stage Docker build
 ├── docker-compose.yml
-├── vercel.json                # Vercel deployment config
 └── vite.config.ts
 ```
 
@@ -206,20 +206,14 @@ pnpm start
 
 Build output:
 
-- Frontend: `dist/public/` (served by Express or Vercel)
+- Frontend: `dist/public/` (served by Express)
 - Server bundle: `dist/index.js`
 
 ## Deployment
 
-### Vercel (Frontend / Static)
+The site runs on **Coolify** (self-hosted, Docker). The Express server serves both the API and the prerendered static files.
 
-The `vercel.json` config builds the frontend and rewrites all routes to `index.html` for SPA mode. Static images are served with long-cache headers.
-
-```bash
-vercel deploy
-```
-
-### Docker (Full-Stack)
+### Docker
 
 ```bash
 # Build and start with Docker Compose
@@ -232,7 +226,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-The multi-stage Dockerfile installs Chromium for Puppeteer prerendering in the builder stage and produces a minimal production image on Node 20 Alpine. The server exposes port 3000 with a `/health` endpoint.
+The multi-stage Dockerfile installs Chromium for Puppeteer prerendering in the builder stage and produces a minimal production image on Node 20 Debian. The server exposes port 3000 with a `/health` endpoint.
 
 ### Key Production Environment Variables
 
@@ -279,8 +273,8 @@ RESEND_API_KEY=...
 | Technology | Purpose |
 |---|---|
 | Puppeteer | SSG prerendering for SEO |
-| Docker (Alpine) | Containerization |
-| Vercel | Static frontend hosting |
+| Docker | Containerization |
+| Coolify | Self-hosted deployment platform |
 | Google Analytics 4 | Analytics with Consent Mode v2 |
 | pnpm 10 | Package manager |
 

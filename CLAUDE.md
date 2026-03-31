@@ -24,7 +24,7 @@ pnpm lint:fix
 # Formatting
 pnpm format              # prettier --write .
 
-# Production build (Vite + Puppeteer prerender)
+# Production build (sitemap + Vite + Puppeteer prerender)
 pnpm build
 
 # Full build (above + esbuild server bundle)
@@ -62,9 +62,7 @@ scripts/    Puppeteer prerender (SSG for SEO)
 
 **Build output:** `dist/public/` (static files), `dist/index.js` (bundled server).
 
-**Deployment modes:**
-- Vercel: static SPA only (all routes rewrite to `index.html`); no Express server
-- Docker / self-hosted: full-stack Express server serves `dist/public/` as static
+**Deployment:** Docker + Coolify (self-hosted). Express serves both `/api` and the prerendered static files from `dist/public/`.
 
 ## Path Aliases
 
@@ -87,6 +85,7 @@ scripts/    Puppeteer prerender (SSG for SEO)
 | `server/index.ts` | Express app entry (production): compression, helmet, CORS, static serving |
 | `server/dev.ts` | Express dev entry (used with `tsx watch`) |
 | `scripts/prerender.ts` | Puppeteer crawls all routes and writes static HTML to `dist/public/` |
+| `scripts/generate-sitemap.ts` | Generates `client/public/sitemap.xml` at build time |
 | `client/index.html` | GA4 snippet, JSON-LD (Organization schema), favicons |
 
 ## Frontend Conventions
@@ -230,7 +229,7 @@ Frontend environment variables must be prefixed with `VITE_` to be exposed to th
 
 - Per-page meta tags and JSON-LD are set via `react-helmet-async` in the `<SEO>` component.
 - The `scripts/prerender.ts` Puppeteer script generates static HTML for all routes at build time — this is what search engines index.
-- `client/public/sitemap.xml` is maintained manually. Update it when adding new routes.
+- `client/public/sitemap.xml` is **auto-generated** by `scripts/generate-sitemap.ts` at build time. Update the script when adding new routes.
 - Structured data (Schema.org) for the Organization is in `client/index.html`. Per-product JSON-LD is rendered by the Product Detail page.
 
 ## Product Catalog
