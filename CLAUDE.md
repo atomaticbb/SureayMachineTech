@@ -74,19 +74,19 @@ scripts/    Puppeteer prerender (SSG for SEO)
 
 ## Key Files
 
-| File | Role |
-|---|---|
-| `client/src/data/blades.ts` | **Single source of truth** for the product catalog. All product data, types (`Blade`, `BladeCategoryType`, `BladeSectorType`, etc.), and dimension tables live here. Never duplicate product data elsewhere. |
-| `client/src/App.tsx` | Router, providers, lazy-loaded pages, `ProtectedRoute` for admin |
-| `shared/types/product.ts` | `Product`, `ProductSpecs`, `BladeCategory`, `MachineryCategory` types |
-| `shared/types/contact.ts` | `ContactFormData`, `ContactSubmissionResponse` |
-| `shared/validators/contact.ts` | Zod `ContactFormSchema` — used on both client and server |
-| `server/routes/index.ts` | Mounts all sub-routers under `/api` |
-| `server/index.ts` | Express app entry (production): compression, helmet, CORS, static serving |
-| `server/dev.ts` | Express dev entry (used with `tsx watch`) |
-| `scripts/prerender.ts` | Puppeteer crawls all routes and writes static HTML to `dist/public/` |
-| `scripts/generate-sitemap.ts` | Generates `client/public/sitemap.xml` at build time |
-| `client/index.html` | GA4 snippet, JSON-LD (Organization schema), favicons |
+| File                           | Role                                                                                                                                                                                                         |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `client/src/data/blades.ts`    | **Single source of truth** for the product catalog. All product data, types (`Blade`, `BladeCategoryType`, `BladeSectorType`, etc.), and dimension tables live here. Never duplicate product data elsewhere. |
+| `client/src/App.tsx`           | Router, providers, lazy-loaded pages, `ProtectedRoute` for admin                                                                                                                                             |
+| `shared/types/product.ts`      | `Product`, `ProductSpecs`, `BladeCategory`, `MachineryCategory` types                                                                                                                                        |
+| `shared/types/contact.ts`      | `ContactFormData`, `ContactSubmissionResponse`                                                                                                                                                               |
+| `shared/validators/contact.ts` | Zod `ContactFormSchema` — used on both client and server                                                                                                                                                     |
+| `server/routes/index.ts`       | Mounts all sub-routers under `/api`                                                                                                                                                                          |
+| `server/index.ts`              | Express app entry (production): compression, helmet, CORS, static serving                                                                                                                                    |
+| `server/dev.ts`                | Express dev entry (used with `tsx watch`)                                                                                                                                                                    |
+| `scripts/prerender.ts`         | Puppeteer crawls all routes and writes static HTML to `dist/public/`                                                                                                                                         |
+| `scripts/generate-sitemap.ts`  | Generates `client/public/sitemap.xml` at build time                                                                                                                                                          |
+| `client/index.html`            | GA4 snippet, JSON-LD (Organization schema), favicons                                                                                                                                                         |
 
 ## Frontend Conventions
 
@@ -184,6 +184,7 @@ Always put types and validators in `shared/` when they are needed by both client
 SQLite via Prisma. Schema is in `prisma/schema.prisma`.
 
 After changing the schema:
+
 - Development: `pnpm db:migrate` (creates a migration file)
 - Production: `pnpm db:migrate:prod` (applies pending migrations)
 - Quick iteration: `pnpm db:push` (no migration file, dev only)

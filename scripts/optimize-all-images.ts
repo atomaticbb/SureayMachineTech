@@ -62,7 +62,9 @@ async function convertPngToWebp(filePath: string): Promise<void> {
   const relPath = path.relative(IMAGES_DIR, filePath);
 
   if (DRY_RUN) {
-    console.log(`[DRY RUN] Would convert PNG: ${relPath} (${formatBytes(originalSize)})`);
+    console.log(
+      `[DRY RUN] Would convert PNG: ${relPath} (${formatBytes(originalSize)})`
+    );
     stats.pngsConverted++;
     return;
   }
@@ -112,7 +114,9 @@ async function compressWebp(filePath: string): Promise<void> {
   const relPath = path.relative(IMAGES_DIR, filePath);
 
   if (DRY_RUN) {
-    console.log(`[DRY RUN] Would compress WebP: ${relPath} (${formatBytes(originalSize)})`);
+    console.log(
+      `[DRY RUN] Would compress WebP: ${relPath} (${formatBytes(originalSize)})`
+    );
     stats.webpsCompressed++;
     return;
   }
@@ -151,7 +155,9 @@ async function compressWebp(filePath: string): Promise<void> {
   }
 }
 
-async function walkDirectory(dir: string): Promise<{ pngs: string[]; webps: string[] }> {
+async function walkDirectory(
+  dir: string
+): Promise<{ pngs: string[]; webps: string[] }> {
   const pngs: string[] = [];
   const webps: string[] = [];
 
@@ -175,7 +181,9 @@ async function walkDirectory(dir: string): Promise<{ pngs: string[]; webps: stri
 async function main() {
   console.log(DRY_RUN ? "=== DRY RUN MODE ===\n" : "");
   console.log(`Image directory: ${IMAGES_DIR}`);
-  console.log(`Max width: ${MAX_WIDTH}px | WebP quality: ${WEBP_QUALITY} | Compress threshold: ${COMPRESS_THRESHOLD_KB}KB\n`);
+  console.log(
+    `Max width: ${MAX_WIDTH}px | WebP quality: ${WEBP_QUALITY} | Compress threshold: ${COMPRESS_THRESHOLD_KB}KB\n`
+  );
 
   const { pngs, webps } = await walkDirectory(IMAGES_DIR);
 
@@ -189,10 +197,14 @@ async function main() {
   // Re-scan to pick up newly created WebP files from PNG conversion
   const { webps: allWebps } = await walkDirectory(IMAGES_DIR);
   const oversized = allWebps.filter(
-    (f) => fs.statSync(f).size >= COMPRESS_THRESHOLD_KB * 1024 && !/-\d+w\.webp$/.test(path.basename(f))
+    f =>
+      fs.statSync(f).size >= COMPRESS_THRESHOLD_KB * 1024 &&
+      !/-\d+w\.webp$/.test(path.basename(f))
   );
 
-  console.log(`\n--- Step 2: Compress ${oversized.length} WebP files over ${COMPRESS_THRESHOLD_KB}KB ---`);
+  console.log(
+    `\n--- Step 2: Compress ${oversized.length} WebP files over ${COMPRESS_THRESHOLD_KB}KB ---`
+  );
   for (const webp of allWebps) {
     await compressWebp(webp);
   }
@@ -205,7 +217,7 @@ async function main() {
   console.log(`Total space saved:      ${formatBytes(stats.totalSavedBytes)}`);
   if (stats.errors.length > 0) {
     console.log(`\nErrors (${stats.errors.length}):`);
-    stats.errors.forEach((e) => console.log(`  - ${e}`));
+    stats.errors.forEach(e => console.log(`  - ${e}`));
   }
   console.log("=============================");
 }

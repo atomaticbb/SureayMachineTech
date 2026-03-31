@@ -45,9 +45,7 @@ async function processDir(dir: string) {
     return;
   }
 
-  const sources = entries.filter(
-    (f) => IMAGE_RE.test(f) && !VARIANT_RE.test(f)
-  );
+  const sources = entries.filter(f => IMAGE_RE.test(f) && !VARIANT_RE.test(f));
 
   if (sources.length === 0) {
     console.log(`  [skip] no source images in ${dir}`);
@@ -113,7 +111,7 @@ async function main() {
   console.log("\n=== Done ===");
 }
 
-main().catch((err) => {
+main().catch(err => {
   console.error(err);
   process.exit(1);
 });

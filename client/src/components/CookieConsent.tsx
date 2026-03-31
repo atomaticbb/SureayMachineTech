@@ -18,9 +18,9 @@ const STORAGE_KEY = "sureay_cookie_v2";
 function updateAllConsent(value: "granted" | "denied"): void {
   if (typeof window === "undefined" || !window.gtag) return;
   window.gtag("consent", "update", {
-    analytics_storage:  value,
-    ad_storage:         value,
-    ad_user_data:       value,
+    analytics_storage: value,
+    ad_storage: value,
+    ad_user_data: value,
     ad_personalization: value,
   });
 }
@@ -56,14 +56,13 @@ export default function CookieConsent() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-[#001f4d] border-t border-white/20 shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10">
-
         {/* Text */}
         <div className="flex-1 min-w-0">
           <p className="text-white font-bold text-sm mb-1">Cookie Settings</p>
           <p className="text-white/70 text-sm leading-relaxed max-w-2xl">
             We use analytics cookies to understand how visitors use this site.
-            No advertising or third-party data is shared.
-            You can change your preference at any time.
+            No advertising or third-party data is shared. You can change your
+            preference at any time.
           </p>
         </div>
 
@@ -82,7 +81,6 @@ export default function CookieConsent() {
             Accept All
           </button>
         </div>
-
       </div>
     </div>
   );

@@ -53,16 +53,13 @@ export default function NewsDetail() {
       <Navbar />
 
       <main className="pt-[74px]">
-
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 1 — Technical Datasheet Header (Left Text / Right Image)
         ═══════════════════════════════════════════════════════════════════ */}
         <section className="border-b border-slate-200">
           <div className="lg:grid lg:grid-cols-2">
-
             {/* ── Left: Ledger Panel ─────────────────────────────────────── */}
             <div className="lg:border-r border-slate-200 border-b lg:border-b-0 p-6 lg:p-16 flex flex-col justify-between">
-
               {/* Top: back-nav + metadata */}
               <div>
                 <Link href="/news">
@@ -106,10 +103,10 @@ export default function NewsDetail() {
               {/* Bottom: read time stamp */}
               <div className="border-t border-slate-200 pt-5">
                 <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
-                  READ TIME: {article.readTime} &nbsp;·&nbsp; AUTHORED BY: CORE ENGINEERING
+                  READ TIME: {article.readTime} &nbsp;·&nbsp; AUTHORED BY: CORE
+                  ENGINEERING
                 </span>
               </div>
-
             </div>
 
             {/* ── Right: Evidence Viewport ────────────────────────────────── */}
@@ -129,7 +126,6 @@ export default function NewsDetail() {
                 </span>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -138,11 +134,9 @@ export default function NewsDetail() {
         ═══════════════════════════════════════════════════════════════════ */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
           <div className="lg:grid lg:grid-cols-12 gap-12">
-
             {/* ── Left: Document Navigator (sticky) ─────────────────────── */}
             <aside className="lg:col-span-3 mb-12 lg:mb-0">
               <div className="lg:sticky lg:top-[110px] border border-slate-200">
-
                 {/* Author */}
                 <div className="border-b border-slate-200 px-5 py-4">
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
@@ -162,7 +156,9 @@ export default function NewsDetail() {
                     [ PRINT DOCUMENT ]
                   </button>
                   <button
-                    onClick={() => navigator.clipboard?.writeText(window.location.href)}
+                    onClick={() =>
+                      navigator.clipboard?.writeText(window.location.href)
+                    }
                     className="text-left px-5 py-3 font-mono text-[10px] text-slate-500 tracking-widest uppercase hover:bg-[#001f4d] hover:text-white transition-none"
                   >
                     [ COPY LINK ]
@@ -184,13 +180,11 @@ export default function NewsDetail() {
                     {article.date}
                   </p>
                 </div>
-
               </div>
             </aside>
 
             {/* ── Right: Main Article Content ───────────────────────────── */}
             <article className="lg:col-span-9">
-
               {article.content.map((block, i) => {
                 switch (block.type) {
                   case "h2":
@@ -224,7 +218,10 @@ export default function NewsDetail() {
                     );
                   case "image":
                     return (
-                      <div key={i} className="my-10 border border-slate-200 overflow-hidden">
+                      <div
+                        key={i}
+                        className="my-10 border border-slate-200 overflow-hidden"
+                      >
                         <img
                           src={block.value}
                           alt=""
@@ -238,7 +235,10 @@ export default function NewsDetail() {
                     );
                   default:
                     return (
-                      <p key={i} className="text-lg leading-relaxed text-slate-700 mb-6">
+                      <p
+                        key={i}
+                        className="text-lg leading-relaxed text-slate-700 mb-6"
+                      >
                         {block.value}
                       </p>
                     );
@@ -251,9 +251,7 @@ export default function NewsDetail() {
                   // END OF DISPATCH //
                 </span>
               </div>
-
             </article>
-
           </div>
         </section>
 
@@ -262,7 +260,6 @@ export default function NewsDetail() {
         ═══════════════════════════════════════════════════════════════════ */}
         <section className="border-t-2 border-[#001f4d]">
           <div className="grid grid-cols-1 sm:grid-cols-2">
-
             {prev ? (
               <Link href={`/news/${prev.id}`}>
                 <a className="group border-b sm:border-b-0 sm:border-r border-[#001f4d] px-8 lg:px-16 py-12 flex flex-col gap-3 hover:bg-[#001f4d] transition-none cursor-pointer">
@@ -306,10 +303,8 @@ export default function NewsDetail() {
                 </span>
               </div>
             )}
-
           </div>
         </section>
-
       </main>
 
       <Footer />

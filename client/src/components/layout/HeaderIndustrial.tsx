@@ -5,7 +5,16 @@
 
 import { useState } from "react";
 import { Link } from "wouter";
-import { Menu, X, Factory, Recycle, Scissors, Layers, Phone, ChevronDown } from "lucide-react";
+import {
+  Menu,
+  X,
+  Factory,
+  Recycle,
+  Scissors,
+  Layers,
+  Phone,
+  ChevronDown,
+} from "lucide-react";
 
 // ══════════════════════════════════════════════════════════════════════════════
 // SECTOR DATA STRUCTURE
@@ -30,10 +39,26 @@ const SECTORS: Sector[] = [
     title: "Recycling & Waste Management",
     icon: Recycle,
     products: [
-      { id: "twin-shaft-blades-recycling", name: "Twin-Shaft Shredder Blades",  href: "/products/twin-shaft-blades-recycling" },
-      { id: "single-shaft-rotor-inserts",  name: "Single Shaft Rotor Inserts",  href: "/products/single-shaft-rotor-inserts"  },
-      { id: "single-shaft-bed-knives",     name: "Single Shaft Bed Knives",     href: "/products/single-shaft-bed-knives"     },
-      { id: "granulator-blades",           name: "Granulator Blades",           href: "/products/granulator-blades"           },
+      {
+        id: "twin-shaft-blades-recycling",
+        name: "Twin-Shaft Shredder Blades",
+        href: "/products/twin-shaft-blades-recycling",
+      },
+      {
+        id: "single-shaft-rotor-inserts",
+        name: "Single Shaft Rotor Inserts",
+        href: "/products/single-shaft-rotor-inserts",
+      },
+      {
+        id: "single-shaft-bed-knives",
+        name: "Single Shaft Bed Knives",
+        href: "/products/single-shaft-bed-knives",
+      },
+      {
+        id: "granulator-blades",
+        name: "Granulator Blades",
+        href: "/products/granulator-blades",
+      },
     ],
   },
   {
@@ -41,8 +66,16 @@ const SECTORS: Sector[] = [
     title: "Paper & Tissue Converting",
     icon: Scissors,
     products: [
-      { id: "tissue-log-saw-blades", name: "Tissue Log Saw Blades", href: "/products/tissue-log-saw-blades" },
-      { id: "paper-cutting-blades", name: "Paper Cutting Blades", href: "/products/paper-cutting-blades" },
+      {
+        id: "tissue-log-saw-blades",
+        name: "Tissue Log Saw Blades",
+        href: "/products/tissue-log-saw-blades",
+      },
+      {
+        id: "paper-cutting-blades",
+        name: "Paper Cutting Blades",
+        href: "/products/paper-cutting-blades",
+      },
     ],
   },
   {
@@ -50,7 +83,11 @@ const SECTORS: Sector[] = [
     title: "Flexible Packaging & Converting",
     icon: Layers,
     products: [
-      { id: "rotary-slitter-knives", name: "Rotary Slitter Knives", href: "/products/rotary-slitter-knives" },
+      {
+        id: "rotary-slitter-knives",
+        name: "Rotary Slitter Knives",
+        href: "/products/rotary-slitter-knives",
+      },
     ],
   },
   {
@@ -58,7 +95,11 @@ const SECTORS: Sector[] = [
     title: "Metal Coil Processing",
     icon: Factory,
     products: [
-      { id: "rotary-cutter-blades", name: "Rotary Cutter Blades", href: "/products/rotary-cutter-blades" },
+      {
+        id: "metal-coil-slitting-knives",
+        name: "Metal Coil Slitting Knives",
+        href: "/products/metal-coil-slitting-knives",
+      },
     ],
   },
 ];
@@ -77,7 +118,7 @@ function MegaMenu({ onClose }: MegaMenuProps) {
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Sector Grid - 4 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {SECTORS.map((sector) => {
+          {SECTORS.map(sector => {
             const Icon = sector.icon;
             return (
               <div key={sector.id} className="space-y-4">
@@ -91,7 +132,7 @@ function MegaMenu({ onClose }: MegaMenuProps) {
 
                 {/* Product Links */}
                 <div className="space-y-2">
-                  {sector.products.map((product) => (
+                  {sector.products.map(product => (
                     <Link key={product.id} href={product.href}>
                       <a
                         onClick={onClose}
@@ -112,7 +153,10 @@ function MegaMenu({ onClose }: MegaMenuProps) {
           <p className="text-xs text-slate-500 uppercase tracking-wider">
             Need a custom blade solution?{" "}
             <Link href="/contact">
-              <a onClick={onClose} className="text-[#001f4d] font-semibold hover:underline">
+              <a
+                onClick={onClose}
+                className="text-[#001f4d] font-semibold hover:underline"
+              >
                 Contact Engineering →
               </a>
             </Link>
@@ -173,20 +217,27 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Industries & Products
           </div>
           <div className="space-y-2">
-            {SECTORS.map((sector) => {
+            {SECTORS.map(sector => {
               const Icon = sector.icon;
               const isExpanded = expandedSector === sector.id;
 
               return (
-                <div key={sector.id} className="border border-slate-200 rounded">
+                <div
+                  key={sector.id}
+                  className="border border-slate-200 rounded"
+                >
                   {/* Sector Toggle */}
                   <button
-                    onClick={() => setExpandedSector(isExpanded ? null : sector.id)}
+                    onClick={() =>
+                      setExpandedSector(isExpanded ? null : sector.id)
+                    }
                     className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-slate-50 transition-colors duration-150"
                   >
                     <div className="flex items-center gap-3">
                       <Icon className="w-4 h-4 text-[#001f4d]" />
-                      <span className="font-semibold text-sm text-slate-700">{sector.title}</span>
+                      <span className="font-semibold text-sm text-slate-700">
+                        {sector.title}
+                      </span>
                     </div>
                     <ChevronDown
                       className={`w-4 h-4 text-slate-400 transition-transform duration-150 ${
@@ -198,7 +249,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   {/* Product List */}
                   {isExpanded && (
                     <div className="px-4 pb-3 pt-1 bg-slate-50 space-y-1">
-                      {sector.products.map((product) => (
+                      {sector.products.map(product => (
                         <Link key={product.id} href={product.href}>
                           <a
                             onClick={onClose}
@@ -261,7 +312,6 @@ export default function HeaderIndustrial() {
     <header className="sticky top-0 bg-[#001f4d] text-white shadow-lg z-40">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-
           {/* Logo */}
           <Link href="/">
             <a className="font-black text-2xl tracking-tight hover:opacity-80 transition-opacity duration-150">
@@ -289,7 +339,9 @@ export default function HeaderIndustrial() {
               </button>
 
               {/* Mega Menu Dropdown */}
-              {isMegaMenuOpen && <MegaMenu onClose={() => setIsMegaMenuOpen(false)} />}
+              {isMegaMenuOpen && (
+                <MegaMenu onClose={() => setIsMegaMenuOpen(false)} />
+              )}
             </div>
 
             <Link href="/about">
@@ -325,7 +377,10 @@ export default function HeaderIndustrial() {
       </div>
 
       {/* Mobile Menu */}
-      <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      />
     </header>
   );
 }

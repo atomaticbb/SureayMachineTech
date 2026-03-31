@@ -1,13 +1,13 @@
-import { Resend } from 'resend';
-import { ContactFormData } from '../../shared/types/contact.js';
-import { prisma } from '../db/client.js';
+import { Resend } from "resend";
+import { ContactFormData } from "../../shared/types/contact.js";
+import { prisma } from "../db/client.js";
 
 // ── Attachment payload (populated by multer, passed from controller) ──────────
 export interface AttachmentPayload {
-  buffer:       Buffer;
+  buffer: Buffer;
   originalname: string;
-  mimetype:     string;
-  size:         number;
+  mimetype: string;
+  size: number;
 }
 
 // ── Lazy Resend client (initialised once on first send) ───────────────────────
@@ -24,50 +24,57 @@ const getResendClient = (): Resend | null => {
 // EMAIL_TO_OWNER  → owner's private inbox (e.g. liyucityu@hotmail.com)
 const buildRecipients = (): string[] => {
   const list: string[] = [];
-  if (process.env.EMAIL_TO)       list.push(process.env.EMAIL_TO);
+  if (process.env.EMAIL_TO) list.push(process.env.EMAIL_TO);
   if (process.env.EMAIL_TO_OWNER) list.push(process.env.EMAIL_TO_OWNER);
-  return list.length > 0 ? list : ['lynn@sureay.com'];
+  return list.length > 0 ? list : ["lynn@sureay.com"];
 };
 
 // ── HTML escape helper ────────────────────────────────────────────────────────
 function escHtml(s: string | undefined | null): string {
-  if (s == null) return '';
+  if (s == null) return "";
   return s
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#x27;');
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
 }
 
 // ── Subject line ──────────────────────────────────────────────────────────────
 const buildSubject = (data: ContactFormData): string => {
-  const type    = data.inquiryType ? ` [${data.inquiryType.toUpperCase()}]` : '';
-  const company = data.company     ? ` — ${data.company}`                   : '';
+  const type = data.inquiryType ? ` [${data.inquiryType.toUpperCase()}]` : "";
+  const company = data.company ? ` — ${data.company}` : "";
   return `[NEW INQUIRY]${type} from ${data.name}${company}`;
 };
 
 // ── HTML template — industrial English ───────────────────────────────────────
-const buildHtml = (data: ContactFormData, attachment?: AttachmentPayload): string => {
-  const timestamp = new Date().toLocaleString('en-US', {
-    timeZone:     'Asia/Shanghai',
-    weekday:      'short',
-    year:         'numeric',
-    month:        'short',
-    day:          'numeric',
-    hour:         '2-digit',
-    minute:       '2-digit',
-    timeZoneName: 'short',
+const buildHtml = (
+  data: ContactFormData,
+  attachment?: AttachmentPayload
+): string => {
+  const timestamp = new Date().toLocaleString("en-US", {
+    timeZone: "Asia/Shanghai",
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZoneName: "short",
   });
 
   // Pre-escape all user-controlled values before inserting into HTML
-  const safeName        = escHtml(data.name);
-  const safeEmail       = escHtml(data.email);
-  const safeCompany     = data.company     ? escHtml(data.company)     : undefined;
-  const safePhone       = data.phone       ? escHtml(data.phone)       : undefined;
-  const safeInquiryType = data.inquiryType ? escHtml(data.inquiryType) : undefined;
-  const safeMessage     = escHtml(data.message).replace(/\n/g, '<br>');
-  const safeOrigName    = attachment ? escHtml(attachment.originalname) : undefined;
+  const safeName = escHtml(data.name);
+  const safeEmail = escHtml(data.email);
+  const safeCompany = data.company ? escHtml(data.company) : undefined;
+  const safePhone = data.phone ? escHtml(data.phone) : undefined;
+  const safeInquiryType = data.inquiryType
+    ? escHtml(data.inquiryType)
+    : undefined;
+  const safeMessage = escHtml(data.message).replace(/\n/g, "<br>");
+  const safeOrigName = attachment
+    ? escHtml(attachment.originalname)
+    : undefined;
 
   const row = (label: string, value: string) => `
     <tr>
@@ -130,7 +137,7 @@ const buildHtml = (data: ContactFormData, attachment?: AttachmentPayload): strin
     <td style="background:#001f4d;padding:14px 32px 24px;">
       <table cellpadding="0" cellspacing="0" width="100%"><tr>
         <td>
-          ${safeInquiryType ? `<span style="display:inline-block;background:#e8b84b;color:#001f4d;font-size:10px;font-weight:900;letter-spacing:0.2em;text-transform:uppercase;padding:4px 12px;">${safeInquiryType}</span>` : '&nbsp;'}
+          ${safeInquiryType ? `<span style="display:inline-block;background:#e8b84b;color:#001f4d;font-size:10px;font-weight:900;letter-spacing:0.2em;text-transform:uppercase;padding:4px 12px;">${safeInquiryType}</span>` : "&nbsp;"}
         </td>
         <td align="right">
           <span style="font-size:11px;color:#94a3b8;font-family:'Courier New',monospace;">${timestamp}</span>
@@ -143,10 +150,10 @@ const buildHtml = (data: ContactFormData, attachment?: AttachmentPayload): strin
   <tr>
     <td>
       <table width="100%" cellpadding="0" cellspacing="0">
-        ${row('Name',    `<strong>${safeName}</strong>`)}
-        ${row('Email',   `<a href="mailto:${safeEmail}" style="color:#001f4d;font-weight:700;text-decoration:none;">${safeEmail}</a>`)}
-        ${safeCompany ? row('Company', safeCompany) : ''}
-        ${safePhone   ? row('Phone',   `<a href="tel:${safePhone}" style="color:#001f4d;text-decoration:none;">${safePhone}</a>`) : ''}
+        ${row("Name", `<strong>${safeName}</strong>`)}
+        ${row("Email", `<a href="mailto:${safeEmail}" style="color:#001f4d;font-weight:700;text-decoration:none;">${safeEmail}</a>`)}
+        ${safeCompany ? row("Company", safeCompany) : ""}
+        ${safePhone ? row("Phone", `<a href="tel:${safePhone}" style="color:#001f4d;text-decoration:none;">${safePhone}</a>`) : ""}
       </table>
     </td>
   </tr>
@@ -164,7 +171,9 @@ ${safeMessage}
   </tr>
 
   <!-- ATTACHMENT (conditional) -->
-  ${attachment ? `
+  ${
+    attachment
+      ? `
   <tr>
     <td style="padding:0 32px 28px;">
       <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#64748b;">
@@ -178,7 +187,9 @@ ${safeMessage}
         </td>
       </tr></table>
     </td>
-  </tr>` : ''}
+  </tr>`
+      : ""
+  }
 
   <!-- CTA -->
   <tr>
@@ -206,42 +217,44 @@ ${safeMessage}
 };
 
 // ── Plain-text fallback ───────────────────────────────────────────────────────
-const buildText = (data: ContactFormData, attachment?: AttachmentPayload): string =>
-`NEW INQUIRY — Sureay Machinery
-${'─'.repeat(44)}
-${data.inquiryType ? `Type    : ${data.inquiryType}\n` : ''}Name    : ${data.name}
+const buildText = (
+  data: ContactFormData,
+  attachment?: AttachmentPayload
+): string =>
+  `NEW INQUIRY — Sureay Machinery
+${"─".repeat(44)}
+${data.inquiryType ? `Type    : ${data.inquiryType}\n` : ""}Name    : ${data.name}
 Email   : ${data.email}
-${data.company ? `Company : ${data.company}\n` : ''}${data.phone ? `Phone   : ${data.phone}\n` : ''}
+${data.company ? `Company : ${data.company}\n` : ""}${data.phone ? `Phone   : ${data.phone}\n` : ""}
 Project Details:
 ${data.message}
-${attachment ? `\nAttachment : ${attachment.originalname} (${(attachment.size / 1024).toFixed(1)} KB)` : ''}
-${'─'.repeat(44)}
+${attachment ? `\nAttachment : ${attachment.originalname} (${(attachment.size / 1024).toFixed(1)} KB)` : ""}
+${"─".repeat(44)}
 Submitted via sureay.com
 `;
 
 // ── Main export ───────────────────────────────────────────────────────────────
 export const sendContactEmail = async (
-  data:        ContactFormData,
-  _metadata?:  { ipAddress?: string; userAgent?: string },
-  attachment?: AttachmentPayload,
+  data: ContactFormData,
+  _metadata?: { ipAddress?: string; userAgent?: string },
+  attachment?: AttachmentPayload
 ): Promise<{ success: boolean; emailLogId?: string }> => {
-
-  const client  = getResendClient();
-  const to      = buildRecipients();
+  const client = getResendClient();
+  const to = buildRecipients();
   const subject = buildSubject(data);
 
   // ── No API key: log to DB and skip ──────────────────────────────────────
   if (!client) {
-    console.warn('⚠️  RESEND_API_KEY not configured — email skipped');
+    console.warn("⚠️  RESEND_API_KEY not configured — email skipped");
     try {
       const emailLog = await prisma.emailLog.create({
         data: {
-          to:           to.join(', '),
+          to: to.join(", "),
           subject,
-          templateName: 'inquiry_v2',
-          status:       'skipped',
-          provider:     'resend',
-          errorMessage: 'RESEND_API_KEY not configured',
+          templateName: "inquiry_v2",
+          status: "skipped",
+          provider: "resend",
+          errorMessage: "RESEND_API_KEY not configured",
         },
       });
       return { success: false, emailLogId: emailLog.id };
@@ -252,69 +265,73 @@ export const sendContactEmail = async (
 
   // ── Send via Resend ──────────────────────────────────────────────────────
   try {
-    console.log('📧 Sending inquiry email via Resend…', {
-      from:       process.env.EMAIL_FROM || 'inquiry@sureay.com',
+    console.log("📧 Sending inquiry email via Resend…", {
+      from: process.env.EMAIL_FROM || "inquiry@sureay.com",
       to,
       subject,
-      attachment: attachment?.originalname ?? 'none',
+      attachment: attachment?.originalname ?? "none",
     });
 
     const result = await client.emails.send({
-      from:    process.env.EMAIL_FROM || 'Sureay Inquiry Portal <inquiry@sureay.com>',
+      from:
+        process.env.EMAIL_FROM || "Sureay Inquiry Portal <inquiry@sureay.com>",
       to,
       replyTo: data.email,
       subject,
-      html:    buildHtml(data, attachment),
-      text:    buildText(data, attachment),
+      html: buildHtml(data, attachment),
+      text: buildText(data, attachment),
       ...(attachment && {
-        attachments: [{
-          filename: attachment.originalname,
-          content:  attachment.buffer,
-        }],
+        attachments: [
+          {
+            filename: attachment.originalname,
+            content: attachment.buffer,
+          },
+        ],
       }),
     });
 
-    const status     = result.data?.id ? 'sent' : 'failed';
+    const status = result.data?.id ? "sent" : "failed";
     const providerId = result.data?.id ?? null;
-    const errorMsg   = result.error?.message ?? null;
+    const errorMsg = result.error?.message ?? null;
 
     console.log(
-      status === 'sent'
+      status === "sent"
         ? `✅ Inquiry email sent — Resend ID: ${providerId}`
-        : `❌ Resend error: ${errorMsg}`,
+        : `❌ Resend error: ${errorMsg}`
     );
 
     const emailLog = await prisma.emailLog.create({
       data: {
-        to:           to.join(', '),
+        to: to.join(", "),
         subject,
-        templateName: 'inquiry_v2',
+        templateName: "inquiry_v2",
         status,
-        provider:     'resend',
+        provider: "resend",
         providerId,
         errorMessage: errorMsg,
-        sentAt:       status === 'sent' ? new Date() : null,
+        sentAt: status === "sent" ? new Date() : null,
       },
     });
 
-    return { success: status === 'sent', emailLogId: emailLog.id };
-
+    return { success: status === "sent", emailLogId: emailLog.id };
   } catch (error) {
-    const msg = error instanceof Error ? error.message : 'Unknown error';
-    console.error('❌ Email send exception:', msg);
+    const msg = error instanceof Error ? error.message : "Unknown error";
+    console.error("❌ Email send exception:", msg);
 
     try {
       await prisma.emailLog.create({
         data: {
-          to:           to.join(', '),
+          to: to.join(", "),
           subject,
-          templateName: 'inquiry_v2',
-          status:       'failed',
-          provider:     'resend',
+          templateName: "inquiry_v2",
+          status: "failed",
+          provider: "resend",
           errorMessage: msg,
         },
       });
-    } catch { /* DB log failure is non-fatal */ }
+    } catch {
+      /* DB log failure is non-fatal */
+    }
 
     return { success: false };
   }

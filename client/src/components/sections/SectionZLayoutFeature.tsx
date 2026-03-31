@@ -33,11 +33,16 @@ export default function ZLayoutFeature({
   const textBlock = (
     <div className="flex flex-col gap-6">
       <h2 className="text-slate-900 dark:text-white text-2xl md:text-3xl font-bold leading-tight flex items-center gap-3">
-        <span className={`w-1.5 h-8 ${accentBg} rounded-full flex-shrink-0`}></span>
+        <span
+          className={`w-1.5 h-8 ${accentBg} rounded-full flex-shrink-0`}
+        ></span>
         {title}
       </h2>
       {paragraphs.map((p, i) => (
-        <p key={i} className="text-slate-600 dark:text-slate-300 text-base leading-relaxed">
+        <p
+          key={i}
+          className="text-slate-600 dark:text-slate-300 text-base leading-relaxed"
+        >
           {p}
         </p>
       ))}
@@ -54,7 +59,9 @@ export default function ZLayoutFeature({
         decoding="async"
         width={540}
         height={400}
-        onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
+        onError={e => {
+          e.currentTarget.src = "/images/products/product.webp";
+        }}
       />
     </div>
   );

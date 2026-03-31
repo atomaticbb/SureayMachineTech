@@ -11,7 +11,6 @@ export default function TechnicalFAQ() {
     <section className="bg-slate-50 border-t border-slate-200 py-14 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-
           {/* Left — Manufacturing Image */}
           <div className="relative overflow-hidden border border-slate-200 h-[400px] lg:h-[440px] lg:sticky lg:top-20 self-start bg-slate-900">
             <img
@@ -32,7 +31,9 @@ export default function TechnicalFAQ() {
               </h3>
               <div className="w-10 h-[2px] bg-slate-400 mb-4" />
               <p className="text-sm text-white/75 leading-relaxed max-w-md">
-                Most RFQs start with the same practical questions: what information to send, how material is selected, what tolerance can be held, and how quickly a custom order can move.
+                Most RFQs start with the same practical questions: what
+                information to send, how material is selected, what tolerance
+                can be held, and how quickly a custom order can move.
               </p>
             </div>
           </div>
@@ -48,7 +49,9 @@ export default function TechnicalFAQ() {
               </h3>
               <div className="w-14 h-[3px] bg-slate-300 mt-5 mb-4" />
               <p className="text-sm text-slate-500 leading-relaxed max-w-xl">
-                Straight answers to the questions that usually come up before a drawing is sent, a tolerance is confirmed, or a custom quotation is requested.
+                Straight answers to the questions that usually come up before a
+                drawing is sent, a tolerance is confirmed, or a custom quotation
+                is requested.
               </p>
             </div>
 
@@ -58,7 +61,6 @@ export default function TechnicalFAQ() {
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>

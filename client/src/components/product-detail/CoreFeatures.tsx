@@ -18,7 +18,6 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
   return (
     <section className="py-20 lg:py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <div className="flex items-center justify-center gap-3 mb-3">
@@ -32,7 +31,9 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
             Precision-Engineered Components
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-sm">
-            Customize your machine with world-class components designed for reliability and extreme precision in demanding industrial environments.
+            Customize your machine with world-class components designed for
+            reliability and extreme precision in demanding industrial
+            environments.
           </p>
         </div>
 
@@ -45,7 +46,7 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
               <div
                 key={component.id}
                 className={`flex flex-col lg:flex-row items-center gap-10 lg:gap-16 group ${
-                  isEven ? '' : 'lg:flex-row-reverse'
+                  isEven ? "" : "lg:flex-row-reverse"
                 }`}
               >
                 {/* Image Column - 50% */}
@@ -55,8 +56,9 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
                     <div
                       className="absolute inset-0 opacity-10 dark:opacity-5 pointer-events-none"
                       style={{
-                        backgroundSize: '30px 30px',
-                        backgroundImage: 'linear-gradient(to right, rgba(148, 163, 184, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.5) 1px, transparent 1px)'
+                        backgroundSize: "30px 30px",
+                        backgroundImage:
+                          "linear-gradient(to right, rgba(148, 163, 184, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.5) 1px, transparent 1px)",
                       }}
                     ></div>
 
@@ -68,7 +70,7 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
                       width={600}
                       height={450}
                       className="relative z-10 w-full h-full max-h-[313px] lg:max-h-[438px] object-contain drop-shadow-2xl transform transition-transform duration-700 group-hover:scale-105"
-                      onError={(e) => {
+                      onError={e => {
                         e.currentTarget.src = "/images/products/machinery.webp";
                       }}
                     />
@@ -94,7 +96,6 @@ export default function CoreFeatures({ components }: CoreFeaturesProps) {
             );
           })}
         </div>
-
       </div>
     </section>
   );

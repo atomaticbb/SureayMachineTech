@@ -17,107 +17,120 @@ import { blades, type BladeCategoryType } from "../../data/blades";
 // ── Types ──────────────────────────────────────────────────────────────────────
 
 export interface MegaItem {
-  id:      string;
-  name:    string;
+  id: string;
+  name: string;
   refCode: string;
-  image:   string;
-  href:    string;
+  image: string;
+  href: string;
 }
 
 export interface MegaFeatured {
   coverImage: string;
-  tagline:    string;   // e.g. "PREMIUM GRADE STEEL"
-  subtitle:   string;   // "ACTIVE CATEGORY" | "ACTIVE INDUSTRY"
-  title:      string;
-  ctaText:    string;
-  ctaHref:    string;
+  tagline: string; // e.g. "PREMIUM GRADE STEEL"
+  subtitle: string; // "ACTIVE CATEGORY" | "ACTIVE INDUSTRY"
+  title: string;
+  ctaText: string;
+  ctaHref: string;
 }
 
 export interface MegaCategory {
-  id:       string;
-  title:    string;
-  items:    MegaItem[];
+  id: string;
+  title: string;
+  items: MegaItem[];
   featured: MegaFeatured;
 }
 
 export interface MegaMenuData {
-  columnLabel:    string;
+  columnLabel: string;
   bottomLinkText: string;
   bottomLinkHref: string;
-  categories:     MegaCategory[];
+  categories: MegaCategory[];
 }
 
 // ── Data Adapter ───────────────────────────────────────────────────────────────
 
 // Short REF codes for the product matrix cards
 const REF_CODE: Record<BladeCategoryType, string> = {
-  slitter_knives:    "SLT",
-  shredder_blades:   "SHR",
+  slitter_knives: "SLT",
+  shredder_blades: "SHR",
   granulator_blades: "GRN",
-  log_saw_blades:    "LSW",
-  trim_cut_blades:   "TRM",
-  metal_processing:  "MTL",
+  log_saw_blades: "LSW",
+  trim_cut_blades: "TRM",
+  metal_processing: "MTL",
   battery_precision: "BAT",
 };
 
 const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
-  id:      b.id,
-  name:    b.name,
+  id: b.id,
+  name: b.name,
   refCode: `${REF_CODE[b.category] ?? "BLD"}-${String(seq).padStart(3, "0")}`,
-  image:   b.image,
-  href:    `/products/${b.id}`,
+  image: b.image,
+  href: `/products/${b.id}`,
 });
 
 // ── PRODUCTS Data — grouped by blade-type family ───────────────────────────────
 
 export const PRODUCTS_MENU_DATA: MegaMenuData = {
-  columnLabel:    "PRODUCT TYPES",
+  columnLabel: "PRODUCT TYPES",
   bottomLinkText: "→ VIEW ALL BLADES",
   bottomLinkHref: "/products",
   categories: [
     {
-      id:    "cutting",
+      id: "cutting",
       title: "SLITTING & CONVERTING",
       featured: {
         coverImage: "/images/products/blades/11-2-2_circular-blade_01.webp",
-        tagline:    "PRECISION GROUND · MIRROR FINISH",
-        subtitle:   "ACTIVE CATEGORY",
-        title:      "SLITTING & CONVERTING",
-        ctaText:    "EXPLORE SLITTER KNIVES",
-        ctaHref:    "/products",
+        tagline: "PRECISION GROUND · MIRROR FINISH",
+        subtitle: "ACTIVE CATEGORY",
+        title: "SLITTING & CONVERTING",
+        ctaText: "EXPLORE SLITTER KNIVES",
+        ctaHref: "/products",
       },
       items: blades
-        .filter(b => b.category === "slitter_knives" || b.category === "battery_precision")
+        .filter(
+          b =>
+            b.category === "slitter_knives" ||
+            b.category === "battery_precision"
+        )
         .map(bladeToItem),
     },
     {
-      id:    "shredding",
+      id: "shredding",
       title: "SHREDDING & GRANULATING",
       featured: {
         coverImage: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-        tagline:    "MAX IMPACT RESISTANCE",
-        subtitle:   "ACTIVE CATEGORY",
-        title:      "SHREDDING & GRANULATING",
-        ctaText:    "EXPLORE SHREDDER BLADES",
-        ctaHref:    "/products",
+        tagline: "MAX IMPACT RESISTANCE",
+        subtitle: "ACTIVE CATEGORY",
+        title: "SHREDDING & GRANULATING",
+        ctaText: "EXPLORE SHREDDER BLADES",
+        ctaHref: "/products",
       },
       items: blades
-        .filter(b => b.category === "shredder_blades" || b.category === "granulator_blades")
+        .filter(
+          b =>
+            b.category === "shredder_blades" ||
+            b.category === "granulator_blades"
+        )
         .map(bladeToItem),
     },
     {
-      id:    "paper",
+      id: "paper",
       title: "PAPER, TRIM & METAL",
       featured: {
         coverImage: "/images/products/blades/tissue-log-saw-blades.webp",
-        tagline:    "ZERO DUST. BURR-FREE.",
-        subtitle:   "ACTIVE CATEGORY",
-        title:      "PAPER, TRIM & METAL",
-        ctaText:    "EXPLORE PAPER BLADES",
-        ctaHref:    "/products",
+        tagline: "ZERO DUST. BURR-FREE.",
+        subtitle: "ACTIVE CATEGORY",
+        title: "PAPER, TRIM & METAL",
+        ctaText: "EXPLORE PAPER BLADES",
+        ctaHref: "/products",
       },
       items: blades
-        .filter(b => b.category === "log_saw_blades" || b.category === "trim_cut_blades" || b.category === "metal_processing")
+        .filter(
+          b =>
+            b.category === "log_saw_blades" ||
+            b.category === "trim_cut_blades" ||
+            b.category === "metal_processing"
+        )
         .map(bladeToItem),
     },
   ],
@@ -126,84 +139,76 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
 // ── INDUSTRY Data — grouped by application sector ─────────────────────────────
 
 export const INDUSTRY_MENU_DATA: MegaMenuData = {
-  columnLabel:    "INDUSTRIES",
+  columnLabel: "INDUSTRIES",
   bottomLinkText: "→ BROWSE ALL TOOLING",
   bottomLinkHref: "/products",
   categories: [
     {
-      id:    "recycling-waste",
+      id: "recycling-waste",
       title: "RECYCLING & WASTE",
       featured: {
         coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
-        tagline:    "EXTREME DURABILITY & IMPACT RESISTANCE",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "RECYCLING & WASTE MANAGEMENT",
-        ctaText:    "VIEW RECYCLING SOLUTIONS",
-        ctaHref:    "/plastic-industry",
+        tagline: "EXTREME DURABILITY & IMPACT RESISTANCE",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "RECYCLING & WASTE MANAGEMENT",
+        ctaText: "VIEW RECYCLING SOLUTIONS",
+        ctaHref: "/plastic-industry",
       },
-      items: blades
-        .filter(b => b.sector === "recycling")
-        .map(bladeToItem),
+      items: blades.filter(b => b.sector === "recycling").map(bladeToItem),
     },
     {
-      id:    "paper-packaging-converting",
+      id: "paper-packaging-converting",
       title: "PAPER, TISSUE & CORRUGATED",
       featured: {
         coverImage: "/images/applications/tissue-and-paper.webp",
-        tagline:    "PRECISION CUTTING · ZERO DUST",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "PAPER, TISSUE & CORRUGATED",
-        ctaText:    "VIEW PAPER SOLUTIONS",
-        ctaHref:    "/paper-industry",
+        tagline: "PRECISION CUTTING · ZERO DUST",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "PAPER, TISSUE & CORRUGATED",
+        ctaText: "VIEW PAPER SOLUTIONS",
+        ctaHref: "/paper-industry",
       },
-      items: blades
-        .filter(b => b.sector === "paper")
-        .map(bladeToItem),
+      items: blades.filter(b => b.sector === "paper").map(bladeToItem),
     },
     {
-      id:    "metal-processing",
+      id: "metal-processing",
       title: "METAL PROCESSING",
       featured: {
         coverImage: "/images/applications/Metal-Waste-Recycling.webp",
-        tagline:    "HIGH-SPEED SHEAR CUTTING",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "METAL COIL PROCESSING",
-        ctaText:    "VIEW METAL SOLUTIONS",
-        ctaHref:    "/metal-industry",
+        tagline: "HIGH-SPEED SHEAR CUTTING",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "METAL COIL PROCESSING",
+        ctaText: "VIEW METAL SOLUTIONS",
+        ctaHref: "/metal-industry",
       },
-      items: blades
-        .filter(b => b.sector === "metal")
-        .map(bladeToItem),
+      items: blades.filter(b => b.sector === "metal").map(bladeToItem),
     },
     {
-      id:    "flexible-converting",
+      id: "flexible-converting",
       title: "FILM & CONVERTING",
       featured: {
-        coverImage: "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
-        tagline:    "PRECISION FILM & FOIL SLITTING",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "FLEXIBLE CONVERTING & PACKAGING",
-        ctaText:    "VIEW CONVERTING SOLUTIONS",
-        ctaHref:    "/converting-industry",
+        coverImage:
+          "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
+        tagline: "PRECISION FILM & FOIL SLITTING",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "FLEXIBLE CONVERTING & PACKAGING",
+        ctaText: "VIEW CONVERTING SOLUTIONS",
+        ctaHref: "/converting-industry",
       },
-      items: blades
-        .filter(b => b.sector === "converting")
-        .map(bladeToItem),
+      items: blades.filter(b => b.sector === "converting").map(bladeToItem),
     },
     {
-      id:    "new-energy",
+      id: "new-energy",
       title: "NEW ENERGY",
       featured: {
-        coverImage: "/images/applications/metal-industry/metal-slitter-knives-00.webp",
-        tagline:    "ZERO-BURR ELECTRODE SLITTING",
-        subtitle:   "ACTIVE INDUSTRY",
-        title:      "NEW ENERGY & BATTERY",
-        ctaText:    "VIEW NEW ENERGY SOLUTIONS",
-        ctaHref:    "/new-energy-industry",
+        coverImage:
+          "/images/applications/metal-industry/metal-slitter-knives-00.webp",
+        tagline: "ZERO-BURR ELECTRODE SLITTING",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "NEW ENERGY & BATTERY",
+        ctaText: "VIEW NEW ENERGY SOLUTIONS",
+        ctaHref: "/new-energy-industry",
       },
-      items: blades
-        .filter(b => b.sector === "new_energy")
-        .map(bladeToItem),
+      items: blades.filter(b => b.sector === "new_energy").map(bladeToItem),
     },
   ],
 };
@@ -211,17 +216,17 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
 // ── Component ──────────────────────────────────────────────────────────────────
 
 interface MegaMenuProps {
-  data:    MegaMenuData;
+  data: MegaMenuData;
   onClose: () => void;
 }
 
 export default function MegaMenu({ data, onClose }: MegaMenuProps) {
   const [activeId, setActiveId] = useState<string>(data.categories[0].id);
-  const active = data.categories.find((c) => c.id === activeId) ?? data.categories[0];
+  const active =
+    data.categories.find(c => c.id === activeId) ?? data.categories[0];
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] shadow-2xl z-50 overflow-hidden">
-
       {/* Scanner line — sweeps across on category switch */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -235,16 +240,14 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
       </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex py-7 gap-0">
-
         {/* ── Column 1: Category Index (20%) ────────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col">
-
           <p className="font-mono text-[9px] text-slate-300 uppercase tracking-[0.2em] mb-4 pl-4">
             {data.columnLabel}
           </p>
 
           <nav className="flex-1">
-            {data.categories.map((cat) => {
+            {data.categories.map(cat => {
               const isActive = cat.id === activeId;
               return (
                 <Link key={cat.id} href={cat.featured.ctaHref}>
@@ -273,12 +276,10 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               {data.bottomLinkText}
             </div>
           </Link>
-
         </div>
 
         {/* ── Column 2: Recommendation Matrix (55%) ─────────────────────── */}
         <div className="w-[55%] flex-shrink-0 border-x border-slate-200 px-8">
-
           <AnimatePresence mode="wait">
             <motion.div
               key={activeId + "-grid"}
@@ -288,10 +289,9 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               transition={{ type: "spring", stiffness: 500, damping: 45 }}
               className="grid grid-cols-3 gap-x-6 gap-y-8"
             >
-              {active.items.map((item) => (
+              {active.items.map(item => (
                 <Link key={item.id} href={item.href}>
                   <div onClick={onClose} className="group cursor-pointer">
-
                     {/* Image — 21:9 blueprint-slab ratio */}
                     <div className="aspect-[21/9] bg-slate-100 mb-3 overflow-hidden">
                       <img
@@ -312,18 +312,15 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                     <p className="font-black text-[10px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
                       {item.name}
                     </p>
-
                   </div>
                 </Link>
               ))}
             </motion.div>
           </AnimatePresence>
-
         </div>
 
         {/* ── Column 3: Authority Viewport (25%) ────────────────────────── */}
         <div className="w-[25%] flex-shrink-0 pl-8 flex flex-col">
-
           <AnimatePresence mode="wait">
             <motion.div
               key={activeId + "-featured"}
@@ -333,7 +330,6 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               transition={{ duration: 0.2 }}
               className="flex flex-col flex-1"
             >
-
               {/* Cover image with dark overlay */}
               <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
                 <img
@@ -366,7 +362,9 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                   className="mt-3 w-full bg-[#001f4d] hover:bg-[#003399] text-white font-mono text-[10px] font-bold tracking-[0.18em] uppercase px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
                 >
                   <span>{active.featured.ctaText}</span>
-                  <span className="opacity-60 group-hover:opacity-100 transition-opacity">↗</span>
+                  <span className="opacity-60 group-hover:opacity-100 transition-opacity">
+                    ↗
+                  </span>
                 </div>
               </Link>
 
@@ -374,12 +372,9 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               <p className="font-mono text-[8px] text-slate-400 uppercase tracking-widest mt-3">
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
-
             </motion.div>
           </AnimatePresence>
-
         </div>
-
       </div>
     </div>
   );

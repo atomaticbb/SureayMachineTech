@@ -9,20 +9,20 @@ import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
 
 // ── Lazy page chunks ───────────────────────────────────────────────────────────
-const Home          = lazy(() => import("./pages/Home"));
+const Home = lazy(() => import("./pages/Home"));
 const ProductListPage = lazy(() => import("./pages/ProductListPage"));
-const ProductDetail   = lazy(() => import("./pages/ProductDetail"));
-const About         = lazy(() => import("./pages/About"));
-const Contact       = lazy(() => import("./pages/Contact"));
-const News          = lazy(() => import("./pages/News"));
-const NewsDetail    = lazy(() => import("./pages/NewsDetail"));
-const Admin         = lazy(() => import("./pages/Admin"));
-const AdminLogin    = lazy(() => import("./pages/AdminLogin"));
-const NotFound      = lazy(() => import("./pages/NotFound"));
-const PlasticIndustry    = lazy(() => import("./pages/plastic-industry"));
-const MetalIndustry      = lazy(() => import("./pages/metal-industry"));
-const PaperIndustry      = lazy(() => import("./pages/paper-industry"));
-const NewEnergyIndustry  = lazy(() => import("./pages/new-energy-industry"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const News = lazy(() => import("./pages/News"));
+const NewsDetail = lazy(() => import("./pages/NewsDetail"));
+const Admin = lazy(() => import("./pages/Admin"));
+const AdminLogin = lazy(() => import("./pages/AdminLogin"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const PlasticIndustry = lazy(() => import("./pages/plastic-industry"));
+const MetalIndustry = lazy(() => import("./pages/metal-industry"));
+const PaperIndustry = lazy(() => import("./pages/paper-industry"));
+const NewEnergyIndustry = lazy(() => import("./pages/new-energy-industry"));
 const ConvertingIndustry = lazy(() => import("./pages/converting-industry"));
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
@@ -44,8 +44,15 @@ function PageLoader() {
       }}
     >
       {/* Animated bar stack */}
-      <div style={{ display: "flex", alignItems: "flex-end", gap: "5px", height: "40px" }}>
-        {[0, 1, 2, 3, 4].map((i) => (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "flex-end",
+          gap: "5px",
+          height: "40px",
+        }}
+      >
+        {[0, 1, 2, 3, 4].map(i => (
           <div
             key={i}
             style={{
@@ -86,18 +93,24 @@ function PageLoader() {
 // ── Auth guard ─────────────────────────────────────────────────────────────────
 // Checks /api/auth/me before rendering a protected page.
 // Shows PageLoader while the check is in-flight; redirects to login on failure.
-function ProtectedRoute({ component: Component }: { component: React.ComponentType }) {
+function ProtectedRoute({
+  component: Component,
+}: {
+  component: React.ComponentType;
+}) {
   const [status, setStatus] = useState<"loading" | "ok" | "fail">("loading");
 
   useEffect(() => {
     fetch("/api/auth/me", { credentials: "include" })
-      .then((r) => r.json())
-      .then((d: { authenticated: boolean }) => setStatus(d.authenticated ? "ok" : "fail"))
+      .then(r => r.json())
+      .then((d: { authenticated: boolean }) =>
+        setStatus(d.authenticated ? "ok" : "fail")
+      )
       .catch(() => setStatus("fail"));
   }, []);
 
   if (status === "loading") return <PageLoader />;
-  if (status === "fail")    return <Redirect to="/admin/login" />;
+  if (status === "fail") return <Redirect to="/admin/login" />;
   return <Component />;
 }
 
@@ -121,20 +134,20 @@ function Router() {
           <Route path="/" component={Home} />
 
           {/* Products — blade-only architecture */}
-          <Route path="/products"     component={ProductListPage} />
-          <Route path="/products/:id" component={ProductDetail}   />
+          <Route path="/products" component={ProductListPage} />
+          <Route path="/products/:id" component={ProductDetail} />
 
           {/* Industry verticals */}
-          <Route path="/plastic-industry"    component={PlasticIndustry}    />
-          <Route path="/metal-industry"      component={MetalIndustry}      />
-          <Route path="/paper-industry"      component={PaperIndustry}      />
-          <Route path="/new-energy-industry" component={NewEnergyIndustry}  />
+          <Route path="/plastic-industry" component={PlasticIndustry} />
+          <Route path="/metal-industry" component={MetalIndustry} />
+          <Route path="/paper-industry" component={PaperIndustry} />
+          <Route path="/new-energy-industry" component={NewEnergyIndustry} />
           <Route path="/converting-industry" component={ConvertingIndustry} />
 
           {/* Static pages */}
-          <Route path="/about"    component={About}      />
-          <Route path="/contact"  component={Contact}    />
-          <Route path="/news"     component={News}       />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/news" component={News} />
           <Route path="/news/:id" component={NewsDetail} />
 
           {/* Admin — login page is public; dashboard is protected */}

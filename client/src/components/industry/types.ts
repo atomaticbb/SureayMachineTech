@@ -17,45 +17,45 @@ export interface IndustryHeroData {
 
 export interface IndustryProduct {
   category: string;
-  name:     string;
-  image:    string;
-  href:     string;
+  name: string;
+  image: string;
+  href: string;
   isFlagship: boolean;
-  desc?:    string; // optional card body copy
+  desc?: string; // optional card body copy
 }
 
 /** A single cell in the 4-column spec dashboard */
 export interface IndustrySpec {
-  label:      string;  // e.g. "Edge Tolerance"
-  mainValue:  string;  // e.g. "±0.002" or "Tungsten\nCarbide"
-  unit?:      string;  // e.g. "mm" — omit for text-only cells
-  subtext:    string;  // e.g. "100% CMM Verified"
+  label: string; // e.g. "Edge Tolerance"
+  mainValue: string; // e.g. "±0.002" or "Tungsten\nCarbide"
+  unit?: string; // e.g. "mm" — omit for text-only cells
+  subtext: string; // e.g. "100% CMM Verified"
   isTextual?: boolean; // renders mainValue at text-2xl in two lines
 }
 
 export interface IndustryNarrative {
   challengeTitle: string;
-  challengeBody:  string;
-  solutionTitle:  string;
-  solutionBody:   string;
+  challengeBody: string;
+  solutionTitle: string;
+  solutionBody: string;
   highlightToken?: string; // bolded token inside solutionBody, e.g. "(+30% Uptime)"
 }
 
 export interface OemStep {
-  step:             string; // "01" … "04"
-  name:             string;
-  desc:             string;
-  phaseKey:         string;
-  protocolVersion:  string;
-  technicalTitle:   string;
-  coords:           string;
+  step: string; // "01" … "04"
+  name: string;
+  desc: string;
+  phaseKey: string;
+  protocolVersion: string;
+  technicalTitle: string;
+  coords: string;
 }
 
 export interface IndustryMaterial {
-  name:     string;
+  name: string;
   abrasion: string;
-  grade:    string;
-  image:    string;
+  grade: string;
+  image: string;
 }
 
 // ─── Shared style tokens ─────────────────────────────────────────────────────
@@ -64,7 +64,7 @@ export const MONO: React.CSSProperties = {
 };
 
 export const SPRING_MECHANICAL = {
-  type:      "spring" as const,
+  type: "spring" as const,
   stiffness: 500,
-  damping:   50,
+  damping: 50,
 };

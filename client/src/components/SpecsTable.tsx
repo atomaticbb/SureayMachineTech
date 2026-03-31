@@ -11,7 +11,10 @@ interface SpecsTableProps {
   title?: string;
 }
 
-export default function SpecsTable({ specs, title = "Technical Specifications" }: SpecsTableProps) {
+export default function SpecsTable({
+  specs,
+  title = "Technical Specifications",
+}: SpecsTableProps) {
   return (
     <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden">
       {/* Table Header */}

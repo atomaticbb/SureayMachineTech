@@ -38,15 +38,21 @@ export default function ProductHero({ machine }: ProductHeroProps) {
             {/* Breadcrumbs */}
             <nav className="flex items-center gap-2 text-xs md:text-sm font-medium mb-4 text-slate-300/80 uppercase tracking-wider">
               <Link href="/">
-                <a className="hover:text-white transition-colors hover:underline">Home</a>
+                <a className="hover:text-white transition-colors hover:underline">
+                  Home
+                </a>
               </Link>
               <span className="text-slate-500">/</span>
               <Link href="/products">
-                <a className="hover:text-white transition-colors hover:underline">Products</a>
+                <a className="hover:text-white transition-colors hover:underline">
+                  Products
+                </a>
               </Link>
               <span className="text-slate-500">/</span>
               <Link href="/products/machinery">
-                <a className="hover:text-white transition-colors hover:underline">Machinery</a>
+                <a className="hover:text-white transition-colors hover:underline">
+                  Machinery
+                </a>
               </Link>
               <span className="text-slate-500">/</span>
               <span className="text-white">{machine.categoryDisplay}</span>
@@ -63,8 +69,9 @@ export default function ProductHero({ machine }: ProductHeroProps) {
           <div
             className="absolute inset-0 pointer-events-none opacity-30"
             style={{
-              backgroundSize: '40px 40px',
-              backgroundImage: 'linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px)'
+              backgroundSize: "40px 40px",
+              backgroundImage:
+                "linear-gradient(to right, rgba(148, 163, 184, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(148, 163, 184, 0.1) 1px, transparent 1px)",
             }}
           ></div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50/50 dark:to-black/20"></div>
@@ -78,7 +85,7 @@ export default function ProductHero({ machine }: ProductHeroProps) {
               height={600}
               className="w-full h-auto max-h-[360px] lg:max-h-[400px] xl:max-h-[480px] object-contain drop-shadow-2xl contrast-110 transform transition-transform duration-700 hover:scale-105"
               src={machine.image}
-              onError={(e) => {
+              onError={e => {
                 e.currentTarget.src = "/images/products/machinery.webp";
               }}
             />
@@ -92,7 +99,9 @@ export default function ProductHero({ machine }: ProductHeroProps) {
             <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 dark:text-white tracking-tight leading-tight max-w-2xl">
               {machine.name}
               <br />
-              <span className="text-slate-900 dark:text-slate-200">{machine.categoryDisplay}</span>
+              <span className="text-slate-900 dark:text-slate-200">
+                {machine.categoryDisplay}
+              </span>
             </h1>
           </div>
 
@@ -106,9 +115,16 @@ export default function ProductHero({ machine }: ProductHeroProps) {
             <div className="bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-5 lg:p-6 mb-8 shadow-lg max-w-xl">
               <div className="grid grid-cols-2 gap-y-6 gap-x-8">
                 {machine.specs.slice(0, 4).map((spec, index) => (
-                  <div key={index} className="relative pl-4 border-l-2 border-[#FF6600]/20 hover:border-[#FF6600] transition-colors">
-                    <p className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">{spec.label}</p>
-                    <p className="text-xl lg:text-2xl font-black text-slate-900 dark:text-white">{spec.value}</p>
+                  <div
+                    key={index}
+                    className="relative pl-4 border-l-2 border-[#FF6600]/20 hover:border-[#FF6600] transition-colors"
+                  >
+                    <p className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">
+                      {spec.label}
+                    </p>
+                    <p className="text-xl lg:text-2xl font-black text-slate-900 dark:text-white">
+                      {spec.value}
+                    </p>
                   </div>
                 ))}
               </div>

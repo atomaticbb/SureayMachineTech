@@ -17,7 +17,10 @@ function SpecCell({ spec }: { spec: IndustrySpec }) {
         {spec.isTextual ? (
           <span className="block font-black text-2xl lg:text-[28px] text-[#001f4d] tracking-tight leading-[1.1] mb-3 uppercase">
             {spec.mainValue.split("\\n").map((line, i, arr) => (
-              <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+              <span key={i}>
+                {line}
+                {i < arr.length - 1 && <br />}
+              </span>
             ))}
           </span>
         ) : (
@@ -38,22 +41,31 @@ function SpecCell({ spec }: { spec: IndustrySpec }) {
 
 interface Props {
   narrative: IndustryNarrative;
-  specs:     IndustrySpec[];
+  specs: IndustrySpec[];
 }
 
-export default function IndustryBlueprintDashboard({ narrative, specs }: Props) {
-  const { challengeTitle, challengeBody, solutionTitle, solutionBody, highlightToken } = narrative;
+export default function IndustryBlueprintDashboard({
+  narrative,
+  specs,
+}: Props) {
+  const {
+    challengeTitle,
+    challengeBody,
+    solutionTitle,
+    solutionBody,
+    highlightToken,
+  } = narrative;
 
   // Split solution body around the highlight token if provided
-  const solutionParts = highlightToken ? solutionBody.split(highlightToken) : null;
+  const solutionParts = highlightToken
+    ? solutionBody.split(highlightToken)
+    : null;
 
   return (
     <section className="bg-white border-b border-slate-200 py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-
         {/* ── Pain vs Solution narrative ── */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-20 lg:mb-28">
-
           {/* Challenge */}
           <div>
             <p className="font-black text-[10px] text-slate-400 uppercase tracking-[0.5em] mb-5">
@@ -80,13 +92,16 @@ export default function IndustryBlueprintDashboard({ narrative, specs }: Props) 
               {solutionParts ? (
                 <>
                   {solutionParts[0]}
-                  <strong className="font-black text-[#003366]">{highlightToken}</strong>
+                  <strong className="font-black text-[#003366]">
+                    {highlightToken}
+                  </strong>
                   {solutionParts[1]}
                 </>
-              ) : solutionBody}
+              ) : (
+                solutionBody
+              )}
             </p>
           </div>
-
         </div>
 
         {/* ── 4-Column Spec Dashboard ── */}
@@ -95,12 +110,11 @@ export default function IndustryBlueprintDashboard({ narrative, specs }: Props) 
             [ Verified Production Specs ]
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-slate-200">
-            {specs.map((spec) => (
+            {specs.map(spec => (
               <SpecCell key={spec.label} spec={spec} />
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

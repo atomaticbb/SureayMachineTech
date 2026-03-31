@@ -13,10 +13,20 @@
 import type { IndustryHeroData } from "./types";
 
 // Fixed visual rhythm for the two gallery columns
-const COL_A_HEIGHTS = ["h-[310px]", "h-[230px]", "h-[250px]", "h-[240px]"] as const;
-const COL_B_HEIGHTS = ["h-[240px]", "h-[260px]", "h-[260px]", "h-[220px]"] as const;
-const COL_A_IDX     = [0, 2, 4, 6] as const;
-const COL_B_IDX     = [1, 3, 5, 7] as const;
+const COL_A_HEIGHTS = [
+  "h-[310px]",
+  "h-[230px]",
+  "h-[250px]",
+  "h-[240px]",
+] as const;
+const COL_B_HEIGHTS = [
+  "h-[240px]",
+  "h-[260px]",
+  "h-[260px]",
+  "h-[220px]",
+] as const;
+const COL_A_IDX = [0, 2, 4, 6] as const;
+const COL_B_IDX = [1, 3, 5, 7] as const;
 
 /**
  * Builds a srcset string from a gallery image src path.
@@ -38,11 +48,9 @@ export default function IndustryHero({ data }: Props) {
     <section className="bg-[#0b1622] overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-14">
         <div className="grid grid-cols-1 lg:grid-cols-[1.12fr_auto] gap-0">
-
           {/* ── Left — Copy block ── */}
           <div className="flex flex-col justify-between py-10 lg:py-24 pl-0 sm:pl-2 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
             <div>
-
               <p className="font-bold text-xs text-white/40 uppercase tracking-[0.45em] mb-8">
                 {data.breadcrumb}
               </p>
@@ -71,27 +79,32 @@ export default function IndustryHero({ data }: Props) {
               >
                 [ View Tooling Matrix ]
               </a>
-
             </div>
           </div>
 
           {/* ── Right — 8-Image 2-Col Stagger Wall ── */}
           <div className="hidden lg:flex gap-5 py-[50px] px-3 lg:px-5">
-
             {/* Column A — indices 0 2 4 6 */}
             <div className="flex flex-col gap-5">
               {COL_A_IDX.map((idx, i) => (
-                <div key={idx} className="w-[319.5px] overflow-hidden bg-white flex-shrink-0">
+                <div
+                  key={idx}
+                  className="w-[319.5px] overflow-hidden bg-white flex-shrink-0"
+                >
                   <img
                     src={data.gallery[idx]?.src}
-                    srcSet={data.gallery[idx]?.src ? toSrcSet(data.gallery[idx].src) : undefined}
+                    srcSet={
+                      data.gallery[idx]?.src
+                        ? toSrcSet(data.gallery[idx].src)
+                        : undefined
+                    }
                     sizes="320px"
                     alt={data.gallery[idx]?.alt}
                     width={640}
                     height={480}
                     fetchPriority={idx === 0 ? "high" : undefined}
                     loading={idx === 0 ? "eager" : "lazy"}
-                    decoding={idx === 0 ? "sync"  : "async"}
+                    decoding={idx === 0 ? "sync" : "async"}
                     className={`w-[319.5px] ${COL_A_HEIGHTS[i]} object-cover`}
                   />
                 </div>
@@ -101,10 +114,17 @@ export default function IndustryHero({ data }: Props) {
             {/* Column B — indices 1 3 5 7 */}
             <div className="flex flex-col gap-5">
               {COL_B_IDX.map((idx, i) => (
-                <div key={idx} className="w-[319.5px] overflow-hidden bg-white flex-shrink-0">
+                <div
+                  key={idx}
+                  className="w-[319.5px] overflow-hidden bg-white flex-shrink-0"
+                >
                   <img
                     src={data.gallery[idx]?.src}
-                    srcSet={data.gallery[idx]?.src ? toSrcSet(data.gallery[idx].src) : undefined}
+                    srcSet={
+                      data.gallery[idx]?.src
+                        ? toSrcSet(data.gallery[idx].src)
+                        : undefined
+                    }
                     sizes="320px"
                     alt={data.gallery[idx]?.alt}
                     width={640}
@@ -116,9 +136,7 @@ export default function IndustryHero({ data }: Props) {
                 </div>
               ))}
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

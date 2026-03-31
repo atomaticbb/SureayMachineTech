@@ -35,10 +35,9 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
 
       {/* Compact inventory grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {blades.map((related) => (
+        {blades.map(related => (
           <Link key={related.id} href={related.link}>
             <div className="bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-200 cursor-pointer group h-full flex flex-col">
-
               {/* Image viewport */}
               <div className="aspect-square bg-slate-50 flex items-center justify-center p-4">
                 <img
@@ -64,7 +63,6 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
                   REF: {related.id.toUpperCase()}
                 </p>
               </div>
-
             </div>
           </Link>
         ))}

@@ -1,12 +1,12 @@
-import sharp from 'sharp';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import sharp from "sharp";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const imagesDir = path.join(__dirname, 'client/public/images');
+const imagesDir = path.join(__dirname, "client/public/images");
 
 async function optimizeImage(filePath) {
   try {
@@ -16,13 +16,13 @@ async function optimizeImage(filePath) {
     console.log(`Optimizing: ${path.basename(filePath)} (${sizeMB}MB)`);
 
     // Create a temporary file
-    const tempPath = filePath.replace('.webp', '.temp.webp');
+    const tempPath = filePath.replace(".webp", ".temp.webp");
 
     // Optimize with lower quality and reasonable dimensions
     await sharp(filePath)
       .resize(1920, 1920, {
-        fit: 'inside',
-        withoutEnlargement: true
+        fit: "inside",
+        withoutEnlargement: true,
       })
       .webp({ quality: 65, effort: 6 })
       .toFile(tempPath);
@@ -50,12 +50,12 @@ async function optimizeAllImages(dir) {
 
     if (stat.isDirectory()) {
       await optimizeAllImages(filePath);
-    } else if (file.endsWith('.webp')) {
+    } else if (file.endsWith(".webp")) {
       await optimizeImage(filePath);
     }
   }
 }
 
-console.log('Starting image optimization...\n');
+console.log("Starting image optimization...\n");
 await optimizeAllImages(imagesDir);
-console.log('\n✓ All images optimized!');
+console.log("\n✓ All images optimized!");

@@ -6,14 +6,14 @@
 
 import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
-import Navbar    from "@/components/layout/Navbar";
-import Footer    from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import IndustryHero               from "@/components/industry/IndustryHero";
-import IndustryToolingMatrix      from "@/components/industry/IndustryToolingMatrix";
+import IndustryHero from "@/components/industry/IndustryHero";
+import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline        from "@/components/industry/IndustryOemPipeline";
-import IndustryMaterialFocus      from "@/components/industry/IndustryMaterialFocus";
+import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
 import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
@@ -26,8 +26,8 @@ import type {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
   breadcrumb: "Home / Markets / Paper, Tissue & Corrugated",
-  h1:   "Paper, Tissue & Corrugated Knife Manufacturer — HSS & TC Grades",
-  h2:   "Log Saw Blades, Slitter Knives, Trimmer Blades & OEM Wear Parts",
+  h1: "Paper, Tissue & Corrugated Knife Manufacturer — HSS & TC Grades",
+  h2: "Log Saw Blades, Slitter Knives, Trimmer Blades & OEM Wear Parts",
   body1:
     "Sureay Machinery manufactures triple-ground tissue log saw blades, rewinder perforation " +
     "knives, precision slitting tooling, and corrugated slitter-scorer blades engineered for " +
@@ -40,15 +40,38 @@ const HERO_DATA: IndustryHeroData = {
     "CMM-verified—for zero-rework drop-in installation.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/tissue-industry/tissue-and-paper.webp",           alt: "Tissue and paper converting line"               },
-    { src: "/images/applications/tissue-industry/tissue-log-saw-blades-02.webp",   alt: "Tissue log saw blades"                          },
-    { src: "/images/applications/tissue-industry/paper-cutting-blades-02.webp",    alt: "Paper cutting blades precision"                 },
-    { src: "/images/applications/tissue-industry/granulator-blades-05.webp",       alt: "Granulator blades for paper processing"         },
-    { src: "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",   alt: "Rotary slitter knives for tissue converting"    },
-    { src: "/images/applications/tissue-industry/granulator-blades-04.webp",       alt: "Granulator blades close-up"                     },
-    { src: "/images/applications/tissue-industry/blades.webp",                     alt: "Industrial blades for tissue processing"        },
-    { src: "/images/applications/tissue-industry/virgin-tissue.webp",              alt: "Virgin tissue rolls production"                 },
-
+    {
+      src: "/images/applications/tissue-industry/tissue-and-paper.webp",
+      alt: "Tissue and paper converting line",
+    },
+    {
+      src: "/images/applications/tissue-industry/tissue-log-saw-blades-02.webp",
+      alt: "Tissue log saw blades",
+    },
+    {
+      src: "/images/applications/tissue-industry/paper-cutting-blades-02.webp",
+      alt: "Paper cutting blades precision",
+    },
+    {
+      src: "/images/applications/tissue-industry/granulator-blades-05.webp",
+      alt: "Granulator blades for paper processing",
+    },
+    {
+      src: "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
+      alt: "Rotary slitter knives for tissue converting",
+    },
+    {
+      src: "/images/applications/tissue-industry/granulator-blades-04.webp",
+      alt: "Granulator blades close-up",
+    },
+    {
+      src: "/images/applications/tissue-industry/blades.webp",
+      alt: "Industrial blades for tissue processing",
+    },
+    {
+      src: "/images/applications/tissue-industry/virgin-tissue.webp",
+      alt: "Virgin tissue rolls production",
+    },
   ],
 };
 
@@ -69,7 +92,10 @@ const PRODUCTS: IndustryProduct[] = blades
     desc: blade.description, // Use blade description from blades.ts
   }));
 
-const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
+const FILTER_CATEGORIES = [
+  "ALL",
+  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -78,7 +104,7 @@ const NARRATIVE: IndustryNarrative = {
     "High-speed tissue and paper converting lines run at 500+ m/min, demanding blades that sustain " +
     "a clean, consistent cut across millions of cycles. Dull or misground blades cause log tearing, " +
     "fibre dust contamination, and unplanned rewinder shutdowns that erode OEE.",
-  solutionTitle:  "Maximum Cuts. Zero Fibre Pull.",
+  solutionTitle: "Maximum Cuts. Zero Fibre Pull.",
   solutionBody:
     "Our triple-ground hollow-ground tissue log saw blades are engineered to exacting OEM tooth profiles, " +
     "delivering burr-free, dust-free cuts at full line speed and (+40% More Cuts Per Grind).",
@@ -86,17 +112,52 @@ const NARRATIVE: IndustryNarrative = {
 };
 
 const SPECS: IndustrySpec[] = [
-  { label: "Grind Specification", mainValue: "Triple\\nGround",             subtext: "Profile-Matched to OEM", isTextual: true },
-  { label: "Material Grade",      mainValue: "M2\\nHSS",                    subtext: "High-Speed Steel",       isTextual: true },
-  { label: "Tooth Pitch",         mainValue: "54–120",   unit: "TPI",       subtext: "Custom Profile Available" },
-  { label: "Surface Finish",      mainValue: "Ra ≤ 0.6", unit: "μm",        subtext: "Mirror Polish"             },
+  {
+    label: "Grind Specification",
+    mainValue: "Triple\\nGround",
+    subtext: "Profile-Matched to OEM",
+    isTextual: true,
+  },
+  {
+    label: "Material Grade",
+    mainValue: "M2\\nHSS",
+    subtext: "High-Speed Steel",
+    isTextual: true,
+  },
+  {
+    label: "Tooth Pitch",
+    mainValue: "54–120",
+    unit: "TPI",
+    subtext: "Custom Profile Available",
+  },
+  {
+    label: "Surface Finish",
+    mainValue: "Ra ≤ 0.6",
+    unit: "μm",
+    subtext: "Mirror Polish",
+  },
 ];
 
 // ─── Materials ─────────────────────────────────────────────────────────────────
 const MATERIALS: IndustryMaterial[] = [
-  { name: "Virgin Tissue Rolls",  abrasion: "LOW",      grade: "M2 HSS Triple-Ground", image: "/images/materials/virgin-tissue.webp"   },
-  { name: "Recycled Fibre Logs",  abrasion: "MODERATE", grade: "D2 / M2 HSS",          image: "/images/materials/recycled-fibre.webp"  },
-  { name: "Kraft & Board Stock",  abrasion: "HIGH",     grade: "Bimetal / TC-Tipped",  image: "/images/materials/kraft-board.webp"     },
+  {
+    name: "Virgin Tissue Rolls",
+    abrasion: "LOW",
+    grade: "M2 HSS Triple-Ground",
+    image: "/images/materials/virgin-tissue.webp",
+  },
+  {
+    name: "Recycled Fibre Logs",
+    abrasion: "MODERATE",
+    grade: "D2 / M2 HSS",
+    image: "/images/materials/recycled-fibre.webp",
+  },
+  {
+    name: "Kraft & Board Stock",
+    abrasion: "HIGH",
+    grade: "Bimetal / TC-Tipped",
+    image: "/images/materials/kraft-board.webp",
+  },
 ];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -112,8 +173,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Tissue Log Saw Blades",
-        image: "https://sureay.com/images/products/blades/tissue-log-saw-blades.webp",
-        description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
+        image:
+          "https://sureay.com/images/products/blades/tissue-log-saw-blades.webp",
+        description:
+          "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/tissue-log-saw-blades",
       },
@@ -138,15 +201,20 @@ export default function PaperIndustry() {
       />
       <Helmet>
         <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(PAGE_SCHEMA)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero              data={HERO_DATA}                                       />
-        <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
-        <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}               />
-        <IndustryMaterialFocus     materials={MATERIALS}                                  />
+        <IndustryHero data={HERO_DATA} />
+        <IndustryToolingMatrix
+          products={PRODUCTS}
+          filterCategories={FILTER_CATEGORIES}
+        />
+        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+        <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />

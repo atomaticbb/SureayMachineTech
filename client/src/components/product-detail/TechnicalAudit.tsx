@@ -9,7 +9,6 @@ interface TechnicalAuditProps {
   blade: Blade;
 }
 
-
 /** Split description into [first sentence, remainder]. */
 function splitFirstSentence(text: string): [string, string] {
   const match = text.match(/^(.+?[.!?])\s+([\s\S]+)$/);

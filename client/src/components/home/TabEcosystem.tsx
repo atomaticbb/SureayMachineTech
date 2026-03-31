@@ -18,7 +18,8 @@ export default function TabEcosystem() {
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
-              Choose Your Industry. <br />Find Your Blade.
+              Choose Your Industry. <br />
+              Find Your Blade.
             </h2>
             <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
               Select your application below to explore blade materials, OEM
@@ -64,9 +65,7 @@ export default function TabEcosystem() {
                   <p className="text-white font-black text-sm lg:text-base uppercase tracking-wide leading-tight">
                     {eco.industry}
                   </p>
-                  {isActive && (
-                    <div className="w-8 h-[3px] bg-white mt-2" />
-                  )}
+                  {isActive && <div className="w-8 h-[3px] bg-white mt-2" />}
                 </div>
               </button>
             );
@@ -104,7 +103,7 @@ export default function TabEcosystem() {
                     </p>
 
                     <div className="flex flex-col border-t border-slate-200">
-                      {active.specs.slice(0, 4).map((spec) => (
+                      {active.specs.slice(0, 4).map(spec => (
                         <div
                           key={spec.label}
                           className="flex flex-row items-baseline py-2.5 border-b border-slate-100 last:border-0 gap-6"
@@ -129,7 +128,10 @@ export default function TabEcosystem() {
 
                   {/* Right — Image (hidden on mobile) */}
                   <div className="hidden lg:flex w-full lg:w-2/5 items-center">
-                    <div className="relative w-full overflow-hidden" style={{ minHeight: 280 }}>
+                    <div
+                      className="relative w-full overflow-hidden"
+                      style={{ minHeight: 280 }}
+                    >
                       <img
                         src={active.image}
                         alt={`${active.label} industrial cutting solutions`}

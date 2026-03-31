@@ -52,34 +52,34 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Custom Industrial Precision Colors */
-  --color-industrial-blue: oklch(0.30 0.09 250);
-  --color-industrial-blue-light: oklch(0.40 0.10 250);
+  --color-industrial-blue: oklch(0.3 0.09 250);
+  --color-industrial-blue-light: oklch(0.4 0.1 250);
   --color-steel-blue: oklch(0.25 0.03 250);
   --color-steel-dark: oklch(0.15 0.02 250);
   --color-metal-silver: oklch(0.88 0.01 250);
 
   /* ─── Cold Steel Brutalism Design Tokens ─────────────────────────────── */
   /* Brand primaries */
-  --color-navy: #001F4D;          /* Deep heavy primary — dominant structural colour */
-  --color-safety-orange: #FF6600; /* Safety Orange — use sparingly as heat accent    */
-  --color-coldgray: #F8FAFC;      /* Engineering-spec background, alternating panels  */
+  --color-navy: #001f4d; /* Deep heavy primary — dominant structural colour */
+  --color-safety-orange: #ff6600; /* Safety Orange — use sparingly as heat accent    */
+  --color-coldgray: #f8fafc; /* Engineering-spec background, alternating panels  */
 
   /* Typography scale */
   --font-display: "Oswald", sans-serif; /* Condensed display / all headings */
-  --font-body: "Inter", sans-serif;     /* Body copy / UI labels              */
+  --font-body: "Inter", sans-serif; /* Body copy / UI labels              */
 }
 
 :root {
   /* Industrial Precision Theme - Light Industrial Base */
-  --primary: oklch(0.30 0.09 250); /* Industrial Blue */
+  --primary: oklch(0.3 0.09 250); /* Industrial Blue */
   --primary-foreground: oklch(0.99 0 0);
-  --sidebar-primary: oklch(0.30 0.09 250);
+  --sidebar-primary: oklch(0.3 0.09 250);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --chart-1: oklch(0.30 0.09 250);
+  --chart-1: oklch(0.3 0.09 250);
   --chart-2: oklch(0.35 0.08 250);
-  --chart-3: oklch(0.40 0.07 250);
+  --chart-3: oklch(0.4 0.07 250);
   --chart-4: oklch(0.45 0.06 250);
-  --chart-5: oklch(0.50 0.05 250);
+  --chart-5: oklch(0.5 0.05 250);
   --radius: 0px; /* Cold Steel Brutalism — zero radius globally */
 
   /* Light background (concrete texture) */
@@ -98,7 +98,7 @@
   --muted: oklch(0.92 0.005 250); /* Light gray - brushed metal */
   --muted-foreground: oklch(0.45 0.01 250);
 
-  --accent: oklch(0.30 0.09 250); /* Industrial blue accent */
+  --accent: oklch(0.3 0.09 250); /* Industrial blue accent */
   --accent-foreground: oklch(0.99 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
@@ -106,14 +106,14 @@
 
   --border: oklch(0.75 0.01 250); /* Medium gray - metal divider */
   --input: oklch(0.92 0.005 250); /* Light gray input */
-  --ring: oklch(0.30 0.09 250);
+  --ring: oklch(0.3 0.09 250);
 
   --sidebar: oklch(0.97 0.005 250); /* Match background */
   --sidebar-foreground: oklch(0.25 0.015 250);
   --sidebar-accent: oklch(0.92 0.005 250);
   --sidebar-accent-foreground: oklch(0.25 0.015 250);
   --sidebar-border: oklch(0.75 0.01 250);
-  --sidebar-ring: oklch(0.30 0.09 250);
+  --sidebar-ring: oklch(0.3 0.09 250);
 }
 
 @layer base {
@@ -216,15 +216,15 @@
       135deg,
       oklch(0.15 0.02 250) 0%,
       oklch(0.25 0.05 260) 50%,
-      oklch(0.30 0.09 250 / 0.2) 100%
+      oklch(0.3 0.09 250 / 0.2) 100%
     );
   }
 
   .heat-treatment-glow {
     box-shadow:
-      0 0 20px oklch(0.30 0.09 250 / 0.3),
-      0 0 40px oklch(0.30 0.09 250 / 0.2),
-      inset 0 0 60px oklch(0.30 0.09 250 / 0.1);
+      0 0 20px oklch(0.3 0.09 250 / 0.3),
+      0 0 40px oklch(0.3 0.09 250 / 0.2),
+      inset 0 0 60px oklch(0.3 0.09 250 / 0.1);
   }
 
   .blade-edge-highlight {
@@ -248,7 +248,8 @@
 
   /* Background pattern utilities */
   .bg-grid-pattern {
-    background-image: linear-gradient(to right, #ffffff 1px, transparent 1px),
+    background-image:
+      linear-gradient(to right, #ffffff 1px, transparent 1px),
       linear-gradient(to bottom, #ffffff 1px, transparent 1px);
     background-size: 40px 40px;
   }
@@ -304,10 +305,10 @@
 @keyframes forge-pulse {
   0%,
   100% {
-    box-shadow: 0 0 20px oklch(0.30 0.09 250 / 0.3);
+    box-shadow: 0 0 20px oklch(0.3 0.09 250 / 0.3);
   }
   50% {
-    box-shadow: 0 0 40px oklch(0.30 0.09 250 / 0.6);
+    box-shadow: 0 0 40px oklch(0.3 0.09 250 / 0.6);
   }
 }
 

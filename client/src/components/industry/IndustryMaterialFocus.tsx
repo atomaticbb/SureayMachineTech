@@ -16,7 +16,6 @@ export default function IndustryMaterialFocus({ materials }: Props) {
   return (
     <section className="bg-white border-b border-slate-200 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-
         {/* Section header */}
         <div className="mb-14">
           <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
@@ -34,7 +33,6 @@ export default function IndustryMaterialFocus({ materials }: Props) {
               key={mat.name}
               className="bg-white border border-slate-200 hover:border-[#001f4d] overflow-hidden flex flex-col transition-colors duration-150"
             >
-
               {/* Image */}
               <div className="aspect-[3/2] overflow-hidden flex-shrink-0">
                 <img
@@ -48,9 +46,11 @@ export default function IndustryMaterialFocus({ materials }: Props) {
 
               {/* Data tray */}
               <div className="p-8 flex flex-col flex-grow bg-white">
-
                 <div className="flex justify-end mb-3">
-                  <span style={MONO} className="text-[10px] text-slate-400 uppercase">
+                  <span
+                    style={MONO}
+                    className="text-[10px] text-slate-400 uppercase"
+                  >
                     REF ID: {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -64,7 +64,10 @@ export default function IndustryMaterialFocus({ materials }: Props) {
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em]">
                       Abrasion
                     </span>
-                    <span style={MONO} className="text-[13px] font-black text-[#001f4d] uppercase">
+                    <span
+                      style={MONO}
+                      className="text-[13px] font-black text-[#001f4d] uppercase"
+                    >
                       {mat.abrasion}
                     </span>
                   </div>
@@ -72,17 +75,18 @@ export default function IndustryMaterialFocus({ materials }: Props) {
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em]">
                       Grade
                     </span>
-                    <span style={MONO} className="text-[13px] font-black text-[#001f4d]">
+                    <span
+                      style={MONO}
+                      className="text-[13px] font-black text-[#001f4d]"
+                    >
                       {mat.grade}
                     </span>
                   </div>
                 </div>
-
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

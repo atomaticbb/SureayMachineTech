@@ -24,11 +24,11 @@ export default function TechSpecsSection({
   if (!categories || categories.length === 0) return null;
 
   const [activeTab, setActiveTab] = useState(categories[0]?.id || "");
-  const activeCategory = categories.find((c) => c.id === activeTab) || categories[0];
+  const activeCategory =
+    categories.find(c => c.id === activeTab) || categories[0];
 
   return (
     <div className={className}>
-
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="flex items-center justify-center gap-3 mb-3">
@@ -49,10 +49,9 @@ export default function TechSpecsSection({
       {/* Tabbed Specifications */}
       <div className="max-w-5xl mx-auto">
         <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
-
           {/* Tabs Navigation */}
           <div className="flex border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
-            {categories.map((tab) => (
+            {categories.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
@@ -101,10 +100,8 @@ export default function TechSpecsSection({
               </Link>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
   );
 }

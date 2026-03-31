@@ -13,25 +13,34 @@
  *   0.6  News articles, About
  */
 
-import fs   from "fs";
+import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { blades }         from "../client/src/data/blades.ts";
+import { blades } from "../client/src/data/blades.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 
-const __dirname  = path.dirname(fileURLToPath(import.meta.url));
-const OUTPUT     = path.resolve(__dirname, "../client/public/sitemap.xml");
-const BASE_URL   = "https://sureay.com";
-const TODAY      = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const OUTPUT = path.resolve(__dirname, "../client/public/sitemap.xml");
+const BASE_URL = "https://sureay.com";
+const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 /** Convert "16.MAR.2026" → "2026-03-16" */
 const MONTH_MAP: Record<string, string> = {
-  JAN: "01", FEB: "02", MAR: "03", APR: "04",
-  MAY: "05", JUN: "06", JUL: "07", AUG: "08",
-  SEP: "09", OCT: "10", NOV: "11", DEC: "12",
+  JAN: "01",
+  FEB: "02",
+  MAR: "03",
+  APR: "04",
+  MAY: "05",
+  JUN: "06",
+  JUL: "07",
+  AUG: "08",
+  SEP: "09",
+  OCT: "10",
+  NOV: "11",
+  DEC: "12",
 };
 
 function parseDate(raw: string): string {
@@ -42,10 +51,10 @@ function parseDate(raw: string): string {
 }
 
 interface UrlEntry {
-  loc:        string;
-  lastmod:    string;
+  loc: string;
+  lastmod: string;
   changefreq: string;
-  priority:   string;
+  priority: string;
 }
 
 function url(entry: UrlEntry): string {
@@ -62,37 +71,84 @@ function url(entry: UrlEntry): string {
 // ── Route definitions ─────────────────────────────────────────────────────────
 
 const corePages: UrlEntry[] = [
-  { loc: `${BASE_URL}/`,               lastmod: TODAY,  changefreq: "weekly",  priority: "1.0" },
-  { loc: `${BASE_URL}/products`,       lastmod: TODAY,  changefreq: "weekly",  priority: "0.9" },
-  { loc: `${BASE_URL}/about`,          lastmod: TODAY,  changefreq: "yearly",  priority: "0.6" },
-  { loc: `${BASE_URL}/contact`,        lastmod: TODAY,  changefreq: "yearly",  priority: "0.7" },
+  {
+    loc: `${BASE_URL}/`,
+    lastmod: TODAY,
+    changefreq: "weekly",
+    priority: "1.0",
+  },
+  {
+    loc: `${BASE_URL}/products`,
+    lastmod: TODAY,
+    changefreq: "weekly",
+    priority: "0.9",
+  },
+  {
+    loc: `${BASE_URL}/about`,
+    lastmod: TODAY,
+    changefreq: "yearly",
+    priority: "0.6",
+  },
+  {
+    loc: `${BASE_URL}/contact`,
+    lastmod: TODAY,
+    changefreq: "yearly",
+    priority: "0.7",
+  },
 ];
 
 const industryPages: UrlEntry[] = [
-  { loc: `${BASE_URL}/plastic-industry`, lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { loc: `${BASE_URL}/metal-industry`,   lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { loc: `${BASE_URL}/paper-industry`,   lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
+  {
+    loc: `${BASE_URL}/plastic-industry`,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    loc: `${BASE_URL}/metal-industry`,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    loc: `${BASE_URL}/paper-industry`,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    loc: `${BASE_URL}/new-energy-industry`,
+    changefreq: "monthly",
+    lastmod: TODAY,
+    priority: "0.8",
+  },
+  {
+    loc: `${BASE_URL}/converting-industry`,
+    changefreq: "monthly",
+    lastmod: TODAY,
+    priority: "0.8",
+  },
 ];
 
-const productPages: UrlEntry[] = blades.map((b) => ({
-  loc:        `${BASE_URL}/products/${b.id}`,
-  lastmod:    TODAY,
+const productPages: UrlEntry[] = blades.map(b => ({
+  loc: `${BASE_URL}/products/${b.id}`,
+  lastmod: TODAY,
   changefreq: "monthly",
-  priority:   "0.85",
+  priority: "0.85",
 }));
 
 const newsListPage: UrlEntry = {
-  loc:        `${BASE_URL}/news`,
-  lastmod:    parseDate(ALL_DISPATCHES[0]?.date ?? ""),
+  loc: `${BASE_URL}/news`,
+  lastmod: parseDate(ALL_DISPATCHES[0]?.date ?? ""),
   changefreq: "weekly",
-  priority:   "0.7",
+  priority: "0.7",
 };
 
-const newsArticles: UrlEntry[] = ALL_DISPATCHES.map((a) => ({
-  loc:        `${BASE_URL}/news/${a.id}`,
-  lastmod:    parseDate(a.date),
+const newsArticles: UrlEntry[] = ALL_DISPATCHES.map(a => ({
+  loc: `${BASE_URL}/news/${a.id}`,
+  lastmod: parseDate(a.date),
   changefreq: "never",
-  priority:   "0.6",
+  priority: "0.6",
 }));
 
 // ── Render ────────────────────────────────────────────────────────────────────
@@ -124,4 +180,6 @@ const xml = [
 
 fs.writeFileSync(OUTPUT, xml, "utf-8");
 console.log(`[sitemap] ${OUTPUT}`);
-console.log(`[sitemap] ${corePages.length + industryPages.length + productPages.length + 1 + newsArticles.length} URLs written`);
+console.log(
+  `[sitemap] ${corePages.length + industryPages.length + productPages.length + 1 + newsArticles.length} URLs written`
+);

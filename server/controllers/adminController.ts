@@ -1,9 +1,9 @@
-import { Request, Response, NextFunction } from 'express';
-import { Prisma } from '@prisma/client';
-import { prisma } from '../db/client.js';
+import { Request, Response, NextFunction } from "express";
+import { Prisma } from "@prisma/client";
+import { prisma } from "../db/client.js";
 
-const VALID_STATUSES = ['pending', 'replied', 'closed'] as const;
-const VALID_FOLLOWUP_TYPES = ['Email', 'Call', 'Internal'] as const;
+const VALID_STATUSES = ["pending", "replied", "closed"] as const;
+const VALID_FOLLOWUP_TYPES = ["Email", "Call", "Internal"] as const;
 const DEFAULT_PAGE = 1;
 const DEFAULT_LIMIT = 50;
 const MAX_LIMIT = 100;
@@ -16,7 +16,7 @@ function parsePositiveInt(
   fallback: number,
   max: number
 ) {
-  const parsed = Number.parseInt(value ?? '', 10);
+  const parsed = Number.parseInt(value ?? "", 10);
 
   if (Number.isNaN(parsed) || parsed < 1) {
     return fallback;
@@ -32,7 +32,7 @@ function isValidCuid(id: string) {
 function isPrismaNotFoundError(error: unknown) {
   return (
     error instanceof Prisma.PrismaClientKnownRequestError &&
-    error.code === 'P2025'
+    error.code === "P2025"
   );
 }
 
@@ -41,24 +41,32 @@ function isPrismaNotFoundError(error: unknown) {
 export const getContacts = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
-    const { page = '1', limit = '50', status, search } = req.query;
-    const pageNum = parsePositiveInt(page as string, DEFAULT_PAGE, Number.MAX_SAFE_INTEGER);
-    const limitNum = parsePositiveInt(limit as string, DEFAULT_LIMIT, MAX_LIMIT);
-    const skip     = (pageNum - 1) * limitNum;
+    const { page = "1", limit = "50", status, search } = req.query;
+    const pageNum = parsePositiveInt(
+      page as string,
+      DEFAULT_PAGE,
+      Number.MAX_SAFE_INTEGER
+    );
+    const limitNum = parsePositiveInt(
+      limit as string,
+      DEFAULT_LIMIT,
+      MAX_LIMIT
+    );
+    const skip = (pageNum - 1) * limitNum;
 
     const where: Record<string, unknown> = {};
 
-    if (status && status !== 'all') {
+    if (status && status !== "all") {
       where.status = status;
     }
 
     if (search) {
       where.OR = [
-        { name:    { contains: search as string } },
-        { email:   { contains: search as string } },
+        { name: { contains: search as string } },
+        { email: { contains: search as string } },
         { company: { contains: search as string } },
         { message: { contains: search as string } },
       ];
@@ -68,11 +76,11 @@ export const getContacts = async (
       prisma.contact.count({ where }),
       prisma.contact.findMany({
         where,
-        orderBy: { createdAt: 'desc' },
+        orderBy: { createdAt: "desc" },
         skip,
         take: limitNum,
         include: {
-          followUps: { orderBy: { createdAt: 'asc' } },
+          followUps: { orderBy: { createdAt: "asc" } },
         },
       }),
     ]);
@@ -82,15 +90,15 @@ export const getContacts = async (
       data: {
         contacts,
         pagination: {
-          page:       pageNum,
-          limit:      limitNum,
+          page: pageNum,
+          limit: limitNum,
           total,
           totalPages: Math.ceil(total / limitNum),
         },
       },
     });
   } catch (error) {
-    console.error('Error in getContacts:', error);
+    console.error("Error in getContacts:", error);
     next(error);
   }
 };
@@ -100,18 +108,22 @@ export const getContacts = async (
 export const updateContactStatus = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
-    const { id }     = req.params;
+    const { id } = req.params;
     const { status } = req.body;
 
     if (!isValidCuid(id)) {
-      return res.status(400).json({ success: false, message: 'Invalid contact id' });
+      return res
+        .status(400)
+        .json({ success: false, message: "Invalid contact id" });
     }
 
     if (!VALID_STATUSES.includes(status)) {
-      return res.status(400).json({ success: false, message: 'Invalid status value' });
+      return res
+        .status(400)
+        .json({ success: false, message: "Invalid status value" });
     }
 
     const existingContact = await prisma.contact.findUnique({
@@ -120,21 +132,25 @@ export const updateContactStatus = async (
     });
 
     if (!existingContact) {
-      return res.status(404).json({ success: false, message: 'Contact not found' });
+      return res
+        .status(404)
+        .json({ success: false, message: "Contact not found" });
     }
 
     const contact = await prisma.contact.update({
       where: { id },
-      data:  { status },
+      data: { status },
     });
 
     res.json({ success: true, data: contact });
   } catch (error) {
     if (isPrismaNotFoundError(error)) {
-      return res.status(404).json({ success: false, message: 'Contact not found' });
+      return res
+        .status(404)
+        .json({ success: false, message: "Contact not found" });
     }
 
-    console.error('Error in updateContactStatus:', error);
+    console.error("Error in updateContactStatus:", error);
     next(error);
   }
 };
@@ -144,21 +160,27 @@ export const updateContactStatus = async (
 export const addFollowUp = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
-    const { id }              = req.params;
+    const { id } = req.params;
     const { content, type, status } = req.body;
 
     if (!isValidCuid(id)) {
-      return res.status(400).json({ success: false, message: 'Invalid contact id' });
+      return res
+        .status(400)
+        .json({ success: false, message: "Invalid contact id" });
     }
 
-    if (!content || typeof content !== 'string' || !content.trim()) {
-      return res.status(400).json({ success: false, message: 'Follow-up content is required' });
+    if (!content || typeof content !== "string" || !content.trim()) {
+      return res
+        .status(400)
+        .json({ success: false, message: "Follow-up content is required" });
     }
 
-    const resolvedType = VALID_FOLLOWUP_TYPES.includes(type) ? type : 'Internal';
+    const resolvedType = VALID_FOLLOWUP_TYPES.includes(type)
+      ? type
+      : "Internal";
 
     const existingContact = await prisma.contact.findUnique({
       where: { id },
@@ -166,22 +188,24 @@ export const addFollowUp = async (
     });
 
     if (!existingContact) {
-      return res.status(404).json({ success: false, message: 'Contact not found' });
+      return res
+        .status(404)
+        .json({ success: false, message: "Contact not found" });
     }
 
-    const followUp = await prisma.$transaction(async (tx) => {
+    const followUp = await prisma.$transaction(async tx => {
       const fu = await tx.followUp.create({
         data: {
           contactId: id,
-          content:   content.trim(),
-          type:      resolvedType,
+          content: content.trim(),
+          type: resolvedType,
         },
       });
 
       if (status && VALID_STATUSES.includes(status)) {
         await tx.contact.update({
           where: { id },
-          data:  { status },
+          data: { status },
         });
       }
 
@@ -191,10 +215,12 @@ export const addFollowUp = async (
     res.json({ success: true, data: followUp });
   } catch (error) {
     if (isPrismaNotFoundError(error)) {
-      return res.status(404).json({ success: false, message: 'Contact not found' });
+      return res
+        .status(404)
+        .json({ success: false, message: "Contact not found" });
     }
 
-    console.error('Error in addFollowUp:', error);
+    console.error("Error in addFollowUp:", error);
     next(error);
   }
 };
@@ -204,24 +230,38 @@ export const addFollowUp = async (
 export const getAnalytics = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
-    const { startDate, endDate, eventType, page = '1', limit = '50' } = req.query;
-    const pageNum = parsePositiveInt(page as string, DEFAULT_PAGE, Number.MAX_SAFE_INTEGER);
-    const limitNum = parsePositiveInt(limit as string, DEFAULT_LIMIT, MAX_LIMIT);
-    const skip     = (pageNum - 1) * limitNum;
+    const {
+      startDate,
+      endDate,
+      eventType,
+      page = "1",
+      limit = "50",
+    } = req.query;
+    const pageNum = parsePositiveInt(
+      page as string,
+      DEFAULT_PAGE,
+      Number.MAX_SAFE_INTEGER
+    );
+    const limitNum = parsePositiveInt(
+      limit as string,
+      DEFAULT_LIMIT,
+      MAX_LIMIT
+    );
+    const skip = (pageNum - 1) * limitNum;
 
     const where: Record<string, unknown> = {};
 
-    if (eventType && eventType !== 'all') {
+    if (eventType && eventType !== "all") {
       where.eventType = eventType;
     }
 
     if (startDate || endDate) {
       const createdAt: Record<string, Date> = {};
       if (startDate) createdAt.gte = new Date(startDate as string);
-      if (endDate)   createdAt.lte = new Date(endDate   as string);
+      if (endDate) createdAt.lte = new Date(endDate as string);
       where.createdAt = createdAt;
     }
 
@@ -229,7 +269,7 @@ export const getAnalytics = async (
       prisma.analytics.count({ where }),
       prisma.analytics.findMany({
         where,
-        orderBy: { createdAt: 'desc' },
+        orderBy: { createdAt: "desc" },
         skip,
         take: limitNum,
       }),
@@ -240,15 +280,15 @@ export const getAnalytics = async (
       data: {
         analytics,
         pagination: {
-          page:       pageNum,
-          limit:      limitNum,
+          page: pageNum,
+          limit: limitNum,
           total,
           totalPages: Math.ceil(total / limitNum),
         },
       },
     });
   } catch (error) {
-    console.error('Error in getAnalytics:', error);
+    console.error("Error in getAnalytics:", error);
     next(error);
   }
 };
@@ -258,12 +298,12 @@ export const getAnalytics = async (
 export const getStatistics = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
-    const { days = '7' } = req.query;
+    const { days = "7" } = req.query;
     const daysNum = parsePositiveInt(days as string, DEFAULT_DAYS, MAX_DAYS);
-    const startDate  = new Date();
+    const startDate = new Date();
     startDate.setDate(startDate.getDate() - daysNum);
 
     const [
@@ -275,32 +315,34 @@ export const getStatistics = async (
     ] = await Promise.all([
       prisma.contact.count(),
 
-      prisma.contact.count({ where: { status: 'pending' } }),
+      prisma.contact.count({ where: { status: "pending" } }),
 
       prisma.analytics.count({
         where: {
-          eventType: 'page_view',
+          eventType: "page_view",
           createdAt: { gte: startDate },
         },
       }),
 
-      prisma.analytics.groupBy({
-        by:    ['sessionId'],
-        where: {
-          eventType: 'page_view',
-          createdAt: { gte: startDate },
-        },
-      }).then(r => r.length),
+      prisma.analytics
+        .groupBy({
+          by: ["sessionId"],
+          where: {
+            eventType: "page_view",
+            createdAt: { gte: startDate },
+          },
+        })
+        .then(r => r.length),
 
       prisma.analytics.groupBy({
-        by:    ['page'],
+        by: ["page"],
         where: {
-          eventType: 'page_view',
+          eventType: "page_view",
           createdAt: { gte: startDate },
         },
-        _count:  { page: true },
-        orderBy: { _count: { page: 'desc' } },
-        take:    10,
+        _count: { page: true },
+        orderBy: { _count: { page: "desc" } },
+        take: 10,
       }),
     ]);
 
@@ -309,19 +351,21 @@ export const getStatistics = async (
       data: {
         contacts: { total: totalContacts, pending: pendingContacts },
         analytics: { pageViews: totalPageViews, uniqueVisitors },
-        popularPages: popularPages.map((p: { page: string | null; _count: { page: number } }) => ({
-          page:  p.page,
-          views: p._count.page,
-        })),
+        popularPages: popularPages.map(
+          (p: { page: string | null; _count: { page: number } }) => ({
+            page: p.page,
+            views: p._count.page,
+          })
+        ),
         period: {
-          days:      daysNum,
+          days: daysNum,
           startDate: startDate.toISOString(),
-          endDate:   new Date().toISOString(),
+          endDate: new Date().toISOString(),
         },
       },
     });
   } catch (error) {
-    console.error('Error in getStatistics:', error);
+    console.error("Error in getStatistics:", error);
     next(error);
   }
 };

@@ -38,7 +38,6 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
 
       {/* Flex row: items-start — each column its own height, no cross-stretch */}
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
-
         {/* Left — specs table only */}
         <div className="w-full lg:w-[500px] xl:w-[540px] flex-shrink-0">
           <div className="border-t-2 border-t-[#001f4d] border border-slate-300 overflow-hidden h-full">
@@ -80,7 +79,6 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
             />
           </div>
         </div>
-
       </div>
 
       {/* Footnote — outside the flex row */}

@@ -70,7 +70,7 @@ export default function ProductDetail() {
     <div className="bg-white min-h-screen flex flex-col antialiased">
       <SEO
         title={blade.fullName || blade.name}
-        description={blade.fullDescription || blade.description}
+        description={blade.description}
         canonicalUrl={`/products/${blade.id}`}
         keywords={pageSeo.keywords}
         breadcrumbs={[
@@ -79,12 +79,12 @@ export default function ProductDetail() {
           { name: blade.name, url: `/products/${blade.id}` },
         ]}
         productData={{
-          name:        blade.fullName || blade.name,
-          image:       blade.image,
+          name: blade.fullName || blade.name,
+          image: blade.image,
           description: blade.fullDescription || blade.description,
-          sku:         blade.id,
-          mpn:         blade.id,
-          brand:       "Sureay Industrial Blades",
+          sku: blade.id,
+          mpn: blade.id,
+          brand: "Sureay Industrial Blades",
           ...(blade.offers && { offers: blade.offers }),
         }}
       />
@@ -92,7 +92,6 @@ export default function ProductDetail() {
       <Navbar />
 
       <main className="flex-grow pt-[68px] pb-16">
-
         {/* Breadcrumbs */}
         <Breadcrumbs
           variant="light"
@@ -106,7 +105,6 @@ export default function ProductDetail() {
         {/* ── Content ──────────────────────────────────────────────────── */}
         <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-8">
           <div className="flex flex-col gap-y-8">
-
             {/* Zone 1 — CAD Viewport Hero (no inner px, uses outer container padding) */}
             <BladeHero blade={blade} />
 
@@ -134,7 +132,6 @@ export default function ProductDetail() {
             <div className="-mx-4 sm:-mx-8 pt-8">
               <TechnicalAudit blade={blade} />
             </div>
-
           </div>
         </div>
 
@@ -157,7 +154,6 @@ export default function ProductDetail() {
         <div id="rfq">
           <ContactRFQ productName={blade.name} />
         </div>
-
       </main>
 
       <WhatsAppFloat />

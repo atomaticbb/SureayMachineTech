@@ -1,19 +1,19 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const pagesDir = path.join(__dirname, 'client/src/pages');
+const pagesDir = path.join(__dirname, "client/src/pages");
 
 const pagesToUpdate = [
-  'Materials.tsx',
-  'Contact.tsx',
-  'About.tsx',
-  'ProductDetailPlastic.tsx',
-  'ProductDetailMetal.tsx',
-  'ProductDetail.tsx'
+  "Materials.tsx",
+  "Contact.tsx",
+  "About.tsx",
+  "ProductDetailPlastic.tsx",
+  "ProductDetailMetal.tsx",
+  "ProductDetail.tsx",
 ];
 
 function fixImgFormats(content) {
@@ -26,13 +26,13 @@ function fixImgFormats(content) {
       const altMatch = imgPart.match(/alt="([^"]*)"/);
       const classMatch = imgPart.match(/className="([^"]*)"/);
 
-      const src = srcMatch ? srcMatch[1] : '';
-      const alt = altMatch ? altMatch[1] : '';
-      const className = classMatch ? classMatch[1] : '';
+      const src = srcMatch ? srcMatch[1] : "";
+      const alt = altMatch ? altMatch[1] : "";
+      const className = classMatch ? classMatch[1] : "";
 
       // Get proper indentation
       const beforeImg = content.substring(0, content.indexOf(match));
-      const lastNewline = beforeImg.lastIndexOf('\n');
+      const lastNewline = beforeImg.lastIndexOf("\n");
       const indent = beforeImg.substring(lastNewline + 1).match(/^\s*/)[0];
 
       return `<img
@@ -57,11 +57,11 @@ for (const page of pagesToUpdate) {
   }
 
   try {
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = fs.readFileSync(filePath, "utf8");
     const updated = fixImgFormats(content);
 
     if (content !== updated) {
-      fs.writeFileSync(filePath, updated, 'utf8');
+      fs.writeFileSync(filePath, updated, "utf8");
       console.log(`✓ Fixed: ${page}`);
     } else {
       console.log(`- No changes: ${page}`);
@@ -71,4 +71,4 @@ for (const page of pagesToUpdate) {
   }
 }
 
-console.log('\n✓ Done!');
+console.log("\n✓ Done!");

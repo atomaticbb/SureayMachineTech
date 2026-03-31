@@ -14,23 +14,29 @@ import { MONO, SPRING_MECHANICAL } from "./types";
 const PAGE_SIZE = 6;
 
 interface Props {
-  products:         IndustryProduct[];
-  filterCategories: string[];          // ["ALL", "SHREDDING", ...]
+  products: IndustryProduct[];
+  filterCategories: string[]; // ["ALL", "SHREDDING", ...]
 }
 
-export default function IndustryToolingMatrix({ products, filterCategories }: Props) {
+export default function IndustryToolingMatrix({
+  products,
+  filterCategories,
+}: Props) {
   const [activeFilter, setActiveFilter] = useState("ALL");
-  const [page,         setPage]         = useState(1);
+  const [page, setPage] = useState(1);
 
   const filtered =
     activeFilter === "ALL"
       ? products
-      : products.filter((p) => p.category.toUpperCase() === activeFilter);
+      : products.filter(p => p.category.toUpperCase() === activeFilter);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const pageItems  = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const pageItems = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
-  const handleFilter = (f: string) => { setActiveFilter(f); setPage(1); };
+  const handleFilter = (f: string) => {
+    setActiveFilter(f);
+    setPage(1);
+  };
 
   const handlePage = (p: number) => {
     setPage(p);
@@ -41,7 +47,6 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
   return (
     <section id="tooling-matrix" className="bg-slate-50 py-12 lg:py-28">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-
         {/* Section header */}
         <div className="mb-14">
           <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
@@ -55,7 +60,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
 
         {/* Filter bar */}
         <div className="flex flex-wrap gap-3 mb-10">
-          {filterCategories.map((f) => (
+          {filterCategories.map(f => (
             <button
               key={f}
               type="button"
@@ -74,7 +79,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
         {/* Card grid — mechanical AnimatePresence */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <AnimatePresence mode="popLayout">
-            {pageItems.map((product) => (
+            {pageItems.map(product => (
               <motion.div
                 key={`${product.href}-${product.name}`}
                 layout
@@ -85,7 +90,6 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
               >
                 <Link href={product.href}>
                   <div className="border border-slate-200 bg-white flex flex-col h-full group relative cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[6px_6px_0px_#001f4d]">
-
                     {/* Image viewport */}
                     <div className="aspect-[16/10] bg-slate-50 relative overflow-hidden flex items-center justify-center p-5">
                       <span className="absolute top-2 left-2 w-2 h-2 border-t border-l border-slate-300 pointer-events-none" />
@@ -114,11 +118,10 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
                         {product.name}
                       </h3>
                       <p className="text-[14px] text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
-                        {product.desc ?? (
-                          product.isFlagship
+                        {product.desc ??
+                          (product.isFlagship
                             ? "Extreme-wear grade engineered for maximum continuous uptime. 100% CMM-verified tolerance."
-                            : "Precision-engineered OEM replacement tooling designed for drop-in compatibility and extended service life."
-                        )}
+                            : "Precision-engineered OEM replacement tooling designed for drop-in compatibility and extended service life.")}
                       </p>
                       <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
                         <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest group-hover:text-[#001f4d] transition-colors duration-300">
@@ -127,7 +130,6 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
                         <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-[#001f4d] group-hover:translate-x-1 transition-all duration-300" />
                       </div>
                     </div>
-
                   </div>
                 </Link>
               </motion.div>
@@ -148,7 +150,7 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
               «
             </button>
 
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
               <button
                 key={p}
                 type="button"
@@ -181,11 +183,13 @@ export default function IndustryToolingMatrix({ products, filterCategories }: Pr
               style={{ width: `${(page / totalPages) * 100}%` }}
             />
           </div>
-          <p style={MONO} className="text-[10px] text-slate-400 uppercase tracking-[0.3em]">
+          <p
+            style={MONO}
+            className="text-[10px] text-slate-400 uppercase tracking-[0.3em]"
+          >
             {page} / {totalPages}
           </p>
         </div>
-
       </div>
     </section>
   );

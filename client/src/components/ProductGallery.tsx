@@ -24,7 +24,7 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
           width={600}
           height={600}
           decoding="async"
-          onError={(e) => {
+          onError={e => {
             e.currentTarget.src = "/images/products/machinery.webp";
           }}
         />
@@ -51,7 +51,7 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
                 decoding="async"
                 width={120}
                 height={120}
-                onError={(e) => {
+                onError={e => {
                   e.currentTarget.src = "/images/products/machinery.webp";
                 }}
               />

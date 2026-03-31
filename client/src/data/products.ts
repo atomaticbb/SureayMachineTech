@@ -1,4 +1,8 @@
-import { type Product, type ProductSpecs, type ProductSubCategory } from "@shared/types/product";
+import {
+  type Product,
+  type ProductSpecs,
+  type ProductSubCategory,
+} from "@shared/types/product";
 import { blades, type Blade, type BladeCategoryType } from "./blades";
 
 /**
@@ -19,12 +23,12 @@ import { blades, type Blade, type BladeCategoryType } from "./blades";
 // Maps BladeCategoryType (snake_case in blades.ts) to
 // ProductSubCategory (kebab-case in @shared/types/product).
 const BLADE_SUBCATEGORY_MAP: Record<BladeCategoryType, ProductSubCategory> = {
-  slitter_knives:    "slitter-knives",
-  shredder_blades:   "shredder-blades",
+  slitter_knives: "slitter-knives",
+  shredder_blades: "shredder-blades",
   granulator_blades: "production-line-blades",
-  log_saw_blades:    "log-saw-blades",
-  trim_cut_blades:   "trim-cut-blades",
-  metal_processing:  "metal-processing-blades",
+  log_saw_blades: "log-saw-blades",
+  trim_cut_blades: "trim-cut-blades",
+  metal_processing: "metal-processing-blades",
   battery_precision: "battery-precision-blades",
 };
 
@@ -41,18 +45,18 @@ function bladeToProduct(blade: Blade, index: number): Product {
   }, {});
 
   return {
-    id:               blade.id,
-    name:             blade.name,
-    nameEn:           blade.name,
-    slug:             blade.id,          // blade routing uses id as the URL slug
-    description:      blade.fullDescription ?? blade.description,
+    id: blade.id,
+    name: blade.name,
+    nameEn: blade.name,
+    slug: blade.id, // blade routing uses id as the URL slug
+    description: blade.fullDescription ?? blade.description,
     shortDescription: blade.description,
-    mainCategory:     "blades",
-    subCategory:      BLADE_SUBCATEGORY_MAP[blade.category],
-    image:            blade.image,
-    gallery:          blade.gallery,
-isFeatured:       blade.isFeatured,
-    sortOrder:        index + 1,
+    mainCategory: "blades",
+    subCategory: BLADE_SUBCATEGORY_MAP[blade.category],
+    image: blade.image,
+    gallery: blade.gallery,
+    isFeatured: blade.isFeatured,
+    sortOrder: index + 1,
     specs,
   };
 }
@@ -72,26 +76,26 @@ export const products: Product[] = [
 /** Featured products for homepage display, sorted by position in source array. */
 export function getFeaturedProducts(): Product[] {
   return products
-    .filter((p) => p.isFeatured)
+    .filter(p => p.isFeatured)
     .sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
 }
 
 /** All products belonging to a top-level category. */
 export function getProductsByMainCategory(
-  category: "machinery" | "blades" | "molds",
+  category: "machinery" | "blades" | "molds"
 ): Product[] {
   return products
-    .filter((p) => p.mainCategory === category)
+    .filter(p => p.mainCategory === category)
     .sort((a, b) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0));
 }
 
 /** Look up a single product by its URL slug.
  *  Falls back to matching by id since blade routing uses id as slug. */
 export function getProductBySlug(slug: string): Product | undefined {
-  return products.find((p) => p.slug === slug || p.id === slug);
+  return products.find(p => p.slug === slug || p.id === slug);
 }
 
 /** All products belonging to a specific sub-category. */
 export function getProductsBySubCategory(subCategory: string): Product[] {
-  return products.filter((p) => p.subCategory === subCategory);
+  return products.filter(p => p.subCategory === subCategory);
 }

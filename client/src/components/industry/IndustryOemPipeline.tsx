@@ -32,7 +32,6 @@ const STEPS = [
 export default function IndustryOemPipeline() {
   return (
     <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-16 lg:py-20 relative overflow-hidden">
-
       {/* Blueprint grid overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -46,7 +45,6 @@ export default function IndustryOemPipeline() {
       />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative">
-
         {/* ── Top: Section header ───────────────────────────────────────────── */}
         <div className="mb-14 lg:mb-16">
           <p className="text-[#65AAD6] font-bold text-xs uppercase tracking-[0.3em] mb-4">
@@ -77,15 +75,20 @@ export default function IndustryOemPipeline() {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Single h-px line running through the center of all nodes */}
-            <div className="absolute left-0 right-0 h-px bg-white/30" style={{ top: "1.5rem" }} />
+            <div
+              className="absolute left-0 right-0 h-px bg-white/30"
+              style={{ top: "1.5rem" }}
+            />
 
             <div className="grid grid-cols-4 gap-6 px-6">
-              {STEPS.map((item) => (
+              {STEPS.map(item => (
                 <div key={item.step} className="flex flex-col">
-
                   {/* Circle node — z-10 sits above the continuous line */}
                   <div className="relative z-10 w-12 h-12 rounded-full border-2 border-white bg-[#001f4d] flex items-center justify-center flex-shrink-0">
-                    <span style={MONO} className="text-[14px] font-black text-white">
+                    <span
+                      style={MONO}
+                      className="text-[14px] font-black text-white"
+                    >
                       {item.step}
                     </span>
                   </div>
@@ -99,7 +102,6 @@ export default function IndustryOemPipeline() {
                       {item.desc}
                     </p>
                   </div>
-
                 </div>
               ))}
             </div>
@@ -115,7 +117,10 @@ export default function IndustryOemPipeline() {
             >
               {/* Square node */}
               <div className="w-11 h-11 rounded-full border-2 border-white bg-[#001f4d] flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span style={MONO} className="text-[13px] font-black text-white">
+                <span
+                  style={MONO}
+                  className="text-[13px] font-black text-white"
+                >
                   {item.step}
                 </span>
               </div>
@@ -132,7 +137,6 @@ export default function IndustryOemPipeline() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

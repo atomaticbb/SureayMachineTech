@@ -67,7 +67,9 @@ export function generateProductSchema(blade: Blade): ProductSchema {
         addressLocality: "Ma'anshan",
       },
     },
-    image: blade.gallery?.map((img) => `${baseUrl}${img}`) || [`${baseUrl}${blade.image}`],
+    image: blade.gallery?.map(img => `${baseUrl}${img}`) || [
+      `${baseUrl}${blade.image}`,
+    ],
   };
 }
 
@@ -81,7 +83,8 @@ export function generateOrganizationSchema() {
     name: "Sureay Machinery Technology Co., Ltd.",
     url: "https://sureay.com",
     logo: "https://sureay.com/images/logo/sureay-logo.webp",
-    description: "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting since 2008.",
+    description:
+      "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting since 2008.",
     address: {
       "@type": "PostalAddress",
       addressCountry: "CN",
@@ -110,7 +113,9 @@ export function generateOrganizationSchema() {
 /**
  * Generate Breadcrumb Schema
  */
-export function generateBreadcrumbSchema(items: Array<{ name: string; url: string }>) {
+export function generateBreadcrumbSchema(
+  items: Array<{ name: string; url: string }>
+) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -135,7 +140,7 @@ export function generateFAQSchema(faqs: FAQItem[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: faqs.map(faq => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {

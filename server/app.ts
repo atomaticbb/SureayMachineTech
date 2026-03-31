@@ -102,8 +102,9 @@ export function createApp({
         return next();
       }
 
-      const referer = (req.headers.referer ??
-        req.headers.referrer) as string | undefined;
+      const referer = (req.headers.referer ?? req.headers.referrer) as
+        | string
+        | undefined;
 
       // No Referer = direct access / crawler / social scraper → allow
       if (!referer) {
@@ -139,7 +140,7 @@ export function createApp({
     app.use((req, res, next) => {
       if (req.method !== "GET" && req.method !== "HEAD") return next();
       const probe = path.join(staticPath, req.path, "index.html");
-      res.sendFile(probe, (err) => {
+      res.sendFile(probe, err => {
         if (err) next();
       });
     });

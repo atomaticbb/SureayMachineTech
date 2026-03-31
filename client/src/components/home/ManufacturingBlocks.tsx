@@ -52,7 +52,9 @@ export default function ManufacturingBlocks() {
             The Engineering Standards Behind Our Blades
           </h2>
           <p className="text-slate-500 max-w-2xl text-sm md:text-base leading-relaxed mt-4">
-            We eliminate the guesswork from industrial sourcing. Every Sureay blade guarantees exact OEM fitment, strict dimensional tolerances, and metallurgy optimized for your real-world cutting conditions.
+            We eliminate the guesswork from industrial sourcing. Every Sureay
+            blade guarantees exact OEM fitment, strict dimensional tolerances,
+            and metallurgy optimized for your real-world cutting conditions.
           </p>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
         </div>
@@ -105,8 +107,11 @@ export default function ManufacturingBlocks() {
                   </p>
 
                   <div className="grid grid-cols-1 gap-4">
-                    {block.points.map((point) => (
-                      <div key={point} className="border-l-2 border-slate-200 pl-4">
+                    {block.points.map(point => (
+                      <div
+                        key={point}
+                        className="border-l-2 border-slate-200 pl-4"
+                      >
                         <p className="text-slate-600 text-sm md:text-[15px] leading-relaxed">
                           {point}
                         </p>

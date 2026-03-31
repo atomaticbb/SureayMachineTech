@@ -22,7 +22,6 @@ export default function BladeHero({ blade }: BladeHeroProps) {
       aria-label={`${blade.fullName || blade.name} — product hero`}
       className="flex flex-col lg:flex-row overflow-hidden"
     >
-
       {/* ── Left: Product Image (580px) ───────────────────────── */}
       <div className="lg:w-[580px] lg:shrink-0 border-r border-slate-200">
         <div
@@ -44,7 +43,6 @@ export default function BladeHero({ blade }: BladeHeroProps) {
       {/* ── Right: Product Info ───────────────────────────────── */}
       <div className="flex-1 p-6 lg:p-10 flex flex-col justify-between">
         <div className="space-y-5">
-
           {/* H1 — full product name */}
           <h1 className="font-black text-[26px] text-[#001f4d] uppercase leading-[1.15] tracking-tight">
             {blade.fullName || blade.name}
@@ -63,34 +61,43 @@ export default function BladeHero({ blade }: BladeHeroProps) {
           )}
 
           {/* Spec bullets — Material & Applications */}
-          {blade.specs && blade.specs.length > 0 && (() => {
-            const filtered = blade.specs.filter((s) =>
-              /^material$/i.test(s.label.trim()) || /^applications?$/i.test(s.label.trim())
-            );
-            return filtered.length > 0 ? (
-              <ul className="space-y-2.5 pt-1">
-                {filtered.map((spec, i) => (
-                  <li key={i} className="flex items-baseline gap-2">
-                    <span className="text-black font-black flex-shrink-0 text-[11px]">■</span>
-                    <span className="text-[16px] leading-snug">
-                      <span className="font-bold text-black uppercase tracking-wide">{spec.label}: </span>
-                      <span className="text-black">{spec.value}</span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            ) : null;
-          })()}
-
+          {blade.specs &&
+            blade.specs.length > 0 &&
+            (() => {
+              const filtered = blade.specs.filter(
+                s =>
+                  /^material$/i.test(s.label.trim()) ||
+                  /^applications?$/i.test(s.label.trim())
+              );
+              return filtered.length > 0 ? (
+                <ul className="space-y-2.5 pt-1">
+                  {filtered.map((spec, i) => (
+                    <li key={i} className="flex items-baseline gap-2">
+                      <span className="text-black font-black flex-shrink-0 text-[11px]">
+                        ■
+                      </span>
+                      <span className="text-[16px] leading-snug">
+                        <span className="font-bold text-black uppercase tracking-wide">
+                          {spec.label}:{" "}
+                        </span>
+                        <span className="text-black">{spec.value}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : null;
+            })()}
         </div>
 
         {/* CTA */}
         <div className="mt-8">
           <a
             href="#rfq"
-            onClick={(e) => {
+            onClick={e => {
               e.preventDefault();
-              document.getElementById("rfq")?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById("rfq")
+                ?.scrollIntoView({ behavior: "smooth" });
             }}
             className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
           >
@@ -99,7 +106,6 @@ export default function BladeHero({ blade }: BladeHeroProps) {
           </a>
         </div>
       </div>
-
     </section>
   );
 }

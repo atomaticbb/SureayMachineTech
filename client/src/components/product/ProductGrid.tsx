@@ -53,7 +53,7 @@ export default function ProductGrid({
   if (layout === "related") {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {blades.map((blade) => (
+        {blades.map(blade => (
           <ProductCard key={blade.id} blade={blade} variant="related" />
         ))}
       </div>
@@ -63,7 +63,7 @@ export default function ProductGrid({
   if (layout === "grid") {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blades.map((blade) => (
+        {blades.map(blade => (
           <ProductCard key={blade.id} blade={blade} variant="grid" />
         ))}
       </div>
@@ -73,7 +73,7 @@ export default function ProductGrid({
   // layout === "list"
   return (
     <div className="flex flex-col gap-5">
-      {blades.map((blade) => (
+      {blades.map(blade => (
         <ProductCard key={blade.id} blade={blade} variant="list" />
       ))}
     </div>

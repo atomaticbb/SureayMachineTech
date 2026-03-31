@@ -28,14 +28,20 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
   // Prefers later indices (more likely to be factory/inspection shots).
   const gallery = blade.gallery ?? [];
   const trustImage =
-    (gallery[3] && gallery[3] !== "") ? gallery[3] :
-    (gallery[2] && gallery[2] !== "") ? gallery[2] :
-    (gallery[1] && gallery[1] !== "") ? gallery[1] :
-    (gallery[0] && gallery[0] !== "") ? gallery[0] :
-    (blade.image && blade.image !== "") ? blade.image : "";
+    gallery[3] && gallery[3] !== ""
+      ? gallery[3]
+      : gallery[2] && gallery[2] !== ""
+        ? gallery[2]
+        : gallery[1] && gallery[1] !== ""
+          ? gallery[1]
+          : gallery[0] && gallery[0] !== ""
+            ? gallery[0]
+            : blade.image && blade.image !== ""
+              ? blade.image
+              : "";
 
-  const materialSpec = blade.specs.find((s) => s.label === "Material");
-  const hardnessSpec = blade.specs.find((s) => s.label === "Hardness");
+  const materialSpec = blade.specs.find(s => s.label === "Material");
+  const hardnessSpec = blade.specs.find(s => s.label === "Hardness");
 
   return (
     <section
@@ -43,7 +49,6 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-start">
-
         {/* ── Left: SEO Copy ──────────────────────────────────────── */}
         <div className="flex-1 min-w-0">
           <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
@@ -59,11 +64,12 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
           </p>
 
           {/* Extended copy — fullDescription (if distinct) */}
-          {blade.fullDescription && blade.fullDescription !== blade.description && (
-            <p className="text-base text-slate-600 leading-relaxed mb-6">
-              {blade.fullDescription}
-            </p>
-          )}
+          {blade.fullDescription &&
+            blade.fullDescription !== blade.description && (
+              <p className="text-base text-slate-600 leading-relaxed mb-6">
+                {blade.fullDescription}
+              </p>
+            )}
 
           {/* Material + Hardness pull-out block */}
           {(materialSpec || hardnessSpec) && (
@@ -73,9 +79,9 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
                   <span className="font-black text-[#001f4d] uppercase tracking-wide text-[11px]">
                     Material:{" "}
                   </span>
-                  {materialSpec.value} — sourced from certified mill stock, every batch
-                  spectrographically verified to confirm alloy composition before entering
-                  production.
+                  {materialSpec.value} — sourced from certified mill stock,
+                  every batch spectrographically verified to confirm alloy
+                  composition before entering production.
                 </p>
               )}
               {hardnessSpec && (
@@ -83,9 +89,10 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
                   <span className="font-black text-[#001f4d] uppercase tracking-wide text-[11px]">
                     Hardness:{" "}
                   </span>
-                  {hardnessSpec.value} achieved through in-house vacuum heat treatment,
-                  delivering the precise balance of edge retention and impact toughness
-                  required for continuous industrial operation.
+                  {hardnessSpec.value} achieved through in-house vacuum heat
+                  treatment, delivering the precise balance of edge retention
+                  and impact toughness required for continuous industrial
+                  operation.
                 </p>
               )}
             </div>
@@ -93,15 +100,16 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
 
           {/* TCO argument */}
           <p className="text-base text-slate-600 leading-relaxed mb-10">
-            Total cost of ownership is the measure that matters. Sureay blades are engineered
-            to extend service intervals, reduce unplanned downtime, and outlast lower-grade
-            alternatives — delivering a measurably lower cost-per-cut across the full
-            service life of your equipment.
+            Total cost of ownership is the measure that matters. Sureay blades
+            are engineered to extend service intervals, reduce unplanned
+            downtime, and outlast lower-grade alternatives — delivering a
+            measurably lower cost-per-cut across the full service life of your
+            equipment.
           </p>
 
           {/* Trust statistics grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-px border border-slate-200 bg-slate-200">
-            {TRUST_POINTS.map((item) => (
+            {TRUST_POINTS.map(item => (
               <div key={item.stat} className="bg-white px-4 py-5 text-center">
                 <p className="font-black text-sm text-[#001f4d] uppercase tracking-tight leading-tight mb-1">
                   {item.stat}
@@ -144,7 +152,6 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

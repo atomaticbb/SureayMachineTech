@@ -16,7 +16,7 @@ export default function FaqItem({
       className={`border-b border-slate-200 last:border-0 transition-colors duration-200 ${open ? "bg-slate-50/60" : ""}`}
     >
       <button
-        onClick={() => setOpen((o) => !o)}
+        onClick={() => setOpen(o => !o)}
         className="w-full flex items-start justify-between py-5 text-left px-4 group"
       >
         <div className="flex items-start gap-3 pr-4 flex-1 min-w-0">

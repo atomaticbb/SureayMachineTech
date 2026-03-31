@@ -6,14 +6,14 @@
 
 import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
-import Navbar    from "@/components/layout/Navbar";
-import Footer    from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import IndustryHero             from "@/components/industry/IndustryHero";
-import IndustryToolingMatrix    from "@/components/industry/IndustryToolingMatrix";
+import IndustryHero from "@/components/industry/IndustryHero";
+import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline      from "@/components/industry/IndustryOemPipeline";
-import IndustryMaterialFocus    from "@/components/industry/IndustryMaterialFocus";
+import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
 import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
@@ -26,8 +26,8 @@ import type {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
   breadcrumb: "Home / Markets / Plastics Recycling",
-  h1:   "Plastic Recycling Shredder & Granulator Blade Supplier",
-  h2:   "Precision Knives, Filterless Systems & OEM Wear Parts",
+  h1: "Plastic Recycling Shredder & Granulator Blade Supplier",
+  h2: "Precision Knives, Filterless Systems & OEM Wear Parts",
   body1:
     "Sureay Machinery specializes in manufacturing premium industrial knives, " +
     "melt filtration equipment, and high-wear components for the plastics recycling industry. " +
@@ -40,14 +40,38 @@ const HERO_DATA: IndustryHeroData = {
     "product line keeps your extrusion systems running at peak productivity.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/plastic-industry/single-shredder-blades-04.webp",     alt: "Single shaft shredder blades for plastic"          },
-    { src: "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",   alt: "Multi-shaft shredder blades for plastic recycling" },
-    { src: "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",  alt: "Four-shaft shredder blade assembly"                 },
-    { src: "/images/applications/plastic-industry/shredder-blades-03.webp",            alt: "Shredder blades for heavy-duty plastic recycling"  },
-    { src: "/images/applications/plastic-industry/blades.webp",                        alt: "Industrial blades for plastics recycling"          },
-    { src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",                  alt: "Wire-cut machining process detail"                  },
-    { src: "/images/applications/plastic-industry/Raw%20Material%20Selection.webp",    alt: "Raw material selection for plastic processing"     },
-    { src: "/images/applications/plastic-industry/vacuum-heat-treatment.webp",          alt: "Vacuum heat treatment process"                     },
+    {
+      src: "/images/applications/plastic-industry/single-shredder-blades-04.webp",
+      alt: "Single shaft shredder blades for plastic",
+    },
+    {
+      src: "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",
+      alt: "Multi-shaft shredder blades for plastic recycling",
+    },
+    {
+      src: "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",
+      alt: "Four-shaft shredder blade assembly",
+    },
+    {
+      src: "/images/applications/plastic-industry/shredder-blades-03.webp",
+      alt: "Shredder blades for heavy-duty plastic recycling",
+    },
+    {
+      src: "/images/applications/plastic-industry/blades.webp",
+      alt: "Industrial blades for plastics recycling",
+    },
+    {
+      src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",
+      alt: "Wire-cut machining process detail",
+    },
+    {
+      src: "/images/applications/plastic-industry/Raw%20Material%20Selection.webp",
+      alt: "Raw material selection for plastic processing",
+    },
+    {
+      src: "/images/applications/plastic-industry/vacuum-heat-treatment.webp",
+      alt: "Vacuum heat treatment process",
+    },
   ],
 };
 
@@ -67,7 +91,10 @@ const PRODUCTS: IndustryProduct[] = blades
     isFlagship: index === 0, // First product is flagship
   }));
 
-const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
+const FILTER_CATEGORIES = [
+  "ALL",
+  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -75,7 +102,7 @@ const NARRATIVE: IndustryNarrative = {
   challengeBody:
     "Processing mixed polymers introduces severe abrasive wear. Standard blades degrade rapidly, " +
     "and traditional screen filtration forces frequent, costly line shutdowns.",
-  solutionTitle:  "Engineered to Run Longer.",
+  solutionTitle: "Engineered to Run Longer.",
   solutionBody:
     "Filterless Systems eliminate manual mesh replacements, while our extreme-hardness Tungsten " +
     "Carbide blades maximize continuous pelletizing (+30% Uptime).",
@@ -83,17 +110,52 @@ const NARRATIVE: IndustryNarrative = {
 };
 
 const SPECS: IndustrySpec[] = [
-  { label: "Edge Tolerance",  mainValue: "±0.002",          unit: "mm",  subtext: "100% CMM Verified"   },
-  { label: "Material Grade",  mainValue: "Tungsten\\nCarbide",            subtext: "YG8 / YG15 Alloys",  isTextual: true },
-  { label: "Core Hardness",   mainValue: "58–64",           unit: "HRC", subtext: "Vacuum Heat Treat"   },
-  { label: "Surface Finish",  mainValue: "Ra ≤ 0.4",        unit: "μm",  subtext: "Mirror Standard"     },
+  {
+    label: "Edge Tolerance",
+    mainValue: "±0.002",
+    unit: "mm",
+    subtext: "100% CMM Verified",
+  },
+  {
+    label: "Material Grade",
+    mainValue: "Tungsten\\nCarbide",
+    subtext: "YG8 / YG15 Alloys",
+    isTextual: true,
+  },
+  {
+    label: "Core Hardness",
+    mainValue: "58–64",
+    unit: "HRC",
+    subtext: "Vacuum Heat Treat",
+  },
+  {
+    label: "Surface Finish",
+    mainValue: "Ra ≤ 0.4",
+    unit: "μm",
+    subtext: "Mirror Standard",
+  },
 ];
 
 // ─── Materials ─────────────────────────────────────────────────────────────────
 const MATERIALS: IndustryMaterial[] = [
-  { name: "PET Bottle Flakes",     abrasion: "EXTREME",  grade: "Tungsten Carbide",  image: "/images/materials/pet-flakes.webp"    },
-  { name: "HDPE Thick-Wall Pipes", abrasion: "HIGH",     grade: "SKD-11 (Cr12MoV)", image: "/images/materials/hdpe-pipe.webp"     },
-  { name: "Mixed Post-Consumer",   abrasion: "VARIABLE", grade: "D2 / M2 HSS",      image: "/images/materials/mixed-plastic.webp" },
+  {
+    name: "PET Bottle Flakes",
+    abrasion: "EXTREME",
+    grade: "Tungsten Carbide",
+    image: "/images/materials/pet-flakes.webp",
+  },
+  {
+    name: "HDPE Thick-Wall Pipes",
+    abrasion: "HIGH",
+    grade: "SKD-11 (Cr12MoV)",
+    image: "/images/materials/hdpe-pipe.webp",
+  },
+  {
+    name: "Mixed Post-Consumer",
+    abrasion: "VARIABLE",
+    grade: "D2 / M2 HSS",
+    image: "/images/materials/mixed-plastic.webp",
+  },
 ];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -109,8 +171,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Single-Shaft Shredder Blades",
-        image: "https://sureay.com/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-        description: "Heavy-duty D2 and M2 HSS single-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
+        image:
+          "https://sureay.com/images/products/blades/11-4-2_metal-shear-blade_01.webp",
+        description:
+          "Heavy-duty D2 and M2 HSS single-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/twin-shaft-blades-recycling",
       },
@@ -121,8 +185,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Granulator Rotor Knives",
-        image: "https://sureay.com/images/products/blades/11-2-2_circular-blade_05.webp",
-        description: "High-wear Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and pelletizing extrusion lines.",
+        image:
+          "https://sureay.com/images/products/blades/11-2-2_circular-blade_05.webp",
+        description:
+          "High-wear Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and pelletizing extrusion lines.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/granulator-blades",
       },
@@ -147,15 +213,20 @@ export default function PlasticIndustry() {
       />
       <Helmet>
         <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(PAGE_SCHEMA)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero              data={HERO_DATA}                                       />
-        <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
-        <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}               />
-        <IndustryMaterialFocus     materials={MATERIALS}                                  />
+        <IndustryHero data={HERO_DATA} />
+        <IndustryToolingMatrix
+          products={PRODUCTS}
+          filterCategories={FILTER_CATEGORIES}
+        />
+        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+        <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />

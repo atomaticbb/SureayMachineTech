@@ -13,14 +13,15 @@ interface ProductCardProps {
   variant?: "grid" | "list" | "related";
 }
 
-export default function ProductCard({ blade, variant = "list" }: ProductCardProps) {
-
+export default function ProductCard({
+  blade,
+  variant = "list",
+}: ProductCardProps) {
   // ─── Grid variant: large image + title + desc + CTA ──────────────────────
   if (variant === "grid") {
     return (
       <Link href={blade.link}>
         <a className="group flex flex-col bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-200 cursor-pointer h-full">
-
           {/* Large image */}
           <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden flex-shrink-0">
             <img
@@ -31,7 +32,9 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
               width={400}
               height={300}
               className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
-              onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
+              onError={e => {
+                e.currentTarget.src = "/images/products/product.webp";
+              }}
             />
             {blade.badge && (
               <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black uppercase px-2 py-1 tracking-wider">
@@ -55,15 +58,24 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
               {blade.fullDescription || blade.description}
             </p>
             <div className="mt-auto">
-            <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
-              View Details
-              <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
+              <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
+                View Details
+                <svg
+                  className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-
         </a>
       </Link>
     );
@@ -83,16 +95,34 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
               width={80}
               height={80}
               className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300"
-              onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
+              onError={e => {
+                e.currentTarget.src = "/images/products/product.webp";
+              }}
             />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">{blade.categoryDisplay}</p>
-            <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#001f4d] transition-colors leading-snug mb-1">{blade.name}</h3>
-            <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">{blade.description}</p>
+            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">
+              {blade.categoryDisplay}
+            </p>
+            <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#001f4d] transition-colors leading-snug mb-1">
+              {blade.name}
+            </h3>
+            <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
+              {blade.description}
+            </p>
           </div>
-          <svg className="w-4 h-4 text-slate-400 group-hover:text-[#001f4d] flex-shrink-0 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <svg
+            className="w-4 h-4 text-slate-400 group-hover:text-[#001f4d] flex-shrink-0 group-hover:translate-x-1 transition-all"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </a>
       </Link>
@@ -104,9 +134,11 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
     <Link key={blade.id} href={blade.link}>
       <a className="group block bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-300 cursor-pointer">
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr]">
-
           {/* Left: Image */}
-          <div className="relative bg-slate-50 overflow-hidden" style={{ minHeight: "220px" }}>
+          <div
+            className="relative bg-slate-50 overflow-hidden"
+            style={{ minHeight: "220px" }}
+          >
             <img
               src={blade.image}
               alt={blade.name}
@@ -116,7 +148,9 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
               height={220}
               className="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500"
               style={{ minHeight: "220px" }}
-              onError={(e) => { e.currentTarget.src = "/images/products/product.webp"; }}
+              onError={e => {
+                e.currentTarget.src = "/images/products/product.webp";
+              }}
             />
             {blade.badge && (
               <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black uppercase px-2 py-1 tracking-wider">
@@ -143,45 +177,53 @@ export default function ProductCard({ blade, variant = "list" }: ProductCardProp
             </div>
 
             {/* Specs Grid — 3 items: material / hardness / application first */}
-            {blade.specs && blade.specs.length > 0 && (() => {
-              const PRIORITY = ["material", "hardness", "application"];
-              const sorted = [
-                ...PRIORITY.map((key) =>
-                  blade.specs!.find((s) => s.label.toLowerCase().includes(key))
-                ).filter(Boolean),
-                ...blade.specs.filter(
-                  (s) => !PRIORITY.some((key) => s.label.toLowerCase().includes(key))
-                ),
-              ].slice(0, 3) as { label: string; value: string }[];
+            {blade.specs &&
+              blade.specs.length > 0 &&
+              (() => {
+                const PRIORITY = ["material", "hardness", "application"];
+                const sorted = [
+                  ...PRIORITY.map(key =>
+                    blade.specs!.find(s => s.label.toLowerCase().includes(key))
+                  ).filter(Boolean),
+                  ...blade.specs.filter(
+                    s =>
+                      !PRIORITY.some(key => s.label.toLowerCase().includes(key))
+                  ),
+                ].slice(0, 3) as { label: string; value: string }[];
 
-              return (
-                <div className="grid grid-cols-3 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
-                  {sorted.map((spec, i) => (
-                    <div key={i}>
-                      <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">
-                        {spec.label}
-                      </p>
-                      <p className="text-sm font-bold text-slate-800 leading-tight">
-                        {spec.value}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              );
-            })()}
+                return (
+                  <div className="grid grid-cols-3 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
+                    {sorted.map((spec, i) => (
+                      <div key={i}>
+                        <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">
+                          {spec.label}
+                        </p>
+                        <p className="text-sm font-bold text-slate-800 leading-tight">
+                          {spec.value}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })()}
 
             {/* Click affordance arrow */}
             <div className="flex justify-end">
               <svg
                 className="w-5 h-5 text-slate-300 group-hover:text-[#65AAD6] group-hover:translate-x-1 transition-all duration-200"
-                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </div>
-
           </div>
-
         </div>
       </a>
     </Link>

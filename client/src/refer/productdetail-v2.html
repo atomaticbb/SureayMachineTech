@@ -1,404 +1,793 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="light" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Sureay Industrial - D2 Ø610 Log Saw Blade [v2 Demo]</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<script>
-    tailwind.config = {
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sureay Industrial - D2 Ø610 Log Saw Blade [v2 Demo]</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
         darkMode: "class",
         theme: {
-            extend: {
-                colors: {
-                    primary: "#1d4ed8",
-                    "background-light": "#f8fafc",
-                    "background-dark": "#0f172a",
-                    "industrial-slate": "#1e293b",
-                },
-                fontFamily: {
-                    display: ["Inter", "sans-serif"],
-                    mono: ["JetBrains Mono", "monospace"],
-                },
-                borderRadius: {
-                    DEFAULT: "0px",
-                },
+          extend: {
+            colors: {
+              primary: "#1d4ed8",
+              "background-light": "#f8fafc",
+              "background-dark": "#0f172a",
+              "industrial-slate": "#1e293b",
             },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            borderRadius: {
+              DEFAULT: "0px",
+            },
+          },
         },
-    };
-</script>
-<style>
-    body {
-        font-family: 'Inter', sans-serif;
-    }
-    .brutalist-border {
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .brutalist-border {
         border: 2px solid #000;
-    }
-    .dark .brutalist-border {
+      }
+      .dark .brutalist-border {
         border: 2px solid #334155;
-    }
-    /* Blueprint grid for CAD placeholder */
-    .blueprint-grid {
+      }
+      /* Blueprint grid for CAD placeholder */
+      .blueprint-grid {
         background-image:
-            linear-gradient(to right,  #80808018 1px, transparent 1px),
-            linear-gradient(to bottom, #80808018 1px, transparent 1px);
+          linear-gradient(to right, #80808018 1px, transparent 1px),
+          linear-gradient(to bottom, #80808018 1px, transparent 1px);
         background-size: 24px 24px;
-    }
-    .dark .blueprint-grid {
+      }
+      .dark .blueprint-grid {
         background-image:
-            linear-gradient(to right,  #ffffff0d 1px, transparent 1px),
-            linear-gradient(to bottom, #ffffff0d 1px, transparent 1px);
+          linear-gradient(to right, #ffffff0d 1px, transparent 1px),
+          linear-gradient(to bottom, #ffffff0d 1px, transparent 1px);
         background-size: 24px 24px;
-    }
-</style>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased transition-colors duration-200">
-
-<!-- ─── HEADER ────────────────────────────────────────────────────── -->
-<header class="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <div class="flex items-center gap-2">
-      <span class="material-icons text-primary text-3xl">precision_manufacturing</span>
-      <span class="text-2xl font-black tracking-tighter uppercase italic">Sureay Industrial</span>
-    </div>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-wider">
-      <a class="hover:text-primary transition-colors" href="#">Products</a>
-      <a class="hover:text-primary transition-colors" href="#">Solutions</a>
-      <a class="hover:text-primary transition-colors" href="#">Technical Support</a>
-      <a class="hover:text-primary transition-colors" href="#">About</a>
-    </nav>
-    <div class="flex items-center gap-4">
-      <div class="relative hidden lg:block">
-        <input class="bg-slate-100 dark:bg-slate-800 border-none px-4 py-2 text-xs font-bold w-64 focus:ring-2 focus:ring-primary uppercase" placeholder="SEARCH CATALOG..." type="text"/>
-      </div>
-      <button class="bg-primary text-white px-6 py-2.5 text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all">Get a Quote</button>
-    </div>
-  </div>
-</header>
-
-<!-- ─── MAIN ──────────────────────────────────────────────────────── -->
-<main class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12">
-
-  <!-- LEFT STICKY SIDEBAR -->
-  <aside class="w-full lg:w-64 flex-shrink-0 space-y-8 lg:sticky lg:top-24 lg:self-start">
-    <div>
-      <h3 class="text-xs font-black uppercase tracking-[0.2em] mb-4 text-slate-400 dark:text-slate-500 flex items-center gap-2">
-        <span class="w-2 h-2 bg-primary"></span> Categories
-      </h3>
-      <ul class="space-y-1">
-        <li><a class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#">Shredder Blades <span class="material-icons text-xs">chevron_right</span></a></li>
-        <li><a class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#">Granulator Knives <span class="material-icons text-xs">chevron_right</span></a></li>
-        <li><a class="flex items-center justify-between p-3 text-xs font-bold uppercase bg-primary text-white border border-primary" href="#">Log Saw Blades <span class="material-icons text-xs">chevron_right</span></a></li>
-        <li><a class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#">Pelletizer Knives <span class="material-icons text-xs">chevron_right</span></a></li>
-        <li><a class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="#">Custom Solutions <span class="material-icons text-xs">chevron_right</span></a></li>
-      </ul>
-    </div>
-    <div class="bg-industrial-slate p-6 text-white space-y-4">
-      <h4 class="text-xs font-black uppercase tracking-widest">Urgent Procurement Support</h4>
-      <button class="w-full bg-[#00ff88] text-black font-black py-3 text-xs flex items-center justify-center gap-2 uppercase">
-        <span class="material-icons text-sm">whatsapp</span> +1-800-SUREAY-PRO
-      </button>
-      <button class="w-full border border-white/20 hover:bg-white/10 text-white font-bold py-3 text-xs flex items-center justify-center gap-2 uppercase">
-        <span class="material-icons text-sm">mail</span> contact@sureay.com
-      </button>
-    </div>
-  </aside>
-
-  <!-- MAIN CONTENT -->
-  <section class="flex-1 space-y-16">
-
-    <!-- HERO BLOCK -->
-    <div class="space-y-8">
-      <nav class="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4">
-        Home / Industrial Blades / <span class="text-slate-900 dark:text-slate-100">D2 Ø610 Log Saw</span>
-      </nav>
-      <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-[10px] font-black uppercase border border-slate-200 dark:border-slate-700">AISI D2 / 1.2379</span>
-        <span class="px-3 py-1 bg-slate-900 text-white text-[10px] font-black uppercase">OEM MATCHED</span>
-        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-[10px] font-black uppercase border border-slate-200 dark:border-slate-700">24 HR EXPEDITED SHIPPING</span>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <!-- Product Image -->
-        <div class="relative group aspect-square bg-slate-200 dark:bg-slate-800 overflow-hidden border border-slate-200 dark:border-slate-700">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <img
-              alt="D2 Industrial Saw Blade"
-              class="object-cover w-full h-full mix-blend-multiply dark:mix-blend-normal opacity-90 dark:opacity-60"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2GYHprI__52ddwelUvvTRqUUCioCMdymwtIAP8BmSOcjo3HtmCudIdhnji-uoGoMm00DUhv7dycggngozKgNIo1l9gbHkHbNULv-WRU9yuPMEmKwkuYD9KHwKLfGqN-9cThjNi37G1MOGBxF9COfiKeHKmnKn0UkkCEjzesaYQ-RJQ_Re-OllQbUKuTdxv3OMKiGe15YHQbXorfhiY3GcMUG8878iuw0BKgh8T3j_lek46TCiyfSnkYRra7cCY3GWtDxa9V9pYakp"
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased transition-colors duration-200"
+  >
+    <!-- ─── HEADER ────────────────────────────────────────────────────── -->
+    <header
+      class="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 sticky top-0 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <span class="material-icons text-primary text-3xl"
+            >precision_manufacturing</span
+          >
+          <span class="text-2xl font-black tracking-tighter uppercase italic"
+            >Sureay Industrial</span
+          >
+        </div>
+        <nav
+          class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-wider"
+        >
+          <a class="hover:text-primary transition-colors" href="#">Products</a>
+          <a class="hover:text-primary transition-colors" href="#">Solutions</a>
+          <a class="hover:text-primary transition-colors" href="#"
+            >Technical Support</a
+          >
+          <a class="hover:text-primary transition-colors" href="#">About</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <div class="relative hidden lg:block">
+            <input
+              class="bg-slate-100 dark:bg-slate-800 border-none px-4 py-2 text-xs font-bold w-64 focus:ring-2 focus:ring-primary uppercase"
+              placeholder="SEARCH CATALOG..."
+              type="text"
             />
           </div>
-          <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black px-3 py-1 uppercase italic">01 // PREMIUM SERIES</div>
+          <button
+            class="bg-primary text-white px-6 py-2.5 text-xs font-black uppercase tracking-widest hover:brightness-110 transition-all"
+          >
+            Get a Quote
+          </button>
         </div>
+      </div>
+    </header>
 
-        <!-- Product Info -->
-        <div class="flex flex-col justify-between">
-          <div>
-            <h1 class="text-5xl lg:text-7xl font-black uppercase italic leading-none tracking-tighter mb-6">
-              D2 Ø610<br/>LOG SAW BLADE
-            </h1>
-            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm lg:text-base font-medium max-w-lg mb-8">
-              Engineered for high-volume tissue and towel converting. Our 9S Log Saw blades feature specialized heat-treatment processes for superior edge retention and minimal dust generation during high-speed operation.
-            </p>
-            <div class="grid grid-cols-2 gap-4 mb-8">
-              <div class="bg-slate-50 dark:bg-slate-900 p-4 border border-slate-200 dark:border-slate-800">
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Hardness</div>
-                <div class="text-xl font-black font-mono">60-62 HRC</div>
+    <!-- ─── MAIN ──────────────────────────────────────────────────────── -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-12">
+      <!-- LEFT STICKY SIDEBAR -->
+      <aside
+        class="w-full lg:w-64 flex-shrink-0 space-y-8 lg:sticky lg:top-24 lg:self-start"
+      >
+        <div>
+          <h3
+            class="text-xs font-black uppercase tracking-[0.2em] mb-4 text-slate-400 dark:text-slate-500 flex items-center gap-2"
+          >
+            <span class="w-2 h-2 bg-primary"></span> Categories
+          </h3>
+          <ul class="space-y-1">
+            <li>
+              <a
+                class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                href="#"
+                >Shredder Blades
+                <span class="material-icons text-xs">chevron_right</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                href="#"
+                >Granulator Knives
+                <span class="material-icons text-xs">chevron_right</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center justify-between p-3 text-xs font-bold uppercase bg-primary text-white border border-primary"
+                href="#"
+                >Log Saw Blades
+                <span class="material-icons text-xs">chevron_right</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                href="#"
+                >Pelletizer Knives
+                <span class="material-icons text-xs">chevron_right</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex items-center justify-between p-3 text-xs font-bold uppercase border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                href="#"
+                >Custom Solutions
+                <span class="material-icons text-xs">chevron_right</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="bg-industrial-slate p-6 text-white space-y-4">
+          <h4 class="text-xs font-black uppercase tracking-widest">
+            Urgent Procurement Support
+          </h4>
+          <button
+            class="w-full bg-[#00ff88] text-black font-black py-3 text-xs flex items-center justify-center gap-2 uppercase"
+          >
+            <span class="material-icons text-sm">whatsapp</span>
+            +1-800-SUREAY-PRO
+          </button>
+          <button
+            class="w-full border border-white/20 hover:bg-white/10 text-white font-bold py-3 text-xs flex items-center justify-center gap-2 uppercase"
+          >
+            <span class="material-icons text-sm">mail</span> contact@sureay.com
+          </button>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <section class="flex-1 space-y-16">
+        <!-- HERO BLOCK -->
+        <div class="space-y-8">
+          <nav
+            class="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-4"
+          >
+            Home / Industrial Blades /
+            <span class="text-slate-900 dark:text-slate-100"
+              >D2 Ø610 Log Saw</span
+            >
+          </nav>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-[10px] font-black uppercase border border-slate-200 dark:border-slate-700"
+              >AISI D2 / 1.2379</span
+            >
+            <span
+              class="px-3 py-1 bg-slate-900 text-white text-[10px] font-black uppercase"
+              >OEM MATCHED</span
+            >
+            <span
+              class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-[10px] font-black uppercase border border-slate-200 dark:border-slate-700"
+              >24 HR EXPEDITED SHIPPING</span
+            >
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- Product Image -->
+            <div
+              class="relative group aspect-square bg-slate-200 dark:bg-slate-800 overflow-hidden border border-slate-200 dark:border-slate-700"
+            >
+              <div class="absolute inset-0 flex items-center justify-center">
+                <img
+                  alt="D2 Industrial Saw Blade"
+                  class="object-cover w-full h-full mix-blend-multiply dark:mix-blend-normal opacity-90 dark:opacity-60"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2GYHprI__52ddwelUvvTRqUUCioCMdymwtIAP8BmSOcjo3HtmCudIdhnji-uoGoMm00DUhv7dycggngozKgNIo1l9gbHkHbNULv-WRU9yuPMEmKwkuYD9KHwKLfGqN-9cThjNi37G1MOGBxF9COfiKeHKmnKn0UkkCEjzesaYQ-RJQ_Re-OllQbUKuTdxv3OMKiGe15YHQbXorfhiY3GcMUG8878iuw0BKgh8T3j_lek46TCiyfSnkYRra7cCY3GWtDxa9V9pYakp"
+                />
               </div>
-              <div class="bg-slate-50 dark:bg-slate-900 p-4 border border-slate-200 dark:border-slate-800">
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Runout Tolerance</div>
-                <div class="text-xl font-black font-mono">± 0.005mm</div>
+              <div
+                class="absolute top-4 left-4 bg-primary text-white text-[10px] font-black px-3 py-1 uppercase italic"
+              >
+                01 // PREMIUM SERIES
               </div>
             </div>
-          </div>
-          <button class="bg-primary text-white px-8 py-5 text-sm font-black uppercase tracking-widest flex items-center justify-between hover:bg-blue-700 transition-all group">
-            Request Instant Quote
-            <span class="material-icons group-hover:translate-x-2 transition-transform">arrow_forward</span>
-          </button>
-        </div>
-      </div>
-    </div>
 
-    <!-- DARK APPLICATION BAND -->
-    <div class="bg-industrial-slate p-10 text-white relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rotate-45 translate-x-16 -translate-y-16"></div>
-      <div class="relative z-10">
-        <!-- ✦ FIX 1: removed italic, added tracking-tight -->
-        <h2 class="text-2xl font-black uppercase tracking-tight mb-4 flex items-center">
-          <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
-          Production Application &amp; Compatibility
-        </h2>
-        <p class="text-slate-400 text-sm leading-relaxed max-w-3xl mb-8">
-          Optimized for ultra-high-speed tissue and towel log sawing operations. Fully compatible with PCMC, Fabio Perini, and other leading converting machinery for clean, dust-free cuts. Our proprietary grinding technology ensures concentricity and dynamic balance at speeds up to 300 cuts/min.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <span class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5">Tissue Converting</span>
-          <span class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5">PCMC Compatible</span>
-          <span class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5">Fabio Perini Compatible</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── PRODUCTION PARAMETERS ───────────────────────────────── -->
-    <div class="space-y-8">
-      <!-- ✦ FIX 1: removed italic, thick block accent -->
-      <h3 class="text-xl font-black uppercase tracking-tight flex items-center">
-        <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
-        Production Parameters
-      </h3>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-
-        <!-- ✦ FIX 4: Blueprint grid CAD placeholder -->
-        <div class="border-2 border-slate-200 dark:border-slate-800 aspect-video flex items-center justify-center group relative blueprint-grid bg-slate-50 dark:bg-slate-900">
-          <div class="text-center relative z-10">
-            <span class="material-icons text-4xl text-slate-300 dark:text-slate-600 mb-2 block">architecture</span>
-            <div class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">Technical CAD Drawing DIG-01</div>
-          </div>
-          <!-- subtle corner cross-hair marks -->
-          <div class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-slate-300 dark:border-slate-600"></div>
-          <div class="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-slate-300 dark:border-slate-600"></div>
-          <div class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-slate-300 dark:border-slate-600"></div>
-          <div class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-slate-300 dark:border-slate-600"></div>
-          <div class="absolute bottom-4 right-4 bg-white dark:bg-slate-800 p-2 border border-slate-200 dark:border-slate-700">
-            <span class="material-icons text-sm cursor-pointer hover:text-primary">zoom_in</span>
+            <!-- Product Info -->
+            <div class="flex flex-col justify-between">
+              <div>
+                <h1
+                  class="text-5xl lg:text-7xl font-black uppercase italic leading-none tracking-tighter mb-6"
+                >
+                  D2 Ø610<br />LOG SAW BLADE
+                </h1>
+                <p
+                  class="text-slate-600 dark:text-slate-400 leading-relaxed text-sm lg:text-base font-medium max-w-lg mb-8"
+                >
+                  Engineered for high-volume tissue and towel converting. Our 9S
+                  Log Saw blades feature specialized heat-treatment processes
+                  for superior edge retention and minimal dust generation during
+                  high-speed operation.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                  <div
+                    class="bg-slate-50 dark:bg-slate-900 p-4 border border-slate-200 dark:border-slate-800"
+                  >
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1"
+                    >
+                      Hardness
+                    </div>
+                    <div class="text-xl font-black font-mono">60-62 HRC</div>
+                  </div>
+                  <div
+                    class="bg-slate-50 dark:bg-slate-900 p-4 border border-slate-200 dark:border-slate-800"
+                  >
+                    <div
+                      class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1"
+                    >
+                      Runout Tolerance
+                    </div>
+                    <div class="text-xl font-black font-mono">± 0.005mm</div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-primary text-white px-8 py-5 text-sm font-black uppercase tracking-widest flex items-center justify-between hover:bg-blue-700 transition-all group"
+              >
+                Request Instant Quote
+                <span
+                  class="material-icons group-hover:translate-x-2 transition-transform"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- Technical Parameters Table (already has dark header – preserved) -->
-        <div class="overflow-hidden border border-slate-200 dark:border-slate-800">
-          <table class="w-full text-left text-sm border-collapse">
-            <thead>
-              <tr class="bg-slate-900 text-white">
-                <th class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700">Specification</th>
-                <th class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700">Value</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
-              <tr class="bg-white dark:bg-slate-900">
-                <td class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800">Material</td>
-                <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">AISI D2 / 1.2379 High-Chrome</td>
-              </tr>
-              <tr class="bg-slate-50 dark:bg-slate-800/50">
-                <td class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800">Outer Diameter (Max)</td>
-                <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">1200 MM</td>
-              </tr>
-              <tr class="bg-white dark:bg-slate-900">
-                <td class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800">Hardness Range</td>
-                <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">58-62 HRC</td>
-              </tr>
-              <tr class="bg-slate-50 dark:bg-slate-800/50">
-                <td class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800">Blade Edge</td>
-                <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">Double Bevel / Single Bevel</td>
-              </tr>
-              <tr class="bg-white dark:bg-slate-900">
-                <td class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800">Surface Finish</td>
-                <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">Mirror Polished - Ra 0.2</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- ─── COMMON STANDARD DIMENSIONS ──────────────────────────── -->
-    <div class="space-y-6">
-      <!-- ✦ FIX 1: removed italic, thick block accent -->
-      <h3 class="text-xl font-black uppercase tracking-tight flex items-center">
-        <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
-        Common Standard Dimensions
-      </h3>
-
-      <!-- ✦ FIX 2: dark header row + solid cell borders -->
-      <div class="overflow-x-auto border border-slate-200 dark:border-slate-800">
-        <table class="w-full text-left text-sm border-collapse min-w-[600px]">
-          <thead>
-            <tr class="bg-slate-900 text-white">
-              <th class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700">OD (MM)</th>
-              <th class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700">ID (MM)</th>
-              <th class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700">Thickness (MM)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">610</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">68.26</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">4.76</td>
-            </tr>
-            <tr class="bg-slate-50 dark:bg-slate-800/30 hover:bg-slate-100 dark:hover:bg-slate-800/50">
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">610</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">82.55</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">4.76</td>
-            </tr>
-            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">810</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">68.26</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">5.00</td>
-            </tr>
-            <tr class="bg-slate-50 dark:bg-slate-800/30 hover:bg-slate-100 dark:hover:bg-slate-800/50">
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">1000</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">68.26</td>
-              <td class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800">5.50</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="text-[11px] font-bold text-slate-400 flex items-center gap-2">
-        <span class="material-icons text-sm">info</span>
-        * Custom OD, ID, and Thickness configurations available upon request. Lead times vary.
-      </p>
-    </div>
-
-    <!-- ─── ADVANTAGES (Brutalist Cards) ────────────────────────── -->
-    <!-- ✦ FIX 3: each point wrapped in a solid brutalist card -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 border-y border-slate-200 dark:border-slate-800 py-12">
-
-      <div class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20">
-        <span class="material-icons text-primary mb-4 block" style="font-size: 2rem;">verified</span>
-        <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">Precision Ground</h4>
-        <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed">Ultra-tight tolerances for high-speed stability and consistent cut quality.</p>
-      </div>
-
-      <div class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20">
-        <span class="material-icons text-primary mb-4 block" style="font-size: 2rem;">speed</span>
-        <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">High-Speed Edge</h4>
-        <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed">Reduced heat friction for cleaner tissue cuts with minimized thermal wear.</p>
-      </div>
-
-      <div class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20">
-        <span class="material-icons text-primary mb-4 block" style="font-size: 2rem;">eco</span>
-        <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">Low Dust Tech</h4>
-        <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed">Minimized debris for cleaner machinery environment and longer service cycles.</p>
-      </div>
-
-    </div>
-
-    <!-- ─── CUSTOM INQUIRY FORM ─────────────────────────────────── -->
-    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 relative">
-      <div class="absolute top-0 right-0 w-16 h-16 bg-slate-900 overflow-hidden">
-        <div class="absolute top-0 right-0 w-32 h-32 bg-white dark:bg-slate-900 rotate-45 translate-x-16 -translate-y-16"></div>
-      </div>
-      <div class="mb-10">
-        <!-- ✦ FIX 1: removed italic from Custom Inquiry header -->
-        <h2 class="text-3xl font-black uppercase tracking-tight mb-2 flex items-center">
-          <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
-          Custom Inquiry
-        </h2>
-        <p class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Pricing &amp; Technical Customization Request</p>
-      </div>
-      <form class="space-y-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="space-y-2">
-            <label class="text-[10px] font-black uppercase text-slate-500 tracking-widest">Full Name</label>
-            <input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary" placeholder="John Doe" type="text"/>
-          </div>
-          <div class="space-y-2">
-            <label class="text-[10px] font-black uppercase text-slate-500 tracking-widest">Company Email</label>
-            <input class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary" placeholder="procurement@corp.com" type="email"/>
+        <!-- DARK APPLICATION BAND -->
+        <div
+          class="bg-industrial-slate p-10 text-white relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-primary/20 rotate-45 translate-x-16 -translate-y-16"
+          ></div>
+          <div class="relative z-10">
+            <!-- ✦ FIX 1: removed italic, added tracking-tight -->
+            <h2
+              class="text-2xl font-black uppercase tracking-tight mb-4 flex items-center"
+            >
+              <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
+              Production Application &amp; Compatibility
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-3xl mb-8">
+              Optimized for ultra-high-speed tissue and towel log sawing
+              operations. Fully compatible with PCMC, Fabio Perini, and other
+              leading converting machinery for clean, dust-free cuts. Our
+              proprietary grinding technology ensures concentricity and dynamic
+              balance at speeds up to 300 cuts/min.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <span
+                class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5"
+                >Tissue Converting</span
+              >
+              <span
+                class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5"
+                >PCMC Compatible</span
+              >
+              <span
+                class="px-4 py-2 border border-white/20 text-[10px] font-black uppercase tracking-widest bg-white/5"
+                >Fabio Perini Compatible</span
+              >
+            </div>
           </div>
         </div>
-        <div class="space-y-2">
-          <label class="text-[10px] font-black uppercase text-slate-500 tracking-widest">Application Details</label>
-          <textarea class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary" placeholder="Describe your machine model and material specs..." rows="4"></textarea>
-        </div>
-        <div class="space-y-2">
-          <label class="text-[10px] font-black uppercase text-slate-500 tracking-widest">CAD Drawings (Optional - Max 25MB)</label>
-          <div class="border-2 border-dashed border-slate-200 dark:border-slate-700 p-10 flex flex-col items-center justify-center gap-4 bg-slate-50/50 dark:bg-slate-800/30 group hover:border-primary transition-colors cursor-pointer">
-            <span class="material-icons text-slate-300 dark:text-slate-600 group-hover:text-primary transition-colors">cloud_upload</span>
-            <span class="text-[10px] font-black uppercase text-slate-400">Click to browse or drag files (PNG, PDF, STEP)</span>
+
+        <!-- ─── PRODUCTION PARAMETERS ───────────────────────────────── -->
+        <div class="space-y-8">
+          <!-- ✦ FIX 1: removed italic, thick block accent -->
+          <h3
+            class="text-xl font-black uppercase tracking-tight flex items-center"
+          >
+            <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
+            Production Parameters
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- ✦ FIX 4: Blueprint grid CAD placeholder -->
+            <div
+              class="border-2 border-slate-200 dark:border-slate-800 aspect-video flex items-center justify-center group relative blueprint-grid bg-slate-50 dark:bg-slate-900"
+            >
+              <div class="text-center relative z-10">
+                <span
+                  class="material-icons text-4xl text-slate-300 dark:text-slate-600 mb-2 block"
+                  >architecture</span
+                >
+                <div
+                  class="text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest"
+                >
+                  Technical CAD Drawing DIG-01
+                </div>
+              </div>
+              <!-- subtle corner cross-hair marks -->
+              <div
+                class="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-slate-300 dark:border-slate-600"
+              ></div>
+              <div
+                class="absolute top-3 right-3 w-4 h-4 border-t-2 border-r-2 border-slate-300 dark:border-slate-600"
+              ></div>
+              <div
+                class="absolute bottom-3 left-3 w-4 h-4 border-b-2 border-l-2 border-slate-300 dark:border-slate-600"
+              ></div>
+              <div
+                class="absolute bottom-3 right-3 w-4 h-4 border-b-2 border-r-2 border-slate-300 dark:border-slate-600"
+              ></div>
+              <div
+                class="absolute bottom-4 right-4 bg-white dark:bg-slate-800 p-2 border border-slate-200 dark:border-slate-700"
+              >
+                <span
+                  class="material-icons text-sm cursor-pointer hover:text-primary"
+                  >zoom_in</span
+                >
+              </div>
+            </div>
+
+            <!-- Technical Parameters Table (already has dark header – preserved) -->
+            <div
+              class="overflow-hidden border border-slate-200 dark:border-slate-800"
+            >
+              <table class="w-full text-left text-sm border-collapse">
+                <thead>
+                  <tr class="bg-slate-900 text-white">
+                    <th
+                      class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700"
+                    >
+                      Specification
+                    </th>
+                    <th
+                      class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700"
+                    >
+                      Value
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+                  <tr class="bg-white dark:bg-slate-900">
+                    <td
+                      class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800"
+                    >
+                      Material
+                    </td>
+                    <td
+                      class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                    >
+                      AISI D2 / 1.2379 High-Chrome
+                    </td>
+                  </tr>
+                  <tr class="bg-slate-50 dark:bg-slate-800/50">
+                    <td
+                      class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800"
+                    >
+                      Outer Diameter (Max)
+                    </td>
+                    <td
+                      class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                    >
+                      1200 MM
+                    </td>
+                  </tr>
+                  <tr class="bg-white dark:bg-slate-900">
+                    <td
+                      class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800"
+                    >
+                      Hardness Range
+                    </td>
+                    <td
+                      class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                    >
+                      58-62 HRC
+                    </td>
+                  </tr>
+                  <tr class="bg-slate-50 dark:bg-slate-800/50">
+                    <td
+                      class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800"
+                    >
+                      Blade Edge
+                    </td>
+                    <td
+                      class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                    >
+                      Double Bevel / Single Bevel
+                    </td>
+                  </tr>
+                  <tr class="bg-white dark:bg-slate-900">
+                    <td
+                      class="p-4 font-bold text-[10px] uppercase text-slate-500 border border-slate-200 dark:border-slate-800"
+                    >
+                      Surface Finish
+                    </td>
+                    <td
+                      class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                    >
+                      Mirror Polished - Ra 0.2
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="relative pt-4">
-          <button class="w-full bg-slate-900 dark:bg-primary text-white font-black py-5 uppercase tracking-[0.3em] hover:brightness-110 transition-all text-xs">
-            Send Inquiry
-          </button>
-          <div class="absolute bottom-[-10px] left-2 right-[-8px] h-full bg-primary/10 -z-10"></div>
+
+        <!-- ─── COMMON STANDARD DIMENSIONS ──────────────────────────── -->
+        <div class="space-y-6">
+          <!-- ✦ FIX 1: removed italic, thick block accent -->
+          <h3
+            class="text-xl font-black uppercase tracking-tight flex items-center"
+          >
+            <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
+            Common Standard Dimensions
+          </h3>
+
+          <!-- ✦ FIX 2: dark header row + solid cell borders -->
+          <div
+            class="overflow-x-auto border border-slate-200 dark:border-slate-800"
+          >
+            <table
+              class="w-full text-left text-sm border-collapse min-w-[600px]"
+            >
+              <thead>
+                <tr class="bg-slate-900 text-white">
+                  <th
+                    class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700"
+                  >
+                    OD (MM)
+                  </th>
+                  <th
+                    class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700"
+                  >
+                    ID (MM)
+                  </th>
+                  <th
+                    class="p-4 font-black uppercase text-[10px] tracking-widest border border-slate-700"
+                  >
+                    Thickness (MM)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    610
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    68.26
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    4.76
+                  </td>
+                </tr>
+                <tr
+                  class="bg-slate-50 dark:bg-slate-800/30 hover:bg-slate-100 dark:hover:bg-slate-800/50"
+                >
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    610
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    82.55
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    4.76
+                  </td>
+                </tr>
+                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    810
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    68.26
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    5.00
+                  </td>
+                </tr>
+                <tr
+                  class="bg-slate-50 dark:bg-slate-800/30 hover:bg-slate-100 dark:hover:bg-slate-800/50"
+                >
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    1000
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    68.26
+                  </td>
+                  <td
+                    class="p-4 font-mono font-bold border border-slate-200 dark:border-slate-800"
+                  >
+                    5.50
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p
+            class="text-[11px] font-bold text-slate-400 flex items-center gap-2"
+          >
+            <span class="material-icons text-sm">info</span>
+            * Custom OD, ID, and Thickness configurations available upon
+            request. Lead times vary.
+          </p>
         </div>
-      </form>
-    </div>
 
-  </section>
-</main>
+        <!-- ─── ADVANTAGES (Brutalist Cards) ────────────────────────── -->
+        <!-- ✦ FIX 3: each point wrapped in a solid brutalist card -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 border-y border-slate-200 dark:border-slate-800 py-12"
+        >
+          <div
+            class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20"
+          >
+            <span
+              class="material-icons text-primary mb-4 block"
+              style="font-size: 2rem"
+              >verified</span
+            >
+            <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">
+              Precision Ground
+            </h4>
+            <p
+              class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed"
+            >
+              Ultra-tight tolerances for high-speed stability and consistent cut
+              quality.
+            </p>
+          </div>
 
-<!-- ─── FOOTER ────────────────────────────────────────────────────── -->
-<footer class="bg-slate-900 text-white py-16 mt-20">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-    <div class="md:col-span-2 space-y-6">
-      <div class="flex items-center gap-2">
-        <span class="material-icons text-primary text-2xl">precision_manufacturing</span>
-        <span class="text-xl font-black uppercase italic">Sureay Industrial</span>
+          <div
+            class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20"
+          >
+            <span
+              class="material-icons text-primary mb-4 block"
+              style="font-size: 2rem"
+              >speed</span
+            >
+            <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">
+              High-Speed Edge
+            </h4>
+            <p
+              class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed"
+            >
+              Reduced heat friction for cleaner tissue cuts with minimized
+              thermal wear.
+            </p>
+          </div>
+
+          <div
+            class="border border-slate-200 dark:border-slate-800 p-6 bg-slate-50/20 dark:bg-slate-800/20"
+          >
+            <span
+              class="material-icons text-primary mb-4 block"
+              style="font-size: 2rem"
+              >eco</span
+            >
+            <h4 class="font-black uppercase text-[11px] tracking-widest mb-2">
+              Low Dust Tech
+            </h4>
+            <p
+              class="text-[11px] text-slate-500 dark:text-slate-400 font-medium leading-relaxed"
+            >
+              Minimized debris for cleaner machinery environment and longer
+              service cycles.
+            </p>
+          </div>
+        </div>
+
+        <!-- ─── CUSTOM INQUIRY FORM ─────────────────────────────────── -->
+        <div
+          class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-10 relative"
+        >
+          <div
+            class="absolute top-0 right-0 w-16 h-16 bg-slate-900 overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-white dark:bg-slate-900 rotate-45 translate-x-16 -translate-y-16"
+            ></div>
+          </div>
+          <div class="mb-10">
+            <!-- ✦ FIX 1: removed italic from Custom Inquiry header -->
+            <h2
+              class="text-3xl font-black uppercase tracking-tight mb-2 flex items-center"
+            >
+              <div class="w-3 h-8 bg-primary mr-4 flex-shrink-0"></div>
+              Custom Inquiry
+            </h2>
+            <p
+              class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400"
+            >
+              Pricing &amp; Technical Customization Request
+            </p>
+          </div>
+          <form class="space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="space-y-2">
+                <label
+                  class="text-[10px] font-black uppercase text-slate-500 tracking-widest"
+                  >Full Name</label
+                >
+                <input
+                  class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary"
+                  placeholder="John Doe"
+                  type="text"
+                />
+              </div>
+              <div class="space-y-2">
+                <label
+                  class="text-[10px] font-black uppercase text-slate-500 tracking-widest"
+                  >Company Email</label
+                >
+                <input
+                  class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary"
+                  placeholder="procurement@corp.com"
+                  type="email"
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-[10px] font-black uppercase text-slate-500 tracking-widest"
+                >Application Details</label
+              >
+              <textarea
+                class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 p-4 text-xs font-bold uppercase focus:ring-primary focus:border-primary"
+                placeholder="Describe your machine model and material specs..."
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="space-y-2">
+              <label
+                class="text-[10px] font-black uppercase text-slate-500 tracking-widest"
+                >CAD Drawings (Optional - Max 25MB)</label
+              >
+              <div
+                class="border-2 border-dashed border-slate-200 dark:border-slate-700 p-10 flex flex-col items-center justify-center gap-4 bg-slate-50/50 dark:bg-slate-800/30 group hover:border-primary transition-colors cursor-pointer"
+              >
+                <span
+                  class="material-icons text-slate-300 dark:text-slate-600 group-hover:text-primary transition-colors"
+                  >cloud_upload</span
+                >
+                <span class="text-[10px] font-black uppercase text-slate-400"
+                  >Click to browse or drag files (PNG, PDF, STEP)</span
+                >
+              </div>
+            </div>
+            <div class="relative pt-4">
+              <button
+                class="w-full bg-slate-900 dark:bg-primary text-white font-black py-5 uppercase tracking-[0.3em] hover:brightness-110 transition-all text-xs"
+              >
+                Send Inquiry
+              </button>
+              <div
+                class="absolute bottom-[-10px] left-2 right-[-8px] h-full bg-primary/10 -z-10"
+              ></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+    <footer class="bg-slate-900 text-white py-16 mt-20">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12"
+      >
+        <div class="md:col-span-2 space-y-6">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-primary text-2xl"
+              >precision_manufacturing</span
+            >
+            <span class="text-xl font-black uppercase italic"
+              >Sureay Industrial</span
+            >
+          </div>
+          <p
+            class="text-slate-400 text-xs leading-relaxed max-w-sm uppercase font-bold tracking-tight"
+          >
+            Global leader in high-performance industrial cutting tools and
+            custom blade engineering. Trusted by manufacturing sectors across
+            120 countries since 1988.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="text-[10px] font-black uppercase tracking-widest text-primary mb-6"
+          >
+            Contact
+          </h5>
+          <ul class="text-xs space-y-4 font-bold uppercase tracking-wide">
+            <li>Phone: +1 (800) SUREAY-PRO</li>
+            <li>HQ: 1200 Industrial Way, North Carolina, USA</li>
+            <li>Region: 21 Botol Street, Beijing, China</li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="text-[10px] font-black uppercase tracking-widest text-primary mb-6"
+          >
+            Certifications
+          </h5>
+          <div class="flex gap-4 opacity-50">
+            <span class="material-icons">verified</span>
+            <span class="material-icons">workspace_premium</span>
+            <span class="material-icons">public</span>
+          </div>
+        </div>
       </div>
-      <p class="text-slate-400 text-xs leading-relaxed max-w-sm uppercase font-bold tracking-tight">
-        Global leader in high-performance industrial cutting tools and custom blade engineering. Trusted by manufacturing sectors across 120 countries since 1988.
-      </p>
-    </div>
-    <div>
-      <h5 class="text-[10px] font-black uppercase tracking-widest text-primary mb-6">Contact</h5>
-      <ul class="text-xs space-y-4 font-bold uppercase tracking-wide">
-        <li>Phone: +1 (800) SUREAY-PRO</li>
-        <li>HQ: 1200 Industrial Way, North Carolina, USA</li>
-        <li>Region: 21 Botol Street, Beijing, China</li>
-      </ul>
-    </div>
-    <div>
-      <h5 class="text-[10px] font-black uppercase tracking-widest text-primary mb-6">Certifications</h5>
-      <div class="flex gap-4 opacity-50">
-        <span class="material-icons">verified</span>
-        <span class="material-icons">workspace_premium</span>
-        <span class="material-icons">public</span>
+      <div
+        class="max-w-7xl mx-auto px-6 pt-16 mt-16 border-t border-white/5 flex flex-col md:row items-center justify-between gap-4"
+      >
+        <span
+          class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]"
+          >© 2024 Sureay Industrial Group LLC. All Rights Reserved.</span
+        >
+        <div
+          class="flex gap-8 text-[9px] font-bold text-slate-500 uppercase tracking-widest"
+        >
+          <a class="hover:text-white" href="#">Privacy Policy</a>
+          <a class="hover:text-white" href="#">Terms of Service</a>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto px-6 pt-16 mt-16 border-t border-white/5 flex flex-col md:row items-center justify-between gap-4">
-    <span class="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">© 2024 Sureay Industrial Group LLC. All Rights Reserved.</span>
-    <div class="flex gap-8 text-[9px] font-bold text-slate-500 uppercase tracking-widest">
-      <a class="hover:text-white" href="#">Privacy Policy</a>
-      <a class="hover:text-white" href="#">Terms of Service</a>
-    </div>
-  </div>
-</footer>
-
-</body>
+    </footer>
+  </body>
 </html>

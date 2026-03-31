@@ -1,36 +1,36 @@
 import { Helmet } from "react-helmet-async";
 
-const BRAND    = "Sureay Machinery";
+const BRAND = "Sureay Machinery";
 const BASE_URL = "https://sureay.com";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 export interface ProductData {
-  name:        string;
-  image:       string;   // relative (/images/…) or absolute
+  name: string;
+  image: string; // relative (/images/…) or absolute
   description: string;
-  sku?:        string;
-  mpn?:        string;
-  brand?:      string;   // defaults to "Sureay"
+  sku?: string;
+  mpn?: string;
+  brand?: string; // defaults to "Sureay"
   offers?: {
-    lowPrice:  number;
+    lowPrice: number;
     highPrice: number;
   };
 }
 
 export interface BreadcrumbItem {
   name: string;
-  url:  string;
+  url: string;
 }
 
 export interface SEOProps {
-  title:        string;
-  description:  string;
+  title: string;
+  description: string;
   canonicalUrl?: string;
-  productData?:  ProductData;
-  noIndex?:      boolean;
-  keywords?:     string;
-  breadcrumbs?:  BreadcrumbItem[];
+  productData?: ProductData;
+  noIndex?: boolean;
+  keywords?: string;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -56,50 +56,50 @@ export default function SEO({
   keywords,
   breadcrumbs,
 }: SEOProps) {
-  const fullTitle      = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
-  const canonicalHref  = canonicalUrl ? abs(canonicalUrl) : undefined;
-  const ogImage        = productData ? abs(productData.image) : undefined;
+  const fullTitle = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
+  const canonicalHref = canonicalUrl ? abs(canonicalUrl) : undefined;
+  const ogImage = productData ? abs(productData.image) : undefined;
 
   const jsonLd = productData
     ? {
         "@context": "https://schema.org",
-        "@type":    "Product",
-        name:        productData.name,
-        image:       [abs(productData.image)],
+        "@type": "Product",
+        name: productData.name,
+        image: [abs(productData.image)],
         description: productData.description,
         ...(productData.sku && { sku: productData.sku }),
         ...(productData.mpn && { mpn: productData.mpn }),
         brand: {
           "@type": "Brand",
-          name:    productData.brand ?? "Sureay",
+          name: productData.brand ?? "Sureay",
         },
         ...(productData.offers && {
           offers: {
-            "@type":        "AggregateOffer",
-            lowPrice:        productData.offers.lowPrice,
-            highPrice:       productData.offers.highPrice,
-            priceCurrency:  "USD",
-            offerCount:     "1",
-            availability:   "https://schema.org/PreOrder",
+            "@type": "AggregateOffer",
+            lowPrice: productData.offers.lowPrice,
+            highPrice: productData.offers.highPrice,
+            priceCurrency: "USD",
+            offerCount: "1",
+            availability: "https://schema.org/InStock",
             shippingDetails: {
               "@type": "OfferShippingDetails",
               shippingDestination: {
-                "@type":        "DefinedRegion",
+                "@type": "DefinedRegion",
                 addressCountry: "US",
               },
               deliveryTime: {
                 "@type": "ShippingDeliveryTime",
                 handlingTime: {
-                  "@type":   "QuantitativeValue",
-                  minValue:  15,
-                  maxValue:  25,
-                  unitCode:  "DAY",
+                  "@type": "QuantitativeValue",
+                  minValue: 15,
+                  maxValue: 25,
+                  unitCode: "DAY",
                 },
                 transitTime: {
-                  "@type":   "QuantitativeValue",
-                  minValue:  5,
-                  maxValue:  12,
-                  unitCode:  "DAY",
+                  "@type": "QuantitativeValue",
+                  minValue: 5,
+                  maxValue: 12,
+                  unitCode: "DAY",
                 },
               },
             },
@@ -111,12 +111,12 @@ export default function SEO({
   const breadcrumbLd = breadcrumbs?.length
     ? {
         "@context": "https://schema.org",
-        "@type":    "BreadcrumbList",
+        "@type": "BreadcrumbList",
         itemListElement: breadcrumbs.map((item, i) => ({
-          "@type":    "ListItem",
-          position:   i + 1,
-          name:       item.name,
-          item:       abs(item.url),
+          "@type": "ListItem",
+          position: i + 1,
+          name: item.name,
+          item: abs(item.url),
         })),
       }
     : null;
@@ -131,17 +131,15 @@ export default function SEO({
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
 
       {/* Open Graph */}
-      <meta property="og:type"        content={productData ? "product" : "website"} />
-      <meta property="og:title"       content={fullTitle} />
+      <meta property="og:type" content={productData ? "product" : "website"} />
+      <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:site_name"   content={BRAND} />
-      {canonicalHref && <meta property="og:url"   content={canonicalHref} />}
-      {ogImage        && <meta property="og:image" content={ogImage} />}
+      <meta property="og:site_name" content={BRAND} />
+      {canonicalHref && <meta property="og:url" content={canonicalHref} />}
+      {ogImage && <meta property="og:image" content={ogImage} />}
 
       {/* JSON-LD Product schema */}
-      {jsonLd && (
-        <script type="application/ld+json">{safeJson(jsonLd)}</script>
-      )}
+      {jsonLd && <script type="application/ld+json">{safeJson(jsonLd)}</script>}
 
       {/* JSON-LD Breadcrumb schema */}
       {breadcrumbLd && (

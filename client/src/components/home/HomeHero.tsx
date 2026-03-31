@@ -31,9 +31,10 @@ export default function HomeHero() {
           </h1>
 
           <p className="max-w-2xl text-base md:text-lg text-white/75 leading-relaxed mb-8">
-            Sureay manufactures shredder blades, granulator knives, slitter tooling,
-            and custom machine knives for plastic recycling, metal processing, and
-            paper converting lines with OEM-fit precision and global delivery support.
+            Sureay manufactures shredder blades, granulator knives, slitter
+            tooling, and custom machine knives for plastic recycling, metal
+            processing, and paper converting lines with OEM-fit precision and
+            global delivery support.
           </p>
 
           {/* CTAs */}

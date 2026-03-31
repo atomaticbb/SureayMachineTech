@@ -116,25 +116,25 @@ SureayMachineTech/
 
 ### Public
 
-| Route | Page |
-|---|---|
-| `/` | Home — hero, authority carousel, manufacturing blocks, product tab ecosystem, news grid, RFQ form |
-| `/products` | Product list — filterable catalog by category and industry sector |
-| `/products/:id` | Product detail — full spec sheet, dimensions table, gallery, trust bar, CTA |
-| `/plastic-industry` | Plastic recycling industry landing page |
-| `/metal-industry` | Metal processing industry landing page |
-| `/paper-industry` | Paper/tissue converting industry landing page |
-| `/about` | Company story and manufacturing capabilities |
-| `/contact` | Contact form with DXF file upload and RFQ |
-| `/news` | Technical articles grid |
-| `/news/:id` | Individual article page |
+| Route               | Page                                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------------------- |
+| `/`                 | Home — hero, authority carousel, manufacturing blocks, product tab ecosystem, news grid, RFQ form |
+| `/products`         | Product list — filterable catalog by category and industry sector                                 |
+| `/products/:id`     | Product detail — full spec sheet, dimensions table, gallery, trust bar, CTA                       |
+| `/plastic-industry` | Plastic recycling industry landing page                                                           |
+| `/metal-industry`   | Metal processing industry landing page                                                            |
+| `/paper-industry`   | Paper/tissue converting industry landing page                                                     |
+| `/about`            | Company story and manufacturing capabilities                                                      |
+| `/contact`          | Contact form with DXF file upload and RFQ                                                         |
+| `/news`             | Technical articles grid                                                                           |
+| `/news/:id`         | Individual article page                                                                           |
 
 ### Admin (JWT protected)
 
-| Route | Description |
-|---|---|
-| `/admin/login` | Admin login |
-| `/admin` | Dashboard — contacts, inquiries, follow-ups, analytics |
+| Route          | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `/admin/login` | Admin login                                            |
+| `/admin`       | Dashboard — contacts, inquiries, follow-ups, analytics |
 
 ## Development
 
@@ -242,41 +242,41 @@ RESEND_API_KEY=...
 
 ### Frontend
 
-| Technology | Purpose |
-|---|---|
-| React 19 | UI framework |
-| TypeScript | Type safety |
-| Vite 7 | Build tool and dev server |
-| Tailwind CSS v4 | Utility-first styling |
-| shadcn/ui | Component library (Radix UI) |
-| Framer Motion | Animations |
-| Wouter | Lightweight SPA routing |
-| React Hook Form | Form handling |
-| Zod | Schema validation |
-| react-helmet-async | Per-page SEO meta + JSON-LD |
-| Lucide React | Icons |
+| Technology         | Purpose                      |
+| ------------------ | ---------------------------- |
+| React 19           | UI framework                 |
+| TypeScript         | Type safety                  |
+| Vite 7             | Build tool and dev server    |
+| Tailwind CSS v4    | Utility-first styling        |
+| shadcn/ui          | Component library (Radix UI) |
+| Framer Motion      | Animations                   |
+| Wouter             | Lightweight SPA routing      |
+| React Hook Form    | Form handling                |
+| Zod                | Schema validation            |
+| react-helmet-async | Per-page SEO meta + JSON-LD  |
+| Lucide React       | Icons                        |
 
 ### Backend
 
-| Technology | Purpose |
-|---|---|
-| Express 4 | Web framework |
-| TypeScript | Type safety |
-| Prisma 6 + SQLite | ORM and database |
-| Helmet.js | HTTP security headers |
-| Resend | Transactional email |
-| JWT + bcryptjs | Admin authentication |
-| Zod | Request validation |
+| Technology        | Purpose               |
+| ----------------- | --------------------- |
+| Express 4         | Web framework         |
+| TypeScript        | Type safety           |
+| Prisma 6 + SQLite | ORM and database      |
+| Helmet.js         | HTTP security headers |
+| Resend            | Transactional email   |
+| JWT + bcryptjs    | Admin authentication  |
+| Zod               | Request validation    |
 
 ### Infrastructure
 
-| Technology | Purpose |
-|---|---|
-| Puppeteer | SSG prerendering for SEO |
-| Docker | Containerization |
-| Coolify | Self-hosted deployment platform |
-| Google Analytics 4 | Analytics with Consent Mode v2 |
-| pnpm 10 | Package manager |
+| Technology         | Purpose                         |
+| ------------------ | ------------------------------- |
+| Puppeteer          | SSG prerendering for SEO        |
+| Docker             | Containerization                |
+| Coolify            | Self-hosted deployment platform |
+| Google Analytics 4 | Analytics with Consent Mode v2  |
+| pnpm 10            | Package manager                 |
 
 ## Architecture
 

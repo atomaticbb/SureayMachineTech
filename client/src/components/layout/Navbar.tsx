@@ -16,18 +16,14 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  ChevronDown,
-  ChevronRight,
-  Upload,
-} from "lucide-react";
+import { ChevronDown, ChevronRight, Upload } from "lucide-react";
 import { INDUSTRY_MENU_DATA } from "./MegaMenu";
 
 // ── Static nav links ─────────────────────────────────────────────────────────
 const NAV_LINKS = [
-  { label: "NEWS",       path: "/news"    },
-  { label: "ABOUT US",  path: "/about"   },
-  { label: "CONTACT US",path: "/contact" },
+  { label: "NEWS", path: "/news" },
+  { label: "ABOUT US", path: "/about" },
+  { label: "CONTACT US", path: "/contact" },
 ];
 
 // ── Product category groups for mobile "By Category" panel ───────────────────
@@ -35,29 +31,56 @@ const PRODUCT_GROUPS = [
   {
     group: "CUTTING TOOLING",
     items: [
-      { label: "Circular Slitting Knives",    href: "/products/rotary-slitter-knives"             },
-      { label: "Metal Foil & Strip Slitters", href: "/products/metal-foil-strip-slitter-knives"    },
-      { label: "Coil Slitting Knives",       href: "/products/metal-coil-slitting-knives"         },
-      { label: "Metal Shear Knives",           href: "/products/metal-shear-knives"                },
-      { label: "Cold Circular Saw Blades",    href: "/products/metal-cold-saw-blades"              },
+      {
+        label: "Circular Slitting Knives",
+        href: "/products/rotary-slitter-knives",
+      },
+      {
+        label: "Metal Foil & Strip Slitters",
+        href: "/products/metal-foil-strip-slitter-knives",
+      },
+      {
+        label: "Coil Slitting Knives",
+        href: "/products/metal-coil-slitting-knives",
+      },
+      { label: "Metal Shear Knives", href: "/products/metal-shear-knives" },
+      {
+        label: "Cold Circular Saw Blades",
+        href: "/products/metal-cold-saw-blades",
+      },
     ],
   },
   {
     group: "SHREDDING & RECYCLING",
     items: [
-      { label: "Twin-Shaft Shredder Blades", href: "/products/twin-shaft-blades-recycling" },
-      { label: "Tire Shredder Blades",       href: "/products/tire-shredder-blades"         },
-      { label: "Granulator Knives",          href: "/products/granulator-blades"           },
-      { label: "Single-Shaft Rotor Inserts", href: "/products/single-shaft-rotor-inserts"  },
-      { label: "Single-Shaft Bed Knives",    href: "/products/single-shaft-bed-knives"     },
+      {
+        label: "Twin-Shaft Shredder Blades",
+        href: "/products/twin-shaft-blades-recycling",
+      },
+      { label: "Tire Shredder Blades", href: "/products/tire-shredder-blades" },
+      { label: "Granulator Knives", href: "/products/granulator-blades" },
+      {
+        label: "Single-Shaft Rotor Inserts",
+        href: "/products/single-shaft-rotor-inserts",
+      },
+      {
+        label: "Single-Shaft Bed Knives",
+        href: "/products/single-shaft-bed-knives",
+      },
     ],
   },
   {
     group: "PAPER CONVERTING",
     items: [
-      { label: "Tissue Log Saw Blades",    href: "/products/tissue-log-saw-blades"    },
-      { label: "Paper Cutting Blades",     href: "/products/paper-cutting-blades"     },
-      { label: "Three-Knife Trimmer",      href: "/products/three-knife-trimmer-blades" },
+      {
+        label: "Tissue Log Saw Blades",
+        href: "/products/tissue-log-saw-blades",
+      },
+      { label: "Paper Cutting Blades", href: "/products/paper-cutting-blades" },
+      {
+        label: "Three-Knife Trimmer",
+        href: "/products/three-knife-trimmer-blades",
+      },
     ],
   },
 ];
@@ -65,19 +88,73 @@ const PRODUCT_GROUPS = [
 // ── Sharp icons ───────────────────────────────────────────────────────────────
 function HamburgerIcon({ className }: { className?: string }) {
   return (
-    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" className={className} aria-hidden="true">
-      <line x1="0" y1="1"  x2="22" y2="1"  stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
-      <line x1="0" y1="8"  x2="22" y2="8"  stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
-      <line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+    <svg
+      width="22"
+      height="16"
+      viewBox="0 0 22 16"
+      fill="none"
+      className={className}
+      aria-hidden="true"
+    >
+      <line
+        x1="0"
+        y1="1"
+        x2="22"
+        y2="1"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="square"
+      />
+      <line
+        x1="0"
+        y1="8"
+        x2="22"
+        y2="8"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="square"
+      />
+      <line
+        x1="0"
+        y1="15"
+        x2="22"
+        y2="15"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="square"
+      />
     </svg>
   );
 }
 
 function CloseIcon({ className }: { className?: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" className={className} aria-hidden="true">
-      <line x1="1"  y1="1"  x2="21" y2="21" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
-      <line x1="21" y1="1"  x2="1"  y2="21" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 22 22"
+      fill="none"
+      className={className}
+      aria-hidden="true"
+    >
+      <line
+        x1="1"
+        y1="1"
+        x2="21"
+        y2="21"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="square"
+      />
+      <line
+        x1="21"
+        y1="1"
+        x2="1"
+        y2="21"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="square"
+      />
     </svg>
   );
 }
@@ -86,11 +163,10 @@ function CloseIcon({ className }: { className?: string }) {
 function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const categories = INDUSTRY_MENU_DATA.categories;
-  const active     = categories[activeIdx];
+  const active = categories[activeIdx];
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
-
       {/* Scanner line — sweeps left→right on mount / category switch */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -104,10 +180,8 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
       </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7 flex gap-0">
-
         {/* ── Col 1: Browse by Industry (20%) ──────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col border-r border-slate-200 pr-6">
-
           <p className="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-[0.28em] mb-4">
             Browse by Industry
           </p>
@@ -131,7 +205,9 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                     </span>
                     <ChevronRight
                       className={`w-3 h-3 ml-auto flex-shrink-0 transition-opacity ${
-                        isActive ? "opacity-60" : "opacity-0 group-hover:opacity-40"
+                        isActive
+                          ? "opacity-60"
+                          : "opacity-0 group-hover:opacity-40"
                       }`}
                       strokeWidth={2}
                     />
@@ -149,12 +225,10 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               → All Products
             </div>
           </Link>
-
         </div>
 
         {/* ── Col 2: Product Grid (expanded) ──────────────────────────── */}
         <div className="flex-1 min-w-0 px-8">
-
           <AnimatePresence mode="wait">
             <motion.div
               key={activeIdx + "-grid"}
@@ -164,10 +238,12 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               transition={{ type: "spring", stiffness: 500, damping: 45 }}
               className="grid grid-cols-4 gap-x-4 gap-y-4"
             >
-              {active.items.slice(0, 8).map((item) => (
+              {active.items.slice(0, 8).map(item => (
                 <Link key={item.id} href={item.href}>
-                  <div onClick={onClose} className="group cursor-pointer text-center">
-
+                  <div
+                    onClick={onClose}
+                    className="group cursor-pointer text-center"
+                  >
                     {/* Product image — fixed w-36 h-32 thumbnail */}
                     <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
                       <img
@@ -185,15 +261,12 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                     <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
                       {item.name}
                     </p>
-
                   </div>
                 </Link>
               ))}
             </motion.div>
           </AnimatePresence>
-
         </div>
-
       </div>
     </div>
   );
@@ -202,13 +275,17 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 // ── Navbar ────────────────────────────────────────────────────────────────────
 export default function Navbar() {
   const [location, navigate] = useLocation();
-  const [mobileOpen,    setMobileOpen]    = useState(false);
-  const [megaOpen,      setMegaOpen]      = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [megaOpen, setMegaOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
-  const [mobileProdTab, setMobileProdTab] = useState<"industry" | "category">("industry");
-  const [hidden,        setHidden]        = useState(false);
-  const lastScrollY    = useRef(0);
-  const megaCloseTimer    = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const [mobileProdTab, setMobileProdTab] = useState<"industry" | "category">(
+    "industry"
+  );
+  const [hidden, setHidden] = useState(false);
+  const lastScrollY = useRef(0);
+  const megaCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined
+  );
   const lastProdClickTime = useRef(0);
 
   // Hide on scroll-down, reveal on scroll-up
@@ -233,15 +310,24 @@ export default function Navbar() {
   // Lock body scroll when drawer is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [mobileOpen]);
 
   // Close drawer on route change
-  useEffect(() => { setMobileOpen(false); }, [location]);
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location]);
 
   // Debounced hover handlers
-  const openMega  = () => { clearTimeout(megaCloseTimer.current); setMegaOpen(true);  };
-  const closeMega = () => { megaCloseTimer.current = setTimeout(() => setMegaOpen(false), 120); };
+  const openMega = () => {
+    clearTimeout(megaCloseTimer.current);
+    setMegaOpen(true);
+  };
+  const closeMega = () => {
+    megaCloseTimer.current = setTimeout(() => setMegaOpen(false), 120);
+  };
 
   const handleProductsClick = () => {
     const now = Date.now();
@@ -252,8 +338,9 @@ export default function Navbar() {
     lastProdClickTime.current = now;
   };
 
-  const isActive   = (path: string) => location === path;
-  const isProducts = location.startsWith("/products") || location.startsWith("/industry");
+  const isActive = (path: string) => location === path;
+  const isProducts =
+    location.startsWith("/products") || location.startsWith("/industry");
 
   const linkCls = (active: boolean) =>
     `text-[13px] font-medium tracking-[0.18em] uppercase transition-colors cursor-pointer ${
@@ -269,7 +356,6 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="flex items-center justify-between h-[74px]">
-
             {/* ── Logo ──────────────────────────────────────────────────── */}
             <Link href="/">
               <div className="flex items-center gap-1 cursor-pointer group">
@@ -288,7 +374,6 @@ export default function Navbar() {
 
             {/* ── Desktop nav ────────────────────────────────────────────── */}
             <div className="hidden md:flex items-center gap-7">
-
               <Link href="/">
                 <span className={linkCls(isActive("/"))}>HOME</span>
               </Link>
@@ -300,7 +385,10 @@ export default function Navbar() {
                   aria-haspopup="true"
                   aria-expanded={megaOpen}
                   onClick={handleProductsClick}
-                  onDoubleClick={() => { setMegaOpen(false); navigate("/products"); }}
+                  onDoubleClick={() => {
+                    setMegaOpen(false);
+                    navigate("/products");
+                  }}
                 >
                   PRODUCTS
                   <ChevronDown
@@ -310,9 +398,11 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {NAV_LINKS.map((item) => (
+              {NAV_LINKS.map(item => (
                 <Link key={item.path} href={item.path}>
-                  <span className={linkCls(isActive(item.path))}>{item.label}</span>
+                  <span className={linkCls(isActive(item.path))}>
+                    {item.label}
+                  </span>
                 </Link>
               ))}
 
@@ -323,18 +413,16 @@ export default function Navbar() {
               >
                 GET A QUOTE
               </Link>
-
             </div>
 
             {/* ── Mobile toggle ──────────────────────────────────────────── */}
             <button
               className="md:hidden text-slate-700 hover:text-[#003366] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
-              onClick={() => setMobileOpen((v) => !v)}
+              onClick={() => setMobileOpen(v => !v)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
               <HamburgerIcon />
             </button>
-
           </div>
         </div>
 
@@ -353,7 +441,6 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-
       </nav>
 
       {/* ── Mobile Full-Screen Drawer ─────────────────────────────────────────── */}
@@ -366,12 +453,17 @@ export default function Navbar() {
             exit={{ x: "100%" }}
             transition={{ duration: 0.32, ease: [0.32, 0, 0.18, 1] }}
           >
-
             {/* ── Drawer Header ─────────────────────────────────────────── */}
             <div className="flex items-center justify-between px-6 h-[74px] border-b border-white/10 flex-shrink-0">
               <Link href="/">
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <img src="/sureay-logo.svg" alt="Sureay Logo" className="w-16 h-16 brightness-0 invert" width={64} height={64} />
+                  <img
+                    src="/sureay-logo.svg"
+                    alt="Sureay Logo"
+                    className="w-16 h-16 brightness-0 invert"
+                    width={64}
+                    height={64}
+                  />
                   <span className="font-black text-[11px] tracking-[0.12em] text-white uppercase leading-none">
                     SUREAY BLADES
                   </span>
@@ -388,7 +480,6 @@ export default function Navbar() {
 
             {/* ── Drawer Nav Body ───────────────────────────────────────── */}
             <div className="flex-1 overflow-y-auto px-6 py-4">
-
               {/* HOME */}
               <Link href="/">
                 <div className="py-5 border-b border-white/10 cursor-pointer group">
@@ -402,11 +493,15 @@ export default function Navbar() {
               <div className="border-b border-white/10">
                 <button
                   className="w-full flex items-center justify-between py-5 cursor-pointer group"
-                  onClick={() => setMobileProduct((v) => !v)}
+                  onClick={() => setMobileProduct(v => !v)}
                 >
-                  <span className={`text-2xl font-black uppercase tracking-widest transition-colors ${
-                    mobileProduct ? "text-white" : "text-white group-hover:text-white/70"
-                  }`}>
+                  <span
+                    className={`text-2xl font-black uppercase tracking-widest transition-colors ${
+                      mobileProduct
+                        ? "text-white"
+                        : "text-white group-hover:text-white/70"
+                    }`}
+                  >
                     PRODUCTS
                   </span>
                   <ChevronDown
@@ -426,10 +521,9 @@ export default function Navbar() {
                       transition={{ duration: 0.25, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-
                       {/* Tab switcher */}
                       <div className="flex mb-4 border border-white/20">
-                        {(["industry", "category"] as const).map((tab) => (
+                        {(["industry", "category"] as const).map(tab => (
                           <button
                             key={tab}
                             onClick={() => setMobileProdTab(tab)}
@@ -447,7 +541,7 @@ export default function Navbar() {
                       {/* By Industry panel — sourced from INDUSTRY_MENU_DATA */}
                       {mobileProdTab === "industry" && (
                         <div className="pb-5">
-                          {INDUSTRY_MENU_DATA.categories.map((cat) => {
+                          {INDUSTRY_MENU_DATA.categories.map(cat => {
                             return (
                               <Link key={cat.id} href={cat.featured.ctaHref}>
                                 <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em] uppercase text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
@@ -462,12 +556,12 @@ export default function Navbar() {
                       {/* By Category panel */}
                       {mobileProdTab === "category" && (
                         <div className="pb-5">
-                          {PRODUCT_GROUPS.map((group) => (
+                          {PRODUCT_GROUPS.map(group => (
                             <div key={group.group} className="mb-5">
                               <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30 mb-2 pl-4 border-l border-white/20">
                                 {group.group}
                               </p>
-                              {group.items.map((item) => (
+                              {group.items.map(item => (
                                 <Link key={item.label} href={item.href}>
                                   <div className="py-2 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em] uppercase text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
                                     {item.label}
@@ -486,14 +580,13 @@ export default function Navbar() {
                           Upload CAD →
                         </div>
                       </Link>
-
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
 
               {/* Static links */}
-              {NAV_LINKS.map((item) => (
+              {NAV_LINKS.map(item => (
                 <Link key={item.path} href={item.path}>
                   <div className="py-5 border-b border-white/10 cursor-pointer group">
                     <span className="text-2xl font-black uppercase tracking-widest text-white group-hover:text-white/70 transition-colors">
@@ -502,7 +595,6 @@ export default function Navbar() {
                   </div>
                 </Link>
               ))}
-
             </div>
 
             {/* ── Drawer Footer CTA ─────────────────────────────────────── */}
@@ -516,7 +608,6 @@ export default function Navbar() {
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
             </div>
-
           </motion.div>
         )}
       </AnimatePresence>

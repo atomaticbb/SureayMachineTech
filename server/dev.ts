@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import "dotenv/config";
 import { createServer } from "http";
 import { createApp } from "./app.js";
 

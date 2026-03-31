@@ -1,20 +1,20 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const pagesDir = path.join(__dirname, 'client/src/pages');
+const pagesDir = path.join(__dirname, "client/src/pages");
 
 const pagesToUpdate = [
-  'Home.tsx',
-  'Materials.tsx',
-  'Contact.tsx',
-  'About.tsx',
-  'ProductDetailPlastic.tsx',
-  'ProductDetailMetal.tsx',
-  'ProductDetail.tsx'
+  "Home.tsx",
+  "Materials.tsx",
+  "Contact.tsx",
+  "About.tsx",
+  "ProductDetailPlastic.tsx",
+  "ProductDetailMetal.tsx",
+  "ProductDetail.tsx",
 ];
 
 function addLazyLoadingToImages(content) {
@@ -50,11 +50,11 @@ for (const page of pagesToUpdate) {
   }
 
   try {
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = fs.readFileSync(filePath, "utf8");
     const updated = addLazyLoadingToImages(content);
 
     if (content !== updated) {
-      fs.writeFileSync(filePath, updated, 'utf8');
+      fs.writeFileSync(filePath, updated, "utf8");
       console.log(`✓ Updated: ${page}`);
     } else {
       console.log(`- No changes needed: ${page}`);
@@ -64,4 +64,4 @@ for (const page of pagesToUpdate) {
   }
 }
 
-console.log('\n✓ All pages processed!');
+console.log("\n✓ All pages processed!");

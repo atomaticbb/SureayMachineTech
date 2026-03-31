@@ -4,7 +4,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FEATURED_PRODUCTS } from "@/data/homeData";
 
 // Triple the products for seamless infinite scroll
-const LOOP_ITEMS = [...FEATURED_PRODUCTS, ...FEATURED_PRODUCTS, ...FEATURED_PRODUCTS];
+const LOOP_ITEMS = [
+  ...FEATURED_PRODUCTS,
+  ...FEATURED_PRODUCTS,
+  ...FEATURED_PRODUCTS,
+];
 
 export default function AuthorityCarousel() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -37,7 +41,9 @@ export default function AuthorityCarousel() {
 
     if (jumped) {
       normCooldownRef.current = true;
-      setTimeout(() => { normCooldownRef.current = false; }, 100);
+      setTimeout(() => {
+        normCooldownRef.current = false;
+      }, 100);
     }
   };
 
@@ -53,7 +59,7 @@ export default function AuthorityCarousel() {
     if (!el) return;
     el.scrollBy({
       left: dir === "right" ? getItemWidth() : -getItemWidth(),
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -90,11 +96,11 @@ export default function AuthorityCarousel() {
   return (
     <section className="bg-white text-slate-900 py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-
         {/* Marquee statement */}
         <div className="text-center mb-10">
           <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-4xl mx-auto">
-            The definitive OEM source for precision blades and cutting solutions.
+            The definitive OEM source for precision blades and cutting
+            solutions.
           </h2>
         </div>
 
@@ -146,7 +152,6 @@ export default function AuthorityCarousel() {
             </button>
           </div>
         </div>
-
       </div>
     </section>
   );

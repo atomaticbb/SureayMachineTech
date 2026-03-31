@@ -6,8 +6,8 @@ import { submitContactForm } from "../controllers/contactController.js";
 const ALLOWED_EXT = /\.(pdf|dxf|dwg|step|stp)$/i;
 
 const upload = multer({
-  storage: multer.memoryStorage(),         // never touches disk
-  limits:  { fileSize: 15 * 1024 * 1024 }, // 15 MB hard cap
+  storage: multer.memoryStorage(), // never touches disk
+  limits: { fileSize: 15 * 1024 * 1024 }, // 15 MB hard cap
   fileFilter: (_req, file, cb) => {
     if (ALLOWED_EXT.test(file.originalname)) {
       cb(null, true);
@@ -20,21 +20,31 @@ const upload = multer({
 // ── In-memory rate limiter ─────────────────────────────────────────────────────
 // 3 submissions per IP per 15-minute window — no extra package required
 const RATE_WINDOW_MS = 15 * 60 * 1000; // 15 min
-const RATE_MAX_HITS  = 3;
+const RATE_MAX_HITS = 3;
 
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 
 // Evict expired entries every 30 min to prevent unbounded memory growth
-setInterval(() => {
-  const now = Date.now();
-  rateLimitMap.forEach((entry, ip) => {
-    if (entry.resetAt < now) rateLimitMap.delete(ip);
-  });
-}, 30 * 60 * 1000).unref(); // .unref() so this timer never blocks process exit
+setInterval(
+  () => {
+    const now = Date.now();
+    rateLimitMap.forEach((entry, ip) => {
+      if (entry.resetAt < now) rateLimitMap.delete(ip);
+    });
+  },
+  30 * 60 * 1000
+).unref(); // .unref() so this timer never blocks process exit
 
-function contactRateLimit(req: Request, res: Response, next: NextFunction): void {
+function contactRateLimit(
+  req: Request,
+  res: Response,
+  next: NextFunction
+): void {
   // Normalise IPv4-mapped IPv6 (::ffff:1.2.3.4 → 1.2.3.4)
-  const ip  = (req.ip ?? req.socket.remoteAddress ?? "unknown").replace(/^::ffff:/, "");
+  const ip = (req.ip ?? req.socket.remoteAddress ?? "unknown").replace(
+    /^::ffff:/,
+    ""
+  );
   const now = Date.now();
   const entry = rateLimitMap.get(ip);
 
@@ -64,7 +74,7 @@ router.post(
   "/contact",
   contactRateLimit,
   upload.single("attachment"),
-  submitContactForm,
+  submitContactForm
 );
 
 export default router;

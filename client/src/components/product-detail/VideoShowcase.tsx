@@ -14,7 +14,6 @@ export default function VideoShowcase({ video }: VideoShowcaseProps) {
   return (
     <section className="w-full bg-slate-900">
       <div className="relative w-full h-[400px] lg:h-[550px] overflow-hidden">
-
         {/* Video Element */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -37,9 +36,10 @@ export default function VideoShowcase({ video }: VideoShowcaseProps) {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
           </span>
-          <span className="text-[10px] font-bold text-white uppercase tracking-widest">Live Action</span>
+          <span className="text-[10px] font-bold text-white uppercase tracking-widest">
+            Live Action
+          </span>
         </div>
-
       </div>
     </section>
   );

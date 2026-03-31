@@ -11,7 +11,10 @@ import SEO from "@/components/common/SEO";
 import { toast } from "sonner";
 import { gtagEvent } from "@/lib/gtag";
 
-type InquiryType = "Custom OEM Blade" | "Standard Part Replacement" | "Technical Support";
+type InquiryType =
+  | "Custom OEM Blade"
+  | "Standard Part Replacement"
+  | "Technical Support";
 
 const INQUIRY_TYPES: InquiryType[] = [
   "Custom OEM Blade",
@@ -27,34 +30,36 @@ const TRUST_STAMPS = [
 ];
 
 const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp";
-const MAX_FILE_MB   = 15;
+const MAX_FILE_MB = 15;
 
 // Human-readable file size
 function fmtSize(bytes: number) {
-  if (bytes < 1024)         return `${bytes} B`;
-  if (bytes < 1024 * 1024)  return `${(bytes / 1024).toFixed(1)} KB`;
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     inquiryType: "Custom OEM Blade" as InquiryType,
-    name:        "",
-    email:       "",
-    phone:       "",
-    company:     "",
-    message:     "",
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
   });
-  const [attachment,   setAttachment]   = useState<File | null>(null);
+  const [attachment, setAttachment] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [dragOver,     setDragOver]     = useState(false);
+  const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { id, value } = e.target;
-    setFormData((prev) => ({ ...prev, [id]: value }));
+    setFormData(prev => ({ ...prev, [id]: value }));
   };
 
   // ── File selection helpers ───────────────────────────────────────────────
@@ -92,35 +97,37 @@ export default function Contact() {
     try {
       // Build multipart/form-data — browser sets Content-Type + boundary
       const fd = new FormData();
-      fd.append("name",        formData.name);
-      fd.append("email",       formData.email);
-      fd.append("message",     formData.message);
+      fd.append("name", formData.name);
+      fd.append("email", formData.email);
+      fd.append("message", formData.message);
       fd.append("inquiryType", formData.inquiryType);
-      if (formData.phone)   fd.append("phone",   formData.phone);
+      if (formData.phone) fd.append("phone", formData.phone);
       if (formData.company) fd.append("company", formData.company);
-      if (attachment)       fd.append("attachment", attachment, attachment.name);
+      if (attachment) fd.append("attachment", attachment, attachment.name);
 
       const response = await fetch("/api/contact", {
         method: "POST",
-        body:   fd,
+        body: fd,
         // Do NOT set Content-Type — browser must set it with the multipart boundary
       });
 
       const data = await response.json();
 
       if (response.ok && data.success) {
-        toast.success("Message sent successfully! We'll get back to you within 24 hours.");
+        toast.success(
+          "Message sent successfully! We'll get back to you within 24 hours."
+        );
         gtagEvent("generate_lead", {
           event_category: "contact_form",
-          inquiry_type:   formData.inquiryType,
+          inquiry_type: formData.inquiryType,
         });
         setFormData({
           inquiryType: "Custom OEM Blade",
-          name:        "",
-          email:       "",
-          phone:       "",
-          company:     "",
-          message:     "",
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
         });
         setAttachment(null);
       } else {
@@ -129,7 +136,9 @@ export default function Contact() {
             toast.error(error.message || "Validation error");
           });
         } else {
-          toast.error(data.message || "Failed to send message. Please try again.");
+          toast.error(
+            data.message || "Failed to send message. Please try again."
+          );
         }
       }
     } catch (error) {
@@ -154,7 +163,6 @@ export default function Contact() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="bg-white pt-[48px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-4 lg:pt-28 lg:pb-12">
-
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-8">
             [ INITIATE ENGINEERING INQUIRY ]
           </p>
@@ -165,11 +173,13 @@ export default function Contact() {
 
           <div className="border-l-4 border-[#001f4d] pl-6 max-w-4xl lg:max-w-5xl">
             <p className="text-[#001f4d]/80 text-lg leading-relaxed">
-              Every inquiry receives a direct technical assessment from our engineering team within 24 hours.<br className="hidden lg:block" />
-              Describe your application — we'll engineer the optimal blade specification.
+              Every inquiry receives a direct technical assessment from our
+              engineering team within 24 hours.
+              <br className="hidden lg:block" />
+              Describe your application — we'll engineer the optimal blade
+              specification.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -178,10 +188,8 @@ export default function Contact() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="border-t border-b border-slate-200">
         <div className="lg:grid lg:grid-cols-12">
-
           {/* ── LEFT: The White Paper Form (col-span-7) ─────────────────── */}
           <div className="lg:col-span-7 bg-white border-b lg:border-b-0 lg:border-r border-slate-200 p-6 lg:p-8">
-
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-2">
               [ FORM REF: SY-INQ-001 ]
             </p>
@@ -190,18 +198,19 @@ export default function Contact() {
             </h2>
 
             <form className="space-y-4" onSubmit={handleSubmit}>
-
               {/* Inquiry Type Tiles */}
               <div>
                 <p className="font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-3">
                   Inquiry Type *
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 border border-slate-200">
-                  {INQUIRY_TYPES.map((type) => (
+                  {INQUIRY_TYPES.map(type => (
                     <button
                       key={type}
                       type="button"
-                      onClick={() => setFormData((prev) => ({ ...prev, inquiryType: type }))}
+                      onClick={() =>
+                        setFormData(prev => ({ ...prev, inquiryType: type }))
+                      }
                       className={`px-4 py-4 font-mono text-[10px] font-bold tracking-[0.15em] uppercase text-left border-r border-slate-200 last:border-r-0 transition-none ${
                         formData.inquiryType === type
                           ? "bg-[#001f4d] text-white"
@@ -217,7 +226,10 @@ export default function Contact() {
               {/* Name + Email */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                  >
                     Full Name *
                   </label>
                   <input
@@ -231,7 +243,10 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                  >
                     Email Address *
                   </label>
                   <input
@@ -249,7 +264,10 @@ export default function Contact() {
               {/* Company + Phone */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="company" className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                  <label
+                    htmlFor="company"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                  >
                     Company
                   </label>
                   <input
@@ -262,7 +280,10 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                  >
                     Phone / WhatsApp
                   </label>
                   <input
@@ -278,7 +299,10 @@ export default function Contact() {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                <label
+                  htmlFor="message"
+                  className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                >
                   Project Details *
                 </label>
                 <textarea
@@ -295,7 +319,10 @@ export default function Contact() {
               {/* ── CAD File Upload Zone ───────────────────────────────── */}
               <div>
                 <p className="font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
-                  CAD / Technical Drawing <span className="text-slate-400 normal-case tracking-normal font-normal">(optional · max {MAX_FILE_MB} MB)</span>
+                  CAD / Technical Drawing{" "}
+                  <span className="text-slate-400 normal-case tracking-normal font-normal">
+                    (optional · max {MAX_FILE_MB} MB)
+                  </span>
                 </p>
 
                 {/* Hidden native input */}
@@ -313,13 +340,16 @@ export default function Contact() {
                   <div className="border border-[#001f4d] bg-slate-50 px-4 py-3 flex items-center justify-between gap-3">
                     <div className="flex items-center gap-3 min-w-0">
                       {/* Sharp paperclip mark */}
-                      <span className="font-mono text-[#001f4d] text-base flex-shrink-0 select-none">[ ⊡ ]</span>
+                      <span className="font-mono text-[#001f4d] text-base flex-shrink-0 select-none">
+                        [ ⊡ ]
+                      </span>
                       <div className="min-w-0">
                         <p className="font-mono text-[11px] font-bold text-[#001f4d] uppercase tracking-wide truncate">
                           {attachment.name}
                         </p>
                         <p className="font-mono text-[10px] text-slate-400 tracking-wide">
-                          {fmtSize(attachment.size)} · {attachment.name.split(".").pop()?.toUpperCase()}
+                          {fmtSize(attachment.size)} ·{" "}
+                          {attachment.name.split(".").pop()?.toUpperCase()}
                         </p>
                       </div>
                     </div>
@@ -338,8 +368,13 @@ export default function Contact() {
                     role="button"
                     tabIndex={0}
                     onClick={() => fileInputRef.current?.click()}
-                    onKeyDown={(e) => e.key === "Enter" && fileInputRef.current?.click()}
-                    onDragOver={(e) => { e.preventDefault(); setDragOver(true);  }}
+                    onKeyDown={e =>
+                      e.key === "Enter" && fileInputRef.current?.click()
+                    }
+                    onDragOver={e => {
+                      e.preventDefault();
+                      setDragOver(true);
+                    }}
                     onDragLeave={() => setDragOver(false)}
                     onDrop={handleDrop}
                     className={`border-2 border-dashed py-5 px-4 text-center cursor-pointer transition-colors ${
@@ -369,13 +404,11 @@ export default function Contact() {
               >
                 {isSubmitting ? "[ TRANSMITTING... ]" : "SUBMIT INQUIRY ↗"}
               </button>
-
             </form>
           </div>
 
           {/* ── RIGHT: The Navy Directory (col-span-5) ──────────────────── */}
           <div className="lg:col-span-5 bg-[#001f4d] p-6 lg:p-8 flex flex-col">
-
             {/* Email */}
             <div className="mt-8 lg:mt-[2.75rem] mb-12">
               <p className="font-mono text-[10px] text-white/50 tracking-widest uppercase mb-3">
@@ -386,14 +419,16 @@ export default function Contact() {
                 data-u="lynn"
                 data-d="sureay.com"
                 href="#"
-                onClick={(e) => {
+                onClick={e => {
                   e.preventDefault();
                   const el = e.currentTarget as HTMLAnchorElement;
                   window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
                 }}
                 className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none break-all hover:text-white/70 transition-colors cursor-pointer"
               >
-                <span style={{ unicodeBidi: "bidi-override", direction: "rtl" }}>
+                <span
+                  style={{ unicodeBidi: "bidi-override", direction: "rtl" }}
+                >
                   moc.yaerus@nnyl
                 </span>
               </a>
@@ -417,14 +452,15 @@ export default function Contact() {
             {/* Footer metadata */}
             <div className="border-t border-white/20 pt-8 mt-auto">
               <div className="space-y-4">
-
                 <div>
                   <p className="font-bold text-xs text-white/50 tracking-widest uppercase mb-1.5">
                     Factory Address
                   </p>
                   <p className="font-sans text-sm text-white leading-relaxed">
-                    Industrial Development Zone, Bowang Town<br />
-                    Bowang District, Ma'anshan City<br />
+                    Industrial Development Zone, Bowang Town
+                    <br />
+                    Bowang District, Ma'anshan City
+                    <br />
                     Anhui Province, China
                   </p>
                 </div>
@@ -446,12 +482,9 @@ export default function Contact() {
                     All inquiries acknowledged within 24 hours
                   </p>
                 </div>
-
               </div>
             </div>
-
           </div>
-
         </div>
       </section>
 

@@ -6,14 +6,14 @@
 
 import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
-import Navbar    from "@/components/layout/Navbar";
-import Footer    from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import IndustryHero             from "@/components/industry/IndustryHero";
-import IndustryToolingMatrix    from "@/components/industry/IndustryToolingMatrix";
+import IndustryHero from "@/components/industry/IndustryHero";
+import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline      from "@/components/industry/IndustryOemPipeline";
-import IndustryMaterialFocus    from "@/components/industry/IndustryMaterialFocus";
+import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
 import { blades } from "@/data/blades";
 import type {
   IndustryHeroData,
@@ -26,8 +26,8 @@ import type {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
   breadcrumb: "Home / Markets / New Energy & Battery",
-  h1:   "Lithium Battery & New Energy Precision Slitting Knife Supplier",
-  h2:   "Zero-Notch Carbide Electrode Slitting · EV Cell Manufacturing",
+  h1: "Lithium Battery & New Energy Precision Slitting Knife Supplier",
+  h2: "Zero-Notch Carbide Electrode Slitting · EV Cell Manufacturing",
   body1:
     "Sureay Machinery manufactures tungsten carbide circular slitting knives for lithium-ion battery " +
     "electrode foil processing — the critical upstream step in EV cell, energy storage, and consumer " +
@@ -40,14 +40,38 @@ const HERO_DATA: IndustryHeroData = {
     "for IATF 16949 EV supply chain qualification.",
   ctaHref: "#tooling-matrix",
   gallery: [
-    { src: "/images/applications/energy-industry/knives-using-in-energy-industry.webp",    alt: "Precision knives for new energy battery manufacturing" },
-    { src: "/images/applications/energy-industry/slitting-blades.webp",                    alt: "Slitting blades for electrode foil"                   },
-    { src: "/images/applications/energy-industry/slitting-blades-11.webp",                 alt: "Carbide slitter knife for battery electrode"           },
-    { src: "/images/applications/energy-industry/slitting-blades-12.webp",                 alt: "Precision slitting knife for lithium battery"          },
-    { src: "/images/applications/energy-industry/slitting-blades-13.webp",                 alt: "Battery electrode foil slitting process"               },
-    { src: "/images/applications/energy-industry/slitting-blades-14.webp",                 alt: "Slitter knife precision detail view"                   },
-    { src: "/images/applications/energy-industry/rotary-slitter-knives-detail.webp",       alt: "Rotary slitter knife edge quality detail"              },
-    { src: "/images/applications/energy-industry/knives-using-in-energy-industry-02.webp", alt: "Energy industry knife application close-up"            },
+    {
+      src: "/images/applications/energy-industry/knives-using-in-energy-industry.webp",
+      alt: "Precision knives for new energy battery manufacturing",
+    },
+    {
+      src: "/images/applications/energy-industry/slitting-blades.webp",
+      alt: "Slitting blades for electrode foil",
+    },
+    {
+      src: "/images/applications/energy-industry/slitting-blades-11.webp",
+      alt: "Carbide slitter knife for battery electrode",
+    },
+    {
+      src: "/images/applications/energy-industry/slitting-blades-12.webp",
+      alt: "Precision slitting knife for lithium battery",
+    },
+    {
+      src: "/images/applications/energy-industry/slitting-blades-13.webp",
+      alt: "Battery electrode foil slitting process",
+    },
+    {
+      src: "/images/applications/energy-industry/slitting-blades-14.webp",
+      alt: "Slitter knife precision detail view",
+    },
+    {
+      src: "/images/applications/energy-industry/rotary-slitter-knives-detail.webp",
+      alt: "Rotary slitter knife edge quality detail",
+    },
+    {
+      src: "/images/applications/energy-industry/knives-using-in-energy-industry-02.webp",
+      alt: "Energy industry knife application close-up",
+    },
   ],
 };
 
@@ -65,7 +89,10 @@ const PRODUCTS: IndustryProduct[] = blades
     isFlagship: index === 0,
   }));
 
-const FILTER_CATEGORIES = ["ALL", ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase())))];
+const FILTER_CATEGORIES = [
+  "ALL",
+  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+];
 
 // ─── Blueprint Dashboard ──────────────────────────────────────────────────────
 const NARRATIVE: IndustryNarrative = {
@@ -74,7 +101,7 @@ const NARRATIVE: IndustryNarrative = {
     "A single micro-burr on electrode foil penetrates the separator membrane, causing internal short-circuit " +
     "and catastrophic cell failure. Standard slitter knives cannot hold the zero-notch Ra ≤ 0.05μm " +
     "tolerance required by battery-grade aluminium and copper foil specifications.",
-  solutionTitle:  "Mirror Finish. Zero Contamination.",
+  solutionTitle: "Mirror Finish. Zero Contamination.",
   solutionBody:
     "Sureay submicron WC-Co carbide knives are lapped to Ra ≤ 0.05μm and individually CMM-certified " +
     "to ±0.001mm — delivering the zero-burr edge quality required for ISO Class 7 dry-room cell assembly (+8× edge life vs D2).",
@@ -82,17 +109,52 @@ const NARRATIVE: IndustryNarrative = {
 };
 
 const SPECS: IndustrySpec[] = [
-  { label: "Surface Finish", mainValue: "Ra ≤ 0.05", unit: "μm",  subtext: "Mirror — Zero Notch"    },
-  { label: "Thickness Tol.", mainValue: "±0.001",    unit: "mm",  subtext: "CMM Verified per Knife"  },
-  { label: "T.I.R. Runout",  mainValue: "≤ 0.01",    unit: "mm",  subtext: "100% Inspected"          },
-  { label: "Carbide Grade",  mainValue: "WC-Co\\nSubmicron",       subtext: "≤ 0.5μm Grain Size", isTextual: true },
+  {
+    label: "Surface Finish",
+    mainValue: "Ra ≤ 0.05",
+    unit: "μm",
+    subtext: "Mirror — Zero Notch",
+  },
+  {
+    label: "Thickness Tol.",
+    mainValue: "±0.001",
+    unit: "mm",
+    subtext: "CMM Verified per Knife",
+  },
+  {
+    label: "T.I.R. Runout",
+    mainValue: "≤ 0.01",
+    unit: "mm",
+    subtext: "100% Inspected",
+  },
+  {
+    label: "Carbide Grade",
+    mainValue: "WC-Co\\nSubmicron",
+    subtext: "≤ 0.5μm Grain Size",
+    isTextual: true,
+  },
 ];
 
 // ─── Materials ─────────────────────────────────────────────────────────────────
 const MATERIALS: IndustryMaterial[] = [
-  { name: "Al Cathode Foil (12–20μm)",  abrasion: "HIGH",    grade: "WC-Co K10 Submicron", image: "/images/materials/al-cathode-foil.webp"       },
-  { name: "Cu Anode Foil (6–12μm)",     abrasion: "EXTREME", grade: "WC-Co K05 Submicron", image: "/images/materials/cu-anode-foil.webp"         },
-  { name: "PVDF Separator Film",        abrasion: "EXTREME", grade: "Cermet / PCD",         image: "/images/materials/PVDF-separator-film.webp"   },
+  {
+    name: "Al Cathode Foil (12–20μm)",
+    abrasion: "HIGH",
+    grade: "WC-Co K10 Submicron",
+    image: "/images/materials/al-cathode-foil.webp",
+  },
+  {
+    name: "Cu Anode Foil (6–12μm)",
+    abrasion: "EXTREME",
+    grade: "WC-Co K05 Submicron",
+    image: "/images/materials/cu-anode-foil.webp",
+  },
+  {
+    name: "PVDF Separator Film",
+    abrasion: "EXTREME",
+    grade: "Cermet / PCD",
+    image: "/images/materials/PVDF-separator-film.webp",
+  },
 ];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -109,7 +171,8 @@ const PAGE_SCHEMA = {
         "@type": "Product",
         name: "Lithium Battery Electrode Slitting Knives",
         image: "https://sureay.com/images/products/blades.webp",
-        description: "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
+        description:
+          "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/lithium-battery-slitting-knives",
       },
@@ -134,15 +197,20 @@ export default function NewEnergyIndustry() {
       />
       <Helmet>
         <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(PAGE_SCHEMA)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero              data={HERO_DATA}                                         />
-        <IndustryToolingMatrix     products={PRODUCTS} filterCategories={FILTER_CATEGORIES} />
-        <IndustryBlueprintDashboard narrative={NARRATIVE}    specs={SPECS}                 />
-        <IndustryMaterialFocus     materials={MATERIALS}                                    />
+        <IndustryHero data={HERO_DATA} />
+        <IndustryToolingMatrix
+          products={PRODUCTS}
+          filterCategories={FILTER_CATEGORIES}
+        />
+        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+        <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />
         <ContactRFQ />
         <Footer />

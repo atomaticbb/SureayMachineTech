@@ -38,7 +38,7 @@ export default function BladeCard({ blade }: BladeCardProps) {
           decoding="async"
           width={400}
           height={300}
-          onError={(e) => {
+          onError={e => {
             e.currentTarget.src = "/images/products/product.webp";
           }}
         />
@@ -79,7 +79,10 @@ export default function BladeCard({ blade }: BladeCardProps) {
 
         {/* Footer Link */}
         <div className="mt-auto pt-2 border-t border-slate-100 dark:border-slate-700">
-          <Link href={blade.link} className="group/btn block w-full text-center">
+          <Link
+            href={blade.link}
+            className="group/btn block w-full text-center"
+          >
             <div className="inline-block relative py-1">
               <span className="text-xs font-black uppercase tracking-[0.2em] text-[#003366] dark:text-slate-500 group-hover/btn:text-[#FF6600] transition-colors duration-300">
                 View Details

@@ -9,7 +9,6 @@ export default function NewsGrid() {
   return (
     <section className="bg-white border-t border-slate-200 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-
         {/* Section header */}
         <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
@@ -31,10 +30,9 @@ export default function NewsGrid() {
 
         {/* Article cards — style mirrors /news page */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {LATEST.map((article) => (
+          {LATEST.map(article => (
             <Link key={article.id} href={`/news/${article.id}`}>
               <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300 h-full">
-
                 {/* Image with date stamp */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-200">
                   <img
@@ -73,12 +71,10 @@ export default function NewsGrid() {
                     </span>
                   </div>
                 </div>
-
               </a>
             </Link>
           ))}
         </div>
-
       </div>
     </section>
   );

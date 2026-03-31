@@ -12,9 +12,11 @@ export default function MobileStickyCTA() {
       <div className="px-4 py-3 flex items-center gap-3">
         <a
           href="#rfq"
-          onClick={(e) => {
+          onClick={e => {
             e.preventDefault();
-            document.getElementById("rfq")?.scrollIntoView({ behavior: "smooth" });
+            document
+              .getElementById("rfq")
+              ?.scrollIntoView({ behavior: "smooth" });
           }}
           className="flex-1 text-center px-6 py-3.5 bg-[#001f4d] text-white font-black text-sm uppercase tracking-widest rounded-none hover:bg-[#003080] transition-colors duration-200"
         >

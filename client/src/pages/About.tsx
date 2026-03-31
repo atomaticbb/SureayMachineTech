@@ -30,7 +30,9 @@ function CountUp({
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setStarted(true); },
+      ([e]) => {
+        if (e.isIntersecting) setStarted(true);
+      },
       { threshold: 0.2 }
     );
     obs.observe(el);
@@ -55,7 +57,8 @@ function CountUp({
   const display = to >= 1000 ? val.toLocaleString() : val.toString();
   return (
     <span ref={ref} className="tabular-nums">
-      {display}{suffix}
+      {display}
+      {suffix}
     </span>
   );
 }
@@ -63,10 +66,15 @@ function CountUp({
 // ── Data ─────────────────────────────────────────────────────────────────────
 
 const STATS = [
-  { to: 15,    suffix: "+", label: "Years of Experience",     sub: "Est. 2008"       },
-  { to: 10000, suffix: "+", label: "Blade Designs Delivered", sub: "Active Variants"  },
-  { to: 98,    suffix: "%", label: "Client Retention Rate",   sub: "Satisfaction"     },
-  { to: 50,    suffix: "+", label: "Countries Served",        sub: "Global Coverage"  },
+  { to: 15, suffix: "+", label: "Years of Experience", sub: "Est. 2008" },
+  {
+    to: 10000,
+    suffix: "+",
+    label: "Blade Designs Delivered",
+    sub: "Active Variants",
+  },
+  { to: 98, suffix: "%", label: "Client Retention Rate", sub: "Satisfaction" },
+  { to: 50, suffix: "+", label: "Countries Served", sub: "Global Coverage" },
 ];
 
 const EPOCHS = [
@@ -121,12 +129,12 @@ const VALUES = [
 ];
 
 const CERTIFICATIONS = [
-  { label: "ISO 9001:2015",    sub: "Quality Management"    },
-  { label: "CE Certified",     sub: "European Conformity"   },
-  { label: "SGS Audited",      sub: "Third-Party Verified"  },
-  { label: "RoHS Compliant",   sub: "Hazardous Materials"   },
-  { label: "Global Logistics", sub: "Door-to-Door"          },
-  { label: "CMM Verified",     sub: "Dimensional Report"    },
+  { label: "ISO 9001:2015", sub: "Quality Management" },
+  { label: "CE Certified", sub: "European Conformity" },
+  { label: "SGS Audited", sub: "Third-Party Verified" },
+  { label: "RoHS Compliant", sub: "Hazardous Materials" },
+  { label: "Global Logistics", sub: "Door-to-Door" },
+  { label: "CMM Verified", sub: "Dimensional Report" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -145,10 +153,8 @@ export default function About() {
           1. HERO — The Structural Anvil
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="pt-[74px]">
-
         {/* Main split — 42 / 58 */}
         <div className="flex flex-col lg:flex-row min-h-[580px] lg:min-h-[700px]">
-
           {/* Left — Solid Text Panel */}
           <motion.div
             className="flex flex-col px-5 sm:px-10 lg:px-20 py-10 lg:py-16 bg-white lg:w-[42%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200 overflow-visible"
@@ -156,7 +162,6 @@ export default function About() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease: [0.25, 0.1, 0.25, 1] }}
           >
-
             {/* Main content — fills vertical space and centers itself */}
             <div className="flex-1 flex flex-col justify-center">
               <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-6">
@@ -164,7 +169,11 @@ export default function About() {
               </p>
 
               <h1 className="text-[clamp(2rem,7vw,4.5rem)] font-black text-[#001f4d] leading-none tracking-tight uppercase mb-8">
-                Engineering<br />Blade<br />Excellence
+                Engineering
+                <br />
+                Blade
+                <br />
+                Excellence
               </h1>
 
               <div className="w-14 h-[3px] bg-[#001f4d] mb-8" />
@@ -173,12 +182,18 @@ export default function About() {
                 className="text-slate-600 text-base leading-relaxed max-w-sm"
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.22, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.22,
+                  ease: [0.25, 0.1, 0.25, 1],
+                }}
               >
-                Xunrui (Sureay) Machinery specializes in high-performance industrial blades, precision machine knives, and recycling equipment — engineered for the world's most demanding production environments since 2008.
+                Xunrui (Sureay) Machinery specializes in high-performance
+                industrial blades, precision machine knives, and recycling
+                equipment — engineered for the world's most demanding production
+                environments since 2008.
               </motion.p>
             </div>
-
           </motion.div>
 
           {/* Right — Grand Factory Image */}
@@ -192,11 +207,8 @@ export default function About() {
               decoding="async"
             />
           </div>
-
         </div>
-
       </section>
-
 
       {/* ═══════════════════════════════════════════════════════════════════
           2. STATS STRIP — Heavy Dashboard with Count-Up
@@ -209,8 +221,10 @@ export default function About() {
                 key={i}
                 className={[
                   "px-6 md:px-8 py-12 flex flex-col gap-1.5",
-                  i < 3              ? "border-r border-slate-200" : "",
-                  i === 2 || i === 3 ? "border-t border-slate-200 md:border-t-0" : "",
+                  i < 3 ? "border-r border-slate-200" : "",
+                  i === 2 || i === 3
+                    ? "border-t border-slate-200 md:border-t-0"
+                    : "",
                 ].join(" ")}
               >
                 <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-slate-400">
@@ -236,7 +250,6 @@ export default function About() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-
           <div className="mb-12">
             <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
               Manufacturing Infrastructure
@@ -245,12 +258,13 @@ export default function About() {
               Our Facility
             </h2>
             <p className="text-slate-500 text-sm mt-3 max-w-xl leading-relaxed">
-              15,000 m² facility in Ma'anshan housing advanced CNC machining centers, vacuum heat treatment furnaces, and comprehensive metrology equipment.
+              15,000 m² facility in Ma'anshan housing advanced CNC machining
+              centers, vacuum heat treatment furnaces, and comprehensive
+              metrology equipment.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3">
-
             {/* Main: Wide factory floor — use full workshop establishing shot */}
             <div className="lg:col-span-7 relative overflow-hidden group aspect-[4/3] lg:aspect-auto lg:row-span-2 border border-slate-200">
               <img
@@ -263,7 +277,9 @@ export default function About() {
                 height={1233}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3">
-                <p className="text-xs font-bold uppercase tracking-wide text-[#001f4d]">CNC Machining Workshop</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-[#001f4d]">
+                  CNC Machining Workshop
+                </p>
               </div>
             </div>
 
@@ -279,7 +295,9 @@ export default function About() {
                 height={340}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d] px-4 py-2.5">
-                <p className="text-[11px] font-bold uppercase tracking-wide text-white">Precision Grinding</p>
+                <p className="text-[11px] font-bold uppercase tracking-wide text-white">
+                  Precision Grinding
+                </p>
               </div>
             </div>
 
@@ -297,7 +315,9 @@ export default function About() {
                   height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
-                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">Heat Treatment</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">
+                    Heat Treatment
+                  </p>
                 </div>
               </div>
               {/* QC Inspection — REPLACE WITH MACRO: CMM probe tip touching blade surface */}
@@ -312,11 +332,12 @@ export default function About() {
                   height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
-                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">CMM Quality Control</p>
+                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">
+                    CMM Quality Control
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -326,7 +347,6 @@ export default function About() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 lg:py-28 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-
           {/* Header + Statement */}
           <div className="mb-14">
             <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-4">
@@ -338,7 +358,8 @@ export default function About() {
               </h2>
               <div className="border-l-4 border-[#001f4d] pl-5">
                 <p className="text-base lg:text-lg font-bold text-[#001f4d] leading-snug">
-                  "We don't just supply blades — we are your strategic partner in maximizing uptime and cutting performance."
+                  "We don't just supply blades — we are your strategic partner
+                  in maximizing uptime and cutting performance."
                 </p>
               </div>
             </div>
@@ -356,14 +377,16 @@ export default function About() {
                   className={[
                     "relative pt-8 pb-6 pr-5",
                     i < EPOCHS.length - 1 ? "border-r border-slate-200" : "",
-                    i > 0                 ? "pl-5 md:pl-6" : "",
+                    i > 0 ? "pl-5 md:pl-6" : "",
                     i < 2 && "border-b border-slate-200 md:border-b-0",
                   ].join(" ")}
                 >
                   {/* Square marker on the rail */}
                   <div
                     className={`absolute top-0 left-0 -translate-y-1/2 w-2.5 h-2.5 hidden md:block ${
-                      i === EPOCHS.length - 1 ? "bg-[#001f4d]" : "bg-white border-2 border-slate-300"
+                      i === EPOCHS.length - 1
+                        ? "bg-[#001f4d]"
+                        : "bg-white border-2 border-slate-300"
                     }`}
                   />
 
@@ -385,7 +408,6 @@ export default function About() {
               ))}
             </div>
           </div>
-
         </div>
       </section>
 
@@ -394,7 +416,6 @@ export default function About() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-
           <div className="mb-14">
             <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
               Our Principles
@@ -426,7 +447,6 @@ export default function About() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
@@ -435,7 +455,6 @@ export default function About() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-
           <div className="mb-10">
             <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
               Compliance & Standards
@@ -460,7 +479,6 @@ export default function About() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 

@@ -44,35 +44,35 @@ import { toast } from "sonner";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
-type FollowUpType    = "Email" | "Call" | "Internal";
-type ContactStatus   = "pending" | "replied" | "closed";
+type FollowUpType = "Email" | "Call" | "Internal";
+type ContactStatus = "pending" | "replied" | "closed";
 
 interface FollowUp {
-  id:        string;
-  content:   string;
-  type:      FollowUpType;
-  author:    string;
+  id: string;
+  content: string;
+  type: FollowUpType;
+  author: string;
   createdAt: string;
 }
 
 interface Contact {
-  id:             string;
-  name:           string;
-  email:          string;
-  phone?:         string;
-  company?:       string;
-  message:        string;
-  inquiryType?:   string;
+  id: string;
+  name: string;
+  email: string;
+  phone?: string;
+  company?: string;
+  message: string;
+  inquiryType?: string;
   attachmentName?: string;
   attachmentSize?: number;
-  status:         ContactStatus;
-  createdAt:      string;
-  updatedAt:      string;
-  followUps:      FollowUp[];
+  status: ContactStatus;
+  createdAt: string;
+  updatedAt: string;
+  followUps: FollowUp[];
 }
 
 interface Statistics {
-  contacts:  { total: number; pending: number };
+  contacts: { total: number; pending: number };
   analytics: { pageViews: number; uniqueVisitors: number };
   popularPages: Array<{ page: string | null; views: number }>;
 }
@@ -80,21 +80,21 @@ interface Statistics {
 // ── Domain constants ───────────────────────────────────────────────────────────
 
 const FOLLOWUP_META: Record<FollowUpType, { label: string; cls: string }> = {
-  Email:    { label: "邮件",   cls: "bg-blue-600 text-white" },
-  Call:     { label: "电话",   cls: "bg-emerald-600 text-white" },
-  Internal: { label: "内部",   cls: "bg-slate-500 text-white" },
+  Email: { label: "邮件", cls: "bg-blue-600 text-white" },
+  Call: { label: "电话", cls: "bg-emerald-600 text-white" },
+  Internal: { label: "内部", cls: "bg-slate-500 text-white" },
 };
 
 const STATUS_META: Record<ContactStatus, { label: string; cls: string }> = {
   pending: { label: "待处理", cls: "bg-amber-500 text-black" },
   replied: { label: "已回复", cls: "bg-blue-600 text-white" },
-  closed:  { label: "已归档", cls: "bg-slate-500 text-white" },
+  closed: { label: "已归档", cls: "bg-slate-500 text-white" },
 };
 
 const INQUIRY_DISPLAY: Record<string, string> = {
-  custom_oem:    "定制OEM",
+  custom_oem: "定制OEM",
   standard_part: "标准件",
-  technical:     "技术支持",
+  technical: "技术支持",
 };
 
 function fmtInquiry(t?: string) {
@@ -109,15 +109,22 @@ function fmtBytes(b?: number) {
 
 function fmtDate(s: string) {
   return new Date(s).toLocaleString("zh-CN", {
-    year: "numeric", month: "2-digit", day: "2-digit",
-    hour: "2-digit", minute: "2-digit", hour12: false,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
   });
 }
 
 function fmtShort(s: string) {
   return new Date(s).toLocaleString("zh-CN", {
-    month: "2-digit", day: "2-digit",
-    hour: "2-digit", minute: "2-digit", hour12: false,
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
   });
 }
 
@@ -131,24 +138,35 @@ function exportToCSV(contacts: Contact[]) {
     return `"${String(v).replace(/"/g, '""')}"`;
   };
 
-  const headers = ["姓名", "邮箱", "公司", "询盘类型", "内容", "状态", "提交时间"];
+  const headers = [
+    "姓名",
+    "邮箱",
+    "公司",
+    "询盘类型",
+    "内容",
+    "状态",
+    "提交时间",
+  ];
 
-  const rows = contacts.map((c) => [
-    esc(c.name),
-    esc(c.email),
-    esc(c.company),
-    esc(c.inquiryType),
-    esc(c.message),
-    esc(c.status),
-    esc(new Date(c.createdAt).toLocaleString("zh-CN", { hour12: false })),
-  ].join(","));
+  const rows = contacts.map(c =>
+    [
+      esc(c.name),
+      esc(c.email),
+      esc(c.company),
+      esc(c.inquiryType),
+      esc(c.message),
+      esc(c.status),
+      esc(new Date(c.createdAt).toLocaleString("zh-CN", { hour12: false })),
+    ].join(",")
+  );
 
-  const csv = BOM + [headers.map((h) => `"${h}"`).join(","), ...rows].join("\r\n");
+  const csv =
+    BOM + [headers.map(h => `"${h}"`).join(","), ...rows].join("\r\n");
 
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement("a");
-  a.href     = url;
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
   a.download = `sureay-询盘报表-${new Date().toISOString().slice(0, 10)}.csv`;
   document.body.appendChild(a);
   a.click();
@@ -163,9 +181,9 @@ const ContactRow = memo(function ContactRow({
   selected,
   onClick,
 }: {
-  contact:  Contact;
+  contact: Contact;
   selected: boolean;
-  onClick:  () => void;
+  onClick: () => void;
 }) {
   const sm = STATUS_META[contact.status] ?? STATUS_META.pending;
   const iq = fmtInquiry(contact.inquiryType);
@@ -175,9 +193,7 @@ const ContactRow = memo(function ContactRow({
       onClick={onClick}
       className={cn(
         "w-full text-left px-4 py-3 border-b border-border transition-colors",
-        selected
-          ? "bg-primary text-primary-foreground"
-          : "hover:bg-muted/40",
+        selected ? "bg-primary text-primary-foreground" : "hover:bg-muted/40"
       )}
     >
       {/* Row 1: name + status */}
@@ -188,7 +204,7 @@ const ContactRow = memo(function ContactRow({
         <span
           className={cn(
             "shrink-0 text-[10px] font-black tracking-wider px-1.5 py-0.5",
-            sm.cls,
+            sm.cls
           )}
         >
           {sm.label}
@@ -197,10 +213,12 @@ const ContactRow = memo(function ContactRow({
 
       {/* Row 2: company */}
       {contact.company && (
-        <div className={cn(
-          "text-xs truncate mb-0.5",
-          selected ? "text-primary-foreground/70" : "text-muted-foreground",
-        )}>
+        <div
+          className={cn(
+            "text-xs truncate mb-0.5",
+            selected ? "text-primary-foreground/70" : "text-muted-foreground"
+          )}
+        >
           {contact.company}
         </div>
       )}
@@ -208,20 +226,26 @@ const ContactRow = memo(function ContactRow({
       {/* Row 3: inquiry type + follow-up count + date */}
       <div className="flex items-center justify-between gap-2 mt-1">
         {iq ? (
-          <span className={cn(
-            "text-[10px] font-semibold tracking-wide px-1.5 py-0.5 border",
-            selected
-              ? "border-primary-foreground/30 text-primary-foreground/80"
-              : "border-border text-muted-foreground",
-          )}>
+          <span
+            className={cn(
+              "text-[10px] font-semibold tracking-wide px-1.5 py-0.5 border",
+              selected
+                ? "border-primary-foreground/30 text-primary-foreground/80"
+                : "border-border text-muted-foreground"
+            )}
+          >
             {iq}
           </span>
-        ) : <span />}
+        ) : (
+          <span />
+        )}
 
-        <div className={cn(
-          "flex items-center gap-2 text-[10px] font-mono shrink-0",
-          selected ? "text-primary-foreground/60" : "text-muted-foreground",
-        )}>
+        <div
+          className={cn(
+            "flex items-center gap-2 text-[10px] font-mono shrink-0",
+            selected ? "text-primary-foreground/60" : "text-muted-foreground"
+          )}
+        >
           {contact.followUps.length > 0 && (
             <span className="flex items-center gap-0.5">
               <Activity className="h-2.5 w-2.5" />
@@ -294,14 +318,19 @@ function DetailView({
   onStatusChange,
   onFollowUpAdded,
 }: {
-  contact:         Contact;
-  onBack:          () => void;
-  onStatusChange:  (id: string, status: string) => Promise<void>;
-  onFollowUpAdded: (id: string, content: string, type: FollowUpType, status?: string) => Promise<void>;
+  contact: Contact;
+  onBack: () => void;
+  onStatusChange: (id: string, status: string) => Promise<void>;
+  onFollowUpAdded: (
+    id: string,
+    content: string,
+    type: FollowUpType,
+    status?: string
+  ) => Promise<void>;
 }) {
-  const [fuContent,  setFuContent]  = useState("");
-  const [fuType,     setFuType]     = useState<FollowUpType>("Internal");
-  const [fuStatus,   setFuStatus]   = useState<string>("—");
+  const [fuContent, setFuContent] = useState("");
+  const [fuType, setFuType] = useState<FollowUpType>("Internal");
+  const [fuStatus, setFuStatus] = useState<string>("—");
   const [submitting, setSubmitting] = useState(false);
 
   // Reset form when contact changes
@@ -319,7 +348,7 @@ function DetailView({
         contact.id,
         fuContent,
         fuType,
-        fuStatus !== "—" ? fuStatus : undefined,
+        fuStatus !== "—" ? fuStatus : undefined
       );
       setFuContent("");
       setFuStatus("—");
@@ -333,12 +362,11 @@ function DetailView({
 
   // ── Sort timeline newest-first ──
   const sortedFollowUps = [...contact.followUps].sort(
-    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   );
 
   return (
     <div className="flex flex-col flex-1 min-h-0">
-
       {/* Detail header */}
       <div className="shrink-0 border-b px-4 md:px-6 py-4 bg-primary text-primary-foreground">
         <div className="flex items-start justify-between gap-4">
@@ -362,10 +390,12 @@ function DetailView({
               )}
             </div>
           </div>
-          <span className={cn(
-            "shrink-0 text-xs font-black tracking-widest px-2 py-1",
-            sm.cls,
-          )}>
+          <span
+            className={cn(
+              "shrink-0 text-xs font-black tracking-widest px-2 py-1",
+              sm.cls
+            )}
+          >
             {sm.label}
           </span>
         </div>
@@ -374,7 +404,6 @@ function DetailView({
       {/* Scrollable content */}
       <ScrollArea className="flex-1 min-h-0">
         <div className="px-4 md:px-6 py-5 space-y-6">
-
           {/* ── 客户档案 ── */}
           <section>
             <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase mb-3">
@@ -484,8 +513,9 @@ function DetailView({
                 <div className="absolute left-[7px] top-2 bottom-2 w-px bg-border" />
 
                 <div className="space-y-4">
-                  {sortedFollowUps.map((fu) => {
-                    const meta = FOLLOWUP_META[fu.type] ?? FOLLOWUP_META.Internal;
+                  {sortedFollowUps.map(fu => {
+                    const meta =
+                      FOLLOWUP_META[fu.type] ?? FOLLOWUP_META.Internal;
                     return (
                       <div key={fu.id} className="flex gap-4 pl-1">
                         {/* Timeline dot */}
@@ -495,10 +525,12 @@ function DetailView({
 
                         <div className="min-w-0 flex-1 pb-1">
                           <div className="flex items-center gap-2 mb-1 flex-wrap">
-                            <span className={cn(
-                              "text-[9px] font-black tracking-widest px-1.5 py-0.5",
-                              meta.cls,
-                            )}>
+                            <span
+                              className={cn(
+                                "text-[9px] font-black tracking-widest px-1.5 py-0.5",
+                                meta.cls
+                              )}
+                            >
                               {meta.label}
                             </span>
                             <span className="text-[10px] font-semibold text-foreground">
@@ -534,10 +566,10 @@ function DetailView({
         <Textarea
           placeholder="添加跟进记录 — 通话结果、邮件摘要、内部备注..."
           value={fuContent}
-          onChange={(e) => setFuContent(e.target.value)}
+          onChange={e => setFuContent(e.target.value)}
           rows={3}
           className="resize-none text-sm font-mono"
-          onKeyDown={(e) => {
+          onKeyDown={e => {
             if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
               e.preventDefault();
               handleSubmit();
@@ -549,7 +581,7 @@ function DetailView({
           {/* Activity type */}
           <Select
             value={fuType}
-            onValueChange={(v) => setFuType(v as FollowUpType)}
+            onValueChange={v => setFuType(v as FollowUpType)}
           >
             <SelectTrigger className="w-[120px] h-8 text-xs font-mono">
               <SelectValue />
@@ -598,25 +630,33 @@ function DetailView({
 // ── Main component ─────────────────────────────────────────────────────────────
 
 export default function Admin() {
-  const [, setLocation]   = useLocation();
-  const [activeTab, setActiveTab] = useState<"contacts" | "analytics">("contacts");
+  const [, setLocation] = useLocation();
+  const [activeTab, setActiveTab] = useState<"contacts" | "analytics">(
+    "contacts"
+  );
 
   // Data
-  const [contacts,   setContacts]   = useState<Contact[]>([]);
-  const [analytics,  setAnalytics]  = useState<{
-    id: string; eventType: string; page: string | null;
-    ipAddress: string | null; userAgent: string | null; createdAt: string;
-  }[]>([]);
+  const [contacts, setContacts] = useState<Contact[]>([]);
+  const [analytics, setAnalytics] = useState<
+    {
+      id: string;
+      eventType: string;
+      page: string | null;
+      ipAddress: string | null;
+      userAgent: string | null;
+      createdAt: string;
+    }[]
+  >([]);
   const [statistics, setStatistics] = useState<Statistics | null>(null);
 
   // UI state
-  const [loading,      setLoading]      = useState(false);
-  const [loadingMore,  setLoadingMore]  = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [loadingMore, setLoadingMore] = useState(false);
   const [statusFilter, setStatusFilter] = useState("all");
-  const [searchTerm,   setSearchTerm]   = useState("");
-  const [selectedId,   setSelectedId]   = useState<string | null>(null);
-  const [page,         setPage]         = useState(1);
-  const [hasMore,      setHasMore]      = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(false);
 
   const selectedContact = contacts.find(c => c.id === selectedId) ?? null;
 
@@ -624,7 +664,9 @@ export default function Admin() {
 
   const fetchStatistics = useCallback(async () => {
     try {
-      const res  = await fetch("/api/admin/statistics?days=7", { credentials: "include" });
+      const res = await fetch("/api/admin/statistics?days=7", {
+        credentials: "include",
+      });
       const data = await res.json();
       if (data.success) setStatistics(data.data);
     } catch {
@@ -632,46 +674,53 @@ export default function Admin() {
     }
   }, []);
 
-  const fetchContacts = useCallback(async (pageArg = 1) => {
-    const isFirstPage = pageArg === 1;
-    if (isFirstPage) setLoading(true);
-    else setLoadingMore(true);
+  const fetchContacts = useCallback(
+    async (pageArg = 1) => {
+      const isFirstPage = pageArg === 1;
+      if (isFirstPage) setLoading(true);
+      else setLoadingMore(true);
 
-    try {
-      const params = new URLSearchParams({
-        page:  String(pageArg),
-        limit: "50",
-        ...(statusFilter !== "all" && { status: statusFilter }),
-        ...(searchTerm && { search: searchTerm }),
-      });
-      const res  = await fetch(`/api/admin/contacts?${params}`, { credentials: "include" });
-      const data = await res.json();
+      try {
+        const params = new URLSearchParams({
+          page: String(pageArg),
+          limit: "50",
+          ...(statusFilter !== "all" && { status: statusFilter }),
+          ...(searchTerm && { search: searchTerm }),
+        });
+        const res = await fetch(`/api/admin/contacts?${params}`, {
+          credentials: "include",
+        });
+        const data = await res.json();
 
-      if (data.success) {
-        const incoming: Contact[] = data.data.contacts;
-        const pagination          = data.data.pagination;
+        if (data.success) {
+          const incoming: Contact[] = data.data.contacts;
+          const pagination = data.data.pagination;
 
-        if (isFirstPage) {
-          setContacts(incoming);
-        } else {
-          setContacts(prev => [...prev, ...incoming]);
+          if (isFirstPage) {
+            setContacts(incoming);
+          } else {
+            setContacts(prev => [...prev, ...incoming]);
+          }
+
+          setHasMore(pagination.page < pagination.totalPages);
+          setPage(pageArg);
         }
-
-        setHasMore(pagination.page < pagination.totalPages);
-        setPage(pageArg);
+      } catch {
+        toast.error("询盘数据加载失败");
+      } finally {
+        if (isFirstPage) setLoading(false);
+        else setLoadingMore(false);
       }
-    } catch {
-      toast.error("询盘数据加载失败");
-    } finally {
-      if (isFirstPage) setLoading(false);
-      else setLoadingMore(false);
-    }
-  }, [statusFilter, searchTerm]);
+    },
+    [statusFilter, searchTerm]
+  );
 
   const fetchAnalytics = useCallback(async () => {
     setLoading(true);
     try {
-      const res  = await fetch("/api/admin/analytics?limit=100", { credentials: "include" });
+      const res = await fetch("/api/admin/analytics?limit=100", {
+        credentials: "include",
+      });
       const data = await res.json();
       if (data.success) setAnalytics(data.data.analytics);
     } catch {
@@ -692,7 +741,9 @@ export default function Admin() {
       const data = await res.json();
       if (data.success) {
         setContacts(prev =>
-          prev.map(c => c.id === id ? { ...c, status: status as ContactStatus } : c)
+          prev.map(c =>
+            c.id === id ? { ...c, status: status as ContactStatus } : c
+          )
         );
         toast.success("状态已更新");
       }
@@ -701,41 +752,44 @@ export default function Admin() {
     }
   }, []);
 
-  const handleFollowUpAdded = useCallback(async (
-    id: string,
-    content: string,
-    type: FollowUpType,
-    status?: string,
-  ) => {
-    try {
-      const res = await fetch(`/api/admin/contacts/${id}/followups`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify({ content, type, ...(status && { status }) }),
-      });
-      const data = await res.json();
-      if (!data.success) throw new Error(data.message ?? "未知错误");
+  const handleFollowUpAdded = useCallback(
+    async (
+      id: string,
+      content: string,
+      type: FollowUpType,
+      status?: string
+    ) => {
+      try {
+        const res = await fetch(`/api/admin/contacts/${id}/followups`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ content, type, ...(status && { status }) }),
+        });
+        const data = await res.json();
+        if (!data.success) throw new Error(data.message ?? "未知错误");
 
-      const newFu: FollowUp = data.data;
-      setContacts(prev =>
-        prev.map(c =>
-          c.id === id
-            ? {
-                ...c,
-                followUps: [...c.followUps, newFu],
-                ...(status ? { status: status as ContactStatus } : {}),
-              }
-            : c
-        )
-      );
-      toast.success("跟进记录已添加");
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : "跟进记录添加失败";
-      toast.error(msg);
-      throw err; // re-throw so DetailView can reset submitting state
-    }
-  }, []);
+        const newFu: FollowUp = data.data;
+        setContacts(prev =>
+          prev.map(c =>
+            c.id === id
+              ? {
+                  ...c,
+                  followUps: [...c.followUps, newFu],
+                  ...(status ? { status: status as ContactStatus } : {}),
+                }
+              : c
+          )
+        );
+        toast.success("跟进记录已添加");
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : "跟进记录添加失败";
+        toast.error(msg);
+        throw err; // re-throw so DetailView can reset submitting state
+      }
+    },
+    []
+  );
 
   const handleLogout = async () => {
     await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
@@ -744,11 +798,13 @@ export default function Admin() {
 
   // ── Effects ─────────────────────────────────────────────────────────────────
 
-  useEffect(() => { fetchStatistics(); }, [fetchStatistics]);
+  useEffect(() => {
+    fetchStatistics();
+  }, [fetchStatistics]);
 
   useEffect(() => {
     if (activeTab === "contacts") fetchContacts();
-    else                          fetchAnalytics();
+    else fetchAnalytics();
   }, [activeTab, fetchContacts, fetchAnalytics]);
 
   // Reset to page 1 whenever filters change
@@ -761,10 +817,8 @@ export default function Admin() {
 
   return (
     <div className="h-screen flex flex-col overflow-hidden bg-background">
-
       {/* ── Command Bar (main header) ── */}
       <div className="shrink-0 bg-primary text-primary-foreground border-b border-primary/80 px-4 md:px-6 py-3 flex items-center gap-4 md:gap-6">
-
         {/* Branding */}
         <div className="font-black tracking-widest text-lg mr-6 shrink-0">
           SUREAY <span className="text-primary-foreground/50">OS</span>
@@ -779,14 +833,18 @@ export default function Admin() {
               <span className="font-black text-amber-400 ml-1">
                 {statistics.contacts.pending}
               </span>
-              <span className="text-primary-foreground/60 text-xs">条待处理</span>
+              <span className="text-primary-foreground/60 text-xs">
+                条待处理
+              </span>
             </div>
 
             <div className="w-px h-4 bg-primary-foreground/20 hidden sm:block" />
 
             <div className="hidden sm:flex items-center gap-2 text-sm">
               <Eye className="h-3.5 w-3.5 opacity-60" />
-              <span className="font-black">{statistics.analytics.pageViews}</span>
+              <span className="font-black">
+                {statistics.analytics.pageViews}
+              </span>
               <span className="text-primary-foreground/60 text-xs">次浏览</span>
               <span className="font-black text-emerald-400 ml-1">
                 {statistics.analytics.uniqueVisitors}
@@ -820,7 +878,7 @@ export default function Admin() {
                 "px-3 py-1 text-xs font-black tracking-wider transition-colors",
                 activeTab === "contacts"
                   ? "bg-primary-foreground text-primary"
-                  : "text-primary-foreground/70 hover:text-primary-foreground",
+                  : "text-primary-foreground/70 hover:text-primary-foreground"
               )}
             >
               询盘大厅
@@ -831,7 +889,7 @@ export default function Admin() {
                 "px-3 py-1 text-xs font-black tracking-wider border-l border-primary-foreground/30 transition-colors",
                 activeTab === "analytics"
                   ? "bg-primary-foreground text-primary"
-                  : "text-primary-foreground/70 hover:text-primary-foreground",
+                  : "text-primary-foreground/70 hover:text-primary-foreground"
               )}
             >
               流量监控
@@ -850,17 +908,16 @@ export default function Admin() {
 
       {/* ── Main content area ── */}
       <div className="flex flex-col flex-1 min-h-0">
-
         {/* ── 询盘大厅：主从布局 ── */}
         {activeTab === "contacts" && (
           <div className="flex flex-1 min-h-0 overflow-hidden">
-
             {/* LEFT PANE — inquiry list (hidden on mobile when a contact is selected) */}
-            <div className={cn(
-              "w-full md:w-80 shrink-0 border-r flex flex-col min-h-0",
-              selectedId ? "hidden md:flex" : "flex",
-            )}>
-
+            <div
+              className={cn(
+                "w-full md:w-80 shrink-0 border-r flex flex-col min-h-0",
+                selectedId ? "hidden md:flex" : "flex"
+              )}
+            >
               {/* List filter bar */}
               <div className="shrink-0 border-b p-3 flex gap-2">
                 <div className="relative flex-1">
@@ -868,7 +925,7 @@ export default function Admin() {
                   <Input
                     placeholder="搜索客户姓名/公司..."
                     value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
+                    onChange={e => setSearchTerm(e.target.value)}
                     className="pl-8 h-8 text-xs font-mono"
                   />
                 </div>
@@ -891,7 +948,9 @@ export default function Admin() {
                   disabled={loading}
                   title="刷新"
                 >
-                  <RefreshCcw className={cn("h-3.5 w-3.5", loading && "animate-spin")} />
+                  <RefreshCcw
+                    className={cn("h-3.5 w-3.5", loading && "animate-spin")}
+                  />
                 </Button>
                 <Button
                   variant="outline"
@@ -923,7 +982,7 @@ export default function Admin() {
                   </div>
                 ) : (
                   <>
-                    {contacts.map((c) => (
+                    {contacts.map(c => (
                       <ContactRow
                         key={c.id}
                         contact={c}
@@ -959,10 +1018,12 @@ export default function Admin() {
             </div>
 
             {/* RIGHT PANE — detail (hidden on mobile when no contact selected) */}
-            <div className={cn(
-              "flex-1 flex flex-col min-h-0",
-              selectedId ? "flex" : "hidden md:flex",
-            )}>
+            <div
+              className={cn(
+                "flex-1 flex flex-col min-h-0",
+                selectedId ? "flex" : "hidden md:flex"
+              )}
+            >
               {loading && !selectedContact ? (
                 <DetailSkeleton />
               ) : selectedContact ? (
@@ -995,7 +1056,9 @@ export default function Admin() {
                   disabled={loading}
                   className="h-8 gap-2 text-xs"
                 >
-                  <RefreshCcw className={cn("h-3.5 w-3.5", loading && "animate-spin")} />
+                  <RefreshCcw
+                    className={cn("h-3.5 w-3.5", loading && "animate-spin")}
+                  />
                   刷新
                 </Button>
               </div>
@@ -1015,15 +1078,25 @@ export default function Admin() {
                   <Table>
                     <TableHeader>
                       <TableRow className="bg-muted/30">
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">事件</TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">页面</TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">IP 地址</TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase hidden lg:table-cell">用户代理</TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">时间</TableHead>
+                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                          事件
+                        </TableHead>
+                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                          页面
+                        </TableHead>
+                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                          IP 地址
+                        </TableHead>
+                        <TableHead className="text-[10px] font-black tracking-widest uppercase hidden lg:table-cell">
+                          用户代理
+                        </TableHead>
+                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                          时间
+                        </TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
-                      {analytics.map((r) => (
+                      {analytics.map(r => (
                         <TableRow key={r.id} className="text-xs">
                           <TableCell>
                             <span className="font-mono font-bold text-xs border border-border px-1.5 py-0.5">
@@ -1051,7 +1124,6 @@ export default function Admin() {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const imagesDir = path.join(__dirname, 'client/public/images');
+const imagesDir = path.join(__dirname, "client/public/images");
 
 function replaceOptimizedImages(dir) {
   const files = fs.readdirSync(dir);
@@ -16,8 +16,8 @@ function replaceOptimizedImages(dir) {
 
     if (stat.isDirectory()) {
       replaceOptimizedImages(filePath);
-    } else if (file.endsWith('.temp.webp')) {
-      const originalPath = filePath.replace('.temp.webp', '.webp');
+    } else if (file.endsWith(".temp.webp")) {
+      const originalPath = filePath.replace(".temp.webp", ".webp");
 
       try {
         // Delete original file
@@ -36,6 +36,6 @@ function replaceOptimizedImages(dir) {
   }
 }
 
-console.log('Replacing optimized images...\n');
+console.log("Replacing optimized images...\n");
 replaceOptimizedImages(imagesDir);
-console.log('\n✓ All images replaced!');
+console.log("\n✓ All images replaced!");

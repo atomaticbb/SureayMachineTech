@@ -5,8 +5,8 @@ export default function AdminLogin() {
   const [, setLocation] = useLocation();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError]       = useState("");
-  const [loading, setLoading]   = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ export default function AdminLogin() {
         body: JSON.stringify({ username, password }),
       });
 
-      const data = await res.json() as { success: boolean; message?: string };
+      const data = (await res.json()) as { success: boolean; message?: string };
 
       if (data.success) {
         setLocation("/admin");
@@ -48,7 +48,6 @@ export default function AdminLogin() {
       }}
     >
       <div style={{ width: "100%", maxWidth: "400px" }}>
-
         {/* Wordmark */}
         <div style={{ marginBottom: "40px", textAlign: "center" }}>
           <div
@@ -131,7 +130,7 @@ export default function AdminLogin() {
               id="username"
               type="text"
               value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={e => setUsername(e.target.value)}
               required
               autoComplete="username"
               autoFocus
@@ -145,8 +144,8 @@ export default function AdminLogin() {
                 outline: "none",
                 boxSizing: "border-box",
               }}
-              onFocus={(e) => (e.currentTarget.style.borderColor = "#e8b84b")}
-              onBlur={(e) => (e.currentTarget.style.borderColor = "#003d8f")}
+              onFocus={e => (e.currentTarget.style.borderColor = "#e8b84b")}
+              onBlur={e => (e.currentTarget.style.borderColor = "#003d8f")}
             />
           </div>
 
@@ -170,7 +169,7 @@ export default function AdminLogin() {
               id="password"
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
               required
               autoComplete="current-password"
               style={{
@@ -183,8 +182,8 @@ export default function AdminLogin() {
                 outline: "none",
                 boxSizing: "border-box",
               }}
-              onFocus={(e) => (e.currentTarget.style.borderColor = "#e8b84b")}
-              onBlur={(e) => (e.currentTarget.style.borderColor = "#003d8f")}
+              onFocus={e => (e.currentTarget.style.borderColor = "#e8b84b")}
+              onBlur={e => (e.currentTarget.style.borderColor = "#003d8f")}
             />
           </div>
 

@@ -1,25 +1,25 @@
-import { Request, Response, NextFunction } from 'express';
-import { prisma } from '../db/client.js';
-import crypto from 'crypto';
+import { Request, Response, NextFunction } from "express";
+import { prisma } from "../db/client.js";
+import crypto from "crypto";
 
 const SAFE_QUERY_KEYS = [
-  'utm_source',
-  'utm_medium',
-  'utm_campaign',
-  'utm_term',
-  'utm_content',
-  'gclid',
-  'fbclid',
-  'msclkid',
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_term",
+  "utm_content",
+  "gclid",
+  "fbclid",
+  "msclkid",
 ] as const;
 
-function sanitizeAnalyticsQuery(query: Request['query']) {
+function sanitizeAnalyticsQuery(query: Request["query"]) {
   const campaign: Record<string, string> = {};
 
   for (const key of SAFE_QUERY_KEYS) {
     const value = query[key];
 
-    if (typeof value === 'string' && value.trim()) {
+    if (typeof value === "string" && value.trim()) {
       campaign[key] = value.slice(0, 200);
     }
   }
@@ -33,11 +33,11 @@ function getSessionId(req: Request, res: Response): string {
 
   if (!sessionId) {
     sessionId = crypto.randomUUID();
-    res.cookie('sessionId', sessionId, {
+    res.cookie("sessionId", sessionId, {
       maxAge: 30 * 60 * 1000, // 30分钟
       httpOnly: true,
-      sameSite: 'lax',
-      secure: process.env.NODE_ENV === 'production',
+      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
     });
   }
 
@@ -52,10 +52,12 @@ export const analyticsMiddleware = async (
 ) => {
   try {
     // 只追踪GET请求和非API路径
-    if (req.method === 'GET' && !req.path.startsWith('/api')) {
-      const ipAddress = (req.ip || req.headers['x-forwarded-for'] || req.socket.remoteAddress) as string;
-      const userAgent = req.headers['user-agent'] || '';
-      const referrer = req.headers['referer'] || req.headers['referrer'] || '';
+    if (req.method === "GET" && !req.path.startsWith("/api")) {
+      const ipAddress = (req.ip ||
+        req.headers["x-forwarded-for"] ||
+        req.socket.remoteAddress) as string;
+      const userAgent = req.headers["user-agent"] || "";
+      const referrer = req.headers["referer"] || req.headers["referrer"] || "";
       const sessionId = getSessionId(req, res);
       const campaign = sanitizeAnalyticsQuery(req.query);
       const metadata = {
@@ -64,24 +66,26 @@ export const analyticsMiddleware = async (
       };
 
       // 异步记录，不阻塞响应
-      prisma.analytics.create({
-        data: {
-          eventType: 'page_view',
-          page: req.path,
-          referrer: referrer || null,
-          ipAddress: ipAddress || null,
-          userAgent: userAgent || null,
-          sessionId,
-          metadata: JSON.stringify(metadata),
-        },
-      }).catch(error => {
-        console.error('Failed to log analytics:', error);
-      });
+      prisma.analytics
+        .create({
+          data: {
+            eventType: "page_view",
+            page: req.path,
+            referrer: referrer || null,
+            ipAddress: ipAddress || null,
+            userAgent: userAgent || null,
+            sessionId,
+            metadata: JSON.stringify(metadata),
+          },
+        })
+        .catch(error => {
+          console.error("Failed to log analytics:", error);
+        });
     }
 
     next();
   } catch (error) {
-    console.error('Analytics middleware error:', error);
+    console.error("Analytics middleware error:", error);
     next(); // 即使失败也继续处理请求
   }
 };
@@ -109,6 +113,6 @@ export const trackEvent = async (data: {
       },
     });
   } catch (error) {
-    console.error('Failed to track event:', error);
+    console.error("Failed to track event:", error);
   }
 };

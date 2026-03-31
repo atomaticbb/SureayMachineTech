@@ -12,15 +12,19 @@ export default function InlineRFQPrompt() {
             Need a Specific Size or OEM Replacement?
           </h3>
           <p className="text-[16px] text-slate-600 leading-relaxed">
-            Don't see your exact specs? Send us a blueprint, a worn sample, or just your machine model. Our team will review the details and provide a tailored quotation.
+            Don't see your exact specs? Send us a blueprint, a worn sample, or
+            just your machine model. Our team will review the details and
+            provide a tailored quotation.
           </p>
         </div>
 
         <a
           href="#rfq"
-          onClick={(event) => {
+          onClick={event => {
             event.preventDefault();
-            document.getElementById("rfq")?.scrollIntoView({ behavior: "smooth" });
+            document
+              .getElementById("rfq")
+              ?.scrollIntoView({ behavior: "smooth" });
           }}
           className="inline-flex items-center justify-between gap-3 bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-xs uppercase tracking-[0.16em] px-6 py-3.5 transition-colors duration-200 rounded-none min-w-[240px]"
         >

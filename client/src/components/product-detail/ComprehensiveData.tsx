@@ -26,15 +26,26 @@ const DOT_GRID_STYLE: CSSProperties = {
 };
 
 export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
-  if (!blade.standardDimensions || blade.standardDimensions.length === 0) return null;
+  if (!blade.standardDimensions || blade.standardDimensions.length === 0)
+    return null;
 
-  const hasLengthTeeth = blade.standardDimensions.some((r) => r.length !== undefined || r.teeth !== undefined);
-  const hasBoreHooks   = blade.standardDimensions.some((r) => r.bore  !== undefined || r.hooks !== undefined);
-  const hasOem         = blade.standardDimensions.some((r) => r.oem   !== undefined);
+  const hasLengthTeeth = blade.standardDimensions.some(
+    r => r.length !== undefined || r.teeth !== undefined
+  );
+  const hasBoreHooks = blade.standardDimensions.some(
+    r => r.bore !== undefined || r.hooks !== undefined
+  );
+  const hasOem = blade.standardDimensions.some(r => r.oem !== undefined);
   // Only show spec column if col0 label is explicitly defined
-  const hasSpec = blade.dimensionLabels?.col0 !== undefined && blade.standardDimensions.some((r) => r.spec !== undefined);
+  const hasSpec =
+    blade.dimensionLabels?.col0 !== undefined &&
+    blade.standardDimensions.some(r => r.spec !== undefined);
   // Only show col3 if explicitly defined or if there's thickness/type data
-  const hasCol3 = blade.dimensionLabels?.col3 !== undefined || blade.standardDimensions.some((r) => r.thickness !== undefined || r.type !== undefined);
+  const hasCol3 =
+    blade.dimensionLabels?.col3 !== undefined ||
+    blade.standardDimensions.some(
+      r => r.thickness !== undefined || r.type !== undefined
+    );
   const panelImage = blade.gallery?.at(-2) ?? blade.image;
 
   const col0Label = blade.dimensionLabels?.col0 ?? "Specification";
@@ -42,7 +53,8 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
   const col2Label = blade.dimensionLabels?.col2 ?? "Inner Diameter (ID)";
   const col3Label = blade.dimensionLabels?.col3 ?? "Thickness";
   const col4Label = blade.dimensionLabels?.col4 ?? "Teeth";
-  const captionText = blade.dimensionLabels?.caption ??
+  const captionText =
+    blade.dimensionLabels?.caption ??
     "* Custom manufacturing is available. The outer diameter can reach up to 1200 mm upon request.";
 
   return (
@@ -60,7 +72,6 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
 
       {/* Flex row: items-start — each column its own height, no cross-stretch */}
       <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
-
         {/* Left — product image, fixed width so table can't encroach */}
         <div className="flex-shrink-0 w-full lg:w-[420px] xl:w-[480px]">
           <div
@@ -122,7 +133,11 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                 {blade.standardDimensions.map((row, i) => (
                   <TableRow
                     key={i}
-                    className={i % 2 === 0 ? "bg-white hover:bg-slate-50" : "bg-slate-50/60 hover:bg-slate-50"}
+                    className={
+                      i % 2 === 0
+                        ? "bg-white hover:bg-slate-50"
+                        : "bg-slate-50/60 hover:bg-slate-50"
+                    }
                   >
                     {hasSpec && (
                       <TableCell className="px-3 py-2.5 font-mono text-[14px] text-slate-500 whitespace-pre-line">
@@ -130,10 +145,14 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                       </TableCell>
                     )}
                     <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {hasSpec ? (row.dimension ?? row.od) : (row.dimension ?? row.spec ?? row.od)}
+                      {hasSpec
+                        ? (row.dimension ?? row.od)
+                        : (row.dimension ?? row.spec ?? row.od)}
                     </TableCell>
                     <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {hasBoreHooks ? (row.thickness ?? "—") : (row.bolt ?? row.id)}
+                      {hasBoreHooks
+                        ? (row.thickness ?? "—")
+                        : (row.bolt ?? row.id)}
                     </TableCell>
                     {hasLengthTeeth ? (
                       <>
@@ -177,7 +196,6 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
             </Table>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -177,8 +177,8 @@ export default defineConfig({
         manualChunks: {
           vendor: ["react", "react-dom"],
           router: ["wouter"],
-          ui:     ["lucide-react", "framer-motion"],
-          radix:  [
+          ui: ["lucide-react", "framer-motion"],
+          radix: [
             "@radix-ui/react-accordion",
             "@radix-ui/react-dialog",
             "@radix-ui/react-dropdown-menu",
@@ -207,12 +207,12 @@ export default defineConfig({
       deny: ["**/.*"],
     },
     proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
+      "/api": {
+        target: "http://localhost:3000",
         changeOrigin: true,
       },
-      '/health': {
-        target: 'http://localhost:3000',
+      "/health": {
+        target: "http://localhost:3000",
         changeOrigin: true,
       },
     },

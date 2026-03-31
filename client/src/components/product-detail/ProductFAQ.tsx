@@ -90,7 +90,6 @@ export default function ProductFAQ({ faqs, productName }: Props) {
 
       {/* ── 2-column accordion grid ────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 border border-slate-200">
-
         {/* Left — Technical FAQs */}
         <div className="border-b border-slate-200 lg:border-b-0 lg:border-r lg:border-slate-200">
           <ColHeader index="01" label="Technical FAQs" dark />
@@ -110,7 +109,6 @@ export default function ProductFAQ({ faqs, productName }: Props) {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
