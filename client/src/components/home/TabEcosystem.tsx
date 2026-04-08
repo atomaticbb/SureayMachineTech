@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ECOSYSTEMS } from "@/data/homeData";
 
 export default function TabEcosystem() {
-  const [expanded, setExpanded] = useState<number | null>(null);
+  const [expanded, setExpanded] = useState<number | null>(0);
   const active = expanded !== null ? ECOSYSTEMS[expanded] : null;
 
   return (
