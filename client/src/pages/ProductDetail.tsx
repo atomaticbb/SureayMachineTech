@@ -69,8 +69,8 @@ export default function ProductDetail() {
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
       <SEO
-        title={blade.fullName || blade.name}
-        description={blade.description}
+        title={pageSeo.title || blade.fullName || blade.name}
+        description={pageSeo.description || blade.description}
         canonicalUrl={`/products/${blade.id}`}
         keywords={pageSeo.keywords}
         breadcrumbs={[

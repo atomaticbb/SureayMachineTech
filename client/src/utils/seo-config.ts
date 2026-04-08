@@ -5,8 +5,8 @@
  */
 
 export interface PageSEO {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   keywords?: string;
   ogImage?: string;
 }
@@ -87,11 +87,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "rotary-slitter-knives": {
     title:
-      "Industrial Rotary Slitter Knives | Circular Slitting Blades | Sureay",
+      "Rotary Slitter Blades & Knives | D2, HSS, Carbide | Sureay",
     description:
-      "Precision circular rotary slitter knives for continuous converting lines. Thickness tolerance ±0.002mm, runout ≤0.02mm. Custom metallurgy from D2 to solid carbide. Shear, score, and razor slitting for film, paper, foil, and non-wovens.",
+      "Rotary slitter blades & knives ground to \u00b10.002mm. D2, M2 HSS & solid carbide. Shear, score & razor profiles. OEM fit Tidland, Kampf, Atlas.",
     keywords:
-      "rotary slitter knives, circular blades, slitting blades, converting blades, top bottom knives",
+      "rotary slitter blades, rotary slitter knives, circular slitter knives, slitter blade, rotary slitting blades, industrial slitter knives, converting blades, top bottom knives",
   },
 
   "metal-foil-strip-slitter-knives": {
@@ -103,11 +103,12 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "twin-shaft-blades-recycling": {
-    title: "Twin Shaft Shredder Blades | D2/SKD11 for MSW Recycling | Sureay",
+    title:
+      "Chromium Carbide Twin Shaft Shredder Blades | Sureay",
     description:
-      "Heavy-duty D2/SKD11 twin-shaft claw blades for MSW, bulky plastic, and wood pallet recycling. FEA-optimized 3–12 claw geometries. Precision Wire-EDM bores for SSI, Untha, Weima, and Vecoplan systems. Deep cryogenic treatment for maximum wear resistance.",
+      "Chromium carbide D2/SKD11 twin-shaft shredder blades for MSW & plastic recycling. 3\u201312 claw geometries, Wire-EDM bores. Fit SSI, Untha, Weima.",
     keywords:
-      "twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades",
+      "chromium carbide rotor blades, twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades, chromium carbide rotor blades wholesale",
   },
 
   "multi-shaft-blades-metal": {
@@ -128,19 +129,20 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "tissue-log-saw-blades": {
     title:
-      "D2 Ø610 Tissue Log Saw Blades | Paper Converting Circular Saws | Sureay",
+      "Tissue Log Saw Blades | D2 \u00d8610\u20131000mm | Sureay",
     description:
-      "Premium Ø610mm tissue log saw blades with mirror polish finish. D2 steel hardened to 62 HRC. Optimized bevel geometry for speeds >2500 RPM. TiN coating option for wet environments. Clean cuts, zero fiber pull.",
+      "Tissue log saw blades \u00d8610\u20131000mm, D2 HRC 58\u201360, mirror polish, \u22640.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
     keywords:
-      "tissue log saw blades, paper saw blades, converting circular saws, D2 saw blades",
+      "tissue log saw blades, log saw blades tissue, log saw blades, paper saw blades, converting circular saws, D2 saw blades",
   },
 
   "granulator-blades": {
-    title: "Industrial Granulator Blades | Plastic Crusher Knives | Sureay",
+    title:
+      "Plastic Granulator Blades & Crusher Knives | Sureay",
     description:
-      "Heavy-duty granulator blades for PET, PVC & PP recycling. Rotor and stator knives with precision-ground V-edge geometry. Maximize regrind quality, reduce motor load. Extended mean time between regrind (MTBR).",
+      "Plastic granulator blades in D2, SKD-11 & Cr12MoV. Rotor/stator knives ground to \u00b10.02mm for Cumberland, Herbold, Rapid. HRC 58\u201362. Get quote.",
     keywords:
-      "granulator blades, plastic crusher knives, rotor stator blades, PET recycling, granulator knives",
+      "plastic granulator blades, granulator blades, granulator blades suppliers, plastic crusher knives, granulator knives, rotor stator blades, PET recycling blades",
   },
 
   "tire-shredder-blades": {
@@ -162,11 +164,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "three-knife-trimmer-blades": {
     title:
-      "HSS/TC Three-Knife Trimmer Blades for Müller Martini, Heidelberg & Kolbus | Sureay",
+      "Trimmer Blades & Spare Knives for Combi Head | Sureay",
     description:
-      "OEM-fit replacement knife sets (1 Front + 2 Side knives) for Müller Martini 301/361/3675 Orbit, Heidelberg, and Kolbus three-knife trimmers. Available in HSS (Duritan) and Tungsten Carbide (TC/Widia). Custom dimensions on request.",
+      "HSS & TC three-knife trimmer blades, spare knives for combi head. OEM fit M\u00fcller Martini, Heidelberg, Kolbus. Front + side sets available.",
     keywords:
-      "three knife trimmer blades, Müller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, Heidelberg trimmer knife, Kolbus trimmer blade set, 3 knife trimmer",
+      "three knife trimmer blades, spare knives for combi head, M\u00fcller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, Heidelberg trimmer knife, Kolbus trimmer blade set",
     ogImage:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
@@ -180,11 +182,12 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "single-shaft-bed-knives": {
-    title: "Single Shaft Bed Knives | Stator Knives for Shredders | Sureay",
+    title:
+      "Stator Knife & Bed Knives for Shredders | Sureay",
     description:
-      "Heavy-duty stator bed knives for single-shaft shredders. Press-quenched D2/DC53/42CrMo, straightness ≤ 0.05mm/m, through-hardened for multiple regrind cycles. Seamless single pieces to 3,500mm. OEM-matched slotted holes for Vecoplan, Weima, Lindner, Zerma.",
+      "Stator knives (bed knives) for single-shaft shredders. D2/DC53, straightness \u22640.05mm/m, lengths to 3500mm. Fit Vecoplan, Weima, Lindner, Zerma.",
     keywords:
-      "single shaft bed knives, shredder stator knives, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
+      "stator knife, stator knives, single shaft bed knives, shredder bed knife, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
   },
 
   "metal-coil-slitting-knives": {
@@ -211,19 +214,57 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "cold saw blades, HSS cold saw blades, M35 cobalt cold saw, TCT cold saw blades, metal cold circular saw, tube cutting blades, cold saw blade manufacturer",
   },
+
+  "lithium-battery-slitting-knives": {
+    title:
+      "Tungsten Carbide Battery Slitting Knives | Electrode Foil | Sureay",
+    description:
+      "Mirror-finish tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra \u22640.05\u03bcm edge, \u00b10.001mm tolerance. Zero micro-burrs on Al/Cu foil.",
+    keywords:
+      "tungsten carbide slitter blades, battery slitting knives, lithium battery knives, electrode foil slitter, carbide slitter blades, carbide circular knives",
+  },
+
+  "corrugated-slitter-scorer-blades": {
+    title:
+      "Tungsten Carbide Corrugated Slitter Scorer Blades | BHS Fosber | Sureay",
+    description:
+      "Solid tungsten carbide thin slitter blades for corrugated board dry-end lines. Zero-crush cutting. OEM fit for BHS, Fosber, Marquip. Slotter & scorer knives in stock.",
+    keywords:
+      "corrugated slitter blades, tungsten carbide slitter blades, scorer blades, BHS slitter, Fosber slitter knives, corrugated box knives",
+  },
+
+  "nonwoven-slitter-knives": {
+    title:
+      "Nonwoven Slitter Knives | M2 HSS Circular Blades for Spunbond | Sureay",
+    description:
+      "M2 HSS & D2 circular slitter knives for spunbond, meltblown & SMS nonwoven fabrics. Anti-fraying rake geometry for hygiene, medical & filtration lines.",
+    keywords:
+      "nonwoven slitter, nonwoven slitting blades, nonwoven slitter knives, spunbond slitter knives, meltblown cutting blades, medical nonwoven knives",
+  },
+
+  "scrap-chopper-blades": {
+    title: "Scrap Chopper Blades | S7 & H13 for Coil Processing | Sureay",
+    description:
+      "Heavy-duty scrap chopper blades in S7 and H13 tool steel for metal slitting lines. 4-edge indexable design, optional carbide inlay. High impact resistance.",
+    keywords:
+      "scrap chopper blades, coil processing blades, metal scrap chopper, slitting line chopper knives, S7 chopper blades",
+  },
+
+  "rotary-slitter-knives-paper": {
+    title:
+      "Paper Slitter Knives | Circular Blades for Tissue & Corrugated | Sureay",
+    description:
+      "Precision circular slitter knives for paper, tissue & corrugated converting. D2, M2 HSS, 52100 steel. \u00b10.002mm tolerance. Matched shear pairs for clean fiber cuts.",
+    keywords:
+      "paper slitter knives, tissue slitter blades, corrugated slitter knives, paper converting blades, circular paper knives",
+  },
 };
 
 /**
  * Get SEO configuration for a specific page/route
  */
 export function getSEO(pageKey: string): PageSEO {
-  return (
-    SEO_CONFIG[pageKey] || {
-      title: "Sureay Machinery | Precision Industrial Blades",
-      description:
-        "Leading manufacturer of precision industrial blades for recycling and converting applications.",
-    }
-  );
+  return SEO_CONFIG[pageKey] || {};
 }
 
 /**
