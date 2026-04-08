@@ -177,6 +177,7 @@ const PAGE_SCHEMA = {
           "Precision circular slitting knives for BOPP film, flexible packaging, and label converting at ±0.002mm tolerance.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/rotary-slitter-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },
     {
@@ -191,6 +192,7 @@ const PAGE_SCHEMA = {
           "D2 and M2 HSS circular slitter knives with DLC anti-adhesion coating for pressure-sensitive tape, adhesive laminate, and label stock slitting.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/rotary-slitter-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },
     {
@@ -204,6 +206,7 @@ const PAGE_SCHEMA = {
           "M2 HSS circular slitter knives with 15-20° positive rake geometry for spunbond, SMS, and meltblown nonwoven fabrics.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/nonwoven-slitter-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },
   ],

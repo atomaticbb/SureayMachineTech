@@ -10,6 +10,31 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import { getDispatchById, getAdjacentDispatches } from "@/data/news";
+import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
+import { getBladeById } from "@/data/blades";
+import type { Blade } from "@/data/blades";
+
+// ── Inline Link Parser ───────────────────────────────────────────────────────
+// Parses [anchor text](/path) markdown-link syntax within content strings.
+
+function renderInlineLinks(text: string): React.ReactNode {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  if (parts.length === 1) return text;
+
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (match) {
+      return (
+        <Link key={i} href={match[2]}>
+          <a className="text-[#001f4d] border-b border-[#001f4d] hover:text-[#e8b84b] hover:border-[#e8b84b] transition-colors font-semibold">
+            {match[1]}
+          </a>
+        </Link>
+      );
+    }
+    return part;
+  });
+}
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -19,6 +44,10 @@ export default function NewsDetail() {
 
   const article = getDispatchById(id);
   const { prev, next } = getAdjacentDispatches(id);
+
+  const relatedBlades = (article?.relatedProductIds ?? [])
+    .map((pid) => getBladeById(pid))
+    .filter((b): b is Blade => !!b);
 
   // ── 404 guard ──────────────────────────────────────────────────────────────
   if (!article) {
@@ -212,7 +241,7 @@ export default function NewsDetail() {
                         className="bg-slate-50 border border-slate-200 border-l-4 border-l-[#001f4d] px-8 py-6 my-8"
                       >
                         <p className="font-mono text-sm text-[#001f4d] leading-relaxed tracking-wide">
-                          {block.value}
+                          {renderInlineLinks(block.value)}
                         </p>
                       </div>
                     );
@@ -239,7 +268,7 @@ export default function NewsDetail() {
                         key={i}
                         className="text-lg leading-relaxed text-slate-700 mb-6"
                       >
-                        {block.value}
+                        {renderInlineLinks(block.value)}
                       </p>
                     );
                 }
@@ -254,6 +283,15 @@ export default function NewsDetail() {
             </article>
           </div>
         </section>
+
+        {/* ═══════════════════════════════════════════════════════════════════
+            ZONE 3.5 — Referenced Products (Internal Linking)
+        ═══════════════════════════════════════════════════════════════════ */}
+        {relatedBlades.length > 0 && (
+          <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+            <CompatibleTooling blades={relatedBlades} />
+          </section>
+        )}
 
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 4 — The Archive Traversal (Footer Navigation)

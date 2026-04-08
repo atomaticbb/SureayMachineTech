@@ -57,7 +57,7 @@ export const analyticsMiddleware = async (
         req.headers["x-forwarded-for"] ||
         req.socket.remoteAddress) as string;
       const userAgent = req.headers["user-agent"] || "";
-      const referrer = req.headers["referer"] || req.headers["referrer"] || "";
+      const referrer = (req.headers["referer"] || req.headers["referrer"] || "") as string;
       const sessionId = getSessionId(req, res);
       const campaign = sanitizeAnalyticsQuery(req.query);
       const metadata = {

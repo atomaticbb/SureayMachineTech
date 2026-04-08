@@ -19,6 +19,7 @@ export interface DispatchArticle {
   image: string;
   readTime: string;
   isFeatured?: boolean;
+  relatedProductIds?: string[];
   content: NewsContent[];
 }
 
@@ -72,6 +73,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     image: "/images/news/choosing-industrial-blades-materials.webp",
     readTime: "8 MIN",
     isFeatured: true,
+    relatedProductIds: [
+      "granulator-blades",
+      "rotary-slitter-knives",
+      "twin-shaft-blades-recycling",
+      "metal-shear-knives",
+    ],
     content: [
       { type: "h2", value: "Introduction" },
       {
@@ -82,7 +89,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "This guide helps engineers and procurement teams select the most suitable material for slitter knives, shredder blades, granulator knives, and recycling cutting tools.",
+          "This guide helps engineers and procurement teams select the most suitable material for [slitter knives](/products/rotary-slitter-knives), [shredder blades](/products/twin-shaft-blades-recycling), [granulator knives](/products/granulator-blades), and recycling cutting tools.",
       },
       {
         type: "image",
@@ -99,7 +106,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "D2 TYPICAL APPLICATIONS: Slitter knives, paper cutting blades, plastic cutting knives, industrial shearing knives.",
+          "D2 TYPICAL APPLICATIONS: [Slitter knives](/products/rotary-slitter-knives), [paper cutting blades](/products/paper-cutting-blades), plastic cutting knives, [industrial shearing knives](/products/metal-shear-knives).",
       },
 
       { type: "h2", value: "SKD-11 Tool Steel" },
@@ -123,7 +130,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "TUNGSTEN CARBIDE APPLICATIONS: Recycling shredder knives, abrasive material cutting, glass fiber or composite cutting, high-wear environments where blade longevity outweighs regrinding flexibility.",
+          "TUNGSTEN CARBIDE APPLICATIONS: [Recycling shredder knives](/products/twin-shaft-blades-recycling), abrasive material cutting, glass fiber or composite cutting, high-wear environments where blade longevity outweighs regrinding flexibility.",
       },
 
       { type: "h2", value: "Material Property Comparison" },
@@ -138,7 +145,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Best choice: Tungsten Carbide. Ideal for plastic recycling shredders, fiberglass cutting, and abrasive materials. Advantages include extremely long blade life, reduced downtime, and consistent cutting performance. The primary limitation is higher cost and fragility under impact loads.",
+          "Best choice: Tungsten Carbide. Ideal for [plastic recycling shredders](/products/twin-shaft-blades-recycling), fiberglass cutting, and abrasive materials. Advantages include extremely long blade life, reduced downtime, and consistent cutting performance. The primary limitation is higher cost and fragility under impact loads.",
       },
 
       { type: "h3", value: "General Industrial Cutting" },
@@ -208,6 +215,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Discover how upgrading your shredder blades from standard D2 to DC53 or H13 tool steel can prevent catastrophic blade failure, survive tramp metal impacts, and maximize your recycling plant's uptime.",
     image: "/images/news/shredder-machine-working.webp",
     readTime: "7 MIN",
+    relatedProductIds: [
+      "twin-shaft-blades-recycling",
+      "single-shaft-rotor-inserts",
+      "single-shaft-bed-knives",
+      "tire-shredder-blades",
+    ],
     content: [
       {
         type: "paragraph",
@@ -247,7 +260,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "For clean, post-industrial plastic regrind (using granulators), D2 remains a cost-effective choice. But for primary breakdown shredders facing unpredictable MSW, D2 is a ticking time bomb.",
+          "For clean, post-industrial plastic regrind (using [granulators](/products/granulator-blades)), D2 remains a cost-effective choice. But for primary breakdown shredders facing unpredictable MSW, D2 is a ticking time bomb.",
       },
 
       { type: "h2", value: "Upgrading the Arsenal: DC53 and H13 Tool Steels" },
@@ -260,13 +273,13 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "DC53 is an advanced modification of standard D2. Through a refined alloy composition and tighter control over the steel-making process, DC53 eliminates the massive carbide structures found in D2. Heat-treated to HRC 60, DC53 maintains the excellent wear resistance of D2 but delivers double the impact toughness. It is the ultimate choice for heavy-duty single-shaft shredder inserts processing tough, thick-walled plastics, copper cables, and tires where moderate shock loads are expected.",
+          "DC53 is an advanced modification of standard D2. Through a refined alloy composition and tighter control over the steel-making process, DC53 eliminates the massive carbide structures found in D2. Heat-treated to HRC 60, DC53 maintains the excellent wear resistance of D2 but delivers double the impact toughness. It is the ultimate choice for heavy-duty [single-shaft shredder inserts](/products/single-shaft-rotor-inserts) processing tough, thick-walled plastics, copper cables, and tires where moderate shock loads are expected.",
       },
       { type: "h3", value: "H13 (1.2344): The Shock-Absorbing King" },
       {
         type: "paragraph",
         value:
-          "Originally developed for hot-forging dies, H13 hot-work tool steel is the undisputed champion of the scrap yard. It contains lower carbon (0.40%) and utilizes a chromium-molybdenum-vanadium matrix. Hardened to a slightly lower HRC 52–56, H13 possesses massive core toughness. When an H13 twin-shaft shredder blade hits a solid steel engine block, the blade might dent or deform elastically, but it will not shatter. This shock-absorbing characteristic saves the shredder's gearbox, hexagonal shaft, and bearings from catastrophic failure.",
+          "Originally developed for hot-forging dies, H13 hot-work tool steel is the undisputed champion of the scrap yard. It contains lower carbon (0.40%) and utilizes a chromium-molybdenum-vanadium matrix. Hardened to a slightly lower HRC 52–56, H13 possesses massive core toughness. When an H13 [twin-shaft shredder blade](/products/twin-shaft-blades-recycling) hits a solid steel engine block, the blade might dent or deform elastically, but it will not shatter. This shock-absorbing characteristic saves the shredder's gearbox, hexagonal shaft, and bearings from catastrophic failure.",
       },
 
       {
@@ -298,7 +311,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "At Sureay, we engineer our Single Shaft Shredder Blades and Twin Shaft Shredder Knives to perfectly match your specific waste stream. From DC53 concave inserts for high-throughput plastic reduction to massive H13 hook blades for heavy metal and tire processing, our vacuum heat-treatment protocols ensure your tooling survives the most violent impacts your facility can throw at it.",
+          "At Sureay, we engineer our [Single Shaft Shredder Blades](/products/single-shaft-rotor-inserts) and [Twin Shaft Shredder Knives](/products/twin-shaft-blades-recycling) to perfectly match your specific waste stream. From DC53 concave inserts for high-throughput plastic reduction to massive H13 hook blades for heavy metal and [tire processing](/products/tire-shredder-blades), our vacuum heat-treatment protocols ensure your tooling survives the most violent impacts your facility can throw at it.",
       },
       {
         type: "paragraph",
@@ -316,6 +329,11 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Commissioning of our new 5,000 m² high-precision CNC grid expands heavy-duty shredder blade production capacity by 40%, establishing Sureay's largest single-facility output in its 16-year operational history.",
     image: "/images/about/factory-00.webp",
     readTime: "5 MIN",
+    relatedProductIds: [
+      "granulator-blades",
+      "metal-shear-knives",
+      "rotary-slitter-knives",
+    ],
     content: [
       { type: "h2", value: "Background & Rationale" },
       {
@@ -359,7 +377,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The expanded CNC grid enables parallel scheduling across product families — shredder blade runs can now proceed concurrently with log saw blade batches without resource contention. This architectural separation of machine types by product vertical minimizes setup changeover time and preserves dedicated tooling inventories per product line.",
+          "The expanded CNC grid enables parallel scheduling across product families — [shredder blade](/products/twin-shaft-blades-recycling) runs can now proceed concurrently with [log saw blade](/products/tissue-log-saw-blades) batches without resource contention. This architectural separation of machine types by product vertical minimizes setup changeover time and preserves dedicated tooling inventories per product line.",
       },
       { type: "h2", value: "Quality Protocol Integration" },
       {
@@ -391,6 +409,11 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Enhance precision and longevity in heavy-duty fabrication. High-hardness shear blades deliver exceptional durability, accuracy, and operational efficiency in industrial metal cutting applications.",
     image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
     readTime: "7 MIN",
+    relatedProductIds: [
+      "metal-shear-knives",
+      "metal-coil-slitting-knives",
+      "metal-cold-saw-blades",
+    ],
     content: [
       {
         type: "h2",
@@ -406,7 +429,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "High-hardness shear blades are a class of heavy-duty industrial knives designed to maintain a sharp, durable edge under continuous, high-stress use. Unlike standard off-the-shelf blades, Sureay's Metal Shear Knives are forged from premium tool steels and advanced alloys—such as 9CrSi, Cr12MoV (D2 equivalent), and H13.",
+          "High-hardness shear blades are a class of heavy-duty industrial knives designed to maintain a sharp, durable edge under continuous, high-stress use. Unlike standard off-the-shelf blades, Sureay's [Metal Shear Knives](/products/metal-shear-knives) are forged from premium tool steels and advanced alloys—such as 9CrSi, Cr12MoV (D2 equivalent), and H13.",
       },
       {
         type: "paragraph",
@@ -436,7 +459,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Cutting stainless steel requires extraordinary wear resistance. Our Cr12MoV and 6CrW2Si blades (58-62 HRC) excel in metalworking applications by maintaining a sharp edge over prolonged use.",
+          "Cutting stainless steel requires extraordinary wear resistance. Our Cr12MoV and 6CrW2Si blades (58-62 HRC) excel in [metal coil slitting](/products/metal-coil-slitting-knives) and shearing applications by maintaining a sharp edge over prolonged use.",
       },
       { type: "h3", value: "Hot-Rolled Billet Shearing (Extreme Temp)" },
       {
@@ -518,7 +541,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "High-hardness shear blades offer unparalleled durability, precision, and cost savings for heavy metal fabrication. Whether you operate in shipbuilding, aviation, structural steel, or a dedicated steel service center, upgrading your guillotine shears with exact-match OEM cutting solutions will guarantee continuous, peak performance.",
+          "High-hardness shear blades offer unparalleled durability, precision, and cost savings for heavy metal fabrication. Whether you operate in shipbuilding, aviation, structural steel, or a dedicated steel service center, upgrading your guillotine shears with [exact-match OEM metal shear knives](/products/metal-shear-knives) will guarantee continuous, peak performance.",
       },
       {
         type: "paragraph",
@@ -536,8 +559,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Technical whitepaper on how deep cryogenic processing (-196°C) enhances wear resistance in plastic recycling applications.",
     image: "/images/process/heat-treatment.webp",
     readTime: "4 MIN",
+    relatedProductIds: [
+      "granulator-blades",
+      "twin-shaft-blades-recycling",
+      "metal-shear-knives",
+    ],
     content: [
-      { type: "h2", value: "Metallurgical Basis" },
       {
         type: "paragraph",
         value:
@@ -563,7 +590,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "DCP is recommended for blades operating in abrasive-dominant environments: HDPE/PP pipe granulation, wet-process tissue log sawing, and multi-shaft recycling of glass-fibre-reinforced polymers. For impact-dominant applications (steel scrap shredding), conventional treatment with toughness-optimized tempering remains the preferred specification.",
+          "DCP is recommended for blades operating in abrasive-dominant environments: HDPE/PP pipe [granulation](/products/granulator-blades), wet-process [tissue log sawing](/products/tissue-log-saw-blades), and [multi-shaft recycling](/products/twin-shaft-blades-recycling) of glass-fibre-reinforced polymers. For impact-dominant applications (steel scrap shredding), conventional treatment with toughness-optimized tempering remains the preferred specification.",
       },
     ],
   },
@@ -576,12 +603,18 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Live demonstrations of our aggressively angled hook-tooth profiles engineered for high-throughput single shaft shredders.",
     image: "/images/process/cnc-precision-grinding.webp",
     readTime: "3 MIN",
+    relatedProductIds: [
+      "twin-shaft-blades-recycling",
+      "granulator-blades",
+      "tire-shredder-blades",
+      "scrap-chopper-blades",
+    ],
     content: [
       { type: "h2", value: "Exhibition Overview" },
       {
         type: "paragraph",
         value:
-          "K 2024 (Düsseldorf, October 16–23) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth single-shaft shredder blade series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
+          "K 2024 (Düsseldorf, October 16–23) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth [single-shaft shredder blade](/products/single-shaft-rotor-inserts) series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
       },
       {
         type: "callout",
@@ -605,12 +638,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "A comparative metrology report on blade surface friction coefficients in high-humidity tissue paper converting environments.",
     image: "/images/common/Quality-Inspection.webp",
     readTime: "6 MIN",
+    relatedProductIds: [
+      "tissue-log-saw-blades",
+      "rotary-slitter-knives",
+      "paper-cutting-blades",
+    ],
     content: [
       { type: "h2", value: "Test Objective" },
       {
         type: "paragraph",
         value:
-          "Tissue log saw blades operating in wet environments (drum moisture content 8–12%) are subject to adhesive wear from cellulose fibre accumulation at the cutting edge, and corrosive attack from free chlorine in process water. This study benchmarks PVD-deposited TiN and hard chrome coatings against uncoated D2 baseline across friction, adhesion, and service-life metrics.",
+          "[Tissue log saw blades](/products/tissue-log-saw-blades) operating in wet environments (drum moisture content 8–12%) are subject to adhesive wear from cellulose fibre accumulation at the cutting edge, and corrosive attack from free chlorine in process water. This study benchmarks PVD-deposited TiN and hard chrome coatings against uncoated D2 baseline across friction, adhesion, and service-life metrics.",
       },
       {
         type: "callout",
@@ -632,7 +670,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "RECOMMENDATION: TiN PVD coating is the preferred specification for tissue log saw blades in high-humidity, chlorinated-water environments. Hard chrome is not recommended for cyclic-impact cutting applications regardless of substrate hardness.",
+          "RECOMMENDATION: TiN PVD coating is the preferred specification for [tissue log saw blades](/products/tissue-log-saw-blades) in high-humidity, chlorinated-water environments. Hard chrome is not recommended for cyclic-impact cutting applications regardless of substrate hardness.",
       },
       { type: "h2", value: "Application Guidelines" },
       {
@@ -651,12 +689,16 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Zero non-conformances reported during the latest external audit of our Ma'anshan manufacturing facility.",
     image: "/images/about/factory.webp",
     readTime: "2 MIN",
+    relatedProductIds: [
+      "granulator-blades",
+      "metal-shear-knives",
+      "twin-shaft-blades-recycling",
+    ],
     content: [
-      { type: "h2", value: "Audit Scope" },
       {
         type: "paragraph",
         value:
-          "The triennial ISO 9001:2015 surveillance audit was conducted by SGS Group auditors on 10–11 June 2024, covering the full scope of the Ma'anshan Quality Management System: design and development, production, inspection and testing, internal audit, management review, and corrective action processes.",
+          "The triennial ISO 9001:2015 surveillance audit was conducted by SGS Group auditors on 10–11 June 2024, covering the full scope of the Ma'anshan Quality Management System: design and development, production of [industrial blades and cutting knives](/products), inspection and testing, internal audit, management review, and corrective action processes.",
       },
       {
         type: "callout",
@@ -679,12 +721,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Engineering guidelines for balancing edge sharpness and core toughness to prevent blade deflection during high-speed cutting.",
     image: "/images/products/blades/tissue-log-saw-blades-02.webp",
     readTime: "4 MIN",
+    relatedProductIds: [
+      "tissue-log-saw-blades",
+      "paper-cutting-blades",
+      "three-knife-trimmer-blades",
+    ],
     content: [
       { type: "h2", value: "The Geometry-Performance Trade-off" },
       {
         type: "paragraph",
         value:
-          "Log saw blade geometry is governed by three competing demands: edge sharpness (low included angle), deflection resistance (blade section thickness and crown profile), and tooth durability (sufficient included angle to resist chipping under cyclic impact from log cores and wrappers). Industry standard bevel angles range from 28° to 42° depending on log diameter, rotation speed, and cellulose density.",
+          "[Log saw blade](/products/tissue-log-saw-blades) geometry is governed by three competing demands: edge sharpness (low included angle), deflection resistance (blade section thickness and crown profile), and tooth durability (sufficient included angle to resist chipping under cyclic impact from log cores and wrappers). Industry standard bevel angles range from 28° to 42° depending on log diameter, rotation speed, and cellulose density.",
       },
       {
         type: "callout",
@@ -708,12 +755,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Strategic partnerships formed with three top-tier European granulator manufacturers for custom blade geometry development.",
     image: "/images/common/industrial-waste-1.webp",
     readTime: "3 MIN",
+    relatedProductIds: [
+      "granulator-blades",
+      "twin-shaft-blades-recycling",
+      "single-shaft-rotor-inserts",
+    ],
     content: [
       { type: "h2", value: "Partnership Agreements" },
       {
         type: "paragraph",
         value:
-          "ChinaPlas 2024 (Shanghai, 23–26 April) resulted in the signing of three co-engineering framework agreements with European granulator and shredder OEMs. These agreements establish Sureay as the preferred blade development partner for next-generation machine platforms, with joint specification, prototyping, and qualification cycles built into the product development timeline.",
+          "ChinaPlas 2024 (Shanghai, 23–26 April) resulted in the signing of three co-engineering framework agreements with European [granulator](/products/granulator-blades) and [shredder](/products/twin-shaft-blades-recycling) OEMs. These agreements establish Sureay as the preferred blade development partner for next-generation machine platforms, with joint specification, prototyping, and qualification cycles built into the product development timeline.",
       },
       {
         type: "callout",

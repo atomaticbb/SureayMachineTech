@@ -175,6 +175,7 @@ const PAGE_SCHEMA = {
           "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
         brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
         url: "https://sureay.com/products/lithium-battery-slitting-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },
   ],

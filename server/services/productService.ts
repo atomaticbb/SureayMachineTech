@@ -1,5 +1,5 @@
 import { prisma } from "../db/client.js";
-import { Product } from "../../shared/types/product.js";
+import type { Product } from "../../shared/types/product.js";
 
 export const getAllProducts = async (): Promise<Product[]> => {
   try {
@@ -8,14 +8,16 @@ export const getAllProducts = async (): Promise<Product[]> => {
       orderBy: { createdAt: "desc" },
     });
 
-    return products.map(p => ({
+    return products.map((p) => ({
       id: p.id,
       name: p.name,
+      nameEn: p.name,
+      slug: p.id,
       description: p.description,
-      category: p.category as Product["category"],
+      mainCategory: "blades" as const,
+      subCategory: (p.category || "alloy-blades") as Product["subCategory"],
       image: p.image,
       specs: p.specs ? JSON.parse(p.specs) : undefined,
-      features: p.features ? JSON.parse(p.features) : undefined,
       applications: p.applications ? JSON.parse(p.applications) : undefined,
     }));
   } catch (error) {
@@ -39,11 +41,14 @@ export const getProductById = async (
     return {
       id: product.id,
       name: product.name,
+      nameEn: product.name,
+      slug: product.id,
       description: product.description,
-      category: product.category as Product["category"],
+      mainCategory: "blades" as const,
+      subCategory: (product.category ||
+        "alloy-blades") as Product["subCategory"],
       image: product.image,
       specs: product.specs ? JSON.parse(product.specs) : undefined,
-      features: product.features ? JSON.parse(product.features) : undefined,
       applications: product.applications
         ? JSON.parse(product.applications)
         : undefined,
