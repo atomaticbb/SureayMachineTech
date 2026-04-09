@@ -23,6 +23,14 @@ export function createApp({
 }: CreateAppOptions = {}) {
   const app = express();
 
+  // www → canonical 301 (must be before all other middleware)
+  app.use((req, res, next) => {
+    if (req.hostname === "www.sureay.com") {
+      return res.redirect(301, `https://sureay.com${req.url}`);
+    }
+    next();
+  });
+
   app.use(compression());
   app.use(
     helmet({

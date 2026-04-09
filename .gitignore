@@ -108,6 +108,6 @@ tmpclaude-*-cwd
 prisma/data/
 prisma/migrations/
 
-# Vercel
-.vercel
-.env*.local
+# Lock files from other package managers (this project uses pnpm)
+package-lock.json
+yarn.lock
