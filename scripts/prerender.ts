@@ -132,7 +132,7 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     page.on("pageerror", () => {});
 
     await page.goto(`${BASE_URL}${route}`, {
-      waitUntil: "networkidle0",
+      waitUntil: "domcontentloaded",
       timeout: TIMEOUT_MS,
     });
 
