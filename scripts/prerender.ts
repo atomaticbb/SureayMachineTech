@@ -23,7 +23,7 @@ const DIST_DIR = path.resolve(__dirname, "../dist/public");
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
 const CONCURRENCY = 3; // parallel Puppeteer pages
-const TIMEOUT_MS = 15_000; // per-route navigation + selector timeout
+const TIMEOUT_MS = 25_000; // per-route navigation + selector timeout
 
 // ── Route manifest ─────────────────────────────────────────────────────────────
 

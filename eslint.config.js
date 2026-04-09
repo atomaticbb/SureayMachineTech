@@ -12,7 +12,6 @@ export default [
       "*.config.ts",
       "*.config.js",
       "client/public/**",
-      ".manus-logs/**",
     ],
   },
   js.configs.recommended,

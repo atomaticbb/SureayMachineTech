@@ -15,7 +15,6 @@ yarn-error.log*
 .DS_Store
 *.swp
 *.swo
-.manus-logs
 prisma/data/*.db
 prisma/data/*.db-journal
 coverage
