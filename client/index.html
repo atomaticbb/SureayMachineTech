@@ -35,11 +35,16 @@
       gtag("js", new Date());
 
       // -- Step 1: Privacy by default - all signals denied --------------------------------
+      // wait_for_update: 500 gives the async /api/region geo-check time to
+      // call gtag('consent','update') before GA4 commits to the denied state.
+      // Non-GDPR visitors get auto-granted within ~100-200 ms so their first
+      // page_view is counted with full consent.
       gtag("consent", "default", {
         analytics_storage: "denied",
         ad_storage: "denied",
         ad_user_data: "denied",
         ad_personalization: "denied",
+        wait_for_update: 500,
       });
 
       // -- Step 2: Restore granted consent from a previous visit ----------------------

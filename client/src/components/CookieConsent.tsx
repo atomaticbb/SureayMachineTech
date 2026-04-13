@@ -1,15 +1,22 @@
 /*
- * CookieConsent.tsx — Google Consent Mode v2
- * Swiss Brutalist · Deep Navy · Zero radius
+ * CookieConsent.tsx — Google Consent Mode v2 with geo-aware auto-grant
  *
  * Consent logic:
- *  - index.html already handles the "default: denied" and instant restore on page load.
- *  - This component only needs to show the banner and handle the user's choice.
+ *  1. index.html sets default: denied + wait_for_update:500 before React mounts.
+ *  2. index.html also restores a previously stored "granted" choice immediately,
+ *     so returning visitors never see the banner.
+ *  3. On first visit, this component calls GET /api/region.
+ *     - Non-GDPR region → auto-grant, save to localStorage, no banner shown.
+ *       GA4 receives the consent update within the wait_for_update window and
+ *       counts the first page_view with full consent.
+ *     - GDPR/restricted region → show banner and let the user choose.
+ *     - API failure → show banner (safe default).
  *
  * Storage key: "sureay_cookie_v2"  (values: "granted" | "denied")
  */
 
 import { useState, useEffect } from "react";
+import axios from "axios";
 import { pageview } from "@/lib/gtag";
 
 const STORAGE_KEY = "sureay_cookie_v2";
@@ -26,32 +33,56 @@ function updateAllConsent(value: "granted" | "denied"): void {
 }
 
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(false);
+  // null = checking region (show nothing), false = no banner, true = show banner
+  const [showBanner, setShowBanner] = useState<boolean | null>(null);
 
-  // Only show the banner when no prior choice exists.
-  // Consent restoration for returning visitors is handled by index.html
-  // before React even mounts, so no gtag call is needed here.
   useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      setVisible(true);
+    const stored = localStorage.getItem(STORAGE_KEY);
+
+    // Returning visitor: preference already stored, index.html handled the
+    // consent restore — nothing left to do here.
+    if (stored !== null) {
+      setShowBanner(false);
+      return;
     }
+
+    // First visit: ask the server which regulatory zone the visitor is in.
+    axios
+      .get<{ requiresConsent: boolean; country: string }>("/api/region")
+      .then(({ data }) => {
+        if (!data.requiresConsent) {
+          // Non-GDPR region — grant immediately without showing a banner.
+          // GA4's wait_for_update window is still open, so the first page_view
+          // queued by usePageTracking will be sent with granted consent.
+          localStorage.setItem(STORAGE_KEY, "granted");
+          updateAllConsent("granted");
+          setShowBanner(false);
+        } else {
+          setShowBanner(true);
+        }
+      })
+      .catch(() => {
+        // Region check failed — show the banner as a safe fallback.
+        setShowBanner(true);
+      });
   }, []);
 
   function handleAcceptAll() {
     localStorage.setItem(STORAGE_KEY, "granted");
     updateAllConsent("granted");
-    // Fire the first page_view now that consent is in place
+    // The wait_for_update window has long passed by now (user read the banner),
+    // so fire a fresh page_view with the newly granted consent.
     pageview(window.location.href, document.title);
-    setVisible(false);
+    setShowBanner(false);
   }
 
   function handleEssentialOnly() {
     localStorage.setItem(STORAGE_KEY, "denied");
-    // All signals remain denied — nothing else to call
-    setVisible(false);
+    // All signals remain denied — nothing else to call.
+    setShowBanner(false);
   }
 
-  if (!visible) return null;
+  if (!showBanner) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-[#001f4d] border-t border-white/20 shadow-2xl">
