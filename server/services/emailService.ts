@@ -336,3 +336,28 @@ export const sendContactEmail = async (
     return { success: false };
   }
 };
+
+// ── Catalog download lead notification ───────────────────────────────────────
+export const sendCatalogDownloadNotification = async (
+  email: string,
+  productId?: string
+): Promise<void> => {
+  const client = getResendClient();
+  if (!client) return;
+
+  const to = buildRecipients();
+  const subject = `[CATALOG DOWNLOAD] ${email}${productId ? ` — ${productId}` : ""}`;
+
+  await client.emails.send({
+    from:
+      process.env.EMAIL_FROM || "Sureay Inquiry Portal <inquiry@sureay.com>",
+    to,
+    subject,
+    html: `<p style="font-family:sans-serif;font-size:14px;">
+      A prospect downloaded the product catalog.<br><br>
+      <strong>Email:</strong> ${email}<br>
+      ${productId ? `<strong>Product page:</strong> /products/${productId}<br>` : ""}
+    </p>`,
+    text: `Catalog download lead\nEmail: ${email}${productId ? `\nProduct: /products/${productId}` : ""}`,
+  });
+};

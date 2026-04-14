@@ -89,6 +89,18 @@ model Analytics {
   @@index([createdAt])
 }
 
+// 目录下载潜在客户捕获表
+model CatalogDownload {
+  id        String   @id @default(cuid())
+  email     String
+  productId String?  // 下载时所在产品页 ID
+  ipAddress String?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+  @@index([createdAt])
+}
+
 // 邮件发送日志表（可选，用于追踪邮件发送状态）
 model EmailLog {
   id            String   @id @default(cuid())

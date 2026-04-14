@@ -4,7 +4,8 @@
  * Right: title, category, description, spec bullets, CTA.
  */
 
-import { ArrowRight, Download } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Download, Loader2 } from "lucide-react";
 import type { Blade } from "@/data/blades";
 import { getCatalogUrl } from "@/data/blades";
 
@@ -17,8 +18,42 @@ const DOT_GRID_STYLE = {
   backgroundSize: "24px 24px",
 } as const;
 
+type CatalogState = "idle" | "form" | "loading" | "done";
+
 export default function BladeHero({ blade }: BladeHeroProps) {
   const catalogUrl = getCatalogUrl(blade);
+  const [catalogState, setCatalogState] = useState<CatalogState>("idle");
+  const [email, setEmail] = useState("");
+  const [formError, setFormError] = useState("");
+
+  const handleCatalogSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setCatalogState("loading");
+    setFormError("");
+
+    try {
+      const res = await fetch("/api/catalog-download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, productId: blade.id }),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setCatalogState("done");
+
+      // Trigger download
+      const a = document.createElement("a");
+      a.href = catalogUrl;
+      a.download = "sureay-catalog.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } catch {
+      setCatalogState("form");
+      setFormError("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <section
@@ -107,15 +142,79 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             <span>Request Engineering Quote</span>
             <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
+
+          {/* Catalog download — email gate */}
           {catalogUrl && (
-            <a
-              href={catalogUrl}
-              download={catalogUrl.split("/").pop() || "sureay-catalog.pdf"}
-              className="w-full bg-white hover:bg-slate-50 border-2 border-slate-300 text-[#001f4d] font-bold text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-3"
-            >
-              <span>Download Catalog (PDF)</span>
-              <Download className="w-4 h-4 shrink-0" />
-            </a>
+            <div className="border-2 border-slate-300">
+              {/* Idle: show button */}
+              {catalogState === "idle" && (
+                <button
+                  type="button"
+                  onClick={() => setCatalogState("form")}
+                  className="w-full bg-white hover:bg-slate-50 text-[#001f4d] font-bold text-sm uppercase tracking-widest transition-colors duration-200 flex items-center justify-between px-6 py-3"
+                >
+                  <span>Download Catalog (PDF)</span>
+                  <Download className="w-4 h-4 shrink-0" />
+                </button>
+              )}
+
+              {/* Form: email input */}
+              {(catalogState === "form" || catalogState === "loading") && (
+                <form onSubmit={handleCatalogSubmit} className="p-4 space-y-3">
+                  <p className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+                    Enter your work email to download
+                  </p>
+                  <input
+                    type="email"
+                    required
+                    autoFocus
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    className="w-full border border-slate-300 px-4 py-2.5 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
+                  />
+                  {formError && (
+                    <p className="text-red-500 text-xs font-mono">{formError}</p>
+                  )}
+                  <div className="flex gap-2">
+                    <button
+                      type="submit"
+                      disabled={catalogState === "loading"}
+                      className="flex-1 bg-[#001f4d] text-white font-black text-xs uppercase tracking-widest px-4 py-2.5 hover:bg-[#003080] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                    >
+                      {catalogState === "loading" ? (
+                        <>
+                          <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                          <span>Sending…</span>
+                        </>
+                      ) : (
+                        "Send & Download"
+                      )}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setCatalogState("idle");
+                        setFormError("");
+                      }}
+                      className="px-4 py-2.5 border border-slate-300 text-slate-500 text-xs font-mono uppercase tracking-widest hover:border-slate-400 transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              )}
+
+              {/* Done: confirmation */}
+              {catalogState === "done" && (
+                <div className="px-6 py-3 flex items-center gap-3">
+                  <span className="text-green-600 font-black text-sm">✓</span>
+                  <span className="font-mono text-[11px] text-slate-600 uppercase tracking-widest">
+                    Download started — check your downloads folder
+                  </span>
+                </div>
+              )}
+            </div>
           )}
         </div>
       </div>

@@ -55,7 +55,7 @@ export default function ProductCard({
               {blade.name}
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
-              {blade.fullDescription || blade.description}
+              {blade.description}
             </p>
             <div className="mt-auto">
               <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
@@ -172,7 +172,7 @@ export default function ProductCard({
                 {blade.name}
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed line-clamp-2">
-                {blade.fullDescription || blade.description}
+                {blade.description}
               </p>
             </div>
 
