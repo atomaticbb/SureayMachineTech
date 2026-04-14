@@ -100,6 +100,11 @@ jspm_packages/
 tmp/
 temp/
 tmpclaude-*-cwd
+.catalogs-dev/
+.catalogs-output/
+
+# Generated PDF catalogs (copied into public/ by generate-catalogs.ts)
+client/public/catalogs/
 
 # Database
 *.db

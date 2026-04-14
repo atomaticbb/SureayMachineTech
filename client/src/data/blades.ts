@@ -3631,6 +3631,18 @@ export function getRelatedBlades(currentId: string, limit = 4): Blade[] {
 /**
  * Badge styling helper (mirrors machines.ts pattern)
  */
+/**
+ * Catalog PDF URL — single complete catalog for all products
+ */
+const CATALOG_URL = "/catalogs/sureay-complete-product-catalog.pdf";
+
+export function getCatalogUrl(_blade: Blade): string {
+  return CATALOG_URL;
+}
+
+/**
+ * Badge styling helper (mirrors machines.ts pattern)
+ */
 export const getBadgeClasses = (color?: string): string => {
   const base =
     "absolute top-4 left-4 z-10 px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border";

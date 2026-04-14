@@ -4,8 +4,9 @@
  * Right: title, category, description, spec bullets, CTA.
  */
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import type { Blade } from "@/data/blades";
+import { getCatalogUrl } from "@/data/blades";
 
 interface BladeHeroProps {
   blade: Blade;
@@ -17,6 +18,8 @@ const DOT_GRID_STYLE = {
 } as const;
 
 export default function BladeHero({ blade }: BladeHeroProps) {
+  const catalogUrl = getCatalogUrl(blade);
+
   return (
     <section
       aria-label={`${blade.fullName || blade.name} — product hero`}
@@ -90,7 +93,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
         </div>
 
         {/* CTA */}
-        <div className="mt-8">
+        <div className="mt-8 space-y-3">
           <a
             href="#rfq"
             onClick={e => {
@@ -104,6 +107,16 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             <span>Request Engineering Quote</span>
             <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
+          {catalogUrl && (
+            <a
+              href={catalogUrl}
+              download={catalogUrl.split("/").pop() || "sureay-catalog.pdf"}
+              className="w-full bg-white hover:bg-slate-50 border-2 border-slate-300 text-[#001f4d] font-bold text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-3"
+            >
+              <span>Download Catalog (PDF)</span>
+              <Download className="w-4 h-4 shrink-0" />
+            </a>
+          )}
         </div>
       </div>
     </section>
