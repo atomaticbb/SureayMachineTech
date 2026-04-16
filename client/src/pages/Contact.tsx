@@ -440,12 +440,12 @@ export default function Contact() {
                 Global WhatsApp
               </p>
               <a
-                href="https://wa.me/8615655530829?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
+                href="https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none hover:text-white/70 transition-colors"
               >
-                +86 156-5553-0829
+                +86 180-0555-0657
               </a>
             </div>
 

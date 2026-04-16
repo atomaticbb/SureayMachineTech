@@ -224,10 +224,10 @@ export default function Footer() {
                   WhatsApp / Phone
                 </p>
                 <a
-                  href="tel:+8615655530829"
+                  href="tel:+8618005550657"
                   className="text-slate-300 hover:text-white transition-colors font-semibold"
                 >
-                  +86 156 5553 0829
+                  +86 180 0555 0657
                 </a>
                 <p className="text-[11px] text-slate-600 mt-1">
                   Available 24/7

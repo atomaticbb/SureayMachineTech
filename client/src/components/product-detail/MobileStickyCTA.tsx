@@ -5,7 +5,7 @@
  */
 
 const WA_URL =
-  "https://wa.me/8615655530829?text=Hi%2C%20I%27m%20interested%20in%20your%20industrial%20blades.%20Please%20send%20me%20more%20information.";
+  "https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20your%20industrial%20blades.%20Please%20send%20me%20more%20information.";
 
 export default function MobileStickyCTA() {
   return (
