@@ -85,7 +85,7 @@ const SECTORS: Sector[] = [
     products: [
       {
         id: "rotary-slitter-knives",
-        name: "Rotary Slitter Knives",
+        name: "Film & Tape Slitter Knives",
         href: "/products/rotary-slitter-knives",
       },
     ],

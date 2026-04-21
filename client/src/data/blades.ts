@@ -125,12 +125,12 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "rotary-slitter-knives",
-    name: "Rotary Slitter Knives",
+    name: "Film & Tape Slitter Knives",
     fullName:
-      "Precision Rotary Slitter Knives & Blades for Film, Foil & Paper Converting",
+      "Precision Rotary Slitter Knives for Film, Tape & Flexible Packaging Converting",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Rotary Slitter Knives",
+    categoryDisplay: "Film & Tape Slitter Knives",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
     badge: "Best Seller",
@@ -143,11 +143,11 @@ export const blades: Blade[] = [
 
     // Shortened for SEO Meta Description & UI Product Cards (< 155 chars)
     description:
-      "Rotary slitter blades & knives precision-ground to \u00b10.002\u202fmm thickness and \u22640.02\u202fmm T.I.R. runout for film, paper, foil & tape converting. Shear, score & razor profiles in D2, M2 HSS, ASP23 powder-metal & solid carbide. Optional TiN, DLC & Teflon PVD coatings. Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery slitter systems.",
+      "Precision-ground circular slitter blades for BOPP, BOPET & CPP film, PE stretch film, PSA tape & nonwoven converting. \u00b10.002\u202fmm thickness tolerance, \u22640.02\u202fmm T.I.R. runout. Shear, score & razor profiles in M2 HSS, D2 & ASP23 PM steel with optional TiN & DLC anti-stick coatings. Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery slitter systems.",
 
     // Structured for B2B reading flow and technical authority
     fullDescription:
-      "Circular rotary slitter knives and blades operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a rotary slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay rotary slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Paper & Board:** Tissue, kraft, newsprint, coated art paper, folding boxboard. Dust-free edge quality is mandatory for downstream printing and lamination; D2 or M2 HSS blades with Ra \u22640.4 surface finish meet all major converting house specifications.\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Battery Electrode Foils:** Aluminum cathode and copper anode foil for lithium-ion cell manufacturing. Dimensional variances above \u00b10.003\u202fmm contaminate ISO Class 7 cell assembly environments. PM-steel or solid carbide grades are mandatory; contamination-free handling and cleanroom-compatible packaging available.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
+      "Circular rotary slitter knives and blades operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a rotary slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay rotary slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
 
@@ -184,7 +184,7 @@ export const blades: Blade[] = [
       {
         label: "Applications",
         value:
-          "BOPP / BOPET Film, Kraft Paper, Battery Foil, PSA Tape, Non-Wovens",
+          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
       },
     ],
 
@@ -194,7 +194,7 @@ export const blades: Blade[] = [
         tag: "METALLURGY",
         title: "Application-Specific Tool Steels",
         description:
-          "Material matched to your web. 52100 carbon steel for standard paper; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for EV battery foil and fiberglass laminates. Every grade stocked and ready for fast-turn OEM delivery.",
+          "Material matched to your web. 52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery.",
       },
       {
         id: "advanced-coating-systems",
@@ -260,7 +260,7 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["paper-cutting-blades", "granulator-blades"],
+    relatedBladeIds: ["paper-cutting-blades", "granulator-blades", "bottom-grooved-anvil-knives"],
     offers: {
       lowPrice: 15,
       highPrice: 150,
@@ -353,7 +353,7 @@ export const blades: Blade[] = [
       "High-Speed Rotary Slitter Knives & Circular Cutting Blades for Paper, Tissue & Corrugated Converting",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Rotary Slitter Knives",
+    categoryDisplay: "Paper Slitter Knives",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
     badge: "Paper Converting",
@@ -522,11 +522,11 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "metal-foil-strip-slitter-knives",
-    name: "Metal Foil & Strip Slitter Knives",
-    fullName: "Precision Rotary Slitter Knives for Metal Foil and Thin Strips",
+    name: "Metal Strip & Coil Slitter Knives",
+    fullName: "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Rotary Slitter Knives",
+    categoryDisplay: "Metal Strip Slitter Knives",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     badge: "Metal Processing",
@@ -537,7 +537,7 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
     description:
-      "High-precision circular slitter knives engineered for metal service centers and cold rolling mills. Manufactured from ASP23/ASP52 PM tool steel and solid tungsten carbide to an exact ±0.001mm thickness tolerance. Designed for burr-free gang slitting of aluminum foil, copper strips, stainless steel, and silicon steel.",
+      "High-precision circular slitter knives for metal service centers and cold rolling mills. ASP23/ASP52 PM tool steel and solid tungsten carbide ground to strict ±0.001\u202fmm thickness tolerance. Engineered for burr-free gang slitting of aluminum strip & coil, copper strip, stainless steel, and grain-oriented silicon steel.",
     fullDescription:
       "Precision metal strip and foil slitting demands metallurgical performance and dimensional accuracy far exceeding standard shearing applications. When processing thin-gauge metals (0.01mm to 1.5mm), even a microscopic blade defect or thickness deviation will induce camber (lateral bow), edge burrs, and rejected coils. Sureay rotary slitter knives are precision-ground to ±0.001mm thickness tolerance with ≤0.01mm total indicated runout (T.I.R.), ensuring perfect alignment across multi-knife arbor stacks.\n\n## Advanced Metallurgy for Thin Metals\n\nSlitting different metal alloys requires specific blade materials to prevent rapid dulling, edge chipping, or material galling (cold welding).\n\n**ASP23 Powder Metallurgy (PM) Steel:** A massive upgrade over conventional D2. Its ultra-fine, uniform carbide structure delivers 3–5× longer edge life on aluminum packaging foil, brass strips, and general thin-gauge carbon steel without micro-chipping.\n\n**ASP52 PM Steel:** Engineered for high-tensile materials. With 11% vanadium content, ASP52 provides the extreme abrasion resistance required for slitting hard stainless steel strips, grain-oriented silicon steel (transformer cores), and beryllium copper.\n\n**Solid Tungsten Carbide:** The ultimate specification for ultra-thin foils (<0.05mm) where razor-sharp, zero-burr edges are mandatory over extended, high-speed production campaigns.\n\n## Defeating Cumulative Arbor Error\n\nOn gang slitting lines, 10 to 40 circular knives may be stacked on a single arbor. Each knife's thickness error compounds cumulatively: a ±0.003mm error per blade yields a massive ±0.060mm error across a 20-knife stack, guaranteeing out-of-spec coil widths. We grind every metal-grade slitter knife and matching spacer to a strict ±0.001mm thickness tolerance, verifying them on CMM equipment to ensure zero cumulative error.\n\n## Anti-Galling Surface Finish\n\nWhen slitting non-ferrous metals like aluminum and soft copper, metal dust tends to adhere to the blade face (galling), which severely scratches the surface of the slit coils. Sureay metal slitter knives feature a highly polished, mirror-lapped side finish (Ra ≤0.02μm) that drastically reduces friction and prevents material adhesion, ensuring pristine coil edges.",
     link: "/products/metal-foil-strip-slitter-knives",
@@ -3260,6 +3260,198 @@ export const blades: Blade[] = [
   },
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Bottom Grooved Anvil Knives (Shear Slitting Bottom Knife)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "bottom-grooved-anvil-knives",
+    name: "Bottom Grooved Anvil Knives",
+    fullName:
+      "Bottom Grooved Anvil Knives for Shear Slitting — Film, Paper & Metal Foil Converting",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Slitter Knives",
+    image:
+      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
+    badge: "OEM Matched Pairs",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
+      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
+    ],
+
+    description:
+      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Multi-groove profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
+
+    fullDescription:
+      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with multi-groove geometry that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
+
+    link: "/products/bottom-grooved-anvil-knives",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "Tidland",
+      "Kampf",
+      "Atlas Converting",
+      "Goebel",
+      "BHS",
+      "Agnati",
+      "Dusenbery",
+      "Euromac",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
+      },
+      {
+        label: "Groove Tolerance",
+        value: "Groove width ±0.01\u202fmm | Face flatness ≤0.003\u202fmm",
+      },
+      {
+        label: "Bore Tolerance",
+        value: "H6 finish-ground | T.I.R. ≤0.02\u202fmm",
+      },
+      {
+        label: "Shear Clearance",
+        value: "Pre-verified to substrate spec (0.02–0.15\u202fmm)",
+      },
+      {
+        label: "Coatings",
+        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
+      },
+      {
+        label: "Applications",
+        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
+      },
+    ],
+
+    components: [
+      {
+        id: "groove-geometry-control",
+        tag: "PRECISION GRINDING",
+        title: "OEM-Profile Groove Geometry",
+        description:
+          "The groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm. Correct groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile.",
+      },
+      {
+        id: "bore-face-flatness",
+        tag: "DIMENSIONAL ACCURACY",
+        title: "H6 Bore & Lapped Face Flatness",
+        description:
+          "All anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism. A bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch.",
+      },
+      {
+        id: "anti-adhesion-groove-coating",
+        tag: "SURFACE TREATMENT",
+        title: "Anti-Adhesion Groove Coatings",
+        description:
+          "For pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%. Coated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "OEM Platform / Type",
+      col1: "OD × ID (mm)",
+      col2: "Thickness (mm)",
+      col3: "Groove (W × D / Angle)",
+      caption:
+        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Multi-groove (2+ slots) configurations available on request.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Tidland — Single Groove",
+        od: "70 × 25.4",
+        id: "8 / 10",
+        thickness: "W: 1.2 × D: 2.0 / 60°",
+      },
+      {
+        spec: "Atlas — Multi-Groove (3 Slots)",
+        od: "100 × 60",
+        id: "20 / 25",
+        thickness: "W: 1.5 × D: 2.5 / 60°",
+      },
+      {
+        spec: "Mario Cotta — Single Groove",
+        od: "80 × 30",
+        id: "10",
+        thickness: "W: 1.3 × D: 2.2 / 45°",
+      },
+      {
+        spec: "Dienes — Single Groove",
+        od: "130 × 80",
+        id: "12",
+        thickness: "W: 1.5 × D: 3.0 / 60°",
+      },
+      {
+        spec: "Custom Anvil / Hardfaced",
+        od: "Per Drawing",
+        id: "OEM Spec",
+        thickness: "Exact CNC Machined Groove",
+      },
+    ],
+
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "metal-foil-strip-slitter-knives",
+    ],
+    offers: {
+      lowPrice: 20,
+      highPrice: 200,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "How often should I replace the bottom grooved anvil knife versus the top blade?",
+          answer:
+            "Bottom anvil knives operate under compressive groove-face loading and typically last 3–5× longer than the top shear blade. However, because wear is gradual — the groove face rounds off slowly — the deterioration in slit quality is easy to miss until scrap rates climb. We recommend inspecting groove face geometry (groove width and depth) every 3 top-blade replacement cycles and replacing the anvil when groove width deviation exceeds ±0.03 mm from the OEM specification.",
+        },
+        {
+          question:
+            "What shear clearance should I set between the top blade and bottom anvil groove?",
+          answer:
+            "Shear clearance is substrate-dependent. For flexible plastic films (BOPP, BOPET, CPP) at 0.02–0.05 mm per side is standard. For kraft paper and board, 0.05–0.10 mm. For aluminium and copper foils, 0.01–0.03 mm per side. We pre-verify matched top/bottom pairs to your specified clearance and record the setting on an engineering data sheet that ships with each order, allowing operators to replicate the clearance on every reinstallation.",
+        },
+        {
+          question:
+            "Can I order replacement anvil knives without buying a full matched pair?",
+          answer:
+            "Yes. We supply bottom anvil knives as standalone replacements machined to the groove profile and OD/ID of your existing top-knife arbor system. Provide your OEM platform (Tidland, Kampf, Atlas, etc.) and the top knife OD/ID, and we will match the anvil to the mating geometry. If you supply a worn anvil as a sample, we can reverse-engineer the original groove profile before regrinding.",
+        },
+        {
+          question:
+            "Why does my slit edge quality degrade even after I replace the top blade with a new one?",
+          answer:
+            "If new top blades do not restore slit quality, the anvil groove is almost certainly worn beyond its specification. A rounded or widened groove face increases effective shear clearance regardless of top-blade condition, producing a ragged, feathered slit edge. Inspect the groove width and depth with a groove gauge or profilometer. If groove deviation exceeds ±0.03 mm from OEM spec, anvil replacement or regrinding is required.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Do you supply bottom anvil knives as part of a matched pair, or only individually?",
+          answer:
+            "Both options are available. For new installations or full arbor rebuilds, we recommend matched pairs — top blade and bottom anvil verified to a specified shear clearance, with a joint engineering data sheet. For replacement orders on existing lines, standalone anvil knives machined to your OEM groove profile are available with standard 5–7 day lead time.",
+        },
+        {
+          question:
+            "What OEM platforms does Sureay supply matched anvil knives for?",
+          answer:
+            "We currently stock and supply groove-profiled anvil knives for Tidland (single-groove and double-groove arbors), Kampf (narrow and wide arbor series), Atlas Converting Equipment, Goebel, BHS, Agnati, and Dusenbery. For other OEM platforms, provide the arbor drawing or worn sample and we will engineer a matched replacement.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM-profile anvil knives ship within 48–72 hours. Custom groove profiles take 7–12 working days. We partner with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
   // 14. Metal Cold Circular Saw Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
@@ -3585,6 +3777,228 @@ export const blades: Blade[] = [
             "Can Sureay supply scrap chopper blades that match our existing blade dimensions?",
           answer:
             "Yes. Send us a sample blade, technical drawing, or the chopper machine make and model number. We will confirm the length, width, thickness, mounting hole pattern (if applicable), and material grade. Most chopper blades are standard rectangular blocks without mounting holes, but some models use clamped or bolted retention that requires specific hole locations. We can replicate any existing blade geometry.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Continuous Melt Filter Scraper Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "continuous-melt-filter-scraper-blades",
+    name: "Melt Filter Scraper Blades",
+    fullName:
+      "Premium Scraper Blades & Filter Plates for Continuous Melt Filters",
+    category: "granulator_blades",
+    sector: "recycling",
+    categoryDisplay: "Melt Filter Scraper Blades",
+    image: "/images/products/blades/scraper-blades.webp",
+    badge: "PCR Recycling",
+    badgeColor: "orange",
+    gallery: [
+      "/images/products/blades/scraper-blades.webp",
+      "/images/products/blades/scraper-blades-01.webp",
+      "/images/products/blades/scraper-blades-02.webp",
+    ],
+
+    description:
+      "Precision D2/H13/Carbide scraper blades & laser-drilled conical filter plates for PCR continuous melt filters. Engineered hardness synergy (blade HRC 58–62 vs. plasma-nitrided plate HV 1,000+) protects filter plate capital investment. HCl-resistant alloys for PVC blends. Backflush-compatible with EREMA, Gneuß, Ettlinger & FIMIC.",
+
+    fullDescription:
+      "Continuous melt filters are the heart of any high-throughput PCR plastic recycling line. When processing heavily contaminated post-consumer regrind — containing mineral fillers, glass fibers, carbonized residues, and hard foreign particles — the scraper blade is the single component under the most extreme combined load: abrasive wear from hard contaminants, thermal fatigue from cyclic melt temperature exposure (220–300 °C), and cyclic bending stress from the rotation mechanism. A blade that fails prematurely forces an emergency line stop, costing hours of restarting time and wasting significant volumes of in-process melt.\n\nSureay continuous melt filter scraper blades are precision-manufactured from premium D2 cold-work tool steel and H13 hot-work tool steel — two alloys specifically selected for this dual wear-plus-heat-resistance requirement — and vacuum heat-treated to HRC 58–62 with deep cryogenic post-treatment to eliminate retained austenite and extend wear life by 30–40% versus standard heat treatment.\n\n## Alloy Selection by Contamination Level\n\n**D2 Tool Steel (HRC 60–62):** The standard specification for PCR HDPE, PP, and mixed rigid plastics with moderate contamination (< 3% mineral filler content). The 12% chromium and 1.5% carbon content delivers excellent abrasion resistance against glass particles and calcium carbonate fillers at melt processing temperatures up to 260 °C. Cost-effective for medium-duty continuous filtration at throughputs of 300–800 kg/h.\n\n**H13 Hot-Work Tool Steel (HRC 48–52):** Selected for heavily contaminated streams — post-consumer film regrind, agricultural mulch film, WEEE plastics — where melt temperatures exceed 280 °C and thermal cycling is severe. H13's molybdenum-vanadium carbide matrix maintains dimensional stability and edge geometry under sustained thermal loading that would cause D2 to soften and deform.\n\n**Solid Tungsten Carbide (HRA 88–91):** The ultimate specification for ultra-abrasive feedstocks: glass-filled engineering plastics (PA-GF30, PBT-GF), ceramic-contaminated streams, and silicon-rich agricultural film with embedded soil particles. Carbide scrapers deliver 5–8× longer service life versus D2 on these feedstocks, reducing blade change frequency to once per 1,000+ operating hours.\n\n## Precision-Ground Blade Geometry\n\nThe scraper blade's edge geometry directly controls filtration screen surface cleanliness and therefore melt pressure consistency. A worn or incorrectly profiled scraper leaves a residual contamination layer on the filter screen, causing progressive pressure build-up, reduced throughput, and ultimately screen breakthrough. Sureay blades are precision-ground to ±0.05 mm dimensional tolerance with edge bevel profiles matched to each filter OEM's screen contact geometry. The result is a consistent, reproducible scraping action that maintains screen cleanliness throughout the full blade service life.\n\n## Drop-In OEM Compatibility\n\nScraper blade geometry is machine-specific: each continuous melt filter OEM uses proprietary rotor dimensions, blade mounting interfaces, and screen diameters. Sureay reverse-engineers replacement blades from OEM drawings or customer samples, verifying fit on a coordinate measuring machine (CMM) before production. Compatible with EREMA Continuous Filter, Gneuß Rotary Filtration System, Ettlinger ERF series, FIMIC RAS series, Kreyenborg KSF series, and Nordson BKG continuous screen changers.\n\n## Laser-Drilled Conical Filter Plate Micro-Perforations\n\nThe filter plate's hole geometry is as critical as the scraper blade material. Standard punched or drilled cylindrical holes create a flat-wall channel where molten polymer and suspended contaminants can stagnate — carbonizing inside the hole under sustained heat, progressively reducing effective open area, and eventually causing premature screen blockage. Sureay filter plates use laser-drilled conical (tapered) micro-perforations: the hole is narrowest at the upstream melt-contact surface and widens progressively toward the downstream outlet. This conical profile exploits melt-side hydraulic pressure: once a contaminant particle passes the narrow inlet restriction, the expanding channel geometry immediately expels it toward the outlet with no dead-zone stagnation. The result is a filter plate that maintains consistent differential pressure and open-area percentage over a significantly longer service interval — particularly critical on heavily contaminated PCR streams where cylindrical-hole plates would require frequent replacement.\n\nAvailable filtration fineness: 80 µm (food-contact rPET/rHDPE), 150–200 µm (film-grade PCR), 300–500 µm (injection-grade PCR), 500–2,000 µm (coarse pre-filtration). Conical profile available across all fineness grades.\n\n## Hardness Synergy: Protecting Your Filter Plate Capital Investment\n\nA common and justified concern when sourcing aftermarket scraper blades is whether a high-hardness replacement blade will score or gouge the filter plate — a capital component that costs significantly more than the blade itself. Sureay engineers a deliberate and verified hardness differential between the scraper blade and the filter plate surface.\n\nThe filter plate's upstream face is plasma nitrided to HV 1,000+ (approximately equivalent to HRC 70+), creating an extremely hard, wear-resistant ceramic-like surface layer 0.1–0.3 mm deep. The scraper blade is intentionally manufactured to a lower HRC 58–62. This differential means that under all operating conditions, the blade is the controlled-wear consumable: it wears gradually against the harder plate surface without generating metal-transfer scoring or gouging. The filter plate surface remains intact across multiple blade replacement cycles. Every Sureay blade shipment includes a hardness test certificate confirming the blade is within the specified HRC range — verifiable documentation that the controlled-wear principle is maintained in every production batch.\n\n## Chemical & Corrosion Resistance for PVC and Mixed-Plastic Streams\n\nProcessing washed post-consumer PVC, mixed flexible films, or WEEE-derived plastics releases aggressive corrosive outgassing — primarily hydrochloric acid (HCl) and organochlorine compounds — at melt temperatures of 200–260 °C. Standard D2 and H13 tool steels corrode under sustained HCl exposure: surface pitting initiates at grain boundaries, progressively degrading the micro-perforation edge geometry and enlarging hole diameters beyond specification, compromising filtration quality without any visible external indication.\n\nFor PVC-inclusive streams, Sureay applies two protective measures: (1) base alloy upgrade to corrosion-resistant PM (powder-metallurgy) steel grades with homogeneous chromium distribution that resists acid grain-boundary attack; (2) physical vapour deposition (PVD) barrier coatings on filter plate surfaces that seal the micro-perforation walls against HCl diffusion. This combination extends filter plate service life by 2–3× versus uncoated standard-alloy plates on PVC-containing feedstocks, and prevents the insidious hole-enlargement failure mode that undermines filtration efficiency without triggering a pressure alarm.\n\n## Backflush Compatibility\n\nHigh-end continuous melt filters (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporate automated backflushing mechanisms: a high-pressure reverse pulse of clean melt is periodically fired backward through a localized section of the filter plate to expel embedded contaminant cake from the micro-perforations, restoring open area without stopping the line. The backflush pulse generates a localized reverse pressure spike — typically 150–400 bar depending on the OEM — applied to a small area of the filter plate.\n\nSureay filter plates are designed and manufactured to withstand OEM-rated backflush pressures without micro-cracking or deformation. The conical hole geometry is dimensionally optimized for this: the wider downstream outlet of each conical perforation acts as a flared nozzle that accelerates the backflush pulse, improving contaminant ejection efficiency versus cylindrical holes. Structural integrity under repeated high-pressure reverse cycles is validated through finite element analysis (FEA) of the inter-hole ligament stress distribution. Replacement Sureay plates maintain 100% compatibility with OEM backflush timing, pressure, and hole-array layout — no recalibration of the backflush controller is required.\n\n## Failure Analysis: Diagnosing & Eliminating Common Scraper and Filter Failures\n\nEngineers sourcing replacement components are typically dealing with a specific failure mode. The correct material upgrade depends on the root cause.\n\n**Edge Chipping (Brittle Fracture at Blade Tip):** Caused by a single high-energy impact from tramp metal — bolts, nuts, wire fragments — embedded in the PCR regrind feedstock. D2 and standard carbide grades are vulnerable to brittle fracture under this impulse loading. **Upgrade:** Specify H13 (higher impact toughness than D2) for mixed-contamination streams where tramp metal risk is moderate, or a toughness-optimized carbide grade (Co content ≥ 12%) for high-risk streams. Add upstream magnet and/or metal detector to reduce tramp metal frequency.\n\n**Progressive Surface Scoring on Filter Plate:** Fine parallel grooves on the filter plate face, accompanied by rising differential pressure and shortened blade intervals. Caused by incorrect blade hardness (blade harder than plate), incorrect bevel angle causing concentrated edge loading, or grit contamination in the blade-plate interface. **Upgrade:** Verify blade hardness certificate (must be ≤ HRC 62). Confirm edge bevel angle matches OEM screen contact geometry (±0.5°). Inspect plate surface for plasma-nitride layer depletion — if scoring has reached the base metal, the plate requires replacement before installing new blades.\n\n**Rapid Blade Wear (< 200 Hours on Standard PCR):** Unexpectedly short service life on a nominally moderate feedstock indicates higher-than-declared contamination: elevated glass-fiber, silica, or ceramic filler content in the regrind. Submit regrind sample for XRF contamination analysis. **Upgrade:** Step from D2 to H13 first; if service life remains inadequate, move to solid tungsten carbide which delivers 5–8× longer life on abrasive-dominated failure streams.\n\n**Hole Enlargement / Filtration Quality Degradation Without Pressure Alarm:** Filter plate micro-perforations gradually enlarge over time, allowing oversized contaminant particles through at stable differential pressure. Root cause: HCl corrosion from PVC outgassing dissolving hole-wall material. No pressure alarm because the enlarged holes maintain low resistance. **Upgrade:** Specify PVD-coated, corrosion-resistant PM steel filter plates for all streams containing ≥ 5% PVC by weight.",
+
+    link: "/products/continuous-melt-filter-scraper-blades",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "EREMA Continuous Filter",
+      "Gneuß Rotary Filtration System",
+      "Ettlinger ERF Series",
+      "FIMIC RAS Series",
+      "Kreyenborg KSF Series",
+      "Nordson BKG",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
+      },
+      {
+        label: "Hardness Differential",
+        value:
+          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
+      },
+      {
+        label: "Filter Plate Profile",
+        value:
+          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
+      },
+      {
+        label: "Dimensional Tolerance",
+        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
+      },
+      {
+        label: "Operating Temperature",
+        value: "Up to 300 °C (H13 / Carbide grades)",
+      },
+      {
+        label: "Corrosion Resistance",
+        value:
+          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
+      },
+      {
+        label: "Applications",
+        value:
+          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
+      },
+    ],
+
+    components: [
+      {
+        id: "hardness-synergy",
+        tag: "ASSET PROTECTION",
+        title: "Engineered Hardness Synergy",
+        description:
+          "Filter plates are plasma nitrided to HV 1,000+ (≈ HRC 70+). Scraper blades are deliberately held at HRC 58–62. This verified differential makes the blade the controlled-wear consumable — it wears against the harder plate surface without scoring or gouging. Every shipment includes a hardness certificate confirming the blade is within range.",
+      },
+      {
+        id: "conical-laser-plates",
+        tag: "FILTRATION TECHNOLOGY",
+        title: "Conical Laser-Drilled Micro-Perforations",
+        description:
+          "Tapered hole geometry (narrow inlet, wide outlet) exploits melt pressure to immediately expel contaminants rather than allowing them to stagnate inside cylindrical-wall holes. Prevents carbonization-driven hole blockage, maintains consistent differential pressure, and supports OEM backflush pulse dynamics at 150–400 bar without micro-cracking.",
+      },
+      {
+        id: "failure-upgrade-path",
+        tag: "FAILURE ANALYSIS",
+        title: "Diagnostic Upgrade Path",
+        description:
+          "Edge chipping from tramp metal → upgrade to H13 or toughness-grade carbide. Progressive plate scoring → verify blade HRC certificate and bevel angle. Service life < 200 h on standard PCR → step to solid carbide for abrasion-dominated failure. Silent hole enlargement → specify PVD-coated corrosion-resistant PM plates for PVC-containing streams.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Filter Model / OEM",
+      col1: "Blade Length (mm)",
+      col2: "Blade Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Representative dimensions for common continuous melt filter platforms. All blades reverse-engineered to exact OEM drawing or customer sample. Custom geometries and mounting interfaces available on request.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "EREMA Continuous Filter",
+        od: "180 – 420",
+        id: "25 – 40",
+        thickness: "6 / 8",
+      },
+      {
+        spec: "Gneuß Rotary System",
+        od: "150 – 380",
+        id: "20 – 35",
+        thickness: "5 / 8",
+      },
+      {
+        spec: "Ettlinger ERF 200/350",
+        od: "200 / 350",
+        id: "30 / 40",
+        thickness: "8 / 10",
+      },
+      {
+        spec: "FIMIC RAS Series",
+        od: "160 – 400",
+        id: "22 – 38",
+        thickness: "6 / 8",
+      },
+      {
+        spec: "Kreyenborg KSF",
+        od: "200 – 500",
+        id: "30 – 50",
+        thickness: "8 / 12",
+      },
+      {
+        spec: "Nordson BKG",
+        od: "150 – 350",
+        id: "20 – 35",
+        thickness: "5 / 8",
+      },
+    ],
+
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "granulator-blades",
+      "scrap-chopper-blades",
+    ],
+    offers: {
+      lowPrice: 35,
+      highPrice: 480,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "When should I upgrade from D2 to H13 for my scraper blades?",
+          answer:
+            "Upgrade to H13 when your melt processing temperature consistently exceeds 260 °C, or when you are processing highly contaminated streams such as post-consumer agricultural film, WEEE plastics, or heavily printed packaging waste. These feedstocks generate significant thermal cycling stress that causes D2 to soften and lose edge geometry within 200–400 operating hours. H13's molybdenum-vanadium carbide matrix maintains hardness and dimensional stability up to 300 °C, extending scraper service life by 60–80% on these feedstocks.",
+        },
+        {
+          question:
+            "How does scraper blade wear affect melt pressure and throughput on a continuous filter?",
+          answer:
+            "A worn scraper blade leaves a residual contamination film on the filter screen surface after each rotation. This film progressively reduces the effective open screen area, causing melt pressure to rise and throughput to fall. On a heavily loaded PCR line, a blade worn beyond its service limit can cause a 15–25% throughput reduction and accelerate screen clogging to the point of breakthrough failure. Monitoring melt pressure differential across the filter is the most reliable wear indicator — we recommend blade inspection when differential pressure rises more than 20% above baseline.",
+        },
+        {
+          question:
+            "What filtration fineness should I specify for recycled HDPE and PP pellet production?",
+          answer:
+            "For standard PCR HDPE and PP pellet production targeting film or injection moulding applications, specify 300–500 µm filtration fineness. This removes hard particles that cause die-face streaking and surface defects without excessive pressure drop on moderately contaminated feedstock. For food-grade contact recycled resin (rHDPE, rPP under EU 10/2011), specify 150–200 µm to meet the stricter contamination removal requirements. For highly contaminated agricultural film or MSW-derived feedstock, start with 500–800 µm to manage pressure and step down as the input quality improves.",
+        },
+        {
+          question:
+            "Will high-hardness aftermarket scraper blades score or damage my filter plates?",
+          answer:
+            "This is the most important question to ask any aftermarket blade supplier. Sureay engineers a deliberate hardness differential: filter plates are plasma nitrided to HV 1,000+ (approximately HRC 70+), and scraper blades are manufactured to a strictly controlled HRC 58–62. The blade is always softer than the plate surface — it functions as a controlled-wear consumable that gradually wears away without generating metal-transfer scoring or gouging on the harder plate face. Every shipment includes a Rockwell HRC test certificate confirming the blade is within this range. If a supplier cannot provide this certificate, you have no guarantee the hardness differential is correct.",
+        },
+        {
+          question:
+            "Are Sureay filter plates compatible with automated backflushing on Ettlinger and Gneuß systems?",
+          answer:
+            "Yes, fully compatible. Sureay filter plates are designed and FEA-validated for OEM-rated backflush pulse pressures (typically 150–400 bar on Ettlinger ERF and Gneuß RSFgenius systems). The conical laser-drilled hole geometry enhances backflush efficiency: the wider downstream outlet acts as a nozzle that accelerates the reverse pulse through each perforation, improving contaminant ejection versus cylindrical-hole plates. Hole array layout and plate dimensions replicate OEM specifications exactly — no recalibration of backflush timing, pressure, or controller parameters is required after installation.",
+        },
+        {
+          question:
+            "My filter is losing filtration quality without a differential pressure alarm. How do I diagnose this?",
+          answer:
+            "This is the symptom of silent hole enlargement — a failure mode where filter plate micro-perforations gradually widen due to chemical corrosion of the hole walls rather than mechanical wear. Enlarged holes allow oversized contaminant particles through while maintaining low differential pressure because the wider holes offer less resistance. The root cause is almost always HCl outgassing from PVC or organochlorine contamination in the feedstock reacting with standard tool steel at melt temperatures. Confirm by: (1) measuring output melt contamination particle size — if oversized particles are present without pressure rise, hole enlargement is confirmed; (2) inspect a removed plate under magnification for hole-wall pitting or rounding. The solution is to specify Sureay PVD-coated, corrosion-resistant PM steel filter plates, which seal the micro-perforation walls against acid diffusion and prevent the insidious progressive enlargement.",
+        },
+        {
+          question:
+            "Can Sureay match our existing EREMA or Gneuß scraper blade dimensions?",
+          answer:
+            "Yes. Send us your existing blade sample or the OEM part number and machine model. We will dimensionally verify the blade profile on our CMM, confirm the mounting interface, edge bevel angle, and material specification, and supply direct drop-in replacements. For EREMA Continuous Filter and Gneuß Rotary Filtration Systems, we maintain reference drawings for the most common platform sizes. Lead time for standard replacement blades is 7–12 working days from dimension confirmation.",
+        },
+        {
+          question:
+            "How many operating hours can I expect from D2 scraper blades on a mixed PCR line?",
+          answer:
+            "On a mixed PCR rigid plastics line (HDPE/PP, < 3% mineral contamination, melt temperature 230–260 °C), D2 scraper blades typically deliver 400–700 operating hours before the edge profile degrades to the point of rising differential pressure. H13 blades on the same line extend service intervals to 600–1,000 hours. On highly abrasive streams (glass-filled compounds, agricultural film with embedded soil), D2 service life drops to 150–300 hours; H13 extends this to 250–450 hours; solid carbide delivers 1,000–2,000+ hours on these feedstocks.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Are your melt filter scraper blades direct OEM replacements or aftermarket parts?",
+          answer:
+            "They are precision aftermarket replacements manufactured to OEM dimensional specifications. We reverse-engineer each blade from OEM drawings or customer samples, verify fit on a CMM, and supply with a dimensional inspection certificate. Our blades are not rebranded OEM parts — they are manufactured directly in our facility using premium D2, H13, or carbide materials with our full quality documentation package.",
+        },
+        {
+          question:
+            "What quality documentation is included with scraper blade shipments?",
+          answer:
+            "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
         },
       ],
     },

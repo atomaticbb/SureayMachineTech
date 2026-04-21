@@ -747,6 +747,170 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
+    id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+    tag: "MAINTENANCE GUIDE",
+    date: "21.APR.2026",
+    title:
+      "DAILY MAINTENANCE CHECKLIST: SCRAPER BLADES & FILTER PLATES FOR CONTINUOUS MELT FILTERS",
+    excerpt:
+      "A step-by-step daily, weekly, and monthly maintenance guide for continuous melt filter scraper blades and filter plates — with a printable inspection checklist to extend service life and eliminate unplanned downtime on PCR recycling lines.",
+    image: "/images/products/blades/scraper-blades-01.webp",
+    readTime: "6 MIN",
+    relatedProductIds: ["continuous-melt-filter-scraper-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Continuous melt filters achieve automatic slag removal by combining a high-precision microporous filter plate with a rotating scraper blade that continuously cleans its surface — eliminating the frequent manual screen changes required by conventional screen changers. However, the [scraper blade and filter plate](/products/continuous-melt-filter-scraper-blades) are wear consumables. Non-standard operation and deferred maintenance accelerate failure, increase replacement costs, and force the unplanned line stops that continuous filtration was designed to prevent.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The maintenance programme below is organised into three frequencies — daily, weekly, and monthly — plus a dedicated filter plate deep-cleaning procedure. A printable inspection checklist is attached at the end of the article.",
+      },
+
+      {
+        type: "h2",
+        value: "Ⅰ. Daily Inspection (Before and After Each Startup)",
+      },
+      { type: "h3", value: "1. Listen" },
+      {
+        type: "paragraph",
+        value:
+          "During startup and throughout operation, listen for any abnormal friction, squealing, impact, or periodic irregular noise from the filter head. Any sound that was not present in the previous shift is a diagnostic signal and should be investigated before the fault progresses.",
+      },
+      { type: "h3", value: "2. Observe" },
+      {
+        type: "paragraph",
+        value:
+          "Confirm slag discharge is flowing smoothly and continuously — intermittent or absent discharge indicates a blocked discharge port or degraded scraper contact. Check for melt leakage around the filter head seals. Verify that pneumatic or hydraulic supply pressure is stable and within the OEM-specified range; pressure fluctuations directly affect scraper contact force and filtration consistency.",
+      },
+      { type: "h3", value: "3. Clean" },
+      {
+        type: "paragraph",
+        value:
+          "While the machine is at a safe temperature, use a soft cloth to remove residual melt material from around the scraper blade, blade holder, and slag discharge port. Material that is allowed to dry and harden in these areas creates abrasive deposits that accelerate blade edge wear on subsequent startups.",
+      },
+      { type: "h3", value: "4. Record" },
+      {
+        type: "paragraph",
+        value:
+          "Log any observed abnormality — noise, pressure deviation, leakage, incomplete slag discharge — immediately in the maintenance ledger. If a fault cannot be attributed to a known cause, shut down and troubleshoot rather than continuing production. Undiagnosed progressive faults on scraper-type filters typically escalate to filter plate damage, which is significantly more costly to repair than the blade itself.",
+      },
+
+      { type: "h2", value: "Ⅱ. Weekly Maintenance" },
+      { type: "h3", value: "1. Inspect the Blade Edge" },
+      {
+        type: "paragraph",
+        value:
+          "Remove the scraper blade from its holder and inspect the cutting edge under adequate lighting. Look for notches, chipped sections, rolled edge, or uneven wear across the blade width. Any notch — even a small one — must be treated as a mandatory replacement trigger. A notched blade does not clean the filter plate evenly: the gap left by the notch allows contaminant cake to bypass the scraping action, progressively building up into a solid deposit that scores the filter plate surface on subsequent rotations.",
+      },
+      {
+        type: "callout",
+        value:
+          "BLADE EDGE FAILURE: A single notch from a tramp metal impact is the most common cause of premature filter plate scoring on PCR lines. If notching is recurring, upgrade from D2 to H13 for higher impact toughness, or specify toughness-grade carbide for heavily contaminated streams. See the [Scraper Blades product page](/products/continuous-melt-filter-scraper-blades) for the full metallurgical upgrade path and failure analysis diagnostic matrix.",
+      },
+      { type: "h3", value: "2. Retighten Fasteners" },
+      {
+        type: "paragraph",
+        value:
+          "Retighten all screws on the blade holder, actuating cylinder, and base mounting. Vibration from the continuous rotation mechanism causes gradual fastener loosening that is not perceptible during casual inspection. A loose blade holder allows micro-movement of the blade relative to the filter plate surface, creating inconsistent contact pressure that both degrades scraping effectiveness and accelerates non-uniform blade wear.",
+      },
+      { type: "h3", value: "3. Check the Air and Oil Circuit" },
+      {
+        type: "paragraph",
+        value:
+          "Inspect all pneumatic lines for leaks and loose fittings. Drain accumulated water from the air filter bowl — water in the pneumatic circuit causes corrosion of actuator seals and unpredictable variation in scraper contact force. Check the oil mist lubricator reservoir and refill if below the minimum level. Dry-running pneumatic actuators wear seal surfaces rapidly, leading to pressure loss and inconsistent blade contact.",
+      },
+
+      { type: "h2", value: "Ⅲ. Monthly Maintenance" },
+      { type: "h3", value: "1. Disassemble and Thoroughly Clean" },
+      {
+        type: "paragraph",
+        value:
+          "Remove the complete scraper assembly from the filter head. Disassemble the blade holder and sealing components. Thoroughly clean all surfaces to remove dry material from dead corners, crevices around the blade seating surface, and the slag discharge channel. Hardened melt residue in these areas prevents correct blade seating during reassembly and creates stress concentration points that initiate blade cracking.",
+      },
+      { type: "h3", value: "2. Measure Blade Wear" },
+      {
+        type: "paragraph",
+        value:
+          "Measure the remaining blade edge height or thickness against the OEM minimum dimension specification. Replace immediately if at or below the wear limit. An undersized blade applies reduced contact force against the filter plate, dramatically degrading scraping efficiency and allowing contaminant cake to accumulate.",
+      },
+      { type: "h3", value: "3. Calibrate Cylinder Pressure and Spring Preload" },
+      {
+        type: "paragraph",
+        value:
+          "Using a calibrated pressure gauge, verify the cylinder actuation pressure and spring preload against the OEM specification. These values directly control the scraper contact force. Insufficient force leaves residual contamination on the plate after each rotation; excessive force accelerates blade wear and risks scoring the plasma-nitrided filter plate surface. After calibration, manually rotate the scraper through a full revolution to confirm uniform full-width contact with no local suspension.",
+      },
+      { type: "h3", value: "4. Inspect Sealing Components" },
+      {
+        type: "paragraph",
+        value:
+          "Inspect all sealing rings and dust rings for aging (hardening, cracking, loss of elasticity), oil leakage, or air leakage. Replace any seal showing visible degradation — operating with a compromised seal allows melt infiltration into the actuator mechanism, leading to rapid bearing and seal failure requiring complete assembly replacement.",
+      },
+
+      {
+        type: "h2",
+        value: "Ⅳ. Filter Plate Deep Cleaning: The Five-Step Method",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When differential pressure rises progressively despite a new blade and correct scraper contact force, the microporous filter plate requires deep cleaning to remove embedded contaminants that scraping cannot reach. The five-step procedure below is suitable for field cleaning without specialist equipment.",
+      },
+      { type: "h3", value: "Step 1 — Plastic Burn-Off" },
+      {
+        type: "paragraph",
+        value:
+          "Remove the filter plate. Apply a thin coat of waste engine oil to the downstream (back) face as a release agent, oil-face down. Place on a grate over a heat source and burn off residual polymer. Work in a well-ventilated area. Do not overheat — sustained temperatures above 600°C can relieve the plasma-nitrided surface hardness.",
+      },
+      { type: "h3", value: "Step 2 — Flatten and Reshape" },
+      {
+        type: "paragraph",
+        value:
+          "While still warm and pliable after burn-off, clamp the plate firmly between two flat surfaces (ceramic tiles or steel plates) to correct any warpage from thermal gradient. Hold under clamping pressure until cooled to ambient temperature.",
+      },
+      { type: "h3", value: "Step 3 — High-Pressure Water Rinse" },
+      {
+        type: "paragraph",
+        value:
+          "Flush both faces with a high-pressure water gun, directing the jet perpendicular to the perforation array to drive out embedded particles — metal wire, sand, calcium carbonate, glass fibre — from the conical bore channels. Inspect against a backlight source after rinsing: blocked holes appear as dark spots.",
+      },
+      { type: "h3", value: "Step 4 — Compressed Air Blow-Dry" },
+      {
+        type: "paragraph",
+        value:
+          "Blow the plate dry from both faces with clean, dry compressed air, paying particular attention to moisture retention within the micro-perforations. Residual water accelerates corrosion within the bore channels during storage.",
+      },
+      { type: "h3", value: "Step 5 — Rust Prevention and Storage" },
+      {
+        type: "paragraph",
+        value:
+          "Apply a thin coat of light white oil or hydraulic oil to all surfaces. Wrap in oil paper or seal in a plastic bag and store flat in a clean, dry location. A properly cleaned and preserved plate can be stored indefinitely and returned to service as a verified clean spare.",
+      },
+
+      {
+        type: "h2",
+        value: "Maintenance Checklist (Printable / Screenshot)",
+      },
+      {
+        type: "callout",
+        value:
+          "CONTINUOUS MELT FILTER — SCRAPER BLADE & FILTER PLATE INSPECTION CHECKLIST\n\n☐ Blade Edge — No notch, burr, chipped section, or uneven wear across full width\n☐ Blade Holder Fixing — All screws tight, no deformation or looseness\n☐ Air / Oil Circuit — No leaks, supply pressure stable, oil mist lubricator filled\n☐ Scraper Fit — Full-width contact with filter plate, no local suspension\n☐ Operation — No abnormal noise, vibration, or resistance during rotation\n☐ Slag Discharge — Continuous, unobstructed flow from discharge port\n☐ Cleanliness — No hardened or dry material in blade holder or discharge port\n☐ Seal Components — No aging, cracking, oil leakage, or air leakage\n\nRecord inspection date, operator name, and any corrective actions. Retain for a minimum of 12 months.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "It is recommended to complete and sign off the checklist after each maintenance event, building a traceable ledger that allows early detection of developing trends — increasing wear rate, recurring leaks, progressive pressure rise — before they escalate to unplanned downtime.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Have technical difficulties with your continuous melt filter? Sureay supplies precision aftermarket [scraper blades and conical laser-drilled filter plates](/products/continuous-melt-filter-scraper-blades) in D2, H13, and solid carbide grades, with a hardness certificate and CMM dimensional report in every shipment. Contact the Sureay engineering team at lynn@sureay.com or +86 180 0555 0657.",
+      },
+    ],
+  },
+  {
     id: "chinaplas-2024-oem-partnerships",
     tag: "EXHIBITIONS",
     date: "18.APR.2024",

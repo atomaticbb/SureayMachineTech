@@ -170,7 +170,7 @@ const PAGE_SCHEMA = {
       position: 1,
       item: {
         "@type": "Product",
-        name: "Rotary Slitter Knives",
+        name: "Film & Tape Slitter Knives",
         image:
           "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
         description:

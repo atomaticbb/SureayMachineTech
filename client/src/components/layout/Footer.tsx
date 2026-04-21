@@ -85,7 +85,7 @@ export default function Footer() {
                   href="/products/rotary-slitter-knives"
                   className="hover:text-white transition-colors"
                 >
-                  Rotary Slitter Knives
+                  Film & Tape Slitter Knives
                 </Link>
               </li>
               <li>

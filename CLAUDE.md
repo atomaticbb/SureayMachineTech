@@ -1,246 +1,120 @@
 # CLAUDE.md
 
-This file provides context and conventions for working in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+## Project
 
-B2B marketing and product catalog website for **Sureay Machinery Technology Co., Ltd.** — an ISO 9001:2015 certified Chinese manufacturer of industrial blades and cutting knives. The site targets international OEM buyers in the plastic recycling, metal processing, and paper converting industries.
-
-Live site: https://www.sureay.com
+B2B product catalog for **Sureay Machinery Technology Co., Ltd.** — Chinese manufacturer of industrial blades targeting international OEM buyers. Live: https://www.sureay.com
 
 ## Commands
 
 ```bash
-# Development (frontend + backend concurrently)
-pnpm dev
+pnpm dev              # frontend (5173) + backend (3000) concurrently
+pnpm build            # generate-sitemap → vite build → puppeteer prerender
+pnpm build:full       # above + esbuild server bundle
+pnpm type-check
+pnpm lint:fix && pnpm format   # run before committing
 
-# Type checking
-pnpm type-check          # tsc --noEmit
-
-# Linting
-pnpm lint                # eslint
-pnpm lint:fix
-
-# Formatting
-pnpm format              # prettier --write .
-
-# Production build (sitemap + Vite + Puppeteer prerender)
-pnpm build
-
-# Full build (above + esbuild server bundle)
-pnpm build:full
-
-# Start production server
-pnpm start
-
-# Database
-pnpm db:generate         # prisma generate
-pnpm db:migrate          # prisma migrate dev
-pnpm db:migrate:prod     # prisma migrate deploy
-pnpm db:push             # prisma db push (schema push without migration)
-pnpm db:seed             # tsx prisma/seed.ts
-pnpm db:studio           # prisma studio (GUI)
-pnpm db:reset            # prisma migrate reset
-
-# Docker
-pnpm docker:build
-pnpm docker:run          # docker-compose up -d
-pnpm docker:stop         # docker-compose down
+# DB
+pnpm db:migrate       # dev (creates migration file)
+pnpm db:migrate:prod  # production
+pnpm db:push          # quick schema push, no migration (dev only)
+pnpm db:studio
 ```
 
 ## Architecture
 
 ```
-client/     React 19 SPA (Vite, Tailwind CSS v4, shadcn/ui)
-server/     Express 4 API (TypeScript, Prisma + SQLite)
-shared/     Types and Zod validators used by both
-prisma/     Schema and seed script
-scripts/    Puppeteer prerender (SSG for SEO)
+client/   React 19 SPA (Vite, Tailwind v4, shadcn/ui, wouter)
+server/   Express 4 API (TypeScript, Prisma + SQLite)
+shared/   Types + Zod validators shared by both
+scripts/  Puppeteer prerender (SSG) + sitemap generator
 ```
 
-**Dev ports:** Frontend on `5173`, API on `3000`. Vite proxies `/api` and `/health` to `localhost:3000`.
+**Deployment:** Docker + Coolify. Express serves `/api` + prerendered static files from `dist/public/`.
 
-**Build output:** `dist/public/` (static files), `dist/index.js` (bundled server).
-
-**Deployment:** Docker + Coolify (self-hosted). Express serves both `/api` and the prerendered static files from `dist/public/`.
-
-## Path Aliases
-
-```typescript
-@/*        → client/src/*
-@shared/*  → shared/*
-@assets/*  → attached_assets/*
-```
+**Path aliases:** `@/*` → `client/src/*`, `@shared/*` → `shared/*`
 
 ## Key Files
 
-| File                           | Role                                                                                                                                                                                                         |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `client/src/data/blades.ts`    | **Single source of truth** for the product catalog. All product data, types (`Blade`, `BladeCategoryType`, `BladeSectorType`, etc.), and dimension tables live here. Never duplicate product data elsewhere. |
-| `client/src/App.tsx`           | Router, providers, lazy-loaded pages, `ProtectedRoute` for admin                                                                                                                                             |
-| `shared/types/product.ts`      | `Product`, `ProductSpecs`, `BladeCategory`, `MachineryCategory` types                                                                                                                                        |
-| `shared/types/contact.ts`      | `ContactFormData`, `ContactSubmissionResponse`                                                                                                                                                               |
-| `shared/validators/contact.ts` | Zod `ContactFormSchema` — used on both client and server                                                                                                                                                     |
-| `server/routes/index.ts`       | Mounts all sub-routers under `/api`                                                                                                                                                                          |
-| `server/index.ts`              | Express app entry (production): compression, helmet, CORS, static serving                                                                                                                                    |
-| `server/dev.ts`                | Express dev entry (used with `tsx watch`)                                                                                                                                                                    |
-| `scripts/prerender.ts`         | Puppeteer crawls all routes and writes static HTML to `dist/public/`                                                                                                                                         |
-| `scripts/generate-sitemap.ts`  | Generates `client/public/sitemap.xml` at build time                                                                                                                                                          |
-| `client/index.html`            | GA4 snippet, JSON-LD (Organization schema), favicons                                                                                                                                                         |
+| File | Role |
+|------|------|
+| `client/src/data/blades.ts` | **Single source of truth** for the product catalog — never duplicate product data elsewhere |
+| `client/src/App.tsx` | Router, providers, lazy pages, `ProtectedRoute` for admin |
+| `scripts/prerender.ts` | Puppeteer crawls all routes → static HTML in `dist/public/` |
+| `scripts/generate-sitemap.ts` | Auto-generates `client/public/sitemap.xml` — update when adding routes |
+| `client/index.html` | GA4 snippet + Organization JSON-LD |
 
-## Frontend Conventions
+## Frontend
 
-### Component structure
-
-Pages live in `client/src/pages/`. Each page wraps content in `<Navbar>` and `<Footer>` and includes an `<SEO>` component at the top for per-page meta tags.
-
+**Page template** — every page uses:
 ```tsx
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import SEO from "@/components/common/SEO";
-
-export default function MyPage() {
-  return (
-    <>
-      <SEO title="..." description="..." />
-      <Navbar />
-      <main>...</main>
-      <Footer />
-    </>
-  );
-}
+<><SEO title="..." description="..." /><Navbar /><main>...</main><Footer /></>
 ```
 
-### Design system
+**Design system — Swiss Brutalist / Industrial:**
+- Colors: navy `#001f4d`, white `#ffffff`, gold `#e8b84b`
+- `rounded-none` everywhere — no border-radius, no drop shadows
+- Monospace uppercase labels with letter-spacing for spec data
+- Framer Motion for entrance animations (keep subtle)
 
-The site uses a **Swiss Brutalist / High-End Corporate Industrial** visual language:
+**Data/state:** No global state library. API calls via `client/src/api/` using `axios`; file uploads use raw `fetch`. Router is `wouter` — use `useLocation`/`Link` from there, not React Router.
 
-- **Colors:** Deep navy `#001f4d` (primary), white `#ffffff`, gold accent `#e8b84b`
-- **No border-radius** — use `rounded-none` everywhere
-- **No drop shadows**
-- **Typography:** Monospace labels with uppercase and letter-spacing for spec data
-- **Motion:** Framer Motion for entrance animations; keep subtle
+**Analytics:** `gtagEvent({ action, category, label })` from `@/lib/gtag`.
 
-Do not introduce soft rounded cards, pastel colors, or generic SaaS UI patterns.
+## Backend
 
-### State and data fetching
+Server follows routes → controllers → services → db (Prisma) layering.
 
-- No global state library. Use React hooks and context.
-- API calls go through functions in `client/src/api/`.
-- Use `axios` for API client calls; use raw `fetch` for form submissions with `multipart/form-data`.
+Admin routes use `authMiddleware` (JWT via HTTP-only cookie set on `POST /api/auth/login`).
 
-### Analytics
+Contact form (`POST /api/contact`): multer memoryStorage, 15 MB, `.pdf .dxf .dwg .step .stp`, rate-limited to 3/IP/15 min, stores to DB + Resend email.
 
-Track meaningful user interactions with `gtagEvent` from `@/lib/gtag`:
-
-```typescript
-import { gtagEvent } from "@/lib/gtag";
-gtagEvent({ action: "form_submit", category: "contact", label: "rfq" });
-```
-
-### Routing
-
-Uses `wouter` (not React Router). Use `useLocation` and `Link` from `wouter`.
-
-## Backend Conventions
-
-### Server layer pattern (MVC)
-
-```
-routes/      → validates input, calls controller
-controllers/ → orchestrates service calls, sends response
-services/    → business logic
-db/          → database access (Prisma queries)
-```
-
-### Authentication
-
-Admin routes are protected by `authMiddleware` (JWT via HTTP-only cookie). The cookie is set on `POST /api/auth/login` and verified on `GET /api/auth/me`.
-
-### Contact form
-
-- Route: `POST /api/contact`
-- multer `memoryStorage`, 15 MB limit, accepts `.pdf .dxf .dwg .step .stp`
-- Custom in-memory rate limiter: 3 submissions per IP per 15 minutes
-- On success: stores in `Contact` table, sends email via Resend, logs to `EmailLog`
-
-### Error handling
-
-All async route handlers must call `next(err)` on error. The global `errorHandler` middleware in `server/middleware/errorHandler.ts` formats the response.
-
-### Adding a new API endpoint
-
-1. `server/services/myService.ts` — business logic
-2. `server/controllers/myController.ts` — request/response handling
-3. `server/routes/myRoutes.ts` — route definitions
-4. `server/routes/index.ts` — mount the new router
-
-## Shared Code
-
-Always put types and validators in `shared/` when they are needed by both client and server. Import with `@shared/types` or `@shared/validators`.
-
-## Database
-
-SQLite via Prisma. Schema is in `prisma/schema.prisma`.
-
-After changing the schema:
-
-- Development: `pnpm db:migrate` (creates a migration file)
-- Production: `pnpm db:migrate:prod` (applies pending migrations)
-- Quick iteration: `pnpm db:push` (no migration file, dev only)
-
-The `postinstall` script runs `prisma generate` automatically after `pnpm install`.
-
-## Code Style
-
-Enforced by ESLint (flat config, v9) and Prettier. Key rules:
-
-- **Prettier:** double quotes, semicolons, `trailingComma: "es5"`, `printWidth: 80`, 2-space indent, LF line endings
-- `no-console` is a **warning** — avoid leaving console logs in committed code
-- `@typescript-eslint/no-explicit-any` is a **warning** — type everything properly
-- Unused variables prefixed with `_` are ignored by ESLint
-- `react/react-in-jsx-scope` is off (React 19 automatic JSX runtime)
-
-Run `pnpm lint:fix && pnpm format` before committing.
-
-## Environment Variables
-
-```env
-# Database
-DATABASE_URL="file:./prisma/data/database.db"
-
-# Email (Resend)
-RESEND_API_KEY=re_xxxxxxxxxxxxx
-EMAIL_FROM=noreply@sureay.com
-EMAIL_TO=sales@sureay.com
-
-# Server
-NODE_ENV=production
-PORT=3000
-ALLOWED_ORIGINS=https://www.sureay.com
-
-# Frontend (Vite — must be prefixed VITE_)
-VITE_API_URL=https://api.sureay.com
-VITE_ANALYTICS_ENDPOINT=/api/analytics
-```
-
-Frontend environment variables must be prefixed with `VITE_` to be exposed to the browser bundle.
-
-## SEO Notes
-
-- Per-page meta tags and JSON-LD are set via `react-helmet-async` in the `<SEO>` component.
-- The `scripts/prerender.ts` Puppeteer script generates static HTML for all routes at build time — this is what search engines index.
-- `client/public/sitemap.xml` is **auto-generated** by `scripts/generate-sitemap.ts` at build time. Update the script when adding new routes.
-- Structured data (Schema.org) for the Organization is in `client/index.html`. Per-product JSON-LD is rendered by the Product Detail page.
+New endpoint: create service → controller → route file → mount in `server/routes/index.ts`.
 
 ## Product Catalog
 
-All product data is in `client/src/data/blades.ts`. The `Blade` interface includes:
+`client/src/data/blades.ts` — `Blade` type includes `id` (URL slug), `category` (`BladeCategoryType`), `sector` (`BladeSectorType`), `standardDimensions`, optional `dimensionLabels`. Add new products only here.
 
-- `id` — URL slug used in `/products/:id`
-- `category` — one of `BladeCategoryType` (8 values)
-- `sector` — one of `BladeSectorType` (recycling, paper, converting, metal, other)
-- `standardDimensions` — array of `StandardDimension` rows for the spec table
-- `dimensionLabels` — optional column header overrides for non-circular blades
+## SEO
 
-When adding a new product, add it only to `blades.ts`. Do not add product data to the database seed or any other file unless explicitly required.
+- `<SEO>` component uses `react-helmet-async` for per-page meta + JSON-LD
+- Prerender writes static HTML at build time — that's what search engines index
+- Update `scripts/generate-sitemap.ts` when adding routes
+
+## Code Style
+
+Prettier: double quotes, semicolons, `trailingComma: "es5"`, 80-char width, 2-space indent, LF. ESLint: `no-console` and `no-explicit-any` are warnings.
+
+## Environment Variables
+
+```
+DATABASE_URL            # SQLite path
+RESEND_API_KEY          # email sending
+EMAIL_FROM / EMAIL_TO
+PORT / ALLOWED_ORIGINS
+VITE_API_URL            # must be VITE_ prefix to reach browser bundle
+VITE_ANALYTICS_ENDPOINT
+```
+
+## Behavioral Guidelines
+
+Tradeoff: These guidelines bias toward caution over speed. For trivial tasks, use judgment.
+
+### 1. Think Before Coding
+
+Before implementing: state assumptions explicitly; surface multiple interpretations instead of picking silently; push back if a simpler approach exists; stop and ask when something is unclear.
+
+### 2. Simplicity First
+
+Minimum code that solves the problem. No features beyond what was asked, no single-use abstractions, no speculative flexibility. If 200 lines could be 50, rewrite it.
+
+### 3. Surgical Changes
+
+Touch only what you must. Don't improve adjacent code, formatting, or comments. Match existing style. Mention unrelated dead code — don't delete it. Remove only the imports/variables YOUR changes made unused.
+
+Every changed line should trace directly to the user's request.
+
+### 4. Goal-Driven Execution
+
+Transform tasks into verifiable goals ("Fix the bug" → "Write a test that reproduces it, then make it pass"). For multi-step tasks, state a brief plan with verify steps before starting.

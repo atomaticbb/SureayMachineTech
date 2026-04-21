@@ -36,7 +36,7 @@ const PRODUCT_GROUPS = [
         href: "/products/rotary-slitter-knives",
       },
       {
-        label: "Metal Foil & Strip Slitters",
+        label: "Metal Strip & Coil Slitters",
         href: "/products/metal-foil-strip-slitter-knives",
       },
       {

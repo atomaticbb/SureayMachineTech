@@ -81,9 +81,10 @@ const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
 // ─── Products ─────────────────────────────────────────────────────────────────
 // Dynamically load products from blades.ts where sector === "metal"
-const PRODUCTS: IndustryProduct[] = blades
-  .filter(blade => blade.sector === "metal")
-  .map((blade, index) => ({
+const PRODUCTS: IndustryProduct[] = [
+  ...blades.filter(blade => blade.sector === "metal"),
+  ...blades.filter(blade => blade.id === "bottom-grooved-anvil-knives"),
+].map((blade, index) => ({
     category: blade.categoryDisplay,
     name: blade.name,
     image: blade.image,
