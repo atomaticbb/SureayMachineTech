@@ -45,7 +45,8 @@ export type BladeCategoryType =
   | "log_saw_blades" // Tissue / log circular saw blades
   | "trim_cut_blades" // Paper guillotine · three-knife trimmer
   | "metal_processing" // Metal coil slitting · shear blades · cold saw
-  | "battery_precision"; // New energy — lithium battery electrode slitting
+  | "battery_precision" // New energy — lithium battery electrode slitting
+  | "custom_profile"; // Custom profile / special-shaped blades
 
 // ===== BLADE SECTOR TYPE (second filter axis, mirrors machines.ts `tonnage`) =====
 export type BladeSectorType =
@@ -4208,6 +4209,34 @@ export const blades: Blade[] = [
             "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
         },
       ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Special-Shaped Blades (Custom Profile)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "special-shaped-blades",
+    name: "Special-Shaped Blades",
+    fullName: "Custom Profile & Special-Shaped Industrial Blades",
+    category: "custom_profile",
+    sector: "other",
+    categoryDisplay: "Custom Profile Blades",
+    image: "/images/products/blades/special-shaped-knife.webp",
+    badge: "OEM Custom",
+    badgeColor: "teal",
+    description:
+      "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. Any profile, any industry.",
+    link: "/custom-blades",
+    specs: [
+      { label: "Material", value: "D2 / H13 / PM-HSS / Carbide" },
+      { label: "Tolerance", value: "±0.02 mm" },
+      { label: "Drawing Input", value: "DXF / DWG / STEP / Sample" },
+      { label: "Lead Time", value: "7–15 working days" },
+    ],
+    offers: {
+      lowPrice: 20,
+      highPrice: 800,
     },
   },
 ];

@@ -4,25 +4,25 @@
   <!-- Core Pages -->
   <url>
     <loc>https://sureay.com/</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://sureay.com/products</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sureay.com/about</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://sureay.com/contact</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -30,31 +30,37 @@
   <!-- Industry Landing Pages -->
   <url>
     <loc>https://sureay.com/plastic-industry</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sureay.com/metal-industry</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sureay.com/paper-industry</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sureay.com/new-energy-industry</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sureay.com/converting-industry</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/custom-blades</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -62,121 +68,145 @@
   <!-- Product Detail Pages -->
   <url>
     <loc>https://sureay.com/products/rotary-slitter-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/rotary-slitter-knives-paper</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/metal-foil-strip-slitter-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/twin-shaft-blades-recycling</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/multi-shaft-blades-metal</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/twin-shaft-blades-battery</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/tissue-log-saw-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/paper-cutting-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/single-shaft-rotor-inserts</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/single-shaft-bed-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/granulator-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/metal-coil-slitting-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/metal-shear-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/three-knife-trimmer-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/lithium-battery-slitting-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/corrugated-slitter-scorer-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/tire-shredder-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/nonwoven-slitter-knives</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/products/bottom-grooved-anvil-knives</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/metal-cold-saw-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://sureay.com/products/scrap-chopper-blades</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/products/strand-pelletizer-rotors</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/products/continuous-melt-filter-scraper-blades</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/products/special-shaped-blades</loc>
+    <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -239,6 +269,12 @@
   <url>
     <loc>https://sureay.com/news/log-saw-blade-bevel-angles</loc>
     <lastmod>2024-05-02</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sureay.com/news/melt-filter-scraper-blade-daily-maintenance-checklist</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>never</changefreq>
     <priority>0.6</priority>
   </url>

@@ -24,6 +24,7 @@ const MetalIndustry = lazy(() => import("./pages/metal-industry"));
 const PaperIndustry = lazy(() => import("./pages/paper-industry"));
 const NewEnergyIndustry = lazy(() => import("./pages/new-energy-industry"));
 const ConvertingIndustry = lazy(() => import("./pages/converting-industry"));
+const CustomBlades = lazy(() => import("./pages/custom-blades"));
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {
@@ -143,6 +144,7 @@ function Router() {
           <Route path="/paper-industry" component={PaperIndustry} />
           <Route path="/new-energy-industry" component={NewEnergyIndustry} />
           <Route path="/converting-industry" component={ConvertingIndustry} />
+          <Route path="/custom-blades" component={CustomBlades} />
 
           {/* Static pages */}
           <Route path="/about" component={About} />

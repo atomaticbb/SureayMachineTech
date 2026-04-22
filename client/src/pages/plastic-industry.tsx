@@ -51,7 +51,7 @@ const HERO_DATA: IndustryHeroData = {
     {
       src: "/images/applications/plastic-industry/scraper-blades-02.webp",
       alt: "Melt filter scraper blades for continuous filtration",
-    },   
+    },
     {
       src: "/images/applications/plastic-industry/granulator-blades-03.webp",
       alt: "Granulator blades for plastic size reduction",

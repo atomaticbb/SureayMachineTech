@@ -128,6 +128,12 @@ const industryPages: UrlEntry[] = [
     lastmod: TODAY,
     priority: "0.8",
   },
+  {
+    loc: `${BASE_URL}/custom-blades`,
+    changefreq: "monthly",
+    lastmod: TODAY,
+    priority: "0.8",
+  },
 ];
 
 const productPages: UrlEntry[] = blades.map(b => ({

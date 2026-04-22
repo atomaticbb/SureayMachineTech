@@ -30,6 +30,7 @@ const BLADE_SUBCATEGORY_MAP: Record<BladeCategoryType, ProductSubCategory> = {
   trim_cut_blades: "trim-cut-blades",
   metal_processing: "metal-processing-blades",
   battery_precision: "battery-precision-blades",
+  custom_profile: "shaped-custom-blades",
 };
 
 // ─── Adapter ───────────────────────────────────────────────────────────────────

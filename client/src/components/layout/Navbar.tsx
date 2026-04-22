@@ -21,6 +21,7 @@ import { INDUSTRY_MENU_DATA } from "./MegaMenu";
 
 // ── Static nav links ─────────────────────────────────────────────────────────
 const NAV_LINKS = [
+  { label: "CUSTOM BLADES", path: "/custom-blades" },
   { label: "NEWS", path: "/news" },
   { label: "ABOUT US", path: "/about" },
   { label: "CONTACT US", path: "/contact" },
@@ -189,18 +190,21 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
           <nav className="flex flex-col gap-0.5 flex-1">
             {categories.map((cat, i) => {
               const isActive = i === activeIdx;
+              const isCustom = cat.id === "custom-profile";
               return (
                 <Link key={cat.id} href={cat.featured.ctaHref}>
                   <div
                     onMouseEnter={() => setActiveIdx(i)}
                     onClick={onClose}
                     className={`flex items-center gap-3 py-3 px-3 border-l-2 transition-all duration-150 cursor-pointer group ${
+                      isCustom ? "mt-1 border-t border-slate-100 pt-4" : ""
+                    } ${
                       isActive
                         ? "border-[#001f4d] bg-slate-50 text-[#001f4d]"
                         : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#001f4d]"
                     }`}
                   >
-                    <span className="text-[11px] font-bold uppercase tracking-[0.12em] leading-tight">
+                    <span className={`text-[11px] font-bold uppercase tracking-[0.12em] leading-tight ${isCustom ? "font-black" : ""}`}>
                       {cat.title}
                     </span>
                     <ChevronRight
@@ -227,44 +231,102 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
           </Link>
         </div>
 
-        {/* ── Col 2: Product Grid (expanded) ──────────────────────────── */}
+        {/* ── Col 2: Product Grid or Custom Large Image ───────────────── */}
         <div className="flex-1 min-w-0 px-8">
           <AnimatePresence mode="wait">
-            <motion.div
-              key={activeIdx + "-grid"}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -6 }}
-              transition={{ type: "spring", stiffness: 500, damping: 45 }}
-              className="grid grid-cols-4 gap-x-4 gap-y-4"
-            >
-              {active.items.slice(0, 8).map(item => (
-                <Link key={item.id} href={item.href}>
+            {active.id === "custom-profile" ? (
+              <motion.div
+                key="custom-profile-image"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ type: "spring", stiffness: 500, damping: 45 }}
+                className="flex gap-5 h-80"
+              >
+                {/* Left: hero image + title below */}
+                <Link href="/custom-blades" className="flex-1 min-w-0 flex flex-col">
                   <div
                     onClick={onClose}
-                    className="group cursor-pointer text-center"
+                    className="relative flex-1 overflow-hidden cursor-pointer group bg-white"
                   >
-                    {/* Product image — fixed w-36 h-32 thumbnail */}
-                    <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        loading="lazy"
-                        decoding="async"
-                        width={144}
-                        height={128}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-
-                    {/* Name */}
-                    <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
-                      {item.name}
-                    </p>
+                    <img
+                      src="/images/products/blades/special-shaped-knife.webp"
+                      alt="Special-Shaped & Custom Profile Blades"
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/30 to-transparent" />
                   </div>
+                  <p
+                    onClick={onClose}
+                    className="font-black text-[12px] text-[#001f4d] uppercase tracking-tight leading-tight pt-2 text-center"
+                  >
+                    Special-Shaped &amp; Custom Profile Blades
+                  </p>
                 </Link>
-              ))}
-            </motion.div>
+
+                {/* Right: profile types */}
+                <div className="w-[25%] flex-shrink-0 flex flex-col pl-4">
+                  <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.28em] mb-2">
+                    Profile Types
+                  </p>
+                  {[
+                    "Straight — Single/Double Bevel",
+                    "Circular Disc (Any OD/ID)",
+                    "Serrated & Perforated Edge",
+                    "Multi-Step & Shoulder Profile",
+                    "Asymmetric Cross-Section",
+                    "Hook & Hook-Tooth Forms",
+                    "Conical & Tapered Profile",
+                    "Carbide-Tipped Composite",
+                  ].map(p => (
+                    <div
+                      key={p}
+                      className="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0"
+                    >
+                      <span className="w-[3px] h-3 bg-[#001f4d] flex-shrink-0" />
+                      <span className="text-[13px] text-slate-600 leading-tight">
+                        {p}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            ) : (
+              <motion.div
+                key={activeIdx + "-grid"}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -6 }}
+                transition={{ type: "spring", stiffness: 500, damping: 45 }}
+                className="grid grid-cols-4 gap-x-4 gap-y-4"
+              >
+                {active.items.slice(0, 8).map(item => (
+                  <Link key={item.id} href={item.href}>
+                    <div
+                      onClick={onClose}
+                      className="group cursor-pointer text-center"
+                    >
+                      <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          loading="lazy"
+                          decoding="async"
+                          width={144}
+                          height={128}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
+                        {item.name}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </motion.div>
+            )}
           </AnimatePresence>
         </div>
       </div>
@@ -343,7 +405,7 @@ export default function Navbar() {
     location.startsWith("/products") || location.startsWith("/industry");
 
   const linkCls = (active: boolean) =>
-    `text-[13px] font-medium tracking-[0.18em] uppercase transition-colors cursor-pointer ${
+    `text-[13px] font-medium tracking-[0.08em] uppercase transition-colors cursor-pointer ${
       active ? "text-[#003366]" : "text-slate-500 hover:text-[#003366]"
     }`;
 
@@ -373,7 +435,7 @@ export default function Navbar() {
             </Link>
 
             {/* ── Desktop nav ────────────────────────────────────────────── */}
-            <div className="hidden md:flex items-center gap-7">
+            <div className="hidden md:flex items-center gap-10">
               <Link href="/">
                 <span className={linkCls(isActive("/"))}>HOME</span>
               </Link>
@@ -542,9 +604,14 @@ export default function Navbar() {
                       {mobileProdTab === "industry" && (
                         <div className="pb-5">
                           {INDUSTRY_MENU_DATA.categories.map(cat => {
+                            const isCustom = cat.id === "custom-profile";
                             return (
                               <Link key={cat.id} href={cat.featured.ctaHref}>
-                                <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em] uppercase text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
+                                <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-semibold tracking-[0.1em] uppercase transition-colors cursor-pointer ${
+                                  isCustom
+                                    ? "mt-1 border-l-2 border-white/40 font-black text-white/80 hover:text-white hover:border-white"
+                                    : "border-white/20 text-white/60 hover:text-white hover:border-white/60"
+                                }`}>
                                   {cat.title}
                                 </div>
                               </Link>

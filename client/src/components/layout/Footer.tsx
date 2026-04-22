@@ -24,9 +24,10 @@ export default function Footer() {
             </Link>
 
             <p className="text-[15px] leading-relaxed mb-8 max-w-sm text-slate-400">
-              OEM precision blades for plastics recycling, paper converting, and
-              metal processing. Vacuum heat treatment · CMM inspection ·
-              ISO&nbsp;9001:2015 certified. Global export since 2008.
+              Precision industrial blades for recycling, converting, paper,
+              metal and new energy — standard and custom-profile. Vacuum heat
+              treatment · CMM inspection · ISO&nbsp;9001:2015. Trusted by OEMs
+              in 50+ countries since 2008.
             </p>
 
             {/* Social */}
@@ -110,6 +111,14 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   Metal Shear Knives
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/custom-blades"
+                  className="hover:text-white transition-colors"
+                >
+                  Special-Shaped Blades
                 </Link>
               </li>
             </ul>

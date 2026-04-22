@@ -58,6 +58,7 @@ const REF_CODE: Record<BladeCategoryType, string> = {
   trim_cut_blades: "TRM",
   metal_processing: "MTL",
   battery_precision: "BAT",
+  custom_profile: "CST",
 };
 
 const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
@@ -209,6 +210,19 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
         ctaHref: "/new-energy-industry",
       },
       items: blades.filter(b => b.sector === "new_energy").map(bladeToItem),
+    },
+    {
+      id: "custom-profile",
+      title: "SPECIAL-SHAPED BLADES",
+      featured: {
+        coverImage: "/images/products/blades/special-shaped-knife.webp",
+        tagline: "ANY GEOMETRY · ANY ALLOY",
+        subtitle: "CUSTOM MANUFACTURING",
+        title: "SPECIAL-SHAPED BLADES",
+        ctaText: "VIEW CUSTOM SOLUTIONS",
+        ctaHref: "/custom-blades",
+      },
+      items: blades.filter(b => b.sector === "other").map(bladeToItem),
     },
   ],
 };
