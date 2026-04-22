@@ -3783,6 +3783,213 @@ export const blades: Blade[] = [
   },
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Strand Pelletizer Rotors
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "strand-pelletizer-rotors",
+    name: "Strand Pelletizer Rotors",
+    fullName: "High-Precision Strand Pelletizer Rotors for Compounding Lines",
+    category: "granulator_blades",
+    sector: "recycling",
+    categoryDisplay: "Pelletizer Blades",
+    image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    badge: "PM-HSS & Carbide",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/blades/strand-pelletizer-rotor-01.webp",
+      "/images/products/blades/strand-pelletizer-rotor-02.webp",
+      "/images/products/blades/strand-pelletizer-rotor-03.webp",
+    ],
+
+    description:
+      "Precision strand pelletizer rotors engineered for continuous, high-volume compounding lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005\u202fmm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
+
+    fullDescription:
+      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2\u202fµm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005\u202fmm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
+
+    link: "/products/strand-pelletizer-rotors",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "Maag / Automatik / Rieter",
+      "Coperion / Werner & Pfleiderer",
+      "Cumberland",
+      "Conair",
+      "Reduction Engineering (Conair)",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value:
+          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
+      },
+      {
+        label: "Application",
+        value:
+          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
+      },
+      {
+        label: "Rotor Types",
+        value:
+          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
+      },
+      {
+        label: "Tooth Count",
+        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
+      },
+      {
+        label: "Concentricity (Runout)",
+        value: "≤ 0.005\u202fmm — critical for micro-clearance setting",
+      },
+      {
+        label: "Surface Polish",
+        value: "Ra 0.2\u202fµm — prevents polymer build-up and sticking",
+      },
+      {
+        label: "Dynamic Balancing",
+        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
+      },
+      {
+        label: "Helical Angle",
+        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
+      },
+    ],
+
+    components: [
+      {
+        id: "dynamic-balancing",
+        tag: "PRECISION ENGINEERING",
+        title: "Zero-Defect Dynamic Balancing",
+        description:
+          "Operating at high speeds, unbalanced rotors destroy bearings and ruin clearances. Every Sureay rotor is dynamically balanced at operating speeds to ISO 1940-1 G2.5 standards, ensuring whisper-quiet, vibration-free operation and protecting the pelletizer's bearing investment.",
+      },
+      {
+        id: "helical-geometry",
+        tag: "5-AXIS CNC GRINDING",
+        title: "Flawless Helical Geometry",
+        description:
+          "Using state-of-the-art 5-axis CNC grinding centers, we guarantee the helical pitch is constant across the entire cutting width. This ensures constant shear force, reducing motor load and preventing strand snapping on high-speed compounding lines.",
+      },
+      {
+        id: "vacuum-brazing",
+        tag: "CARBIDE TECHNOLOGY",
+        title: "Proprietary Vacuum Brazing",
+        description:
+          "For carbide-tipped rotors, a specialized high-strength vacuum brazing process guarantees that carbide teeth will never detach, even under severe shock loads from cold strand starts or intermittent strand feed conditions.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "OEM Platform",
+      col1: "Rotor Diameter (mm)",
+      col2: "Cutting Width (mm)",
+      col3: "Tooth Count",
+      col4: "Helix Angle",
+      caption:
+        "* Representative dimensions for common strand pelletizer platforms. All rotors manufactured to exact OEM blueprints or customer sample. Custom diameters, widths, tooth counts, and helix angles available on request.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Maag Primo / Baoli",
+        od: "100 – 200",
+        id: "80 – 300",
+        length: "12 / 16 / 24",
+        teeth: "2° / 3°",
+      },
+      {
+        spec: "Coperion SP Series",
+        od: "120 – 250",
+        id: "100 – 350",
+        length: "16 / 24 / 32",
+        teeth: "1.5° / 2°",
+      },
+      {
+        spec: "Cumberland Quietizer",
+        od: "100 – 180",
+        id: "80 – 250",
+        length: "12 / 16",
+        teeth: "2° / 3°",
+      },
+      {
+        spec: "Conair 304 / 306 / CS",
+        od: "100 – 200",
+        id: "80 – 300",
+        length: "12 / 16 / 24",
+        teeth: "2°",
+      },
+      {
+        spec: "Reduction Engineering SGS",
+        od: "120 – 220",
+        id: "100 – 320",
+        length: "16 / 24 / 32",
+        teeth: "1.5° / 2° / 3°",
+      },
+    ],
+
+    relatedBladeIds: [
+      "granulator-blades",
+      "continuous-melt-filter-scraper-blades",
+      "twin-shaft-blades-recycling",
+    ],
+
+    offers: {
+      lowPrice: 80,
+      highPrice: 1200,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "We process 40% Glass-Filled Nylon (PA66 GF40). Standard M2 rotors wear out in days. What is your solution?",
+          answer:
+            "For extreme abrasive wear, M2 steel is insufficient. We recommend our PM-HSS grades (ASP2023 or ASP2052) or our brazed Tungsten Carbide rotors. While the initial investment is higher, tool life is extended by up to 1000%, drastically reducing machine downtime and lowering your cost-per-ton of compound. For PA66 GF40 specifically, brazed carbide inlay rotors are the most cost-effective long-term solution — the HSS body handles shock loading while the carbide cutting edges resist abrasion.",
+        },
+        {
+          question:
+            "Why are we getting 'tails' on our pellets, and how can your rotors fix this?",
+          answer:
+            "Tailing occurs when the polymer strand is torn or melted rather than cleanly sheared. This is caused by blunt rotor teeth, irregular helical angles, or excessive clearance from rotor runout. Sureay rotors feature a concentricity of ≤0.005\u202fmm, allowing your technicians to set a micro-gap against the bed knife for a perfect, scissor-like cut. The polished flute surface (Ra 0.2\u202fµm) also prevents polymer sticking that creates drag and uneven shear force.",
+        },
+        {
+          question:
+            "What is the difference between helical and straight-edge rotors, and when should I use each?",
+          answer:
+            "Helical rotors produce a progressive shear action — only one tooth segment engages at a time — which reduces peak cutting force, motor amperage spikes, and strand snap events. This makes them the standard choice for rigid thermoplastics and filled compounds on high-speed lines. Straight-edge rotors engage the full cutting width simultaneously, which is preferred for soft elastomers (TPE, TPU, TPV) where the gradual helical shear force can stretch and deform the strand rather than cutting it cleanly.",
+        },
+        {
+          question:
+            "Can you duplicate a custom rotor if we send a physical sample or CAD drawing?",
+          answer:
+            "Absolutely. As a direct manufacturing facility, we have full reverse-engineering capabilities. You can send us your worn rotor or technical blueprints, and we will produce a detailed CAD drawing for your approval before manufacturing the exact replacement. Dimensional verification on CMM is performed before shipment.",
+        },
+        {
+          question:
+            "How do I know when to replace or regrind my strand pelletizer rotor?",
+          answer:
+            "Key indicators: (1) increasing pellet fines and dust in the pellet stream — dulled teeth tear rather than shear; (2) rising motor amperage on the pelletizer drive — blunt edges require more force; (3) strand snapping becoming more frequent — irregular shear force from worn geometry increases tension spikes; (4) tailing reappearing despite correct gap setting — worn concentricity causes gap variation around the rotor circumference. For PM-HSS rotors, precision regrinding to OEM geometry is cost-effective. For carbide-tipped rotors, carbide can be re-tipped once before full rotor replacement is required.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Can Sureay supply matched rotor and bed knife (stator) sets?",
+          answer:
+            "Yes, and we strongly recommend purchasing them as matched pairs. We manufacture stator bed knives in Stellite 6 (for HSS rotors) and Solid Carbide (for carbide-tipped rotors). A matched pair ensures the cutting gap geometry and hardness differential are optimized together, delivering zero-tail pelletizing from the first strand. Mismatched rotor-stator combinations are a leading cause of premature wear and tailing on otherwise well-maintained lines.",
+        },
+        {
+          question:
+            "What lead times and documentation can Sureay provide for replacement rotors?",
+          answer:
+            "Standard PM-HSS replacement rotors for common OEM platforms (Maag, Coperion, Cumberland) ship in 10–15 working days from drawing approval. Custom helix angles or non-standard tooth counts require 15–20 working days. Every rotor ships with: CMM dimensional inspection certificate, dynamic balancing report (ISO 1940-1 G2.5), hardness test certificate, and steel mill material traceability. Rush production available subject to schedule.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
   // Continuous Melt Filter Scraper Blades
   // ─────────────────────────────────────────────────────────────────────────
   {

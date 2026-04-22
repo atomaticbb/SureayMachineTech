@@ -174,11 +174,9 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Coil Slitting Knives",
-        image:
-          "https://sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
-        description:
-          "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
-        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
+        description: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
+        brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/metal-coil-slitting-knives",
         offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
@@ -189,12 +187,49 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Shear Knives",
-        image:
-          "https://sureay.com/images/products/blades/11-6-2_metal-slitter-knife.webp",
-        description:
-          "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
-        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        image: "https://sureay.com/images/products/granulator-blades/metal-shear-blades-00.webp",
+        description: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
+        brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/metal-shear-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Product",
+        name: "Metal Shredder Blades",
+        image: "https://sureay.com/images/products/shredder-blades/shredder-blades-02.webp",
+        description: "Multi-shaft shredder blades in D2 and H13 for steel, aluminum, and mixed metal scrap size reduction.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/multi-shaft-blades-metal",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Product",
+        name: "Metal Cold Saw Blades",
+        image: "https://sureay.com/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
+        description: "Cermet and HSS metal cold saw blades for precision burr-free cutting of steel tubes, profiles, and structural sections.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/metal-cold-saw-blades",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Product",
+        name: "Scrap Chopper Blades",
+        image: "https://sureay.com/images/products/granulator-blades/scrap-chopper-blades.webp",
+        description: "S7 and H13 reversible 4-edge scrap chopper blades for metal stamping offcuts and sheet metal scrap processing.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/scrap-chopper-blades",
         offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },

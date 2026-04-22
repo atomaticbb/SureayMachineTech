@@ -166,7 +166,7 @@ const PAGE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Paper & Tissue Converting Knives",
-  url: "https://sureay.com/industry/paper-tissue",
+  url: "https://sureay.com/paper-industry",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -174,12 +174,62 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Tissue Log Saw Blades",
-        image:
-          "https://sureay.com/images/products/blades/tissue-log-saw-blades.webp",
-        description:
-          "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
-        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        image: "https://sureay.com/images/products/blades/tissue-log-saw-blades-05.webp",
+        description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
+        brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tissue-log-saw-blades",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Product",
+        name: "Paper Slitter Knives",
+        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+        description: "M2 HSS and D2 rotary slitter knives for paper, kraft board, and release liner slitting. OEM profile-matched for Valmet, Metso, and Kampf rewinders.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/rotary-slitter-knives-paper",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Product",
+        name: "Paper Cutting Blades",
+        image: "https://sureay.com/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+        description: "Guillotine blades for hydraulic paper cutters and bookbinding machines. M2 HSS for clean, burr-free cuts on paper stacks.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/paper-cutting-blades",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      item: {
+        "@type": "Product",
+        name: "Three-Knife Trimmer Blades",
+        image: "https://sureay.com/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+        description: "Three-knife trimmer blades for Muller Martini, Kolbus, and Wohlenberg book trimming systems. Drop-in OEM replacements.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/three-knife-trimmer-blades",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      item: {
+        "@type": "Product",
+        name: "Corrugated Slitter Blades",
+        image: "https://sureay.com/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
+        description: "Circular slitter and scorer blades for corrugated board and cardboard converting lines. Compatible with BHS, Fosber, and SHM machinery.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/corrugated-slitter-scorer-blades",
         offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },

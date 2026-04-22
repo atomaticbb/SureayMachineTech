@@ -170,11 +170,23 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Lithium Battery Electrode Slitting Knives",
-        image: "https://sureay.com/images/products/blades.webp",
-        description:
-          "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
-        brand: { "@type": "Brand", name: "Sureay Industrial Blades" },
+        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+        description: "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
+        brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/lithium-battery-slitting-knives",
+        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Product",
+        name: "Battery Recycling Blades",
+        image: "https://sureay.com/images/products/shredder-blades/shredder-blades.webp",
+        description: "Twin-shaft shredder blades for lithium battery cell and module recycling. Impact-resistant alloys for safe, controlled battery waste size reduction.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/twin-shaft-blades-battery",
         offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       },
     },
