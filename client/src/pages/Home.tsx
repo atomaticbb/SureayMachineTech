@@ -26,14 +26,26 @@ const ITEM_LIST_LD = JSON.stringify({
     {
       "@type": "ListItem",
       position: 2,
-      name: "Metal Processing Knives",
+      name: "Rotary Slitter Knives for Film & Flexible Packaging Converting",
       url: "https://sureay.com/products/rotary-slitter-knives",
     },
     {
       "@type": "ListItem",
       position: 3,
+      name: "Metal Foil & Strip Slitter Knives",
+      url: "https://sureay.com/products/metal-foil-strip-slitter-knives",
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
       name: "Paper & Tissue Blades",
       url: "https://sureay.com/products/tissue-log-saw-blades",
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      name: "Granulator Blades",
+      url: "https://sureay.com/products/granulator-blades",
     },
   ],
 });

@@ -87,28 +87,28 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "rotary-slitter-knives": {
     title:
-      "Rotary Slitter Blades & Knives | D2, HSS, Carbide | Sureay",
+      "Rotary Slitter Blades & Knives for Film, Tape & Flexible Packaging | Sureay",
     description:
-      "Rotary slitter blades & knives ground to \u00b10.002mm. D2, M2 HSS & solid carbide. Shear, score & razor profiles. OEM fit Tidland, Kampf, Atlas.",
+      "Rotary slitter blades & knives precision-ground to \u00b10.002\u202fmm. D2, M2 HSS, ASP23 PM steel & tungsten carbide options. Shear, score & razor profiles for BOPP, BOPET, CPP film, PSA tape & nonwoven. OEM fit Tidland, Kampf, Atlas & Dusenbery \u2014 factory direct quote.",
     keywords:
-      "rotary slitter blades, rotary slitter knives, circular slitter knives, slitter blade, rotary slitting blades, industrial slitter knives, converting blades, top bottom knives",
+      "rotary slitter blades, rotary slitter knives, tungsten carbide slitter blades, circular slitter knives, slitter blade, rotary slitting blades, industrial slitter knives, film slitter knives, BOPP slitter blades, PSA tape slitter knives, converting blades",
   },
 
   "metal-foil-strip-slitter-knives": {
-    title: "Metal Foil & Strip Slitter Knives | ASP23/ASP52 PM Steel | Sureay",
+    title: "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, \u00b10.001\u202fmm | Sureay",
     description:
-      "Precision circular slitter knives for metal service centers. ASP23/ASP52 PM steel and solid carbide options. ±0.001mm thickness tolerance for gang slitting of aluminum foil, copper strips, stainless steel, and silicon steel. Anti-galling mirror-lapped finish.",
+      "ASP23/ASP52 PM tool steel & tungsten carbide slitter knives for metal service centers. \u00b10.001\u202fmm thickness tolerance, mirror-lapped Ra \u22640.02\u202f\u03bcm for burr-free gang slitting of aluminum foil, copper strip, stainless steel & silicon steel. Factory direct wholesale \u2014 low MOQ, request specs.",
     keywords:
-      "metal foil slitter knives, coil slitting blades, ASP23 slitter knives, silicon steel slitter, aluminum foil slitter knives, gang slitting arbor",
+      "aluminum foil slitter knives, tungsten carbide slitter blades, metal foil slitter knives, ASP23 slitter knives, silicon steel slitter, gang slitting arbor, coil slitting blades, metal strip slitter, ASP52 slitter blades",
   },
 
   "twin-shaft-blades-recycling": {
     title:
-      "Chromium Carbide Twin Shaft Shredder Blades | Sureay",
+      "Twin-Shaft Shredder Blades | D2/SKD11, OEM Fit Weima · Untha · Vecoplan | Sureay",
     description:
-      "Chromium carbide D2/SKD11 twin-shaft shredder blades for MSW & plastic recycling. 3\u201312 claw geometries, Wire-EDM bores. Fit SSI, Untha, Weima.",
+      "D2/SKD11 & chromium carbide rotor blades for MSW, plastics & wood twin-shaft shredding. Intersecting-scissor geometry, 3\u201312 claws, Wire-EDM bores. OEM replacement for Weima, Untha, SSI & Vecoplan. Factory direct wholesale \u2014 low MOQ, custom specs & fast quote.",
     keywords:
-      "chromium carbide rotor blades, twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades, chromium carbide rotor blades wholesale",
+      "chromium carbide rotor blades, twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades, chromium carbide rotor blades wholesale, intersecting scissor rotor shredder",
   },
 
   "multi-shaft-blades-metal": {
@@ -138,9 +138,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "granulator-blades": {
     title:
-      "Plastic Granulator Blades & Crusher Knives | Sureay",
+      "Plastic Granulator Blades & Crusher Knives | OEM Replacement, Factory Direct | Sureay",
     description:
-      "Plastic granulator blades in D2, SKD-11 & Cr12MoV. Rotor/stator knives ground to \u00b10.02mm for Cumberland, Herbold, Rapid. HRC 58\u201362. Get quote.",
+      "D2, SKD-11 & Cr12MoV plastic granulator blades \u2014 rotor & stator knives ground to \u00b10.02\u202fmm. HRC 58\u201362, OEM replacement for Cumberland, Herbold & Rapid granulators. Factory-direct supply, wholesale available. Send model no. for exact-match quote.",
     keywords:
       "plastic granulator blades, granulator blades, granulator blades suppliers, plastic crusher knives, granulator knives, rotor stator blades, PET recycling blades",
   },
@@ -183,9 +183,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "single-shaft-bed-knives": {
     title:
-      "Stator Knife & Bed Knives for Shredders | Sureay",
+      "Stator Knife & Bed Knives for Single-Shaft Shredders | OEM Replacement | Sureay",
     description:
-      "Stator knives (bed knives) for single-shaft shredders. D2/DC53, straightness \u22640.05mm/m, lengths to 3500mm. Fit Vecoplan, Weima, Lindner, Zerma.",
+      "D2/DC53 stator knives (counter bed knives) for single-shaft shredders. Straightness \u22640.05\u202fmm/m, custom lengths to 3500\u202fmm. Drop-in OEM replacement for Vecoplan, Weima, Lindner & Zerma. Factory direct \u2014 send drawing or machine model for fast quote.",
     keywords:
       "stator knife, stator knives, single shaft bed knives, shredder bed knife, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
   },
@@ -235,9 +235,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "nonwoven-slitter-knives": {
     title:
-      "Nonwoven Slitter Knives | M2 HSS Circular Blades for Spunbond | Sureay",
+      "Nonwoven Slitter Knives | PP Spunbond, SMS & Meltblown Fabrics | Sureay",
     description:
-      "M2 HSS & D2 circular slitter knives for spunbond, meltblown & SMS nonwoven fabrics. Anti-fraying rake geometry for hygiene, medical & filtration lines.",
+      "M2 HSS & D2 circular slitter knives for PP spunbond, meltblown & SMS nonwoven at 200\u2013500\u202fm/min. Anti-fraying rake geometry eliminates fiber tear on hygiene, medical & filtration lines. OEM fit for leading nonwoven converting systems \u2014 request quote.",
     keywords:
       "nonwoven slitter, nonwoven slitting blades, nonwoven slitter knives, spunbond slitter knives, meltblown cutting blades, medical nonwoven knives",
   },
@@ -252,11 +252,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "rotary-slitter-knives-paper": {
     title:
-      "Paper Slitter Knives | Circular Blades for Tissue & Corrugated | Sureay",
+      "Tissue & Paper Slitter Knives | Fiber-Dust-Free Shear Pairs | D2 / M2 HSS | Sureay",
     description:
-      "Precision circular slitter knives for paper, tissue & corrugated converting. D2, M2 HSS, 52100 steel. \u00b10.002mm tolerance. Matched shear pairs for clean fiber cuts.",
+      "D2 & M2 HSS circular slitter knives for tissue, kraft paper & corrugated board converting. Matched top/bottom shear pairs at \u00b10.002\u202fmm. Fiber-dust-free cuts at 400\u2013600\u202fm/min. OEM fit Atlas, Kampf, Fabio Perini, K\u00f6rber \u2014 send machine model for quote.",
     keywords:
-      "paper slitter knives, tissue slitter blades, corrugated slitter knives, paper converting blades, circular paper knives",
+      "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
   },
 };
 

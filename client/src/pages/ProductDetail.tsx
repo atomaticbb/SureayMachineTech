@@ -81,10 +81,12 @@ export default function ProductDetail() {
         productData={{
           name: blade.fullName || blade.name,
           image: blade.image,
+          images: blade.gallery?.slice(0, 4),
           description: blade.fullDescription || blade.description,
           sku: blade.id,
           mpn: blade.id,
           brand: "Sureay Industrial Blades",
+          material: blade.specs.find((s) => s.label === "Material")?.value,
           ...(blade.offers && { offers: blade.offers }),
         }}
       />

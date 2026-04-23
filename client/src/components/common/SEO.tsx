@@ -8,10 +8,12 @@ const BASE_URL = "https://sureay.com";
 export interface ProductData {
   name: string;
   image: string; // relative (/images/…) or absolute
+  images?: string[]; // additional gallery images
   description: string;
   sku?: string;
   mpn?: string;
   brand?: string; // defaults to "Sureay"
+  material?: string; // e.g. "D2 / SKD11 / M2 HSS"
   offers?: {
     lowPrice: number;
     highPrice: number;
@@ -60,15 +62,26 @@ export default function SEO({
   const canonicalHref = canonicalUrl ? abs(canonicalUrl) : undefined;
   const ogImage = productData ? abs(productData.image) : undefined;
 
+  const allImages = productData
+    ? [
+        abs(productData.image),
+        ...(productData.images ?? []).map(abs).filter(
+          (u) => u !== abs(productData.image)
+        ),
+      ]
+    : [];
+
   const jsonLd = productData
     ? {
         "@context": "https://schema.org",
         "@type": "Product",
         name: productData.name,
-        image: [abs(productData.image)],
+        url: canonicalUrl ? abs(canonicalUrl) : undefined,
+        image: allImages,
         description: productData.description,
         ...(productData.sku && { sku: productData.sku }),
         ...(productData.mpn && { mpn: productData.mpn }),
+        ...(productData.material && { material: productData.material }),
         brand: {
           "@type": "Brand",
           name: productData.brand ?? "Sureay",

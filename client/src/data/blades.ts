@@ -261,7 +261,7 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["paper-cutting-blades", "granulator-blades", "bottom-grooved-anvil-knives"],
+    relatedBladeIds: ["rotary-slitter-knives-paper", "metal-foil-strip-slitter-knives", "bottom-grooved-anvil-knives", "nonwoven-slitter-knives"],
     offers: {
       lowPrice: 15,
       highPrice: 150,
@@ -466,8 +466,8 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: [
+      "rotary-slitter-knives",
       "tissue-log-saw-blades",
-      "paper-cutting-blades",
       "corrugated-slitter-scorer-blades",
     ],
     offers: {
@@ -642,7 +642,7 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["metal-coil-slitting-knives", "scrap-chopper-blades"],
+    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives", "scrap-chopper-blades"],
     offers: {
       lowPrice: 45,
       highPrice: 750,
