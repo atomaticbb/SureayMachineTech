@@ -12,7 +12,6 @@ import SEO from "@/components/common/SEO";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import Breadcrumbs from "@/components/common/Breadcrumbs";
 import FaqItem from "@/components/ui/FaqItem";
 
 // ─── Capabilities ─────────────────────────────────────────────────────────────
@@ -193,20 +192,11 @@ export default function CustomBlades() {
         <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
       </Helmet>
 
-      <div className="min-h-screen bg-slate-50 pt-[74px]">
+      <div className="min-h-screen bg-slate-50">
         <Navbar />
 
-        {/* ── Breadcrumb ──────────────────────────────────────────────────── */}
-        <Breadcrumbs
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Products", href: "/products" },
-            { label: "Special-Shaped Blades" },
-          ]}
-        />
-
-        {/* ── Hero (ProductListPage pattern) ──────────────────────────────── */}
-        <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden">
+        {/* ── Hero ────────────────────────────────────────────────────────── */}
+        <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden mt-[74px]">
           {/* Right: full-bleed placeholder image */}
           <img
             src="/images/products/blades/special-shaped-knife-01.webp"
@@ -220,17 +210,22 @@ export default function CustomBlades() {
 
           {/* Left: navy diagonal panel */}
           <div
-            className="absolute inset-y-0 left-0 h-full bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-8 lg:py-16 w-full lg:w-[62%]"
+            className="absolute inset-y-0 left-0 h-full bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-8 lg:py-10 w-full lg:w-[62%]"
             style={{
               clipPath: "polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%)",
             }}
           >
-            <div>
-              <p className="font-mono text-[10px] text-white/40 tracking-[0.35em] uppercase mb-8 hidden sm:block">
-                [ CUSTOM MANUFACTURING — SPECIAL-SHAPED BLADES ]
-              </p>
+            {/* Breadcrumb — top-left */}
+            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/30">
+              <a href="/" className="hover:text-white/60 transition-colors">Home</a>
+              <span>›</span>
+              <a href="/products" className="hover:text-white/60 transition-colors">Products</a>
+              <span>›</span>
+              <span className="text-white/50">Special-Shaped Blades</span>
+            </div>
 
-              <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
+            <div>
+              <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white uppercase tracking-tight leading-none mb-7">
                 Special-Shaped
                 <br />
                 &amp; Custom
@@ -238,13 +233,12 @@ export default function CustomBlades() {
                 Profile Blades
               </h1>
 
-              <div className="border-l-4 border-white/30 pl-5 max-w-xl mb-10">
-                <p className="text-white/70 text-base leading-relaxed">
-                  Send your drawing or a worn sample. We manufacture any blade
-                  profile — any geometry, any alloy — with CMM-verified
-                  tolerances and full material documentation.
-                </p>
-              </div>
+              <div className="w-12 h-[3px] bg-white/30 mb-7" />
+              <p className="text-white/70 text-[16px] leading-relaxed max-w-xl mb-10">
+                Send your drawing or a worn sample. We manufacture any blade
+                profile — any geometry, any alloy — with CMM-verified
+                tolerances and full material documentation.
+              </p>
             </div>
 
             <a href="#rfq" className="self-start">

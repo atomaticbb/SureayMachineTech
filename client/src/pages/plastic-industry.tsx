@@ -25,7 +25,7 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / Plastics Recycling",
+  breadcrumb: "Home / Industries / Plastics Recycling",
   h1: "Plastic Recycling & Compounding Blade Supplier",
   h2: "Shredder Blades, Pelletizer Rotors & Melt Filter Scrapers",
   body1:

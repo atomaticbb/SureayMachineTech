@@ -161,25 +161,23 @@ export default function Contact() {
       {/* ═══════════════════════════════════════════════════════════════════
           1. THE AUTHORITY HERO
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-white pt-[48px]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-4 lg:pt-28 lg:pb-12">
-          <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-8">
-            [ INITIATE ENGINEERING INQUIRY ]
+      <section className="bg-white pt-[74px]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-14 pb-4 lg:pt-20 lg:pb-12">
+          <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-6">
+            Engineering Inquiry & Quote Request
           </p>
 
-          <h1 className="text-[clamp(2rem,7vw,4.5rem)] font-black text-[#001f4d] uppercase tracking-tight leading-[1.0] mb-4 max-w-4xl">
+          <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] uppercase tracking-tight leading-none mb-7 max-w-3xl">
             Partner With Sureay Engineering
           </h1>
 
-          <div className="border-l-4 border-[#001f4d] pl-6 max-w-4xl lg:max-w-5xl">
-            <p className="text-[#001f4d]/80 text-lg leading-relaxed">
-              Every inquiry receives a direct technical assessment from our
-              engineering team within 24 hours.
-              <br className="hidden lg:block" />
-              Describe your application — we'll engineer the optimal blade
-              specification.
-            </p>
-          </div>
+          <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
+
+          <p className="text-slate-500 text-[16px] leading-relaxed max-w-2xl">
+            Every inquiry receives a direct technical assessment from our
+            engineering team within 24 hours. Describe your application — we'll
+            engineer the optimal blade specification.
+          </p>
         </div>
       </section>
 

@@ -25,7 +25,7 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / New Energy & Battery",
+  breadcrumb: "Home / Industries / New Energy & Battery",
   h1: "Lithium Battery & New Energy Precision Slitting Knife Supplier",
   h2: "Zero-Notch Carbide Electrode Slitting · EV Cell Manufacturing",
   body1:

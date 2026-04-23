@@ -25,7 +25,7 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / Flexible Converting & Packaging",
+  breadcrumb: "Home / Industries / Flexible Converting & Packaging",
   h1: "Flexible Converting & Packaging Slitter Knife Supplier",
   h2: "Film · Nonwoven · PSA Tape · Label Converting Blades",
   body1:
@@ -219,10 +219,7 @@ export default function ConvertingIndustry() {
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Industries", url: "/products" },
-          {
-            name: "Flexible Converting & Packaging",
-            url: "/converting-industry",
-          },
+          { name: "Flexible Converting & Packaging", url: "/converting-industry" },
         ]}
       />
       <Helmet>

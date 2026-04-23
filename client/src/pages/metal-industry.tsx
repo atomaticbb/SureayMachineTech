@@ -25,7 +25,7 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / Metal Processing",
+  breadcrumb: "Home / Industries / Metal Processing",
   h1: "Industrial Metal Slitting & Shear Blade Manufacturer",
   h2: "Slitter Knives, Shear Blades & OEM Wear Parts",
   body1:

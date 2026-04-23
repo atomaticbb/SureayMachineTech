@@ -9,7 +9,7 @@ import { Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
-import { getAllDispatches, getFeaturedDispatch } from "@/data/news";
+import { getAllDispatches } from "@/data/news";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
 
@@ -26,7 +26,6 @@ const CATEGORIES = [
 export default function CorporateDispatches() {
   const [activeCategory, setActiveCategory] = useState("ALL");
 
-  const featured = getFeaturedDispatch();
   const allPosts = getAllDispatches();
 
   const filteredDispatches =
@@ -45,56 +44,39 @@ export default function CorporateDispatches() {
 
       <main className="pt-[74px]">
         {/* ═══════════════════════════════════════════════════════════════════
-            ZONE 1 — The Press Viewport (Featured Article)
+            ZONE 1 — Hero
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="border-b border-slate-200">
-          <Link href={`/news/${featured.id}`}>
-            <a className="flex flex-col lg:flex-row min-h-[500px]">
-              {/* Left: Featured Image */}
-              <div className="lg:w-[60%] relative overflow-hidden bg-slate-200 min-h-[300px] lg:min-h-0 border-b lg:border-b-0 lg:border-r border-slate-200 group cursor-pointer">
-                <img
-                  src={featured.image}
-                  alt={featured.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
-                  width={1200}
-                  height={500}
-                  decoding="async"
-                />
-                <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-4 py-2">
-                  <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
-                    {featured.date}
-                  </span>
-                </div>
-              </div>
-
-              {/* Right: Featured Content */}
-              <div className="lg:w-[40%] bg-[#001f4d] text-white p-6 sm:p-8 lg:p-16 flex flex-col justify-center">
-                <p className="font-mono text-[10px] text-cyan-400 tracking-[0.25em] uppercase mb-4">
-                  {featured.tag}
-                </p>
-                <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black uppercase tracking-tight leading-[1.05] mb-6">
-                  {featured.title}
-                </h1>
-                <p className="text-white/70 text-sm leading-relaxed mb-10 max-w-md">
-                  {featured.excerpt}
-                </p>
-                <div className="mt-auto flex items-center justify-between border-t border-white/20 pt-6">
-                  <span className="font-mono text-[10px] text-white/50 tracking-widest uppercase">
-                    READ TIME: {featured.readTime}
-                  </span>
-                  <span className="font-black text-sm uppercase tracking-widest hover:text-cyan-400 transition-colors">
-                    READ DISPATCH ↗
-                  </span>
-                </div>
-              </div>
-            </a>
-          </Link>
+        <section className="relative border-b border-slate-200 h-[340px] lg:h-[420px] overflow-hidden">
+          {/* Background image */}
+          <img
+            src="/images/hero/product-hero.webp"
+            alt="Sureay News & Industry Updates"
+            className="absolute inset-0 w-full h-full object-cover brightness-50"
+            width={1920}
+            height={500}
+            decoding="async"
+          />
+          {/* Text overlay */}
+          <div className="relative h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-4xl">
+            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-white/50 mb-5">
+              News & Industry Updates
+            </p>
+            <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-white uppercase tracking-tight leading-none mb-6">
+              Articles
+              <br />
+              and News
+            </h1>
+            <div className="w-12 h-[3px] bg-white/30 mb-6" />
+            <p className="text-white/70 text-[16px] leading-relaxed max-w-xl">
+              Latest news and technology articles about us.
+            </p>
+          </div>
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════════
-            ZONE 2 — The Index Ledger (Category Filter)
+            ZONE 2 — Category Filter
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="bg-white border-b border-slate-200 sticky ">
+        <section className="bg-white border-b border-slate-200 sticky top-0 z-10">
           <div className="max-w-7xl mx-auto border-l border-slate-200">
             <div className="flex overflow-x-auto flex-nowrap w-full no-scrollbar">
               {CATEGORIES.map(cat => (
@@ -115,28 +97,28 @@ export default function CorporateDispatches() {
         </section>
 
         {/* ═══════════════════════════════════════════════════════════════════
-            ZONE 3 — The Archive Matrix (Articles Grid)
+            ZONE 3 — Articles Grid
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="py-16 lg:py-24 max-w-7xl mx-auto px-4 lg:px-8">
+        <section className="py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8">
           {filteredDispatches.length === 0 ? (
             <p className="font-mono text-sm text-slate-400 uppercase tracking-widest">
               — NO DISPATCHES IN THIS CATEGORY —
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {filteredDispatches.map(post => (
                 <Link key={post.id} href={`/news/${post.id}`}>
                   <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300">
-                    {/* Image Viewport */}
-                    <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-200">
+                    {/* Image — taller for 2-col layout */}
+                    <div className="relative aspect-[16/9] overflow-hidden bg-slate-100 border-b border-slate-200">
                       <img
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                         loading="lazy"
                         decoding="async"
-                        width={400}
-                        height={300}
+                        width={800}
+                        height={450}
                       />
                       <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-3 py-1.5">
                         <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest uppercase">
@@ -146,24 +128,21 @@ export default function CorporateDispatches() {
                     </div>
 
                     {/* Content */}
-                    <div className="p-6 flex flex-col flex-grow">
-                      <p className="font-mono text-[9px] text-slate-400 tracking-[0.2em] mb-3 uppercase">
+                    <div className="p-7 flex flex-col flex-grow">
+                      <p className="text-[10px] font-semibold tracking-[0.22em] text-slate-400 uppercase mb-3">
                         {post.tag}
                       </p>
-                      <h2 className="text-xl font-black text-[#001f4d] uppercase leading-tight tracking-tight mb-3 group-hover:text-cyan-700 transition-colors">
+                      <h2 className="text-[18px] font-black text-[#001f4d] uppercase leading-tight tracking-tight mb-3 group-hover:text-[#1a4fa0] transition-colors duration-200">
                         {post.title}
                       </h2>
-                      <p className="text-sm text-slate-600 leading-relaxed mb-6">
+                      <p className="text-[15px] text-slate-500 leading-relaxed mb-6 line-clamp-3">
                         {post.excerpt}
                       </p>
 
-                      {/* Meta Footer */}
-                      <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-100">
-                        <span className="font-mono text-[9px] text-slate-400 tracking-widest uppercase">
-                          READ TIME: {post.readTime}
-                        </span>
-                        <span className="font-black text-[#001f4d] text-lg leading-none group-hover:translate-x-1 transition-transform">
-                          →
+                      {/* Footer */}
+                      <div className="mt-auto pt-4 border-t border-slate-100">
+                        <span className="text-[12px] font-black tracking-[0.16em] uppercase text-[#001f4d] group-hover:text-[#1a4fa0] transition-colors">
+                          Continue Reading →
                         </span>
                       </div>
                     </div>

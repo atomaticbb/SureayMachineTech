@@ -75,7 +75,7 @@ export default function ProductDetail() {
         keywords={pageSeo.keywords}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Blades & Knives", url: "/products" },
+          { name: "Products", url: "/products" },
           { name: blade.name, url: `/products/${blade.id}` },
         ]}
         productData={{
@@ -99,7 +99,7 @@ export default function ProductDetail() {
           variant="light"
           items={[
             { label: "Home", href: "/" },
-            { label: "Blades & Knives", href: "/products" },
+            { label: "Products", href: "/products" },
             { label: blade.name },
           ]}
         />

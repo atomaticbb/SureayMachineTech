@@ -81,12 +81,17 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness"],
         "name": "Sureay Machinery Manufacturing Co., Ltd.",
         "alternateName": "Sureay",
         "url": "https://sureay.com",
         "logo": "https://sureay.com/sureay-logo.svg",
         "foundingDate": "2008",
+        "naics": "332216",
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "value": 150
+        },
         "description": "Sureay is a premier manufacturer specializing exclusively in high-performance industrial blades and precision machine knives. Engineered for maximum wear resistance, our core product line includes heavy-duty shredder blades, plastic granulator knives, and circular slitting blades designed to effortlessly process scrap metal, e-waste, paper, and rigid plastics. ISO 9001:2015 certified OEM/ODM manufacturer with global export since 2008.",
         "address": {
           "@type": "PostalAddress",
@@ -98,10 +103,15 @@
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+86-15655530829",
+          "telephone": "+86-18005550657",
           "contactType": "sales",
           "email": "lynn@sureay.com",
           "availableLanguage": ["en", "zh"]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Industrial Blade & Machine Knife Catalog",
+          "url": "https://sureay.com/products"
         },
         "sameAs": [
           "https://www.linkedin.com/company/sureay",

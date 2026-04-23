@@ -25,7 +25,7 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Markets / Paper, Tissue & Corrugated",
+  breadcrumb: "Home / Industries / Paper, Tissue & Corrugated",
   h1: "Paper, Tissue & Corrugated Knife Manufacturer — HSS & TC Grades",
   h2: "Log Saw Blades, Slitter Knives, Trimmer Blades & OEM Wear Parts",
   body1:

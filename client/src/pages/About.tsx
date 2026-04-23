@@ -1,6 +1,6 @@
 /*
- * About.tsx — "Swiss Brutalist Heavy Industry" | Sureay Machinery
- * Edge-to-Edge hero · Count-up stats · Production Epochs · Architectural Sign-off CTA
+ * About.tsx — Sureay Machinery
+ * Sections: Hero · Stats · Our Story · Manufacturing · Precision · Certifications · OEM Process
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -11,7 +11,7 @@ import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
-// ── Count-Up Component ───────────────────────────────────────────────────────
+// ── Count-Up ─────────────────────────────────────────────────────────────────
 
 function CountUp({
   to,
@@ -30,9 +30,7 @@ function CountUp({
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) setStarted(true);
-      },
+      ([e]) => { if (e.isIntersecting) setStarted(true); },
       { threshold: 0.2 }
     );
     obs.observe(el);
@@ -66,75 +64,81 @@ function CountUp({
 // ── Data ─────────────────────────────────────────────────────────────────────
 
 const STATS = [
-  { to: 15, suffix: "+", label: "Years of Experience", sub: "Est. 2008" },
-  {
-    to: 10000,
-    suffix: "+",
-    label: "Blade Designs Delivered",
-    sub: "Active Variants",
-  },
-  { to: 98, suffix: "%", label: "Client Retention Rate", sub: "Satisfaction" },
-  { to: 50, suffix: "+", label: "Countries Served", sub: "Global Coverage" },
+  { to: 15,    suffix: "+", label: "Years of Experience",     sub: "Est. 2008" },
+  { to: 10000, suffix: "+", label: "Blade Designs Delivered", sub: "Active Variants" },
+  { to: 98,    suffix: "%", label: "Client Retention Rate",   sub: "Satisfaction" },
+  { to: 50,    suffix: "+", label: "Countries Served",        sub: "Global Coverage" },
 ];
 
 const EPOCHS = [
-  {
-    year: "2008",
-    title: "First Blade Shipped",
-    desc: "Founded in Ma'anshan, Anhui. 500 m² workshop. 12 founding engineers. First industrial blade delivered.",
-  },
-  {
-    year: "2012",
-    title: "5,000 M² CNC Grid Online",
-    desc: "Vacuum heat treatment furnaces and CNC grinding lines commissioned. Southeast Asia export initiated.",
-  },
-  {
-    year: "2016",
-    title: "ISO 9001 Protocol Active",
-    desc: "ISO 9001:2015 certification achieved. OEM partnerships established with European machine builders.",
-  },
-  {
-    year: "2020",
-    title: "15,000 M² Smart Factory",
-    desc: "Relocated to modern facility. 20+ multi-axis CNC centers, metallurgical lab, and CMM inspection stations.",
-  },
-  {
-    year: "2024",
-    title: "50+ Countries Deployed",
-    desc: "10,000+ blade design variants active. Serving tissue, plastics, and metal processing sectors worldwide.",
-  },
+  { year: "2008", title: "First Blade Shipped",    desc: "Founded in Ma'anshan, Anhui. 500 m² workshop, 12 founding engineers, first industrial blade delivered." },
+  { year: "2012", title: "5,000 M² CNC Grid",      desc: "Vacuum heat treatment furnaces and CNC grinding lines commissioned. Southeast Asia export initiated." },
+  { year: "2016", title: "ISO 9001 Certified",     desc: "ISO 9001:2015 certification achieved. OEM partnerships established with European machine builders." },
+  { year: "2020", title: "15,000 M² Factory",      desc: "Relocated to modern facility. 20+ multi-axis CNC centers, metallurgical lab, and CMM inspection stations." },
+  { year: "2024", title: "50+ Countries",          desc: "10,000+ blade design variants active. Serving tissue, plastics, and metal processing sectors worldwide." },
 ];
 
-const VALUES = [
+const CAPABILITIES = [
   {
     num: "01",
-    title: "Precision Manufacturing",
-    desc: "State-of-the-art CNC machining centers and vacuum heat treatment facilities ensure consistent dimensional accuracy and metallurgical integrity in every blade produced.",
+    title: "CNC Precision Grinding",
+    desc: "5-axis surface and cylindrical grinders. Tolerances to ±0.001 mm with submicron positional feedback.",
   },
   {
     num: "02",
-    title: "Global Deployment",
-    desc: "Engineered logistics and responsive field support serve industrial operators in 50+ countries with full traceability documentation on every shipment.",
+    title: "CNC Machining & Wire EDM",
+    desc: "Multi-axis milling centers and Wire EDM for complex profiles, bores, and keyways. ±0.003 mm typical.",
   },
   {
     num: "03",
-    title: "OEM Integration",
-    desc: "Embedded co-engineering with OEM machine builders and end-users to define steel grade, heat treatment schedule, and edge geometry for maximum uptime.",
+    title: "Vacuum Heat Treatment",
+    desc: "1,300 °C vacuum furnaces with deep cryogenic treatment at −196 °C for distortion-free hardening.",
+  },
+];
+
+const PROCESS_IMAGES = [
+  {
+    src: "/images/about/grinding-workshop.webp",
+    alt: "Precision grinding workshop — CNC grinding machines in rows",
+    label: "Precision Grinding",
   },
   {
-    num: "04",
-    title: "Quality Assurance",
-    desc: "ISO 9001:2015 certified process control. Full CMM dimensional inspection, hardness verification, and material traceability on every production batch.",
+    src: "/images/about/cnc-machining-center.webp",
+    alt: "CNC machining center — blade workpieces on machine table",
+    label: "CNC Machining",
   },
+  {
+    src: "/images/common/Quality-Inspection.webp",
+    alt: "CMM dimensional inspection — quality control station",
+    label: "CMM Inspection",
+  },
+];
+
+const PRECISION_STATS = [
+  { value: "±0.001 mm", label: "Thickness tolerance", sub: "Metal foil slitter knives" },
+  { value: "±0.002 mm", label: "Thickness tolerance", sub: "Film & tape slitter knives" },
+  { value: "Ra ≤ 0.02 µm", label: "Surface finish",    sub: "Metal foil precision knives" },
+  { value: "100%",       label: "HRC hardness tested", sub: "Every blade before dispatch" },
+];
+
+const MATERIALS = [
+  { grade: "D2 / SKD11",          hrc: "58–62 HRC",  use: "Granulators, slitters, shredder blades" },
+  { grade: "DC53",                 hrc: "60–62 HRC",  use: "High-wear granulator / shredder" },
+  { grade: "H13 / 4Cr5MoSiV1",   hrc: "48–54 HRC",  use: "Metal shredder blades, impact-heavy" },
+  { grade: "M2 HSS",               hrc: "62–65 HRC",  use: "Circular slitters, paper knives" },
+  { grade: "M35 Cobalt HSS",       hrc: "63–66 HRC",  use: "Cold saw blades, stainless cutting" },
+  { grade: "ASP23 / ASP52",        hrc: "64–67 HRC",  use: "Metal foil slitters, precision knives" },
+  { grade: "S7 Shock Steel",       hrc: "54–58 HRC",  use: "Scrap chopper blades" },
+  { grade: "WC-Co Carbide K05–K20", hrc: "HRA 88–91", use: "Battery slitters, electrode foil" },
 ];
 
 const CERTIFICATIONS = [
   { label: "ISO 9001:2015", sub: "Quality Management" },
-  { label: "CE Certified", sub: "European Conformity" },
-  { label: "SGS Audited", sub: "Third-Party Verified" },
-  { label: "RoHS Compliant", sub: "Hazardous Materials" },
+  { label: "CE Certified",  sub: "European Conformity" },
+  { label: "SGS Audited",   sub: "Third-Party Verified" },
+  { label: "RoHS Compliant",sub: "Hazardous Materials" },
   { label: "Global Logistics", sub: "Door-to-Door" },
-  { label: "CMM Verified", sub: "Dimensional Report" },
+  { label: "CMM Verified",  sub: "Dimensional Report" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -144,304 +148,292 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <SEO
         title="About Sureay — 15+ Years of Blade Engineering"
-        description="ISO 9001:2015 certified OEM blade manufacturer since 2008. 10,000+ custom designs, 98% client retention, serving 50+ countries worldwide."
+        description="ISO 9001:2015 certified OEM blade manufacturer since 2008. 15,000 m² facility, 5-axis CNC grinding, vacuum heat treatment, CMM inspection. Serving 50+ countries."
         canonicalUrl="/about"
       />
       <Navbar />
 
       {/* ═══════════════════════════════════════════════════════════════════
-          1. HERO — The Structural Anvil
+          1. HERO — edge-to-edge split
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="pt-[74px]">
-        {/* Main split — 42 / 58 */}
-        <div className="flex flex-col lg:flex-row min-h-[580px] lg:min-h-[700px]">
-          {/* Left — Solid Text Panel */}
+        <div className="flex flex-col lg:flex-row h-[calc(100vh-74px)]">
+          {/* Left — Text */}
           <motion.div
-            className="flex flex-col px-5 sm:px-10 lg:px-20 py-10 lg:py-16 bg-white lg:w-[42%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200 overflow-visible"
-            initial={{ opacity: 0, y: 28 }}
+            className="flex flex-col px-8 sm:px-14 lg:px-20 py-14 lg:py-20 bg-white lg:w-[44%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200"
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            {/* Main content — fills vertical space and centers itself */}
-            <div className="flex-1 flex flex-col justify-center">
+            <div className="flex-1 flex flex-col justify-center max-w-sm">
               <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-6">
                 About Sureay Machinery
               </p>
-
-              <h1 className="text-[clamp(2rem,7vw,4.5rem)] font-black text-[#001f4d] leading-none tracking-tight uppercase mb-8">
+              <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight uppercase mb-7">
                 Engineering
                 <br />
                 Blade
                 <br />
                 Excellence
               </h1>
-
-              <div className="w-14 h-[3px] bg-[#001f4d] mb-8" />
-
-              <motion.p
-                className="text-slate-600 text-base leading-relaxed max-w-sm"
-                initial={{ opacity: 0, y: 14 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.7,
-                  delay: 0.22,
-                  ease: [0.25, 0.1, 0.25, 1],
-                }}
-              >
-                Xunrui (Sureay) Machinery specializes in high-performance
-                industrial blades, precision machine knives, and recycling
-                equipment — engineered for the world's most demanding production
-                environments since 2008.
-              </motion.p>
+              <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
+              <p className="text-slate-500 text-[16px] leading-relaxed mb-10">
+                Sureay specializes in high-performance industrial blades and
+                precision machine knives, engineered for demanding production
+                environments since 2008. ISO 9001:2015 certified. 15,000 m²
+                facility in Ma'anshan, China.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { label: "Our Story",      href: "#story" },
+                  { label: "Manufacturing",  href: "#manufacturing" },
+                  { label: "Precision",      href: "#precision" },
+                  { label: "Certifications", href: "#certifications" },
+                ].map(a => (
+                  <a
+                    key={a.href}
+                    href={a.href}
+                    className="text-[11px] font-semibold tracking-[0.14em] uppercase border border-slate-200 px-3 py-1.5 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
+                  >
+                    {a.label}
+                  </a>
+                ))}
+              </div>
             </div>
           </motion.div>
 
-          {/* Right — Grand Factory Image */}
-          <div className="relative flex-1 overflow-hidden min-h-[380px] lg:min-h-0">
+          {/* Right — Factory photo */}
+          <div className="relative flex-1 overflow-hidden min-h-[340px] lg:min-h-0">
             <img
-              src="/images/about/factory.webp"
-              alt="Sureay factory floor overview — Ma'anshan facility"
-              className="absolute inset-0 w-full h-full object-cover contrast-105"
-              width={1920}
-              height={1078}
+              src="/images/about/cnc-workshop.webp"
+              alt="Sureay CNC workshop — machining centers with blade workpieces"
+              className="absolute inset-0 w-full h-full object-cover"
+              width={1272}
+              height={702}
               decoding="async"
             />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
+              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-white/70">
+                Ma'anshan, Anhui Province, China · 15,000 m² · Est. 2008
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          2. STATS STRIP — Heavy Dashboard with Count-Up
+          2. STATS
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4">
+      <section className="bg-[#001f4d] border-y border-[#001f4d]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
             {STATS.map((s, i) => (
               <div
                 key={i}
-                className={[
-                  "px-6 md:px-8 py-12 flex flex-col gap-1.5",
-                  i < 3 ? "border-r border-slate-200" : "",
-                  i === 2 || i === 3
-                    ? "border-t border-slate-200 md:border-t-0"
-                    : "",
-                ].join(" ")}
+                className={`px-8 py-14 flex flex-col gap-2 ${i >= 2 ? "border-t border-white/10 md:border-t-0" : ""}`}
               >
-                <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-slate-400">
+                <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/40">
                   {s.sub}
                 </p>
-                <p className="text-[clamp(2.25rem,7vw,3.75rem)] font-black text-[#001f4d] leading-none tracking-tight">
+                <p className="text-[clamp(2rem,5vw,3.2rem)] font-black text-white leading-none tracking-tight">
                   <CountUp to={s.to} suffix={s.suffix} />
                 </p>
-                <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-500 mt-0.5">
+                <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-white/60">
                   {s.label}
                 </p>
               </div>
             ))}
           </div>
-          <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase px-8 pb-3 text-right">
-            * Based on 2024 internal records
-          </p>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          3. FACILITY — Engineering Bento Grid (Cold Documentary Filter)
+          3. OUR STORY — dark bg, vertical timeline + image
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="mb-12">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
-              Manufacturing Infrastructure
-            </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase leading-tight">
-              Our Facility
-            </h2>
-            <p className="text-slate-500 text-sm mt-3 max-w-xl leading-relaxed">
-              15,000 m² facility in Ma'anshan housing advanced CNC machining
-              centers, vacuum heat treatment furnaces, and comprehensive
-              metrology equipment.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-3">
-            {/* Main: Wide factory floor — use full workshop establishing shot */}
-            <div className="lg:col-span-7 relative overflow-hidden group aspect-[4/3] lg:aspect-auto lg:row-span-2 border border-slate-200">
-              <img
-                src="/images/about/factory-00.webp"
-                alt="Sureay CNC machining workshop — full floor establishing shot"
-                className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-90 group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-                decoding="async"
-                width={1920}
-                height={1233}
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3">
-                <p className="text-xs font-bold uppercase tracking-wide text-[#001f4d]">
-                  CNC Machining Workshop
-                </p>
-              </div>
-            </div>
-
-            {/* Top-right: CNC grinding macro — REPLACE WITH MACRO: extreme close-up of grinding wheel on blade edge */}
-            <div className="lg:col-span-5 relative overflow-hidden group aspect-video border border-slate-200">
-              <img
-                src="/images/process/cnc-precision-grinding.webp"
-                alt="CNC precision grinding — macro close-up of wheel contact on blade edge"
-                className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.7] group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-                decoding="async"
-                width={600}
-                height={340}
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d] px-4 py-2.5">
-                <p className="text-[11px] font-bold uppercase tracking-wide text-white">
-                  Precision Grinding
-                </p>
-              </div>
-            </div>
-
-            {/* Bottom-right pair — REPLACE WITH MACROS: furnace glow / CMM probe tip */}
-            <div className="lg:col-span-5 grid grid-cols-2 gap-3">
-              {/* Heat Treatment — REPLACE WITH MACRO: furnace chamber, glowing blade cross-section */}
-              <div className="relative overflow-hidden group aspect-square border border-slate-200">
-                <img
-                  src="/images/process/heat-treatment.webp"
-                  alt="Vacuum heat treatment — macro furnace interior with blade batch"
-                  className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.65] group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={400}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
-                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">
-                    Heat Treatment
-                  </p>
-                </div>
-              </div>
-              {/* QC Inspection — REPLACE WITH MACRO: CMM probe tip touching blade surface */}
-              <div className="relative overflow-hidden group aspect-square border border-slate-200">
-                <img
-                  src="/images/common/Quality-Inspection.webp"
-                  alt="CMM dimensional inspection — macro probe contact on blade surface"
-                  className="absolute inset-0 w-full h-full object-cover brightness-90 contrast-[1.2] saturate-[0.65] group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={400}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-3 py-2">
-                  <p className="text-[10px] font-bold uppercase tracking-wide text-[#001f4d]">
-                    CMM Quality Control
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          4. OUR STORY — The Production Epochs (Horizontal)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-20 lg:py-28 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          {/* Header + Statement */}
+      <section id="story" className="bg-white py-24 lg:py-28 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-4">
+            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
               Company History
             </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
-              <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase leading-tight">
-                Production Epochs
-              </h2>
-              <div className="border-l-4 border-[#001f4d] pl-5">
-                <p className="text-base lg:text-lg font-bold text-[#001f4d] leading-snug">
-                  "We don't just supply blades — we are your strategic partner
-                  in maximizing uptime and cutting performance."
-                </p>
-              </div>
-            </div>
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+              Our Story
+            </h2>
           </div>
 
-          {/* Horizontal Epoch Grid */}
-          <div className="relative">
-            {/* Continuous horizontal rail */}
-            <div className="absolute top-0 left-0 right-0 border-t-2 border-slate-200 hidden md:block" />
+          <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
+            {/* Left — vertical timeline */}
+            <div className="flex-1 relative">
+              {/* Vertical connecting line */}
+              <div className="absolute left-[9px] top-3 bottom-3 w-px bg-slate-200 hidden sm:block" />
 
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-0">
-              {EPOCHS.map((epoch, i) => (
-                <div
-                  key={i}
-                  className={[
-                    "relative pt-8 pb-6 pr-5",
-                    i < EPOCHS.length - 1 ? "border-r border-slate-200" : "",
-                    i > 0 ? "pl-5 md:pl-6" : "",
-                    i < 2 && "border-b border-slate-200 md:border-b-0",
-                  ].join(" ")}
-                >
-                  {/* Square marker on the rail */}
-                  <div
-                    className={`absolute top-0 left-0 -translate-y-1/2 w-2.5 h-2.5 hidden md:block ${
-                      i === EPOCHS.length - 1
-                        ? "bg-[#001f4d]"
-                        : "bg-white border-2 border-slate-300"
-                    }`}
+              <div className="flex flex-col gap-0">
+                {EPOCHS.map((epoch, i) => (
+                  <div key={i} className="flex gap-6 pb-10 last:pb-0">
+                    {/* Node */}
+                    <div className="flex-shrink-0 relative z-10 mt-1">
+                      <div
+                        className={`w-5 h-5 border-2 flex items-center justify-center ${
+                          i === EPOCHS.length - 1
+                            ? "bg-[#001f4d] border-[#001f4d]"
+                            : "bg-white border-slate-300"
+                        }`}
+                      >
+                        <div
+                          className={`w-1.5 h-1.5 ${
+                            i === EPOCHS.length - 1 ? "bg-white" : "bg-slate-300"
+                          }`}
+                        />
+                      </div>
+                    </div>
+                    {/* Content */}
+                    <div>
+                      <p className="text-[11px] font-black tracking-[0.2em] text-slate-400 mb-1.5">
+                        {epoch.year}
+                      </p>
+                      <p className="text-[14px] font-black uppercase tracking-tight text-[#001f4d] leading-snug mb-2">
+                        {epoch.title}
+                      </p>
+                      <p className="text-[15px] text-slate-500 leading-relaxed max-w-xs">
+                        {epoch.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right — 4 stacked photos */}
+            <div className="lg:w-[45%] flex-shrink-0">
+              <div className="flex flex-col gap-2">
+                <div className="relative overflow-hidden h-[220px]">
+                  <img
+                    src="/images/about/factory.webp"
+                    alt="Sureay factory floor — Ma'anshan manufacturing facility"
+                    className="w-full h-full object-cover brightness-75"
+                    loading="lazy"
+                    decoding="async"
+                    width={1920}
+                    height={1078}
                   />
-
-                  {/* Ghost year */}
-                  <p className="text-6xl font-black text-slate-100 leading-none mb-3 select-none tabular-nums">
-                    {epoch.year}
-                  </p>
-
-                  {/* Milestone title */}
-                  <p className="text-[11px] font-black uppercase tracking-[0.12em] text-[#001f4d] leading-snug mb-2.5">
-                    {epoch.title}
-                  </p>
-
-                  {/* Description */}
-                  <p className="text-xs text-slate-500 leading-relaxed">
-                    {epoch.desc}
-                  </p>
                 </div>
-              ))}
+                <div className="relative overflow-hidden h-[220px]">
+                  <img
+                    src="/images/about/factory-00.webp"
+                    alt="Sureay CNC machining workshop — production floor overview"
+                    className="w-full h-full object-cover brightness-75"
+                    loading="lazy"
+                    decoding="async"
+                    width={1920}
+                    height={1233}
+                  />
+                </div>
+                <div className="relative overflow-hidden h-[220px]">
+                  <img
+                    src="/images/about/grinding-workshop.webp"
+                    alt="Sureay precision grinding workshop"
+                    className="w-full h-full object-cover brightness-75"
+                    loading="lazy"
+                    decoding="async"
+                    width={630}
+                    height={516}
+                  />
+                </div>
+                <div className="relative overflow-hidden h-[220px]">
+                  <img
+                    src="/images/about/cnc-machining-center.webp"
+                    alt="Sureay CNC machining center — blade workpieces on machine table"
+                    className="w-full h-full object-cover brightness-75"
+                    loading="lazy"
+                    decoding="async"
+                    width={616}
+                    height={518}
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-6 py-4 border-t border-white/10">
+                    <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-white/60">
+                      2020 — 15,000 m² Facility · Ma'anshan, China
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          5. CORE VALUES — High-End Exhibition Layout
+          4. MANUFACTURING
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-20 lg:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+      <section id="manufacturing" className="py-24 lg:py-28 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          {/* Header */}
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
-              Our Principles
+            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
+              Facility
             </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase">
-              Core Values
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+              Manufacturing
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 border-l border-t border-slate-200">
-            {VALUES.map((v, i) => (
-              <div
-                key={i}
-                className="border-r border-b border-slate-200 px-8 py-10 lg:px-10 lg:py-12 flex items-start gap-5 hover:bg-slate-50 transition-colors"
-              >
-                <div className="flex-shrink-0 w-[5.5rem] text-right select-none -mt-2">
-                  <span className="text-[6rem] font-black leading-none text-slate-100">
-                    {v.num}
-                  </span>
-                </div>
-                <div className="flex-1 pt-1">
-                  <h3 className="text-lg font-black text-[#001f4d] uppercase tracking-wide leading-tight mb-3">
-                    {v.title}
-                  </h3>
-                  <p className="text-sm text-slate-500 leading-relaxed">
-                    {v.desc}
+          {/* Main: large image + capabilities list */}
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 mb-12">
+            {/* Image */}
+            <div className="lg:w-[55%] flex-shrink-0 relative overflow-hidden h-[340px] lg:h-[420px]">
+              <img
+                src="/images/about/cnc-workshop.webp"
+                alt="Sureay CNC workshop — machining centers with blade workpieces"
+                className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+                width={1272}
+                height={702}
+              />
+            </div>
+
+            {/* Capabilities */}
+            <div className="flex-1 flex flex-col justify-center gap-8">
+              <p className="text-[15px] text-slate-500 leading-relaxed">
+                15,000 m² production facility housing 20+ CNC grinding centers,
+                vacuum heat treatment furnaces, Wire EDM, and a dedicated
+                metallurgical lab for incoming material verification.
+              </p>
+              <div className="flex flex-col gap-7">
+                {CAPABILITIES.map((cap) => (
+                  <div key={cap.num} className="flex gap-5 items-start">
+                    <span className="text-[11px] font-black text-slate-300 tracking-widest flex-shrink-0 mt-0.5 w-6">
+                      {cap.num}
+                    </span>
+                    <div>
+                      <p className="text-[15px] font-black uppercase tracking-tight text-[#001f4d] mb-1">
+                        {cap.title}
+                      </p>
+                      <p className="text-[15px] text-slate-500 leading-relaxed">
+                        {cap.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* 3 process images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {PROCESS_IMAGES.map((img) => (
+              <div key={img.src} className="relative overflow-hidden h-[200px] group">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                  decoding="async"
+                  width={600}
+                  height={400}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/70 px-4 py-2.5">
+                  <p className="text-[10px] font-black tracking-[0.2em] uppercase text-white">
+                    {img.label}
                   </p>
                 </div>
               </div>
@@ -451,24 +443,105 @@ export default function About() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          6. CERTIFICATIONS — Dog Tag Matrix
+          5. PRECISION STANDARDS
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-20 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="mb-10">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
-              Compliance & Standards
+      <section id="precision" className="py-24 lg:py-28 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          {/* Header */}
+          <div className="mb-14">
+            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
+              Dimensional Accuracy
             </p>
-            <h2 className="text-2xl md:text-3xl font-black text-[#001f4d] uppercase">
-              Certifications
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+              Precision Standards
             </h2>
           </div>
 
+          {/* Full-width 4-stat strip */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-200 mb-14">
+            {PRECISION_STATS.map((s, i) => (
+              <div key={i} className="bg-white px-8 py-8">
+                <p className="text-[clamp(1.4rem,3vw,2rem)] font-black text-[#001f4d] leading-none tracking-tight mb-2">
+                  {s.value}
+                </p>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-slate-500 leading-snug mb-1">
+                  {s.label}
+                </p>
+                <p className="text-[11px] uppercase tracking-[0.12em] text-slate-400">
+                  {s.sub}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* 2-col: image left + materials right */}
+          <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-14">
+            {/* Image */}
+            <div className="lg:w-[42%] flex-shrink-0">
+              <div className="relative overflow-hidden h-[380px]">
+                <img
+                  src="/images/about/blade-precision-measurement.webp"
+                  alt="Inspector measuring slitter knife with vernier caliper — Sureay quality control"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={1402}
+                  height={1122}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/80 px-5 py-3">
+                  <p className="text-[10px] font-black tracking-[0.18em] uppercase text-white/60 mb-0.5">
+                    Caliper Accuracy
+                  </p>
+                  <p className="text-[16px] font-black text-white">
+                    0.02 mm Resolution
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Materials table */}
+            <div className="flex-1">
+              <p className="text-[11px] font-black tracking-[0.22em] uppercase text-slate-400 mb-5">
+                Steel Grades & Materials
+              </p>
+              <div className="border border-slate-200">
+                {MATERIALS.map((m, i) => (
+                  <div key={i} className={`flex items-start gap-4 px-4 py-3 ${i < MATERIALS.length - 1 ? "border-b border-slate-200" : ""}`}>
+                    <span className="text-[13px] font-black text-[#001f4d] w-48 flex-shrink-0 leading-snug">
+                      {m.grade}
+                    </span>
+                    <span className="text-[13px] font-mono text-slate-400 w-24 flex-shrink-0">
+                      {m.hrc}
+                    </span>
+                    <span className="text-[13px] text-slate-500 hidden sm:block">
+                      {m.use}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          6. CERTIFICATIONS
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section id="certifications" className="py-28 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="mb-12">
+            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
+              Compliance & Standards
+            </p>
+            <h2 className="text-3xl font-black text-[#001f4d] uppercase tracking-tight">
+              Certifications
+            </h2>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
             {CERTIFICATIONS.map((cert, i) => (
               <div
                 key={i}
-                className="border border-slate-300 bg-white px-4 py-5 flex flex-col items-center justify-center gap-1.5 hover:border-[#001f4d] hover:bg-[#001f4d] group transition-colors cursor-default"
+                className="border border-slate-200 bg-white px-4 py-10 flex flex-col items-center justify-center gap-2 hover:border-[#001f4d] hover:bg-[#001f4d] group transition-colors cursor-default"
               >
                 <span className="text-[11px] font-black uppercase tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
                   {cert.label}
@@ -483,7 +556,7 @@ export default function About() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          7. OEM PROCESS PIPELINE
+          7. OEM PROCESS
       ═══════════════════════════════════════════════════════════════════ */}
       <IndustryOemPipeline />
 

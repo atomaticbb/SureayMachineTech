@@ -8,7 +8,6 @@ import { useEffect, useRef, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
-import Breadcrumbs from "@/components/common/Breadcrumbs";
 import { Link } from "wouter";
 import { blades, type BladeCategoryType } from "@/data/blades";
 import ProductGrid from "@/components/product/ProductGrid";
@@ -136,17 +135,10 @@ export default function BladeListPage() {
       />
       <Navbar />
 
-      {/* Navbar-height offset + breadcrumb bar */}
-      <div className="pt-[74px]">
-        <Breadcrumbs
-          items={[{ label: "Home", href: "/" }, { label: "Blades & Knives" }]}
-        />
-      </div>
-
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 1 — Technical Hero (Left Navy / Right Image)
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden">
+      <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden mt-[74px]">
         {/* Full-bleed background image */}
         <img
           src="/images/hero/cnc-machine-produce-blades.webp"
@@ -165,11 +157,11 @@ export default function BladeListPage() {
           }}
         >
           <div>
-            <p className="font-mono text-[10px] text-white/40 tracking-[0.35em] uppercase mb-8">
-              [ PRODUCT CATALOGUE — INDUSTRIAL BLADES ]
+            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-white/40 mb-6">
+              Product Catalogue — Industrial Blades
             </p>
 
-            <h1 className="text-[clamp(1.75rem,6vw,3.25rem)] font-black text-white uppercase tracking-tight leading-[1.0] mb-8">
+            <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white uppercase tracking-tight leading-none mb-7">
               Industrial
               <br />
               Blades &amp;
@@ -177,13 +169,12 @@ export default function BladeListPage() {
               Cutting Tools
             </h1>
 
-            <div className="border-l-4 border-white/30 pl-5 max-w-xl mb-10">
-              <p className="text-white/70 text-base leading-relaxed">
-                Premium alloy steel blades for recycling, paper, and converting
-                industries — engineered for maximum wear resistance and extended
-                service life.
-              </p>
-            </div>
+            <div className="w-12 h-[3px] bg-white/30 mb-7" />
+            <p className="text-white/70 text-[16px] leading-relaxed max-w-xl mb-10">
+              Premium alloy steel blades for recycling, paper, and converting
+              industries — engineered for maximum wear resistance and extended
+              service life.
+            </p>
           </div>
         </div>
       </section>
