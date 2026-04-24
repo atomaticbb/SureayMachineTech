@@ -712,6 +712,16 @@ export const blades: Blade[] = [
 
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
+    compatibleMachines: [
+      "WEIMA",
+      "UNTHA",
+      "Vecoplan",
+      "SSI Shredding Systems",
+      "Lindner",
+      "Erdwich",
+      "BRT Hartner",
+      "ZERMA",
+    ],
 
     specs: [
       { label: "Material", value: "D2 (1.2379), SKD11, 42CrMo" },
@@ -1649,6 +1659,16 @@ export const blades: Blade[] = [
       "Single-shaft shredders operate at 80–150 RPM under extremely high torque, driving block-style rotor inserts into a stationary bed knife at tight shear clearances of 0.2–1.5mm. At these mechanical parameters, the primary cause of blade failure is impact-induced edge microchipping or thermal softening from sustained high-cycle torque peaks, rather than progressive wear.\n\nSureay addresses these failure modes through strict metallurgy. Standard D2 (1.2379) tool steel inserts provide excellent wear resistance at a cost-effective price point. For applications involving hard engineering plastics (PA66-GF, PC, PEEK) or heavy purge lumps, DC53 is specified—delivering 17% higher transverse rupture strength to prevent edge chipping under heavy impact.\n\n## ±0.02mm CNC Machining Tolerance\n\nCutting clearance between the rotor insert face and the stationary bed knife governs shred particle size and motor load. Inconsistent clearances cause material wrap-back and rotor stalls. Sureay rotor inserts are CNC-machined to ±0.02mm face flatness, ensuring a perfect and repeatable shear gap across the entire rotor length when paired with a quality bed knife.\n\n## 4-Way Indexable Geometry\n\nThe symmetrical square block format provides four independent cutting edges per insert. When one edge dulls, the operator loosens the countersunk mounting bolt, rotates the insert 90° to a fresh edge, and retorques. A full rotor complement can be indexed rapidly without shaft extraction, effectively reducing annual tooling expenditure by 75%.\n\n## Deep Cryogenic Treatment (−196°C)\n\nAll Sureay single-shaft inserts undergo vacuum hardening to HRC 58–62, followed by a mandatory deep cryogenic soak at −196°C. This critical final stage eliminates retained austenite and stabilizes the martensitic microstructure, drastically reducing the risk of bulk fracture when the rotor encounters unexpected foreign metal inclusions.",
     link: "/products/single-shaft-rotor-inserts",
     isFeatured: true,
+    compatibleMachines: [
+      "Rapid Granulator",
+      "Neue Herbold",
+      "ZERMA",
+      "Getecha",
+      "Cumberland Engineering",
+      "Conair",
+      "Wittmann Battenfeld",
+      "WEIMA",
+    ],
 
     specs: [
       { label: "Material", value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo" },
@@ -1837,6 +1857,16 @@ export const blades: Blade[] = [
       "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
+    compatibleMachines: [
+      "Rapid Granulator",
+      "Neue Herbold",
+      "ZERMA",
+      "Getecha",
+      "Cumberland Engineering",
+      "Conair",
+      "Wittmann Battenfeld",
+      "WEIMA",
+    ],
 
     specs: [
       {
@@ -1988,6 +2018,16 @@ export const blades: Blade[] = [
 
     link: "/products/granulator-blades",
     isFeatured: true,
+    compatibleMachines: [
+      "Rapid Granulator",
+      "Herbold Meckesheim",
+      "ZERMA",
+      "Getecha",
+      "Cumberland Engineering",
+      "Conair",
+      "Wittmann Battenfeld",
+      "Gamma Meccanica",
+    ],
 
     specs: [
       { label: "Material", value: "D2 (1.2379), SKD-11, DC53, Cr12MoV" },
@@ -2999,6 +3039,16 @@ export const blades: Blade[] = [
 
     link: "/products/tire-shredder-blades",
     isFeatured: true,
+    compatibleMachines: [
+      "Granutech-Saturn Systems",
+      "UNTHA",
+      "WEIMA",
+      "Eldan Recycling",
+      "Lindner",
+      "Eco Green Equipment",
+      "American Pulverizer",
+      "Shred-Tech",
+    ],
 
     specs: [
       { label: "Material", value: "Cru-Wear (PGK), Modified A8, 42CrMo" },

@@ -32,6 +32,7 @@ import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
 import TrustProtocol from "@/components/product-detail/TrustProtocol";
+import CompatibleMachines from "@/components/product-detail/CompatibleMachines";
 import WhatsAppFloat from "@/components/common/WhatsAppFloat";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 
@@ -128,6 +129,11 @@ export default function ProductDetail() {
             {/* Zone 3 — Comprehensive Technical Data */}
             <div className="-mx-4 sm:-mx-8">
               <ComprehensiveData blade={blade} />
+            </div>
+
+            {/* Zone 3b — Compatible Machine Brands */}
+            <div className="-mx-4 sm:-mx-8">
+              <CompatibleMachines blade={blade} />
             </div>
 
             {/* Zone 4 — Technical Audit Log */}
