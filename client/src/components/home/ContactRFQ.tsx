@@ -502,7 +502,7 @@ export default function ContactRFQ({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#003366] hover:bg-[#001f4d] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md hover:shadow-lg"
+                  className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md"
                 >
                   {loading ? "Sending…" : "Submit RFQ for Engineering Review"}
                 </button>

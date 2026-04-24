@@ -56,7 +56,7 @@ export default function IndustryOemPipeline() {
             </h2>
             <a
               href="#contact"
-              className="inline-flex items-center gap-3 bg-white text-[#001f4d] hover:bg-[#65AAD6] px-6 py-3 text-[13px] font-black uppercase tracking-[0.18em] rounded-none transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
+              className="inline-flex items-center gap-3 bg-white text-[#001f4d] border border-white hover:bg-[#001f4d] hover:text-white px-6 py-3 text-[13px] font-black uppercase tracking-[0.18em] rounded-none transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
             >
               Get In Touch
             </a>

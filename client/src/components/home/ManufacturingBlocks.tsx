@@ -21,7 +21,7 @@ const BLOCKS = [
       "CMM inspection and optical verification are completed before release, so dimensional compliance is confirmed rather than assumed.",
       "Where the application requires it, edge tolerances can be held down to ±0.002 mm to support high-speed drop-in replacement requirements.",
     ],
-    imageSrc: "/images/process/quality-control.webp",
+    imageSrc: "/images/process/CMM.webp",
     imageAlt:
       "CMM coordinate measuring machine quality inspection of industrial cutting blades",
   },
@@ -34,7 +34,7 @@ const BLOCKS = [
       "We match steel grade and heat treatment to the actual operating condition, whether the line is converting tissue, shredding plastics, or slitting metal coils.",
       "The result is a recommendation aimed at longer regrind intervals, more predictable blade life, and fewer avoidable replacements.",
     ],
-    imageSrc: "/images/products/blades/tissue-log-saw-blades.webp",
+    imageSrc: "/images/common/material-selection.webp",
     imageAlt:
       "Mirror-polished tissue log-saw blade engineered for industrial converting applications",
   },

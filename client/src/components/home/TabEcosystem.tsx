@@ -119,7 +119,7 @@ export default function TabEcosystem() {
                     </div>
 
                     <Link href={active.href} className="self-start mt-4">
-                      <span className="inline-flex items-center gap-2 bg-[#003366] text-white px-5 lg:px-6 py-2 lg:py-2.5 text-[11px] font-black uppercase tracking-widest hover:bg-[#001f4d] transition-colors rounded-none cursor-pointer whitespace-nowrap">
+                      <span className="inline-flex items-center gap-2 bg-[#003366] text-white border border-[#003366] px-5 lg:px-6 py-2 lg:py-3.5 text-[11px] font-black uppercase tracking-widest hover:bg-white hover:text-[#003366] transition-colors rounded-none cursor-pointer whitespace-nowrap">
                         Explore {active.cta}
                         <ArrowRight className="w-3.5 h-3.5" />
                       </span>
