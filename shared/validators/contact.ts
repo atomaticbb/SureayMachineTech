@@ -3,8 +3,8 @@ import { z } from "zod";
 export const ContactFormSchema = z.object({
   name: z
     .string()
-    .min(1, "Name is required")
-    .max(50, "Name must be at most 50 characters"),
+    .max(50, "Name must be at most 50 characters")
+    .optional(),
   email: z.string().email("Please enter a valid email address"),
   phone: z.string().optional(),
   company: z

@@ -30,24 +30,19 @@ export default function AuthorityCarousel() {
 
     let jumped = false;
     if (el.scrollLeft >= oneSetW * 2) {
-      // Scrolled into set 3, teleport to set 2
       el.scrollLeft -= oneSetW;
       jumped = true;
     } else if (el.scrollLeft < oneSetW - 2) {
-      // Scrolled into set 1, teleport to set 2
       el.scrollLeft += oneSetW;
       jumped = true;
     }
 
     if (jumped) {
       normCooldownRef.current = true;
-      setTimeout(() => {
-        normCooldownRef.current = false;
-      }, 100);
+      setTimeout(() => { normCooldownRef.current = false; }, 100);
     }
   };
 
-  // Detect when scrolling has stopped (50ms idle), then normalise
   const handleScroll = () => {
     if (normCooldownRef.current) return;
     if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
@@ -67,12 +62,9 @@ export default function AuthorityCarousel() {
   useEffect(() => {
     const el = carouselRef.current;
     if (!el) return;
-    requestAnimationFrame(() => {
-      el.scrollLeft = el.scrollWidth / 3;
-    });
+    requestAnimationFrame(() => { el.scrollLeft = el.scrollWidth / 3; });
   }, []);
 
-  // Listen to scroll events for infinite loop normalisation
   useEffect(() => {
     const el = carouselRef.current;
     if (!el) return;
@@ -96,11 +88,12 @@ export default function AuthorityCarousel() {
   return (
     <section className="bg-white text-slate-900 py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        {/* Marquee statement */}
+        {/* Marquee statement — forced 2-line layout */}
         <div className="text-center mb-10">
-          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-4xl mx-auto">
-            The definitive OEM source for precision blades and cutting
-            solutions.
+          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] mx-auto">
+            The definitive OEM source for precision blades
+            <br />
+            and cutting solutions.
           </h2>
         </div>
 

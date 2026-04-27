@@ -68,7 +68,7 @@ export const submitContactForm = async (
     // 4. Persist contact record
     const contact = await prisma.contact.create({
       data: {
-        name: data.name,
+        name: data.name ?? "—",
         email: data.email,
         phone: data.phone,
         company: data.company,

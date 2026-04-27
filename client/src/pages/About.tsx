@@ -3,7 +3,6 @@
  * Sections: Hero · Stats · Our Story · Manufacturing · Precision · Certifications · OEM Process
  */
 
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
@@ -11,63 +10,13 @@ import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
-// ── Count-Up ─────────────────────────────────────────────────────────────────
-
-function CountUp({
-  to,
-  duration = 1800,
-  suffix = "",
-}: {
-  to: number;
-  duration?: number;
-  suffix?: string;
-}) {
-  const [val, setVal] = useState(0);
-  const [started, setStarted] = useState(false);
-  const ref = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setStarted(true); },
-      { threshold: 0.2 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!started) return;
-    let raf: number;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const p = Math.min((now - start) / duration, 1);
-      const ease = 1 - Math.pow(1 - p, 3);
-      setVal(Math.round(ease * to));
-      if (p < 1) raf = requestAnimationFrame(tick);
-      else setVal(to);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [started, to, duration]);
-
-  const display = to >= 1000 ? val.toLocaleString() : val.toString();
-  return (
-    <span ref={ref} className="tabular-nums">
-      {display}
-      {suffix}
-    </span>
-  );
-}
-
 // ── Data ─────────────────────────────────────────────────────────────────────
 
 const STATS = [
-  { to: 15,    suffix: "+", label: "Years of Experience",     sub: "Est. 2008" },
-  { to: 10000, suffix: "+", label: "Blade Designs Delivered", sub: "Active Variants" },
-  { to: 98,    suffix: "%", label: "Client Retention Rate",   sub: "Satisfaction" },
-  { to: 50,    suffix: "+", label: "Countries Served",        sub: "Global Coverage" },
+  { display: "15+",    label: "Years of Experience",     sub: "Est. 2008" },
+  { display: "10,000+", label: "Blade Designs Delivered", sub: "Active Variants" },
+  { display: "98%",    label: "Client Retention Rate",   sub: "Satisfaction" },
+  { display: "50+",    label: "Countries Served",        sub: "Global Coverage" },
 ];
 
 const EPOCHS = [
@@ -235,8 +184,8 @@ export default function About() {
                 <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/40">
                   {s.sub}
                 </p>
-                <p className="text-[clamp(2rem,5vw,3.2rem)] font-black text-white leading-none tracking-tight">
-                  <CountUp to={s.to} suffix={s.suffix} />
+                <p className="text-[clamp(2rem,5vw,3.2rem)] font-black text-white leading-none tracking-tight tabular-nums">
+                  {s.display}
                 </p>
                 <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-white/60">
                   {s.label}

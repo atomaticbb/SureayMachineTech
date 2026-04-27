@@ -58,18 +58,13 @@ export default function ContactRFQ({
     setEmailNoticeOnly(false);
 
     const raw = new FormData(e.currentTarget);
-    const inquiryType = raw.get("inquiryType") as string;
     const requirements = raw.get("message") as string;
 
     // Build multipart payload — lets the browser set Content-Type + boundary
     const fd = new FormData();
-    fd.append("name", raw.get("name") as string);
     fd.append("email", raw.get("email") as string);
     const productPrefix = productName ? `[Product: ${productName}] ` : "";
     fd.append("message", `${productPrefix}${requirements}`);
-    if (inquiryType) fd.append("inquiryType", inquiryType);
-    const phone = raw.get("phone") as string;
-    if (phone) fd.append("phone", phone);
     if (attachment) fd.append("attachment", attachment, attachment.name);
 
     try {
@@ -311,81 +306,28 @@ export default function ContactRFQ({
                     </span>
                   </div>
                 )}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
-                      Your Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="John Doe"
-                      className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
-                      Company Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="john@company.com"
-                      className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
-                      required
-                    />
-                  </div>
-                </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
-                    Inquiry Type
-                  </label>
-                  <select
-                    name="inquiryType"
-                    className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm text-slate-700 focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all bg-white appearance-none"
-                  >
-                    <option value="">Select inquiry type...</option>
-                    <option value="Custom Blade / Knife Order">
-                      Custom Blade / Knife Order
-                    </option>
-                    <option value="Plastic Recycling Equipment">
-                      Plastic Recycling Equipment
-                    </option>
-                    <option value="OEM / ODM Manufacturing">
-                      OEM / ODM Manufacturing
-                    </option>
-                    <option value="Repair & Re-grinding Service">
-                      Repair &amp; Re-grinding Service
-                    </option>
-                    <option value="Technical Consultation">
-                      Technical Consultation
-                    </option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
-                    Phone / WhatsApp
+                    Business Email *
                   </label>
                   <input
-                    type="tel"
-                    name="phone"
-                    placeholder="+1 (555) 000-0000"
+                    type="email"
+                    name="email"
+                    placeholder="you@company.com"
                     className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
+                    required
                   />
                 </div>
 
                 <div className="flex-1">
                   <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
-                    Requirements *
+                    What do you need? *
                   </label>
                   <textarea
-                    rows={3}
+                    rows={4}
                     name="message"
-                    placeholder="Describe your blade specifications, quantities, dimensions, materials, or application..."
+                    placeholder="E.g., OEM replacement blades for Vecoplan VA 2000, D2 steel, qty 20, delivery to Germany..."
                     className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
                     required
                   />
@@ -504,8 +446,11 @@ export default function ContactRFQ({
                   disabled={loading}
                   className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md"
                 >
-                  {loading ? "Sending…" : "Submit RFQ for Engineering Review"}
+                  {loading ? "Sending…" : "Get a Quote →"}
                 </button>
+                <p className="text-xs text-slate-400 text-center">
+                  No spam — we only use your email to respond to this inquiry.
+                </p>
               </form>
             )}
           </div>
