@@ -157,7 +157,7 @@ const PAGE_SCHEMA = {
       description:
         "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG/STEP drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. MOQ 1 piece.",
       image: "https://sureay.com/images/products/blades/special-shaped-knife.webp",
-      url: "https://sureay.com/custom-blades",
+      url: "https://sureay.com/custom",
       brand: { "@type": "Brand", name: "Sureay" },
       offers: {
         "@type": "AggregateOffer",
@@ -185,7 +185,7 @@ export default function CustomBlades() {
       <SEO
         title="Special-Shaped & Custom Profile Blades — OEM Manufacturing"
         description="Sureay manufactures special-shaped and custom profile industrial blades from customer drawings or samples. D2, H13, PM-HSS, carbide. ±0.02 mm tolerance. DXF/DWG/STEP accepted."
-        canonicalUrl="/custom-blades"
+        canonicalUrl="/custom"
         keywords="custom profile blades, special shaped industrial knives, OEM custom blades manufacturer, special knife profiles, custom machine knives DXF"
       />
       <Helmet>

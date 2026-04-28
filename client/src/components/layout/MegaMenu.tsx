@@ -220,7 +220,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
         subtitle: "CUSTOM MANUFACTURING",
         title: "SPECIAL-SHAPED BLADES",
         ctaText: "VIEW CUSTOM SOLUTIONS",
-        ctaHref: "/custom-blades",
+        ctaHref: "/custom",
       },
       items: blades.filter(b => b.sector === "other").map(bladeToItem),
     },

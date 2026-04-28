@@ -4277,7 +4277,7 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     description:
       "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. Any profile, any industry.",
-    link: "/custom-blades",
+    link: "/custom",
     specs: [
       { label: "Material", value: "D2 / H13 / PM-HSS / Carbide" },
       { label: "Tolerance", value: "±0.02 mm" },

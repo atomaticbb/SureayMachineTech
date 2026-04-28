@@ -115,7 +115,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/custom-blades"
+                  href="/custom"
                   className="hover:text-white transition-colors"
                 >
                   Special-Shaped Blades

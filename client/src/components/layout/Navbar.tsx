@@ -21,7 +21,7 @@ import { INDUSTRY_MENU_DATA } from "./MegaMenu";
 
 // ── Static nav links ─────────────────────────────────────────────────────────
 const NAV_LINKS = [
-  { label: "CUSTOM BLADES", path: "/custom-blades" },
+  { label: "CUSTOM", path: "/custom" },
   { label: "NEWS", path: "/news" },
   { label: "ABOUT US", path: "/about" },
   { label: "CONTACT US", path: "/contact" },
@@ -244,7 +244,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                 className="flex gap-5 h-80"
               >
                 {/* Left: hero image + title below */}
-                <Link href="/custom-blades" className="flex-1 min-w-0 flex flex-col">
+                <Link href="/custom" className="flex-1 min-w-0 flex flex-col">
                   <div
                     onClick={onClose}
                     className="relative flex-1 overflow-hidden cursor-pointer group bg-white"

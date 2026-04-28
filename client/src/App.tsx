@@ -144,7 +144,7 @@ function Router() {
           <Route path="/paper-industry" component={PaperIndustry} />
           <Route path="/new-energy-industry" component={NewEnergyIndustry} />
           <Route path="/converting-industry" component={ConvertingIndustry} />
-          <Route path="/custom-blades" component={CustomBlades} />
+          <Route path="/custom" component={CustomBlades} />
 
           {/* Static pages */}
           <Route path="/about" component={About} />

@@ -9,7 +9,11 @@ import { useRoute, Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
-import { getDispatchById, getAdjacentDispatches } from "@/data/news";
+import {
+  getDispatchAuthor,
+  getDispatchById,
+  getAdjacentDispatches,
+} from "@/data/news";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import { getBladeById } from "@/data/blades";
 import type { Blade } from "@/data/blades";
@@ -36,6 +40,15 @@ function renderInlineLinks(text: string): React.ReactNode {
   });
 }
 
+function formatHeadingCase(text: string): string {
+  if (/[a-z]/.test(text)) {
+    return text;
+  }
+
+  const lowered = text.toLowerCase();
+  return lowered.charAt(0).toUpperCase() + lowered.slice(1);
+}
+
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function NewsDetail() {
@@ -44,10 +57,13 @@ export default function NewsDetail() {
 
   const article = getDispatchById(id);
   const { prev, next } = getAdjacentDispatches(id);
+  const author = getDispatchAuthor(id);
 
   const relatedBlades = (article?.relatedProductIds ?? [])
     .map((pid) => getBladeById(pid))
     .filter((b): b is Blade => !!b);
+
+  let figureCount = 0;
 
   // ── 404 guard ──────────────────────────────────────────────────────────────
   if (!article) {
@@ -73,11 +89,12 @@ export default function NewsDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-white antialiased">
+    <div className="min-h-screen bg-[#f4f6f8] antialiased">
       <SEO
-        title={article.title}
-        description={article.excerpt}
+        title={article.seoTitle ?? article.title}
+        description={article.metaDescription ?? article.excerpt}
         canonicalUrl={`/news/${article.id}`}
+        keywords={article.keywords}
       />
       <Navbar />
 
@@ -85,74 +102,90 @@ export default function NewsDetail() {
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 1 — Technical Datasheet Header (Left Text / Right Image)
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="border-b border-slate-200">
-          <div className="lg:grid lg:grid-cols-2">
-            {/* ── Left: Ledger Panel ─────────────────────────────────────── */}
-            <div className="lg:border-r border-slate-200 border-b lg:border-b-0 p-6 lg:p-16 flex flex-col justify-between">
-              {/* Top: back-nav + metadata */}
-              <div>
-                <Link href="/news">
-                  <a className="font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors mb-8 inline-block">
-                    ← CORPORATE DISPATCHES
-                  </a>
-                </Link>
+        <section className="border-b border-slate-200 bg-white">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:py-12">
+            <Link href="/news">
+              <a className="font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors inline-block">
+                ← CORPORATE DISPATCHES
+              </a>
+            </Link>
 
-                <div className="flex flex-wrap items-center gap-x-6 gap-y-1.5 mb-8">
+            <div className="mt-6 border border-slate-200 bg-[#f8fafc]">
+              <div className="border-b border-slate-200 px-5 py-4 lg:px-6">
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5">
                   <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-                    [ ID: {article.id.toUpperCase()} ]
+                    FILE: {article.id.toUpperCase()}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
                   <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-                    [ {article.tag} ]
+                    {article.tag}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
                   <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-                    [ {article.date} ]
+                    {article.date}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
                   <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
-                    [ {article.readTime} ]
+                    {article.readTime}
                   </span>
                 </div>
               </div>
 
-              {/* Middle: title + summary */}
-              <div className="flex-1 flex flex-col justify-center py-8">
-                <h1 className="text-[clamp(1.75rem,5vw,3rem)] font-black text-[#001f4d] uppercase leading-[1.1] tracking-tight mb-8">
-                  {article.title}
-                </h1>
+              <div className="grid gap-8 px-5 py-6 lg:grid-cols-[minmax(0,1fr)_minmax(440px,0.95fr)] lg:px-6 lg:py-8 lg:items-stretch">
+                <div className="max-w-4xl">
+                  <h1 className="text-[clamp(1.7rem,3.6vw,3rem)] font-black text-[#001f4d] leading-[1.02] tracking-tight max-w-[18ch]">
+                    {formatHeadingCase(article.title)}
+                  </h1>
 
-                <div className="border-l-4 border-[#001f4d] pl-5">
-                  <p className="text-lg font-bold text-slate-700 leading-snug">
+                  <p className="mt-6 max-w-[65ch] text-[16px] lg:text-[18px] font-semibold text-slate-700 leading-relaxed">
                     {article.excerpt}
                   </p>
+
+                  <div className="mt-8 grid gap-4 border-t border-slate-200 pt-5 sm:grid-cols-3">
+                    <div>
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                        Authored By
+                      </p>
+                      <p className="text-sm font-black tracking-wide text-[#001f4d]">
+                        {author}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                        Classification
+                      </p>
+                      <p className="text-sm font-black uppercase tracking-wide text-[#001f4d]">
+                        {article.tag}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                        Document Use
+                      </p>
+                      <p className="text-sm font-black uppercase tracking-wide text-[#001f4d]">
+                        Buyer Reference
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              {/* Bottom: read time stamp */}
-              <div className="border-t border-slate-200 pt-5">
-                <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
-                  READ TIME: {article.readTime} &nbsp;·&nbsp; AUTHORED BY: CORE
-                  ENGINEERING
-                </span>
-              </div>
-            </div>
-
-            {/* ── Right: Evidence Viewport ────────────────────────────────── */}
-            <div className="relative min-h-[400px] lg:min-h-full overflow-hidden">
-              <img
-                src={article.image}
-                alt={article.title}
-                className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-125 saturate-75"
-                width={800}
-                height={500}
-                decoding="async"
-              />
-              {/* Caption plate — bottom-left, borders connect with grid lines */}
-              <div className="absolute bottom-0 left-0 bg-white border-t border-r border-slate-200 px-5 py-3">
-                <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
-                  FIG. 1.0 — {article.title} OVERVIEW
-                </span>
+                <div className="border border-slate-200 bg-white overflow-hidden">
+                  <div className="relative min-h-[320px] sm:min-h-[420px] lg:min-h-full bg-slate-100">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
+                      width={960}
+                      height={720}
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="border-t border-slate-200 px-4 py-3">
+                    <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
+                      Fig. 1.0 / Dispatch Overview Image
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -161,18 +194,18 @@ export default function NewsDetail() {
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 3 — The Asymmetrical Reading Grid
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-          <div className="lg:grid lg:grid-cols-12 gap-12">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
+          <div className="lg:grid lg:grid-cols-[220px_minmax(0,760px)] lg:justify-center gap-10 lg:gap-14">
             {/* ── Left: Document Navigator (sticky) ─────────────────────── */}
-            <aside className="lg:col-span-3 mb-12 lg:mb-0">
-              <div className="lg:sticky lg:top-[110px] border border-slate-200">
+            <aside className="mb-10 lg:mb-0">
+              <div className="lg:sticky lg:top-[110px] border border-slate-200 bg-white">
                 {/* Author */}
                 <div className="border-b border-slate-200 px-5 py-4">
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
                     Authored By
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] uppercase tracking-wide">
-                    CORE ENGINEERING
+                  <p className="font-black text-sm text-[#001f4d] tracking-wide">
+                    {author}
                   </p>
                 </div>
 
@@ -208,39 +241,45 @@ export default function NewsDetail() {
                   <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide uppercase">
                     {article.date}
                   </p>
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mt-3 mb-1">
+                    Read Time
+                  </p>
+                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide uppercase">
+                    {article.readTime}
+                  </p>
                 </div>
               </div>
             </aside>
 
             {/* ── Right: Main Article Content ───────────────────────────── */}
-            <article className="lg:col-span-9">
+            <article className="min-w-0">
               {article.content.map((block, i) => {
                 switch (block.type) {
                   case "h2":
                     return (
                       <h2
                         key={i}
-                        className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight border-t-2 border-slate-200 pt-6 mt-14 mb-6"
+                        className="font-black text-[1.65rem] md:text-[2rem] text-[#001f4d] tracking-tight border-t border-slate-300 pt-8 mt-14 mb-6"
                       >
-                        {block.value}
+                        {formatHeadingCase(block.value)}
                       </h2>
                     );
                   case "h3":
                     return (
                       <h3
                         key={i}
-                        className="font-black text-xl text-[#001f4d] uppercase tracking-tight border-t border-slate-200 pt-5 mt-10 mb-5"
+                        className="font-black text-[1.1rem] md:text-[1.25rem] text-[#001f4d] tracking-tight pt-1 mt-10 mb-4"
                       >
-                        {block.value}
+                        {formatHeadingCase(block.value)}
                       </h3>
                     );
                   case "callout":
                     return (
                       <div
                         key={i}
-                        className="bg-slate-50 border border-slate-200 border-l-4 border-l-[#001f4d] px-8 py-6 my-8"
+                        className="border border-slate-200 bg-[#f8fafc] px-6 py-5 my-8"
                       >
-                        <p className="font-mono text-sm text-[#001f4d] leading-relaxed tracking-wide">
+                        <p className="font-mono text-sm text-[#001f4d] leading-relaxed tracking-wide uppercase">
                           {renderInlineLinks(block.value)}
                         </p>
                       </div>
@@ -249,24 +288,31 @@ export default function NewsDetail() {
                     return (
                       <div
                         key={i}
-                        className="my-10 border border-slate-200 overflow-hidden"
+                        className="my-10 sm:my-12"
                       >
-                        <img
-                          src={block.value}
-                          alt=""
-                          className="w-full object-cover brightness-95 contrast-125 saturate-75"
-                          loading="lazy"
-                          decoding="async"
-                          width={800}
-                          height={450}
-                        />
+                        <div className="mx-auto max-w-2xl border border-slate-200 bg-white overflow-hidden">
+                          <img
+                            src={block.value}
+                            alt=""
+                            className="w-full object-cover brightness-95 contrast-110 saturate-75"
+                            loading="lazy"
+                            decoding="async"
+                            width={720}
+                            height={540}
+                          />
+                          <div className="border-t border-slate-200 px-4 py-3">
+                            <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-[0.22em] uppercase">
+                              {`Fig. ${String((figureCount += 1) + 1)}.0 / Production Record`}
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     );
                   default:
                     return (
                       <p
                         key={i}
-                        className="text-lg leading-relaxed text-slate-700 mb-6"
+                        className="max-w-[70ch] text-[16px] lg:text-[18px] leading-[1.9] text-slate-700 mb-6"
                       >
                         {renderInlineLinks(block.value)}
                       </p>
@@ -275,7 +321,7 @@ export default function NewsDetail() {
               })}
 
               {/* End mark */}
-              <div className="border-t border-slate-200 mt-16 pt-6">
+              <div className="border-t border-slate-300 mt-16 pt-6">
                 <span className="font-mono text-[11px] text-slate-400 tracking-widest uppercase">
                   // END OF DISPATCH //
                 </span>
@@ -304,8 +350,8 @@ export default function NewsDetail() {
                   <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase group-hover:text-white/50">
                     ← PREVIOUS DISPATCH
                   </span>
-                  <span className="font-black text-base lg:text-lg text-[#001f4d] uppercase leading-tight group-hover:text-white">
-                    {prev.title}
+                  <span className="font-black text-base lg:text-lg text-[#001f4d] leading-tight group-hover:text-white">
+                    {formatHeadingCase(prev.title)}
                   </span>
                 </a>
               </Link>
@@ -326,8 +372,8 @@ export default function NewsDetail() {
                   <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase group-hover:text-white/50">
                     NEXT DISPATCH →
                   </span>
-                  <span className="font-black text-base lg:text-lg text-[#001f4d] uppercase leading-tight group-hover:text-white">
-                    {next.title}
+                  <span className="font-black text-base lg:text-lg text-[#001f4d] leading-tight group-hover:text-white">
+                    {formatHeadingCase(next.title)}
                   </span>
                 </a>
               </Link>

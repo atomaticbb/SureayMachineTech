@@ -19,9 +19,14 @@ export interface DispatchArticle {
   image: string;
   readTime: string;
   isFeatured?: boolean;
+  seoTitle?: string;
+  metaDescription?: string;
+  keywords?: string;
   relatedProductIds?: string[];
   content: NewsContent[];
 }
+
+export type DispatchAuthor = "eric" | "lynn";
 
 const DISPATCH_MONTHS: Record<string, number> = {
   JAN: 0,
@@ -205,6 +210,102 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
 
   // ── Archive Grid ──────────────────────────────────────────────────────────
+  {
+    id: "custom-metal-shear-blades-batch-production",
+    tag: "COMPANY UPDATES",
+    date: "28.APR.2026",
+    title:
+      "PRECISION MANUFACTURING DELIVERED: HIGH-PERFORMANCE METAL SHEAR BLADES READY FOR GLOBAL EXPORT",
+    excerpt:
+      "Sureay recently completed a large batch of custom metal shear blades (900x75x25mm), combining precision grinding, strict quality control, and export-grade VCI packaging for global scrap metal processing facilities.",
+    image:
+      "/images/products/granulator-blades/metal-shear-blades-09.webp",
+    readTime: "5 MIN",
+    seoTitle:
+      "Precision Manufacturing Delivered: Custom Metal Shear Blades Batch Ready for Export | Sureay",
+    metaDescription:
+      "Sureay recently completed a large batch of custom metal shear blades (900x75x25mm). Discover our precision grinding, strict quality control, and export-grade VCI packaging for global scrap metal processing facilities.",
+    keywords:
+      "metal shear blades, guillotine shear knives, scrap metal blades, D2 tool steel blades, Sureay industrial knives",
+    relatedProductIds: ["metal-shear-knives"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "At Sureay, we understand that for scrap metal recycling and heavy fabrication facilities, blade failure is not an option. Unscheduled downtime caused by chipped or rapidly wearing shear knives directly impacts your bottom line.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This week, our manufacturing facility successfully completed the production, inspection, and packaging of a major batch of custom heavy-duty metal shear blades, engineered specifically for high-volume scrap processing applications.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/granulator-blades/metal-shear-blades-09.webp",
+      },
+      { type: "h2", value: "Uncompromising Dimensional Accuracy" },
+      {
+        type: "paragraph",
+        value:
+          "Achieving clean, efficient cuts in thick metal requires strict tolerances. As showcased in our recent production run, every blade undergoes rigorous CNC surface grinding to ensure absolute flatness and parallelism along the entire cutting edge.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This specific batch features custom dimensions of 900mm x 75mm x 25mm, manufactured exactly to the client's OEM specifications. The precision-machined countersunk holes guarantee a seamless, secure fitment into the guillotine shear equipment, eliminating micro-vibrations during the shearing impact that often lead to premature blade fracture.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/granulator-blades/metal-shear-blades-06.webp",
+      },
+      { type: "h2", value: "Premium Tool Steel & Heat Treatment" },
+      {
+        type: "paragraph",
+        value:
+          "While dimensional accuracy is critical, metallurgical integrity determines the lifespan of the knife. These metal shear blades are forged from premium, high-alloy tool steel (options include D2, H13, or specialized 9CrSi depending on the cutting application).",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Through advanced vacuum heat treatment processes, we achieve the optimal balance between high surface hardness (for edge retention) and core toughness (to withstand severe mechanical shock from tramp metal).",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/granulator-blades/metal-shear-blades-07.webp",
+      },
+      { type: "h2", value: "Export-Grade Packaging for Global Reliability" },
+      {
+        type: "paragraph",
+        value:
+          "A high-quality industrial blade is useless if it arrives damaged or corroded. At Sureay, our commitment to quality extends to our dispatch logistics.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Every single shear blade in this batch was coated with an industrial rust-inhibitor, tightly wrapped in VCI (Volatile Corrosion Inhibitor) paper, and securely bundled. This multi-layer export packaging ensures that whether these blades are shipped to North America, Europe, or Southeast Asia, they arrive in pristine, ready-to-install condition.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/granulator-blades/metal-shear-blades-08.webp",
+      },
+      { type: "h2", value: "Upgrade Your Shearing Operations with Sureay" },
+      {
+        type: "paragraph",
+        value:
+          "Are your current metal shear blades wearing out too quickly? We manufacture replacement knives for all major brands of scrap shears, alligator shears, and guillotine shears. We provide exact OEM replacements or upgraded metallurgical formulations tailored to your specific cutting challenges.",
+      },
+      {
+        type: "callout",
+        value:
+          "[Contact Sureay Engineering Today](/contact) — Send us your drawings or OEM part numbers for a fast, technical evaluation and quote.",
+      },
+    ],
+  },
+
   {
     id: "shredder-metallurgy-maximizes-recycling-yields",
     tag: "TECH INNOVATION",
@@ -1069,7 +1170,27 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
+const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "custom-metal-shear-blades-batch-production": "lynn",
+  "facility-expansion-phase-iii": "lynn",
+  "k-show-2024-recycling-knives": "lynn",
+  "iso-9001-recertification-2024": "lynn",
+  "chinaplas-2024-oem-partnerships": "lynn",
+  "d2-vs-skd11-vs-tungsten-carbide": "eric",
+  "shredder-metallurgy-maximizes-recycling-yields": "eric",
+  "high-hardness-metal-shear-guide": "eric",
+  "cryogenic-treatment-alloy-blades": "eric",
+  "tin-vs-chrome-coating": "eric",
+  "log-saw-blade-bevel-angles": "eric",
+  "melt-filter-scraper-blade-daily-maintenance-checklist": "eric",
+  "alloy-vs-hss-paper-cutter-blades": "eric",
+};
+
 // ── Helper Functions ──────────────────────────────────────────────────────────
+
+export function getDispatchAuthor(id: string): DispatchAuthor {
+  return DISPATCH_AUTHOR_BY_ID[id] ?? "eric";
+}
 
 /** All non-featured dispatches, for the archive grid. */
 export function getAllDispatches(): DispatchArticle[] {
