@@ -159,7 +159,7 @@ export default function Footer() {
                   href="/paper-industry"
                   className="hover:text-white transition-colors"
                 >
-                  Paper, Tissue &amp; Corrugated
+                  Paper and Tissue
                 </Link>
               </li>
               <li>

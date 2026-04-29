@@ -25,8 +25,8 @@ import type {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Industries / Paper, Tissue & Corrugated",
-  h1: "Paper, Tissue & Corrugated Knife Manufacturer — HSS & TC Grades",
+  breadcrumb: "Home / Industries / Paper and Tissue",
+  h1: "Paper and Tissue Knife Manufacturer — HSS & TC Grades",
   h2: "Log Saw Blades, Slitter Knives, Trimmer Blades & OEM Wear Parts",
   body1:
     "Sureay Machinery manufactures triple-ground tissue log saw blades, rewinder perforation " +

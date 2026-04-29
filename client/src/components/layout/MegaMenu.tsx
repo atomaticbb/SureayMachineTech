@@ -146,7 +146,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
   categories: [
     {
       id: "recycling-waste",
-      title: "RECYCLING & WASTE",
+      title: "Recycling & Waste",
       featured: {
         coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
         tagline: "EXTREME DURABILITY & IMPACT RESISTANCE",
@@ -159,12 +159,12 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id: "paper-packaging-converting",
-      title: "PAPER, TISSUE & CORRUGATED",
+      title: "Paper & Tissue",
       featured: {
         coverImage: "/images/applications/tissue-and-paper.webp",
         tagline: "PRECISION CUTTING · ZERO DUST",
         subtitle: "ACTIVE INDUSTRY",
-        title: "PAPER, TISSUE & CORRUGATED",
+        title: "PAPER & TISSUE",
         ctaText: "VIEW PAPER SOLUTIONS",
         ctaHref: "/paper-industry",
       },
@@ -172,7 +172,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id: "metal-processing",
-      title: "METAL PROCESSING",
+      title: "Metal Processing",
       featured: {
         coverImage: "/images/applications/Metal-Waste-Recycling.webp",
         tagline: "HIGH-SPEED SHEAR CUTTING",
@@ -185,7 +185,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id: "flexible-converting",
-      title: "FILM & CONVERTING",
+      title: "Film & Converting",
       featured: {
         coverImage:
           "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
@@ -199,7 +199,7 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id: "new-energy",
-      title: "NEW ENERGY",
+      title: "New Energy",
       featured: {
         coverImage:
           "/images/applications/metal-industry/metal-slitter-knives-00.webp",
@@ -213,12 +213,12 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
     },
     {
       id: "custom-profile",
-      title: "SPECIAL-SHAPED BLADES",
+      title: "Custom Blades",
       featured: {
         coverImage: "/images/products/blades/special-shaped-knife.webp",
         tagline: "ANY GEOMETRY · ANY ALLOY",
         subtitle: "CUSTOM MANUFACTURING",
-        title: "SPECIAL-SHAPED BLADES",
+        title: "CUSTOM BLADES",
         ctaText: "VIEW CUSTOM SOLUTIONS",
         ctaHref: "/custom",
       },
@@ -268,7 +268,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                   <div
                     onMouseEnter={() => setActiveId(cat.id)}
                     onClick={onClose}
-                    className={`w-full text-left py-3 pl-4 border-l-2 font-mono text-[11px] font-bold tracking-widest uppercase transition-all duration-150 cursor-pointer ${
+                    className={`w-full text-left py-3 pl-4 border-l-2 font-mono text-[11px] font-bold tracking-wide transition-all duration-150 cursor-pointer ${
                       isActive
                         ? "text-[#001f4d] bg-slate-50 border-[#001f4d]"
                         : "text-slate-500 border-transparent hover:text-[#001f4d] hover:bg-slate-50 hover:border-[#001f4d]"
@@ -293,7 +293,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
         </div>
 
         {/* ── Column 2: Recommendation Matrix (55%) ─────────────────────── */}
-        <div className="w-[55%] flex-shrink-0 border-x border-slate-200 px-8">
+        <div className="w-[55%] flex-shrink-0 border-x border-slate-200 px-8 overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeId + "-grid"}

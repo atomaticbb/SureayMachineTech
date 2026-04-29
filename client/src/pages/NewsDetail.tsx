@@ -133,17 +133,17 @@ export default function NewsDetail() {
 
               <div className="grid gap-8 px-5 py-6 lg:grid-cols-[minmax(0,1fr)_minmax(440px,0.95fr)] lg:px-6 lg:py-8 lg:items-stretch">
                 <div className="max-w-4xl">
-                  <h1 className="text-[clamp(1.7rem,3.6vw,3rem)] font-black text-[#001f4d] leading-[1.02] tracking-tight max-w-[18ch]">
+                  <h1 className="text-[clamp(1.2rem,2.2vw,1.75rem)] font-bold text-[#001f4d] leading-[1.1] tracking-tight max-w-[28ch]">
                     {formatHeadingCase(article.title)}
                   </h1>
 
-                  <p className="mt-6 max-w-[65ch] text-[16px] lg:text-[18px] font-semibold text-slate-700 leading-relaxed">
+                  <p className="mt-6 max-w-[65ch] text-[14px] lg:text-[15px] text-slate-700 leading-relaxed">
                     {article.excerpt}
                   </p>
 
                   <div className="mt-8 grid gap-4 border-t border-slate-200 pt-5 sm:grid-cols-3">
                     <div>
-                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 mb-1">
                         Authored By
                       </p>
                       <p className="text-sm font-black tracking-wide text-[#001f4d]">
@@ -151,18 +151,18 @@ export default function NewsDetail() {
                       </p>
                     </div>
                     <div>
-                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 mb-1">
                         Classification
                       </p>
-                      <p className="text-sm font-black uppercase tracking-wide text-[#001f4d]">
+                      <p className="text-sm font-black tracking-wide text-[#001f4d]">
                         {article.tag}
                       </p>
                     </div>
                     <div>
-                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 uppercase mb-1">
+                      <p className="font-mono text-[9px] tracking-[0.22em] text-slate-400 mb-1">
                         Document Use
                       </p>
-                      <p className="text-sm font-black uppercase tracking-wide text-[#001f4d]">
+                      <p className="text-sm font-black tracking-wide text-[#001f4d]">
                         Buyer Reference
                       </p>
                     </div>
@@ -195,13 +195,13 @@ export default function NewsDetail() {
             ZONE 3 — The Asymmetrical Reading Grid
         ═══════════════════════════════════════════════════════════════════ */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
-          <div className="lg:grid lg:grid-cols-[220px_minmax(0,760px)] lg:justify-center gap-10 lg:gap-14">
+          <div className="lg:grid lg:grid-cols-[220px_1fr] gap-10 lg:gap-14">
             {/* ── Left: Document Navigator (sticky) ─────────────────────── */}
             <aside className="mb-10 lg:mb-0">
               <div className="lg:sticky lg:top-[110px] border border-slate-200 bg-white">
                 {/* Author */}
                 <div className="border-b border-slate-200 px-5 py-4">
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest mb-1">
                     Authored By
                   </p>
                   <p className="font-black text-sm text-[#001f4d] tracking-wide">
@@ -229,22 +229,22 @@ export default function NewsDetail() {
 
                 {/* Classification block */}
                 <div className="px-5 py-4">
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-3">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest mb-3">
                     Classification
                   </p>
-                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide uppercase">
+                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide">
                     {article.tag}
                   </p>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mt-3 mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest mt-3 mb-1">
                     Issued
                   </p>
-                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide uppercase">
+                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide">
                     {article.date}
                   </p>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mt-3 mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest mt-3 mb-1">
                     Read Time
                   </p>
-                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide uppercase">
+                  <p className="font-mono text-[10px] font-bold text-[#001f4d] tracking-wide">
                     {article.readTime}
                   </p>
                 </div>
@@ -259,7 +259,7 @@ export default function NewsDetail() {
                     return (
                       <h2
                         key={i}
-                        className="font-black text-[1.65rem] md:text-[2rem] text-[#001f4d] tracking-tight border-t border-slate-300 pt-8 mt-14 mb-6"
+                        className="font-bold text-[1.15rem] md:text-[1.3rem] text-[#001f4d] tracking-tight border-t border-slate-300 pt-8 mt-14 mb-6"
                       >
                         {formatHeadingCase(block.value)}
                       </h2>
@@ -268,7 +268,7 @@ export default function NewsDetail() {
                     return (
                       <h3
                         key={i}
-                        className="font-black text-[1.1rem] md:text-[1.25rem] text-[#001f4d] tracking-tight pt-1 mt-10 mb-4"
+                        className="font-semibold text-[1rem] md:text-[1.05rem] text-[#001f4d] tracking-tight pt-1 mt-10 mb-4"
                       >
                         {formatHeadingCase(block.value)}
                       </h3>
@@ -288,13 +288,13 @@ export default function NewsDetail() {
                     return (
                       <div
                         key={i}
-                        className="my-10 sm:my-12"
+                        className="my-8 sm:my-10"
                       >
-                        <div className="mx-auto max-w-2xl border border-slate-200 bg-white overflow-hidden">
+                        <div className="mx-auto max-w-lg border border-slate-200 bg-white overflow-hidden">
                           <img
                             src={block.value}
                             alt=""
-                            className="w-full object-cover brightness-95 contrast-110 saturate-75"
+                            className="w-full max-h-[360px] object-cover brightness-95 contrast-110 saturate-75"
                             loading="lazy"
                             decoding="async"
                             width={720}
@@ -312,7 +312,7 @@ export default function NewsDetail() {
                     return (
                       <p
                         key={i}
-                        className="max-w-[70ch] text-[16px] lg:text-[18px] leading-[1.9] text-slate-700 mb-6"
+                        className="text-[14px] lg:text-[15px] leading-[1.8] text-slate-700 mb-6"
                       >
                         {renderInlineLinks(block.value)}
                       </p>

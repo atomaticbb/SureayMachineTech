@@ -72,7 +72,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     tag: "PRODUCT GUIDE",
     date: "16.MAR.2026",
     title:
-      "D2 VS SKD-11 VS TUNGSTEN CARBIDE: A COMPLETE GUIDE TO CHOOSING INDUSTRIAL BLADE MATERIALS",
+      "D2 vs SKD-11 vs tungsten carbide: a complete guide to choosing industrial blade materials",
     excerpt:
       "Compare D2, SKD-11, and tungsten carbide industrial blade materials. Learn about hardness, wear resistance, toughness, cost, and best applications for industrial cutting knives.",
     image: "/images/news/choosing-industrial-blades-materials.webp",
@@ -215,7 +215,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     tag: "COMPANY UPDATES",
     date: "28.APR.2026",
     title:
-      "PRECISION MANUFACTURING DELIVERED: HIGH-PERFORMANCE METAL SHEAR BLADES READY FOR GLOBAL EXPORT",
+      "Precision manufacturing delivered: high-performance metal shear blades ready for global export",
     excerpt:
       "Sureay recently completed a large batch of custom metal shear blades (900x75x25mm), combining precision grinding, strict quality control, and export-grade VCI packaging for global scrap metal processing facilities.",
     image:
@@ -311,7 +311,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     tag: "TECH INNOVATION",
     date: "30.MAR.2026",
     title:
-      "THE RECYCLING BOOM: HOW ADVANCED SHREDDER METALLURGY MAXIMIZES MECHANICAL RECYCLING YIELDS",
+      "The recycling boom: how advanced shredder metallurgy maximizes mechanical recycling yields",
     excerpt:
       "Discover how upgrading your shredder blades from standard D2 to DC53 or H13 tool steel can prevent catastrophic blade failure, survive tramp metal impacts, and maximize your recycling plant's uptime.",
     image: "/images/news/shredder-machine-working.webp",
@@ -425,7 +425,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "facility-expansion-phase-iii",
     tag: "COMPANY UPDATES",
     date: "24.OCT.2024",
-    title: "GLOBAL FACILITY EXPANSION PHASE III",
+    title: "Global facility expansion phase III",
     excerpt:
       "Commissioning of our new 5,000 m² high-precision CNC grid expands heavy-duty shredder blade production capacity by 40%, establishing Sureay's largest single-facility output in its 16-year operational history.",
     image: "/images/about/factory-00.webp",
@@ -505,7 +505,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "high-hardness-metal-shear-guide",
     tag: "PRODUCT GUIDE",
     date: "11.MAR.2026",
-    title: "WHY CHOOSE HIGH-HARDNESS METAL SHEAR KNIVES?",
+    title: "Why choose high-hardness metal shear knives?",
     excerpt:
       "Enhance precision and longevity in heavy-duty fabrication. High-hardness shear blades deliver exceptional durability, accuracy, and operational efficiency in industrial metal cutting applications.",
     image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
@@ -655,7 +655,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "cryogenic-treatment-alloy-blades",
     tag: "TECH INNOVATION",
     date: "12.SEP.2024",
-    title: "ADVANCED CRYOGENIC TREATMENT FOR ALLOY BLADES",
+    title: "Advanced cryogenic treatment for alloy blades",
     excerpt:
       "Technical whitepaper on how deep cryogenic processing (-196°C) enhances wear resistance in plastic recycling applications.",
     image: "/images/process/heat-treatment.webp",
@@ -699,7 +699,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "k-show-2024-recycling-knives",
     tag: "EXHIBITIONS",
     date: "05.AUG.2024",
-    title: "K-SHOW 2024: NEXT-GEN RECYCLING KNIVES DEPLOYED",
+    title: "K-Show 2024: next-gen recycling knives deployed",
     excerpt:
       "Live demonstrations of our aggressively angled hook-tooth profiles engineered for high-throughput single shaft shredders.",
     image: "/images/process/cnc-precision-grinding.webp",
@@ -734,7 +734,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "tin-vs-chrome-coating",
     tag: "TECH INNOVATION",
     date: "28.JUL.2024",
-    title: "SURFACE METALLURGY: TIN VS. CHROME COATING",
+    title: "Surface metallurgy: TiN vs. chrome coating",
     excerpt:
       "A comparative metrology report on blade surface friction coefficients in high-humidity tissue paper converting environments.",
     image: "/images/common/Quality-Inspection.webp",
@@ -785,7 +785,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "iso-9001-recertification-2024",
     tag: "COMPANY UPDATES",
     date: "14.JUN.2024",
-    title: "ISO 9001:2015 RE-CERTIFICATION COMPLETED",
+    title: "ISO 9001:2015 re-certification completed",
     excerpt:
       "Zero non-conformances reported during the latest external audit of our Ma'anshan manufacturing facility.",
     image: "/images/about/factory.webp",
@@ -817,7 +817,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "log-saw-blade-bevel-angles",
     tag: "TECH INNOVATION",
     date: "02.MAY.2024",
-    title: "OPTIMIZING BEVEL ANGLES FOR LOG SAW BLADES",
+    title: "Optimizing bevel angles for log saw blades",
     excerpt:
       "Engineering guidelines for balancing edge sharpness and core toughness to prevent blade deflection during high-speed cutting.",
     image: "/images/products/blades/tissue-log-saw-blades-02.webp",
@@ -852,7 +852,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     tag: "MAINTENANCE GUIDE",
     date: "21.APR.2026",
     title:
-      "DAILY MAINTENANCE CHECKLIST: SCRAPER BLADES & FILTER PLATES FOR CONTINUOUS MELT FILTERS",
+      "Daily maintenance checklist: scraper blades & filter plates for continuous melt filters",
     excerpt:
       "A step-by-step daily, weekly, and monthly maintenance guide for continuous melt filter scraper blades and filter plates — with a printable inspection checklist to extend service life and eliminate unplanned downtime on PCR recycling lines.",
     image: "/images/products/blades/scraper-blades-01.webp",
@@ -1016,7 +1016,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     tag: "PRODUCT GUIDE",
     date: "23.APR.2026",
     title:
-      "ALLOY BLADE VS HIGH-SPEED STEEL: LIFESPAN & COST GUIDE FOR HIGH-SPEED PAPER CUTTERS",
+      "Alloy blade vs high-speed steel: lifespan & cost guide for high-speed paper cutters",
     excerpt:
       "Tungsten carbide alloy blades last 5–10× longer than high-speed steel on paper cutters — but is the higher upfront cost justified? A practical comparison of hardness, service life, and total cost of ownership to help you choose the right blade for your operation.",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
@@ -1136,7 +1136,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "chinaplas-2024-oem-partnerships",
     tag: "EXHIBITIONS",
     date: "18.APR.2024",
-    title: "CHINAPLAS DEBRIEF: OEM CO-ENGINEERING INITIATIVES",
+    title: "Chinaplas debrief: OEM co-engineering initiatives",
     excerpt:
       "Strategic partnerships formed with three top-tier European granulator manufacturers for custom blade geometry development.",
     image: "/images/common/cnc-machine.webp",
@@ -1166,11 +1166,114 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "blade-manufacturing-process",
+    tag: "PRODUCT GUIDE",
+    date: "29.APR.2026",
+    title:
+      "From steel to finished products: understanding the entire manufacturing process of mechanical blades",
+    excerpt:
+      "A high-quality mechanical blade requires multiple precision processes from raw steel to finished product. Sureay breaks down the entire standard manufacturing process step by step — helping you understand exactly how our quality is built, and how to evaluate the true capability of any blade supplier.",
+    image: "/images/news/laser-cutting.webp",
+    readTime: "6 MIN",
+    seoTitle:
+      "Mechanical Blade Manufacturing Process: From Steel to Finished Product | Sureay",
+    metaDescription:
+      "Learn the complete manufacturing process of industrial mechanical blades — raw material inspection, heat treatment, precision grinding, and quality control — explained by Sureay blade engineers.",
+    keywords:
+      "blade manufacturing process, industrial blade production, heat treatment blades, precision grinding, HSS blade, Cr12MoV, blade quality control",
+    relatedProductIds: [
+      "rotary-slitter-knives",
+      "paper-cutting-blades",
+      "granulator-blades",
+      "metal-shear-knives",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Behind every precision blade is a tightly controlled manufacturing chain. From the moment raw steel arrives at our facility to the moment a finished blade ships in VCI packaging, each step is governed by documented tolerances and inspection protocols. This article walks through the full process so you can see exactly where quality is built — and what to look for when evaluating suppliers.",
+      },
+      { type: "h2", value: "1. Raw material inspection" },
+      {
+        type: "paragraph",
+        value:
+          "Every production run begins with incoming material verification. Steel is checked for chemical composition, hardness, and surface condition before it enters the production line. Common materials include high-speed steel (HSS grades M2, M42), alloy tool steels (Cr12MoV, D2, DC53), and tungsten carbide composites. Skipping this step is the most common cause of inconsistent blade performance across a batch.",
+      },
+      { type: "h2", value: "2. Cutting and rough machining" },
+      {
+        type: "paragraph",
+        value:
+          "Steel coils or plates are cut to blank shape by stamping, laser cutting, or cold sawing depending on profile complexity and material thickness. Tight dimensional control at this stage is critical — micro-cracks or edge burrs introduced here can propagate through heat treatment and compromise the finished blade. For complex profiles, preliminary shaping is completed before the blank enters the heat treatment furnace.",
+      },
+      { type: "image", value: "/images/news/slitting-knives-set.webp" },
+      { type: "h2", value: "3. Heat treatment (core process)" },
+      {
+        type: "paragraph",
+        value:
+          "Heat treatment defines the functional hardness and toughness of the blade. The process involves controlled austenitizing, quenching, and one or more tempering cycles to achieve the target hardness range — typically HRC 58–65 for HSS and tool steels, and HRC 89+ for tungsten carbide grades. Temperature uniformity across the load must be held to ±5 °C; deviation causes hardness gradients and warpage that cannot be corrected downstream.",
+      },
+      {
+        type: "callout",
+        value:
+          "Quenching achieves maximum hardness through rapid cooling. Tempering follows immediately to relieve internal stress and restore toughness — preventing brittle fracture in service. Both steps are equally critical; quench without temper produces a hard but fragile blade.",
+      },
+      { type: "h2", value: "4. Precision grinding" },
+      {
+        type: "paragraph",
+        value:
+          "After heat treatment, the blade is ground to final geometry on surface grinders, cylindrical grinders, or CNC profile grinding centres. Flatness, parallelism, and thickness are controlled at the micron level. The quality of the ground surface directly determines cutting edge sharpness and service life — a blade with grinding chatter marks or heat checks will fail well before its theoretical wear limit.",
+      },
+      { type: "h2", value: "5. Precision machining and sharpening" },
+      {
+        type: "paragraph",
+        value:
+          "The cutting edge is ground to the specified bevel geometry — single-bevel, double-bevel, hollow-ground, or radius profile — depending on the application. Edge angle and symmetry control cutting resistance and edge retention. As a reference, guillotine blades for paper cutting typically use a bevel angle of 19°–23°. Final deburring and chamfering are carried out at this stage before inspection.",
+      },
+      { type: "image", value: "/images/news/slitting-blades-series.webp" },
+      { type: "h2", value: "6. Testing and quality control" },
+      {
+        type: "paragraph",
+        value:
+          "Every blade is inspected for hardness, dimensional accuracy, and edge integrity. High-speed rotary blades — such as large circular slitter knives and log saw blades — additionally undergo dynamic balance testing to prevent vibration at operating speed. Non-conforming parts are quarantined and scrapped. Critical production batches ship with a full inspection report covering material certificate, hardness readings, and CMM dimensional data.",
+      },
+      { type: "h2", value: "7. Surface treatment and rust prevention" },
+      {
+        type: "paragraph",
+        value:
+          "Finished blades are cleaned, degreased, and treated against corrosion. Treatment options include rust-preventive oil, phosphating, PVD coating (TiN, TiAlN), or chrome plating depending on the application environment. For export shipments, we use vapour-phase corrosion inhibitor (VCI) packaging as standard — particularly important for ocean freight where humidity and salt air present a real corrosion risk.",
+      },
+      { type: "h2", value: "8. Packaging and shipping" },
+      {
+        type: "paragraph",
+        value:
+          "Blades are individually wrapped or set-packed, labelled with material grade, dimensions, hardness, and batch number for full traceability. Export cartons are reinforced to prevent collision damage in transit, and storage requirements are marked on the outer packaging. Each shipment includes a packing list and, where required, a material test certificate and inspection report.",
+      },
+      { type: "h2", value: "Conclusion: why the process matters" },
+      {
+        type: "paragraph",
+        value:
+          "A rigorous manufacturing process delivers three things: consistency across mass production batches, extended service life through optimised heat treatment and grinding (wear resistance improvements of 30–200% over uncontrolled processes are common), and full traceability from steel coil to finished product so any issue can be isolated and resolved quickly.",
+      },
+      {
+        type: "callout",
+        value:
+          "Process flow: Steel → Cutting → Heat treatment → Rough grinding → Finish grinding → Edge sharpening → Inspection → Rust prevention → Packaging → Shipment",
+      },
+      { type: "h2", value: "Why choose Sureay?" },
+      {
+        type: "paragraph",
+        value:
+          "Sureay controls the full manufacturing chain in-house — from heat treatment furnaces to CNC profile grinding — without outsourcing critical processes. Our testing equipment includes hardness testers, optical projectors, and coordinate measuring machines, with material traceability maintained for every batch. With over 20 years focused exclusively on industrial blades, we serve the paper, recycling, metal processing, and food industries worldwide. If you have specific blade requirements or technical questions, contact us for full drawing-to-delivery technical cooperation.",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "blade-manufacturing-process": "lynn",
   "custom-metal-shear-blades-batch-production": "lynn",
   "facility-expansion-phase-iii": "lynn",
   "k-show-2024-recycling-knives": "lynn",
