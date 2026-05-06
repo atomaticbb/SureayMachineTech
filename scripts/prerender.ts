@@ -16,6 +16,7 @@ import { fileURLToPath } from "url";
 
 // tsx resolves .ts imports at runtime — no compilation step needed
 import { blades } from "../client/src/data/blades.ts";
+import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -40,6 +41,8 @@ const ROUTES: string[] = [
   "/news",
   // dynamic product pages — derived from static blade data
   ...blades.map(b => `/products/${b.id}`),
+  // dynamic category aggregation pages — derived from static category metadata
+  ...BLADE_CATEGORIES.map(c => `/categories/${c.slug}`),
   // dynamic news detail pages — derived from static article data
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
 ];

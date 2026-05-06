@@ -125,7 +125,7 @@ function MegaMenu({ onClose }: MegaMenuProps) {
                 {/* Sector Header */}
                 <div className="flex items-start gap-3 pb-3 border-b border-slate-200">
                   <Icon className="w-5 h-5 text-[#001f4d] mt-0.5 flex-shrink-0" />
-                  <h3 className="font-bold text-sm uppercase tracking-wide text-[#001f4d] leading-tight">
+                  <h3 className="font-bold text-sm  tracking-wide text-[#001f4d] leading-tight">
                     {sector.title}
                   </h3>
                 </div>
@@ -150,7 +150,7 @@ function MegaMenu({ onClose }: MegaMenuProps) {
 
         {/* Footer CTA */}
         <div className="mt-8 pt-6 border-t border-slate-200">
-          <p className="text-xs text-slate-500 uppercase tracking-wider">
+          <p className="text-xs text-slate-500  tracking-wider">
             Need a custom blade solution?{" "}
             <Link href="/contact">
               <a
@@ -213,7 +213,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
         {/* Industries & Products - Accordion */}
         <div>
-          <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+          <div className="text-xs font-bold text-slate-400  tracking-wider mb-3">
             Industries & Products
           </div>
           <div className="space-y-2">
@@ -290,7 +290,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <Link href="/contact">
           <a
             onClick={onClose}
-            className="block w-full bg-[#001f4d] hover:bg-[#003366] text-white font-bold text-sm uppercase tracking-wider px-6 py-3 rounded transition-colors duration-150 text-center"
+            className="block w-full bg-[#001f4d] hover:bg-[#003366] text-white font-bold text-sm  tracking-wider px-6 py-3 rounded transition-colors duration-150 text-center"
           >
             Get a Quote
           </a>
@@ -322,7 +322,7 @@ export default function HeaderIndustrial() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             <Link href="/">
-              <a className="text-sm font-semibold uppercase tracking-wide hover:text-slate-300 transition-colors duration-150">
+              <a className="text-sm font-semibold  tracking-wide hover:text-slate-300 transition-colors duration-150">
                 Home
               </a>
             </Link>
@@ -333,7 +333,7 @@ export default function HeaderIndustrial() {
               onMouseLeave={() => setIsMegaMenuOpen(false)}
               className="relative"
             >
-              <button className="flex items-center gap-1 text-sm font-semibold uppercase tracking-wide hover:text-slate-300 transition-colors duration-150">
+              <button className="flex items-center gap-1 text-sm font-semibold  tracking-wide hover:text-slate-300 transition-colors duration-150">
                 Industries & Products
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -345,13 +345,13 @@ export default function HeaderIndustrial() {
             </div>
 
             <Link href="/about">
-              <a className="text-sm font-semibold uppercase tracking-wide hover:text-slate-300 transition-colors duration-150">
+              <a className="text-sm font-semibold  tracking-wide hover:text-slate-300 transition-colors duration-150">
                 About
               </a>
             </Link>
 
             <Link href="/contact">
-              <a className="text-sm font-semibold uppercase tracking-wide hover:text-slate-300 transition-colors duration-150">
+              <a className="text-sm font-semibold  tracking-wide hover:text-slate-300 transition-colors duration-150">
                 Contact
               </a>
             </Link>
@@ -359,7 +359,7 @@ export default function HeaderIndustrial() {
 
           {/* Desktop CTA */}
           <Link href="/contact">
-            <a className="hidden lg:flex items-center gap-2 bg-white text-[#001f4d] hover:bg-slate-100 font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded transition-colors duration-150">
+            <a className="hidden lg:flex items-center gap-2 bg-white text-[#001f4d] hover:bg-slate-100 font-bold text-xs  tracking-wider px-5 py-2.5 rounded transition-colors duration-150">
               <Phone className="w-4 h-4" />
               Get a Quote
             </a>

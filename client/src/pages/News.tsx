@@ -13,12 +13,12 @@ import { getAllDispatches } from "@/data/news";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
 
-const CATEGORIES = [
-  "ALL",
-  "TECH INNOVATION",
-  "PRODUCT GUIDE",
-  "EXHIBITIONS",
-  "COMPANY UPDATES",
+const CATEGORIES: { value: string; label: string }[] = [
+  { value: "ALL", label: "All" },
+  { value: "TECH INNOVATION", label: "Tech Innovation" },
+  { value: "PRODUCT GUIDE", label: "Product Guide" },
+  { value: "EXHIBITIONS", label: "Exhibitions" },
+  { value: "COMPANY UPDATES", label: "Company Updates" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
@@ -46,7 +46,7 @@ export default function CorporateDispatches() {
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 1 — Hero
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="relative border-b border-slate-200 h-[340px] lg:h-[420px] overflow-hidden">
+        <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden">
           {/* Background image */}
           <img
             src="/images/hero/product-hero.webp"
@@ -58,10 +58,10 @@ export default function CorporateDispatches() {
           />
           {/* Text overlay */}
           <div className="relative h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-4xl">
-            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-white/50 mb-5">
+            <p className="text-[11px] font-semibold tracking-[0.28em]  text-white/50 mb-5">
               News & Industry Updates
             </p>
-            <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-white uppercase tracking-tight leading-none mb-6">
+            <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-white  tracking-tight leading-none mb-6">
               Articles
               <br />
               and News
@@ -81,15 +81,15 @@ export default function CorporateDispatches() {
             <div className="flex overflow-x-auto flex-nowrap w-full no-scrollbar">
               {CATEGORIES.map(cat => (
                 <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`flex-shrink-0 min-w-fit md:flex-1 px-8 py-4 border-r border-slate-200 text-center font-mono text-[10px] font-bold tracking-[0.2em] uppercase whitespace-nowrap transition-colors ${
-                    activeCategory === cat
+                  key={cat.value}
+                  onClick={() => setActiveCategory(cat.value)}
+                  className={`flex-shrink-0 min-w-fit md:flex-1 px-8 py-4 border-r border-slate-200 text-center font-mono text-[11px] font-semibold tracking-[0.16em] whitespace-nowrap transition-colors ${
+                    activeCategory === cat.value
                       ? "bg-[#001f4d] text-white"
                       : "bg-transparent text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
                   }`}
                 >
-                  {cat}
+                  {cat.label}
                 </button>
               ))}
             </div>
@@ -101,11 +101,11 @@ export default function CorporateDispatches() {
         ═══════════════════════════════════════════════════════════════════ */}
         <section className="py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8">
           {filteredDispatches.length === 0 ? (
-            <p className="font-mono text-sm text-slate-400 uppercase tracking-widest">
-              — NO DISPATCHES IN THIS CATEGORY —
+            <p className="font-mono text-sm text-slate-400 tracking-widest">
+              — No dispatches in this category —
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredDispatches.map(post => (
                 <Link key={post.id} href={`/news/${post.id}`}>
                   <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300">
@@ -121,7 +121,7 @@ export default function CorporateDispatches() {
                         height={450}
                       />
                       <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-3 py-1.5">
-                        <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest uppercase">
+                        <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest ">
                           {post.date}
                         </span>
                       </div>
@@ -129,10 +129,10 @@ export default function CorporateDispatches() {
 
                     {/* Content */}
                     <div className="p-7 flex flex-col flex-grow">
-                      <p className="text-[10px] font-semibold tracking-[0.22em] text-slate-400 uppercase mb-3">
+                      <p className="text-[10px] font-semibold tracking-[0.22em] text-slate-400  mb-3">
                         {post.tag}
                       </p>
-                      <h2 className="text-[18px] font-black text-[#001f4d] uppercase leading-tight tracking-tight mb-3 group-hover:text-[#1a4fa0] transition-colors duration-200">
+                      <h2 className="text-[18px] font-black text-[#001f4d]  leading-tight tracking-tight mb-3 group-hover:text-[#003366] transition-colors duration-200">
                         {post.title}
                       </h2>
                       <p className="text-[15px] text-slate-500 leading-relaxed mb-6 line-clamp-3">
@@ -141,7 +141,7 @@ export default function CorporateDispatches() {
 
                       {/* Footer */}
                       <div className="mt-auto pt-4 border-t border-slate-100">
-                        <span className="text-[12px] font-black tracking-[0.16em] uppercase text-[#001f4d] group-hover:text-[#1a4fa0] transition-colors">
+                        <span className="text-[12px] font-black tracking-[0.16em]  text-[#001f4d] group-hover:text-[#003366] transition-colors">
                           Continue Reading →
                         </span>
                       </div>

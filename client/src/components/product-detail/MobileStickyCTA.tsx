@@ -17,7 +17,7 @@ export default function MobileStickyCTA() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
-          className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white font-black text-sm uppercase tracking-widest rounded-none hover:bg-[#1ebe5d] transition-colors duration-200 shrink-0"
+          className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white font-black text-sm  tracking-widest rounded-none hover:bg-[#1ebe5d] transition-colors duration-200 shrink-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export default function MobileStickyCTA() {
               .getElementById("rfq")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="flex-1 text-center px-6 py-3.5 bg-[#001f4d] text-white font-black text-sm uppercase tracking-widest rounded-none hover:bg-[#003080] transition-colors duration-200"
+          className="flex-1 text-center px-6 py-3.5 bg-[#001f4d] text-white font-black text-sm  tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200"
         >
           Request Quote
         </a>

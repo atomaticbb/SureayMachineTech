@@ -12,16 +12,16 @@ export default function NewsGrid() {
         {/* Section header */}
         <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
-            <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
               Knowledge Hub
             </p>
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05]">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05]">
               News &amp; Articles
             </h2>
             <div className="w-14 h-[3px] bg-slate-300 mt-6" />
           </div>
           <Link href="/news">
-            <span className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#003366] hover:text-[#001f4d] transition-colors border-b-2 border-[#003366] hover:border-[#001f4d] pb-0.5">
+            <span className="inline-flex items-center gap-2 text-xs font-black  tracking-widest text-[#003366] hover:text-[#001f4d] transition-colors border-b-2 border-[#003366] hover:border-[#001f4d] pb-0.5">
               View All Dispatches
               <ArrowRight className="w-3.5 h-3.5" />
             </span>
@@ -43,7 +43,7 @@ export default function NewsGrid() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                   />
                   <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-3 py-1.5">
-                    <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest uppercase">
+                    <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest ">
                       {article.date}
                     </span>
                   </div>
@@ -51,10 +51,10 @@ export default function NewsGrid() {
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <p className="font-mono text-[9px] text-slate-400 tracking-[0.2em] mb-3 uppercase">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-[0.2em] mb-3 ">
                     {article.tag}
                   </p>
-                  <h3 className="text-lg font-black text-[#001f4d] uppercase leading-tight tracking-tight mb-3 group-hover:text-cyan-700 transition-colors">
+                  <h3 className="text-lg font-black text-[#001f4d] leading-tight tracking-tight mb-3 group-hover:text-cyan-700 transition-colors">
                     {article.title}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
@@ -63,7 +63,7 @@ export default function NewsGrid() {
 
                   {/* Footer */}
                   <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-100">
-                    <span className="font-mono text-[9px] text-slate-400 tracking-widest uppercase">
+                    <span className="font-mono text-[9px] text-slate-400 tracking-widest ">
                       READ TIME: {article.readTime}
                     </span>
                     <span className="font-black text-[#001f4d] text-lg leading-none group-hover:translate-x-1 transition-transform">

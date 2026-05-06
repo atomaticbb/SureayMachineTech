@@ -51,10 +51,10 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
       <div className="flex flex-col lg:flex-row gap-12 xl:gap-20 items-start">
         {/* ── Left: SEO Copy ──────────────────────────────────────── */}
         <div className="flex-1 min-w-0">
-          <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+          <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
             [ Product Intelligence ]
           </p>
-          <h2 className="font-black text-4xl text-[#001f4d] uppercase tracking-tight mb-8 leading-[1.05]">
+          <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8 leading-[1.05]">
             Material &amp; Process Excellence
           </h2>
 
@@ -76,7 +76,7 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
             <div className="border-l-4 border-[#001f4d] pl-5 space-y-3 mb-8 py-1">
               {materialSpec && (
                 <p className="text-sm text-slate-800 leading-relaxed">
-                  <span className="font-black text-[#001f4d] uppercase tracking-wide text-[11px]">
+                  <span className="font-black text-[#001f4d]  tracking-wide text-[11px]">
                     Material:{" "}
                   </span>
                   {materialSpec.value} — sourced from certified mill stock,
@@ -86,7 +86,7 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
               )}
               {hardnessSpec && (
                 <p className="text-sm text-slate-800 leading-relaxed">
-                  <span className="font-black text-[#001f4d] uppercase tracking-wide text-[11px]">
+                  <span className="font-black text-[#001f4d]  tracking-wide text-[11px]">
                     Hardness:{" "}
                   </span>
                   {hardnessSpec.value} achieved through in-house vacuum heat
@@ -111,10 +111,10 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-px border border-slate-200 bg-slate-200">
             {TRUST_POINTS.map(item => (
               <div key={item.stat} className="bg-white px-4 py-5 text-center">
-                <p className="font-black text-sm text-[#001f4d] uppercase tracking-tight leading-tight mb-1">
+                <p className="font-black text-sm text-[#001f4d]  tracking-tight leading-tight mb-1">
                   {item.stat}
                 </p>
-                <p className="font-mono text-[9px] text-slate-500 uppercase tracking-widest">
+                <p className="font-mono text-[9px] text-slate-500  tracking-widest">
                   {item.label}
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
                 className="w-full aspect-[4/5] bg-slate-100 flex flex-col items-center justify-center gap-2"
                 style={DOT_GRID_STYLE}
               >
-                <p className="font-mono text-[9px] text-slate-400 uppercase tracking-widest text-center px-6 leading-relaxed">
+                <p className="font-mono text-[9px] text-slate-400  tracking-widest text-center px-6 leading-relaxed">
                   [ FACTORY / INSPECTION PHOTOGRAPH ]<br />
                   REF: {blade.id.toUpperCase()}
                 </p>
@@ -146,7 +146,7 @@ export default function ProductOverview({ blade }: ProductOverviewProps) {
             )}
             <div className="px-4 py-2.5 bg-white border-t border-slate-100 flex items-center gap-2">
               <span className="text-[#001f4d] text-[10px]">■</span>
-              <p className="font-mono text-[9px] text-slate-400 uppercase tracking-widest">
+              <p className="font-mono text-[9px] text-slate-400  tracking-widest">
                 In-House Production · QC Verified · {blade.id.toUpperCase()}
               </p>
             </div>

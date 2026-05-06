@@ -24,10 +24,10 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Section header */}
-      <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ Technical Audit ]
       </p>
-      <h2 className="font-black text-4xl text-[#001f4d] uppercase tracking-tight mb-8">
+      <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8">
         Engineering Advantages
       </h2>
 
@@ -43,13 +43,13 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
             >
               {/* Index tag */}
               <div className="mb-4">
-                <span className="font-mono text-[10px] text-[#003366] font-bold uppercase bg-[#003366]/10 px-2 py-0.5 tracking-widest">
+                <span className="font-mono text-[10px] text-[#003366] font-bold  bg-[#003366]/10 px-2 py-0.5 tracking-widest">
                   {String(i + 1).padStart(2, "0")} — {comp.tag}
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-base font-black text-[#001f4d] uppercase tracking-tight leading-tight mb-4">
+              <h3 className="text-base font-black text-[#001f4d]  tracking-tight leading-tight mb-4">
                 {comp.title}
               </h3>
 

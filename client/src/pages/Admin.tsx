@@ -406,7 +406,7 @@ function DetailView({
         <div className="px-4 md:px-6 py-5 space-y-6">
           {/* ── 客户档案 ── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase mb-3">
+            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               客户档案
             </p>
             <div className="space-y-2">
@@ -452,7 +452,7 @@ function DetailView({
 
           {/* ── 询盘内容 ── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase mb-3">
+            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               询盘内容
             </p>
             <div className="border-l-4 border-primary bg-muted/30 px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap text-foreground">
@@ -465,7 +465,7 @@ function DetailView({
             <>
               <Separator />
               <section>
-                <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase mb-3">
+                <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
                   技术图纸
                 </p>
                 <div className="border border-border bg-muted/20 p-4 flex items-start gap-4">
@@ -494,7 +494,7 @@ function DetailView({
 
           {/* ── 跟进时间轴（最新在上）── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase mb-3">
+            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               跟进时间轴
               {sortedFollowUps.length > 0 && (
                 <span className="ml-2 normal-case font-normal">
@@ -559,7 +559,7 @@ function DetailView({
 
       {/* ── 添加跟进记录（底部固定）── */}
       <div className="shrink-0 border-t bg-background p-4 space-y-3">
-        <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground uppercase">
+        <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground ">
           添加跟进记录
         </p>
 
@@ -616,7 +616,7 @@ function DetailView({
             size="sm"
             onClick={handleSubmit}
             disabled={submitting || !fuContent.trim()}
-            className="h-8 text-xs font-black tracking-wider uppercase gap-2"
+            className="h-8 text-xs font-black tracking-wider  gap-2"
           >
             <Send className="h-3 w-3" />
             {submitting ? "提交中..." : "添加跟进"}
@@ -1046,7 +1046,7 @@ export default function Admin() {
           <div className="flex-1 overflow-y-auto">
             <div className="p-6 max-w-6xl mx-auto">
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-sm font-black tracking-[0.2em] uppercase text-muted-foreground">
+                <h2 className="text-sm font-black tracking-[0.2em]  text-muted-foreground">
                   页面访问日志
                 </h2>
                 <Button
@@ -1078,19 +1078,19 @@ export default function Admin() {
                   <Table>
                     <TableHeader>
                       <TableRow className="bg-muted/30">
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                        <TableHead className="text-[10px] font-black tracking-widest ">
                           事件
                         </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                        <TableHead className="text-[10px] font-black tracking-widest ">
                           页面
                         </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                        <TableHead className="text-[10px] font-black tracking-widest ">
                           IP 地址
                         </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase hidden lg:table-cell">
+                        <TableHead className="text-[10px] font-black tracking-widest  hidden lg:table-cell">
                           用户代理
                         </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest uppercase">
+                        <TableHead className="text-[10px] font-black tracking-widest ">
                           时间
                         </TableHead>
                       </TableRow>

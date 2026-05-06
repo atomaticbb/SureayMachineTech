@@ -18,72 +18,15 @@ import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight, Upload } from "lucide-react";
 import { INDUSTRY_MENU_DATA } from "./MegaMenu";
+import { BLADE_CATEGORIES } from "../../data/blade-categories";
+import { blades } from "../../data/blades";
 
 // ── Static nav links ─────────────────────────────────────────────────────────
 const NAV_LINKS = [
-  { label: "CUSTOM", path: "/custom" },
-  { label: "NEWS", path: "/news" },
-  { label: "ABOUT US", path: "/about" },
-  { label: "CONTACT US", path: "/contact" },
-];
-
-// ── Product category groups for mobile "By Category" panel ───────────────────
-const PRODUCT_GROUPS = [
-  {
-    group: "CUTTING TOOLING",
-    items: [
-      {
-        label: "Circular Slitting Knives",
-        href: "/products/rotary-slitter-knives",
-      },
-      {
-        label: "Metal Strip & Coil Slitters",
-        href: "/products/metal-foil-strip-slitter-knives",
-      },
-      {
-        label: "Coil Slitting Knives",
-        href: "/products/metal-coil-slitting-knives",
-      },
-      { label: "Metal Shear Knives", href: "/products/metal-shear-knives" },
-      {
-        label: "Cold Circular Saw Blades",
-        href: "/products/metal-cold-saw-blades",
-      },
-    ],
-  },
-  {
-    group: "SHREDDING & RECYCLING",
-    items: [
-      {
-        label: "Twin-Shaft Shredder Blades",
-        href: "/products/twin-shaft-blades-recycling",
-      },
-      { label: "Tire Shredder Blades", href: "/products/tire-shredder-blades" },
-      { label: "Granulator Knives", href: "/products/granulator-blades" },
-      {
-        label: "Single-Shaft Rotor Inserts",
-        href: "/products/single-shaft-rotor-inserts",
-      },
-      {
-        label: "Single-Shaft Bed Knives",
-        href: "/products/single-shaft-bed-knives",
-      },
-    ],
-  },
-  {
-    group: "PAPER CONVERTING",
-    items: [
-      {
-        label: "Tissue Log Saw Blades",
-        href: "/products/tissue-log-saw-blades",
-      },
-      { label: "Paper Cutting Blades", href: "/products/paper-cutting-blades" },
-      {
-        label: "Three-Knife Trimmer",
-        href: "/products/three-knife-trimmer-blades",
-      },
-    ],
-  },
+  { label: "Custom", path: "/custom" },
+  { label: "News", path: "/news" },
+  { label: "About", path: "/about" },
+  { label: "Contact", path: "/contact" },
 ];
 
 // ── Sharp icons ───────────────────────────────────────────────────────────────
@@ -160,8 +103,88 @@ function CloseIcon({ className }: { className?: string }) {
   );
 }
 
-// ── Products Mega Menu ────────────────────────────────────────────────────────
-function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
+// ── Products Category Menu — flat 4×2 image grid, scan-and-click, no drilldown
+//   Designed to contrast with IndustryMegaMenu (drill-down). All 8 categories
+//   are visible at first glance; the image is the primary identifier — users
+//   recognise blade families by silhouette, not by typed taxonomy.
+function ProductsCategoryMenu({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key="products-scan"
+          className="absolute top-0 left-0 h-[2px] bg-[#003366] pointer-events-none"
+          initial={{ width: "0%" }}
+          animate={{ width: "100%" }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+        />
+      </AnimatePresence>
+
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7">
+        {/* Header strip */}
+        <div className="flex items-end justify-between mb-5 pb-4 border-b border-slate-200">
+          <div>
+            <p className="font-mono text-[12px] font-bold text-slate-700 tracking-[0.18em] mb-1">
+              Browse by Product Type
+            </p>
+          </div>
+          <Link href="/products">
+            <a
+              onClick={onClose}
+              className="font-mono text-[14px] font-bold text-[#003366] tracking-[0.18em] hover:text-[#001f4d] cursor-pointer"
+            >
+              → All Products
+            </a>
+          </Link>
+        </div>
+
+        {/* 4×2 image-led card grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
+          className="grid grid-cols-4 gap-x-4 gap-y-5"
+        >
+          {BLADE_CATEGORIES.map(c => {
+            const variantCount = blades.filter(
+              b => b.category === c.category
+            ).length;
+            return (
+              <Link key={c.slug} href={`/categories/${c.slug}`}>
+                <a
+                  onClick={onClose}
+                  className="group cursor-pointer text-center"
+                >
+                  <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
+                    <img
+                      src={c.heroImage}
+                      alt={c.shortName}
+                      loading="lazy"
+                      decoding="async"
+                      width={144}
+                      height={128}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <p className="font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] tracking-tight transition-colors">
+                    {c.shortName}
+                    <span className="ml-1.5 font-mono text-[12px] font-normal text-slate-600">
+                      · {variantCount} products
+                    </span>
+                  </p>
+                </a>
+              </Link>
+            );
+          })}
+        </motion.div>
+      </div>
+    </div>
+  );
+}
+
+// ── Industry Mega Menu (sector-grouped product image grid) ──────────────────
+function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const categories = INDUSTRY_MENU_DATA.categories;
   const active = categories[activeIdx];
@@ -183,7 +206,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7 flex gap-0">
         {/* ── Col 1: Browse by Industry (20%) ──────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col border-r border-slate-200 pr-6">
-          <p className="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-[0.28em] mb-4">
+          <p className="font-mono text-[12px] font-bold text-slate-700 tracking-[0.18em] mb-4">
             Browse by Industry
           </p>
 
@@ -204,7 +227,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                         : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#001f4d]"
                     }`}
                   >
-                    <span className={`text-[11px] font-bold uppercase tracking-[0.12em] leading-tight ${isCustom ? "font-black" : ""}`}>
+                    <span className={`text-[12px] font-bold tracking-[0.12em] leading-tight ${isCustom ? "font-black" : ""}`}>
                       {cat.title}
                     </span>
                     <ChevronRight
@@ -224,7 +247,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
           <Link href="/products">
             <div
               onClick={onClose}
-              className="mt-5 font-mono text-[11px] font-bold text-[#003366] uppercase tracking-[0.22em] hover:underline cursor-pointer pl-3"
+              className="mt-5 font-mono text-[14px] font-bold text-[#003366] tracking-[0.22em] hover:underline cursor-pointer pl-3"
             >
               → All Products
             </div>
@@ -260,7 +283,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                   </div>
                   <p
                     onClick={onClose}
-                    className="font-black text-[12px] text-[#001f4d] uppercase tracking-tight leading-tight pt-2 text-center"
+                    className="font-black text-[14px] text-[#001f4d] tracking-tight leading-tight pt-2 text-center"
                   >
                     Special-Shaped &amp; Custom Profile Blades
                   </p>
@@ -268,7 +291,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
                 {/* Right: profile types */}
                 <div className="w-[25%] flex-shrink-0 flex flex-col pl-4">
-                  <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.28em] mb-2">
+                  <p className="font-mono text-[12px] text-slate-400 tracking-[0.28em] mb-2">
                     Profile Types
                   </p>
                   {[
@@ -286,7 +309,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                       className="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0"
                     >
                       <span className="w-[3px] h-3 bg-[#001f4d] flex-shrink-0" />
-                      <span className="text-[13px] text-slate-600 leading-tight">
+                      <span className="text-[12px] text-slate-600 leading-tight">
                         {p}
                       </span>
                     </div>
@@ -319,7 +342,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
-                      <p className="font-black text-[11px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
+                      <p className="font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
                         {item.name}
                       </p>
                     </div>
@@ -330,6 +353,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
           </AnimatePresence>
         </div>
       </div>
+
     </div>
   );
 }
@@ -338,17 +362,20 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 export default function Navbar() {
   const [location, navigate] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [megaOpen, setMegaOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
+  const [industryOpen, setIndustryOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
-  const [mobileProdTab, setMobileProdTab] = useState<"industry" | "category">(
-    "industry"
-  );
+  const [mobileIndustry, setMobileIndustry] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
-  const megaCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+  const productsCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined
+  );
+  const industryCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
     undefined
   );
   const lastProdClickTime = useRef(0);
+  const lastIndClickTime = useRef(0);
 
   // Hide on scroll-down, reveal on scroll-up
   useEffect(() => {
@@ -359,7 +386,8 @@ export default function Navbar() {
       } else if (y > lastScrollY.current + 4) {
         setHidden(true);
         setMobileOpen(false);
-        setMegaOpen(false);
+        setProductsOpen(false);
+        setIndustryOpen(false);
       } else if (y < lastScrollY.current - 4) {
         setHidden(false);
       }
@@ -382,37 +410,67 @@ export default function Navbar() {
     setMobileOpen(false);
   }, [location]);
 
-  // Debounced hover handlers
-  const openMega = () => {
-    clearTimeout(megaCloseTimer.current);
-    setMegaOpen(true);
+  // Debounced hover handlers — Products (categories) dropdown
+  const openProducts = () => {
+    clearTimeout(productsCloseTimer.current);
+    clearTimeout(industryCloseTimer.current);
+    setIndustryOpen(false);
+    setProductsOpen(true);
   };
-  const closeMega = () => {
-    megaCloseTimer.current = setTimeout(() => setMegaOpen(false), 120);
+  const closeProducts = () => {
+    productsCloseTimer.current = setTimeout(
+      () => setProductsOpen(false),
+      120
+    );
+  };
+
+  // Debounced hover handlers — Industry mega menu
+  const openIndustry = () => {
+    clearTimeout(industryCloseTimer.current);
+    clearTimeout(productsCloseTimer.current);
+    setProductsOpen(false);
+    setIndustryOpen(true);
+  };
+  const closeIndustry = () => {
+    industryCloseTimer.current = setTimeout(
+      () => setIndustryOpen(false),
+      120
+    );
   };
 
   const handleProductsClick = () => {
     const now = Date.now();
     if (now - lastProdClickTime.current < 300) {
-      setMegaOpen(false);
+      setProductsOpen(false);
       navigate("/products");
     }
     lastProdClickTime.current = now;
   };
 
+  const handleIndustryClick = () => {
+    const now = Date.now();
+    if (now - lastIndClickTime.current < 300) {
+      setIndustryOpen(false);
+      navigate("/converting-industry");
+    }
+    lastIndClickTime.current = now;
+  };
+
   const isActive = (path: string) => location === path;
-  const isProducts =
-    location.startsWith("/products") || location.startsWith("/industry");
+  const isProductsRoute =
+    location.startsWith("/products") || location.startsWith("/categories");
+  const isIndustryRoute =
+    location.endsWith("-industry") || location === "/custom";
 
   const linkCls = (active: boolean) =>
-    `text-[13px] font-medium tracking-[0.08em] uppercase transition-colors cursor-pointer ${
+    `text-[14px] font-medium transition-colors cursor-pointer ${
       active ? "text-[#003366]" : "text-slate-500 hover:text-[#003366]"
     }`;
 
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-transform duration-300 ease-in-out ${
+        className={`font-nav fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200 shadow-sm transition-transform duration-300 ease-in-out ${
           hidden ? "-translate-y-full" : "translate-y-0"
         }`}
       >
@@ -428,33 +486,49 @@ export default function Navbar() {
                   width={64}
                   height={64}
                 />
-                <span className="font-black text-[13px] tracking-[0.12em] text-[#001f4d] uppercase leading-none">
+                <span className="font-black text-[14px] tracking-[0.12em] text-[#001f4d]  leading-none">
                   SUREAY BLADES
                 </span>
               </div>
             </Link>
 
             {/* ── Desktop nav ────────────────────────────────────────────── */}
-            <div className="hidden md:flex items-center gap-10">
+            <div className="hidden md:flex items-center gap-8">
               <Link href="/">
-                <span className={linkCls(isActive("/"))}>HOME</span>
+                <span className={linkCls(isActive("/"))}>Home</span>
               </Link>
 
-              {/* Products — unified mega menu trigger */}
-              <div onMouseEnter={openMega} onMouseLeave={closeMega}>
+              {/* Products — category aggregation dropdown */}
+              <div onMouseEnter={openProducts} onMouseLeave={closeProducts}>
                 <button
-                  className={`${linkCls(isProducts || megaOpen)} flex items-center gap-1`}
+                  className={`${linkCls(isProductsRoute || productsOpen)} flex items-center gap-1`}
                   aria-haspopup="true"
-                  aria-expanded={megaOpen}
+                  aria-expanded={productsOpen}
                   onClick={handleProductsClick}
                   onDoubleClick={() => {
-                    setMegaOpen(false);
+                    setProductsOpen(false);
                     navigate("/products");
                   }}
                 >
-                  PRODUCTS
+                  Products
                   <ChevronDown
-                    className={`w-3 h-3 transition-transform duration-200 ${megaOpen ? "rotate-180" : ""}`}
+                    className={`w-3 h-3 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""}`}
+                    strokeWidth={2.5}
+                  />
+                </button>
+              </div>
+
+              {/* Industry — sector-grouped product mega menu */}
+              <div onMouseEnter={openIndustry} onMouseLeave={closeIndustry}>
+                <button
+                  className={`${linkCls(isIndustryRoute || industryOpen)} flex items-center gap-1`}
+                  aria-haspopup="true"
+                  aria-expanded={industryOpen}
+                  onClick={handleIndustryClick}
+                >
+                  Industry
+                  <ChevronDown
+                    className={`w-3 h-3 transition-transform duration-200 ${industryOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
                   />
                 </button>
@@ -470,8 +544,7 @@ export default function Navbar() {
 
               <Link
                 href="/contact"
-                className="inline-block bg-[#003366] hover:bg-[#004488] text-white text-[13px] font-black
-                           tracking-[0.18em] uppercase px-5 py-2.5 rounded-none transition-colors duration-200 shadow-sm"
+                className="inline-block bg-[#003366] hover:bg-[#001f4d] text-white text-[12px] font-bold tracking-wide px-4 py-2 rounded-none transition-colors duration-200 shadow-sm"
               >
                 GET A QUOTE
               </Link>
@@ -488,18 +561,36 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* ── Products Mega Menu ─────────────────────────────────────────── */}
+        {/* ── Products Category Dropdown ─────────────────────────────────── */}
         <AnimatePresence>
-          {megaOpen && (
+          {productsOpen && (
             <motion.div
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.18, ease: "easeOut" }}
-              onMouseEnter={openMega}
-              onMouseLeave={closeMega}
+              onMouseEnter={openProducts}
+              onMouseLeave={closeProducts}
             >
-              <ProductsMegaMenu onClose={() => setMegaOpen(false)} />
+              <ProductsCategoryMenu
+                onClose={() => setProductsOpen(false)}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* ── Industry Mega Menu ─────────────────────────────────────────── */}
+        <AnimatePresence>
+          {industryOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.18, ease: "easeOut" }}
+              onMouseEnter={openIndustry}
+              onMouseLeave={closeIndustry}
+            >
+              <IndustryMegaMenu onClose={() => setIndustryOpen(false)} />
             </motion.div>
           )}
         </AnimatePresence>
@@ -509,7 +600,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            className="fixed inset-0 z-[60] bg-[#001f4d] flex flex-col md:hidden"
+            className="font-nav fixed inset-0 z-[60] bg-[#001f4d] flex flex-col md:hidden"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -526,7 +617,7 @@ export default function Navbar() {
                     width={64}
                     height={64}
                   />
-                  <span className="font-black text-[11px] tracking-[0.12em] text-white uppercase leading-none">
+                  <span className="font-black text-[11px] tracking-[0.12em] text-white  leading-none">
                     SUREAY BLADES
                   </span>
                 </div>
@@ -545,20 +636,20 @@ export default function Navbar() {
               {/* HOME */}
               <Link href="/">
                 <div className="py-5 border-b border-white/10 cursor-pointer group">
-                  <span className="text-2xl font-black uppercase tracking-widest text-white group-hover:text-white/70 transition-colors">
-                    HOME
+                  <span className="text-2xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
+                    Home
                   </span>
                 </div>
               </Link>
 
-              {/* ── PRODUCTS accordion ─────────────────────────────────── */}
+              {/* ── PRODUCTS accordion (8 category aggregation pages) ───── */}
               <div className="border-b border-white/10">
                 <button
                   className="w-full flex items-center justify-between py-5 cursor-pointer group"
                   onClick={() => setMobileProduct(v => !v)}
                 >
                   <span
-                    className={`text-2xl font-black uppercase tracking-widest transition-colors ${
+                    className={`text-2xl font-black  tracking-widest transition-colors ${
                       mobileProduct
                         ? "text-white"
                         : "text-white group-hover:text-white/70"
@@ -583,66 +674,77 @@ export default function Navbar() {
                       transition={{ duration: 0.25, ease: "easeInOut" }}
                       className="overflow-hidden"
                     >
-                      {/* Tab switcher */}
-                      <div className="flex mb-4 border border-white/20">
-                        {(["industry", "category"] as const).map(tab => (
-                          <button
-                            key={tab}
-                            onClick={() => setMobileProdTab(tab)}
-                            className={`flex-1 py-2 font-mono text-[10px] font-bold uppercase tracking-[0.18em] transition-colors ${
-                              mobileProdTab === tab
-                                ? "bg-white text-[#001f4d]"
-                                : "text-white/50 hover:text-white"
-                            }`}
-                          >
-                            {tab === "industry" ? "By Industry" : "By Category"}
-                          </button>
-                        ))}
-                      </div>
-
-                      {/* By Industry panel — sourced from INDUSTRY_MENU_DATA */}
-                      {mobileProdTab === "industry" && (
-                        <div className="pb-5">
-                          {INDUSTRY_MENU_DATA.categories.map(cat => {
-                            const isCustom = cat.id === "custom-profile";
-                            return (
-                              <Link key={cat.id} href={cat.featured.ctaHref}>
-                                <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-semibold tracking-[0.1em] uppercase transition-colors cursor-pointer ${
-                                  isCustom
-                                    ? "mt-1 border-l-2 border-white/40 font-black text-white/80 hover:text-white hover:border-white"
-                                    : "border-white/20 text-white/60 hover:text-white hover:border-white/60"
-                                }`}>
-                                  {cat.title}
-                                </div>
-                              </Link>
-                            );
-                          })}
-                        </div>
-                      )}
-
-                      {/* By Category panel */}
-                      {mobileProdTab === "category" && (
-                        <div className="pb-5">
-                          {PRODUCT_GROUPS.map(group => (
-                            <div key={group.group} className="mb-5">
-                              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30 mb-2 pl-4 border-l border-white/20">
-                                {group.group}
-                              </p>
-                              {group.items.map(item => (
-                                <Link key={item.label} href={item.href}>
-                                  <div className="py-2 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em] uppercase text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
-                                    {item.label}
-                                  </div>
-                                </Link>
-                              ))}
+                      <div className="pb-5">
+                        {BLADE_CATEGORIES.map(c => (
+                          <Link key={c.slug} href={`/categories/${c.slug}`}>
+                            <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
+                              {c.shortName}
                             </div>
-                          ))}
-                        </div>
-                      )}
+                          </Link>
+                        ))}
+                        <Link href="/products">
+                          <div className="mt-3 ml-4 font-mono text-[10px] font-bold tracking-[0.22em]  text-white/40 hover:text-white cursor-pointer">
+                            → All Variants
+                          </div>
+                        </Link>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              {/* ── INDUSTRY accordion (sector landing pages) ──────────── */}
+              <div className="border-b border-white/10">
+                <button
+                  className="w-full flex items-center justify-between py-5 cursor-pointer group"
+                  onClick={() => setMobileIndustry(v => !v)}
+                >
+                  <span
+                    className={`text-2xl font-black  tracking-widest transition-colors ${
+                      mobileIndustry
+                        ? "text-white"
+                        : "text-white group-hover:text-white/70"
+                    }`}
+                  >
+                    INDUSTRY
+                  </span>
+                  <ChevronDown
+                    className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
+                      mobileIndustry ? "rotate-180 text-white" : ""
+                    }`}
+                    strokeWidth={2.5}
+                  />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {mobileIndustry && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.25, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pb-5">
+                        {INDUSTRY_MENU_DATA.categories.map(cat => {
+                          const isCustom = cat.id === "custom-profile";
+                          return (
+                            <Link key={cat.id} href={cat.featured.ctaHref}>
+                              <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-semibold tracking-[0.1em]  transition-colors cursor-pointer ${
+                                isCustom
+                                  ? "mt-1 border-l-2 border-white/40 font-black text-white/80 hover:text-white hover:border-white"
+                                  : "border-white/20 text-white/60 hover:text-white hover:border-white/60"
+                              }`}>
+                                {cat.title}
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
 
                       {/* Upload CAD shortcut */}
                       <Link href="/contact">
-                        <div className="mb-5 flex items-center gap-2 pl-4 border-l-2 border-white/40 text-[11px] font-black tracking-[0.18em] uppercase text-white/50 hover:text-white hover:border-white transition-colors cursor-pointer">
+                        <div className="mb-5 flex items-center gap-2 pl-4 border-l-2 border-white/40 text-[11px] font-black tracking-[0.18em]  text-white/50 hover:text-white hover:border-white transition-colors cursor-pointer">
                           <Upload className="w-3 h-3" strokeWidth={2} />
                           Upload CAD →
                         </div>
@@ -656,7 +758,7 @@ export default function Navbar() {
               {NAV_LINKS.map(item => (
                 <Link key={item.path} href={item.path}>
                   <div className="py-5 border-b border-white/10 cursor-pointer group">
-                    <span className="text-2xl font-black uppercase tracking-widest text-white group-hover:text-white/70 transition-colors">
+                    <span className="text-2xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
                       {item.label}
                     </span>
                   </div>
@@ -667,11 +769,11 @@ export default function Navbar() {
             {/* ── Drawer Footer CTA ─────────────────────────────────────── */}
             <div className="flex-shrink-0 px-6 py-6 border-t border-white/10">
               <Link href="/contact">
-                <div className="w-full bg-white text-[#001f4d] text-[13px] font-black tracking-[0.22em] uppercase py-4 text-center cursor-pointer hover:bg-slate-100 transition-colors">
+                <div className="w-full bg-white text-[#001f4d] text-[13px] font-black tracking-[0.22em]  py-4 text-center cursor-pointer hover:bg-slate-100 transition-colors">
                   GET A QUOTE
                 </div>
               </Link>
-              <p className="mt-4 font-mono text-[10px] text-white/25 uppercase tracking-[0.2em] text-center">
+              <p className="mt-4 font-mono text-[10px] text-white/25  tracking-[0.2em] text-center">
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
             </div>

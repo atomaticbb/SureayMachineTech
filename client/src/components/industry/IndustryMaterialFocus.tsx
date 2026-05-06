@@ -18,10 +18,10 @@ export default function IndustryMaterialFocus({ materials }: Props) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
+          <p className="font-bold text-[11px] text-slate-400  tracking-[0.45em] mb-3">
             Application Engineering
           </p>
-          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.0]">
+          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d]  tracking-tight leading-[1.0]">
             Materials We Process.
           </h2>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
@@ -49,30 +49,30 @@ export default function IndustryMaterialFocus({ materials }: Props) {
                 <div className="flex justify-end mb-3">
                   <span
                     style={MONO}
-                    className="text-[10px] text-slate-400 uppercase"
+                    className="text-[10px] text-slate-400 "
                   >
                     REF ID: {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
 
-                <h3 className="font-black text-lg text-[#001f4d] uppercase tracking-tight mb-4">
+                <h3 className="font-black text-lg text-[#001f4d]  tracking-tight mb-4">
                   {mat.name}
                 </h3>
 
                 <div className="mt-auto">
                   <div className="flex items-baseline justify-between py-2.5 border-t border-slate-100">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em]">
+                    <span className="text-[10px] font-bold text-slate-400  tracking-[0.25em]">
                       Abrasion
                     </span>
                     <span
                       style={MONO}
-                      className="text-[13px] font-black text-[#001f4d] uppercase"
+                      className="text-[13px] font-black text-[#001f4d] "
                     >
                       {mat.abrasion}
                     </span>
                   </div>
                   <div className="flex items-baseline justify-between py-2.5 border-t border-slate-100">
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em]">
+                    <span className="text-[10px] font-bold text-slate-400  tracking-[0.25em]">
                       Grade
                     </span>
                     <span

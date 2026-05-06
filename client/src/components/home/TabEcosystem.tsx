@@ -13,11 +13,11 @@ export default function TabEcosystem() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Header */}
         <div className="mb-10 lg:mb-14">
-          <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+          <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
             Markets We Serve
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-xl">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] max-w-xl">
               Choose Your Industry. <br />
               Find Your Blade.
             </h2>
@@ -62,7 +62,7 @@ export default function TabEcosystem() {
                 />
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-end h-full p-4 lg:p-5">
-                  <p className="text-white font-black text-sm lg:text-base uppercase tracking-wide leading-tight">
+                  <p className="text-white font-black text-sm lg:text-base  tracking-wide leading-tight">
                     {eco.industry}
                   </p>
                   {isActive && <div className="w-8 h-[3px] bg-white mt-2" />}
@@ -87,10 +87,10 @@ export default function TabEcosystem() {
                 <div className="border-t-2 border-[#003366] pt-8 flex flex-col lg:flex-row gap-8 lg:gap-12">
                   {/* Left — Text & Specs */}
                   <div className="w-full lg:w-3/5 flex flex-col justify-center">
-                    <p className="text-slate-400 font-bold text-[10px] uppercase tracking-[0.35em] mb-2">
+                    <p className="text-slate-400 font-bold text-[10px]  tracking-[0.35em] mb-2">
                       {active.industry}
                     </p>
-                    <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-3">
+                    <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] tracking-tight leading-[1.05] mb-3">
                       {active.label}
                     </h3>
 
@@ -98,7 +98,7 @@ export default function TabEcosystem() {
                       {active.desc}
                     </p>
 
-                    <p className="text-[11px] font-bold text-[#001f4d] uppercase tracking-[0.22em] mb-3">
+                    <p className="text-[11px] font-bold text-[#001f4d]  tracking-[0.22em] mb-3">
                       Typical Selection Checklist
                     </p>
 
@@ -108,7 +108,7 @@ export default function TabEcosystem() {
                           key={spec.label}
                           className="flex flex-row items-baseline py-2.5 border-b border-slate-100 last:border-0 gap-6"
                         >
-                          <span className="min-w-[130px] w-[130px] lg:min-w-[160px] lg:w-[160px] text-[11px] font-bold text-slate-600 uppercase tracking-widest flex-shrink-0">
+                          <span className="min-w-[130px] w-[130px] lg:min-w-[160px] lg:w-[160px] text-[11px] font-bold text-slate-600  tracking-widest flex-shrink-0">
                             {spec.label}
                           </span>
                           <span className="flex-1 text-[13px] lg:text-[15px] font-normal text-[#003366] leading-relaxed">
@@ -119,7 +119,7 @@ export default function TabEcosystem() {
                     </div>
 
                     <Link href={active.href} className="self-start mt-4">
-                      <span className="inline-flex items-center gap-2 bg-[#003366] text-white border border-[#003366] px-5 lg:px-6 py-2 lg:py-3.5 text-[11px] font-black uppercase tracking-widest hover:bg-white hover:text-[#003366] transition-colors rounded-none cursor-pointer whitespace-nowrap">
+                      <span className="inline-flex items-center gap-2 bg-[#003366] text-white border border-[#003366] px-5 lg:px-6 py-2 lg:py-3.5 text-[11px] font-black  tracking-widest hover:bg-white hover:text-[#003366] transition-colors rounded-none cursor-pointer whitespace-nowrap">
                         Explore {active.cta}
                         <ArrowRight className="w-3.5 h-3.5" />
                       </span>

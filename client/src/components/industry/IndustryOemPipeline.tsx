@@ -31,7 +31,7 @@ const STEPS = [
 
 export default function IndustryOemPipeline() {
   return (
-    <section className="bg-[#001f4d] border-b border-[#0a2d6e] py-16 lg:py-20 relative overflow-hidden">
+    <section className="bg-[#001f4d] border-b border-[#001f4d] py-16 lg:py-20 relative overflow-hidden">
       {/* Blueprint grid overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -47,16 +47,16 @@ export default function IndustryOemPipeline() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 relative">
         {/* ── Top: Section header ───────────────────────────────────────────── */}
         <div className="mb-14 lg:mb-16">
-          <p className="text-[#65AAD6] font-bold text-xs uppercase tracking-[0.3em] mb-4">
+          <p className="text-[#65AAD6] font-bold text-xs  tracking-[0.3em] mb-4">
             OEM Custom Manufacturing
           </p>
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-white uppercase tracking-tight leading-[1.05] max-w-2xl">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-white  tracking-tight leading-[1.05] max-w-2xl">
               OEM Process From Drawing To Delivery
             </h2>
             <a
               href="#contact"
-              className="inline-flex items-center gap-3 bg-white text-[#001f4d] border border-white hover:bg-[#001f4d] hover:text-white px-6 py-3 text-[13px] font-black uppercase tracking-[0.18em] rounded-none transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
+              className="inline-flex items-center gap-3 bg-white text-[#001f4d] border border-white hover:bg-[#001f4d] hover:text-white px-6 py-3 text-[13px] font-black tracking-[0.18em] rounded-none transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
             >
               Get In Touch
             </a>
@@ -95,7 +95,7 @@ export default function IndustryOemPipeline() {
 
                   {/* Step content */}
                   <div className="mt-6">
-                    <h3 className="font-black text-white uppercase tracking-tight leading-[1.2] text-[15px] mb-3">
+                    <h3 className="font-black text-white tracking-tight leading-[1.2] text-[15px] mb-3">
                       {item.title}
                     </h3>
                     <p className="text-[15px] text-slate-400 leading-relaxed">
@@ -127,7 +127,7 @@ export default function IndustryOemPipeline() {
 
               {/* Step content */}
               <div>
-                <h3 className="font-black text-white uppercase tracking-tight leading-[1.2] text-[15px] mb-2">
+                <h3 className="font-black text-white  tracking-tight leading-[1.2] text-[15px] mb-2">
                   {item.title}
                 </h3>
                 <p className="text-[15px] text-slate-400 leading-relaxed">

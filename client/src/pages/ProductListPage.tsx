@@ -157,11 +157,11 @@ export default function BladeListPage() {
           }}
         >
           <div>
-            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-white/40 mb-6">
+            <p className="text-[11px] font-semibold tracking-[0.28em]  text-white/40 mb-6">
               Product Catalogue — Industrial Blades
             </p>
 
-            <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white uppercase tracking-tight leading-none mb-7">
+            <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
               Industrial
               <br />
               Blades &amp;
@@ -194,7 +194,7 @@ export default function BladeListPage() {
             <div className="flex items-center justify-between py-3 gap-4">
               <button
                 onClick={() => setFilterOpen(o => !o)}
-                className={`inline-flex items-center gap-2 font-mono text-[12px] font-bold tracking-[0.2em] uppercase border px-4 py-2 transition-colors ${
+                className={`inline-flex items-center gap-2 font-mono text-[12px] font-bold tracking-[0.2em]  border px-4 py-2 transition-colors ${
                   filterOpen || selectedCategory !== "all"
                     ? "bg-[#001f4d] text-white border-[#001f4d]"
                     : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
@@ -235,7 +235,7 @@ export default function BladeListPage() {
               </button>
 
               <div className="flex items-center gap-5">
-                <p className="font-mono text-[11px] text-slate-400 tracking-[0.3em] uppercase hidden sm:block">
+                <p className="font-mono text-[11px] text-slate-400 tracking-[0.3em]  hidden sm:block">
                   {filteredBlades.length} Product
                   {filteredBlades.length !== 1 ? "s" : ""}
                 </p>
@@ -244,7 +244,7 @@ export default function BladeListPage() {
                   onChange={e =>
                     setSortOrder(e.target.value as "featured" | "az")
                   }
-                  className="font-mono text-[11px] text-slate-500 uppercase tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
+                  className="font-mono text-[11px] text-slate-500  tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
                 >
                   <option value="featured">Sort: Featured</option>
                   <option value="az">Sort: A → Z</option>
@@ -281,7 +281,7 @@ export default function BladeListPage() {
                         });
                       }
                     }}
-                    className={`px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase border transition-none ${
+                    className={`px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em]  border transition-none ${
                       isActive
                         ? "bg-[#001f4d] text-white border-[#001f4d]"
                         : "bg-white text-slate-500 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
@@ -303,7 +303,7 @@ export default function BladeListPage() {
                     setSelectedCategory("all");
                     setFilterOpen(false);
                   }}
-                  className="px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em] uppercase border border-dashed border-slate-300 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] inline-flex items-center gap-1.5 transition-colors"
+                  className="px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em]  border border-dashed border-slate-300 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] inline-flex items-center gap-1.5 transition-colors"
                 >
                   Clear ×
                 </button>
@@ -336,10 +336,10 @@ export default function BladeListPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
             {/* Left: SEO Text */}
             <div className="flex flex-col justify-center">
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-6">
+              <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em]  mb-6">
                 [ MANUFACTURING CAPABILITY ]
               </p>
-              <h2 className="text-3xl lg:text-4xl font-black text-[#001f4d] uppercase tracking-tight leading-tight mb-8">
+              <h2 className="text-3xl lg:text-4xl font-black text-[#001f4d]  tracking-tight leading-tight mb-8">
                 Your Trusted Industrial
                 <br />
                 Blade Manufacturer
@@ -363,26 +363,26 @@ export default function BladeListPage() {
               </div>
               <div className="border-t border-slate-200 mt-10 pt-6 grid grid-cols-3 gap-4">
                 <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
                     Facility
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] uppercase">
+                  <p className="font-black text-sm text-[#001f4d] ">
                     15,000 m²
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
                     Founded
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] uppercase">
+                  <p className="font-black text-sm text-[#001f4d] ">
                     Est. 2008
                   </p>
                 </div>
                 <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase mb-1">
+                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
                     Standard
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] uppercase">
+                  <p className="font-black text-sm text-[#001f4d] ">
                     ISO 9001
                   </p>
                 </div>

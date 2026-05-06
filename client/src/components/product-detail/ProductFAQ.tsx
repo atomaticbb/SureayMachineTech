@@ -81,10 +81,10 @@ export default function ProductFAQ({ faqs, productName }: Props) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* ── Section header — matches TechnicalAudit / ComprehensiveData pattern ── */}
-      <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ Knowledge Base ]
       </p>
-      <h2 className="font-black text-4xl text-[#001f4d] uppercase tracking-tight mb-8">
+      <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8">
         Product FAQs &amp; Buying Guidance
       </h2>
 
@@ -131,10 +131,10 @@ function ColHeader({
         dark ? "bg-[#001f4d]" : "bg-slate-900"
       }`}
     >
-      <span className="font-mono text-[10px] text-[#e8b84b] uppercase tracking-[0.28em] shrink-0">
+      <span className="font-mono text-[10px] text-[#e8b84b]  tracking-[0.28em] shrink-0">
         {index} /
       </span>
-      <h3 className="font-black text-sm text-white uppercase tracking-widest">
+      <h3 className="font-black text-sm text-white  tracking-widest">
         {label}
       </h3>
     </div>

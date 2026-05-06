@@ -12,6 +12,7 @@ import CookieConsent from "./components/CookieConsent";
 const Home = lazy(() => import("./pages/Home"));
 const ProductListPage = lazy(() => import("./pages/ProductListPage"));
 const ProductDetail = lazy(() => import("./pages/ProductDetail"));
+const CategoryAggregation = lazy(() => import("./pages/CategoryAggregation"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const News = lazy(() => import("./pages/News"));
@@ -74,7 +75,6 @@ function PageLoader() {
           fontSize: "11px",
           fontWeight: 700,
           letterSpacing: "0.25em",
-          textTransform: "uppercase",
           margin: 0,
         }}
       >
@@ -137,6 +137,7 @@ function Router() {
           {/* Products — blade-only architecture */}
           <Route path="/products" component={ProductListPage} />
           <Route path="/products/:id" component={ProductDetail} />
+          <Route path="/categories/:slug" component={CategoryAggregation} />
 
           {/* Industry verticals */}
           <Route path="/plastic-industry" component={PlasticIndustry} />

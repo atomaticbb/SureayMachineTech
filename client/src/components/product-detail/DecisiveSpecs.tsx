@@ -29,10 +29,10 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Section header — outside the flex row */}
-      <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ Engineering Reference ]
       </p>
-      <h2 className="font-black text-4xl text-[#001f4d] uppercase tracking-tight mb-10">
+      <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
         Decisive Specifications
       </h2>
 
@@ -50,7 +50,7 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
                   >
                     <th
                       scope="row"
-                      className="px-5 py-3 border-r border-slate-200 font-mono text-[11px] text-slate-600 uppercase tracking-wider font-semibold w-[36%] lg:w-[28%]"
+                      className="px-5 py-3 border-r border-slate-200 font-mono text-[11px] text-slate-600  tracking-wider font-semibold w-[36%] lg:w-[28%]"
                     >
                       {spec.label}
                     </th>
@@ -82,7 +82,7 @@ export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
       </div>
 
       {/* Footnote — outside the flex row */}
-      <p className="font-mono text-[11px] text-slate-500 uppercase tracking-widest mt-4">
+      <p className="font-mono text-[11px] text-slate-500  tracking-widest mt-4">
         ■ All values verified via CMM inspection · ISO 9001:2015
       </p>
     </section>

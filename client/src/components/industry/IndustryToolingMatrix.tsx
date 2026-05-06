@@ -49,10 +49,10 @@ export default function IndustryToolingMatrix({
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Section header */}
         <div className="mb-14">
-          <p className="font-bold text-[11px] text-slate-400 uppercase tracking-[0.45em] mb-3">
+          <p className="font-bold text-[11px] text-slate-400  tracking-[0.45em] mb-3">
             Engineered Product Range
           </p>
-          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.0]">
+          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d]  tracking-tight leading-[1.0]">
             Core Tooling Matrix.
           </h2>
           <div className="w-14 h-[3px] bg-slate-300 mt-6" />
@@ -65,7 +65,7 @@ export default function IndustryToolingMatrix({
               key={f}
               type="button"
               onClick={() => handleFilter(f)}
-              className={`border-2 px-6 py-2.5 text-[11px] font-black uppercase tracking-[0.2em] transition-colors duration-200 rounded-none cursor-pointer ${
+              className={`border-2 px-6 py-2.5 text-[11px] font-black  tracking-[0.2em] transition-colors duration-200 rounded-none cursor-pointer ${
                 activeFilter === f
                   ? "border-[#001f4d] bg-[#001f4d] text-white"
                   : "border-slate-200 text-slate-500 bg-transparent hover:border-[#001f4d] hover:text-[#001f4d]"
@@ -98,7 +98,7 @@ export default function IndustryToolingMatrix({
                       <span className="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-slate-300 pointer-events-none" />
 
                       <div className="absolute top-0 left-0 z-10">
-                        <span className="inline-block border-l-4 border-[#001f4d] bg-white/80 backdrop-blur-sm text-[#001f4d] font-black text-[10px] uppercase tracking-[0.3em] px-3 py-2">
+                        <span className="inline-block border-l-4 border-[#001f4d] bg-white/80 backdrop-blur-sm text-[#001f4d] font-black text-[10px]  tracking-[0.3em] px-3 py-2">
                           {product.isFlagship ? "★ FLAGSHIP" : product.category}
                         </span>
                       </div>
@@ -114,7 +114,7 @@ export default function IndustryToolingMatrix({
 
                     {/* Nameplate */}
                     <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="font-black text-[17px] text-[#001f4d] uppercase tracking-[-0.03em] leading-[1.15] mb-3 line-clamp-2 min-h-[42px]">
+                      <h3 className="font-black text-[17px] text-[#001f4d]  tracking-[-0.03em] leading-[1.15] mb-3 line-clamp-2 min-h-[42px]">
                         {product.name}
                       </h3>
                       <p className="text-[14px] text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
@@ -124,7 +124,7 @@ export default function IndustryToolingMatrix({
                             : "Precision-engineered OEM replacement tooling designed for drop-in compatibility and extended service life.")}
                       </p>
                       <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest group-hover:text-[#001f4d] transition-colors duration-300">
+                        <span className="text-[10px] font-black text-slate-400  tracking-widest group-hover:text-[#001f4d] transition-colors duration-300">
                           [ View Spec Sheet ]
                         </span>
                         <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-[#001f4d] group-hover:translate-x-1 transition-all duration-300" />
@@ -185,7 +185,7 @@ export default function IndustryToolingMatrix({
           </div>
           <p
             style={MONO}
-            className="text-[10px] text-slate-400 uppercase tracking-[0.3em]"
+            className="text-[10px] text-slate-400  tracking-[0.3em]"
           >
             {page} / {totalPages}
           </p>

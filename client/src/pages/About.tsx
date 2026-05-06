@@ -115,10 +115,10 @@ export default function About() {
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <div className="flex-1 flex flex-col justify-center max-w-sm">
-              <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-6">
+              <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
                 About Sureay Machinery
               </p>
-              <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight uppercase mb-7">
+              <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight  mb-7">
                 Engineering
                 <br />
                 Blade
@@ -142,7 +142,7 @@ export default function About() {
                   <a
                     key={a.href}
                     href={a.href}
-                    className="text-[11px] font-semibold tracking-[0.14em] uppercase border border-slate-200 px-3 py-1.5 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
+                    className="text-[11px] font-semibold tracking-[0.14em]  border border-slate-200 px-3 py-1.5 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
                   >
                     {a.label}
                   </a>
@@ -162,7 +162,7 @@ export default function About() {
               decoding="async"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
-              <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-white/70">
+              <p className="text-[11px] font-semibold tracking-[0.22em]  text-white/70">
                 Ma'anshan, Anhui Province, China · 15,000 m² · Est. 2008
               </p>
             </div>
@@ -181,13 +181,13 @@ export default function About() {
                 key={i}
                 className={`px-8 py-14 flex flex-col gap-2 ${i >= 2 ? "border-t border-white/10 md:border-t-0" : ""}`}
               >
-                <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-white/40">
+                <p className="text-[10px] font-semibold tracking-[0.25em]  text-white/40">
                   {s.sub}
                 </p>
                 <p className="text-[clamp(2rem,5vw,3.2rem)] font-black text-white leading-none tracking-tight tabular-nums">
                   {s.display}
                 </p>
-                <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-white/60">
+                <p className="text-[11px] font-semibold tracking-[0.14em]  text-white/60">
                   {s.label}
                 </p>
               </div>
@@ -202,10 +202,10 @@ export default function About() {
       <section id="story" className="bg-white py-24 lg:py-28 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
               Company History
             </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               Our Story
             </h2>
           </div>
@@ -240,7 +240,7 @@ export default function About() {
                       <p className="text-[11px] font-black tracking-[0.2em] text-slate-400 mb-1.5">
                         {epoch.year}
                       </p>
-                      <p className="text-[14px] font-black uppercase tracking-tight text-[#001f4d] leading-snug mb-2">
+                      <p className="text-[14px] font-black  tracking-tight text-[#001f4d] leading-snug mb-2">
                         {epoch.title}
                       </p>
                       <p className="text-[15px] text-slate-500 leading-relaxed max-w-xs">
@@ -299,7 +299,7 @@ export default function About() {
                     height={518}
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-6 py-4 border-t border-white/10">
-                    <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-white/60">
+                    <p className="text-[10px] font-semibold tracking-[0.2em]  text-white/60">
                       2020 — 15,000 m² Facility · Ma'anshan, China
                     </p>
                   </div>
@@ -317,10 +317,10 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           {/* Header */}
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
               Facility
             </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               Manufacturing
             </h2>
           </div>
@@ -354,7 +354,7 @@ export default function About() {
                       {cap.num}
                     </span>
                     <div>
-                      <p className="text-[15px] font-black uppercase tracking-tight text-[#001f4d] mb-1">
+                      <p className="text-[15px] font-black  tracking-tight text-[#001f4d] mb-1">
                         {cap.title}
                       </p>
                       <p className="text-[15px] text-slate-500 leading-relaxed">
@@ -381,7 +381,7 @@ export default function About() {
                   height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/70 px-4 py-2.5">
-                  <p className="text-[10px] font-black tracking-[0.2em] uppercase text-white">
+                  <p className="text-[10px] font-black tracking-[0.2em]  text-white">
                     {img.label}
                   </p>
                 </div>
@@ -398,10 +398,10 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           {/* Header */}
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
               Dimensional Accuracy
             </p>
-            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               Precision Standards
             </h2>
           </div>
@@ -413,10 +413,10 @@ export default function About() {
                 <p className="text-[clamp(1.4rem,3vw,2rem)] font-black text-[#001f4d] leading-none tracking-tight mb-2">
                   {s.value}
                 </p>
-                <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-slate-500 leading-snug mb-1">
+                <p className="text-[12px] font-semibold  tracking-[0.14em] text-slate-500 leading-snug mb-1">
                   {s.label}
                 </p>
-                <p className="text-[11px] uppercase tracking-[0.12em] text-slate-400">
+                <p className="text-[11px]  tracking-[0.12em] text-slate-400">
                   {s.sub}
                 </p>
               </div>
@@ -429,20 +429,18 @@ export default function About() {
             <div className="lg:w-[42%] flex-shrink-0">
               <div className="relative overflow-hidden h-[380px]">
                 <img
-                  src="/images/about/blade-precision-measurement.webp"
-                  alt="Inspector measuring slitter knife with vernier caliper — Sureay quality control"
+                  src="/images/common/material-selection.webp"
+                  alt="Tool steel library and material selection — Sureay blade manufacturing"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
-                  width={1402}
-                  height={1122}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/80 px-5 py-3">
-                  <p className="text-[10px] font-black tracking-[0.18em] uppercase text-white/60 mb-0.5">
-                    Caliper Accuracy
+                  <p className="text-[10px] font-black tracking-[0.18em]  text-white/60 mb-0.5">
+                    Material Selection
                   </p>
                   <p className="text-[16px] font-black text-white">
-                    0.02 mm Resolution
+                    Application-Matched Alloys
                   </p>
                 </div>
               </div>
@@ -450,7 +448,7 @@ export default function About() {
 
             {/* Materials table */}
             <div className="flex-1">
-              <p className="text-[11px] font-black tracking-[0.22em] uppercase text-slate-400 mb-5">
+              <p className="text-[11px] font-black tracking-[0.22em]  text-slate-400 mb-5">
                 Steel Grades & Materials
               </p>
               <div className="border border-slate-200">
@@ -479,10 +477,10 @@ export default function About() {
       <section id="certifications" className="py-28 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-12">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-3">
+            <p className="text-[11px] font-semibold tracking-[0.25em]  text-slate-400 mb-3">
               Compliance & Standards
             </p>
-            <h2 className="text-3xl font-black text-[#001f4d] uppercase tracking-tight">
+            <h2 className="text-3xl font-black text-[#001f4d]  tracking-tight">
               Certifications
             </h2>
           </div>
@@ -492,10 +490,10 @@ export default function About() {
                 key={i}
                 className="border border-slate-200 bg-white px-4 py-10 flex flex-col items-center justify-center gap-2 hover:border-[#001f4d] hover:bg-[#001f4d] group transition-colors cursor-default"
               >
-                <span className="text-[11px] font-black uppercase tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
+                <span className="text-[11px] font-black  tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
                   {cert.label}
                 </span>
-                <span className="text-[9px] font-medium uppercase tracking-wider text-slate-400 group-hover:text-white/60 text-center transition-colors">
+                <span className="text-[9px] font-medium  tracking-wider text-slate-400 group-hover:text-white/60 text-center transition-colors">
                   {cert.sub}
                 </span>
               </div>

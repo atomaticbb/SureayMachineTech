@@ -28,7 +28,7 @@ export default function WhatsAppFloat() {
       </svg>
 
       {/* Label — hidden on very small screens */}
-      <span className="font-mono text-[11px] font-bold uppercase tracking-widest hidden sm:inline">
+      <span className="font-mono text-[11px] font-bold  tracking-widest hidden sm:inline">
         WhatsApp
       </span>
     </a>

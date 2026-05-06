@@ -11,7 +11,7 @@ export default function TrustBar() {
       <div className="max-w-7xl mx-auto px-4 overflow-x-auto no-scrollbar">
         <div className="flex items-center justify-between min-w-max gap-8">
           {/* Trust Point 1 */}
-          <div className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-white  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -31,7 +31,7 @@ export default function TrustBar() {
           <div className="hidden md:block w-px h-4 bg-white/20"></div>
 
           {/* Trust Point 2 */}
-          <div className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-white  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -51,7 +51,7 @@ export default function TrustBar() {
           <div className="hidden md:block w-px h-4 bg-white/20"></div>
 
           {/* Trust Point 3 */}
-          <div className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-white  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4"
               fill="none"
@@ -77,7 +77,7 @@ export default function TrustBar() {
           <div className="hidden md:block w-px h-4 bg-white/20"></div>
 
           {/* Trust Point 4 */}
-          <div className="text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-white  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4"
               fill="none"

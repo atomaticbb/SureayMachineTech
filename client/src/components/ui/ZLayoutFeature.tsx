@@ -16,11 +16,11 @@ export default function ZLayoutFeature({
   const textCol = (
     <div className="flex flex-col justify-center">
       {label && (
-        <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+        <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
           {label}
         </p>
       )}
-      <h2 className="font-black text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-7">
+      <h2 className="font-black text-3xl text-[#001f4d]  tracking-tight leading-[1.05] mb-7">
         {title}
       </h2>
       <div className="flex flex-col gap-4 border-l-2 border-slate-200 pl-5">

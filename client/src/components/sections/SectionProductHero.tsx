@@ -46,11 +46,11 @@ export default function ProductHero({
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />
-            <div className="absolute top-4 left-4 z-20 bg-[#003366] text-white text-[10px] uppercase font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
+            <div className="absolute top-4 left-4 z-20 bg-[#003366] text-white text-[10px]  font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
               OEM / Custom Available
             </div>
             {blade.badge && (
-              <div className="absolute top-4 right-4 z-20 bg-[#003366] text-white text-[10px] uppercase font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
+              <div className="absolute top-4 right-4 z-20 bg-[#003366] text-white text-[10px]  font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
                 {blade.badge}
               </div>
             )}
@@ -60,7 +60,7 @@ export default function ProductHero({
           <div className="flex self-start rounded-lg bg-slate-100 dark:bg-slate-800 p-1 shadow-sm">
             <button
               onClick={() => setViewMode("photo")}
-              className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-md transition-all duration-200 ${
+              className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold  tracking-wider rounded-md transition-all duration-200 ${
                 viewMode === "photo"
                   ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
@@ -83,7 +83,7 @@ export default function ProductHero({
             </button>
             <button
               onClick={() => setViewMode("blueprint")}
-              className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold uppercase tracking-wider rounded-md transition-all duration-200 ${
+              className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold  tracking-wider rounded-md transition-all duration-200 ${
                 viewMode === "blueprint"
                   ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
                   : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
@@ -110,7 +110,7 @@ export default function ProductHero({
         {/* Right: Data & Actions */}
         <div className="flex flex-col gap-6">
           {/* Category Tag */}
-          <span className="inline-flex w-fit items-center bg-[#003366]/10 text-[#003366] dark:bg-blue-900/30 dark:text-blue-300 border border-[#003366]/20 text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+          <span className="inline-flex w-fit items-center bg-[#003366]/10 text-[#003366] dark:bg-blue-900/30 dark:text-blue-300 border border-[#003366]/20 text-xs font-bold px-2 py-1 rounded  tracking-wider">
             {blade.categoryDisplay}
           </span>
 

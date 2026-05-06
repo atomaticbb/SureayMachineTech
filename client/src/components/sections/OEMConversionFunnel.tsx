@@ -63,7 +63,7 @@ export default function OEMConversionFunnel({
             {/* Step 1 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
               <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white group-hover:shadow-lg transition-all duration-300">
-                <span className="text-blue-300 text-[10px] font-black tracking-widest uppercase mb-0.5 group-hover:text-[#FF6600] transition-colors">
+                <span className="text-blue-300 text-[10px] font-black tracking-widest  mb-0.5 group-hover:text-[#FF6600] transition-colors">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">
@@ -84,7 +84,7 @@ export default function OEMConversionFunnel({
             {/* Step 2 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
               <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white group-hover:shadow-lg transition-all duration-300">
-                <span className="text-blue-300 text-[10px] font-black tracking-widest uppercase mb-0.5 group-hover:text-[#FF6600] transition-colors">
+                <span className="text-blue-300 text-[10px] font-black tracking-widest  mb-0.5 group-hover:text-[#FF6600] transition-colors">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">
@@ -105,7 +105,7 @@ export default function OEMConversionFunnel({
             {/* Step 3 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
               <div className="w-16 h-16 rounded-2xl bg-white/20 border-2 border-[#FF6600] flex flex-col items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-all duration-300">
-                <span className="text-[#FF6600] text-[10px] font-black tracking-widest uppercase mb-0.5">
+                <span className="text-[#FF6600] text-[10px] font-black tracking-widest  mb-0.5">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">

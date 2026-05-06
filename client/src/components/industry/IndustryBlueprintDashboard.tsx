@@ -10,12 +10,12 @@ import type { IndustryNarrative, IndustrySpec } from "./types";
 function SpecCell({ spec }: { spec: IndustrySpec }) {
   return (
     <div className="border-b border-r border-slate-200 p-5 sm:p-7 lg:p-10 flex flex-col justify-between min-h-[180px] lg:min-h-[220px] hover:bg-slate-50 transition-colors duration-300">
-      <span className="block text-[10.5px] font-black text-slate-400 uppercase tracking-[0.3em]">
+      <span className="block text-[10.5px] font-black text-slate-400  tracking-[0.3em]">
         {spec.label}
       </span>
       <div className="mt-8">
         {spec.isTextual ? (
-          <span className="block font-black text-2xl lg:text-[28px] text-[#001f4d] tracking-tight leading-[1.1] mb-3 uppercase">
+          <span className="block font-black text-2xl lg:text-[28px] text-[#001f4d] tracking-tight leading-[1.1] mb-3 ">
             {spec.mainValue.split("\\n").map((line, i, arr) => (
               <span key={i}>
                 {line}
@@ -31,7 +31,7 @@ function SpecCell({ spec }: { spec: IndustrySpec }) {
             )}
           </span>
         )}
-        <span className="block text-[11.5px] font-bold text-slate-500 uppercase tracking-widest">
+        <span className="block text-[11.5px] font-bold text-slate-500  tracking-widest">
           {spec.subtext}
         </span>
       </div>
@@ -68,10 +68,10 @@ export default function IndustryBlueprintDashboard({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-20 lg:mb-28">
           {/* Challenge */}
           <div>
-            <p className="font-black text-[10px] text-slate-400 uppercase tracking-[0.5em] mb-5">
+            <p className="font-black text-[10px] text-slate-400  tracking-[0.5em] mb-5">
               [ The Industry Challenge ]
             </p>
-            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
               {challengeTitle}
             </h2>
             <p className="text-slate-600 text-[15px] leading-relaxed max-w-[480px] tracking-[0.015em]">
@@ -82,10 +82,10 @@ export default function IndustryBlueprintDashboard({
           {/* Solution */}
           <div className="relative">
             <div className="hidden lg:block absolute -left-10 xl:-left-12 top-2 bottom-2 w-px bg-slate-200" />
-            <p className="font-black text-[10px] text-[#65AAD6] uppercase tracking-[0.5em] mb-5">
+            <p className="font-black text-[10px] text-[#65AAD6]  tracking-[0.5em] mb-5">
               [ Sureay Engineered Solution ]
             </p>
-            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+            <h2 className="font-black text-2xl md:text-3xl text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
               {solutionTitle}
             </h2>
             <p className="text-slate-600 text-[15px] leading-relaxed max-w-[480px] tracking-[0.015em]">
@@ -106,7 +106,7 @@ export default function IndustryBlueprintDashboard({
 
         {/* ── 4-Column Spec Dashboard ── */}
         <div>
-          <p className="font-black text-[10px] text-slate-400 uppercase tracking-[0.5em] mb-6">
+          <p className="font-black text-[10px] text-slate-400  tracking-[0.5em] mb-6">
             [ Verified Production Specs ]
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-slate-200">

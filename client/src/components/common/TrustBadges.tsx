@@ -14,7 +14,7 @@ export default function TrustBadges({ className = "" }: TrustBadgesProps) {
     >
       <div className="max-w-7xl mx-auto px-4 overflow-x-auto no-scrollbar">
         <div className="flex items-center justify-between min-w-max gap-8">
-          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-slate-700 dark:text-slate-300  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4 text-[#003366] dark:text-blue-400"
               fill="none"
@@ -33,7 +33,7 @@ export default function TrustBadges({ className = "" }: TrustBadgesProps) {
 
           <div className="hidden md:block w-px h-4 bg-slate-200 dark:bg-slate-600"></div>
 
-          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-slate-700 dark:text-slate-300  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4 text-[#003366] dark:text-blue-400"
               fill="none"
@@ -52,7 +52,7 @@ export default function TrustBadges({ className = "" }: TrustBadgesProps) {
 
           <div className="hidden md:block w-px h-4 bg-slate-200 dark:bg-slate-600"></div>
 
-          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-slate-700 dark:text-slate-300  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4 text-[#003366] dark:text-blue-400"
               fill="none"
@@ -71,7 +71,7 @@ export default function TrustBadges({ className = "" }: TrustBadgesProps) {
 
           <div className="hidden md:block w-px h-4 bg-slate-200 dark:bg-slate-600"></div>
 
-          <div className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-widest flex items-center gap-2">
+          <div className="text-xs font-bold text-slate-700 dark:text-slate-300  tracking-widest flex items-center gap-2">
             <svg
               className="w-4 h-4 text-[#003366] dark:text-blue-400"
               fill="none"

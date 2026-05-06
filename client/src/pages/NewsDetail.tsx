@@ -71,14 +71,14 @@ export default function NewsDetail() {
       <div className="min-h-screen bg-white antialiased">
         <Navbar />
         <main className="pt-[74px] max-w-7xl mx-auto px-6 lg:px-8 py-32">
-          <p className="font-mono text-[10px] text-slate-400 tracking-widest uppercase mb-4">
+          <p className="font-mono text-[10px] text-slate-400 tracking-widest  mb-4">
             [ ERROR: DOCUMENT NOT FOUND ]
           </p>
-          <h1 className="text-5xl font-black text-[#001f4d] uppercase mb-8">
+          <h1 className="text-5xl font-black text-[#001f4d]  mb-8">
             No Dispatch Found
           </h1>
           <Link href="/news">
-            <a className="font-mono text-sm text-[#001f4d] tracking-widest uppercase border-b-2 border-[#001f4d] pb-1 hover:text-slate-500 hover:border-slate-500 transition-colors">
+            <a className="font-mono text-sm text-[#001f4d] tracking-widest  border-b-2 border-[#001f4d] pb-1 hover:text-slate-500 hover:border-slate-500 transition-colors">
               ← Return to Corporate Dispatches
             </a>
           </Link>
@@ -105,7 +105,7 @@ export default function NewsDetail() {
         <section className="border-b border-slate-200 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:py-12">
             <Link href="/news">
-              <a className="font-mono text-[10px] text-slate-400 tracking-widest uppercase hover:text-[#001f4d] transition-colors inline-block">
+              <a className="font-mono text-[10px] text-slate-400 tracking-widest  hover:text-[#001f4d] transition-colors inline-block">
                 ← CORPORATE DISPATCHES
               </a>
             </Link>
@@ -113,19 +113,19 @@ export default function NewsDetail() {
             <div className="mt-6 border border-slate-200 bg-[#f8fafc]">
               <div className="border-b border-slate-200 px-5 py-4 lg:px-6">
                 <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5">
-                  <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
+                  <span className="font-mono text-[10px] tracking-widest text-slate-400 ">
                     FILE: {article.id.toUpperCase()}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
-                  <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
+                  <span className="font-mono text-[10px] tracking-widest text-slate-400 ">
                     {article.tag}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
-                  <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
+                  <span className="font-mono text-[10px] tracking-widest text-slate-400 ">
                     {article.date}
                   </span>
                   <span className="w-px h-3 bg-slate-300 hidden sm:block" />
-                  <span className="font-mono text-[10px] tracking-widest text-slate-400 uppercase">
+                  <span className="font-mono text-[10px] tracking-widest text-slate-400 ">
                     {article.readTime}
                   </span>
                 </div>
@@ -181,7 +181,7 @@ export default function NewsDetail() {
                     />
                   </div>
                   <div className="border-t border-slate-200 px-4 py-3">
-                    <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest uppercase">
+                    <span className="font-mono text-[10px] font-bold text-[#001f4d] tracking-widest ">
                       Fig. 1.0 / Dispatch Overview Image
                     </span>
                   </div>
@@ -213,7 +213,7 @@ export default function NewsDetail() {
                 <div className="border-b border-slate-200 flex flex-col">
                   <button
                     onClick={() => window.print()}
-                    className="text-left px-5 py-3 font-mono text-[10px] text-slate-500 tracking-widest uppercase border-b border-slate-200 hover:bg-[#001f4d] hover:text-white transition-none"
+                    className="text-left px-5 py-3 font-mono text-[10px] text-slate-500 tracking-widest  border-b border-slate-200 hover:bg-[#001f4d] hover:text-white transition-none"
                   >
                     [ PRINT DOCUMENT ]
                   </button>
@@ -221,7 +221,7 @@ export default function NewsDetail() {
                     onClick={() =>
                       navigator.clipboard?.writeText(window.location.href)
                     }
-                    className="text-left px-5 py-3 font-mono text-[10px] text-slate-500 tracking-widest uppercase hover:bg-[#001f4d] hover:text-white transition-none"
+                    className="text-left px-5 py-3 font-mono text-[10px] text-slate-500 tracking-widest  hover:bg-[#001f4d] hover:text-white transition-none"
                   >
                     [ COPY LINK ]
                   </button>
@@ -279,7 +279,7 @@ export default function NewsDetail() {
                         key={i}
                         className="border border-slate-200 bg-[#f8fafc] px-6 py-5 my-8"
                       >
-                        <p className="font-mono text-sm text-[#001f4d] leading-relaxed tracking-wide uppercase">
+                        <p className="font-mono text-sm text-[#001f4d] leading-relaxed tracking-wide ">
                           {renderInlineLinks(block.value)}
                         </p>
                       </div>
@@ -301,7 +301,7 @@ export default function NewsDetail() {
                             height={540}
                           />
                           <div className="border-t border-slate-200 px-4 py-3">
-                            <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-[0.22em] uppercase">
+                            <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-[0.22em] ">
                               {`Fig. ${String((figureCount += 1) + 1)}.0 / Production Record`}
                             </span>
                           </div>
@@ -322,7 +322,7 @@ export default function NewsDetail() {
 
               {/* End mark */}
               <div className="border-t border-slate-300 mt-16 pt-6">
-                <span className="font-mono text-[11px] text-slate-400 tracking-widest uppercase">
+                <span className="font-mono text-[11px] text-slate-400 tracking-widest ">
                   // END OF DISPATCH //
                 </span>
               </div>
@@ -347,7 +347,7 @@ export default function NewsDetail() {
             {prev ? (
               <Link href={`/news/${prev.id}`}>
                 <a className="group border-b sm:border-b-0 sm:border-r border-[#001f4d] px-8 lg:px-16 py-12 flex flex-col gap-3 hover:bg-[#001f4d] transition-none cursor-pointer">
-                  <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase group-hover:text-white/50">
+                  <span className="font-mono text-[10px] text-slate-400 tracking-widest  group-hover:text-white/50">
                     ← PREVIOUS DISPATCH
                   </span>
                   <span className="font-black text-base lg:text-lg text-[#001f4d] leading-tight group-hover:text-white">
@@ -357,10 +357,10 @@ export default function NewsDetail() {
               </Link>
             ) : (
               <div className="border-b sm:border-b-0 sm:border-r border-[#001f4d] px-8 lg:px-16 py-12 flex flex-col gap-3 opacity-30">
-                <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
+                <span className="font-mono text-[10px] text-slate-400 tracking-widest ">
                   ← PREVIOUS DISPATCH
                 </span>
-                <span className="font-black text-base text-[#001f4d] uppercase">
+                <span className="font-black text-base text-[#001f4d] ">
                   — NONE —
                 </span>
               </div>
@@ -369,7 +369,7 @@ export default function NewsDetail() {
             {next ? (
               <Link href={`/news/${next.id}`}>
                 <a className="group px-8 lg:px-16 py-12 flex flex-col items-start sm:items-end sm:text-right gap-3 hover:bg-[#001f4d] transition-none cursor-pointer">
-                  <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase group-hover:text-white/50">
+                  <span className="font-mono text-[10px] text-slate-400 tracking-widest  group-hover:text-white/50">
                     NEXT DISPATCH →
                   </span>
                   <span className="font-black text-base lg:text-lg text-[#001f4d] leading-tight group-hover:text-white">
@@ -379,10 +379,10 @@ export default function NewsDetail() {
               </Link>
             ) : (
               <div className="px-8 lg:px-16 py-12 flex flex-col items-start sm:items-end sm:text-right gap-3 opacity-30">
-                <span className="font-mono text-[10px] text-slate-400 tracking-widest uppercase">
+                <span className="font-mono text-[10px] text-slate-400 tracking-widest ">
                   NEXT DISPATCH →
                 </span>
-                <span className="font-black text-base text-[#001f4d] uppercase">
+                <span className="font-black text-base text-[#001f4d] ">
                   — NONE —
                 </span>
               </div>

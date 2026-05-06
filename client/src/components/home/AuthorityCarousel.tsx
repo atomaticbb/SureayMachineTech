@@ -90,7 +90,7 @@ export default function AuthorityCarousel() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         {/* Marquee statement — forced 2-line layout */}
         <div className="text-center mb-10">
-          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] mx-auto">
+          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] mx-auto">
             The definitive OEM source for precision blades
             <br />
             and cutting solutions.
@@ -128,7 +128,7 @@ export default function AuthorityCarousel() {
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                    <p className="mt-4 text-center font-bold text-base text-[#003366] leading-snug group-hover:text-[#004488] transition-colors duration-200">
+                    <p className="mt-4 text-center font-bold text-base text-[#003366] leading-snug group-hover:text-[#003366] transition-colors duration-200">
                       {product.name}
                     </p>
                   </div>

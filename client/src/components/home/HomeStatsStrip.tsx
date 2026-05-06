@@ -89,7 +89,7 @@ export default function HomeStatsStrip() {
                   .filter(Boolean)
                   .join(" ")}
               >
-                <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-slate-400">
+                <p className="text-[10px] font-semibold tracking-[0.25em]  text-slate-400">
                   {stat.sub}
                 </p>
                 <p className="text-[clamp(2.5rem,5vw,3.75rem)] font-black text-[#001f4d] leading-none tracking-tight">
@@ -99,14 +99,14 @@ export default function HomeStatsStrip() {
                     formatted={formatted}
                   />
                 </p>
-                <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-500 mt-0.5 max-w-[14rem]">
+                <p className="text-[11px] font-semibold tracking-[0.15em]  text-slate-500 mt-0.5 max-w-[14rem]">
                   {stat.label}
                 </p>
               </div>
             );
           })}
         </div>
-        <p className="font-mono text-[9px] text-slate-400 tracking-widest uppercase px-8 pb-3 text-right">
+        <p className="font-mono text-[9px] text-slate-400 tracking-widest  px-8 pb-3 text-right">
           * Based on current internal production and export records
         </p>
       </div>

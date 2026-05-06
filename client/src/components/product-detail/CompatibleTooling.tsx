@@ -19,15 +19,15 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Header row */}
-      <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ System Inventory ]
       </p>
       <div className="flex items-end justify-between gap-4 mb-6">
-        <h2 className="font-black text-3xl text-[#001f4d] uppercase tracking-tight">
+        <h2 className="font-black text-3xl text-[#001f4d]  tracking-tight">
           Related Blade Categories
         </h2>
         <Link href="/products">
-          <span className="font-mono text-[10px] text-slate-700 uppercase tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
+          <span className="font-mono text-[10px] text-slate-700  tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
             View All →
           </span>
         </Link>
@@ -52,14 +52,14 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
               {/* Metadata */}
               <div className="p-4 flex flex-col flex-grow justify-between">
                 <div>
-                  <p className="font-mono text-[11px] text-slate-500 uppercase tracking-widest mb-1.5">
+                  <p className="font-mono text-[11px] text-slate-500  tracking-widest mb-1.5">
                     {related.categoryDisplay}
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] uppercase leading-tight mb-3">
+                  <p className="font-black text-sm text-[#001f4d]  leading-tight mb-3">
                     {related.name}
                   </p>
                 </div>
-                <p className="font-mono text-[11px] text-slate-700 uppercase tracking-widest mt-auto">
+                <p className="font-mono text-[11px] text-slate-700  tracking-widest mt-auto">
                   REF: {related.id.toUpperCase()}
                 </p>
               </div>

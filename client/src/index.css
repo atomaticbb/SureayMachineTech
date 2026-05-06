@@ -67,6 +67,7 @@
   /* Typography scale */
   --font-display: "Oswald", sans-serif; /* Condensed display / all headings */
   --font-body: "Inter", sans-serif; /* Body copy / UI labels              */
+  --font-nav: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Navbar */
 }
 
 :root {
@@ -268,7 +269,7 @@
    */
   .btn-brutalist {
     @apply inline-flex items-center justify-center
-           uppercase tracking-widest text-sm font-black
+            tracking-widest text-sm font-black
            border-2 transition-all duration-200
            rounded-none select-none;
     background-color: var(--color-navy);

@@ -256,7 +256,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex py-7 gap-0">
         {/* ── Column 1: Category Index (20%) ────────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col">
-          <p className="font-mono text-[9px] text-slate-300 uppercase tracking-[0.2em] mb-4 pl-4">
+          <p className="font-mono text-[9px] text-slate-300  tracking-[0.2em] mb-4 pl-4">
             {data.columnLabel}
           </p>
 
@@ -285,7 +285,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
           <Link href={data.bottomLinkHref}>
             <div
               onClick={onClose}
-              className="mt-6 pl-4 font-mono text-[9px] text-[#003366] uppercase tracking-widest hover:underline cursor-pointer"
+              className="mt-6 pl-4 font-mono text-[9px] text-[#003366]  tracking-widest hover:underline cursor-pointer"
             >
               {data.bottomLinkText}
             </div>
@@ -318,12 +318,12 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                     </div>
 
                     {/* REF code */}
-                    <p className="font-mono text-[9px] text-slate-400 uppercase tracking-widest mb-1">
+                    <p className="font-mono text-[9px] text-slate-400  tracking-widest mb-1">
                       {item.refCode}
                     </p>
 
                     {/* Product name */}
-                    <p className="font-black text-[10px] uppercase leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
+                    <p className="font-black text-[10px]  leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
                       {item.name}
                     </p>
                   </div>
@@ -355,17 +355,17 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/85 via-[#001f4d]/35 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-mono text-[9px] text-white/60 uppercase tracking-[0.25em] mb-1.5">
+                  <p className="font-mono text-[9px] text-white/60  tracking-[0.25em] mb-1.5">
                     {active.featured.subtitle}
                   </p>
-                  <p className="font-black text-lg text-white uppercase leading-tight tracking-tight">
+                  <p className="font-black text-lg text-white  leading-tight tracking-tight">
                     {active.featured.title}
                   </p>
                 </div>
               </div>
 
               {/* Tagline */}
-              <p className="font-mono text-[9px] text-[#003366] uppercase tracking-[0.22em] font-bold mt-3">
+              <p className="font-mono text-[9px] text-[#003366]  tracking-[0.22em] font-bold mt-3">
                 ■ {active.featured.tagline}
               </p>
 
@@ -373,7 +373,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               <Link href={active.featured.ctaHref}>
                 <div
                   onClick={onClose}
-                  className="mt-3 w-full bg-[#001f4d] hover:bg-[#003399] text-white font-mono text-[10px] font-bold tracking-[0.18em] uppercase px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
+                  className="mt-3 w-full bg-[#001f4d] hover:bg-[#003366] text-white font-mono text-[10px] font-bold tracking-[0.18em]  px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
                 >
                   <span>{active.featured.ctaText}</span>
                   <span className="opacity-60 group-hover:opacity-100 transition-opacity">
@@ -383,7 +383,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               </Link>
 
               {/* Quality strip */}
-              <p className="font-mono text-[8px] text-slate-400 uppercase tracking-widest mt-3">
+              <p className="font-mono text-[8px] text-slate-400  tracking-widest mt-3">
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
             </motion.div>

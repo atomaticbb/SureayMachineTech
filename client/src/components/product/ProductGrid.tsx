@@ -12,12 +12,14 @@ interface ProductGridProps {
   blades: Blade[];
   layout?: "list" | "grid" | "related";
   onShowAll?: () => void;
+  showSectorBadge?: boolean;
 }
 
 export default function ProductGrid({
   blades,
   layout = "list",
   onShowAll,
+  showSectorBadge = false,
 }: ProductGridProps) {
   if (blades.length === 0) {
     return (
@@ -64,7 +66,12 @@ export default function ProductGrid({
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blades.map(blade => (
-          <ProductCard key={blade.id} blade={blade} variant="grid" />
+          <ProductCard
+            key={blade.id}
+            blade={blade}
+            variant="grid"
+            sectorBadge={showSectorBadge ? blade.sector : undefined}
+          />
         ))}
       </div>
     );

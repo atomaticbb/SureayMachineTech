@@ -107,10 +107,10 @@ export default function ContactRFQ({
     <section id="contact" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-10 lg:mb-14">
-          <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+          <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
             Reach Our Team
           </p>
-          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#003366] uppercase tracking-tight leading-[1.05]">
+          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#003366]   tracking-tight leading-[1.05]">
             Get in Touch with Our Engineers
           </h2>
           <div className="w-16 h-[3px] bg-slate-300 mt-5" />
@@ -120,7 +120,7 @@ export default function ContactRFQ({
           {/* Left: Contact channels */}
           <div className="flex flex-col gap-6 py-10">
             <div>
-              <h3 className="font-black text-2xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">
+              <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
                 Contact Our Team
               </h3>
               <p className="text-sm text-slate-600">
@@ -148,15 +148,15 @@ export default function ContactRFQ({
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">
+                    <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
                       Email Us
                     </div>
-                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#004488] transition-colors truncate">
+                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors truncate">
                       lynn@sureay.com
                     </div>
                     <div className="mt-1.5 inline-flex items-center gap-1.5 bg-[#003366]/8 border border-[#003366]/20 px-2 py-0.5">
                       <span className="block w-1.5 h-1.5 rounded-full bg-[#003366]" />
-                      <span className="text-[10px] font-black text-[#003366] uppercase tracking-widest">
+                      <span className="text-[10px] font-black text-[#003366]  tracking-widest">
                         Engineer Response within 2 Hours
                       </span>
                     </div>
@@ -185,10 +185,10 @@ export default function ContactRFQ({
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <div className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">
+                    <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
                       Call Us
                     </div>
-                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#004488] transition-colors">
+                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
                       +86 180 0555 0657
                     </div>
                   </div>
@@ -216,7 +216,7 @@ export default function ContactRFQ({
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+                      <span className="text-[10px] text-slate-400 font-bold  tracking-widest">
                         WhatsApp
                       </span>
                       <span className="relative flex items-center">
@@ -227,10 +227,10 @@ export default function ContactRFQ({
                         Online
                       </span>
                     </div>
-                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#004488] transition-colors">
+                    <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
                       Chat with Engineer
                     </div>
-                    <div className="text-[10px] text-slate-500 font-semibold mt-0.5 uppercase tracking-widest">
+                    <div className="text-[10px] text-slate-500 font-semibold mt-0.5  tracking-widest">
                       Direct Technical Support
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export default function ContactRFQ({
 
           {/* Right: Quote form */}
           <div className="bg-white border border-slate-200 shadow-sm rounded-none p-8 flex flex-col">
-            <h3 className="font-black text-2xl text-[#003366] uppercase tracking-tight leading-[1.05] mb-1">
+            <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
               Request a Quote
             </h3>
             <p className="text-sm text-slate-600 mb-6">
@@ -267,10 +267,10 @@ export default function ContactRFQ({
                   </svg>
                 </div>
                 <div>
-                  <p className="font-black text-[11px] text-[#003366] uppercase tracking-[0.25em] mb-2">
+                  <p className="font-black text-[11px] text-[#003366]  tracking-[0.25em] mb-2">
                     {emailNoticeOnly ? "Inquiry Saved" : "RFQ Received"}
                   </p>
-                  <p className="font-black text-2xl text-[#001f4d] uppercase tracking-tight leading-tight mb-3">
+                  <p className="font-black text-2xl text-[#001f4d]  tracking-tight leading-tight mb-3">
                     {emailNoticeOnly ? "Request Logged." : "Thank You."}
                   </p>
                   <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
@@ -285,7 +285,7 @@ export default function ContactRFQ({
                   )}
                 </div>
                 <div className="w-full border-t border-slate-100 pt-5">
-                  <p className="font-mono text-[9px] text-slate-400 uppercase tracking-[0.25em]">
+                  <p className="font-mono text-[9px] text-slate-400  tracking-[0.25em]">
                     ■ ISO 9001:2015 · CMM VERIFIED · OEM GRADE
                   </p>
                 </div>
@@ -298,7 +298,7 @@ export default function ContactRFQ({
               >
                 {productName && (
                   <div className="flex items-center gap-3 px-4 py-2.5 border border-[#001f4d]/20 bg-[#001f4d]/5">
-                    <span className="font-mono text-[9px] text-[#001f4d] uppercase tracking-widest font-black flex-shrink-0">
+                    <span className="font-mono text-[9px] text-[#001f4d]  tracking-widest font-black flex-shrink-0">
                       Product
                     </span>
                     <span className="font-bold text-sm text-[#001f4d] truncate">
@@ -308,7 +308,7 @@ export default function ContactRFQ({
                 )}
 
                 <div>
-                  <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
+                  <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
                     Business Email *
                   </label>
                   <input
@@ -321,7 +321,7 @@ export default function ContactRFQ({
                 </div>
 
                 <div className="flex-1">
-                  <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
+                  <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
                     What do you need? *
                   </label>
                   <textarea
@@ -335,7 +335,7 @@ export default function ContactRFQ({
 
                 {/* ── CAD / Technical Drawing Upload ────────────────── */}
                 <div>
-                  <label className="block text-sm font-semibold text-slate-800 uppercase tracking-wider mb-1.5">
+                  <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
                     CAD / Drawing{" "}
                     <span className="text-slate-400 normal-case tracking-normal font-normal">
                       (optional · max {MAX_FILE_MB} MB)
@@ -382,7 +382,7 @@ export default function ContactRFQ({
                       <button
                         type="button"
                         onClick={() => setAttachment(null)}
-                        className="flex-shrink-0 text-[10px] font-bold text-slate-400 hover:text-red-600 uppercase tracking-widest transition-colors"
+                        className="flex-shrink-0 text-[10px] font-bold text-slate-400 hover:text-red-600  tracking-widest transition-colors"
                         aria-label="Remove attachment"
                       >
                         Remove
@@ -423,7 +423,7 @@ export default function ContactRFQ({
                         />
                       </svg>
                       <div>
-                        <p className="text-xs font-bold text-slate-600 uppercase tracking-wide">
+                        <p className="text-xs font-bold text-slate-600  tracking-wide">
                           Upload CAD / Technical Drawing
                         </p>
                         <p className="text-[10px] text-slate-400 mt-0.5">
@@ -436,7 +436,7 @@ export default function ContactRFQ({
                 </div>
 
                 {error && (
-                  <p className="text-xs font-bold text-red-600 uppercase tracking-wide border border-red-200 bg-red-50 px-3 py-2">
+                  <p className="text-xs font-bold text-red-600  tracking-wide border border-red-200 bg-red-50 px-3 py-2">
                     ✕ {error}
                   </p>
                 )}
@@ -444,7 +444,7 @@ export default function ContactRFQ({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm uppercase tracking-widest transition-all duration-300 rounded-none shadow-md"
+                  className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none shadow-md"
                 >
                   {loading ? "Sending…" : "Get a Quote →"}
                 </button>

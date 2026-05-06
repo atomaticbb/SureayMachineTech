@@ -82,12 +82,12 @@ export default function BladeHero({ blade }: BladeHeroProps) {
       <div className="flex-1 p-6 lg:p-10 flex flex-col justify-between">
         <div className="space-y-5">
           {/* H1 — full product name */}
-          <h1 className="font-black text-[26px] text-[#001f4d] uppercase leading-[1.15] tracking-tight">
+          <h1 className="font-black text-[26px] text-[#001f4d]  leading-[1.15] tracking-tight">
             {blade.fullName || blade.name}
           </h1>
 
           {/* Category */}
-          <p className="text-[16px] font-bold text-black uppercase tracking-widest border-l-2 border-[#001f4d] pl-3">
+          <p className="text-[16px] font-bold text-black  tracking-widest border-l-2 border-[#001f4d] pl-3">
             {blade.categoryDisplay}
           </p>
 
@@ -115,7 +115,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                         ■
                       </span>
                       <span className="text-[16px] leading-snug">
-                        <span className="font-bold text-black uppercase tracking-wide">
+                        <span className="font-bold text-black  tracking-wide">
                           {spec.label}:{" "}
                         </span>
                         <span className="text-black">{spec.value}</span>
@@ -137,7 +137,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                 .getElementById("rfq")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm uppercase tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
+            className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm  tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
           >
             <span>Request Engineering Quote</span>
             <ArrowRight className="w-5 h-5 shrink-0" />
@@ -151,7 +151,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                 <button
                   type="button"
                   onClick={() => setCatalogState("form")}
-                  className="w-full bg-white hover:bg-slate-50 text-[#001f4d] font-bold text-sm uppercase tracking-widest transition-colors duration-200 flex items-center justify-between px-6 py-3"
+                  className="w-full bg-white hover:bg-slate-50 text-[#001f4d] font-bold text-sm  tracking-widest transition-colors duration-200 flex items-center justify-between px-6 py-3"
                 >
                   <span>Download Catalog (PDF)</span>
                   <Download className="w-4 h-4 shrink-0" />
@@ -161,7 +161,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               {/* Form: email input */}
               {(catalogState === "form" || catalogState === "loading") && (
                 <form onSubmit={handleCatalogSubmit} className="p-4 space-y-3">
-                  <p className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+                  <p className="font-mono text-[10px] text-slate-400  tracking-widest">
                     Enter your work email to download
                   </p>
                   <input
@@ -180,7 +180,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                     <button
                       type="submit"
                       disabled={catalogState === "loading"}
-                      className="flex-1 bg-[#001f4d] text-white font-black text-xs uppercase tracking-widest px-4 py-2.5 hover:bg-[#003080] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                      className="flex-1 bg-[#001f4d] text-white font-black text-xs  tracking-widest px-4 py-2.5 hover:bg-[#001f4d] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
                     >
                       {catalogState === "loading" ? (
                         <>
@@ -197,7 +197,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                         setCatalogState("idle");
                         setFormError("");
                       }}
-                      className="px-4 py-2.5 border border-slate-300 text-slate-500 text-xs font-mono uppercase tracking-widest hover:border-slate-400 transition-colors"
+                      className="px-4 py-2.5 border border-slate-300 text-slate-500 text-xs font-mono  tracking-widest hover:border-slate-400 transition-colors"
                     >
                       Cancel
                     </button>
@@ -209,7 +209,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               {catalogState === "done" && (
                 <div className="px-6 py-3 flex items-center gap-3">
                   <span className="text-green-600 font-black text-sm">✓</span>
-                  <span className="font-mono text-[11px] text-slate-600 uppercase tracking-widest">
+                  <span className="font-mono text-[11px] text-slate-600  tracking-widest">
                     Download started — check your downloads folder
                   </span>
                 </div>

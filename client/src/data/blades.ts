@@ -4345,7 +4345,7 @@ export function getCatalogUrl(_blade: Blade): string {
  */
 export const getBadgeClasses = (color?: string): string => {
   const base =
-    "absolute top-4 left-4 z-10 px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded border";
+    "absolute top-4 left-4 z-10 px-2 py-1 text-[10px] font-bold  tracking-wider rounded border";
   switch (color) {
     case "green":
       return `${base} bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 border-green-200 dark:border-green-800`;

@@ -6,16 +6,19 @@
  */
 
 import { Link } from "wouter";
-import { type Blade } from "@/data/blades";
+import { type Blade, type BladeSectorType } from "@/data/blades";
+import { SECTOR_LABEL } from "@/data/blade-categories";
 
 interface ProductCardProps {
   blade: Blade;
   variant?: "grid" | "list" | "related";
+  sectorBadge?: BladeSectorType;
 }
 
 export default function ProductCard({
   blade,
   variant = "list",
+  sectorBadge,
 }: ProductCardProps) {
   // ─── Grid variant: large image + title + desc + CTA ──────────────────────
   if (variant === "grid") {
@@ -37,28 +40,33 @@ export default function ProductCard({
               }}
             />
             {blade.badge && (
-              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black uppercase px-2 py-1 tracking-wider">
+              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black  px-2 py-1 tracking-wider">
                 {blade.badge}
               </span>
             )}
-            <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black uppercase px-2 py-1 tracking-wider backdrop-blur-sm">
+            {sectorBadge && (
+              <span className="absolute top-3 right-3 bg-[#e8b84b] text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider">
+                {SECTOR_LABEL[sectorBadge]}
+              </span>
+            )}
+            <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider backdrop-blur-sm">
               OEM Available
             </span>
           </div>
 
           {/* Content */}
           <div className="p-6 lg:p-8 flex flex-col flex-1 border-t border-slate-100 group-hover:border-[#65AAD6]/20 transition-colors">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">
+            <p className="text-[10px] font-black text-slate-400  tracking-widest mb-2">
               {blade.categoryDisplay}
             </p>
-            <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366] uppercase tracking-tight leading-tight mb-4 transition-colors">
+            <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366]  tracking-tight leading-tight mb-4 transition-colors">
               {blade.name}
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
               {blade.description}
             </p>
             <div className="mt-auto">
-              <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black uppercase tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
+              <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black  tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
                 View Details
                 <svg
                   className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
@@ -101,7 +109,7 @@ export default function ProductCard({
             />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-0.5">
+            <p className="text-[10px] font-black text-slate-400  tracking-widest mb-0.5">
               {blade.categoryDisplay}
             </p>
             <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#001f4d] transition-colors leading-snug mb-1">
@@ -153,11 +161,11 @@ export default function ProductCard({
               }}
             />
             {blade.badge && (
-              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black uppercase px-2 py-1 tracking-wider">
+              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black  px-2 py-1 tracking-wider">
                 {blade.badge}
               </span>
             )}
-            <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black uppercase px-2 py-1 tracking-wider backdrop-blur-sm">
+            <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider backdrop-blur-sm">
               OEM Available
             </span>
           </div>
@@ -165,7 +173,7 @@ export default function ProductCard({
           {/* Right: Data, Specs */}
           <div className="p-6 flex flex-col justify-between gap-4 border-t md:border-t-0 md:border-l border-slate-100 group-hover:border-[#65AAD6]/20 transition-colors">
             <div>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">
+              <p className="text-[10px] font-black text-slate-400  tracking-widest mb-1">
                 {blade.categoryDisplay}
               </p>
               <h3 className="text-xl font-bold text-[#001f4d] group-hover:text-[#003366] leading-snug mb-2 transition-colors">
@@ -195,7 +203,7 @@ export default function ProductCard({
                   <div className="grid grid-cols-3 gap-x-4 gap-y-3 pt-4 border-t border-slate-100">
                     {sorted.map((spec, i) => (
                       <div key={i}>
-                        <p className="text-[10px] text-slate-400 uppercase tracking-widest leading-none mb-1">
+                        <p className="text-[10px] text-slate-400  tracking-widest leading-none mb-1">
                           {spec.label}
                         </p>
                         <p className="text-sm font-bold text-slate-800 leading-tight">

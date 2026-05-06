@@ -45,10 +45,10 @@ export default function ManufacturingBlocks() {
     <section className="bg-white border-t border-slate-200">
       <div className="bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-16 lg:pt-20 pb-10 lg:pb-12">
-          <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">
+          <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
             Engineering Confidence
           </p>
-          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-3xl">
+          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] max-w-3xl">
             The Engineering Standards Behind Our Blades
           </h2>
           <p className="text-slate-500 max-w-2xl text-sm md:text-base leading-relaxed mt-4">
@@ -96,10 +96,10 @@ export default function ManufacturingBlocks() {
                     reverse ? "lg:order-1" : "lg:order-2",
                   ].join(" ")}
                 >
-                  <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+                  <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
                     {block.label}
                   </p>
-                  <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d] uppercase tracking-tight leading-[1.08] mb-5 max-w-2xl">
+                  <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d] tracking-tight leading-[1.08] mb-5 max-w-2xl">
                     {block.title}
                   </h3>
                   <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl mb-6">

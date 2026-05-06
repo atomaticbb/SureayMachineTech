@@ -17,7 +17,7 @@ export default function Footer() {
                   width={44}
                   height={44}
                 />
-                <span className="text-base font-black text-white tracking-[0.1em] uppercase leading-none">
+                <span className="text-base font-black text-white tracking-[0.1em]  leading-none">
                   SUREAY BLADES
                 </span>
               </div>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* ── Col 2: Products ──────────────────────────────────────── */}
           <div>
-            <h4 className="text-white font-black text-xs uppercase tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
               Products
             </h4>
             <ul className="space-y-4 text-[15px]">
@@ -125,7 +125,7 @@ export default function Footer() {
             <div className="mt-6 pt-4 border-t border-slate-800">
               <Link
                 href="/products"
-                className="text-[13px] font-black text-slate-300 uppercase tracking-widest hover:text-white transition-colors"
+                className="text-[13px] font-black text-slate-300  tracking-widest hover:text-white transition-colors"
               >
                 View All Products
               </Link>
@@ -134,7 +134,7 @@ export default function Footer() {
 
           {/* ── Col 3: Industries + Company ──────────────────────────── */}
           <div>
-            <h4 className="text-white font-black text-xs uppercase tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
               Industries
             </h4>
             <ul className="space-y-4 text-[15px] mb-8">
@@ -180,7 +180,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            <h4 className="text-white font-black text-xs uppercase tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
+            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
               Company
             </h4>
             <ul className="space-y-4 text-[15px]">
@@ -213,12 +213,12 @@ export default function Footer() {
 
           {/* ── Col 4: Get In Touch ───────────────────────────────────── */}
           <div>
-            <h4 className="text-white font-black text-xs uppercase tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
+            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
               Get In Touch
             </h4>
             <div className="space-y-6 text-[15px]">
               <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.28em] text-slate-600 mb-2">
+                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
                   Address
                 </p>
                 <p className="leading-relaxed text-slate-400">
@@ -229,7 +229,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.28em] text-slate-600 mb-2">
+                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
                   WhatsApp / Phone
                 </p>
                 <a
@@ -244,7 +244,7 @@ export default function Footer() {
               </div>
 
               <div>
-                <p className="text-[10px] font-black uppercase tracking-[0.28em] text-slate-600 mb-2">
+                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
                   Email
                 </p>
                 <a
@@ -257,7 +257,7 @@ export default function Footer() {
 
               <Link
                 href="/contact"
-                className="inline-block px-6 py-3 bg-[#003366] hover:bg-[#004488] text-white text-xs font-black uppercase tracking-widest transition-colors duration-200"
+                className="inline-block px-6 py-3 bg-[#003366] hover:bg-[#003366] text-white text-xs font-black  tracking-widest transition-colors duration-200"
               >
                 Request a Quote
               </Link>
@@ -266,7 +266,7 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom bar ────────────────────────────────────────────── */}
-        <div className="border-t border-slate-800 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] font-semibold uppercase tracking-widest text-slate-600">
+        <div className="border-t border-slate-800 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] font-semibold  tracking-widest text-slate-600">
           <p>
             © {new Date().getFullYear()} Sureay Machinery Technology Co., Ltd.
           </p>

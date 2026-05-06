@@ -63,10 +63,10 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
       className="max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Section header — outside the flex row */}
-      <p className="font-mono text-[10px] text-slate-700 uppercase tracking-widest mb-3">
+      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ Standard Reference ]
       </p>
-      <h2 className="font-black text-4xl text-[#001f4d] uppercase tracking-tight mb-10">
+      <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
         Common Standard Dimensions
       </h2>
 
@@ -95,32 +95,32 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
               <TableHeader>
                 <TableRow className="bg-slate-100 hover:bg-slate-100 border-b border-slate-200">
                   {hasSpec && (
-                    <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                    <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                       {col0Label}
                     </TableHead>
                   )}
-                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                     {col1Label}
                   </TableHead>
-                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                     {col2Label}
                   </TableHead>
                   {hasLengthTeeth || hasBoreHooks ? (
                     <>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                         {col3Label}
                       </TableHead>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                         {col4Label}
                       </TableHead>
                     </>
                   ) : hasCol3 ? (
                     <>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                         {col3Label}
                       </TableHead>
                       {hasOem && (
-                        <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px] uppercase tracking-wider text-slate-600">
+                        <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
                           {col4Label}
                         </TableHead>
                       )}

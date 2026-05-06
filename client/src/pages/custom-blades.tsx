@@ -216,7 +216,7 @@ export default function CustomBlades() {
             }}
           >
             {/* Breadcrumb — top-left */}
-            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em] uppercase text-white/30">
+            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em]  text-white/30">
               <a href="/" className="hover:text-white/60 transition-colors">Home</a>
               <span>›</span>
               <a href="/products" className="hover:text-white/60 transition-colors">Products</a>
@@ -225,7 +225,7 @@ export default function CustomBlades() {
             </div>
 
             <div>
-              <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white uppercase tracking-tight leading-none mb-7">
+              <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
                 Special-Shaped
                 <br />
                 &amp; Custom
@@ -242,7 +242,7 @@ export default function CustomBlades() {
             </div>
 
             <a href="#rfq" className="self-start">
-              <button className="bg-white text-[#003366] hover:bg-slate-100 px-7 py-3 font-black text-[13px] uppercase tracking-widest transition-colors rounded-none">
+              <button className="bg-white text-[#003366] hover:bg-slate-100 px-7 py-3 font-black text-[13px]  tracking-widest transition-colors rounded-none">
                 Upload Drawing →
               </button>
             </a>
@@ -266,13 +266,13 @@ export default function CustomBlades() {
                     .filter(Boolean)
                     .join(" ")}
                 >
-                  <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-slate-400">
+                  <p className="text-[10px] font-semibold tracking-[0.25em]  text-slate-400">
                     {stat.sub}
                   </p>
                   <p className="text-[clamp(1rem,2.5vw,1.5rem)] font-black text-[#001f4d] leading-tight tracking-tight font-mono">
                     {stat.value}
                   </p>
-                  <p className="text-[11px] font-semibold tracking-[0.15em] uppercase text-slate-500 mt-0.5">
+                  <p className="text-[11px] font-semibold tracking-[0.15em]  text-slate-500 mt-0.5">
                     {stat.label}
                   </p>
                 </div>
@@ -284,13 +284,13 @@ export default function CustomBlades() {
         {/* ── Capabilities ────────────────────────────────────────────────── */}
         <section id="capabilities" className="bg-white border-t border-slate-200">
           <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-16 lg:pt-20 pb-10 lg:pb-12">
-            <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">
+            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
               Custom Manufacturing
             </p>
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05] max-w-3xl">
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-3xl">
               From Drawing to Finished Blade
             </h2>
-            <div className="w-14 h-[3px] bg-slate-300 mt-6" />
+            <div className="w-12 h-[3px] bg-slate-300 mt-6" />
           </div>
 
           <div className="max-w-7xl mx-auto px-6 sm:px-8 pb-14 lg:pb-20">
@@ -328,10 +328,10 @@ export default function CustomBlades() {
                       reverse ? "lg:order-1" : "lg:order-2",
                     ].join(" ")}
                   >
-                    <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+                    <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
                       {block.label}
                     </p>
-                    <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d] uppercase tracking-tight leading-[1.08] mb-5 max-w-2xl">
+                    <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d]  tracking-tight leading-[1.08] mb-5 max-w-2xl">
                       {block.title}
                     </h3>
                     <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl mb-6">
@@ -361,10 +361,10 @@ export default function CustomBlades() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
               <div className="lg:pt-2">
-                <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">
+                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
                   Profile Range
                 </p>
-                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
                   We Manufacture Any Profile
                 </h2>
                 <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
@@ -373,7 +373,7 @@ export default function CustomBlades() {
                   requests — contact us for any geometry not listed.
                 </p>
                 <a href="#rfq">
-                  <button className="bg-[#001f4d] text-white hover:bg-[#003366] px-7 py-3.5 font-black text-sm uppercase tracking-widest transition-colors rounded-none">
+                  <button className="bg-[#001f4d] text-white hover:bg-[#003366] px-7 py-3.5 font-black text-sm  tracking-widest transition-colors rounded-none">
                     Discuss Your Profile →
                   </button>
                 </a>
@@ -402,10 +402,10 @@ export default function CustomBlades() {
         {/* ── Process Timeline ─────────────────────────────────────────────── */}
         <section className="bg-white border-b border-slate-200 py-14 lg:py-20">
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">
+            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
               How It Works
             </p>
-            <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-12 max-w-xl">
+            <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-12 max-w-xl">
               Drawing to Delivery in 4 Steps
             </h2>
 
@@ -437,7 +437,7 @@ export default function CustomBlades() {
                   <p className="font-mono text-[28px] font-black text-slate-200 leading-none mb-4">
                     {step.step}
                   </p>
-                  <h3 className="font-black text-[14px] uppercase tracking-[0.1em] text-[#001f4d] mb-3 leading-tight">
+                  <h3 className="font-black text-[14px]  tracking-[0.1em] text-[#001f4d] mb-3 leading-tight">
                     {step.title}
                   </h3>
                   <p className="text-slate-500 text-sm leading-relaxed">
@@ -455,10 +455,10 @@ export default function CustomBlades() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               {/* Left: heading */}
               <div className="lg:sticky lg:top-24 self-start">
-                <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-4">
+                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
                   Common Questions
                 </p>
-                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d] uppercase tracking-tight leading-[1.05] mb-6">
+                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
                   Questions Before
                   <br />
                   Sending a Drawing

@@ -1,6 +1,6 @@
 /**
  * Breadcrumbs — Engineering Blueprint Index Bar
- * Full-width bg-slate-50 border-b strip, font-mono uppercase
+ * Full-width bg-slate-50 border-b strip, font-mono 
  * variant prop accepted for API compatibility but unused (single style)
  */
 
@@ -35,7 +35,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
               )}
               {isLast || !item.href ? (
                 <span
-                  className={`font-mono text-[13px] tracking-[0.15em] uppercase ${
+                  className={`font-mono text-[13px] tracking-[0.15em]  ${
                     isLast ? "font-black text-[#001f4d]" : "text-slate-400"
                   }`}
                 >
@@ -43,7 +43,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                 </span>
               ) : (
                 <Link href={item.href}>
-                  <a className="font-mono text-[13px] tracking-[0.15em] uppercase text-slate-400 hover:text-[#001f4d] transition-colors duration-200">
+                  <a className="font-mono text-[13px] tracking-[0.15em]  text-slate-400 hover:text-[#001f4d] transition-colors duration-200">
                     {item.label}
                   </a>
                 </Link>

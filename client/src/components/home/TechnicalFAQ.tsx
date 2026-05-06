@@ -23,10 +23,10 @@ export default function TechnicalFAQ() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/75 via-[#001f4d]/40 to-[#001f4d]/30" />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/60 mb-3">
+              <p className="text-[10px] font-bold  tracking-[0.3em] text-white/60 mb-3">
                 RFQ Support
               </p>
-              <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tight leading-[1.05] mb-3">
+              <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight leading-[1.05] mb-3">
                 Questions Teams Ask Before Sending A Blade Inquiry
               </h3>
               <div className="w-10 h-[2px] bg-slate-400 mb-4" />
@@ -41,10 +41,10 @@ export default function TechnicalFAQ() {
           {/* Right — Technical FAQ */}
           <div className="bg-white border border-slate-200 rounded-none flex flex-col">
             <div className="px-6 lg:px-8 pt-6 lg:pt-7 pb-5 border-b border-slate-100">
-              <p className="text-slate-500 font-bold text-xs uppercase tracking-[0.3em] mb-3">
+              <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
                 Common Questions
               </p>
-              <h3 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] uppercase tracking-tight leading-[1.05]">
+              <h3 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05]">
                 RFQ Questions
               </h3>
               <div className="w-14 h-[3px] bg-slate-300 mt-5 mb-4" />

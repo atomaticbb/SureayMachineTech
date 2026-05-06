@@ -18,6 +18,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { blades } from "../client/src/data/blades.ts";
+import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -143,6 +144,13 @@ const productPages: UrlEntry[] = blades.map(b => ({
   priority: "0.85",
 }));
 
+const categoryPages: UrlEntry[] = BLADE_CATEGORIES.map(c => ({
+  loc: `${BASE_URL}/categories/${c.slug}`,
+  lastmod: TODAY,
+  changefreq: "monthly",
+  priority: "0.85",
+}));
+
 const newsListPage: UrlEntry = {
   loc: `${BASE_URL}/news`,
   lastmod: parseDate(ALL_DISPATCHES[0]?.date ?? ""),
@@ -166,6 +174,9 @@ const sections = [
   "  <!-- Industry Landing Pages -->",
   ...industryPages.map(url),
   "",
+  "  <!-- Category Aggregation Pages -->",
+  ...categoryPages.map(url),
+  "",
   "  <!-- Product Detail Pages -->",
   ...productPages.map(url),
   "",
@@ -187,5 +198,5 @@ const xml = [
 fs.writeFileSync(OUTPUT, xml, "utf-8");
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${corePages.length + industryPages.length + productPages.length + 1 + newsArticles.length} URLs written`
+  `[sitemap] ${corePages.length + industryPages.length + categoryPages.length + productPages.length + 1 + newsArticles.length} URLs written`
 );

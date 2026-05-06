@@ -163,11 +163,11 @@ export default function Contact() {
       ═══════════════════════════════════════════════════════════════════ */}
       <section className="bg-white pt-[74px]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-14 pb-4 lg:pt-20 lg:pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-slate-400 mb-6">
+          <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
             Engineering Inquiry & Quote Request
           </p>
 
-          <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] uppercase tracking-tight leading-none mb-7 max-w-3xl">
+          <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 max-w-3xl">
             Partner With Sureay Engineering
           </h1>
 
@@ -188,17 +188,17 @@ export default function Contact() {
         <div className="lg:grid lg:grid-cols-12">
           {/* ── LEFT: The White Paper Form (col-span-7) ─────────────────── */}
           <div className="lg:col-span-7 bg-white border-b lg:border-b-0 lg:border-r border-slate-200 p-6 lg:p-8">
-            <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em] uppercase mb-2">
+            <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em]  mb-2">
               [ FORM REF: SY-INQ-001 ]
             </p>
-            <h2 className="text-2xl font-black text-[#001f4d] uppercase tracking-tight mb-6">
+            <h2 className="text-2xl font-black text-[#001f4d]  tracking-tight mb-6">
               Submit Your Inquiry
             </h2>
 
             <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Inquiry Type Tiles */}
               <div>
-                <p className="font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-3">
+                <p className="font-bold text-[10px] tracking-widest text-slate-500  mb-3">
                   Inquiry Type *
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 border border-slate-200">
@@ -209,7 +209,7 @@ export default function Contact() {
                       onClick={() =>
                         setFormData(prev => ({ ...prev, inquiryType: type }))
                       }
-                      className={`px-4 py-4 font-mono text-[10px] font-bold tracking-[0.15em] uppercase text-left border-r border-slate-200 last:border-r-0 transition-none ${
+                      className={`px-4 py-4 font-mono text-[10px] font-bold tracking-[0.15em]  text-left border-r border-slate-200 last:border-r-0 transition-none ${
                         formData.inquiryType === type
                           ? "bg-[#001f4d] text-white"
                           : "bg-white text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
@@ -226,7 +226,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
                   >
                     Full Name *
                   </label>
@@ -243,7 +243,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
                   >
                     Email Address *
                   </label>
@@ -264,7 +264,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="company"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
                   >
                     Company
                   </label>
@@ -280,7 +280,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
                   >
                     Phone / WhatsApp
                   </label>
@@ -299,7 +299,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2"
+                  className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
                 >
                   Project Details *
                 </label>
@@ -316,7 +316,7 @@ export default function Contact() {
 
               {/* ── CAD File Upload Zone ───────────────────────────────── */}
               <div>
-                <p className="font-bold text-[10px] tracking-widest text-slate-500 uppercase mb-2">
+                <p className="font-bold text-[10px] tracking-widest text-slate-500  mb-2">
                   CAD / Technical Drawing{" "}
                   <span className="text-slate-400 normal-case tracking-normal font-normal">
                     (optional · max {MAX_FILE_MB} MB)
@@ -342,7 +342,7 @@ export default function Contact() {
                         [ ⊡ ]
                       </span>
                       <div className="min-w-0">
-                        <p className="font-mono text-[11px] font-bold text-[#001f4d] uppercase tracking-wide truncate">
+                        <p className="font-mono text-[11px] font-bold text-[#001f4d]  tracking-wide truncate">
                           {attachment.name}
                         </p>
                         <p className="font-mono text-[10px] text-slate-400 tracking-wide">
@@ -354,7 +354,7 @@ export default function Contact() {
                     <button
                       type="button"
                       onClick={() => setAttachment(null)}
-                      className="flex-shrink-0 font-mono text-[10px] font-bold text-slate-400 hover:text-red-600 uppercase tracking-widest transition-colors"
+                      className="flex-shrink-0 font-mono text-[10px] font-bold text-slate-400 hover:text-red-600  tracking-widest transition-colors"
                       aria-label="Remove attachment"
                     >
                       [ × REMOVE ]
@@ -381,7 +381,7 @@ export default function Contact() {
                         : "border-slate-300 hover:border-[#001f4d] hover:bg-slate-50"
                     }`}
                   >
-                    <p className="font-mono text-sm font-bold text-[#001f4d] uppercase tracking-wide mb-1">
+                    <p className="font-mono text-sm font-bold text-[#001f4d]  tracking-wide mb-1">
                       [ ATTACH CAD / TECHNICAL DRAWINGS ]
                     </p>
                     <p className="font-mono text-[11px] text-slate-500 tracking-wide leading-relaxed">
@@ -398,7 +398,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#001f4d] text-white border-2 border-[#001f4d] px-8 py-5 font-black text-sm uppercase tracking-[0.2em] hover:bg-white hover:text-[#001f4d] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-[#001f4d] text-white border-2 border-[#001f4d] px-8 py-5 font-black text-sm  tracking-[0.2em] hover:bg-white hover:text-[#001f4d] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? "[ TRANSMITTING... ]" : "SUBMIT INQUIRY ↗"}
               </button>
@@ -409,7 +409,7 @@ export default function Contact() {
           <div className="lg:col-span-5 bg-[#001f4d] p-6 lg:p-8 flex flex-col">
             {/* Email */}
             <div className="mt-8 lg:mt-[2.75rem] mb-12">
-              <p className="font-mono text-[10px] text-white/50 tracking-widest uppercase mb-3">
+              <p className="font-mono text-[10px] text-white/50 tracking-widest  mb-3">
                 Direct Email
               </p>
               {/* Obfuscated: reversed string + CSS rtl renders as lynn@sureay.com */}
@@ -422,7 +422,7 @@ export default function Contact() {
                   const el = e.currentTarget as HTMLAnchorElement;
                   window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
                 }}
-                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none break-all hover:text-white/70 transition-colors cursor-pointer"
+                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none break-all hover:text-white/70 transition-colors cursor-pointer"
               >
                 <span
                   style={{ unicodeBidi: "bidi-override", direction: "rtl" }}
@@ -434,14 +434,14 @@ export default function Contact() {
 
             {/* WhatsApp */}
             <div className="mb-12">
-              <p className="font-mono text-[10px] text-white/50 tracking-widest uppercase mb-3">
+              <p className="font-mono text-[10px] text-white/50 tracking-widest  mb-3">
                 Global WhatsApp
               </p>
               <a
                 href="https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white uppercase tracking-tight leading-none hover:text-white/70 transition-colors"
+                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none hover:text-white/70 transition-colors"
               >
                 +86 180-0555-0657
               </a>
@@ -451,7 +451,7 @@ export default function Contact() {
             <div className="border-t border-white/20 pt-8 mt-auto">
               <div className="space-y-4">
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest uppercase mb-1.5">
+                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
                     Factory Address
                   </p>
                   <p className="font-sans text-sm text-white leading-relaxed">
@@ -464,7 +464,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest uppercase mb-1.5">
+                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
                     Operating Hours
                   </p>
                   <p className="font-sans text-sm text-white leading-relaxed">
@@ -473,7 +473,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest uppercase mb-1.5">
+                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
                     Response Protocol
                   </p>
                   <p className="font-sans text-sm text-white leading-relaxed">
@@ -497,7 +497,7 @@ export default function Contact() {
                 key={i}
                 className="px-6 py-6 lg:px-10 lg:py-7 flex items-center justify-center text-center"
               >
-                <span className="font-mono text-[10px] font-bold tracking-[0.2em] text-white/70 uppercase leading-snug">
+                <span className="font-mono text-[10px] font-bold tracking-[0.2em] text-white/70  leading-snug">
                   {stamp}
                 </span>
               </div>

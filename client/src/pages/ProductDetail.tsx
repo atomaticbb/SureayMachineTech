@@ -53,7 +53,7 @@ export default function ProductDetail() {
             <h1 className="text-6xl font-black text-[#001f4d] mb-4">404</h1>
             <p className="text-xl text-slate-600 mb-8">Blade not found</p>
             <Link href="/products">
-              <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black uppercase tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
+              <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black  tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
                 Back to Blades
               </a>
             </Link>

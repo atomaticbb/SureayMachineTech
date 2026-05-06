@@ -64,7 +64,6 @@ export default function AdminLogin() {
                 fontSize: "11px",
                 fontWeight: 700,
                 letterSpacing: "0.3em",
-                textTransform: "uppercase",
                 marginBottom: "4px",
               }}
             >
@@ -76,7 +75,6 @@ export default function AdminLogin() {
                 fontSize: "22px",
                 fontWeight: 900,
                 letterSpacing: "0.05em",
-                textTransform: "uppercase",
               }}
             >
               Admin Portal
@@ -88,8 +86,8 @@ export default function AdminLogin() {
         <form
           onSubmit={handleSubmit}
           style={{
-            backgroundColor: "#002a63",
-            border: "1px solid #003d8f",
+            backgroundColor: "#001f4d",
+            border: "1px solid #001f4d",
             padding: "36px",
           }}
         >
@@ -120,7 +118,6 @@ export default function AdminLogin() {
                 fontSize: "11px",
                 fontWeight: 700,
                 letterSpacing: "0.2em",
-                textTransform: "uppercase",
                 marginBottom: "8px",
               }}
             >
@@ -137,7 +134,7 @@ export default function AdminLogin() {
               style={{
                 width: "100%",
                 backgroundColor: "#001f4d",
-                border: "1px solid #003d8f",
+                border: "1px solid #001f4d",
                 color: "#ffffff",
                 fontSize: "15px",
                 padding: "12px 14px",
@@ -145,7 +142,7 @@ export default function AdminLogin() {
                 boxSizing: "border-box",
               }}
               onFocus={e => (e.currentTarget.style.borderColor = "#e8b84b")}
-              onBlur={e => (e.currentTarget.style.borderColor = "#003d8f")}
+              onBlur={e => (e.currentTarget.style.borderColor = "#001f4d")}
             />
           </div>
 
@@ -159,7 +156,6 @@ export default function AdminLogin() {
                 fontSize: "11px",
                 fontWeight: 700,
                 letterSpacing: "0.2em",
-                textTransform: "uppercase",
                 marginBottom: "8px",
               }}
             >
@@ -175,7 +171,7 @@ export default function AdminLogin() {
               style={{
                 width: "100%",
                 backgroundColor: "#001f4d",
-                border: "1px solid #003d8f",
+                border: "1px solid #001f4d",
                 color: "#ffffff",
                 fontSize: "15px",
                 padding: "12px 14px",
@@ -183,7 +179,7 @@ export default function AdminLogin() {
                 boxSizing: "border-box",
               }}
               onFocus={e => (e.currentTarget.style.borderColor = "#e8b84b")}
-              onBlur={e => (e.currentTarget.style.borderColor = "#003d8f")}
+              onBlur={e => (e.currentTarget.style.borderColor = "#001f4d")}
             />
           </div>
 
@@ -199,7 +195,6 @@ export default function AdminLogin() {
               fontSize: "13px",
               fontWeight: 900,
               letterSpacing: "0.25em",
-              textTransform: "uppercase",
               padding: "14px",
               cursor: loading ? "not-allowed" : "pointer",
               transition: "background-color 0.15s",

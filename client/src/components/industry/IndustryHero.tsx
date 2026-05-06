@@ -51,15 +51,15 @@ export default function IndustryHero({ data }: Props) {
           {/* ── Left — Copy block ── */}
           <div className="flex flex-col justify-between py-10 lg:py-24 pl-0 sm:pl-2 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
             <div>
-              <p className="font-bold text-xs text-white/40 uppercase tracking-[0.45em] mb-8">
+              <p className="font-bold text-xs text-white/40  tracking-[0.45em] mb-8">
                 {data.breadcrumb}
               </p>
 
-              <h1 className="font-black text-[32px] lg:text-[36px] text-[#65AAD6] uppercase tracking-tight leading-[1.1] mb-5 max-w-[520px]">
+              <h1 className="font-black text-[32px] lg:text-[36px] text-[#65AAD6]  tracking-tight leading-[1.1] mb-5 max-w-[520px]">
                 {data.h1}
               </h1>
 
-              <h2 className="font-bold text-[13px] text-white/80 uppercase tracking-[0.2em] mb-7 max-w-[500px]">
+              <h2 className="font-bold text-[13px] text-white/80  tracking-[0.2em] mb-7 max-w-[500px]">
                 {data.h2}
               </h2>
 
@@ -75,7 +75,7 @@ export default function IndustryHero({ data }: Props) {
 
               <a
                 href={data.ctaHref}
-                className="self-start inline-block bg-white text-[#001f4d] font-black text-[13px] uppercase tracking-widest px-10 py-4 rounded-none hover:bg-slate-200 transition-colors duration-200"
+                className="self-start inline-block bg-white text-[#001f4d] font-black text-[13px]  tracking-widest px-10 py-4 rounded-none hover:bg-slate-200 transition-colors duration-200"
               >
                 [ View Tooling Matrix ]
               </a>
