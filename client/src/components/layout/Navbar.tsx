@@ -23,10 +23,9 @@ import { blades } from "../../data/blades";
 
 // ── Static nav links ─────────────────────────────────────────────────────────
 const NAV_LINKS = [
-  { label: "Custom", path: "/custom" },
   { label: "News", path: "/news" },
-  { label: "About", path: "/about" },
-  { label: "Contact", path: "/contact" },
+  { label: "About Us", path: "/about" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 // ── Sharp icons ───────────────────────────────────────────────────────────────
@@ -151,7 +150,7 @@ function ProductsCategoryMenu({ onClose }: { onClose: () => void }) {
               b => b.category === c.category
             ).length;
             return (
-              <Link key={c.slug} href={`/categories/${c.slug}`}>
+              <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
                 <a
                   onClick={onClose}
                   className="group cursor-pointer text-center"
@@ -676,7 +675,7 @@ export default function Navbar() {
                     >
                       <div className="pb-5">
                         {BLADE_CATEGORIES.map(c => (
-                          <Link key={c.slug} href={`/categories/${c.slug}`}>
+                          <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
                             <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
                               {c.shortName}
                             </div>

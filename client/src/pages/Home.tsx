@@ -3,13 +3,13 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import HomeHero from "@/components/home/HomeHero";
-import HomeStatsStrip from "@/components/home/HomeStatsStrip";
 import AuthorityCarousel from "@/components/home/AuthorityCarousel";
 import ManufacturingBlocks from "@/components/home/ManufacturingBlocks";
 import TabEcosystem from "@/components/home/TabEcosystem";
 import NewsGrid from "@/components/home/NewsGrid";
 import TechnicalFAQ from "@/components/home/TechnicalFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
+import HomeTestimonials from "@/components/home/HomeTestimonials";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
 const ITEM_LIST_LD = JSON.stringify({
@@ -66,11 +66,11 @@ export default function Home() {
       <div className="min-h-screen bg-slate-50 pt-[68px]">
         <Navbar />
         <HomeHero />
-        <HomeStatsStrip />
         <AuthorityCarousel />
         <TabEcosystem />
         <ManufacturingBlocks />
         <IndustryOemPipeline />
+        <HomeTestimonials />
         <TechnicalFAQ />
         <NewsGrid />
         <ContactRFQ />

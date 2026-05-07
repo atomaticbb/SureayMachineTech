@@ -15,10 +15,8 @@ import { getAllDispatches } from "@/data/news";
 
 const CATEGORIES: { value: string; label: string }[] = [
   { value: "ALL", label: "All" },
-  { value: "TECH INNOVATION", label: "Tech Innovation" },
-  { value: "PRODUCT GUIDE", label: "Product Guide" },
-  { value: "EXHIBITIONS", label: "Exhibitions" },
-  { value: "COMPANY UPDATES", label: "Company Updates" },
+  { value: "COMPANY NEWS", label: "Company News" },
+  { value: "INDUSTRY NEWS", label: "Industry News" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────

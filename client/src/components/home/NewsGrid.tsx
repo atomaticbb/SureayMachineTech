@@ -22,7 +22,7 @@ export default function NewsGrid() {
           </div>
           <Link href="/news">
             <span className="inline-flex items-center gap-2 text-xs font-black  tracking-widest text-[#003366] hover:text-[#001f4d] transition-colors border-b-2 border-[#003366] hover:border-[#001f4d] pb-0.5">
-              View All Dispatches
+              View All Articles
               <ArrowRight className="w-3.5 h-3.5" />
             </span>
           </Link>

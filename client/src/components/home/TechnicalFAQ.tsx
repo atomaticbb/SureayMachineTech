@@ -23,7 +23,7 @@ export default function TechnicalFAQ() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/75 via-[#001f4d]/40 to-[#001f4d]/30" />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-              <p className="text-[10px] font-bold  tracking-[0.3em] text-white/60 mb-3">
+              <p className="text-[11px] font-bold  tracking-[0.3em] text-white/60 mb-3">
                 RFQ Support
               </p>
               <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight leading-[1.05] mb-3">

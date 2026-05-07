@@ -308,6 +308,50 @@ export default function NewsDetail() {
                         </div>
                       </div>
                     );
+                  case "table":
+                    return (
+                      <div key={i} className="my-8 overflow-x-auto">
+                        <table className="w-full border-collapse border border-slate-300 text-[13px] lg:text-[14px]">
+                          {block.tableHeaders && block.tableHeaders.length > 0 && (
+                            <thead>
+                              <tr className="bg-[#001f4d]">
+                                {block.tableHeaders.map((header, hi) => (
+                                  <th
+                                    key={hi}
+                                    className="border border-slate-300 px-4 py-3 text-left font-mono text-[10px] tracking-widest text-white"
+                                  >
+                                    {header}
+                                  </th>
+                                ))}
+                              </tr>
+                            </thead>
+                          )}
+                          {block.tableRows && (
+                            <tbody>
+                              {block.tableRows.map((row, ri) => (
+                                <tr
+                                  key={ri}
+                                  className={
+                                    ri % 2 === 0
+                                      ? "bg-white"
+                                      : "bg-[#f8fafc]"
+                                  }
+                                >
+                                  {row.map((cell, ci) => (
+                                    <td
+                                      key={ci}
+                                      className="border border-slate-200 px-4 py-3 text-slate-700 leading-relaxed align-top"
+                                    >
+                                      {renderInlineLinks(cell)}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          )}
+                        </table>
+                      </div>
+                    );
                   default:
                     return (
                       <p
