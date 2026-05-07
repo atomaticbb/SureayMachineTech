@@ -1,5 +1,5 @@
 /**
- * news.ts �?Corporate Dispatches Data Layer
+ * news.ts — Corporate Dispatches Data Layer
  * Single source of truth for all news/dispatch articles.
  */
 
@@ -76,7 +76,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title:
       "One-size-fits-all? A quick reference chart of blade materials for different industries",
     excerpt:
-      "Which blade material is best for your industry? No single material fits every application. This quick reference chart helps procurement teams and engineers pinpoint the right blade material �?carbide, HSS, tool steel, or stainless �?for their specific processing environment.",
+      "Which blade material is best for your industry? No single material fits every application. This quick reference chart helps procurement teams and engineers pinpoint the right blade material — carbide, HSS, tool steel, or stainless — for their specific processing environment.",
     image: "/images/common/material-selection.webp",
     readTime: "5 MIN",
     seoTitle:
@@ -104,7 +104,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "h2",
-        value: "Industry vs. Recommended Blade Material �?Quick Reference",
+        value: "Industry vs. Recommended Blade Material — Quick Reference",
       },
       {
         type: "table",
@@ -119,11 +119,11 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
           [
             "Printing and packaging paper cutting (paper cutting blade, three-knife trimmer blade)",
             "High-speed steel (HSS) or powder metallurgy (PM)",
-            "Good toughness �?withstands frequent starts, stops, and minor impacts.",
+            "Good toughness — withstands frequent starts, stops, and minor impacts.",
           ],
           [
             "Plastic recycling and shredding (shredder blade)",
-            "Tool steel �?Cr12MoV / D2",
+            "Tool steel — Cr12MoV / D2",
             "High impact resistance, prevents cracking, and can be re-ground multiple times.",
           ],
           [
@@ -148,7 +148,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
           ],
           [
             "Press brake mold / shearing machine blade",
-            "Tool steel �?Cr12MoV / 42CrMo",
+            "Tool steel — Cr12MoV / 42CrMo",
             "High strength and deformation resistance, suitable for heavy-duty stamping.",
           ],
           [
@@ -165,7 +165,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "FOR LONG LIFESPAN & FEWER TOOL CHANGES �?Choose carbide. FOR TOUGHNESS & COST-EFFECTIVENESS �?Choose high-speed steel (HSS). FOR RUST PREVENTION & FOOD CONTACT �?Choose stainless steel. FOR IMPACT RESISTANCE & HEAVY-DUTY OPERATION �?Choose tool steel.",
+          "FOR LONG LIFESPAN & FEWER TOOL CHANGES → Choose carbide. FOR TOUGHNESS & COST-EFFECTIVENESS → Choose high-speed steel (HSS). FOR RUST PREVENTION & FOOD CONTACT → Choose stainless steel. FOR IMPACT RESISTANCE & HEAVY-DUTY OPERATION → Choose tool steel.",
       },
       {
         type: "h2",
@@ -174,7 +174,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Tell us your equipment model, processing materials, and daily output, and Sureay engineers will customize a material selection plan for you �?free of charge. [Contact us for a free consultation](/contact).",
+          "Tell us your equipment model, processing materials, and daily output, and Sureay engineers will customize a material selection plan for you — free of charge. [Contact us for a free consultation](/contact).",
       },
     ],
   },
@@ -217,7 +217,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "D2 is a high-carbon, high-chromium cold-work tool steel widely used in industrial blades. It offers a hardness range of 55�?2 HRC with excellent wear resistance, good dimensional stability, and easy regrindability �?making it cost-effective for most applications.",
+          "D2 is a high-carbon, high-chromium cold-work tool steel widely used in industrial blades. It offers a hardness range of 55–2 HRC with excellent wear resistance, good dimensional stability, and easy regrindability — making it cost-effective for most applications.",
       },
       {
         type: "callout",
@@ -229,7 +229,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "SKD-11 is the Japanese JIS standard equivalent to D2. Properties are very similar but SKD-11 often shows slightly improved hardenability, toughness, and wear resistance consistency. It reaches 56�?1 HRC and is favored in precision cutting knives, die cutting tools, and industrial machine blades where tighter tolerances are required.",
+          "SKD-11 is the Japanese JIS standard equivalent to D2. Properties are very similar but SKD-11 often shows slightly improved hardenability, toughness, and wear resistance consistency. It reaches 56–1 HRC and is favored in precision cutting knives, die cutting tools, and industrial machine blades where tighter tolerances are required.",
       },
       {
         type: "callout",
@@ -241,7 +241,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Tungsten carbide is a sintered composite material made of tungsten carbide particles bonded with cobalt. It is significantly harder than tool steel, reaching 1500�?500 HV. It provides extremely high wear resistance and excellent edge retention, but has low impact resistance and higher manufacturing cost.",
+          "Tungsten carbide is a sintered composite material made of tungsten carbide particles bonded with cobalt. It is significantly harder than tool steel, reaching 1500–500 HV. It provides extremely high wear resistance and excellent edge retention, but has low impact resistance and higher manufacturing cost.",
       },
       {
         type: "callout",
@@ -253,7 +253,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Hardness �?D2: 55�?2 HRC | SKD-11: 56�?1 HRC | Tungsten Carbide: 1500�?500 HV. Wear Resistance �?D2: High | SKD-11: High | Carbide: Extremely High. Toughness �?D2: Medium | SKD-11: Medium-High | Carbide: Low. Regrinding �?D2: Easy | SKD-11: Easy | Carbide: Difficult. Cost �?D2: Medium | SKD-11: Medium-High | Carbide: High. Impact Resistance �?D2: Moderate | SKD-11: Moderate | Carbide: Low.",
+          "Hardness — D2: 55–2 HRC | SKD-11: 56–1 HRC | Tungsten Carbide: 1500–500 HV. Wear Resistance — D2: High | SKD-11: High | Carbide: Extremely High. Toughness — D2: Medium | SKD-11: Medium-High | Carbide: Low. Regrinding — D2: Easy | SKD-11: Easy | Carbide: Difficult. Cost — D2: Medium | SKD-11: Medium-High | Carbide: High. Impact Resistance — D2: Moderate | SKD-11: Moderate | Carbide: Low.",
       },
 
       { type: "h2", value: "Material Selection Guide" },
@@ -282,7 +282,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "RELATIVE BLADE LIFESPAN �?D2 Steel: 6/10 | SKD-11 Steel: 7/10 | Tungsten Carbide: 10/10. Measured under standardized abrasive cutting conditions. Actual lifespan varies by application, feed rate, and material being processed.",
+          "RELATIVE BLADE LIFESPAN — D2 Steel: 6/10 | SKD-11 Steel: 7/10 | Tungsten Carbide: 10/10. Measured under standardized abrasive cutting conditions. Actual lifespan varies by application, feed rate, and material being processed.",
       },
 
       { type: "h2", value: "Maintenance Strategy" },
@@ -296,12 +296,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          '"Harder is always better" �?Not necessarily. Higher hardness often means lower toughness, increasing fracture risk. The optimal material balances hardness against the specific impact and fatigue demands of your application.',
+          '"Harder is always better" — Not necessarily. Higher hardness often means lower toughness, increasing fracture risk. The optimal material balances hardness against the specific impact and fatigue demands of your application.',
       },
       {
         type: "paragraph",
         value:
-          '"Carbide works for every application" �?Carbide performs poorly in high-impact environments. Selecting carbide for the wrong scenario leads to unexpected blade breakage and higher total cost than a well-chosen tool steel.',
+          '"Carbide works for every application" — Carbide performs poorly in high-impact environments. Selecting carbide for the wrong scenario leads to unexpected blade breakage and higher total cost than a well-chosen tool steel.',
       },
 
       { type: "h2", value: "Quick Selection Checklist" },
@@ -315,7 +315,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Selecting the right blade material balances durability, cost, maintenance, and cutting precision. Use tungsten carbide for high-wear environments where longevity justifies the investment. Use D2 or SKD-11 for most industrial cutting applications where regrindability and cost matter. Always consider impact loads before selecting carbide �?a well-chosen material can significantly reduce production downtime and operational cost.",
+          "Selecting the right blade material balances durability, cost, maintenance, and cutting precision. Use tungsten carbide for high-wear environments where longevity justifies the investment. Use D2 or SKD-11 for most industrial cutting applications where regrindability and cost matter. Always consider impact loads before selecting carbide — a well-chosen material can significantly reduce production downtime and operational cost.",
       },
     ],
   },
@@ -412,7 +412,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "[Contact Sureay Engineering Today](/contact) �?Send us your drawings or OEM part numbers for a fast, technical evaluation and quote.",
+          "[Contact Sureay Engineering Today](/contact) — Send us your drawings or OEM part numbers for a fast, technical evaluation and quote.",
       },
     ],
   },
@@ -447,7 +447,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          'When processing mixed bales of plastics or wood, shredder rotors inevitably encounter "tramp metal" �?stray steel bolts, engine blocks, or hidden rebar. When a high-speed shredder blade hits a solid steel inclusion, the kinetic energy is massive. If your blades are made from the wrong metallurgical grade, they won\'t just dull; they will catastrophically shatter, destroying the rotor shaft and halting your entire line for days.',
+          'When processing mixed bales of plastics or wood, shredder rotors inevitably encounter "tramp metal" — stray steel bolts, engine blocks, or hidden rebar. When a high-speed shredder blade hits a solid steel inclusion, the kinetic energy is massive. If your blades are made from the wrong metallurgical grade, they won\'t just dull; they will catastrophically shatter, destroying the rotor shaft and halting your entire line for days.',
       },
       {
         type: "paragraph",
@@ -462,7 +462,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "For decades, D2 (1.2379) cold-work tool steel has been the default choice for industrial cutting. Packed with 1.5% Carbon and 12% Chromium, D2 hardens beautifully to HRC 60�?2, offering fantastic wear resistance when cutting clean, predictable materials like paper or pure plastic films.",
+          "For decades, D2 (1.2379) cold-work tool steel has been the default choice for industrial cutting. Packed with 1.5% Carbon and 12% Chromium, D2 hardens beautifully to HRC 60–2, offering fantastic wear resistance when cutting clean, predictable materials like paper or pure plastic films.",
       },
       {
         type: "paragraph",
@@ -491,7 +491,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Originally developed for hot-forging dies, H13 hot-work tool steel is the undisputed champion of the scrap yard. It contains lower carbon (0.40%) and utilizes a chromium-molybdenum-vanadium matrix. Hardened to a slightly lower HRC 52�?6, H13 possesses massive core toughness. When an H13 [twin-shaft shredder blade](/products/twin-shaft-blades-recycling) hits a solid steel engine block, the blade might dent or deform elastically, but it will not shatter. This shock-absorbing characteristic saves the shredder's gearbox, hexagonal shaft, and bearings from catastrophic failure.",
+          "Originally developed for hot-forging dies, H13 hot-work tool steel is the undisputed champion of the scrap yard. It contains lower carbon (0.40%) and utilizes a chromium-molybdenum-vanadium matrix. Hardened to a slightly lower HRC 52–6, H13 possesses massive core toughness. When an H13 [twin-shaft shredder blade](/products/twin-shaft-blades-recycling) hits a solid steel engine block, the blade might dent or deform elastically, but it will not shatter. This shock-absorbing characteristic saves the shredder's gearbox, hexagonal shaft, and bearings from catastrophic failure.",
       },
 
       {
@@ -506,12 +506,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The answer is Hardfacing (Surface Welding). Leading tooling manufacturers take a tough, shatter-proof core (like H13 or customized alloy steel) and use PTA (Plasma Transferred Arc) welding to overlay a super-hard armor matrix �?such as Stellite or Tungsten Carbide grit �?directly onto the cutting hooks and wear faces.",
+          "The answer is Hardfacing (Surface Welding). Leading tooling manufacturers take a tough, shatter-proof core (like H13 or customized alloy steel) and use PTA (Plasma Transferred Arc) welding to overlay a super-hard armor matrix — such as Stellite or Tungsten Carbide grit — directly onto the cutting hooks and wear faces.",
       },
       {
         type: "callout",
         value:
-          "BIMETALLIC CONSTRUCTION: A blade that absorbs explosive impacts internally, while resisting severe abrasive wear externally �?the holy grail of shredding.",
+          "BIMETALLIC CONSTRUCTION: A blade that absorbs explosive impacts internally, while resisting severe abrasive wear externally — the holy grail of shredding.",
       },
 
       { type: "h2", value: "Maximizing Your Shredder's Uptime" },
@@ -551,7 +551,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Since the original Ma'anshan facility commissioning in 2008, Sureay Machinery has operated under a constrained floor footprint of 10,000 m². The structural limitation reached critical threshold in Q3 2023, when incoming OEM order volume exceeded single-shift throughput capacity by 23%. A systematic capacity audit �?conducted jointly by our operations and metallurgical engineering teams �?identified three bottleneck nodes: raw stock pre-treatment staging, 5-axis CNC queue depth, and post-heat-treatment CMM throughput.",
+          "Since the original Ma'anshan facility commissioning in 2008, Sureay Machinery has operated under a constrained floor footprint of 10,000 m². The structural limitation reached critical threshold in Q3 2023, when incoming OEM order volume exceeded single-shift throughput capacity by 23%. A systematic capacity audit — conducted jointly by our operations and metallurgical engineering teams — identified three bottleneck nodes: raw stock pre-treatment staging, 5-axis CNC queue depth, and post-heat-treatment CMM throughput.",
       },
       {
         type: "paragraph",
@@ -567,7 +567,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The new wing incorporates six Mazak VARIAXIS i-800 5-axis machining centers, each rated for ±0.002 mm positional repeatability under continuous-duty thermal load. Coolant management has been upgraded to a closed-loop chiller system maintaining ±0.5°C spindle temperature stability �?a critical variable for maintaining dimensional consistency across long-run blade batches.",
+          "The new wing incorporates six Mazak VARIAXIS i-800 5-axis machining centers, each rated for ±0.002 mm positional repeatability under continuous-duty thermal load. Coolant management has been upgraded to a closed-loop chiller system maintaining ±0.5°C spindle temperature stability — a critical variable for maintaining dimensional consistency across long-run blade batches.",
       },
       {
         type: "paragraph",
@@ -584,23 +584,23 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "OPERATIONAL DATA �?CNC spindle utilization: Previous 71% �?Phase III target 85%. Heat treatment throughput: Previous 1,200 kg/week �?Phase III 1,920 kg/week. CMM inspection throughput: Previous 340 parts/day �?Phase III 520 parts/day.",
+          "OPERATIONAL DATA — CNC spindle utilization: Previous 71% — Phase III target 85%. Heat treatment throughput: Previous 1,200 kg/week — Phase III 1,920 kg/week. CMM inspection throughput: Previous 340 parts/day — Phase III 520 parts/day.",
       },
       {
         type: "paragraph",
         value:
-          "The expanded CNC grid enables parallel scheduling across product families �?[shredder blade](/products/twin-shaft-blades-recycling) runs can now proceed concurrently with [log saw blade](/products/tissue-log-saw-blades) batches without resource contention. This architectural separation of machine types by product vertical minimizes setup changeover time and preserves dedicated tooling inventories per product line.",
+          "The expanded CNC grid enables parallel scheduling across product families — [shredder blade](/products/twin-shaft-blades-recycling) runs can now proceed concurrently with [log saw blade](/products/tissue-log-saw-blades) batches without resource contention. This architectural separation of machine types by product vertical minimizes setup changeover time and preserves dedicated tooling inventories per product line.",
       },
       { type: "h2", value: "Quality Protocol Integration" },
       {
         type: "paragraph",
         value:
-          "Phase III operations are governed under the existing ISO 9001:2015 QMS framework, with scope extension formally filed with our SGS certification body in August 2024. All Phase III equipment has been incorporated into the calibration and preventive maintenance schedule, with baseline capability studies (Cpk �?1.67) completed on all new machining centers prior to production release.",
+          "Phase III operations are governed under the existing ISO 9001:2015 QMS framework, with scope extension formally filed with our SGS certification body in August 2024. All Phase III equipment has been incorporated into the calibration and preventive maintenance schedule, with baseline capability studies (Cpk ≥1.67) completed on all new machining centers prior to production release.",
       },
       {
         type: "paragraph",
         value:
-          "Material traceability has been extended to full heat lot-level tracking across the new furnace units, ensuring end-to-end documentation from incoming steel certification to outbound dimensional report �?maintaining unchanged protocol integrity from the legacy facility.",
+          "Material traceability has been extended to full heat lot-level tracking across the new furnace units, ensuring end-to-end documentation from incoming steel certification to outbound dimensional report — maintaining unchanged protocol integrity from the legacy facility.",
       },
       { type: "h2", value: "Deployment Timeline" },
       {
@@ -780,17 +780,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Conventional quench-and-temper heat treatment leaves 10�?0% retained austenite in high-alloy tool steels such as D2, M2, and the CPM series. This metastable phase reduces hardness ceiling and accelerates micro-spalling at the cutting edge under cyclic impact loading �?a primary failure mode in plastic film and pipe recycling applications.",
+          "Conventional quench-and-temper heat treatment leaves 10–0% retained austenite in high-alloy tool steels such as D2, M2, and the CPM series. This metastable phase reduces hardness ceiling and accelerates micro-spalling at the cutting edge under cyclic impact loading — a primary failure mode in plastic film and pipe recycling applications.",
       },
       {
         type: "paragraph",
         value:
-          "Deep cryogenic processing (DCP) at -196°C transforms residual austenite to martensite, increasing carbide density at the matrix level. Independent laboratory analysis of DCP-treated D2 specimens shows a 12�?8% improvement in wear resistance (ASTM G65 dry-sand rubber-wheel test) versus conventionally treated controls.",
+          "Deep cryogenic processing (DCP) at -196°C transforms residual austenite to martensite, increasing carbide density at the matrix level. Independent laboratory analysis of DCP-treated D2 specimens shows a 12–8% improvement in wear resistance (ASTM G65 dry-sand rubber-wheel test) versus conventionally treated controls.",
       },
       {
         type: "callout",
         value:
-          "TEST DATA: D2 blade, conventional treatment �?wear scar depth 0.42 mm after 6,000 revolution test cycle. D2 blade, DCP post-treatment �?wear scar depth 0.36 mm. Improvement: 14.3% reduction in material loss at equivalent load and abrasion conditions.",
+          "TEST DATA: D2 blade, conventional treatment — wear scar depth 0.42 mm after 6,000 revolution test cycle. D2 blade, DCP post-treatment — wear scar depth 0.36 mm. Improvement: 14.3% reduction in material loss at equivalent load and abrasion conditions.",
       },
       { type: "h2", value: "Process Protocol" },
       {
@@ -826,7 +826,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "K 2024 (Düsseldorf, October 16�?3) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth [single-shaft shredder blade](/products/single-shaft-rotor-inserts) series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
+          "K 2024 (Düsseldorf, October 16–3) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth [single-shaft shredder blade](/products/single-shaft-rotor-inserts) series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
       },
       {
         type: "callout",
@@ -837,7 +837,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The new geometry features a 15° positive rake angle with a sharpened secondary land profile, reducing initial bite force while maintaining edge stability over extended run cycles. Compared to the outgoing flat-top profile, lab trials on 6 mm HDPE sheet show a 22% reduction in motor current draw at equivalent feed rate �?directly translating to energy cost savings for the end operator.",
+          "The new geometry features a 15° positive rake angle with a sharpened secondary land profile, reducing initial bite force while maintaining edge stability over extended run cycles. Compared to the outgoing flat-top profile, lab trials on 6 mm HDPE sheet show a 22% reduction in motor current draw at equivalent feed rate — directly translating to energy cost savings for the end operator.",
       },
     ],
   },
@@ -860,7 +860,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "[Tissue log saw blades](/products/tissue-log-saw-blades) operating in wet environments (drum moisture content 8�?2%) are subject to adhesive wear from cellulose fibre accumulation at the cutting edge, and corrosive attack from free chlorine in process water. This study benchmarks PVD-deposited TiN and hard chrome coatings against uncoated D2 baseline across friction, adhesion, and service-life metrics.",
+          "[Tissue log saw blades](/products/tissue-log-saw-blades) operating in wet environments (drum moisture content 8–2%) are subject to adhesive wear from cellulose fibre accumulation at the cutting edge, and corrosive attack from free chlorine in process water. This study benchmarks PVD-deposited TiN and hard chrome coatings against uncoated D2 baseline across friction, adhesion, and service-life metrics.",
       },
       {
         type: "callout",
@@ -888,7 +888,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "TiN coating adds approximately 3�? μm to nominal blade dimensions. Specifying engineers should account for this in mounting clearance calculations. Re-coating after sharpening is available as a service and restores full friction and corrosion performance with no dimensional penalty beyond standard re-grind stock removal.",
+          "TiN coating adds approximately 3–5 μm to nominal blade dimensions. Specifying engineers should account for this in mounting clearance calculations. Re-coating after sharpening is available as a service and restores full friction and corrosion performance with no dimensional penalty beyond standard re-grind stock removal.",
       },
     ],
   },
@@ -910,7 +910,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The triennial ISO 9001:2015 surveillance audit was conducted by SGS Group auditors on 10�?1 June 2024, covering the full scope of the Ma'anshan Quality Management System: design and development, production of [industrial blades and cutting knives](/products), inspection and testing, internal audit, management review, and corrective action processes.",
+          "The triennial ISO 9001:2015 surveillance audit was conducted by SGS Group auditors on 10–1 June 2024, covering the full scope of the Ma'anshan Quality Management System: design and development, production of [industrial blades and cutting knives](/products), inspection and testing, internal audit, management review, and corrective action processes.",
       },
       {
         type: "callout",
@@ -948,7 +948,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "GUIDELINE: For tissue logs �?80 mm diameter at speeds above 2,500 RPM, a 32° included angle with 0.15 mm secondary bevel is the recommended starting specification. Increase to 36° for logs containing recycled fibre content >30%.",
+          "GUIDELINE: For tissue logs ≥80 mm diameter at speeds above 2,500 RPM, a 32° included angle with 0.15 mm secondary bevel is the recommended starting specification. Increase to 36° for logs containing recycled fibre content >30%.",
       },
       { type: "h2", value: "Crown Profile and Deflection" },
       {
@@ -965,7 +965,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title:
       "Daily maintenance checklist: scraper blades & filter plates for continuous melt filters",
     excerpt:
-      "A step-by-step daily, weekly, and monthly maintenance guide for continuous melt filter scraper blades and filter plates �?with a printable inspection checklist to extend service life and eliminate unplanned downtime on PCR recycling lines.",
+      "A step-by-step daily, weekly, and monthly maintenance guide for continuous melt filter scraper blades and filter plates — with a printable inspection checklist to extend service life and eliminate unplanned downtime on PCR recycling lines.",
     image: "/images/products/blades/scraper-blades-01.webp",
     readTime: "6 MIN",
     relatedProductIds: ["continuous-melt-filter-scraper-blades"],
@@ -973,17 +973,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Continuous melt filters achieve automatic slag removal by combining a high-precision microporous filter plate with a rotating scraper blade that continuously cleans its surface �?eliminating the frequent manual screen changes required by conventional screen changers. However, the [scraper blade and filter plate](/products/continuous-melt-filter-scraper-blades) are wear consumables. Non-standard operation and deferred maintenance accelerate failure, increase replacement costs, and force the unplanned line stops that continuous filtration was designed to prevent.",
+          "Continuous melt filters achieve automatic slag removal by combining a high-precision microporous filter plate with a rotating scraper blade that continuously cleans its surface — eliminating the frequent manual screen changes required by conventional screen changers. However, the [scraper blade and filter plate](/products/continuous-melt-filter-scraper-blades) are wear consumables. Non-standard operation and deferred maintenance accelerate failure, increase replacement costs, and force the unplanned line stops that continuous filtration was designed to prevent.",
       },
       {
         type: "paragraph",
         value:
-          "The maintenance programme below is organised into three frequencies �?daily, weekly, and monthly �?plus a dedicated filter plate deep-cleaning procedure. A printable inspection checklist is attached at the end of the article.",
+          "The maintenance programme below is organised into three frequencies — daily, weekly, and monthly — plus a dedicated filter plate deep-cleaning procedure. A printable inspection checklist is attached at the end of the article.",
       },
 
       {
         type: "h2",
-        value: "�? Daily Inspection (Before and After Each Startup)",
+        value: "Daily Inspection (Before and After Each Startup)",
       },
       { type: "h3", value: "1. Listen" },
       {
@@ -995,7 +995,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Confirm slag discharge is flowing smoothly and continuously �?intermittent or absent discharge indicates a blocked discharge port or degraded scraper contact. Check for melt leakage around the filter head seals. Verify that pneumatic or hydraulic supply pressure is stable and within the OEM-specified range; pressure fluctuations directly affect scraper contact force and filtration consistency.",
+          "Confirm slag discharge is flowing smoothly and continuously — intermittent or absent discharge indicates a blocked discharge port or degraded scraper contact. Check for melt leakage around the filter head seals. Verify that pneumatic or hydraulic supply pressure is stable and within the OEM-specified range; pressure fluctuations directly affect scraper contact force and filtration consistency.",
       },
       { type: "h3", value: "3. Clean" },
       {
@@ -1007,15 +1007,15 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Log any observed abnormality �?noise, pressure deviation, leakage, incomplete slag discharge �?immediately in the maintenance ledger. If a fault cannot be attributed to a known cause, shut down and troubleshoot rather than continuing production. Undiagnosed progressive faults on scraper-type filters typically escalate to filter plate damage, which is significantly more costly to repair than the blade itself.",
+          "Log any observed abnormality — noise, pressure deviation, leakage, incomplete slag discharge — immediately in the maintenance ledger. If a fault cannot be attributed to a known cause, shut down and troubleshoot rather than continuing production. Undiagnosed progressive faults on scraper-type filters typically escalate to filter plate damage, which is significantly more costly to repair than the blade itself.",
       },
 
-      { type: "h2", value: "�? Weekly Maintenance" },
+      { type: "h2", value: "Weekly Maintenance" },
       { type: "h3", value: "1. Inspect the Blade Edge" },
       {
         type: "paragraph",
         value:
-          "Remove the scraper blade from its holder and inspect the cutting edge under adequate lighting. Look for notches, chipped sections, rolled edge, or uneven wear across the blade width. Any notch �?even a small one �?must be treated as a mandatory replacement trigger. A notched blade does not clean the filter plate evenly: the gap left by the notch allows contaminant cake to bypass the scraping action, progressively building up into a solid deposit that scores the filter plate surface on subsequent rotations.",
+          "Remove the scraper blade from its holder and inspect the cutting edge under adequate lighting. Look for notches, chipped sections, rolled edge, or uneven wear across the blade width. Any notch — even a small one — must be treated as a mandatory replacement trigger. A notched blade does not clean the filter plate evenly: the gap left by the notch allows contaminant cake to bypass the scraping action, progressively building up into a solid deposit that scores the filter plate surface on subsequent rotations.",
       },
       {
         type: "callout",
@@ -1032,10 +1032,10 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Inspect all pneumatic lines for leaks and loose fittings. Drain accumulated water from the air filter bowl �?water in the pneumatic circuit causes corrosion of actuator seals and unpredictable variation in scraper contact force. Check the oil mist lubricator reservoir and refill if below the minimum level. Dry-running pneumatic actuators wear seal surfaces rapidly, leading to pressure loss and inconsistent blade contact.",
+          "Inspect all pneumatic lines for leaks and loose fittings. Drain accumulated water from the air filter bowl — water in the pneumatic circuit causes corrosion of actuator seals and unpredictable variation in scraper contact force. Check the oil mist lubricator reservoir and refill if below the minimum level. Dry-running pneumatic actuators wear seal surfaces rapidly, leading to pressure loss and inconsistent blade contact.",
       },
 
-      { type: "h2", value: "�? Monthly Maintenance" },
+      { type: "h2", value: "Monthly Maintenance" },
       { type: "h3", value: "1. Disassemble and Thoroughly Clean" },
       {
         type: "paragraph",
@@ -1058,43 +1058,43 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Inspect all sealing rings and dust rings for aging (hardening, cracking, loss of elasticity), oil leakage, or air leakage. Replace any seal showing visible degradation �?operating with a compromised seal allows melt infiltration into the actuator mechanism, leading to rapid bearing and seal failure requiring complete assembly replacement.",
+          "Inspect all sealing rings and dust rings for aging (hardening, cracking, loss of elasticity), oil leakage, or air leakage. Replace any seal showing visible degradation — operating with a compromised seal allows melt infiltration into the actuator mechanism, leading to rapid bearing and seal failure requiring complete assembly replacement.",
       },
 
       {
         type: "h2",
-        value: "�? Filter Plate Deep Cleaning: The Five-Step Method",
+        value: "Filter Plate Deep Cleaning: The Five-Step Method",
       },
       {
         type: "paragraph",
         value:
           "When differential pressure rises progressively despite a new blade and correct scraper contact force, the microporous filter plate requires deep cleaning to remove embedded contaminants that scraping cannot reach. The five-step procedure below is suitable for field cleaning without specialist equipment.",
       },
-      { type: "h3", value: "Step 1 �?Plastic Burn-Off" },
+      { type: "h3", value: "Step 1 — Plastic Burn-Off" },
       {
         type: "paragraph",
         value:
-          "Remove the filter plate. Apply a thin coat of waste engine oil to the downstream (back) face as a release agent, oil-face down. Place on a grate over a heat source and burn off residual polymer. Work in a well-ventilated area. Do not overheat �?sustained temperatures above 600°C can relieve the plasma-nitrided surface hardness.",
+          "Remove the filter plate. Apply a thin coat of waste engine oil to the downstream (back) face as a release agent, oil-face down. Place on a grate over a heat source and burn off residual polymer. Work in a well-ventilated area. Do not overheat — sustained temperatures above 600°C can relieve the plasma-nitrided surface hardness.",
       },
-      { type: "h3", value: "Step 2 �?Flatten and Reshape" },
+      { type: "h3", value: "Step 2 — Flatten and Reshape" },
       {
         type: "paragraph",
         value:
           "While still warm and pliable after burn-off, clamp the plate firmly between two flat surfaces (ceramic tiles or steel plates) to correct any warpage from thermal gradient. Hold under clamping pressure until cooled to ambient temperature.",
       },
-      { type: "h3", value: "Step 3 �?High-Pressure Water Rinse" },
+      { type: "h3", value: "Step 3 — High-Pressure Water Rinse" },
       {
         type: "paragraph",
         value:
-          "Flush both faces with a high-pressure water gun, directing the jet perpendicular to the perforation array to drive out embedded particles �?metal wire, sand, calcium carbonate, glass fibre �?from the conical bore channels. Inspect against a backlight source after rinsing: blocked holes appear as dark spots.",
+          "Flush both faces with a high-pressure water gun, directing the jet perpendicular to the perforation array to drive out embedded particles — metal wire, sand, calcium carbonate, glass fibre — from the conical bore channels. Inspect against a backlight source after rinsing: blocked holes appear as dark spots.",
       },
-      { type: "h3", value: "Step 4 �?Compressed Air Blow-Dry" },
+      { type: "h3", value: "Step 4 — Compressed Air Blow-Dry" },
       {
         type: "paragraph",
         value:
           "Blow the plate dry from both faces with clean, dry compressed air, paying particular attention to moisture retention within the micro-perforations. Residual water accelerates corrosion within the bore channels during storage.",
       },
-      { type: "h3", value: "Step 5 �?Rust Prevention and Storage" },
+      { type: "h3", value: "Step 5 — Rust Prevention and Storage" },
       {
         type: "paragraph",
         value:
@@ -1108,12 +1108,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "CONTINUOUS MELT FILTER �?SCRAPER BLADE & FILTER PLATE INSPECTION CHECKLIST\n\n�?Blade Edge �?No notch, burr, chipped section, or uneven wear across full width\n�?Blade Holder Fixing �?All screws tight, no deformation or looseness\n�?Air / Oil Circuit �?No leaks, supply pressure stable, oil mist lubricator filled\n�?Scraper Fit �?Full-width contact with filter plate, no local suspension\n�?Operation �?No abnormal noise, vibration, or resistance during rotation\n�?Slag Discharge �?Continuous, unobstructed flow from discharge port\n�?Cleanliness �?No hardened or dry material in blade holder or discharge port\n�?Seal Components �?No aging, cracking, oil leakage, or air leakage\n\nRecord inspection date, operator name, and any corrective actions. Retain for a minimum of 12 months.",
+          "CONTINUOUS MELT FILTER — SCRAPER BLADE & FILTER PLATE INSPECTION CHECKLIST\n\n— Blade Edge — No notch, burr, chipped section, or uneven wear across full width\n— Blade Holder Fixing — All screws tight, no deformation or looseness\n— Air / Oil Circuit — No leaks, supply pressure stable, oil mist lubricator filled\n— Scraper Fit — Full-width contact with filter plate, no local suspension\n— Operation — No abnormal noise, vibration, or resistance during rotation\n— Slag Discharge — Continuous, unobstructed flow from discharge port\n— Cleanliness — No hardened or dry material in blade holder or discharge port\n— Seal Components — No aging, cracking, oil leakage, or air leakage\n\nRecord inspection date, operator name, and any corrective actions. Retain for a minimum of 12 months.",
       },
       {
         type: "paragraph",
         value:
-          "It is recommended to complete and sign off the checklist after each maintenance event, building a traceable ledger that allows early detection of developing trends �?increasing wear rate, recurring leaks, progressive pressure rise �?before they escalate to unplanned downtime.",
+          "It is recommended to complete and sign off the checklist after each maintenance event, building a traceable ledger that allows early detection of developing trends — increasing wear rate, recurring leaks, progressive pressure rise — before they escalate to unplanned downtime.",
       },
       {
         type: "paragraph",
@@ -1129,7 +1129,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title:
       "Alloy blade vs high-speed steel: lifespan & cost guide for high-speed paper cutters",
     excerpt:
-      "Tungsten carbide alloy blades last 5�?0× longer than high-speed steel on paper cutters �?but is the higher upfront cost justified? A practical comparison of hardness, service life, and total cost of ownership to help you choose the right blade for your operation.",
+      "Tungsten carbide alloy blades last 5–0× longer than high-speed steel on paper cutters — but is the higher upfront cost justified? A practical comparison of hardness, service life, and total cost of ownership to help you choose the right blade for your operation.",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     readTime: "5 MIN",
     relatedProductIds: ["paper-cutting-blades"],
@@ -1148,29 +1148,29 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Alloy blades are made from tungsten carbide as the base material, achieving a hardness of HRC 89�?3 with extremely high wear resistance. The trade-off is brittleness �?tungsten carbide is sensitive to impact loads. High-speed steel blades reach HRC 62�?5; wear resistance is lower, but toughness is significantly better and they can absorb impact loads that would chip a carbide edge.",
+          "Alloy blades are made from tungsten carbide as the base material, achieving a hardness of HRC 89–3 with extremely high wear resistance. The trade-off is brittleness — tungsten carbide is sensitive to impact loads. High-speed steel blades reach HRC 62–5; wear resistance is lower, but toughness is significantly better and they can absorb impact loads that would chip a carbide edge.",
       },
       {
         type: "callout",
         value:
-          "HARDNESS COMPARISON �?Alloy (Tungsten Carbide): HRC 89�?3, extremely high wear resistance, brittle under impact. HSS: HRC 62�?5, good wear resistance, high impact toughness, suitable for shock loads.",
+          "HARDNESS COMPARISON — Alloy (Tungsten Carbide): HRC 89–3, extremely high wear resistance, brittle under impact. HSS: HRC 62–5, good wear resistance, high impact toughness, suitable for shock loads.",
       },
 
       { type: "h2", value: "2. Service Life Comparison" },
       {
         type: "paragraph",
         value:
-          "In high-speed paper cutting applications, the lifespan of alloy blades is 5�?0 times that of high-speed steel blades.",
+          "In high-speed paper cutting applications, the lifespan of alloy blades is 5–0 times that of high-speed steel blades.",
       },
       {
         type: "paragraph",
         value:
-          "High-speed steel blade: Under normal operating conditions, cutting mileage is approximately 10,000�?0,000 metres. In the packaging industry, published service life benchmarks reach approximately 200,000 metres. HSS remains the most widely used solution in most packaging factories due to its lower initial cost and ease of regrinding.",
+          "High-speed steel blade: Under normal operating conditions, cutting mileage is approximately 10,000–0,000 metres. In the packaging industry, published service life benchmarks reach approximately 200,000 metres. HSS remains the most widely used solution in most packaging factories due to its lower initial cost and ease of regrinding.",
       },
       {
         type: "paragraph",
         value:
-          "Alloy (carbide) blade: Cutting mileage can reach 50,000�?00,000 metres. The service life of premium-grade alloy blades reaches 4�? million metres in optimised conditions. Strong wear resistance and sustained edge retention significantly reduce blade-change stoppages and improve overall equipment effectiveness.",
+          "Alloy (carbide) blade: Cutting mileage can reach 50,000–00,000 metres. The service life of premium-grade alloy blades reaches 4+ million metres in optimised conditions. Strong wear resistance and sustained edge retention significantly reduce blade-change stoppages and improve overall equipment effectiveness.",
       },
       {
         type: "image",
@@ -1181,12 +1181,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The unit price of alloy blades is approximately 10 times that of high-speed steel blades �?the primary reason many buyers hesitate. However, total cost of ownership tells a different story.",
+          "The unit price of alloy blades is approximately 10 times that of high-speed steel blades — the primary reason many buyers hesitate. However, total cost of ownership tells a different story.",
       },
       {
         type: "callout",
         value:
-          "TOTAL COST BREAKDOWN �?Single purchase cost: Alloy blade HIGH (�?0× HSS) | HSS blade LOW. Replacement & regrind frequency: Alloy LOW | HSS HIGH. Downtime loss: Alloy LOW | HSS HIGH. Long-term comprehensive cost: Alloy LOWER | HSS HIGHER.",
+          "TOTAL COST BREAKDOWN — Single purchase cost: Alloy blade HIGH (~10× HSS) | HSS blade LOW. Replacement & regrind frequency: Alloy LOW | HSS HIGH. Downtime loss: Alloy LOW | HSS HIGH. Long-term comprehensive cost: Alloy LOWER | HSS HIGHER.",
       },
       {
         type: "paragraph",
@@ -1202,22 +1202,22 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "24-hour continuous production �?Alloy blade. Long service life, minimal blade changes, low downtime losses, and the lowest overall cost per metre cut.",
+          "24-hour continuous production — Alloy blade. Long service life, minimal blade changes, low downtime losses, and the lowest overall cost per metre cut.",
       },
       {
         type: "paragraph",
         value:
-          "Small batch sizes or multiple substrate varieties �?High-speed steel blade. Low initial investment, simpler regrinding workflow, and high operational flexibility.",
+          "Small batch sizes or multiple substrate varieties — High-speed steel blade. Low initial investment, simpler regrinding workflow, and high operational flexibility.",
       },
       {
         type: "paragraph",
         value:
-          "Cutting high-ash-content paper, art paper, or corrugated board �?Alloy blade. Abrasive substrates accelerate HSS edge passivation quickly; carbide wear resistance is essential to maintain cut quality.",
+          "Cutting high-ash-content paper, art paper, or corrugated board — Alloy blade. Abrasive substrates accelerate HSS edge passivation quickly; carbide wear resistance is essential to maintain cut quality.",
       },
       {
         type: "paragraph",
         value:
-          "Older equipment with insufficient precision �?High-speed steel blade. Carbide is brittle; edge chipping is likely if machine alignment or clamping precision is below standard. HSS toughness provides greater tolerance for equipment variability.",
+          "Older equipment with insufficient precision — High-speed steel blade. Carbide is brittle; edge chipping is likely if machine alignment or clamping precision is below standard. HSS toughness provides greater tolerance for equipment variability.",
       },
       {
         type: "callout",
@@ -1229,17 +1229,17 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Alloy blade: High hardness, extreme wear resistance, long service life �?suited to continuous production and demanding substrates. Initial investment is high, but long-term comprehensive cost is lower.",
+          "Alloy blade: High hardness, extreme wear resistance, long service life — suited to continuous production and demanding substrates. Initial investment is high, but long-term comprehensive cost is lower.",
       },
       {
         type: "paragraph",
         value:
-          "High-speed steel blade: Affordable, good toughness, can be repeatedly reground �?suited to small batches or equipment with average precision. Replacement frequency is higher, and long-term comprehensive cost exceeds that of carbide over the same cutting volume.",
+          "High-speed steel blade: Affordable, good toughness, can be repeatedly reground — suited to small batches or equipment with average precision. Replacement frequency is higher, and long-term comprehensive cost exceeds that of carbide over the same cutting volume.",
       },
       {
         type: "paragraph",
         value:
-          "The right selection depends on your equipment condition, production scale, and substrate. For professional material selection advice or a custom blade solution for your paper cutter, contact the [Sureay engineering team](/contact) �?we supply both [paper cutting blades](/products/paper-cutting-blades) in HSS and carbide grades, with CMM dimensional reports in every shipment.",
+          "The right selection depends on your equipment condition, production scale, and substrate. For professional material selection advice or a custom blade solution for your paper cutter, contact the [Sureay engineering team](/contact) — we supply both [paper cutting blades](/products/paper-cutting-blades) in HSS and carbide grades, with CMM dimensional reports in every shipment.",
       },
     ],
   },
@@ -1262,7 +1262,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "ChinaPlas 2024 (Shanghai, 23�?6 April) resulted in the signing of three co-engineering framework agreements with European [granulator](/products/granulator-blades) and [shredder](/products/twin-shaft-blades-recycling) OEMs. These agreements establish Sureay as the preferred blade development partner for next-generation machine platforms, with joint specification, prototyping, and qualification cycles built into the product development timeline.",
+          "ChinaPlas 2024 (Shanghai, 23–6 April) resulted in the signing of three co-engineering framework agreements with European [granulator](/products/granulator-blades) and [shredder](/products/twin-shaft-blades-recycling) OEMs. These agreements establish Sureay as the preferred blade development partner for next-generation machine platforms, with joint specification, prototyping, and qualification cycles built into the product development timeline.",
       },
       {
         type: "callout",
@@ -1284,13 +1284,13 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title:
       "From steel to finished products: understanding the entire manufacturing process of mechanical blades",
     excerpt:
-      "A high-quality mechanical blade requires multiple precision processes from raw steel to finished product. Sureay breaks down the entire standard manufacturing process step by step �?helping you understand exactly how our quality is built, and how to evaluate the true capability of any blade supplier.",
+      "A high-quality mechanical blade requires multiple precision processes from raw steel to finished product. Sureay breaks down the entire standard manufacturing process step by step — helping you understand exactly how our quality is built, and how to evaluate the true capability of any blade supplier.",
     image: "/images/news/laser-cutting.webp",
     readTime: "6 MIN",
     seoTitle:
       "Mechanical Blade Manufacturing Process: From Steel to Finished Product | Sureay",
     metaDescription:
-      "Learn the complete manufacturing process of industrial mechanical blades �?raw material inspection, heat treatment, precision grinding, and quality control �?explained by Sureay blade engineers.",
+      "Learn the complete manufacturing process of industrial mechanical blades — raw material inspection, heat treatment, precision grinding, and quality control — explained by Sureay blade engineers.",
     keywords:
       "blade manufacturing process, industrial blade production, heat treatment blades, precision grinding, HSS blade, Cr12MoV, blade quality control",
     relatedProductIds: [
@@ -1303,7 +1303,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Behind every precision blade is a tightly controlled manufacturing chain. From the moment raw steel arrives at our facility to the moment a finished blade ships in VCI packaging, each step is governed by documented tolerances and inspection protocols. This article walks through the full process so you can see exactly where quality is built �?and what to look for when evaluating suppliers.",
+          "Behind every precision blade is a tightly controlled manufacturing chain. From the moment raw steel arrives at our facility to the moment a finished blade ships in VCI packaging, each step is governed by documented tolerances and inspection protocols. This article walks through the full process so you can see exactly where quality is built — and what to look for when evaluating suppliers.",
       },
       { type: "h2", value: "1. Raw material inspection" },
       {
@@ -1315,44 +1315,44 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Steel coils or plates are cut to blank shape by stamping, laser cutting, or cold sawing depending on profile complexity and material thickness. Tight dimensional control at this stage is critical �?micro-cracks or edge burrs introduced here can propagate through heat treatment and compromise the finished blade. For complex profiles, preliminary shaping is completed before the blank enters the heat treatment furnace.",
+          "Steel coils or plates are cut to blank shape by stamping, laser cutting, or cold sawing depending on profile complexity and material thickness. Tight dimensional control at this stage is critical — micro-cracks or edge burrs introduced here can propagate through heat treatment and compromise the finished blade. For complex profiles, preliminary shaping is completed before the blank enters the heat treatment furnace.",
       },
       { type: "image", value: "/images/news/slitting-knives-set.webp" },
       { type: "h2", value: "3. Heat treatment (core process)" },
       {
         type: "paragraph",
         value:
-          "Heat treatment defines the functional hardness and toughness of the blade. The process involves controlled austenitizing, quenching, and one or more tempering cycles to achieve the target hardness range �?typically HRC 58�?5 for HSS and tool steels, and HRC 89+ for tungsten carbide grades. Temperature uniformity across the load must be held to ±5 °C; deviation causes hardness gradients and warpage that cannot be corrected downstream.",
+          "Heat treatment defines the functional hardness and toughness of the blade. The process involves controlled austenitizing, quenching, and one or more tempering cycles to achieve the target hardness range — typically HRC 58–5 for HSS and tool steels, and HRC 89+ for tungsten carbide grades. Temperature uniformity across the load must be held to ±5 °C; deviation causes hardness gradients and warpage that cannot be corrected downstream.",
       },
       {
         type: "callout",
         value:
-          "Quenching achieves maximum hardness through rapid cooling. Tempering follows immediately to relieve internal stress and restore toughness �?preventing brittle fracture in service. Both steps are equally critical; quench without temper produces a hard but fragile blade.",
+          "Quenching achieves maximum hardness through rapid cooling. Tempering follows immediately to relieve internal stress and restore toughness — preventing brittle fracture in service. Both steps are equally critical; quench without temper produces a hard but fragile blade.",
       },
       { type: "h2", value: "4. Precision grinding" },
       {
         type: "paragraph",
         value:
-          "After heat treatment, the blade is ground to final geometry on surface grinders, cylindrical grinders, or CNC profile grinding centres. Flatness, parallelism, and thickness are controlled at the micron level. The quality of the ground surface directly determines cutting edge sharpness and service life �?a blade with grinding chatter marks or heat checks will fail well before its theoretical wear limit.",
+          "After heat treatment, the blade is ground to final geometry on surface grinders, cylindrical grinders, or CNC profile grinding centres. Flatness, parallelism, and thickness are controlled at the micron level. The quality of the ground surface directly determines cutting edge sharpness and service life — a blade with grinding chatter marks or heat checks will fail well before its theoretical wear limit.",
       },
       { type: "h2", value: "5. Precision machining and sharpening" },
       {
         type: "paragraph",
         value:
-          "The cutting edge is ground to the specified bevel geometry �?single-bevel, double-bevel, hollow-ground, or radius profile �?depending on the application. Edge angle and symmetry control cutting resistance and edge retention. As a reference, guillotine blades for paper cutting typically use a bevel angle of 19°�?3°. Final deburring and chamfering are carried out at this stage before inspection.",
+          "The cutting edge is ground to the specified bevel geometry — single-bevel, double-bevel, hollow-ground, or radius profile — depending on the application. Edge angle and symmetry control cutting resistance and edge retention. As a reference, guillotine blades for paper cutting typically use a bevel angle of 19°—3°. Final deburring and chamfering are carried out at this stage before inspection.",
       },
       { type: "image", value: "/images/news/slitting-blades-series.webp" },
       { type: "h2", value: "6. Testing and quality control" },
       {
         type: "paragraph",
         value:
-          "Every blade is inspected for hardness, dimensional accuracy, and edge integrity. High-speed rotary blades �?such as large circular slitter knives and log saw blades �?additionally undergo dynamic balance testing to prevent vibration at operating speed. Non-conforming parts are quarantined and scrapped. Critical production batches ship with a full inspection report covering material certificate, hardness readings, and CMM dimensional data.",
+          "Every blade is inspected for hardness, dimensional accuracy, and edge integrity. High-speed rotary blades — such as large circular slitter knives and log saw blades — additionally undergo dynamic balance testing to prevent vibration at operating speed. Non-conforming parts are quarantined and scrapped. Critical production batches ship with a full inspection report covering material certificate, hardness readings, and CMM dimensional data.",
       },
       { type: "h2", value: "7. Surface treatment and rust prevention" },
       {
         type: "paragraph",
         value:
-          "Finished blades are cleaned, degreased, and treated against corrosion. Treatment options include rust-preventive oil, phosphating, PVD coating (TiN, TiAlN), or chrome plating depending on the application environment. For export shipments, we use vapour-phase corrosion inhibitor (VCI) packaging as standard �?particularly important for ocean freight where humidity and salt air present a real corrosion risk.",
+          "Finished blades are cleaned, degreased, and treated against corrosion. Treatment options include rust-preventive oil, phosphating, PVD coating (TiN, TiAlN), or chrome plating depending on the application environment. For export shipments, we use vapour-phase corrosion inhibitor (VCI) packaging as standard — particularly important for ocean freight where humidity and salt air present a real corrosion risk.",
       },
       { type: "h2", value: "8. Packaging and shipping" },
       {
@@ -1364,18 +1364,18 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "A rigorous manufacturing process delivers three things: consistency across mass production batches, extended service life through optimised heat treatment and grinding (wear resistance improvements of 30�?00% over uncontrolled processes are common), and full traceability from steel coil to finished product so any issue can be isolated and resolved quickly.",
+          "A rigorous manufacturing process delivers three things: consistency across mass production batches, extended service life through optimised heat treatment and grinding (wear resistance improvements of 30–00% over uncontrolled processes are common), and full traceability from steel coil to finished product so any issue can be isolated and resolved quickly.",
       },
       {
         type: "callout",
         value:
-          "Process flow: Steel �?Cutting �?Heat treatment �?Rough grinding �?Finish grinding �?Edge sharpening �?Inspection �?Rust prevention �?Packaging �?Shipment",
+          "Process flow: Steel — Cutting — Heat treatment — Rough grinding — Finish grinding — Edge sharpening — Inspection — Rust prevention — Packaging — Shipment",
       },
       { type: "h2", value: "Why choose Sureay?" },
       {
         type: "paragraph",
         value:
-          "Sureay controls the full manufacturing chain in-house �?from heat treatment furnaces to CNC profile grinding �?without outsourcing critical processes. Our testing equipment includes hardness testers, optical projectors, and coordinate measuring machines, with material traceability maintained for every batch. With over 20 years focused exclusively on industrial blades, we serve the paper, recycling, metal processing, and food industries worldwide. If you have specific blade requirements or technical questions, contact us for full drawing-to-delivery technical cooperation.",
+          "Sureay controls the full manufacturing chain in-house — from heat treatment furnaces to CNC profile grinding — without outsourcing critical processes. Our testing equipment includes hardness testers, optical projectors, and coordinate measuring machines, with material traceability maintained for every batch. With over 20 years focused exclusively on industrial blades, we serve the paper, recycling, metal processing, and food industries worldwide. If you have specific blade requirements or technical questions, contact us for full drawing-to-delivery technical cooperation.",
       },
     ],
   },
@@ -1400,7 +1400,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Unplanned downtime on a coil slitting line doesn't just halt production �?it bleeds money. The good news? Most breakdowns are preventable with consistent maintenance.",
+          "Unplanned downtime on a coil slitting line doesn't just halt production — it bleeds money. The good news? Most breakdowns are preventable with consistent maintenance.",
       },
 
       { type: "h2", value: "Know Your Line" },
@@ -1418,14 +1418,14 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "A five-minute walkthrough each shift catches small problems early. Inspect blade edges for chips or buildup, verify lubrication levels, clear metal debris from the slitter head area, and confirm the coil is tracking straight. Listen for unusual sounds �?grinding or vibration often signals bearing wear or misalignment before visible damage appears.",
+          "A five-minute walkthrough each shift catches small problems early. Inspect blade edges for chips or buildup, verify lubrication levels, clear metal debris from the slitter head area, and confirm the coil is tracking straight. Listen for unusual sounds — grinding or vibration often signals bearing wear or misalignment before visible damage appears.",
       },
 
       { type: "h2", value: "Slitter Knife Maintenance" },
       {
         type: "paragraph",
         value:
-          "Your [circular slitter knives](/products/metal-coil-slitting-knives) are the most critical factor in cut quality. Resharpen when you see uniform edge wear, but replace blades with localized chipping or deep nicks. Watch for edge rounding (increasing burr on strips), material buildup on blade faces, and uneven wear patterns. Store blades vertically in slotted racks with rust-preventive oil �?never stack them without separators.",
+          "Your [circular slitter knives](/products/metal-coil-slitting-knives) are the most critical factor in cut quality. Resharpen when you see uniform edge wear, but replace blades with localized chipping or deep nicks. Watch for edge rounding (increasing burr on strips), material buildup on blade faces, and uneven wear patterns. Store blades vertically in slotted racks with rust-preventive oil — never stack them without separators.",
       },
       {
         type: "image",
@@ -1436,7 +1436,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "[Guillotine shear blades](/products/metal-shear-knives) are often overlooked but equally important. Keep clearance properly set (typically 5�?0% of material thickness) and adjust when switching gauges. Most blades have four usable edges �?rotate to the next edge before sending for resharpening to maximize blade life.",
+          "[Guillotine shear blades](/products/metal-shear-knives) are often overlooked but equally important. Keep clearance properly set (typically 5–0% of material thickness) and adjust when switching gauges. Most blades have four usable edges — rotate to the next edge before sending for resharpening to maximize blade life.",
       },
       {
         type: "image",
@@ -1447,7 +1447,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Misalignment causes uneven cuts, width tolerance failures, and accelerated blade wear. Check entry and exit guides, inspect rubber spacers on the arbor, and verify tension roller surfaces monthly. For lubrication, follow manufacturer intervals �?grease bearings weekly on high-production lines and monitor coolant concentration regularly. Avoid over-lubricating, which can cause overheating or contaminate strip surfaces.",
+          "Misalignment causes uneven cuts, width tolerance failures, and accelerated blade wear. Check entry and exit guides, inspect rubber spacers on the arbor, and verify tension roller surfaces monthly. For lubrication, follow manufacturer intervals — grease bearings weekly on high-production lines and monitor coolant concentration regularly. Avoid over-lubricating, which can cause overheating or contaminate strip surfaces.",
       },
 
       { type: "h2", value: "Build a Preventive Schedule" },
@@ -1461,7 +1461,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [circular slitter knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/metal-shear-knives) are built for zero-burr performance and extended service life �?so you spend less time maintaining and more time producing.",
+          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [circular slitter knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/metal-shear-knives) are built for zero-burr performance and extended service life — so you spend less time maintaining and more time producing.",
       },
       {
         type: "callout",

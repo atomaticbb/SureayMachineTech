@@ -11,7 +11,8 @@ interface CompatibleToolingProps {
 }
 
 export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
-  if (blades.length === 0) return null;
+  const display = blades.slice(0, 4);
+  if (display.length === 0) return null;
 
   return (
     <section
@@ -35,7 +36,7 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
 
       {/* Compact inventory grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {blades.map(related => (
+        {display.map(related => (
           <Link key={related.id} href={related.link}>
             <div className="bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-200 cursor-pointer group h-full flex flex-col">
               {/* Image viewport */}
