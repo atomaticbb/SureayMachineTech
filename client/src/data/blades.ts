@@ -119,6 +119,15 @@ export interface Blade {
   };
 }
 
+export interface BladeAggregateOffer {
+  "@type": "AggregateOffer";
+  lowPrice: number;
+  highPrice: number;
+  priceCurrency: "USD";
+  availability: "https://schema.org/InStock";
+  offerCount: string;
+}
+
 // ===== BLADE DATA =====
 export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
@@ -4300,6 +4309,27 @@ export const blades: Blade[] = [
  */
 export function getBladeById(id: string): Blade | undefined {
   return blades.find(b => b.id === id);
+}
+
+function normalizeBladeOfferId(value: string): string {
+  return value
+    .replace(/^https?:\/\/[^/]+\/products\//, "")
+    .replace(/^\/products\//, "")
+    .replace(/\/$/, "");
+}
+
+export function getBladeAggregateOffer(target: string): BladeAggregateOffer {
+  const blade = getBladeById(normalizeBladeOfferId(target));
+  const offer = blade?.offers ?? { lowPrice: 20, highPrice: 800 };
+
+  return {
+    "@type": "AggregateOffer",
+    lowPrice: offer.lowPrice,
+    highPrice: offer.highPrice,
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+    offerCount: "1",
+  };
 }
 
 /**

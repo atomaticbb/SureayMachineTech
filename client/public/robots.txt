@@ -7,7 +7,7 @@ Allow: /
 # Disallow admin or internal pages
 Disallow: /admin
 Disallow: /admin/
-Disallow: /admin-login
+Disallow: /admin/login
 Disallow: /api/
 
 # Prevent image files from being indexed as standalone web pages

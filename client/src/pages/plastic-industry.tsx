@@ -14,7 +14,7 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades } from "@/data/blades";
+import { blades, getBladeAggregateOffer } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -178,7 +178,7 @@ const PAGE_SCHEMA = {
         description: "Heavy-duty D2 and H13 twin-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/twin-shaft-blades-recycling",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("twin-shaft-blades-recycling"),
       },
     },
     {
@@ -191,7 +191,7 @@ const PAGE_SCHEMA = {
         description: "Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and size reduction lines.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/granulator-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("granulator-blades"),
       },
     },
     {
@@ -204,7 +204,7 @@ const PAGE_SCHEMA = {
         description: "PM-HSS and solid tungsten carbide strand pelletizer rotors with ≤0.005 mm concentricity, dynamic balanced to ISO 1940-1 G2.5 for Maag, Coperion and Cumberland lines.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/strand-pelletizer-rotors",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("strand-pelletizer-rotors"),
       },
     },
     {
@@ -217,7 +217,7 @@ const PAGE_SCHEMA = {
         description: "D2, H13 and solid carbide scraper blades for continuous melt filters. Compatible with EREMA, Gneuß, Ettlinger and FIMIC filtration systems.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/continuous-melt-filter-scraper-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("continuous-melt-filter-scraper-blades"),
       },
     },
     {
@@ -230,7 +230,7 @@ const PAGE_SCHEMA = {
         description: "Indexable D2 and H13 single-shaft shredder rotor inserts for plastic waste, HDPE, and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/single-shaft-rotor-inserts",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("single-shaft-rotor-inserts"),
       },
     },
     {
@@ -243,7 +243,7 @@ const PAGE_SCHEMA = {
         description: "Precision-ground D2 counter blades for single-shaft shredder systems. Drop-in OEM replacements with controlled-wear hardness.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/single-shaft-bed-knives",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("single-shaft-bed-knives"),
       },
     },
     {
@@ -256,7 +256,7 @@ const PAGE_SCHEMA = {
         description: "3-claw and 4-claw tire shredder blades in CR12 and D2 for rubber tire and cable shredding under extreme impact and abrasive loads.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tire-shredder-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("tire-shredder-blades"),
       },
     },
   ],

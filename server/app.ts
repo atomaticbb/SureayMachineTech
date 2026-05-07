@@ -31,6 +31,13 @@ export function createApp({
     next();
   });
 
+  app.use((req, res, next) => {
+    if (req.path === "/admin" || req.path.startsWith("/admin/")) {
+      res.setHeader("X-Robots-Tag", "noindex, nofollow, noarchive");
+    }
+    next();
+  });
+
   app.use(compression());
   app.use(
     helmet({

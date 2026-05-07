@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import { useLocation } from "wouter";
+import SEO from "@/components/common/SEO";
 
 export default function AdminLogin() {
   const [, setLocation] = useLocation();
@@ -36,18 +37,25 @@ export default function AdminLogin() {
   };
 
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        backgroundColor: "#001f4d",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "sans-serif",
-        padding: "24px",
-      }}
-    >
-      <div style={{ width: "100%", maxWidth: "400px" }}>
+    <>
+      <SEO
+        title="Admin Login"
+        description="Restricted administration login portal."
+        canonicalUrl="/admin/login"
+        noIndex
+      />
+      <div
+        style={{
+          minHeight: "100vh",
+          backgroundColor: "#001f4d",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily: "sans-serif",
+          padding: "24px",
+        }}
+      >
+        <div style={{ width: "100%", maxWidth: "400px" }}>
         {/* Wordmark */}
         <div style={{ marginBottom: "40px", textAlign: "center" }}>
           <div
@@ -216,7 +224,8 @@ export default function AdminLogin() {
         >
           Restricted access — authorised personnel only
         </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

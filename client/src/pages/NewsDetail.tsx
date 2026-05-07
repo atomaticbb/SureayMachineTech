@@ -69,6 +69,11 @@ export default function NewsDetail() {
   if (!article) {
     return (
       <div className="min-h-screen bg-white antialiased">
+        <SEO
+          title="404 — Dispatch Not Found"
+          description="The requested article does not exist."
+          noIndex
+        />
         <Navbar />
         <main className="pt-[74px] max-w-7xl mx-auto px-6 lg:px-8 py-32">
           <p className="font-mono text-[10px] text-slate-400 tracking-widest  mb-4">

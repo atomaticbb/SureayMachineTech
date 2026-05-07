@@ -14,7 +14,7 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades } from "@/data/blades";
+import { blades, getBladeAggregateOffer } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -178,7 +178,7 @@ const PAGE_SCHEMA = {
         description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tissue-log-saw-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("tissue-log-saw-blades"),
       },
     },
     {
@@ -191,7 +191,7 @@ const PAGE_SCHEMA = {
         description: "M2 HSS and D2 rotary slitter knives for paper, kraft board, and release liner slitting. OEM profile-matched for Valmet, Metso, and Kampf rewinders.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/rotary-slitter-knives-paper",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("rotary-slitter-knives-paper"),
       },
     },
     {
@@ -204,7 +204,7 @@ const PAGE_SCHEMA = {
         description: "Guillotine blades for hydraulic paper cutters and bookbinding machines. M2 HSS for clean, burr-free cuts on paper stacks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/paper-cutting-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("paper-cutting-blades"),
       },
     },
     {
@@ -217,7 +217,7 @@ const PAGE_SCHEMA = {
         description: "Three-knife trimmer blades for Muller Martini, Kolbus, and Wohlenberg book trimming systems. Drop-in OEM replacements.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/three-knife-trimmer-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("three-knife-trimmer-blades"),
       },
     },
     {
@@ -230,7 +230,7 @@ const PAGE_SCHEMA = {
         description: "Circular slitter and scorer blades for corrugated board and cardboard converting lines. Compatible with BHS, Fosber, and SHM machinery.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/corrugated-slitter-scorer-blades",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("corrugated-slitter-scorer-blades"),
       },
     },
   ],

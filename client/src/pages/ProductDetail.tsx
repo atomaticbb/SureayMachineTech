@@ -47,6 +47,11 @@ export default function ProductDetail() {
   if (!blade) {
     return (
       <>
+        <SEO
+          title="404 — Blade Not Found"
+          description="The requested product page does not exist."
+          noIndex
+        />
         <Navbar />
         <div className="min-h-screen flex items-center justify-center bg-slate-50">
           <div className="text-center px-6">

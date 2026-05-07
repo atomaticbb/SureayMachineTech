@@ -14,7 +14,7 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades } from "@/data/blades";
+import { blades, getBladeAggregateOffer } from "@/data/blades";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -175,7 +175,7 @@ const PAGE_SCHEMA = {
         description: "Precision circular slitting knives for BOPP film, flexible packaging, and label converting at ±0.002mm tolerance.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/rotary-slitter-knives",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("rotary-slitter-knives"),
       },
     },
     {
@@ -188,7 +188,7 @@ const PAGE_SCHEMA = {
         description: "M2 HSS circular slitter knives with 15–20° positive rake geometry for spunbond, SMS, and meltblown nonwoven fabrics.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/nonwoven-slitter-knives",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("nonwoven-slitter-knives"),
       },
     },
     {
@@ -201,7 +201,7 @@ const PAGE_SCHEMA = {
         description: "Bottom grooved anvil knives for film, tape, and flexible packaging shear slitting systems. Precision-ground groove geometry for consistent nip pressure.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/bottom-grooved-anvil-knives",
-        offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+        offers: getBladeAggregateOffer("bottom-grooved-anvil-knives"),
       },
     },
   ],

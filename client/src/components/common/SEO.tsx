@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 const BRAND = "Sureay Machinery";
 const BASE_URL = "https://sureay.com";
+const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -30,6 +31,7 @@ export interface SEOProps {
   description: string;
   canonicalUrl?: string;
   productData?: ProductData;
+  ogImage?: string;
   noIndex?: boolean;
   keywords?: string;
   breadcrumbs?: BreadcrumbItem[];
@@ -54,13 +56,18 @@ export default function SEO({
   description,
   canonicalUrl,
   productData,
+  ogImage,
   noIndex = false,
   keywords,
   breadcrumbs,
 }: SEOProps) {
   const fullTitle = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
   const canonicalHref = canonicalUrl ? abs(canonicalUrl) : undefined;
-  const ogImage = productData ? abs(productData.image) : undefined;
+  const resolvedOgImage = productData
+    ? abs(productData.image)
+    : ogImage
+      ? abs(ogImage)
+      : DEFAULT_OG_IMAGE;
 
   const allImages = productData
     ? [
@@ -149,7 +156,7 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={BRAND} />
       {canonicalHref && <meta property="og:url" content={canonicalHref} />}
-      {ogImage && <meta property="og:image" content={ogImage} />}
+      <meta property="og:image" content={resolvedOgImage} />
 
       {/* JSON-LD Product schema */}
       {jsonLd && <script type="application/ld+json">{safeJson(jsonLd)}</script>}

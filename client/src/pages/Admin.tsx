@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, memo } from "react";
 import { useLocation } from "wouter";
+import SEO from "@/components/common/SEO";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -816,7 +817,14 @@ export default function Admin() {
   // ── Render ───────────────────────────────────────────────────────────────────
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden bg-background">
+    <>
+      <SEO
+        title="Admin Dashboard"
+        description="Restricted administration dashboard."
+        canonicalUrl="/admin"
+        noIndex
+      />
+      <div className="h-screen flex flex-col overflow-hidden bg-background">
       {/* ── Command Bar (main header) ── */}
       <div className="shrink-0 bg-primary text-primary-foreground border-b border-primary/80 px-4 md:px-6 py-3 flex items-center gap-4 md:gap-6">
         {/* Branding */}
@@ -1125,6 +1133,7 @@ export default function Admin() {
           </div>
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 }
