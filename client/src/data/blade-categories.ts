@@ -21,6 +21,7 @@ export interface BladeCategoryMeta {
   tagline: string;
   heroImage: string;
   description: string;
+  specItems?: { label: string; value: string }[];
 }
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
@@ -34,6 +35,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
     description:
       "Rotary slitter knives engineered for shear, score and razor cutting across flexible packaging film, paper, nonwovens and metal foil. ±0.002 mm thickness tolerance, ≤0.02 mm T.I.R. runout, available in M2 HSS, D2, ASP23 PM steel and solid carbide with optional TiN, DLC and Teflon coatings.",
+    specItems: [
+      { label: "Thickness Tolerance", value: "±0.002 mm" },
+      { label: "T.I.R. Runout", value: "≤0.02 mm" },
+      { label: "Materials", value: "M2 HSS · D2 · ASP23 PM · Carbide" },
+      { label: "Coatings", value: "TiN · DLC · Teflon" },
+      { label: "Cutting Modes", value: "Shear · Score · Razor" },
+      { label: "Applications", value: "Film · Paper · Nonwovens · Foil" },
+    ],
   },
   {
     slug: "shredder-blades",
@@ -44,6 +53,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     heroImage: "/images/products/shredder-blades/shredder-blades-01.webp",
     description:
       "Heavy-duty shredder blades for plastic, metal, tire and battery recycling lines. Forged D2/SKD11/Cr12MoV alloy with cryogenic and vacuum heat treatment for extreme impact and wear resistance. Drop-in OEM fit for twin-shaft and single-shaft shredder platforms.",
+    specItems: [
+      { label: "Materials", value: "D2 · SKD11 · Cr12MoV" },
+      { label: "Hardness", value: "58–62 HRC" },
+      { label: "Heat Treatment", value: "Cryogenic + Vacuum" },
+      { label: "Platforms", value: "Twin-shaft · Single-shaft" },
+      { label: "Applications", value: "Plastic · Metal · Tire · Battery" },
+      { label: "Fit", value: "Drop-in OEM replacement" },
+    ],
   },
   {
     slug: "granulator-blades",
@@ -54,6 +71,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     heroImage: "/images/products/granulator-blades/granulator-blades-01.webp",
     description:
       "Plastic granulator and crusher knives engineered for size reduction lines. Optimized rake geometry preserves regrind quality while reducing motor load and dust generation. Compatible with rotary, claw, hopper and pelletizing granulator machines.",
+    specItems: [
+      { label: "Materials", value: "H13 · D2 · M2 HSS · Carbide" },
+      { label: "Geometry", value: "Optimized rake angle" },
+      { label: "Machines", value: "Rotary · Claw · Hopper · Pelletizing" },
+      { label: "Benefit", value: "Lower motor load · Less dust" },
+      { label: "Applications", value: "Plastic regrind · Size reduction" },
+      { label: "Regrindable", value: "Yes — multiple cycles" },
+    ],
   },
   {
     slug: "log-saw-blades",
@@ -64,6 +89,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
       "Circular log saw blades for tissue, kitchen towel and napkin converting lines. CBN-compatible profiles with controlled runout, anti-friction surface treatment and a serration geometry tuned for clean, dust-free perforation at high line speeds.",
+    specItems: [
+      { label: "Profile", value: "CBN-compatible" },
+      { label: "Surface", value: "Anti-friction treatment" },
+      { label: "Cut Quality", value: "Dust-free perforation" },
+      { label: "Speed", value: "Optimized for high line speeds" },
+      { label: "Applications", value: "Tissue · Kitchen towel · Napkin" },
+      { label: "Serration", value: "Custom geometry available" },
+    ],
   },
   {
     slug: "trim-cut-blades",
@@ -75,6 +108,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
     description:
       "Guillotine and three-knife trimmer blades for paper, board and book block trimming. TCT-inlay or bimetallic edge construction holds face flatness across long blade lengths and is supplied as matched sets for OEM trimmer compatibility.",
+    specItems: [
+      { label: "Edge Construction", value: "TCT-inlay · Bimetallic" },
+      { label: "Face Flatness", value: "Maintained over full length" },
+      { label: "Supply Format", value: "Matched OEM sets" },
+      { label: "Machines", value: "Guillotine · Three-knife trimmer" },
+      { label: "Applications", value: "Paper · Board · Book block" },
+      { label: "Regrindable", value: "Yes" },
+    ],
   },
   {
     slug: "metal-processing",
@@ -85,6 +126,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     heroImage: "/images/products/granulator-blades/metal-shear-blades-00.webp",
     description:
       "Industrial knives for steel coil slitting, plate shearing and cold circular sawing. Powder-metallurgy alloys with controlled cumulative tolerance stack for multi-knife arbor setups, plus anti-galling surface treatments for stainless and high-carbon strip.",
+    specItems: [
+      { label: "Materials", value: "Powder-metallurgy alloys" },
+      { label: "Tolerance Stack", value: "Controlled cumulative" },
+      { label: "Surface", value: "Anti-galling treatment" },
+      { label: "Setups", value: "Multi-knife arbor compatible" },
+      { label: "Applications", value: "Coil slitting · Shearing · Sawing" },
+      { label: "Strip Types", value: "Stainless · High-carbon" },
+    ],
   },
   {
     slug: "battery-precision",
@@ -96,6 +145,14 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
     description:
       "Solid tungsten carbide circular slitting knives for lithium battery electrode foil — cathode, anode and separator. Ultra-fine grain carbide with zero-notch edge geometry and matched knife pairs for the EV and energy storage cell manufacturing supply chain.",
+    specItems: [
+      { label: "Material", value: "Solid tungsten carbide" },
+      { label: "Grain", value: "Ultra-fine" },
+      { label: "Edge Geometry", value: "Zero-notch" },
+      { label: "Supply", value: "Matched knife pairs" },
+      { label: "Foil Types", value: "Cathode · Anode · Separator" },
+      { label: "Industry", value: "EV · Energy storage" },
+    ],
   },
   {
     slug: "custom-profile",

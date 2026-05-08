@@ -14,6 +14,7 @@
  */
 
 import { useRoute, Link, Redirect } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -77,10 +78,24 @@ export default function CategoryAggregation() {
           { name: meta.shortName, url: `/categories/${meta.slug}` },
         ]}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: meta.title,
+          url: `https://sureay.com/categories/${meta.slug}`,
+          itemListElement: variants.map((b, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `https://sureay.com/products/${b.id}`,
+            name: b.name,
+          })),
+        }).replace(/</g, "\\u003c")}</script>
+      </Helmet>
       <Navbar />
 
       {/* ── 1 · Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden mt-[74px] bg-white">
+      <section className="relative border-b border-slate-200 h-[420px] lg:h-[460px] overflow-hidden mt-[74px] bg-white">
         {/* Right image panel — contained so the full image is visible */}
         <div className="absolute inset-y-0 right-0 w-[48%] hidden lg:block p-8 bg-white">
           <img
@@ -140,6 +155,16 @@ export default function CategoryAggregation() {
               </dd>
             </div>
           </dl>
+
+          {/* CTA */}
+          <div className="mt-8">
+            <a
+              href="#contact-rfq"
+              className="inline-block font-sans text-[14px] font-bold tracking-[0.08em] bg-white text-[#001f4d] px-6 py-3 hover:bg-[#001f4d] hover:text-white border border-white transition-colors"
+            >
+              REQUEST A QUOTE
+            </a>
+          </div>
         </div>
       </section>
 
@@ -151,19 +176,39 @@ export default function CategoryAggregation() {
         ]}
       />
 
-      {/* ── 2 · Industry chips strip ────────────────────────────────────── */}
-      <section className="bg-slate-50 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-6 flex flex-wrap items-center gap-3">
-          <span className="font-mono text-[10px] text-slate-400  tracking-[0.28em] mr-2">
-            Used in
-          </span>
-          {sectors.map(s => (
-            <Link key={s} href={SECTOR_INDUSTRY_URL[s]}>
-              <a className="font-mono text-[11px] font-bold tracking-[0.18em]  border border-slate-300 bg-white text-[#001f4d] px-3 py-1.5 hover:bg-[#001f4d] hover:text-white hover:border-[#001f4d] transition-colors cursor-pointer">
-                {SECTOR_LABEL[s]} →
-              </a>
-            </Link>
-          ))}
+      {/* ── 2 · Industry Application Matrix ─────────────────────────────── */}
+      <section className="bg-slate-100 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 lg:py-12 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16">
+          {/* Left — hook */}
+          <div className="flex-shrink-0">
+            <p className="font-black text-[13px] tracking-[0.22em] uppercase text-slate-900 leading-none">
+              Engineered For
+            </p>
+            <div className="w-10 h-1 bg-[#001f4d] mt-2.5 mb-3" />
+            <p className="text-xs text-slate-500 font-medium">
+              Select your industry
+            </p>
+          </div>
+
+          {/* Right — matrix buttons */}
+          <div className="flex flex-wrap gap-3">
+            {sectors.map(s => (
+              <Link key={s} href={SECTOR_INDUSTRY_URL[s]}>
+                <a className="group inline-flex items-center justify-between gap-4 min-w-[160px] bg-white border-2 border-slate-200 px-5 py-3.5 text-slate-800 font-bold text-[13px] hover:border-[#001f4d] hover:text-[#001f4d] hover:-translate-y-0.5 hover:shadow-md transition-all duration-200 cursor-pointer">
+                  <span>{SECTOR_LABEL[s]}</span>
+                  <svg
+                    className="w-4 h-4 text-slate-300 group-hover:text-[#001f4d] transition-colors duration-200 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -192,15 +237,37 @@ export default function CategoryAggregation() {
             </div>
           </aside>
 
-          {/* Body — long-form intro */}
+          {/* Body — spec grid when available, otherwise text fallback */}
           <div className="lg:col-span-8">
-            <p className="text-[18px] text-slate-800 leading-[1.55] mb-6 font-medium">
-              {meta.description}
-            </p>
-            {overviewBody && (
-              <p className="text-[16px] text-slate-600 leading-[1.7] max-w-[68ch]">
-                {overviewBody}
-              </p>
+            {meta.specItems && meta.specItems.length > 0 ? (
+              <>
+                <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-6">
+                  [ KEY SPECIFICATIONS ]
+                </p>
+                <dl className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-slate-200 border border-slate-200 mb-10">
+                  {meta.specItems.map(item => (
+                    <div key={item.label} className="bg-white px-5 py-4 flex flex-col gap-1">
+                      <dt className="font-mono text-[9px] tracking-[0.28em] text-slate-400 uppercase">
+                        {item.label}
+                      </dt>
+                      <dd className="font-black text-[18px] text-[#001f4d] tracking-tight leading-tight">
+                        {item.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
+            ) : (
+              <>
+                <p className="text-[18px] text-slate-800 leading-[1.55] mb-6 font-medium">
+                  {meta.description}
+                </p>
+                {overviewBody && (
+                  <p className="text-[16px] text-slate-600 leading-[1.7] max-w-[68ch]">
+                    {overviewBody}
+                  </p>
+                )}
+              </>
             )}
 
             {/* Engineering audit excerpts (if available on representative SKU) */}
@@ -298,7 +365,9 @@ export default function CategoryAggregation() {
         </section>
       )}
 
-      <ContactRFQ />
+      <div id="contact-rfq">
+        <ContactRFQ />
+      </div>
       <Footer />
     </div>
   );

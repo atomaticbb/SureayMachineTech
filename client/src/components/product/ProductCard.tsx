@@ -39,13 +39,8 @@ export default function ProductCard({
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />
-            {blade.badge && (
-              <span className="absolute top-3 left-3 bg-[#001f4d] text-white text-[10px] font-black  px-2 py-1 tracking-wider">
-                {blade.badge}
-              </span>
-            )}
             {sectorBadge && (
-              <span className="absolute top-3 right-3 bg-[#e8b84b] text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider">
+              <span className="absolute top-3 right-3 bg-[#001f4d] text-white text-[10px] font-black  px-2 py-1 tracking-wider">
                 {SECTOR_LABEL[sectorBadge]}
               </span>
             )}
