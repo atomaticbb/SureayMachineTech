@@ -78,7 +78,7 @@ function PageLoader() {
           margin: 0,
         }}
       >
-        Sureay Machinery
+        Sureay Blades
       </p>
 
       <style>{`

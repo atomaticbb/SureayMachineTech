@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const BRAND = "Sureay Machinery";
+const BRAND = "Sureay Blades";
 const BASE_URL = "https://sureay.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
 

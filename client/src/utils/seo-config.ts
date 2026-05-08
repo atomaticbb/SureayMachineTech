@@ -16,7 +16,7 @@ export interface PageSEO {
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
     title:
-      "Precision Industrial Blades & Recycling Solutions | Sureay Machinery",
+      "Precision Industrial Blades & Recycling Solutions | Sureay Blades",
     description:
       "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting. ISO 9001 certified. Custom CNC grinding, heat treatment, and exact-match OEM replacement blades. Serving global manufacturers since 2008.",
     keywords:
@@ -33,7 +33,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   about: {
-    title: "About Sureay Machinery | ISO 9001 Certified Blade Manufacturer",
+    title: "About Sureay Blades | ISO 9001 Certified Blade Manufacturer",
     description:
       "16 years of precision blade manufacturing excellence in Ma'anshan, China. ISO 9001:2015 certified facility with 5-axis CNC grinding, vacuum heat treatment, and CMM inspection. Serving OEM partners worldwide.",
     keywords:
@@ -41,7 +41,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   contact: {
-    title: "Contact Sureay Machinery | Request Custom Blade Quote",
+    title: "Contact Sureay Blades | Request Custom Blade Quote",
     description:
       "Get in touch with our engineering team for custom blade specifications, technical support, or OEM partnership inquiries. Fast response for replacement blade orders. Located in Ma'anshan, Anhui, China.",
     keywords:
@@ -49,7 +49,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   news: {
-    title: "Industry News & Technical Insights | Sureay Machinery Blog",
+    title: "Industry News & Technical Insights | Sureay Blades Blog",
     description:
       "Latest updates on blade technology, manufacturing processes, and industry trends. Technical guides on material selection, heat treatment, and blade optimization for recycling and converting applications.",
     keywords:
@@ -271,7 +271,7 @@ export function getSEO(pageKey: string): PageSEO {
  * Generate full title with brand suffix
  */
 export function getFullTitle(title?: string): string {
-  if (!title) return "Sureay Machinery | Precision Industrial Blades";
+  if (!title) return "Sureay Blades | Precision Industrial Blades";
   if (title.includes("Sureay")) return title;
   return `${title} | Sureay`;
 }

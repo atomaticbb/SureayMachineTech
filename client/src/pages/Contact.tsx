@@ -152,7 +152,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white antialiased">
       <SEO
-        title="Contact & RFQ — Partner With Sureay Engineering"
+        title="Contact & RFQ — Partner With Sureay Blades"
         description="Submit a blade engineering inquiry or request a quote. Reach our technical team via form, email or WhatsApp. CAD file uploads accepted."
         canonicalUrl="/contact"
       />

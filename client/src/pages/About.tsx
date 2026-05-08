@@ -96,7 +96,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="About Sureay — 15+ Years of Blade Engineering"
+        title="About Sureay Blades — 15+ Years of Blade Engineering"
         description="ISO 9001:2015 certified OEM blade manufacturer since 2008. 15,000 m² facility, 5-axis CNC grinding, vacuum heat treatment, CMM inspection. Serving 50+ countries."
         canonicalUrl="/about"
       />
@@ -116,7 +116,7 @@ export default function About() {
           >
             <div className="flex-1 flex flex-col justify-center max-w-sm">
               <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
-                About Sureay Machinery
+                About Sureay Blades
               </p>
               <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight  mb-7">
                 Engineering
