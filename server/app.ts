@@ -23,6 +23,16 @@ export function createApp({
 }: CreateAppOptions = {}) {
   const app = express();
 
+  // HTTP → HTTPS redirect (production only, behind reverse proxy)
+  if (process.env.NODE_ENV === "production") {
+    app.use((req, res, next) => {
+      if (req.headers["x-forwarded-proto"] === "http") {
+        return res.redirect(301, `https://${req.hostname}${req.url}`);
+      }
+      next();
+    });
+  }
+
   // www → canonical 301 (must be before all other middleware)
   app.use((req, res, next) => {
     if (req.hostname === "www.sureay.com") {

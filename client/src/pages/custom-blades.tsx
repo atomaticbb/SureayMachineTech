@@ -183,7 +183,7 @@ export default function CustomBlades() {
   return (
     <>
       <SEO
-        title="Special-Shaped & Custom Profile Blades — OEM Manufacturing"
+        title="Custom Profile & Special-Shaped Blades | OEM"
         description="Sureay manufactures special-shaped and custom profile industrial blades from customer drawings or samples. D2, H13, PM-HSS, carbide. ±0.02 mm tolerance. DXF/DWG/STEP accepted."
         canonicalUrl="/custom"
         keywords="custom profile blades, special shaped industrial knives, OEM custom blades manufacturer, special knife profiles, custom machine knives DXF"

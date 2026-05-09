@@ -1,0 +1,53 @@
+# Sureay Machinery Technology — Industrial Blade Manufacturer
+
+> Sureay Machinery Technology Co., Ltd. is a Chinese OEM manufacturer of precision industrial blades and knives, serving international buyers in plastics recycling, paper converting, metal processing, and new energy industries. Direct factory pricing, custom profiles, and full dimensional verification on every shipment.
+
+## About
+
+- Website: https://sureay.com
+- Contact: lynn@sureay.com
+- Location: China (manufacturing & export)
+- Founded: professional industrial blade production for global OEM markets
+
+## Products
+
+Sureay supplies precision replacement blades across six major categories:
+
+- **Slitter Knives** — rotary slitter knives for plastic film, paper, metal foil, and battery electrode slitting lines
+- **Shredder Blades** — twin-shaft and multi-shaft shredder blades for plastic recycling, e-waste, and battery shredding
+- **Granulator Blades** — rotor inserts and bed knives for single-shaft granulators
+- **Log Saw Blades** — tissue log saw blades for paper converting lines
+- **Trim & Cut Blades** — three-knife trimmer blades and paper cutting blades
+- **Metal Processing Blades** — metal coil slitting knives and metal shear knives
+- **Battery Precision Blades** — high-tolerance slitter knives for lithium battery electrode lines
+- **Custom Profile Blades** — fully custom blade geometry to client drawings or sample reverse engineering
+
+## Industries Served
+
+- Plastics recycling and converting
+- Paper and tissue converting
+- Metal coil processing and stamping
+- New energy / lithium battery manufacturing
+- Electronic waste shredding
+
+## Capabilities
+
+- Materials: D2, H13, SKH51, solid carbide, bi-metal
+- Processes: vacuum heat treatment, precision grinding, EDM, CMM inspection
+- Certifications: dimensional reports, hardness certificates included
+- MOQ: low MOQ with sample blade matching available
+- Delivery: standard and expedited international shipping
+
+## Key Pages
+
+- /products — full product catalogue
+- /categories/slitter-knives — slitter knife family hub
+- /categories/shredder-blades — shredder blade family hub
+- /categories/granulator-blades — granulator blade family hub
+- /categories/log-saw-blades — log saw blade family hub
+- /categories/trim-cut-blades — trim and cut blade family hub
+- /categories/metal-processing — metal processing blade family hub
+- /categories/battery-precision — battery precision blade family hub
+- /custom — custom blade inquiry and RFQ
+- /about — company overview and factory information
+- /contact — contact form and RFQ submission

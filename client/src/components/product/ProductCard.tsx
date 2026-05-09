@@ -55,7 +55,7 @@ export default function ProductCard({
               {blade.categoryDisplay}
             </p>
             <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366]  tracking-tight leading-tight mb-4 transition-colors">
-              {blade.name}
+              {blade.fullName || blade.name}
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
               {blade.description}

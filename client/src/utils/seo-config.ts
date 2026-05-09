@@ -87,7 +87,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "rotary-slitter-knives": {
     title:
-      "Rotary Slitter Blades & Knives for Film, Tape & Flexible Packaging | Sureay",
+      "Rotary Slitter Knives for Film, Tape & Packaging",
     description:
       "Rotary slitter blades & knives precision-ground to \u00b10.002\u202fmm. D2, M2 HSS, ASP23 PM steel & tungsten carbide options. Shear, score & razor profiles for BOPP, BOPET, CPP film, PSA tape & nonwoven. OEM fit Tidland, Kampf, Atlas & Dusenbery \u2014 factory direct quote.",
     keywords:
@@ -104,7 +104,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "twin-shaft-blades-recycling": {
     title:
-      "Twin-Shaft Shredder Blades | D2/SKD11, OEM Fit Weima · Untha · Vecoplan | Sureay",
+      "Twin-Shaft Shredder Blades | D2/SKD11 OEM Fit",
     description:
       "D2/SKD11 & chromium carbide rotor blades for MSW, plastics & wood twin-shaft shredding. Intersecting-scissor geometry, 3\u201312 claws, Wire-EDM bores. OEM replacement for Weima, Untha, SSI & Vecoplan. Factory direct wholesale \u2014 low MOQ, custom specs & fast quote.",
     keywords:
@@ -112,7 +112,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "multi-shaft-blades-metal": {
-    title: "Metal Shredder Blades | H13/42CrMo for Scrap & E-Waste | Sureay",
+    title: "Metal Shredder Blades | H13 for Scrap & E-Waste",
     description:
       "High-impact H13/42CrMo multi-shaft shredder blades for scrap metal, ELV, and e-waste processing. HRC 50–54 toughness-optimized to survive catastrophic shock loads. Heavy splined Wire-EDM bores for Shred-Tech, Forus, and Arjes platforms.",
     keywords:
@@ -120,7 +120,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "twin-shaft-blades-battery": {
-    title: "Li-Ion Battery Shredder Blades | ±0.02mm Precision | Sureay",
+    title: "Li-Ion Battery Shredder Blades | ±0.02mm Precision",
     description:
       "Precision twin-shaft shredder blades for EV lithium-ion battery pre-shredding. ±0.02mm thickness parallelism for consistent shear clearance on copper and aluminum foils. Corrosion-resistant surface treatments for LiPF6 inert-gas environments.",
     keywords:
@@ -138,7 +138,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "granulator-blades": {
     title:
-      "Plastic Granulator Blades & Crusher Knives | OEM Replacement, Factory Direct | Sureay",
+      "Plastic Granulator Blades & Crusher Knives | OEM",
     description:
       "D2, SKD-11 & Cr12MoV plastic granulator blades \u2014 rotor & stator knives ground to \u00b10.02\u202fmm. HRC 58\u201362, OEM replacement for Cumberland, Herbold & Rapid granulators. Factory-direct supply, wholesale available. Send model no. for exact-match quote.",
     keywords:
@@ -155,7 +155,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "paper-cutting-blades": {
     title:
-      "Precision Paper Cutting & Guillotine Blades | Commercial Printing | Sureay",
+      "Precision Paper Cutting & Guillotine Blades",
     description:
       "Professional guillotine blades for commercial printing and paper converting. Precision ground to 0.01mm tolerance. Clean, burr-free cuts on coated stock, cardboard, and multi-layer materials. Wide machine compatibility.",
     keywords:
@@ -183,7 +183,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "single-shaft-bed-knives": {
     title:
-      "Stator Knife & Bed Knives for Single-Shaft Shredders | OEM Replacement | Sureay",
+      "Stator & Bed Knives for Single-Shaft Shredders",
     description:
       "D2/DC53 stator knives (counter bed knives) for single-shaft shredders. Straightness \u22640.05\u202fmm/m, custom lengths to 3500\u202fmm. Drop-in OEM replacement for Vecoplan, Weima, Lindner & Zerma. Factory direct \u2014 send drawing or machine model for fast quote.",
     keywords:
@@ -191,7 +191,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "metal-coil-slitting-knives": {
-    title: "Precision Coil Slitting Knives | Metal Slitter Blades | Sureay",
+    title: "Precision Coil Slitting Knives | Metal Slitter Blades",
     description:
       "Premium top & bottom slitter blade sets for metal coil processing. Thickness tolerance ±0.001mm, parallelism 0.002mm. Complete tooling with spacers and rubber rings. For steel, aluminum, copper, and galvanized coils.",
     keywords:
@@ -200,7 +200,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "metal-shear-knives": {
     title:
-      "Heavy-Duty Metal Shear Knives | Guillotine & Scrap Shear Blades | Sureay",
+      "Heavy-Duty Metal Shear & Guillotine Knives",
     description:
       "Precision guillotine and scrap shear knives in D2, S1 (6CrW2Si), and H13 tool steels. Ground to ±0.05 mm parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap. Single-piece lengths up to 6000 mm.",
     keywords:
@@ -208,7 +208,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "metal-cold-saw-blades": {
-    title: "HSS & TCT Cold Saw Blades | Burr-Free Metal Tube Cutting | Sureay",
+    title: "HSS & TCT Cold Saw Blades | Metal Tube Cutting",
     description:
       "M2, M35 Cobalt HSS and TCT cold circular saw blades for steel tube, stainless, and aluminum profile cutting. DIN 1837/1840 standard. Burr-free end-face, no HAZ. TiN/TiAlN PVD coatings available. OEM fit for Kaltenbach, Bewo, MEP.",
     keywords:
@@ -217,7 +217,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "lithium-battery-slitting-knives": {
     title:
-      "Tungsten Carbide Battery Slitting Knives | Electrode Foil | Sureay",
+      "Carbide Battery Slitting Knives | Electrode Foil",
     description:
       "Mirror-finish tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra \u22640.05\u03bcm edge, \u00b10.001mm tolerance. Zero micro-burrs on Al/Cu foil.",
     keywords:
@@ -226,7 +226,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "corrugated-slitter-scorer-blades": {
     title:
-      "Tungsten Carbide Corrugated Slitter Scorer Blades | BHS Fosber | Sureay",
+      "Corrugated Slitter Scorer Blades | BHS & Fosber",
     description:
       "Solid tungsten carbide thin slitter blades for corrugated board dry-end lines. Zero-crush cutting. OEM fit for BHS, Fosber, Marquip. Slotter & scorer knives in stock.",
     keywords:
@@ -235,7 +235,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "nonwoven-slitter-knives": {
     title:
-      "Nonwoven Slitter Knives | PP Spunbond, SMS & Meltblown Fabrics | Sureay",
+      "Nonwoven Slitter Knives | PP Spunbond & SMS",
     description:
       "M2 HSS & D2 circular slitter knives for PP spunbond, meltblown & SMS nonwoven at 200\u2013500\u202fm/min. Anti-fraying rake geometry eliminates fiber tear on hygiene, medical & filtration lines. OEM fit for leading nonwoven converting systems \u2014 request quote.",
     keywords:
@@ -243,7 +243,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "scrap-chopper-blades": {
-    title: "Scrap Chopper Blades | S7 & H13 for Coil Processing | Sureay",
+    title: "Scrap Chopper Blades | S7 & H13 for Coil Lines",
     description:
       "Heavy-duty scrap chopper blades in S7 and H13 tool steel for metal slitting lines. 4-edge indexable design, optional carbide inlay. High impact resistance.",
     keywords:
@@ -252,17 +252,25 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   "rotary-slitter-knives-paper": {
     title:
-      "Tissue & Paper Slitter Knives | Fiber-Dust-Free Shear Pairs | D2 / M2 HSS | Sureay",
+      "Tissue & Paper Slitter Knives | D2 / M2 HSS",
     description:
       "D2 & M2 HSS circular slitter knives for tissue, kraft paper & corrugated board converting. Matched top/bottom shear pairs at \u00b10.002\u202fmm. Fiber-dust-free cuts at 400\u2013600\u202fm/min. OEM fit Atlas, Kampf, Fabio Perini, K\u00f6rber \u2014 send machine model for quote.",
     keywords:
       "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
   },
+
+  // Products without explicit entries — titles from blade.fullName would exceed 70 chars
+  "bottom-grooved-anvil-knives": {
+    title: "Bottom Grooved Anvil Knives for Shear Slitting",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title: "Melt Filter Scraper Blades & Filter Plates",
+  },
+  "strand-pelletizer-rotors": {
+    title: "Strand Pelletizer Rotors for Compounding Lines",
+  },
 };
 
-/**
- * Get SEO configuration for a specific page/route
- */
 export function getSEO(pageKey: string): PageSEO {
   return SEO_CONFIG[pageKey] || {};
 }

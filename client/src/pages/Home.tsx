@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Industrial Blades Manufacturer for Recycling, Metal & Converting"
+        title="Industrial Blades for Recycling, Metal & Converting"
         description="Sureay manufactures industrial blades, shredder knives, slitter tooling, and custom OEM machine knives for plastic recycling, metal processing, and paper converting lines worldwide."
         canonicalUrl="/"
         keywords="industrial blades manufacturer, custom machine knives, shredder blades, granulator knives, slitter blades, shear blades, OEM custom blades"

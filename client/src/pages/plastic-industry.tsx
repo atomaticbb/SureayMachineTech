@@ -267,7 +267,7 @@ export default function PlasticIndustry() {
   return (
     <>
       <SEO
-        title="Plastics Recycling & Compounding Blades — Shredder, Pelletizer & Melt Filter"
+        title="Plastic Recycling Blades | Shredder & Granulator"
         description="Precision shredder blades, strand pelletizer rotors and melt filter scraper blades for plastics recycling and compounding lines. PM-HSS & carbide grades for GF/CF compounds. OEM-compatible with EREMA, Maag, Coperion, Cumberland and LINDNER."
         canonicalUrl="/plastic-industry"
         keywords="plastic recycling blades, strand pelletizer rotors, granulator knives, shredder blades, melt filter scraper blades, PM-HSS compounding blades, GF40 pelletizer rotor, Coperion replacement rotor"

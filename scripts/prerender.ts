@@ -135,7 +135,7 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     page.on("pageerror", () => {});
 
     await page.goto(`${BASE_URL}${route}`, {
-      waitUntil: "domcontentloaded",
+      waitUntil: "networkidle2",
       timeout: TIMEOUT_MS,
     });
 
@@ -145,6 +145,11 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // Wait until react-helmet-async has flushed its tags into <head>
     // (it marks every managed tag with data-rh="true")
     await page.waitForSelector('meta[data-rh="true"]', { timeout: TIMEOUT_MS });
+
+    // Wait until h1 is in the DOM — ensures lazy-loaded page components have
+    // fully rendered before we capture the HTML (guards against SEO audits
+    // that report "missing H1" when the snapshot was taken too early).
+    await page.waitForSelector("h1", { timeout: TIMEOUT_MS });
 
     const html = await page.evaluate(() => document.documentElement.outerHTML);
     persistHtml(route, html);

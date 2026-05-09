@@ -212,7 +212,7 @@ export default function ConvertingIndustry() {
   return (
     <>
       <SEO
-        title="Flexible Converting & Packaging Slitter Knives — Film, Nonwoven, PSA Tape"
+        title="Converting Slitter Knives | Film, Nonwoven & PSA Tape"
         description="Precision slitter knives for BOPP film, SMS nonwoven, PSA tape, and adhesive-laminate converting. ±0.002mm tolerance. Compatible with Tidland, Atlas, Kampf, and Mario Cotta lines."
         canonicalUrl="/converting-industry"
         keywords="slitter knives converting, film slitter knives, nonwoven slitter blades, BOPP film slitting, PSA tape slitter, flexible packaging knives"

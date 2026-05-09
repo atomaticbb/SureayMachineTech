@@ -198,7 +198,7 @@ export default function NewEnergyIndustry() {
   return (
     <>
       <SEO
-        title="Lithium Battery Slitting Knives — New Energy Electrode Foil Cutting"
+        title="Lithium Battery Slitting Knives | New Energy"
         description="Tungsten carbide circular slitting knives for lithium-ion battery electrode foil. Ra ≤ 0.05μm zero-notch mirror finish. Compatible with Kaido, Koem, Hirano, and CKD battery winding machines. IATF 16949 documentation."
         canonicalUrl="/new-energy-industry"
         keywords="lithium battery slitting knives, electrode foil cutter, tungsten carbide slitter, battery slitting blade, EV battery manufacturing"

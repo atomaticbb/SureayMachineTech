@@ -15,8 +15,9 @@ Disallow: /api/
 #  image URLs consuming crawl budget as orphaned "pages" in GSC)
 Disallow: /images/
 
+# Block Google-Extended (used for Bard/Gemini AI training)
+User-agent: Google-Extended
+Disallow: /
+
 # Sitemap location
 Sitemap: https://sureay.com/sitemap.xml
-
-# Crawl delay (optional, adjust if needed)
-# Crawl-delay: 1

@@ -80,7 +80,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     image: "/images/common/material-selection.webp",
     readTime: "5 MIN",
     seoTitle:
-      "Blade Material Selection Guide by Industry | Carbide vs HSS vs Tool Steel",
+      "Blade Material Selection: Carbide vs HSS vs Tool Steel",
     metaDescription:
       "Quick reference chart: which industrial blade material suits your industry? Compare carbide, high-speed steel, tool steel, and stainless steel across paper, plastic, food, metal, and construction sectors.",
     keywords:
@@ -1288,7 +1288,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     image: "/images/news/laser-cutting.webp",
     readTime: "6 MIN",
     seoTitle:
-      "Mechanical Blade Manufacturing Process: From Steel to Finished Product | Sureay",
+      "Industrial Blade Manufacturing Process Guide",
     metaDescription:
       "Learn the complete manufacturing process of industrial mechanical blades — raw material inspection, heat treatment, precision grinding, and quality control — explained by Sureay blade engineers.",
     keywords:
@@ -1390,7 +1390,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     image: "/images/news/coil-slitting-line.webp",
     readTime: "7 MIN",
     seoTitle:
-      "The Complete Guide to Coil Slitting Line Maintenance | Sureay",
+      "Complete Guide to Coil Slitting Line Maintenance",
     metaDescription:
       "Learn how to prevent coil slitting line downtime with daily operator checks, slitter knife maintenance, guillotine shear blade care, and a structured preventive maintenance schedule.",
     keywords:
