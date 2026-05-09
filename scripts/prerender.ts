@@ -33,6 +33,7 @@ const ROUTES: string[] = [
   "/products",
   "/about",
   "/contact",
+  "/custom",
   "/plastic-industry",
   "/metal-industry",
   "/paper-industry",

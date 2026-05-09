@@ -95,9 +95,9 @@ export default function CategoryAggregation() {
       <Navbar />
 
       {/* ── 1 · Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative border-b border-slate-200 h-[420px] lg:h-[460px] overflow-hidden mt-[74px] bg-white">
-        {/* Right image panel — contained so the full image is visible */}
-        <div className="absolute inset-y-0 right-0 w-[48%] hidden lg:block p-8 bg-white">
+      <section className="relative border-b border-slate-200 overflow-hidden mt-[74px] bg-white">
+        {/* Right image panel — absolute, fills whatever height the left panel drives */}
+        <div className="absolute inset-y-0 right-0 w-[48%] hidden lg:flex items-center p-8 bg-white">
           <img
             src={meta.heroImage}
             alt={meta.title}
@@ -108,9 +108,9 @@ export default function CategoryAggregation() {
           />
         </div>
 
-        {/* Left navy overlay */}
+        {/* Left navy overlay — in normal flow so it drives section height */}
         <div
-          className="absolute inset-y-0 left-0 h-full bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-10 lg:py-16 w-full lg:w-[58%]"
+          className="relative bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-10 lg:py-16 min-h-[420px] lg:min-h-[460px] w-full lg:w-[58%]"
           style={{
             clipPath: "polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%)",
           }}
@@ -119,7 +119,7 @@ export default function CategoryAggregation() {
             <p className="font-mono text-[11px] font-semibold tracking-[0.28em] text-white/40 mb-6">
               [ Catalogue · Product Family ]
             </p>
-            <h1 className="text-[64px] font-black text-white tracking-tight leading-[0.95] mb-7">
+            <h1 className="text-[56px] font-black text-white tracking-tight leading-[0.95] mb-7">
               {meta.title}
             </h1>
             <div className="w-12 h-[3px] bg-white/20 mb-7" />
