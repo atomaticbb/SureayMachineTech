@@ -33,6 +33,19 @@ export function createApp({
     });
   }
 
+  // Serve correct robots.txt for www domain BEFORE redirect, so SEMrush/crawlers
+  // don't see stale/incorrect content when hitting www.sureay.com/robots.txt
+  app.get("/robots.txt", (req, res, next) => {
+    if (req.hostname === "www.sureay.com") {
+      res.setHeader("Content-Type", "text/plain");
+      res.send(
+        `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /admin/login\nDisallow: /api/\nDisallow: /images/\n\nUser-agent: Google-Extended\nDisallow: /\n\nSitemap: https://sureay.com/sitemap.xml`
+      );
+      return;
+    }
+    next();
+  });
+
   // www → canonical 301 (must be before all other middleware)
   app.use((req, res, next) => {
     if (req.hostname === "www.sureay.com") {
