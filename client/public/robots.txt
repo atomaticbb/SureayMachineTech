@@ -10,11 +10,6 @@ Disallow: /admin/
 Disallow: /admin/login
 Disallow: /api/
 
-# Prevent image files from being indexed as standalone web pages
-# (Images are still discoverable via product pages; this avoids
-#  image URLs consuming crawl budget as orphaned "pages" in GSC)
-Disallow: /images/
-
 # Block Google-Extended (used for Bard/Gemini AI training)
 User-agent: Google-Extended
 Disallow: /
