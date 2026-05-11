@@ -150,7 +150,7 @@ function FaqRow({ item, index }: { item: FaqItem; index: number }) {
           <span className="font-mono text-[10px] text-slate-400 mt-[3px] shrink-0 tabular-nums w-5">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <span className="font-semibold text-[16px] text-[#001f4d] leading-snug">
+          <span className="font-normal text-[16px] text-[#001f4d] leading-snug">
             {item.question}
           </span>
         </div>

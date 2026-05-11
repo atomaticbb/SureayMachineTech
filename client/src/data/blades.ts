@@ -31,6 +31,7 @@ export interface StandardDimension {
   thickness?: string; // Blade thickness (circular/disc blades)
   length?: string; // Blade length (shredder inserts) or Edge Thickness
   teeth?: string; // Tooth count (shredder inserts) or Body Thickness
+  pcs?: string; // Pieces per set (shear blades — upper + lower)
   bore?: string; // Bore / shaft profile description (e.g. "Hex Ø70 mm", "Splined")
   hooks?: string; // Claw / hook count or clearance spec (e.g. "8-Claw", "±0.02 mm")
   oem?: string; // Typical OEM platform / compatible machine model
@@ -2511,6 +2512,207 @@ export const blades: Blade[] = [
             "Can Sureay manufacture replacement blades for obsolete heavy scrap shears?",
           answer:
             "Yes. For heavy scrap shears (Lefort, Harris, Genesis) or obsolete models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile and counter-sunk mounting holes.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 2b. Guillotine Shear Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "guillotine-shear-blades",
+    name: "Guillotine Shear Blades",
+    fullName:
+      "Precision Guillotine Shear Blades for Hydraulic & Mechanical Sheet Metal Shearing Machines",
+    category: "metal_processing",
+    sector: "metal",
+    categoryDisplay: "Guillotine Shear Blades",
+    image:
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+    badge: "Sheet Metal",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+    ],
+
+    description:
+      "High-precision guillotine shear blades in D2 (Cr12MoV), 6CrW2Si, and 9CrSi tool steels for hydraulic and mechanical shearing machines. Surface-ground to ±0.05 mm full-length parallelism. Upper and lower blade sets for machines up to 16 mm × 4000 mm capacity. OEM-compatible replacements for TRUMPF, AMADA, LVD, Durma, and Bystronic guillotines.",
+
+    fullDescription:
+      "Guillotine shear blades are the critical cutting components in hydraulic and mechanical plate shearing machines used across steel service centers, shipyards, structural fabrication shops, and automotive stamping plants. Every cut cycle subjects the blade to enormous shear force concentrated along a narrow edge line — the blade must maintain razor-sharp edge geometry, absolute parallelism, and uniform hardness across its full length to deliver burr-free, distortion-free sheet metal cuts.\n\nSureay manufactures guillotine shear blades from premium tool steels — D2 (Cr12MoV), 6CrW2Si, and 9CrSi — each selected for a specific thickness range and material hardness profile. Every blade is vacuum heat-treated in-house and precision surface-ground to ±0.05 mm full-length parallelism, ensuring the shear gap between upper and lower blades remains uniform from end to end. This eliminates the twist, bow, and edge burring that plague poorly manufactured replacement blades.\n\n## Alloy Selection by Shearing Application\n\n**D2 / Cr12MoV (HRC 58–62):** The premium specification for shearing stainless steel (304, 316L), high-strength low-alloy (HSLA) plates, Hardox wear plate, and pre-painted coil. D2's 12% chromium-carbide matrix provides the extreme abrasion resistance needed when cutting work-hardening austenitic stainless steels that rapidly dull softer blade grades.\n\n**6CrW2Si (HRC 55–58):** A shock-resisting alloy that combines excellent edge hardness with core toughness. Specified for medium-to-heavy plate shearing (6–25 mm mild steel) and mixed-material production environments where the blade occasionally encounters harder-than-expected stock. The tungsten and chromium content provides high-temperature temper resistance.\n\n**9CrSi (HRC 55–60):** A cost-effective alloy for high-volume mild steel and carbon steel shearing (up to 12 mm). 9CrSi delivers reliable edge life on standard structural steel, galvanized sheet, and floor plate at a lower per-blade cost than D2.\n\n## Upper & Lower Blade Sets\n\nGuillotine shearing machines operate with paired upper (moving ram) and lower (fixed bed) blades. Sureay supplies matched upper and lower blade sets ground from the same steel batch, ensuring identical hardness and thermal expansion behavior across the pair. Each set is supplied with mounting holes drilled to the exact OEM bolt pattern of your machine.\n\n## Multi-Edge Reversible Blades\n\nFor standard rectangular-section blades, we offer 2-edge and 4-edge reversible profiles. When one cutting edge wears, the operator loosens the mounting bolts, flips or rotates the blade to expose a fresh edge, and retorques. This multiplies effective blade life by 2× to 4× before regrinding or replacement is required — drastically reducing annual tooling cost per cut.\n\n## Segment Blade Systems for Long Tables\n\nFor shearing machines wider than 3200 mm, single-piece blades become impractical due to heat treatment distortion risk. Sureay manufactures precision segment blade systems — multiple shorter blades indexed end-to-end on the machine bed — with matched end-to-end height tolerance (±0.02 mm) to ensure a continuous, gap-free shear line across the full table width.",
+
+    link: "/products/guillotine-shear-blades",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "TRUMPF",
+      "AMADA",
+      "Bystronic",
+      "LVD",
+      "Durma",
+      "Haco",
+      "Cincinnati",
+      "Salvagnini",
+      "Adira",
+      "Ursviken",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
+      },
+      {
+        label: "Hardness",
+        value: "HRC 55–62 (alloy dependent)",
+      },
+      {
+        label: "Machine Capacity",
+        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
+      },
+      {
+        label: "Edge Profile",
+        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
+      },
+      {
+        label: "Tolerance",
+        value: "±0.05 mm Full-Length Parallelism",
+      },
+      {
+        label: "Application",
+        value:
+          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
+      },
+    ],
+
+    components: [
+      {
+        id: "d2-stainless-shearing",
+        tag: "HEAVY PLATE",
+        title: "D2 for Stainless & HSLA Plate",
+        description:
+          "Premium D2 (Cr12MoV) deep-hardened to HRC 58–62. The high chromium-carbide matrix withstands the extreme abrasive wear and work-hardening forces encountered when shearing 304/316L stainless steel, HSLA plate, and pre-painted coil stock.",
+      },
+      {
+        id: "6crw2si-shock",
+        tag: "SHOCK RESISTANCE",
+        title: "6CrW2Si for Medium-Heavy Plate",
+        description:
+          "Shock-resisting 6CrW2Si alloy combines hard cutting edges (HRC 55–58) with massive core toughness. Engineered for 6–25 mm mild steel plate and mixed-material production where unexpected hard inclusions would chip a brittle blade.",
+      },
+      {
+        id: "parallelism-precision",
+        tag: "TOLERANCE",
+        title: "Precision Parallelism (±0.05 mm)",
+        description:
+          "Every blade is surface-ground to ±0.05 mm full-length parallelism across lengths up to 4000 mm. This ensures a uniform shear gap between upper and lower blades, delivering burr-free cuts and preventing twist and bow in the sheared sheet.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Machine Capacity",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      col4: "Pcs / Set",
+      caption:
+        "* Standard dimensions for common hydraulic & mechanical guillotine shearing machines. Each set includes upper and lower blades. Segment designs for tables wider than 4000 mm available on request. Custom lengths, multi-edge profiles, and OEM bolt patterns manufactured to drawing.",
+    },
+
+    standardDimensions: [
+      { spec: "4 × 2500", od: "508", id: "80", length: "25", pcs: "10" },
+      { spec: "4 × 2500", od: "1300", id: "63", length: "16", pcs: "4" },
+      { spec: "6 × 2500", od: "1300", id: "80", length: "20", pcs: "4" },
+      { spec: "6 × 3200", od: "1100", id: "80", length: "20", pcs: "6" },
+      { spec: "6 × 4000", od: "1025", id: "80", length: "20", pcs: "8" },
+      { spec: "16 × 2500", od: "1300", id: "100", length: "25", pcs: "4" },
+      { spec: "16 × 3200", od: "1100", id: "100", length: "25", pcs: "6" },
+      { spec: "16 × 4000", od: "1025", id: "100", length: "25", pcs: "8" },
+    ],
+
+    relatedBladeIds: [
+      "metal-shear-knives",
+      "metal-coil-slitting-knives",
+      "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
+    ],
+
+    offers: {
+      lowPrice: 30,
+      highPrice: 350,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "Which steel grade should I choose for shearing 304 stainless steel on a hydraulic guillotine?",
+          answer:
+            "D2 (Cr12MoV) hardened to HRC 58–62 is the recommended grade for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide content withstands the severe work-hardening abrasion imposed by austenitic stainless. For standard mild steel, 9CrSi provides excellent edge life at a lower cost.",
+        },
+        {
+          question:
+            "Why do my guillotine shear blades chip when cutting mixed or heavier plate?",
+          answer:
+            "Chipping usually indicates the blade alloy is too hard and brittle for the shearing load. If you are cutting 10–25 mm mixed plate or occasionally encounter harder stock, switch from D2 to 6CrW2Si. This shock-resisting alloy provides a controlled lower hardness (HRC 55–58) with massive core toughness, absorbing impact loads elastically instead of chipping.",
+        },
+        {
+          question:
+            "What causes burrs and twist on the sheared edge, and how do guillotine shear blades solve this?",
+          answer:
+            "Burrs and twist are almost always caused by uneven blade-to-blade contact — when the shear gap varies from one end of the blade to the other. This concentrates shear force at one point, producing compressive rollover burrs and sheet distortion. Our blades are surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform gap across the entire cut length for clean, burr-free shearing.",
+        },
+        {
+          question:
+            "How do 4-edge reversible guillotine shear blades reduce my annual tooling cost?",
+          answer:
+            "A 4-edge reversible blade provides four independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, rotate the blade 90° to expose a fresh edge, and retorque. This multiplies the blade's installed lifespan by 4× before regrinding is required, drastically reducing per-cut tooling cost on high-volume shearing lines.",
+        },
+        {
+          question:
+            "What is the maximum single-piece blade length Sureay can manufacture?",
+          answer:
+            "We manufacture single-piece guillotine shear blades up to 4000 mm in length. For machines wider than 4000 mm, we produce precision segment blade sets — multiple blades indexed end-to-end with matched height tolerance (±0.02 mm) — to create a continuous, gap-free shear line across the full table width.",
+        },
+        {
+          question:
+            "How do I select the correct blade dimensions for my specific guillotine shearing machine?",
+          answer:
+            "Blade dimensions are determined by your machine's cutting capacity (maximum sheet thickness × table width). For example, a 6 × 3200 mm machine uses blades sized 1100 × 80 × 20 mm, supplied as a 6-piece segmented set. Send us your machine model number or a drawing of your existing blade, and we will confirm the exact dimensions, bolt pattern, and recommended steel grade.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Can you manufacture replacement blades to match my TRUMPF, AMADA, LVD, or Durma guillotine exactly?",
+          answer:
+            "Yes. We carry OEM-matching dimensions and bolt patterns for TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, and Adira shearing machines. Supply your machine model number or a worn blade sample and we will confirm fitment. Custom lengths are manufactured to drawing within 15 working days.",
+        },
+        {
+          question:
+            "Do you supply both upper and lower guillotine shear blade sets?",
+          answer:
+            "Yes. Every standard order includes matched upper (ram) and lower (bed) blade sets, ground from the same steel batch to ensure identical hardness, grain structure, and thermal expansion behavior across the pair. Mounting holes are drilled to your exact OEM bolt pattern.",
+        },
+        {
+          question:
+            "Can Sureay manufacture replacement blades for older or discontinued shearing machines?",
+          answer:
+            "Yes. For discontinued or rare guillotine models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile, edge angles, and counter-sunk mounting holes. We have successfully produced replacements for machines dating back to the 1980s.",
+        },
+        {
+          question: "What quality documentation ships with each blade set?",
+          answer:
+            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record verifying full-length parallelism, and a heat treatment batch certificate. For OEM qualification programs, full CMM reports and steel mill material certificates are available on request.",
+        },
+        {
+          question:
+            "What is the typical lead time for standard guillotine shear blades?",
+          answer:
+            "Standard sizes (listed in our dimension table) ship within 7–10 working days. Custom sizes, special alloy grades, or high-volume orders typically require 15–20 working days. We offer expedited production on request for urgent machine-down situations.",
         },
       ],
     },

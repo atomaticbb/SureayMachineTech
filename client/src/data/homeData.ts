@@ -78,7 +78,7 @@ export const ECOSYSTEMS = [
   {
     icon: FileText,
     label: "Paper, Packaging & Converting",
-    industry: "Paper & Converting",
+    industry: "Paper & Tissue",
     desc: "For tissue, paper, and packaging lines that need cleaner cuts, longer blade life, and OEM-fit tooling for high-speed converting equipment.",
     specs: [
       {
@@ -103,7 +103,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/paper-industry",
     image: "/images/applications/tissue-industry/tissue-and-paper.webp",
-    cta: "Paper & Converting Solutions",
+    cta: "Paper & Tissue Solutions",
   },
   {
     icon: Layers,
@@ -262,13 +262,12 @@ export const FEATURED_PRODUCTS = [
       "For nonwoven fabric slitting where burr-free edges and stable tension are essential.",
   },
   {
-    name: "Battery Slitting Knives",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    href: "/products/lithium-battery-slitting-knives",
-    tag: "New Energy",
+    name: "Strand Pelletizer Rotors",
+    image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    href: "/products/strand-pelletizer-rotors",
+    tag: "Recycling",
     summary:
-      "For electrode foil slitting requiring micron-level precision and zero burr tolerance.",
+      "PM-HSS and solid tungsten carbide strand pelletizer rotors with ≤0.005 mm concentricity for Maag, Coperion, and Cumberland compounding lines.",
   },
 ];
 

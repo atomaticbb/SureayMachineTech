@@ -19,7 +19,9 @@ export default function AuthorityCarousel() {
     const el = carouselRef.current;
     if (!el) return 232;
     const item = el.querySelector("[data-carousel-item]") as HTMLElement | null;
-    return item ? item.offsetWidth + 32 : 232; // offsetWidth + gap-8 (32px)
+    if (!item) return 232;
+    const gap = parseFloat(getComputedStyle(el).gap) || 0;
+    return item.offsetWidth + gap;
   };
 
   // Teleport to middle set when reaching boundaries (invisible to user)
@@ -110,14 +112,18 @@ export default function AuthorityCarousel() {
 
             <div
               ref={carouselRef}
-              className="flex-1 flex gap-8 overflow-x-auto py-2 [&::-webkit-scrollbar]:hidden"
+              className="flex-1 flex gap-0 sm:gap-8 overflow-x-auto py-2 snap-x snap-mandatory sm:snap-none [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none" }}
             >
               {LOOP_ITEMS.map((product, i) => (
-                <Link href={product.href} key={`${product.name}-${i}`}>
+                <Link
+                  href={product.href}
+                  key={`${product.name}-${i}`}
+                  className="flex-shrink-0 flex flex-col items-center w-full sm:w-48 snap-center"
+                >
                   <div
                     data-carousel-item
-                    className="flex-shrink-0 flex flex-col items-center w-48 group cursor-pointer"
+                    className="flex flex-col items-center w-full group cursor-pointer"
                   >
                     <div className="w-40 h-40 rounded-none overflow-hidden bg-slate-50 transition-all duration-300 shadow-sm group-hover:shadow-[0_8px_24px_-8px_rgba(0,51,102,0.25)]">
                       <img

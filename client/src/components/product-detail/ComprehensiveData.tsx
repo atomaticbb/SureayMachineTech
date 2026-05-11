@@ -160,7 +160,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
                           {row.length ?? "—"}
                         </TableCell>
                         <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.teeth ?? "—"}
+                          {row.pcs ?? row.teeth ?? "—"}
                         </TableCell>
                       </>
                     ) : hasBoreHooks ? (

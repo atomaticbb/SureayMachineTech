@@ -110,16 +110,13 @@ export default function CategoryAggregation() {
 
         {/* Left navy overlay — in normal flow so it drives section height */}
         <div
-          className="relative bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-10 lg:py-16 min-h-[420px] lg:min-h-[460px] w-full lg:w-[58%]"
-          style={{
-            clipPath: "polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%)",
-          }}
+          className="relative bg-[#001f4d] flex flex-col justify-between px-6 sm:px-8 lg:pl-28 lg:pr-40 py-10 lg:py-16 min-h-0 lg:min-h-[460px] w-full lg:w-[58%] lg:[clip-path:polygon(0_0,100%_0,calc(100%-120px)_100%,0_100%)]"
         >
           <div>
             <p className="font-mono text-[11px] font-semibold tracking-[0.28em] text-white/40 mb-6">
               [ Catalogue · Product Family ]
             </p>
-            <h1 className="text-[56px] font-black text-white tracking-tight leading-[0.95] mb-7">
+            <h1 className="text-[36px] sm:text-[44px] lg:text-[56px] font-black text-white tracking-tight leading-[0.95] mb-7">
               {meta.title}
             </h1>
             <div className="w-12 h-[3px] bg-white/20 mb-7" />

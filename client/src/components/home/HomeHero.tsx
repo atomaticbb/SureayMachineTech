@@ -30,7 +30,7 @@ export default function HomeHero() {
             Precision Industrial Blades &amp; Knives — Custom Cutting Solutions
           </h1>
 
-          <p className="max-w-2xl text-base md:text-lg text-white/75 leading-relaxed mb-8">
+          <p className="max-w-2xl text-base md:text-lg text-white/90 leading-relaxed mb-8">
             Sureay manufactures shredder blades, granulator knives, and slitter
             tooling for plastic recycling, metal processing, and paper converting
             lines. Send us your drawings or samples.

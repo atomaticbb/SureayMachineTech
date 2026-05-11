@@ -213,7 +213,7 @@ export function buildDimensionTableHtml(blade: Blade): string {
       // col3 & col4
       if (hasLengthTeeth) {
         cells.push(row.length ?? "—");
-        cells.push(row.teeth ?? "—");
+        cells.push(row.pcs ?? row.teeth ?? "—");
       } else if (hasBoreHooks) {
         cells.push(row.bore ?? "—");
         cells.push(row.hooks ?? "—");
