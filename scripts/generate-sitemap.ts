@@ -130,6 +130,12 @@ const industryPages: UrlEntry[] = [
     priority: "0.8",
   },
   {
+    loc: `${BASE_URL}/wood-industry`,
+    changefreq: "monthly",
+    lastmod: TODAY,
+    priority: "0.8",
+  },
+  {
     loc: `${BASE_URL}/custom`,
     changefreq: "monthly",
     lastmod: TODAY,

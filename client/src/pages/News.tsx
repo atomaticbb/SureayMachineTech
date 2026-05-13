@@ -9,12 +9,13 @@ import { Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
-import { getAllDispatches } from "@/data/news";
+import { SORTED_DISPATCHES } from "@/data/news";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
 
 const CATEGORIES: { value: string; label: string }[] = [
   { value: "ALL", label: "All" },
+  { value: "TECHNICAL GUIDE", label: "Technical Guides" },
   { value: "COMPANY NEWS", label: "Company News" },
   { value: "INDUSTRY NEWS", label: "Industry News" },
 ];
@@ -24,7 +25,7 @@ const CATEGORIES: { value: string; label: string }[] = [
 export default function CorporateDispatches() {
   const [activeCategory, setActiveCategory] = useState("ALL");
 
-  const allPosts = getAllDispatches();
+  const allPosts = SORTED_DISPATCHES;
 
   const filteredDispatches =
     activeCategory === "ALL"

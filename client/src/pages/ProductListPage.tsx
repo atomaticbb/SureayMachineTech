@@ -15,39 +15,18 @@ import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { gtagEvent } from "@/lib/gtag";
 
-// ── Application-grouped Filter Taxonomy ────────────────────────────────────
+// ── Flat filter list — all 8 categories + All ──────────────────────────────
 type FilterItem = { value: BladeCategoryType | "all"; label: string };
-const FILTER_GROUPS: { groupLabel: string; items: FilterItem[] }[] = [
-  {
-    groupLabel: "All Products",
-    items: [{ value: "all", label: "All Blades" }],
-  },
-  {
-    groupLabel: "Recycling & Waste Processing",
-    items: [
-      { value: "shredder_blades", label: "Shredder Blades" },
-      { value: "granulator_blades", label: "Granulator Blades" },
-    ],
-  },
-  {
-    groupLabel: "Paper & Tissue Converting",
-    items: [
-      { value: "log_saw_blades", label: "Log Saw Blades" },
-      { value: "trim_cut_blades", label: "Paper Cutting & Trim" },
-    ],
-  },
-  {
-    groupLabel: "Slitting & Converting",
-    items: [{ value: "slitter_knives", label: "Slitter Knives" }],
-  },
-  {
-    groupLabel: "Metal Processing",
-    items: [{ value: "metal_processing", label: "Metal Processing Blades" }],
-  },
-  {
-    groupLabel: "New Energy",
-    items: [{ value: "battery_precision", label: "Battery Precision Blades" }],
-  },
+const FILTERS: FilterItem[] = [
+  { value: "all",              label: "All" },
+  { value: "slitter_knives",   label: "Slitter Knives" },
+  { value: "shredder_blades",  label: "Shredder Blades" },
+  { value: "granulator_blades",label: "Granulator Blades" },
+  { value: "log_saw_blades",   label: "Log Saw Blades" },
+  { value: "shear_blades",     label: "Shear Blades" },
+  { value: "cold_saw_blades",  label: "Cold Saw Blades" },
+  { value: "wood_chipper",     label: "Wood Chipper Blades" },
+  { value: "custom_profile",   label: "Custom Blades" },
 ];
 
 const FACTORY_IMAGES = [
@@ -77,7 +56,6 @@ export default function BladeListPage() {
   const [selectedCategory, setSelectedCategory] = useState<
     BladeCategoryType | "all"
   >("all");
-  const [filterOpen, setFilterOpen] = useState<boolean>(false);
   const [sortOrder, setSortOrder] = useState<"featured" | "az">("featured");
   const [filterTop, setFilterTop] = useState(74);
   const listSectionRef = useRef<HTMLElement | null>(null);
@@ -183,84 +161,17 @@ export default function BladeListPage() {
           ZONE 2 + 3 — Filter Bar + Full-Width Product Grid
       ═══════════════════════════════════════════════════════════════════ */}
 
-      {/* ── Sticky wrapper: bar + panel track navbar show/hide ────────── */}
+      {/* ── Sticky filter bar — single compact row ───────────────────── */}
       <div
-        className="sticky z-30 transition-[top] duration-300 ease-in-out"
+        className="sticky z-30 transition-[top] duration-300 ease-in-out bg-white border-b border-slate-200"
         style={{ top: filterTop }}
       >
-        {/* Filter / Sort Bar */}
-        <div className="bg-white border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <div className="flex items-center justify-between py-3 gap-4">
-              <button
-                onClick={() => setFilterOpen(o => !o)}
-                className={`inline-flex items-center gap-2 font-mono text-[12px] font-bold tracking-[0.2em]  border px-4 py-2 transition-colors ${
-                  filterOpen || selectedCategory !== "all"
-                    ? "bg-[#001f4d] text-white border-[#001f4d]"
-                    : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
-                }`}
-              >
-                <svg
-                  className="w-3.5 h-3.5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 6h18M7 12h10M11 18h2"
-                  />
-                </svg>
-                Filter
-                {selectedCategory !== "all" && (
-                  <span className="bg-white text-[#001f4d] text-[10px] font-black px-1.5 py-0.5 leading-none">
-                    1
-                  </span>
-                )}
-                <svg
-                  className={`w-3 h-3 transition-transform duration-200 ${filterOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="flex items-start gap-4 py-3">
 
-              <div className="flex items-center gap-5">
-                <p className="font-mono text-[11px] text-slate-400 tracking-[0.3em]  hidden sm:block">
-                  {filteredBlades.length} Product
-                  {filteredBlades.length !== 1 ? "s" : ""}
-                </p>
-                <select
-                  value={sortOrder}
-                  onChange={e =>
-                    setSortOrder(e.target.value as "featured" | "az")
-                  }
-                  className="font-mono text-[11px] text-slate-500  tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
-                >
-                  <option value="featured">Sort: Featured</option>
-                  <option value="az">Sort: A → Z</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Collapsible Filter Panel — inside sticky so always visible */}
-        <div
-          className={`overflow-hidden transition-all duration-300 bg-slate-50 border-b border-slate-200 ${filterOpen ? "max-h-[300px]" : "max-h-0"}`}
-        >
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
-            <div className="flex flex-wrap gap-2 items-center">
-              {FILTER_GROUPS.flatMap(g => g.items).map(item => {
+            {/* Two-row chip grid */}
+            <div className="flex-1 flex items-center flex-wrap gap-1.5 py-0.5">
+              {FILTERS.map(item => {
                 const count =
                   item.value === "all"
                     ? blades.length
@@ -272,7 +183,6 @@ export default function BladeListPage() {
                     key={item.value}
                     onClick={() => {
                       setSelectedCategory(item.value);
-                      setFilterOpen(false);
                       if (item.value !== "all") {
                         gtagEvent("view_item_list", {
                           event_category: "blade_filter",
@@ -281,34 +191,33 @@ export default function BladeListPage() {
                         });
                       }
                     }}
-                    className={`px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em]  border transition-none ${
+                    className={`flex-shrink-0 px-3 py-1.5 font-mono text-[12px] font-medium tracking-[0.1em] border transition-none whitespace-nowrap ${
                       isActive
                         ? "bg-[#001f4d] text-white border-[#001f4d]"
-                        : "bg-white text-slate-500 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
                     }`}
                   >
                     {item.label}
-                    <span
-                      className={`ml-2 text-[11px] font-black ${isActive ? "text-white/50" : "text-slate-300"}`}
-                    >
+                    <span className={`ml-1.5 text-[10px] font-medium ${isActive ? "text-white/50" : "text-slate-600"}`}>
                       {count}
                     </span>
                   </button>
                 );
               })}
-              {/* Clear filter — inline with chips */}
-              {selectedCategory !== "all" && (
-                <button
-                  onClick={() => {
-                    setSelectedCategory("all");
-                    setFilterOpen(false);
-                  }}
-                  className="px-4 py-2 font-mono text-[12px] font-bold tracking-[0.12em]  border border-dashed border-slate-300 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] inline-flex items-center gap-1.5 transition-colors"
-                >
-                  Clear ×
-                </button>
-              )}
             </div>
+
+            {/* Right: sort */}
+            <div className="flex items-center flex-shrink-0">
+              <select
+                value={sortOrder}
+                onChange={e => setSortOrder(e.target.value as "featured" | "az")}
+                className="font-mono text-[11px] text-slate-500 tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
+              >
+                <option value="featured">Sort: Featured</option>
+                <option value="az">Sort: A → Z</option>
+              </select>
+            </div>
+
           </div>
         </div>
       </div>

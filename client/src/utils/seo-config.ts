@@ -259,6 +259,54 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
   },
 
+  "guillotine-shear-blades": {
+    title: "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
+    description:
+      "D2 (Cr12MoV), 6CrW2Si & 9CrSi guillotine shear blades ground to \u00b10.05\u202fmm full-length parallelism. Upper and lower sets for machines up to 16\u202fmm \u00d7 4000\u202fmm. OEM-compatible with TRUMPF, AMADA, LVD, Durma & Bystronic.",
+    keywords:
+      "guillotine shear blades, hydraulic shear blades, D2 shear blades, 6CrW2Si shear knives, sheet metal shear blades, AMADA replacement blades, TRUMPF shear knives",
+  },
+
+  "wood-chipper-blades": {
+    title: "Wood Chipper Blades | D2 & TCT Drum & Disc Chipper Knives | Sureay",
+    description:
+      "D2, Cr12MoV & TCT drum and disc chipper knives, HRC 57\u201362, \u00b10.05\u202fmm thickness tolerance. Drop-in OEM fit for Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz. 8\u201312 regrind cycles.",
+    keywords:
+      "wood chipper blades, drum chipper knives, disc chipper blades, forestry chipper knives, biomass chipper blades, D2 chipper knives, TCT chipper blades, Vermeer chipper blades, Bandit chipper knives",
+  },
+
+  "wood-chipper-blades-industrial": {
+    title: "Industrial Wood Chipper Blades | M2 HSS & D2 Tool Steel | Sureay",
+    description:
+      "M2 HSS & D2 tool steel drum chipper knives for heavy commercial forestry, biomass plants & wood recycling lines. HRC 58\u201362, vacuum heat-treated plus deep cryogenic treatment for extended edge life.",
+    keywords:
+      "industrial chipper blades, M2 HSS chipper knives, D2 drum chipper blades, heavy duty wood chipper knives, biomass chipper blades industrial, forestry blades",
+  },
+
+  "wood-chipper-blades-standard": {
+    title: "Wood Chipper Knives | Reversible Double-Edge | T10 · 9CrSi · Cr12MoV | Sureay",
+    description:
+      "Reversible double-edge wood chipper knives in T10, 9CrSi and Cr12MoV steel — both cutting edges usable before resharpening. OEM fit for drum and disc chippers. Landscaping, forestry & biomass processing.",
+    keywords:
+      "wood chipper knives, reversible chipper blades, double edge chipper knives, drum chipper blades, disc chipper knives, T10 chipper blades, 9CrSi chipper knives, Cr12MoV chipper blades",
+  },
+
+  "wood-chipper-anvils": {
+    title: "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
+    description:
+      "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV and A8 Modified steel. HRC 54–60 through-hardened. ±0.05 mm parallelism. OEM fit for Bandit, Vermeer, Morbark, Timberwolf & Schliesing. Matched blade + anvil sets available.",
+    keywords:
+      "wood chipper anvil, chipper counter knife, bed knife chipper, chipper anvil replacement, Bandit anvil, Vermeer counter knife, Morbark bed knife, drum chipper anvil, disc chipper counter knife, matched blade anvil set",
+  },
+
+  "special-shaped-blades": {
+    title: "Custom Special-Shaped Blades | Any Profile, Any Alloy | Sureay",
+    description:
+      "Special-shaped and custom-profile industrial blades manufactured from DXF/DWG/STEP drawings or physical samples. D2, H13, PM-HSS & carbide. Tolerances to \u00b10.02\u202fmm. Any industry, any geometry.",
+    keywords:
+      "custom blades, special shaped knives, custom profile blades, OEM custom blades, bespoke industrial knives, DXF blade manufacturing",
+  },
+
   // Products without explicit entries — titles from blade.fullName would exceed 70 chars
   "bottom-grooved-anvil-knives": {
     title: "Bottom Grooved Anvil Knives for Shear Slitting",

@@ -40,13 +40,13 @@ export interface StandardDimension {
 // ===== BLADE CATEGORY TYPES =====
 // Organised by cutting process / application cluster
 export type BladeCategoryType =
-  | "slitter_knives" // Rotary slitters · corrugated scorer · nonwoven · film
-  | "shredder_blades" // Twin-shaft · single-shaft · rubber shredder
+  | "slitter_knives" // Rotary slitters · corrugated scorer · nonwoven · film · battery foil
+  | "shredder_blades" // Twin-shaft · single-shaft · rubber shredder · scrap chopper
   | "granulator_blades" // Plastic granulator / crusher knives
   | "log_saw_blades" // Tissue / log circular saw blades
-  | "trim_cut_blades" // Paper guillotine · three-knife trimmer
-  | "metal_processing" // Metal coil slitting · shear blades · cold saw
-  | "battery_precision" // New energy — lithium battery electrode slitting
+  | "shear_blades" // Guillotine shear · metal shear knives · paper trim blades
+  | "cold_saw_blades" // Metal cold circular saw blades
+  | "wood_chipper" // Drum chipper · disc chipper · biomass chipper knives
   | "custom_profile"; // Custom profile / special-shaped blades
 
 // ===== BLADE SECTOR TYPE (second filter axis, mirrors machines.ts `tonnage`) =====
@@ -533,7 +533,7 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "metal-foil-strip-slitter-knives",
-    name: "Metal Strip & Coil Slitter Knives",
+    name: "Coil & Strip Slitters",
     fullName: "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
     category: "slitter_knives",
     sector: "metal",
@@ -1259,7 +1259,7 @@ export const blades: Blade[] = [
 
     compatibleMachines: [
       "Fabio Perini",
-      "PCMC (Forte/Elite)",
+      "PCMC",
       "Casmatic",
       "Gambini",
       "Bretting",
@@ -1425,7 +1425,7 @@ export const blades: Blade[] = [
     id: "paper-cutting-blades",
     name: "Paper Cutting Blades",
     fullName: "Premium Guillotine Paper Cutter Blades (HSS & TCT)",
-    category: "trim_cut_blades",
+    category: "shear_blades",
     sector: "paper",
     categoryDisplay: "Paper Cutting Blades",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
@@ -1444,7 +1444,7 @@ export const blades: Blade[] = [
     isFeatured: true,
 
     compatibleMachines: [
-      "Polar (115/137/78/92)",
+      "Polar",
       "Wohlenberg",
       "Perfecta",
       "Schneider Senator",
@@ -2185,7 +2185,7 @@ export const blades: Blade[] = [
     id: "metal-coil-slitting-knives",
     name: "Metal Coil Slitting Knives",
     fullName: "Heavy-Duty Rotary Slitting Knives for Steel Coil Processing",
-    category: "metal_processing",
+    category: "slitter_knives",
     sector: "metal",
     categoryDisplay: "Metal Slitting Blades",
     image:
@@ -2360,7 +2360,7 @@ export const blades: Blade[] = [
     name: "Metal Shear Knives",
     fullName:
       "Heavy-Duty Guillotine & Scrap Shear Knives for Metal Fabrication",
-    category: "metal_processing",
+    category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Metal Shear Knives",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
@@ -2525,7 +2525,7 @@ export const blades: Blade[] = [
     name: "Guillotine Shear Blades",
     fullName:
       "Precision Guillotine Shear Blades for Hydraulic & Mechanical Sheet Metal Shearing Machines",
-    category: "metal_processing",
+    category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Guillotine Shear Blades",
     image:
@@ -2725,7 +2725,7 @@ export const blades: Blade[] = [
     id: "three-knife-trimmer-blades",
     name: "Three-Knife Trimmer Blades",
     fullName: "Premium HSS & Carbide Three-Knife Trimmer Sets for Bookbinding",
-    category: "trim_cut_blades",
+    category: "shear_blades",
     sector: "paper",
     categoryDisplay: "Bookbinding Knives",
     badge: "OEM Fit",
@@ -2748,7 +2748,7 @@ export const blades: Blade[] = [
     isFeatured: true,
 
     compatibleMachines: [
-      "Müller Martini (Merit, Orbit)",
+      "Müller Martini",
       "Kolbus",
       "Wohlenberg",
       "Perfecta",
@@ -2911,7 +2911,7 @@ export const blades: Blade[] = [
     name: "Battery Slitting Knives",
     fullName:
       "Tungsten Carbide Circular Slitting Knives for Lithium Battery Electrode Foil",
-    category: "battery_precision",
+    category: "slitter_knives",
     sector: "new_energy",
     categoryDisplay: "Battery Precision Blades",
     image:
@@ -3721,7 +3721,7 @@ export const blades: Blade[] = [
     name: "Metal Cold Saw Blades",
     fullName:
       "HSS & TCT Cold Circular Saw Blades for Metal Tube and Profile Cutting",
-    category: "metal_processing",
+    category: "cold_saw_blades",
     sector: "metal",
     categoryDisplay: "Metal Processing Blades",
     image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
@@ -3905,9 +3905,9 @@ export const blades: Blade[] = [
     name: "Scrap Chopper Blades",
     fullName:
       "Heavy-Duty Scrap Chopper Blades for Metal Slitting & Coil Processing Lines",
-    category: "metal_processing",
+    category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Metal Processing Blades",
+    categoryDisplay: "Scrap Chopper Blades",
     image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
     badge: "Extreme Impact",
     badgeColor: "orange",
@@ -4073,11 +4073,11 @@ export const blades: Blade[] = [
     isFeatured: true,
 
     compatibleMachines: [
-      "Maag / Automatik / Rieter",
-      "Coperion / Werner & Pfleiderer",
+      "Maag",
+      "Coperion",
       "Cumberland",
       "Conair",
-      "Reduction Engineering (Conair)",
+      "Reduction Engineering",
     ],
 
     specs: [
@@ -4281,11 +4281,11 @@ export const blades: Blade[] = [
     isFeatured: true,
 
     compatibleMachines: [
-      "EREMA Continuous Filter",
-      "Gneuß Rotary Filtration System",
-      "Ettlinger ERF Series",
-      "FIMIC RAS Series",
-      "Kreyenborg KSF Series",
+      "EREMA",
+      "Gneuß",
+      "Ettlinger",
+      "FIMIC",
+      "Kreyenborg",
       "Nordson BKG",
     ],
 
@@ -4359,7 +4359,7 @@ export const blades: Blade[] = [
 
     standardDimensions: [
       {
-        spec: "EREMA Continuous Filter",
+        spec: "EREMA",
         od: "180 – 420",
         id: "25 – 40",
         thickness: "6 / 8",
@@ -4377,7 +4377,7 @@ export const blades: Blade[] = [
         thickness: "8 / 10",
       },
       {
-        spec: "FIMIC RAS Series",
+        spec: "FIMIC",
         od: "160 – 400",
         id: "22 – 38",
         thickness: "6 / 8",
@@ -4498,6 +4498,668 @@ export const blades: Blade[] = [
     offers: {
       lowPrice: 20,
       highPrice: 800,
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Wood Chipper Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "wood-chipper-blades",
+    name: "Wood Chipper Blades",
+    fullName:
+      "Heavy-Duty Drum & Disc Chipper Knives for Biomass, Forestry & Wood Recycling",
+    category: "wood_chipper",
+    sector: "recycling",
+    categoryDisplay: "Wood Chipper Blades",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    badge: "Forestry Grade",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+    ],
+    description:
+      "Premium D2, Cr12MoV & TCT drum and disc chipper knives for biomass processing, forestry operations & wood recycling. Through-hardened HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry. Drop-in OEM fit for Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz chippers.",
+    fullDescription:
+      "Wood chipper blades operate under some of the most punishing conditions in the size-reduction industry. Every rotation drives the cutting edge into dense hardwood, green timber with high moisture content, contaminated demolition wood, or recycled pallets embedded with nails and staples. A blade that lacks the correct balance of hardness and toughness will either dull within hours on clean hardwood or shatter on the first nail strike in contaminated feedstock.\n\nSureay wood chipper blades are forged from premium tool steels — D2 (1.2379), Cr12MoV, and high-carbon chipper knife steel — vacuum heat-treated to HRC 57–62, followed by a mandatory deep cryogenic soak at −196°C. This processing sequence produces a fully stabilised martensitic microstructure with uniform carbide distribution across the entire blade cross-section, delivering the dual performance requirement of wood chipping: abrasion resistance to hold a sharp edge through hundreds of cubic meters of timber, combined with sufficient core toughness to survive impacts from embedded metal contaminants without catastrophic fracture.\n\n## Chipper Type & Blade Geometry\n\n### Drum Chipper Blades\n\nDrum chippers (Vermeer BC1800, Bandit 1990, Morbark 40/36) use rectangular straight knives bolted to a high-speed rotating drum (typically 1,000–2,500 RPM). The blade acts as a planer knife — each revolution peels a chip from the infeed timber at the programmed depth of cut. Blade length corresponds to the drum width (typically 200–600 mm), and thickness (typically 12–30 mm) determines maximum chip depth.\n\nCritical parameters for drum chipper performance:\n- **Bevel angle:** 30°–37° (hardwood) or 25°–30° (softwood/green timber)\n- **Thickness parallelism:** ≤ 0.05 mm — uneven blade thickness causes drum imbalance, destructive vibration, and inconsistent chip size\n- **Bolt-hole positional tolerance:** ±0.10 mm — ensures the cutting edge projects evenly across the full drum width after mounting\n\n### Disc Chipper Blades\n\nDisc chippers (Peterson 5710, Morbark 50/48, Precision Husky) mount blades radially on a heavy rotating disc. The timber is fed axially into the disc face, and the blades produce chips by a combination of shearing and splitting action. Disc chipper blades are typically shorter but thicker than drum chipper knives, and are subjected to higher individual impact loads from large-diameter logs.\n\nDisc chipper blades require maximum toughness specification: Cr12MoV or modified chipper knife steel at HRC 55–58 is recommended for whole-log disc chippers processing hardwood above 300 mm diameter.\n\n### Whole-Tree / Biomass Chipper Blades\n\nBiomass and whole-tree chippers (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) process entire trees including branches, root balls, and brush. The feedstock contains embedded soil, stones, and occasional metal debris. Blades for these applications are manufactured from impact-optimised steel at HRC 55–58, with a wider bevel angle (35°–42°) that distributes impact forces across a broader cutting face and prevents edge rollover on contaminated feedstock.\n\n## Material Selection by Feedstock\n\n**High-Carbon Chipper Knife Steel (HRC 55–58):** The industry-standard grade for general forestry and green timber chipping. Cost-effective, easily resharpened on standard surface grinders, and tough enough for moderate nail contamination. Suited to landscape contractors, tree service companies, and municipal green waste operations.\n\n**D2 / Cr12MoV Cold-Work Tool Steel (HRC 58–62):** Premium specification for high-volume commercial wood recycling and biomass fuel chip production. The 12% chromium carbide matrix provides 2–3× longer edge life versus standard carbon steel on abrasive hardwoods (oak, hickory, ironbark) and dry recycled timber. Recommended for industrial drum chippers running 8–16 hour continuous shifts.\n\n**TCT — Tungsten Carbide Tipped (Brazed Inserts):** The ultimate specification for extreme-duty biomass processing. Carbide-tipped chipper knives deliver 5–10× the service life of D2 on contaminated demolition wood, railroad ties, and heavily soiled root balls. The carbide cutting edge is vacuum-brazed onto a tough alloy steel body that absorbs the gross impact energy without transmitting brittle fracture to the carbide insert.\n\n## Precision Grinding for Chip Quality\n\nChip geometry is the primary product quality metric in biomass fuel production: pulp mills, biomass power plants, and pellet manufacturers specify strict chip size distribution standards (e.g., EN 17225-4 / TAPPI T257). Uneven blade thickness or inconsistent bevel angles across a multi-blade drum or disc produce oversized and undersized chips that fail screening specifications, requiring secondary processing or causing price deductions.\n\nSureay chipper blades are precision surface-ground to:\n- **Thickness tolerance:** ±0.05 mm across the full blade length\n- **Bevel angle:** ±0.5° (verified by optical comparator)\n- **Face flatness:** ≤ 0.05 mm per 300 mm length\n- **Surface finish:** Ra ≤ 1.6 μm on the rake face for reduced friction and clean chip ejection\n\n## Counter-Knife (Anvil) & Wear Plate Supply\n\nThe counter-knife (anvil or bed knife) sets the clearance gap that determines minimum chip thickness. Worn or misaligned counter-knives negate the benefit of new chipper blades. Sureay manufactures matched counter-knives and replaceable wear plates in D2 and manganese steel, supplied as integrated sets with pre-verified clearance specifications for your chipper model.\n\n## Resharpening Capability\n\nUnlike shredder blades, chipper knives are designed for multiple regrinding cycles. Our through-hardened heat treatment ensures uniform hardness from the surface to the core — each regrind exposes steel of identical hardness and wear characteristics. A standard D2 chipper blade can be reground 8–12 times before reaching minimum safe thickness, making the total cost of ownership extremely competitive.",
+    link: "/products/wood-chipper-blades",
+    isFeatured: true,
+    compatibleMachines: [
+      "Bandit Industries",
+      "Vermeer",
+      "Morbark",
+      "Peterson Pacific",
+      "Doppstadt",
+      "Jenz",
+      "CBI",
+      "Precision Husky",
+      "Bruks Siwertell",
+    ],
+    specs: [
+      {
+        label: "Material",
+        value:
+          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
+      },
+      {
+        label: "Hardness",
+        value: "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
+      },
+      {
+        label: "Thickness Tolerance",
+        value: "±0.05 mm (prevents drum imbalance & vibration)",
+      },
+      {
+        label: "Bevel Angle",
+        value: "25°–42° (optimised per timber species & contamination level)",
+      },
+      {
+        label: "Heat Treatment",
+        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
+      },
+      {
+        label: "Resharpening",
+        value: "Through-hardened — 8–12 regrind cycles per blade",
+      },
+      {
+        label: "Application",
+        value:
+          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
+      },
+    ],
+    components: [
+      {
+        id: "through-hardened-core",
+        tag: "METALLURGY",
+        title: "Through-Hardened for Maximum Regrind Life",
+        description:
+          "Unlike case-hardened alternatives that expose a soft core after the first regrind, Sureay chipper blades are vacuum heat-treated to achieve uniform hardness (HRC 57–62) from surface to core. Each regrind delivers identical edge performance to a new blade, yielding 8–12 productive service cycles per blade.",
+      },
+      {
+        id: "impact-toughness",
+        tag: "DURABILITY",
+        title: "Nail & Contaminant Resistance",
+        description:
+          "Contaminated demolition wood, recycled pallets, and urban green waste contain hidden nails, screws, and stones. Our deep cryogenic treatment (−196°C) stabilises the martensitic microstructure, delivering the core toughness needed to absorb metal-strike impacts without brittle edge fracture or blade cracking.",
+      },
+      {
+        id: "chip-quality",
+        tag: "OUTPUT QUALITY",
+        title: "Precision Bevel for Uniform Chip Size",
+        description:
+          "Biomass power plants and pulp mills penalise off-spec chip size distributions. Every blade is surface-ground to ±0.05 mm thickness and ±0.5° bevel angle, ensuring consistent chip geometry across the full drum or disc width that meets EN 17225 and TAPPI T257 standards.",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Chipper Type / OEM Platform",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm.",
+    },
+    standardDimensions: [
+      { spec: "Bandit 12\" / 15\" Drum", od: "230", id: "80", thickness: "16" },
+      { spec: "Bandit 18\" / 19\" Drum", od: "295", id: "80", thickness: "19" },
+      { spec: "Vermeer BC1800 / BC2100", od: "310", id: "100", thickness: "19" },
+      { spec: "Morbark 40/36 Drum", od: "400", id: "100", thickness: "22" },
+      { spec: "Morbark 50/48 Disc", od: "250", id: "120", thickness: "25" },
+      { spec: "Peterson 5710 Disc", od: "280", id: "130", thickness: "25" },
+      { spec: "Doppstadt / Jenz Biomass", od: "350", id: "100", thickness: "20" },
+      { spec: "Heavy Whole-Tree Chipper", od: "600", id: "150", thickness: "30" },
+    ],
+    relatedBladeIds: [
+      "wood-chipper-anvils",
+      "twin-shaft-blades-recycling",
+      "single-shaft-rotor-inserts",
+      "granulator-blades",
+    ],
+    offers: {
+      lowPrice: 25,
+      highPrice: 380,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "What blade material should I use for chipping clean green timber versus contaminated demolition wood?",
+          answer:
+            "For clean green timber (forestry, tree service, land clearing), standard high-carbon chipper knife steel at HRC 55–58 delivers excellent edge life at the lowest cost per regrind cycle. For contaminated demolition wood, recycled pallets, or urban green waste with embedded nails, screws, and stones, upgrade to Cr12MoV or D2 at HRC 58–60. The chromium-carbide matrix provides 2–3× longer edge life on abrasive dry wood while maintaining sufficient toughness to survive moderate metal impacts. For heavily contaminated streams (railroad ties, C&D debris), specify TCT carbide-tipped blades that deliver 5–10× longer service life than D2.",
+        },
+        {
+          question:
+            "How does blade thickness tolerance affect chip quality and drum vibration?",
+          answer:
+            "Blade thickness directly controls chip depth and influences drum balance. If blade thicknesses vary by more than 0.10 mm across a multi-blade drum, the thicker blades cut deeper and produce oversized chips while thinner blades produce undersized chips — both conditions fail biomass fuel screening specifications (EN 17225-4). Additionally, uneven blade mass creates dynamic imbalance at operating RPM (1,000–2,500 RPM), causing destructive vibration that accelerates bearing failure and fatigues the drum housing. Our ±0.05 mm thickness tolerance eliminates both issues.",
+        },
+        {
+          question:
+            "What bevel angle should I specify for hardwood versus softwood chipping?",
+          answer:
+            "For softwood and green timber with high moisture content (pine, spruce, poplar), specify 25°–30° bevel angle. The sharper included angle slices through soft, fibrous wood with minimum cutting force and produces clean chip faces with low fibre tear. For dry hardwood (oak, hickory, eucalyptus), increase to 30°–37° to strengthen the cutting edge against the higher density and impact loading. For contaminated biomass and whole-tree chipping with soil and stone contamination, specify 35°–42° — the wider bevel distributes impact forces across a broader cutting face, preventing edge rollover.",
+        },
+        {
+          question:
+            "How many times can Sureay chipper blades be resharpened, and what is the correct regrinding procedure?",
+          answer:
+            "Our through-hardened chipper blades can be resharpened 8–12 times before reaching minimum safe thickness (typically 60–70% of original thickness). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass to prevent thermal damage to the heat-treated edge. Never dry-grind chipper knives — the localised overheating above 200°C draws the temper and softens the edge. After grinding, verify the bevel angle with an optical comparator or digital protractor. We also offer a professional regrinding service with hardness re-verification.",
+        },
+        {
+          question:
+            "What causes premature edge rollover on my chipper blades, and how do I prevent it?",
+          answer:
+            "Edge rollover (the cutting edge folding over rather than chipping or wearing gradually) indicates the blade hardness is too low for the feedstock, or the bevel angle is too acute for the impact loading. On standard carbon steel blades processing dry hardwood, the edge lacks sufficient carbide reinforcement to resist plastic deformation. Upgrade to D2 or Cr12MoV at HRC 58–62 and increase the bevel angle by 3°–5°. Also verify counter-knife clearance: excessive clearance (> 1.5 mm) forces the blade to fracture the wood by bending rather than shearing, dramatically increasing edge loading.",
+        },
+        {
+          question:
+            "Should I replace the counter-knife (anvil) when I install new chipper blades?",
+          answer:
+            "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife with a rounded or chipped edge forces new blades to work against an inconsistent shear gap, reducing their effective service life by 30–50% and producing poor chip quality. Replace or regrind the counter-knife when the cutting edge shows visible rounding exceeding 1.0 mm or chipping deeper than 0.5 mm. We supply matched counter-knives manufactured from D2 or manganese steel as integrated sets with pre-verified clearance.",
+        },
+        {
+          question:
+            "What chip size distribution should I target for biomass fuel production versus pulp mill supply?",
+          answer:
+            "Biomass power plants typically require chips within 3–50 mm (EN 17225-4 Class P31s or P45s) with less than 5% fines (< 3 mm) and less than 1% oversized (> 63 mm). Pulp mills require tighter specifications per TAPPI T257: typically 80% acceptance in 7–25 mm range with strict limits on pin chips and overthick pieces. Achieving these specifications requires consistent blade thickness (±0.05 mm), correct bevel angle, proper counter-knife clearance (0.5–1.0 mm), and uniform drum speed. We can recommend the optimal blade geometry for your target specification.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question:
+            "Can you supply blades for my specific chipper model if it is not listed in your standard dimensions?",
+          answer:
+            "Yes. Send us your existing blade sample, a technical drawing, or your chipper make and model number. We will confirm the length, width, thickness, bevel angle, and bolt-hole pattern, and manufacture exact drop-in replacements. We maintain an extensive database of OEM chipper blade blueprints for Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz, and CBI platforms. Custom dimensions are manufactured to drawing within 10–15 working days.",
+        },
+        {
+          question:
+            "What makes Sureay's heat treatment different from cheaper alternatives?",
+          answer:
+            "Unlike standard quench-and-temper processes, every Sureay chipper blade undergoes vacuum hardening followed by deep cryogenic treatment at −196°C. The cryogenic step transforms retained austenite into stable martensite, improving wear resistance by up to 40% and ensuring uniform hardness from surface to core. This means every regrind exposes steel of identical quality — cheap blades often expose a softer core after the first regrind, halving the edge life of subsequent sharpening cycles.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement chipper blades in stock sizes typically ship within 48–72 hours. Custom profiles and TCT carbide-tipped blades take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question:
+            "What quality certifications does Sureay hold, and can you provide material test reports?",
+          answer:
+            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (thickness, bevel angle, bolt-hole positions), and a heat treatment batch certificate. For large-volume biomass operations requiring full traceability, steel mill composition certificates and CMM dimensional reports are available on request.",
+        },
+        {
+          question:
+            "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–4 blades) for machine fit verification and edge life benchmarking against your current supplier. Standard sample lead time is 5–7 working days. For TCT carbide-tipped blades, sample lead time is 10–12 working days.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Wood Chipper Blades — Industrial (HSS & D2)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "wood-chipper-blades-industrial",
+    name: "Industrial Wood Chipper Blades",
+    fullName:
+      "HSS & D2 Tool Steel Drum Chipper Knives for Heavy Forestry, Biomass & Wood Recycling",
+    category: "wood_chipper",
+    sector: "recycling",
+    categoryDisplay: "Wood Chipper Blades",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
+    badge: "Industrial Grade",
+    badgeColor: "red",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
+    ],
+    description:
+      "Heavy-duty drum chipper knives in M2 HSS, D2 (SKD11), and Cr12MoV tool steel for industrial forestry, whole-tree biomass processing & demolition wood recycling. Vacuum-hardened HRC 58–62 with deep cryogenic treatment. Precision surface-ground to ±0.05\u202fmm thickness parallelism. Drop-in OEM fit for Vermeer, Morbark, Doppstadt, Jenz & Bruks Siwertell.",
+    fullDescription:
+      "Industrial wood chippers in forestry, biomass energy, and C&D wood recycling operate under sustained high-torque loading that exposes every weakness in blade metallurgy. A standard high-carbon steel blade will dull within a single shift on dense hardwood, and shatter on the first nail strike in contaminated demolition timber. Sureay industrial wood chipper blades are manufactured from premium tool steels — M2 HSS, D2 (1.2379 / SKD11), and Cr12MoV — selected specifically for the dual requirement of abrasion resistance and impact toughness.\n\nEvery blade is vacuum heat-treated through a controlled 4-cycle tempering sequence and deep cryogenically processed at −196°C.\n\n## Material Selection by Feedstock & Duty Cycle\n\n**D2 / SKD11 Cold-Work Tool Steel (HRC 58–62):** The premium specification for high-volume commercial wood recycling and biomass chip production. The 12% chromium and 1.55% carbon content delivers outstanding abrasion resistance against lignin-rich hardwood fibres and silica-bearing bark.\n\n**Cr12MoV (HRC 58–60):** An excellent balance of wear resistance and toughness for mixed feedstock operations. Cr12MoV's molybdenum-vanadium additions improve impact energy absorption compared to standard D2, making it the correct choice for disc chippers and whole-tree biomass processors.\n\n**M2 HSS (HRC 62–64):** The highest-hardness specification for clean, high-speed drum chipping of softwood logs and pulpwood where maximum edge retention is the priority.\n\n**6CrW2Si (HRC 55–58):** Shock-resisting alloy for heavily contaminated demolition wood, railroad ties, and urban green waste with high metal contamination risk.\n\n## Precision Grinding for Chip Quality\n\nSureay industrial chipper blades are precision surface-ground to ±0.05 mm thickness parallelism, ±0.5° bevel angle, ≤0.05 mm face flatness per 300 mm, and ±0.10 mm bolt-hole positional tolerance.",
+    link: "/products/wood-chipper-blades-industrial",
+    isFeatured: true,
+    compatibleMachines: [
+      "Vermeer",
+      "Morbark",
+      "Doppstadt",
+      "Jenz",
+      "Bruks Siwertell",
+      "Peterson Pacific",
+      "CBI",
+      "Precision Husky",
+    ],
+    specs: [
+      { label: "Material", value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si" },
+      { label: "Hardness", value: "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)" },
+      { label: "Heat Treatment", value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)" },
+      { label: "Thickness Tol.", value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)" },
+      { label: "Bevel Angle", value: "25°–42° (optimised per species & contamination level)" },
+      { label: "Resharpening", value: "Through-hardened — 8–12 regrind cycles per blade" },
+      { label: "Application", value: "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood" },
+    ],
+    components: [
+      {
+        id: "premium-metallurgy",
+        tag: "METALLURGY",
+        title: "HSS & D2 Tool Steel — Not Standard Carbon Steel",
+        description:
+          "Standard high-carbon chipper knives dull within hours on dense hardwood and shatter on contaminated feedstock. Our D2/SKD11 blades deliver 2–3× longer edge life through uniform chromium-carbide distribution, while M2 HSS provides the ultimate edge retention on clean softwood at high-RPM drum speeds.",
+      },
+      {
+        id: "cryo-through-hardened",
+        tag: "DURABILITY",
+        title: "Deep Cryogenic + Through-Hardened Core",
+        description:
+          "Vacuum hardening followed by deep cryogenic treatment at −196°C transforms retained austenite into stable martensite, boosting wear resistance by up to 40%. Through-hardening ensures each of the 8–12 regrind cycles delivers identical edge performance — no soft core exposed after sharpening.",
+      },
+      {
+        id: "drum-balance-precision",
+        tag: "PRECISION",
+        title: "±0.05 mm for Dynamic Drum Balance",
+        description:
+          "At drum tip speeds above 60 m/s, a 0.10 mm blade thickness variation creates destructive centrifugal imbalance. Every blade is surface-ground to ±0.05 mm parallelism and verified before dispatch, ensuring the drum stays within OEM balance specification after installation.",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Chipper OEM / Model",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Standard OEM replacement dimensions. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact blueprints. Counter-knives and throat wear plates available as matched sets. Custom lengths up to 800 mm.",
+    },
+    standardDimensions: [
+      { spec: "Vermeer BC1800 / BC2100", od: "310", id: "100", thickness: "19" },
+      { spec: "Morbark 40/36 Drum", od: "400", id: "100", thickness: "22" },
+      { spec: "Morbark 50/48 Disc", od: "250", id: "120", thickness: "25" },
+      { spec: "Peterson 5710 / 6710 Disc", od: "280", id: "130", thickness: "25" },
+      { spec: "Doppstadt DH 910 Biomass", od: "350", id: "100", thickness: "20" },
+      { spec: "Jenz HEM 820", od: "380", id: "110", thickness: "22" },
+      { spec: "CBI Magnum Force", od: "450", id: "120", thickness: "25" },
+      { spec: "Heavy Whole-Tree / Custom", od: "600", id: "150", thickness: "30" },
+    ],
+    relatedBladeIds: [
+      "wood-chipper-anvils",
+      "wood-chipper-blades-standard",
+      "twin-shaft-blades-recycling",
+      "single-shaft-rotor-inserts",
+    ],
+    offers: { lowPrice: 45, highPrice: 380 },
+    faqs: {
+      technical: [
+        {
+          question: "When should I upgrade from standard high-carbon steel to D2 or M2 HSS chipper blades?",
+          answer:
+            "Upgrade to D2 (SKD11) when your chipper processes dense hardwood (oak, hickory, eucalyptus) or dry recycled timber on continuous 8+ hour shifts. D2's chromium-carbide matrix provides 2–3× longer edge life versus standard carbon steel. Upgrade to M2 HSS only for clean softwood at high drum RPM (1,500–2,500) where maximum edge retention is the priority — M2 at HRC 62–64 is more susceptible to impact damage on contaminated feedstock.",
+        },
+        {
+          question: "How does blade thickness tolerance affect chip quality and drum vibration?",
+          answer:
+            "A ±0.10 mm deviation across blade sets produces both oversized and undersized chips that fail biomass screening specs (EN 17225-4). The same deviation creates centrifugal force imbalance at 1,500–2,500 RPM that accelerates bearing failure. Our ±0.05 mm tolerance eliminates both issues.",
+        },
+        {
+          question: "How many times can industrial D2 chipper blades be resharpened?",
+          answer:
+            "Our through-hardened D2 blades can be reground 8–12 times before reaching minimum safe thickness (typically 60–70% of original). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass. Never dry-grind — localised overheating above 200°C draws the temper and softens the edge.",
+        },
+        {
+          question: "Should I replace the counter-knife when I install new chipper blades?",
+          answer:
+            "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife reduces service life by 30–50% and degrades chip quality. Replace when visible edge rounding exceeds 1.0 mm or chipping exceeds 0.5 mm depth. We manufacture matched counter-knives in D2 and manganese steel as integrated sets.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+        },
+        {
+          question: "Can you supply blades for my specific chipper model?",
+          answer:
+            "Yes. Send us your existing blade sample, a technical drawing, or your chipper make and model number. We maintain an extensive database of OEM blueprints for Vermeer, Morbark, Doppstadt, Jenz, Peterson, CBI, and Bruks platforms. Custom dimensions within 10–15 working days.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Wood Chipper Blades — Standard Reversible
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "wood-chipper-blades-standard",
+    name: "Wood Chipper Knives",
+    fullName:
+      "Reversible Double-Edge Wood Chipper Knives | T10 · 9CrSi · Cr12MoV | Landscaping & Forestry",
+    category: "wood_chipper",
+    sector: "recycling",
+    categoryDisplay: "Wood Chipper Blades",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
+    badge: "Best Seller",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
+    ],
+    description:
+      "Reversible double-edge wood chipper knives in T10, 9CrSi & Cr12MoV. HRC 55–60, precision-ground 25°–30° bevel. Flip when dull — doubles installed life before regrinding. 200–350 mm lengths, 2/4/6-hole bolt patterns. OEM fit for Bandit, Vermeer, Patriot, Wallenstein & Timberwolf. Optional Teflon anti-sap coating.",
+    fullDescription:
+      "Wood chipper knives are the highest-volume consumable in the landscaping, tree service, and municipal green waste industries. Sureay standard chipper knives are manufactured from heat-treated high-carbon and chrome-alloy tool steels — proven grades that deliver the right balance of edge sharpness, impact toughness, and resharpening economy for everyday chipping operations.\n\n## Reversible Double-Edge Design\n\nEvery blade features a symmetrical double-edge geometry. When the working edge dulls, simply unbolt, flip 180°, retorque — and you have a factory-sharp second edge ready to cut. This halves blade-change downtime and doubles installed service life before any regrinding is needed.\n\n## Material Grades\n\n**T10 High-Carbon Steel (HRC 55–58):** The cost-effective standard for landscaping and tree service operations cutting softwood, green timber, and mixed yard waste.\n\n**9CrSi Chrome-Silicon Alloy (HRC 57–60):** Delivers 40–60% longer sharp-edge intervals over T10 for mixed hardwood/softwood species — maple, birch, ash.\n\n**Cr12MoV Tool Steel (HRC 58–60):** Premium spec for operators processing dry hardwood or lightly contaminated urban green waste.\n\n## Precision Grinding\n\nBlades are surface-ground to ±0.05 mm thickness tolerance and ±0.5° bevel angle (optical comparator verified). Uniform blade thickness across the full drum width eliminates vibration and produces consistent chip geometry meeting biomass and mulch size specifications.\n\n## Anti-Sap Coating\n\nOptional Teflon (PTFE) coating on the rake face reduces sap adhesion by ~70%, extending clean-running intervals on pine, spruce, and eucalyptus chipping. The coating survives 4–6 regrind cycles before recoating is beneficial.\n\n## Resharpening Economy\n\nThrough-hardened from surface to core, every regrind cycle exposes steel of identical hardness. Each blade yields 6–10 total cutting edges (2 factory edges × 3–5 grinds per edge) before reaching minimum safe thickness — making total cost-per-hour highly competitive against imported alternatives.",
+    link: "/products/wood-chipper-blades-standard",
+    isFeatured: true,
+    compatibleMachines: [
+      "Bandit",
+      "Vermeer",
+      "Patriot",
+      "Wallenstein",
+      "Timberwolf",
+      "Linddana",
+      "Schliesing",
+      "Junkkari",
+    ],
+    specs: [
+      { label: "Material", value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel" },
+      { label: "Hardness", value: "HRC 55–60 (Triple-Tempered, Through-Hardened)" },
+      { label: "Edge Design", value: "Reversible Double-Edge — flip when dull, 2× installed life" },
+      { label: "Bevel Angle", value: "25°–30° precision-ground (±0.5°)" },
+      { label: "Lengths", value: "200–350 mm (8\u2033–14\u2033)" },
+      { label: "Bolt Patterns", value: "2-hole · 4-hole · 6-hole (custom available)" },
+      { label: "Coating", value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)" },
+      { label: "Application", value: "Tree Service · Landscaping · Green Waste · Storm Debris" },
+    ],
+    components: [
+      {
+        id: "reversible-double-edge",
+        tag: "ECONOMY",
+        title: "Flip, Don't Replace — Double the Installed Life",
+        description:
+          "Symmetrical double-edge geometry gives two independent cutting edges per blade. When edge 1 dulls, unbolt, flip 180°, retorque — factory-sharp and back chipping in under two minutes. Halves blade-change downtime and doubles service life before regrinding.",
+      },
+      {
+        id: "triple-temper",
+        tag: "HEAT TREATMENT",
+        title: "Triple-Tempered Through-Hardened Core",
+        description:
+          "Controlled triple-tempering eliminates residual stress and stabilises the martensitic microstructure at HRC 55–60 from surface to core. Every regrind cycle exposes steel of identical quality — no soft spots, no inconsistent edge life across the blade set.",
+      },
+      {
+        id: "anti-sap-coating",
+        tag: "SURFACE TREATMENT",
+        title: "Teflon Anti-Sap Coating",
+        description:
+          "Pine, spruce, and eucalyptus resin adheres to blade faces and accelerates edge wear. Optional Teflon (PTFE) rake-face coating cuts sap adhesion by ~70%, extending clean-running intervals and reducing the frequency of mid-shift blade pulls.",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Chipper OEM / Size Class",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Reversible double-edge dimensions. 2-hole, 4-hole and 6-hole bolt patterns available. Custom lengths and hole patterns within 7 working days.",
+    },
+    standardDimensions: [
+      { spec: 'Compact / 8" Class', od: "200", id: "50", thickness: "12" },
+      { spec: 'Bandit 12" / Patriot', od: "230", id: "60", thickness: "12" },
+      { spec: 'Vermeer BC1200 / 10"', od: "260", id: "65", thickness: "16" },
+      { spec: 'Bandit 15" / Vermeer BC1500', od: "295", id: "75", thickness: "16" },
+      { spec: 'Bandit 18" / 19"', od: "295", id: "80", thickness: "19" },
+      { spec: 'Vermeer BC1800 / 12"', od: "310", id: "100", thickness: "19" },
+      { spec: 'Timberwolf / 13"', od: "330", id: "100", thickness: "19" },
+      { spec: 'Heavy Landscape / 14"', od: "350", id: "100", thickness: "22" },
+    ],
+    relatedBladeIds: [
+      "wood-chipper-anvils",
+      "wood-chipper-blades-industrial",
+      "single-shaft-rotor-inserts",
+      "granulator-blades",
+    ],
+    offers: { lowPrice: 15, highPrice: 120 },
+    faqs: {
+      technical: [
+        {
+          question: "How do I choose between T10, 9CrSi, and Cr12MoV?",
+          answer:
+            "T10 suits green softwood and general landscaping. Upgrade to 9CrSi for mixed hardwood/softwood — maple, birch, ash — where it delivers 40–60% longer edge life. Specify Cr12MoV for high-volume dry hardwood or lightly contaminated urban green waste.",
+        },
+        {
+          question: "When should I flip the blade, and how many times can I regrind?",
+          answer:
+            "Flip when chipping efficiency drops — ragged chip faces, increased motor load, or visible edge rounding over 0.5 mm. After both edges are consumed, each edge can be reground 3–5 times on a standard surface grinder, yielding 6–10 total cutting edges per blade.",
+        },
+        {
+          question: "Will the Teflon coating survive regrinding?",
+          answer:
+            "Yes — only the bevel face is ground during resharpening; the rake-face Teflon coating remains intact. It typically persists through 4–6 regrind cycles before recoating is beneficial.",
+        },
+        {
+          question: "What bolt-hole pattern do I need for my chipper model?",
+          answer:
+            "Bandit 12\u2033/15\u2033: 2-hole. Bandit 18\u2033/19\u2033: 4-hole. Vermeer BC900/BC1200: 2-hole. BC1500/BC1800: 4-hole. Provide your model number or send your worn blade and we confirm the exact configuration. Custom patterns within 7 working days.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "Direct OEM manufacturer since 2008. When you buy from Sureay you communicate with the engineers who forge and grind your blades — no middleman, no markup.",
+        },
+        {
+          question: "Do you offer bulk pricing for landscape contractors?",
+          answer:
+            "Yes. Orders of 50+ blades per shipment qualify for volume pricing. Annual supply agreements with scheduled quarterly deliveries are available — contact us with your annual consumption estimate.",
+        },
+      ],
+    },
+  },
+
+  // Wood Chipper Anvils (Counter-Knives / Bed Knives)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "wood-chipper-anvils",
+    name: "Wood Chipper Anvils",
+    fullName:
+      "Heavy-Duty Counter-Knives & Bed Knife Anvils for Drum & Disc Wood Chippers",
+    category: "wood_chipper",
+    sector: "recycling",
+    categoryDisplay: "Counter-Knives & Anvils",
+    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    badge: "Matched Sets",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+    ],
+
+    description:
+      "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV, and A8 Modified tool steel. Through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
+
+    fullDescription:
+      "The anvil — also called the counter-knife, bed knife, or stationary blade — is the fixed cutting edge inside a wood chipper that the rotating drum or disc blade cuts against. Together, the chipper blade and anvil form a scissor-like shearing pair: the blade slices chips from the timber, and the anvil sets the clearance gap that determines minimum chip thickness, cutting efficiency, and motor load.\n\nA worn or misaligned anvil is the single most overlooked cause of poor chipper performance. When the anvil edge rounds off, the blade-to-anvil clearance gap widens progressively. Instead of a clean shearing action, the timber is torn and crushed rather than cut — spiking fuel consumption by 15–25%, producing ragged chips that fail screening specs, and accelerating wear on the chipper blades themselves. Replacing chipper blades without inspecting the anvil is throwing away money: new blades working against a dull anvil deliver only 50–70% of their potential service life.\n\n## Why the Anvil Matters as Much as the Blade\n\n**Clearance Gap Control:** The blade-to-anvil clearance gap — typically set at 0.5–1.5 mm for drum chippers and 0.8–2.0 mm for disc chippers — directly controls minimum chip thickness. A worn anvil increases this gap beyond specification, producing oversized chips and long fibrous slivers that fail biomass fuel screening standards (EN 17225-4). Our anvils are precision surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform shear gap across the entire cutting width.\n\n**Impact Absorption:** Unlike the chipper blade (which rotates at high speed), the anvil absorbs the full reaction force of every cut as a static impact load. Over millions of chipping cycles, this sustained impact loading causes edge deformation, micro-cracking, and eventual bulk fracture in poorly heat-treated anvils. Sureay anvils are through-hardened to HRC 55–60 via vacuum heat treatment — hard enough to hold a sharp edge against abrasive timber, yet tough enough to absorb repeated impact without brittle fracture.\n\n**Different Wear Rate, Different Replacement Cycle:** The anvil typically outlasts chipper blades by a factor of 2–4× because it operates under compressive (static) loading rather than the dynamic shear loading on the blade. However, because anvil wear is gradual, operators often miss the progressive deterioration until chip quality has degraded significantly. We recommend inspecting the anvil edge every time chipper blades are changed or sharpened.\n\n## Material Selection\n\n**D2 / Cr12MoV Tool Steel (HRC 58–60):** The premium specification for high-volume commercial wood processing and biomass operations. The 12% chromium-carbide matrix provides outstanding abrasion resistance against dense hardwoods and bark-heavy feedstock. Recommended for industrial drum chippers (Morbark, Vermeer HG series, Doppstadt) running continuous 8–16 hour shifts.\n\n**A8 Modified Tool Steel (HRC 54–58):** The industry-standard OEM grade used by Bandit, Morbark, and Vermeer for factory-original anvils. A8 Modified provides an excellent balance of wear resistance and impact toughness — critical for anvils that must absorb millions of impact cycles without micro-cracking. The correct choice for general forestry and tree service operations processing mixed species with moderate contamination.\n\n**42CrMo / Manganese Steel (HRC 50–55):** A cost-effective, high-toughness option for operators processing heavily contaminated demolition wood, railroad ties, and urban green waste where the feedstock contains significant metal debris. The lower hardness prioritises impact absorption over wear resistance, preventing the catastrophic anvil fracture that can damage the drum housing.\n\n## Adjustable Mounting & Clearance Setting\n\nMost chipper OEMs provide a mechanical adjustment system — typically shim plates or adjustable mounting bolts — to advance the anvil toward the blade as both components wear, maintaining the designed clearance gap. Sureay anvils are CNC-machined with slotted or oversized mounting holes that match your OEM's adjustment mechanism precisely, ensuring maintenance teams can set the gap accurately and lock it down securely.\n\n## Matched Blade + Anvil Sets\n\nFor operators changing both blades and anvil simultaneously, we offer matched sets: chipper blades and counter-knife manufactured from the same steel batch, heat-treated in the same vacuum furnace cycle, and surface-ground to the same parallelism tolerance. A matched set eliminates the hardness mismatch between blade and anvil that causes accelerated wear when sourcing components from different suppliers.",
+
+    link: "/products/wood-chipper-anvils",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "Bandit",
+      "Vermeer",
+      "Morbark",
+      "Timberwolf",
+      "Schliesing",
+      "Greenmech",
+      "Jensen",
+      "Jenz",
+      "Eschlböck",
+      "Forst",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
+      },
+      {
+        label: "Hardness",
+        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
+      },
+      {
+        label: "Parallelism",
+        value: "±0.05 mm full-length (uniform shear gap)",
+      },
+      {
+        label: "Edge Geometry",
+        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
+      },
+      {
+        label: "Mounting",
+        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
+      },
+      {
+        label: "Resharpening",
+        value: "Through-hardened — 5–10 regrind cycles per anvil",
+      },
+      {
+        label: "Application",
+        value:
+          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
+      },
+    ],
+
+    components: [
+      {
+        id: "clearance-gap-control",
+        tag: "CUTTING EFFICIENCY",
+        title: "Precision Clearance Gap Control",
+        description:
+          "The blade-to-anvil gap determines chip thickness, cutting force, and fuel consumption. A rounded anvil edge widens this gap beyond specification, turning clean shearing into inefficient crushing. Our anvils are surface-ground to ±0.05 mm parallelism to maintain the designed clearance across the full cutting width — restoring the self-feeding bite and reducing motor load by up to 20%.",
+      },
+      {
+        id: "impact-toughness",
+        tag: "DURABILITY",
+        title: "Static Impact Resistance",
+        description:
+          "The anvil absorbs the full reaction force of every cut as a static impact load — millions of hits per shift. Through-hardened D2 and A8 Modified steel at HRC 54–60 provides the correct balance: hard enough to hold a sharp edge against abrasive timber, tough enough to absorb repeated impacts without micro-cracking or catastrophic fracture.",
+      },
+      {
+        id: "matched-sets",
+        tag: "SYSTEM INTEGRATION",
+        title: "Matched Blade + Anvil Sets",
+        description:
+          "Chipper blades and counter-knives from different suppliers often have mismatched hardness — a harder anvil wears the blade prematurely, or a softer anvil degrades faster than expected. Our matched sets are manufactured from the same steel batch and heat-treated in the same cycle, ensuring balanced wear rates and maximum combined service life.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Chipper OEM / Model",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Standard OEM replacement anvil dimensions. Slotted mounting holes CNC-machined to exact OEM clearance adjustment patterns. Matched blade + anvil sets available for all sizes. Custom lengths up to 600 mm.",
+    },
+
+    standardDimensions: [
+      { spec: "Bandit 12\" / 15\" / Mighty Bandit", od: "185", id: "75", thickness: "10" },
+      { spec: "Bandit 18\" / 19\" / 1290 / 1590",   od: "265", id: "95", thickness: "12" },
+      { spec: "Vermeer BC1200 / BC1500",              od: "200", id: "80", thickness: "12" },
+      { spec: "Vermeer BC1800 / BC2000",              od: "260", id: "100", thickness: "16" },
+      { spec: "Morbark 2 / 5 / 7 / 12 / 13",         od: "265", id: "95", thickness: "12" },
+      { spec: "Morbark 40/36 / 50/48",                od: "400", id: "100", thickness: "20" },
+      { spec: "Timberwolf 150 / 190 / 230",           od: "230", id: "80", thickness: "16" },
+      { spec: "Schliesing 400 / 500 / 550 / 600 / 660", od: "260", id: "80", thickness: "20" },
+      { spec: "Greenmech / Jensen / Forst",           od: "Per OEM Drawing", id: "Per OEM Drawing", thickness: "Per OEM Drawing" },
+    ],
+
+    relatedBladeIds: [
+      "wood-chipper-blades",
+      "wood-chipper-blades-industrial",
+      "wood-chipper-blades-standard",
+    ],
+
+    offers: { lowPrice: 25, highPrice: 250 },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "How often should I replace or resharpen the anvil compared to the chipper blades?",
+          answer:
+            "The anvil typically outlasts chipper blades by 2–4× because it operates under static compressive loading rather than the dynamic shear loading on the blade. However, we recommend inspecting the anvil edge every time chipper blades are changed or flipped. When the anvil edge shows visible rounding exceeding 1.0 mm (check with a straightedge under bright light), regrind or replace it. Installing new chipper blades against a worn anvil delivers only 50–70% of their potential edge life and produces poor chip quality regardless of blade sharpness.",
+        },
+        {
+          question:
+            "What clearance gap should I set between the chipper blade and the anvil?",
+          answer:
+            "Clearance varies by chipper type and timber species. For drum chippers processing green softwood: 0.5–1.0 mm. For drum chippers on dry hardwood: 0.8–1.5 mm. For disc chippers: 1.0–2.0 mm. Always refer to your chipper OEM manual for the exact specification. The gap should be measured at multiple points across the full anvil width using a feeler gauge. If the gap varies by more than 0.3 mm from end to end, the anvil face parallelism has degraded and the anvil needs regrinding or replacement.",
+        },
+        {
+          question:
+            "Should I use the same steel grade for the anvil as the chipper blade?",
+          answer:
+            "Not necessarily — the anvil and blade have different wear modes and therefore different optimal metallurgy. The blade experiences dynamic shear loading at high speed and benefits from maximum edge hardness (HRC 58–62). The anvil experiences static compressive impact and benefits from a slightly lower hardness (HRC 54–58) that provides greater impact absorption. A8 Modified at HRC 54–58 is the industry-standard anvil grade for this reason. However, for high-volume biomass operations on clean hardwood, upgrading both blade and anvil to D2 at HRC 58–60 is recommended.",
+        },
+        {
+          question:
+            "What causes a chipper to stop self-feeding even with sharp blades?",
+          answer:
+            "If the chipper stops pulling timber into the cutting chamber despite having freshly sharpened or new blades, the anvil is almost certainly worn. A rounded anvil edge increases the effective clearance gap, which means the blade can no longer bite into the timber with sufficient depth to generate the pulling force. The timber bounces on the blade surface instead of being grabbed and drawn in. Inspect and regrind or replace the anvil, then reset the clearance gap to OEM specification.",
+        },
+        {
+          question:
+            "Can I sharpen the anvil with the same tools I use for chipper blades?",
+          answer:
+            "Yes — the same wet surface grinder and aluminum oxide wheel (46–60 grit) used for chipper blades works for anvils. The same rules apply: light passes (0.02–0.05 mm per pass), never dry-grind without quenching, and verify the bevel angle with a protractor after grinding. The anvil bevel angle should match the chipper OEM specification (typically 30°–37°). Some operators neglect the anvil during regrinding because it appears less worn than the blade — this is a false economy that shortens blade life and degrades chip quality.",
+        },
+        {
+          question:
+            "Why does my chipper produce long, stringy fibres instead of clean chips?",
+          answer:
+            "Long fibrous slivers — sometimes called 'spaghetti' or 'stringers' — indicate the blade-to-anvil clearance gap is too wide. The timber is being torn and pulled apart rather than sheared cleanly. This happens when the anvil edge has rounded off or when the anvil has been improperly shimmed after blade replacement. Reset the clearance to OEM specification using a feeler gauge. If the anvil edge cannot be resharpened to a clean, straight edge (due to deep chips or cracks), replace the anvil.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a trading company or a direct manufacturer?",
+          answer:
+            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades and anvils.",
+        },
+        {
+          question:
+            "Can you supply matched blade + anvil sets for my specific chipper model?",
+          answer:
+            "Yes. We strongly recommend purchasing blades and anvils as matched sets — manufactured from the same steel batch and heat-treated in the same vacuum furnace cycle. This ensures balanced hardness and wear rates across both components. Provide your chipper make and model number, and we will supply a complete matched set with pre-verified clearance recommendations. Matched sets are available for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck, and Forst platforms.",
+        },
+        {
+          question:
+            "Can you manufacture an anvil for my chipper if it is not listed in your standard dimensions?",
+          answer:
+            "Yes. Send us your existing anvil, a technical drawing, or your chipper make and model number. We reverse-engineer replacement anvils from OEM drawings or physical samples, verifying fit on a CMM before production. Custom lengths up to 600 mm are manufactured within 10–15 working days.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement anvils in stock sizes typically ship within 48–72 hours. Custom dimensions take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question:
+            "What quality documentation ships with each anvil?",
+          answer:
+            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
+        },
+      ],
     },
   },
 ];

@@ -39,6 +39,7 @@ const ROUTES: string[] = [
   "/paper-industry",
   "/new-energy-industry",
   "/converting-industry",
+  "/wood-industry",
   "/news",
   // dynamic product pages — derived from static blade data
   ...blades.map(b => `/products/${b.id}`),

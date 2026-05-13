@@ -13,7 +13,7 @@
  * Data source: INDUSTRY_MENU_DATA from MegaMenu.tsx (SSOT).
  */
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight, Upload } from "lucide-react";
@@ -102,82 +102,97 @@ function CloseIcon({ className }: { className?: string }) {
   );
 }
 
-// ── Products Category Menu — flat 4×2 image grid, scan-and-click, no drilldown
-//   Designed to contrast with IndustryMegaMenu (drill-down). All 8 categories
-//   are visible at first glance; the image is the primary identifier — users
-//   recognise blade families by silhouette, not by typed taxonomy.
+// ── Products Category Menu — left category list, right flyout tracks hovered row
 function ProductsCategoryMenu({ onClose }: { onClose: () => void }) {
+  const [activeIdx, setActiveIdx] = useState<number | null>(null);
+  const [panelTop, setPanelTop] = useState(0);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  // Set initial panel position after mount (sync, before first paint)
+  useLayoutEffect(() => {
+    const el = itemRefs.current[0];
+    if (el) setPanelTop(el.offsetTop);
+  }, []);
+
+  const activeCategory = activeIdx !== null ? BLADE_CATEGORIES[activeIdx] : null;
+  const categoryBlades = activeCategory
+    ? blades.filter(b => b.category === activeCategory.category)
+    : [];
+
   return (
-    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key="products-scan"
-          className="absolute top-0 left-0 h-[2px] bg-[#003366] pointer-events-none"
-          initial={{ width: "0%" }}
-          animate={{ width: "100%" }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-        />
-      </AnimatePresence>
+    // outer div is position:absolute → becomes offsetParent for the inner flyout
+    <div className="absolute top-full left-0 mt-1 z-50">
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7">
-        {/* Header strip */}
-        <div className="flex items-end justify-between mb-5 pb-4 border-b border-slate-200">
-          <div>
-            <p className="font-mono text-[12px] font-bold text-slate-700 tracking-[0.18em] mb-1">
-              Browse by Product Type
-            </p>
-          </div>
+      {/* ── Left column: category list ────────────────────────────────── */}
+      <div className="w-[210px] bg-white border-t-2 border-[#001f4d] border border-slate-200 shadow-xl">
+        <div className="py-3">
           <Link href="/products">
-            <a
+            <div
+              onMouseEnter={() => setActiveIdx(null)}
               onClick={onClose}
-              className="font-mono text-[14px] font-bold text-[#003366] tracking-[0.18em] hover:text-[#001f4d] cursor-pointer"
+              className="flex items-center py-2 px-4 border-l-2 border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366] transition-all duration-100 cursor-pointer"
             >
-              → All Products
-            </a>
+              <span className="text-[14px] font-medium flex-1">All Products</span>
+            </div>
           </Link>
-        </div>
-
-        {/* 4×2 image-led card grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.18, ease: "easeOut" }}
-          className="grid grid-cols-4 gap-x-4 gap-y-5"
-        >
-          {BLADE_CATEGORIES.map(c => {
-            const variantCount = blades.filter(
-              b => b.category === c.category
-            ).length;
+          {BLADE_CATEGORIES.map((c, i) => {
+            const isActive = i === activeIdx;
             return (
-              <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
-                <a
+              <Link
+                key={c.slug}
+                href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}
+              >
+                <div
+                  ref={el => { itemRefs.current[i] = el; }}
+                  onMouseEnter={() => {
+                    setActiveIdx(i);
+                    const el = itemRefs.current[i];
+                    if (el) setPanelTop(el.offsetTop);
+                  }}
                   onClick={onClose}
-                  className="group cursor-pointer text-center"
+                  className={`flex items-center py-2 px-4 border-l-2 transition-all duration-100 cursor-pointer group ${
+                    isActive
+                      ? "border-[#001f4d] bg-slate-50 text-[#003366]"
+                      : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366]"
+                  }`}
                 >
-                  <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
-                    <img
-                      src={c.heroImage}
-                      alt={c.shortName}
-                      loading="lazy"
-                      decoding="async"
-                      width={144}
-                      height={128}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <p className="font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] tracking-tight transition-colors">
-                    {c.shortName}
-                    <span className="ml-1.5 font-mono text-[12px] font-normal text-slate-600">
-                      · {variantCount} products
-                    </span>
-                  </p>
-                </a>
+                  <span className="text-[14px] font-medium flex-1">{c.shortName}</span>
+                  <ChevronRight className="w-3 h-3 opacity-40" strokeWidth={2} />
+                </div>
               </Link>
             );
           })}
-        </motion.div>
+        </div>
       </div>
+
+      {/* ── Right flyout: anchored to the hovered row's offsetTop ─────── */}
+      <AnimatePresence mode="wait">
+        {activeIdx !== null && (
+          <motion.div
+            key={activeIdx}
+            initial={{ opacity: 0, x: -6 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.12, ease: "easeOut" }}
+            className="absolute bg-white border-t-2 border-[#001f4d] border border-slate-200 shadow-xl py-2 px-3"
+            style={{ top: panelTop, left: 210 }}
+          >
+            {categoryBlades.map(blade => (
+              <Link key={blade.id} href={`/products/${blade.id}`}>
+                <div
+                  onClick={onClose}
+                  className="py-1.5 group cursor-pointer"
+                >
+                  <span className="text-[14px] font-medium text-slate-500 group-hover:text-[#003366] transition-colors leading-tight whitespace-nowrap">
+                    {blade.name}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
     </div>
   );
 }
@@ -462,7 +477,7 @@ export default function Navbar() {
     location.endsWith("-industry") || location === "/custom";
 
   const linkCls = (active: boolean) =>
-    `text-[14px] font-medium transition-colors cursor-pointer ${
+    `text-[16px] font-medium transition-colors cursor-pointer ${
       active ? "text-[#003366]" : "text-slate-500 hover:text-[#003366]"
     }`;
 
@@ -497,8 +512,8 @@ export default function Navbar() {
                 <span className={linkCls(isActive("/"))}>Home</span>
               </Link>
 
-              {/* Products — category aggregation dropdown */}
-              <div onMouseEnter={openProducts} onMouseLeave={closeProducts}>
+              {/* Products — simple dropdown anchored to button */}
+              <div className="relative" onMouseEnter={openProducts} onMouseLeave={closeProducts}>
                 <button
                   className={`${linkCls(isProductsRoute || productsOpen)} flex items-center gap-1`}
                   aria-haspopup="true"
@@ -515,6 +530,18 @@ export default function Navbar() {
                     strokeWidth={2.5}
                   />
                 </button>
+                <AnimatePresence>
+                  {productsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -4 }}
+                      transition={{ duration: 0.15, ease: "easeOut" }}
+                    >
+                      <ProductsCategoryMenu onClose={() => setProductsOpen(false)} />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
 
               {/* Industry — sector-grouped product mega menu */}
@@ -559,24 +586,6 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-
-        {/* ── Products Category Dropdown ─────────────────────────────────── */}
-        <AnimatePresence>
-          {productsOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -8 }}
-              transition={{ duration: 0.18, ease: "easeOut" }}
-              onMouseEnter={openProducts}
-              onMouseLeave={closeProducts}
-            >
-              <ProductsCategoryMenu
-                onClose={() => setProductsOpen(false)}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
 
         {/* ── Industry Mega Menu ─────────────────────────────────────────── */}
         <AnimatePresence>
@@ -676,7 +685,7 @@ export default function Navbar() {
                       <div className="pb-5">
                         {BLADE_CATEGORIES.map(c => (
                           <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
-                            <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-semibold tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
+                            <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-medium tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
                               {c.shortName}
                             </div>
                           </Link>
@@ -729,7 +738,7 @@ export default function Navbar() {
                           const isCustom = cat.id === "custom-profile";
                           return (
                             <Link key={cat.id} href={cat.featured.ctaHref}>
-                              <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-semibold tracking-[0.1em]  transition-colors cursor-pointer ${
+                              <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-medium tracking-[0.1em]  transition-colors cursor-pointer ${
                                 isCustom
                                   ? "mt-1 border-l-2 border-white/40 font-black text-white/80 hover:text-white hover:border-white"
                                   : "border-white/20 text-white/60 hover:text-white hover:border-white/60"

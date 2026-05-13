@@ -4,13 +4,13 @@ export type ProductMainCategory = "machinery" | "blades";
 // Sub-categories for blades (main focus)
 export type BladeCategory =
   // ── Active categories (mapped from BladeCategoryType in blades.ts) ────────
-  | "slitter-knives" // Rotary slitter · film · corrugated · nonwoven
-  | "shredder-blades" // Twin-shaft · single-shaft · rubber shredder
+  | "slitter-knives" // Rotary slitter · film · corrugated · nonwoven · battery foil
+  | "shredder-blades" // Twin-shaft · single-shaft · rubber shredder · scrap chopper
   | "production-line-blades" // Granulator / plastic crusher knives
   | "log-saw-blades" // Tissue log saw blades
-  | "trim-cut-blades" // Paper guillotine · three-knife trimmer
-  | "metal-processing-blades" // Metal coil slitting · shear blades · cold saw
-  | "battery-precision-blades" // New energy — lithium battery electrode slitting
+  | "shear-blades" // Guillotine shear · metal shear knives · paper trim blades
+  | "cold-saw-blades" // Metal cold circular saw blades
+  | "wood-chipper-blades" // Drum chipper · disc chipper · biomass chipper knives
   // ── Legacy (kept for backward compatibility) ──────────────────────────────
   | "alloy-blades"
   | "large-rotary-blades"
@@ -85,9 +85,9 @@ export function getCategoryDisplayName(category: ProductSubCategory): string {
     "shredder-blades": "Shredder Blades",
     "production-line-blades": "Granulator Blades",
     "log-saw-blades": "Log Saw Blades",
-    "trim-cut-blades": "Trim & Cut Blades",
-    "metal-processing-blades": "Metal Processing Blades",
-    "battery-precision-blades": "Battery Precision Blades",
+    "shear-blades": "Shear & Guillotine Blades",
+    "cold-saw-blades": "Cold Saw Blades",
+    "wood-chipper-blades": "Wood Chipper Blades",
     // ── Legacy ──────────────────────────────────────────────────────────────
     "alloy-blades": "Alloy Blades",
     "large-rotary-blades": "Large Rotary Blades",

@@ -55,9 +55,9 @@ const REF_CODE: Record<BladeCategoryType, string> = {
   shredder_blades: "SHR",
   granulator_blades: "GRN",
   log_saw_blades: "LSW",
-  trim_cut_blades: "TRM",
-  metal_processing: "MTL",
-  battery_precision: "BAT",
+  shear_blades: "SHA",
+  cold_saw_blades: "CSW",
+  wood_chipper: "WCH",
   custom_profile: "CST",
 };
 
@@ -90,8 +90,7 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
       items: blades
         .filter(
           b =>
-            b.category === "slitter_knives" ||
-            b.category === "battery_precision"
+            b.category === "slitter_knives"
         )
         .map(bladeToItem),
     },
@@ -116,21 +115,21 @@ export const PRODUCTS_MENU_DATA: MegaMenuData = {
     },
     {
       id: "paper",
-      title: "PAPER, TRIM & METAL",
+      title: "SAW & SHEAR",
       featured: {
         coverImage: "/images/products/blades/tissue-log-saw-blades.webp",
         tagline: "ZERO DUST. BURR-FREE.",
         subtitle: "ACTIVE CATEGORY",
-        title: "PAPER, TRIM & METAL",
-        ctaText: "EXPLORE PAPER BLADES",
+        title: "SAW & SHEAR",
+        ctaText: "EXPLORE SAW & SHEAR BLADES",
         ctaHref: "/products",
       },
       items: blades
         .filter(
           b =>
             b.category === "log_saw_blades" ||
-            b.category === "trim_cut_blades" ||
-            b.category === "metal_processing"
+            b.category === "shear_blades" ||
+            b.category === "cold_saw_blades"
         )
         .map(bladeToItem),
     },
@@ -210,6 +209,20 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
         ctaHref: "/new-energy-industry",
       },
       items: blades.filter(b => b.sector === "new_energy").map(bladeToItem),
+    },
+    {
+      id: "wood-forestry",
+      title: "Wood & Forestry",
+      featured: {
+        coverImage:
+          "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+        tagline: "THROUGH-HARDENED DRUM & DISC CHIPPER KNIVES",
+        subtitle: "ACTIVE INDUSTRY",
+        title: "WOOD & FORESTRY",
+        ctaText: "VIEW WOOD SOLUTIONS",
+        ctaHref: "/wood-industry",
+      },
+      items: blades.filter(b => b.category === "wood_chipper").map(bladeToItem),
     },
     {
       id: "custom-profile",

@@ -15,7 +15,7 @@ function SpecCell({ spec }: { spec: IndustrySpec }) {
       </span>
       <div className="mt-8">
         {spec.isTextual ? (
-          <span className="block font-black text-2xl lg:text-[28px] text-[#001f4d] tracking-tight leading-[1.1] mb-3 ">
+          <span className="block font-black text-4xl text-[#001f4d] tracking-tight leading-[1.1] mb-3">
             {spec.mainValue.split("\\n").map((line, i, arr) => (
               <span key={i}>
                 {line}

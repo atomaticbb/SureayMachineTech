@@ -27,9 +27,9 @@ const BLADE_SUBCATEGORY_MAP: Record<BladeCategoryType, ProductSubCategory> = {
   shredder_blades: "shredder-blades",
   granulator_blades: "production-line-blades",
   log_saw_blades: "log-saw-blades",
-  trim_cut_blades: "trim-cut-blades",
-  metal_processing: "metal-processing-blades",
-  battery_precision: "battery-precision-blades",
+  shear_blades: "shear-blades",
+  cold_saw_blades: "cold-saw-blades",
+  wood_chipper: "wood-chipper-blades",
   custom_profile: "shaped-custom-blades",
 };
 

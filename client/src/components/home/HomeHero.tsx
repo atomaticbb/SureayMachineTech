@@ -21,7 +21,7 @@ export default function HomeHero() {
           <div className="flex items-center gap-3 mb-5">
             <span className="block w-8 h-[2px] bg-white/50" />
             <p className="text-white/60 font-semibold text-xs  tracking-[0.28em]">
-              Custom Manufacturer · ISO 9001 Certified · Drawings Welcome
+              Custom Manufacturer · Drawings Welcome
             </p>
           </div>
 
