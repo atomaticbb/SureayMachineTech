@@ -42,22 +42,6 @@ const HERO_DATA: IndustryHeroData = {
   ctaHref: "#tooling-matrix",
   gallery: [
     {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      alt: "Drum chipper blades for forestry operations",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
-      alt: "Industrial wood chipper knives on workbench",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      alt: "Heavy-duty chipper blades for biomass processing",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
-      alt: "Wood chipper blade engineering drawing",
-    },
-    {
       src: "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
       alt: "Reversible double-edge wood chipper knives",
     },
@@ -66,13 +50,30 @@ const HERO_DATA: IndustryHeroData = {
       alt: "Wood chipper in operation — forestry land clearing",
     },
     {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
-      alt: "Wood chipper blade set detail",
+      src: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+      alt: "Wood chipper anvil counter-knife — D2 tool steel, precision ground",
+    },
+    {
+      src: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+      alt: "Drum chipper blades for forestry operations",
+    },
+    {
+      src: "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
+      alt: "Industrial wood chipper knives on workbench",
     },
     {
       src: "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       alt: "Installing wood chipper knives on drum chipper",
     },
+    {
+      src: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
+      alt: "Heavy-duty chipper blades for biomass processing",
+    },
+    {
+      src: "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
+      alt: "Wood chipper blades batch — multiple knives surface-ground and ready for shipment",
+    },
+
   ],
 };
 

@@ -8,6 +8,7 @@ import {
   FileText,
   Scissors,
   Zap,
+  TreePine,
 } from "lucide-react";
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -166,6 +167,37 @@ export const ECOSYSTEMS = [
     href: "/converting-industry",
     image: "/images/applications/converting-industry.webp",
     cta: "Converting Solutions",
+  },
+  {
+    icon: TreePine,
+    label: "Wood, Forestry & Biomass",
+    industry: "Wood & Forestry",
+    desc: "For drum and disc chippers in forestry, biomass energy, and landscape tree service that need blades matched to wood species, contamination level, and regrind cycle targets.",
+    specs: [
+      {
+        label: "Typical Lines",
+        value:
+          "Drum chippers, disc chippers, biomass whole-tree chippers, landscape chippers",
+      },
+      {
+        label: "Typical Problems",
+        value:
+          "Fast dulling on hardwood, vibration from uneven blade thickness, poor chip quality from worn anvil",
+      },
+      {
+        label: "Material Direction",
+        value:
+          "T10 / 9CrSi for softwood, D2 / Cr12MoV for hardwood, TCT carbide for demolition wood",
+      },
+      {
+        label: "What You Can Review",
+        value:
+          "Drum & disc chipper knives, reversible double-edge blades, counter-knife anvils, matched sets",
+      },
+    ],
+    href: "/wood-industry",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
+    cta: "Wood & Forestry Solutions",
   },
   {
     icon: Zap,
