@@ -427,7 +427,7 @@ export default function ContactRFQ({
                           Upload CAD / Technical Drawing
                         </p>
                         <p className="text-[10px] text-slate-400 mt-0.5">
-                          .DXF · .DWG · .PDF · .STEP · .STP — click or drag
+                          .DXF · .DWG · .PDF · .STEP · .STP · .JPG · .PNG · .WEBP — click or drag
                           &amp; drop
                         </p>
                       </div>

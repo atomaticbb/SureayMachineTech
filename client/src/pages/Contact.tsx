@@ -382,13 +382,13 @@ export default function Contact() {
                     }`}
                   >
                     <p className="font-mono text-sm font-bold text-[#001f4d]  tracking-wide mb-1">
-                      [ ATTACH CAD / TECHNICAL DRAWINGS ]
+                      [ ATTACH CAD / DRAWINGS / PHOTOS ]
                     </p>
                     <p className="font-mono text-[11px] text-slate-500 tracking-wide leading-relaxed">
                       Click or drag &amp; drop a file here
                     </p>
                     <p className="font-mono text-[10px] text-slate-400 mt-1">
-                      .DXF · .DWG · .PDF · .STEP · .STP — max {MAX_FILE_MB} MB
+                      .DXF · .DWG · .PDF · .STEP · .STP · .JPG · .PNG · .WEBP — max {MAX_FILE_MB} MB
                     </p>
                   </div>
                 )}
