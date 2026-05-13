@@ -67,30 +67,6 @@ export default function Footer() {
             <ul className="space-y-4 text-[15px]">
               <li>
                 <Link
-                  href="/products/twin-shaft-blades-recycling"
-                  className="hover:text-white transition-colors"
-                >
-                  Shredder Blades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/granulator-blades"
-                  className="hover:text-white transition-colors"
-                >
-                  Granulator Blades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/rotary-slitter-knives"
-                  className="hover:text-white transition-colors"
-                >
-                  Film & Tape Slitter Knives
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/products/tissue-log-saw-blades"
                   className="hover:text-white transition-colors"
                 >
@@ -115,10 +91,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/custom"
+                  href="/products/metal-coil-slitting-knives"
                   className="hover:text-white transition-colors"
                 >
-                  Special-Shaped Blades
+                  Metal Coil Slitting Knives
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products/rotary-slitter-knives"
+                  className="hover:text-white transition-colors"
+                >
+                  Rotary Slitter Knives
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products/twin-shaft-blades-recycling"
+                  className="hover:text-white transition-colors"
+                >
+                  Shredder Blades
                 </Link>
               </li>
             </ul>
@@ -176,6 +168,14 @@ export default function Footer() {
                   className="hover:text-white transition-colors"
                 >
                   New Energy &amp; Battery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/wood-industry"
+                  className="hover:text-white transition-colors"
+                >
+                  Wood Processing
                 </Link>
               </li>
             </ul>

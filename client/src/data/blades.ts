@@ -56,6 +56,7 @@ export type BladeSectorType =
   | "converting"
   | "metal"
   | "new_energy"
+  | "wood"
   | "other";
 
 // ===== MAIN BLADE INTERFACE =====
@@ -4510,7 +4511,7 @@ export const blades: Blade[] = [
     fullName:
       "Heavy-Duty Drum & Disc Chipper Knives for Biomass, Forestry & Wood Recycling",
     category: "wood_chipper",
-    sector: "recycling",
+    sector: "wood",
     categoryDisplay: "Wood Chipper Blades",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
     badge: "Forestry Grade",
@@ -4713,7 +4714,7 @@ export const blades: Blade[] = [
     fullName:
       "HSS & D2 Tool Steel Drum Chipper Knives for Heavy Forestry, Biomass & Wood Recycling",
     category: "wood_chipper",
-    sector: "recycling",
+    sector: "wood",
     categoryDisplay: "Wood Chipper Blades",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
     badge: "Industrial Grade",
@@ -4843,7 +4844,7 @@ export const blades: Blade[] = [
     fullName:
       "Reversible Double-Edge Wood Chipper Knives | T10 · 9CrSi · Cr12MoV | Landscaping & Forestry",
     category: "wood_chipper",
-    sector: "recycling",
+    sector: "wood",
     categoryDisplay: "Wood Chipper Blades",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
     badge: "Best Seller",
@@ -4973,7 +4974,7 @@ export const blades: Blade[] = [
     fullName:
       "Heavy-Duty Counter-Knives & Bed Knife Anvils for Drum & Disc Wood Chippers",
     category: "wood_chipper",
-    sector: "recycling",
+    sector: "wood",
     categoryDisplay: "Counter-Knives & Anvils",
     image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
     badge: "Matched Sets",
