@@ -29,7 +29,7 @@ const TRUST_STAMPS = [
   "GLOBAL WARRANTY SECURE",
 ];
 
-const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp";
+const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.webp,.gif";
 const MAX_FILE_MB = 15;
 
 // Human-readable file size
@@ -70,8 +70,8 @@ export default function Contact() {
       return;
     }
     const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
-    if (!["pdf", "dxf", "dwg", "step", "stp"].includes(ext)) {
-      toast.error("Invalid file type. Allowed: .pdf .dxf .dwg .step .stp");
+    if (!["pdf", "dxf", "dwg", "step", "stp", "jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
+      toast.error("Invalid file type. Allowed: .pdf .dxf .dwg .step .stp .jpg .jpeg .png .webp .gif");
       return;
     }
     setAttachment(file);

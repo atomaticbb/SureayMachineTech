@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import type { ContactSubmissionResponse } from "@shared/types";
 
-const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp";
+const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.webp,.gif";
 const MAX_FILE_MB = 15;
 
 function fmtSize(bytes: number) {
@@ -30,8 +30,8 @@ export default function ContactRFQ({
       return;
     }
     const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
-    if (!["pdf", "dxf", "dwg", "step", "stp"].includes(ext)) {
-      setError("Invalid file type. Accepted: .pdf .dxf .dwg .step .stp");
+    if (!["pdf", "dxf", "dwg", "step", "stp", "jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
+      setError("Invalid file type. Accepted: .pdf .dxf .dwg .step .stp .jpg .jpeg .png .webp .gif");
       return;
     }
     setError("");
