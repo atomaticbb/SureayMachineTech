@@ -8,6 +8,11 @@ import { prisma } from "../db/client.js";
 const BINARY_EXT_MIMES: Record<string, string> = {
   pdf: "application/pdf",
   dwg: "image/vnd.dwg",
+  jpg: "image/jpeg",
+  jpeg: "image/jpeg",
+  png: "image/png",
+  webp: "image/webp",
+  gif: "image/gif",
 };
 
 export const submitContactForm = async (
