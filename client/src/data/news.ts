@@ -70,6 +70,159 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "nonwoven-slitter-knives-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "14.MAY.2026",
+    title:
+      "The Complete Guide to Nonwoven Slitter Knives: Types, Materials, and Applications",
+    excerpt:
+      "In nonwoven fabric manufacturing, precision cutting determines product quality and production efficiency. This guide covers blade types, material choices, and key applications to help manufacturers select the right slitter knife for their operation.",
+    image: "/images/news/types-of-nonwoven-slitter-knives.webp",
+    readTime: "7 MIN",
+    seoTitle:
+      "Complete Guide to Nonwoven Slitter Knives: Types, Materials & Applications | Sureay",
+    metaDescription:
+      "Everything manufacturers need to know about nonwoven slitter knives — circular, straight, razor, and score-cut types, blade materials (HSS, carbide, ceramic), and industry applications.",
+    keywords:
+      "nonwoven slitter knives, slitter knife types, circular slitter knife, nonwoven cutting blade, HSS slitter knife, tungsten carbide slitter blade, nonwoven fabric slitting",
+    relatedProductIds: ["nonwoven-slitter-knives"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "In nonwoven fabric manufacturing, precision cutting is everything. A clean, consistent slit determines product quality, minimizes waste, and keeps production lines running at full speed. At the heart of this process sits a critical but often overlooked component — the [nonwoven slitter knife](/products/nonwoven-slitter-knives). Whether you're producing surgical gowns, baby diapers, or automotive insulation, the right slitter knife can make or break your operation.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This guide covers the essentials every manufacturer, engineer, and procurement professional should know about nonwoven slitter knives.",
+      },
+      {
+        type: "h2",
+        value: "What Are Nonwoven Slitter Knives?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "[Nonwoven slitter knives](/products/nonwoven-slitter-knives) are industrial cutting blades designed specifically for slitting wide rolls of nonwoven fabric into narrower strips or sheets. Unlike woven textiles, nonwoven materials are bonded through chemical, mechanical, or thermal processes, giving them unique fiber structures that demand specialized cutting tools.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "These knives must deliver clean edges without fraying, tearing, or distorting the material — challenges that standard cutting blades simply cannot handle across the full range of nonwoven fabrics.",
+      },
+      {
+        type: "h2",
+        value: "Types of Nonwoven Slitter Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Choosing the right blade type depends on your slitting method, machine configuration, and material characteristics.",
+      },
+      {
+        type: "image",
+        value: "/images/news/types-of-nonwoven-slitter-knives.webp",
+      },
+      {
+        type: "h3",
+        value: "Circular (Rotary) Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Circular rotary knives are the most widely used in nonwoven slitting. These disc-shaped blades rotate at high speed and work in pairs — an upper and lower blade — to create a scissor-like shearing action. They excel at high-speed continuous slitting and produce exceptionally clean edges on spunbond and meltblown fabrics.",
+      },
+      {
+        type: "image",
+        value: "/images/news/circular-slitter-knives-0514.webp",
+      },
+      {
+        type: "h3",
+        value: "Straight Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Straight knives feature a fixed linear blade edge and are typically used in crush-cutting applications where the blade presses the material against a hardened anvil roll. They are simpler to set up and work well for heavier-weight nonwovens such as needle-punched felts.",
+      },
+      {
+        type: "h3",
+        value: "Razor Blades",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Razor blades are thin, ultra-sharp blades used for lightweight and delicate nonwovens. They require minimal force and produce very little dust or fiber contamination. However, they wear quickly and are best suited for short-run or low-tension applications.",
+      },
+      {
+        type: "h3",
+        value: "Score-Cut Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Score-cut knives combine features of both rotary and razor styles. The blade scores through the material against a hardened roll, making them ideal for laminates and multi-layer nonwoven composites.",
+      },
+      {
+        type: "h2",
+        value: "Blade Materials and Coatings",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The material composition of a slitter knife directly impacts its edge retention, durability, and suitability for specific nonwoven types.",
+      },
+      {
+        type: "image",
+        value: "/images/news/blade-materials-and-coatings.webp",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Material", "Key Properties", "Best Suited For"],
+        tableRows: [
+          ["High-Speed Steel (HSS)", "Tough, sharp, easy to resharpen", "General-purpose nonwoven slitting"],
+          ["Tungsten Carbide", "Superior hardness, long wear life", "Abrasive materials, fiberglass-reinforced nonwovens"],
+          ["Ceramic", "Chemically inert, corrosion-resistant", "Cleanroom, medical & hygiene manufacturing"],
+          ["TiN / Chromium Coated", "Reduced friction, anti-adhesion", "Sticky or adhesive-backed nonwovens"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "High-Speed Steel (HSS) offers a strong balance of toughness and sharpness. It is cost-effective and easy to resharpen, making it a popular choice for general-purpose nonwoven slitting. Tungsten Carbide provides superior hardness and wear resistance — carbide blades last significantly longer than HSS, particularly when cutting abrasive materials like fiberglass-reinforced nonwovens. Ceramic blades resist corrosion and thermal degradation, making them well suited for cleanroom environments. Coated blades featuring titanium nitride (TiN) or chromium coatings reduce friction, prevent material adhesion, and extend blade life — a valuable option for sticky or adhesive-backed nonwovens.",
+      },
+      {
+        type: "h2",
+        value: "Key Applications Across Industries",
+      },
+      {
+        type: "image",
+        value: "/images/news/nonwoven-knives-applications.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Nonwoven slitter knives serve a wide range of sectors. In the hygiene industry, they slit materials for diapers, feminine care products, and adult incontinence pads. Medical applications include cutting surgical drapes, wound dressings, and face mask fabrics. Filtration manufacturers rely on precision slitting for air and liquid filter media. The automotive sector uses slitter knives for headliners, insulation, and trunk liners. Geotextile producers depend on them for erosion control and drainage fabrics.",
+      },
+      {
+        type: "h2",
+        value: "Choosing the Right Knife",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Selecting the optimal [nonwoven slitter knife](/products/nonwoven-slitter-knives) requires evaluating several factors: the fabric's weight, fiber composition, bonding method, line speed, desired edge quality, and production volume. Working closely with a blade supplier who understands nonwoven materials is the most reliable way to match the right knife to your specific operation.",
+      },
+      {
+        type: "callout",
+        value:
+          "Investing in the correct slitter knife isn't just a purchasing decision — it's a commitment to product quality, operational efficiency, and long-term cost savings. [Contact us](/contact) to find the right nonwoven slitter knife for your line.",
+      },
+    ],
+  },
+  {
     id: "wood-chipper-knife-sharpening-guide",
     tag: "TECHNICAL GUIDE",
     date: "13.MAY.2026",
@@ -1654,6 +1807,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "nonwoven-slitter-knives-guide": "Eric",
   "blade-manufacturing-process": "lynn",
   "custom-metal-shear-blades-batch-production": "lynn",
   "facility-expansion-phase-iii": "lynn",
