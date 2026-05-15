@@ -8,25 +8,93 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
 
+function lazyWithRetry<T extends React.ComponentType<any>>(
+  importer: () => Promise<{ default: T }>,
+  key: string
+) {
+  return lazy(async () => {
+    try {
+      const mod = await importer();
+      if (typeof window !== "undefined") {
+        window.sessionStorage.removeItem(`lazy-retry:${key}`);
+      }
+      return mod;
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      const isChunkLoadError =
+        message.includes("Failed to fetch dynamically imported module") ||
+        message.includes("Importing a module script failed");
+
+      if (typeof window !== "undefined" && isChunkLoadError) {
+        const retryFlag = `lazy-retry:${key}`;
+        const hasRetried = window.sessionStorage.getItem(retryFlag) === "1";
+
+        if (!hasRetried) {
+          window.sessionStorage.setItem(retryFlag, "1");
+          window.location.reload();
+        }
+      }
+
+      throw error;
+    }
+  });
+}
+
 // ── Lazy page chunks ───────────────────────────────────────────────────────────
-const Home = lazy(() => import("./pages/Home"));
-const ProductListPage = lazy(() => import("./pages/ProductListPage"));
-const ProductDetail = lazy(() => import("./pages/ProductDetail"));
-const CategoryAggregation = lazy(() => import("./pages/CategoryAggregation"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const News = lazy(() => import("./pages/News"));
-const NewsDetail = lazy(() => import("./pages/NewsDetail"));
-const Admin = lazy(() => import("./pages/Admin"));
-const AdminLogin = lazy(() => import("./pages/AdminLogin"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const PlasticIndustry = lazy(() => import("./pages/plastic-industry"));
-const MetalIndustry = lazy(() => import("./pages/metal-industry"));
-const PaperIndustry = lazy(() => import("./pages/paper-industry"));
-const NewEnergyIndustry = lazy(() => import("./pages/new-energy-industry"));
-const ConvertingIndustry = lazy(() => import("./pages/converting-industry"));
-const WoodIndustry = lazy(() => import("./pages/wood-industry"));
-const CustomBlades = lazy(() => import("./pages/custom-blades"));
+const Home = lazyWithRetry(() => import("./pages/Home"), "home");
+const ProductListPage = lazyWithRetry(
+  () => import("./pages/ProductListPage"),
+  "products"
+);
+const ProductDetail = lazyWithRetry(
+  () => import("./pages/ProductDetail"),
+  "product-detail"
+);
+const CategoryAggregation = lazyWithRetry(
+  () => import("./pages/CategoryAggregation"),
+  "category-aggregation"
+);
+const About = lazyWithRetry(() => import("./pages/About"), "about");
+const Contact = lazyWithRetry(() => import("./pages/Contact"), "contact");
+const News = lazyWithRetry(() => import("./pages/News"), "news");
+const NewsDetail = lazyWithRetry(
+  () => import("./pages/NewsDetail"),
+  "news-detail"
+);
+const Admin = lazyWithRetry(() => import("./pages/Admin"), "admin");
+const AdminLogin = lazyWithRetry(
+  () => import("./pages/AdminLogin"),
+  "admin-login"
+);
+const NotFound = lazyWithRetry(() => import("./pages/NotFound"), "not-found");
+const PlasticIndustry = lazyWithRetry(
+  () => import("./pages/plastic-industry"),
+  "plastic-industry"
+);
+const MetalIndustry = lazyWithRetry(
+  () => import("./pages/metal-industry"),
+  "metal-industry"
+);
+const PaperIndustry = lazyWithRetry(
+  () => import("./pages/paper-industry"),
+  "paper-industry"
+);
+const NewEnergyIndustry = lazyWithRetry(
+  () => import("./pages/new-energy-industry"),
+  "new-energy-industry"
+);
+const ConvertingIndustry = lazyWithRetry(
+  () => import("./pages/converting-industry"),
+  "converting-industry"
+);
+const WoodIndustry = lazyWithRetry(
+  () => import("./pages/wood-industry"),
+  "wood-industry"
+);
+const CustomBlades = lazyWithRetry(
+  () => import("./pages/custom-blades"),
+  "custom-blades"
+);
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {

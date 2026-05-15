@@ -169,7 +169,23 @@ export function createApp({
     // Serve all static assets (JS, CSS, images, root index.html, paths with
     // trailing slash that already have index.html). redirect:false prevents
     // 301 trailing-slash redirects that cause Google crawl loops.
-    app.use(express.static(staticPath, { redirect: false }));
+    app.use(
+      express.static(staticPath, {
+        redirect: false,
+        setHeaders: (res, filePath) => {
+          if (filePath.endsWith(".html")) {
+            res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            res.setHeader("Pragma", "no-cache");
+            res.setHeader("Expires", "0");
+            return;
+          }
+
+          if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+          }
+        },
+      })
+    );
 
     // Probe for a prerendered index.html for clean paths that lack a trailing
     // slash (e.g. /products/shredder-blades → .../shredder-blades/index.html).
@@ -177,15 +193,29 @@ export function createApp({
     // redirect:false is set, so we resolve them here before the SPA fallback.
     app.use((req, res, next) => {
       if (req.method !== "GET" && req.method !== "HEAD") return next();
+      if (path.extname(req.path)) return next();
       const probe = path.join(staticPath, req.path, "index.html");
-      res.sendFile(probe, err => {
-        if (err) next();
-      });
+      res.sendFile(
+        probe,
+        {
+          headers: {
+            "Cache-Control": "no-cache, no-store, must-revalidate",
+            Pragma: "no-cache",
+            Expires: "0",
+          },
+        },
+        err => {
+          if (err) next();
+        }
+      );
     });
   }
 
   if (enableSpaFallback && staticPath) {
-    app.get("*", analyticsMiddleware, (_req, res) => {
+    app.get("*", analyticsMiddleware, (req, res) => {
+      if (path.extname(req.path)) {
+        return res.status(404).end();
+      }
       res.sendFile(path.join(staticPath, "index.html"));
     });
   }
