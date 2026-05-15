@@ -1,4 +1,4 @@
-/**
+﻿/**
  * news.ts — Corporate Dispatches Data Layer
  * Single source of truth for all news/dispatch articles.
  */
@@ -403,7 +403,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "blade-material-selection-guide-by-industry",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "07.MAY.2026",
     title:
       "One-size-fits-all? A quick reference chart of blade materials for different industries",
@@ -512,7 +512,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "d2-vs-skd11-vs-tungsten-carbide",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "16.MAR.2026",
     title:
       "D2 vs SKD-11 vs tungsten carbide: a complete guide to choosing industrial blade materials",
@@ -751,7 +751,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 
   {
     id: "shredder-metallurgy-maximizes-recycling-yields",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "30.MAR.2026",
     title:
       "The recycling boom: how advanced shredder metallurgy maximizes mechanical recycling yields",
@@ -946,7 +946,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Archive Grid ──────────────────────────────────────────────────────────
   {
     id: "high-hardness-metal-shear-guide",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "11.MAR.2026",
     title: "Why choose high-hardness metal shear knives?",
     excerpt:
@@ -1096,7 +1096,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "cryogenic-treatment-alloy-blades",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "12.SEP.2024",
     title: "Advanced cryogenic treatment for alloy blades",
     excerpt:
@@ -1175,7 +1175,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "tin-vs-chrome-coating",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "28.JUL.2024",
     title: "Surface metallurgy: TiN vs. chrome coating",
     excerpt:
@@ -1258,7 +1258,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "log-saw-blade-bevel-angles",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "02.MAY.2024",
     title: "Optimizing bevel angles for log saw blades",
     excerpt:
@@ -1292,7 +1292,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "melt-filter-scraper-blade-daily-maintenance-checklist",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "21.APR.2026",
     title:
       "Daily maintenance checklist: scraper blades & filter plates for continuous melt filters",
@@ -1456,7 +1456,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "alloy-vs-hss-paper-cutter-blades",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "23.APR.2026",
     title:
       "Alloy blade vs high-speed steel: lifespan & cost guide for high-speed paper cutters",
@@ -1611,7 +1611,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   },
   {
     id: "blade-manufacturing-process",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "29.APR.2026",
     title:
       "From steel to finished products: understanding the entire manufacturing process of mechanical blades",
@@ -1714,7 +1714,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 
   {
     id: "coil-slitting-line-maintenance-guide",
-    tag: "INDUSTRY NEWS",
+    tag: "TECHNICAL GUIDE",
     date: "07.MAY.2026",
     title: "The complete guide to coil slitting line maintenance",
     excerpt:

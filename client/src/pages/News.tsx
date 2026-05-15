@@ -17,7 +17,6 @@ const CATEGORIES: { value: string; label: string }[] = [
   { value: "ALL", label: "All" },
   { value: "TECHNICAL GUIDE", label: "Technical Guides" },
   { value: "COMPANY NEWS", label: "Company News" },
-  { value: "INDUSTRY NEWS", label: "Industry News" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────

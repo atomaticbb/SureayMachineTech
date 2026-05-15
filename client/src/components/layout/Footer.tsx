@@ -197,7 +197,7 @@ export default function Footer() {
                   href="/news"
                   className="hover:text-white transition-colors"
                 >
-                  Industry News
+                  News Center
                 </Link>
               </li>
               <li>
