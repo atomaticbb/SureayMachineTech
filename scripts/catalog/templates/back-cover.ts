@@ -31,7 +31,7 @@ export function buildBackCover(logoSvg: string): string {
       </div>
       <div class="back-contact-item">
         <span class="back-contact-label">LinkedIn</span>
-        <span class="back-contact-value">linkedin.com/company/sureay</span>
+        <span class="back-contact-value">www.linkedin.com/in/lynn-shang-sureay</span>
       </div>
     </div>
 

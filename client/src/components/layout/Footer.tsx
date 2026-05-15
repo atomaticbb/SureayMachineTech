@@ -33,8 +33,10 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-2.5">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/lynn-shang-sureay"
                 aria-label="LinkedIn"
+                target="_blank"
+                rel="noreferrer noopener"
                 className="w-9 h-9 bg-slate-800 hover:bg-[#003366] flex items-center justify-center transition-colors duration-200"
               >
                 <svg
@@ -45,8 +47,10 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@SureayBlades"
                 aria-label="YouTube"
+                target="_blank"
+                rel="noreferrer noopener"
                 className="w-9 h-9 bg-slate-800 hover:bg-[#003366] flex items-center justify-center transition-colors duration-200"
               >
                 <svg

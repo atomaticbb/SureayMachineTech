@@ -16,7 +16,7 @@ export const COMPANY = {
   email: "lynn@sureay.com",
   website: "www.sureay.com",
   websiteUrl: "https://www.sureay.com",
-  linkedin: "https://www.linkedin.com/company/sureay",
+  linkedin: "https://www.linkedin.com/in/lynn-shang-sureay",
 };
 
 export const COLORS = {

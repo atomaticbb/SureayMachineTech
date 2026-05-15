@@ -99,7 +99,7 @@ export function generateOrganizationSchema() {
     },
     sameAs: [
       // Add social media profiles when available
-      // "https://www.linkedin.com/company/sureay",
+      // "https://www.linkedin.com/in/lynn-shang-sureay",
       // "https://www.facebook.com/sureay",
     ],
     foundingDate: "2008",
