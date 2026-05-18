@@ -1802,6 +1802,132 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+
+  {
+    id: "metal-slitting-lines-installation-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "18.MAY.2026",
+    title:
+      "Metal Slitting Lines: How To Install Them To Make Rotary Shear Blades 30% Longer",
+    excerpt:
+      "Blade wear on metal slitting lines is rarely a material problem — it is an installation problem. Sureay shares three precise installation tips that can extend rotary shear blade life by 30% or more.",
+    image: "/images/news/metal-slitting-lines-01.webp",
+    readTime: "5 MIN",
+    seoTitle:
+      "Metal Slitting Lines: 3 Installation Tips for 30% Longer Rotary Shear Blade Life | Sureay",
+    metaDescription:
+      "Learn how to set axial clearance, verify cutter shaft parallelism, and apply the correct bolt torque on metal slitting lines — three installation steps that extend rotary shear blade life by 30%.",
+    keywords:
+      "metal slitting lines, rotary shear blades, slitting blade installation, axial clearance slitting, cutter shaft parallelism, blade life extension, coil slitting installation",
+    relatedProductIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "On metal slitting lines, blade life comes down to two things: the material the blade is made from, and how precisely it is installed. Most customers who report rapid wear or frequent breakage are dealing with an installation problem — not a blade quality problem.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "SUREAY is sharing three installation tips that apply to any metal slitting line. Follow all three and you can realistically extend the service life of your [rotary shear blades](/products/metal-coil-slitting-knives) by 30% or more.",
+      },
+      { type: "image", value: "/images/news/metal-slitting-lines-01.webp" },
+      { type: "h2", value: "Tip 1: Set the Correct Axial Clearance" },
+      {
+        type: "paragraph",
+        value:
+          "Axial clearance — the gap between the two mating rotary shear blades — is the single most influential installation parameter. Set it wrong and the blades will fail regardless of steel grade or surface treatment.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The most common mistakes are adjusting clearance by feel or using a single fixed value across all material thicknesses. The correct approach is to calculate clearance as a percentage of sheet thickness — typically 8–12% — and verify it with a feeler gauge or dial indicator at multiple points along the cutter shaft.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Material Thickness", "Recommended Clearance"],
+        tableRows: [
+          ["≤ 1.5 mm (thin plate)", "0.03 – 0.08 mm"],
+          ["1.5 – 4 mm (medium plate)", "0.08 – 0.15 mm"],
+          ["> 4 mm (thick plate)", "0.15 – 0.25 mm"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "If clearance is too small, frictional heat builds at the blade face and the cutting edge chips. If clearance is too large, the slit edge becomes rough, burr height increases, and the blade dulls rapidly under the bending load.",
+      },
+      { type: "image", value: "/images/news/metal-slitting-lines-02.webp" },
+      { type: "h2", value: "Tip 2: Verify Cutter Shaft Parallelism" },
+      {
+        type: "paragraph",
+        value:
+          "If the upper and lower cutter shafts are not parallel, the effective clearance varies across the cut width. One side of the blade set is underloaded while the other is overloaded — causing uneven wear, accelerated edge damage, and inconsistent slit width.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before installing the blades, measure the cutter shafts directly. Check runout at both ends of each shaft — error must be within 0.02 mm. Then verify shaft-to-shaft parallelism across the full working length using a dial indicator and straight edge — error must be within 0.05 mm total.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bearing wear and frame deformation accumulate over time and shift shaft geometry. Repeat this check every six months as part of a scheduled preventive maintenance cycle.",
+      },
+      { type: "image", value: "/images/news/metal-slitting-lines-03.webp" },
+      { type: "h2", value: "Tip 3: Apply the Correct Bolt Torque" },
+      {
+        type: "paragraph",
+        value:
+          "Under-tightened blades micro-shift during rotation. Even a few microns of movement per cycle generates fretting wear at the mounting face and introduces runout that transfers to the cutting edge. Many failures attributed to blade brittleness are in fact caused by mounting instability.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Use a calibrated torque wrench and apply the specified torque in two or three progressive steps. Ensure blade and shaft mating surfaces are clean — free of oil, burrs, and debris — before assembly. Use non-woven fabric and alcohol for the final wipe.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Bolt Size", "Required Torque"],
+        tableRows: [
+          ["M12", "70 – 90 N·m"],
+          ["M16", "150 – 180 N·m"],
+          ["M20", "250 – 300 N·m"],
+        ],
+      },
+      { type: "h2", value: "Installation Checklist" },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Check Item", "Specification", "Method"],
+        tableRows: [
+          ["Axial clearance", "8–12% of material thickness", "Feeler gauge or dial indicator"],
+          ["Cutter shaft runout", "< 0.02 mm", "Dial indicator"],
+          ["Cutter shaft parallelism", "< 0.05 mm (full length)", "Dial indicator + straight edge"],
+          ["Bolt torque (M12 / M16 / M20)", "70–90 / 150–180 / 250–300 N·m", "Torque wrench"],
+          ["Blade & shaft surface", "No oil stains, no burrs", "Non-woven fabric + alcohol"],
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "Correct installation outperforms expensive blades every time. If your blades are wearing out quickly, start here — not with the blade specification sheet.",
+      },
+      { type: "h2", value: "Need Help With Your Slitting Line?" },
+      {
+        type: "paragraph",
+        value:
+          "If you are having problems with your metal slitting line, send us your drawings or photos and our engineers will give you a free technical assessment. SUREAY specialises in precision [rotary shear blades and metal coil slitting knives](/products/metal-coil-slitting-knives) for all major slitting line brands.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Visit [www.sureay.com](https://www.sureay.com) · Email [lynn@sureay.com](mailto:lynn@sureay.com) · Call +86 180 0555 0657 · Connect on [LinkedIn](https://www.linkedin.com/in/lynn-shang-sureay) or [Facebook](https://www.facebook.com/share/1AF2JJxmzQ/)",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
@@ -1823,6 +1949,7 @@ const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
   "melt-filter-scraper-blade-daily-maintenance-checklist": "Eric",
   "alloy-vs-hss-paper-cutter-blades": "Eric",
   "coil-slitting-line-maintenance-guide": "Eric",
+  "metal-slitting-lines-installation-guide": "lynn",
 };
 
 // ── Helper Functions ──────────────────────────────────────────────────────────

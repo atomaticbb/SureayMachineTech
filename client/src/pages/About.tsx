@@ -12,13 +12,6 @@ import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 
-const STATS = [
-  { display: "15+",    label: "Years of Experience",     sub: "Est. 2008" },
-  { display: "10,000+", label: "Blade Designs Delivered", sub: "Active Variants" },
-  { display: "98%",    label: "Client Retention Rate",   sub: "Satisfaction" },
-  { display: "50+",    label: "Countries Served",        sub: "Global Coverage" },
-];
-
 const EPOCHS = [
   { year: "2008", title: "First Blade Shipped",    desc: "Founded in Ma'anshan, Anhui. 500 m² workshop, 12 founding engineers, first industrial blade delivered." },
   { year: "2012", title: "5,000 M² CNC Grid",      desc: "Vacuum heat treatment furnaces and CNC grinding lines commissioned. Southeast Asia export initiated." },
@@ -171,27 +164,21 @@ export default function About() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          2. STATS
+          2. FACTORY VIDEO
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-[#001f4d] border-y border-[#001f4d]">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
-            {STATS.map((s, i) => (
-              <div
-                key={i}
-                className={`px-8 py-14 flex flex-col gap-2 ${i >= 2 ? "border-t border-white/10 md:border-t-0" : ""}`}
-              >
-                <p className="text-[10px] font-semibold tracking-[0.25em]  text-white/40">
-                  {s.sub}
-                </p>
-                <p className="text-[clamp(2rem,5vw,3.2rem)] font-black text-white leading-none tracking-tight tabular-nums">
-                  {s.display}
-                </p>
-                <p className="text-[11px] font-semibold tracking-[0.14em]  text-white/60">
-                  {s.label}
-                </p>
-              </div>
-            ))}
+      <section className="bg-slate-50 border-y border-slate-200">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
+          <p className="text-[11px] font-semibold tracking-[0.28em] text-slate-400 mb-5">
+            Factory Tour
+          </p>
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/UfjqDYlewko"
+              title="Sureay Machinery Technology — Factory Tour"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>
