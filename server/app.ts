@@ -93,7 +93,7 @@ export function createApp({
             "https://stats.g.doubleclick.net",
           ],
           objectSrc: ["'none'"],
-          frameSrc: ["'none'"],
+          frameSrc: ["https://www.youtube.com", "https://www.youtube-nocookie.com"],
         },
       },
       crossOriginEmbedderPolicy: false,
