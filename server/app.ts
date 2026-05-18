@@ -97,6 +97,7 @@ export function createApp({
         },
       },
       crossOriginEmbedderPolicy: false,
+      referrerPolicy: { policy: "strict-origin-when-cross-origin" },
     })
   );
   app.use(express.json({ limit: "50kb" }));
