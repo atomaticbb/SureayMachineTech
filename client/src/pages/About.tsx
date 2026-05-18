@@ -171,16 +171,31 @@ export default function About() {
           <p className="text-[11px] font-semibold tracking-[0.28em] text-slate-400 mb-5">
             Factory Tour
           </p>
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/UfjqDYlewko?origin=https://www.sureay.com"
-              title="Sureay Machinery Technology — Factory Tour"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+          <a
+            href="https://www.youtube.com/watch?v=UfjqDYlewko"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block w-full group"
+            style={{ paddingBottom: "56.25%" }}
+          >
+            <img
+              src="https://img.youtube.com/vi/UfjqDYlewko/maxresdefault.jpg"
+              alt="Sureay Machinery Technology — Factory Tour"
+              className="absolute inset-0 w-full h-full object-cover"
             />
-          </div>
+            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <div className="w-16 h-16 bg-red-600 group-hover:bg-red-500 transition-colors flex items-center justify-center">
+                <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-black/50 px-5 py-3">
+              <p className="text-[11px] font-semibold tracking-[0.2em] text-white/70">
+                WATCH ON YOUTUBE
+              </p>
+            </div>
+          </a>
         </div>
       </section>
 
