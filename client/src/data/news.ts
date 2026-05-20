@@ -70,6 +70,164 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "log-saw-blade-chipping-causes-prevention",
+    tag: "MAINTENANCE GUIDE",
+    date: "20.MAY.2026",
+    title:
+      "Five Common Causes and Preventive Measures for Log Saw Blade Chipping",
+    excerpt:
+      "Blade chipping on tissue log saw lines leads to rough cuts, dimensional drift, and unplanned stops. This guide explains five root causes and practical prevention steps to stabilize cut quality and extend blade life.",
+    image: "/images/news/log-saw-blade-chipping-hero.webp",
+    readTime: "6 MIN",
+    seoTitle:
+      "Log Saw Blade Chipping: 5 Root Causes and Prevention Guide | Sureay",
+    metaDescription:
+      "Learn the five most common causes of log saw blade chipping and how to prevent them with proper clearance setup, runout control, speed matching, material selection, and installation practice.",
+    keywords:
+      "log saw blade chipping, tissue log saw blade maintenance, blade clearance setting, cutter shaft runout, tissue converting blade troubleshooting",
+    relatedProductIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "In tissue converting lines, blade condition directly determines cut-face quality, dust level, and line uptime. When a [tissue log saw blade](/products/tissue-log-saw-blades) starts chipping, the result is usually immediate: rough edges, unstable dimensions, and frequent blade changes that reduce OEE.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This guide summarizes five common causes of chipping and the field-proven actions maintenance teams can take to prevent recurrence.",
+      },
+      {
+        type: "image",
+        value: "/images/news/log-saw-blade-chipping-hero.webp",
+      },
+      {
+        type: "h2",
+        value: "1. Improper Clearance Between Blade and Bottom Cutter",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If clearance is too large, the blade enters with impact. If it is too small, friction heat rises and micro-cracks can propagate at the edge.",
+      },
+      {
+        type: "callout",
+        value:
+          "Prevention: Verify clearance during setup with a feeler gauge and keep it within 0.03-0.08 mm. Recheck before each shift start.",
+      },
+      {
+        type: "h2",
+        value: "2. Cutter Shaft Runout Out of Tolerance",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Worn bearings or loose lock nuts can increase radial runout, concentrating stress on one side of the edge and accelerating local chipping.",
+      },
+      {
+        type: "callout",
+        value:
+          "Prevention: Measure shaft runout monthly with a dial indicator and keep it at or below 0.02 mm. Correct bearing and locking issues immediately.",
+      },
+      {
+        type: "h2",
+        value: "3. Feed Speed and Blade Linear Speed Mismatch",
+      },
+      {
+        type: "image",
+        value: "/images/news/log-saw-blade-chipping-causes.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When feed speed is too high for current blade speed, tooth load rises sharply. Repeated overload impacts can exceed edge strength and trigger chipping.",
+      },
+      {
+        type: "callout",
+        value:
+          "Prevention: Use OEM baseline parameters and recalibrate after paper grade changes, especially when basis weight or humidity changes.",
+      },
+      {
+        type: "h2",
+        value: "4. Incorrect Blade Material Selection",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Using a lower wear-grade blade in high-ash or high-moisture paper applications can turn micro-wear into rapid edge collapse.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For many high-speed paper and tissue operations, pairing the right log saw blade with upstream [paper slitter knives](/products/rotary-slitter-knives-paper) helps maintain consistent edge quality across the converting process.",
+      },
+      {
+        type: "callout",
+        value:
+          "Prevention: Align blade grade with production profile: alloy/carbide-oriented options for continuous high-load lines, HSS for lighter and shorter campaigns.",
+      },
+      {
+        type: "h2",
+        value: "5. Installation Impact or Uneven Bolt Torque",
+      },
+      {
+        type: "image",
+        value: "/images/news/log-saw-blade-processing.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Small impacts during handling can introduce hidden cracks. Uneven tightening can cause wobble, which then amplifies crack growth during rotation.",
+      },
+      {
+        type: "callout",
+        value:
+          "Prevention: Use soft-contact handling tools, tighten in diagonal sequence, and apply controlled torque in staged passes.",
+      },
+      {
+        type: "h2",
+        value: "Quick Self-Checklist",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Observed Symptom", "Likely Cause", "How to Verify"],
+        tableRows: [
+          [
+            "Continuous small notches",
+            "Improper clearance or high runout",
+            "Feeler gauge + dial indicator"
+          ],
+          [
+            "Localized large edge collapse",
+            "Feed overload or foreign hard object",
+            "Check process parameters + incoming material"
+          ],
+          [
+            "Blunt edge with light chipping",
+            "Insufficient wear resistance",
+            "Review blade material against paper condition"
+          ],
+          [
+            "Chipping on first run after mounting",
+            "Installation impact or uneven torque",
+            "Audit mounting method and tightening sequence"
+          ]
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "If your team is diagnosing recurrent issues, start from the full [log saw blade category](/categories/log-saw-blades) to compare blade options, then validate your line setup against paper-specific process conditions in our [paper industry](/paper-industry) resources.",
+      },
+      {
+        type: "callout",
+        value:
+          "Need help diagnosing a failed blade? Send photos of the chipped edge plus your paper type, basis weight, and line speed. Sureay engineers can provide a practical root-cause recommendation for your converting line.",
+      },
+    ],
+  },
+  {
     id: "nonwoven-slitter-knives-guide",
     tag: "TECHNICAL GUIDE",
     date: "14.MAY.2026",
