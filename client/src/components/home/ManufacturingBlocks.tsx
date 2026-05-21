@@ -21,9 +21,9 @@ const BLOCKS = [
       "CMM inspection and optical verification are completed before release, so dimensional compliance is confirmed rather than assumed.",
       "Where the application requires it, edge tolerances can be held down to ±0.002 mm to support high-speed drop-in replacement requirements.",
     ],
-    imageSrc: "/images/process/CMM.webp",
+    imageSrc: "/images/process/blade-quality-inspection.webp",
     imageAlt:
-      "CMM coordinate measuring machine quality inspection of industrial cutting blades",
+      "CMM dimensional inspection of industrial cutting blades for precision fit",
   },
   {
     label: "Application Engineering",

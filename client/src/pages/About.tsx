@@ -147,7 +147,7 @@ export default function About() {
           {/* Right — Factory photo */}
           <div className="relative flex-1 overflow-hidden min-h-[340px] lg:min-h-0">
             <img
-              src="/images/about/cnc-workshop.webp"
+              src="/images/about/factory-image-02.webp"
               alt="Sureay CNC workshop — machining centers with blade workpieces"
               className="absolute inset-0 w-full h-full object-cover"
               width={1272}
@@ -245,7 +245,7 @@ export default function About() {
               <div className="flex flex-col gap-2">
                 <div className="relative overflow-hidden h-[220px]">
                   <img
-                    src="/images/about/factory.webp"
+                    src="/images/about/factory-image-01.webp"
                     alt="Sureay factory floor — Ma'anshan manufacturing facility"
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
