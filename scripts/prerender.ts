@@ -178,9 +178,16 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // Wait until React has mounted at least one child inside #root
     await page.waitForSelector("#root > *", { timeout: TIMEOUT_MS });
 
-    // Wait until react-helmet-async has flushed its tags into <head>
-    // (it marks every managed tag with data-rh="true")
-    await page.waitForSelector('meta[data-rh="true"]', { timeout: TIMEOUT_MS });
+    // Wait until react-helmet-async has flushed its tags into <head>.
+    // Primary signal: data-rh="true" attribute on any managed tag.
+    // Fallback: title changed from the index.html default (proves helmet fired
+    // even if the attribute is absent in some edge case).
+    await page.waitForFunction(
+      () =>
+        document.querySelectorAll('[data-rh="true"]').length > 0 ||
+        document.title !== "Precision Industrial Blades | Sureay",
+      { timeout: TIMEOUT_MS }
+    );
 
     // Wait until h1 is in the DOM — ensures lazy-loaded page components have
     // fully rendered before we capture the HTML (guards against SEO audits

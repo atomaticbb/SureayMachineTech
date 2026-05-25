@@ -57,7 +57,11 @@ export default function Home() {
         description="Sureay manufactures industrial blades, shredder knives, slitter tooling, and custom OEM machine knives for plastic recycling, metal processing, and paper converting lines worldwide."
         canonicalUrl="/"
         keywords="industrial blades manufacturer, custom machine knives, shredder blades, granulator knives, slitter blades, shear blades, OEM custom blades"
-        extraJsonLd={[ITEM_LIST_LD]}
+      />
+      {/* Rendered outside <Helmet> to avoid React 19 script-hoisting interference */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: ITEM_LIST_LD }}
       />
 
       <div className="min-h-screen bg-slate-50 pt-[68px]">
