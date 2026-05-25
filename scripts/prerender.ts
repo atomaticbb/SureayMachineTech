@@ -26,6 +26,9 @@ const BASE_URL = `http://localhost:${PORT}`;
 const CONCURRENCY = 3; // parallel Puppeteer pages
 const TIMEOUT_MS = 25_000; // per-route navigation + selector timeout
 
+// Tracks routes whose prerender threw — exit 1 at end so CI hard-fails.
+const FAILED_ROUTES: string[] = [];
+
 // ── Route manifest ─────────────────────────────────────────────────────────────
 
 const ROUTES: string[] = [
@@ -185,10 +188,18 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
 
     console.log(`  ✓  ${route}`);
   } catch (err) {
-    // Log and skip — one bad route must never crash the CI pipeline
-    console.error(
-      `  ✗  ${route}  (${err instanceof Error ? err.message : err})`
-    );
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error(`  ✗  ${route}  (${msg})`);
+    // Dump DOM head so the build log shows what state the page was in when it failed.
+    try {
+      const headHtml = await page.evaluate(() =>
+        document.documentElement.outerHTML.slice(0, 2500)
+      );
+      console.error(`  ── DOM snapshot (first 2.5KB) ──\n${headHtml}\n  ── end snapshot ──`);
+    } catch {
+      // page may already be closed/crashed — ignore
+    }
+    FAILED_ROUTES.push(route);
   } finally {
     await page.close();
   }
@@ -268,6 +279,15 @@ async function main(): Promise<void> {
   } finally {
     await browser.close();
     await new Promise<void>(resolve => server.close(() => resolve()));
+  }
+
+  if (FAILED_ROUTES.length > 0) {
+    console.error(
+      `\n[prerender] FAILED — ${FAILED_ROUTES.length} route(s) did not prerender:`
+    );
+    for (const r of FAILED_ROUTES) console.error(`  - ${r}`);
+    console.error("\n[prerender] build aborted — see DOM snapshots above for cause\n");
+    process.exit(1);
   }
 
   console.log("\n[prerender] done\n");
