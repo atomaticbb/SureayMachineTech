@@ -844,7 +844,7 @@ export const blades: Blade[] = [
     ],
     relatedBladeIds: [
       "tire-shredder-blades",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
       "granulator-blades",
     ],
     offers: {
@@ -1175,7 +1175,7 @@ export const blades: Blade[] = [
 
     relatedBladeIds: [
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 300,
@@ -1650,7 +1650,7 @@ export const blades: Blade[] = [
   // 8. Single Shaft Rotor Inserts
   // ─────────────────────────────────────────────────────────────────────────
   {
-    id: "single-shaft-rotor-inserts",
+    id: "single-shaft-shredder-blades",
     name: "Single Shaft Rotor Inserts",
     fullName: "High-Impact Single Shaft Shredder Rotor Inserts (Crown Cutters)",
     category: "shredder_blades",
@@ -1668,7 +1668,7 @@ export const blades: Blade[] = [
       "DC53, D2 (1.2379), and Cr12MoV cold-work tool steel rotor inserts for low-speed, high-torque single-shaft shredders. Vacuum-hardened and cryogenically processed to HRC 58–62, CNC-machined to ±0.02mm face tolerance. Features 4-way indexable square geometry. Drop-in compatible with Vecoplan, Weima, Lindner, and Zerma platforms.",
     fullDescription:
       "Single-shaft shredders operate at 80–150 RPM under extremely high torque, driving block-style rotor inserts into a stationary bed knife at tight shear clearances of 0.2–1.5mm. At these mechanical parameters, the primary cause of blade failure is impact-induced edge microchipping or thermal softening from sustained high-cycle torque peaks, rather than progressive wear.\n\nSureay addresses these failure modes through strict metallurgy. Standard D2 (1.2379) tool steel inserts provide excellent wear resistance at a cost-effective price point. For applications involving hard engineering plastics (PA66-GF, PC, PEEK) or heavy purge lumps, DC53 is specified—delivering 17% higher transverse rupture strength to prevent edge chipping under heavy impact.\n\n## ±0.02mm CNC Machining Tolerance\n\nCutting clearance between the rotor insert face and the stationary bed knife governs shred particle size and motor load. Inconsistent clearances cause material wrap-back and rotor stalls. Sureay rotor inserts are CNC-machined to ±0.02mm face flatness, ensuring a perfect and repeatable shear gap across the entire rotor length when paired with a quality bed knife.\n\n## 4-Way Indexable Geometry\n\nThe symmetrical square block format provides four independent cutting edges per insert. When one edge dulls, the operator loosens the countersunk mounting bolt, rotates the insert 90° to a fresh edge, and retorques. A full rotor complement can be indexed rapidly without shaft extraction, effectively reducing annual tooling expenditure by 75%.\n\n## Deep Cryogenic Treatment (−196°C)\n\nAll Sureay single-shaft inserts undergo vacuum hardening to HRC 58–62, followed by a mandatory deep cryogenic soak at −196°C. This critical final stage eliminates retained austenite and stabilizes the martensitic microstructure, drastically reducing the risk of bulk fracture when the rotor encounters unexpected foreign metal inclusions.",
-    link: "/products/single-shaft-rotor-inserts",
+    link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
     compatibleMachines: [
       "Rapid Granulator",
@@ -1949,7 +1949,7 @@ export const blades: Blade[] = [
       { spec: "3000", od: "250", bolt: "60", type: "Heavy Duty Multi-Hole" },
     ],
 
-    relatedBladeIds: ["single-shaft-rotor-inserts", "granulator-blades"],
+    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
 
     offers: {
       lowPrice: 150,
@@ -2105,7 +2105,7 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: [
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
       "twin-shaft-blades-recycling",
     ],
     offers: {
@@ -3346,7 +3346,7 @@ export const blades: Blade[] = [
 
     relatedBladeIds: [
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 250,
@@ -4614,7 +4614,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "wood-chipper-anvils",
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
       "granulator-blades",
     ],
     offers: {
@@ -4794,7 +4794,7 @@ export const blades: Blade[] = [
       "wood-chipper-anvils",
       "wood-chipper-blades-standard",
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
     ],
     offers: { lowPrice: 45, highPrice: 380 },
     faqs: {
@@ -4924,7 +4924,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "wood-chipper-anvils",
       "wood-chipper-blades-industrial",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
       "granulator-blades",
     ],
     offers: { lowPrice: 15, highPrice: 120 },

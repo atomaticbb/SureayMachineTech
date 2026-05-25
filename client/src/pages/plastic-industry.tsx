@@ -229,8 +229,8 @@ const PAGE_SCHEMA = {
         image: "https://sureay.com/images/products/shredder-blades/single-shredder-blades-06.webp",
         description: "Indexable D2 and H13 single-shaft shredder rotor inserts for plastic waste, HDPE, and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/single-shaft-rotor-inserts",
-        offers: getBladeAggregateOffer("single-shaft-rotor-inserts"),
+        url: "https://sureay.com/products/single-shaft-shredder-blades",
+        offers: getBladeAggregateOffer("single-shaft-shredder-blades"),
       },
     },
     {

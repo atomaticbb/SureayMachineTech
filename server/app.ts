@@ -39,7 +39,7 @@ export function createApp({
     if (req.hostname === "www.sureay.com") {
       res.setHeader("Content-Type", "text/plain");
       res.send(
-        `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /admin/login\nDisallow: /api/\nDisallow: /images/\n\nUser-agent: Google-Extended\nDisallow: /\n\nSitemap: https://sureay.com/sitemap.xml`
+        `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /admin/login\nDisallow: /api/\n\nSitemap: https://sureay.com/sitemap.xml`
       );
       return;
     }

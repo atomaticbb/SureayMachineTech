@@ -45,9 +45,9 @@ const SECTORS: Sector[] = [
         href: "/products/twin-shaft-blades-recycling",
       },
       {
-        id: "single-shaft-rotor-inserts",
+        id: "single-shaft-shredder-blades",
         name: "Single Shaft Rotor Inserts",
-        href: "/products/single-shaft-rotor-inserts",
+        href: "/products/single-shaft-shredder-blades",
       },
       {
         id: "single-shaft-bed-knives",

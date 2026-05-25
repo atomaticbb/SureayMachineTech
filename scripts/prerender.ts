@@ -168,6 +168,19 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
 
     const html = await page.evaluate(() => document.documentElement.outerHTML);
     persistHtml(route, html);
+
+    // CI gate: a valid prerendered page must be at least 20 KB.
+    // Anything smaller is the raw Vite SPA shell — fail the build immediately.
+    const segments = route === "/" ? [] : route.replace(/^\//, "").split("/");
+    const outFile = path.join(DIST_DIR, ...segments, "index.html");
+    const bytes = fs.statSync(outFile).size;
+    if (bytes < 20_000) {
+      console.error(
+        `  ✗  ${route}  (output only ${bytes} bytes — prerender likely failed)`
+      );
+      process.exit(1);
+    }
+
     console.log(`  ✓  ${route}`);
   } catch (err) {
     // Log and skip — one bad route must never crash the CI pipeline

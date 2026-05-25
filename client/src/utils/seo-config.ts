@@ -173,7 +173,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
 
-  "single-shaft-rotor-inserts": {
+  "single-shaft-shredder-blades": {
     title: "Single-Shaft Rotor Inserts | Crown Cutter Knives | Sureay",
     description:
       "High-impact single-shaft shredder rotor inserts for aggressive size reduction. Concave, crown and V-groove profiles. 4 usable cutting edges per insert. Deep cryogenic treatment. For bulky plastics, thick-wall containers and MSW.",

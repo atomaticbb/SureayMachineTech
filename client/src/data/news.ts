@@ -919,7 +919,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     readTime: "7 MIN",
     relatedProductIds: [
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
       "single-shaft-bed-knives",
       "tire-shredder-blades",
     ],
@@ -975,7 +975,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "DC53 is an advanced modification of standard D2. Through a refined alloy composition and tighter control over the steel-making process, DC53 eliminates the massive carbide structures found in D2. Heat-treated to HRC 60, DC53 maintains the excellent wear resistance of D2 but delivers double the impact toughness. It is the ultimate choice for heavy-duty [single-shaft shredder inserts](/products/single-shaft-rotor-inserts) processing tough, thick-walled plastics, copper cables, and tires where moderate shock loads are expected.",
+          "DC53 is an advanced modification of standard D2. Through a refined alloy composition and tighter control over the steel-making process, DC53 eliminates the massive carbide structures found in D2. Heat-treated to HRC 60, DC53 maintains the excellent wear resistance of D2 but delivers double the impact toughness. It is the ultimate choice for heavy-duty [single-shaft shredder inserts](/products/single-shaft-shredder-blades) processing tough, thick-walled plastics, copper cables, and tires where moderate shock loads are expected.",
       },
       { type: "h3", value: "H13 (1.2344): The Shock-Absorbing King" },
       {
@@ -1013,7 +1013,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "At Sureay, we engineer our [Single Shaft Shredder Blades](/products/single-shaft-rotor-inserts) and [Twin Shaft Shredder Knives](/products/twin-shaft-blades-recycling) to perfectly match your specific waste stream. From DC53 concave inserts for high-throughput plastic reduction to massive H13 hook blades for heavy metal and [tire processing](/products/tire-shredder-blades), our vacuum heat-treatment protocols ensure your tooling survives the most violent impacts your facility can throw at it.",
+          "At Sureay, we engineer our [Single Shaft Shredder Blades](/products/single-shaft-shredder-blades) and [Twin Shaft Shredder Knives](/products/twin-shaft-blades-recycling) to perfectly match your specific waste stream. From DC53 concave inserts for high-throughput plastic reduction to massive H13 hook blades for heavy metal and [tire processing](/products/tire-shredder-blades), our vacuum heat-treatment protocols ensure your tooling survives the most violent impacts your facility can throw at it.",
       },
       {
         type: "paragraph",
@@ -1316,7 +1316,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "K 2024 (Düsseldorf, October 16–3) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth [single-shaft shredder blade](/products/single-shaft-rotor-inserts) series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
+          "K 2024 (Düsseldorf, October 16–3) marked Sureay Machinery's third consecutive appearance at the world's leading plastics and rubber trade fair. Booth 12C34 in Hall 12 hosted demonstration units for our new hook-tooth [single-shaft shredder blade](/products/single-shaft-shredder-blades) series, purpose-built for throughput rates exceeding 8 t/h on post-consumer LDPE film bales.",
       },
       {
         type: "callout",
@@ -1745,7 +1745,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     relatedProductIds: [
       "granulator-blades",
       "twin-shaft-blades-recycling",
-      "single-shaft-rotor-inserts",
+      "single-shaft-shredder-blades",
     ],
     content: [
       { type: "h2", value: "Partnership Agreements" },
