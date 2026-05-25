@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
 const BRAND = "Sureay Blades";
@@ -144,6 +145,11 @@ export default function SEO({
         })),
       }
     : null;
+
+  // Direct fallback: set document.title even if Helmet effects stall (React 19 + headless)
+  useEffect(() => {
+    document.title = fullTitle;
+  }, [fullTitle]);
 
   return (
     <Helmet>
