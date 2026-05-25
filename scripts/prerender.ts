@@ -136,6 +136,19 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     page.on("console", () => {});
     page.on("pageerror", () => {});
 
+    // Block all external requests so networkidle2 is reached quickly.
+    // GA4's wait_for_update + gtag/js keep connections open indefinitely
+    // in Docker build environments, causing every route to timeout.
+    await page.setRequestInterception(true);
+    page.on("request", req => {
+      const url = req.url();
+      if (url.startsWith(BASE_URL) || url.startsWith("data:")) {
+        req.continue();
+      } else {
+        req.abort();
+      }
+    });
+
     await page.goto(`${BASE_URL}${route}`, {
       waitUntil: "networkidle2",
       timeout: TIMEOUT_MS,
