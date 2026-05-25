@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
@@ -58,10 +57,8 @@ export default function Home() {
         description="Sureay manufactures industrial blades, shredder knives, slitter tooling, and custom OEM machine knives for plastic recycling, metal processing, and paper converting lines worldwide."
         canonicalUrl="/"
         keywords="industrial blades manufacturer, custom machine knives, shredder blades, granulator knives, slitter blades, shear blades, OEM custom blades"
+        extraJsonLd={[ITEM_LIST_LD]}
       />
-      <Helmet>
-        <script type="application/ld+json">{ITEM_LIST_LD}</script>
-      </Helmet>
 
       <div className="min-h-screen bg-slate-50 pt-[68px]">
         <Navbar />

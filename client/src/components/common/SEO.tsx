@@ -35,6 +35,9 @@ export interface SEOProps {
   noIndex?: boolean;
   keywords?: string;
   breadcrumbs?: BreadcrumbItem[];
+  /** Additional JSON-LD blocks to inject (e.g. ItemList on the homepage).
+   *  Pass already-stringified JSON, one entry per script tag. */
+  extraJsonLd?: string[];
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -60,6 +63,7 @@ export default function SEO({
   noIndex = false,
   keywords,
   breadcrumbs,
+  extraJsonLd,
 }: SEOProps) {
   const fullTitle = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
   const canonicalHref = canonicalUrl ? abs(canonicalUrl) : undefined;
@@ -165,6 +169,14 @@ export default function SEO({
       {breadcrumbLd && (
         <script type="application/ld+json">{safeJson(breadcrumbLd)}</script>
       )}
+
+      {/* Caller-supplied JSON-LD (e.g. homepage ItemList) — kept inside the
+          single Helmet instance so the page never needs a second one. */}
+      {extraJsonLd?.map((block, i) => (
+        <script key={i} type="application/ld+json">
+          {block.replace(/</g, "\\u003c")}
+        </script>
+      ))}
     </Helmet>
   );
 }
