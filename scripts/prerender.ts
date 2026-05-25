@@ -135,10 +135,26 @@ function persistHtml(route: string, html: string): void {
 async function renderRoute(browser: Browser, route: string): Promise<void> {
   const page = await browser.newPage();
   try {
-    // Suppress non-critical console noise from the rendered page
-    page.on("console", () => {});
+    // Capture page console errors/warnings (info/log is too noisy)
+    page.on("console", msg => {
+      const t = msg.type();
+      if (t === "error" || t === "warning") {
+        console.error(`  [console:${t}] ${route}: ${msg.text()}`);
+      }
+    });
     page.on("pageerror", err => {
       console.error(`  [js-error] ${route}: ${err.message}`);
+    });
+    // Log any request that fails outright (would catch chunk-load failures
+    // that trigger lazyWithRetry's window.location.reload loop)
+    page.on("requestfailed", req => {
+      const failure = req.failure();
+      // Aborts are expected (we abort all external requests via interception),
+      // so only log actual failures, not our deliberate aborts.
+      const errText = failure?.errorText ?? "";
+      if (errText && errText !== "net::ERR_FAILED" && errText !== "net::ERR_ABORTED") {
+        console.error(`  [req-fail] ${route}: ${req.url()} -> ${errText}`);
+      }
     });
 
     // Block all external requests so networkidle2 is reached quickly.
@@ -190,12 +206,28 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);
     console.error(`  ✗  ${route}  (${msg})`);
-    // Dump DOM head so the build log shows what state the page was in when it failed.
+    // Dump head + root contents + URL so we can see exactly what state the
+    // page reached when it failed (not just the unchanged head template).
     try {
-      const headHtml = await page.evaluate(() =>
-        document.documentElement.outerHTML.slice(0, 2500)
+      const diag = await page.evaluate(() => {
+        const root = document.getElementById("root");
+        return {
+          currentUrl: location.href,
+          title: document.title,
+          rhMetaCount: document.querySelectorAll('[data-rh="true"]').length,
+          rootChildren: root?.children.length ?? -1,
+          rootInner: (root?.innerHTML ?? "(no #root)").slice(0, 2000),
+        };
+      });
+      console.error(
+        `  ── failure diag ──\n` +
+          `  url: ${diag.currentUrl}\n` +
+          `  title: ${diag.title}\n` +
+          `  data-rh tags in DOM: ${diag.rhMetaCount}\n` +
+          `  #root children: ${diag.rootChildren}\n` +
+          `  #root innerHTML (first 2KB):\n${diag.rootInner}\n` +
+          `  ── end diag ──`
       );
-      console.error(`  ── DOM snapshot (first 2.5KB) ──\n${headHtml}\n  ── end snapshot ──`);
     } catch {
       // page may already be closed/crashed — ignore
     }
