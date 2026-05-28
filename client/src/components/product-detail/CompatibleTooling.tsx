@@ -8,9 +8,11 @@ import type { Blade } from "@/data/blades";
 
 interface CompatibleToolingProps {
   blades: Blade[];
+  title?: string;
+  subtitle?: string;
 }
 
-export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
+export default function CompatibleTooling({ blades, title, subtitle }: CompatibleToolingProps) {
   const display = blades.slice(0, 4);
   if (display.length === 0) return null;
 
@@ -21,11 +23,11 @@ export default function CompatibleTooling({ blades }: CompatibleToolingProps) {
     >
       {/* Header row */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ System Inventory ]
+        {subtitle ?? "[ System Inventory ]"}
       </p>
       <div className="flex items-end justify-between gap-4 mb-6">
         <h2 className="font-black text-3xl text-[#001f4d]  tracking-tight">
-          Related Blade Categories
+          {title ?? "Related Blade Categories"}
         </h2>
         <Link href="/products">
           <span className="font-mono text-[10px] text-slate-700  tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">

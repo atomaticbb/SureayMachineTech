@@ -70,8 +70,8 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
         Common Standard Dimensions
       </h2>
 
-      {/* Flex row: items-start — each column its own height, no cross-stretch */}
-      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
+      {/* Flex row: lg:items-start — desktop only, keeps image+table heights independent */}
+      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 lg:items-start">
         {/* Left — product image, fixed width so table can't encroach */}
         <div className="flex-shrink-0 w-full lg:w-[420px] xl:w-[480px]">
           <div
@@ -90,7 +90,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
 
         {/* Right — dimensions table, fills remaining space */}
         <div className="flex-1 min-w-0">
-          <div className="border border-slate-200 border-t-2 border-t-[#001f4d] overflow-hidden h-full shadow-sm">
+          <div className="border border-slate-200 border-t-2 border-t-[#001f4d] overflow-x-auto overscroll-x-contain h-full shadow-sm">
             <Table>
               <TableHeader>
                 <TableRow className="bg-slate-100 hover:bg-slate-100 border-b border-slate-200">
