@@ -70,6 +70,192 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "choose-paper-slitter-knife-kraft-tissue-board",
+    tag: "TECHNICAL GUIDE",
+    date: "28.MAY.2026",
+    title:
+      "How to Choose the Right Paper Slitter Knife for Kraft, Tissue, and Board",
+    excerpt:
+      "Paper slitter knife selection depends on paper grade, basis weight, line speed, cutting method, and edge quality targets. This guide explains how to match knife material, geometry, and maintenance practice for stable converting performance.",
+    image: "/images/news/paper-slitter-knife-selection-hero.webp",
+    readTime: "7 MIN",
+    seoTitle:
+      "How to Choose the Right Paper Slitter Knife for Kraft, Tissue, and Board | Sureay",
+    metaDescription:
+      "Practical paper slitter knife selection guide for tissue, kraft, board, coated paper, and release liner lines. Compare HSS, D2, and carbide choices with setup and maintenance tips.",
+    keywords:
+      "paper slitter knife, paper slitter knives, paper converting blades, HSS paper slitter knives, carbide paper slitter blades, kraft paper slitting, tissue converting blades",
+    relatedProductIds: [
+      "rotary-slitter-knives-paper",
+      "paper-cutting-blades",
+      "tissue-log-saw-blades",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "In paper converting, the right [paper slitter knife](/products/rotary-slitter-knives-paper) is not simply the sharpest knife in the drawer. A blade that performs well on light tissue may wear too quickly on kraft board, while a highly wear-focused grade can increase dust on softer paper when setup is not optimized.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This guide explains how to choose paper slitter knives for tissue, kraft paper, board, coated paper, and release liner applications. It also covers common defects, material options, setup checks, and maintenance practices that help improve cut quality and blade life.",
+      },
+      {
+        type: "h2",
+        value: "Why Paper Grade Changes Knife Requirements",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Each paper grade behaves differently during slitting. Tissue is soft and easy to tear if edge stability drops. Kraft paper is stronger and often more abrasive, especially with higher recycled content. Board and corrugated grades require greater cutting force and can increase impact load on the edge.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Because of these differences, knife selection should be based on real production conditions rather than a generic blade specification. The correct choice for a high-speed tissue rewinder may not be the best option for a kraft paper line running heavier rolls.",
+      },
+      {
+        type: "h2",
+        value: "Key Selection Factors",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Selection Factor", "Why It Matters", "What to Check"],
+        tableRows: [
+          [
+            "Paper grade",
+            "Different grades create different cutting loads",
+            "Tissue, kraft, board, release liner, coated paper",
+          ],
+          [
+            "Basis weight",
+            "Heavier paper increases edge stress",
+            "GSM range and roll-to-roll variation",
+          ],
+          [
+            "Cutting method",
+            "Shear, score, and razor need different geometry",
+            "Machine type and knife arrangement",
+          ],
+          [
+            "Line speed",
+            "Higher speed amplifies runout and heat issues",
+            "Normal and peak speed",
+          ],
+          [
+            "Edge quality target",
+            "Some applications tolerate dust less than others",
+            "Dust, fiber pull, burr, coating lift",
+          ],
+          [
+            "OEM compatibility",
+            "Drop-in fit lowers setup risk",
+            "Diameter, bore, thickness, bevel, spacer setup",
+          ],
+        ],
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-slitter-knife-material-comparison.webp",
+      },
+      {
+        type: "h2",
+        value: "HSS vs D2 vs Carbide",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Knife Material", "Best Fit", "Strengths", "Watch Points"],
+        tableRows: [
+          [
+            "HSS",
+            "Tissue and general paper converting",
+            "Good toughness, clean edge, easier regrind",
+            "May wear faster on abrasive recycled paper",
+          ],
+          [
+            "D2 tool steel",
+            "Kraft paper, board, mixed grades",
+            "Higher wear resistance than standard steels",
+            "Needs proper heat treatment to avoid chipping",
+          ],
+          [
+            "Tungsten carbide",
+            "High-speed and abrasive applications",
+            "Excellent wear resistance and edge retention",
+            "Higher initial cost and stricter handling",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "For soft tissue and hygiene grades, HSS often provides a practical balance of edge quality and toughness. For kraft, coated board, and higher-abrasion recycled paper, D2 or carbide configurations can better stabilize long campaign performance.",
+      },
+      {
+        type: "h2",
+        value: "Common Defects from Mismatched Knife Selection",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-slitting-edge-quality-defects.webp",
+      },
+      {
+        type: "h3",
+        value: "Edge Dust",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Edge dust usually rises when the knife dulls early, the material grade lacks wear resistance, or cutting pressure is excessive. Recycled fibers and fillers can accelerate wear if blade grade is under-specified.",
+      },
+      {
+        type: "h3",
+        value: "Fiber Pull",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Fiber pull appears when the blade tears the sheet instead of producing a clean cut. This is common on tissue when edge sharpness, angle, or setup stability is insufficient.",
+      },
+      {
+        type: "h3",
+        value: "Uneven Slit Width",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Width variation can come from guiding or arbor issues, but blade manufacturing accuracy also matters. Tighter side runout and precision grinding help maintain stable slit width across the roll.",
+      },
+      {
+        type: "h2",
+        value: "Practical Maintenance to Extend Blade Life",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A good blade still requires good handling. Clean mounting surfaces, verify arbor condition, and keep knife sets organized. Small installation errors can create large quality losses at high line speed.",
+      },
+      {
+        type: "callout",
+        value:
+          "Checklist: Clean knife faces and spacers before installation, check runout and bearing condition, inspect edge condition before each campaign, and regrind before severe edge collapse.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If your line is facing repeated dust or edge inconsistency, compare options in the [slitter knives category](/categories/slitter-knives), review related [paper cutting blades](/products/paper-cutting-blades), and align blade specification with your [paper industry](/paper-industry) process conditions.",
+      },
+      {
+        type: "callout",
+        value:
+          "Need a recommendation for your current line? Send paper grade, basis weight, cutting method, speed, and current blade dimensions. Sureay engineers can suggest a practical material and geometry match.",
+      },
+    ],
+  },
+  {
     id: "log-saw-blade-chipping-causes-prevention",
     tag: "MAINTENANCE GUIDE",
     date: "20.MAY.2026",
