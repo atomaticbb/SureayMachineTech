@@ -157,9 +157,14 @@ const categoryPages: UrlEntry[] = BLADE_CATEGORIES.map(c => ({
   priority: "0.85",
 }));
 
+const latestNewsDate = ALL_DISPATCHES.reduce((latest, article) => {
+  const parsed = parseDate(article.date);
+  return parsed > latest ? parsed : latest;
+}, TODAY);
+
 const newsListPage: UrlEntry = {
   loc: `${BASE_URL}/news`,
-  lastmod: parseDate(ALL_DISPATCHES[0]?.date ?? ""),
+  lastmod: latestNewsDate,
   changefreq: "weekly",
   priority: "0.7",
 };

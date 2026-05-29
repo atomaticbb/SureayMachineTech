@@ -225,6 +225,7 @@ export const SECTOR_INDUSTRY_URL: Record<BladeSectorType, string> = {
   converting: "/converting-industry",
   metal: "/metal-industry",
   new_energy: "/new-energy-industry",
+  wood: "/wood-industry",
   other: "/custom",
 };
 
@@ -234,5 +235,6 @@ export const SECTOR_LABEL: Record<BladeSectorType, string> = {
   converting: "Film & Converting",
   metal: "Metal Processing",
   new_energy: "New Energy",
+  wood: "Wood & Forestry",
   other: "Custom",
 };
