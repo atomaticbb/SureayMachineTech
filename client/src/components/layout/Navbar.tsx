@@ -13,7 +13,7 @@
  * Data source: INDUSTRY_MENU_DATA from MegaMenu.tsx (SSOT).
  */
 
-import { useState, useEffect, useLayoutEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight, Upload } from "lucide-react";
@@ -102,97 +102,85 @@ function CloseIcon({ className }: { className?: string }) {
   );
 }
 
-// ── Products Category Menu — left category list, right flyout tracks hovered row
-function ProductsCategoryMenu({ onClose }: { onClose: () => void }) {
-  const [activeIdx, setActiveIdx] = useState<number | null>(null);
-  const [panelTop, setPanelTop] = useState(0);
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  // Set initial panel position after mount (sync, before first paint)
-  useLayoutEffect(() => {
-    const el = itemRefs.current[0];
-    if (el) setPanelTop(el.offsetTop);
-  }, []);
-
-  const activeCategory = activeIdx !== null ? BLADE_CATEGORIES[activeIdx] : null;
-  const categoryBlades = activeCategory
-    ? blades.filter(b => b.category === activeCategory.category)
-    : [];
+function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
+  const custom = BLADE_CATEGORIES.find(c => c.slug === "custom-profile")!;
+  const others = BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile");
+  const orderedCategories = [...others.slice(0, 3), custom, ...others.slice(3)];
 
   return (
-    // outer div is position:absolute → becomes offsetParent for the inner flyout
-    <div className="absolute top-full left-0 mt-1 z-50">
+    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
+        <div className="grid grid-cols-4 gap-x-4 gap-y-3">
+          {orderedCategories.map(category => {
+            const categoryHref =
+              category.slug === "custom-profile"
+                ? "/custom"
+                : `/categories/${category.slug}`;
+            const categoryBlades = blades.filter(
+              blade => blade.category === category.category
+            );
+            const visibleBlades = categoryBlades.slice(0, 3);
+            const cardImage = categoryBlades[0]?.image ?? category.heroImage;
 
-      {/* ── Left column: category list ────────────────────────────────── */}
-      <div className="w-[210px] bg-white border-t-2 border-[#001f4d] border border-slate-200 shadow-xl">
-        <div className="py-3">
-          <Link href="/products">
-            <div
-              onMouseEnter={() => setActiveIdx(null)}
-              onClick={onClose}
-              className="flex items-center py-2 px-4 border-l-2 border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366] transition-all duration-100 cursor-pointer"
-            >
-              <span className="text-[14px] font-medium flex-1">All Products</span>
-            </div>
-          </Link>
-          {BLADE_CATEGORIES.map((c, i) => {
-            const isActive = i === activeIdx;
             return (
-              <Link
-                key={c.slug}
-                href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}
-              >
-                <div
-                  ref={el => { itemRefs.current[i] = el; }}
-                  onMouseEnter={() => {
-                    setActiveIdx(i);
-                    const el = itemRefs.current[i];
-                    if (el) setPanelTop(el.offsetTop);
-                  }}
-                  onClick={onClose}
-                  className={`flex items-center py-2 px-4 border-l-2 transition-all duration-100 cursor-pointer group ${
-                    isActive
-                      ? "border-[#001f4d] bg-slate-50 text-[#003366]"
-                      : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366]"
-                  }`}
-                >
-                  <span className="text-[14px] font-medium flex-1">{c.shortName}</span>
-                  <ChevronRight className="w-3 h-3 opacity-40" strokeWidth={2} />
+              <div key={category.slug} className="min-w-0">
+                <Link href={categoryHref}>
+                  <div onClick={onClose} className="group cursor-pointer text-center">
+                    <div className="w-32 mx-auto aspect-[4/3] bg-slate-100 overflow-hidden">
+                      <img
+                        src={cardImage}
+                        alt={category.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <p className="mt-1 font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
+                      {category.shortName}
+                    </p>
+                  </div>
+                </Link>
+
+                <div className="mt-1">
+                  {category.slug === "custom-profile" ? (
+                    <Link href="/contact">
+                      <div
+                        onClick={onClose}
+                        className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
+                      >
+                        Upload CAD →
+                      </div>
+                    </Link>
+                  ) : (
+                    <>
+                      {visibleBlades.map(blade => (
+                        <Link key={blade.id} href={`/products/${blade.id}`}>
+                          <div
+                            onClick={onClose}
+                            className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
+                          >
+                            · {blade.name}
+                          </div>
+                        </Link>
+                      ))}
+                      {categoryBlades.length > 3 && (
+                        <Link href={categoryHref}>
+                          <div
+                            onClick={onClose}
+                            className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
+                          >
+                            View all →
+                          </div>
+                        </Link>
+                      )}
+                    </>
+                  )}
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>
       </div>
-
-      {/* ── Right flyout: anchored to the hovered row's offsetTop ─────── */}
-      <AnimatePresence mode="wait">
-        {activeIdx !== null && (
-          <motion.div
-            key={activeIdx}
-            initial={{ opacity: 0, x: -6 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.12, ease: "easeOut" }}
-            className="absolute bg-white border-t-2 border-[#001f4d] border border-slate-200 shadow-xl py-2 px-3"
-            style={{ top: panelTop, left: 210 }}
-          >
-            {categoryBlades.map(blade => (
-              <Link key={blade.id} href={`/products/${blade.id}`}>
-                <div
-                  onClick={onClose}
-                  className="py-1.5 group cursor-pointer"
-                >
-                  <span className="text-[14px] font-medium text-slate-500 group-hover:text-[#003366] transition-colors leading-tight whitespace-nowrap">
-                    {blade.name}
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-
     </div>
   );
 }
@@ -512,8 +500,7 @@ export default function Navbar() {
                 <span className={linkCls(isActive("/"))}>Home</span>
               </Link>
 
-              {/* Products — simple dropdown anchored to button */}
-              <div className="relative" onMouseEnter={openProducts} onMouseLeave={closeProducts}>
+              <div onMouseEnter={openProducts} onMouseLeave={closeProducts}>
                 <button
                   className={`${linkCls(isProductsRoute || productsOpen)} flex items-center gap-1`}
                   aria-haspopup="true"
@@ -530,18 +517,6 @@ export default function Navbar() {
                     strokeWidth={2.5}
                   />
                 </button>
-                <AnimatePresence>
-                  {productsOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -4 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -4 }}
-                      transition={{ duration: 0.15, ease: "easeOut" }}
-                    >
-                      <ProductsCategoryMenu onClose={() => setProductsOpen(false)} />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
               </div>
 
               {/* Industry — sector-grouped product mega menu */}
@@ -586,6 +561,21 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+
+        <AnimatePresence>
+          {productsOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.18, ease: "easeOut" }}
+              onMouseEnter={openProducts}
+              onMouseLeave={closeProducts}
+            >
+              <ProductsMegaMenu onClose={() => setProductsOpen(false)} />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* ── Industry Mega Menu ─────────────────────────────────────────── */}
         <AnimatePresence>
