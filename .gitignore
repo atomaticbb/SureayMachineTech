@@ -39,6 +39,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Translation script checkpoint files (W2 — scripts/translate-data.ts)
+scripts/.translation-cache/
+
 # Runtime data
 pids
 *.pid

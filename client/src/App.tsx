@@ -1,12 +1,20 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { HelmetProvider } from "react-helmet-async";
-import { Route, Switch, useLocation, Redirect } from "wouter";
+import {
+  Route,
+  Switch,
+  useLocation,
+  Redirect,
+  Router as WouterRouter,
+} from "wouter";
 import { lazy, Suspense, useEffect, useState } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
+import { LangProvider } from "./contexts/LangContext";
+import { parseLangFromPath } from "./lib/i18n";
 
 function lazyWithRetry<T extends React.ComponentType<any>>(
   importer: () => Promise<{ default: T }>,
@@ -239,19 +247,32 @@ function Router() {
 }
 
 // ── App root ───────────────────────────────────────────────────────────────────
+// Language detection runs once per page load (Puppeteer prerender treats each
+// route as a fresh page visit, so SSR-time and client-time detection both use
+// window.location.pathname). Admin routes intentionally stay un-prefixed; if
+// someone reaches /es/admin the wouter base strips /es and routes to /admin,
+// rendering the (English) admin UI.
 function App() {
+  const pathname =
+    typeof window !== "undefined" ? window.location.pathname : "/";
+  const { lang, base } = parseLangFromPath(pathname);
+
   return (
-    <HelmetProvider>
-      <ErrorBoundary>
-        <ThemeProvider defaultTheme="light">
-          <TooltipProvider>
-            <Toaster />
-            <Router />
-            <CookieConsent />
-          </TooltipProvider>
-        </ThemeProvider>
-      </ErrorBoundary>
-    </HelmetProvider>
+    <LangProvider lang={lang}>
+      <WouterRouter base={base}>
+        <HelmetProvider>
+          <ErrorBoundary>
+            <ThemeProvider defaultTheme="light">
+              <TooltipProvider>
+                <Toaster />
+                <Router />
+                <CookieConsent />
+              </TooltipProvider>
+            </ThemeProvider>
+          </ErrorBoundary>
+        </HelmetProvider>
+      </WouterRouter>
+    </LangProvider>
   );
 }
 

@@ -18,6 +18,7 @@ import { fileURLToPath } from "url";
 import { blades } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
+import { LANG_PREFIXES } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist/public");
@@ -30,8 +31,9 @@ const TIMEOUT_MS = 45_000; // per-route navigation + selector timeout
 const FAILED_ROUTES: string[] = [];
 
 // ── Route manifest ─────────────────────────────────────────────────────────────
+// Admin routes are intentionally excluded: they require auth and never need SEO.
 
-const ROUTES: string[] = [
+const CANONICAL_ROUTES: string[] = [
   "/",
   "/products",
   "/about",
@@ -51,6 +53,21 @@ const ROUTES: string[] = [
   // dynamic news detail pages — derived from static article data
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
 ];
+
+// Expand canonical English routes across all non-default languages.
+// LANG_PREFIXES is ["es", "fr", "ru", "vi"] for phase 1; Arabic added in phase 2.
+// Set PRERENDER_LANGS=en to skip the multi-lang expansion (fast dev iteration).
+const PRERENDER_LANGS_RAW = (process.env.PRERENDER_LANGS ?? "all").toLowerCase();
+const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
+
+const ROUTES: string[] = SHOULD_EXPAND_LANGS
+  ? [
+      ...CANONICAL_ROUTES,
+      ...LANG_PREFIXES.flatMap(lang =>
+        CANONICAL_ROUTES.map(r => (r === "/" ? `/${lang}` : `/${lang}${r}`))
+      ),
+    ]
+  : CANONICAL_ROUTES;
 
 // ── MIME types (no extra dependency) ──────────────────────────────────────────
 
