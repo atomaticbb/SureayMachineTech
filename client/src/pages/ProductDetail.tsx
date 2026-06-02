@@ -20,9 +20,8 @@ import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import { getSEO } from "@/utils/seo-config";
-
-import { getBladeById, getRelatedBlades } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBladeById, getRelatedBlades, getSEO } from "@/data/locales";
 
 // Zone sub-components
 import BladeHero from "@/components/product-detail/BladeHero";
@@ -39,9 +38,10 @@ import ProductFAQ from "@/components/product-detail/ProductFAQ";
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function ProductDetail() {
+  const lang = useLang();
   const [, params] = useRoute("/products/:id");
   const bladeId = params?.id || "";
-  const blade = getBladeById(bladeId);
+  const blade = getBladeById(bladeId, lang);
 
   // 404 — Blade not found
   if (!blade) {
@@ -69,8 +69,8 @@ export default function ProductDetail() {
     );
   }
 
-  const relatedBlades = getRelatedBlades(bladeId, 3);
-  const pageSeo = getSEO(bladeId);
+  const relatedBlades = getRelatedBlades(bladeId, lang, 3);
+  const pageSeo = getSEO(bladeId, lang);
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">

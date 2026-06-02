@@ -14,12 +14,13 @@ import ProductGrid from "@/components/product/ProductGrid";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
+import { useLang } from "@/contexts/LangContext";
 import {
   getCategoryBySlug,
   getBladesByCategory,
   getRepresentativeBlade,
   getOemMachinesForCategory,
-} from "@/data/blade-categories";
+} from "@/data/locales";
 
 function firstParagraph(text: string | undefined): string | null {
   if (!text) return null;
@@ -29,6 +30,7 @@ function firstParagraph(text: string | undefined): string | null {
 }
 
 export default function CategoryAggregation() {
+  const lang = useLang();
   const [, params] = useRoute("/categories/:slug");
   const slug = params?.slug ?? "";
 
@@ -36,15 +38,15 @@ export default function CategoryAggregation() {
     return <Redirect to="/custom" />;
   }
 
-  const meta = getCategoryBySlug(slug);
+  const meta = getCategoryBySlug(slug, lang);
 
   if (!meta) {
     return <Redirect to="/products" />;
   }
 
-  const variants = getBladesByCategory(meta.category);
-  const rep = getRepresentativeBlade(meta.category);
-  const oemMachines = getOemMachinesForCategory(meta.category);
+  const variants = getBladesByCategory(meta.category, lang);
+  const rep = getRepresentativeBlade(meta.category, lang);
+  const oemMachines = getOemMachinesForCategory(meta.category, lang);
   const overviewBody = firstParagraph(rep?.fullDescription);
 
   return (

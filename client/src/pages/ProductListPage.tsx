@@ -9,7 +9,9 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import { Link } from "wouter";
-import { blades, type BladeCategoryType } from "@/data/blades";
+import { type BladeCategoryType } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBlades } from "@/data/locales";
 import ProductGrid from "@/components/product/ProductGrid";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
@@ -53,6 +55,8 @@ const FACTORY_IMAGES = [
 ];
 
 export default function BladeListPage() {
+  const lang = useLang();
+  const blades = getBlades(lang);
   const [selectedCategory, setSelectedCategory] = useState<
     BladeCategoryType | "all"
   >("all");

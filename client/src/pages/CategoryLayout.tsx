@@ -21,14 +21,15 @@ import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
+import { type BladeCategoryMeta } from "@/data/blade-categories";
+import { type Blade, type BladeSpec } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
 import {
   getCategoryBySlug,
   getBladesByCategory,
   getRepresentativeBlade,
   getOemMachinesForCategory,
-  type BladeCategoryMeta,
-} from "@/data/blade-categories";
-import { type Blade, type BladeSpec } from "@/data/blades";
+} from "@/data/locales";
 
 // ── TypeScript interfaces ─────────────────────────────────────────────────────
 
@@ -568,17 +569,18 @@ function StickyRfqFooter({ categoryName }: { categoryName: string }) {
 // ── Page ──────────────────────────────────────────────────────────────────────
 
 export default function CategoryLayout() {
+  const lang = useLang();
   const [, params] = useRoute("/categories/:slug");
   const slug = params?.slug ?? "";
 
   if (slug === "custom-profile") return <Redirect to="/custom" />;
 
-  const meta = getCategoryBySlug(slug);
+  const meta = getCategoryBySlug(slug, lang);
   if (!meta) return <Redirect to="/products" />;
 
-  const variants         = getBladesByCategory(meta.category);
-  const rep              = getRepresentativeBlade(meta.category);
-  const oemCount         = getOemMachinesForCategory(meta.category).length;
+  const variants         = getBladesByCategory(meta.category, lang);
+  const rep              = getRepresentativeBlade(meta.category, lang);
+  const oemCount         = getOemMachinesForCategory(meta.category, lang).length;
   const industrialBlades = variants.map(toIndustrialBlade);
   const fitmentRows      = toFitmentRows(rep);
   const hrcRaw           = rep ? findSpec(rep.specs, ["hardness", "hrc"]) : "";

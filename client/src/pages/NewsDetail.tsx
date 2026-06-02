@@ -14,8 +14,9 @@ import {
   getAdjacentDispatches,
 } from "@/data/news";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
-import { getBladeById } from "@/data/blades";
 import type { Blade } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBladeById } from "@/data/locales";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -87,6 +88,7 @@ function parseCalloutLabel(value: string): { label: string; body: string } {
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function NewsDetail() {
+  const lang = useLang();
   const [, params] = useRoute<{ id: string }>("/news/:id");
   const id = params?.id ?? "";
 
@@ -95,7 +97,7 @@ export default function NewsDetail() {
   const author = getDispatchAuthor(id);
 
   const relatedBlades = (article?.relatedProductIds ?? [])
-    .map((pid) => getBladeById(pid))
+    .map((pid) => getBladeById(pid, lang))
     .filter((b): b is Blade => !!b);
 
   // ── 404 guard ──────────────────────────────────────────────────────────────
