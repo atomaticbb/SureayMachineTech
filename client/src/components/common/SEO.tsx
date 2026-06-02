@@ -1,9 +1,20 @@
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { useLang } from "@/contexts/LangContext";
+import {
+  SUPPORTED_LANGS,
+  DEFAULT_LANG,
+  localizedPath,
+  type Lang,
+} from "@/lib/i18n";
 
 const BRAND = "Sureay Blades";
 const BASE_URL = "https://sureay.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
+
+function dirForLang(lang: Lang): "ltr" | "rtl" {
+  return lang === "ar" ? "rtl" : "ltr";
+}
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -66,8 +77,25 @@ export default function SEO({
   breadcrumbs,
   extraJsonLd,
 }: SEOProps) {
+  const lang = useLang();
   const fullTitle = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
-  const canonicalHref = canonicalUrl ? abs(canonicalUrl) : undefined;
+
+  // Canonical for the CURRENT page (lang-localized). Callers pass the
+  // language-agnostic canonical (e.g. "/products/granulator-blades") and
+  // we prepend the active language prefix.
+  const canonicalHref = canonicalUrl
+    ? abs(localizedPath(canonicalUrl, lang))
+    : undefined;
+
+  // hreflang alternates — one link per supported language plus x-default.
+  // The x-default convention points to the un-prefixed English version.
+  const hreflangs = canonicalUrl
+    ? SUPPORTED_LANGS.map(altLang => ({
+        lang: altLang,
+        href: abs(localizedPath(canonicalUrl, altLang)),
+      }))
+    : [];
+
   const resolvedOgImage = productData
     ? abs(productData.image)
     : ogImage
@@ -88,7 +116,7 @@ export default function SEO({
         "@context": "https://schema.org",
         "@type": "Product",
         name: productData.name,
-        url: canonicalUrl ? abs(canonicalUrl) : undefined,
+        url: canonicalHref,
         image: allImages,
         description: productData.description,
         ...(productData.sku && { sku: productData.sku }),
@@ -141,7 +169,7 @@ export default function SEO({
           "@type": "ListItem",
           position: i + 1,
           name: item.name,
-          item: abs(item.url),
+          item: abs(localizedPath(item.url, lang)),
         })),
       }
     : null;
@@ -151,8 +179,22 @@ export default function SEO({
     document.title = fullTitle;
   }, [fullTitle]);
 
+  // og:locale is the BCP-47 format ("es" → "es_ES"). Keep the mapping local
+  // to this component; covers the 6 launch languages.
+  const ogLocale: Record<Lang, string> = {
+    en: "en_US",
+    es: "es_ES",
+    fr: "fr_FR",
+    ru: "ru_RU",
+    vi: "vi_VN",
+    ar: "ar_AE",
+  };
+
   return (
     <Helmet>
+      {/* Document-level — drives <html lang/dir> for screen readers and CSS */}
+      <html lang={lang} dir={dirForLang(lang)} />
+
       {/* Core */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
@@ -160,8 +202,21 @@ export default function SEO({
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
 
+      {/* hreflang alternates — one per supported language + x-default → English */}
+      {hreflangs.map(({ lang: alt, href }) => (
+        <link key={alt} rel="alternate" hrefLang={alt} href={href} />
+      ))}
+      {canonicalUrl && (
+        <link
+          rel="alternate"
+          hrefLang="x-default"
+          href={abs(localizedPath(canonicalUrl, DEFAULT_LANG))}
+        />
+      )}
+
       {/* Open Graph */}
       <meta property="og:type" content={productData ? "product" : "website"} />
+      <meta property="og:locale" content={ogLocale[lang]} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={BRAND} />
