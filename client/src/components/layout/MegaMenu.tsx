@@ -12,7 +12,9 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { blades, type BladeCategoryType } from "../../data/blades";
+import { type Blade, type BladeCategoryType } from "../../data/blades";
+import { getBlades } from "@/data/locales";
+import type { Lang } from "@/lib/i18n";
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 
@@ -61,7 +63,7 @@ const REF_CODE: Record<BladeCategoryType, string> = {
   custom_profile: "CST",
 };
 
-const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
+const bladeToItem = (b: Blade, seq: number): MegaItem => ({
   id: b.id,
   name: b.name,
   refCode: `${REF_CODE[b.category] ?? "BLD"}-${String(seq).padStart(3, "0")}`,
@@ -69,76 +71,19 @@ const bladeToItem = (b: (typeof blades)[number], seq: number): MegaItem => ({
   href: `/products/${b.id}`,
 });
 
-// ── PRODUCTS Data — grouped by blade-type family ───────────────────────────────
-
-export const PRODUCTS_MENU_DATA: MegaMenuData = {
-  columnLabel: "PRODUCT TYPES",
-  bottomLinkText: "→ VIEW ALL BLADES",
-  bottomLinkHref: "/products",
-  categories: [
-    {
-      id: "cutting",
-      title: "SLITTING & CONVERTING",
-      featured: {
-        coverImage: "/images/products/blades/11-2-2_circular-blade_01.webp",
-        tagline: "PRECISION GROUND · MIRROR FINISH",
-        subtitle: "ACTIVE CATEGORY",
-        title: "SLITTING & CONVERTING",
-        ctaText: "EXPLORE SLITTER KNIVES",
-        ctaHref: "/products",
-      },
-      items: blades
-        .filter(
-          b =>
-            b.category === "slitter_knives"
-        )
-        .map(bladeToItem),
-    },
-    {
-      id: "shredding",
-      title: "SHREDDING & GRANULATING",
-      featured: {
-        coverImage: "/images/products/blades/11-4-2_metal-shear-blade_01.webp",
-        tagline: "MAX IMPACT RESISTANCE",
-        subtitle: "ACTIVE CATEGORY",
-        title: "SHREDDING & GRANULATING",
-        ctaText: "EXPLORE SHREDDER BLADES",
-        ctaHref: "/products",
-      },
-      items: blades
-        .filter(
-          b =>
-            b.category === "shredder_blades" ||
-            b.category === "granulator_blades"
-        )
-        .map(bladeToItem),
-    },
-    {
-      id: "paper",
-      title: "SAW & SHEAR",
-      featured: {
-        coverImage: "/images/products/blades/tissue-log-saw-blades.webp",
-        tagline: "ZERO DUST. BURR-FREE.",
-        subtitle: "ACTIVE CATEGORY",
-        title: "SAW & SHEAR",
-        ctaText: "EXPLORE SAW & SHEAR BLADES",
-        ctaHref: "/products",
-      },
-      items: blades
-        .filter(
-          b =>
-            b.category === "log_saw_blades" ||
-            b.category === "shear_blades" ||
-            b.category === "cold_saw_blades"
-        )
-        .map(bladeToItem),
-    },
-  ],
-};
+// PRODUCTS_MENU_DATA removed in W3 Task 3.2 — it had no consumers and pulled
+// the entire blades catalog at module load. Re-introduce as a factory
+// (mirroring getIndustryMenuData below) when a UI needs it.
 
 // ── INDUSTRY Data — grouped by application sector ─────────────────────────────
+//
+// Factory function so the per-language blades list is wired in at render time.
+// English text in `featured` (title / tagline / ctaText) stays for now and
+// will move to en.json + t() in Task 3.3.
 
-export const INDUSTRY_MENU_DATA: MegaMenuData = {
+export function getIndustryMenuData(lang: Lang): MegaMenuData {
+  const blades = getBlades(lang);
+  return {
   columnLabel: "INDUSTRIES",
   bottomLinkText: "→ BROWSE ALL TOOLING",
   bottomLinkHref: "/products",
@@ -238,7 +183,8 @@ export const INDUSTRY_MENU_DATA: MegaMenuData = {
       items: blades.filter(b => b.sector === "other").map(bladeToItem),
     },
   ],
-};
+  };
+}
 
 // ── Component ──────────────────────────────────────────────────────────────────
 

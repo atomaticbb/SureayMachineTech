@@ -17,16 +17,11 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight, Upload } from "lucide-react";
-import { INDUSTRY_MENU_DATA } from "./MegaMenu";
-import { BLADE_CATEGORIES } from "../../data/blade-categories";
-import { blades } from "../../data/blades";
-
-// ── Static nav links ─────────────────────────────────────────────────────────
-const NAV_LINKS = [
-  { label: "News", path: "/news" },
-  { label: "About Us", path: "/about" },
-  { label: "Contact Us", path: "/contact" },
-];
+import { getIndustryMenuData } from "./MegaMenu";
+import { getBlades, getCategories } from "@/data/locales";
+import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 // ── Sharp icons ───────────────────────────────────────────────────────────────
 function HamburgerIcon({ className }: { className?: string }) {
@@ -103,8 +98,11 @@ function CloseIcon({ className }: { className?: string }) {
 }
 
 function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
-  const custom = BLADE_CATEGORIES.find(c => c.slug === "custom-profile")!;
-  const others = BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile");
+  const lang = useLang();
+  const categories = getCategories(lang);
+  const blades = getBlades(lang);
+  const custom = categories.find(c => c.slug === "custom-profile")!;
+  const others = categories.filter(c => c.slug !== "custom-profile");
   const orderedCategories = [...others.slice(0, 3), custom, ...others.slice(3)];
 
   return (
@@ -187,8 +185,9 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
 // ── Industry Mega Menu (sector-grouped product image grid) ──────────────────
 function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
+  const lang = useLang();
   const [activeIdx, setActiveIdx] = useState(0);
-  const categories = INDUSTRY_MENU_DATA.categories;
+  const categories = getIndustryMenuData(lang).categories;
   const active = categories[activeIdx];
 
   return (
@@ -362,8 +361,17 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
 
 // ── Navbar ────────────────────────────────────────────────────────────────────
 export default function Navbar() {
+  const { t, lang } = useTranslation();
+  const categories = getCategories(lang);
   const [location, navigate] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // News / About / Contact — computed per-render so locale changes are reflected.
+  const NAV_LINKS = [
+    { label: t("nav.news"), path: "/news" },
+    { label: t("nav.about"), path: "/about" },
+    { label: t("nav.contact"), path: "/contact" },
+  ];
   const [productsOpen, setProductsOpen] = useState(false);
   const [industryOpen, setIndustryOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
@@ -497,7 +505,7 @@ export default function Navbar() {
             {/* ── Desktop nav ────────────────────────────────────────────── */}
             <div className="hidden md:flex items-center gap-8">
               <Link href="/">
-                <span className={linkCls(isActive("/"))}>Home</span>
+                <span className={linkCls(isActive("/"))}>{t("nav.home")}</span>
               </Link>
 
               <div onMouseEnter={openProducts} onMouseLeave={closeProducts}>
@@ -511,7 +519,7 @@ export default function Navbar() {
                     navigate("/products");
                   }}
                 >
-                  Products
+                  {t("nav.products")}
                   <ChevronDown
                     className={`w-3 h-3 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
@@ -527,7 +535,7 @@ export default function Navbar() {
                   aria-expanded={industryOpen}
                   onClick={handleIndustryClick}
                 >
-                  Industry
+                  {t("nav.industry")}
                   <ChevronDown
                     className={`w-3 h-3 transition-transform duration-200 ${industryOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
@@ -543,11 +551,13 @@ export default function Navbar() {
                 </Link>
               ))}
 
+              <LanguageSwitcher variant="light" />
+
               <Link
                 href="/contact"
                 className="inline-block bg-[#003366] hover:bg-[#001f4d] text-white text-[12px] font-bold tracking-wide px-4 py-2 rounded-none transition-colors duration-200 shadow-sm"
               >
-                GET A QUOTE
+                {t("cta.getQuote")}
               </Link>
             </div>
 
@@ -631,11 +641,16 @@ export default function Navbar() {
 
             {/* ── Drawer Nav Body ───────────────────────────────────────── */}
             <div className="flex-1 overflow-y-auto px-6 py-4">
+              {/* Language switcher — tap-driven dropdown works on touch */}
+              <div className="py-3 border-b border-white/10 flex justify-end">
+                <LanguageSwitcher variant="dark" />
+              </div>
+
               {/* HOME */}
               <Link href="/">
                 <div className="py-5 border-b border-white/10 cursor-pointer group">
                   <span className="text-2xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
-                    Home
+                    {t("nav.home")}
                   </span>
                 </div>
               </Link>
@@ -673,7 +688,7 @@ export default function Navbar() {
                       className="overflow-hidden"
                     >
                       <div className="pb-5">
-                        {BLADE_CATEGORIES.map(c => (
+                        {categories.map(c => (
                           <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
                             <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-medium tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
                               {c.shortName}
@@ -724,7 +739,7 @@ export default function Navbar() {
                       className="overflow-hidden"
                     >
                       <div className="pb-5">
-                        {INDUSTRY_MENU_DATA.categories.map(cat => {
+                        {getIndustryMenuData(lang).categories.map(cat => {
                           const isCustom = cat.id === "custom-profile";
                           return (
                             <Link key={cat.id} href={cat.featured.ctaHref}>
@@ -768,7 +783,7 @@ export default function Navbar() {
             <div className="flex-shrink-0 px-6 py-6 border-t border-white/10">
               <Link href="/contact">
                 <div className="w-full bg-white text-[#001f4d] text-[13px] font-black tracking-[0.22em]  py-4 text-center cursor-pointer hover:bg-slate-100 transition-colors">
-                  GET A QUOTE
+                  {t("cta.getQuote")}
                 </div>
               </Link>
               <p className="mt-4 font-mono text-[10px] text-white/25  tracking-[0.2em] text-center">

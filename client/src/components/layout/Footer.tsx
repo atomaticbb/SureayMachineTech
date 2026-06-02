@@ -1,6 +1,8 @@
 import { Link } from "wouter";
+import { useTranslation } from "@/lib/useTranslation";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#0a1219] text-slate-400 pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -24,10 +26,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-[15px] leading-relaxed mb-8 max-w-sm text-slate-400">
-              Precision industrial blades for recycling, converting, paper,
-              metal and new energy — standard and custom-profile. Vacuum heat
-              treatment · CMM inspection · ISO&nbsp;9001:2015. Trusted by OEMs
-              in 50+ countries since 2008.
+              {t("footer.tagline")}
             </p>
 
             {/* Social */}
@@ -66,7 +65,7 @@ export default function Footer() {
           {/* ── Col 2: Products ──────────────────────────────────────── */}
           <div>
             <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              Products
+              {t("footer.products")}
             </h4>
             <ul className="space-y-4 text-[15px]">
               <li>
@@ -123,7 +122,7 @@ export default function Footer() {
                 href="/products"
                 className="text-[13px] font-black text-slate-300  tracking-widest hover:text-white transition-colors"
               >
-                View All Products
+                {t("cta.viewAllProducts")}
               </Link>
             </div>
           </div>
@@ -131,85 +130,58 @@ export default function Footer() {
           {/* ── Col 3: Industries + Company ──────────────────────────── */}
           <div>
             <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              Industries
+              {t("footer.industries")}
             </h4>
             <ul className="space-y-4 text-[15px] mb-8">
               <li>
-                <Link
-                  href="/plastic-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  Plastics Recycling
+                <Link href="/plastic-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.plastic")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/metal-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  Metal Processing
+                <Link href="/metal-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.metal")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/paper-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  Paper and Tissue
+                <Link href="/paper-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.paper")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/converting-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  Flexible Converting
+                <Link href="/converting-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.converting")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/new-energy-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  New Energy &amp; Battery
+                <Link href="/new-energy-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.newEnergy")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/wood-industry"
-                  className="hover:text-white transition-colors"
-                >
-                  Wood Processing
+                <Link href="/wood-industry" className="hover:text-white transition-colors">
+                  {t("footer.industry.wood")}
                 </Link>
               </li>
             </ul>
 
             <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
-              Company
+              {t("footer.company")}
             </h4>
             <ul className="space-y-4 text-[15px]">
               <li>
-                <Link
-                  href="/about"
-                  className="hover:text-white transition-colors"
-                >
-                  About Sureay
+                <Link href="/about" className="hover:text-white transition-colors">
+                  {t("footer.aboutSureay")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/news"
-                  className="hover:text-white transition-colors"
-                >
-                  News Center
+                <Link href="/news" className="hover:text-white transition-colors">
+                  {t("footer.newsCenter")}
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-white transition-colors"
-                >
-                  Contact Us
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
@@ -218,23 +190,23 @@ export default function Footer() {
           {/* ── Col 4: Get In Touch ───────────────────────────────────── */}
           <div>
             <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              Get In Touch
+              {t("footer.getInTouch")}
             </h4>
             <div className="space-y-6 text-[15px]">
               <div>
                 <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  Address
+                  {t("footer.address")}
                 </p>
                 <p className="leading-relaxed text-slate-400">
-                  Industrial Development Zone,
+                  {t("footer.addressLine1")}
                   <br />
-                  Ma'anshan, Anhui Province, China
+                  {t("footer.addressLine2")}
                 </p>
               </div>
 
               <div>
                 <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  WhatsApp / Phone
+                  {t("footer.whatsappPhone")}
                 </p>
                 <a
                   href="tel:+8618005550657"
@@ -243,13 +215,13 @@ export default function Footer() {
                   +86 180 0555 0657
                 </a>
                 <p className="text-[11px] text-slate-600 mt-1">
-                  Available 24/7
+                  {t("footer.available247")}
                 </p>
               </div>
 
               <div>
                 <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  Email
+                  {t("footer.email")}
                 </p>
                 <a
                   href="mailto:lynn@sureay.com"
@@ -263,7 +235,7 @@ export default function Footer() {
                 href="/contact"
                 className="inline-block px-6 py-3 bg-[#003366] hover:bg-[#003366] text-white text-xs font-black  tracking-widest transition-colors duration-200"
               >
-                Request a Quote
+                {t("cta.requestQuote")}
               </Link>
             </div>
           </div>
@@ -272,23 +244,23 @@ export default function Footer() {
         {/* ── Bottom bar ────────────────────────────────────────────── */}
         <div className="border-t border-slate-800 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] font-semibold  tracking-widest text-slate-600">
           <p>
-            © {new Date().getFullYear()} Sureay Machinery Technology Co., Ltd.
+            © {new Date().getFullYear()} {t("footer.copyrightCompany")}
           </p>
           <div className="flex items-center gap-6">
             <span className="hidden sm:inline text-slate-700">
-              ISO 9001:2015 · Est. 2008 · 50+ Countries
+              {t("footer.credentialsLine")}
             </span>
             <Link
               href="/about"
               className="hover:text-slate-400 transition-colors"
             >
-              About
+              {t("nav.about")}
             </Link>
             <Link
               href="/contact"
               className="hover:text-slate-400 transition-colors"
             >
-              Contact
+              {t("nav.contact")}
             </Link>
           </div>
         </div>

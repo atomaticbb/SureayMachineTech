@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import type { ContactSubmissionResponse } from "@shared/types";
+import { useTranslation } from "@/lib/useTranslation";
 
 const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.webp,.gif";
 const MAX_FILE_MB = 15;
@@ -13,6 +14,7 @@ function fmtSize(bytes: number) {
 export default function ContactRFQ({
   productName,
 }: { productName?: string } = {}) {
+  const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -108,10 +110,10 @@ export default function ContactRFQ({
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-10 lg:mb-14">
           <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-            Reach Our Team
+            {t("contact.section.eyebrow")}
           </p>
           <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#003366]   tracking-tight leading-[1.05]">
-            Get in Touch with Our Engineers
+            {t("contact.section.title")}
           </h2>
           <div className="w-16 h-[3px] bg-slate-300 mt-5" />
         </div>
@@ -121,10 +123,10 @@ export default function ContactRFQ({
           <div className="flex flex-col gap-6 py-10">
             <div>
               <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
-                Contact Our Team
+                {t("contact.channels.title")}
               </h3>
               <p className="text-sm text-slate-600">
-                Discuss your requirements directly with our engineers.
+                {t("contact.channels.subtitle")}
               </p>
             </div>
 
@@ -149,7 +151,7 @@ export default function ContactRFQ({
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
-                      Email Us
+                      {t("contact.channels.emailUs")}
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors truncate">
                       lynn@sureay.com
@@ -157,7 +159,7 @@ export default function ContactRFQ({
                     <div className="mt-1.5 inline-flex items-center gap-1.5 bg-[#003366]/8 border border-[#003366]/20 px-2 py-0.5">
                       <span className="block w-1.5 h-1.5 rounded-full bg-[#003366]" />
                       <span className="text-[10px] font-black text-[#003366]  tracking-widest">
-                        Engineer Response within 2 Hours
+                        {t("contact.channels.engineerResponse")}
                       </span>
                     </div>
                   </div>
@@ -186,7 +188,7 @@ export default function ContactRFQ({
                   </div>
                   <div className="flex-1">
                     <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
-                      Call Us
+                      {t("contact.channels.callUs")}
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
                       +86 180 0555 0657
@@ -217,21 +219,21 @@ export default function ContactRFQ({
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[10px] text-slate-400 font-bold  tracking-widest">
-                        WhatsApp
+                        {t("contact.channels.whatsapp")}
                       </span>
                       <span className="relative flex items-center">
                         <span className="absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75 animate-ping" />
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
                       </span>
                       <span className="text-[10px] text-slate-500 font-semibold">
-                        Online
+                        {t("common.online")}
                       </span>
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
-                      Chat with Engineer
+                      {t("contact.channels.chatEngineer")}
                     </div>
                     <div className="text-[10px] text-slate-500 font-semibold mt-0.5  tracking-widest">
-                      Direct Technical Support
+                      {t("contact.channels.directSupport")}
                     </div>
                   </div>
                 </div>
@@ -242,10 +244,10 @@ export default function ContactRFQ({
           {/* Right: Quote form */}
           <div className="bg-white border border-slate-200 shadow-sm rounded-none p-8 flex flex-col">
             <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
-              Request a Quote
+              {t("contact.form.title")}
             </h3>
             <p className="text-sm text-slate-600 mb-6">
-              Our engineering team responds within 24 hours.
+              {t("contact.form.subtitle")}
             </p>
 
             {submitted ? (
@@ -268,19 +270,21 @@ export default function ContactRFQ({
                 </div>
                 <div>
                   <p className="font-black text-[11px] text-[#003366]  tracking-[0.25em] mb-2">
-                    {emailNoticeOnly ? "Inquiry Saved" : "RFQ Received"}
+                    {emailNoticeOnly
+                      ? t("contact.form.savedOnly.eyebrow")
+                      : t("contact.form.success.eyebrow")}
                   </p>
                   <p className="font-black text-2xl text-[#001f4d]  tracking-tight leading-tight mb-3">
-                    {emailNoticeOnly ? "Request Logged." : "Thank You."}
+                    {emailNoticeOnly
+                      ? t("contact.form.savedOnly.title")
+                      : t("contact.form.success.title")}
                   </p>
                   <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
-                    {submitNotice ||
-                      "Our engineering team will review your requirements and respond within 24 hours."}
+                    {submitNotice || t("contact.form.success.body")}
                   </p>
                   {emailNoticeOnly && (
                     <p className="text-xs text-[#003366] leading-relaxed max-w-xs mx-auto mt-3 font-semibold">
-                      For urgent requests, email lynn@sureay.com or use WhatsApp
-                      for immediate follow-up.
+                      {t("contact.form.savedOnly.urgent")}
                     </p>
                   )}
                 </div>
@@ -299,7 +303,7 @@ export default function ContactRFQ({
                 {productName && (
                   <div className="flex items-center gap-3 px-4 py-2.5 border border-[#001f4d]/20 bg-[#001f4d]/5">
                     <span className="font-mono text-[9px] text-[#001f4d]  tracking-widest font-black flex-shrink-0">
-                      Product
+                      {t("contact.form.productLabel")}
                     </span>
                     <span className="font-bold text-sm text-[#001f4d] truncate">
                       {productName}
@@ -309,12 +313,12 @@ export default function ContactRFQ({
 
                 <div>
                   <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
-                    Business Email *
+                    {t("contact.form.emailLabel")} *
                   </label>
                   <input
                     type="email"
                     name="email"
-                    placeholder="you@company.com"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     className="w-full px-3 py-3 min-h-[48px] border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all"
                     required
                   />
@@ -322,12 +326,12 @@ export default function ContactRFQ({
 
                 <div className="flex-1">
                   <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
-                    What do you need? *
+                    {t("contact.form.messageLabel")} *
                   </label>
                   <textarea
                     rows={4}
                     name="message"
-                    placeholder="E.g., OEM replacement blades for Vecoplan VA 2000, D2 steel, qty 20, delivery to Germany..."
+                    placeholder={t("contact.form.messagePlaceholder")}
                     className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
                     required
                   />
@@ -336,9 +340,9 @@ export default function ContactRFQ({
                 {/* ── CAD / Technical Drawing Upload ────────────────── */}
                 <div>
                   <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
-                    CAD / Drawing{" "}
+                    {t("contact.form.cadLabel")}{" "}
                     <span className="text-slate-400 normal-case tracking-normal font-normal">
-                      (optional · max {MAX_FILE_MB} MB)
+                      ({t("common.optional")} · max {MAX_FILE_MB} MB)
                     </span>
                   </label>
 
@@ -383,9 +387,9 @@ export default function ContactRFQ({
                         type="button"
                         onClick={() => setAttachment(null)}
                         className="flex-shrink-0 text-[10px] font-bold text-slate-400 hover:text-red-600  tracking-widest transition-colors"
-                        aria-label="Remove attachment"
+                        aria-label={t("common.remove")}
                       >
-                        Remove
+                        {t("common.remove")}
                       </button>
                     </div>
                   ) : (
@@ -424,11 +428,10 @@ export default function ContactRFQ({
                       </svg>
                       <div>
                         <p className="text-xs font-bold text-slate-600  tracking-wide">
-                          Upload CAD / Technical Drawing
+                          {t("contact.form.cadDropZoneTitle")}
                         </p>
                         <p className="text-[10px] text-slate-400 mt-0.5">
-                          .DXF · .DWG · .PDF · .STEP · .STP · .JPG · .PNG · .WEBP — click or drag
-                          &amp; drop
+                          {t("contact.form.cadDropZoneHint")}
                         </p>
                       </div>
                     </div>
@@ -446,10 +449,10 @@ export default function ContactRFQ({
                   disabled={loading}
                   className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none shadow-md"
                 >
-                  {loading ? "Sending…" : "Get a Quote →"}
+                  {loading ? t("common.sending") : t("contact.form.submitButton")}
                 </button>
                 <p className="text-xs text-slate-400 text-center">
-                  No spam — we only use your email to respond to this inquiry.
+                  {t("contact.form.privacyNote")}
                 </p>
               </form>
             )}
