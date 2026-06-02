@@ -1,11 +1,13 @@
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { SORTED_DISPATCHES } from "@/data/news";
+import { useTranslation } from "@/lib/useTranslation";
 
 // Latest 3 articles — single source of truth shared with /news page
 const LATEST = SORTED_DISPATCHES.slice(0, 3);
 
 export default function NewsGrid() {
+  const { t } = useTranslation();
   return (
     <section className="bg-white border-t border-slate-200 py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -13,16 +15,16 @@ export default function NewsGrid() {
         <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-              Knowledge Hub
+              {t("home.news.eyebrow")}
             </p>
             <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05]">
-              News &amp; Articles
+              {t("home.news.headline")}
             </h2>
             <div className="w-14 h-[3px] bg-slate-300 mt-6" />
           </div>
           <Link href="/news">
             <span className="inline-flex items-center gap-2 text-xs font-black  tracking-widest text-[#003366] hover:text-[#001f4d] transition-colors border-b-2 border-[#003366] hover:border-[#001f4d] pb-0.5">
-              View All Articles
+              {t("home.news.viewAll")}
               <ArrowRight className="w-3.5 h-3.5" />
             </span>
           </Link>
@@ -64,7 +66,7 @@ export default function NewsGrid() {
                   {/* Footer */}
                   <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-100">
                     <span className="font-mono text-[9px] text-slate-400 tracking-widest ">
-                      READ TIME: {article.readTime}
+                      {t("home.news.readTime")}: {article.readTime}
                     </span>
                     <span className="font-black text-[#001f4d] text-lg leading-none group-hover:translate-x-1 transition-transform">
                       →

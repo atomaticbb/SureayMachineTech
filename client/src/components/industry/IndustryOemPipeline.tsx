@@ -7,31 +7,39 @@
 import { motion } from "framer-motion";
 import { FileUp, Ruler, Cog, PackageCheck, type LucideIcon } from "lucide-react";
 import { MONO } from "./types";
+import { useTranslation } from "@/lib/useTranslation";
 
-const STEPS: { step: string; icon: LucideIcon; title: string; desc: string }[] = [
+interface Step {
+  step: string;
+  icon: LucideIcon;
+  titleKey: string;
+  descKey: string;
+}
+
+const STEPS: Step[] = [
   {
     step: "01",
     icon: FileUp,
-    title: "Send Drawing Or Sample",
-    desc: "Send your drawing, used sample, machine model, or key dimensions. We review the application, blade geometry, material being cut, and any known fit or wear issues from your current supplier.",
+    titleKey: "industry.oemPipeline.step1.title",
+    descKey: "industry.oemPipeline.step1.desc",
   },
   {
     step: "02",
     icon: Ruler,
-    title: "Engineering Review",
-    desc: "Our engineers confirm steel grade, heat treatment direction, tolerance target, edge profile, and all OEM-fit details. Any open questions are resolved before quotation or production approval is issued.",
+    titleKey: "industry.oemPipeline.step2.title",
+    descKey: "industry.oemPipeline.step2.desc",
   },
   {
     step: "03",
     icon: Cog,
-    title: "Machining And Hardening",
-    desc: "The blade moves into CNC machining, vacuum heat treatment, and precision grinding in a controlled sequence. Each stage is tracked against the approved specification to prevent distortion and geometry drift.",
+    titleKey: "industry.oemPipeline.step3.title",
+    descKey: "industry.oemPipeline.step3.desc",
   },
   {
     step: "04",
     icon: PackageCheck,
-    title: "Inspection And Shipment",
-    desc: "Final dimensions, hardness, and edge condition are verified against specification before dispatch. The order is packed and shipped with the required inspection records, and material certification documents.",
+    titleKey: "industry.oemPipeline.step4.title",
+    descKey: "industry.oemPipeline.step4.desc",
   },
 ];
 
@@ -49,6 +57,7 @@ const fadeUp = {
 };
 
 export default function IndustryOemPipeline() {
+  const { t } = useTranslation();
   return (
     <section className="bg-slate-100 py-16 lg:py-24">
 
@@ -59,24 +68,23 @@ export default function IndustryOemPipeline() {
             style={MONO}
             className="text-slate-400 text-[11px] font-bold tracking-[0.32em] uppercase mb-4"
           >
-            OEM Custom Manufacturing
+            {t("industry.oemPipeline.eyebrow")}
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <h2 className="font-black text-[#001f4d] text-2xl md:text-3xl lg:text-[36px] tracking-tight leading-[1.05] max-w-lg">
-              From Drawing To Delivery
+              {t("industry.oemPipeline.headline")}
             </h2>
             <a
               href="#contact"
               className="inline-flex items-center gap-3 bg-[#001f4d] text-white border border-[#001f4d] hover:bg-transparent hover:text-[#001f4d] px-6 py-3 text-[14px] font-black tracking-[0.2em] transition-colors duration-200 flex-shrink-0 self-start sm:self-auto"
             >
-              GET IN TOUCH
+              {t("industry.oemPipeline.cta")}
             </a>
           </div>
 
           <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-[500px] mt-5">
-            Four clear steps: you know what to send, what we confirm, and what
-            gets checked before shipment.
+            {t("industry.oemPipeline.subtitle")}
           </p>
         </div>
 
@@ -96,10 +104,10 @@ export default function IndustryOemPipeline() {
               <item.icon className="w-8 h-8 text-[#001f4d] mb-5" strokeWidth={1.75} />
 
               <h3 className="font-black text-[#001f4d] text-[16px] tracking-tight leading-[1.25] mb-3">
-                {item.title}
+                {t(item.titleKey)}
               </h3>
               <p className="text-slate-500 text-[15px] leading-relaxed">
-                {item.desc}
+                {t(item.descKey)}
               </p>
             </motion.div>
           ))}
@@ -118,10 +126,10 @@ export default function IndustryOemPipeline() {
               <item.icon className="w-8 h-8 text-[#001f4d] mb-4" strokeWidth={1.75} />
 
               <h3 className="font-black text-[#001f4d] text-[16px] tracking-tight leading-[1.25] mb-2">
-                {item.title}
+                {t(item.titleKey)}
               </h3>
               <p className="text-slate-500 text-[15px] leading-relaxed pr-10">
-                {item.desc}
+                {t(item.descKey)}
               </p>
             </div>
           ))}

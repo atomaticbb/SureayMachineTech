@@ -4,103 +4,86 @@
  */
 
 import { motion } from "framer-motion";
-import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import { useTranslation } from "@/lib/useTranslation";
 
-// ── Data ─────────────────────────────────────────────────────────────────────
+// ── Data — only language-invariant fields (year, image src, code values)
+//          stay inline. Display strings are referenced via i18n keys.
 
 const EPOCHS = [
-  { year: "2008", title: "First Blade Shipped",    desc: "Founded in Ma'anshan, Anhui. 500 m² workshop, 12 founding engineers, first industrial blade delivered." },
-  { year: "2012", title: "5,000 M² CNC Grid",      desc: "Vacuum heat treatment furnaces and CNC grinding lines commissioned. Southeast Asia export initiated." },
-  { year: "2016", title: "ISO 9001 Certified",     desc: "ISO 9001:2015 certification achieved. OEM partnerships established with European machine builders." },
-  { year: "2020", title: "15,000 M² Factory",      desc: "Relocated to modern facility. 20+ multi-axis CNC centers, metallurgical lab, and CMM inspection stations." },
-  { year: "2024", title: "50+ Countries",          desc: "10,000+ blade design variants active. Serving tissue, plastics, and metal processing sectors worldwide." },
+  { year: "2008", titleKey: "about.epoch.y2008.title", descKey: "about.epoch.y2008.desc" },
+  { year: "2012", titleKey: "about.epoch.y2012.title", descKey: "about.epoch.y2012.desc" },
+  { year: "2016", titleKey: "about.epoch.y2016.title", descKey: "about.epoch.y2016.desc" },
+  { year: "2020", titleKey: "about.epoch.y2020.title", descKey: "about.epoch.y2020.desc" },
+  { year: "2024", titleKey: "about.epoch.y2024.title", descKey: "about.epoch.y2024.desc" },
 ];
 
 const CAPABILITIES = [
-  {
-    num: "01",
-    title: "CNC Precision Grinding",
-    desc: "5-axis surface and cylindrical grinders. Tolerances to ±0.001 mm with submicron positional feedback.",
-  },
-  {
-    num: "02",
-    title: "CNC Machining & Wire EDM",
-    desc: "Multi-axis milling centers and Wire EDM for complex profiles, bores, and keyways. ±0.003 mm typical.",
-  },
-  {
-    num: "03",
-    title: "Vacuum Heat Treatment",
-    desc: "1,300 °C vacuum furnaces with deep cryogenic treatment at −196 °C for distortion-free hardening.",
-  },
+  { num: "01", titleKey: "about.cap.cnc.title", descKey: "about.cap.cnc.desc" },
+  { num: "02", titleKey: "about.cap.edm.title", descKey: "about.cap.edm.desc" },
+  { num: "03", titleKey: "about.cap.heat.title", descKey: "about.cap.heat.desc" },
 ];
 
 const PROCESS_IMAGES = [
-  {
-    src: "/images/about/grinding-workshop.webp",
-    alt: "Precision grinding workshop — CNC grinding machines in rows",
-    label: "Precision Grinding",
-  },
-  {
-    src: "/images/about/cnc-machining-center.webp",
-    alt: "CNC machining center — blade workpieces on machine table",
-    label: "CNC Machining",
-  },
-  {
-    src: "/images/common/Quality-Inspection.webp",
-    alt: "CMM dimensional inspection — quality control station",
-    label: "CMM Inspection",
-  },
+  { src: "/images/about/grinding-workshop.webp", altKey: "about.process.grinding.alt", labelKey: "about.process.grinding.label" },
+  { src: "/images/about/cnc-machining-center.webp", altKey: "about.process.cnc.alt", labelKey: "about.process.cnc.label" },
+  { src: "/images/common/Quality-Inspection.webp", altKey: "about.process.cmm.alt", labelKey: "about.process.cmm.label" },
 ];
 
 const PRECISION_STATS = [
-  { value: "±0.001 mm", label: "Thickness tolerance", sub: "Metal foil slitter knives" },
-  { value: "±0.002 mm", label: "Thickness tolerance", sub: "Film & tape slitter knives" },
-  { value: "Ra ≤ 0.02 µm", label: "Surface finish",    sub: "Metal foil precision knives" },
-  { value: "100%",       label: "HRC hardness tested", sub: "Every blade before dispatch" },
+  { value: "±0.001 mm", labelKey: "about.precision.thicknessLabel", subKey: "about.precision.s1.sub" },
+  { value: "±0.002 mm", labelKey: "about.precision.thicknessLabel", subKey: "about.precision.s2.sub" },
+  { value: "Ra ≤ 0.02 µm", labelKey: "about.precision.s3.label", subKey: "about.precision.s3.sub" },
+  { value: "100%", labelKey: "about.precision.s4.label", subKey: "about.precision.s4.sub" },
 ];
 
+// Material grades/HRC stay verbatim — codes don't translate. Use case translates.
 const MATERIALS = [
-  { grade: "D2 / SKD11",          hrc: "58–62 HRC",  use: "Granulators, slitters, shredder blades" },
-  { grade: "DC53",                 hrc: "60–62 HRC",  use: "High-wear granulator / shredder" },
-  { grade: "H13 / 4Cr5MoSiV1",   hrc: "48–54 HRC",  use: "Metal shredder blades, impact-heavy" },
-  { grade: "M2 HSS",               hrc: "62–65 HRC",  use: "Circular slitters, paper knives" },
-  { grade: "M35 Cobalt HSS",       hrc: "63–66 HRC",  use: "Cold saw blades, stainless cutting" },
-  { grade: "ASP23 / ASP52",        hrc: "64–67 HRC",  use: "Metal foil slitters, precision knives" },
-  { grade: "S7 Shock Steel",       hrc: "54–58 HRC",  use: "Scrap chopper blades" },
-  { grade: "WC-Co Carbide K05–K20", hrc: "HRA 88–91", use: "Battery slitters, electrode foil" },
+  { grade: "D2 / SKD11",            hrc: "58–62 HRC", useKey: "about.material.d2.use" },
+  { grade: "DC53",                  hrc: "60–62 HRC", useKey: "about.material.dc53.use" },
+  { grade: "H13 / 4Cr5MoSiV1",      hrc: "48–54 HRC", useKey: "about.material.h13.use" },
+  { grade: "M2 HSS",                hrc: "62–65 HRC", useKey: "about.material.m2.use" },
+  { grade: "M35 Cobalt HSS",        hrc: "63–66 HRC", useKey: "about.material.m35.use" },
+  { grade: "ASP23 / ASP52",         hrc: "64–67 HRC", useKey: "about.material.asp.use" },
+  { grade: "S7 Shock Steel",        hrc: "54–58 HRC", useKey: "about.material.s7.use" },
+  { grade: "WC-Co Carbide K05–K20", hrc: "HRA 88–91", useKey: "about.material.wc.use" },
 ];
 
 const CERTIFICATIONS = [
-  { label: "ISO 9001:2015", sub: "Quality Management" },
-  { label: "CE Certified",  sub: "European Conformity" },
-  { label: "SGS Audited",   sub: "Third-Party Verified" },
-  { label: "RoHS Compliant",sub: "Hazardous Materials" },
-  { label: "Global Logistics", sub: "Door-to-Door" },
-  { label: "CMM Verified",  sub: "Dimensional Report" },
+  { labelKey: "about.cert.iso.label", subKey: "about.cert.iso.sub" },
+  { labelKey: "about.cert.ce.label", subKey: "about.cert.ce.sub" },
+  { labelKey: "about.cert.sgs.label", subKey: "about.cert.sgs.sub" },
+  { labelKey: "about.cert.rohs.label", subKey: "about.cert.rohs.sub" },
+  { labelKey: "about.cert.logistics.label", subKey: "about.cert.logistics.sub" },
+  { labelKey: "about.cert.cmm.label", subKey: "about.cert.cmm.sub" },
+];
+
+const HERO_NAV_ANCHORS = [
+  { labelKey: "about.story.headline", href: "#story" },
+  { labelKey: "about.mfg.headline", href: "#manufacturing" },
+  { labelKey: "about.heroNav.precision", href: "#precision" },
+  { labelKey: "about.cert.headline", href: "#certifications" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="About Sureay Blades — 15+ Years of Blade Engineering"
-        description="ISO 9001:2015 certified OEM blade manufacturer since 2008. 15,000 m² facility, 5-axis CNC grinding, vacuum heat treatment, CMM inspection. Serving 50+ countries."
+        title={t("about.seo.title")}
+        description={t("about.seo.description")}
         canonicalUrl="/about"
       />
       <Navbar />
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          1. HERO — edge-to-edge split
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 1. HERO */}
       <section className="pt-[74px]">
         <div className="flex flex-col lg:flex-row h-[calc(100vh-74px)]">
-          {/* Left — Text */}
           <motion.div
             className="flex flex-col px-8 sm:px-14 lg:px-20 py-14 lg:py-20 bg-white lg:w-[44%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200"
             initial={{ opacity: 0, y: 24 }}
@@ -109,46 +92,33 @@ export default function About() {
           >
             <div className="flex-1 flex flex-col justify-center max-w-sm">
               <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
-                About Sureay Blades
+                {t("about.hero.eyebrow")}
               </p>
               <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight  mb-7">
-                Engineering
-                <br />
-                Blade
-                <br />
-                Excellence
+                {t("about.hero.headline")}
               </h1>
               <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
               <p className="text-slate-500 text-[16px] leading-relaxed mb-10">
-                Sureay specializes in high-performance industrial blades and
-                precision machine knives, engineered for demanding production
-                environments since 2008. ISO 9001:2015 certified. 15,000 m²
-                facility in Ma'anshan, China.
+                {t("about.hero.body")}
               </p>
               <div className="flex flex-wrap gap-2">
-                {[
-                  { label: "Our Story",      href: "#story" },
-                  { label: "Manufacturing",  href: "#manufacturing" },
-                  { label: "Precision",      href: "#precision" },
-                  { label: "Certifications", href: "#certifications" },
-                ].map(a => (
+                {HERO_NAV_ANCHORS.map(a => (
                   <a
                     key={a.href}
                     href={a.href}
                     className="text-[11px] font-semibold tracking-[0.14em]  border border-slate-200 px-3 py-1.5 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
                   >
-                    {a.label}
+                    {t(a.labelKey)}
                   </a>
                 ))}
               </div>
             </div>
           </motion.div>
 
-          {/* Right — Factory photo */}
           <div className="relative flex-1 overflow-hidden min-h-[340px] lg:min-h-0">
             <img
               src="/images/about/factory-image-02.webp"
-              alt="Sureay CNC workshop — machining centers with blade workpieces"
+              alt={t("about.hero.imageAlt")}
               className="absolute inset-0 w-full h-full object-cover"
               width={1272}
               height={702}
@@ -156,26 +126,24 @@ export default function About() {
             />
             <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
               <p className="text-[11px] font-semibold tracking-[0.22em]  text-white/70">
-                Ma'anshan, Anhui Province, China · 15,000 m² · Est. 2008
+                {t("about.hero.imageCaption")}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          2. FACTORY VIDEO
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 2. FACTORY VIDEO */}
       <section className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
           <p className="text-[11px] font-semibold tracking-[0.28em] text-slate-400 mb-5">
-            Factory Tour
+            {t("about.video.eyebrow")}
           </p>
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
               className="absolute inset-0 w-full h-full"
               src="https://www.youtube.com/embed/UfjqDYlewko"
-              title="Sureay Machinery Technology — Factory Tour"
+              title={t("about.video.title")}
               allow="autoplay; encrypted-media"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
@@ -184,30 +152,25 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          3. OUR STORY — dark bg, vertical timeline + image
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 3. OUR STORY */}
       <section id="story" className="bg-white py-24 lg:py-28 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
             <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              Company History
+              {t("about.story.eyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
-              Our Story
+              {t("about.story.headline")}
             </h2>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
-            {/* Left — vertical timeline */}
             <div className="flex-1 relative">
-              {/* Vertical connecting line */}
               <div className="absolute left-[9px] top-3 bottom-3 w-px bg-slate-200 hidden sm:block" />
 
               <div className="flex flex-col gap-0">
                 {EPOCHS.map((epoch, i) => (
                   <div key={i} className="flex gap-6 pb-10 last:pb-0">
-                    {/* Node */}
                     <div className="flex-shrink-0 relative z-10 mt-1">
                       <div
                         className={`w-5 h-5 border-2 flex items-center justify-center ${
@@ -223,16 +186,15 @@ export default function About() {
                         />
                       </div>
                     </div>
-                    {/* Content */}
                     <div>
                       <p className="text-[11px] font-black tracking-[0.2em] text-slate-400 mb-1.5">
                         {epoch.year}
                       </p>
                       <p className="text-[14px] font-black  tracking-tight text-[#001f4d] leading-snug mb-2">
-                        {epoch.title}
+                        {t(epoch.titleKey)}
                       </p>
                       <p className="text-[15px] text-slate-500 leading-relaxed max-w-xs">
-                        {epoch.desc}
+                        {t(epoch.descKey)}
                       </p>
                     </div>
                   </div>
@@ -240,13 +202,12 @@ export default function About() {
               </div>
             </div>
 
-            {/* Right — 4 stacked photos */}
             <div className="lg:w-[45%] flex-shrink-0">
               <div className="flex flex-col gap-2">
                 <div className="relative overflow-hidden h-[220px]">
                   <img
                     src="/images/about/factory-image-01.webp"
-                    alt="Sureay factory floor — Ma'anshan manufacturing facility"
+                    alt={t("about.story.image1Alt")}
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
                     decoding="async"
@@ -257,7 +218,7 @@ export default function About() {
                 <div className="relative overflow-hidden h-[220px]">
                   <img
                     src="/images/about/factory-00.webp"
-                    alt="Sureay CNC machining workshop — production floor overview"
+                    alt={t("about.story.image2Alt")}
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
                     decoding="async"
@@ -268,7 +229,7 @@ export default function About() {
                 <div className="relative overflow-hidden h-[220px]">
                   <img
                     src="/images/about/grinding-workshop.webp"
-                    alt="Sureay precision grinding workshop"
+                    alt={t("about.story.image3Alt")}
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
                     decoding="async"
@@ -279,7 +240,7 @@ export default function About() {
                 <div className="relative overflow-hidden h-[220px]">
                   <img
                     src="/images/about/cnc-machining-center.webp"
-                    alt="Sureay CNC machining center — blade workpieces on machine table"
+                    alt={t("about.story.image4Alt")}
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
                     decoding="async"
@@ -288,7 +249,7 @@ export default function About() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-6 py-4 border-t border-white/10">
                     <p className="text-[10px] font-semibold tracking-[0.2em]  text-white/60">
-                      2020 — 15,000 m² Facility · Ma'anshan, China
+                      {t("about.story.image4Caption")}
                     </p>
                   </div>
                 </div>
@@ -298,28 +259,23 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          4. MANUFACTURING
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 4. MANUFACTURING */}
       <section id="manufacturing" className="py-24 lg:py-28 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          {/* Header */}
           <div className="mb-14">
             <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              Facility
+              {t("about.mfg.eyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
-              Manufacturing
+              {t("about.mfg.headline")}
             </h2>
           </div>
 
-          {/* Main: large image + capabilities list */}
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 mb-12">
-            {/* Image */}
             <div className="lg:w-[55%] flex-shrink-0 relative overflow-hidden h-[340px] lg:h-[420px]">
               <img
                 src="/images/about/cnc-workshop.webp"
-                alt="Sureay CNC workshop — machining centers with blade workpieces"
+                alt={t("about.hero.imageAlt")}
                 className="w-full h-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -328,12 +284,9 @@ export default function About() {
               />
             </div>
 
-            {/* Capabilities */}
             <div className="flex-1 flex flex-col justify-center gap-8">
               <p className="text-[15px] text-slate-500 leading-relaxed">
-                15,000 m² production facility housing 20+ CNC grinding centers,
-                vacuum heat treatment furnaces, Wire EDM, and a dedicated
-                metallurgical lab for incoming material verification.
+                {t("about.mfg.body")}
               </p>
               <div className="flex flex-col gap-7">
                 {CAPABILITIES.map((cap) => (
@@ -343,10 +296,10 @@ export default function About() {
                     </span>
                     <div>
                       <p className="text-[15px] font-black  tracking-tight text-[#001f4d] mb-1">
-                        {cap.title}
+                        {t(cap.titleKey)}
                       </p>
                       <p className="text-[15px] text-slate-500 leading-relaxed">
-                        {cap.desc}
+                        {t(cap.descKey)}
                       </p>
                     </div>
                   </div>
@@ -355,13 +308,12 @@ export default function About() {
             </div>
           </div>
 
-          {/* 3 process images */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {PROCESS_IMAGES.map((img) => (
               <div key={img.src} className="relative overflow-hidden h-[200px] group">
                 <img
                   src={img.src}
-                  alt={img.alt}
+                  alt={t(img.altKey)}
                   className="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                   decoding="async"
@@ -370,7 +322,7 @@ export default function About() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/70 px-4 py-2.5">
                   <p className="text-[10px] font-black tracking-[0.2em]  text-white">
-                    {img.label}
+                    {t(img.labelKey)}
                   </p>
                 </div>
               </div>
@@ -379,22 +331,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          5. PRECISION STANDARDS
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 5. PRECISION STANDARDS */}
       <section id="precision" className="py-24 lg:py-28 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          {/* Header */}
           <div className="mb-14">
             <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              Dimensional Accuracy
+              {t("about.precision.eyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
-              Precision Standards
+              {t("about.precision.headline")}
             </h2>
           </div>
 
-          {/* Full-width 4-stat strip */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-200 mb-14">
             {PRECISION_STATS.map((s, i) => (
               <div key={i} className="bg-white px-8 py-8">
@@ -402,42 +350,39 @@ export default function About() {
                   {s.value}
                 </p>
                 <p className="text-[12px] font-semibold  tracking-[0.14em] text-slate-500 leading-snug mb-1">
-                  {s.label}
+                  {t(s.labelKey)}
                 </p>
                 <p className="text-[11px]  tracking-[0.12em] text-slate-400">
-                  {s.sub}
+                  {t(s.subKey)}
                 </p>
               </div>
             ))}
           </div>
 
-          {/* 2-col: image left + materials right */}
           <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-14">
-            {/* Image */}
             <div className="lg:w-[42%] flex-shrink-0">
               <div className="relative overflow-hidden h-[380px]">
                 <img
                   src="/images/common/material-selection.webp"
-                  alt="Tool steel library and material selection — Sureay blade manufacturing"
+                  alt={t("about.precision.imageAlt")}
                   className="w-full h-full object-cover"
                   loading="lazy"
                   decoding="async"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/80 px-5 py-3">
                   <p className="text-[10px] font-black tracking-[0.18em]  text-white/60 mb-0.5">
-                    Material Selection
+                    {t("about.precision.imageEyebrow")}
                   </p>
                   <p className="text-[16px] font-black text-white">
-                    Application-Matched Alloys
+                    {t("about.precision.imageTitle")}
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Materials table */}
             <div className="flex-1">
               <p className="text-[11px] font-black tracking-[0.22em]  text-slate-400 mb-5">
-                Steel Grades & Materials
+                {t("about.precision.tableEyebrow")}
               </p>
               <div className="border border-slate-200">
                 {MATERIALS.map((m, i) => (
@@ -449,7 +394,7 @@ export default function About() {
                       {m.hrc}
                     </span>
                     <span className="text-[13px] text-slate-500 hidden sm:block">
-                      {m.use}
+                      {t(m.useKey)}
                     </span>
                   </div>
                 ))}
@@ -459,17 +404,15 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          6. CERTIFICATIONS
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 6. CERTIFICATIONS */}
       <section id="certifications" className="py-28 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-12">
             <p className="text-[11px] font-semibold tracking-[0.25em]  text-slate-400 mb-3">
-              Compliance & Standards
+              {t("about.cert.eyebrow")}
             </p>
             <h2 className="text-3xl font-black text-[#001f4d]  tracking-tight">
-              Certifications
+              {t("about.cert.headline")}
             </h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
@@ -479,10 +422,10 @@ export default function About() {
                 className="border border-slate-200 bg-white px-4 py-10 flex flex-col items-center justify-center gap-2 hover:border-[#001f4d] hover:bg-[#001f4d] group transition-colors cursor-default"
               >
                 <span className="text-[11px] font-black  tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
-                  {cert.label}
+                  {t(cert.labelKey)}
                 </span>
                 <span className="text-[9px] font-medium  tracking-wider text-slate-400 group-hover:text-white/60 text-center transition-colors">
-                  {cert.sub}
+                  {t(cert.subKey)}
                 </span>
               </div>
             ))}
@@ -490,9 +433,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          7. OEM PROCESS
-      ═══════════════════════════════════════════════════════════════════ */}
+      {/* 7. OEM PROCESS */}
       <IndustryOemPipeline />
 
       <Footer />

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { STATS } from "@/data/homeData";
+import { useTranslation } from "@/lib/useTranslation";
 
 function CountUp({
   to,
@@ -57,9 +58,10 @@ function CountUp({
 }
 
 export default function HomeStatsStrip() {
+  const { t } = useTranslation();
   return (
     <section
-      aria-label="Company Statistics"
+      aria-label={t("home.stats.ariaLabel")}
       className="bg-slate-50 border-y border-slate-200"
     >
       <div className="max-w-7xl mx-auto">
@@ -107,7 +109,7 @@ export default function HomeStatsStrip() {
           })}
         </div>
         <p className="font-mono text-[9px] text-slate-400 tracking-widest  px-8 pb-3 text-right">
-          * Based on current internal production and export records
+          {t("home.stats.disclaimer")}
         </p>
       </div>
     </section>

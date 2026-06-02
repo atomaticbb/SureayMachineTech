@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FEATURED_PRODUCTS } from "@/data/homeData";
+import { useTranslation } from "@/lib/useTranslation";
 
 // Triple the products for seamless infinite scroll
 const LOOP_ITEMS = [
@@ -11,6 +12,7 @@ const LOOP_ITEMS = [
 ];
 
 export default function AuthorityCarousel() {
+  const { t } = useTranslation();
   const carouselRef = useRef<HTMLDivElement>(null);
   const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const normCooldownRef = useRef(false);
@@ -93,9 +95,9 @@ export default function AuthorityCarousel() {
         {/* Marquee statement — forced 2-line layout */}
         <div className="text-center mb-10">
           <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] mx-auto">
-            The definitive OEM source for precision blades
+            {t("home.authority.headlineLine1")}
             <br />
-            and cutting solutions.
+            {t("home.authority.headlineLine2")}
           </h2>
         </div>
 
@@ -104,7 +106,7 @@ export default function AuthorityCarousel() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => scrollCarousel("left")}
-              aria-label="Previous"
+              aria-label={t("common.previous")}
               className="flex-shrink-0 text-slate-600 hover:text-[#003366] transition-colors duration-200"
             >
               <ChevronLeft className="w-7 h-7" />
@@ -144,7 +146,7 @@ export default function AuthorityCarousel() {
 
             <button
               onClick={() => scrollCarousel("right")}
-              aria-label="Next"
+              aria-label={t("common.next")}
               className="flex-shrink-0 text-slate-600 hover:text-[#003366] transition-colors duration-200"
             >
               <ChevronRight className="w-7 h-7" />

@@ -5,8 +5,10 @@
 
 import FaqItem from "@/components/ui/FaqItem";
 import { FAQ_ITEMS } from "@/data/homeData";
+import { useTranslation } from "@/lib/useTranslation";
 
 export default function TechnicalFAQ() {
+  const { t } = useTranslation();
   return (
     <section className="bg-slate-50 border-t border-slate-200 py-14 lg:py-16">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -15,7 +17,7 @@ export default function TechnicalFAQ() {
           <div className="relative overflow-hidden border border-slate-200 h-[400px] lg:h-[440px] lg:sticky lg:top-20 self-start bg-slate-900">
             <img
               src="/images/common/rfq-qa.webp"
-              alt="CNC precision manufacturing — in-house vacuum heat treatment and 5-axis grinding"
+              alt={t("home.faq.imageAlt")}
               loading="lazy"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"
@@ -24,16 +26,14 @@ export default function TechnicalFAQ() {
 
             <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
               <p className="text-[11px] font-bold  tracking-[0.3em] text-white/60 mb-3">
-                RFQ Support
+                {t("home.faq.imageEyebrow")}
               </p>
               <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight leading-[1.05] mb-3">
-                Questions Teams Ask Before Sending A Blade Inquiry
+                {t("home.faq.imageHeadline")}
               </h3>
               <div className="w-10 h-[2px] bg-slate-400 mb-4" />
               <p className="text-sm text-white/75 leading-relaxed max-w-md">
-                Most RFQs start with the same practical questions: what
-                information to send, how material is selected, what tolerance
-                can be held, and how quickly a custom order can move.
+                {t("home.faq.imageBody")}
               </p>
             </div>
           </div>
@@ -42,16 +42,14 @@ export default function TechnicalFAQ() {
           <div className="bg-white border border-slate-200 rounded-none flex flex-col">
             <div className="px-6 lg:px-8 pt-6 lg:pt-7 pb-5 border-b border-slate-100">
               <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-                Common Questions
+                {t("home.faq.eyebrow")}
               </p>
               <h3 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05]">
-                RFQ Questions
+                {t("home.faq.headline")}
               </h3>
               <div className="w-14 h-[3px] bg-slate-300 mt-5 mb-4" />
               <p className="text-sm text-slate-500 leading-relaxed max-w-xl">
-                Straight answers to the questions that usually come up before a
-                drawing is sent, a tolerance is confirmed, or a custom quotation
-                is requested.
+                {t("home.faq.subtitle")}
               </p>
             </div>
 
