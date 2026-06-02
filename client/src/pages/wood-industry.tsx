@@ -14,7 +14,10 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades, getBladeAggregateOffer } from "@/data/blades";
+import { getBladeAggregateOffer } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBlades } from "@/data/locales";
+import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -23,146 +26,20 @@ import type {
   IndustryMaterial,
 } from "@/components/industry/types";
 
-// ─── Hero ─────────────────────────────────────────────────────────────────────
-const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Industries / Wood & Forestry",
-  h1: "Wood Chipper Knife Manufacturer — Forestry, Biomass & Landscape Grade",
-  h2: "Drum Chipper Blades, Disc Chipper Knives & Counter-Knives",
-  body1:
-    "Sureay manufactures through-hardened drum and disc chipper knives in D2, Cr12MoV, M2 HSS, " +
-    "and TCT carbide-tipped configurations for industrial forestry, biomass energy production, " +
-    "landscape tree service, and pallet/demolition wood recycling. OEM-compatible with Bandit, " +
-    "Vermeer, Morbark, Doppstadt, Jenz, Peterson, CBI, and Bruks Siwertell.",
-  body2:
-    "Vacuum heat treatment and deep cryogenic processing (−196°C) delivers uniform HRC 55–62 " +
-    "from surface to core — every regrind cycle delivers identical edge performance. Reversible " +
-    "double-edge blades for landscape operations, and heavy-duty single-edge industrial blades for " +
-    "biomass plants and whole-tree chippers. Precision surface-ground to ±0.05 mm thickness " +
-    "parallelism for vibration-free drum balance at 2,500 RPM.",
-  ctaHref: "#tooling-matrix",
-  gallery: [
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      alt: "Reversible double-edge wood chipper knives",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
-      alt: "Wood chipper in operation — forestry land clearing",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      alt: "Wood chipper anvil counter-knife — D2 tool steel, precision ground",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      alt: "Drum chipper blades for forestry operations",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
-      alt: "Industrial wood chipper knives on workbench",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
-      alt: "Installing wood chipper knives on drum chipper",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      alt: "Heavy-duty chipper blades for biomass processing",
-    },
-    {
-      src: "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
-      alt: "Wood chipper blades batch — multiple knives surface-ground and ready for shipment",
-    },
+// ─── Gallery image paths (alt text built per-locale inside component) ──
+const GALLERY_IMAGES = [
+  "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
+  "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
+];
 
-  ],
-};
-
-// Preload href for the LCP image (gallery[0])
-const LCP_IMG = HERO_DATA.gallery[0].src;
+const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
-
-// ─── Products ─────────────────────────────────────────────────────────────────
-// Filter from blades.ts where category === "wood_chipper"
-const PRODUCTS: IndustryProduct[] = blades
-  .filter(blade => blade.category === "wood_chipper")
-  .map((blade, index) => ({
-    category: blade.categoryDisplay,
-    name: blade.name,
-    image: blade.image,
-    href: blade.link,
-    isFlagship: index === 0,
-    desc: blade.description,
-  }));
-
-const FILTER_CATEGORIES = [
-  "ALL",
-  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-];
-
-// ─── Blueprint Dashboard ──────────────────────────────────────────────────────
-const NARRATIVE: IndustryNarrative = {
-  challengeTitle: "The Cost of a Dull Blade.",
-  challengeBody:
-    "A wood chipper running dull knives doesn't just slow down — it tears fibres instead of " +
-    "shearing them, spikes fuel consumption by 15–25%, destroys drum bearings through vibration, " +
-    "and turns uniform biomass chips into off-spec splinters that fail EN 17225 screening.",
-  solutionTitle: "Through-Hardened. Every Regrind Identical.",
-  solutionBody:
-    "Vacuum heat treatment and deep cryogenic processing at −196°C produce uniform HRC 55–62 " +
-    "from surface to core. Unlike case-hardened alternatives that expose a soft core after the " +
-    "first regrind, every Sureay chipper knife delivers identical edge performance across 8–12 " +
-    "regrind cycles (+2× Blade Life vs. Standard Carbon Steel).",
-  highlightToken: "(+2× Blade Life vs. Standard Carbon Steel)",
-};
-
-const SPECS: IndustrySpec[] = [
-  {
-    label: "Core Hardness",
-    mainValue: "55–62",
-    unit: "HRC",
-    subtext: "Through-Hardened",
-  },
-  {
-    label: "Material Range",
-    mainValue: "T10 → TCT",
-    subtext: "9CrSi / D2 / M2 HSS / Carbide",
-    isTextual: true,
-  },
-  {
-    label: "Thickness Tol.",
-    mainValue: "±0.05",
-    unit: "mm",
-    subtext: "Drum Balance Precision",
-  },
-  {
-    label: "Bevel Angle",
-    mainValue: "25°–42°",
-    subtext: "Matched to Wood Species",
-    isTextual: true,
-  },
-];
-
-// ─── Materials ─────────────────────────────────────────────────────────────────
-const MATERIALS: IndustryMaterial[] = [
-  {
-    name: "Green Softwood (Pine, Spruce)",
-    abrasion: "LOW",
-    grade: "T10 / 9CrSi (HRC 55–58)",
-    image: "/images/materials/green-softwood.webp",
-  },
-  {
-    name: "Dry Hardwood (Oak, Eucalyptus)",
-    abrasion: "HIGH",
-    grade: "D2 / Cr12MoV (HRC 58–62)",
-    image: "/images/materials/dry-hardwood.webp",
-  },
-  {
-    name: "Contaminated Demo Wood",
-    abrasion: "EXTREME",
-    grade: "6CrW2Si / TCT Carbide",
-    image: "/images/materials/demolition-wood.webp",
-  },
-];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
 const PAGE_SCHEMA = {
@@ -236,17 +113,69 @@ const PAGE_SCHEMA = {
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function WoodIndustry() {
+  const lang = useLang();
+  const { t } = useTranslation();
+
+  const HERO_DATA: IndustryHeroData = {
+    breadcrumb: t("industry.wood.hero.breadcrumb"),
+    h1: t("industry.wood.hero.h1"),
+    h2: t("industry.wood.hero.h2"),
+    body1: t("industry.wood.hero.body1"),
+    body2: t("industry.wood.hero.body2"),
+    ctaHref: "#tooling-matrix",
+    gallery: GALLERY_IMAGES.map((src, i) => ({
+      src,
+      alt: t(`industry.wood.hero.gallery${i}Alt`),
+    })),
+  };
+
+  const NARRATIVE: IndustryNarrative = {
+    challengeTitle: t("industry.wood.narrative.challengeTitle"),
+    challengeBody: t("industry.wood.narrative.challengeBody"),
+    solutionTitle: t("industry.wood.narrative.solutionTitle"),
+    solutionBody: t("industry.wood.narrative.solutionBody"),
+    highlightToken: t("industry.wood.narrative.highlightToken"),
+  };
+
+  const SPECS: IndustrySpec[] = [
+    { label: t("industry.wood.specs.s1.label"), mainValue: "55–62", unit: "HRC", subtext: t("industry.wood.specs.s1.subtext") },
+    { label: t("industry.wood.specs.s2.label"), mainValue: "T10 → TCT", subtext: t("industry.wood.specs.s2.subtext"), isTextual: true },
+    { label: t("industry.wood.specs.s3.label"), mainValue: "±0.05", unit: "mm", subtext: t("industry.wood.specs.s3.subtext") },
+    { label: t("industry.wood.specs.s4.label"), mainValue: "25°–42°", subtext: t("industry.wood.specs.s4.subtext"), isTextual: true },
+  ];
+
+  const MATERIALS: IndustryMaterial[] = [
+    { name: t("industry.wood.materials.m1.name"), abrasion: t("industry.wood.materials.m1.abrasion"), grade: "T10 / 9CrSi (HRC 55–58)", image: "/images/materials/green-softwood.webp" },
+    { name: t("industry.wood.materials.m2.name"), abrasion: t("industry.wood.materials.m2.abrasion"), grade: "D2 / Cr12MoV (HRC 58–62)", image: "/images/materials/dry-hardwood.webp" },
+    { name: t("industry.wood.materials.m3.name"), abrasion: t("industry.wood.materials.m3.abrasion"), grade: "6CrW2Si / TCT Carbide", image: "/images/materials/demolition-wood.webp" },
+  ];
+
+  const PRODUCTS: IndustryProduct[] = getBlades(lang)
+    .filter(blade => blade.category === "wood_chipper")
+    .map((blade, index) => ({
+      category: blade.categoryDisplay,
+      name: blade.name,
+      image: blade.image,
+      href: blade.link,
+      isFlagship: index === 0,
+      desc: blade.description,
+    }));
+  const FILTER_CATEGORIES = [
+    "ALL",
+    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+  ];
+
   return (
     <>
       <SEO
-        title="Wood Chipper Blades & Chipper Knives | Forestry Grade | Sureay"
-        description="Through-hardened D2, Cr12MoV & TCT wood chipper knives for drum and disc chippers. OEM-compatible with Bandit, Vermeer, Morbark, Doppstadt & Jenz. Reversible double-edge and industrial single-edge configurations."
+        title={t("industry.wood.seo.title")}
+        description={t("industry.wood.seo.description")}
         canonicalUrl="/wood-industry"
-        keywords="wood chipper blades, chipper knives, drum chipper blades, disc chipper knives, biomass chipper blades, Bandit chipper blades, Vermeer chipper knives, Morbark replacement blades, forestry chipper blades, TCT chipper knives"
+        keywords={t("industry.wood.seo.keywords")}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Industries", url: "/products" },
-          { name: "Wood & Forestry", url: "/wood-industry" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("footer.industries"), url: "/products" },
+          { name: t("footer.industry.wood"), url: "/wood-industry" },
         ]}
       />
       <Helmet>

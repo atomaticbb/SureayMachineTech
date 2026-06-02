@@ -14,7 +14,10 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades, getBladeAggregateOffer } from "@/data/blades";
+import { getBladeAggregateOffer } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBlades } from "@/data/locales";
+import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -23,143 +26,20 @@ import type {
   IndustryMaterial,
 } from "@/components/industry/types";
 
-// ─── Hero ─────────────────────────────────────────────────────────────────────
-const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Industries / Metal Processing",
-  h1: "Industrial Metal Slitting & Shear Blade Manufacturer",
-  h2: "Slitter Knives, Shear Blades & OEM Wear Parts",
-  body1:
-    "Sureay Machinery manufactures through-hardened circular slitter knives, guillotine shear " +
-    "blades, and precision punch-and-die sets engineered for continuous-run metal coil processing. " +
-    "We select alloys precisely—from through-hardened SKH-51 to submicron-grain Tungsten Carbide—" +
-    "matched to your specific strip material, thickness, and line speed.",
-  body2:
-    "Every knife profile is reverse-engineered from OEM drawings or customer samples, then " +
-    "precision-ground on our 5-axis CNC equipment and verified on a calibrated CMM. The result: " +
-    "drop-in slitter and shear tooling delivering burr-free edge quality from the first coil and " +
-    "maintained throughout the full production run.",
-  ctaHref: "#tooling-matrix",
-  gallery: [
-    {
-      src: "/images/applications/metal-industry/metal-slitter-knives-04.webp",
-      alt: "Industrial metal slitter knives for coil slitting equipment",
-    },
-    {
-      src: "/images/applications/metal-industry/single-shredder-blades-010.webp",
-      alt: "Industrial blades for metal fabrication",
-    },
-    {
-      src: "/images/applications/metal-industry/metal-shear-blades-00.webp",
-      alt: "Metal shear blades for guillotine shearing",
-    },
-    {
-      src: "/images/applications/metal-industry/metal-slitter-knives-00.webp",
-      alt: "Metal slitter knives for coil slitting",
-    },
-    {
-      src: "/images/applications/metal-industry/metal-slitter-knives-01.webp",
-      alt: "Rotary metal slitter knives close-up",
-    },
-    {
-      src: "/images/applications/metal-industry/metal-shear-blades-03.webp",
-      alt: "Heavy-duty metal shear knife detail",
-    },
-    {
-      src: "/images/applications/metal-industry/cold-rolled-steel.webp",
-      alt: "Cold rolled steel coil processing",
-    },
-    {
-      src: "/images/applications/metal-industry/machine.webp",
-      alt: "Metal processing machine",
-    },
-  ],
-};
+// ─── Gallery image paths (alt text built per-locale inside component) ──
+const GALLERY_IMAGES = [
+  "/images/applications/metal-industry/metal-slitter-knives-04.webp",
+  "/images/applications/metal-industry/single-shredder-blades-010.webp",
+  "/images/applications/metal-industry/metal-shear-blades-00.webp",
+  "/images/applications/metal-industry/metal-slitter-knives-00.webp",
+  "/images/applications/metal-industry/metal-slitter-knives-01.webp",
+  "/images/applications/metal-industry/metal-shear-blades-03.webp",
+  "/images/applications/metal-industry/cold-rolled-steel.webp",
+  "/images/applications/metal-industry/machine.webp",
+];
 
-// Preload href for the LCP image (gallery[0]) — 640w variant for 2× retina desktop
-const LCP_IMG = HERO_DATA.gallery[0].src;
+const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
-
-// ─── Products ─────────────────────────────────────────────────────────────────
-// Dynamically load products from blades.ts where sector === "metal"
-const PRODUCTS: IndustryProduct[] = [
-  ...blades.filter(blade => blade.sector === "metal"),
-  ...blades.filter(blade => blade.id === "bottom-grooved-anvil-knives"),
-].map((blade, index) => ({
-    category: blade.categoryDisplay,
-    name: blade.name,
-    image: blade.image,
-    href: blade.link,
-    isFlagship: index === 0, // First product is flagship
-    desc: blade.description, // Use blade description from blades.ts
-  }));
-
-const FILTER_CATEGORIES = [
-  "ALL",
-  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-];
-
-// ─── Blueprint Dashboard ──────────────────────────────────────────────────────
-const NARRATIVE: IndustryNarrative = {
-  challengeTitle: "The Cost of the Micro-Chip.",
-  challengeBody:
-    "High-tensile steel and stainless coils demand extreme edge retention. Standard slitter knives " +
-    "develop micro-chips within hours at high line speed, producing burrs that contaminate downstream " +
-    "components, trigger scrap, and force costly unplanned line stops.",
-  solutionTitle: "Zero Burr. Extended Runs.",
-  solutionBody:
-    "Our through-hardened SKH-51 and Tungsten Carbide circular knives maintain zero-burr performance " +
-    "across extended production runs, achieving precise slit widths on demanding materials and delivering (+45% Tool Life).",
-  highlightToken: "(+45% Tool Life)",
-};
-
-const SPECS: IndustrySpec[] = [
-  {
-    label: "Side Run-Out",
-    mainValue: "±0.005",
-    unit: "mm",
-    subtext: "CMM Run-Out Verified",
-  },
-  {
-    label: "Material Grade",
-    mainValue: "SKH-51\\nTC Grade",
-    subtext: "OEM Grade Selection",
-    isTextual: true,
-  },
-  {
-    label: "Core Hardness",
-    mainValue: "62–66",
-    unit: "HRC",
-    subtext: "Through-Hardened",
-  },
-  {
-    label: "Surface Finish",
-    mainValue: "Ra ≤ 0.4",
-    unit: "μm",
-    subtext: "Ground & Lapped",
-  },
-];
-
-// ─── Materials ─────────────────────────────────────────────────────────────────
-const MATERIALS: IndustryMaterial[] = [
-  {
-    name: "Cold-Rolled Steel Coil",
-    abrasion: "HIGH",
-    grade: "SKH-51",
-    image: "/images/materials/cold-rolled-steel.webp",
-  },
-  {
-    name: "Stainless Steel Strip",
-    abrasion: "EXTREME",
-    grade: "Tungsten Carbide",
-    image: "/images/materials/stainless-strip.webp",
-  },
-  {
-    name: "Aluminum Sheet Stock",
-    abrasion: "MODERATE",
-    grade: "D2 Steel",
-    image: "/images/materials/aluminum-sheet.webp",
-  },
-];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
 const PAGE_SCHEMA = {
@@ -238,17 +118,71 @@ const PAGE_SCHEMA = {
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function MetalIndustry() {
+  const lang = useLang();
+  const { t } = useTranslation();
+
+  const HERO_DATA: IndustryHeroData = {
+    breadcrumb: t("industry.metal.hero.breadcrumb"),
+    h1: t("industry.metal.hero.h1"),
+    h2: t("industry.metal.hero.h2"),
+    body1: t("industry.metal.hero.body1"),
+    body2: t("industry.metal.hero.body2"),
+    ctaHref: "#tooling-matrix",
+    gallery: GALLERY_IMAGES.map((src, i) => ({
+      src,
+      alt: t(`industry.metal.hero.gallery${i}Alt`),
+    })),
+  };
+
+  const NARRATIVE: IndustryNarrative = {
+    challengeTitle: t("industry.metal.narrative.challengeTitle"),
+    challengeBody: t("industry.metal.narrative.challengeBody"),
+    solutionTitle: t("industry.metal.narrative.solutionTitle"),
+    solutionBody: t("industry.metal.narrative.solutionBody"),
+    highlightToken: t("industry.metal.narrative.highlightToken"),
+  };
+
+  const SPECS: IndustrySpec[] = [
+    { label: t("industry.metal.specs.s1.label"), mainValue: "±0.005", unit: "mm", subtext: t("industry.metal.specs.s1.subtext") },
+    { label: t("industry.metal.specs.s2.label"), mainValue: "SKH-51\\nTC Grade", subtext: t("industry.metal.specs.s2.subtext"), isTextual: true },
+    { label: t("industry.metal.specs.s3.label"), mainValue: "62–66", unit: "HRC", subtext: t("industry.metal.specs.s3.subtext") },
+    { label: t("industry.metal.specs.s4.label"), mainValue: "Ra ≤ 0.4", unit: "μm", subtext: t("industry.metal.specs.s4.subtext") },
+  ];
+
+  const MATERIALS: IndustryMaterial[] = [
+    { name: t("industry.metal.materials.m1.name"), abrasion: t("industry.metal.materials.m1.abrasion"), grade: "SKH-51", image: "/images/materials/cold-rolled-steel.webp" },
+    { name: t("industry.metal.materials.m2.name"), abrasion: t("industry.metal.materials.m2.abrasion"), grade: "Tungsten Carbide", image: "/images/materials/stainless-strip.webp" },
+    { name: t("industry.metal.materials.m3.name"), abrasion: t("industry.metal.materials.m3.abrasion"), grade: "D2 Steel", image: "/images/materials/aluminum-sheet.webp" },
+  ];
+
+  const allBlades = getBlades(lang);
+  const PRODUCTS: IndustryProduct[] = [
+    ...allBlades.filter(blade => blade.sector === "metal"),
+    ...allBlades.filter(blade => blade.id === "bottom-grooved-anvil-knives"),
+  ].map((blade, index) => ({
+    category: blade.categoryDisplay,
+    name: blade.name,
+    image: blade.image,
+    href: blade.link,
+    isFlagship: index === 0,
+    desc: blade.description,
+  }));
+  const FILTER_CATEGORIES = [
+    "ALL",
+    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+  ];
+
   return (
     <>
       <SEO
-        title="Metal Processing Tooling & Coil Slitting Equipment"
-        description="Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC."
+        title={t("industry.metal.seo.title")}
+        description={t("industry.metal.seo.description")}
         canonicalUrl="/metal-industry"
-        keywords="metal slitting knives, guillotine shear blades, coil processing, steel cutting, metal fabrication blades"
+        keywords={t("industry.metal.seo.keywords")}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Industries", url: "/products" },
-          { name: "Metal Processing", url: "/metal-industry" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("footer.industries"), url: "/products" },
+          { name: t("footer.industry.metal"), url: "/metal-industry" },
         ]}
       />
       <Helmet>

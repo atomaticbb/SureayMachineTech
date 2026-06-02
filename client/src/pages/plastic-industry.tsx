@@ -14,7 +14,10 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades, getBladeAggregateOffer } from "@/data/blades";
+import { getBladeAggregateOffer } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBlades } from "@/data/locales";
+import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -23,145 +26,23 @@ import type {
   IndustryMaterial,
 } from "@/components/industry/types";
 
-// ─── Hero ─────────────────────────────────────────────────────────────────────
-const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Industries / Plastics Recycling",
-  h1: "Plastic Recycling & Compounding Blade Supplier",
-  h2: "Shredder Blades, Pelletizer Rotors & Melt Filter Scrapers",
-  body1:
-    "Sureay Machinery specializes in manufacturing premium industrial knives and precision wear parts " +
-    "for the plastics recycling and compounding industry. Our material expertise sets us apart — " +
-    "from impact-resistant D2 steel for mixed post-consumer feedstocks to PM-HSS and Solid Tungsten " +
-    "Carbide for glass-filled and carbon-fiber-reinforced compounding lines.",
-  body2:
-    "Vacuum heat treatment and 5-axis CNC machining ensure every component delivers consistent, " +
-    "cost-effective performance. From heavy-duty twin-shaft shredder blades and granulator knives " +
-    "to precision strand pelletizer rotors and continuous melt filter scraper blades, our product " +
-    "line covers the full plastics processing chain — 100% drop-in OEM compatible.",
-  ctaHref: "#tooling-matrix",
-  gallery: [
-    {
-      src: "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",
-      alt: "Four-shaft shredder blade assembly",
-    },
-    {
-      src: "/images/applications/plastic-industry/strand-pelletizer-rotor-03.webp",
-      alt: "Strand pelletizer rotor for compounding lines",
-    },
-    {
-      src: "/images/applications/plastic-industry/scraper-blades-02.webp",
-      alt: "Melt filter scraper blades for continuous filtration",
-    },
-    {
-      src: "/images/applications/plastic-industry/granulator-blades-03.webp",
-      alt: "Granulator blades for plastic size reduction",
-    },
-    {
-      src: "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",
-      alt: "Multi-shaft shredder blades for plastic recycling",
-    },
+// ─── Gallery (image paths only — alt text built per-locale inside component) ──
+const GALLERY_IMAGES = [
+  "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",
+  "/images/applications/plastic-industry/strand-pelletizer-rotor-03.webp",
+  "/images/applications/plastic-industry/scraper-blades-02.webp",
+  "/images/applications/plastic-industry/granulator-blades-03.webp",
+  "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",
+  "/images/applications/plastic-industry/single-shredder-blades-04.webp",
+  "/images/applications/plastic-industry/6-Wire%20Cut.webp",
+  "/images/applications/plastic-industry/vacuum-heat-treatment.webp",
+];
 
-    {
-      src: "/images/applications/plastic-industry/single-shredder-blades-04.webp",
-      alt: "Single shaft shredder blades for plastic",
-    },     
-    {
-      src: "/images/applications/plastic-industry/6-Wire%20Cut.webp",
-      alt: "Wire-cut machining process detail",
-    },
-    {
-      src: "/images/applications/plastic-industry/vacuum-heat-treatment.webp",
-      alt: "Vacuum heat treatment process",
-    },
-  ],
-};
-
-// Preload href for the LCP image (gallery[0]) — 640w variant for 2× retina desktop
-const LCP_IMG = HERO_DATA.gallery[0].src;
+const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
-// ─── Products ─────────────────────────────────────────────────────────────────
-// Dynamically load products from blades.ts where sector === "recycling"
-const PRODUCTS: IndustryProduct[] = blades
-  .filter(blade => blade.sector === "recycling")
-  .map((blade, index) => ({
-    category: blade.categoryDisplay,
-    name: blade.name,
-    image: blade.image,
-    href: blade.link,
-    isFlagship: index === 0, // First product is flagship
-  }));
-
-const FILTER_CATEGORIES = [
-  "ALL",
-  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-];
-
-// ─── Blueprint Dashboard ──────────────────────────────────────────────────────
-const NARRATIVE: IndustryNarrative = {
-  challengeTitle: "The Real Cost of Wear.",
-  challengeBody:
-    "Processing mixed polymers, glass-filled compounds, and post-consumer waste introduces severe " +
-    "abrasive wear. Standard blades degrade rapidly, forcing costly unplanned line stoppages and " +
-    "contaminated pellet output.",
-  solutionTitle: "Engineered for the Full Processing Chain.",
-  solutionBody:
-    "PM-HSS and Tungsten Carbide rotors deliver up to 10× longer tool life on GF/CF compounds. " +
-    "Precision scraper blades maintain continuous melt filtration without screen shutdowns. " +
-    "Every component is CMM-verified for zero-defect drop-in fit (+30% Uptime).",
-  highlightToken: "(+30% Uptime)",
-};
-
-const SPECS: IndustrySpec[] = [
-  {
-    label: "Rotor Concentricity",
-    mainValue: "≤0.005",
-    unit: "mm",
-    subtext: "Pelletizer Runout (TIR)",
-  },
-  {
-    label: "Material Range",
-    mainValue: "D2 → WC",
-    subtext: "M2 / PM-HSS / Carbide",
-    isTextual: true,
-  },
-  {
-    label: "Core Hardness",
-    mainValue: "58–64",
-    unit: "HRC",
-    subtext: "Vacuum Heat Treat",
-  },
-  {
-    label: "Balancing Grade",
-    mainValue: "ISO G2.5",
-    subtext: "Dynamic @ Operating RPM",
-    isTextual: true,
-  },
-];
-
-// ─── Materials ─────────────────────────────────────────────────────────────────
-const MATERIALS: IndustryMaterial[] = [
-  {
-    name: "PET Bottle Flakes",
-    abrasion: "EXTREME",
-    grade: "Tungsten Carbide",
-    image: "/images/materials/pet-flakes.webp",
-  },
-  {
-    name: "HDPE Thick-Wall Pipes",
-    abrasion: "HIGH",
-    grade: "SKD-11 (Cr12MoV)",
-    image: "/images/materials/hdpe-pipe.webp",
-  },
-  {
-    name: "Mixed Post-Consumer",
-    abrasion: "VARIABLE",
-    grade: "D2 / M2 HSS",
-    image: "/images/materials/mixed-plastic.webp",
-  },
-];
-
-// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
+// JSON-LD structured data — Google indexes English structured data even
+// from localized pages, so keep it in English regardless of active locale.
 const PAGE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -264,17 +145,103 @@ const PAGE_SCHEMA = {
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function PlasticIndustry() {
+  const lang = useLang();
+  const { t } = useTranslation();
+
+  const HERO_DATA: IndustryHeroData = {
+    breadcrumb: t("industry.plastic.hero.breadcrumb"),
+    h1: t("industry.plastic.hero.h1"),
+    h2: t("industry.plastic.hero.h2"),
+    body1: t("industry.plastic.hero.body1"),
+    body2: t("industry.plastic.hero.body2"),
+    ctaHref: "#tooling-matrix",
+    gallery: GALLERY_IMAGES.map((src, i) => ({
+      src,
+      alt: t(`industry.plastic.hero.gallery${i}Alt`),
+    })),
+  };
+
+  const NARRATIVE: IndustryNarrative = {
+    challengeTitle: t("industry.plastic.narrative.challengeTitle"),
+    challengeBody: t("industry.plastic.narrative.challengeBody"),
+    solutionTitle: t("industry.plastic.narrative.solutionTitle"),
+    solutionBody: t("industry.plastic.narrative.solutionBody"),
+    highlightToken: t("industry.plastic.narrative.highlightToken"),
+  };
+
+  const SPECS: IndustrySpec[] = [
+    {
+      label: t("industry.plastic.specs.s1.label"),
+      mainValue: "≤0.005",
+      unit: "mm",
+      subtext: t("industry.plastic.specs.s1.subtext"),
+    },
+    {
+      label: t("industry.plastic.specs.s2.label"),
+      mainValue: "D2 → WC",
+      subtext: t("industry.plastic.specs.s2.subtext"),
+      isTextual: true,
+    },
+    {
+      label: t("industry.plastic.specs.s3.label"),
+      mainValue: "58–64",
+      unit: "HRC",
+      subtext: t("industry.plastic.specs.s3.subtext"),
+    },
+    {
+      label: t("industry.plastic.specs.s4.label"),
+      mainValue: "ISO G2.5",
+      subtext: t("industry.plastic.specs.s4.subtext"),
+      isTextual: true,
+    },
+  ];
+
+  const MATERIALS: IndustryMaterial[] = [
+    {
+      name: t("industry.plastic.materials.m1.name"),
+      abrasion: t("industry.plastic.materials.m1.abrasion"),
+      grade: "Tungsten Carbide",
+      image: "/images/materials/pet-flakes.webp",
+    },
+    {
+      name: t("industry.plastic.materials.m2.name"),
+      abrasion: t("industry.plastic.materials.m2.abrasion"),
+      grade: "SKD-11 (Cr12MoV)",
+      image: "/images/materials/hdpe-pipe.webp",
+    },
+    {
+      name: t("industry.plastic.materials.m3.name"),
+      abrasion: t("industry.plastic.materials.m3.abrasion"),
+      grade: "D2 / M2 HSS",
+      image: "/images/materials/mixed-plastic.webp",
+    },
+  ];
+
+  const PRODUCTS: IndustryProduct[] = getBlades(lang)
+    .filter(blade => blade.sector === "recycling")
+    .map((blade, index) => ({
+      category: blade.categoryDisplay,
+      name: blade.name,
+      image: blade.image,
+      href: blade.link,
+      isFlagship: index === 0,
+    }));
+  const FILTER_CATEGORIES = [
+    "ALL",
+    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+  ];
+
   return (
     <>
       <SEO
-        title="Plastic Recycling Blades | Shredder & Granulator"
-        description="Precision shredder blades, strand pelletizer rotors and melt filter scraper blades for plastics recycling and compounding lines. PM-HSS & carbide grades for GF/CF compounds. OEM-compatible with EREMA, Maag, Coperion, Cumberland and LINDNER."
+        title={t("industry.plastic.seo.title")}
+        description={t("industry.plastic.seo.description")}
         canonicalUrl="/plastic-industry"
-        keywords="plastic recycling blades, strand pelletizer rotors, granulator knives, shredder blades, melt filter scraper blades, PM-HSS compounding blades, GF40 pelletizer rotor, Coperion replacement rotor"
+        keywords={t("industry.plastic.seo.keywords")}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Industries", url: "/products" },
-          { name: "Plastics Recycling", url: "/plastic-industry" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("footer.industries"), url: "/products" },
+          { name: t("footer.industry.plastic"), url: "/plastic-industry" },
         ]}
       />
       <Helmet>

@@ -14,7 +14,10 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { blades, getBladeAggregateOffer } from "@/data/blades";
+import { getBladeAggregateOffer } from "@/data/blades";
+import { useLang } from "@/contexts/LangContext";
+import { getBlades } from "@/data/locales";
+import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
   IndustryProduct,
@@ -23,140 +26,20 @@ import type {
   IndustryMaterial,
 } from "@/components/industry/types";
 
-// ─── Hero ─────────────────────────────────────────────────────────────────────
-const HERO_DATA: IndustryHeroData = {
-  breadcrumb: "Home / Industries / Flexible Converting & Packaging",
-  h1: "Flexible Converting & Packaging Slitter Knife Supplier",
-  h2: "Film · Nonwoven · PSA Tape · Label Converting Blades",
-  body1:
-    "Sureay Machinery manufactures precision circular slitter knives and specialty cutting tools for " +
-    "the flexible packaging, nonwoven fabric, and label converting industries. Our tooling is engineered " +
-    "for high-speed lines running at 150–600 m/min across BOPP, BOPET, CPP film, SMS medical nonwoven, " +
-    "pressure-sensitive tape, and adhesive-laminate substrates.",
-  body2:
-    "From matched top-and-bottom shear pairs for film and label slitting to DLC-coated blades for " +
-    "PSA tape lines, every Sureay converting knife is precision ground to ±0.002mm dimensional " +
-    "tolerance with optional TiN and DLC anti-adhesion coatings for pressure-sensitive tape and " +
-    "adhesive laminate applications.",
-  ctaHref: "#tooling-matrix",
-  gallery: [
-    {
-      src: "/images/applications/converting-industry/converting-industry.webp",
-      alt: "Flexible converting and packaging industry overview",
-    },
-    {
-      src: "/images/applications/converting-industry/rotary-slitter-knives-02.webp",
-      alt: "Rotary slitter knives for flexible packaging",
-    },
-    {
-      src: "/images/applications/converting-industry/rotary-slitter-knives-08.webp",
-      alt: "Precision slitter knife for film converting",
-    },
-    {
-      src: "/images/applications/converting-industry/rotary-slitter-knives-09.webp",
-      alt: "Slitter knife array for packaging line",
-    },
-    {
-      src: "/images/applications/converting-industry/nonwoven-slitter-knives.webp",
-      alt: "Nonwoven slitter knives for SMS fabric",
-    },
-    {
-      src: "/images/applications/converting-industry/nonwoven-slitter-knives-01.webp",
-      alt: "Nonwoven fabric slitter knife detail",
-    },
-    {
-      src: "/images/applications/converting-industry/cnc-machine.webp",
-      alt: "CNC precision grinding for converting knives",
-    },
-    {
-      src: "/images/applications/converting-industry/material.webp",
-      alt: "Premium steel material for converting blades",
-    },
-  ],
-};
+// ─── Gallery image paths (alt text built per-locale inside component) ──
+const GALLERY_IMAGES = [
+  "/images/applications/converting-industry/converting-industry.webp",
+  "/images/applications/converting-industry/rotary-slitter-knives-02.webp",
+  "/images/applications/converting-industry/rotary-slitter-knives-08.webp",
+  "/images/applications/converting-industry/rotary-slitter-knives-09.webp",
+  "/images/applications/converting-industry/nonwoven-slitter-knives.webp",
+  "/images/applications/converting-industry/nonwoven-slitter-knives-01.webp",
+  "/images/applications/converting-industry/cnc-machine.webp",
+  "/images/applications/converting-industry/material.webp",
+];
 
-const LCP_IMG = HERO_DATA.gallery[0].src;
+const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
-
-// ─── Products ─────────────────────────────────────────────────────────────────
-const PRODUCTS: IndustryProduct[] = blades
-  .filter(blade => blade.sector === "converting")
-  .map((blade, index) => ({
-    category: blade.categoryDisplay,
-    name: blade.name,
-    image: blade.image,
-    href: blade.link,
-    isFlagship: index === 0,
-  }));
-
-const FILTER_CATEGORIES = [
-  "ALL",
-  ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-];
-
-// ─── Blueprint Dashboard ──────────────────────────────────────────────────────
-const NARRATIVE: IndustryNarrative = {
-  challengeTitle: "Speed Demands Precision.",
-  challengeBody:
-    "At 400 m/min on a BOPP film line, a 0.005mm runout error per blade compounds across a 12-knife arbor, " +
-    "producing visible slit-width deviation, edge curl, and web tension spikes that drive unplanned downtime " +
-    "and customer complaints on the finished slit roll.",
-  solutionTitle: "±0.002mm. Every Knife. Every Time.",
-  solutionBody:
-    "Sureay converting knives are precision ground to ±0.002mm thickness tolerance and ≤0.02mm T.I.R. runout, " +
-    "with optional DLC coating for adhesive tape converting. Consistent geometry eliminates arbor wobble " +
-    "and reduces Mean Time Between Replacements by 40%.",
-  highlightToken: "(40% longer MTBR)",
-};
-
-const SPECS: IndustrySpec[] = [
-  {
-    label: "Thickness Tol.",
-    mainValue: "±0.002",
-    unit: "mm",
-    subtext: "Across Full Diameter",
-  },
-  {
-    label: "T.I.R. Runout",
-    mainValue: "≤ 0.02",
-    unit: "mm",
-    subtext: "Per Knife, CMM Verified",
-  },
-  {
-    label: "Surface Finish",
-    mainValue: "Ra ≤ 0.4",
-    unit: "μm",
-    subtext: "Precision Ground",
-  },
-  {
-    label: "Line Speed",
-    mainValue: "600",
-    unit: "m/min",
-    subtext: "Verified Performance",
-  },
-];
-
-// ─── Materials ─────────────────────────────────────────────────────────────────
-const MATERIALS: IndustryMaterial[] = [
-  {
-    name: "BOPP / BOPET Film",
-    abrasion: "MODERATE",
-    grade: "M2 HSS / ASP23 PM",
-    image: "/images/materials/BOPP-BOPET.webp",
-  },
-  {
-    name: "Label Stock / Release Liner",
-    abrasion: "LOW",
-    grade: "D2 / M2 HSS with TiN",
-    image: "/images/materials/label-stock.webp",
-  },
-  {
-    name: "SMS Medical Nonwoven",
-    abrasion: "LOW",
-    grade: "M2 HSS (ESD Coated)",
-    image: "/images/materials/medical-nonwoven.webp",
-  },
-];
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
 const PAGE_SCHEMA = {
@@ -209,17 +92,68 @@ const PAGE_SCHEMA = {
 
 // ─────────────────────────────────────────────────────────────────────────────
 export default function ConvertingIndustry() {
+  const lang = useLang();
+  const { t } = useTranslation();
+
+  const HERO_DATA: IndustryHeroData = {
+    breadcrumb: t("industry.converting.hero.breadcrumb"),
+    h1: t("industry.converting.hero.h1"),
+    h2: t("industry.converting.hero.h2"),
+    body1: t("industry.converting.hero.body1"),
+    body2: t("industry.converting.hero.body2"),
+    ctaHref: "#tooling-matrix",
+    gallery: GALLERY_IMAGES.map((src, i) => ({
+      src,
+      alt: t(`industry.converting.hero.gallery${i}Alt`),
+    })),
+  };
+
+  const NARRATIVE: IndustryNarrative = {
+    challengeTitle: t("industry.converting.narrative.challengeTitle"),
+    challengeBody: t("industry.converting.narrative.challengeBody"),
+    solutionTitle: t("industry.converting.narrative.solutionTitle"),
+    solutionBody: t("industry.converting.narrative.solutionBody"),
+    highlightToken: t("industry.converting.narrative.highlightToken"),
+  };
+
+  const SPECS: IndustrySpec[] = [
+    { label: t("industry.converting.specs.s1.label"), mainValue: "±0.002", unit: "mm", subtext: t("industry.converting.specs.s1.subtext") },
+    { label: t("industry.converting.specs.s2.label"), mainValue: "≤ 0.02", unit: "mm", subtext: t("industry.converting.specs.s2.subtext") },
+    { label: t("industry.converting.specs.s3.label"), mainValue: "Ra ≤ 0.4", unit: "μm", subtext: t("industry.converting.specs.s3.subtext") },
+    { label: t("industry.converting.specs.s4.label"), mainValue: "600", unit: "m/min", subtext: t("industry.converting.specs.s4.subtext") },
+  ];
+
+  const MATERIALS: IndustryMaterial[] = [
+    { name: t("industry.converting.materials.m1.name"), abrasion: t("industry.converting.materials.m1.abrasion"), grade: "M2 HSS / ASP23 PM", image: "/images/materials/BOPP-BOPET.webp" },
+    { name: t("industry.converting.materials.m2.name"), abrasion: t("industry.converting.materials.m2.abrasion"), grade: "D2 / M2 HSS with TiN", image: "/images/materials/label-stock.webp" },
+    { name: t("industry.converting.materials.m3.name"), abrasion: t("industry.converting.materials.m3.abrasion"), grade: "M2 HSS (ESD Coated)", image: "/images/materials/medical-nonwoven.webp" },
+  ];
+
+  const PRODUCTS: IndustryProduct[] = getBlades(lang)
+    .filter(blade => blade.sector === "converting")
+    .map((blade, index) => ({
+      category: blade.categoryDisplay,
+      name: blade.name,
+      image: blade.image,
+      href: blade.link,
+      isFlagship: index === 0,
+    }));
+  const FILTER_CATEGORIES = [
+    "ALL",
+    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
+  ];
+
   return (
     <>
       <SEO
-        title="Converting Slitter Knives | Film, Nonwoven & PSA Tape"
-        description="Precision slitter knives for BOPP film, SMS nonwoven, PSA tape, and adhesive-laminate converting. ±0.002mm tolerance. Compatible with Tidland, Atlas, Kampf, and Mario Cotta lines."
+        title={t("industry.converting.seo.title")}
+        description={t("industry.converting.seo.description")}
         canonicalUrl="/converting-industry"
-        keywords="slitter knives converting, film slitter knives, nonwoven slitter blades, BOPP film slitting, PSA tape slitter, flexible packaging knives"
+        keywords={t("industry.converting.seo.keywords")}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Industries", url: "/products" },
-          { name: "Flexible Converting & Packaging", url: "/converting-industry" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("footer.industries"), url: "/products" },
+          { name: t("footer.industry.converting"), url: "/converting-industry" },
         ]}
       />
       <Helmet>
