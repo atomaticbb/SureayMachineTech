@@ -2551,6 +2551,262 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "paper-guillotine-knives-selection-maintenance-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "03.JUN.2026",
+    title:
+      "How to Choose Paper Guillotine Knives for Clean, Square Cuts and Longer Blade Life",
+    excerpt:
+      "Blade metallurgy, bevel geometry, defect root causes, and maintenance scheduling for paper guillotine knives — a procurement guide for print finishing and converting operations.",
+    image: "/images/news/paper-guillotine-knives-hero.webp",
+    readTime: "9 MIN",
+    seoTitle:
+      "Paper Guillotine Knives: Selection, Bevel Angle and Maintenance Guide",
+    metaDescription:
+      "Technical guide to paper guillotine knife selection for print finishing and paper converting. Compare metallurgy, bevel angles, cut defects, and maintenance scheduling.",
+    keywords:
+      "paper guillotine knives, paper cutter blades, guillotine paper cutting knife, HSS paper cutting blade, carbide tipped paper knife, paper cutting blade maintenance, Polar replacement knife, Wohlenberg cutter blade, Perfecta guillotine blade",
+    relatedProductIds: [
+      "paper-cutting-blades",
+      "rotary-slitter-knives-paper",
+      "tissue-log-saw-blades",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Paper guillotine knives dictate the dimensional tolerance and edge quality of print finishing, bookbinding, and paper converting operations. The process requires a long, straight blade to penetrate a clamped substrate stack, demanding absolute squareness, clean separation, and cross-width repeatability.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For procurement and production managers, cutting performance extends beyond simple sharpness. It is a multi-variable system governed by blade metallurgy, bevel geometry, heat treatment, grinding precision, machine guide tolerances, clamp pressure, and cutting stick degradation. A premium knife configured with an incorrect bevel or installed on worn equipment will fail. Precise technical specification and scheduled maintenance directly reduce material waste and mitigate cutter drive wear.",
+      },
+      {
+        type: "h2",
+        value: "Industrial Applications & Equipment Compatibility",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Industrial paper guillotine knives are deployed in commercial print finishing and label stock conversion, packaging production and heavy paperboard sectioning, bookbinding, stationery manufacturing, and coated or laminated specialty paper operations.",
+      },
+      {
+        type: "h3",
+        value: "Machine Compatibility",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Replacement blades must strictly match the dimensional and mounting tolerances of specific programmable cutter brands, including Polar, Wohlenberg, Perfecta, Schneider Senator, Challenge, Itoh, and Colter & Peterson. Dimensional deviations introduce alignment errors, safety risks, and accelerated machine guide wear. Required matching parameters include total length, width, and thickness profile; bolt hole or slot geometry and pitch; bevel orientation and counter-sink depth.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay engineers [replacement paper cutting blades](/products/paper-cutting-blades) to match these critical OEM configurations, ensuring reduced paper draw and consistent edge geometry across multiple regrind cycles.",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-guillotine-knife-cutting-stack.webp",
+      },
+      {
+        type: "h2",
+        value: "Physical Dynamics: Stack Stabilization Under Shear",
+      },
+      {
+        type: "paragraph",
+        value:
+          "While the cutting stroke appears as a continuous downward slice, the micro-mechanics involve high compression and shear forces. Paper fibers compress under load, mineral coatings reduce friction coefficients between sheets, and laminated layers resist initial penetration.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "To maintain stack integrity, the knife requires optimal sharpness to lower penetration force, high yield strength to prevent micro-chipping, and precise flatness to cut evenly from the top sheet to the backing stick. Insufficient sharpness causes the blade to plow before cutting, inducing paper draw or stack skewing. Running a dull knife forces operators to over-compensate via excessive clamp pressure, accelerating wear on hydraulic systems, cutting sticks, and blade holders.",
+      },
+      {
+        type: "h2",
+        value: "Metallurgy Options & Selection Metrics",
+      },
+      {
+        type: "h3",
+        value: "Standard Tool Steel",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Economical composition optimized for low-volume runs or non-abrasive, low-density paper stocks. These blades allow rapid resharpening but exhibit low wear resistance when processing coated, high-caliper, or mineral-filled stocks.",
+      },
+      {
+        type: "h3",
+        value: "High-Speed Steel (HSS) Inlay Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The standard choice for commercial print environments and high-output converting plants. The blade features a tough structural steel backing inlayed with a high-speed steel cutting edge (typically 18% Tungsten / M2 grade) to maximize wear resistance. HSS inserts retain edge geometry significantly longer than carbon steel under continuous high-speed cycling.",
+      },
+      {
+        type: "h3",
+        value: "TCT / Carbide Tipped Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Tungsten Carbide Tipped (TCT) knives offer maximum run times between grinds when cutting highly abrasive materials such as mineral-coated paper, recycled boards, and heavy kraft. However, carbide's high hardness correlates with high brittleness — it exhibits low tolerance for mechanical shock, frame deflection, or improper installation. TCT requires rigid, stable machinery and specialized diamond-wheel sharpening setups.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "Metric",
+          "Standard Tool Steel",
+          "HSS Inlay",
+          "Carbide Tipped (TCT)",
+        ],
+        tableRows: [
+          [
+            "Abrasive Wear Resistance",
+            "Low",
+            "Moderate–High",
+            "Maximum",
+          ],
+          [
+            "Shock / Impact Toughness",
+            "High",
+            "Moderate–High",
+            "Low (Brittle)",
+          ],
+          [
+            "Sharpening Complexity",
+            "Low (Standard Wheels)",
+            "Moderate",
+            "High (Diamond Wheels Only)",
+          ],
+          [
+            "Primary Cost Driver",
+            "Low Initial Purchase",
+            "Balanced Lifecycle Cost",
+            "High Initial Investment",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "Engineering Note: Evaluate knives on cost-per-clean-cut rather than initial purchase price. This equation factors in blade longevity, sharpening frequencies, machine downtime, substrate spoilage, and mechanical wear.",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-guillotine-knives-hss-carbide-inspection.webp",
+      },
+      {
+        type: "h2",
+        value: "Bevel Geometry Optimization",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The bevel angle defines the balance between penetration efficiency and edge durability. Acute bevels (19°–21°) reduce cutting resistance and are optimized for soft, lightweight, or low-density stocks. Obtuse bevels (22°–24°) provide a robust backing structure for the cutting edge, preventing micro-chipping when splitting dense, hard, or recycled substrates loaded with abrasive fillers.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bevel consistency across the entire linear length of the blade is critical. Linear angular variance alters cutting dynamics across the bed, causing one side of the stack to shear cleanly while the opposite side experiences tearing, sheet draw, or uncut bottom pages.",
+      },
+      {
+        type: "h2",
+        value: "Root Cause Analysis of Common Cutting Defects",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Defect", "Root Cause"],
+        tableRows: [
+          [
+            "Ragged or fuzzy edges",
+            "Edge blunting, micro-fractures, or inappropriate metallurgy for abrasive coatings",
+          ],
+          [
+            "Uncut bottom sheets",
+            "Insufficient down-stroke depth, cutting stick valley, or blade body curvature — recalibrate height after every regrind",
+          ],
+          [
+            "Paper draw / stack displacement",
+            "High penetration resistance (dull edge), incorrect bevel for stack density, or failed hydraulic clamp pressure",
+          ],
+          [
+            "Out-of-square / angled cuts",
+            "Mechanical guide wear, backgauge misalignment, asymmetric clamp force, or lateral blade deflection",
+          ],
+          [
+            "Edge chipping",
+            "Impact with foreign inclusions (staples, wire), aggressive handling, or acute bevel on rigid high-density stocks",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "Predictive Maintenance Protocols",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Waiting for visible product defects before replacing a knife induces hidden operational waste. Production environments should implement predictive change-out intervals tracked by cut count, operational shifts, or linear throughput tonnage.",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-guillotine-knives-set.webp",
+      },
+      {
+        type: "callout",
+        value:
+          "Knife Removal Indicators: (1) Hydraulic drive pressure or motor amperage spikes during the stroke. (2) Edge quality deteriorates or micro-tears emerge on bottom sheets. (3) Increase in paper dust and trim debris accumulation around the bed. (4) Frequent operator adjustment is needed to maintain nominal tolerances.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Cutting sticks must be rotated and replaced on a parallel schedule. A grooved or distorted stick deprives the bottom sheet of the rigid counter-pressure necessary for clean separation, mimicking the symptoms of a dull knife. The knife, stick, and clamp function as an integrated trim system.",
+      },
+      {
+        type: "h2",
+        value: "Sharpening & Industrial Handling Best Practices",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Due to high mass and extreme sharpness, industrial knives require rigid safety protocols. Storage must utilize dedicated wooden protective cases, transport must deploy mechanical lifting fixtures, and installation must be restricted to certified maintenance technicians. The cutting edge must never contact metallic surfaces or alternative tooling.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Regrinding must be outsourced to qualified industrial knife grinding specialists. The process must maintain OEM bevel profiles, execute precise linear tolerances, and deploy high-volume coolant delivery to prevent localized thermal spikes. Overheating during the grind alters the heat-treatment temper, creating localized soft spots or micro-cracks that permanently degrade blade life. Following each regrind, record the remaining overall blade height — knives must be retired before their height drops below the safe mechanical limits dictated by the machine manufacturer.",
+      },
+      {
+        type: "h2",
+        value: "Technical Specifications Required for Procurement",
+      },
+      {
+        type: "paragraph",
+        value:
+          "To ensure exact fitment, provide the following parameters when ordering replacement knives: machine manufacturer brand, exact model number, and year; blade dimensions (length, width, thickness, total weight); mounting interface (number of holes/slots, center-to-center pitch, thread and countersink specifications); application data including primary substrates, maximum stack height, current defect modes, and target grind cycles; and geometry requirements — desired bevel angle, secondary bevel specs, and metallurgy grade (Standard, HSS, or TCT).",
+      },
+      {
+        type: "h2",
+        value: "Consultation & Replacement Knife Engineering",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Industrial cutting efficiency depends on the alignment of blade metallurgy, geometric profile, and maintenance execution. Implementing the correct technical specifications minimizes make-ready adjustments, prevents substrate waste, maximizes uptime, and isolates expensive cutter components from high mechanical shock loads.",
+      },
+      {
+        type: "callout",
+        value:
+          "If your production line is experiencing persistent ragged edges, sheet draw, or accelerated blade degradation, Sureay can audit your application. Provide your machine model, blade blueprints, and substrate parameters, and our engineering team will calculate an optimized [replacement knife specification](/products/paper-cutting-blades).",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
@@ -2573,6 +2829,7 @@ const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
   "alloy-vs-hss-paper-cutter-blades": "Eric",
   "coil-slitting-line-maintenance-guide": "Eric",
   "metal-slitting-lines-installation-guide": "lynn",
+  "paper-guillotine-knives-selection-maintenance-guide": "Eric",
 };
 
 // ── Helper Functions ──────────────────────────────────────────────────────────
