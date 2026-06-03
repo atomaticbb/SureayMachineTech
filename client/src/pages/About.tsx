@@ -78,6 +78,24 @@ export default function About() {
         title={t("about.seo.title")}
         description={t("about.seo.description")}
         canonicalUrl="/about"
+        extraJsonLd={[
+          JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            name: "Sureay Machinery Technology — Factory Tour",
+            description: t("about.seo.description"),
+            thumbnailUrl:
+              "https://img.youtube.com/vi/UfjqDYlewko/maxresdefault.jpg",
+            uploadDate: "2026-05-15",
+            embedUrl: "https://www.youtube.com/embed/UfjqDYlewko",
+            contentUrl: "https://www.youtube.com/watch?v=UfjqDYlewko",
+            publisher: {
+              "@type": "Organization",
+              name: "Sureay Machinery Technology",
+              url: "https://sureay.com",
+            },
+          }),
+        ]}
       />
       <Navbar />
 
