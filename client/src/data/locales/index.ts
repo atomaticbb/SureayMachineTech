@@ -13,6 +13,11 @@
  *
  * News intentionally has no per-locale variant; news.ts content was excluded
  * from automated translation (see scripts/translate-data.ts comments).
+ *
+ * Non-English locale data is loaded on demand via preloadLocale(lang) rather
+ * than statically imported. This keeps the initial shared bundle small (~350 KB
+ * instead of 2.8 MB) and allows Vite to emit per-language chunks (~500 KB each)
+ * that are only fetched for the language actually needed.
  */
 
 import { DEFAULT_LANG, type Lang } from "@/lib/i18n";
@@ -22,65 +27,109 @@ import {
   type BladeCategoryType,
   type BladeSectorType,
 } from "../blades";
-import { blades as bladesEs } from "./blades.es";
-import { blades as bladesFr } from "./blades.fr";
-import { blades as bladesRu } from "./blades.ru";
-import { blades as bladesVi } from "./blades.vi";
-import { blades as bladesAr } from "./blades.ar";
-
 import {
   BLADE_CATEGORIES as catEn,
   type BladeCategoryMeta,
 } from "../blade-categories";
-import { BLADE_CATEGORIES as catEs } from "./blade-categories.es";
-import { BLADE_CATEGORIES as catFr } from "./blade-categories.fr";
-import { BLADE_CATEGORIES as catRu } from "./blade-categories.ru";
-import { BLADE_CATEGORIES as catVi } from "./blade-categories.vi";
-import { BLADE_CATEGORIES as catAr } from "./blade-categories.ar";
-
 import {
   SEO_CONFIG as seoEn,
   type PageSEO,
 } from "../../utils/seo-config";
-import { SEO_CONFIG as seoEs } from "./seo-config.es";
-import { SEO_CONFIG as seoFr } from "./seo-config.fr";
-import { SEO_CONFIG as seoRu } from "./seo-config.ru";
-import { SEO_CONFIG as seoVi } from "./seo-config.vi";
-import { SEO_CONFIG as seoAr } from "./seo-config.ar";
 
-// ── Lang → dataset maps ─────────────────────────────────────────────────────
-
-const bladesByLang: Record<Lang, Blade[]> = {
-  en: bladesEn,
-  es: bladesEs,
-  fr: bladesFr,
-  ru: bladesRu,
-  vi: bladesVi,
-  ar: bladesAr,
-};
-
-const categoriesByLang: Record<Lang, BladeCategoryMeta[]> = {
+// English data is always synchronously available.
+// Non-English entries are populated by preloadLocale() below.
+const bladesByLang: Partial<Record<Lang, Blade[]>> = { en: bladesEn };
+const categoriesByLang: Partial<Record<Lang, BladeCategoryMeta[]>> = {
   en: catEn,
-  es: catEs,
-  fr: catFr,
-  ru: catRu,
-  vi: catVi,
-  ar: catAr,
+};
+const seoByLang: Partial<Record<Lang, Record<string, PageSEO>>> = {
+  en: seoEn,
 };
 
-const seoByLang: Record<Lang, Record<string, PageSEO>> = {
-  en: seoEn,
-  es: seoEs,
-  fr: seoFr,
-  ru: seoRu,
-  vi: seoVi,
-  ar: seoAr,
+// ── Dynamic locale loaders ──────────────────────────────────────────────────
+// Each import() becomes its own Vite chunk (~500 KB per language) instead of
+// bundling all 6 language datasets (~2.8 MB) into the shared initial bundle.
+
+type NonEnLang = Exclude<Lang, "en">;
+
+const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
+  es: () =>
+    Promise.all([
+      import("./blades.es"),
+      import("./blade-categories.es"),
+      import("./seo-config.es"),
+    ]).then(([b, c, s]) => {
+      bladesByLang.es = b.blades;
+      categoriesByLang.es = c.BLADE_CATEGORIES;
+      seoByLang.es = s.SEO_CONFIG;
+    }),
+  fr: () =>
+    Promise.all([
+      import("./blades.fr"),
+      import("./blade-categories.fr"),
+      import("./seo-config.fr"),
+    ]).then(([b, c, s]) => {
+      bladesByLang.fr = b.blades;
+      categoriesByLang.fr = c.BLADE_CATEGORIES;
+      seoByLang.fr = s.SEO_CONFIG;
+    }),
+  ru: () =>
+    Promise.all([
+      import("./blades.ru"),
+      import("./blade-categories.ru"),
+      import("./seo-config.ru"),
+    ]).then(([b, c, s]) => {
+      bladesByLang.ru = b.blades;
+      categoriesByLang.ru = c.BLADE_CATEGORIES;
+      seoByLang.ru = s.SEO_CONFIG;
+    }),
+  vi: () =>
+    Promise.all([
+      import("./blades.vi"),
+      import("./blade-categories.vi"),
+      import("./seo-config.vi"),
+    ]).then(([b, c, s]) => {
+      bladesByLang.vi = b.blades;
+      categoriesByLang.vi = c.BLADE_CATEGORIES;
+      seoByLang.vi = s.SEO_CONFIG;
+    }),
+  ar: () =>
+    Promise.all([
+      import("./blades.ar"),
+      import("./blade-categories.ar"),
+      import("./seo-config.ar"),
+    ]).then(([b, c, s]) => {
+      bladesByLang.ar = b.blades;
+      categoriesByLang.ar = c.BLADE_CATEGORIES;
+      seoByLang.ar = s.SEO_CONFIG;
+    }),
 };
+
+// Promise cache — same instance returned on re-renders so React Suspense
+// (via use()) doesn't loop.
+const _localePromises = new Map<NonEnLang, Promise<void>>();
+
+/**
+ * Eagerly load the locale data for `lang` and return a Promise that resolves
+ * when it is ready. Returns a resolved Promise for English (always available).
+ * Safe to call multiple times — subsequent calls return the cached promise.
+ */
+export function preloadLocale(lang: Lang): Promise<void> {
+  if (lang === DEFAULT_LANG) return Promise.resolve();
+  const nonEn = lang as NonEnLang;
+  if (bladesByLang[nonEn]) return Promise.resolve(); // already loaded
+  let p = _localePromises.get(nonEn);
+  if (!p) {
+    p = LOCALE_LOADERS[nonEn]();
+    _localePromises.set(nonEn, p);
+  }
+  return p;
+}
 
 // ── Accessors ───────────────────────────────────────────────────────────────
 
 export function getBlades(lang: Lang): Blade[] {
-  return bladesByLang[lang] ?? bladesByLang[DEFAULT_LANG];
+  return bladesByLang[lang] ?? bladesByLang[DEFAULT_LANG]!;
 }
 
 export function getBladeById(id: string, lang: Lang): Blade | undefined {
@@ -113,7 +162,7 @@ export function getRelatedBlades(
 }
 
 export function getCategories(lang: Lang): BladeCategoryMeta[] {
-  return categoriesByLang[lang] ?? categoriesByLang[DEFAULT_LANG];
+  return categoriesByLang[lang] ?? categoriesByLang[DEFAULT_LANG]!;
 }
 
 export function getCategoryBySlug(
@@ -178,10 +227,10 @@ export function getOemMachinesForCategory(
  * pages with newly-added keys never render with empty meta.
  */
 export function getSEO(pageKey: string, lang: Lang): PageSEO {
-  const config = seoByLang[lang] ?? seoByLang[DEFAULT_LANG];
+  const config = seoByLang[lang] ?? seoByLang[DEFAULT_LANG]!;
   return (
     config[pageKey] ??
-    seoByLang[DEFAULT_LANG][pageKey] ??
+    seoByLang[DEFAULT_LANG]![pageKey] ??
     ({} as PageSEO)
   );
 }

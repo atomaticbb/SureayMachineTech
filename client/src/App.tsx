@@ -8,13 +8,14 @@ import {
   Redirect,
   Router as WouterRouter,
 } from "wouter";
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, use, useEffect, useState, type ReactNode } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
-import { LangProvider } from "./contexts/LangContext";
-import { parseLangFromPath } from "./lib/i18n";
+import { LangProvider, useLang } from "./contexts/LangContext";
+import { parseLangFromPath, DEFAULT_LANG } from "./lib/i18n";
+import { preloadLocale } from "@/data/locales";
 
 function lazyWithRetry<T extends React.ComponentType<any>>(
   importer: () => Promise<{ default: T }>,
@@ -192,6 +193,18 @@ function ProtectedRoute({
   return <Component />;
 }
 
+// ── Locale preloader ───────────────────────────────────────────────────────────
+// Suspends the route tree until the current language's data chunk is loaded.
+// For English (default lang) this is a no-op — English data is always available.
+// For other languages it fetches the per-lang chunk (~500 KB) before rendering.
+function LocalePreloader({ children }: { children: ReactNode }) {
+  const lang = useLang();
+  if (lang !== DEFAULT_LANG) {
+    use(preloadLocale(lang));
+  }
+  return <>{children}</>;
+}
+
 // ── Scroll restoration ─────────────────────────────────────────────────────────
 function ScrollToTop() {
   const [location] = useLocation();
@@ -208,7 +221,8 @@ function Router() {
     <>
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
-        <Switch>
+        <LocalePreloader>
+          <Switch>
           <Route path="/" component={Home} />
 
           {/* Products — blade-only architecture */}
@@ -240,7 +254,8 @@ function Router() {
           {/* 404 */}
           <Route path="/404" component={NotFound} />
           <Route component={NotFound} />
-        </Switch>
+          </Switch>
+        </LocalePreloader>
       </Suspense>
     </>
   );
