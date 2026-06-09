@@ -8,26 +8,54 @@
  *   1. dictionary for the requested language
  *   2. English fallback
  *   3. the key itself (so missing keys are visible in the UI)
+ *
+ * English is statically imported (always available). Non-English dictionaries
+ * are loaded on demand via loadDictionary(lang) — called by preloadLocale() in
+ * data/locales/index.ts so the UI strings are ready before any page renders.
  */
 
 import { DEFAULT_LANG, type Lang } from "./i18n";
 import en from "../locales/en.json";
-import es from "../locales/es.json";
-import fr from "../locales/fr.json";
-import ru from "../locales/ru.json";
-import vi from "../locales/vi.json";
-import ar from "../locales/ar.json";
 
 export type Dictionary = Record<string, string>;
 
-const dictionaries: Record<Lang, Dictionary> = {
+const dictionaries: Partial<Record<Lang, Dictionary>> = {
   en: en as Dictionary,
-  es: es as Dictionary,
-  fr: fr as Dictionary,
-  ru: ru as Dictionary,
-  vi: vi as Dictionary,
-  ar: ar as Dictionary,
 };
+
+// Promise cache — same instance returned on concurrent calls so we don't
+// trigger duplicate dynamic imports while the first one is in flight.
+const _dictPromises = new Map<Lang, Promise<void>>();
+
+export function loadDictionary(lang: Lang): Promise<void> {
+  if (lang === DEFAULT_LANG || dictionaries[lang]) return Promise.resolve();
+  let p = _dictPromises.get(lang);
+  if (!p) {
+    if (lang === "es")
+      p = import("../locales/es.json").then(m => {
+        dictionaries.es = m.default as unknown as Dictionary;
+      });
+    else if (lang === "fr")
+      p = import("../locales/fr.json").then(m => {
+        dictionaries.fr = m.default as unknown as Dictionary;
+      });
+    else if (lang === "ru")
+      p = import("../locales/ru.json").then(m => {
+        dictionaries.ru = m.default as unknown as Dictionary;
+      });
+    else if (lang === "vi")
+      p = import("../locales/vi.json").then(m => {
+        dictionaries.vi = m.default as unknown as Dictionary;
+      });
+    else if (lang === "ar")
+      p = import("../locales/ar.json").then(m => {
+        dictionaries.ar = m.default as unknown as Dictionary;
+      });
+    else p = Promise.resolve();
+    _dictPromises.set(lang, p);
+  }
+  return p;
+}
 
 export function translate(key: string, lang: Lang): string {
   return (
@@ -42,5 +70,5 @@ export function _setDictionaryForTest(lang: Lang, dict: Dictionary): void {
 
 /** Test-only: read back a dictionary (so tests can restore state). */
 export function _getDictionaryForTest(lang: Lang): Dictionary {
-  return dictionaries[lang];
+  return dictionaries[lang]!;
 }

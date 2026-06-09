@@ -24,7 +24,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist/public");
 const PORT = 4173;
 const BASE_URL = `http://localhost:${PORT}`;
-const CONCURRENCY = 3; // parallel Puppeteer pages
+const CONCURRENCY = 2; // parallel Puppeteer pages
 const TIMEOUT_MS = 45_000; // per-route navigation + selector timeout
 
 // Tracks routes whose prerender threw — exit 1 at end so CI hard-fails.

@@ -21,6 +21,7 @@
  */
 
 import { DEFAULT_LANG, type Lang } from "@/lib/i18n";
+import { loadDictionary } from "@/lib/translations";
 import {
   blades as bladesEn,
   type Blade,
@@ -58,6 +59,7 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.es"),
       import("./blade-categories.es"),
       import("./seo-config.es"),
+      loadDictionary("es"),
     ]).then(([b, c, s]) => {
       bladesByLang.es = b.blades;
       categoriesByLang.es = c.BLADE_CATEGORIES;
@@ -68,6 +70,7 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.fr"),
       import("./blade-categories.fr"),
       import("./seo-config.fr"),
+      loadDictionary("fr"),
     ]).then(([b, c, s]) => {
       bladesByLang.fr = b.blades;
       categoriesByLang.fr = c.BLADE_CATEGORIES;
@@ -78,6 +81,7 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.ru"),
       import("./blade-categories.ru"),
       import("./seo-config.ru"),
+      loadDictionary("ru"),
     ]).then(([b, c, s]) => {
       bladesByLang.ru = b.blades;
       categoriesByLang.ru = c.BLADE_CATEGORIES;
@@ -88,6 +92,7 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.vi"),
       import("./blade-categories.vi"),
       import("./seo-config.vi"),
+      loadDictionary("vi"),
     ]).then(([b, c, s]) => {
       bladesByLang.vi = b.blades;
       categoriesByLang.vi = c.BLADE_CATEGORIES;
@@ -98,6 +103,7 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.ar"),
       import("./blade-categories.ar"),
       import("./seo-config.ar"),
+      loadDictionary("ar"),
     ]).then(([b, c, s]) => {
       bladesByLang.ar = b.blades;
       categoriesByLang.ar = c.BLADE_CATEGORIES;
