@@ -2807,6 +2807,230 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "corrugated-slitter-scorer-blades",
+    tag: "TECHNICAL GUIDE",
+    date: "09.JUN.2026",
+    title:
+      "How Corrugated Slitter Scorer Blades Improve Board Edge Quality and Box Plant Efficiency",
+    excerpt:
+      "In corrugated box production, slitter scorer blades set the tone for every downstream step. Learn how to select the right blade material and geometry, maintain tooling, and cut dust, cracked scores, and downtime in your box plant.",
+    image: "/images/news/corrugated-slitter-knives.webp",
+    readTime: "8 MIN",
+    seoTitle:
+      "Corrugated Slitter Scorer Blades for Clean Board Edges | Sureay",
+    metaDescription:
+      "Learn how to select and maintain corrugated slitter scorer blades to cut dust, cracked scores, ragged edges, downtime, and waste in box plants.",
+    keywords:
+      "corrugated slitter scorer blades, corrugated slitter knives, slitter scorer blades, corrugated board cutting, box plant blades, corrugated scoring tools, tungsten carbide slitter blades, corrugated dust reduction",
+    relatedProductIds: ["rotary-slitter-knives-paper", "paper-cutting-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "In corrugated box production, the slitter scorer section sets the tone for everything downstream — printing, folding, gluing, die cutting, and final box quality. When slitter blades and scoring tools are correctly selected and well maintained, board leaves the line with clean edges, accurate widths, stable scores, and minimal dust. When those same tools are worn, misaligned, or poorly matched to the board grade, every step that follows becomes harder to control.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Corrugated slitter scorer blades may look like simple circular knives, but their performance depends on blade material, edge geometry, hardness, machine alignment, scoring pressure, board composition, and line speed working together. For any box plant trying to cut waste and improve uptime, blade selection is not a minor maintenance task. It is a production quality decision.",
+      },
+      {
+        type: "image",
+        value: "/images/news/corrugated-slitter-knives-2-pieces.webp",
+      },
+      {
+        type: "h2",
+        value: "Why Slitter Scorer Blade Quality Matters",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Corrugated board is a layered material. It can be single-wall, double-wall, or triple-wall, with different flute profiles, recycled or kraft liner, coated surfaces, and varying moisture levels. Each of these factors changes how the board responds to slitting and scoring.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A sharp, stable slitter blade separates the board cleanly without crushing the edge. That delivers square blanks, stable stacking, tighter print registration, and more accurate folding.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A worn or unsuitable blade does the opposite. It produces edge fuzz, heavy dust, delamination, crushed liners, uneven slit width, and a poor finished appearance. These defects may not stop the corrugator on the spot, but they surface later — in flexo folder gluers, die cutters, laminators, and packing lines.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Scoring deserves the same attention. Too much scoring pressure and the board cracks during folding; too little and the fold becomes inconsistent. If the slitter and scorer tools are not properly matched, a blank can pass inspection at the corrugator yet fail at box forming.",
+      },
+      {
+        type: "h2",
+        value: "Common Problems Caused by Poor Blade Condition",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The most visible defect is a **ragged board edge**, usually traced to a dull blade, incorrect overlap, insufficient side clearance, machine vibration, or contamination on the cutting edge.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Excessive dust** is the next most common issue. Dust degrades print quality, increases cleaning frequency, contaminates equipment, and dulls the appearance of finished boxes. It typically rises when the blade crushes fibers instead of cutting them.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Cracked scores** appear when the scoring profile, pressure, or board moisture is out of control. Recycled liners and dry board are especially prone to cracking under excessive scoring pressure.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Edge delamination** happens when the blade pulls or tears the board layers instead of shearing them cleanly. The root cause may be blade sharpness, weak board bonding, knife geometry, or line speed.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Frequent blade replacement** is itself a warning sign — often that the blade material does not suit the board grade, that the machine has runout or vibration, or that sharpening quality is inconsistent.",
+      },
+      {
+        type: "h2",
+        value: "Blade Material Options for Corrugated Slitting",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Material selection should reflect board grade, line speed, expected blade life, and sharpening strategy.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Material", "Best Fit", "Strengths", "Watch Points"],
+        tableRows: [
+          [
+            "Tool steel",
+            "Standard corrugated applications",
+            "Cost-efficient, easy to resharpen",
+            "Wears faster on abrasive recycled board",
+          ],
+          [
+            "High-speed steel (HSS)",
+            "Higher line speeds, frequent blade changes",
+            "Better wear and heat resistance than standard steels",
+            "Higher cost than basic tool steel",
+          ],
+          [
+            "Tungsten carbide",
+            "Demanding production, long runs",
+            "Holds sharp edge through long campaigns, low variation",
+            "Less tolerant of impact and misalignment; requires careful handling",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "For most box plants, the right answer is not the most expensive blade. It is the blade that delivers the lowest total cost per square meter of board produced — accounting for blade life, downtime, waste, sharpening cost, and product quality together.",
+      },
+      {
+        type: "h2",
+        value: "Edge Geometry and Tolerances",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Blade geometry governs cutting force, dust generation, edge smoothness, and durability. A sharper edge lowers cutting pressure and improves edge cleanliness, but it can wear faster and is more vulnerable to damage in abrasive recycled board. A stronger bevel improves durability for heavy grades and double-wall corrugated, but it requires more cutting force.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Dimensional accuracy is critical. Outer diameter, inner diameter, thickness, parallelism, flatness, and concentricity all affect performance. At high corrugator speeds, even small errors create vibration, heat, uneven wear, and inconsistent edges.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For slitter scorer systems, machine compatibility is essential. Before ordering, confirm the machine model, blade dimensions, mounting style, rotation direction, and whether the blade must meet an OEM specification.",
+      },
+      {
+        type: "image",
+        value: "/images/news/corrugated-slitter-knives-set.webp",
+      },
+      {
+        type: "h2",
+        value: "Scoring Tool Compatibility",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Slitting and scoring should be treated as one process, not two separate maintenance items. A clean slit edge is only valuable if the score line also folds correctly.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Scoring wheels must match board thickness, flute type, folding requirement, and final box design. The wrong scoring profile can crush the board, crack the liner, or leave weak folds. Operators should check score depth, alignment, pressure, and consistency across the full web — unevenly worn scoring tools cause blanks to fold differently from one side to the other.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When a plant changes board grade, liner type, or flute profile, the scoring setup usually needs to change with it. Running the same scorer pressure for every board grade is one of the most common causes of cracking and inconsistent folding.",
+      },
+      {
+        type: "h2",
+        value: "Maintenance Practices That Extend Blade Life",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Inspect regularly — watch for chipped edges, uneven wear, residue buildup, discoloration, vibration marks, and any change in cut quality. Keep tooling clean: paper dust, adhesive residue, coating particles, and starch build up around slitting sections, raising friction and hiding early signs of blade damage.",
+      },
+      {
+        type: "callout",
+        value:
+          "Checklist: Control the sharpening process — poor sharpening overheats the edge, alters the bevel, reduces diameter unevenly, or leaves micro-chipping. Always check a resharpened blade for balance, runout, and edge finish before returning it to production. Handle carbide and precision-ground blades in protective packaging, kept apart from other tools.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Replace on schedule, not on failure. Track blade life by board grade, production meters, shift, machine, and defect history — the data sharpens both purchasing and maintenance decisions.",
+      },
+      {
+        type: "image",
+        value: "/images/news/corrugator-line.webp",
+      },
+      {
+        type: "h2",
+        value: "What Buyers Should Tell a Blade Supplier",
+      },
+      {
+        type: "paragraph",
+        value:
+          "To specify corrugated slitter scorer blades correctly, give the supplier more than basic dimensions. Useful details include machine brand and model (plus any blade drawing), outer diameter, inner diameter, thickness and bevel type, the material currently in use, line speed, board grades and flute types, the defects you are seeing, your expected blade life, and your sharpening process.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Be specific about the failure mode — dust, edge crush, cracking, short blade life, or vibration. Once a supplier understands the real problem, it can often recommend a change in material, edge geometry, tolerance, or surface finish. For OEM replacement blades, samples or drawings are especially valuable; for performance improvement projects, photos of defects and worn blades help pinpoint the root cause.",
+      },
+      {
+        type: "h2",
+        value: "How Sureay Supports Corrugated Cutting Applications",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay supplies industrial slitting knives and custom cutting tools for demanding converting applications, including corrugated board production. For slitter scorer systems, Sureay manufactures precision circular slitter blades to customer drawings, samples, or machine requirements.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Depending on the application, Sureay supports tool steel, high-speed steel, carbide, and fully custom blade specifications engineered for clean cutting, stable dimensions, and long service life. For plants struggling with dust, ragged edges, cracked scores, or frequent blade changes, Sureay can review the current blade design and recommend a practical, better-performing replacement.",
+      },
+      {
+        type: "callout",
+        value:
+          "If your corrugator is producing dust, rough edges, cracked scores, or inconsistent blanks, Sureay can evaluate your blade drawings, machine model, board grade, and specific cutting problem to recommend the right [corrugated slitter scorer blades](/contact). Contact Sureay for custom corrugated slitter knives, scorer tooling support, and OEM-fit industrial blade solutions.",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
@@ -2830,6 +3054,7 @@ const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
   "coil-slitting-line-maintenance-guide": "Eric",
   "metal-slitting-lines-installation-guide": "lynn",
   "paper-guillotine-knives-selection-maintenance-guide": "Eric",
+  "corrugated-slitter-scorer-blades": "Eric",
 };
 
 // ── Helper Functions ──────────────────────────────────────────────────────────
