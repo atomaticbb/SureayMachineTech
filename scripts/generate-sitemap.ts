@@ -118,14 +118,25 @@ const industryPages: UrlEntry[] = [
   { path: "/custom", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
 ];
 
-const productPages: UrlEntry[] = blades.map(b => ({
+const EXCLUDED_PRODUCT_IDS = new Set([
+  "wood-chipper-blades-industrial",
+  "wood-chipper-blades-standard",
+]);
+
+const EXCLUDED_CATEGORY_SLUGS = new Set(["wood-chipper-blades"]);
+
+const productPages: UrlEntry[] = blades
+  .filter(b => !EXCLUDED_PRODUCT_IDS.has(b.id))
+  .map(b => ({
   path: `/products/${b.id}`,
   lastmod: TODAY,
   changefreq: "monthly",
   priority: "0.85",
 }));
 
-const categoryPages: UrlEntry[] = BLADE_CATEGORIES.map(c => ({
+const categoryPages: UrlEntry[] = BLADE_CATEGORIES
+  .filter(c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug))
+  .map(c => ({
   path: `/categories/${c.slug}`,
   lastmod: TODAY,
   changefreq: "monthly",

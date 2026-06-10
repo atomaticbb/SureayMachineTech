@@ -54,6 +54,60 @@ export function createApp({
     next();
   });
 
+  // Canonical redirects for deprecated / duplicate SEO paths.
+  app.use((req, res, next) => {
+    const redirects: Array<{ from: RegExp; to: string }> = [
+      {
+        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-industrial\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-standard\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/(?:en|es|fr|ru|vi|ar)\/categories\/wood-chipper-blades\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/products\/wood-chipper-blades-industrial\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/products\/wood-chipper-blades-standard\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/categories\/wood-chipper-blades\/?$/,
+        to: "/products/wood-chipper-blades",
+      },
+      {
+        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/shredder-blades-direct\/?$/,
+        to: "/categories/shredder-blades",
+      },
+      {
+        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/factory-direct-shredder-blades\/?$/,
+        to: "/categories/shredder-blades",
+      },
+      {
+        from: /^\/products\/shredder-blades-direct\/?$/,
+        to: "/categories/shredder-blades",
+      },
+      {
+        from: /^\/products\/factory-direct-shredder-blades\/?$/,
+        to: "/categories/shredder-blades",
+      },
+    ];
+
+    for (const rule of redirects) {
+      if (rule.from.test(req.path)) {
+        return res.redirect(301, rule.to);
+      }
+    }
+
+    next();
+  });
+
   app.use((req, res, next) => {
     if (req.path === "/admin" || req.path.startsWith("/admin/")) {
       res.setHeader("X-Robots-Tag", "noindex, nofollow, noarchive");

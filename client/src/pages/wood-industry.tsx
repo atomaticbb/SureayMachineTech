@@ -74,8 +74,8 @@ const PAGE_SCHEMA = {
         description:
           "HSS & D2 drum chipper knives for heavy forestry, whole-tree biomass processing and demolition wood recycling. Vacuum-hardened HRC 58–62.",
         brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-blades-industrial",
-        offers: getBladeAggregateOffer("wood-chipper-blades-industrial"),
+        url: "https://sureay.com/products/wood-chipper-blades",
+        offers: getBladeAggregateOffer("wood-chipper-blades"),
       },
     },
     {
@@ -89,8 +89,8 @@ const PAGE_SCHEMA = {
         description:
           "Reversible double-edge wood chipper knives in T10, 9CrSi & Cr12MoV. Flip when dull — doubles installed life before regrinding. OEM fit for Bandit, Vermeer & Patriot.",
         brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-blades-standard",
-        offers: getBladeAggregateOffer("wood-chipper-blades-standard"),
+        url: "https://sureay.com/products/wood-chipper-blades",
+        offers: getBladeAggregateOffer("wood-chipper-blades"),
       },
     },
     {

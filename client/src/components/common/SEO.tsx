@@ -12,6 +12,30 @@ const BRAND = "Sureay Blades";
 const BASE_URL = "https://sureay.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
 
+const BRAND_SUFFIX_PATTERNS = [
+  /\s*\|\s*Sureay\s*Blades\s*$/i,
+  /\s*\|\s*Sureay\s*$/i,
+];
+
+function isLikelyI18nKey(value: string): boolean {
+  // Matches dotted keys like "industry.plastic.seo.title".
+  return /^[a-z0-9_-]+(?:\.[a-z0-9_-]+){2,}$/i.test(value.trim());
+}
+
+function normalizeTitle(rawTitle: string): string {
+  const trimmed = rawTitle.trim();
+  if (!trimmed || isLikelyI18nKey(trimmed)) {
+    return BRAND;
+  }
+
+  const withoutBrand = BRAND_SUFFIX_PATTERNS.reduce(
+    (title, pattern) => title.replace(pattern, "").trim(),
+    trimmed
+  );
+
+  return withoutBrand ? `${withoutBrand} | ${BRAND}` : BRAND;
+}
+
 function dirForLang(lang: Lang): "ltr" | "rtl" {
   return lang === "ar" ? "rtl" : "ltr";
 }
@@ -78,7 +102,7 @@ export default function SEO({
   extraJsonLd,
 }: SEOProps) {
   const lang = useLang();
-  const fullTitle = title.includes(BRAND) ? title : `${title} | ${BRAND}`;
+  const fullTitle = normalizeTitle(title);
 
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and
