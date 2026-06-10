@@ -13,7 +13,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Check } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import US from "country-flag-icons/react/3x2/US";
+import GB from "country-flag-icons/react/3x2/GB";
 import ES from "country-flag-icons/react/3x2/ES";
 import FR from "country-flag-icons/react/3x2/FR";
 import RU from "country-flag-icons/react/3x2/RU";
@@ -30,7 +30,7 @@ import { useLang } from "@/contexts/LangContext";
 type FlagComponent = React.ComponentType<{ title?: string; className?: string }>;
 
 const LANG_META: Record<Lang, { label: string; Flag: FlagComponent }> = {
-  en: { label: "English", Flag: US },
+  en: { label: "English", Flag: GB },
   es: { label: "Español", Flag: ES },
   fr: { label: "Français", Flag: FR },
   ru: { label: "Русский", Flag: RU },
