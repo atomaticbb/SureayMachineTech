@@ -74,6 +74,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/plastic-industry",
     image: "/images/applications/Plastic-Waste-Recycling.webp",
+    imageMobile: "/images/applications/Plastic-Waste-Recycling-640w.webp",
     cta: "Recycling Solutions",
   },
   {
@@ -104,6 +105,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/paper-industry",
     image: "/images/applications/tissue-industry/tissue-and-paper.webp",
+    imageMobile: "/images/applications/tissue-and-paper-640w.webp",
     cta: "Paper & Tissue Solutions",
   },
   {
@@ -135,6 +137,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/metal-industry",
     image: "/images/applications/slitting-line-machine-working.webp",
+    imageMobile: "/images/applications/slitting-line-machine-working-640w.webp",
     cta: "Metal Processing Solutions",
   },
   {
@@ -166,6 +169,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/converting-industry",
     image: "/images/applications/converting-industry.webp",
+    imageMobile: "/images/applications/converting-industry-640w.webp",
     cta: "Converting Solutions",
   },
   {
@@ -197,6 +201,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/wood-industry",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
+    imageMobile: "/images/applications/wood-chipper-blades-working-640w.webp",
     cta: "Wood & Forestry Solutions",
   },
   {
@@ -228,6 +233,7 @@ export const ECOSYSTEMS = [
     ],
     href: "/new-energy-industry",
     image: "/images/applications/new-energy-industry.webp",
+    imageMobile: "/images/applications/new-energy-industry-640w.webp",
     cta: "New Energy Solutions",
   },
 ];

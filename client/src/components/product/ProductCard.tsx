@@ -15,11 +15,28 @@ interface ProductCardProps {
   sectorBadge?: BladeSectorType;
 }
 
+function getResponsiveImage(bladeImage: string): {
+  src: string;
+  srcSet?: string;
+} {
+  if (!bladeImage.endsWith(".webp")) {
+    return { src: bladeImage };
+  }
+
+  const mobile = bladeImage.replace(/\.webp$/i, "-640w.webp");
+  return {
+    src: bladeImage,
+    srcSet: `${mobile} 640w, ${bladeImage} 1280w`,
+  };
+}
+
 export default function ProductCard({
   blade,
   variant = "list",
   sectorBadge,
 }: ProductCardProps) {
+  const responsiveImage = getResponsiveImage(blade.image);
+
   // ─── Grid variant: large image + title + desc + CTA ──────────────────────
   if (variant === "grid") {
     return (
@@ -28,10 +45,13 @@ export default function ProductCard({
           {/* Large image */}
           <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden flex-shrink-0">
             <img
-              src={blade.image}
+              src={responsiveImage.src}
+              srcSet={responsiveImage.srcSet}
+              sizes="(max-width: 768px) 92vw, (max-width: 1280px) 46vw, 360px"
               alt={blade.name}
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
               width={400}
               height={300}
               className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
@@ -91,10 +111,13 @@ export default function ProductCard({
         <a className="group flex gap-4 bg-white border border-slate-200 hover:border-[#001f4d] overflow-hidden transition-colors duration-200 p-4 items-center">
           <div className="w-20 h-20 flex-shrink-0 bg-slate-50 overflow-hidden">
             <img
-              src={blade.image}
+              src={responsiveImage.src}
+              srcSet={responsiveImage.srcSet}
+              sizes="(max-width: 768px) 80px, 80px"
               alt={blade.name}
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
               width={80}
               height={80}
               className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300"
@@ -143,10 +166,13 @@ export default function ProductCard({
             style={{ minHeight: "220px" }}
           >
             <img
-              src={blade.image}
+              src={responsiveImage.src}
+              srcSet={responsiveImage.srcSet}
+              sizes="(max-width: 768px) 100vw, 300px"
               alt={blade.name}
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
               width={300}
               height={220}
               className="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500"

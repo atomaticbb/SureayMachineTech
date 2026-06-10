@@ -4,18 +4,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FEATURED_PRODUCTS } from "@/data/homeData";
 import { useTranslation } from "@/lib/useTranslation";
 
-// Triple the products for seamless infinite scroll
-const LOOP_ITEMS = [
-  ...FEATURED_PRODUCTS,
-  ...FEATURED_PRODUCTS,
-  ...FEATURED_PRODUCTS,
-];
-
 export default function AuthorityCarousel() {
   const { t } = useTranslation();
   const carouselRef = useRef<HTMLDivElement>(null);
-  const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const normCooldownRef = useRef(false);
 
   const getItemWidth = (): number => {
     const el = carouselRef.current;
@@ -24,33 +15,6 @@ export default function AuthorityCarousel() {
     if (!item) return 232;
     const gap = parseFloat(getComputedStyle(el).gap) || 0;
     return item.offsetWidth + gap;
-  };
-
-  // Teleport to middle set when reaching boundaries (invisible to user)
-  const normalise = () => {
-    const el = carouselRef.current;
-    if (!el) return;
-    const oneSetW = el.scrollWidth / 3;
-
-    let jumped = false;
-    if (el.scrollLeft >= oneSetW * 2) {
-      el.scrollLeft -= oneSetW;
-      jumped = true;
-    } else if (el.scrollLeft < oneSetW - 2) {
-      el.scrollLeft += oneSetW;
-      jumped = true;
-    }
-
-    if (jumped) {
-      normCooldownRef.current = true;
-      setTimeout(() => { normCooldownRef.current = false; }, 100);
-    }
-  };
-
-  const handleScroll = () => {
-    if (normCooldownRef.current) return;
-    if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
-    scrollTimerRef.current = setTimeout(normalise, 50);
   };
 
   const scrollCarousel = (dir: "left" | "right") => {
@@ -62,29 +26,18 @@ export default function AuthorityCarousel() {
     });
   };
 
-  // Initialize scroll to middle set
-  useEffect(() => {
-    const el = carouselRef.current;
-    if (!el) return;
-    requestAnimationFrame(() => { el.scrollLeft = el.scrollWidth / 3; });
-  }, []);
-
-  useEffect(() => {
-    const el = carouselRef.current;
-    if (!el) return;
-    el.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      el.removeEventListener("scroll", handleScroll);
-      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
-    };
-  }, []);
-
   // Auto-scroll every 3 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       const el = carouselRef.current;
       if (!el) return;
-      el.scrollBy({ left: getItemWidth(), behavior: "smooth" });
+      const itemWidth = getItemWidth();
+      const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - itemWidth;
+      if (atEnd) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+      el.scrollBy({ left: itemWidth, behavior: "smooth" });
     }, 3000);
     return () => clearInterval(timer);
   }, []);
@@ -117,7 +70,7 @@ export default function AuthorityCarousel() {
               className="flex-1 flex gap-0 sm:gap-8 overflow-x-auto py-2 snap-x snap-mandatory sm:snap-none [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none" }}
             >
-              {LOOP_ITEMS.map((product, i) => (
+              {FEATURED_PRODUCTS.map((product, i) => (
                 <Link
                   href={product.href}
                   key={`${product.name}-${i}`}

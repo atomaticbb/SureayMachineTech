@@ -23,27 +23,7 @@
       as="image"
       type="image/webp"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Non-blocking font load: print trick swaps media to 'all' after parse -->
-    <link
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap"
-      />
-    </noscript>
-
     <!-- Google Analytics 4 - Consent Mode v2 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-NDTDXJNB51"
-    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -76,6 +56,33 @@
       }
 
       gtag("config", "G-NDTDXJNB51", { send_page_view: false });
+
+      // Load analytics after critical rendering: either post-load idle window,
+      // or first user interaction (whichever comes first).
+      let gaLoaded = false;
+      const loadGa = () => {
+        if (gaLoaded) return;
+        gaLoaded = true;
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-NDTDXJNB51";
+        document.head.appendChild(script);
+      };
+
+      window.addEventListener(
+        "load",
+        () => {
+          window.setTimeout(loadGa, 2500);
+        },
+        { once: true }
+      );
+
+      ["pointerdown", "keydown", "scroll", "touchstart"].forEach((evt) => {
+        window.addEventListener(evt, loadGa, {
+          once: true,
+          passive: true,
+        });
+      });
     </script>
 
     <!-- Schema.org JSON-LD for Manufacturing Business -->

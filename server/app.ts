@@ -237,6 +237,12 @@ export function createApp({
 
           if (filePath.includes(`${path.sep}assets${path.sep}`)) {
             res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+            return;
+          }
+
+          const immutableExt = /\.(?:js|css|webp|avif|png|jpe?g|gif|svg|ico|woff2?|ttf|otf)$/i;
+          if (immutableExt.test(filePath)) {
+            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
           }
         },
       })

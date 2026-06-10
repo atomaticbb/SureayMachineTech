@@ -17,6 +17,22 @@ import { LangProvider, useLang } from "./contexts/LangContext";
 import { parseLangFromPath, DEFAULT_LANG } from "./lib/i18n";
 import { preloadLocale } from "@/data/locales";
 
+const importProductListPage = () => import("./pages/ProductListPage");
+const importProductDetail = () => import("./pages/ProductDetail");
+
+const initialPath =
+  typeof window !== "undefined" ? window.location.pathname : "";
+const isProductsEntryPath =
+  /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products(?:\/|$)/.test(initialPath) ||
+  /^\/products(?:\/|$)/.test(initialPath);
+
+if (isProductsEntryPath) {
+  void importProductListPage();
+  if (/^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products\/.+/.test(initialPath) || /^\/products\/.+/.test(initialPath)) {
+    void importProductDetail();
+  }
+}
+
 function lazyWithRetry<T extends React.ComponentType<any>>(
   importer: () => Promise<{ default: T }>,
   key: string
@@ -52,11 +68,11 @@ function lazyWithRetry<T extends React.ComponentType<any>>(
 // ── Lazy page chunks ───────────────────────────────────────────────────────────
 const Home = lazyWithRetry(() => import("./pages/Home"), "home");
 const ProductListPage = lazyWithRetry(
-  () => import("./pages/ProductListPage"),
+  () => importProductListPage(),
   "products"
 );
 const ProductDetail = lazyWithRetry(
-  () => import("./pages/ProductDetail"),
+  () => importProductDetail(),
   "product-detail"
 );
 const CategoryAggregation = lazyWithRetry(
@@ -216,6 +232,30 @@ function ScrollToTop() {
 
 // ── Router ─────────────────────────────────────────────────────────────────────
 function Router() {
+  const [location] = useLocation();
+
+  useEffect(() => {
+    if (location === "/" || location === "/about" || location === "/contact") {
+      const warmup = () => {
+        void importProductListPage();
+      };
+
+      if (typeof window !== "undefined" && "requestIdleCallback" in window) {
+        const id = (window as Window & {
+          requestIdleCallback: (callback: () => void, options?: { timeout: number }) => number;
+          cancelIdleCallback: (handle: number) => void;
+        }).requestIdleCallback(warmup, { timeout: 1500 });
+        return () => {
+          (window as Window & { cancelIdleCallback: (handle: number) => void }).cancelIdleCallback(id);
+        };
+      }
+
+      const timer = globalThis.setTimeout(warmup, 1200);
+      return () => globalThis.clearTimeout(timer);
+    }
+    return;
+  }, [location]);
+
   usePageTracking();
   return (
     <>

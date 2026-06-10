@@ -32,9 +32,12 @@ export default function TabEcosystem() {
                 {/* Photo */}
                 <img
                   src={eco.image}
+                  srcSet={`${eco.imageMobile ?? eco.image} 640w, ${eco.image} 1280w`}
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
                   alt={eco.industry}
                   loading="lazy"
                   decoding="async"
+                  fetchPriority="low"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
                 />
 

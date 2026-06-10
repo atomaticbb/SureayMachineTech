@@ -230,7 +230,7 @@ export default function BladeListPage() {
       <section
         id="products"
         ref={listSectionRef}
-        className="border-b border-slate-200"
+        className="border-b border-slate-200 min-h-[720px]"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 lg:py-14">
           <ProductGrid
