@@ -10,6 +10,7 @@
 import fs from "fs";
 import path from "path";
 import sharp from "sharp";
+import QRCode from "qrcode";
 import type { Blade, BladeSpec, BladeComponent } from "../../client/src/data/blades.ts";
 
 // ── Image encoding ────────────────────────────────────────────────────────────
@@ -104,6 +105,81 @@ export function parseMarkdownToHtml(text: string): string {
 
   flushParagraph();
   return htmlParts.join("\n");
+}
+
+// ── Product "Features" copy (clean, sentence-safe) ──────────────────────────────
+
+/** Escape HTML then render simple **bold** markdown as <strong>. */
+function renderInline(text: string): string {
+  return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
+/** Trim to the last sentence boundary at or before `max` chars (never mid-word). */
+function trimToSentence(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const window = text.slice(0, max);
+  const lastStop = Math.max(
+    window.lastIndexOf(". "),
+    window.lastIndexOf("! "),
+    window.lastIndexOf("? "),
+    window.lastIndexOf("; ")
+  );
+  if (lastStop > max * 0.5) return window.slice(0, lastStop + 1).trim();
+  // No sentence break found — fall back to last word boundary + ellipsis
+  const lastSpace = window.lastIndexOf(" ");
+  return window.slice(0, lastSpace > 0 ? lastSpace : max).trim() + "…";
+}
+
+/**
+ * Build clean Features copy for a product page.
+ * Uses the intro of `fullDescription` (everything before the first "## " heading),
+ * keeps whole paragraphs/sentences, strips Markdown residue, renders **bold**.
+ */
+export function buildFeaturesHtml(blade: Blade, maxChars = 440): string {
+  const raw = blade.fullDescription || blade.description || "";
+  if (!raw) return "";
+
+  // Intro = text before the first "## " section heading
+  const headingIdx = raw.search(/\n##\s/);
+  const intro = headingIdx === -1 ? raw : raw.slice(0, headingIdx);
+
+  // Split into paragraphs on blank lines, collapse internal whitespace
+  const paras = intro
+    .split(/\n\s*\n/)
+    .map((p) => p.replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+
+  if (paras.length === 0) return "";
+
+  // Accumulate whole paragraphs up to budget; always keep at least the first
+  const chosen: string[] = [];
+  let used = 0;
+  for (const p of paras) {
+    if (chosen.length === 0 || used + p.length <= maxChars) {
+      chosen.push(p);
+      used += p.length;
+    } else break;
+    if (used >= maxChars) break;
+  }
+
+  // If the first (only) paragraph overflows, trim it to a sentence boundary
+  if (chosen.length === 1 && chosen[0].length > maxChars) {
+    chosen[0] = trimToSentence(chosen[0], maxChars);
+  }
+
+  return chosen.map((p) => `<p>${renderInline(p)}</p>`).join("");
+}
+
+// ── QR code (inline SVG) ────────────────────────────────────────────────────────
+
+/** Generate a crisp inline-SVG QR code for the given URL (navy on white). */
+export async function generateQrSvg(url: string): Promise<string> {
+  return QRCode.toString(url, {
+    type: "svg",
+    margin: 0,
+    color: { dark: "#001f4dff", light: "#ffffffff" },
+    errorCorrectionLevel: "M",
+  });
 }
 
 // ── Specs grid builder ────────────────────────────────────────────────────────

@@ -1,18 +1,21 @@
 /**
  * scripts/catalog/templates/product-page.ts
  *
- * Compact 1-page landscape product layout:
- * Top row  — photo grid (main + side thumbs) + info panel (name, desc, key specs)
- * Bottom row — full-width dimension table
- * Extra row — compatible machines + engineering advantages (shown when table is sparse)
+ * Two layouts share one data-prep path (dispatched by `index`):
+ *  - index 0 (first product of each sector) → HERO layout: large image + navy
+ *    info panel + full-width gold spec bar + dimension table. Breaks the rhythm.
+ *  - otherwise → COMPACT layout: photo grid + info panel + full-width table.
  */
 
 import type { Blade } from "../../../client/src/data/blades.ts";
 import {
   imageToBase64Compressed,
   buildDimensionTableHtml,
+  buildFeaturesHtml,
+  generateQrSvg,
   escapeHtml,
 } from "../utils.ts";
+import { COMPANY } from "../constants.ts";
 import { pageHeader, pageFooter } from "./about.ts";
 
 /** Threshold: if dimension rows ≤ this, show extra content below */
@@ -52,6 +55,22 @@ function buildAdvantagesHtml(
     </div>`;
 }
 
+/** QR card → live product page. `onDark` styles it for the navy hero panel. */
+function buildQrCard(
+  qrSvg: string,
+  urlDisplay: string,
+  onDark = false
+): string {
+  return `
+    <div class="product-qr${onDark ? " on-dark" : ""}">
+      <div class="product-qr-code">${qrSvg}</div>
+      <div class="product-qr-text">
+        <div class="product-qr-label">Scan · Live Specs &amp; RFQ</div>
+        <div class="product-qr-url">${escapeHtml(urlDisplay)}</div>
+      </div>
+    </div>`;
+}
+
 export async function buildProductPage(
   blade: Blade,
   index: number,
@@ -59,13 +78,119 @@ export async function buildProductPage(
   logoSvg: string,
   pageNum: number
 ): Promise<string> {
-  // Main product image
+  const isHero = index === 0;
+
+  // Main product image — larger for the hero layout
   const mainImgSrc = await imageToBase64Compressed(
     publicDir,
     blade.image,
-    600
+    isHero ? 1000 : 600
   );
 
+  // QR code → live product page
+  const productUrl = `${COMPANY.websiteUrl}${blade.link}`;
+  const qrSvg = await generateQrSvg(productUrl);
+  const productUrlDisplay = productUrl.replace(/^https?:\/\//, "");
+
+  // Dimension table (shared)
+  const dimHtml = buildDimensionTableHtml(blade);
+
+  if (isHero) {
+    return buildHeroLayout(
+      blade,
+      mainImgSrc,
+      qrSvg,
+      productUrlDisplay,
+      dimHtml,
+      logoSvg,
+      pageNum
+    );
+  }
+
+  return buildCompactLayout(
+    blade,
+    mainImgSrc,
+    qrSvg,
+    productUrlDisplay,
+    dimHtml,
+    publicDir,
+    logoSvg,
+    pageNum
+  );
+}
+
+// ── HERO layout (first product of a sector) ─────────────────────────────────────
+
+function buildHeroLayout(
+  blade: Blade,
+  mainImgSrc: string,
+  qrSvg: string,
+  productUrlDisplay: string,
+  dimHtml: string,
+  logoSvg: string,
+  pageNum: number
+): string {
+  const featuresHtml = buildFeaturesHtml(blade, 320);
+
+  // Up to 4 headline specs for the gold spec bar
+  const barSpecs = (blade.specs || []).slice(0, 4);
+  const specBarHtml = barSpecs.length
+    ? `<div class="hero-spec-bar">${barSpecs
+        .map(
+          (s) => `
+        <div class="hero-spec">
+          <div class="hero-spec-value">${escapeHtml(s.value)}</div>
+          <div class="hero-spec-label">${escapeHtml(s.label)}</div>
+        </div>`
+        )
+        .join("")}</div>`
+    : "";
+
+  return `
+  <div class="product-page product-page-hero page">
+    ${pageHeader(logoSvg)}
+
+    <div class="hero-body">
+      <div class="hero-top">
+        <div class="hero-img">
+          ${mainImgSrc ? `<img src="${mainImgSrc}" alt="${escapeHtml(blade.name)}" />` : ""}
+          <span class="hero-img-tag">Featured</span>
+        </div>
+        <div class="hero-panel">
+          <span class="hero-eyebrow">${escapeHtml(blade.categoryDisplay)}</span>
+          <h2 class="hero-name">${escapeHtml(blade.name)}</h2>
+          <p class="hero-fullname">${escapeHtml(blade.fullName || "")}</p>
+          <div class="hero-gold-rule"></div>
+          <div class="hero-features">${featuresHtml}</div>
+          ${buildQrCard(qrSvg, productUrlDisplay, true)}
+        </div>
+      </div>
+
+      ${specBarHtml}
+
+      ${dimHtml ? `
+      <div class="product-bottom">
+        <div class="product-table-title">Standard Dimensions</div>
+        ${dimHtml}
+      </div>` : ""}
+    </div>
+
+    ${pageFooter(pageNum)}
+  </div>`;
+}
+
+// ── COMPACT layout (remaining products) ─────────────────────────────────────────
+
+async function buildCompactLayout(
+  blade: Blade,
+  mainImgSrc: string,
+  qrSvg: string,
+  productUrlDisplay: string,
+  dimHtml: string,
+  publicDir: string,
+  logoSvg: string,
+  pageNum: number
+): Promise<string> {
   // Gallery thumbnails (up to 3 others besides main)
   const thumbImages = (blade.gallery || [])
     .filter((img) => img !== blade.image)
@@ -81,11 +206,8 @@ export async function buildProductPage(
     )
     .join("");
 
-  // Description — use fullDescription if available for richer content
-  const rawDesc = blade.fullDescription || blade.description || "";
-  const maxLen = 450;
-  const shortDesc =
-    rawDesc.length > maxLen ? rawDesc.substring(0, maxLen - 3) + "..." : rawDesc;
+  // Features copy — clean intro paragraphs, sentence-safe, no Markdown residue
+  const featuresHtml = buildFeaturesHtml(blade);
 
   // Key specs (up to 6 for the mini grid)
   const keySpecs = (blade.specs || []).slice(0, 6);
@@ -99,12 +221,9 @@ export async function buildProductPage(
     )
     .join("");
 
-  // Dimension table
-  const dimCount = blade.standardDimensions?.length || 0;
-  const dimHtml = buildDimensionTableHtml(blade);
-  const isSparse = dimCount <= SPARSE_THRESHOLD;
-
   // Extra content for sparse products
+  const dimCount = blade.standardDimensions?.length || 0;
+  const isSparse = dimCount <= SPARSE_THRESHOLD;
   const machinesHtml = isSparse
     ? buildMachinesHtml(blade.compatibleMachines)
     : "";
@@ -135,9 +254,12 @@ export async function buildProductPage(
           <span class="product-category-badge">${escapeHtml(blade.categoryDisplay)}</span>
 
           <div class="product-features-title">Features</div>
-          <div class="product-features-text">${escapeHtml(shortDesc)}</div>
+          <div class="product-features-text">${featuresHtml}</div>
 
-          ${specsHtml ? `<div class="product-specs-mini">${specsHtml}</div>` : ""}
+          <div class="product-info-footer">
+            ${specsHtml ? `<div class="product-specs-mini">${specsHtml}</div>` : ""}
+            ${buildQrCard(qrSvg, productUrlDisplay)}
+          </div>
         </div>
       </div>
 

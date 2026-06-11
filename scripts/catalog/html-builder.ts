@@ -27,7 +27,7 @@ export async function buildCatalogHtml(
 ): Promise<string> {
   const logoSvg = readSvgFile(logoPath);
 
-  const cover = buildCoverPage(config, logoSvg);
+  const cover = await buildCoverPage(config, logoSvg, publicDir);
   const about = await buildAboutPage(publicDir, logoSvg, 1);
 
   // Products start at page 2 (after about)
@@ -83,13 +83,14 @@ export async function buildFullCatalogHtml(
       "Full product catalog covering all industrial blade categories across recycling, paper, metal, converting, and new energy industries.",
   };
 
-  const cover = buildCoverPage(fullConfig, logoSvg);
+  const cover = await buildCoverPage(fullConfig, logoSvg, publicDir);
   const about = await buildAboutPage(publicDir, logoSvg, 1);
 
   // Build industry sections in sector order
   const sectorOrder = Object.keys(SECTOR_CONFIG);
   const sections: string[] = [];
   let pageNum = 2;
+  let sectionIndex = 0;
 
   for (const sectorKey of sectorOrder) {
     const sectorBlades = allBlades.filter((b) => b.sector === sectorKey);
@@ -97,12 +98,14 @@ export async function buildFullCatalogHtml(
 
     const hero = INDUSTRY_HERO[sectorKey];
     if (hero) {
+      sectionIndex++;
       const divider = await buildIndustryDivider(
         hero,
+        SECTOR_CONFIG[sectorKey],
         sectorBlades.length,
+        sectionIndex,
         publicDir,
-        logoSvg,
-        pageNum
+        logoSvg
       );
       sections.push(divider);
       pageNum++;

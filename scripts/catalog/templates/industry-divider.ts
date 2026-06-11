@@ -1,52 +1,64 @@
 /**
  * scripts/catalog/templates/industry-divider.ts
  *
- * Full-page industry section divider for the complete product catalog.
- * Left side: title + subtitle + description text.
- * Right side: 2×2 photo grid from the industry hero gallery.
+ * Full-bleed industry section divider — echoes the cover (factory-photo wash +
+ * foil-gold detailing) but distinct: oversized section numeral, huge sector
+ * title, and a key-data strip. Acts as a strong visual section break.
  */
 
-import type { IndustryHeroMeta } from "../constants.ts";
-import { COLORS } from "../constants.ts";
+import type { IndustryHeroMeta, SectorMeta } from "../constants.ts";
+import { COMPANY } from "../constants.ts";
 import { imageToBase64Compressed, escapeHtml } from "../utils.ts";
-import { pageHeader, pageFooter } from "./about.ts";
 
 export async function buildIndustryDivider(
   hero: IndustryHeroMeta,
+  sector: SectorMeta,
   productCount: number,
+  sectionIndex: number,
   publicDir: string,
-  logoSvg: string,
-  pageNum: number
+  logoSvg: string
 ): Promise<string> {
-  const imgSrcs = await Promise.all(
-    hero.images.map((img) => imageToBase64Compressed(publicDir, img, 400))
-  );
+  // Lead image of the industry gallery, full-bleed
+  const photo = await imageToBase64Compressed(publicDir, hero.images[0], 1600);
 
-  const gridHtml = imgSrcs
-    .filter(Boolean)
+  const num = String(sectionIndex).padStart(2, "0");
+
+  // Data strip: dynamic product count + two static industry stats
+  const stats = [
+    { value: String(productCount), label: "Product Lines" },
+    ...hero.stats,
+  ];
+  const statsHtml = stats
     .map(
-      (src) =>
-        `<div class="industry-grid-img"><img src="${src}" alt="" /></div>`
+      (s) => `
+      <div class="divider-stat">
+        <div class="divider-stat-value">${escapeHtml(s.value)}</div>
+        <div class="divider-stat-label">${escapeHtml(s.label)}</div>
+      </div>`
     )
     .join("");
 
   return `
-  <div class="industry-divider page">
-    ${pageHeader(logoSvg)}
+  <div class="industry-divider">
+    ${photo ? `<img class="divider-photo" src="${photo}" alt="" />` : ""}
+    <div class="divider-overlay"></div>
+    <div class="divider-num">${num}</div>
 
-    <div class="industry-divider-body">
-      <div class="industry-divider-left">
-        <div class="industry-divider-badge">${productCount} Products</div>
-        <h2 class="industry-divider-title">${escapeHtml(hero.title)}</h2>
-        <div class="industry-divider-gold-rule"></div>
-        <p class="industry-divider-subtitle">${escapeHtml(hero.subtitle)}</p>
-        <p class="industry-divider-body-text">${escapeHtml(hero.body)}</p>
+    <div class="divider-top">
+      <div class="divider-logo">
+        ${logoSvg}<span class="divider-wordmark">Sureay Blades</span>
       </div>
-      <div class="industry-divider-right">
-        <div class="industry-grid">${gridHtml}</div>
-      </div>
+      <div class="divider-section-tag">Section ${num}</div>
     </div>
 
-    ${pageFooter(pageNum)}
+    <div class="divider-content">
+      <div class="divider-kicker">${escapeHtml(hero.subtitle)}</div>
+      <h2 class="divider-title">${escapeHtml(sector.title)}</h2>
+      <div class="divider-gold-rule"></div>
+      <p class="divider-body">${escapeHtml(hero.body)}</p>
+      <div class="divider-stats">${statsHtml}</div>
+    </div>
+
+    <div class="divider-foot">${COMPANY.website}</div>
   </div>`;
 }

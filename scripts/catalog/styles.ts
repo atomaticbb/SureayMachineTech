@@ -5,9 +5,10 @@
  */
 
 import { COLORS } from "./constants.ts";
+import { FONT_FACE_CSS } from "./fonts.ts";
 
 export const CATALOG_CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+${FONT_FACE_CSS}
 
 @page {
   size: A4 landscape;
@@ -129,73 +130,108 @@ h1, h2, h3, h4, h5, h6 {
 .cover-page {
   width: 297mm;
   height: 210mm;
-  background: ${COLORS.navy};
+  background: ${COLORS.navyDark};
   color: ${COLORS.white};
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 25mm 30mm 30mm 30mm;
   position: relative;
   overflow: hidden;
   break-after: page;
 }
 
-.cover-bg-pattern {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image:
-    repeating-linear-gradient(135deg,
-      rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px,
-      transparent 1px, transparent 12px);
+/* Full-bleed factory photo */
+.cover-photo {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* Navy wash — dark on the left/bottom for legibility, reveals factory at right */
+.cover-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(100deg,
+      rgba(0,18,50,0.97) 0%,
+      rgba(0,24,62,0.90) 28%,
+      rgba(0,31,77,0.55) 56%,
+      rgba(0,31,77,0.28) 80%,
+      rgba(0,18,50,0.72) 100%),
+    linear-gradient(0deg, rgba(0,12,34,0.88) 0%, rgba(0,12,34,0) 46%);
+}
+
+/* Foil-stamp inner frame (metallic gold gradient border) */
+.cover-frame {
+  position: absolute; inset: 8mm;
+  border: 0.6mm solid transparent;
+  border-image: linear-gradient(135deg,#f6d97a,#e8b84b,#b8862b,#e8b84b,#f6d97a) 1;
   pointer-events: none;
 }
 
-.cover-accent-bar {
-  position: absolute; top: 0; right: 100mm;
-  width: 3px; height: 100%;
-  background: ${COLORS.gold};
+.cover-top {
+  position: absolute; top: 15mm; left: 18mm; right: 18mm;
+  display: flex; align-items: center; justify-content: space-between;
 }
 
-.cover-logo {
-  position: absolute; top: 22mm; left: 30mm; width: 35mm;
-}
-.cover-logo svg { width: 35mm; height: auto; }
+.cover-logo { display: flex; align-items: center; gap: 4mm; }
+.cover-logo svg { width: 15mm; height: auto; }
 .cover-logo svg .st0,
 .cover-logo svg path { fill: ${COLORS.white} !important; }
+.cover-wordmark {
+  font-family: "Oswald", sans-serif;
+  font-size: 13pt; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: ${COLORS.white};
+}
 
 .cover-year-badge {
-  position: absolute; top: 22mm; right: 30mm;
   font-family: "Oswald", sans-serif;
-  font-size: 10pt; font-weight: 600;
-  color: ${COLORS.gold};
-  letter-spacing: 0.15em; text-transform: uppercase;
+  font-size: 9pt; font-weight: 600;
+  color: ${COLORS.navy};
+  background: linear-gradient(135deg,#f6d97a,#e8b84b 50%,#cf9a33);
+  padding: 2mm 5mm;
+  letter-spacing: 0.16em; text-transform: uppercase;
+}
+
+.cover-content {
+  position: absolute; left: 18mm; right: 18mm; bottom: 19mm;
 }
 
 .cover-gold-rule {
-  width: 45mm; height: 3px;
-  background: ${COLORS.gold};
-  margin-bottom: 5mm;
+  width: 38mm; height: 1.4mm;
+  background: linear-gradient(90deg,#f6d97a,#e8b84b,#b8862b);
+  margin-bottom: 6mm;
+}
+
+.cover-kicker {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 8pt; color: ${COLORS.gold};
+  letter-spacing: 0.22em; text-transform: uppercase;
+  margin-bottom: 4mm;
 }
 
 .cover-title {
-  font-size: 36pt; font-weight: 700;
-  line-height: 1.05; margin-bottom: 3mm;
+  font-size: 46pt; font-weight: 700;
+  line-height: 1.0; margin-bottom: 4mm;
+  max-width: 210mm;
 }
 
 .cover-subtitle {
   font-family: "Inter", sans-serif;
-  font-size: 11pt; font-weight: 400;
-  color: rgba(255,255,255,0.7);
+  font-size: 13pt; font-weight: 300;
+  color: rgba(255,255,255,0.82);
   text-transform: none; letter-spacing: 0;
-  margin-bottom: 8mm;
+  margin-bottom: 9mm;
 }
 
 .cover-meta {
-  display: flex; flex-direction: column; gap: 1.5mm;
+  display: flex; align-items: center;
   font-family: "JetBrains Mono", monospace;
-  font-size: 7pt; color: rgba(255,255,255,0.45);
-  text-transform: uppercase; letter-spacing: 0.1em;
+  font-size: 7pt; color: rgba(255,255,255,0.6);
+  text-transform: uppercase; letter-spacing: 0.12em;
 }
+.cover-meta span {
+  padding: 0 5mm;
+  border-left: 1px solid rgba(232,184,75,0.5);
+}
+.cover-meta span:first-child { padding-left: 0; border-left: none; }
 
 /* ── ABOUT ─────────────────────────────────────────────── */
 
@@ -283,84 +319,122 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── INDUSTRY DIVIDER PAGE ────────────────────────────── */
 
-.industry-divider { width: 297mm; height: 210mm; break-after: page; }
-
-.industry-divider-body {
-  margin-top: 11mm;
-  height: calc(210mm - 11mm - 8mm);
-  display: flex;
-  gap: 8mm;
-  padding: 6mm 7mm;
+.industry-divider {
+  width: 297mm; height: 210mm;
+  background: ${COLORS.navyDark};
+  color: ${COLORS.white};
+  position: relative; overflow: hidden;
+  break-after: page;
 }
 
-.industry-divider-left {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 4mm;
+.divider-photo {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
 }
 
-.industry-divider-badge {
+.divider-overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(100deg,
+      rgba(0,18,50,0.52) 0%,
+      rgba(0,24,62,0.46) 30%,
+      rgba(0,31,77,0.30) 58%,
+      rgba(0,31,77,0.15) 82%,
+      rgba(0,18,50,0.40) 100%),
+    linear-gradient(0deg, rgba(0,12,34,0.82) 0%, rgba(0,12,34,0) 52%);
+}
+
+/* Oversized faint section numeral, upper-right */
+.divider-num {
+  position: absolute;
+  top: -8mm; right: 8mm;
+  font-family: "Oswald", sans-serif;
+  font-size: 150pt; font-weight: 700;
+  line-height: 1;
+  color: rgba(232,184,75,0.12);
+  letter-spacing: -0.02em;
+}
+
+.divider-top {
+  position: absolute; top: 15mm; left: 18mm; right: 18mm;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.divider-logo { display: flex; align-items: center; gap: 4mm; }
+.divider-logo svg { width: 13mm; height: auto; }
+.divider-logo svg .st0,
+.divider-logo svg path { fill: ${COLORS.white} !important; }
+.divider-wordmark {
+  font-family: "Oswald", sans-serif;
+  font-size: 11pt; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: ${COLORS.white};
+}
+.divider-section-tag {
   font-family: "JetBrains Mono", monospace;
-  font-size: 7pt; color: ${COLORS.gold};
-  text-transform: uppercase; letter-spacing: 0.1em;
-  font-weight: 600;
-  margin-bottom: 4mm;
-  border: 1px solid ${COLORS.gold};
-  display: inline-block;
+  font-size: 7.5pt; color: ${COLORS.gold};
+  letter-spacing: 0.16em; text-transform: uppercase;
+  border: 1px solid rgba(232,184,75,0.6);
   padding: 1.5mm 4mm;
-  align-self: flex-start;
 }
 
-.industry-divider-title {
-  font-size: 22pt; color: ${COLORS.navy};
-  line-height: 1.15; margin-bottom: 4mm;
+.divider-content {
+  position: absolute; left: 18mm; right: 18mm; bottom: 20mm;
+  max-width: 215mm;
 }
-
-.industry-divider-gold-rule {
-  width: 25mm; height: 2.5px;
-  background: ${COLORS.gold};
-  margin-bottom: 4mm;
-}
-
-.industry-divider-subtitle {
+.divider-kicker {
   font-family: "Inter", sans-serif;
-  font-size: 10pt; color: ${COLORS.gold};
-  font-weight: 600;
+  font-size: 10pt; font-weight: 600;
+  color: ${COLORS.gold};
   text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 4mm; line-height: 1.3;
+}
+.divider-title {
+  font-size: 40pt; font-weight: 700;
+  line-height: 1.0; margin-bottom: 4mm;
+  color: ${COLORS.white};
+}
+.divider-gold-rule {
+  width: 34mm; height: 1.4mm;
+  background: linear-gradient(90deg,#f6d97a,#e8b84b,#b8862b);
   margin-bottom: 5mm;
-  line-height: 1.3;
+}
+.divider-body {
+  font-family: "Inter", sans-serif;
+  font-size: 9pt; font-weight: 300;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.6; max-width: 165mm;
+  margin-bottom: 8mm;
 }
 
-.industry-divider-body-text {
-  font-size: 8.5pt; color: ${COLORS.textPrimary};
-  line-height: 1.65;
+/* Key-data strip */
+.divider-stats {
+  display: flex; align-items: stretch;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  padding-top: 5mm;
+}
+.divider-stat {
+  padding-right: 14mm; margin-right: 14mm;
+  border-right: 1px solid rgba(255,255,255,0.18);
+}
+.divider-stat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+.divider-stat-value {
+  font-family: "Oswald", sans-serif;
+  font-size: 18pt; font-weight: 600;
+  color: ${COLORS.gold}; line-height: 1;
+  margin-bottom: 1.5mm;
+}
+.divider-stat-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 6.5pt; color: rgba(255,255,255,0.6);
+  text-transform: uppercase; letter-spacing: 0.1em;
 }
 
-.industry-divider-right {
-  width: 145mm;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
-.industry-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2.5mm;
-  width: 100%;
-  height: 100%;
-}
-
-.industry-grid-img {
-  overflow: hidden;
-  position: relative;
-}
-
-.industry-grid-img img {
-  width: 100%; height: 100%; object-fit: cover;
+.divider-foot {
+  position: absolute; right: 18mm; bottom: 11mm;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 7pt; color: rgba(255,255,255,0.45);
+  letter-spacing: 0.12em;
 }
 
 /* ── PRODUCT PAGE ──────────────────────────────────────── */
@@ -386,10 +460,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 4mm;
 }
 
-/* When data-sparse, top row expands to fill page */
-.product-body.sparse .product-top { flex: 1; }
-.product-body.sparse .product-photos { min-height: 90mm; }
-.product-body.sparse .product-photo-main { min-height: 80mm; }
+/* When data-sparse, size sections to content (extra row + QR fill the page);
+   forcing flex-grow here previously overflowed the info column onto the table. */
+.product-body.sparse .product-top { flex: 0 0 auto; }
+.product-body.sparse .product-bottom { flex: 0 0 auto; }
 
 /* Photo grid: main + gallery side */
 .product-photos {
@@ -483,13 +557,46 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 7.5pt; color: ${COLORS.textPrimary};
   line-height: 1.55;
 }
+.product-features-text p { margin-bottom: 1.8mm; }
+.product-features-text p:last-child { margin-bottom: 0; }
+
+/* Bottom group of the info panel: specs grid + QR card, pinned to bottom */
+.product-info-footer { margin-top: auto; }
 
 .product-specs-mini {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
   border: 1px solid ${COLORS.borderColor};
-  margin-top: auto;
+}
+
+/* QR card — scannable link to the live product page */
+.product-qr {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+  margin-top: 2.5mm;
+  padding: 2.5mm 3mm;
+  background: ${COLORS.coldGray};
+  border: 1px solid ${COLORS.borderColor};
+  border-left: 2mm solid ${COLORS.gold};
+}
+.product-qr-code {
+  width: 15mm; height: 15mm; flex-shrink: 0;
+  background: ${COLORS.white};
+}
+.product-qr-code svg { width: 100%; height: 100%; display: block; }
+.product-qr-text { display: flex; flex-direction: column; gap: 1mm; }
+.product-qr-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 7.5pt; font-weight: 600;
+  color: ${COLORS.navy};
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.product-qr-url {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 6.5pt; color: ${COLORS.textSecondary};
+  letter-spacing: 0.02em;
 }
 
 .product-spec-item {
@@ -516,7 +623,9 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-top: 3mm;
+  margin-top: 4mm;
+  padding-top: 4mm;
+  border-top: 1px solid ${COLORS.borderColor};
   min-height: 0;
 }
 
@@ -653,10 +762,109 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-advantage-desc {
-  font-size: 6pt; color: ${COLORS.textSecondary};
-  line-height: 1.4;
+  font-size: 6.8pt; color: #334155;
+  line-height: 1.45;
 }
+
+/* ── PRODUCT PAGE — HERO (first product of a sector) ────── */
+
+.product-page-hero .hero-body {
+  margin-top: 11mm;
+  height: calc(210mm - 11mm - 8mm);
+  display: flex; flex-direction: column;
+  padding: 5mm 7mm 0 7mm;
 }
+
+.hero-top { display: flex; height: 98mm; flex-shrink: 0; }
+
+.hero-img {
+  position: relative;
+  width: 162mm; flex-shrink: 0;
+  background: linear-gradient(145deg,#eef1f5 0%,#dde2e8 100%);
+  border: 1px solid ${COLORS.borderColor};
+  display: flex; align-items: center; justify-content: center;
+  padding: 6mm; overflow: hidden;
+}
+.hero-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.hero-img-tag {
+  position: absolute; top: 0; left: 0;
+  background: ${COLORS.gold}; color: ${COLORS.navy};
+  font-family: "Oswald", sans-serif;
+  font-size: 7pt; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  padding: 1.5mm 4mm;
+}
+
+.hero-panel {
+  flex: 1;
+  background: ${COLORS.navy};
+  color: ${COLORS.white};
+  padding: 7mm 8mm;
+  display: flex; flex-direction: column;
+}
+.hero-eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 7pt; color: ${COLORS.gold};
+  text-transform: uppercase; letter-spacing: 0.14em;
+  margin-bottom: 3mm;
+}
+.hero-name {
+  font-size: 21pt; font-weight: 700; line-height: 1.05;
+  color: ${COLORS.white}; margin-bottom: 1.5mm;
+}
+.hero-fullname {
+  font-family: "Inter", sans-serif;
+  font-size: 8pt; font-weight: 300;
+  color: rgba(255,255,255,0.6);
+  text-transform: none; letter-spacing: 0;
+  margin-bottom: 4mm;
+}
+.hero-gold-rule {
+  width: 30mm; height: 1.2mm;
+  background: linear-gradient(90deg,#f6d97a,#e8b84b,#b8862b);
+  margin-bottom: 4mm;
+}
+.hero-features {
+  font-size: 8pt; color: rgba(255,255,255,0.85);
+  line-height: 1.55; flex: 1;
+}
+.hero-features p { margin-bottom: 2mm; }
+.hero-features p:last-child { margin-bottom: 0; }
+
+/* Full-width gold spec bar — headline specs under the hero */
+.hero-spec-bar {
+  display: flex;
+  background: ${COLORS.navyDark};
+  margin-top: 4mm; flex-shrink: 0;
+}
+.hero-spec {
+  flex: 1;
+  padding: 3.5mm 5mm;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  overflow: hidden;
+}
+.hero-spec:last-child { border-right: none; }
+.hero-spec-value {
+  font-family: "Oswald", sans-serif;
+  font-size: 11pt; font-weight: 600;
+  color: ${COLORS.gold}; line-height: 1.15;
+  margin-bottom: 1mm;
+}
+.hero-spec-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 6pt; color: rgba(255,255,255,0.6);
+  text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+/* QR card — dark variant for the navy hero panel */
+.product-qr.on-dark {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-left: 2mm solid ${COLORS.gold};
+  margin-top: 4mm;
+}
+.product-qr.on-dark .product-qr-label { color: ${COLORS.white}; }
+.product-qr.on-dark .product-qr-url { color: rgba(255,255,255,0.6); }
 
 /* ── MANUFACTURING PROCESS ─────────────────────────────── */
 

@@ -46,6 +46,8 @@ export interface IndustryHeroMeta {
   body: string;
   /** First 4 gallery images from the industry page hero */
   images: string[];
+  /** Two key stats shown in the divider data strip (product count is appended dynamically) */
+  stats: { value: string; label: string }[];
 }
 
 export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
@@ -54,10 +56,14 @@ export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
     subtitle: "Precision Knives, Filterless Systems & OEM Wear Parts",
     body: "Sureay Machinery specializes in manufacturing premium industrial knives, melt filtration equipment, and high-wear components for the plastics recycling industry. Our material expertise in D2, SKD-11, and tungsten carbide ensures maximum blade life in shredding, granulating, and extrusion applications.",
     images: [
-      "/images/applications/plastic-industry/single-shredder-blades-04.webp",
+      "/images/applications/Plastic-Waste-Recycling.webp",
       "/images/applications/plastic-industry/mutil-shaft-shredder-blades.webp",
       "/images/applications/plastic-industry/four-shaft-shredder-blade-00.webp",
       "/images/applications/plastic-industry/shredder-blades-03.webp",
+    ],
+    stats: [
+      { value: "D2 · SKD-11 · WC", label: "Wear-Grade Alloys" },
+      { value: "55–62 HRC", label: "Working Hardness" },
     ],
   },
   paper: {
@@ -70,6 +76,10 @@ export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
       "/images/applications/tissue-industry/paper-cutting-blades-02.webp",
       "/images/applications/tissue-industry/granulator-blades-05.webp",
     ],
+    stats: [
+      { value: "Triple-Ground", label: "Log Saw Edge Finish" },
+      { value: "±0.01 mm", label: "Slitting Tolerance" },
+    ],
   },
   metal: {
     title: "Industrial Metal Slitting & Shear Blade Manufacturer",
@@ -80,6 +90,10 @@ export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
       "/images/applications/metal-industry/single-shredder-blades-010.webp",
       "/images/applications/metal-industry/metal-shear-blades-00.webp",
       "/images/applications/metal-industry/metal-slitter-knives-00.webp",
+    ],
+    stats: [
+      { value: "5-Axis CNC Ground", label: "Profile Accuracy" },
+      { value: "OEM Drawings", label: "Reverse-Engineered From" },
     ],
   },
   converting: {
@@ -92,6 +106,10 @@ export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
       "/images/applications/converting-industry/rotary-slitter-knives-08.webp",
       "/images/applications/converting-industry/rotary-slitter-knives-09.webp",
     ],
+    stats: [
+      { value: "±0.002 mm", label: "Thickness Tolerance" },
+      { value: "TiN · DLC", label: "Anti-Stick Coatings" },
+    ],
   },
   new_energy: {
     title: "Lithium Battery & New Energy Precision Slitting Knife Supplier",
@@ -102,6 +120,10 @@ export const INDUSTRY_HERO: Record<string, IndustryHeroMeta> = {
       "/images/applications/energy-industry/slitting-blades.webp",
       "/images/applications/energy-industry/slitting-blades-11.webp",
       "/images/applications/energy-industry/slitting-blades-12.webp",
+    ],
+    stats: [
+      { value: "Tungsten Carbide", label: "Electrode Slitting Grade" },
+      { value: "Zero-Notch", label: "Foil Edge Quality" },
     ],
   },
 };
