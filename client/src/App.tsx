@@ -124,6 +124,10 @@ const PrivacyPolicy = lazyWithRetry(
   () => import("./pages/PrivacyPolicy"),
   "privacy-policy"
 );
+const Terms = lazyWithRetry(
+  () => import("./pages/Terms"),
+  "terms"
+);
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {
@@ -287,6 +291,7 @@ function Router() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/terms" component={Terms} />
           <Route path="/news" component={News} />
           <Route path="/news/:id" component={NewsDetail} />
 
