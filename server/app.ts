@@ -138,6 +138,8 @@ export function createApp({
             "blob:",
             "https://www.google-analytics.com",
             "https://www.googletagmanager.com",
+            "https://www.google.com",
+            "https://googleads.g.doubleclick.net",
           ],
           connectSrc: [
             "'self'",
@@ -145,6 +147,9 @@ export function createApp({
             "https://www.google-analytics.com",
             "https://region1.google-analytics.com",
             "https://stats.g.doubleclick.net",
+            "https://www.google.com",
+            "https://pagead2.googlesyndication.com",
+            "https://googleads.g.doubleclick.net",
           ],
           objectSrc: ["'none'"],
           frameSrc: ["https://www.youtube.com", "https://www.youtube-nocookie.com"],
