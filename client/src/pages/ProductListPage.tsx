@@ -5,6 +5,7 @@
  */
 
 import { useEffect, useRef, useState } from "react";
+import { Download, Loader2 } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
@@ -54,14 +55,20 @@ const FACTORY_IMAGES = [
   },
 ];
 
+const COMPLETE_CATALOG_URL = "/catalogs/sureay-complete-product-catalog.pdf";
+type CatalogState = "idle" | "form" | "loading" | "done";
+
 export default function BladeListPage() {
   const lang = useLang();
   const blades = getBlades(lang);
   const [selectedCategory, setSelectedCategory] = useState<
     BladeCategoryType | "all"
   >("all");
-  const [sortOrder, setSortOrder] = useState<"featured" | "az">("featured");
   const [filterTop, setFilterTop] = useState(74);
+  const [catalogState, setCatalogState] = useState<CatalogState>("idle");
+  const [catalogEmail, setCatalogEmail] = useState("");
+  const [catalogError, setCatalogError] = useState("");
+  const catalogBoxRef = useRef<HTMLDivElement | null>(null);
   const listSectionRef = useRef<HTMLElement | null>(null);
   const didMountRef = useRef<boolean>(false);
   const filterScrollRef = useRef(0);
@@ -87,10 +94,41 @@ export default function BladeListPage() {
     selectedCategory === "all" ? true : b.category === selectedCategory
   );
 
-  const sortedBlades =
-    sortOrder === "az"
-      ? [...filteredBlades].sort((a, b) => a.name.localeCompare(b.name))
-      : filteredBlades;
+  const handleCatalogSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setCatalogState("loading");
+    setCatalogError("");
+
+    try {
+      const res = await fetch("/api/catalog-download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: catalogEmail }),
+      });
+
+      if (!res.ok) throw new Error();
+
+      setCatalogState("done");
+
+      const a = document.createElement("a");
+      a.href = COMPLETE_CATALOG_URL;
+      a.download = "sureay-complete-product-catalog.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      gtagEvent("file_download", {
+        event_category: "catalog",
+        file_name: "sureay-complete-product-catalog.pdf",
+        file_extension: "pdf",
+        link_url: COMPLETE_CATALOG_URL,
+        page_context: "products",
+      });
+    } catch {
+      setCatalogState("form");
+      setCatalogError("Something went wrong. Please try again.");
+    }
+  };
 
   useEffect(() => {
     if (!didMountRef.current) {
@@ -102,6 +140,21 @@ export default function BladeListPage() {
       block: "start",
     });
   }, [selectedCategory]);
+
+  useEffect(() => {
+    if (catalogState === "idle") return;
+
+    const handleOutsideClick = (event: MouseEvent) => {
+      const target = event.target as Node;
+      if (catalogBoxRef.current && !catalogBoxRef.current.contains(target)) {
+        setCatalogState("idle");
+        setCatalogError("");
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, [catalogState]);
 
   return (
     <div className="min-h-screen bg-white antialiased">
@@ -210,16 +263,97 @@ export default function BladeListPage() {
               })}
             </div>
 
-            {/* Right: sort */}
-            <div className="flex items-center flex-shrink-0">
-              <select
-                value={sortOrder}
-                onChange={e => setSortOrder(e.target.value as "featured" | "az")}
-                className="font-mono text-[11px] text-slate-500 tracking-widest border border-slate-200 bg-white px-3 py-1.5 rounded-none focus:outline-none focus:border-[#001f4d] cursor-pointer"
-              >
-                <option value="featured">Sort: Featured</option>
-                <option value="az">Sort: A → Z</option>
-              </select>
+            {/* Right: download + sort */}
+            <div
+              ref={catalogBoxRef}
+              className="relative flex items-center gap-2 flex-shrink-0"
+            >
+              {catalogState === "idle" && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setCatalogState("form");
+                    setCatalogError("");
+                  }}
+                  className="inline-flex items-center gap-3 font-mono text-sm font-black text-white tracking-[0.12em] border-2 border-[#001f4d] bg-[#001f4d] px-6 py-3.5 min-h-[58px] min-w-[250px] rounded-none hover:bg-white hover:text-[#001f4d] hover:border-[#001f4d] transition-colors"
+                >
+                  <Download className="w-5 h-5 shrink-0" />
+                  <span className="hidden sm:inline whitespace-nowrap text-[14px] tracking-[0.08em]">
+                    Download Catalog PDF
+                  </span>
+                  <span className="sm:hidden whitespace-nowrap text-[13px]">
+                    Catalog PDF
+                  </span>
+                </button>
+              )}
+
+              {(catalogState === "form" || catalogState === "loading") && (
+                <form
+                  onSubmit={handleCatalogSubmit}
+                  className="absolute right-0 top-full mt-2 z-40 w-[min(92vw,340px)] border-2 border-slate-300 bg-white p-3 space-y-2"
+                >
+                  <p className="font-mono text-[10px] text-slate-500 tracking-[0.14em]">
+                    Enter your work email to download
+                  </p>
+                  <input
+                    type="email"
+                    required
+                    autoFocus
+                    value={catalogEmail}
+                    onChange={e => setCatalogEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    className="w-full border border-slate-300 px-3 py-2 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
+                  />
+                  {catalogError && (
+                    <p className="text-red-500 text-xs font-mono">{catalogError}</p>
+                  )}
+                  <div className="flex gap-2">
+                    <button
+                      type="submit"
+                      disabled={catalogState === "loading"}
+                      className="flex-1 bg-[#001f4d] text-white font-black text-[11px] tracking-[0.14em] px-3 py-2 hover:bg-[#003366] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                    >
+                      {catalogState === "loading" ? (
+                        <>
+                          <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                          <span>Sending...</span>
+                        </>
+                      ) : (
+                        "Send & Download"
+                      )}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setCatalogState("idle");
+                        setCatalogError("");
+                      }}
+                      className="px-3 py-2 border border-slate-300 text-slate-500 text-[11px] font-mono tracking-[0.14em] hover:border-slate-400 transition-colors"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </form>
+              )}
+
+              {catalogState === "done" && (
+                <div className="absolute right-0 top-full mt-2 z-40 w-[min(92vw,340px)] border-2 border-slate-300 bg-white px-4 py-3 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="text-green-600 font-black text-sm">✓</span>
+                    <span className="font-mono text-[10px] text-slate-600 tracking-[0.12em]">
+                      Download started
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setCatalogState("idle")}
+                    className="text-[10px] font-mono tracking-[0.12em] text-slate-500 hover:text-slate-700"
+                  >
+                    Close
+                  </button>
+                </div>
+              )}
+
             </div>
 
           </div>
@@ -234,7 +368,7 @@ export default function BladeListPage() {
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 lg:py-14">
           <ProductGrid
-            blades={sortedBlades}
+            blades={filteredBlades}
             layout="grid"
             onShowAll={() => setSelectedCategory("all")}
           />

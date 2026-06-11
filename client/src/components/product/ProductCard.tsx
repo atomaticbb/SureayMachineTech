@@ -1,6 +1,6 @@
 /**
  * ProductCard — blade product card in three variants:
- *   'grid'    → vertical card (large image + title + desc + CTA) for 2-col grid
+ *   'grid'    → vertical card (large image + title + CTA) for 2-col grid
  *   'list'    → compact horizontal row used in BladeListPage sidebar layout
  *   'related' → compact horizontal row used in Related Blades section of BladeDetail
  */
@@ -37,7 +37,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   const responsiveImage = getResponsiveImage(blade.image);
 
-  // ─── Grid variant: large image + title + desc + CTA ──────────────────────
+  // ─── Grid variant: large image + title + CTA ─────────────────────────────
   if (variant === "grid") {
     return (
       <Link href={blade.link}>
@@ -74,12 +74,17 @@ export default function ProductCard({
             <p className="text-[10px] font-black text-slate-400  tracking-widest mb-2">
               {blade.categoryDisplay}
             </p>
-            <h3 className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366]  tracking-tight leading-tight mb-4 transition-colors">
+            <h3
+              className="text-xl lg:text-2xl font-black text-[#001f4d] group-hover:text-[#003366]  tracking-tight leading-tight min-h-[6rem] lg:min-h-[7.2rem] mb-6 transition-colors"
+              style={{
+                display: "-webkit-box",
+                WebkitLineClamp: 4,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+              }}
+            >
               {blade.fullName || blade.name}
             </h3>
-            <p className="text-sm text-slate-600 leading-relaxed line-clamp-3 mb-6">
-              {blade.description}
-            </p>
             <div className="mt-auto">
               <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black  tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
                 View Details
