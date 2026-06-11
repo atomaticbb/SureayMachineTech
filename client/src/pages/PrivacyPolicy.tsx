@@ -431,7 +431,7 @@ export default function PrivacyPolicy() {
               <p className="text-white font-semibold">
                 Sureay Machinery Technology Co., Ltd.
               </p>
-              <p>No. 36 Liudao, Taihu County, Anqing, Anhui, China 246400</p>
+              <p>Industrial Development Zone, Bowang Town, Bowang District, Ma'anshan City, Anhui Province, China</p>
               <p>
                 Email:{" "}
                 <a
