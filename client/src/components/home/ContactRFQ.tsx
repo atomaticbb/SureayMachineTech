@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import type { ContactSubmissionResponse } from "@shared/types";
 import { useTranslation } from "@/lib/useTranslation";
+import { gtagEvent } from "@/lib/gtag";
 
 const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.webp,.gif";
 const MAX_FILE_MB = 15;
@@ -92,6 +93,11 @@ export default function ContactRFQ({
             : "Your inquiry has been saved. If your request is urgent, please contact us by email or WhatsApp.")
       );
       setEmailNoticeOnly(!emailSent);
+      gtagEvent("generate_lead", {
+        event_category: "homepage_rfq",
+        form_location: "homepage_bottom",
+        ...(productName ? { product_name: productName } : {}),
+      });
       setSubmitted(true);
       setAttachment(null);
     } catch (err) {
