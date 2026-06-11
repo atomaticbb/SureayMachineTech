@@ -106,6 +106,7 @@ const corePages: UrlEntry[] = [
   { path: "/products", lastmod: TODAY, changefreq: "weekly", priority: "0.9" },
   { path: "/about", lastmod: TODAY, changefreq: "yearly", priority: "0.6" },
   { path: "/contact", lastmod: TODAY, changefreq: "yearly", priority: "0.7" },
+  { path: "/privacy-policy", lastmod: TODAY, changefreq: "yearly", priority: "0.3" },
 ];
 
 const industryPages: UrlEntry[] = [

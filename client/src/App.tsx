@@ -120,6 +120,10 @@ const CustomBlades = lazyWithRetry(
   () => import("./pages/custom-blades"),
   "custom-blades"
 );
+const PrivacyPolicy = lazyWithRetry(
+  () => import("./pages/PrivacyPolicy"),
+  "privacy-policy"
+);
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {
@@ -282,6 +286,7 @@ function Router() {
           {/* Static pages */}
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/news" component={News} />
           <Route path="/news/:id" component={NewsDetail} />
 

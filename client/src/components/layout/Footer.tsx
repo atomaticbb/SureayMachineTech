@@ -262,6 +262,12 @@ export default function Footer() {
             >
               {t("nav.contact")}
             </Link>
+            <Link
+              href="/privacy-policy"
+              className="hover:text-slate-400 transition-colors"
+            >
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>
