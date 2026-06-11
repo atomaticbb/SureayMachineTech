@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { useTranslation } from "@/lib/useTranslation";
+import { gtagEvent } from "@/lib/gtag";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -225,6 +226,7 @@ export default function Footer() {
                 </p>
                 <a
                   href="mailto:lynn@sureay.com"
+                  onClick={() => gtagEvent("email_click", { link_location: "footer" })}
                   className="text-slate-300 hover:text-white transition-colors font-semibold"
                 >
                   lynn@sureay.com

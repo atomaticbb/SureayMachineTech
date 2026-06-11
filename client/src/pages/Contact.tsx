@@ -400,6 +400,7 @@ export default function Contact() {
                 href="#"
                 onClick={e => {
                   e.preventDefault();
+                  gtagEvent("email_click", { link_location: "contact_page" });
                   const el = e.currentTarget as HTMLAnchorElement;
                   window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
                 }}
@@ -421,6 +422,7 @@ export default function Contact() {
                 href="https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => gtagEvent("whatsapp_click", { link_location: "contact_page" })}
                 className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none hover:text-white/70 transition-colors"
               >
                 +86 180-0555-0657

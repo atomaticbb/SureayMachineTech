@@ -4,6 +4,8 @@
  * Improves mobile conversion rates with persistent call-to-action
  */
 
+import { gtagEvent } from "@/lib/gtag";
+
 const WA_URL =
   "https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20your%20industrial%20blades.%20Please%20send%20me%20more%20information.";
 
@@ -16,6 +18,7 @@ export default function MobileStickyCTA() {
           href={WA_URL}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => gtagEvent("whatsapp_click", { link_location: "mobile_sticky_cta" })}
           aria-label="Chat on WhatsApp"
           className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white font-black text-sm  tracking-widest rounded-none hover:bg-[#1ebe5d] transition-colors duration-200 shrink-0"
         >
