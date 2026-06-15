@@ -46,6 +46,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy — Sureay Machinery Technology"
         description="Privacy policy for sureay.com — data collection, cookies, Google Analytics, Google Ads tracking, GDPR rights, and contact information."
+        canonicalUrl="/privacy-policy"
       />
       <Navbar />
       <main className="bg-[#0a0f1a] min-h-screen">

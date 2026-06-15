@@ -3031,11 +3031,174 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "sureay-manufacturing-facility-capabilities",
+    tag: "COMPANY NEWS",
+    date: "15.JUN.2026",
+    title:
+      "Inside Sureay's Factory: A Look at the Machinery Behind Every Precision Blade",
+    excerpt:
+      "From CNC lathes and NIDEK machining centers to ULMAKE cylindrical grinders, DK7745 wire EDM machines, and in-house heat treatment — a photo tour of the equipment Sureay uses to produce industrial blades for 50+ countries.",
+    image: "/images/about/factory-cnc-workshop.png",
+    readTime: "4 MIN",
+    seoTitle:
+      "Inside Sureay's Blade Factory: CNC Machining, Grinding & EDM Equipment | Sureay",
+    metaDescription:
+      "Photo tour of Sureay's industrial blade manufacturing equipment: NIDEK VMC machining centers, ULMAKE CNC cylindrical grinders, DK7745 wire EDM machines, MESUN band saws, and in-house heat treatment furnaces.",
+    keywords:
+      "industrial blade manufacturer, CNC blade machining, ULMAKE cylindrical grinder, wire EDM blade cutting, NIDEK VMC machining center, blade heat treatment, OEM industrial blades, Sureay factory equipment",
+    relatedProductIds: [
+      "twin-shaft-blades-recycling",
+      "granulator-blades",
+      "rotary-slitter-knives",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "When buyers ask what sets Sureay blades apart, the answer is equipment depth and process control. Every stage of production — turning, milling, grinding, EDM cutting, heat treatment — is performed in-house at our 15,000 m² Ma'anshan facility. No subcontracting, no blind spots. This article walks through the actual machines on our factory floor.",
+      },
+      {
+        type: "h2",
+        value: "CNC Turning: The Starting Point for Circular Blades",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-cnc-lathes.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our CNC lathe workshop handles the rough turning of circular and disc blades — slitter knives, log saw blades, granulator rotors — from raw bar stock or forgings. Multiple CNC lathes run simultaneously, maintaining consistent outer diameter and bore concentricity before the part moves to grinding. Geometry is programmed and locked at this stage, eliminating operator variation across repeat orders.",
+      },
+      {
+        type: "h2",
+        value: "CNC Vertical Machining Centers: Complex Profiles and Features",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-nidek-vmc.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our NIDEK VMC-L vertical machining centers handle milling, drilling, tapping, and contouring on blade bodies that require complex 3D features. Shredder blade tooth profiles, bolt hole patterns, and custom mounting geometries are all produced here. The machines are equipped with automatic tool changers and run unattended on longer production batches.",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-cnc-machining-center.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A second CNC machining center handles medium-format blade work, including face milling of shear blade contact surfaces and profile milling for custom OEM configurations. Both machining centers feed the grinding department after roughing is complete.",
+      },
+      {
+        type: "h2",
+        value: "CNC Grinding: Where Tolerances Are Finalized",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-ulmake-cnc-grinder.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The ULMAKE 3MK2020 CNC cylindrical grinder is one of our primary finishing machines for circular blades. It grinds outer diameters, bores, and bevels to dimensional tolerances of ±0.001 mm with submicron positional feedback. [Slitter knives](/products/rotary-slitter-knives) and log saw blades that require tight runout and concentricity specifications pass through this machine before final inspection.",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-cylindrical-grinder.png",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Additional cylindrical grinders handle high-volume grinding of standard disc blades and shredder rotor shafts. Surface grinders in the same department finish flat faces on shear blades and guillotine knives, achieving surface finishes to Ra ≤ 0.02 µm where the application demands it.",
+      },
+      {
+        type: "h2",
+        value: "Wire EDM: Precision Profiles That Grinding Cannot Reach",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-wire-edm-workshop.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our DK7745 wire EDM workshop runs multiple machines in parallel. Wire EDM cuts complex internal profiles, keyways, claw geometries, and tooth forms on fully hardened steel — features that cannot be produced by conventional milling or grinding after heat treatment. Typical cutting accuracy is ±0.003 mm, which is essential for shredder blade tooth geometry and the tight bore fits required on rotor-mounted knives.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Running several EDM machines simultaneously means that custom and non-standard blade profiles do not create bottlenecks. Each machine can hold a different program, so [granulator blades](/products/granulator-blades), [shear blades](/products/guillotine-shear-blades), and specialty profiles run concurrently.",
+      },
+      {
+        type: "h2",
+        value: "Raw Material Cutting: MESUN MS-400 Band Saw",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-mesun-bandsaw.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The MESUN MS-400 automatic band saw handles the first operation in the blade lifecycle: cutting raw bar stock, plate, and forging billets to length. Precise cut length and squareness at this stage reduces material waste and ensures consistent blanks enter the machining workflow. The machine runs with coolant flood to maintain cut quality on high-alloy tool steels including D2, M2, and SKD-11.",
+      },
+      {
+        type: "h2",
+        value: "Heat Treatment: Hardness Is Built In, Not Added On",
+      },
+      {
+        type: "image",
+        value: "/images/news/sureay-heat-treatment-furnace.jpg",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In-house heat treatment gives Sureay direct control over the most critical variable in blade performance: hardness. Our facility runs both box resistance furnaces for standard alloy steels and vacuum heat treatment furnaces for grades that require a clean, oxide-free atmosphere — such as M2 HSS, M35, and powder-metallurgy steels. Furnace temperature is calibrated and logged for each batch. This is followed by double-temper cycles to relieve internal stress before the part enters finish grinding.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Cryogenic treatment at −196 °C is applied to grades where maximum wear resistance is specified — transforming retained austenite and achieving a more uniform carbide distribution through the blade cross-section. The result is consistent hardness across the full cutting edge, not just the surface. Every finished blade is 100% Rockwell-tested before dispatch.",
+      },
+      {
+        type: "h2",
+        value: "What In-House Equipment Means for Your Order",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Capability", "Equipment", "What It Delivers"],
+        tableRows: [
+          ["CNC turning", "CNC lathes", "Consistent OD/bore geometry on circular blades"],
+          ["CNC milling", "NIDEK VMC-L + CNC machining center", "Complex profiles, tooth forms, bolt patterns"],
+          ["CNC grinding", "ULMAKE 3MK2020 + cylindrical grinders", "±0.001 mm tolerance, Ra ≤ 0.02 µm finish"],
+          ["Wire EDM", "DK7745 (multiple machines)", "±0.003 mm on hardened steel, keyways, claws"],
+          ["Material cutting", "MESUN MS-400 band saw", "Accurate blanks from bar stock and plate"],
+          ["Heat treatment", "Box resistance + vacuum furnaces + cryogenic", "Calibrated hardness, stress-relieved, 100% HRC tested"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "Because every operation is under one roof, there are no third-party delays between roughing, heat treatment, and finish grinding. Lead times for production orders are typically 15–25 business days. Sample orders ship in 7–10 business days.",
+      },
+      {
+        type: "callout",
+        value:
+          "We welcome factory audits from qualified buyers — the equipment is here to inspect. [Contact us](/contact) to arrange a visit, request a product quotation, or discuss a custom blade specification.",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "sureay-manufacturing-facility-capabilities": "lynn",
   "nonwoven-slitter-knives-guide": "Eric",
   "blade-manufacturing-process": "lynn",
   "custom-metal-shear-blades-batch-production": "lynn",

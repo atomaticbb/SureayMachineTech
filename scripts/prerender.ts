@@ -46,10 +46,15 @@ const CANONICAL_ROUTES: string[] = [
   "/converting-industry",
   "/wood-industry",
   "/news",
+  "/privacy-policy",
+  "/terms",
   // dynamic product pages — derived from static blade data
   ...blades.map(b => `/products/${b.id}`),
   // dynamic category aggregation pages — derived from static category metadata
-  ...BLADE_CATEGORIES.map(c => `/categories/${c.slug}`),
+  // "custom-profile" is excluded: CategoryAggregation redirects it to /custom
+  ...BLADE_CATEGORIES
+    .filter(c => c.slug !== "custom-profile")
+    .map(c => `/categories/${c.slug}`),
   // dynamic news detail pages — derived from static article data
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
 ];
@@ -195,15 +200,41 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // Wait until React has mounted at least one child inside #root
     await page.waitForSelector("#root > *", { timeout: TIMEOUT_MS });
 
-    // Wait until react-helmet-async has flushed its tags into <head>.
-    // Primary signal: data-rh="true" attribute on any managed tag.
-    // Fallback: title changed from the index.html default (proves helmet fired
-    // even if the attribute is absent in some edge case).
+    // Wait until react-helmet-async has flushed the CORRECT tags for THIS route.
+    //
+    // Why canonical, not data-rh count or title:
+    //   "/" is prerendered first and its output overwrites dist/public/index.html.
+    //   Subsequent routes get served that prerendered homepage HTML as the SPA
+    //   fallback — it already contains data-rh="true" canonical/og tags pointing
+    //   to sureay.com/. Checking data-rh count fires immediately (homepage tags
+    //   already in DOM), and checking title fires as soon as the direct useEffect
+    //   runs — both before react-helmet-async has replaced homepage tags with the
+    //   current route's canonical/og. Checking the canonical href value instead
+    //   ensures we only snapshot once the correct page-specific tags are in place.
     await page.waitForFunction(
-      () =>
-        document.querySelectorAll('[data-rh="true"]').length > 0 ||
-        document.title !== "Precision Industrial Blades | Sureay",
-      { timeout: TIMEOUT_MS }
+      (routePath) => {
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          // No canonical tag yet — react-helmet-async hasn't flushed for this
+          // route. Require BOTH data-rh tags AND title change (AND, not OR) so
+          // a premature title-only signal can't trigger the snapshot.
+          return (
+            document.querySelectorAll('[data-rh="true"]').length > 0 &&
+            document.title !== "Precision Industrial Blades | Sureay"
+          );
+        }
+        const href = canonical.getAttribute('href') ?? '';
+        // Homepage: canonical must be exactly the root URL.
+        if (routePath === '/') {
+          return href === 'https://sureay.com/' || href === 'https://sureay.com';
+        }
+        // All other routes: canonical href must end with the route path.
+        // e.g. "/products/twin-shaft-blades-recycling" →
+        //      "https://sureay.com/products/twin-shaft-blades-recycling"
+        return href.endsWith(routePath.replace(/\/$/, ''));
+      },
+      { timeout: TIMEOUT_MS },
+      route
     );
 
     // Wait until h1 is in the DOM — ensures lazy-loaded page components have

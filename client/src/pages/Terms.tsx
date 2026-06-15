@@ -40,6 +40,7 @@ export default function Terms() {
       <SEO
         title="Terms of Service — Sureay Machinery Technology"
         description="Terms and conditions governing use of sureay.com and engagement with Sureay Machinery Technology Co., Ltd. for industrial blade products and OEM services."
+        canonicalUrl="/terms"
       />
       <Navbar />
       <main className="bg-[#0a0f1a] min-h-screen">
