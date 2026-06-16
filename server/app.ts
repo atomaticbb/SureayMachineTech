@@ -147,6 +147,7 @@ export function createApp({
             "'self'",
             "'unsafe-inline'",
             "https://www.googletagmanager.com",
+            "https://googleads.g.doubleclick.net",
           ],
           styleSrc: [
             "'self'",
@@ -172,6 +173,7 @@ export function createApp({
             "https://www.google.com",
             "https://pagead2.googlesyndication.com",
             "https://googleads.g.doubleclick.net",
+            "https://ad.doubleclick.net",
           ],
           objectSrc: ["'none'"],
           frameSrc: ["https://www.youtube.com", "https://www.youtube-nocookie.com"],
