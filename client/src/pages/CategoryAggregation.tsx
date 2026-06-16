@@ -34,10 +34,6 @@ export default function CategoryAggregation() {
   const [, params] = useRoute("/categories/:slug");
   const slug = params?.slug ?? "";
 
-  if (slug === "custom-profile") {
-    return <Redirect to="/custom" />;
-  }
-
   const meta = getCategoryBySlug(slug, lang);
 
   if (!meta) {

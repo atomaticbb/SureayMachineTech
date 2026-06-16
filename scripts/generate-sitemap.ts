@@ -125,7 +125,7 @@ const EXCLUDED_PRODUCT_IDS = new Set([
   "wood-chipper-blades-standard",
 ]);
 
-const EXCLUDED_CATEGORY_SLUGS = new Set(["wood-chipper-blades"]);
+const EXCLUDED_CATEGORY_SLUGS = new Set(["wood-chipper-blades", "custom-profile"]);
 
 const productPages: UrlEntry[] = blades
   .filter(b => !EXCLUDED_PRODUCT_IDS.has(b.id))

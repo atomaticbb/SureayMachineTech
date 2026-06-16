@@ -56,6 +56,14 @@ export function createApp({
 
   // Canonical redirects for deprecated / duplicate SEO paths.
   app.use((req, res, next) => {
+    // Language-aware: /[lang]/categories/custom-profile → /[lang]/custom
+    const customProfileLang = req.path.match(
+      /^\/(es|fr|ru|vi|ar)\/categories\/custom-profile\/?$/
+    );
+    if (customProfileLang) {
+      return res.redirect(301, `/${customProfileLang[1]}/custom`);
+    }
+
     const redirects: Array<{ from: RegExp; to: string }> = [
       {
         from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-industrial\/?$/,
@@ -96,6 +104,20 @@ export function createApp({
       {
         from: /^\/products\/factory-direct-shredder-blades\/?$/,
         to: "/categories/shredder-blades",
+      },
+      // /categories/custom-profile (English / no prefix) → /custom
+      {
+        from: /^\/(?:en\/)?categories\/custom-profile\/?$/,
+        to: "/custom",
+      },
+      // Invalid category slugs found by Google via old backlinks
+      {
+        from: /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/battery-precision\/?$/,
+        to: "/products",
+      },
+      {
+        from: /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/metal-processing\/?$/,
+        to: "/products",
       },
     ];
 
