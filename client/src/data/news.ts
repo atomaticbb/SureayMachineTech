@@ -1575,7 +1575,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title: "ISO 9001:2015 re-certification completed",
     excerpt:
       "Zero non-conformances reported during the latest external audit of our Ma'anshan manufacturing facility.",
-    image: "/images/about/factory.webp",
+    image: "/images/about/factory-image-01.webp",
     readTime: "2 MIN",
     relatedProductIds: [
       "granulator-blades",
