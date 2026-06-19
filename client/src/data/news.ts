@@ -70,6 +70,48 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "export-shipment-poland-usa-vietnam",
+    tag: "COMPANY NEWS",
+    date: "18.JUN.2026",
+    title:
+      "Shipping Update – Three Export Orders Dispatched to Shanghai Port",
+    excerpt:
+      "Three export-standard wooden cases carrying shredder blades, scraper blades, and log saw blades have left the SUREAY facility bound for Poland, the United States, and Vietnam — delivering precision cutting solutions across three continents.",
+    image: "/images/news/export-shipment-poland-usa-vietnam.webp",
+    readTime: "2 MIN",
+    seoTitle:
+      "SUREAY Shipping Update: Three Export Orders Dispatched to Shanghai Port | Sureay",
+    metaDescription:
+      "Three export-standard wooden cases with shredder blades, scraper blades, and log saw blades have departed SUREAY's facility bound for Poland, the USA, and Vietnam via Shanghai Port.",
+    keywords:
+      "Sureay export, industrial blade shipment, shredder blades export, scraper blades, log saw blades, international shipping",
+    content: [
+      {
+        type: "image",
+        value: "/images/news/export-shipment-poland-usa-vietnam.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Three export-standard wooden cases have been loaded onto a truck from SUREAY and are now en route to Shanghai Port for international shipment. Each case is securely packed in compliance with strict export regulations to ensure product integrity.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "One case carries shredder blades bound for Poland, one contains scraper blades for the United States, and the third holds log saw blades destined for Vietnam. All items passed rigorous quality inspections before packing.",
+      },
+      {
+        type: "image",
+        value: "/images/news/export-shipment-truck-loading.webp",
+      },
+      {
+        type: "callout",
+        value:
+          "SUREAY is proud to deliver precision cutting solutions across three continents. We always adhere to the principles of quality first and service foremost, and are dedicated to providing our clients with one-on-one solutions.",
+      },
+    ],
+  },
+  {
     id: "choose-paper-slitter-knife-kraft-tissue-board",
     tag: "TECHNICAL GUIDE",
     date: "28.MAY.2026",
