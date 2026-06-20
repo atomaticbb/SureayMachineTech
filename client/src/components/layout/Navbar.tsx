@@ -13,7 +13,7 @@
  * Data source: INDUSTRY_MENU_DATA from MegaMenu.tsx (SSOT).
  */
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight, Upload } from "lucide-react";
@@ -99,84 +99,113 @@ function CloseIcon({ className }: { className?: string }) {
 
 function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   const lang = useLang();
-  const categories = getCategories(lang);
-  const blades = getBlades(lang);
-  const custom = categories.find(c => c.slug === "custom-profile")!;
-  const others = categories.filter(c => c.slug !== "custom-profile");
-  const orderedCategories = [...others.slice(0, 3), custom, ...others.slice(3)];
+
+  const groups = useMemo(() => {
+    const categories = getCategories(lang);
+    const blades = getBlades(lang);
+    const custom = categories.find(c => c.slug === "custom-profile");
+    const ordered = [
+      ...categories.filter(c => c.slug !== "custom-profile"),
+      ...(custom ? [custom] : []),
+    ];
+    return ordered.map(category => {
+      const catBlades = blades.filter(b => b.category === category.category);
+      return {
+        slug: category.slug,
+        shortName: category.shortName,
+        href:
+          category.slug === "custom-profile"
+            ? "/custom"
+            : `/categories/${category.slug}`,
+        icon: catBlades[0]?.image ?? category.heroImage,
+        links: catBlades.slice(0, 3),
+        hasMore: catBlades.length > 3,
+      };
+    });
+  }, [lang]);
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5">
-        <div className="grid grid-cols-4 gap-x-4 gap-y-3">
-          {orderedCategories.map(category => {
-            const categoryHref =
-              category.slug === "custom-profile"
-                ? "/custom"
-                : `/categories/${category.slug}`;
-            const categoryBlades = blades.filter(
-              blade => blade.category === category.category
-            );
-            const visibleBlades = categoryBlades.slice(0, 3);
-            const cardImage = categoryBlades[0]?.image ?? category.heroImage;
+      <div className="max-w-7xl mx-auto px-10 py-8">
+        <div className="grid grid-cols-4 gap-x-8 gap-y-8">
+          {groups.map(group => (
+            <div key={group.slug} className="flex gap-4 min-w-0 group/card">
+              <Link href={group.href}>
+                <div
+                  onClick={onClose}
+                  className="w-[72px] h-[72px] flex-shrink-0 bg-slate-100 overflow-hidden cursor-pointer"
+                >
+                  <img
+                    src={group.icon}
+                    alt={group.shortName}
+                    loading="eager"
+                    decoding="async"
+                    width={72}
+                    height={72}
+                    className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-300"
+                  />
+                </div>
+              </Link>
 
-            return (
-              <div key={category.slug} className="min-w-0">
-                <Link href={categoryHref}>
-                  <div onClick={onClose} className="group cursor-pointer text-center">
-                    <div className="w-32 mx-auto aspect-[4/3] bg-slate-100 overflow-hidden">
-                      <img
-                        src={cardImage}
-                        alt={category.title}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
-                    <p className="mt-1 font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
-                      {category.shortName}
-                    </p>
-                  </div>
+              <div className="min-w-0 flex-1">
+                <Link href={group.href}>
+                  <p
+                    onClick={onClose}
+                    className="font-black text-[15px] leading-snug text-[#001f4d] hover:text-[#001f4d]/60 underline-offset-2 hover:underline transition-all cursor-pointer mb-2"
+                  >
+                    {group.shortName}
+                  </p>
                 </Link>
 
-                <div className="mt-1">
-                  {category.slug === "custom-profile" ? (
-                    <Link href="/contact">
-                      <div
-                        onClick={onClose}
-                        className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
-                      >
-                        Upload CAD →
-                      </div>
-                    </Link>
-                  ) : (
-                    <>
-                      {visibleBlades.map(blade => (
-                        <Link key={blade.id} href={`/products/${blade.id}`}>
-                          <div
-                            onClick={onClose}
-                            className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
-                          >
-                            · {blade.name}
-                          </div>
-                        </Link>
-                      ))}
-                      {categoryBlades.length > 3 && (
-                        <Link href={categoryHref}>
-                          <div
-                            onClick={onClose}
-                            className="text-[12px] text-slate-500 hover:text-[#003366] transition-colors leading-tight py-0.5 cursor-pointer"
-                          >
-                            View all →
-                          </div>
-                        </Link>
-                      )}
-                    </>
-                  )}
-                </div>
+                {group.slug === "custom-profile" ? (
+                  <Link href="/contact">
+                    <div
+                      onClick={onClose}
+                      className="text-[13px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer"
+                    >
+                      Upload CAD
+                    </div>
+                  </Link>
+                ) : (
+                  <>
+                    {group.links.map(blade => (
+                      <Link key={blade.id} href={`/products/${blade.id}`}>
+                        <div
+                          onClick={onClose}
+                          className="text-[13px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer"
+                        >
+                          · {blade.name}
+                        </div>
+                      </Link>
+                    ))}
+                    {group.hasMore && (
+                      <Link href={group.href}>
+                        <div
+                          onClick={onClose}
+                          className="font-mono text-[12px] font-bold text-slate-400 tracking-wide hover:text-[#001f4d] transition-colors leading-relaxed pt-1 cursor-pointer uppercase"
+                        >
+                          + View all
+                        </div>
+                      </Link>
+                    )}
+                  </>
+                )}
               </div>
-            );
-          })}
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom link — View All Products */}
+        <div className="mt-5 pt-3 border-t border-slate-100 text-right">
+          <Link href="/products">
+            <span
+              onClick={onClose}
+              className="inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-slate-400 hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
+            >
+              View All Products
+              <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
+            </span>
+          </Link>
         </div>
       </div>
     </div>
@@ -187,23 +216,11 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
   const lang = useLang();
   const [activeIdx, setActiveIdx] = useState(0);
-  const categories = getIndustryMenuData(lang).categories;
+  const categories = useMemo(() => getIndustryMenuData(lang).categories, [lang]);
   const active = categories[activeIdx];
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
-      {/* Scanner line — sweeps left→right on mount / category switch */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={activeIdx + "-scan"}
-          className="absolute top-0 left-0 h-[2px] bg-[#003366] pointer-events-none"
-          initial={{ width: "0%" }}
-          animate={{ width: "100%" }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
-        />
-      </AnimatePresence>
-
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7 flex gap-0">
         {/* ── Col 1: Browse by Industry (20%) ──────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col border-r border-slate-200 pr-6">
@@ -257,16 +274,8 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
 
         {/* ── Col 2: Product Grid or Custom Large Image ───────────────── */}
         <div className="flex-1 min-w-0 px-8">
-          <AnimatePresence mode="wait">
-            {active.id === "custom-profile" ? (
-              <motion.div
-                key="custom-profile-image"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ type: "spring", stiffness: 500, damping: 45 }}
-                className="flex gap-5 h-80"
-              >
+          {active.id === "custom-profile" ? (
+              <div className="flex gap-5 h-80">
                 {/* Left: hero image + title below */}
                 <Link href="/custom" className="flex-1 min-w-0 flex flex-col">
                   <div
@@ -276,7 +285,7 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
                     <img
                       src="/images/products/blades/special-shaped-knife.webp"
                       alt="Special-Shaped & Custom Profile Blades"
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -316,16 +325,9 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ) : (
-              <motion.div
-                key={activeIdx + "-grid"}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -6 }}
-                transition={{ type: "spring", stiffness: 500, damping: 45 }}
-                className="grid grid-cols-4 gap-x-4 gap-y-4"
-              >
+              <div className="grid grid-cols-4 gap-x-4 gap-y-4">
                 {active.items.slice(0, 8).map(item => (
                   <Link key={item.id} href={item.href}>
                     <div
@@ -336,7 +338,7 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
                         <img
                           src={item.image}
                           alt={item.name}
-                          loading="lazy"
+                          loading="eager"
                           decoding="async"
                           width={144}
                           height={128}
@@ -349,9 +351,8 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
                     </div>
                   </Link>
                 ))}
-              </motion.div>
+              </div>
             )}
-          </AnimatePresence>
         </div>
       </div>
 
@@ -419,6 +420,18 @@ export default function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
   }, [location]);
+
+  // Preload product card images so the Products dropdown is instant
+  useEffect(() => {
+    const allBlades = getBlades(lang);
+    categories.forEach(cat => {
+      const src = allBlades.find(b => b.category === cat.category)?.image ?? cat.heroImage;
+      if (src) {
+        const img = new Image();
+        img.src = src;
+      }
+    });
+  }, [lang, categories]);
 
   // Debounced hover handlers — Products (categories) dropdown
   const openProducts = () => {
