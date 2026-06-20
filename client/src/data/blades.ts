@@ -272,7 +272,12 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["rotary-slitter-knives-paper", "metal-foil-strip-slitter-knives", "bottom-grooved-anvil-knives", "nonwoven-slitter-knives"],
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "metal-foil-strip-slitter-knives",
+      "bottom-grooved-anvil-knives",
+      "nonwoven-slitter-knives",
+    ],
     offers: {
       lowPrice: 15,
       highPrice: 150,
@@ -535,7 +540,8 @@ export const blades: Blade[] = [
   {
     id: "metal-foil-strip-slitter-knives",
     name: "Coil & Strip Slitters",
-    fullName: "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
+    fullName:
+      "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
     category: "slitter_knives",
     sector: "metal",
     categoryDisplay: "Metal Strip Slitter Knives",
@@ -653,7 +659,11 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "metal-coil-slitting-knives",
+      "scrap-chopper-blades",
+    ],
     offers: {
       lowPrice: 45,
       highPrice: 750,
@@ -716,10 +726,10 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Chromium carbide D2/SKD11 twin-shaft shredder blades engineered on the intersecting scissor-action principle for high-volume MSW, bulky plastics, e-waste & wood pallets. Vacuum-hardened HRC 55\u201362 with deep cryogenic treatment for extended blade life. Custom 3\u201312 claw geometries. Wire-EDM bores for zero-backlash fit on Weima, Untha, SSI & Vecoplan rotors.",
+      "Twin shaft (double shaft) shredder blades for plastic, tire, metal & MSW recycling. Chromium carbide D2/SKD11, vacuum-hardened HRC 55\u201362 with deep cryogenic treatment. Engineered on the intersecting scissor-action principle for high-volume shredding. Custom 3\u201312 claw geometries. Wire-EDM bores for zero-backlash fit on Weima, Untha, SSI & Vecoplan rotors.",
 
     fullDescription:
-      "Twin-shaft shredder blades operate on the intersecting scissor-action principle\u2014two counter-rotating shafts with interlocking claw blades that shear feedstock through a scissor interface, delivering aggressive grabbing force with low torque demand.\n\nWhen processing highly abrasive bulky waste\u2014such as metal-contaminated MSW, thick-wall plastic purges, or mixed rigid plastic bales\u2014substandard blades suffer from premature edge rounding, bore elongation, and catastrophic hook fracture.\n\nSureay multi-shaft shredder blades are manufactured from D2 (1.2379), SKD11, and 42CrMo tool steels, vacuum-hardened and tempered through 4–5 cycles to achieve a fully stabilized martensitic microstructure (HRC 55–62). The deep cryogenic sub-zero treatment stage (−196°C, 24-hour soak) eliminates retained austenite and substantially increases wear resistance without sacrificing the toughness margin needed to prevent bulk fracture on contaminated feedstocks.\n\n## FEA-Optimized Hook Geometry\n\nThe profile of the cutting hook dictates grabbing efficiency and resistance to fatigue. Sureay utilizes Finite Element Analysis (FEA) simulation to optimize stress distribution across the blade during high-torque impacts. Three-claw (3C) designs deliver aggressive grabbing force for large timber and IBC totes; 8-claw (8C) configurations are optimized for mixed rigid plastics and MSW; 12-claw (12C) variants produce finer output particle sizing for downstream processing. All hook profiles are reinforced at the root radius to resist deformation under sustained cyclic loading.\n\n## Precision Wire-EDM Bores\n\nA loose fit between the blade bore and the rotor shaft creates micro-impacts that progressively elongate the bore and destroy the shaft. Sureay eliminates this failure mode: all inner mounting bores—hexagonal, octagonal, or splined—are processed using precision Wire-EDM, guaranteeing a zero-backlash, drop-in fit for SSI, Untha, Weima, and Vecoplan rotor systems.\n\n## Alloy Selection by Feedstock\n\nD2 (1.2379) — Mixed Plastics & Light Waste: Post-consumer HDPE bottles, PET trays, PP moulded parts, and mixed rigid plastic bales. Cost-effective chromium-carbide abrasion resistance for general recycling lines.\n\nSKD11 — Abrasive Contaminated Streams: Glass-filled engineering plastics, dirty agricultural films, and high-contamination post-industrial scrap. SKD11's superior toughness extends insert service life on hard-face materials within contaminated streams.\n\n42CrMo — Timber & Metal-Inclusive Waste: Wood pallets, bulky MSW, and post-industrial scrap with metal contamination risk. 42CrMo's higher impact energy absorption prevents brittle fracture that causes catastrophic rotor damage on a metal strike.",
+      "Twin-shaft shredder blades operate on the intersecting scissor-action principle\u2014two counter-rotating shafts with interlocking claw blades that shear feedstock through a scissor interface, delivering aggressive grabbing force with low torque demand.\n\nWhen processing highly abrasive bulky waste\u2014such as metal-contaminated MSW, thick-wall plastic purges, or mixed rigid plastic bales\u2014substandard blades suffer from premature edge rounding, bore elongation, and catastrophic hook fracture.\n\nSureay multi-shaft shredder blades are manufactured from D2 (1.2379), SKD11, and 42CrMo tool steels, vacuum-hardened and tempered through 4–5 cycles to achieve a fully stabilized martensitic microstructure (HRC 55–62). The deep cryogenic sub-zero treatment stage (−196°C, 24-hour soak) eliminates retained austenite and substantially increases wear resistance without sacrificing the toughness margin needed to prevent bulk fracture on contaminated feedstocks.\n\n## FEA-Optimized Hook Geometry\n\nThe profile of the cutting hook dictates grabbing efficiency and resistance to fatigue. Sureay utilizes Finite Element Analysis (FEA) simulation to optimize stress distribution across the blade during high-torque impacts. Three-claw (3C) designs deliver aggressive grabbing force for large timber and IBC totes; 8-claw (8C) configurations are optimized for mixed rigid plastics and MSW; 12-claw (12C) variants produce finer output particle sizing for downstream processing. All hook profiles are reinforced at the root radius to resist deformation under sustained cyclic loading.\n\n## Precision Wire-EDM Bores\n\nA loose fit between the blade bore and the rotor shaft creates micro-impacts that progressively elongate the bore and destroy the shaft. Sureay eliminates this failure mode: all inner mounting bores—hexagonal, octagonal, or splined—are processed using precision Wire-EDM, guaranteeing a zero-backlash, drop-in fit for SSI, Untha, Weima, and Vecoplan rotor systems.\n\n## Alloy Selection by Feedstock\n\nD2 (1.2379) — Mixed Plastics & Light Waste: Post-consumer HDPE bottles, PET trays, PP moulded parts, and mixed rigid plastic bales. Cost-effective chromium-carbide abrasion resistance for general recycling lines.\n\nSKD11 — Abrasive Contaminated Streams: Glass-filled engineering plastics, dirty agricultural films, and high-contamination post-industrial scrap. SKD11's superior toughness extends insert service life on hard-face materials within contaminated streams.\n\n42CrMo — Timber & Metal-Inclusive Waste: Wood pallets, bulky MSW, and post-industrial scrap with metal contamination risk. 42CrMo's higher impact energy absorption prevents brittle fracture that causes catastrophic rotor damage on a metal strike.\n\nSureay twin shaft shredder blades are proven in demanding applications worldwide: plastic shredder blades for post-consumer recycling, tire shredder blades for TDF and crumb rubber production, and metal shredder blades for light-gauge ferrous and non-ferrous scrap processing.",
 
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
@@ -1251,7 +1261,7 @@ export const blades: Blade[] = [
     ],
 
     description:
-      "Tissue log saw blades Ø610–Ø1000 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days.",
+      "Tissue log saw blades Ø610–Ø1000 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
 
     fullDescription:
       "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage\u2014crushed cardboard cores, excessive dust generation, or angled cut faces\u2014propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.\n\nSureay tissue log saw blades are manufactured from premium D2 (1.2379) and Cr12MoV cold-work tool steels. Because these massive blades (up to \u00d81200\u202fmm) spin at extreme RPMs, stability is everything. Every blade is vacuum-hardened, tension-leveled, and micro-ground to strict dimensional tolerances verified on a calibrated CMM before dispatch:\n\n- **Lateral runout:** \u22640.15\u202fmm\n- **Edge runout:** \u22640.10\u202fmm\n- **Face parallelism:** 0.05\u202fmm\n- **Concentricity (OD to bore):** \u22640.30\u202fmm\n- **Bore tolerance:** \u00d868.26\u202fmm (+0.05\u202f/\u202f0.00\u202fmm)\n\n## Continuous Sharpening Compatibility\n\nUnlike standard circular knives, tissue log saws are continuously sharpened *during* operation by synchronized CBN (Cubic Boron Nitride) grinding wheels. Sureay\u2019s heat treatment targets HRC\u202f58\u201360. This specific hardness range ensures the blade hones cleanly against the CBN stones without loading or glazing them, maintaining a razor-sharp edge cycle after cycle without consuming your expensive sharpening wheels.\n\n## Bevel Geometry & Dust Reduction\n\nTissue is a low-density, high-surface-area web with near-zero compressive strength. Cutting it with too steep a bevel creates compression, leading to excessive paper dust (a major fire hazard in spray-glued towel lines) and edge densification that reduces roll softness. We utilize a shallow bevel angle (15\u00b0\u201325\u00b0) that separates fibers by pure shear. Combined with a mirror-polished blade face (Ra\u202f\u22640.2\u202f\u03bcm), this delivers flawless cuts on premium 2-ply and 3-ply bath tissue.\n\n## Bore Compatibility by OEM Platform\n\n**\u00d868.26\u202fmm (+0.05\u202fmm):** Fabio Perini (all series), PCMC Forte/Elite, K\u00f6rber/MTC log saws.\n\n**\u00d882.55\u202fmm:** Casmatic (Kimberly-Clark licensed platforms), Italian and Spanish third-party OEM log saw systems.\n\n**\u00d860.00\u202fmm:** Large-format log saws for industrial wiper, jumbo roll (JRT), and coreless bath tissue production (OD 870\u20131000\u202fmm).\n\nCustom OD from \u00d8610\u202fmm to \u00d81200\u202fmm manufactured to order with a standard 10-working-day lead time. Drawing review and dimensional sign-off available on first-order tooling.\n\n## Advanced Surface Coatings\n\n**Hard Chrome Plating:** Provides corrosion resistance in high-humidity paper mill environments (\u226575% RH) and reduces tissue fiber adhesion coefficient, extending the clean-running interval between blade dressing cycles.\n\n**Teflon (PTFE) Coating:** Creates a highly lubricated surface that glides through dense kitchen towel logs, drastically reducing motor amp draw and eliminating burn marks on the paper edges. The top specification for premium 3-ply kitchen towel lines.\n\n**TiN PVD Coating:** Physical vapour deposition titanium nitride (2\u20133\u202f\u03bcm, HV\u202f2300+) extends the sharp-edge service interval in high-cycle operation. Recommended for premium tissue brands with strict dust contamination specifications.",
@@ -4065,10 +4075,10 @@ export const blades: Blade[] = [
     ],
 
     description:
-      "Precision strand pelletizer rotors engineered for continuous, high-volume compounding lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005\u202fmm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
+      "Strand pelletizer rotors and pelletizing cutter rotors for plastic compounding and recycling lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005\u202fmm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
 
     fullDescription:
-      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2\u202fµm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005\u202fmm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
+      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2\u202fµm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005\u202fmm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports. We also offer pelletizer rotor repair and regrinding services — restoring worn helical rotors and granulator rotor shafts to factory-new concentricity at a fraction of replacement cost.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
 
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
@@ -4546,7 +4556,8 @@ export const blades: Blade[] = [
       },
       {
         label: "Hardness",
-        value: "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
+        value:
+          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
       },
       {
         label: "Thickness Tolerance",
@@ -4602,14 +4613,29 @@ export const blades: Blade[] = [
         "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm.",
     },
     standardDimensions: [
-      { spec: "Bandit 12\" / 15\" Drum", od: "230", id: "80", thickness: "16" },
-      { spec: "Bandit 18\" / 19\" Drum", od: "295", id: "80", thickness: "19" },
-      { spec: "Vermeer BC1800 / BC2100", od: "310", id: "100", thickness: "19" },
+      { spec: 'Bandit 12" / 15" Drum', od: "230", id: "80", thickness: "16" },
+      { spec: 'Bandit 18" / 19" Drum', od: "295", id: "80", thickness: "19" },
+      {
+        spec: "Vermeer BC1800 / BC2100",
+        od: "310",
+        id: "100",
+        thickness: "19",
+      },
       { spec: "Morbark 40/36 Drum", od: "400", id: "100", thickness: "22" },
       { spec: "Morbark 50/48 Disc", od: "250", id: "120", thickness: "25" },
       { spec: "Peterson 5710 Disc", od: "280", id: "130", thickness: "25" },
-      { spec: "Doppstadt / Jenz Biomass", od: "350", id: "100", thickness: "20" },
-      { spec: "Heavy Whole-Tree Chipper", od: "600", id: "150", thickness: "30" },
+      {
+        spec: "Doppstadt / Jenz Biomass",
+        od: "350",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        spec: "Heavy Whole-Tree Chipper",
+        od: "600",
+        id: "150",
+        thickness: "30",
+      },
     ],
     relatedBladeIds: [
       "wood-chipper-anvils",
@@ -4741,13 +4767,36 @@ export const blades: Blade[] = [
       "Precision Husky",
     ],
     specs: [
-      { label: "Material", value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si" },
-      { label: "Hardness", value: "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)" },
-      { label: "Heat Treatment", value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)" },
-      { label: "Thickness Tol.", value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)" },
-      { label: "Bevel Angle", value: "25°–42° (optimised per species & contamination level)" },
-      { label: "Resharpening", value: "Through-hardened — 8–12 regrind cycles per blade" },
-      { label: "Application", value: "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood" },
+      {
+        label: "Material",
+        value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si",
+      },
+      {
+        label: "Hardness",
+        value:
+          "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)",
+      },
+      {
+        label: "Heat Treatment",
+        value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)",
+      },
+      {
+        label: "Thickness Tol.",
+        value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)",
+      },
+      {
+        label: "Bevel Angle",
+        value: "25°–42° (optimised per species & contamination level)",
+      },
+      {
+        label: "Resharpening",
+        value: "Through-hardened — 8–12 regrind cycles per blade",
+      },
+      {
+        label: "Application",
+        value:
+          "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood",
+      },
     ],
     components: [
       {
@@ -4781,14 +4830,34 @@ export const blades: Blade[] = [
         "* Standard OEM replacement dimensions. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact blueprints. Counter-knives and throat wear plates available as matched sets. Custom lengths up to 800 mm.",
     },
     standardDimensions: [
-      { spec: "Vermeer BC1800 / BC2100", od: "310", id: "100", thickness: "19" },
+      {
+        spec: "Vermeer BC1800 / BC2100",
+        od: "310",
+        id: "100",
+        thickness: "19",
+      },
       { spec: "Morbark 40/36 Drum", od: "400", id: "100", thickness: "22" },
       { spec: "Morbark 50/48 Disc", od: "250", id: "120", thickness: "25" },
-      { spec: "Peterson 5710 / 6710 Disc", od: "280", id: "130", thickness: "25" },
-      { spec: "Doppstadt DH 910 Biomass", od: "350", id: "100", thickness: "20" },
+      {
+        spec: "Peterson 5710 / 6710 Disc",
+        od: "280",
+        id: "130",
+        thickness: "25",
+      },
+      {
+        spec: "Doppstadt DH 910 Biomass",
+        od: "350",
+        id: "100",
+        thickness: "20",
+      },
       { spec: "Jenz HEM 820", od: "380", id: "110", thickness: "22" },
       { spec: "CBI Magnum Force", od: "450", id: "120", thickness: "25" },
-      { spec: "Heavy Whole-Tree / Custom", od: "600", id: "150", thickness: "30" },
+      {
+        spec: "Heavy Whole-Tree / Custom",
+        od: "600",
+        id: "150",
+        thickness: "30",
+      },
     ],
     relatedBladeIds: [
       "wood-chipper-anvils",
@@ -4800,22 +4869,26 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "When should I upgrade from standard high-carbon steel to D2 or M2 HSS chipper blades?",
+          question:
+            "When should I upgrade from standard high-carbon steel to D2 or M2 HSS chipper blades?",
           answer:
             "Upgrade to D2 (SKD11) when your chipper processes dense hardwood (oak, hickory, eucalyptus) or dry recycled timber on continuous 8+ hour shifts. D2's chromium-carbide matrix provides 2–3× longer edge life versus standard carbon steel. Upgrade to M2 HSS only for clean softwood at high drum RPM (1,500–2,500) where maximum edge retention is the priority — M2 at HRC 62–64 is more susceptible to impact damage on contaminated feedstock.",
         },
         {
-          question: "How does blade thickness tolerance affect chip quality and drum vibration?",
+          question:
+            "How does blade thickness tolerance affect chip quality and drum vibration?",
           answer:
             "A ±0.10 mm deviation across blade sets produces both oversized and undersized chips that fail biomass screening specs (EN 17225-4). The same deviation creates centrifugal force imbalance at 1,500–2,500 RPM that accelerates bearing failure. Our ±0.05 mm tolerance eliminates both issues.",
         },
         {
-          question: "How many times can industrial D2 chipper blades be resharpened?",
+          question:
+            "How many times can industrial D2 chipper blades be resharpened?",
           answer:
             "Our through-hardened D2 blades can be reground 8–12 times before reaching minimum safe thickness (typically 60–70% of original). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass. Never dry-grind — localised overheating above 200°C draws the temper and softens the edge.",
         },
         {
-          question: "Should I replace the counter-knife when I install new chipper blades?",
+          question:
+            "Should I replace the counter-knife when I install new chipper blades?",
           answer:
             "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife reduces service life by 30–50% and degrades chip quality. Replace when visible edge rounding exceeds 1.0 mm or chipping exceeds 0.5 mm depth. We manufacture matched counter-knives in D2 and manganese steel as integrated sets.",
         },
@@ -4846,7 +4919,8 @@ export const blades: Blade[] = [
     category: "wood_chipper",
     sector: "wood",
     categoryDisplay: "Wood Chipper Blades",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
+    image:
+      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
     badge: "Best Seller",
     badgeColor: "green",
     gallery: [
@@ -4871,14 +4945,32 @@ export const blades: Blade[] = [
       "Junkkari",
     ],
     specs: [
-      { label: "Material", value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel" },
-      { label: "Hardness", value: "HRC 55–60 (Triple-Tempered, Through-Hardened)" },
-      { label: "Edge Design", value: "Reversible Double-Edge — flip when dull, 2× installed life" },
+      {
+        label: "Material",
+        value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel",
+      },
+      {
+        label: "Hardness",
+        value: "HRC 55–60 (Triple-Tempered, Through-Hardened)",
+      },
+      {
+        label: "Edge Design",
+        value: "Reversible Double-Edge — flip when dull, 2× installed life",
+      },
       { label: "Bevel Angle", value: "25°–30° precision-ground (±0.5°)" },
       { label: "Lengths", value: "200–350 mm (8\u2033–14\u2033)" },
-      { label: "Bolt Patterns", value: "2-hole · 4-hole · 6-hole (custom available)" },
-      { label: "Coating", value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)" },
-      { label: "Application", value: "Tree Service · Landscaping · Green Waste · Storm Debris" },
+      {
+        label: "Bolt Patterns",
+        value: "2-hole · 4-hole · 6-hole (custom available)",
+      },
+      {
+        label: "Coating",
+        value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)",
+      },
+      {
+        label: "Application",
+        value: "Tree Service · Landscaping · Green Waste · Storm Debris",
+      },
     ],
     components: [
       {
@@ -4915,7 +5007,12 @@ export const blades: Blade[] = [
       { spec: 'Compact / 8" Class', od: "200", id: "50", thickness: "12" },
       { spec: 'Bandit 12" / Patriot', od: "230", id: "60", thickness: "12" },
       { spec: 'Vermeer BC1200 / 10"', od: "260", id: "65", thickness: "16" },
-      { spec: 'Bandit 15" / Vermeer BC1500', od: "295", id: "75", thickness: "16" },
+      {
+        spec: 'Bandit 15" / Vermeer BC1500',
+        od: "295",
+        id: "75",
+        thickness: "16",
+      },
       { spec: 'Bandit 18" / 19"', od: "295", id: "80", thickness: "19" },
       { spec: 'Vermeer BC1800 / 12"', od: "310", id: "100", thickness: "19" },
       { spec: 'Timberwolf / 13"', od: "330", id: "100", thickness: "19" },
@@ -4936,7 +5033,8 @@ export const blades: Blade[] = [
             "T10 suits green softwood and general landscaping. Upgrade to 9CrSi for mixed hardwood/softwood — maple, birch, ash — where it delivers 40–60% longer edge life. Specify Cr12MoV for high-volume dry hardwood or lightly contaminated urban green waste.",
         },
         {
-          question: "When should I flip the blade, and how many times can I regrind?",
+          question:
+            "When should I flip the blade, and how many times can I regrind?",
           answer:
             "Flip when chipping efficiency drops — ragged chip faces, increased motor load, or visible edge rounding over 0.5 mm. After both edges are consumed, each edge can be reground 3–5 times on a standard surface grinder, yielding 6–10 total cutting edges per blade.",
         },
@@ -4986,7 +5084,7 @@ export const blades: Blade[] = [
     ],
 
     description:
-      "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV, and A8 Modified tool steel. Through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
+      "Wood chipper anvils and counter-knives (bed knives) for drum and disc chippers. D2, Cr12MoV, and A8 Modified tool steel, through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
 
     fullDescription:
       "The anvil — also called the counter-knife, bed knife, or stationary blade — is the fixed cutting edge inside a wood chipper that the rotating drum or disc blade cuts against. Together, the chipper blade and anvil form a scissor-like shearing pair: the blade slices chips from the timber, and the anvil sets the clearance gap that determines minimum chip thickness, cutting efficiency, and motor load.\n\nA worn or misaligned anvil is the single most overlooked cause of poor chipper performance. When the anvil edge rounds off, the blade-to-anvil clearance gap widens progressively. Instead of a clean shearing action, the timber is torn and crushed rather than cut — spiking fuel consumption by 15–25%, producing ragged chips that fail screening specs, and accelerating wear on the chipper blades themselves. Replacing chipper blades without inspecting the anvil is throwing away money: new blades working against a dull anvil deliver only 50–70% of their potential service life.\n\n## Why the Anvil Matters as Much as the Blade\n\n**Clearance Gap Control:** The blade-to-anvil clearance gap — typically set at 0.5–1.5 mm for drum chippers and 0.8–2.0 mm for disc chippers — directly controls minimum chip thickness. A worn anvil increases this gap beyond specification, producing oversized chips and long fibrous slivers that fail biomass fuel screening standards (EN 17225-4). Our anvils are precision surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform shear gap across the entire cutting width.\n\n**Impact Absorption:** Unlike the chipper blade (which rotates at high speed), the anvil absorbs the full reaction force of every cut as a static impact load. Over millions of chipping cycles, this sustained impact loading causes edge deformation, micro-cracking, and eventual bulk fracture in poorly heat-treated anvils. Sureay anvils are through-hardened to HRC 55–60 via vacuum heat treatment — hard enough to hold a sharp edge against abrasive timber, yet tough enough to absorb repeated impact without brittle fracture.\n\n**Different Wear Rate, Different Replacement Cycle:** The anvil typically outlasts chipper blades by a factor of 2–4× because it operates under compressive (static) loading rather than the dynamic shear loading on the blade. However, because anvil wear is gradual, operators often miss the progressive deterioration until chip quality has degraded significantly. We recommend inspecting the anvil edge every time chipper blades are changed or sharpened.\n\n## Material Selection\n\n**D2 / Cr12MoV Tool Steel (HRC 58–60):** The premium specification for high-volume commercial wood processing and biomass operations. The 12% chromium-carbide matrix provides outstanding abrasion resistance against dense hardwoods and bark-heavy feedstock. Recommended for industrial drum chippers (Morbark, Vermeer HG series, Doppstadt) running continuous 8–16 hour shifts.\n\n**A8 Modified Tool Steel (HRC 54–58):** The industry-standard OEM grade used by Bandit, Morbark, and Vermeer for factory-original anvils. A8 Modified provides an excellent balance of wear resistance and impact toughness — critical for anvils that must absorb millions of impact cycles without micro-cracking. The correct choice for general forestry and tree service operations processing mixed species with moderate contamination.\n\n**42CrMo / Manganese Steel (HRC 50–55):** A cost-effective, high-toughness option for operators processing heavily contaminated demolition wood, railroad ties, and urban green waste where the feedstock contains significant metal debris. The lower hardness prioritises impact absorption over wear resistance, preventing the catastrophic anvil fracture that can damage the drum housing.\n\n## Adjustable Mounting & Clearance Setting\n\nMost chipper OEMs provide a mechanical adjustment system — typically shim plates or adjustable mounting bolts — to advance the anvil toward the blade as both components wear, maintaining the designed clearance gap. Sureay anvils are CNC-machined with slotted or oversized mounting holes that match your OEM's adjustment mechanism precisely, ensuring maintenance teams can set the gap accurately and lock it down securely.\n\n## Matched Blade + Anvil Sets\n\nFor operators changing both blades and anvil simultaneously, we offer matched sets: chipper blades and counter-knife manufactured from the same steel batch, heat-treated in the same vacuum furnace cycle, and surface-ground to the same parallelism tolerance. A matched set eliminates the hardness mismatch between blade and anvil that causes accelerated wear when sourcing components from different suppliers.",
@@ -5073,15 +5171,50 @@ export const blades: Blade[] = [
     },
 
     standardDimensions: [
-      { spec: "Bandit 12\" / 15\" / Mighty Bandit", od: "185", id: "75", thickness: "10" },
-      { spec: "Bandit 18\" / 19\" / 1290 / 1590",   od: "265", id: "95", thickness: "12" },
-      { spec: "Vermeer BC1200 / BC1500",              od: "200", id: "80", thickness: "12" },
-      { spec: "Vermeer BC1800 / BC2000",              od: "260", id: "100", thickness: "16" },
-      { spec: "Morbark 2 / 5 / 7 / 12 / 13",         od: "265", id: "95", thickness: "12" },
-      { spec: "Morbark 40/36 / 50/48",                od: "400", id: "100", thickness: "20" },
-      { spec: "Timberwolf 150 / 190 / 230",           od: "230", id: "80", thickness: "16" },
-      { spec: "Schliesing 400 / 500 / 550 / 600 / 660", od: "260", id: "80", thickness: "20" },
-      { spec: "Greenmech / Jensen / Forst",           od: "Per OEM Drawing", id: "Per OEM Drawing", thickness: "Per OEM Drawing" },
+      {
+        spec: 'Bandit 12" / 15" / Mighty Bandit',
+        od: "185",
+        id: "75",
+        thickness: "10",
+      },
+      {
+        spec: 'Bandit 18" / 19" / 1290 / 1590',
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      { spec: "Vermeer BC1200 / BC1500", od: "200", id: "80", thickness: "12" },
+      {
+        spec: "Vermeer BC1800 / BC2000",
+        od: "260",
+        id: "100",
+        thickness: "16",
+      },
+      {
+        spec: "Morbark 2 / 5 / 7 / 12 / 13",
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      { spec: "Morbark 40/36 / 50/48", od: "400", id: "100", thickness: "20" },
+      {
+        spec: "Timberwolf 150 / 190 / 230",
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
+        od: "260",
+        id: "80",
+        thickness: "20",
+      },
+      {
+        spec: "Greenmech / Jensen / Forst",
+        od: "Per OEM Drawing",
+        id: "Per OEM Drawing",
+        thickness: "Per OEM Drawing",
+      },
     ],
 
     relatedBladeIds: [
@@ -5094,6 +5227,11 @@ export const blades: Blade[] = [
 
     faqs: {
       technical: [
+        {
+          question: "What does the anvil do in a wood chipper?",
+          answer:
+            "The anvil (also called the bed knife or counter-knife) is the fixed cutting edge that the rotating chipper blades shear against. Wood is sliced cleanly in the gap between the spinning knife and the stationary anvil. A correctly set anvil-to-knife clearance (typically 0.5–1.5 mm) produces uniform chips, reduces knife wear, and prevents stringy or oversized output. A worn or misaligned anvil is the most common cause of poor chip quality and accelerated blade dulling.",
+        },
         {
           question:
             "How often should I replace or resharpen the anvil compared to the chipper blades?",
@@ -5155,8 +5293,7 @@ export const blades: Blade[] = [
             "Yes, we export to over 50 countries. Standard OEM replacement anvils in stock sizes typically ship within 48–72 hours. Custom dimensions take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
         },
         {
-          question:
-            "What quality documentation ships with each anvil?",
+          question: "What quality documentation ships with each anvil?",
           answer:
             "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
         },
