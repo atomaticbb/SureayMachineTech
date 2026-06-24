@@ -70,6 +70,142 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "circular-knife-types",
+    tag: "TECHNICAL GUIDE",
+    date: "24.JUN.2026",
+    title:
+      "Circular Knife Types: Slitting, Perforating, and Counter-Knife Geometries Explained",
+    excerpt:
+      "A technical guide to industrial circular knife types — toothed and perforating knives, plain slitting discs, and counter/under-knives — covering shear vs crush cutting, bevel geometry, and tool steel vs tungsten carbide.",
+    image: "/images/news/circular-knife-types-cover.webp",
+    readTime: "6 MIN",
+    seoTitle:
+      "Circular Knife Types: Slitting, Perforating & Counter-Knife Guide | Sureay",
+    metaDescription:
+      "A technical guide to industrial circular knife types — toothed and perforating knives, plain slitting discs, and counter/under-knives — covering shear vs crush cutting, bevel geometry, and tool steel vs tungsten carbide.",
+    keywords:
+      "circular knife types, industrial circular knives, slitter knives, perforating knife, counter knife, under knife, tungsten carbide circular knife",
+    relatedProductIds: [
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "tissue-log-saw-blades",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A circular knife looks simple — a hardened steel disc with a ground edge. What separates a knife that cuts clean for a million meters from one that burrs the edge after a shift is geometry, material, and how the blade is matched to the material it cuts. This guide breaks down the main families of circular knives used in slitting, converting, recycling, and metal processing, and explains why each form exists.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Across every type, three things decide performance: the **edge geometry** (how the cutting face is ground), the **substrate** (tool steel, HSS, or tungsten carbide), and the **running accuracy** (concentricity, flatness, and balance). Get those right for the application and the knife does its job quietly. Get them wrong and you see burrs, dust, edge chipping, or premature dulling — usually blamed on the machine when the real cause is the blade.",
+      },
+      {
+        type: "h2",
+        value: "Toothed and perforating circular knives",
+      },
+      {
+        type: "image",
+        value: "/images/news/circular-knife-types-toothed.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Toothed knives trade a continuous edge for a series of cutting points. There are two reasons to do that.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The first is **grip and scoring**. A finely toothed edge bites into the material instead of skating across it, which matters on coated stock, laminates, or anything that wants to slide under a smooth blade. Gear-tooth knives are also frequently driven — the teeth mesh with a drive gear or a mating roller so the knife rotates at a controlled surface speed rather than being dragged by the web.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The second is **perforating**: cutting a line of holes or slits instead of a full cut. A perforating knife alternates cut segments with uncut \"ties,\" and the ratio between them — the cut-to-tie ratio, set by tooth pitch and land width — controls how easily the line tears. Tissue and toweling, packaging tear strips, ticket and stamp stock, and stitch-style perforations on print work all rely on this. Wider teeth with bigger gaps give a weaker, easier tear; fine teeth with short ties hold the sheet together until you want it to separate.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The trade-off with any toothed form is that the points concentrate wear and shock. Tooth pitch, depth, and the relief behind each tooth have to be matched to the material and speed, or the tips round off or chip.",
+      },
+      {
+        type: "h2",
+        value: "Plain circular slitter knives",
+      },
+      {
+        type: "image",
+        value: "/images/news/circular-knife-types-plain-slitter.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The plain disc is the workhorse of web converting, and most of these run in one of two cutting modes. Browse our full [slitter knives range](/categories/slitter-knives) to see the geometries available.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In **shear slitting**, a top knife overlaps a bottom (counter) knife the way the two blades of a pair of scissors overlap. The material is sheared between two passing edges, which gives the cleanest cut and the least dust — the standard for films, foils, paper, nonwovens, and laminates. Shear top knives are usually **single-bevel**: one flat face runs against the bottom knife, and the bevel is on the outside. The bevel angle is a balance — a shallow bevel is sharper and cuts cleaner but wears faster; a steeper bevel lasts longer but needs more force and can leave a heavier edge. For paper-specific applications, see our [paper slitter knives](/products/rotary-slitter-knives-paper).",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In **crush or score cutting**, a single knife is pressed against a hardened anvil roll and the material is severed by pressure rather than shear. These knives are usually **double-bevel** (a symmetrical V edge) and are simpler to set up because there's no bottom knife to align. The cut is rougher and the edge can be slightly compressed, so crush cutting suits nonwovens, some tapes, foam, and lighter materials where edge quality is less critical than setup speed and tool cost.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Thickness matters too. A thin, large-diameter slitting ring deflects more easily and needs good support and low runout to track straight; a thicker disc is stiffer and holds its line under heavier loads. Diameter, bore, and side clearance all get specified to the slitter, not chosen off a shelf.",
+      },
+      {
+        type: "h2",
+        value: "Counter-knives and under-knives",
+      },
+      {
+        type: "image",
+        value: "/images/news/circular-knife-types-counter-knives.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In a shear slitting setup the bottom knife does half the work, and it's easy to overlook. The counter-knife (or under-knife) is the fixed or driven lower blade that the top knife shears against. Its edge condition is just as important as the top knife's — a worn or nicked bottom edge ruins the cut no matter how sharp the top knife is.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Two design details show up repeatedly in this group. The first is **the bore and mounting**. Keyed bores, multi-lobe cutouts, and bolt-circle patterns aren't decoration — they fix the knife's angular position so it can be indexed, driven, or clamped without slipping, and so a reground knife goes back in true. The second is **tungsten carbide edges**. On abrasive material — recycled plastics loaded with filler, glass-filled compounds, mineral-coated paper — high-speed steel dulls fast. A carbide edge holds sharpness far longer, at the cost of more brittleness, so it has to be supported well and protected from impact. For high-wear converting and recycling lines, carbide counter-knives often pay for themselves in reduced changeovers alone.",
+      },
+      {
+        type: "h2",
+        value: "Materials and edge life",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Most general-purpose circular knives are made from high-carbon, high-chromium tool steels (the D2 / SKD11 family) or HSS, hardened to roughly 58–62 HRC for a balance of edge retention and toughness. Where abrasion dominates, tungsten carbide takes over — much harder, much longer-running, but less forgiving of shock and misalignment. Surface treatments and coatings can extend life further on specific materials, but they don't fix a knife that's wrong for the job in the first place.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Whatever the substrate, the unglamorous specs decide field performance: tight concentricity so the edge doesn't wobble, flat and parallel faces so shear knives mesh evenly, and balance so the blade runs smooth at speed. A knife that's perfectly sharp but runs out a few hundredths will still cut poorly and chip early.",
+      },
+      {
+        type: "h2",
+        value: "Choosing the right circular knife",
+      },
+      {
+        type: "paragraph",
+        value:
+          "There's no universal best blade — there's the right blade for the material, the cut mode, and the line speed. A clean shear cut on thin film, a controlled tear on tissue, and a long-life cut on abrasive recyclate are three different problems that need three different knives. The practical path is to start from the application: what material, what edge quality, what volume, and what existing machine geometry the knife has to fit.",
+      },
+      {
+        type: "callout",
+        value:
+          "At Sureay we manufacture the full range — toothed and perforating knives, plain [slitting discs](/products/rotary-slitter-knives), and counter/under-knives — in tool steel, HSS, and tungsten carbide, built to drawing or matched to a sample. Explore the complete [slitter knives category](/categories/slitter-knives) or [send us the part or the drawing](/contact) and we'll quote it directly.",
+      },
+    ],
+  },
+  {
     id: "export-shipment-poland-usa-vietnam",
     tag: "COMPANY NEWS",
     date: "18.JUN.2026",
@@ -3240,6 +3376,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "circular-knife-types": "Eric",
   "sureay-manufacturing-facility-capabilities": "lynn",
   "nonwoven-slitter-knives-guide": "Eric",
   "blade-manufacturing-process": "lynn",
