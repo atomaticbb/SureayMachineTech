@@ -70,6 +70,154 @@ function sortDispatchesByDate(
 export const ALL_DISPATCHES: DispatchArticle[] = [
   // ── Featured ──────────────────────────────────────────────────────────────
   {
+    id: "wood-chipper-blade-wear-patterns",
+    tag: "TECHNICAL GUIDE",
+    date: "25.JUN.2026",
+    title:
+      "Wood Chipper Blade Wear Patterns: How to Diagnose and Fix Failures",
+    excerpt:
+      "Wood chipper blades dulling, chipping, or burning? Learn to read the three wear patterns, fix the root cause, and pick the right knife steel (A8 vs D2) for your machine.",
+    image:
+      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
+    readTime: "5 MIN",
+    seoTitle:
+      "Wood Chipper Blade Wear Patterns: Diagnose & Fix Blade Failures | Sureay",
+    metaDescription:
+      "Wood chipper blades dulling, chipping, or burning? Learn to read the three wear patterns, fix the root cause, and pick the right knife steel (A8 vs D2) for your machine.",
+    keywords:
+      "wood chipper blade wear, chipper blade failure, chipper knife abrasion, chipper blade chipping, chipper blade heat marks, A8 chipper knife, D2 chipper blade",
+    relatedProductIds: [
+      "wood-chipper-blades",
+      "wood-chipper-blades-industrial",
+      "wood-chipper-blades-standard",
+      "wood-chipper-anvils",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "The evidence you need is sitting in your scrap bin. Pull a worn knife off the rotor before you throw it out, and the edge will tell you why it failed and what it's costing you. A dull or wrongly ground blade doesn't just wear out. It burns fuel, throws off-spec chips, and forces unplanned stops. For anyone selling into biomass or pulp, off-spec is real money: ISO 17225-4 grades wood chips by particle size, and a tired edge pushes your output toward fines (the **≤3.15 mm** fraction) and oversize pieces, dropping you below the graded main fraction your buyer pays for.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "So read the blade before you reorder. Three wear patterns, three different causes.",
+      },
+      {
+        type: "h2",
+        value: "Sign 1: Rounded, polished edge (abrasive wear)",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A rounded, bright edge instead of a crisp one is plain abrasion: bark grit, sand, and dirt grinding the steel down over thousands of cuts. It's normal. The question is the rate. Clean, debarked stems are gentle on an edge; whole-tree feed dragged through dirt is not, which is why the same blade lasts a week on one job and two days on another.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**At the machine:** tilt the edge to the light. A line of reflection along it means it's rounded over and no longer cutting.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If you're rounding fast, the feed is more abrasive than the steel can handle. Clean incoming material where you can. For abrasive but **low-impact** feed (softwood, bamboo, clean high-volume runs), a high-wear cold-work grade like D2 / Cr12MoV gives the longest edge life — just don't carry it into impact-heavy work.",
+      },
+      {
+        type: "h2",
+        value: "Sign 2: Chipped corners (impact damage)",
+      },
+      {
+        type: "image",
+        value: "/images/news/wood-chipper-blade-wear-types.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Chips and broken corners are not wear, they're impact: a stone, a nail, or a frozen knot striking an edge that's too hard, too thin, or ground too sharp to absorb the blow. Winter makes it worse, because frozen wood is far less forgiving.",
+      },
+      {
+        type: "paragraph",
+        value: "Two things to check before you blame the steel:",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Bevel angle too sharp.** Most chipper knives run a single bevel around **30–40°** (**30–37°** on dense hardwood). Grind it sharper than spec and the edge loses the support behind it and chips. Match the OEM bevel; don't freehand it shallower chasing a \"sharper\" cut.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Wrong steel for the duty.** Wear resistance and toughness pull against each other, and the big carbides in D2 that resist wear are exactly what crack under impact. Whole-tree, knotty, or frozen feed calls for a tougher grade. Modified A8, sold in the trade as *chipper knife steel*, is the usual answer: tougher than D2, with enough wear resistance to hold an edge.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is where grade selection earns its keep. We supply [wood chipper blades](/products/wood-chipper-blades) in A8 / modified A8 for impact-heavy feed and D2-class for low-impact high-wear runs, with hardness and bevel matched to your machine, because the right steel for clean debarked logs is the wrong one for dirty whole-tree material.",
+      },
+      {
+        type: "h2",
+        value: "Sign 3: Blue or straw heat marks (friction and clearance)",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Burn coloring near the edge means the blade ran too hot. Heat draws the temper, the edge softens, and dulls fast. Usual causes: a dull edge, too steep a bevel, or too much gap against the anvil.",
+      },
+      {
+        type: "paragraph",
+        value: "Check these in order, all doable at the machine:",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Anvil clearance.** Set the knife-to-anvil gap to the OEM figure (commonly near **1/8 in** for fresh blades, run as tight as **~0.040 in** on some machines). Too wide and the blade tears rather than shears; you'll see oversize chips and a smoking disc.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Edge condition.** A dull edge generates its own heat. If it's rounded, sharpen or flip it before chasing anything else.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Bevel angle.** Too steep and you're pushing wood, not cutting it.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A worn [anvil or counter-knife](/products/wood-chipper-anvils) quietly wrecks both chip quality and blade life, so inspect it every time you change knives.",
+      },
+      {
+        type: "h2",
+        value: "Match the blade to your machine, not just the price",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The wear pattern also tells you what to buy next. Disc chippers cut across the grain for uniform chip length, which is why pulp operations that grade chip size favor them. Drum chippers (Bandit, Vermeer, Morbark) prioritize throughput; some, like Vermeer, run reversible dual-edge knives you flip for a second life. Whatever the machine, replace knives in matched sets so the rotor stays balanced, and match length, thickness, bolt pattern, and bevel exactly.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The cheapest blade per piece is rarely the cheapest per ton once downtime and downgraded chips are in the math.",
+      },
+      {
+        type: "h2",
+        value: "Not sure what your wear pattern is telling you?",
+      },
+      {
+        type: "callout",
+        value:
+          "Send us a clear photo of your worn chipper blade. Our engineers will identify the wear mode (abrasion, impact, or heat) and recommend the steel grade, hardness, and bevel angle matched to your machine and wood species. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "circular-knife-types",
     tag: "TECHNICAL GUIDE",
     date: "24.JUN.2026",

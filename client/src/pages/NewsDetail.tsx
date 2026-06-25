@@ -367,11 +367,11 @@ export default function NewsDetail() {
                     const cap = captionFromUrl(block.value);
                     return (
                       <div key={i} className="my-10 sm:my-12">
-                        <div className="border border-slate-200 bg-white overflow-hidden">
+                        <div className="max-w-[760px] border border-slate-200 bg-white overflow-hidden">
                           <img
                             src={block.value}
                             alt={cap || formatHeadingCase(article.title)}
-                            className="w-full max-h-[560px] object-cover"
+                            className="w-full max-h-[400px] object-contain bg-slate-50"
                             loading="lazy"
                             decoding="async"
                             width={1200}
