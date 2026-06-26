@@ -9,9 +9,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { IndustryProduct } from "./types";
-import { MONO, SPRING_MECHANICAL } from "./types";
-
-const PAGE_SIZE = 6;
+import { SPRING_MECHANICAL } from "./types";
 
 interface Props {
   products: IndustryProduct[];
@@ -23,25 +21,14 @@ export default function IndustryToolingMatrix({
   filterCategories,
 }: Props) {
   const [activeFilter, setActiveFilter] = useState("ALL");
-  const [page, setPage] = useState(1);
 
   const filtered =
     activeFilter === "ALL"
       ? products
       : products.filter(p => p.category.toUpperCase() === activeFilter);
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const pageItems = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-
   const handleFilter = (f: string) => {
     setActiveFilter(f);
-    setPage(1);
-  };
-
-  const handlePage = (p: number) => {
-    setPage(p);
-    const el = document.getElementById("tooling-matrix");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -79,7 +66,7 @@ export default function IndustryToolingMatrix({
         {/* Card grid — mechanical AnimatePresence */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <AnimatePresence mode="popLayout">
-            {pageItems.map(product => (
+            {filtered.map(product => (
               <motion.div
                 key={`${product.href}-${product.name}`}
                 layout
@@ -135,60 +122,6 @@ export default function IndustryToolingMatrix({
               </motion.div>
             ))}
           </AnimatePresence>
-        </div>
-
-        {/* Pagination */}
-        <div className="mt-12 flex flex-col items-center gap-4">
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => handlePage(Math.max(1, page - 1))}
-              disabled={page === 1}
-              style={MONO}
-              className="w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
-            >
-              «
-            </button>
-
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
-              <button
-                key={p}
-                type="button"
-                onClick={() => handlePage(p)}
-                style={MONO}
-                className={`w-10 h-10 border text-[13px] transition-colors duration-200 ${
-                  page === p
-                    ? "border-[#001f4d] bg-[#001f4d] text-white"
-                    : "border-slate-200 text-slate-500 hover:border-[#001f4d] hover:text-[#001f4d]"
-                }`}
-              >
-                {p}
-              </button>
-            ))}
-
-            <button
-              type="button"
-              onClick={() => handlePage(Math.min(totalPages, page + 1))}
-              disabled={page === totalPages}
-              style={MONO}
-              className="w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
-            >
-              »
-            </button>
-          </div>
-
-          <div className="w-48 h-[2px] bg-slate-200 overflow-hidden">
-            <div
-              className="h-full bg-[#001f4d] transition-all duration-300"
-              style={{ width: `${(page / totalPages) * 100}%` }}
-            />
-          </div>
-          <p
-            style={MONO}
-            className="text-[10px] text-slate-400  tracking-[0.3em]"
-          >
-            {page} / {totalPages}
-          </p>
         </div>
       </div>
     </section>
