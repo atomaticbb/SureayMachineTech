@@ -8,11 +8,19 @@ import {
   Redirect,
   Router as WouterRouter,
 } from "wouter";
-import { lazy, Suspense, use, useEffect, useState, type ReactNode } from "react";
+import {
+  lazy,
+  Suspense,
+  use,
+  useEffect,
+  useState,
+  type ReactNode,
+} from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
+import GlobalMobileCTA from "@/components/common/GlobalMobileCTA";
 import { LangProvider, useLang } from "./contexts/LangContext";
 import { parseLangFromPath, DEFAULT_LANG } from "./lib/i18n";
 import { preloadLocale } from "@/data/locales";
@@ -28,7 +36,10 @@ const isProductsEntryPath =
 
 if (isProductsEntryPath) {
   void importProductListPage();
-  if (/^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products\/.+/.test(initialPath) || /^\/products\/.+/.test(initialPath)) {
+  if (
+    /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products\/.+/.test(initialPath) ||
+    /^\/products\/.+/.test(initialPath)
+  ) {
     void importProductDetail();
   }
 }
@@ -124,10 +135,7 @@ const PrivacyPolicy = lazyWithRetry(
   () => import("./pages/PrivacyPolicy"),
   "privacy-policy"
 );
-const Terms = lazyWithRetry(
-  () => import("./pages/Terms"),
-  "terms"
-);
+const Terms = lazyWithRetry(() => import("./pages/Terms"), "terms");
 
 // ── Suspense fallback ──────────────────────────────────────────────────────────
 function PageLoader() {
@@ -249,12 +257,19 @@ function Router() {
       };
 
       if (typeof window !== "undefined" && "requestIdleCallback" in window) {
-        const id = (window as Window & {
-          requestIdleCallback: (callback: () => void, options?: { timeout: number }) => number;
-          cancelIdleCallback: (handle: number) => void;
-        }).requestIdleCallback(warmup, { timeout: 1500 });
+        const id = (
+          window as Window & {
+            requestIdleCallback: (
+              callback: () => void,
+              options?: { timeout: number }
+            ) => number;
+            cancelIdleCallback: (handle: number) => void;
+          }
+        ).requestIdleCallback(warmup, { timeout: 1500 });
         return () => {
-          (window as Window & { cancelIdleCallback: (handle: number) => void }).cancelIdleCallback(id);
+          (
+            window as Window & { cancelIdleCallback: (handle: number) => void }
+          ).cancelIdleCallback(id);
         };
       }
 
@@ -271,42 +286,43 @@ function Router() {
       <Suspense fallback={<PageLoader />}>
         <LocalePreloader>
           <Switch>
-          <Route path="/" component={Home} />
+            <Route path="/" component={Home} />
 
-          {/* Products — blade-only architecture */}
-          <Route path="/products" component={ProductListPage} />
-          <Route path="/products/:id" component={ProductDetail} />
-          <Route path="/categories/:slug" component={CategoryAggregation} />
+            {/* Products — blade-only architecture */}
+            <Route path="/products" component={ProductListPage} />
+            <Route path="/products/:id" component={ProductDetail} />
+            <Route path="/categories/:slug" component={CategoryAggregation} />
 
-          {/* Industry verticals */}
-          <Route path="/plastic-industry" component={PlasticIndustry} />
-          <Route path="/metal-industry" component={MetalIndustry} />
-          <Route path="/paper-industry" component={PaperIndustry} />
-          <Route path="/new-energy-industry" component={NewEnergyIndustry} />
-          <Route path="/converting-industry" component={ConvertingIndustry} />
-          <Route path="/wood-industry" component={WoodIndustry} />
-          <Route path="/custom" component={CustomBlades} />
+            {/* Industry verticals */}
+            <Route path="/plastic-industry" component={PlasticIndustry} />
+            <Route path="/metal-industry" component={MetalIndustry} />
+            <Route path="/paper-industry" component={PaperIndustry} />
+            <Route path="/new-energy-industry" component={NewEnergyIndustry} />
+            <Route path="/converting-industry" component={ConvertingIndustry} />
+            <Route path="/wood-industry" component={WoodIndustry} />
+            <Route path="/custom" component={CustomBlades} />
 
-          {/* Static pages */}
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/privacy-policy" component={PrivacyPolicy} />
-          <Route path="/terms" component={Terms} />
-          <Route path="/news" component={News} />
-          <Route path="/news/:id" component={NewsDetail} />
+            {/* Static pages */}
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+            <Route path="/terms" component={Terms} />
+            <Route path="/news" component={News} />
+            <Route path="/news/:id" component={NewsDetail} />
 
-          {/* Admin — login page is public; dashboard is protected */}
-          <Route path="/admin/login" component={AdminLogin} />
-          <Route path="/admin">
-            {() => <ProtectedRoute component={Admin} />}
-          </Route>
+            {/* Admin — login page is public; dashboard is protected */}
+            <Route path="/admin/login" component={AdminLogin} />
+            <Route path="/admin">
+              {() => <ProtectedRoute component={Admin} />}
+            </Route>
 
-          {/* 404 */}
-          <Route path="/404" component={NotFound} />
-          <Route component={NotFound} />
+            {/* 404 */}
+            <Route path="/404" component={NotFound} />
+            <Route component={NotFound} />
           </Switch>
         </LocalePreloader>
       </Suspense>
+      <GlobalMobileCTA />
     </>
   );
 }

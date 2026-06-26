@@ -18,7 +18,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
-import MobileStickyCTA from "@/components/product-detail/MobileStickyCTA";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { useLang } from "@/contexts/LangContext";
 import { getBladeById, getRelatedBlades, getSEO } from "@/data/locales";
@@ -92,14 +91,14 @@ export default function ProductDetail() {
           sku: blade.id,
           mpn: blade.id,
           brand: "Sureay",
-          material: blade.specs.find((s) => s.label === "Material")?.value,
+          material: blade.specs.find(s => s.label === "Material")?.value,
           ...(blade.offers && { offers: blade.offers }),
         }}
       />
 
       <Navbar />
 
-      <main className="flex-grow pt-[68px] pb-16">
+      <main className="flex-grow pt-[68px]">
         {/* Breadcrumbs */}
         <Breadcrumbs
           variant="light"
@@ -170,7 +169,6 @@ export default function ProductDetail() {
       </main>
 
       <WhatsAppFloat />
-      <MobileStickyCTA />
       <Footer />
     </div>
   );
