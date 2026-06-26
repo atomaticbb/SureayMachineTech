@@ -104,21 +104,26 @@ export default function SEO({
   const lang = useLang();
   const fullTitle = normalizeTitle(title);
 
+  // News pages are English-only — no language prefix or multilingual hreflang.
+  const isNewsPath =
+    canonicalUrl === "/news" || (canonicalUrl?.startsWith("/news/") ?? false);
+
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and
   // we prepend the active language prefix.
   const canonicalHref = canonicalUrl
-    ? abs(localizedPath(canonicalUrl, lang))
+    ? abs(isNewsPath ? canonicalUrl : localizedPath(canonicalUrl, lang))
     : undefined;
 
   // hreflang alternates — one link per supported language plus x-default.
-  // The x-default convention points to the un-prefixed English version.
-  const hreflangs = canonicalUrl
-    ? SUPPORTED_LANGS.map(altLang => ({
-        lang: altLang,
-        href: abs(localizedPath(canonicalUrl, altLang)),
-      }))
-    : [];
+  // News pages are excluded: they only exist in English.
+  const hreflangs =
+    canonicalUrl && !isNewsPath
+      ? SUPPORTED_LANGS.map(altLang => ({
+          lang: altLang,
+          href: abs(localizedPath(canonicalUrl, altLang)),
+        }))
+      : [];
 
   const resolvedOgImage = productData
     ? abs(productData.image)
@@ -230,7 +235,7 @@ export default function SEO({
       {hreflangs.map(({ lang: alt, href }) => (
         <link key={alt} rel="alternate" hrefLang={alt} href={href} />
       ))}
-      {canonicalUrl && (
+      {canonicalUrl && !isNewsPath && (
         <link
           rel="alternate"
           hrefLang="x-default"

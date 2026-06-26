@@ -54,6 +54,13 @@ export function createApp({
     next();
   });
 
+  // News pages are English-only — redirect /{lang}/news* → /news*
+  app.get(/^\/(es|fr|ru|vi|ar)\/news(\/.*)?$/, (req, res) => {
+    const rest = req.params[1] || "";
+    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
+    res.redirect(301, `/news${rest}${qs}`);
+  });
+
   // Canonical redirects for deprecated / duplicate SEO paths.
   app.use((req, res, next) => {
     // Language-aware: /[lang]/categories/custom-profile → /[lang]/custom

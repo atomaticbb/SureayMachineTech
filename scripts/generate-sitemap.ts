@@ -166,6 +166,19 @@ const newsArticles: UrlEntry[] = ALL_DISPATCHES.map(a => ({
 
 // ── Render ────────────────────────────────────────────────────────────────────
 
+/** Render a single <url> block (no hreflang alternates). Used for pages
+ *  that intentionally exist only in English (e.g. news). */
+function singleUrlEntry(entry: UrlEntry): string {
+  return [
+    "  <url>",
+    `    <loc>${BASE_URL}${entry.path}</loc>`,
+    `    <lastmod>${entry.lastmod}</lastmod>`,
+    `    <changefreq>${entry.changefreq}</changefreq>`,
+    `    <priority>${entry.priority}</priority>`,
+    "  </url>",
+  ].join("\n");
+}
+
 const sections = [
   "  <!-- Core Pages -->",
   ...corePages.flatMap(expandUrlEntry),
@@ -179,9 +192,9 @@ const sections = [
   "  <!-- Product Detail Pages -->",
   ...productPages.flatMap(expandUrlEntry),
   "",
-  "  <!-- News -->",
-  ...expandUrlEntry(newsListPage),
-  ...newsArticles.flatMap(expandUrlEntry),
+  "  <!-- News (English only — no multilingual variants) -->",
+  singleUrlEntry(newsListPage),
+  ...newsArticles.map(singleUrlEntry),
 ];
 
 const xml = [
@@ -196,15 +209,14 @@ const xml = [
 ].join("\n");
 
 fs.writeFileSync(OUTPUT, xml, "utf-8");
-const canonicalCount =
+const multiLangCount =
   corePages.length +
   industryPages.length +
   categoryPages.length +
-  productPages.length +
-  1 +
-  newsArticles.length;
-const totalUrlCount = canonicalCount * SUPPORTED_LANGS.length;
+  productPages.length;
+const newsCount = 1 + newsArticles.length;
+const totalUrlCount = multiLangCount * SUPPORTED_LANGS.length + newsCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${canonicalCount} canonical × ${SUPPORTED_LANGS.length} langs)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news EN-only)`
 );

@@ -65,11 +65,16 @@ const CANONICAL_ROUTES: string[] = [
 const PRERENDER_LANGS_RAW = (process.env.PRERENDER_LANGS ?? "all").toLowerCase();
 const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 
+// News routes are English-only — exclude from multilingual expansion.
+const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
+
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
       ...CANONICAL_ROUTES,
       ...LANG_PREFIXES.flatMap(lang =>
-        CANONICAL_ROUTES.map(r => (r === "/" ? `/${lang}` : `/${lang}${r}`))
+        CANONICAL_ROUTES
+          .filter(r => !isNewsRoute(r))
+          .map(r => (r === "/" ? `/${lang}` : `/${lang}${r}`))
       ),
     ]
   : CANONICAL_ROUTES;

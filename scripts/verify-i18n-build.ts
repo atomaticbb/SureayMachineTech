@@ -50,6 +50,9 @@ const CANONICAL_ROUTES: string[] = [
 const PRERENDER_LANGS_RAW = (process.env.PRERENDER_LANGS ?? "all").toLowerCase();
 const EXPECT_MULTI_LANG = PRERENDER_LANGS_RAW !== "en";
 
+// News routes are English-only: no /{lang}/news/* variants and no hreflang.
+const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
+
 const failures: string[] = [];
 
 function routeToFile(route: string): string {
@@ -104,15 +107,18 @@ function assertFile(route: string, label: string): void {
     );
   }
 
-  const hreflangValues = [...content.matchAll(/hreflang="([a-z-]+)"/g)].map(
-    m => m[1]
-  );
-  const REQUIRED_HREFLANGS = ["en", "es", "fr", "ru", "vi", "ar", "x-default"];
-  for (const required of REQUIRED_HREFLANGS) {
-    if (!hreflangValues.includes(required)) {
-      failures.push(
-        `[${label}] hreflang="${required}" missing in "${route}"`
-      );
+  // News pages are English-only and intentionally carry no hreflang tags.
+  if (!isNewsRoute(route)) {
+    const hreflangValues = [...content.matchAll(/hreflang="([a-z-]+)"/g)].map(
+      m => m[1]
+    );
+    const REQUIRED_HREFLANGS = ["en", "es", "fr", "ru", "vi", "ar", "x-default"];
+    for (const required of REQUIRED_HREFLANGS) {
+      if (!hreflangValues.includes(required)) {
+        failures.push(
+          `[${label}] hreflang="${required}" missing in "${route}"`
+        );
+      }
     }
   }
 }
@@ -134,9 +140,11 @@ for (const route of CANONICAL_ROUTES) {
 }
 
 // 2. Per-language routes — required when EXPECT_MULTI_LANG.
+//    News routes are skipped: they exist in English only.
 if (EXPECT_MULTI_LANG) {
   for (const lang of LANG_PREFIXES) {
     for (const route of CANONICAL_ROUTES) {
+      if (isNewsRoute(route)) continue;
       const localized = route === "/" ? `/${lang}` : `/${lang}${route}`;
       assertFile(localized, lang);
     }
@@ -144,8 +152,9 @@ if (EXPECT_MULTI_LANG) {
 }
 
 // 3. Summary.
+const multiLangRouteCount = CANONICAL_ROUTES.filter(r => !isNewsRoute(r)).length;
 const expected = EXPECT_MULTI_LANG
-  ? CANONICAL_ROUTES.length * (1 + LANG_PREFIXES.length)
+  ? CANONICAL_ROUTES.length + multiLangRouteCount * LANG_PREFIXES.length
   : CANONICAL_ROUTES.length;
 
 if (failures.length === 0) {

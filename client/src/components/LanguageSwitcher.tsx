@@ -56,6 +56,11 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
       ? stripLangPrefix(window.location.pathname)
       : "/";
 
+  // News pages are English-only — language switcher links must not add a
+  // prefix; they point to the English canonical URL for news routes.
+  const isNewsPath =
+    canonicalPath === "/news" || canonicalPath.startsWith("/news/");
+
   // Close on outside click.
   useEffect(() => {
     if (!open) return;
@@ -78,7 +83,9 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
       >
         {SUPPORTED_LANGS.map((lang) => {
           const isCurrent = lang === currentLang;
-          const href = localizedPath(canonicalPath, lang);
+          const href = isNewsPath
+            ? canonicalPath
+            : localizedPath(canonicalPath, lang);
           const { label, Flag } = LANG_META[lang];
           return (
             <a
@@ -144,7 +151,9 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
           >
             {SUPPORTED_LANGS.map((lang) => {
               const isCurrent = lang === currentLang;
-              const href = localizedPath(canonicalPath, lang);
+              const href = isNewsPath
+                ? canonicalPath
+                : localizedPath(canonicalPath, lang);
               const { label, Flag } = LANG_META[lang];
               return (
                 <li key={lang} role="option" aria-selected={isCurrent}>
