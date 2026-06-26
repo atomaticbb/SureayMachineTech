@@ -1430,6 +1430,198 @@ export const blades: Blade[] = [
   },
 
   // ─────────────────────────────────────────────────────────────────────────
+  // Nonwoven & Hygiene Log Saw Blades (variant of tissue-log-saw-blades)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "nonwoven-log-saw-blades",
+    name: "Nonwoven Log Saw Blades",
+    fullName:
+      "Corrosion-Resistant Log Saw Blades for Nonwoven & Hygiene Converting",
+    category: "log_saw_blades",
+    sector: "converting",
+    categoryDisplay: "Nonwoven Converting Blades",
+    image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+    badge: "Anti-Corrosion",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-02.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+    ],
+
+    description:
+      "Log saw blades engineered for nonwoven and hygiene converting lines — baby wipes, wet wipes, feminine hygiene, and adult incontinence rolls. D2 tool steel with corrosion-resistant TiN or hard chrome coating resists alcohol-based solutions, lotions, and surfactants. Micro-ground to ≤0.15 mm lateral runout for fraying-free cuts on spunbond, meltblown, SMS, and airlaid substrates. Compatible with Fameccanica, GDM, Curt G. Joa, and Zuiko converting lines. Custom diameters in 10 working days.",
+
+    fullDescription:
+      "Nonwoven hygiene converting lines present a fundamentally different set of blade demands compared to tissue paper operations. Where tissue log saws must manage paper dust and core crushing, nonwoven log saws face two distinct failure modes: fibre fraying from synthetic substrates that resist clean shear, and accelerated corrosion from the chemical environment on lines running alcohol, lotions, preservatives (phenoxyethanol), and surfactants at high humidity.\n\nSureay nonwoven log saw blades are built from D2 (1.2379) high-carbon, high-chromium tool steel and are available with application-specific corrosion-resistant coatings. Every blade is vacuum-hardened, tension-leveled, and CMM-verified before dispatch.\n\n## Why Tissue Blades Fail on Nonwoven Lines\n\nSpunbond polypropylene, meltblown, and SMS composite webs are fundamentally tougher to shear cleanly than cellulosic tissue. Synthetic fibres are elastic — they deflect ahead of a dull or slightly wobbly blade instead of separating cleanly, producing the frayed, stringy cut edges that cause downstream folding and packaging failures. A blade optimised for tissue (shallower bevel, softer matrix for CBN compatibility) will produce visible fibre pull-out on spunbond substrates within a fraction of the run time it would achieve on tissue.\n\nThe chemical environment compounds the problem. Wet wipe lines run saturation ratios of 2.0–3.5× (solution weight to substrate weight), meaning the blade is continuously exposed to the impregnation chemistry: typically 80–95% purified water plus preservatives, humectants, and surfactants. Standard D2 without a surface treatment will develop micro-pitting at the cutting edge within weeks, accelerating edge degradation and increasing particulate contamination risk in a hygiene-critical product.\n\n## Coating Options for Hygiene Environments\n\n**TiN PVD Coating (2–3 µm, HV 2300+):** Physical vapour deposition titanium nitride provides a chemically inert barrier with excellent adhesion. Blocks alcohol and surfactant ingress to the blade substrate, extends edge service intervals, and adds a hardness layer that resists micro-abrasion from SAP (superabsorbent polymer) particles present in absorbent core lines. Recommended for wet wipe and adult incontinence converting.\n\n**Hard Chrome Plating:** Electrodeposited hard chrome (20–30 µm) provides outstanding corrosion resistance in high-humidity environments (≥75% RH) and reduces the coefficient of friction against synthetic fibre webs. The thicker layer also fills surface micro-pores, creating a sealing effect against cleaning agent ingress during washdown cycles.\n\n**Uncoated D2 (standard):** Suitable for dry nonwoven converting lines — airlaid, thermobond, spunlace — where no saturation chemistry is present. Hardness HRC 58–60, CBN sharpening compatible.\n\n## Bevel Geometry for Synthetic Fibre\n\nNonwoven substrates require a slightly steeper primary bevel angle (25°–35°) compared to tissue (15°–25°). The steeper geometry concentrates cutting force at the edge contact point, initiating a clean fibre separation rather than the elastic deflection that causes fraying. For lotion-impregnated wet wipe logs with high cohesive strength, a compound bevel (primary + secondary relief) delivers the cleanest cut face with minimal edge rollover over extended run cycles.\n\n## Dimensional Tolerances\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Surface finish:** Mirror polished (Ra ≤0.2 µm)\n\n## OEM Platform Compatibility\n\nNonwoven hygiene converting log saws differ in bore specification and diameter from tissue lines. Common platforms:\n\n**Fameccanica (Italy):** Baby diaper and femcare converting lines; blade diameters typically Ø400–Ø550 mm depending on product format and roll diameter.\n\n**GDM (Italy):** High-speed hygiene product lines; blade specifications to customer drawing.\n\n**Curt G. Joa (USA):** North American adult incontinence and femcare lines; imperial bore specifications available.\n\n**Zuiko (Japan):** Baby diaper converting; blade dimensions to OEM drawing.\n\n**Chinese domestic OEMs (Zlink, Dachang, Quanzhou-based builders):** Blade specifications supplied to drawing or sample reverse-engineering.\n\nCustom OD from Ø350 mm to Ø700 mm manufactured to order. Drawing review and first-article dimensional sign-off available.",
+
+    link: "/products/nonwoven-log-saw-blades",
+    isFeatured: false,
+
+    compatibleMachines: [
+      "Fameccanica",
+      "GDM",
+      "Curt G. Joa",
+      "Zuiko",
+      "Zlink",
+      "Dachang",
+    ],
+
+    specs: [
+      { label: "Material", value: "D2 (1.2379) — HRC 58–60" },
+      {
+        label: "Coating Options",
+        value: "TiN PVD | Hard Chrome | Uncoated",
+      },
+      {
+        label: "Lateral Runout",
+        value: "≤0.15 mm (CMM-verified)",
+      },
+      { label: "Edge Runout", value: "≤0.10 mm" },
+      {
+        label: "Diameter Range",
+        value: "Ø350 mm – Ø700 mm (custom to drawing)",
+      },
+      {
+        label: "Applications",
+        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
+      },
+    ],
+
+    components: [
+      {
+        id: "corrosion-coating",
+        tag: "COATINGS",
+        title: "TiN & Hard Chrome for Chemical Resistance",
+        description:
+          "Wet wipe and hygiene converting lines run continuous exposure to alcohols, surfactants, and preservatives that corrode bare tool steel edges within weeks. Our TiN PVD coating (HV 2300+) and hard chrome plating create a chemically inert barrier, blocking ingress at the cutting edge and extending the clean-running interval between regrinding cycles.",
+      },
+      {
+        id: "nonwoven-bevel",
+        tag: "GEOMETRY",
+        title: "Synthetic-Fibre Bevel Profile",
+        description:
+          "Spunbond, meltblown, and SMS webs deflect elastically ahead of a tissue-spec bevel, causing visible fibre fraying on the cut face. We apply a steeper primary bevel (25°–35°) with a compound secondary relief that initiates clean fibre separation on first contact — eliminating the stringing and edge densification that drives packaging line rejects.",
+      },
+      {
+        id: "runout-hygiene",
+        tag: "PRECISION",
+        title: "≤0.15 mm Runout for Fraying-Free Cuts",
+        description:
+          "Nonwoven logs are softer and more compressible than tissue logs. Any lateral blade wobble translates directly into a compressed, ragged cut face rather than a clean shear plane. Every blade is tension-leveled and CMM-verified to ≤0.15 mm lateral runout before dispatch, ensuring the blade enters the log at a consistent angle on every stroke.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Machine Platform / Product Format",
+      col1: "Outer Diameter (mm)",
+      col2: "Bore / ID (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Reference dimensions for common nonwoven hygiene converting platforms. Bore patterns, keyways, and drive-pin holes manufactured to customer drawing. Custom OD Ø350–Ø700 mm available with 10-working-day lead time.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Baby Wipe / Wet Wipe (short log)",
+        od: "400",
+        id: "To drawing",
+        thickness: "3.80",
+      },
+      {
+        spec: "Baby Wipe / Wet Wipe (standard log)",
+        od: "450",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        spec: "Femcare / Sanitary Napkin Roll",
+        od: "500",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        spec: "Adult Incontinence / Large Format",
+        od: "550",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        spec: "Industrial / Canister Wipe Roll",
+        od: "600",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        spec: "Custom / OEM to Drawing",
+        od: "Ø350–700",
+        id: "To drawing",
+        thickness: "3.80–6.00",
+      },
+    ],
+
+    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+
+    offers: {
+      lowPrice: 150,
+      highPrice: 900,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "Why do my blades corrode quickly on our wet wipe converting line?",
+          answer:
+            "Wet wipe lines continuously expose blades to preservatives (phenoxyethanol), surfactants, and alcohol-based solutions at elevated humidity. Bare D2 tool steel develops micro-pitting at the cutting edge within weeks under these conditions, accelerating wear and creating a particulate contamination risk. The solution is a corrosion-resistant surface treatment: TiN PVD coating (2–3 µm, HV 2300+) provides a chemically inert barrier against alcohol and surfactant ingress, while hard chrome plating seals surface micro-pores against cleaning agent penetration during washdown cycles.",
+        },
+        {
+          question:
+            "My blades are leaving frayed, stringy cut edges on spunbond nonwoven logs. What is causing this?",
+          answer:
+            "Fraying on spunbond PP or SMS substrates is caused by two factors: incorrect bevel geometry and/or excessive lateral runout. Synthetic fibres are elastic — they deflect ahead of a shallow tissue-spec bevel (15°–25°) instead of shearing cleanly. Nonwoven substrates require a steeper primary bevel (25°–35°) to concentrate cutting force at the fibre contact point. Additionally, lateral runout above 0.20 mm causes the blade to compress the log rather than shear it, producing ragged edges. Our nonwoven blades are CMM-verified to ≤0.15 mm lateral runout and ground with a compound bevel profile optimised for synthetic fibre.",
+        },
+        {
+          question:
+            "Can you supply blades compatible with Fameccanica or GDM hygiene converting machines?",
+          answer:
+            "Yes. We manufacture to customer drawing or sample for Fameccanica, GDM, Curt G. Joa, Zuiko, and Chinese domestic OEM platforms. Bore diameter, drive-pin hole pattern, OD, and thickness are all customisable. Send us your OEM drawing or a worn blade sample and we will provide a dimensional confirmation and first-article sign-off before full production.",
+        },
+        {
+          question:
+            "What is the difference between TiN coating and hard chrome plating for hygiene blades?",
+          answer:
+            "TiN PVD (titanium nitride) is a thin, extremely hard coating (2–3 µm, HV 2300+) applied in a vacuum chamber. It provides an inert barrier against chemical corrosion, adds surface hardness that resists micro-abrasion from SAP particles in absorbent core lines, and extends edge service intervals. Hard chrome is a thicker electrodeposited layer (20–30 µm) that offers excellent corrosion resistance in high-humidity environments and reduces friction coefficient against synthetic fibre webs. For wet wipe lines with aggressive chemistry, TiN is the preferred option. For dry or semi-dry nonwoven lines in high-humidity mill environments, hard chrome is cost-effective.",
+        },
+        {
+          question:
+            "Do these blades work with in-line CBN sharpening systems on nonwoven lines?",
+          answer:
+            "Most nonwoven hygiene converting log saws do not use continuous in-line CBN sharpening systems (unlike tissue lines). Blades are typically replaced on a scheduled interval rather than continuously dressed. However, if your line does use in-line CBN grinding, our D2 blades hardened to HRC 58–60 are compatible with standard CBN wheel specifications. The TiN coating will be removed by CBN contact at the cutting edge, which is normal — the protective benefit applies to the blade body, not the actively sharpened edge zone.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a manufacturer or a trading company?",
+          answer:
+            "Direct manufacturer. We forge, grind, coat, and quality-inspect every blade in-house at our 15,000 m² facility in Ma'anshan, Anhui Province, under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
+        },
+        {
+          question:
+            "Can you reverse-engineer a blade from a worn sample or OEM drawing?",
+          answer:
+            "Yes. Send us your worn blade or OEM dimensional drawing and we will produce a CMM measurement report and dimensional confirmation before committing to production. First-article inspection reports are available on request for new tooling projects.",
+        },
+        {
+          question: "What is the minimum order quantity and lead time?",
+          answer:
+            "Minimum order is typically 2–5 blades depending on diameter. Standard lead time is 10 working days from drawing sign-off. Rush orders can be accommodated — contact us with your timeline.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
   // 7. Paper Cutting Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
