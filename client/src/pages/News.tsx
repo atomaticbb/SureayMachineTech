@@ -4,7 +4,7 @@
  * Data sourced from client/src/data/news.ts
  */
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -19,10 +19,14 @@ const CATEGORIES: { value: string; label: string }[] = [
   { value: "COMPANY NEWS", label: "Company News" },
 ];
 
+const PER_PAGE = 12;
+
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function CorporateDispatches() {
   const [activeCategory, setActiveCategory] = useState("ALL");
+  const [page, setPage] = useState(1);
+  const gridRef = useRef<HTMLElement>(null);
 
   const allPosts = SORTED_DISPATCHES;
 
@@ -30,6 +34,26 @@ export default function CorporateDispatches() {
     activeCategory === "ALL"
       ? allPosts
       : allPosts.filter(d => d.tag === activeCategory);
+
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredDispatches.length / PER_PAGE)
+  );
+  const currentPage = Math.min(page, totalPages);
+  const pagedDispatches = filteredDispatches.slice(
+    (currentPage - 1) * PER_PAGE,
+    currentPage * PER_PAGE
+  );
+
+  function selectCategory(value: string) {
+    setActiveCategory(value);
+    setPage(1);
+  }
+
+  function goToPage(next: number) {
+    setPage(next);
+    gridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 antialiased">
@@ -80,7 +104,7 @@ export default function CorporateDispatches() {
               {CATEGORIES.map(cat => (
                 <button
                   key={cat.value}
-                  onClick={() => setActiveCategory(cat.value)}
+                  onClick={() => selectCategory(cat.value)}
                   className={`flex-shrink-0 min-w-fit md:flex-1 px-8 py-4 border-r border-slate-200 text-center font-mono text-[11px] font-semibold tracking-[0.16em] whitespace-nowrap transition-colors ${
                     activeCategory === cat.value
                       ? "bg-[#001f4d] text-white"
@@ -97,14 +121,17 @@ export default function CorporateDispatches() {
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 3 — Articles Grid
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8">
+        <section
+          ref={gridRef}
+          className="scroll-mt-20 py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8"
+        >
           {filteredDispatches.length === 0 ? (
             <p className="font-mono text-sm text-slate-400 tracking-widest">
               — No dispatches in this category —
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredDispatches.map(post => (
+              {pagedDispatches.map(post => (
                 <Link key={post.id} href={`/news/${post.id}`}>
                   <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300">
                     {/* Image — taller for 2-col layout */}
@@ -148,6 +175,64 @@ export default function CorporateDispatches() {
                 </Link>
               ))}
             </div>
+          )}
+
+          {/* Pagination — unified with IndustryToolingMatrix */}
+          {totalPages > 1 && (
+            <nav
+              aria-label="Pagination"
+              className="mt-12 flex flex-col items-center gap-4"
+            >
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => goToPage(Math.max(1, currentPage - 1))}
+                  disabled={currentPage === 1}
+                  aria-label="Previous page"
+                  className="font-mono w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
+                >
+                  «
+                </button>
+
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(n => (
+                  <button
+                    key={n}
+                    type="button"
+                    onClick={() => goToPage(n)}
+                    aria-current={n === currentPage ? "page" : undefined}
+                    className={`font-mono w-10 h-10 border text-[13px] transition-colors duration-200 ${
+                      n === currentPage
+                        ? "border-[#001f4d] bg-[#001f4d] text-white"
+                        : "border-slate-200 text-slate-500 hover:border-[#001f4d] hover:text-[#001f4d]"
+                    }`}
+                  >
+                    {n}
+                  </button>
+                ))}
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    goToPage(Math.min(totalPages, currentPage + 1))
+                  }
+                  disabled={currentPage === totalPages}
+                  aria-label="Next page"
+                  className="font-mono w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
+                >
+                  »
+                </button>
+              </div>
+
+              <div className="w-48 h-[2px] bg-slate-200 overflow-hidden">
+                <div
+                  className="h-full bg-[#001f4d] transition-all duration-300"
+                  style={{ width: `${(currentPage / totalPages) * 100}%` }}
+                />
+              </div>
+              <p className="font-mono text-[10px] text-slate-400 tracking-[0.3em]">
+                {currentPage} / {totalPages}
+              </p>
+            </nav>
           )}
         </section>
       </main>
