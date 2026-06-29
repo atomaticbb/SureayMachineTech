@@ -38,7 +38,10 @@ async function renderPdf(
   outputPath: string
 ): Promise<void> {
   const page = await browser.newPage();
-  await page.setContent(html, { waitUntil: "networkidle0", timeout: 30_000 });
+  // 120s ceiling (not 30s): the complete catalog inlines all ~25 products'
+  // base64 images in one setContent call, which can cross 30s under
+  // constrained Docker-build CPU/memory and flake the whole deploy.
+  await page.setContent(html, { waitUntil: "networkidle0", timeout: 120_000 });
   await page.pdf({
     path: outputPath,
     landscape: true,
