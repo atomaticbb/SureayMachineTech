@@ -18,6 +18,7 @@ import { fileURLToPath } from "url";
 import { blades } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
+import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import { LANG_PREFIXES } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -52,9 +53,13 @@ const CANONICAL_ROUTES: string[] = [
   ...blades.map(b => `/products/${b.id}`),
   // dynamic category aggregation pages — derived from static category metadata
   // "custom-profile" is excluded: CategoryAggregation redirects it to /custom
-  ...BLADE_CATEGORIES
-    .filter(c => c.slug !== "custom-profile")
-    .map(c => `/categories/${c.slug}`),
+  ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
+    c => `/categories/${c.slug}`
+  ),
+  // mixer wear parts (English-only): overview + 2 categories + 8 products
+  "/mixer-wear-parts",
+  ...mixerCategories.map(c => c.link),
+  ...mixerParts.map(p => p.link),
   // dynamic news detail pages — derived from static article data
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
 ];
@@ -62,19 +67,23 @@ const CANONICAL_ROUTES: string[] = [
 // Expand canonical English routes across all non-default languages.
 // LANG_PREFIXES is ["es", "fr", "ru", "vi"] for phase 1; Arabic added in phase 2.
 // Set PRERENDER_LANGS=en to skip the multi-lang expansion (fast dev iteration).
-const PRERENDER_LANGS_RAW = (process.env.PRERENDER_LANGS ?? "all").toLowerCase();
+const PRERENDER_LANGS_RAW = (
+  process.env.PRERENDER_LANGS ?? "all"
+).toLowerCase();
 const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 
-// News routes are English-only — exclude from multilingual expansion.
+// News & mixer routes are English-only — exclude from multilingual expansion.
 const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
+const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
+const isEnglishOnlyRoute = (r: string) => isNewsRoute(r) || isMixerRoute(r);
 
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
       ...CANONICAL_ROUTES,
       ...LANG_PREFIXES.flatMap(lang =>
-        CANONICAL_ROUTES
-          .filter(r => !isNewsRoute(r))
-          .map(r => (r === "/" ? `/${lang}` : `/${lang}${r}`))
+        CANONICAL_ROUTES.filter(r => !isEnglishOnlyRoute(r)).map(r =>
+          r === "/" ? `/${lang}` : `/${lang}${r}`
+        )
       ),
     ]
   : CANONICAL_ROUTES;
@@ -179,7 +188,11 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
       // Aborts are expected (we abort all external requests via interception),
       // so only log actual failures, not our deliberate aborts.
       const errText = failure?.errorText ?? "";
-      if (errText && errText !== "net::ERR_FAILED" && errText !== "net::ERR_ABORTED") {
+      if (
+        errText &&
+        errText !== "net::ERR_FAILED" &&
+        errText !== "net::ERR_ABORTED"
+      ) {
         console.error(`  [req-fail] ${route}: ${req.url()} -> ${errText}`);
       }
     });
@@ -217,7 +230,7 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     //   current route's canonical/og. Checking the canonical href value instead
     //   ensures we only snapshot once the correct page-specific tags are in place.
     await page.waitForFunction(
-      (routePath) => {
+      routePath => {
         const canonical = document.querySelector('link[rel="canonical"]');
         if (!canonical) {
           // No canonical tag yet — react-helmet-async hasn't flushed for this
@@ -228,15 +241,17 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
             document.title !== "Precision Industrial Blades | Sureay"
           );
         }
-        const href = canonical.getAttribute('href') ?? '';
+        const href = canonical.getAttribute("href") ?? "";
         // Homepage: canonical must be exactly the root URL.
-        if (routePath === '/') {
-          return href === 'https://sureay.com/' || href === 'https://sureay.com';
+        if (routePath === "/") {
+          return (
+            href === "https://sureay.com/" || href === "https://sureay.com"
+          );
         }
         // All other routes: canonical href must end with the route path.
         // e.g. "/products/twin-shaft-blades-recycling" →
         //      "https://sureay.com/products/twin-shaft-blades-recycling"
-        return href.endsWith(routePath.replace(/\/$/, ''));
+        return href.endsWith(routePath.replace(/\/$/, ""));
       },
       { timeout: TIMEOUT_MS },
       route
@@ -378,7 +393,9 @@ async function main(): Promise<void> {
       `\n[prerender] FAILED — ${FAILED_ROUTES.length} route(s) did not prerender:`
     );
     for (const r of FAILED_ROUTES) console.error(`  - ${r}`);
-    console.error("\n[prerender] build aborted — see DOM snapshots above for cause\n");
+    console.error(
+      "\n[prerender] build aborted — see DOM snapshots above for cause\n"
+    );
     process.exit(1);
   }
 

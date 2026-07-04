@@ -10,6 +10,10 @@ import type { Blade } from "@/data/blades";
 
 interface DecisiveSpecsProps {
   blade: Blade;
+  /** Override the spec-table image. Blades default to their dedicated spec
+   *  image (last gallery item); mixer parts pass their primary image so the
+   *  spec image always belongs to the current product. */
+  specImage?: string;
 }
 
 const DOT_GRID_STYLE: CSSProperties = {
@@ -17,11 +21,14 @@ const DOT_GRID_STYLE: CSSProperties = {
   backgroundSize: "24px 24px",
 };
 
-export default function DecisiveSpecs({ blade }: DecisiveSpecsProps) {
+export default function DecisiveSpecs({
+  blade,
+  specImage,
+}: DecisiveSpecsProps) {
   const specs = blade.specs ?? [];
   if (specs.length === 0) return null;
 
-  const panelImage = blade.gallery?.at(-1) ?? blade.image;
+  const panelImage = specImage ?? blade.gallery?.at(-1) ?? blade.image;
 
   return (
     <section

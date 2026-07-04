@@ -90,6 +90,18 @@ const CategoryAggregation = lazyWithRetry(
   () => import("./pages/CategoryAggregation"),
   "category-aggregation"
 );
+const MixerWearPartsOverview = lazyWithRetry(
+  () => import("./pages/MixerWearPartsOverview"),
+  "mixer-overview"
+);
+const MixerCategoryPage = lazyWithRetry(
+  () => import("./pages/MixerCategoryPage"),
+  "mixer-category"
+);
+const MixerProductDetail = lazyWithRetry(
+  () => import("./pages/MixerProductDetail"),
+  "mixer-product-detail"
+);
 const About = lazyWithRetry(() => import("./pages/About"), "about");
 const Contact = lazyWithRetry(() => import("./pages/Contact"), "contact");
 const News = lazyWithRetry(() => import("./pages/News"), "news");
@@ -188,7 +200,7 @@ function PageLoader() {
           margin: 0,
         }}
       >
-        Sureay Blades
+        Sureay Machinery
       </p>
 
       <style>{`
@@ -292,6 +304,20 @@ function Router() {
             <Route path="/products" component={ProductListPage} />
             <Route path="/products/:id" component={ProductDetail} />
             <Route path="/categories/:slug" component={CategoryAggregation} />
+
+            {/* Mixer Wear Parts — parallel business line */}
+            <Route
+              path="/mixer-wear-parts"
+              component={MixerWearPartsOverview}
+            />
+            <Route
+              path="/mixer-wear-parts/:slug"
+              component={MixerCategoryPage}
+            />
+            <Route
+              path="/mixer-wear-parts/:slug/:id"
+              component={MixerProductDetail}
+            />
 
             {/* Industry verticals */}
             <Route path="/plastic-industry" component={PlasticIndustry} />

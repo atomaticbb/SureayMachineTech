@@ -20,6 +20,7 @@ import { fileURLToPath } from "url";
 import { blades } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
+import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
   SUPPORTED_LANGS,
   DEFAULT_LANG,
@@ -106,17 +107,52 @@ const corePages: UrlEntry[] = [
   { path: "/products", lastmod: TODAY, changefreq: "weekly", priority: "0.9" },
   { path: "/about", lastmod: TODAY, changefreq: "yearly", priority: "0.6" },
   { path: "/contact", lastmod: TODAY, changefreq: "yearly", priority: "0.7" },
-  { path: "/privacy-policy", lastmod: TODAY, changefreq: "yearly", priority: "0.3" },
+  {
+    path: "/privacy-policy",
+    lastmod: TODAY,
+    changefreq: "yearly",
+    priority: "0.3",
+  },
   { path: "/terms", lastmod: TODAY, changefreq: "yearly", priority: "0.3" },
 ];
 
 const industryPages: UrlEntry[] = [
-  { path: "/plastic-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { path: "/metal-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { path: "/paper-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { path: "/new-energy-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { path: "/converting-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
-  { path: "/wood-industry", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
+  {
+    path: "/plastic-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/metal-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/paper-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/new-energy-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/converting-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
+  {
+    path: "/wood-industry",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.8",
+  },
   { path: "/custom", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
 ];
 
@@ -125,25 +161,51 @@ const EXCLUDED_PRODUCT_IDS = new Set([
   "wood-chipper-blades-standard",
 ]);
 
-const EXCLUDED_CATEGORY_SLUGS = new Set(["wood-chipper-blades", "custom-profile"]);
+const EXCLUDED_CATEGORY_SLUGS = new Set([
+  "wood-chipper-blades",
+  "custom-profile",
+]);
 
 const productPages: UrlEntry[] = blades
   .filter(b => !EXCLUDED_PRODUCT_IDS.has(b.id))
   .map(b => ({
-  path: `/products/${b.id}`,
-  lastmod: TODAY,
-  changefreq: "monthly",
-  priority: "0.85",
-}));
+    path: `/products/${b.id}`,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.85",
+  }));
 
-const categoryPages: UrlEntry[] = BLADE_CATEGORIES
-  .filter(c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug))
-  .map(c => ({
+const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
+  c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug)
+).map(c => ({
   path: `/categories/${c.slug}`,
   lastmod: TODAY,
   changefreq: "monthly",
   priority: "0.85",
 }));
+
+// Mixer Wear Parts — English-only for this batch (no multilingual variants).
+// 11 URLs: 1 overview + 2 categories + 8 products.
+const mixerPages: UrlEntry[] = [
+  {
+    path: "/mixer-wear-parts",
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.9",
+  },
+  ...mixerCategories.map(c => ({
+    path: c.link,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.85",
+  })),
+  ...mixerParts.map(p => ({
+    path: p.link,
+    lastmod: TODAY,
+    changefreq: "monthly",
+    priority: "0.85",
+  })),
+];
 
 const latestNewsDate = ALL_DISPATCHES.reduce((latest, article) => {
   const parsed = parseDate(article.date);
@@ -192,6 +254,9 @@ const sections = [
   "  <!-- Product Detail Pages -->",
   ...productPages.flatMap(expandUrlEntry),
   "",
+  "  <!-- Mixer Wear Parts (English only — no multilingual variants) -->",
+  ...mixerPages.map(singleUrlEntry),
+  "",
   "  <!-- News (English only — no multilingual variants) -->",
   singleUrlEntry(newsListPage),
   ...newsArticles.map(singleUrlEntry),
@@ -215,8 +280,10 @@ const multiLangCount =
   categoryPages.length +
   productPages.length;
 const newsCount = 1 + newsArticles.length;
-const totalUrlCount = multiLangCount * SUPPORTED_LANGS.length + newsCount;
+const mixerCount = mixerPages.length;
+const totalUrlCount =
+  multiLangCount * SUPPORTED_LANGS.length + newsCount + mixerCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer, both EN-only)`
 );

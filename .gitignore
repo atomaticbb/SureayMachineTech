@@ -109,6 +109,15 @@ tmpclaude-*-cwd
 # Generated PDF catalogs (copied into public/ by generate-catalogs.ts)
 client/public/catalogs/
 
+# Mixer wear-part image staging — raw placeholder downloads from crawl_mixer_images.py.
+# Only the converted webp under client/public/images/mixer-parts/ is committed.
+mixer-images/
+
+# One-off mixer image scratch scripts (crawl/convert from partner htwearparts.com).
+# Dev tooling only — not part of the app, must not ship to the public repo.
+crawl_mixer_images.py
+wire_mixer_images.py
+
 # Database
 *.db
 *.sqlite
