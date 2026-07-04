@@ -64,12 +64,9 @@ export default function NewsGrid() {
                   </p>
 
                   {/* Footer */}
-                  <div className="mt-auto pt-4 flex items-center justify-between border-t border-slate-100">
-                    <span className="font-mono text-[9px] text-slate-400 tracking-widest ">
-                      {t("home.news.readTime")}: {article.readTime}
-                    </span>
-                    <span className="font-black text-[#001f4d] text-lg leading-none group-hover:translate-x-1 transition-transform">
-                      →
+                  <div className="mt-auto pt-4 border-t border-slate-100">
+                    <span className="inline-flex items-center gap-1 font-mono text-sm font-bold text-[#001f4d] tracking-widest underline-offset-4 group-hover:underline transition-all">
+                      Read more &gt;&gt;
                     </span>
                   </div>
                 </div>

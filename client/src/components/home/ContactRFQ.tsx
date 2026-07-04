@@ -14,7 +14,13 @@ function fmtSize(bytes: number) {
 
 export default function ContactRFQ({
   productName,
-}: { productName?: string } = {}) {
+  formLocation = "homepage_bottom",
+  eventCategory = "homepage_rfq",
+}: {
+  productName?: string;
+  formLocation?: string;
+  eventCategory?: string;
+} = {}) {
   const { t } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -33,8 +39,23 @@ export default function ContactRFQ({
       return;
     }
     const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
-    if (!["pdf", "dxf", "dwg", "step", "stp", "jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
-      setError("Invalid file type. Accepted: .pdf .dxf .dwg .step .stp .jpg .jpeg .png .webp .gif");
+    if (
+      ![
+        "pdf",
+        "dxf",
+        "dwg",
+        "step",
+        "stp",
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "gif",
+      ].includes(ext)
+    ) {
+      setError(
+        "Invalid file type. Accepted: .pdf .dxf .dwg .step .stp .jpg .jpeg .png .webp .gif"
+      );
       return;
     }
     setError("");
@@ -94,8 +115,8 @@ export default function ContactRFQ({
       );
       setEmailNoticeOnly(!emailSent);
       gtagEvent("generate_lead", {
-        event_category: "homepage_rfq",
-        form_location: "homepage_bottom",
+        event_category: eventCategory,
+        form_location: formLocation,
         ...(productName ? { product_name: productName } : {}),
       });
       setSubmitted(true);
@@ -137,7 +158,13 @@ export default function ContactRFQ({
             </div>
 
             {/* Email */}
-            <a href="mailto:lynn@sureay.com" onClick={() => gtagEvent("email_click", { link_location: "contact_rfq" })} className="group block">
+            <a
+              href="mailto:lynn@sureay.com"
+              onClick={() =>
+                gtagEvent("email_click", { link_location: "contact_rfq" })
+              }
+              className="group block"
+            >
               <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">
@@ -209,7 +236,9 @@ export default function ContactRFQ({
               href="https://wa.me/8618005550657"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => gtagEvent("whatsapp_click", { link_location: "contact_rfq" })}
+              onClick={() =>
+                gtagEvent("whatsapp_click", { link_location: "contact_rfq" })
+              }
               className="group block"
             >
               <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
@@ -456,7 +485,9 @@ export default function ContactRFQ({
                   disabled={loading}
                   className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none shadow-md"
                 >
-                  {loading ? t("common.sending") : t("contact.form.submitButton")}
+                  {loading
+                    ? t("common.sending")
+                    : t("contact.form.submitButton")}
                 </button>
                 <p className="text-xs text-slate-400 text-center">
                   {t("contact.form.privacyNote")}

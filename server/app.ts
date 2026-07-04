@@ -264,6 +264,13 @@ export function createApp({
       express.static(staticPath, {
         redirect: false,
         setHeaders: (res, filePath) => {
+          // Keep the ISO certificate out of Google Images. It must stay
+          // crawlable (no robots.txt Disallow) so this noindex header is seen.
+          // Scoped to this exact file — factory/process images are unaffected.
+          if (filePath.endsWith("iso-9001-2015-certificate.webp")) {
+            res.setHeader("X-Robots-Tag", "noindex");
+          }
+
           if (filePath.endsWith(".html")) {
             res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
             res.setHeader("Pragma", "no-cache");

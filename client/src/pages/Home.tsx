@@ -10,6 +10,7 @@ import TechnicalFAQ from "@/components/home/TechnicalFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import HomeTestimonials from "@/components/home/HomeTestimonials";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
+import MixerWearPartsTeaser from "@/components/home/MixerWearPartsTeaser";
 
 const ITEM_LIST_LD = JSON.stringify({
   "@context": "https://schema.org",
@@ -69,6 +70,7 @@ export default function Home() {
         <HomeHero />
         <AuthorityCarousel />
         <TabEcosystem />
+        <MixerWearPartsTeaser />
         <ManufacturingBlocks />
         <IndustryOemPipeline />
         <HomeTestimonials />

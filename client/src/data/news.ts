@@ -2246,40 +2246,6 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
-    id: "chinaplas-2024-oem-partnerships",
-    tag: "COMPANY NEWS",
-    date: "18.APR.2024",
-    title: "Chinaplas debrief: OEM co-engineering initiatives",
-    excerpt:
-      "Strategic partnerships formed with three top-tier European granulator manufacturers for custom blade geometry development.",
-    image: "/images/common/cnc-machine.webp",
-    readTime: "3 MIN",
-    relatedProductIds: [
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
-    content: [
-      { type: "h2", value: "Partnership Agreements" },
-      {
-        type: "paragraph",
-        value:
-          "ChinaPlas 2024 (Shanghai, 23–6 April) resulted in the signing of three co-engineering framework agreements with European [granulator](/products/granulator-blades) and [shredder](/products/twin-shaft-blades-recycling) OEMs. These agreements establish Sureay as the preferred blade development partner for next-generation machine platforms, with joint specification, prototyping, and qualification cycles built into the product development timeline.",
-      },
-      {
-        type: "callout",
-        value:
-          "SCOPE: Co-engineering agreements cover custom blade geometry development, material grade co-selection, heat treatment protocol definition, and field service support during initial machine commissioning runs at end-customer sites.",
-      },
-      { type: "h2", value: "Technical Co-Development Program" },
-      {
-        type: "paragraph",
-        value:
-          "Each OEM agreement includes a 90-day prototype-to-qualification cycle: 30 days design and DFM review, 30 days first-article manufacture and CMM report, 30 days field trial under monitored operating conditions. Customer engineering teams have direct access to our CAD/CAM data and material traceability documentation throughout the program.",
-      },
-    ],
-  },
-  {
     id: "blade-manufacturing-process",
     tag: "TECHNICAL GUIDE",
     date: "29.APR.2026",
@@ -3163,7 +3129,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value: "/images/news/corrugated-slitter-knives-2-pieces.webp",
+        value: "/images/news/corrugated-slitter-knives.webp",
       },
       {
         type: "h2",
@@ -3532,7 +3498,6 @@ const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
   "facility-expansion-phase-iii": "lynn",
   "k-show-2024-recycling-knives": "lynn",
   "iso-9001-recertification-2024": "lynn",
-  "chinaplas-2024-oem-partnerships": "lynn",
   "d2-vs-skd11-vs-tungsten-carbide": "Eric",
   "shredder-metallurgy-maximizes-recycling-yields": "Eric",
   "high-hardness-metal-shear-guide": "Eric",

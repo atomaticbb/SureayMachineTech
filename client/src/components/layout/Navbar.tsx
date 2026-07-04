@@ -1,24 +1,23 @@
 /*
  * Navbar.tsx — Swiss Brutalist Navigation
  *
- * Desktop: Home · [PRODUCTS mega-menu] · News · About · Contact · CTA
- * Mobile:  Full-screen drawer with PRODUCTS accordion (By Industry / By Category)
+ * Desktop: Industrial Blades ▾ · Mixer Wear Parts ▾ · News · About · Contact · CTA
+ * Mobile:  Full-screen drawer with matching accordions
  *
- * Products mega menu — 3-column "Business Board":
- *   Col 1 (22%) — Browse by Industry (icon list, hover changes active industry)
- *   Col 2 (50%) — Product grid: 3 cols × 2 rows = max 6 blade cards (image + ref + name)
- *   Col 3 (28%) — Industry cover image + Upload CAD CTA → /contact
- *
- * All three columns are driven by a single `activeIdx` state.
- * Data source: INDUSTRY_MENU_DATA from MegaMenu.tsx (SSOT).
+ * Two product mega menus:
+ *   Industrial Blades — blade categories by type (icon + name + top variants)
+ *   Mixer Wear Parts  — plant-type nav + part grid + scene image (parallel line)
+ * Industry is surfaced on the homepage, not in the nav.
+ * Data: getCategories / getBlades (locales) + mixerParts.
  */
 
 import { useState, useEffect, useRef, useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronRight, Upload } from "lucide-react";
-import { getIndustryMenuData } from "./MegaMenu";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import { getBlades, getCategories } from "@/data/locales";
+import { mixerCategories, getMixerPartsByCategory } from "@/data/mixerParts";
+import { TRUST_ITEMS } from "@/data/mixerContent";
 import { useLang } from "@/contexts/LangContext";
 import { useTranslation } from "@/lib/useTranslation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -126,22 +125,22 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-10 py-8">
-        <div className="grid grid-cols-4 gap-x-8 gap-y-8">
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="grid grid-cols-4 gap-x-5 gap-y-7">
           {groups.map(group => (
-            <div key={group.slug} className="flex gap-4 min-w-0 group/card">
+            <div key={group.slug} className="flex gap-3 min-w-0 group/card">
               <Link href={group.href}>
                 <div
                   onClick={onClose}
-                  className="w-[72px] h-[72px] flex-shrink-0 bg-slate-100 overflow-hidden cursor-pointer"
+                  className="w-[100px] h-[100px] flex-shrink-0 bg-slate-100 overflow-hidden cursor-pointer"
                 >
                   <img
                     src={group.icon}
                     alt={group.shortName}
                     loading="eager"
                     decoding="async"
-                    width={72}
-                    height={72}
+                    width={100}
+                    height={100}
                     className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -161,7 +160,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                   <Link href="/contact">
                     <div
                       onClick={onClose}
-                      className="text-[13px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer"
+                      className="text-[14px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer whitespace-nowrap"
                     >
                       Upload CAD
                     </div>
@@ -172,9 +171,13 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                       <Link key={blade.id} href={`/products/${blade.id}`}>
                         <div
                           onClick={onClose}
-                          className="text-[13px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer"
+                          className="text-[14px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer whitespace-nowrap"
                         >
-                          · {blade.name}
+                          ·{" "}
+                          {/* menu-only short label; product page keeps full name */}
+                          {blade.id === "wood-chipper-blades-industrial"
+                            ? "Industrial Chipper Blades"
+                            : blade.name}
                         </div>
                       </Link>
                     ))}
@@ -182,9 +185,13 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                       <Link href={group.href}>
                         <div
                           onClick={onClose}
-                          className="font-mono text-[12px] font-bold text-slate-400 tracking-wide hover:text-[#001f4d] transition-colors leading-relaxed pt-1 cursor-pointer uppercase"
+                          className="mt-1.5 inline-flex items-center gap-1 text-[13px] font-bold text-[#003366] hover:text-[#001f4d] hover:gap-1.5 transition-all cursor-pointer"
                         >
-                          + View all
+                          View all
+                          <ChevronRight
+                            className="w-3.5 h-3.5"
+                            strokeWidth={2.5}
+                          />
                         </div>
                       </Link>
                     )}
@@ -196,11 +203,11 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
         </div>
 
         {/* Bottom link — View All Products */}
-        <div className="mt-5 pt-3 border-t border-slate-100 text-right">
+        <div className="mt-4 pt-3 border-t border-slate-200 text-right">
           <Link href="/products">
             <span
               onClick={onClose}
-              className="inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-slate-400 hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
+              className="inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-[#003366] hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
             >
               View All Products
               <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
@@ -212,41 +219,34 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   );
 }
 
-// ── Industry Mega Menu (sector-grouped product image grid) ──────────────────
-function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
-  const lang = useLang();
+// ── Mixer Wear Parts mega menu (Industry-style: plant-type nav + grid + image) ──
+function MixerMenu({ onClose }: { onClose: () => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
-  const categories = useMemo(() => getIndustryMenuData(lang).categories, [lang]);
-  const active = categories[activeIdx];
+  const active = mixerCategories[activeIdx];
+  const parts = getMixerPartsByCategory(active.category);
+  const scene = `/images/mixer-parts/hero/${active.id}-scene.webp`;
 
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-7 flex gap-0">
-        {/* ── Col 1: Browse by Industry (20%) ──────────────────────────── */}
-        <div className="w-[20%] flex-shrink-0 flex flex-col border-r border-slate-200 pr-6">
-          <p className="font-mono text-[12px] font-bold text-slate-700 tracking-[0.18em] mb-4">
-            Browse by Industry
-          </p>
-
+        {/* ── Col 1: Browse by plant type (20%) ────────────────────────── */}
+        <div className="w-[24%] flex-shrink-0 flex flex-col border-r border-slate-200 pr-5">
           <nav className="flex flex-col gap-0.5 flex-1">
-            {categories.map((cat, i) => {
+            {mixerCategories.map((cat, i) => {
               const isActive = i === activeIdx;
-              const isCustom = cat.id === "custom-profile";
               return (
-                <Link key={cat.id} href={cat.featured.ctaHref}>
+                <Link key={cat.id} href={cat.link}>
                   <div
                     onMouseEnter={() => setActiveIdx(i)}
                     onClick={onClose}
-                    className={`flex items-center gap-3 py-3 px-3 border-l-2 transition-all duration-150 cursor-pointer group ${
-                      isCustom ? "mt-1 border-t border-slate-100 pt-4" : ""
-                    } ${
+                    className={`flex items-center gap-2 py-3 px-3 border-l-2 transition-all duration-150 cursor-pointer group ${
                       isActive
                         ? "border-[#001f4d] bg-slate-50 text-[#001f4d]"
                         : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#001f4d]"
                     }`}
                   >
-                    <span className={`text-[12px] font-bold tracking-[0.12em] leading-tight ${isCustom ? "font-black" : ""}`}>
-                      {cat.title}
+                    <span className="text-[14px] font-bold leading-tight whitespace-nowrap">
+                      {cat.name}
                     </span>
                     <ChevronRight
                       className={`w-3 h-3 ml-auto flex-shrink-0 transition-opacity ${
@@ -261,101 +261,75 @@ function IndustryMegaMenu({ onClose }: { onClose: () => void }) {
               );
             })}
           </nav>
-
-          <Link href="/products">
+          <Link href="/mixer-wear-parts">
             <div
               onClick={onClose}
-              className="mt-5 font-mono text-[14px] font-bold text-[#003366] tracking-[0.22em] hover:underline cursor-pointer pl-3"
+              className="mt-5 pl-3 inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-[#003366] hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
             >
-              → All Products
+              View All Mixer Parts
+              <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
             </div>
           </Link>
         </div>
 
-        {/* ── Col 2: Product Grid or Custom Large Image ───────────────── */}
+        {/* ── Col 2: Part grid for the active plant type ───────────────── */}
         <div className="flex-1 min-w-0 px-8">
-          {active.id === "custom-profile" ? (
-              <div className="flex gap-5 h-80">
-                {/* Left: hero image + title below */}
-                <Link href="/custom" className="flex-1 min-w-0 flex flex-col">
-                  <div
-                    onClick={onClose}
-                    className="relative flex-1 overflow-hidden cursor-pointer group bg-white"
-                  >
+          <div className="grid grid-cols-3 gap-x-4 gap-y-4">
+            {parts.map(p => (
+              <Link key={p.id} href={p.link}>
+                <div
+                  onClick={onClose}
+                  className="group cursor-pointer text-center"
+                >
+                  <div className="w-full aspect-[4/3] bg-slate-50 overflow-hidden mb-2 flex items-center justify-center">
                     <img
-                      src="/images/products/blades/special-shaped-knife.webp"
-                      alt="Special-Shaped & Custom Profile Blades"
+                      src={p.image}
+                      alt={p.name}
                       loading="eager"
                       decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain p-2 mix-blend-multiply group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/30 to-transparent" />
                   </div>
-                  <p
-                    onClick={onClose}
-                    className="font-black text-[14px] text-[#001f4d] tracking-tight leading-tight pt-2 text-center"
-                  >
-                    Special-Shaped &amp; Custom Profile Blades
+                  <p className="font-black text-[13px] leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
+                    {p.name.replace(/^(Concrete|Asphalt)\s+/, "")}
                   </p>
-                </Link>
-
-                {/* Right: profile types */}
-                <div className="w-[25%] flex-shrink-0 flex flex-col pl-4">
-                  <p className="font-mono text-[12px] text-slate-400 tracking-[0.28em] mb-2">
-                    Profile Types
-                  </p>
-                  {[
-                    "Straight — Single/Double Bevel",
-                    "Circular Disc (Any OD/ID)",
-                    "Serrated & Perforated Edge",
-                    "Multi-Step & Shoulder Profile",
-                    "Asymmetric Cross-Section",
-                    "Hook & Hook-Tooth Forms",
-                    "Conical & Tapered Profile",
-                    "Carbide-Tipped Composite",
-                  ].map(p => (
-                    <div
-                      key={p}
-                      className="flex items-center gap-2 py-1.5 border-b border-slate-100 last:border-0"
-                    >
-                      <span className="w-[3px] h-3 bg-[#001f4d] flex-shrink-0" />
-                      <span className="text-[12px] text-slate-600 leading-tight">
-                        {p}
-                      </span>
-                    </div>
-                  ))}
                 </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Col 3: active plant scene + CTA (28%) ────────────────────── */}
+        <div className="w-[28%] flex-shrink-0 flex flex-col border-l border-slate-200 pl-6">
+          <Link href={active.link} className="flex-1 flex flex-col">
+            <div
+              onClick={onClose}
+              className="relative flex-1 min-h-[180px] overflow-hidden cursor-pointer group bg-slate-100"
+            >
+              <img
+                src={scene}
+                alt={active.name}
+                loading="eager"
+                decoding="async"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#001f4d]/85 via-[#001f4d]/25 to-transparent" />
+              <div className="absolute bottom-0 left-0 p-4">
+                <p className="font-black text-[14px] text-white tracking-tight leading-tight">
+                  {active.name}
+                </p>
+                <p className="mt-1 inline-flex items-center gap-1 font-mono text-[10px] text-white/80 tracking-[0.18em]">
+                  Browse {parts.length} parts
+                  <ChevronRight className="w-3 h-3" strokeWidth={2} />
+                </p>
               </div>
-            ) : (
-              <div className="grid grid-cols-4 gap-x-4 gap-y-4">
-                {active.items.slice(0, 8).map(item => (
-                  <Link key={item.id} href={item.href}>
-                    <div
-                      onClick={onClose}
-                      className="group cursor-pointer text-center"
-                    >
-                      <div className="w-36 h-32 mx-auto bg-slate-100 overflow-hidden mb-2">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          loading="eager"
-                          decoding="async"
-                          width={144}
-                          height={128}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <p className="font-black text-[14px] leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors text-center">
-                        {item.name}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            )}
+            </div>
+          </Link>
+          <p className="mt-3 font-mono text-[10px] text-slate-400 tracking-[0.15em] leading-relaxed">
+            ■ {TRUST_ITEMS.join(" · ")}
+          </p>
         </div>
       </div>
-
     </div>
   );
 }
@@ -374,19 +348,18 @@ export default function Navbar() {
     { label: t("nav.contact"), path: "/contact" },
   ];
   const [productsOpen, setProductsOpen] = useState(false);
-  const [industryOpen, setIndustryOpen] = useState(false);
+  const [mixerOpen, setMixerOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
-  const [mobileIndustry, setMobileIndustry] = useState(false);
+  const [mobileMixer, setMobileMixer] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
   const productsCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
     undefined
   );
-  const industryCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+  const mixerCloseTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
     undefined
   );
   const lastProdClickTime = useRef(0);
-  const lastIndClickTime = useRef(0);
 
   // Hide on scroll-down, reveal on scroll-up
   useEffect(() => {
@@ -398,7 +371,7 @@ export default function Navbar() {
         setHidden(true);
         setMobileOpen(false);
         setProductsOpen(false);
-        setIndustryOpen(false);
+        setMixerOpen(false);
       } else if (y < lastScrollY.current - 4) {
         setHidden(false);
       }
@@ -425,7 +398,9 @@ export default function Navbar() {
   useEffect(() => {
     const allBlades = getBlades(lang);
     categories.forEach(cat => {
-      const src = allBlades.find(b => b.category === cat.category)?.image ?? cat.heroImage;
+      const src =
+        allBlades.find(b => b.category === cat.category)?.image ??
+        cat.heroImage;
       if (src) {
         const img = new Image();
         img.src = src;
@@ -433,32 +408,26 @@ export default function Navbar() {
     });
   }, [lang, categories]);
 
-  // Debounced hover handlers — Products (categories) dropdown
+  // Debounced hover handlers — Industrial Blades mega menu
   const openProducts = () => {
     clearTimeout(productsCloseTimer.current);
-    clearTimeout(industryCloseTimer.current);
-    setIndustryOpen(false);
+    clearTimeout(mixerCloseTimer.current);
+    setMixerOpen(false);
     setProductsOpen(true);
   };
   const closeProducts = () => {
-    productsCloseTimer.current = setTimeout(
-      () => setProductsOpen(false),
-      120
-    );
+    productsCloseTimer.current = setTimeout(() => setProductsOpen(false), 120);
   };
 
-  // Debounced hover handlers — Industry mega menu
-  const openIndustry = () => {
-    clearTimeout(industryCloseTimer.current);
+  // Debounced hover handlers — Mixer Wear Parts dropdown
+  const openMixer = () => {
+    clearTimeout(mixerCloseTimer.current);
     clearTimeout(productsCloseTimer.current);
     setProductsOpen(false);
-    setIndustryOpen(true);
+    setMixerOpen(true);
   };
-  const closeIndustry = () => {
-    industryCloseTimer.current = setTimeout(
-      () => setIndustryOpen(false),
-      120
-    );
+  const closeMixer = () => {
+    mixerCloseTimer.current = setTimeout(() => setMixerOpen(false), 120);
   };
 
   const handleProductsClick = () => {
@@ -470,20 +439,14 @@ export default function Navbar() {
     lastProdClickTime.current = now;
   };
 
-  const handleIndustryClick = () => {
-    const now = Date.now();
-    if (now - lastIndClickTime.current < 300) {
-      setIndustryOpen(false);
-      navigate("/converting-industry");
-    }
-    lastIndClickTime.current = now;
-  };
-
   const isActive = (path: string) => location === path;
+  // Industrial Blades now also owns the blade-industry landing pages.
   const isProductsRoute =
-    location.startsWith("/products") || location.startsWith("/categories");
-  const isIndustryRoute =
-    location.endsWith("-industry") || location === "/custom";
+    location.startsWith("/products") ||
+    location.startsWith("/categories") ||
+    location.endsWith("-industry") ||
+    location === "/custom";
+  const isMixerRoute = location.startsWith("/mixer-wear-parts");
 
   const linkCls = (active: boolean) =>
     `text-[16px] font-medium transition-colors cursor-pointer ${
@@ -510,17 +473,14 @@ export default function Navbar() {
                   height={64}
                 />
                 <span className="font-black text-[14px] tracking-[0.12em] text-[#001f4d]  leading-none">
-                  SUREAY BLADES
+                  SUREAY MACHINERY
                 </span>
               </div>
             </Link>
 
             {/* ── Desktop nav ────────────────────────────────────────────── */}
             <div className="hidden md:flex items-center gap-8">
-              <Link href="/">
-                <span className={linkCls(isActive("/"))}>{t("nav.home")}</span>
-              </Link>
-
+              {/* Industrial Blades — blade categories + by-industry mega menu */}
               <div onMouseEnter={openProducts} onMouseLeave={closeProducts}>
                 <button
                   className={`${linkCls(isProductsRoute || productsOpen)} flex items-center gap-1`}
@@ -532,7 +492,7 @@ export default function Navbar() {
                     navigate("/products");
                   }}
                 >
-                  {t("nav.products")}
+                  Industrial Blades
                   <ChevronDown
                     className={`w-3 h-3 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
@@ -540,17 +500,20 @@ export default function Navbar() {
                 </button>
               </div>
 
-              {/* Industry — sector-grouped product mega menu */}
-              <div onMouseEnter={openIndustry} onMouseLeave={closeIndustry}>
+              {/* Mixer Wear Parts — parallel business line mega menu */}
+              <div onMouseEnter={openMixer} onMouseLeave={closeMixer}>
                 <button
-                  className={`${linkCls(isIndustryRoute || industryOpen)} flex items-center gap-1`}
+                  className={`${linkCls(isMixerRoute || mixerOpen)} flex items-center gap-1`}
                   aria-haspopup="true"
-                  aria-expanded={industryOpen}
-                  onClick={handleIndustryClick}
+                  aria-expanded={mixerOpen}
+                  onClick={() => {
+                    setMixerOpen(false);
+                    navigate("/mixer-wear-parts");
+                  }}
                 >
-                  {t("nav.industry")}
+                  Mixer Wear Parts
                   <ChevronDown
-                    className={`w-3 h-3 transition-transform duration-200 ${industryOpen ? "rotate-180" : ""}`}
+                    className={`w-3 h-3 transition-transform duration-200 ${mixerOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
                   />
                 </button>
@@ -564,14 +527,14 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <LanguageSwitcher variant="light" />
-
               <Link
                 href="/contact"
                 className="inline-block bg-[#003366] hover:bg-[#001f4d] text-white text-[12px] font-bold tracking-wide px-4 py-2 rounded-none transition-colors duration-200 shadow-sm"
               >
                 {t("cta.getQuote")}
               </Link>
+
+              <LanguageSwitcher variant="light" />
             </div>
 
             {/* ── Mobile toggle ──────────────────────────────────────────── */}
@@ -600,18 +563,18 @@ export default function Navbar() {
           )}
         </AnimatePresence>
 
-        {/* ── Industry Mega Menu ─────────────────────────────────────────── */}
+        {/* ── Mixer Wear Parts Mega Menu ─────────────────────────────────── */}
         <AnimatePresence>
-          {industryOpen && (
+          {mixerOpen && (
             <motion.div
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.18, ease: "easeOut" }}
-              onMouseEnter={openIndustry}
-              onMouseLeave={closeIndustry}
+              onMouseEnter={openMixer}
+              onMouseLeave={closeMixer}
             >
-              <IndustryMegaMenu onClose={() => setIndustryOpen(false)} />
+              <MixerMenu onClose={() => setMixerOpen(false)} />
             </motion.div>
           )}
         </AnimatePresence>
@@ -639,7 +602,7 @@ export default function Navbar() {
                     height={64}
                   />
                   <span className="font-black text-[11px] tracking-[0.12em] text-white  leading-none">
-                    SUREAY BLADES
+                    SUREAY MACHINERY
                   </span>
                 </div>
               </Link>
@@ -659,16 +622,7 @@ export default function Navbar() {
                 <LanguageSwitcher variant="dark" />
               </div>
 
-              {/* HOME */}
-              <Link href="/">
-                <div className="py-5 border-b border-white/10 cursor-pointer group">
-                  <span className="text-2xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
-                    {t("nav.home")}
-                  </span>
-                </div>
-              </Link>
-
-              {/* ── PRODUCTS accordion (8 category aggregation pages) ───── */}
+              {/* ── INDUSTRIAL BLADES accordion (categories + by industry) ── */}
               <div className="border-b border-white/10">
                 <button
                   className="w-full flex items-center justify-between py-5 cursor-pointer group"
@@ -681,7 +635,7 @@ export default function Navbar() {
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    PRODUCTS
+                    INDUSTRIAL BLADES
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
@@ -702,15 +656,23 @@ export default function Navbar() {
                     >
                       <div className="pb-5">
                         {categories.map(c => (
-                          <Link key={c.slug} href={c.slug === "custom-profile" ? "/custom" : `/categories/${c.slug}`}>
+                          <Link
+                            key={c.slug}
+                            href={
+                              c.slug === "custom-profile"
+                                ? "/custom"
+                                : `/categories/${c.slug}`
+                            }
+                          >
                             <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-medium tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
                               {c.shortName}
                             </div>
                           </Link>
                         ))}
+
                         <Link href="/products">
                           <div className="mt-3 ml-4 font-mono text-[10px] font-bold tracking-[0.22em]  text-white/40 hover:text-white cursor-pointer">
-                            → All Variants
+                            → All Products
                           </div>
                         </Link>
                       </div>
@@ -719,31 +681,31 @@ export default function Navbar() {
                 </AnimatePresence>
               </div>
 
-              {/* ── INDUSTRY accordion (sector landing pages) ──────────── */}
+              {/* ── MIXER WEAR PARTS accordion (parallel business line) ─── */}
               <div className="border-b border-white/10">
                 <button
                   className="w-full flex items-center justify-between py-5 cursor-pointer group"
-                  onClick={() => setMobileIndustry(v => !v)}
+                  onClick={() => setMobileMixer(v => !v)}
                 >
                   <span
                     className={`text-2xl font-black  tracking-widest transition-colors ${
-                      mobileIndustry
+                      mobileMixer
                         ? "text-white"
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    INDUSTRY
+                    MIXER WEAR PARTS
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
-                      mobileIndustry ? "rotate-180 text-white" : ""
+                      mobileMixer ? "rotate-180 text-white" : ""
                     }`}
                     strokeWidth={2.5}
                   />
                 </button>
 
                 <AnimatePresence initial={false}>
-                  {mobileIndustry && (
+                  {mobileMixer && (
                     <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
@@ -752,29 +714,19 @@ export default function Navbar() {
                       className="overflow-hidden"
                     >
                       <div className="pb-5">
-                        {getIndustryMenuData(lang).categories.map(cat => {
-                          const isCustom = cat.id === "custom-profile";
-                          return (
-                            <Link key={cat.id} href={cat.featured.ctaHref}>
-                              <div className={`flex items-center gap-3 py-2.5 pl-4 border-l text-[13px] font-medium tracking-[0.1em]  transition-colors cursor-pointer ${
-                                isCustom
-                                  ? "mt-1 border-l-2 border-white/40 font-black text-white/80 hover:text-white hover:border-white"
-                                  : "border-white/20 text-white/60 hover:text-white hover:border-white/60"
-                              }`}>
-                                {cat.title}
-                              </div>
-                            </Link>
-                          );
-                        })}
+                        {mixerCategories.map(c => (
+                          <Link key={c.id} href={c.link}>
+                            <div className="flex items-center gap-3 py-2.5 pl-4 border-l border-white/20 text-[13px] font-medium tracking-[0.1em]  text-white/60 hover:text-white hover:border-white/60 transition-colors cursor-pointer">
+                              {c.name}
+                            </div>
+                          </Link>
+                        ))}
+                        <Link href="/mixer-wear-parts">
+                          <div className="mt-3 ml-4 font-mono text-[10px] font-bold tracking-[0.22em]  text-white/40 hover:text-white cursor-pointer">
+                            → View All
+                          </div>
+                        </Link>
                       </div>
-
-                      {/* Upload CAD shortcut */}
-                      <Link href="/contact">
-                        <div className="mb-5 flex items-center gap-2 pl-4 border-l-2 border-white/40 text-[11px] font-black tracking-[0.18em]  text-white/50 hover:text-white hover:border-white transition-colors cursor-pointer">
-                          <Upload className="w-3 h-3" strokeWidth={2} />
-                          Upload CAD →
-                        </div>
-                      </Link>
                     </motion.div>
                   )}
                 </AnimatePresence>

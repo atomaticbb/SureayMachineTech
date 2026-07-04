@@ -36,16 +36,21 @@ export default function HomeHero() {
             {t("home.hero.body")}
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4">
+          {/* CTAs — solid primary + two framed (outline) secondaries */}
+          <div className="flex flex-wrap items-center gap-4">
             <Link href="/contact">
-              <button className="bg-white text-[#003366] border-2 border-white hover:bg-[#003366] hover:text-white hover:border-[#003366] px-7 sm:px-9 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
-                {t("home.hero.ctaPrimary")}
+              <button className="bg-white text-[#003366] border-2 border-white hover:bg-[#003366] hover:text-white hover:border-[#003366] px-7 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
+                Get a Quote
               </button>
             </Link>
             <Link href="/products">
-              <button className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-[#003366] px-7 sm:px-9 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
-                {t("home.hero.ctaSecondary")}
+              <button className="bg-transparent text-white border-2 border-white/70 hover:bg-white hover:text-[#003366] hover:border-white px-7 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
+                Industrial Blades
+              </button>
+            </Link>
+            <Link href="/mixer-wear-parts">
+              <button className="bg-transparent text-white border-2 border-white/70 hover:bg-white hover:text-[#003366] hover:border-white px-7 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
+                Mixer Wear Parts
               </button>
             </Link>
           </div>

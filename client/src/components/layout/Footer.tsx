@@ -1,36 +1,59 @@
 import { Link } from "wouter";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent } from "@/lib/gtag";
+import { mixerCategories } from "@/data/mixerParts";
+
+const PRODUCT_LINKS = [
+  { label: "Tissue Log Saw Blades", href: "/products/tissue-log-saw-blades" },
+  { label: "Paper Cutting Blades", href: "/products/paper-cutting-blades" },
+  { label: "Metal Shear Knives", href: "/products/metal-shear-knives" },
+  { label: "Rotary Slitter Knives", href: "/products/rotary-slitter-knives" },
+  { label: "Shredder Blades", href: "/products/twin-shaft-blades-recycling" },
+];
+
+const HEAD =
+  "text-white font-black text-[11px] tracking-[0.28em] uppercase mb-5";
+const LINK = "text-[14px] text-slate-400 hover:text-white transition-colors";
+const MORE =
+  "text-[13px] font-bold text-slate-300 tracking-wide hover:text-white transition-colors";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const year = new Date().getFullYear();
+
+  const industries = [
+    { label: t("footer.industry.plastic"), href: "/plastic-industry" },
+    { label: t("footer.industry.metal"), href: "/metal-industry" },
+    { label: t("footer.industry.paper"), href: "/paper-industry" },
+    { label: t("footer.industry.converting"), href: "/converting-industry" },
+    { label: t("footer.industry.newEnergy"), href: "/new-energy-industry" },
+    { label: t("footer.industry.wood"), href: "/wood-industry" },
+  ];
+
   return (
-    <footer className="bg-[#0a1219] text-slate-400 pt-20 pb-12">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        {/* ── Main grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.5fr] gap-8 md:gap-12 lg:gap-16 xl:gap-20 mb-12 lg:mb-16">
-          {/* ── Col 1: Brand ─────────────────────────────────────────── */}
-          <div>
+    <footer className="bg-[#0a1219] text-slate-400">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-16 pb-10">
+        {/* ── Top grid — one section per column ── */}
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-x-8 gap-y-10">
+          {/* Brand */}
+          <div className="col-span-2 lg:col-span-4">
             <Link href="/">
-              <div className="flex items-center gap-3 mb-6 cursor-pointer">
+              <div className="flex items-center gap-3 mb-5 cursor-pointer">
                 <img
                   src="/sureay.svg"
                   alt="Sureay Logo"
-                  className="w-11 h-11 brightness-0 invert opacity-90"
-                  width={44}
-                  height={44}
+                  className="w-10 h-10 brightness-0 invert opacity-90"
+                  width={40}
+                  height={40}
                 />
-                <span className="text-base font-black text-white tracking-[0.1em]  leading-none">
-                  SUREAY BLADES
+                <span className="text-base font-black text-white tracking-[0.1em] leading-none">
+                  SUREAY MACHINERY
                 </span>
               </div>
             </Link>
-
-            <p className="text-[15px] leading-relaxed mb-8 max-w-sm text-slate-400">
+            <p className="text-[14px] leading-relaxed text-slate-400 max-w-xs mb-6">
               {t("footer.tagline")}
             </p>
-
-            {/* Social */}
             <div className="flex gap-2.5">
               <a
                 href="https://www.linkedin.com/in/lynn-shang-sureay"
@@ -63,207 +86,118 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* ── Col 2: Products ──────────────────────────────────────── */}
-          <div>
-            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              {t("footer.products")}
-            </h4>
-            <ul className="space-y-4 text-[15px]">
+          {/* Products */}
+          <div className="lg:col-span-2">
+            <h4 className={HEAD}>{t("footer.products")}</h4>
+            <ul className="space-y-3">
+              {PRODUCT_LINKS.map(l => (
+                <li key={l.href}>
+                  <Link href={l.href} className={LINK}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link
-                  href="/products/tissue-log-saw-blades"
-                  className="hover:text-white transition-colors"
-                >
-                  Tissue Log Saw Blades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/paper-cutting-blades"
-                  className="hover:text-white transition-colors"
-                >
-                  Paper Cutting Blades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/metal-shear-knives"
-                  className="hover:text-white transition-colors"
-                >
-                  Metal Shear Knives
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/metal-coil-slitting-knives"
-                  className="hover:text-white transition-colors"
-                >
-                  Metal Coil Slitting Knives
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/rotary-slitter-knives"
-                  className="hover:text-white transition-colors"
-                >
-                  Rotary Slitter Knives
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/twin-shaft-blades-recycling"
-                  className="hover:text-white transition-colors"
-                >
-                  Shredder Blades
+                <Link href="/products" className={MORE}>
+                  {t("cta.viewAllProducts")}
                 </Link>
               </li>
             </ul>
-            <div className="mt-6 pt-4 border-t border-slate-800">
-              <Link
-                href="/products"
-                className="text-[13px] font-black text-slate-300  tracking-widest hover:text-white transition-colors"
-              >
-                {t("cta.viewAllProducts")}
-              </Link>
-            </div>
           </div>
 
-          {/* ── Col 3: Industries + Company ──────────────────────────── */}
-          <div>
-            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              {t("footer.industries")}
-            </h4>
-            <ul className="space-y-4 text-[15px] mb-8">
+          {/* Wear Parts */}
+          <div className="lg:col-span-2">
+            <h4 className={HEAD}>Wear Parts</h4>
+            <ul className="space-y-3">
+              {mixerCategories.map(c => (
+                <li key={c.id}>
+                  <Link href={c.link} className={LINK}>
+                    {c.name}
+                  </Link>
+                </li>
+              ))}
               <li>
-                <Link href="/plastic-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.plastic")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/metal-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.metal")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/paper-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.paper")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/converting-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.converting")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/new-energy-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.newEnergy")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/wood-industry" className="hover:text-white transition-colors">
-                  {t("footer.industry.wood")}
+                <Link href="/mixer-wear-parts" className={MORE}>
+                  View All Wear Parts
                 </Link>
               </li>
             </ul>
+          </div>
 
-            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
-              {t("footer.company")}
-            </h4>
-            <ul className="space-y-4 text-[15px]">
+          {/* Industries */}
+          <div className="lg:col-span-2">
+            <h4 className={HEAD}>{t("footer.industries")}</h4>
+            <ul className="space-y-3">
+              {industries.map(l => (
+                <li key={l.href}>
+                  <Link href={l.href} className={LINK}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="lg:col-span-2">
+            <h4 className={HEAD}>{t("footer.company")}</h4>
+            <ul className="space-y-3">
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">
+                <Link href="/about" className={LINK}>
                   {t("footer.aboutSureay")}
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="hover:text-white transition-colors">
+                <Link href="/news" className={LINK}>
                   {t("footer.newsCenter")}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">
+                <Link href="/contact" className={LINK}>
                   {t("nav.contact")}
                 </Link>
               </li>
             </ul>
           </div>
-
-          {/* ── Col 4: Get In Touch ───────────────────────────────────── */}
-          <div>
-            <h4 className="text-white font-black text-xs  tracking-[0.3em] mb-6 pb-3 border-b border-slate-800">
-              {t("footer.getInTouch")}
-            </h4>
-            <div className="space-y-6 text-[15px]">
-              <div>
-                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  {t("footer.address")}
-                </p>
-                <p className="leading-relaxed text-slate-400">
-                  {t("footer.addressLine1")}
-                  <br />
-                  {t("footer.addressLine2")}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  {t("footer.whatsappPhone")}
-                </p>
-                <a
-                  href="tel:+8618005550657"
-                  className="text-slate-300 hover:text-white transition-colors font-semibold"
-                >
-                  +86 180 0555 0657
-                </a>
-                <p className="text-[11px] text-slate-600 mt-1">
-                  {t("footer.available247")}
-                </p>
-              </div>
-
-              <div>
-                <p className="text-[10px] font-black  tracking-[0.28em] text-slate-600 mb-2">
-                  {t("footer.email")}
-                </p>
-                <a
-                  href="mailto:lynn@sureay.com"
-                  onClick={() => gtagEvent("email_click", { link_location: "footer" })}
-                  className="text-slate-300 hover:text-white transition-colors font-semibold"
-                >
-                  lynn@sureay.com
-                </a>
-              </div>
-
-              <Link
-                href="/contact"
-                className="inline-block px-6 py-3 bg-[#003366] hover:bg-[#003366] text-white text-xs font-black  tracking-widest transition-colors duration-200"
-              >
-                {t("cta.requestQuote")}
-              </Link>
-            </div>
-          </div>
         </div>
 
-        {/* ── Bottom bar ────────────────────────────────────────────── */}
-        <div className="border-t border-slate-800 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] font-semibold  tracking-widest text-slate-600">
+        {/* ── Contact row ── */}
+        <div className="mt-14 pt-8 border-t border-slate-800 flex flex-col md:flex-row md:items-center gap-5 md:gap-10 text-[14px]">
+          <a
+            href="mailto:lynn@sureay.com"
+            onClick={() =>
+              gtagEvent("email_click", { link_location: "footer" })
+            }
+            className="font-semibold text-slate-300 hover:text-white transition-colors"
+          >
+            lynn@sureay.com
+          </a>
+          <a
+            href="tel:+8618005550657"
+            className="font-semibold text-slate-300 hover:text-white transition-colors"
+          >
+            +86 180 0555 0657
+          </a>
+          <span className="text-slate-500">
+            {t("footer.addressLine1")} {t("footer.addressLine2")}
+          </span>
+          <Link
+            href="/contact"
+            className="md:ml-auto inline-block px-5 py-2.5 bg-[#003366] hover:bg-[#00478f] text-white text-[11px] font-black tracking-widest transition-colors duration-200"
+          >
+            {t("cta.requestQuote")}
+          </Link>
+        </div>
+
+        {/* ── Bottom bar ── */}
+        <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] font-semibold tracking-widest text-slate-600">
           <p>
-            © {new Date().getFullYear()} {t("footer.copyrightCompany")}
+            © {year} {t("footer.copyrightCompany")}
           </p>
           <div className="flex items-center gap-6">
-            <span className="hidden sm:inline text-slate-700">
+            <span className="hidden md:inline text-slate-700">
               {t("footer.credentialsLine")}
             </span>
-            <Link
-              href="/about"
-              className="hover:text-slate-400 transition-colors"
-            >
-              {t("nav.about")}
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-slate-400 transition-colors"
-            >
-              {t("nav.contact")}
-            </Link>
             <Link
               href="/privacy-policy"
               className="hover:text-slate-400 transition-colors"
@@ -274,7 +208,7 @@ export default function Footer() {
               href="/terms"
               className="hover:text-slate-400 transition-colors"
             >
-              Terms of Service
+              Terms
             </Link>
           </div>
         </div>
