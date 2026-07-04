@@ -46,7 +46,7 @@ export async function buildIndustryDivider(
 
     <div class="divider-top">
       <div class="divider-logo">
-        ${logoSvg}<span class="divider-wordmark">Sureay Blades</span>
+        ${logoSvg}<span class="divider-wordmark">Sureay Machinery</span>
       </div>
       <div class="divider-section-tag">Section ${num}</div>
     </div>

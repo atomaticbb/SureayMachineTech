@@ -18,17 +18,17 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "catalogo cuchillas industriales, herramientas de corte, cuchillas rotativas, cuchillas trituradoras, cuchillas de granulador"
   },
   "about": {
-    "title": "Acerca de Sureay Blades | Fabricante de cuchillas con certificación ISO 9001",
+    "title": "Acerca de Sureay Machinery | Fabricante de cuchillas con certificación ISO 9001",
     "description": "16 años de excelencia en la fabricación de cuchillas de precisión en Ma'anshan, China. Instalaciones certificadas ISO 9001:2015 con rectificado CNC de 5 ejes, tratamiento térmico de vacío y inspección CMM. Sirviendo a socios OEM en todo el mundo.",
     "keywords": "fabricante de cuchillas, certificado ISO 9001, rectificado CNC, Ma'anshan China, herramientas de corte industriales"
   },
   "contact": {
-    "title": "Contacte con Sureay Blades | Solicite presupuesto de cuchillas personalizadas",
+    "title": "Contacte con Sureay Machinery | Solicite presupuesto de cuchillas personalizadas",
     "description": "Póngase en contacto con nuestro equipo de ingeniería para obtener especificaciones personalizadas de las cuchillas, asistencia técnica o consultas sobre asociaciones OEM. Respuesta rápida para pedidos de cuchillas de repuesto. Ubicada en Ma'anshan, Anhui, China.",
     "keywords": "contacto fabricante de cuchillas, presupuesto de cuchillas a medida, cuchillas OEM, asistencia técnica"
   },
   "news": {
-    "title": "Noticias del sector y perspectivas técnicas | Blog de Sureay Blades",
+    "title": "Noticias del sector y perspectivas técnicas | Blog de Sureay Machinery",
     "description": "Últimas actualizaciones sobre tecnología de cuchillas, procesos de fabricación y tendencias del sector. Guías técnicas sobre selección de materiales, tratamiento térmico y optimización de cuchillas para aplicaciones de reciclaje y conversión.",
     "keywords": "tecnología de cuchillas, noticias de fabricación, guías técnicas, conocimientos de corte industrial"
   },

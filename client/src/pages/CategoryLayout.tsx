@@ -54,14 +54,14 @@ interface OemFitmentRow {
 // ── Constants ────────────────────────────────────────────────────────────────
 
 const CAT_REF: Record<string, string> = {
-  slitter_knives:    "SLT",
-  shredder_blades:   "SHR",
+  slitter_knives: "SLT",
+  shredder_blades: "SHR",
   granulator_blades: "GRN",
-  log_saw_blades:    "LSW",
-  shear_blades:      "SHA",
-  cold_saw_blades:   "CSW",
-  wood_chipper:      "WCH",
-  custom_profile:    "CST",
+  log_saw_blades: "LSW",
+  shear_blades: "SHA",
+  cold_saw_blades: "CSW",
+  wood_chipper: "WCH",
+  custom_profile: "CST",
 };
 
 // ── Data helpers ──────────────────────────────────────────────────────────────
@@ -100,9 +100,9 @@ function toFitmentRows(rep: Blade | undefined): OemFitmentRow[] {
   return rep.standardDimensions
     .filter(d => d.spec)
     .map(d => ({
-      platform:  d.spec ?? "—",
-      length:    d.od ?? d.dimension ?? "—",
-      width:     d.id ?? "—",
+      platform: d.spec ?? "—",
+      length: d.od ?? d.dimension ?? "—",
+      width: d.id ?? "—",
       thickness: d.thickness ?? "—",
     }));
 }
@@ -163,7 +163,8 @@ function CategoryHero({
     <header className="bg-[#001f4d] border-b-4 border-[#e8b84b]">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
         <p className="font-mono text-[10px] tracking-[0.36em] text-white/35 mb-5">
-          [ CAT-{ref} / {meta.category.replace(/_/g, "-").toUpperCase()} / SUREAY BLADES ]
+          [ CAT-{ref} / {meta.category.replace(/_/g, "-").toUpperCase()} /
+          SUREAY MACHINERY ]
         </p>
 
         <h1 className="text-[38px] sm:text-[52px] lg:text-[66px] font-black text-white tracking-[-0.02em] leading-[0.92] mb-6 max-w-4xl">
@@ -244,8 +245,8 @@ function ProductConfigurationsGrid({
             </h2>
           </div>
           <p className="text-[13px] text-slate-500 max-w-xs leading-snug">
-            Alloy, hardness and OEM fitment visible on each card. Click for
-            full dimensional spec sheet.
+            Alloy, hardness and OEM fitment visible on each card. Click for full
+            dimensional spec sheet.
           </p>
         </div>
 
@@ -360,7 +361,8 @@ function OemFitmentTable({
           <p className="text-[15px] text-slate-600 max-w-2xl leading-relaxed">
             All {categoryShortName.toLowerCase()} supplied to the exact bore,
             bolt-circle and dimensional tolerance of the original OEM tool. Send
-            your machine model number or a sample blade for instant verification.
+            your machine model number or a sample blade for instant
+            verification.
           </p>
         </div>
 
@@ -387,7 +389,10 @@ function OemFitmentTable({
             </thead>
             <tbody className="divide-y divide-slate-200">
               {rows.map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50/70"}>
+                <tr
+                  key={i}
+                  className={i % 2 === 0 ? "bg-white" : "bg-slate-50/70"}
+                >
                   <td className="font-bold text-[13px] text-[#001f4d] px-5 py-3.5 border-r border-slate-200">
                     {row.platform}
                   </td>
@@ -578,13 +583,13 @@ export default function CategoryLayout() {
   const meta = getCategoryBySlug(slug, lang);
   if (!meta) return <Redirect to="/products" />;
 
-  const variants         = getBladesByCategory(meta.category, lang);
-  const rep              = getRepresentativeBlade(meta.category, lang);
-  const oemCount         = getOemMachinesForCategory(meta.category, lang).length;
+  const variants = getBladesByCategory(meta.category, lang);
+  const rep = getRepresentativeBlade(meta.category, lang);
+  const oemCount = getOemMachinesForCategory(meta.category, lang).length;
   const industrialBlades = variants.map(toIndustrialBlade);
-  const fitmentRows      = toFitmentRows(rep);
-  const hrcRaw           = rep ? findSpec(rep.specs, ["hardness", "hrc"]) : "";
-  const hrcDisplay       = hrcRaw ? extractHrc(hrcRaw) : "HRC 55+";
+  const fitmentRows = toFitmentRows(rep);
+  const hrcRaw = rep ? findSpec(rep.specs, ["hardness", "hrc"]) : "";
+  const hrcDisplay = hrcRaw ? extractHrc(hrcRaw) : "HRC 55+";
 
   return (
     <div className="min-h-screen bg-white antialiased pb-14 md:pb-0">

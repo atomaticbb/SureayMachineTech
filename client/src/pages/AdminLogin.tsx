@@ -75,7 +75,7 @@ export default function AdminLogin() {
                 marginBottom: "4px",
               }}
             >
-              Sureay Blades
+              Sureay Machinery
             </div>
             <div
               style={{

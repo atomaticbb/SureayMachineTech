@@ -8,7 +8,7 @@ import {
   type Lang,
 } from "@/lib/i18n";
 
-const BRAND = "Sureay Blades";
+const BRAND = "Sureay Machinery";
 const BASE_URL = "https://sureay.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
 
@@ -22,10 +22,10 @@ function isLikelyI18nKey(value: string): boolean {
   return /^[a-z0-9_-]+(?:\.[a-z0-9_-]+){2,}$/i.test(value.trim());
 }
 
-function normalizeTitle(rawTitle: string): string {
+function normalizeTitle(rawTitle: string, brand: string = BRAND): string {
   const trimmed = rawTitle.trim();
   if (!trimmed || isLikelyI18nKey(trimmed)) {
-    return BRAND;
+    return brand;
   }
 
   const withoutBrand = BRAND_SUFFIX_PATTERNS.reduce(
@@ -33,7 +33,7 @@ function normalizeTitle(rawTitle: string): string {
     trimmed
   );
 
-  return withoutBrand ? `${withoutBrand} | ${BRAND}` : BRAND;
+  return withoutBrand ? `${withoutBrand} | ${brand}` : brand;
 }
 
 function dirForLang(lang: Lang): "ltr" | "rtl" {
@@ -71,6 +71,9 @@ export interface SEOProps {
   noIndex?: boolean;
   keywords?: string;
   breadcrumbs?: BreadcrumbItem[];
+  /** Brand suffix appended to the <title> (default "Sureay Machinery").
+   *  Mixer Wear Parts pages pass "Sureay" — "Blades" is wrong for cast parts. */
+  brand?: string;
   /** Additional JSON-LD blocks to inject (e.g. ItemList on the homepage).
    *  Pass already-stringified JSON, one entry per script tag. */
   extraJsonLd?: string[];
@@ -99,26 +102,30 @@ export default function SEO({
   noIndex = false,
   keywords,
   breadcrumbs,
+  brand = BRAND,
   extraJsonLd,
 }: SEOProps) {
   const lang = useLang();
-  const fullTitle = normalizeTitle(title);
+  const fullTitle = normalizeTitle(title, brand);
 
-  // News pages are English-only — no language prefix or multilingual hreflang.
+  // English-only sections — no language prefix or multilingual hreflang.
+  // News and (this batch) Mixer Wear Parts exist only in English.
   const isNewsPath =
     canonicalUrl === "/news" || (canonicalUrl?.startsWith("/news/") ?? false);
+  const isMixerPath = canonicalUrl?.startsWith("/mixer-wear-parts") ?? false;
+  const isEnglishOnly = isNewsPath || isMixerPath;
 
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and
   // we prepend the active language prefix.
   const canonicalHref = canonicalUrl
-    ? abs(isNewsPath ? canonicalUrl : localizedPath(canonicalUrl, lang))
+    ? abs(isEnglishOnly ? canonicalUrl : localizedPath(canonicalUrl, lang))
     : undefined;
 
   // hreflang alternates — one link per supported language plus x-default.
-  // News pages are excluded: they only exist in English.
+  // English-only sections (news, mixer) are excluded: no localized variants.
   const hreflangs =
-    canonicalUrl && !isNewsPath
+    canonicalUrl && !isEnglishOnly
       ? SUPPORTED_LANGS.map(altLang => ({
           lang: altLang,
           href: abs(localizedPath(canonicalUrl, altLang)),
@@ -134,9 +141,9 @@ export default function SEO({
   const allImages = productData
     ? [
         abs(productData.image),
-        ...(productData.images ?? []).map(abs).filter(
-          (u) => u !== abs(productData.image)
-        ),
+        ...(productData.images ?? [])
+          .map(abs)
+          .filter(u => u !== abs(productData.image)),
       ]
     : [];
 
@@ -235,7 +242,7 @@ export default function SEO({
       {hreflangs.map(({ lang: alt, href }) => (
         <link key={alt} rel="alternate" hrefLang={alt} href={href} />
       ))}
-      {canonicalUrl && !isNewsPath && (
+      {canonicalUrl && !isEnglishOnly && (
         <link
           rel="alternate"
           hrefLang="x-default"

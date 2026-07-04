@@ -23,12 +23,12 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "fabricant de lames, certifié ISO 9001, affûtage CNC, Ma'anshan Chine, outils de coupe industriels"
   },
   "contact": {
-    "title": "Contacter Sureay Blades pour un devis de lame personnalisée",
+    "title": "Contacter Sureay Machinery pour un devis de lame personnalisée",
     "description": "Contactez notre équipe d'ingénieurs pour des spécifications de lames personnalisées, une assistance technique ou des demandes de partenariat OEM. Réponse rapide pour les commandes de lames de remplacement. Situé à Ma'anshan, Anhui, Chine.",
     "keywords": "contacter le fabricant de lames, devis de lames sur mesure, lames OEM, support technique"
   },
   "news": {
-    "title": "Nouvelles de l'industrie et aperçus techniques | Sureay Blades Blog",
+    "title": "Nouvelles de l'industrie et aperçus techniques | Sureay Machinery Blog",
     "description": "Dernières mises à jour sur la technologie des lames, les processus de fabrication et les tendances de l'industrie. Guides techniques sur la sélection des matériaux, la traitement thermique et l'optimisation des lames pour les applications de recyclage et de transformation.",
     "keywords": "technologie des lames, actualités de la fabrication, guides techniques, informations sur la coupe industrielle"
   },

@@ -28,7 +28,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "liên hệ với nhà sản xuất lưỡi dao, báo giá lưỡi dao tùy chỉnh, lưỡi OEM, hỗ trợ kỹ thuật"
   },
   "news": {
-    "title": "Tin tức ngành & Thông tin chuyên sâu về kỹ thuật | Blog của Sureay Blades",
+    "title": "Tin tức ngành & Thông tin chuyên sâu về kỹ thuật | Blog của Sureay Machinery",
     "description": "Cập nhật mới nhất về công nghệ lưỡi cắt, quy trình sản xuất và xu hướng của ngành. Hướng dẫn kỹ thuật về lựa chọn vật liệu, xử lý nhiệt và tối ưu hóa lưỡi cắt cho các ứng dụng tái chế và chuyển đổi.",
     "keywords": "công nghệ lưỡi cắt, tin tức sản xuất, hướng dẫn kỹ thuật, hiểu biết sâu sắc về cắt công nghiệp"
   },
