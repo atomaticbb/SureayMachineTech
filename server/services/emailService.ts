@@ -22,11 +22,20 @@ const getResendClient = (): Resend | null => {
 // ── Recipient list ────────────────────────────────────────────────────────────
 // EMAIL_TO        → general inbox  (e.g. lynn@sureay.com)
 // EMAIL_TO_OWNER  → owner's private inbox (e.g. liyucityu@hotmail.com)
+// SALES_RECIPIENTS → always notified on every inquiry, regardless of env config.
+//   NOTE: this is the NOTIFICATION recipient list only — the contact email
+//   SHOWN on the website stays lynn@sureay.com (that lives in the client UI).
+const SALES_RECIPIENTS = ["amelia@sureay.com"];
+
 const buildRecipients = (): string[] => {
   const list: string[] = [];
   if (process.env.EMAIL_TO) list.push(process.env.EMAIL_TO);
   if (process.env.EMAIL_TO_OWNER) list.push(process.env.EMAIL_TO_OWNER);
-  return list.length > 0 ? list : ["lynn@sureay.com"];
+  if (list.length === 0) list.push("lynn@sureay.com");
+  for (const recipient of SALES_RECIPIENTS) {
+    if (!list.includes(recipient)) list.push(recipient);
+  }
+  return list;
 };
 
 // ── HTML escape helper ────────────────────────────────────────────────────────
