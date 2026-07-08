@@ -31,7 +31,7 @@ import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
 import TrustProtocol from "@/components/product-detail/TrustProtocol";
 import CompatibleMachines from "@/components/product-detail/CompatibleMachines";
-import WhatsAppFloat from "@/components/common/WhatsAppFloat";
+import FloatingContactButtons from "@/components/common/FloatingContactButtons";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -168,7 +168,10 @@ export default function ProductDetail() {
         </div>
       </main>
 
-      <WhatsAppFloat />
+      <FloatingContactButtons
+        whatsappPrefillText={`Hi, I'm interested in your ${blade.name}. Please send me more information.`}
+        rfqAnchorId="rfq"
+      />
       <Footer />
     </div>
   );

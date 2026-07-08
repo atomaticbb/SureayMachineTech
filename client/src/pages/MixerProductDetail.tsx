@@ -18,7 +18,7 @@ import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import WhatsAppFloat from "@/components/common/WhatsAppFloat";
+import FloatingContactButtons from "@/components/common/FloatingContactButtons";
 
 import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
@@ -114,17 +114,9 @@ export default function MixerProductDetail() {
 
   const gradeGuide = GRADE_GUIDE[gradeGroupForSector(part.sector)];
 
-  // SEO title middle phrase is material-aware (brand suffix added by <SEO>):
-  // arms are cast steel, seals are sealing elements (not Ni-Hard), the rest
-  // are Ni-Hard / high-chrome cast wear parts.
-  const titleMiddle =
-    part.sector === "mixing_arm"
-      ? "Cast Steel Wear Part"
-      : part.sector === "seal"
-        ? "Shaft Seal"
-        : "Ni-Hard Wear Part";
+  // SEO title keeps the high-intent OEM names; brand suffix added by <SEO>.
   const oemTop = part.compatibleMachines.slice(0, 2).join(" & ");
-  const seoTitle = `${part.name} | ${titleMiddle} for ${oemTop}`;
+  const seoTitle = `${part.name} for ${oemTop}`;
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
@@ -132,7 +124,6 @@ export default function MixerProductDetail() {
         title={seoTitle}
         description={part.description}
         canonicalUrl={part.link}
-        brand="Sureay"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },
@@ -546,7 +537,10 @@ export default function MixerProductDetail() {
         </div>
       </main>
 
-      <WhatsAppFloat />
+      <FloatingContactButtons
+        whatsappPrefillText={`Hi, I'm interested in your ${part.name}. Please send me more information.`}
+        rfqAnchorId="rfq"
+      />
       <Footer />
     </div>
   );

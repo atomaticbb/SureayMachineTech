@@ -15,6 +15,9 @@ export default function GlobalMobileCTA() {
 
   // Hide on admin screens
   if (location.startsWith("/admin")) return null;
+  // Category Hub pages have their own MobileContactBar with an equivalent
+  // bar — avoid stacking two floating contact bars on those pages.
+  if (location.startsWith("/categories/")) return null;
 
   const handleQuote = (e: React.MouseEvent) => {
     e.preventDefault();
