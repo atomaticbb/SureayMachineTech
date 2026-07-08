@@ -334,10 +334,32 @@ function MixerMenu({ onClose }: { onClose: () => void }) {
   );
 }
 
+// Mobile drawer only — revenue-rank order for the Industrial Blades submenu.
+// Desktop's ProductsMegaMenu computes its own category order independently.
+const MOBILE_CATEGORY_ORDER = [
+  "slitter-knives",
+  "shredder-blades",
+  "log-saw-blades",
+  "granulator-blades",
+  "wood-chipper-blades",
+  "shear-blades",
+  "custom-profile",
+  "cold-saw-blades",
+];
+
 // ── Navbar ────────────────────────────────────────────────────────────────────
 export default function Navbar() {
   const { t, lang } = useTranslation();
   const categories = getCategories(lang);
+  const mobileCategories = useMemo(
+    () =>
+      [...categories].sort(
+        (a, b) =>
+          MOBILE_CATEGORY_ORDER.indexOf(a.slug) -
+          MOBILE_CATEGORY_ORDER.indexOf(b.slug)
+      ),
+    [categories]
+  );
   const [location, navigate] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -629,13 +651,13 @@ export default function Navbar() {
                   onClick={() => setMobileProduct(v => !v)}
                 >
                   <span
-                    className={`text-2xl font-black  tracking-widest transition-colors ${
+                    className={`text-xl font-black  tracking-widest transition-colors ${
                       mobileProduct
                         ? "text-white"
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    INDUSTRIAL BLADES
+                    Industrial Blades
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
@@ -655,7 +677,7 @@ export default function Navbar() {
                       className="overflow-hidden"
                     >
                       <div className="pb-5">
-                        {categories.map(c => (
+                        {mobileCategories.map(c => (
                           <Link
                             key={c.slug}
                             href={
@@ -688,13 +710,13 @@ export default function Navbar() {
                   onClick={() => setMobileMixer(v => !v)}
                 >
                   <span
-                    className={`text-2xl font-black  tracking-widest transition-colors ${
+                    className={`text-xl font-black  tracking-widest transition-colors ${
                       mobileMixer
                         ? "text-white"
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    MIXER WEAR PARTS
+                    Mixer Wear Parts
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
@@ -736,7 +758,7 @@ export default function Navbar() {
               {NAV_LINKS.map(item => (
                 <Link key={item.path} href={item.path}>
                   <div className="py-5 border-b border-white/10 cursor-pointer group">
-                    <span className="text-2xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
+                    <span className="text-xl font-black  tracking-widest text-white group-hover:text-white/70 transition-colors">
                       {item.label}
                     </span>
                   </div>
@@ -751,9 +773,6 @@ export default function Navbar() {
                   {t("cta.getQuote")}
                 </div>
               </Link>
-              <p className="mt-4 font-mono text-[10px] text-white/25  tracking-[0.2em] text-center">
-                ■ ISO 9001:2015 · CMM VERIFIED
-              </p>
             </div>
           </motion.div>
         )}
