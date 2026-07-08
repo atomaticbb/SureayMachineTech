@@ -8,32 +8,33 @@ import {
   type Lang,
 } from "@/lib/i18n";
 
-const BRAND = "Sureay Machinery";
+const BRAND = "Sureay";
 const BASE_URL = "https://sureay.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/hero/homehero.webp`;
 
-const BRAND_SUFFIX_PATTERNS = [
-  /\s*\|\s*Sureay\s*Blades\s*$/i,
-  /\s*\|\s*Sureay\s*$/i,
-];
+// One trailing brand segment: "| Sureay", "| Sureay Machinery",
+// "| Sureay Blades", optionally with " Technology". Stripped repeatedly so an
+// already-doubled suffix collapses before we re-append the canonical one.
+const TRAILING_BRAND =
+  /\s*\|\s*Sureay(?:\s+(?:Machinery|Blades))?(?:\s+Technology)?\s*$/i;
 
 function isLikelyI18nKey(value: string): boolean {
   // Matches dotted keys like "industry.plastic.seo.title".
   return /^[a-z0-9_-]+(?:\.[a-z0-9_-]+){2,}$/i.test(value.trim());
 }
 
-function normalizeTitle(rawTitle: string, brand: string = BRAND): string {
-  const trimmed = rawTitle.trim();
-  if (!trimmed || isLikelyI18nKey(trimmed)) {
-    return brand;
+function normalizeTitle(rawTitle: string): string {
+  let title = rawTitle.trim();
+  if (!title || isLikelyI18nKey(title)) {
+    return BRAND;
   }
 
-  const withoutBrand = BRAND_SUFFIX_PATTERNS.reduce(
-    (title, pattern) => title.replace(pattern, "").trim(),
-    trimmed
-  );
+  // Collapse any (even doubled) trailing brand suffix, then append exactly one.
+  while (TRAILING_BRAND.test(title)) {
+    title = title.replace(TRAILING_BRAND, "").trim();
+  }
 
-  return withoutBrand ? `${withoutBrand} | ${brand}` : brand;
+  return title ? `${title} | ${BRAND}` : BRAND;
 }
 
 function dirForLang(lang: Lang): "ltr" | "rtl" {
@@ -71,9 +72,6 @@ export interface SEOProps {
   noIndex?: boolean;
   keywords?: string;
   breadcrumbs?: BreadcrumbItem[];
-  /** Brand suffix appended to the <title> (default "Sureay Machinery").
-   *  Mixer Wear Parts pages pass "Sureay" — "Blades" is wrong for cast parts. */
-  brand?: string;
   /** Additional JSON-LD blocks to inject (e.g. ItemList on the homepage).
    *  Pass already-stringified JSON, one entry per script tag. */
   extraJsonLd?: string[];
@@ -102,11 +100,10 @@ export default function SEO({
   noIndex = false,
   keywords,
   breadcrumbs,
-  brand = BRAND,
   extraJsonLd,
 }: SEOProps) {
   const lang = useLang();
-  const fullTitle = normalizeTitle(title, brand);
+  const fullTitle = normalizeTitle(title);
 
   // English-only sections — no language prefix or multilingual hreflang.
   // News and (this batch) Mixer Wear Parts exist only in English.

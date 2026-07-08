@@ -117,7 +117,7 @@ export const mixerCategories: MixerCategory[] = [
     id: "concrete-mixing-plant",
     category: "concrete_mixing_plant",
     name: "Concrete Mixing Plant Parts",
-    seoTitle: "Concrete Mixing Plant Parts: Blades, Scrapers & Mixing Arms",
+    seoTitle: "Concrete Mixing Plant Parts: Arms, Liners & Blades",
     description:
       "Cast wear parts for twin-shaft and planetary concrete mixers - mixing arms, liner plates, scrapers and bolt-on blades in Ni-Hard and high-chromium iron. Factory-direct replacements that drop into Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich plants.",
     image:
@@ -128,7 +128,7 @@ export const mixerCategories: MixerCategory[] = [
     id: "asphalt-mixing-plant",
     category: "asphalt_mixing_plant",
     name: "Asphalt Mixing Plant Parts",
-    seoTitle: "Asphalt Mixing Plant Parts: Mixing Arms, Liners & Spiral Blades",
+    seoTitle: "Asphalt Mixing Plant Parts: Arms, Liners & Blades",
     description:
       "High-temperature wear parts for pugmill and twin-shaft asphalt mixers - mixing arms, liner plates, spiral blades and W-type scrapers built to hold their edge in hot bituminous mix. OEM-fit replacements for Ammann, Marini, Benninghoven, MEKA and Astec plants.",
     image:

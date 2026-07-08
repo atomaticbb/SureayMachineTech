@@ -62,7 +62,6 @@ export default function MixerCategoryPage() {
         title={meta.seoTitle}
         description={meta.description}
         canonicalUrl={meta.link}
-        brand="Sureay"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },

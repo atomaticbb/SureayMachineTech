@@ -86,8 +86,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   // ── Product Detail Pages ───────────────────────────────────────────────
 
   "rotary-slitter-knives": {
-    title:
-      "Rotary Slitter Knives for Film, Tape & Packaging",
+    title: "Rotary Slitter Knives for Film, Tape & Packaging",
     description:
       "Rotary slitter blades & knives precision-ground to \u00b10.002\u202fmm. D2, M2 HSS, ASP23 PM steel & tungsten carbide options. Shear, score & razor profiles for BOPP, BOPET, CPP film, PSA tape & nonwoven. OEM fit Tidland, Kampf, Atlas & Dusenbery \u2014 factory direct quote.",
     keywords:
@@ -95,7 +94,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "metal-foil-strip-slitter-knives": {
-    title: "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, \u00b10.001\u202fmm | Sureay",
+    title:
+      "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, \u00b10.001\u202fmm | Sureay",
     description:
       "ASP23/ASP52 PM tool steel & tungsten carbide slitter knives for metal service centers. \u00b10.001\u202fmm thickness tolerance, mirror-lapped Ra \u22640.02\u202f\u03bcm for burr-free gang slitting of aluminum foil, copper strip, stainless steel & silicon steel. Factory direct wholesale \u2014 low MOQ, request specs.",
     keywords:
@@ -103,8 +103,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "twin-shaft-blades-recycling": {
-    title:
-      "Twin-Shaft Shredder Blades | D2/SKD11 OEM Fit",
+    title: "Twin-Shaft Shredder Blades | D2/SKD11 OEM Fit",
     description:
       "D2/SKD11 & chromium carbide rotor blades for MSW, plastics & wood twin-shaft shredding. Intersecting-scissor geometry, 3\u201312 claws, Wire-EDM bores. OEM replacement for Weima, Untha, SSI & Vecoplan. Factory direct wholesale \u2014 low MOQ, custom specs & fast quote.",
     keywords:
@@ -128,8 +127,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "tissue-log-saw-blades": {
-    title:
-      "Tissue Log Saw Blades | D2 \u00d8610\u20131000mm | Sureay",
+    title: "Tissue Log Saw Blades | D2 \u00d8610\u20131000mm | Sureay",
     description:
       "Tissue log saw blades \u00d8610\u20131000mm, D2 HRC 58\u201360, mirror polish, \u22640.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
     keywords:
@@ -137,8 +135,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "granulator-blades": {
-    title:
-      "Plastic Granulator Blades & Crusher Knives | OEM",
+    title: "Plastic Granulator Blades & Crusher Knives | OEM",
     description:
       "D2, SKD-11 & Cr12MoV plastic granulator blades \u2014 rotor & stator knives ground to \u00b10.02\u202fmm. HRC 58\u201362, OEM replacement for Cumberland, Herbold & Rapid granulators. Factory-direct supply, wholesale available. Send model no. for exact-match quote.",
     keywords:
@@ -154,8 +151,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "paper-cutting-blades": {
-    title:
-      "Precision Paper Cutting & Guillotine Blades",
+    title: "Precision Paper Cutting & Guillotine Blades",
     description:
       "Professional guillotine blades for commercial printing and paper converting. Precision ground to 0.01mm tolerance. Clean, burr-free cuts on coated stock, cardboard, and multi-layer materials. Wide machine compatibility.",
     keywords:
@@ -163,8 +159,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "three-knife-trimmer-blades": {
-    title:
-      "Trimmer Blades & Spare Knives for Combi Head | Sureay",
+    title: "Trimmer Blades & Spare Knives for Combi Head | Sureay",
     description:
       "HSS & TC three-knife trimmer blades, spare knives for combi head. OEM fit M\u00fcller Martini, Heidelberg, Kolbus. Front + side sets available.",
     keywords:
@@ -182,8 +177,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "single-shaft-bed-knives": {
-    title:
-      "Stator & Bed Knives for Single-Shaft Shredders",
+    title: "Stator & Bed Knives for Single-Shaft Shredders",
     description:
       "D2/DC53 stator knives (counter bed knives) for single-shaft shredders. Straightness \u22640.05\u202fmm/m, custom lengths to 3500\u202fmm. Drop-in OEM replacement for Vecoplan, Weima, Lindner & Zerma. Factory direct \u2014 send drawing or machine model for fast quote.",
     keywords:
@@ -199,8 +193,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "metal-shear-knives": {
-    title:
-      "Heavy-Duty Metal Shear & Guillotine Knives",
+    title: "Heavy-Duty Metal Shear & Guillotine Knives",
     description:
       "Precision guillotine and scrap shear knives in D2, S1 (6CrW2Si), and H13 tool steels. Ground to ±0.05 mm parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap. Single-piece lengths up to 6000 mm.",
     keywords:
@@ -216,8 +209,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "lithium-battery-slitting-knives": {
-    title:
-      "Carbide Battery Slitting Knives | Electrode Foil",
+    title: "Carbide Battery Slitting Knives | Electrode Foil",
     description:
       "Mirror-finish tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra \u22640.05\u03bcm edge, \u00b10.001mm tolerance. Zero micro-burrs on Al/Cu foil.",
     keywords:
@@ -225,8 +217,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "corrugated-slitter-scorer-blades": {
-    title:
-      "Corrugated Slitter Scorer Blades | BHS & Fosber",
+    title: "Corrugated Slitter Scorer Blades | BHS & Fosber",
     description:
       "Solid tungsten carbide thin slitter blades for corrugated board dry-end lines. Zero-crush cutting. OEM fit for BHS, Fosber, Marquip. Slotter & scorer knives in stock.",
     keywords:
@@ -234,8 +225,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "nonwoven-slitter-knives": {
-    title:
-      "Nonwoven Slitter Knives | PP Spunbond & SMS",
+    title: "Nonwoven Slitter Knives | PP Spunbond & SMS",
     description:
       "M2 HSS & D2 circular slitter knives for PP spunbond, meltblown & SMS nonwoven at 200\u2013500\u202fm/min. Anti-fraying rake geometry eliminates fiber tear on hygiene, medical & filtration lines. OEM fit for leading nonwoven converting systems \u2014 request quote.",
     keywords:
@@ -251,8 +241,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "rotary-slitter-knives-paper": {
-    title:
-      "Tissue & Paper Slitter Knives | D2 / M2 HSS",
+    title: "Tissue & Paper Slitter Knives | D2 / M2 HSS",
     description:
       "D2 & M2 HSS circular slitter knives for tissue, kraft paper & corrugated board converting. Matched top/bottom shear pairs at \u00b10.002\u202fmm. Fiber-dust-free cuts at 400\u2013600\u202fm/min. OEM fit Atlas, Kampf, Fabio Perini, K\u00f6rber \u2014 send machine model for quote.",
     keywords:
@@ -260,7 +249,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "guillotine-shear-blades": {
-    title: "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
+    title:
+      "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
     description:
       "D2 (Cr12MoV), 6CrW2Si & 9CrSi guillotine shear blades ground to \u00b10.05\u202fmm full-length parallelism. Upper and lower sets for machines up to 16\u202fmm \u00d7 4000\u202fmm. OEM-compatible with TRUMPF, AMADA, LVD, Durma & Bystronic.",
     keywords:
@@ -284,7 +274,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "wood-chipper-blades-standard": {
-    title: "Wood Chipper Knives | Reversible Double-Edge | T10 · 9CrSi · Cr12MoV | Sureay",
+    title:
+      "Wood Chipper Knives | Reversible Double-Edge | T10 · 9CrSi · Cr12MoV | Sureay",
     description:
       "Reversible double-edge wood chipper knives in T10, 9CrSi and Cr12MoV steel — both cutting edges usable before resharpening. OEM fit for drum and disc chippers. Landscaping, forestry & biomass processing.",
     keywords:
@@ -292,7 +283,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "wood-chipper-anvils": {
-    title: "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
+    title:
+      "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
     description:
       "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV and A8 Modified steel. HRC 54–60 through-hardened. ±0.05 mm parallelism. OEM fit for Bandit, Vermeer, Morbark, Timberwolf & Schliesing. Matched blade + anvil sets available.",
     keywords:
@@ -321,13 +313,4 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
 export function getSEO(pageKey: string): PageSEO {
   return SEO_CONFIG[pageKey] || {};
-}
-
-/**
- * Generate full title with brand suffix
- */
-export function getFullTitle(title?: string): string {
-  if (!title) return "Sureay Machinery | Precision Industrial Blades";
-  if (title.includes("Sureay")) return title;
-  return `${title} | Sureay`;
 }

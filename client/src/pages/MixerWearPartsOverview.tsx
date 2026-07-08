@@ -79,10 +79,9 @@ export default function MixerWearPartsOverview() {
   return (
     <div className="min-h-screen bg-white antialiased">
       <SEO
-        title="Concrete & Asphalt Mixing Plant Wear Parts | Mixing Arms, Liners, Blades"
+        title="Concrete & Asphalt Mixing Plant Wear Parts"
         description="Factory-direct mixing arms, liner plates, scrapers and blades for concrete and asphalt mixing plants. Ni-Hard / high-chrome cast wear parts, OEM-fit, ISO 9001:2015."
         canonicalUrl="/mixer-wear-parts"
-        brand="Sureay"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },

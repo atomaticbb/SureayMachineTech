@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEO
-        title="Privacy Policy — Sureay Machinery Technology"
+        title="Privacy Policy"
         description="Privacy policy for sureay.com — data collection, cookies, Google Analytics, Google Ads tracking, GDPR rights, and contact information."
         canonicalUrl="/privacy-policy"
       />
@@ -95,10 +95,10 @@ export default function PrivacyPolicy() {
               information when you visit our website or submit an inquiry.
             </p>
             <p>
-              By using this website you agree to the practices described in
-              this policy. If you are located in the European Economic Area
-              (EEA), additional rights under the General Data Protection
-              Regulation (GDPR) apply — see Section 8.
+              By using this website you agree to the practices described in this
+              policy. If you are located in the European Economic Area (EEA),
+              additional rights under the General Data Protection Regulation
+              (GDPR) apply — see Section 8.
             </p>
           </Section>
 
@@ -181,11 +181,11 @@ export default function PrivacyPolicy() {
                 GOOGLE ANALYTICS 4
               </p>
               <p>
-                We use Google Analytics 4 (GA4) to collect anonymised
-                behavioral data about how visitors use this website (pages
-                viewed, session duration, events). GA4 places cookies on your
-                device and sends this data to Google LLC servers, which may be
-                located in the United States.
+                We use Google Analytics 4 (GA4) to collect anonymised behavioral
+                data about how visitors use this website (pages viewed, session
+                duration, events). GA4 places cookies on your device and sends
+                this data to Google LLC servers, which may be located in the
+                United States.
               </p>
               <p className="mt-2">
                 Google uses this data as described in the{" "}
@@ -216,18 +216,18 @@ export default function PrivacyPolicy() {
                 GOOGLE ADS — CONVERSION TRACKING & REMARKETING
               </p>
               <p>
-                We use Google Ads for conversion tracking and remarketing.
-                When you visit our website, Google places a cookie or uses
-                similar identifiers to record your visit. If you later see a
-                Sureay advertisement on another site or Google property, this
-                is served by Google based on your prior visit to sureay.com.
+                We use Google Ads for conversion tracking and remarketing. When
+                you visit our website, Google places a cookie or uses similar
+                identifiers to record your visit. If you later see a Sureay
+                advertisement on another site or Google property, this is served
+                by Google based on your prior visit to sureay.com.
               </p>
               <p className="mt-2">
-                This allows us to: (a) measure when an ad click leads to a
-                form submission (conversion tracking), and (b) show our ads
-                to previous visitors who may be interested in our products
-                (remarketing). No personally identifiable information is
-                passed to Google for this purpose.
+                This allows us to: (a) measure when an ad click leads to a form
+                submission (conversion tracking), and (b) show our ads to
+                previous visitors who may be interested in our products
+                (remarketing). No personally identifiable information is passed
+                to Google for this purpose.
               </p>
               <p className="mt-2">
                 You can opt out of personalised advertising at{" "}
@@ -278,8 +278,8 @@ export default function PrivacyPolicy() {
           <Section id="cookies" title="5. COOKIES" delay={0.3}>
             <p>
               We use the following categories of cookies. You can manage or
-              withdraw consent at any time via the cookie banner on this site
-              or your browser settings.
+              withdraw consent at any time via the cookie banner on this site or
+              your browser settings.
             </p>
 
             <div className="overflow-x-auto">
@@ -335,7 +335,9 @@ export default function PrivacyPolicy() {
 
           <Section id="retention" title="6. DATA RETENTION" delay={0.35}>
             <p>
-              <span className="text-white font-semibold">Contact form data</span>{" "}
+              <span className="text-white font-semibold">
+                Contact form data
+              </span>{" "}
               is retained in our database for up to 3 years to allow follow-up
               on enquiries and to maintain sales records, after which it is
               deleted or anonymised.
@@ -345,7 +347,9 @@ export default function PrivacyPolicy() {
               is retained by Google Analytics for 14 months by default.
             </p>
             <p>
-              <span className="text-white font-semibold">Advertising cookies</span>{" "}
+              <span className="text-white font-semibold">
+                Advertising cookies
+              </span>{" "}
               set by Google Ads expire after 90 days.
             </p>
           </Section>
@@ -357,10 +361,10 @@ export default function PrivacyPolicy() {
           >
             <p>
               Sureay is based in China. Data you submit may be transferred to
-              and processed in China. For visitors in the EEA: data processed
-              by Google Analytics and Google Ads is transferred to the United
-              States under Google's Standard Contractual Clauses approved by
-              the European Commission.
+              and processed in China. For visitors in the EEA: data processed by
+              Google Analytics and Google Ads is transferred to the United
+              States under Google's Standard Contractual Clauses approved by the
+              European Commission.
             </p>
           </Section>
 
@@ -417,22 +421,24 @@ export default function PrivacyPolicy() {
             </ul>
             <p>
               To exercise any of these rights, contact us at the address in
-              Section 9. We will respond within 30 days. You also have the
-              right to lodge a complaint with your local data protection
-              authority.
+              Section 9. We will respond within 30 days. You also have the right
+              to lodge a complaint with your local data protection authority.
             </p>
           </Section>
 
           <Section id="contact" title="9. CONTACT US" delay={0.5}>
             <p>
-              For privacy-related requests, questions, or complaints, contact
-              us at:
+              For privacy-related requests, questions, or complaints, contact us
+              at:
             </p>
             <div className="border border-slate-800 p-5 bg-[#0d1520] space-y-2">
               <p className="text-white font-semibold">
                 Sureay Machinery Technology Co., Ltd.
               </p>
-              <p>Industrial Development Zone, Bowang Town, Bowang District, Ma'anshan City, Anhui Province, China</p>
+              <p>
+                Industrial Development Zone, Bowang Town, Bowang District,
+                Ma'anshan City, Anhui Province, China
+              </p>
               <p>
                 Email:{" "}
                 <a
