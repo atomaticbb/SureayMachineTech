@@ -365,6 +365,7 @@ export default function ContactRFQ({
                     {t("contact.form.messageLabel")} *
                   </label>
                   <textarea
+                    id="rfq-message"
                     rows={4}
                     name="message"
                     placeholder={t("contact.form.messagePlaceholder")}
