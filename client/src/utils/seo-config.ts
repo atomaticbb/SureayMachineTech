@@ -159,11 +159,12 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "three-knife-trimmer-blades": {
-    title: "Trimmer Blades & Spare Knives for Combi Head | Sureay",
+    title:
+      "Three-Knife Trimmer Blades \u2014 Spare Knives for Combi Head | Sureay",
     description:
-      "HSS & TC three-knife trimmer blades, spare knives for combi head. OEM fit M\u00fcller Martini, Heidelberg, Kolbus. Front + side sets available.",
+      "HSS & TC three-knife trimmer blades \u2014 spare knives for combi head. OEM fit M\u00fcller Martini, Wohlenberg, Kolbus. Front + side sets available.",
     keywords:
-      "three knife trimmer blades, spare knives for combi head, M\u00fcller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, Heidelberg trimmer knife, Kolbus trimmer blade set",
+      "three knife trimmer blades, spare knives for combi head, M\u00fcller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, wohlenberg trimmer blades, trimmer blades for perfect binding, Kolbus trimmer blade set",
     ogImage:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },

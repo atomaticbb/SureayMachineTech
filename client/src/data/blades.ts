@@ -2927,7 +2927,8 @@ export const blades: Blade[] = [
   {
     id: "three-knife-trimmer-blades",
     name: "Three-Knife Trimmer Blades",
-    fullName: "Premium HSS & Carbide Three-Knife Trimmer Sets for Bookbinding",
+    fullName:
+      "Premium HSS & Carbide Three-Knife Trimmer Blades for Bookbinding",
     category: "shear_blades",
     sector: "paper",
     categoryDisplay: "Bookbinding Knives",
@@ -2945,7 +2946,7 @@ export const blades: Blade[] = [
       "Matched 3-knife replacement sets (1 Front, 2 Sides) for high-volume print finishing. Bimetallic construction with 18% Tungsten HSS or solid Tungsten Carbide (TC) cutting edges. Direct OEM fit for Müller Martini, Kolbus, and Wohlenberg trimmers.",
 
     fullDescription:
-      "In high-speed commercial bindery and print finishing operations, the three-knife trimmer is the final, critical step before packaging. Substandard trimmer blades cause spine splitting, cover chipping, and PUR/EVA glue build-up, turning finished books into expensive scrap.\n\nSureay Three-Knife Trimmer sets are manufactured to precise OEM specifications to guarantee flawless fore-edges, heads, and tails on thick catalogs, magazines, and perfect-bound books.\n\n## Advanced Bimetallic Construction\n\nSolid high-speed steel blades of this size are too brittle and prone to snapping under the immense clamping pressure of a book trimmer. We utilize an advanced **Bimetallic Inlay** manufacturing process. A premium cutting edge—either 18% Tungsten HSS or micro-grain Tungsten Carbide—is vacuum-brazed onto a shock-absorbing, high-tensile spring steel body. This delivers the ultimate combination: an incredibly hard, wear-resistant cutting edge backed by a flexible, shatter-proof core.\n\n## Material Grades for the Bindery\n\n- **18% Tungsten HSS (High-Speed Steel):** The industry standard for general commercial printing. Delivers an extremely sharp, fine edge that easily handles standard uncoated and lightly coated book stocks.\n- **Tungsten Carbide (TC / Widia Equivalent):** The absolute top-tier specification. TC blades deliver up to **5× to 10× the service life** of HSS. They are mandatory when cutting heavy recycled paper, highly abrasive gloss-coated art paper, or books bound with tough PUR adhesives.\n\n## Anti-Glue Mirror Finish\n\nModern perfect-bound books use aggressive EVA or PUR adhesives. During the trim cycle, friction heats the glue, causing it to smear and stick to the blade face. Sureay trimmer blades are precision-lapped to a Ra ≤0.1 μm mirror finish, significantly reducing friction and adhesive adherence, ensuring a clean cut cycle after cycle.",
+      "In high-speed commercial bindery and print finishing operations, the three-knife trimmer is the final, critical step before packaging. Substandard trimmer blades cause spine splitting, cover chipping, and PUR/EVA glue build-up, turning finished books into expensive scrap.\n\nSureay Three-Knife Trimmer sets are manufactured to precise OEM specifications to guarantee flawless fore-edges, heads, and tails on thick catalogs, magazines, and perfect-bound books. This three-knife assembly — front, left, and right — is also referred to in the trade as a **combi head** or combination trim head.\n\n## Advanced Bimetallic Construction\n\nSolid high-speed steel blades of this size are too brittle and prone to snapping under the immense clamping pressure of a book trimmer. We utilize an advanced **Bimetallic Inlay** manufacturing process. A premium cutting edge—either 18% Tungsten HSS or micro-grain Tungsten Carbide—is vacuum-brazed onto a shock-absorbing, high-tensile spring steel body. This delivers the ultimate combination: an incredibly hard, wear-resistant cutting edge backed by a flexible, shatter-proof core.\n\n## Material Grades for the Bindery\n\n- **18% Tungsten HSS (High-Speed Steel):** The industry standard for general commercial printing. Delivers an extremely sharp, fine edge that easily handles standard uncoated and lightly coated book stocks.\n- **Tungsten Carbide (TC / Widia Equivalent):** The absolute top-tier specification. TC blades deliver up to **5× to 10× the service life** of HSS. They are mandatory when cutting heavy recycled paper, highly abrasive gloss-coated art paper, or books bound with tough PUR adhesives.\n\n## Anti-Glue Mirror Finish\n\nModern perfect-bound books use aggressive EVA or PUR adhesives. During the trim cycle, friction heats the glue, causing it to smear and stick to the blade face. Sureay trimmer blades are precision-lapped to a Ra ≤0.1 μm mirror finish, significantly reducing friction and adhesive adherence, ensuring a clean cut cycle after cycle.",
 
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
@@ -3088,6 +3089,12 @@ export const blades: Blade[] = [
           answer:
             "Because the side knives often shear slightly against the cutting stick or front knife path, alignment is critical. Install all three blades loosely first. Set and torque the front knife to establish the head datum, then alternate tightening the side knives. Since our 3-piece sets are ground to an identical thickness tolerance, they prevent the uneven clamping pressure that causes binding.",
         },
+        {
+          question:
+            "What does 'combi head' or 'spare knives for combi head' mean?",
+          answer:
+            "The combi head (or combination trim head) is the three-knife assembly on a perfect binder or three-knife trimmer that cuts a book's head, tail, and foredge in a single cycle. 'Spare knives for combi head' refers to the replacement front + side knife set for that assembly — exactly what we supply here.",
+        },
       ],
       company: [
         {
@@ -3095,6 +3102,12 @@ export const blades: Blade[] = [
             "Do your trimmer blades fit Kolbus, Wohlenberg, and Perfecta machines?",
           answer:
             "Yes. We maintain a comprehensive database of exact OEM blueprints for all major European and Japanese bookbinding lines, including Müller Martini, Kolbus, Wohlenberg, Perfecta, and Horizon. The mounting holes, slots, and threaded inserts will be a perfect drop-in fit.",
+        },
+        {
+          question:
+            "My Wohlenberg trimmer model isn't listed in the dimension table above — can you still supply blades?",
+          answer:
+            "Yes. The table above shows our most common stock sizes (Müller Martini and Kolbus). For Wohlenberg and other models not listed, send us your machine model number, a blueprint, or a worn blade sample — we'll confirm the exact length, width, thickness, and mounting pattern before quoting.",
         },
         {
           question:
