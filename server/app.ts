@@ -39,7 +39,7 @@ export function createApp({
     if (req.hostname === "www.sureay.com") {
       res.setHeader("Content-Type", "text/plain");
       res.send(
-        `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /admin/login\nDisallow: /api/\n\nSitemap: https://sureay.com/sitemap.xml`
+        `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /admin/\nDisallow: /admin/login\nDisallow: /api/\n\nSitemap: https://sureay.com/sitemap.xml\n\n# IndexNow verification key\n# https://sureay.com/19c713ca439f92d70ffe1c0913df46f2.txt`
       );
       return;
     }
@@ -183,7 +183,10 @@ export function createApp({
             "https://ad.doubleclick.net",
           ],
           objectSrc: ["'none'"],
-          frameSrc: ["https://www.youtube.com", "https://www.youtube-nocookie.com"],
+          frameSrc: [
+            "https://www.youtube.com",
+            "https://www.youtube-nocookie.com",
+          ],
         },
       },
       crossOriginEmbedderPolicy: false,
@@ -272,20 +275,30 @@ export function createApp({
           }
 
           if (filePath.endsWith(".html")) {
-            res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            res.setHeader(
+              "Cache-Control",
+              "no-cache, no-store, must-revalidate"
+            );
             res.setHeader("Pragma", "no-cache");
             res.setHeader("Expires", "0");
             return;
           }
 
           if (filePath.includes(`${path.sep}assets${path.sep}`)) {
-            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+            res.setHeader(
+              "Cache-Control",
+              "public, max-age=31536000, immutable"
+            );
             return;
           }
 
-          const immutableExt = /\.(?:js|css|webp|avif|png|jpe?g|gif|svg|ico|woff2?|ttf|otf)$/i;
+          const immutableExt =
+            /\.(?:js|css|webp|avif|png|jpe?g|gif|svg|ico|woff2?|ttf|otf)$/i;
           if (immutableExt.test(filePath)) {
-            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+            res.setHeader(
+              "Cache-Control",
+              "public, max-age=31536000, immutable"
+            );
           }
         },
       })
@@ -320,7 +333,19 @@ export function createApp({
       if (path.extname(req.path)) {
         return res.status(404).end();
       }
-      res.sendFile(path.join(staticPath, "index.html"));
+      // Unmatched extension-less path — not a real route. Serve the
+      // prerendered 404 page with a real 404 status (was previously
+      // silently serving the homepage with a 200, i.e. a soft-404).
+      res
+        .status(404)
+        .sendFile(path.join(staticPath, "404", "index.html"), err => {
+          if (err) {
+            // Prerendered 404 page missing (e.g. local dev without a full
+            // build) — fall back to the app shell so client-side routing
+            // can still render NotFound; status stays 404.
+            res.sendFile(path.join(staticPath, "index.html"));
+          }
+        });
     });
   }
 
