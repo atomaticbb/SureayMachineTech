@@ -11,6 +11,7 @@ import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
+import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
@@ -257,6 +258,12 @@ export default function PlasticIndustry() {
         <IndustryToolingMatrix
           products={PRODUCTS}
           filterCategories={FILTER_CATEGORIES}
+        />
+        <CategoryLinksRow
+          categories={[
+            { slug: "shredder-blades", name: "Shredder Blades" },
+            { slug: "granulator-blades", name: "Granulator Blades" },
+          ]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />
