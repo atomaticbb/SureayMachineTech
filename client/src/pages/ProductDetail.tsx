@@ -92,6 +92,7 @@ export default function ProductDetail() {
           mpn: blade.id,
           brand: "Sureay",
           material: blade.specs.find(s => s.label === "Material")?.value,
+          specs: blade.specs,
           ...(blade.offers && { offers: blade.offers }),
         }}
       />

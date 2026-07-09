@@ -8,14 +8,7 @@ import {
   Redirect,
   Router as WouterRouter,
 } from "wouter";
-import {
-  lazy,
-  Suspense,
-  use,
-  useEffect,
-  useState,
-  type ReactNode,
-} from "react";
+import { Suspense, use, useEffect, useState, type ReactNode } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
@@ -24,6 +17,7 @@ import GlobalMobileCTA from "@/components/common/GlobalMobileCTA";
 import { LangProvider, useLang } from "./contexts/LangContext";
 import { parseLangFromPath, DEFAULT_LANG } from "./lib/i18n";
 import { preloadLocale } from "@/data/locales";
+import { lazyWithRetry } from "./lib/lazyWithRetry";
 
 const importProductListPage = () => import("./pages/ProductListPage");
 const importProductDetail = () => import("./pages/ProductDetail");
@@ -42,38 +36,6 @@ if (isProductsEntryPath) {
   ) {
     void importProductDetail();
   }
-}
-
-function lazyWithRetry<T extends React.ComponentType<any>>(
-  importer: () => Promise<{ default: T }>,
-  key: string
-) {
-  return lazy(async () => {
-    try {
-      const mod = await importer();
-      if (typeof window !== "undefined") {
-        window.sessionStorage.removeItem(`lazy-retry:${key}`);
-      }
-      return mod;
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      const isChunkLoadError =
-        message.includes("Failed to fetch dynamically imported module") ||
-        message.includes("Importing a module script failed");
-
-      if (typeof window !== "undefined" && isChunkLoadError) {
-        const retryFlag = `lazy-retry:${key}`;
-        const hasRetried = window.sessionStorage.getItem(retryFlag) === "1";
-
-        if (!hasRetried) {
-          window.sessionStorage.setItem(retryFlag, "1");
-          window.location.reload();
-        }
-      }
-
-      throw error;
-    }
-  });
 }
 
 // ── Lazy page chunks ───────────────────────────────────────────────────────────

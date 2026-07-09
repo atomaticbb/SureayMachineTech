@@ -94,6 +94,28 @@ export default function BladeListPage() {
     selectedCategory === "all" ? true : b.category === selectedCategory
   );
 
+  // Hub structured data — built from the base (unfiltered) catalogue so the
+  // prerendered snapshot reflects a stable canonical list, not transient
+  // client-side filter UI state.
+  const collectionLd = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Industrial Blades & Cutting Tools",
+    url: "https://sureay.com/products",
+    description:
+      "Sureay's full catalogue of precision shredder blades, granulator knives and OEM cutting tools.",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: blades.length,
+      itemListElement: blades.map((b, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `https://sureay.com${b.link}`,
+        name: b.name,
+      })),
+    },
+  });
+
   const handleCatalogSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setCatalogState("loading");
@@ -167,6 +189,7 @@ export default function BladeListPage() {
           { name: "Home", url: "/" },
           { name: "Blades & Knives", url: "/products" },
         ]}
+        extraJsonLd={[collectionLd]}
       />
       <Navbar />
 

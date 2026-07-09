@@ -10,6 +10,7 @@ import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import {
   getDispatchAuthor,
+  getDispatchAuthorInfo,
   getDispatchById,
   getAdjacentDispatches,
 } from "@/data/news";
@@ -95,6 +96,7 @@ export default function NewsDetail() {
   const article = getDispatchById(id);
   const { prev, next } = getAdjacentDispatches(id);
   const author = getDispatchAuthor(id);
+  const authorInfo = getDispatchAuthorInfo(id);
 
   const relatedBlades = (article?.relatedProductIds ?? [])
     .map((pid) => getBladeById(pid, lang))
@@ -147,6 +149,36 @@ export default function NewsDetail() {
         description={article.metaDescription ?? article.excerpt}
         canonicalUrl={`/news/${article.id}`}
         keywords={article.keywords}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "News", url: "/news" },
+          { name: article.title, url: `/news/${article.id}` },
+        ]}
+        extraJsonLd={[
+          JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: article.title,
+            description: article.excerpt,
+            image: [`https://sureay.com${article.image}`],
+            datePublished: formatDisplayDate(article.date),
+            dateModified: formatDisplayDate(article.date),
+            author: {
+              "@type": "Person",
+              name: author,
+              jobTitle: authorInfo.title,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Sureay Machinery Technology Co., Ltd.",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://sureay.com/sureay.svg",
+              },
+            },
+            mainEntityOfPage: `https://sureay.com/news/${article.id}`,
+          }),
+        ]}
       />
       <Navbar />
 
@@ -210,7 +242,7 @@ export default function NewsDetail() {
                       {author}
                     </p>
                     <p className="font-mono text-[11px] font-semibold text-slate-500 tracking-widest mt-1">
-                      Sureay Technical Team
+                      {authorInfo.title} · Sureay
                     </p>
                   </div>
                 </div>

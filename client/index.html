@@ -16,13 +16,9 @@
       name="keywords"
       content="industrial blades, granulator knives, shredder blades, OEM blades, recycling blades, precision cutting blades, industrial knife manufacturer"
     />
-    <!-- Preload above-the-fold hero image (homepage LCP) -->
-    <link
-      rel="preload"
-      href="/images/hero/homehero.webp"
-      as="image"
-      type="image/webp"
-    />
+    <!-- Homepage hero preload is route-scoped via SEO.tsx's preloadImage
+         prop (Helmet), not here — this file is the shared shell for every
+         prerendered route, so a static tag here would preload on every page. -->
     <!-- Google Analytics 4 - Consent Mode v2 -->
     <script>
       window.dataLayer = window.dataLayer || [];

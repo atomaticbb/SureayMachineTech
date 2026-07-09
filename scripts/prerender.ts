@@ -62,6 +62,8 @@ const CANONICAL_ROUTES: string[] = [
   ...mixerParts.map(p => p.link),
   // dynamic news detail pages — derived from static article data
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
+  // static 404 page — served by the Express catch-all for unmatched routes
+  "/404",
 ];
 
 // Expand canonical English routes across all non-default languages.
@@ -75,7 +77,8 @@ const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 // News & mixer routes are English-only — exclude from multilingual expansion.
 const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
 const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
-const isEnglishOnlyRoute = (r: string) => isNewsRoute(r) || isMixerRoute(r);
+const isEnglishOnlyRoute = (r: string) =>
+  isNewsRoute(r) || isMixerRoute(r) || r === "/404";
 
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
@@ -261,6 +264,20 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // fully rendered before we capture the HTML (guards against SEO audits
     // that report "missing H1" when the snapshot was taken too early).
     await page.waitForSelector("h1", { timeout: TIMEOUT_MS });
+
+    // Homepage-only (all language variants: "/", "/es", "/fr", ...): the
+    // below-the-fold sections (news grid, FAQ, testimonials, etc.) are
+    // React.lazy-loaded and sit AFTER the h1 (which lives in the eager
+    // hero), so the h1 wait above resolves before they've rendered. Wait
+    // for the marker Home.tsx renders once that Suspense boundary has
+    // actually resolved, or the static snapshot silently ships without them.
+    const isHomeRoute =
+      route === "/" || LANG_PREFIXES.some(lang => route === `/${lang}`);
+    if (isHomeRoute) {
+      await page.waitForSelector('[data-lazy-ready="home"]', {
+        timeout: TIMEOUT_MS,
+      });
+    }
 
     const html = await page.evaluate(() => document.documentElement.outerHTML);
     persistHtml(route, html);

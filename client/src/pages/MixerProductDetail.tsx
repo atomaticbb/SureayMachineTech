@@ -139,6 +139,8 @@ export default function MixerProductDetail() {
           mpn: part.id,
           brand: "Sureay",
           material,
+          specs: part.specs,
+          offers: part.offers,
         }}
       />
 

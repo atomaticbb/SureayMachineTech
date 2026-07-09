@@ -52,6 +52,7 @@ export interface ProductData {
   mpn?: string;
   brand?: string; // defaults to "Sureay"
   material?: string; // e.g. "D2 / SKD11 / M2 HSS"
+  specs?: { label: string; value: string }[];
   offers?: {
     lowPrice: number;
     highPrice: number;
@@ -75,6 +76,9 @@ export interface SEOProps {
   /** Additional JSON-LD blocks to inject (e.g. ItemList on the homepage).
    *  Pass already-stringified JSON, one entry per script tag. */
   extraJsonLd?: string[];
+  /** Route-scoped LCP image preload (relative path, e.g. "/images/hero/homehero.webp").
+   *  Only set this on the one page where the image is actually the LCP candidate. */
+  preloadImage?: string;
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -101,6 +105,7 @@ export default function SEO({
   keywords,
   breadcrumbs,
   extraJsonLd,
+  preloadImage,
 }: SEOProps) {
   const lang = useLang();
   const fullTitle = normalizeTitle(title);
@@ -155,6 +160,14 @@ export default function SEO({
         ...(productData.sku && { sku: productData.sku }),
         ...(productData.mpn && { mpn: productData.mpn }),
         ...(productData.material && { material: productData.material }),
+        ...(productData.specs &&
+          productData.specs.length > 0 && {
+            additionalProperty: productData.specs.map(spec => ({
+              "@type": "PropertyValue",
+              name: spec.label,
+              value: spec.value,
+            })),
+          }),
         brand: {
           "@type": "Brand",
           name: productData.brand ?? "Sureay",
@@ -177,8 +190,8 @@ export default function SEO({
                 "@type": "ShippingDeliveryTime",
                 handlingTime: {
                   "@type": "QuantitativeValue",
-                  minValue: 15,
-                  maxValue: 25,
+                  minValue: 1,
+                  maxValue: 15,
                   unitCode: "DAY",
                 },
                 transitTime: {
@@ -234,6 +247,14 @@ export default function SEO({
       {keywords && <meta name="keywords" content={keywords} />}
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
+      {preloadImage && (
+        <link
+          rel="preload"
+          href={abs(preloadImage)}
+          as="image"
+          type="image/webp"
+        />
+      )}
 
       {/* hreflang alternates — one per supported language + x-default → English */}
       {hreflangs.map(({ lang: alt, href }) => (

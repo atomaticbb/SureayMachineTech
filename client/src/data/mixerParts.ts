@@ -95,6 +95,12 @@ export interface MixerPart {
   /** Trust-bar slot 3 (property / credibility) — per product. */
   trustProperty?: string;
 
+  // ── SEO — AggregateOffer price range (Google Rich Results) ──────────────
+  offers?: {
+    lowPrice: number;
+    highPrice: number;
+  };
+
   // ── Meta / utility ───────────────────────────────────────────────────────
   isFeatured?: boolean;
   relatedIds: string[];
@@ -119,7 +125,7 @@ export const mixerCategories: MixerCategory[] = [
     name: "Concrete Mixing Plant Parts",
     seoTitle: "Concrete Mixing Plant Parts: Arms, Liners & Blades",
     description:
-      "Cast wear parts for twin-shaft and planetary concrete mixers - mixing arms, liner plates, scrapers and bolt-on blades in Ni-Hard and high-chromium iron. Factory-direct replacements that drop into Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich plants.",
+      "Cast wear parts for concrete mixers — mixing arms, liner plates, scrapers & bolt-on blades in Ni-Hard & high-chrome iron. OEM fit Sicoma, Liebherr & MEKA.",
     image:
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
     link: "/mixer-wear-parts/concrete-mixing-plant",
@@ -130,7 +136,7 @@ export const mixerCategories: MixerCategory[] = [
     name: "Asphalt Mixing Plant Parts",
     seoTitle: "Asphalt Mixing Plant Parts: Arms, Liners & Blades",
     description:
-      "High-temperature wear parts for pugmill and twin-shaft asphalt mixers - mixing arms, liner plates, spiral blades and W-type scrapers built to hold their edge in hot bituminous mix. OEM-fit replacements for Ammann, Marini, Benninghoven, MEKA and Astec plants.",
+      "High-temperature wear parts for asphalt mixers — mixing arms, liner plates, spiral blades & scrapers. OEM fit Ammann, Marini & Benninghoven.",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
     link: "/mixer-wear-parts/asphalt-mixing-plant",
@@ -182,6 +188,7 @@ export const mixerParts: MixerPart[] = [
     trustProperty: "Impact-Resistant Cast Steel",
     isFeatured: true,
     compatibleMachines: CONCRETE_OEMS,
+    offers: { lowPrice: 180, highPrice: 950 },
     specs: [
       { label: "Material", value: "ZG310-570 cast steel" },
       {
@@ -310,6 +317,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Lost-Foam & DISA Cast",
     trustProperty: "HB 600+ Wear Hardness",
     compatibleMachines: CONCRETE_OEMS,
+    offers: { lowPrice: 35, highPrice: 180 },
     specs: [
       { label: "Material", value: "Ni-Hard / high-chromium cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -433,6 +441,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Lost-Foam Cast",
     trustProperty: "HB 600+ Wear Hardness",
     compatibleMachines: CONCRETE_OEMS,
+    offers: { lowPrice: 40, highPrice: 220 },
     specs: [
       { label: "Material", value: "High-chromium cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -558,6 +567,7 @@ export const mixerParts: MixerPart[] = [
     trustProperty: "HB 600+ Wear Hardness",
     isFeatured: true,
     compatibleMachines: CONCRETE_OEMS,
+    offers: { lowPrice: 45, highPrice: 260 },
     specs: [
       { label: "Material", value: "Ni-Hard cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -679,6 +689,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Precision-Molded",
     trustProperty: "Leak-Tight, Abrasion-Resistant Seal",
     compatibleMachines: CONCRETE_OEMS,
+    offers: { lowPrice: 20, highPrice: 95 },
     specs: [
       {
         label: "Material",
@@ -813,6 +824,7 @@ export const mixerParts: MixerPart[] = [
     trustProperty: "Heat-Resistant Alloy Steel",
     isFeatured: true,
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 200, highPrice: 1050 },
     specs: [
       { label: "Material", value: "Heat-resistant alloy steel casting" },
       {
@@ -939,6 +951,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Lost-Foam & DISA Cast",
     trustProperty: "HB 600+ Wear Hardness",
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 40, highPrice: 210 },
     specs: [
       { label: "Material", value: "High-chromium cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -1062,6 +1075,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Lost-Foam & DISA Cast",
     trustProperty: "HB 600+ Wear Hardness",
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 35, highPrice: 190 },
     specs: [
       { label: "Material", value: "High-chromium cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -1185,6 +1199,7 @@ export const mixerParts: MixerPart[] = [
     trustProperty: "HB 600+ Wear Hardness",
     isFeatured: true,
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 50, highPrice: 280 },
     specs: [
       { label: "Material", value: "High-chromium alloy cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -1302,6 +1317,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Lost-Foam Cast",
     trustProperty: "HB 600+ Wear Hardness",
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 45, highPrice: 240 },
     specs: [
       { label: "Material", value: "High-chromium cast iron" },
       { label: "Hardness", value: "HB 600-700" },
@@ -1423,6 +1439,7 @@ export const mixerParts: MixerPart[] = [
     trustProcess: "Precision-Molded",
     trustProperty: "Heat-Resistant, Leak-Tight Seal",
     compatibleMachines: ASPHALT_OEMS,
+    offers: { lowPrice: 25, highPrice: 110 },
     specs: [
       { label: "Material", value: "Heat-resistant sealing material" },
       {
