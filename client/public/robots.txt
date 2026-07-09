@@ -12,3 +12,6 @@ Disallow: /api/
 
 # Sitemap location
 Sitemap: https://sureay.com/sitemap.xml
+
+# IndexNow verification key
+# https://sureay.com/19c713ca439f92d70ffe1c0913df46f2.txt

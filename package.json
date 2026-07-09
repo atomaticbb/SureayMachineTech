@@ -25,6 +25,7 @@
     "translate-data": "tsx scripts/translate-data.ts",
     "translate-ui": "tsx scripts/translate-ui.ts",
     "translate-incremental": "tsx scripts/translate-incremental.ts",
+    "indexnow-ping": "tsx scripts/indexnow-ping.ts",
     "docker:build": "docker build -t shredder-blades-website .",
     "docker:run": "docker-compose up -d",
     "docker:stop": "docker-compose down",
