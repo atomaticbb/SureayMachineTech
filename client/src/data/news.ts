@@ -30,6 +30,22 @@ export interface DispatchArticle {
 
 export type DispatchAuthor = "Eric" | "lynn";
 
+interface DispatchAuthorInfo {
+  title: string;
+  bio: string;
+}
+
+const DISPATCH_AUTHOR_INFO: Record<DispatchAuthor, DispatchAuthorInfo> = {
+  Eric: {
+    title: "International Sales Manager",
+    bio: "Eric specializes in the cross-border B2B trade of industrial machine blades, offering practical expertise in material selection (such as D2 and Tungsten Carbide) and customized cutting solutions to help global clients maximize production efficiency.",
+  },
+  lynn: {
+    title: "International Sales Manager",
+    bio: "Dedicated to providing seamless supply chain services and technical support for overseas buyers, Lynn is well-versed in global market standards for slitting knives and paper guillotine blades, ensuring clients receive highly cost-effective and professional products.",
+  },
+};
+
 const DISPATCH_MONTHS: Record<string, number> = {
   JAN: 0,
   FEB: 1,
@@ -73,17 +89,15 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "wood-chipper-blade-wear-patterns",
     tag: "TECHNICAL GUIDE",
     date: "25.JUN.2026",
-    title:
-      "Wood Chipper Blade Wear Patterns: How to Diagnose and Fix Failures",
+    title: "Wood Chipper Blade Wear Patterns: How to Diagnose and Fix Failures",
     excerpt:
       "Wood chipper blades dulling, chipping, or burning? Learn to read the three wear patterns, fix the root cause, and pick the right knife steel (A8 vs D2) for your machine.",
-    image:
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
     readTime: "5 MIN",
     seoTitle:
       "Wood Chipper Blade Wear Patterns: Diagnose & Fix Blade Failures | Sureay",
     metaDescription:
-      "Wood chipper blades dulling, chipping, or burning? Learn to read the three wear patterns, fix the root cause, and pick the right knife steel (A8 vs D2) for your machine.",
+      "Wood chipper blades dulling, chipping or burning? Learn the three wear patterns, root causes & how to pick the right knife steel (A8 vs D2).",
     keywords:
       "wood chipper blade wear, chipper blade failure, chipper knife abrasion, chipper blade chipping, chipper blade heat marks, A8 chipper knife, D2 chipper blade",
     relatedProductIds: [
@@ -142,7 +156,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "**Bevel angle too sharp.** Most chipper knives run a single bevel around **30–40°** (**30–37°** on dense hardwood). Grind it sharper than spec and the edge loses the support behind it and chips. Match the OEM bevel; don't freehand it shallower chasing a \"sharper\" cut.",
+          '**Bevel angle too sharp.** Most chipper knives run a single bevel around **30–40°** (**30–37°** on dense hardwood). Grind it sharper than spec and the edge loses the support behind it and chips. Match the OEM bevel; don\'t freehand it shallower chasing a "sharper" cut.',
       },
       {
         type: "paragraph",
@@ -230,7 +244,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Circular Knife Types: Slitting, Perforating & Counter-Knife Guide | Sureay",
     metaDescription:
-      "A technical guide to industrial circular knife types — toothed and perforating knives, plain slitting discs, and counter/under-knives — covering shear vs crush cutting, bevel geometry, and tool steel vs tungsten carbide.",
+      "A technical guide to circular knife types — toothed, perforating & slitting discs. Shear vs crush cutting, bevel geometry, tool steel vs carbide.",
     keywords:
       "circular knife types, industrial circular knives, slitter knives, perforating knife, counter knife, under knife, tungsten carbide circular knife",
     relatedProductIds: [
@@ -270,7 +284,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "The second is **perforating**: cutting a line of holes or slits instead of a full cut. A perforating knife alternates cut segments with uncut \"ties,\" and the ratio between them — the cut-to-tie ratio, set by tooth pitch and land width — controls how easily the line tears. Tissue and toweling, packaging tear strips, ticket and stamp stock, and stitch-style perforations on print work all rely on this. Wider teeth with bigger gaps give a weaker, easier tear; fine teeth with short ties hold the sheet together until you want it to separate.",
+          'The second is **perforating**: cutting a line of holes or slits instead of a full cut. A perforating knife alternates cut segments with uncut "ties," and the ratio between them — the cut-to-tie ratio, set by tooth pitch and land width — controls how easily the line tears. Tissue and toweling, packaging tear strips, ticket and stamp stock, and stitch-style perforations on print work all rely on this. Wider teeth with bigger gaps give a weaker, easier tear; fine teeth with short ties hold the sheet together until you want it to separate.',
       },
       {
         type: "paragraph",
@@ -357,8 +371,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "export-shipment-poland-usa-vietnam",
     tag: "COMPANY NEWS",
     date: "18.JUN.2026",
-    title:
-      "Shipping Update – Three Export Orders Dispatched to Shanghai Port",
+    title: "Shipping Update – Three Export Orders Dispatched to Shanghai Port",
     excerpt:
       "Three export-standard wooden cases carrying shredder blades, scraper blades, and log saw blades have left the SUREAY facility bound for Poland, the United States, and Vietnam — delivering precision cutting solutions across three continents.",
     image: "/images/news/export-shipment-poland-usa-vietnam.webp",
@@ -366,7 +379,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "SUREAY Shipping Update: Three Export Orders Dispatched to Shanghai Port | Sureay",
     metaDescription:
-      "Three export-standard wooden cases with shredder blades, scraper blades, and log saw blades have departed SUREAY's facility bound for Poland, the USA, and Vietnam via Shanghai Port.",
+      "Three export-standard cases with shredder, scraper & log saw blades departed Sureay's facility bound for Poland, the USA & Vietnam via Shanghai Port.",
     keywords:
       "Sureay export, industrial blade shipment, shredder blades export, scraper blades, log saw blades, international shipping",
     content: [
@@ -408,7 +421,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "How to Choose the Right Paper Slitter Knife for Kraft, Tissue, and Board | Sureay",
     metaDescription:
-      "Practical paper slitter knife selection guide for tissue, kraft, board, coated paper, and release liner lines. Compare HSS, D2, and carbide choices with setup and maintenance tips.",
+      "Paper slitter knife selection guide for tissue, kraft, board, coated paper & release liner lines. Compare HSS, D2 & carbide with setup tips.",
     keywords:
       "paper slitter knife, paper slitter knives, paper converting blades, HSS paper slitter knives, carbide paper slitter blades, kraft paper slitting, tissue converting blades",
     relatedProductIds: [
@@ -493,7 +506,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "table",
         value: "",
-        tableHeaders: ["Knife Material", "Best Fit", "Strengths", "Watch Points"],
+        tableHeaders: [
+          "Knife Material",
+          "Best Fit",
+          "Strengths",
+          "Watch Points",
+        ],
         tableRows: [
           [
             "HSS",
@@ -594,7 +612,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Log Saw Blade Chipping: 5 Root Causes and Prevention Guide | Sureay",
     metaDescription:
-      "Learn the five most common causes of log saw blade chipping and how to prevent them with proper clearance setup, runout control, speed matching, material selection, and installation practice.",
+      "Five common causes of log saw blade chipping and how to prevent them — clearance setup, runout control, speed matching & material selection.",
     keywords:
       "log saw blade chipping, tissue log saw blade maintenance, blade clearance setting, cutter shaft runout, tissue converting blade troubleshooting",
     relatedProductIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
@@ -708,23 +726,23 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
           [
             "Continuous small notches",
             "Improper clearance or high runout",
-            "Feeler gauge + dial indicator"
+            "Feeler gauge + dial indicator",
           ],
           [
             "Localized large edge collapse",
             "Feed overload or foreign hard object",
-            "Check process parameters + incoming material"
+            "Check process parameters + incoming material",
           ],
           [
             "Blunt edge with light chipping",
             "Insufficient wear resistance",
-            "Review blade material against paper condition"
+            "Review blade material against paper condition",
           ],
           [
             "Chipping on first run after mounting",
             "Installation impact or uneven torque",
-            "Audit mounting method and tightening sequence"
-          ]
+            "Audit mounting method and tightening sequence",
+          ],
         ],
       },
       {
@@ -752,7 +770,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Complete Guide to Nonwoven Slitter Knives: Types, Materials & Applications | Sureay",
     metaDescription:
-      "Everything manufacturers need to know about nonwoven slitter knives — circular, straight, razor, and score-cut types, blade materials (HSS, carbide, ceramic), and industry applications.",
+      "Everything you need to know about nonwoven slitter knives — circular, straight, razor & score-cut types, blade materials & industry applications.",
     keywords:
       "nonwoven slitter knives, slitter knife types, circular slitter knife, nonwoven cutting blade, HSS slitter knife, tungsten carbide slitter blade, nonwoven fabric slitting",
     relatedProductIds: ["nonwoven-slitter-knives"],
@@ -852,10 +870,26 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         tableHeaders: ["Material", "Key Properties", "Best Suited For"],
         tableRows: [
-          ["High-Speed Steel (HSS)", "Tough, sharp, easy to resharpen", "General-purpose nonwoven slitting"],
-          ["Tungsten Carbide", "Superior hardness, long wear life", "Abrasive materials, fiberglass-reinforced nonwovens"],
-          ["Ceramic", "Chemically inert, corrosion-resistant", "Cleanroom, medical & hygiene manufacturing"],
-          ["TiN / Chromium Coated", "Reduced friction, anti-adhesion", "Sticky or adhesive-backed nonwovens"],
+          [
+            "High-Speed Steel (HSS)",
+            "Tough, sharp, easy to resharpen",
+            "General-purpose nonwoven slitting",
+          ],
+          [
+            "Tungsten Carbide",
+            "Superior hardness, long wear life",
+            "Abrasive materials, fiberglass-reinforced nonwovens",
+          ],
+          [
+            "Ceramic",
+            "Chemically inert, corrosion-resistant",
+            "Cleanroom, medical & hygiene manufacturing",
+          ],
+          [
+            "TiN / Chromium Coated",
+            "Reduced friction, anti-adhesion",
+            "Sticky or adhesive-backed nonwovens",
+          ],
         ],
       },
       {
@@ -960,12 +994,32 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "table",
         value: "",
-        tableHeaders: ["Feedstock / Application", "Target Bevel Angle", "Technical Rationale"],
+        tableHeaders: [
+          "Feedstock / Application",
+          "Target Bevel Angle",
+          "Technical Rationale",
+        ],
         tableRows: [
-          ["Green Softwood (Pine, Poplar)", "25° – 28°", "Low-density shearing; acute edge for clean fibre slicing."],
-          ["Mixed Species (Birch, Ash)", "28° – 32°", "Optimal balance of impact resistance and shearing efficiency."],
-          ["Dry Hardwood (Oak, Hickory)", "32° – 37°", "Dense, high-impact material; greater cross-section prevents edge rollover."],
-          ["Contaminated / Urban Waste", "35° – 42°", "Maximum toughness against tramp metal; survivability over sharpness."],
+          [
+            "Green Softwood (Pine, Poplar)",
+            "25° – 28°",
+            "Low-density shearing; acute edge for clean fibre slicing.",
+          ],
+          [
+            "Mixed Species (Birch, Ash)",
+            "28° – 32°",
+            "Optimal balance of impact resistance and shearing efficiency.",
+          ],
+          [
+            "Dry Hardwood (Oak, Hickory)",
+            "32° – 37°",
+            "Dense, high-impact material; greater cross-section prevents edge rollover.",
+          ],
+          [
+            "Contaminated / Urban Waste",
+            "35° – 42°",
+            "Maximum toughness against tramp metal; survivability over sharpness.",
+          ],
         ],
       },
       {
@@ -1043,12 +1097,32 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "table",
         value: "",
-        tableHeaders: ["Material Grade", "Expected Regrind Cycles", "Performance Notes"],
+        tableHeaders: [
+          "Material Grade",
+          "Expected Regrind Cycles",
+          "Performance Notes",
+        ],
         tableRows: [
-          ["T10 High-Carbon", "3 – 5 total", "Base level. Rapid wear on hardwoods; frequent regrinding required."],
-          ["9CrSi / Cr12MoV", "6 – 10 total", "Excellent mid-tier alloy. Higher chrome content resists abrasive wear."],
-          ["D2 (SKD11)", "8 – 12 total", "Premium tool steel. Exceptional edge retention and impact resistance."],
-          ["M2 HSS", "6 – 10 total", "Maximum hardness, but highly sensitive to thermal shock during grinding."],
+          [
+            "T10 High-Carbon",
+            "3 – 5 total",
+            "Base level. Rapid wear on hardwoods; frequent regrinding required.",
+          ],
+          [
+            "9CrSi / Cr12MoV",
+            "6 – 10 total",
+            "Excellent mid-tier alloy. Higher chrome content resists abrasive wear.",
+          ],
+          [
+            "D2 (SKD11)",
+            "8 – 12 total",
+            "Premium tool steel. Exceptional edge retention and impact resistance.",
+          ],
+          [
+            "M2 HSS",
+            "6 – 10 total",
+            "Maximum hardness, but highly sensitive to thermal shock during grinding.",
+          ],
         ],
       },
       {
@@ -1081,10 +1155,9 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Which blade material is best for your industry? No single material fits every application. This quick reference chart helps procurement teams and engineers pinpoint the right blade material — carbide, HSS, tool steel, or stainless — for their specific processing environment.",
     image: "/images/common/material-selection.webp",
     readTime: "5 MIN",
-    seoTitle:
-      "Blade Material Selection: Carbide vs HSS vs Tool Steel",
+    seoTitle: "Blade Material Selection: Carbide vs HSS vs Tool Steel",
     metaDescription:
-      "Quick reference chart: which industrial blade material suits your industry? Compare carbide, high-speed steel, tool steel, and stainless steel across paper, plastic, food, metal, and construction sectors.",
+      "Quick reference: which blade material suits your industry? Compare carbide, HSS, tool steel & stainless steel across paper, plastic, food & metal.",
     keywords:
       "blade material selection, carbide blade, HSS blade, tool steel, industrial cutting blade, blade material guide",
     relatedProductIds: [
@@ -1111,7 +1184,11 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "table",
         value: "",
-        tableHeaders: ["Industry / Application", "Recommended Material", "Why?"],
+        tableHeaders: [
+          "Industry / Application",
+          "Recommended Material",
+          "Why?",
+        ],
         tableRows: [
           [
             "Household paper processing (tissue log saw blade, paper cutting blade)",
@@ -1188,6 +1265,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "D2 vs SKD-11 vs tungsten carbide: a complete guide to choosing industrial blade materials",
     excerpt:
       "Compare D2, SKD-11, and tungsten carbide industrial blade materials. Learn about hardness, wear resistance, toughness, cost, and best applications for industrial cutting knives.",
+    metaDescription:
+      "Compare D2, SKD-11 & tungsten carbide blade materials — hardness, wear resistance, toughness, cost & best applications for cutting knives.",
     image: "/images/news/choosing-industrial-blades-materials.webp",
     readTime: "8 MIN",
     isFeatured: true,
@@ -1331,13 +1410,12 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Precision manufacturing delivered: high-performance metal shear blades ready for global export",
     excerpt:
       "Sureay recently completed a large batch of custom metal shear blades (900x75x25mm), combining precision grinding, strict quality control, and export-grade VCI packaging for global scrap metal processing facilities.",
-    image:
-      "/images/products/granulator-blades/metal-shear-blades-09.webp",
+    image: "/images/products/granulator-blades/metal-shear-blades-09.webp",
     readTime: "5 MIN",
     seoTitle:
       "Precision Manufacturing Delivered: Custom Metal Shear Blades Batch Ready for Export | Sureay",
     metaDescription:
-      "Sureay recently completed a large batch of custom metal shear blades (900x75x25mm). Discover our precision grinding, strict quality control, and export-grade VCI packaging for global scrap metal processing facilities.",
+      "Sureay completed a large batch of custom metal shear blades (900x75x25mm) — precision grinding, strict QC & export-grade VCI packaging.",
     keywords:
       "metal shear blades, guillotine shear knives, scrap metal blades, D2 tool steel blades, Sureay industrial knives",
     relatedProductIds: ["metal-shear-knives"],
@@ -1354,8 +1432,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value:
-          "/images/products/granulator-blades/metal-shear-blades-09.webp",
+        value: "/images/products/granulator-blades/metal-shear-blades-09.webp",
       },
       { type: "h2", value: "Uncompromising Dimensional Accuracy" },
       {
@@ -1370,8 +1447,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value:
-          "/images/products/granulator-blades/metal-shear-blades-06.webp",
+        value: "/images/products/granulator-blades/metal-shear-blades-06.webp",
       },
       { type: "h2", value: "Premium Tool Steel & Heat Treatment" },
       {
@@ -1386,8 +1462,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value:
-          "/images/products/granulator-blades/metal-shear-blades-07.webp",
+        value: "/images/products/granulator-blades/metal-shear-blades-07.webp",
       },
       { type: "h2", value: "Export-Grade Packaging for Global Reliability" },
       {
@@ -1402,8 +1477,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value:
-          "/images/products/granulator-blades/metal-shear-blades-08.webp",
+        value: "/images/products/granulator-blades/metal-shear-blades-08.webp",
       },
       { type: "h2", value: "Upgrade Your Shearing Operations with Sureay" },
       {
@@ -1427,6 +1501,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "The recycling boom: how advanced shredder metallurgy maximizes mechanical recycling yields",
     excerpt:
       "Discover how upgrading your shredder blades from standard D2 to DC53 or H13 tool steel can prevent catastrophic blade failure, survive tramp metal impacts, and maximize your recycling plant's uptime.",
+    metaDescription:
+      "Upgrading shredder blades from D2 to DC53 or H13 tool steel prevents catastrophic failure, survives tramp metal impacts & maximizes plant uptime.",
     image: "/images/news/shredder-machine-working.webp",
     readTime: "7 MIN",
     relatedProductIds: [
@@ -1541,6 +1617,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title: "Global facility expansion phase III",
     excerpt:
       "Commissioning of our new 5,000 m² high-precision CNC grid expands heavy-duty shredder blade production capacity by 40%, establishing Sureay's largest single-facility output in its 16-year operational history.",
+    metaDescription:
+      "Sureay's new 5,000 m² high-precision CNC facility expands shredder blade production capacity by 40% — the largest single-facility output in 16 years.",
     image: "/images/about/factory-00.webp",
     readTime: "5 MIN",
     relatedProductIds: [
@@ -1621,6 +1699,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     title: "Why choose high-hardness metal shear knives?",
     excerpt:
       "Enhance precision and longevity in heavy-duty fabrication. High-hardness shear blades deliver exceptional durability, accuracy, and operational efficiency in industrial metal cutting applications.",
+    metaDescription:
+      "High-hardness shear blades deliver exceptional durability, accuracy & operational efficiency for heavy-duty industrial metal cutting.",
     image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
     readTime: "7 MIN",
     relatedProductIds: [
@@ -1968,6 +2048,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Daily maintenance checklist: scraper blades & filter plates for continuous melt filters",
     excerpt:
       "A step-by-step daily, weekly, and monthly maintenance guide for continuous melt filter scraper blades and filter plates — with a printable inspection checklist to extend service life and eliminate unplanned downtime on PCR recycling lines.",
+    metaDescription:
+      "Daily, weekly & monthly maintenance guide for melt filter scraper blades & filter plates — printable checklist to extend life & cut downtime.",
     image: "/images/products/blades/scraper-blades-01.webp",
     readTime: "6 MIN",
     relatedProductIds: ["continuous-melt-filter-scraper-blades"],
@@ -2050,7 +2132,10 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value:
           "Measure the remaining blade edge height or thickness against the OEM minimum dimension specification. Replace immediately if at or below the wear limit. An undersized blade applies reduced contact force against the filter plate, dramatically degrading scraping efficiency and allowing contaminant cake to accumulate.",
       },
-      { type: "h3", value: "3. Calibrate Cylinder Pressure and Spring Preload" },
+      {
+        type: "h3",
+        value: "3. Calibrate Cylinder Pressure and Spring Preload",
+      },
       {
         type: "paragraph",
         value:
@@ -2132,6 +2217,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Alloy blade vs high-speed steel: lifespan & cost guide for high-speed paper cutters",
     excerpt:
       "Tungsten carbide alloy blades last 5–0× longer than high-speed steel on paper cutters — but is the higher upfront cost justified? A practical comparison of hardness, service life, and total cost of ownership to help you choose the right blade for your operation.",
+    metaDescription:
+      "Tungsten carbide blades outlast HSS on paper cutters — but is the cost justified? Compare hardness, service life & total cost of ownership.",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     readTime: "5 MIN",
     relatedProductIds: ["paper-cutting-blades"],
@@ -2255,10 +2342,9 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "A high-quality mechanical blade requires multiple precision processes from raw steel to finished product. Sureay breaks down the entire standard manufacturing process step by step — helping you understand exactly how our quality is built, and how to evaluate the true capability of any blade supplier.",
     image: "/images/news/laser-cutting.webp",
     readTime: "6 MIN",
-    seoTitle:
-      "Industrial Blade Manufacturing Process Guide",
+    seoTitle: "Industrial Blade Manufacturing Process Guide",
     metaDescription:
-      "Learn the complete manufacturing process of industrial mechanical blades — raw material inspection, heat treatment, precision grinding, and quality control — explained by Sureay blade engineers.",
+      "The complete manufacturing process of industrial blades — raw material inspection, heat treatment, precision grinding & QC — by Sureay engineers.",
     keywords:
       "blade manufacturing process, industrial blade production, heat treatment blades, precision grinding, HSS blade, Cr12MoV, blade quality control",
     relatedProductIds: [
@@ -2357,10 +2443,9 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Most coil slitting line breakdowns are preventable. This guide covers daily operator checks, slitter knife and shear blade care, alignment, lubrication, and building a preventive maintenance schedule to maximize uptime.",
     image: "/images/news/coil-slitting-line.webp",
     readTime: "7 MIN",
-    seoTitle:
-      "Complete Guide to Coil Slitting Line Maintenance",
+    seoTitle: "Complete Guide to Coil Slitting Line Maintenance",
     metaDescription:
-      "Learn how to prevent coil slitting line downtime with daily operator checks, slitter knife maintenance, guillotine shear blade care, and a structured preventive maintenance schedule.",
+      "Prevent coil slitting line downtime with daily operator checks, slitter knife maintenance, shear blade care & a preventive maintenance schedule.",
     keywords:
       "coil slitting line maintenance, slitter knife maintenance, guillotine shear blade care, circular slitter knives, preventive maintenance, industrial blade maintenance",
     relatedProductIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
@@ -2397,7 +2482,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value: "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
+        value:
+          "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
       },
 
       { type: "h2", value: "Shear Blade Care" },
@@ -2452,7 +2538,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Metal Slitting Lines: 3 Installation Tips for 30% Longer Rotary Shear Blade Life | Sureay",
     metaDescription:
-      "Learn how to set axial clearance, verify cutter shaft parallelism, and apply the correct bolt torque on metal slitting lines — three installation steps that extend rotary shear blade life by 30%.",
+      "Set axial clearance, verify cutter shaft parallelism & apply correct bolt torque on metal slitting lines — 3 steps that extend blade life 30%.",
     keywords:
       "metal slitting lines, rotary shear blades, slitting blade installation, axial clearance slitting, cutter shaft parallelism, blade life extension, coil slitting installation",
     relatedProductIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
@@ -2539,11 +2625,27 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         tableHeaders: ["Check Item", "Specification", "Method"],
         tableRows: [
-          ["Axial clearance", "8–12% of material thickness", "Feeler gauge or dial indicator"],
+          [
+            "Axial clearance",
+            "8–12% of material thickness",
+            "Feeler gauge or dial indicator",
+          ],
           ["Cutter shaft runout", "< 0.02 mm", "Dial indicator"],
-          ["Cutter shaft parallelism", "< 0.05 mm (full length)", "Dial indicator + straight edge"],
-          ["Bolt torque (M12 / M16 / M20)", "70–90 / 150–180 / 250–300 N·m", "Torque wrench"],
-          ["Blade & shaft surface", "No oil stains, no burrs", "Non-woven fabric + alcohol"],
+          [
+            "Cutter shaft parallelism",
+            "< 0.05 mm (full length)",
+            "Dial indicator + straight edge",
+          ],
+          [
+            "Bolt torque (M12 / M16 / M20)",
+            "70–90 / 150–180 / 250–300 N·m",
+            "Torque wrench",
+          ],
+          [
+            "Blade & shaft surface",
+            "No oil stains, no burrs",
+            "Non-woven fabric + alcohol",
+          ],
         ],
       },
       {
@@ -2759,10 +2861,20 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
           "Wear Pattern",
         ],
         tableRows: [
-          ["Wide spacing / large clearance", "High", "Unstable", "Local impact wear"],
+          [
+            "Wide spacing / large clearance",
+            "High",
+            "Unstable",
+            "Local impact wear",
+          ],
           ["Dense straight stack", "Medium", "Moderate", "Possible side wear"],
           ["Staggered arrangement", "Lower", "Stable", "More even wear"],
-          ["Helical arrangement", "Lower in suitable conditions", "Very stable", "Predictable wear distribution"],
+          [
+            "Helical arrangement",
+            "Lower in suitable conditions",
+            "Very stable",
+            "Predictable wear distribution",
+          ],
         ],
       },
       {
@@ -2784,12 +2896,27 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         tableHeaders: ["Check Item", "What It Reveals"],
         tableRows: [
-          ["Blade spacing", "Whether the material is being bitten cleanly or over-compressed"],
-          ["Tooth timing", "Whether the cutting load arrives as impact peaks or smooth sequence"],
-          ["Edge wear pattern", "Whether the load is distributed evenly across the stack"],
+          [
+            "Blade spacing",
+            "Whether the material is being bitten cleanly or over-compressed",
+          ],
+          [
+            "Tooth timing",
+            "Whether the cutting load arrives as impact peaks or smooth sequence",
+          ],
+          [
+            "Edge wear pattern",
+            "Whether the load is distributed evenly across the stack",
+          ],
           ["Side wear", "Whether friction is consuming unnecessary energy"],
-          ["Current curve and reverse cycles", "Whether blockage or torque spikes are being triggered by the shaft layout"],
-          ["Output size variation", "Whether cutting remains consistent across the chamber width"],
+          [
+            "Current curve and reverse cycles",
+            "Whether blockage or torque spikes are being triggered by the shaft layout",
+          ],
+          [
+            "Output size variation",
+            "Whether cutting remains consistent across the chamber width",
+          ],
         ],
       },
       {
@@ -2810,11 +2937,31 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         tableHeaders: ["Material", "Main Challenge", "Arrangement Priority"],
         tableRows: [
-          ["Plastic film", "Low density, wrapping, poor bite", "Controlled tooth engagement and anti-wrapping layout"],
-          ["PET bottles", "Hollow shape and bouncing feed", "Staggered or helical engagement for stable pulling"],
-          ["Rigid plastic", "Higher cutting force", "Balanced spacing with strong hook geometry"],
-          ["Light metal scrap", "Impact load and edge chipping", "Controlled clearance with tougher blade material"],
-          ["Battery recycling", "Mixed hard layers and safety-sensitive processing", "Application-specific shaft layout and high-toughness tooling"],
+          [
+            "Plastic film",
+            "Low density, wrapping, poor bite",
+            "Controlled tooth engagement and anti-wrapping layout",
+          ],
+          [
+            "PET bottles",
+            "Hollow shape and bouncing feed",
+            "Staggered or helical engagement for stable pulling",
+          ],
+          [
+            "Rigid plastic",
+            "Higher cutting force",
+            "Balanced spacing with strong hook geometry",
+          ],
+          [
+            "Light metal scrap",
+            "Impact load and edge chipping",
+            "Controlled clearance with tougher blade material",
+          ],
+          [
+            "Battery recycling",
+            "Mixed hard layers and safety-sensitive processing",
+            "Application-specific shaft layout and high-toughness tooling",
+          ],
         ],
       },
       {
@@ -2856,7 +3003,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Paper Guillotine Knives: Selection, Bevel Angle and Maintenance Guide",
     metaDescription:
-      "Technical guide to paper guillotine knife selection for print finishing and paper converting. Compare metallurgy, bevel angles, cut defects, and maintenance scheduling.",
+      "Technical guide to paper guillotine knife selection for print finishing & paper converting. Compare metallurgy, bevel angles & cut defects.",
     keywords:
       "paper guillotine knives, paper cutter blades, guillotine paper cutting knife, HSS paper cutting blade, carbide tipped paper knife, paper cutting blade maintenance, Polar replacement knife, Wohlenberg cutter blade, Perfecta guillotine blade",
     relatedProductIds: [
@@ -2957,12 +3104,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
           "Carbide Tipped (TCT)",
         ],
         tableRows: [
-          [
-            "Abrasive Wear Resistance",
-            "Low",
-            "Moderate–High",
-            "Maximum",
-          ],
+          ["Abrasive Wear Resistance", "Low", "Moderate–High", "Maximum"],
           [
             "Shock / Impact Toughness",
             "High",
@@ -2990,7 +3132,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value: "/images/news/paper-guillotine-knives-hss-carbide-inspection.webp",
+        value:
+          "/images/news/paper-guillotine-knives-hss-carbide-inspection.webp",
       },
       {
         type: "h2",
@@ -3109,8 +3252,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "In corrugated box production, slitter scorer blades set the tone for every downstream step. Learn how to select the right blade material and geometry, maintain tooling, and cut dust, cracked scores, and downtime in your box plant.",
     image: "/images/news/corrugated-slitter-knives.webp",
     readTime: "8 MIN",
-    seoTitle:
-      "Corrugated Slitter Scorer Blades for Clean Board Edges | Sureay",
+    seoTitle: "Corrugated Slitter Scorer Blades for Clean Board Edges | Sureay",
     metaDescription:
       "Learn how to select and maintain corrugated slitter scorer blades to cut dust, cracked scores, ragged edges, downtime, and waste in box plants.",
     keywords:
@@ -3336,7 +3478,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     seoTitle:
       "Inside Sureay's Blade Factory: CNC Machining, Grinding & EDM Equipment | Sureay",
     metaDescription:
-      "Photo tour of Sureay's industrial blade manufacturing equipment: NIDEK VMC machining centers, ULMAKE CNC cylindrical grinders, DK7745 wire EDM machines, MESUN band saws, and in-house heat treatment furnaces.",
+      "Photo tour of Sureay's blade manufacturing equipment — NIDEK VMC machining centers, ULMAKE CNC grinders, wire EDM machines & heat treatment furnaces.",
     keywords:
       "industrial blade manufacturer, CNC blade machining, ULMAKE cylindrical grinder, wire EDM blade cutting, NIDEK VMC machining center, blade heat treatment, OEM industrial blades, Sureay factory equipment",
     relatedProductIds: [
@@ -3465,12 +3607,36 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         tableHeaders: ["Capability", "Equipment", "What It Delivers"],
         tableRows: [
-          ["CNC turning", "CNC lathes", "Consistent OD/bore geometry on circular blades"],
-          ["CNC milling", "NIDEK VMC-L + CNC machining center", "Complex profiles, tooth forms, bolt patterns"],
-          ["CNC grinding", "ULMAKE 3MK2020 + cylindrical grinders", "±0.001 mm tolerance, Ra ≤ 0.02 µm finish"],
-          ["Wire EDM", "DK7745 (multiple machines)", "±0.003 mm on hardened steel, keyways, claws"],
-          ["Material cutting", "MESUN MS-400 band saw", "Accurate blanks from bar stock and plate"],
-          ["Heat treatment", "Box resistance + vacuum furnaces + cryogenic", "Calibrated hardness, stress-relieved, 100% HRC tested"],
+          [
+            "CNC turning",
+            "CNC lathes",
+            "Consistent OD/bore geometry on circular blades",
+          ],
+          [
+            "CNC milling",
+            "NIDEK VMC-L + CNC machining center",
+            "Complex profiles, tooth forms, bolt patterns",
+          ],
+          [
+            "CNC grinding",
+            "ULMAKE 3MK2020 + cylindrical grinders",
+            "±0.001 mm tolerance, Ra ≤ 0.02 µm finish",
+          ],
+          [
+            "Wire EDM",
+            "DK7745 (multiple machines)",
+            "±0.003 mm on hardened steel, keyways, claws",
+          ],
+          [
+            "Material cutting",
+            "MESUN MS-400 band saw",
+            "Accurate blanks from bar stock and plate",
+          ],
+          [
+            "Heat treatment",
+            "Box resistance + vacuum furnaces + cryogenic",
+            "Calibrated hardness, stress-relieved, 100% HRC tested",
+          ],
         ],
       },
       {
@@ -3516,6 +3682,10 @@ const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
 
 export function getDispatchAuthor(id: string): DispatchAuthor {
   return DISPATCH_AUTHOR_BY_ID[id] ?? "Eric";
+}
+
+export function getDispatchAuthorInfo(id: string): DispatchAuthorInfo {
+  return DISPATCH_AUTHOR_INFO[getDispatchAuthor(id)];
 }
 
 /** All non-featured dispatches, for the archive grid. */

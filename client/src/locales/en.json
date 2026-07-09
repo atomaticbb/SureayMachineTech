@@ -127,7 +127,7 @@
   "industry.oemPipeline.step4.desc": "Final dimensions, hardness, and edge condition are verified against specification before dispatch. The order is packed and shipped with the required inspection records, and material certification documents.",
 
   "industry.plastic.seo.title": "Plastic Recycling Blades | Shredder & Granulator",
-  "industry.plastic.seo.description": "Precision shredder blades, strand pelletizer rotors and melt filter scraper blades for plastics recycling and compounding lines. PM-HSS & carbide grades for GF/CF compounds. OEM-compatible with EREMA, Maag, Coperion, Cumberland and LINDNER.",
+  "industry.plastic.seo.description": "Shredder blades, pelletizer rotors & melt filter scraper blades for plastics recycling & compounding. PM-HSS & carbide grades. OEM fit EREMA, Maag & Coperion.",
   "industry.plastic.seo.keywords": "plastic recycling blades, strand pelletizer rotors, granulator knives, shredder blades, melt filter scraper blades, PM-HSS compounding blades, GF40 pelletizer rotor, Coperion replacement rotor",
   "industry.plastic.hero.breadcrumb": "Home / Industries / Plastics Recycling",
   "industry.plastic.hero.h1": "Plastic Recycling & Compounding Blade Supplier",
@@ -163,7 +163,7 @@
   "industry.plastic.materials.m3.abrasion": "VARIABLE",
 
   "industry.converting.seo.title": "Converting Slitter Knives | Film, Nonwoven & PSA Tape",
-  "industry.converting.seo.description": "Precision slitter knives for BOPP film, SMS nonwoven, PSA tape, and adhesive-laminate converting. ±0.002mm tolerance. Compatible with Tidland, Atlas, Kampf, and Mario Cotta lines.",
+  "industry.converting.seo.description": "Precision slitter knives for BOPP film, SMS nonwoven & PSA tape converting. ±0.002mm tolerance. Compatible with Tidland, Atlas & Kampf lines.",
   "industry.converting.seo.keywords": "slitter knives converting, film slitter knives, nonwoven slitter blades, BOPP film slitting, PSA tape slitter, flexible packaging knives",
   "industry.converting.hero.breadcrumb": "Home / Industries / Flexible Converting & Packaging",
   "industry.converting.hero.h1": "Flexible Converting & Packaging Slitter Knife Supplier",
@@ -199,7 +199,7 @@
   "industry.converting.materials.m3.abrasion": "LOW",
 
   "industry.metal.seo.title": "Metal Processing Tooling & Coil Slitting Equipment",
-  "industry.metal.seo.description": "Through-hardened circular slitter knives, guillotine shear blades and precision punch dies engineered for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA, BYSTRONIC.",
+  "industry.metal.seo.description": "Circular slitter knives, guillotine shear blades & punch dies for zero-burr metal coil processing. OEM-compatible with TRUMPF, AMADA & BYSTRONIC.",
   "industry.metal.seo.keywords": "metal slitting knives, guillotine shear blades, coil processing, steel cutting, metal fabrication blades",
   "industry.metal.hero.breadcrumb": "Home / Industries / Metal Processing",
   "industry.metal.hero.h1": "Industrial Metal Slitting & Shear Blade Manufacturer",
@@ -235,7 +235,7 @@
   "industry.metal.materials.m3.abrasion": "MODERATE",
 
   "industry.paper.seo.title": "Paper & Tissue Converting Knives & Equipment",
-  "industry.paper.seo.description": "Triple-ground tissue log saw blades, rewinder perforation knives and slitting tooling for high-speed paper and tissue converting lines. OEM-compatible with Fabio Perini, Körber, Fosber.",
+  "industry.paper.seo.description": "Tissue log saw blades, rewinder perforation knives & slitting tooling for high-speed paper & tissue converting. OEM fit Fabio Perini, Körber & Fosber.",
   "industry.paper.seo.keywords": "tissue log saw blades, paper cutting knives, guillotine blades, paper converting, printing industry blades",
   "industry.paper.hero.breadcrumb": "Home / Industries / Paper and Tissue",
   "industry.paper.hero.h1": "Paper and Tissue Knife Manufacturer — HSS & TC Grades",
@@ -271,7 +271,7 @@
   "industry.paper.materials.m3.abrasion": "HIGH",
 
   "industry.newEnergy.seo.title": "Lithium Battery Slitting Knives | New Energy",
-  "industry.newEnergy.seo.description": "Tungsten carbide circular slitting knives for lithium-ion battery electrode foil. Ra ≤ 0.05μm zero-notch mirror finish. Compatible with Kaido, Koem, Hirano, and CKD battery winding machines. IATF 16949 documentation.",
+  "industry.newEnergy.seo.description": "Tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra≤0.05μm mirror finish. Compatible with Kaido, Koem & Hirano winding machines.",
   "industry.newEnergy.seo.keywords": "lithium battery slitting knives, electrode foil cutter, tungsten carbide slitter, battery slitting blade, EV battery manufacturing",
   "industry.newEnergy.hero.breadcrumb": "Home / Industries / New Energy & Battery",
   "industry.newEnergy.hero.h1": "Lithium Battery & New Energy Precision Slitting Knife Supplier",
@@ -307,7 +307,7 @@
   "industry.newEnergy.materials.m3.abrasion": "EXTREME",
 
   "industry.wood.seo.title": "Wood Chipper Blades & Chipper Knives | Forestry Grade | Sureay",
-  "industry.wood.seo.description": "Through-hardened D2, Cr12MoV & TCT wood chipper knives for drum and disc chippers. OEM-compatible with Bandit, Vermeer, Morbark, Doppstadt & Jenz. Reversible double-edge and industrial single-edge configurations.",
+  "industry.wood.seo.description": "Through-hardened D2, Cr12MoV & TCT wood chipper knives for drum & disc chippers. OEM fit Bandit, Vermeer, Morbark & Doppstadt. Reversible double-edge options.",
   "industry.wood.seo.keywords": "wood chipper blades, chipper knives, drum chipper blades, disc chipper knives, biomass chipper blades, Bandit chipper blades, Vermeer chipper knives, Morbark replacement blades, forestry chipper blades, TCT chipper knives",
   "industry.wood.hero.breadcrumb": "Home / Industries / Wood & Forestry",
   "industry.wood.hero.h1": "Wood Chipper Knife Manufacturer — Forestry, Biomass & Landscape Grade",
@@ -414,7 +414,7 @@
   "home.stats.disclaimer": "* Based on current internal production and export records",
 
   "about.seo.title": "15+ Years of Industrial Blade Engineering",
-  "about.seo.description": "ISO 9001:2015 certified OEM blade manufacturer since 2008. 15,000 m² facility, 5-axis CNC grinding, vacuum heat treatment, CMM inspection. Serving 50+ countries.",
+  "about.seo.description": "ISO 9001:2015 certified OEM blade manufacturer since 2008. 15,000 m² facility, 5-axis CNC grinding, vacuum heat treatment. Serving 50+ countries.",
   "about.hero.eyebrow": "About Sureay Machinery",
   "about.hero.headline": "Engineering Blade Excellence",
   "about.hero.body": "Sureay specializes in high-performance industrial blades and precision machine knives, engineered for demanding production environments since 2008. ISO 9001:2015 certified. 15,000 m² facility in Ma'anshan, China.",
