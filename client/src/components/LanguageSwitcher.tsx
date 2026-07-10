@@ -56,10 +56,15 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
       ? stripLangPrefix(window.location.pathname)
       : "/";
 
-  // News pages are English-only — language switcher links must not add a
-  // prefix; they point to the English canonical URL for news routes.
+  // English-only sections — language switcher links must not add a prefix;
+  // they point to the English canonical URL instead. Mirrors the
+  // isEnglishOnly grouping in SEO.tsx (news, mixer wear parts, legal pages).
   const isNewsPath =
     canonicalPath === "/news" || canonicalPath.startsWith("/news/");
+  const isMixerPath = canonicalPath.startsWith("/mixer-wear-parts");
+  const isLegalPath =
+    canonicalPath === "/privacy-policy" || canonicalPath === "/terms";
+  const isEnglishOnlyPath = isNewsPath || isMixerPath || isLegalPath;
 
   // Close on outside click.
   useEffect(() => {
@@ -83,7 +88,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
       >
         {SUPPORTED_LANGS.map((lang) => {
           const isCurrent = lang === currentLang;
-          const href = isNewsPath
+          const href = isEnglishOnlyPath
             ? canonicalPath
             : localizedPath(canonicalPath, lang);
           const { label, Flag } = LANG_META[lang];
@@ -151,7 +156,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
           >
             {SUPPORTED_LANGS.map((lang) => {
               const isCurrent = lang === currentLang;
-              const href = isNewsPath
+              const href = isEnglishOnlyPath
                 ? canonicalPath
                 : localizedPath(canonicalPath, lang);
               const { label, Flag } = LANG_META[lang];

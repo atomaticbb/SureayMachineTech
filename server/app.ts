@@ -61,6 +61,20 @@ export function createApp({
     res.redirect(301, `/news${rest}${qs}`);
   });
 
+  // Mixer Wear Parts is English-only — redirect /{lang}/mixer-wear-parts* → /mixer-wear-parts*
+  app.get(/^\/(es|fr|ru|vi|ar)\/mixer-wear-parts(\/.*)?$/, (req, res) => {
+    const rest = req.params[1] || "";
+    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
+    res.redirect(301, `/mixer-wear-parts${rest}${qs}`);
+  });
+
+  // Privacy Policy / Terms are English-only — redirect /{lang}/privacy-policy
+  // and /{lang}/terms → their unprefixed English canonical.
+  app.get(/^\/(es|fr|ru|vi|ar)\/(privacy-policy|terms)\/?$/, (req, res) => {
+    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
+    res.redirect(301, `/${req.params[1]}${qs}`);
+  });
+
   // Canonical redirects for deprecated / duplicate SEO paths.
   app.use((req, res, next) => {
     // Language-aware: /[lang]/categories/custom-profile → /[lang]/custom

@@ -111,11 +111,13 @@ export default function SEO({
   const fullTitle = normalizeTitle(title);
 
   // English-only sections — no language prefix or multilingual hreflang.
-  // News and (this batch) Mixer Wear Parts exist only in English.
+  // News, Mixer Wear Parts, Privacy Policy, and Terms exist only in English.
   const isNewsPath =
     canonicalUrl === "/news" || (canonicalUrl?.startsWith("/news/") ?? false);
   const isMixerPath = canonicalUrl?.startsWith("/mixer-wear-parts") ?? false;
-  const isEnglishOnly = isNewsPath || isMixerPath;
+  const isLegalPath =
+    canonicalUrl === "/privacy-policy" || canonicalUrl === "/terms";
+  const isEnglishOnly = isNewsPath || isMixerPath || isLegalPath;
 
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and

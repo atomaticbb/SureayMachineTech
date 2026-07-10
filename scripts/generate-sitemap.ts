@@ -107,6 +107,11 @@ const corePages: UrlEntry[] = [
   { path: "/products", lastmod: TODAY, changefreq: "weekly", priority: "0.9" },
   { path: "/about", lastmod: TODAY, changefreq: "yearly", priority: "0.6" },
   { path: "/contact", lastmod: TODAY, changefreq: "yearly", priority: "0.7" },
+];
+
+// Privacy Policy / Terms — English-only (no multilingual variants), same as
+// news and mixer wear parts.
+const legalPages: UrlEntry[] = [
   {
     path: "/privacy-policy",
     lastmod: TODAY,
@@ -257,6 +262,9 @@ const sections = [
   "  <!-- Mixer Wear Parts (English only — no multilingual variants) -->",
   ...mixerPages.map(singleUrlEntry),
   "",
+  "  <!-- Legal Pages (English only — no multilingual variants) -->",
+  ...legalPages.map(singleUrlEntry),
+  "",
   "  <!-- News (English only — no multilingual variants) -->",
   singleUrlEntry(newsListPage),
   ...newsArticles.map(singleUrlEntry),
@@ -281,9 +289,10 @@ const multiLangCount =
   productPages.length;
 const newsCount = 1 + newsArticles.length;
 const mixerCount = mixerPages.length;
+const legalCount = legalPages.length;
 const totalUrlCount =
-  multiLangCount * SUPPORTED_LANGS.length + newsCount + mixerCount;
+  multiLangCount * SUPPORTED_LANGS.length + newsCount + mixerCount + legalCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer, both EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer + ${legalCount} legal, all EN-only)`
 );

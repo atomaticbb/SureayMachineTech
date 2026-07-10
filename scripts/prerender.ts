@@ -74,11 +74,13 @@ const PRERENDER_LANGS_RAW = (
 ).toLowerCase();
 const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 
-// News & mixer routes are English-only — exclude from multilingual expansion.
+// News, mixer, and legal routes are English-only — exclude from multilingual
+// expansion.
 const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
 const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
+const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
 const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) || isMixerRoute(r) || r === "/404";
+  isNewsRoute(r) || isMixerRoute(r) || isLegalRoute(r) || r === "/404";
 
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
