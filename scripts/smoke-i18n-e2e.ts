@@ -47,10 +47,11 @@ const LANG_TRANSLATED_TOKENS: Record<Lang, string[]> = {
   es: ["Productos", "Inicio", "Industria", "Cuchillas"],
   fr: ["Produits", "Accueil", "Lames", "Industrie"],
   ru: ["Продукция", "Главная"],
-  vi: ["Sản phẩm", "Trang chủ"],
-  // ar: tokens checked only after ar translation lands; empty for now so
-  // stub-fallback pages pass without false negatives.
-  ar: [],
+  // Navbar-rendered tokens ("Industrial Blades" / "Mixer Wear Parts") — present
+  // on every page via the sitewide nav, unlike the old "Sản phẩm"/"Trang chủ"
+  // picks which only ever appeared in breadcrumbs on product/category pages.
+  vi: ["Lưỡi Dao Công Nghiệp", "Phụ Tùng Hao Mòn"],
+  ar: ["الشفرات الصناعية", "قطع تآكل الخلاطات"],
 };
 
 interface Failure {
