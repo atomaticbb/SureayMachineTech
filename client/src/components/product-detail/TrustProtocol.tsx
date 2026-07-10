@@ -3,14 +3,17 @@
  * Static, no props. Four bullet points in navy bar.
  */
 
-const TRUST_ITEMS = [
-  "ISO 9001:2015 Certified",
-  "In-House Heat Treatment",
-  "Strict Dimensional Tolerances",
-  "Global Door-to-Door Delivery",
+import { useTranslation } from "@/lib/useTranslation";
+
+const TRUST_ITEM_KEYS = [
+  "productDetail.trustProtocol.item1",
+  "productDetail.trustProtocol.item2",
+  "productDetail.trustProtocol.item3",
+  "productDetail.trustProtocol.item4",
 ];
 
 export default function TrustProtocol() {
+  const { t } = useTranslation();
   return (
     <section
       aria-label="Trust credentials"
@@ -18,12 +21,12 @@ export default function TrustProtocol() {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex flex-wrap items-center justify-center lg:justify-between gap-x-8 gap-y-3">
-          {TRUST_ITEMS.map((item, i) => (
+          {TRUST_ITEM_KEYS.map((key, i) => (
             <p
               key={i}
               className="font-mono text-[11px] text-slate-700  tracking-widest"
             >
-              ■ {item}
+              ■ {t(key)}
             </p>
           ))}
         </div>

@@ -6,6 +6,7 @@
  */
 
 import { gtagEvent } from "@/lib/gtag";
+import { useTranslation } from "@/lib/useTranslation";
 
 const WA_PHONE = "8618005550657";
 
@@ -33,6 +34,7 @@ function WhatsAppIcon() {
 export default function MobileContactBar({
   whatsappPrefillText,
 }: MobileContactBarProps) {
+  const { t } = useTranslation();
   const whatsappUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(whatsappPrefillText).replace(/'/g, "%27")}`;
 
   return (
@@ -49,7 +51,7 @@ export default function MobileContactBar({
                 page_path: window.location.pathname,
               })
             }
-            aria-label="Chat on WhatsApp"
+            aria-label={t("globalCta.whatsappAriaLabel")}
             className="flex items-center justify-center px-4 py-3.5 bg-[#25D366] text-white rounded-none shrink-0"
           >
             <WhatsAppIcon />
@@ -59,7 +61,7 @@ export default function MobileContactBar({
             onClick={scrollToContact}
             className="flex-1 text-center px-6 py-3.5 bg-[#001F4D] text-white font-black text-sm tracking-widest rounded-none"
           >
-            Get a Quote
+            {t("home.hero.ctaPrimary")}
           </a>
         </div>
       </div>

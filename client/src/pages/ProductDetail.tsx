@@ -20,6 +20,7 @@ import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 import { getBladeById, getRelatedBlades, getSEO } from "@/data/locales";
 
 // Zone sub-components
@@ -38,6 +39,7 @@ import ProductFAQ from "@/components/product-detail/ProductFAQ";
 
 export default function ProductDetail() {
   const lang = useLang();
+  const { t } = useTranslation();
   const [, params] = useRoute("/products/:id");
   const bladeId = params?.id || "";
   const blade = getBladeById(bladeId, lang);
@@ -47,18 +49,20 @@ export default function ProductDetail() {
     return (
       <>
         <SEO
-          title="404 — Blade Not Found"
-          description="The requested product page does not exist."
+          title={t("productDetail.notFound.title")}
+          description={t("productDetail.notFound.description")}
           noIndex
         />
         <Navbar />
         <div className="min-h-screen flex items-center justify-center bg-slate-50">
           <div className="text-center px-6">
             <h1 className="text-6xl font-black text-[#001f4d] mb-4">404</h1>
-            <p className="text-xl text-slate-600 mb-8">Blade not found</p>
+            <p className="text-xl text-slate-600 mb-8">
+              {t("productDetail.notFound.message")}
+            </p>
             <Link href="/products">
               <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black  tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
-                Back to Blades
+                {t("productDetail.notFound.backToBlades")}
               </a>
             </Link>
           </div>
@@ -79,8 +83,8 @@ export default function ProductDetail() {
         canonicalUrl={`/products/${blade.id}`}
         keywords={pageSeo.keywords}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Products", url: "/products" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.products"), url: "/products" },
           { name: blade.name, url: `/products/${blade.id}` },
         ]}
         productData={{
@@ -104,8 +108,8 @@ export default function ProductDetail() {
         <Breadcrumbs
           variant="light"
           items={[
-            { label: "Home", href: "/" },
-            { label: "Products", href: "/products" },
+            { label: t("nav.home"), href: "/" },
+            { label: t("nav.products"), href: "/products" },
             { label: blade.name },
           ]}
         />

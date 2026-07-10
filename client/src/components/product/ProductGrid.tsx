@@ -7,6 +7,7 @@
 
 import { type Blade } from "@/data/blades";
 import ProductCard from "./ProductCard";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface ProductGridProps {
   blades: Blade[];
@@ -21,6 +22,7 @@ export default function ProductGrid({
   onShowAll,
   showSectorBadge = false,
 }: ProductGridProps) {
+  const { t } = useTranslation();
   if (blades.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-24 text-center">
@@ -38,14 +40,14 @@ export default function ProductGrid({
           />
         </svg>
         <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">
-          No blades found for this category.
+          {t("productGrid.noResults")}
         </p>
         {onShowAll && (
           <button
             onClick={onShowAll}
             className="mt-4 text-[#003366] dark:text-blue-400 font-semibold hover:underline text-sm"
           >
-            Show all blades
+            {t("productGrid.showAll")}
           </button>
         )}
       </div>

@@ -8,6 +8,7 @@ import { useState } from "react";
 import { ArrowRight, Download, Loader2 } from "lucide-react";
 import type { Blade } from "@/data/blades";
 import { getCatalogUrl } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface BladeHeroProps {
   blade: Blade;
@@ -21,6 +22,7 @@ const DOT_GRID_STYLE = {
 type CatalogState = "idle" | "form" | "loading" | "done";
 
 export default function BladeHero({ blade }: BladeHeroProps) {
+  const { t } = useTranslation();
   const catalogUrl = getCatalogUrl(blade);
   const [catalogState, setCatalogState] = useState<CatalogState>("idle");
   const [email, setEmail] = useState("");
@@ -51,7 +53,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
       document.body.removeChild(a);
     } catch {
       setCatalogState("form");
-      setFormError("Something went wrong. Please try again.");
+      setFormError(t("productDetail.hero.catalogError"));
     }
   };
 
@@ -139,7 +141,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             }}
             className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm  tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
           >
-            <span>Request Engineering Quote</span>
+            <span>{t("cta.requestEngineeringQuote")}</span>
             <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
 
@@ -153,7 +155,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                   onClick={() => setCatalogState("form")}
                   className="w-full bg-white hover:bg-slate-50 text-[#001f4d] font-bold text-sm  tracking-widest transition-colors duration-200 flex items-center justify-between px-6 py-3"
                 >
-                  <span>Download Catalog (PDF)</span>
+                  <span>{t("productDetail.hero.downloadCatalog")}</span>
                   <Download className="w-4 h-4 shrink-0" />
                 </button>
               )}
@@ -162,7 +164,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               {(catalogState === "form" || catalogState === "loading") && (
                 <form onSubmit={handleCatalogSubmit} className="p-4 space-y-3">
                   <p className="font-mono text-[10px] text-slate-400  tracking-widest">
-                    Enter your work email to download
+                    {t("productDetail.hero.emailPrompt")}
                   </p>
                   <input
                     type="email"
@@ -170,7 +172,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                     autoFocus
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    placeholder="you@company.com"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     className="w-full border border-slate-300 px-4 py-2.5 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
                   />
                   {formError && (
@@ -185,10 +187,10 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                       {catalogState === "loading" ? (
                         <>
                           <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                          <span>Sending…</span>
+                          <span>{t("common.sending")}</span>
                         </>
                       ) : (
-                        "Send & Download"
+                        t("productDetail.hero.sendAndDownload")
                       )}
                     </button>
                     <button
@@ -199,7 +201,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                       }}
                       className="px-4 py-2.5 border border-slate-300 text-slate-500 text-xs font-mono  tracking-widest hover:border-slate-400 transition-colors"
                     >
-                      Cancel
+                      {t("common.cancel")}
                     </button>
                   </div>
                 </form>
@@ -210,7 +212,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                 <div className="px-6 py-3 flex items-center gap-3">
                   <span className="text-green-600 font-black text-sm">✓</span>
                   <span className="font-mono text-[11px] text-slate-600  tracking-widest">
-                    Download started — check your downloads folder
+                    {t("productDetail.hero.downloadStarted")}
                   </span>
                 </div>
               )}

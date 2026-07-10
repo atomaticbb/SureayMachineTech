@@ -5,6 +5,7 @@
 
 import { Link } from "wouter";
 import type { Blade } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface CompatibleToolingProps {
   blades: Blade[];
@@ -13,6 +14,7 @@ interface CompatibleToolingProps {
 }
 
 export default function CompatibleTooling({ blades, title, subtitle }: CompatibleToolingProps) {
+  const { t } = useTranslation();
   const display = blades.slice(0, 4);
   if (display.length === 0) return null;
 
@@ -23,15 +25,15 @@ export default function CompatibleTooling({ blades, title, subtitle }: Compatibl
     >
       {/* Header row */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        {subtitle ?? "[ System Inventory ]"}
+        {subtitle ?? `[ ${t("productDetail.compatibleTooling.eyebrow")} ]`}
       </p>
       <div className="flex items-end justify-between gap-4 mb-6">
         <h2 className="font-black text-3xl text-[#001f4d]  tracking-tight">
-          {title ?? "Related Blade Categories"}
+          {title ?? t("productDetail.compatibleTooling.headline")}
         </h2>
         <Link href="/products">
           <span className="font-mono text-[10px] text-slate-700  tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
-            View All →
+            {t("productDetail.compatibleTooling.viewAll")} →
           </span>
         </Link>
       </div>

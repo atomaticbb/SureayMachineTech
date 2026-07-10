@@ -201,11 +201,7 @@ export default function PaperIndustry() {
           filterCategories={FILTER_CATEGORIES}
         />
         <CategoryLinksRow
-          categories={[
-            { slug: "slitter-knives", name: "Slitter Knives" },
-            { slug: "log-saw-blades", name: "Log Saw Blades" },
-            { slug: "shear-blades", name: "Shear Blades" },
-          ]}
+          slugs={["slitter-knives", "log-saw-blades", "shear-blades"]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />

@@ -98,6 +98,7 @@ function CloseIcon({ className }: { className?: string }) {
 
 function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   const lang = useLang();
+  const { t } = useTranslation();
 
   const groups = useMemo(() => {
     const categories = getCategories(lang);
@@ -162,7 +163,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                       onClick={onClose}
                       className="text-[14px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer whitespace-nowrap"
                     >
-                      Upload CAD
+                      {t("cta.uploadCad")}
                     </div>
                   </Link>
                 ) : (
@@ -176,7 +177,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                           ·{" "}
                           {/* menu-only short label; product page keeps full name */}
                           {blade.id === "wood-chipper-blades-industrial"
-                            ? "Industrial Chipper Blades"
+                            ? t("navbar.industrialChipperBlades")
                             : blade.name}
                         </div>
                       </Link>
@@ -187,7 +188,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                           onClick={onClose}
                           className="mt-1.5 inline-flex items-center gap-1 text-[13px] font-bold text-[#003366] hover:text-[#001f4d] hover:gap-1.5 transition-all cursor-pointer"
                         >
-                          View all
+                          {t("navbar.viewAll")}
                           <ChevronRight
                             className="w-3.5 h-3.5"
                             strokeWidth={2.5}
@@ -209,7 +210,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-[#003366] hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
             >
-              View All Products
+              {t("cta.viewAllProducts")}
               <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
             </span>
           </Link>
@@ -221,6 +222,7 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
 // ── Mixer Wear Parts mega menu (Industry-style: plant-type nav + grid + image) ──
 function MixerMenu({ onClose }: { onClose: () => void }) {
+  const { t } = useTranslation();
   const [activeIdx, setActiveIdx] = useState(0);
   const active = mixerCategories[activeIdx];
   const parts = getMixerPartsByCategory(active.category);
@@ -266,7 +268,7 @@ function MixerMenu({ onClose }: { onClose: () => void }) {
               onClick={onClose}
               className="mt-5 pl-3 inline-flex items-center gap-1 font-mono text-[11px] font-bold tracking-[0.15em] text-[#003366] hover:text-[#001f4d] transition-colors cursor-pointer uppercase"
             >
-              View All Mixer Parts
+              {t("navbar.viewAllMixerParts")}
               <ChevronRight className="w-3 h-3" strokeWidth={2.5} />
             </div>
           </Link>
@@ -319,7 +321,7 @@ function MixerMenu({ onClose }: { onClose: () => void }) {
                   {active.name}
                 </p>
                 <p className="mt-1 inline-flex items-center gap-1 font-mono text-[10px] text-white/80 tracking-[0.18em]">
-                  Browse {parts.length} parts
+                  {t("navbar.browse")} {parts.length} {t("navbar.parts")}
                   <ChevronRight className="w-3 h-3" strokeWidth={2} />
                 </p>
               </div>
@@ -514,7 +516,7 @@ export default function Navbar() {
                     navigate("/products");
                   }}
                 >
-                  Industrial Blades
+                  {t("nav.industrialBlades")}
                   <ChevronDown
                     className={`w-3 h-3 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
@@ -533,7 +535,7 @@ export default function Navbar() {
                     navigate("/mixer-wear-parts");
                   }}
                 >
-                  Mixer Wear Parts
+                  {t("nav.mixerWearParts")}
                   <ChevronDown
                     className={`w-3 h-3 transition-transform duration-200 ${mixerOpen ? "rotate-180" : ""}`}
                     strokeWidth={2.5}
@@ -563,7 +565,7 @@ export default function Navbar() {
             <button
               className="md:hidden text-slate-700 hover:text-[#003366] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               onClick={() => setMobileOpen(v => !v)}
-              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-label={mobileOpen ? t("navbar.closeMenu") : t("navbar.openMenu")}
             >
               <HamburgerIcon />
             </button>
@@ -631,7 +633,7 @@ export default function Navbar() {
               <button
                 className="text-white/80 hover:text-white transition-colors p-1"
                 onClick={() => setMobileOpen(false)}
-                aria-label="Close menu"
+                aria-label={t("navbar.closeMenu")}
               >
                 <CloseIcon />
               </button>
@@ -657,7 +659,7 @@ export default function Navbar() {
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    Industrial Blades
+                    {t("nav.industrialBlades")}
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
@@ -694,7 +696,7 @@ export default function Navbar() {
 
                         <Link href="/products">
                           <div className="mt-3 ml-4 font-mono text-[10px] font-bold tracking-[0.22em]  text-white/40 hover:text-white cursor-pointer">
-                            → All Products
+                            → {t("cta.viewAllProducts")}
                           </div>
                         </Link>
                       </div>
@@ -716,7 +718,7 @@ export default function Navbar() {
                         : "text-white group-hover:text-white/70"
                     }`}
                   >
-                    Mixer Wear Parts
+                    {t("nav.mixerWearParts")}
                   </span>
                   <ChevronDown
                     className={`w-6 h-6 text-white/60 transition-transform duration-300 flex-shrink-0 ${
@@ -745,7 +747,7 @@ export default function Navbar() {
                         ))}
                         <Link href="/mixer-wear-parts">
                           <div className="mt-3 ml-4 font-mono text-[10px] font-bold tracking-[0.22em]  text-white/40 hover:text-white cursor-pointer">
-                            → View All
+                            → {t("navbar.viewAllMixerParts")}
                           </div>
                         </Link>
                       </div>

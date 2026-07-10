@@ -172,10 +172,7 @@ export default function ConvertingIndustry() {
           filterCategories={FILTER_CATEGORIES}
         />
         <CategoryLinksRow
-          categories={[
-            { slug: "slitter-knives", name: "Slitter Knives" },
-            { slug: "log-saw-blades", name: "Log Saw Blades" },
-          ]}
+          slugs={["slitter-knives", "log-saw-blades"]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />

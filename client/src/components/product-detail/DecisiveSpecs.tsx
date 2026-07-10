@@ -7,6 +7,7 @@
 
 import type { CSSProperties } from "react";
 import type { Blade } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface DecisiveSpecsProps {
   blade: Blade;
@@ -25,6 +26,7 @@ export default function DecisiveSpecs({
   blade,
   specImage,
 }: DecisiveSpecsProps) {
+  const { t } = useTranslation();
   const specs = blade.specs ?? [];
   if (specs.length === 0) return null;
 
@@ -37,10 +39,10 @@ export default function DecisiveSpecs({
     >
       {/* Section header — outside the flex row */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ Engineering Reference ]
+        [ {t("productDetail.decisiveSpecs.eyebrow")} ]
       </p>
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
-        Decisive Specifications
+        {t("productDetail.decisiveSpecs.headline")}
       </h2>
 
       {/* Flex row: items-start — each column its own height, no cross-stretch */}
@@ -90,7 +92,7 @@ export default function DecisiveSpecs({
 
       {/* Footnote — outside the flex row */}
       <p className="font-mono text-[11px] text-slate-500  tracking-widest mt-4">
-        ■ All values verified via CMM inspection · ISO 9001:2015
+        ■ {t("productDetail.decisiveSpecs.footnote")}
       </p>
     </section>
   );

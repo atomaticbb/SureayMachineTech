@@ -6,11 +6,13 @@
 
 import { useLocation } from "wouter";
 import { gtagEvent } from "@/lib/gtag";
+import { useTranslation } from "@/lib/useTranslation";
 
 const WA_URL =
   "https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20your%20industrial%20blades.%20Please%20send%20me%20more%20information.";
 
 export default function GlobalMobileCTA() {
+  const { t } = useTranslation();
   const [location, navigate] = useLocation();
 
   // Hide on admin screens
@@ -48,7 +50,7 @@ export default function GlobalMobileCTA() {
                 link_location: "global_mobile_cta",
               })
             }
-            aria-label="Chat on WhatsApp"
+            aria-label={t("globalCta.whatsappAriaLabel")}
             className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white font-black text-sm tracking-widest rounded-none hover:bg-[#1ebe5d] transition-colors duration-200 shrink-0"
           >
             <svg
@@ -68,7 +70,7 @@ export default function GlobalMobileCTA() {
             onClick={handleQuote}
             className="flex-1 text-center px-6 py-3.5 bg-[#001f4d] text-white font-black text-sm tracking-widest rounded-none hover:bg-[#001f4d]/90 transition-colors duration-200"
           >
-            Request Quote
+            {t("cta.requestQuote")}
           </button>
         </div>
       </div>

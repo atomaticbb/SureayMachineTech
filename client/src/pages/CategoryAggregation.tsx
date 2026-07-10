@@ -17,6 +17,7 @@ import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
 import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 import {
   getCategoryBySlug,
   getBladesByCategory,
@@ -45,6 +46,7 @@ const HERO_IMAGE_OVERRIDES: Record<string, string> = {
 
 export default function CategoryAggregation() {
   const lang = useLang();
+  const { t } = useTranslation();
   const [, params] = useRoute("/categories/:slug");
   const slug = params?.slug ?? "";
 
@@ -76,8 +78,8 @@ export default function CategoryAggregation() {
         description={meta.description}
         canonicalUrl={`/categories/${meta.slug}`}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Products", url: "/products" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.products"), url: "/products" },
           { name: meta.shortName, url: `/categories/${meta.slug}` },
         ]}
       />
@@ -132,7 +134,7 @@ export default function CategoryAggregation() {
               onClick={scrollToContact}
               className="inline-flex items-center gap-2 bg-white text-[#001f4d] border-2 border-white hover:bg-[#001f4d] hover:text-white px-7 py-3.5 mt-7 font-black text-sm tracking-widest transition-all duration-300 rounded-none"
             >
-              Get a Quote
+              {t("home.hero.ctaPrimary")}
             </a>
           </div>
         </div>
@@ -140,8 +142,8 @@ export default function CategoryAggregation() {
 
       <Breadcrumbs
         items={[
-          { label: "Home", href: "/" },
-          { label: "Products", href: "/products" },
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.products"), href: "/products" },
           { label: meta.shortName },
         ]}
       />
@@ -155,7 +157,7 @@ export default function CategoryAggregation() {
           <div className="border-b border-slate-200 pb-2 mb-3">
             <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
               <h2 className="text-[36px] font-black text-[#001f4d] tracking-tight">
-                {meta.shortName} Configurations
+                {meta.shortName} {t("categoryPage.configurations")}
               </h2>
             </div>
             <p className="text-[14px] text-slate-500 leading-snug mt-1 max-w-[70ch]">
@@ -182,7 +184,7 @@ export default function CategoryAggregation() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10">
           <aside className="lg:col-span-4 lg:sticky lg:top-24 self-start">
             <p className="font-mono text-[10px] tracking-[0.28em] mb-5 uppercase text-slate-600 font-bold">
-              Technical Overview
+              {t("categoryPage.technicalOverview")}
             </p>
             <h2 className="text-[36px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-6">
               {meta.title}
@@ -204,7 +206,7 @@ export default function CategoryAggregation() {
             {meta.specItems && meta.specItems.length > 0 ? (
               <>
                 <p className="font-mono text-[10px] tracking-[0.28em] mb-5 uppercase text-slate-600 font-bold">
-                  Key Specifications
+                  {t("categoryPage.keySpecifications")}
                 </p>
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-px mb-10 bg-slate-300 border border-slate-300">
                   {meta.specItems.map(item => (
@@ -238,7 +240,7 @@ export default function CategoryAggregation() {
             {rep?.components && rep.components.length > 0 && (
               <div className="mt-10">
                 <p className="font-mono text-[10px] tracking-[0.28em] mb-5 uppercase text-slate-600 font-bold">
-                  Engineering Detail
+                  {t("categoryPage.engineeringDetail")}
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-300 border border-slate-300">
                   {rep.components.slice(0, 3).map(c => (
@@ -270,22 +272,20 @@ export default function CategoryAggregation() {
           <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
             <aside className="lg:col-span-4">
               <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-                OEM Compatibility
+                {t("categoryPage.oemCompatibility")}
               </p>
               <h2 className="text-[36px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
-                Drop-in fit, no retooling
+                {t("categoryPage.dropInFit")}
               </h2>
               <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
-                Every {meta.shortName.toLowerCase()} variant ships with bore,
-                bolt-circle and tolerance specs matched to the original tool.
-                Send your machine model or a sample blade for verification.
+                {meta.shortName} {t("categoryPage.oemCompatibilityBody")}
               </p>
               <a
                 href="#contact"
                 onClick={scrollToContact}
                 className="inline-flex items-center gap-2 self-start border-2 border-[#001f4d] bg-[#001f4d] hover:bg-white text-white hover:text-[#001f4d] font-black text-[12px] tracking-[0.18em] px-6 py-3.5 mt-6 transition-colors duration-200"
               >
-                Check Compatibility with Us
+                {t("categoryPage.checkCompatibility")}
               </a>
             </aside>
 
@@ -303,10 +303,7 @@ export default function CategoryAggregation() {
                 ))}
               </ul>
               <p className="text-[11px] text-slate-400 leading-relaxed mt-4 max-w-2xl">
-                All brand names and trademarks are the property of their
-                respective owners and are used for machine compatibility
-                reference only. Sureay is not affiliated with or endorsed by
-                these manufacturers.
+                {t("categoryPage.trademarkDisclaimer")}
               </p>
             </div>
           </div>

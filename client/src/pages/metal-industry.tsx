@@ -201,11 +201,11 @@ export default function MetalIndustry() {
           filterCategories={FILTER_CATEGORIES}
         />
         <CategoryLinksRow
-          categories={[
-            { slug: "slitter-knives", name: "Slitter Knives" },
-            { slug: "shredder-blades", name: "Shredder Blades" },
-            { slug: "shear-blades", name: "Shear Blades" },
-            { slug: "cold-saw-blades", name: "Cold Saw Blades" },
+          slugs={[
+            "slitter-knives",
+            "shredder-blades",
+            "shear-blades",
+            "cold-saw-blades",
           ]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />

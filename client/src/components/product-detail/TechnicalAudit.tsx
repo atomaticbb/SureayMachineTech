@@ -4,6 +4,7 @@
  */
 
 import type { Blade } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface TechnicalAuditProps {
   blade: Blade;
@@ -16,6 +17,7 @@ function splitFirstSentence(text: string): [string, string] {
 }
 
 export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
+  const { t } = useTranslation();
   if (!blade.components || blade.components.length === 0) return null;
 
   return (
@@ -25,10 +27,10 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
     >
       {/* Section header */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ Technical Audit ]
+        [ {t("productDetail.technicalAudit.eyebrow")} ]
       </p>
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8">
-        Engineering Advantages
+        {t("productDetail.technicalAudit.headline")}
       </h2>
 
       {/* 3-column card grid */}

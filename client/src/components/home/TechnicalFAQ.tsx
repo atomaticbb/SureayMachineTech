@@ -4,7 +4,7 @@
  */
 
 import FaqItem from "@/components/ui/FaqItem";
-import { FAQ_ITEMS } from "@/data/homeData";
+import { FAQ_ITEM_IDS } from "@/data/homeData";
 import { useTranslation } from "@/lib/useTranslation";
 
 export default function TechnicalFAQ() {
@@ -54,8 +54,13 @@ export default function TechnicalFAQ() {
             </div>
 
             <div className="flex-1">
-              {FAQ_ITEMS.map((item, i) => (
-                <FaqItem key={item.q} q={item.q} a={item.a} index={i + 1} />
+              {FAQ_ITEM_IDS.map((id, i) => (
+                <FaqItem
+                  key={id}
+                  q={t(`home.faq.items.q${id}`)}
+                  a={t(`home.faq.items.a${id}`)}
+                  index={i + 1}
+                />
               ))}
             </div>
           </div>

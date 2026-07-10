@@ -4,11 +4,26 @@ import { gtagEvent } from "@/lib/gtag";
 import { mixerCategories } from "@/data/mixerParts";
 
 const PRODUCT_LINKS = [
-  { label: "Tissue Log Saw Blades", href: "/products/tissue-log-saw-blades" },
-  { label: "Paper Cutting Blades", href: "/products/paper-cutting-blades" },
-  { label: "Metal Shear Knives", href: "/products/metal-shear-knives" },
-  { label: "Rotary Slitter Knives", href: "/products/rotary-slitter-knives" },
-  { label: "Shredder Blades", href: "/products/twin-shaft-blades-recycling" },
+  {
+    labelKey: "footer.productLinks.tissueLogSaw",
+    href: "/products/tissue-log-saw-blades",
+  },
+  {
+    labelKey: "footer.productLinks.paperCutting",
+    href: "/products/paper-cutting-blades",
+  },
+  {
+    labelKey: "footer.productLinks.metalShear",
+    href: "/products/metal-shear-knives",
+  },
+  {
+    labelKey: "footer.productLinks.rotarySlitter",
+    href: "/products/rotary-slitter-knives",
+  },
+  {
+    labelKey: "footer.productLinks.shredder",
+    href: "/products/twin-shaft-blades-recycling",
+  },
 ];
 
 const HEAD =
@@ -93,7 +108,7 @@ export default function Footer() {
               {PRODUCT_LINKS.map(l => (
                 <li key={l.href}>
                   <Link href={l.href} className={LINK}>
-                    {l.label}
+                    {t(l.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -107,7 +122,7 @@ export default function Footer() {
 
           {/* Wear Parts */}
           <div className="lg:col-span-2">
-            <h4 className={HEAD}>Wear Parts</h4>
+            <h4 className={HEAD}>{t("footer.wearParts")}</h4>
             <ul className="space-y-3">
               {mixerCategories.map(c => (
                 <li key={c.id}>
@@ -118,7 +133,7 @@ export default function Footer() {
               ))}
               <li>
                 <Link href="/mixer-wear-parts" className={MORE}>
-                  View All Wear Parts
+                  {t("footer.viewAllWearParts")}
                 </Link>
               </li>
             </ul>
@@ -202,13 +217,13 @@ export default function Footer() {
               href="/privacy-policy"
               className="hover:text-slate-400 transition-colors"
             >
-              Privacy Policy
+              {t("footer.privacyPolicy")}
             </Link>
             <Link
               href="/terms"
               className="hover:text-slate-400 transition-colors"
             >
-              Terms
+              {t("footer.terms")}
             </Link>
           </div>
         </div>

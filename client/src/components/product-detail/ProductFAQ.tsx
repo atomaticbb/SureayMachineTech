@@ -11,6 +11,7 @@
  */
 
 import { useEffect } from "react";
+import { useTranslation } from "@/lib/useTranslation";
 
 // ── Types (also exported so blades.ts can reference them) ─────────────────────
 
@@ -35,6 +36,7 @@ interface Props {
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function ProductFAQ({ faqs, productName }: Props) {
+  const { t } = useTranslation();
   const allItems = [...faqs.technical, ...faqs.company];
 
   // ── FAQPage JSON-LD ─────────────────────────────────────────────────────────
@@ -48,7 +50,7 @@ export default function ProductFAQ({ faqs, productName }: Props) {
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      name: `${productName} — Frequently Asked Questions`,
+      name: `${productName} — ${t("productDetail.faq.schemaSuffix")}`,
       mainEntity: faqs.technical.map(({ question, answer }) => ({
         "@type": "Question",
         name: question,
@@ -71,7 +73,7 @@ export default function ProductFAQ({ faqs, productName }: Props) {
     return () => {
       document.getElementById("faq-jsonld")?.remove();
     };
-  }, [faqs.technical, productName]);
+  }, [faqs.technical, productName, t]);
 
   if (allItems.length === 0) return null;
 
@@ -82,17 +84,21 @@ export default function ProductFAQ({ faqs, productName }: Props) {
     >
       {/* ── Section header — matches TechnicalAudit / ComprehensiveData pattern ── */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ Knowledge Base ]
+        [ {t("productDetail.faq.eyebrow")} ]
       </p>
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8">
-        Product FAQs &amp; Buying Guidance
+        {t("productDetail.faq.headline")}
       </h2>
 
       {/* ── 2-column accordion grid ────────────────────────────────────────── */}
       <div className="grid grid-cols-1 lg:grid-cols-2 border border-slate-200">
         {/* Left — Technical FAQs */}
         <div className="border-b border-slate-200 lg:border-b-0 lg:border-r lg:border-slate-200">
-          <ColHeader index="01" label="Technical FAQs" dark />
+          <ColHeader
+            index="01"
+            label={t("productDetail.faq.technicalLabel")}
+            dark
+          />
           <div className="divide-y divide-slate-200">
             {faqs.technical.map((item, i) => (
               <FaqRow key={i} item={item} index={i} />
@@ -102,7 +108,11 @@ export default function ProductFAQ({ faqs, productName }: Props) {
 
         {/* Right — Why Choose Sureay */}
         <div>
-          <ColHeader index="02" label="Why Choose Sureay" dark={false} />
+          <ColHeader
+            index="02"
+            label={t("productDetail.faq.whyChooseLabel")}
+            dark={false}
+          />
           <div className="divide-y divide-slate-200">
             {faqs.company.map((item, i) => (
               <FaqRow key={i} item={item} index={i} />

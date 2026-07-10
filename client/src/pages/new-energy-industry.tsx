@@ -159,10 +159,7 @@ export default function NewEnergyIndustry() {
           filterCategories={FILTER_CATEGORIES}
         />
         <CategoryLinksRow
-          categories={[
-            { slug: "shredder-blades", name: "Shredder Blades" },
-            { slug: "slitter-knives", name: "Slitter Knives" },
-          ]}
+          slugs={["shredder-blades", "slitter-knives"]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />

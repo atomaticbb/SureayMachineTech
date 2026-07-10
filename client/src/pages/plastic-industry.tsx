@@ -260,10 +260,7 @@ export default function PlasticIndustry() {
           filterCategories={FILTER_CATEGORIES}
         />
         <CategoryLinksRow
-          categories={[
-            { slug: "shredder-blades", name: "Shredder Blades" },
-            { slug: "granulator-blades", name: "Granulator Blades" },
-          ]}
+          slugs={["shredder-blades", "granulator-blades"]}
         />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />

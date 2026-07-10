@@ -12,6 +12,7 @@ import SEO from "@/components/common/SEO";
 import { Link } from "wouter";
 import { type BladeCategoryType } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 import { getBlades } from "@/data/locales";
 import ProductGrid from "@/components/product/ProductGrid";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
@@ -19,39 +20,45 @@ import ContactRFQ from "@/components/home/ContactRFQ";
 import { gtagEvent } from "@/lib/gtag";
 
 // ── Flat filter list — all 8 categories + All ──────────────────────────────
-type FilterItem = { value: BladeCategoryType | "all"; label: string };
+// analyticsName stays fixed English so GA4 dimensions aggregate consistently
+// across locales; labelKey drives the translated, visible chip text.
+type FilterItem = {
+  value: BladeCategoryType | "all";
+  labelKey: string;
+  analyticsName: string;
+};
 const FILTERS: FilterItem[] = [
-  { value: "all",              label: "All" },
-  { value: "slitter_knives",   label: "Slitter Knives" },
-  { value: "shredder_blades",  label: "Shredder Blades" },
-  { value: "granulator_blades",label: "Granulator Blades" },
-  { value: "log_saw_blades",   label: "Log Saw Blades" },
-  { value: "shear_blades",     label: "Shear Blades" },
-  { value: "cold_saw_blades",  label: "Cold Saw Blades" },
-  { value: "wood_chipper",     label: "Wood Chipper Blades" },
-  { value: "custom_profile",   label: "Custom Blades" },
+  { value: "all",               labelKey: "productList.filters.all",               analyticsName: "All" },
+  { value: "slitter_knives",    labelKey: "productList.filters.slitterKnives",     analyticsName: "Slitter Knives" },
+  { value: "shredder_blades",   labelKey: "productList.filters.shredderBlades",    analyticsName: "Shredder Blades" },
+  { value: "granulator_blades", labelKey: "productList.filters.granulatorBlades",  analyticsName: "Granulator Blades" },
+  { value: "log_saw_blades",    labelKey: "productList.filters.logSawBlades",      analyticsName: "Log Saw Blades" },
+  { value: "shear_blades",      labelKey: "productList.filters.shearBlades",       analyticsName: "Shear Blades" },
+  { value: "cold_saw_blades",   labelKey: "productList.filters.coldSawBlades",     analyticsName: "Cold Saw Blades" },
+  { value: "wood_chipper",      labelKey: "productList.filters.woodChipperBlades", analyticsName: "Wood Chipper Blades" },
+  { value: "custom_profile",    labelKey: "productList.filters.customBlades",      analyticsName: "Custom Blades" },
 ];
 
 const FACTORY_IMAGES = [
   {
     src: "/images/process/premium-steel-selection.webp",
     ref: "REF: PREMIUM STEEL SELECTION",
-    alt: "Premium Steel Selection",
+    altKey: "productList.factory.altSteelSelection",
   },
   {
     src: "/images/process/vacuum-heat-treatment.webp",
     ref: "REF: VACUUM HEAT TREATMENT",
-    alt: "Vacuum Heat Treatment",
+    altKey: "productList.factory.altHeatTreatment",
   },
   {
     src: "/images/process/cnc-precision-grinding.webp",
     ref: "REF: CNC PRECISION GRINDING",
-    alt: "CNC Precision Grinding",
+    altKey: "productList.factory.altPrecisionGrinding",
   },
   {
     src: "/images/process/quality-control.webp",
     ref: "REF: RIGOROUS QUALITY CONTROL",
-    alt: "Rigorous Quality Control",
+    altKey: "productList.factory.altQualityControl",
   },
 ];
 
@@ -60,6 +67,7 @@ type CatalogState = "idle" | "form" | "loading" | "done";
 
 export default function BladeListPage() {
   const lang = useLang();
+  const { t } = useTranslation();
   const blades = getBlades(lang);
   const [selectedCategory, setSelectedCategory] = useState<
     BladeCategoryType | "all"
@@ -100,10 +108,9 @@ export default function BladeListPage() {
   const collectionLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Industrial Blades & Cutting Tools",
+    name: t("productList.seo.title"),
     url: "https://sureay.com/products",
-    description:
-      "Sureay's full catalogue of precision shredder blades, granulator knives and OEM cutting tools.",
+    description: t("productList.collectionLd.description"),
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: blades.length,
@@ -148,7 +155,7 @@ export default function BladeListPage() {
       });
     } catch {
       setCatalogState("form");
-      setCatalogError("Something went wrong. Please try again.");
+      setCatalogError(t("productDetail.hero.catalogError"));
     }
   };
 
@@ -181,13 +188,13 @@ export default function BladeListPage() {
   return (
     <div className="min-h-screen bg-white antialiased">
       <SEO
-        title="Industrial Blades & Cutting Tools"
-        description="Browse Sureay's full catalogue of precision shredder blades, granulator knives and OEM cutting tools. ISO 9001:2015 certified. Custom engineering available."
+        title={t("productList.seo.title")}
+        description={t("productList.seo.description")}
         canonicalUrl="/products"
-        keywords="industrial blades catalog, cutting tools, rotary blades, shredder knives, granulator blades"
+        keywords={t("productList.seo.keywords")}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Blades & Knives", url: "/products" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("productList.seo.breadcrumbBladesKnives"), url: "/products" },
         ]}
         extraJsonLd={[collectionLd]}
       />
@@ -216,22 +223,16 @@ export default function BladeListPage() {
         >
           <div>
             <p className="text-[11px] font-semibold tracking-[0.28em]  text-white/40 mb-6">
-              Product Catalogue — Industrial Blades
+              {t("productList.hero.eyebrow")}
             </p>
 
             <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
-              Industrial
-              <br />
-              Blades &amp;
-              <br />
-              Cutting Tools
+              {t("productList.hero.headline")}
             </h1>
 
             <div className="w-12 h-[3px] bg-white/30 mb-7" />
             <p className="text-white/70 text-[16px] leading-relaxed max-w-xl mb-10">
-              Premium alloy steel blades for recycling, paper, and converting
-              industries — engineered for maximum wear resistance and extended
-              service life.
+              {t("productList.hero.body")}
             </p>
           </div>
         </div>
@@ -258,6 +259,7 @@ export default function BladeListPage() {
                     : blades.filter(b => b.category === item.value).length;
                 if (item.value !== "all" && count === 0) return null;
                 const isActive = selectedCategory === item.value;
+                const label = t(item.labelKey);
                 return (
                   <button
                     key={item.value}
@@ -266,7 +268,7 @@ export default function BladeListPage() {
                       if (item.value !== "all") {
                         gtagEvent("view_item_list", {
                           event_category: "blade_filter",
-                          item_list_name: item.label,
+                          item_list_name: item.analyticsName,
                           blade_category: item.value,
                         });
                       }
@@ -277,7 +279,7 @@ export default function BladeListPage() {
                         : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
                     }`}
                   >
-                    {item.label}
+                    {label}
                     <span className={`ml-1.5 text-[10px] font-medium ${isActive ? "text-white/50" : "text-slate-600"}`}>
                       {count}
                     </span>
@@ -302,10 +304,10 @@ export default function BladeListPage() {
                 >
                   <Download className="w-5 h-5 shrink-0" />
                   <span className="hidden sm:inline whitespace-nowrap text-[14px] tracking-[0.08em]">
-                    Download Catalog PDF
+                    {t("productList.catalog.downloadButton")}
                   </span>
                   <span className="sm:hidden whitespace-nowrap text-[13px]">
-                    Catalog PDF
+                    {t("productList.catalog.downloadButtonShort")}
                   </span>
                 </button>
               )}
@@ -316,7 +318,7 @@ export default function BladeListPage() {
                   className="absolute right-0 top-full mt-2 z-40 w-[min(92vw,340px)] border-2 border-slate-300 bg-white p-3 space-y-2"
                 >
                   <p className="font-mono text-[10px] text-slate-500 tracking-[0.14em]">
-                    Enter your work email to download
+                    {t("productDetail.hero.emailPrompt")}
                   </p>
                   <input
                     type="email"
@@ -324,7 +326,7 @@ export default function BladeListPage() {
                     autoFocus
                     value={catalogEmail}
                     onChange={e => setCatalogEmail(e.target.value)}
-                    placeholder="you@company.com"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     className="w-full border border-slate-300 px-3 py-2 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
                   />
                   {catalogError && (
@@ -339,10 +341,10 @@ export default function BladeListPage() {
                       {catalogState === "loading" ? (
                         <>
                           <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                          <span>Sending...</span>
+                          <span>{t("common.sending")}</span>
                         </>
                       ) : (
-                        "Send & Download"
+                        t("productDetail.hero.sendAndDownload")
                       )}
                     </button>
                     <button
@@ -353,7 +355,7 @@ export default function BladeListPage() {
                       }}
                       className="px-3 py-2 border border-slate-300 text-slate-500 text-[11px] font-mono tracking-[0.14em] hover:border-slate-400 transition-colors"
                     >
-                      Cancel
+                      {t("common.cancel")}
                     </button>
                   </div>
                 </form>
@@ -364,7 +366,7 @@ export default function BladeListPage() {
                   <div className="flex items-center gap-2 min-w-0">
                     <span className="text-green-600 font-black text-sm">✓</span>
                     <span className="font-mono text-[10px] text-slate-600 tracking-[0.12em]">
-                      Download started
+                      {t("productList.catalog.downloadStarted")}
                     </span>
                   </div>
                   <button
@@ -372,7 +374,7 @@ export default function BladeListPage() {
                     onClick={() => setCatalogState("idle")}
                     className="text-[10px] font-mono tracking-[0.12em] text-slate-500 hover:text-slate-700"
                   >
-                    Close
+                    {t("productList.catalog.close")}
                   </button>
                 </div>
               )}
@@ -407,34 +409,23 @@ export default function BladeListPage() {
             {/* Left: SEO Text */}
             <div className="flex flex-col justify-center">
               <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em]  mb-6">
-                [ MANUFACTURING CAPABILITY ]
+                [ {t("productList.factory.eyebrow")} ]
               </p>
               <h2 className="text-3xl lg:text-4xl font-black text-[#001f4d]  tracking-tight leading-tight mb-8">
-                Your Trusted Industrial
-                <br />
-                Blade Manufacturer
+                {t("productList.factory.headline")}
               </h2>
               <div className="border-l-4 border-[#001f4d] pl-6 space-y-5">
                 <p className="text-slate-600 text-base leading-relaxed">
-                  At Sureay, we don't just supply blades — we engineer cutting
-                  solutions. With over 15 years of experience in metallurgical
-                  processing and precision manufacturing, we produce
-                  high-performance machine knives for the recycling, paper
-                  converting, and plastic processing industries.
+                  {t("productList.factory.paragraph1")}
                 </p>
                 <p className="text-slate-600 text-base leading-relaxed">
-                  Whether you need high-wear shredder rotor knives, precision
-                  log saw blades, or custom guillotine shears, our in-house
-                  production ensures strict quality control from raw material
-                  selection to final edge grinding. Every batch undergoes
-                  rigorous CMM inspection to achieve the perfect balance of
-                  hardness and toughness.
+                  {t("productList.factory.paragraph2")}
                 </p>
               </div>
               <div className="border-t border-slate-200 mt-10 pt-6 grid grid-cols-3 gap-4">
                 <div>
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    Facility
+                    {t("productList.factory.statFacility")}
                   </p>
                   <p className="font-black text-sm text-[#001f4d] ">
                     15,000 m²
@@ -442,15 +433,15 @@ export default function BladeListPage() {
                 </div>
                 <div>
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    Founded
+                    {t("productList.factory.statFounded")}
                   </p>
                   <p className="font-black text-sm text-[#001f4d] ">
-                    Est. 2008
+                    {t("productList.factory.foundedValue")}
                   </p>
                 </div>
                 <div>
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    Standard
+                    {t("productList.factory.statStandard")}
                   </p>
                   <p className="font-black text-sm text-[#001f4d] ">
                     ISO 9001
@@ -468,7 +459,7 @@ export default function BladeListPage() {
                 >
                   <img
                     src={img.src}
-                    alt={img.alt}
+                    alt={t(img.altKey)}
                     className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75 transition-transform duration-700 group-hover:scale-[1.04]"
                     loading="lazy"
                     decoding="async"

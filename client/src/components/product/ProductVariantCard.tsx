@@ -8,6 +8,7 @@
 import { Link } from "wouter";
 import { type Blade, type BladeSpec, type BladeSectorType } from "@/data/blades";
 import { SECTOR_LABEL } from "@/data/blade-categories";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface ProductVariantCardProps {
   blade: Blade;
@@ -74,6 +75,7 @@ export default function ProductVariantCard({
   blade,
   sectorBadge,
 }: ProductVariantCardProps) {
+  const { t } = useTranslation();
   const responsiveImage = getResponsiveImage(blade.image);
   const cardSpecs = getCardSpecs(blade);
 
@@ -124,7 +126,7 @@ export default function ProductVariantCard({
         <div className="border-t border-slate-200 my-2" />
 
         <p className="text-xs text-slate-400 mb-2">
-          Made to order · OEM compatible
+          {t("productCard.madeToOrder")}
         </p>
 
         <button
@@ -132,7 +134,7 @@ export default function ProductVariantCard({
           onClick={e => handleRequestQuote(e, blade)}
           className="relative z-10 mt-auto w-full inline-flex items-center justify-center gap-2 border border-[#001f4d] bg-white hover:bg-[#001f4d] text-[#001f4d] hover:text-white text-[11px] font-black tracking-[0.18em] py-3 transition-colors duration-200"
         >
-          Request a Quote →
+          {t("cta.requestQuote")} →
         </button>
       </div>
     </div>

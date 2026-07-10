@@ -26,42 +26,46 @@ export default function TabEcosystem() {
 
         {/* 2×3 grid — 6 industries, clean 16:9 cards */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:gap-4">
-          {ECOSYSTEMS.map((eco) => (
-            <Link key={eco.industry} href={eco.href}>
-              <a className="relative overflow-hidden block group aspect-video rounded-none">
-                {/* Photo */}
-                <img
-                  src={eco.image}
-                  srcSet={`${eco.imageMobile ?? eco.image} 640w, ${eco.image} 1280w`}
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
-                  alt={eco.industry}
-                  loading="lazy"
-                  decoding="async"
-                  fetchPriority="low"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
-                />
+          {ECOSYSTEMS.map((eco) => {
+            const label = t(`home.ecosystem.items.${eco.key}.label`);
+            const industry = t(`home.ecosystem.items.${eco.key}.industry`);
+            return (
+              <Link key={eco.key} href={eco.href}>
+                <a className="relative overflow-hidden block group aspect-video rounded-none">
+                  {/* Photo */}
+                  <img
+                    src={eco.image}
+                    srcSet={`${eco.imageMobile ?? eco.image} 640w, ${eco.image} 1280w`}
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
+                    alt={industry}
+                    loading="lazy"
+                    decoding="async"
+                    fetchPriority="low"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
+                  />
 
-                {/* Gradient — lifts from bottom */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/90 via-[#001224]/30 to-transparent group-hover:from-[#001224]/75 transition-colors duration-300" />
+                  {/* Gradient — lifts from bottom */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/90 via-[#001224]/30 to-transparent group-hover:from-[#001224]/75 transition-colors duration-300" />
 
-                {/* White reveal bar at bottom edge */}
-                <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-white/60 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+                  {/* White reveal bar at bottom edge */}
+                  <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-white/60 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
 
-                {/* Text */}
-                <div className="relative z-10 flex flex-col justify-end h-full p-4 lg:p-6">
-                  <p className="font-mono text-[10px] lg:text-[11px] tracking-[0.28em] text-white/50 mb-2 uppercase leading-none">
-                    {eco.label}
-                  </p>
-                  <p className="text-white font-black text-base lg:text-[20px] tracking-tight leading-tight">
-                    {eco.industry}
-                  </p>
-                  <p className="font-mono text-[10px] lg:text-[12px] tracking-[0.22em] text-white font-bold mt-2.5 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out underline underline-offset-4 decoration-white/60 decoration-[1.5px]">
-                    {t("home.ecosystem.explore")}
-                  </p>
-                </div>
-              </a>
-            </Link>
-          ))}
+                  {/* Text */}
+                  <div className="relative z-10 flex flex-col justify-end h-full p-4 lg:p-6">
+                    <p className="font-mono text-[10px] lg:text-[11px] tracking-[0.28em] text-white/50 mb-2 uppercase leading-none">
+                      {label}
+                    </p>
+                    <p className="text-white font-black text-base lg:text-[20px] tracking-tight leading-tight">
+                      {industry}
+                    </p>
+                    <p className="font-mono text-[10px] lg:text-[12px] tracking-[0.22em] text-white font-bold mt-2.5 opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out underline underline-offset-4 decoration-white/60 decoration-[1.5px]">
+                      {t("home.ecosystem.explore")}
+                    </p>
+                  </div>
+                </a>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

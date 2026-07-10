@@ -8,6 +8,7 @@
 import { Link } from "wouter";
 import { type Blade, type BladeSectorType } from "@/data/blades";
 import { SECTOR_LABEL } from "@/data/blade-categories";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface ProductCardProps {
   blade: Blade;
@@ -35,6 +36,7 @@ export default function ProductCard({
   variant = "list",
   sectorBadge,
 }: ProductCardProps) {
+  const { t } = useTranslation();
   const responsiveImage = getResponsiveImage(blade.image);
 
   // ─── Grid variant: large image + title + CTA ─────────────────────────────
@@ -65,7 +67,7 @@ export default function ProductCard({
               </span>
             )}
             <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider backdrop-blur-sm">
-              OEM Available
+              {t("productCard.oemAvailable")}
             </span>
           </div>
 
@@ -87,7 +89,7 @@ export default function ProductCard({
             </h3>
             <div className="mt-auto">
               <div className="inline-flex items-center gap-2 border border-[#001f4d] bg-white group-hover:bg-[#001f4d] text-[#001f4d] group-hover:text-white text-[11px] font-black  tracking-[0.18em] px-5 py-3 transition-colors duration-200 self-start">
-                View Details
+                {t("productCard.viewDetails")}
                 <svg
                   className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
                   fill="none"
@@ -192,7 +194,7 @@ export default function ProductCard({
               </span>
             )}
             <span className="absolute bottom-3 left-3 bg-white/80 text-[#001f4d] text-[10px] font-black  px-2 py-1 tracking-wider backdrop-blur-sm">
-              OEM Available
+              {t("productCard.oemAvailable")}
             </span>
           </div>
 

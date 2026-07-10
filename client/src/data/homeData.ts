@@ -1,8 +1,4 @@
 import {
-  Clock,
-  Globe2,
-  PenTool,
-  HeadphonesIcon,
   Recycle,
   Layers,
   FileText,
@@ -11,44 +7,11 @@ import {
   TreePine,
 } from "lucide-react";
 
-// ─── Stats ────────────────────────────────────────────────────────────────────
-export const STATS = [
-  {
-    icon: Clock,
-    value: 15,
-    suffix: "+",
-    label: "Years Blade Manufacturing",
-    sub: "Est. 2008",
-  },
-  {
-    icon: PenTool,
-    value: 10000,
-    suffix: "+",
-    label: "Blade Designs Delivered",
-    sub: "Custom Variants",
-  },
-  {
-    icon: Globe2,
-    value: 50,
-    suffix: "+",
-    label: "Countries Served",
-    sub: "Global Shipments",
-  },
-  {
-    icon: HeadphonesIcon,
-    value: 98,
-    suffix: "%",
-    label: "Repeat Client Retention",
-    sub: "Long-Term Supply",
-  },
-];
-
 // ─── Industry Ecosystems ──────────────────────────────────────────────────────
 export const ECOSYSTEMS = [
   {
     icon: Recycle,
-    label: "Recycling & Waste Management",
-    industry: "Plastics & Recycling",
+    key: "plastic",
     desc: "For shredders, granulators, and recycling lines that need blades matched to abrasive feedstock, impact load, contamination level, and uptime targets.",
     specs: [
       {
@@ -79,8 +42,7 @@ export const ECOSYSTEMS = [
   },
   {
     icon: FileText,
-    label: "Paper, Packaging & Converting",
-    industry: "Paper & Tissue",
+    key: "paper",
     desc: "For tissue, paper, and packaging lines that need cleaner cuts, longer blade life, and OEM-fit tooling for high-speed converting equipment.",
     specs: [
       {
@@ -110,8 +72,7 @@ export const ECOSYSTEMS = [
   },
   {
     icon: Layers,
-    label: "Metal Coil Processing",
-    industry: "Metal Processing",
+    key: "metal",
     desc: "For slitting and shearing lines where burr control, dimensional stability, regrind life, and consistent performance on metal coils drive the tooling decision.",
     specs: [
       {
@@ -142,8 +103,7 @@ export const ECOSYSTEMS = [
   },
   {
     icon: Scissors,
-    label: "Film & Flexible Converting",
-    industry: "Film & Converting",
+    key: "converting",
     desc: "For film slitter-rewinders, label converting lines, and nonwoven slitting systems that demand tight slit-width tolerance and consistent edge quality at 150–600 m/min.",
     specs: [
       {
@@ -174,8 +134,7 @@ export const ECOSYSTEMS = [
   },
   {
     icon: TreePine,
-    label: "Wood, Forestry & Biomass",
-    industry: "Wood & Forestry",
+    key: "wood",
     desc: "For drum and disc chippers in forestry, biomass energy, and landscape tree service that need blades matched to wood species, contamination level, and regrind cycle targets.",
     specs: [
       {
@@ -206,8 +165,7 @@ export const ECOSYSTEMS = [
   },
   {
     icon: Zap,
-    label: "New Energy & Battery",
-    industry: "New Energy",
+    key: "newEnergy",
     desc: "For lithium-ion battery electrode foil slitting lines where zero-burr Ra ≤ 0.05 μm mirror finish and ±0.001 mm dimensional tolerance are required for ISO Class 7 dry-room cell assembly.",
     specs: [
       {
@@ -310,21 +268,5 @@ export const FEATURED_PRODUCTS = [
 ];
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
-export const FAQ_ITEMS = [
-  {
-    q: "Can you quote from a drawing, worn sample, or basic dimensions?",
-    a: "Yes. We can quote from technical drawings, used blade samples, or a dimension set with machine model, material type, and application details. For OEM replacements, matching fit and tolerance is part of the engineering review.",
-  },
-  {
-    q: "What information do you need for an accurate quotation?",
-    a: "The fastest quotations come with blade drawing or sample, material being cut, machine model, hardness or steel preferences if known, and any target concerns such as wear life, edge quality, or downtime reduction.",
-  },
-  {
-    q: "How do you recommend the right steel grade for different applications?",
-    a: "We match steel grade and heat treatment to abrasion level, impact load, cutting speed, and feedstock. Common options include D2, DC53, SKD11, H13, M2 HSS, and tungsten carbide depending on the operating conditions.",
-  },
-  {
-    q: "What tolerances, inspection, and lead times can you support?",
-    a: "Typical production is verified by CMM inspection with edge tolerances down to ±0.002 mm depending on blade type. Standard custom orders usually ship in 15 to 25 business days after drawing approval, with faster repeat-order options available.",
-  },
-];
+// q/a text lives in client/src/locales/*.json under home.faq.items.q{n}/a{n}.
+export const FAQ_ITEM_IDS = [1, 2, 3, 4];

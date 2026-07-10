@@ -3,9 +3,12 @@ import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FEATURED_PRODUCTS } from "@/data/homeData";
 import { useTranslation } from "@/lib/useTranslation";
+import { useLang } from "@/contexts/LangContext";
+import { getBladeById } from "@/data/locales";
 
 export default function AuthorityCarousel() {
   const { t } = useTranslation();
+  const lang = useLang();
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const getItemWidth = (): number => {
@@ -70,31 +73,35 @@ export default function AuthorityCarousel() {
               className="flex-1 flex gap-0 sm:gap-8 overflow-x-auto py-2 snap-x snap-mandatory sm:snap-none [&::-webkit-scrollbar]:hidden"
               style={{ scrollbarWidth: "none" }}
             >
-              {FEATURED_PRODUCTS.map((product, i) => (
-                <Link
-                  href={product.href}
-                  key={`${product.name}-${i}`}
-                  className="flex-shrink-0 flex flex-col items-center w-full sm:w-48 snap-center"
-                >
-                  <div
-                    data-carousel-item
-                    className="flex flex-col items-center w-full group cursor-pointer"
+              {FEATURED_PRODUCTS.map((product, i) => {
+                const id = product.href.replace(/^\/products\//, "");
+                const name = getBladeById(id, lang)?.name ?? product.name;
+                return (
+                  <Link
+                    href={product.href}
+                    key={`${product.name}-${i}`}
+                    className="flex-shrink-0 flex flex-col items-center w-full sm:w-48 snap-center"
                   >
-                    <div className="w-40 h-40 rounded-none overflow-hidden bg-slate-50 transition-all duration-300 shadow-sm group-hover:shadow-[0_8px_24px_-8px_rgba(0,51,102,0.25)]">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
+                    <div
+                      data-carousel-item
+                      className="flex flex-col items-center w-full group cursor-pointer"
+                    >
+                      <div className="w-40 h-40 rounded-none overflow-hidden bg-slate-50 transition-all duration-300 shadow-sm group-hover:shadow-[0_8px_24px_-8px_rgba(0,51,102,0.25)]">
+                        <img
+                          src={product.image}
+                          alt={name}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                      <p className="mt-4 text-center font-bold text-base text-[#003366] leading-snug group-hover:text-[#003366] transition-colors duration-200">
+                        {name}
+                      </p>
                     </div>
-                    <p className="mt-4 text-center font-bold text-base text-[#003366] leading-snug group-hover:text-[#003366] transition-colors duration-200">
-                      {product.name}
-                    </p>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
 
             <button

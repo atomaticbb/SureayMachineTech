@@ -18,6 +18,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { pageview } from "@/lib/gtag";
+import { useTranslation } from "@/lib/useTranslation";
 
 const STORAGE_KEY = "sureay_cookie_v2";
 
@@ -33,6 +34,7 @@ function updateAllConsent(value: "granted" | "denied"): void {
 }
 
 export default function CookieConsent() {
+  const { t } = useTranslation();
   // null = checking region (show nothing), false = no banner, true = show banner
   const [showBanner, setShowBanner] = useState<boolean | null>(null);
 
@@ -89,11 +91,11 @@ export default function CookieConsent() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10">
         {/* Text */}
         <div className="flex-1 min-w-0">
-          <p className="text-white font-bold text-sm mb-1">Cookie Settings</p>
+          <p className="text-white font-bold text-sm mb-1">
+            {t("cookieConsent.title")}
+          </p>
           <p className="text-white/70 text-sm leading-relaxed max-w-2xl">
-            We use analytics cookies to understand how visitors use this site.
-            No advertising or third-party data is shared. You can change your
-            preference at any time.
+            {t("cookieConsent.body")}
           </p>
         </div>
 
@@ -103,13 +105,13 @@ export default function CookieConsent() {
             onClick={handleEssentialOnly}
             className="border border-white/40 text-white hover:border-white px-5 py-2.5 text-sm font-semibold transition-colors duration-150 rounded-none whitespace-nowrap"
           >
-            Essential Only
+            {t("cookieConsent.essentialOnly")}
           </button>
           <button
             onClick={handleAcceptAll}
             className="bg-white text-[#001f4d] hover:bg-white/90 px-5 py-2.5 text-sm font-bold transition-colors duration-150 rounded-none whitespace-nowrap"
           >
-            Accept All
+            {t("cookieConsent.acceptAll")}
           </button>
         </div>
       </div>

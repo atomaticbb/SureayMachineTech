@@ -15,6 +15,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import type { Blade } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 
 interface ComprehensiveDataProps {
   blade: Blade;
@@ -26,6 +27,7 @@ const DOT_GRID_STYLE: CSSProperties = {
 };
 
 export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
+  const { t } = useTranslation();
   if (!blade.standardDimensions || blade.standardDimensions.length === 0)
     return null;
 
@@ -48,14 +50,23 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
     );
   const panelImage = blade.gallery?.at(-2) ?? blade.image;
 
-  const col0Label = blade.dimensionLabels?.col0 ?? "Specification";
-  const col1Label = blade.dimensionLabels?.col1 ?? "Outer Diameter (OD)";
-  const col2Label = blade.dimensionLabels?.col2 ?? "Inner Diameter (ID)";
-  const col3Label = blade.dimensionLabels?.col3 ?? "Thickness";
-  const col4Label = blade.dimensionLabels?.col4 ?? "Teeth";
+  const col0Label =
+    blade.dimensionLabels?.col0 ??
+    t("productDetail.comprehensiveData.colSpecification");
+  const col1Label =
+    blade.dimensionLabels?.col1 ??
+    t("productDetail.comprehensiveData.colOuterDiameter");
+  const col2Label =
+    blade.dimensionLabels?.col2 ??
+    t("productDetail.comprehensiveData.colInnerDiameter");
+  const col3Label =
+    blade.dimensionLabels?.col3 ??
+    t("productDetail.comprehensiveData.colThickness");
+  const col4Label =
+    blade.dimensionLabels?.col4 ?? t("productDetail.comprehensiveData.colTeeth");
   const captionText =
     blade.dimensionLabels?.caption ??
-    "* Custom manufacturing is available. The outer diameter can reach up to 1200 mm upon request.";
+    t("productDetail.comprehensiveData.defaultCaption");
 
   return (
     <section
@@ -64,10 +75,10 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
     >
       {/* Section header — outside the flex row */}
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ Standard Reference ]
+        [ {t("productDetail.comprehensiveData.eyebrow")} ]
       </p>
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
-        Common Standard Dimensions
+        {t("productDetail.comprehensiveData.headline")}
       </h2>
 
       {/* Flex row: lg:items-start — desktop only, keeps image+table heights independent */}
