@@ -3651,6 +3651,127 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "granulator-rotor-bed-knife-configuration",
+    tag: "TECHNICAL GUIDE",
+    date: "09.JUL.2026",
+    title:
+      "Rotor Knives vs. Bed Knives: How Granulator Knife Configuration Determines Cutting Performance",
+    excerpt:
+      "Same steel, same bevel angle, different regrind. Rotor knife count, bed knife arrangement, and clearance decide particle size and fines as much as alloy selection does.",
+    image: "/images/news/granulator-rotor-bed-knife-pair-hero.webp",
+    readTime: "4 MIN",
+    seoTitle:
+      "Rotor vs. Bed Knives: Granulator Knife Configuration Guide | Sureay",
+    metaDescription:
+      "Granulator rotor and bed knife count, arrangement, and clearance shape particle size and fines as much as steel grade — a configuration guide for buyers.",
+    keywords:
+      "granulator rotor knives, granulator bed knives, fly knife stator knife, granulator knife configuration, open rotor closed rotor granulator, plastic granulator blade arrangement, bed knife clearance",
+    relatedProductIds: ["granulator-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Two granulators running identical D2 rotor knives at the same 40° bevel angle can still turn out noticeably different regrind — one clean and uniform, the other full of oversize flake and fines. The difference usually isn't the steel. It's the knife configuration: how many rotor knives are mounted, how many bed knives they shear against, and how the two are arranged relative to each other.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Alloy and bevel angle — the variables covered on our [granulator blades](/products/granulator-blades) product page — set how cleanly a single cut shears. Configuration sets how many times material gets sheared per revolution, and that number shapes particle size distribution just as much as edge geometry does. It's the half of the selection decision that rarely makes it onto a spec sheet.",
+      },
+      {
+        type: "h2",
+        value: "Rotor knives: the moving half of the shear pair",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The rotor carries the moving knives, often called fly knives, bolted around a shaft that spins at roughly 250–600 RPM depending on rotor diameter and duty. Most industrial rotors run two, three, or four knives. Two-knife rotors keep peak torque low and are common on smaller beside-the-press units processing clean runners and sprues. Three- and four-knife rotors cut more frequently per revolution, producing finer, more uniform regrind — at the cost of higher peak load and more edges to inspect at every knife change.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Arrangement matters as much as count. Knives mounted straight and parallel to the shaft strike the bed knife along their full length at once — a sudden, high-impact hit that spikes noise and torque. Knives mounted on a helix contact the bed knife progressively along their length, turning that single hard strike into a rolling shear. The result is a quieter cut, lower peak torque, and less shock loading on bearings and drive, which is why higher-knife-count rotors on continuous-duty lines are almost always helical rather than straight.",
+      },
+      {
+        type: "image",
+        value: "/images/news/granulator-rotor-fly-knives.webp",
+      },
+      {
+        type: "h2",
+        value: "Bed knives: fixed, but not simple",
+      },
+      {
+        type: "image",
+        value: "/images/news/granulator-bed-knives.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bed knives, also called stator or counter knives, don't move, but their number and placement still change the outcome. A single bed knife gives the rotor one shear point per pass. Mounting a bed knife on each side of the cutting chamber doubles the shear events per revolution without adding a single rotor knife: a cheaper way to raise cutting frequency than adding more rotor blades, which is why many recycling-duty granulators run dual bed knives even behind a simple two- or three-knife rotor.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bed knife mounts are also where clearance gets set. Most designs use adjustable mounting so the rotor-to-bed gap can be tuned as knives wear or get reground, instead of replacing the whole set. That adjustability only pays off if the knives hold tight geometric tolerance to begin with — Sureay grinds bolt-hole position to ±0.02mm and face flatness to ≤0.05mm specifically so a reground bed knife drops back in at the same clearance, not a wider one.",
+      },
+      {
+        type: "h2",
+        value:
+          "Configuration sets cutting frequency; geometry decides cut quality",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "Configuration",
+          "Shear Events / Revolution",
+          "Typical Duty",
+        ],
+        tableRows: [
+          [
+            "2 rotor knives, 1 bed knife",
+            "2",
+            "Small beside-the-press units, clean runners and sprues",
+          ],
+          [
+            "3 rotor knives, 1 bed knife",
+            "3",
+            "General-purpose central granulation",
+          ],
+          [
+            "3 rotor knives, 2 bed knives",
+            "6",
+            "High-throughput recycling lines targeting finer regrind",
+          ],
+          [
+            "4 rotor knives, 2 bed knives",
+            "8",
+            "Continuous-duty PET/PP lines needing a tight particle-size band",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "More shear events per revolution isn't automatically better. A configuration sized for fine PET flake will choke on thick-wall HDPE drums it was never built for, and a coarse two-knife setup will never hit a tight particle-size spec no matter how sharp the edge. The right count follows feed geometry and target output, not throughput alone.",
+      },
+      {
+        type: "h2",
+        value: "Match the configuration before you match the part number",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When a rotor or bed knife wears out, it's tempting to reorder the same part number. That's fine if the process hasn't changed. But if particle size has been drifting, fines have crept up, or the feedstock has changed, it's worth checking whether knife count or arrangement should move too, not just the steel grade. We reverse-engineer rotor and bed knife configurations directly from Cumberland, Herbold, Rapid, and Conair OEM drawings across our full [granulator blades category](/categories/granulator-blades), so a configuration change doesn't mean settling for an off-the-shelf compromise.",
+      },
+      {
+        type: "callout",
+        value:
+          "Send us your granulator model and a photo of the current rotor and bed knife layout. We'll confirm whether your knife count and clearance are matched to your target particle size, or recommend a configuration change alongside the right steel grade. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
