@@ -1152,6 +1152,171 @@ export const blades: Blade[] = [
     }
   },
   {
+    "id": "nonwoven-log-saw-blades",
+    "name": "Hojas de sierra para troncos no tejidos",
+    "fullName": "Hojas de sierra para troncos resistentes a la corrosión para la transformación de no tejidos e higiene",
+    "category": "log_saw_blades",
+    "sector": "converting",
+    "categoryDisplay": "Cuchillas para transformación de no tejidos",
+    "image": "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+    "badge": "Anticorrosión",
+    "badgeColor": "teal",
+    "gallery": [
+      "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-02.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-03.webp"
+    ],
+    "description": "Hojas de sierra para troncos diseñadas para líneas de transformación de no tejidos e higiene: toallitas para bebés, toallitas húmedas, higiene femenina y rollos para incontinencia de adultos. Acero para herramientas D2 con recubrimiento resistente a la corrosión de TiN o cromo duro que resiste soluciones a base de alcohol, lociones y tensioactivos. Microrrectificadas a ≤0,15 mm de excentricidad lateral para cortes sin deshilachado en sustratos spunbond, meltblown, SMS y airlaid. Compatibles con líneas de transformación Fameccanica, GDM, Curt G. Joa y Zuiko. Diámetros personalizados en 10 días laborables.",
+    "fullDescription": "Las líneas de transformación de no tejidos para higiene presentan un conjunto de exigencias sobre la cuchilla fundamentalmente distinto al de las operaciones de papel tisú. Mientras que las sierras para troncos de tisú deben gestionar el polvo de papel y el aplastamiento del núcleo, las sierras para troncos de no tejidos se enfrentan a dos modos de fallo distintos: el deshilachado de fibras por sustratos sintéticos que resisten un corte limpio, y la corrosión acelerada por el entorno químico de líneas que trabajan con alcohol, lociones, conservantes (fenoxietanol) y tensioactivos con alta humedad.\n\nLas hojas de sierra para troncos no tejidos de Sureay se fabrican en acero para herramientas D2 (1.2379) de alto carbono y alto cromo, y están disponibles con recubrimientos resistentes a la corrosión específicos para cada aplicación. Todas las hojas se endurecen al vacío, se nivelan en tensión y se verifican mediante MMC antes del envío.\n\n## Por qué las cuchillas para tisú fallan en líneas de no tejidos\n\nLas bandas compuestas de polipropileno spunbond, meltblown y SMS son fundamentalmente más difíciles de cortar limpiamente que el tisú celulósico. Las fibras sintéticas son elásticas: se deforman ante una cuchilla desafilada o ligeramente descentrada en lugar de separarse limpiamente, produciendo bordes de corte deshilachados y con hilos que provocan fallos de plegado y envasado aguas abajo. Una cuchilla optimizada para tisú (bisel menos pronunciado, matriz más blanda para compatibilidad con CBN) producirá un desprendimiento de fibras visible en sustratos spunbond en una fracción del tiempo de servicio que lograría en tisú.\n\nEl entorno químico agrava el problema. Las líneas de toallitas húmedas trabajan con ratios de saturación de 2,0-3,5× (peso de la solución respecto al peso del sustrato), lo que significa que la cuchilla queda expuesta continuamente a la química de impregnación: normalmente un 80-95% de agua purificada más conservantes, humectantes y tensioactivos. El D2 estándar sin tratamiento superficial desarrollará micropicaduras en el filo de corte en cuestión de semanas, acelerando el deterioro del filo y aumentando el riesgo de contaminación por partículas en un producto crítico para la higiene.\n\n## Opciones de recubrimiento para entornos de higiene\n\n**Recubrimiento TiN PVD (2-3 µm, HV 2300+):** El nitruro de titanio por deposición física de vapor proporciona una barrera químicamente inerte con excelente adherencia. Bloquea la entrada de alcohol y tensioactivos en el sustrato de la cuchilla, prolonga los intervalos de servicio del filo y añade una capa de dureza que resiste la microabrasión de las partículas de SAP (polímero superabsorbente) presentes en las líneas de núcleo absorbente. Recomendado para la transformación de toallitas húmedas y productos de incontinencia para adultos.\n\n**Cromado duro:** El cromo duro electrodepositado (20-30 µm) proporciona una resistencia a la corrosión excepcional en entornos de alta humedad (≥75% HR) y reduce el coeficiente de fricción frente a las bandas de fibra sintética. La capa más gruesa también rellena los microporos superficiales, creando un efecto de sellado frente a la entrada de agentes de limpieza durante los ciclos de lavado.\n\n**D2 sin recubrimiento (estándar):** Adecuado para líneas de transformación de no tejidos secas -airlaid, thermobond, spunlace- donde no hay presencia de química de saturación. Dureza HRC 58-60, compatible con afilado CBN.\n\n## Geometría del bisel para fibra sintética\n\nLos sustratos de no tejidos requieren un ángulo de bisel primario ligeramente más pronunciado (25°-35°) en comparación con el tisú (15°-25°). La geometría más pronunciada concentra la fuerza de corte en el punto de contacto del filo, iniciando una separación limpia de la fibra en lugar de la deformación elástica que provoca el deshilachado. Para troncos de toallitas húmedas impregnadas con loción y alta resistencia cohesiva, un bisel compuesto (alivio primario + secundario) proporciona la cara de corte más limpia con un mínimo redondeo del filo a lo largo de ciclos de producción prolongados.\n\n## Tolerancias dimensionales\n\n- **Excentricidad lateral:** ≤0,15 mm\n- **Excentricidad del filo:** ≤0,10 mm\n- **Paralelismo de cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Acabado superficial:** Pulido espejo (Ra ≤0,2 µm)\n\n## Compatibilidad con plataformas OEM\n\nLas sierras para troncos de transformación de no tejidos para higiene difieren en la especificación del agujero y el diámetro respecto a las líneas de tisú. Plataformas habituales:\n\n**Fameccanica (Italia):** Líneas de transformación de pañales para bebé y productos de higiene femenina; diámetros de cuchilla habitualmente entre Ø400 y Ø550 mm según el formato del producto y el diámetro del rollo.\n\n**GDM (Italia):** Líneas de productos de higiene de alta velocidad; especificaciones de cuchilla según plano del cliente.\n\n**Curt G. Joa (EE. UU.):** Líneas norteamericanas de incontinencia para adultos e higiene femenina; disponibles especificaciones de agujero en medidas imperiales.\n\n**Zuiko (Japón):** Transformación de pañales para bebé; dimensiones de cuchilla según plano OEM.\n\n**Fabricantes OEM chinos (Zlink, Dachang, fabricantes de la zona de Quanzhou):** Especificaciones de cuchilla suministradas según plano o ingeniería inversa de muestra.\n\nDiámetro exterior personalizado de Ø350 mm a Ø700 mm fabricado bajo pedido. Disponible revisión de planos y aprobación dimensional de la primera pieza.",
+    "link": "/products/nonwoven-log-saw-blades",
+    "isFeatured": false,
+    "compatibleMachines": [
+      "Fameccanica",
+      "GDM",
+      "Curt G. Joa",
+      "Zuiko",
+      "Zlink",
+      "Dachang"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "D2 (1.2379) — HRC 58–60"
+      },
+      {
+        "label": "Coating Options",
+        "value": "TiN PVD | Hard Chrome | Uncoated"
+      },
+      {
+        "label": "Lateral Runout",
+        "value": "≤0.15 mm (CMM-verified)"
+      },
+      {
+        "label": "Edge Runout",
+        "value": "≤0.10 mm"
+      },
+      {
+        "label": "Diameter Range",
+        "value": "Ø350 mm – Ø700 mm (custom to drawing)"
+      },
+      {
+        "label": "Applications",
+        "value": "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls"
+      }
+    ],
+    "components": [
+      {
+        "id": "corrosion-coating",
+        "tag": "RECUBRIMIENTOS",
+        "title": "TiN y cromo duro para resistencia química",
+        "description": "Las líneas de transformación de toallitas húmedas e higiene están expuestas de forma continua a alcoholes, tensioactivos y conservantes que corroen los filos de acero para herramientas sin recubrir en cuestión de semanas. Nuestro recubrimiento TiN PVD (HV 2300+) y el cromado duro crean una barrera químicamente inerte, bloqueando la entrada en el filo de corte y ampliando el intervalo de funcionamiento limpio entre ciclos de reafilado."
+      },
+      {
+        "id": "nonwoven-bevel",
+        "tag": "GEOMETRÍA",
+        "title": "Perfil de bisel para fibra sintética",
+        "description": "Las bandas spunbond, meltblown y SMS se deforman elásticamente ante un bisel con especificación para tisú, provocando un deshilachado de fibras visible en la cara de corte. Aplicamos un bisel primario más pronunciado (25°-35°) con un alivio secundario compuesto que inicia una separación limpia de la fibra desde el primer contacto, eliminando el hilado y la densificación del borde que provocan rechazos en la línea de envasado."
+      },
+      {
+        "id": "runout-hygiene",
+        "tag": "PRECISIÓN",
+        "title": "Excentricidad ≤0,15 mm para cortes sin deshilachado",
+        "description": "Los troncos de no tejidos son más blandos y compresibles que los de tisú. Cualquier oscilación lateral de la cuchilla se traduce directamente en una cara de corte comprimida e irregular en lugar de un plano de corte limpio. Todas las cuchillas se nivelan en tensión y se verifican mediante MMC a ≤0,15 mm de excentricidad lateral antes del envío, garantizando que la cuchilla penetre en el tronco con un ángulo constante en cada pasada."
+      }
+    ],
+    "dimensionLabels": {
+      "col0": "Plataforma de máquina / Formato de producto",
+      "col1": "Diámetro exterior (mm)",
+      "col2": "Agujero / ID (mm)",
+      "col3": "Espesor (mm)",
+      "caption": "* Dimensiones de referencia para las plataformas habituales de transformación de no tejidos para higiene. Patrones de agujero, chaveteros y orificios para pasadores de arrastre fabricados según plano del cliente. Diámetro exterior personalizado Ø350-Ø700 mm disponible con un plazo de entrega de 10 días laborables."
+    },
+    "standardDimensions": [
+      {
+        "spec": "Baby Wipe / Wet Wipe (short log)",
+        "od": "400",
+        "id": "To drawing",
+        "thickness": "3.80"
+      },
+      {
+        "spec": "Baby Wipe / Wet Wipe (standard log)",
+        "od": "450",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Femcare / Sanitary Napkin Roll",
+        "od": "500",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Adult Incontinence / Large Format",
+        "od": "550",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Industrial / Canister Wipe Roll",
+        "od": "600",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Custom / OEM to Drawing",
+        "od": "Ø350–700",
+        "id": "To drawing",
+        "thickness": "3.80–6.00"
+      }
+    ],
+    "relatedBladeIds": [
+      "tissue-log-saw-blades",
+      "rotary-slitter-knives-paper"
+    ],
+    "offers": {
+      "lowPrice": 150,
+      "highPrice": 900
+    },
+    "faqs": {
+      "technical": [
+        {
+          "question": "¿Por qué mis cuchillas se corroen rápidamente en nuestra línea de transformación de toallitas húmedas?",
+          "answer": "Las líneas de toallitas húmedas exponen continuamente las cuchillas a conservantes (fenoxietanol), tensioactivos y soluciones a base de alcohol con alta humedad. El acero para herramientas D2 sin recubrir desarrolla micropicaduras en el filo de corte en cuestión de semanas bajo estas condiciones, acelerando el desgaste y creando un riesgo de contaminación por partículas. La solución es un tratamiento superficial resistente a la corrosión: el recubrimiento TiN PVD (2-3 µm, HV 2300+) proporciona una barrera químicamente inerte frente a la entrada de alcohol y tensioactivos, mientras que el cromado duro sella los microporos superficiales frente a la penetración de agentes de limpieza durante los ciclos de lavado."
+        },
+        {
+          "question": "Mis cuchillas dejan bordes de corte deshilachados y con hilos en troncos de no tejido spunbond. ¿Cuál es la causa?",
+          "answer": "El deshilachado en sustratos de PP spunbond o SMS se debe a dos factores: geometría de bisel incorrecta y/o excentricidad lateral excesiva. Las fibras sintéticas son elásticas: se deforman ante un bisel poco pronunciado con especificación para tisú (15°-25°) en lugar de cortarse limpiamente. Los sustratos de no tejidos requieren un bisel primario más pronunciado (25°-35°) para concentrar la fuerza de corte en el punto de contacto de la fibra. Además, una excentricidad lateral superior a 0,20 mm hace que la cuchilla comprima el tronco en lugar de cortarlo, produciendo bordes irregulares. Nuestras cuchillas para no tejidos están verificadas mediante MMC a ≤0,15 mm de excentricidad lateral y rectificadas con un perfil de bisel compuesto optimizado para fibra sintética."
+        },
+        {
+          "question": "¿Pueden suministrar cuchillas compatibles con máquinas de transformación de higiene Fameccanica o GDM?",
+          "answer": "Sí. Fabricamos según plano o muestra del cliente para las plataformas Fameccanica, GDM, Curt G. Joa, Zuiko y OEM nacionales chinas. El diámetro del agujero, el patrón de orificios para pasadores de arrastre, el diámetro exterior y el espesor son totalmente personalizables. Envíenos su plano OEM o una cuchilla desgastada de muestra y le proporcionaremos una confirmación dimensional y la aprobación de la primera pieza antes de la producción completa."
+        },
+        {
+          "question": "¿Cuál es la diferencia entre el recubrimiento TiN y el cromado duro para cuchillas de higiene?",
+          "answer": "El TiN PVD (nitruro de titanio) es un recubrimiento fino y extremadamente duro (2-3 µm, HV 2300+) aplicado en una cámara de vacío. Proporciona una barrera inerte frente a la corrosión química, añade una dureza superficial que resiste la microabrasión de las partículas de SAP en las líneas de núcleo absorbente y prolonga los intervalos de servicio del filo. El cromo duro es una capa electrodepositada más gruesa (20-30 µm) que ofrece una excelente resistencia a la corrosión en entornos de alta humedad y reduce el coeficiente de fricción frente a las bandas de fibra sintética. Para líneas de toallitas húmedas con química agresiva, el TiN es la opción preferida. Para líneas de no tejidos secas o semisecas en entornos de fábrica con alta humedad, el cromo duro resulta más rentable."
+        },
+        {
+          "question": "¿Estas cuchillas funcionan con sistemas de afilado CBN en línea en líneas de no tejidos?",
+          "answer": "La mayoría de las sierras para troncos de transformación de no tejidos para higiene no utilizan sistemas de afilado CBN continuo en línea (a diferencia de las líneas de tisú). Las cuchillas suelen sustituirse en un intervalo programado en lugar de rectificarse continuamente. Sin embargo, si su línea sí utiliza rectificado CBN en línea, nuestras cuchillas D2 endurecidas a HRC 58-60 son compatibles con las especificaciones estándar de muelas CBN. El recubrimiento TiN se eliminará por el contacto con el CBN en el filo de corte, lo cual es normal: el beneficio protector se aplica al cuerpo de la cuchilla, no a la zona de filo afilado activamente."
+        }
+      ],
+      "company": [
+        {
+          "question": "¿Son ustedes fabricantes o una empresa comercial?",
+          "answer": "Fabricante directo. Forjamos, rectificamos, recubrimos e inspeccionamos la calidad de todas las cuchillas internamente en nuestras instalaciones de 15.000 m² en Ma'anshan, provincia de Anhui, bajo certificación ISO 9001:2015. Usted se comunica directamente con los ingenieros de producción que fabricaron sus cuchillas, sin margen de revendedor."
+        },
+        {
+          "question": "¿Pueden aplicar ingeniería inversa a una cuchilla a partir de una muestra desgastada o un plano OEM?",
+          "answer": "Sí. Envíenos su cuchilla desgastada o el plano dimensional OEM y elaboraremos un informe de medición MMC y una confirmación dimensional antes de comprometernos con la producción. Los informes de inspección de primera pieza están disponibles bajo petición para nuevos proyectos de herramental."
+        },
+        {
+          "question": "¿Cuál es la cantidad mínima de pedido y el plazo de entrega?",
+          "answer": "El pedido mínimo suele ser de 2 a 5 cuchillas según el diámetro. El plazo de entrega estándar es de 10 días laborables a partir de la aprobación del plano. Podemos atender pedidos urgentes: contáctenos con su plazo requerido."
+        }
+      ]
+    }
+  },
+  {
     "id": "paper-cutting-blades",
     "name": "Cuchillas para cortar papel",
     "fullName": "Cuchillas de guillotina de alta calidad (HSS y TCT)",

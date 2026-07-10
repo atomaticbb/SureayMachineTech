@@ -1152,6 +1152,171 @@ export const blades: Blade[] = [
     }
   },
   {
+    "id": "nonwoven-log-saw-blades",
+    "name": "Lames de scie à bûches non tissées",
+    "fullName": "Lames de scie à bûches résistantes à la corrosion pour la transformation de non-tissés et d'articles d'hygiène",
+    "category": "log_saw_blades",
+    "sector": "converting",
+    "categoryDisplay": "Lames pour la transformation de non-tissés",
+    "image": "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+    "badge": "Anti-corrosion",
+    "badgeColor": "teal",
+    "gallery": [
+      "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-02.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-03.webp"
+    ],
+    "description": "Lames de scie à bûches conçues pour les lignes de transformation de non-tissés et d'articles d'hygiène — lingettes pour bébés, lingettes humides, hygiène féminine et rouleaux pour incontinence adulte. Acier à outils D2 avec revêtement anti-corrosion TiN ou chrome dur résistant aux solutions à base d'alcool, aux lotions et aux tensioactifs. Micro-affûtées à ≤0,15 mm de battement latéral pour des coupes sans effilochage sur les substrats spunbond, meltblown, SMS et airlaid. Compatibles avec les lignes de transformation Fameccanica, GDM, Curt G. Joa et Zuiko. Diamètres personnalisés en 10 jours ouvrables.",
+    "fullDescription": "Les lignes de transformation de non-tissés pour l'hygiène présentent des exigences fondamentalement différentes en matière de lames par rapport aux opérations sur papier tissu. Alors que les scies à bûches pour tissu doivent gérer la poussière de papier et l'écrasement du noyau, les scies à bûches pour non-tissés font face à deux modes de défaillance distincts : l'effilochage des fibres dû à des substrats synthétiques qui résistent à un cisaillement net, et une corrosion accélérée due à l'environnement chimique des lignes fonctionnant à l'alcool, aux lotions, aux conservateurs (phénoxyéthanol) et aux tensioactifs en forte humidité.\n\nLes lames de scie à bûches pour non-tissés Sureay sont fabriquées en acier à outils D2 (1.2379) à haute teneur en carbone et en chrome, et sont disponibles avec des revêtements anti-corrosion spécifiques à chaque application. Chaque lame est trempée sous vide, mise à niveau de tension et vérifiée par MMT avant expédition.\n\n## Pourquoi les lames pour tissu échouent sur les lignes de non-tissés\n\nLes nappes composites de polypropylène spunbond, de meltblown et de SMS sont fondamentalement plus difficiles à cisailler proprement que le tissu cellulosique. Les fibres synthétiques sont élastiques : elles se dérobent devant une lame émoussée ou légèrement voilée au lieu de se séparer proprement, produisant des bords de coupe effilochés et filandreux qui provoquent des défauts de pliage et d'emballage en aval. Une lame optimisée pour le tissu (biseau moins prononcé, matrice plus tendre pour la compatibilité CBN) produira un arrachement de fibres visible sur les substrats spunbond en une fraction du temps de service qu'elle atteindrait sur du tissu.\n\nL'environnement chimique aggrave le problème. Les lignes de lingettes humides fonctionnent avec des taux de saturation de 2,0 à 3,5× (poids de la solution par rapport au poids du substrat), ce qui signifie que la lame est continuellement exposée à la chimie d'imprégnation : généralement 80 à 95 % d'eau purifiée plus des conservateurs, des humectants et des tensioactifs. Le D2 standard sans traitement de surface développera une micro-piqûration au niveau du tranchant en quelques semaines, accélérant la dégradation du tranchant et augmentant le risque de contamination particulaire dans un produit critique pour l'hygiène.\n\n## Options de revêtement pour les environnements d'hygiène\n\n**Revêtement TiN PVD (2-3 µm, HV 2300+) :** Le nitrure de titane déposé par voie physique en phase vapeur fournit une barrière chimiquement inerte avec une excellente adhérence. Il bloque la pénétration de l'alcool et des tensioactifs dans le substrat de la lame, prolonge les intervalles d'entretien du tranchant et ajoute une couche de dureté qui résiste à la micro-abrasion des particules de SAP (polymère superabsorbant) présentes dans les lignes de noyau absorbant. Recommandé pour la transformation de lingettes humides et de produits d'incontinence pour adultes.\n\n**Chromage dur :** Le chrome dur électrodéposé (20-30 µm) offre une résistance exceptionnelle à la corrosion dans les environnements à forte humidité (≥75 % HR) et réduit le coefficient de friction contre les nappes de fibres synthétiques. La couche plus épaisse comble également les micropores de surface, créant un effet d'étanchéité contre la pénétration des agents de nettoyage pendant les cycles de lavage.\n\n**D2 non revêtu (standard) :** Convient aux lignes de transformation de non-tissés secs — airlaid, thermobond, spunlace — où aucune chimie de saturation n'est présente. Dureté HRC 58-60, compatible avec l'affûtage CBN.\n\n## Géométrie du biseau pour fibre synthétique\n\nLes substrats non tissés nécessitent un angle de biseau primaire légèrement plus prononcé (25°-35°) par rapport au tissu (15°-25°). Cette géométrie plus prononcée concentre la force de coupe au point de contact du tranchant, initiant une séparation nette des fibres plutôt que la déflexion élastique responsable de l'effilochage. Pour les bûches de lingettes humides imprégnées de lotion à forte résistance cohésive, un biseau composé (dépouille primaire + secondaire) offre la face de coupe la plus nette avec un roulement de bord minimal sur des cycles de production prolongés.\n\n## Tolérances dimensionnelles\n\n- **Battement latéral :** ≤0,15 mm\n- **Battement du tranchant :** ≤0,10 mm\n- **Parallélisme de face :** 0,05 mm\n- **Concentricité (diamètre extérieur par rapport à l'alésage) :** ≤0,30 mm\n- **Finition de surface :** Poli miroir (Ra ≤0,2 µm)\n\n## Compatibilité avec les plateformes OEM\n\nLes scies à bûches pour la transformation de non-tissés d'hygiène diffèrent des lignes de tissu par la spécification de l'alésage et le diamètre. Plateformes courantes :\n\n**Fameccanica (Italie) :** Lignes de transformation de couches pour bébés et de produits d'hygiène féminine ; diamètres de lame généralement compris entre Ø400 et Ø550 mm selon le format du produit et le diamètre du rouleau.\n\n**GDM (Italie) :** Lignes de produits d'hygiène à grande vitesse ; spécifications de lame selon le plan du client.\n\n**Curt G. Joa (États-Unis) :** Lignes nord-américaines d'incontinence pour adultes et d'hygiène féminine ; spécifications d'alésage en unités impériales disponibles.\n\n**Zuiko (Japon) :** Transformation de couches pour bébés ; dimensions de lame selon plan OEM.\n\n**Équipementiers chinois locaux (Zlink, Dachang, constructeurs basés à Quanzhou) :** Spécifications de lame fournies selon plan ou rétro-ingénierie d'échantillon.\n\nDiamètre extérieur personnalisé de Ø350 mm à Ø700 mm fabriqué sur commande. Examen des plans et validation dimensionnelle de la première pièce disponibles.",
+    "link": "/products/nonwoven-log-saw-blades",
+    "isFeatured": false,
+    "compatibleMachines": [
+      "Fameccanica",
+      "GDM",
+      "Curt G. Joa",
+      "Zuiko",
+      "Zlink",
+      "Dachang"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "D2 (1.2379) — HRC 58–60"
+      },
+      {
+        "label": "Coating Options",
+        "value": "TiN PVD | Hard Chrome | Uncoated"
+      },
+      {
+        "label": "Lateral Runout",
+        "value": "≤0.15 mm (CMM-verified)"
+      },
+      {
+        "label": "Edge Runout",
+        "value": "≤0.10 mm"
+      },
+      {
+        "label": "Diameter Range",
+        "value": "Ø350 mm – Ø700 mm (custom to drawing)"
+      },
+      {
+        "label": "Applications",
+        "value": "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls"
+      }
+    ],
+    "components": [
+      {
+        "id": "corrosion-coating",
+        "tag": "REVÊTEMENTS",
+        "title": "TiN et chrome dur pour la résistance chimique",
+        "description": "Les lignes de transformation de lingettes humides et d'articles d'hygiène sont exposées en continu aux alcools, tensioactifs et conservateurs qui corrodent les tranchants en acier à outils nu en quelques semaines. Notre revêtement TiN PVD (HV 2300+) et notre chromage dur créent une barrière chimiquement inerte, bloquant la pénétration au niveau du tranchant et prolongeant l'intervalle de fonctionnement propre entre les cycles de réaffûtage."
+      },
+      {
+        "id": "nonwoven-bevel",
+        "tag": "GÉOMÉTRIE",
+        "title": "Profil de biseau pour fibre synthétique",
+        "description": "Les nappes spunbond, meltblown et SMS se dérobent élastiquement devant un biseau à spécification tissu, provoquant un effilochage visible des fibres sur la face de coupe. Nous appliquons un biseau primaire plus prononcé (25°-35°) avec une dépouille secondaire composée qui initie une séparation nette des fibres dès le premier contact — éliminant le filandrage et la densification du bord qui provoquent des rejets en ligne d'emballage."
+      },
+      {
+        "id": "runout-hygiene",
+        "tag": "PRÉCISION",
+        "title": "Battement ≤0,15 mm pour des coupes sans effilochage",
+        "description": "Les bûches de non-tissés sont plus tendres et plus compressibles que les bûches de tissu. Tout voile latéral de la lame se traduit directement par une face de coupe comprimée et irrégulière plutôt que par un plan de cisaillement net. Chaque lame est mise à niveau de tension et vérifiée par MMT à ≤0,15 mm de battement latéral avant expédition, garantissant que la lame pénètre dans la bûche selon un angle constant à chaque passage."
+      }
+    ],
+    "dimensionLabels": {
+      "col0": "Plateforme machine / Format de produit",
+      "col1": "Diamètre extérieur (mm)",
+      "col2": "Alésage / ID (mm)",
+      "col3": "Épaisseur (mm)",
+      "caption": "* Dimensions de référence pour les plateformes courantes de transformation de non-tissés d'hygiène. Motifs d'alésage, rainures de clavette et trous de broches d'entraînement fabriqués selon le plan du client. Diamètre extérieur personnalisé Ø350-Ø700 mm disponible avec un délai de 10 jours ouvrables."
+    },
+    "standardDimensions": [
+      {
+        "spec": "Baby Wipe / Wet Wipe (short log)",
+        "od": "400",
+        "id": "To drawing",
+        "thickness": "3.80"
+      },
+      {
+        "spec": "Baby Wipe / Wet Wipe (standard log)",
+        "od": "450",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Femcare / Sanitary Napkin Roll",
+        "od": "500",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Adult Incontinence / Large Format",
+        "od": "550",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Industrial / Canister Wipe Roll",
+        "od": "600",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Custom / OEM to Drawing",
+        "od": "Ø350–700",
+        "id": "To drawing",
+        "thickness": "3.80–6.00"
+      }
+    ],
+    "relatedBladeIds": [
+      "tissue-log-saw-blades",
+      "rotary-slitter-knives-paper"
+    ],
+    "offers": {
+      "lowPrice": 150,
+      "highPrice": 900
+    },
+    "faqs": {
+      "technical": [
+        {
+          "question": "Pourquoi mes lames se corrodent-elles rapidement sur notre ligne de transformation de lingettes humides ?",
+          "answer": "Les lignes de lingettes humides exposent en continu les lames à des conservateurs (phénoxyéthanol), des tensioactifs et des solutions à base d'alcool en forte humidité. L'acier à outils D2 nu développe une micro-piqûration au niveau du tranchant en quelques semaines dans ces conditions, accélérant l'usure et créant un risque de contamination particulaire. La solution est un traitement de surface résistant à la corrosion : le revêtement TiN PVD (2-3 µm, HV 2300+) fournit une barrière chimiquement inerte contre la pénétration de l'alcool et des tensioactifs, tandis que le chromage dur scelle les micropores de surface contre la pénétration des agents de nettoyage pendant les cycles de lavage."
+        },
+        {
+          "question": "Mes lames laissent des bords de coupe effilochés et filandreux sur les bûches non tissées spunbond. Quelle en est la cause ?",
+          "answer": "L'effilochage sur les substrats PP spunbond ou SMS est causé par deux facteurs : une géométrie de biseau incorrecte et/ou un battement latéral excessif. Les fibres synthétiques sont élastiques — elles se dérobent devant un biseau peu prononcé à spécification tissu (15°-25°) au lieu de cisailler proprement. Les substrats non tissés nécessitent un biseau primaire plus prononcé (25°-35°) pour concentrer la force de coupe au point de contact des fibres. De plus, un battement latéral supérieur à 0,20 mm entraîne un écrasement de la bûche par la lame plutôt qu'un cisaillement, produisant des bords irréguliers. Nos lames pour non-tissés sont vérifiées par MMT à ≤0,15 mm de battement latéral et rectifiées avec un profil de biseau composé optimisé pour la fibre synthétique."
+        },
+        {
+          "question": "Pouvez-vous fournir des lames compatibles avec les machines de transformation d'hygiène Fameccanica ou GDM ?",
+          "answer": "Oui. Nous fabriquons selon le plan ou l'échantillon du client pour les plateformes Fameccanica, GDM, Curt G. Joa, Zuiko et les équipementiers locaux chinois. Le diamètre d'alésage, le motif des trous de broches d'entraînement, le diamètre extérieur et l'épaisseur sont tous personnalisables. Envoyez-nous votre plan OEM ou un échantillon de lame usée et nous vous fournirons une confirmation dimensionnelle et une validation de première pièce avant la production complète."
+        },
+        {
+          "question": "Quelle est la différence entre le revêtement TiN et le chromage dur pour les lames d'hygiène ?",
+          "answer": "Le TiN PVD (nitrure de titane) est un revêtement fin et extrêmement dur (2-3 µm, HV 2300+) appliqué dans une chambre à vide. Il fournit une barrière inerte contre la corrosion chimique, ajoute une dureté de surface qui résiste à la micro-abrasion des particules de SAP dans les lignes de noyau absorbant, et prolonge les intervalles d'entretien du tranchant. Le chrome dur est une couche électrodéposée plus épaisse (20-30 µm) qui offre une excellente résistance à la corrosion dans les environnements à forte humidité et réduit le coefficient de friction contre les nappes de fibres synthétiques. Pour les lignes de lingettes humides à chimie agressive, le TiN est l'option privilégiée. Pour les lignes de non-tissés secs ou semi-secs dans des environnements d'usine à forte humidité, le chromage dur est plus économique."
+        },
+        {
+          "question": "Ces lames fonctionnent-elles avec les systèmes d'affûtage CBN en ligne sur les lignes de non-tissés ?",
+          "answer": "La plupart des scies à bûches pour la transformation de non-tissés d'hygiène n'utilisent pas de systèmes d'affûtage CBN continu en ligne (contrairement aux lignes de tissu). Les lames sont généralement remplacées selon un intervalle programmé plutôt que rectifiées en continu. Cependant, si votre ligne utilise un rectifiage CBN en ligne, nos lames D2 traitées thermiquement à HRC 58-60 sont compatibles avec les spécifications standard des meules CBN. Le revêtement TiN sera éliminé par le contact CBN au niveau du tranchant, ce qui est normal — le bénéfice protecteur s'applique au corps de la lame, et non à la zone de tranchant activement affûtée."
+        }
+      ],
+      "company": [
+        {
+          "question": "Êtes-vous un fabricant ou une société commerciale ?",
+          "answer": "Fabricant direct. Nous forgeons, rectifions, revêtons et contrôlons la qualité de chaque lame en interne, dans notre installation de 15 000 m² à Ma'anshan, province de l'Anhui, sous certification ISO 9001:2015. Vous communiquez directement avec les ingénieurs de production qui ont fabriqué vos lames — sans marge de revendeur."
+        },
+        {
+          "question": "Pouvez-vous effectuer une rétro-ingénierie d'une lame à partir d'un échantillon usé ou d'un plan OEM ?",
+          "answer": "Oui. Envoyez-nous votre lame usée ou votre plan dimensionnel OEM et nous établirons un rapport de mesure MMT et une confirmation dimensionnelle avant de nous engager dans la production. Les rapports d'inspection de première pièce sont disponibles sur demande pour les nouveaux projets d'outillage."
+        },
+        {
+          "question": "Quelle est la quantité minimale de commande et le délai de livraison ?",
+          "answer": "La commande minimale est généralement de 2 à 5 lames selon le diamètre. Le délai standard est de 10 jours ouvrables à compter de la validation du plan. Les commandes urgentes peuvent être prises en charge — contactez-nous avec votre calendrier."
+        }
+      ]
+    }
+  },
+  {
     "id": "paper-cutting-blades",
     "name": "Lames pour couper le papier",
     "fullName": "Lames de coupe papier guillotine de qualité supérieure (HSS & TCT)",

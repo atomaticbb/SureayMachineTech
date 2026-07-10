@@ -1152,6 +1152,171 @@ export const blades: Blade[] = [
     }
   },
   {
+    "id": "nonwoven-log-saw-blades",
+    "name": "Lưỡi cưa gỗ tròn cho vải không dệt",
+    "fullName": "Lưỡi cưa gỗ tròn chống ăn mòn cho chuyển đổi vải không dệt và sản phẩm vệ sinh",
+    "category": "log_saw_blades",
+    "sector": "converting",
+    "categoryDisplay": "Lưỡi dao chuyển đổi vải không dệt",
+    "image": "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+    "badge": "Chống ăn mòn",
+    "badgeColor": "teal",
+    "gallery": [
+      "/images/products/blades/nonwoven-log-saw-blades-01.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-02.webp",
+      "/images/products/blades/nonwoven-log-saw-blades-03.webp"
+    ],
+    "description": "Lưỡi cưa gỗ tròn được thiết kế cho các dây chuyền chuyển đổi vải không dệt và sản phẩm vệ sinh — khăn ướt cho bé, khăn ướt, sản phẩm vệ sinh phụ nữ và tã người lớn. Thép dụng cụ D2 với lớp phủ chống ăn mòn TiN hoặc mạ crôm cứng chịu được dung dịch gốc cồn, kem dưỡng và chất hoạt động bề mặt. Mài tinh đến độ đảo hướng tâm ≤0,15 mm cho vết cắt không xơ tước trên nền vải spunbond, meltblown, SMS và airlaid. Tương thích với các dây chuyền Fameccanica, GDM, Curt G. Joa và Zuiko. Đường kính tùy chỉnh trong 10 ngày làm việc.",
+    "fullDescription": "Các dây chuyền chuyển đổi vải không dệt cho sản phẩm vệ sinh đặt ra những yêu cầu về lưỡi dao hoàn toàn khác so với hoạt động sản xuất giấy mô (tissue). Trong khi lưỡi cưa gỗ tròn cho giấy mô phải xử lý bụi giấy và tình trạng dập lõi, lưỡi cưa cho vải không dệt lại gặp phải hai kiểu hỏng hóc khác biệt: xơ tước sợi do nền vải tổng hợp chống lại việc cắt gọn, và ăn mòn tăng nhanh do môi trường hóa chất trên các dây chuyền sử dụng cồn, kem dưỡng, chất bảo quản (phenoxyethanol) và chất hoạt động bề mặt trong điều kiện độ ẩm cao.\n\nLưỡi cưa gỗ tròn cho vải không dệt của Sureay được chế tạo từ thép dụng cụ D2 (1.2379) hàm lượng carbon cao, crôm cao, và có sẵn với các lớp phủ chống ăn mòn phù hợp theo từng ứng dụng. Mỗi lưỡi dao đều được tôi chân không, cân bằng ứng suất và kiểm tra bằng máy đo tọa độ (CMM) trước khi xuất xưởng.\n\n## Vì sao lưỡi dao cho giấy mô không phù hợp với dây chuyền vải không dệt\n\nCác loại màng composite polypropylene spunbond, meltblown và SMS về cơ bản khó cắt gọn hơn nhiều so với giấy mô xenlulo. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một lưỡi dao cùn hoặc hơi đảo thay vì tách gọn, tạo ra các cạnh cắt xơ tước, có sợi thừa gây ra lỗi gấp và đóng gói ở công đoạn sau. Một lưỡi dao được tối ưu cho giấy mô (góc vát nông hơn, nền mềm hơn để tương thích với đá mài CBN) sẽ gây ra hiện tượng bung sợi rõ rệt trên nền spunbond chỉ sau một phần nhỏ thời gian vận hành mà nó đạt được trên giấy mô.\n\nMôi trường hóa chất càng làm trầm trọng thêm vấn đề này. Các dây chuyền khăn ướt vận hành với tỷ lệ tẩm ướt 2,0–3,5× (khối lượng dung dịch so với khối lượng nền vải), nghĩa là lưỡi dao liên tục tiếp xúc với hóa chất tẩm: thường là 80–95% nước tinh khiết cộng với chất bảo quản, chất giữ ẩm và chất hoạt động bề mặt. Thép D2 tiêu chuẩn không qua xử lý bề mặt sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần, làm tăng tốc độ suy giảm lưỡi cắt và tăng nguy cơ nhiễm hạt trong sản phẩm vốn đòi hỏi độ vệ sinh nghiêm ngặt.\n\n## Các lựa chọn lớp phủ cho môi trường vệ sinh\n\n**Lớp phủ TiN PVD (2–3 µm, HV 2300+):** Titan nitride lắng đọng bằng phương pháp hơi vật lý tạo ra một lớp rào cản trơ về mặt hóa học với độ bám dính tuyệt vời. Ngăn cồn và chất hoạt động bề mặt xâm nhập vào nền lưỡi dao, kéo dài chu kỳ bảo dưỡng lưỡi cắt và bổ sung một lớp cứng chống mài mòn vi mô từ các hạt SAP (polymer siêu thấm) có trong dây chuyền lõi thấm hút. Khuyến nghị cho chuyển đổi khăn ướt và tã người lớn.\n\n**Mạ crôm cứng:** Lớp crôm cứng mạ điện (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao (≥75% RH) và giảm hệ số ma sát với màng sợi tổng hợp. Lớp dày hơn cũng lấp đầy các lỗ vi mô trên bề mặt, tạo hiệu ứng bịt kín chống lại sự xâm nhập của chất tẩy rửa trong các chu kỳ rửa.\n\n**D2 không phủ (tiêu chuẩn):** Phù hợp cho các dây chuyền chuyển đổi vải không dệt khô — airlaid, thermobond, spunlace — nơi không có hóa chất tẩm ướt. Độ cứng HRC 58–60, tương thích với mài đá CBN.\n\n## Hình học góc vát cho sợi tổng hợp\n\nNền vải không dệt yêu cầu góc vát chính hơi dốc hơn (25°–35°) so với giấy mô (15°–25°). Hình học dốc hơn tập trung lực cắt tại điểm tiếp xúc của lưỡi cắt, khởi động sự tách sợi gọn gàng thay vì độ lệch đàn hồi gây ra xơ tước. Đối với các cuộn khăn ướt tẩm kem dưỡng có độ liên kết cao, góc vát kép (vát chính + vát phụ) mang lại bề mặt cắt sạch nhất với độ cuộn mép tối thiểu trong các chu kỳ vận hành kéo dài.\n\n## Dung sai kích thước\n\n- **Độ đảo hướng tâm:** ≤0,15 mm\n- **Độ đảo mép cắt:** ≤0,10 mm\n- **Độ song song bề mặt:** 0,05 mm\n- **Độ đồng tâm (đường kính ngoài so với lỗ trục):** ≤0,30 mm\n- **Độ hoàn thiện bề mặt:** Đánh bóng gương (Ra ≤0,2 µm)\n\n## Khả năng tương thích với nền tảng OEM\n\nLưỡi cưa gỗ tròn cho chuyển đổi vải không dệt vệ sinh khác với dây chuyền giấy mô về thông số lỗ trục và đường kính. Các nền tảng phổ biến:\n\n**Fameccanica (Ý):** Dây chuyền chuyển đổi tã em bé và sản phẩm vệ sinh phụ nữ; đường kính lưỡi dao thường từ Ø400–Ø550 mm tùy theo định dạng sản phẩm và đường kính cuộn.\n\n**GDM (Ý):** Dây chuyền sản phẩm vệ sinh tốc độ cao; thông số lưỡi dao theo bản vẽ của khách hàng.\n\n**Curt G. Joa (Mỹ):** Dây chuyền tã người lớn và sản phẩm vệ sinh phụ nữ tại Bắc Mỹ; có sẵn thông số lỗ trục theo hệ inch.\n\n**Zuiko (Nhật Bản):** Chuyển đổi tã em bé; kích thước lưỡi dao theo bản vẽ OEM.\n\n**Các nhà sản xuất OEM nội địa Trung Quốc (Zlink, Dachang, các nhà chế tạo tại khu vực Tuyền Châu):** Thông số lưỡi dao được cung cấp theo bản vẽ hoặc dịch ngược từ mẫu.\n\nĐường kính ngoài tùy chỉnh từ Ø350 mm đến Ø700 mm được sản xuất theo đơn đặt hàng. Có sẵn dịch vụ xem xét bản vẽ và phê duyệt kích thước mẫu đầu tiên.",
+    "link": "/products/nonwoven-log-saw-blades",
+    "isFeatured": false,
+    "compatibleMachines": [
+      "Fameccanica",
+      "GDM",
+      "Curt G. Joa",
+      "Zuiko",
+      "Zlink",
+      "Dachang"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "D2 (1.2379) — HRC 58–60"
+      },
+      {
+        "label": "Coating Options",
+        "value": "TiN PVD | Hard Chrome | Uncoated"
+      },
+      {
+        "label": "Lateral Runout",
+        "value": "≤0.15 mm (CMM-verified)"
+      },
+      {
+        "label": "Edge Runout",
+        "value": "≤0.10 mm"
+      },
+      {
+        "label": "Diameter Range",
+        "value": "Ø350 mm – Ø700 mm (custom to drawing)"
+      },
+      {
+        "label": "Applications",
+        "value": "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls"
+      }
+    ],
+    "components": [
+      {
+        "id": "corrosion-coating",
+        "tag": "LỚP PHỦ",
+        "title": "TiN và crôm cứng cho khả năng chống hóa chất",
+        "description": "Các dây chuyền khăn ướt và sản phẩm vệ sinh liên tục tiếp xúc với cồn, chất hoạt động bề mặt và chất bảo quản gây ăn mòn lưỡi thép dụng cụ trần chỉ sau vài tuần. Lớp phủ TiN PVD (HV 2300+) và mạ crôm cứng của chúng tôi tạo ra một rào cản trơ về mặt hóa học, ngăn chặn sự xâm nhập tại lưỡi cắt và kéo dài chu kỳ vận hành sạch giữa các lần mài lại."
+      },
+      {
+        "id": "nonwoven-bevel",
+        "tag": "HÌNH HỌC",
+        "title": "Biên dạng góc vát cho sợi tổng hợp",
+        "description": "Các màng spunbond, meltblown và SMS bị lệch đàn hồi trước một góc vát theo tiêu chuẩn giấy mô, gây ra hiện tượng xơ tước sợi rõ rệt trên bề mặt cắt. Chúng tôi áp dụng góc vát chính dốc hơn (25°–35°) với vát phụ kép, giúp khởi động sự tách sợi gọn gàng ngay từ lần tiếp xúc đầu tiên — loại bỏ hiện tượng bung sợi và dồn nén mép cắt vốn gây ra phế phẩm trên dây chuyền đóng gói."
+      },
+      {
+        "id": "runout-hygiene",
+        "tag": "ĐỘ CHÍNH XÁC",
+        "title": "Độ đảo ≤0,15 mm cho vết cắt không xơ tước",
+        "description": "Cuộn vải không dệt mềm hơn và dễ nén hơn so với cuộn giấy mô. Bất kỳ độ đảo hướng tâm nào của lưỡi dao đều trực tiếp dẫn đến bề mặt cắt bị nén, xù xì thay vì một mặt phẳng cắt gọn gàng. Mỗi lưỡi dao đều được cân bằng ứng suất và kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm trước khi xuất xưởng, đảm bảo lưỡi dao đi vào cuộn vải theo một góc ổn định ở mỗi nhát cắt."
+      }
+    ],
+    "dimensionLabels": {
+      "col0": "Nền tảng máy / Định dạng sản phẩm",
+      "col1": "Đường kính ngoài (mm)",
+      "col2": "Lỗ trục / Đường kính trong (mm)",
+      "col3": "Độ dày (mm)",
+      "caption": "* Kích thước tham khảo cho các nền tảng chuyển đổi vải không dệt vệ sinh phổ biến. Kiểu lỗ trục, rãnh then và lỗ chốt truyền động được chế tạo theo bản vẽ của khách hàng. Đường kính ngoài tùy chỉnh Ø350–Ø700 mm có sẵn với thời gian giao hàng 10 ngày làm việc."
+    },
+    "standardDimensions": [
+      {
+        "spec": "Baby Wipe / Wet Wipe (short log)",
+        "od": "400",
+        "id": "To drawing",
+        "thickness": "3.80"
+      },
+      {
+        "spec": "Baby Wipe / Wet Wipe (standard log)",
+        "od": "450",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Femcare / Sanitary Napkin Roll",
+        "od": "500",
+        "id": "To drawing",
+        "thickness": "4.00"
+      },
+      {
+        "spec": "Adult Incontinence / Large Format",
+        "od": "550",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Industrial / Canister Wipe Roll",
+        "od": "600",
+        "id": "To drawing",
+        "thickness": "4.76"
+      },
+      {
+        "spec": "Custom / OEM to Drawing",
+        "od": "Ø350–700",
+        "id": "To drawing",
+        "thickness": "3.80–6.00"
+      }
+    ],
+    "relatedBladeIds": [
+      "tissue-log-saw-blades",
+      "rotary-slitter-knives-paper"
+    ],
+    "offers": {
+      "lowPrice": 150,
+      "highPrice": 900
+    },
+    "faqs": {
+      "technical": [
+        {
+          "question": "Vì sao lưỡi dao của chúng tôi bị ăn mòn nhanh trên dây chuyền chuyển đổi khăn ướt?",
+          "answer": "Các dây chuyền khăn ướt liên tục khiến lưỡi dao tiếp xúc với chất bảo quản (phenoxyethanol), chất hoạt động bề mặt và dung dịch gốc cồn trong điều kiện độ ẩm cao. Thép dụng cụ D2 trần sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần trong các điều kiện này, làm tăng tốc độ mài mòn và tạo nguy cơ nhiễm hạt. Giải pháp là xử lý bề mặt chống ăn mòn: lớp phủ TiN PVD (2–3 µm, HV 2300+) tạo ra rào cản trơ về mặt hóa học chống lại sự xâm nhập của cồn và chất hoạt động bề mặt, trong khi mạ crôm cứng bịt kín các lỗ vi mô trên bề mặt chống lại sự thẩm thấu của chất tẩy rửa trong các chu kỳ rửa."
+        },
+        {
+          "question": "Lưỡi dao của chúng tôi để lại cạnh cắt xơ tước, có sợi thừa trên cuộn vải không dệt spunbond. Nguyên nhân là gì?",
+          "answer": "Hiện tượng xơ tước trên nền PP spunbond hoặc SMS do hai yếu tố gây ra: hình học góc vát không đúng và/hoặc độ đảo hướng tâm quá mức. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một góc vát nông theo tiêu chuẩn giấy mô (15°–25°) thay vì cắt gọn. Nền vải không dệt cần góc vát chính dốc hơn (25°–35°) để tập trung lực cắt tại điểm tiếp xúc với sợi. Ngoài ra, độ đảo hướng tâm vượt quá 0,20 mm khiến lưỡi dao nén cuộn vải thay vì cắt, tạo ra các cạnh xù xì. Lưỡi dao cho vải không dệt của chúng tôi được kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm và được mài với biên dạng góc vát kép tối ưu cho sợi tổng hợp."
+        },
+        {
+          "question": "Quý công ty có thể cung cấp lưỡi dao tương thích với máy chuyển đổi sản phẩm vệ sinh Fameccanica hoặc GDM không?",
+          "answer": "Có. Chúng tôi sản xuất theo bản vẽ hoặc mẫu của khách hàng cho các nền tảng Fameccanica, GDM, Curt G. Joa, Zuiko và các nhà sản xuất OEM nội địa Trung Quốc. Đường kính lỗ trục, kiểu lỗ chốt truyền động, đường kính ngoài và độ dày đều có thể tùy chỉnh. Hãy gửi cho chúng tôi bản vẽ OEM hoặc mẫu lưỡi dao đã mòn, chúng tôi sẽ cung cấp xác nhận kích thước và phê duyệt mẫu đầu tiên trước khi sản xuất hàng loạt."
+        },
+        {
+          "question": "Sự khác biệt giữa lớp phủ TiN và mạ crôm cứng cho lưỡi dao vệ sinh là gì?",
+          "answer": "TiN PVD (titan nitride) là một lớp phủ mỏng, cực kỳ cứng (2–3 µm, HV 2300+) được phủ trong buồng chân không. Nó tạo ra rào cản trơ chống ăn mòn hóa học, bổ sung độ cứng bề mặt chống mài mòn vi mô từ các hạt SAP trong dây chuyền lõi thấm hút, và kéo dài chu kỳ bảo dưỡng lưỡi cắt. Crôm cứng là lớp mạ điện dày hơn (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao và giảm hệ số ma sát với màng sợi tổng hợp. Đối với dây chuyền khăn ướt có hóa chất mạnh, TiN là lựa chọn ưu tiên. Đối với dây chuyền vải không dệt khô hoặc bán khô trong môi trường nhà máy có độ ẩm cao, mạ crôm cứng tiết kiệm chi phí hơn."
+        },
+        {
+          "question": "Những lưỡi dao này có hoạt động được với hệ thống mài CBN trực tuyến trên dây chuyền vải không dệt không?",
+          "answer": "Hầu hết các lưỡi cưa gỗ tròn cho chuyển đổi vải không dệt vệ sinh không sử dụng hệ thống mài CBN trực tuyến liên tục (khác với dây chuyền giấy mô). Lưỡi dao thường được thay thế theo lịch trình định kỳ thay vì được mài liên tục. Tuy nhiên, nếu dây chuyền của quý công ty có sử dụng mài CBN trực tuyến, lưỡi dao D2 của chúng tôi được tôi cứng đến HRC 58–60 tương thích với các thông số đá mài CBN tiêu chuẩn. Lớp phủ TiN sẽ bị loại bỏ do tiếp xúc với CBN tại lưỡi cắt, đây là điều bình thường — lợi ích bảo vệ áp dụng cho thân lưỡi dao, không phải vùng lưỡi cắt đang được mài tích cực."
+        }
+      ],
+      "company": [
+        {
+          "question": "Quý công ty là nhà sản xuất hay công ty thương mại?",
+          "answer": "Nhà sản xuất trực tiếp. Chúng tôi rèn, mài, phủ và kiểm tra chất lượng từng lưỡi dao ngay tại nhà máy rộng 15.000 m² ở Mã An Sơn, tỉnh An Huy, theo chứng nhận ISO 9001:2015. Quý khách sẽ trao đổi trực tiếp với các kỹ sư sản xuất đã chế tạo lưỡi dao của mình — không qua khâu trung gian."
+        },
+        {
+          "question": "Quý công ty có thể dịch ngược một lưỡi dao từ mẫu đã mòn hoặc bản vẽ OEM không?",
+          "answer": "Có. Hãy gửi cho chúng tôi lưỡi dao đã mòn hoặc bản vẽ kích thước OEM, chúng tôi sẽ lập báo cáo đo lường bằng CMM và xác nhận kích thước trước khi bắt đầu sản xuất. Báo cáo kiểm tra mẫu đầu tiên có sẵn theo yêu cầu cho các dự án khuôn dưỡng mới."
+        },
+        {
+          "question": "Số lượng đặt hàng tối thiểu và thời gian giao hàng là bao lâu?",
+          "answer": "Đơn hàng tối thiểu thường từ 2–5 lưỡi dao tùy theo đường kính. Thời gian giao hàng tiêu chuẩn là 10 ngày làm việc kể từ khi phê duyệt bản vẽ. Chúng tôi có thể đáp ứng đơn hàng gấp — hãy liên hệ với chúng tôi về mốc thời gian của quý công ty."
+        }
+      ]
+    }
+  },
+  {
     "id": "paper-cutting-blades",
     "name": "Lưỡi cắt giấy",
     "fullName": "Lưỡi cắt giấy chém cao cấp (HSS & TCT)",
