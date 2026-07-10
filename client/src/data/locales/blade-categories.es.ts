@@ -12,7 +12,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Cuchillas de corte longitudinal y circulares",
     "shortName": "Cuchillas cortadoras",
     "tagline": "Cuchillas rotativas rectificadas de precisión para film, papel y láminas metálicas",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    "heroImage": "/images/categories/slitter-knives-nav.webp",
     "description": "cuchillas rotativas de corte longitudinal diseñada para corte por cizalladura, incisión y cuchilla de películas de embalaje flexibles, papel, telas no tejidas y láminas metálicas. ±0,002 mm de tolerancia de espesor, ≤0,02 mm de excentricidad T.I.R., disponible en acero M2 HSS, D2, ASP23 PM y metal duro con recubrimientos opcionales de TiN, DLC y teflón.",
     "specItems": [
       {
@@ -47,7 +47,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Cuchillas e insertos para trituradoras",
     "shortName": "Cuchillas trituradoras",
     "tagline": "Herramientas de corte de doble eje, eje único y trituradoras de neumáticos",
-    "heroImage": "/images/products/shredder-blades/shredder-blades-01.webp",
+    "heroImage": "/images/categories/shredder-blades-nav.webp",
     "description": "ZGTR0zGTR de alta resistencia para líneas de reciclaje de plástico, metal, neumáticos y baterías. Aleación forjada D2/SKD11/Cr12MoV con tratamiento térmico criogénico y de vacío para una resistencia extrema al impacto y al desgaste. Ajuste OEM para plataformas de trituradoras de doble eje y eje único.",
     "specItems": [
       {
@@ -82,7 +82,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Cuchillas para granuladoras y trituradoras",
     "shortName": "Cuchillas granuladoras",
     "tagline": "Máxima calidad de triturado, MTBR ampliado",
-    "heroImage": "/images/products/granulator-blades/granulator-blades-01.webp",
+    "heroImage": "/images/categories/granulator-blades-nav.webp",
     "description": "Granuladora de plástico y cuchillas trituradoras diseñadas para líneas de reducción de tamaño. La geometría optimizada del rastrillo preserva la calidad del triturado al tiempo que reduce la carga del motor y la generación de polvo. Compatibles con máquinas granuladoras rotativas, de garra, de tolva y de granulación.",
     "specItems": [
       {
@@ -152,7 +152,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Cuchillas de cizalla y guillotina",
     "shortName": "Cuchillas de cizalla",
     "tagline": "Cuchillas de guillotina, cuchillas de cizalla de metal y juegos de corte de papel",
-    "heroImage": "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    "heroImage": "/images/categories/shear-blades-nav.webp",
     "description": "Cizalla recta y cuchillas de guillotina para cizallado de chapa/hoja, guillotinas hidráulicas, guillotinas de papel y recortadoras de tres cuchillas. Construcción de filo TCT-inlay o bimetálico con planeidad de cara controlada; se suministran como juegos emparejados para compatibilidad OEM.",
     "specItems": [
       {

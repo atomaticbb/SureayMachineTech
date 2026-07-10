@@ -31,8 +31,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     title: "Slitter Knives & Circular Blades",
     shortName: "Slitter Knives",
     tagline: "Precision-ground rotary blades for film, paper & metal foil",
-    heroImage:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    heroImage: "/images/categories/slitter-knives-nav.webp",
     description:
       "Rotary slitter knives for shear, score & razor cutting — film, paper, nonwovens & metal foil. ±0.002mm tolerance. M2 HSS, D2, ASP23 PM & carbide.",
     specItems: [
@@ -50,7 +49,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     title: "Shredder Blades & Cutter Inserts",
     shortName: "Shredder Blades",
     tagline: "Twin-shaft, single-shaft and tire shredder cutting tools",
-    heroImage: "/images/products/shredder-blades/shredder-blades-01.webp",
+    heroImage: "/images/categories/shredder-blades-nav.webp",
     description:
       "Heavy-duty shredder blades for plastic, metal, tire & battery recycling. D2/SKD11/Cr12MoV, cryo & vacuum heat treated. Drop-in OEM fit, twin & single-shaft.",
     specItems: [
@@ -68,7 +67,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     title: "Granulator Blades & Crusher Knives",
     shortName: "Granulator Blades",
     tagline: "Maximized regrind quality, extended MTBR",
-    heroImage: "/images/products/granulator-blades/granulator-blades-01.webp",
+    heroImage: "/images/categories/granulator-blades-nav.webp",
     description:
       "Plastic granulator & crusher knives for size reduction lines. Optimized rake geometry preserves regrind quality. Fits rotary, claw & hopper machines.",
     specItems: [
@@ -104,7 +103,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     title: "Shear & Guillotine Blades",
     shortName: "Shear Blades",
     tagline: "Guillotine shear knives, metal shear blades and paper trim sets",
-    heroImage: "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    heroImage: "/images/categories/shear-blades-nav.webp",
     description:
       "Straight shear & guillotine blades for metal shearing, hydraulic guillotines & three-knife trimmers. TCT-inlay or bimetallic edge, matched OEM sets.",
     specItems: [

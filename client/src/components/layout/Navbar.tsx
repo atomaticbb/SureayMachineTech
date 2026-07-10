@@ -96,6 +96,29 @@ function CloseIcon({ className }: { className?: string }) {
   );
 }
 
+// Categories with a dedicated, curated 4:3 nav thumbnail
+// (client/public/images/categories/*-nav.webp). All other categories keep
+// showing their first product's own photo, as before.
+const CURATED_ICON_SLUGS = new Set([
+  "slitter-knives",
+  "shredder-blades",
+  "granulator-blades",
+  "shear-blades",
+]);
+
+// Desktop mega menu display order (mirrors MOBILE_CATEGORY_ORDER below, but
+// kept separate since the two menus order the tail categories differently).
+const DESKTOP_CATEGORY_ORDER = [
+  "slitter-knives",
+  "shredder-blades",
+  "log-saw-blades",
+  "granulator-blades",
+  "shear-blades",
+  "wood-chipper-blades",
+  "cold-saw-blades",
+  "custom-profile",
+];
+
 function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   const lang = useLang();
   const { t } = useTranslation();
@@ -103,11 +126,11 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   const groups = useMemo(() => {
     const categories = getCategories(lang);
     const blades = getBlades(lang);
-    const custom = categories.find(c => c.slug === "custom-profile");
-    const ordered = [
-      ...categories.filter(c => c.slug !== "custom-profile"),
-      ...(custom ? [custom] : []),
-    ];
+    const ordered = [...categories].sort(
+      (a, b) =>
+        DESKTOP_CATEGORY_ORDER.indexOf(a.slug) -
+        DESKTOP_CATEGORY_ORDER.indexOf(b.slug)
+    );
     return ordered.map(category => {
       const catBlades = blades.filter(b => b.category === category.category);
       return {
@@ -117,7 +140,12 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
           category.slug === "custom-profile"
             ? "/custom"
             : `/categories/${category.slug}`,
-        icon: catBlades[0]?.image ?? category.heroImage,
+        // Curated categories use their dedicated 4:3 nav thumbnail; everything
+        // else keeps the original behavior (first product's own photo, falling
+        // back to category.heroImage) so untouched categories don't shift.
+        icon: CURATED_ICON_SLUGS.has(category.slug)
+          ? category.heroImage
+          : (catBlades[0]?.image ?? category.heroImage),
         links: catBlades.slice(0, 3),
         hasMore: catBlades.length > 3,
       };
@@ -127,22 +155,26 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
   return (
     <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] border-b border-slate-200 shadow-2xl z-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 py-8">
-        <div className="grid grid-cols-4 gap-x-5 gap-y-7">
+        <div className="grid grid-cols-3 gap-x-6 gap-y-7">
           {groups.map(group => (
             <div key={group.slug} className="flex gap-3 min-w-0 group/card">
               <Link href={group.href}>
                 <div
                   onClick={onClose}
-                  className="w-[100px] h-[100px] flex-shrink-0 bg-slate-100 overflow-hidden cursor-pointer"
+                  className="w-[128px] h-[96px] flex-shrink-0 bg-white overflow-hidden cursor-pointer"
                 >
                   <img
                     src={group.icon}
                     alt={group.shortName}
                     loading="eager"
                     decoding="async"
-                    width={100}
-                    height={100}
-                    className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-300"
+                    width={128}
+                    height={96}
+                    // object-contain (not cover): curated 4:3 thumbnails already
+                    // fill the frame exactly, but the other categories still
+                    // fall back to a square product photo — contain shows that
+                    // in full instead of cropping the top/bottom off a circle.
+                    className="w-full h-full object-contain p-1.5 group-hover/card:scale-110 transition-transform duration-300"
                   />
                 </div>
               </Link>
@@ -418,13 +450,15 @@ export default function Navbar() {
     setMobileOpen(false);
   }, [location]);
 
-  // Preload product card images so the Products dropdown is instant
+  // Preload category thumbnails so the Products dropdown is instant.
+  // Mirrors the icon source logic in ProductsMegaMenu above.
   useEffect(() => {
     const allBlades = getBlades(lang);
     categories.forEach(cat => {
-      const src =
-        allBlades.find(b => b.category === cat.category)?.image ??
-        cat.heroImage;
+      const src = CURATED_ICON_SLUGS.has(cat.slug)
+        ? cat.heroImage
+        : (allBlades.find(b => b.category === cat.category)?.image ??
+          cat.heroImage);
       if (src) {
         const img = new Image();
         img.src = src;

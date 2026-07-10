@@ -12,7 +12,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Dao xẻ & lưỡi tròn",
     "shortName": "Dao rạch",
     "tagline": "Lưỡi quay được mài chính xác cho phim, giấy và lá kim loại",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    "heroImage": "/images/categories/slitter-knives-nav.webp",
     "description": "dao cắt rotary được thiết kế để cắt, ghi điểm và cắt bằng dao cạo trên màng đóng gói linh hoạt, giấy, vải không dệt và lá kim loại. Dung sai độ dày ± 0,002 mm, T.I.R. hết, có sẵn bằng thép M2 HSS, D2, ASP23 PM và cacbua rắn với lớp phủ TiN, DLC và Teflon tùy chọn.",
     "specItems": [
       {
@@ -47,7 +47,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lưỡi máy hủy tài liệu & Phụ kiện cắt",
     "shortName": "Lưỡi máy hủy tài liệu",
     "tagline": "Dụng cụ cắt lốp hai trục, một trục và lốp",
-    "heroImage": "/images/products/shredder-blades/shredder-blades-01.webp",
+    "heroImage": "/images/categories/shredder-blades-nav.webp",
     "description": "dao máy cắt công suất lớn dành cho dây chuyền tái chế nhựa, kim loại, lốp xe và pin. Hợp kim D2/SKD11/Cr12MoV được rèn với xử lý nhiệt đông lạnh và chân không cho khả năng chống va đập và mài mòn cực cao. OEM thả vào phù hợp cho nền tảng máy hủy trục đôi và trục đơn.",
     "specItems": [
       {
@@ -82,7 +82,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lưỡi máy tạo hạt & Dao nghiền",
     "shortName": "Lưỡi tạo hạt",
     "tagline": "Chất lượng xay lại tối đa, MTBR mở rộng",
-    "heroImage": "/images/products/granulator-blades/granulator-blades-01.webp",
+    "heroImage": "/images/categories/granulator-blades-nav.webp",
     "description": "Dao nghiền và tạo hạt nhựa được thiết kế cho dây chuyền giảm kích thước. Hình học cào được tối ưu hóa duy trì chất lượng nghiền lại đồng thời giảm tải động cơ và tạo bụi. Tương thích với các máy tạo hạt quay, vuốt, phễu và tạo hạt.",
     "specItems": [
       {
@@ -152,7 +152,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lưỡi cắt và máy chém",
     "shortName": "lưỡi cắt",
     "tagline": "Bộ dao cắt chém, dao cắt thép kim loại và bộ trang trí giấy",
-    "heroImage": "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    "heroImage": "/images/categories/shear-blades-nav.webp",
     "description": "Máy cắt thẳng và dao cắt giấy dùng để cắt tấm/tấm kim loại, máy chém thủy lực, máy chém giấy và máy xén ba dao. Kết cấu lớp phủ TCT hoặc cạnh lưỡng kim với độ phẳng mặt được kiểm soát; được cung cấp dưới dạng bộ phù hợp để tương thích với OEM.",
     "specItems": [
       {

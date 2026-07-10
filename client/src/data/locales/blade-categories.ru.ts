@@ -12,7 +12,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Ножи и дисковые ножи",
     "shortName": "Ножи для резки",
     "tagline": "Ротационные ножи с прецизионной заточкой для пленки, бумаги и металлической фольги",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    "heroImage": "/images/categories/slitter-knives-nav.webp",
     "description": "ротационные ножи для продольной резки разработаны для срезания, зачистки и бритвенной резки гибкой упаковочной пленки, бумаги, нетканых материалов и металлической фольги. Допуск по толщине ±0,002 мм, биение ≤0,02 мм T.I.R., доступны из стали M2 HSS, D2, ASP23 PM и твердого карбида с дополнительными покрытиями TiN, DLC и Teflon.",
     "specItems": [
       {
@@ -47,7 +47,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Лезвия и вставки для шредеров",
     "shortName": "Лезвия для шредера",
     "tagline": "Двухвальные, одновальные и режущие инструменты для измельчения шин",
-    "heroImage": "/images/products/shredder-blades/shredder-blades-01.webp",
+    "heroImage": "/images/categories/shredder-blades-nav.webp",
     "description": "Сверхпрочный ножи для шредера для линий по переработке пластика, металла, шин и аккумуляторов. Кованый сплав D2/SKD11/Cr12MoV с криогенным и вакуумным термическая обработка для экстремальной ударопрочности и износостойкости. Подходит для двухвальных и одновальных шредерных платформ.",
     "specItems": [
       {
@@ -82,7 +82,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Ножи для грануляторов и дробилок",
     "shortName": "Ножи для гранулятора",
     "tagline": "Максимальное качество измельчения, увеличение срока службы",
-    "heroImage": "/images/products/granulator-blades/granulator-blades-01.webp",
+    "heroImage": "/images/categories/granulator-blades-nav.webp",
     "description": "Ножи для гранулятора и дробилки пластика разработаны для линий измельчения. Оптимизированная геометрия граблей сохраняет качество измельчения, снижая нагрузку на двигатель и уменьшая образование пыли. Совместимы с роторными, когтевыми, бункерными и гранулирующими грануляторами.",
     "specItems": [
       {
@@ -152,7 +152,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Ножницы и гильотинные ножи",
     "shortName": "Ножи для ножниц",
     "tagline": "Ножи для гильотинных ножниц, металлические ножи ножницы для резки и наборы для обрезки бумаги",
-    "heroImage": "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    "heroImage": "/images/categories/shear-blades-nav.webp",
     "description": "Прямые ножницы и ножницы гильотинные ножи для резки металлических листов, гидравлических гильотинных машин, бумажных гильотин и трехножевых обрезчиков. Конструкция кромки с накладкой TCT или биметаллической кромкой с контролируемой плоскостностью торца; поставляются в виде согласованных комплектов для совместимости с OEM-производителями.",
     "specItems": [
       {

@@ -12,7 +12,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Couteaux à refendre et lames circulaires",
     "shortName": "Couteaux à fendre",
     "tagline": "Lames rotatives affûtées avec précision pour les films, le papier et les feuilles métalliques",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    "heroImage": "/images/categories/slitter-knives-nav.webp",
     "description": "couteaux rotatifs de refente conçu pour le cisaillement, le rainurage et la coupe au rasoir des films d'emballage souples, du papier, des non-tissés et des feuilles métalliques. Tolérance d'épaisseur de ±0,002 mm, faux-rond de ≤0,02 mm, disponible en M2 HSS, D2, ASP23 PM et carbure monobloc avec revêtements TiN, DLC et Téflon en option.",
     "specItems": [
       {
@@ -47,7 +47,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lames de déchiqueteuse et inserts de coupe",
     "shortName": "Lames de déchiqueteuse",
     "tagline": "Outils de coupe à deux arbres, à un arbre et pour broyeurs de pneus",
-    "heroImage": "/images/products/shredder-blades/shredder-blades-01.webp",
+    "heroImage": "/images/categories/shredder-blades-nav.webp",
     "description": "ZGTR0zGTR à usage intensif pour les lignes de recyclage du plastique, du métal, des pneus et des batteries. Alliage forgé D2/SKD11/Cr12MoV avec traitement thermique cryogénique et sous vide pour une résistance extrême aux chocs et à l'usure. Adaptation OEM pour les plates-formes de broyage à deux arbres et à un arbre.",
     "specItems": [
       {
@@ -82,7 +82,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lames de broyeur et couteaux de broyeur",
     "shortName": "Lames de broyeur",
     "tagline": "Optimisation de la qualité du rebroyage, allongement du MTBR",
-    "heroImage": "/images/products/granulator-blades/granulator-blades-01.webp",
+    "heroImage": "/images/categories/granulator-blades-nav.webp",
     "description": "Couteaux de broyeur et de granulateur en plastique conçus pour les lignes de broyage. La géométrie optimisée du râteau préserve la qualité du broyat tout en réduisant la charge du moteur et la production de poussière. Compatible avec les broyeurs rotatifs, à griffes, à trémie et à granulation.",
     "specItems": [
       {
@@ -152,7 +152,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "Lames de cisailles et de guillotines",
     "shortName": "Lames de cisailles",
     "tagline": "Couteaux de guillotine, lames de cisaille en métal et jeux de coupe-papier",
-    "heroImage": "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    "heroImage": "/images/categories/shear-blades-nav.webp",
     "description": "Cisaille droite et lames de guillotine pour le cisaillage de tôles, les guillotines hydrauliques, les guillotines à papier et les rogneuses à trois couteaux. Construction des arêtes en TCT ou bimétallique avec une planéité contrôlée de la face ; fournies sous forme de jeux appariés pour une compatibilité OEM.",
     "specItems": [
       {

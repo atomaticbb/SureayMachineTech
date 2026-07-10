@@ -12,7 +12,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "سكاكين القطع والشفرات الدائرية",
     "shortName": "سكاكين المشقق",
     "tagline": "شفرات دوارة مطحونة بدقة للأفلام والورق والرقائق المعدنية",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+    "heroImage": "/images/categories/slitter-knives-nav.webp",
     "description": "تم تصميم سكاكين القطع الدوارة للقص والقطع باستخدام شفرات الحلاقة عبر أفلام التغليف المرنة والورق والأقمشة غير المنسوجة والرقائق المعدنية. ±0.002 مم تحمل السمك، .020.02 مم T.I.R. التشغيل، متوفر في الفولاذ M2 HSS، وD2، وASP23 PM والكربيد الصلب مع طلاءات TiN، وDLC، وTeflon الاختيارية.",
     "specItems": [
       {
@@ -47,7 +47,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "شفرات التقطيع وإدراج القاطع",
     "shortName": "شفرات التقطيع",
     "tagline": "أدوات قطع ذات عمود مزدوج، وعمود واحد، وتقطيع الإطارات",
-    "heroImage": "/images/products/shredder-blades/shredder-blades-01.webp",
+    "heroImage": "/images/categories/shredder-blades-nav.webp",
     "description": "شفرات تقطيع شديدة التحمل لخطوط إعادة تدوير البلاستيك والمعادن والإطارات والبطاريات. سبيكة D2/SKD11/Cr12MoV مزورة مع معالجة حرارية مبردة وفراغية لتحقيق أقصى قدر من التأثير ومقاومة التآكل. تناسب الشركة المصنعة الأصلية (OEM) المنسدلة منصات التقطيع ذات العمود المزدوج والعمود الواحد.",
     "specItems": [
       {
@@ -82,7 +82,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "شفرات المحبب وسكاكين الكسارة",
     "shortName": "شفرات المحبب",
     "tagline": "تعظيم جودة إعادة الطحن، MTBR الموسعة",
-    "heroImage": "/images/products/granulator-blades/granulator-blades-01.webp",
+    "heroImage": "/images/categories/granulator-blades-nav.webp",
     "description": "تم تصميم سكاكين التحبيب والكسارة البلاستيكية لخطوط تقليل الحجم. تحافظ هندسة المشط المُحسّنة على جودة إعادة الطحن مع تقليل حمل المحرك وتوليد الغبار. متوافق مع آلات التحبيب الدوارة والمخلبية والقادوس والتكوير.",
     "specItems": [
       {
@@ -152,7 +152,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     "title": "شفرات القص والمقصلة",
     "shortName": "شفرات القص",
     "tagline": "سكاكين القص المقصلة، وشفرات القص المعدنية، ومجموعات تقليم الورق",
-    "heroImage": "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    "heroImage": "/images/categories/shear-blades-nav.webp",
     "description": "شفرات القص المستقيمة والمقصلة لقص الصفائح المعدنية/الصفائح، وآلات المقصلة الهيدروليكية، ومقصلة الورق، وأدوات التشذيب ذات السكاكين الثلاثة. ترصيع TCT أو بناء حافة ثنائية المعدن مع تسطيح للوجه يمكن التحكم فيه؛ يتم توفيرها كمجموعات متطابقة للتوافق مع OEM.",
     "specItems": [
       {
