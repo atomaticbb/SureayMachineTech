@@ -143,13 +143,13 @@ export default function MixerCategoryPage() {
       {/* Category nav — internal links to overview + the other plant type */}
       <div className="border-b border-slate-200 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-3 flex items-center justify-between gap-4">
-          <Link href="/mixer-wear-parts">
+          <Link href="/mixer-wear-parts" asChild>
             <a className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] text-slate-500 hover:text-[#001f4d] transition-colors">
               <ArrowLeft className="w-3.5 h-3.5" /> ALL MIXER WEAR PARTS
             </a>
           </Link>
           {sibling && (
-            <Link href={sibling.link}>
+            <Link href={sibling.link} asChild>
               <a className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] text-slate-500 hover:text-[#001f4d] transition-colors text-right">
                 {sibling.name.toUpperCase()}
                 <ArrowRight className="w-3.5 h-3.5" />

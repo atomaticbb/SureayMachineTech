@@ -74,7 +74,7 @@ export default function MixerProductDetail() {
             <p className="text-xl text-slate-600 mb-8">
               Mixer wear part not found
             </p>
-            <Link href="/mixer-wear-parts">
+            <Link href="/mixer-wear-parts" asChild>
               <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
                 Back to Mixer Wear Parts
               </a>

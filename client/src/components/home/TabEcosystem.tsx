@@ -30,7 +30,7 @@ export default function TabEcosystem() {
             const label = t(`home.ecosystem.items.${eco.key}.label`);
             const industry = t(`home.ecosystem.items.${eco.key}.industry`);
             return (
-              <Link key={eco.key} href={eco.href}>
+              <Link key={eco.key} href={eco.href} asChild>
                 <a className="relative overflow-hidden block group aspect-video rounded-none">
                   {/* Photo */}
                   <img

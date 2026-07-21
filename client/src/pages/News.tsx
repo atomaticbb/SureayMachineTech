@@ -132,7 +132,7 @@ export default function CorporateDispatches() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {pagedDispatches.map(post => (
-                <Link key={post.id} href={`/news/${post.id}`}>
+                <Link key={post.id} href={`/news/${post.id}`} asChild>
                   <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300">
                     {/* Image — taller for 2-col layout */}
                     <div className="relative aspect-[16/9] overflow-hidden bg-slate-100 border-b border-slate-200">

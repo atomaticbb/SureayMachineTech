@@ -143,7 +143,7 @@ export default function ProductHero({
 
           {/* Action Buttons */}
           <div className="flex flex-col xl:flex-row items-stretch xl:items-center gap-3 mb-4">
-            <Link href="/contact">
+            <Link href="/contact" asChild>
               <a className="inline-block w-full text-center px-18 py-4 bg-[#003366] text-white font-bold text-base rounded-lg hover:bg-[#FF6600] transition-colors duration-300">
                 Request Quote
               </a>

@@ -60,7 +60,7 @@ export default function ProductDetail() {
             <p className="text-xl text-slate-600 mb-8">
               {t("productDetail.notFound.message")}
             </p>
-            <Link href="/products">
+            <Link href="/products" asChild>
               <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black  tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
                 {t("productDetail.notFound.backToBlades")}
               </a>

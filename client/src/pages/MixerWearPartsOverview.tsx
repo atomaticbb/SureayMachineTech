@@ -163,7 +163,7 @@ export default function MixerWearPartsOverview() {
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {mixerCategories.map(cat => (
-              <Link key={cat.id} href={cat.link}>
+              <Link key={cat.id} href={cat.link} asChild>
                 <a className="group block overflow-hidden bg-white border border-slate-200 hover:border-[#001f4d] hover:shadow-xl hover:shadow-slate-300/50 transition-all duration-200">
                   <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
                     {/* Default — plant scene */}

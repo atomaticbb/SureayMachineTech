@@ -42,7 +42,7 @@ export default function ProductCard({
   // ─── Grid variant: large image + title + CTA ─────────────────────────────
   if (variant === "grid") {
     return (
-      <Link href={blade.link}>
+      <Link href={blade.link} asChild>
         <a className="group flex flex-col bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-200 cursor-pointer h-full">
           {/* Large image */}
           <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden flex-shrink-0">
@@ -114,7 +114,7 @@ export default function ProductCard({
   // ─── Related variant: compact horizontal row ──────────────────────────────
   if (variant === "related") {
     return (
-      <Link key={blade.id} href={blade.link}>
+      <Link key={blade.id} href={blade.link} asChild>
         <a className="group flex gap-4 bg-white border border-slate-200 hover:border-[#001f4d] overflow-hidden transition-colors duration-200 p-4 items-center">
           <div className="w-20 h-20 flex-shrink-0 bg-slate-50 overflow-hidden">
             <img
@@ -164,7 +164,7 @@ export default function ProductCard({
 
   // ─── List variant: horizontal row (image left, specs right) ──────────────
   return (
-    <Link key={blade.id} href={blade.link}>
+    <Link key={blade.id} href={blade.link} asChild>
       <a className="group block bg-white border border-slate-200 hover:border-[#65AAD6]/50 transition-colors duration-300 cursor-pointer">
         <div className="grid grid-cols-1 md:grid-cols-[300px_1fr]">
           {/* Left: Image */}

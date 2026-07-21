@@ -29,7 +29,7 @@ function renderInlineLinks(text: string): React.ReactNode {
     const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (match) {
       return (
-        <Link key={i} href={match[2]}>
+        <Link key={i} href={match[2]} asChild>
           <a className="text-[#001f4d] underline underline-offset-2 decoration-[#001f4d]/40 hover:text-[#c49a2a] hover:decoration-[#e8b84b] transition-colors font-medium">
             {match[1]}
           </a>
@@ -119,7 +119,7 @@ export default function NewsDetail() {
           <h1 className="text-5xl font-black text-[#001f4d] mb-8">
             Article Not Found
           </h1>
-          <Link href="/news">
+          <Link href="/news" asChild>
             <a className="font-mono text-sm text-[#001f4d] tracking-widest border-b-2 border-[#001f4d] pb-1 hover:text-slate-500 hover:border-slate-500 transition-colors">
               ← Back to Articles
             </a>
@@ -189,7 +189,7 @@ export default function NewsDetail() {
         <section className="bg-white border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 lg:py-14">
             {/* Breadcrumb */}
-            <Link href="/news">
+            <Link href="/news" asChild>
               <a className="inline-flex items-center gap-1.5 font-mono text-[12px] text-slate-400 tracking-widest hover:text-[#001f4d] transition-colors mb-8">
                 ← Technical Articles
               </a>
@@ -514,12 +514,12 @@ export default function NewsDetail() {
                   schedule.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Link href="/contact">
+                  <Link href="/contact" asChild>
                     <a className="block sm:inline-block bg-[#001f4d] text-white px-7 py-3.5 font-mono text-[10px] tracking-widest text-center hover:bg-[#002d6e] transition-colors">
                       Request Blade Recommendation
                     </a>
                   </Link>
-                  <Link href={relatedBlades[0]?.link ?? "/products"}>
+                  <Link href={relatedBlades[0]?.link ?? "/products"} asChild>
                     <a className="block sm:inline-block border border-[#001f4d] text-[#001f4d] px-7 py-3.5 font-mono text-[10px] tracking-widest text-center hover:bg-[#001f4d] hover:text-white transition-colors">
                       View {relatedBlades[0]?.name ?? "Related Products"}
                     </a>
@@ -549,7 +549,7 @@ export default function NewsDetail() {
         <section className="border-t-2 border-[#001f4d]">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {prev ? (
-              <Link href={`/news/${prev.id}`}>
+              <Link href={`/news/${prev.id}`} asChild>
                 <a className="group border-b sm:border-b-0 sm:border-r border-[#001f4d] px-8 lg:px-16 py-12 flex flex-col gap-3 hover:bg-[#001f4d] transition-none cursor-pointer">
                   <span className="font-mono text-[10px] text-slate-400 tracking-widest group-hover:text-white/50">
                     ← Previous Article
@@ -571,7 +571,7 @@ export default function NewsDetail() {
             )}
 
             {next ? (
-              <Link href={`/news/${next.id}`}>
+              <Link href={`/news/${next.id}`} asChild>
                 <a className="group px-8 lg:px-16 py-12 flex flex-col items-start sm:items-end sm:text-right gap-3 hover:bg-[#001f4d] transition-none cursor-pointer">
                   <span className="font-mono text-[10px] text-slate-400 tracking-widest group-hover:text-white/50">
                     Next Article →

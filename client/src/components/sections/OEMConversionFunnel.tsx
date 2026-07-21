@@ -128,12 +128,12 @@ export default function OEMConversionFunnel({
 
         {/* Bottom: CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-          <Link href="/contact">
+          <Link href="/contact" asChild>
             <a className="px-10 py-4 bg-[#FF6600] hover:bg-[#E55A00] text-white font-bold text-center rounded-lg shadow-2xl hover:shadow-[#FF6600]/50 transition-all duration-300 hover:scale-105 transform inline-block">
               Submit Requirements
             </a>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" asChild>
             <a className="px-10 py-4 bg-transparent border-2 border-white hover:border-[#FF6600] text-white hover:text-[#FF6600] font-bold text-center rounded-lg transition-all duration-300 hover:scale-105 transform inline-flex items-center justify-center">
               Custom OEM Services
             </a>

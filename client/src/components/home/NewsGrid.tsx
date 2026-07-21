@@ -33,7 +33,7 @@ export default function NewsGrid() {
         {/* Article cards — style mirrors /news page */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {LATEST.map(article => (
-            <Link key={article.id} href={`/news/${article.id}`}>
+            <Link key={article.id} href={`/news/${article.id}`} asChild>
               <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300 h-full">
                 {/* Image with date stamp */}
                 <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-200">

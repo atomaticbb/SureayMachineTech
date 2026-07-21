@@ -20,7 +20,7 @@ export default function CTAButtons({
   return (
     <div className="space-y-4">
       {/* Primary CTA - Request Quote */}
-      <Link href="/contact">
+      <Link href="/contact" asChild>
         <a className="group relative w-full px-8 py-4 bg-gradient-to-r from-[#003366] to-[#001f4d] text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden flex items-center justify-center">
           <span className="absolute inset-0 bg-[#FF6600] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
           <span className="relative flex items-center gap-2">
