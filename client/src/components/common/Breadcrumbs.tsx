@@ -42,7 +42,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
                   {item.label}
                 </span>
               ) : (
-                <Link href={item.href}>
+                <Link href={item.href} asChild>
                   <a className="font-mono text-[13px] tracking-[0.15em]  text-slate-400 hover:text-[#001f4d] transition-colors duration-200">
                     {item.label}
                   </a>
