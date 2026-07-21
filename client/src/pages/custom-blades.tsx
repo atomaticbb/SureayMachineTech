@@ -5,52 +5,72 @@
  */
 
 import { Link } from "wouter";
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import SEO from "@/components/common/SEO";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ContactRFQ from "@/components/home/ContactRFQ";
-import FaqItem from "@/components/ui/FaqItem";
+import FloatingContactButtons from "@/components/common/FloatingContactButtons";
+import ProductFAQ, {
+  type ProductFaqData,
+} from "@/components/product-detail/ProductFAQ";
+import { useTranslation } from "@/lib/useTranslation";
 
 // ─── Capabilities ─────────────────────────────────────────────────────────────
+// keys resolve via t() at render time — see client/src/locales/*.json "custom.*"
 const CAPABILITIES = [
   {
-    label: "Drawing-to-Blade",
-    title: "Any Profile. Any Geometry. Exact Tolerance.",
-    summary:
-      "Submit your DXF, DWG, STEP file — or send a worn physical sample. We reverse-engineer the geometry, verify it on a CMM, and manufacture to your exact specification. No standard catalog required.",
-    points: [
-      "5-axis CNC profile grinding handles concave radii, angled bevels, serrated edges, asymmetric cross-sections, and multi-step profiles that standard tooling cannot reach.",
-      "Dimensional tolerances held to ±0.02 mm on profile and ±0.005 mm on critical edge geometry — documented on a CMM inspection certificate with every order.",
+    labelKey: "custom.capabilities.c1.label",
+    titleKey: "custom.capabilities.c1.title",
+    summaryKey: "custom.capabilities.c1.summary",
+    pointKeys: [
+      "custom.capabilities.c1.point1",
+      "custom.capabilities.c1.point2",
     ],
-    imageSrc: "/images/products/blades/special-shaped-knife.webp",
-    imageAlt: "Custom profile special-shaped industrial blades overview",
+    imageSrc: "/images/process/drawing-review.webp",
+    imageAltKey: "custom.capabilities.c1.imageAlt",
   },
   {
-    label: "Material Engineering",
-    title: "Steel and Carbide Grade Matched to Your Cutting Condition",
-    summary:
-      "Custom geometry does not mean compromising on material performance. We select and heat-treat every alloy to the actual operating load — abrasion level, impact risk, temperature, and required edge life.",
-    points: [
-      "D2 cold-work tool steel (HRC 60–62) for high-abrasion, moderate-impact cutting. H13 hot-work steel (HRC 48–52) where thermal cycling is severe. PM-HSS and solid carbide for the most demanding profiles.",
-      "Vacuum heat treatment and deep cryogenic post-treatment eliminate retained austenite and maximize dimensional stability across the full production run.",
+    labelKey: "custom.capabilities.c2.label",
+    titleKey: "custom.capabilities.c2.title",
+    summaryKey: "custom.capabilities.c2.summary",
+    pointKeys: [
+      "custom.capabilities.c2.point1",
+      "custom.capabilities.c2.point2",
     ],
-    imageSrc: "/images/process/material-choosing.webp",
-    imageAlt: "Material selection for custom profile industrial blades",
+    imageSrc: "/images/common/material-selection.webp",
+    imageAltKey: "custom.capabilities.c2.imageAlt",
   },
   {
-    label: "OEM Drop-In Replacement",
-    title: "Reverse-Engineered to Fit. Certified to Ship.",
-    summary:
-      "Whether you are replacing a discontinued OEM part or qualifying a new supplier for a proprietary machine knife, we match fit and function with full documentation.",
-    points: [
-      "CMM verification confirms dimensional compliance before shipment. Hardness certificate, steel mill traceability, and heat treatment batch records included as standard.",
-      "Compatible with any machine platform — no drawings needed if you supply a worn sample or key dimensions. First-article inspection report available on request.",
+    labelKey: "custom.capabilities.c3.label",
+    titleKey: "custom.capabilities.c3.title",
+    summaryKey: "custom.capabilities.c3.summary",
+    pointKeys: [
+      "custom.capabilities.c3.point1",
+      "custom.capabilities.c3.point2",
     ],
-    imageSrc: "/images/process/CMM-verification.webp",
-    imageAlt: "CMM quality inspection of custom special-shaped blades",
+    imageSrc: "/images/common/Quality-Inspection.webp",
+    imageAltKey: "custom.capabilities.c3.imageAlt",
+  },
+];
+
+// ─── Showcase ─────────────────────────────────────────────────────────────────
+const SHOWCASE = [
+  {
+    labelKey: "custom.showcase.label",
+    titleKey: "custom.showcase.s1.title",
+    summaryKey: "custom.showcase.s1.summary",
+    imageSrc: "/images/products/blades/custom-blade-showcase-01.webp",
+    imageAltKey: "custom.showcase.s1.imageAlt",
+  },
+  {
+    labelKey: "custom.showcase.label",
+    titleKey: "custom.showcase.s2.title",
+    summaryKey: "custom.showcase.s2.summary",
+    imageSrc: "/images/products/blades/custom-blade-showcase-02.webp",
+    imageAltKey: "custom.showcase.s2.imageAlt",
   },
 ];
 
@@ -58,59 +78,70 @@ const CAPABILITIES = [
 const PROCESS = [
   {
     step: "01",
-    title: "Upload Drawing or Send Sample",
-    body: "Share your DXF / DWG / STEP file via the form below, or ship a physical sample. We accept any format — even a dimensioned sketch.",
+    titleKey: "custom.process.step1.title",
+    bodyKey: "custom.process.step1.body",
   },
   {
     step: "02",
-    title: "Engineering Review & Quotation",
-    body: "Our application engineers review geometry, material options, and tolerances. You receive a detailed quotation within 1–2 business days.",
+    titleKey: "custom.process.step2.title",
+    bodyKey: "custom.process.step2.body",
   },
   {
     step: "03",
-    title: "First-Article Sample",
-    body: "We manufacture a sample batch with CMM inspection report. Approve dimensions, edge geometry, and hardness before committing to full production.",
+    titleKey: "custom.process.step3.title",
+    bodyKey: "custom.process.step3.body",
   },
   {
     step: "04",
-    title: "Batch Production & Delivery",
-    body: "Full production run with consistent quality. Every shipment includes hardness certificate, dimensional report, and material traceability.",
+    titleKey: "custom.process.step4.title",
+    bodyKey: "custom.process.step4.body",
   },
 ];
 
 // ─── Profile Types ────────────────────────────────────────────────────────────
 const PROFILES = [
-  "Straight Knives (Single / Double Bevel)",
-  "Circular Disc Blades (Any OD / ID)",
-  "Serrated & Perforated Edges",
-  "Multi-Step & Shoulder Profiles",
-  "Asymmetric Cross-Sections",
-  "Hook / Hook-and-Tooth Forms",
-  "Conical & Tapered Profiles",
-  "Carbide-Tipped Composite Blades",
+  { nameKey: "custom.profiles.p1.name", descriptionKey: "custom.profiles.p1.description" },
+  { nameKey: "custom.profiles.p2.name", descriptionKey: "custom.profiles.p2.description" },
+  { nameKey: "custom.profiles.p3.name", descriptionKey: "custom.profiles.p3.description" },
+  { nameKey: "custom.profiles.p4.name", descriptionKey: "custom.profiles.p4.description" },
+  { nameKey: "custom.profiles.p5.name", descriptionKey: "custom.profiles.p5.description" },
+  { nameKey: "custom.profiles.p6.name", descriptionKey: "custom.profiles.p6.description" },
+  { nameKey: "custom.profiles.p7.name", descriptionKey: "custom.profiles.p7.description" },
+  { nameKey: "custom.profiles.p8.name", descriptionKey: "custom.profiles.p8.description" },
+];
+
+// ─── Standard-shape cross-links — reuse existing productList.filters.* labels ──
+const STANDARD_SHAPE_LINKS = [
+  { href: "/categories/granulator-blades", labelKey: "productList.filters.granulatorBlades" },
+  { href: "/categories/shredder-blades", labelKey: "productList.filters.shredderBlades" },
+  { href: "/categories/slitter-knives", labelKey: "productList.filters.slitterKnives" },
+  { href: "/categories/shear-blades", labelKey: "productList.filters.shearBlades" },
+  { href: "/categories/cold-saw-blades", labelKey: "productList.filters.coldSawBlades" },
+  { href: "/categories/log-saw-blades", labelKey: "productList.filters.logSawBlades" },
+  { href: "/categories/wood-chipper-blades", labelKey: "productList.filters.woodChipperBlades" },
 ];
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 const STATS = [
   {
-    value: "1 Piece",
-    label: "Minimum Order Quantity",
-    sub: "Custom & Prototype",
+    valueKey: "custom.stats.moq.value",
+    labelKey: "custom.stats.moq.label",
+    subKey: "custom.stats.moq.sub",
   },
   {
-    value: "7 Days",
-    label: "Drawing to First Sample",
-    sub: "From Drawing Approval",
+    valueKey: "custom.stats.lead.value",
+    labelKey: "custom.stats.lead.label",
+    subKey: "custom.stats.lead.sub",
   },
   {
-    value: "ISO 9001:2015",
-    label: "Quality Management",
-    sub: "Certified",
+    valueKey: "custom.stats.input.value",
+    labelKey: "custom.stats.input.label",
+    subKey: "custom.stats.input.sub",
   },
   {
-    value: "Drawing or Sample",
-    label: "Input Accepted",
-    sub: "DXF / DWG / STEP / Physical",
+    valueKey: "custom.stats.quality.value",
+    labelKey: "custom.stats.quality.label",
+    subKey: "custom.stats.quality.sub",
   },
 ];
 
@@ -120,145 +151,122 @@ const fadeUp: Variants = {
 };
 
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
-const FAQS = [
-  {
-    q: "What is the minimum order quantity for custom profile blades?",
-    a: "Our minimum order quantity is 1 piece. We accept single-piece prototype orders, first-article samples, and full production runs on the same manufacturing line. There is no volume threshold required to place a custom order.",
-  },
-  {
-    q: "What drawing formats do you accept for custom blade orders?",
-    a: "We accept DXF, DWG, and STEP files as standard. PDF drawings with full dimensioning are also accepted. If you do not have a drawing, you can ship a physical sample or worn blade — we will reverse-engineer the geometry on our CMM and produce a drawing for your approval before manufacturing.",
-  },
-  {
-    q: "How long does it take to receive a first-article sample?",
-    a: "Standard lead time from drawing approval to first-article sample dispatch is 7 working days for most profiles in D2 or H13 steel. Carbide-tipped or solid carbide profiles require 10–14 working days. Complex multi-step or tight-tolerance profiles may require additional time — confirmed at quotation stage.",
-  },
-  {
-    q: "What materials are available for custom profile blades?",
-    a: "We manufacture custom profiles in D2 cold-work tool steel (HRC 60–62), H13 hot-work tool steel (HRC 48–52), PM-HSS powder-metallurgy high-speed steel, and solid tungsten carbide. Material selection is matched to your cutting condition — abrasion level, impact load, temperature, and required edge life — at the quotation stage.",
-  },
-  {
-    q: "Can you reverse-engineer a blade from a physical sample without a drawing?",
-    a: "Yes. Send us the worn or undamaged sample and we will measure all critical dimensions on our coordinate measuring machine (CMM), produce a dimensioned drawing, and submit it for your approval. Manufacturing starts only after you confirm the drawing is correct. The CMM report is included with the first-article shipment.",
-  },
-  {
-    q: "What quality documentation is included with every custom blade order?",
-    a: "Every custom blade shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming all critical dimensions and tolerances, steel mill material traceability certificate, and heat treatment batch certificate. First-article orders additionally include a first-article inspection report (FAIR). Enhanced documentation packages for ISO 9001 qualification are available on request.",
-  },
-];
-
-// ─── JSON-LD ──────────────────────────────────────────────────────────────────
-const PAGE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Product",
-      name: "Special-Shaped & Custom Profile Industrial Blades",
-      description:
-        "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG/STEP drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. MOQ 1 piece.",
-      image: "https://sureay.com/images/products/blades/special-shaped-knife.webp",
-      url: "https://sureay.com/custom",
-      brand: { "@type": "Brand", name: "Sureay" },
-      offers: {
-        "@type": "AggregateOffer",
-        lowPrice: "20",
-        highPrice: "800",
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-        seller: { "@type": "Organization", name: "Sureay Machinery Technology Co., Ltd." },
-      },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: FAQS.map(f => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: { "@type": "Answer", text: f.a },
-      })),
-    },
+const FAQ_KEYS = {
+  technical: [
+    { q: "custom.faq.tech1.question", a: "custom.faq.tech1.answer" },
+    { q: "custom.faq.tech2.question", a: "custom.faq.tech2.answer" },
+    { q: "custom.faq.tech3.question", a: "custom.faq.tech3.answer" },
+    { q: "custom.faq.tech4.question", a: "custom.faq.tech4.answer" },
+    { q: "custom.faq.tech5.question", a: "custom.faq.tech5.answer" },
+    { q: "custom.faq.tech6.question", a: "custom.faq.tech6.answer" },
+    { q: "custom.faq.tech7.question", a: "custom.faq.tech7.answer" },
+  ],
+  company: [
+    { q: "custom.faq.comp1.question", a: "custom.faq.comp1.answer" },
+    { q: "custom.faq.comp2.question", a: "custom.faq.comp2.answer" },
+    { q: "custom.faq.comp3.question", a: "custom.faq.comp3.answer" },
+    { q: "custom.faq.comp4.question", a: "custom.faq.comp4.answer" },
   ],
 };
 
 export default function CustomBlades() {
+  const { t } = useTranslation();
+
+  const faqData: ProductFaqData = {
+    technical: FAQ_KEYS.technical.map(({ q, a }) => ({
+      question: t(q),
+      answer: t(a),
+    })),
+    company: FAQ_KEYS.company.map(({ q, a }) => ({
+      question: t(q),
+      answer: t(a),
+    })),
+  };
+
   return (
     <>
       <SEO
-        title="Custom Profile & Special-Shaped Blades | OEM"
-        description="Sureay manufactures special-shaped and custom profile industrial blades from customer drawings or samples. D2, H13, PM-HSS, carbide. ±0.02 mm tolerance. DXF/DWG/STEP accepted."
+        title={t("custom.seo.title")}
+        description={t("custom.seo.description")}
         canonicalUrl="/custom"
-        keywords="custom profile blades, special shaped industrial knives, OEM custom blades manufacturer, special knife profiles, custom machine knives DXF"
+        keywords={t("custom.seo.keywords")}
+        preloadImage="/images/products/blades/special-shaped-knife-01.webp"
+        breadcrumbs={[
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.products"), url: "/products" },
+          { name: t("custom.breadcrumb.current"), url: "/custom" },
+        ]}
+        productData={{
+          name: t("custom.productData.name"),
+          image: "/images/products/blades/special-shaped-knife.webp",
+          images: [
+            "/images/process/material-choosing.webp",
+            "/images/process/CMM-verification.webp",
+          ],
+          description: t("custom.productData.description"),
+          material: "D2, H13, PM-HSS, Solid Carbide",
+          specs: [
+            { label: t("custom.productData.specs.profileToleranceLabel"), value: "±0.02 mm" },
+            { label: t("custom.productData.specs.edgeToleranceLabel"), value: "±0.005 mm" },
+            { label: t("custom.stats.moq.label"), value: t("custom.stats.moq.value") },
+            { label: t("custom.productData.specs.leadTimeLabel"), value: t("custom.stats.lead.value") },
+          ],
+          offers: { lowPrice: 20, highPrice: 800 },
+        }}
       />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(PAGE_SCHEMA)}</script>
-      </Helmet>
 
       <div className="min-h-screen bg-slate-50">
         <Navbar />
 
         {/* ── Hero ────────────────────────────────────────────────────────── */}
-        <section className="relative border-b border-slate-200 h-[420px] lg:h-[500px] overflow-hidden mt-[74px]">
-          {/* Right: full-bleed placeholder image */}
-          <img
-            src="/images/products/blades/special-shaped-knife-01.webp"
-            alt="Custom profile special-shaped industrial blades"
-            fetchPriority="high"
-            decoding="async"
-            width={2048}
-            height={2048}
-            className="absolute inset-0 w-full h-full object-cover object-center brightness-90 saturate-75"
-          />
-
-          {/* Left: navy diagonal panel */}
+        <section
+          aria-label="Custom blade header"
+          className="relative mt-[74px] h-[379px] bg-[#001f4d] border-b border-white/10 overflow-hidden"
+        >
           <div
-            className="absolute inset-y-0 left-0 h-full bg-[#001f4d] flex flex-col justify-between pl-12 pr-24 sm:pl-20 sm:pr-32 lg:pl-28 lg:pr-40 py-8 lg:py-10 w-full lg:w-[62%]"
+            className="hidden md:block absolute inset-y-0 right-0 w-1/2 lg:w-[45%]"
             style={{
-              clipPath: "polygon(0 0, 100% 0, calc(100% - 120px) 100%, 0 100%)",
+              backgroundImage:
+                "linear-gradient(to right, #001f4d 0%, rgba(0,31,77,0) 22%), url(/images/products/blades/special-shaped-knife-01.webp)",
+              backgroundSize: "cover",
+              backgroundPosition: "right center",
             }}
-          >
-            {/* Breadcrumb — top-left */}
-            <div className="flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em]  text-white/30">
-              <a href="/" className="hover:text-white/60 transition-colors">Home</a>
-              <span>›</span>
-              <a href="/products" className="hover:text-white/60 transition-colors">Products</a>
-              <span>›</span>
-              <span className="text-white/50">Special-Shaped Blades</span>
-            </div>
-
-            <div>
-              <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
-                Special-Shaped
-                <br />
-                &amp; Custom
-                <br />
-                Profile Blades
+          />
+          <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex items-center">
+            <div className="w-full md:w-[68%] lg:w-[72%]">
+              <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-black text-white tracking-tight leading-tight">
+                {t("custom.hero.title")}
               </h1>
-
-              <div className="w-12 h-[3px] bg-white/30 mb-7" />
-              <p className="text-white/70 text-[16px] leading-relaxed max-w-xl mb-10">
-                Send your drawing or a worn sample. We manufacture any blade
-                profile — any geometry, any alloy — with CMM-verified
-                tolerances and full material documentation.
+              <p className="text-white/50 text-[16px] leading-snug mt-1.5 max-w-2xl">
+                {t("custom.hero.subtitle")}
               </p>
+              <a
+                href="#rfq"
+                className="inline-flex items-center gap-2 bg-white text-[#001f4d] border-2 border-white hover:bg-[#001f4d] hover:text-white px-7 py-3.5 mt-7 font-black text-sm tracking-widest transition-all duration-300 rounded-none"
+              >
+                {t("custom.hero.cta")}
+              </a>
             </div>
-
-            <a href="#rfq" className="self-start">
-              <button className="bg-white text-[#003366] hover:bg-slate-100 px-7 py-3 font-black text-[13px]  tracking-widest transition-colors rounded-none">
-                Upload Drawing →
-              </button>
-            </a>
-
           </div>
         </section>
 
+        <Breadcrumbs
+          items={[
+            { label: t("nav.home"), href: "/" },
+            { label: t("nav.products"), href: "/products" },
+            { label: t("custom.breadcrumb.current") },
+          ]}
+        />
+
         {/* ── Stats Strip ─────────────────────────────────────────────────── */}
-        <section className="bg-slate-50 border-b border-slate-200">
+        <section className="bg-white border-y border-slate-200">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4">
               {STATS.map((stat, i) => (
                 <div
-                  key={stat.label}
+                  key={stat.labelKey}
                   className={[
-                    "px-6 md:px-8 py-10 flex flex-col gap-1.5",
+                    "group relative px-6 md:px-8 py-10 md:py-12 flex flex-col gap-2 transition-colors duration-300 hover:bg-slate-50",
                     i % 2 === 0 ? "border-r border-slate-200" : "",
                     i < 2 ? "border-b border-slate-200 md:border-b-0" : "",
                     i < 3 ? "md:border-r border-slate-200" : "",
@@ -266,29 +274,137 @@ export default function CustomBlades() {
                     .filter(Boolean)
                     .join(" ")}
                 >
-                  <p className="text-[10px] font-semibold tracking-[0.25em]  text-slate-400">
-                    {stat.sub}
+                  <span className="font-mono text-[10px] text-[#001f4d]/65  tracking-[0.28em]">
+                    {String(i + 1).padStart(2, "0")} /
+                  </span>
+                  <p className="text-[10px] font-semibold tracking-[0.25em]  text-slate-500">
+                    {t(stat.subKey)}
                   </p>
                   <p className="text-[clamp(1rem,2.5vw,1.5rem)] font-black text-[#001f4d] leading-tight tracking-tight font-mono">
-                    {stat.value}
+                    {t(stat.valueKey)}
                   </p>
-                  <p className="text-[11px] font-semibold tracking-[0.15em]  text-slate-500 mt-0.5">
-                    {stat.label}
+                  <p className="text-[11px] font-semibold tracking-[0.15em]  text-slate-600 mt-0.5">
+                    {t(stat.labelKey)}
                   </p>
+                  <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#001f4d] group-hover:w-full transition-all duration-500 ease-out" />
                 </div>
               ))}
             </div>
           </div>
         </section>
 
+        {/* ── Verified Track Record ───────────────────────────────────────── */}
+        <section className="bg-white border-b border-slate-200 py-10 lg:py-12">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <Link href="/about#certifications" asChild>
+                <a className="group flex items-center gap-4 border border-slate-200 hover:border-[#001f4d] p-4 transition-colors">
+                  <img
+                    src="/images/about/iso-9001-2015-certificate.webp"
+                    alt={t("custom.verified.certImageAlt")}
+                    loading="lazy"
+                    decoding="async"
+                    width={120}
+                    height={160}
+                    className="w-14 h-auto border border-slate-200 flex-shrink-0"
+                  />
+                  <div>
+                    <p className="font-black text-sm text-[#001f4d] tracking-tight">
+                      {t("custom.verified.certLabel")}
+                    </p>
+                    <p className="text-xs text-slate-500 mt-0.5 group-hover:text-[#001f4d] transition-colors">
+                      {t("custom.verified.certLink")}
+                    </p>
+                  </div>
+                </a>
+              </Link>
+              <div className="border-l-2 border-slate-200 pl-6">
+                <p className="text-slate-600 text-sm leading-relaxed italic">
+                  &ldquo;{t("home.testimonials.t2.quote")}&rdquo;
+                </p>
+                <p className="text-xs font-black text-[#001f4d] mt-3">
+                  Kevin L. — {t("home.testimonials.t2.role")}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Custom Blades Showcase ──────────────────────────────────────── */}
+        <section className="bg-slate-50 border-t border-slate-200 py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
+              {t("custom.showcase.eyebrow")}
+            </p>
+            <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-2xl">
+              {t("custom.showcase.headline")}
+            </h2>
+            <div className="w-12 h-[3px] bg-slate-300 mt-6" />
+
+            <div className="mt-10 lg:mt-14">
+              {SHOWCASE.map((block, index) => {
+                const reverse = index % 2 === 1;
+                return (
+                  <motion.div
+                    key={block.titleKey}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-80px" }}
+                    variants={fadeUp}
+                    className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 py-8 lg:py-10 border-b border-slate-200 last:border-0"
+                  >
+                    <div
+                      className={[
+                        "lg:col-span-6",
+                        reverse ? "lg:order-2" : "lg:order-1",
+                      ].join(" ")}
+                    >
+                      <div className="group border border-slate-200 bg-white overflow-hidden">
+                        <img
+                          src={block.imageSrc}
+                          alt={t(block.imageAltKey)}
+                          loading="lazy"
+                          decoding="async"
+                          width={1448}
+                          height={1086}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      className={[
+                        "lg:col-span-6 flex flex-col justify-center",
+                        reverse ? "lg:order-1" : "lg:order-2",
+                      ].join(" ")}
+                    >
+                      <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
+                        {t(block.labelKey)}
+                      </p>
+                      <h3 className="font-black text-xl md:text-2xl text-[#001f4d]  tracking-tight leading-[1.1] mb-4 max-w-lg">
+                        {t(block.titleKey)}
+                      </h3>
+                      <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-lg">
+                        {t(block.summaryKey)}
+                      </p>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* ── Capabilities ────────────────────────────────────────────────── */}
-        <section id="capabilities" className="bg-white border-t border-slate-200">
+        <section
+          id="capabilities"
+          className="bg-white border-t border-slate-200"
+        >
           <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-16 lg:pt-20 pb-10 lg:pb-12">
             <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-              Custom Manufacturing
+              {t("custom.capabilities.eyebrow")}
             </p>
             <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-3xl">
-              From Drawing to Finished Blade
+              {t("custom.capabilities.headline")}
             </h2>
             <div className="w-12 h-[3px] bg-slate-300 mt-6" />
           </div>
@@ -298,7 +414,7 @@ export default function CustomBlades() {
               const reverse = index % 2 === 1;
               return (
                 <motion.div
-                  key={block.title}
+                  key={block.titleKey}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-80px" }}
@@ -314,7 +430,7 @@ export default function CustomBlades() {
                     <div className="relative h-[260px] md:h-[300px] lg:h-[340px] overflow-hidden border border-slate-200 bg-slate-50">
                       <img
                         src={block.imageSrc}
-                        alt={block.imageAlt}
+                        alt={t(block.imageAltKey)}
                         loading="lazy"
                         decoding="async"
                         className="absolute inset-0 w-full h-full object-cover"
@@ -329,22 +445,22 @@ export default function CustomBlades() {
                     ].join(" ")}
                   >
                     <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-                      {block.label}
+                      {t(block.labelKey)}
                     </p>
                     <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d]  tracking-tight leading-[1.08] mb-5 max-w-2xl">
-                      {block.title}
+                      {t(block.titleKey)}
                     </h3>
                     <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl mb-6">
-                      {block.summary}
+                      {t(block.summaryKey)}
                     </p>
                     <div className="grid grid-cols-1 gap-4">
-                      {block.points.map(point => (
+                      {block.pointKeys.map(pointKey => (
                         <div
-                          key={point}
+                          key={pointKey}
                           className="border-l-2 border-slate-200 pl-4"
                         >
                           <p className="text-slate-600 text-sm md:text-[15px] leading-relaxed">
-                            {point}
+                            {t(pointKey)}
                           </p>
                         </div>
                       ))}
@@ -357,44 +473,64 @@ export default function CustomBlades() {
         </section>
 
         {/* ── Profile Types ────────────────────────────────────────────────── */}
-        <section className="bg-slate-50 border-y border-slate-200 py-16 lg:py-24">
+        <section className="bg-slate-50 border-y border-slate-200 py-10 lg:py-14">
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="lg:pt-2">
-                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-                  Profile Range
+                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
+                  {t("custom.profiles.eyebrow")}
                 </p>
-                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
-                  We Manufacture Any Profile
+                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-4">
+                  {t("custom.profiles.headline")}
                 </h2>
-                <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-8 max-w-lg">
-                  No profile is too complex. If it can be defined in a drawing,
-                  we can grind it. The list below covers the most common
-                  requests — contact us for any geometry not listed.
+                <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-6 max-w-lg">
+                  {t("custom.profiles.body")}
                 </p>
                 <a href="#rfq">
                   <button className="bg-[#001f4d] text-white hover:bg-[#003366] px-7 py-3.5 font-black text-sm  tracking-widest transition-colors rounded-none">
-                    Discuss Your Profile →
+                    {t("custom.profiles.cta")}
                   </button>
                 </a>
+
+                <div className="mt-6 pt-6 border-t border-slate-200">
+                  <p className="text-slate-500 font-bold text-[10px]  tracking-[0.25em] mb-3">
+                    {t("custom.profiles.standardShapePrompt")}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {STANDARD_SHAPE_LINKS.map(link => (
+                      <Link key={link.href} href={link.href} asChild>
+                        <a className="inline-block border border-[#001f4d]/25 text-[#001f4d] hover:bg-[#001f4d] hover:text-white text-xs font-bold tracking-wide px-3.5 py-2 transition-colors">
+                          {t(link.labelKey)}
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               </div>
 
-              <div className="border border-slate-200 bg-white">
+              <ul className="border border-slate-200 bg-white">
                 {PROFILES.map((profile, i) => (
-                  <div
-                    key={profile}
+                  <li
+                    key={profile.nameKey}
                     className={[
-                      "px-6 py-5 flex items-center gap-4",
-                      i < PROFILES.length - 1 ? "border-b border-slate-100" : "",
+                      "px-6 py-4 flex items-start gap-4",
+                      i < PROFILES.length - 1
+                        ? "border-b border-slate-100"
+                        : "",
                     ].join(" ")}
                   >
-                    <span className="w-[3px] h-5 bg-[#001f4d] flex-shrink-0" />
-                    <span className="text-[13px] font-semibold text-slate-700 tracking-[0.06em]">
-                      {profile}
-                    </span>
-                  </div>
+                    <span className="w-[3px] h-5 bg-[#001f4d] flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-[13px] font-semibold text-slate-700 tracking-[0.06em]">
+                        {t(profile.nameKey)}
+                      </p>
+                      <p className="text-sm text-slate-500 leading-relaxed mt-1">
+                        {t(profile.descriptionKey)}
+                      </p>
+                    </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         </section>
@@ -403,10 +539,10 @@ export default function CustomBlades() {
         <section className="bg-white border-b border-slate-200 py-14 lg:py-20">
           <div className="max-w-7xl mx-auto px-6 sm:px-8">
             <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-              How It Works
+              {t("custom.process.eyebrow")}
             </p>
             <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-12 max-w-xl">
-              Drawing to Delivery in 4 Steps
+              {t("custom.process.headline")}
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border border-slate-200 divide-y divide-slate-200 sm:divide-y-0">
@@ -438,10 +574,10 @@ export default function CustomBlades() {
                     {step.step}
                   </p>
                   <h3 className="font-black text-[14px]  tracking-[0.1em] text-[#001f4d] mb-3 leading-tight">
-                    {step.title}
+                    {t(step.titleKey)}
                   </h3>
                   <p className="text-slate-500 text-sm leading-relaxed">
-                    {step.body}
+                    {t(step.bodyKey)}
                   </p>
                 </motion.div>
               ))}
@@ -450,40 +586,25 @@ export default function CustomBlades() {
         </section>
 
         {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-        <section className="bg-slate-50 border-y border-slate-200 py-14 lg:py-20">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-              {/* Left: heading */}
-              <div className="lg:sticky lg:top-24 self-start">
-                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-                  Common Questions
-                </p>
-                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-6">
-                  Questions Before
-                  <br />
-                  Sending a Drawing
-                </h2>
-                <div className="w-14 h-[3px] bg-slate-300 mb-6" />
-                <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-sm">
-                  Straight answers to what most OEM engineers ask before
-                  submitting a custom blade inquiry.
-                </p>
-              </div>
-
-              {/* Right: accordion */}
-              <div className="bg-white border border-slate-200">
-                {FAQS.map((item, i) => (
-                  <FaqItem key={item.q} q={item.q} a={item.a} index={i + 1} />
-                ))}
-              </div>
-            </div>
-          </div>
+        <section
+          aria-label="Frequently asked questions"
+          className="bg-slate-50 border-y border-slate-200 py-14 lg:py-20"
+        >
+          <ProductFAQ
+            faqs={faqData}
+            productName="Special-Shaped & Custom Profile Blades"
+          />
         </section>
 
         {/* ── RFQ Form ─────────────────────────────────────────────────────── */}
         <div id="rfq">
           <ContactRFQ productName="Special-Shaped / Custom Profile Blades" />
         </div>
+
+        <FloatingContactButtons
+          whatsappPrefillText={t("custom.floatingContact.whatsappPrefill")}
+          rfqAnchorId="rfq"
+        />
 
         <Footer />
       </div>

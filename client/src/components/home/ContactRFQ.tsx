@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "wouter";
 import type { ContactSubmissionResponse } from "@shared/types";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent } from "@/lib/gtag";
@@ -110,8 +111,8 @@ export default function ContactRFQ({
       setSubmitNotice(
         json.message ||
           (emailSent
-            ? "Our engineering team will review your requirements and respond within 24 hours."
-            : "Your inquiry has been saved. If your request is urgent, please contact us by email or WhatsApp.")
+            ? t("contact.form.success.body")
+            : t("contact.form.savedOnly.body"))
       );
       setEmailNoticeOnly(!emailSent);
       gtagEvent("generate_lead", {
@@ -473,6 +474,14 @@ export default function ContactRFQ({
                       </div>
                     </div>
                   )}
+                  <p className="text-[10px] text-slate-400 leading-snug mt-1.5">
+                    {t("contact.form.ipNotice")}{" "}
+                    <Link href="/terms#products-quotations" asChild>
+                      <a className="underline hover:text-[#003366]">
+                        {t("contact.form.ipNoticeLinkLabel")}
+                      </a>
+                    </Link>
+                  </p>
                 </div>
 
                 {error && (
