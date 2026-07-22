@@ -1,7 +1,10 @@
 import { Request, Response, NextFunction } from "express";
 import { fileTypeFromBuffer } from "file-type";
 import { ContactFormSchema } from "../../shared/validators/contact.js";
-import { sendContactEmail } from "../services/emailService.js";
+import {
+  sendContactEmail,
+  sendCustomerConfirmationEmail,
+} from "../services/emailService.js";
 import { prisma } from "../db/client.js";
 
 // PDF と DWG のみ magic bytes が既知。DXF / STEP / STP はテキスト形式なので undefined が正常。
@@ -36,22 +39,18 @@ export const submitContactForm = async (
       if (expected) {
         // Binary format: magic bytes must match expected MIME
         if (!detected || detected.mime !== expected) {
-          return res
-            .status(400)
-            .json({
-              success: false,
-              message: "File content does not match its declared extension.",
-            });
+          return res.status(400).json({
+            success: false,
+            message: "File content does not match its declared extension.",
+          });
         }
       } else if (detected) {
         // Text-based format (dxf / step / stp): file-type should return undefined.
         // If it detected a binary signature, the file is not what it claims to be.
-        return res
-          .status(400)
-          .json({
-            success: false,
-            message: "File content does not match its declared extension.",
-          });
+        return res.status(400).json({
+          success: false,
+          message: "File content does not match its declared extension.",
+        });
       }
     }
 
@@ -106,7 +105,12 @@ export const submitContactForm = async (
       attachment
     );
 
-    // 6. Success response
+    // 6. Confirmation email to the submitter (best-effort, non-blocking)
+    sendCustomerConfirmationEmail(data, contact.id).catch(err =>
+      console.error("Error sending customer confirmation email:", err)
+    );
+
+    // 7. Success response
     res.json({
       success: true,
       message: emailResult.success

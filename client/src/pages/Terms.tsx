@@ -2,6 +2,7 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import { motion } from "framer-motion";
+import { gtagEvent } from "@/lib/gtag";
 
 const EFFECTIVE_DATE = "2026-06-11";
 
@@ -265,6 +266,9 @@ export default function Terms() {
                 Phone:{" "}
                 <a
                   href="tel:+8618005550657"
+                  onClick={() =>
+                    gtagEvent("phone_click", { link_location: "terms" })
+                  }
                   className="text-[#e8b84b] hover:text-white transition-colors"
                 >
                   +86 180 0555 0657

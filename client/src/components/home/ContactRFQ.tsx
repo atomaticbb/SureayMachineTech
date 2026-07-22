@@ -202,7 +202,13 @@ export default function ContactRFQ({
             </a>
 
             {/* Phone */}
-            <a href="tel:+8618005550657" className="group block">
+            <a
+              href="tel:+8618005550657"
+              onClick={() =>
+                gtagEvent("phone_click", { link_location: "contact_rfq" })
+              }
+              className="group block"
+            >
               <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">

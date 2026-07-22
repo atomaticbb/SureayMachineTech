@@ -346,6 +346,124 @@ export const sendContactEmail = async (
   }
 };
 
+// ── Customer confirmation email ────────────────────────────────────────────────
+const buildConfirmationHtml = (
+  data: ContactFormData,
+  referenceId: string
+): string => {
+  const safeName = escHtml(data.name);
+  const greeting = safeName ? `Hi ${safeName},` : "Hi there,";
+  const safeMessage = escHtml(data.message).replace(/\n/g, "<br>");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>We've Received Your Inquiry — Sureay Machinery</title>
+</head>
+<body style="margin:0;padding:0;background:#f1f5f9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f1f5f9;padding:32px 16px;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;">
+
+  <!-- HEADER -->
+  <tr>
+    <td style="background:#001f4d;padding:28px 32px 0;">
+      <p style="margin:0 0 6px;font-size:10px;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:#e8b84b;">
+        SUREAY MACHINERY · INQUIRY PORTAL
+      </p>
+      <h1 style="margin:0 0 18px;font-size:22px;font-weight:900;letter-spacing:0.04em;text-transform:uppercase;color:#ffffff;">
+        Inquiry Received
+      </h1>
+    </td>
+  </tr>
+
+  <!-- GOLD RULE -->
+  <tr>
+    <td style="background:#001f4d;padding:0 32px;">
+      <div style="height:3px;background:#e8b84b;"></div>
+    </td>
+  </tr>
+
+  <!-- REFERENCE -->
+  <tr>
+    <td style="background:#001f4d;padding:14px 32px 24px;">
+      <span style="font-size:11px;color:#94a3b8;font-family:'Courier New',monospace;">Reference #${escHtml(referenceId)}</span>
+    </td>
+  </tr>
+
+  <!-- BODY -->
+  <tr>
+    <td style="padding:28px 32px;">
+      <p style="margin:0 0 16px;font-size:15px;color:#0f172a;line-height:1.6;">${greeting}</p>
+      <p style="margin:0 0 16px;font-size:15px;color:#0f172a;line-height:1.6;">
+        Thanks for reaching out — we've got your message and someone from our team will be in touch soon.
+      </p>
+      <p style="margin:24px 0 8px;font-size:11px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#64748b;">
+        Your Message
+      </p>
+      <div style="background:#f8fafc;border-left:4px solid #001f4d;padding:16px 20px;font-size:14px;color:#1e293b;line-height:1.7;white-space:pre-wrap;word-break:break-word;">
+${safeMessage}
+      </div>
+    </td>
+  </tr>
+
+  <!-- FOOTER -->
+  <tr>
+    <td style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:20px 32px;">
+      <span style="font-size:11px;color:#94a3b8;">
+        If this is urgent, reply to this email or WhatsApp us at +86 180 0555 0657.
+      </span>
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+
+</body>
+</html>`;
+};
+
+const buildConfirmationText = (
+  data: ContactFormData,
+  referenceId: string
+): string =>
+  `${data.name ? `Hi ${data.name},` : "Hi there,"}
+
+Thanks for reaching out — we've got your message (Reference #${referenceId})
+and someone from our team will be in touch soon.
+
+Your message:
+${data.message}
+
+If this is urgent, reply to this email or WhatsApp us at +86 180 0555 0657.
+`;
+
+export const sendCustomerConfirmationEmail = async (
+  data: ContactFormData,
+  referenceId: string
+): Promise<void> => {
+  const client = getResendClient();
+  if (!client) return;
+
+  try {
+    await client.emails.send({
+      from:
+        process.env.EMAIL_FROM || "Sureay Inquiry Portal <inquiry@sureay.com>",
+      to: data.email,
+      subject: `We've received your inquiry — Sureay Machinery [Ref #${referenceId}]`,
+      html: buildConfirmationHtml(data, referenceId),
+      text: buildConfirmationText(data, referenceId),
+    });
+  } catch (error) {
+    const msg = error instanceof Error ? error.message : "Unknown error";
+    console.error("❌ Customer confirmation email failed:", msg);
+  }
+};
+
 // ── Catalog download lead notification ───────────────────────────────────────
 export const sendCatalogDownloadNotification = async (
   email: string,

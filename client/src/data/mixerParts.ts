@@ -100,6 +100,10 @@ export interface MixerPart {
     lowPrice: number;
     highPrice: number;
   };
+  /** Overrides the auto-generated "{name} for {oemTop}" <title>. Use only
+   *  where GSC data shows the auto title underperforms (low CTR at a good
+   *  position) — leave unset elsewhere so the default keeps working. */
+  seoTitle?: string;
 
   // ── Meta / utility ───────────────────────────────────────────────────────
   isFeatured?: boolean;
@@ -123,9 +127,9 @@ export const mixerCategories: MixerCategory[] = [
     id: "concrete-mixing-plant",
     category: "concrete_mixing_plant",
     name: "Concrete Mixing Plant Parts",
-    seoTitle: "Concrete Mixing Plant Parts: Arms, Liners & Blades",
+    seoTitle: "Concrete Mixer Wear Parts — OEM Replacement (Ni-Hard)",
     description:
-      "Cast wear parts for concrete mixers — mixing arms, liner plates, scrapers & bolt-on blades in Ni-Hard & high-chrome iron. OEM fit Sicoma, Liebherr & MEKA.",
+      "OEM-fit replacement wear parts for Sicoma, Liebherr & MEKA concrete mixers — arms, liner plates, scrapers in Ni-Hard & high-chrome iron.",
     image:
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
     link: "/mixer-wear-parts/concrete-mixing-plant",
@@ -134,9 +138,9 @@ export const mixerCategories: MixerCategory[] = [
     id: "asphalt-mixing-plant",
     category: "asphalt_mixing_plant",
     name: "Asphalt Mixing Plant Parts",
-    seoTitle: "Asphalt Mixing Plant Parts: Arms, Liners & Blades",
+    seoTitle: "Asphalt Plant Wear Parts — OEM Replacement (HB600+)",
     description:
-      "High-temperature wear parts for asphalt mixers — mixing arms, liner plates, spiral blades & scrapers. OEM fit Ammann, Marini & Benninghoven.",
+      "OEM-fit replacement wear parts for Ammann, Marini, Benninghoven, MEKA & Astec asphalt plants — mixing arms, liner plates, spiral blades, HB600+ chrome iron.",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
     link: "/mixer-wear-parts/asphalt-mixing-plant",
@@ -944,7 +948,8 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-02.webp",
     ],
     description:
-      "Asphalt mixing plant liner plate in high-chrome iron - resists hot-mix abrasion and heat, protecting the mixer shell; bolt-in replacement.",
+      "Bolt-in asphalt mixer liner plate, high-chrome iron HB600+ — fits Ammann, Marini, Benninghoven, MEKA & Astec pugmills. Typical 6-18 month service life.",
+    seoTitle: "Asphalt Mixer Liner Plate — HB600+ OEM Replacement",
     fullDescription:
       "Liner plates protect the inside of the pugmill from the twin assault of hot, sticky bituminous mix and the sharp mineral aggregate carried in it. They are the barrier that keeps abrasion and heat off the structural mixer shell.\n\nWhen a liner wears thin or a bolt backs out, hot mix works its way to the shell and to the gap behind the plate, where it packs, hardens and accelerates the next failure. Left too long, the damage moves from a cheap liner swap to a shell repair and extended downtime in the middle of a paving season - the worst possible time to lose a plant.\n\nSureay asphalt liners are cast in high-chromium iron above HB 600, selected to hold up to abrasion at mixing temperature, and produced on the lost-foam and DISA green-sand lines for accurate, flush-fitting segments. They bolt into pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, with a typical 6-18 month service life depending on throughput and aggregate hardness.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-liner-plate",
@@ -1310,7 +1315,8 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-scraper/asphalt-scraper-02.webp",
     ],
     description:
-      "Asphalt mixing plant W-type scraper blade - sweeps hot mix off the pugmill floor and walls each cycle for clean discharge and no carbon build-up.",
+      "W-type scraper blade for asphalt pugmills, HB600+ chrome iron — fits Ammann, Marini, Benninghoven, MEKA & Astec. Adjustable mount, bolt-in fit.",
+    seoTitle: "Asphalt Mixer W-Type Scraper Blade — OEM Fit",
     fullDescription:
       "The W-type scraper works the floor and lower walls of the pugmill, sweeping hot mix toward the discharge gate so the chamber empties cleanly at the end of each batch. Its W profile reaches the contours an ordinary straight scraper leaves behind.\n\nLet the scraper wear and clearance open up, and hot mix is left to cling, cool and carbonize on the chamber surfaces. That baked-on build-up reduces effective batch volume, can break loose and contaminate later batches, and eventually has to be burned or chipped out during a forced shutdown. A scraper held to its clearance keeps discharge clean and the chamber free of carbon deposits.\n\nSureay W-type scrapers are cast in high-chromium iron above HB 600 for abrasion resistance at mixing temperature, on adjustable mounts so clearance can be reset as they wear. They fit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, with a typical 6-18 month service life depending on output and aggregate hardness.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-scraper",

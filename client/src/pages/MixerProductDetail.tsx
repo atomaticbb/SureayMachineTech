@@ -116,7 +116,7 @@ export default function MixerProductDetail() {
 
   // SEO title keeps the high-intent OEM names; brand suffix added by <SEO>.
   const oemTop = part.compatibleMachines.slice(0, 2).join(" & ");
-  const seoTitle = `${part.name} for ${oemTop}`;
+  const seoTitle = part.seoTitle ?? `${part.name} for ${oemTop}`;
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">

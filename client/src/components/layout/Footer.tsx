@@ -189,6 +189,9 @@ export default function Footer() {
           </a>
           <a
             href="tel:+8618005550657"
+            onClick={() =>
+              gtagEvent("phone_click", { link_location: "footer" })
+            }
             className="font-semibold text-slate-300 hover:text-white transition-colors"
           >
             +86 180 0555 0657
