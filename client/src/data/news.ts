@@ -84,6 +84,88 @@ function sortDispatchesByDate(
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
+  {
+    id: "mixer-wear-parts-oem-matching",
+    tag: "TECHNICAL GUIDE",
+    date: "22.JUL.2026",
+    title:
+      "How We Match a Replacement Concrete Mixer Wear Part When There's No Drawing on File",
+    excerpt:
+      "No OEM drawing for your Zoomlion, Sicoma or Liebherr mixer? Here's what a worn liner plate, arm or scraper actually tells us — material, bolt pattern and wear cause — before we cast a replacement.",
+    image: "/images/news/mixer-wear-parts-oem-matching-cover.webp",
+    readTime: "4 MIN",
+    seoTitle:
+      "Concrete Mixer Wear Parts: Matching a Replacement Without a Drawing | Sureay",
+    metaDescription:
+      "No OEM drawing for your concrete mixer liner, arm or scraper? Learn how a worn sample's material, wear pattern and bolt geometry let us cast a drop-in replacement.",
+    keywords:
+      "concrete mixer wear parts, mixer liner plate replacement, concrete mixing arm, OEM mixer parts matching, Zoomlion mixer parts, Sicoma mixer wear parts, ZG310-570 cast steel, Ni-Hard liner plate",
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A maintenance manager sends us a photo of a liner segment pulled out of a Zoomlion mixing plant. Half the wear face is gone, the bolt holes have gone slightly oval, and the only identifying mark left is a faint cast number and the Zoomlion logo pressed into the back. No drawing exists anywhere in the plant's paperwork — the machine is eight years old and the original supplier documentation was lost in a filing cabinet somewhere along the way. That's not the exception. That's how most concrete mixer wear-part orders actually start.",
+      },
+      {
+        type: "h2",
+        value: "Reading a Worn Part Before Casting Anything",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Every liner plate and scraper we've cast leaves the mold with a pattern number and, usually, a position number stamped somewhere on the back face — a \"5\" cast into the corner of a plate, for instance, marking which slot in the drum it belongs to. Those marks matter more than the part's outer shape, because two liners that look nearly identical from the front can carry different bolt spacing, different curvature radii, or different thicknesses depending on where in the mixer they sit.",
+      },
+      {
+        type: "image",
+        value: "/images/news/mixer-wear-parts-oem-matching-cast-marks.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before we quote anything, we're really reading three things off the worn sample: the material family (Ni-Hard versus high-chromium iron look almost the same once they're painted gray and coated in cement dust), the wear pattern — is the plate thinning evenly or is it gouged in one spot, which usually points to a misaligned arm rather than a bad liner — and the bolt geometry. Get the bolt spacing wrong by a few millimeters and the new plate won't seat flush, which defeats the entire point of a bolt-in replacement.",
+      },
+      {
+        type: "image",
+        value: "/images/news/mixer-wear-parts-oem-matching-pattern-number.webp",
+      },
+      {
+        type: "h2",
+        value: "Why the Arm and the Liner Are Never the Same Steel",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This trips people up: a [concrete mixing arm](/mixer-wear-parts/concrete-mixing-plant/concrete-mixing-arm) and a liner plate wear against the same aggregate in the same drum, but they're cast in completely different materials. Liners and scrapers go to Ni-Hard or high-chromium iron at HB 600-700 — hard enough that sand and gravel can't grind through it quickly. An arm cast that hard would crack at the hub within a few batches, because the arm isn't fighting abrasion, it's absorbing the full reversing torque of the load every time the mixer changes direction. That's why arms are cast in ZG310-570, a medium-strength carbon steel picked for toughness, not hardness. It flexes slightly under shock instead of snapping. Put a liner-grade casting on an arm and you'll get a field failure inside a month; put arm-grade steel on a liner and it'll wear out in weeks instead of the 6-18 months you'd expect from a proper wear plate.",
+      },
+      {
+        type: "image",
+        value: "/images/news/mixer-wear-parts-oem-matching-arms.webp",
+      },
+      {
+        type: "h2",
+        value: "Matching the Bolt Pattern, Not Just the Silhouette",
+      },
+      {
+        type: "paragraph",
+        value:
+          "We cast liners and scrapers on lost-foam and DISA green-sand lines specifically because they hold bolt-hole position accurately across a full production run — a plate that's a millimeter off on hole spacing either won't go in at all or sits proud of its neighbors, leaving a lip for material to catch on and tear loose early. The [liner plates](/mixer-wear-parts/concrete-mixing-plant/concrete-liner-plate) and [scraper blades](/mixer-wear-parts/concrete-mixing-plant/concrete-scraper) we ship are machined to the original bolt pattern for Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich plants, which covers most of what's running in the field. For anything outside that list — an older machine, a rebranded plant, a regional OEM — the worn sample itself becomes the reference. We don't need the plant model if we have the part in hand.",
+      },
+      {
+        type: "h2",
+        value: "What to Send If You Want a Fast Quote",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A clear photo of the cast marks and the wear face tells us more than a plant model number does. If you can measure center-to-center distance on two bolt holes, include that too — it's the single number that most often turns a two-round quote into a one-round quote. And if a liner or scraper is starting to thin, order the arm at the same time even if it still looks fine: arms run 12-18 months against a liner's 6-18, so the two rarely wear out together, but a plant that's already down for a liner swap is the cheapest time to also replace an arm that's within a few months of its own limit.",
+      },
+      {
+        type: "callout",
+        value:
+          "Send us a clear photo of the worn part — cast marks and wear face both — and we'll identify the material and match the bolt pattern before we quote. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
   // ── Featured ──────────────────────────────────────────────────────────────
   {
     id: "wood-chipper-blade-wear-patterns",
