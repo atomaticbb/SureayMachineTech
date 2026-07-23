@@ -27,7 +27,16 @@ const getResendClient = (): Resend | null => {
 //   SHOWN on the website stays lynn@sureay.com (that lives in the client UI).
 const SALES_RECIPIENTS = ["amelia@sureay.com"];
 
+// EMAIL_RECIPIENTS_OVERRIDE (optional) → comma-separated list that replaces
+// every other recipient below. Intended for local/dev testing so inquiry and
+// catalog-download notifications never reach real inboxes.
 const buildRecipients = (): string[] => {
+  if (process.env.EMAIL_RECIPIENTS_OVERRIDE) {
+    return process.env.EMAIL_RECIPIENTS_OVERRIDE.split(",")
+      .map(s => s.trim())
+      .filter(Boolean);
+  }
+
   const list: string[] = [];
   if (process.env.EMAIL_TO) list.push(process.env.EMAIL_TO);
   if (process.env.EMAIL_TO_OWNER) list.push(process.env.EMAIL_TO_OWNER);
