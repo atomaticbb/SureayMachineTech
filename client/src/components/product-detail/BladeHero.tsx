@@ -4,7 +4,7 @@
  * Right: title, category, description, spec bullets, CTA.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight, Download, Loader2 } from "lucide-react";
 import type { Blade } from "@/data/blades";
 import { getCatalogUrl } from "@/data/blades";
@@ -27,6 +27,20 @@ export default function BladeHero({ blade }: BladeHeroProps) {
   const [catalogState, setCatalogState] = useState<CatalogState>("idle");
   const [email, setEmail] = useState("");
   const [formError, setFormError] = useState("");
+  const [activeImg, setActiveImg] = useState(0);
+
+  // Hero images: the last two gallery slots are reserved for the
+  // DecisiveSpecs/ComprehensiveData panels, so only the leading slots
+  // are eligible for the hero thumbnail track.
+  const heroImages =
+    blade.gallery && blade.gallery.length > 2
+      ? blade.gallery.slice(0, -2)
+      : [blade.image];
+  const activeSrc = heroImages[Math.min(activeImg, heroImages.length - 1)];
+
+  // Reset to the cover shot when navigating between products (the page
+  // component may reuse this instance across route param changes).
+  useEffect(() => setActiveImg(0), [blade.id]);
 
   const handleCatalogSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -69,7 +83,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
           style={DOT_GRID_STYLE}
         >
           <img
-            src={blade.image}
+            src={activeSrc}
             alt={blade.fullName || blade.name}
             className="h-full w-full object-contain p-3 mix-blend-multiply"
             loading="eager"
@@ -78,6 +92,33 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             height={520}
           />
         </div>
+        {heroImages.length > 1 && (
+          <div className="flex gap-2 p-3 border-t border-slate-200 bg-white">
+            {heroImages.map((src, i) => (
+              <button
+                key={src}
+                type="button"
+                onClick={() => setActiveImg(i)}
+                aria-label={`View image ${i + 1} of ${blade.name}`}
+                aria-current={i === activeImg}
+                className={`h-16 w-16 lg:h-20 lg:w-20 shrink-0 border overflow-hidden transition-colors ${
+                  i === activeImg
+                    ? "border-[#001f4d]"
+                    : "border-slate-200 hover:border-slate-400"
+                }`}
+                style={DOT_GRID_STYLE}
+              >
+                <img
+                  src={src}
+                  alt=""
+                  className="h-full w-full object-contain p-1 mix-blend-multiply"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* ── Right: Product Info ───────────────────────────────── */}
