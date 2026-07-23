@@ -2631,11 +2631,11 @@ export const blades: Blade[] = [
     "categoryDisplay": "سكاكين تجليد الكتب",
     "badge": "صالح OEM",
     "badgeColor": "blue",
-    "image": "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+    "image": "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     "gallery": [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp"
     ],

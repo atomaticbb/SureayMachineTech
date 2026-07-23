@@ -85,6 +85,92 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "custom-length-guillotine-paper-cutter-blades",
+    tag: "TECHNICAL GUIDE",
+    date: "23.JUL.2026",
+    title:
+      "Your Guillotine Cutter Isn't a Polar 115 — So Why Are You Still Ordering Catalog-Length Blades?",
+    excerpt:
+      "Stock guillotine blades run 450–2,050 mm in fixed increments. When your cutter's bed doesn't match, here's what actually gets copied from a sample — bevel angle, hole pattern, and thickness tolerance across a batch.",
+    image: "/images/news/custom-length-guillotine-blades-cover.webp",
+    readTime: "3 MIN",
+    seoTitle:
+      "Custom-Length Guillotine Paper Cutter Blades: Matching Non-Standard Cutters",
+    metaDescription:
+      "Guillotine cutter doesn't match a catalog blade length? Learn how custom-length paper cutter blades are matched from a sample — bevel angle, hole pattern, and thickness tolerance.",
+    keywords:
+      "custom guillotine paper cutter blades, non-standard length paper cutter blade, custom length guillotine knife, OEM guillotine blade matching, paper cutter blade bevel angle, guillotine blade hole pattern, Polar replacement blade, Wohlenberg guillotine blade custom",
+    relatedProductIds: ["paper-cutting-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A finishing house in Vietnam emailed us last month about a 1,340 mm bed guillotine — a regional brand, rebuilt twice, long out of the original manufacturer's parts catalog. Every stock blade they'd found online came in 1,300 mm or 1,400 mm. Neither fits a 1,340 mm bed without shimming the clamp bar or grinding the blade down and throwing off the bevel geometry in the process. That's not a rare problem. Most guillotine cutters running past their second decade have been re-bedded, retrofitted with a different clamp system, or built by a regional manufacturer whose spec sheet never made it past a local dealer network.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Stock replacement [guillotine paper cutter blades](/products/paper-cutting-blades) cover the common range — 450 mm to 2,050 mm, in the increments Polar, Wohlenberg, and Perfecta use. Outside that range, or on a hole pattern that doesn't match a listed catalog part, the blade has to be built to your machine, not picked off a shelf.",
+      },
+      {
+        type: "h2",
+        value: "What Actually Gets Matched",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Length and width are the easy part. The variables that actually decide whether a custom blade performs are the ones a distributor can't quote from a part number.",
+      },
+      {
+        type: "image",
+        value: "/images/news/custom-length-guillotine-blades-shapes.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bevel angle and face come first. Standard guillotine geometry is a 21° single bevel, but older, rebuilt, or regionally-built cutters sometimes run a different angle, or a double bevel left over from a prior modification. Copy the wrong one and the blade rides the clamp bar wrong, producing a tapered edge instead of a square cut.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Hole pattern and back-edge profile come next. Mounting hole pitch, diameter, and countersink depth vary machine to machine, and even between two units of the same model built five years apart. We wire-EDM the holes off a sample blade or a dimensioned drawing rather than guessing from a nominal spec.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Thickness tolerance across a set matters most when you're ordering more than one blade — spares for three sister machines, say. Edge thickness has to hold within roughly 0.05–0.1 mm across the whole batch. A blade a hair thicker than the rest sits proud against the clamp bar and takes the full load on that one edge. That's how you get premature chipping on the newest blade in a set while the older ones are still fine.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That third point is the one buyers underestimate. Matching one sample blade is straightforward. Grinding six or eight custom lengths on the same setup and checking them against each other is a different quality bar than six individually-approximated blades that each \"look about right.\"",
+      },
+      {
+        type: "h2",
+        value: "What to Send Us",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The fastest path to an accurate custom blade is a worn sample, not a drawing from memory. If the original blade still exists — even badly worn — we pull length, width, bevel angle, hole pitch, and back-profile directly off it. No sample, no problem: send bed length, clamp bar thickness, and photos of the hole pattern with a scale reference next to it, and we confirm dimensions back before any steel gets cut. Custom lengths, hole patterns, and back-edge profiles built to drawing typically ship within 7 working days.",
+      },
+      {
+        type: "image",
+        value: "/images/news/custom-length-guillotine-blades-production.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Material selection doesn't change for custom work. The same T10, M2/SKH-51 HSS, and tungsten-carbide-tipped options apply, picked by substrate and cut volume, not by how standard the length is. What changes is that nobody in the supply chain gets to approximate.",
+      },
+      {
+        type: "callout",
+        value:
+          "Send us your machine's bed length, clamp bar thickness, and a photo of the hole pattern — or a worn sample if you still have one — and we'll confirm the blade spec before cutting any steel. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "mixer-wear-parts-oem-matching",
     tag: "TECHNICAL GUIDE",
     date: "22.JUL.2026",

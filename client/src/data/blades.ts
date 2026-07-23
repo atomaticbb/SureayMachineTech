@@ -2961,11 +2961,11 @@ export const blades: Blade[] = [
     badge: "OEM Fit",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-    gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+    gallery: [
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
+      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
