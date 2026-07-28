@@ -11,7 +11,7 @@
 
 import { useRoute, Redirect, Link } from "wouter";
 import { Helmet } from "react-helmet-async";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -24,12 +24,13 @@ import ContactRFQ from "@/components/home/ContactRFQ";
 import {
   getMixerCategoryBySlug,
   getMixerPartsByCategory,
-  mixerCategories,
   mixerCompanyFaq,
 } from "@/data/mixerParts";
 import { mixerToBlade } from "@/lib/mixerToBlade";
 import {
   CATEGORY_CONTENT,
+  CONTENT_LAST_REVIEWED,
+  CONTENT_REVIEWER,
   ORDER_STEPS,
   TRUST_ITEMS,
 } from "@/data/mixerContent";
@@ -48,7 +49,6 @@ export default function MixerCategoryPage() {
     new Set(parts.flatMap(p => p.compatibleMachines))
   );
   const content = CATEGORY_CONTENT[meta.category];
-  const sibling = mixerCategories.find(c => c.category !== meta.category);
   const sceneImage = `/images/mixer-parts/hero/${meta.id}-scene.webp`;
 
   const scrollToRfq = (e: React.MouseEvent) => {
@@ -140,25 +140,6 @@ export default function MixerCategoryPage() {
         ]}
       />
 
-      {/* Category nav — internal links to overview + the other plant type */}
-      <div className="border-b border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-3 flex items-center justify-between gap-4">
-          <Link href="/mixer-wear-parts" asChild>
-            <a className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] text-slate-500 hover:text-[#001f4d] transition-colors">
-              <ArrowLeft className="w-3.5 h-3.5" /> ALL MIXER WEAR PARTS
-            </a>
-          </Link>
-          {sibling && (
-            <Link href={sibling.link} asChild>
-              <a className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] text-slate-500 hover:text-[#001f4d] transition-colors text-right">
-                {sibling.name.toUpperCase()}
-                <ArrowRight className="w-3.5 h-3.5" />
-              </a>
-            </Link>
-          )}
-        </div>
-      </div>
-
       {/* 2 · Products */}
       <section
         aria-label="Wear part configurations"
@@ -190,6 +171,24 @@ export default function MixerCategoryPage() {
             <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1]">
               {content.overviewLead}
             </h2>
+            <div className="mt-6 border-t border-slate-200 pt-4">
+              <p className="text-[13px] text-slate-600 leading-relaxed">
+                Technical content reviewed by{" "}
+                <span className="font-bold text-[#001f4d]">
+                  {CONTENT_REVIEWER.name}
+                </span>
+                , {CONTENT_REVIEWER.title}
+              </p>
+              <p className="font-mono text-[10px] text-slate-400 tracking-[0.18em] mt-1.5 uppercase">
+                Last reviewed · {CONTENT_LAST_REVIEWED}
+              </p>
+              <Link href="/about#certifications" asChild>
+                <a className="group inline-flex items-center gap-2 pb-1 mt-4 text-[13px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+                  View our ISO 9001:2015 certificate
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
+                </a>
+              </Link>
+            </div>
           </aside>
           <div className="lg:col-span-8 space-y-5">
             {content.overviewBody.map((para, i) => (
@@ -253,11 +252,17 @@ export default function MixerCategoryPage() {
           <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-4">
             Made to fit your plant — from a sample or a model
           </h2>
-          <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-10">
+          <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-4">
             Every part is cast to order. There is no catalogue number to look up
             — we reverse-engineer the fit from your worn part or plant model, so
             you get an exact replacement rather than a near-miss.
           </p>
+          <Link href="/news/mixer-wear-parts-oem-matching" asChild>
+            <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+              Read: How we match a part with no drawing on file
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </Link>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
             {ORDER_STEPS.map(step => (
               <div key={step.tag} className="bg-white p-6 flex flex-col">
@@ -275,6 +280,59 @@ export default function MixerCategoryPage() {
           </div>
         </div>
       </section>
+
+      {/* 5b · Case study — real matched-part case (only where material exists) */}
+      {content.caseStudy && (
+        <section
+          aria-label="Case study"
+          className="border-b border-slate-200 bg-white"
+        >
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
+            <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
+              From the Workshop
+            </p>
+            <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-8 max-w-3xl">
+              {content.caseStudy.title}
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10">
+              <div className="lg:col-span-5 space-y-5">
+                {content.caseStudy.paragraphs.map((para, i) => (
+                  <p
+                    key={i}
+                    className="text-[15px] text-slate-700 leading-[1.75]"
+                  >
+                    {para}
+                  </p>
+                ))}
+                <Link href={content.caseStudy.articleLink} asChild>
+                  <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+                    Read the full matching guide
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
+                </Link>
+              </div>
+              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4 content-start">
+                {content.caseStudy.images.map(img => (
+                  <figure key={img.src}>
+                    <div className="aspect-[4/3] overflow-hidden border border-slate-200 bg-slate-50">
+                      <img
+                        src={img.src}
+                        alt={img.caption}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <figcaption className="font-mono text-[10px] text-slate-500 leading-relaxed mt-2">
+                      {img.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 6 · OEM compatibility */}
       {oemMachines.length > 0 && (
@@ -304,6 +362,9 @@ export default function MixerCategoryPage() {
                   >
                     <span className="font-bold text-[13px] text-[#001f4d] tracking-tight">
                       {m}
+                      <sup className="text-[8px] font-normal text-slate-400 ml-px">
+                        ®
+                      </sup>
                     </span>
                   </li>
                 ))}

@@ -15,10 +15,17 @@ import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ProductGrid from "@/components/product/ProductGrid";
+import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
-import { mixerCategories, getFeaturedMixerParts } from "@/data/mixerParts";
+import {
+  mixerCategories,
+  getFeaturedMixerParts,
+  getMixerPartsByCategory,
+  mixerCompanyFaq,
+} from "@/data/mixerParts";
 import { mixerToBlade } from "@/lib/mixerToBlade";
+import { ORDER_STEPS, HUB_FAQ } from "@/data/mixerContent";
 
 const STORY = [
   {
@@ -52,6 +59,14 @@ const HERO_TRUST = [
 
 export default function MixerWearPartsOverview() {
   const featured = getFeaturedMixerParts(4).map(mixerToBlade);
+  const oemByCategory = mixerCategories.map(cat => ({
+    cat,
+    brands: Array.from(
+      new Set(
+        getMixerPartsByCategory(cat.category).flatMap(p => p.compatibleMachines)
+      )
+    ),
+  }));
 
   // Hub structured data — CollectionPage whose ItemList members are the 2
   // category hubs (not the leaf products), so schema tiers == URL tiers:
@@ -239,7 +254,7 @@ export default function MixerWearPartsOverview() {
         </div>
       </section>
 
-      {/* 4 · Featured parts */}
+      {/* 3 · Featured parts */}
       {featured.length > 0 && (
         <section
           aria-label="Featured wear parts"
@@ -256,6 +271,106 @@ export default function MixerWearPartsOverview() {
           </div>
         </section>
       )}
+
+      {/* 4 · How to order */}
+      <section
+        aria-label="How to order"
+        className="border-b border-slate-200 bg-slate-50"
+      >
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
+          <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
+            How to Order
+          </p>
+          <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-4">
+            Made to fit your plant — from a sample or a model
+          </h2>
+          <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-4">
+            Every part is cast to order. There is no catalogue number to look up
+            — we reverse-engineer the fit from your worn part or plant model, so
+            you get an exact replacement rather than a near-miss.
+          </p>
+          <Link href="/news/mixer-wear-parts-oem-matching" asChild>
+            <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+              Read: How we match a part with no drawing on file
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+          </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
+            {ORDER_STEPS.map(step => (
+              <div key={step.tag} className="bg-white p-6 flex flex-col">
+                <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
+                  {step.tag}
+                </span>
+                <h3 className="font-black text-lg text-[#001f4d] tracking-tight leading-tight mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-[14px] text-slate-600 leading-[1.7]">
+                  {step.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5 · OEM compatibility — brand names grouped by plant type */}
+      <section
+        aria-label="OEM compatibility"
+        className="border-b border-slate-200 bg-white"
+      >
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
+          <aside className="lg:col-span-4">
+            <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
+              OEM Compatibility
+            </p>
+            <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
+              Drop-in fit, no retooling
+            </h2>
+            <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
+              Sureay manufactures replacement wear parts to fit the listed
+              mixing plants and is not affiliated with these manufacturers.
+            </p>
+          </aside>
+          <div className="lg:col-span-8 flex flex-col justify-center gap-8">
+            {oemByCategory.map(({ cat, brands }) => (
+              <div key={cat.id}>
+                <Link href={cat.link} asChild>
+                  <a className="group inline-flex items-center gap-2 pb-1.5 text-[15px] font-bold text-[#001f4d] mb-3 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+                    {cat.name}
+                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
+                </Link>
+                <ul className="flex flex-wrap gap-2">
+                  {brands.map(m => (
+                    <li
+                      key={m}
+                      className="border border-slate-200 bg-slate-50 px-4 py-2"
+                    >
+                      <span className="font-bold text-[13px] text-[#001f4d] tracking-tight">
+                        {m}
+                        <sup className="text-[8px] font-normal text-slate-400 ml-px">
+                          ®
+                        </sup>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6 · FAQ — hub-level (distinct from category and per-part FAQs) */}
+      <section
+        aria-label="Frequently asked questions"
+        className="bg-slate-50 border-b border-slate-200 py-14 lg:py-20"
+      >
+        <ProductFAQ
+          faqs={{ technical: HUB_FAQ, company: mixerCompanyFaq }}
+          productName="Mixer Wear Parts"
+        />
+      </section>
 
       <div id="rfq">
         <ContactRFQ formLocation="mixer_parts" />

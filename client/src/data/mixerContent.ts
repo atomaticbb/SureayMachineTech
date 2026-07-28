@@ -9,6 +9,13 @@
 
 import type { MixerCategoryType, MixerSectorType } from "./mixerParts";
 
+// ── Content freshness — bump when the engineering copy is re-checked ─────────
+export const CONTENT_LAST_REVIEWED = "July 2026";
+export const CONTENT_REVIEWER = {
+  name: "Xu Zhengnan",
+  title: "Foundry Engineer",
+};
+
 // ── Trust strip (global — true for every mixer part) ─────────────────────────
 export const TRUST_ITEMS = [
   "ISO 9001:2015 Certified",
@@ -124,6 +131,34 @@ export const ORDER_STEPS = [
   },
 ];
 
+// ── Hub-level FAQ (overview page only — must not duplicate the category-level
+//    FAQs above or the per-part FAQs, so the FAQPage schema stays unique) ──────
+export const HUB_FAQ = [
+  {
+    question:
+      "What is the difference between concrete and asphalt mixing plant wear parts?",
+    answer:
+      "Concrete mixer parts fight abrasion at ambient temperature, so the liners, blades and scrapers are cast in Ni-Hard or high-chromium iron and the arms in tough ZG310-570-class steel. Asphalt parts add heat on top of abrasion: the arms use heat-resistant alloy steel that holds its strength at mixing temperature, and the seals use high-temperature materials. The geometry differs too — side linings and spiral blades exist only in asphalt pugmills.",
+  },
+  {
+    question: "Can I order wear parts without an OEM drawing or part number?",
+    answer:
+      "Yes — that is the normal case. Send a photo of the worn part with its key dimensions, ship the worn part itself, or simply tell us the plant make and model. We reverse-engineer the bore, bolt circle and profile, and you approve every dimension before anything is cast.",
+  },
+  {
+    question:
+      "Can concrete and asphalt plant parts ship together in one order?",
+    answer:
+      "Yes. Both lines are cast in the same foundry, so a mixed order consolidates into one shipment with one set of documents — common for contractors running both a batching plant and an asphalt plant, and for dealers stocking both lines. MOQ is assessed on the combined order.",
+  },
+  {
+    question:
+      "Are the wear parts made by the same factory as your industrial blades?",
+    answer:
+      "Yes. Mixer wear parts come from the same foundry and metallurgy team behind our industrial blade business — the same lost-foam and DISA casting lines, heat treatment and CMM inspection, under one ISO 9001:2015 system. Buyers sourcing both blades and wear parts deal with a single factory.",
+  },
+];
+
 // ── Category-level copy (unique per plant type — not reused from meta) ───────
 export interface CategoryContent {
   /** Hero subhead — distinct from the SEO meta description. */
@@ -139,6 +174,15 @@ export interface CategoryContent {
   /** Category-level FAQ — deliberately different from the per-part FAQs so the
    *  FAQPage schema does not duplicate the product pages'. */
   faq: { question: string; answer: string }[];
+  /** Real delivered-work case block (E-E-A-T experience signal). Only set when
+   *  genuine material exists — never fabricate. */
+  caseStudy?: {
+    title: string;
+    paragraphs: string[];
+    images: { src: string; caption: string }[];
+    /** Link to the full technical article this case is drawn from. */
+    articleLink: string;
+  };
 }
 
 export const CATEGORY_CONTENT: Record<MixerCategoryType, CategoryContent> = {
@@ -157,17 +201,22 @@ export const CATEGORY_CONTENT: Record<MixerCategoryType, CategoryContent> = {
       {
         part: "Mixing arm",
         material:
-          "Tough cast steel (ZG310-570 class) — impact, not surface hardness",
+          "Tough cast steel (ZG310-570 class, GB/T 11352) — impact, not surface hardness",
       },
       {
         part: "Liner plate",
-        material: "Ni-Hard / high-chromium iron, HB 600+",
+        material:
+          "Ni-Hard / high-chromium iron (ASTM A532 Class I / III), HB 600+",
       },
       {
         part: "Scraper",
-        material: "High-chromium iron, HB 600+, precision-ground edge",
+        material:
+          "High-chromium iron (ASTM A532 Class III), HB 600+, precision-ground edge",
       },
-      { part: "Mixer blade", material: "Ni-Hard, HB 600+, bolt-on" },
+      {
+        part: "Mixer blade",
+        material: "Ni-Hard (ASTM A532 Class I), HB 600+, bolt-on",
+      },
       {
         part: "Wear seal",
         material:
@@ -202,6 +251,31 @@ export const CATEGORY_CONTENT: Record<MixerCategoryType, CategoryContent> = {
           "We ship factory-direct with a low MOQ; lead time depends on the model and whether tooling already exists. Send your plant model for a quote — most repeat items ship in a few weeks, with a material and hardness report available on request.",
       },
     ],
+    caseStudy: {
+      title: "Matched from a worn sample — no drawing on file",
+      paragraphs: [
+        "A maintenance manager sent us a photo of a liner segment pulled out of an eight-year-old Zoomlion mixing plant: half the wear face gone, bolt holes slightly oval, and no drawing anywhere in the plant's paperwork — just a faint cast number and the logo pressed into the back.",
+        "That sample told us what we needed before quoting. The cast pattern and position numbers on the back face identified which slot in the drum the plate belonged to; the wear pattern — even thinning rather than local gouging — ruled out a misaligned arm; and the bolt geometry gave us the spacing the new plate had to hold to seat flush.",
+        "Liners like this are cast on our lost-foam and DISA lines and machined to the original bolt pattern, so the replacement drops in beside its neighbours with no shimming and no field drilling.",
+      ],
+      images: [
+        {
+          src: "/images/news/mixer-wear-parts-oem-matching-cast-marks.webp",
+          caption:
+            "The cast-in part number is the starting reference for a match",
+        },
+        {
+          src: "/images/news/mixer-wear-parts-oem-matching-pattern-number.webp",
+          caption: "Pattern number and foundry marks cast into the back face",
+        },
+        {
+          src: "/images/news/mixer-wear-parts-oem-matching-arms.webp",
+          caption:
+            "Arms and liners share a drum but are cast in different steels",
+        },
+      ],
+      articleLink: "/news/mixer-wear-parts-oem-matching",
+    },
   },
   asphalt_mixing_plant: {
     heroTagline:
@@ -219,18 +293,24 @@ export const CATEGORY_CONTENT: Record<MixerCategoryType, CategoryContent> = {
         part: "Mixing arm",
         material: "Heat-resistant alloy steel — holds strength hot",
       },
-      { part: "Liner plate", material: "High-chromium iron, HB 600+" },
+      {
+        part: "Liner plate",
+        material: "High-chromium iron (ASTM A532 Class III), HB 600+",
+      },
       {
         part: "Side lining",
-        material: "High-chromium iron, HB 600+, corner-profiled",
+        material:
+          "High-chromium iron (ASTM A532 Class III), HB 600+, corner-profiled",
       },
       {
         part: "Spiral blade",
-        material: "High-chromium alloy iron, HB 600+, bolt-on",
+        material:
+          "High-chromium alloy iron (ASTM A532 Class III), HB 600+, bolt-on",
       },
       {
         part: "W-type scraper",
-        material: "High-chromium iron, HB 600+, W3 profile",
+        material:
+          "High-chromium iron (ASTM A532 Class III), HB 600+, W3 profile",
       },
       {
         part: "Sealing element",

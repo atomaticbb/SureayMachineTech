@@ -169,6 +169,17 @@ export default function About() {
   const { t } = useTranslation();
   const [certZoom, setCertZoom] = useState(false);
 
+  // Cross-page anchors (e.g. /about#certifications): the global ScrollToTop
+  // resets to 0 on route change, so re-apply the hash target after mount.
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash) return;
+    const t = setTimeout(() => {
+      document.querySelector(hash)?.scrollIntoView();
+    }, 0);
+    return () => clearTimeout(t);
+  }, []);
+
   // Lightbox closes on Escape.
   useEffect(() => {
     if (!certZoom) return;
@@ -561,7 +572,7 @@ export default function About() {
       {/* 6. CERTIFICATIONS */}
       <section
         id="certifications"
-        className="py-28 bg-white border-b border-slate-200"
+        className="py-28 bg-white border-b border-slate-200 scroll-mt-[74px]"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-12">
