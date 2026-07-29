@@ -106,6 +106,10 @@ tmpclaude-*-cwd
 .catalogs-dev/
 .catalogs-output/
 
+# Claude Code local state — agent worktrees hold full copies of the repo
+# (~75 MB), which must never reach the repo or the Docker build context.
+.claude/
+
 # Generated PDF catalogs (copied into public/ by generate-catalogs.ts)
 client/public/catalogs/
 

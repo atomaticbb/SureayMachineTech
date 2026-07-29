@@ -2,6 +2,7 @@
  * ProductGrid — renders a collection of ProductCards
  * layout='list'  → stacked flex-col (used in BladeListPage sidebar layout)
  * layout='grid'  → 3-col card grid (future use)
+ * layout='compact' → 4-col dense grid (used by the faceted /products catalogue)
  * layout='related' → 3-col grid of compact related cards (used in BladeDetail)
  */
 
@@ -11,7 +12,7 @@ import { useTranslation } from "@/lib/useTranslation";
 
 interface ProductGridProps {
   blades: Blade[];
-  layout?: "list" | "grid" | "related";
+  layout?: "list" | "grid" | "compact" | "related";
   onShowAll?: () => void;
   showSectorBadge?: boolean;
 }
@@ -59,6 +60,21 @@ export default function ProductGrid({
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {blades.map(blade => (
           <ProductCard key={blade.id} blade={blade} variant="related" />
+        ))}
+      </div>
+    );
+  }
+
+  if (layout === "compact") {
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {blades.map(blade => (
+          <ProductCard
+            key={blade.id}
+            blade={blade}
+            variant="compact"
+            sectorBadge={showSectorBadge ? blade.sector : undefined}
+          />
         ))}
       </div>
     );

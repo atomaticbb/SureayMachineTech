@@ -1,18 +1,19 @@
 /**
- * ProductCard — blade product card in three variants:
+ * ProductCard — blade product card in four variants:
  *   'grid'    → vertical card (large image + title + CTA) for 2-col grid
+ *   'compact' → dense vertical card for the 4-col faceted catalogue grid
  *   'list'    → compact horizontal row used in BladeListPage sidebar layout
  *   'related' → compact horizontal row used in Related Blades section of BladeDetail
  */
 
 import { Link } from "wouter";
 import { type Blade, type BladeSectorType } from "@/data/blades";
-import { SECTOR_LABEL } from "@/data/blade-categories";
+import { SECTOR_LABEL, SECTOR_LABEL_KEY } from "@/data/blade-categories";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface ProductCardProps {
   blade: Blade;
-  variant?: "grid" | "list" | "related";
+  variant?: "grid" | "compact" | "list" | "related";
   sectorBadge?: BladeSectorType;
 }
 
@@ -105,6 +106,67 @@ export default function ProductCard({
                 </svg>
               </div>
             </div>
+          </div>
+        </a>
+      </Link>
+    );
+  }
+
+  // ─── Compact variant: dense vertical card for the 4-col faceted grid ──────
+  // Sized for the ~224px column left by the facet sidebar inside max-w-7xl.
+  // Everything the 'grid' variant spends height on — p-8 image padding, the
+  // 4-line title clamp, the bordered CTA pill — is cut back so four rows fit
+  // on screen.
+  if (variant === "compact") {
+    return (
+      <Link href={blade.link} asChild>
+        <a className="group flex flex-col bg-white border border-slate-200 hover:border-[#001f4d] transition-colors duration-200 cursor-pointer h-full">
+          <div className="relative aspect-[4/3] bg-slate-50 overflow-hidden flex-shrink-0">
+            <img
+              src={responsiveImage.src}
+              srcSet={responsiveImage.srcSet}
+              sizes="(max-width: 768px) 92vw, (max-width: 1024px) 46vw, 224px"
+              alt={blade.name}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              width={224}
+              height={168}
+              className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
+              onError={e => {
+                e.currentTarget.src = "/images/products/product.webp";
+              }}
+            />
+            {sectorBadge && (
+              <span className="absolute top-2 left-2 bg-[#001f4d] text-white text-[9px] font-black px-1.5 py-0.5 tracking-wider">
+                {t(SECTOR_LABEL_KEY[sectorBadge])}
+              </span>
+            )}
+          </div>
+
+          <div className="p-3 flex flex-col flex-1 border-t border-slate-100">
+            <p className="text-[9px] font-black text-slate-400 tracking-widest mb-1.5 truncate">
+              {blade.categoryDisplay}
+            </p>
+            <h3 className="text-[15px] font-bold text-[#001f4d] group-hover:text-[#003366] leading-snug line-clamp-2 min-h-[2.6rem] transition-colors">
+              {blade.name}
+            </h3>
+            <span className="mt-auto pt-3 inline-flex items-center gap-1.5 text-[10px] font-black text-[#001f4d] tracking-[0.16em]">
+              {t("productCard.viewDetails")}
+              <svg
+                className="w-3 h-3 group-hover:translate-x-0.5 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </span>
           </div>
         </a>
       </Link>

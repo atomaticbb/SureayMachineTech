@@ -263,3 +263,16 @@ export const SECTOR_LABEL: Record<BladeSectorType, string> = {
   wood: "Wood & Forestry",
   other: "Custom",
 };
+
+// Translated counterpart of SECTOR_LABEL. Use this anywhere the label is shown
+// to a visitor; SECTOR_LABEL stays English for GA4 dimensions, which must
+// aggregate across locales.
+export const SECTOR_LABEL_KEY: Record<BladeSectorType, string> = {
+  recycling: "productList.sectors.recycling",
+  paper: "productList.sectors.paper",
+  converting: "productList.sectors.converting",
+  metal: "productList.sectors.metal",
+  new_energy: "productList.sectors.newEnergy",
+  wood: "productList.sectors.wood",
+  other: "productList.sectors.other",
+};

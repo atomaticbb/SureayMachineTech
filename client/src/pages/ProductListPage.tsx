@@ -5,39 +5,51 @@
  */
 
 import { useEffect, useRef, useState } from "react";
-import { Download, Loader2 } from "lucide-react";
+import { Download, Loader2, X } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
-import { Link } from "wouter";
-import { type BladeCategoryType } from "@/data/blades";
+import { Link, useSearchParams } from "wouter";
+import { type BladeCategoryType, type BladeSectorType } from "@/data/blades";
+import { SECTOR_LABEL } from "@/data/blade-categories";
 import { useLang } from "@/contexts/LangContext";
 import { useTranslation } from "@/lib/useTranslation";
 import { getBlades } from "@/data/locales";
 import ProductGrid from "@/components/product/ProductGrid";
+import ProductFacetSidebar, {
+  CATEGORY_FACETS,
+  SECTOR_FACETS,
+} from "@/components/product/ProductFacetSidebar";
+import ProductPagination from "@/components/product/ProductPagination";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { gtagEvent } from "@/lib/gtag";
 
-// ── Flat filter list — all 8 categories + All ──────────────────────────────
-// analyticsName stays fixed English so GA4 dimensions aggregate consistently
-// across locales; labelKey drives the translated, visible chip text.
-type FilterItem = {
-  value: BladeCategoryType | "all";
-  labelKey: string;
-  analyticsName: string;
-};
-const FILTERS: FilterItem[] = [
-  { value: "all",               labelKey: "productList.filters.all",               analyticsName: "All" },
-  { value: "slitter_knives",    labelKey: "productList.filters.slitterKnives",     analyticsName: "Slitter Knives" },
-  { value: "shredder_blades",   labelKey: "productList.filters.shredderBlades",    analyticsName: "Shredder Blades" },
-  { value: "granulator_blades", labelKey: "productList.filters.granulatorBlades",  analyticsName: "Granulator Blades" },
-  { value: "log_saw_blades",    labelKey: "productList.filters.logSawBlades",      analyticsName: "Log Saw Blades" },
-  { value: "shear_blades",      labelKey: "productList.filters.shearBlades",       analyticsName: "Shear Blades" },
-  { value: "cold_saw_blades",   labelKey: "productList.filters.coldSawBlades",     analyticsName: "Cold Saw Blades" },
-  { value: "wood_chipper",      labelKey: "productList.filters.woodChipperBlades", analyticsName: "Wood Chipper Blades" },
-  { value: "custom_profile",    labelKey: "productList.filters.customBlades",      analyticsName: "Custom Blades" },
-];
+// 4 columns × 4 rows.
+const PER_PAGE = 16;
+
+// Height of the sticky filter bar below, so the facet column can park under it.
+// Tied to the bar's own markup (py-3 + the min-h-[58px] catalog button) — keep
+// in sync if that row's padding or button size changes.
+const FILTER_BAR_H = 82;
+
+const CATEGORY_VALUES = CATEGORY_FACETS.map(f => f.value);
+const SECTOR_VALUES = SECTOR_FACETS.map(f => f.value);
+
+/** Reads a comma-separated query param, dropping anything not in `allowed`. */
+function parseFacetParam<T extends string>(
+  raw: string | null,
+  allowed: readonly T[]
+): T[] {
+  if (!raw) return [];
+  const seen = new Set<string>();
+  return raw.split(",").filter((v): v is T => {
+    if (seen.has(v) || !(allowed as readonly string[]).includes(v))
+      return false;
+    seen.add(v);
+    return true;
+  });
+}
 
 const FACTORY_IMAGES = [
   {
@@ -69,9 +81,9 @@ export default function BladeListPage() {
   const lang = useLang();
   const { t } = useTranslation();
   const blades = getBlades(lang);
-  const [selectedCategory, setSelectedCategory] = useState<
-    BladeCategoryType | "all"
-  >("all");
+  // The query string is the single source of truth for facets + page, so a
+  // filtered view is shareable and the back button steps through it.
+  const [searchParams, setSearchParams] = useSearchParams();
   const [filterTop, setFilterTop] = useState(74);
   const [catalogState, setCatalogState] = useState<CatalogState>("idle");
   const [catalogEmail, setCatalogEmail] = useState("");
@@ -98,9 +110,101 @@ export default function BladeListPage() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const filteredBlades = blades.filter(b =>
-    selectedCategory === "all" ? true : b.category === selectedCategory
+  const selectedCategories = parseFacetParam(
+    searchParams.get("category"),
+    CATEGORY_VALUES
   );
+  const selectedSectors = parseFacetParam(
+    searchParams.get("sector"),
+    SECTOR_VALUES
+  );
+
+  const filteredBlades = blades.filter(
+    b =>
+      (selectedCategories.length === 0 ||
+        selectedCategories.includes(b.category)) &&
+      (selectedSectors.length === 0 || selectedSectors.includes(b.sector))
+  );
+
+  const totalPages = Math.max(1, Math.ceil(filteredBlades.length / PER_PAGE));
+  const requestedPage = Math.floor(Number(searchParams.get("page")));
+  const currentPage =
+    Number.isFinite(requestedPage) && requestedPage >= 1
+      ? Math.min(requestedPage, totalPages)
+      : 1;
+  const pageBlades = filteredBlades.slice(
+    (currentPage - 1) * PER_PAGE,
+    currentPage * PER_PAGE
+  );
+
+  /** Rebuilds the query string; defaults are omitted so bare /products stays
+   *  clean — that is the URL the prerenderer snapshots. */
+  const applyFacets = (next: {
+    categories?: BladeCategoryType[];
+    sectors?: BladeSectorType[];
+    page?: number;
+  }) => {
+    const categories = next.categories ?? selectedCategories;
+    const sectors = next.sectors ?? selectedSectors;
+    const page = next.page ?? 1;
+    const params = new URLSearchParams();
+    if (categories.length) params.set("category", categories.join(","));
+    if (sectors.length) params.set("sector", sectors.join(","));
+    if (page > 1) params.set("page", String(page));
+    setSearchParams(params);
+  };
+
+  // Only a box being ticked ON is a filter intent worth reporting; unticking
+  // and paging would just inflate the funnel.
+  const toggleCategory = (value: BladeCategoryType) => {
+    const turningOn = !selectedCategories.includes(value);
+    applyFacets({
+      categories: turningOn
+        ? [...selectedCategories, value]
+        : selectedCategories.filter(v => v !== value),
+    });
+    if (turningOn) {
+      gtagEvent("view_item_list", {
+        event_category: "blade_filter",
+        item_list_name: CATEGORY_FACETS.find(f => f.value === value)
+          ?.analyticsName,
+        blade_category: value,
+      });
+    }
+  };
+
+  const toggleSector = (value: BladeSectorType) => {
+    const turningOn = !selectedSectors.includes(value);
+    applyFacets({
+      sectors: turningOn
+        ? [...selectedSectors, value]
+        : selectedSectors.filter(v => v !== value),
+    });
+    if (turningOn) {
+      // SECTOR_LABEL is already a fixed English constant — reuse it as the
+      // GA4 dimension so sector rows aggregate across locales.
+      gtagEvent("view_item_list", {
+        event_category: "blade_filter",
+        item_list_name: SECTOR_LABEL[value],
+        blade_sector: value,
+      });
+    }
+  };
+
+  const clearAll = () => setSearchParams(new URLSearchParams());
+
+  const activePills = [
+    ...selectedCategories.map(value => ({
+      key: `category-${value}`,
+      label: t(CATEGORY_FACETS.find(f => f.value === value)!.labelKey),
+      remove: () => toggleCategory(value),
+    })),
+    ...selectedSectors.map(value => ({
+      key: `sector-${value}`,
+      label: t(SECTOR_FACETS.find(f => f.value === value)!.labelKey),
+      remove: () => toggleSector(value),
+    })),
+  ];
 
   // Hub structured data — built from the base (unfiltered) catalogue so the
   // prerendered snapshot reflects a stable canonical list, not transient
@@ -168,7 +272,9 @@ export default function BladeListPage() {
       behavior: "smooth",
       block: "start",
     });
-  }, [selectedCategory]);
+    // Query-only changes don't retrigger the app's ScrollToTop (wouter's
+    // useLocation is pathname-only), so paging scrolls to the grid, not the top.
+  }, [searchParams.toString()]);
 
   useEffect(() => {
     if (catalogState === "idle") return;
@@ -194,7 +300,10 @@ export default function BladeListPage() {
         keywords={t("productList.seo.keywords")}
         breadcrumbs={[
           { name: t("nav.home"), url: "/" },
-          { name: t("productList.seo.breadcrumbBladesKnives"), url: "/products" },
+          {
+            name: t("productList.seo.breadcrumbBladesKnives"),
+            url: "/products",
+          },
         ]}
         extraJsonLd={[collectionLd]}
       />
@@ -242,50 +351,47 @@ export default function BladeListPage() {
           ZONE 2 + 3 — Filter Bar + Full-Width Product Grid
       ═══════════════════════════════════════════════════════════════════ */}
 
-      {/* ── Sticky filter bar — single compact row ───────────────────── */}
+      {/* ── Sticky filter bar — result count + active facets ─────────── */}
       <div
         className="sticky z-30 transition-[top] duration-300 ease-in-out bg-white border-b border-slate-200"
         style={{ top: filterTop }}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="flex items-start gap-4 py-3">
-
-            {/* Two-row chip grid */}
+            {/* Result count + removable active-facet pills */}
             <div className="flex-1 flex items-center flex-wrap gap-1.5 py-0.5">
-              {FILTERS.map(item => {
-                const count =
-                  item.value === "all"
-                    ? blades.length
-                    : blades.filter(b => b.category === item.value).length;
-                if (item.value !== "all" && count === 0) return null;
-                const isActive = selectedCategory === item.value;
-                const label = t(item.labelKey);
-                return (
-                  <button
-                    key={item.value}
-                    onClick={() => {
-                      setSelectedCategory(item.value);
-                      if (item.value !== "all") {
-                        gtagEvent("view_item_list", {
-                          event_category: "blade_filter",
-                          item_list_name: item.analyticsName,
-                          blade_category: item.value,
-                        });
-                      }
-                    }}
-                    className={`flex-shrink-0 px-3 py-1.5 font-mono text-[12px] font-medium tracking-[0.1em] border transition-none whitespace-nowrap ${
-                      isActive
-                        ? "bg-[#001f4d] text-white border-[#001f4d]"
-                        : "bg-white text-slate-600 border-slate-200 hover:border-[#001f4d] hover:text-[#001f4d]"
-                    }`}
-                  >
-                    {label}
-                    <span className={`ml-1.5 text-[10px] font-medium ${isActive ? "text-white/50" : "text-slate-600"}`}>
-                      {count}
-                    </span>
-                  </button>
-                );
-              })}
+              {/* translate() has no interpolation, so the number is composed here */}
+              <p className="font-mono text-[12px] text-slate-500 tracking-[0.1em] mr-2 whitespace-nowrap">
+                <span className="text-[#001f4d] font-bold">
+                  {filteredBlades.length}
+                </span>
+                {filteredBlades.length !== blades.length && (
+                  <span className="text-slate-400"> / {blades.length}</span>
+                )}{" "}
+                {t("productList.facets.productsFound")}
+              </p>
+
+              {activePills.map(pill => (
+                <button
+                  key={pill.key}
+                  type="button"
+                  onClick={pill.remove}
+                  className="flex-shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.1em] border border-[#001f4d] bg-[#001f4d] text-white whitespace-nowrap hover:bg-white hover:text-[#001f4d] transition-colors"
+                >
+                  {pill.label}
+                  <X className="w-3 h-3" />
+                </button>
+              ))}
+
+              {activePills.length > 0 && (
+                <button
+                  type="button"
+                  onClick={clearAll}
+                  className="flex-shrink-0 px-2 py-1 font-mono text-[11px] text-slate-400 tracking-[0.1em] hover:text-[#001f4d] transition-colors"
+                >
+                  {t("productList.facets.clearAll")}
+                </button>
+              )}
             </div>
 
             {/* Right: download + sort */}
@@ -330,7 +436,9 @@ export default function BladeListPage() {
                     className="w-full border border-slate-300 px-3 py-2 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
                   />
                   {catalogError && (
-                    <p className="text-red-500 text-xs font-mono">{catalogError}</p>
+                    <p className="text-red-500 text-xs font-mono">
+                      {catalogError}
+                    </p>
                   )}
                   <div className="flex gap-2">
                     <button
@@ -378,9 +486,7 @@ export default function BladeListPage() {
                   </button>
                 </div>
               )}
-
             </div>
-
           </div>
         </div>
       </div>
@@ -392,11 +498,50 @@ export default function BladeListPage() {
         className="border-b border-slate-200 min-h-[720px]"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 lg:py-14">
-          <ProductGrid
-            blades={filteredBlades}
-            layout="grid"
-            onShowAll={() => setSelectedCategory("all")}
-          />
+          <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-8 lg:items-start">
+            <ProductFacetSidebar
+              blades={blades}
+              categories={selectedCategories}
+              sectors={selectedSectors}
+              onToggleCategory={toggleCategory}
+              onToggleSector={toggleSector}
+              onClearCategories={() => applyFacets({ categories: [] })}
+              onClearSectors={() => applyFacets({ sectors: [] })}
+              stickyTop={filterTop + FILTER_BAR_H}
+            />
+
+            <div className="mt-6 lg:mt-0">
+              <ProductGrid
+                blades={pageBlades}
+                layout="compact"
+                showSectorBadge
+                onShowAll={clearAll}
+              />
+              <ProductPagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={page => applyFacets({ page })}
+              />
+            </div>
+          </div>
+
+          {/* Paging drops most products out of the DOM, and query-param views
+              are never prerendered — this keeps a crawlable path to every
+              product in the static /products snapshot. Must use wouter's Link,
+              not a raw <a>: only Link applies the router base, otherwise the
+              localised pages would emit 30 links to the English URLs. */}
+          <nav
+            aria-label={t("productList.seo.breadcrumbBladesKnives")}
+            className="sr-only"
+          >
+            <ul>
+              {blades.map(b => (
+                <li key={b.id}>
+                  <Link href={b.link}>{b.fullName || b.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
@@ -443,9 +588,7 @@ export default function BladeListPage() {
                   <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
                     {t("productList.factory.statStandard")}
                   </p>
-                  <p className="font-black text-sm text-[#001f4d] ">
-                    ISO 9001
-                  </p>
+                  <p className="font-black text-sm text-[#001f4d] ">ISO 9001</p>
                 </div>
               </div>
             </div>

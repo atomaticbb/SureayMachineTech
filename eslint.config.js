@@ -4,6 +4,25 @@ import tsParser from "@typescript-eslint/parser";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 
+// Shared by the TS/TSX block and the plain-JS block below. `js.configs
+// .recommended` applies to every file with no globals of its own, so any file
+// type not given a languageOptions block reports bogus no-undef errors.
+const nodeGlobals = {
+  console: "readonly",
+  process: "readonly",
+  __dirname: "readonly",
+  __filename: "readonly",
+  Buffer: "readonly",
+  module: "readonly",
+  require: "readonly",
+  URL: "readonly",
+  fetch: "readonly",
+  setInterval: "readonly",
+  setTimeout: "readonly",
+  clearInterval: "readonly",
+  clearTimeout: "readonly",
+};
+
 export default [
   {
     ignores: [
@@ -12,9 +31,24 @@ export default [
       "*.config.ts",
       "*.config.js",
       "client/public/**",
+      // The lint script's `--ext .ts,.tsx` is a no-op under flat config, so
+      // everything below gets linted unless listed here.
+      // Vendored agent-skill helper scripts — not project source.
+      ".github/**",
+      // Agent worktrees hold full copies of the repo; linting them reports
+      // every project file a second time.
+      ".claude/**",
     ],
   },
   js.configs.recommended,
+  {
+    files: ["**/*.{js,mjs,cjs}"],
+    languageOptions: {
+      ecmaVersion: "latest",
+      sourceType: "module",
+      globals: nodeGlobals,
+    },
+  },
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -27,18 +61,14 @@ export default [
         },
       },
       globals: {
-        // Node.js globals
-        console: "readonly",
-        process: "readonly",
-        __dirname: "readonly",
-        __filename: "readonly",
-        Buffer: "readonly",
-        module: "readonly",
-        require: "readonly",
+        ...nodeGlobals,
         // Browser globals
         document: "readonly",
         window: "readonly",
         navigator: "readonly",
+        URLSearchParams: "readonly",
+        MouseEvent: "readonly",
+        Node: "readonly",
         Element: "readonly",
         HTMLElement: "readonly",
         HTMLDivElement: "readonly",
