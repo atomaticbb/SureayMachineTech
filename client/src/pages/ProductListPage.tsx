@@ -330,8 +330,12 @@ export default function BladeListPage() {
               {t("productList.hero.eyebrow")}
             </p>
 
+            {/* Shares productList.seo.title — the H1 and the <title> carry the
+                same wording in every locale, and en.test.ts rejects two keys in
+                one namespace holding identical copy. Split them again if the H1
+                is ever meant to read differently from the page title. */}
             <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
-              {t("productList.hero.headline")}
+              {t("productList.seo.title")}
             </h1>
 
             <div className="w-12 h-[3px] bg-white/30 mb-7" />
