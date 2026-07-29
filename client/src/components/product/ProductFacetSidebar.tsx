@@ -9,7 +9,8 @@
  * them would make the sidebar flicker on every click.
  *
  * Renders once: on <lg it is a disclosure panel above the grid, on lg+ it is
- * the sticky left column. Same markup, different container classes.
+ * the left column. Same markup, different container classes. Stickiness is the
+ * page's job — the facets and the catalog CTA stick together as one unit.
  */
 
 import { useState } from "react";
@@ -97,8 +98,6 @@ interface ProductFacetSidebarProps {
   onToggleSector: (value: BladeSectorType) => void;
   onClearCategories: () => void;
   onClearSectors: () => void;
-  /** Pixel offset for the sticky column, tracking the filter bar above it. */
-  stickyTop: number;
 }
 
 function FacetRow({
@@ -163,7 +162,6 @@ export default function ProductFacetSidebar({
   onToggleSector,
   onClearCategories,
   onClearSectors,
-  stickyTop,
 }: ProductFacetSidebarProps) {
   const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -236,13 +234,7 @@ export default function ProductFacetSidebar({
   );
 
   return (
-    <aside
-      className="lg:sticky lg:overflow-y-auto lg:pr-1"
-      style={{
-        top: stickyTop,
-        maxHeight: `calc(100vh - ${stickyTop + 24}px)`,
-      }}
-    >
+    <aside>
       <button
         type="button"
         onClick={() => setMobileOpen(o => !o)}
