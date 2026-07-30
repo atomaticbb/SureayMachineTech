@@ -36,7 +36,7 @@ model Contact {
   phone     String?
   company   String?
   message        String
-  inquiryType    String?  // "Custom OEM Blade" | "Standard Part Replacement" | "Technical Support"
+  inquiryType    String?  // "Industrial Blade" | "Mixer Wear Part" | "Technical Support"
   attachmentName String?  // original filename, e.g. "drawing.dxf"
   attachmentSize Int?     // file size in bytes
   status    String   @default("pending") // pending, replied, closed

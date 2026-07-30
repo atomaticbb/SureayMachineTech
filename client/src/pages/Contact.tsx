@@ -12,14 +12,11 @@ import { toast } from "sonner";
 import { gtagEvent, trackLead } from "@/lib/gtag";
 import { useTranslation } from "@/lib/useTranslation";
 
-type InquiryType =
-  | "Custom OEM Blade"
-  | "Standard Part Replacement"
-  | "Technical Support";
+type InquiryType = "Industrial Blade" | "Mixer Wear Part" | "Technical Support";
 
 const INQUIRY_TYPES: { value: InquiryType; labelKey: string }[] = [
-  { value: "Custom OEM Blade", labelKey: "contactPage.inquiry.custom" },
-  { value: "Standard Part Replacement", labelKey: "contactPage.inquiry.replacement" },
+  { value: "Industrial Blade", labelKey: "contactPage.inquiry.blade" },
+  { value: "Mixer Wear Part", labelKey: "contactPage.inquiry.mixerPart" },
   { value: "Technical Support", labelKey: "contactPage.inquiry.support" },
 ];
 
@@ -42,7 +39,7 @@ function fmtSize(bytes: number) {
 export default function Contact() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    inquiryType: "Custom OEM Blade" as InquiryType,
+    inquiryType: "Industrial Blade" as InquiryType,
     name: "",
     email: "",
     phone: "",
@@ -119,7 +116,7 @@ export default function Contact() {
           }
         );
         setFormData({
-          inquiryType: "Custom OEM Blade",
+          inquiryType: "Industrial Blade",
           name: "",
           email: "",
           phone: "",
@@ -160,14 +157,16 @@ export default function Contact() {
             {t("contactPage.hero.eyebrow")}
           </p>
 
-          <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 max-w-3xl">
+          <h1 className="text-[clamp(1.9rem,4.2vw,3.25rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 whitespace-nowrap">
             {t("contactPage.hero.headline")}
           </h1>
 
           <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
 
-          <p className="text-slate-500 text-[16px] leading-relaxed max-w-2xl">
-            {t("contactPage.hero.body")}
+          <p className="text-slate-500 text-[16px] leading-relaxed max-w-3xl">
+            {t("contactPage.hero.body1")}
+            <br />
+            {t("contactPage.hero.body2")}
           </p>
         </div>
       </section>
@@ -397,24 +396,9 @@ export default function Contact() {
               <p className="font-mono text-[10px] text-white/50 tracking-widest  mb-3">
                 {t("contactPage.directory.emailLabel")}
               </p>
-              <a
-                data-u="lynn"
-                data-d="sureay.com"
-                href="#"
-                onClick={e => {
-                  e.preventDefault();
-                  gtagEvent("email_click", { link_location: "contact_page" });
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  window.location.href = `mailto:${el.dataset.u}@${el.dataset.d}`;
-                }}
-                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none break-all hover:text-white/70 transition-colors cursor-pointer"
-              >
-                <span
-                  style={{ unicodeBidi: "bidi-override", direction: "rtl" }}
-                >
-                  moc.yaerus@nnyl
-                </span>
-              </a>
+              <p className="text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none break-all">
+                lynn@sureay.com
+              </p>
             </div>
 
             <div className="mb-12">
