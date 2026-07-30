@@ -200,7 +200,7 @@ export const ECOSYSTEMS = [
 export const FEATURED_PRODUCTS = [
   {
     name: "Twin Shaft Shredder Blades",
-    image: "/images/products/shredder-blades/shredder-blades-01.webp",
+    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     href: "/products/twin-shaft-blades-recycling",
     tag: "Recycling",
     summary:
