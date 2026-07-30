@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Link } from "wouter";
 import type { ContactSubmissionResponse } from "@shared/types";
 import { useTranslation } from "@/lib/useTranslation";
-import { gtagEvent } from "@/lib/gtag";
+import { gtagEvent, trackLead } from "@/lib/gtag";
 
 const ACCEPTED_EXTS = ".pdf,.dxf,.dwg,.step,.stp,.jpg,.jpeg,.png,.webp,.gif";
 const MAX_FILE_MB = 15;
@@ -84,10 +84,11 @@ export default function ContactRFQ({
 
     const raw = new FormData(e.currentTarget);
     const requirements = raw.get("message") as string;
+    const email = raw.get("email") as string;
 
     // Build multipart payload — lets the browser set Content-Type + boundary
     const fd = new FormData();
-    fd.append("email", raw.get("email") as string);
+    fd.append("email", email);
     const productPrefix = productName ? `[Product: ${productName}] ` : "";
     fd.append("message", `${productPrefix}${requirements}`);
     if (attachment) fd.append("attachment", attachment, attachment.name);
@@ -115,11 +116,14 @@ export default function ContactRFQ({
             : t("contact.form.savedOnly.body"))
       );
       setEmailNoticeOnly(!emailSent);
-      gtagEvent("generate_lead", {
-        event_category: eventCategory,
-        form_location: formLocation,
-        ...(productName ? { product_name: productName } : {}),
-      });
+      trackLead(
+        { email },
+        {
+          event_category: eventCategory,
+          form_location: formLocation,
+          ...(productName ? { product_name: productName } : {}),
+        }
+      );
       setSubmitted(true);
       setAttachment(null);
     } catch (err) {

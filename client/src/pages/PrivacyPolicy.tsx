@@ -4,7 +4,7 @@ import SEO from "@/components/common/SEO";
 import { motion } from "framer-motion";
 import { gtagEvent } from "@/lib/gtag";
 
-const EFFECTIVE_DATE = "2026-06-11";
+const EFFECTIVE_DATE = "2026-07-30";
 
 const FADE_UP = {
   initial: { opacity: 0, y: 20 },
@@ -227,8 +227,17 @@ export default function PrivacyPolicy() {
                 This allows us to: (a) measure when an ad click leads to a form
                 submission (conversion tracking), and (b) show our ads to
                 previous visitors who may be interested in our products
-                (remarketing). No personally identifiable information is passed
-                to Google for this purpose.
+                (remarketing).
+              </p>
+              <p className="mt-2">
+                When you submit an inquiry form, your email address and phone
+                number are converted into an irreversible cryptographic hash
+                (SHA-256) in your browser before being sent to Google as part of
+                the conversion measurement. Google uses these hashes solely to
+                match the conversion to an ad interaction. Your email address
+                and phone number are never transmitted to Google in readable
+                form. This processing depends on your advertising-cookie consent
+                and stops entirely if you decline or withdraw it.
               </p>
               <p className="mt-2">
                 You can opt out of personalised advertising at{" "}

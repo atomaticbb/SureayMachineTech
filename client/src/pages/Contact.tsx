@@ -9,7 +9,7 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import { toast } from "sonner";
-import { gtagEvent } from "@/lib/gtag";
+import { gtagEvent, trackLead } from "@/lib/gtag";
 import { useTranslation } from "@/lib/useTranslation";
 
 type InquiryType =
@@ -111,10 +111,13 @@ export default function Contact() {
 
       if (response.ok && data.success) {
         toast.success(t("contactPage.toast.success"));
-        gtagEvent("generate_lead", {
-          event_category: "contact_form",
-          inquiry_type: formData.inquiryType,
-        });
+        trackLead(
+          { email: formData.email, phone: formData.phone },
+          {
+            event_category: "contact_form",
+            inquiry_type: formData.inquiryType,
+          }
+        );
         setFormData({
           inquiryType: "Custom OEM Blade",
           name: "",
