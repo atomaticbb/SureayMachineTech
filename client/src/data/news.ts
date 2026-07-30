@@ -3940,6 +3940,83 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
     ],
   },
+  {
+    id: "twin-shaft-shredder-blades-brazil-shipment",
+    tag: "COMPANY NEWS",
+    date: "30.JUL.2026",
+    title: "Twin-Shaft Shredder Blades Shipped to a Plastics Recycling Plant in Brazil",
+    excerpt:
+      "A twin-shaft shredder rotor set — D2 hook blades, cryogenic-treated and wire-EDM bored — has been crated for a plastics recycling plant outside São Paulo, along with the welded rotor housing it ships inside.",
+    image: "/images/news/twin-shaft-shredder-rotor-brazil-01.webp",
+    readTime: "3 MIN",
+    seoTitle:
+      "Twin-Shaft Shredder Blades Shipped to a Brazil Plastics Recycler | Sureay",
+    metaDescription:
+      "Sureay twin-shaft shredder rotor blades and housing shipped to a plastics recycling plant in Brazil — D2 hook geometry, cryogenic treatment, wire-EDM bores.",
+    keywords:
+      "twin shaft shredder blades, shredder blades Brazil, plastic recycling shredder blades export, shredder rotor housing, D2 shredder blades",
+    relatedProductIds: [
+      "twin-shaft-blades-recycling",
+      "single-shaft-shredder-blades",
+    ],
+    content: [
+      {
+        type: "image",
+        value: "/images/news/twin-shaft-shredder-rotor-brazil-01.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Two rotor shafts sat on the workshop floor last week, teeth interlocked like gears that never quite touch — because they're not supposed to. That's the whole point of a twin-shaft shredder: the two rows of hook blades pass within a fraction of a millimeter of each other, shearing whatever's caught between them instead of crushing it. This particular set, bound for a plastics recycling plant outside São Paulo, will spend the next several years reducing baled HDPE drums and mixed rigid plastic scrap into a feed size their downstream granulator can handle.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Brazil's post-consumer plastics recycling sector has been buying more of this kind of equipment lately, and shredder blades are usually the first component to wear out — long before the gearbox or the drive motor. A plant running two shifts a day on abrasive, sand-contaminated bales can go through a blade set in under a year if the steel isn't matched to the feedstock.",
+      },
+      {
+        type: "h2",
+        value: "Why the Hook Geometry Matters as Much as the Steel Grade",
+      },
+      {
+        type: "image",
+        value: "/images/news/twin-shaft-shredder-rotor-brazil-02.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "These blades were cut from D2 tool steel, vacuum-hardened to HRC 55–62 and taken through a deep cryogenic soak at −196°C to convert retained austenite into stable martensite. That gets you wear resistance. But the failure mode plants actually complain about — hook fracture at the root radius — is a geometry problem, not a hardness problem. Every hook on a [twin shaft shredder blade](/products/twin-shaft-blades-recycling) has to survive a torque spike every time it grabs an oversized chunk, and if the root radius is too tight, the stress concentrates exactly where you don't want it. FEA-modeled root profiles spread that load across a wider arc instead of letting it pile up at one point.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The stacked-disc layout in the photos — a dozen or more claw discs keyed onto each shaft — is deliberate too. Narrower discs mean the shredder can process a wider range of particle sizes without swapping the whole rotor, and if one disc chips, the operator replaces that disc instead of pulling the entire shaft.",
+      },
+      {
+        type: "h2",
+        value: "Packing Steel for a Six-Week Sea Voyage",
+      },
+      {
+        type: "image",
+        value: "/images/news/shredder-housing-assembly-brazil.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before crating, every blade got a coat of anti-corrosion oil — the amber-bronze tint on the teeth isn't a coating defect, it's protection. Santos-bound cargo typically spends four to six weeks at sea, much of it in a container swinging between condensing humidity and salt air, and bare tool steel will show surface rust in that window if it isn't dressed first. The rotor shafts ship separately from the welded housing box shown above because crating them as loose components rather than a bolted-up unit cuts both freight volume and the risk of transit damage to the precision bores.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bore fit is the other thing that doesn't survive a rough shipment well. These rotors use wire-EDM-cut hexagonal bores for a zero-backlash fit on the drive shaft; a fit that's even slightly loose will hammer itself into an oval within weeks under shredder loading. It's a small tolerance to get right on a part that's about to cross an ocean, but it's the difference between a rotor that runs its full service life and one that's back on a boat in six months.",
+      },
+      {
+        type: "callout",
+        value:
+          "For smaller lines or single-rotor machines, the [Single Shaft Rotor Inserts](/products/single-shaft-shredder-blades) do the same job with a lighter footprint. [Talk to our engineering team](/contact) about matching blade material and rotor configuration to your feedstock before your next order ships.",
+      },
+    ],
+  },
 ];
 
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
