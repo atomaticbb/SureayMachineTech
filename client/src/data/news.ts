@@ -85,6 +85,116 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "rotary-slitter-knives-overspeed-ratio",
+    tag: "TECHNICAL GUIDE",
+    date: "03.AUG.2026",
+    title:
+      "Rotary Slitter Knives for Film Slitting: Why Over-Speed Ratio Is the Setting Most Buyers Get Wrong",
+    excerpt:
+      "Over-speed ratio — the 2-5% speed differential between the top knife and the anvil roll — is the film-slitting spec buyers ask about least and get wrong most. Here's how to read edge failures and match material to the job.",
+    image: "/images/news/rotary-slitter-knives-overspeed-ratio-cover.webp",
+    readTime: "4 MIN",
+    seoTitle:
+      "Rotary Slitter Knives: Getting Over-Speed Ratio Right for Film Slitting | Sureay",
+    metaDescription:
+      "Over-speed ratio is the film-slitting spec buyers get wrong most. Learn to read edge failures and match rotary slitter knife steel and coating to the job.",
+    keywords:
+      "rotary slitter knives, over-speed ratio, film slitting knives, BOPP slitter blade, BOPET slitting knife, shear cutting film, DLC coated slitter knife, TiN coated slitter knife",
+    relatedProductIds: ["rotary-slitter-knives"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A BOPP line running clean for months suddenly starts throwing ragged, fuzzy edges on one lane. Nobody changed the blade. Nobody changed the film. What changed is wear on the knife-to-anvil clearance, and the operator compensated the only way the HMI lets them — by nudging the top arbor speed. That single adjustment, made without understanding what it does, is usually where the trouble starts.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The setting in question is over-speed ratio, and it's the spec buyers ask about least and get wrong most.",
+      },
+      {
+        type: "h2",
+        value: "What Over-Speed Ratio Actually Does",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/rotary-slitter-knives-overspeed-ratio-diagram.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Over-speed ratio is the intentional speed differential between the rotating top knife and the bottom anvil roll — typically 2-5% above web speed. At zero differential, the blade behaves like a crush cutter: it presses through the film rather than shearing it, which works fine for soft PE stretch film but tears BOPET and CPP. Push the differential too high and you get a cleaner cut initially, then accelerated edge wear as the knife scrubs against the anvil surface on every rotation instead of meeting it.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The right number depends on the film. A 12-micron BOPET line running at 300+ m/min needs a tighter, lower differential than a heavier PE stretch film application — get this backwards and you'll spend a shift chasing dust and burr instead of one five-minute clearance check.",
+      },
+      {
+        type: "h2",
+        value: "Reading the Failure Instead of Guessing at It",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/rotary-slitter-knives-overspeed-ratio-edge-comparison.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Three symptoms point to three different causes, and they don't respond to the same fix: dust and fiber fuzzing at the cut edge usually means the differential is too low — the film is being crushed, not sheared. A visible burr on one side only points to arbor misalignment, not the ratio at all — no amount of speed adjustment fixes a bent shaft. Rapid edge dulling with good initial cut quality is the over-speed ratio running too hot for the coating and steel grade in use.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That last one is the case where material choice actually matters. A DLC-coated D2 blade tolerates a higher differential than an uncoated M2 HSS knife before the wear curve turns steep.",
+      },
+      {
+        type: "h2",
+        value: "Matching Material and Coating to the Application",
+      },
+      {
+        type: "image",
+        value: "/images/news/rotary-slitter-knives-overspeed-ratio-coatings.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "[Rotary slitter knives](/products/rotary-slitter-knives) for film work aren't a one-grade-fits-all product. M2 HSS holds an edge well on PE stretch film and is easy to resharpen in-house. D2 and ASP23 powder-metallurgy steel hold tolerance longer on BOPP and BOPET runs at higher line speeds. Solid carbide earns its cost premium only where the film carries filler or the run length genuinely justifies it — most converters overspec carbide for standard clear film and never recover the price difference in regrind savings.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Coating solves a different problem than steel grade solves. TiN and DLC PVD coatings reduce surface adhesion on the blade face by roughly 80% versus bare steel, which matters on PSA tape and any adhesive-backed web where film transfer builds up faster than the wear itself degrades the edge. If your line runs tape or laminate and you're seeing gummy residue rather than dullness, that's a coating problem, not a steel problem — don't reach for a harder material to fix it.",
+      },
+      {
+        type: "h2",
+        value: "Getting the Spec Right Before the Blade Ships",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Most slitter systems — Tidland, Kampf, Atlas, and Dusenbery arbors among them — have a designed over-speed ratio built into the OEM spec sheet. The blade should match that number, not a generic default. If you don't have the OEM documentation, a worn sample and the machine model are usually enough for a supplier to reverse-engineer the working clearance and match it.",
+      },
+      {
+        type: "paragraph",
+        value:
+          'The decision rule that saves the most rework: fix alignment issues first, adjust over-speed ratio second, and only change steel grade or coating once the first two are confirmed correct. Buyers who skip straight to "we need a harder blade" often reorder the same problem in a different material.',
+      },
+      {
+        type: "paragraph",
+        value:
+          "Every batch we ship carries a Rockwell hardness test report and a dimensional inspection record, so if a converter wants to confirm the over-speed ratio their supplier actually built the blade to, that's the paperwork to ask for — not just a spec sheet promise.",
+      },
+      {
+        type: "callout",
+        value:
+          "Send us a worn sample or your arbor's OEM spec — Tidland, Kampf, Atlas, Dusenbery, or otherwise — and we'll confirm the over-speed ratio, steel grade, and coating before any steel gets cut. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "custom-length-guillotine-paper-cutter-blades",
     tag: "TECHNICAL GUIDE",
     date: "23.JUL.2026",
