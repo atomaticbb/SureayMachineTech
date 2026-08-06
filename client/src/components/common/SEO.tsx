@@ -54,8 +54,8 @@ export interface ProductData {
   material?: string; // e.g. "D2 / SKD11 / M2 HSS"
   specs?: { label: string; value: string }[];
   offers?: {
-    lowPrice: number;
-    highPrice: number;
+    lowPrice?: number;
+    highPrice?: number;
   };
 }
 
@@ -102,7 +102,6 @@ export default function SEO({
   productData,
   ogImage,
   noIndex = false,
-  keywords,
   breadcrumbs,
   extraJsonLd,
   preloadImage,
@@ -177,10 +176,13 @@ export default function SEO({
         ...(productData.offers && {
           offers: {
             "@type": "AggregateOffer",
-            lowPrice: productData.offers.lowPrice,
-            highPrice: productData.offers.highPrice,
+            ...(productData.offers.lowPrice !== undefined &&
+              productData.offers.highPrice !== undefined && {
+                lowPrice: productData.offers.lowPrice,
+                highPrice: productData.offers.highPrice,
+                offerCount: "1",
+              }),
             priceCurrency: "USD",
-            offerCount: "1",
             availability: "https://schema.org/InStock",
             shippingDetails: {
               "@type": "OfferShippingDetails",
@@ -246,7 +248,6 @@ export default function SEO({
       {/* Core */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
       {preloadImage && (
