@@ -25,6 +25,7 @@ export const blades: Blade[] = [
     ],
     "description": "Lưỡi cắt tròn được mài chính xác dành cho màng BOPP, BOPET & CPP, màng căng PE, băng PSA & vải không dệt. Dung sai độ dày ± 0,002mm, T.I.R. hết. Các biên dạng cắt, ghi điểm và dao cạo bằng thép M2 HSS, D2 & ASP23 PM với lớp phủ chống dính TiN & DLC tùy chọn. OEM phù hợp cho các hệ thống máy xén Tidland, Kampf, Atlas & Dusenbery.",
     "fullDescription": "dao cắt rotary tròn và các lưỡi dao hoạt động ở điểm giao nhau giữa độ chính xác về chiều và khoa học vật liệu. Trên dây chuyền chuyển đổi chạy màng BOPP hoặc BOPET ở tốc độ 400–600m/phút, sai số dung sai độ dày lưỡi rạch quay là 0,005mm trên mỗi dao kết hợp trên một ngăn xếp nhiều dao, tạo ra độ lệch chiều rộng khe có thể nhìn thấy, độ cong cạnh và bụi làm ô nhiễm thiết bị đóng cuộn và đóng gói xuôi dòng. Các lưỡi máy xén quay Sureay được sản xuất với dung sai độ dày ±0,002mm và tổng độ lệch chỉ định (T.I.R.) 20,02mm—dung sai duy trì trên toàn bộ đường kính sản xuất, không chỉ ở lỗ khoan.\n\nLựa chọn hợp kim được xác định theo ứng dụng. Chuyển đổi tiêu chuẩn giấy tráng và bìa kraft chạy trên thép chịu lực 52100 hoặc D2 thép dụng cụ gia công nguội. Chất nền mài mòn—lá điện cực bằng nhôm và đồng cấp pin dành cho pin lithium EV, bao bì gia cố bằng sợi thủy tinh, lớp lót nhả phủ silicon—yêu cầu thép luyện kim bột (PM) ASP23 hoặc ASP52 hoặc cacbua rắn để có tuổi thọ cạnh chấp nhận được. Màng nhựa dẻo (BOPP, BOPET, CPP, PE) được xử lý thường xuyên trên lưỡi M2 HSS với lớp phủ bề mặt TiN hoặc DLC PVD tùy chọn để ngăn chặn sự chuyển màng dính và giảm hiện tượng nóng lên do ma sát gây ra.\n\n## Bằng phương pháp cắt\n\n**Rạch cắt (Cặp dao trên và dưới phù hợp):** Tác động cắt kéo giữa dao trên có rãnh và dao đe dưới có rãnh tạo ra một vết cắt sạch với tải trọng kéo bằng 0 trên bụng. Khoảng hở giữa dao với dao thường được đặt ở mức 0,05–0,15mm (phụ thuộc vào chất nền); Dung sai mài của chúng tôi đảm bảo khoảng hở này nhất quán trên toàn bộ chiều rộng khe. Quan trọng đối với giấy, vải không dệt và màng dẻo nhẹ ở đó sự biến dạng của cạnh là không thể chấp nhận được.\n\n**Cắt/nghiền/cắt điểm (Lưỡi tròn chống lại cuộn đe cao su):** Một lưỡi dao cứng, sắc bén xuyên qua tấm màng bao bì nhiều lớp, xốp hoặc nhiều lớp dính nhạy áp với đe cao su có độ cứng được kiểm soát. Hình học biên dạng lưỡi và góc vát được tối ưu hóa trên mỗi bề mặt để ngăn chặn hiện tượng keo bị ép ra và tách lớp ở cạnh cắt. Sự lựa chọn tiêu chuẩn cho băng keo nhạy áp, cắt khuôn xốp và tách bao bì y tế.\n\n**Razor Razor (Lưỡi dao đơn cố định hoặc nổi tự do):** Lưỡi dao có cấu hình mỏng, siêu sắc giúp cắt tỉa phế liệu từ các dây chuyền ép đùn màng đúc, dây chuyền màng định hướng và sản xuất vải không dệt spunbond ở tốc độ trên 500m/phút. Hình dạng lưỡi được tối ưu hóa để giảm thiểu lực cản của màng và độ sạch của cạnh tối đa, ngăn chặn hiện tượng cong mép và phóng tĩnh điện gây ra hiện tượng đứt màng trên đường dây tốc độ cao.\n\n##Theo nguyên liệu & ngành nghề\n\n**Màng đóng gói linh hoạt:** Màng co BOPP, BOPET, CPP, PE/PP, ống co. Rạch màng tốc độ cao đòi hỏi phải kiểm soát độ lệch chính xác để ngăn chặn sự dao động của lực căng màng do dao động gây ra. M2 HSS với lớp phủ DLC tùy chọn giúp loại bỏ độ bám dính chuyển màng trên mặt lưỡi dao.\n\n**Vải không dệt & vải y tế:** Spunbond PP, vải tan chảy, vải y tế SMS, vật liệu lọc HEPA. Các góc cào chuyên dụng giúp ngăn xơ bị sờn và trượt màng trong quá trình rạch các vật liệu có cấu trúc lỏng lẻo ở mức độ căng cao.\n\n**Băng & nhãn chịu áp lực:** Mặt nạ, băng keo, xốp hai mặt, giấy dán nhãn, keo chuyển. Lớp phủ chống bám dính TiN và Teflon giúp giảm tần suất làm sạch từ 60–80%, kéo dài Thời gian Trung bình Giữa các lần Thay thế trên các ứng dụng rạch băng đòi hỏi khắt khe nhất.",
+    "disambiguation": "Bạn đang gia công giấy, giấy lụa hoặc bìa thay vì phim? Xem trang [Dao xén giấy](/products/rotary-slitter-knives-paper) của chúng tôi để biết dữ liệu độ hở cắt và chu kỳ mài lại trên các chất nền xenlulo.",
     "link": "/products/rotary-slitter-knives",
     "isFeatured": true,
     "compatibleMachines": [
@@ -196,7 +197,7 @@ export const blades: Blade[] = [
   {
     "id": "rotary-slitter-knives-paper",
     "name": "Dao xén giấy",
-    "fullName": "Dao xén quay tốc độ cao & Lưỡi cắt tròn để chuyển đổi giấy, khăn giấy & tôn",
+    "fullName": "Dao xén giấy & khăn giấy cho dây chuyền chuyển đổi tốc độ cao",
     "category": "slitter_knives",
     "sector": "paper",
     "categoryDisplay": "Dao xén giấy",
@@ -209,12 +210,13 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp"
     ],
-    "description": "Dao chia rãnh tròn được mài chính xác dành cho dây chuyền chuyển đổi giấy, khăn giấy và gấp nếp tốc độ cao. Các cặp lực cắt trên/dưới phù hợp được sản xuất từ ​​​​thép D2, M2 HSS hoặc 52100 có dung sai độ dày ± 0,002mm. Được tối ưu hóa để cắt sợi sạch trên các cuộn giấy lụa, giấy kraft và bìa các tông sóng ở tốc độ lên tới 600 m/phút.",
-    "fullDescription": "Dây chuyền chuyển đổi giấy yêu cầu dao cắt giấy mang lại những đường cắt nhất quán, không có bụi sợi trong suốt quá trình sản xuất nhiều ca. dao cắt rotary cấp giấy Sureay được mài chính xác từ thép công cụ D2 (đối với giấy và bìa tiêu chuẩn) hoặc thép tốc độ cao M2 (đối với giấy lụa tốc độ cao và giấy đặc biệt) để đạt được dung sai kích thước chính xác giúp ngăn lưỡi dao lắc lư và đảm bảo chất lượng khe đồng đều.\n\n## Luyện kim dành riêng cho giấy\n\nKhông giống như rạch màng nhựa hoặc lá kim loại, giấy chuyển đổi khiến mép lưỡi dao bị mài mòn liên tục từ sợi xenlulo, chất hồ và chất độn khoáng (canxi cacbonat, cao lanh). Chúng tôi chọn hợp kim lưỡi đặc biệt cho các ứng dụng giấy:\n\n**Thép công cụ D2 (HRC 60–62):** Loại tiêu chuẩn dành cho giấy kraft, bìa hộp và tôn chuyển đổi. Hàm lượng crom 12% mang lại khả năng chống mài mòn tuyệt vời chống lại các sợi giàu lignin và các hợp chất độn khoáng.\n\n**Thép tốc độ cao M2 (HRC 62–64):** Được ưu tiên để chuyển đổi giấy vệ sinh và giấy vệ sinh tốc độ cao khi tốc độ đường truyền vượt quá 400 m/phút. Molypden và hợp kim cacbua vonfram duy trì hình dạng cạnh dưới áp suất nhiệt khi cắt tốc độ cực cao.\n\n**Thép chịu lực 52100 (HRC 58–60):** Tùy chọn tiết kiệm chi phí cho giấy in báo, giấy tạp chí tiêu chuẩn và chuyển đổi sợi tái chế cấp thấp khi tốc độ mài mòn ở mức vừa phải.\n\n## Cắt so với Cắt nghiền giấy\n\nChuyển đổi giấy sử dụng hai phương pháp rạch chính:\n\n**Rạch cắt (Cặp dao trên/dưới):** Hai dao tròn quay theo hướng ngược nhau tạo ra hành động cắt giống như cắt kéo. Đây là phương pháp tiêu chuẩn cho giấy tráng, khăn giấy và các loại bao bì nhẹ, trong đó phải giảm thiểu lực kéo sợi và tạo bụi. Chúng tôi cung cấp các cặp phù hợp với độ hở cắt được kiểm soát (thường là 0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft).\n\n**Cắt nghiền (Dao chống đe):** Một con dao tròn cứng sẽ nghiền nát mạng giấy dựa vào cuộn đe có rãnh. Được sử dụng cho các tông sóng nặng và bao bì nhiều lớp mà việc bảo trì độ hở cắt là không thực tế. Lưỡi đe (vị trí phía dưới) được sản xuất với hình dạng nhiều rãnh có tác dụng nén và bẻ gãy các sợi giấy.\n\n## Hiệu suất không có bụi sợi\n\nBụi sợi sinh ra ở mép khe làm ô nhiễm các trạm cuộn lại của nhà máy giấy, làm giảm chất lượng sản phẩm trên các loại giấy vệ sinh và giấy vệ sinh, đồng thời gây ra các điểm dừng làm sạch ngoài kế hoạch. Dao xén cấp giấy của chúng tôi được mài chính xác đến độ hoàn thiện bề mặt Ra 0,2–0,4μm với các góc vát cạnh được kiểm soát giúp cắt sạch qua các bó sợi xenlulo thay vì xé hoặc kéo. Điều này giúp giảm bụi sợi trong không khí khoảng 60–70% so với các loại dao công nghiệp tiêu chuẩn.",
+    "description": "Dao xén giấy được mài chuyên biệt cho xenlulo, không phải dụng cụ cắt màng nhựa được tận dụng lại. Các cặp dao cắt trên/dưới phù hợp bằng thép D2, M2 HSS hoặc 52100, đạt dung sai ±0,002mm về độ dày và độ đảo ≤0,02mm, với độ hở cắt được cài đặt sẵn theo chất nền bạn đang chạy: 0,02–0,05mm cho giấy lụa, 0,05–0,10mm cho giấy kraft. Đạt tốc độ lên đến 600 m/phút trên dây chuyền giấy lụa. Hãy gửi bản vẽ, một lưỡi dao đã mòn hoặc chỉ cần model máy của bạn, chúng tôi sẽ xác nhận độ vừa vặn.",
+    "fullDescription": "Dây chuyền chuyển đổi giấy yêu cầu dao cắt giấy mang lại những đường cắt nhất quán, không có bụi sợi trong suốt quá trình sản xuất nhiều ca. dao cắt rotary cấp giấy Sureay được mài chính xác từ thép công cụ D2 (đối với giấy và bìa tiêu chuẩn) hoặc thép tốc độ cao M2 (đối với giấy lụa tốc độ cao và giấy đặc biệt) để đạt được dung sai kích thước chính xác giúp ngăn lưỡi dao lắc lư và đảm bảo chất lượng khe đồng đều.\n\n## Luyện kim dành riêng cho giấy\n\nKhông giống như rạch màng nhựa hoặc lá kim loại, giấy chuyển đổi khiến mép lưỡi dao bị mài mòn liên tục từ sợi xenlulo, chất hồ và chất độn khoáng (canxi cacbonat, cao lanh). Chúng tôi chọn hợp kim lưỡi đặc biệt cho các ứng dụng giấy:\n\n**Thép công cụ D2 (HRC 60–62):** Loại tiêu chuẩn dành cho giấy kraft, bìa hộp và tôn chuyển đổi. Hàm lượng crom 12% mang lại khả năng chống mài mòn tuyệt vời chống lại các sợi giàu lignin và các hợp chất độn khoáng.\n\n**Thép tốc độ cao M2 (HRC 62–64):** Được ưu tiên để chuyển đổi giấy vệ sinh và giấy vệ sinh tốc độ cao khi tốc độ đường truyền vượt quá 400 m/phút. Molypden và hợp kim cacbua vonfram duy trì hình dạng cạnh dưới áp suất nhiệt khi cắt tốc độ cực cao.\n\n**Thép chịu lực 52100 (HRC 58–60):** Tùy chọn tiết kiệm chi phí cho giấy in báo, giấy tạp chí tiêu chuẩn và chuyển đổi sợi tái chế cấp thấp khi tốc độ mài mòn ở mức vừa phải.\n\n**Cacbua vonfram (Nguyên khối hoặc đầu cacbua):** Lựa chọn nâng cấp cho giấy tráng có hàm lượng tro cao, giấy mỹ thuật và bìa các tông sóng, nơi chất độn khoáng làm mòn nhanh cạnh thép giữa các lần thay dao. Cung cấp dạng cacbua nguyên khối trên các lưỡi dao đường kính nhỏ hơn, hoặc đầu cacbua — một cạnh cacbua được hàn vào thân thép — trên các lưỡi dao đường kính lớn hơn, nơi thân dao cacbua nguyên khối hoàn toàn không hiệu quả về chi phí.\n\n## Cắt so với Cắt nghiền giấy\n\nChuyển đổi giấy sử dụng hai phương pháp rạch chính:\n\n**Rạch cắt (Cặp dao trên/dưới):** Hai dao tròn quay theo hướng ngược nhau tạo ra hành động cắt giống như cắt kéo. Đây là phương pháp tiêu chuẩn cho giấy tráng, khăn giấy và các loại bao bì nhẹ, trong đó phải giảm thiểu lực kéo sợi và tạo bụi. Chúng tôi cung cấp các cặp phù hợp với độ hở cắt được kiểm soát (thường là 0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft).\n\n**Cắt nghiền (Dao chống đe):** Một con dao tròn cứng sẽ nghiền nát mạng giấy dựa vào cuộn đe có rãnh. Được sử dụng cho các tông sóng nặng và bao bì nhiều lớp mà việc bảo trì độ hở cắt là không thực tế. Lưỡi đe (vị trí phía dưới) được sản xuất với hình dạng nhiều rãnh có tác dụng nén và bẻ gãy các sợi giấy.\n\n## Hiệu suất không có bụi sợi\n\nBụi sợi sinh ra ở mép khe làm ô nhiễm các trạm cuộn lại của nhà máy giấy, làm giảm chất lượng sản phẩm trên các loại giấy vệ sinh và giấy vệ sinh, đồng thời gây ra các điểm dừng làm sạch ngoài kế hoạch. Dao xén cấp giấy của chúng tôi được mài chính xác đến độ hoàn thiện bề mặt Ra 0,2–0,4μm với các góc vát cạnh được kiểm soát giúp cắt sạch qua các bó sợi xenlulo thay vì xé hoặc kéo. Điều này giúp giảm bụi sợi trong không khí khoảng 60–70% so với các loại dao công nghiệp tiêu chuẩn.",
     "link": "/products/rotary-slitter-knives-paper",
     "isFeatured": false,
     "compatibleMachines": [
       "Atlas Converting",
+      "Tidland",
       "Parkinson",
       "Kampf",
       "Laem System",
@@ -226,11 +228,11 @@ export const blades: Blade[] = [
     "specs": [
       {
         "label": "Material",
-        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel"
+        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide"
       },
       {
         "label": "Hardness",
-        "value": "HRC 58–64 (grade dependent)"
+        "value": "HRC 58–64 (steel) / HRA 90–92 (carbide)"
       },
       {
         "label": "Cutting Styles",
@@ -253,14 +255,20 @@ export const blades: Blade[] = [
       {
         "id": "paper-metallurgy",
         "tag": "KHOA HỌC VẬT LIỆU",
-        "title": "Lựa chọn hợp kim được tối ưu hóa cho giấy",
+        "title": "Dao xén giấy nên sử dụng loại thép nào?",
         "description": "Sợi giấy có chứa chất độn khoáng có tính mài mòn (canxi cacbonat, cao lanh, titan dioxide) làm xỉn màu nhanh chóng các loại thép làm dao tiêu chuẩn. Các loại D2 và M2 HSS của chúng tôi được xử lý nhiệt đặc biệt cho các ứng dụng chuyển đổi giấy, mang lại tuổi thọ cạnh dài hơn 40–60% so với dao xén đa năng trên nền giấy được tráng và phủ đầy."
       },
       {
         "id": "shear-clearance",
         "tag": "CẮT CHÍNH XÁC",
-        "title": "Độ hở cắt được kiểm soát để cắt không có bụi sợi",
+        "title": "Độ hở cắt nào ngăn bụi sợi ở mép khe?",
         "description": "Các cặp cắt trên/dưới phù hợp được xác minh trước theo thông số kỹ thuật về độ hở cấp mô (0,02–0,05mm đối với giấy siêu mỏng, 0,05–0,10mm đối với giấy kraft). Khoảng hở được kiểm soát này cắt sạch các bó sợi xenlulo mà không làm rách hoặc tạo ra bụi sợi trong không khí làm nhiễm bẩn các trạm tua lại và làm giảm chất lượng sản phẩm."
+      },
+      {
+        "id": "bore-locking-options",
+        "tag": "PHÙ HỢP MÁY",
+        "title": "Có những tùy chọn lỗ khoan, khóa và góc vát nào?",
+        "description": "Dao xén giấy được cung cấp với lỗ khoan trơn, có rãnh then hoặc kiểu lưỡi lê để khớp với trục của bạn, và được khóa cố định bằng rãnh then, vít định vị, lệch tâm có then hoặc lệch tâm không then — tùy theo loại máy xén hoặc máy cuộn lại của bạn đang sử dụng. Lưỡi trên được mài với biên dạng lõm vát đơn ở góc 15°–20°, có thể cung cấp thêm vát kép (hai giai đoạn) hoặc mài lõm mặt sau ở những nơi độ bền cạnh quan trọng hơn góc tiếp cận mỏng như dao cạo. Hãy gửi cho chúng tôi bản vẽ dao hiện tại hoặc bản vẽ trục của bạn, chúng tôi sẽ xác nhận lỗ khoan, cơ chế khóa và góc vát trước khi cắt thép, để phần thay thế lắp vừa, khóa chặt và cắt chính xác như dao gốc."
       }
     ],
     "dimensionLabels": {
@@ -268,7 +276,7 @@ export const blades: Blade[] = [
       "col1": "Đường kính ngoài",
       "col2": "Đường kính trong",
       "col3": "độ dày",
-      "caption": "* Kích thước tiêu chuẩn để chuyển đổi giấy. Lưỡi trên (có rãnh để cắt cắt) và lưỡi dưới (đe có rãnh để cắt nghiền). OD/ID tùy chỉnh có sẵn cho các kiểu máy cụ thể."
+      "caption": "* Kích thước tiêu chuẩn để chuyển đổi giấy. Lưỡi trên (biên dạng lõm để rạch cắt) và lưỡi dưới (đe có rãnh để cắt nghiền). Chúng tôi sản xuất dao xén giấy và lưỡi đe với đường kính ngoài khoảng 50–320mm, lỗ khoan 20–100mm và độ dày 0,8–20mm (từ lưỡi trên dạng lõm mỏng đến lưỡi đe có rãnh nặng) — ngoài ba bộ kích thước trên, hãy gửi model máy của bạn và chúng tôi sẽ xác nhận kích thước gần nhất hoặc gia công theo đúng kích thước của bạn."
     },
     "standardDimensions": [
       {
@@ -317,6 +325,7 @@ export const blades: Blade[] = [
       "lowPrice": 20,
       "highPrice": 280
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -344,9 +353,49 @@ export const blades: Blade[] = [
         {
           "question": "Sureay có thể cung cấp dao tương thích với Atlas Converting hoặc máy xén/cuộn cuộn Kampf hiện có của chúng tôi không?",
           "answer": "Đúng. Gửi cho chúng tôi mẫu dao hoặc số kiểu máy hiện tại của bạn. Chúng tôi sẽ xác nhận OD, ID, cấu hình lỗ khoan và độ dày lưỡi cắt, đồng thời cung cấp dao thay thế trực tiếp được sản xuất theo thông số kỹ thuật OEM. Các mẫu rãnh tùy chỉnh cho cuộn đe có sẵn cho các ứng dụng chuyển đổi tôn và ván cụ thể."
+        },
+        {
+          "question": "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
+          "answer": "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy."
+        },
+        {
+          "question": "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
+          "answer": "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với các cấu hình tùy chỉnh, các mẫu xác nhận kích thước được tạo ra trước khi bắt đầu sản xuất hoàn chỉnh—không có cam kết về dụng cụ cho đến khi sự phù hợp được xác nhận."
         }
       ]
-    }
+    },
+    "steelGrades": {
+      "intro": "Sợi giấy làm mòn lưỡi dao theo cách khác với màng nhựa hoặc lá kim loại — tải trọng mài mòn đến từ chất độn khoáng trong nguyên liệu, chứ không phải từ chính sợi giấy. Các loại thép dưới đây bao gồm phạm vi mà chúng tôi báo giá cho giấy, giấy lụa và bìa.",
+      "rows": [
+        {
+          "grade": "D2 Tool Steel",
+          "hardness": "HRC 58–61",
+          "bestFor": "Giấy kraft tiêu chuẩn, bìa hộp và tôn chuyển đổi — loại thép giấy mặc định của chúng tôi.",
+          "tradeoff": "Giá trị tổng thể tốt; tuổi thọ cạnh giảm nhanh hơn so với M2 hoặc cacbua trên vật liệu có độ độn hoặc tráng phủ dày."
+        },
+        {
+          "grade": "M2 High-Speed Steel",
+          "hardness": "HRC 62–64",
+          "bestFor": "Giấy lụa và giấy vệ sinh tốc độ cao trên 400 m/phút, nơi cạnh dao phải giữ được hình học dưới chu kỳ nhiệt.",
+          "tradeoff": "Chi phí cao hơn D2; chu kỳ mài lại vẫn ngắn hơn so với cacbua trên nguyên liệu có tính mài mòn."
+        },
+        {
+          "grade": "52100 Bearing Steel",
+          "hardness": "HRC 58–60",
+          "bestFor": "Giấy in báo tiêu chuẩn, giấy tạp chí và sợi tái chế cấp thấp, nơi tốc độ mài mòn ở mức vừa phải.",
+          "tradeoff": "Khả năng chống mài mòn thấp hơn D2 trên vật liệu có độn hoặc tráng phủ — tốt nhất nên dành cho nguyên liệu sạch hơn."
+        },
+        {
+          "grade": "Cacbua vonfram",
+          "hardness": "HRA 90–92",
+          "bestFor": "Giấy tráng có hàm lượng tro cao, giấy mỹ thuật và bìa các tông sóng, nơi chất độn khoáng làm mòn nhanh cạnh thép giữa các lần thay dao. Có dạng nguyên khối hoặc đầu cacbua.",
+          "tradeoff": "Chi phí đơn vị cao nhất và giòn hơn khi chịu va đập so với thép công cụ — cần tốc độ cấp liệu ổn định và căn chỉnh chính xác để tránh sứt mẻ cạnh."
+        }
+      ],
+      "outro": "Dao xén giấy dạng nguyên khối và đầu cacbua đều có sẵn. Hãy cho chúng tôi biết loại sợi bạn sử dụng (nguyên chất, tái chế, tráng phủ hoặc có độn), tốc độ dây chuyền và chu kỳ mài lại hiện tại, chúng tôi sẽ xác nhận loại thép giúp giảm tổng chi phí trên mỗi lần cắt, chứ không chỉ giá niêm yết."
+    },
+    "disambiguation": "Bạn đang xén phim, băng hoặc bao bì linh hoạt? Các loại dao đó có trên trang [Dao xén phim và băng](/products/rotary-slitter-knives) của chúng tôi. Trang này chỉ đề cập đến các chất nền giấy.",
+    "categoryCardAnchorText": "Dao xén giấy — giấy lụa, kraft & giấy tráng"
   },
   {
     "id": "metal-foil-strip-slitter-knives",
@@ -1003,10 +1052,23 @@ export const blades: Blade[] = [
     "badgeColor": "blue",
     "gallery": [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-03.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-01.webp",
       "/images/products/blades/tissue-log-saw-blades-00.webp",
       "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp"
+    ],
+    "galleryAlts": [
+      "Hình dựng lưỡi cưa tròn cho gỗ tròn từ khăn giấy với mặt được đánh bóng như gương và các lỗ chốt truyền động",
+      "Chồng lưỡi cưa tròn cho gỗ tròn từ khăn giấy đã hoàn thiện trong thùng gỗ tại Sureay",
+      "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy được đóng gói trong thùng gỗ với miếng bảo vệ cạnh trước khi vận chuyển",
+      "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy Ø610mm D2, mặt được đánh bóng như gương với các lỗ chốt truyền động",
+      "Bản vẽ kỹ thuật của dao tròn cho lưỡi cưa gỗ tròn từ khăn giấy, thép D2",
+      "Hình dựng hai lưỡi cưa tròn cho gỗ tròn từ khăn giấy cho thấy mẫu lỗ chốt truyền động khớp nhau",
+      "Lỗ khoan Ø68,26mm và mẫu lỗ chốt truyền động cho máy cưa gỗ Fabio Perini",
+      "Mặt lưỡi cưa tròn cho gỗ tròn từ khăn giấy cho thấy lớp hoàn thiện đánh bóng như gương dưới ánh sáng xưởng"
     ],
     "description": "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–Ø1000mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
     "fullDescription": "Cắt ngang mô là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi mô. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.\n\nKhăn giấy Sureay lưỡi cưa tròn cho gỗ tròn được sản xuất từ ​​D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội cao cấp. Bởi vì những lưỡi dao khổng lồ này (lên tới Ø1200mm) quay với tốc độ RPM cực cao nên độ ổn định là trên hết. Mỗi lưỡi dao đều được làm cứng bằng chân không, được cân bằng độ căng và được mài nhỏ đến dung sai kích thước nghiêm ngặt được xác minh trên CMM đã hiệu chuẩn trước khi gửi đi:\n\n- **Độ đảo bên:** ≤0,15mm\n- **Độ đảo cạnh:** ≤0,10mm\n- **Mặt song song:** 0,05mm\n- **Độ đồng tâm (OD đến lỗ khoan):** ≤0,30mm\n- **Dung sai lỗ khoan:** Ø68,26mm (+0,05/0,00mm)\n\n## Khả năng tương thích mài sắc liên tục\n\nKhông giống như dao tròn tiêu chuẩn, máy cưa gỗ được mài sắc liên tục *trong* khi vận hành bằng bánh mài CBN (Cubic Boron Nitride) đồng bộ. xử lý nhiệt của Sureay nhắm tới HRC58–60. Phạm vi độ cứng cụ thể này đảm bảo lưỡi dao mài sạch với đá CBN mà không cần tải hoặc tráng men, duy trì chu kỳ cạnh sắc như dao cạo sau chu kỳ mà không tiêu tốn bánh mài đắt tiền của bạn.\n\n## Hình học góc xiên & Giảm bụi\n\nMô là một mạng lưới có mật độ thấp, diện tích bề mặt cao với cường độ nén gần như bằng không. Cắt nó với góc xiên quá dốc sẽ tạo ra lực nén, dẫn đến có quá nhiều bụi giấy (nguy cơ cháy nổ lớn đối với các dòng khăn được dán bằng keo xịt) và độ đặc của cạnh làm giảm độ mềm của cuộn. Chúng tôi sử dụng góc vát nông (15°–25°) để tách các sợi bằng lực cắt thuần túy. Kết hợp với mặt lưỡi được đánh bóng như gương (Ra<0,2μm), điều này mang lại những đường cắt hoàn hảo trên khăn giấy tắm 2 lớp và 3 lớp cao cấp.\n\n## Khả năng tương thích lỗ khoan của nền tảng OEM\n\n**Ø68,26mm (+0,05mm):** Fabio Perini (tất cả các dòng), máy cưa gỗ PCMC Forte/Elite, Körber/MTC.\n\n**Ø82,55mm:** Casmatic (nền tảng được cấp phép của Kimberly-Clark), hệ thống cưa gỗ OEM của bên thứ ba của Ý và Tây Ban Nha.\n\n**Ø60,00mm:** Máy cưa gỗ khổ lớn dành cho khăn lau công nghiệp, cuộn jumbo (JRT) và sản xuất giấy tắm không lõi (OD 870–1000mm).\n\nOD tùy chỉnh từ Ø610mm đến Ø1200mm được sản xuất theo đơn đặt hàng với thời gian thực hiện tiêu chuẩn là 10 ngày làm việc. Việc xem xét bản vẽ và xác nhận kích thước có sẵn trên công cụ đặt hàng đầu tiên.\n\n## Lớp phủ bề mặt tiên tiến\n\n**Mạ Chrome cứng:** Cung cấp khả năng chống ăn mòn trong môi trường nhà máy giấy có độ ẩm cao (>75% RH) và giảm hệ số bám dính của sợi mô, kéo dài khoảng thời gian chạy sạch giữa các chu kỳ mài lưỡi.\n\n**Lớp phủ Teflon (PTFE):** Tạo ra bề mặt có độ bôi trơn cao lướt qua các cuộn khăn bếp dày đặc, giảm đáng kể lực hút của động cơ và loại bỏ vết cháy trên mép giấy. Thông số kỹ thuật hàng đầu của dòng khăn bếp 3 lớp cao cấp.\n\n**Lớp phủ TiN PVD:** Titan nitrit lắng đọng hơi vật lý (2–3μm, HV2300+) kéo dài thời gian bảo dưỡng sắc bén trong hoạt động chu kỳ cao. Được khuyên dùng cho các nhãn hiệu khăn giấy cao cấp có thông số kỹ thuật nghiêm ngặt về ô nhiễm bụi.",
@@ -1018,7 +1080,12 @@ export const blades: Blade[] = [
       "Casmatic",
       "Gambini",
       "Bretting",
-      "MTC"
+      "MTC",
+      "Futura",
+      "United Converting",
+      "Italconverting",
+      "Maflex",
+      "MTorres"
     ],
     "specs": [
       {
@@ -1048,14 +1115,41 @@ export const blades: Blade[] = [
       {
         "label": "Applications",
         "value": "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)"
+      },
+      {
+        "label": "Max Line Speed",
+        "value": "300 strokes/min"
+      },
+      {
+        "label": "Inspection Records Supplied",
+        "value": "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment"
       }
     ],
+    "steelGrades": {
+      "intro": "Tuổi thọ của lưỡi cưa gỗ tròn trên dây chuyền khăn giấy phụ thuộc vào cách thép phản ứng dưới quá trình mài CBN liên tục, chứ không chỉ dựa vào độ cứng. Hai loại thép dưới đây bao gồm hầu hết các ứng dụng khăn giấy và khăn bếp mà chúng tôi báo giá.",
+      "rows": [
+        {
+          "grade": "D2 / 1.2379",
+          "hardness": "HRC 58–60",
+          "bestFor": "Dây chuyền khăn giấy vệ sinh và khăn bếp tiêu chuẩn sử dụng mài CBN nội tuyến. Loại thép mặc định của chúng tôi.",
+          "tradeoff": "Giá trị tổng thể cao nhất. Không có tuổi thọ dài nhất trên sợi tái chế có hàm lượng tro cao."
+        },
+        {
+          "grade": "Cr12MoV",
+          "hardness": "HRC 58–60",
+          "bestFor": "Dây chuyền mà chi phí lưỡi dao trên mỗi lần cắt quan trọng hơn tuổi thọ cạnh tuyệt đối; hỗ trợ mài lại có sẵn rộng rãi.",
+          "tradeoff": "Khả năng chống mài mòn thấp hơn một chút so với D2 trên sợi tái chế có tính mài mòn."
+        }
+      ],
+      "outro": "Đối với các dây chuyền tốc độ cao chạy sợi tái chế có tính mài mòn cao với chất độn mài mòn, chúng tôi cũng báo giá thép M2 HSS, loại thép giữ được cạnh sắc lâu nhất giữa các lần mài nhưng nhạy cảm hơn với tình trạng của bánh mài CBN. Nếu bạn không chắc dây chuyền của mình cần loại thép nào, hãy cho chúng tôi biết loại sợi (nguyên chất hay tái chế), mật độ gỗ tròn và số lần cắt mỗi phút bạn thực hiện. Chúng tôi chọn loại thép phù hợp với dây chuyền, chứ không phải ngược lại."
+    },
+    "componentsIntro": "Cắt ngang mô là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi mô. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.",
     "components": [
       {
         "id": "runout-control",
         "tag": "CHÍNH XÁC",
         "title": "Căng thẳng không lắc lư",
-        "description": "Lưỡi dao 610mm quay với tốc độ RPM cao sẽ bị cong vênh nếu không được căng đúng cách. Chúng tôi gia công CNC và mài vi mô từng lưỡi cưa khúc gỗ đến độ lệch bên ≤0,15mm, đảm bảo lưỡi cưa cắt thẳng hoàn hảo mà không dao động và làm nát lõi bìa cứng mỏng manh."
+        "description": "Tại sao cưa gỗ lại nghiền nát lõi bìa cứng? Hầu như luôn là do độ đảo bên đã vượt quá khoảng 0,20mm, và lưỡi dao bắt đầu đập vào lõi thay vì cắt nó. Lưỡi dao 610mm quay với tốc độ RPM cao sẽ bị cong vênh nếu không được căng đúng cách. Chúng tôi gia công CNC và mài vi mô từng lưỡi cưa khúc gỗ đến độ lệch bên ≤0,15mm, đảm bảo lưỡi cưa cắt thẳng hoàn hảo mà không dao động và làm nát lõi bìa cứng mỏng manh."
       },
       {
         "id": "cbn-compatible",
@@ -1123,6 +1217,7 @@ export const blades: Blade[] = [
       "lowPrice": 180,
       "highPrice": 1200
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -1135,7 +1230,7 @@ export const blades: Blade[] = [
         },
         {
           "question": "Bạn có thể cung cấp lưỡi cưa cho máy cưa gỗ Fabio Perini, PCMC, Casmatic hoặc Gambini không?",
-          "answer": "Đúng. Lỗ khoan Ø68,26mm (+0,05mm) tiêu chuẩn phù hợp trực tiếp với Fabio Perini và PCMC Forte/Elite. Lỗ khoan Ø82,55mm bao gồm các nền tảng OEM được Casmatic và Kimberly-Clark cấp phép. Chúng tôi nắm giữ các bản thiết kế OEM cho Gambini và Bretting, đồng thời cung cấp công cụ thay thế được đảm bảo có sẵn."
+          "answer": "Đúng. Lỗ khoan Ø68,26mm (+0,05mm) tiêu chuẩn phù hợp trực tiếp với máy cưa gỗ Fabio Perini và PCMC Forte/Elite. Lỗ khoan Ø82,55mm bao gồm Casmatic và các nền tảng tương đương. Đối với máy Gambini và Bretting, chúng tôi sản xuất theo hình học đo được của lưỡi dao hiện tại của bạn hoặc bản vẽ riêng của bạn, để phần thay thế lắp vừa mà không cần điều chỉnh lại máy. Hãy gửi cho chúng tôi model máy, một lưỡi dao đã mòn, hoặc một bản phác thảo có kích thước và chúng tôi sẽ xác nhận độ vừa vặn trước khi báo giá."
         },
         {
           "question": "Lưỡi dao tương tác với hệ thống mài CBN liên tục của máy như thế nào?",

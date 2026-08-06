@@ -25,6 +25,7 @@ export const blades: Blade[] = [
     ],
     "description": "Cuchillas cortadoras circulares rectificadas con precisión para películas de BOPP, BOPET y CPP, películas estirables de PE, cintas PSA y conversión de telas no tejidas. tolerancia de espesor de ±0,002 mm, desviación T.I.R. de ≤0,02 mm. Perfiles de corte, rayado y afeitado en acero M2 HSS, D2 y ASP23 PM con recubrimientos antiadherentes TiN y DLC opcionales. Ajuste OEM para sistemas de corte Tidland, Kampf, Atlas y Dusenbery.",
     "fullDescription": "Las cuchillas rotativas de corte longitudinal y cuchillas circulares operan en la intersección de la precisión dimensional y la ciencia de los materiales. En una línea de conversión que trabaja con film de BOPP o BOPET a 400-600 m/min, un error de tolerancia de grosor de la cuchilla de corte rotativo de 0,005 mm por cuchilla se acumula en un conjunto de múltiples cuchillas, produciendo una desviación visible del ancho de corte, rizado de los bordes y polvo que contamina los equipos de rebobinado y embalaje posteriores. Las cuchillas de las cortadoras rotativas Sureay se fabrican con una tolerancia de espesor de ±0,002 mm y una desviación total indicada (T.I.R.) de ≤20,02 mm, tolerancias que se mantienen en todo el diámetro de producción, no sólo en el orificio.\n\nLa selección de la aleación depende de la aplicación. La conversión estándar de papel estucado y cartón kraft funciona con acero para rodamientos 52100 o D2 acero para herramientas de trabajo en frío. Los sustratos abrasivos (láminas de electrodos de aluminio y cobre para pilas de litio EV, envases reforzados con fibra de vidrio, revestimientos de silicona) requieren acero ASP23 o ASP52 pulvimetalúrgico (PM) o carburo sólido para una duración aceptable de los bordes. Los films de plástico flexible (BOPP, BOPET, CPP, film estirable de PE) se procesan de forma rutinaria en cuchillas M2 HSS con revestimiento superficial opcional TiN o DLC PVD para evitar la transferencia de film adhesivo y reducir el calentamiento de la banda inducido por la fricción.\n\n## Por método de corte\n\n**Corte de cizalla (pares de cuchillas superior e inferior emparejadas):** La acción de tijera entre la cuchilla superior abombada y la cuchilla de yunque inferior ranurada genera un corte de cizalla limpio sin carga de tracción en la banda. La holgura entre cuchilla y cuchilla suele ser de 0,05-0,15 mm (dependiendo del sustrato); nuestras tolerancias de rectificado garantizan que esta holgura sea constante en toda la anchura de la hendidura. Es fundamental para papel, telas no tejidas y películas flexibles ligeras en las que la deformación de los bordes es inaceptable.\n\n**Corte por aplastamiento o rayado (cuchilla circular contra yunque de caucho):** Una cuchilla endurecida de bordes afilados penetra a través de un laminado adhesivo sensible a la presión, espuma o banda de embalaje multicapa contra un yunque de caucho de dureza controlada. La geometría del perfil de la cuchilla y el ángulo del bisel se optimizan según el sustrato para evitar el desprendimiento del adhesivo y la delaminación en el borde de corte. La elección estándar para cinta sensible a la presión, troquelado de espuma y división de envases médicos.\n\n**Cuchillas ultraafiladas de perfil fino recortan los bordes sobrantes de las líneas de extrusión de film fundido, las líneas de film orientado y la producción de spunbond no tejido a velocidades superiores a 500 m/min. La geometría de la cuchilla está optimizada para un arrastre mínimo de la banda y una limpieza máxima de los bordes, evitando el rizado de los bordes y las descargas electrostáticas que provocan roturas de banda en las líneas de alta velocidad.\n\n## Por material e industria\n\n**Films de envasado flexibles:** BOPP, BOPET, CPP, film estirable PE/PP, funda retráctil. El corte de film a alta velocidad requiere un control preciso de la desviación para evitar picos de tensión en la banda inducidos por el bamboleo de la cuchilla. M2 HSS con recubrimiento DLC opcional elimina la adherencia de la película en la cara de la cuchilla.\n\n**Tejidos no tejidos y tejidos médicos:** PP hilado, meltblown, tejidos médicos SMS, medios de filtración HEPA. Los ángulos de rastrillo especializados evitan el deshilachado de las fibras y el deslizamiento de la banda durante el corte de materiales de estructura suelta a altas tensiones de línea.\n\n**Cintas y etiquetas sensibles a la presión:** Cinta adhesiva, cinta aislante, espuma de doble cara, etiquetas, adhesivo de transferencia. Los revestimientos antiadherentes de TiN y teflón reducen la frecuencia de limpieza en un 60-80%, prolongando el tiempo medio entre sustituciones en las aplicaciones de corte de cinta más exigentes.",
+    "disambiguation": "¿Procesa papel, tisú o cartón en lugar de película? Consulte nuestra página de [Cuchillas cortadoras de papel](/products/rotary-slitter-knives-paper) para conocer los datos de holgura de cizallamiento y los intervalos de reafilado en sustratos de celulosa.",
     "link": "/products/rotary-slitter-knives",
     "isFeatured": true,
     "compatibleMachines": [
@@ -196,7 +197,7 @@ export const blades: Blade[] = [
   {
     "id": "rotary-slitter-knives-paper",
     "name": "Cuchillas cortadoras de papel",
-    "fullName": "Cuchillas rotativas de alta velocidad y cuchillas circulares para papel, tisú y cartón ondulado",
+    "fullName": "Cuchillas cortadoras de papel y tisú para líneas de conversión de alta velocidad",
     "category": "slitter_knives",
     "sector": "paper",
     "categoryDisplay": "Cuchillas cortadoras de papel",
@@ -209,12 +210,15 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp"
     ],
-    "description": "Cuchillas cortadoras circulares rectificadas con precisión para líneas de conversión de papel, tisú y cartón ondulado de alta velocidad. Pares de cizalla superior/inferior emparejados fabricados en acero D2, M2 HSS o 52100 con una tolerancia de espesor de ±0,002 mm. Optimizadas para cortes limpios de fibras en troncos de papel tisú, papel kraft y cartón ondulado a velocidades de hasta 600 m/min.",
-    "fullDescription": "Las líneas de conversión de papel exigen cuchillas cortadoras que proporcionen cortes uniformes y sin polvo de fibras en producciones de varios turnos. Las cuchillas Sureay cuchillas rotativas de corte longitudinal para papel están rectificadas con precisión a partir de acero para herramientas D2 (para papel y cartón estándar) o acero de alta velocidad M2 (para papel tisú de alta velocidad y papeles especiales) con tolerancias dimensionales exactas que evitan el bamboleo de la cuchilla y garantizan una calidad de corte uniforme.\n\n## Metalurgia específica del papel\n\nA diferencia del corte de películas de plástico o láminas metálicas, la conversión de papel somete el borde de la cuchilla a un desgaste abrasivo continuo debido a las fibras de celulosa, los agentes de encolado y los rellenos minerales (carbonato cálcico, caolín). Seleccionamos aleaciones de cuchillas específicas para aplicaciones de papel:\n\n**Acero para herramientas D2 (HRC 60-62):** Grado estándar para papel kraft, cartón y cartón ondulado. El contenido de cromo del 12% proporciona una excelente resistencia a la abrasión contra fibras ricas en lignina y compuestos minerales de relleno.\n\n**Acero de alta velocidad M2 (HRC 62-64):** Preferido para la transformación de alta velocidad de papel tisú y papel sanitario, donde las velocidades de línea superan los 400 m/min. El molibdeno y los carburo de tungsteno mantienen la geometría del filo bajo el estrés térmico del corte a ultra alta velocidad.\n\n**Acero para rodamientos 52100 (HRC 58-60):** Opción rentable para la conversión de papel prensa estándar, papel de revista y fibra reciclada de baja calidad, donde los índices de desgaste son moderados.\n\n## Corte por cizallamiento vs. corte por aplastamiento para papel\n\nLa transformación del papel emplea dos métodos principales de corte:\n\n**Corte por cizallamiento (pares de cuchillas superior/inferior):** Dos cuchillas circulares que giran en sentidos opuestos crean una acción de cizallamiento similar a la de una tijera. Este es el método estándar para papeles estucados, tisú y embalajes ligeros en los que se debe minimizar la tracción de la fibra y la generación de polvo. Suministramos pares emparejados con holgura de cizallamiento controlada (normalmente 0,02-0,05 mm para papel tisú, 0,05-0,10 mm para papel kraft).\n\n**Corte por aplastamiento (cuchilla contra yunque):** Una cuchilla circular endurecida aplasta la banda de papel contra un rodillo de yunque acanalado. Se utiliza para embalajes pesados de cartón ondulado y multicapa en los que el mantenimiento de la holgura de la cizalla es poco práctico. La cuchilla contra yunque (posición inferior) está fabricada con geometría multiranura que comprime y fractura las fibras de papel.\n\n## Rendimiento sin polvo de fibras\n\nEl polvo de fibra generado en el borde de corte contamina las estaciones de rebobinado de las fábricas de papel, degrada la calidad del producto en las calidades de papel tisú y papel sanitario y provoca paradas de limpieza no planificadas. Nuestras cuchillas cortadoras de papel están rectificadas con precisión a un acabado superficial Ra de 0,2-0,4μm con ángulos de biselado del borde controlados que cortan limpiamente los haces de fibras de celulosa en lugar de desgarrarlos o tirar de ellos. Esto reduce el polvo de fibra en el aire en aproximadamente un 60-70% en comparación con las cuchillas industriales estándar.",
+    "description": "Cuchillas cortadoras de papel rectificadas para celulosa, no adaptadas de utillaje para film. Pares de cizalla superior e inferior emparejados en D2, M2 HSS o 52100, con tolerancia de ±0.002mm en espesor y ≤0.02mm de desviación T.I.R., con la holgura preajustada al sustrato que esté procesando: 0.02–0.05mm para tisú, 0.05–0.10mm para papel kraft. Con capacidad de hasta 600 m/min en líneas de tisú. Envíenos un plano, una cuchilla desgastada o simplemente el modelo de su máquina y confirmaremos el ajuste.",
+    "fullDescription": "Las líneas de conversión de papel exigen cuchillas cortadoras que proporcionen cortes uniformes y sin polvo de fibras en producciones de varios turnos. Las cuchillas Sureay cuchillas rotativas de corte longitudinal para papel están rectificadas con precisión a partir de acero para herramientas D2 (para papel y cartón estándar) o acero de alta velocidad M2 (para papel tisú de alta velocidad y papeles especiales) con tolerancias dimensionales exactas que evitan el bamboleo de la cuchilla y garantizan una calidad de corte uniforme.\n\n## Metalurgia específica del papel\n\nA diferencia del corte de películas de plástico o láminas metálicas, la conversión de papel somete el borde de la cuchilla a un desgaste abrasivo continuo debido a las fibras de celulosa, los agentes de encolado y los rellenos minerales (carbonato cálcico, caolín). Seleccionamos aleaciones de cuchillas específicas para aplicaciones de papel:\n\n**Acero para herramientas D2 (HRC 60-62):** Grado estándar para papel kraft, cartón y cartón ondulado. El contenido de cromo del 12% proporciona una excelente resistencia a la abrasión contra fibras ricas en lignina y compuestos minerales de relleno.\n\n**Acero de alta velocidad M2 (HRC 62-64):** Preferido para la transformación de alta velocidad de papel tisú y papel sanitario, donde las velocidades de línea superan los 400 m/min. El molibdeno y los carburo de tungsteno mantienen la geometría del filo bajo el estrés térmico del corte a ultra alta velocidad.\n\n**Acero para rodamientos 52100 (HRC 58-60):** Opción rentable para la conversión de papel prensa estándar, papel de revista y fibra reciclada de baja calidad, donde los índices de desgaste son moderados.\n\n**Carburo de Tungsteno (Sólido o con Punta de Carburo):** El siguiente nivel para papel estucado de alto contenido en cenizas, papel para artes gráficas y cartón ondulado, donde las cargas minerales desgastan rápidamente un filo de acero entre cambios. Se suministra en carburo sólido en cuchillas de menor diámetro, o con punta de carburo -un filo de carburo soldado a un cuerpo de acero- en cuchillas de mayor diámetro, donde un cuerpo íntegramente de carburo no resulta rentable.\n\n## Corte por cizallamiento vs. corte por aplastamiento para papel\n\nLa transformación del papel emplea dos métodos principales de corte:\n\n**Corte por cizallamiento (pares de cuchillas superior/inferior):** Dos cuchillas circulares que giran en sentidos opuestos crean una acción de cizallamiento similar a la de una tijera. Este es el método estándar para papeles estucados, tisú y embalajes ligeros en los que se debe minimizar la tracción de la fibra y la generación de polvo. Suministramos pares emparejados con holgura de cizallamiento controlada (normalmente 0,02-0,05 mm para papel tisú, 0,05-0,10 mm para papel kraft).\n\n**Corte por aplastamiento (cuchilla contra yunque):** Una cuchilla circular endurecida aplasta la banda de papel contra un rodillo de yunque acanalado. Se utiliza para embalajes pesados de cartón ondulado y multicapa en los que el mantenimiento de la holgura de la cizalla es poco práctico. La cuchilla contra yunque (posición inferior) está fabricada con geometría multiranura que comprime y fractura las fibras de papel.\n\n## Rendimiento sin polvo de fibras\n\nEl polvo de fibra generado en el borde de corte contamina las estaciones de rebobinado de las fábricas de papel, degrada la calidad del producto en las calidades de papel tisú y papel sanitario y provoca paradas de limpieza no planificadas. Nuestras cuchillas cortadoras de papel están rectificadas con precisión a un acabado superficial Ra de 0,2-0,4μm con ángulos de biselado del borde controlados que cortan limpiamente los haces de fibras de celulosa en lugar de desgarrarlos o tirar de ellos. Esto reduce el polvo de fibra en el aire en aproximadamente un 60-70% en comparación con las cuchillas industriales estándar.",
+    "disambiguation": "¿Corta película, cinta o envases flexibles? Esas cuchillas están en nuestra página de [Cuchillas cortadoras de película y cinta](/products/rotary-slitter-knives). Esta página cubre únicamente sustratos de papel.",
+    "categoryCardAnchorText": "Cuchillas Cortadoras de Papel — tisú, papel kraft y papel estucado",
     "link": "/products/rotary-slitter-knives-paper",
     "isFeatured": false,
     "compatibleMachines": [
       "Atlas Converting",
+      "Tidland",
       "Parkinson",
       "Kampf",
       "Laem System",
@@ -226,11 +230,11 @@ export const blades: Blade[] = [
     "specs": [
       {
         "label": "Material",
-        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel"
+        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide"
       },
       {
         "label": "Hardness",
-        "value": "HRC 58–64 (grade dependent)"
+        "value": "HRC 58–64 (steel) / HRA 90–92 (carbide)"
       },
       {
         "label": "Cutting Styles",
@@ -253,22 +257,58 @@ export const blades: Blade[] = [
       {
         "id": "paper-metallurgy",
         "tag": "CIENCIA DE MATERIALES",
-        "title": "Selección de aleaciones optimizada para papel",
+        "title": "¿Qué grado de acero deben utilizar las cuchillas cortadoras de papel?",
         "description": "Las fibras de papel contienen cargas minerales abrasivas (carbonato cálcico, caolín, dióxido de titanio) que desafilan rápidamente los aceros de cuchilla estándar. Nuestras calidades D2 y M2 HSS han recibido un tratamiento térmico específico para aplicaciones de conversión de papel y ofrecen una vida útil del filo entre un 40 y un 60% superior a la de las cuchillas de corte de uso general en sustratos de papel recubiertos y rellenos."
       },
       {
         "id": "shear-clearance",
         "tag": "PRECISIÓN DE CORTE",
-        "title": "Distancia de cizallamiento controlada para cortes sin polvo de fibras",
+        "title": "¿Qué holgura de cizallamiento detiene el polvo de fibra en el borde de corte?",
         "description": "Los pares de cizallas superior/inferior emparejados se verifican previamente según las especificaciones de holgura de grado de papel tisú (0,02-0,05 mm para papel tisú ultrafino, 0,05-0,10 mm para papel kraft). Esta holgura controlada cizalla limpiamente los haces de fibras de celulosa sin desgarrarlos ni generar polvo de fibras en el aire que contamine las estaciones de rebobinado y degrade la calidad del producto."
+      },
+      {
+        "id": "bore-locking-options",
+        "tag": "AJUSTE A LA MÁQUINA",
+        "title": "¿Qué opciones de orificio, fijación y bisel están disponibles?",
+        "description": "Las cuchillas cortadoras de papel se suministran con orificio liso, con chavetero o de bayoneta para adaptarse a su árbol, y se fijan mediante chaveta, tornillo prisionero, excéntrica con chaveta o excéntrica sin chaveta -según lo que utilice su cortadora o rebobinadora. Las cuchillas superiores se rectifican con un perfil abombado de bisel simple a 15°–20°, con bisel compuesto (de dos etapas) o respaldo hueco disponibles cuando la durabilidad del filo importa más que un ángulo de ataque ultrafino. Envíenos el plano de su cuchilla o árbol actual y confirmaremos el orificio, la fijación y el bisel antes de cortar el acero, de modo que el recambio asiente, se fije y corte exactamente igual que el original."
       }
     ],
+    "steelGrades": {
+      "intro": "Las fibras de papel desgastan una cuchilla de forma distinta al film o la lámina metálica: la carga abrasiva procede de las cargas minerales de la pasta, no de la fibra en sí. Los siguientes grados cubren la gama que cotizamos para papel, tisú y cartón.",
+      "rows": [
+        {
+          "grade": "D2 Tool Steel",
+          "hardness": "HRC 58–61",
+          "bestFor": "Papel kraft estándar, cartoncillo y transformación de cartón ondulado -nuestro grado de papel por defecto.",
+          "tradeoff": "Buena relación calidad-precio general; la vida útil del filo cae más rápido que en M2 o carburo en sustratos muy cargados o estucados."
+        },
+        {
+          "grade": "M2 Acero de Alta Velocidad",
+          "hardness": "HRC 62–64",
+          "bestFor": "Papel tisú y sanitario de alta velocidad por encima de 400 m/min, donde el filo debe mantener su geometría bajo ciclos térmicos.",
+          "tradeoff": "Cuesta más que el D2; el intervalo de reafilado sigue siendo más corto que el del carburo en pastas abrasivas."
+        },
+        {
+          "grade": "52100 Acero para Rodamientos",
+          "hardness": "HRC 58–60",
+          "bestFor": "Papel prensa estándar, papel de revista y fibra reciclada de baja calidad, donde los índices de desgaste son moderados.",
+          "tradeoff": "Menor resistencia a la abrasión que el D2 en sustratos cargados o estucados; mejor reservarlo para pastas más limpias."
+        },
+        {
+          "grade": "Carburo de Tungsteno",
+          "hardness": "HRA 90–92",
+          "bestFor": "Papel estucado de alto contenido en cenizas, papel para artes gráficas y cartón ondulado, donde las cargas minerales desgastan rápidamente un filo de acero entre cambios. Se suministra sólido o con punta de carburo.",
+          "tradeoff": "El coste unitario más alto y más frágil ante impactos que el acero para herramientas: requiere una alimentación constante y una alineación limpia para evitar el astillado del filo."
+        }
+      ],
+      "outro": "Disponemos de cuchillas cortadoras de papel tanto sólidas como con punta de carburo. Indíquenos su pasta (virgen, reciclada, estucada o cargada), la velocidad de línea y su intervalo de reafilado actual, y confirmaremos el grado que reduce el coste total por corte, no solo el precio de venta."
+    },
     "dimensionLabels": {
       "col0": "Tipo de cuchilla",
       "col1": "Diámetro exterior",
       "col2": "Diámetro interior",
       "col3": "Espesor",
-      "caption": "* Dimensiones estándar para la transformación del papel. Cuchillas superiores (perfil abombado para corte por cizalladura) e inferiores (yunque ranurado para corte por aplastamiento). OD/ID personalizados disponibles para modelos de máquina específicos."
+      "caption": "* Dimensiones estándar para la transformación del papel. Cuchillas superiores (perfil abombado para corte por cizalladura) e inferiores (yunque ranurado para corte por aplastamiento). Fabricamos cuchillas cortadoras y de yunque para papel desde aproximadamente 50–320mm de diámetro exterior, 20–100mm de orificio y 0.8–20mm de espesor (desde finas cuchillas superiores abombadas hasta yunques ranurados de gran espesor) -fuera de los tres conjuntos anteriores, envíenos el modelo de su máquina y confirmaremos la correspondencia más cercana o el corte a medida según sus dimensiones."
     },
     "standardDimensions": [
       {
@@ -317,6 +357,7 @@ export const blades: Blade[] = [
       "lowPrice": 20,
       "highPrice": 280
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -344,6 +385,14 @@ export const blades: Blade[] = [
         {
           "question": "¿Puede Sureay suministrar cuchillas compatibles con nuestra cortadora/rebobinadora Atlas Converting o Kampf?",
           "answer": "Sí, envíenos una muestra de su cuchilla actual o el número de modelo de su máquina. Confirmaremos el diámetro exterior, el diámetro interior, el perfil del orificio y el grosor de la cuchilla, y le suministraremos cuchillas de sustitución directa fabricadas conforme a las especificaciones de los fabricantes de equipos originales. Disponemos de patrones de ranura personalizados para rodillos de yunque para aplicaciones específicas de conversión de cartón ondulado y cartoncillo."
+        },
+        {
+          "question": "¿Hacen envíos a todo el mundo y cuánto tardan?",
+          "answer": "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta."
+        },
+        {
+          "question": "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
+          "answer": "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste de la máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables. En el caso de los perfiles personalizados, se fabrican muestras de aprobación dimensional antes de iniciar la producción completa, sin compromiso de utillaje hasta que se confirme el ajuste."
         }
       ]
     }
@@ -1003,10 +1052,23 @@ export const blades: Blade[] = [
     "badgeColor": "blue",
     "gallery": [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-03.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-01.webp",
       "/images/products/blades/tissue-log-saw-blades-00.webp",
       "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp"
+    ],
+    "galleryAlts": [
+      "Render de hoja de sierra circular para troncos de tejido con cara pulida a espejo y patrón de orificios para pasadores de arrastre",
+      "Pila de hojas de sierra circulares para troncos de tejido terminadas en un cajón de madera en Sureay",
+      "Hoja de sierra circular para troncos de tejido embalada en un cajón de madera con protector de borde antes del envío",
+      "Hoja de sierra circular para troncos de tejido Ø610 mm D2, cara pulida a espejo con orificios para pasadores de arrastre",
+      "Plano técnico de cuchilla circular para hoja de sierra de troncos de tejido en acero D2",
+      "Render de dos hojas de sierra circulares para troncos de tejido mostrando el patrón de orificios para pasadores coincidente",
+      "Diámetro interior de Ø68,26 mm y patrón de orificios para pasadores de arrastre para sierras de troncos Fabio Perini",
+      "Cara de la hoja de sierra circular para troncos de tejido mostrando el acabado pulido a espejo bajo luz de taller"
     ],
     "description": "Tissue sierras circulares para troncos Ø610-Ø1000 mm - endurecido al vacío D2/Cr12MoV (HRC 58-60), microrectificado a ≤0,15 mm de excentricidad lateral para corte transversal sin oscilación. Elimina los núcleos aplastados y el polvo de papel en las líneas de pañuelos de papel, papel de cocina y JRT. Compatible con afilado CBN en línea. Compatible con Fabio Perini, PCMC, Casmatic, Gambini y Bretting. Diámetros personalizados en 10 días laborables.",
     "fullDescription": "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.\n\nLas cuchillas de tejido Sureay sierras circulares para troncos se fabrican con D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío de primera calidad. Dado que estas enormes cuchillas (de hasta Ø1200 mm) giran a revoluciones extremas, la estabilidad lo es todo. Todas las cuchillas se endurecen al vacío, se nivelan en tensión y se rectifican según estrictas tolerancias dimensionales verificadas en una MMC calibrada antes de su envío:\n\n- **Desviación lateral:** ≤0,15 mm\n- **Desviación del borde:** ≤0,10 mm\n- **Paralelismo de la cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Tolerancia del agujero:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidad con afilado continuo\n\nA diferencia de la cuchillas circulares estándar, las sierras de troncos de tejido se afilan continuamente *durante* el funcionamiento mediante muelas CBN (nitruro de boro cúbico) sincronizadas. El objetivo de la tratamiento térmico de Sureay es HRC 58-60. Este rango de dureza específico garantiza que la cuchilla se afile limpiamente contra las piedras CBN sin cargarlas ni satinarlas, manteniendo un filo afilado ciclo tras ciclo sin consumir sus costosas muelas de afilado.\n\n## Geometría del bisel y reducción del polvo\n\nEl tejido es un material de baja densidad y gran superficie con una resistencia a la compresión casi nula. Cortarlo con un bisel demasiado pronunciado crea compresión, lo que provoca un exceso de polvo de papel (un importante peligro de incendio en las líneas de toallas encoladas por pulverización) y una densificación de los bordes que reduce la suavidad del rollo. Utilizamos un ángulo de bisel poco pronunciado (15°-25°) que separa las fibras por cizallamiento puro. Combinado con una cara de la cuchilla pulida a espejo (Ra ≤0,2 μm), esto proporciona cortes impecables en papel de baño de 2 y 3 capas de primera calidad.\n\n## Compatibilidad de diámetro interior por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas las series), PCMC Forte/Elite, sierras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas con licencia de Kimberly-Clark), sistemas de sierras de troncos OEM de terceros italianos y españoles.\n\n**Ø60,00 mm:** Sierras de troncos de gran formato para la producción industrial de paños, rollos gigantes (JRT) y papel de baño sin núcleo (DE 870-1000 mm).\n\nOD personalizados de Ø610 mm a Ø1200 mm fabricados bajo pedido con un plazo de entrega estándar de 10 días laborables. Revisión de planos y aprobación dimensional disponibles en el primer pedido de herramientas.\n\n## Recubrimientos superficiales avanzados\n\n**Cromado duro:** Proporciona resistencia a la corrosión en entornos de fábricas de papel de alta humedad (≥75% HR) y reduce el coeficiente de adherencia de la fibra del tejido, ampliando el intervalo de funcionamiento limpio entre los ciclos de reavivado de la cuchilla.\n\n**Recubrimiento de Teflón (PTFE):** Crea una superficie altamente lubricada que se desliza a través de los densos troncos de papel de cocina, reduciendo drásticamente el consumo de amperios del motor y eliminando las marcas de quemaduras en los bordes del papel. La especificación superior para líneas de papel de cocina de 3 capas de primera calidad.\n\n**Recubrimiento TiN PVD:** El nitruro de titanio por deposición física de vapor (2-3 μm, HV 2300+) prolonga el intervalo de servicio de los bordes afilados en funcionamiento de ciclo alto. Recomendado para marcas de papel tisú premium con estrictas especificaciones de contaminación por polvo.",
@@ -1018,7 +1080,12 @@ export const blades: Blade[] = [
       "Casmatic",
       "Gambini",
       "Bretting",
-      "MTC"
+      "MTC",
+      "Futura",
+      "United Converting",
+      "Italconverting",
+      "Maflex",
+      "MTorres"
     ],
     "specs": [
       {
@@ -1048,14 +1115,41 @@ export const blades: Blade[] = [
       {
         "label": "Applications",
         "value": "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)"
+      },
+      {
+        "label": "Max Line Speed",
+        "value": "300 strokes/min"
+      },
+      {
+        "label": "Inspection Records Supplied",
+        "value": "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment"
       }
     ],
+    "steelGrades": {
+      "intro": "La vida útil de una hoja de sierra para troncos en una línea de tejido depende de cómo se comporta el acero bajo el afilado continuo con CBN, no solo de la dureza. Los dos grados siguientes cubren prácticamente todas las aplicaciones de tejido y papel de cocina que cotizamos.",
+      "rows": [
+        {
+          "grade": "D2 / 1.2379",
+          "hardness": "HRC 58–60",
+          "bestFor": "Líneas estándar de papel higiénico y papel de cocina con afilado CBN en línea. Nuestro grado por defecto.",
+          "tradeoff": "El mejor valor global. No es el de mayor vida útil en fibra reciclada con alto contenido de ceniza."
+        },
+        {
+          "grade": "Cr12MoV",
+          "hardness": "HRC 58–60",
+          "bestFor": "Líneas donde el coste de la cuchilla por corte importa más que la vida útil absoluta del filo; soporte de reafilado ampliamente disponible.",
+          "tradeoff": "Resistencia al desgaste ligeramente inferior a la del D2 en fibra reciclada abrasiva."
+        }
+      ],
+      "outro": "Para líneas de alta velocidad con fibra reciclada muy abrasiva, también cotizamos M2 HSS, que mantiene el filo durante más tiempo entre afilados pero es más sensible al estado de la muela CBN. Si no está seguro de qué grado necesita su línea, indíquenos el tipo de fibra (virgen o reciclada), la densidad del tronco y cuántos cortes por minuto realiza. Adaptamos el grado a la línea, no al revés."
+    },
+    "componentsIntro": "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.",
     "components": [
       {
         "id": "runout-control",
         "tag": "PRECISIÓN",
         "title": "Tensado Zero-Wobble",
-        "description": "Una hoja de 610 mm girando a altas RPM se alabeará si no está bien tensada. Tensionamos por CNC y microafilamos cada hoja de sierra para troncos a ≤0,15 mm de desviación lateral, lo que garantiza que corte perfectamente recto sin oscilar ni aplastar el frágil núcleo de cartón."
+        "description": "¿Por qué una sierra de troncos aplasta los núcleos de cartón? Casi siempre porque la excentricidad lateral ha superado los 0,20 mm, y la cuchilla empieza a golpear el núcleo en lugar de cortarlo. Una hoja de 610 mm girando a altas RPM se alabeará si no está bien tensada. Tensionamos por CNC y microafilamos cada hoja de sierra para troncos a ≤0,15 mm de desviación lateral, lo que garantiza que corte perfectamente recto sin oscilar ni aplastar el frágil núcleo de cartón."
       },
       {
         "id": "cbn-compatible",
@@ -1123,6 +1217,7 @@ export const blades: Blade[] = [
       "lowPrice": 180,
       "highPrice": 1200
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -1135,7 +1230,7 @@ export const blades: Blade[] = [
         },
         {
           "question": "¿Pueden suministrar hojas para sierras de troncos Fabio Perini, PCMC, Casmatic o Gambini?",
-          "answer": "Sí. El calibre estándar de Ø68,26 mm (+0,05 mm) se adapta directamente a Fabio Perini y PCMC Forte/Elite. El orificio de Ø82,55 mm se adapta a las plataformas OEM de Casmatic y Kimberly-Clark. Disponemos de planos OEM para Gambini y Bretting y suministramos herramientas de sustitución directa garantizadas."
+          "answer": "Sí. El calibre estándar de Ø68,26 mm (+0,05 mm) se adapta directamente a las sierras de troncos Fabio Perini y PCMC Forte/Elite. El orificio de Ø82,55 mm cubre Casmatic y plataformas equivalentes. Para las máquinas Gambini y Bretting, fabricamos según la geometría medida de su cuchilla actual o su propio plano, de modo que el repuesto se instala sin necesidad de reajustar la máquina. Envíenos el modelo de máquina, una cuchilla desgastada o un boceto acotado y confirmamos el ajuste antes de cotizar."
         },
         {
           "question": "¿Cómo interactúa la cuchilla con el sistema de afilado continuo CBN de la máquina?",

@@ -144,8 +144,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "cuchillas picadoras de chatarra, cuchillas para procesamiento de bobinas, picadoras de chatarra metálica, cuchillas picadoras para líneas de corte longitudinal, cuchillas picadoras S7"
   },
   "rotary-slitter-knives-paper": {
-    "title": "Cuchillas cortadoras de papel y tisú | D2 / M2 HSS",
-    "description": "Cuchillas cortadoras circulares HSS D2 y M2 para la transformación de papel tisú, papel kraft y cartón ondulado. Pares de corte superior/inferior emparejados a ±0,002 mm. Cortes sin polvo de fibra a 400-600 m/min. Ajuste OEM Atlas, Kampf, Fabio Perini, Körber - enviar modelo de máquina para presupuesto.",
+    "title": "Cuchillas cortadoras de papel | Tisú y kraft | D2, M2 HSS | Sureay",
+    "description": "Cuchillas cortadoras por cizalla y aplastamiento para tisú, papel kraft y papel estucado. D2, M2 HSS y 52100 a ±0.002mm de espesor. Ajuste OEM Atlas, Kampf, Goebel IMS, Perini.",
     "keywords": "cuchillas cortadoras de papel tisú, cuchillas cortadoras de papel, cuchillas cortadoras de cartón ondulado, cuchillas convertidoras de papel tisú, cuchillas cortadoras de papel kraft, cuchillas cortadoras de troncos, pares de cizallas de papel, corte sin polvo de fibras"
   },
   "guillotine-shear-blades": {

@@ -25,6 +25,7 @@ export const blades: Blade[] = [
     ],
     "description": "Lames de refendage circulaires affûtées avec précision pour les films BOPP, BOPET et CPP, les films étirables PE, les rubans PSA et la transformation des non-tissés. tolérance d'épaisseur de ±0,002 mm, faux-rond de T.I.R. ≤0,02 mm. Profils de cisaillement, d'incision et de rasage en acier M2 HSS, D2 et ASP23 PM avec revêtements anti-adhérents TiN et DLC en option. Adaptation OEM pour les systèmes de découpe Tidland, Kampf, Atlas et Dusenbery.",
     "fullDescription": "Les lames et couteaux rotatifs de refente circulaires fonctionnent à l'intersection de la précision dimensionnelle et de la science des matériaux. Sur une ligne de transformation de film BOPP ou BOPET à 400-600 m/min, une erreur de tolérance d'épaisseur de lame de refente rotative de 0,005 mm par lame se compose à travers une pile d'arbres à plusieurs lames, produisant une déviation visible de la largeur de la fente, un enroulement des bords et de la poussière qui contamine l'équipement de rembobinage et d'emballage en aval. Les lames de refendage rotatives Sureay sont fabriquées avec une tolérance d'épaisseur de ±0,002 mm et un faux-rond total indiqué de ≤20,02 mm - des tolérances qui s'appliquent à l'ensemble du diamètre de production, et pas seulement à l'alésage.\n\nLe choix de l'alliage est déterminé par l'application. La transformation standard du papier couché et du carton kraft s'effectue avec de l'acier à roulement 52100 ou du D2 acier à outils pour travail à froid. Les substrats abrasifs - feuilles d'aluminium et d'électrodes de cuivre pour les piles au lithium des véhicules électriques, emballages renforcés de fibre de verre, revêtements antiadhésifs enduits de silicium - nécessitent un acier à métallurgie des poudres (PM) ASP23 ou ASP52 ou du carbure solide pour une durée de vie acceptable des arêtes. Les films plastiques souples (BOPP, BOPET, CPP, film étirable PE) sont couramment traités sur des lames M2 HSS avec un revêtement de surface TiN ou DLC PVD en option pour empêcher le transfert du film adhésif et réduire l'échauffement de la bande dû à la friction.\n\n## Par méthode de coupe\n\n**Cisaillement (paires de couteaux supérieurs et inférieurs appariés):** L'action de ciseaux entre le couteau supérieur bombé et le couteau inférieur rainuré de l'enclume génère une coupe de cisaillement propre avec une charge de traction nulle sur la bande. Le jeu entre les couteaux est généralement compris entre 0,05 et 0,15 mm (en fonction du support) ; nos tolérances de rectification garantissent la constance de ce jeu sur toute la largeur de la fente. Essentiel pour le papier, les non-tissés et les films souples légers pour lesquels la déformation des bords est inacceptable.\n\n**Découpe par écrasement (lame circulaire contre rouleau d'enclume en caoutchouc):** Une lame trempée à arêtes vives pénètre à travers un laminé adhésif, une mousse ou une bande d'emballage multicouche contre une enclume en caoutchouc à dureté contrôlée. La géométrie du profil de la lame et l'angle du biseau sont optimisés pour chaque substrat afin d'éviter l'écrasement de l'adhésif et la délamination au niveau du bord de coupe. C'est le choix standard pour les rubans adhésifs, la découpe de mousse et le découpage d'emballages médicaux.\n\n**Refendage par rasoir (lame unique flottante ou fixe):** Les lames ultra tranchantes à profil fin coupent les déchets de bord des lignes d'extrusion de films coulés, des lignes de films orientés et de la production de non-tissés spunbond à des vitesses supérieures à 500 m/min. La géométrie des lames est optimisée pour une traînée minimale de la bande et une propreté maximale des bords, ce qui évite l'enroulement des bords et les décharges électrostatiques à l'origine des ruptures de bande sur les lignes à grande vitesse.\n\n## Par matériau et industrie\n\n**Films d'emballage flexibles:** BOPP, BOPET, CPP, film étirable PE/PP, manchons rétractables. La découpe de films à grande vitesse nécessite un contrôle précis du faux-rond afin d'éviter les pics de tension de la bande induits par l'oscillation des couteaux. L'acier rapide M2 avec revêtement DLC en option élimine l'adhérence du transfert de film sur la face de la lame.\n\n**Non-tissés et tissus médicaux:** PP filé-lié, meltblown, tissus médicaux SMS, filtres HEPA. Des angles de coupe spéciaux empêchent l'effilochage des fibres et le glissement de la bande lors de la découpe de matériaux à structure lâche à des tensions de ligne élevées.\n\n**Rubans et étiquettes sensibles à la pression:** Masquage, ruban adhésif, mousse double face, étiquettes, adhésif de transfert. Les revêtements anti-adhésion TiN et Teflon réduisent la fréquence de nettoyage de 60 à 80 %, prolongeant ainsi le temps moyen entre les remplacements pour les applications de refendage de bandes les plus exigeantes.",
+    "disambiguation": "Vous traitez du papier, du tissu ou du carton plutôt que du film ? Consultez notre page [Couteaux coupe-papier](/products/rotary-slitter-knives-paper) pour les données de jeu de cisaillement et les intervalles de réaffûtage sur les substrats cellulosiques.",
     "link": "/products/rotary-slitter-knives",
     "isFeatured": true,
     "compatibleMachines": [
@@ -196,7 +197,7 @@ export const blades: Blade[] = [
   {
     "id": "rotary-slitter-knives-paper",
     "name": "Couteaux coupe-papier",
-    "fullName": "Couteaux rotatifs de refente à grande vitesse et lames de coupe circulaire pour la transformation du papier, du tissu et du carton ondulé",
+    "fullName": "Couteaux coupeurs de papier et de tissu pour lignes de transformation à grande vitesse",
     "category": "slitter_knives",
     "sector": "paper",
     "categoryDisplay": "Couteaux coupe-papier",
@@ -209,12 +210,15 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp"
     ],
-    "description": "Couteaux circulaires rectifiés avec précision pour les lignes de transformation à grande vitesse du papier, du tissu et du carton ondulé. Paires de cisailles supérieures et inférieures appariées, fabriquées en acier D2, M2 HSS ou 52100 avec une tolérance d'épaisseur de ±0,002 mm. Optimisés pour des coupes de fibres nettes sur les billes de papier de soie, le papier kraft et le carton ondulé à des vitesses allant jusqu'à 600 m/min.",
-    "fullDescription": "Les lignes de transformation du papier exigent des couteaux de refendeuse qui fournissent des coupes régulières, sans poussière de fibre, tout au long des cycles de production de plusieurs équipes. Les couteaux rotatifs de refente Sureay de qualité papier sont affûtés avec précision à partir d'acier à outils D2 (pour le papier et le carton standard) ou d'acier à grande vitesse M2 (pour les papiers à grande vitesse et les papiers spéciaux) avec des tolérances dimensionnelles exactes qui empêchent l'oscillation de la lame et garantissent une qualité de fente uniforme.\n\n## Métallurgie spécifique au papier\n\nContrairement à la découpe de films plastiques ou de feuilles métalliques, la transformation du papier soumet le bord de la lame à une usure abrasive continue due aux fibres de cellulose, aux agents d'encollage et aux charges minérales (carbonate de calcium, kaolin). Nous sélectionnons des alliages de lames spécifiquement pour les applications du papier :\n\n**Acier à outils D2 (HRC 60-62):** Nuance standard pour le papier kraft, le carton et le carton ondulé. La teneur en chrome de 12 % offre une excellente résistance à l'abrasion contre les fibres riches en lignine et les charges minérales.\n\n**Acier à haute vitesse M2 (HRC 62-64):** Préféré pour la transformation du papier hygiénique et du papier de soie à haute vitesse lorsque la vitesse de la ligne dépasse 400 m/min. Le molybdène et les carbure de tungstène maintiennent la géométrie des arêtes sous la contrainte thermique de la coupe à très haute vitesse.\n\n**52100 Bearing Steel (HRC 58-60):** Option économique pour le papier journal standard, le papier magazine et la transformation de fibres recyclées de qualité inférieure où les taux d'usure sont modérés.\n\n## Coupe par cisaillement ou par écrasement pour le papier\n\nLa transformation du papier utilise deux méthodes principales de coupe :\n\n**Découpe par cisaillement (paires de couteaux supérieurs/inférieurs):** Deux couteaux circulaires tournant dans des directions opposées créent une action de cisaillement semblable à celle d'une paire de ciseaux. C'est la méthode standard pour les papiers couchés, les tissus et les emballages légers où l'arrachage des fibres et la production de poussière doivent être minimisés. Nous fournissons des paires appariées avec un jeu de cisaillement contrôlé (typiquement 0,02-0,05 mm pour le papier tissu, 0,05-0,10 mm pour le papier kraft).\n\n**Coupe par écrasement (couteau contre enclume):** Un couteau circulaire trempé écrase la bande de papier contre un rouleau d'enclume rainuré. Utilisé pour le carton ondulé lourd et les emballages multicouches où le maintien du jeu de cisaillement n'est pas pratique. La lame de l'enclume (position inférieure) est fabriquée avec une géométrie à rainures multiples qui comprime et fracture les fibres du papier.\n\n## Performance sans poussière de fibre\n\nLa poussière de fibre générée au bord de la fente contamine les stations de rembobinage des papeteries, dégrade la qualité des produits pour les papiers hygiéniques et les papiers de soie, et provoque des arrêts de nettoyage non planifiés. Nos couteaux de refendeuse pour papier sont affûtés avec précision pour obtenir une finition de surface Ra 0,2-0,4μm avec des angles de biseau contrôlés qui cisaillent proprement les faisceaux de fibres de cellulose plutôt que de les déchirer ou de les arracher. Cela permet de réduire la poussière de fibre en suspension dans l'air d'environ 60 à 70 % par rapport aux couteaux industriels standard.",
+    "description": "Couteaux coupe-papier rectifiés pour la cellulose, et non adaptés d'un outillage pour films. Paires de cisailles supérieures et inférieures appariées en D2, M2 HSS ou 52100, tenues à ±0,002mm sur l'épaisseur et ≤0,02mm de faux-rond, avec un jeu pré-réglé selon le support traité : 0,02–0,05mm pour le tissu, 0,05–0,10mm pour le kraft. Conçus pour 600 m/min sur les lignes de tissu. Envoyez-nous un plan, une lame usée ou simplement le modèle de votre machine et nous confirmerons la compatibilité.",
+    "fullDescription": "Les lignes de transformation du papier exigent des couteaux de refendeuse qui fournissent des coupes régulières, sans poussière de fibre, tout au long des cycles de production de plusieurs équipes. Les couteaux rotatifs de refente Sureay de qualité papier sont affûtés avec précision à partir d'acier à outils D2 (pour le papier et le carton standard) ou d'acier à grande vitesse M2 (pour les papiers à grande vitesse et les papiers spéciaux) avec des tolérances dimensionnelles exactes qui empêchent l'oscillation de la lame et garantissent une qualité de fente uniforme.\n\n## Métallurgie spécifique au papier\n\nContrairement à la découpe de films plastiques ou de feuilles métalliques, la transformation du papier soumet le bord de la lame à une usure abrasive continue due aux fibres de cellulose, aux agents d'encollage et aux charges minérales (carbonate de calcium, kaolin). Nous sélectionnons des alliages de lames spécifiquement pour les applications du papier :\n\n**Acier à outils D2 (HRC 60-62):** Nuance standard pour le papier kraft, le carton et le carton ondulé. La teneur en chrome de 12 % offre une excellente résistance à l'abrasion contre les fibres riches en lignine et les charges minérales.\n\n**Acier à haute vitesse M2 (HRC 62-64):** Préféré pour la transformation du papier hygiénique et du papier de soie à haute vitesse lorsque la vitesse de la ligne dépasse 400 m/min. Le molybdène et les carbure de tungstène maintiennent la géométrie des arêtes sous la contrainte thermique de la coupe à très haute vitesse.\n\n**52100 Bearing Steel (HRC 58-60):** Option économique pour le papier journal standard, le papier magazine et la transformation de fibres recyclées de qualité inférieure où les taux d'usure sont modérés.\n\n**Carbure de Tungstène (Massif ou à Plaquette Brasée):** Le choix supérieur pour le papier couché à forte teneur en cendres, le papier d'art et le carton ondulé, où les charges minérales usent rapidement un tranchant en acier entre deux changements. Fourni en carbure massif sur les lames de petit diamètre, ou à plaquette brasée — une arête de carbure brasée sur un corps en acier — sur les lames de plus grand diamètre, lorsqu'un corps entièrement en carbure n'est pas rentable.\n\n## Coupe par cisaillement ou par écrasement pour le papier\n\nLa transformation du papier utilise deux méthodes principales de coupe :\n\n**Découpe par cisaillement (paires de couteaux supérieurs/inférieurs):** Deux couteaux circulaires tournant dans des directions opposées créent une action de cisaillement semblable à celle d'une paire de ciseaux. C'est la méthode standard pour les papiers couchés, les tissus et les emballages légers où l'arrachage des fibres et la production de poussière doivent être minimisés. Nous fournissons des paires appariées avec un jeu de cisaillement contrôlé (typiquement 0,02-0,05 mm pour le papier tissu, 0,05-0,10 mm pour le papier kraft).\n\n**Coupe par écrasement (couteau contre enclume):** Un couteau circulaire trempé écrase la bande de papier contre un rouleau d'enclume rainuré. Utilisé pour le carton ondulé lourd et les emballages multicouches où le maintien du jeu de cisaillement n'est pas pratique. La lame de l'enclume (position inférieure) est fabriquée avec une géométrie à rainures multiples qui comprime et fracture les fibres du papier.\n\n## Performance sans poussière de fibre\n\nLa poussière de fibre générée au bord de la fente contamine les stations de rembobinage des papeteries, dégrade la qualité des produits pour les papiers hygiéniques et les papiers de soie, et provoque des arrêts de nettoyage non planifiés. Nos couteaux de refendeuse pour papier sont affûtés avec précision pour obtenir une finition de surface Ra 0,2-0,4μm avec des angles de biseau contrôlés qui cisaillent proprement les faisceaux de fibres de cellulose plutôt que de les déchirer ou de les arracher. Cela permet de réduire la poussière de fibre en suspension dans l'air d'environ 60 à 70 % par rapport aux couteaux industriels standard.",
+    "disambiguation": "Vous découpez du film, du ruban adhésif ou de l'emballage souple ? Ces lames se trouvent sur notre page [Couteaux coupeurs de films et de bandes](/products/rotary-slitter-knives). Cette page ne couvre que les substrats papier.",
+    "categoryCardAnchorText": "Couteaux coupe-papier — tissu, kraft et papier couché",
     "link": "/products/rotary-slitter-knives-paper",
     "isFeatured": false,
     "compatibleMachines": [
       "Atlas Converting",
+      "Tidland",
       "Parkinson",
       "Kampf",
       "Laem System",
@@ -226,11 +230,11 @@ export const blades: Blade[] = [
     "specs": [
       {
         "label": "Material",
-        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel"
+        "value": "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide"
       },
       {
         "label": "Hardness",
-        "value": "HRC 58–64 (grade dependent)"
+        "value": "HRC 58–64 (steel) / HRA 90–92 (carbide)"
       },
       {
         "label": "Cutting Styles",
@@ -253,22 +257,58 @@ export const blades: Blade[] = [
       {
         "id": "paper-metallurgy",
         "tag": "SCIENCE DES MATÉRIAUX",
-        "title": "Sélection d'alliages optimisée par le papier",
+        "title": "Quelle nuance d'acier utiliser pour les couteaux coupe-papier ?",
         "description": "Les fibres de papier contiennent des charges minérales abrasives (carbonate de calcium, kaolin, dioxyde de titane) qui émoussent rapidement les aciers à couteaux standard. Nos nuances D2 et M2 HSS sont spécifiquement traitées thermiquement pour les applications de transformation du papier, offrant une durée de vie des arêtes de 40 à 60 % supérieure à celle des couteaux de refendeurs d'usage général sur les substrats de papier couché et rempli."
       },
       {
         "id": "shear-clearance",
         "tag": "PRÉCISION DE COUPE",
-        "title": "Contrôle du jeu de cisaillement pour des coupes sans poussière de fibre",
+        "title": "Quel jeu de cisaillement stoppe la poussière de fibre au bord de la fente ?",
         "description": "Les paires de cisailles supérieures et inférieures appariées sont vérifiées au préalable en fonction des spécifications de dégagement des tissus (0,02-0,05 mm pour les tissus ultraminces, 0,05-0,10 mm pour le papier kraft). Ce dégagement contrôlé permet de cisailler proprement les faisceaux de fibres de cellulose sans les déchirer ni générer de poussières de fibres en suspension dans l'air qui contaminent les stations de rembobinage et dégradent la qualité des produits."
+      },
+      {
+        "id": "bore-locking-options",
+        "tag": "ADAPTATION MACHINE",
+        "title": "Quelles options d'alésage, de verrouillage et de biseau sont disponibles ?",
+        "description": "Les couteaux coupe-papier sont livrés avec des alésages lisses, à clavette ou à baïonnette adaptés à votre arbre, et se verrouillent en place par rainure de clavette, vis de blocage, excentrique à clavette ou serrage excentrique sans clavette — selon ce qu'utilise votre découpeuse ou enrouleuse. Les lames supérieures sont rectifiées avec un profil bombé à simple biseau de 15°–20°, avec un biseau composé (à deux étages) ou un meulage concave du dos disponible lorsque la durabilité du tranchant importe plus qu'un angle d'attaque extrêmement fin. Envoyez-nous votre couteau actuel ou le plan de votre arbre, et nous confirmons l'alésage, le verrouillage et le biseau avant de couper l'acier, afin que la lame de remplacement se positionne, se verrouille et coupe exactement comme l'originale."
       }
     ],
+    "steelGrades": {
+      "intro": "Les fibres de papier usent une lame différemment du film ou du feuillard — la charge abrasive provient des charges minérales de la pâte, et non de la fibre elle-même. Les nuances ci-dessous couvrent la gamme que nous proposons pour le papier, le tissu et le carton.",
+      "rows": [
+        {
+          "grade": "D2 Tool Steel",
+          "hardness": "HRC 58–61",
+          "bestFor": "Papier kraft standard, carton plat et transformation du carton ondulé — notre nuance de papier par défaut.",
+          "tradeoff": "Bon rapport qualité-prix polyvalent ; la durée de vie du tranchant diminue plus rapidement que celle du M2 ou du carbure sur les papiers fortement chargés ou couchés."
+        },
+        {
+          "grade": "Acier à Haute Vitesse M2",
+          "hardness": "HRC 62–64",
+          "bestFor": "Papier tissu et papier hygiénique à grande vitesse au-delà de 400 m/min, où le tranchant doit conserver sa géométrie sous cyclage thermique.",
+          "tradeoff": "Coûte plus cher que le D2 ; l'intervalle de réaffûtage reste plus court que celui du carbure sur une pâte abrasive."
+        },
+        {
+          "grade": "Acier à Roulement 52100",
+          "hardness": "HRC 58–60",
+          "bestFor": "Papier journal standard, papier magazine et fibres recyclées de qualité inférieure où les taux d'usure sont modérés.",
+          "tradeoff": "Résistance à l'abrasion inférieure à celle du D2 sur les papiers chargés ou couchés — à réserver de préférence à une pâte plus propre."
+        },
+        {
+          "grade": "Carbure de Tungstène",
+          "hardness": "HRA 90–92",
+          "bestFor": "Papier couché à forte teneur en cendres, papier d'art et carton ondulé, où les charges minérales usent rapidement un tranchant en acier entre deux changements. Fourni en version massive ou à plaquette brasée.",
+          "tradeoff": "Coût unitaire le plus élevé et plus fragile aux chocs que l'acier à outils — nécessite une alimentation régulière et un alignement précis pour éviter l'écaillage du tranchant."
+        }
+      ],
+      "outro": "Les couteaux coupe-papier en carbure massif et à plaquette brasée sont tous deux disponibles. Indiquez-nous votre pâte (vierge, recyclée, couchée ou chargée), la vitesse de ligne et votre intervalle de réaffûtage actuel, et nous confirmerons la nuance qui réduit le coût total par coupe, pas seulement le prix affiché."
+    },
     "dimensionLabels": {
       "col0": "Type de lame",
       "col1": "Diamètre extérieur",
       "col2": "Diamètre intérieur",
       "col3": "Épaisseur",
-      "caption": "* Dimensions standard pour la transformation du papier. Lames supérieures (profil bombé pour la coupe par cisaillement) et lames inférieures (enclume rainurée pour la coupe par écrasement). OD/ID personnalisés disponibles pour des modèles de machines spécifiques."
+      "caption": "* Dimensions standard pour la transformation du papier. Lames supérieures (profil bombé pour la coupe par cisaillement) et lames inférieures (enclume rainurée pour la coupe par écrasement). Nous fabriquons des lames coupe-papier et des lames d'enclume d'environ 50–320mm de diamètre extérieur, 20–100mm d'alésage et 0.8–20mm d'épaisseur (des lames supérieures bombées fines jusqu'aux lourdes enclumes rainurées) — en dehors des trois jeux ci-dessus, envoyez-nous le modèle de votre machine et nous confirmerons la correspondance la plus proche ou une découpe selon vos dimensions."
     },
     "standardDimensions": [
       {
@@ -317,6 +357,7 @@ export const blades: Blade[] = [
       "lowPrice": 20,
       "highPrice": 280
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -344,6 +385,14 @@ export const blades: Blade[] = [
         {
           "question": "Sureay peut-il fournir des couteaux compatibles avec notre découpeuse/enrouleuse Atlas Converting ou Kampf existante ?",
           "answer": "Oui, envoyez-nous votre échantillon de couteau actuel ou le numéro de modèle de votre machine. Nous confirmerons le diamètre extérieur, le diamètre intérieur, le profil d'alésage et l'épaisseur de la lame, et nous fournirons des couteaux de remplacement direct fabriqués selon les spécifications OEM. Des modèles de rainures personnalisés pour les rouleaux d'enclume sont disponibles pour des applications spécifiques de transformation du carton ondulé et du carton."
+        },
+        {
+          "question": "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
+          "answer": "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte."
+        },
+        {
+          "question": "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
+          "answer": "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables. Pour les profils personnalisés, des échantillons d'approbation dimensionnelle sont produits avant le début de la production complète - aucun engagement d'outillage avant que l'ajustement ne soit confirmé."
         }
       ]
     }
@@ -1003,10 +1052,23 @@ export const blades: Blade[] = [
     "badgeColor": "blue",
     "gallery": [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-03.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-01.webp",
       "/images/products/blades/tissue-log-saw-blades-00.webp",
       "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp"
+    ],
+    "galleryAlts": [
+      "Rendu de lame de scie circulaire à bûches en tissu avec face polie miroir et motif de trous d'entraînement",
+      "Pile de lames de scie circulaire à bûches en tissu finies dans une caisse en bois chez Sureay",
+      "Lame de scie circulaire à bûches en tissu emballée dans une caisse en bois avec protection de bord avant expédition",
+      "Lame de scie circulaire à bûches en tissu Ø610 mm D2, face polie miroir avec trous d'entraînement",
+      "Dessin technique de lame circulaire pour scie à bûches en tissu, acier D2",
+      "Rendu de deux lames de scie circulaire à bûches en tissu montrant le motif de trous d'entraînement correspondant",
+      "Alésage Ø68,26 mm et motif de trous d'entraînement pour les scies à bûches Fabio Perini",
+      "Face de la lame de scie circulaire à bûches en tissu montrant la finition polie miroir sous l'éclairage de l'atelier"
     ],
     "description": "Tissue lames de scie circulaire pour rondins Ø610-Ø1000 mm - D2/Cr12MoV trempé sous vide (HRC 58-60), micro-affûté à ≤0,15 mm de battement latéral pour une coupe transversale sans oscillation. Élimine les noyaux écrasés et la poussière de papier sur les lignes de mouchoirs en papier, d'essuie-tout et de JRT. Compatible avec l'affûtage CBN en ligne. Adaptation OEM pour Fabio Perini, PCMC, Casmatic, Gambini et Bretting. Diamètres personnalisés en 10 jours ouvrables.",
     "fullDescription": "La coupe transversale des billes de papier est l'opération de coupe la plus importante d'une ligne de transformation du papier tissu. Un défaut dimensionnel à ce stade - noyaux de carton écrasés, production excessive de poussière ou faces de coupe inclinées - se propage immédiatement dans les stations d'emballage, déclenchant des arrêts de ligne et des rejets de produits de consommation.\n\nLes lames de scie circulaire pour rondins Sureay tissue sont fabriqués à partir de acier à outils pour travail à froid D2 (1.2379) et Cr12MoV de première qualité. Comme ces lames massives (jusqu'à Ø1200 mm) tournent à des vitesses extrêmes, la stabilité est essentielle. Chaque lame est trempée sous vide, mise à niveau de tension et micro-affûtée selon des tolérances dimensionnelles strictes vérifiées sur une MMT calibrée avant l'expédition :\n\n- **Décalage latéral:** ≤0,15 mm\n- battement latéral : ≤0,15 mm ** Battement d'arête : ≤0,10 mm **Parallélisme de face : ≤0,10 mm\n- **Parallélisme de face:** 0,05 mm\n- **Concentricité (diamètre extérieur par rapport à l'alésage):** ≤0,30 mm\n- **Tolérance d'alésage:** Ø68.26 mm (+0.05 / 0.00 mm)\n\n## Compatibilité avec l'affûtage en continu\n\nContrairement à la couteaux circulaires standard, les scies à bûches à tissu sont affûtées en continu *pendant* leur fonctionnement par des meules CBN (nitrure de bore cubique) synchronisées. La traitement thermique de Sureay vise la dureté HRC 58-60. Cette plage de dureté spécifique garantit que la lame s'affûte proprement contre les pierres CBN sans les charger ou les glacer, maintenant un tranchant rasoir cycle après cycle sans consommer vos coûteuses meules d'affûtage.\n\n## Géométrie du biseau et réduction de la poussière\n\nLe tissu est une bande de faible densité et de grande surface dont la résistance à la compression est proche de zéro. Le couper avec un biseau trop raide crée une compression qui entraîne un excès de poussière de papier (un risque majeur d'incendie dans les lignes de serviettes collées par pulvérisation) et une densification des bords qui réduit la souplesse du rouleau. Nous utilisons un angle de biseau peu profond (15°-25°) qui sépare les fibres par pur cisaillement. Associé à une face de lame polie miroir (Ra ≤0,2 μm), cela permet d'obtenir des coupes impeccables sur le papier hygiénique 2 plis et 3 plis de qualité supérieure.\n\n## Compatibilité d'alésage par plate-forme OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (toutes les séries), PCMC Forte/Elite, Körber/MTC scies à grumes.\n\n**Ø82,55 mm:** Casmatic (plates-formes sous licence Kimberly-Clark), systèmes de scies à grumes OEM tiers italiens et espagnols.\n\n**Ø60,00 mm:** Scies à grumes de grand format pour l'essuyage industriel, les rouleaux jumbo (JRT) et la production de papier hygiénique sans mandrin (diamètre extérieur 870-1000 mm).\n\nLes diamètres extérieurs de Ø610 mm à Ø1200 mm sont fabriqués sur commande dans un délai standard de 10 jours ouvrables. L'examen des dessins et l'approbation des dimensions sont possibles sur l'outillage de première commande.\n\n## Advanced Surface Coatings\n\n**Le chromage dur** offre une résistance à la corrosion dans les environnements de papeterie à forte humidité (≥75% HR) et réduit le coefficient d'adhérence des fibres de tissu, ce qui prolonge l'intervalle de nettoyage entre les cycles d'habillage des lames.\n\n**Le revêtement en téflon (PTFE):** crée une surface hautement lubrifiée qui glisse à travers les billes d'essuie-tout denses, réduisant considérablement l'intensité du moteur et éliminant les marques de brûlure sur les bords du papier. La meilleure spécification pour les lignes d'essuie-tout 3 plis de qualité supérieure.\n\n**Revêtement PVD TiN:** Le nitrure de titane par dépôt physique en phase vapeur (2-3 μm, HV 2300+) prolonge l'intervalle d'entretien des arêtes vives en cas de fonctionnement à cycle élevé. Recommandé pour les marques de tissus haut de gamme ayant des spécifications strictes en matière de contamination par la poussière.",
@@ -1018,7 +1080,12 @@ export const blades: Blade[] = [
       "Casmatic",
       "Gambini",
       "Bretting",
-      "MTC"
+      "MTC",
+      "Futura",
+      "United Converting",
+      "Italconverting",
+      "Maflex",
+      "MTorres"
     ],
     "specs": [
       {
@@ -1048,14 +1115,41 @@ export const blades: Blade[] = [
       {
         "label": "Applications",
         "value": "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)"
+      },
+      {
+        "label": "Max Line Speed",
+        "value": "300 strokes/min"
+      },
+      {
+        "label": "Inspection Records Supplied",
+        "value": "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment"
       }
     ],
+    "steelGrades": {
+      "intro": "La durée de vie d'une lame de scie à bûches sur une ligne de tissu dépend de la façon dont l'acier se comporte sous l'affûtage CBN continu, pas seulement de la dureté. Les deux nuances ci-dessous couvrent presque toutes les applications de tissu et d'essuie-tout que nous chiffrons.",
+      "rows": [
+        {
+          "grade": "D2 / 1.2379",
+          "hardness": "HRC 58–60",
+          "bestFor": "Lignes standard de papier hygiénique et d'essuie-tout avec affûtage CBN en ligne. Notre nuance par défaut.",
+          "tradeoff": "Le meilleur rapport qualité-prix global. Pas la durée de vie la plus longue sur fibre recyclée à forte teneur en cendres."
+        },
+        {
+          "grade": "Cr12MoV",
+          "hardness": "HRC 58–60",
+          "bestFor": "Lignes où le coût de la lame par coupe compte plus que la durée de vie absolue du tranchant ; support de réaffûtage largement disponible.",
+          "tradeoff": "Résistance à l'usure légèrement inférieure à celle du D2 sur fibre recyclée abrasive."
+        }
+      ],
+      "outro": "Pour les lignes à grande vitesse traitant de la fibre recyclée très abrasive, nous proposons également l'acier M2 HSS, qui conserve le tranchant le plus longtemps entre les affûtages mais est plus sensible à l'état de la meule CBN. Si vous n'êtes pas sûr de la nuance dont votre ligne a besoin, indiquez-nous la fibre (vierge ou recyclée), la densité de la bille et le nombre de coupes par minute. Nous adaptons la nuance à la ligne, et non l'inverse."
+    },
+    "componentsIntro": "La coupe transversale des billes de papier est l'opération de coupe la plus importante d'une ligne de transformation du papier tissu. Un défaut dimensionnel à ce stade - noyaux de carton écrasés, production excessive de poussière ou faces de coupe inclinées - se propage immédiatement dans les stations d'emballage, déclenchant des arrêts de ligne et des rejets de produits de consommation.",
     "components": [
       {
         "id": "runout-control",
         "tag": "PRÉCISION",
         "title": "Tension sans oscillation",
-        "description": "Une lame de 610 mm tournant à haut régime se déforme si elle n'est pas correctement tendue. Nous tendons et micro-affûtons chaque lame de scie à grumes avec un faux-rond latéral de ≤0,15 mm, ce qui garantit une coupe parfaitement droite sans osciller et écraser le fragile noyau de carton."
+        "description": "Pourquoi une scie à bûches écrase-t-elle les noyaux de carton ? Presque toujours parce que le battement latéral a dépassé environ 0,20 mm, et la lame commence à frapper le noyau au lieu de le trancher. Une lame de 610 mm tournant à haut régime se déforme si elle n'est pas correctement tendue. Nous tendons et micro-affûtons chaque lame de scie à grumes avec un faux-rond latéral de ≤0,15 mm, ce qui garantit une coupe parfaitement droite sans osciller et écraser le fragile noyau de carton."
       },
       {
         "id": "cbn-compatible",
@@ -1123,6 +1217,7 @@ export const blades: Blade[] = [
       "lowPrice": 180,
       "highPrice": 1200
     },
+    "omitOfferPrice": true,
     "faqs": {
       "technical": [
         {
@@ -1135,7 +1230,7 @@ export const blades: Blade[] = [
         },
         {
           "question": "Pouvez-vous fournir des lames pour les scies à grumes Fabio Perini, PCMC, Casmatic ou Gambini ?",
-          "answer": "Oui. L'alésage standard de Ø68,26 mm (+0,05 mm) convient directement à Fabio Perini et PCMC Forte/Elite. L'alésage de Ø82,55 mm couvre les plates-formes OEM Casmatic et Kimberly-Clark. Nous détenons les plans OEM pour Gambini et Bretting et fournissons un outillage de remplacement garanti."
+          "answer": "Oui. L'alésage standard de Ø68,26 mm (+0,05 mm) convient directement aux scies à bûches Fabio Perini et PCMC Forte/Elite. L'alésage de Ø82,55 mm couvre Casmatic et les plates-formes équivalentes. Pour les machines Gambini et Bretting, nous fabriquons selon la géométrie mesurée de votre lame actuelle ou votre propre plan, afin que le remplacement s'installe sans modification de l'outillage. Envoyez-nous le modèle de machine, une lame usée ou un croquis coté et nous confirmons la compatibilité avant de chiffrer."
         },
         {
           "question": "Comment la lame interagit-elle avec le système d'affûtage continu CBN de la machine ?",

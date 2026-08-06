@@ -86,9 +86,32 @@ export interface Blade {
 
   // ── Detail page ──────────────────────────────────────────────────────────
   gallery?: string[]; // [0–3] thumbnail track · [4] DecisiveSpecs · [5] ComprehensiveData
+  galleryAlts?: string[]; // per-image alt text, parallel to `gallery`; falls back to fullName/name when absent
   fullDescription?: string; // PageMeta description (longer copy)
+  /** One-line disambiguation note shown between category label and
+   *  description on product pages that share a keyword root with a sibling
+   *  product (e.g. paper vs film slitter knives). Supports one [text](/url)
+   *  markdown link. */
+  disambiguation?: string;
+  /** Overrides the accessible name of the stretched-link card on category
+   *  hub pages (ProductVariantCard). Falls back to `name`. Use when the
+   *  generic name is ambiguous with a sibling product's card on the same
+   *  category page. */
+  categoryCardAnchorText?: string;
   components?: BladeComponent[]; // TechnicalAudit cards
+  componentsIntro?: string; // optional lede paragraph above the TechnicalAudit card grid
   standardDimensions?: StandardDimension[]; // ComprehensiveData table
+  steelGrades?: {
+    // Steel grade comparison table, rendered between DecisiveSpecs and ComprehensiveData
+    intro: string;
+    rows: {
+      grade: string;
+      hardness: string;
+      bestFor: string;
+      tradeoff: string;
+    }[];
+    outro?: string;
+  };
 
   // ── Detail page table label overrides (for non-circular blades) ──────────
   dimensionLabels?: {
@@ -111,6 +134,12 @@ export interface Blade {
     lowPrice: number;
     highPrice: number;
   };
+  /** When true, the on-page Product JSON-LD omits lowPrice/highPrice from
+   *  `offers` (kept: priceCurrency, availability, shippingDetails). Use for
+   *  products where no price is shown anywhere on the page — otherwise
+   *  `offers` (and getBladeAggregateOffer, used by industry-page ItemLists)
+   *  are unaffected. */
+  omitOfferPrice?: boolean;
 
   // ── SEO — FAQPage schema (ProductFAQ component) ───────────────────────────
   // Rendered by <ProductFAQ> just above the RFQ form.
@@ -162,6 +191,8 @@ export const blades: Blade[] = [
     // Structured for B2B reading flow and technical authority
     fullDescription:
       "Circular rotary slitter knives and blades operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a rotary slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay rotary slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
+    disambiguation:
+      "Running paper, tissue or board instead of film? See our [Paper Slitter Knives](/products/rotary-slitter-knives-paper) page for shear clearance data and regrind intervals on cellulose substrates.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
 
@@ -369,7 +400,7 @@ export const blades: Blade[] = [
     id: "rotary-slitter-knives-paper",
     name: "Paper Slitter Knives",
     fullName:
-      "High-Speed Rotary Slitter Knives & Circular Cutting Blades for Paper, Tissue & Corrugated Converting",
+      "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
     category: "slitter_knives",
     sector: "paper",
     categoryDisplay: "Paper Slitter Knives",
@@ -383,14 +414,24 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
+    galleryAlts: [
+      "Circular paper slitter knife with dished shear profile and precision-ground bore",
+      "Paper slitter knife selection guide showing matched top and bottom shear pairs",
+      "Matched top and bottom paper slitter knife pair for shear cutting",
+      "Paper converting line with rotary slitter knives scoring and slitting the web",
+    ],
     description:
-      "Precision-ground circular slitter knives for high-speed paper, tissue, and corrugated converting lines. Matched top/bottom shear pairs manufactured from D2, M2 HSS, or 52100 steel to ±0.002mm thickness tolerance. Optimized for clean fiber cuts on tissue logs, kraft paper, and corrugated board at speeds up to 600 m/min.",
+      "Paper slitter knives ground for cellulose, not repurposed from film tooling. Matched top and bottom shear pairs in D2, M2 HSS or 52100, held to ±0.002mm on thickness and ≤0.02mm runout, with clearance pre-set to the substrate you are running: 0.02–0.05mm for tissue, 0.05–0.10mm for kraft. Rated to 600 m/min on tissue lines. Send a drawing, a worn blade or just your machine model and we will confirm fitment.",
     fullDescription:
-      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with multi-groove geometry that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
+      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with multi-groove geometry that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
+    disambiguation:
+      "Slitting film, tape or flexible packaging? Those blades are on our [Rotary Slitter Knives for Film & Tape](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
+    categoryCardAnchorText: "Paper Slitter Knives — tissue, kraft & coated paper",
     link: "/products/rotary-slitter-knives-paper",
     isFeatured: false,
     compatibleMachines: [
       "Atlas Converting",
+      "Tidland",
       "Parkinson",
       "Kampf",
       "Laem System",
@@ -403,9 +444,13 @@ export const blades: Blade[] = [
     specs: [
       {
         label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel",
+        value:
+          "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
       },
-      { label: "Hardness", value: "HRC 58–64 (grade dependent)" },
+      {
+        label: "Hardness",
+        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
+      },
       {
         label: "Cutting Styles",
         value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
@@ -423,18 +468,66 @@ export const blades: Blade[] = [
       {
         id: "paper-metallurgy",
         tag: "MATERIAL SCIENCE",
-        title: "Paper-Optimized Alloy Selection",
+        title: "Which steel grade should paper slitter knives use?",
         description:
           "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.",
       },
       {
         id: "shear-clearance",
         tag: "CUTTING PRECISION",
-        title: "Controlled Shear Clearance for Fiber-Dust-Free Cuts",
+        title: "What shear clearance stops fibre dust at the slit edge?",
         description:
           "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.",
       },
+      {
+        id: "bore-locking-options",
+        tag: "MACHINE FIT",
+        title: "What bore, locking, and bevel options are available?",
+        description:
+          "Paper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses. Top blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original.",
+      },
     ],
+
+    steelGrades: {
+      intro:
+        "Paper fibers wear a blade differently than film or foil — the abrasive load comes from mineral fillers in the furnish, not the fiber itself. The grades below cover the range we quote for paper, tissue, and board.",
+      rows: [
+        {
+          grade: "D2 Tool Steel",
+          hardness: "HRC 58–61",
+          bestFor:
+            "Standard kraft paper, boxboard, and corrugated converting — our default paper grade.",
+          tradeoff:
+            "Good all-round value; edge life falls off faster than M2 or carbide on heavily filled or coated stock.",
+        },
+        {
+          grade: "M2 High-Speed Steel",
+          hardness: "HRC 62–64",
+          bestFor:
+            "High-speed tissue and sanitary paper above 400 m/min, where the edge has to hold geometry under thermal cycling.",
+          tradeoff:
+            "Costs more than D2; regrind interval is still shorter than carbide on abrasive furnish.",
+        },
+        {
+          grade: "52100 Bearing Steel",
+          hardness: "HRC 58–60",
+          bestFor:
+            "Standard newsprint, magazine paper, and lower-grade recycled fiber where wear rates are moderate.",
+          tradeoff:
+            "Lower abrasion resistance than D2 on filled or coated stock — best reserved for cleaner furnish.",
+        },
+        {
+          grade: "Tungsten Carbide",
+          hardness: "HRA 90–92",
+          bestFor:
+            "High-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied solid or carbide-tipped.",
+          tradeoff:
+            "Highest unit cost and more brittle under impact than tool steel — needs consistent feed and clean alignment to avoid edge chipping.",
+        },
+      ],
+      outro:
+        "Solid and carbide-tipped paper slitter knives are both available. Tell us your furnish (virgin, recycled, coated, or filled), line speed, and current regrind interval, and we'll confirm the grade that lowers total cost per cut, not just the sticker price.",
+    },
 
     dimensionLabels: {
       col0: "Blade Type",
@@ -442,7 +535,7 @@ export const blades: Blade[] = [
       col2: "Inner Diameter",
       col3: "Thickness",
       caption:
-        "* Standard dimensions for paper converting. Top blades (dished profile for shear cutting) and bottom blades (grooved anvil for crush cutting). Custom OD/ID available for specific machine models.",
+        "* Standard dimensions for paper converting. Top blades (dished profile for shear cutting) and bottom blades (grooved anvil for crush cutting). We manufacture paper slitter and anvil blades from roughly 50–320mm OD, 20–100mm bore, and 0.8–20mm thickness (thin dished top blades through heavy grooved anvils) — outside the three sets above, send your machine model and we confirm the closest match or cut to your dimensions.",
     },
 
     standardDimensions: [
@@ -493,6 +586,7 @@ export const blades: Blade[] = [
       lowPrice: 20,
       highPrice: 280,
     },
+    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -532,6 +626,17 @@ export const blades: Blade[] = [
             "Can Sureay supply knives compatible with our existing Atlas Converting or Kampf slitter/rewinder?",
           answer:
             "Yes. Send us your current knife sample or machine model number. We will confirm OD, ID, bore profile, and blade thickness, and supply direct-replacement knives manufactured to OEM specifications. Custom groove patterns for anvil rolls are available for specific corrugated and board converting applications.",
+        },
+        {
+          question: "Do you ship globally and how long does it take?",
+          answer:
+            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+        {
+          question:
+            "Can we trial a sample set before committing to a full production order?",
+          answer:
+            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
         },
       ],
     },
@@ -1265,10 +1370,23 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-02.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-03.webp",
+      "/images/products/blades/tissue-log-saw-blades-real-01.webp",
       "/images/products/blades/tissue-log-saw-blades-00.webp",
       "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
+    ],
+    galleryAlts: [
+      "Tissue log saw blade render showing mirror-polished face and drive pin hole pattern",
+      "Stack of finished tissue log saw blades in a wooden packing crate at Sureay",
+      "Tissue log saw blade packed in a wooden crate with edge protector before shipment",
+      "Ø610 mm D2 tissue log saw blade, mirror-polished face with drive pin holes",
+      "Circular knife technical drawing for a tissue log saw blade in D2 tool steel",
+      "Two tissue log saw blades rendered showing matched drive pin hole pattern",
+      "Ø68.26 mm bore and drive pin hole pattern for Fabio Perini log saws",
+      "Tissue log saw blade face showing mirror-polished finish under workshop lighting",
     ],
 
     description:
@@ -1286,6 +1404,11 @@ export const blades: Blade[] = [
       "Gambini",
       "Bretting",
       "MTC",
+      "Futura",
+      "United Converting",
+      "Italconverting",
+      "Maflex",
+      "MTorres",
     ],
 
     specs: [
@@ -1308,15 +1431,48 @@ export const blades: Blade[] = [
         label: "Applications",
         value: "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)",
       },
+      { label: "Max Line Speed", value: "300 strokes/min" },
+      {
+        label: "Inspection Records Supplied",
+        value:
+          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
+      },
     ],
 
+    steelGrades: {
+      intro:
+        "Log saw blade life on a tissue line is decided by how the steel behaves under continuous CBN honing, not by hardness alone. The two grades below cover almost every tissue and towel application we quote.",
+      rows: [
+        {
+          grade: "D2 / 1.2379",
+          hardness: "HRC 58–60",
+          bestFor:
+            "Standard bath tissue and kitchen towel lines running in-line CBN sharpening. Our default grade.",
+          tradeoff:
+            "Highest all-round value. Not the longest life on heavily recycled, high-ash furnish.",
+        },
+        {
+          grade: "Cr12MoV",
+          hardness: "HRC 58–60",
+          bestFor:
+            "Lines where blade cost per cut matters more than absolute edge life; widely available regrind support.",
+          tradeoff:
+            "Slightly lower wear resistance than D2 on abrasive recycled fibre.",
+        },
+      ],
+      outro:
+        "For high-speed lines running heavily recycled fibre with abrasive filler, we also quote M2 HSS, which holds the edge longest between grinds but is more sensitive to CBN wheel condition. If you are not sure which grade your line needs, tell us the furnish (virgin or recycled), the log density, and how many cuts per minute you run. We match the grade to the line, not the other way round.",
+    },
+
+    componentsIntro:
+      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage\u2014crushed cardboard cores, excessive dust generation, or angled cut faces\u2014propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.",
     components: [
       {
         id: "runout-control",
         tag: "PRECISION",
         title: "Zero-Wobble Tensioning",
         description:
-          "A 610\u202fmm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to \u22640.15\u202fmm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
+          "Why does a log saw crush cardboard cores? Almost always because lateral runout has drifted past about 0.20\u202fmm, and the blade starts beating the core instead of slicing it. A 610\u202fmm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to \u22640.15\u202fmm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
       },
       {
         id: "cbn-compatible",
@@ -1387,6 +1543,7 @@ export const blades: Blade[] = [
       lowPrice: 180,
       highPrice: 1200,
     },
+    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -1405,7 +1562,7 @@ export const blades: Blade[] = [
           question:
             "Can you supply blades for Fabio Perini, PCMC, Casmatic, or Gambini log saws?",
           answer:
-            "Yes. The standard \u00d868.26\u202fmm (+0.05\u202fmm) bore fits Fabio Perini and PCMC Forte/Elite directly. The \u00d882.55\u202fmm bore covers Casmatic and Kimberly-Clark-licensed OEM platforms. We hold OEM blueprints for Gambini and Bretting and supply guaranteed drop-in replacement tooling.",
+            "Yes. The standard \u00d868.26\u202fmm (+0.05\u202fmm) bore fits Fabio Perini and PCMC Forte/Elite log saws directly. The \u00d882.55\u202fmm bore covers Casmatic and equivalent platforms. For Gambini and Bretting machines we build to the measured geometry of your existing blade or your own drawing, so the replacement drops in without retooling. Send us the machine model, a worn blade, or a dimensioned sketch and we confirm fitment before quoting.",
         },
         {
           question:

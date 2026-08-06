@@ -144,8 +144,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "lưỡi cắt phế liệu, lưỡi cắt cuộn, máy cắt phế liệu kim loại, dao cắt dây chuyền, lưỡi cắt nhỏ S7"
   },
   "rotary-slitter-knives-paper": {
-    "title": "Dao xén giấy & khăn giấy | D2 / M2 HSS",
-    "description": "Dao chia cuộn tròn D2 & M2 HSS dùng để chuyển đổi khăn giấy, giấy kraft & bìa gợn sóng. Cặp lực cắt trên/dưới phù hợp ở mức ±0,002mm. Cắt không bụi sợi ở tốc độ 400–600m/phút. OEM fit Atlas, Kampf, Fabio Perini, Körber — gửi model máy để báo giá.",
+    "title": "Dao xén giấy | Giấy lụa & Kraft | D2, M2 HSS | Sureay",
+    "description": "Dao xén cắt rạch và cắt nghiền cho giấy lụa, kraft và giấy tráng. D2, M2 HSS và 52100 với dung sai độ dày ±0,002mm. OEM phù hợp với Atlas, Kampf, Goebel IMS, Perini.",
     "keywords": "lưỡi xén giấy, dao xén giấy, dao xén sóng, lưỡi chuyển đổi mô, máy xén giấy kraft, lưỡi xẻng cưa gỗ, cặp cắt giấy, rạch không bụi"
   },
   "guillotine-shear-blades": {
