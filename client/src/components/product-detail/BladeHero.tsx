@@ -6,12 +6,31 @@
 
 import { useEffect, useState } from "react";
 import { ArrowRight, Download, Loader2 } from "lucide-react";
+import { Link } from "wouter";
 import type { Blade } from "@/data/blades";
 import { getCatalogUrl } from "@/data/blades";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface BladeHeroProps {
   blade: Blade;
+}
+
+/** Renders a single `[text](/url)` markdown link inside plain text. */
+function renderDisambiguation(text: string): React.ReactNode {
+  const match = text.match(/^(.*)\[([^\]]+)\]\(([^)]+)\)(.*)$/);
+  if (!match) return text;
+  const [, before, linkText, href, after] = match;
+  return (
+    <>
+      {before}
+      <Link href={href} asChild>
+        <a className="underline underline-offset-2 decoration-slate-400 hover:text-[#001f4d] hover:decoration-[#001f4d] transition-colors font-semibold">
+          {linkText}
+        </a>
+      </Link>
+      {after}
+    </>
+  );
 }
 
 const DOT_GRID_STYLE = {
@@ -36,7 +55,14 @@ export default function BladeHero({ blade }: BladeHeroProps) {
     blade.gallery && blade.gallery.length > 2
       ? blade.gallery.slice(0, -2)
       : [blade.image];
-  const activeSrc = heroImages[Math.min(activeImg, heroImages.length - 1)];
+  const heroAlts =
+    blade.galleryAlts && blade.galleryAlts.length > 2
+      ? blade.galleryAlts.slice(0, -2)
+      : undefined;
+  const clampedActiveImg = Math.min(activeImg, heroImages.length - 1);
+  const activeSrc = heroImages[clampedActiveImg];
+  const activeAlt =
+    heroAlts?.[clampedActiveImg] ?? (blade.fullName || blade.name);
 
   // Reset to the cover shot when navigating between products (the page
   // component may reuse this instance across route param changes).
@@ -84,9 +110,10 @@ export default function BladeHero({ blade }: BladeHeroProps) {
         >
           <img
             src={activeSrc}
-            alt={blade.fullName || blade.name}
+            alt={activeAlt}
             className="h-full w-full object-contain p-3 mix-blend-multiply"
             loading="eager"
+            fetchPriority="high"
             decoding="async"
             width={580}
             height={520}
@@ -110,10 +137,12 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               >
                 <img
                   src={src}
-                  alt=""
+                  alt={heroAlts?.[i] ?? ""}
                   className="h-full w-full object-contain p-1 mix-blend-multiply"
                   loading="lazy"
                   decoding="async"
+                  width={80}
+                  height={80}
                 />
               </button>
             ))}
@@ -133,6 +162,13 @@ export default function BladeHero({ blade }: BladeHeroProps) {
           <p className="text-[16px] font-bold text-black  tracking-widest border-l-2 border-[#001f4d] pl-3">
             {blade.categoryDisplay}
           </p>
+
+          {/* Disambiguation — points to a sibling product sharing this keyword root */}
+          {blade.disambiguation && (
+            <p className="text-[13px] text-slate-500 leading-relaxed italic">
+              {renderDisambiguation(blade.disambiguation)}
+            </p>
+          )}
 
           {/* Description */}
           {(blade.description || blade.fullDescription) && (

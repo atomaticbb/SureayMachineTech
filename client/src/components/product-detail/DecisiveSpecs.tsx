@@ -31,6 +31,8 @@ export default function DecisiveSpecs({
   if (specs.length === 0) return null;
 
   const panelImage = specImage ?? blade.gallery?.at(-1) ?? blade.image;
+  const panelAlt =
+    (!specImage && blade.galleryAlts?.at(-1)) || blade.fullName || blade.name;
 
   return (
     <section
@@ -81,10 +83,12 @@ export default function DecisiveSpecs({
           >
             <img
               src={panelImage}
-              alt={blade.fullName || blade.name}
+              alt={panelAlt}
               className="w-full h-full object-contain p-4 mix-blend-multiply"
               loading="lazy"
               decoding="async"
+              width={800}
+              height={600}
             />
           </div>
         </div>

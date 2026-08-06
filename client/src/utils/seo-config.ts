@@ -242,9 +242,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "rotary-slitter-knives-paper": {
-    title: "Tissue & Paper Slitter Knives | D2 / M2 HSS",
+    title: "Paper Slitter Knives | Tissue & Kraft | D2, M2 HSS | Sureay",
     description:
-      "D2 & M2 HSS slitter knives for tissue, kraft paper & corrugated converting. Matched shear pairs at ±0.002mm. OEM fit Atlas, Kampf & Fabio Perini.",
+      "Shear and crush slitter knives for tissue, kraft and coated paper. D2, M2 HSS and 52100 at ±0.002mm thickness. Fits Atlas, Kampf, Goebel IMS, Perini.",
     keywords:
       "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
   },

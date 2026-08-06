@@ -84,7 +84,7 @@ export default function ProductVariantCard({
       <Link
         href={blade.link}
         className="absolute inset-0 z-[1]"
-        aria-label={blade.name}
+        aria-label={blade.categoryCardAnchorText ?? blade.name}
       />
 
       <div className="relative aspect-[4/3] bg-white overflow-hidden flex-shrink-0">

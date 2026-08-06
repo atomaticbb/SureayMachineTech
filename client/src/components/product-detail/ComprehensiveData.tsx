@@ -49,6 +49,7 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
       r => r.thickness !== undefined || r.type !== undefined
     );
   const panelImage = blade.gallery?.at(-2) ?? blade.image;
+  const panelAlt = blade.galleryAlts?.at(-2) ?? blade.fullName ?? blade.name;
 
   const col0Label =
     blade.dimensionLabels?.col0 ??
@@ -91,10 +92,12 @@ export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
           >
             <img
               src={panelImage}
-              alt={blade.fullName || blade.name}
+              alt={panelAlt}
               className="w-full h-full object-contain p-4 mix-blend-multiply"
               loading="lazy"
               decoding="async"
+              width={800}
+              height={600}
             />
           </div>
         </div>

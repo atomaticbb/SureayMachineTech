@@ -51,6 +51,8 @@ export default function CompatibleTooling({ blades, title, subtitle }: Compatibl
                   className="max-h-36 w-auto mx-auto object-contain mix-blend-multiply"
                   loading="lazy"
                   decoding="async"
+                  width={300}
+                  height={300}
                 />
               </div>
 
