@@ -138,6 +138,12 @@ export default function NewsDetail() {
       label: formatHeadingCase(b.value),
     }));
 
+  // Visible FAQ blocks double as the FAQPage JSON-LD source, so the two
+  // can never drift out of sync.
+  const faqEntries = article.content.flatMap((b) =>
+    b.type === "faq" ? (b.faqItems ?? []) : []
+  );
+
   // Mutable counters reset on each render
   let h2Idx = 0;
   let figIdx = 0;
@@ -149,6 +155,7 @@ export default function NewsDetail() {
         description={article.metaDescription ?? article.excerpt}
         canonicalUrl={`/news/${article.id}`}
         keywords={article.keywords}
+        ogImage={article.image}
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "News", url: "/news" },
@@ -178,6 +185,22 @@ export default function NewsDetail() {
             },
             mainEntityOfPage: `https://sureay.com/news/${article.id}`,
           }),
+          ...(faqEntries.length > 0
+            ? [
+                JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: faqEntries.map((f) => ({
+                    "@type": "Question",
+                    name: f.question,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: f.answer,
+                    },
+                  })),
+                }),
+              ]
+            : []),
         ]}
       />
       <Navbar />
@@ -230,6 +253,31 @@ export default function NewsDetail() {
                   {article.excerpt}
                 </p>
 
+                {/* Answer-first key facts */}
+                {article.keyFacts && (
+                  <div className="mt-6 max-w-[60ch] border border-slate-200 bg-slate-50/60 px-5 py-4">
+                    <p className="text-[14px] text-slate-700 leading-relaxed">
+                      {article.keyFacts.intro}
+                    </p>
+                    <p className="font-mono text-[9px] text-slate-500 tracking-[0.18em] mt-4 mb-2 uppercase">
+                      Quick Numbers
+                    </p>
+                    <ul className="space-y-1.5">
+                      {article.keyFacts.bullets.map((b, i) => (
+                        <li
+                          key={i}
+                          className="flex gap-2 text-[13px] text-slate-700 leading-snug"
+                        >
+                          <span className="text-[#e8b84b] flex-shrink-0">
+                            ·
+                          </span>
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
                 {/* Author row */}
                 <div className="mt-6 pt-5 border-t border-slate-100 flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#001f4d] flex items-center justify-center flex-shrink-0">
@@ -252,10 +300,15 @@ export default function NewsDetail() {
               <div className="overflow-hidden bg-slate-100 border border-slate-200">
                 <img
                   src={article.image}
+                  {...(article.id === "granulator-rotor-bed-knife-configuration" && {
+                    srcSet: `${article.image.replace(/\.webp$/i, "-640w.webp")} 640w, ${article.image} 1672w`,
+                    sizes: "(max-width: 1024px) 100vw, 460px",
+                  })}
                   alt={formatHeadingCase(article.title)}
                   className="w-full aspect-[4/3] lg:aspect-auto lg:h-[420px] object-cover"
                   width={920}
                   height={690}
+                  fetchPriority="high"
                   decoding="async"
                 />
               </div>
@@ -422,6 +475,24 @@ export default function NewsDetail() {
                       </div>
                     );
                   }
+                  case "faq":
+                    return (
+                      <div key={i} className="max-w-[760px] my-8 space-y-5">
+                        {(block.faqItems ?? []).map((item, qi) => (
+                          <div
+                            key={qi}
+                            className="border-l-[3px] border-[#001f4d]/20 pl-5"
+                          >
+                            <p className="font-bold text-[15px] text-[#001f4d] mb-1.5">
+                              {item.question}
+                            </p>
+                            <p className="text-[14px] text-slate-600 leading-relaxed">
+                              {item.answer}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    );
                   case "table":
                     return (
                       <div
