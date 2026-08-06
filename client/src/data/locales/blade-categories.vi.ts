@@ -114,11 +114,13 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     "slug": "log-saw-blades",
     "category": "log_saw_blades",
+    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
     "title": "Lưỡi cưa mô & gỗ",
     "shortName": "Lưỡi cưa khúc gỗ",
     "tagline": "Không có bụi. Cắt khăn giấy và khăn ăn không có gờ.",
     "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
     "description": "lưỡi cưa tròn cho gỗ tròn tròn dành cho dây chuyền chuyển đổi khăn giấy, khăn bếp và khăn ăn. Cấu hình tương thích CBN với độ đảo được kiểm soát, xử lý bề mặt chống ma sát và hình học răng cưa được điều chỉnh để tạo lỗ thủng sạch, không bụi ở tốc độ dây chuyền cao.",
+    "routingCopy": "Hai dòng lưỡi cưa gỗ tròn, tùy theo bạn đang cắt gì. Gỗ tròn khăn giấy và khăn bông trên máy Perini, PCMC, Casmatic, Gambini và Bretting dùng lưỡi khăn giấy Ø610–1200 mm. Gỗ tròn vải không dệt và khăn ướt dùng lưỡi nhỏ hơn Ø350–700 mm với góc vát khác. Hãy chọn loại phù hợp với dây chuyền của bạn, hoặc gửi cho chúng tôi model máy và chúng tôi sẽ chỉ cho bạn loại đúng.",
     "specItems": [
       {
         "label": "Hồ sơ",

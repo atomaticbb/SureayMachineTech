@@ -22,6 +22,15 @@ export interface BladeCategoryMeta {
   heroImage: string;
   description: string;
   specItems?: { label: string; value: string }[];
+  /** Overrides the short products-section intro when a category needs a
+   *  longer routing paragraph (e.g. to split traffic between variants that
+   *  would otherwise cannibalize each other in search). */
+  routingCopy?: string;
+  /** OEM brand names to exclude from the category hub's OEM compatibility
+   *  chip list even though they appear in a variant's compatibleMachines —
+   *  use when a variant serves an adjacent market whose OEMs don't belong
+   *  on the category's general audience-facing list. */
+  oemExcludeList?: string[];
 }
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
@@ -88,6 +97,9 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
       "Circular log saw blades for tissue, kitchen towel & napkin converting. CBN-compatible, controlled runout, anti-friction coating for dust-free perforation.",
+    routingCopy:
+      "Two log saw blade families, split by what you are cutting. Tissue and towel logs on Perini, PCMC, Casmatic, Gambini and Bretting machines take the Ø610–1200 mm tissue blades. Nonwoven and wipes logs run smaller Ø350–700 mm blades with a different bevel. Pick the one that matches your line, or send us the machine model and we will point you at the right one.",
+    oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
     specItems: [
       { label: "Profile", value: "CBN-compatible" },
       { label: "Surface", value: "Anti-friction treatment" },

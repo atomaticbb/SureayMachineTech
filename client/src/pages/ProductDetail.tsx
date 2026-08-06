@@ -26,6 +26,7 @@ import { getBladeById, getRelatedBlades, getSEO } from "@/data/locales";
 // Zone sub-components
 import BladeHero from "@/components/product-detail/BladeHero";
 import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
+import SteelGradeTable from "@/components/product-detail/SteelGradeTable";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
@@ -82,6 +83,9 @@ export default function ProductDetail() {
         description={pageSeo.description || blade.description}
         canonicalUrl={`/products/${blade.id}`}
         keywords={pageSeo.keywords}
+        {...(blade.id === "tissue-log-saw-blades" && {
+          preloadImage: blade.image,
+        })}
         breadcrumbs={[
           { name: t("nav.home"), url: "/" },
           { name: t("nav.products"), url: "/products" },
@@ -97,7 +101,9 @@ export default function ProductDetail() {
           brand: "Sureay",
           material: blade.specs.find(s => s.label === "Material")?.value,
           specs: blade.specs,
-          ...(blade.offers && { offers: blade.offers }),
+          ...(blade.offers && {
+            offers: blade.omitOfferPrice ? {} : blade.offers,
+          }),
         }}
       />
 
@@ -134,6 +140,9 @@ export default function ProductDetail() {
             <div className="-mx-4 sm:-mx-8">
               <InlineRFQPrompt />
             </div>
+
+            {/* Zone 2b — Steel grade selection guidance (renders only when present) */}
+            <SteelGradeTable blade={blade} />
 
             {/* Zone 3 — Comprehensive Technical Data */}
             <div className="-mx-4 sm:-mx-8">

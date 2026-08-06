@@ -56,7 +56,7 @@ const PAGE_SCHEMA = {
         "@type": "Product",
         name: "Tissue Log Saw Blades",
         image: "https://sureay.com/images/products/blades/tissue-log-saw-blades-05.webp",
-        description: "Triple-ground M2 HSS log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
+        description: "D2/Cr12MoV log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tissue-log-saw-blades",
         offers: getBladeAggregateOffer("tissue-log-saw-blades"),
@@ -144,10 +144,9 @@ export default function PaperIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.paper.specs.s1.label"), mainValue: "Triple\\nGround", subtext: t("industry.paper.specs.s1.subtext"), isTextual: true },
-    { label: t("industry.paper.specs.s2.label"), mainValue: "M2\\nHSS", subtext: t("industry.paper.specs.s2.subtext"), isTextual: true },
-    { label: t("industry.paper.specs.s3.label"), mainValue: "54–120", unit: "TPI", subtext: t("industry.paper.specs.s3.subtext") },
-    { label: t("industry.paper.specs.s4.label"), mainValue: "Ra ≤ 0.6", unit: "μm", subtext: t("industry.paper.specs.s4.subtext") },
+    { label: t("industry.paper.specs.s1.label"), mainValue: "Precision\\nGround", subtext: t("industry.paper.specs.s1.subtext"), isTextual: true },
+    { label: t("industry.paper.specs.s2.label"), mainValue: "D2 /\\nCr12MoV", subtext: t("industry.paper.specs.s2.subtext"), isTextual: true },
+    { label: t("industry.paper.specs.s4.label"), mainValue: "Ra ≤ 0.2", unit: "μm", subtext: t("industry.paper.specs.s4.subtext") },
   ];
 
   const MATERIALS: IndustryMaterial[] = [

@@ -160,9 +160,9 @@ function FaqRow({ item, index }: { item: FaqItem; index: number }) {
           <span className="font-mono text-[10px] text-slate-400 mt-[3px] shrink-0 tabular-nums w-5">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <span className="font-normal text-[16px] text-[#001f4d] leading-snug">
+          <h3 className="font-normal text-[16px] text-[#001f4d] leading-snug">
             {item.question}
-          </span>
+          </h3>
         </div>
         {/* +/− toggle indicator */}
         <span className="shrink-0 font-mono text-lg leading-none text-slate-400 group-open:text-[#e8b84b] transition-colors duration-150 mt-0.5">

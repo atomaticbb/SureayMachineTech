@@ -114,11 +114,13 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     "slug": "log-saw-blades",
     "category": "log_saw_blades",
+    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
     "title": "Lames de scie à tissus et à bûches",
     "shortName": "Lames de scie à grumes",
     "tagline": "Pas de poussière. Découpe des mouchoirs et des serviettes sans bavure.",
     "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
     "description": "ZGTR0zGTR circulaire pour les lignes de transformation de mouchoirs en papier, d'essuie-tout et de serviettes. Profils compatibles CBN avec un faux-rond contrôlé, un traitement de surface anti-friction et une géométrie de denture adaptée pour une perforation propre et sans poussière à des vitesses de ligne élevées.",
+    "routingCopy": "Deux familles de lames de scie à bûches, selon ce que vous découpez. Les bûches de mouchoirs et d'essuie-tout sur les machines Perini, PCMC, Casmatic, Gambini et Bretting utilisent les lames tissu Ø610–1200 mm. Les bûches non tissées et lingettes utilisent des lames plus petites Ø350–700 mm avec un biseau différent. Choisissez celle qui correspond à votre ligne, ou envoyez-nous le modèle de machine et nous vous orienterons vers la bonne.",
     "specItems": [
       {
         "label": "Profil",

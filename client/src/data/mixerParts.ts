@@ -138,9 +138,10 @@ export const mixerCategories: MixerCategory[] = [
     id: "asphalt-mixing-plant",
     category: "asphalt_mixing_plant",
     name: "Asphalt Mixing Plant Parts",
-    seoTitle: "Asphalt Plant Wear Parts — OEM Replacement (HB600+)",
+    seoTitle:
+      "Asphalt Mixing Plant Wear Parts — OEM Fit for Ammann, Marini, Benninghoven",
     description:
-      "OEM-fit replacement wear parts for Ammann, Marini, Benninghoven, MEKA & Astec asphalt plants — mixing arms, liner plates, spiral blades, HB600+ chrome iron.",
+      "Complete asphalt plant wear parts — arms, liners, spiral blades & scrapers for Ammann, Marini, Benninghoven, MEKA, Astec. ISO 9001:2015, factory-direct.",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
     link: "/mixer-wear-parts/asphalt-mixing-plant",
@@ -948,8 +949,8 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-02.webp",
     ],
     description:
-      "Bolt-in asphalt mixer liner plate, high-chrome iron HB600+ — fits Ammann, Marini, Benninghoven, MEKA & Astec pugmills. Typical 6-18 month service life.",
-    seoTitle: "Asphalt Mixer Liner Plate — HB600+ OEM Replacement",
+      "OEM asphalt mixing/batching plant liner & lining plates, HB600+ high-chrome iron. Fits Ammann, Marini, Benninghoven, MEKA, Astec. Bolt-in, factory-direct.",
+    seoTitle: "Asphalt Mixing Plant Liner & Lining Plate — HB600+ OEM Fit",
     fullDescription:
       "Liner plates protect the inside of the pugmill from the twin assault of hot, sticky bituminous mix and the sharp mineral aggregate carried in it. They are the barrier that keeps abrasion and heat off the structural mixer shell.\n\nWhen a liner wears thin or a bolt backs out, hot mix works its way to the shell and to the gap behind the plate, where it packs, hardens and accelerates the next failure. Left too long, the damage moves from a cheap liner swap to a shell repair and extended downtime in the middle of a paving season - the worst possible time to lose a plant.\n\nSureay asphalt liners are cast in high-chromium iron above HB 600, selected to hold up to abrasion at mixing temperature, and produced on the lost-foam and DISA green-sand lines for accurate, flush-fitting segments. They bolt into pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, with a typical 6-18 month service life depending on throughput and aggregate hardness.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-liner-plate",
@@ -1195,8 +1196,10 @@ export const mixerParts: MixerPart[] = [
     ],
     badge: "Hot-Mix",
     badgeColor: "orange",
+    seoTitle:
+      "Asphalt Mixing Plant Spiral Blade — HB600+ OEM Fit for Ammann, Marini, Benninghoven",
     description:
-      "Asphalt mixing plant spiral blade in high-chrome alloy - conveys and folds hot mix along the shaft for even bitumen coating; bolt-on, wear-resistant.",
+      "Asphalt mixing plant spiral/paddle blade, high-chrome alloy, HB600+. Fits Ammann, Marini, Benninghoven, MEKA, Astec. Bolt-on, weld-free replacement.",
     fullDescription:
       "Spiral blades are the conveying and mixing tool of the pugmill. Pitched along the shaft, they push hot aggregate from one end of the chamber to the other while folding it back through the bitumen, so every stone is fully and evenly coated before discharge.\n\nWhen the spiral profile wears down, that conveying action weakens: material lingers, dead zones form, and aggregate leaves the mixer unevenly coated or segregated - off-spec hot mix that fails at the lab or, worse, on the road. Because the blade controls both throughput and coating quality, a worn spiral quietly costs both rate and product quality at once.\n\nSureay spiral blades are cast in high-chromium alloy iron above HB 600 to resist abrasion at mixing temperature, with a bolt-on mount for fast, weld-free changes. They fit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, and typically last 6-18 months depending on output and aggregate hardness.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-spiral-blade",

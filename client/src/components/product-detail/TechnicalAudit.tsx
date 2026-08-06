@@ -33,6 +33,12 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
         {t("productDetail.technicalAudit.headline")}
       </h2>
 
+      {blade.componentsIntro && (
+        <p className="text-[16px] text-slate-600 leading-relaxed max-w-[80ch] mb-8">
+          {blade.componentsIntro}
+        </p>
+      )}
+
       {/* 3-column card grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {blade.components.map((comp, i) => {

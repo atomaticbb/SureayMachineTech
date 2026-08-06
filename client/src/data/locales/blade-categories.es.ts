@@ -114,11 +114,13 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     "slug": "log-saw-blades",
     "category": "log_saw_blades",
+    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
     "title": "Hojas de sierra para tejidos y troncos",
     "shortName": "Hojas de sierra para troncos",
     "tagline": "Cero polvo. Corte de pañuelos y servilletas sin rebabas.",
     "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
     "description": "Circular sierras circulares para troncos para líneas de transformación de pañuelos de papel, toallas de cocina y servilletas. Perfiles compatibles con CBN con desviación controlada, tratamiento superficial antifricción y geometría de dentado ajustada para una perforación limpia y sin polvo a altas velocidades de línea.",
+    "routingCopy": "Dos familias de hojas de sierra para troncos, según lo que esté cortando. Los troncos de pañuelos y toallas en máquinas Perini, PCMC, Casmatic, Gambini y Bretting usan las hojas de tejido Ø610–1200 mm. Los troncos de no tejidos y toallitas usan hojas más pequeñas Ø350–700 mm con un bisel diferente. Elija la que se ajuste a su línea, o envíenos el modelo de máquina y le indicaremos la correcta.",
     "specItems": [
       {
         "label": "Perfil",

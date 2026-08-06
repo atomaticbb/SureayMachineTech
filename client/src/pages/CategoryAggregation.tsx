@@ -13,7 +13,6 @@ import Breadcrumbs from "@/components/common/Breadcrumbs";
 import ProductVariantCard from "@/components/product/ProductVariantCard";
 import MobileContactBar from "@/components/product/MobileContactBar";
 import FloatingContactButtons from "@/components/common/FloatingContactButtons";
-import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
 import { useLang } from "@/contexts/LangContext";
@@ -63,7 +62,11 @@ export default function CategoryAggregation() {
   // A few hubs have a dedicated wide hero crop; every other hub falls back
   // to its existing product photo (meta.heroImage).
   const heroImageSrc = HERO_IMAGE_OVERRIDES[meta.slug] ?? meta.heroImage;
-  const productsIntro = meta.description.split(".")[0] + ".";
+  const productsIntro =
+    meta.routingCopy ?? meta.description.split(".")[0] + ".";
+  const oemMachinesFiltered = meta.oemExcludeList
+    ? oemMachines.filter(m => !meta.oemExcludeList!.includes(m))
+    : oemMachines;
   const whatsappPrefillText = `Hi, I'm interested in your ${meta.shortName.toLowerCase()}. My machine model is: `;
 
   function scrollToContact(e: { preventDefault: () => void }) {
@@ -160,7 +163,13 @@ export default function CategoryAggregation() {
                 {meta.shortName} {t("categoryPage.configurations")}
               </h2>
             </div>
-            <p className="text-[14px] text-slate-500 leading-snug mt-1 max-w-[70ch]">
+            <p
+              className={`text-[14px] text-slate-500 mt-1 ${
+                meta.routingCopy
+                  ? "max-w-[75%] leading-relaxed"
+                  : "leading-snug max-w-[70ch]"
+              }`}
+            >
               {productsIntro}
             </p>
           </div>
@@ -236,35 +245,12 @@ export default function CategoryAggregation() {
                 )}
               </>
             )}
-
-            {rep?.components && rep.components.length > 0 && (
-              <div className="mt-10">
-                <p className="font-mono text-[10px] tracking-[0.28em] mb-5 uppercase text-slate-600 font-bold">
-                  {t("categoryPage.engineeringDetail")}
-                </p>
-                <ul className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-300 border border-slate-300">
-                  {rep.components.slice(0, 3).map(c => (
-                    <li key={c.id} className="bg-white p-5 flex flex-col gap-2">
-                      <span className="font-mono text-[9px] text-[#003a8c] tracking-[0.28em] uppercase font-bold">
-                        {c.tag}
-                      </span>
-                      <h3 className="font-bold text-[15px] text-[#001f4d] leading-snug">
-                        {c.title}
-                      </h3>
-                      <p className="text-[13px] leading-[1.6] text-slate-700">
-                        {c.description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
         </div>
       </section>
 
       {/* ── 4 · OEM Compatibility ────────────────────────────────────────── */}
-      {oemMachines.length > 0 && (
+      {oemMachinesFiltered.length > 0 && (
         <section
           aria-label="OEM compatibility"
           className="border-b border-slate-200 bg-white"
@@ -291,7 +277,7 @@ export default function CategoryAggregation() {
 
             <div className="lg:col-span-8 flex flex-col justify-center">
               <ul className="flex flex-wrap gap-2">
-                {oemMachines.map(m => (
+                {oemMachinesFiltered.map(m => (
                   <li
                     key={m}
                     className="border border-slate-200 bg-slate-50 px-4 py-2"
@@ -307,16 +293,6 @@ export default function CategoryAggregation() {
               </p>
             </div>
           </div>
-        </section>
-      )}
-
-      {/* ── 5 · FAQ ──────────────────────────────────────────────────────── */}
-      {rep?.faqs && (
-        <section
-          aria-label="Frequently asked questions"
-          className="bg-slate-50 border-b border-slate-200 py-16 lg:py-20"
-        >
-          <ProductFAQ faqs={rep.faqs} productName={meta.title} />
         </section>
       )}
 
