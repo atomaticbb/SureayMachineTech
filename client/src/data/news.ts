@@ -91,6 +91,185 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "guillotine-shear-blade-parallelism",
+    tag: "TECHNICAL GUIDE",
+    date: "10.AUG.2026",
+    title:
+      "Guillotine Shear Blade Parallelism: Why Compatible Blades Still Cause Taper Cuts",
+    excerpt:
+      "A blade set can fit a machine perfectly — right bolt pattern, right steel grade — and still cut a taper if the ground edge isn't straight along its full length. Here's why parallelism and clearance are different specs, and how to tell which one failed.",
+    image: "/images/news/guillotine-shear-blade-parallelism-cover.png",
+    readTime: "5 MIN",
+    seoTitle:
+      "Guillotine Shear Blade Parallelism: Why Compatible Blades Cut Tapered Plates | Sureay",
+    metaDescription:
+      "Learn why replacement guillotine shear blades can fit correctly yet still produce tapered cuts. How blade parallelism, material selection, and matched blade sets affect cutting accuracy.",
+    keywords:
+      "guillotine shear blades, shear blade parallelism, replacement guillotine blades, hydraulic shear blades, shear blade tolerance, OEM replacement blades",
+    relatedProductIds: ["guillotine-shear-blades", "metal-shear-knives"],
+    keyFacts: {
+      intro:
+        "A blade set can fit a machine perfectly — right bolt pattern, right steel grade — and still produce a tapered cut if the ground edge isn't straight along its full length. Parallelism is ground into the blade at the factory; no clearance adjustment on the machine can fix it after the fact.",
+      bullets: [
+        "Full-length parallelism tolerance: ±0.05 mm, ground and verified along the entire blade span",
+        "A 0.1–0.15 mm deviation over a 3,000–4,000 mm blade is enough to produce a visible taper",
+        "Capacity up to 16 mm × 4,000 mm, upper and lower blades measured together as a matched pair",
+        "Three-point inspection checks can miss a deviation that a full-length check catches",
+      ],
+    },
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A fabrication shop swaps in a new blade set on their 4-meter guillotine shear. The supplier confirmed it fits the machine — right bolt pattern, right angle, right steel grade. First run: one end of the plate cuts clean, the other end drags and leaves a lip. Nobody touched the clearance setting. The blade isn't dull. It's not parallel.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That's a failure mode buyers rarely think to ask about when sourcing [guillotine shear blades](/products/guillotine-shear-blades), because it hides behind a spec sheet that looks correct. Bolt holes line up, the steel grade matches the OEM plate, the angle is right. None of that guarantees the cutting edge runs straight along its full length.",
+      },
+      {
+        type: "h2",
+        value: "Why a Correctly Fitted Blade Can Still Cut Unevenly",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Fit and straightness are two separate qualities, and a blade can pass on one while failing the other. A blade set can mount without interference, match the machine's bolt spacing exactly, and use the correct steel grade — and still produce a tapered cut if the ground edge deviates from parallel along its length. That deviation doesn't show up when someone just checks that the blade goes in.",
+      },
+      {
+        type: "h2",
+        value: "Parallelism vs Clearance: Two Different Blade Specifications",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Clearance — the horizontal gap between the upper and lower blade — gets most of the attention because it's adjustable on the machine and directly tied to burr formation. Parallelism is not something the operator sets; it's ground into the blade during manufacturing, and machine alignment can only work within whatever straightness the blade itself was ground to. If the blade's own parallelism is out of spec, no clearance adjustment on the machine will fully correct the cut.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That said, machine-side factors can still influence the final result: blade holder condition, contamination on the mounting surface, clamping sequence, and general frame wear all affect how a correctly ground blade behaves once installed. The blade has to meet its own straightness requirement first — but a good blade installed on a poorly maintained holder can still cut unevenly.",
+      },
+      {
+        type: "h2",
+        value: "How Blade Parallelism Affects Cutting Accuracy",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "On a blade running 3,000–4,000 mm long, a deviation of 0.1–0.15 mm across the full length is enough to produce a visible taper. That number sounds small next to the overall length, but the effect accumulates over the full cutting stroke, and it becomes more noticeable as plate thickness increases — thicker plate amplifies whatever clearance variation exists along the blade, since the shearing condition changes at each point along the cut.",
+      },
+      {
+        type: "paragraph",
+        value:
+          'Sureay grinds guillotine shear blades to ±0.05 mm full-length parallelism on surface grinders with the blade fixtured along its entire span, not checked at just three points. Three-point checks are how some "compatible" blades pass inspection and still cut a taper in the field — the deviation sits between the check points.',
+      },
+      {
+        type: "h3",
+        value: "Troubleshooting: Matching the Symptom to the Cause",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Cutting Problem", "Likely Cause", "What to Check"],
+        tableRows: [
+          [
+            "One end cuts clean, the other drags or leaves a lip",
+            "Blade parallelism error",
+            "Measure full-length blade height with a dial indicator or straightedge",
+          ],
+          [
+            "Heavy burr along the full cut",
+            "Incorrect clearance setting",
+            "Check and reset the blade gap on the machine",
+          ],
+          [
+            "Edge chipping, especially on harder plate",
+            "Wrong steel grade for the material",
+            "Review steel grade and hardness against the plate being cut",
+          ],
+          [
+            "Uneven wear concentrated at one end",
+            "Improper mounting or holder condition",
+            "Inspect blade seating and holder surface for contamination or wear",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "Choosing the Right Steel Grade for Guillotine Shear Blades",
+      },
+      {
+        type: "image",
+        value: "/images/products/granulator-blades/metal-shear-blades-01.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For straight guillotine work — as opposed to the broader alligator and scrap shearing covered under our [metal shear knives](/products/metal-shear-knives) line — the steel grade decision usually comes down to three options. D2 (Cr12MoV equivalent) holds an edge the longest on mild and cold-rolled steel but is the least tolerant of impact; a plate with mill scale or a work-hardened edge can chip it. 6CrW2Si trades some wear resistance for toughness, which matters on lines cutting mixed-gauge coil where thickness isn't perfectly consistent shear to shear. 9CrSi is commonly selected for general-purpose hydraulic guillotine applications where balanced wear resistance and toughness are required.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "None of these choices correct a parallelism problem. A tougher grade only delays how fast an out-of-parallel blade starts chipping instead of dragging. Sureay recommends material selection based on the plate material, thickness range, and production conditions of the specific line, not a single default grade.",
+      },
+      {
+        type: "h2",
+        value: "OEM Replacement Blades Require More Than a Part Number",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "We reverse-engineer blade sets from the customer's drawing or a worn sample rather than a nominal catalog spec, because two machines badged the same model — TRUMPF, AMADA, LVD, Durma, Bystronic — can have small differences in mounting angle or hole spacing across production years. A drawing pulled from the actual machine, or a worn blade sent for measurement, catches that. A part number alone doesn't.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For capacity up to 16 mm × 4,000 mm, we ship upper and lower blades as a matched set, measured together rather than paired after the fact from separate batches. That distinction matters more than it sounds: two blades that individually meet ±0.05 mm can still combine into a stacked deviation if they weren't ground and checked as a pair.",
+      },
+      {
+        type: "h2",
+        value: "How Sureay Manufactures Matched Guillotine Shear Blade Sets",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Each blade set goes through vacuum heat treatment, then finish grinding on equipment set up to hold the full-length tolerance rather than spot-checking it. After heat treatment and grinding, critical dimensions — edge angle, thickness, hole position, and full-length parallelism — are verified and recorded before the set ships, and upper and lower blades are measured together as the matched pair they'll be installed as.",
+      },
+      {
+        type: "h2",
+        value:
+          "How to Check Whether a Blade Problem Is Machine Setup or Blade Quality",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If a replacement blade set arrives and the cut tapers, don't reach for the clearance adjustment first. Lay a straightedge or dial indicator along the blade's full length before assuming it's a machine setup problem — in most cases, it isn't.",
+      },
+      {
+        type: "callout",
+        value:
+          "If your replacement guillotine shear blades fit correctly but still produce tapered cuts, send us your blade drawing or a worn sample. Our engineers can check mounting dimensions, material selection, and full-length parallelism before production, and confirm this in writing before the blade ships rather than after it's installed. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "rotary-slitter-knives-overspeed-ratio",
     tag: "TECHNICAL GUIDE",
     date: "03.AUG.2026",
