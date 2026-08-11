@@ -107,16 +107,6 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     keywords:
       "guillotine shear blades, shear blade parallelism, replacement guillotine blades, hydraulic shear blades, shear blade tolerance, OEM replacement blades",
     relatedProductIds: ["guillotine-shear-blades", "metal-shear-knives"],
-    keyFacts: {
-      intro:
-        "A blade set can fit a machine perfectly — right bolt pattern, right steel grade — and still produce a tapered cut if the ground edge isn't straight along its full length. Parallelism is ground into the blade at the factory; no clearance adjustment on the machine can fix it after the fact.",
-      bullets: [
-        "Full-length parallelism tolerance: ±0.05 mm, ground and verified along the entire blade span",
-        "A 0.1–0.15 mm deviation over a 3,000–4,000 mm blade is enough to produce a visible taper",
-        "Capacity up to 16 mm × 4,000 mm, upper and lower blades measured together as a matched pair",
-        "Three-point inspection checks can miss a deviation that a full-length check catches",
-      ],
-    },
     content: [
       {
         type: "paragraph",
