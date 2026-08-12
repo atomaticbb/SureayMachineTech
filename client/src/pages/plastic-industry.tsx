@@ -56,8 +56,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Twin Shaft Shredder Blades",
-        image: "https://sureay.com/images/products/shredder-blades/shredder-blades-01.webp",
-        description: "Heavy-duty D2 and H13 twin-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/shredder-blades-01.webp",
+        description:
+          "Heavy-duty D2 and H13 twin-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/twin-shaft-blades-recycling",
         offers: getBladeAggregateOffer("twin-shaft-blades-recycling"),
@@ -69,8 +71,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Granulator Blades",
-        image: "https://sureay.com/images/products/granulator-blades/granulator-blades-01.webp",
-        description: "Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and size reduction lines.",
+        image:
+          "https://sureay.com/images/products/granulator-blades/granulator-blades-01.webp",
+        description:
+          "Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and size reduction lines.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/granulator-blades",
         offers: getBladeAggregateOffer("granulator-blades"),
@@ -82,8 +86,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Strand Pelletizer Rotors",
-        image: "https://sureay.com/images/products/blades/strand-pelletizer-rotor-01.webp",
-        description: "PM-HSS and solid tungsten carbide strand pelletizer rotors with ≤0.005 mm concentricity, dynamic balanced to ISO 1940-1 G2.5 for Maag, Coperion and Cumberland lines.",
+        image:
+          "https://sureay.com/images/products/blades/strand-pelletizer-rotor-01.webp",
+        description:
+          "PM-HSS and solid tungsten carbide strand pelletizer rotors with ≤0.005 mm concentricity, dynamic balanced to ISO 1940-1 G2.5 for Maag, Coperion and Cumberland lines.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/strand-pelletizer-rotors",
         offers: getBladeAggregateOffer("strand-pelletizer-rotors"),
@@ -96,7 +102,8 @@ const PAGE_SCHEMA = {
         "@type": "Product",
         name: "Melt Filter Scraper Blades",
         image: "https://sureay.com/images/products/blades/scraper-blades.webp",
-        description: "D2, H13 and solid carbide scraper blades for continuous melt filters. Compatible with EREMA, Gneuß, Ettlinger and FIMIC filtration systems.",
+        description:
+          "D2, H13 and solid carbide scraper blades for continuous melt filters. Compatible with EREMA, Gneuß, Ettlinger and FIMIC filtration systems.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/continuous-melt-filter-scraper-blades",
         offers: getBladeAggregateOffer("continuous-melt-filter-scraper-blades"),
@@ -108,8 +115,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Single Shaft Rotor Inserts",
-        image: "https://sureay.com/images/products/shredder-blades/single-shredder-blades-06.webp",
-        description: "Indexable D2 and H13 single-shaft shredder rotor inserts for plastic waste, HDPE, and mixed post-consumer feedstocks.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/single-shredder-blades-06.webp",
+        description:
+          "Indexable D2 and H13 single-shaft shredder rotor inserts for plastic waste, HDPE, and mixed post-consumer feedstocks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/single-shaft-shredder-blades",
         offers: getBladeAggregateOffer("single-shaft-shredder-blades"),
@@ -121,8 +130,10 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Single Shaft Bed Knives",
-        image: "https://sureay.com/images/products/shredder-blades/single-shredder-bed-knives.webp",
-        description: "Precision-ground D2 counter blades for single-shaft shredder systems. Drop-in OEM replacements with controlled-wear hardness.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/single-shredder-bed-knives.webp",
+        description:
+          "Precision-ground D2 counter blades for single-shaft shredder systems. Drop-in OEM replacements with controlled-wear hardness.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/single-shaft-bed-knives",
         offers: getBladeAggregateOffer("single-shaft-bed-knives"),
@@ -134,11 +145,58 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Tire Shredder Blades",
-        image: "https://sureay.com/images/products/shredder-blades/3-claw-shredder-blades.webp",
-        description: "3-claw and 4-claw tire shredder blades in CR12 and D2 for rubber tire and cable shredding under extreme impact and abrasive loads.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/3-claw-shredder-blades.webp",
+        description:
+          "3-claw and 4-claw tire shredder blades in CR12 and D2 for rubber tire and cable shredding under extreme impact and abrasive loads.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tire-shredder-blades",
         offers: getBladeAggregateOffer("tire-shredder-blades"),
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 8,
+      item: {
+        "@type": "Product",
+        name: "Shredder Screens",
+        image:
+          "https://sureay.com/images/products/shredder-screens/shredder-screens-04.webp",
+        description:
+          "Perforated shredder screens, screen baskets and screen plates in S355 and Hardox 400–500. Hole Ø 8–80 mm, reverse-engineered for Lindner, Vecoplan, UNTHA and Herbold machines.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/shredder-screens",
+        offers: getBladeAggregateOffer("shredder-screens"),
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 9,
+      item: {
+        "@type": "Product",
+        name: "Cutter Compactor Blades",
+        image:
+          "https://sureay.com/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+        description:
+          "D2, M2 HSS and carbide-tipped rotor and stator knives for cutter compactors and agglomerators on film and PET recycling lines. Compatible with EREMA, NGR and Starlinger.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/cutter-compactor-blades",
+        offers: getBladeAggregateOffer("cutter-compactor-blades"),
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 10,
+      item: {
+        "@type": "Product",
+        name: "Die Face Cutting Knives & Pelletizer Blades",
+        image:
+          "https://sureay.com/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+        description:
+          "Die face cutting knives and underwater pelletizer blades ground to a controlled hardness differential that protects the die plate. Fits Gala, Nordson BKG, Maag and ECON systems.",
+        brand: { "@type": "Brand", name: "Sureay" },
+        url: "https://sureay.com/products/die-face-cutting-knives",
+        offers: getBladeAggregateOffer("die-face-cutting-knives"),
       },
     },
   ],
@@ -259,9 +317,7 @@ export default function PlasticIndustry() {
           products={PRODUCTS}
           filterCategories={FILTER_CATEGORIES}
         />
-        <CategoryLinksRow
-          slugs={["shredder-blades", "granulator-blades"]}
-        />
+        <CategoryLinksRow slugs={["shredder-blades", "granulator-blades"]} />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />

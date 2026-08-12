@@ -112,6 +112,19 @@ export interface Blade {
     }[];
     outro?: string;
   };
+  /** Engineering drawing gallery (ProductDrawings), rendered after the
+   *  TechnicalAudit cards. Line drawings are shown as a reverse-engineering
+   *  capability proof — outline geometry and edge profile only. Never publish
+   *  drawings carrying a customer/OEM title block, part number or tolerance
+   *  table; those stay confidential per the IP promise on the RFQ forms. */
+  drawings?: {
+    intro?: string;
+    items: {
+      image: string;
+      /** Short geometry label, e.g. "Straight body, twin slot — 45 × 25 mm". */
+      caption: string;
+    }[];
+  };
 
   // ── Detail page table label overrides (for non-circular blades) ──────────
   dimensionLabels?: {
@@ -399,8 +412,7 @@ export const blades: Blade[] = [
   {
     id: "rotary-slitter-knives-paper",
     name: "Paper Slitter Knives",
-    fullName:
-      "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
+    fullName: "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
     category: "slitter_knives",
     sector: "paper",
     categoryDisplay: "Paper Slitter Knives",
@@ -426,7 +438,8 @@ export const blades: Blade[] = [
       "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with multi-groove geometry that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
     disambiguation:
       "Slitting film, tape or flexible packaging? Those blades are on our [Rotary Slitter Knives for Film & Tape](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
-    categoryCardAnchorText: "Paper Slitter Knives — tissue, kraft & coated paper",
+    categoryCardAnchorText:
+      "Paper Slitter Knives — tissue, kraft & coated paper",
     link: "/products/rotary-slitter-knives-paper",
     isFeatured: false,
     compatibleMachines: [
@@ -444,8 +457,7 @@ export const blades: Blade[] = [
     specs: [
       {
         label: "Material",
-        value:
-          "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
+        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
       },
       {
         label: "Hardness",
@@ -2155,9 +2167,10 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: [
+      "single-shaft-bed-knives",
+      "shredder-screens",
       "twin-shaft-blades-recycling",
       "granulator-blades",
-      "single-shaft-bed-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -2486,6 +2499,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "single-shaft-shredder-blades",
       "twin-shaft-blades-recycling",
+      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 25,
@@ -4597,8 +4611,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: [
-      "granulator-blades",
+      "die-face-cutting-knives",
       "continuous-melt-filter-scraper-blades",
+      "granulator-blades",
       "twin-shaft-blades-recycling",
     ],
 
@@ -4874,6 +4889,731 @@ export const blades: Blade[] = [
             "What quality documentation is included with scraper blade shipments?",
           answer:
             "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Shredder Screens & Screen Baskets
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "shredder-screens",
+    name: "Shredder Screens",
+    fullName: "Shredder Screens, Baskets & Screen Plates",
+    category: "shredder_blades",
+    sector: "recycling",
+    categoryDisplay: "Shredder Screens",
+    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    badge: "Wear Parts",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-00.webp",
+      "/images/products/shredder-screens/shredder-screens-03.webp",
+      "/images/products/shredder-screens/shredder-screens-02.webp",
+      "/images/products/shredder-screens/shredder-screens-01.webp",
+    ],
+    galleryAlts: [
+      "Half-round perforated shredder screen basket with mounting flanges, showing staggered round hole pattern",
+      "Half-round perforated shredder screen basket for a single-shaft plastic shredder",
+      "Large-diameter shredder screen basket being rolled and formed in the Sureay workshop",
+      "Batch of perforated shredder screen baskets prepared for export shipment",
+      "Stack of curved shredder screen plates on a pallet, showing staggered round hole pattern",
+    ],
+
+    description:
+      "Perforated shredder screens, baskets and screen plates in S355J2 and Hardox 400–500. Hole Ø 8–80 mm, 12–30 mm thick, reverse-engineered from your worn screen.",
+
+    fullDescription:
+      "The screen is the component that actually decides your output particle size — the rotor and knives only reduce material until it is small enough to pass through. Yet it is the part most operators treat as an afterthought, running a blinded or bell-mouthed screen for months while blaming falling throughput on the knives. On a size-reduction line, screen condition and screen specification together account for more lost capacity than blade wear does.\n\nSureay manufactures shredder screens as engineered wear parts, not as generic perforated plate. Each screen is rolled to the exact rotor radius, so the gap between rotor tip and screen surface stays uniform across the full cutting width. An uneven gap means material is dragged and ground rather than cut, which raises motor amp draw, generates heat and fines, and accelerates knife wear on the very blades the screen was supposed to protect.\n\n## The Three Screen Forms\n\n**Screen Basket (half-round or full-round):** The standard geometry for single-shaft and twin-shaft shredders. Supplied as a half-shell that cradles the rotor, or as two halves clamped into a full cylinder. Basket screens carry the largest open area and are the highest-wear form because the entire inner surface is in contact with circulating material.\n\n**Screen Plate (flat):** Used on granulators and beside-the-press crushers where the cutting chamber geometry is flat rather than cylindrical. Easier to manufacture and to reverse-engineer, and usually the cheapest form to replace.\n\n**Sickle Screen:** A curved partial screen fitted where the discharge geometry does not allow a full basket. Common on compact and mobile shredders.\n\n**Cassette Screen:** A framed, quick-change insert. Higher initial cost, dramatically lower changeover time — worth specifying on lines that run several particle sizes on the same machine.\n\n## Specifying a Screen: Three Numbers That Matter\n\nEvery screen is defined by three interacting dimensions, and changing one forces a change in the others:\n\n- **Hole diameter (Ø)** sets the maximum particle size passing through. It is the number buyers usually quote, and the only one they usually quote.\n- **Plate thickness (t)** sets how long the screen survives. A thicker plate resists deformation and bell-mouthing but reduces effective open area, because each hole becomes a longer channel that material must clear.\n- **Ligament width** — the web of steel between adjacent holes — sets the screen's structural strength. Push the ligament too narrow chasing open area and the screen cracks between holes under impact, usually starting at the discharge edge.\n\nOpen area follows directly from hole diameter and ligament. For round holes on a 60° staggered pitch, open area ≈ 90.7 × (d / p)², where p is the hole centre pitch. Going from a 20 mm hole on a 28 mm pitch to a 20 mm hole on a 24 mm pitch lifts open area from roughly 46% to 63% — and cuts the ligament from 8 mm to 4 mm, which on a plastics shredder handling occasional metal contamination will fail early.\n\n## Why Screens Should Not Be Made From Tool Steel\n\nThis is the most common specification error we correct. A screen is not a cutting tool. It is a perforated structural member that absorbs continuous impact and abrasion while holding its shape. Hardening a screen to HRC 58–62 like a blade makes it brittle: the ligaments crack, and a fractured screen can drop steel fragments into the rotor and destroy a full knife set.\n\nWhat a screen needs is toughness with adequate abrasion resistance:\n\n- **S355J2 structural plate** — the default for clean plastics, film, paper and light MSW. Tough, cheap, easy to re-drill and repair.\n- **Hardox 400 / 450** — for mixed post-consumer waste, wood with grit, and moderately abrasive feed. Roughly 2–3× the service life of S355 at a modest cost premium.\n- **Hardox 500 or hardfaced surfaces** — for glass-filled compounds, contaminated demolition wood, C&D waste and other severely abrasive streams. Hardfacing is applied selectively to the high-wear inner face while the base plate stays tough.\n\n## Reverse Engineering From a Worn Screen\n\nMost replacement orders arrive without a drawing. Send photographs of the worn screen with a tape measure across the hole pitch, plus the machine make and model, and we will produce a manufacturing drawing for your approval before cutting steel. Where the original screen has bell-mouthed, we work from the unworn hole geometry at the edges rather than the enlarged centre holes, so the replacement restores the original particle size rather than reproducing the worn condition.",
+
+    disambiguation:
+      "Looking for the cutting tools rather than the sizing screen? See [Single Shaft Shredder Blades](/products/single-shaft-shredder-blades) for rotor inserts, bed knives and holders.",
+    link: "/products/shredder-screens",
+
+    compatibleMachines: [
+      "Lindner",
+      "Vecoplan",
+      "UNTHA",
+      "WEIMA",
+      "Herbold Meckesheim",
+      "ZERMA",
+      "SSI Shredding Systems",
+      "Genox",
+    ],
+
+    specs: [
+      {
+        label: "Screen Forms",
+        value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
+      },
+      { label: "Hole Diameter", value: "8 – 80 mm (round, square or slotted)" },
+      { label: "Plate Thickness", value: "12 – 30 mm" },
+      { label: "Ligament Width", value: "5 – 20 mm (application-matched)" },
+      {
+        label: "Material",
+        value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
+      },
+      { label: "Open Area", value: "34 – 58% (pattern-dependent)" },
+      { label: "Hole Pattern", value: "60° staggered · Straight · Slotted" },
+      {
+        label: "Supply Format",
+        value: "Drop-in OEM replacement or reverse-engineered from sample",
+      },
+      {
+        label: "OEM Fitment",
+        value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
+      },
+    ],
+
+    componentsIntro:
+      "A screen is judged on three things: whether it holds the particle size you specified, how long it holds it, and whether it survives the contamination in your feed without cracking.",
+
+    components: [
+      {
+        id: "aperture-sets-particle-size",
+        tag: "SIZING",
+        title: "The Screen Sets Your Output, Not the Rotor",
+        description:
+          "Rolled to your exact rotor radius so the tip-to-screen gap stays uniform across the full width. A consistent gap means material is cut once and discharged, instead of being recirculated and ground into heat and fines.",
+      },
+      {
+        id: "toughness-not-hardness",
+        tag: "METALLURGY",
+        title: "Toughness, Not Blade Hardness",
+        description:
+          "Screens are specified in S355J2, Hardox 400–500 or selectively hardfaced plate — never hardened to blade HRC. A brittle screen cracks at the ligaments and can drop steel into the rotor, taking a full knife set with it.",
+      },
+      {
+        id: "screen-knife-system",
+        tag: "SYSTEM",
+        title: "Screens, Counter Knives and Holders as One Order",
+        description:
+          "A blinded or bell-mouthed screen accelerates knife wear, and worn knives blind the screen faster. We supply screens together with counter knives, knife holders, clamping bars and spacers so the whole wear set is replaced on the same shutdown.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Output Class",
+      col1: "Hole Ø (mm)",
+      col2: "Plate Thickness (mm)",
+      col3: "Ligament (mm)",
+      caption:
+        "* Representative round-hole specifications on a 60° staggered pitch. Square, slotted and mixed-pattern screens available. Every screen is rolled to the customer's rotor radius — send the machine model or a photograph of the worn screen for reverse engineering.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Fine regrind — PET flake, film",
+        od: "8",
+        bolt: "12 – 15",
+        thickness: "5",
+      },
+      {
+        spec: "Fine regrind — PET flake, film",
+        od: "10",
+        bolt: "12 – 15",
+        thickness: "5",
+      },
+      { spec: "General regrind", od: "12", bolt: "15", thickness: "6" },
+      { spec: "General regrind", od: "16", bolt: "15 – 20", thickness: "7" },
+      { spec: "Coarse regrind", od: "20", bolt: "20", thickness: "8" },
+      { spec: "Coarse regrind", od: "25", bolt: "20 – 25", thickness: "9" },
+      {
+        spec: "Pre-shred / bulky waste",
+        od: "30",
+        bolt: "25",
+        thickness: "10",
+      },
+      {
+        spec: "Pre-shred / bulky waste",
+        od: "40",
+        bolt: "25 – 30",
+        thickness: "12",
+      },
+      {
+        spec: "Primary shred / RDF",
+        od: "50 – 80",
+        bolt: "30",
+        thickness: "14 – 20",
+      },
+    ],
+
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "granulator-blades",
+    ],
+    offers: {
+      lowPrice: 120,
+      highPrice: 1900,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "My throughput has dropped. Should I replace the screen or the knives first?",
+          answer:
+            "Inspect the screen first, because it is cheaper to check and more often the cause. Look for bell-mouthing — holes that have worn conical and enlarged on the inner face — and for blinding, where softened plastic has plugged the apertures. If holes have grown more than about 10% over nominal, the screen is already passing oversize particles and should be replaced regardless of knife condition. In practice the two wear together: a dull knife pushes material against the screen instead of cutting it, and a blinded screen recirculates material that grinds the knife edge. Replacing only one usually means a second shutdown within weeks.",
+        },
+        {
+          question:
+            "What actually causes screen blinding, and how do I stop it?",
+          answer:
+            "Blinding is almost always a heat problem, not a hole-size problem. When knives are dull or the rotor-to-screen gap has opened, material is smeared and worked rather than cut. Frictional heat softens the polymer, which then extrudes into the apertures and sets. Fitting a larger screen usually makes the coarse fraction unacceptable without fixing the cause. The durable fixes are sharpening or replacing the knives, restoring the correct rotor gap, and — for heat-sensitive polymers like LDPE and PP film — reducing feed rate or adding cooling. A thicker plate makes blinding worse, not better, because each hole becomes a longer channel to clear.",
+        },
+        {
+          question:
+            "How much open area can I add before the screen becomes structurally unsafe?",
+          answer:
+            "The limit is set by ligament width, not by open-area percentage. As a working rule, keep the ligament at or above 0.4× the hole diameter for clean plastics and at or above 0.6× for feed that may contain metal, stone or other hard contamination. A 20 mm hole with an 8 mm ligament gives roughly 46% open area and survives contaminated feed; the same hole with a 4 mm ligament reaches about 63% open area but will crack between holes under impact, typically starting at the discharge edge. On abrasive streams we would rather increase plate thickness and accept slightly lower open area than chase throughput with a thin ligament.",
+        },
+        {
+          question:
+            "Why shouldn't a screen be hardened to the same HRC as the blades?",
+          answer:
+            "Because a screen fails differently from a blade. A blade needs edge retention and works in compression at the cutting edge; a screen is a perforated structural member absorbing continuous impact across a large span. Hardened to HRC 58–62, the ligaments lose the ductility they need to absorb shock and crack rather than deform. A cracked screen is far more expensive than a worn one, because fragments entering the rotor can destroy an entire knife set. We specify S355J2 for clean plastics, Hardox 400/450 for mixed post-consumer feed, and Hardox 500 or selective hardfacing for severely abrasive material — all chosen for toughness first.",
+        },
+        {
+          question:
+            "Can you manufacture a screen from my worn one if I have no drawing?",
+          answer:
+            "Yes, and this is how most of our screen orders start. Send photographs of the worn screen with a tape measure laid across the hole pitch, plus the machine make and model and, where possible, the overall arc length and end-plate detail. We produce a manufacturing drawing for your written approval before any steel is cut. One important detail: we take hole geometry from the unworn edges rather than the enlarged centre holes, so the new screen restores your original particle size instead of reproducing the worn condition.",
+        },
+        {
+          question:
+            "Do you supply the counter knives, holders and clamping bars as well?",
+          answer:
+            "Yes. Screens, counter knives, knife holders, clamping bars and spacers are all manufactured in-house and routinely shipped together, which is how we recommend ordering them. Replacing the screen while leaving worn counter knives in place means the new screen blinds faster, and a single consolidated shipment reduces both freight cost and the number of production shutdowns.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a manufacturer or a trading company?",
+          answer:
+            "We are a direct manufacturer established in 2008. Screens are cut, rolled, drilled and — where specified — hardfaced in our own workshop, which is why we can work from a photograph of a worn part rather than requiring a finished drawing.",
+        },
+        {
+          question:
+            "What is the lead time on a reverse-engineered screen, and how is it packed?",
+          answer:
+            "Standard screens in stocked plate thicknesses ship in 10–15 working days from drawing approval. Reverse-engineered screens add roughly 3–5 days for the drawing and approval cycle. Screens are shipped on fumigated wooden pallets with edge protection and steel strapping; large-diameter baskets are nested to reduce volumetric freight cost.",
+        },
+        {
+          question: "What documentation ships with a screen order?",
+          answer:
+            "Every order includes a dimensional inspection record against the approved drawing and a material certificate for the plate — including the Hardox mill certificate where Hardox grades are specified. Hardfaced screens additionally carry a record of the hardfacing consumable and deposited hardness.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Cutter Compactor Blades (Rotor & Stator Knives)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "cutter-compactor-blades",
+    name: "Cutter Compactor Blades",
+    fullName: "Cutter Compactor Rotor & Stator Knives",
+    category: "granulator_blades",
+    sector: "recycling",
+    categoryDisplay: "Cutter Compactor Blades",
+    image:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+    badge: "PCR Recycling",
+    badgeColor: "orange",
+    gallery: [
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+    ],
+    galleryAlts: [
+      "Pair of cutter compactor stator knives showing the ground bevel and countersunk mounting",
+      "Front view of a cutter compactor stator knife showing edge straightness over full length",
+      "Cutter compactor blade set — rotor knife, knife holder block and stator knife",
+      "Long cutter compactor rotor knife with ground cutting edge and counterbored fixing hole",
+    ],
+
+    description:
+      "Rotor and stator knives for cutter compactors and agglomerators in D2, M2 HSS and carbide-tipped. Drop-in fit for EREMA, NGR, Starlinger and Previero.",
+
+    fullDescription:
+      "In a cutter compactor — also sold as an agglomerator, densifier or preconditioning unit — rotating knives cut and friction-heat loose film, fibre or PET flake until it softens and densifies into a free-flowing crumb the extruder can actually feed. The knives do two jobs at once: they cut, and they generate the controlled frictional heat that makes densification work. That dual duty is why they wear faster than any other tool on the line, typically needing replacement every three to six months on continuous film and PET operations.\n\nSureay manufactures both the rotating knives and the fixed stator knives, plus the holder blocks and pre-cutter blades that mount with them. Blades are ground flat and parallel across their full length, because on a compactor the flatness of the mounting face is what determines whether the cutting gap you set at installation is the gap you still have at the far end of the knife.\n\n## Cutting Gap: The Variable That Controls Everything\n\nThe gap between the rotating knife and the fixed stator knife is the single most consequential setting on a cutter compactor, and the one most often left unchecked between blade changes.\n\n**Gap too wide.** Material is kneaded rather than cut. Frictional heat climbs beyond the intended window, film smears into lumps instead of forming a uniform crumb, bulk density becomes inconsistent, and the extruder downstream sees a fluctuating feed. On PET flake, excess heat drives moisture-related degradation before the material ever reaches the dryer. Throughput falls while power consumption rises — the classic signature of a worn or badly set gap.\n\n**Gap too narrow.** The knives contact under load. Edges chip, motor current spikes on every heavy charge, and in the worst case a rotating knife strikes the stator hard enough to damage the holder block or the rotor disc itself — a repair an order of magnitude more expensive than the blades.\n\nTypical working gaps run in the region of 0.2–0.5 mm depending on machine size and material, but the correct figure is the one in your machine manual. What matters is that the gap can actually be held: if the blade's mounting face is not flat, or if the rotor knife and stator knife have worn by different amounts, the gap varies along the cutting length no matter how carefully it was set.\n\n## Why Rotor and Stator Knives Are Replaced as a Set\n\nRotating and fixed knives wear at different rates and in different geometries — the rotor knife loses its edge, while the stator knife tends to wear a radius and to hollow slightly where the material stream concentrates. Fitting a new rotor knife against a worn stator restores only half the cutting geometry: the gap becomes uneven along its length, the new blade carries the whole cutting load, and it dulls far faster than it should. Replacing both together costs more per shutdown and less per tonne.\n\n## Material Selection by Feedstock\n\n**D2 (1.2379), HRC 58–61** — the general-purpose choice for clean LDPE, LLDPE and PP film, woven bags and pre-consumer production scrap. Good edge retention, forgiving of the occasional impact, and the most economical to re-sharpen.\n\n**M2 HSS (1.3343), HRC 62–64** — for PET flake, printed and heavily dusted film, and post-consumer material carrying paper label residue or fine mineral contamination. Retains its edge at the elevated temperatures inside a working compactor, where D2 begins to soften.\n\n**Carbide-tipped, HRA 89–91 at the edge** — for glass-fibre reinforced compounds, mineral-filled material, carbon-black masterbatch and high-ash feedstocks. Substantially longer intervals between changes on streams that destroy tool steel, at a higher unit price and with less tolerance for impact.\n\n## Machine Compatibility\n\nBlades are reverse-engineered to EREMA (INTAREMA, TVEplus and RegrindPro preconditioning units), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac and Munchy machines. Send the machine model and a photograph of the worn blade, or the blade itself, and we will produce a drawing for approval before manufacture.",
+
+    link: "/products/cutter-compactor-blades",
+
+    compatibleMachines: [
+      "EREMA",
+      "NGR",
+      "Starlinger",
+      "Erdwich",
+      "Previero",
+      "Sorema",
+      "Plasmac",
+      "Munchy",
+    ],
+
+    specs: [
+      {
+        label: "Knife Types",
+        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
+      },
+      {
+        label: "Material",
+        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
+      },
+      {
+        label: "Hardness",
+        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
+      },
+      {
+        label: "Typical Cutting Gap",
+        value: "0.2 – 0.5 mm (machine-dependent)",
+      },
+      { label: "Face Flatness", value: "≤ 0.03 mm over full blade length" },
+      { label: "Parallelism", value: "≤ 0.02 mm" },
+      {
+        label: "Heat Treatment",
+        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
+      },
+      {
+        label: "Applications",
+        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
+      },
+      {
+        label: "OEM Fitment",
+        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
+      },
+    ],
+
+    componentsIntro:
+      "Compactor blades fail in one of three ways: the edge goes, the gap drifts, or the blade chips on contamination. Each has a different fix, and specifying for the wrong one wastes money.",
+
+    components: [
+      {
+        id: "gap-holding-geometry",
+        tag: "GEOMETRY",
+        title: "A Gap You Set Once and Keep",
+        description:
+          "Ground to ≤0.03 mm flatness and ≤0.02 mm parallelism over the full blade length. The gap you dial in at installation stays uniform end to end, instead of opening at one end and closing at the other as load is applied.",
+      },
+      {
+        id: "feedstock-matched-alloy",
+        tag: "METALLURGY",
+        title: "Alloy Matched to What You Actually Run",
+        description:
+          "D2 for clean PE and PP film, M2 HSS for PET flake and dusted post-consumer material that softens D2 at working temperature, carbide-tipped for glass-filled and high-ash streams. Specified from your feedstock, not from a default.",
+      },
+      {
+        id: "matched-rotor-stator-sets",
+        tag: "SERVICE LIFE",
+        title: "Supplied as Matched Rotor + Stator Sets",
+        description:
+          "Rotor and stator knives wear to different geometries. Fitting a new rotor knife against a worn stator leaves the gap uneven and loads the new blade alone — it dulls in a fraction of its rated life. We quote and ship them as sets.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Knife Type",
+      col1: "Length (mm)",
+      col2: "Width (mm)",
+      col3: "Thickness (mm)",
+      caption:
+        "* Representative envelope sizes across common compactor platforms. Every blade is manufactured to the OEM drawing or reverse-engineered from your sample — send the machine model and a photograph of the worn blade for an exact quotation.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Rotor knife (movable)",
+        od: "150 – 250",
+        bolt: "40 – 60",
+        thickness: "8 – 12",
+      },
+      {
+        spec: "Rotor knife (movable)",
+        od: "250 – 400",
+        bolt: "60 – 80",
+        thickness: "12 – 20",
+      },
+      {
+        spec: "Stator knife (fixed)",
+        od: "120 – 220",
+        bolt: "40 – 60",
+        thickness: "10 – 16",
+      },
+      {
+        spec: "Stator knife (fixed)",
+        od: "220 – 350",
+        bolt: "60 – 80",
+        thickness: "16 – 25",
+      },
+      {
+        spec: "Pre-cutter / feed blade",
+        od: "80 – 160",
+        bolt: "30 – 50",
+        thickness: "8 – 14",
+      },
+      {
+        spec: "Knife holder block",
+        od: "60 – 120",
+        bolt: "50 – 90",
+        thickness: "20 – 40",
+      },
+    ],
+
+    relatedBladeIds: [
+      "continuous-melt-filter-scraper-blades",
+      "granulator-blades",
+      "strand-pelletizer-rotors",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 560,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "What cutting gap should I set between the rotor and stator knives?",
+          answer:
+            "Use the figure in your machine manual — it is machine- and material-specific, and typically falls somewhere in the 0.2–0.5 mm range. The more useful question is whether the gap stays where you set it. If the blade mounting face is not flat, or if you have fitted a new rotor knife against a worn stator, the gap will vary along the cutting length regardless of how carefully it was dialled in. Set the gap with feeler gauges at both ends and the centre of the blade, not at a single point, and re-check it after the first few hours of running once everything has seated and reached working temperature.",
+        },
+        {
+          question:
+            "My compactor is running hot and the output is lumpy instead of a uniform crumb. What's wrong?",
+          answer:
+            "That is the classic signature of an over-wide cutting gap, usually from worn blades. When the gap opens, material is kneaded rather than cut, so frictional heat rises past the intended window, film smears into lumps, and bulk density becomes erratic — which the extruder sees as a fluctuating feed. You will typically also see power consumption up and throughput down at the same time. Check the gap and the blade edges before adjusting temperature setpoints or feed rate, because those are compensations for the real problem rather than fixes.",
+        },
+        {
+          question:
+            "Can I replace only the rotor knives and keep the stator knives?",
+          answer:
+            "You can, but it is usually a false economy. The two wear to different geometries — the rotor knife loses its edge while the stator tends to wear a radius and hollow where the material stream concentrates. A new rotor knife running against a worn stator carries the entire cutting load across an uneven gap and will dull far faster than its rated life, so you end up back at the same shutdown sooner. Replacing both together costs more per changeover and less per tonne processed.",
+        },
+        {
+          question:
+            "How do I choose between D2, M2 HSS and carbide-tipped blades?",
+          answer:
+            "Match the alloy to your feedstock. D2 at HRC 58–61 is the economical default for clean LDPE, LLDPE and PP film, woven bags and pre-consumer scrap. Move to M2 HSS at HRC 62–64 for PET flake and for printed or dusty post-consumer film — M2 holds its edge at the elevated temperature inside a working compactor, where D2 starts to soften. Reserve carbide-tipped blades for glass-fibre reinforced compounds, mineral-filled material and high-ash streams; they last dramatically longer on those feeds but cost more and tolerate impact less well, so they are the wrong choice if your feed contains occasional metal.",
+        },
+        {
+          question:
+            "How many times can a cutter compactor blade be re-sharpened?",
+          answer:
+            "Three to five regrinds is typical for D2 and M2 blades before the blade reaches its minimum usable height and the gap can no longer be adjusted to compensate. Each regrind removes material from the cutting face, so the blade sits progressively lower in its holder — most machines allow this to be taken up with shims up to a point. Carbide-tipped blades are re-ground on the carbide only and generally allow fewer cycles. We mark the minimum height on the manufacturing drawing so your maintenance team knows when a blade is finished rather than guessing.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Can you make blades for my compactor without an OEM drawing?",
+          answer:
+            "Yes — this is the majority of what we do on this product. Send the machine make and model plus a worn blade, or clear photographs with measurements across length, width, thickness and the mounting hole positions. We produce a manufacturing drawing for your written approval before cutting steel, and we keep it on file so repeat orders need no re-measurement.",
+        },
+        {
+          question: "What is the lead time, and can I trial a set first?",
+          answer:
+            "Blades manufactured to an existing drawing ship in 10–15 working days. First-time reverse-engineered blades add roughly 3–5 days for drawing and approval. We supply trial sets for machine-fit verification and edge-life testing before you commit to a production quantity — for custom profiles we produce a dimensional sign-off sample first, so there is no tooling commitment until fit is confirmed.",
+        },
+        {
+          question: "What documentation comes with the blades?",
+          answer:
+            "Each shipment includes a Rockwell hardness test certificate, a dimensional inspection record against the approved drawing, a steel mill material traceability certificate and a heat treatment batch record. Full CMM dimensional reports are available on request for OEM qualification.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Die Face Cutting Knives & Underwater Pelletizer Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "die-face-cutting-knives",
+    name: "Die Face Cutting Knives & Pelletizer Blades",
+    fullName: "Die Face Cutting Knives & Pelletizer Blades",
+    category: "granulator_blades",
+    sector: "recycling",
+    categoryDisplay: "Die Face Cutting Knives",
+    image:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+    badge: "Die-Safe",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+    ],
+    galleryAlts: [
+      "Range of die face cutting knife profiles — straight, forked, stepped and tapered geometries",
+      "Twelve die face cutter knife profiles showing slotted and forked mounting patterns",
+      "Eight underwater pelletizer blade profiles laid out for dimensional inspection",
+      "Close-up of a single die face cutting knife showing the ground cutting edge and twin mounting slots",
+      "Pair of die face cutting knives on a white background showing slot geometry and edge finish",
+    ],
+
+    description:
+      "Die face cutting knives for underwater, water-ring and hot die face pelletizers, ground softer than your die plate. Fits Gala, Nordson BKG, Maag, ECON.",
+
+    fullDescription:
+      "A die face cutting knife — also sold as an underwater pelletizer blade, die face cutter knife, hot die face knife or UWP knife — is a consumable running in permanent sliding contact with a die plate worth tens of thousands of dollars. That asymmetry defines the entire specification problem: the blade must be hard enough to hold a cutting edge against hot polymer, and deliberately softer than the die face it rides on, so that wear is absorbed by the part you intend to replace.\n\nThis is the same controlled-wear logic Sureay applies to continuous melt filter scraper blades, and it is why we quote a hardness differential rather than simply the highest hardness available. A blade harder than the die plate does not last longer — it scores the die face, opens the cutting gap, and turns a routine blade change into a die refurbishment.\n\n## Three Pelletizing Methods, Three Different Blades\n\n**Underwater pelletizing (UWP).** The die face is fully submerged in a temperature-controlled water box. Pellets are cut directly at the die face and carried away as a slurry. Blades run wet and warm, which makes corrosion resistance a genuine selection factor — 440C stainless earns its place here despite lower edge retention than tool steel.\n\n**Water-ring pelletizing.** An annular water curtain cools pellets after they are cut, but the die face itself runs in air. Thermal cycling on the blade edge is more severe than in true underwater cutting, favouring tougher grades over the hardest ones.\n\n**Hot die face pelletizing.** Cutting happens dry against a heated die, with pellets conveyed away by air. The highest edge temperature of the three methods, and the strongest case for PM-HSS or carbide.\n\n## Blade Geometry\n\nEdge form is chosen from polymer viscosity and the pellet shape you want:\n\n- **45° bevel** — the general-purpose geometry. Good balance of edge strength and cutting sharpness across commodity polyolefins.\n- **90° square edge** — maximum edge strength for stiff, filled or highly abrasive compounds where a fine bevel would chip.\n- **Stepped bevel** — a two-stage relief that keeps a sharp cutting line while leaving a robust land behind it. Used where a fine edge is needed but blade life on a 45° would be unacceptable.\n- **Curved / hooked** — draws the melt strand into the cut rather than pushing it away. Suited to low-viscosity and tacky polymers that smear against a straight edge.\n\n## Why Thickness Consistency Within a Set Decides Blade Life\n\nA pelletizer runs a full set of blades on one cutter hub, held against the die face by a common preload. If the blades in that set vary in thickness, the thickest blades carry a disproportionate share of the contact pressure while the thinnest barely touch. The result is a set that wears unevenly, a cut quality that degrades long before the average blade is worn out, and localized die face scoring under the high blades.\n\nWe grind blades in matched sets and verify thickness consistency across the set on a CMM, rather than inspecting to a per-piece tolerance alone. Flatness matters for the same reason: a blade that is not flat contacts the die on an edge rather than across its land.\n\n## Material Selection\n\n**D2 (1.2379)** — economical general-purpose grade for clean commodity polyolefins.\n**M2 HSS (1.3343)** — better hot hardness for higher-temperature and engineering polymers.\n**T42 (1.3207)** — high-tungsten HSS for sustained elevated-temperature cutting.\n**PM powder-metallurgy HSS** — uniform fine carbide structure, the best combination of edge retention and toughness for abrasive and filled compounds.\n**440C stainless** — for underwater service where corrosion resistance outweighs peak edge life, particularly on lines that sit idle between campaigns.\n**Tungsten carbide** — maximum life on glass-filled and mineral-filled compounds, where its brittleness is an acceptable trade.\n\n## Machine Compatibility\n\nBlades are manufactured to suit Gala, Nordson BKG (including AH series), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec and WRP pelletizing systems. Send the machine model with a sample blade or a photograph with measurements, and we will produce a drawing for approval. Cutter hubs, die plates, threaded rods, blade screws and O-rings are supplied alongside the blades.",
+
+    disambiguation:
+      "Cutting extruded strands in air rather than at the die face? See [Strand Pelletizer Rotors](/products/strand-pelletizer-rotors) for helical rotor and bed knife sets.",
+    link: "/products/die-face-cutting-knives",
+    isFeatured: true,
+
+    compatibleMachines: [
+      "Gala",
+      "Nordson BKG",
+      "Maag",
+      "ECON",
+      "Coperion",
+      "Starlinger",
+      "NGR",
+      "Tecnova",
+      "IPS",
+      "Filtec",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
+      },
+      {
+        label: "Hardness Differential",
+        value: "Blade held below die plate hardness (controlled wear)",
+      },
+      {
+        label: "Edge Geometry",
+        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
+      },
+      {
+        label: "Thickness Consistency",
+        value: "≤ 0.01 mm variation within a matched set",
+      },
+      { label: "Flatness", value: "≤ 0.01 mm" },
+      {
+        label: "Pelletizing Methods",
+        value: "Underwater · Water-ring · Hot die face",
+      },
+      {
+        label: "Supply Format",
+        value: "Matched sets, CMM-verified; hubs and die plates available",
+      },
+      {
+        label: "OEM Fitment",
+        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
+      },
+    ],
+
+    componentsIntro:
+      "The die plate is the asset; the blade is the consumable. Everything below follows from keeping that relationship the right way round.",
+
+    components: [
+      {
+        id: "die-plate-protection",
+        tag: "CONTROLLED WEAR",
+        title: "Your Die Plate Outlives the Blade",
+        description:
+          "Blade hardness is specified below the die face hardness so the consumable absorbs the wear. A blade harder than the die does not last longer — it scores the die face, opens the cutting gap and turns a blade change into a die refurbishment.",
+      },
+      {
+        id: "matched-set-grinding",
+        tag: "PRECISION",
+        title: "Ground and Verified as a Matched Set",
+        description:
+          "Thickness consistency within ≤0.01 mm across the set, CMM-verified. A full set shares one preload against the die: thick blades take the load and score the die, thin ones never cut. Per-piece tolerance alone does not prevent this.",
+      },
+      {
+        id: "geometry-by-polymer",
+        tag: "GEOMETRY",
+        title: "Edge Form Chosen From Your Polymer",
+        description:
+          "45° for commodity polyolefins, 90° for filled and abrasive compounds, stepped bevel where a fine edge is needed but must survive, hooked for low-viscosity and tacky melts that smear against a straight edge.",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Blade Profile",
+      col1: "Length × Width (mm)",
+      col2: "Thickness (mm)",
+      col3: "Mounting",
+      caption:
+        "* Representative geometries from blades currently in production. Underwater pelletizer blades are made to the specific cutter hub — send the machine model with a sample blade or a dimensioned photograph for an exact quotation.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Straight, twin slot",
+        od: "45 × 25",
+        bolt: "3 – 6",
+        thickness: "2 × Ø5.5 slots",
+      },
+      {
+        spec: "Straight, twin slot",
+        od: "60 × 30",
+        bolt: "3 – 6",
+        thickness: "2 × R3.5 slots",
+      },
+      {
+        spec: "Straight, wide body",
+        od: "60 × 46",
+        bolt: "4 – 8",
+        thickness: "2 × R3.5, R5 relief",
+      },
+      {
+        spec: "Forked, triple slot",
+        od: "55 × 34",
+        bolt: "3 – 6",
+        thickness: "3 × R3.5 slots",
+      },
+      {
+        spec: "Stepped / shouldered",
+        od: "60 × 35",
+        bolt: "4 – 8",
+        thickness: "2 slots, 129° flank",
+      },
+      {
+        spec: "Tapered / hooked",
+        od: "70 × 60",
+        bolt: "4 – 8",
+        thickness: "63° flank",
+      },
+    ],
+
+    drawings: {
+      intro:
+        "Most pelletizer blade orders reach us without an OEM drawing — a customer sends a worn blade, or a photograph and a machine model. The geometries below are drawings we produced that way, from measurement to approved manufacturing print. They show the range of body shapes, slot patterns and flank angles we hold in production, and what your own blade would look like once reverse-engineered.",
+      items: [
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-00.webp",
+          caption: "Straight body, twin slot — 45 × 25 mm, Ø5.5 slots",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-01.webp",
+          caption: "Forked, three open slots — 55 × 34 mm, R3.5",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-02.webp",
+          caption: "Straight body, twin slot — 60 × 28 mm, 15 mm pitch",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-03.webp",
+          caption: "Straight body, twin slot — 60 × 30 mm, R3.5",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-04.webp",
+          caption: "Straight body, long slot — 60 × 34 mm, R3.3",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-05.webp",
+          caption: "Stepped shoulder, 129° flank — 60 × 35 mm",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-06.webp",
+          caption: "Wide body, radiused heel — 60 × 46 mm, 2 × R5",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-07.webp",
+          caption: "Wide body, offset slots — 60 × 46 mm, 2 × R5",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-08.webp",
+          caption: "Wide body, centred slots — 60 × 46 mm, 16 mm pitch",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-09.webp",
+          caption: "Tall body, twin slot — 69 × 34 mm, Ø7 slots",
+        },
+        {
+          image:
+            "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-10.webp",
+          caption: "Tapered neck, 63° flanks — 70 mm, 60 → 25 mm",
+        },
+      ],
+    },
+
+    relatedBladeIds: [
+      "strand-pelletizer-rotors",
+      "continuous-melt-filter-scraper-blades",
+      "cutter-compactor-blades",
+    ],
+    offers: {
+      lowPrice: 18,
+      highPrice: 320,
+    },
+
+    faqs: {
+      technical: [
+        {
+          question: "Will your blades damage my die plate?",
+          answer:
+            "Not if the hardness relationship is specified correctly, and that is the first thing we establish on any enquiry. The blade is deliberately held below the hardness of the die face so wear is absorbed by the consumable. A blade harder than the die plate does not give you longer life — it scores the die face, which opens the cutting gap, degrades pellet quality and eventually requires the die to be re-ground or replaced. Tell us the die plate material and hardness, or the machine model if you do not have it, and we specify the blade against it. Every shipment carries a hardness certificate so you can verify the relationship before the blades go on.",
+        },
+        {
+          question:
+            "Why does one blade in my set wear out much faster than the others?",
+          answer:
+            "Almost always uneven thickness within the set. A full set of blades shares one preload against the die face, so if thickness varies from blade to blade the thickest ones carry a disproportionate share of the contact pressure — they wear rapidly and score the die, while the thinnest blades barely make contact and never cut properly. The set fails long before the average blade is worn out. This is why we grind blades in matched sets and CMM-verify thickness consistency across the set to within 0.01 mm, rather than inspecting each blade to a tolerance in isolation.",
+        },
+        {
+          question:
+            "Which edge geometry should I use — 45°, 90°, stepped or hooked?",
+          answer:
+            "Choose from polymer viscosity and filler content. A 45° bevel is the general-purpose geometry and the right default for commodity polyolefins. Move to a 90° square edge for stiff, mineral-filled or highly abrasive compounds where a fine bevel would chip. A stepped bevel gives you a sharp cutting line with a robust land behind it, for cases where you need the fine edge but a plain 45° will not survive. Curved or hooked geometry draws the melt into the cut instead of pushing it away, which is what you want on low-viscosity or tacky polymers that smear against a straight edge.",
+        },
+        {
+          question:
+            "Should I use stainless steel blades for underwater pelletizing?",
+          answer:
+            "440C stainless is worth specifying when corrosion is a real operating factor — particularly on lines that sit idle between campaigns, where a tool steel blade can develop surface rust in the water box that then scores the die on restart. The trade-off is edge retention: 440C will not hold an edge as long as M2 or PM-HSS at the same duty. If your line runs continuously and the water chemistry is controlled, tool steel or PM-HSS usually gives better cost per tonne. If it stops and starts, or the water box is not drained, the stainless option often pays for itself.",
+        },
+        {
+          question:
+            "How do underwater, water-ring and hot die face blades differ?",
+          answer:
+            "They differ mainly in the thermal and corrosive environment at the edge. Underwater blades run submerged and warm, so corrosion resistance is a genuine selection factor. Water-ring blades cut at a die face running in air with the water curtain downstream, which subjects the edge to more severe thermal cycling and favours tougher grades over the hardest ones. Hot die face blades cut dry against a heated die and see the highest edge temperature of the three, which is where PM-HSS and carbide earn their premium. Tell us which method your line uses — it changes the recommended grade even when the blade dimensions are identical.",
+        },
+        {
+          question:
+            "Do you supply cutter hubs and die plates as well as blades?",
+          answer:
+            "Yes. Cutter hubs, die plates, threaded rods, blade fixing screws and O-rings are all available, and ordering the wear set together avoids the mismatch that causes uneven blade loading. If you are replacing a hub as well as blades, we recommend supplying them together so the blade seating faces and the hub are verified against each other before shipment.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "Can you reverse-engineer blades from a sample without an OEM drawing?",
+          answer:
+            "Yes, and it is how most pelletizer blade orders begin. Send a sample blade — ideally an unworn one, or a worn one together with the machine model — and we produce a full dimensional drawing on our CMM for your approval before manufacture. We keep the approved drawing on file so repeat orders require no re-measurement. Your drawings and samples remain your intellectual property and are never shared.",
+        },
+        {
+          question: "What is the lead time, and can I run a trial set first?",
+          answer:
+            "Blades made to an existing approved drawing ship in 10–15 working days; first-time reverse-engineered sets add roughly 3–5 days for measurement, drawing and approval. We supply trial sets for fit verification and edge-life comparison against your current supplier before you commit to a production quantity.",
+        },
+        {
+          question: "What documentation ships with a pelletizer blade set?",
+          answer:
+            "Every set includes a Rockwell hardness certificate — the document that lets you verify the blade-to-die hardness relationship before installation — plus a CMM dimensional report covering thickness consistency across the set, a steel mill material traceability certificate and a heat treatment batch record.",
         },
       ],
     },

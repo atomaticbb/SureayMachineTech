@@ -28,6 +28,7 @@ import BladeHero from "@/components/product-detail/BladeHero";
 import DecisiveSpecs from "@/components/product-detail/DecisiveSpecs";
 import SteelGradeTable from "@/components/product-detail/SteelGradeTable";
 import TechnicalAudit from "@/components/product-detail/TechnicalAudit";
+import ProductDrawings from "@/components/product-detail/ProductDrawings";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
@@ -157,6 +158,11 @@ export default function ProductDetail() {
             {/* Zone 4 — Technical Audit Log */}
             <div className="-mx-4 sm:-mx-8 pt-8">
               <TechnicalAudit blade={blade} />
+            </div>
+
+            {/* Zone 4b — Engineering drawings (renders only when present) */}
+            <div className="-mx-4 sm:-mx-8 pt-8">
+              <ProductDrawings blade={blade} />
             </div>
           </div>
         </div>
