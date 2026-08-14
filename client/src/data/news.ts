@@ -91,6 +91,179 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "how-to-spec-die-face-cutting-knives",
+    tag: "TECHNICAL GUIDE",
+    date: "14.AUG.2026",
+    title:
+      "How to Spec Die Face Cutting Knives & Pelletizer Blades: Method, Material, Geometry — In That Order",
+    excerpt:
+      "Most pelletizer blade RFQs open with a steel grade. That's the wrong end of the problem — the pelletizing method decides which grades are even candidates. Here's the order that actually works.",
+    image: "/images/news/how-to-spec-die-face-cutting-knives-cover.webp",
+    readTime: "4 MIN",
+    seoTitle:
+      "How to Spec Die Face Cutting Knives & Pelletizer Blades | Sureay",
+    metaDescription:
+      "How to specify die face cutting knives and pelletizer blades in the right order: confirm the pelletizing method, then the material, then the edge geometry.",
+    keywords:
+      "die face cutting knives, pelletizer blades, underwater pelletizer blades, hot die face knives, pelletizer blade material, pelletizer blade geometry",
+    relatedProductIds: ["die-face-cutting-knives", "strand-pelletizer-rotors"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "An RFQ lands on your desk for pelletizer blades. No OEM drawing, no part number, just \"we need blades for our line.\" Most buyers start by picking a steel grade because that's the spec they're used to thinking about first. That's backwards. Get the pelletizing method wrong and the best steel grade in the world won't save you — the blade will corrode, glaze, or dull for reasons that have nothing to do with hardness.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Here's the order that actually works, and what to check at each step.",
+      },
+      {
+        type: "h2",
+        value: "Step 1: Confirm the Pelletizing Method",
+      },
+      {
+        type: "paragraph",
+        value:
+          "[Die face cutting knives](/products/die-face-cutting-knives) split into three families, and the method your line uses drives everything downstream.",
+      },
+      {
+        type: "image",
+        value: "/images/news/three-pelletizing-methods-compared.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Underwater pelletizing (UWP) cuts pellets directly at a die face submerged in a temperature-controlled water box, carrying them away as a slurry. The blade runs wet and warm continuously, which makes corrosion resistance a real factor, not a nice-to-have.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Water-ring pelletizing cuts in air, with an annular water curtain cooling pellets downstream of the die. The blade itself sees more severe thermal cycling than true UWP, because it's heating and cooling in open air rather than staying wet.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Hot die face pelletizing cuts dry against a heated die, pellets conveyed away by air. This is the hottest edge temperature of the three, and it's where the highest-spec materials earn their keep.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "One thing worth ruling out before you go further: if the line shears extruded strand in open air rather than cutting at the die itself, you're not in die-face territory at all — that's a [strand pelletizer rotor](/products/strand-pelletizer-rotors), a completely different geometry and wear profile.",
+      },
+      {
+        type: "h2",
+        value: "Step 2: Pick the Material for the Method and the Polymer",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Once the method is confirmed, material selection stops being a guess.",
+      },
+      {
+        type: "image",
+        value: "/images/news/die-face-cutting-knife-size-range.webp",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Blade Material", "Where It Earns Its Place"],
+        tableRows: [
+          [
+            "D2 tool steel",
+            "The economical default for clean, non-abrasive commodity polyolefins. Fine if the feedstock is virgin resin with no filler.",
+          ],
+          [
+            "M2 HSS",
+            "Steps up hot hardness for higher-temperature runs and engineering polymers where D2 starts to soften.",
+          ],
+          [
+            "T42 high-tungsten HSS",
+            "For sustained elevated-temperature cutting, typically hot die face applications running long campaigns.",
+          ],
+          [
+            "PM powder-metallurgy HSS",
+            "The best combination of edge retention and toughness for abrasive or filled compounds; the fine, uniform carbide structure resists the micro-chipping that ordinary HSS suffers on glass- or mineral-filled resin.",
+          ],
+          [
+            "440C stainless",
+            "Underwater service, where corrosion resistance during idle time between campaigns outweighs the edge-life advantage of tool steel.",
+          ],
+          [
+            "Tungsten carbide",
+            "Maximum life on heavily glass- or mineral-filled compounds, accepting brittleness as the trade-off for wear resistance no HSS grade can match.",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "The blade is always specified below the die plate's hardness, regardless of which grade you land on. That's intentional: wear needs to land on the consumable, not the die. A blade that's harder than the die doesn't outlast it — it scores the die face and turns a routine blade change into a die refurbishment.",
+      },
+      {
+        type: "h2",
+        value: "Step 3: Choose the Edge Geometry",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Geometry is decided by polymer viscosity and the pellet shape you're targeting, not by habit.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Edge Geometry", "When to Specify It"],
+        tableRows: [
+          [
+            "45° bevel",
+            "The general-purpose choice — a solid balance of edge strength and sharpness across commodity polyolefins.",
+          ],
+          [
+            "90° square edge",
+            "Trades sharpness for strength. Specified for stiff or highly abrasive filled compounds where a fine bevel would chip on contact.",
+          ],
+          [
+            "Stepped bevel",
+            "Keeps a sharp cutting line while leaving a robust land behind it. Used where a fine edge is needed but a straight 45° wouldn't survive.",
+          ],
+          [
+            "Curved or hooked",
+            "Draws the melt strand into the cut instead of pushing it away, which matters on low-viscosity or tacky polymers that smear against a straight edge.",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "Ordering Without a Drawing",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Most pelletizer blade orders start exactly where this article did — no drawing on file. Send the machine model, or a worn blade with a photograph and rough measurements, and a manufacturer with reverse-engineering capability produces a dimensional drawing for approval before cutting steel.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-05.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Ask for a hardness certificate with the shipment so you can verify the blade-to-die relationship independently, and specify that the set be CMM-verified for thickness consistency, not just inspected piece by piece — a full set shares one preload against the die, and even a correctly specified blade wears unevenly if its neighbours in the set don't match it.",
+      },
+      {
+        type: "callout",
+        value:
+          "Working through a pelletizer blade RFQ without an OEM drawing? Send us the machine model and a worn sample or photograph, and our engineers will confirm the method, material and geometry in writing before production starts. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "guillotine-shear-blade-parallelism",
     tag: "TECHNICAL GUIDE",
     date: "10.AUG.2026",
