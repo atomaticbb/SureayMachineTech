@@ -264,6 +264,154 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
+    id: "nonwoven-slitter-knife-contamination-adhesive-static",
+    tag: "TECHNICAL GUIDE",
+    date: "20.AUG.2026", // CONFIRM actual publish date with Yu before deploy — placeholder
+    title:
+      "Nonwoven Slitter Knife Contamination: Adhesive Buildup vs. Static — What's Actually Shortening Your Change Interval",
+    excerpt:
+      "Most maintenance teams blame wear when a slitter knife fouls early. Pull the blade and look closely: it's usually one of two very different contamination mechanisms, and each needs a different fix.",
+    image: "/images/news/nonwoven-slitter-knife-contamination-cover.webp",
+    readTime: "5 MIN",
+    seoTitle:
+      "Nonwoven Slitter Knife Contamination: Adhesive vs. Static | Sureay",
+    metaDescription:
+      "Nonwoven slitter knife blade-face contamination has two causes — hot-melt adhesive on hygiene lines and electrostatic fiber transfer on meltblown/filtration media. How to tell them apart and fix each.",
+    keywords:
+      "nonwoven slitting blades, nonwoven slitter, nonwoven slitter knife contamination, ESD conductive coating, meltblown slitter knife, hygiene line slitter knife adhesive",
+    relatedProductIds: ["nonwoven-slitter-knives"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Most maintenance teams change nonwoven slitter knives on a fixed schedule and blame wear when quality drops before that schedule is up. But pull a knife off a hygiene-product line early and look at the edge under magnification, and it's rarely a clean wear bevel. It's usually a thin film of residue on the cutting face — and what that residue actually is changes which fix works.",
+      },
+      {
+        type: "h2",
+        value: "Two Different Contamination Mechanisms, Two Different Fixes",
+      },
+      {
+        type: "paragraph",
+        value:
+          "There isn't one cause of \"dirty blade face\" on nonwoven lines. There are at least two, and they look similar from arm's length but need opposite solutions.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Adhesive buildup shows up on diaper, wipes, and feminine hygiene lines where hot-melt adhesive is applied upstream of the slitting station. Overspray lands on the web, transfers to the knife edge, and sets there under the heat generated at the cutting point. That buildup doesn't just dull the edge — it changes the effective bevel angle, which increases drag, raises local heat, and accelerates the next round of buildup. It's a feedback loop, not a linear wear curve, and in our field experience it's the reason some adhesive-heavy lines see knife life drop by half compared to a dry web running the same fiber.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Electrostatic fiber transfer is a different mechanism entirely, and it's the more common cause on meltblown and filtration media — particularly layers under 10 GSM. At that fiber diameter (1–5 μm for PP meltblown), electrostatic charge builds on the blade face and pulls fiber onto it, independent of edge geometry or sharpness. This isn't a wear problem or an adhesive problem — it's a grounding problem, and no amount of resharpening or degreasing fixes it if the machine frame itself isn't properly earthed.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Telling the two apart before you order anything is the highest-leverage five minutes in this whole process.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Check", "Adhesive Buildup", "Static Fiber Transfer"],
+        tableRows: [
+          [
+            "Feel",
+            "Tacky, often visible sheen under raking light",
+            "Loose fluff, no tack",
+          ],
+          [
+            "Where it happens",
+            "Hygiene lines with an upstream gluing station",
+            "Meltblown/filtration media under ~10 GSM",
+          ],
+          [
+            "Onset pattern",
+            "Worsens gradually across a shift as residue accumulates",
+            "Can appear within minutes of startup, especially in low humidity",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "What Actually Helps for Each",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For adhesive contamination, the fix is mostly upstream: check gluing nozzle alignment and station cleanliness before assuming the blade batch is the problem. If your changeout interval has drifted shorter over the past few months with no process change on your end, that's the first place to look — not the steel.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For electrostatic fiber transfer, coating is the direct fix. An ESD conductive coating on the blade face dissipates the charge instead of letting it accumulate, and pairing it with a properly earthed machine frame typically clears visible blade-face contamination within one production shift. It's worth specifying on any meltblown or sub-10 GSM filtration line even before you see contamination, since the failure mode is predictable from the fiber weight alone.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "One caution worth building into your order process either way: any coating applied to a single-bevel razor edge needs to be evaluated on the actual edge geometry, not assumed to transfer cleanly from a spec sheet. Ask for a sample knife before committing a full production run — it's a five-minute check that avoids a coating that doesn't hold on your specific bevel prep.",
+      },
+      {
+        type: "image",
+        value: "/images/news/nonwoven-slitter-knife-line-context.webp",
+      },
+      {
+        type: "h2",
+        value: "Edge Geometry Still Matters, Separately From Contamination",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Rake angle is tuned to basis weight and line speed, not to contamination type. Spunbond PP at 200 m/min in the 15–80 GSM range runs cleanest with a 15° positive rake; heavier basis weights (80–150 GSM SSS or SMMS) do better with a 20° positive rake and a slightly wider bevel, typically at a somewhat reduced line speed. Getting this wrong shows up as fraying or lateral fiber displacement — a genuine wear-and-geometry issue, distinct from either contamination mechanism above, and worth ruling out separately if cut quality is dropping without any visible residue on the blade.",
+      },
+      {
+        type: "h2",
+        value: "What to Actually Track",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Don't wait for visible fouling. Track cut width variance on the finished roll against a known-good baseline — both adhesive buildup and static transfer show up there as gradual edge-width creep before they show up as a visibly dirty blade or a ragged cut. On medical or hygiene lines where traceability matters, log which knife batch, coating, and shift ran together; it turns \"the knives seem to be wearing faster lately\" into a pattern you can actually act on instead of a guess.",
+      },
+      {
+        type: "h2",
+        value: "Nonwoven Slitter Knife Contamination FAQ",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question: "Is my contamination adhesive or static?",
+            answer:
+              "Run the wipe test: tacky residue with visible sheen is adhesive, loose fluff with no tack is static fiber transfer. Application context is usually enough on its own — a glue station upstream points to adhesive, sub-10 GSM meltblown or filtration media with no glue station points to static.",
+          },
+          {
+            question: "Do I need ESD coating on every nonwoven line?",
+            answer:
+              "No. It's specifically for meltblown and filtration media under roughly 10 GSM, where static transfer is close to guaranteed by the fiber diameter alone. Dry spunbond or heavier laminate lines generally don't need it.",
+          },
+          {
+            question: "What rake angle should I run?",
+            answer:
+              "15° positive rake for spunbond PP at 200 m/min, 15–80 GSM. Step up to 20° with a wider bevel for heavier 80–150 GSM SSS/SMMS laminates, typically at reduced line speed.",
+          },
+          {
+            question:
+              "Will grounding the machine frame fix static transfer on its own?",
+            answer:
+              "It helps, but pairing proper earthing with an ESD conductive coating on the blade face is what reliably clears the contamination — earthing alone is often not sufficient at sub-10 GSM fiber diameters.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "That residue film isn't a mystery once you know which of the two mechanisms produced it — and the fix for one does almost nothing for the other. Tell us your gluing station setup, or your basis weight if it's a meltblown or filtration line — either detail changes our [nonwoven slitter knives](/products/nonwoven-slitter-knives) recommendation more than the fiber type alone ever will. We're glad to start with a sample knife rather than a full order. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "guillotine-shear-blade-parallelism",
     tag: "TECHNICAL GUIDE",
     date: "10.AUG.2026",
