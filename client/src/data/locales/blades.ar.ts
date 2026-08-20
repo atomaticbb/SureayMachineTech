@@ -19,8 +19,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
-      "/images/products/rotary-slitter-knives/side-trimmers.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
@@ -238,7 +236,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/paper-slitter-knife-selection-hero.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
@@ -476,7 +473,6 @@ export const blades: Blade[] = [
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/coil-slitting-line.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
@@ -647,7 +643,6 @@ export const blades: Blade[] = [
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
-      "/images/products/shredder-blades/5-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
@@ -873,8 +868,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-04.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
@@ -1042,8 +1035,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -1199,8 +1190,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
       "/images/products/blades/tissue-log-saw-blades-real-03.webp",
       "/images/products/blades/tissue-log-saw-blades-real-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
@@ -1209,13 +1198,11 @@ export const blades: Blade[] = [
       "كومة من شفرات منشار سجل الأنسجة النهائية في صندوق خشبي في Sureay",
       "شفرة منشار سجل الأنسجة معبأة في صندوق خشبي مع واقي حافة قبل الشحن",
       "شفرة منشار دائرية لسجل الأنسجة Ø610 مم D2، وجه مصقول كالمرآة مع ثقوب دبابيس القيادة",
-      "رسم فني لسكين دائري لشفرة منشار سجل الأنسجة، فولاذ D2",
-      "تصميم لشفرتين منشار دائريتين لسجل الأنسجة يوضح نمط ثقوب دبابيس القيادة المتطابق",
       "تجويف Ø68.26 مم ونمط ثقوب دبابيس القيادة لمناشير سجل Fabio Perini",
       "وجه شفرة منشار سجل الأنسجة يظهر التشطيب المصقول كالمرآة تحت إضاءة الورشة",
     ],
     description:
-      "شفرات منشار قطع الأنسجة Ø610–Ø1000mm — D2/Cr12MoV المقوية بالفراغ (HRC 58–60)، أرضية دقيقة إلى ≥0.15 مم للقطع العرضي بدون تمايل. يزيل النوى المكسرة والغبار الورقي على الأنسجة ومنشفة المطبخ وخطوط JRT. متوافق مع شحذ CBN في الخط. OEM مناسب لـ Fabio Perini و PCMC و Casmatic و Gambini و Bretting. أقطار مخصصة في 10 أيام عمل.",
+      "شفرات منشار قطع الأنسجة Ø610–Ø1200mm — D2/Cr12MoV المقوية بالفراغ (HRC 58–60)، أرضية دقيقة إلى ≥0.15 مم للقطع العرضي بدون تمايل. يزيل النوى المكسرة والغبار الورقي على الأنسجة ومنشفة المطبخ وخطوط JRT. متوافق مع شحذ CBN في الخط. OEM مناسب لـ Fabio Perini و PCMC و Casmatic و Gambini و Bretting. أقطار مخصصة في 10 أيام عمل.",
     fullDescription:
       "تعتبر عملية القطع العرضي للأنسجة هي عملية القطع الأكثر خطورة في خط تحويل الأنسجة. ينتشر عيب الأبعاد في هذه المرحلة - نوى الورق المقوى المكسرة، أو توليد الغبار الزائد، أو الأوجه المقطوعة بزاوية - على الفور إلى محطات التعبئة والتغليف، مما يؤدي إلى توقف الخطوط ورفض المستهلك.\n\nيتم تصنيع شفرات المنشار من Sureay من الفولاذ الممتاز لأدوات العمل البارد D2 (1.2379) وCr12MoV. ونظرًا لأن هذه الشفرات الضخمة (التي يصل قطرها إلى 1200 ملم) تدور بسرعة دوران قصوى في الدقيقة، فإن الاستقرار هو كل شيء. يتم تقوية كل شفرة بالفراغ، وتسوية التوتر، والأرض الدقيقة وفقًا لتفاوتات الأبعاد الصارمة التي تم التحقق منها على CMM تمت معايرتها قبل الإرسال:\n\n- **النفاذ الجانبي:** ≥0.15 ملم\n- **نفاذ الحافة:** ≥0.10 مم\n- **توازي الوجه:** 0.05 ملم\n- **التركيز (OD إلى التجويف):** ≥0.30 مم\n- **تحمل التجويف:** Ø68.26 مم (+0.05/0.00 مم)\n\n## توافق الشحذ المستمر\n\nعلى عكس السكاكين الدائرية القياسية، يتم شحذ مناشير قطع الأنسجة بشكل مستمر *أثناء* التشغيل بواسطة عجلات طحن CBN (نيتريد البورون المكعب) المتزامنة. تستهدف المعالجة الحرارية لـ Sureay HRC58–60. يضمن نطاق الصلابة المحدد هذا شحذ الشفرة بشكل نظيف ضد أحجار CBN دون تحميلها أو تزجيجها، مما يحافظ على دورة حافة حادة بعد دورة دون استهلاك عجلات الشحذ باهظة الثمن.\n\n## الهندسة المائلة وتقليل الغبار\n\nالأنسجة عبارة عن شبكة منخفضة الكثافة وعالية السطح ذات قوة ضغط تقترب من الصفر. يؤدي قطعها بشطبة شديدة الانحدار إلى حدوث ضغط، مما يؤدي إلى زيادة غبار الورق (خطر الحريق الكبير في خطوط المناشف الملصقة بالرش) وتكثيف الحواف مما يقلل من نعومة اللفة. نحن نستخدم زاوية مائلة ضحلة (15 درجة - 25 درجة) تفصل الألياف عن طريق القص النقي. بالإضافة إلى وجه شفرة مصقول كالمرآة (Ra<0.2μm)، يوفر هذا قطعًا لا تشوبها شائبة على مناديل الحمام الفاخرة المكونة من طبقتين وثلاث طبقات.\n\n## توافق التجويف بواسطة منصة OEM\n\n**قطر 68.26 ملم (+0.05 ملم):** مناشير فابيو بيريني (كل السلسلة)، PCMC Forte/Elite، Körber/MTC.\n\n**قطر 82.55 ملم:** Casmatic (منصات مرخصة من Kimberly-Clark)، وأنظمة مناشير تسجيل OEM إيطالية وإسبانية تابعة لجهات خارجية.\n\n**قطر 60.00 ملم:** مناشير خشبية كبيرة الحجم للمساحات الصناعية، واللفة الضخمة (JRT)، وإنتاج مناديل الحمام بدون قلب (OD 870-1000 ملم).\n\nتم تصنيع OD مخصص من Ø610mm إلى Ø1200mm حسب الطلب خلال مهلة قياسية مدتها 10 أيام عمل. تتوفر مراجعة الرسم وتوقيع الأبعاد على الأدوات من الدرجة الأولى.\n\n## طلاءات الأسطح المتقدمة\n\n**طلاء الكروم الصلب:** يوفر مقاومة للتآكل في بيئات مطحنة الورق عالية الرطوبة (≥75% رطوبة نسبية) ويقلل من معامل التصاق ألياف الأنسجة، مما يزيد من الفاصل الزمني للتشغيل النظيف بين دورات تضميد الشفرات.\n\n**طلاء التيفلون (PTFE):** يخلق سطحًا عالي التشحيم ينزلق عبر جذوع مناشف المطبخ الكثيفة، مما يقلل بشكل كبير من سحب أمبير المحرك ويزيل علامات الحروق على حواف الورق. أعلى المواصفات لخطوط مناشف المطبخ المتميزة المكونة من 3 طبقات.\n\n** طلاء TiN PVD: ** يعمل نيتريد التيتانيوم الترسيب الفيزيائي للبخار (2–3 ميكرومتر، HV2300+) على تمديد الفاصل الزمني للخدمة الحادة في عملية الدورة العالية. يوصى به لماركات الأنسجة المتميزة ذات المواصفات الصارمة للتلوث بالغبار.",
     link: "/products/tissue-log-saw-blades",
@@ -1437,8 +1424,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-      "/images/products/blades/log-saw-blades-001.webp",
-      "/images/products/blades/log-saw-blade-1.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
@@ -1620,8 +1605,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
@@ -1838,8 +1821,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
-      "/images/products/shredder-blades/shredder-blades-00.webp",
-      "/images/products/shredder-blades/single-shredder-blades-03.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
@@ -2045,7 +2026,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-      "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
       "/images/products/shredder-blades/single-shaft-bed-knives-drawing.webp",
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
@@ -2234,8 +2214,6 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2452,8 +2430,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
@@ -2627,8 +2603,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-01.webp",
-      "/images/products/granulator-blades/metal-shear-blades-03.webp",
       "/images/products/granulator-blades/metal-shear-blades-04.webp",
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
@@ -2828,8 +2802,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-04.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
@@ -3064,8 +3036,6 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
@@ -3414,7 +3384,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
@@ -3595,7 +3564,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-10.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
@@ -3760,7 +3728,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/circular-slitter-knives-0514.webp",
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
@@ -4264,8 +4231,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
-      "/images/products/granulator-blades/scrap-blade.webp",
-      "/images/products/granulator-blades/scrap-blade-02.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
@@ -4869,8 +4834,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-02.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
@@ -5111,8 +5074,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
     ],
@@ -5309,7 +5270,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
     ],
@@ -5505,7 +5465,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
@@ -5736,15 +5695,11 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
-      "/images/products/shredder-screens/shredder-screens-00.webp",
-      "/images/products/shredder-screens/shredder-screens-03.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
       "سلة منخل مثقبة نصف دائرية مزودة بشفاه تثبيت، تُظهر نمط الثقوب الدائرية المتعرجة",
-      "سلة منخل مثقبة نصف دائرية لآلة تقطيع بلاستيك أحادية العمود",
-      "سلة منخل كبيرة القطر أثناء الدرفلة والتشكيل في ورشة Sureay",
       "دفعة من سلال المناخل المثقبة جاهزة للشحن للتصدير",
       "رصة من ألواح المناخل المنحنية على منصة نقل، تُظهر نمط الثقوب الدائرية المتعرجة",
     ],
@@ -5970,13 +5925,11 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
       "زوج من السكاكين الثابتة لوحدة الضغط يُظهر الشطف المجلوخ والتثبيت الغاطس",
-      "منظر أمامي لسكين ثابت في وحدة الضغط يُظهر استقامة الحد على كامل الطول",
       "طقم سكاكين وحدة الضغط — سكين الدوار وكتلة حامل السكين والسكين الثابت",
       "سكين دوار طويل لوحدة الضغط بحد قطع مجلوخ وثقب تثبيت مخروط التجويف",
     ],
@@ -6177,15 +6130,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
       "مجموعة من مقاطع سكاكين القطع عند وجه القالب — أشكال مستقيمة ومشعبة ومدرجة ومستدقة",
-      "اثنا عشر مقطعاً لسكاكين القطع عند وجه القالب تُظهر أنماط التثبيت بالمجاري والشوكة",
-      "ثمانية مقاطع لسكاكين التحبيب تحت الماء مصفوفة لفحص الأبعاد",
       "لقطة مقربة لسكين قطع عند وجه القالب تُظهر حد القطع المجلوخ ومجريي التثبيت",
       "زوج من سكاكين القطع عند وجه القالب على خلفية بيضاء يُظهر هندسة المجاري وتشطيب الحد",
     ],

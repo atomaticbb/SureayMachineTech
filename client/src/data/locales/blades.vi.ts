@@ -20,8 +20,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
-      "/images/products/rotary-slitter-knives/side-trimmers.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
@@ -239,7 +237,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/paper-slitter-knife-selection-hero.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
@@ -476,7 +473,6 @@ export const blades: Blade[] = [
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/coil-slitting-line.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
@@ -646,7 +642,6 @@ export const blades: Blade[] = [
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
-      "/images/products/shredder-blades/5-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
@@ -872,8 +867,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-04.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
@@ -1040,8 +1033,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -1197,8 +1188,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
       "/images/products/blades/tissue-log-saw-blades-real-03.webp",
       "/images/products/blades/tissue-log-saw-blades-real-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
@@ -1207,13 +1196,11 @@ export const blades: Blade[] = [
       "Chồng lưỡi cưa tròn cho gỗ tròn từ khăn giấy đã hoàn thiện trong thùng gỗ tại Sureay",
       "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy được đóng gói trong thùng gỗ với miếng bảo vệ cạnh trước khi vận chuyển",
       "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy Ø610mm D2, mặt được đánh bóng như gương với các lỗ chốt truyền động",
-      "Bản vẽ kỹ thuật của dao tròn cho lưỡi cưa gỗ tròn từ khăn giấy, thép D2",
-      "Hình dựng hai lưỡi cưa tròn cho gỗ tròn từ khăn giấy cho thấy mẫu lỗ chốt truyền động khớp nhau",
       "Lỗ khoan Ø68,26mm và mẫu lỗ chốt truyền động cho máy cưa gỗ Fabio Perini",
       "Mặt lưỡi cưa tròn cho gỗ tròn từ khăn giấy cho thấy lớp hoàn thiện đánh bóng như gương dưới ánh sáng xưởng",
     ],
     description:
-      "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–Ø1000mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
+      "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–Ø1200mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
     fullDescription:
       "Cắt ngang mô là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi mô. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.\n\nKhăn giấy Sureay lưỡi cưa tròn cho gỗ tròn được sản xuất từ ​​D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội cao cấp. Bởi vì những lưỡi dao khổng lồ này (lên tới Ø1200mm) quay với tốc độ RPM cực cao nên độ ổn định là trên hết. Mỗi lưỡi dao đều được làm cứng bằng chân không, được cân bằng độ căng và được mài nhỏ đến dung sai kích thước nghiêm ngặt được xác minh trên CMM đã hiệu chuẩn trước khi gửi đi:\n\n- **Độ đảo bên:** ≤0,15mm\n- **Độ đảo cạnh:** ≤0,10mm\n- **Mặt song song:** 0,05mm\n- **Độ đồng tâm (OD đến lỗ khoan):** ≤0,30mm\n- **Dung sai lỗ khoan:** Ø68,26mm (+0,05/0,00mm)\n\n## Khả năng tương thích mài sắc liên tục\n\nKhông giống như dao tròn tiêu chuẩn, máy cưa gỗ được mài sắc liên tục *trong* khi vận hành bằng bánh mài CBN (Cubic Boron Nitride) đồng bộ. xử lý nhiệt của Sureay nhắm tới HRC58–60. Phạm vi độ cứng cụ thể này đảm bảo lưỡi dao mài sạch với đá CBN mà không cần tải hoặc tráng men, duy trì chu kỳ cạnh sắc như dao cạo sau chu kỳ mà không tiêu tốn bánh mài đắt tiền của bạn.\n\n## Hình học góc xiên & Giảm bụi\n\nMô là một mạng lưới có mật độ thấp, diện tích bề mặt cao với cường độ nén gần như bằng không. Cắt nó với góc xiên quá dốc sẽ tạo ra lực nén, dẫn đến có quá nhiều bụi giấy (nguy cơ cháy nổ lớn đối với các dòng khăn được dán bằng keo xịt) và độ đặc của cạnh làm giảm độ mềm của cuộn. Chúng tôi sử dụng góc vát nông (15°–25°) để tách các sợi bằng lực cắt thuần túy. Kết hợp với mặt lưỡi được đánh bóng như gương (Ra<0,2μm), điều này mang lại những đường cắt hoàn hảo trên khăn giấy tắm 2 lớp và 3 lớp cao cấp.\n\n## Khả năng tương thích lỗ khoan của nền tảng OEM\n\n**Ø68,26mm (+0,05mm):** Fabio Perini (tất cả các dòng), máy cưa gỗ PCMC Forte/Elite, Körber/MTC.\n\n**Ø82,55mm:** Casmatic (nền tảng được cấp phép của Kimberly-Clark), hệ thống cưa gỗ OEM của bên thứ ba của Ý và Tây Ban Nha.\n\n**Ø60,00mm:** Máy cưa gỗ khổ lớn dành cho khăn lau công nghiệp, cuộn jumbo (JRT) và sản xuất giấy tắm không lõi (OD 870–1000mm).\n\nOD tùy chỉnh từ Ø610mm đến Ø1200mm được sản xuất theo đơn đặt hàng với thời gian thực hiện tiêu chuẩn là 10 ngày làm việc. Việc xem xét bản vẽ và xác nhận kích thước có sẵn trên công cụ đặt hàng đầu tiên.\n\n## Lớp phủ bề mặt tiên tiến\n\n**Mạ Chrome cứng:** Cung cấp khả năng chống ăn mòn trong môi trường nhà máy giấy có độ ẩm cao (>75% RH) và giảm hệ số bám dính của sợi mô, kéo dài khoảng thời gian chạy sạch giữa các chu kỳ mài lưỡi.\n\n**Lớp phủ Teflon (PTFE):** Tạo ra bề mặt có độ bôi trơn cao lướt qua các cuộn khăn bếp dày đặc, giảm đáng kể lực hút của động cơ và loại bỏ vết cháy trên mép giấy. Thông số kỹ thuật hàng đầu của dòng khăn bếp 3 lớp cao cấp.\n\n**Lớp phủ TiN PVD:** Titan nitrit lắng đọng hơi vật lý (2–3μm, HV2300+) kéo dài thời gian bảo dưỡng sắc bén trong hoạt động chu kỳ cao. Được khuyên dùng cho các nhãn hiệu khăn giấy cao cấp có thông số kỹ thuật nghiêm ngặt về ô nhiễm bụi.",
     link: "/products/tissue-log-saw-blades",
@@ -1437,8 +1424,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-      "/images/products/blades/log-saw-blades-001.webp",
-      "/images/products/blades/log-saw-blade-1.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
@@ -1622,8 +1607,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
@@ -1841,8 +1824,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
-      "/images/products/shredder-blades/shredder-blades-00.webp",
-      "/images/products/shredder-blades/single-shredder-blades-03.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
@@ -2049,7 +2030,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-      "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
       "/images/products/shredder-blades/single-shaft-bed-knives-drawing.webp",
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
@@ -2238,8 +2218,6 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2456,8 +2434,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
@@ -2631,8 +2607,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-01.webp",
-      "/images/products/granulator-blades/metal-shear-blades-03.webp",
       "/images/products/granulator-blades/metal-shear-blades-04.webp",
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
@@ -2831,8 +2805,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-04.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
@@ -3065,8 +3037,6 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
@@ -3416,7 +3386,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
@@ -3598,7 +3567,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-10.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
@@ -3765,7 +3733,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/circular-slitter-knives-0514.webp",
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
@@ -4270,8 +4237,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
-      "/images/products/granulator-blades/scrap-blade.webp",
-      "/images/products/granulator-blades/scrap-blade-02.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
@@ -4878,8 +4843,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-02.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
@@ -5120,8 +5083,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
     ],
@@ -5320,7 +5281,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
     ],
@@ -5517,7 +5477,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
@@ -5747,15 +5706,11 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
-      "/images/products/shredder-screens/shredder-screens-00.webp",
-      "/images/products/shredder-screens/shredder-screens-03.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
       "Giỏ lưới sàng đục lỗ hình bán nguyệt có mặt bích lắp đặt, thể hiện kiểu lỗ tròn so le",
-      "Giỏ lưới sàng đục lỗ hình bán nguyệt cho máy băm nhựa một trục",
-      "Giỏ lưới sàng đường kính lớn đang được cuốn và tạo hình tại xưởng Sureay",
       "Lô giỏ lưới sàng đục lỗ đã chuẩn bị để xuất khẩu",
       "Chồng tấm lưới sàng cong trên pallet, thể hiện kiểu lỗ tròn so le",
     ],
@@ -5984,13 +5939,11 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
       "Cặp dao tĩnh máy nén cắt thể hiện mặt vát đã mài và lỗ bắt vít chìm",
-      "Hình chiếu đứng của dao tĩnh máy nén cắt thể hiện độ thẳng của lưỡi trên toàn chiều dài",
       "Bộ dao máy nén cắt — dao rotor, khối giá kẹp dao và dao tĩnh",
       "Dao rotor dài của máy nén cắt với lưỡi cắt đã mài và lỗ bắt vít khoét bậc",
     ],
@@ -6191,15 +6144,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
       "Dải biên dạng dao cắt mặt khuôn — hình học thẳng, chạc, bậc và thu côn",
-      "Mười hai biên dạng dao cắt mặt khuôn thể hiện các kiểu lắp rãnh và chạc",
-      "Tám biên dạng dao máy tạo hạt dưới nước được bày ra để kiểm tra kích thước",
       "Cận cảnh một con dao cắt mặt khuôn thể hiện lưỡi cắt đã mài và hai rãnh lắp",
       "Cặp dao cắt mặt khuôn trên nền trắng thể hiện hình học rãnh và độ hoàn thiện lưỡi",
     ],

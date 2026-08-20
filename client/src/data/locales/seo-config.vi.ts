@@ -73,8 +73,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "pin dao máy cắt, lưỡi tái chế pin lithium, máy hủy pin EV, xử lý pin Li-ion, băm nhỏ pin"
   },
   "tissue-log-saw-blades": {
-    "title": "Lưỡi cưa gỗ mô | D2 Ø610–1000mm | Chắc chắn rồi",
-    "description": "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–1000mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
+    "title": "Lưỡi cưa gỗ mô | D2 Ø610–1200mm | Chắc chắn rồi",
+    "description": "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–1200mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
     "keywords": "khăn giấy lưỡi cưa tròn cho gỗ tròn, khăn giấy lưỡi cưa tròn cho gỗ tròn, lưỡi cưa tròn cho gỗ tròn, lưỡi cưa giấy, cưa đĩa chuyển đổi, lưỡi cưa D2"
   },
   "granulator-blades": {

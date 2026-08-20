@@ -73,8 +73,8 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "keywords": "batterie lames de broyeur, lames de recyclage de batteries au lithium, broyeur de batteries EV, traitement de batteries Li-ion, pré-broyage de batteries"
   },
   "tissue-log-saw-blades": {
-    "title": "Lames de scie à bûches en tissu | D2 Ø610-1000mm | Sureay",
-    "description": "Tissu lames de scie circulaire pour rondins Ø610-1000mm, D2 HRC 58-60, poli miroir, ≤0.15mm faux-rond. Revêtement TiN. Convient à Perini, PCMC, Gambini. Devis rapide.",
+    "title": "Lames de scie à bûches en tissu | D2 Ø610-1200mm | Sureay",
+    "description": "Tissu lames de scie circulaire pour rondins Ø610-1200mm, D2 HRC 58-60, poli miroir, ≤0.15mm faux-rond. Revêtement TiN. Convient à Perini, PCMC, Gambini. Devis rapide.",
     "keywords": "tissu lames de scie circulaire pour rondins, tissu lames de scie circulaire pour rondins, lames de scie circulaire pour rondins, lames de scie à papier, scies circulaires de conversion, lames de scie D2"
   },
   "granulator-blades": {

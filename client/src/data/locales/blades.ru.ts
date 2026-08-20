@@ -20,8 +20,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
-      "/images/products/rotary-slitter-knives/side-trimmers.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
@@ -241,7 +239,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/paper-slitter-knife-selection-hero.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
@@ -484,7 +481,6 @@ export const blades: Blade[] = [
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/coil-slitting-line.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
@@ -655,7 +651,6 @@ export const blades: Blade[] = [
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
-      "/images/products/shredder-blades/5-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
@@ -882,8 +877,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-04.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
@@ -1053,8 +1046,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -1211,8 +1202,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
       "/images/products/blades/tissue-log-saw-blades-real-03.webp",
       "/images/products/blades/tissue-log-saw-blades-real-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
@@ -1221,13 +1210,11 @@ export const blades: Blade[] = [
       "Стопка готовых пильных дисков для бревна из ткани в деревянном ящике на Sureay",
       "Пильный диск для бревна из ткани, упакованный в деревянный ящик с защитой кромки перед отправкой",
       "Пильный диск для бревна из ткани Ø610 мм D2, зеркально полированная поверхность с отверстиями под приводные штифты",
-      "Технический чертеж циркулярного ножа для пильного диска бревна из ткани, сталь D2",
-      "Рендер двух пильных дисков для бревна из ткани с совпадающим расположением отверстий под приводные штифты",
       "Отверстие Ø68,26 мм и расположение отверстий под приводные штифты для бревнопильных станков Fabio Perini",
       "Поверхность пильного диска для бревна из ткани с зеркальной полировкой при цеховом освещении",
     ],
     description:
-      "Салфетка дисковые пилы для бревен Ø610-Ø1000 мм - вакуумная закалка D2/Cr12MoV (HRC 58-60), микрошлифовка с боковым биением ≤0,15 мм для поперечного реза без шатания. Устраняет дробление сердцевины и бумажную пыль на линиях по производству салфеток, кухонных полотенец и JRT. Совместимость с поточной заточкой CBN. Подходит для OEM-производителей Fabio Perini, PCMC, Casmatic, Gambini и Bretting. Нестандартные диаметры за 10 рабочих дней.",
+      "Салфетка дисковые пилы для бревен Ø610-Ø1200 мм - вакуумная закалка D2/Cr12MoV (HRC 58-60), микрошлифовка с боковым биением ≤0,15 мм для поперечного реза без шатания. Устраняет дробление сердцевины и бумажную пыль на линиях по производству салфеток, кухонных полотенец и JRT. Совместимость с поточной заточкой CBN. Подходит для OEM-производителей Fabio Perini, PCMC, Casmatic, Gambini и Bretting. Нестандартные диаметры за 10 рабочих дней.",
     fullDescription:
       "Поперечный раскрой тканевого бревна - это самая ответственная операция на линии по переработке ткани. Дефекты размеров на этом этапе - смятые картонные сердечники, чрезмерное образование пыли или угловые поверхности среза - немедленно передаются на упаковочные станции, вызывая остановку линии и отбраковку потребительского качества.\n\nТканевые ножи Sureay дисковые пилы для бревен изготавливаются из высококачественной стали D2 (1.2379) и Cr12MoV инструментальная сталь для холодной обработки. Поскольку эти массивные лезвия (до Ø1200 мм) вращаются на экстремальных оборотах, стабильность - это главное. Перед отправкой каждое лезвие подвергается вакуумной закалке, выравниванию натяжения и микрошлифовке с соблюдением строгих допусков на размеры, проверяемых на калиброванной КИМ:\n\n- ** Боковое биение:** ≤0,15 мм\n- **Краевое биение:** ≤0,10 мм\n- ** Параллельность торцов:** 0,05 мм\n- **Концентричность (наружный диаметр по отношению к отверстию):** ≤0,30 мм\n- ** Допуск отверстия:** Ø68,26 мм (+0,05 / 0,00 мм)\n\n## Совместимость с непрерывной заточкой\n\nВ отличие от стандартных дисковые ножи, тканевые бревнопилы непрерывно затачиваются *во время* работы синхронизированными шлифовальными кругами CBN (кубический нитрид бора). Твердость термическая обработка компании Sureay соответствует HRC 58-60. Такой диапазон твердости обеспечивает чистую заточку лезвия о камни CBN без нагрузки и остекленения, сохраняя бритвенно-острую кромку цикл за циклом, не расходуя дорогостоящие заточные круги.\n\n## Геометрия фаски и пылеудаление\n\nТкань - это полотно с низкой плотностью, большой площадью поверхности и практически нулевой прочностью на сжатие. При резке со слишком крутым скосом происходит сжатие, что приводит к образованию чрезмерного количества бумажной пыли (основная опасность возгорания в линиях склеивания полотенец) и уплотнению краев, снижающему мягкость рулона. Мы используем малый угол скоса (15°-25°), который разделяет волокна путем чистого сдвига. В сочетании с зеркально отполированной поверхностью лезвия (Ra ≤0,2 мкм) это обеспечивает безупречный срез 2- и 3-слойных банных тканей премиум-класса.\n\n## Совместимость отверстий по OEM-платформе\n\n**Ø68,26 мм (+0,05 мм):** Fabio Perini (все серии), PCMC Forte/Elite, бревнопильные станки Körber/MTC.\n\n**Ø82,55 мм:** Casmatic (лицензионные платформы Kimberly-Clark), итальянские и испанские бревнопильные системы сторонних производителей.\n\n**Ø60,00 мм:** Широкоформатные бревнопильные станки для производства промышленных салфеток, рулонов джамбо (JRT) и банных тканей без сердечника (OD 870-1000 мм).\n\nНестандартные размеры от Ø610 мм до Ø1200 мм изготавливаются на заказ со стандартным временем выполнения заказа 10 рабочих дней. Просмотр чертежей и согласование размеров доступны для оснастки первого заказа.\n\n## Advanced Surface Coatings\n\n** Твердое хромовое покрытие:** Обеспечивает коррозионную стойкость в условиях высокой влажности на бумажных фабриках (≥75% RH) и снижает коэффициент прилипания волокон ткани, увеличивая интервал между циклами правки лезвий.\n\n**Тефлоновое (PTFE) покрытие:** Создает поверхность с высокой степенью смазки, которая скользит по плотному полотну кухонных полотенец, значительно снижая потребление тока двигателем и устраняя следы ожогов на краях бумаги. Лучшая спецификация для премиальных 3-слойных линий кухонных полотенец.\n\n**PVD-покрытие TiN:** Нитрид титана, нанесенный методом физического осаждения из паровой фазы (2-3 мкм, HV 2300+), увеличивает интервал службы острой кромки при работе в условиях высокого цикла. Рекомендуется для премиальных марок тканей со строгими требованиями к загрязнению пылью.",
     link: "/products/tissue-log-saw-blades",
@@ -1450,8 +1437,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-      "/images/products/blades/log-saw-blades-001.webp",
-      "/images/products/blades/log-saw-blade-1.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
@@ -1634,8 +1619,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
@@ -1854,8 +1837,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
-      "/images/products/shredder-blades/shredder-blades-00.webp",
-      "/images/products/shredder-blades/single-shredder-blades-03.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
@@ -2064,7 +2045,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-      "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
       "/images/products/shredder-blades/single-shaft-bed-knives-drawing.webp",
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
@@ -2253,8 +2233,6 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2472,8 +2450,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
@@ -2647,8 +2623,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-01.webp",
-      "/images/products/granulator-blades/metal-shear-blades-03.webp",
       "/images/products/granulator-blades/metal-shear-blades-04.webp",
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
@@ -2848,8 +2822,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-04.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
@@ -3085,8 +3057,6 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
@@ -3438,7 +3408,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
@@ -3620,7 +3589,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-10.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
@@ -3786,7 +3754,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/circular-slitter-knives-0514.webp",
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
@@ -4295,8 +4262,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
-      "/images/products/granulator-blades/scrap-blade.webp",
-      "/images/products/granulator-blades/scrap-blade-02.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
@@ -4903,8 +4868,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-02.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
@@ -5146,8 +5109,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
     ],
@@ -5347,7 +5308,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
     ],
@@ -5545,7 +5505,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
@@ -5778,15 +5737,11 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
-      "/images/products/shredder-screens/shredder-screens-00.webp",
-      "/images/products/shredder-screens/shredder-screens-03.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
       "Полукруглая перфорированная ситовая корзина с монтажными фланцами и шахматным расположением круглых отверстий",
-      "Полукруглая перфорированная ситовая корзина для одновального шредера пластика",
-      "Ситовая корзина большого диаметра в процессе вальцовки и формовки в цехе Sureay",
       "Партия перфорированных ситовых корзин, подготовленных к экспортной отгрузке",
       "Штабель гнутых ситовых решёток на поддоне с шахматным расположением круглых отверстий",
     ],
@@ -6015,13 +5970,11 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
       "Пара статорных ножей агломератора с шлифованной фаской и потайным креплением",
-      "Вид спереди статорного ножа агломератора: прямолинейность кромки по всей длине",
       "Комплект ножей агломератора — роторный нож, держатель ножа и статорный нож",
       "Длинный роторный нож агломератора со шлифованной режущей кромкой и цекованным крепёжным отверстием",
     ],
@@ -6223,15 +6176,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
       "Линейка профилей ножей торцевой резки — прямые, вильчатые, ступенчатые и сужающиеся геометрии",
-      "Двенадцать профилей ножей торцевой резки фильеры с пазовыми и вильчатыми схемами крепления",
-      "Восемь профилей ножей подводного гранулятора, разложенных для размерного контроля",
       "Крупный план одиночного ножа торцевой резки со шлифованной режущей кромкой и двумя крепёжными пазами",
       "Пара ножей торцевой резки на белом фоне: геометрия пазов и отделка кромки",
     ],

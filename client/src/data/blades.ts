@@ -191,8 +191,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
-      "/images/products/rotary-slitter-knives/side-trimmers.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
@@ -422,13 +420,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/paper-slitter-knife-selection-hero.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
     galleryAlts: [
       "Circular paper slitter knife with dished shear profile and precision-ground bore",
-      "Paper slitter knife selection guide showing matched top and bottom shear pairs",
       "Matched top and bottom paper slitter knife pair for shear cutting",
       "Paper converting line with rotary slitter knives scoring and slitting the web",
     ],
@@ -671,7 +667,6 @@ export const blades: Blade[] = [
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/coil-slitting-line.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
@@ -843,7 +838,6 @@ export const blades: Blade[] = [
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
-      "/images/products/shredder-blades/5-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
@@ -1063,8 +1057,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-04.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
@@ -1234,8 +1226,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -1385,8 +1375,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
       "/images/products/blades/tissue-log-saw-blades-real-03.webp",
       "/images/products/blades/tissue-log-saw-blades-real-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
@@ -1395,14 +1383,12 @@ export const blades: Blade[] = [
       "Stack of finished tissue log saw blades in a wooden packing crate at Sureay",
       "Tissue log saw blade packed in a wooden crate with edge protector before shipment",
       "Ø610 mm D2 tissue log saw blade, mirror-polished face with drive pin holes",
-      "Circular knife technical drawing for a tissue log saw blade in D2 tool steel",
-      "Two tissue log saw blades rendered showing matched drive pin hole pattern",
       "Ø68.26 mm bore and drive pin hole pattern for Fabio Perini log saws",
       "Tissue log saw blade face showing mirror-polished finish under workshop lighting",
     ],
 
     description:
-      "Tissue log saw blades Ø610–Ø1000 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
+      "Tissue log saw blades Ø610–Ø1200 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
 
     fullDescription:
       "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage\u2014crushed cardboard cores, excessive dust generation, or angled cut faces\u2014propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.\n\nSureay tissue log saw blades are manufactured from premium D2 (1.2379) and Cr12MoV cold-work tool steels. Because these massive blades (up to \u00d81200\u202fmm) spin at extreme RPMs, stability is everything. Every blade is vacuum-hardened, tension-leveled, and micro-ground to strict dimensional tolerances verified on a calibrated CMM before dispatch:\n\n- **Lateral runout:** \u22640.15\u202fmm\n- **Edge runout:** \u22640.10\u202fmm\n- **Face parallelism:** 0.05\u202fmm\n- **Concentricity (OD to bore):** \u22640.30\u202fmm\n- **Bore tolerance:** \u00d868.26\u202fmm (+0.05\u202f/\u202f0.00\u202fmm)\n\n## Continuous Sharpening Compatibility\n\nUnlike standard circular knives, tissue log saws are continuously sharpened *during* operation by synchronized CBN (Cubic Boron Nitride) grinding wheels. Sureay\u2019s heat treatment targets HRC\u202f58\u201360. This specific hardness range ensures the blade hones cleanly against the CBN stones without loading or glazing them, maintaining a razor-sharp edge cycle after cycle without consuming your expensive sharpening wheels.\n\n## Bevel Geometry & Dust Reduction\n\nTissue is a low-density, high-surface-area web with near-zero compressive strength. Cutting it with too steep a bevel creates compression, leading to excessive paper dust (a major fire hazard in spray-glued towel lines) and edge densification that reduces roll softness. We utilize a shallow bevel angle (15\u00b0\u201325\u00b0) that separates fibers by pure shear. Combined with a mirror-polished blade face (Ra\u202f\u22640.2\u202f\u03bcm), this delivers flawless cuts on premium 2-ply and 3-ply bath tissue.\n\n## Bore Compatibility by OEM Platform\n\n**\u00d868.26\u202fmm (+0.05\u202fmm):** Fabio Perini (all series), PCMC Forte/Elite, K\u00f6rber/MTC log saws.\n\n**\u00d882.55\u202fmm:** Casmatic (Kimberly-Clark licensed platforms), Italian and Spanish third-party OEM log saw systems.\n\n**\u00d860.00\u202fmm:** Large-format log saws for industrial wiper, jumbo roll (JRT), and coreless bath tissue production (OD 870\u20131000\u202fmm).\n\nCustom OD from \u00d8610\u202fmm to \u00d81200\u202fmm manufactured to order with a standard 10-working-day lead time. Drawing review and dimensional sign-off available on first-order tooling.\n\n## Advanced Surface Coatings\n\n**Hard Chrome Plating:** Provides corrosion resistance in high-humidity paper mill environments (\u226575% RH) and reduces tissue fiber adhesion coefficient, extending the clean-running interval between blade dressing cycles.\n\n**Teflon (PTFE) Coating:** Creates a highly lubricated surface that glides through dense kitchen towel logs, drastically reducing motor amp draw and eliminating burn marks on the paper edges. The top specification for premium 3-ply kitchen towel lines.\n\n**TiN PVD Coating:** Physical vapour deposition titanium nitride (2\u20133\u202f\u03bcm, HV\u202f2300+) extends the sharp-edge service interval in high-cycle operation. Recommended for premium tissue brands with strict dust contamination specifications.",
@@ -1625,8 +1611,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-      "/images/products/blades/log-saw-blades-001.webp",
-      "/images/products/blades/log-saw-blade-1.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
@@ -1818,8 +1802,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
@@ -2047,8 +2029,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
-      "/images/products/shredder-blades/shredder-blades-00.webp",
-      "/images/products/shredder-blades/single-shredder-blades-03.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
@@ -2248,7 +2228,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-      "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
       "/images/products/shredder-blades/single-shaft-bed-knives-drawing.webp",
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
@@ -2407,8 +2386,6 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2588,8 +2565,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
@@ -2764,8 +2739,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-01.webp",
-      "/images/products/granulator-blades/metal-shear-blades-03.webp",
       "/images/products/granulator-blades/metal-shear-blades-04.webp",
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
@@ -2932,8 +2905,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-04.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
@@ -3135,8 +3106,6 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
@@ -3487,7 +3456,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
@@ -3654,7 +3622,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-10.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
@@ -3821,7 +3788,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/circular-slitter-knives-0514.webp",
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
@@ -4331,8 +4297,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
-      "/images/products/granulator-blades/scrap-blade.webp",
-      "/images/products/granulator-blades/scrap-blade-02.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
@@ -4909,15 +4873,11 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
-      "/images/products/shredder-screens/shredder-screens-00.webp",
-      "/images/products/shredder-screens/shredder-screens-03.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
       "Half-round perforated shredder screen basket with mounting flanges, showing staggered round hole pattern",
-      "Half-round perforated shredder screen basket for a single-shaft plastic shredder",
-      "Large-diameter shredder screen basket being rolled and formed in the Sureay workshop",
       "Batch of perforated shredder screen baskets prepared for export shipment",
       "Stack of curved shredder screen plates on a pallet, showing staggered round hole pattern",
     ],
@@ -5126,13 +5086,11 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
       "Pair of cutter compactor stator knives showing the ground bevel and countersunk mounting",
-      "Front view of a cutter compactor stator knife showing edge straightness over full length",
       "Cutter compactor blade set — rotor knife, knife holder block and stator knife",
       "Long cutter compactor rotor knife with ground cutting edge and counterbored fixing hole",
     ],
@@ -5344,15 +5302,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
       "Range of die face cutting knife profiles — straight, forked, stepped and tapered geometries",
-      "Twelve die face cutter knife profiles showing slotted and forked mounting patterns",
-      "Eight underwater pelletizer blade profiles laid out for dimensional inspection",
       "Close-up of a single die face cutting knife showing the ground cutting edge and twin mounting slots",
       "Pair of die face cutting knives on a white background showing slot geometry and edge finish",
     ],
@@ -5663,8 +5617,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-02.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
@@ -5884,8 +5836,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
     ],
@@ -6064,7 +6014,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
     ],
@@ -6219,7 +6168,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],

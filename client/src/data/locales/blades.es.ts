@@ -20,8 +20,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-04.webp",
-      "/images/products/rotary-slitter-knives/side-trimmers.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
@@ -240,7 +238,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/paper-slitter-knife-selection-hero.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
@@ -481,7 +478,6 @@ export const blades: Blade[] = [
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/coil-slitting-line.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
@@ -653,7 +649,6 @@ export const blades: Blade[] = [
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
-      "/images/products/shredder-blades/5-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
@@ -879,8 +874,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-02.webp",
-      "/images/products/shredder-blades/shredder-blades-01.webp",
-      "/images/products/shredder-blades/shredder-blades-04.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
@@ -1049,8 +1042,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
-      "/images/products/shredder-blades/double-shaft-shredder-blade-00.webp",
-      "/images/products/shredder-blades/shredder-blades-03.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
@@ -1207,8 +1198,6 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
       "/images/products/blades/tissue-log-saw-blades-real-03.webp",
       "/images/products/blades/tissue-log-saw-blades-real-01.webp",
-      "/images/products/blades/tissue-log-saw-blades-00.webp",
-      "/images/products/blades/tissue-log-saw-blades-03.webp",
       "/images/products/blades/tissue-log-saw-blades-01.webp",
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
@@ -1217,13 +1206,11 @@ export const blades: Blade[] = [
       "Pila de hojas de sierra circulares para troncos de tejido terminadas en un cajón de madera en Sureay",
       "Hoja de sierra circular para troncos de tejido embalada en un cajón de madera con protector de borde antes del envío",
       "Hoja de sierra circular para troncos de tejido Ø610 mm D2, cara pulida a espejo con orificios para pasadores de arrastre",
-      "Plano técnico de cuchilla circular para hoja de sierra de troncos de tejido en acero D2",
-      "Render de dos hojas de sierra circulares para troncos de tejido mostrando el patrón de orificios para pasadores coincidente",
       "Diámetro interior de Ø68,26 mm y patrón de orificios para pasadores de arrastre para sierras de troncos Fabio Perini",
       "Cara de la hoja de sierra circular para troncos de tejido mostrando el acabado pulido a espejo bajo luz de taller",
     ],
     description:
-      "Tissue sierras circulares para troncos Ø610-Ø1000 mm - endurecido al vacío D2/Cr12MoV (HRC 58-60), microrectificado a ≤0,15 mm de excentricidad lateral para corte transversal sin oscilación. Elimina los núcleos aplastados y el polvo de papel en las líneas de pañuelos de papel, papel de cocina y JRT. Compatible con afilado CBN en línea. Compatible con Fabio Perini, PCMC, Casmatic, Gambini y Bretting. Diámetros personalizados en 10 días laborables.",
+      "Tissue sierras circulares para troncos Ø610-Ø1200 mm - endurecido al vacío D2/Cr12MoV (HRC 58-60), microrectificado a ≤0,15 mm de excentricidad lateral para corte transversal sin oscilación. Elimina los núcleos aplastados y el polvo de papel en las líneas de pañuelos de papel, papel de cocina y JRT. Compatible con afilado CBN en línea. Compatible con Fabio Perini, PCMC, Casmatic, Gambini y Bretting. Diámetros personalizados en 10 días laborables.",
     fullDescription:
       "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.\n\nLas cuchillas de tejido Sureay sierras circulares para troncos se fabrican con D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío de primera calidad. Dado que estas enormes cuchillas (de hasta Ø1200 mm) giran a revoluciones extremas, la estabilidad lo es todo. Todas las cuchillas se endurecen al vacío, se nivelan en tensión y se rectifican según estrictas tolerancias dimensionales verificadas en una MMC calibrada antes de su envío:\n\n- **Desviación lateral:** ≤0,15 mm\n- **Desviación del borde:** ≤0,10 mm\n- **Paralelismo de la cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Tolerancia del agujero:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidad con afilado continuo\n\nA diferencia de la cuchillas circulares estándar, las sierras de troncos de tejido se afilan continuamente *durante* el funcionamiento mediante muelas CBN (nitruro de boro cúbico) sincronizadas. El objetivo de la tratamiento térmico de Sureay es HRC 58-60. Este rango de dureza específico garantiza que la cuchilla se afile limpiamente contra las piedras CBN sin cargarlas ni satinarlas, manteniendo un filo afilado ciclo tras ciclo sin consumir sus costosas muelas de afilado.\n\n## Geometría del bisel y reducción del polvo\n\nEl tejido es un material de baja densidad y gran superficie con una resistencia a la compresión casi nula. Cortarlo con un bisel demasiado pronunciado crea compresión, lo que provoca un exceso de polvo de papel (un importante peligro de incendio en las líneas de toallas encoladas por pulverización) y una densificación de los bordes que reduce la suavidad del rollo. Utilizamos un ángulo de bisel poco pronunciado (15°-25°) que separa las fibras por cizallamiento puro. Combinado con una cara de la cuchilla pulida a espejo (Ra ≤0,2 μm), esto proporciona cortes impecables en papel de baño de 2 y 3 capas de primera calidad.\n\n## Compatibilidad de diámetro interior por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas las series), PCMC Forte/Elite, sierras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas con licencia de Kimberly-Clark), sistemas de sierras de troncos OEM de terceros italianos y españoles.\n\n**Ø60,00 mm:** Sierras de troncos de gran formato para la producción industrial de paños, rollos gigantes (JRT) y papel de baño sin núcleo (DE 870-1000 mm).\n\nOD personalizados de Ø610 mm a Ø1200 mm fabricados bajo pedido con un plazo de entrega estándar de 10 días laborables. Revisión de planos y aprobación dimensional disponibles en el primer pedido de herramientas.\n\n## Recubrimientos superficiales avanzados\n\n**Cromado duro:** Proporciona resistencia a la corrosión en entornos de fábricas de papel de alta humedad (≥75% HR) y reduce el coeficiente de adherencia de la fibra del tejido, ampliando el intervalo de funcionamiento limpio entre los ciclos de reavivado de la cuchilla.\n\n**Recubrimiento de Teflón (PTFE):** Crea una superficie altamente lubricada que se desliza a través de los densos troncos de papel de cocina, reduciendo drásticamente el consumo de amperios del motor y eliminando las marcas de quemaduras en los bordes del papel. La especificación superior para líneas de papel de cocina de 3 capas de primera calidad.\n\n**Recubrimiento TiN PVD:** El nitruro de titanio por deposición física de vapor (2-3 μm, HV 2300+) prolonga el intervalo de servicio de los bordes afilados en funcionamiento de ciclo alto. Recomendado para marcas de papel tisú premium con estrictas especificaciones de contaminación por polvo.",
     link: "/products/tissue-log-saw-blades",
@@ -1447,8 +1434,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-      "/images/products/blades/log-saw-blades-001.webp",
-      "/images/products/blades/log-saw-blade-1.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
@@ -1632,8 +1617,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-01.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-03.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
@@ -1851,8 +1834,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
-      "/images/products/shredder-blades/shredder-blades-00.webp",
-      "/images/products/shredder-blades/single-shredder-blades-03.webp",
       "/images/products/shredder-blades/single-shredder-blades-00.webp",
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
@@ -2062,7 +2043,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-      "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
       "/images/products/shredder-blades/single-shaft-bed-knives-drawing.webp",
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
@@ -2253,8 +2233,6 @@ export const blades: Blade[] = [
     image: "/images/products/granulator-blades/granulator-blades-01.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-01.webp",
-      "/images/products/granulator-blades/granulator-blades-00.webp",
-      "/images/products/granulator-blades/granulator-blades-02.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2471,8 +2449,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-04.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
@@ -2647,8 +2623,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-01.webp",
-      "/images/products/granulator-blades/metal-shear-blades-03.webp",
       "/images/products/granulator-blades/metal-shear-blades-04.webp",
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
@@ -2848,8 +2822,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-04.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-03.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
@@ -3085,8 +3057,6 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
     gallery: [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-01.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
@@ -3439,7 +3409,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-00.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
@@ -3622,7 +3591,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-      "/images/products/shredder-blades/shredder-blades-10.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
@@ -3788,7 +3756,6 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/circular-slitter-knives-0514.webp",
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
@@ -4294,8 +4261,6 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
-      "/images/products/granulator-blades/scrap-blade.webp",
-      "/images/products/granulator-blades/scrap-blade-02.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
@@ -4905,8 +4870,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-02.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-18.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
@@ -5148,8 +5111,6 @@ export const blades: Blade[] = [
     badgeColor: "red",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-industrial-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
     ],
@@ -5349,7 +5310,6 @@ export const blades: Blade[] = [
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-install.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
     ],
@@ -5547,7 +5507,6 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-working.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
@@ -5778,15 +5737,11 @@ export const blades: Blade[] = [
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
-      "/images/products/shredder-screens/shredder-screens-00.webp",
-      "/images/products/shredder-screens/shredder-screens-03.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
       "Cesta de criba perforada semicircular con bridas de montaje, mostrando el patrón de orificios redondos al tresbolillo",
-      "Cesta de criba perforada semicircular para una trituradora de plástico de un solo eje",
-      "Cesta de criba de gran diámetro siendo curvada y conformada en el taller de Sureay",
       "Lote de cestas de criba perforadas preparadas para su envío de exportación",
       "Pila de placas de criba curvadas sobre un palé, mostrando el patrón de orificios redondos al tresbolillo",
     ],
@@ -6015,13 +5970,11 @@ export const blades: Blade[] = [
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-      "/images/products/cutter-compactor-blades/cutter-compactor-blades-03.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-00.webp",
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
       "Par de cuchillas de estátor de compactadora mostrando el bisel rectificado y el montaje avellanado",
-      "Vista frontal de una cuchilla de estátor de compactadora mostrando la rectitud del filo en toda su longitud",
       "Juego de cuchillas de compactadora — cuchilla de rotor, portacuchillas y cuchilla de estátor",
       "Cuchilla de rotor larga de compactadora con filo rectificado y orificio de fijación avellanado",
     ],
@@ -6225,15 +6178,11 @@ export const blades: Blade[] = [
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-03.webp",
-      "/images/products/die-face-cutting-knives/die-face-cutting-knives-04.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-02.webp",
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
       "Gama de perfiles de cuchillas de corte a cara de hilera — geometrías rectas, ahorquilladas, escalonadas y cónicas",
-      "Doce perfiles de cuchillas de corte a cara de hilera mostrando patrones de montaje ranurados y ahorquillados",
-      "Ocho perfiles de cuchillas de granceado subacuático dispuestos para inspección dimensional",
       "Primer plano de una cuchilla de corte a cara de hilera mostrando el filo rectificado y las dos ranuras de montaje",
       "Par de cuchillas de corte a cara de hilera sobre fondo blanco mostrando la geometría de ranura y el acabado del filo",
     ],

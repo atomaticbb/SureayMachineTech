@@ -127,9 +127,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
 
   "tissue-log-saw-blades": {
-    title: "Tissue Log Saw Blades | D2 \u00d8610\u20131000mm | Sureay",
+    title: "Tissue Log Saw Blades | D2 \u00d8610\u20131200mm | Sureay",
     description:
-      "Tissue log saw blades \u00d8610\u20131000mm, D2 HRC 58\u201360, mirror polish, \u22640.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
+      "Tissue log saw blades \u00d8610\u20131200mm, D2 HRC 58\u201360, mirror polish, \u22640.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
     keywords:
       "tissue log saw blades, log saw blades tissue, log saw blades, paper saw blades, converting circular saws, D2 saw blades",
   },
