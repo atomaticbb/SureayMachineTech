@@ -412,6 +412,136 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     ],
   },
   {
+    id: "single-shaft-shredder-blade-face-profile-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "21.AUG.2026",
+    title:
+      "Crown, Concave, or V-Groove: Choosing the Right Single-Shaft Shredder Insert Face",
+    excerpt:
+      "A single-shaft shredder RFQ almost always specifies the machine and the steel grade, and almost never specifies the insert face profile. That gap is where wrap-back and rotor stalling actually come from.",
+    image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    readTime: "4 MIN",
+    seoTitle:
+      "Crown, Concave, or V-Groove: Shredder Insert Face Guide | Sureay",
+    metaDescription:
+      "How to choose single-shaft shredder rotor insert face profile — concave, crown, or V-groove — matched to feedstock and OEM platform.",
+    keywords:
+      "single shaft shredder blades, oem cutting blades single shaft shredder, shredder insert face profile, concave shredder blade, crown shredder blade, v-groove shredder insert",
+    relatedProductIds: ["single-shaft-shredder-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A single-shaft shredder RFQ almost always specifies the machine and the material grade, and almost never specifies the insert face profile. That's a gap, not a minor detail — on a low-speed, high-torque rotor running 80–150 RPM, the face geometry decides whether the insert bites cleanly into the feedstock or skives across it on first contact. Get it wrong and you're not looking at a metallurgy problem; you're looking at wrap-back, stalling, and inserts that dull unevenly because they're not engaging the material the way the rotor was designed to.",
+      },
+      {
+        type: "h2",
+        value: "Why Face Profile Matters More Than It Looks",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Single-shaft rotors don't slice — they crush and shear at tight clearances of 0.2–1.5mm against a stationary [bed knife](/products/single-shaft-bed-knives), and the insert's leading face determines how the material first makes contact. A flat face works fine on feedstock that's already broken down and easy to grip. Anything smooth, dense, or rounded — intact HDPE drums, IBC totes, thick-wall pipe — tends to deflect off a flat face before the insert can dig in, which is exactly the mechanism behind wrap-back and rotor stalling.",
+      },
+      {
+        type: "h2",
+        value: "The Three Geometries and What They're For",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Concave is the default answer for dense, smooth plastics. The hollowed face creates a positive rake that hooks into a rounded surface instead of glancing off it, giving immediate penetration on the downstroke — this is why it's the standard profile paired with DC53 for high-throughput HDPE drum and IBC tote reduction. If your feedstock is intact containers or thick-wall pipe and you're seeing stalls, concave is very likely the fix before you touch the steel grade.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Crown profiles are built for a different problem: soft or irregular material where a concave face would grab too aggressively and choke the rotor. The domed face engages progressively rather than hooking in all at once, which suits lighter, less uniform feedstock — it's the profile paired with 43×43mm inserts on Lindner Micromat and Urraco platforms, machines built around exactly that kind of mixed, lighter-duty stream.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "V-Groove faces are the specialist option, reserved for tire shredding and other applications where the groove needs to guide and split material along a specific line rather than just crush it. It's a narrower use case than crown or concave, which is why it's typically paired with the largest bolt sizes (M16/M18) on heavy-duty platforms built for tire processing.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Profile", "Best For", "Insert Size", "OEM Platforms"],
+        tableRows: [
+          [
+            "Concave",
+            "Dense, smooth plastics — HDPE drums, IBC totes, thick-wall pipe",
+            "34–80mm, scales up for heavy-duty MSW",
+            "Weima, Vecoplan (standard); most heavy-duty platforms",
+          ],
+          [
+            "Crown",
+            "Soft or irregular, mixed lighter-duty material",
+            "43×43mm",
+            "Lindner Micromat, Lindner Urraco",
+          ],
+          [
+            "V-Groove",
+            "Tire shredding — guides and splits along a line",
+            "Largest bolt sizes (M16/M18)",
+            "Heavy-duty tire processing platforms",
+          ],
+        ],
+      },
+      {
+        type: "image",
+        value: "/images/news/single-shaft-shredder-face-profile-comparison.webp",
+      },
+      {
+        type: "h2",
+        value: "Matching Profile to Machine and Insert Size",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Profile choice tracks fairly closely with insert size and OEM platform, because both are responses to the same feedstock and torque question. Smaller inserts (34–40mm) on Weima and Vecoplan standard configurations run concave or flat for general plastics work. Mid-size 43mm inserts on Lindner platforms lean crown for lighter, mixed material. Larger 50–80mm inserts built for heavy-duty MSW and extreme high-torque applications run concave almost exclusively, since at that scale the priority is guaranteed penetration on every stroke, not gentle engagement.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "None of this replaces [getting the material grade right](/news/shredder-metallurgy-maximizes-recycling-yields) — DC53 for impact resistance against rigid purges, D2 as the cost-effective default, Cr12MoV where metal contamination is a real risk. Face profile and material are answering different questions: one is about how the insert meets the material, the other is about how the insert survives meeting it. Skip either one and the other doesn't fully compensate.",
+      },
+      {
+        type: "h2",
+        value: "Single-Shaft Shredder Insert Face Profile FAQ",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question: "What's the difference between concave and crown face profiles?",
+            answer:
+              "Concave is a hollowed face that creates a positive rake for immediate penetration into dense, smooth material like HDPE drums and thick-wall pipe. Crown is a domed face that engages progressively instead of hooking in all at once, which suits softer or irregular, mixed lighter-duty material — the profile paired with 43×43mm inserts on Lindner Micromat and Urraco platforms.",
+          },
+          {
+            question: "Which face profile is used for tire shredding?",
+            answer:
+              "V-Groove. The groove guides and splits material along a specific line rather than crushing it, which is why it's a narrower, more specialist use case than crown or concave, typically paired with the largest bolt sizes (M16/M18) on heavy-duty tire processing platforms.",
+          },
+          {
+            question: "Does choosing the right face profile replace choosing the right steel grade?",
+            answer:
+              "No — they solve different problems. Face profile is about how the insert first engages the material; the steel grade (DC53, D2, or Cr12MoV) is about how the insert survives that engagement over time. Specifying one correctly doesn't compensate for getting the other wrong.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        value: "Not Sure Which Profile Your Line Needs?",
+      },
+      {
+        type: "callout",
+        value:
+          "If you're not sure which face profile fits your feedstock, the fastest path isn't guessing from a spec sheet — it's telling us what you're actually shredding. Send us your machine model and a description of the material (or a photo, if you're seeing wrap-back or stalling on your current inserts), and we'll confirm the right profile alongside the [single-shaft shredder blades](/products/single-shaft-shredder-blades) material grade for your feedstock, ground to ±0.02mm face flatness either way.",
+      },
+    ],
+  },
+  {
     id: "guillotine-shear-blade-parallelism",
     tag: "TECHNICAL GUIDE",
     date: "10.AUG.2026",
