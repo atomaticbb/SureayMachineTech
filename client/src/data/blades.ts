@@ -2234,7 +2234,7 @@ export const blades: Blade[] = [
     description:
       "Heavy-duty stator knives (bed knives) for single-shaft shredders. Manufactured from D2 (1.2379) and specialized high-alloy steels. Press-quenched and precision-ground to strict straightness tolerances (≤ 0.05mm/m) to ensure uniform rotor-to-bed shear clearance. Custom slotted hole patterns for exact clearance adjustment. Compatible with Vecoplan, Weima, Lindner, and Zerma.",
     fullDescription:
-      "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.",
+      "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2298,6 +2298,13 @@ export const blades: Blade[] = [
         description:
           "CNC-milled mounting slots allow technicians to easily advance the bed knife toward the rotor to compensate for wear, maintaining peak shredding efficiency.",
       },
+      {
+        id: "complete-wear-set",
+        tag: "SUPPLY",
+        title: "Complete Bed Knife Wear Set",
+        description:
+          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
+      },
     ],
 
     dimensionLabels: {
@@ -2349,6 +2356,12 @@ export const blades: Blade[] = [
             "Should I replace the bed knife when I replace the rotor inserts?",
           answer:
             "Not necessarily every time. Rotor inserts wear out much faster. However, if the bed knife's cutting edge is severely rounded or chipped, placing new rotor inserts against a dull bed knife will drastically reduce the lifespan of the new inserts and decrease throughput. We recommend inspecting the bed knife edge during every rotor indexing cycle and regrinding or replacing it when a sharp edge can no longer be maintained.",
+        },
+        {
+          question:
+            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+          answer:
+            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
         },
       ],
       company: [

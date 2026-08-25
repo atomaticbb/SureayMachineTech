@@ -2036,7 +2036,7 @@ export const blades: Blade[] = [
     description:
       "Dao stator hạng nặng (dao giường) dành cho máy hủy một trục. Được sản xuất từ ​​thép D2 (1.2379) và thép hợp kim cao chuyên dụng. Được làm nguội bằng máy ép và mài chính xác đến dung sai độ thẳng nghiêm ngặt (≤ 0,05mm/m) để đảm bảo độ hở cắt đồng đều giữa rô-to và bệ. Các mẫu lỗ có rãnh tùy chỉnh để điều chỉnh độ hở chính xác. Tương thích với Vecoplan, Weima, Lindner và Zerma.",
     fullDescription:
-      "Trong hệ thống băm một trục, dao giường (stato) đóng vai trò là cạnh cắt ngược cứng để các hạt dao quay cắt vật liệu. Bởi vì những con dao này trải dài toàn bộ chiều rộng của rôto máy hủy—thường có chiều dài vượt quá 2.000mm—việc sản xuất chúng đòi hỏi phải kiểm soát tuyệt đối độ biến dạng nhiệt.\n\n## Sự thẳng thắn là điều bắt buộc\n\nDao giường bị cong vênh là nguyên nhân chính khiến máy hủy tài liệu hoạt động kém hiệu quả. Nếu lưỡi dao bị cong, khe hở cắt sẽ trở nên không đồng đều: quá chặt ở trung tâm (có nguy cơ va chạm rôto nghiêm trọng) và quá lỏng ở hai đầu (gây ra hiện tượng quấn lại vật liệu và tan chảy do ma sát). Dao giường Sureay trải qua quá trình ép nguội chuyên dụng trong quá trình xử lý nhiệt, sau đó là mài bề mặt chính xác. Chúng tôi đảm bảo dung sai độ thẳng ≤ 0,05mm trên mỗi mét tuyến tính, đảm bảo khe hở cắt đồng đều hoàn hảo trên toàn bộ rôto.\n\n## Làm cứng sâu cho nhiều lần xay lại\n\nKhông giống như các vật liệu chèn rô-to bị loại bỏ hoặc lập chỉ mục, dao giường nặng cần đầu tư vốn đáng kể và phải có thể mài lại được. Chúng tôi sử dụng xử lý nhiệt chân không để đạt được độ cứng đồng đều HRC 56–60 trên toàn bộ mặt cắt ngang của lưỡi dao chứ không chỉ bề mặt. Điều này cho phép người vận hành mài lại cạnh vát nhiều lần mà không để lộ lõi mềm, tối đa hóa tổng tuổi thọ hoạt động của dao.\n\n## Gắn có rãnh và đối xứng\n\nViệc duy trì khe hở cắt tối ưu 0,2 mm–1,0 mm là rất quan trọng vì cả dao rôto và dao stato đều mòn. Dao giường của chúng tôi có các lỗ có rãnh được gia công bằng CNC chính xác hoặc các lỗ phản cỡ lớn, được thiết kế để khớp hoàn hảo với cơ chế điều chỉnh của máy OEM của bạn. Điều này đảm bảo các đội bảo trì có thể nâng dao giường lên một cách chính xác và khóa nó an toàn dưới độ rung lớn.",
+      "Trong hệ thống băm một trục, dao giường (stato) đóng vai trò là cạnh cắt ngược cứng để các hạt dao quay cắt vật liệu. Bởi vì những con dao này trải dài toàn bộ chiều rộng của rôto máy hủy—thường có chiều dài vượt quá 2.000mm—việc sản xuất chúng đòi hỏi phải kiểm soát tuyệt đối độ biến dạng nhiệt.\n\n## Sự thẳng thắn là điều bắt buộc\n\nDao giường bị cong vênh là nguyên nhân chính khiến máy hủy tài liệu hoạt động kém hiệu quả. Nếu lưỡi dao bị cong, khe hở cắt sẽ trở nên không đồng đều: quá chặt ở trung tâm (có nguy cơ va chạm rôto nghiêm trọng) và quá lỏng ở hai đầu (gây ra hiện tượng quấn lại vật liệu và tan chảy do ma sát). Dao giường Sureay trải qua quá trình ép nguội chuyên dụng trong quá trình xử lý nhiệt, sau đó là mài bề mặt chính xác. Chúng tôi đảm bảo dung sai độ thẳng ≤ 0,05mm trên mỗi mét tuyến tính, đảm bảo khe hở cắt đồng đều hoàn hảo trên toàn bộ rôto.\n\n## Làm cứng sâu cho nhiều lần xay lại\n\nKhông giống như các vật liệu chèn rô-to bị loại bỏ hoặc lập chỉ mục, dao giường nặng cần đầu tư vốn đáng kể và phải có thể mài lại được. Chúng tôi sử dụng xử lý nhiệt chân không để đạt được độ cứng đồng đều HRC 56–60 trên toàn bộ mặt cắt ngang của lưỡi dao chứ không chỉ bề mặt. Điều này cho phép người vận hành mài lại cạnh vát nhiều lần mà không để lộ lõi mềm, tối đa hóa tổng tuổi thọ hoạt động của dao.\n\n## Gắn có rãnh và đối xứng\n\nViệc duy trì khe hở cắt tối ưu 0,2 mm–1,0 mm là rất quan trọng vì cả dao rôto và dao stato đều mòn. Dao giường của chúng tôi có các lỗ có rãnh được gia công bằng CNC chính xác hoặc các lỗ phản cỡ lớn, được thiết kế để khớp hoàn hảo với cơ chế điều chỉnh của máy OEM của bạn. Điều này đảm bảo các đội bảo trì có thể nâng dao giường lên một cách chính xác và khóa nó an toàn dưới độ rung lớn.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2109,6 +2109,13 @@ export const blades: Blade[] = [
         title: "Khe điều chỉnh chính xác",
         description:
           "Các khe lắp được phay CNC cho phép kỹ thuật viên dễ dàng đưa dao giường về phía rô-to để bù độ mòn, duy trì hiệu suất băm tối đa.",
+      },
+      {
+        id: "complete-wear-set",
+        tag: "SUPPLY",
+        title: "Complete Bed Knife Wear Set",
+        description:
+          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
       },
     ],
     dimensionLabels: {
@@ -2186,6 +2193,12 @@ export const blades: Blade[] = [
             "Tôi có nên thay dao giường khi thay các miếng đệm rôto không?",
           answer:
             "Không nhất thiết phải mọi lúc. Rôto chèn mòn nhanh hơn nhiều. Tuy nhiên, nếu lưỡi cắt của dao giường bị bo tròn hoặc sứt mẻ nghiêm trọng, việc đặt các miếng đệm rô-to mới tựa vào một con dao giường cùn sẽ làm giảm đáng kể tuổi thọ của các miếng đệm mới và giảm năng suất. Chúng tôi khuyên bạn nên kiểm tra cạnh dao giường trong mỗi chu kỳ định vị rôto và mài lại hoặc thay thế nó khi không thể duy trì cạnh sắc nữa.",
+        },
+        {
+          question:
+            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+          answer:
+            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
         },
       ],
       company: [
