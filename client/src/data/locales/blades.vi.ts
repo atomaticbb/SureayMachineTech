@@ -2800,11 +2800,11 @@ export const blades: Blade[] = [
     sector: "metal",
     categoryDisplay: "Lưỡi cắt chém",
     image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
     badge: "Tấm kim loại",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],

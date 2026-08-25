@@ -2900,11 +2900,11 @@ export const blades: Blade[] = [
     sector: "metal",
     categoryDisplay: "Guillotine Shear Blades",
     image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
     badge: "Sheet Metal",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],

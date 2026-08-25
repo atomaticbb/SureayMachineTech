@@ -2833,11 +2833,11 @@ export const blades: Blade[] = [
     sector: "metal",
     categoryDisplay: "Lames de cisaille guillotine",
     image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
     badge: "Tôle",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],

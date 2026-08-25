@@ -2797,11 +2797,11 @@ export const blades: Blade[] = [
     sector: "metal",
     categoryDisplay: "شفرات القص المقصلة",
     image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
     badge: "الصفائح المعدنية",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],

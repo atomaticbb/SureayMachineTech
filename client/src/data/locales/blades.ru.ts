@@ -2817,11 +2817,11 @@ export const blades: Blade[] = [
     sector: "metal",
     categoryDisplay: "Лезвия гильотинных ножниц",
     image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
     badge: "Листовой металл",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-00.webp",
+      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
