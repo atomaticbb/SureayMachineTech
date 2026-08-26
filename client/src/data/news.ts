@@ -91,6 +91,541 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "lithium-battery-electrode-slitting-knives-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "26.AUG.2026",
+    title:
+      "Lithium Battery Electrode Slitting Knives: Controlling Burrs, Edge Quality and Knife Life",
+    excerpt:
+      "Electrode slitting is a system, not a blade. How carbide grade, edge finish, clearance and runout together decide whether the slit edge stays stable over a full mother roll — and how to diagnose the failure mode before you change the knife.",
+    image: "/images/news/lithium-battery-electrode-slitting-knives-cover.webp",
+    readTime: "12 MIN",
+    seoTitle: "Lithium Battery Electrode Slitting Knives | Burr Control Guide",
+    metaDescription:
+      "How to select carbide slitting knives for lithium battery electrodes: control burrs, set clearance, manage knife wear, and specify matched pairs for copper and aluminum foil.",
+    keywords:
+      "lithium battery electrode slitting knives, battery slitting knives, electrode foil slitting blades, carbide slitter knives for battery, copper foil slitting, aluminum cathode foil slitting, zero-burr slitter knives, separator slitting blades, tungsten carbide circular knives",
+    relatedProductIds: [
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+      "metal-foil-strip-slitter-knives",
+    ],
+    keyFacts: {
+      intro:
+        "Electrode slitting quality is a system result. The knife specification matters, but so do clearance, runout, web tension and cleaning interval — and a burr problem is often none of those things being wrong with the blade itself.",
+      bullets: [
+        "Blade material: submicron WC-Co tungsten carbide for coated electrode foil; cermet or PCD considered for separator film",
+        "Sureay battery-knife specification: Ra ≤ 0.05 μm mirror finish, zero-notch edge under 400× magnification",
+        "Dimensional specification: ±0.001 mm thickness tolerance, ≤0.01 mm T.I.R. runout",
+        "Diagnose the failure mode — wear, burr, dust, adhesion or width drift — before changing the knife specification",
+        "Regrind matched upper and lower knives together, then re-verify the pair before returning it to production",
+      ],
+    },
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Lithium-ion battery electrode slitting is one of the most demanding rotary cutting applications in modern converting. A coated aluminum or copper foil web has to be divided into narrow, consistent strips while controlling burrs, particles, coating damage, edge quality and dimensional stability over long production runs.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The knife is only one part of that system. Blade material, cutting-edge finish, knife geometry, clearance, runout, web tension, machine condition and maintenance all affect the final slit edge. So for cell manufacturers, electrode manufacturers, foil processors and slitting contractors, the practical question is not which slitting knife is sharpest.",
+      },
+      {
+        type: "callout",
+        value:
+          "Engineering Note: The question that actually matters is which knife material, edge specification, geometry and setup will keep the electrode edge stable under your production conditions — not which blade arrives sharpest.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This guide covers how to evaluate [lithium battery electrode slitting knives](/products/lithium-battery-slitting-knives), what drives burrs and premature wear, how to approach setup and regrinding, and what information to send when sourcing replacement or upgraded knives.",
+      },
+
+      {
+        type: "h2",
+        value:
+          "What Are the Best Slitting Knives for Lithium Battery Electrodes?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For high-volume coated-electrode slitting, precision-ground tungsten carbide shear knives are a common high-performance choice, because they combine wear resistance with the ability to hold a fine, highly finished cutting edge.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The correct specification still depends on the application. Copper anode foil, aluminum cathode foil and separator film do not impose the same requirements. Foil thickness, coating chemistry, web tension, line speed, machine design, knife geometry and the required edge quality all move the answer.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A reliable electrode-slitting specification addresses four variables: the blade material, selected for the abrasive and adhesive behaviour of the web; the edge finish, controlled to reduce notches, burrs and particle generation; the knife geometry and dimensional accuracy, matched to the machine and knife arrangement; and the setup and maintenance regime, covering clearance, overlap, runout, cleanliness and regrinding. A supplier should be recommending all four, not quoting a disc from an outside diameter and a bore.",
+      },
+
+      {
+        type: "h2",
+        value:
+          "Why Electrode Slitting Is Different from Ordinary Metal Slitting",
+      },
+      {
+        type: "paragraph",
+        value:
+          "An electrode web is a composite material rather than bare metal. A typical electrode is a thin current collector — aluminum or copper foil — carrying a coated active-material layer on one or both sides. After coating, drying and calendering, the web is slit into the widths needed for cell assembly. That creates several problems that do not appear the same way when cutting thicker, uncoated metal.",
+      },
+      {
+        type: "h3",
+        value: "Thin foil can deform before the cut is complete",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Copper and aluminum are soft and ductile. Very thin foil can stretch, wrinkle or roll over at the edge when knife geometry or clearance is not well matched to the application.",
+      },
+      {
+        type: "h3",
+        value: "Electrode coatings accelerate wear",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Cathode and anode coatings can carry abrasive particles and additives. Against bare foil, these coatings shorten useful cutting life and accelerate edge deterioration.",
+      },
+      {
+        type: "h3",
+        value: "Coating and edge defects create particles",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A damaged edge, coating buildup or a deteriorating cutting bevel increases particle generation. In a controlled battery manufacturing environment, contamination originating at the slitting station is a process problem, not a cosmetic one.",
+      },
+      {
+        type: "h3",
+        value: "Width consistency has to hold over the whole roll",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Electrode strips must stay dimensionally consistent across long mother-roll lengths. Knife runout, holder movement, bearing condition, uneven tension and edge wear all contribute to width drift.",
+      },
+      {
+        type: "h3",
+        value: "Dry-room requirements raise the cost of a poor edge",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Battery production runs in controlled environments where particle sources have to be minimised. A clean, stable cutting edge is one part of a broader contamination-control strategy.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/battery-electrode-slitting-knives-coated-and-uncoated.webp",
+      },
+
+      {
+        type: "h2",
+        value: "Which Slitting Method Is Used for Battery Electrodes?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Three cutting principles turn up in converting: shear slitting, razor slitting, and crush or score slitting. Which one suits depends on the web, the equipment architecture, production speed and required edge quality.",
+      },
+      {
+        type: "h3",
+        value: "Shear slitting",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Matched upper and lower circular knives cut with a scissor action. It is the method most associated with high-quality coated-electrode slitting, because the cutting relationship between the two knives can be controlled precisely — but that same precision is what makes clearance, overlap and runout worth measuring rather than assuming.",
+      },
+      {
+        type: "h3",
+        value: "Razor slitting",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A single thin blade cuts against a grooved roll or in free air. It is simple and low-cost, and it suits thinner, less abrasive webs. On coated electrode foil the blade wears quickly and edge quality falls off sooner.",
+      },
+      {
+        type: "h3",
+        value: "Crush or score slitting",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A hardened knife compresses the web against an anvil roll. It is robust and tolerant of setup variation, but it deforms the cut edge — which is usually the opposite of what electrode slitting is trying to achieve.",
+      },
+
+      {
+        type: "h2",
+        value: "How to Choose the Right Blade Material",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Blade material is the biggest single difference between a general-purpose converting knife and an electrode-slitting knife.",
+      },
+      {
+        type: "h3",
+        value: "Submicron tungsten carbide (WC-Co)",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Fine-grain and submicron tungsten carbide is the usual candidate for abrasive electrode work because it combines high wear resistance, edge stability, good dimensional retention and the ability to take a highly polished cutting edge. The right grade depends on what is being slit and on the dominant failure mode: an aluminum cathode application may weight resistance to abrasive wear most heavily, while copper anode slitting often weights low surface roughness and control of material transfer. There is no single carbide grade that is automatically optimal for every battery line.",
+      },
+      {
+        type: "h3",
+        value: "Cermet and PCD",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Separator film wears a blade by a different mechanism than coated metal foil. Depending on the film, line conditions and particle requirements, cermet or polycrystalline diamond may be worth considering where longer edge stability is needed. The point is to match material to application rather than carrying one specification across copper foil, aluminum foil and separator film.",
+      },
+      {
+        type: "h3",
+        value: "What about D2 or HSS?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "D2 and high-speed steel remain useful across many industrial knife applications. For demanding coated-electrode slitting, a fine carbide gives greater resistance to abrasive wear and supports a better edge finish — but how much that is worth depends on the material, geometry, machine condition and production requirement. Compare them on measurable criteria: burr height, knife life, edge condition, particle generation, cleaning frequency and total changeover cost.",
+      },
+
+      {
+        type: "h2",
+        value: "Edge Finish: The Key to Burr and Particle Control",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For electrode slitting, edge finish is not a cosmetic specification. A cutting bevel carrying microscopic notches, roughness or local damage becomes a source of burrs and particles. As the edge deteriorates the slit edge destabilises — often while the knife still looks sharp to the eye.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay's current battery-slitting specification includes Ra ≤ 0.05 μm and inspection for a zero-notch edge under 400× magnification on applicable knives. Treat those as a product specification for these knives, not as a universal requirement for every battery slitting process.",
+      },
+      {
+        type: "h3",
+        value: "Why burr height matters",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Burr height is worth trending as a process indicator rather than checking after a visible failure. The useful signals are burr height climbing over time, edge roughness increasing, blade-face cleaning becoming more frequent, visible edge notches, rising coating transfer, and loss of process stability after a knife adjustment. The earlier those trends are caught, the more room production has to correct the process before a quality event.",
+      },
+
+      {
+        type: "h2",
+        value: "Knife Dimensional Accuracy and Machine Fit",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Electrode slitting runs at tight tolerances, so dimensional quality decides setup repeatability. The parameters that matter are knife thickness, outside diameter, inside diameter and bore geometry, radial runout, the matched-pair diameter relationship, edge geometry and the mounting interface.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For applicable Sureay battery-slitting knives the specification can include ±0.001 mm thickness tolerance and ≤0.01 mm T.I.R., depending on configuration and customer requirement. Verify those against your actual machine specification before production use.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/carbide-slitting-knives-marked-with-dimensions.webp",
+      },
+      {
+        type: "h3",
+        value: "Why matched pairs matter",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Where the machine design calls for it, upper and lower knives should be supplied as a matched system. A documented matched pair makes changeovers more repeatable, because the dimensional relationship between the two knives has already been verified. This matters most after regrinding: diameter changes have to be accounted for so the pair still meets the machine's required clearance and cutting relationship.",
+      },
+
+      {
+        type: "h2",
+        value: "Machine Compatibility: Do Not Order by Size Alone",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A replacement knife with the correct outside diameter can still be wrong for the machine. Electrode slitting equipment differs in knife diameter, thickness, bore, key or drive features, spacer arrangement, holder design, mounting orientation and required clearance. A reliable specification therefore references the actual machine, drawing, sample or existing knife.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The goal is not to manufacture a disc that fits the shaft. It is to supply a knife that performs correctly inside the complete slitting system.",
+      },
+
+      {
+        type: "h2",
+        value: "When Should a Coating Be Used?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Coating is an application-specific tool, not an automatic upgrade. For webs that transfer or adhere to the blade face, DLC or TiN can reduce adhesion and slow buildup. But identify the root cause first.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the main problem is adhesion or coating transfer, a surface coating is worth evaluating. If it is abrasive edge wear, blade material, carbide grade, cutting geometry and edge finish will influence the outcome more than the coating does. And if the main problem is burr formation, start with the fundamentals — clearance, knife condition, runout, overlap, web tension, material selection and edge finish. Coating should support a sound specification, not compensate for an incorrect setup.",
+      },
+
+      {
+        type: "h2",
+        value: "Common Electrode Slitting Problems and Their Causes",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Symptom", "Possible causes", "Where to check"],
+        tableRows: [
+          [
+            "Burr on cut edge",
+            "Incorrect clearance, dull or damaged edge, unsuitable knife grade",
+            "Clearance, edge condition, material",
+          ],
+          [
+            "Foil edge curl or stretch",
+            "Excessive clearance, unstable tension, knife deflection",
+            "Clearance, tension, runout",
+          ],
+          [
+            "Dust or particle shedding",
+            "Dull edge, notch, coating buildup",
+            "Edge finish, cleaning interval, knife condition",
+          ],
+          [
+            "Coating transfer or fouling",
+            "Adhesion on blade face",
+            "Coating, cleaning schedule, web chemistry",
+          ],
+          [
+            "Width drift along the roll",
+            "Runout, loose mounting, bearing wear, tension variation",
+            "T.I.R., holders, spacers, bearings",
+          ],
+          [
+            "Telescoping rewind roll",
+            "Clearance or tension instability",
+            "Clearance and rewind tension",
+          ],
+          [
+            "Premature edge failure",
+            "Incorrect material grade or damaged, poorly finished edge",
+            "Carbide grade and edge inspection",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "Important: Diagnose the failure mode before changing the knife specification. Replacing a knife with another version of the same material will not solve a burr, tension, runout or clearance problem.",
+      },
+
+      {
+        type: "h2",
+        value: "How to Set Up and Maintain Electrode Slitting Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Consistent edge quality is a system-level result, and most of it is decided at setup rather than at purchase.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Set clearance against the actual machine and foil application, and verify it during changeovers instead of trusting a nominal setting. Control overlap and side load — too much accelerates wear and edge breakdown, too little causes unstable cutting or skipping. Measure T.I.R. after installation: a knife that met dimensional requirements before shipment can still run out of tolerance if the mounting system is contaminated, damaged or incorrectly assembled, so investigate holders, spacers, bearings and shaft condition before blaming the blade.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Thin foil is unusually sensitive to tension instability, so stable web tension does as much for edge quality as the knife does. Keep the cutting system clean, with a cleaning interval set from your actual web chemistry rather than a generic schedule. And trend edge quality continuously — burr height, edge appearance, particle generation, cleaning frequency and knife life — rather than waiting for an operator to find a bad roll.",
+      },
+      {
+        type: "image",
+        value: "/images/news/matched-set-of-thin-carbide-slitting-knives.webp",
+      },
+
+      {
+        type: "h2",
+        value: "When Should Battery Slitting Knives Be Reground?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Precision slitting knives are designed to be reground and re-qualified rather than discarded at the first loss of edge performance. The right interval depends on foil thickness, coating formulation, line speed, production hours, knife material, cutting geometry and your acceptable edge-quality limit.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "As an illustration of the order of magnitude: a 600 mm-wide line running around 80 m/min on submicron WC-Co knives might reach a 4–6 month operating interval. That is one application example, not a battery-industry standard, and it should not be used to plan a maintenance schedule on a different line.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Better regrind triggers are the measurements themselves: burr height increasing, cut-edge roughness rising, notches visible under magnification, coating buildup increasing, cleaning becoming more frequent, and a knife set that no longer holds its process window after adjustment.",
+      },
+      {
+        type: "h3",
+        value: "Regrind matched pairs together",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Regrinding changes knife diameter. For a matched upper and lower pair the process therefore has to run as a sequence: controlled grinding, dimensional inspection, edge finishing, runout verification, pair matching, and re-certification before the knives go back into production. Regrinding only one side of a matched set changes the cutting relationship and reintroduces the exact burr or stability problem the maintenance was meant to remove.",
+      },
+
+      {
+        type: "h2",
+        value: "How to Specify Lithium Battery Electrode Slitting Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When you request a quotation, do not send only the knife diameter. The table below is what lets a supplier recommend a complete specification instead of quoting the cheapest replacement disc.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["What to send", "Details"],
+        tableRows: [
+          [
+            "Web information",
+            "Aluminum cathode foil, copper anode foil or separator film; foil or film thickness; coating type and chemistry; expected slit width and width tolerance; line speed",
+          ],
+          [
+            "Machine information",
+            "Manufacturer and model; existing knife drawing or sample; knife dimensions; bore and mounting details; current clearance and knife arrangement",
+          ],
+          [
+            "Current performance",
+            "Current knife material; average knife life; burr-height data if available; edge photographs or microscope images; cleaning frequency; known problems such as coating transfer, dust, width drift or foil curl",
+          ],
+          [
+            "Quality and documentation",
+            "Required dimensional tolerances; edge-finish requirements; runout requirements; dry-room or contamination requirements; material traceability; inspection documentation needed for qualification",
+          ],
+          [
+            "Your actual objective",
+            "Longer knife life, lower burr height, less particle generation, less coating buildup, fewer knife changes, better width consistency, or more repeatable changeovers",
+          ],
+        ],
+      },
+
+      {
+        type: "h2",
+        value: "Battery Slitting Knife Buyer Checklist",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before placing the next order, confirm you can answer all nine of these. Is the main failure mode wear, burrs, dust, adhesion or dimensional instability? Is the knife material matched to the actual web and coating? Is the cutting edge finished and inspected to your process specification? Are upper and lower knives supplied as a verified matched pair where required? Are thickness, diameter, bore and runout requirements documented? Has clearance been validated for the actual foil and machine? Is there a defined regrinding and requalification process? Can the supplier provide material and dimensional traceability? And can the supplier support an engineering evaluation when the existing knife is not performing?",
+      },
+
+      {
+        type: "h2",
+        value: "Why Work With a Specialized Battery Slitting Knife Supplier?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Electrode slitting knives sit at the intersection of carbide material selection, precision grinding, edge finishing, dimensional control and process engineering. A suitable supplier should be able to discuss the actual web construction, blade material and grade, cutting-edge finish, knife geometry, matched-pair requirements, machine compatibility, inspection methods and regrinding strategy — not just manufacture a circular blade.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay's battery slitting knife program is built around that application-specific approach. Depending on requirement, specifications can include submicron WC-Co carbide, precision edge finishing, controlled dimensional tolerances, low runout, matched knife pairs, application-specific coatings and inspection documentation. Related tooling for adjacent foil work is covered on our [tungsten carbide slitter knives](/products/tungsten-carbide-slitter-knives) and [metal foil slitter knives](/products/metal-foil-strip-slitter-knives) pages.",
+      },
+      {
+        type: "callout",
+        value:
+          "Selection Tip: The useful question for comparing suppliers is not what the price per knife is. It is what measurable edge quality, knife life, dimensional consistency and documentation they can commit to for your specific slitting process.",
+      },
+
+      {
+        type: "h2",
+        value: "Electrode Slitting Knife FAQ",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "What are the best slitting knives for lithium battery electrodes?",
+            answer:
+              "For high-volume coated-electrode slitting, precision-ground submicron tungsten carbide (WC-Co) shear knives are the common high-performance choice, because they combine wear resistance with the ability to hold a highly polished cutting edge. The correct grade still depends on the application — aluminum cathode foil tends to weight abrasive wear resistance, while copper anode foil weights low surface roughness and control of material transfer. Separator film can call for cermet or PCD instead. There is no single grade that is optimal for every battery line.",
+          },
+          {
+            question: "What causes burrs when slitting electrode foil?",
+            answer:
+              "Most commonly incorrect clearance, a dull or notched cutting edge, or a knife grade that does not suit the coating. Excessive clearance also produces edge curl and stretch on thin foil, and unstable web tension or high knife runout will produce the same symptom without the blade being at fault. Diagnose which of those it is before changing the knife specification — replacing a knife with another of the same material will not fix a clearance, tension or runout problem.",
+          },
+          {
+            question:
+              "What edge finish is required for battery electrode slitting knives?",
+            answer:
+              "Fine enough that the bevel is not itself a particle source. Sureay's current battery-slitting specification includes Ra ≤ 0.05 μm and inspection for a zero-notch edge under 400× magnification on applicable knives. Treat that as a product specification for these knives rather than a universal industry requirement — the level your process actually needs depends on your contamination limits and quality control indicators.",
+          },
+          {
+            question: "How often should battery slitting knives be reground?",
+            answer:
+              "By condition, not by calendar. The interval depends on foil thickness, coating formulation, line speed, production hours, knife material and geometry. Use measured triggers instead: burr height climbing, cut-edge roughness rising, notches visible under magnification, increasing coating buildup, more frequent cleaning, or a knife set that no longer holds its process window after adjustment.",
+          },
+          {
+            question:
+              "Do upper and lower slitting knives have to be reground as a pair?",
+            answer:
+              "Where the machine uses a matched pair, yes. Regrinding changes knife diameter, so grinding one side alone changes the cutting relationship between the two knives and reintroduces the burr or stability problem the maintenance was meant to remove. The pair should go through controlled grinding, dimensional inspection, edge finishing, runout verification, pair matching and re-certification together.",
+          },
+          {
+            question:
+              "Can I order a replacement electrode slitting knife by outside diameter and bore?",
+            answer:
+              "Not reliably. Machines differ in thickness, bore geometry, key or drive features, spacer arrangement, holder design, mounting orientation and required clearance, so a knife with the right outside diameter can still be wrong for the machine. Reference the actual machine model, a drawing, or an existing knife — a worn sample is usually the most accurate starting point.",
+          },
+        ],
+      },
+
+      {
+        type: "h2",
+        value: "Conclusion",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Lithium battery electrode slitting is a precision process where small changes in blade condition or machine setup produce measurable differences in burrs, particles, edge quality and production stability. The most reliable approach is to treat the knife as part of the whole system: material selection, edge finish, knife geometry, clearance, runout, web tension and maintenance together.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For demanding coated-electrode applications, precision tungsten carbide knives provide the wear resistance and edge stability needed for long runs. But the best specification is always application-dependent. Start with the real failure mode and the process data, then select blade material, edge finish, dimensions, matched-pair configuration and maintenance strategy around it. That is more reliable than choosing a knife by size or by price.",
+      },
+
+      {
+        type: "h2",
+        value: "Need a Battery Slitting Knife Specification?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Slitting aluminum cathode foil, copper anode foil or separator film? Send your machine model, a knife drawing or worn sample, the web material and thickness, your current knife specification, and any burr, edge-quality or knife-life data you already collect. We will evaluate the application and come back with a carbide grade, knife configuration, edge finish, matched-pair specification and inspection requirements — see the [lithium battery slitting knives](/products/lithium-battery-slitting-knives) page for current specifications, or [send us the details](/contact) directly.",
+      },
+    ],
+  },
+  {
     id: "guillotine-shear-blade-clearance-setting",
     tag: "TECHNICAL GUIDE",
     date: "25.AUG.2026",
@@ -580,7 +1115,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Don't wait for visible fouling. Track cut width variance on the finished roll against a known-good baseline — both adhesive buildup and static transfer show up there as gradual edge-width creep before they show up as a visibly dirty blade or a ragged cut. On medical or hygiene lines where traceability matters, log which knife batch, coating, and shift ran together; it turns \"the knives seem to be wearing faster lately\" into a pattern you can actually act on instead of a guess.",
+          'Don\'t wait for visible fouling. Track cut width variance on the finished roll against a known-good baseline — both adhesive buildup and static transfer show up there as gradual edge-width creep before they show up as a visibly dirty blade or a ragged cut. On medical or hygiene lines where traceability matters, log which knife batch, coating, and shift ran together; it turns "the knives seem to be wearing faster lately" into a pattern you can actually act on instead of a guess.',
       },
       {
         type: "h2",
@@ -698,7 +1233,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value: "/images/news/single-shaft-shredder-face-profile-comparison.webp",
+        value:
+          "/images/news/single-shaft-shredder-face-profile-comparison.webp",
       },
       {
         type: "h2",
@@ -723,7 +1259,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
         value: "",
         faqItems: [
           {
-            question: "What's the difference between concave and crown face profiles?",
+            question:
+              "What's the difference between concave and crown face profiles?",
             answer:
               "Concave is a hollowed face that creates a positive rake for immediate penetration into dense, smooth material like HDPE drums and thick-wall pipe. Crown is a domed face that engages progressively instead of hooking in all at once, which suits softer or irregular, mixed lighter-duty material — the profile paired with 43×43mm inserts on Lindner Micromat and Urraco platforms.",
           },
@@ -733,7 +1270,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
               "V-Groove. The groove guides and splits material along a specific line rather than crushing it, which is why it's a narrower, more specialist use case than crown or concave, typically paired with the largest bolt sizes (M16/M18) on heavy-duty tire processing platforms.",
           },
           {
-            question: "Does choosing the right face profile replace choosing the right steel grade?",
+            question:
+              "Does choosing the right face profile replace choosing the right steel grade?",
             answer:
               "No — they solve different problems. Face profile is about how the insert first engages the material; the steel grade (DC53, D2, or Cr12MoV) is about how the insert survives that engagement over time. Specifying one correctly doesn't compensate for getting the other wrong.",
           },
@@ -996,7 +1534,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "image",
-        value: "/images/news/rotary-slitter-knives-overspeed-ratio-coatings.webp",
+        value:
+          "/images/news/rotary-slitter-knives-overspeed-ratio-coatings.webp",
       },
       {
         type: "paragraph",
@@ -1093,7 +1632,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "That third point is the one buyers underestimate. Matching one sample blade is straightforward. Grinding six or eight custom lengths on the same setup and checking them against each other is a different quality bar than six individually-approximated blades that each \"look about right.\"",
+          'That third point is the one buyers underestimate. Matching one sample blade is straightforward. Grinding six or eight custom lengths on the same setup and checking them against each other is a different quality bar than six individually-approximated blades that each "look about right."',
       },
       {
         type: "h2",
@@ -4784,8 +5323,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Same steel, same bevel angle, different regrind. Rotor knife count, bed knife arrangement, and clearance decide particle size and fines as much as alloy selection does.",
     image: "/images/news/granulator-rotor-bed-knife-pair-hero.webp",
     readTime: "4 MIN",
-    seoTitle:
-      "Rotor vs Bed Knives: Granulator Configuration Guide | Sureay",
+    seoTitle: "Rotor vs Bed Knives: Granulator Configuration Guide | Sureay",
     metaDescription:
       "Rotor knife count, bed knife number, and knife gap set particle size and fines as much as steel grade. A configuration guide with a shear-events table.",
     keywords:
@@ -4898,8 +5436,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       },
       {
         type: "h2",
-        value:
-          "How does knife configuration affect particle size and fines?",
+        value: "How does knife configuration affect particle size and fines?",
       },
       {
         type: "table",
@@ -5023,7 +5560,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     id: "twin-shaft-shredder-blades-brazil-shipment",
     tag: "COMPANY NEWS",
     date: "30.JUL.2026",
-    title: "Twin-Shaft Shredder Blades Shipped to a Plastics Recycling Plant in Brazil",
+    title:
+      "Twin-Shaft Shredder Blades Shipped to a Plastics Recycling Plant in Brazil",
     excerpt:
       "A twin-shaft shredder rotor set — D2 hook blades, cryogenic-treated and wire-EDM bored — has been crated for a plastics recycling plant outside São Paulo, along with the welded rotor housing it ships inside.",
     image: "/images/news/twin-shaft-shredder-rotor-brazil-01.webp",
