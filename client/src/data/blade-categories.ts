@@ -118,11 +118,12 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     slug: "shear-blades",
     category: "shear_blades",
     title: "Shear & Guillotine Blades",
+    seoTitle: "Guillotine Blades & Industrial Shear Knives",
     shortName: "Shear Blades",
     tagline: "Guillotine shear knives, metal shear blades and paper trim sets",
     heroImage: "/images/categories/shear-blades-nav.webp",
     description:
-      "Straight shear & guillotine blades for metal shearing, hydraulic guillotines & three-knife trimmers. TCT-inlay or bimetallic edge, matched OEM sets.",
+      "Guillotine blades for sheet metal shears, paper cutters and three-knife trimmers. D2, 6CrW2Si, HSS and TCT-inlay edges, ground to drawing or to sample.",
     specItems: [
       {
         label: "Edge Construction",

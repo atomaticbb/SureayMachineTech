@@ -261,9 +261,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title:
       "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
     description:
-      "D2, 6CrW2Si & 9CrSi guillotine shear blades ground to ±0.05mm parallelism. Sets for machines up to 16mm × 4000mm. OEM fit TRUMPF, AMADA & LVD.",
+      "D2, 6CrW2Si & 9CrSi guillotine shear blades ground to ±0.05mm parallelism. Sets for machines to 16mm × 4000mm — discontinued models built from your sample.",
     keywords:
-      "guillotine shear blades, hydraulic shear blades, D2 shear blades, 6CrW2Si shear knives, sheet metal shear blades, AMADA replacement blades, TRUMPF shear knives",
+      "guillotine shear blades, squaring shear blades, plate shear blades, sheet metal shear blades, hydraulic shear blades, swing beam shear blades, D2 shear blades, 6CrW2Si shear knives, AMADA replacement blades, TRUMPF shear knives",
   },
 
   "wood-chipper-blades": {

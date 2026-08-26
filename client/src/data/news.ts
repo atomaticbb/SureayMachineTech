@@ -3613,7 +3613,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "[Guillotine shear blades](/products/metal-shear-knives) are often overlooked but equally important. Keep clearance properly set (typically 5–0% of material thickness) and adjust when switching gauges. Most blades have four usable edges — rotate to the next edge before sending for resharpening to maximize blade life.",
+          "[Guillotine shear blades](/products/guillotine-shear-blades) are often overlooked but equally important. Keep clearance properly set (typically 4–10% of material thickness, depending on the alloy) and adjust when switching gauges. Most blades have four usable edges — rotate to the next edge before sending for resharpening to maximize blade life.",
       },
       {
         type: "image",
@@ -3638,7 +3638,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [circular slitter knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/metal-shear-knives) are built for zero-burr performance and extended service life — so you spend less time maintaining and more time producing.",
+          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [circular slitter knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/guillotine-shear-blades) are built for zero-burr performance and extended service life — so you spend less time maintaining and more time producing.",
       },
       {
         type: "callout",

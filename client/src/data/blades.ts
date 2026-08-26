@@ -2968,6 +2968,11 @@ export const blades: Blade[] = [
         value: "±0.05 mm Full-Length Parallelism",
       },
       {
+        label: "Blade Clearance",
+        value:
+          "4–6% of thickness (mild steel) · 6–9% (304/316L) · 3–4% (aluminium) · 7–10% (HSLA)",
+      },
+      {
         label: "Application",
         value:
           "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
@@ -2995,6 +3000,13 @@ export const blades: Blade[] = [
         title: "Precision Parallelism (±0.05 mm)",
         description:
           "Every blade is surface-ground to ±0.05 mm full-length parallelism across lengths up to 4000 mm. This ensures a uniform shear gap between upper and lower blades, delivering burr-free cuts and preventing twist and bow in the sheared sheet.",
+      },
+      {
+        id: "discontinued-machine-matching",
+        tag: "OEM MATCHING",
+        title: "Discontinued Machine? Send the Old Blade",
+        description:
+          "We build from a worn sample, not a catalogue number. Length, width, thickness, bevel and hole pattern are measured off the blade you send and reproduced to drawing — which is how we supply machines whose manufacturer stopped listing parts years ago. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira and Ursviken sets are held as standard geometry; everything else is matched to your sample.",
       },
     ],
 
@@ -3030,9 +3042,15 @@ export const blades: Blade[] = [
       lowPrice: 30,
       highPrice: 350,
     },
+    omitOfferPrice: true,
 
     faqs: {
       technical: [
+        {
+          question: "What blade clearance should I set on a guillotine shear?",
+          answer:
+            "Clearance is set as a percentage of material thickness, not as a fixed number, and it has to move when the material does. Mild and structural steel (S235, A36) runs at 4–6%. Stainless 304 and 316L needs 6–9%, because it work-hardens at the cut edge and mild-steel clearance overloads the blade. Aluminium wants 3–4% — it is soft enough that a wide gap lets it draw and roll instead of fracturing. HSLA and high-strength plate takes 7–10%. Galvanized and pre-painted sheet sits at the lower end of 4–6%, since a wide gap drags and flakes the coating along the cut line. To put that in millimetres: 6 mm mild steel at 5% wants about 0.30 mm of gap, while the same 6 mm in 304 at 8% wants closer to 0.48 mm. Treat these as starting points — your machine manual is the authority, and blade condition, rake angle and hold-down pressure all shift the practical window.",
+        },
         {
           question:
             "Which steel grade should I choose for shearing 304 stainless steel on a hydraulic guillotine?",
