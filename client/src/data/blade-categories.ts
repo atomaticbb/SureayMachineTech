@@ -17,6 +17,10 @@ export interface BladeCategoryMeta {
   slug: string;
   category: BladeCategoryType;
   title: string;
+  /** Overrides the <title> tag only — the on-page H1 stays `title`. Use when
+   *  the hub must claim a search family term that would read badly as a
+   *  heading (e.g. "Rotary Slitter Knives" on the slitter hub). */
+  seoTitle?: string;
   shortName: string;
   tagline: string;
   heroImage: string;
@@ -38,6 +42,7 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     slug: "slitter-knives",
     category: "slitter_knives",
     title: "Slitter Knives & Circular Blades",
+    seoTitle: "Rotary Slitter Knives & Circular Slitting Blades",
     shortName: "Slitter Knives",
     tagline: "Precision-ground rotary blades for film, paper & metal foil",
     heroImage: "/images/categories/slitter-knives-nav.webp",

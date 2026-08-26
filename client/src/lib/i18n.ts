@@ -65,3 +65,22 @@ export function localizedPath(path: string, lang: Lang): string {
   if (lang === DEFAULT_LANG) return clean;
   return clean === "/" ? `/${lang}` : `/${lang}${clean}`;
 }
+
+/**
+ * Product IDs that ship in English only — no /{lang} variants, no hreflang,
+ * one sitemap entry. Use when a page goes live before its translations exist,
+ * so Google never sees five English duplicates under localized URLs.
+ *
+ * Removing an ID here requires adding the matching entry to all five
+ * data/locales/blades.*.ts arrays first — a product missing from a locale
+ * array 404s in that language, it does not fall back to English.
+ */
+export const ENGLISH_ONLY_PRODUCT_IDS: readonly string[] = [
+  "tungsten-carbide-slitter-knives",
+];
+
+/** True when `path` (prefixed or not) is an English-only product page. */
+export function isEnglishOnlyProductPath(path: string): boolean {
+  const clean = stripLangPrefix(path);
+  return ENGLISH_ONLY_PRODUCT_IDS.some(id => clean === `/products/${id}`);
+}

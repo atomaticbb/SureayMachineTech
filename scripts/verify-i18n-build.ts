@@ -23,7 +23,10 @@ import { blades } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
-import { LANG_PREFIXES } from "../client/src/lib/i18n.ts";
+import {
+  LANG_PREFIXES,
+  isEnglishOnlyProductPath,
+} from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist/public");
@@ -58,7 +61,9 @@ const CANONICAL_ROUTES: string[] = [
   ...mixerParts.map(p => p.link),
 ];
 
-const PRERENDER_LANGS_RAW = (process.env.PRERENDER_LANGS ?? "all").toLowerCase();
+const PRERENDER_LANGS_RAW = (
+  process.env.PRERENDER_LANGS ?? "all"
+).toLowerCase();
 const EXPECT_MULTI_LANG = PRERENDER_LANGS_RAW !== "en";
 
 // English-only routes: no /{lang}/* variants and no hreflang.
@@ -66,7 +71,10 @@ const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
 const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
 const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
 const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) || isMixerRoute(r) || isLegalRoute(r);
+  isNewsRoute(r) ||
+  isMixerRoute(r) ||
+  isLegalRoute(r) ||
+  isEnglishOnlyProductPath(r);
 
 const failures: string[] = [];
 
@@ -127,7 +135,15 @@ function assertFile(route: string, label: string): void {
     const hreflangValues = [...content.matchAll(/hreflang="([a-z-]+)"/g)].map(
       m => m[1]
     );
-    const REQUIRED_HREFLANGS = ["en", "es", "fr", "ru", "vi", "ar", "x-default"];
+    const REQUIRED_HREFLANGS = [
+      "en",
+      "es",
+      "fr",
+      "ru",
+      "vi",
+      "ar",
+      "x-default",
+    ];
     for (const required of REQUIRED_HREFLANGS) {
       if (!hreflangValues.includes(required)) {
         failures.push(
@@ -179,7 +195,9 @@ if (failures.length === 0) {
   process.exit(0);
 }
 
-console.error(`\n[verify] FAIL — ${failures.length} of ${expected} checks failed:`);
+console.error(
+  `\n[verify] FAIL — ${failures.length} of ${expected} checks failed:`
+);
 const SHOW = 25;
 for (const msg of failures.slice(0, SHOW)) {
   console.error("  - " + msg);

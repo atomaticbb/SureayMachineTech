@@ -19,7 +19,10 @@ import { blades } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
-import { LANG_PREFIXES } from "../client/src/lib/i18n.ts";
+import {
+  LANG_PREFIXES,
+  isEnglishOnlyProductPath,
+} from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST_DIR = path.resolve(__dirname, "../dist/public");
@@ -80,7 +83,11 @@ const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
 const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
 const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
 const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) || isMixerRoute(r) || isLegalRoute(r) || r === "/404";
+  isNewsRoute(r) ||
+  isMixerRoute(r) ||
+  isLegalRoute(r) ||
+  isEnglishOnlyProductPath(r) ||
+  r === "/404";
 
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [

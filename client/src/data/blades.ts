@@ -181,7 +181,7 @@ export const blades: Blade[] = [
     id: "rotary-slitter-knives",
     name: "Film & Tape Slitter Knives",
     fullName:
-      "Precision Rotary Slitter Knives for Film, Tape & Flexible Packaging Converting",
+      "Precision Slitter Knives for Film, Tape & Flexible Packaging Converting",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Film & Tape Slitter Knives",
@@ -201,7 +201,7 @@ export const blades: Blade[] = [
 
     // Structured for B2B reading flow and technical authority
     fullDescription:
-      "Circular rotary slitter knives and blades operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a rotary slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay rotary slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
+      "Circular film and tape slitter knives operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay film and tape slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
     disambiguation:
       "Running paper, tissue or board instead of film? See our [Paper Slitter Knives](/products/rotary-slitter-knives-paper) page for shear clearance data and regrind intervals on cellulose substrates.",
     link: "/products/rotary-slitter-knives",
@@ -319,6 +319,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "rotary-slitter-knives-paper",
       "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
       "bottom-grooved-anvil-knives",
       "nonwoven-slitter-knives",
     ],
@@ -433,7 +434,7 @@ export const blades: Blade[] = [
     fullDescription:
       "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with multi-groove geometry that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
     disambiguation:
-      "Slitting film, tape or flexible packaging? Those blades are on our [Rotary Slitter Knives for Film & Tape](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
+      "Slitting film, tape or flexible packaging? Those blades are on our [Film & Tape Slitter Knives](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
     categoryCardAnchorText:
       "Paper Slitter Knives — tissue, kraft & coated paper",
     link: "/products/rotary-slitter-knives-paper",
@@ -2687,6 +2688,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "metal-foil-strip-slitter-knives",
       "scrap-chopper-blades",
+      "tungsten-carbide-slitter-knives",
     ],
     offers: {
       lowPrice: 80,
@@ -3887,6 +3889,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "rotary-slitter-knives",
       "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -4105,6 +4108,226 @@ export const blades: Blade[] = [
           question: "Do you ship globally and how long does it take?",
           answer:
             "Yes, we export to over 50 countries. Standard OEM-profile anvil knives ship within 48–72 hours. Custom groove profiles take 7–12 working days. We partner with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 13.1 Tungsten Carbide Slitter Knives (material page — cuts across
+  //      applications rather than competing with the application variants)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "tungsten-carbide-slitter-knives",
+    name: "Tungsten Carbide Slitter Knives",
+    fullName: "Tungsten Carbide Slitter Knives for High-Wear Slitting",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Slitter Knives",
+    image:
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+    gallery: [
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
+    ],
+    galleryAlts: [
+      "Tungsten carbide slitter knives, three ground circular blades with polished faces",
+      "Carbide slitter knife detail showing centre bore, mounting holes and ground cutting edge",
+    ],
+
+    description:
+      "Solid carbide costs six to ten times what D2 does. It earns that premium back in exactly two situations: when your web carries abrasive filler, or when your run lengths are long enough that changeover downtime — not blade price — is what actually costs you money. Micro-grain YG6, YG6X, YG8 and YG10X (ISO K10–K30) at 89.5–92.5 HRA, ground to ±0.002 mm, with a hardness and dimensional report in every shipment.",
+
+    fullDescription:
+      "Tungsten carbide slitter knives are a wear-resistance decision, not a general upgrade. If you are slitting clear BOPP on short runs, D2 or ASP23 PM will serve you better and cost you less, and we will tell you that before you order. This page is for the jobs where tool steel genuinely cannot hold an edge: mineral-filled films, glass-reinforced laminates, abrasive nonwovens, coated foils and high-speed board.\n\n## When the Upgrade Pays\n\nCarbide is worth it when the cost of stopping the line exceeds the cost of the blade. Take your blade changes per month, multiply by the downtime cost per changeover, and compare that against the price difference. On a line where a changeover costs an hour of production, a 10× edge life usually pays back within one or two blade cycles. On a line where changeovers are quick and cheap, it will not.\n\n## Where Carbide Earns Its Cost\n\n**Mineral- and filler-loaded films:** TiO₂-loaded BOPP, calcium-carbonate filled PE, matte and cavitated grades. The filler is what destroys steel edges; hardness is the only defence.\n\n**Glass-reinforced and composite laminates:** FR-4 and prepreg trim, glass-fibre reinforced tapes, aluminium-composite webs. Glass content is deeply abrasive and dulls HSS within a shift.\n\n**Abrasive nonwovens:** mineral-loaded meltblown, spunbond with filler, abrasive-backing and wipe substrates where fibre fuzzing appears the moment the edge softens.\n\n**Metal foil, coated strip and battery electrode:** aluminium and copper foil, coated and laminated strip, where burr-free edges must hold across a full coil run.\n\n**High-speed coated board and paper:** clay- and pigment-coated stock on lines where a knife change costs an hour of production and the blade price is a rounding error against that.\n\n## Where Carbide Is the Wrong Choice\n\n**Shock and interrupted cuts.** Carbide is brittle. If the web snags, if splice tape runs through, or if the knife can contact the anvil metal-to-metal, carbide chips where D2 would deform and survive.\n\n**Clean, unfilled substrates on short runs.** Slitting clear BOPP, plain kraft or unfilled PE? D2 or ASP23 PM will hold an edge long enough, at a fraction of the cost.\n\n**No diamond grinding access.** If neither you nor your service partner can regrind on diamond wheels, a dulled carbide blade becomes scrap rather than a re-sharpenable asset — and the economics invert.\n\n**Loose or unverified clearance.** Carbide amplifies whatever your setup already does. It will not compensate for a worn arbor, an out-of-true knife holder, or clearance nobody has measured.",
+
+    link: "/products/tungsten-carbide-slitter-knives",
+
+    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
+
+    specs: [
+      {
+        label: "Material",
+        value:
+          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+      },
+      { label: "Hardness", value: "89.5–92.5 HRA" },
+      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
+      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
+      { label: "Outer Diameter", value: "20–300 mm" },
+      { label: "Thickness", value: "0.3–5.0 mm" },
+      {
+        label: "Tolerance",
+        value:
+          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+      },
+      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
+      {
+        label: "Edge Geometry",
+        value: "Single bevel, double bevel, hollow ground, razor",
+      },
+      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
+      {
+        label: "Applications",
+        value:
+          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+      },
+    ],
+
+    steelGrades: {
+      intro:
+        "Cobalt content is the trade-off dial: more cobalt means tougher and less brittle, but the edge dulls sooner. The four carbide grades below are shown against the tool steels they replace, so the upgrade decision is visible in one table. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+      rows: [
+        {
+          grade: "D2",
+          hardness: "HRC 58–62",
+          bestFor: "General-purpose slitting of clean, unfilled substrates",
+          tradeoff:
+            "Baseline edge life and baseline cost. Regrinds on conventional wheels.",
+        },
+        {
+          grade: "M2 HSS",
+          hardness: "HRC 62–65",
+          bestFor: "Moderate wear at higher line speeds",
+          tradeoff: "2–3× the edge life of D2 at roughly 1.5× the cost.",
+        },
+        {
+          grade: "ASP23 PM",
+          hardness: "HRC 66–68",
+          bestFor: "High-speed, high-wear work short of true abrasives",
+          tradeoff:
+            "4–6× the edge life of D2 at roughly 3× the cost — frequently the better commercial choice.",
+        },
+        {
+          grade: "YG6 (ISO K10)",
+          hardness: "89.5–91.5 HRA",
+          bestFor: "Steady, low-shock slitting of abrasive film and paper",
+          tradeoff:
+            "6% cobalt. The hardest of the four carbide grades and the least forgiving of shock.",
+        },
+        {
+          grade: "YG6X (ISO K10UF)",
+          hardness: "91–92.5 HRA",
+          bestFor: "Thin gauge, tight tolerance, best achievable edge quality",
+          tradeoff:
+            "6% cobalt, ultra-fine grain. Sharpest edge, most sensitive to interrupted cuts.",
+        },
+        {
+          grade: "YG8 (ISO K20)",
+          hardness: "88.5–90.5 HRA",
+          bestFor: "Nonwovens, foil, anywhere the web may snag",
+          tradeoff:
+            "8% cobalt. Tougher and shock tolerant, at the cost of some edge life.",
+        },
+        {
+          grade: "YG10X (ISO K30)",
+          hardness: "90.5–91.5 HRA",
+          bestFor: "Interrupted cuts, laminates and heavier stock",
+          tradeoff:
+            "10% cobalt, ultra-fine grain. Best toughness-to-wear balance of the range.",
+        },
+      ],
+      outro:
+        "Across the range, carbide delivers roughly 10–30× the edge life of D2 at 6–10× the cost, takes fewer regrind cycles, and can only be reground on diamond wheels. How to run the arithmetic: carbide is worth it when the cost of stopping the line exceeds the cost of the blade. Tell us the material and the failure you are seeing now, and we will pick the grade.",
+    },
+
+    componentsIntro:
+      "Send a worn blade and your machine model — we will reverse-engineer the clearance and quote within 2 hours.",
+
+    components: [
+      {
+        id: "carbide-when-it-pays",
+        tag: "APPLICATION FIT",
+        title: "Where Carbide Earns Its Cost",
+        description:
+          "Abrasive fill is what destroys steel edges, and hardness is the only defence. TiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one.",
+      },
+      {
+        id: "carbide-when-not-to",
+        tag: "HONEST LIMITS",
+        title: "Where Carbide Is the Wrong Choice",
+        description:
+          "Carbide is a wear-resistance solution, not a general upgrade. It chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel.",
+      },
+      {
+        id: "carbide-grade-selection",
+        tag: "METALLURGY",
+        title: "Micro-Grain Substrate, Chosen Per Job",
+        description:
+          "We select from four grades against your material and your current failure mode rather than shipping one grade for everything. Sub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "nonwoven-slitter-knives",
+      "metal-coil-slitting-knives",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 600,
+    },
+    omitOfferPrice: true,
+    faqs: {
+      technical: [
+        {
+          question: "When should I choose solid carbide over M2 HSS or D2?",
+          answer:
+            "Only when your web carries abrasive filler, or when your run lengths are long enough that regrind and changeover savings cover the 6–10× price difference. For standard clear film, plain paper or unfilled PE, D2 or ASP23 PM is usually the better commercial choice — and we will say so.",
+        },
+        {
+          question: "How many times can a carbide slitter knife be reground?",
+          answer:
+            "It depends on the thickness allowance designed into the blade, not on the material. Each regrind removes stock; the practical limit is where the blade thins past its clearance tolerance. Carbide typically takes fewer regrinds than D2 but delivers far more running time between each one, which is where the economics actually sit. Diamond wheels are required — conventional aluminium-oxide wheels will glaze and will not cut carbide.",
+        },
+        {
+          question:
+            "My carbide blade chipped on the first run — what went wrong?",
+          answer:
+            "Almost always one of three things. Handling: a carbide blade dropped on a concrete floor develops internal stress and cracks that stay invisible until load is applied. Clearance: set too tight, the knife makes metal-to-metal contact with the anvil and micro-chips along the edge. Or the application has shock in it — a splice, a snag, an interrupted cut — that carbide's brittleness cannot absorb. Send us a photo of the chipped edge; the fracture pattern usually identifies which of the three it was.",
+        },
+        {
+          question: "YG6 or YG8 — which grade should I specify?",
+          answer:
+            "YG6 (ISO K10) is harder and lasts longer on steady, clean, abrasive work. YG8 (ISO K20) carries more cobalt, so it is tougher and tolerates shock at the cost of some edge life. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+        },
+        {
+          question: "Can a carbide top knife run against a steel bottom anvil?",
+          answer:
+            "Yes, and it is common — but the anvil then becomes the wear part and will need attention sooner than before. If the anvil is softer, verify clearance more often, since anvil wear opens the gap and the first symptom is a ragged edge that looks like a knife problem. Matched carbide pairs are available where anvil wear is the limiting factor.",
+        },
+        {
+          question: "How should carbide blades be stored and handled?",
+          answer:
+            "Individually separated, never stacked bare metal-to-metal, in a dry environment. Most carbide failures we investigate started in the stockroom or in transit, not on the machine. Blades ship in protective packaging that is worth keeping for the ones you are not running.",
+        },
+      ],
+      company: [
+        {
+          question: "Are you a manufacturer or a trading company?",
+          answer:
+            "We manufacture. Grinding, heat treatment control and inspection are done in our own ISO 9001:2015 certified facility, in operation since 2008 and shipping to 50+ countries. That is why we can quote against a worn sample and stand behind the dimensional record that ships with it.",
+        },
+        {
+          question: "Can you make carbide blades without an OEM drawing?",
+          answer:
+            "Yes — send a worn blade and your machine model. We measure the sample, reverse-engineer the working clearance from the wear pattern, and produce a matched replacement; the wear pattern usually tells us more about how the knife is actually running than the original drawing does. Bore, keyway, mounting-hole pattern and thickness are matched to the arbors you already run, so there is no holder change and no retooling.",
+        },
+        {
+          question: "What documentation ships with a carbide order?",
+          answer:
+            "A hardness test report and a dimensional inspection record with every shipment, from an ISO 9001:2015 certified facility. If your incoming inspection needs full CMM data, ask when you order and it ships with the blades. Where several knives share a shaft, they are ground and shipped as a verified matched set so stack-up error does not accumulate across positions.",
+        },
+        {
+          question:
+            "Can we trial a small carbide set before committing to a full order?",
+          answer:
+            "Yes. We supply trial sets — typically 2–5 blades — for machine fit verification and edge life testing against your current steel blades. We would rather you prove the payback on your own line than take our word for the multiplier. For custom profiles, a dimensional sign-off sample is produced before full production starts.",
+        },
+        {
+          question: "What is the lead time on carbide slitter knives?",
+          answer:
+            "Standard profiles in stocked grades ship in 7–12 working days; custom geometry and non-standard diameters take 15–20. Carbide runs longer than tool steel because sintered blanks and diamond-wheel finishing cannot be rushed without costing you edge quality. Blades ship individually separated in protective packaging — most carbide damage we investigate happened in transit or storage, not on the machine.",
         },
       ],
     },

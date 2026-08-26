@@ -17,8 +17,11 @@ const PRODUCT_LINKS = [
     href: "/products/metal-shear-knives",
   },
   {
+    // "Rotary slitter knives" is a family term covering every slitter variant,
+    // so this site-wide anchor points at the category hub, not the film & tape
+    // product page. The hub is the page that should rank for it.
     labelKey: "footer.productLinks.rotarySlitter",
-    href: "/products/rotary-slitter-knives",
+    href: "/categories/slitter-knives",
   },
   {
     labelKey: "footer.productLinks.shredder",

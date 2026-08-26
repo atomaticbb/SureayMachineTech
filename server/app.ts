@@ -75,6 +75,19 @@ export function createApp({
     res.redirect(301, `/${req.params[1]}${qs}`);
   });
 
+  // Product pages awaiting translation are English-only — redirect
+  // /{lang}/products/{id} → /products/{id}. Keep this list in sync with
+  // ENGLISH_ONLY_PRODUCT_IDS in client/src/lib/i18n.ts.
+  app.get(
+    /^\/(es|fr|ru|vi|ar)\/products\/(tungsten-carbide-slitter-knives)\/?$/,
+    (req, res) => {
+      const qs = req.url.includes("?")
+        ? req.url.slice(req.url.indexOf("?"))
+        : "";
+      res.redirect(301, `/products/${req.params[1]}${qs}`);
+    }
+  );
+
   // Canonical redirects for deprecated / duplicate SEO paths.
   app.use((req, res, next) => {
     // Language-aware: /[lang]/categories/custom-profile → /[lang]/custom

@@ -86,11 +86,19 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   // ── Product Detail Pages ───────────────────────────────────────────────
 
   "rotary-slitter-knives": {
-    title: "Rotary Slitter Knives for Film, Tape & Packaging",
+    title: "Film & Tape Slitter Knives for Flexible Packaging",
     description:
-      "Rotary slitter knives ground to ±0.002mm — D2, M2 HSS & carbide. Shear/score/razor profiles for BOPP, CPP film & PSA tape. OEM fit Tidland, Kampf & Atlas.",
+      "Film & tape slitter knives ground to ±0.002mm — D2, M2 HSS & PM steel. Shear, score & razor profiles for BOPP, CPP film and PSA tape. OEM fit Tidland, Kampf & Atlas.",
     keywords:
-      "rotary slitter blades, rotary slitter knives, tungsten carbide slitter blades, circular slitter knives, slitter blade, rotary slitting blades, industrial slitter knives, film slitter knives, BOPP slitter blades, PSA tape slitter knives, converting blades",
+      "film slitter knives, tape slitter knives, BOPP slitter blades, PSA tape slitter knives, flexible packaging slitter blades, circular slitter knives, slitter blade, converting blades",
+  },
+
+  "tungsten-carbide-slitter-knives": {
+    title: "Tungsten Carbide Slitter Knives | Carbide Slitting Blades",
+    description:
+      "Tungsten carbide slitter knives with 10-30x the edge life of tool steel. Micro-grain YG6/YG8 and ISO K10/K20 grades, ground to ±0.002mm, with test reports.",
+    keywords:
+      "carbide slitter knives, tungsten carbide slitter blades, carbide slitter blades, tungsten slitting knives, tungsten carbide slitting blades, YG6 slitter knives, YG8 carbide blades, K10 carbide slitter, micro-grain carbide blades",
   },
 
   "metal-foil-strip-slitter-knives": {

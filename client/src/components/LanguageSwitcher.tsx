@@ -21,13 +21,17 @@ import VN from "country-flag-icons/react/3x2/VN";
 import SA from "country-flag-icons/react/3x2/SA";
 import {
   SUPPORTED_LANGS,
+  isEnglishOnlyProductPath,
   localizedPath,
   stripLangPrefix,
   type Lang,
 } from "@/lib/i18n";
 import { useLang } from "@/contexts/LangContext";
 
-type FlagComponent = React.ComponentType<{ title?: string; className?: string }>;
+type FlagComponent = React.ComponentType<{
+  title?: string;
+  className?: string;
+}>;
 
 const LANG_META: Record<Lang, { label: string; Flag: FlagComponent }> = {
   en: { label: "English", Flag: GB },
@@ -64,7 +68,11 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
   const isMixerPath = canonicalPath.startsWith("/mixer-wear-parts");
   const isLegalPath =
     canonicalPath === "/privacy-policy" || canonicalPath === "/terms";
-  const isEnglishOnlyPath = isNewsPath || isMixerPath || isLegalPath;
+  const isEnglishOnlyPath =
+    isNewsPath ||
+    isMixerPath ||
+    isLegalPath ||
+    isEnglishOnlyProductPath(canonicalPath);
 
   // Close on outside click.
   useEffect(() => {
@@ -86,7 +94,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
         data-current-lang={currentLang}
         className="flex flex-wrap gap-1.5"
       >
-        {SUPPORTED_LANGS.map((lang) => {
+        {SUPPORTED_LANGS.map(lang => {
           const isCurrent = lang === currentLang;
           const href = isEnglishOnlyPath
             ? canonicalPath
@@ -133,7 +141,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
         className={`flex items-center gap-1.5 px-2 py-1 transition-colors cursor-pointer ${
           open ? "text-[#003366]" : "text-slate-500 hover:text-[#003366]"
         }`}
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => setOpen(v => !v)}
       >
         <CurrentFlag className="w-5 h-auto flex-shrink-0" />
         <span className="text-[13px] font-medium">{currentLabel}</span>
@@ -154,7 +162,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
             style={{ transformOrigin: "top" }}
             className="absolute right-0 top-full mt-1.5 min-w-[180px] py-1 z-50 bg-white border border-slate-200 shadow-xl"
           >
-            {SUPPORTED_LANGS.map((lang) => {
+            {SUPPORTED_LANGS.map(lang => {
               const isCurrent = lang === currentLang;
               const href = isEnglishOnlyPath
                 ? canonicalPath

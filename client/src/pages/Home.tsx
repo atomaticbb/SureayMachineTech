@@ -59,7 +59,7 @@ const ITEM_LIST_LD = JSON.stringify({
     {
       "@type": "ListItem",
       position: 2,
-      name: "Rotary Slitter Knives for Film & Flexible Packaging Converting",
+      name: "Film & Tape Slitter Knives for Flexible Packaging Converting",
       url: "https://sureay.com/products/rotary-slitter-knives",
     },
     {

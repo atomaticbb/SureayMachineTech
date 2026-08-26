@@ -19,7 +19,10 @@ export default function SteelGradeTable({ blade }: Props) {
   return (
     <section
       aria-label="Steel grade selection"
-      className="max-w-7xl mx-auto px-6 sm:px-8"
+      // w-full/min-w-0: without these the section sizes to the table's
+      // min-content width and pushes the page wider than the viewport on
+      // mobile, so the inner overflow-x-auto never engages.
+      className="w-full min-w-0 max-w-7xl mx-auto px-6 sm:px-8"
     >
       <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
         [ {t("productDetail.steelGrades.eyebrow")} ]

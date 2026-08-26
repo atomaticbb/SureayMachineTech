@@ -77,7 +77,7 @@ export default function CategoryAggregation() {
   return (
     <div className="min-h-screen bg-white antialiased">
       <SEO
-        title={meta.title}
+        title={meta.seoTitle ?? meta.title}
         description={meta.description}
         canonicalUrl={`/categories/${meta.slug}`}
         breadcrumbs={[

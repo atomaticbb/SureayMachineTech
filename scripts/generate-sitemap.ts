@@ -24,6 +24,7 @@ import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
   SUPPORTED_LANGS,
   DEFAULT_LANG,
+  isEnglishOnlyProductPath,
   localizedPath,
 } from "../client/src/lib/i18n.ts";
 
@@ -171,7 +172,7 @@ const EXCLUDED_CATEGORY_SLUGS = new Set([
   "custom-profile",
 ]);
 
-const productPages: UrlEntry[] = blades
+const allProductPages: UrlEntry[] = blades
   .filter(b => !EXCLUDED_PRODUCT_IDS.has(b.id))
   .map(b => ({
     path: `/products/${b.id}`,
@@ -179,6 +180,15 @@ const productPages: UrlEntry[] = blades
     changefreq: "monthly",
     priority: "0.85",
   }));
+
+// Products whose translations have not shipped yet get one English URL with
+// no hreflang block — see ENGLISH_ONLY_PRODUCT_IDS in client/src/lib/i18n.ts.
+const productPages = allProductPages.filter(
+  p => !isEnglishOnlyProductPath(p.path)
+);
+const englishOnlyProductPages = allProductPages.filter(p =>
+  isEnglishOnlyProductPath(p.path)
+);
 
 const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
   c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug)
@@ -259,6 +269,9 @@ const sections = [
   "  <!-- Product Detail Pages -->",
   ...productPages.flatMap(expandUrlEntry),
   "",
+  "  <!-- Product Detail Pages (English only — translations not shipped) -->",
+  ...englishOnlyProductPages.map(singleUrlEntry),
+  "",
   "  <!-- Mixer Wear Parts (English only — no multilingual variants) -->",
   ...mixerPages.map(singleUrlEntry),
   "",
@@ -290,9 +303,14 @@ const multiLangCount =
 const newsCount = 1 + newsArticles.length;
 const mixerCount = mixerPages.length;
 const legalCount = legalPages.length;
+const enOnlyProductCount = englishOnlyProductPages.length;
 const totalUrlCount =
-  multiLangCount * SUPPORTED_LANGS.length + newsCount + mixerCount + legalCount;
+  multiLangCount * SUPPORTED_LANGS.length +
+  newsCount +
+  mixerCount +
+  legalCount +
+  enOnlyProductCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer + ${legalCount} legal, all EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
 );

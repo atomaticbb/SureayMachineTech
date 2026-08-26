@@ -4,6 +4,7 @@ import { useLang } from "@/contexts/LangContext";
 import {
   SUPPORTED_LANGS,
   DEFAULT_LANG,
+  isEnglishOnlyProductPath,
   localizedPath,
   type Lang,
 } from "@/lib/i18n";
@@ -110,13 +111,18 @@ export default function SEO({
   const fullTitle = normalizeTitle(title);
 
   // English-only sections — no language prefix or multilingual hreflang.
-  // News, Mixer Wear Parts, Privacy Policy, and Terms exist only in English.
+  // News, Mixer Wear Parts, Privacy Policy, and Terms exist only in English,
+  // as do product pages whose translations have not shipped yet.
   const isNewsPath =
     canonicalUrl === "/news" || (canonicalUrl?.startsWith("/news/") ?? false);
   const isMixerPath = canonicalUrl?.startsWith("/mixer-wear-parts") ?? false;
   const isLegalPath =
     canonicalUrl === "/privacy-policy" || canonicalUrl === "/terms";
-  const isEnglishOnly = isNewsPath || isMixerPath || isLegalPath;
+  const isUntranslatedProduct = canonicalUrl
+    ? isEnglishOnlyProductPath(canonicalUrl)
+    : false;
+  const isEnglishOnly =
+    isNewsPath || isMixerPath || isLegalPath || isUntranslatedProduct;
 
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and
