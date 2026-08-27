@@ -15,7 +15,7 @@ import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeAggregateOffer } from "@/data/blades";
+import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
@@ -55,11 +55,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Lithium Battery Electrode Slitting Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-        description: "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+        description:
+          "Tungsten carbide circular slitting knives for Al cathode and Cu anode electrode foil — Ra ≤ 0.05μm mirror finish, ±0.001mm tolerance, IATF 16949 certified.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/lithium-battery-slitting-knives",
-        offers: getBladeAggregateOffer("lithium-battery-slitting-knives"),
+        offers: getBladeOffer("lithium-battery-slitting-knives"),
       },
     },
     {
@@ -68,11 +70,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Battery Recycling Blades",
-        image: "https://sureay.com/images/products/shredder-blades/shredder-blades.webp",
-        description: "Twin-shaft shredder blades for lithium battery cell and module recycling. Impact-resistant alloys for safe, controlled battery waste size reduction.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/shredder-blades.webp",
+        description:
+          "Twin-shaft shredder blades for lithium battery cell and module recycling. Impact-resistant alloys for safe, controlled battery waste size reduction.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/twin-shaft-blades-battery",
-        offers: getBladeAggregateOffer("twin-shaft-blades-battery"),
+        offers: getBladeOffer("twin-shaft-blades-battery"),
       },
     },
   ],
@@ -105,16 +109,51 @@ export default function NewEnergyIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.newEnergy.specs.s1.label"), mainValue: "Ra ≤ 0.05", unit: "μm", subtext: t("industry.newEnergy.specs.s1.subtext") },
-    { label: t("industry.newEnergy.specs.s2.label"), mainValue: "±0.001", unit: "mm", subtext: t("industry.newEnergy.specs.s2.subtext") },
-    { label: t("industry.newEnergy.specs.s3.label"), mainValue: "≤ 0.01", unit: "mm", subtext: t("industry.newEnergy.specs.s3.subtext") },
-    { label: t("industry.newEnergy.specs.s4.label"), mainValue: "WC-Co\\nSubmicron", subtext: t("industry.newEnergy.specs.s4.subtext"), isTextual: true },
+    {
+      label: t("industry.newEnergy.specs.s1.label"),
+      mainValue: "Ra ≤ 0.05",
+      unit: "μm",
+      subtext: t("industry.newEnergy.specs.s1.subtext"),
+    },
+    {
+      label: t("industry.newEnergy.specs.s2.label"),
+      mainValue: "±0.001",
+      unit: "mm",
+      subtext: t("industry.newEnergy.specs.s2.subtext"),
+    },
+    {
+      label: t("industry.newEnergy.specs.s3.label"),
+      mainValue: "≤ 0.01",
+      unit: "mm",
+      subtext: t("industry.newEnergy.specs.s3.subtext"),
+    },
+    {
+      label: t("industry.newEnergy.specs.s4.label"),
+      mainValue: "WC-Co\\nSubmicron",
+      subtext: t("industry.newEnergy.specs.s4.subtext"),
+      isTextual: true,
+    },
   ];
 
   const MATERIALS: IndustryMaterial[] = [
-    { name: t("industry.newEnergy.materials.m1.name"), abrasion: t("industry.newEnergy.materials.m1.abrasion"), grade: "WC-Co K10 Submicron", image: "/images/materials/al-cathode-foil.webp" },
-    { name: t("industry.newEnergy.materials.m2.name"), abrasion: t("industry.newEnergy.materials.m2.abrasion"), grade: "WC-Co K05 Submicron", image: "/images/materials/cu-anode-foil.webp" },
-    { name: t("industry.newEnergy.materials.m3.name"), abrasion: t("industry.newEnergy.materials.m3.abrasion"), grade: "Cermet / PCD", image: "/images/materials/PVDF-separator-film.webp" },
+    {
+      name: t("industry.newEnergy.materials.m1.name"),
+      abrasion: t("industry.newEnergy.materials.m1.abrasion"),
+      grade: "WC-Co K10 Submicron",
+      image: "/images/materials/al-cathode-foil.webp",
+    },
+    {
+      name: t("industry.newEnergy.materials.m2.name"),
+      abrasion: t("industry.newEnergy.materials.m2.abrasion"),
+      grade: "WC-Co K05 Submicron",
+      image: "/images/materials/cu-anode-foil.webp",
+    },
+    {
+      name: t("industry.newEnergy.materials.m3.name"),
+      abrasion: t("industry.newEnergy.materials.m3.abrasion"),
+      grade: "Cermet / PCD",
+      image: "/images/materials/PVDF-separator-film.webp",
+    },
   ];
 
   const PRODUCTS: IndustryProduct[] = getBlades(lang)
@@ -158,9 +197,7 @@ export default function NewEnergyIndustry() {
           products={PRODUCTS}
           filterCategories={FILTER_CATEGORIES}
         />
-        <CategoryLinksRow
-          slugs={["shredder-blades", "slitter-knives"]}
-        />
+        <CategoryLinksRow slugs={["shredder-blades", "slitter-knives"]} />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />

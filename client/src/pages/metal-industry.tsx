@@ -15,7 +15,7 @@ import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeAggregateOffer } from "@/data/blades";
+import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
@@ -55,11 +55,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Coil Slitting Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-        description: "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
+        description:
+          "Through-hardened SKH-51 circular slitter knives precision-ground to ±0.005 mm side run-out for burr-free steel coil slitting.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/metal-coil-slitting-knives",
-        offers: getBladeAggregateOffer("metal-coil-slitting-knives"),
+        offers: getBladeOffer("metal-coil-slitting-knives"),
       },
     },
     {
@@ -68,11 +70,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Shear Knives",
-        image: "https://sureay.com/images/products/granulator-blades/metal-shear-blades-00.webp",
-        description: "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
+        image:
+          "https://sureay.com/images/products/granulator-blades/metal-shear-blades-00.webp",
+        description:
+          "Precision-ground upper and lower guillotine blades for hydraulic and mechanical shears. Clean, straight cuts on sheet and plate.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/metal-shear-knives",
-        offers: getBladeAggregateOffer("metal-shear-knives"),
+        offers: getBladeOffer("metal-shear-knives"),
       },
     },
     {
@@ -81,11 +85,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Shredder Blades",
-        image: "https://sureay.com/images/products/shredder-blades/shredder-blades-02.webp",
-        description: "Multi-shaft shredder blades in D2 and H13 for steel, aluminum, and mixed metal scrap size reduction.",
+        image:
+          "https://sureay.com/images/products/shredder-blades/shredder-blades-02.webp",
+        description:
+          "Multi-shaft shredder blades in D2 and H13 for steel, aluminum, and mixed metal scrap size reduction.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/multi-shaft-blades-metal",
-        offers: getBladeAggregateOffer("multi-shaft-blades-metal"),
+        offers: getBladeOffer("multi-shaft-blades-metal"),
       },
     },
     {
@@ -94,11 +100,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Metal Cold Saw Blades",
-        image: "https://sureay.com/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-        description: "Cermet and HSS metal cold saw blades for precision burr-free cutting of steel tubes, profiles, and structural sections.",
+        image:
+          "https://sureay.com/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
+        description:
+          "Cermet and HSS metal cold saw blades for precision burr-free cutting of steel tubes, profiles, and structural sections.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/metal-cold-saw-blades",
-        offers: getBladeAggregateOffer("metal-cold-saw-blades"),
+        offers: getBladeOffer("metal-cold-saw-blades"),
       },
     },
     {
@@ -107,11 +115,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Scrap Chopper Blades",
-        image: "https://sureay.com/images/products/granulator-blades/scrap-chopper-blades.webp",
-        description: "S7 and H13 reversible 4-edge scrap chopper blades for metal stamping offcuts and sheet metal scrap processing.",
+        image:
+          "https://sureay.com/images/products/granulator-blades/scrap-chopper-blades.webp",
+        description:
+          "S7 and H13 reversible 4-edge scrap chopper blades for metal stamping offcuts and sheet metal scrap processing.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/scrap-chopper-blades",
-        offers: getBladeAggregateOffer("scrap-chopper-blades"),
+        offers: getBladeOffer("scrap-chopper-blades"),
       },
     },
   ],
@@ -144,16 +154,51 @@ export default function MetalIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.metal.specs.s1.label"), mainValue: "±0.005", unit: "mm", subtext: t("industry.metal.specs.s1.subtext") },
-    { label: t("industry.metal.specs.s2.label"), mainValue: "SKH-51\\nTC Grade", subtext: t("industry.metal.specs.s2.subtext"), isTextual: true },
-    { label: t("industry.metal.specs.s3.label"), mainValue: "62–66", unit: "HRC", subtext: t("industry.metal.specs.s3.subtext") },
-    { label: t("industry.metal.specs.s4.label"), mainValue: "Ra ≤ 0.4", unit: "μm", subtext: t("industry.metal.specs.s4.subtext") },
+    {
+      label: t("industry.metal.specs.s1.label"),
+      mainValue: "±0.005",
+      unit: "mm",
+      subtext: t("industry.metal.specs.s1.subtext"),
+    },
+    {
+      label: t("industry.metal.specs.s2.label"),
+      mainValue: "SKH-51\\nTC Grade",
+      subtext: t("industry.metal.specs.s2.subtext"),
+      isTextual: true,
+    },
+    {
+      label: t("industry.metal.specs.s3.label"),
+      mainValue: "62–66",
+      unit: "HRC",
+      subtext: t("industry.metal.specs.s3.subtext"),
+    },
+    {
+      label: t("industry.metal.specs.s4.label"),
+      mainValue: "Ra ≤ 0.4",
+      unit: "μm",
+      subtext: t("industry.metal.specs.s4.subtext"),
+    },
   ];
 
   const MATERIALS: IndustryMaterial[] = [
-    { name: t("industry.metal.materials.m1.name"), abrasion: t("industry.metal.materials.m1.abrasion"), grade: "SKH-51", image: "/images/materials/cold-rolled-steel.webp" },
-    { name: t("industry.metal.materials.m2.name"), abrasion: t("industry.metal.materials.m2.abrasion"), grade: "Tungsten Carbide", image: "/images/materials/stainless-strip.webp" },
-    { name: t("industry.metal.materials.m3.name"), abrasion: t("industry.metal.materials.m3.abrasion"), grade: "D2 Steel", image: "/images/materials/aluminum-sheet.webp" },
+    {
+      name: t("industry.metal.materials.m1.name"),
+      abrasion: t("industry.metal.materials.m1.abrasion"),
+      grade: "SKH-51",
+      image: "/images/materials/cold-rolled-steel.webp",
+    },
+    {
+      name: t("industry.metal.materials.m2.name"),
+      abrasion: t("industry.metal.materials.m2.abrasion"),
+      grade: "Tungsten Carbide",
+      image: "/images/materials/stainless-strip.webp",
+    },
+    {
+      name: t("industry.metal.materials.m3.name"),
+      abrasion: t("industry.metal.materials.m3.abrasion"),
+      grade: "D2 Steel",
+      image: "/images/materials/aluminum-sheet.webp",
+    },
   ];
 
   const allBlades = getBlades(lang);

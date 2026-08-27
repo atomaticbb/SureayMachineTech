@@ -103,9 +103,9 @@ export default function ProductDetail() {
           brand: "Sureay",
           material: blade.specs.find(s => s.label === "Material")?.value,
           specs: blade.specs,
-          ...(blade.offers && {
-            offers: blade.omitOfferPrice ? {} : blade.offers,
-          }),
+          // showPrice is deliberately not passed: no blade page displays a
+          // price, so these emit a bare Offer. blade.offers stays internal.
+          ...(blade.offers && { offers: blade.offers }),
         }}
       />
 

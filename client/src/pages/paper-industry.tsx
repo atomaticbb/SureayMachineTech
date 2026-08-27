@@ -15,7 +15,7 @@ import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeAggregateOffer } from "@/data/blades";
+import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
@@ -55,11 +55,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Tissue Log Saw Blades",
-        image: "https://sureay.com/images/products/blades/tissue-log-saw-blades-05.webp",
-        description: "D2/Cr12MoV log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
+        image:
+          "https://sureay.com/images/products/blades/tissue-log-saw-blades-05.webp",
+        description:
+          "D2/Cr12MoV log saw blades for tissue, kitchen towel and napkin converting lines. OEM profile-matched to Fabio Perini, Körber and Fosber.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/tissue-log-saw-blades",
-        offers: getBladeAggregateOffer("tissue-log-saw-blades"),
+        offers: getBladeOffer("tissue-log-saw-blades"),
       },
     },
     {
@@ -68,11 +70,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Paper Slitter Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-        description: "M2 HSS and D2 rotary slitter knives for paper, kraft board, and release liner slitting. OEM profile-matched for Valmet, Metso, and Kampf rewinders.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+        description:
+          "M2 HSS and D2 rotary slitter knives for paper, kraft board, and release liner slitting. OEM profile-matched for Valmet, Metso, and Kampf rewinders.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/rotary-slitter-knives-paper",
-        offers: getBladeAggregateOffer("rotary-slitter-knives-paper"),
+        offers: getBladeOffer("rotary-slitter-knives-paper"),
       },
     },
     {
@@ -81,11 +85,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Paper Cutting Blades",
-        image: "https://sureay.com/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-        description: "Guillotine blades for hydraulic paper cutters and bookbinding machines. M2 HSS for clean, burr-free cuts on paper stacks.",
+        image:
+          "https://sureay.com/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+        description:
+          "Guillotine blades for hydraulic paper cutters and bookbinding machines. M2 HSS for clean, burr-free cuts on paper stacks.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/paper-cutting-blades",
-        offers: getBladeAggregateOffer("paper-cutting-blades"),
+        offers: getBladeOffer("paper-cutting-blades"),
       },
     },
     {
@@ -94,11 +100,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Three-Knife Trimmer Blades",
-        image: "https://sureay.com/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
-        description: "Three-knife trimmer blades for Muller Martini, Kolbus, and Wohlenberg book trimming systems. Drop-in OEM replacements.",
+        image:
+          "https://sureay.com/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+        description:
+          "Three-knife trimmer blades for Muller Martini, Kolbus, and Wohlenberg book trimming systems. Drop-in OEM replacements.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/three-knife-trimmer-blades",
-        offers: getBladeAggregateOffer("three-knife-trimmer-blades"),
+        offers: getBladeOffer("three-knife-trimmer-blades"),
       },
     },
     {
@@ -107,11 +115,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Corrugated Slitter Blades",
-        image: "https://sureay.com/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-        description: "Circular slitter and scorer blades for corrugated board and cardboard converting lines. Compatible with BHS, Fosber, and SHM machinery.",
+        image:
+          "https://sureay.com/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
+        description:
+          "Circular slitter and scorer blades for corrugated board and cardboard converting lines. Compatible with BHS, Fosber, and SHM machinery.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/corrugated-slitter-scorer-blades",
-        offers: getBladeAggregateOffer("corrugated-slitter-scorer-blades"),
+        offers: getBladeOffer("corrugated-slitter-scorer-blades"),
       },
     },
   ],
@@ -144,15 +154,45 @@ export default function PaperIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.paper.specs.s1.label"), mainValue: "Precision\\nGround", subtext: t("industry.paper.specs.s1.subtext"), isTextual: true },
-    { label: t("industry.paper.specs.s2.label"), mainValue: "D2 /\\nCr12MoV", subtext: t("industry.paper.specs.s2.subtext"), isTextual: true },
-    { label: t("industry.paper.specs.s4.label"), mainValue: "Ra ≤ 0.2", unit: "μm", subtext: t("industry.paper.specs.s4.subtext") },
+    {
+      label: t("industry.paper.specs.s1.label"),
+      mainValue: "Precision\\nGround",
+      subtext: t("industry.paper.specs.s1.subtext"),
+      isTextual: true,
+    },
+    {
+      label: t("industry.paper.specs.s2.label"),
+      mainValue: "D2 /\\nCr12MoV",
+      subtext: t("industry.paper.specs.s2.subtext"),
+      isTextual: true,
+    },
+    {
+      label: t("industry.paper.specs.s4.label"),
+      mainValue: "Ra ≤ 0.2",
+      unit: "μm",
+      subtext: t("industry.paper.specs.s4.subtext"),
+    },
   ];
 
   const MATERIALS: IndustryMaterial[] = [
-    { name: t("industry.paper.materials.m1.name"), abrasion: t("industry.paper.materials.m1.abrasion"), grade: "M2 HSS Triple-Ground", image: "/images/materials/virgin-tissue.webp" },
-    { name: t("industry.paper.materials.m2.name"), abrasion: t("industry.paper.materials.m2.abrasion"), grade: "D2 / M2 HSS", image: "/images/materials/recycled-fibre.webp" },
-    { name: t("industry.paper.materials.m3.name"), abrasion: t("industry.paper.materials.m3.abrasion"), grade: "Bimetal / TC-Tipped", image: "/images/materials/kraft-board.webp" },
+    {
+      name: t("industry.paper.materials.m1.name"),
+      abrasion: t("industry.paper.materials.m1.abrasion"),
+      grade: "M2 HSS Triple-Ground",
+      image: "/images/materials/virgin-tissue.webp",
+    },
+    {
+      name: t("industry.paper.materials.m2.name"),
+      abrasion: t("industry.paper.materials.m2.abrasion"),
+      grade: "D2 / M2 HSS",
+      image: "/images/materials/recycled-fibre.webp",
+    },
+    {
+      name: t("industry.paper.materials.m3.name"),
+      abrasion: t("industry.paper.materials.m3.abrasion"),
+      grade: "Bimetal / TC-Tipped",
+      image: "/images/materials/kraft-board.webp",
+    },
   ];
 
   const allBlades = getBlades(lang);

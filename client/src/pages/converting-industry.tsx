@@ -15,7 +15,7 @@ import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeAggregateOffer } from "@/data/blades";
+import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
@@ -55,11 +55,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Film & Tape Slitter Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-        description: "Precision circular slitting knives for BOPP film, flexible packaging, and label converting at ±0.002mm tolerance.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+        description:
+          "Precision circular slitting knives for BOPP film, flexible packaging, and label converting at ±0.002mm tolerance.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/rotary-slitter-knives",
-        offers: getBladeAggregateOffer("rotary-slitter-knives"),
+        offers: getBladeOffer("rotary-slitter-knives"),
       },
     },
     {
@@ -68,11 +70,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Nonwoven Slitter Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-        description: "M2 HSS circular slitter knives with 15–20° positive rake geometry for spunbond, SMS, and meltblown nonwoven fabrics.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
+        description:
+          "M2 HSS circular slitter knives with 15–20° positive rake geometry for spunbond, SMS, and meltblown nonwoven fabrics.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/nonwoven-slitter-knives",
-        offers: getBladeAggregateOffer("nonwoven-slitter-knives"),
+        offers: getBladeOffer("nonwoven-slitter-knives"),
       },
     },
     {
@@ -81,11 +85,13 @@ const PAGE_SCHEMA = {
       item: {
         "@type": "Product",
         name: "Bottom Grooved Anvil Knives",
-        image: "https://sureay.com/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-        description: "Bottom grooved anvil knives for film, tape, and flexible packaging shear slitting systems. Precision-ground groove geometry for consistent nip pressure.",
+        image:
+          "https://sureay.com/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
+        description:
+          "Bottom grooved anvil knives for film, tape, and flexible packaging shear slitting systems. Precision-ground groove geometry for consistent nip pressure.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/bottom-grooved-anvil-knives",
-        offers: getBladeAggregateOffer("bottom-grooved-anvil-knives"),
+        offers: getBladeOffer("bottom-grooved-anvil-knives"),
       },
     },
   ],
@@ -118,16 +124,51 @@ export default function ConvertingIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.converting.specs.s1.label"), mainValue: "±0.002", unit: "mm", subtext: t("industry.converting.specs.s1.subtext") },
-    { label: t("industry.converting.specs.s2.label"), mainValue: "≤ 0.02", unit: "mm", subtext: t("industry.converting.specs.s2.subtext") },
-    { label: t("industry.converting.specs.s3.label"), mainValue: "Ra ≤ 0.4", unit: "μm", subtext: t("industry.converting.specs.s3.subtext") },
-    { label: t("industry.converting.specs.s4.label"), mainValue: "600", unit: "m/min", subtext: t("industry.converting.specs.s4.subtext") },
+    {
+      label: t("industry.converting.specs.s1.label"),
+      mainValue: "±0.002",
+      unit: "mm",
+      subtext: t("industry.converting.specs.s1.subtext"),
+    },
+    {
+      label: t("industry.converting.specs.s2.label"),
+      mainValue: "≤ 0.02",
+      unit: "mm",
+      subtext: t("industry.converting.specs.s2.subtext"),
+    },
+    {
+      label: t("industry.converting.specs.s3.label"),
+      mainValue: "Ra ≤ 0.4",
+      unit: "μm",
+      subtext: t("industry.converting.specs.s3.subtext"),
+    },
+    {
+      label: t("industry.converting.specs.s4.label"),
+      mainValue: "600",
+      unit: "m/min",
+      subtext: t("industry.converting.specs.s4.subtext"),
+    },
   ];
 
   const MATERIALS: IndustryMaterial[] = [
-    { name: t("industry.converting.materials.m1.name"), abrasion: t("industry.converting.materials.m1.abrasion"), grade: "M2 HSS / ASP23 PM", image: "/images/materials/BOPP-BOPET.webp" },
-    { name: t("industry.converting.materials.m2.name"), abrasion: t("industry.converting.materials.m2.abrasion"), grade: "D2 / M2 HSS with TiN", image: "/images/materials/label-stock.webp" },
-    { name: t("industry.converting.materials.m3.name"), abrasion: t("industry.converting.materials.m3.abrasion"), grade: "M2 HSS (ESD Coated)", image: "/images/materials/medical-nonwoven.webp" },
+    {
+      name: t("industry.converting.materials.m1.name"),
+      abrasion: t("industry.converting.materials.m1.abrasion"),
+      grade: "M2 HSS / ASP23 PM",
+      image: "/images/materials/BOPP-BOPET.webp",
+    },
+    {
+      name: t("industry.converting.materials.m2.name"),
+      abrasion: t("industry.converting.materials.m2.abrasion"),
+      grade: "D2 / M2 HSS with TiN",
+      image: "/images/materials/label-stock.webp",
+    },
+    {
+      name: t("industry.converting.materials.m3.name"),
+      abrasion: t("industry.converting.materials.m3.abrasion"),
+      grade: "M2 HSS (ESD Coated)",
+      image: "/images/materials/medical-nonwoven.webp",
+    },
   ];
 
   const PRODUCTS: IndustryProduct[] = getBlades(lang)
@@ -154,7 +195,10 @@ export default function ConvertingIndustry() {
         breadcrumbs={[
           { name: t("nav.home"), url: "/" },
           { name: t("footer.industries"), url: "/products" },
-          { name: t("footer.industry.converting"), url: "/converting-industry" },
+          {
+            name: t("footer.industry.converting"),
+            url: "/converting-industry",
+          },
         ]}
       />
       <Helmet>
@@ -171,9 +215,7 @@ export default function ConvertingIndustry() {
           products={PRODUCTS}
           filterCategories={FILTER_CATEGORIES}
         />
-        <CategoryLinksRow
-          slugs={["slitter-knives", "log-saw-blades"]}
-        />
+        <CategoryLinksRow slugs={["slitter-knives", "log-saw-blades"]} />
         <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
         <IndustryMaterialFocus materials={MATERIALS} />
         <IndustryOemPipeline />

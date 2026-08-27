@@ -411,7 +411,6 @@ export const blades: Blade[] = [
       lowPrice: 20,
       highPrice: 280,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -1371,7 +1370,6 @@ export const blades: Blade[] = [
       lowPrice: 180,
       highPrice: 1200,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -2384,7 +2382,6 @@ export const blades: Blade[] = [
       lowPrice: 25,
       highPrice: 320,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {

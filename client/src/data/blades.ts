@@ -152,18 +152,16 @@ export interface Blade {
    *  product actually fits. */
   rfqPlaceholder?: string;
 
-  // ── SEO — AggregateOffer price range (Google Rich Results) ──────────────
+  // ── Indicative price range — internal reference, NOT published ───────
+  // No product page shows a price, and marking up a price that is not visible
+  // violates Google's structured-data policy while buying nothing: only pages
+  // where a shopper can purchase are eligible for merchant listings. To
+  // publish a range, set showPrice in <SEO> on a page that states it on-page
+  // (see /custom).
   offers?: {
     lowPrice: number;
     highPrice: number;
   };
-  /** When true, the on-page Product JSON-LD emits a bare `Offer` (availability
-   *  + url only) instead of an AggregateOffer — no price, and no
-   *  shippingDetails, which is a price-bound merchant-listing feature. Use for
-   *  products where no price is shown anywhere on the page, since Google
-   *  requires marked-up content to be visible. `offers` itself (and
-   *  getBladeAggregateOffer, used by industry-page ItemLists) is unaffected. */
-  omitOfferPrice?: boolean;
 
   // ── SEO — FAQPage schema (ProductFAQ component) ───────────────────────────
   // Rendered by <ProductFAQ> just above the RFQ form.
@@ -174,13 +172,10 @@ export interface Blade {
   };
 }
 
-export interface BladeAggregateOffer {
-  "@type": "AggregateOffer";
-  lowPrice: number;
-  highPrice: number;
-  priceCurrency: "USD";
+export interface BladeOffer {
+  "@type": "Offer";
   availability: "https://schema.org/InStock";
-  offerCount: string;
+  url: string;
 }
 
 // ===== BLADE DATA =====
@@ -606,7 +601,6 @@ export const blades: Blade[] = [
       lowPrice: 20,
       highPrice: 280,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -1553,7 +1547,6 @@ export const blades: Blade[] = [
       lowPrice: 180,
       highPrice: 1200,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -2512,7 +2505,6 @@ export const blades: Blade[] = [
       lowPrice: 25,
       highPrice: 320,
     },
-    omitOfferPrice: true,
 
     faqs: {
       technical: [
@@ -3064,7 +3056,6 @@ export const blades: Blade[] = [
       lowPrice: 30,
       highPrice: 350,
     },
-    omitOfferPrice: true,
 
     faqs: {
       technical: [
@@ -4307,7 +4298,6 @@ export const blades: Blade[] = [
       lowPrice: 40,
       highPrice: 600,
     },
-    omitOfferPrice: true,
     faqs: {
       technical: [
         {
@@ -6685,17 +6675,15 @@ function normalizeBladeOfferId(value: string): string {
     .replace(/\/$/, "");
 }
 
-export function getBladeAggregateOffer(target: string): BladeAggregateOffer {
-  const blade = getBladeById(normalizeBladeOfferId(target));
-  const offer = blade?.offers ?? { lowPrice: 20, highPrice: 800 };
-
+/** Offer block for the Product entries in industry-page ItemLists. Carries no
+ *  price: the linked product pages don't show one, so publishing a range here
+ *  would put the same unmarked-up price in front of Google by another route. */
+export function getBladeOffer(target: string): BladeOffer {
+  const id = normalizeBladeOfferId(target);
   return {
-    "@type": "AggregateOffer",
-    lowPrice: offer.lowPrice,
-    highPrice: offer.highPrice,
-    priceCurrency: "USD",
+    "@type": "Offer",
     availability: "https://schema.org/InStock",
-    offerCount: "1",
+    url: `https://sureay.com/products/${id}`,
   };
 }
 

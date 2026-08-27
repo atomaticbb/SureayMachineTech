@@ -58,6 +58,11 @@ export interface ProductData {
     lowPrice?: number;
     highPrice?: number;
   };
+  /** Opt in to publishing the price range in Product JSON-LD. Google requires
+   *  marked-up content to be visible, so set this ONLY on pages that actually
+   *  show the price to the reader (today: /custom). Without it the page emits
+   *  a bare Offer and `offers` is carried as internal reference data only. */
+  showPrice?: boolean;
 }
 
 export interface BreadcrumbItem {
@@ -180,10 +185,15 @@ export default function SEO({
           name: productData.brand ?? "Sureay",
         },
         ...(productData.offers && {
-          // Google requires marked-up prices to be visible on the page. Pages
-          // that show no price emit a bare Offer (no price, no shippingDetails
-          // — that is a price-bound merchant-listing feature).
+          // Google requires marked-up prices to be visible on the page, and
+          // only pages where a shopper can buy are eligible for merchant
+          // listings anyway. So price is opt-in via showPrice; everything else
+          // emits a bare Offer (no price, and no shippingDetails — that is a
+          // price-bound merchant-listing feature). The bare Offer is kept
+          // because it is the remaining property that qualifies these pages
+          // for product snippets.
           offers:
+            productData.showPrice === true &&
             productData.offers.lowPrice !== undefined &&
             productData.offers.highPrice !== undefined
               ? {

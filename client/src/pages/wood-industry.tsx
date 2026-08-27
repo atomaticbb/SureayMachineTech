@@ -14,7 +14,7 @@ import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
 import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeAggregateOffer } from "@/data/blades";
+import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
@@ -60,7 +60,7 @@ const PAGE_SCHEMA = {
           "Heavy-duty D2, Cr12MoV & TCT drum and disc chipper knives for industrial forestry and biomass processing. Through-hardened HRC 57–62 with deep cryogenic treatment.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeAggregateOffer("wood-chipper-blades"),
+        offers: getBladeOffer("wood-chipper-blades"),
       },
     },
     {
@@ -75,7 +75,7 @@ const PAGE_SCHEMA = {
           "HSS & D2 drum chipper knives for heavy forestry, whole-tree biomass processing and demolition wood recycling. Vacuum-hardened HRC 58–62.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeAggregateOffer("wood-chipper-blades"),
+        offers: getBladeOffer("wood-chipper-blades"),
       },
     },
     {
@@ -90,7 +90,7 @@ const PAGE_SCHEMA = {
           "Reversible double-edge wood chipper knives in T10, 9CrSi & Cr12MoV. Flip when dull — doubles installed life before regrinding. OEM fit for Bandit, Vermeer & Patriot.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeAggregateOffer("wood-chipper-blades"),
+        offers: getBladeOffer("wood-chipper-blades"),
       },
     },
     {
@@ -105,7 +105,7 @@ const PAGE_SCHEMA = {
           "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV and A8 Modified steel. HRC 54–60 through-hardened, ±0.05 mm parallelism. OEM fit for Bandit, Vermeer & Morbark.",
         brand: { "@type": "Brand", name: "Sureay" },
         url: "https://sureay.com/products/wood-chipper-anvils",
-        offers: getBladeAggregateOffer("wood-chipper-anvils"),
+        offers: getBladeOffer("wood-chipper-anvils"),
       },
     },
   ],
@@ -138,16 +138,51 @@ export default function WoodIndustry() {
   };
 
   const SPECS: IndustrySpec[] = [
-    { label: t("industry.wood.specs.s1.label"), mainValue: "55–62", unit: "HRC", subtext: t("industry.wood.specs.s1.subtext") },
-    { label: t("industry.wood.specs.s2.label"), mainValue: "T10 → TCT", subtext: t("industry.wood.specs.s2.subtext"), isTextual: true },
-    { label: t("industry.wood.specs.s3.label"), mainValue: "±0.05", unit: "mm", subtext: t("industry.wood.specs.s3.subtext") },
-    { label: t("industry.wood.specs.s4.label"), mainValue: "25°–42°", subtext: t("industry.wood.specs.s4.subtext"), isTextual: true },
+    {
+      label: t("industry.wood.specs.s1.label"),
+      mainValue: "55–62",
+      unit: "HRC",
+      subtext: t("industry.wood.specs.s1.subtext"),
+    },
+    {
+      label: t("industry.wood.specs.s2.label"),
+      mainValue: "T10 → TCT",
+      subtext: t("industry.wood.specs.s2.subtext"),
+      isTextual: true,
+    },
+    {
+      label: t("industry.wood.specs.s3.label"),
+      mainValue: "±0.05",
+      unit: "mm",
+      subtext: t("industry.wood.specs.s3.subtext"),
+    },
+    {
+      label: t("industry.wood.specs.s4.label"),
+      mainValue: "25°–42°",
+      subtext: t("industry.wood.specs.s4.subtext"),
+      isTextual: true,
+    },
   ];
 
   const MATERIALS: IndustryMaterial[] = [
-    { name: t("industry.wood.materials.m1.name"), abrasion: t("industry.wood.materials.m1.abrasion"), grade: "T10 / 9CrSi (HRC 55–58)", image: "/images/materials/green-softwood.webp" },
-    { name: t("industry.wood.materials.m2.name"), abrasion: t("industry.wood.materials.m2.abrasion"), grade: "D2 / Cr12MoV (HRC 58–62)", image: "/images/materials/dry-hardwood.webp" },
-    { name: t("industry.wood.materials.m3.name"), abrasion: t("industry.wood.materials.m3.abrasion"), grade: "6CrW2Si / TCT Carbide", image: "/images/materials/demolition-wood.webp" },
+    {
+      name: t("industry.wood.materials.m1.name"),
+      abrasion: t("industry.wood.materials.m1.abrasion"),
+      grade: "T10 / 9CrSi (HRC 55–58)",
+      image: "/images/materials/green-softwood.webp",
+    },
+    {
+      name: t("industry.wood.materials.m2.name"),
+      abrasion: t("industry.wood.materials.m2.abrasion"),
+      grade: "D2 / Cr12MoV (HRC 58–62)",
+      image: "/images/materials/dry-hardwood.webp",
+    },
+    {
+      name: t("industry.wood.materials.m3.name"),
+      abrasion: t("industry.wood.materials.m3.abrasion"),
+      grade: "6CrW2Si / TCT Carbide",
+      image: "/images/materials/demolition-wood.webp",
+    },
   ];
 
   const PRODUCTS: IndustryProduct[] = getBlades(lang)

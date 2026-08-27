@@ -100,25 +100,70 @@ const PROCESS = [
 
 // ─── Profile Types ────────────────────────────────────────────────────────────
 const PROFILES = [
-  { nameKey: "custom.profiles.p1.name", descriptionKey: "custom.profiles.p1.description" },
-  { nameKey: "custom.profiles.p2.name", descriptionKey: "custom.profiles.p2.description" },
-  { nameKey: "custom.profiles.p3.name", descriptionKey: "custom.profiles.p3.description" },
-  { nameKey: "custom.profiles.p4.name", descriptionKey: "custom.profiles.p4.description" },
-  { nameKey: "custom.profiles.p5.name", descriptionKey: "custom.profiles.p5.description" },
-  { nameKey: "custom.profiles.p6.name", descriptionKey: "custom.profiles.p6.description" },
-  { nameKey: "custom.profiles.p7.name", descriptionKey: "custom.profiles.p7.description" },
-  { nameKey: "custom.profiles.p8.name", descriptionKey: "custom.profiles.p8.description" },
+  {
+    nameKey: "custom.profiles.p1.name",
+    descriptionKey: "custom.profiles.p1.description",
+  },
+  {
+    nameKey: "custom.profiles.p2.name",
+    descriptionKey: "custom.profiles.p2.description",
+  },
+  {
+    nameKey: "custom.profiles.p3.name",
+    descriptionKey: "custom.profiles.p3.description",
+  },
+  {
+    nameKey: "custom.profiles.p4.name",
+    descriptionKey: "custom.profiles.p4.description",
+  },
+  {
+    nameKey: "custom.profiles.p5.name",
+    descriptionKey: "custom.profiles.p5.description",
+  },
+  {
+    nameKey: "custom.profiles.p6.name",
+    descriptionKey: "custom.profiles.p6.description",
+  },
+  {
+    nameKey: "custom.profiles.p7.name",
+    descriptionKey: "custom.profiles.p7.description",
+  },
+  {
+    nameKey: "custom.profiles.p8.name",
+    descriptionKey: "custom.profiles.p8.description",
+  },
 ];
 
 // ─── Standard-shape cross-links — reuse existing productList.filters.* labels ──
 const STANDARD_SHAPE_LINKS = [
-  { href: "/categories/granulator-blades", labelKey: "productList.filters.granulatorBlades" },
-  { href: "/categories/shredder-blades", labelKey: "productList.filters.shredderBlades" },
-  { href: "/categories/slitter-knives", labelKey: "productList.filters.slitterKnives" },
-  { href: "/categories/shear-blades", labelKey: "productList.filters.shearBlades" },
-  { href: "/categories/cold-saw-blades", labelKey: "productList.filters.coldSawBlades" },
-  { href: "/categories/log-saw-blades", labelKey: "productList.filters.logSawBlades" },
-  { href: "/categories/wood-chipper-blades", labelKey: "productList.filters.woodChipperBlades" },
+  {
+    href: "/categories/granulator-blades",
+    labelKey: "productList.filters.granulatorBlades",
+  },
+  {
+    href: "/categories/shredder-blades",
+    labelKey: "productList.filters.shredderBlades",
+  },
+  {
+    href: "/categories/slitter-knives",
+    labelKey: "productList.filters.slitterKnives",
+  },
+  {
+    href: "/categories/shear-blades",
+    labelKey: "productList.filters.shearBlades",
+  },
+  {
+    href: "/categories/cold-saw-blades",
+    labelKey: "productList.filters.coldSawBlades",
+  },
+  {
+    href: "/categories/log-saw-blades",
+    labelKey: "productList.filters.logSawBlades",
+  },
+  {
+    href: "/categories/wood-chipper-blades",
+    labelKey: "productList.filters.woodChipperBlades",
+  },
 ];
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -206,12 +251,27 @@ export default function CustomBlades() {
           description: t("custom.productData.description"),
           material: "D2, H13, PM-HSS, Solid Carbide",
           specs: [
-            { label: t("custom.productData.specs.profileToleranceLabel"), value: "±0.02 mm" },
-            { label: t("custom.productData.specs.edgeToleranceLabel"), value: "±0.005 mm" },
-            { label: t("custom.stats.moq.label"), value: t("custom.stats.moq.value") },
-            { label: t("custom.productData.specs.leadTimeLabel"), value: t("custom.stats.lead.value") },
+            {
+              label: t("custom.productData.specs.profileToleranceLabel"),
+              value: "±0.02 mm",
+            },
+            {
+              label: t("custom.productData.specs.edgeToleranceLabel"),
+              value: "±0.005 mm",
+            },
+            {
+              label: t("custom.stats.moq.label"),
+              value: t("custom.stats.moq.value"),
+            },
+            {
+              label: t("custom.productData.specs.leadTimeLabel"),
+              value: t("custom.stats.lead.value"),
+            },
           ],
+          // This page states the $20-$800 range in FAQ 02, so the markup
+          // matches visible content and may carry the price.
           offers: { lowPrice: 20, highPrice: 800 },
+          showPrice: true,
         }}
       />
 
