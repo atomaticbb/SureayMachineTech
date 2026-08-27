@@ -86,7 +86,7 @@ const PAGE_SCHEMA = {
         "@type": "Product",
         name: "Metal Shredder Blades",
         image:
-          "https://sureay.com/images/products/shredder-blades/shredder-blades-02.webp",
+          "https://sureay.com/images/products/shredder-blades/shredder-blades-05.webp",
         description:
           "Multi-shaft shredder blades in D2 and H13 for steel, aluminum, and mixed metal scrap size reduction.",
         brand: { "@type": "Brand", name: "Sureay" },

@@ -1058,11 +1058,11 @@ export const blades: Blade[] = [
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Metal Shredder Blades",
-    image: "/images/products/shredder-blades/shredder-blades-02.webp",
+    image: "/images/products/shredder-blades/shredder-blades-05.webp",
     badge: "Heavy Duty",
     badgeColor: "red",
     gallery: [
-      "/images/products/shredder-blades/shredder-blades-02.webp",
+      "/images/products/shredder-blades/shredder-blades-05.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],

@@ -868,11 +868,11 @@ export const blades: Blade[] = [
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Cuchillas trituradoras de metal",
-    image: "/images/products/shredder-blades/shredder-blades-02.webp",
+    image: "/images/products/shredder-blades/shredder-blades-05.webp",
     badge: "Carga pesada",
     badgeColor: "red",
     gallery: [
-      "/images/products/shredder-blades/shredder-blades-02.webp",
+      "/images/products/shredder-blades/shredder-blades-05.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],

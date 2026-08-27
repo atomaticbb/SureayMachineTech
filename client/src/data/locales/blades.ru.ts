@@ -871,11 +871,11 @@ export const blades: Blade[] = [
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Металлические ножи для шредера",
-    image: "/images/products/shredder-blades/shredder-blades-02.webp",
+    image: "/images/products/shredder-blades/shredder-blades-05.webp",
     badge: "Сверхмощный",
     badgeColor: "red",
     gallery: [
-      "/images/products/shredder-blades/shredder-blades-02.webp",
+      "/images/products/shredder-blades/shredder-blades-05.webp",
       "/images/products/shredder-blades/shredder-blades.webp",
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
