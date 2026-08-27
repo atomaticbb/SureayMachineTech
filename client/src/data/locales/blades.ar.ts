@@ -2224,9 +2224,9 @@ export const blades: Blade[] = [
     category: "granulator_blades",
     sector: "recycling",
     categoryDisplay: "شفرات المحبب",
-    image: "/images/products/granulator-blades/granulator-blades-01.webp",
+    image: "/images/products/granulator-blades/granulator-blades-06.webp",
     gallery: [
-      "/images/products/granulator-blades/granulator-blades-01.webp",
+      "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2365,6 +2365,7 @@ export const blades: Blade[] = [
       lowPrice: 25,
       highPrice: 320,
     },
+    omitOfferPrice: true,
     faqs: {
       technical: [
         {

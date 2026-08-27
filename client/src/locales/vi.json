@@ -282,7 +282,7 @@
   "contact.form.emailLabel": "Email doanh nghiệp",
   "contact.form.emailPlaceholder": "bạn@company.com",
   "contact.form.messageLabel": "Bạn cần gì?",
-  "contact.form.messagePlaceholder": "Ví dụ: Lưỡi dao thay thế OEM cho Vecoplan VA 2000, thép D2, qty 20, giao hàng tận Đức...",
+  "contact.form.messagePlaceholder": "Ví dụ: Lưỡi dao thay thế OEM cho model máy của bạn, thép D2, qty 20, giao hàng tận Đức...",
   "contact.form.cadLabel": "CAD / Bản vẽ",
   "contact.form.cadMaxSize": "tối đa {{size}} MB",
   "contact.form.cadDropZoneTitle": "Tải lên CAD / Bản vẽ kỹ thuật",

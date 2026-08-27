@@ -180,39 +180,47 @@ export default function SEO({
           name: productData.brand ?? "Sureay",
         },
         ...(productData.offers && {
-          offers: {
-            "@type": "AggregateOffer",
-            ...(productData.offers.lowPrice !== undefined &&
-              productData.offers.highPrice !== undefined && {
-                lowPrice: productData.offers.lowPrice,
-                highPrice: productData.offers.highPrice,
-                offerCount: "1",
-              }),
-            priceCurrency: "USD",
-            availability: "https://schema.org/InStock",
-            shippingDetails: {
-              "@type": "OfferShippingDetails",
-              shippingDestination: {
-                "@type": "DefinedRegion",
-                addressCountry: "US",
-              },
-              deliveryTime: {
-                "@type": "ShippingDeliveryTime",
-                handlingTime: {
-                  "@type": "QuantitativeValue",
-                  minValue: 1,
-                  maxValue: 15,
-                  unitCode: "DAY",
+          // Google requires marked-up prices to be visible on the page. Pages
+          // that show no price emit a bare Offer (no price, no shippingDetails
+          // — that is a price-bound merchant-listing feature).
+          offers:
+            productData.offers.lowPrice !== undefined &&
+            productData.offers.highPrice !== undefined
+              ? {
+                  "@type": "AggregateOffer",
+                  lowPrice: productData.offers.lowPrice,
+                  highPrice: productData.offers.highPrice,
+                  offerCount: "1",
+                  priceCurrency: "USD",
+                  availability: "https://schema.org/InStock",
+                  shippingDetails: {
+                    "@type": "OfferShippingDetails",
+                    shippingDestination: {
+                      "@type": "DefinedRegion",
+                      addressCountry: "US",
+                    },
+                    deliveryTime: {
+                      "@type": "ShippingDeliveryTime",
+                      handlingTime: {
+                        "@type": "QuantitativeValue",
+                        minValue: 1,
+                        maxValue: 15,
+                        unitCode: "DAY",
+                      },
+                      transitTime: {
+                        "@type": "QuantitativeValue",
+                        minValue: 5,
+                        maxValue: 12,
+                        unitCode: "DAY",
+                      },
+                    },
+                  },
+                }
+              : {
+                  "@type": "Offer",
+                  availability: "https://schema.org/InStock",
+                  url: canonicalHref,
                 },
-                transitTime: {
-                  "@type": "QuantitativeValue",
-                  minValue: 5,
-                  maxValue: 12,
-                  unitCode: "DAY",
-                },
-              },
-            },
-          },
         }),
       }
     : null;

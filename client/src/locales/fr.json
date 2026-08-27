@@ -282,7 +282,7 @@
   "contact.form.emailLabel": "Courriel professionnel",
   "contact.form.emailPlaceholder": "you@company.com",
   "contact.form.messageLabel": "De quoi avez-vous besoin ?",
-  "contact.form.messagePlaceholder": "Par exemple, Lames de rechange OEM pour Vecoplan VA 2000, acier D2, qty 20, livraison en Allemagne...",
+  "contact.form.messagePlaceholder": "Par exemple, Lames de rechange OEM pour votre modèle de machine, acier D2, qty 20, livraison en Allemagne...",
   "contact.form.cadLabel": "CAO / Dessin",
   "contact.form.cadMaxSize": "max {{size}} MB",
   "contact.form.cadDropZoneTitle": "Télécharger un dessin technique ou de CAO",

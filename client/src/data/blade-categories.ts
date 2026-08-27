@@ -78,12 +78,16 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "granulator-blades",
     category: "granulator_blades",
-    title: "Granulator Blades & Crusher Knives",
+    // Titles describe the whole routing set, not one member. The old title
+    // ("Granulator Blades & Crusher Knives") was a substring of the
+    // /products/granulator-blades title and cannibalized it in search.
+    title: "Plastic Size-Reduction Blades: Granulator, Pelletizer & Compactor",
+    seoTitle: "Granulator, Pelletizer & Compactor Blades",
     shortName: "Granulator Blades",
     tagline: "Maximized regrind quality, extended MTBR",
     heroImage: "/images/categories/granulator-blades-nav.webp",
     description:
-      "Plastic granulator & crusher knives for size reduction lines. Optimized rake geometry preserves regrind quality. Fits rotary, claw & hopper machines.",
+      "Choose between granulator rotor and bed knives, strand pelletizer rotors, die-face cutting knives, compactor blades and melt filter scrapers.",
     specItems: [
       { label: "Materials", value: "H13 · D2 · M2 HSS · Carbide" },
       { label: "Geometry", value: "Optimized rake angle" },

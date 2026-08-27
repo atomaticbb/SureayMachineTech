@@ -282,7 +282,7 @@
   "contact.form.emailLabel": "Деловая электронная почта",
   "contact.form.emailPlaceholder": "you@company.com",
   "contact.form.messageLabel": "Что вам нужно?",
-  "contact.form.messagePlaceholder": "Например, OEM сменные лезвия для Vecoplan VA 2000, сталь D2, количество 20, доставка в Германию...",
+  "contact.form.messagePlaceholder": "Например, OEM сменные лезвия для вашей модели станка, сталь D2, количество 20, доставка в Германию...",
   "contact.form.cadLabel": "CAD / Чертежи",
   "contact.form.cadMaxSize": "максимальный {{size}} MB",
   "contact.form.cadDropZoneTitle": "Загрузка CAD / технического чертежа",

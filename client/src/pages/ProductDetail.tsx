@@ -5,6 +5,7 @@
  * Content zones:
  *   1  BladeHero          — CAD Viewport + Spec Ledger
  *   1b TrustProtocol      — ISO / Heat Treatment credential strip
+ *   1c introNote          — Optional lead-in prose
  *   2  DecisiveSpecs      — Image combination + spec table
  *   3  ComprehensiveData  — Standard dimension tables
  *   4  TechnicalAudit     — Engineering Audit Log
@@ -132,6 +133,17 @@ export default function ProductDetail() {
               <TrustProtocol />
             </div>
 
+            {/* Zone 1c — Lead-in prose (renders only when present) */}
+            {blade.introNote && (
+              <div className="-mx-4 sm:-mx-8">
+                <section className="max-w-7xl mx-auto px-6 sm:px-8">
+                  <p className="text-[16px] text-slate-600 leading-relaxed max-w-[80ch]">
+                    {blade.introNote}
+                  </p>
+                </section>
+              </div>
+            )}
+
             {/* Zone 2 — Decisive Specifications: spec table + image */}
             <div className="-mx-4 sm:-mx-8">
               <DecisiveSpecs blade={blade} />
@@ -184,7 +196,10 @@ export default function ProductDetail() {
 
         {/* Zone 7 — Contact / RFQ form */}
         <div id="rfq">
-          <ContactRFQ productName={blade.name} />
+          <ContactRFQ
+            productName={blade.name}
+            messagePlaceholder={blade.rfqPlaceholder}
+          />
         </div>
       </main>
 

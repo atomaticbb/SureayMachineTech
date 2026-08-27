@@ -62,7 +62,7 @@
   "contact.form.emailLabel": "Business Email",
   "contact.form.emailPlaceholder": "you@company.com",
   "contact.form.messageLabel": "What do you need?",
-  "contact.form.messagePlaceholder": "E.g., OEM replacement blades for Vecoplan VA 2000, D2 steel, qty 20, delivery to Germany...",
+  "contact.form.messagePlaceholder": "E.g., OEM replacement blades for your machine model, D2 steel, qty 20, delivery to Germany...",
   "contact.form.cadLabel": "CAD / Drawing",
   "contact.form.cadMaxSize": "max {{size}} MB",
   "contact.form.cadDropZoneTitle": "Upload CAD / Technical Drawing",

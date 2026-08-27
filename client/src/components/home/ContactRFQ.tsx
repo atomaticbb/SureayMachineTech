@@ -15,10 +15,14 @@ function fmtSize(bytes: number) {
 
 export default function ContactRFQ({
   productName,
+  messagePlaceholder,
   formLocation = "homepage_bottom",
   eventCategory = "homepage_rfq",
 }: {
   productName?: string;
+  /** Product-specific example for the message field. Falls back to the
+   *  brand-neutral global placeholder when a page has no better example. */
+  messagePlaceholder?: string;
   formLocation?: string;
   eventCategory?: string;
 } = {}) {
@@ -379,7 +383,9 @@ export default function ContactRFQ({
                     id="rfq-message"
                     rows={4}
                     name="message"
-                    placeholder={t("contact.form.messagePlaceholder")}
+                    placeholder={
+                      messagePlaceholder ?? t("contact.form.messagePlaceholder")
+                    }
                     className="w-full px-3 py-2.5 border border-slate-200 rounded-none text-sm focus:outline-none focus:border-[#003366] focus:ring-1 focus:ring-[#003366]/20 transition-all resize-none"
                     required
                   />

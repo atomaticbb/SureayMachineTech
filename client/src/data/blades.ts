@@ -142,16 +142,27 @@ export interface Blade {
   catalogUrl?: string;
   compatibleMachines?: string[]; // OEM brand compatibility e.g. ["BHS", "Tidland", "EREMA"]
 
+  /** Optional prose paragraph rendered between the hero and the Decisive
+   *  Specifications table. Use for buyer-facing context that belongs above the
+   *  spec tables rather than further down in the technical audit. */
+  introNote?: string;
+
+  /** Product-specific example text for the RFQ message field. Overrides the
+   *  brand-neutral global placeholder so the example names a machine this
+   *  product actually fits. */
+  rfqPlaceholder?: string;
+
   // ── SEO — AggregateOffer price range (Google Rich Results) ──────────────
   offers?: {
     lowPrice: number;
     highPrice: number;
   };
-  /** When true, the on-page Product JSON-LD omits lowPrice/highPrice from
-   *  `offers` (kept: priceCurrency, availability, shippingDetails). Use for
-   *  products where no price is shown anywhere on the page — otherwise
-   *  `offers` (and getBladeAggregateOffer, used by industry-page ItemLists)
-   *  are unaffected. */
+  /** When true, the on-page Product JSON-LD emits a bare `Offer` (availability
+   *  + url only) instead of an AggregateOffer — no price, and no
+   *  shippingDetails, which is a price-bound merchant-listing feature. Use for
+   *  products where no price is shown anywhere on the page, since Google
+   *  requires marked-up content to be visible. `offers` itself (and
+   *  getBladeAggregateOffer, used by industry-page ItemLists) is unaffected. */
   omitOfferPrice?: boolean;
 
   // ── SEO — FAQPage schema (ProductFAQ component) ───────────────────────────
@@ -2397,9 +2408,9 @@ export const blades: Blade[] = [
     category: "granulator_blades",
     sector: "recycling",
     categoryDisplay: "Granulator Blades",
-    image: "/images/products/granulator-blades/granulator-blades-01.webp",
+    image: "/images/products/granulator-blades/granulator-blades-06.webp",
     gallery: [
-      "/images/products/granulator-blades/granulator-blades-01.webp",
+      "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
@@ -2412,6 +2423,11 @@ export const blades: Blade[] = [
 
     link: "/products/granulator-blades",
     isFeatured: true,
+    rfqPlaceholder:
+      "E.g., rotor and bed knives for a Rapid granulator, D2 steel, 3 sets — drawing attached",
+
+    introNote:
+      "Rotor knives and bed knives wear at different rates and are rarely replaced on the same schedule. Rotor knives take the primary cutting load and typically need sharpening two to three times more often than the bed knife, but the cutting gap is set between the two — so a fresh rotor knife against a rounded bed knife still tears material and generates fines. Sureay supplies both as a matched set, ground from the same steel batch, so the gap holds after the first regrind. Bed knives (also called stator or fixed knives) are available in the same D2, SKD-11, DC53 and Cr12MoV grades.",
     compatibleMachines: [
       "Rapid Granulator",
       "Herbold Meckesheim",
@@ -2496,6 +2512,7 @@ export const blades: Blade[] = [
       lowPrice: 25,
       highPrice: 320,
     },
+    omitOfferPrice: true,
 
     faqs: {
       technical: [
@@ -2529,6 +2546,11 @@ export const blades: Blade[] = [
           answer:
             "The primary indicator is regrind particle size distribution - when the oversize fraction exceeds 8–10% of output weight, rotor knives need sharpening. Secondary indicators are a 15%+ increase in motor amp draw above baseline and elevated dust fraction. Each Sureay blade can typically be resharpened 3–5 times before the bevel geometry reaches minimum usable material depth, at which point replacement is more economical.",
         },
+        {
+          question: "Do blades or the screen control my regrind particle size?",
+          answer:
+            "The screen sets the particle size — material stays in the cutting chamber until it is small enough to pass through. Blades control something different: how cleanly that material is cut on the way there. Dull or badly angled knives tear rather than shear, which produces dust and fines that pass the screen but lower the value of your regrind. If your particle size is wrong, change the screen. If your particle size is right but the fines fraction is climbing, look at the knives and the cutting gap.",
+        },
       ],
       company: [
         {
@@ -2540,7 +2562,7 @@ export const blades: Blade[] = [
           question:
             "What makes Sureay's heat treatment different from cheaper alternatives?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, which raises wear resistance and, more importantly, keeps hardness uniform along the full length of the cutting edge — the single biggest cause of uneven wear on long granulator knives is a soft section left by incomplete transformation.",
         },
         {
           question: "Do you ship globally and how long does it take?",

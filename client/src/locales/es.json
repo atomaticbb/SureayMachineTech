@@ -282,7 +282,7 @@
   "contact.form.emailLabel": "Correo electrónico profesional",
   "contact.form.emailPlaceholder": "you@company.com",
   "contact.form.messageLabel": "¿Qué necesita?",
-  "contact.form.messagePlaceholder": "Por ejemplo, cuchillas de recambio OEM para Vecoplan VA 2000, acero D2, 20 unidades, envío a Alemania...",
+  "contact.form.messagePlaceholder": "Por ejemplo, cuchillas de recambio OEM para su modelo de máquina, acero D2, 20 unidades, envío a Alemania...",
   "contact.form.cadLabel": "CAD / Dibujo",
   "contact.form.cadMaxSize": "max {{tamaño}} MB",
   "contact.form.cadDropZoneTitle": "Cargar CAD / Dibujo técnico",

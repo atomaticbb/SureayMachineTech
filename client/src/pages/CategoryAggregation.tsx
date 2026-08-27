@@ -126,7 +126,7 @@ export default function CategoryAggregation() {
         />
         <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex items-center">
           <div className="w-full md:w-[68%] lg:w-[72%]">
-            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-black text-white tracking-tight leading-tight md:whitespace-nowrap">
+            <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-black text-white tracking-tight leading-tight">
               {meta.title}
             </h1>
             <p className="text-white/50 text-[16px] leading-snug mt-1.5 max-w-2xl">
