@@ -91,6 +91,201 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "tire-shredder-blade-wear-steel-cord",
+    tag: "TECHNICAL GUIDE",
+    date: "01.SEP.2026",
+    title: "Steel Cord Is the Real Enemy: Reading Wear on Tire Shredder Blades",
+    excerpt:
+      "Tire shredder blades rarely wear out — they break. How to read the four wear signatures on a returned blade set, why HRC 54–58 outlasts HRC 62 in front of bead wire, and how a tenth of a millimetre of stack error turns shearing into tearing.",
+    image: "/images/news/tire-shredder-rotor-cutting-chamber.webp",
+    readTime: "7 MIN",
+    seoTitle: "Tire Shredder Blades: Reading Wear from Steel Cord | Sureay",
+    metaDescription:
+      "Why tire shredder blades chip instead of dulling, how to read four wear signatures on a returned set, and why bead wire makes HRC 54–58 outlast harder tool steel.",
+    keywords:
+      "tire shredder blades, tire recycling blades, TDF blades, 3 claw shredder blades, bead wire blade chipping, Cru-Wear tire shredder knives, rotary shear blades tire, tire shredder blade hardness",
+    relatedProductIds: [
+      "tire-shredder-blades",
+      "twin-shaft-blades-recycling",
+      "single-shaft-shredder-blades",
+    ],
+    keyFacts: {
+      intro:
+        "In a tire shredder the rubber is what you get paid to process, and the steel inside it is what decides how long the blade lasts. Most premature failures in this application trace back to impact from bead and belt wire, not to abrasion.",
+      bullets: [
+        "Tire blades fail by fracture, not by dulling — crescent chips on the shear face are the signature",
+        "Working hardness band: HRC 54–58. Harder grades such as D2 at 60–62 chip on bead wire",
+        "Preferred grades: Cru-Wear (PGK) for high-volume lines, Modified A8 for cost-balanced operations",
+        "A thickness tolerance of ±0.05 mm keeps the machine shearing instead of tearing and stretching",
+        "Blade thickness sets TDF chip size — typically 50.8 mm (2 in.) on primary passenger-tire rotors",
+      ],
+    },
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A tire shredder blade almost never comes off the rotor worn out. It comes off broken. Pull a set after four or five months on whole passenger tires and you will not find the smooth, rounded edges a plastics rotor gives you — you will find crescent-shaped bites taken out of the shear face, clustered where the hook does its work. Rubber does not do that. Steel does.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Every passenger tire carries two bead bundles of high-tensile wire, each strand around a millimetre thick, wound into hoops stiff enough to hold the tire on the rim under pressure. Above them sit the belt plies: much finer filaments twisted into cords and laid under the tread. A blade meets both on nearly every rotation. Working out which of the two is chewing up your edge is most of the diagnosis.",
+      },
+      {
+        type: "image",
+        value: "/images/news/scrap-tires-shredder-feedstock.webp",
+      },
+      {
+        type: "h2",
+        value: "Abrasion Is Slow. Impact Is Not.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Abrasive wear rounds an edge predictably over thousands of hours, and it gives you warning — amp draw creeps, chip quality drifts, and you schedule a regrind. Impact damage does not creep. It removes material in an instant, one crescent at a time, and a bead bundle entering the cutting gap behaves far more like a small steel bar than like a wire.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That distinction explains a result most buyers find backwards. A blade grade chosen for wear resistance can fail faster than a softer one. D2 at 60–62 HRC will outlast nearly anything in an abrasive plastics stream, which is exactly why it is the default for [twin-shaft shredder blades](/products/twin-shaft-blades-recycling) on rigid plastics. Put that same steel in front of bead wire and the carbide-rich, high-hardness structure that made it wear-resistant turns into a liability. Under a sharp impact load it has nowhere to go, so it fractures.",
+      },
+      {
+        type: "callout",
+        value:
+          "Engineering Note: Specify tire blades for what breaks them, not for what wears them. Toughness sets the service life in this application. Hardness only sets the interval between regrinds once the blade survives the wire.",
+      },
+      {
+        type: "h2",
+        value: "Four Wear Signatures and What They Are Telling You",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Lay a returned set out on a bench and the failure mode is usually obvious within a minute. Here is what to look for, and what each pattern means back on the rotor.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Signature", "What you see", "Root cause", "What to do"],
+        tableRows: [
+          [
+            "Crescent chipping",
+            "Small semicircular bites with sharp fracture faces along the cutting edge",
+            "Bead and belt wire impact against a grade that is too hard or too brittle",
+            "Move to a tougher grade inside HRC 54–58 rather than raising hardness",
+          ],
+          [
+            "Rounded, polished hook nose",
+            "Uniform bright wear, no fractures, amp draw creeping upward",
+            "Normal abrasion — the blade is telling you the regrind window is open",
+            "Pull for regrind before the edge radius grows enough to start tearing",
+          ],
+          [
+            "Wire wrap on the shaft",
+            "Long unbroken wire wound around the rotor block, TDF chips with wire tails",
+            "Cutting clearance has opened up and the machine is tearing instead of shearing",
+            "Measure blade and spacer thickness across the whole stack, not one disc",
+          ],
+          [
+            "Fracture at the claw root",
+            "An entire claw missing, single clean fracture face",
+            "Torque spike from a rim, an axle or an OTR sidewall, or a root radius ground too tight",
+            "Review feed control, then confirm root geometry — not only hardness — on the replacement",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "The two middle rows are the ones plants confuse most often. Both push power consumption up. Only one of them is fixed by changing blades.",
+      },
+      {
+        type: "h2",
+        value: "Why HRC 54–58 Outlasts HRC 62 Here",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Tire blades sit in a narrower hardness band than almost any other shredding application. Below roughly 54 HRC the edge deforms and rolls under the rubber load. Above 58 it starts giving up the fracture toughness it needs to survive wire strikes. The band exists because both failure modes are live at the same time, which is not the case on plastics or wood.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Grade choice inside that band is mostly a volume question. Cru-Wear (PGK) is the OEM-standard material on the major tire platforms: a high vanadium and tungsten carbide volume gives it wear resistance, and its carbide structure keeps it tough enough to shear steel belt without micro-chipping. Modified A8 trades some of that wear life for a lower entry cost and holds up well where tooling spend is the constraint. Both are standard grades for our [tire shredder blades](/products/tire-shredder-blades), alongside 42CrMo for lighter secondary duty.",
+      },
+      {
+        type: "image",
+        value: "/images/news/3-claw-tire-shredder-blades-set.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Claw count belongs in the same conversation, because it changes how hard each impact lands. Three claws is the standard on primary passenger and light-truck rotors for a practical reason: the hook openings have to be big enough to catch a whole tire. Crowd eight or ten claws onto the same diameter and the gaps get too small to bite a thick sidewall, so the tire rides on top of the rotor instead of being pulled in. Fewer, deeper hooks feed better. They also load harder, which is one more argument for toughness over hardness.",
+      },
+      {
+        type: "h2",
+        value: "The Two-Thousandths Rule",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Everything above assumes the machine is actually cutting. Often it is not. Tire rubber is elastic, so a cutting gap that would be harmless on rigid plastic lets the tire stretch away from the edge and tear instead of shear. Tearing pulls on the rotor shafts, spikes torque, drives up amp draw per tonne, and frees long lengths of steel wire to wrap around the rotor block. That is where most of the wasted energy on a tire line goes.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is why we grind tire knives to ±0.05 mm (0.002 in.) on thickness regardless of grade. The figure matters less as a single-blade specification than as a stack tolerance. A rotor carries dozens of blades, spacers and cleaning fingers, and thickness error accumulates along the shaft. Buy blades to tolerance, reuse worn spacers, and you have spent the budget without closing the gap. Order the wear parts as a matched set, or at minimum measure the spacers you plan to keep.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Thickness also decides your product. Blade thickness sets the chip width coming off a primary rotor, so a 50.8 mm (2 in.) blade produces the TDF size most cement kilns and downstream wire-liberation lines are set up to take. Changing thickness to chase blade life quietly changes the specification of what you are selling.",
+      },
+      {
+        type: "h2",
+        value: "A Field Rule Worth Keeping",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the edge is round, buy time: send the set out for regrind. If the edge is chipped, buy toughness: change the grade, not the hardness number. If the edges look fine and the amps are still climbing, stop looking at the blades and measure the stack — blade thickness, spacer thickness, cleaning-finger clearance, in that order. Three checks, and they cover most of what actually shortens blade life on a tire line.",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "Why do tire shredder blades chip instead of wearing down?",
+            answer:
+              "Because the damage is impact-driven rather than abrasion-driven. The steel bead bundles and belt cords inside a tire strike the cutting edge as concentrated impact loads, which remove material by fracture instead of by gradual wear. A grade optimised purely for wear resistance will usually chip faster in this application than a tougher, slightly softer one.",
+          },
+          {
+            question: "What hardness should tire shredder blades be?",
+            answer:
+              "HRC 54–58 is the working band for primary tire shredding. Softer than that and the edge deforms under the rubber load; harder than that and it loses the fracture toughness needed to survive bead wire. D2 at 60–62 HRC performs well on plastics but is generally too brittle for whole-tire feedstock.",
+          },
+          {
+            question: "How does blade thickness affect TDF chip size?",
+            answer:
+              "On a primary rotary shear, blade thickness sets the width of the tire-derived fuel chip. A 50.8 mm (2 in.) blade is the common standard for passenger and light-truck tires and produces a chip size suited to cement kilns and downstream wire liberation. Changing blade thickness changes the output specification, so it should be a deliberate decision rather than a side effect of a blade order.",
+          },
+          {
+            question:
+              "Do I need to replace spacers and cleaning fingers with the blades?",
+            answer:
+              "Not always, but they have to be measured. Cutting clearance on a tire rotor is the sum of every blade, spacer and cleaning finger along the shaft, so worn spacers keep the gap open even after new blades are fitted. Where a stack has been running for several blade cycles, replacing the complete set of wear parts to the same tolerance is usually the cheaper outcome.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "Send us your shredder model and a photo of a returned blade — the wear pattern usually tells us more than a drawing does. We manufacture drop-in replacements for Barclay, CM, SSI, Untha and Granutech-Saturn platforms, with matched spacers and cleaning fingers ground to the same tolerance. [Talk to our engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "lithium-battery-electrode-slitting-knives-guide",
     tag: "TECHNICAL GUIDE",
     date: "26.AUG.2026",
@@ -5629,6 +5824,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "tire-shredder-blade-wear-steel-cord": "Eric",
   "circular-knife-types": "Eric",
   "sureay-manufacturing-facility-capabilities": "lynn",
   "nonwoven-slitter-knives-guide": "Eric",
