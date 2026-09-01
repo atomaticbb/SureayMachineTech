@@ -4102,6 +4102,233 @@ export const blades: Blade[] = [
       ],
     },
   },
+
+  {
+    id: "tungsten-carbide-slitter-knives",
+    name: "Couteaux de refendage en carbure de tungstène",
+    fullName:
+      "Couteaux de refendage en carbure de tungstène pour refendage à forte usure",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Couteaux de refendage",
+    image:
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+    gallery: [
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
+    ],
+    galleryAlts: [
+      "Couteaux de refendage en carbure de tungstène, trois lames circulaires rectifiées à faces polies",
+      "Détail d'un couteau de refendage carbure montrant l'alésage central, les trous de fixation et le tranchant rectifié",
+    ],
+
+    description:
+      "Le carbure monobloc coûte six à dix fois plus cher que le D2. Ce surcoût se rentabilise dans exactement deux cas : lorsque votre bande contient une charge minérale abrasive, ou lorsque vos séries sont assez longues pour que le temps d'arrêt lors des changements — et non le prix du couteau — soit ce qui vous coûte réellement de l'argent. Carbure à grain micrométrique YG6, YG6X, YG8 et YG10X (ISO K10–K30) à 89,5–92,5 HRA, rectifié à ±0,002 mm, avec rapport de dureté et relevé dimensionnel dans chaque expédition.",
+
+    fullDescription:
+      "Les couteaux de refendage en carbure relèvent d'une décision de résistance à l'usure, et non d'une montée en gamme systématique. Si vous refendez du BOPP transparent en séries courtes, le D2 ou l'ASP23 PM vous servira mieux pour moins cher, et nous vous le dirons avant que vous ne commandiez. Cette page concerne les travaux où l'acier à outils ne peut réellement pas tenir un tranchant : films chargés en minéraux, stratifiés renforcés de verre, non-tissés abrasifs, feuillards enduits et carton à grande vitesse.\n\n## Quand la montée en gamme est rentable\n\nLe carbure vaut son prix lorsque le coût d'un arrêt de ligne dépasse le coût du couteau. Prenez votre nombre de changements de couteaux par mois, multipliez-le par le coût d'arrêt de chaque changement, et comparez à l'écart de prix. Sur une ligne où un changement coûte une heure de production, une durée de vie de tranchant multipliée par 10 se rembourse généralement en un ou deux cycles de couteaux. Sur une ligne où les changements sont rapides et peu coûteux, ce ne sera pas le cas.\n\n## Là où le carbure justifie son coût\n\n**Films chargés en minéraux :** BOPP chargé en TiO₂, PE chargé en carbonate de calcium, qualités mates et cavitées. C'est la charge qui détruit les tranchants en acier ; la dureté est la seule défense.\n\n**Stratifiés renforcés de verre et composites :** détourage de FR-4 et de préimprégnés, rubans renforcés de fibre de verre, bandes composites aluminium. La teneur en verre est profondément abrasive et émousse l'HSS en une seule équipe.\n\n**Non-tissés abrasifs :** meltblown chargé en minéraux, spunbond avec charge, supports abrasifs et substrats d'essuyage où le peluchage des fibres apparaît dès que le tranchant s'adoucit.\n\n**Feuille métallique, bande enduite et électrode de batterie :** feuille d'aluminium et de cuivre, bande enduite et stratifiée, où des bords sans bavure doivent tenir sur toute une bobine.\n\n**Carton et papier couché à grande vitesse :** supports couchés au kaolin et aux pigments, sur des lignes où un changement de couteau coûte une heure de production et où le prix du couteau est une erreur d'arrondi face à cela.\n\n## Là où le carbure est le mauvais choix\n\n**Chocs et coupes interrompues.** Le carbure est fragile. Si la bande accroche, si une bande de raccord passe, ou si le couteau peut toucher la contre-lame métal contre métal, le carbure s'écaille là où le D2 se déformerait et survivrait.\n\n**Substrats propres et non chargés en séries courtes.** Vous refendez du BOPP transparent, du kraft ordinaire ou du PE non chargé ? Le D2 ou l'ASP23 PM tiendra un tranchant assez longtemps, pour une fraction du coût.\n\n**Pas d'accès au rectifiage diamant.** Si ni vous ni votre partenaire de service ne peut réaffûter sur meules diamantées, un couteau carbure émoussé devient un rebut plutôt qu'un actif réaffûtable — et l'équation économique s'inverse.\n\n**Jeu mal réglé ou non vérifié.** Le carbure amplifie ce que votre montage fait déjà. Il ne compensera pas un arbre usé, un porte-couteau voilé, ni un jeu que personne n'a mesuré.",
+
+    link: "/products/tungsten-carbide-slitter-knives",
+
+    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
+
+    specs: [
+      {
+        label: "Material",
+        value:
+          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+      },
+      { label: "Hardness", value: "89.5–92.5 HRA" },
+      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
+      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
+      { label: "Outer Diameter", value: "20–300 mm" },
+      { label: "Thickness", value: "0.3–5.0 mm" },
+      {
+        label: "Tolerance",
+        value:
+          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+      },
+      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
+      {
+        label: "Edge Geometry",
+        value: "Single bevel, double bevel, hollow ground, razor",
+      },
+      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
+      {
+        label: "Applications",
+        value:
+          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+      },
+    ],
+
+    steelGrades: {
+      intro:
+        "La teneur en cobalt est le curseur du compromis : plus de cobalt signifie plus de ténacité et moins de fragilité, mais le tranchant s'émousse plus tôt. Les quatre nuances de carbure ci-dessous sont présentées face aux aciers à outils qu'elles remplacent, afin que la décision de montée en gamme soit visible dans un seul tableau. Si vos couteaux acier actuels s'émoussent, allez vers plus de dureté. S'ils s'écaillent, allez vers plus de ténacité. Si les deux se produisent, le problème vient généralement du jeu et non du matériau.",
+      rows: [
+        {
+          grade: "D2",
+          hardness: "HRC 58–62",
+          bestFor: "Refendage polyvalent de substrats propres et non chargés",
+          tradeoff:
+            "Durée de vie de tranchant et coût de référence. Réaffûtage sur meules conventionnelles.",
+        },
+        {
+          grade: "M2 HSS",
+          hardness: "HRC 62–65",
+          bestFor: "Usure modérée à vitesses de ligne plus élevées",
+          tradeoff:
+            "2–3× la durée de vie de tranchant du D2 pour environ 1,5× le coût.",
+        },
+        {
+          grade: "ASP23 PM",
+          hardness: "HRC 66–68",
+          bestFor:
+            "Travail à grande vitesse et forte usure, sans véritables abrasifs",
+          tradeoff:
+            "4–6× la durée de vie de tranchant du D2 pour environ 3× le coût — souvent le meilleur choix commercial.",
+        },
+        {
+          grade: "YG6 (ISO K10)",
+          hardness: "89.5–91.5 HRA",
+          bestFor:
+            "Refendage régulier et sans choc de films et papiers abrasifs",
+          tradeoff:
+            "6 % de cobalt. La plus dure des quatre nuances de carbure et la moins tolérante aux chocs.",
+        },
+        {
+          grade: "YG6X (ISO K10UF)",
+          hardness: "91–92.5 HRA",
+          bestFor:
+            "Faible épaisseur, tolérance serrée, meilleure qualité de tranchant atteignable",
+          tradeoff:
+            "6 % de cobalt, grain ultrafin. Le tranchant le plus vif, le plus sensible aux coupes interrompues.",
+        },
+        {
+          grade: "YG8 (ISO K20)",
+          hardness: "88.5–90.5 HRA",
+          bestFor:
+            "Non-tissés, feuille métallique, et partout où la bande peut accrocher",
+          tradeoff:
+            "8 % de cobalt. Plus tenace et tolérant aux chocs, au prix d'une part de durée de vie du tranchant.",
+        },
+        {
+          grade: "YG10X (ISO K30)",
+          hardness: "90.5–91.5 HRA",
+          bestFor: "Coupes interrompues, stratifiés et supports plus épais",
+          tradeoff:
+            "10 % de cobalt, grain ultrafin. Le meilleur équilibre ténacité/usure de la gamme.",
+        },
+      ],
+      outro:
+        "Sur l'ensemble de la gamme, le carbure offre environ 10 à 30 fois la durée de vie de tranchant du D2 pour un coût 6 à 10 fois supérieur, accepte moins de cycles de réaffûtage et ne peut être rectifié que sur meules diamantées. Comment faire le calcul : le carbure vaut son prix lorsque le coût d'un arrêt de ligne dépasse le coût du couteau. Dites-nous le matériau et le mode de défaillance que vous constatez actuellement, et nous choisirons la nuance.",
+    },
+
+    componentsIntro:
+      "Envoyez-nous un couteau usé et le modèle de votre machine — nous reconstituerons le jeu par rétro-ingénierie et vous chiffrerons sous 2 heures.",
+
+    components: [
+      {
+        id: "carbide-when-it-pays",
+        tag: "ADÉQUATION APPLICATIVE",
+        title: "Là où le carbure justifie son coût",
+        description:
+          "C'est la charge abrasive qui détruit les tranchants en acier, et la dureté est la seule défense. Le BOPP chargé en TiO₂, le PE chargé en carbonate de calcium, le détourage de FR-4 et de préimprégnés, le ruban renforcé de fibre de verre, le meltblown chargé en minéraux, la feuille d'aluminium et de cuivre enduite et le carton couché au kaolin usent tous un tranchant en acier à outils plus vite que la longueur de série ne le permet. La même logique de nuance s'applique quel que soit le substrat — c'est une décision de matériau, pas d'application.",
+      },
+      {
+        id: "carbide-when-not-to",
+        tag: "LIMITES ASSUMÉES",
+        title: "Là où le carbure est le mauvais choix",
+        description:
+          "Le carbure est une solution de résistance à l'usure, pas une montée en gamme systématique. Il s'écaille là où le D2 se déformerait — sur les raccords, les accrochages et les coupes interrompues, ou là où le couteau peut toucher la contre-lame métal contre métal. Sur des substrats propres non chargés et des séries courtes, le D2 ou l'ASP23 PM tient un tranchant assez longtemps pour une fraction du prix. Et sans accès au réaffûtage sur meule diamantée, un couteau carbure émoussé est un rebut et non un actif. Si l'un de ces points décrit votre ligne, dites-le nous lors de votre demande — nous préférons vous chiffrer le bon acier.",
+      },
+      {
+        id: "carbide-grade-selection",
+        tag: "MÉTALLURGIE",
+        title: "Substrat à grain micrométrique, choisi pour chaque travail",
+        description:
+          "Nous sélectionnons parmi quatre nuances en fonction de votre matériau et de votre mode de défaillance actuel, plutôt que d'expédier une nuance unique pour tout. Les nuances submicroniques tiennent un tranchant plus vif ; les nuances à forte teneur en cobalt survivent aux chocs. Le carbure ne peut être fini que sur meules diamantées, et la géométrie de tranchant, le parallélisme et le faux-rond sont tenus au même standard de contrôle que notre rectification d'acier à outils — chaque couteau mesuré avant expédition, avec rapport d'essai de dureté et relevé dimensionnel dans la boîte.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "nonwoven-slitter-knives",
+      "metal-coil-slitting-knives",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 600,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Quand dois-je choisir le carbure monobloc plutôt que le M2 HSS ou le D2 ?",
+          answer:
+            "Uniquement lorsque votre bande contient une charge abrasive, ou lorsque vos séries sont assez longues pour que les économies de réaffûtage et de changement couvrent l'écart de prix de 6–10×. Pour du film transparent standard, du papier ordinaire ou du PE non chargé, le D2 ou l'ASP23 PM est généralement le meilleur choix commercial — et nous vous le dirons.",
+        },
+        {
+          question:
+            "Combien de fois un couteau de refendage carbure peut-il être réaffûté ?",
+          answer:
+            "Cela dépend de la surépaisseur prévue à la conception du couteau, pas du matériau. Chaque réaffûtage enlève de la matière ; la limite pratique se situe là où le couteau s'amincit au-delà de sa tolérance de jeu. Le carbure accepte généralement moins de réaffûtages que le D2, mais offre bien plus de temps de production entre chacun, et c'est là que se joue réellement l'économie. Des meules diamantées sont indispensables — les meules conventionnelles en oxyde d'aluminium se lustrent et ne coupent pas le carbure.",
+        },
+        {
+          question:
+            "Mon couteau carbure s'est écaillé dès la première série — que s'est-il passé ?",
+          answer:
+            "Presque toujours l'une de ces trois causes. La manutention : un couteau carbure tombé sur un sol en béton développe des contraintes internes et des fissures qui restent invisibles jusqu'à la mise en charge. Le jeu : réglé trop serré, le couteau entre en contact métal contre métal avec la contre-lame et micro-écaille le long du tranchant. Ou bien l'application comporte un choc — un raccord, un accrochage, une coupe interrompue — que la fragilité du carbure ne peut absorber. Envoyez-nous une photo du tranchant écaillé ; le faciès de rupture permet généralement d'identifier laquelle des trois causes est en jeu.",
+        },
+        {
+          question: "YG6 ou YG8 : quelle nuance dois-je spécifier ?",
+          answer:
+            "Le YG6 (ISO K10) est plus dur et dure plus longtemps sur un travail régulier, propre et abrasif. Le YG8 (ISO K20) contient plus de cobalt, il est donc plus tenace et tolère les chocs, au prix d'une part de durée de vie du tranchant. Si vos couteaux acier actuels s'émoussent, allez vers plus de dureté. S'ils s'écaillent, allez vers plus de ténacité. Si les deux se produisent, le problème vient généralement du jeu et non du matériau.",
+        },
+        {
+          question:
+            "Un couteau supérieur en carbure peut-il travailler contre une contre-lame inférieure en acier ?",
+          answer:
+            "Oui, et c'est courant — mais la contre-lame devient alors la pièce d'usure et demandera de l'attention plus tôt qu'auparavant. Si la contre-lame est plus tendre, vérifiez le jeu plus souvent, car son usure ouvre l'entrefer et le premier symptôme est un bord irrégulier qui ressemble à un problème de couteau. Des paires carbure appariées sont disponibles lorsque l'usure de la contre-lame est le facteur limitant.",
+        },
+        {
+          question:
+            "Comment les couteaux carbure doivent-ils être stockés et manipulés ?",
+          answer:
+            "Séparés individuellement, jamais empilés métal contre métal, dans un environnement sec. La plupart des défaillances carbure sur lesquelles nous enquêtons ont commencé au magasin ou pendant le transport, pas sur la machine. Les couteaux sont expédiés dans un emballage de protection qu'il vaut la peine de conserver pour ceux que vous n'utilisez pas.",
+        },
+      ],
+      company: [
+        {
+          question: "Êtes-vous fabricant ou société de négoce ?",
+          answer:
+            "Nous fabriquons. La rectification, le contrôle du traitement thermique et l'inspection sont réalisés dans notre propre usine certifiée ISO 9001:2015, en activité depuis 2008 et livrant dans plus de 50 pays. C'est pourquoi nous pouvons chiffrer à partir d'un échantillon usé et garantir le relevé dimensionnel qui l'accompagne.",
+        },
+        {
+          question:
+            "Pouvez-vous fabriquer des couteaux carbure sans plan OEM ?",
+          answer:
+            "Oui — envoyez-nous un couteau usé et le modèle de votre machine. Nous mesurons l'échantillon, reconstituons le jeu de travail par rétro-ingénierie à partir du profil d'usure et produisons un remplacement conforme ; le profil d'usure nous en dit généralement plus sur le fonctionnement réel du couteau que le plan d'origine. L'alésage, la rainure de clavette, le schéma de perçage et l'épaisseur sont ajustés aux arbres que vous utilisez déjà, sans changement de porte-couteau ni réoutillage.",
+        },
+        {
+          question: "Quelle documentation accompagne une commande carbure ?",
+          answer:
+            "Un rapport d'essai de dureté et un relevé de contrôle dimensionnel avec chaque expédition, depuis une usine certifiée ISO 9001:2015. Si votre contrôle à réception exige des données MMT complètes, demandez-le à la commande et elles seront expédiées avec les couteaux. Lorsque plusieurs couteaux partagent un arbre, ils sont rectifiés et expédiés en jeu apparié vérifié afin que l'erreur d'empilage ne s'accumule pas d'une position à l'autre.",
+        },
+        {
+          question:
+            "Pouvons-nous tester un petit jeu carbure avant de nous engager sur une commande complète ?",
+          answer:
+            "Oui. Nous fournissons des jeux d'essai — généralement de 2 à 5 couteaux — pour vérifier le montage sur machine et tester la durée de vie du tranchant face à vos couteaux acier actuels. Nous préférons que vous prouviez le retour sur investissement sur votre propre ligne plutôt que de nous croire sur parole. Pour les profils sur mesure, un échantillon de validation dimensionnelle est produit avant le lancement de la production.",
+        },
+        {
+          question:
+            "Quel est le délai de livraison des couteaux de refendage carbure ?",
+          answer:
+            "Les profils standard dans les nuances stockées partent en 7–12 jours ouvrés ; les géométries sur mesure et les diamètres non standard demandent 15 à 20 jours. Le carbure prend plus de temps que l'acier à outils parce que les ébauches frittées et la finition sur meule diamantée ne peuvent être accélérées sans vous coûter en qualité de tranchant. Les couteaux sont expédiés séparés individuellement dans un emballage de protection — la plupart des dommages carbure sur lesquels nous enquêtons sont survenus pendant le transport ou le stockage, pas sur la machine.",
+        },
+      ],
+    },
+  },
   {
     id: "metal-cold-saw-blades",
     name: "Lames de scie à froid pour métaux",
@@ -5129,404 +5356,6 @@ export const blades: Blade[] = [
     },
   },
   {
-    id: "wood-chipper-blades-industrial",
-    name: "Lames de déchiqueteuse industrielle",
-    fullName:
-      "Couteaux de déchiqueteuse de tambour en acier à outils HSS et D2 pour la sylviculture lourde, la biomasse et le recyclage du bois",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lames de déchiqueteuse de bois",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-    badge: "Qualité industrielle",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
-    ],
-    description:
-      "Couteaux de déchiqueteuse à tambour pour usage intensif en acier à outils M2 HSS, D2 (SKD11) et Cr12MoV pour la sylviculture industrielle, le traitement de la biomasse des arbres entiers et le recyclage du bois de démolition. Trempe sous vide HRC 58-62 avec traitement cryogénique profond. Surface rectifiée avec précision pour un parallélisme d'épaisseur de ±0,05 mm. Adaptation OEM pour Vermeer, Morbark, Doppstadt, Jenz et Bruks Siwertell.",
-    fullDescription:
-      "Les déchiqueteuses industrielles pour la sylviculture, l'énergie de la biomasse et le recyclage du bois de C&D fonctionnent sous une charge soutenue à couple élevé qui expose toutes les faiblesses de la métallurgie des lames. Une lame standard en acier à haute teneur en carbone s'émousse en un seul passage sur du bois dur dense et se brise au premier coup de clou sur du bois de démolition contaminé. Les lames de broyeurs de bois industriels Sureay sont fabriquées à partir d'aciers à outils de première qualité - M2 HSS, D2 (1.2379 / SKD11), et Cr12MoV - sélectionnés spécifiquement pour la double exigence de résistance à l'abrasion et à l'impact.\n\nChaque lame est soumise à un traitement thermique sous vide dans le cadre d'une séquence de trempe contrôlée en 4 cycles et à un traitement cryogénique profond à -196°C.\n\n## Sélection des matériaux en fonction de la matière première et du cycle d'utilisation\n\n**D2 / SKD11 Cold-Work Tool Steel (HRC 58-62):** La meilleure spécification pour le recyclage du bois commercial à haut volume et la production de copeaux de biomasse. La teneur en chrome de 12 % et en carbone de 1,55 % offre une résistance à l'abrasion exceptionnelle contre les fibres de bois dur riches en lignine et les écorces contenant de la silice.\n\n**Cr12MoV (HRC 58-60):** Un excellent équilibre entre la résistance à l'usure et la ténacité pour les opérations de mélange de matières premières. Les ajouts de molybdène et de vanadium dans le Cr12MoV améliorent l'absorption de l'énergie d'impact par rapport au D2 standard, ce qui en fait le choix idéal pour les déchiqueteuses à disque et les transformateurs de biomasse d'arbres entiers.\n\n**M2 HSS (HRC 62-64):** La dureté la plus élevée pour le déchiquetage propre et à grande vitesse des grumes de bois tendre et de pâte à papier, où la rétention maximale des arêtes est la priorité.\n\n**6CrW2Si (HRC 55-58):** Alliage résistant aux chocs pour le bois de démolition fortement contaminé, les traverses de chemin de fer et les déchets verts urbains présentant un risque élevé de contamination métallique.\n\n## Meulage de précision pour la qualité des copeaux\n\nLes lames de broyeurs industriels Sureay sont rectifiées avec précision à ±0,05 mm de parallélisme d'épaisseur, ±0,5° d'angle de biseau, ≤0,05 mm de planéité de la face par 300 mm, et ±0,10 mm de tolérance de position des trous de boulons.",
-    link: "/products/wood-chipper-blades-industrial",
-    isFeatured: true,
-    compatibleMachines: [
-      "Vermeer",
-      "Morbark",
-      "Doppstadt",
-      "Jenz",
-      "Bruks Siwertell",
-      "Peterson Pacific",
-      "CBI",
-      "Precision Husky",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Thickness Tol.",
-        value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per species & contamination level)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood",
-      },
-    ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "METALLURGIE",
-        title: "Acier à outils HSS et D2 - Acier au carbone non standard",
-        description:
-          "Les couteaux de déchiqueteuse standard à haute teneur en carbone s'émoussent en quelques heures sur le bois dur dense et se brisent sur les matières premières contaminées. Nos lames D2/SKD11 offrent une durée de vie de 2 à 3 fois supérieure grâce à une répartition uniforme du carbure de chrome, tandis que les lames M2 HSS assurent une rétention optimale des arêtes sur les bois tendres propres à des vitesses de tambour élevées.",
-      },
-      {
-        id: "cryo-through-hardened",
-        tag: "DURABILITÉ",
-        title: "Cryogénie profonde + noyau trempé à cœur",
-        description:
-          "La trempe sous vide suivie d'un traitement cryogénique profond à -196°C transforme l'austénite retenue en martensite stable, augmentant ainsi la résistance à l'usure jusqu'à 40 %. La trempe à cœur garantit que chacun des 8 à 12 cycles de réaffûtage offre un tranchant identique - aucun cœur mou n'est exposé après l'affûtage.",
-      },
-      {
-        id: "drum-balance-precision",
-        tag: "PRÉCISION",
-        title: "±0,05 mm pour l'équilibre dynamique du tambour",
-        description:
-          "À des vitesses supérieures à 60 m/s, une variation de 0,10 mm de l'épaisseur des pales crée un déséquilibre centrifuge destructeur. Chaque pale est rectifiée en surface avec un parallélisme de ±0,05 mm et vérifiée avant d'être expédiée, ce qui garantit que le tambour reste conforme aux spécifications d'équilibre de l'OEM après son installation.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Déchiqueteuse OEM / Modèle",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions de remplacement OEM standard. modèles de boulons à 2, 3 et 4 trous usinés à la machine à commande numérique selon des plans précis. Les contre-couteaux et les plaques d'usure de gorge sont disponibles sous forme de jeux assortis. Longueurs sur mesure jusqu'à 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 / 6710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt DH 910 Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Jenz HEM 820",
-        od: "380",
-        id: "110",
-        thickness: "22",
-      },
-      {
-        spec: "CBI Magnum Force",
-        od: "450",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Whole-Tree / Custom",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-standard",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Quand dois-je passer de l'acier à haute teneur en carbone standard à des lames de broyeur HSS D2 ou M2 ?",
-          answer:
-            "Passez au D2 (SKD11) lorsque votre broyeur traite du bois dur dense (chêne, hickory, eucalyptus) ou du bois recyclé sec pendant des quarts de travail continus de plus de 8 heures. La matrice de carbure de chrome du D2 offre une durée de vie des arêtes de 2 à 3 fois supérieure à celle de l'acier au carbone standard. Passez au M2 HSS uniquement pour le bois tendre propre à des vitesses de rotation élevées (1 500-2 500) où la rétention maximale des arêtes est la priorité - le M2 à HRC 62-64 est plus susceptible d'être endommagé par l'impact sur les matières premières contaminées.",
-        },
-        {
-          question:
-            "Comment la tolérance de l'épaisseur des lames affecte-t-elle la qualité des copeaux et les vibrations du tambour ?",
-          answer:
-            "Un écart de ±0,10 mm entre les jeux de lames produit des copeaux surdimensionnés et sous-dimensionnés qui ne satisfont pas aux spécifications de criblage de la biomasse (EN 17225-4). Le même écart crée un déséquilibre de la force centrifuge à 1 500-2 500 tr/min qui accélère la défaillance des roulements. Notre tolérance de ±0,05 mm élimine ces deux problèmes.",
-        },
-        {
-          question:
-            "Combien de fois les lames de broyeur D2 peuvent-elles être réaffûtées ?",
-          answer:
-            "Nos lames D2 trempées à cœur peuvent être réaffûtées 8 à 12 fois avant d'atteindre l'épaisseur minimale de sécurité (généralement 60 à 70 % de l'épaisseur d'origine). Le réaffûtage s'effectue sur une meuleuse à eau avec un disque en oxyde d'aluminium (grain 46-60) à une profondeur de 0,02-0,05 mm par passage. Ne jamais meuler à sec - une surchauffe localisée à plus de 200°C entraîne une diminution de la trempe et un ramollissement du tranchant.",
-        },
-        {
-          question:
-            "Dois-je remplacer le contre-couteau lorsque j'installe de nouvelles lames de broyeur ?",
-          answer:
-            "Le contre-couteau doit être inspecté à chaque fois que les lames du broyeur sont remplacées. Un contre-couteau usé réduit la durée de vie de 30 à 50 % et dégrade la qualité des copeaux. Remplacez le contre-couteau lorsque l'arrondi visible des bords dépasse 1,0 mm ou que l'écaillage dépasse 0,5 mm de profondeur. Nous fabriquons des contre-couteaux assortis en acier D2 et en acier au manganèse sous forme d'ensembles intégrés.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
-        },
-        {
-          question:
-            "Pouvez-vous fournir des lames pour mon modèle de broyeur spécifique ?",
-          answer:
-            "Oui, envoyez-nous un échantillon de votre lame existante, un dessin technique ou la marque et le numéro de modèle de votre broyeur. Nous disposons d'une vaste base de données de plans OEM pour les plates-formes Vermeer, Morbark, Doppstadt, Jenz, Peterson, CBI et Bruks. Dimensions personnalisées sous 10 à 15 jours ouvrables.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-blades-standard",
-    name: "Couteaux de déchiqueteuse",
-    fullName:
-      "Couteaux réversibles à double tranchant pour déchiqueteuse de bois | T10 - 9CrSi - Cr12MoV | Paysagisme et foresterie",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lames de déchiqueteuse de bois",
-    image:
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-    badge: "Meilleur vendeur",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
-    ],
-    description:
-      "Couteaux réversibles à double tranchant pour déchiqueteuse de bois en T10, 9CrSi & Cr12MoV. HRC 55-60, biseau 25°-30° rectifié avec précision. Retourner le couteau lorsqu'il est émoussé - double la durée de vie avant réaffûtage. longueurs de 200 à 350 mm, modèles de boulons à 2/4/6 trous. Adaptation OEM pour Bandit, Vermeer, Patriot, Wallenstein et Timberwolf. Revêtement anti-sap en téflon en option.",
-    fullDescription:
-      "Les couteaux de déchiqueteuse sont les consommables les plus utilisés dans les secteurs de l'aménagement paysager, de l'entretien des arbres et des déchets verts municipaux. Les couteaux de déchiqueteuse standard Sureay sont fabriqués à partir d'aciers à outils à haute teneur en carbone et en alliage de chrome traités thermiquement - des qualités éprouvées qui offrent un bon équilibre entre l'affûtage du tranchant, la résistance aux chocs et l'économie de réaffûtage pour les opérations de déchiquetage quotidiennes.\n\n## Conception à double tranchant réversible\n\nChaque lame présente une géométrie symétrique à double tranchant. Lorsque le bord de travail s'émousse, il suffit de le déboulonner, de le retourner de 180°, de le resserrer - et vous disposez d'un second bord affûté en usine, prêt à couper. Cela réduit de moitié les temps d'arrêt liés au changement de lame et double la durée de vie installée avant qu'un réaffûtage ne soit nécessaire.\n\n## Grade des matériaux\n\n**Acier à haute teneur en carbone T10 (HRC 55-58):** La norme rentable pour les entreprises d'aménagement paysager et d'arboriculture qui coupent du bois tendre, du bois vert et des déchets de jardinage mixtes.\n\n**Alliage chrome-silicium 9CrSi (HRC 57-60):** Offre des intervalles de tranchant de 40 à 60 % plus longs que le T10 pour les essences mixtes de bois dur/résineux - érable, bouleau, frêne.\n\n**Acier à outils Cr12MoV (HRC 58-60):** Spécification de première qualité pour les opérateurs qui traitent des bois durs secs ou des déchets verts urbains légèrement contaminés.\n\n## Meulage de précision\n\nLes lames sont rectifiées en surface avec une tolérance d'épaisseur de ±0,05 mm et un angle de biseau de ±0,5° (vérifié par comparateur optique). L'épaisseur uniforme des lames sur toute la largeur du tambour élimine les vibrations et produit une géométrie de copeaux cohérente répondant aux spécifications de taille de la biomasse et du paillis.\n\n## Revêtement anti-sap\n\nLe revêtement optionnel en téflon (PTFE) sur la face du râteau réduit l'adhérence de la sève de ~70%, prolongeant ainsi les intervalles de nettoyage sur les copeaux de pin, d'épicéa et d'eucalyptus. Le revêtement survit à 4-6 cycles de réaffûtage avant qu'un nouveau revêtement ne soit nécessaire.\n\n## Économie de réaffûtage\n\nTrempé à cœur de la surface au noyau, chaque cycle de réaffûtage expose un acier de dureté identique. Chaque lame produit 6 à 10 arêtes de coupe au total (2 arêtes d'usine × 3 à 5 affûtages par arête) avant d'atteindre l'épaisseur minimale de sécurité - ce qui rend le coût total par heure très compétitif par rapport aux alternatives importées.",
-    link: "/products/wood-chipper-blades-standard",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Patriot",
-      "Wallenstein",
-      "Timberwolf",
-      "Linddana",
-      "Schliesing",
-      "Junkkari",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–60 (Triple-Tempered, Through-Hardened)",
-      },
-      {
-        label: "Edge Design",
-        value: "Reversible Double-Edge — flip when dull, 2× installed life",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–30° precision-ground (±0.5°)",
-      },
-      {
-        label: "Lengths",
-        value: "200–350 mm (8″–14″)",
-      },
-      {
-        label: "Bolt Patterns",
-        value: "2-hole · 4-hole · 6-hole (custom available)",
-      },
-      {
-        label: "Coating",
-        value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)",
-      },
-      {
-        label: "Application",
-        value: "Tree Service · Landscaping · Green Waste · Storm Debris",
-      },
-    ],
-    components: [
-      {
-        id: "reversible-double-edge",
-        tag: "ÉCONOMIE",
-        title:
-          "Renversez, ne remplacez pas - Doublez la durée de vie installée",
-        description:
-          "La géométrie symétrique à double tranchant donne deux tranchants indépendants par lame. Lorsque le bord 1 s'émousse, il suffit de le déboulonner, de le retourner à 180° et de le resserrer - il est affûté en usine et reprend son travail en moins de deux minutes. Réduit de moitié les temps d'arrêt liés au changement de lame et double la durée de vie avant réaffûtage.",
-      },
-      {
-        id: "triple-temper",
-        tag: "TRAITEMENT THERMIQUE",
-        title: "Noyau trempé à cœur en triple trempe",
-        description:
-          "La triple trempe contrôlée élimine les contraintes résiduelles et stabilise la microstructure martensitique à HRC 55-60 de la surface au cœur de l'acier. Chaque cycle de réaffûtage expose un acier de qualité identique - pas de points faibles, pas de durée de vie du tranchant irrégulière sur l'ensemble du jeu de lames.",
-      },
-      {
-        id: "anti-sap-coating",
-        tag: "TRAITEMENT DE SURFACE",
-        title: "Revêtement anti-sap en téflon",
-        description:
-          "La résine de pin, d'épicéa et d'eucalyptus adhère aux faces des lames et accélère l'usure des arêtes. Le revêtement optionnel en téflon (PTFE) de la face du râteau réduit l'adhérence de la sève de ~70 %, prolongeant les intervalles de nettoyage et réduisant la fréquence des arrachages de lame en milieu d'équipe.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Broyeur OEM / Classe de taille",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions réversibles à double bord. modèles de boulons à 2, 4 et 6 trous disponibles. Longueurs et schémas de perçage personnalisés sous 7 jours ouvrables.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Compact / 8" Class',
-        od: "200",
-        id: "50",
-        thickness: "12",
-      },
-      {
-        spec: 'Bandit 12" / Patriot',
-        od: "230",
-        id: "60",
-        thickness: "12",
-      },
-      {
-        spec: 'Vermeer BC1200 / 10"',
-        od: "260",
-        id: "65",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 15" / Vermeer BC1500',
-        od: "295",
-        id: "75",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19"',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: 'Vermeer BC1800 / 12"',
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Timberwolf / 13"',
-        od: "330",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Heavy Landscape / 14"',
-        od: "350",
-        id: "100",
-        thickness: "22",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-industrial",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 120,
-    },
-    faqs: {
-      technical: [
-        {
-          question: "Comment choisir entre T10, 9CrSi et Cr12MoV ?",
-          answer:
-            "Le T10 convient aux bois tendres verts et à l'aménagement paysager général. Passez au 9CrSi pour les bois durs/résineux mixtes - érable, bouleau, frêne - où il offre une durée de vie des arêtes de 40 à 60 % plus longue. Spécifiez Cr12MoV pour les bois durs secs de grand volume ou les déchets verts urbains légèrement contaminés.",
-        },
-        {
-          question:
-            "Quand dois-je retourner la lame et combien de fois puis-je la réaffûter ?",
-          answer:
-            "Retournez la lame lorsque l'efficacité de l'ébarbage diminue - faces de copeaux déchiquetées, augmentation de la charge du moteur ou arrondi visible des arêtes de plus de 0,5 mm. Une fois les deux tranchants usés, chaque tranchant peut être réaffûté 3 à 5 fois sur une meuleuse de surface standard, ce qui permet d'obtenir un total de 6 à 10 tranchants par lame.",
-        },
-        {
-          question: "Le revêtement en téflon survivra-t-il au rebroyage ?",
-          answer:
-            "Oui - seule la face du biseau est rectifiée lors du réaffûtage ; le revêtement en téflon de la face du biseau reste intact. Il persiste généralement pendant 4 à 6 cycles de réaffûtage avant qu'un nouveau revêtement ne soit nécessaire.",
-        },
-        {
-          question:
-            "De quel modèle de trou de boulon ai-je besoin pour mon modèle de broyeur ?",
-          answer:
-            "Bandit 12″/15″ : 2 trous. Bandit 18″/19″ : 4 trous. Vermeer BC900/BC1200 : 2 trous. BC1500/BC1800 : 4 trous. Indiquez votre numéro de modèle ou envoyez votre lame usée et nous vous confirmerons la configuration exacte. Modèles personnalisés sous 7 jours ouvrables.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Fabricant OEM direct depuis 2008. Lorsque vous achetez chez Sureay, vous communiquez avec les ingénieurs qui forgent et affûtent vos lames - pas d'intermédiaire, pas de majoration.",
-        },
-        {
-          question:
-            "Proposez-vous des prix de gros pour les entrepreneurs paysagistes ?",
-          answer:
-            "Oui. Les commandes de plus de 50 lames par envoi bénéficient d'une tarification au volume. Des accords d'approvisionnement annuels avec des livraisons trimestrielles programmées sont disponibles - contactez-nous avec votre estimation de consommation annuelle.",
-        },
-      ],
-    },
-  },
-  {
     id: "wood-chipper-anvils",
     name: "Enclumes de déchiqueteuse",
     fullName:
@@ -5678,11 +5507,7 @@ export const blades: Blade[] = [
         thickness: "Per OEM Drawing",
       },
     ],
-    relatedBladeIds: [
-      "wood-chipper-blades",
-      "wood-chipper-blades-industrial",
-      "wood-chipper-blades-standard",
-    ],
+    relatedBladeIds: ["wood-chipper-blades"],
     offers: {
       lowPrice: 25,
       highPrice: 250,

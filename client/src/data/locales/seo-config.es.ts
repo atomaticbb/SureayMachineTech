@@ -52,6 +52,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "description": "Cuchillas y hojas de corte giratorias con rectificado de precisión de ±0,002 mm. Opciones de acero D2, M2 HSS, ASP23 PM y carburo de tungsteno. Perfiles de cizalla, corte y rasurado para BOPP, BOPET, film CPP, cinta PSA y no tejido. Ajuste OEM Tidland, Kampf, Atlas y Dusenbery - presupuesto directo de fábrica.",
     "keywords": "cuchillas cortadoras rotativas, cuchillas cortadoras cuchillas rotativas de corte longitudinal, carburo de tungsteno, cuchillas cortadoras circulares, cuchilla cortadora, cuchillas cortadoras rotativas, cuchillas cortadoras industriales, cuchillas cortadoras de film, cuchillas cortadoras de BOPP, cuchillas cortadoras de cinta PSA, cuchillas de conversión"
   },
+  "tungsten-carbide-slitter-knives": {
+    "title": "Cuchillas cortadoras de metal duro | Cuchillas de corte de carburo",
+    "description": "Cuchillas cortadoras de metal duro con 10-30× la vida útil de filo del acero de herramientas. Grados micrograno YG6/YG8 e ISO K10/K20, rectificadas a ±0,002 mm, con informes de ensayo.",
+    "keywords": "cuchillas cortadoras de metal duro, cuchillas de carburo de tungsteno, cuchillas de corte de carburo, cuchillas cortadoras de carburo, cuchillas de refilado de metal duro, cuchillas YG6, cuchillas de carburo YG8, cuchillas de carburo K10, cuchillas de carburo micrograno"
+  },
   "metal-foil-strip-slitter-knives": {
     "title": "Cuchillas para papel de aluminio y tiras metálicas | ASP23/ASP52 Acero PM, ±0,001 mm | Sureay",
     "description": "Cuchillas ASP23/ASP52 PM de acero para herramientas y carburo de tungsteno para centros de servicio del metal. tolerancia de espesor de ±0,001 mm, Ra de espejo ≤0,02 μm para corte longitudinal sin rebabas de papel de aluminio, tiras de cobre, acero inoxidable y acero al silicio. Venta directa al por mayor de fábrica - MOQ bajo, especificaciones de la petición.",
@@ -157,16 +162,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "title": "Cuchillas para astilladoras de madera | D2 & TCT Cuchillas para astilladoras de tambor y disco | Sureay",
     "description": "Cuchillas astilladoras de tambor y disco D2, Cr12MoV y TCT, HRC 57-62, tolerancia de espesor ±0,05 mm. Ajuste OEM para Bandit, Vermeer, Morbark, Peterson, Doppstadt y Jenz. 8-12 ciclos de reafilado.",
     "keywords": "cuchillas astilladoras de madera, cuchillas astilladoras de tambor, cuchillas astilladoras de disco, cuchillas astilladoras forestales, cuchillas astilladoras de biomasa, cuchillas astilladoras D2, cuchillas astilladoras TCT, cuchillas astilladoras Vermeer, cuchillas astilladoras Bandit"
-  },
-  "wood-chipper-blades-industrial": {
-    "title": "Cuchillas Astilladoras Industriales | M2 HSS & D2 Acero Herramienta | Sureay",
-    "description": "Cuchillas de astilladora de tambor de acero para herramientas M2 HSS y D2 para silvicultura comercial pesada, plantas de biomasa y líneas de reciclaje de madera. HRC 58-62, con tratamiento térmico al vacío y tratamiento criogénico profundo para prolongar la vida útil del filo.",
-    "keywords": "cuchillas astilladoras industriales, cuchillas astilladoras M2 HSS, cuchillas astilladoras de tambor D2, cuchillas astilladoras de madera para trabajos pesados, cuchillas astilladoras de biomasa industriales, cuchillas forestales"
-  },
-  "wood-chipper-blades-standard": {
-    "title": "Cuchillas Astilladoras de Madera | Doble Filo Reversible | T10 - 9CrSi - Cr12MoV | Sureay",
-    "description": "Cuchillas reversibles de doble filo para astilladoras de madera en acero T10, 9CrSi y Cr12MoV - ambos filos utilizables antes de reafilar. Ajuste OEM para astilladoras de tambor y de disco. Paisajismo, silvicultura y procesamiento de biomasa.",
-    "keywords": "cuchillas astilladoras de madera, cuchillas astilladoras reversibles, cuchillas astilladoras de doble filo, cuchillas astilladoras de tambor, cuchillas astilladoras de disco, cuchillas astilladoras T10, cuchillas astilladoras 9CrSi, cuchillas astilladoras Cr12MoV"
   },
   "wood-chipper-anvils": {
     "title": "Yunques y contracuchillas para astilladoras de madera | D2 - A8 modificados | Juegos combinados | Sureay",

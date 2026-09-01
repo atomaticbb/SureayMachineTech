@@ -52,6 +52,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "description": "Dao và lưỡi máy xẻ quay được mài chính xác đến ±0,002mm. Tùy chọn D2, M2 HSS, ASP23 PM & hợp kim cacbua vonfram. Các biên dạng cắt, khía & dao cạo cho màng BOPP, BOPET, CPP, băng PSA & vải không dệt. OEM phù hợp với Tidland, Kampf, Atlas & Dusenbery — báo giá trực tiếp tại nhà máy.",
     "keywords": "lưỡi xén quay, dao cắt rotary, lưỡi xén hợp kim cacbua vonfram, dao xén tròn, lưỡi xén, lưỡi xén quay, dao xén công nghiệp, dao xén màng, lưỡi xén BOPP, dao xén băng PSA, lưỡi chuyển đổi"
   },
+  "tungsten-carbide-slitter-knives": {
+    "title": "Dao xẻ hợp kim cứng | Lưỡi xẻ carbide vonfram",
+    "description": "Dao xẻ hợp kim cứng có tuổi thọ lưỡi gấp 10-30 lần thép dụng cụ. Mác hạt siêu mịn YG6/YG8 và ISO K10/K20, mài chính xác ±0,002 mm, kèm báo cáo kiểm định.",
+    "keywords": "dao xẻ hợp kim cứng, lưỡi dao carbide vonfram, dao xẻ carbide, lưỡi xẻ hợp kim cứng, dao cắt hợp kim cứng, dao xẻ YG6, lưỡi carbide YG8, carbide K10, hợp kim cứng hạt siêu mịn"
+  },
   "metal-foil-strip-slitter-knives": {
     "title": "Dao xẻ lá nhôm & kim loại | Thép ASP23/ASP52 PM, ±0,001mm | Chắc chắn rồi",
     "description": "Thép công cụ ASP23/ASP52 PM & dao xẻ hợp kim cacbua vonfram dành cho các trung tâm dịch vụ kim loại. Dung sai độ dày ± 0,001mm, Ra được tráng gương 0,02μm đối với việc rạch nhóm không có gờ trên lá nhôm, dải đồng, thép không gỉ và thép silicon. Bán buôn trực tiếp tại nhà máy - MOQ thấp, yêu cầu thông số kỹ thuật.",
@@ -157,16 +162,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "title": "Lưỡi Chipper Gỗ | Dao Chipper Trống & Đĩa D2 & TCT | Chắc chắn rồi",
     "description": "Dao băm trống và đĩa D2, Cr12MoV & TCT, HRC 57–62, dung sai độ dày ±0,05mm. OEM phù hợp cho Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz. 8–12 chu kỳ xay lại.",
     "keywords": "lưỡi băm gỗ, dao băm trống, lưỡi băm đĩa, dao băm lâm nghiệp, lưỡi băm sinh khối, dao băm D2, lưỡi băm TCT, lưỡi băm Vermeer, dao băm Bandit"
-  },
-  "wood-chipper-blades-industrial": {
-    "title": "Lưỡi Chipper Gỗ Công Nghiệp | Thép công cụ M2 HSS & D2 | Chắc chắn rồi",
-    "description": "Dao băm trống bằng thép công cụ M2 HSS & D2 dành cho lâm nghiệp thương mại nặng, nhà máy sinh khối & dây chuyền tái chế gỗ. HRC 58–62, xử lý nhiệt chân không cộng với xử lý đông lạnh sâu để kéo dài tuổi thọ cạnh.",
-    "keywords": "lưỡi băm công nghiệp, dao băm băm M2 HSS, lưỡi băm trống D2, dao băm gỗ hạng nặng, lưỡi băm sinh khối công nghiệp, lưỡi băm lâm nghiệp"
-  },
-  "wood-chipper-blades-standard": {
-    "title": "Dao Chipper Gỗ | Cạnh đôi có thể đảo ngược | T10 · 9CrSi · Cr12MoV | Chắc chắn rồi",
-    "description": "Dao băm gỗ hai lưỡi có thể đảo ngược bằng thép T10, 9CrSi và Cr12MoV - cả hai lưỡi cắt đều có thể sử dụng được trước khi mài lại. OEM phù hợp cho máy băm trống và đĩa. Xử lý cảnh quan, lâm nghiệp và sinh khối.",
-    "keywords": "dao băm gỗ, lưỡi băm đảo ngược, dao băm hai cạnh, lưỡi băm trống, dao băm đĩa, lưỡi băm T10, dao băm 9CrSi, lưỡi băm băm Cr12MoV"
   },
   "wood-chipper-anvils": {
     "title": "Đe băm gỗ & dao phản công | D2 · A8 Đã sửa đổi | Bộ phù hợp | Chắc chắn rồi",

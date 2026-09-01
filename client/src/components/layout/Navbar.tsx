@@ -201,16 +201,12 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
                 ) : (
                   <>
                     {group.links.map(blade => (
-                      <Link key={blade.id} href={`/products/${blade.id}`}>
+                      <Link key={blade.id} href={blade.link}>
                         <div
                           onClick={onClose}
                           className="text-[14px] text-slate-500 hover:text-[#001f4d] hover:translate-x-1 transition-all leading-relaxed py-0.5 cursor-pointer whitespace-nowrap"
                         >
-                          ·{" "}
-                          {/* menu-only short label; product page keeps full name */}
-                          {blade.id === "wood-chipper-blades-industrial"
-                            ? t("navbar.industrialChipperBlades")
-                            : blade.name}
+                          · {blade.name}
                         </div>
                       </Link>
                     ))}
@@ -599,7 +595,9 @@ export default function Navbar() {
             <button
               className="md:hidden text-slate-700 hover:text-[#003366] transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
               onClick={() => setMobileOpen(v => !v)}
-              aria-label={mobileOpen ? t("navbar.closeMenu") : t("navbar.openMenu")}
+              aria-label={
+                mobileOpen ? t("navbar.closeMenu") : t("navbar.openMenu")
+              }
             >
               <HamburgerIcon />
             </button>

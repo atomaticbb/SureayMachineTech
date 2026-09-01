@@ -1,12 +1,20 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, beforeAll, beforeEach, afterEach } from "vitest";
 import {
   translate,
+  loadDictionary,
   _setDictionaryForTest,
   _getDictionaryForTest,
 } from "./translations";
-import type { Lang } from "./i18n";
+import { SUPPORTED_LANGS, type Lang } from "./i18n";
 
 const SNAPSHOT: Partial<Record<Lang, Record<string, string>>> = {};
+
+// Dictionaries other than English are loaded on demand via dynamic
+// import(). Load them up front so the snapshot below captures the real
+// JSON and translate() does not fall back to English.
+beforeAll(async () => {
+  await Promise.all(SUPPORTED_LANGS.map(loadDictionary));
+});
 
 describe("translate", () => {
   beforeEach(() => {

@@ -55,7 +55,8 @@ const CANONICAL_ROUTES: string[] = [
   // dynamic product pages — derived from static blade data
   ...blades.map(b => `/products/${b.id}`),
   // dynamic category aggregation pages — derived from static category metadata
-  // "custom-profile" is excluded: CategoryAggregation redirects it to /custom
+  // "custom-profile" is excluded: the server returns 410 for it (/custom is
+  // the live page; this slug was only ever reached via old backlinks)
   ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
     c => `/categories/${c.slug}`
   ),

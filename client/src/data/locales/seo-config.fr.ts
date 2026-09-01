@@ -52,6 +52,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "description": "Lames et couteaux de refendeuse rotative rectifiés avec précision à ±0,002 mm. D2, M2 HSS, ASP23 PM steel & carbure de tungstène options. Profilés de cisaillement, d'incision et de rasage pour les films BOPP, BOPET, CPP, les bandes PSA et les non-tissés. OEM pour Tidland, Kampf, Atlas & Dusenbery - devis direct usine.",
     "keywords": "lames de découpe rotatives, lames de découpe couteaux rotatifs de refente, lames de découpe carbure de tungstène, couteaux de découpe circulaires, lames de découpe, lames de découpe rotatives, couteaux de découpe industriels, couteaux de découpe de films, lames de découpe BOPP, couteaux de découpe de bandes PSA, lames de découpe de produits de transformation"
   },
+  "tungsten-carbide-slitter-knives": {
+    "title": "Couteaux de refendage carbure de tungstène | Lames carbure",
+    "description": "Couteaux de refendage en carbure de tungstène offrant 10 à 30× la durée de vie de tranchant de l'acier à outils. Nuances micrograin YG6/YG8 et ISO K10/K20, rectifiées à ±0,002 mm, avec rapports d'essai.",
+    "keywords": "couteaux de refendage carbure, lames de refendage carbure de tungstène, couteaux carbure, lames carbure de tungstène, couteaux de coupe carbure, couteaux de refendage YG6, lames carbure YG8, carbure K10 refendage, lames carbure micrograin"
+  },
   "metal-foil-strip-slitter-knives": {
     "title": "Couteaux à refendre les feuilles d'aluminium et les bandes métalliques | ASP23/ASP52 PM Steel, ±0.001 mm | Sureay",
     "description": "Couteaux de refendage ASP23/ASP52 PM en acier à outils et carbure de tungstène pour les centres de service des métaux. tolérance d'épaisseur de ±0,001 mm, Ra ≤0,02 μm pour la découpe sans bavure de feuilles d'aluminium, de bandes de cuivre, d'acier inoxydable et d'acier au silicium. Vente en gros directe de l'usine - faible MOQ, spécifications sur demande.",
@@ -157,16 +162,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     "title": "Lames de broyeur à bois | D2 & TCT Couteaux de broyeur à tambour et à disque | Sureay",
     "description": "Couteaux de déchiqueteuse à tambour et à disque D2, Cr12MoV et TCT, HRC 57-62, tolérance d'épaisseur de ±0,05 mm. Adaptation OEM pour Bandit, Vermeer, Morbark, Peterson, Doppstadt et Jenz. 8-12 cycles de réaffûtage.",
     "keywords": "lames de broyeur de bois, lames de broyeur à tambour, lames de broyeur à disque, lames de broyeur forestier, lames de broyeur de biomasse, lames de broyeur D2, lames de broyeur TCT, lames de broyeur Vermeer, lames de broyeur Bandit"
-  },
-  "wood-chipper-blades-industrial": {
-    "title": "Lames de broyeur de bois industriel | M2 HSS & D2 Tool Steel | Sureay",
-    "description": "M2 HSS & D2 tool steel drum chipper knives for heavy commercial forestry, biomass plants & wood recycling lines. HRC 58-62, traitement thermique sous vide et traitement cryogénique profond pour une durée de vie prolongée des arêtes.",
-    "keywords": "lames de broyeur industriel, couteaux de broyeur M2 HSS, lames de broyeur à tambour D2, couteaux de broyeur de bois à usage intensif, lames de broyeur de biomasse industriel, lames de broyeur forestier"
-  },
-  "wood-chipper-blades-standard": {
-    "title": "Couteaux à déchiqueter le bois | Double tranchant réversible | T10 - 9CrSi - Cr12MoV | Sureay",
-    "description": "Couteaux de déchiqueteuse réversibles à double tranchant en acier T10, 9CrSi et Cr12MoV - les deux tranchants sont utilisables avant réaffûtage. Adaptation OEM aux déchiqueteuses à tambour et à disque. Aménagement paysager, sylviculture et traitement de la biomasse.",
-    "keywords": "couteaux de broyeur de bois, couteaux de broyeur réversibles, couteaux de broyeur à double tranchant, couteaux de broyeur à tambour, couteaux de broyeur à disque, couteaux de broyeur T10, couteaux de broyeur 9CrSi, couteaux de broyeur Cr12MoV"
   },
   "wood-chipper-anvils": {
     "title": "Enclumes et contre-couteaux pour déchiqueteuses à bois | D2 - A8 Modifié | Ensembles assortis | Sureay",

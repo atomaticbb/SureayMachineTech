@@ -1757,12 +1757,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Wood chipper blades dulling, chipping or burning? Learn the three wear patterns, root causes & how to pick the right knife steel (A8 vs D2).",
     keywords:
       "wood chipper blade wear, chipper blade failure, chipper knife abrasion, chipper blade chipping, chipper blade heat marks, A8 chipper knife, D2 chipper blade",
-    relatedProductIds: [
-      "wood-chipper-blades",
-      "wood-chipper-blades-industrial",
-      "wood-chipper-blades-standard",
-      "wood-chipper-anvils",
-    ],
+    relatedProductIds: ["wood-chipper-blades", "wood-chipper-anvils"],
     content: [
       {
         type: "paragraph",
@@ -2600,12 +2595,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Technical guide on wood chipper knife maintenance. Learn optimal bevel angles, grinding tolerances, and metallurgical limits for D2, 9CrSi, and HSS blades.",
     keywords:
       "wood chipper knife sharpening, chipper blade bevel angle, chipper knife regrind, D2 chipper blade maintenance, 9CrSi chipper knife, HSS chipper blade, chipper knife grinding guide",
-    relatedProductIds: [
-      "wood-chipper-blades",
-      "wood-chipper-blades-industrial",
-      "wood-chipper-blades-standard",
-      "wood-chipper-anvils",
-    ],
+    relatedProductIds: ["wood-chipper-blades", "wood-chipper-anvils"],
     content: [
       {
         type: "paragraph",

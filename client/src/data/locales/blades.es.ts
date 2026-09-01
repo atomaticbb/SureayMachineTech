@@ -4084,6 +4084,230 @@ export const blades: Blade[] = [
       ],
     },
   },
+
+  {
+    id: "tungsten-carbide-slitter-knives",
+    name: "Cuchillas cortadoras de metal duro",
+    fullName: "Cuchillas cortadoras de metal duro para corte de alto desgaste",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Cuchillas cortadoras",
+    image:
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+    gallery: [
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
+    ],
+    galleryAlts: [
+      "Cuchillas cortadoras de metal duro, tres hojas circulares rectificadas con caras pulidas",
+      "Detalle de cuchilla cortadora de metal duro que muestra el orificio central, los agujeros de montaje y el filo rectificado",
+    ],
+
+    description:
+      "El metal duro macizo cuesta entre seis y diez veces más que el D2. Ese sobreprecio se recupera exactamente en dos situaciones: cuando su banda lleva carga mineral abrasiva, o cuando sus tiradas son lo bastante largas como para que el tiempo de parada por cambio — y no el precio de la cuchilla — sea lo que realmente le cuesta dinero. Metal duro de grano micrométrico YG6, YG6X, YG8 e YG10X (ISO K10–K30) a 89,5–92,5 HRA, rectificado a ±0,002 mm, con informe de dureza y dimensional en cada envío.",
+
+    fullDescription:
+      "Las cuchillas cortadoras de metal duro son una decisión de resistencia al desgaste, no una mejora general. Si corta BOPP transparente en tiradas cortas, el D2 o el ASP23 PM le servirán mejor y le costarán menos, y se lo diremos antes de que haga el pedido. Esta página es para los trabajos en los que el acero de herramientas realmente no puede mantener el filo: films con carga mineral, laminados reforzados con vidrio, no tejidos abrasivos, láminas estucadas y cartón a alta velocidad.\n\n## Cuándo compensa la mejora\n\nEl metal duro merece la pena cuando el coste de parar la línea supera el coste de la cuchilla. Tome sus cambios de cuchilla al mes, multiplíquelos por el coste de parada de cada cambio y compárelo con la diferencia de precio. En una línea donde un cambio cuesta una hora de producción, una vida útil de filo 10× suele amortizarse en uno o dos ciclos de cuchilla. En una línea donde los cambios son rápidos y baratos, no lo hará.\n\n## Dónde el metal duro justifica su coste\n\n**Films con carga mineral:** BOPP cargado con TiO₂, PE con carbonato de calcio, calidades mate y cavitadas. La carga mineral es lo que destruye los filos de acero; la dureza es la única defensa.\n\n**Laminados reforzados con vidrio y compuestos:** recorte de FR-4 y preimpregnados, cintas reforzadas con fibra de vidrio, bandas de composite de aluminio. El contenido de vidrio es profundamente abrasivo y desafila el HSS en un solo turno.\n\n**No tejidos abrasivos:** meltblown con carga mineral, spunbond con relleno, soportes abrasivos y sustratos de bayeta donde el pelusado de la fibra aparece en cuanto el filo se ablanda.\n\n**Lámina metálica, fleje estucado y electrodo de batería:** lámina de aluminio y cobre, fleje estucado y laminado, donde los bordes sin rebaba deben mantenerse durante toda una bobina.\n\n**Cartón y papel estucado a alta velocidad:** soportes estucados con caolín y pigmentos en líneas donde un cambio de cuchilla cuesta una hora de producción y el precio de la cuchilla es un error de redondeo frente a eso.\n\n## Dónde el metal duro es la elección equivocada\n\n**Impactos y cortes interrumpidos.** El metal duro es frágil. Si la banda se engancha, si pasa cinta de empalme, o si la cuchilla puede tocar el yunque metal contra metal, el metal duro se astilla donde el D2 se deformaría y sobreviviría.\n\n**Sustratos limpios y sin carga en tiradas cortas.** ¿Corta BOPP transparente, kraft liso o PE sin carga? El D2 o el ASP23 PM mantendrán el filo el tiempo suficiente, a una fracción del coste.\n\n**Sin acceso a rectificado con diamante.** Si ni usted ni su socio de servicio pueden reafilar con muelas de diamante, una cuchilla de metal duro desafilada pasa a ser chatarra en lugar de un activo reafilable — y la economía se invierte.\n\n**Holgura floja o sin verificar.** El metal duro amplifica lo que su montaje ya hace. No compensará un árbol desgastado, un portacuchillas descentrado ni una holgura que nadie ha medido.",
+
+    link: "/products/tungsten-carbide-slitter-knives",
+
+    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
+
+    specs: [
+      {
+        label: "Material",
+        value:
+          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+      },
+      { label: "Hardness", value: "89.5–92.5 HRA" },
+      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
+      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
+      { label: "Outer Diameter", value: "20–300 mm" },
+      { label: "Thickness", value: "0.3–5.0 mm" },
+      {
+        label: "Tolerance",
+        value:
+          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+      },
+      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
+      {
+        label: "Edge Geometry",
+        value: "Single bevel, double bevel, hollow ground, razor",
+      },
+      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
+      {
+        label: "Applications",
+        value:
+          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+      },
+    ],
+
+    steelGrades: {
+      intro:
+        "El contenido de cobalto es el mando de compromiso: más cobalto significa mayor tenacidad y menor fragilidad, pero el filo se desafila antes. Los cuatro grados de metal duro siguientes se muestran frente a los aceros de herramientas a los que sustituyen, de modo que la decisión de mejora queda visible en una sola tabla. Si sus cuchillas de acero actuales se desafilan, vaya a más dureza. Si se astillan, vaya a más tenacidad. Si ocurren ambas cosas, el problema suele ser la holgura y no el material.",
+      rows: [
+        {
+          grade: "D2",
+          hardness: "HRC 58–62",
+          bestFor: "Corte de uso general de sustratos limpios y sin carga",
+          tradeoff:
+            "Vida útil de filo y coste de referencia. Se reafila con muelas convencionales.",
+        },
+        {
+          grade: "M2 HSS",
+          hardness: "HRC 62–65",
+          bestFor: "Desgaste moderado a mayores velocidades de línea",
+          tradeoff:
+            "2–3× la vida útil de filo del D2 a aproximadamente 1,5× el coste.",
+        },
+        {
+          grade: "ASP23 PM",
+          hardness: "HRC 66–68",
+          bestFor:
+            "Trabajo de alta velocidad y alto desgaste sin llegar a abrasivos reales",
+          tradeoff:
+            "4–6× la vida útil de filo del D2 a aproximadamente 3× el coste — con frecuencia la mejor opción comercial.",
+        },
+        {
+          grade: "YG6 (ISO K10)",
+          hardness: "89.5–91.5 HRA",
+          bestFor: "Corte estable y sin impactos de film y papel abrasivos",
+          tradeoff:
+            "6 % de cobalto. El más duro de los cuatro grados de metal duro y el menos tolerante al impacto.",
+        },
+        {
+          grade: "YG6X (ISO K10UF)",
+          hardness: "91–92.5 HRA",
+          bestFor:
+            "Espesor fino, tolerancia estrecha, la mejor calidad de filo alcanzable",
+          tradeoff:
+            "6 % de cobalto, grano ultrafino. El filo más agudo, el más sensible a los cortes interrumpidos.",
+        },
+        {
+          grade: "YG8 (ISO K20)",
+          hardness: "88.5–90.5 HRA",
+          bestFor:
+            "No tejidos, lámina metálica, y allí donde la banda pueda engancharse",
+          tradeoff:
+            "8 % de cobalto. Más tenaz y tolerante al impacto, a costa de algo de vida útil del filo.",
+        },
+        {
+          grade: "YG10X (ISO K30)",
+          hardness: "90.5–91.5 HRA",
+          bestFor: "Cortes interrumpidos, laminados y soportes más pesados",
+          tradeoff:
+            "10 % de cobalto, grano ultrafino. El mejor equilibrio tenacidad-desgaste de la gama.",
+        },
+      ],
+      outro:
+        "En toda la gama, el metal duro ofrece aproximadamente entre 10 y 30 veces la vida útil de filo del D2 a un coste de 6 a 10 veces mayor, admite menos ciclos de reafilado y sólo puede rectificarse con muelas de diamante. Cómo hacer el cálculo: el metal duro merece la pena cuando el coste de parar la línea supera el coste de la cuchilla. Díganos el material y el fallo que está observando ahora, y nosotros elegiremos el grado.",
+    },
+
+    componentsIntro:
+      "Envíenos una cuchilla desgastada y el modelo de su máquina — realizaremos ingeniería inversa de la holgura y le cotizaremos en 2 horas.",
+
+    components: [
+      {
+        id: "carbide-when-it-pays",
+        tag: "IDONEIDAD DE APLICACIÓN",
+        title: "Dónde el metal duro justifica su coste",
+        description:
+          "La carga abrasiva es lo que destruye los filos de acero, y la dureza es la única defensa. El BOPP cargado con TiO₂, el PE con carbonato de calcio, el recorte de FR-4 y preimpregnados, la cinta reforzada con fibra de vidrio, el meltblown con carga mineral, la lámina de aluminio y cobre estucada y el cartón estucado con caolín desgastan un filo de acero de herramientas más rápido de lo que permite la longitud de la tirada. La misma lógica de grado se aplica sea cual sea el sustrato — es una decisión de material, no de aplicación.",
+      },
+      {
+        id: "carbide-when-not-to",
+        tag: "LÍMITES HONESTOS",
+        title: "Dónde el metal duro es la elección equivocada",
+        description:
+          "El metal duro es una solución de resistencia al desgaste, no una mejora general. Se astilla donde el D2 se deformaría — en empalmes, enganchones y cortes interrumpidos, o allí donde la cuchilla puede tocar el yunque metal contra metal. En sustratos limpios sin carga y tiradas cortas, el D2 o el ASP23 PM mantienen el filo el tiempo suficiente a una fracción del precio. Y sin acceso a reafilado con muela de diamante, una cuchilla de metal duro desafilada es chatarra en lugar de un activo. Si algo de esto describe su línea, díganoslo al consultar — preferimos cotizarle el acero correcto.",
+      },
+      {
+        id: "carbide-grade-selection",
+        tag: "METALURGIA",
+        title: "Sustrato de grano micrométrico, elegido para cada trabajo",
+        description:
+          "Seleccionamos entre cuatro grados en función de su material y de su modo de fallo actual, en lugar de enviar un único grado para todo. Los grados submicrónicos mantienen un filo más agudo; los grados con más cobalto sobreviven al impacto. El metal duro sólo puede acabarse con muelas de diamante, y la geometría de filo, el paralelismo y la excentricidad se mantienen con el mismo estándar de inspección que nuestro rectificado de acero de herramientas — cada cuchilla medida antes del despacho, con informe de ensayo de dureza y registro dimensional en la caja.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "nonwoven-slitter-knives",
+      "metal-coil-slitting-knives",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 600,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Cuándo debo elegir metal duro macizo en lugar de M2 HSS o D2?",
+          answer:
+            "Sólo cuando su banda lleve carga abrasiva, o cuando sus tiradas sean lo bastante largas como para que el ahorro en reafilado y cambios cubra la diferencia de precio de 6–10×. Para film transparente estándar, papel liso o PE sin carga, el D2 o el ASP23 PM suele ser la mejor opción comercial — y se lo diremos.",
+        },
+        {
+          question:
+            "¿Cuántas veces se puede reafilar una cuchilla cortadora de metal duro?",
+          answer:
+            "Depende del sobreespesor previsto en el diseño de la cuchilla, no del material. Cada reafilado elimina material; el límite práctico está donde la cuchilla adelgaza por debajo de su tolerancia de holgura. El metal duro suele admitir menos reafilados que el D2, pero ofrece mucho más tiempo de trabajo entre cada uno, que es donde está realmente la economía. Se requieren muelas de diamante — las muelas convencionales de óxido de aluminio se vidrian y no cortan metal duro.",
+        },
+        {
+          question:
+            "Mi cuchilla de metal duro se astilló en la primera tirada, ¿qué falló?",
+          answer:
+            "Casi siempre una de tres cosas. Manipulación: una cuchilla de metal duro que cae sobre un suelo de hormigón desarrolla tensiones internas y grietas que permanecen invisibles hasta que se aplica carga. Holgura: ajustada demasiado estrecha, la cuchilla hace contacto metal contra metal con el yunque y se microastilla a lo largo del filo. O la aplicación tiene impacto — un empalme, un enganchón, un corte interrumpido — que la fragilidad del metal duro no puede absorber. Envíenos una foto del filo astillado; el patrón de fractura suele identificar cuál de los tres fue.",
+        },
+        {
+          question: "¿YG6 o YG8: qué grado debo especificar?",
+          answer:
+            "El YG6 (ISO K10) es más duro y dura más en trabajo estable, limpio y abrasivo. El YG8 (ISO K20) lleva más cobalto, por lo que es más tenaz y tolera el impacto a costa de algo de vida útil del filo. Si sus cuchillas de acero actuales se desafilan, vaya a más dureza. Si se astillan, vaya a más tenacidad. Si ocurren ambas cosas, el problema suele ser la holgura y no el material.",
+        },
+        {
+          question:
+            "¿Puede una cuchilla superior de metal duro trabajar contra un yunque inferior de acero?",
+          answer:
+            "Sí, y es habitual — pero entonces el yunque pasa a ser la pieza de desgaste y necesitará atención antes que hasta ahora. Si el yunque es más blando, verifique la holgura con más frecuencia, ya que el desgaste del yunque abre la separación y el primer síntoma es un borde irregular que parece un problema de la cuchilla. Disponemos de pares de metal duro emparejados cuando el desgaste del yunque es el factor limitante.",
+        },
+        {
+          question:
+            "¿Cómo deben almacenarse y manipularse las cuchillas de metal duro?",
+          answer:
+            "Separadas individualmente, nunca apiladas metal contra metal, en un entorno seco. La mayoría de los fallos de metal duro que investigamos comenzaron en el almacén o en el transporte, no en la máquina. Las cuchillas se envían en embalaje protector que conviene conservar para las que no esté utilizando.",
+        },
+      ],
+      company: [
+        {
+          question: "¿Son ustedes fabricante o empresa comercial?",
+          answer:
+            "Fabricamos. El rectificado, el control del tratamiento térmico y la inspección se realizan en nuestras propias instalaciones certificadas ISO 9001:2015, en funcionamiento desde 2008 y con envíos a más de 50 países. Por eso podemos cotizar a partir de una muestra desgastada y respaldar el registro dimensional que se envía con ella.",
+        },
+        {
+          question: "¿Pueden fabricar cuchillas de metal duro sin plano OEM?",
+          answer:
+            "Sí — envíenos una cuchilla desgastada y el modelo de su máquina. Medimos la muestra, deducimos por ingeniería inversa la holgura de trabajo a partir del patrón de desgaste y producimos un recambio equivalente; el patrón de desgaste suele decirnos más sobre cómo trabaja realmente la cuchilla que el plano original. El diámetro interior, el chavetero, el patrón de agujeros de montaje y el espesor se ajustan a los árboles que ya utiliza, de modo que no hay que cambiar el portacuchillas ni reutillar.",
+        },
+        {
+          question: "¿Qué documentación acompaña a un pedido de metal duro?",
+          answer:
+            "Un informe de ensayo de dureza y un registro de inspección dimensional con cada envío, desde unas instalaciones certificadas ISO 9001:2015. Si su inspección de entrada necesita datos completos de MMC, solicítelo al hacer el pedido y se enviará con las cuchillas. Cuando varias cuchillas comparten un eje, se rectifican y envían como un juego emparejado verificado para que el error de apilamiento no se acumule entre posiciones.",
+        },
+        {
+          question:
+            "¿Podemos probar un juego pequeño de metal duro antes de comprometernos con un pedido completo?",
+          answer:
+            "Sí. Suministramos juegos de prueba — normalmente de 2 a 5 cuchillas — para verificar el ajuste en máquina y ensayar la vida útil del filo frente a sus cuchillas de acero actuales. Preferimos que demuestre la amortización en su propia línea antes que creer en nuestro multiplicador. Para perfiles a medida, se produce una muestra de aprobación dimensional antes de iniciar la producción completa.",
+        },
+        {
+          question:
+            "¿Cuál es el plazo de entrega de las cuchillas cortadoras de metal duro?",
+          answer:
+            "Los perfiles estándar en grados de stock se envían en 7–12 días laborables; la geometría a medida y los diámetros no estándar tardan de 15 a 20. El metal duro lleva más tiempo que el acero de herramientas porque los preformados sinterizados y el acabado con muela de diamante no pueden acelerarse sin que le cueste calidad de filo. Las cuchillas se envían separadas individualmente en embalaje protector — la mayoría de los daños en metal duro que investigamos ocurrieron en tránsito o almacenamiento, no en la máquina.",
+        },
+      ],
+    },
+  },
   {
     id: "metal-cold-saw-blades",
     name: "Hojas de sierra en frío para metal",
@@ -5110,402 +5334,6 @@ export const blades: Blade[] = [
     },
   },
   {
-    id: "wood-chipper-blades-industrial",
-    name: "Astilladoras industriales",
-    fullName:
-      "Cuchillas de astilladora de tambor de acero HSS y D2 para silvicultura pesada, biomasa y reciclaje de madera",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Astilladoras de madera",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-    badge: "Grado industrial",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
-    ],
-    description:
-      "Cuchillas para astilladoras de tambor de servicio pesado en acero rápido M2, D2 (SKD11) y acero para herramientas Cr12MoV para silvicultura industrial, procesamiento de biomasa de árboles enteros y reciclaje de madera de demolición. Endurecidas al vacío HRC 58-62 con tratamiento criogénico profundo. Rectificado superficial de precisión con un paralelismo de ±0,05 mm de espesor. Ajuste OEM para Vermeer, Morbark, Doppstadt, Jenz & Bruks Siwertell.",
-    fullDescription:
-      "Las astilladoras industriales de madera para silvicultura, energía de biomasa y reciclaje de madera de construcción y demolición funcionan con una carga sostenida de alto par que deja al descubierto todos los puntos débiles de la metalurgia de las cuchillas. Una cuchilla estándar de acero con alto contenido en carbono se desafila en un solo turno en madera dura densa y se rompe al primer golpe de clavo en madera de demolición contaminada. Las cuchillas industriales Sureay para astilladoras de madera se fabrican con aceros para herramientas de primera calidad - M2 HSS, D2 (1.2379 / SKD11) y Cr12MoV - seleccionados específicamente para el doble requisito de resistencia a la abrasión y tenacidad al impacto.\n\nTodas las cuchillas se someten a un tratamiento térmico en vacío mediante una secuencia controlada de revenido de 4 ciclos y a un procesamiento criogénico profundo a -196°C.\n\n## Selección de materiales por materia prima y ciclo de trabajo\n\n**Acero para herramientas en frío D2 / SKD11 (HRC 58-62):** La especificación de primera calidad para el reciclado de madera comercial de gran volumen y la producción de astillas de biomasa. El 12% de cromo y el 1,55% de carbono proporcionan una excelente resistencia a la abrasión contra fibras de madera dura ricas en lignina y corteza silícea.\n\n**Cr12MoV (HRC 58-60):** Un excelente equilibrio entre resistencia al desgaste y tenacidad para operaciones con materias primas mixtas. Las adiciones de molibdeno-vanadio del Cr12MoV mejoran la absorción de la energía del impacto en comparación con el D2 estándar, lo que lo convierte en la elección correcta para astilladoras de disco y procesadores de biomasa de árboles enteros.\n\n**M2 HSS (HRC 62-64):** La especificación de mayor dureza para el astillado limpio y a alta velocidad de troncos de madera blanda y madera para pasta, donde la máxima retención del filo es la prioridad.\n\n**6CrW2Si (HRC 55-58):** Aleación resistente a los golpes para madera de demolición muy contaminada, traviesas de ferrocarril y residuos verdes urbanos con alto riesgo de contaminación metálica.\n\n## Rectificado de precisión para calidad de viruta\n\nLas cuchillas astilladoras industriales Sureay están rectificadas con precisión con un paralelismo de espesor de ±0,05 mm, un ángulo de bisel de ±0,5°, una planitud de cara de ≤0,05 mm por 300 mm y una tolerancia de posición de los orificios de los pernos de ±0,10 mm.",
-    link: "/products/wood-chipper-blades-industrial",
-    isFeatured: true,
-    compatibleMachines: [
-      "Vermeer",
-      "Morbark",
-      "Doppstadt",
-      "Jenz",
-      "Bruks Siwertell",
-      "Peterson Pacific",
-      "CBI",
-      "Precision Husky",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Thickness Tol.",
-        value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per species & contamination level)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood",
-      },
-    ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "METALURGIA",
-        title:
-          "Acero para herramientas HSS y D2 - Acero al carbono no estándar",
-        description:
-          "Las cuchillas astilladoras estándar de alto contenido en carbono se desafilan en cuestión de horas con madera dura densa y se rompen con materia prima contaminada. Nuestras cuchillas D2/SKD11 ofrecen una vida útil del filo entre 2 y 3 veces mayor gracias a la distribución uniforme del carburo de cromo, mientras que las M2 HSS proporcionan la máxima retención del filo en madera blanda limpia a altas velocidades del tambor.",
-      },
-      {
-        id: "cryo-through-hardened",
-        tag: "DURABILIDAD",
-        title: "Criogenia profunda + núcleo endurecido en toda su masa",
-        description:
-          "El endurecimiento al vacío seguido de un tratamiento criogénico profundo a -196°C transforma la austenita retenida en martensita estable, aumentando la resistencia al desgaste hasta en un 40%. El endurecimiento total garantiza que cada uno de los 8-12 ciclos de reafilado ofrezca un rendimiento de filo idéntico: no queda expuesto ningún núcleo blando tras el afilado.",
-      },
-      {
-        id: "drum-balance-precision",
-        tag: "PRECISIÓN",
-        title: "±0,05 mm para Dynamic Drum Balance",
-        description:
-          "A velocidades de punta de tambor superiores a 60 m/s, una variación de 0,10 mm en el grosor del álabe crea un desequilibrio centrífugo destructivo. Todos los álabes se rectifican en superficie con un paralelismo de ±0,05 mm y se verifican antes de su envío, lo que garantiza que el tambor se mantenga dentro de las especificaciones de equilibrado OEM tras su instalación.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Astilladora OEM / Modelo",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones de recambio OEM estándar. patrones de pernos de 2, 3 y 4 agujeros mecanizados por CNC según planos exactos. Contracuchillas y placas de desgaste de garganta disponibles como juegos adaptados. Longitudes personalizadas de hasta 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 / 6710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt DH 910 Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Jenz HEM 820",
-        od: "380",
-        id: "110",
-        thickness: "22",
-      },
-      {
-        spec: "CBI Magnum Force",
-        od: "450",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Whole-Tree / Custom",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-standard",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "¿Cuándo debo cambiar el acero estándar con alto contenido en carbono por cuchillas astilladoras D2 o M2 HSS?",
-          answer:
-            "Mejore a D2 (SKD11) cuando su astilladora procese madera dura densa (roble, nogal americano, eucalipto) o madera seca reciclada en turnos continuos de más de 8 horas. La matriz de carburo de cromo del D2 proporciona una vida útil del filo de 2 a 3 veces superior a la del acero al carbono estándar. Mejore a M2 HSS sólo para madera blanda limpia a altas RPM del tambor (1.500-2.500) donde la máxima retención del filo es la prioridad - M2 a HRC 62-64 es más susceptible a daños por impacto en materia prima contaminada.",
-        },
-        {
-          question:
-            "¿Cómo afecta la tolerancia del grosor de las cuchillas a la calidad de las virutas y a la vibración del tambor?",
-          answer:
-            "Una desviación de ±0,10 mm en los juegos de cuchillas produce astillas de tamaño superior e inferior que no cumplen las especificaciones de cribado de biomasa (EN 17225-4). La misma desviación crea un desequilibrio de la fuerza centrífuga a 1.500-2.500 RPM que acelera el fallo de los rodamientos. Nuestra tolerancia de ±0,05 mm elimina ambos problemas.",
-        },
-        {
-          question:
-            "¿Cuántas veces se pueden reafilar las cuchillas de astilladoras industriales D2?",
-          answer:
-            "Nuestras cuchillas D2 templadas pueden ser rectificadas de 8 a 12 veces antes de alcanzar un espesor mínimo seguro (normalmente el 60-70% del original). Rectifique con una amoladora de superficie húmeda utilizando un disco de óxido de aluminio (grano 46-60) a 0,02-0,05 mm de profundidad por pasada. Nunca rectifique en seco, ya que el sobrecalentamiento localizado por encima de 200°C desgasta el temple y ablanda el filo.",
-        },
-        {
-          question:
-            "¿Debo sustituir la contracuchilla cuando instale cuchillas astilladoras nuevas?",
-          answer:
-            "La contracuchilla debe inspeccionarse cada vez que se cambien las cuchillas de la astilladora. Una contracuchilla desgastada reduce la vida útil en un 30-50% y degrada la calidad de las astillas. Sustitúyala cuando el redondeo visible del borde supere 1,0 mm o el astillado supere 0,5 mm de profundidad. Fabricamos contracuchillas adaptadas en acero D2 y acero al manganeso como juegos integrados.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
-        },
-        {
-          question:
-            "¿Pueden suministrar cuchillas para mi modelo específico de astilladora?",
-          answer:
-            "Sí. Envíenos su muestra de cuchilla existente, un dibujo técnico o la marca y el número de modelo de su astilladora. Mantenemos una extensa base de datos de planos OEM para plataformas Vermeer, Morbark, Doppstadt, Jenz, Peterson, CBI y Bruks. Dimensiones a medida en 10-15 días laborables.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-blades-standard",
-    name: "Cuchillas astilladoras de madera",
-    fullName:
-      "Cuchillas reversibles de doble filo para astilladoras de madera | T10 - 9CrSi - Cr12MoV | Paisajismo y silvicultura",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Astilladoras de madera",
-    image:
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-    badge: "Los más vendidos",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
-    ],
-    description:
-      "Cuchillas reversibles de doble filo para astilladoras de madera en T10, 9CrSi y Cr12MoV. HRC 55-60, bisel de precisión 25°-30°. Gírelas cuando estén desafiladas: duplican la vida útil antes de volver a afilarlas. longitudes de 200-350 mm, patrones de tornillos de 2/4/6 agujeros. Ajuste OEM para Bandit, Vermeer, Patriot, Wallenstein y Timberwolf. Recubrimiento antisap opcional de teflón.",
-    fullDescription:
-      "Las cuchillas para astilladoras de madera son el consumible de mayor volumen en las industrias de jardinería, arboricultura y residuos verdes municipales. Las cuchillas estándar Sureay para astilladoras se fabrican con aceros para herramientas de aleación de cromo y alto contenido en carbono con tratamiento térmico: calidades probadas que ofrecen el equilibrio adecuado entre filo, resistencia a los impactos y economía de reafilado para las operaciones diarias de astillado.\n\n## Diseño de doble filo reversible\n\nTodas las hojas presentan una geometría simétrica de doble filo. Cuando el filo de trabajo se embota, simplemente desatornille, gire 180°, vuelva a apretar - y tendrá un segundo filo afilado de fábrica listo para cortar. Esto reduce a la mitad el tiempo de inactividad por cambio de hoja y duplica la vida útil instalada antes de que sea necesario reafilar.\n\n## Materiales\n\n**Acero con alto contenido de carbono T10 (HRC 55-58):** El estándar rentable para trabajos de jardinería y arboricultura que cortan madera blanda, madera verde y residuos de jardinería.\n\n**Aleación de cromo-silicio 9CrSi (HRC 57-60):** Ofrece intervalos de filo entre 40 y 60% más largos que el T10 para especies mixtas de madera dura y blanda (arce, abedul, fresno).\n\n**Acero para herramientas Cr12MoV (HRC 58-60):** Especificación superior para operadores que procesan madera dura seca o residuos verdes urbanos ligeramente contaminados.\n\n## Rectificado de precisión\n\nLas cuchillas están rectificadas con una tolerancia de espesor de ±0,05 mm y un ángulo de bisel de ±0,5° (verificado por comparador óptico). El grosor uniforme de las cuchillas en toda la anchura del tambor elimina las vibraciones y produce una geometría de virutas uniforme que cumple las especificaciones de tamaño de biomasa y mantillo.\n\n## Recubrimiento antiescaras\n\nEl revestimiento opcional de teflón (PTFE) en la cara del rastrillo reduce la adherencia de la savia en un ~70%, ampliando los intervalos de limpieza en el astillado de pinos, abetos y eucaliptos. El revestimiento sobrevive a 4-6 ciclos de reafilado antes de que sea beneficioso volver a aplicarlo.\n\n## Economía de reafilado\n\nEndurecido desde la superficie hasta el núcleo, cada ciclo de reafilado expone acero de idéntica dureza. Cada hoja produce un total de 6-10 filos de corte (2 filos de fábrica × 3-5 rectificados por filo) antes de alcanzar el espesor mínimo de seguridad, lo que hace que el coste total por hora sea altamente competitivo frente a las alternativas importadas.",
-    link: "/products/wood-chipper-blades-standard",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Patriot",
-      "Wallenstein",
-      "Timberwolf",
-      "Linddana",
-      "Schliesing",
-      "Junkkari",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–60 (Triple-Tempered, Through-Hardened)",
-      },
-      {
-        label: "Edge Design",
-        value: "Reversible Double-Edge — flip when dull, 2× installed life",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–30° precision-ground (±0.5°)",
-      },
-      {
-        label: "Lengths",
-        value: "200–350 mm (8″–14″)",
-      },
-      {
-        label: "Bolt Patterns",
-        value: "2-hole · 4-hole · 6-hole (custom available)",
-      },
-      {
-        label: "Coating",
-        value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)",
-      },
-      {
-        label: "Application",
-        value: "Tree Service · Landscaping · Green Waste · Storm Debris",
-      },
-    ],
-    components: [
-      {
-        id: "reversible-double-edge",
-        tag: "ECONOMÍA",
-        title: "Cambie, no sustituya: duplique la vida útil instalada",
-        description:
-          "La geometría simétrica de doble filo proporciona dos filos independientes por hoja. Cuando el filo 1 se desafila, se desatornilla, se gira 180°, se vuelve a apretar - afilado de fábrica y de nuevo astillado en menos de dos minutos. Reduce a la mitad el tiempo de inactividad por cambio de cuchillas y duplica la vida útil antes del reafilado.",
-      },
-      {
-        id: "triple-temper",
-        tag: "TRATAMIENTO TÉRMICO",
-        title: "Núcleo endurecido en toda su masa con triple templado",
-        description:
-          "El triple templado controlado elimina la tensión residual y estabiliza la microestructura martensítica a HRC 55-60 desde la superficie hasta el núcleo. Cada ciclo de reafilado deja al descubierto un acero de idéntica calidad: sin puntos blandos, sin inconsistencias en la duración del filo en todo el juego de cuchillas.",
-      },
-      {
-        id: "anti-sap-coating",
-        tag: "TRATAMIENTO SUPERFICIAL",
-        title: "Recubrimiento antisalpicaduras de teflón",
-        description:
-          "La resina de pino, abeto y eucalipto se adhiere a las caras de las cuchillas y acelera el desgaste de los bordes. El revestimiento opcional de teflón (PTFE) de la cara del rastrillo reduce la adherencia de la savia en un 70%, prolongando los intervalos de limpieza y reduciendo la frecuencia de tirones de la cuchilla a mitad de turno.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Astilladora OEM / Clase de tamaño",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones de doble canto reversibles. patrones de pernos de 2, 4 y 6 agujeros disponibles. Longitudes y patrones de agujeros personalizados en 7 días laborables.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Compact / 8" Class',
-        od: "200",
-        id: "50",
-        thickness: "12",
-      },
-      {
-        spec: 'Bandit 12" / Patriot',
-        od: "230",
-        id: "60",
-        thickness: "12",
-      },
-      {
-        spec: 'Vermeer BC1200 / 10"',
-        od: "260",
-        id: "65",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 15" / Vermeer BC1500',
-        od: "295",
-        id: "75",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19"',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: 'Vermeer BC1800 / 12"',
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Timberwolf / 13"',
-        od: "330",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Heavy Landscape / 14"',
-        od: "350",
-        id: "100",
-        thickness: "22",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-industrial",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 120,
-    },
-    faqs: {
-      technical: [
-        {
-          question: "¿Cómo elegir entre T10, 9CrSi y Cr12MoV?",
-          answer:
-            "T10 es adecuada para madera blanda verde y jardinería en general. Mejore a 9CrSi para maderas duras y blandas mixtas (arce, abedul, fresno), donde ofrece una vida útil del filo un 40-60% más larga. Especifique Cr12MoV para grandes volúmenes de madera dura seca o residuos verdes urbanos ligeramente contaminados.",
-        },
-        {
-          question:
-            "¿Cuándo debo voltear la cuchilla y cuántas veces puedo reafilar?",
-          answer:
-            "Cambie la cuchilla cuando disminuya la eficacia de astillado: caras de las virutas irregulares, aumento de la carga del motor o redondeo visible del filo superior a 0,5 mm. Una vez consumidos ambos filos, cada uno de ellos puede rectificarse de 3 a 5 veces en una rectificadora de superficies estándar, con lo que se obtiene un total de 6 a 10 filos por cuchilla.",
-        },
-        {
-          question: "¿Sobrevivirá el revestimiento de teflón al rectificado?",
-          answer:
-            "Sí, durante el reafilado sólo se rectifica la cara biselada; el recubrimiento de teflón de la cara de rastrillo permanece intacto. Por lo general, persiste durante 4-6 ciclos de reafilado antes de que el recubrimiento sea beneficioso.",
-        },
-        {
-          question:
-            "¿Qué patrón de orificios para pernos necesito para mi modelo de astilladora?",
-          answer:
-            "Bandit 12″/15″: 2 agujeros. Bandit 18″/19″: 4 orificios. Vermeer BC900/BC1200: 2 orificios. BC1500/BC1800: 4 agujeros. Proporcione su número de modelo o envíe su cuchilla desgastada y le confirmaremos la configuración exacta. Modelos personalizados en 7 días laborables.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Fabricante OEM directo desde 2008. Cuando compras en Sureay, te comunicas con los ingenieros que forjan y afilan tus cuchillas, sin intermediarios ni sobreprecios.",
-        },
-        {
-          question:
-            "¿Ofrecen precios por volumen para contratistas de jardinería?",
-          answer:
-            "Sí. Los pedidos de más de 50 cuchillas por envío se benefician de precios por volumen. Hay disponibles acuerdos de suministro anuales con entregas trimestrales programadas. Póngase en contacto con nosotros con su estimación de consumo anual.",
-        },
-      ],
-    },
-  },
-  {
     id: "wood-chipper-anvils",
     name: "Yunques para astilladoras de madera",
     fullName:
@@ -5657,11 +5485,7 @@ export const blades: Blade[] = [
         thickness: "Per OEM Drawing",
       },
     ],
-    relatedBladeIds: [
-      "wood-chipper-blades",
-      "wood-chipper-blades-industrial",
-      "wood-chipper-blades-standard",
-    ],
+    relatedBladeIds: ["wood-chipper-blades"],
     offers: {
       lowPrice: 25,
       highPrice: 250,

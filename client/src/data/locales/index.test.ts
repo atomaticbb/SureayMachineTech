@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeAll } from "vitest";
 import { SUPPORTED_LANGS } from "@/lib/i18n";
 import {
   getBlades,
@@ -8,9 +8,19 @@ import {
   getCategories,
   getCategoryBySlug,
   getSEO,
+  preloadLocale,
 } from ".";
 
 const BLADE_COUNT_EN = getBlades("en").length;
+
+// Non-English blades, categories and SEO config are code-split behind
+// dynamic import() and only populated by preloadLocale(). Without this the
+// accessors silently fall back to English, so every "is translated"
+// assertion below would compare English against English and pass/fail
+// for the wrong reason.
+beforeAll(async () => {
+  await Promise.all(SUPPORTED_LANGS.map(preloadLocale));
+});
 
 describe("getBlades", () => {
   it("returns every language with the same blade count (no shape drift)", () => {
@@ -20,9 +30,16 @@ describe("getBlades", () => {
   });
 
   it("preserves blade IDs (slugs) across languages", () => {
-    const enIds = getBlades("en").map(b => b.id).sort();
+    const enIds = getBlades("en")
+      .map(b => b.id)
+      .sort();
     for (const lang of SUPPORTED_LANGS) {
-      expect(getBlades(lang).map(b => b.id).sort(), lang).toEqual(enIds);
+      expect(
+        getBlades(lang)
+          .map(b => b.id)
+          .sort(),
+        lang
+      ).toEqual(enIds);
     }
   });
 
@@ -69,9 +86,16 @@ describe("getFeaturedBlades", () => {
   });
 
   it("featured ids are stable across languages", () => {
-    const enIds = getFeaturedBlades("en").map(b => b.id).sort();
+    const enIds = getFeaturedBlades("en")
+      .map(b => b.id)
+      .sort();
     for (const lang of SUPPORTED_LANGS) {
-      expect(getFeaturedBlades(lang).map(b => b.id).sort(), lang).toEqual(enIds);
+      expect(
+        getFeaturedBlades(lang)
+          .map(b => b.id)
+          .sort(),
+        lang
+      ).toEqual(enIds);
     }
   });
 });
@@ -98,9 +122,16 @@ describe("getCategories", () => {
   });
 
   it("preserves slugs across languages", () => {
-    const enSlugs = getCategories("en").map(c => c.slug).sort();
+    const enSlugs = getCategories("en")
+      .map(c => c.slug)
+      .sort();
     for (const lang of SUPPORTED_LANGS) {
-      expect(getCategories(lang).map(c => c.slug).sort(), lang).toEqual(enSlugs);
+      expect(
+        getCategories(lang)
+          .map(c => c.slug)
+          .sort(),
+        lang
+      ).toEqual(enSlugs);
     }
   });
 

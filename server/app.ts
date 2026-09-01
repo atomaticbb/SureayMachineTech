@@ -54,50 +54,38 @@ export function createApp({
     next();
   });
 
-  // News pages are English-only — redirect /{lang}/news* → /news*
-  app.get(/^\/(es|fr|ru|vi|ar)\/news(\/.*)?$/, (req, res) => {
-    const rest = req.params[1] || "";
-    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
-    res.redirect(301, `/news${rest}${qs}`);
-  });
-
-  // Mixer Wear Parts is English-only — redirect /{lang}/mixer-wear-parts* → /mixer-wear-parts*
-  app.get(/^\/(es|fr|ru|vi|ar)\/mixer-wear-parts(\/.*)?$/, (req, res) => {
-    const rest = req.params[1] || "";
-    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
-    res.redirect(301, `/mixer-wear-parts${rest}${qs}`);
-  });
-
-  // Privacy Policy / Terms are English-only — redirect /{lang}/privacy-policy
-  // and /{lang}/terms → their unprefixed English canonical.
-  app.get(/^\/(es|fr|ru|vi|ar)\/(privacy-policy|terms)\/?$/, (req, res) => {
-    const qs = req.url.includes("?") ? req.url.slice(req.url.indexOf("?")) : "";
-    res.redirect(301, `/${req.params[1]}${qs}`);
-  });
-
-  // Product pages awaiting translation are English-only — redirect
-  // /{lang}/products/{id} → /products/{id}. Keep this list in sync with
-  // ENGLISH_ONLY_PRODUCT_IDS in client/src/lib/i18n.ts.
-  app.get(
-    /^\/(es|fr|ru|vi|ar)\/products\/(tungsten-carbide-slitter-knives)\/?$/,
-    (req, res) => {
-      const qs = req.url.includes("?")
-        ? req.url.slice(req.url.indexOf("?"))
-        : "";
-      res.redirect(301, `/products/${req.params[1]}${qs}`);
+  // Permanently-removed URLs. These paths never had content of their own:
+  // locale prefixes on English-only sections, and category slugs that only
+  // ever existed in old backlinks. 410 (not 301) so Google drops them for
+  // good — a redirect keeps them in the crawl schedule indefinitely.
+  const sendGone = (res: express.Response) => {
+    res.status(410);
+    if (!staticPath) {
+      res.type("text/plain").send("410 Gone");
+      return;
     }
+    res.sendFile(path.join(staticPath, "404", "index.html"), err => {
+      if (err && !res.headersSent) res.type("text/plain").send("410 Gone");
+    });
+  };
+
+  // News, Mixer Wear Parts and the legal pages ship in English only.
+  app.get(
+    /^\/(?:es|fr|ru|vi|ar)\/(?:news|mixer-wear-parts)(?:\/.*)?$/,
+    (_req, res) => sendGone(res)
+  );
+  app.get(/^\/(?:es|fr|ru|vi|ar)\/(?:privacy-policy|terms)\/?$/, (_req, res) =>
+    sendGone(res)
+  );
+
+  // Invalid category slugs Google only ever reached through old backlinks.
+  app.get(
+    /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/(?:battery-precision|metal-processing|custom-profile)\/?$/,
+    (_req, res) => sendGone(res)
   );
 
   // Canonical redirects for deprecated / duplicate SEO paths.
   app.use((req, res, next) => {
-    // Language-aware: /[lang]/categories/custom-profile → /[lang]/custom
-    const customProfileLang = req.path.match(
-      /^\/(es|fr|ru|vi|ar)\/categories\/custom-profile\/?$/
-    );
-    if (customProfileLang) {
-      return res.redirect(301, `/${customProfileLang[1]}/custom`);
-    }
-
     const redirects: Array<{ from: RegExp; to: string }> = [
       {
         from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-industrial\/?$/,
@@ -138,20 +126,6 @@ export function createApp({
       {
         from: /^\/products\/factory-direct-shredder-blades\/?$/,
         to: "/categories/shredder-blades",
-      },
-      // /categories/custom-profile (English / no prefix) → /custom
-      {
-        from: /^\/(?:en\/)?categories\/custom-profile\/?$/,
-        to: "/custom",
-      },
-      // Invalid category slugs found by Google via old backlinks
-      {
-        from: /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/battery-precision\/?$/,
-        to: "/products",
-      },
-      {
-        from: /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/metal-processing\/?$/,
-        to: "/products",
       },
     ];
 

@@ -75,9 +75,7 @@ export function localizedPath(path: string, lang: Lang): string {
  * data/locales/blades.*.ts arrays first — a product missing from a locale
  * array 404s in that language, it does not fall back to English.
  */
-export const ENGLISH_ONLY_PRODUCT_IDS: readonly string[] = [
-  "tungsten-carbide-slitter-knives",
-];
+export const ENGLISH_ONLY_PRODUCT_IDS: readonly string[] = [];
 
 /** True when `path` (prefixed or not) is an English-only product page. */
 export function isEnglishOnlyProductPath(path: string): boolean {

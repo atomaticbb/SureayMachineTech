@@ -162,24 +162,17 @@ const industryPages: UrlEntry[] = [
   { path: "/custom", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
 ];
 
-const EXCLUDED_PRODUCT_IDS = new Set([
-  "wood-chipper-blades-industrial",
-  "wood-chipper-blades-standard",
-]);
-
 const EXCLUDED_CATEGORY_SLUGS = new Set([
   "wood-chipper-blades",
   "custom-profile",
 ]);
 
-const allProductPages: UrlEntry[] = blades
-  .filter(b => !EXCLUDED_PRODUCT_IDS.has(b.id))
-  .map(b => ({
-    path: `/products/${b.id}`,
-    lastmod: TODAY,
-    changefreq: "monthly",
-    priority: "0.85",
-  }));
+const allProductPages: UrlEntry[] = blades.map(b => ({
+  path: `/products/${b.id}`,
+  lastmod: TODAY,
+  changefreq: "monthly",
+  priority: "0.85",
+}));
 
 // Products whose translations have not shipped yet get one English URL with
 // no hreflang block — see ENGLISH_ONLY_PRODUCT_IDS in client/src/lib/i18n.ts.

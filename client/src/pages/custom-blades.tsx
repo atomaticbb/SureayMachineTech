@@ -161,7 +161,7 @@ const STANDARD_SHAPE_LINKS = [
     labelKey: "productList.filters.logSawBlades",
   },
   {
-    href: "/categories/wood-chipper-blades",
+    href: "/products/wood-chipper-blades",
     labelKey: "productList.filters.woodChipperBlades",
   },
 ];

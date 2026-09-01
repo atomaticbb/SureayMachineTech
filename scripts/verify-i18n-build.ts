@@ -49,8 +49,8 @@ const CANONICAL_ROUTES: string[] = [
   "/privacy-policy",
   "/terms",
   ...blades.map(b => `/products/${b.id}`),
-  // "custom-profile" is excluded: CategoryAggregation redirects it to /custom
-  // (mirrors the same exclusion in prerender.ts's CANONICAL_ROUTES)
+  // "custom-profile" is excluded: the server returns 410 for it (/custom is
+  // the live page; this slug was only ever reached via old backlinks)
   ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
     c => `/categories/${c.slug}`
   ),

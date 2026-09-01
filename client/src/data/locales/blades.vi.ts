@@ -4061,6 +4061,228 @@ export const blades: Blade[] = [
       ],
     },
   },
+
+  {
+    id: "tungsten-carbide-slitter-knives",
+    name: "Dao xẻ hợp kim cứng",
+    fullName: "Dao xẻ hợp kim cứng cho ứng dụng xẻ mài mòn cao",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Dao xẻ",
+    image:
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+    gallery: [
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
+      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
+    ],
+    galleryAlts: [
+      "Dao xẻ hợp kim cứng, ba lưỡi tròn đã mài với bề mặt đánh bóng",
+      "Chi tiết dao xẻ hợp kim cứng cho thấy lỗ tâm, lỗ bắt bu lông và lưỡi cắt đã mài",
+    ],
+
+    description:
+      "Hợp kim cứng nguyên khối có giá cao gấp sáu đến mười lần D2. Khoản chênh lệch đó chỉ hoàn vốn trong đúng hai tình huống: khi vật liệu của bạn có chất độn khoáng gây mài mòn, hoặc khi lô sản xuất đủ dài để thời gian dừng máy thay dao — chứ không phải giá dao — mới là thứ thực sự tốn tiền. Hợp kim cứng hạt siêu mịn YG6, YG6X, YG8 và YG10X (ISO K10–K30) đạt 89,5–92,5 HRA, mài chính xác ±0,002 mm, kèm báo cáo độ cứng và biên bản kích thước trong mỗi lô hàng.",
+
+    fullDescription:
+      "Dao xẻ hợp kim cứng là một quyết định về khả năng chịu mài mòn, không phải một bản nâng cấp chung. Nếu bạn xẻ màng BOPP trong suốt với lô ngắn, D2 hoặc ASP23 PM sẽ phục vụ tốt hơn và rẻ hơn, và chúng tôi sẽ nói điều đó với bạn trước khi bạn đặt hàng. Trang này dành cho những công việc mà thép dụng cụ thực sự không giữ được lưỡi cắt: màng có chất độn khoáng, vật liệu ép lớp gia cường sợi thủy tinh, vải không dệt mài mòn, lá kim loại phủ và bìa carton tốc độ cao.\n\n## Khi nào việc nâng cấp có lãi\n\nHợp kim cứng đáng giá khi chi phí dừng chuyền vượt quá chi phí con dao. Lấy số lần thay dao mỗi tháng, nhân với chi phí dừng máy cho mỗi lần thay, rồi so với chênh lệch giá. Trên dây chuyền mà một lần thay dao tốn một giờ sản xuất, tuổi thọ lưỡi cắt gấp 10 lần thường hoàn vốn sau một đến hai chu kỳ dao. Trên dây chuyền mà việc thay dao nhanh và rẻ, sẽ không hoàn vốn.\n\n## Nơi hợp kim cứng xứng đáng với chi phí\n\n**Màng có chất độn khoáng:** BOPP độn TiO₂, PE độn canxi cacbonat, các loại mờ và tạo lỗ rỗng. Chính chất độn phá hủy lưỡi thép; độ cứng là biện pháp phòng vệ duy nhất.\n\n**Vật liệu ép lớp gia cường sợi thủy tinh và composite:** cắt biên FR-4 và prepreg, băng gia cường sợi thủy tinh, tấm composite nhôm. Hàm lượng thủy tinh gây mài mòn rất mạnh và làm cùn thép gió chỉ trong một ca.\n\n**Vải không dệt mài mòn:** meltblown độn khoáng, spunbond có chất độn, đế nhám và vật liệu khăn lau, nơi hiện tượng xù sợi xuất hiện ngay khi lưỡi cắt bắt đầu mềm.\n\n**Lá kim loại, băng phủ và điện cực pin:** lá nhôm và lá đồng, băng phủ và ép lớp, nơi mép cắt không ba via phải giữ được suốt cả cuộn.\n\n**Bìa và giấy tráng phủ tốc độ cao:** vật liệu tráng cao lanh và bột màu trên dây chuyền mà một lần thay dao tốn một giờ sản xuất, còn giá con dao chỉ là sai số làm tròn so với con số đó.\n\n## Nơi hợp kim cứng là lựa chọn sai\n\n**Va đập và cắt gián đoạn.** Hợp kim cứng giòn. Nếu vật liệu bị vướng, nếu băng dán nối chạy qua, hoặc nếu dao có thể chạm kim loại với kim loại vào đe, hợp kim cứng sẽ mẻ ở chỗ mà D2 chỉ biến dạng và vẫn dùng được.\n\n**Vật liệu sạch, không chất độn, lô ngắn.** Bạn xẻ BOPP trong suốt, giấy kraft thường hay PE không độn? D2 hoặc ASP23 PM sẽ giữ lưỡi đủ lâu, với chi phí chỉ bằng một phần nhỏ.\n\n**Không tiếp cận được máy mài kim cương.** Nếu cả bạn lẫn đối tác dịch vụ đều không thể mài lại bằng đá kim cương, một con dao hợp kim cứng bị cùn sẽ thành phế liệu thay vì tài sản mài lại được — và bài toán kinh tế đảo ngược.\n\n**Khe hở lỏng hoặc chưa được kiểm tra.** Hợp kim cứng khuếch đại những gì thiết lập của bạn vốn đã làm. Nó sẽ không bù đắp cho trục mòn, giá dao bị đảo, hay khe hở mà chưa ai đo.",
+
+    link: "/products/tungsten-carbide-slitter-knives",
+
+    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
+
+    specs: [
+      {
+        label: "Material",
+        value:
+          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+      },
+      { label: "Hardness", value: "89.5–92.5 HRA" },
+      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
+      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
+      { label: "Outer Diameter", value: "20–300 mm" },
+      { label: "Thickness", value: "0.3–5.0 mm" },
+      {
+        label: "Tolerance",
+        value:
+          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+      },
+      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
+      {
+        label: "Edge Geometry",
+        value: "Single bevel, double bevel, hollow ground, razor",
+      },
+      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
+      {
+        label: "Applications",
+        value:
+          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+      },
+    ],
+
+    steelGrades: {
+      intro:
+        "Hàm lượng coban là núm điều chỉnh đánh đổi: nhiều coban hơn nghĩa là dai hơn và ít giòn hơn, nhưng lưỡi cắt cùn sớm hơn. Bốn mác hợp kim cứng dưới đây được trình bày đối chiếu với các loại thép dụng cụ mà chúng thay thế, để quyết định nâng cấp hiện rõ trong một bảng duy nhất. Nếu dao thép hiện tại của bạn bị cùn, hãy chọn cứng hơn. Nếu bị mẻ, hãy chọn dai hơn. Nếu cả hai, vấn đề thường nằm ở khe hở chứ không phải vật liệu.",
+      rows: [
+        {
+          grade: "D2",
+          hardness: "HRC 58–62",
+          bestFor: "Xẻ đa dụng các vật liệu sạch, không chất độn",
+          tradeoff:
+            "Tuổi thọ lưỡi và chi phí ở mức chuẩn. Mài lại được bằng đá thông thường.",
+        },
+        {
+          grade: "M2 HSS",
+          hardness: "HRC 62–65",
+          bestFor: "Mài mòn vừa phải ở tốc độ dây chuyền cao hơn",
+          tradeoff: "Tuổi thọ lưỡi gấp 2–3 lần D2 với chi phí khoảng 1,5 lần.",
+        },
+        {
+          grade: "ASP23 PM",
+          hardness: "HRC 66–68",
+          bestFor:
+            "Công việc tốc độ cao, mài mòn cao nhưng chưa đến mức mài mòn thực sự",
+          tradeoff:
+            "Tuổi thọ lưỡi gấp 4–6 lần D2 với chi phí khoảng 3 lần — thường là lựa chọn kinh tế tốt hơn.",
+        },
+        {
+          grade: "YG6 (ISO K10)",
+          hardness: "89.5–91.5 HRA",
+          bestFor: "Xẻ ổn định, không va đập trên màng và giấy có tính mài mòn",
+          tradeoff:
+            "6 % coban. Cứng nhất trong bốn mác hợp kim cứng và ít dung thứ va đập nhất.",
+        },
+        {
+          grade: "YG6X (ISO K10UF)",
+          hardness: "91–92.5 HRA",
+          bestFor:
+            "Chiều dày mỏng, dung sai chặt, chất lượng lưỡi tốt nhất có thể đạt được",
+          tradeoff:
+            "6 % coban, hạt siêu mịn. Lưỡi sắc nhất, nhạy cảm nhất với cắt gián đoạn.",
+        },
+        {
+          grade: "YG8 (ISO K20)",
+          hardness: "88.5–90.5 HRA",
+          bestFor:
+            "Vải không dệt, lá kim loại, và bất cứ nơi nào vật liệu có thể bị vướng",
+          tradeoff:
+            "8 % coban. Dai hơn và chịu va đập tốt hơn, đổi lại mất một phần tuổi thọ lưỡi.",
+        },
+        {
+          grade: "YG10X (ISO K30)",
+          hardness: "90.5–91.5 HRA",
+          bestFor: "Cắt gián đoạn, vật liệu ép lớp và vật liệu dày hơn",
+          tradeoff:
+            "10 % coban, hạt siêu mịn. Cân bằng độ dai và chịu mài mòn tốt nhất trong dải sản phẩm.",
+        },
+      ],
+      outro:
+        "Trên toàn dải sản phẩm, hợp kim cứng cho tuổi thọ lưỡi khoảng 10–30 lần so với D2 với chi phí cao gấp 6–10 lần, chịu được ít chu kỳ mài lại hơn và chỉ có thể mài bằng đá kim cương. Cách tính: hợp kim cứng đáng giá khi chi phí dừng chuyền vượt quá chi phí con dao. Hãy cho chúng tôi biết vật liệu và dạng hỏng hóc bạn đang gặp, chúng tôi sẽ chọn mác.",
+    },
+
+    componentsIntro:
+      "Gửi cho chúng tôi một con dao đã mòn và model máy của bạn — chúng tôi sẽ dựng lại khe hở bằng kỹ thuật đảo ngược và báo giá trong vòng 2 giờ.",
+
+    components: [
+      {
+        id: "carbide-when-it-pays",
+        tag: "MỨC ĐỘ PHÙ HỢP",
+        title: "Nơi hợp kim cứng xứng đáng với chi phí",
+        description:
+          "Chính chất độn mài mòn phá hủy lưỡi thép, và độ cứng là biện pháp phòng vệ duy nhất. BOPP độn TiO₂, PE độn canxi cacbonat, cắt biên FR-4 và prepreg, băng gia cường sợi thủy tinh, meltblown độn khoáng, lá nhôm và lá đồng có phủ, cùng bìa tráng cao lanh đều làm mòn lưỡi thép dụng cụ nhanh hơn mức mà độ dài lô sản xuất cho phép. Cùng một logic chọn mác được áp dụng cho mọi vật liệu — đây là quyết định về vật liệu, không phải về ứng dụng.",
+      },
+      {
+        id: "carbide-when-not-to",
+        tag: "GIỚI HẠN THÀNH THẬT",
+        title: "Nơi hợp kim cứng là lựa chọn sai",
+        description:
+          "Hợp kim cứng là giải pháp chịu mài mòn, không phải bản nâng cấp chung. Nó mẻ ở chỗ mà D2 chỉ biến dạng — tại mối nối, chỗ vướng và vết cắt gián đoạn, hoặc nơi dao có thể chạm kim loại với kim loại vào đe. Trên vật liệu sạch không chất độn và lô ngắn, D2 hoặc ASP23 PM giữ lưỡi đủ lâu với giá chỉ bằng một phần nhỏ. Và nếu không tiếp cận được việc mài lại bằng đá kim cương, một con dao hợp kim cứng bị cùn là phế liệu chứ không phải tài sản. Nếu điều nào trong số đó mô tả dây chuyền của bạn, hãy nói khi hỏi hàng — chúng tôi thà báo giá đúng loại thép.",
+      },
+      {
+        id: "carbide-grade-selection",
+        tag: "LUYỆN KIM",
+        title: "Nền hạt siêu mịn, chọn theo từng công việc",
+        description:
+          "Chúng tôi chọn trong bốn mác dựa trên vật liệu và dạng hỏng hóc hiện tại của bạn, thay vì giao một mác duy nhất cho mọi trường hợp. Các mác cỡ hạt dưới micron giữ lưỡi sắc hơn; các mác nhiều coban chịu được va đập. Hợp kim cứng chỉ có thể hoàn thiện bằng đá kim cương, và hình học lưỡi, độ song song cùng độ đảo được giữ theo đúng tiêu chuẩn kiểm tra như khi chúng tôi mài thép dụng cụ — mỗi con dao đều được đo trước khi xuất xưởng, kèm báo cáo thử độ cứng và biên bản kích thước trong hộp.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "nonwoven-slitter-knives",
+      "metal-coil-slitting-knives",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 600,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Khi nào tôi nên chọn hợp kim cứng nguyên khối thay vì M2 HSS hoặc D2?",
+          answer:
+            "Chỉ khi vật liệu của bạn có chất độn mài mòn, hoặc khi lô sản xuất đủ dài để khoản tiết kiệm từ mài lại và thay dao bù được chênh lệch giá 6–10 lần. Với màng trong tiêu chuẩn, giấy thường hoặc PE không độn, D2 hoặc ASP23 PM thường là lựa chọn kinh tế hơn — và chúng tôi sẽ nói vậy.",
+        },
+        {
+          question: "Một con dao xẻ hợp kim cứng có thể mài lại bao nhiêu lần?",
+          answer:
+            "Điều đó phụ thuộc vào lượng dư chiều dày được thiết kế sẵn trong con dao, không phải vào vật liệu. Mỗi lần mài đều lấy đi vật liệu; giới hạn thực tế là khi dao mỏng quá dung sai khe hở. Hợp kim cứng thường chịu được ít lần mài lại hơn D2 nhưng cho thời gian chạy máy giữa mỗi lần dài hơn nhiều, và đó mới là chỗ bài toán kinh tế nằm ở. Bắt buộc dùng đá kim cương — đá nhôm oxit thông thường sẽ bị chai và không cắt được hợp kim cứng.",
+        },
+        {
+          question:
+            "Dao hợp kim cứng của tôi bị mẻ ngay lô đầu — đã sai ở đâu?",
+          answer:
+            "Hầu như luôn là một trong ba nguyên nhân. Thao tác: một con dao hợp kim cứng rơi xuống nền bê tông sẽ sinh ứng suất bên trong và vết nứt, vốn vô hình cho đến khi chịu tải. Khe hở: đặt quá chặt, dao tiếp xúc kim loại với kim loại vào đe và vi mẻ dọc theo lưỡi. Hoặc ứng dụng có va đập — một mối nối, một chỗ vướng, một vết cắt gián đoạn — mà độ giòn của hợp kim cứng không hấp thụ nổi. Hãy gửi cho chúng tôi ảnh chụp lưỡi bị mẻ; dạng vết gãy thường cho biết đó là nguyên nhân nào trong ba.",
+        },
+        {
+          question: "YG6 hay YG8 — tôi nên chỉ định mác nào?",
+          answer:
+            "YG6 (ISO K10) cứng hơn và bền hơn trong công việc ổn định, sạch, có tính mài mòn. YG8 (ISO K20) chứa nhiều coban hơn nên dai hơn và chịu được va đập, đổi lại mất một phần tuổi thọ lưỡi. Nếu dao thép hiện tại của bạn bị cùn, hãy chọn cứng hơn. Nếu bị mẻ, hãy chọn dai hơn. Nếu cả hai, vấn đề thường nằm ở khe hở chứ không phải vật liệu.",
+        },
+        {
+          question:
+            "Dao trên bằng hợp kim cứng có chạy được với đe dưới bằng thép không?",
+          answer:
+            "Có, và điều này phổ biến — nhưng khi đó đe trở thành chi tiết mòn và sẽ cần được quan tâm sớm hơn trước. Nếu đe mềm hơn, hãy kiểm tra khe hở thường xuyên hơn, vì đe mòn làm khe hở rộng ra và triệu chứng đầu tiên là mép cắt xơ, trông giống như lỗi của dao. Chúng tôi có sẵn cặp hợp kim cứng đồng bộ khi độ mòn của đe là yếu tố giới hạn.",
+        },
+        {
+          question:
+            "Nên bảo quản và thao tác với dao hợp kim cứng như thế nào?",
+          answer:
+            "Tách riêng từng con, không bao giờ xếp chồng kim loại trần lên nhau, trong môi trường khô. Phần lớn các hỏng hóc hợp kim cứng mà chúng tôi điều tra đều bắt đầu từ kho hoặc trong vận chuyển, chứ không phải trên máy. Dao được giao trong bao bì bảo vệ, nên giữ lại cho những con chưa đưa vào chạy.",
+        },
+      ],
+      company: [
+        {
+          question: "Các bạn là nhà sản xuất hay công ty thương mại?",
+          answer:
+            "Chúng tôi sản xuất. Việc mài, kiểm soát nhiệt luyện và kiểm tra đều thực hiện tại nhà máy của chính chúng tôi, đạt chứng nhận ISO 9001:2015, hoạt động từ năm 2008 và xuất hàng tới hơn 50 quốc gia. Đó là lý do chúng tôi có thể báo giá từ một mẫu dao đã mòn và chịu trách nhiệm về biên bản kích thước đi kèm.",
+        },
+        {
+          question:
+            "Các bạn có làm được dao hợp kim cứng khi không có bản vẽ OEM không?",
+          answer:
+            "Có — hãy gửi một con dao đã mòn và model máy của bạn. Chúng tôi đo mẫu, dựng lại khe hở làm việc từ vết mòn bằng kỹ thuật đảo ngược, rồi sản xuất bản thay thế tương thích; vết mòn thường cho chúng tôi biết về cách con dao thực sự chạy nhiều hơn cả bản vẽ gốc. Lỗ trục, rãnh then, sơ đồ lỗ bắt và chiều dày đều khớp với các trục bạn đang dùng, nên không phải đổi giá dao và không phải làm lại đồ gá.",
+        },
+        {
+          question: "Đơn hàng hợp kim cứng đi kèm những tài liệu gì?",
+          answer:
+            "Báo cáo thử độ cứng và biên bản kiểm tra kích thước trong mỗi lô hàng, từ nhà máy đạt chứng nhận ISO 9001:2015. Nếu khâu kiểm tra đầu vào của bạn cần dữ liệu CMM đầy đủ, hãy yêu cầu khi đặt hàng và tài liệu sẽ đi cùng dao. Khi nhiều dao dùng chung một trục, chúng được mài và giao thành bộ đồng bộ đã kiểm chứng để sai số cộng dồn không tích lũy qua các vị trí.",
+        },
+        {
+          question:
+            "Chúng tôi có thể chạy thử một bộ hợp kim cứng nhỏ trước khi đặt đơn đầy đủ không?",
+          answer:
+            "Được. Chúng tôi cung cấp bộ dùng thử — thường 2–5 con dao — để kiểm tra độ khớp trên máy và thử tuổi thọ lưỡi so với dao thép hiện tại của bạn. Chúng tôi muốn bạn tự chứng minh mức hoàn vốn trên dây chuyền của mình hơn là tin lời chúng tôi về con số nhân. Với biên dạng đặt riêng, một mẫu duyệt kích thước sẽ được làm trước khi vào sản xuất hàng loạt.",
+        },
+        {
+          question: "Thời gian giao dao xẻ hợp kim cứng là bao lâu?",
+          answer:
+            "Biên dạng tiêu chuẩn với mác có sẵn giao trong 7–12 ngày làm việc; hình học đặt riêng và đường kính phi tiêu chuẩn cần 15–20 ngày. Hợp kim cứng lâu hơn thép dụng cụ vì phôi thiêu kết và khâu hoàn thiện bằng đá kim cương không thể thúc nhanh mà không làm bạn mất chất lượng lưỡi. Dao được giao tách riêng từng con trong bao bì bảo vệ — phần lớn hư hỏng hợp kim cứng mà chúng tôi điều tra xảy ra trong vận chuyển hoặc lưu kho, không phải trên máy.",
+        },
+      ],
+    },
+  },
   {
     id: "metal-cold-saw-blades",
     name: "Lưỡi cưa nguội kim loại",
@@ -5082,400 +5304,6 @@ export const blades: Blade[] = [
     },
   },
   {
-    id: "wood-chipper-blades-industrial",
-    name: "Lưỡi Chipper gỗ công nghiệp",
-    fullName:
-      "Dao Chipper Trống Thép Dụng cụ HSS & D2 dùng cho Lâm nghiệp nặng, Sinh khối & Tái chế Gỗ",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lưỡi Chipper Gỗ",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-    badge: "Cấp công nghiệp",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-14.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-13.webp",
-    ],
-    description:
-      "Dao băm dạng trống hạng nặng bằng thép công cụ M2 HSS, D2 (SKD11) và Cr12MoV dành cho lâm nghiệp công nghiệp, xử lý sinh khối nguyên cây và tái chế gỗ phá dỡ. HRC 58–62 được làm cứng chân không bằng xử lý đông lạnh sâu. Bề mặt được mài chính xác đến độ song song có độ dày ± 0,05mm. OEM phù hợp cho Vermeer, Morbark, Doppstadt, Jenz & Bruks Siwertell.",
-    fullDescription:
-      "Máy băm gỗ công nghiệp trong lâm nghiệp, năng lượng sinh khối và tái chế gỗ C&D hoạt động dưới tải mô-men xoắn cao liên tục, bộc lộ mọi điểm yếu trong luyện kim lưỡi. Một lưỡi dao bằng thép cacbon cao tiêu chuẩn sẽ bị cùn chỉ trong một lần di chuyển trên gỗ cứng dày đặc và vỡ ra ngay lần đóng đinh đầu tiên trên gỗ bị nhiễm bẩn khi phá dỡ. Lưỡi băm gỗ công nghiệp Sureay được sản xuất từ ​​thép công cụ cao cấp — M2 HSS, D2 (1.2379 / SKD11) và Cr12MoV — được lựa chọn đặc biệt cho yêu cầu kép về khả năng chống mài mòn và độ bền va đập.\n\nMỗi lưỡi dao đều được xử lý nhiệt chân không thông qua trình tự ủ 4 chu kỳ có kiểm soát và được xử lý đông lạnh sâu ở −196°C.\n\n## Lựa chọn nguyên liệu theo chu trình nguyên liệu và nhiệm vụ\n\n**Thép công cụ gia công nguội D2 / SKD11 (HRC 58–62):** Thông số kỹ thuật cao cấp để tái chế gỗ thương mại số lượng lớn và sản xuất chip sinh khối. Hàm lượng 12% crom và 1,55% carbon mang lại khả năng chống mài mòn vượt trội so với sợi gỗ cứng giàu lignin và vỏ chứa silica.\n\n**Cr12MoV (HRC 58–60):** Sự cân bằng tuyệt vời giữa khả năng chống mài mòn và độ bền cho các hoạt động cung cấp nguyên liệu hỗn hợp. Việc bổ sung molybdenum-vanadi của Cr12MoV cải thiện khả năng hấp thụ năng lượng va chạm so với D2 tiêu chuẩn, khiến nó trở thành lựa chọn chính xác cho máy băm đĩa và bộ xử lý sinh khối nguyên cây.\n\n**M2 HSS (HRC 62–64):** Thông số kỹ thuật có độ cứng cao nhất để băm trống sạch, tốc độ cao đối với gỗ mềm và gỗ bột giấy trong đó ưu tiên giữ cạnh tối đa.\n\n**6CrW2Si (HRC 55–58):** Hợp kim chống va đập dành cho gỗ phá hủy bị ô nhiễm nặng, thanh ray đường sắt và rác thải xanh đô thị có nguy cơ ô nhiễm kim loại cao.\n\n## Mài chính xác cho chất lượng chip\n\nCác lưỡi máy băm công nghiệp Sureay được mài bề mặt chính xác đến độ song song có độ dày ±0,05 mm, góc vát ±0,5°, độ phẳng mặt 0,05 mm trên 300 mm và dung sai vị trí lỗ bu lông là ±0,10 mm.",
-    link: "/products/wood-chipper-blades-industrial",
-    isFeatured: true,
-    compatibleMachines: [
-      "Vermeer",
-      "Morbark",
-      "Doppstadt",
-      "Jenz",
-      "Bruks Siwertell",
-      "Peterson Pacific",
-      "CBI",
-      "Precision Husky",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "M2 HSS (1.3343) | D2 / SKD11 (1.2379) | Cr12MoV | 6CrW2Si",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 58–62 (D2/Cr12MoV) | HRC 62–64 (M2 HSS) | HRC 55–58 (6CrW2Si)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening, 4-Cycle Tempering + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Thickness Tol.",
-        value: "±0.05 mm (ensures drum dynamic balance at 2,500 RPM)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per species & contamination level)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Industrial Drum & Disc Chippers, Whole-Tree Biomass, Demolition Wood, Pulpwood",
-      },
-    ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "Luyện kim",
-        title: "Thép công cụ HSS & D2 - Không phải thép cacbon tiêu chuẩn",
-        description:
-          "Dao băm có hàm lượng carbon cao tiêu chuẩn sẽ bị cùn trong vòng vài giờ trên gỗ cứng dày đặc và vỡ ra trên nguyên liệu bị ô nhiễm. Lưỡi D2/SKD11 của chúng tôi mang lại tuổi thọ cạnh dài hơn 2–3× nhờ phân bổ crom-cacbua đồng đều, trong khi M2 HSS mang lại khả năng giữ cạnh tối ưu trên gỗ mềm sạch ở tốc độ trống RPM cao.",
-      },
-      {
-        id: "cryo-through-hardened",
-        tag: "ĐỘ BỀN",
-        title: "Làm lạnh sâu + Lõi cứng xuyên suốt",
-        description:
-          "Làm cứng chân không sau đó là xử lý đông lạnh sâu ở −196°C biến austenite được giữ lại thành martensite ổn định, tăng khả năng chống mài mòn lên tới 40%. Quá trình làm cứng xuyên suốt đảm bảo mỗi chu kỳ trong số 8–12 chu kỳ mài lại mang lại hiệu suất cạnh giống hệt nhau — không có lõi mềm nào lộ ra sau khi mài.",
-      },
-      {
-        id: "drum-balance-precision",
-        tag: "CHÍNH XÁC",
-        title: "±0,05 mm cho Cân bằng trống động",
-        description:
-          "Ở tốc độ đầu trống trên 60 m/s, sự thay đổi độ dày cánh 0,10 mm sẽ tạo ra sự mất cân bằng ly tâm có tính hủy diệt. Mỗi lưỡi dao đều được mài bề mặt với độ song song ±0,05 mm và được xác minh trước khi gửi đi, đảm bảo trống vẫn đáp ứng thông số kỹ thuật cân bằng OEM sau khi lắp đặt.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Chipper OEM / Model",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước thay thế OEM tiêu chuẩn. Các mẫu bu lông 2 lỗ, 3 lỗ và 4 lỗ được gia công CNC theo bản thiết kế chính xác. Bộ dao phản lực và tấm đeo cổ họng có sẵn dưới dạng bộ phù hợp. Chiều dài tùy chỉnh lên tới 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 / 6710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt DH 910 Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Jenz HEM 820",
-        od: "380",
-        id: "110",
-        thickness: "22",
-      },
-      {
-        spec: "CBI Magnum Force",
-        od: "450",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Whole-Tree / Custom",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-standard",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Khi nào tôi nên nâng cấp từ thép cacbon cao tiêu chuẩn lên lưỡi băm D2 hoặc M2 HSS?",
-          answer:
-            "Nâng cấp lên D2 (SKD11) khi máy băm của bạn xử lý gỗ cứng dày đặc (sồi, hickory, bạch đàn) hoặc gỗ tái chế khô trong ca làm việc liên tục hơn 8 giờ. Ma trận crom-cacbua của D2 mang lại tuổi thọ lưỡi dài hơn 2–3 lần so với thép cacbon tiêu chuẩn. Chỉ nâng cấp lên M2 HSS đối với gỗ mềm sạch ở tốc độ RPM của trống cao (1.500–2.500) trong đó ưu tiên giữ cạnh tối đa — M2 ở HRC 62–64 dễ bị hư hỏng do va đập hơn trên nguyên liệu bị ô nhiễm.",
-        },
-        {
-          question:
-            "Dung sai độ dày lưỡi dao ảnh hưởng như thế nào đến chất lượng chip và độ rung của trống?",
-          answer:
-            "Độ lệch ±0,10 mm giữa các bộ lưỡi cắt tạo ra cả phoi có kích thước quá lớn và nhỏ, không đáp ứng các thông số sàng lọc sinh khối (EN 17225-4). Độ lệch tương tự tạo ra sự mất cân bằng lực ly tâm ở tốc độ 1.500–2.500 vòng/phút, làm tăng tốc độ hỏng ổ trục. Dung sai ±0,05 mm của chúng tôi sẽ loại bỏ cả hai vấn đề.",
-        },
-        {
-          question:
-            "Lưỡi máy băm D2 công nghiệp có thể được mài lại bao nhiêu lần?",
-          answer:
-            "Lưỡi D2 đã được tôi cứng hoàn toàn của chúng tôi có thể được mài lại 8–12 lần trước khi đạt độ dày an toàn tối thiểu (thường bằng 60–70% so với lưỡi ban đầu). Nghiền lại trên máy mài bề mặt ướt sử dụng bánh xe oxit nhôm (46–60 grit) ở độ sâu 0,02–0,05 mm mỗi lượt. Không bao giờ mài khô - nhiệt độ quá nóng cục bộ trên 200°C sẽ làm giảm nhiệt độ và làm mềm các cạnh.",
-        },
-        {
-          question:
-            "Tôi có nên thay dao cố định khi lắp lưỡi dao băm mới không?",
-          answer:
-            "Cần kiểm tra dao cố định mỗi lần thay đổi lưỡi dao băm. Dao phản diện bị mòn làm giảm tuổi thọ sử dụng từ 30–50% và làm giảm chất lượng chip. Thay thế khi độ bo tròn của cạnh nhìn thấy được vượt quá 1,0 mm hoặc vết sứt mẻ vượt quá độ sâu 0,5 mm. Chúng tôi sản xuất các loại dao phản công phù hợp bằng thép D2 và thép mangan dưới dạng bộ tích hợp.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
-        },
-        {
-          question:
-            "Bạn có thể cung cấp lưỡi dao cho mẫu máy băm cụ thể của tôi không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi mẫu lưỡi cắt hiện có của bạn, bản vẽ kỹ thuật hoặc số kiểu máy và nhãn hiệu máy băm của bạn. Chúng tôi duy trì một cơ sở dữ liệu phong phú về các bản thiết kế OEM cho các nền tảng Vermeer, Morbark, Doppstadt, Jenz, Peterson, CBI và Bruks. Kích thước tùy chỉnh trong vòng 10–15 ngày làm việc.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-blades-standard",
-    name: "Dao băm gỗ",
-    fullName:
-      "Dao Chipper Gỗ Hai Cạnh Có Thể Đảo Ngược | T10 · 9CrSi · Cr12MoV | Cảnh quan & Lâm nghiệp",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lưỡi Chipper Gỗ",
-    image:
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-    badge: "Bán chạy nhất",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-standard-02.webp",
-    ],
-    description:
-      "Dao băm gỗ hai lưỡi có thể đảo ngược loại T10, 9CrSi & Cr12MoV. HRC 55–60, góc xiên 25°–30° được mài chính xác. Lật khi bị cùn — tăng gấp đôi tuổi thọ lắp đặt trước khi mài lại. Chiều dài 200–350 mm, mẫu bu lông 2/4/6 lỗ. OEM phù hợp cho Bandit, Vermeer, Patriot, Wallenstein & Timberwolf. Lớp phủ chống nhựa cây Teflon tùy chọn.",
-    fullDescription:
-      "Dao băm gỗ là vật liệu tiêu hao có khối lượng lớn nhất trong ngành cảnh quan, dịch vụ cây xanh và rác thải xanh đô thị. Dao băm tiêu chuẩn Sureay được sản xuất từ ​​thép công cụ hợp kim crôm và cacbon cao đã qua xử lý nhiệt — các loại đã được chứng minh mang lại sự cân bằng phù hợp giữa độ sắc nét của cạnh, độ bền va đập và tính kinh tế khi mài lại cho các hoạt động sứt mẻ hàng ngày.\n\n## Thiết kế hai cạnh có thể đảo ngược\n\nMỗi lưỡi dao đều có hình học hai cạnh đối xứng. Khi lưỡi làm việc bị cùn, chỉ cần tháo chốt, lật 180°, vặn lại — và bạn đã có sẵn cạnh thứ hai sắc như nhà máy để cắt. Điều này giúp giảm một nửa thời gian dừng thay lưỡi và tăng gấp đôi tuổi thọ sử dụng đã lắp đặt trước khi cần mài lại.\n\n## Cấp vật liệu\n\n**Thép cacbon cao T10 (HRC 55–58):** Tiêu chuẩn tiết kiệm chi phí cho các hoạt động chăm sóc cảnh quan và cây xanh, cắt gỗ mềm, gỗ xanh và rác thải sân vườn hỗn hợp.\n\n**Hợp kim Chrome-Silicon 9CrSi (HRC 57–60):** Mang lại khoảng cách giữa các cạnh sắc dài hơn 40–60% so với T10 cho các loại gỗ cứng/gỗ mềm hỗn hợp — phong, bạch dương, tần bì.\n\n**Thép công cụ Cr12MoV (HRC 58–60):** Thông số kỹ thuật cao cấp dành cho người vận hành xử lý gỗ cứng khô hoặc rác thải xanh đô thị bị ô nhiễm nhẹ.\n\n## Mài chính xác\n\nCác lưỡi dao được mài bề mặt với dung sai độ dày ±0,05 mm và góc vát ±0,5° (đã xác minh bằng bộ so sánh quang học). Độ dày lưỡi đồng nhất trên toàn bộ chiều rộng trống giúp loại bỏ rung động và tạo ra hình dạng chip nhất quán đáp ứng các thông số kỹ thuật về sinh khối và kích thước lớp phủ.\n\n## Lớp phủ chống nhựa cây\n\nLớp phủ Teflon (PTFE) tùy chọn trên mặt cào làm giảm độ bám dính của nhựa khoảng ~70%, kéo dài khoảng thời gian chạy sạch trên gỗ thông, vân sam và bạch đàn bị sứt mẻ. Lớp phủ tồn tại sau 4–6 chu kỳ mài lại trước khi sơn lại có lợi.\n\n## Chấn chỉnh lại nền kinh tế\n\nĐược làm cứng từ bề mặt đến lõi, mỗi chu kỳ mài lại sẽ làm lộ ra loại thép có độ cứng giống nhau. Mỗi lưỡi mang lại tổng cộng 6–10 lưỡi cắt (2 lưỡi xuất xưởng × 3–5 lần mài trên mỗi cạnh) trước khi đạt độ dày an toàn tối thiểu — khiến tổng chi phí mỗi giờ có tính cạnh tranh cao so với các lựa chọn thay thế nhập khẩu.",
-    link: "/products/wood-chipper-blades-standard",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Patriot",
-      "Wallenstein",
-      "Timberwolf",
-      "Linddana",
-      "Schliesing",
-      "Junkkari",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "T10 High-Carbon | 9CrSi Chrome-Alloy | Cr12MoV Tool Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–60 (Triple-Tempered, Through-Hardened)",
-      },
-      {
-        label: "Edge Design",
-        value: "Reversible Double-Edge — flip when dull, 2× installed life",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–30° precision-ground (±0.5°)",
-      },
-      {
-        label: "Lengths",
-        value: "200–350 mm (8″–14″)",
-      },
-      {
-        label: "Bolt Patterns",
-        value: "2-hole · 4-hole · 6-hole (custom available)",
-      },
-      {
-        label: "Coating",
-        value: "Black Oxide (std) · Teflon PTFE anti-sap (opt)",
-      },
-      {
-        label: "Application",
-        value: "Tree Service · Landscaping · Green Waste · Storm Debris",
-      },
-    ],
-    components: [
-      {
-        id: "reversible-double-edge",
-        tag: "KINH TẾ",
-        title: "Lật, không thay thế - Nhân đôi tuổi thọ đã cài đặt",
-        description:
-          "Hình học hai cạnh đối xứng mang lại hai lưỡi cắt độc lập trên mỗi lưỡi. Khi cạnh 1 bị cùn, tháo chốt, lật 180°, vặn lại - sắc nét theo tiêu chuẩn nhà sản xuất và sứt mẻ mặt sau trong vòng chưa đầy hai phút. Giảm một nửa thời gian dừng thay lưỡi và tăng gấp đôi tuổi thọ trước khi mài lại.",
-      },
-      {
-        id: "triple-temper",
-        tag: "XỬ LÝ NHIỆT",
-        title: "Lõi được tôi cứng gấp ba lần",
-        description:
-          "Quá trình tôi luyện ba lần có kiểm soát giúp loại bỏ ứng suất dư và ổn định cấu trúc vi mô martensitic ở HRC 55–60 từ bề mặt đến lõi. Mỗi chu kỳ mài lại sẽ tạo ra thép có chất lượng giống nhau - không có điểm mềm, không có tuổi thọ cạnh không nhất quán trên bộ lưỡi dao.",
-      },
-      {
-        id: "anti-sap-coating",
-        tag: "XỬ LÝ BỀ ​​MẶT",
-        title: "Lớp phủ chống nhựa cây Teflon",
-        description:
-          "Nhựa thông, vân sam và bạch đàn bám vào mặt lưỡi dao và làm tăng tốc độ mài mòn của lưỡi. Lớp phủ mặt cào Teflon (PTFE) tùy chọn giúp giảm độ bám dính của nhựa khoảng ~70%, kéo dài khoảng thời gian chạy sạch và giảm tần suất kéo lưỡi giữa ca.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Chipper OEM / Loại kích thước",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước hai cạnh có thể đảo ngược. Có sẵn các mẫu bu lông 2 lỗ, 4 lỗ và 6 lỗ. Độ dài tùy chỉnh và mẫu lỗ trong vòng 7 ngày làm việc.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Compact / 8" Class',
-        od: "200",
-        id: "50",
-        thickness: "12",
-      },
-      {
-        spec: 'Bandit 12" / Patriot',
-        od: "230",
-        id: "60",
-        thickness: "12",
-      },
-      {
-        spec: 'Vermeer BC1200 / 10"',
-        od: "260",
-        id: "65",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 15" / Vermeer BC1500',
-        od: "295",
-        id: "75",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19"',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: 'Vermeer BC1800 / 12"',
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Timberwolf / 13"',
-        od: "330",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: 'Heavy Landscape / 14"',
-        od: "350",
-        id: "100",
-        thickness: "22",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "wood-chipper-blades-industrial",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 120,
-    },
-    faqs: {
-      technical: [
-        {
-          question: "Làm cách nào để chọn giữa T10, 9CrSi và Cr12MoV?",
-          answer:
-            "T10 phù hợp với gỗ mềm xanh và cảnh quan chung. Nâng cấp lên 9CrSi cho gỗ cứng/gỗ mềm hỗn hợp - gỗ phong, bạch dương, tần bì - nơi nó mang lại tuổi thọ cạnh dài hơn 40–60%. Chỉ định Cr12MoV cho gỗ cứng khô khối lượng lớn hoặc chất thải xanh đô thị bị ô nhiễm nhẹ.",
-        },
-        {
-          question:
-            "Khi nào tôi nên lật lưỡi dao và có thể mài lại bao nhiêu lần?",
-          answer:
-            "Lật khi hiệu suất phoi giảm - mặt phoi bị rách, tải động cơ tăng hoặc cạnh có thể nhìn thấy được làm tròn trên 0,5 mm. Sau khi sử dụng hết cả hai cạnh, mỗi cạnh có thể được mài lại 3–5 lần trên máy mài bề mặt tiêu chuẩn, mang lại tổng cộng 6–10 lưỡi cắt trên mỗi lưỡi dao.",
-        },
-        {
-          question: "Lớp phủ Teflon có tồn tại được khi mài lại không?",
-          answer:
-            "Có — chỉ có mặt vát được mài trong quá trình làm sắc nét lại; lớp phủ Teflon mặt cào vẫn còn nguyên. Nó thường tồn tại qua 4–6 chu kỳ mài lại trước khi sơn lại có lợi.",
-        },
-        {
-          question: "Tôi cần mẫu lỗ bu lông nào cho mẫu máy băm của mình?",
-          answer:
-            'Tên cướp 12"/15": 2 lỗ. Tên cướp 18”/19”: 4 lỗ. Vermeer BC900/BC1200: 2 lỗ. BC1500/BC1800: 4 lỗ. Cung cấp số kiểu máy của bạn hoặc gửi lưỡi dao bị mòn của bạn và chúng tôi xác nhận cấu hình chính xác. Mẫu tùy chỉnh trong vòng 7 ngày làm việc.',
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Nhà sản xuất OEM trực tiếp từ năm 2008. Khi mua hàng từ Sureay, bạn giao tiếp với các kỹ sư rèn và mài lưỡi dao của bạn - không qua trung gian, không mất phí.",
-        },
-        {
-          question:
-            "Bạn có cung cấp giá số lượng lớn cho các nhà thầu cảnh quan?",
-          answer:
-            "Đúng. Đơn hàng từ 50 lưỡi trở lên cho mỗi lô hàng đủ điều kiện để định giá theo số lượng. Có sẵn các thỏa thuận cung cấp hàng năm với lịch giao hàng hàng quý — hãy liên hệ với chúng tôi cùng với ước tính mức tiêu thụ hàng năm của bạn.",
-        },
-      ],
-    },
-  },
-  {
     id: "wood-chipper-anvils",
     name: "Đe băm gỗ",
     fullName:
@@ -5627,11 +5455,7 @@ export const blades: Blade[] = [
         thickness: "Per OEM Drawing",
       },
     ],
-    relatedBladeIds: [
-      "wood-chipper-blades",
-      "wood-chipper-blades-industrial",
-      "wood-chipper-blades-standard",
-    ],
+    relatedBladeIds: ["wood-chipper-blades"],
     offers: {
       lowPrice: 25,
       highPrice: 250,

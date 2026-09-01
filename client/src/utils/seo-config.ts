@@ -274,23 +274,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "wood chipper blades, drum chipper knives, disc chipper blades, forestry chipper knives, biomass chipper blades, D2 chipper knives, TCT chipper blades, Vermeer chipper blades, Bandit chipper knives",
   },
 
-  "wood-chipper-blades-industrial": {
-    title: "Industrial Wood Chipper Blades | M2 HSS & D2 Tool Steel | Sureay",
-    description:
-      "M2 HSS & D2 drum chipper knives for heavy commercial forestry, biomass plants & wood recycling. HRC 58–62, vacuum heat-treated + deep cryo treatment.",
-    keywords:
-      "industrial chipper blades, M2 HSS chipper knives, D2 drum chipper blades, heavy duty wood chipper knives, biomass chipper blades industrial, forestry blades",
-  },
-
-  "wood-chipper-blades-standard": {
-    title:
-      "Wood Chipper Knives | Reversible Double-Edge | T10 · 9CrSi · Cr12MoV | Sureay",
-    description:
-      "Reversible double-edge wood chipper knives in T10, 9CrSi & Cr12MoV steel — both edges usable before resharpening. OEM fit drum & disc chippers.",
-    keywords:
-      "wood chipper knives, reversible chipper blades, double edge chipper knives, drum chipper blades, disc chipper knives, T10 chipper blades, 9CrSi chipper knives, Cr12MoV chipper blades",
-  },
-
   "wood-chipper-anvils": {
     title:
       "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
