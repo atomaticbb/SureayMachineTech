@@ -91,6 +91,169 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "nonwoven-log-saw-blade-corrosion",
+    tag: "TECHNICAL GUIDE",
+    date: "02.SEP.2026",
+    title:
+      "Wet Wipes Are Not Tissue: Why Log Saw Blades Corrode Instead of Wearing Out",
+    excerpt:
+      "A wet wipes blade pulled at nineteen days wasn't dull — it was pitted. How to tell corrosion from wear on a returned log saw blade, why D2's 12% chromium isn't stainless, and when TiN beats hard chrome.",
+    image: "/images/news/nonwoven-log-saw-blade-corrosion-cover.webp",
+    readTime: "5 MIN",
+    seoTitle: "Nonwoven Log Saw Blades: Corrosion vs Wear | Sureay",
+    metaDescription:
+      "Wet wipe log saw blades fail by corrosion, not wear. How to read pitting against uniform wear, and when to specify TiN or hard chrome coating.",
+    keywords:
+      "nonwoven log saw blades, wet wipes log saw blade, hygiene converting blades, log saw blade corrosion, TiN coated log saw blade, hard chrome log saw blade, spunbond fraying, D2 blade corrosion resistance",
+    relatedProductIds: [
+      "nonwoven-log-saw-blades",
+      "tissue-log-saw-blades",
+      "nonwoven-slitter-knives",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          'A baby wipes converter pulled a log saw blade after nineteen days. Same spec, same grind, same supplier as the blade running eight weeks on their tissue line in the next building. The maintenance log said "dull." Under a loupe it wasn\'t dull at all: the cutting edge was scalloped with dark micro-pits, worst on the face pointing into the saturated log, and a bloom of rust had come up on the bore face over a weekend shutdown.',
+      },
+      {
+        type: "paragraph",
+        value: "That blade didn't wear out. It corroded.",
+      },
+      {
+        type: "h2",
+        value: "Corrosion and Wear Leave Different Marks",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Wear is boring, and that's how you recognise it. A worn edge rounds evenly along the full cutting arc, tooth after tooth, and the land polishes bright. Symmetric work, symmetric result.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Corrosion isn't symmetric. Pitting concentrates where the impregnation solution sits: the face toward the wet web, the last few millimetres before the gullet, anywhere the blade doesn't fling itself clean at speed. Under 10x the pits are dark and irregular, with no relationship to how many cuts the blade has made.",
+      },
+      {
+        type: "image",
+        value: "/images/news/corrosion-pitting-vs-uniform-wear.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The most reliable tell costs nothing. A corroded blade cuts acceptably on Friday and frays on Monday. Wear doesn't take weekends off. If your fray complaints cluster after shutdowns, stop looking at the grind.",
+      },
+      {
+        type: "h2",
+        value: "D2 Has 12% Chromium and Still Isn't Stainless",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is the part most buyers get wrong. D2 (1.2379) carries roughly 12% chromium, which reads like stainless on a datasheet. It isn't. Most of that chromium is locked up in M7C3 carbides, which is exactly what gives D2 its abrasion resistance, leaving the surrounding matrix with far less free chromium than any stainless grade. Excellent wear resistance. Mediocre corrosion resistance.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "So the usual reflex — order a harder blade — buys nothing here. HRC 60 pits at essentially the same rate as HRC 58.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The chemistry is also more relentless than tissue people expect. Wet wipe lines run saturation ratios of 2.0–3.5x solution to substrate weight, so the blade is wet continuously rather than occasionally. A typical lotion is 80–95% purified water plus preservatives, humectants and surfactants. The surfactants are the problem child: they drop surface tension, which is precisely what helps liquid creep into surface micro-pores and stay there overnight. The same mechanism attacks [nonwoven slitter knives](/products/nonwoven-slitter-knives) further up the line, just noticed later because slitter edges get inspected less often.",
+      },
+      {
+        type: "h2",
+        value: "Coating Is a Barrier Choice, Not a Hardness Upgrade",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Three routes, and they are not interchangeable. Pick by what is actually attacking the blade — the chemistry, the humidity, or nothing at all.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Surface", "Specify it when", "What you get"],
+        tableRows: [
+          [
+            "Uncoated D2, HRC 58–60",
+            "Dry nonwoven only — airlaid, spunlace, thermobond",
+            "No saturation chemistry means no corrosion problem, and full CBN sharpening compatibility. Don't pay for a coating you don't need.",
+          ],
+          [
+            "TiN PVD, 2–3 µm, HV 2300+",
+            "Wet wipes, femcare, adult incontinence",
+            "Thin and conformal, so the ground geometry is undisturbed. Chemically inert against alcohol and surfactants, and hard enough to shrug off SAP particle micro-abrasion on absorbent core lines.",
+          ],
+          [
+            "Hard chrome, 20–30 µm",
+            "75% RH and above, aggressive washdown, blades left mounted through long stops",
+            "The thicker layer seals surface micro-pores instead of merely covering them, and lowers friction against synthetic fibre.",
+          ],
+        ],
+      },
+      {
+        type: "image",
+        value: "/images/news/uncoated-d2-log-saw-blade-mirror-finish.webp",
+      },
+      {
+        type: "callout",
+        value:
+          "Engineering Note: Regrinding removes the coating at the edge. A TiN blade is coated until its first sharpening, after which it's a D2 blade with a coated body. Budget for re-coating at regrind, or plan a shorter second interval. Buyers who skip this step conclude the coating didn't work.",
+      },
+      {
+        type: "h2",
+        value: "Fraying Is a Geometry Problem — Don't Fix It With Coating",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Separate failure, separate purchase order. Synthetic fibre is elastic: spunbond and SMS deflect ahead of an edge instead of separating against it, which is why a bevel ground for a [tissue log saw blade](/products/tissue-log-saw-blades) leaves stringy cut faces on nonwoven. Nonwoven wants a steeper primary bevel, roughly 25°–35° against 15°–25° for tissue, concentrating force at the contact point so the fibre parts instead of being pushed. For lotion-impregnated logs with high cohesive strength, a compound bevel with secondary relief holds a cleaner face across the run.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Runout tolerance tightens for the same reason. We hold ≤0.15 mm lateral and ≤0.10 mm edge runout on [nonwoven log saw blades](/products/nonwoven-log-saw-blades), because an elastic web amplifies wobble into fraying where cellulose would have absorbed it.",
+      },
+      {
+        type: "image",
+        value: "/images/news/log-saw-blade-pair-ground-edge.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Next time a wipes blade comes off early, pull it after a two-day stop rather than at the end of a shift, and put it under magnification before anyone writes a spec.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "What you see under magnification",
+          "Root cause",
+          "What to change",
+        ],
+        tableRows: [
+          [
+            "Dark irregular pitting, worse on one face",
+            "Chemical attack from the impregnation solution",
+            "Coating spec — TiN or hard chrome, not a harder steel",
+          ],
+          [
+            "Uniform bright rounding on every tooth",
+            "Normal abrasive wear",
+            "Regrind interval, or bevel geometry if cut faces fray",
+          ],
+          [
+            "Both at once",
+            "A tissue blade running a wipes line",
+            "Change the blade specification, not the schedule",
+          ],
+        ],
+      },
+    ],
+  },
+  {
     id: "tire-shredder-blade-wear-steel-cord",
     tag: "TECHNICAL GUIDE",
     date: "01.SEP.2026",
@@ -5824,6 +5987,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "nonwoven-log-saw-blade-corrosion": "Eric",
   "tire-shredder-blade-wear-steel-cord": "Eric",
   "circular-knife-types": "Eric",
   "sureay-manufacturing-facility-capabilities": "lynn",

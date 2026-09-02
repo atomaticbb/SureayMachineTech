@@ -166,8 +166,8 @@ export default function CorporateDispatches() {
 
                       {/* Footer */}
                       <div className="mt-auto pt-4 border-t border-slate-100">
-                        <span className="text-[12px] font-black tracking-[0.16em]  text-[#001f4d] group-hover:text-[#003366] transition-colors">
-                          Continue Reading →
+                        <span className="inline-flex items-center gap-1 font-mono text-sm font-bold text-[#001f4d] tracking-widest underline-offset-4 group-hover:underline transition-all">
+                          Read more &gt;&gt;
                         </span>
                       </div>
                     </div>
