@@ -91,6 +91,120 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "cutter-compactor-blade-film-vs-flake-wear",
+    tag: "TECHNICAL GUIDE",
+    date: "04.SEP.2026",
+    title:
+      "Cutter Compactor Blades: Why Film Kills Edges Faster Than Rigid Plastic",
+    excerpt:
+      "Knives off a film line come out rounded and glazed with no chips at all. Knives off rigid flake come out chipped within days. Two different failures, two different fixes — and a harder steel only solves one of them.",
+    image: "/images/news/cutter-compactor-blades-film-wear-cover.webp",
+    readTime: "5 MIN",
+    seoTitle: "Cutter Compactor Blades: Film vs Flake Wear | Sureay",
+    metaDescription:
+      "Film wears cutter compactor knives by heat and rubbing; rigid flake chips them. How to tell the two apart, and why D2 over-tempers where M2 HSS holds.",
+    keywords:
+      "cutter compactor blades, agglomerator knives, cutter compactor knife wear, densifier blades, plastic film recycling blades, D2 vs M2 compactor knives, PET flake compactor knives, rotor and stator knives",
+    relatedProductIds: ["cutter-compactor-blades", "granulator-blades"],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "Open a compactor after six weeks on LDPE film and the knives usually look fine. No chips, no cracks, no obvious damage — just a slightly rounded edge and a thin grey skin of polymer welded along the flank. Meanwhile the plant is reporting throughput down, motor current up, and crumb that has started coming out lumpy. Someone fits a new set and the problem disappears for another six weeks.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That cycle is normal on film. It is not what happens on rigid flake, and the difference decides which steel you should be buying.",
+      },
+      {
+        type: "h2",
+        value: "Film Doesn't Strike the Edge — It Rubs It",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A cutter compactor is not a granulator. [Granulator knives](/products/granulator-blades) cut a discrete piece and let it fall away. In a compactor the rotating knives do two jobs at the same time: they cut, and they generate the frictional heat that softens loose material into a dense, free-flowing crumb. That second job is what consumes them.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Film is almost no mass and enormous surface area. A charge of LDPE doesn't hit the edge — it wraps, drags and slides across the flank thousands of times a minute. The edge dies from contact time under heat, not from impact.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Rigid material does the opposite. PET flake, HDPE regrind and purge chunks arrive as discrete masses and shock the edge. What you get is micro-chipping along the cutting line, and it shows up fast — days after a bad charge, not gradually over weeks.",
+      },
+      {
+        type: "paragraph",
+        value: "Same blade, same steel, two completely different wear curves.",
+      },
+      {
+        type: "h2",
+        value:
+          "The Temperature on Your Controller Is Not the Temperature at the Edge",
+      },
+      {
+        type: "paragraph",
+        value: "This is the part that catches plants out.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The vessel temperature on the panel is bulk material temperature. The tip of a knife in continuous rubbing contact with polymer runs hotter than that — and it is the local temperature at the edge, not the number on the display, that decides whether the steel keeps its hardness.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "D2 is tempered low to reach HRC 58–61. Take the edge past its tempering temperature and the hardness does not come back when it cools down. The blade hasn't chipped and hasn't visibly worn away. It has gone soft in the top fraction of a millimetre, and from that point it rounds off quickly. Operators read this as a bad batch of blades. It usually isn't.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That is the real argument for M2 HSS on continuous film and PET duty — not that it is much harder at room temperature, but that it still holds its hardness at temperatures where D2 has already over-tempered. If you want the full material comparison, we covered the grades in [D2 vs SKD-11 vs tungsten carbide](/news/d2-vs-skd11-vs-tungsten-carbide); for compactor duty specifically, the choice sits between D2 and M2 on our [cutter compactor rotor and stator knives](/products/cutter-compactor-blades).",
+      },
+      {
+        type: "h2",
+        value: "What to Look At Before You Reorder",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Look at the flank, not the edge. Polymer welded to the flank face tells you the edge was running hot and material was sticking instead of shearing cleanly — a heat problem, not a hardness problem. A blade showing a straw or blue band behind the cutting edge has been over-tempered in service. Don't send that one out for regrinding. You will grind a fresh edge onto steel that is already soft underneath, and it will fail again in a fraction of the time.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "It helps to have the reference condition in front of you when you judge a returned blade. A knife that has just left the grinder carries a bevel of even width along its whole length, a crisp unbroken edge line, and no discolouration anywhere behind it.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/new-cutter-compactor-stator-knives-with-uniform-ground-bevels.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Then look at what changed upstream. Print-heavy film, calcium-carbonate-filled film, and post-consumer bales carrying paper label fibre and grit abrade several times faster than clean production scrap. A quiet change in feedstock will shorten blade life more than anything you can adjust on the machine.",
+      },
+      {
+        type: "h2",
+        value: "The Rule Worth Remembering",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the knives come out chipped, the answer is in the material and the cutting gap. If they come out rounded and glazed with no chips at all, the answer is in the steel and the heat.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Getting that backwards is expensive in both directions. Buying a tougher, softer grade to solve a heat problem gives you a blade that rounds off even sooner. Buying a harder, more brittle grade to solve an impact problem gives you one that chips on the first bad charge. Plants that replace compactor knives twice as often as they should are almost always solving the wrong one of the two.",
+      },
+    ],
+  },
+  {
     id: "nonwoven-log-saw-blade-corrosion",
     tag: "TECHNICAL GUIDE",
     date: "02.SEP.2026",
@@ -5987,6 +6101,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "cutter-compactor-blade-film-vs-flake-wear": "Eric",
   "nonwoven-log-saw-blade-corrosion": "Eric",
   "tire-shredder-blade-wear-steel-cord": "Eric",
   "circular-knife-types": "Eric",
