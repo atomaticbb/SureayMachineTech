@@ -6302,4 +6302,854 @@ export const blades: Blade[] = [
       ],
     },
   },
+  {
+    id: "groove-bottom-knives",
+    name: "Couteaux Inférieurs Rainurés",
+    fullName:
+      "Couteaux inférieurs multi-rainures et bagues de coupe pour refendage par cisaillement",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Couteaux de Refendage",
+    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+    badge: "Pas dès 5 mm",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Bague de couteau inférieur multi-rainures aux rainures parallèles rectifiées avec précision pour refendage par cisaillement",
+      "Bagues de couteau inférieur multi-rainures avec une bague d'écartement lisse et des couteaux inférieurs plats",
+      "Bague de coupe inférieure multi-rainures montrant le pas de rainure et l'alésage rectifié",
+    ],
+    description:
+      "Bagues de couteau inférieur multi-rainures pour refendage par cisaillement sur enrouleuses papier, carton et film. La laize se change en déplaçant le couteau supérieur dans une autre rainure au lieu de remonter l'outillage. Pas de rainure dès 5 mm, DE jusqu'à Φ406 mm, alésage lisse pour arbres pneumatiques ou vis de pression pour arbres pleins. Arête simple ou double, bague monobloc ou fendue. Également livrées en bagues à rainure unique et en bagues d'écartement lisses.",
+    fullDescription:
+      "Un couteau inférieur multi-rainures — aussi appelé refendeur inférieur multi-rainures, enclume multi-rainures ou MKB — est une bague large portant de nombreuses rainures parallèles rectifiées avec précision. Chaque rainure est une position de coupe utilisable : un changement de laize consiste donc à déplacer le couteau supérieur dans une autre rainure plutôt qu'à démonter l'arbre et à reconstruire l'empilage de couteaux. Sur une ligne qui change souvent de laize de commande, cet écart se mesure en heures de poste, pas en coût de couteau.\n\nCe sont les rainures qui font la coupe : ce sont donc elles qui doivent être justes. La position de la rainure fixe la laize, la largeur de rainure fixe le jeu de cisaillement effectif face au couteau supérieur associé, et l'état de l'arête de rainure détermine si la bande est cisaillée ou déchirée. Les trois sont rectifiées en une seule prise sur la même bague, et c'est pourquoi une bague multi-rainures tient la précision de laize sur tout l'empilage mieux qu'un nombre équivalent de couteaux enclumes séparés montés avec des entretoises.\n\n## Là où le format justifie son prix\n\nUn couteau inférieur à rainure unique coûte moins cher à l'unité et convient parfaitement à une ligne qui traite une même laize pendant des semaines. La bague multi-rainures l'emporte lorsque la laize de commande change fréquemment, lorsque le nombre de coupes est élevé, ou lorsque le réajustement d'un empilage d'entretoises est devenu le véritable goulot d'étranglement du changement. Elle supprime en outre toute une catégorie d'erreurs de réglage : avec des positions de rainure fixes rectifiées dans un seul corps, la laize ne peut pas dériver parce que quelqu'un a empilé les entretoises un millimètre à côté.\n\n## Montage : arbre pneumatique ou arbre plein\n\nDeux styles de montage couvrent presque toutes les enrouleuses. Un alésage lisse se serre sur un arbre pneumatique expansible, l'option de changement rapide et l'usage courant sur les lignes de transformation modernes. Une exécution à vis de pression se fixe sur un arbre inférieur plein, plus fréquente sur les machines anciennes et sur les lignes de carton lourd où la rigidité de l'arbre compte davantage que la vitesse de changement. Indiquez-nous l'arbre que vous utilisez : cela change la spécification d'alésage, pas seulement la fixation, et une bague alésée pour le mauvais système ne portera pas correctement.\n\n## Monobloc ou fendue\n\nLes bagues standard sont monobloc. Une bague fendue en deux pièces coûte davantage mais se retire et se remonte sans démonter l'ensemble de l'arbre, ce qui, sur une machine large, peut transformer un arrêt programmé en changement en marche. Si vos bagues se changent aujourd'hui en extrayant l'arbre complet, la version fendue est généralement la première chose à chiffrer.\n\n## Arête simple ou double\n\nLes bagues sont rectifiées avec une arête de coupe simple ou avec des arêtes des deux côtés de chaque rainure. La géométrie à double arête double les positions utilisables et permet de retourner la bague lorsqu'une face est usée, au prix d'une rectification plus exigeante et d'un prix unitaire plus élevé. Le bon choix dépend de la répartition de vos positions de coupe sur la bague : transmettez donc le plan de laizes et pas seulement le nombre de rainures.\n\n## Le pas de rainure est fabriqué selon votre plan de laizes\n\nLa division entre arêtes — la distance d'une arête de coupe à la suivante, aussi appelée pas — est sur mesure dans la quasi-totalité des cas et peut descendre jusqu'à 5 mm (0,200 in). Les diamètres extérieurs vont jusqu'à Φ406 mm (16 in). Il n'existe pas ici de tableau standard utile, et c'est pourquoi nous chiffrons à partir de votre plan de laizes ou d'un plan : donnez-nous le DE, l'alésage, la largeur de bague, les laizes que vous produisez réellement et le couteau supérieur associé, et nous rectifierons les positions de rainure selon ce plan.\n\n## Le reste du jeu de bagues\n\nUn arbre en production n'est presque jamais composé uniquement de bagues multi-rainures. Les bagues de coupe à rainure unique couvrent des positions fixes, et les bagues lisses servent d'entretoises et de supports de bande entre les positions de coupe. Nous fournissons les trois à la même spécification d'alésage et de faux-rond afin qu'elles s'empilent sans introduire d'oscillation : mélanger sur un même arbre des bagues de fournisseurs différents est une cause fréquente et difficile à diagnostiquer de variation de laize.\n\n## Applications\n\nTransformation du papier, du carton, du ouate et du carton ondulé ; film, feuille métallique, support autoadhésif, ruban adhésif, non-tissés et textiles sur enrouleuses à refendage par cisaillement.",
+    link: "/products/groove-bottom-knives",
+    disambiguation:
+      "Cette page traite des bagues multi-rainures regroupant de nombreuses positions de coupe sur un seul corps. Pour les couteaux inférieurs circulaires à arête unique associés à un couteau supérieur sur enrouleuses papier, consultez [Couteaux Inférieurs pour Refendeuses-Enrouleuses](/products/slitter-rewinder-bottom-knives).",
+    introNote:
+      "Le pas de rainure, le nombre de rainures et l'alésage sont fabriqués selon votre plan de laizes — il n'existe pas de taille standard significative pour ce produit. Transmettez les laizes que vous produisez réellement, le type d'arbre (pneumatique ou plein) et le couteau supérieur associé, et nous rectifierons les positions de rainure selon ce plan.",
+    compatibleMachines: [
+      "Kampf",
+      "Goebel",
+      "Atlas Converting",
+      "Dienes",
+      "Nishimura",
+      "Deacro",
+      "Parkinson Technologies",
+    ],
+    specs: [
+      {
+        label: "Matériau",
+        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / à plaquettes carbure",
+      },
+      {
+        label: "Diamètre extérieur",
+        value: "Jusqu'à Φ406 mm (16 in)",
+      },
+      {
+        label: "Pas de rainure",
+        value: "Dès 5 mm (0,200 in), rectifié selon votre plan de laizes",
+      },
+      {
+        label: "Montage",
+        value:
+          "Alésage lisse pour arbre pneumatique expansible, ou vis de pression pour arbre plein",
+      },
+      {
+        label: "Configuration d'arête",
+        value: "Arête de coupe simple ou double",
+      },
+      {
+        label: "Construction",
+        value: "Bague monobloc ou bague fendue en deux pièces",
+      },
+      {
+        label: "Application",
+        value:
+          "Refendage par cisaillement multi-laizes du papier, carton, film, feuille métallique et ruban",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Configuration",
+      col1: "Diamètre extérieur",
+      col2: "Montage",
+      col3: "Pas de rainure / Arêtes",
+      caption:
+        "* Le pas de rainure, le nombre de rainures, la largeur de bague et l'alésage sont fabriqués selon votre plan de laizes — il n'existe pas de tableau de tailles standard pour ce produit. Transmettez les laizes que vous produisez, le type d'arbre et la spécification du couteau supérieur associé, ou un plan, et nous rectifierons les positions de rainure en conséquence.",
+    },
+    standardDimensions: [
+      {
+        spec: "Bague multi-rainures — alésage lisse",
+        od: "Jusqu'à Φ406 (16 in)",
+        id: "Arbre pneumatique expansible",
+        thickness: "Dès 5 mm de pas",
+      },
+      {
+        spec: "Bague multi-rainures — vis de pression",
+        od: "Jusqu'à Φ406 (16 in)",
+        id: "Arbre inférieur plein",
+        thickness: "Dès 5 mm de pas",
+      },
+      {
+        spec: "Bague fendue en deux pièces",
+        od: "Jusqu'à Φ406 (16 in)",
+        id: "Arbre pneumatique ou plein",
+        thickness: "Dès 5 mm de pas",
+      },
+      {
+        spec: "Bague multi-rainures à double arête",
+        od: "Jusqu'à Φ406 (16 in)",
+        id: "Arbre pneumatique ou plein",
+        thickness: "Arêtes de coupe des deux côtés",
+      },
+      {
+        spec: "Bague de coupe à rainure unique",
+        od: "Sur plan",
+        id: "Arbre pneumatique ou plein",
+        thickness: "Une position fixe",
+      },
+      {
+        spec: "Bague d'écartement lisse",
+        od: "Sur plan",
+        id: "Arbre pneumatique ou plein",
+        thickness: "Sans rainure — fixe l'écartement",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Le choix de nuance sur une bague multi-rainures est gouverné par le caractère abrasif de la bande, car les arêtes de rainure s'usent là où la bande passe et non là où le couteau frappe. Une bague est en outre un corps volumineux et coûteux à mettre au rebut : les nuances qui supportent des réaffûtages répétés offrent donc généralement la meilleure économie.",
+      rows: [
+        {
+          grade: "Cr12MoV / SKD-11",
+          hardness: "HRC 58–62",
+          bestFor:
+            "Papier, carton et film courants — la spécification standard et le meilleur équilibre entre durée de vie et aptitude au réaffûtage",
+          tradeoff:
+            "Dépassée par la version à plaquettes carbure sur supports fortement couchés ou chargés",
+        },
+        {
+          grade: "9CrSi / 65Mn",
+          hardness: "HRC 56–60",
+          bestFor:
+            "Supports souples non couchés, ouate et vitesses de ligne plus faibles où le prix unitaire décide",
+          tradeoff:
+            "Les arêtes de rainure s'arrondissent plus tôt : prévoyez un intervalle plus court entre réaffûtages",
+        },
+        {
+          grade: "HSS",
+          hardness: "HRC 62–64",
+          bestFor:
+            "Vitesses de ligne élevées et plannings mixtes où la bague doit tenir l'arête sur de longs tirages",
+          tradeoff:
+            "Coût supérieur à l'acier à outils ; s'use tout de même sur supports chargés",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 à la plaquette",
+          bestFor:
+            "Bandes abrasives, couchées, chargées et contrecollées où les rainures en acier à outils s'usent en quelques semaines",
+          tradeoff:
+            "Prix le plus élevé, et les plaquettes s'ébrèchent au lieu de s'user si l'arbre présente un faux-rond",
+        },
+      ],
+      outro:
+        "En cas de doute, transmettez-nous le substrat et votre intervalle de réaffûtage actuel et nous calibrerons la recommandation sur votre consommation réelle plutôt que sur un tableau générique.",
+    },
+    components: [
+      {
+        id: "one-ring-many-widths",
+        tag: "TEMPS DE CHANGEMENT",
+        title: "Une bague, de nombreuses positions de coupe",
+        description:
+          "Chaque rainure est une position de coupe utilisable : un changement de laize consiste donc à repositionner le couteau supérieur plutôt qu'à démonter l'arbre et à reconstruire un empilage d'entretoises. Sur les lignes qui changent souvent de laize de commande, c'est d'abord un produit de temps de changement avant d'être un consommable.",
+      },
+      {
+        id: "ground-in-one-setup",
+        tag: "PRÉCISION DIMENSIONNELLE",
+        title: "Toutes les rainures rectifiées en une seule prise",
+        description:
+          "Les positions de rainure sont rectifiées dans un seul corps en une seule prise : la laize ne peut donc pas dériver comme lorsqu'un opérateur reconstruit un empilage d'entretoises un millimètre à côté. L'alésage et le faux-rond sont tenus à la même spécification sur les bagues multi-rainures, à rainure unique et lisses, afin qu'un arbre mixte s'empile tout de même correctement.",
+      },
+      {
+        id: "mounting-and-split",
+        tag: "OPTIONS DE MONTAGE",
+        title: "Arbre pneumatique, arbre plein ou bague fendue",
+        description:
+          "L'alésage lisse se serre sur un arbre pneumatique expansible ; l'exécution à vis de pression se fixe sur un arbre inférieur plein. Une bague fendue en deux pièces se retire sans démonter l'ensemble de l'arbre, ce qui, sur une machine large, transforme un arrêt programmé en changement en marche.",
+      },
+    ],
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+    ],
+    rfqPlaceholder:
+      "Exemple : enrouleuse Kampf, arbre pneumatique expansible, bague inférieure Φ180 × 100 mm de large, 12 rainures au pas de 25 mm, arête simple. Refendage de carton couché 120 g/m², 8 coupes, changement de laize deux fois par semaine. Besoin de 4 bagues et de 2 bagues d'écartement lisses.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "En quoi un couteau inférieur multi-rainures diffère-t-il d'un couteau enclume rainuré ?",
+          answer:
+            "Par l'échelle et par la finalité. Un couteau enclume rainuré est un disque portant une à trois rainures, rectifié selon un profil de paire de cisaillement OEM et utilisé principalement sur les lignes film, feuille métallique et ruban — consultez notre page couteaux enclumes inférieurs rainurés pour ce produit. Une bague multi-rainures est un corps beaucoup plus large portant de nombreuses rainures parallèles, et son intérêt est qu'une seule bague couvre de nombreuses positions de coupe, de sorte que les changements de laize n'exigent pas de remonter l'outillage. Si vous changez souvent de laize, il vous faut la bague ; si vous travaillez une seule laize contre un profil d'enclume OEM spécifié, il vous faut l'enclume.",
+        },
+        {
+          question:
+            "Quel pas de rainure pouvez-vous réellement rectifier, et comment le spécifier ?",
+          answer:
+            "La division entre arêtes — la distance d'une arête de coupe à la suivante — est sur mesure dans la quasi-totalité des cas et peut descendre jusqu'à 5 mm (0,200 in). Ne la spécifiez pas comme une valeur unique : transmettez la liste des laizes que vous produisez réellement et nous répartirons les positions de rainure de sorte que toutes vos laizes courantes tombent sur une rainure. C'est la différence entre une bague qui couvre votre planning et une bague qui en couvre la moitié et vous oblige à monter un empilage d'entretoises pour le reste.",
+        },
+        {
+          question:
+            "Dois-je commander un alésage lisse ou une vis de pression ?",
+          answer:
+            "Cela découle de votre arbre inférieur, pas de votre préférence. L'alésage lisse se serre sur un arbre pneumatique expansible et constitue l'option de changement rapide présente sur la plupart des lignes de transformation modernes. L'exécution à vis de pression se fixe sur un arbre inférieur plein et est courante sur les machines anciennes et les lignes de carton lourd. Les deux ne sont pas interchangeables — la spécification d'alésage diffère — de sorte qu'une bague alésée pour le mauvais système ne portera pas correctement et se traduira par un faux-rond à la coupe. En cas de doute, photographiez l'extrémité de l'arbre avec les bagues en place.",
+        },
+        {
+          question:
+            "Mes laizes se sont mises à dériver sur l'arbre. La bague est-elle en cause ?",
+          answer:
+            "Contrôlez le faux-rond et l'empilage des bagues avant les rainures. Les positions de rainure sont rectifiées en une seule prise et ne bougent pas : une bague juste à l'installation est donc rarement à l'origine d'une dérive progressive de laize. Les causes habituelles sont un alésage portant sur un arbre usé ou encrassé, ou des bagues de fournisseurs différents mélangées sur un même arbre avec des spécifications d'alésage et de face légèrement différentes, ce qui cumule une petite oscillation jusqu'à une erreur de laize mesurable. Des arêtes de rainure usées se manifestent par une dégradation de la tranche de coupe et une hausse de la poussière, non par une dérive de laize.",
+        },
+      ],
+      company: [
+        {
+          question: "De quoi avez-vous besoin pour chiffrer ?",
+          answer:
+            "Diamètre extérieur, alésage, largeur de bague, nombre de rainures et pas, le type d'arbre (pneumatique expansible ou plein), la spécification du couteau supérieur associé, ainsi que le substrat et la vitesse de ligne. L'information complémentaire la plus utile est votre liste de laizes de production : elle nous permet de répartir les positions de rainure selon votre planning réel au lieu de recopier un pas. Un plan ou une bague usée raccourcissent encore le chiffrage ; la rétro-ingénierie à partir d'échantillons fait partie de notre travail courant.",
+        },
+        {
+          question:
+            "Fournissez-vous aussi des bagues à rainure unique et des bagues lisses, ou seulement multi-rainures ?",
+          answer:
+            "Les trois, et nous recommandons de les acheter ensemble. Les bagues de coupe à rainure unique couvrent des positions fixes et les bagues lisses servent d'entretoises et de supports de bande entre les positions de coupe. Fabriquées à la même spécification d'alésage et de faux-rond, elles s'empilent sans introduire d'oscillation : mélanger sur un même arbre des bagues de fournisseurs différents est une cause fréquente et réellement difficile à diagnostiquer de variation de laize.",
+        },
+        {
+          question: "Peuvent-elles être réaffûtées, et combien de fois ?",
+          answer:
+            "Oui, et le réaffûtage est central dans l'économie car une bague est un corps volumineux à mettre au rebut. Le nombre de cycles dépend de la profondeur de rainure et de la quantité de matière retirée à chaque réaffûtage ; les bagues en acier à outils offrent généralement plusieurs cycles avant que la géométrie de rainure ne puisse plus être rétablie. Nous réaffûtons les bagues que nous avons fabriquées et, dans la plupart des cas, celles que nous n'avons pas fabriquées, à condition que le corps soit sain et l'alésage intact — et nous vous dirons franchement quand une bague ne vaut pas le travail.",
+        },
+      ],
+    },
+  },
+  {
+    id: "slitter-rewinder-bottom-knives",
+    name: "Couteaux Inférieurs pour Refendeuses-Enrouleuses",
+    fullName:
+      "Couteaux inférieurs en carbure pour lignes de refendage et d'enroulage papier et film",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Couteaux de Refendage",
+    image:
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+    badge: "Poli Miroir",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Gamme de couteaux inférieurs et de bagues de refendeuse-enrouleuse en quatre diamètres",
+      "Paire de couteaux inférieurs en carbure montrant l'alésage et les trous de fixation",
+      "Bague de couteau inférieur de refendeuse avec face de roulement polie miroir",
+    ],
+    description:
+      "Couteaux inférieurs massifs et à plaquettes carbure pour refendeuses-enrouleuses papier à grande vitesse. Faces polies miroir, coupe sans bavure et poussière réduite dans la bobine. Tailles de stock Φ250–Φ254 mm en épaisseurs de 15 à 50 mm, alésages adaptés à la machine. Compatibles Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban et autres plateformes d'enroulage électrique.",
+    fullDescription:
+      "Le couteau inférieur d'une refendeuse-enrouleuse est la moitié fixe de la paire de cisaillement, et c'est délibérément la moitié la plus dure. Ce différentiel de dureté entre couteau supérieur et couteau inférieur n'est pas accessoire : c'est le mécanisme qui maintient la coupe propre. Lorsque les deux couteaux ont des duretés voisines, la zone de cisaillement se déforme au lieu de cisailler, et le résultat est une tranche ébavurée et de la poussière entraînée dans la bobine.\n\nLes couteaux inférieurs Sureay sont proposés en carbure de tungstène massif et en construction à plaquettes carbure, avec des faces polies miroir et une arête vive et positionnée avec précision. Sur la version à plaquettes, le carbure est fixé par un procédé de sertissage à chaud contrôlé afin que les plaquettes restent solidaires à grande vitesse plutôt que de se desserrer en service, et les plaquettes usées peuvent être remplacées sans mettre le corps au rebut.\n\n## Pourquoi la poussière dans la bobine est un problème de couteau inférieur\n\nLes opérateurs cherchent généralement la poussière en amont : nettoyeurs de bande, barres antistatiques, aspiration. Souvent la source est la coupe elle-même. Un couteau inférieur dont l'arête s'est arrondie ou dont la face a perdu son poli cesse de cisailler et se met à écraser, et la fibre de papier écrasée devient une poussière qui s'enroule directement dans la bobine et réapparaît comme défaut de transformation deux procédés plus loin. Si la poussière est apparue progressivement et non après un changement de qualité, le couteau inférieur est la première chose à inspecter.\n\n## Matériaux selon le substrat\n\nLe carbure de tungstène massif offre la plus longue durée de vie et constitue la bonne réponse sur les supports abrasifs et fortement couchés. La version à plaquettes offre le meilleur rapport coût/durée pour le papier courant, avec l'avantage pratique de pouvoir être re-plaquée. L'HSS reste raisonnable pour les tirages courts sur supports souples et au coût unitaire le plus bas.\n\n## Applications\n\nPapier, film, feuille métallique et matériaux en bande similaires sur plateformes électriques de refendage-enroulage : refendage de bobines, transformation de rouleaux et lignes d'enroulage traitant papier couché et non couché, carton et supports souples légers.\n\n## Le différentiel de dureté est tout le mécanisme\n\nUne coupe par cisaillement a besoin d'un différentiel de dureté pour rester une coupe par cisaillement. Lorsque les couteaux supérieur et inférieur ont des duretés voisines, la matière dans la zone de cisaillement se déforme au lieu de se séparer proprement, et l'on obtient une tranche ébavurée et de la fibre écrasée qui devient poussière dans la bobine. Le couteau inférieur, plus dur, conserve une géométrie d'arête stable tandis que le couteau supérieur, plus tendre, encaisse l'usure — c'est aussi pourquoi le supérieur est celui qu'on remplace le plus souvent, et pourquoi remplacer les deux au même cycle gaspille de l'outillage encore utilisable. Égaliser les deux duretés est une erreur de spécification courante et coûteuse, qu'il vaut la peine de vérifier sur toute ligne où la qualité de coupe s'est dégradée après un changement d'outillage.\n\n## La poussière dans la bobine commence généralement à la coupe\n\nLes opérateurs cherchent la poussière en amont — nettoyeurs de bande, barres antistatiques, aspiration — alors que la source est fréquemment la coupe elle-même. Un couteau inférieur dont l'arête s'est arrondie, ou dont la face a perdu son poli, cesse de cisailler et se met à écraser ; la fibre écrasée s'enroule directement dans la bobine et réapparaît comme défaut deux procédés plus loin. L'indice est chronologique : une poussière apparue progressivement désigne le couteau, une poussière apparue après un changement de qualité désigne le substrat. Inspectez l'arête sous grossissement et contrôlez le poli de la face plutôt que d'apprécier le tranchant au toucher, car le poli se dégrade avant l'arête et fait monter la poussière bien avant que quiconque juge le couteau émoussé.\n\n## Carbure massif ou à plaquettes\n\nLe carbure de tungstène massif offre la plus longue durée de vie unitaire et constitue la bonne réponse sur les supports abrasifs et fortement couchés, mais lorsque l'arête est épuisée le couteau l'est aussi. La version à plaquettes coûte moins cher, dure moins par cycle et se re-plaque : à condition que le corps soit droit et sans faux-rond et que les assises de brasure soient saines, les plaquettes usées sont remplacées et le couteau retourne en service. Cette possibilité de re-plaquage est généralement le facteur décisif lorsque l'économie entre les deux est serrée. Sur la construction à plaquettes, celles-ci sont serties à chaud dans des conditions contrôlées afin de rester solidaires aux vitesses d'enroulage plutôt que de se desserrer en service : ce qui limite la vie d'un couteau à plaquettes mal fabriqué, c'est la qualité de la brasure, pas la qualité du carbure.\n\n## Ce dont nous avons besoin pour nous adapter à votre machine\n\nLes couteaux inférieurs sont toujours fabriqués pour la machine ; les plateformes d'enroulage listées sont donc celles que nous voyons le plus souvent, non une limite. Pour chiffrer, transmettez le diamètre extérieur, l'alésage et l'épaisseur du couteau que vous utilisez aujourd'hui, la spécification du couteau supérieur associé, ce que vous refendez, la vitesse de ligne et le nombre de coupes. Si l'un de ces éléments est inconnu, envoyez le couteau usé ou des photographies avec un pied à coulisse dans le cadre — nous préférons faire de la rétro-ingénierie à partir d'un échantillon plutôt que de chiffrer sur une hypothèse. Les couteaux sont expédiés individuellement, arête protégée et papier VCI contre la corrosion, en caisse pour les grands diamètres, car un couteau inférieur qui arrive avec une arête entaillée est inutilisable, aussi bien fabriqué soit-il.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    disambiguation:
+      "Il s'agit de couteaux inférieurs circulaires travaillant en paire de cisaillement avec un couteau supérieur sur les lignes d'enroulage. Si vous cherchez des enclumes plates pour coupe par écrasement, consultez [Couteaux Enclumes Inférieurs Rainurés](/products/bottom-grooved-anvil-knives).",
+    compatibleMachines: [
+      "Beck",
+      "Bielomatik",
+      "Clark Aiken",
+      "DATM",
+      "Didde",
+      "ECH Will",
+      "Harris",
+      "Hamblett",
+      "Jagenberg",
+      "Langston",
+      "Lenox",
+      "Maxson",
+      "Miltex",
+      "Masson Scott",
+      "Pasaban",
+    ],
+    specs: [
+      {
+        label: "Matériau",
+        value: "Carbure de tungstène massif / à plaquettes carbure / HSS",
+      },
+      {
+        label: "Diamètre extérieur",
+        value: "Φ250–Φ254 mm standard",
+      },
+      {
+        label: "Épaisseur",
+        value: "15 / 20 / 25 / 50 mm",
+      },
+      {
+        label: "État de surface",
+        value: "Poli miroir",
+      },
+      {
+        label: "Principe de conception",
+        value:
+          "Couteau inférieur plus dur que le supérieur — maîtrise de la bavure et de la poussière",
+      },
+      {
+        label: "Matériaux refendus",
+        value:
+          "Papier, film, feuille métallique et supports en bande similaires",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Réf.",
+      col1: "DE ØD (mm)",
+      col2: "Alésage Ød (mm)",
+      col3: "Épaisseur T (mm)",
+      caption:
+        "* Tailles standard de couteau inférieur pour refendeuse-enrouleuse. L'alésage, l'épaisseur et la géométrie d'arête sont adaptés à la machine — transmettez le DE/DI/T du couteau que vous utilisez aujourd'hui ainsi que la spécification du couteau supérieur associé.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "25",
+      },
+      {
+        spec: "2",
+        od: "Φ254",
+        id: "Φ195",
+        thickness: "50",
+      },
+      {
+        spec: "3",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "15",
+      },
+      {
+        spec: "4",
+        od: "Φ250",
+        id: "Φ140",
+        thickness: "20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Le couteau inférieur doit toujours être la moitié la plus dure de la paire. Dans ce cadre, la nuance se choisit selon le caractère abrasif du substrat et selon que vous souhaitez ou non un corps re-plaquable.",
+      rows: [
+        {
+          grade: "Carbure de tungstène massif",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Supports abrasifs et fortement couchés ; le plus long intervalle entre changements",
+          tradeoff:
+            "Prix unitaire le plus élevé, et le couteau entier est mis au rebut lorsque l'arête est épuisée",
+        },
+        {
+          grade: "À plaquettes carbure",
+          hardness: "HRA 89–91 à la plaquette",
+          bestFor:
+            "Papier et carton courants — le meilleur rapport coût/durée, et re-plaquable",
+          tradeoff:
+            "La qualité de brasure décide de la durée de vie ; des plaquettes mal serties se desserrent à vitesse",
+        },
+        {
+          grade: "HSS",
+          hardness: "62–64 HRC",
+          bestFor:
+            "Tirages courts, supports souples non couchés, coût unitaire le plus bas",
+          tradeoff:
+            "L'arête s'arrondit vite aux vitesses d'enroulage, et c'est là que commence la poussière dans la bobine",
+        },
+      ],
+      outro:
+        "Quelle que soit la nuance retenue, conservez le différentiel de dureté avec le couteau supérieur. Égaliser les deux duretés est une erreur courante et coûteuse : elle supprime le cisaillement et vous laisse écraser la bande.",
+    },
+    components: [
+      {
+        id: "hardness-differential",
+        tag: "MÉCANIQUE DU CISAILLEMENT",
+        title: "Délibérément plus dur que le couteau supérieur",
+        description:
+          "Le couteau inférieur est spécifié plus dur que le couteau supérieur associé, et c'est voulu. Ce différentiel est ce qui maintient la paire en cisaillement au lieu de déformer la bande, et c'est la cause directe de tranches sans bavure et d'un faible entraînement de poussière dans la bobine.",
+      },
+      {
+        id: "mirror-face-finish",
+        tag: "ÉTAT DE SURFACE",
+        title: "Face de roulement polie miroir",
+        description:
+          "Une face polie libère la bande au lieu de la freiner, ce qui garde la coupe propre et réduit l'échauffement par frottement. Le poli de la face est l'une des premières choses à se dégrader en service et l'une des dernières que les opérateurs vérifient : une face ternie fait monter la poussière bien avant que l'arête soit réellement usée.",
+      },
+      {
+        id: "hot-set-carbide",
+        tag: "CONSTRUCTION",
+        title: "Plaquettes carbure serties à chaud",
+        description:
+          "Sur la construction à plaquettes, celles-ci sont serties à chaud dans des conditions contrôlées afin de rester fermement solidaires à grande vitesse. Le bénéfice pratique est un corps re-plaquable : les plaquettes usées sont remplacées et le couteau retourne en service au lieu d'être mis au rebut.",
+      },
+    ],
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Exemple : enrouleuse Jagenberg, couteau inférieur Φ250 × Φ188 × 25 mm, associé à un couteau supérieur Φ200. Refendage de papier couché 120 g/m² à 800 m/min, 12 coupes. Poussière dans la bobine et tranche légèrement ébavurée.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Pourquoi le couteau inférieur doit-il être plus dur que le couteau supérieur ?",
+          answer:
+            "Parce qu'une coupe par cisaillement a besoin d'un différentiel de dureté pour le rester. Lorsque les deux couteaux ont des duretés voisines, la matière de la zone de cisaillement se déforme au lieu de se séparer proprement, et l'on obtient une tranche ébavurée et de la fibre écrasée qui devient poussière dans la bobine. Le couteau inférieur, plus dur, conserve une géométrie d'arête stable tandis que le supérieur, plus tendre, encaisse l'usure — c'est aussi pourquoi le supérieur est celui qu'on remplace le plus souvent. Égaliser les duretés est une erreur courante et coûteuse.",
+        },
+        {
+          question:
+            "J'ai de la poussière dans la bobine. Où regarder en premier ?",
+          answer:
+            "À la coupe elle-même, avant les nettoyeurs de bande et les barres antistatiques. Un couteau inférieur dont l'arête s'est arrondie ou dont le poli de face s'est terni cesse de cisailler et se met à écraser, et la fibre écrasée part directement dans la bobine — réapparaissant souvent comme défaut deux procédés plus loin. L'indice est chronologique : une poussière progressive désigne le couteau, une poussière apparue après un changement de qualité désigne le substrat. Inspectez l'arête sous grossissement et contrôlez le poli de la face, pas seulement le tranchant au toucher.",
+        },
+        {
+          question:
+            "Puis-je commander des couteaux inférieurs sans remplacer les couteaux supérieurs ?",
+          answer:
+            "Oui, et c'est la manière habituelle de les acheter. Les couteaux inférieurs durent en général bien plus longtemps que les supérieurs ; les remplacer au même cycle gaspille de l'outillage encore utilisable. Transmettez-nous le DE/DI/épaisseur du couteau inférieur et la spécification du couteau supérieur associé, et nous ajusterons la géométrie d'accouplement et le différentiel de dureté à ce que vous utilisez déjà.",
+        },
+        {
+          question:
+            "Les couteaux à plaquettes usés peuvent-ils être re-plaqués ?",
+          answer:
+            "Oui, à condition que le corps soit droit et sans faux-rond et que les assises de brasure soient saines. Le re-plaquage est nettement moins cher qu'un couteau neuf et c'est la raison de préférer la version à plaquettes au carbure massif lorsque l'économie est serrée. Le carbure massif ne se re-plaque pas : quand l'arête est épuisée, le couteau l'est aussi, c'est le compromis accepté en échange de la plus longue durée de vie unitaire.",
+        },
+      ],
+      company: [
+        {
+          question:
+            "De quoi avez-vous besoin pour chiffrer un couteau inférieur ?",
+          answer:
+            "Diamètre extérieur, alésage et épaisseur du couteau que vous utilisez aujourd'hui, la spécification du couteau supérieur associé, ce que vous refendez, la vitesse de ligne et le nombre de coupes. Si l'un de ces éléments est inconnu, envoyez le couteau usé ou des photographies avec un pied à coulisse dans le cadre — nous préférons faire de la rétro-ingénierie à partir d'un échantillon plutôt que de chiffrer sur une hypothèse.",
+        },
+        {
+          question:
+            "Fournissez-vous pour des marques d'enrouleuse absentes de cette page ?",
+          answer:
+            "Oui. Les plateformes listées sont celles que nous voyons le plus souvent, non une limite — les couteaux inférieurs sont fabriqués pour la machine dans tous les cas. Toute refendeuse-enrouleuse électrique entre dans le périmètre dès que nous disposons des cotes de montage et de la spécification du couteau supérieur associé.",
+        },
+        {
+          question: "Comment sont-ils emballés ?",
+          answer:
+            "Individuellement, arête protégée et papier VCI contre la corrosion, en caisse ajustée pour les grands diamètres. Un couteau inférieur qui arrive avec une arête entaillée est inutilisable quelle que soit sa fabrication : l'emballage est donc spécifié pour le transport, pas pour l'étagère.",
+        },
+      ],
+    },
+  },
+  {
+    id: "box-slotting-knives",
+    name: "Couteaux à Rainurer pour Boîtes",
+    fullName:
+      "Couteaux à rainurer en carbure de précision pour boîtes rigides et coffrets cadeaux",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Couteaux Emballage et Carton",
+    image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+    badge: "Paires Gauche / Droite",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Six couteaux à rainurer en carbure disposés en éventail montrant la plage de longueurs et de largeurs de stock",
+      "Paire de couteaux à rainurer en carbure montrant le biseau de rainurage rectifié",
+      "Couteaux à rainurer dans des étuis de protection étiquetés à côté de deux couteaux libres",
+    ],
+    description:
+      "Couteaux à rainurer en carbure pour le rainurage en V du carton gris sur lignes de boîtes rigides et de coffrets cadeaux. Livrés en paires gauche et droite en cinq tailles de stock, de 50 × 12 mm à 60 × 15 mm, épaisseur 2,0 / 2,2 mm, en nuances carbure GS05U (optimisée à l'usure) et GS20U (tenace). Rainures nettes sans déchirer ni effilocher la face du carton, réglables à l'épaisseur du support.",
+    fullDescription:
+      "Une boîte rigide ne vaut que ce que vaut sa rainure. La rainure en V pratiquée dans le carton gris détermine la manière dont le carton plie, et une rainure qui déchire ou effiloche la couche de surface transparaît à travers l'habillage comme un défaut visible sur un produit acheté précisément parce qu'il paraît coûteux. Sur les coffrets cadeaux et de luxe, il n'existe aucune tolérance acceptable pour une rainure irrégulière.\n\nLes couteaux à rainurer Sureay sont rectifiés dans un carbure de tungstène de haute qualité et livrés en paires appariées gauche et droite, parce que c'est ainsi qu'ils coupent. Les deux couteaux forment ensemble les parois de la rainure ; faire travailler un couteau neuf contre un couteau usé produit une rainure asymétrique qui plie hors d'équerre, et c'est pourquoi nous les chiffrons et les expédions par paires et non à l'unité.\n\n## Deux nuances, une décision\n\nGS05U est la nuance la plus dure, optimisée à l'usure, et le bon choix pour du carton gris standard sur longs tirages. GS20U échange une part de dureté contre de la ténacité et convient au carton épais et au carton recyclé porteur d'inclusions — la même distinction que l'on retrouve dans toute application du carbure, exprimée ici en termes de carton. Choisir GS05U pour du carton recyclé chargé d'impuretés est la façon la plus courante d'ébrécher ces couteaux.\n\n## Réglable à l'épaisseur du carton\n\nL'écartement des couteaux se règle sur le carton traité, de sorte qu'une seule paire couvre une plage d'épaisseurs au lieu d'être figée sur une valeur unique. En pratique, une ligne de boîtes rigides qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, à condition que la largeur de rainure reste dans la plage.\n\n## Applications\n\nRainurage en V du carton gris sur lignes de boîtes rigides et de coffrets cadeaux : emballage de luxe, coffrets cosmétiques et spiritueux, étuis de présentation, carton de couverture pour reliure rigide et cartonnage rigide standard.\n\n## Pourquoi nous chiffrons par paires\n\nLes deux couteaux forment ensemble les parois de la rainure : ils sont donc rectifiés, appariés et expédiés en paire, et doivent être changés ensemble. Faire travailler un couteau neuf contre un couteau usé taille une rainure asymétrique, et une rainure asymétrique plie hors d'équerre — un défaut qui transparaît à travers l'habillage précisément sur les produits qui peuvent le moins se le permettre. Remplacer un seul couteau relève en outre généralement d'un diagnostic manqué : la défaillance précoce d'un couteau isolé signifie normalement un choc sur une inclusion ou un défaut de réglage, et les deux se reproduiront sur le couteau de remplacement. Indiquez-nous combien de postes de rainurage compte la ligne et combien de paires vous consommez sur un mois type, et nous chiffrerons un échéancier plutôt qu'une quantité ponctuelle, car la plupart des lignes de boîtes rigides sont mieux servies par une commande ouverte que par une commande passée quand la dernière paire lâche.\n\n## GS05U ou GS20U — décidez selon le carton, pas selon la longueur du tirage\n\nGS05U est plus dure et s'use plus lentement, ce qui la rend adaptée au carton gris vierge et propre. GS20U échange de la dureté contre de la ténacité et survit aux inclusions, ce qui la rend adaptée au carton épais et au support recyclé. Les modes de défaillance diffèrent et c'est là toute la décision : un couteau usé est réaffûté et remis en service, un couteau ébréché est mis au rebut. Si votre mélange de carton comporte du recyclé, même partiellement, GS20U revient généralement moins cher sur une année, alors même qu'elle mesure une dureté inférieure et montre une durée d'arête plus courte lors d'un essai sur carton propre. Choisir la nuance la plus dure disponible pour du carton contaminé est la façon la plus courante de détruire ces couteaux.\n\n## Rainures qui s'effilochent : arête ou réglage ?\n\nUne paroi de rainure effilochée est la signature d'une arête qui a cessé de sectionner la fibre et s'est mise à la pousser. Vérifiez d'abord les arêtes. Si elles sont encore vives, examinez l'écartement des couteaux par rapport à l'épaisseur du carton : trop ouvert, le carton est déchiré au lieu d'être coupé ; trop serré, la face est écrasée. La chronologie distingue les deux causes de façon fiable : les problèmes de réglage apparaissent immédiatement après un changement, les problèmes d'arête apparaissent progressivement au fil d'un tirage. Comme l'écartement se règle sur le carton au lieu d'être figé, une seule paire couvre une plage d'épaisseurs : une ligne qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, tant que la largeur de rainure reste dans la plage.\n\n## Tailles et machines hors de la liste\n\nLes cinq tailles de stock sont les plus demandées, non une limite — longueurs, largeurs et géométrie d'arête sont fabriquées sur plan, et toute ligne de rainurage en V du carton gris ou de rainurage de boîtes rigides entre dans le périmètre dès que nous disposons de la géométrie du couteau. Si vous n'avez pas de plan, envoyez un couteau usé ou des photographies avec un pied à coulisse dans le cadre et nous vous retournerons un plan coté pour approbation avant fabrication. Nous préférons travailler d'après votre outillage réel plutôt que d'après une allégation de compatibilité. Les tailles de stock expédient généralement sous quelques jours ouvrés ; les géométries sur plan demandent 15 à 25 jours ouvrés à compter de l'approbation du plan, et les commandes répétées sur plan approuvé sont chiffrées le jour même.",
+    link: "/products/box-slotting-knives",
+    specs: [
+      {
+        label: "Matériau",
+        value: "Carbure de tungstène de haute qualité",
+      },
+      {
+        label: "Nuances",
+        value: "GS05U (usure) / GS20U (ténacité)",
+      },
+      {
+        label: "Longueur",
+        value: "50 / 60 mm",
+      },
+      {
+        label: "Largeur",
+        value: "12 / 15 / 16 mm",
+      },
+      {
+        label: "Épaisseur",
+        value: "2,0 / 2,2 mm",
+      },
+      {
+        label: "Conditionnement",
+        value: "Paires appariées gauche et droite",
+      },
+      {
+        label: "Application",
+        value:
+          "Rainurage en V du carton gris sur lignes de boîtes rigides et de coffrets cadeaux",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Réf.",
+      col1: "L × l (mm)",
+      col2: "Épaisseur T (mm)",
+      caption:
+        "* Cinq tailles de stock, livrées en paires gauche et droite. Autres longueurs, largeurs et géométries d'arête fabriquées sur plan ou par rétro-ingénierie à partir d'un couteau usé.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "50 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "2",
+        od: "50 × 15",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "3",
+        od: "50 × 16",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "4",
+        od: "60 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "5",
+        od: "60 × 15",
+        id: "2 / 2.2",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Sur les couteaux à rainurer, la décision de nuance oppose usure et ténacité, et c'est le carton qui indique laquelle vous convient. Le carton gris vierge et propre use une arête ; le carton recyclé porteur d'inclusions l'ébrèche.",
+      rows: [
+        {
+          grade: "GS05U",
+          hardness: "Dureté supérieure, optimisée à l'usure",
+          bestFor:
+            "Carton gris vierge standard sur longs tirages de production — la nuance par défaut",
+          tradeoff:
+            "Moins tolérante aux inclusions ; s'ébrèche au lieu de s'user si le carton est contaminé",
+        },
+        {
+          grade: "GS20U",
+          hardness: "Ténacité supérieure",
+          bestFor:
+            "Carton épais et carton recyclé porteur d'impuretés ou d'autres inclusions",
+          tradeoff: "Durée d'arête plus courte que GS05U sur carton propre",
+        },
+      ],
+      outro:
+        "Si votre mélange de carton comporte du recyclé, même partiellement, GS20U l'emporte généralement en coût total même si elle perd en durée d'arête : un couteau ébréché est mis au rebut, un couteau usé est réaffûté.",
+    },
+    components: [
+      {
+        id: "matched-pairs",
+        tag: "FORMAT DE LIVRAISON",
+        title: "Gauche et droite livrés en paire",
+        description:
+          "Les deux couteaux forment ensemble les parois de la rainure : ils sont rectifiés, appariés et expédiés en paire. Faire travailler un couteau neuf contre un couteau usé produit une rainure asymétrique qui plie hors d'équerre — un défaut qui transparaît à travers l'habillage sur exactement les produits qui peuvent le moins se le permettre.",
+      },
+      {
+        id: "clean-groove-edge",
+        tag: "QUALITÉ DE SURFACE",
+        title: "Des rainures qui ne déchirent pas la face",
+        description:
+          "La géométrie d'arête est rectifiée pour sectionner la fibre du carton gris au lieu de la pousser, de sorte que les parois de la rainure restent nettes et que la couche de surface ne s'effiloche pas. Sur les boîtes rigides et les coffrets cadeaux, la rainure fait la différence entre un pli qui paraît usiné et un pli qui paraît abîmé.",
+      },
+      {
+        id: "adjustable-gap",
+        tag: "SOUPLESSE DE PROCÉDÉ",
+        title: "Réglable à l'épaisseur du carton",
+        description:
+          "L'écartement des couteaux se règle sur le carton traité, de sorte qu'une seule paire couvre une plage d'épaisseurs au lieu d'être figée sur une valeur unique. Une ligne qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, tant que la largeur de rainure reste dans la plage.",
+      },
+    ],
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "tungsten-carbide-slitter-knives",
+      "paper-straw-slitting-blades",
+    ],
+    rfqPlaceholder:
+      "Exemple : ligne de rainurage en V pour boîtes rigides, couteaux 50 × 15 × 2,2 mm gauche et droite. Carton gris de 2 mm, en partie recyclé. Largeur de rainure 2 mm. Besoin de 10 paires et d'une recommandation de nuance.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Puis-je remplacer un seul couteau de la paire lorsqu'un seul est usé ?",
+          answer:
+            "Vous le pouvez, mais c'est généralement une fausse économie. Les deux couteaux forment ensemble les parois de la rainure : un couteau neuf travaillant contre un couteau usé taille une rainure asymétrique et le carton plie hors d'équerre. Sur les boîtes rigides et les coffrets cadeaux, cela transparaît à travers l'habillage. Si un couteau de la paire a lâché prématurément, il vaut la peine d'en chercher la raison : une défaillance précoce isolée signifie normalement un choc sur une inclusion ou un problème de réglage, et les deux se reproduiront sur le couteau de remplacement.",
+        },
+        {
+          question: "GS05U ou GS20U — comment choisir ?",
+          answer:
+            "D'après ce que contient le carton, pas d'après la durée du tirage. GS05U est plus dure et s'use plus lentement, ce qui en fait la bonne nuance pour du carton gris vierge et propre. GS20U est plus tenace et survit aux inclusions, ce qui en fait la bonne nuance pour le carton épais et le support recyclé. Les modes de défaillance sont différents et c'est là toute la décision : un couteau usé est réaffûté et remis en service, un couteau ébréché est mis au rebut. Si votre mélange de carton comporte du recyclé, même partiellement, GS20U revient généralement moins cher sur une année.",
+        },
+        {
+          question:
+            "Mes rainures s'effilochent en surface. Est-ce le couteau ou le réglage ?",
+          answer:
+            "Vérifiez d'abord l'arête. Une paroi de rainure effilochée est la signature d'une arête qui a cessé de sectionner la fibre et s'est mise à la pousser — la même défaillance qui se manifeste par une coupe pelucheuse sur toute application carton. Si les arêtes sont encore vives, examinez l'écartement des couteaux par rapport à l'épaisseur du carton : trop ouvert, le carton est déchiré au lieu d'être coupé ; trop serré, la face est écrasée. Les problèmes de réglage apparaissent immédiatement après un changement, ceux d'arête progressivement.",
+        },
+        {
+          question:
+            "Pouvez-vous fabriquer des longueurs autres que 50 et 60 mm ?",
+          answer:
+            "Oui. Les tailles de stock sont les plus demandées, non une limite — longueurs, largeurs et géométrie d'arête sont fabriquées sur plan. Si vous ne disposez pas de plan, envoyez un couteau usé ou des photographies avec un pied à coulisse dans le cadre et nous établirons un plan coté pour votre approbation avant fabrication.",
+        },
+      ],
+      company: [
+        {
+          question: "Sont-ils chiffrés au couteau ou à la paire ?",
+          answer:
+            "À la paire, parce que c'est ainsi qu'ils coupent et qu'ils doivent être changés. Indiquez-nous combien de postes de rainurage compte la ligne et combien de paires vous consommez sur un mois type, et nous chiffrerons un échéancier plutôt qu'une quantité ponctuelle — la plupart des lignes de boîtes rigides sont mieux servies par une commande ouverte que par une commande passée quand la dernière paire lâche.",
+        },
+        {
+          question: "Pour quelles machines à rainurer fournissez-vous ?",
+          answer:
+            "Les couteaux sont fabriqués pour la machine : toute ligne de rainurage en V du carton gris ou de rainurage de boîtes rigides entre donc dans le périmètre dès que nous disposons de la géométrie du couteau. Envoyez la marque et le modèle de la machine ainsi que les dimensions des couteaux que vous utilisez aujourd'hui — ou un échantillon usé — et nous les reproduirons. Nous préférons travailler d'après votre outillage réel plutôt que d'après une allégation de compatibilité.",
+        },
+        {
+          question: "Quel est le délai de livraison ?",
+          answer:
+            "Les tailles de stock expédient généralement sous quelques jours ouvrés après confirmation de commande. Les géométries sur plan demandent 15 à 25 jours ouvrés à compter de l'approbation du plan. Les commandes répétées sur plan approuvé sont chiffrées le jour même, la géométrie restant archivée.",
+        },
+      ],
+    },
+  },
+  {
+    id: "paper-straw-slitting-blades",
+    name: "Lames de Coupe pour Pailles en Papier et Filtres",
+    fullName:
+      "Lames circulaires en carbure pour pailles en papier et bâtonnets filtres",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Couteaux de Refendage",
+    image:
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+    badge: "Revêtement Anti-adhérent",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
+    ],
+    galleryAlts: [
+      "Lame circulaire en carbure pour la coupe de pailles en papier et de bâtonnets filtres, face complète et alésage central",
+      "Paire de lames circulaires en carbure pour la coupe de pailles en papier, face et alésage central",
+      "Gros plan de la face polie miroir et de l'arête de coupe d'une lame pour pailles en papier",
+    ],
+    description:
+      "Lames circulaires en carbure anti-adhérentes pour la coupe de pailles en papier et de bâtonnets filtres. Diamètre extérieur Φ88–Φ100, épaisseur 0,15–0,30 mm, en six tailles de stock. Le revêtement anti-adhérent résiste à l'accumulation de colle en phase aqueuse, de sorte que la tranche reste d'équerre et sans effilochage sur de longs tirages, sur machines à pailles et à bâtonnets filtres à grande vitesse.",
+    fullDescription:
+      "Sur une ligne de pailles en papier, la lame ne tombe généralement pas en panne par usure. Elle tombe en panne parce qu'elle prend de la colle. L'adhésif en phase aqueuse se transfère sur la face de la lame, forme un bourrelet le long de l'arête de coupe et, à partir de là, la lame cesse de couper le tube et se met à l'entraîner — ce qui est exactement ce qu'est une extrémité de paille effilochée. Le tranchant n'est pas la variable qui règle cela.\n\nC'est pourquoi ces lames sont spécifiées autour du décollement de l'adhésif plutôt qu'autour de la seule dureté. Un substrat carbure tient l'arête ; le revêtement anti-adhérent garde la face propre pour que l'arête puisse continuer à travailler. Sur une ligne fonctionnant à la colle en phase aqueuse, le revêtement apporte davantage à la qualité de coupe qu'un point de dureté supplémentaire.\n\n## Les lignes de pailles ne sont pas des lignes de bâtonnets filtres\n\nLes deux applications partagent une ascendance de machines et une géométrie de lame, mais pas leurs conditions de défaillance. La coupe de bâtonnets filtres sur machines à tabac tourne à très grande vitesse sur un matériau homogène et bien caractérisé. Les lignes de pailles en papier sont plus récentes, traitent une gamme plus large de nombres de plis et de grammages, et utilisent des adhésifs qui varient d'un producteur à l'autre — de sorte que la durée de vie d'une lame sur une ligne de pailles est bien plus sensible à l'adhésif qu'au papier. Si vous mettez en service une nouvelle ligne de pailles, attendez-vous à ajuster la spécification de lame face à votre adhésif plutôt que face à votre papier.\n\n## Lames minces, conséquences réelles\n\nÀ 0,15 à 0,30 mm, ce sont des lames minces, et l'épaisseur est une décision de procédé. Une lame plus mince retire moins de matière et laisse une extrémité plus d'équerre sur un tube à paroi fine ; une lame plus épaisse est plus stable à vitesse et plus tolérante à une machine présentant du faux-rond. Se tromper ici se traduit soit par une extrémité irrégulière, soit par une lame qui fléchit et dérive.\n\n## Applications\n\nMachines d'enroulage et de coupe de pailles en papier ; machines à bâtonnets filtres pour cigarettes, y compris plateformes Hauni ; coupe de tubes et de mandrins en papier sur équipements de transformation à grande vitesse comparables.\n\n## Diagnostiquer une extrémité de paille effilochée\n\nSi les extrémités s'effilochent alors que l'arête paraît encore vive, la cause est presque toujours une prise d'adhésif et non l'usure. L'adhésif en phase aqueuse se transfère sur la face de la lame et forme un bourrelet le long de l'arête de coupe ; au-delà, la lame entraîne le tube au lieu de le sectionner, et un tube entraîné s'effiloche. L'arête en dessous peut être parfaitement utilisable. Essuyez la face et inspectez-la à la lumière avant de changer la lame : si le dépôt est visible, la réponse est un revêtement ou un intervalle de nettoyage, pas une lame plus affûtée. Traiter cela comme un problème de tranchant est la façon classique dont une ligne de pailles consomme des lames qu'elle n'avait pas besoin de remplacer.\n\n## L'épaisseur est un choix de procédé\n\nÀ 0,15 à 0,30 mm, l'épaisseur n'est pas une cote résiduelle. Une lame plus mince retire moins de matière et laisse une extrémité plus d'équerre sur des pailles à paroi fine et à faible nombre de plis, et c'est pourquoi c'est le choix sur les pailles haut de gamme. Une lame plus épaisse est plus rigide, tourne plus stablement à vitesse et tolère le faux-rond de broche, ce qui en fait l'option la plus sûre sur des machines anciennes ou sur du tube multiplis plus épais. Se tromper produit soit une extrémité irrégulière, soit une lame qui fléchit et dérive, et les deux défauts ne se ressemblent en rien — indiquez-nous le nombre de plis, le grammage et la machine et nous ferons une recommandation plutôt que de vous laisser deviner.\n\n## Héritage bâtonnet filtre, réalité de la paille\n\nBeaucoup de lignes de pailles ont été construites sur des machines à bâtonnets filtres, et la géométrie de lame est souvent interchangeable en cotes. Ce qui ne se transpose pas, c'est la logique de spécification. La coupe de bâtonnets filtres tourne à très grande vitesse sur un matériau homogène ; les lignes de pailles traitent des papiers variés et, surtout, des adhésifs variés. Une lame performante sur une machine Hauni à bâtonnets filtres peut s'encrasser en quelques heures sur une ligne de pailles utilisant une autre colle. Spécifiez face à l'adhésif, pas face à l'ascendance de la machine — l'adhésif est l'information la plus utile que vous puissiez nous donner sur cette application, et celle que la plupart des acheteurs omettent.\n\n## Revêtements, réaffûtage et mise en service d'une nouvelle ligne\n\nLe revêtement anti-adhérent est une couche de surface, et rectifier l'arête le retire précisément là où il compte : les lames revêtues de ce type sont donc menées jusqu'à la fin de leur vie puis remplacées, plutôt qu'intégrées à un cycle de réaffûtage. Si votre économie favorise le réaffûtage, nous chiffrerons du carbure non revêtu et vous accepterez un nettoyage de face plus fréquent en contrepartie. Sur une ligne encore en mise en service, la première étape utile est une petite quantité d'essai sur deux spécifications — typiquement une lame revêtue et une épaisseur différente — testées face à votre adhésif et à votre papier réels. Quinze jours de cela en disent plus que n'importe quelle comparaison de fiches techniques et fixent correctement dès le départ la spécification de la commande récurrente. Les tailles de stock expédient généralement sous quelques jours ouvrés ; les diamètres, alésages et épaisseurs sur mesure demandent 15 à 25 jours ouvrés à compter de l'approbation du plan, avec quelques jours supplémentaires pour le cycle de revêtement.",
+    link: "/products/paper-straw-slitting-blades",
+    introNote:
+      "La production de pailles en papier concentre aujourd'hui l'essentiel de la demande pour ces lames. Si votre ligne utilise un adhésif en phase aqueuse, indiquez-nous lequel : il prédit la durée de vie de la lame sur cette application mieux que la spécification du papier.",
+    compatibleMachines: ["Hauni"],
+    specs: [
+      {
+        label: "Matériau",
+        value: "Carbure de tungstène avec revêtement anti-adhérent",
+      },
+      {
+        label: "Diamètre extérieur",
+        value: "Φ88–Φ100 mm",
+      },
+      {
+        label: "Alésage",
+        value: "Φ15 / Φ16 / Φ45 mm",
+      },
+      {
+        label: "Épaisseur",
+        value: "0,15–0,30 mm",
+      },
+      {
+        label: "Rôle du revêtement",
+        value:
+          "Résiste à l'accumulation d'adhésif en phase aqueuse sur la face de la lame",
+      },
+      {
+        label: "Application",
+        value:
+          "Coupe de pailles en papier, coupe de bâtonnets filtres, coupe de tubes en papier",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Réf.",
+      col1: "DE ØD (mm)",
+      col2: "Alésage Ød (mm)",
+      col3: "Épaisseur T (mm)",
+      caption:
+        "* Six tailles de stock. Autres diamètres, alésages et épaisseurs fabriqués sur plan — transmettez le modèle de machine, le nombre de plis de la paille et le type d'adhésif et nous spécifierons la lame en conséquence.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ88",
+        id: "Φ16",
+        thickness: "0.26",
+      },
+      {
+        spec: "2",
+        od: "Φ89",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "3",
+        od: "Φ90",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "4",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.15",
+      },
+      {
+        spec: "5",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "6",
+        od: "Φ100",
+        id: "Φ45",
+        thickness: "0.20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Sur les travaux avec adhésif, la surface compte davantage que le substrat. Choisissez le revêtement selon l'adhésif que vous utilisez, puis choisissez le substrat selon le papier.",
+      rows: [
+        {
+          grade: "Carbure + revêtement anti-adhérent",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Lignes de pailles à adhésif en phase aqueuse et coupe de bâtonnets filtres — la spécification par défaut",
+          tradeoff:
+            "Prix unitaire plus élevé ; le revêtement est une couche consommable et ne survit pas à un réaffûtage",
+        },
+        {
+          grade: "Carbure non revêtu",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Applications sèches ou peu collantes, et coupe de tubes en papier sans adhésif au droit de la coupe",
+          tradeoff:
+            "Prend rapidement l'adhésif sur les lignes encollées ; la tranche s'effiloche bien avant que l'arête soit usée",
+        },
+        {
+          grade: "Acier à outils",
+          hardness: "60–63 HRC",
+          bestFor: "Essais, tirages courts et lignes lentes où le coût décide",
+          tradeoff:
+            "Perd l'arête rapidement aux vitesses des lignes de pailles ; non viable en production continue",
+        },
+      ],
+    },
+    components: [
+      {
+        id: "adhesive-release-coating",
+        tag: "TRAITEMENT DE SURFACE",
+        title:
+          "Revêtue pour le décollement de l'adhésif, pas seulement pour la dureté",
+        description:
+          "Sur les lignes à adhésif en phase aqueuse, la lame tombe en panne par prise de colle, pas par usure. Le revêtement anti-adhérent garde la face propre pour que l'arête continue de couper le tube au lieu de l'entraîner — c'est le mécanisme réel derrière une extrémité de paille sans effilochage.",
+      },
+      {
+        id: "thin-section-stability",
+        tag: "GÉOMÉTRIE DE LAME",
+        title: "0,15–0,30 mm, spécifié selon la coupe",
+        description:
+          "L'épaisseur est un choix de procédé, pas un reliquat. Les lames plus minces retirent moins de matière et laissent une extrémité plus d'équerre sur du tube à paroi fine ; les plus épaisses tournent plus stablement à vitesse et tolèrent le faux-rond machine. Nous la spécifions selon votre nombre de plis et votre machine plutôt que de retenir une valeur unique par défaut.",
+      },
+      {
+        id: "straw-line-tuning",
+        tag: "INGÉNIERIE D'APPLICATION",
+        title: "Ajustée à l'adhésif, pas seulement au papier",
+        description:
+          "Les lignes de pailles en papier varient bien plus par l'adhésif que par le papier, et la durée de vie de la lame suit l'adhésif. Indiquez-nous lequel vous utilisez et nous spécifierons revêtement et géométrie en conséquence — c'est l'information la plus utile que vous puissiez nous donner sur cette application.",
+      },
+    ],
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Exemple : poste de coupe de pailles en papier, lame Φ100 × Φ15 × 0,20 mm. Paille trois plis, kraft 60 g/m², adhésif en phase aqueuse. Les lames s'encrassent au bout d'environ 6 heures et les extrémités de paille s'effilochent. Besoin de 50 pièces, revêtues.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Les extrémités de mes pailles s'effilochent mais l'arête de la lame paraît encore vive. Que se passe-t-il ?",
+          answer:
+            "Presque certainement une prise d'adhésif. L'adhésif en phase aqueuse se transfère sur la face de la lame et forme un bourrelet le long de l'arête de coupe ; au-delà, la lame entraîne le tube au lieu de le sectionner, et un tube entraîné s'effiloche. L'arête en dessous peut être parfaitement utilisable. Essuyez la face et inspectez-la à la lumière avant de changer la lame : si le dépôt est visible, la réponse est un revêtement ou un intervalle de nettoyage, pas une lame plus affûtée.",
+        },
+        {
+          question: "Dois-je utiliser 0,15 mm ou 0,30 mm ?",
+          answer:
+            "Cela dépend du tube et de la machine. Une lame plus mince retire moins de matière et donne une extrémité plus d'équerre sur des pailles à paroi fine et à faible nombre de plis, et c'est pourquoi c'est le choix sur les pailles haut de gamme. Une lame plus épaisse est plus rigide, tourne plus stablement à vitesse et tolère le faux-rond de broche, et c'est pourquoi c'est l'option la plus sûre sur des machines anciennes ou sur du tube multiplis plus épais. Indiquez-nous le nombre de plis, le grammage et la machine et nous ferons une recommandation plutôt que de vous laisser deviner.",
+        },
+        {
+          question: "Le revêtement survit-il au réaffûtage ?",
+          answer:
+            "Non. Le revêtement est une couche de surface, et rectifier l'arête le retire précisément là où il compte le plus. Sur les lames revêtues de ce type, l'approche pratique consiste à les mener jusqu'à la fin de leur vie et à les remplacer, plutôt qu'à construire un cycle de réaffûtage autour d'elles. Si votre économie favorise le réaffûtage, nous pouvons chiffrer du carbure non revêtu et vous accepterez un nettoyage de face plus fréquent en contrepartie.",
+        },
+        {
+          question:
+            "Les lames pour bâtonnets filtres et pour pailles en papier sont-elles interchangeables ?",
+          answer:
+            "En cotes, souvent oui — la filiation géométrique est la même et beaucoup de lignes de pailles ont été construites sur des machines à bâtonnets filtres. Ce qui ne se transpose pas, c'est la logique de spécification. La coupe de bâtonnets filtres tourne à très grande vitesse sur un matériau homogène ; les lignes de pailles traitent du papier varié et, surtout, de l'adhésif varié. Une lame performante sur une machine Hauni à bâtonnets filtres peut s'encrasser sur une ligne de pailles utilisant une autre colle. Spécifiez face à l'adhésif, pas face à l'ascendance de la machine.",
+        },
+      ],
+      company: [
+        {
+          question: "Quelles informations vous faut-il pour chiffrer ?",
+          answer:
+            "Diamètre extérieur, alésage et épaisseur ; le modèle de machine ; le nombre de plis de la paille et le grammage du papier ; le type d'adhésif ; et votre intervalle de changement actuel. L'adhésif est l'élément que la plupart des acheteurs omettent et celui qui prédit le mieux la durée de vie de la lame sur cette application : incluez-le même si vous n'êtes pas certain qu'il importe.",
+        },
+        {
+          question:
+            "Pouvez-vous fournir pour une ligne de pailles encore en mise en service ?",
+          answer:
+            "Oui, et il vaut la peine de nous associer tôt. Sur une ligne neuve, la première étape utile est une petite quantité d'essai sur deux spécifications — typiquement une lame revêtue et une épaisseur différente — testées face à votre adhésif et à votre papier réels. Cela en dit plus en quinze jours qu'une comparaison de fiches techniques, et fixe correctement dès le départ la spécification de la commande récurrente.",
+        },
+        {
+          question: "Quels sont les délais ?",
+          answer:
+            "Les tailles de stock expédient généralement sous quelques jours ouvrés. Les diamètres, alésages et épaisseurs sur mesure demandent 15 à 25 jours ouvrés à compter de l'approbation du plan. Les lames revêtues ajoutent quelques jours par rapport aux non revêtues pour le cycle de revêtement : tenez-en compte lors de la planification d'un premier essai.",
+        },
+      ],
+    },
+  },
 ];

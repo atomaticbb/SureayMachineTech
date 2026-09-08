@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll } from "vitest";
-import { SUPPORTED_LANGS } from "@/lib/i18n";
+import { SUPPORTED_LANGS, ENGLISH_ONLY_PRODUCT_IDS } from "@/lib/i18n";
 import {
   getBlades,
   getBladeById,
@@ -11,7 +11,15 @@ import {
   preloadLocale,
 } from ".";
 
-const BLADE_COUNT_EN = getBlades("en").length;
+// Products listed in ENGLISH_ONLY_PRODUCT_IDS ship without translations by
+// design, so they exist in the English array only. Every parity assertion
+// below compares the translated subset, not the raw English array.
+const isEnglishOnly = (id: string) => ENGLISH_ONLY_PRODUCT_IDS.includes(id);
+const TRANSLATED_IDS_EN = getBlades("en")
+  .map(b => b.id)
+  .filter(id => !isEnglishOnly(id))
+  .sort();
+const BLADE_COUNT_EN = TRANSLATED_IDS_EN.length;
 
 // Non-English blades, categories and SEO config are code-split behind
 // dynamic import() and only populated by preloadLocale(). Without this the
@@ -25,28 +33,38 @@ beforeAll(async () => {
 describe("getBlades", () => {
   it("returns every language with the same blade count (no shape drift)", () => {
     for (const lang of SUPPORTED_LANGS) {
+      if (lang === "en") continue;
       expect(getBlades(lang).length, lang).toBe(BLADE_COUNT_EN);
     }
   });
 
   it("preserves blade IDs (slugs) across languages", () => {
-    const enIds = getBlades("en")
-      .map(b => b.id)
-      .sort();
     for (const lang of SUPPORTED_LANGS) {
+      if (lang === "en") continue;
       expect(
         getBlades(lang)
           .map(b => b.id)
           .sort(),
         lang
-      ).toEqual(enIds);
+      ).toEqual(TRANSLATED_IDS_EN);
+    }
+  });
+
+  it("every English-only product is absent from the locale arrays", () => {
+    for (const id of ENGLISH_ONLY_PRODUCT_IDS) {
+      expect(getBladeById(id, "en"), id).toBeDefined();
+      for (const lang of SUPPORTED_LANGS) {
+        if (lang === "en") continue;
+        expect(getBladeById(id, lang), `${id} / ${lang}`).toBeUndefined();
+      }
     }
   });
 
   it("ES blades have translated names (different from English)", () => {
-    const en = getBlades("en");
-    const es = getBlades("es");
-    const differentCount = en.filter((b, i) => b.name !== es[i].name).length;
+    const en = getBlades("en").filter(b => !isEnglishOnly(b.id));
+    const differentCount = en.filter(
+      b => b.name !== getBladeById(b.id, "es")?.name
+    ).length;
     // Vast majority should be translated; we expect at least 80% differ.
     expect(differentCount).toBeGreaterThan(Math.floor(en.length * 0.8));
   });

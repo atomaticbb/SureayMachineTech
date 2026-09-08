@@ -59,6 +59,9 @@ export default function ProductCard({
               height={300}
               className="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
               onError={e => {
+                // Clear srcSet first — a srcset candidate still wins over src,
+                // so setting src alone leaves the broken candidate in place.
+                e.currentTarget.srcset = "";
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />
@@ -134,6 +137,9 @@ export default function ProductCard({
               height={168}
               className="absolute inset-0 w-full h-full object-contain p-3 group-hover:scale-105 transition-transform duration-500"
               onError={e => {
+                // Clear srcSet first — a srcset candidate still wins over src,
+                // so setting src alone leaves the broken candidate in place.
+                e.currentTarget.srcset = "";
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />
@@ -191,6 +197,9 @@ export default function ProductCard({
               height={80}
               className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300"
               onError={e => {
+                // Clear srcSet first — a srcset candidate still wins over src,
+                // so setting src alone leaves the broken candidate in place.
+                e.currentTarget.srcset = "";
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />
@@ -247,6 +256,9 @@ export default function ProductCard({
               className="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500"
               style={{ minHeight: "220px" }}
               onError={e => {
+                // Clear srcSet first — a srcset candidate still wins over src,
+                // so setting src alone leaves the broken candidate in place.
+                e.currentTarget.srcset = "";
                 e.currentTarget.src = "/images/products/product.webp";
               }}
             />

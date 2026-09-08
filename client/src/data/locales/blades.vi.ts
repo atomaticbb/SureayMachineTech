@@ -6241,4 +6241,833 @@ export const blades: Blade[] = [
       ],
     },
   },
+  {
+    id: "groove-bottom-knives",
+    name: "Dao Dưới Có Rãnh",
+    fullName: "Dao dưới nhiều rãnh và vòng dao cho cắt trượt",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Dao Cắt Dọc",
+    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+    badge: "Bước rãnh từ 5 mm",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Vòng dao dưới nhiều rãnh với các rãnh song song mài chính xác dùng cho cắt trượt",
+      "Các vòng dao dưới nhiều rãnh cùng một vòng đệm trơn và các dao dưới dạng phẳng",
+      "Vòng dao dưới nhiều rãnh thể hiện bước rãnh và lỗ lắp đã mài",
+    ],
+    description:
+      "Vòng dao dưới nhiều rãnh dùng cho cắt trượt trên máy cuộn lại giấy, bìa và màng. Khổ cắt được thay đổi bằng cách dời dao trên sang rãnh khác thay vì thay lại toàn bộ dụng cụ. Bước rãnh từ 5 mm, ĐK ngoài tới Φ406 mm, lỗ trơn cho trục hơi hoặc vít hãm cho trục đặc. Lưỡi cắt đơn hoặc kép, vòng liền khối hoặc vòng chẻ. Cũng cung cấp vòng một rãnh và vòng đệm trơn.",
+    fullDescription:
+      "Dao dưới nhiều rãnh — còn gọi là dao cắt dưới nhiều rãnh, đe nhiều rãnh hay MKB — là một vòng bản rộng mang nhiều rãnh song song được mài chính xác. Mỗi rãnh là một vị trí cắt sử dụng được, nên việc đổi khổ chỉ là dời dao trên sang một rãnh khác thay vì tháo trục và lắp lại cả bộ dao. Trên dây chuyền thường xuyên đổi khổ đơn hàng, khác biệt đó được tính bằng giờ ca chứ không phải bằng tiền dao.\n\nChính các rãnh tạo ra vết cắt, nên chính chúng phải chuẩn. Vị trí rãnh định ra khổ cắt, bề rộng rãnh định ra khe hở cắt trượt thực tế so với dao trên đi kèm, và tình trạng lưỡi rãnh quyết định vật liệu được cắt trượt hay bị xé. Cả ba được mài trong một lần gá trên cùng một vòng, và đó là lý do vòng nhiều rãnh giữ độ chính xác khổ trên toàn bộ chồng dao tốt hơn một số lượng tương đương các dao đe rời lắp cùng vòng đệm.\n\n## Nơi định dạng này xứng với giá của nó\n\nDao dưới một rãnh rẻ hơn tính theo con và hoàn toàn phù hợp với dây chuyền chạy một khổ suốt nhiều tuần. Vòng nhiều rãnh thắng ở nơi khổ đơn hàng thay đổi thường xuyên, nơi số đường cắt lớn, hoặc nơi việc căn lại bộ vòng đệm đã trở thành nút thắt thực sự của quá trình đổi lệnh. Nó còn loại bỏ cả một nhóm lỗi căn chỉnh: với vị trí rãnh cố định được mài vào một thân duy nhất, khổ cắt không thể lệch vì ai đó xếp vòng đệm sai một milimét.\n\n## Lắp đặt: trục hơi hay trục đặc\n\nHai kiểu lắp bao phủ gần như mọi máy cuộn lại. Lỗ trơn kẹp lên trục hơi nở, là phương án đổi nhanh và là lựa chọn thường thấy trên các dây chuyền gia công hiện đại. Kiểu vít hãm bắt lên trục dưới dạng đặc, phổ biến hơn trên máy đời cũ và trên dây chuyền bìa nặng nơi độ cứng vững của trục quan trọng hơn tốc độ thay dao. Hãy cho chúng tôi biết bạn dùng trục nào: điều đó thay đổi đặc tả lỗ lắp chứ không chỉ cách bắt chặt, và một vòng khoét cho hệ khác sẽ không ngồi đúng tâm.\n\n## Liền khối hay chẻ\n\nVòng tiêu chuẩn là liền khối. Vòng chẻ hai mảnh đắt hơn nhưng tháo ra lắp vào được mà không phải rã cụm trục, điều mà trên máy khổ rộng có thể biến một lần dừng theo kế hoạch thành một lần thay khi máy vẫn chạy. Nếu hiện nay bạn thay vòng bằng cách rút cả trục ra, bản chẻ thường là thứ đáng báo giá đầu tiên.\n\n## Lưỡi cắt đơn hay kép\n\nVòng được mài với một lưỡi cắt hoặc với lưỡi ở cả hai phía mỗi rãnh. Hình học hai lưỡi nhân đôi số vị trí sử dụng được và cho phép lật vòng khi một mặt đã mòn, đổi lại là mài khó hơn và giá cao hơn. Loại nào phù hợp phụ thuộc vào cách các vị trí cắt của bạn phân bố trên vòng, nên hãy gửi bảng khổ chứ không chỉ số lượng rãnh.\n\n## Bước rãnh được chế tạo theo bảng khổ của bạn\n\nKhoảng chia giữa các lưỡi — khoảng cách từ lưỡi cắt này sang lưỡi kế tiếp, còn gọi là bước — hầu như luôn được làm theo yêu cầu và có thể hẹp tới 5 mm (0,200 inch). Đường kính ngoài lên tới Φ406 mm (16 inch). Ở đây không tồn tại bảng tiêu chuẩn nào hữu ích, và đó là lý do chúng tôi báo giá từ bảng khổ hoặc bản vẽ của bạn: hãy cho chúng tôi ĐK ngoài, lỗ lắp, bề rộng vòng, các khổ bạn thực sự chạy và dao trên đi kèm, chúng tôi sẽ mài vị trí rãnh theo đúng bảng đó.\n\n## Phần còn lại của bộ vòng\n\nMột trục đang sản xuất hiếm khi chỉ gồm vòng nhiều rãnh. Vòng cắt một rãnh phụ trách các vị trí cố định, còn vòng trơn đóng vai trò đệm và đỡ vật liệu giữa các vị trí cắt. Chúng tôi cung cấp cả ba theo cùng một đặc tả lỗ lắp và độ đảo để chúng xếp chồng mà không sinh dao động: trộn vòng của nhiều nhà cung cấp trên cùng một trục là nguyên nhân phổ biến và khó chẩn đoán gây sai lệch khổ cắt.\n\n## Ứng dụng\n\nGia công giấy, bìa, giấy tissue và bìa sóng; màng, lá kim loại, giấy decal, băng dính, vải không dệt và dệt may trên máy cuộn lại cắt trượt.",
+    link: "/products/groove-bottom-knives",
+    disambiguation:
+      "Trang này nói về các vòng nhiều rãnh mang nhiều vị trí cắt trên cùng một thân. Với dao dưới dạng đĩa tròn một lưỡi ghép cặp với dao trên trên máy cuộn lại giấy, xem [Dao Dưới Cho Máy Cắt Cuộn Lại](/products/slitter-rewinder-bottom-knives).",
+    introNote:
+      "Bước rãnh, số rãnh và lỗ lắp được chế tạo theo bảng khổ của bạn — sản phẩm này không có kích thước tiêu chuẩn nào thực sự có ý nghĩa. Hãy gửi các khổ bạn thực sự chạy, loại trục (trục hơi hay trục đặc) và dao trên đi kèm, chúng tôi sẽ mài vị trí rãnh theo bảng đó.",
+    compatibleMachines: [
+      "Kampf",
+      "Goebel",
+      "Atlas Converting",
+      "Dienes",
+      "Nishimura",
+      "Deacro",
+      "Parkinson Technologies",
+    ],
+    specs: [
+      {
+        label: "Vật liệu",
+        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / gắn mảnh hợp kim",
+      },
+      {
+        label: "Đường kính ngoài",
+        value: "Tới Φ406 mm (16 inch)",
+      },
+      {
+        label: "Bước rãnh",
+        value: "Từ 5 mm (0,200 inch), mài theo bảng khổ của bạn",
+      },
+      {
+        label: "Lắp đặt",
+        value: "Lỗ trơn cho trục hơi nở, hoặc vít hãm cho trục đặc",
+      },
+      {
+        label: "Cấu hình lưỡi",
+        value: "Lưỡi cắt đơn hoặc kép",
+      },
+      {
+        label: "Kết cấu",
+        value: "Vòng liền khối hoặc vòng chẻ hai mảnh",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt trượt nhiều khổ giấy, bìa, màng, lá kim loại và băng dính",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Cấu hình",
+      col1: "Đường kính ngoài",
+      col2: "Lắp đặt",
+      col3: "Bước rãnh / Lưỡi",
+      caption:
+        "* Bước rãnh, số rãnh, bề rộng vòng và lỗ lắp được chế tạo theo bảng khổ của bạn — sản phẩm này không có bảng kích thước tiêu chuẩn. Hãy gửi các khổ bạn chạy, loại trục và đặc tả dao trên đi kèm, hoặc một bản vẽ, chúng tôi sẽ mài vị trí rãnh tương ứng.",
+    },
+    standardDimensions: [
+      {
+        spec: "Vòng nhiều rãnh — lỗ trơn",
+        od: "Tới Φ406 (16 inch)",
+        id: "Trục hơi nở",
+        thickness: "Từ bước 5 mm",
+      },
+      {
+        spec: "Vòng nhiều rãnh — vít hãm",
+        od: "Tới Φ406 (16 inch)",
+        id: "Trục dưới dạng đặc",
+        thickness: "Từ bước 5 mm",
+      },
+      {
+        spec: "Vòng chẻ hai mảnh",
+        od: "Tới Φ406 (16 inch)",
+        id: "Trục hơi hoặc trục đặc",
+        thickness: "Từ bước 5 mm",
+      },
+      {
+        spec: "Vòng nhiều rãnh hai lưỡi",
+        od: "Tới Φ406 (16 inch)",
+        id: "Trục hơi hoặc trục đặc",
+        thickness: "Lưỡi cắt ở cả hai phía",
+      },
+      {
+        spec: "Vòng cắt một rãnh",
+        od: "Theo bản vẽ",
+        id: "Trục hơi hoặc trục đặc",
+        thickness: "Một vị trí cố định",
+      },
+      {
+        spec: "Vòng đệm trơn",
+        od: "Theo bản vẽ",
+        id: "Trục hơi hoặc trục đặc",
+        thickness: "Không rãnh — định khoảng cách",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Việc chọn mác vật liệu cho vòng nhiều rãnh do mức độ mài mòn của vật liệu quyết định, bởi lưỡi rãnh mòn ở nơi vật liệu đi qua chứ không phải nơi dao va đập. Vòng lại là một thân lớn và tốn kém để bỏ đi, nên những mác cho phép mài lại nhiều lần thường có bài toán kinh tế tốt hơn.",
+      rows: [
+        {
+          grade: "Cr12MoV / SKD-11",
+          hardness: "HRC 58–62",
+          bestFor:
+            "Giấy, bìa và màng thông dụng — đặc tả tiêu chuẩn và cân bằng tốt nhất giữa tuổi thọ và khả năng mài lại",
+          tradeoff:
+            "Bị bản gắn mảnh hợp kim vượt qua trên vật liệu tráng phủ nặng hoặc nhiều phụ gia khoáng",
+        },
+        {
+          grade: "9CrSi / 65Mn",
+          hardness: "HRC 56–60",
+          bestFor:
+            "Vật liệu mềm không tráng, giấy tissue và tốc độ dây chuyền thấp hơn, nơi giá đơn vị quyết định",
+          tradeoff:
+            "Lưỡi rãnh tròn cạnh sớm hơn, nên khoảng cách giữa các lần mài lại sẽ ngắn hơn",
+        },
+        {
+          grade: "HSS",
+          hardness: "HRC 62–64",
+          bestFor:
+            "Tốc độ dây chuyền cao và lịch sản xuất hỗn hợp, nơi vòng phải giữ lưỡi qua các lô dài",
+          tradeoff:
+            "Đắt hơn thép dụng cụ; vẫn mòn trên vật liệu nhiều phụ gia khoáng",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 tại mảnh",
+          bestFor:
+            "Vật liệu mài mòn, tráng phủ, nhiều phụ gia và ép lớp, nơi rãnh thép dụng cụ mòn hết chỉ sau vài tuần",
+          tradeoff: "Giá cao nhất, và mảnh sẽ mẻ thay vì mòn nếu trục bị đảo",
+        },
+      ],
+      outro:
+        "Nếu bạn chưa chắc chắn, hãy gửi loại vật liệu và khoảng thời gian mài lại hiện tại của bạn, chúng tôi sẽ đưa ra khuyến nghị dựa trên mức tiêu hao thực tế của bạn thay vì một bảng chung chung.",
+    },
+    components: [
+      {
+        id: "one-ring-many-widths",
+        tag: "THỜI GIAN ĐỔI LỆNH",
+        title: "Một vòng, nhiều vị trí cắt",
+        description:
+          "Mỗi rãnh là một vị trí cắt sử dụng được, nên đổi khổ chỉ là đặt lại dao trên thay vì tháo trục và lắp lại bộ vòng đệm. Trên các dây chuyền thường xuyên đổi khổ đơn hàng, đây trước hết là sản phẩm về thời gian đổi lệnh, sau đó mới là vật tư tiêu hao.",
+      },
+      {
+        id: "ground-in-one-setup",
+        tag: "ĐỘ CHÍNH XÁC KÍCH THƯỚC",
+        title: "Toàn bộ rãnh được mài trong một lần gá",
+        description:
+          "Vị trí rãnh được mài vào một thân duy nhất trong một lần gá, nên khổ cắt không thể lệch như khi người vận hành lắp lại bộ vòng đệm sai một milimét. Lỗ lắp và độ đảo được giữ theo cùng một đặc tả trên vòng nhiều rãnh, vòng một rãnh và vòng trơn, để một trục hỗn hợp vẫn xếp chồng đúng tâm.",
+      },
+      {
+        id: "mounting-and-split",
+        tag: "PHƯƠNG ÁN LẮP ĐẶT",
+        title: "Trục hơi, trục đặc hoặc vòng chẻ",
+        description:
+          "Lỗ trơn kẹp lên trục hơi nở; kiểu vít hãm bắt lên trục dưới dạng đặc. Vòng chẻ hai mảnh tháo ra được mà không phải rã cụm trục, điều mà trên máy khổ rộng biến một lần dừng theo kế hoạch thành một lần thay khi máy vẫn chạy.",
+      },
+    ],
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+    ],
+    rfqPlaceholder:
+      "Ví dụ: máy cuộn lại Kampf, trục hơi nở, vòng dưới Φ180 × bản rộng 100 mm, 12 rãnh bước 25 mm, lưỡi đơn. Cắt bìa tráng 120 g/m², 8 đường cắt, đổi khổ hai lần mỗi tuần. Cần 4 vòng và 2 vòng đệm trơn.",
+    faqs: {
+      technical: [
+        {
+          question: "Dao dưới nhiều rãnh khác dao đe có rãnh ở điểm nào?",
+          answer:
+            "Ở quy mô và mục đích. Dao đe có rãnh là một đĩa mang một đến ba rãnh, được mài theo biên dạng cặp cắt trượt của hãng máy và dùng chủ yếu trên dây chuyền màng, lá kim loại và băng dính — xem trang dao đe dưới có rãnh của chúng tôi cho sản phẩm đó. Vòng nhiều rãnh là một thân rộng hơn nhiều mang nhiều rãnh song song, và điểm mấu chốt là một vòng bao phủ nhiều vị trí cắt nên việc đổi khổ không cần thay lại dụng cụ. Nếu bạn đổi khổ thường xuyên, bạn cần vòng; nếu bạn chạy một khổ theo biên dạng đe của hãng máy, bạn cần đe.",
+        },
+        {
+          question:
+            "Bạn thực sự mài được bước rãnh bao nhiêu, và tôi đặc tả thế nào?",
+          answer:
+            "Khoảng chia giữa các lưỡi — khoảng cách từ lưỡi cắt này sang lưỡi kế tiếp — hầu như luôn làm theo yêu cầu và có thể hẹp tới 5 mm (0,200 inch). Đừng đặc tả nó bằng một con số duy nhất: hãy gửi danh sách các khổ cắt bạn thực sự chạy, chúng tôi sẽ bố trí vị trí rãnh sao cho mọi khổ thông dụng của bạn đều rơi đúng vào một rãnh. Đó là khác biệt giữa một vòng bao phủ được lịch sản xuất của bạn và một vòng chỉ bao phủ một nửa rồi buộc bạn phải lắp bộ vòng đệm cho phần còn lại.",
+        },
+        {
+          question: "Tôi nên đặt lỗ trơn hay vít hãm?",
+          answer:
+            "Điều đó theo trục dưới của bạn, không theo sở thích. Lỗ trơn kẹp lên trục hơi nở và là phương án đổi nhanh có trên hầu hết dây chuyền gia công hiện đại. Kiểu vít hãm bắt lên trục dưới dạng đặc và phổ biến trên máy đời cũ và dây chuyền bìa nặng. Hai loại không thay thế cho nhau — đặc tả lỗ lắp khác nhau — nên một vòng khoét cho hệ sai sẽ không ngồi đúng tâm và sẽ biểu hiện thành độ đảo tại vết cắt. Nếu chưa chắc, hãy chụp ảnh đầu trục với các vòng đang lắp.",
+        },
+        {
+          question:
+            "Khổ cắt của tôi bắt đầu lệch dọc theo trục. Có phải do vòng dao không?",
+          answer:
+            "Hãy kiểm tra độ đảo và cách xếp chồng vòng trước khi xét đến rãnh. Vị trí rãnh được mài trong một lần gá và không dịch chuyển, nên một vòng đã chuẩn khi lắp hiếm khi là nguồn gốc của việc khổ lệch dần. Nguyên nhân thường gặp là lỗ lắp ngồi trên trục đã mòn hoặc bẩn, hoặc vòng của nhiều nhà cung cấp bị trộn trên cùng một trục với đặc tả lỗ và mặt đầu hơi khác nhau, khiến một dao động nhỏ tích lũy thành sai lệch khổ đo được. Lưỡi rãnh mòn biểu hiện bằng mép cắt xấu đi và bụi tăng lên, chứ không phải bằng lệch khổ.",
+        },
+      ],
+      company: [
+        {
+          question: "Bạn cần gì để báo giá?",
+          answer:
+            "Đường kính ngoài, lỗ lắp, bề rộng vòng, số rãnh và bước rãnh, loại trục (trục hơi nở hay trục đặc), đặc tả dao trên đi kèm, cùng loại vật liệu và tốc độ dây chuyền. Thông tin bổ sung hữu ích nhất là danh sách khổ sản xuất của bạn: nó cho phép chúng tôi bố trí vị trí rãnh theo lịch thực tế của bạn thay vì sao chép một bước rãnh. Bản vẽ hoặc một vòng đã mòn còn rút ngắn thêm việc báo giá; dựng lại kích thước từ mẫu là công việc thường ngày của chúng tôi.",
+        },
+        {
+          question:
+            "Bạn có cung cấp cả vòng một rãnh và vòng trơn hay chỉ vòng nhiều rãnh?",
+          answer:
+            "Cả ba, và chúng tôi khuyên nên mua cùng nhau. Vòng cắt một rãnh phụ trách các vị trí cố định, còn vòng trơn đóng vai trò đệm và đỡ vật liệu giữa các vị trí cắt. Vì được chế tạo theo cùng một đặc tả lỗ lắp và độ đảo, chúng xếp chồng mà không sinh dao động: trộn vòng của nhiều nhà cung cấp trên cùng một trục là nguyên nhân phổ biến và thực sự khó chẩn đoán gây sai lệch khổ cắt.",
+        },
+        {
+          question: "Có mài lại được không và mài được bao nhiêu lần?",
+          answer:
+            "Có, và mài lại là yếu tố trung tâm của bài toán kinh tế vì vòng là một thân lớn để bỏ đi. Số chu kỳ phụ thuộc vào chiều sâu rãnh và lượng vật liệu mỗi lần mài lấy đi; vòng thép dụng cụ thường cho vài chu kỳ trước khi hình học rãnh không còn khôi phục được. Chúng tôi mài lại vòng do chúng tôi chế tạo và trong hầu hết trường hợp cả vòng không phải của chúng tôi, miễn là thân vòng còn đúng tâm và lỗ lắp không hư hại — và chúng tôi sẽ nói thẳng khi một vòng không đáng để làm.",
+        },
+      ],
+    },
+  },
+  {
+    id: "slitter-rewinder-bottom-knives",
+    name: "Dao Dưới Cho Máy Cắt Cuộn Lại",
+    fullName:
+      "Dao dưới hợp kim cứng cho dây chuyền cắt và cuộn lại giấy và màng",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Dao Cắt Dọc",
+    image:
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+    badge: "Đánh Bóng Gương",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Dải dao dưới và vòng dao máy cắt cuộn lại ở bốn đường kính",
+      "Cặp dao dưới hợp kim cứng cho thấy lỗ lắp và các lỗ bắt vít",
+      "Vòng dao dưới máy cuộn lại với mặt làm việc đánh bóng gương",
+    ],
+    description:
+      "Dao dưới hợp kim cứng nguyên khối và gắn mảnh hợp kim cho máy cắt cuộn lại giấy tốc độ cao. Mặt đánh bóng gương, cắt không ba via và giảm bụi trong cuộn. Kích thước tồn kho Φ250–Φ254 mm, dày từ 15 đến 50 mm, lỗ lắp theo máy. Phù hợp Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban và các nền tảng cuộn lại điện khác.",
+    fullDescription:
+      "Dao dưới trên máy cắt cuộn lại là nửa cố định của cặp dao cắt trượt, và nó được làm cứng hơn một cách có chủ đích. Chênh lệch độ cứng giữa dao trên và dao dưới không phải ngẫu nhiên: đó chính là cơ chế giữ cho vết cắt sạch. Khi hai dao có độ cứng gần nhau, vùng cắt bị biến dạng thay vì được cắt trượt, và kết quả là mép cắt có ba via cùng bụi bị cuốn vào cuộn.\n\nDao dưới Sureay được cung cấp ở dạng hợp kim cứng vonfram nguyên khối và dạng gắn mảnh hợp kim, với mặt đánh bóng gương và lưỡi sắc, định vị chính xác. Ở bản gắn mảnh, hợp kim được cố định bằng quy trình lắp nóng có kiểm soát để các mảnh giữ chặt khi chạy tốc độ cao thay vì lỏng ra trong vận hành, và các mảnh mòn có thể thay mà không phải bỏ thân dao.\n\n## Vì sao bụi trong cuộn là vấn đề của dao dưới\n\nNgười vận hành thường truy bụi ở phía trước: bộ làm sạch màng, thanh khử tĩnh điện, hút bụi. Nguồn gốc thường lại nằm ở chính vết cắt. Dao dưới có lưỡi đã tròn cạnh hoặc mặt đã mất độ bóng sẽ ngừng cắt trượt và chuyển sang nghiền, và sợi giấy bị nghiền trở thành bụi lơ lửng cuốn thẳng vào cuộn, rồi xuất hiện như lỗi gia công hai công đoạn sau đó. Nếu bụi tăng dần chứ không phải xuất hiện sau khi đổi loại giấy, dao dưới là thứ cần kiểm tra đầu tiên.\n\n## Vật liệu theo nền vật liệu cắt\n\nHợp kim cứng vonfram nguyên khối là lựa chọn có tuổi thọ dài nhất và là câu trả lời đúng cho vật liệu mài mòn và tráng phủ nặng. Bản gắn mảnh cho cân bằng chi phí – tuổi thọ tốt nhất với giấy thông thường, kèm ưu điểm thực tế là gắn lại được mảnh. Thép gió vẫn hợp lý cho lô ngắn trên vật liệu mềm và khi cần giá đơn vị thấp nhất.\n\n## Ứng dụng\n\nGiấy, màng, lá kim loại và các vật liệu cuộn tương tự trên nền tảng cắt – cuộn lại chạy điện: cắt cuộn, gia công cuộn và các dây chuyền cuộn lại giấy tráng và không tráng, bìa và vật liệu mềm nhẹ.\n\n## Chênh lệch độ cứng chính là toàn bộ cơ chế\n\nMột vết cắt trượt cần chênh lệch độ cứng để vẫn là cắt trượt. Khi dao trên và dao dưới có độ cứng gần nhau, vật liệu ở vùng cắt bị biến dạng thay vì tách sạch, và kết quả là mép cắt có ba via cùng sợi bị nghiền trở thành bụi trong cuộn. Dao dưới cứng hơn giữ hình học lưỡi ổn định trong khi dao trên mềm hơn nhận phần mòn — đó cũng là lý do dao trên là dao phải thay thường xuyên hơn, và là lý do thay cả hai trong cùng một chu kỳ gây lãng phí dụng cụ còn dùng được. Làm cho hai độ cứng bằng nhau là sai sót đặc tả phổ biến và tốn kém, đáng kiểm tra trên bất kỳ dây chuyền nào có chất lượng cắt suy giảm sau khi thay dụng cụ.\n\n## Bụi trong cuộn thường bắt đầu từ vết cắt\n\nNgười vận hành truy bụi ở phía trước — bộ làm sạch màng, thanh khử tĩnh điện, hút bụi — trong khi nguồn gốc thường là chính vết cắt. Dao dưới có lưỡi tròn cạnh, hoặc mặt đã mờ độ bóng, ngừng cắt trượt và chuyển sang nghiền; sợi bị nghiền cuốn thẳng vào cuộn và xuất hiện như lỗi hai công đoạn sau. Dấu hiệu nằm ở thời điểm: bụi tăng dần chỉ về phía dao, bụi xuất hiện sau khi đổi loại giấy chỉ về phía vật liệu. Hãy soi lưỡi dưới kính lúp và kiểm tra độ bóng mặt dao thay vì thử độ sắc bằng tay, vì độ bóng mặt suy giảm trước lưỡi và làm tăng bụi từ rất lâu trước khi ai đó cho rằng dao đã cùn.\n\n## Hợp kim nguyên khối hay gắn mảnh\n\nHợp kim cứng vonfram nguyên khối cho tuổi thọ dài nhất trên một con dao và là câu trả lời đúng cho vật liệu mài mòn và tráng phủ nặng, nhưng khi lưỡi hết thì con dao cũng hết. Bản gắn mảnh rẻ hơn, mỗi chu kỳ ngắn hơn và gắn lại được: miễn là thân dao thẳng, không đảo và các bệ hàn còn tốt, mảnh mòn được thay và dao trở lại làm việc. Khả năng gắn lại mảnh thường là yếu tố quyết định khi bài toán kinh tế giữa hai bên sát nhau. Ở bản gắn mảnh, các mảnh được lắp nóng trong điều kiện kiểm soát để giữ chặt ở tốc độ cuộn lại thay vì lỏng ra trong vận hành — thứ giới hạn tuổi thọ của một con dao gắn mảnh làm kém là chất lượng mối hàn, không phải mác hợp kim.\n\n## Chúng tôi cần gì để khớp với máy của bạn\n\nDao dưới luôn được chế tạo theo máy, nên danh sách nền tảng cuộn lại nêu trên là những gì chúng tôi gặp nhiều nhất, không phải giới hạn. Để báo giá, hãy gửi đường kính ngoài, lỗ lắp và độ dày của con dao bạn đang dùng, đặc tả dao trên tương ứng, vật liệu bạn đang cắt, tốc độ dây chuyền và số đường cắt. Nếu thiếu thông tin nào, hãy gửi con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình — chúng tôi thà dựng lại kích thước từ mẫu còn hơn báo giá dựa trên phỏng đoán. Dao được đóng gói riêng từng con, bảo vệ lưỡi và giấy VCI chống ăn mòn, đóng thùng gỗ với đường kính lớn, bởi một con dao dưới đến nơi với lưỡi bị sứt là vô dụng dù được chế tạo tốt đến đâu.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    disambiguation:
+      "Đây là dao dưới dạng đĩa tròn làm việc thành cặp cắt trượt với dao trên trên dây chuyền cuộn lại. Nếu bạn cần đe phẳng để cắt ép, xem [Dao Đe Dưới Có Rãnh](/products/bottom-grooved-anvil-knives).",
+    compatibleMachines: [
+      "Beck",
+      "Bielomatik",
+      "Clark Aiken",
+      "DATM",
+      "Didde",
+      "ECH Will",
+      "Harris",
+      "Hamblett",
+      "Jagenberg",
+      "Langston",
+      "Lenox",
+      "Maxson",
+      "Miltex",
+      "Masson Scott",
+      "Pasaban",
+    ],
+    specs: [
+      {
+        label: "Vật liệu",
+        value: "Hợp kim cứng vonfram nguyên khối / gắn mảnh hợp kim / thép gió",
+      },
+      {
+        label: "Đường kính ngoài",
+        value: "Φ250–Φ254 mm tiêu chuẩn",
+      },
+      {
+        label: "Độ dày",
+        value: "15 / 20 / 25 / 50 mm",
+      },
+      {
+        label: "Hoàn thiện bề mặt",
+        value: "Đánh bóng gương",
+      },
+      {
+        label: "Nguyên tắc thiết kế",
+        value: "Dao dưới cứng hơn dao trên — kiểm soát ba via và bụi",
+      },
+      {
+        label: "Vật liệu cắt",
+        value: "Giấy, màng, lá kim loại và các vật liệu cuộn tương tự",
+      },
+    ],
+    dimensionLabels: {
+      col0: "STT",
+      col1: "ĐK ngoài ØD (mm)",
+      col2: "Lỗ lắp Ød (mm)",
+      col3: "Độ dày T (mm)",
+      caption:
+        "* Kích thước dao dưới tiêu chuẩn cho máy cuộn lại. Lỗ lắp, độ dày và hình học lưỡi được khớp theo máy — hãy gửi ĐK ngoài / ĐK trong / độ dày của con dao bạn đang dùng cùng đặc tả dao trên tương ứng.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "25",
+      },
+      {
+        spec: "2",
+        od: "Φ254",
+        id: "Φ195",
+        thickness: "50",
+      },
+      {
+        spec: "3",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "15",
+      },
+      {
+        spec: "4",
+        od: "Φ250",
+        id: "Φ140",
+        thickness: "20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Dao dưới luôn phải là nửa cứng hơn của cặp dao. Trong nguyên tắc đó, mác vật liệu được chọn theo mức độ mài mòn của vật liệu cắt và theo việc bạn có muốn thân dao gắn lại được mảnh hay không.",
+      rows: [
+        {
+          grade: "Hợp kim cứng vonfram nguyên khối",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Vật liệu mài mòn và tráng phủ nặng; khoảng thời gian giữa hai lần thay dài nhất",
+          tradeoff: "Giá đơn vị cao nhất, và bỏ cả con dao khi lưỡi đã hết",
+        },
+        {
+          grade: "Gắn mảnh hợp kim",
+          hardness: "HRA 89–91 tại mảnh",
+          bestFor:
+            "Giấy và bìa thông thường — cân bằng chi phí – tuổi thọ tốt nhất, gắn lại được mảnh",
+          tradeoff:
+            "Chất lượng mối hàn quyết định tuổi thọ; mảnh lắp kém sẽ lỏng khi chạy tốc độ",
+        },
+        {
+          grade: "Thép gió",
+          hardness: "62–64 HRC",
+          bestFor: "Lô ngắn, vật liệu mềm không tráng, giá đơn vị thấp nhất",
+          tradeoff:
+            "Lưỡi tròn cạnh nhanh ở tốc độ cuộn lại, và đó là nơi bụi trong cuộn bắt đầu",
+        },
+      ],
+      outro:
+        "Dù chọn mác nào, hãy giữ chênh lệch độ cứng với dao trên. Làm hai độ cứng bằng nhau là sai sót phổ biến và tốn kém: nó triệt tiêu cắt trượt và để bạn nghiền màng vật liệu.",
+    },
+    components: [
+      {
+        id: "hardness-differential",
+        tag: "CƠ HỌC CẮT TRƯỢT",
+        title: "Cố ý cứng hơn dao trên",
+        description:
+          "Dao dưới được đặc tả cứng hơn dao trên đi kèm một cách có chủ đích. Chênh lệch đó giữ cho cặp dao cắt trượt thay vì làm biến dạng màng vật liệu, và là nguyên nhân trực tiếp của mép cắt không ba via và lượng bụi cuốn vào cuộn thấp.",
+      },
+      {
+        id: "mirror-face-finish",
+        tag: "HOÀN THIỆN BỀ MẶT",
+        title: "Mặt làm việc đánh bóng gương",
+        description:
+          "Mặt được đánh bóng nhả vật liệu thay vì kéo lê nó, giúp vết cắt sạch và giảm nhiệt ma sát tại chỗ cắt. Độ bóng mặt là thứ suy giảm sớm nhất trong vận hành và là thứ người vận hành kiểm tra muộn nhất — mặt bị mờ làm tăng bụi từ rất lâu trước khi lưỡi thực sự mòn.",
+      },
+      {
+        id: "hot-set-carbide",
+        tag: "KẾT CẤU",
+        title: "Mảnh hợp kim lắp nóng có kiểm soát",
+        description:
+          "Ở bản gắn mảnh, các mảnh được lắp nóng trong điều kiện kiểm soát để giữ chặt khi chạy tốc độ cao. Lợi ích thực tế là thân dao gắn lại được: mảnh mòn được thay và dao trở lại làm việc thay vì bị bỏ đi.",
+      },
+    ],
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Ví dụ: máy cuộn lại Jagenberg, dao dưới Φ250 × Φ188 × 25 mm, ghép với dao trên Φ200. Cắt giấy tráng 120 g/m² ở 800 m/phút, 12 đường cắt. Có bụi trong cuộn và mép cắt hơi ba via.",
+    faqs: {
+      technical: [
+        {
+          question: "Vì sao dao dưới phải cứng hơn dao trên?",
+          answer:
+            "Vì một vết cắt trượt cần chênh lệch độ cứng để vẫn là cắt trượt. Khi hai dao có độ cứng gần nhau, vật liệu ở vùng cắt bị biến dạng thay vì tách sạch, và bạn nhận được mép cắt có ba via cùng sợi bị nghiền trở thành bụi trong cuộn. Dao dưới cứng hơn giữ hình học lưỡi ổn định trong khi dao trên mềm hơn nhận phần mòn — đó cũng là lý do dao trên phải thay thường xuyên hơn. Làm hai độ cứng bằng nhau là sai sót phổ biến và tốn kém.",
+        },
+        {
+          question:
+            "Tôi bị bụi trong cuộn thành phẩm. Nên kiểm tra ở đâu trước?",
+          answer:
+            "Ở chính vết cắt, trước khi xét bộ làm sạch màng và thanh khử tĩnh điện. Dao dưới có lưỡi tròn cạnh hoặc mặt mờ độ bóng ngừng cắt trượt và chuyển sang nghiền, và sợi bị nghiền đi thẳng vào cuộn — thường xuất hiện như lỗi hai công đoạn sau. Dấu hiệu nằm ở thời điểm: bụi tăng dần chỉ về phía dao, bụi xuất hiện sau khi đổi loại giấy chỉ về phía vật liệu. Hãy soi lưỡi dưới kính lúp và kiểm tra độ bóng mặt dao, không chỉ thử độ sắc bằng tay.",
+        },
+        {
+          question: "Tôi có thể đặt dao dưới mà không thay dao trên không?",
+          answer:
+            "Có, và đó là cách mua thông thường. Dao dưới thường bền hơn dao trên rất nhiều, nên thay cả hai theo cùng chu kỳ là lãng phí dụng cụ còn dùng được. Hãy cho chúng tôi ĐK ngoài / ĐK trong / độ dày của dao dưới và đặc tả dao trên tương ứng, chúng tôi sẽ khớp hình học ăn khớp và chênh lệch độ cứng với những gì bạn đang chạy.",
+        },
+        {
+          question: "Dao gắn mảnh đã mòn có gắn lại mảnh được không?",
+          answer:
+            "Được, miễn là thân dao thẳng, không đảo và các bệ hàn còn tốt. Gắn lại mảnh rẻ hơn đáng kể so với dao mới và là lý do chọn bản gắn mảnh thay vì hợp kim nguyên khối khi bài toán kinh tế sát nhau. Hợp kim nguyên khối không gắn lại được — khi lưỡi hết thì con dao cũng hết, đó là đánh đổi bạn chấp nhận để có tuổi thọ dài nhất trên một con dao.",
+        },
+      ],
+      company: [
+        {
+          question: "Bạn cần gì để báo giá một con dao dưới?",
+          answer:
+            "Đường kính ngoài, lỗ lắp và độ dày của con dao bạn đang dùng, đặc tả dao trên tương ứng, vật liệu bạn đang cắt, tốc độ dây chuyền và số đường cắt. Nếu thiếu thông tin nào, hãy gửi con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình — chúng tôi thà dựng lại kích thước từ mẫu còn hơn báo giá dựa trên phỏng đoán.",
+        },
+        {
+          question:
+            "Bạn có cung cấp cho các hãng máy cuộn lại không có trong danh sách này không?",
+          answer:
+            "Có. Các nền tảng liệt kê là những gì chúng tôi gặp nhiều nhất, không phải giới hạn — dao dưới luôn được chế tạo theo máy. Bất kỳ máy cắt cuộn lại chạy điện nào cũng nằm trong phạm vi khi chúng tôi có kích thước lắp đặt và đặc tả dao trên tương ứng.",
+        },
+        {
+          question: "Chúng được đóng gói như thế nào?",
+          answer:
+            "Riêng từng con, bảo vệ lưỡi và giấy VCI chống ăn mòn, đóng trong thùng gỗ vừa khít với đường kính lớn. Dao dưới đến nơi với lưỡi bị sứt là vô dụng bất kể được chế tạo thế nào, nên quy cách đóng gói được đặc tả cho quá trình vận chuyển chứ không phải cho việc lưu kho.",
+        },
+      ],
+    },
+  },
+  {
+    id: "box-slotting-knives",
+    name: "Dao Xẻ Rãnh Hộp",
+    fullName: "Dao xẻ rãnh hợp kim cứng chính xác cho hộp cứng và hộp quà",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Dao Bao Bì & Bìa Carton",
+    image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+    badge: "Cặp Trái / Phải",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Sáu dao xẻ rãnh hợp kim cứng xếp hình quạt thể hiện dải chiều dài và chiều rộng tồn kho",
+      "Cặp dao xẻ rãnh hợp kim cứng cho thấy vát xẻ rãnh đã mài",
+      "Dao xẻ rãnh trong hộp bảo vệ có nhãn bên cạnh hai con dao rời",
+    ],
+    description:
+      "Dao xẻ rãnh hợp kim cứng để xẻ rãnh chữ V trên bìa xám cho dây chuyền hộp cứng và hộp quà. Cung cấp theo cặp trái và phải ở năm kích thước tồn kho từ 50 × 12 mm đến 60 × 15 mm, dày 2,0 / 2,2 mm, theo mác hợp kim GS05U (tối ưu chống mòn) và GS20U (dai). Rãnh sạch không làm rách hay xơ mặt bìa, điều chỉnh được theo độ dày bìa.",
+    fullDescription:
+      "Một chiếc hộp cứng chỉ tốt ngang với đường rãnh của nó. Rãnh chữ V xẻ vào bìa xám quyết định cách bìa gấp, và một rãnh làm rách hoặc xơ lớp mặt sẽ hiện lên qua lớp bọc như một lỗi nhìn thấy được trên sản phẩm được mua chính vì nó trông sang trọng. Với hộp quà và hộp cao cấp, không có dung sai chấp nhận được cho một đường rãnh nham nhở.\n\nDao xẻ rãnh Sureay được mài từ hợp kim cứng vonfram cao cấp và cung cấp theo cặp trái – phải đã ghép, bởi đó là cách chúng cắt. Hai con dao cùng nhau tạo nên hai thành rãnh; cho một dao mới làm việc với một dao đã mòn sẽ tạo ra rãnh không đối xứng khiến bìa gấp lệch vuông, và đó là lý do chúng tôi báo giá và giao hàng theo cặp chứ không theo con.\n\n## Hai mác vật liệu, một quyết định\n\nGS05U là mác cứng hơn, tối ưu chống mòn, và là lựa chọn đúng cho bìa xám tiêu chuẩn ở lô sản xuất dài. GS20U đánh đổi một phần độ cứng lấy độ dai và là mác dành cho bìa dày và bìa tái chế có lẫn tạp chất — cùng một sự phân biệt xuyên suốt mọi ứng dụng hợp kim cứng, ở đây được diễn đạt theo ngôn ngữ bìa carton. Chọn GS05U cho bìa tái chế có lẫn sạn là cách phổ biến nhất khiến những con dao này bị mẻ.\n\n## Điều chỉnh theo độ dày bìa\n\nKhe hở giữa hai dao được đặt theo loại bìa đang chạy, nên một cặp bao phủ được một dải độ dày thay vì bị khóa ở một giá trị duy nhất. Trên thực tế, một dây chuyền hộp cứng chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn là bề rộng rãnh nằm trong dải.\n\n## Ứng dụng\n\nXẻ rãnh chữ V trên bìa xám cho dây chuyền hộp cứng và hộp quà: bao bì cao cấp, hộp mỹ phẩm và rượu mạnh, hộp trưng bày, bìa bìa cứng đóng sách và hộp carton cứng tiêu chuẩn.\n\n## Vì sao chúng tôi báo giá theo cặp\n\nHai con dao cùng nhau tạo nên hai thành rãnh, nên chúng được mài, ghép và giao theo cặp, và phải được thay cùng nhau. Cho một dao mới làm việc với một dao đã mòn sẽ xẻ ra rãnh không đối xứng, và rãnh không đối xứng khiến bìa gấp lệch vuông — một lỗi hiện lên qua lớp bọc đúng trên những sản phẩm ít có khả năng chịu đựng điều đó nhất. Thay một con dao đơn lẻ thường còn là một chẩn đoán bị bỏ sót: một con dao hỏng sớm đơn lẻ thường có nghĩa là va phải tạp chất hoặc lỗi căn chỉnh, và cả hai sẽ lặp lại với con dao thay thế. Hãy cho chúng tôi biết dây chuyền có bao nhiêu trạm xẻ rãnh và bạn dùng hết bao nhiêu cặp trong một tháng điển hình, chúng tôi sẽ báo giá theo lịch cung cấp thay vì một lô lẻ, bởi hầu hết dây chuyền hộp cứng được phục vụ tốt hơn bằng đơn hàng khung so với việc đặt hàng khi cặp cuối cùng hỏng.\n\n## GS05U hay GS20U — quyết định theo bìa, không theo độ dài lô\n\nGS05U cứng hơn và mòn chậm hơn, khiến nó phù hợp với bìa xám nguyên sinh sạch. GS20U đánh đổi độ cứng lấy độ dai và chịu được tạp chất, khiến nó phù hợp với bìa dày và nguyên liệu tái chế. Cơ chế hỏng khác nhau và đó là toàn bộ quyết định: dao mòn được mài lại và trở lại làm việc, dao mẻ bị bỏ. Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường rẻ hơn tính theo cả năm, dù đo được độ cứng thấp hơn và cho tuổi thọ lưỡi ngắn hơn trong thử nghiệm trên bìa sạch. Chọn mác cứng nhất có sẵn cho bìa nhiễm bẩn là cách phổ biến nhất phá hỏng những con dao này.\n\n## Rãnh bị xơ: do lưỡi hay do căn chỉnh\n\nThành rãnh bị xơ là dấu hiệu của một lưỡi đã ngừng cắt đứt sợi và bắt đầu đẩy sợi. Hãy kiểm tra lưỡi trước. Nếu lưỡi vẫn còn sắc, hãy xem khe hở giữa hai dao so với độ dày bìa: quá rộng thì bìa bị xé toạc thay vì được cắt, quá hẹp thì lớp mặt bị nghiền. Thời điểm phân biệt hai nguyên nhân một cách đáng tin cậy: lỗi căn chỉnh xuất hiện ngay sau khi đổi lệnh sản xuất, lỗi lưỡi xuất hiện dần trong suốt lô. Vì khe hở được đặt theo bìa chứ không cố định, một cặp bao phủ được một dải độ dày, nên dây chuyền chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn bề rộng rãnh vẫn trong dải.\n\n## Kích thước và máy ngoài danh sách\n\nNăm kích thước tồn kho là những kích thước được đặt nhiều nhất, không phải giới hạn — chiều dài, chiều rộng và hình học lưỡi được chế tạo theo bản vẽ, và bất kỳ dây chuyền xẻ rãnh chữ V trên bìa xám hay xẻ rãnh hộp cứng nào cũng nằm trong phạm vi khi chúng tôi có hình học con dao. Nếu bạn không có bản vẽ, hãy gửi một con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình và chúng tôi sẽ trả lại bản vẽ có kích thước để duyệt trước khi chế tạo. Chúng tôi thà làm việc trên dụng cụ thực tế của bạn còn hơn dựa trên một tuyên bố tương thích. Kích thước tồn kho thường giao trong vài ngày làm việc; hình học theo bản vẽ mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ, và đơn hàng lặp lại theo bản vẽ đã duyệt được báo giá ngay trong ngày.",
+    link: "/products/box-slotting-knives",
+    specs: [
+      {
+        label: "Vật liệu",
+        value: "Hợp kim cứng vonfram cao cấp",
+      },
+      {
+        label: "Mác vật liệu",
+        value: "GS05U (chống mòn) / GS20U (độ dai)",
+      },
+      {
+        label: "Chiều dài",
+        value: "50 / 60 mm",
+      },
+      {
+        label: "Chiều rộng",
+        value: "12 / 15 / 16 mm",
+      },
+      {
+        label: "Độ dày",
+        value: "2,0 / 2,2 mm",
+      },
+      {
+        label: "Hình thức cung cấp",
+        value: "Cặp trái và phải đã ghép",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Xẻ rãnh chữ V trên bìa xám cho dây chuyền hộp cứng và hộp quà",
+      },
+    ],
+    dimensionLabels: {
+      col0: "STT",
+      col1: "D × R (mm)",
+      col2: "Độ dày T (mm)",
+      caption:
+        "* Năm kích thước tồn kho, cung cấp theo cặp trái và phải. Các chiều dài, chiều rộng và hình học lưỡi khác được chế tạo theo bản vẽ hoặc dựng lại từ một con dao đã mòn.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "50 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "2",
+        od: "50 × 15",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "3",
+        od: "50 × 16",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "4",
+        od: "60 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "5",
+        od: "60 × 15",
+        id: "2 / 2.2",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Với dao xẻ rãnh, quyết định về mác vật liệu là chống mòn đối lại độ dai, và chính loại bìa cho bạn biết cần loại nào. Bìa xám nguyên sinh sạch làm mòn lưỡi; bìa tái chế có tạp chất làm mẻ lưỡi.",
+      rows: [
+        {
+          grade: "GS05U",
+          hardness: "Độ cứng cao hơn, tối ưu chống mòn",
+          bestFor:
+            "Bìa xám nguyên sinh tiêu chuẩn ở lô sản xuất dài — mác mặc định",
+          tradeoff:
+            "Kém khoan dung với tạp chất; mẻ thay vì mòn nếu bìa bị nhiễm bẩn",
+        },
+        {
+          grade: "GS20U",
+          hardness: "Độ dai cao hơn",
+          bestFor: "Bìa dày và bìa tái chế có lẫn sạn hoặc tạp chất khác",
+          tradeoff: "Tuổi thọ lưỡi trên bìa sạch ngắn hơn GS05U",
+        },
+      ],
+      outro:
+        "Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường thắng về tổng chi phí dù thua về tuổi thọ lưỡi: dao mẻ bị bỏ, dao mòn được mài lại.",
+    },
+    components: [
+      {
+        id: "matched-pairs",
+        tag: "HÌNH THỨC CUNG CẤP",
+        title: "Trái và phải cung cấp theo cặp",
+        description:
+          "Hai con dao cùng nhau tạo nên hai thành rãnh, nên chúng được mài, ghép và giao theo cặp. Cho một dao mới làm việc với một dao đã mòn tạo ra rãnh không đối xứng khiến bìa gấp lệch vuông — một lỗi hiện lên qua lớp bọc đúng trên những sản phẩm ít có khả năng chịu đựng nhất.",
+      },
+      {
+        id: "clean-groove-edge",
+        tag: "CHẤT LƯỢNG BỀ MẶT",
+        title: "Rãnh không làm rách lớp mặt",
+        description:
+          "Hình học lưỡi được mài để cắt đứt sợi bìa xám thay vì đẩy sợi, nhờ đó thành rãnh giữ được sự sạch sẽ và lớp mặt không bị xơ. Với hộp cứng và hộp quà, đường rãnh tạo nên khác biệt giữa một nếp gấp trông như được gia công và một nếp gấp trông như bị hỏng.",
+      },
+      {
+        id: "adjustable-gap",
+        tag: "TÍNH LINH HOẠT QUY TRÌNH",
+        title: "Điều chỉnh theo độ dày bìa",
+        description:
+          "Khe hở giữa hai dao được đặt theo loại bìa đang chạy, nên một cặp bao phủ được một dải độ dày thay vì bị khóa ở một giá trị. Dây chuyền chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn bề rộng rãnh vẫn trong dải.",
+      },
+    ],
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "tungsten-carbide-slitter-knives",
+      "paper-straw-slitting-blades",
+    ],
+    rfqPlaceholder:
+      "Ví dụ: dây chuyền xẻ rãnh chữ V cho hộp cứng, dao 50 × 15 × 2,2 mm trái và phải. Chạy bìa xám 2 mm, một phần tái chế. Bề rộng rãnh 2 mm. Cần 10 cặp và một khuyến nghị về mác vật liệu.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Tôi có thể chỉ thay một con dao trong cặp khi chỉ một con bị mòn không?",
+          answer:
+            "Bạn có thể, nhưng thường là tiết kiệm giả. Hai con dao cùng nhau tạo nên hai thành rãnh, nên một dao mới làm việc với một dao đã mòn sẽ xẻ rãnh không đối xứng và bìa gấp lệch vuông. Với hộp cứng và hộp quà, điều đó hiện lên qua lớp bọc. Nếu một con dao trong cặp hỏng sớm, đáng để tìm hiểu vì sao: hỏng sớm đơn lẻ thường nghĩa là va phải tạp chất hoặc lỗi căn chỉnh, và cả hai sẽ lặp lại với con dao thay thế.",
+        },
+        {
+          question: "GS05U hay GS20U — chọn thế nào?",
+          answer:
+            "Theo thứ có trong bìa, không theo độ dài lô. GS05U cứng hơn và mòn chậm hơn, khiến nó là mác đúng cho bìa xám nguyên sinh sạch. GS20U dai hơn và chịu được tạp chất, khiến nó là mác đúng cho bìa dày và nguyên liệu tái chế. Cơ chế hỏng khác nhau và đó là toàn bộ quyết định: dao mòn được mài lại và trở lại làm việc, dao mẻ bị bỏ. Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường rẻ hơn tính theo cả năm.",
+        },
+        {
+          question: "Rãnh của tôi bị xơ ở lớp mặt. Là do dao hay do căn chỉnh?",
+          answer:
+            "Kiểm tra lưỡi trước. Thành rãnh bị xơ là dấu hiệu của một lưỡi đã ngừng cắt đứt sợi và bắt đầu đẩy sợi — cùng một dạng hỏng thể hiện thành vết cắt xù lông trong mọi ứng dụng bìa carton. Nếu lưỡi vẫn sắc, hãy xem khe hở giữa hai dao so với độ dày bìa: quá rộng thì bìa bị xé toạc thay vì được cắt, quá hẹp thì lớp mặt bị nghiền. Lỗi căn chỉnh thường xuất hiện ngay sau khi đổi lệnh sản xuất, lỗi lưỡi xuất hiện dần dần.",
+        },
+        {
+          question:
+            "Bạn có chế tạo được chiều dài khác ngoài 50 và 60 mm không?",
+          answer:
+            "Có. Các kích thước tồn kho là những kích thước được đặt nhiều nhất, không phải giới hạn — chiều dài, chiều rộng và hình học lưỡi được chế tạo theo bản vẽ. Nếu bạn không có bản vẽ, hãy gửi một con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình và chúng tôi sẽ lập bản vẽ có kích thước để bạn duyệt trước khi chế tạo.",
+        },
+      ],
+      company: [
+        {
+          question: "Báo giá theo con dao hay theo cặp?",
+          answer:
+            "Theo cặp, vì đó là cách chúng cắt và cách chúng nên được thay. Hãy cho chúng tôi biết dây chuyền có bao nhiêu trạm xẻ rãnh và bạn dùng hết bao nhiêu cặp trong một tháng điển hình, chúng tôi sẽ báo giá theo lịch cung cấp thay vì một lô lẻ — hầu hết dây chuyền hộp cứng được phục vụ tốt hơn bằng đơn hàng khung so với việc đặt hàng khi cặp cuối cùng hỏng.",
+        },
+        {
+          question: "Bạn cung cấp cho những máy xẻ rãnh nào?",
+          answer:
+            "Dao được chế tạo theo máy, nên bất kỳ dây chuyền xẻ rãnh chữ V trên bìa xám hay xẻ rãnh hộp cứng nào cũng nằm trong phạm vi khi chúng tôi có hình học con dao. Hãy gửi hãng và model máy cùng kích thước những con dao bạn đang dùng — hoặc một mẫu đã mòn — và chúng tôi sẽ làm khớp. Chúng tôi thà làm việc trên dụng cụ thực tế của bạn còn hơn dựa trên một tuyên bố tương thích.",
+        },
+        {
+          question: "Thời gian giao hàng là bao lâu?",
+          answer:
+            "Kích thước tồn kho thường giao trong vài ngày làm việc kể từ khi xác nhận đơn hàng. Hình học theo bản vẽ mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ. Đơn hàng lặp lại theo bản vẽ đã duyệt được báo giá ngay trong ngày, vì hình học được lưu hồ sơ.",
+        },
+      ],
+    },
+  },
+  {
+    id: "paper-straw-slitting-blades",
+    name: "Dao Cắt Ống Hút Giấy Và Que Lọc",
+    fullName: "Dao tròn hợp kim cứng cho ống hút giấy và que lọc",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Dao Cắt Dọc",
+    image:
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+    badge: "Phủ Chống Dính",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
+    ],
+    galleryAlts: [
+      "Dao tròn hợp kim cứng để cắt ống hút giấy và que lọc, toàn mặt và lỗ tâm",
+      "Cặp dao tròn hợp kim cứng để cắt ống hút giấy, mặt dao và lỗ tâm",
+      "Cận cảnh mặt đánh bóng gương và lưỡi cắt của dao cắt ống hút giấy",
+    ],
+    description:
+      "Dao tròn hợp kim cứng phủ chống dính để cắt ống hút giấy và que lọc. Đường kính ngoài Φ88–Φ100, dày 0,15–0,30 mm, sáu kích thước tồn kho. Lớp phủ chống dính kháng lại sự tích tụ keo gốc nước, nhờ đó mép cắt giữ được độ vuông và không xơ suốt các lô dài trên máy làm ống hút và que lọc tốc độ cao.",
+    fullDescription:
+      "Trên dây chuyền ống hút giấy, dao thường không hỏng vì mòn. Nó hỏng vì bám keo. Keo gốc nước bám sang mặt dao, tích thành gờ dọc lưỡi cắt, và từ thời điểm đó dao ngừng cắt ống mà bắt đầu kéo ống — và đó chính xác là đầu ống hút bị xơ. Độ sắc không phải là biến số giải quyết chuyện này.\n\nĐó là lý do những con dao này được đặc tả quanh khả năng nhả keo chứ không chỉ quanh độ cứng. Nền hợp kim cứng giữ lưỡi; lớp phủ chống dính giữ cho mặt dao sạch để lưỡi có thể tiếp tục làm việc. Trên dây chuyền chạy keo gốc nước, lớp phủ đóng góp cho chất lượng cắt nhiều hơn một điểm độ cứng nữa.\n\n## Dây chuyền ống hút không phải dây chuyền que lọc\n\nHai ứng dụng có chung nguồn gốc máy móc và hình học dao, nhưng không chung điều kiện hỏng. Cắt que lọc trên máy thuốc lá chạy ở tốc độ rất cao trên một vật liệu đồng nhất, đã được nghiên cứu kỹ. Dây chuyền ống hút giấy mới hơn, chạy dải số lớp và định lượng giấy rộng hơn, và dùng keo khác nhau giữa các nhà sản xuất — nên tuổi thọ dao trên dây chuyền ống hút nhạy với keo hơn nhiều so với với giấy. Nếu bạn đang chạy thử một dây chuyền ống hút mới, hãy chuẩn bị tinh chỉnh đặc tả dao theo keo của bạn chứ không theo giấy.\n\n## Dao mỏng, hệ quả thật\n\nỞ mức 0,15 đến 0,30 mm, đây là những con dao mỏng, và độ dày là một quyết định công nghệ. Dao mỏng hơn lấy đi ít vật liệu hơn và để lại đầu cắt vuông hơn trên ống thành mỏng; dao dày hơn ổn định hơn ở tốc độ cao và khoan dung hơn với máy bị đảo. Chọn sai ở đây biểu hiện thành đầu cắt nham nhở hoặc dao bị võng và trượt hướng.\n\n## Ứng dụng\n\nMáy cuốn và cắt ống hút giấy; máy làm que lọc thuốc lá, bao gồm các nền tảng Hauni; cắt ống và lõi giấy trên thiết bị gia công tốc độ cao tương đương.\n\n## Chẩn đoán đầu ống hút bị xơ\n\nNếu đầu ống bị xơ trong khi lưỡi vẫn còn cảm giác sắc, nguyên nhân gần như luôn là bám keo chứ không phải mòn. Keo gốc nước bám sang mặt dao và tích thành gờ dọc lưỡi cắt; qua điểm đó dao kéo ống thay vì cắt đứt, và ống bị kéo sẽ xơ. Lưỡi nằm bên dưới có thể vẫn hoàn toàn dùng được. Hãy lau mặt dao và soi dưới ánh sáng trước khi thay dao: nếu thấy rõ lớp bám, câu trả lời là lớp phủ hoặc chu kỳ vệ sinh, không phải một con dao sắc hơn. Xử lý việc này như vấn đề độ sắc là cách điển hình khiến một dây chuyền ống hút tiêu tốn những con dao lẽ ra không cần thay.\n\n## Độ dày là một lựa chọn công nghệ\n\nỞ mức 0,15 đến 0,30 mm, độ dày không phải kích thước thừa. Dao mỏng hơn lấy đi ít vật liệu hơn và cho đầu cắt vuông hơn trên ống hút thành mỏng, ít lớp, và đó là lý do nó được chọn cho ống hút cao cấp. Dao dày hơn cứng vững hơn, chạy ổn định hơn ở tốc độ cao và chịu được độ đảo trục chính, khiến nó an toàn hơn trên máy đời cũ hoặc ống nhiều lớp dày hơn. Chọn sai tạo ra hoặc đầu cắt nham nhở hoặc dao võng và trượt hướng, và hai lỗi này không giống nhau chút nào — hãy cho chúng tôi biết số lớp, định lượng và loại máy, chúng tôi sẽ khuyến nghị thay vì để bạn đoán.\n\n## Di sản que lọc, thực tế ống hút\n\nNhiều dây chuyền ống hút được xây trên máy làm que lọc, và hình học dao thường thay thế được nhau về kích thước. Thứ không chuyển giao được là logic đặc tả. Cắt que lọc chạy ở tốc độ rất cao trên vật liệu đồng nhất; dây chuyền ống hút chạy giấy đa dạng và, quan trọng hơn, keo đa dạng. Một con dao chạy tốt trên máy que lọc Hauni có thể bị bết keo chỉ sau vài giờ trên dây chuyền ống hút dùng loại keo khác. Hãy đặc tả theo keo, không theo nguồn gốc máy — keo là thông tin hữu ích nhất bạn có thể cung cấp cho chúng tôi ở ứng dụng này, và cũng là thứ hầu hết người mua bỏ sót.\n\n## Lớp phủ, mài lại và chạy thử dây chuyền mới\n\nLớp phủ chống dính là một lớp bề mặt, và mài lưỡi sẽ lấy đi lớp phủ đúng ở nơi nó quan trọng nhất, nên dao có phủ loại này được dùng đến hết tuổi thọ rồi thay chứ không đưa vào chu kỳ mài lại. Nếu bài toán kinh tế của bạn nghiêng về mài lại, chúng tôi sẽ báo giá hợp kim cứng không phủ và bạn chấp nhận đánh đổi bằng việc vệ sinh mặt dao thường xuyên hơn. Trên dây chuyền còn đang chạy thử, bước đầu hữu ích là một lô thử nhỏ với hai đặc tả — thường là một con dao có phủ và một độ dày khác — chạy thực tế với keo và giấy của bạn. Hai tuần như vậy cho biết nhiều hơn mọi so sánh trên tài liệu kỹ thuật, và định đúng ngay từ đầu đặc tả cho đơn hàng định kỳ. Kích thước tồn kho thường giao trong vài ngày làm việc; đường kính, lỗ lắp và độ dày theo yêu cầu mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ, cộng thêm vài ngày cho chu trình phủ.",
+    link: "/products/paper-straw-slitting-blades",
+    introNote:
+      "Sản xuất ống hút giấy hiện chiếm phần lớn nhu cầu đối với những con dao này. Nếu dây chuyền của bạn dùng keo gốc nước, hãy cho chúng tôi biết loại keo nào: nó dự đoán tuổi thọ dao ở ứng dụng này tốt hơn đặc tả giấy.",
+    compatibleMachines: ["Hauni"],
+    specs: [
+      {
+        label: "Vật liệu",
+        value: "Hợp kim cứng vonfram có lớp phủ chống dính",
+      },
+      {
+        label: "Đường kính ngoài",
+        value: "Φ88–Φ100 mm",
+      },
+      {
+        label: "Lỗ lắp",
+        value: "Φ15 / Φ16 / Φ45 mm",
+      },
+      {
+        label: "Độ dày",
+        value: "0,15–0,30 mm",
+      },
+      {
+        label: "Mục đích lớp phủ",
+        value: "Kháng lại sự tích tụ keo gốc nước trên mặt dao",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt ống hút giấy, cắt que lọc, cắt ống giấy",
+      },
+    ],
+    dimensionLabels: {
+      col0: "STT",
+      col1: "ĐK ngoài ØD (mm)",
+      col2: "Lỗ lắp Ød (mm)",
+      col3: "Độ dày T (mm)",
+      caption:
+        "* Sáu kích thước tồn kho. Các đường kính, lỗ lắp và độ dày khác được chế tạo theo bản vẽ — hãy gửi model máy, số lớp ống hút và loại keo, chúng tôi sẽ đặc tả dao theo đó.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ88",
+        id: "Φ16",
+        thickness: "0.26",
+      },
+      {
+        spec: "2",
+        od: "Φ89",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "3",
+        od: "Φ90",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "4",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.15",
+      },
+      {
+        spec: "5",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "6",
+        od: "Φ100",
+        id: "Φ45",
+        thickness: "0.20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "Với công việc có keo, bề mặt quan trọng hơn nền vật liệu. Hãy chọn lớp phủ theo loại keo bạn dùng, rồi chọn nền vật liệu theo loại giấy.",
+      rows: [
+        {
+          grade: "Hợp kim cứng + lớp phủ chống dính",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Dây chuyền ống hút dùng keo gốc nước và cắt que lọc — đặc tả mặc định",
+          tradeoff:
+            "Giá đơn vị cao hơn; lớp phủ là lớp tiêu hao và không tồn tại sau khi mài lại",
+        },
+        {
+          grade: "Hợp kim cứng không phủ",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Ứng dụng khô hoặc ít dính, và cắt ống giấy không có keo tại đường cắt",
+          tradeoff:
+            "Bám keo nhanh trên dây chuyền có keo; mép cắt xơ từ rất lâu trước khi lưỡi mòn",
+        },
+        {
+          grade: "Thép dụng cụ",
+          hardness: "60–63 HRC",
+          bestFor:
+            "Chạy thử, lô ngắn và dây chuyền tốc độ thấp nơi chi phí quyết định",
+          tradeoff:
+            "Mất lưỡi nhanh ở tốc độ dây chuyền ống hút; không khả thi cho sản xuất liên tục",
+        },
+      ],
+    },
+    components: [
+      {
+        id: "adhesive-release-coating",
+        tag: "XỬ LÝ BỀ MẶT",
+        title: "Phủ để nhả keo, không chỉ để cứng",
+        description:
+          "Trên dây chuyền dùng keo gốc nước, dao hỏng vì bám keo chứ không phải vì mòn. Lớp phủ chống dính giữ mặt dao sạch để lưỡi tiếp tục cắt ống thay vì kéo ống — đó mới là cơ chế thực sự đằng sau một đầu ống hút không xơ.",
+      },
+      {
+        id: "thin-section-stability",
+        tag: "HÌNH HỌC DAO",
+        title: "0,15–0,30 mm, đặc tả theo vết cắt",
+        description:
+          "Độ dày là một lựa chọn công nghệ, không phải phần thừa. Dao mỏng hơn lấy đi ít vật liệu hơn và để lại đầu cắt vuông hơn trên ống thành mỏng; dao dày hơn chạy ổn định hơn ở tốc độ cao và chịu được độ đảo của máy. Chúng tôi đặc tả theo số lớp và máy của bạn thay vì mặc định một con số duy nhất.",
+      },
+      {
+        id: "straw-line-tuning",
+        tag: "KỸ THUẬT ỨNG DỤNG",
+        title: "Tinh chỉnh theo keo, không chỉ theo giấy",
+        description:
+          "Dây chuyền ống hút giấy khác nhau về keo nhiều hơn hẳn so với về giấy, và tuổi thọ dao đi theo keo. Hãy cho chúng tôi biết bạn dùng loại nào và chúng tôi sẽ đặc tả lớp phủ và hình học theo đó — đây là thông tin hữu ích nhất bạn có thể cung cấp ở ứng dụng này.",
+      },
+    ],
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Ví dụ: trạm cắt ống hút giấy, dao Φ100 × Φ15 × 0,20 mm. Ống hút ba lớp, kraft 60 g/m², keo gốc nước. Dao bị bết keo sau khoảng 6 giờ và đầu ống hút bị xơ. Cần 50 chiếc, có phủ.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Đầu ống hút của tôi bị xơ nhưng lưỡi dao vẫn còn cảm giác sắc. Chuyện gì đang xảy ra?",
+          answer:
+            "Gần như chắc chắn là bám keo. Keo gốc nước bám sang mặt dao và tích thành gờ dọc lưỡi cắt; qua điểm đó dao kéo ống thay vì cắt đứt, và ống bị kéo sẽ xơ. Bản thân lưỡi bên dưới có thể vẫn hoàn toàn dùng được. Hãy lau mặt dao và soi dưới ánh sáng trước khi thay dao: nếu thấy rõ lớp bám, câu trả lời là lớp phủ hoặc chu kỳ vệ sinh, không phải một con dao sắc hơn.",
+        },
+        {
+          question: "Tôi nên dùng 0,15 mm hay 0,30 mm?",
+          answer:
+            "Tùy vào ống và máy. Dao mỏng hơn lấy đi ít vật liệu hơn và cho đầu cắt vuông hơn trên ống hút thành mỏng, ít lớp, đó là lý do nó được chọn cho ống hút cao cấp. Dao dày hơn cứng vững hơn, chạy ổn định hơn ở tốc độ cao và chịu được độ đảo trục chính, đó là lý do nó an toàn hơn trên máy đời cũ hoặc ống nhiều lớp dày hơn. Hãy cho chúng tôi biết số lớp, định lượng và loại máy, chúng tôi sẽ khuyến nghị thay vì để bạn đoán.",
+        },
+        {
+          question: "Lớp phủ có tồn tại sau khi mài lại không?",
+          answer:
+            "Không. Lớp phủ là một lớp bề mặt, và mài lưỡi sẽ lấy nó đi đúng ở nơi nó quan trọng nhất. Với dao có phủ loại này, cách làm thực tế là dùng đến hết tuổi thọ rồi thay, thay vì xây một chu kỳ mài lại quanh chúng. Nếu bài toán kinh tế của bạn nghiêng về mài lại, chúng tôi có thể báo giá hợp kim cứng không phủ và bạn chấp nhận đánh đổi bằng việc vệ sinh mặt dao thường xuyên hơn.",
+        },
+        {
+          question:
+            "Dao que lọc và dao ống hút giấy có thay thế cho nhau được không?",
+          answer:
+            "Về kích thước thì thường là được — cùng một dòng hình học và nhiều dây chuyền ống hút được xây trên máy làm que lọc. Thứ không chuyển giao được là logic đặc tả. Cắt que lọc chạy ở tốc độ rất cao trên vật liệu đồng nhất; dây chuyền ống hút chạy giấy đa dạng và, quan trọng hơn, keo đa dạng. Một con dao chạy tốt trên máy que lọc Hauni có thể bị bết keo trên dây chuyền ống hút dùng loại keo khác. Hãy đặc tả theo keo, không theo nguồn gốc máy.",
+        },
+      ],
+      company: [
+        {
+          question: "Bạn cần thông tin gì để báo giá?",
+          answer:
+            "Đường kính ngoài, lỗ lắp và độ dày; model máy; số lớp ống hút và định lượng giấy; loại keo; và khoảng thời gian thay dao hiện tại của bạn. Keo là thứ hầu hết người mua bỏ sót và cũng là thứ dự đoán tuổi thọ dao tốt nhất ở ứng dụng này, nên hãy nêu ra kể cả khi bạn không chắc nó có quan trọng hay không.",
+        },
+        {
+          question:
+            "Bạn có cung cấp cho dây chuyền ống hút mà chúng tôi còn đang chạy thử không?",
+          answer:
+            "Có, và nên để chúng tôi tham gia sớm. Với dây chuyền mới, bước đầu hữu ích là một lô thử nhỏ với hai đặc tả — thường là một con dao có phủ và một độ dày khác — chạy thực tế với keo và giấy của bạn. Điều đó cho biết nhiều hơn trong hai tuần so với việc so sánh tài liệu kỹ thuật, và định đúng ngay từ đầu đặc tả cho đơn hàng định kỳ.",
+        },
+        {
+          question: "Thời gian giao hàng là bao lâu?",
+          answer:
+            "Kích thước tồn kho thường giao trong vài ngày làm việc. Đường kính, lỗ lắp và độ dày theo yêu cầu mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ. Dao có phủ cần thêm vài ngày so với dao không phủ do chu trình phủ, hãy tính đến điều đó khi lên kế hoạch cho lô thử đầu tiên.",
+        },
+      ],
+    },
+  },
 ];

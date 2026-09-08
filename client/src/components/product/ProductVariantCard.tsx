@@ -6,7 +6,11 @@
  */
 
 import { Link } from "wouter";
-import { type Blade, type BladeSpec, type BladeSectorType } from "@/data/blades";
+import {
+  type Blade,
+  type BladeSpec,
+  type BladeSectorType,
+} from "@/data/blades";
 import { SECTOR_LABEL } from "@/data/blade-categories";
 import { useTranslation } from "@/lib/useTranslation";
 
@@ -25,8 +29,8 @@ function getCardSpecs(blade: Blade): BladeSpec[] {
       s !== material &&
       /diameter|dimension|length|size|capacity|thickness/i.test(s.label)
   );
-  const picks = [material, dimensionish].filter(
-    (s): s is BladeSpec => Boolean(s)
+  const picks = [material, dimensionish].filter((s): s is BladeSpec =>
+    Boolean(s)
   );
   for (const s of blade.specs) {
     if (picks.length >= 2) break;
@@ -100,6 +104,9 @@ export default function ProductVariantCard({
           height={385}
           className="absolute inset-0 w-full h-full object-contain p-6 group-hover:scale-105 transition-transform duration-500"
           onError={e => {
+            // Clear srcSet first — a srcset candidate still wins over src, so
+            // setting src alone leaves the broken candidate in place.
+            e.currentTarget.srcset = "";
             e.currentTarget.src = "/images/products/product.webp";
           }}
         />

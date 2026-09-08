@@ -6276,4 +6276,850 @@ export const blades: Blade[] = [
       ],
     },
   },
+  {
+    id: "groove-bottom-knives",
+    name: "Cuchillas Inferiores Ranuradas",
+    fullName:
+      "Cuchillas inferiores multirranura y anillos de corte para corte por cizalla",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Cuchillas Cortadoras",
+    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+    badge: "Paso desde 5 mm",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Anillo de cuchilla inferior multirranura con ranuras paralelas rectificadas con precisión para corte por cizalla",
+      "Anillos de cuchilla inferior multirranura con un anillo separador liso y cuchillas inferiores planas",
+      "Anillo de corte inferior multirranura mostrando el paso de ranura y el alojamiento rectificado",
+    ],
+    description:
+      "Anillos de cuchilla inferior multirranura para corte por cizalla en rebobinadoras de papel, cartoncillo y film. El ancho de corte se cambia moviendo la cuchilla superior a otra ranura en lugar de reconfigurar la herramienta. Paso de ranura desde 5 mm, DE hasta Φ406 mm, alojamiento liso para ejes neumáticos o con prisionero para ejes macizos. Filo simple o doble, anillo de una pieza o partido. También se suministran anillos de una sola ranura y anillos separadores lisos.",
+    fullDescription:
+      "Una cuchilla inferior multirranura —también llamada cortadora inferior multirranura, yunque multirranura o MKB— es un anillo ancho con muchas ranuras paralelas rectificadas con precisión. Cada ranura es una posición de corte utilizable, de modo que un cambio de ancho consiste en mover la cuchilla superior a otra ranura en lugar de desmontar el eje y reconstruir el paquete de cuchillas. En una línea que cambia de ancho de pedido con frecuencia, esa diferencia se mide en horas de turno, no en coste de cuchilla.\n\nLas ranuras son las que hacen el corte, así que son las que deben estar bien. La posición de la ranura fija el ancho de corte, el ancho de la ranura fija la holgura de cizalla efectiva frente a la cuchilla superior asociada, y el estado del filo de la ranura determina si la banda se cizalla o se desgarra. Las tres se rectifican en una sola sujeción sobre el mismo anillo, y por eso un anillo multirranura mantiene la precisión de ancho a lo largo de todo el paquete mejor que un número equivalente de cuchillas yunque independientes montadas con separadores.\n\n## Dónde el formato justifica su precio\n\nUna cuchilla inferior de una sola ranura es más barata por unidad y perfectamente adecuada en una línea que trabaja un mismo ancho durante semanas. El anillo multirranura gana donde el ancho de pedido cambia con frecuencia, donde el número de cortes es alto, o donde reajustar un paquete de separadores se ha convertido en el verdadero cuello de botella del cambio. Además elimina toda una clase de error de reglaje: con posiciones de ranura fijas rectificadas en un único cuerpo, el ancho no puede desviarse porque alguien haya montado los separadores un milímetro fuera.\n\n## Montaje: eje neumático o eje macizo\n\nDos estilos de montaje cubren casi cualquier rebobinadora. Un alojamiento liso se fija por apriete sobre un eje neumático expansible, que es la opción de cambio rápido y la habitual en líneas de transformación modernas. Un diseño con prisionero se fija sobre un eje inferior macizo, más común en máquinas antiguas y en líneas de cartón pesado donde la rigidez del eje importa más que la velocidad de cambio. Indíquenos qué eje utiliza: cambia la especificación del alojamiento, no solo la fijación, y un anillo mecanizado para el sistema equivocado no asentará verdadero.\n\n## Una pieza o partido\n\nLos anillos estándar son de una pieza. Un anillo partido en dos piezas cuesta más pero se desmonta y se vuelve a montar sin desarmar el conjunto del eje, lo que en una máquina ancha puede convertir una parada programada en un cambio en marcha. Si actualmente cambia sus anillos extrayendo el eje completo, la versión partida suele ser lo primero que merece la pena cotizar.\n\n## Filo simple o doble\n\nLos anillos se rectifican con un filo de corte simple o con filos a ambos lados de cada ranura. La geometría de doble filo duplica las posiciones utilizables y permite invertir el anillo cuando una cara está desgastada, a costa de un rectificado más exigente y un precio unitario mayor. Cuál es la correcta depende de cómo se distribuyan sus posiciones de corte a lo largo del anillo, así que envíe el plan de anchos y no solo el número de ranuras.\n\n## El paso de ranura se fabrica según su plan de anchos\n\nLa división entre filos —la distancia de un filo de corte al siguiente, también llamada paso— es prácticamente siempre a medida y puede llegar a ser tan estrecha como 5 mm (0,200 in). Los diámetros exteriores llegan hasta Φ406 mm (16 in). Aquí no existe una tabla estándar útil, y por eso cotizamos a partir de su plan de anchos o de un plano: facilítenos el DE, el alojamiento, el ancho del anillo, los anchos que realmente produce y la cuchilla superior asociada, y rectificaremos las posiciones de ranura conforme a ese plan.\n\n## El resto del juego de anillos\n\nUn eje en producción rara vez está formado solo por anillos multirranura. Los anillos de corte de una sola ranura cubren posiciones fijas, y los anillos lisos actúan como separadores y como apoyo de la banda entre posiciones de corte. Suministramos los tres con la misma especificación de alojamiento y de excentricidad para que se apilen sin introducir oscilación: mezclar anillos de distintos proveedores en un mismo eje es una causa habitual y difícil de diagnosticar de variación en el ancho de corte.\n\n## Aplicaciones\n\nTransformación de papel, cartoncillo, tisú y cartón ondulado; film, lámina metálica, papel autoadhesivo, cinta adhesiva, no tejidos y textiles en rebobinadoras de corte por cizalla.",
+    link: "/products/groove-bottom-knives",
+    disambiguation:
+      "Esta página trata los anillos multirranura que agrupan muchas posiciones de corte en un solo cuerpo. Para las cuchillas inferiores circulares de filo simple que se emparejan con una cuchilla superior en rebobinadoras de papel, consulte [Cuchillas Inferiores para Rebobinadoras Cortadoras](/products/slitter-rewinder-bottom-knives).",
+    introNote:
+      "El paso de ranura, el número de ranuras y el alojamiento se fabrican según su plan de anchos: no existe una medida estándar significativa para este producto. Envíe los anchos que realmente produce, el tipo de eje (neumático o macizo) y la cuchilla superior asociada, y rectificaremos las posiciones de ranura conforme a ese plan.",
+    compatibleMachines: [
+      "Kampf",
+      "Goebel",
+      "Atlas Converting",
+      "Dienes",
+      "Nishimura",
+      "Deacro",
+      "Parkinson Technologies",
+    ],
+    specs: [
+      {
+        label: "Material",
+        value:
+          "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / con plaquitas de carburo",
+      },
+      {
+        label: "Diámetro exterior",
+        value: "Hasta Φ406 mm (16 in)",
+      },
+      {
+        label: "Paso de ranura",
+        value: "Desde 5 mm (0,200 in), rectificado según su plan de anchos",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Alojamiento liso para eje neumático expansible, o prisionero para eje macizo",
+      },
+      {
+        label: "Configuración de filo",
+        value: "Filo de corte simple o doble",
+      },
+      {
+        label: "Construcción",
+        value: "Anillo de una pieza o anillo partido en dos piezas",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Corte por cizalla multiancho de papel, cartoncillo, film, lámina metálica y cinta",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Configuración",
+      col1: "Diámetro exterior",
+      col2: "Montaje",
+      col3: "Paso de ranura / Filos",
+      caption:
+        "* El paso de ranura, el número de ranuras, el ancho del anillo y el alojamiento se fabrican según su plan de anchos: no existe tabla de medidas estándar para este producto. Envíe los anchos que produce, el tipo de eje y la especificación de la cuchilla superior asociada, o un plano, y rectificaremos las posiciones de ranura en consecuencia.",
+    },
+    standardDimensions: [
+      {
+        spec: "Anillo multirranura — alojamiento liso",
+        od: "Hasta Φ406 (16 in)",
+        id: "Eje neumático expansible",
+        thickness: "Desde 5 mm de paso",
+      },
+      {
+        spec: "Anillo multirranura — con prisionero",
+        od: "Hasta Φ406 (16 in)",
+        id: "Eje inferior macizo",
+        thickness: "Desde 5 mm de paso",
+      },
+      {
+        spec: "Anillo partido en dos piezas",
+        od: "Hasta Φ406 (16 in)",
+        id: "Eje neumático o macizo",
+        thickness: "Desde 5 mm de paso",
+      },
+      {
+        spec: "Anillo multirranura de doble filo",
+        od: "Hasta Φ406 (16 in)",
+        id: "Eje neumático o macizo",
+        thickness: "Filos de corte a ambos lados",
+      },
+      {
+        spec: "Anillo de corte de una sola ranura",
+        od: "Según plano",
+        id: "Eje neumático o macizo",
+        thickness: "Una posición fija",
+      },
+      {
+        spec: "Anillo separador liso",
+        od: "Según plano",
+        id: "Eje neumático o macizo",
+        thickness: "Sin ranura — fija la separación",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "La elección de calidad en un anillo multirranura la gobierna lo abrasiva que sea la banda, porque los filos de las ranuras se desgastan allí donde pasa la banda y no donde golpea la cuchilla. Un anillo es además un cuerpo grande y caro de desechar, por lo que las calidades que admiten rectificados repetidos suelen ofrecer mejor economía.",
+      rows: [
+        {
+          grade: "Cr12MoV / SKD-11",
+          hardness: "HRC 58–62",
+          bestFor:
+            "Papel, cartoncillo y film en general — la especificación estándar y el mejor equilibrio entre vida útil y capacidad de rectificado",
+          tradeoff:
+            "Superada por la versión con plaquitas de carburo en sustratos muy estucados o con carga mineral",
+        },
+        {
+          grade: "9CrSi / 65Mn",
+          hardness: "HRC 56–60",
+          bestFor:
+            "Sustratos blandos sin estucar, tisú y velocidades de línea más bajas donde manda el precio unitario",
+          tradeoff:
+            "Los filos de las ranuras se redondean antes, así que el intervalo entre rectificados será más corto",
+        },
+        {
+          grade: "HSS",
+          hardness: "HRC 62–64",
+          bestFor:
+            "Velocidades de línea altas y programaciones mixtas donde el anillo debe mantener el filo en tiradas largas",
+          tradeoff:
+            "Mayor coste que el acero de herramientas; sigue desgastándose en sustratos con carga mineral",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 en la plaquita",
+          bestFor:
+            "Bandas abrasivas, estucadas, con carga mineral y laminadas donde las ranuras de acero de herramientas se agotan en semanas",
+          tradeoff:
+            "Precio más alto, y las plaquitas se astillan en lugar de desgastarse si el eje no gira verdadero",
+        },
+      ],
+      outro:
+        "Si tiene dudas, envíenos el sustrato y su intervalo actual de rectificado y dimensionaremos la recomendación conforme a su propio consumo en lugar de una tabla genérica.",
+    },
+    components: [
+      {
+        id: "one-ring-many-widths",
+        tag: "TIEMPO DE CAMBIO",
+        title: "Un anillo, muchas posiciones de corte",
+        description:
+          "Cada ranura es una posición de corte utilizable, de modo que un cambio de ancho consiste en reposicionar la cuchilla superior en lugar de desmontar el eje y reconstruir un paquete de separadores. En líneas que cambian de ancho de pedido con frecuencia, esto es antes un producto de tiempo de cambio que un consumible.",
+      },
+      {
+        id: "ground-in-one-setup",
+        tag: "PRECISIÓN DIMENSIONAL",
+        title: "Todas las ranuras rectificadas en una sola sujeción",
+        description:
+          "Las posiciones de ranura se rectifican sobre un único cuerpo en una sola sujeción, de modo que el ancho de corte no puede desviarse como ocurre cuando un operario reconstruye un paquete de separadores un milímetro fuera. El alojamiento y la excentricidad se mantienen con la misma especificación en anillos multirranura, de una sola ranura y lisos, para que un eje mixto siga apilando verdadero.",
+      },
+      {
+        id: "mounting-and-split",
+        tag: "OPCIONES DE MONTAJE",
+        title: "Eje neumático, eje macizo o anillo partido",
+        description:
+          "El alojamiento liso se fija por apriete sobre un eje neumático expansible; el diseño con prisionero se fija a un eje inferior macizo. Un anillo partido en dos piezas se desmonta sin desarmar el conjunto del eje, lo que en una máquina ancha convierte una parada programada en un cambio en marcha.",
+      },
+    ],
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+    ],
+    rfqPlaceholder:
+      "Ejemplo: rebobinadora Kampf, eje neumático expansible, anillo inferior Φ180 × 100 mm de ancho, 12 ranuras con paso de 25 mm, filo simple. Cortando cartoncillo estucado de 120 g/m², 8 cortes, con cambio de ancho dos veces por semana. Necesito 4 anillos más 2 anillos separadores lisos.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿En qué se diferencia una cuchilla inferior multirranura de una cuchilla yunque ranurada?",
+          answer:
+            "En escala y en propósito. Una cuchilla yunque ranurada es un disco con una a tres ranuras, rectificado según un perfil de par de cizalla OEM y utilizado principalmente en líneas de film, lámina metálica y cinta; consulte nuestra página de cuchillas yunque inferiores ranuradas para ese producto. Un anillo multirranura es un cuerpo mucho más ancho con muchas ranuras paralelas, y su razón de ser es que un solo anillo cubre muchas posiciones de corte, de modo que los cambios de ancho no exigen reconfigurar la herramienta. Si cambia de ancho con frecuencia, necesita el anillo; si trabaja un solo ancho contra un perfil de yunque OEM especificado, necesita el yunque.",
+        },
+        {
+          question:
+            "¿Qué paso de ranura pueden rectificar realmente y cómo lo especifico?",
+          answer:
+            "La división entre filos —la distancia de un filo de corte al siguiente— es a medida en prácticamente todos los casos y puede llegar a ser tan estrecha como 5 mm (0,200 in). No la especifique como un único número: envíe la lista de anchos de corte que realmente produce y distribuiremos las posiciones de ranura de forma que todos sus anchos habituales caigan sobre una ranura. Esa es la diferencia entre un anillo que cubre su programación y otro que cubre la mitad y le obliga a montar un paquete de separadores para el resto.",
+        },
+        {
+          question: "¿Debo pedir alojamiento liso o con prisionero?",
+          answer:
+            "Depende de su eje inferior, no de su preferencia. El alojamiento liso se fija por apriete sobre un eje neumático expansible y es la opción de cambio rápido presente en la mayoría de las líneas de transformación modernas. El diseño con prisionero se fija sobre un eje inferior macizo y es habitual en máquinas antiguas y en líneas de cartón pesado. Los dos no son intercambiables —la especificación del alojamiento es distinta—, así que un anillo mecanizado para el sistema equivocado no asentará verdadero y se manifestará como excentricidad en el corte. Si no está seguro, fotografíe el extremo del eje con los anillos montados.",
+        },
+        {
+          question:
+            "Mis anchos de corte han empezado a desviarse a lo largo del eje. ¿Es culpa del anillo?",
+          answer:
+            "Compruebe la excentricidad y el montaje del paquete de anillos antes que las ranuras. Las posiciones de ranura se rectifican en una sola sujeción y no se mueven, así que un anillo que era preciso al instalarlo rara vez es el origen de una deriva progresiva del ancho. Las causas habituales son un alojamiento asentado sobre un eje desgastado o sucio, o anillos de distintos proveedores mezclados en un mismo eje con especificaciones de alojamiento y de cara ligeramente distintas, lo que acumula una pequeña oscilación hasta convertirla en un error de ancho medible. Los filos de ranura desgastados se manifiestan como deterioro del canto de corte y aumento de polvo, no como deriva de ancho.",
+        },
+      ],
+      company: [
+        {
+          question: "¿Qué necesitan para cotizar?",
+          answer:
+            "Diámetro exterior, alojamiento, ancho del anillo, número de ranuras y paso, el tipo de eje (neumático expansible o macizo), la especificación de la cuchilla superior asociada, y el sustrato y la velocidad de línea. El dato adicional más útil es su lista de anchos de producción: nos permite distribuir las posiciones de ranura conforme a su programación real en lugar de copiar un paso. Un plano o un anillo desgastado acortan aún más la cotización; hacemos ingeniería inversa a partir de muestras como trabajo habitual.",
+        },
+        {
+          question:
+            "¿Suministran también anillos de una sola ranura y anillos lisos, o solo multirranura?",
+          answer:
+            "Los tres, y recomendamos comprarlos juntos. Los anillos de corte de una sola ranura cubren posiciones fijas y los anillos lisos actúan como separadores y como apoyo de la banda entre posiciones de corte. Al fabricarse con la misma especificación de alojamiento y excentricidad, se apilan sin introducir oscilación: mezclar anillos de distintos proveedores en un mismo eje es una causa habitual y realmente difícil de diagnosticar de variación en el ancho de corte.",
+        },
+        {
+          question: "¿Se pueden rectificar y cuántas veces?",
+          answer:
+            "Sí, y el rectificado es central en la economía porque un anillo es un cuerpo grande de desechar. El número de ciclos depende de la profundidad de ranura y de cuánto material retire cada rectificado; los anillos de acero de herramientas suelen admitir varios ciclos antes de que la geometría de ranura ya no pueda restablecerse. Rectificamos anillos fabricados por nosotros y, en la mayoría de los casos, anillos que no lo son, siempre que el cuerpo esté verdadero y el alojamiento intacto, y le diremos con franqueza cuándo un anillo no merece el trabajo.",
+        },
+      ],
+    },
+  },
+  {
+    id: "slitter-rewinder-bottom-knives",
+    name: "Cuchillas Inferiores para Rebobinadoras Cortadoras",
+    fullName:
+      "Cuchillas inferiores de carburo para rebobinadoras cortadoras de papel y film",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Cuchillas Cortadoras",
+    image:
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+    badge: "Acabado Espejo",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Gama de cuchillas inferiores y anillos para rebobinadoras cortadoras en cuatro diámetros",
+      "Par de cuchillas inferiores de carburo mostrando el alojamiento y los agujeros de fijación",
+      "Anillo de cuchilla inferior para rebobinadora con cara de rodadura pulida a espejo",
+    ],
+    description:
+      "Cuchillas inferiores macizas y con plaquitas de carburo para rebobinadoras cortadoras de papel de alta velocidad. Caras pulidas a espejo, corte sin rebabas y menor polvo en la bobina. Medidas de stock Φ250–Φ254 mm en espesores de 15 a 50 mm, alojamientos a medida de la máquina. Compatibles con Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban y otras plataformas de rebobinado eléctrico.",
+    fullDescription:
+      "La cuchilla inferior de una rebobinadora cortadora es la mitad fija del par de cizalla, y es deliberadamente la mitad más dura. Ese diferencial de dureza entre cuchilla superior e inferior no es accidental: es el mecanismo que mantiene limpio el corte. Cuando ambas cuchillas tienen una dureza parecida, la zona de cizalla se deforma en lugar de cortar, y el resultado es un canto con rebaba y polvo arrastrado hacia la bobina.\n\nLas cuchillas inferiores Sureay se suministran en carburo de tungsteno macizo y en construcción con plaquitas de carburo, con caras pulidas a espejo y un filo agudo y posicionado con precisión. En la versión con plaquitas, el carburo se fija mediante un proceso controlado de asentamiento en caliente para que las plaquitas permanezcan unidas a alta velocidad en lugar de aflojarse en servicio, y las plaquitas desgastadas pueden sustituirse sin desechar el cuerpo.\n\n## Por qué el polvo en la bobina es un problema de la cuchilla inferior\n\nLos operarios suelen buscar el polvo aguas arriba: limpiadores de banda, barras antiestáticas, aspiración. A menudo el origen es el propio corte. Una cuchilla inferior cuyo filo se ha redondeado o cuya cara ha perdido el acabado deja de cizallar y empieza a aplastar, y la fibra de papel aplastada se convierte en polvo que se bobina directamente en el rollo y aparece como defecto de transformación dos procesos más adelante. Si el polvo apareció de forma gradual y no tras un cambio de calidad, la cuchilla inferior es lo primero que hay que inspeccionar.\n\n## Materiales según el sustrato\n\nEl carburo de tungsteno macizo es la opción de mayor vida útil y la respuesta correcta en sustratos abrasivos y muy estucados. La versión con plaquitas ofrece el mejor equilibrio coste-vida para papel general, con la ventaja práctica de poder reponer las plaquitas. El HSS sigue siendo razonable para tiradas cortas en sustratos blandos y con el menor coste unitario.\n\n## Aplicaciones\n\nPapel, film, lámina metálica y materiales de banda similares en plataformas eléctricas de rebobinado y corte: corte de bobinas, transformación de rollos y líneas de rebobinado con papel estucado y sin estucar, cartoncillo y sustratos flexibles ligeros.\n\n## El diferencial de dureza es todo el mecanismo\n\nUn corte por cizalla necesita un diferencial de dureza para seguir siendo un corte por cizalla. Cuando las cuchillas superior e inferior tienen durezas próximas, el material de la zona de cizalla se deforma en vez de separarse limpiamente, y el resultado es un canto con rebaba y fibra aplastada que acaba como polvo en la bobina. La cuchilla inferior, más dura, mantiene una geometría de filo estable mientras la superior, más blanda, absorbe el desgaste; por eso la superior es la que se cambia con más frecuencia y por eso sustituir ambas en el mismo ciclo desperdicia herramienta todavía útil. Igualar las dos durezas es un error de especificación habitual y caro, y conviene revisarlo en cualquier línea donde la calidad de corte se haya degradado tras un cambio de herramienta.\n\n## El polvo en la bobina suele empezar en el corte\n\nLos operarios persiguen el polvo aguas arriba —limpiadores de banda, barras antiestáticas, aspiración— cuando con frecuencia el origen es el propio corte. Una cuchilla inferior con el filo redondeado, o cuya cara ha perdido acabado, deja de cizallar y empieza a aplastar; la fibra aplastada se bobina directamente en el rollo y aparece como defecto dos procesos más adelante. El indicio está en el momento: un polvo que aparece de forma gradual apunta a la cuchilla, un polvo que aparece tras un cambio de calidad apunta al sustrato. Inspeccione el filo con aumento y compruebe el acabado de la cara en lugar de juzgar el filo al tacto, porque el acabado se degrada antes que el propio filo y eleva el polvo mucho antes de que nadie considere roma la cuchilla.\n\n## Carburo macizo o con plaquitas\n\nEl carburo de tungsteno macizo ofrece la mayor vida útil por unidad y es la respuesta correcta en sustratos abrasivos y muy estucados, pero cuando el filo se agota la cuchilla se agota. La versión con plaquitas cuesta menos, dura menos por ciclo y admite reposición: siempre que el cuerpo esté recto y verdadero y los asientos de soldadura estén sanos, se sustituyen las plaquitas y la cuchilla vuelve a servicio. Esa reponibilidad suele ser el factor decisivo cuando la economía entre ambas opciones está ajustada. En la construcción con plaquitas, estas se asientan en caliente en condiciones controladas para que permanezcan unidas a las velocidades de rebobinado en lugar de aflojarse en servicio: lo que limita la vida de una cuchilla con plaquitas mal fabricada es la calidad de la soldadura, no la calidad del carburo.\n\n## Qué necesitamos para ajustarnos a su máquina\n\nLas cuchillas inferiores se fabrican siempre a la máquina, así que las plataformas de rebobinado enumeradas son las que vemos con más frecuencia, no un límite. Para cotizar, envíe el diámetro exterior, el alojamiento y el espesor de la cuchilla que utiliza ahora, la especificación de la cuchilla superior correspondiente, qué está cortando, la velocidad de línea y el número de cortes. Si desconoce alguno de esos datos, envíe la cuchilla desgastada o fotografías con un calibre en el encuadre: preferimos hacer ingeniería inversa a partir de una muestra antes que cotizar sobre una suposición. Las cuchillas se envían individualmente con el filo protegido y papel VCI contra la corrosión, encajonadas en los diámetros mayores, porque una cuchilla inferior que llega con una muesca en el filo es inservible por bien fabricada que esté.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    disambiguation:
+      "Estas son cuchillas inferiores circulares que trabajan como par de cizalla con una cuchilla superior en líneas de rebobinado. Si necesita yunques planos para corte por aplastamiento, consulte [Cuchillas Yunque Inferiores Ranuradas](/products/bottom-grooved-anvil-knives).",
+    compatibleMachines: [
+      "Beck",
+      "Bielomatik",
+      "Clark Aiken",
+      "DATM",
+      "Didde",
+      "ECH Will",
+      "Harris",
+      "Hamblett",
+      "Jagenberg",
+      "Langston",
+      "Lenox",
+      "Maxson",
+      "Miltex",
+      "Masson Scott",
+      "Pasaban",
+    ],
+    specs: [
+      {
+        label: "Material",
+        value: "Carburo de tungsteno macizo / con plaquitas de carburo / HSS",
+      },
+      {
+        label: "Diámetro exterior",
+        value: "Φ250–Φ254 mm estándar",
+      },
+      {
+        label: "Espesor",
+        value: "15 / 20 / 25 / 50 mm",
+      },
+      {
+        label: "Acabado de cara",
+        value: "Pulido a espejo",
+      },
+      {
+        label: "Principio de diseño",
+        value:
+          "Cuchilla inferior más dura que la superior — control de rebaba y polvo",
+      },
+      {
+        label: "Materiales cortados",
+        value: "Papel, film, lámina metálica y sustratos de banda similares",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Ítem",
+      col1: "DE ØD (mm)",
+      col2: "Alojamiento Ød (mm)",
+      col3: "Espesor T (mm)",
+      caption:
+        "* Medidas estándar de cuchilla inferior para rebobinadora. El alojamiento, el espesor y la geometría de filo se ajustan a la máquina: envíe el DE/DI/T de la cuchilla que utiliza ahora junto con la especificación de la cuchilla superior correspondiente.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "25",
+      },
+      {
+        spec: "2",
+        od: "Φ254",
+        id: "Φ195",
+        thickness: "50",
+      },
+      {
+        spec: "3",
+        od: "Φ250",
+        id: "Φ188",
+        thickness: "15",
+      },
+      {
+        spec: "4",
+        od: "Φ250",
+        id: "Φ140",
+        thickness: "20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "La cuchilla inferior debe ser siempre la mitad más dura del par. Dentro de esa regla, la calidad se elige según lo abrasivo que sea el sustrato y según si desea un cuerpo con plaquitas reponibles.",
+      rows: [
+        {
+          grade: "Solid tungsten carbide",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Sustratos abrasivos y muy estucados; el mayor intervalo entre cambios",
+          tradeoff:
+            "Precio unitario más alto, y toda la cuchilla se desecha cuando el filo se agota",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 en la plaquita",
+          bestFor:
+            "Papel y cartoncillo general — el mejor equilibrio coste-vida, con plaquitas reponibles",
+          tradeoff:
+            "La calidad de la soldadura decide la vida útil; plaquitas mal asentadas se aflojan a velocidad",
+        },
+        {
+          grade: "HSS",
+          hardness: "62–64 HRC",
+          bestFor:
+            "Tiradas cortas, sustratos blandos sin estucar, menor coste unitario",
+          tradeoff:
+            "El filo se redondea rápido a velocidades de rebobinado, que es donde empieza el polvo en la bobina",
+        },
+      ],
+      outro:
+        "Sea cual sea la calidad elegida, mantenga el diferencial de dureza con la cuchilla superior. Igualar ambas durezas es un error habitual y caro: elimina la cizalla y deja la banda aplastada.",
+    },
+    components: [
+      {
+        id: "hardness-differential",
+        tag: "MECÁNICA DE CIZALLA",
+        title: "Deliberadamente más dura que la cuchilla superior",
+        description:
+          "La cuchilla inferior se especifica más dura que la superior con la que trabaja de forma intencionada. Ese diferencial es lo que mantiene el par cizallando en lugar de deformar la banda, y es la causa directa de cantos sin rebaba y de un bajo arrastre de polvo hacia la bobina.",
+      },
+      {
+        id: "mirror-face-finish",
+        tag: "ACABADO SUPERFICIAL",
+        title: "Cara de rodadura pulida a espejo",
+        description:
+          "Una cara pulida libera la banda en lugar de arrastrarla, lo que mantiene limpio el corte y reduce el calor de fricción. El acabado de la cara es de lo primero que se degrada en servicio y de lo último que comprueban los operarios: una cara mate eleva el polvo mucho antes de que el filo esté realmente gastado.",
+      },
+      {
+        id: "hot-set-carbide",
+        tag: "CONSTRUCCIÓN",
+        title: "Plaquitas de carburo asentadas en caliente",
+        description:
+          "En la construcción con plaquitas, estas se asientan en caliente en condiciones controladas para que permanezcan firmemente unidas a alta velocidad. La ventaja práctica es un cuerpo reponible: se sustituyen las plaquitas desgastadas y la cuchilla vuelve a servicio en lugar de desecharse.",
+      },
+    ],
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Ejemplo: rebobinadora Jagenberg, cuchilla inferior Φ250 × Φ188 × 25 mm, emparejada con una cuchilla superior Φ200. Cortando papel estucado de 120 g/m² a 800 m/min, 12 cortes. Aparece polvo en la bobina y el canto sale ligeramente con rebaba.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Por qué la cuchilla inferior debe ser más dura que la superior?",
+          answer:
+            "Porque un corte por cizalla necesita un diferencial de dureza para seguir siéndolo. Cuando ambas cuchillas tienen durezas próximas, el material de la zona de cizalla se deforma en lugar de separarse limpiamente, y aparecen un canto con rebaba y fibra aplastada que acaba como polvo en la bobina. La cuchilla inferior, más dura, mantiene una geometría de filo estable mientras la superior, más blanda, absorbe el desgaste; por eso la superior es la que se cambia con más frecuencia. Igualar las durezas es un error habitual y caro.",
+        },
+        {
+          question: "Tengo polvo en la bobina. ¿Dónde debo mirar primero?",
+          answer:
+            "En el propio corte, antes que en los limpiadores de banda y las barras antiestáticas. Una cuchilla inferior con el filo redondeado o con el acabado de cara degradado deja de cizallar y empieza a aplastar, y la fibra aplastada va directa a la bobina, apareciendo a menudo como defecto dos procesos más adelante. El indicio está en el momento: un polvo gradual apunta a la cuchilla, un polvo que aparece tras un cambio de calidad apunta al sustrato. Inspeccione el filo con aumento y compruebe el acabado de la cara, no solo el filo al tacto.",
+        },
+        {
+          question:
+            "¿Puedo pedir cuchillas inferiores sin sustituir las superiores?",
+          answer:
+            "Sí, y es la forma habitual de comprarlas. Las cuchillas inferiores suelen durar mucho más que las superiores, así que sustituirlas en el mismo ciclo desperdicia herramienta todavía útil. Indíquenos el DE/DI/espesor de la cuchilla inferior y la especificación de la cuchilla superior correspondiente, y ajustaremos la geometría de acoplamiento y el diferencial de dureza a lo que ya utiliza.",
+        },
+        {
+          question:
+            "¿Se pueden reponer las plaquitas de una cuchilla desgastada?",
+          answer:
+            "Sí, siempre que el cuerpo esté recto y verdadero y los asientos de soldadura estén sanos. Reponer plaquitas es bastante más barato que una cuchilla nueva y es la razón para elegir la versión con plaquitas frente al carburo macizo cuando la economía está ajustada. El carburo macizo no admite reposición: cuando el filo se agota, la cuchilla se agota, que es el compromiso que se acepta a cambio de la mayor vida útil por unidad.",
+        },
+      ],
+      company: [
+        {
+          question: "¿Qué necesitan para cotizar una cuchilla inferior?",
+          answer:
+            "Diámetro exterior, alojamiento y espesor de la cuchilla que utiliza ahora, la especificación de la cuchilla superior correspondiente, qué está cortando, la velocidad de línea y el número de cortes. Si desconoce alguno de esos datos, envíe la cuchilla desgastada o fotografías con un calibre en el encuadre: preferimos hacer ingeniería inversa a partir de una muestra antes que cotizar sobre una suposición.",
+        },
+        {
+          question:
+            "¿Suministran para marcas de rebobinadora que no aparecen en esta página?",
+          answer:
+            "Sí. Las plataformas enumeradas son las que vemos con más frecuencia, no un límite: las cuchillas inferiores se fabrican a la máquina en todos los casos. Cualquier rebobinadora cortadora eléctrica entra en alcance una vez tengamos las cotas de montaje y la especificación de la cuchilla superior correspondiente.",
+        },
+        {
+          question: "¿Cómo se embalan?",
+          answer:
+            "Individualmente, con el filo protegido y papel VCI contra la corrosión, en caja de madera a medida para los diámetros mayores. Una cuchilla inferior que llega con una muesca en el filo es inservible por bien fabricada que esté, así que el embalaje se especifica para el transporte, no para el almacén.",
+        },
+      ],
+    },
+  },
+  {
+    id: "box-slotting-knives",
+    name: "Cuchillas Ranuradoras para Cajas",
+    fullName:
+      "Cuchillas ranuradoras de carburo de precisión para cajas rígidas y de regalo",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Cuchillas para Embalaje y Cartón",
+    image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+    badge: "Pares Izquierda / Derecha",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Seis cuchillas ranuradoras de carburo dispuestas en abanico mostrando el rango de longitudes y anchos de stock",
+      "Par de cuchillas ranuradoras de carburo mostrando el bisel de ranurado rectificado",
+      "Cuchillas ranuradoras en estuches protectores etiquetados junto a dos cuchillas sueltas",
+    ],
+    description:
+      "Cuchillas ranuradoras de carburo para el ranurado en V de cartón gris en líneas de cajas rígidas y de regalo. Se suministran como pares de mano izquierda y derecha en cinco medidas de stock, de 50 × 12 mm a 60 × 15 mm, con 2,0 / 2,2 mm de espesor, en las calidades de carburo GS05U (optimizada al desgaste) y GS20U (tenaz). Ranuras limpias sin desgarrar ni deshilachar la cara del cartón, ajustables al espesor del material.",
+    fullDescription:
+      "Una caja rígida vale lo que vale su ranura. La ranura en V practicada en el cartón gris determina cómo pliega el material, y una ranura que desgarra o deshilacha la capa exterior se transparenta a través del forro como un defecto visible en un producto que se compra precisamente porque parece caro. En cajas de regalo y de lujo no existe tolerancia aceptable para una ranura irregular.\n\nLas cuchillas ranuradoras Sureay se rectifican en carburo de tungsteno de alta calidad y se suministran como pares emparejados de mano izquierda y derecha, porque así es como cortan. Las dos cuchillas forman juntas las paredes de la ranura; trabajar una cuchilla nueva contra una desgastada produce una ranura asimétrica que pliega fuera de escuadra, y por eso las cotizamos y enviamos por pares y no por unidades.\n\n## Dos calidades, una decisión\n\nGS05U es la calidad de mayor dureza, optimizada al desgaste, y la elección correcta para cartón gris estándar en tiradas largas. GS20U cede algo de dureza a cambio de tenacidad y es la calidad para cartón grueso y para cartón reciclado con inclusiones: la misma distinción que recorre toda aplicación de carburo, expresada aquí en términos de cartón. Elegir GS05U para cartón reciclado con impurezas es la forma más habitual de astillar estas cuchillas.\n\n## Ajustable al espesor del cartón\n\nLa separación entre cuchillas se ajusta al cartón que se está procesando, de modo que un solo par cubre un rango de calibres en lugar de quedar fijado a un único espesor. En la práctica, una línea de cajas rígidas que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura esté dentro del rango.\n\n## Aplicaciones\n\nRanurado en V de cartón gris en líneas de cajas rígidas y de regalo: embalaje de lujo, estuches de cosmética y de bebidas espirituosas, cajas de presentación, cartón para tapa dura y cartonaje rígido estándar.\n\n## Por qué cotizamos por pares\n\nLas dos cuchillas forman juntas las paredes de la ranura, así que se rectifican, se emparejan y se envían como par, y deben cambiarse como tal. Trabajar una cuchilla nueva contra una desgastada corta una ranura asimétrica, y una ranura asimétrica pliega fuera de escuadra: un defecto que se transparenta a través del forro precisamente en los productos que menos pueden permitírselo. Sustituir una sola cuchilla suele ser además un diagnóstico fallido: el fallo prematuro de una única cuchilla suele significar un impacto contra una inclusión o un error de reglaje, y ambos volverán a ocurrirle al recambio. Indíquenos cuántas estaciones de ranurado tiene la línea y cuántos pares consume en un mes típico y le cotizaremos una programación en lugar de una cantidad puntual, porque la mayoría de las líneas de cajas rígidas se sirven mejor con un pedido abierto que pidiendo cuando falla el último par.\n\n## GS05U o GS20U: decida por el cartón, no por la longitud de la tirada\n\nGS05U es más dura y se desgasta más despacio, lo que la hace adecuada para cartón gris virgen y limpio. GS20U cede dureza a cambio de tenacidad y sobrevive a las inclusiones, lo que la hace adecuada para cartón grueso y material reciclado. Los modos de fallo son distintos y en eso consiste toda la decisión: una cuchilla desgastada se rectifica y vuelve a servicio, una astillada se desecha. Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele costar menos a lo largo de un año aunque mida menor dureza y muestre menos vida de filo en una prueba con cartón limpio. Elegir la calidad más dura disponible para cartón contaminado es la forma más habitual de destruir estas cuchillas.\n\n## Ranuras que se deshilachan: ¿filo o reglaje?\n\nUna cara de ranura deshilachada es la firma de un filo que ha dejado de seccionar la fibra y ha empezado a empujarla. Compruebe primero los filos. Si siguen agudos, revise la separación entre cuchillas respecto al calibre del cartón: demasiado abierta y el cartón se rasga en lugar de cortarse, demasiado cerrada y la cara se aplasta. El momento distingue las dos causas de forma fiable: los problemas de reglaje aparecen inmediatamente después de un cambio, los problemas de filo aparecen de forma gradual a lo largo de una tirada. Como la separación se ajusta al cartón en lugar de ser fija, un solo par cubre un rango de calibres, de modo que una línea que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura siga dentro del rango.\n\n## Medidas y máquinas fuera de la lista\n\nLas cinco medidas de stock son las que más se piden, no un límite: longitudes, anchos y geometría de filo se fabrican según plano, y cualquier línea de ranurado en V de cartón gris o de ranurado de cajas rígidas entra en alcance en cuanto dispongamos de la geometría de la cuchilla. Si no tiene plano, envíe una cuchilla desgastada o fotografías con un calibre en el encuadre y le devolveremos un plano acotado para su aprobación antes de fabricar. Preferimos trabajar sobre su herramienta real antes que sobre una declaración de compatibilidad. Las medidas de stock se envían normalmente en pocos días laborables; las geometrías según plano requieren de 15 a 25 días laborables desde la aprobación del plano, y los pedidos repetidos contra un plano aprobado se cotizan el mismo día.",
+    link: "/products/box-slotting-knives",
+    specs: [
+      {
+        label: "Material",
+        value: "Carburo de tungsteno de alta calidad",
+      },
+      {
+        label: "Calidades",
+        value: "GS05U (desgaste) / GS20U (tenacidad)",
+      },
+      {
+        label: "Longitud",
+        value: "50 / 60 mm",
+      },
+      {
+        label: "Ancho",
+        value: "12 / 15 / 16 mm",
+      },
+      {
+        label: "Espesor",
+        value: "2,0 / 2,2 mm",
+      },
+      {
+        label: "Suministro",
+        value: "Pares emparejados de mano izquierda y derecha",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Ranurado en V de cartón gris en líneas de cajas rígidas y de regalo",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Ítem",
+      col1: "L × A (mm)",
+      col2: "Espesor T (mm)",
+      caption:
+        "* Cinco medidas de stock, suministradas como pares de mano izquierda y derecha. Otras longitudes, anchos y geometrías de filo se fabrican según plano o mediante ingeniería inversa a partir de una cuchilla desgastada.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "50 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "2",
+        od: "50 × 15",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "3",
+        od: "50 × 16",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "4",
+        od: "60 × 12",
+        id: "2 / 2.2",
+      },
+      {
+        spec: "5",
+        od: "60 × 15",
+        id: "2 / 2.2",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "En cuchillas ranuradoras la decisión de calidad es desgaste frente a tenacidad, y es el cartón el que indica cuál necesita. El cartón gris virgen y limpio desgasta el filo; el cartón reciclado con inclusiones lo astilla.",
+      rows: [
+        {
+          grade: "GS05U",
+          hardness: "Mayor dureza, optimizada al desgaste",
+          bestFor:
+            "Cartón gris virgen estándar en tiradas largas de producción — la calidad por defecto",
+          tradeoff:
+            "Menos indulgente con las inclusiones; se astilla en lugar de desgastarse si el cartón está contaminado",
+        },
+        {
+          grade: "GS20U",
+          hardness: "Mayor tenacidad",
+          bestFor:
+            "Cartón grueso y cartón reciclado con impurezas u otras inclusiones",
+          tradeoff: "Menor vida de filo que GS05U en cartón limpio",
+        },
+      ],
+      outro:
+        "Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele ganar en coste total aunque pierda en vida de filo: una cuchilla astillada se desecha, una desgastada se rectifica.",
+    },
+    components: [
+      {
+        id: "matched-pairs",
+        tag: "FORMATO DE SUMINISTRO",
+        title: "Izquierda y derecha suministradas como par",
+        description:
+          "Las dos cuchillas forman juntas las paredes de la ranura, así que se rectifican, se emparejan y se envían como par. Trabajar una cuchilla nueva contra una desgastada produce una ranura asimétrica que pliega fuera de escuadra: un defecto que se transparenta a través del forro justo en los productos que menos pueden permitírselo.",
+      },
+      {
+        id: "clean-groove-edge",
+        tag: "CALIDAD SUPERFICIAL",
+        title: "Ranuras que no desgarran la cara",
+        description:
+          "La geometría de filo se rectifica para seccionar la fibra del cartón gris en lugar de empujarla, de modo que las paredes de la ranura quedan limpias y la capa exterior no se deshilacha. En cajas rígidas y de regalo, la ranura marca la diferencia entre un pliegue que parece hecho a máquina y uno que parece dañado.",
+      },
+      {
+        id: "adjustable-gap",
+        tag: "FLEXIBILIDAD DE PROCESO",
+        title: "Ajustable al calibre del cartón",
+        description:
+          "La separación entre cuchillas se ajusta al cartón que se procesa, de modo que un solo par cubre un rango de calibres en lugar de quedar fijado a un único espesor. Una línea que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura siga dentro del rango.",
+      },
+    ],
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "tungsten-carbide-slitter-knives",
+      "paper-straw-slitting-blades",
+    ],
+    rfqPlaceholder:
+      "Ejemplo: línea de ranurado en V para cajas rígidas, cuchillas de 50 × 15 × 2,2 mm izquierda y derecha. Procesando cartón gris de 2 mm, parte reciclado. Ancho de ranura 2 mm. Necesito 10 pares y una recomendación de calidad.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Puedo sustituir solo una cuchilla del par cuando únicamente una está desgastada?",
+          answer:
+            "Puede hacerlo, pero suele ser una falsa economía. Las dos cuchillas forman juntas las paredes de la ranura, así que una cuchilla nueva trabajando contra una desgastada corta una ranura asimétrica y el cartón pliega fuera de escuadra. En cajas rígidas y de regalo eso se transparenta a través del forro. Si una cuchilla del par ha fallado prematuramente, conviene averiguar por qué: un fallo prematuro de una sola cuchilla suele significar un impacto contra una inclusión o un problema de reglaje, y ambos volverán a ocurrirle al recambio.",
+        },
+        {
+          question: "GS05U o GS20U: ¿cómo elijo?",
+          answer:
+            "Por lo que hay en el cartón, no por la duración de la tirada. GS05U es más dura y se desgasta más despacio, lo que la convierte en la calidad adecuada para cartón gris virgen y limpio. GS20U es más tenaz y sobrevive a las inclusiones, lo que la convierte en la calidad adecuada para cartón grueso y material reciclado. Los modos de fallo son distintos y en eso consiste toda la decisión: una cuchilla desgastada se rectifica y vuelve a servicio, una astillada se desecha. Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele costar menos a lo largo de un año.",
+        },
+        {
+          question:
+            "Mis ranuras se deshilachan en la cara. ¿Es la cuchilla o el reglaje?",
+          answer:
+            "Compruebe primero el filo. Una cara de ranura deshilachada es la firma de un filo que ha dejado de seccionar la fibra y ha empezado a empujarla, el mismo fallo que aparece como corte velloso en cualquier aplicación sobre cartón. Si los filos siguen agudos, revise la separación entre cuchillas respecto al calibre del cartón: demasiado abierta y el cartón se rasga en lugar de cortarse, demasiado cerrada y la cara se aplasta. Los problemas de reglaje suelen aparecer inmediatamente después de un cambio; los de filo, de forma gradual.",
+        },
+        {
+          question: "¿Pueden fabricar longitudes distintas de 50 y 60 mm?",
+          answer:
+            "Sí. Las medidas de stock son las que más se piden, no un límite: longitudes, anchos y geometría de filo se fabrican según plano. Si no dispone de plano, envíe una cuchilla desgastada o fotografías con un calibre en el encuadre y elaboraremos un plano acotado para su aprobación antes de fabricar.",
+        },
+      ],
+      company: [
+        {
+          question: "¿Se cotizan por cuchilla o por par?",
+          answer:
+            "Por par, porque así es como cortan y como deben cambiarse. Indíquenos cuántas estaciones de ranurado tiene la línea y cuántos pares consume en un mes típico, y le cotizaremos una programación en lugar de una cantidad puntual: la mayoría de las líneas de cajas rígidas se sirven mejor con un pedido abierto que pidiendo cuando falla el último par.",
+        },
+        {
+          question: "¿Para qué máquinas ranuradoras suministran?",
+          answer:
+            "Las cuchillas se fabrican a la máquina, así que cualquier línea de ranurado en V de cartón gris o de ranurado de cajas rígidas entra en alcance en cuanto dispongamos de la geometría de la cuchilla. Envíe la marca y el modelo de la máquina junto con las dimensiones de las cuchillas que utiliza ahora —o una muestra desgastada— y las igualaremos. Preferimos trabajar sobre su herramienta real antes que sobre una declaración de compatibilidad.",
+        },
+        {
+          question: "¿Cuál es el plazo de entrega?",
+          answer:
+            "Las medidas de stock se envían normalmente en pocos días laborables desde la confirmación del pedido. Las geometrías según plano requieren de 15 a 25 días laborables desde la aprobación del plano. Los pedidos repetidos contra un plano aprobado se cotizan el mismo día, ya que la geometría queda archivada.",
+        },
+      ],
+    },
+  },
+  {
+    id: "paper-straw-slitting-blades",
+    name: "Cuchillas de Corte para Pajitas de Papel y Filtros",
+    fullName:
+      "Cuchillas circulares de carburo para pajitas de papel y varillas de filtro",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Cuchillas Cortadoras",
+    image:
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+    badge: "Recubrimiento Antiadherente",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
+    ],
+    galleryAlts: [
+      "Cuchilla circular de carburo para corte de pajitas de papel y varillas de filtro, cara completa y alojamiento central",
+      "Par de cuchillas circulares de carburo para corte de pajitas de papel, cara y alojamiento central",
+      "Detalle de la cara pulida a espejo y del filo de corte de una cuchilla para pajitas de papel",
+    ],
+    description:
+      "Cuchillas circulares de carburo antiadherentes para el corte de pajitas de papel y varillas de filtro. Diámetro exterior Φ88–Φ100, espesor 0,15–0,30 mm, en seis medidas de stock. El recubrimiento antiadherente resiste la acumulación de adhesivo de base acuosa, de modo que el canto de corte se mantiene escuadrado y sin deshilachar durante tiradas largas en máquinas de alta velocidad de pajitas y varillas de filtro.",
+    fullDescription:
+      "En una línea de pajitas de papel la cuchilla no suele fallar por desgaste. Falla porque recoge cola. El adhesivo de base acuosa se transfiere a la cara de la cuchilla, forma un cordón a lo largo del filo de corte y, a partir de ese momento, la cuchilla deja de cortar el tubo y empieza a arrastrarlo, que es exactamente lo que es un extremo de pajita deshilachado. El filo no es la variable que lo resuelve.\n\nPor eso estas cuchillas se especifican en torno a la liberación del adhesivo y no solo en torno a la dureza. Un sustrato de carburo mantiene el filo; el recubrimiento antiadherente mantiene limpia la cara para que el filo pueda seguir trabajando. En una línea con adhesivo de base acuosa, el recubrimiento aporta más a la calidad de corte que un punto adicional de dureza.\n\n## Las líneas de pajitas no son líneas de varilla de filtro\n\nLas dos aplicaciones comparten ascendencia de maquinaria y geometría de cuchilla, pero no sus condiciones de fallo. El corte de varilla de filtro en maquinaria tabaquera trabaja a muy alta velocidad sobre un material homogéneo y bien caracterizado. Las líneas de pajitas de papel son más recientes, procesan una gama más amplia de capas y gramajes de papel y utilizan adhesivos que varían entre fabricantes, de modo que la vida de la cuchilla en una línea de pajitas es mucho más sensible al adhesivo que al papel. Si está poniendo en marcha una línea nueva de pajitas, cuente con ajustar la especificación de cuchilla frente a su adhesivo y no frente a su papel.\n\n## Cuchillas finas, consecuencias reales\n\nCon 0,15 a 0,30 mm estas son cuchillas finas, y el espesor es una decisión de proceso. Una cuchilla más fina retira menos material y deja un extremo más escuadrado en tubo de pared delgada; una cuchilla más gruesa es más estable a velocidad y más tolerante con una máquina con excentricidad. Equivocarse aquí se manifiesta o bien como un extremo irregular o bien como una cuchilla que flexa y se desvía.\n\n## Aplicaciones\n\nMáquinas de bobinado y corte de pajitas de papel; máquinas de varilla de filtro para cigarrillos, incluidas plataformas Hauni; corte de tubo y mandril de papel en equipos de transformación de alta velocidad comparables.\n\n## Diagnóstico de un extremo de pajita deshilachado\n\nSi los extremos se deshilachan mientras el filo todavía se nota agudo, la causa es casi siempre acumulación de adhesivo y no desgaste. El adhesivo de base acuosa se transfiere a la cara de la cuchilla y forma un cordón a lo largo del filo; a partir de ahí la cuchilla arrastra el tubo en lugar de seccionarlo, y un tubo arrastrado se deshilacha. El filo que hay debajo puede estar perfectamente en servicio. Limpie la cara e inspecciónela al trasluz antes de cambiar la cuchilla: si el depósito es visible, la respuesta es un recubrimiento o un intervalo de limpieza, no una cuchilla más afilada. Perseguir esto como un problema de filo es la forma habitual en que una línea de pajitas consume cuchillas que no necesitaba sustituir.\n\n## El espesor es una elección de proceso\n\nCon 0,15 a 0,30 mm, el espesor no es una cota residual. Una cuchilla más fina retira menos material y deja un extremo más escuadrado en pajitas de pared delgada y pocas capas, y por eso es la elección en pajitas de gama alta. Una cuchilla más gruesa es más rígida, trabaja de forma más estable a velocidad y tolera la excentricidad del husillo, lo que la convierte en la opción más segura en maquinaria antigua o en tubo multicapa más grueso. Equivocarse produce o bien un extremo irregular o bien una cuchilla que flexa y se desvía, y los dos defectos no se parecen en nada: indíquenos el número de capas, el gramaje y la máquina y le haremos una recomendación en lugar de dejarle adivinar.\n\n## Herencia de varilla de filtro, realidad de la pajita\n\nMuchas líneas de pajitas se construyeron sobre maquinaria de varilla de filtro, y la geometría de cuchilla a menudo es intercambiable en cotas. Lo que no se transfiere es la lógica de especificación. El corte de varilla de filtro trabaja a muy alta velocidad sobre un material homogéneo y bien caracterizado; las líneas de pajitas procesan papeles más variados y, sobre todo, adhesivos que varían entre fabricantes. Una cuchilla que rinde en una máquina Hauni de varilla de filtro puede empastarse en horas en una línea de pajitas con otra cola. Especifique frente al adhesivo, no frente a la ascendencia de la máquina: el adhesivo es el dato más útil que puede darnos en esta aplicación y el que más compradores omiten.\n\n## Recubrimientos, rectificado y puesta en marcha de una línea nueva\n\nEl recubrimiento antiadherente es una capa superficial, y rectificar el filo la elimina justo donde más importa, de modo que las cuchillas recubiertas de este tipo se llevan hasta el final de su vida y se sustituyen en lugar de integrarse en un ciclo de rectificado. Si su economía favorece el rectificado, le cotizaremos carburo sin recubrir y usted acepta una limpieza de cara más frecuente como contrapartida. En una línea todavía en puesta en marcha, el primer paso útil es una pequeña cantidad de prueba con dos especificaciones —normalmente una cuchilla recubierta y un espesor distinto— ensayadas contra su adhesivo y su papel reales. Quince días de eso dicen más que cualquier comparación de fichas técnicas y fijan correctamente la especificación del pedido recurrente desde el principio. Las medidas de stock se envían por lo general en pocos días laborables; los diámetros, alojamientos y espesores a medida requieren de 15 a 25 días laborables desde la aprobación del plano, con algunos días adicionales para el ciclo de recubrimiento.",
+    link: "/products/paper-straw-slitting-blades",
+    introNote:
+      "La producción de pajitas de papel concentra hoy la mayor parte de la demanda de estas cuchillas. Si su línea trabaja con adhesivo de base acuosa, indíquenos cuál: predice la vida de la cuchilla en esta aplicación mejor que la especificación del papel.",
+    compatibleMachines: ["Hauni"],
+    specs: [
+      {
+        label: "Material",
+        value: "Carburo de tungsteno con recubrimiento antiadherente",
+      },
+      {
+        label: "Diámetro exterior",
+        value: "Φ88–Φ100 mm",
+      },
+      {
+        label: "Alojamiento",
+        value: "Φ15 / Φ16 / Φ45 mm",
+      },
+      {
+        label: "Espesor",
+        value: "0,15–0,30 mm",
+      },
+      {
+        label: "Función del recubrimiento",
+        value:
+          "Resiste la acumulación de adhesivo de base acuosa en la cara de la cuchilla",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Corte de pajitas de papel, corte de varilla de filtro, corte de tubo de papel",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Ítem",
+      col1: "DE ØD (mm)",
+      col2: "Alojamiento Ød (mm)",
+      col3: "Espesor T (mm)",
+      caption:
+        "* Seis medidas de stock. Otros diámetros, alojamientos y espesores se fabrican según plano: envíe el modelo de máquina, el número de capas de la pajita y el tipo de adhesivo y especificaremos la cuchilla en consecuencia.",
+    },
+    standardDimensions: [
+      {
+        spec: "1",
+        od: "Φ88",
+        id: "Φ16",
+        thickness: "0.26",
+      },
+      {
+        spec: "2",
+        od: "Φ89",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "3",
+        od: "Φ90",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "4",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.15",
+      },
+      {
+        spec: "5",
+        od: "Φ100",
+        id: "Φ15",
+        thickness: "0.30",
+      },
+      {
+        spec: "6",
+        od: "Φ100",
+        id: "Φ45",
+        thickness: "0.20",
+      },
+    ],
+    steelGrades: {
+      intro:
+        "En trabajos con adhesivo, la superficie importa más que el sustrato. Elija el recubrimiento por el adhesivo que utiliza y después elija el sustrato por el papel.",
+      rows: [
+        {
+          grade: "Carburo + recubrimiento antiadherente",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Líneas de pajitas con adhesivo de base acuosa y corte de varilla de filtro — la especificación por defecto",
+          tradeoff:
+            "Precio unitario más alto; el recubrimiento es una capa consumible y no sobrevive a un rectificado",
+        },
+        {
+          grade: "Carburo sin recubrir",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Aplicaciones secas o de baja adherencia, y corte de tubo de papel sin adhesivo en la línea de corte",
+          tradeoff:
+            "Recoge adhesivo con rapidez en líneas encoladas; el canto de corte se deshilacha mucho antes de que el filo esté gastado",
+        },
+        {
+          grade: "Acero de herramientas",
+          hardness: "60–63 HRC",
+          bestFor:
+            "Pruebas, tiradas cortas y líneas de baja velocidad donde manda el coste",
+          tradeoff:
+            "Pierde el filo rápidamente a velocidades de línea de pajitas; no es viable en producción continua",
+        },
+      ],
+    },
+    components: [
+      {
+        id: "adhesive-release-coating",
+        tag: "TRATAMIENTO SUPERFICIAL",
+        title: "Recubierta para liberar el adhesivo, no solo por dureza",
+        description:
+          "En líneas con adhesivo de base acuosa la cuchilla falla por acumulación, no por desgaste. El recubrimiento antiadherente mantiene limpia la cara para que el filo siga cortando el tubo en lugar de arrastrarlo, que es el mecanismo real detrás de un extremo de pajita sin deshilachar.",
+      },
+      {
+        id: "thin-section-stability",
+        tag: "GEOMETRÍA DE CUCHILLA",
+        title: "0,15–0,30 mm, especificado según el corte",
+        description:
+          "El espesor es una elección de proceso, no un resto. Las cuchillas más finas retiran menos material y dejan un extremo más escuadrado en tubo de pared delgada; las más gruesas trabajan de forma más estable a velocidad y toleran la excentricidad de la máquina. Lo especificamos según su número de capas y su máquina en lugar de recurrir a un valor único.",
+      },
+      {
+        id: "straw-line-tuning",
+        tag: "INGENIERÍA DE APLICACIÓN",
+        title: "Ajustada al adhesivo, no solo al papel",
+        description:
+          "Las líneas de pajitas de papel varían mucho más en adhesivo que en papel, y la vida de la cuchilla sigue al adhesivo. Indíquenos cuál utiliza y especificaremos recubrimiento y geometría en consecuencia: es el dato más útil que puede darnos en esta aplicación.",
+      },
+    ],
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+    ],
+    rfqPlaceholder:
+      "Ejemplo: estación de corte de pajitas de papel, cuchilla Φ100 × Φ15 × 0,20 mm. Pajita de tres capas, kraft de 60 g/m², adhesivo de base acuosa. Las cuchillas se empastan al cabo de unas 6 horas y los extremos de la pajita se deshilachan. Necesito 50 unidades, recubiertas.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Los extremos de mis pajitas se deshilachan pero el filo de la cuchilla todavía se nota agudo. ¿Qué está pasando?",
+          answer:
+            "Casi con seguridad, acumulación de adhesivo. El adhesivo de base acuosa se transfiere a la cara de la cuchilla y forma un cordón a lo largo del filo de corte; a partir de ahí la cuchilla arrastra el tubo en lugar de seccionarlo, y un tubo arrastrado se deshilacha. El filo que hay debajo puede estar perfectamente en servicio. Limpie la cara e inspecciónela al trasluz antes de cambiar la cuchilla: si el depósito es visible, la respuesta es un recubrimiento o un intervalo de limpieza, no una cuchilla más afilada.",
+        },
+        {
+          question: "¿Debo utilizar 0,15 mm o 0,30 mm?",
+          answer:
+            "Depende del tubo y de la máquina. Una cuchilla más fina retira menos material y da un extremo más escuadrado en pajitas de pared delgada y pocas capas, y por eso es la elección en pajitas de gama alta. Una cuchilla más gruesa es más rígida, trabaja de forma más estable a velocidad y tolera la excentricidad del husillo, y por eso es la opción más segura en maquinaria antigua o en tubo multicapa más grueso. Indíquenos el número de capas, el gramaje y la máquina y le haremos una recomendación en lugar de dejarle adivinar.",
+        },
+        {
+          question: "¿Sobrevive el recubrimiento al rectificado?",
+          answer:
+            "No. El recubrimiento es una capa superficial, y rectificar el filo lo elimina justo donde más importa. En cuchillas recubiertas de este tipo, el enfoque práctico es llevarlas hasta el final de su vida y sustituirlas, en lugar de construir un ciclo de rectificado en torno a ellas. Si su economía favorece el rectificado, podemos cotizarle carburo sin recubrir y usted acepta una limpieza de cara más frecuente como contrapartida.",
+        },
+        {
+          question:
+            "¿Son intercambiables las cuchillas de varilla de filtro y las de pajita de papel?",
+          answer:
+            "En cotas a menudo sí: el linaje geométrico es el mismo y muchas líneas de pajitas se construyeron sobre maquinaria de varilla de filtro. Lo que no se transfiere es la lógica de especificación. El corte de varilla de filtro trabaja a muy alta velocidad sobre un material homogéneo; las líneas de pajitas procesan papel variado y, sobre todo, adhesivo variado. Una cuchilla que rinde en una máquina Hauni de varilla de filtro puede empastarse en una línea de pajitas con otra cola. Especifique frente al adhesivo, no frente a la ascendencia de la máquina.",
+        },
+      ],
+      company: [
+        {
+          question: "¿Qué información necesitan para cotizar?",
+          answer:
+            "Diámetro exterior, alojamiento y espesor; el modelo de máquina; el número de capas de la pajita y el gramaje del papel; el tipo de adhesivo; y su intervalo actual de cambio. El adhesivo es el dato que más compradores omiten y el que mejor predice la vida de la cuchilla en esta aplicación, así que inclúyalo aunque no esté seguro de que importe.",
+        },
+        {
+          question:
+            "¿Pueden suministrar para una línea de pajitas que todavía estamos poniendo en marcha?",
+          answer:
+            "Sí, y conviene contar con nosotros pronto. En una línea nueva, el primer paso útil es una pequeña cantidad de prueba con dos especificaciones —normalmente una cuchilla recubierta y un espesor distinto— ensayadas contra su adhesivo y su papel reales. Eso dice más en quince días que cualquier comparación de fichas técnicas, y fija correctamente desde el principio la especificación del pedido recurrente.",
+        },
+        {
+          question: "¿Cuáles son los plazos de entrega?",
+          answer:
+            "Las medidas de stock se envían por lo general en pocos días laborables. Los diámetros, alojamientos y espesores a medida requieren de 15 a 25 días laborables desde la aprobación del plano. Las cuchillas recubiertas añaden unos días sobre las no recubiertas por el ciclo de recubrimiento, así que téngalo en cuenta al planificar una primera prueba.",
+        },
+      ],
+    },
+  },
 ];

@@ -293,9 +293,13 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
 
   // Products without explicit entries — titles from blade.fullName would exceed 70 chars
   "bottom-grooved-anvil-knives": {
-    title: "Bottom Grooved Anvil Knives for Shear Slitting",
+    title: "Bottom Grooved Anvil Knives | Shear Pair Anvils | Sureay",
     description:
       "Bottom grooved anvil knives for shear slitting of film, paper, foil & tape. D2, M2 HSS & carbide. OEM fit Tidland, Kampf, Atlas & BHS arbor systems.",
+    // Owns the anvil intent only. "Multi-groove" and "cutter ring" belong to
+    // /products/groove-bottom-knives; "rewinder" to slitter-rewinder-bottom-knives.
+    keywords:
+      "bottom anvil knife, grooved anvil knife, shear slitting anvil, anvil knives for slitting, Tidland anvil knife, Kampf anvil blade, crush cut anvil blade",
   },
   "continuous-melt-filter-scraper-blades": {
     title: "Melt Filter Scraper Blades & Filter Plates",
@@ -306,6 +310,44 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Strand Pelletizer Rotors for Compounding Lines",
     description:
       "Strand pelletizer rotors for plastic compounding lines. PM-HSS & carbide, ≤0.005mm concentricity. Drop-in fit for Maag, Coperion & Cumberland pelletizers.",
+  },
+
+  // ── Bookbinding, packaging & sports facility blades (English-only) ──────
+
+  "slitter-rewinder-bottom-knives": {
+    title: "Slitter Rewinder Bottom Knives | Paper Rewinder Blades | Sureay",
+    description:
+      "Solid and carbide-tipped bottom knives for paper slitter rewinders. Mirror finish, burr-free, dust-reduced. Φ250–Φ254 stock sizes, custom bores to machine.",
+    // Owns the machine/platform intent: "slitter rewinder", "rewinder", brand
+    // names. Groove and anvil terms belong to the other two bottom-knife pages.
+    keywords:
+      "slitter rewinder bottom knives, rewinder bottom knife, paper rewinder blades, Jagenberg rewinder knives, Bielomatik bottom knife, ECH Will rewinder blades, Maxson rewinder knives",
+  },
+
+  "box-slotting-knives": {
+    title: "Box Slotting Knives | Carbide Grooving Knives | Sureay",
+    description:
+      "Carbide slotting knives for greyboard and rigid gift box machines. Left/right pairs, GS05U and GS20U grades, five stock sizes, adjustable to board thickness.",
+    keywords:
+      "box slotting knives, greyboard grooving knife, rigid box slotting blade, gift box V groove knife, carbide slotting knife",
+  },
+
+  "paper-straw-slitting-blades": {
+    title: "Paper Straw Cutting Blades | Non-Stick Carbide Slitters | Sureay",
+    description:
+      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100, 0.15–0.30 mm. Resist adhesive build-up for fray-free cut ends.",
+    keywords:
+      "paper straw cutting blades, paper straw slitting knife, filter rod cutting blade, non-stick carbide circular blade, Hauni filter blade",
+  },
+
+  "groove-bottom-knives": {
+    title: "Multi-Groove Bottom Knives | Bottom Cutter Rings | Sureay",
+    description:
+      "Multi-groove bottom knife rings for shear slitting. Groove pitch from 5 mm, OD to Φ406 mm, air-shaft or set-screw bore. Single-groove and smooth rings too.",
+    // Owns the groove/ring-format intent. Does not target "slitter rewinder
+    // bottom knife" (its own page) or "anvil" (bottom-grooved-anvil-knives).
+    keywords:
+      "multi groove bottom knife, groove bottom knives, multi groove bottom slitter, bottom cutter rings, multi blade cutter ring, single blade cutter ring, smooth spacer ring, MKB bottom knife, groove pitch cutter ring, split cutter ring",
   },
 };
 

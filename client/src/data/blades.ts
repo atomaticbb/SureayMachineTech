@@ -438,7 +438,7 @@ export const blades: Blade[] = [
     description:
       "Paper slitter knives ground for cellulose, not repurposed from film tooling. Matched top and bottom shear pairs in D2, M2 HSS or 52100, held to ±0.002mm on thickness and ≤0.02mm runout, with clearance pre-set to the substrate you are running: 0.02–0.05mm for tissue, 0.05–0.10mm for kraft. Rated to 600 m/min on tissue lines. Send a drawing, a worn blade or just your machine model and we will confirm fitment.",
     fullDescription:
-      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with multi-groove geometry that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
+      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with a slotted groove profile that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
     disambiguation:
       "Slitting film, tape or flexible packaging? Those blades are on our [Film & Tape Slitter Knives](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
     categoryCardAnchorText:
@@ -1948,7 +1948,7 @@ export const blades: Blade[] = [
       },
     ],
 
-    relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
+    relatedBladeIds: ["tissue-log-saw-blades", "three-knife-trimmer-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 650,
@@ -3610,7 +3610,11 @@ export const blades: Blade[] = [
       { spec: "TCY / Justu", od: "200 mm", id: "122 mm", thickness: "1.2 mm" },
     ],
 
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives"],
+    relatedBladeIds: [
+      "paper-cutting-blades",
+      "rotary-slitter-knives",
+      "box-slotting-knives",
+    ],
     offers: {
       lowPrice: 35,
       highPrice: 150,
@@ -3974,13 +3978,16 @@ export const blades: Blade[] = [
     ],
 
     description:
-      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Multi-groove profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
+      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Single and twin-groove anvil profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
 
     fullDescription:
-      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with multi-groove geometry that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
+      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with a slotted groove profile that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
 
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
+
+    disambiguation:
+      "These are disc anvils carrying one to three OEM-matched grooves. If you need a wide ring carrying many slit positions on one body, see [Groove Bottom Knives](/products/groove-bottom-knives).",
 
     compatibleMachines: [
       "Tidland",
@@ -4050,7 +4057,7 @@ export const blades: Blade[] = [
       col2: "Thickness (mm)",
       col3: "Groove (W × D / Angle)",
       caption:
-        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Multi-groove (2+ slots) configurations available on request.",
+        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Anvils carrying more than three slots are supplied as bottom cutter rings — see groove bottom knives.",
     },
 
     standardDimensions: [
@@ -4061,7 +4068,7 @@ export const blades: Blade[] = [
         thickness: "W: 1.2 × D: 2.0 / 60°",
       },
       {
-        spec: "Atlas — Multi-Groove (3 Slots)",
+        spec: "Atlas — 3-Slot Anvil",
         od: "100 × 60",
         id: "20 / 25",
         thickness: "W: 1.5 × D: 2.5 / 60°",
@@ -4087,9 +4094,9 @@ export const blades: Blade[] = [
     ],
 
     relatedBladeIds: [
+      "groove-bottom-knives",
       "rotary-slitter-knives",
       "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -6314,6 +6321,792 @@ export const blades: Blade[] = [
           question: "What quality documentation ships with each anvil?",
           answer:
             "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 37. Slitter Rewinder Bottom Knives (circular bottom knives, paper rewinding)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "slitter-rewinder-bottom-knives",
+    name: "Slitter Rewinder Bottom Knives",
+    fullName:
+      "Carbide Slitter Rewinder Bottom Knives for Paper & Film Rewinding Lines",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Slitter Knives",
+    image:
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+    badge: "Mirror Finish",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
+      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Range of slitter rewinder bottom knives and blade rings in four diameters",
+      "Pair of carbide slitter rewinder bottom knives showing bore and bolt holes",
+      "Single slitter rewinder bottom knife ring with mirror-finished running face",
+    ],
+
+    description:
+      "Solid and carbide-tipped bottom knives for high-speed paper slitter rewinders. Mirror-finished faces, burr-free cutting and reduced dust in the wound roll. Φ250–Φ254 stock sizes in thicknesses from 15 to 50 mm, custom bores to machine. Fits Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban and other electric rewinder platforms.",
+
+    fullDescription:
+      "The bottom knife on a slitter rewinder is the fixed half of a shear pair, and it is deliberately the harder half. That hardness differential between top and bottom knife is not incidental — it is the mechanism that keeps the cut clean. When the two knives are close in hardness, the shear zone deforms rather than shears, and the result is a burred slit edge and dust carried into the wound roll.\n\nSureay bottom knives are supplied in solid tungsten carbide and carbide-tipped construction, with mirror-finished faces and a keen, precisely located edge. On the tipped version the carbide is set by a controlled hot-setting process so the inserts stay bonded under high-speed running rather than loosening in service, and worn inserts can be replaced without scrapping the body.\n\n## Why Dust in the Roll Is a Bottom Knife Problem\n\nOperators usually chase dust upstream — web cleaners, static bars, extraction. Often the source is the slit itself. A bottom knife whose edge has rounded or whose face has lost its finish stops shearing and starts crushing, and crushed paper fibre becomes airborne dust that is wound directly into the roll and shows up as a converting defect two processes later. If dust appeared gradually rather than after a grade change, the bottom knife is the first thing to inspect.\n\n## Materials by Substrate\n\nSolid tungsten carbide is the longest-life choice and the right answer on abrasive and heavily coated stocks. Carbide-tipped is the best cost-to-life balance for general paper, and it has the practical advantage of being re-tippable. HSS remains reasonable for short runs on soft stocks and lowest unit cost.\n\n## Applications\n\nPaper, film, foil and similar web materials on electric slitter rewinder platforms — reel slitting, roll converting and rewinding lines running coated and uncoated paper, board, and light flexible substrates.\n\n## The Hardness Differential Is the Whole Mechanism\n\nA shear cut needs a hardness differential to stay a shear cut. When top and bottom knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and the outputs are a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often, and why replacing both on the same cycle wastes serviceable tooling. Matching the two hardnesses is a common and expensive specification mistake, and it is worth checking on any line where slit quality has drifted after a tooling change.\n\n## Dust in the Roll Usually Starts at the Slit\n\nOperators chase dust upstream — web cleaners, static bars, extraction — when the source is frequently the cut itself. A bottom knife whose edge has rounded, or whose face finish has dulled, stops shearing and starts crushing; crushed fibre is wound directly into the roll and shows up as a converting defect two processes later. The timing is the tell: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish rather than testing sharpness by feel, because face finish degrades before the edge does and raises dust well before anyone would call the knife blunt.\n\n## Solid Carbide or Carbide-Tipped\n\nSolid tungsten carbide gives the longest single service life and is the right answer on abrasive and heavily coated stocks, but when the edge is spent the knife is spent. Carbide-tipped costs less, lasts less per cycle, and is re-tippable: provided the body is straight and true and the braze seats are sound, worn inserts are replaced and the knife returns to service. That re-tippability is usually the deciding factor when the economics between the two are close. On the tipped construction the inserts are hot-set under controlled conditions so they stay bonded at rewinder speeds rather than loosening in service — braze quality, not carbide grade, is what limits the life of a badly made tipped knife.\n\n## What We Need to Match Your Machine\n\nBottom knives are made to the machine in every case, so the listed rewinder platforms are the ones we see most often rather than a limit. To quote, send the OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, the line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption. Knives ship individually with the edge protected and VCI paper against corrosion, crated for the larger diameters, because a bottom knife that arrives with a nicked edge is useless however well it was ground.",
+
+    link: "/products/slitter-rewinder-bottom-knives",
+
+    disambiguation:
+      "These are circular bottom knives that run as a shear pair with a top knife on rewinding lines. If you need flat anvils for crush cutting instead, see [Bottom Grooved Anvil Knives](/products/bottom-grooved-anvil-knives).",
+
+    compatibleMachines: [
+      "Beck",
+      "Bielomatik",
+      "Clark Aiken",
+      "DATM",
+      "Didde",
+      "ECH Will",
+      "Harris",
+      "Hamblett",
+      "Jagenberg",
+      "Langston",
+      "Lenox",
+      "Maxson",
+      "Miltex",
+      "Masson Scott",
+      "Pasaban",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "Solid tungsten carbide / carbide-tipped / HSS",
+      },
+      { label: "Outer Diameter", value: "Φ250–Φ254 mm standard" },
+      { label: "Thickness", value: "15 / 20 / 25 / 50 mm" },
+      { label: "Face Finish", value: "Mirror finished" },
+      {
+        label: "Design Principle",
+        value: "Bottom knife harder than the top knife — burr and dust control",
+      },
+      {
+        label: "Materials Slit",
+        value: "Paper, film, foil and similar web substrates",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Item",
+      col1: "OD ØD (mm)",
+      col2: "Bore Ød (mm)",
+      col3: "Thickness T (mm)",
+      caption:
+        "* Standard rewinder bottom knife sizes. Bore, thickness and edge geometry are matched to the machine — send the OD/ID/T of the knife you run now plus the matching top knife spec.",
+    },
+
+    standardDimensions: [
+      { spec: "1", od: "Φ250", id: "Φ188", thickness: "25" },
+      { spec: "2", od: "Φ254", id: "Φ195", thickness: "50" },
+      { spec: "3", od: "Φ250", id: "Φ188", thickness: "15" },
+      { spec: "4", od: "Φ250", id: "Φ140", thickness: "20" },
+    ],
+
+    steelGrades: {
+      intro:
+        "The bottom knife should always be the harder half of the pair. Within that rule, the grade is chosen on how abrasive the substrate is and on whether you want a re-tippable body.",
+      rows: [
+        {
+          grade: "Solid tungsten carbide",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Abrasive and heavily coated stocks; the longest interval between changes",
+          tradeoff:
+            "Highest unit price, and the whole knife is scrapped when the edge is spent",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 at the tip",
+          bestFor:
+            "General paper and board — the best cost-to-life balance, and re-tippable",
+          tradeoff:
+            "Braze quality decides service life; poorly set inserts loosen at speed",
+        },
+        {
+          grade: "HSS",
+          hardness: "62–64 HRC",
+          bestFor: "Short runs, soft uncoated stocks, lowest unit cost",
+          tradeoff:
+            "Edge rounds quickly at rewinder speeds, which is where dust in the roll begins",
+        },
+      ],
+      outro:
+        "Whichever grade you choose, keep the hardness differential with the top knife. Matching the two hardnesses is a common and expensive mistake — it removes the shear and leaves you crushing the web.",
+    },
+
+    components: [
+      {
+        id: "hardness-differential",
+        tag: "SHEAR MECHANICS",
+        title: "Deliberately Harder Than the Top Knife",
+        description:
+          "The bottom knife is specified harder than its mating top knife on purpose. That differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll.",
+      },
+      {
+        id: "mirror-face-finish",
+        tag: "SURFACE FINISH",
+        title: "Mirror-Finished Running Face",
+        description:
+          "A polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut. Face finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out.",
+      },
+      {
+        id: "hot-set-carbide",
+        tag: "CONSTRUCTION",
+        title: "Controlled Hot-Set Carbide Inserts",
+        description:
+          "On the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running. The practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+
+    rfqPlaceholder:
+      "Example: Jagenberg rewinder, bottom knife Φ250 × Φ188 × 25 mm, matched to a Φ200 top knife. Slitting 120 gsm coated paper at 800 m/min, 12 slits. Getting dust in the roll and a slightly burred edge.",
+
+    faqs: {
+      technical: [
+        {
+          question: "Why should the bottom knife be harder than the top knife?",
+          answer:
+            "Because a shear cut needs a hardness differential to stay a shear cut. When the two knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and you get a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often. Matching the hardnesses is a common and expensive mistake.",
+        },
+        {
+          question:
+            "I am getting dust in the wound roll. Where should I look first?",
+          answer:
+            "At the slit itself, before the web cleaners and static bars. A bottom knife whose edge has rounded or whose face finish has dulled stops shearing and starts crushing, and crushed fibre goes straight into the roll — often showing up as a defect two processes later. The tell is timing: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish, not just sharpness by feel.",
+        },
+        {
+          question:
+            "Can I order bottom knives without replacing the top knives?",
+          answer:
+            "Yes, and it is the normal way these are bought. Bottom knives typically outlast top knives by a wide margin, so replacing them on the same cycle wastes serviceable tooling. Give us the bottom knife OD/ID/thickness and the matching top knife specification, and we will match the mating geometry and the hardness differential to what you already run.",
+        },
+        {
+          question: "Can worn carbide-tipped knives be re-tipped?",
+          answer:
+            "Yes, provided the body is straight and true and the braze seats are sound. Re-tipping is substantially cheaper than a new knife and is the reason to choose tipped over solid carbide when the economics are close. Solid carbide cannot be re-tipped — when the edge is spent the knife is spent, which is the trade you accept for the longest single service life.",
+        },
+      ],
+      company: [
+        {
+          question: "What do you need to quote a bottom knife?",
+          answer:
+            "OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption.",
+        },
+        {
+          question:
+            "Do you supply for rewinder brands outside the list on this page?",
+          answer:
+            "Yes. The listed platforms are the ones we see most often, not a limit — bottom knives are made to the machine in every case. Any electric slitter rewinder is in scope once we have the mounting dimensions and the mating top knife specification.",
+        },
+        {
+          question: "How are these packed?",
+          answer:
+            "Individually, with the edge protected and VCI paper against corrosion, in a fitted crate for the larger diameters. Bottom knives that arrive with a nicked edge are useless regardless of how they were made, so the packing is specified for the transit rather than for the shelf.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 38. Box Slotting Knives (rigid & gift box greyboard grooving)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "box-slotting-knives",
+    name: "Box Slotting Knives",
+    fullName: "Precision Carbide Slotting Knives for Rigid & Gift Box Grooving",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Packaging & Board Knives",
+    image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+    badge: "Left / Right Pairs",
+    badgeColor: "teal",
+    gallery: [
+      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
+      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Six carbide box slotting knives fanned out to show the stock length and width range",
+      "Pair of carbide box slotting knives showing the ground grooving bevel",
+      "Box slotting knives in labelled protective cases alongside two loose knives",
+    ],
+
+    description:
+      "Carbide slotting knives for greyboard V-grooving on rigid and gift box lines. Supplied as left- and right-hand pairs in five stock sizes from 50 × 12 mm to 60 × 15 mm, 2.0 / 2.2 mm thick, in GS05U wear-optimised and GS20U tough carbide grades. Clean grooves without tearing or fraying the board face, adjustable to board thickness.",
+
+    fullDescription:
+      "A rigid box is only as good as its groove. The V-groove cut into greyboard controls how the board folds, and a groove that tears or frays the face liner shows through the wrap as a visible defect on a product that is bought precisely because it looks expensive. On gift and luxury box work there is no acceptable tolerance for a ragged groove.\n\nSureay slotting knives are ground from high-grade tungsten carbide and supplied as matched left- and right-hand pairs, because that is how they cut. The two knives work together to form the groove walls; running a new knife against a worn one produces an asymmetric groove that folds off-square, which is why we quote and ship them as pairs rather than as units.\n\n## Two Grades, One Decision\n\nGS05U is the higher-hardness, wear-optimised grade and the right choice for standard greyboard on long runs. GS20U trades some hardness for toughness and is the grade for thick board and for recycled board carrying inclusions — the same distinction that runs through every carbide application, expressed here in board terms. Choosing GS05U for recycled board with grit in it is the most common way these knives get chipped.\n\n## Adjustable to Board Thickness\n\nThe knife gap is set to the board being run, so one pair covers a range of board calipers rather than being locked to a single thickness. In practice that means a rigid box line changing between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width is within range.\n\n## Applications\n\nGreyboard V-grooving on rigid box and gift box lines: luxury packaging, cosmetics and spirits boxes, presentation cases, hardcover book board, and standard rigid cartons.\n\n## Why We Quote in Pairs\n\nThe two knives form the groove walls together, so they are ground, matched and shipped as a pair, and they should be changed as one. Running a new knife against a worn one cuts an asymmetric groove, and an asymmetric groove folds off-square — a defect that shows through the wrap on precisely the products that can least afford it. Replacing a single knife is also usually a missed diagnosis: an early single-knife failure normally means an inclusion strike or a setting fault, and both will happen again to the replacement. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month and we will quote a schedule rather than a one-off quantity, because most rigid box lines are better served by a standing order than by ordering when the last pair fails.\n\n## GS05U or GS20U — Decide on the Board, Not the Run Length\n\nGS05U is harder and wears more slowly, which makes it right for clean virgin greyboard. GS20U trades hardness for toughness and survives inclusions, which makes it right for thick board and recycled stock. The failure modes differ and that is the entire decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year even though it tests softer and shows shorter edge life on a clean-board trial. Choosing the hardest available grade for contaminated board is the most common way these knives get destroyed.\n\n## Fraying Grooves: Edge or Setting\n\nA fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it. Check the edges first. If they are still keen, look at the knife gap relative to board caliper — too wide and the board is torn open rather than cut, too tight and the face is crushed. The timing separates the two causes reliably: setting problems appear immediately after a changeover, edge problems appear gradually over a run. Because the knife gap is set to the board rather than fixed, a single pair covers a range of calipers, so a line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools provided the groove width stays in range.\n\n## Sizes and Machines Outside the List\n\nThe five stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing, and any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. If you have no drawing, send a worn knife or photographs with a caliper in frame and we return a dimensioned drawing for approval before manufacture. We would rather work from your actual tooling than from a compatibility claim. Stock sizes typically ship within a few working days; made-to-drawing geometries run 15–25 working days from drawing approval, and repeat orders against an approved drawing quote the same day.",
+
+    link: "/products/box-slotting-knives",
+
+    specs: [
+      { label: "Material", value: "High-grade tungsten carbide" },
+      { label: "Grades", value: "GS05U (wear) / GS20U (toughness)" },
+      { label: "Length", value: "50 / 60 mm" },
+      { label: "Width", value: "12 / 15 / 16 mm" },
+      { label: "Thickness", value: "2.0 / 2.2 mm" },
+      { label: "Supply", value: "Matched left- and right-hand pairs" },
+      {
+        label: "Application",
+        value: "Greyboard V-grooving on rigid and gift box lines",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Item",
+      col1: "L × W (mm)",
+      col2: "Thickness T (mm)",
+      caption:
+        "* Five stock sizes, supplied as left- and right-hand pairs. Other lengths, widths and edge geometries made to drawing or reverse-engineered from a worn knife.",
+    },
+
+    standardDimensions: [
+      { spec: "1", od: "50 × 12", id: "2 / 2.2" },
+      { spec: "2", od: "50 × 15", id: "2 / 2.2" },
+      { spec: "3", od: "50 × 16", id: "2 / 2.2" },
+      { spec: "4", od: "60 × 12", id: "2 / 2.2" },
+      { spec: "5", od: "60 × 15", id: "2 / 2.2" },
+    ],
+
+    steelGrades: {
+      intro:
+        "The grade decision on slotting knives is wear against toughness, and the board tells you which one you need. Clean virgin greyboard wears an edge; recycled board with inclusions chips it.",
+      rows: [
+        {
+          grade: "GS05U",
+          hardness: "Higher hardness, wear-optimised",
+          bestFor:
+            "Standard virgin greyboard on long production runs — the default grade",
+          tradeoff:
+            "Less forgiving of inclusions; chips rather than wears if the board is contaminated",
+        },
+        {
+          grade: "GS20U",
+          hardness: "Higher toughness",
+          bestFor:
+            "Thick board and recycled board carrying grit or other inclusions",
+          tradeoff: "Shorter edge life on clean board than GS05U",
+        },
+      ],
+      outro:
+        "If your board mix includes recycled stock at all, GS20U usually wins on total cost even though it loses on edge life — a chipped knife is scrapped, a worn one is reground.",
+    },
+
+    components: [
+      {
+        id: "matched-pairs",
+        tag: "SUPPLY FORMAT",
+        title: "Left and Right Supplied as a Pair",
+        description:
+          "The two knives form the groove walls together, so they are ground, matched and shipped as a pair. Running a new knife against a worn one produces an asymmetric groove that folds off-square — a defect that shows through the wrap on exactly the products that can least afford it.",
+      },
+      {
+        id: "clean-groove-edge",
+        tag: "SURFACE QUALITY",
+        title: "Grooves That Do Not Tear the Face",
+        description:
+          "Edge geometry is ground to sever greyboard fibre rather than push it, so the groove walls stay clean and the face liner does not fray. On rigid and gift box work the groove is the difference between a fold that looks machined and one that looks damaged.",
+      },
+      {
+        id: "adjustable-gap",
+        tag: "PROCESS FLEXIBILITY",
+        title: "Adjustable to Board Caliper",
+        description:
+          "Knife gap is set to the board being run, so a single pair covers a range of calipers instead of being locked to one thickness. A line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width stays in range.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "tungsten-carbide-slitter-knives",
+      "paper-straw-slitting-blades",
+    ],
+
+    rfqPlaceholder:
+      "Example: rigid box V-grooving line, knives 50 × 15 × 2.2 mm left and right. Running 2 mm greyboard, some recycled. Groove width 2 mm. Need 10 pairs, and a recommendation on grade.",
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "Can I replace just one knife of a pair when only one is worn?",
+          answer:
+            "You can, but it is usually a false economy. The two knives form the groove walls together, so a new knife working against a worn one cuts an asymmetric groove and the board folds off-square. On rigid and gift box work that shows through the wrap. If one knife of a pair has failed early, it is worth finding out why — an early single-knife failure normally means an inclusion strike or a setting problem, and both will happen again to the replacement.",
+        },
+        {
+          question: "GS05U or GS20U — how do I choose?",
+          answer:
+            "By what is in the board, not by how long the run is. GS05U is harder and wears more slowly, which makes it the right grade for clean virgin greyboard. GS20U is tougher and survives inclusions, which makes it the right grade for thick board and recycled stock. The failure modes are different and that is the whole decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year.",
+        },
+        {
+          question:
+            "My grooves are fraying at the face. Is that the knife or the setting?",
+          answer:
+            "Check the edge first. A fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it — the same failure that shows as a furry cut on any board application. If the edges are still keen, look at the knife gap relative to board caliper: too wide and the board is torn open rather than cut, too tight and the face is crushed. Setting problems tend to appear immediately after a changeover, edge problems appear gradually.",
+        },
+        {
+          question: "Can you make lengths outside 50 and 60 mm?",
+          answer:
+            "Yes. The stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing. If you do not have a drawing, send a worn knife or photographs with a caliper in frame and we will produce a dimensioned drawing for your approval before manufacture.",
+        },
+      ],
+      company: [
+        {
+          question: "Are these quoted per knife or per pair?",
+          answer:
+            "Per pair, because that is how they cut and how they should be changed. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month, and we will quote a schedule rather than a one-off quantity — most rigid box lines are better served by a standing order than by ordering when the last pair fails.",
+        },
+        {
+          question: "Which slotting machines do you supply for?",
+          answer:
+            "Knives are made to the machine, so any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. Send the machine make and model together with the dimensions of the knives you run now — or a worn sample — and we will match them. We would rather work from your actual tooling than from a compatibility claim.",
+        },
+        {
+          question: "What is the lead time?",
+          answer:
+            "Stock sizes typically ship within a few working days of order confirmation. Made-to-drawing geometries run 15–25 working days from drawing approval. Repeat orders against an approved drawing quote same-day, since the geometry stays on file.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 39. Paper Straw & Filter Rod Slitting Blades
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "paper-straw-slitting-blades",
+    name: "Paper Straw & Filter Rod Slitting Blades",
+    fullName: "Carbide Circular Slitting Blades for Paper Straws & Filter Rods",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Slitter Knives",
+    image:
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+    badge: "Non-Stick Coated",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
+      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
+    ],
+    galleryAlts: [
+      "Carbide circular slitting blade for paper straw and filter rod cutting, full face and centre bore",
+      "Pair of carbide circular slitting blades for paper straw cutting, face and centre bore",
+      "Close-up of the mirror-finished face and cutting edge of a paper straw slitting blade",
+    ],
+
+    description:
+      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100 outside diameter, 0.15–0.30 mm thick, in six stock sizes. Anti-stick coating resists water-based adhesive build-up so the cut edge stays square and fray-free through long runs on high-speed straw and filter rod makers.",
+
+    fullDescription:
+      "On a paper straw line the blade usually does not fail by wearing out. It fails by picking up glue. Water-based adhesive transfers to the blade face, builds into a ridge along the cutting edge, and from that point the blade stops cutting the tube and starts dragging it — which is exactly what a frayed straw end is. Sharpness is not the variable that fixes it.\n\nThat is why these blades are specified around adhesive release rather than around hardness alone. A carbide substrate holds the edge; the anti-stick coating keeps the face clean so the edge can keep working. On a line running water-based adhesive, the coating does more for cut quality than another point of hardness would.\n\n## Paper Straw Lines Are Not Filter Rod Lines\n\nThe two applications share machinery ancestry and blade geometry but not their failure conditions. Filter rod cutting on tobacco machinery runs at very high speed on a consistent, well-characterised material. Paper straw lines are newer, run a wider spread of paper plies and grammages, and use adhesives that vary between producers — so blade life on a straw line is far more sensitive to the adhesive than to the paper. If you are commissioning a new straw line, expect to tune blade specification against your adhesive rather than against your paper.\n\n## Thin Blades, Real Consequences\n\nAt 0.15 to 0.30 mm these are thin blades, and thickness is a process decision. A thinner blade removes less material and leaves a squarer end on a thin-walled tube; a thicker blade is more stable at speed and more forgiving of a machine with runout. Getting this wrong shows up as either a ragged end or a blade that flexes and wanders.\n\n## Applications\n\nPaper straw winding and cut-off machines; cigarette filter rod makers including Hauni platforms; paper tube and core cut-off on comparable high-speed converting equipment.\n\n## Diagnosing a Frayed Straw End\n\nIf the ends fray while the edge still feels sharp, the cause is almost always adhesive pick-up rather than wear. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge underneath can be perfectly serviceable. Wipe the face and inspect it under a light before changing the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade. Chasing this as a sharpness problem is the standard way a straw line burns through blades it did not need to replace.\n\n## Thickness Is a Process Choice\n\nAt 0.15 to 0.30 mm the thickness is not a leftover dimension. A thinner blade removes less material and leaves a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which makes it the safer choice on older machinery or thicker multi-ply tube. Getting it wrong produces either a ragged end or a blade that flexes and wanders, and the two faults look nothing alike — tell us the ply count, grammage and machine and we will recommend rather than leave you to guess.\n\n## Filter Rod Heritage, Straw Reality\n\nMany straw lines were built on filter rod machinery, and the blade geometry often interchanges dimensionally. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent, well-characterised material; straw lines run a wider spread of papers and, critically, adhesives that vary between producers. A blade that performs on a Hauni filter rod maker can gum up within hours on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry — the adhesive is the single most useful piece of information you can give us on this application and the one most buyers leave out.\n\n## Coatings, Regrinding and Commissioning a New Line\n\nThe anti-stick coating is a surface layer, and grinding the edge removes it where it matters most, so coated blades of this type are run to end of life and replaced rather than built into a regrind cycle. If your economics favour regrinding we will quote uncoated carbide instead, and you accept more frequent face cleaning as the trade. On a line still being commissioned, the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. A fortnight of that tells you more than any datasheet comparison and sets the standing-order specification correctly from the start. Stock sizes generally ship within a few working days; custom diameters, bores and thicknesses run 15–25 working days from drawing approval, with a few days added for the coating cycle.",
+
+    link: "/products/paper-straw-slitting-blades",
+
+    introNote:
+      "Paper straw production is where most of the demand for these blades now sits. If your line runs water-based adhesive, tell us which adhesive — it predicts blade life on this application better than the paper specification does.",
+
+    compatibleMachines: ["Hauni"],
+
+    specs: [
+      { label: "Material", value: "Tungsten carbide with anti-stick coating" },
+      { label: "Outer Diameter", value: "Φ88–Φ100 mm" },
+      { label: "Bore", value: "Φ15 / Φ16 / Φ45 mm" },
+      { label: "Thickness", value: "0.15–0.30 mm" },
+      {
+        label: "Coating Purpose",
+        value: "Resists water-based adhesive build-up on the blade face",
+      },
+      {
+        label: "Application",
+        value: "Paper straw cut-off, filter rod cutting, paper tube cut-off",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Item",
+      col1: "OD ØD (mm)",
+      col2: "Bore Ød (mm)",
+      col3: "Thickness T (mm)",
+      caption:
+        "* Six stock sizes. Other diameters, bores and thicknesses made to drawing — send the machine model, straw ply count and adhesive type and we will specify the blade against them.",
+    },
+
+    standardDimensions: [
+      { spec: "1", od: "Φ88", id: "Φ16", thickness: "0.26" },
+      { spec: "2", od: "Φ89", id: "Φ15", thickness: "0.30" },
+      { spec: "3", od: "Φ90", id: "Φ15", thickness: "0.30" },
+      { spec: "4", od: "Φ100", id: "Φ15", thickness: "0.15" },
+      { spec: "5", od: "Φ100", id: "Φ15", thickness: "0.30" },
+      { spec: "6", od: "Φ100", id: "Φ45", thickness: "0.20" },
+    ],
+
+    steelGrades: {
+      intro:
+        "On adhesive-bearing work the surface matters more than the substrate. Choose the coating for the adhesive you run, then choose the substrate for the paper.",
+      rows: [
+        {
+          grade: "Carbide + anti-stick coating",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Water-based adhesive straw lines and filter rod cutting — the default specification",
+          tradeoff:
+            "Higher unit price; the coating is a consumable layer and does not survive a regrind",
+        },
+        {
+          grade: "Uncoated carbide",
+          hardness: "HRA 89–91",
+          bestFor:
+            "Dry or low-tack applications, and paper tube cut-off without adhesive at the cut line",
+          tradeoff:
+            "Picks up adhesive quickly on glued lines; cut edge frays long before the edge is worn",
+        },
+        {
+          grade: "Tool steel",
+          hardness: "60–63 HRC",
+          bestFor:
+            "Trials, short runs and low-speed lines where cost dominates",
+          tradeoff:
+            "Loses the edge quickly at straw-line speeds; not viable on continuous production",
+        },
+      ],
+    },
+
+    components: [
+      {
+        id: "adhesive-release-coating",
+        tag: "SURFACE TREATMENT",
+        title: "Coated for Adhesive Release, Not Just Hardness",
+        description:
+          "On water-based adhesive lines the blade fails by pick-up, not by wear. The anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end.",
+      },
+      {
+        id: "thin-section-stability",
+        tag: "BLADE GEOMETRY",
+        title: "0.15–0.30 mm, Specified to the Cut",
+        description:
+          "Thickness is a process choice, not a leftover. Thinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number.",
+      },
+      {
+        id: "straw-line-tuning",
+        tag: "APPLICATION ENGINEERING",
+        title: "Tuned to the Adhesive, Not Only the Paper",
+        description:
+          "Paper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive. Tell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+    ],
+
+    rfqPlaceholder:
+      "Example: paper straw cut-off station, blade Φ100 × Φ15 × 0.20 mm. Three-ply straw, 60 gsm kraft, water-based adhesive. Blades are gumming up after about 6 hours and the straw ends fray. Need 50 pcs, coated.",
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "My straw ends are fraying but the blade edge still feels sharp. What is happening?",
+          answer:
+            "Almost certainly adhesive pick-up. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge itself can be perfectly serviceable underneath. Wipe the face and inspect it under a light before you change the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade.",
+        },
+        {
+          question: "Should I run 0.15 mm or 0.30 mm?",
+          answer:
+            "It depends on the tube and the machine. A thinner blade removes less material and gives a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which is why it is the safer choice on older machinery or on thicker multi-ply tube. Tell us the ply count, grammage and machine and we will recommend rather than leaving you to guess.",
+        },
+        {
+          question: "Does the coating survive regrinding?",
+          answer:
+            "No. The coating is a surface layer, and grinding the edge removes it where it matters most. On coated blades of this type the practical approach is to run them to end of life and replace, rather than to build a regrind cycle around them. If your economics favour regrinding, we can quote uncoated carbide instead and you accept more frequent face cleaning as the trade.",
+        },
+        {
+          question: "Do filter rod blades and paper straw blades interchange?",
+          answer:
+            "Dimensionally they often do — the geometry lineage is the same and many straw lines were built on filter rod machinery. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent material; straw lines run varied paper and, critically, varied adhesive. A blade that performs on a Hauni filter rod maker may gum up on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry.",
+        },
+      ],
+      company: [
+        {
+          question: "What information do you need to quote?",
+          answer:
+            "Outside diameter, bore and thickness; the machine model; straw ply count and paper grammage; the adhesive type; and your current change interval. The adhesive is the item most buyers leave out and the one that predicts blade life best on this application, so include it even if you are not sure it matters.",
+        },
+        {
+          question:
+            "Can you supply for a straw line we are still commissioning?",
+          answer:
+            "Yes, and it is worth involving us early. On a new line the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. That tells you more in a fortnight than a datasheet comparison will, and it sets the standing order specification correctly from the start.",
+        },
+        {
+          question: "What are the lead times?",
+          answer:
+            "Stock sizes generally ship within a few working days. Custom diameters, bores and thicknesses run 15–25 working days from drawing approval. Coated blades add a few days over uncoated for the coating cycle, so factor that in when you are planning a first trial.",
+        },
+      ],
+    },
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // 36. Groove Bottom Knives (multi-groove bottom rings / cutter rings)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    id: "groove-bottom-knives",
+    name: "Groove Bottom Knives",
+    fullName: "Multi-Groove Bottom Knives & Cutter Rings for Shear Slitting",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Slitter Knives",
+    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+    badge: "Pitch from 5 mm",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
+      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    ],
+    galleryAlts: [
+      "Multi-groove bottom knife ring with parallel precision-ground grooves for shear slitting",
+      "Multi-groove bottom knife rings with a smooth spacer ring and flat bottom knives",
+      "Multi-groove bottom cutter ring showing groove pitch and ground bore",
+    ],
+
+    description:
+      "Multi-groove bottom knife rings for shear slitting on paper, board and film rewinders. Slit width is changed by moving the top knife to another groove instead of re-tooling. Groove pitch from 5 mm, OD to Φ406 mm, plain bore for air shafts or set-screw for solid shafts. Single or double cutting edge, one-piece or split ring. Also supplied as single-groove and smooth spacer rings.",
+
+    fullDescription:
+      "A multi-groove bottom knife — also called a multi-groove bottom slitter, a multi-groove anvil, or an MKB — is one wide ring carrying many parallel precision-ground grooves. Every groove is a usable cutting position, so a width change means moving the top knife into a different groove rather than stripping the shaft and rebuilding the knife stack. On a line that changes order width often, that difference is measured in shift hours, not in blade cost.\n\nThe grooves are what make the cut, so they are what has to be right. Groove position sets slit width, groove width sets the working shear clearance against the mating top knife, and groove edge condition sets whether the web shears or tears. All three are ground in one setup on the same ring, which is why a multi-groove ring holds width accuracy across the full stack better than an equivalent number of separate anvil knives assembled with spacers.\n\n## Where the Format Earns Its Price\n\nA single-groove bottom knife is cheaper per piece and perfectly adequate on a line that runs one width for weeks. The multi-groove ring wins where order width changes frequently, where slit counts are high, or where re-setting a spacer stack has become the real changeover bottleneck. It also removes a whole class of setting error: with fixed groove positions ground into one body, width cannot drift because someone stacked the spacers a millimetre out.\n\n## Mounting: Air Shaft or Solid Shaft\n\nTwo mounting styles cover almost every rewinder. A plain bore clamps onto an expandable air shaft, which is the fast-change option and the usual choice on modern converting lines. A set-screw design fixes onto a solid bottom shaft, which is more common on older machines and on heavy board lines where shaft rigidity matters more than change speed. Tell us which shaft you run — it changes the bore specification, not just the fixing, and a ring bored for the wrong system will not seat true.\n\n## One Piece or Split\n\nStandard rings are one-piece. A two-piece split ring costs more but comes off and goes back on without breaking down the shaft assembly, which on a wide machine can turn a planned stop into a running change. If your rings are currently changed by pulling the whole shaft, the split version is usually the first thing worth quoting.\n\n## Single or Double Cutting Edge\n\nRings are ground with a single cutting edge or with cutting edges on both sides of each groove. Double-edged geometry doubles the usable positions and lets the ring be reversed when one side is worn, at the cost of a more demanding grind and a higher unit price. Which is right depends on how your slit positions are distributed across the ring, so send the width schedule rather than only the groove count.\n\n## Groove Pitch Is Made to Your Schedule\n\nCutting edge division — the distance from one cutting edge to the next, also called the pitch — is custom in almost every case and can go as narrow as 5 mm (0.200 in). Outside diameters run up to Φ406 mm (16 in). There is no useful standard table here, which is why we quote from your width schedule or from a drawing: give us the OD, bore, ring width, the widths you actually run, and the mating top knife, and we grind the groove positions to that schedule.\n\n## The Rest of the Ring Set\n\nA working shaft is rarely all multi-groove rings. Single-groove cutter rings cover fixed positions, and smooth rings act as spacers and web supports between cutting positions. We supply all three to the same bore and runout specification so they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and hard-to-diagnose source of slit-width variation.\n\n## Applications\n\nPaper, board, tissue and corrugated converting; film, foil, label stock, adhesive tape, non-wovens and textiles on shear-slitting rewinders.",
+
+    link: "/products/groove-bottom-knives",
+
+    disambiguation:
+      "This page covers multi-groove rings that carry many slit positions on one body. For the single-edge circular bottom knives that pair with a top knife on paper rewinders, see [Slitter Rewinder Bottom Knives](/products/slitter-rewinder-bottom-knives).",
+
+    introNote:
+      "Groove pitch, groove count and bore are made to your width schedule — there is no meaningful standard size for this product. Send the widths you actually run, the shaft type (air or solid) and the mating top knife, and we grind the groove positions to that schedule.",
+
+    compatibleMachines: [
+      "Kampf",
+      "Goebel",
+      "Atlas Converting",
+      "Dienes",
+      "Nishimura",
+      "Deacro",
+      "Parkinson Technologies",
+    ],
+
+    specs: [
+      {
+        label: "Material",
+        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / carbide-tipped",
+      },
+      { label: "Outer Diameter", value: "Up to Φ406 mm (16 in)" },
+      {
+        label: "Groove Pitch",
+        value: "From 5 mm (0.200 in), ground to your width schedule",
+      },
+      {
+        label: "Mounting",
+        value:
+          "Plain bore for expandable air shaft, or set screw for solid shaft",
+      },
+      { label: "Edge Configuration", value: "Single or double cutting edge" },
+      {
+        label: "Construction",
+        value: "One-piece ring or two-piece split ring",
+      },
+      {
+        label: "Application",
+        value:
+          "Multi-width shear slitting of paper, board, film, foil and tape",
+      },
+    ],
+
+    dimensionLabels: {
+      col0: "Configuration",
+      col1: "Outer Diameter",
+      col2: "Mounting",
+      col3: "Groove Pitch / Edges",
+      caption:
+        "* Groove pitch, groove count, ring width and bore are made to your width schedule — there is no standard size table for this product. Send the widths you run, the shaft type and the mating top knife specification, or a drawing, and we grind the groove positions to match.",
+    },
+
+    standardDimensions: [
+      {
+        spec: "Multi-groove ring — plain bore",
+        od: "Up to Φ406 (16 in)",
+        id: "Expandable air shaft",
+        thickness: "From 5 mm pitch",
+      },
+      {
+        spec: "Multi-groove ring — set screw",
+        od: "Up to Φ406 (16 in)",
+        id: "Solid bottom shaft",
+        thickness: "From 5 mm pitch",
+      },
+      {
+        spec: "Two-piece split ring",
+        od: "Up to Φ406 (16 in)",
+        id: "Air or solid shaft",
+        thickness: "From 5 mm pitch",
+      },
+      {
+        spec: "Double-edged multi-groove ring",
+        od: "Up to Φ406 (16 in)",
+        id: "Air or solid shaft",
+        thickness: "Cutting edges both sides",
+      },
+      {
+        spec: "Single-groove cutter ring",
+        od: "To drawing",
+        id: "Air or solid shaft",
+        thickness: "One fixed position",
+      },
+      {
+        spec: "Smooth spacer ring",
+        od: "To drawing",
+        id: "Air or solid shaft",
+        thickness: "No groove — sets spacing",
+      },
+    ],
+
+    steelGrades: {
+      intro:
+        "Grade choice on a multi-groove ring is governed by how abrasive the web is, because the groove edges wear where the web passes rather than where the knife strikes. A ring is also a large, expensive body to scrap, so grades that can be reground repeatedly are usually the better economics.",
+      rows: [
+        {
+          grade: "Cr12MoV / SKD-11",
+          hardness: "HRC 58–62",
+          bestFor:
+            "General paper, board and film — the standard specification and the best all-round balance of wear life and regrindability",
+          tradeoff:
+            "Outlasted by carbide-tipped on heavily coated or filled stocks",
+        },
+        {
+          grade: "9CrSi / 65Mn",
+          hardness: "HRC 56–60",
+          bestFor:
+            "Soft uncoated stocks, tissue and lower line speeds where unit price drives the decision",
+          tradeoff:
+            "Groove edges round off sooner, so expect a shorter interval between regrinds",
+        },
+        {
+          grade: "HSS",
+          hardness: "HRC 62–64",
+          bestFor:
+            "Higher line speeds and mixed job schedules where the ring must hold edge through long runs",
+          tradeoff: "Higher cost than tool steel; still wears on filled stocks",
+        },
+        {
+          grade: "Carbide-tipped",
+          hardness: "HRA 89–91 at the tip",
+          bestFor:
+            "Abrasive coated, filled and laminated webs where tool steel grooves wear out in weeks",
+          tradeoff:
+            "Highest price, and the tips chip rather than wear if the shaft runs out of true",
+        },
+      ],
+      outro:
+        "If you are unsure, send the substrate and your present regrind interval and we will size the recommendation against your own consumption rather than a generic table.",
+    },
+
+    components: [
+      {
+        id: "one-ring-many-widths",
+        tag: "CHANGEOVER TIME",
+        title: "One Ring, Many Slit Positions",
+        description:
+          "Every groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack. On lines that change order width often, this is a changeover-time product before it is a consumable.",
+      },
+      {
+        id: "ground-in-one-setup",
+        tag: "DIMENSIONAL ACCURACY",
+        title: "All Grooves Ground in One Setup",
+        description:
+          "Groove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out. Bore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true.",
+      },
+      {
+        id: "mounting-and-split",
+        tag: "MOUNTING OPTIONS",
+        title: "Air Shaft, Solid Shaft, or Split Ring",
+        description:
+          "Plain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft. A two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change.",
+      },
+    ],
+
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+    ],
+
+    rfqPlaceholder:
+      "Example: Kampf rewinder, expandable air shaft, bottom ring Φ180 × 100 mm wide, 12 grooves at 25 mm pitch, single edge. Slitting 120 gsm coated board, 8 slits, changing width twice a week. Need 4 rings plus 2 smooth spacer rings.",
+
+    faqs: {
+      technical: [
+        {
+          question:
+            "How is a multi-groove bottom knife different from a grooved anvil knife?",
+          answer:
+            "Scale and purpose. A grooved anvil knife is a disc carrying one to three grooves, ground to an OEM shear-pair profile and used mainly on film, foil and tape lines — see our bottom grooved anvil knives page for that product. A multi-groove ring is a much wider body carrying many parallel grooves, and its point is that a single ring covers many slit positions so width changes do not require re-tooling. If you change width often, you want the ring; if you run one width against a specified OEM anvil profile, you want the anvil.",
+        },
+        {
+          question:
+            "What groove pitch can you actually grind, and how do I specify it?",
+          answer:
+            "Cutting edge division — the distance from one cutting edge to the next — is custom in nearly every case and can go as narrow as 5 mm (0.200 in). Do not specify it as a single number: send the list of slit widths you actually run and we will lay out the groove positions so your common widths all land on a groove. That is the difference between a ring that covers your schedule and one that covers half of it and forces a spacer stack for the rest.",
+        },
+        {
+          question: "Should I order plain bore or set screw?",
+          answer:
+            "It follows your bottom shaft, not your preference. A plain bore clamps onto an expandable air shaft and is the fast-change option found on most modern converting lines. A set-screw design fixes onto a solid bottom shaft and is common on older machines and heavy board lines. The two are not interchangeable — the bore specification differs — so a ring bored for the wrong system will not seat true and will read as runout at the slit. If you are unsure, photograph the shaft end with the existing rings on it.",
+        },
+        {
+          question:
+            "My slit widths have started drifting across the shaft. Is the ring the problem?",
+          answer:
+            "Check runout and the ring stack before the grooves. Groove positions are ground in one setup and do not move, so a ring that was accurate on installation is rarely the source of progressive width drift. The usual causes are a bore seating on a worn or contaminated shaft, or rings from different suppliers mixed on one shaft with slightly different bore and face specifications, which stacks a small wobble into a measurable width error. Worn groove edges show as a deteriorating cut edge and rising dust, not as width drift.",
+        },
+      ],
+      company: [
+        {
+          question: "What do you need in order to quote?",
+          answer:
+            "Outer diameter, bore, ring width, groove count and pitch, the shaft type (expandable air shaft or solid shaft), the mating top knife specification, and the substrate and line speed. The single most useful extra is your list of running widths — it lets us lay out groove positions against your real schedule instead of copying a pitch. A drawing or a worn ring shortens the quote further; we reverse-engineer from samples as routine work.",
+        },
+        {
+          question:
+            "Do you supply single-groove and smooth rings as well, or only multi-groove?",
+          answer:
+            "All three, and we recommend buying them together. Single-groove cutter rings cover fixed positions and smooth rings act as spacers and web supports between cutting positions. Because they are made to the same bore and runout specification they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and genuinely hard-to-diagnose source of slit-width variation.",
+        },
+        {
+          question: "Can these be reground, and how many times?",
+          answer:
+            "Yes, and regrinding is central to the economics because a ring is a large body to scrap. How many cycles you get depends on groove depth and how much material each regrind takes; tool-steel rings typically give several cycles before groove geometry can no longer be restored. We regrind rings we manufactured and, in most cases, rings we did not, provided the body is true and the bore is undamaged — and we will tell you plainly when a ring is not worth the work.",
         },
       ],
     },
