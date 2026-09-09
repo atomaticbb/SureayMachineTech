@@ -91,6 +91,203 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "groove-bottom-knives-vs-spacer-stacks",
+    tag: "TECHNICAL GUIDE",
+    date: "09.SEP.2026",
+    title:
+      "Groove Bottom Knives: When a Multi-Groove Ring Beats a Spacer Stack",
+    excerpt:
+      "A width change on a spacer-stacked bottom shaft means stripping it and rebuilding to a micrometer. A multi-groove ring turns the same job into moving the top knife. Here is when that trade is worth paying for, and the specification mistake that wastes it.",
+    image: "/images/news/groove-bottom-knives-multi-groove-ring-cover.webp",
+    readTime: "6 MIN",
+    seoTitle: "Groove Bottom Knives vs Spacer Stacks | Sureay",
+    metaDescription:
+      "Multi-groove bottom knife rings turn a slit-width change into a top-knife move. When the ring pays back, how to specify groove pitch, and what wastes it.",
+    keywords:
+      "groove bottom knives, multi-groove bottom knife, multi-groove anvil, bottom cutter ring, slitter rewinder bottom shaft, groove pitch, shear slitting changeover, smooth spacer ring",
+    relatedProductIds: [
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "The order changes from six slits at 320 mm to nine at 210 mm. On a bottom shaft built from single-groove discs and spacers, that is a strip-down: knives off, spacers out, a new stack assembled to a micrometer, everything torqued and dialled back true before the first metre of web runs. Two people, and the line is down for all of it. Do that twice a week and changeover stops being a maintenance task and becomes the constraint on how many orders the machine can take.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A multi-groove bottom knife removes most of it. One wide ring carries many parallel ground grooves, every groove is a usable cutting position, and a width change means moving the top knife into a different groove. The shaft stays where it is. Whether that trade is worth the higher price of the ring depends on how your order book behaves — and, more than most buyers expect, on how the ring is specified at the quoting stage.",
+      },
+      {
+        type: "h2",
+        value: "What a Groove Bottom Knife Actually Is",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A groove bottom knife is one wide ring with many parallel precision-ground grooves in its running face, mounted on the bottom shaft of a shear-slitting rewinder, where each groove acts as the fixed lower half of a shear pair against a top knife. You will also see it sold as a multi-groove bottom slitter, a multi-groove anvil, or an MKB. The grooves are the product. Groove position sets slit width, groove width sets the working shear clearance against the mating top knife, and the condition of the groove edge decides whether the web shears cleanly or tears.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "All three are ground into a single body in one setup, which is the mechanical reason a ring holds width accuracy better than the same number of separate discs assembled with spacers: there is no stack to accumulate error and no operator rebuilding it every changeover. The clearance targets are no different from any other shear pair — roughly 0.02–0.05 mm on tissue, 0.05–0.10 mm on kraft. The difference is that on a ring those figures are ground in once, and on a spacer stack they are re-established by hand every time the width changes.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/multi-groove-bottom-knife-ring-and-smooth-spacer-ring.webp",
+      },
+      {
+        type: "h2",
+        value: "When Does a Multi-Groove Ring Actually Pay Back?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "It pays back on changeover hours rather than on blade cost, so the answer follows how often your width schedule changes, not how much web you run. A line holding one width for weeks gets nothing from the format and is better served by [bottom grooved anvil knives](/products/bottom-grooved-anvil-knives) or plain circular bottom knives, which cost less per piece and cut identically. The ring earns its price where order width changes weekly or more often, where slit counts are high enough that rebuilding a stack is a two-person job, or where setting error has become a recurring quality problem rather than an occasional one.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That last case is worth separating out, because it is the one buyers underestimate. With groove positions fixed in ground metal, slit width cannot drift because somebody assembled the spacers a millimetre out. On lines running a lot of narrow slits, that entire class of error disappears, and the scrap it was quietly generating disappears with it. Some plants find that worth more than the shift hours they set out to save.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "",
+          "Single-groove discs + spacers",
+          "Multi-groove ring",
+        ],
+        tableRows: [
+          [
+            "Changing slit width",
+            "Strip the shaft, rebuild the stack, re-verify every position",
+            "Move the top knife into a different groove; shaft untouched",
+          ],
+          [
+            "Where width error comes from",
+            "Spacer tolerance and assembly error, accumulating across the stack",
+            "Ground groove positions — they do not move once made",
+          ],
+          [
+            "Width flexibility",
+            "Any width the spacer set allows, including one you did not plan for",
+            "Only the widths that were ground into the ring",
+          ],
+          [
+            "Unit price",
+            "Lower per piece; you buy only the positions you need",
+            "Higher — one large body carrying every position at once",
+          ],
+          [
+            "Best when",
+            "One width runs for weeks, or the schedule is unpredictable",
+            "Width changes weekly or more, with a stable list of running widths",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "The Specification Mistake That Wastes the Ring",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Ordering from a groove count and a pitch number instead of from your actual list of running widths. A ring quoted as twelve grooves at 25 mm pitch is a ring that covers the widths which happen to fall on multiples of 25 mm. If the real schedule is 210, 320, 385 and 440 mm, some of those jobs land between grooves and go back onto a spacer stack — and you have paid for a changeover-time product that only works on part of the changeovers.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Cutting edge division is custom on nearly every ring and can be ground as narrow as 5 mm (0.200 in), with outside diameters up to Φ406 mm (16 in). There is no useful standard table, and that is the point: send the widths you actually run and the groove positions get laid out against that schedule instead of against a generic pitch. It costs nothing extra at the quoting stage, and it is not recoverable afterwards.",
+      },
+      {
+        type: "callout",
+        value:
+          "Selection Tip: A multi-groove ring locks your width schedule into ground metal at order time. If your product mix is about to change — a new customer, a different roll format — say so before the ring is ground. Regrinding restores groove geometry; it does not move groove positions.",
+      },
+      {
+        type: "h2",
+        value: "Groove Wear or Something Else? Reading the Symptom",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Worn groove edges and drifting slit width are different faults with different causes, and treating one as the other is the usual reason a new ring fixes nothing. Groove wear shows up in cut quality: a feathered or ragged slit edge and rising dust at the winder, deteriorating gradually rather than suddenly. Width drift across the shaft is almost never the grooves, because ground positions do not move. Look first at the bore seating on a worn or contaminated shaft, then at whether rings from different suppliers have been mixed on one shaft — small differences in bore and face specification stack into a measurable wobble, and it is a genuinely awkward fault to find, because every individual ring measures correctly on the bench.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/multi-groove-rings-smooth-spacer-and-flat-bottom-knives.webp",
+      },
+      {
+        type: "h2",
+        value: "Mounting, Split Rings and Edge Count",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Bore style follows your bottom shaft and is not a preference. A plain bore clamps onto an expandable air shaft, which is the fast-change arrangement on most modern converting lines. A set-screw design fixes to a solid bottom shaft, still common on older machines and heavy board lines. The two are not interchangeable — the bore specification differs — so a ring bored for the wrong system will not seat true, and it reads at the slit as runout rather than as a mounting fault, which is how it usually gets misdiagnosed.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Two options are worth pricing rather than assuming away. A two-piece split ring costs more but comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change; if you currently pull the whole shaft to change rings, quote that version first. Double-edged geometry puts cutting edges on both sides of each groove, doubling the usable positions and letting the ring be reversed when one side is worn. It only helps if your widths are distributed so both sides genuinely get used — another reason the width list matters more than the groove count.",
+      },
+      {
+        type: "h2",
+        value: "Which Grade, and Why Regrindability Decides It",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Cr12MoV / SKD-11 at HRC 58–62 is the standard specification and the right default for general paper, board and film. On abrasive coated, filled or laminated webs, tool-steel grooves can wear out in weeks and carbide-tipped is the honest answer — at the highest price, and with the caveat that tips chip rather than wear if the shaft is running out of true. 9CrSi and 65Mn sit below the standard grade for soft uncoated stocks and lower line speeds where unit price drives the decision; HSS at HRC 62–64 suits higher speeds and mixed job schedules where the ring has to hold an edge through long runs.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "What tips grade selection on a ring, more than on a disc, is regrindability. A ring is a large and expensive body to scrap, so a grade that takes several regrind cycles before groove geometry can no longer be restored is usually better economics than a harder grade you end up throwing away. Where the wear difference between two candidate grades is marginal, choose the one you can regrind.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The short version: count changeovers, not tonnage. If width changes are eating shift hours, price a [groove bottom knife ring](/products/groove-bottom-knives) against your own width list rather than a pitch number, and buy the single-groove cutter rings and smooth spacer rings for the same shaft from the same source and to the same bore and runout specification. If width changes are rare, the ring solves a problem you do not have, and [slitter rewinder bottom knives](/products/slitter-rewinder-bottom-knives) in the right grade will serve you better for less money.",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "How many grooves should a multi-groove bottom knife have?",
+            answer:
+              "Work it out from your width schedule, not from a groove count. List the slit widths you actually run over a typical quarter, and the groove positions get laid out so those widths land on grooves. A ring with twenty grooves that misses half your common widths is worse value than a ring with eight that covers all of them. Send the list with the OD, bore, ring width, shaft type and the mating top knife specification, and the layout comes back against your real jobs.",
+          },
+          {
+            question: "Can I fit a multi-groove ring to a solid bottom shaft?",
+            answer:
+              "Yes, using a set-screw design rather than a plain bore. Plain-bore rings clamp onto an expandable air shaft; set-screw rings fix onto a solid shaft. The bore specification is different between the two, so they are not interchangeable, and a ring made for the wrong shaft will not seat true. If you are unsure which you have, photograph the shaft end with the existing rings in place.",
+          },
+          {
+            question:
+              "Do multi-groove rings wear faster than single-groove bottom knives?",
+            answer:
+              "Not per groove — the cutting action is the same. What differs is that wear is uneven across the ring, because only the grooves in regular use see the web. That matters at regrind time: restoring groove geometry works the whole face, so a ring with a few heavily used positions comes back with material removed from grooves that were barely worn. If your schedule concentrates on a handful of widths, spreading jobs across equivalent grooves where the machine allows it evens out the wear and stretches the regrind interval.",
+          },
+          {
+            question:
+              "Can worn rings be reground, including rings you did not make?",
+            answer:
+              "Yes to both, and regrinding is central to the economics because the body is expensive to replace. How many cycles you get depends on groove depth and how much material each regrind takes; tool-steel rings typically give several cycles before the geometry can no longer be restored. We regrind rings from other suppliers as routine work provided the body is true and the bore is undamaged, and we will say plainly when a ring is not worth the labour.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "cutter-compactor-blade-film-vs-flake-wear",
     tag: "TECHNICAL GUIDE",
     date: "04.SEP.2026",
@@ -6101,6 +6298,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "groove-bottom-knives-vs-spacer-stacks": "lynn",
   "cutter-compactor-blade-film-vs-flake-wear": "Eric",
   "nonwoven-log-saw-blade-corrosion": "Eric",
   "tire-shredder-blade-wear-steel-cord": "Eric",
