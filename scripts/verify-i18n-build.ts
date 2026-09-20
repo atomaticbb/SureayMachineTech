@@ -24,7 +24,7 @@ import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
-  LANG_PREFIXES,
+  PUBLISHED_LANG_PREFIXES,
   isEnglishOnlyProductPath,
 } from "../client/src/lib/i18n.ts";
 
@@ -170,7 +170,7 @@ for (const route of CANONICAL_ROUTES) {
 // 2. Per-language routes — required when EXPECT_MULTI_LANG.
 //    English-only routes (news, mixer, legal) are skipped.
 if (EXPECT_MULTI_LANG) {
-  for (const lang of LANG_PREFIXES) {
+  for (const lang of PUBLISHED_LANG_PREFIXES) {
     for (const route of CANONICAL_ROUTES) {
       if (isEnglishOnlyRoute(route)) continue;
       const localized = route === "/" ? `/${lang}` : `/${lang}${route}`;
@@ -184,7 +184,8 @@ const multiLangRouteCount = CANONICAL_ROUTES.filter(
   r => !isEnglishOnlyRoute(r)
 ).length;
 const expected = EXPECT_MULTI_LANG
-  ? CANONICAL_ROUTES.length + multiLangRouteCount * LANG_PREFIXES.length
+  ? CANONICAL_ROUTES.length +
+    multiLangRouteCount * PUBLISHED_LANG_PREFIXES.length
   : CANONICAL_ROUTES.length;
 
 if (failures.length === 0) {

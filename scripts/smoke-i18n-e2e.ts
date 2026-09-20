@@ -22,7 +22,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { SUPPORTED_LANGS, type Lang } from "../client/src/lib/i18n.ts";
+import { PUBLISHED_LANGS, type Lang } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, "../dist/public");
@@ -72,7 +72,11 @@ function fileFor(route: string, lang: Lang): string {
 function checkRouteLang(route: string, lang: Lang): void {
   const file = fileFor(route, lang);
   if (!fs.existsSync(file)) {
-    failures.push({ route, lang, reason: `missing ${path.relative(DIST, file)}` });
+    failures.push({
+      route,
+      lang,
+      reason: `missing ${path.relative(DIST, file)}`,
+    });
     return;
   }
   const html = fs.readFileSync(file, "utf-8");
@@ -143,7 +147,7 @@ function checkSitemap(): void {
   const xml = fs.readFileSync(SITEMAP, "utf-8");
 
   // Expect every supported language's home as a <loc>.
-  for (const lang of SUPPORTED_LANGS) {
+  for (const lang of PUBLISHED_LANGS) {
     const prefix = lang === "en" ? "" : `/${lang}`;
     const expected = `<loc>https://sureay.com${prefix}/</loc>`;
     const expectedHome = `<loc>https://sureay.com${prefix === "" ? "/" : prefix}</loc>`;
@@ -158,7 +162,11 @@ function checkSitemap(): void {
 
   // Expect xhtml namespace + alternates
   if (!xml.includes('xmlns:xhtml="http://www.w3.org/1999/xhtml"')) {
-    failures.push({ route: "/sitemap.xml", lang: "en", reason: "missing xhtml namespace" });
+    failures.push({
+      route: "/sitemap.xml",
+      lang: "en",
+      reason: "missing xhtml namespace",
+    });
   }
   const alternateCount = (xml.match(/<xhtml:link/g) ?? []).length;
   if (alternateCount < 100) {
@@ -173,11 +181,11 @@ function checkSitemap(): void {
 // ── Run ────────────────────────────────────────────────────────────────────
 
 console.log(
-  `[smoke-e2e] ${SAMPLE_ROUTES.length} routes × ${SUPPORTED_LANGS.length} langs + sitemap`
+  `[smoke-e2e] ${SAMPLE_ROUTES.length} routes × ${PUBLISHED_LANGS.length} langs + sitemap`
 );
 
 for (const route of SAMPLE_ROUTES) {
-  for (const lang of SUPPORTED_LANGS) {
+  for (const lang of PUBLISHED_LANGS) {
     checkRouteLang(route, lang);
   }
 }
@@ -185,12 +193,10 @@ for (const route of SAMPLE_ROUTES) {
 checkSitemap();
 
 const checks =
-  SAMPLE_ROUTES.length * SUPPORTED_LANGS.length * 4 + // 4 assertions per (route, lang)
-  SUPPORTED_LANGS.length + // sitemap home per lang
+  SAMPLE_ROUTES.length * PUBLISHED_LANGS.length * 4 + // 4 assertions per (route, lang)
+  PUBLISHED_LANGS.length + // sitemap home per lang
   2; // sitemap xhtml namespace + alternate count
-console.log(
-  `[smoke-e2e] ran ${checks} assertions, ${failures.length} failed`
-);
+console.log(`[smoke-e2e] ran ${checks} assertions, ${failures.length} failed`);
 
 if (failures.length === 0) {
   console.log("[smoke-e2e] ✓ ALL PASS");

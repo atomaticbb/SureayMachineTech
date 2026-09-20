@@ -32,10 +32,7 @@ import {
   BLADE_CATEGORIES as catEn,
   type BladeCategoryMeta,
 } from "../blade-categories";
-import {
-  SEO_CONFIG as seoEn,
-  type PageSEO,
-} from "../../utils/seo-config";
+import { SEO_CONFIG as seoEn, type PageSEO } from "../../utils/seo-config";
 import {
   mixerParts as mixerPartsEn,
   mixerCategories as mixerCategoriesEn,
@@ -153,6 +150,44 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       categoriesByLang.vi = c.BLADE_CATEGORIES;
       seoByLang.vi = s.SEO_CONFIG;
       mixerByLang.vi = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
+    }),
+  pt: () =>
+    Promise.all([
+      import("./blades.pt"),
+      import("./blade-categories.pt"),
+      import("./seo-config.pt"),
+      import("./mixer-parts.pt"),
+      import("./mixer-content.pt"),
+      loadDictionary("pt"),
+    ]).then(([b, c, s, mp, mc]) => {
+      bladesByLang.pt = b.blades;
+      categoriesByLang.pt = c.BLADE_CATEGORIES;
+      seoByLang.pt = s.SEO_CONFIG;
+      mixerByLang.pt = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
+    }),
+  tr: () =>
+    Promise.all([
+      import("./blades.tr"),
+      import("./blade-categories.tr"),
+      import("./seo-config.tr"),
+      import("./mixer-parts.tr"),
+      import("./mixer-content.tr"),
+      loadDictionary("tr"),
+    ]).then(([b, c, s, mp, mc]) => {
+      bladesByLang.tr = b.blades;
+      categoriesByLang.tr = c.BLADE_CATEGORIES;
+      seoByLang.tr = s.SEO_CONFIG;
+      mixerByLang.tr = {
         parts: mp.mixerParts,
         categories: mp.mixerCategories,
         companyFaq: mp.mixerCompanyFaq,
@@ -304,9 +339,7 @@ export function getOemMachinesForCategory(
 export function getSEO(pageKey: string, lang: Lang): PageSEO {
   const config = seoByLang[lang] ?? seoByLang[DEFAULT_LANG]!;
   return (
-    config[pageKey] ??
-    seoByLang[DEFAULT_LANG]![pageKey] ??
-    ({} as PageSEO)
+    config[pageKey] ?? seoByLang[DEFAULT_LANG]![pageKey] ?? ({} as PageSEO)
   );
 }
 

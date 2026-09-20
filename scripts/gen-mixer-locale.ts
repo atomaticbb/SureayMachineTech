@@ -38,7 +38,7 @@ const ROOT = path.resolve(__dirname, "..");
 const DICT_DIR = path.resolve(ROOT, "scripts/mixer-i18n");
 const OUT_DIR = path.resolve(ROOT, "client/src/data/locales");
 
-const ALL_LANGS = ["es", "fr", "ru", "vi", "ar"] as const;
+const ALL_LANGS = ["es", "fr", "ru", "vi", "ar", "pt", "tr"] as const;
 type LangCode = (typeof ALL_LANGS)[number];
 
 // ── What never gets translated ──────────────────────────────────────────────

@@ -5,18 +5,53 @@
  * are prefixed with /{lang}. Admin routes never receive a language prefix.
  */
 
-export const SUPPORTED_LANGS = ["en", "es", "fr", "ru", "vi", "ar"] as const;
+export const SUPPORTED_LANGS = [
+  "en",
+  "es",
+  "fr",
+  "ru",
+  "vi",
+  "ar",
+  "pt",
+  "tr",
+] as const;
 export type Lang = (typeof SUPPORTED_LANGS)[number];
 
 export const DEFAULT_LANG: Lang = "en";
+
+/**
+ * Languages whose translation is still in progress. They route and render so
+ * they can be previewed and translated incrementally, but they are kept out of
+ * every signal that tells Google the page exists in that language: no hreflang
+ * alternate, no sitemap entry, no prerendered variant, and no entry in the
+ * language switcher.
+ *
+ * Shipping a language before its copy is translated is what produced the ~115
+ * "Duplicate, Google chose different canonical" issues the news section had —
+ * an English page served under a localized URL and advertised as a translation.
+ * Empty this list only when the locale data files are genuinely complete.
+ */
+export const PENDING_LANGS: readonly Lang[] = ["pt", "tr"];
+
+export function isPendingLang(lang: Lang): boolean {
+  return PENDING_LANGS.includes(lang);
+}
+
+/** Languages that are live: prefixed, indexed and offered to visitors. */
+export const PUBLISHED_LANGS = SUPPORTED_LANGS.filter(l => !isPendingLang(l));
 
 export const LANG_PREFIXES = SUPPORTED_LANGS.filter(
   (l): l is Exclude<Lang, "en"> => l !== DEFAULT_LANG
 );
 
-// Matches a leading "/es", "/fr", "/ru", "/vi", or "/ar" segment.
+/** Prefixes that get prerendered / listed in the sitemap today. */
+export const PUBLISHED_LANG_PREFIXES = LANG_PREFIXES.filter(
+  l => !isPendingLang(l)
+);
+
+// Matches a leading "/es", "/fr", "/ru", "/vi", "/ar", "/pt" or "/tr" segment.
 // The lookahead ensures "/esoteric" is NOT matched as "/es".
-const LANG_REGEX = /^\/(es|fr|ru|vi|ar)(?=\/|$)/;
+const LANG_REGEX = /^\/(es|fr|ru|vi|ar|pt|tr)(?=\/|$)/;
 
 export function isSupportedLang(value: string): value is Lang {
   return (SUPPORTED_LANGS as readonly string[]).includes(value);

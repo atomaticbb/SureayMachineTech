@@ -20,7 +20,7 @@ import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
-  LANG_PREFIXES,
+  PUBLISHED_LANG_PREFIXES,
   isEnglishOnlyProductPath,
 } from "../client/src/lib/i18n.ts";
 
@@ -71,7 +71,8 @@ const CANONICAL_ROUTES: string[] = [
 ];
 
 // Expand canonical English routes across all non-default languages.
-// LANG_PREFIXES is ["es", "fr", "ru", "vi"] for phase 1; Arabic added in phase 2.
+// Only PUBLISHED_LANG_PREFIXES are expanded — languages still being
+// translated (PENDING_LANGS) must not be prerendered or indexed.
 // Set PRERENDER_LANGS=en to skip the multi-lang expansion (fast dev iteration).
 const PRERENDER_LANGS_RAW = (
   process.env.PRERENDER_LANGS ?? "all"
@@ -91,7 +92,7 @@ const isEnglishOnlyRoute = (r: string) =>
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
       ...CANONICAL_ROUTES,
-      ...LANG_PREFIXES.flatMap(lang =>
+      ...PUBLISHED_LANG_PREFIXES.flatMap(lang =>
         CANONICAL_ROUTES.filter(r => !isEnglishOnlyRoute(r)).map(r =>
           r === "/" ? `/${lang}` : `/${lang}${r}`
         )
@@ -280,7 +281,8 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // for the marker Home.tsx renders once that Suspense boundary has
     // actually resolved, or the static snapshot silently ships without them.
     const isHomeRoute =
-      route === "/" || LANG_PREFIXES.some(lang => route === `/${lang}`);
+      route === "/" ||
+      PUBLISHED_LANG_PREFIXES.some(lang => route === `/${lang}`);
     if (isHomeRoute) {
       await page.waitForSelector('[data-lazy-ready="home"]', {
         timeout: TIMEOUT_MS,

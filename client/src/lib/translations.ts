@@ -51,6 +51,14 @@ export function loadDictionary(lang: Lang): Promise<void> {
       p = import("../locales/ar.json").then(m => {
         dictionaries.ar = m.default as unknown as Dictionary;
       });
+    else if (lang === "pt")
+      p = import("../locales/pt.json").then(m => {
+        dictionaries.pt = m.default as unknown as Dictionary;
+      });
+    else if (lang === "tr")
+      p = import("../locales/tr.json").then(m => {
+        dictionaries.tr = m.default as unknown as Dictionary;
+      });
     else p = Promise.resolve();
     _dictPromises.set(lang, p);
   }
@@ -58,9 +66,7 @@ export function loadDictionary(lang: Lang): Promise<void> {
 }
 
 export function translate(key: string, lang: Lang): string {
-  return (
-    dictionaries[lang]?.[key] ?? dictionaries[DEFAULT_LANG]?.[key] ?? key
-  );
+  return dictionaries[lang]?.[key] ?? dictionaries[DEFAULT_LANG]?.[key] ?? key;
 }
 
 /** Test-only: replace a dictionary entirely. Not exported from the index. */

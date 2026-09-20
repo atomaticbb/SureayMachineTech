@@ -138,7 +138,7 @@ function routeField(
   return "deepl";
 }
 
-const ALL_LANGS: LangCode[] = ["es", "fr", "ru", "vi", "ar"];
+const ALL_LANGS: LangCode[] = ["es", "fr", "ru", "vi", "ar", "pt", "tr"];
 
 // ── CLI parsing ─────────────────────────────────────────────────────────────
 

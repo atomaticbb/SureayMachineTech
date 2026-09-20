@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLang } from "@/contexts/LangContext";
 import {
-  SUPPORTED_LANGS,
+  PUBLISHED_LANGS,
   DEFAULT_LANG,
   isEnglishOnlyProductPath,
   localizedPath,
@@ -138,7 +138,7 @@ export default function SEO({
   // English-only sections (news, legal) are excluded: no localized variants.
   const hreflangs =
     canonicalUrl && !isEnglishOnly
-      ? SUPPORTED_LANGS.map(altLang => ({
+      ? PUBLISHED_LANGS.map(altLang => ({
           lang: altLang,
           href: abs(localizedPath(canonicalUrl, altLang)),
         }))
@@ -252,7 +252,8 @@ export default function SEO({
   }, [fullTitle]);
 
   // og:locale is the BCP-47 format ("es" → "es_ES"). Keep the mapping local
-  // to this component; covers the 6 launch languages.
+  // to this component. pt maps to pt_BR: the Portuguese copy is written in
+  // Brazilian Portuguese because Brazil, not Portugal, is the target market.
   const ogLocale: Record<Lang, string> = {
     en: "en_US",
     es: "es_ES",
@@ -260,6 +261,8 @@ export default function SEO({
     ru: "ru_RU",
     vi: "vi_VN",
     ar: "ar_AE",
+    pt: "pt_BR",
+    tr: "tr_TR",
   };
 
   return (

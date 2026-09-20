@@ -72,16 +72,17 @@ export function createApp({
   // News and the legal pages ship in English only. Mixer Wear Parts used to
   // be in this group; it is fully translated now, so /{lang}/mixer-wear-parts
   // serves a real page instead of 410.
-  app.get(/^\/(?:es|fr|ru|vi|ar)\/news(?:\/.*)?$/, (_req, res) =>
+  app.get(/^\/(?:es|fr|ru|vi|ar|pt|tr)\/news(?:\/.*)?$/, (_req, res) =>
     sendGone(res)
   );
-  app.get(/^\/(?:es|fr|ru|vi|ar)\/(?:privacy-policy|terms)\/?$/, (_req, res) =>
-    sendGone(res)
+  app.get(
+    /^\/(?:es|fr|ru|vi|ar|pt|tr)\/(?:privacy-policy|terms)\/?$/,
+    (_req, res) => sendGone(res)
   );
 
   // Invalid category slugs Google only ever reached through old backlinks.
   app.get(
-    /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?categories\/(?:battery-precision|metal-processing|custom-profile)\/?$/,
+    /^\/(?:(?:en|es|fr|ru|vi|ar|pt|tr)\/)?categories\/(?:battery-precision|metal-processing|custom-profile)\/?$/,
     (_req, res) => sendGone(res)
   );
 
@@ -89,15 +90,15 @@ export function createApp({
   app.use((req, res, next) => {
     const redirects: Array<{ from: RegExp; to: string }> = [
       {
-        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-industrial\/?$/,
+        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/wood-chipper-blades-industrial\/?$/,
         to: "/products/wood-chipper-blades",
       },
       {
-        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/wood-chipper-blades-standard\/?$/,
+        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/wood-chipper-blades-standard\/?$/,
         to: "/products/wood-chipper-blades",
       },
       {
-        from: /^\/(?:en|es|fr|ru|vi|ar)\/categories\/wood-chipper-blades\/?$/,
+        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/categories\/wood-chipper-blades\/?$/,
         to: "/products/wood-chipper-blades",
       },
       {
@@ -113,11 +114,11 @@ export function createApp({
         to: "/products/wood-chipper-blades",
       },
       {
-        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/shredder-blades-direct\/?$/,
+        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/shredder-blades-direct\/?$/,
         to: "/categories/shredder-blades",
       },
       {
-        from: /^\/(?:en|es|fr|ru|vi|ar)\/products\/factory-direct-shredder-blades\/?$/,
+        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/factory-direct-shredder-blades\/?$/,
         to: "/categories/shredder-blades",
       },
       {

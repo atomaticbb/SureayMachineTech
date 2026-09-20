@@ -19,8 +19,10 @@ import FR from "country-flag-icons/react/3x2/FR";
 import RU from "country-flag-icons/react/3x2/RU";
 import VN from "country-flag-icons/react/3x2/VN";
 import SA from "country-flag-icons/react/3x2/SA";
+import BR from "country-flag-icons/react/3x2/BR";
+import TR from "country-flag-icons/react/3x2/TR";
 import {
-  SUPPORTED_LANGS,
+  PUBLISHED_LANGS,
   isEnglishOnlyProductPath,
   localizedPath,
   stripLangPrefix,
@@ -40,6 +42,9 @@ const LANG_META: Record<Lang, { label: string; Flag: FlagComponent }> = {
   ru: { label: "Русский", Flag: RU },
   vi: { label: "Tiếng Việt", Flag: VN },
   ar: { label: "العربية", Flag: SA },
+  // Brazilian Portuguese — the market analysis pointed at Brazil, not Portugal.
+  pt: { label: "Português", Flag: BR },
+  tr: { label: "Türkçe", Flag: TR },
 };
 
 interface Props {
@@ -90,7 +95,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
         data-current-lang={currentLang}
         className="flex flex-wrap gap-1.5"
       >
-        {SUPPORTED_LANGS.map(lang => {
+        {PUBLISHED_LANGS.map(lang => {
           const isCurrent = lang === currentLang;
           const href = isEnglishOnlyPath
             ? canonicalPath
@@ -158,7 +163,7 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
             style={{ transformOrigin: "top" }}
             className="absolute right-0 top-full mt-1.5 min-w-[180px] py-1 z-50 bg-white border border-slate-200 shadow-xl"
           >
-            {SUPPORTED_LANGS.map(lang => {
+            {PUBLISHED_LANGS.map(lang => {
               const isCurrent = lang === currentLang;
               const href = isEnglishOnlyPath
                 ? canonicalPath

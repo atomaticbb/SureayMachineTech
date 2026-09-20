@@ -22,7 +22,7 @@ import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
-  SUPPORTED_LANGS,
+  PUBLISHED_LANGS,
   DEFAULT_LANG,
   isEnglishOnlyProductPath,
   localizedPath,
@@ -71,7 +71,7 @@ interface UrlEntry {
  *  language version to list every alternate (including itself + x-default). */
 function expandUrlEntry(entry: UrlEntry): string[] {
   const alternates = [
-    ...SUPPORTED_LANGS.map(lang => ({
+    ...PUBLISHED_LANGS.map(lang => ({
       hreflang: lang,
       href: `${BASE_URL}${localizedPath(entry.path, lang)}`,
     })),
@@ -87,7 +87,7 @@ function expandUrlEntry(entry: UrlEntry): string[] {
       `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`
   );
 
-  return SUPPORTED_LANGS.map(lang => {
+  return PUBLISHED_LANGS.map(lang => {
     const loc = `${BASE_URL}${localizedPath(entry.path, lang)}`;
     return [
       "  <url>",
@@ -298,11 +298,11 @@ const newsCount = 1 + newsArticles.length;
 const legalCount = legalPages.length;
 const enOnlyProductCount = englishOnlyProductPages.length;
 const totalUrlCount =
-  multiLangCount * SUPPORTED_LANGS.length +
+  multiLangCount * PUBLISHED_LANGS.length +
   newsCount +
   legalCount +
   enOnlyProductCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${PUBLISHED_LANGS.length} langs + ${newsCount} news + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
 );
