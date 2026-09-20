@@ -3,6 +3,10 @@ import {
   SUPPORTED_LANGS,
   DEFAULT_LANG,
   LANG_PREFIXES,
+  PENDING_LANGS,
+  PUBLISHED_LANGS,
+  PUBLISHED_LANG_PREFIXES,
+  isPendingLang,
   isSupportedLang,
   parseLangFromPath,
   stripLangPrefix,
@@ -10,8 +14,17 @@ import {
 } from "./i18n";
 
 describe("SUPPORTED_LANGS / DEFAULT_LANG / LANG_PREFIXES", () => {
-  it("includes the six launch languages (en + 5 translated)", () => {
-    expect(SUPPORTED_LANGS).toEqual(["en", "es", "fr", "ru", "vi", "ar"]);
+  it("includes every routable language, published or pending", () => {
+    expect(SUPPORTED_LANGS).toEqual([
+      "en",
+      "es",
+      "fr",
+      "ru",
+      "vi",
+      "ar",
+      "pt",
+      "tr",
+    ]);
   });
 
   it("uses en as the default", () => {
@@ -19,8 +32,36 @@ describe("SUPPORTED_LANGS / DEFAULT_LANG / LANG_PREFIXES", () => {
   });
 
   it("LANG_PREFIXES is SUPPORTED_LANGS minus the default", () => {
-    expect(LANG_PREFIXES).toEqual(["es", "fr", "ru", "vi", "ar"]);
+    expect(LANG_PREFIXES).toEqual(["es", "fr", "ru", "vi", "ar", "pt", "tr"]);
     expect(LANG_PREFIXES).not.toContain(DEFAULT_LANG);
+  });
+});
+
+describe("PENDING_LANGS gate", () => {
+  it("keeps pending languages out of the published set", () => {
+    for (const lang of PENDING_LANGS) {
+      expect(PUBLISHED_LANGS).not.toContain(lang);
+      expect(PUBLISHED_LANG_PREFIXES).not.toContain(lang);
+      expect(isPendingLang(lang)).toBe(true);
+    }
+  });
+
+  it("still routes pending languages", () => {
+    // They must parse and localize, or they cannot be previewed or translated.
+    for (const lang of PENDING_LANGS) {
+      expect(SUPPORTED_LANGS).toContain(lang);
+      expect(isSupportedLang(lang)).toBe(true);
+      expect(parseLangFromPath(`/${lang}/products`).lang).toBe(lang);
+      expect(localizedPath("/products", lang)).toBe(`/${lang}/products`);
+    }
+  });
+
+  it("published = supported minus pending, and English is always published", () => {
+    expect(PUBLISHED_LANGS).toEqual(
+      SUPPORTED_LANGS.filter(l => !PENDING_LANGS.includes(l))
+    );
+    expect(PUBLISHED_LANGS).toContain(DEFAULT_LANG);
+    expect(isPendingLang(DEFAULT_LANG)).toBe(false);
   });
 });
 
