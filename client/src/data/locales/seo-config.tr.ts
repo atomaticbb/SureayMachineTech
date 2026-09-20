@@ -1,294 +1,302 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    seo-config.ts
 // Target:    tr
-// Generated: 2026-09-20T07:45:01.160Z
-// Provider:  manual (scripts/gen-blade-locale.ts)
-
+// Generated: 2026-09-20T07:57:37.852Z
+// Provider:  deepl
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
     title:
-      "Precision Industrial Blades & Recycling Solutions | Sureay Machinery",
+      "Hassas Endüstriyel Bıçaklar ve Geri Dönüşüm Çözümleri | Sureay Machinery",
     description:
-      "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting. ISO 9001 certified. Custom CNC grinding, heat treatment, and exact-match OEM replacement blades. Serving global manufacturers since 2008.",
+      "Plastik geri dönüşümü, metal işleme ve kağıt işleme sektörleri için hassas endüstriyel bıçakların önde gelen üreticisi. ISO 9001 sertifikalı. Özel CNC taşlama, ısıl işlem ve orijinal parçalarla tam uyumlu OEM yedek bıçaklar. 2008 yılından bu yana dünya çapındaki üreticilere hizmet vermektedir.",
     keywords:
-      "industrial blades, granulator blades, shredder blades, slitter knives, precision cutting tools, plastic recycling blades, metal processing knives",
+      "endüstriyel bıçaklar, granülatör bıçakları, parçalayıcı bıçakları, dilimleme bıçakları, hassas kesme aletleri, plastik geri dönüşüm bıçakları, metal işleme bıçakları",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {
-    title: "Industrial Blade Products | Precision Cutting Tools | Sureay",
+    title: "Endüstriyel Bıçak Ürünleri | Hassas Kesme Aletleri | Sureay",
     description:
-      "Browse our complete range of industrial cutting blades: rotary slitter knives, shredder blades, granulator knives, tissue log saw blades, and metal shear knives. Custom metallurgy from D2 to carbide. Micron-level tolerances.",
+      "Endüstriyel kesme bıçaklarından oluşan eksiksiz ürün yelpazemize göz atın: döner dilimleme bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kağıt mendil bıçakları log testere bıçakları ve metal kesme bıçakları. D2'den karbüre kadar özel metalurji. Mikron düzeyinde toleranslar.",
     keywords:
-      "industrial blades catalog, cutting tools, rotary blades, shredder knives, granulator blades",
+      "endüstriyel bıçak kataloğu, kesici aletler, döner bıçaklar, parçalayıcı bıçakları, granülatör bıçakları",
   },
   about: {
-    title: "About Sureay Machinery | ISO 9001 Certified Blade Manufacturer",
+    title: "Sureay Machinery Hakkında | ISO 9001 Sertifikalı Bıçak Üreticisi",
     description:
-      "16 years of precision blade manufacturing excellence in Ma'anshan, China. ISO 9001:2015 certified facility with 5-axis CNC grinding, vacuum heat treatment, and CMM inspection. Serving OEM partners worldwide.",
+      "Çin'in Ma'anshan kentinde 16 yıldır hassas bıçak üretiminde mükemmellik. 5 eksenli CNC taşlama, vakumlu ısıl işlem ve CMM ölçümü teknolojilerine sahip, ISO 9001:2015 sertifikalı tesis. Dünya çapında OEM ortaklarına hizmet vermektedir.",
     keywords:
-      "blade manufacturer, ISO 9001 certified, CNC grinding, Ma'anshan China, industrial cutting tools",
+      "bıçak üreticisi, ISO 9001 sertifikalı, CNC taşlama, Ma'anshan, Çin, endüstriyel kesici aletler",
   },
   contact: {
-    title: "Contact Sureay Machinery | Request Custom Blade Quote",
+    title: "Sureay Machinery ile İletişime Geçin | Özel Bıçak Teklifi İsteyin",
     description:
-      "Get in touch with our engineering team for custom blade specifications, technical support, or OEM partnership inquiries. Fast response for replacement blade orders. Located in Ma'anshan, Anhui, China.",
+      "Özel bıçak özellikleri, teknik destek veya OEM ortaklığı ile ilgili sorularınız için mühendislik ekibimizle iletişime geçin. Yedek bıçak siparişlerine hızlı yanıt veriyoruz. Şirketimiz Çin’in Anhui eyaletindeki Ma'anshan şehrinde bulunmaktadır.",
     keywords:
-      "contact blade manufacturer, custom blade quote, OEM blades, technical support",
+      "bıçak üreticisiyle iletişime geçin, özel bıçak teklifi, OEM bıçaklar, teknik destek",
   },
   news: {
-    title: "Industry News & Technical Insights | Sureay Machinery Blog",
+    title: "Sektör Haberleri ve Teknik Bilgiler | Sureay Machinery Blogu",
     description:
-      "Latest updates on blade technology, manufacturing processes, and industry trends. Technical guides on material selection, heat treatment, and blade optimization for recycling and converting applications.",
+      "Bıçak teknolojisi, üretim süreçleri ve sektör trendlerine ilişkin en son gelişmeler. Geri dönüşüm ve işleme uygulamaları için malzeme seçimi, ısıl işlem ve bıçak optimizasyonu konularında teknik kılavuzlar.",
     keywords:
-      "blade technology, manufacturing news, technical guides, industrial cutting insights",
+      "bıçak teknolojisi, üretim haberleri, teknik kılavuzlar, endüstriyel kesim konusunda bilgiler",
   },
   plasticIndustry: {
-    title: "Plastic Recycling Blades | Granulator & Shredder Knives | Sureay",
+    title:
+      "Plastik Geri Dönüşüm Bıçakları | Öğütücü ve Parçalayıcı Bıçakları | Sureay",
     description:
-      "Specialized blades for plastic recycling operations: single & double-shaft shredder blades, granulator knives for PET/PVC/PP processing. D2/DC53 steel with deep cryogenic treatment. Reduce downtime and improve regrind quality.",
+      "Plastik geri dönüşüm işlemleri için özel bıçaklar: tek ve çift şaftlı parçalayıcı bıçakları, PET/PVC/PP işleme için öğütücü bıçakları. Derin kriyojenik işleme tabi tutulmuş D2/DC53 çeliği. Arıza sürelerini azaltır ve öğütülmüş malzeme kalitesini artırır.",
     keywords:
-      "plastic recycling blades, granulator knives, shredder blades, PET recycling, PVC processing",
+      "plastik geri dönüşüm bıçakları, öğütücü bıçakları, parçalayıcı bıçakları, PET geri dönüşümü, PVC işleme",
   },
   metalIndustry: {
-    title: "Metal Processing Blades | Slitting & Shear Knives | Sureay",
+    title: "Metal İşleme Bıçakları | Dilme ve Kesme Bıçakları | Sureay",
     description:
-      "Precision metal cutting solutions: rotary slitter knives for coil processing, guillotine shear blades for steel fabrication. Micro-tolerance engineering (±0.001mm). Complete tooling systems with spacers and rubber rings.",
+      "Hassas metal kesme çözümleri: Rulo işleme için döner dilimleme bıçakları, çelik imalatı için giyotin makaslama bıçakları. Mikro toleranslı mühendislik (±0,001 mm). Ara parçalar ve lastik halkalar içeren eksiksiz takım sistemleri.",
     keywords:
-      "metal slitting knives, guillotine shear blades, coil processing, steel cutting, metal fabrication blades",
+      "metal kesme bıçakları, makaslama bıçakları giyotin, rulo işleme, çelik kesme, metal imalat bıçakları",
   },
   paperIndustry: {
     title:
-      "Paper Converting Blades | Tissue Log Saws & Guillotine Knives | Sureay",
+      "Kağıt İşleme Bıçakları | Kağıt Havlu Rulo Testereleri ve Giyotin Bıçakları | Sureay",
     description:
-      "High-precision blades for tissue paper converting and commercial printing: Ø610 log saw blades with mirror polish, guillotine cutting knives. TiN coating available for wet environments. Ultra-clean cuts, zero dust generation.",
+      "Kağıt mendil işleme ve ticari baskı için yüksek hassasiyetli bıçaklar: Ø610 log testere bıçakları, ayna cilalı, giyotin kesme bıçakları. Islak ortamlar için TiN kaplama seçeneği mevcuttur. Son derece temiz kesimler, sıfır toz oluşumu.",
     keywords:
-      "tissue log saw blades, paper cutting knives, guillotine blades, paper converting, printing industry blades",
+      "log testere bıçakları kağıt kesme bıçakları, giyotin bıçakları, kağıt işleme, baskı endüstrisi bıçakları",
   },
   "rotary-slitter-knives": {
-    title: "Film & Tape Slitter Knives for Flexible Packaging",
+    title: "Esnek Ambalajlar için Film ve Bant Kesme Bıçakları",
     description:
-      "Film & tape slitter knives ground to ±0.002mm — D2, M2 HSS & PM steel. Shear, score & razor profiles for BOPP, CPP film and PSA tape. OEM fit Tidland, Kampf & Atlas.",
+      "±0,002 mm hassasiyetinde taşlanmış film ve bant kesme bıçakları — D2, M2 HSS ve PM çeliği. BOPP, CPP film ve PSA bantlar için kesme, çizme ve jilet profilleri. Tidland, Kampf ve Atlas markalarına uyumlu OEM ürünleri.",
     keywords:
-      "film slitter knives, tape slitter knives, BOPP slitter blades, PSA tape slitter knives, flexible packaging slitter blades, circular slitter knives, slitter blade, converting blades",
+      "film kesme bıçakları, bant kesme bıçakları, BOPP kesme bıçakları, PSA bant kesme bıçakları, esnek ambalaj kesme bıçakları, dairesel kesme bıçakları, kesme bıçağı, işleme bıçakları",
   },
   "tungsten-carbide-slitter-knives": {
-    title: "Tungsten Carbide Slitter Knives | Carbide Slitting Blades",
+    title: "Tungsten Karbür Dilimleme Bıçakları | Karbür Dilimleme Bıçakları",
     description:
-      "Tungsten carbide slitter knives with 10-30x the edge life of tool steel. Micro-grain YG6/YG8 and ISO K10/K20 grades, ground to ±0.002mm, with test reports.",
+      "Takım çeliğine kıyasla 10-30 kat daha uzun kesici kenar ömrüne sahip tungsten karbür kesme bıçakları. Mikro taneli YG6/YG8 ve ISO K10/K20 kaliteleri, ±0,002 mm hassasiyetinde taşlanmış, test raporları mevcuttur.",
     keywords:
-      "carbide slitter knives, tungsten carbide slitter blades, carbide slitter blades, tungsten slitting knives, tungsten carbide slitting blades, YG6 slitter knives, YG8 carbide blades, K10 carbide slitter, micro-grain carbide blades",
+      "karbür kesme bıçakları, tungsten karbür kesme bıçakları, karbür kesme bıçakları, tungsten kesme bıçakları, tungsten karbür kesme bıçakları, YG6 kesme bıçakları, YG8 karbür bıçaklar, K10 karbür kesme bıçağı, mikro taneli karbür bıçaklar",
   },
   "metal-foil-strip-slitter-knives": {
     title:
-      "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, ±0.001 mm | Sureay",
+      "Alüminyum Folyo ve Metal Şerit Kesme Bıçakları | ASP23/ASP52 PM Çelik, ±0,001 mm | Sureay",
     description:
-      "ASP23/ASP52 & carbide slitter knives for metal service centers. ±0.001mm tolerance, burr-free gang slitting of aluminum foil, copper & silicon steel.",
+      "Metal hizmet merkezleri için ASP23/ASP52 ve karbür dilimleme bıçakları. ±0,001 mm tolerans, alüminyum folyo, bakır ve silikonlu çeliğin çapak bırakmadan toplu olarak dilimlenmesi.",
     keywords:
-      "aluminum foil slitter knives, tungsten carbide slitter blades, metal foil slitter knives, ASP23 slitter knives, silicon steel slitter, gang slitting arbor, coil slitting blades, metal strip slitter, ASP52 slitter blades",
+      "alüminyum folyo kesme bıçakları, tungsten karbür kesme bıçakları, metal folyo kesme bıçakları, ASP23 kesme bıçakları, silikon çelik kesme makinesi, çoklu kesme mili, rulo kesme bıçakları, metal şerit kesme makinesi, ASP52 kesme bıçakları",
   },
   "twin-shaft-blades-recycling": {
-    title: "Twin-Shaft Shredder Blades | D2/SKD11 OEM Fit",
+    title: "Çift Mil Parçalayıcı Bıçakları | D2/SKD11 OEM Uyumlu",
     description:
-      "D2/SKD11 twin-shaft shredder blades for MSW, plastics & wood. OEM replacement for Weima, Untha, SSI & Vecoplan. Factory direct — low MOQ, fast quote.",
+      "D2/SKD11 çift şaftlı parçalayıcı bıçakları, kentsel katı atıklar, plastikler ve ahşap için. Weima, Untha, SSI ve Vecoplan markaları için OEM yedek parça. Fabrikadan doğrudan satış — düşük minimum sipariş miktarı, hızlı fiyat teklifi.",
     keywords:
-      "chromium carbide rotor blades, twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades, chromium carbide rotor blades wholesale, intersecting scissor rotor shredder",
+      "krom karbür rotor bıçakları, çift şaftlı parçalayıcı bıçakları, D2 parçalayıcı bıçakları, MSW parçalayıcı bıçakları, plastik geri dönüşüm bıçakları, SKD11 parçalayıcı, çift şaftlı bıçaklar, krom karbür rotor bıçakları toptan satışı, kesişen makas rotorlu parçalayıcı",
   },
   "multi-shaft-blades-metal": {
-    title: "Metal Shredder Blades | H13 for Scrap & E-Waste",
+    title:
+      "Metal Parçalayıcı Bıçakları | H13 – Hurda ve Elektronik Atıklar için",
     description:
-      "H13/42CrMo multi-shaft shredder blades for scrap metal, ELV & e-waste. HRC 50–54 shock-resistant. Wire-EDM bores for Shred-Tech, Forus & Arjes.",
+      "H13/42CrMo çok şaftlı parçalayıcı bıçakları, hurda metal, kullanım ömrü dolmuş araçlar (ELV) ve elektronik atıklar için. HRC 50–54 darbeye dayanıklı. Shred-Tech, Forus ve Arjes için tel kıvılcım erozyonlu (EDM) delikler.",
     keywords:
-      "metal shredder blades, scrap metal blades, e-waste shredder knives, H13 shredder blades, ELV shredder, metal recycling blades",
+      "parçalayıcı bıçakları metal, hurda metal bıçakları, elektronik atık parçalayıcı bıçakları, H13 parçalayıcı bıçakları, kullanım ömrü dolmuş araç (ELV) parçalayıcı, metal geri dönüşüm bıçakları",
   },
   "twin-shaft-blades-battery": {
-    title: "Li-Ion Battery Shredder Blades | ±0.02mm Precision",
+    title: "Lityum-İyon Pil Parçalayıcı Bıçakları | ±0,02 mm Hassasiyet",
     description:
-      "Precision twin-shaft shredder blades for EV Li-ion battery pre-shredding. ±0.02mm parallelism for copper/aluminum foil. Corrosion-resistant for LiPF6.",
+      "Elektrikli araçların lityum-iyon pillerinin ön parçalanması için tasarlanmış hassas çift şaftlı parçalayıcı bıçakları. Bakır/alüminyum folyo için ±0,02 mm paralellik. LiPF6'ya karşı korozyona dayanıklı.",
     keywords:
-      "battery shredder blades, lithium battery recycling blades, EV battery shredder, Li-ion battery processing, battery pre-shredding",
+      "parçalayıcı bıçakları batarya, lityum batarya geri dönüşüm bıçakları, elektrikli araç batarya parçalayıcı, lityum-iyon batarya işleme, batarya ön parçalama",
   },
   "tissue-log-saw-blades": {
-    title: "Tissue Log Saw Blades | D2 Ø610–1200mm | Sureay",
+    title: "Kağıt Rulo Testere Bıçakları | D2 Ø610–1200 mm | Sureay",
     description:
-      "Tissue log saw blades Ø610–1200mm, D2 HRC 58–60, mirror polish, ≤0.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
+      "log testere bıçakları tipi doku, Ø610–1200 mm, D2 HRC 58–60, ayna cilalı, ≤0,15 mm eksantriklik. TiN kaplamalı. Perini, PCMC, Gambini markalarına uyumlu. Hızlı fiyat teklifi.",
     keywords:
-      "tissue log saw blades, log saw blades tissue, log saw blades, paper saw blades, converting circular saws, D2 saw blades",
+      "log testere bıçakları doku, log testere bıçakları doku, log testere bıçakları, kağıt testere bıçakları, işleme dairesel testereleri, D2 testere bıçakları",
   },
   "granulator-blades": {
-    title: "Plastic Granulator Blades & Crusher Knives | OEM",
+    title: "Plastik Öğütücü Bıçakları ve Kırıcı Bıçakları | OEM",
     description:
-      "D2/SKD-11/Cr12MoV granulator blades — rotor & stator knives ground to ±0.02mm, HRC 58–62. OEM fit Cumberland, Herbold & Rapid. Factory direct.",
+      "D2/SKD-11/Cr12MoV granülatör bıçakları — rotor ve stator bıçakları ±0,02 mm hassasiyetinde taşlanmış, HRC 58–62. Cumberland, Herbold ve Rapid markalı OEM uyumlu. Fabrikadan doğrudan satış.",
     keywords:
-      "plastic granulator blades, granulator blades, granulator blades suppliers, plastic crusher knives, granulator knives, rotor stator blades, PET recycling blades",
+      "plastik granülatör bıçakları, granülatör bıçakları, granülatör bıçakları tedarikçileri, plastik kırıcı bıçakları, granülatör bıçakları, rotor-stator bıçakları, PET geri dönüşüm bıçakları",
   },
   "tire-shredder-blades": {
-    title: "Tire Shredder Blades | 3-Claw Rotary Shear for TDF | Sureay",
+    title:
+      "Lastik Parçalayıcı Bıçakları | TDF için 3 Pençeli Döner Makas | Sureay",
     description:
-      "3-claw rotary shear blades for tire shredding & TDF production. Cru-Wear & Modified A8 steel, ±0.05mm tolerance. OEM fit Barclay, CM, SSI & Untha.",
+      "Lastik parçalama ve TDF üretimi için 3 pençeli döner makaslama bıçakları. Cru-Wear ve Modifiye A8 çeliği, ±0,05 mm tolerans. Barclay, CM, SSI ve Untha markalarına OEM uyumlu.",
     keywords:
-      "tire shredder blades, tyre shredder knives, rotary shear blades, TDF blades, tire recycling knives, 3-claw shredder, Barclay shredder blades",
+      "lastik parçalayıcı bıçakları, lastik parçalayıcı bıçakları, döner makaslama bıçakları, TDF bıçakları, lastik geri dönüşüm bıçakları, 3 pençeli parçalayıcı, Barclay parçalayıcı bıçakları",
   },
   "paper-cutting-blades": {
-    title: "Precision Paper Cutting & Guillotine Blades",
+    title: "Hassas Kağıt Kesme ve Giyotin Bıçakları",
     description:
-      "Guillotine blades for commercial printing & paper converting, ground to 0.01mm tolerance. Clean, burr-free cuts on coated stock & cardboard.",
+      "Ticari baskı ve kağıt işleme için giyotin bıçakları; 0,01 mm toleransla taşlanmıştır. Kaplamalı kağıt ve kartonda temiz, çapak bırakmayan kesimler sağlar.",
     keywords:
-      "paper cutting blades, guillotine blades, printing blades, paper guillotine knives",
+      "kağıt kesme bıçakları, giyotin bıçakları, baskı bıçakları, kağıt giyotin bıçakları",
   },
   "three-knife-trimmer-blades": {
-    title: "Three-Knife Trimmer Blades — Spare Knives for Combi Head | Sureay",
+    title:
+      "Üç Bıçaklı Kesme Bıçakları — Kombi Başlık için Yedek Bıçaklar | Sureay",
     description:
-      "HSS & TC three-knife trimmer blades — spare knives for combi head. OEM fit Müller Martini, Wohlenberg, Kolbus. Front + side sets available.",
+      "HSS ve TC üç bıçaklı kesici bıçakları — kombi kafa için yedek bıçaklar. Müller Martini, Wohlenberg, Kolbus markalarına OEM uyumlu. Ön ve yan setler mevcuttur.",
     keywords:
-      "three knife trimmer blades, spare knives for combi head, Müller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, wohlenberg trimmer blades, trimmer blades for perfect binding, Kolbus trimmer blade set",
+      "üç adet kesici bıçak, kombi kafa için yedek bıçaklar, Müller Martini yedek bıçakları, kitap ciltleme kesici bıçakları, HSS kesici bıçakları, TC kesici bıçakları, Wohlenberg kesici bıçakları, yapıştırmalı ciltleme için kesici bıçaklar, Kolbus kesici bıçak seti",
     ogImage:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Single-Shaft Rotor Inserts | Crown Cutter Knives | Sureay",
+    title: "Tek Şaftlı Rotor Ek Parçaları | Taç Kesici Bıçaklar | Sureay",
     description:
-      "Single-shaft shredder rotor inserts for aggressive size reduction — concave, crown & V-groove profiles. Cryo-treated for bulky plastics & MSW.",
+      "Ağır hizmet tipi parçalama için tek şaftlı öğütücü rotor uçları — içbükey, bombeli ve V-oluklu profiller. Hacimli plastikler ve kentsel katı atıklar için kriyojenik işlemden geçirilmiştir.",
     keywords:
-      "single shaft rotor inserts, shredder rotor knives, crown cutters, square rotor inserts, concave shredder blades, 4-way indexable",
+      "tek şaftlı rotor uçları, parçalayıcı rotor bıçakları, taç kesiciler, kare rotor uçları, içbükey parçalayıcı bıçakları, 4 yönlü değiştirilebilir",
   },
   "single-shaft-bed-knives": {
-    title: "Stator & Bed Knives for Single-Shaft Shredders",
+    title: "Tek Şaftlı Parçalayıcılar için Stator ve Sabit Bıçaklar",
     description:
-      "D2/DC53 stator bed knives for single-shaft shredders. Straightness ≤0.05mm/m, lengths to 3500mm. OEM fit Vecoplan, Weima, Lindner & Zerma.",
+      "Tek şaftlı öğütücüler için D2/DC53 stator yatak bıçakları. Düzlük ≤0,05 mm/m, uzunluklar 3500 mm’ye kadar. Vecoplan, Weima, Lindner ve Zerma markalarına OEM uyumlu.",
     keywords:
-      "stator knife, stator knives, single shaft bed knives, shredder bed knife, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
+      "stator bıçağı, stator bıçakları, tek şaftlı taban bıçakları, parçalayıcı taban bıçağı, karşı bıçaklı parçalayıcı, taban bıçağı değişimi, D2 taban bıçağı, parçalayıcı stator bıçağı, Vecoplan taban bıçağı",
   },
   "metal-coil-slitting-knives": {
-    title: "Precision Coil Slitting Knives | Metal Slitter Blades",
+    title: "Hassas Bobin Kesme Bıçakları | Metal Kesme Bıçakları",
     description:
-      "Top & bottom slitter blade sets for metal coil processing. ±0.001mm tolerance, 0.002mm parallelism. Complete tooling for steel, aluminum & copper coils.",
+      "Metal rulo işleme için üst ve alt kesme bıçağı setleri. ±0,001 mm tolerans, 0,002 mm paralellik. Çelik, alüminyum ve bakır rulolar için eksiksiz takım seti.",
     keywords:
-      "metal slitting knives, coil slitting blades, rotary metal slitters, top bottom slitters, steel slitting knives",
+      "metal kesme bıçakları, rulo kesme bıçakları, döner metal kesme makineleri, üst-alt kesme makineleri, çelik kesme bıçakları",
   },
   "metal-shear-knives": {
-    title: "Heavy-Duty Metal Shear & Guillotine Knives",
+    title: "Ağır Hizmet Tipi Metal Makasları ve Giyotin Bıçakları",
     description:
-      "Guillotine & scrap shear knives in D2, S1 (6CrW2Si) & H13 tool steel. ±0.05mm parallelism for burr-free shearing of mild steel & stainless plate.",
+      "D2, S1 (6CrW2Si) ve H13 takım çeliğinden imal edilmiş giyotin ve hurda kesme bıçakları. Yumuşak çelik ve paslanmaz çelik levhaların çapak bırakmadan kesilmesi için ±0,05 mm paralellik.",
     keywords:
-      "metal shear knives, guillotine shear blades, steel shear knives, hydraulic shear blades, scrap shear blades, D2 shear blades",
+      "metal kesme bıçakları, giyotin makaslama bıçakları, çelik kesme bıçakları, hidrolik makaslama bıçakları, hurda makaslama bıçakları, D2 makaslama bıçakları",
   },
   "metal-cold-saw-blades": {
-    title: "HSS & TCT Cold Saw Blades | Metal Tube Cutting",
+    title: "HSS ve TCT Soğuk Testere Bıçakları | Metal Boru Kesimi",
     description:
-      "M2/M35 Cobalt HSS & TCT cold saw blades for steel tube, stainless & aluminum profile cutting. DIN 1837/1840, burr-free. OEM fit Kaltenbach & Bewo.",
+      "Çelik boru, paslanmaz çelik ve alüminyum profillerin kesimi için M2/M35 Kobalt HSS ve TCT soğuk testere bıçakları. DIN 1837/1840 standardına uygun, çapak bırakmaz. Kaltenbach ve Bewo markalarına OEM uyumlu.",
     keywords:
-      "cold saw blades, HSS cold saw blades, M35 cobalt cold saw, TCT cold saw blades, metal cold circular saw, tube cutting blades, cold saw blade manufacturer",
+      "soğuk testere bıçakları, HSS soğuk testere bıçakları, M35 kobalt soğuk testere, TCT soğuk testere bıçakları, metal soğuk daire testere, boru kesme bıçakları, soğuk testere bıçağı üreticisi",
   },
   "lithium-battery-slitting-knives": {
-    title: "Carbide Battery Slitting Knives | Electrode Foil",
+    title: "Karbür Pil Dilimleme Bıçakları | Elektrot Folyosu",
     description:
-      "Mirror-finish tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra ≤0.05μm edge, ±0.001mm tolerance. Zero micro-burrs on Al/Cu foil.",
+      "Lityum-iyon pil elektrot folyosu için ayna parlaklığında tungsten karbür kesme bıçakları. Ra ≤0,05 μm kenar, ±0,001 mm tolerans. Al/Cu folyoda mikro çapak yok.",
     keywords:
-      "tungsten carbide slitter blades, battery slitting knives, lithium battery knives, electrode foil slitter, carbide slitter blades, carbide circular knives",
+      "tungsten karbür kesme bıçakları, pil kesme bıçakları, lityum pil bıçakları, elektrot folyo kesici, karbür kesme bıçakları, karbür dairesel bıçaklar",
   },
   "corrugated-slitter-scorer-blades": {
-    title: "Corrugated Slitter Scorer Blades | BHS & Fosber",
+    title: "Oluklu Mukavva Kesme ve Çizme Bıçakları | BHS & Fosber",
     description:
-      "Solid tungsten carbide slitter blades for corrugated board dry-end lines. Zero-crush cutting. OEM fit BHS, Fosber & Marquip. Scorer knives in stock.",
+      "Oluklu mukavva kuru hatları için tungsten karbür tipi katı kesme bıçakları. Ezilmesiz kesim. BHS, Fosber ve Marquip markalarına OEM uyumlu. Çizici bıçaklar stokta mevcuttur.",
     keywords:
-      "corrugated slitter blades, tungsten carbide slitter blades, scorer blades, BHS slitter, Fosber slitter knives, corrugated box knives",
+      "oluklu mukavva kesme bıçakları, tungsten karbür kesme bıçakları, çizme bıçakları, BHS kesme makinesi, Fosber kesme bıçakları, oluklu mukavva kutu bıçakları",
   },
   "nonwoven-slitter-knives": {
-    title: "Nonwoven Slitter Knives | PP Spunbond & SMS",
+    title: "Dokumasız Kumaş Kesme Bıçakları | PP Spunbond ve SMS",
     description:
-      "M2 HSS & D2 circular slitter knives for PP spunbond, meltblown & SMS nonwoven at 200–500m/min. Anti-fraying geometry for hygiene & medical lines.",
+      "PP spunbond, meltblown ve SMS dokumasız kumaşlar için 200–500 m/dk hızında kullanılan M2 HSS ve D2 dairesel kesme bıçakları. Hijyen ve tıbbi ürün hatları için yıpranmayı önleyici geometri.",
     keywords:
-      "nonwoven slitter, nonwoven slitting blades, nonwoven slitter knives, spunbond slitter knives, meltblown cutting blades, medical nonwoven knives",
+      "dokumasız kumaş kesme makinesi, dokumasız kumaş kesme bıçakları, dokumasız kumaş kesme bıçakları, spunbond kesme bıçakları, eritilerek üflenmiş kumaş kesme bıçakları, tıbbi dokumasız kumaş bıçakları",
   },
   "scrap-chopper-blades": {
-    title: "Scrap Chopper Blades | S7 & H13 for Coil Lines",
+    title: "Hurda Kesme Bıçakları | Rulo Hatları için S7 ve H13",
     description:
-      "Heavy-duty scrap chopper blades in S7 and H13 tool steel for metal slitting lines. 4-edge indexable design, optional carbide inlay. High impact resistance.",
+      "Metal kesme hatları için S7 ve H13 takım çeliğinden üretilmiş ağır hizmet tipi hurda kesme bıçakları. 4 kenarlı değiştirilebilir uçlu tasarım, isteğe bağlı karbür kaplama. Yüksek darbe direnci.",
     keywords:
-      "scrap chopper blades, coil processing blades, metal scrap chopper, slitting line chopper knives, S7 chopper blades",
+      "hurda kesme bıçakları, bobin işleme bıçakları, metal hurda kesici, dilme hattı kesme bıçakları, S7 kesme bıçakları",
   },
   "rotary-slitter-knives-paper": {
-    title: "Paper Slitter Knives | Tissue & Kraft | D2, M2 HSS | Sureay",
+    title:
+      "Kağıt Kesme Bıçakları | Kağıt Mendil ve Kraft | D2, M2 HSS | Sureay",
     description:
-      "Shear and crush slitter knives for tissue, kraft and coated paper. D2, M2 HSS and 52100 at ±0.002mm thickness. Fits Atlas, Kampf, Goebel IMS, Perini.",
+      "Kağıt mendil, kraft kağıt ve kaplamalı kağıtlar için kesme ve ezme tipi dilimleme bıçakları. D2, M2 HSS ve 52100 malzemelerinden üretilmiş, ±0,002 mm kalınlığında. Atlas, Kampf, Goebel IMS ve Perini makinelerine uygundur.",
     keywords:
-      "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
+      "kağıt mendil kesme bıçakları, kağıt kesme bıçakları, oluklu mukavva kesme bıçakları, kağıt mendil işleme bıçakları, kraft kağıt kesme bıçağı, tomruk testere kesme bıçakları, kağıt makas çiftleri, lif tozu içermeyen kesme",
   },
   "guillotine-shear-blades": {
     title:
-      "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
+      "Giyotin Makas Bıçakları | Hidrolik Makaslar için D2 ve 6CrW2Si | Sureay",
     description:
-      "D2, 6CrW2Si & 9CrSi guillotine shear blades ground to ±0.05mm parallelism. Sets for machines to 16mm × 4000mm — discontinued models built from your sample.",
+      "D2, 6CrW2Si ve 9CrSi giyotin makaslama bıçakları, ±0,05 mm paralellik hassasiyetinde taşlanmıştır. 16 mm × 4000 mm boyutlarına kadar olan makineler için setler — üretimden kaldırılmış modeller, numunenize göre üretilir.",
     keywords:
-      "guillotine shear blades, squaring shear blades, plate shear blades, sheet metal shear blades, hydraulic shear blades, swing beam shear blades, D2 shear blades, 6CrW2Si shear knives, AMADA replacement blades, TRUMPF shear knives",
+      "giyotin makaslama bıçakları, köşelendirme makaslama bıçakları, levha makaslama bıçakları, sac makaslama bıçakları, hidrolik makaslama bıçakları, salıncak kirişli makaslama bıçakları, D2 makaslama bıçakları, 6CrW2Si kesme bıçakları, AMADA yedek bıçakları, TRUMPF kesme bıçakları",
   },
   "wood-chipper-blades": {
-    title: "Wood Chipper Blades | D2 & TCT Drum & Disc Chipper Knives | Sureay",
+    title:
+      "Ağaç Öğütücü Bıçakları | D2 ve TCT Tamburlu ve Diskli Öğütücü Bıçakları | Sureay",
     description:
-      "D2, Cr12MoV & TCT drum/disc chipper knives, HRC 57–62, ±0.05mm tolerance. OEM fit Bandit, Vermeer, Morbark & Doppstadt. 8–12 regrind cycles.",
+      "D2, Cr12MoV ve TCT tambur/diskli parçalayıcı bıçakları, HRC 57–62, ±0,05 mm tolerans. Bandit, Vermeer, Morbark ve Doppstadt markalarına OEM uyumlu. 8–12 yeniden bileme döngüsü.",
     keywords:
-      "wood chipper blades, drum chipper knives, disc chipper blades, forestry chipper knives, biomass chipper blades, D2 chipper knives, TCT chipper blades, Vermeer chipper blades, Bandit chipper knives",
+      "odun parçalayıcı bıçakları, tamburlu parçalayıcı bıçakları, diskli parçalayıcı bıçakları, ormancılık amaçlı parçalayıcı bıçakları, biyokütle parçalayıcı bıçakları, D2 parçalayıcı bıçakları, TCT parçalayıcı bıçakları, Vermeer parçalayıcı bıçakları, Bandit parçalayıcı bıçakları",
   },
   "wood-chipper-anvils": {
     title:
-      "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
+      "Ağaç Öğütücü Örsleri ve Karşı Bıçakları | D2 · A8 Modifiye | Eşleştirilmiş Setler | Sureay",
     description:
-      "Wood chipper anvils (counter-knives) in D2, Cr12MoV & A8 Modified steel, HRC 54–60. ±0.05mm parallelism. OEM fit Bandit, Vermeer & Morbark.",
+      "D2, Cr12MoV ve A8 Modifiye çelikten üretilmiş, HRC 54–60 sertlikte odun öğütücü örsleri (karşı bıçaklar). ±0,05 mm paralellik. Bandit, Vermeer ve Morbark markalı makinelere OEM uyumlu.",
     keywords:
-      "wood chipper anvil, chipper counter knife, bed knife chipper, chipper anvil replacement, Bandit anvil, Vermeer counter knife, Morbark bed knife, drum chipper anvil, disc chipper counter knife, matched blade anvil set",
+      "odun öğütücü örsü, öğütücü karşı bıçağı, yatak bıçağı, öğütücü örs yedeği, Bandit örsü, Vermeer karşı bıçağı, Morbark yatak bıçağı, tamburlu öğütücü örsü, diskli öğütücü karşı bıçağı, uyumlu bıçaklı örs seti",
   },
   "special-shaped-blades": {
-    title: "Custom Special-Shaped Blades | Any Profile, Any Alloy | Sureay",
+    title:
+      "Özel Şekilli Bıçaklar | Her Türlü Profil, Her Türlü Alaşım | Sureay",
     description:
-      "Custom-profile industrial blades made from DXF/DWG/STEP drawings or samples. D2, H13, PM-HSS & carbide. Tolerances to ±0.02mm. Any industry, any geometry.",
+      "DXF/DWG/STEP çizimleri veya numunelerden üretilen özel profilli endüstriyel bıçaklar. D2, H13, PM-HSS ve karbür. Toleranslar ±0,02 mm’ye kadar. Her sektör, her geometri.",
     keywords:
-      "custom blades, special shaped knives, custom profile blades, OEM custom blades, bespoke industrial knives, DXF blade manufacturing",
+      "özel bıçaklar, özel şekilli bıçaklar, özel profilli bıçaklar, OEM özel bıçaklar, istek üzerine üretilen endüstriyel bıçaklar, DXF formatında bıçak imalatı",
   },
   "bottom-grooved-anvil-knives": {
-    title: "Bottom Grooved Anvil Knives | Shear Pair Anvils | Sureay",
+    title: "Alt Kısımda Yivli Örs Bıçakları | Makas Çifti Örsleri | Sureay",
     description:
-      "Bottom grooved anvil knives for shear slitting of film, paper, foil & tape. D2, M2 HSS & carbide. OEM fit Tidland, Kampf, Atlas & BHS arbor systems.",
+      "Film, kağıt, folyo ve bantların kesme-yarıma işlemine yönelik alt kısmı oluklu örs bıçakları. D2, M2 HSS ve karbür. Tidland, Kampf, Atlas ve BHS mil sistemlerine OEM uyumlu.",
     keywords:
-      "bottom anvil knife, grooved anvil knife, shear slitting anvil, anvil knives for slitting, Tidland anvil knife, Kampf anvil blade, crush cut anvil blade",
+      "alt örs bıçağı, oluklu örs bıçağı, kesme-yarıma örs, yarıma için örs bıçakları, Tidland örs bıçağı, Kampf örs bıçağı, ezme kesim örs bıçağı",
   },
   "continuous-melt-filter-scraper-blades": {
-    title: "Melt Filter Scraper Blades & Filter Plates",
+    title: "Erime Filtresi Sıyırıcı Bıçakları ve Filtre Plakaları",
     description:
-      "D2/H13/Carbide scraper blades & filter plates for PCR continuous melt filters. HRC 58–62, HCl-resistant for PVC blends. Fit EREMA, Gneuß & Ettlinger.",
+      "PCR sürekli erime filtreleri için D2/H13/Karbür sıyırıcı bıçaklar ve filtre plakaları. HRC 58–62, PVC karışımlarına karşı HCl dirençli. EREMA, Gneuß ve Ettlinger makinelerine uygundur.",
   },
   "strand-pelletizer-rotors": {
-    title: "Strand Pelletizer Rotors for Compounding Lines",
+    title: "Kompozit Üretim Hatları için Strand Peletleme Rotorları",
     description:
-      "Strand pelletizer rotors for plastic compounding lines. PM-HSS & carbide, ≤0.005mm concentricity. Drop-in fit for Maag, Coperion & Cumberland pelletizers.",
+      "Plastik kompozit üretim hatları için şerit tipi peletleme rotorları. PM-HSS ve karbür, ≤0,005 mm eşmerkezlilik. Maag, Coperion ve Cumberland peletleyicilere doğrudan takılabilir.",
   },
   "slitter-rewinder-bottom-knives": {
-    title: "Slitter Rewinder Bottom Knives | Paper Rewinder Blades | Sureay",
+    title:
+      "Kesici-Sarma Makinesi Alt Bıçakları | Kağıt Sarma Makinesi Bıçakları | Sureay",
     description:
-      "Solid and carbide-tipped bottom knives for paper slitter rewinders. Mirror finish, burr-free, dust-reduced. Φ250–Φ254 stock sizes, custom bores to machine.",
+      "Kağıt kesme-sarma makineleri için katı ve karbür uçlu alt bıçaklar. Ayna parlaklığında, çapak içermeyen, toz oluşumu azaltılmış. Φ250–Φ254 standart boyutlar, makineye göre özel delik ölçüleri.",
     keywords:
-      "slitter rewinder bottom knives, rewinder bottom knife, paper rewinder blades, Jagenberg rewinder knives, Bielomatik bottom knife, ECH Will rewinder blades, Maxson rewinder knives",
+      "kesme-sarma makinesi alt bıçakları, sarma makinesi alt bıçağı, kağıt sarma makinesi bıçakları, Jagenberg sarma makinesi bıçakları, Bielomatik alt bıçağı, ECH Will sarma makinesi bıçakları, Maxson sarma makinesi bıçakları",
   },
   "box-slotting-knives": {
-    title: "Box Slotting Knives | Carbide Grooving Knives | Sureay",
+    title: "Kutu Yiv Açma Bıçakları | Karbür Yiv Açma Bıçakları | Sureay",
     description:
-      "Carbide slotting knives for greyboard and rigid gift box machines. Left/right pairs, GS05U and GS20U grades, five stock sizes, adjustable to board thickness.",
+      "Gri karton ve sert hediye kutusu makineleri için karbür oluk açma bıçakları. Sol/sağ çiftleri, GS05U ve GS20U kaliteleri, beş farklı stok boyutu, karton kalınlığına göre ayarlanabilir.",
     keywords:
-      "box slotting knives, greyboard grooving knife, rigid box slotting blade, gift box V groove knife, carbide slotting knife",
+      "kutu oluk açma bıçakları, gri karton oluk açma bıçağı, sert kutu oluk açma bıçağı, hediye kutusu V oluk bıçağı, karbür oluk açma bıçağı",
   },
   "paper-straw-slitting-blades": {
-    title: "Paper Straw Cutting Blades | Non-Stick Carbide Slitters | Sureay",
+    title:
+      "Kağıt Pipet Kesme Bıçakları | Yapışmaz Karbür Dilimleyiciler | Sureay",
     description:
-      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100, 0.15–0.30 mm. Resist adhesive build-up for fray-free cut ends.",
+      "Kağıt pipet ve filtre çubuklarının kesilmesi için yapışmaz karbür dairesel bıçaklar. Φ88–Φ100, 0,15–0,30 mm. Yapışkan birikimini önleyerek uçların pürüzsüz kesilmesini sağlar.",
     keywords:
-      "paper straw cutting blades, paper straw slitting knife, filter rod cutting blade, non-stick carbide circular blade, Hauni filter blade",
+      "kağıt pipet kesme bıçakları, kağıt pipet dilimleme bıçağı, filtre çubuğu kesme bıçağı, yapışmaz karbür dairesel bıçak, Hauni filtre bıçağı",
   },
   "groove-bottom-knives": {
-    title: "Multi-Groove Bottom Knives | Bottom Cutter Rings | Sureay",
+    title: "Çok Kanallı Alt Bıçaklar | Alt Kesme Halkaları | Sureay",
     description:
-      "Multi-groove bottom knife rings for shear slitting. Groove pitch from 5 mm, OD to Φ406 mm, air-shaft or set-screw bore. Single-groove and smooth rings too.",
+      "Kesme yivleme için çok yivli alt bıçak halkaları. Yiv aralığı 5 mm’den itibaren, dış çap Φ406 mm’ye kadar, havalı mil veya ayar vidası deliği. Tek yivli ve pürüzsüz halkalar da mevcuttur.",
     keywords:
-      "multi groove bottom knife, groove bottom knives, multi groove bottom slitter, bottom cutter rings, multi blade cutter ring, single blade cutter ring, smooth spacer ring, MKB bottom knife, groove pitch cutter ring, split cutter ring",
+      "çok oluklu alt bıçak, oluklu alt bıçaklar, çok oluklu alt kesici, alt kesici halkalar, çok bıçaklı kesici halka, tek bıçaklı kesici halka, düz ara halka, MKB alt bıçağı, oluk aralıklı kesici halka, bölünmüş kesici halka",
   },
 };

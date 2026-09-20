@@ -1,294 +1,318 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    seo-config.ts
 // Target:    pt
-// Generated: 2026-09-20T07:45:01.125Z
-// Provider:  manual (scripts/gen-blade-locale.ts)
-
+// Generated: 2026-09-20T07:57:10.660Z
+// Provider:  deepl
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
     title:
-      "Precision Industrial Blades & Recycling Solutions | Sureay Machinery",
+      "Lâminas Industriais de Precisão e Soluções para Reciclagem | Sureay Machinery",
     description:
-      "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting. ISO 9001 certified. Custom CNC grinding, heat treatment, and exact-match OEM replacement blades. Serving global manufacturers since 2008.",
+      "Fabricante líder de lâminas industriais de precisão para reciclagem de plástico, processamento de metais e transformação de papel. Certificado pela ISO 9001. Retificação CNC personalizada, tratamento térmico e lâminas de reposição OEM com correspondência exata. Atendendo fabricantes em todo o mundo desde 2008.",
     keywords:
-      "industrial blades, granulator blades, shredder blades, slitter knives, precision cutting tools, plastic recycling blades, metal processing knives",
+      "lâminas industriais, facas para granuladores, facas para trituradores, facas para cortadoras, ferramentas de corte de precisão, lâminas para reciclagem de plástico, facas para usinagem de metais",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {
-    title: "Industrial Blade Products | Precision Cutting Tools | Sureay",
+    title:
+      "Produtos de lâminas industriais | Ferramentas de corte de precisão | Sureay",
     description:
-      "Browse our complete range of industrial cutting blades: rotary slitter knives, shredder blades, granulator knives, tissue log saw blades, and metal shear knives. Custom metallurgy from D2 to carbide. Micron-level tolerances.",
+      "Conheça nossa linha completa de lâminas de corte industrial: facas circulares de corte longitudinal, facas para trituradores, facas para granuladores, lâminas de serra para bobinas para papel higiênico e facas para tesouras de corte de metal. Metalurgia personalizada, desde D2 até carboneto. Tolerâncias na ordem de mícrons.",
     keywords:
-      "industrial blades catalog, cutting tools, rotary blades, shredder knives, granulator blades",
+      "catálogo de lâminas industriais, ferramentas de corte, lâminas rotativas, facas para trituradoras, facas para granuladores",
   },
   about: {
-    title: "About Sureay Machinery | ISO 9001 Certified Blade Manufacturer",
+    title:
+      "Sobre a Sureay Machinery | Fabricante de lâminas com certificação ISO 9001",
     description:
-      "16 years of precision blade manufacturing excellence in Ma'anshan, China. ISO 9001:2015 certified facility with 5-axis CNC grinding, vacuum heat treatment, and CMM inspection. Serving OEM partners worldwide.",
+      "16 anos de excelência na fabricação de lâminas de precisão em Ma’anshan, na China. Instalações com certificação ISO 9001:2015, equipadas com retificação CNC de 5 eixos e sistemas de vácuo tratamento térmico e inspeção CMM. Atendemos parceiros OEM em todo o mundo.",
     keywords:
-      "blade manufacturer, ISO 9001 certified, CNC grinding, Ma'anshan China, industrial cutting tools",
+      "fabricante de lâminas, com certificação ISO 9001, retificação CNC, Ma'anshan, China, ferramentas de corte industriais",
   },
   contact: {
-    title: "Contact Sureay Machinery | Request Custom Blade Quote",
+    title:
+      "Entre em contato com a Sureay Machinery | Solicite um orçamento personalizado para lâminas",
     description:
-      "Get in touch with our engineering team for custom blade specifications, technical support, or OEM partnership inquiries. Fast response for replacement blade orders. Located in Ma'anshan, Anhui, China.",
+      "Entre em contato com nossa equipe de engenharia para obter especificações personalizadas de lâminas, suporte técnico ou informações sobre parcerias OEM. Resposta rápida para pedidos de lâminas de reposição. Localizada em Ma'anshan, Anhui, China.",
     keywords:
-      "contact blade manufacturer, custom blade quote, OEM blades, technical support",
+      "fabricante de lâminas de contato, orçamento personalizado para lâminas, lâminas OEM, suporte técnico",
   },
   news: {
-    title: "Industry News & Technical Insights | Sureay Machinery Blog",
+    title:
+      "Notícias do setor e informações técnicas | Blog da Sureay Machinery",
     description:
-      "Latest updates on blade technology, manufacturing processes, and industry trends. Technical guides on material selection, heat treatment, and blade optimization for recycling and converting applications.",
+      "Últimas atualizações sobre tecnologia de lâminas, processos de fabricação e tendências do setor. Guias técnicos sobre seleção de materiais, tratamento térmico e otimização de lâminas para aplicações de reciclagem e conversão.",
     keywords:
-      "blade technology, manufacturing news, technical guides, industrial cutting insights",
+      "tecnologia de lâminas, notícias sobre fabricação, guias técnicos, informações sobre corte industrial",
   },
   plasticIndustry: {
-    title: "Plastic Recycling Blades | Granulator & Shredder Knives | Sureay",
+    title:
+      "Lâminas para reciclagem de plástico | Lâminas para granuladores e trituradores | Sureay",
     description:
-      "Specialized blades for plastic recycling operations: single & double-shaft shredder blades, granulator knives for PET/PVC/PP processing. D2/DC53 steel with deep cryogenic treatment. Reduce downtime and improve regrind quality.",
+      "Lâminas especializadas para operações de reciclagem de plástico: facas para trituradores de eixo único e duplo, lâminas para granuladores destinadas ao processamento de PET/PVC/PP. Aço D2/DC53 com tratamento criogênico profundo. Reduzem o tempo de inatividade e melhoram a qualidade do material moído.",
     keywords:
-      "plastic recycling blades, granulator knives, shredder blades, PET recycling, PVC processing",
+      "lâminas para reciclagem de plástico, facas para granuladores, facas para trituradores, reciclagem de PET, processamento de PVC",
   },
   metalIndustry: {
-    title: "Metal Processing Blades | Slitting & Shear Knives | Sureay",
+    title:
+      "Lâminas para processamento de metais | Lâminas para corte longitudinal e cisalhamento | Sureay",
     description:
-      "Precision metal cutting solutions: rotary slitter knives for coil processing, guillotine shear blades for steel fabrication. Micro-tolerance engineering (±0.001mm). Complete tooling systems with spacers and rubber rings.",
+      "Soluções de corte preciso de metais: facas circulares de corte longitudinal para processamento de bobinas, guilhotina facas de cisalhamento para fabricação de aço. Engenharia de microtolerâncias (±0,001 mm). Sistemas completos de ferramentas com espaçadores e anéis de borracha.",
     keywords:
-      "metal slitting knives, guillotine shear blades, coil processing, steel cutting, metal fabrication blades",
+      "facas para corte de metal, guilhotina facas de cisalhamento, processamento de bobinas, corte de aço, lâminas para usinagem de metal",
   },
   paperIndustry: {
     title:
-      "Paper Converting Blades | Tissue Log Saws & Guillotine Knives | Sureay",
+      "Lâminas para processamento de papel | Serras para rolos de papel-toalha e lâminas de guilhotina | Sureay",
     description:
-      "High-precision blades for tissue paper converting and commercial printing: Ø610 log saw blades with mirror polish, guillotine cutting knives. TiN coating available for wet environments. Ultra-clean cuts, zero dust generation.",
+      "Lâminas de alta precisão para a transformação de papel-toalha e impressão comercial: Ø610 lâminas de serra para bobinas com polimento espelhado, lâminas de corte tipo guilhotina. Revestimento TiN disponível para ambientes úmidos. Cortes ultralimpos, sem geração de poeira.",
     keywords:
-      "tissue log saw blades, paper cutting knives, guillotine blades, paper converting, printing industry blades",
+      "tecido lâminas de serra para bobinas, facas para corte de papel, facas de guilhotina, transformação de papel, lâminas para a indústria gráfica",
   },
   "rotary-slitter-knives": {
-    title: "Film & Tape Slitter Knives for Flexible Packaging",
+    title: "Facas para corte de filmes e fitas para embalagens flexíveis",
     description:
-      "Film & tape slitter knives ground to ±0.002mm — D2, M2 HSS & PM steel. Shear, score & razor profiles for BOPP, CPP film and PSA tape. OEM fit Tidland, Kampf & Atlas.",
+      "Lâminas para cortadoras de filmes e fitas retificadas com precisão de ±0,002 mm — aço HSS D2, M2 e PM. Perfis de cisalhamento, entalhe e lâmina de barbear para filmes BOPP, CPP e fitas PSA. Compatíveis com os fabricantes Tidland, Kampf e Atlas.",
     keywords:
-      "film slitter knives, tape slitter knives, BOPP slitter blades, PSA tape slitter knives, flexible packaging slitter blades, circular slitter knives, slitter blade, converting blades",
+      "lâminas para cortadoras de filme, lâminas para cortadoras de fita, lâminas para cortadoras de BOPP, lâminas para cortadoras de fita PSA, lâminas para cortadoras de embalagens flexíveis, lâminas circulares para cortadoras, lâmina para cortadora, lâminas para conversão",
   },
   "tungsten-carbide-slitter-knives": {
-    title: "Tungsten Carbide Slitter Knives | Carbide Slitting Blades",
+    title:
+      "Facas de corte de carboneto de tungstênio | Lâminas de corte de carboneto",
     description:
-      "Tungsten carbide slitter knives with 10-30x the edge life of tool steel. Micro-grain YG6/YG8 and ISO K10/K20 grades, ground to ±0.002mm, with test reports.",
+      "Lâminas de corte de carboneto de tungstênio com vida útil da aresta de 10 a 30 vezes maior do que a do aço para ferramentas. Graus YG6/YG8 de microgrão e ISO K10/K20, retificadas com precisão de ±0,002 mm, acompanhadas de relatórios de teste.",
     keywords:
-      "carbide slitter knives, tungsten carbide slitter blades, carbide slitter blades, tungsten slitting knives, tungsten carbide slitting blades, YG6 slitter knives, YG8 carbide blades, K10 carbide slitter, micro-grain carbide blades",
+      "facas de corte em metal duro, lâminas de corte metal duro, lâminas de corte em metal duro, facas de corte em tungstênio, lâminas de corte metal duro, facas de corte YG6, lâminas em metal duro YG8, faca de corte em metal duro K10, lâminas em metal duro de microgrão",
   },
   "metal-foil-strip-slitter-knives": {
     title:
-      "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, ±0.001 mm | Sureay",
+      "Facas para cortadoras de folha de alumínio e tiras metálicas | Aço PM ASP23/ASP52, ±0,001 mm | Sureay",
     description:
-      "ASP23/ASP52 & carbide slitter knives for metal service centers. ±0.001mm tolerance, burr-free gang slitting of aluminum foil, copper & silicon steel.",
+      "Facas de corte ASP23/ASP52 e de carboneto para centros de serviços de metal. Tolerância de ±0,001 mm; corte em série sem rebarbas de folha de alumínio, cobre e aço silicônico.",
     keywords:
-      "aluminum foil slitter knives, tungsten carbide slitter blades, metal foil slitter knives, ASP23 slitter knives, silicon steel slitter, gang slitting arbor, coil slitting blades, metal strip slitter, ASP52 slitter blades",
+      "facas para cortadoras de folha de alumínio, lâminas para cortadoras metal duro, facas para cortadoras de folha metálica, facas para cortadoras ASP23, cortadora de aço silício, eixo para corte em série, lâminas para corte de bobinas, cortadora de tiras metálicas, lâminas para cortadoras ASP52",
   },
   "twin-shaft-blades-recycling": {
-    title: "Twin-Shaft Shredder Blades | D2/SKD11 OEM Fit",
+    title:
+      "Lâminas para triturador de dois eixos | D2/SKD11 – Compatíveis com peças originais (OEM)",
     description:
-      "D2/SKD11 twin-shaft shredder blades for MSW, plastics & wood. OEM replacement for Weima, Untha, SSI & Vecoplan. Factory direct — low MOQ, fast quote.",
+      "facas para trituradores de eixo duplo D2/SKD11 para resíduos sólidos urbanos, plásticos e madeira. Peça de reposição OEM para Weima, Untha, SSI e Vecoplan. Venda direta da fábrica — baixa quantidade mínima de pedido, orçamento rápido.",
     keywords:
-      "chromium carbide rotor blades, twin shaft shredder blades, D2 shredder blades, MSW shredder knives, plastic recycling blades, SKD11 shredder, double shaft blades, chromium carbide rotor blades wholesale, intersecting scissor rotor shredder",
+      "lâminas de rotor de carboneto de cromo, facas para trituradores de eixo duplo, D2 facas para trituradores, facas para trituradores de resíduos sólidos urbanos (MSW), lâminas para reciclagem de plástico, triturador SKD11, lâminas de eixo duplo, venda por atacado de lâminas de rotor de carboneto de cromo, triturador com rotor em tesoura cruzada",
   },
   "multi-shaft-blades-metal": {
-    title: "Metal Shredder Blades | H13 for Scrap & E-Waste",
+    title:
+      "Lâminas para trituradores de metal | H13 para sucata e lixo eletrônico",
     description:
-      "H13/42CrMo multi-shaft shredder blades for scrap metal, ELV & e-waste. HRC 50–54 shock-resistant. Wire-EDM bores for Shred-Tech, Forus & Arjes.",
+      "facas para trituradores de eixos múltiplos em H13/42CrMo para sucata metálica, veículos fora de uso (ELV) e lixo eletrônico. Resistente a impactos, com dureza HRC 50–54. Furos usinados por eletroerosão a fio (EDM) para Shred-Tech, Forus e Arjes.",
     keywords:
-      "metal shredder blades, scrap metal blades, e-waste shredder knives, H13 shredder blades, ELV shredder, metal recycling blades",
+      "metal facas para trituradores, lâminas para sucata metálica, lâminas para trituradores de lixo eletrônico, H13 facas para trituradores, triturador de veículos fora de uso (ELV), lâminas para reciclagem de metal",
   },
   "twin-shaft-blades-battery": {
-    title: "Li-Ion Battery Shredder Blades | ±0.02mm Precision",
+    title:
+      "Lâminas para trituradora de baterias de íon-lítio | Precisão de ±0,02 mm",
     description:
-      "Precision twin-shaft shredder blades for EV Li-ion battery pre-shredding. ±0.02mm parallelism for copper/aluminum foil. Corrosion-resistant for LiPF6.",
+      "facas para trituradores de dupla eixo de precisão para pré-trituração de baterias de íon-lítio de veículos elétricos. Paralelismo de ±0,02 mm para folhas de cobre/alumínio. Resistente à corrosão causada pelo LiPF₆.",
     keywords:
-      "battery shredder blades, lithium battery recycling blades, EV battery shredder, Li-ion battery processing, battery pre-shredding",
+      "bateria facas para trituradores, lâminas para reciclagem de baterias de lítio, triturador de baterias de veículos elétricos, processamento de baterias de íon-lítio, pré-trituração de baterias",
   },
   "tissue-log-saw-blades": {
-    title: "Tissue Log Saw Blades | D2 Ø610–1200mm | Sureay",
+    title: "Lâminas de serra para toras de papel | D2 Ø610–1200 mm | Sureay",
     description:
-      "Tissue log saw blades Ø610–1200mm, D2 HRC 58–60, mirror polish, ≤0.15mm runout. TiN coated. Fit Perini, PCMC, Gambini. Fast quote.",
+      "Tecido lâminas de serra para bobinas Ø610–1200 mm, D2 HRC 58–60, polimento espelhado, excentricidade ≤0,15 mm. Revestimento de TiN. Compatível com Perini, PCMC, Gambini. Orçamento rápido.",
     keywords:
-      "tissue log saw blades, log saw blades tissue, log saw blades, paper saw blades, converting circular saws, D2 saw blades",
+      "tecido lâminas de serra para bobinas, tecido lâminas de serra para bobinas, lâminas de serra para bobinas, lâminas de serra para papel, serras circulares para processamento, lâminas de serra D2",
   },
   "granulator-blades": {
-    title: "Plastic Granulator Blades & Crusher Knives | OEM",
+    title:
+      "Lâminas para granuladores de plástico e facas para trituradores | OEM",
     description:
-      "D2/SKD-11/Cr12MoV granulator blades — rotor & stator knives ground to ±0.02mm, HRC 58–62. OEM fit Cumberland, Herbold & Rapid. Factory direct.",
+      "D2/SKD-11/Cr12MoV facas para granuladores — facas do rotor e do estator retificadas com tolerância de ±0,02 mm, HRC 58–62. Compatíveis com os equipamentos originais (OEM) das marcas Cumberland, Herbold e Rapid. Venda direta da fábrica.",
     keywords:
-      "plastic granulator blades, granulator blades, granulator blades suppliers, plastic crusher knives, granulator knives, rotor stator blades, PET recycling blades",
+      "plástico facas para granuladores, facas para granuladores, facas para granuladores — fornecedores, facas para trituradores de plástico, facas para granuladores, lâminas de rotor e estator, lâminas para reciclagem de PET",
   },
   "tire-shredder-blades": {
-    title: "Tire Shredder Blades | 3-Claw Rotary Shear for TDF | Sureay",
+    title:
+      "Lâminas para triturador de pneus | Tesoura rotativa de 3 garras para TDF | Sureay",
     description:
-      "3-claw rotary shear blades for tire shredding & TDF production. Cru-Wear & Modified A8 steel, ±0.05mm tolerance. OEM fit Barclay, CM, SSI & Untha.",
+      "Rotativo de 3 garras facas de cisalhamento para trituração de pneus e produção de TDF. Aço Cru-Wear e A8 modificado, tolerância de ±0,05 mm. Compatível com os fabricantes originais (OEM) Barclay, CM, SSI e Untha.",
     keywords:
-      "tire shredder blades, tyre shredder knives, rotary shear blades, TDF blades, tire recycling knives, 3-claw shredder, Barclay shredder blades",
+      "pneu facas para trituradores, facas para triturador de pneus, rotativo facas de cisalhamento, lâminas TDF, facas para reciclagem de pneus, triturador de três garras, Barclay facas para trituradores",
   },
   "paper-cutting-blades": {
-    title: "Precision Paper Cutting & Guillotine Blades",
+    title: "Corte de papel de precisão e lâminas para guilhotina",
     description:
-      "Guillotine blades for commercial printing & paper converting, ground to 0.01mm tolerance. Clean, burr-free cuts on coated stock & cardboard.",
+      "Lâminas de guilhotina para impressão comercial e transformação de papel, retificadas com tolerância de 0,01 mm. Cortes limpos e sem rebarbas em papéis revestidos e papelão.",
     keywords:
-      "paper cutting blades, guillotine blades, printing blades, paper guillotine knives",
+      "lâminas para corte de papel, facas de guilhotina, lâminas para impressão, lâminas para guilhotina de papel",
   },
   "three-knife-trimmer-blades": {
-    title: "Three-Knife Trimmer Blades — Spare Knives for Combi Head | Sureay",
+    title:
+      "Lâminas para cortador de três facas — Lâminas de reposição para o cabeçote combinado | Sureay",
     description:
-      "HSS & TC three-knife trimmer blades — spare knives for combi head. OEM fit Müller Martini, Wohlenberg, Kolbus. Front + side sets available.",
+      "Lâminas de corte de três facas HSS e TC — lâminas de reposição para cabeçote combinado. Compatíveis com os fabricantes originais (OEM) Müller Martini, Wohlenberg e Kolbus. Conjuntos frontais e laterais disponíveis.",
     keywords:
-      "three knife trimmer blades, spare knives for combi head, Müller Martini replacement knives, bookbinding trimmer knives, HSS trimmer blades, TC trimmer blades, wohlenberg trimmer blades, trimmer blades for perfect binding, Kolbus trimmer blade set",
+      "três lâminas de cortador, lâminas sobressalentes para cabeçote combinado, lâminas de reposição Müller Martini, lâminas de cortador para encadernação, lâminas de cortador HSS, lâminas de cortador TC, lâminas de cortador Wohlenberg, lâminas de cortador para encadernação sem costura, conjunto de lâminas de cortador Kolbus",
     ogImage:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Single-Shaft Rotor Inserts | Crown Cutter Knives | Sureay",
+    title:
+      "Inserções para rotores de eixo único | Facas cortadoras em coroa | Sureay",
     description:
-      "Single-shaft shredder rotor inserts for aggressive size reduction — concave, crown & V-groove profiles. Cryo-treated for bulky plastics & MSW.",
+      "Inserções para o rotor de trituradores de eixo único destinadas à redução agressiva de tamanho — perfis côncavos, em coroa e com ranhura em V. Submetidas a tratamento criogênico para plásticos volumosos e resíduos sólidos urbanos.",
     keywords:
-      "single shaft rotor inserts, shredder rotor knives, crown cutters, square rotor inserts, concave shredder blades, 4-way indexable",
+      "insertos para rotores de eixo único, lâminas para rotores de trituradores, cortadores de coroa, insertos para rotores quadrados, côncavo facas para trituradores, indexáveis em 4 posições",
   },
   "single-shaft-bed-knives": {
-    title: "Stator & Bed Knives for Single-Shaft Shredders",
+    title: "Estator e facas fixas para trituradores de eixo único",
     description:
-      "D2/DC53 stator bed knives for single-shaft shredders. Straightness ≤0.05mm/m, lengths to 3500mm. OEM fit Vecoplan, Weima, Lindner & Zerma.",
+      "Lâminas de base do estator D2/DC53 para trituradores de eixo único. Retidão ≤0,05 mm/m, comprimentos de até 3.500 mm. Compatíveis com os equipamentos originais (OEM) das marcas Vecoplan, Weima, Lindner e Zerma.",
     keywords:
-      "stator knife, stator knives, single shaft bed knives, shredder bed knife, counter knives shredder, bed knife replacement, D2 bed knife, shredder stator blade, Vecoplan bed knife",
+      "lâmina do estator, lâminas do estator, lâminas de base de eixo único, lâmina de base para triturador, lâminas contrárias para triturador, substituição de lâmina de base, lâmina de base D2, lâmina do estator para triturador, lâmina de base Vecoplan",
   },
   "metal-coil-slitting-knives": {
-    title: "Precision Coil Slitting Knives | Metal Slitter Blades",
+    title:
+      "Facas de corte de bobinas de precisão | Lâminas para cortadoras de metal",
     description:
-      "Top & bottom slitter blade sets for metal coil processing. ±0.001mm tolerance, 0.002mm parallelism. Complete tooling for steel, aluminum & copper coils.",
+      "Conjuntos de lâminas de corte superior e inferior para processamento de bobinas metálicas. Tolerância de ±0,001 mm, paralelismo de 0,002 mm. Conjunto completo de ferramentas para bobinas de aço, alumínio e cobre.",
     keywords:
-      "metal slitting knives, coil slitting blades, rotary metal slitters, top bottom slitters, steel slitting knives",
+      "facas para corte de metal, lâminas para corte de bobinas, cortadoras rotativas de metal, cortadoras superior e inferior, facas para corte de aço",
   },
   "metal-shear-knives": {
-    title: "Heavy-Duty Metal Shear & Guillotine Knives",
+    title: "Tesouras para metal para serviços pesados e lâminas de guilhotina",
     description:
-      "Guillotine & scrap shear knives in D2, S1 (6CrW2Si) & H13 tool steel. ±0.05mm parallelism for burr-free shearing of mild steel & stainless plate.",
+      "Lâminas para guilhotina e tesouras de corte de sucata em aço para ferramentas D2, S1 (6CrW2Si) e H13. Paralelismo de ±0,05 mm para corte sem rebarbas de chapas de aço carbono e aço inoxidável.",
     keywords:
-      "metal shear knives, guillotine shear blades, steel shear knives, hydraulic shear blades, scrap shear blades, D2 shear blades",
+      "lâminas de corte para metal, guilhotina facas de cisalhamento, lâminas de corte para aço, hidráulica facas de cisalhamento, sucata facas de cisalhamento, D2 facas de cisalhamento",
   },
   "metal-cold-saw-blades": {
-    title: "HSS & TCT Cold Saw Blades | Metal Tube Cutting",
+    title: "Lâminas de serra a frio HSS e TCT | Corte de tubos metálicos",
     description:
-      "M2/M35 Cobalt HSS & TCT cold saw blades for steel tube, stainless & aluminum profile cutting. DIN 1837/1840, burr-free. OEM fit Kaltenbach & Bewo.",
+      "Lâminas de serra a frio M2/M35 de cobalto HSS e TCT para corte de tubos de aço, aço inoxidável e perfis de alumínio. DIN 1837/1840, sem rebarbas. Compatíveis com equipamentos originais (OEM) das marcas Kaltenbach e Bewo.",
     keywords:
-      "cold saw blades, HSS cold saw blades, M35 cobalt cold saw, TCT cold saw blades, metal cold circular saw, tube cutting blades, cold saw blade manufacturer",
+      "lâminas para serras a frio, lâminas para serras a frio HSS, serra a frio de cobalto M35, lâminas para serras a frio TCT, serra circular a frio para metal, lâminas para corte de tubos, fabricante de lâminas para serras a frio",
   },
   "lithium-battery-slitting-knives": {
-    title: "Carbide Battery Slitting Knives | Electrode Foil",
+    title: "Facas de corte de baterias de carboneto | Folha de eletrodo",
     description:
-      "Mirror-finish tungsten carbide slitting knives for lithium-ion battery electrode foil. Ra ≤0.05μm edge, ±0.001mm tolerance. Zero micro-burrs on Al/Cu foil.",
+      "Facas de corte metal duro com acabamento espelhado para folhas de eletrodo de baterias de íons de lítio. Borda com Ra ≤ 0,05 μm, tolerância de ±0,001 mm. Zero micro-rebarbas na folha de Al/Cu.",
     keywords:
-      "tungsten carbide slitter blades, battery slitting knives, lithium battery knives, electrode foil slitter, carbide slitter blades, carbide circular knives",
+      "Lâminas de corte metal duro, facas para corte de baterias, facas para baterias de lítio, cortador de folha de eletrodo, lâminas de corte de carboneto, carboneto facas circulares",
   },
   "corrugated-slitter-scorer-blades": {
-    title: "Corrugated Slitter Scorer Blades | BHS & Fosber",
+    title:
+      "Lâminas para cortadoras e marcadoras de papelão ondulado | BHS & Fosber",
     description:
-      "Solid tungsten carbide slitter blades for corrugated board dry-end lines. Zero-crush cutting. OEM fit BHS, Fosber & Marquip. Scorer knives in stock.",
+      "Lâminas de corte metal duro de material sólido para linhas de acabamento a seco de papelão ondulado. Corte sem amassamento. Compatíveis com os equipamentos originais (OEM) da BHS, Fosber e Marquip. Facas de ranhura em estoque.",
     keywords:
-      "corrugated slitter blades, tungsten carbide slitter blades, scorer blades, BHS slitter, Fosber slitter knives, corrugated box knives",
+      "lâminas para cortadoras de papelão ondulado, lâminas para cortadoras metal duro, lâminas para ranhuradoras, cortadora BHS, facas para cortadoras Fosber, facas para caixas de papelão ondulado",
   },
   "nonwoven-slitter-knives": {
-    title: "Nonwoven Slitter Knives | PP Spunbond & SMS",
+    title: "Facas para cortadoras de não tecidos | PP spunbond e SMS",
     description:
-      "M2 HSS & D2 circular slitter knives for PP spunbond, meltblown & SMS nonwoven at 200–500m/min. Anti-fraying geometry for hygiene & medical lines.",
+      "Lâminas circulares M2 HSS e D2 para não-tecidos PP spunbond, meltblown e SMS a velocidades de 200–500 m/min. Geometria anti-desfiamento para linhas de produtos de higiene e médicos.",
     keywords:
-      "nonwoven slitter, nonwoven slitting blades, nonwoven slitter knives, spunbond slitter knives, meltblown cutting blades, medical nonwoven knives",
+      "cortadora de não-tecido, lâminas de corte para não-tecido, facas para cortadora de não-tecido, facas para cortadora de spunbond, lâminas de corte para meltblown, facas para não-tecido médico",
   },
   "scrap-chopper-blades": {
-    title: "Scrap Chopper Blades | S7 & H13 for Coil Lines",
+    title:
+      "Lâminas para trituradores de sucata | S7 e H13 para linhas de bobinas",
     description:
-      "Heavy-duty scrap chopper blades in S7 and H13 tool steel for metal slitting lines. 4-edge indexable design, optional carbide inlay. High impact resistance.",
+      "Lâminas de triturador de sucata para serviços pesados em aço para ferramentas S7 e H13, destinadas a linhas de corte de metal. Design com 4 gumes intercambiáveis, com inserção opcional de metal duro. Alta resistência ao impacto.",
     keywords:
-      "scrap chopper blades, coil processing blades, metal scrap chopper, slitting line chopper knives, S7 chopper blades",
+      "lâminas para trituradores de sucata, lâminas para processamento de bobinas, triturador de sucata metálica, facas para trituradores em linhas de corte longitudinal, lâminas para trituradores S7",
   },
   "rotary-slitter-knives-paper": {
-    title: "Paper Slitter Knives | Tissue & Kraft | D2, M2 HSS | Sureay",
+    title:
+      "Lâminas para cortadoras de papel | Papel-toalha e papel kraft | D2, M2 HSS | Sureay",
     description:
-      "Shear and crush slitter knives for tissue, kraft and coated paper. D2, M2 HSS and 52100 at ±0.002mm thickness. Fits Atlas, Kampf, Goebel IMS, Perini.",
+      "Lâminas de corte por cisalhamento e esmagamento para papel-toalha, papel kraft e papel revestido. D2, M2 HSS e 52100 com espessura de ±0,002 mm. Compatíveis com Atlas, Kampf, Goebel IMS e Perini.",
     keywords:
-      "tissue slitter blades, paper slitter knives, corrugated slitter knives, tissue converting blades, kraft paper slitter, log saw slitter blades, paper shear pairs, fiber-dust-free slitting",
+      "lâminas para cortadoras de papel-toalha, facas para cortadoras de papel, facas para cortadoras de papel ondulado, lâminas para processamento de papel-toalha, cortadora de papel kraft, lâminas para cortadoras de toras, pares de tesouras para papel, corte sem geração de pó de fibra",
   },
   "guillotine-shear-blades": {
     title:
-      "Guillotine Shear Blades | D2 & 6CrW2Si for Hydraulic Shears | Sureay",
+      "Lâminas para tesouras guilhotina | D2 e 6CrW2Si para tesouras hidráulicas | Sureay",
     description:
-      "D2, 6CrW2Si & 9CrSi guillotine shear blades ground to ±0.05mm parallelism. Sets for machines to 16mm × 4000mm — discontinued models built from your sample.",
+      "Guilhotina D2, 6CrW2Si e 9CrSi facas de cisalhamento, retificada com paralelismo de ±0,05 mm. Conjuntos para máquinas de até 16 mm × 4.000 mm — modelos descontinuados fabricados a partir da sua amostra.",
     keywords:
-      "guillotine shear blades, squaring shear blades, plate shear blades, sheet metal shear blades, hydraulic shear blades, swing beam shear blades, D2 shear blades, 6CrW2Si shear knives, AMADA replacement blades, TRUMPF shear knives",
+      "guilhotina facas de cisalhamento, esquadria facas de cisalhamento, chapa facas de cisalhamento, chapa metálica facas de cisalhamento, hidráulica facas de cisalhamento, viga oscilante facas de cisalhamento, D2 facas de cisalhamento, facas de corte 6CrW2Si, lâminas de reposição AMADA, facas de corte TRUMPF",
   },
   "wood-chipper-blades": {
-    title: "Wood Chipper Blades | D2 & TCT Drum & Disc Chipper Knives | Sureay",
+    title:
+      "Lâminas para trituradores de madeira | Lâminas para trituradores de tambor e disco D2 e TCT | Sureay",
     description:
-      "D2, Cr12MoV & TCT drum/disc chipper knives, HRC 57–62, ±0.05mm tolerance. OEM fit Bandit, Vermeer, Morbark & Doppstadt. 8–12 regrind cycles.",
+      "Lâminas para trituradores de tambor/disco em D2, Cr12MoV e TCT, HRC 57–62, tolerância de ±0,05 mm. Compatíveis com os modelos originais (OEM) das marcas Bandit, Vermeer, Morbark e Doppstadt. 8 a 12 ciclos de reafiação.",
     keywords:
-      "wood chipper blades, drum chipper knives, disc chipper blades, forestry chipper knives, biomass chipper blades, D2 chipper knives, TCT chipper blades, Vermeer chipper blades, Bandit chipper knives",
+      "lâminas para trituradores de madeira, facas para trituradores de tambor, lâminas para trituradores de disco, facas para trituradores florestais, lâminas para trituradores de biomassa, facas para trituradores D2, lâminas para trituradores TCT, lâminas para trituradores Vermeer, facas para trituradores Bandit",
   },
   "wood-chipper-anvils": {
     title:
-      "Wood Chipper Anvils & Counter-Knives | D2 · A8 Modified | Matched Sets | Sureay",
+      "Bigornas e contra-facas para trituradores de madeira | D2 · A8 Modificado | Conjuntos combinados | Sureay",
     description:
-      "Wood chipper anvils (counter-knives) in D2, Cr12MoV & A8 Modified steel, HRC 54–60. ±0.05mm parallelism. OEM fit Bandit, Vermeer & Morbark.",
+      "Bigornas (facas contrárias) para trituradores de madeira em aço D2, Cr12MoV e A8 Modificado, HRC 54–60. Paralelismo de ±0,05 mm. Compatíveis com os modelos originais (OEM) das marcas Bandit, Vermeer e Morbark.",
     keywords:
-      "wood chipper anvil, chipper counter knife, bed knife chipper, chipper anvil replacement, Bandit anvil, Vermeer counter knife, Morbark bed knife, drum chipper anvil, disc chipper counter knife, matched blade anvil set",
+      "bigorna para triturador de madeira, lâmina contrária para triturador, lâmina fixa para triturador, reposição de bigorna para triturador, bigorna Bandit, lâmina contrária Vermeer, lâmina fixa Morbark, bigorna para triturador de tambor, lâmina contrária para triturador de disco, conjunto de bigorna com lâminas correspondentes",
   },
   "special-shaped-blades": {
-    title: "Custom Special-Shaped Blades | Any Profile, Any Alloy | Sureay",
+    title:
+      "Lâminas personalizadas com formatos especiais | Qualquer perfil, qualquer liga | Sureay",
     description:
-      "Custom-profile industrial blades made from DXF/DWG/STEP drawings or samples. D2, H13, PM-HSS & carbide. Tolerances to ±0.02mm. Any industry, any geometry.",
+      "Lâminas industriais com perfil personalizado, fabricadas a partir de desenhos em DXF/DWG/STEP ou amostras. D2, H13, PM-HSS e metal duro. Tolerâncias de ±0,02 mm. Qualquer setor, qualquer geometria.",
     keywords:
-      "custom blades, special shaped knives, custom profile blades, OEM custom blades, bespoke industrial knives, DXF blade manufacturing",
+      "lâminas personalizadas, facas com formatos especiais, lâminas com perfil personalizado, lâminas personalizadas para OEM, facas industriais sob medida, fabricação de lâminas em formato DXF",
   },
   "bottom-grooved-anvil-knives": {
-    title: "Bottom Grooved Anvil Knives | Shear Pair Anvils | Sureay",
+    title:
+      "Facas de bigorna com ranhura na parte inferior | Pares de bigornas para tesoura | Sureay",
     description:
-      "Bottom grooved anvil knives for shear slitting of film, paper, foil & tape. D2, M2 HSS & carbide. OEM fit Tidland, Kampf, Atlas & BHS arbor systems.",
+      "Facas de bigorna com ranhura inferior para corte por cisalhamento de filmes, papel, folhas metálicas e fitas. D2, M2 HSS e metal duro. Compatíveis com os sistemas de eixo OEM da Tidland, Kampf, Atlas e BHS.",
     keywords:
-      "bottom anvil knife, grooved anvil knife, shear slitting anvil, anvil knives for slitting, Tidland anvil knife, Kampf anvil blade, crush cut anvil blade",
+      "faca de bigorna inferior, faca de bigorna ranhurada, bigorna de corte por cisalhamento, facas de bigorna para corte longitudinal, faca de bigorna Tidland, lâmina de bigorna Kampf, lâmina de bigorna para corte por esmagamento",
   },
   "continuous-melt-filter-scraper-blades": {
-    title: "Melt Filter Scraper Blades & Filter Plates",
+    title: "Lâminas raspadoras e placas de filtro para filtros de fusão",
     description:
-      "D2/H13/Carbide scraper blades & filter plates for PCR continuous melt filters. HRC 58–62, HCl-resistant for PVC blends. Fit EREMA, Gneuß & Ettlinger.",
+      "D2/H13/Lâminas raspadoras de carboneto e placas filtrantes para filtros de fusão contínua de PCR. HRC 58–62, resistentes ao HCl para misturas de PVC. Compatíveis com EREMA, Gneuß e Ettlinger.",
   },
   "strand-pelletizer-rotors": {
-    title: "Strand Pelletizer Rotors for Compounding Lines",
+    title: "Rotores de peletizadoras Strand para linhas de composição",
     description:
-      "Strand pelletizer rotors for plastic compounding lines. PM-HSS & carbide, ≤0.005mm concentricity. Drop-in fit for Maag, Coperion & Cumberland pelletizers.",
+      "Rotores para peletizadoras de fio destinados a linhas de composição de plásticos. PM-HSS e carboneto, concentricidade ≤0,005 mm. Encaixe direto para peletizadoras Maag, Coperion e Cumberland.",
   },
   "slitter-rewinder-bottom-knives": {
-    title: "Slitter Rewinder Bottom Knives | Paper Rewinder Blades | Sureay",
+    title:
+      "Lâminas inferiores para cortadoras-rebobinadoras | Lâminas para rebobinadoras de papel | Sureay",
     description:
-      "Solid and carbide-tipped bottom knives for paper slitter rewinders. Mirror finish, burr-free, dust-reduced. Φ250–Φ254 stock sizes, custom bores to machine.",
+      "Lâminas inferiores sólidas e com ponta de metal duro para cortadoras-rebobinadoras de papel. Acabamento espelhado, sem rebarbas, com redução de poeira. Tamanhos padrão de Φ250 a Φ254; furos personalizados de acordo com a máquina.",
     keywords:
-      "slitter rewinder bottom knives, rewinder bottom knife, paper rewinder blades, Jagenberg rewinder knives, Bielomatik bottom knife, ECH Will rewinder blades, Maxson rewinder knives",
+      "facas inferiores para cortadoras-enroladoras, faca inferior para enroladora, lâminas para enroladoras de papel, facas para enroladoras Jagenberg, faca inferior Bielomatik, lâminas para enroladoras ECH Will, facas para enroladoras Maxson",
   },
   "box-slotting-knives": {
-    title: "Box Slotting Knives | Carbide Grooving Knives | Sureay",
+    title:
+      "Facas para ranhuras em caixas | Facas de metal duro para ranhuras | Sureay",
     description:
-      "Carbide slotting knives for greyboard and rigid gift box machines. Left/right pairs, GS05U and GS20U grades, five stock sizes, adjustable to board thickness.",
+      "Facas de corte em metal duro para máquinas de papelão cinza e caixas de presente rígidas. Pares esquerda/direita, classes GS05U e GS20U, cinco tamanhos padrão, ajustáveis à espessura do papelão.",
     keywords:
-      "box slotting knives, greyboard grooving knife, rigid box slotting blade, gift box V groove knife, carbide slotting knife",
+      "facas para ranhuras em caixas, faca para ranhuras em papelão cinza, lâmina para ranhuras em caixas rígidas, faca para ranhura em V em caixas de presente, faca de metal duro para ranhuras",
   },
   "paper-straw-slitting-blades": {
-    title: "Paper Straw Cutting Blades | Non-Stick Carbide Slitters | Sureay",
+    title:
+      "Lâminas para corte de canudos de papel | Lâminas de corte de carboneto antiaderentes | Sureay",
     description:
-      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100, 0.15–0.30 mm. Resist adhesive build-up for fray-free cut ends.",
+      "Lâminas circulares de carboneto antiaderentes para corte de canudos de papel e hastes de filtro. Φ88–Φ100, 0,15–0,30 mm. Resistentes ao acúmulo de adesivo, garantindo extremidades cortadas sem desfiados.",
     keywords:
-      "paper straw cutting blades, paper straw slitting knife, filter rod cutting blade, non-stick carbide circular blade, Hauni filter blade",
+      "lâminas para corte de canudos de papel, faca para corte longitudinal de canudos de papel, lâmina para corte de hastes de filtro, lâmina circular de carboneto antiaderente, lâmina de filtro Hauni",
   },
   "groove-bottom-knives": {
-    title: "Multi-Groove Bottom Knives | Bottom Cutter Rings | Sureay",
+    title:
+      "Facas inferiores com múltiplas ranhuras | Anéis cortadores inferiores | Sureay",
     description:
-      "Multi-groove bottom knife rings for shear slitting. Groove pitch from 5 mm, OD to Φ406 mm, air-shaft or set-screw bore. Single-groove and smooth rings too.",
+      "Anéis de lâmina inferiores com múltiplas ranhuras para corte por cisalhamento. Passo das ranhuras a partir de 5 mm, diâmetro externo (OD) até Φ406 mm, com furo para eixo pneumático ou parafuso de fixação. Também estão disponíveis anéis com ranhura única e lisos.",
     keywords:
-      "multi groove bottom knife, groove bottom knives, multi groove bottom slitter, bottom cutter rings, multi blade cutter ring, single blade cutter ring, smooth spacer ring, MKB bottom knife, groove pitch cutter ring, split cutter ring",
+      "faca inferior com múltiplas ranhuras, facas inferiores com ranhuras, cortador inferior com múltiplas ranhuras, anéis cortadores inferiores, anel cortador com múltiplas lâminas, anel cortador com lâmina única, anel espaçador liso, faca inferior MKB, anel cortador com passo de ranhura, anel cortador dividido",
   },
 };

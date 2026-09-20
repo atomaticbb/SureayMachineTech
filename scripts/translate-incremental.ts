@@ -44,11 +44,21 @@ const RELAXED_SKIP = new Set(NON_TRANSLATABLE_KEYS);
 for (const k of INCLUDE_KEYS) RELAXED_SKIP.delete(k);
 
 // Eligible languages — those whose base data file has been written (i.e.
-// not a stub). VI + AR use Google Translate; the others use DeepL.
-const ALL_INCREMENTAL_LANGS: LangCode[] = ["es", "fr", "ru", "vi", "ar"];
+// not a stub). VI + AR were translated through Google when DeepL had no
+// support for them; everything else, including pt and tr, goes via DeepL.
+const ALL_INCREMENTAL_LANGS: LangCode[] = [
+  "es",
+  "fr",
+  "ru",
+  "vi",
+  "ar",
+  "pt",
+  "tr",
+];
 
 function providerFor(lang: LangCode): TranslationProvider {
-  if (lang === "vi" || lang === "ar") return new GoogleTranslateUnofficialProvider();
+  if (lang === "vi" || lang === "ar")
+    return new GoogleTranslateUnofficialProvider();
   const key = process.env.DEEPL_API_KEY;
   if (!key) throw new Error("DEEPL_API_KEY missing for non-VI/AR lang");
   return new DeepLProvider(key);
@@ -101,7 +111,9 @@ async function main() {
   const allFields = extractTranslatableFields(sourceBlades, [], RELAXED_SKIP);
   const newFields = allFields.filter(f =>
     f.path.some(
-      seg => typeof seg === "string" && (INCLUDE_KEYS as readonly string[]).includes(seg)
+      seg =>
+        typeof seg === "string" &&
+        (INCLUDE_KEYS as readonly string[]).includes(seg)
     )
   );
 
@@ -134,7 +146,9 @@ async function main() {
       );
     }
   } catch (e) {
-    console.log(`[incremental] could not check DeepL quota: ${(e as Error).message}`);
+    console.log(
+      `[incremental] could not check DeepL quota: ${(e as Error).message}`
+    );
   }
 
   if (flags.dryRun) {
@@ -145,12 +159,16 @@ async function main() {
   for (const lang of flags.langs) {
     const outPath = localePath(lang);
     if (!fs.existsSync(outPath)) {
-      console.error(`[${lang}] ✗ ${outPath} not found — run translate-data first`);
+      console.error(
+        `[${lang}] ✗ ${outPath} not found — run translate-data first`
+      );
       continue;
     }
 
     const provider = providerFor(lang);
-    console.log(`\n[${lang}] adding ${INCLUDE_KEYS.join(" + ")} via ${provider.name}`);
+    console.log(
+      `\n[${lang}] adding ${INCLUDE_KEYS.join(" + ")} via ${provider.name}`
+    );
     const t0 = Date.now();
 
     // Translate the source-extracted English values for this language.
@@ -165,7 +183,10 @@ async function main() {
       const batch = sources.slice(i, i + batchSize);
       const out = await provider.translateBatch(batch, lang);
       translated.push(...out);
-      if (translated.length === sources.length || translated.length % 50 === 0) {
+      if (
+        translated.length === sources.length ||
+        translated.length % 50 === 0
+      ) {
         process.stdout.write(
           `\r  [${provider.name}] ${translated.length}/${sources.length}   `
         );

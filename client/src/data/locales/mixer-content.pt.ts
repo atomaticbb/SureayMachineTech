@@ -1,106 +1,106 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    mixerContent.ts
 // Target:    pt
-// Generated: 2026-09-20T07:44:37.564Z
+// Generated: 2026-09-20T08:00:26.676Z
 // Provider:  manual (scripts/gen-mixer-locale.ts)
 
 import type { MixerContent } from "../mixerContent";
 
 export const MIXER_CONTENT: MixerContent = {
-  contentLastReviewed: "July 2026",
+  contentLastReviewed: "Julho de 2026",
   contentReviewer: {
     name: "Xu Zhengnan",
-    title: "Foundry Engineer",
+    title: "Engenheiro de Fundição",
   },
   trustItems: [
-    "ISO 9001:2015 Certified",
-    "Ni-Hard / High-Chrome Cast",
-    "Made to Order",
-    "Ships to 50+ Countries",
+    "Certificado pela ISO 9001:2015",
+    "Ni-Hard / Fundição com alto teor de cromo",
+    "Feito sob encomenda",
+    "Envio para mais de 50 países",
   ],
   story: [
     {
-      tag: "MATERIALS",
-      title: "Ni-Hard & High-Chromium Iron",
-      body: "Liners, blades and scrapers are cast in Ni-Hard and high-chromium iron above HB 600, harder than the aggregate that grinds against them. Mixing arms use tough alloy-steel casting that takes shock load without cracking.",
+      tag: "MATERIAIS",
+      title: "Ni-Hard e ferro com alto teor de cromo",
+      body: "Os revestimentos, as lâminas e os raspadores são fundidos em Ni-Hard e ferro com alto teor de cromo, com dureza superior a HB 600, sendo mais duros do que o agregado que se esfrega contra eles. Os braços de mistura são fabricados em fundição de aço-liga resistente, capaz de suportar cargas de choque sem rachar.",
     },
     {
-      tag: "FOUNDRY",
-      title: "Lost-Foam & DISA Casting",
-      body: "The same foundry and metallurgy team behind our industrial blade business casts every wear part on lost-foam and DISA green-sand lines, then machines it to the original bolt pattern for a flush, drop-in fit.",
+      tag: "FUNDIDORIA",
+      title: "Fundição por espuma perdida e DISA",
+      body: "A mesma equipe de fundição e metalurgia responsável por nossa linha de lâminas industriais funde todas as peças de desgaste nas linhas de fundição por espuma perdida e de areia verde DISA e, em seguida, as usina de acordo com o padrão original de parafusos, garantindo um encaixe perfeito e pronto para uso.",
     },
     {
-      tag: "MADE TO FIT",
-      title: "Reverse-Engineered to Fit",
-      body: "There is no catalogue number to look up. Every part is reverse-engineered from your worn sample or plant model and machined to the original bore, bolt circle and profile — so it drops onto the shaft without shimming, drilling or field grinding.",
+      tag: "FEITO SOB MEDIDA",
+      title: "Projetado com base em engenharia reversa para se adequar",
+      body: "Não há número de catálogo para consultar. Cada peça é projetada a partir da sua amostra desgastada ou do modelo da fábrica e usinada de acordo com o diâmetro interno, o círculo de parafusos e o perfil originais — de modo que ela se encaixa no eixo sem a necessidade de calços, furação ou retificação no local.",
     },
     {
-      tag: "QUALITY",
-      title: "ISO 9001:2015, Factory-Direct",
-      body: "Sureay is ISO 9001:2015 certified and ships factory-direct to over 50 countries, with material and hardness reports available on request. OEM/ODM programmes are welcome.",
+      tag: "QUALIDADE",
+      title: "ISO 9001:2015, Direto da fábrica",
+      body: "A Sureay possui certificação ISO 9001:2015 e realiza remessas diretamente da fábrica para mais de 50 países, com relatórios de materiais e dureza disponíveis mediante solicitação. Aceitamos programas de OEM/ODM.",
     },
   ],
   gradeGuide: {
     cast_steel: {
       intro:
-        "This part is cast in tough steel, not hard iron — a mixing arm fails from shock and fatigue, so toughness matters more than surface hardness. Pick the grade by duty:",
+        "Esta peça é fundida em aço tenaz, e não em ferro duro — um braço misturador pode falhar devido a impactos e fadiga, por isso a tenacidade é mais importante do que a dureza superficial. Escolha o tipo de aço de acordo com a função:",
       rows: [
         {
-          duty: "Standard duty",
+          duty: "Imposto padrão",
           grade:
-            "Tough cast steel (ZG310-570 class) for general twin-shaft and planetary plants.",
+            "Aço fundido resistente (classe ZG310-570) para instalações gerais de eixo duplo e planetárias.",
         },
         {
-          duty: "High output / abrasive aggregate",
+          duty: "Alto rendimento / agregado abrasivo",
           grade:
-            "Upgraded alloy steel with a reinforced hub for long shifts and heavy load.",
+            "Aço-liga aprimorado com cubo reforçado para turnos longos e cargas pesadas.",
         },
         {
-          duty: "Hot / high-temperature service",
+          duty: "Serviço em condições de alta temperatura",
           grade:
-            "Heat-resistant alloy steel that keeps its strength at mixing temperature.",
+            "Aço-liga resistente ao calor que mantém sua resistência à temperatura de mistura.",
         },
       ],
     },
     hard_iron: {
       intro:
-        "This is a hard-iron wear face (HB 600+). The right grade depends on your aggregate and output — harder, more abrasive aggregate justifies a higher-carbide grade:",
+        "Trata-se de uma face de desgaste de ferro duro (HB 600+). A escolha da classe adequada depende do agregado e da produção — um agregado mais duro e abrasivo justifica uma classe com maior teor de carboneto:",
       rows: [
         {
-          duty: "Economical / regular renewal",
+          duty: "Renovação econômica / regular",
           grade:
-            "Ni-Hard — good general abrasion resistance at lower cost for a part on a routine cycle.",
+            "Ni-Hard — boa resistência geral à abrasão a um custo menor para uma peça submetida a um ciclo de operação rotineiro.",
         },
         {
-          duty: "Long life / abrasive aggregate",
+          duty: "Agregado de longa durabilidade / abrasivo",
           grade:
-            "High-chromium iron — higher carbide volume for the longest wear life.",
+            "Ferro com alto teor de cromo — maior volume de carboneto para garantir a maior vida útil.",
         },
         {
-          duty: "Large or recycled aggregate",
+          duty: "Agregado de granulometria grossa ou reciclado",
           grade:
-            "Impact-resistant grade that tolerates heavy strikes without chipping.",
+            "Tipo resistente a impactos que suporta golpes fortes sem lascar.",
         },
       ],
     },
     seal: {
       intro:
-        "A wear seal is chosen for resilience and sealing, not cast hardness. Pick the grade by pressure, temperature and dust load:",
+        "Uma vedação de desgaste é escolhida por sua resiliência e capacidade de vedação, e não pela dureza da peça fundida. Escolha o tipo de acordo com a pressão, a temperatura e a carga de poeira:",
       rows: [
         {
-          duty: "Standard service",
+          duty: "Serviço padrão",
           grade:
-            "Baseline sealing grade for typical batch plants and moderate pressure.",
+            "Nível básico de vedação para centrais de betonagem típicas e pressão moderada.",
         },
         {
-          duty: "High pressure / high output",
+          duty: "Alta pressão / alto rendimento",
           grade:
-            "Firmer compound and reinforced lip for long shifts and higher internal pressure.",
+            "Composto mais firme e borda reforçada para turnos longos e maior pressão interna.",
         },
         {
-          duty: "High temperature / heavy dust",
+          duty: "Alta temperatura / muita poeira",
           grade:
-            "Heat-resistant material for hot bituminous service and dust-heavy plants.",
+            "Material resistente ao calor para serviços com betume quente e instalações com grande quantidade de poeira.",
         },
       ],
     },
@@ -108,137 +108,144 @@ export const MIXER_CONTENT: MixerContent = {
   orderSteps: [
     {
       tag: "01",
-      title: "Send your part or model",
-      body: "Email a photo of the worn part, its key dimensions, or your plant make and model. If you can ship the worn part it becomes the master pattern for an exact copy.",
+      title: "Envie sua peça ou modelo",
+      body: "Envie por e-mail uma foto da peça desgastada, suas principais dimensões ou a marca e o modelo da sua máquina. Se você puder enviar a peça desgastada, ela servirá como molde mestre para a confecção de uma cópia exata.",
     },
     {
       tag: "02",
-      title: "We measure & match",
-      body: "Our team reverse-engineers the geometry, bolt pattern and profile, and recommends the grade for your aggregate, output and temperature.",
+      title: "Nós medimos e combinamos",
+      body: "Nossa equipe realiza a engenharia reversa da geometria, do padrão de parafusos e do perfil, e recomenda o tipo de aço adequado para o seu agregado, a capacidade de produção e a temperatura.",
     },
     {
       tag: "03",
-      title: "Confirm the quote",
-      body: "You approve dimensions, grade, price, MOQ and lead time before anything is cast — no surprises.",
+      title: "Confirme o orçamento",
+      body: "Você aprova as dimensões, a qualidade, o preço, a quantidade mínima de pedido (MOQ) e o prazo de entrega antes que qualquer peça seja fundida — sem surpresas.",
     },
     {
       tag: "04",
-      title: "Cast, inspect & ship",
-      body: "We cast on our lost-foam / DISA lines, run a dimensional and hardness check, and ship factory-direct to 50+ countries. A material and hardness report can travel with the order.",
+      title: "Moldar, inspecionar e enviar",
+      body: "Realizamos a moldagem em nossas linhas de espuma perdida / DISA, fazemos uma verificação de dimensões e dureza e enviamos diretamente da fábrica para mais de 50 países. Um relatório de materiais e dureza pode acompanhar o pedido.",
     },
   ],
   hubFaq: [
     {
       question:
-        "What is the difference between concrete and asphalt mixing plant wear parts?",
+        "Qual é a diferença entre as peças de desgaste das centrais de betão e das centrais de asfalto?",
       answer:
-        "Concrete mixer parts fight abrasion at ambient temperature, so the liners, blades and scrapers are cast in Ni-Hard or high-chromium iron and the arms in tough ZG310-570-class steel. Asphalt parts add heat on top of abrasion: the arms use heat-resistant alloy steel that holds its strength at mixing temperature, and the seals use high-temperature materials. The geometry differs too — side linings and spiral blades exist only in asphalt pugmills.",
-    },
-    {
-      question: "Can I order wear parts without an OEM drawing or part number?",
-      answer:
-        "Yes — that is the normal case. Send a photo of the worn part with its key dimensions, ship the worn part itself, or simply tell us the plant make and model. We reverse-engineer the bore, bolt circle and profile, and you approve every dimension before anything is cast.",
+        "As peças das betoneiras resistem à abrasão à temperatura ambiente; por isso, os revestimentos, as lâminas e os raspadores são fundidos em Ni-Hard ou ferro com alto teor de cromo, e os braços, em aço resistente da classe ZG310-570. As peças para asfalto enfrentam calor além da abrasão: os braços utilizam liga de aço resistente ao calor que mantém sua resistência na temperatura de mistura, e as vedações utilizam materiais para altas temperaturas. A geometria também difere — revestimentos laterais e lâminas espirais existem apenas em misturadores de asfalto.",
     },
     {
       question:
-        "Can concrete and asphalt plant parts ship together in one order?",
+        "Posso encomendar peças de desgaste sem um desenho do fabricante original ou um número de peça?",
       answer:
-        "Yes. Both lines are cast in the same foundry, so a mixed order consolidates into one shipment with one set of documents — common for contractors running both a batching plant and an asphalt plant, and for dealers stocking both lines. MOQ is assessed on the combined order.",
+        "Sim — esse é o procedimento normal. Envie uma foto da peça desgastada com suas principais dimensões, envie a própria peça desgastada ou simplesmente nos informe a marca e o modelo da máquina. Fazemos a engenharia reversa do diâmetro interno, do círculo de parafusos e do perfil, e você aprova todas as dimensões antes de qualquer peça ser fundida.",
     },
     {
       question:
-        "Are the wear parts made by the same factory as your industrial blades?",
+        "É possível enviar peças para usinas de concreto e asfalto juntas em um único pedido?",
       answer:
-        "Yes. Mixer wear parts come from the same foundry and metallurgy team behind our industrial blade business — the same lost-foam and DISA casting lines, heat treatment and CMM inspection, under one ISO 9001:2015 system. Buyers sourcing both blades and wear parts deal with a single factory.",
+        "Sim. Ambas as linhas são fundidas na mesma fundição; portanto, um pedido misto é agrupado em uma única remessa com um único conjunto de documentos — o que é comum para empreiteiros que operam tanto uma central de betão quanto uma usina de asfalto, e para revendedores que mantêm ambas as linhas em estoque. A quantidade mínima de pedido (MOQ) é calculada com base no pedido combinado.",
+    },
+    {
+      question:
+        "As peças de desgaste são fabricadas pela mesma fábrica que produz suas lâminas industriais?",
+      answer:
+        "Sim. As peças de desgaste dos misturadores são produzidas pela mesma fundição e pela mesma equipe de metalurgia responsáveis por nossa linha de lâminas industriais — as mesmas linhas de fundição por espuma perdida e DISA, tratamento térmico e inspeção CMM, sob um único sistema certificado pela norma ISO 9001:2015. Os compradores que adquirem tanto lâminas quanto peças de desgaste lidam com uma única fábrica.",
     },
   ],
   categoryContent: {
     concrete_mixing_plant: {
       heroTagline:
-        "Every wear surface inside your concrete mixer — arms, liner plates, scrapers, blades and shaft seals — cast to order and matched to the plant you run.",
-      overviewLead: "One mixing tool, five wear points",
+        "Todas as superfícies de desgaste no interior do seu misturador de concreto — braços, placas de revestimento, raspadores, lâminas e vedações do eixo — são fundidas sob encomenda e adaptadas à planta que você opera.",
+      overviewLead: "Uma ferramenta de mistura, cinco pontos de desgaste",
       overviewBody: [
-        "A twin-shaft or planetary concrete mixer wears in five places at once: the arms that carry the tools, the liner plates that shield the drum, the scrapers that keep it discharging clean, the blades that fold the batch, and the seals that keep grout off the bearings. Renew one in isolation and the others soon pull the whole tool out of its wear window.",
-        "So we treat the set as a system. Arms are cast in tough ZG310-570-class steel for shock, while liners, scrapers and blades are cast in Ni-Hard and high-chromium iron above HB 600 — harder than the aggregate grinding against them. Match the grade to your output and aggregate and the whole chamber stays on one predictable cycle.",
-        "There is no fixed catalogue to look up. Send a worn part, a photo or your plant make and model and we reverse-engineer each piece to the original bore, bolt circle and profile, so it drops in without shimming, drilling or field grinding.",
+        "Uma betoneira de eixo duplo ou planetária sofre desgaste em cinco pontos ao mesmo tempo: os braços que suportam as ferramentas, as placas de revestimento que protegem o tambor, os raspadores que garantem a descarga limpa, as lâminas que misturam a mistura e as vedações que impedem que a argamassa entre nos rolamentos. Se você substituir apenas uma dessas peças isoladamente, as outras logo farão com que toda a máquina saia da sua janela de desgaste.",
+        "Portanto, tratamos o conjunto como um sistema. Os braços são fundidos em aço resistente da classe ZG310-570 para suportar impactos, enquanto os revestimentos, raspadores e lâminas são fundidos em Ni-Hard e ferro com alto teor de cromo com dureza superior a HB 600 — mais duros do que o agregado que se esfrega contra eles. Adapte o tipo de material à sua produção e ao agregado, e toda a câmara permanecerá em um ciclo previsível.",
+        "Não há um catálogo fixo para consulta. Envie uma peça desgastada, uma foto ou a marca e o modelo da sua máquina, e faremos a engenharia reversa de cada peça para restaurar o diâmetro interno, o círculo de parafusos e o perfil originais, de modo que ela se encaixe perfeitamente, sem a necessidade de calços, furação ou retificação no local.",
       ],
       gradeNote:
-        "We match the grade to your aggregate and output: economical Ni-Hard for parts on a routine cycle, high-chromium iron for the longest life under abrasive aggregate, and tough cast steel for the arms that take shock rather than abrasion.",
+        "Adaptamos o tipo de material ao seu agregado e à sua produção: Ni-Hard econômico para peças em ciclos de rotina, ferro com alto teor de cromo para maior vida útil em contato com agregados abrasivos e aço fundido resistente para os braços que sofrem impactos, em vez de abrasão.",
       materialRows: [
         {
-          part: "Mixing arm",
+          part: "Braço misturador",
           material:
-            "Tough cast steel (ZG310-570 class, GB/T 11352) — impact, not surface hardness",
+            "Aço fundido resistente (classe ZG310-570, GB/T 11352) — resistência ao impacto, não dureza superficial",
         },
         {
-          part: "Liner plate",
+          part: "Placa de revestimento",
           material:
-            "Ni-Hard / high-chromium iron (ASTM A532 Class I / III), HB 600+",
+            "Ni-Hard / ferro com alto teor de cromo (ASTM A532 Classe I / III), HB 600+",
         },
         {
-          part: "Scraper",
+          part: "Raspador",
           material:
-            "High-chromium iron (ASTM A532 Class III), HB 600+, precision-ground edge",
+            "Ferro com alto teor de cromo (ASTM A532 Classe III), HB 600+, borda retificada com precisão",
         },
         {
-          part: "Mixer blade",
-          material: "Ni-Hard (ASTM A532 Class I), HB 600+, bolt-on",
+          part: "Pá da batedeira",
+          material:
+            "Ni-Hard (ASTM A532 Classe I), HB 600+, para fixação com parafusos",
         },
         {
-          part: "Wear seal",
+          part: "Vedação de desgaste",
           material:
-            "Resilient sealing compound — leak-tight, not a cast wear face",
+            "Composto de vedação resiliente — à prova de vazamentos, não é uma superfície de desgaste moldada",
         },
       ],
       faq: [
         {
           question:
-            "How do I choose the right wear parts for my concrete mixing plant?",
+            "Como faço para escolher as peças de desgaste adequadas para minha central de betão?",
           answer:
-            "Start with your plant make and model and the parts wearing fastest. We match each part's grade to your aggregate hardness and output — Ni-Hard for economical general duty, high-chromium iron for the longest life, and tough cast steel for the arms. Send a worn sample or the model and we confirm the full fit before production.",
+            "Comece informando a marca e o modelo da sua máquina, bem como as peças que se desgastam mais rapidamente. Adaptamos a qualidade de cada peça à dureza e à capacidade de produção do seu agregado — Ni-Hard para serviços gerais econômicos, ferro com alto teor de cromo para maior vida útil e aço fundido resistente para os braços. Envie uma amostra desgastada ou o modelo, e confirmaremos o encaixe perfeito antes da produção.",
         },
         {
-          question: "Can I order a full set to reline the whole mixer at once?",
+          question:
+            "Posso encomendar um conjunto completo para revestir toda a batedeira de uma só vez?",
           answer:
-            "Yes, and it is usually the most economical route. Because the arms, liners, scrapers, blades and seals share one wear cycle, relining as a set avoids a second shutdown weeks later. Send the plant model and we quote the complete kit.",
+            "Sim, e essa costuma ser a opção mais econômica. Como os braços, revestimentos, raspadores, lâminas e vedações compartilham um único ciclo de desgaste, a substituição do revestimento como um conjunto evita uma segunda parada semanas depois. Envie o modelo da planta e faremos um orçamento do kit completo.",
         },
         {
-          question: "Which concrete plant brands do these parts fit?",
+          question:
+            "Em quais marcas de usinas de concreto essas peças são compatíveis?",
           answer:
-            "We supply replacement wear parts for twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich, and can reverse-engineer parts for other or older plants from a worn sample.",
+            "Fornecemos peças de reposição para instalações de dois eixos e planetárias das marcas Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS e Eirich, e podemos realizar engenharia reversa de peças para outras instalações ou modelos mais antigos a partir de uma amostra desgastada.",
         },
         {
-          question: "How long do concrete mixer wear parts last?",
+          question: "Quanto tempo duram as peças de desgaste de uma betoneira?",
           answer:
-            "Liners, scrapers and blades typically run 6-18 months and arms 12-18, depending on output and aggregate hardness. These are guides only — service life depends on output, aggregate hardness and duty cycle, so verify against your OEM service interval.",
+            "Os revestimentos, raspadores e lâminas costumam ter vida útil de 6 a 18 meses, e os braços, de 12 a 18 meses, dependendo da produção e da dureza do agregado. Esses valores são meramente orientativos — a vida útil depende da produção, da dureza do agregado e do ciclo de trabalho; portanto, verifique os intervalos de manutenção recomendados pelo fabricante original (OEM).",
         },
         {
-          question: "How fast can you supply a replacement set?",
+          question:
+            "Em quanto tempo vocês conseguem fornecer um conjunto de reposição?",
           answer:
-            "We ship factory-direct with a low MOQ; lead time depends on the model and whether tooling already exists. Send your plant model for a quote — most repeat items ship in a few weeks, with a material and hardness report available on request.",
+            "Enviamos diretamente da fábrica com um MOQ baixo; o prazo de entrega depende do modelo e da existência ou não de ferramentas de fabricação. Envie o modelo da sua peça para receber um orçamento — a maioria dos itens de produção recorrente é enviada em poucas semanas, com um relatório de materiais e dureza disponível mediante solicitação.",
         },
       ],
       caseStudy: {
-        title: "Matched from a worn sample — no drawing on file",
+        title:
+          "Reproduzido a partir de uma amostra desgastada — não há desenho em arquivo",
         paragraphs: [
-          "A maintenance manager sent us a photo of a liner segment pulled out of an eight-year-old Zoomlion mixing plant: half the wear face gone, bolt holes slightly oval, and no drawing anywhere in the plant's paperwork — just a faint cast number and the logo pressed into the back.",
-          "That sample told us what we needed before quoting. The cast pattern and position numbers on the back face identified which slot in the drum the plate belonged to; the wear pattern — even thinning rather than local gouging — ruled out a misaligned arm; and the bolt geometry gave us the spacing the new plate had to hold to seat flush.",
-          "Liners like this are cast on our lost-foam and DISA lines and machined to the original bolt pattern, so the replacement drops in beside its neighbours with no shimming and no field drilling.",
+          "Um gerente de manutenção nos enviou uma foto de um segmento de revestimento retirado de uma central de betão Zoomlion com oito anos de uso: metade da superfície de desgaste estava desgastada, os orifícios dos parafusos estavam levemente ovalizados e não havia nenhum desenho na documentação da central — apenas um número de fundição pouco visível e o logotipo gravado na parte de trás.",
+          "Essa amostra nos forneceu as informações necessárias antes de fazermos o orçamento. O padrão de fundição e os números de posição na face posterior identificaram a qual ranhura do tambor a placa pertencia; o padrão de desgaste — caracterizado por um afinamento gradual, em vez de arranhões localizados — descartou a possibilidade de um braço desalinhado; e a geometria do parafuso nos indicou o espaçamento que a nova placa deveria respeitar para se encaixar perfeitamente.",
+          "Revestimentos como este são moldados em nossas linhas de espuma perdida e DISA e usinados de acordo com o padrão original de parafusos; assim, a peça de reposição se encaixa perfeitamente ao lado das peças vizinhas, sem a necessidade de calços nem de perfuração no local.",
         ],
         images: [
           {
             src: "/images/news/mixer-wear-parts-oem-matching-cast-marks.webp",
             caption:
-              "The cast-in part number is the starting reference for a match",
+              "O número de peça gravado é a referência inicial para a identificação",
           },
           {
             src: "/images/news/mixer-wear-parts-oem-matching-pattern-number.webp",
-            caption: "Pattern number and foundry marks cast into the back face",
+            caption:
+              "Número do molde e marcas da fundição gravados na face posterior",
           },
           {
             src: "/images/news/mixer-wear-parts-oem-matching-arms.webp",
             caption:
-              "Arms and liners share a drum but are cast in different steels",
+              "Os braços e os revestimentos compartilham o mesmo tambor, mas são fundidos em aços diferentes",
           },
         ],
         articleLink: "/news/mixer-wear-parts-oem-matching",
@@ -246,70 +253,78 @@ export const MIXER_CONTENT: MixerContent = {
     },
     asphalt_mixing_plant: {
       heroTagline:
-        "Every hot-mix wear surface in your asphalt plant — arms, liners, side linings, spiral blades, scrapers and seals — cast to order for the plant you run.",
-      overviewLead: "Built for hot, abrasive service",
+        "Todas as peças de desgaste para mistura asfáltica quente da sua usina de asfalto — braços, revestimentos internos, revestimentos laterais, lâminas espirais, raspadores e vedações — são fundidas sob medida para a usina que você opera.",
+      overviewLead:
+        "Projetado para condições de trabalho em altas temperaturas e com materiais abrasivos",
       overviewBody: [
-        "A pugmill or twin-shaft asphalt mixer fights heat and abrasion at once: hot bituminous mix and sharp mineral aggregate attack the arms, liners, side linings, spiral blades, scrapers and shaft seals every batch. A worn part in one position quickly drags the rest — and the structural shell — down with it.",
-        "So the set is engineered as a system for hot service. Arms use heat-resistant alloy steel that holds strength at mixing temperature; liners, side linings, blades and scrapers are cast in high-chromium iron above HB 600; seals use heat-resistant materials that hold their seal through the temperature cycle. Match the grade to your output and aggregate and the chamber stays on one cycle.",
-        "There is no fixed catalogue. Send a worn part, a photo or your plant make and model and we reverse-engineer each piece to the original profile and bolt pattern for a no-shim, drop-in fit.",
+        "Um misturador de asfalto do tipo pugmill ou de eixo duplo enfrenta simultaneamente o calor e a abrasão: a mistura betuminosa quente e os agregados minerais afiados atacam os braços, os revestimentos internos, os revestimentos laterais, as lâminas espirais, os raspadores e as vedações dos eixos a cada lote. Uma peça desgastada em um ponto rapidamente arrasta o restante — e a estrutura externa — junto com ela.",
+        "Portanto, o conjunto foi projetado como um sistema para operação em alta temperatura. Os braços são fabricados em liga de aço resistente ao calor, que mantém sua resistência na temperatura de mistura; os revestimentos internos, revestimentos laterais, lâminas e raspadores são fundidos em ferro com alto teor de cromo, com dureza superior a HB 600; as vedações utilizam materiais resistentes ao calor que mantêm sua vedação ao longo do ciclo de temperatura. Escolha o tipo de material adequado à sua produção e ao agregado, e a câmara permanecerá em um único ciclo.",
+        "Não há um catálogo fixo. Envie uma peça desgastada, uma foto ou a marca e o modelo da sua máquina, e faremos a engenharia reversa de cada peça para restaurar o perfil original e o padrão de parafusos, garantindo um encaixe perfeito, sem necessidade de calços.",
       ],
       gradeNote:
-        "We match the grade to your aggregate, output and heat: high-chromium iron for the hard-wearing liners, blades and scrapers, heat-resistant alloy steel for the arms, and heat-resistant sealing materials for the shaft seals.",
+        "Selecionamos o tipo de material adequado ao seu agregado, produção e temperatura: ferro com alto teor de cromo para revestimentos, lâminas e raspadores resistentes ao desgaste; aço-liga resistente ao calor para os braços; e materiais de vedação resistentes ao calor para as vedações do eixo.",
       materialRows: [
         {
-          part: "Mixing arm",
-          material: "Heat-resistant alloy steel — holds strength hot",
-        },
-        {
-          part: "Liner plate",
-          material: "High-chromium iron (ASTM A532 Class III), HB 600+",
-        },
-        {
-          part: "Side lining",
+          part: "Braço misturador",
           material:
-            "High-chromium iron (ASTM A532 Class III), HB 600+, corner-profiled",
+            "Aço-liga resistente ao calor — mantém a resistência em altas temperaturas",
         },
         {
-          part: "Spiral blade",
+          part: "Placa de revestimento",
           material:
-            "High-chromium alloy iron (ASTM A532 Class III), HB 600+, bolt-on",
+            "Ferro com alto teor de cromo (ASTM A532 Classe III), HB 600+",
         },
         {
-          part: "W-type scraper",
+          part: "Linhas laterais",
           material:
-            "High-chromium iron (ASTM A532 Class III), HB 600+, W3 profile",
+            "Ferro com alto teor de cromo (ASTM A532 Classe III), HB 600+, com perfil de canto",
         },
         {
-          part: "Sealing element",
-          material: "Heat-resistant sealing material — high-temp, leak-tight",
+          part: "Lâmina em espiral",
+          material:
+            "Liga de ferro com alto teor de cromo (ASTM A532 Classe III), HB 600+, para fixação com parafusos",
+        },
+        {
+          part: "Raspador tipo W",
+          material:
+            "Ferro com alto teor de cromo (ASTM A532 Classe III), HB 600+, perfil W3",
+        },
+        {
+          part: "Elemento de vedação",
+          material:
+            "Material de vedação resistente ao calor — para altas temperaturas, à prova de vazamentos",
         },
       ],
       faq: [
         {
           question:
-            "How do I choose the right wear parts for my asphalt mixing plant?",
+            "Como faço para escolher as peças de desgaste adequadas para minha usina de mistura de asfalto?",
           answer:
-            "Start with your plant make and model and the parts wearing fastest. Because asphalt service adds heat, we match the grade to your aggregate, output and temperature — high-chromium iron for the wear faces, heat-resistant alloy steel for the arms, heat-resistant materials for the seals. Send a worn sample or the model and we confirm the fit before production.",
+            "Comece informando a marca e o modelo da sua máquina, bem como as peças que se desgastam mais rapidamente. Como o trabalho com asfalto gera calor, adaptamos o tipo de material ao seu agregado, à capacidade de produção e à temperatura — ferro com alto teor de cromo para as superfícies de desgaste, liga de aço resistente ao calor para os braços e materiais resistentes ao calor para as vedações. Envie uma amostra desgastada ou o modelo, e confirmaremos a compatibilidade antes da produção.",
         },
         {
-          question: "Can I order a full set to reline the pugmill at once?",
+          question:
+            "Posso encomendar um conjunto completo para revestir o misturador de uma só vez?",
           answer:
-            "Yes, and most plants do. The arms, liners, side linings, blades, scrapers and seals share one wear cycle, so relining as a set — ideally between paving seasons — avoids losing the plant mid-season to a second shutdown. Send the plant model and we quote the complete kit.",
+            "Sim, e a maioria das instalações funciona assim. Os braços, revestimentos, forros laterais, lâminas, raspadores e vedações compartilham um único ciclo de desgaste; portanto, a substituição dos revestimentos como um conjunto — de preferência entre as temporadas de pavimentação — evita que a instalação fique fora de operação no meio da temporada devido a uma segunda paralisação. Envie o modelo da instalação e faremos um orçamento do kit completo.",
         },
         {
-          question: "Which asphalt plant brands do these parts fit?",
+          question:
+            "Em quais marcas de usinas de asfalto essas peças são compatíveis?",
           answer:
-            "We supply replacement wear parts for pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, plus generic pugmills, and can reverse-engineer parts for other or older plants from a worn sample.",
+            "Fornecemos peças de reposição para usinas de misturadores de eixo único e de eixo duplo das marcas Ammann, Marini, Benninghoven, MEKA e Astec, além de misturadores de eixo único genéricos, e podemos realizar engenharia reversa de peças para outras usinas ou modelos mais antigos a partir de uma amostra desgastada.",
         },
         {
-          question: "How long do asphalt mixer wear parts last?",
+          question:
+            "Qual é a vida útil das peças de desgaste de um misturador de asfalto?",
           answer:
-            "Most hot-mix wear parts run 6-18 months depending on output and aggregate hardness, with the high-wear side linings and scrapers at the shorter end. These are guides only — service life depends on output, aggregate hardness and duty cycle, so verify against your OEM service interval.",
+            "A maioria das peças de desgaste do sistema de mistura a quente tem vida útil de 6 a 18 meses, dependendo da produção e da dureza dos agregados, sendo que os revestimentos laterais e os raspadores, sujeitos a maior desgaste, apresentam a vida útil mais curta. Essas informações são meramente orientativas — a vida útil depende da produção, da dureza dos agregados e do ciclo de trabalho; portanto, verifique de acordo com o intervalo de manutenção indicado pelo fabricante original (OEM).",
         },
         {
-          question: "How fast can you supply a replacement set?",
+          question:
+            "Em quanto tempo vocês conseguem fornecer um conjunto de reposição?",
           answer:
-            "We ship factory-direct with a low MOQ; lead time depends on the model and whether tooling already exists. Send your plant model for a quote — most repeat items ship in a few weeks, with a material and hardness report available on request.",
+            "Enviamos diretamente da fábrica com um MOQ baixo; o prazo de entrega depende do modelo e da existência ou não de ferramentas de fabricação. Envie o modelo da sua peça para receber um orçamento — a maioria dos itens de produção recorrente é enviada em poucas semanas, com um relatório de materiais e dureza disponível mediante solicitação.",
         },
       ],
     },

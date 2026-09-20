@@ -31,7 +31,7 @@ export const DEFAULT_LANG: Lang = "en";
  * an English page served under a localized URL and advertised as a translation.
  * Empty this list only when the locale data files are genuinely complete.
  */
-export const PENDING_LANGS: readonly Lang[] = ["pt", "tr"];
+export const PENDING_LANGS: readonly Lang[] = [];
 
 export function isPendingLang(lang: Lang): boolean {
   return PENDING_LANGS.includes(lang);

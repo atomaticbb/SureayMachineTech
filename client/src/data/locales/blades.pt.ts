@@ -1,23 +1,22 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    blades.ts
 // Target:    pt
-// Generated: 2026-09-20T07:45:01.112Z
-// Provider:  manual (scripts/gen-blade-locale.ts)
+// Generated: 2026-09-20T07:58:41.029Z
+// Provider:  deepl (incremental: faqs + components)
 
 import type { Blade } from "../blades";
-
 export const blades: Blade[] = [
   {
     id: "rotary-slitter-knives",
-    name: "Film & Tape Slitter Knives",
+    name: "Facas para cortadoras de filmes e fitas",
     fullName:
-      "Precision Slitter Knives for Film, Tape & Flexible Packaging Converting",
+      "Lâminas de corte de precisão para a conversão de filmes, fitas e embalagens flexíveis",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Film & Tape Slitter Knives",
+    categoryDisplay: "Facas para cortadoras de filmes e fitas",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Best Seller",
+    badge: "Mais vendido",
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
@@ -25,11 +24,11 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
     description:
-      "Precision-ground circular slitter blades for BOPP, BOPET & CPP film, PE stretch film, PSA tape & nonwoven converting. ±0.002 mm thickness tolerance, ≤0.02 mm T.I.R. runout. Shear, score & razor profiles in M2 HSS, D2 & ASP23 PM steel with optional TiN & DLC anti-stick coatings. Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery slitter systems.",
+      "Lâminas circulares de corte para conversão de filmes BOPP, BOPET e CPP, filme extensível de PE, fitas PSA e não tecidos, retificadas com precisão. Tolerância de espessura de ±0,002 mm, desvio de T.I.R. ≤0,02 mm. Perfis de corte, ranhura e lâmina de barbear em aço M2 HSS, D2 e ASP23 PM, com revestimentos antiaderentes opcionais de TiN e DLC. Compatibilidade direta com sistemas de corte da Tidland, Kampf, Atlas e Dusenbery.",
     fullDescription:
-      "Circular film and tape slitter knives operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400–600 m/min, a slitting blade thickness tolerance error of 0.005 mm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay film and tape slitter blades are manufactured to ±0.002 mm thickness tolerance and ≤20.02 mm total indicated runout (T.I.R.)—tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates—battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners—require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05–0.15 mm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500 m/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60–80%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
+      "As lâminas de corte circulares para filmes e fitas operam na interseção entre a precisão dimensional e a ciência dos materiais. Em uma linha de conversão que processa filmes BOPP ou BOPET a 400–600 m/min, um erro de tolerância de espessura da lâmina de corte de 0,005 mm por lâmina se acumula ao longo de um conjunto de lâminas no eixo, produzindo desvio visível na largura do corte, ondulação nas bordas e resíduos que contaminam os equipamentos de rebobinagem e embalagem a jusante. As lâminas de corte para filmes e fitas da Sureay são fabricadas com tolerância de espessura de ±0,002 mm e desvio radial total indicado (T.I.R.) ≤20,02 mm — tolerâncias que se mantêm em todo o diâmetro de produção, não apenas no furo.\n\nA seleção da liga é determinada pela aplicação. A conversão padrão de papel revestido e papelão kraft é realizada com aço para rolamentos 52100 ou D2 aço-ferramenta para trabalho a frio. Substratos abrasivos — folhas de alumínio e elétrodos de cobre de grau de bateria para células de lítio de veículos elétricos (EV), embalagens reforçadas com fibra de vidro, revestimentos antiaderentes revestidos com silício — exigem aço de metalurgia do pó (PM) ASP23 ou ASP52 ou metal duro para uma vida útil aceitável da aresta. Filmes plásticos flexíveis (BOPP, BOPET, CPP, filme extensível de PE) são processados rotineiramente com lâminas M2 HSS com revestimento superficial opcional de TiN ou DLC PVD para evitar a transferência de filme adesivo e reduzir o aquecimento da banda induzido pelo atrito.\n\n## Por método de corte\n\n**Corte por cisalhamento (pares de lâminas superior e inferior combinadas):** A ação de tesoura entre a lâmina superior côncava e a lâmina inferior em forma de bigorna ranhurada gera um corte limpo por cisalhamento, sem carga de tração na banda. A folga entre as lâminas é normalmente ajustada entre 0,05 e 0,15 mm (dependendo do substrato); nossas tolerâncias de retificação garantem que essa folga seja consistente em toda a largura do corte. Isso é fundamental para papel, não tecidos e filmes flexíveis leves, nos quais a deformação das bordas é inaceitável.\n\n**Corte por esmagamento/riscagem (lâmina circular contra rolo de bigorna de borracha):** Uma lâmina endurecida e de borda afiada penetra em um laminado adesivo sensível à pressão, espuma ou banda de embalagem multicamadas contra uma bigorna de borracha de dureza controlada. A geometria do perfil da lâmina e o ângulo de bisel são otimizados de acordo com o substrato para evitar o vazamento de adesivo e a delaminação na borda de corte. A opção padrão para fitas sensíveis à pressão, corte de espuma e corte de embalagens médicas.\n\n**Corte com lâmina tipo navalha (flutuação livre ou lâmina única fixa):** Lâminas ultra-afiadas e de perfil fino removem os resíduos das bordas em linhas de extrusão de filme fundido, linhas de filme orientado e produção de não-tecido spunbond a velocidades acima de 500 m/min. A geometria da lâmina é otimizada para proporcionar o mínimo de arrasto da banda e a máxima limpeza da borda, evitando o enrolamento da borda e descargas eletrostáticas que causam rupturas da banda em linhas de alta velocidade.\n\n## Por material e setor\n\n**Filmes para embalagens flexíveis:** BOPP, BOPET, CPP, filme extensível de PE/PP, manga retrátil. O corte de filmes em alta velocidade requer controle preciso do desvio da lâmina para evitar picos de tensão na banda causados pela oscilação da lâmina. O M2 HSS com revestimento DLC opcional elimina a adesão do filme à superfície da lâmina.\n\n**Tecidos não tecidos e tecidos médicos:** PP spunbond, meltblown, tecidos médicos SMS, meios filtrantes HEPA. Ângulos de inclinação especializados evitam o desfiamento das fibras e o deslizamento da banda durante o corte de materiais de estrutura solta sob altas tensões de linha.\n\n**Fitas e etiquetas sensíveis à pressão:** Fita de máscara, fita adesiva, espuma dupla-face, material para etiquetas, adesivo de transferência. Os revestimentos antiaderentes de TiN e Teflon reduzem a frequência de limpeza em 60–80%, prolongando o tempo médio entre substituições nas aplicações mais exigentes de corte de fitas.",
     disambiguation:
-      "Running paper, tissue or board instead of film? See our [Paper Slitter Knives](/products/rotary-slitter-knives-paper) page for shear clearance data and regrind intervals on cellulose substrates.",
+      "Está processando papel, papel-toalha ou papelão em vez de filme? Consulte nossa página [Lâminas para cortadoras rotativas de papel](/products/rotary-slitter-knives-paper) para obter dados sobre a folga de corte e os intervalos de reafiação em substratos de celulose.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -72,33 +71,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "multi-material-compatibility",
-        tag: "METALLURGY",
-        title: "Application-Specific Tool Steels",
+        tag: "METALURGIA",
+        title: "Aços para ferramentas específicos para cada aplicação",
         description:
-          "Material matched to your web. 52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery.",
+          "Material adequado para sua aplicação. Aço carbono 52100 para revestimentos de filmes de embalagem padrão e substratos revestidos; M2 HSS para filmes plásticos abrasivos; ASP23 PM ou metal duro para revestimentos antiaderentes revestidos com sílica e laminados reforçados com fibra de vidro. Todas as classes estão em estoque e prontas para entrega rápida aos fabricantes de equipamento original (OEM).",
       },
       {
         id: "advanced-coating-systems",
-        tag: "EDGE RETENTION",
-        title: "Anti-Stick PVD Coatings",
+        tag: "RETENÇÃO DE BORDAS",
+        title: "Revestimentos PVD antiaderentes",
         description:
-          "TiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting. Lower friction means cooler running, longer edge life, and fewer cleaning stops per shift.",
+          "Os revestimentos de TiN e DLC reduzem a aderência superficial em até 80%, eliminando o acúmulo de adesivo nas faces das lâminas durante o corte de fitas PSA e laminados adesivos. Menos atrito significa menor aquecimento durante a operação, maior vida útil das lâminas e menos paradas para limpeza por turno.",
       },
       {
         id: "five-cutting-applications",
-        tag: "PROCESS CAPABILITY",
-        title: "Optimized Edge Geometries",
+        tag: "CAPACIDADE DO PROCESSO",
+        title: "Geometrias de borda otimizadas",
         description:
-          "Single bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim. Profiled for your line speed and web tension — specify cutting method and substrate and we match the geometry.",
+          "Perfis de bisel simples, bisel duplo e borda romba projetados para pares de cisalhamento, corte com bigorna de esmagamento/riscagem e corte com lâmina de barbear. Perfilados para a velocidade da sua linha de produção e a tensão da banda — especifique o método de corte e o substrato, e nós ajustaremos a geometria.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Type / Application",
-      col1: "OD (mm)",
+      col0: "Tipo de lâmina / Aplicação",
+      col1: "Diâmetro externo (mm)",
       col2: "ID (mm)",
-      col3: "Thickness (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard shear-pair dimensions. Top (dished) and bottom (anvil groove) blades supplied as matched pairs. Custom OD / ID and groove profiles on request.",
+        "* Dimensões padrão do par de lâminas de cisalhamento. As lâminas superior (côncava) e inferior (ranhura de bigorna) são fornecidas como pares combinados. Diâmetros externo e interno personalizados e perfis de ranhura sob encomenda.",
     },
     standardDimensions: [
       {
@@ -153,89 +152,91 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What thickness tolerance should I specify for blades on a multi-knife arbor stack?",
+            "Que tolerância de espessura devo especificar para as lâminas em um conjunto de eixos com várias lâminas?",
           answer:
-            "For shear slitting of flexible films and foils, specify ±0.002 mm thickness tolerance and ≤20.02 mm T.I.R. runout. A 0.005 mm error per blade compounds across a 12-knife stack, producing visible slit-width deviation and web tension spikes. We grind every blade to these tolerances and verify on a CMM before dispatch.",
+            "Para o corte por cisalhamento de filmes e folhas flexíveis, especifique uma tolerância de espessura de ±0,002 mm e um desvio de T.I.R. ≤20,02 mm. Um erro de 0,005 mm por lâmina se acumula em uma pilha de 12 lâminas, produzindo desvio visível na largura do corte e picos de tensão na banda. Afiamos todas as lâminas de acordo com essas tolerâncias e verificamos em uma CMM antes da remessa.",
         },
         {
           question:
-            "What is ‘over-speed ratio’ for top/bottom shear knives and why does it matter?",
+            "O que é a “relação de excesso de velocidade” das lâminas de corte superior e inferior e por que ela é importante?",
           answer:
-            "Over-speed ratio is the intentional rotational speed differential between the top knife arbor and bottom anvil arbor—typically set at 2–5% above web speed. This differential creates a micro-shear action at the cut point, producing a cleaner edge and reducing heat build-up versus a purely tangential cut. At higher over-speed ratios cut quality improves but edge wear accelerates; at zero differential the blade acts more like a crush cutter. Your slitter OEM specifies the designed over-speed ratio; we supply matched pairs optimized for that setting.",
+            "A relação de sobrevelocidade é a diferença intencional na velocidade de rotação entre o eixo da lâmina superior e o eixo da bigorna inferior — normalmente definida entre 2% e 5% acima da velocidade da banda. Essa diferença cria uma ação de microcisalhamento no ponto de corte, produzindo uma borda mais limpa e reduzindo o acúmulo de calor em comparação com um corte puramente tangencial. Em relações de sobrevelocidade mais altas, a qualidade do corte melhora, mas o desgaste da borda se acelera; com diferencial zero, a lâmina age mais como um cortador por esmagamento. O fabricante original (OEM) da sua cortadora especifica a relação de sobrevelocidade projetada; nós fornecemos pares compatíveis, otimizados para essa configuração.",
         },
         {
           question:
-            "How do I prevent adhesive film transfer and build-up on slitter blade faces?",
+            "Como posso evitar a transferência e o acúmulo de película adesiva nas faces das lâminas da cortadora?",
           answer:
-            "Adhesive build-up on blade faces increases friction, raises web temperature, and causes material transfer contamination. We offer TiN (titanium nitride) and DLC (diamond-like carbon) PVD coatings that reduce surface adhesion by up to 80%, extending clean-running intervals on pressure-sensitive tape and adhesive laminate slitting applications.",
+            "O acúmulo de adesivo nas faces das lâminas aumenta o atrito, eleva a temperatura da banda e causa contaminação por transferência de material. Oferecemos revestimentos PVD de TiN (nitreto de titânio) e DLC (carbono tipo diamante) que reduzem a adesão superficial em até 80%, prolongando os intervalos entre limpezas em aplicações de corte de fitas sensíveis à pressão e laminados adesivos.",
         },
         {
           question:
-            "When should I upgrade from D2 to powder-metallurgy (PM) steel for flexible film slitting?",
+            "Quando devo mudar do D2 para o aço de metalurgia do pó (PM) no corte de filmes flexíveis?",
           answer:
-            "PM steel (ASP23, ASP52) is recommended when slitting highly abrasive flexible substrates such as fiberglass-reinforced packaging films, silica-coated release liners, or ceramic-filled barrier films. These materials exceed the abrasion ceiling of D2 within a single production run due to hard mineral filler particles. PM grades deliver uniform carbide distribution and 50–80% longer edge life on highly abrasive flexible substrates.",
+            "Recomenda-se o uso do aço PM (ASP23, ASP52) no corte de substratos flexíveis altamente abrasivos, como filmes de embalagem reforçados com fibra de vidro, revestimentos antiaderentes com revestimento de sílica ou filmes de barreira com enchimento cerâmico. Esses materiais excedem o limite máximo de abrasão D2 em uma única operação de produção devido às partículas duras de enchimento mineral. As classes PM proporcionam uma distribuição uniforme de carboneto e uma vida útil da aresta 50 a 80% maior em substratos flexíveis altamente abrasivos.",
         },
         {
           question:
-            "What surface coating is best for slitting pressure-sensitive adhesive tapes at high speed?",
+            "Qual revestimento de superfície é o mais adequado para o corte longitudinal de fitas adesivas sensíveis à pressão em alta velocidade?",
           answer:
-            "DLC (diamond-like carbon) PVD coating is the top specification for double-coated foam tape and transfer adhesive slitting. It reduces contact angle on the blade face by approximately 35° versus uncoated D2, maintaining consistent slip through 8–12 hour production runs without cleaning stops. TiN is effective for single-faced masking tape and lightly adhesive label stock at a lower coating cost.",
+            "O revestimento PVD DLC (carbono tipo diamante) é a especificação de ponta para o corte de fitas de espuma com revestimento duplo e adesivos de transferência. Ele reduz o ângulo de contato na face da lâmina em aproximadamente 35° em comparação com o D2 sem revestimento, mantendo um deslizamento consistente durante ciclos de produção de 8 a 12 horas, sem paradas para limpeza. O TiN é eficaz para fitas de máscara de face única e etiquetas com baixa aderência, com um custo de revestimento mais baixo.",
         },
         {
           question:
-            "Can Sureay supply matched top and bottom knife pairs verified to a specified shear clearance?",
+            "A Sureay pode fornecer pares de facas superiores e inferiores combinadas, verificadas quanto a uma folga de corte especificada?",
           answer:
-            "Yes. Matched shear pairs—dished top blade and grooved anvil bottom blade—are supplied with knife-to-knife clearance pre-verified against your substrate specification. We record OD, ID, thickness, and designed shear clearance for each matched pair on an engineering data sheet that ships with the tooling, allowing line operators to replicate the clearance setting on every reinstallation.",
+            "Sim. Os pares de lâminas de cisalhamento combinados — lâmina superior côncava e lâmina inferior em forma de bigorna com ranhuras — são fornecidos com a folga entre as lâminas pré-verificada de acordo com as especificações do seu substrato. Registramos o diâmetro externo (OD), o diâmetro interno (ID), a espessura e a folga de cisalhamento projetada para cada par combinado em uma ficha técnica de engenharia que acompanha o conjunto de ferramentas, permitindo que os operadores da linha reproduzam a configuração da folga a cada reinstalação.",
         },
         {
           question:
-            "What blade edge geometry is recommended for slitting meltblown nonwoven fabric without fiber fraying?",
+            "Qual geometria de lâmina é recomendada para o corte de tecido não tecido do tipo meltblown sem que as fibras se desfiem?",
           answer:
-            "For meltblown and spunbond nonwoven fabrics (8–80 GSM), specify a positive rake angle (15°–20°) with Ra ≤0.4 μm surface finish. This geometry shears through the loose fiber structure cleanly without lateral fiber displacement that causes frayed edges. For very lightweight meltblown (<15 GSM), an optional ESD (electrostatic discharge) coating prevents static-induced fiber attraction to the blade face.",
+            "Para tecidos não tecidos do tipo meltblown e spunbond (8–80 GSM), especifique um ângulo de inclinação positivo (15°–20°) com acabamento superficial Ra ≤ 0,4 μm. Essa geometria corta a estrutura de fibras soltas de forma limpa, sem deslocamento lateral das fibras que cause bordas desfiadas. Para tecidos meltblown muito leves (<15 GSM), um revestimento ESD (descarga eletrostática) opcional evita que as fibras sejam atraídas para a face da lâmina devido à estática.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question: "Vocês são uma empresa comercial ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
         },
         {
           question:
-            "What makes Sureay’s heat treatment different from cheaper alternatives?",
+            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Ao contrário do têmpera convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, aumentando a resistência ao desgaste em até 40% e garantindo uma dureza uniforme em toda a aresta de corte.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Vocês fazem entregas para o mundo todo? E quanto tempo leva?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são enviadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agências de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences—no tooling commitment until fit is confirmed.",
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com a fabricação de ferramentas até que o ajuste seja confirmado.",
         },
       ],
     },
   },
   {
     id: "rotary-slitter-knives-paper",
-    name: "Paper Slitter Knives",
-    fullName: "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
+    name: "Facas para cortadoras de papel",
+    fullName:
+      "Lâminas de corte para papel e papel-toalha destinadas a linhas de conversão de alta velocidade",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Paper Slitter Knives",
+    categoryDisplay: "Facas para cortadoras de papel",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Paper Converting",
+    badge: "Transformação de papel",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
@@ -243,18 +244,18 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
     galleryAlts: [
-      "Circular paper slitter knife with dished shear profile and precision-ground bore",
-      "Matched top and bottom paper slitter knife pair for shear cutting",
-      "Paper converting line with rotary slitter knives scoring and slitting the web",
+      "Faca circular para corte de papel com perfil de cisalhamento côncavo e furo retificado com precisão",
+      "Par de lâminas de corte de papel, com partes superior e inferior combinadas, para corte por cisalhamento",
+      "Linha de transformação de papel com o sistema facas circulares de corte longitudinal para ranhurar e cortar a banda",
     ],
     description:
-      "Paper slitter knives ground for cellulose, not repurposed from film tooling. Matched top and bottom shear pairs in D2, M2 HSS or 52100, held to ±0.002mm on thickness and ≤0.02mm runout, with clearance pre-set to the substrate you are running: 0.02–0.05mm for tissue, 0.05–0.10mm for kraft. Rated to 600 m/min on tissue lines. Send a drawing, a worn blade or just your machine model and we will confirm fitment.",
+      "Lâminas de corte de papel retificadas para celulose, não adaptadas a partir de ferramentas para filmes. Pares de lâminas de corte superior e inferior combinados em D2, M2 HSS ou 52100, com tolerância de ±0,002 mm na espessura e ≤0,02 mm no desvio radial, com folga pré-ajustada para o substrato que você está processando: 0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft. Classificadas para 600 m/min em linhas de papel-toalha. Envie um desenho, uma lâmina desgastada ou apenas o modelo da sua máquina e confirmaremos a compatibilidade.",
     fullDescription:
-      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with a slotted groove profile that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
+      "As linhas de transformação de papel exigem lâminas de corte que proporcionem cortes consistentes e livres de pó de fibra ao longo de ciclos de produção com vários turnos. As lâminas facas circulares de corte longitudinal da Sureay para papel são retificadas com precisão a partir de aço para ferramentas D2 (para papel e papelão padrão) ou aço rápido M2 (para papéis-toalha de alta velocidade e papéis especiais), de acordo com tolerâncias dimensionais rigorosas que evitam a oscilação da lâmina e garantem uma qualidade uniforme de corte.\n\n## Metalurgia específica para papel\n\nDiferentemente do corte de filmes plásticos ou folhas metálicas, a conversão de papel submete a aresta da lâmina a um desgaste abrasivo contínuo causado por fibras de celulose, agentes de colagem e enchimentos minerais (carbonato de cálcio, caulim). Selecionamos ligas para lâminas especificamente para aplicações em papel:\n\n**Aço para ferramentas D2 (HRC 60–62):** Grau padrão para a transformação de papel kraft, papelão para caixas e papelão ondulado. O teor de 12% de cromo proporciona excelente resistência à abrasão contra fibras ricas em lignina e compostos de enchimentos minerais.\n\n**Aço de alta velocidade M2 (HRC 62–64):** Preferido para a conversão de papel-toalha e papel higiênico em alta velocidade, onde as velocidades da linha de produção excedem 400 m/min. O molibdênio e os metal duros mantêm a geometria do fio da lâmina sob o estresse térmico do corte em velocidade ultra-alta.\n\n**Aço para rolamentos 52100 (HRC 58–60):** Opção econômica para a conversão padrão de papel de jornal, papel de revista e fibra reciclada de baixa qualidade, onde as taxas de desgaste são moderadas.\n\n**Carboneto de tungstênio (sólido ou com ponta de carboneto):** A escolha ideal para papel revestido com alto teor de cinzas, papel artístico e papelão ondulado, onde os enchimentos minerais desgastam rapidamente a lâmina de aço entre as trocas. Fornecido como carboneto maciço em lâminas de diâmetro menor ou com ponta de carboneto — uma borda de carboneto soldada a um corpo de aço — em lâminas de diâmetro maior, onde um corpo totalmente de carboneto não é economicamente viável.\n\n## Corte por cisalhamento vs. corte por esmagamento para papel\n\nA conversão de papel emprega dois métodos principais de corte:\n\n**Corte por cisalhamento (pares de lâminas superior/inferior):** Duas facas circulares girando em direções opostas criam uma ação de cisalhamento semelhante à de uma tesoura. Esse é o método padrão para papéis revestidos, papel-toalha e tipos de papel para embalagens leves, nos quais o arrastamento de fibras e a geração de pó devem ser minimizados. Fornecemos pares combinados com folga de corte controlada (normalmente 0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft).\n\n**Corte por esmagamento (lâmina contra bigorna):** Uma lâmina circular endurecida esmaga a banda de papel contra um rolo de bigorna ranhurado. Utilizado para papelão ondulado pesado e embalagens multicamadas, nas quais a manutenção da folga de cisalhamento é impraticável. A lâmina de bigorna (posição inferior) é fabricada com um perfil de ranhura que comprime e fratura as fibras do papel.\n\n## Desempenho sem poeira de fibras\n\nA poeira de fibras gerada na borda de corte contamina as estações de rebobinagem das fábricas de papel, degrada a qualidade do produto em papéis higiênicos e de tecido e provoca paradas não planejadas para limpeza. Nossas lâminas de corte para papel são retificadas com precisão para um acabamento superficial de Ra 0,2–0,4 μm, com ângulos de bisel controlados que cortam de forma limpa os feixes de fibras de celulose, em vez de rasgá-los ou puxá-los. Isso reduz o pó de fibras transportado pelo ar em aproximadamente 60–70% em comparação com as lâminas industriais padrão.",
     disambiguation:
-      "Slitting film, tape or flexible packaging? Those blades are on our [Film & Tape Slitter Knives](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
+      "Precisa cortar filmes, fitas ou embalagens flexíveis? Essas lâminas estão disponíveis em nossa página [Lâminas para Cortadoras de Filmes e Fitas](/products/rotary-slitter-knives). Esta página aborda apenas substratos de papel.",
     categoryCardAnchorText:
-      "Paper Slitter Knives — tissue, kraft & coated paper",
+      "Lâminas para cortadoras de papel — papel-toalha, papel kraft e papel revestido",
     link: "/products/rotary-slitter-knives-paper",
     isFeatured: false,
     compatibleMachines: [
@@ -298,73 +299,76 @@ export const blades: Blade[] = [
     components: [
       {
         id: "paper-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "Which steel grade should paper slitter knives use?",
+        tag: "CIÊNCIA DOS MATERIAIS",
+        title:
+          "Qual tipo de aço deve ser utilizado nas lâminas para cortadoras de papel?",
         description:
-          "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.",
+          "As fibras do papel contêm enchimentos minerais abrasivos (carbonato de cálcio, caulim, dióxido de titânio) que desgastam rapidamente os aços comuns das lâminas. Nossas classes de aço HSS D2 e M2 passam por um tratamento térmico específico para aplicações de processamento de papel, proporcionando uma vida útil da lâmina 40 a 60% maior do que as lâminas de corte de uso geral em substratos de papel revestidos e com enchimento.",
       },
       {
         id: "shear-clearance",
-        tag: "CUTTING PRECISION",
-        title: "What shear clearance stops fibre dust at the slit edge?",
+        tag: "PRECISÃO DE CORTE",
+        title:
+          "Qual folga de cisalhamento impede que o pó de fibra se acumule na borda do corte?",
         description:
-          "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.",
+          "Os pares de lâminas superior e inferior combinados são pré-verificados de acordo com as especificações de folga para papel tissue (0,02–0,05 mm para papel tissue ultrafino, 0,05–0,10 mm para papel kraft). Essa folga controlada permite que a tesoura corte com precisão os feixes de fibras de celulose, sem rasgar nem gerar poeira de fibras suspensa no ar, que contamina as estações de rebobinagem e prejudica a qualidade do produto.",
       },
       {
         id: "bore-locking-options",
-        tag: "MACHINE FIT",
-        title: "What bore, locking, and bevel options are available?",
+        tag: "AJUSTE DA MÁQUINA",
+        title:
+          "Quais opções de diâmetro interno, travamento e bisel estão disponíveis?",
         description:
-          "Paper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses. Top blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original.",
+          "As lâminas para cortadoras de papel são fornecidas com furos lisos, com chaveta ou tipo baioneta para se adequarem ao seu eixo, e são fixadas por meio de ranhura para chaveta, parafuso de fixação, excêntrico com chaveta ou excêntrico sem chaveta — dependendo do que sua cortadora ou rebobinadora utilizar. As lâminas superiores são retificadas com um perfil côncavo de bisel único de 15° a 20°, com bisel composto (de dois estágios) ou dorso retificado côncavo disponíveis nos casos em que a durabilidade do fio é mais importante do que um ângulo de aproximação extremamente fino. Envie o desenho da sua lâmina ou eixo atual e confirmaremos o furo, o sistema de travamento e o bisel antes de cortar o aço, para que a peça de reposição se encaixe, trave e corte exatamente como a original.",
       },
     ],
     steelGrades: {
       intro:
-        "Paper fibers wear a blade differently than film or foil — the abrasive load comes from mineral fillers in the furnish, not the fiber itself. The grades below cover the range we quote for paper, tissue, and board.",
+        "As fibras de papel causam um desgaste diferente nas lâminas em comparação com o filme ou a folha metálica — a carga abrasiva provém dos enchimentos minerais presentes na massa de papel, e não da própria fibra. As classes abaixo abrangem a gama que oferecemos para papel, papel-toalha e papelão.",
       rows: [
         {
-          grade: "D2 Tool Steel",
+          grade: "Aço para ferramentas D2",
           hardness: "HRC 58–61",
           bestFor:
-            "Standard kraft paper, boxboard, and corrugated converting — our default paper grade.",
+            "Papel kraft padrão, papelão para caixas e transformação de papelão ondulado — nosso tipo de papel padrão.",
           tradeoff:
-            "Good all-round value; edge life falls off faster than M2 or carbide on heavily filled or coated stock.",
+            "Boa relação custo-benefício geral; a vida útil do gume diminui mais rapidamente do que a do M2 ou do metal duro em peças com alto teor de enchimento ou revestimento.",
         },
         {
-          grade: "M2 High-Speed Steel",
+          grade: "Aço de alta velocidade M2",
           hardness: "HRC 62–64",
           bestFor:
-            "High-speed tissue and sanitary paper above 400 m/min, where the edge has to hold geometry under thermal cycling.",
+            "Papel higiênico e de papel toalha de alta velocidade, acima de 400 m/min, em que a borda precisa manter a geometria sob ciclos térmicos.",
           tradeoff:
-            "Costs more than D2; regrind interval is still shorter than carbide on abrasive furnish.",
+            "Custa mais do que o D2; o intervalo entre reafiações ainda é menor do que o do carboneto em grãos abrasivos.",
         },
         {
-          grade: "52100 Bearing Steel",
+          grade: "52100 Aço para rolamentos",
           hardness: "HRC 58–60",
           bestFor:
-            "Standard newsprint, magazine paper, and lower-grade recycled fiber where wear rates are moderate.",
+            "Papel de jornal comum, papel de revista e fibra reciclada de qualidade inferior, em que as taxas de desgaste são moderadas.",
           tradeoff:
-            "Lower abrasion resistance than D2 on filled or coated stock — best reserved for cleaner furnish.",
+            "Resistência à abrasão inferior à do D2 em materiais com enchimento ou revestimento — recomenda-se utilizá-lo preferencialmente em materiais mais puros.",
         },
         {
-          grade: "Tungsten Carbide",
+          grade: "Carboneto de tungstênio",
           hardness: "HRA 90–92",
           bestFor:
-            "High-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied solid or carbide-tipped.",
+            "Papel revestido com alto teor de cinzas, papel artístico e papelão ondulado, nos quais os enchimentos minerais desgastam rapidamente a lâmina de aço entre uma troca e outra. Fornecidas na versão maciça ou com ponta de metal duro.",
           tradeoff:
-            "Highest unit cost and more brittle under impact than tool steel — needs consistent feed and clean alignment to avoid edge chipping.",
+            "Custo unitário mais elevado e maior fragilidade ao impacto do que o aço para ferramentas — requer avanço constante e alinhamento preciso para evitar lascas nas arestas.",
         },
       ],
       outro:
-        "Solid and carbide-tipped paper slitter knives are both available. Tell us your furnish (virgin, recycled, coated, or filled), line speed, and current regrind interval, and we'll confirm the grade that lowers total cost per cut, not just the sticker price.",
+        "Estão disponíveis facas para corte de papel tanto de metal maciço quanto com ponta de metal duro. Informe-nos sobre o tipo de matéria-prima (virgem, reciclada, revestida ou com enchimento), a velocidade da linha de produção e o intervalo atual de reafiação, e confirmaremos o tipo de faca que reduz o custo total por corte, e não apenas o preço de tabela.",
     },
     dimensionLabels: {
-      col0: "Blade Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Tipo de lâmina",
+      col1: "Diâmetro externo",
+      col2: "Diâmetro interno",
+      col3: "Espessura",
       caption:
-        "* Standard dimensions for paper converting. Top blades (dished profile for shear cutting) and bottom blades (grooved anvil for crush cutting). We manufacture paper slitter and anvil blades from roughly 50–320mm OD, 20–100mm bore, and 0.8–20mm thickness (thin dished top blades through heavy grooved anvils) — outside the three sets above, send your machine model and we confirm the closest match or cut to your dimensions.",
+        "* Dimensões padrão para a transformação de papel. Lâminas superiores (perfil côncavo para corte por cisalhamento) e lâminas inferiores (bigorna ranhurada para corte por esmagamento). Fabricamos lâminas para cortadoras de papel e bigornas com diâmetro externo (OD) de aproximadamente 50 a 320 mm, diâmetro interno de 20 a 100 mm e espessura de 0,8 a 20 mm (desde lâminas superiores côncavas finas até bigornas ranhuradas pesadas) — caso não se enquadre nos três conjuntos acima, envie o modelo da sua máquina e confirmaremos a correspondência mais próxima ou faremos o corte de acordo com suas dimensões.",
     },
     standardDimensions: [
       {
@@ -417,67 +421,68 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What material grade should I use for high-speed tissue converting at 500 m/min?",
+            "Que tipo de material devo usar para a conversão de papel-toalha em alta velocidade, a 500 m/min?",
           answer:
-            "Specify M2 high-speed steel at HRC 62–64 for tissue converting above 400 m/min. The molybdenum and tungsten carbides in M2 maintain edge geometry under the thermal cycling generated by ultra-high-speed cutting, delivering 2–3× longer campaign life than D2 on lightweight tissue grades (12–18 GSM).",
+            "Especifique o aço rápido M2 com dureza HRC 62–64 para a conversão de papel-toalha a velocidades superiores a 400 m/min. O molibdênio e os metal duros presentes no M2 mantêm a geometria da aresta sob os ciclos térmicos gerados pelo corte em velocidade ultra-alta, proporcionando uma vida útil 2 a 3 vezes maior do que o D2 em tipos de papel-tecido leves (12–18 GSM).",
         },
         {
           question:
-            "How do I prevent fiber dust contamination at the slit edge?",
+            "Como posso evitar a contaminação por pó de fibra na borda do corte?",
           answer:
-            "Fiber dust is primarily caused by excessive shear clearance (>0.10mm on tissue) or rough blade surface finish (Ra >0.6μm) that tears fiber bundles rather than shearing cleanly. Specify matched shear pairs with pre-verified clearance (0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper) and Ra ≤0.4μm surface finish. This reduces airborne dust by 60–70% compared to standard industrial knife grades.",
+            "A poeira de fibra é causada principalmente por uma folga de cisalhamento excessiva (>0,10 mm no tecido) ou por um acabamento superficial irregular da lâmina (Ra >0,6 μm), que rasga os feixes de fibras em vez de cortá-los de forma limpa. Especifique pares de lâminas de cisalhamento compatíveis com folga pré-verificada (0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft) e acabamento superficial Ra ≤ 0,4 μm. Isso reduz a poeira transportada pelo ar em 60–70% em comparação com as classes padrão de lâminas industriais.",
         },
         {
           question:
-            "Should I use shear slitting or crush cutting for corrugated board converting?",
+            "Devo usar o corte por cisalhamento ou o corte por esmagamento na transformação de papelão ondulado?",
           answer:
-            "For corrugated board (B/C/E flute), crush cutting against a grooved anvil roll is the standard method. The anvil blade compresses and fractures the paper fibers cleanly without requiring precise shear clearance maintenance. Shear slitting is reserved for lightweight coated papers and tissue where fiber pull must be minimized. For corrugated applications above 200 m/min, specify tungsten carbide anvil blades to resist the compressive wear from multi-ply board stock.",
+            "Para papelão ondulado (ondulação B/C/E), o corte por compressão contra um rolo de bigorna ranhurado é o método padrão. A lâmina de bigorna comprime e fratura as fibras de papel de maneira limpa, sem a necessidade de manutenção precisa da folga de cisalhamento. O corte por cisalhamento é reservado para papéis revestidos leves e papéis-toalha, nos quais o arrastamento das fibras deve ser minimizado. Para aplicações em papelão ondulado acima de 200 m/min, especifique lâminas de anvil do tipo metal duro para resistir ao desgaste por compressão causado por papelão de várias camadas.",
         },
         {
           question:
-            "How often should paper slitter knives be reground, and how many regrinds are possible?",
+            "Com que frequência as lâminas de cortadoras de papel devem ser reafiadas e quantas reafiações são possíveis?",
           answer:
-            "Paper slitter knives on tissue converting lines (400–600 m/min) typically require regrinding every 40–60 operating hours due to the high cutting speeds and abrasive mineral fillers in tissue paper. For kraft paper and board converting (200–300 m/min), the regrind interval extends to 80–120 hours. M2 HSS and D2 knives can be reground 4–6 times before the OD falls below minimum operational diameter. We offer a regrinding service with hardness re-verification and CMM dimensional check included.",
+            "As lâminas de corte em linhas de transformação de papel-toalha (400–600 m/min) normalmente exigem reafiação a cada 40–60 horas de operação, devido às altas velocidades de corte e aos enchimentos minerais abrasivos presentes no papel-toalha. Para a transformação de papel kraft e papelão (200–300 m/min), o intervalo entre afiações se estende para 80–120 horas. As lâminas M2 HSS e D2 podem ser reafiadas de 4 a 6 vezes antes que o diâmetro externo (OD) fique abaixo do diâmetro operacional mínimo. Oferecemos um serviço de reafiação que inclui a reverificação da dureza e a verificação dimensional por CMM.",
         },
         {
           question:
-            "What causes uneven slit edge quality across the full width of the paper web?",
+            "O que causa variações na qualidade da borda cortada ao longo de toda a largura da banda de papel?",
           answer:
-            "Uneven slit quality (clean cut on one side, fiber pull on the other) indicates uneven blade mounting or differential thermal expansion across the arbor. Verify that all knives on the arbor are ground to ±0.002mm thickness tolerance and that the arbor shaft runout is ≤0.02mm T.I.R. Thermal expansion can be mitigated by using matched metallurgy (all D2 or all M2) across the full knife set, ensuring uniform thermal expansion coefficients during high-speed operation.",
+            "A qualidade irregular do corte (corte limpo de um lado e arrasto de fibras do outro) indica uma montagem irregular das lâminas ou expansão térmica diferencial ao longo do eixo. Verifique se todas as lâminas no eixo foram retificadas com tolerância de espessura de ±0,002 mm e se o desvio do eixo é ≤0,02 mm T.I.R. A expansão térmica pode ser mitigada utilizando-se materiais metalúrgicos compatíveis (todas D2 ou todas M2) em todo o conjunto de lâminas, garantindo coeficientes de expansão térmica uniformes durante a operação em alta velocidade.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply knives compatible with our existing Atlas Converting or Kampf slitter/rewinder?",
+            "A Sureay pode fornecer facas compatíveis com nossa cortadora/rebobinadora Atlas Converting ou Kampf já instalada?",
           answer:
-            "Yes. Send us your current knife sample or machine model number. We will confirm OD, ID, bore profile, and blade thickness, and supply direct-replacement knives manufactured to OEM specifications. Custom groove patterns for anvil rolls are available for specific corrugated and board converting applications.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Sim. Envie-nos uma amostra da sua lâmina atual ou o número do modelo da máquina. Confirmaremos o diâmetro externo (OD), o diâmetro interno (ID), o perfil do furo e a espessura da lâmina, e forneceremos lâminas de substituição direta fabricadas de acordo com as especificações do fabricante original (OEM). Estão disponíveis padrões de ranhuras personalizados para rolos de bigorna, destinados a aplicações específicas de conversão de papelão ondulado e chapas de papelão.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com a fabricação de ferramentas até que o ajuste seja confirmado.",
         },
       ],
     },
   },
   {
     id: "metal-foil-strip-slitter-knives",
-    name: "Coil & Strip Slitters",
+    name: "Cortadoras de bobinas e tiras",
     fullName:
-      "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
+      "Facas rotativas de precisão para corte de tiras metálicas, bobinas e folhas finas",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Strip Slitter Knives",
+    categoryDisplay: "Facas para cortadoras de tiras metálicas",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Metal Processing",
+    badge: "Processamento de metais",
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
@@ -485,9 +490,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
     description:
-      "High-precision circular slitter knives for metal service centers and cold rolling mills. ASP23/ASP52 PM tool steel and solid tungsten carbide ground to strict ±0.001 mm thickness tolerance. Engineered for burr-free gang slitting of aluminum strip & coil, copper strip, stainless steel, and grain-oriented silicon steel.",
+      "Lâminas circulares de alta precisão para centros de serviços de metal e laminadoras a frio. Aço para ferramentas ASP23/ASP52 PM e metal duro maciço, retificado com tolerância de espessura rigorosa de ±0,001 mm. Projetadas para o corte em série sem rebarbas de tiras e bobinas de alumínio, tiras de cobre, aço inoxidável e aço silício de grãos orientados.",
     fullDescription:
-      "Precision metal strip and foil slitting demands metallurgical performance and dimensional accuracy far exceeding standard shearing applications. When processing thin-gauge metals (0.01mm to 1.5mm), even a microscopic blade defect or thickness deviation will induce camber (lateral bow), edge burrs, and rejected coils. Sureay rotary slitter knives are precision-ground to ±0.001mm thickness tolerance with ≤0.01mm total indicated runout (T.I.R.), ensuring perfect alignment across multi-knife arbor stacks.\n\n## Advanced Metallurgy for Thin Metals\n\nSlitting different metal alloys requires specific blade materials to prevent rapid dulling, edge chipping, or material galling (cold welding).\n\n**ASP23 Powder Metallurgy (PM) Steel:** A massive upgrade over conventional D2. Its ultra-fine, uniform carbide structure delivers 3–5× longer edge life on aluminum packaging foil, brass strips, and general thin-gauge carbon steel without micro-chipping.\n\n**ASP52 PM Steel:** Engineered for high-tensile materials. With 11% vanadium content, ASP52 provides the extreme abrasion resistance required for slitting hard stainless steel strips, grain-oriented silicon steel (transformer cores), and beryllium copper.\n\n**Solid Tungsten Carbide:** The ultimate specification for ultra-thin foils (<0.05mm) where razor-sharp, zero-burr edges are mandatory over extended, high-speed production campaigns.\n\n## Defeating Cumulative Arbor Error\n\nOn gang slitting lines, 10 to 40 circular knives may be stacked on a single arbor. Each knife's thickness error compounds cumulatively: a ±0.003mm error per blade yields a massive ±0.060mm error across a 20-knife stack, guaranteeing out-of-spec coil widths. We grind every metal-grade slitter knife and matching spacer to a strict ±0.001mm thickness tolerance, verifying them on CMM equipment to ensure zero cumulative error.\n\n## Anti-Galling Surface Finish\n\nWhen slitting non-ferrous metals like aluminum and soft copper, metal dust tends to adhere to the blade face (galling), which severely scratches the surface of the slit coils. Sureay metal slitter knives feature a highly polished, mirror-lapped side finish (Ra ≤0.02μm) that drastically reduces friction and prevents material adhesion, ensuring pristine coil edges.",
+      "O corte de precisão de tiras e folhas metálicas exige desempenho metalúrgico e precisão dimensional que excedem em muito as aplicações padrão de corte. Ao processar metais de espessura fina (0,01 mm a 1,5 mm), mesmo um defeito microscópico na lâmina ou um desvio de espessura pode causar curvatura lateral, rebarbas nas bordas e bobinas rejeitadas. As lâminas Sureay facas circulares de corte longitudinal são retificadas com precisão para uma tolerância de espessura de ±0,001 mm e um desvio total indicado (T.I.R.) de ≤0,01 mm, garantindo um alinhamento perfeito em conjuntos de eixos com múltiplas lâminas.\n\n## Metalurgia avançada para metais finos\n\nO corte de diferentes ligas metálicas requer materiais específicos para as lâminas, a fim de evitar o embotamento rápido, lascas nas arestas ou aderência do material (soldagem a frio).\n\n**Aço ASP23 de metalurgia do pó (PM):** Uma melhoria significativa em relação ao D2 convencional. Sua estrutura de carboneto ultrafina e uniforme proporciona uma vida útil da lâmina 3 a 5 vezes maior em folhas de alumínio para embalagem, tiras de latão e aço carbono de espessura fina em geral, sem microlascações.\n\n**Aço ASP52 de metalurgia do pó (PM):** Projetado para materiais de alta resistência à tração. Com 11% de teor de vanádio, o ASP52 oferece a extrema resistência à abrasão necessária para o corte de tiras de aço inoxidável duro, aço silicioso de grãos orientados (núcleos de transformadores) e cobre-berílio.\n\n**Carboneto de tungstênio maciço:** A especificação definitiva para folhas ultrafinas (<0,05 mm), nas quais bordas afiadas como lâminas e sem rebarbas são obrigatórias em campanhas de produção prolongadas e em alta velocidade.\n\n## Eliminando o erro cumulativo do eixo\n\nEm linhas de corte em série, podem ser empilhadas de 10 a 40 lâminas zGTR1 em um único eixo. O erro de espessura de cada lâmina se acumula: um erro de ±0,003 mm por lâmina resulta em um enorme erro de ±0,060 mm em uma pilha de 20 lâminas, garantindo larguras de bobinas fora das especificações. Nós retificamos todas as lâminas de corte para metais e os espaçadores correspondentes com uma tolerância de espessura rigorosa de ±0,001 mm, verificando-as em equipamentos CMM para garantir erro cumulativo zero.\n\n## Acabamento de superfície antidesgaste\n\nAo cortar metais não ferrosos, como alumínio e cobre macio, o pó metálico tende a aderir à face da lâmina (desgaste por atrito), o que risca gravemente a superfície das bobinas cortadas. As lâminas para cortadoras de metais da Sureay apresentam um acabamento lateral altamente polido e com lapidação espelhada (Ra ≤ 0,02 μm) que reduz drasticamente o atrito e impede a adesão do material, garantindo bordas de bobinas impecáveis.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -530,33 +535,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "pm-metallurgy",
-        tag: "DURABILITY",
-        title: "Powder Metallurgy (PM) Steel",
+        tag: "DURABILIDADE",
+        title: "Aço produzido por metalurgia do pó (PM)",
         description:
-          "ASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2. This sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips.",
+          "Os aços de forja ASP23 e ASP52 eliminam a segregação de carbonetos em faixas observada no D2 fundido. Essa estrutura de grãos submicrométrica evita o lascamento das arestas ao cortar tiras de aço inoxidável ou de silício duras e de alta resistência à tração.",
       },
       {
         id: "cumulative-tolerance",
-        tag: "PRECISION",
-        title: "Zero Cumulative Error",
+        tag: "PRECISÃO",
+        title: "Erro cumulativo zero",
         description:
-          "On gang slitting setups, blade thickness errors stack up quickly. Our ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time.",
+          "Em configurações de corte em série, os erros de espessura da lâmina se acumulam rapidamente. Nosso retificado de precisão de ±0,001 mm garante que as dimensões do eixo permaneçam perfeitamente dentro das especificações, economizando horas de configuração e ajuste com calços.",
       },
       {
         id: "anti-galling",
-        tag: "SURFACE QUALITY",
-        title: "Anti-Galling Polish",
+        tag: "QUALIDADE DA SUPERFÍCIE",
+        title: "Polidor antidesgaste",
         description:
-          "Slitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge. Our mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely.",
+          "O corte longitudinal de alumínio e cobre costuma fazer com que o pó metálico se “soldar a frio” à lâmina, arranhando a borda da bobina. Nossas faces laterais com acabamento espelhado (Ra ≤ 0,02 μm) reduzem drasticamente o atrito, impedindo totalmente a aderência do material.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Application",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Aplicação típica",
+      col1: "Diâmetro externo",
+      col2: "Diâmetro interno",
+      col3: "Espessura",
       caption:
-        "* Dimensions represent common metal service center standards. We manufacture to exact machine specifications and can supply matching high-precision spacers ground to the same ±0.001mm tolerance.",
+        "* As dimensões correspondem aos padrões comuns dos centros de serviços de metais. Fabricamos de acordo com as especificações exatas das máquinas e podemos fornecer espaçadores de alta precisão correspondentes, retificados com a mesma tolerância de ±0,001 mm.",
     },
     standardDimensions: [
       {
@@ -603,50 +608,52 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I use D2 or ASP23 for slitting stainless steel strips?",
+            "Devo usar a D2 ou a ASP23 para cortar tiras de aço inoxidável?",
           answer:
-            "While D2 is adequate for soft carbon steels, slitting high-tensile stainless steel causes rapid wear and micro-chipping on D2 edges. ASP23 Powder Metallurgy steel is highly recommended for stainless strips under 1.0mm thickness. Its uniform carbide structure resists chipping, delivering 3 to 5 times the edge life of D2 and minimizing machine downtime.",
+            "Embora o D2 seja adequado para aços carbono macios, o corte de aço inoxidável de alta resistência causa desgaste rápido e microlascas nas bordas do D2. O aço de metalurgia do pó ASP23 é altamente recomendado para tiras de aço inoxidável com espessura inferior a 1,0 mm. Sua estrutura uniforme de carboneto resiste a lascas, proporcionando uma vida útil da lâmina de 3 a 5 vezes maior do que a do D2 e minimizando o tempo de inatividade da máquina.",
         },
         {
           question:
-            "How do you prevent 'galling' or metal build-up when slitting aluminum?",
+            "Como evitar o “desgaste por atrito” ou o acúmulo de metal ao cortar alumínio em tiras?",
           answer:
-            "Aluminum is highly susceptible to galling (cold welding to the blade). We prevent this by mirror-lapping the side faces of the blades to a surface roughness of Ra ≤0.02μm. This ultra-smooth finish reduces the friction coefficient, preventing aluminum particles from adhering to the knife and scratching your finished coils.",
+            "O alumínio é altamente suscetível ao atrito excessivo (soldagem a frio na lâmina). Evitamos isso realizando um polimento espelhado nas faces laterais das lâminas, até atingir uma rugosidade superficial de Ra ≤ 0,02 μm. Esse acabamento ultraliso reduz o coeficiente de atrito, impedindo que partículas de alumínio adiram à lâmina e arranhem suas bobinas acabadas.",
         },
         {
-          question: "Why is a ±0.001mm thickness tolerance necessary?",
+          question:
+            "Por que é necessária uma tolerância de espessura de ±0,001 mm?",
           answer:
-            "In gang slitting operations, multiple knives and spacers are stacked on the arbor. If a blade has a ±0.005mm tolerance, stacking 20 blades creates a cumulative error of ±0.100mm. This will cause the slit coils to be out of width specification and induce camber (bowing). Our ±0.001mm tolerance ensures absolute precision across the entire arbor stack.",
+            "Nas operações de corte em série, várias lâminas e espaçadores são empilhados no eixo. Se uma lâmina tiver uma tolerância de ±0,005 mm, o empilhamento de 20 lâminas gera um erro cumulativo de ±0,100 mm. Isso fará com que as bobinas cortadas fiquem fora das especificações de largura e provoque curvatura (compartimento). Nossa tolerância de ±0,001 mm garante precisão absoluta em toda a pilha do eixo.",
         },
         {
-          question: "Can you supply matching precision spacers?",
+          question: "Vocês podem fornecer espaçadores de precisão compatíveis?",
           answer:
-            "Yes, precision slitting requires both knives and spacers to have identical tolerances. We manufacture lightweight aluminum, steel, and bonded-rubber strippers/spacers ground to the same ±0.001mm thickness tolerances as our slitter knives.",
+            "Sim, o corte de precisão exige que tanto as lâminas quanto os espaçadores tenham tolerâncias idênticas. Fabricamos separadores/espaçadores leves de alumínio, aço e borracha colada, retificados com as mesmas tolerâncias de espessura de ±0,001 mm que nossas lâminas de corte.",
         },
       ],
       company: [
         {
-          question: "Do you supply matched knife sets with inspection reports?",
+          question:
+            "Vocês fornecem conjuntos de facas combinados com relatórios de inspeção?",
           answer:
-            "Yes. For multi-knife gang slitting arbors, we supply matched sets accompanied by a CMM inspection report. This documents the exact thickness of each individual knife, guaranteeing the set meets your cumulative tolerance requirements before installation.",
+            "Sim. Para eixos de corte em série com várias lâminas, fornecemos conjuntos combinados acompanhados de um relatório inspeção CMM. Esse documento indica a espessura exata de cada lâmina individual, garantindo que o conjunto atenda aos seus requisitos de tolerância cumulativa antes da instalação.",
         },
         {
           question:
-            "What is the lead time for PM steel or Carbide slitter knives?",
+            "Qual é o prazo de entrega das lâminas de corte em aço PM ou de metal duro?",
           answer:
-            "Standard D2 and basic PM steel sizes can typically be manufactured in 10–15 working days. Solid Tungsten Carbide and highly specialized PM alloys require complex lapping and grinding, usually taking 15–25 working days depending on the OD and tolerance requirements.",
+            "As dimensões padrão D2 e as dimensões básicas de aço PM podem, normalmente, ser fabricadas em 10 a 15 dias úteis. O carboneto de tungstênio maciço e as ligas PM altamente especializadas exigem processos complexos de lapidação e retificação, o que geralmente leva de 15 a 25 dias úteis, dependendo do diâmetro externo e dos requisitos de tolerância.",
         },
       ],
     },
   },
   {
     id: "twin-shaft-blades-recycling",
-    name: "Twin Shaft Shredder Blades",
+    name: "Lâminas para triturador de eixo duplo",
     fullName:
-      "Heavy-Duty D2/SKD11 Twin Shaft Claw Blades for Plastic, MSW & Wood Recycling",
+      "Lâminas de garra de eixo duplo D2/SKD11 para serviços pesados, destinadas à reciclagem de plástico, resíduos sólidos urbanos e madeira",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Shredder Blades",
+    categoryDisplay: "Lâminas de triturador",
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
@@ -654,9 +661,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Twin shaft (double shaft) shredder blades for plastic, tire, metal & MSW recycling. Chromium carbide D2/SKD11, vacuum-hardened HRC 55–62 with deep cryogenic treatment. Engineered on the intersecting scissor-action principle for high-volume shredding. Custom 3–12 claw geometries. Wire-EDM bores for zero-backlash fit on Weima, Untha, SSI & Vecoplan rotors.",
+      "Eixo duplo (facas para trituradores) para reciclagem de plástico, pneus, metal e resíduos sólidos urbanos. Carboneto de cromo D2/SKD11, endurecido a vácuo a HRC 55–62 com tratamento criogênico profundo. Projetado com base no princípio de ação em tesoura cruzada para trituração de alto volume. Geometrias personalizadas de garras de 3 a 12. Furos usinados por eletroerosão a fio (EDM) para encaixe sem folga em rotores Weima, Untha, SSI e Vecoplan.",
     fullDescription:
-      "Twin-shaft shredder blades operate on the intersecting scissor-action principle—two counter-rotating shafts with interlocking claw blades that shear feedstock through a scissor interface, delivering aggressive grabbing force with low torque demand.\n\nWhen processing highly abrasive bulky waste—such as metal-contaminated MSW, thick-wall plastic purges, or mixed rigid plastic bales—substandard blades suffer from premature edge rounding, bore elongation, and catastrophic hook fracture.\n\nSureay multi-shaft shredder blades are manufactured from D2 (1.2379), SKD11, and 42CrMo tool steels, vacuum-hardened and tempered through 4–5 cycles to achieve a fully stabilized martensitic microstructure (HRC 55–62). The deep cryogenic sub-zero treatment stage (−196°C, 24-hour soak) eliminates retained austenite and substantially increases wear resistance without sacrificing the toughness margin needed to prevent bulk fracture on contaminated feedstocks.\n\n## FEA-Optimized Hook Geometry\n\nThe profile of the cutting hook dictates grabbing efficiency and resistance to fatigue. Sureay utilizes Finite Element Analysis (FEA) simulation to optimize stress distribution across the blade during high-torque impacts. Three-claw (3C) designs deliver aggressive grabbing force for large timber and IBC totes; 8-claw (8C) configurations are optimized for mixed rigid plastics and MSW; 12-claw (12C) variants produce finer output particle sizing for downstream processing. All hook profiles are reinforced at the root radius to resist deformation under sustained cyclic loading.\n\n## Precision Wire-EDM Bores\n\nA loose fit between the blade bore and the rotor shaft creates micro-impacts that progressively elongate the bore and destroy the shaft. Sureay eliminates this failure mode: all inner mounting bores—hexagonal, octagonal, or splined—are processed using precision Wire-EDM, guaranteeing a zero-backlash, drop-in fit for SSI, Untha, Weima, and Vecoplan rotor systems.\n\n## Alloy Selection by Feedstock\n\nD2 (1.2379) — Mixed Plastics & Light Waste: Post-consumer HDPE bottles, PET trays, PP moulded parts, and mixed rigid plastic bales. Cost-effective chromium-carbide abrasion resistance for general recycling lines.\n\nSKD11 — Abrasive Contaminated Streams: Glass-filled engineering plastics, dirty agricultural films, and high-contamination post-industrial scrap. SKD11's superior toughness extends insert service life on hard-face materials within contaminated streams.\n\n42CrMo — Timber & Metal-Inclusive Waste: Wood pallets, bulky MSW, and post-industrial scrap with metal contamination risk. 42CrMo's higher impact energy absorption prevents brittle fracture that causes catastrophic rotor damage on a metal strike.\n\nSureay twin shaft shredder blades are proven in demanding applications worldwide: plastic shredder blades for post-consumer recycling, tire shredder blades for TDF and crumb rubber production, and metal shredder blades for light-gauge ferrous and non-ferrous scrap processing.",
+      "Os facas para trituradores de eixo duplo operam com base no princípio da ação em tesoura, em que dois eixos contrarrotativos com lâminas em forma de garras interligadas cortam a matéria-prima por meio de uma interface em tesoura, proporcionando uma força de preensão agressiva com baixa demanda de torque.\n\nAo processar resíduos volumosos altamente abrasivos — como RSU contaminados com metal, resíduos de plástico de parede espessa ou fardos mistos de plástico rígido —, lâminas de baixa qualidade sofrem com o arredondamento prematuro das bordas, o alongamento do furo e a fratura catastrófica dos ganchos.\n\nOs eixos múltiplos facas para trituradores da Sureay são fabricados a partir de aços para ferramentas D2 (1.2379), SKD11 e 42CrMo, aços para ferramentas, endurecidos a vácuo e revenidos por meio de 4 a 5 ciclos para alcançar uma microestrutura martensítica totalmente estabilizada (HRC 55–62). A etapa de tratamento criogênico profundo abaixo de zero (−196 °C, imersão de 24 horas) elimina a austenita retida e aumenta substancialmente a resistência ao desgaste sem sacrificar a margem de tenacidade necessária para evitar fraturas em massa em matérias-primas contaminadas.\n\n## Geometria do gancho otimizada por FEA\n\nO perfil do gancho de corte determina a eficiência de preensão e a resistência à fadiga. A Sureay utiliza simulação por Análise de Elementos Finitos (FEA) para otimizar a distribuição de tensões na lâmina durante impactos de alto torque. Os projetos de três garras (3C) proporcionam força de preensão agressiva para madeiras de grandes dimensões e contêineres IBC; as configurações de 8 garras (8C) são otimizadas para plásticos rígidos misturados e resíduos sólidos urbanos (RSU); as variantes de 12 garras (12C) produzem partículas de tamanho mais fino para processamento posterior. Todos os perfis dos ganchos são reforçados no raio da raiz para resistir à deformação sob carga cíclica sustentada.\n\n## Furos com precisão por eletroerosão a fio (Wire-EDM)\n\nUm encaixe folgado entre o furo da lâmina e o eixo do rotor cria microimpactos que alongam progressivamente o furo e destroem o eixo. A Sureay elimina esse tipo de falha: todos os furos internos de montagem — hexagonais, octogonais ou estriados — são usinados por meio de eletroerosão por fio de precisão, garantindo um encaixe perfeito, sem folga, para sistemas de rotores SSI, Untha, Weima e Vecoplan.\n\n## Seleção de ligas por tipo de matéria-prima\n\nD2 (1.2379) — Plásticos mistos e resíduos leves: garrafas de HDPE pós-consumo, bandejas de PET, peças moldadas de PP e fardos de plástico rígido misto. Resistência à abrasão com carboneto de cromo com boa relação custo-benefício para linhas de reciclagem em geral.\n\nSKD11 — Fluxos contaminados com materiais abrasivos: Plásticos de engenharia reforçados com fibra de vidro, filmes agrícolas sujos e sucata pós-industrial altamente contaminada. A tenacidade superior do SKD11 prolonga a vida útil das pastilhas em materiais de superfície dura dentro de fluxos contaminados.\n\n42CrMo — Resíduos com madeira e metais: paletes de madeira, resíduos sólidos urbanos volumosos e sucata pós-industrial com risco de contaminação por metais. A maior absorção de energia de impacto do 42CrMo evita a fratura por fragilidade que causa danos catastróficos ao rotor em caso de impacto com metal.\n\nOs trituradores de eixo duplo Sureay facas para trituradores têm comprovada eficácia em aplicações exigentes em todo o mundo: trituradores de plástico facas para trituradores para reciclagem pós-consumo, trituradores de pneus facas para trituradores para produção de combustível derivado de resíduos (TDF) e borracha triturada, e trituradores de metal facas para trituradores para processamento de sucata ferrosa e não ferrosa de espessura fina.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
     compatibleMachines: [
@@ -702,34 +709,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "fea-geometry",
-        tag: "ENGINEERING",
-        title: "FEA-Optimized Hook Profile",
+        tag: "ENGENHARIA",
+        title: "Perfil do gancho otimizado por FEA",
         description:
-          "Hook geometry designed via Finite Element Analysis to eliminate stress concentrators. 3-claw, 8-claw, and 12-claw configurations provide the correct grabbing force for every feedstock type.",
+          "A geometria do gancho foi projetada por meio da Análise de Elementos Finitos para eliminar concentradores de tensão. As configurações de 3, 8 e 12 garras proporcionam a força de preensão adequada para cada tipo de matéria-prima.",
       },
       {
         id: "wire-edm",
-        tag: "PRECISION",
-        title: "Precision Wire-EDM Bores",
+        tag: "PRECISÃO",
+        title: "Furos por eletroerosão por fio de alta precisão",
         description:
-          "All mounting bores are cut by Wire-EDM to ±0.01mm, guaranteeing a zero-backlash drop-in fit that eliminates the micro-rocking that causes shaft damage and bore elongation.",
+          "Todos os furos de montagem são usinados por eletroerosão a fio (Wire-EDM) com precisão de ±0,01 mm, garantindo um encaixe perfeito sem folga que elimina o micro-balanço, responsável por danos no eixo e alongamento do furo.",
       },
       {
         id: "cryogenic-treatment",
-        tag: "METALLURGY",
-        title: "Deep Cryogenic Treatment",
+        tag: "METALURGIA",
+        title: "Tratamento criogênico profundo",
         description:
-          "Post-hardening cryogenic processing at −196°C eliminates retained austenite, stabilizing the martensite microstructure for up to 40% greater wear resistance without reducing toughness.",
+          "O tratamento criogênico pós-têmpera a −196 °C elimina a austenita retida, estabilizando a microestrutura martensítica e proporcionando uma resistência ao desgaste até 40% maior, sem reduzir a tenacidade.",
       },
     ],
     dimensionLabels: {
-      col0: "Shredder Series",
-      col1: "Blade Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Size",
-      col4: "Claw Configuration",
+      col0: "Série Shredder",
+      col1: "Diâmetro externo da lâmina",
+      col2: "Espessura da lâmina",
+      col3: "Diâmetro interno",
+      col4: "Configuração da garra",
       caption:
-        "* Standard series Φ150–Φ450 mm. Custom OD up to Φ800 mm, bore hex/octagonal/splined, and claw profiles available on request.",
+        "* Série padrão: Φ150–Φ450 mm. Diâmetro externo personalizado de até Φ800 mm, furo hexagonal/octogonal/canelado e perfis de garras disponíveis mediante solicitação.",
     },
     standardDimensions: [
       {
@@ -802,75 +809,78 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How do I choose between 3-claw, 8-claw, and 12-claw blade designs?",
+            "Como faço para escolher entre os modelos de lâmina de 3, 8 e 12 garras?",
           answer:
-            "Claw count directly controls the blade's grabbing frequency and output particle size. 3-claw (3C) blades are designed for high-torque primary shredding of bulky stock—wooden pallets and large HDPE containers—where aggressive hook geometry provides maximum bite. 8-claw (8C) is the general-purpose standard for mixed MSW, plastic bales, and post-industrial scrap. 12-claw (12C) configurations produce finer output particles from lighter feedstocks such as rigid household plastics and packaging.",
+            "O número de garras controla diretamente a frequência de preensão da lâmina e o tamanho das partículas produzidas. As lâminas de 3 garras (3C) são projetadas para a trituração primária de alto torque de materiais volumosos — paletes de madeira e grandes recipientes de HDPE —, onde a geometria agressiva dos ganchos proporciona máxima preensão. A configuração de 8 garras (8C) é o padrão de uso geral para resíduos sólidos urbanos mistos, fardos de plástico e sucata pós-industrial. As configurações de 12 garras (12C) produzem partículas finas a partir de matérias-primas mais leves, como plásticos domésticos rígidos e embalagens.",
         },
         {
           question:
-            "Why does Sureay use Wire-EDM for inner bores instead of broaching?",
+            "Por que a Sureay utiliza a eletroerosão a fio (Wire-EDM) para furos internos em vez da brocagem?",
           answer:
-            "Standard broaching creates dimensional tolerances of ±0.1–0.2mm and introduces residual surface stress in the bore wall. Over millions of rotor cycles, this gap allows micro-rocking—progressive bore elongation that eventually destroys the rotor shaft. Precision Wire-EDM machines bores to ±0.01mm accuracy with a stress-free cut surface, eliminating the clearance that causes micro-rocking.",
+            "A brocagem padrão gera tolerâncias dimensionais de ±0,1–0,2 mm e introduz tensão residual na superfície da parede do furo. Ao longo de milhões de ciclos do rotor, essa folga permite o micro-balanço — um alongamento progressivo do furo que, eventualmente, destrói o eixo do rotor. A eletroerosão por fio de precisão usina furos com precisão de ±0,01 mm e uma superfície de corte livre de tensões, eliminando a folga que causa o micro-balanço.",
         },
         {
           question:
-            "How do I choose between D2, SKD11, and 42CrMo for contaminated plastic or MSW shredding?",
+            "Como devo escolher entre D2, SKD11 e 42CrMo para a trituração de plástico contaminado ou resíduos sólidos urbanos?",
           answer:
-            "D2 (1.2379) is correct for post-consumer plastic bales with residual dirt and trace contamination. Upgrade to SKD11 when your feedstock includes glass-reinforced engineering plastics (PA66-GF30, ABS) mixed into contaminated streams. Select 42CrMo for timber or industrial scrap with high metal contamination risk—its higher impact energy absorption prevents brittle fracture on a metal strike.",
+            "A norma D2 (1.2379) é adequada para fardos de plástico pós-consumo com sujeira residual e traços de contaminação. Opte pelo SKD11 quando sua matéria-prima incluir plásticos de engenharia reforçados com fibra de vidro (PA66-GF30, ABS) misturados a fluxos contaminados. Escolha o 42CrMo para madeira ou sucata industrial com alto risco de contaminação por metais — sua maior absorção de energia de impacto evita a fratura por fragilidade ao colidir com metal.",
         },
         {
           question:
-            "How often should twin-shaft shredder blades be indexed or replaced on a continuous recycling line?",
+            "Com que frequência o facas para trituradores de dois eixos deve ser ajustado ou substituído em uma linha de reciclagem contínua?",
           answer:
-            "On a 16-hour continuous line processing post-consumer HDPE and PP, schedule first indexing at 400–600 operating hours with D2, and 600–800 hours with SKD11 on clean feedstock. Contaminated or glass-filled streams reduce these intervals by 30–40%. Fixed tonnage-milestone indexing is recommended rather than waiting for visible edge rounding.",
+            "Em uma linha de processamento contínuo de 16 horas que trabalha com HDPE e PP pós-consumo, programe a primeira indexação entre 400 e 600 horas de operação com D2 e entre 600 e 800 horas com SKD11, utilizando matéria-prima limpa. Fluxos contaminados ou com enchimento de vidro reduzem esses intervalos em 30–40%. Recomenda-se a indexação em marcos fixos de tonelagem, em vez de esperar pelo aparecimento de arredondamento visível nas bordas.",
         },
         {
           question:
-            "Do you supply counter-knives and sizing screens as a complete tooling system?",
+            "Vocês fornecem facas de contra-corte e peneiras de classificação como um sistema completo de ferramentas?",
           answer:
-            "Yes. We manufacture matched stationary counter-knives and perforated sizing screens as a complete twin-shaft shredding tooling system. Supplying rotor blades and counter-knives from the same grinding run ensures consistent shear clearance across the full rotor-to-bed interface.",
+            "Sim. Fabricamos contra-lâminas fixas e peneiras de classificação perfuradas combinadas, formando um sistema completo de ferramentas de trituração de eixo duplo. O fornecimento de lâminas de rotor e contra-lâminas provenientes do mesmo lote de retificação garante uma folga de cisalhamento consistente em toda a interface entre o rotor e a base.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Vocês são uma empresa de comércio ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
           answer:
-            "Unlike standard single-cycle quenching, every Sureay shredder blade undergoes vacuum hardening followed by 4–5 tempering cycles and deep cryogenic treatment at −196°C. This stabilizes the full martensite microstructure, boosting wear resistance by up to 40%.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question: "What quality certifications does Sureay hold?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Ao contrário do têmpera padrão de ciclo único, todas as lâminas dos trituradores Sureay passam por um processo de endurecimento a vácuo, seguido por 4 a 5 ciclos de revenimento e um tratamento criogênico profundo a −196 °C. Isso estabiliza a microestrutura totalmente martensítica, aumentando a resistência ao desgaste em até 40%.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
+            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são enviadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
+        },
+        {
+          question: "Quais certificações de qualidade a Sureay possui?",
+          answer:
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de confirmarmos um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis.",
         },
       ],
     },
   },
   {
     id: "multi-shaft-blades-metal",
-    name: "Metal Shredder Blades",
-    fullName: "High-Impact Multi-Shaft Blades for Scrap Metal, ELV & E-Waste",
+    name: "Lâminas para trituradores de metal",
+    fullName:
+      "Lâminas de alto impacto com múltiplos eixos para sucata metálica, veículos fora de uso (ELV) e lixo eletrônico",
     category: "shredder_blades",
     sector: "metal",
-    categoryDisplay: "Metal Shredder Blades",
+    categoryDisplay: "Lâminas para trituradores de metal",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
-    badge: "Heavy Duty",
+    badge: "Para serviços pesados",
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-05.webp",
@@ -878,9 +888,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Designed to survive the catastrophic shock loads of scrap metal, ELV (end-of-life vehicle), and e-waste twin-shaft shredding. Forged from premium H13 and 42CrMo (AISI 4140) alloy steels. These heavy-duty blades prioritize core toughness to prevent brittle fracture when striking solid metal inclusions.",
+      "Projetadas para resistir às cargas de choque catastróficas decorrentes da trituração em eixos duplos de sucata metálica, veículos em fim de vida (ELV) e lixo eletrônico. Forjadas a partir de ligas de aço H13 e 42CrMo (AISI 4140) de alta qualidade. Essas lâminas para serviços pesados priorizam a tenacidade do núcleo para evitar fraturas por fragilidade ao colidir com inclusões metálicas sólidas.",
     fullDescription:
-      "When a twin-shaft shredder encounters an engine block, a steel I-beam, or compacted e-waste, the blades face catastrophic shock loads measured in tens of thousands of Newtons per millisecond. Using standard high-carbon tool steels (like D2) in these applications leads to immediate brittle fracture and shattered hooks—causing severe rotor damage, unplanned downtime, and potentially dangerous projectile fragments.\n\nFor heavy metal processing, toughness is paramount over extreme hardness. Sureay engineers these specific blades from **H13 (AISI H13 / 1.2344)** hot-work tool steel and high-strength **42CrMo (AISI 4140)** alloy through a specialized deep-tempering thermal cycle. Surface hardness is held deliberately at HRC 50–54. This controlled lower hardness provides massive core elasticity, allowing the blade to absorb extreme kinetic impacts without chipping or shattering.\n\n## Low-Profile Hook Geometry for Maximum Biting Force\n\nMetal shredding requires immense biting force rather than grabbing frequency. Sureay designs 1-hook, 2-hook, and 3-hook low-profile geometries with heavy root thickness. These robust claw profiles can grip and shear thick metal casings, aluminum profiles, and automotive sub-assemblies without hook fracture.\n\n## Heavy Splined Bores: Zero-Slippage Torque Transfer\n\nHeavy scrap metal generates massive rotor reaction torques that can shear standard keyed bores. Sureay machines all inner bores for heavy metal shredders using precision Wire-EDM-cut spline profiles. This provides full circumferential torque engagement between the blade and the shaft—eliminating the key-shear failure mode and preventing the progressive bore-to-shaft fretting that destroys rotors in standard metal shredding operations.\n\n## Alloy Selection by Scrap Profile\n\n**H13 (1.2344) — E-Waste & Light Mixed Scrap:** Circuit board assemblies, aluminum extrusions, copper cable bundles, and ICT equipment. H13's superior hot-toughness handles the friction-induced heating peaks typical of electronics scrap.\n\n**42CrMo (AISI 4140) — ELV & Heavy Scrap:** Engine blocks, transmission casings, steel coil offcuts, and structural steel. 42CrMo's exceptional impact energy absorption (Charpy V-notch > 35J) is the definitive choice for the heaviest shock-load applications in automotive and metal demolition.",
+      "Quando um triturador de dois eixos encontra um bloco de motor, uma viga em I de aço ou lixo eletrônico compactado, as lâminas enfrentam cargas de choque catastróficas, medidas em dezenas de milhares de newtons por milissegundo. O uso de aços para ferramentas padrão de alto carbono (como o D2) nessas aplicações leva à fratura frágil imediata e à quebra dos ganchos — causando graves danos ao rotor, paradas não planejadas e fragmentos projetados potencialmente perigosos.\n\nPara o processamento de metais pesados, a tenacidade é mais importante do que a dureza extrema. A Sureay projeta essas lâminas específicas a partir do aço para ferramentas de trabalho a quente **H13 (AISI H13 / 1.2344)** e da liga de alta resistência **42CrMo (AISI 4140)**, por meio de um ciclo térmico especializado de têmpera profunda. A dureza superficial é mantida deliberadamente entre HRC 50 e 54. Essa dureza controlada mais baixa proporciona enorme elasticidade ao núcleo, permitindo que a lâmina absorva impactos cinéticos extremos sem lascar ou se fragmentar.\n\n## Geometria de ganchos de perfil baixo para máxima força de penetração\n\nA trituração de metais exige imensa força de mordida, em vez de alta frequência de preensão. A Sureay projeta geometrias de baixo perfil com 1, 2 e 3 ganchos, com espessura de raiz reforçada. Esses perfis robustos de garras podem agarrar e cortar invólucros metálicos espessos, perfis de alumínio e subconjuntos automotivos sem que os ganchos se quebrem.\n\n## Furos estriados reforçados: transferência de torque sem deslizamento\n\nA sucata de metal pesada gera enormes torques de reação do rotor que podem cortar furos com chaveta padrão. A Sureay usina todos os furos internos para trituradores de metal pesado utilizando perfis estriados cortados com precisão por eletroerosão a fio (EDM). Isso proporciona um engate de torque circunferencial total entre a lâmina e o eixo — eliminando a falha por cisalhamento da chaveta e evitando o desgaste progressivo entre o furo e o eixo que destrói os rotores em operações padrão de trituração de metal.\n\n## Seleção de liga de acordo com o perfil da sucata\n\n**H13 (1.2344) — Lixo eletrônico e sucata mista leve:** Conjuntos de placas de circuito impresso, extrusões de alumínio, feixes de cabos de cobre e equipamentos de TIC. A resistência superior do H13 ao calor suporta os picos de aquecimento induzidos pelo atrito, típicos da sucata eletrônica.\n\n**42CrMo (AISI 4140) — Veículos em fim de vida (ELV) e sucata pesada:** blocos de motor, caixas de transmissão, sobras de bobinas de aço e aço estrutural. A excepcional absorção de energia de impacto do 42CrMo (entalhe em V de Charpy > 35 J) é a escolha definitiva para as aplicações com cargas de choque mais intensas na indústria automotiva e na demolição de metais.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
     compatibleMachines: [
@@ -924,34 +934,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "impact-alloy",
-        tag: "METALLURGY",
-        title: "Massive Core Toughness",
+        tag: "METALURGIA",
+        title: "Resistência excepcional do núcleo",
         description:
-          "Held at HRC 50–54, H13 and 42CrMo alloys provide the massive core elasticity needed to absorb extreme kinetic impacts, avoiding the catastrophic shattering typical of D2 blades.",
+          "Com dureza HRC 50–54, as ligas H13 e 42CrMo proporcionam a grande elasticidade do núcleo necessária para absorver impactos cinéticos extremos, evitando a fragmentação catastrófica típica das lâminas de D2.",
       },
       {
         id: "heavy-spline",
-        tag: "TORQUE TRANSFER",
-        title: "Zero-Slippage Splines",
+        tag: "TRANSFERÊNCIA DE TORÇÃO",
+        title: "Esplines sem deslizamento",
         description:
-          "Full-circumference spline bores machined by Wire-EDM to ±0.01mm ensure zero-slippage torque transfer under extreme shredding loads, eliminating rotor shaft damage.",
+          "Os furos com ranhuras em toda a circunferência, usinados por eletroerosão a fio (EDM) com precisão de ±0,01 mm, garantem uma transferência de torque sem deslizamento sob cargas extremas de trituração, eliminando danos ao eixo do rotor.",
       },
       {
         id: "low-profile-hooks",
-        tag: "GEOMETRY",
-        title: "Low-Profile Biting Hooks",
+        tag: "GEOMETRIA",
+        title: "Ganchos de mordida de perfil baixo",
         description:
-          "1 to 3 heavy-root-thickness hooks provide maximum biting force per stroke for shearing thick metal casings, without the fracture risks associated with multi-claw designs.",
+          "De 1 a 3 ganchos com espessura de raiz robusta proporcionam força máxima de mordida por curso para cortar invólucros metálicos espessos, sem os riscos de fratura associados aos projetos com múltiplas garras.",
       },
     ],
     dimensionLabels: {
-      col0: "Scrap Class",
-      col1: "Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Configuration",
-      col4: "Recommended Hooks",
+      col0: "Aula de Reciclagem",
+      col1: "Diâmetro externo",
+      col2: "Espessura da lâmina",
+      col3: "Configuração do furo",
+      col4: "Anzóis recomendados",
       caption:
-        "* Custom OD up to Ø800+ mm, specific spline profiles, and custom thicknesses available. Send us your rotor shaft drawing for an exact match.",
+        "* Diâmetro externo personalizado de até Ø800+ mm, perfis de estrias específicos e espessuras personalizadas disponíveis. Envie-nos o desenho do eixo do rotor para que possamos reproduzi-lo com exatidão.",
     },
     standardDimensions: [
       {
@@ -985,61 +995,61 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why choose H13 or 42CrMo over D2 for metal shredding applications?",
+            "Por que escolher o H13 ou o 42CrMo em vez do D2 para aplicações de trituração de metais?",
           answer:
-            "D2 is optimized for wear resistance at the expense of toughness—it reaches HRC 58–62 but becomes brittle under extreme shock loading. When a D2 blade strikes an engine block, the impact energy exceeds the material's fracture toughness in microseconds, causing catastrophic hook shattering. H13 and 42CrMo (AISI 4140) possess inherently superior toughness; at HRC 50–54, they absorb the same impact energy elastically rather than fracturing.",
+            "O D2 é otimizado para resistência ao desgaste em detrimento da tenacidade — atinge HRC 58–62, mas torna-se frágil sob cargas de choque extremas. Quando uma lâmina de D2 atinge um bloco de motor, a energia de impacto excede a tenacidade à fratura do material em microssegundos, causando uma quebra catastrófica da lâmina. O H13 e o 42CrMo (AISI 4140) possuem tenacidade inerentemente superior; com dureza HRC 50–54, eles absorvem a mesma energia de impacto de forma elástica, em vez de se fraturarem.",
         },
         {
           question:
-            "What hook count and profile should I specify for ELV automotive shredding?",
+            "Que número de ganchos e que perfil devo especificar para a trituração de veículos ELV?",
           answer:
-            "For ELV primary shredding (car bodies, engine subassemblies), specify 1-hook or 2-hook low-profile designs with maximum root thickness. A low claw count concentrates the available machine torque onto fewer, robust hook contacts, generating the massive biting force needed to penetrate thick steel. High claw counts spread torque too thinly, causing the blade to slide over the metal rather than biting into it.",
+            "Para a trituração primária de veículos em fim de vida (carrocerias, subconjuntos de motores), especifique modelos de perfil baixo com 1 ou 2 garras e espessura máxima na raiz. Um número reduzido de garras concentra o torque disponível da máquina em menos pontos de contato robustos dos ganchos, gerando a enorme força de penetração necessária para perfurar o aço espesso. Um número elevado de garras distribui o torque de maneira muito dispersa, fazendo com que a lâmina deslize sobre o metal em vez de penetrar nele.",
         },
         {
           question:
-            "How do splined bores prevent rotor shaft damage in heavy metal shredding?",
+            "De que forma os furos estriados evitam danos ao eixo do rotor na trituração de metais pesados?",
           answer:
-            "In heavy metal shredding, peak rotor torque spikes to 3–5× steady-state load during a hard strike. Standard single-keyed bores concentrate all this torque on one point, progressively widening the keyway and ultimately shearing the key. Wire-EDM splined bores distribute this massive torque evenly across 10 to 20 contact faces around the full circumference, reducing peak stress and protecting your expensive rotor shaft.",
+            "Na trituração de metais pesados, o torque máximo do rotor atinge picos de 3 a 5 vezes a carga em estado estacionário durante um impacto forte. Os furos padrão com chaveta única concentram todo esse torque em um único ponto, alargando progressivamente a ranhura da chaveta e, por fim, causando o cisalhamento da chaveta. Os furos estriados por eletroerosão a fio (EDM) distribuem esse torque enorme uniformemente por 10 a 20 faces de contato ao redor de toda a circunferência, reduzindo a tensão de pico e protegendo o seu caro eixo do rotor.",
         },
         {
           question:
-            "What are the warning signs that metal shredder blades need replacement?",
+            "Quais são os sinais de alerta de que o facas para trituradores de metal precisa ser substituído?",
           answer:
-            "Key indicators include: (1) Visible hairline fractures at the hook root; (2) Outer diameter (OD) wear exceeding 10–15mm below nominal, indicating a loss of shear clearance; (3) Bore elongation, meaning the blade rocks on the shaft even under full tightening torque; (4) A throughput reduction of >20% at a constant motor load, indicating the blades are pushing rather than shearing the scrap.",
+            "Os principais indicadores incluem: (1) Fraturas finas visíveis na raiz do gancho; (2) Desgaste do diâmetro externo (DE) superior a 10–15 mm abaixo do valor nominal, indicando uma perda da folga de cisalhamento; (3) Alongamento do furo, o que significa que a lâmina balança no eixo mesmo sob torque de aperto total; (4) Uma redução na produtividade superior a 20% sob carga constante do motor, indicando que as lâminas estão empurrando, em vez de cortar, a sucata.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply blades for Shred-Tech, Arjes, or Forus shredding platforms?",
+            "Vocês fornecem lâminas para as plataformas de trituração Shred-Tech, Arjes ou Forus?",
           answer:
-            "Yes. We reverse-engineer replacement blades from factory-measured OEM samples for Shred-Tech ST series, Arjes Imperator/Orion, Forus heavy-duty shredders, and SSI platforms. Custom spline profiles and counter-bore patterns are produced with extreme precision using Wire-EDM.",
+            "Sim. Realizamos a engenharia reversa de lâminas de reposição a partir de amostras OEM medidas na fábrica para a série ST da Shred-Tech, os trituradores Arjes Imperator/Orion, os trituradores para serviços pesados da Forus e as plataformas da SSI. Perfis de ranhuras e padrões de rebaixamento personalizados são produzidos com extrema precisão por meio da eletroerosão a fio (Wire-EDM).",
         },
         {
           question:
-            "What is the lead time for heavy-duty metal shredder blades?",
+            "Qual é o prazo de entrega do facas para trituradores de metal para serviços pesados?",
           answer:
-            "Standard H13 and 42CrMo grades in common dimensions are held in semi-finished stock and typically ship within 10–15 working days. For non-standard massive ODs or custom spline profiles requiring new tooling, lead time is 20–25 working days.",
+            "As classes padrão H13 e 42CrMo, em dimensões comuns, estão disponíveis em estoque de produtos semiacabados e, normalmente, são despachadas em um prazo de 10 a 15 dias úteis. Para diâmetros externos maciços fora do padrão ou perfis de ranhuras personalizados que exijam novas ferramentas, o prazo de entrega é de 20 a 25 dias úteis.",
         },
         {
           question:
-            "What quality certifications and documentation do you provide?",
+            "Quais certificações de qualidade e documentação vocês fornecem?",
           answer:
-            "Sureay is ISO 9001:2015 certified. For heavy metal shredder blades, we provide full traceability: Rockwell HRC hardness test reports (minimum 5 points per blade), Charpy impact test certificates for 42CrMo grades, CMM dimensional inspection records, and steel mill composition certificates.",
+            "A Sureay possui certificação ISO 9001:2015. Para o metal pesado facas para trituradores, oferecemos rastreabilidade completa: relatórios de ensaios de dureza Rockwell HRC (mínimo de 5 pontos por lâmina), certificados de ensaio de impacto Charpy para as classes 42CrMo, registros de inspeção dimensional por CMM e certificados de composição da siderúrgica.",
         },
       ],
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Battery Recycling Blades",
+    name: "Lâminas para reciclagem de baterias",
     fullName:
-      "Precision Twin Shaft Shredder Blades for Li-Ion Battery Recycling",
+      "Lâminas de precisão para trituradores de eixo duplo destinadas à reciclagem de baterias de íon-lítio",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Shredder Blades",
+    categoryDisplay: "Lâminas de triturador",
     image: "/images/products/shredder-blades/shredder-blades.webp",
-    badge: "New Energy",
+    badge: "Nova Energia",
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
@@ -1047,9 +1057,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Engineered for the critical pre-shredding of EV lithium-ion battery packs, modules, and cells under inert gas environments. Precision ground to ±0.02mm thickness parallelism to ensure exacting shear clearances that prevent foil tearing and thermal runaway. Specialized alloy selection and surface treatments resist the highly corrosive effects of LiPF6 battery electrolytes.",
+      "Projetado para a pré-trituração crítica de conjuntos de baterias, módulos e células de íons de lítio de veículos elétricos (EV) em ambientes com gás inerte. Retificado com precisão para obter um paralelismo de espessura de ±0,02 mm, a fim de garantir folgas de cisalhamento exatas que evitem o rasgo da folha metálica e o descontrole térmico. A seleção de ligas especializadas e os tratamentos de superfície resistem aos efeitos altamente corrosivos dos eletrólitos de LiPF₆ das baterias.",
     fullDescription:
-      "The recycling of lithium-ion (Li-ion) batteries presents unique mechanical and chemical challenges that standard shredder blades cannot reliably handle. Pre-shredding of battery packs and cylindrical cells frequently occurs in nitrogen-purged atmospheres to suppress fire and thermal runaway risk. Standard shredder blades fail prematurely in this environment through two distinct mechanisms: electrolyte corrosion from LiPF6 and HF acid released during cell breach, and mechanical failure caused by imprecise shear clearances that fold—rather than cut—the thin copper (8–12μm) and aluminum (15–20μm) current collector foils inside battery cells.\n\n## Micro-Clearance Precision Grinding (±0.02mm)\n\nIf the gap between counter-rotating twin-shaft blades is too wide, battery foils do not shear—they fold, stretch, and wrap around the rotor, causing immediate jams in an inert gas environment. Clearing a rotor jam under nitrogen requires complete system shutdown, purge, and manual removal—hours of downtime consuming significant N₂. Sureay battery shredder blades are precision ground to ±0.02mm thickness parallelism across the full blade face, ensuring minimum consistent shear clearance across the entire rotor for clean, controlled cuts on pouch cells, prismatic modules, and cylindrical 18650/21700 battery packs.\n\n## Electrolyte Corrosion Resistance\n\nLiPF6 electrolytes hydrolyze on contact with atmospheric moisture to produce hydrofluoric acid (HF)—one of the most aggressively corrosive industrial chemicals. Standard D2 or SKD11 tool steels corrode rapidly in this environment, with surface pitting initiating at grain boundaries within 200–500 operating hours. Sureay applies specialized anti-corrosion surface treatments and selects corrosion-resistant alloy grades for battery recycling applications, significantly extending service intervals.\n\n## Precision Wire-EDM Bore Profiles\n\nBattery pre-shredders operate at precise, computer-controlled rotor speeds where bore-to-shaft backlash directly affects blade position accuracy and shear gap consistency. All bore profiles are Wire-EDM machined to ±0.01mm, ensuring zero rotational play that could cause shear clearance inconsistency during the precision shredding of battery foil stacks.",
+      "A reciclagem de baterias de íon-lítio (Li-ion) apresenta desafios mecânicos e químicos únicos que o facas para trituradores padrão não consegue lidar de forma confiável. A pré-trituração de conjuntos de baterias e células cilíndricas ocorre frequentemente em atmosferas purgadas com nitrogênio para suprimir o risco de incêndio e de fuga térmica. As ferramentas facas para trituradores padrão falham prematuramente nesse ambiente por meio de dois mecanismos distintos: corrosão do eletrólito causada pelo LiPF₆ e pelo ácido HF liberados durante a ruptura da célula, e falha mecânica provocada por folgas de cisalhamento imprecisas que dobram — em vez de cortar — as finas folhas coletoras de corrente de cobre (8–12 μm) e alumínio (15–20 μm) dentro das células da bateria.\n\n## Retificação de precisão com microfolga (±0,02 mm)\n\nSe a folga entre as lâminas de eixo duplo que giram em sentidos opostos for muito grande, as folhas da bateria não são cortadas — elas se dobram, esticam e se enrolam no rotor, causando atolamentos imediatos em um ambiente de gás inerte. Desobstruir um atolamento no rotor sob nitrogênio requer o desligamento completo do sistema, purga e remoção manual — horas de inatividade que consomem uma quantidade significativa de N₂. As lâminas facas para trituradores da Sureay para baterias são retificadas com precisão para obter um paralelismo de espessura de ±0,02 mm em toda a face da lâmina, garantindo uma folga de cisalhamento mínima e consistente em todo o rotor para cortes limpos e controlados em células tipo bolsa, módulos prismáticos e pacotes de baterias cilíndricas 18650/21700.\n\n## Resistência à corrosão por eletrólito\n\nOs eletrólitos de LiPF₆ se hidrolisam ao entrar em contato com a umidade atmosférica, produzindo ácido fluorídrico (HF) — um dos produtos químicos industriais mais agressivamente corrosivos. Os aços para ferramentas padrão D2 ou SKD11 sofrem corrosão rápida nesse ambiente, com a formação de corrosão por pite na superfície iniciando-se nos limites dos grãos em um período de 200 a 500 horas de operação. A Sureay aplica tratamentos de superfície anticorrosivos especializados e seleciona ligas resistentes à corrosão para aplicações de reciclagem de baterias, prolongando significativamente os intervalos de manutenção.\n\n## Perfis de furo com precisão em eletroerosão a fio\n\nOs pré-trituradores de baterias operam em velocidades precisas do rotor, controladas por computador, nas quais a folga entre o furo e o eixo afeta diretamente a precisão da posição da lâmina e a consistência da folga de cisalhamento. Todos os perfis de furo são usinados por eletroerosão a fio com precisão de ±0,01 mm, garantindo folga rotacional zero que poderia causar inconsistência na folga de cisalhamento durante a trituração de precisão das pilhas de folhas metálicas das baterias.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
@@ -1081,34 +1091,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "micro-clearance",
-        tag: "PRECISION",
-        title: "±0.02mm Thickness Parallelism",
+        tag: "PRECISÃO",
+        title: "±0,02 mm de espessura e paralelismo",
         description:
-          "Precision ground to ultra-tight thickness tolerances, ensuring consistent shear clearance across the full rotor for clean cuts on copper and aluminum battery foils without folding or rotor wrap-arounds.",
+          "Retificado com precisão para tolerâncias de espessura extremamente rigorosas, garantindo uma folga de corte consistente em todo o rotor para cortes precisos em folhas de cobre e alumínio para baterias, sem dobras nem enrolementos no rotor.",
       },
       {
         id: "corrosion-resistance",
-        tag: "DURABILITY",
-        title: "Electrolyte Corrosion Resistance",
+        tag: "DURABILIDADE",
+        title: "Resistência à corrosão por eletrólitos",
         description:
-          "Specialized metallurgy and surface treatments provide enhanced resistance to LiPF6-derived HF acid corrosion, extending blade service intervals in aggressive battery recycling chemical environments.",
+          "A metalurgia especializada e os tratamentos de superfície proporcionam maior resistência à corrosão pelo ácido fluorídrico (HF) derivado do LiPF₆, prolongando os intervalos de manutenção das lâminas em ambientes químicos agressivos de reciclagem de baterias.",
       },
       {
         id: "wire-edm-bore",
-        tag: "FITMENT",
-        title: "Wire-EDM Precision Bores",
+        tag: "COMPATIBILIDADE",
+        title: "Furos de precisão por eletroerosão a fio",
         description:
-          "All bore profiles are machined to ±0.01mm via Wire-EDM, eliminating rotational play that causes shear gap inconsistency during precision battery foil stack processing.",
+          "Todos os perfis dos furos são usinados com precisão de ±0,01 mm por meio de eletroerosão a fio (EDM), eliminando a folga rotacional que causa inconsistências na largura da fenda de cisalhamento durante o processamento de precisão de pilhas de folhas de bateria.",
       },
     ],
     dimensionLabels: {
-      col0: "Cell / Module Type",
-      col1: "Blade Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Profile",
-      col4: "Thickness Tolerance",
+      col0: "Tipo de célula / módulo",
+      col1: "Diâmetro externo da lâmina",
+      col2: "Espessura da lâmina",
+      col3: "Perfil do furo",
+      col4: "Tolerância de espessura",
       caption:
-        "* Exact bore profiles, OD, and thickness supplied to customer drawings. Inert-gas compatible material options available.",
+        "* Perfis exatos do diâmetro interno, diâmetro externo e espessura, de acordo com os desenhos do cliente. Opções de materiais compatíveis com gás inerte disponíveis.",
     },
     standardDimensions: [
       {
@@ -1138,58 +1148,59 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is ±0.02mm thickness tolerance critical for battery pack pre-shredding?",
+            "Por que a tolerância de espessura de ±0,02 mm é fundamental para a pré-trituração de conjuntos de baterias?",
           answer:
-            "Battery packs contain copper and aluminum current collector foils that are 8–20μm thick. When the shear gap between counter-rotating blades exceeds approximately 0.05mm, the foils deform plastically rather than shearing—folding and wrapping around the rotor, causing operational jams. In a nitrogen-purged environment, clearing a rotor jam requires complete shutdown of the inert gas system, evacuation, and manual removal—hours of downtime consuming significant N₂. Holding blade thickness parallelism to ±0.02mm guarantees a consistent minimum shear gap across the full rotor length, preventing foil wrap-arounds under normal operating conditions.",
+            "Os conjuntos de baterias contêm folhas coletoras de corrente de cobre e alumínio com espessura de 8 a 20 μm. Quando a folga de cisalhamento entre as lâminas que giram em sentidos opostos excede aproximadamente 0,05 mm, as folhas sofrem deformação plástica em vez de cisalhamento — dobrando-se e enrolando-se ao redor do rotor, causando congestionamentos operacionais. Em um ambiente purgado com nitrogênio, a resolução de um travamento do rotor exige o desligamento completo do sistema de gás inerte, a evacuação e a remoção manual — horas de inatividade que consomem uma quantidade significativa de N₂. Manter o paralelismo da espessura das pás em ±0,02 mm garante uma folga de cisalhamento mínima consistente ao longo de todo o comprimento do rotor, evitando que as folhas se enrolem em condições normais de operação.",
         },
         {
           question:
-            "What causes blade corrosion in lithium-ion battery shredding environments?",
+            "O que causa a corrosão das lâminas em ambientes de trituração de baterias de íons de lítio?",
           answer:
-            "LiPF6, the most common lithium-ion electrolyte salt, reacts with trace atmospheric moisture to produce HF (hydrofluoric acid). In a cell breach event during pre-shredding, even a nitrogen atmosphere contains enough residual moisture for partial hydrolysis. Standard tool steel grades (D2, SKD11) corrode rapidly in HF—surface pitting initiates at grain boundaries within 200–500 hours, degrading edge geometry and reducing shear efficiency. Sureay applies specialized anti-corrosion surface treatments to extend service intervals significantly beyond standard tool steels in battery recycling lines.",
+            "O LiPF₆, o sal eletrolítico de íons de lítio mais comum, reage com traços de umidade atmosférica para produzir HF (ácido fluorídrico). Em caso de rompimento de uma célula durante a pré-trituração, mesmo uma atmosfera de nitrogênio contém umidade residual suficiente para provocar hidrólise parcial. Os tipos padrão de aço para ferramentas (D2, SKD11) sofrem corrosão rápida em contato com o HF — a corrosão por pite na superfície se inicia nos limites dos grãos em um período de 200 a 500 horas, prejudicando a geometria das arestas e reduzindo a eficiência de corte. A Sureay aplica tratamentos de superfície anticorrosivos especializados para prolongar os intervalos de manutenção significativamente além dos observados com os aços para ferramentas padrão nas linhas de reciclagem de baterias.",
         },
         {
           question:
-            "Should twin-shaft or single-shaft shredders be used for Li-ion battery pre-processing?",
+            "Deve-se utilizar trituradores de eixo duplo ou de eixo único para o pré-processamento de baterias de íon-lítio?",
           answer:
-            "Twin-shaft (dual-shaft) shredders are standard for EV battery pack primary size reduction because the counter-rotating, low-speed high-torque design subjects cells to controlled shear rather than impact. This controlled failure mode reduces acute thermal events compared to high-speed single-shaft impactors. Precision twin-shaft blades with controlled shear clearances are therefore the mechanical first-stage standard, followed by further downstream processing.",
+            "Os trituradores de eixo duplo (duas hastes) são o padrão para a redução primária do tamanho das baterias de veículos elétricos, pois o projeto de rotação contrária, baixa velocidade e alto torque submete as células a um cisalhamento controlado, em vez de impacto. Esse modo de ruptura controlada reduz os eventos térmicos agudos em comparação com os trituradores de eixo único de alta velocidade. Lâminas de precisão de eixo duplo com folgas de cisalhamento controladas são, portanto, o padrão mecânico do primeiro estágio, seguido por processamento adicional a jusante.",
         },
         {
           question:
-            "What bore profiles are required for nitrogen-purged battery shredder platforms?",
+            "Quais perfis de furo são necessários para plataformas de trituração de baterias com purga de nitrogênio?",
           answer:
-            "Battery pre-shredders from specialist manufacturers (Erdwich, Hosokawa, Metso, and Andritz battery recycling lines) use proprietary rotor shaft profiles more precisely toleranced than general industrial shredders. Wire-EDM splined and hexagonal bores to ±0.01mm are required for zero-play rotor mounting—any rotational backlash at operating speed causes consistent shear gap variation and foil jam risk. We manufacture bore profiles to custom shaft drawings; please provide the rotor shaft profile drawing for exact bore specification.",
+            "Os pré-trituradores de baterias de fabricantes especializados (linhas de reciclagem de baterias da Erdwich, Hosokawa, Metso e Andritz) utilizam perfis de eixo de rotor exclusivos, com tolerâncias mais precisas do que os trituradores industriais comuns. São necessários furos estriados e hexagonais usinados por eletroerosão a fio (EDM) com tolerância de ±0,01 mm para a montagem do rotor sem folga — qualquer folga rotacional na velocidade de operação causa variação consistente na abertura de cisalhamento e risco de emperramento da folha. Fabricamos perfis de furo de acordo com desenhos personalizados do eixo; forneça o desenho do perfil do eixo do rotor para obter a especificação exata do furo.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply matched rotor and counter-knife sets for battery pre-shredders?",
+            "Vocês podem fornecer conjuntos combinados de rotor e contra-faca para pré-trituradores de baterias?",
           answer:
-            "Yes. For battery recycling lines where shear clearance consistency is paramount, we supply rotor blade sets and stationary counter-knives ground together as a matched pair to ensure the composite shear gap meets specification. All matched sets include a clearance verification certificate documenting the measured gap at multiple points across the rotor length.",
+            "Sim. Para linhas de reciclagem de baterias, nas quais a consistência da folga de corte é fundamental, fornecemos conjuntos de lâminas de rotor e contra-lâminas fixas retificadas em conjunto como um par combinado, a fim de garantir que a folga de corte do compósito atenda às especificações. Todos os conjuntos combinados incluem um certificado de verificação da folga, que documenta a folga medida em vários pontos ao longo do comprimento do rotor.",
         },
         {
           question:
-            "What quality documentation is provided for battery recycling plant qualification?",
+            "Que tipo de documentação de qualidade é fornecida para a qualificação de uma usina de reciclagem de baterias?",
           answer:
-            "Battery recycling facilities frequently require enhanced quality documentation for process validation. We supply: CMM dimensional inspection reports, roundness and parallelism measurement records, surface treatment process certificates, material traceability from certified steel mill CoA through to final inspection, and hardness test results per blade. Application-specific documentation packages can be provided for IATF 16949 or ISO 45001 controlled environments.",
+            "As instalações de reciclagem de baterias frequentemente exigem documentação de qualidade aprimorada para a validação do processo. Fornecemos: relatórios de inspeção dimensional por CMM, registros de medição de circularidade e paralelismo, certificados do processo de tratamento de superfície, rastreabilidade do material desde o Certificado de Análise (CoA) da siderúrgica certificada até a inspeção final e resultados de ensaios de dureza por lâmina. Pacotes de documentação específicos para cada aplicação podem ser fornecidos para ambientes controlados de acordo com as normas IATF 16949 ou ISO 45001.",
         },
         {
           question:
-            "Do you offer sample blades for process validation before full production orders?",
+            "Vocês oferecem amostras de lâminas para validação do processo antes dos pedidos de produção em grande escala?",
           answer:
-            "Yes. Battery recycling process qualification typically requires 2–4 sample blades for fit verification and electrolyte resistance testing before production commitment. Sample lead time is 10–15 working days for battery-grade specifications. We can participate in customer technical review calls during the validation process.",
+            "Sim. A qualificação do processo de reciclagem de baterias normalmente requer de 2 a 4 lâminas de amostra para verificação de adequação e testes de resistência ao eletrólito antes do compromisso de produção. O prazo de entrega das amostras é de 10 a 15 dias úteis para especificações de grau de bateria. Podemos participar de chamadas de revisão técnica com o cliente durante o processo de validação.",
         },
       ],
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Tissue Log Saw Blades",
-    fullName: "Premium Circular Log Saw Blades for Tissue & Towel Converting",
+    name: "Lâminas de serra para troncos de papel",
+    fullName:
+      "Lâminas circulares de alta qualidade para serras de toras, destinadas à fabricação de lenços de papel e toalhas",
     category: "log_saw_blades",
     sector: "paper",
-    categoryDisplay: "Tissue Paper Blades",
+    categoryDisplay: "Lâminas de papel de seda",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
     badge: "Zero Core Crush",
     badgeColor: "blue",
@@ -1202,17 +1213,17 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Tissue log saw blade render showing mirror-polished face and drive pin hole pattern",
-      "Stack of finished tissue log saw blades in a wooden packing crate at Sureay",
-      "Tissue log saw blade packed in a wooden crate with edge protector before shipment",
-      "Ø610 mm D2 tissue log saw blade, mirror-polished face with drive pin holes",
-      "Ø68.26 mm bore and drive pin hole pattern for Fabio Perini log saws",
-      "Tissue log saw blade face showing mirror-polished finish under workshop lighting",
+      "Imagem de uma lâmina de serra para toras de papel, mostrando a face com acabamento espelhado e o padrão de furos dos pinos de acionamento",
+      "Pilha de tecido acabado lâminas de serra para bobinas em uma caixa de madeira na Sureay",
+      "Lâmina de serra para toras de celulose embalada em uma caixa de madeira com protetor de borda antes do embarque",
+      "Lâmina de serra para rolos de papel-toalha D2 de Ø610 mm, face com polimento espelhado e orifícios para pinos de acionamento",
+      "Diâmetro interno de Ø68,26 mm e padrão de furos para pinos de acionamento das serras para toras Fabio Perini",
+      "Superfície da lâmina de serra para toras de papel-tecido, apresentando acabamento polido espelhado sob a iluminação da oficina",
     ],
     description:
-      "Tissue log saw blades Ø610–Ø1200 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
+      "Lâminas lâminas de serra para bobinas Ø610–Ø1200 mm — D2/Cr12MoV temperado a vácuo (HRC 58–60), microrretificado com desvio lateral ≤0,15 mm para corte transversal sem oscilação. Elimina núcleos amassados e pó de papel nas linhas de papel higiênico, papel-toalha e JRT. Compatível com afiação CBN em linha. Encaixe OEM pronto para uso em máquinas Fabio Perini, PCMC, Casmatic, Gambini e Bretting. Diâmetros personalizados em 10 dias úteis. lâminas de serra para bobinas: confiança comprovada em linhas de conversão de papel-toalha em todo o mundo.",
     fullDescription:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage—crushed cardboard cores, excessive dust generation, or angled cut faces—propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.\n\nSureay tissue log saw blades are manufactured from premium D2 (1.2379) and Cr12MoV cold-work tool steels. Because these massive blades (up to Ø1200 mm) spin at extreme RPMs, stability is everything. Every blade is vacuum-hardened, tension-leveled, and micro-ground to strict dimensional tolerances verified on a calibrated CMM before dispatch:\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Bore tolerance:** Ø68.26 mm (+0.05 / 0.00 mm)\n\n## Continuous Sharpening Compatibility\n\nUnlike standard circular knives, tissue log saws are continuously sharpened *during* operation by synchronized CBN (Cubic Boron Nitride) grinding wheels. Sureay’s heat treatment targets HRC 58–60. This specific hardness range ensures the blade hones cleanly against the CBN stones without loading or glazing them, maintaining a razor-sharp edge cycle after cycle without consuming your expensive sharpening wheels.\n\n## Bevel Geometry & Dust Reduction\n\nTissue is a low-density, high-surface-area web with near-zero compressive strength. Cutting it with too steep a bevel creates compression, leading to excessive paper dust (a major fire hazard in spray-glued towel lines) and edge densification that reduces roll softness. We utilize a shallow bevel angle (15°–25°) that separates fibers by pure shear. Combined with a mirror-polished blade face (Ra ≤0.2 μm), this delivers flawless cuts on premium 2-ply and 3-ply bath tissue.\n\n## Bore Compatibility by OEM Platform\n\n**Ø68.26 mm (+0.05 mm):** Fabio Perini (all series), PCMC Forte/Elite, Körber/MTC log saws.\n\n**Ø82.55 mm:** Casmatic (Kimberly-Clark licensed platforms), Italian and Spanish third-party OEM log saw systems.\n\n**Ø60.00 mm:** Large-format log saws for industrial wiper, jumbo roll (JRT), and coreless bath tissue production (OD 870–1000 mm).\n\nCustom OD from Ø610 mm to Ø1200 mm manufactured to order with a standard 10-working-day lead time. Drawing review and dimensional sign-off available on first-order tooling.\n\n## Advanced Surface Coatings\n\n**Hard Chrome Plating:** Provides corrosion resistance in high-humidity paper mill environments (≥75% RH) and reduces tissue fiber adhesion coefficient, extending the clean-running interval between blade dressing cycles.\n\n**Teflon (PTFE) Coating:** Creates a highly lubricated surface that glides through dense kitchen towel logs, drastically reducing motor amp draw and eliminating burn marks on the paper edges. The top specification for premium 3-ply kitchen towel lines.\n\n**TiN PVD Coating:** Physical vapour deposition titanium nitride (2–3 μm, HV 2300+) extends the sharp-edge service interval in high-cycle operation. Recommended for premium tissue brands with strict dust contamination specifications.",
+      "O corte transversal do rolo de papel-toalha é a operação de corte de maior risco em uma linha de conversão de papel-toalha. Um defeito dimensional nessa etapa — tubos de papelão amassados, geração excessiva de pó ou faces de corte inclinadas — se propaga imediatamente para as estações de embalagem, provocando paradas na linha e rejeições de produtos destinados ao consumidor.\n\nAs lâminas zGTR1 e zGTR da Sureay para papel-toalha são fabricadas a partir de aços D2 (1.2379) e Cr12MoV de alta qualidade. Como essas lâminas maciças (de até Ø1.200 mm) giram a rotações extremas, a estabilidade é fundamental. Cada lâmina é temperada a vácuo, nivelada por tensão e microretificada de acordo com rigorosas tolerâncias dimensionais, verificadas em uma CMM calibrada antes da remessa:\n\n- **Desvio lateral:** ≤0,15 mm\n- **Desvio da borda:** ≤0,10 mm\n- **Paralelismo da face:** 0,05 mm\n- **Concentricidade (diâmetro externo em relação ao furo):** ≤0,30 mm\n- **Tolerância do furo:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidade com afiamento contínuo\n\nDiferentemente do modelo padrão facas circulares, as serras para rolos de papel higiênico são afiadas continuamente *durante* a operação por rebolos sincronizados de CBN (nitreto de boro cúbico). O modelo tratamento térmico da Sureay atinge HRC 58–60. Essa faixa específica de dureza garante que a lâmina seja afiada de forma limpa contra os rebolos de CBN, sem obstruí-los ou causar vitrificação, mantendo um fio afiado como uma lâmina de barbear ciclo após ciclo, sem desgastar seus rebolos de afiação caros.\n\n## Geometria do bisel e redução de poeira\n\nO tecido de papel higiênico é uma banda de baixa densidade e grande área superficial, com resistência à compressão quase nula. Cortá-lo com um bisel muito inclinado cria compressão, levando à geração excessiva de pó de papel (um grande risco de incêndio em linhas de toalhas coladas por pulverização) e à densificação da borda, o que reduz a maciez do rolo. Utilizamos um ângulo de bisel raso (15°–25°) que separa as fibras por puro cisalhamento. Combinado com uma face da lâmina polida espelhada (Ra ≤0,2 μm), isso proporciona cortes impecáveis em papel higiênico premium de 2 e 3 camadas.\n\n## Compatibilidade de furo por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas as séries), PCMC Forte/Elite, serras de toras Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas licenciadas pela Kimberly-Clark), sistemas de serras para toras de terceiros italianos e espanhóis.\n\n**Ø60,00 mm:** serras de toras de grande formato para produção industrial de lenços umedecidos, rolos jumbo (JRT) e papel higiênico sem núcleo (diâmetro externo de 870 a 1.000 mm).\n\nDiâmetro externo personalizado de Ø610 mm a Ø1.200 mm, fabricado sob encomenda com prazo de entrega padrão de 10 dias úteis. Análise de desenhos e aprovação dimensional disponíveis na primeira encomenda de ferramentas.\n\n## Revestimentos de Superfície Avançados\n\n**Cromagem dura:** Oferece resistência à corrosão em ambientes de fábricas de papel com alta umidade (≥75% UR) e reduz o coeficiente de adesão das fibras do tecido, prolongando o intervalo de funcionamento sem interrupções entre os ciclos de afiação das lâminas.\n\n**Revestimento de Teflon (PTFE):** Cria uma superfície altamente lubrificada que desliza facilmente através de rolos densos de papel-toalha de cozinha, reduzindo drasticamente o consumo de corrente do motor e eliminando marcas de queimadura nas bordas do papel. A especificação de ponta para linhas premium de papel-toalha de cozinha de 3 camadas.\n\n**Revestimento TiN PVD:** A deposição física de vapor de nitreto de titânio (2–3 μm, HV 2300+) prolonga o intervalo de manutenção das lâminas afiadas em operações de alto ciclo. Recomendado para marcas premium de papel-toalha com especificações rigorosas de contaminação por poeira.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1269,60 +1280,60 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Log saw blade life on a tissue line is decided by how the steel behaves under continuous CBN honing, not by hardness alone. The two grades below cover almost every tissue and towel application we quote.",
+        "A vida útil da lâmina de serra para toras em uma linha de produção de papel higiênico é determinada pelo comportamento do aço sob afiamento contínuo com CBN, e não apenas pela dureza. Os dois tipos de aço abaixo abrangem praticamente todas as aplicações de papel higiênico e toalhas que oferecemos.",
       rows: [
         {
-          grade: "D2 / 1.2379",
+          grade: "D2 / 1,2379",
           hardness: "HRC 58–60",
           bestFor:
-            "Standard bath tissue and kitchen towel lines running in-line CBN sharpening. Our default grade.",
+            "Linhas padrão de papel higiênico e papel de cozinha submetidas a afiação CBN em linha. Nosso grau padrão.",
           tradeoff:
-            "Highest all-round value. Not the longest life on heavily recycled, high-ash furnish.",
+            "Excelente custo-benefício geral. Não apresenta a maior vida útil quando fabricado com matéria-prima altamente reciclada e com alto teor de cinzas.",
         },
         {
           grade: "Cr12MoV",
           hardness: "HRC 58–60",
           bestFor:
-            "Lines where blade cost per cut matters more than absolute edge life; widely available regrind support.",
+            "Setores em que o custo da lâmina por corte é mais importante do que a vida útil absoluta do fio; ampla disponibilidade de serviços de reafiação.",
           tradeoff:
-            "Slightly lower wear resistance than D2 on abrasive recycled fibre.",
+            "Resistência ao desgaste ligeiramente inferior à do D2 em fibra reciclada abrasiva.",
         },
       ],
       outro:
-        "For high-speed lines running heavily recycled fibre with abrasive filler, we also quote M2 HSS, which holds the edge longest between grinds but is more sensitive to CBN wheel condition. If you are not sure which grade your line needs, tell us the furnish (virgin or recycled), the log density, and how many cuts per minute you run. We match the grade to the line, not the other way round.",
+        "Para linhas de alta velocidade que processam fibra altamente reciclada com enchimento abrasivo, também recomendamos a M2 HSS, que mantém o fio afiado por mais tempo entre as afiações, mas é mais sensível às condições do disco de CBN. Caso não tenha certeza de qual grau sua linha necessita, informe-nos sobre a matéria-prima (virgem ou reciclada), a densidade da toras e quantos cortes por minuto você realiza. Nós adaptamos o grau à linha, e não o contrário.",
     },
     componentsIntro:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage—crushed cardboard cores, excessive dust generation, or angled cut faces—propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.",
+      "O corte transversal do rolo de papel-tecido é a operação de corte de maior risco em uma linha de transformação de papel-tecido. Um defeito dimensional nessa etapa — tubos de papelão amassados, geração excessiva de pó ou faces de corte inclinadas — se propaga imediatamente para as estações de embalagem, provocando paradas na linha e rejeições de produtos destinados ao consumidor.",
     components: [
       {
         id: "runout-control",
-        tag: "PRECISION",
-        title: "Zero-Wobble Tensioning",
+        tag: "PRECISÃO",
+        title: "Tensionamento sem oscilação",
         description:
-          "Why does a log saw crush cardboard cores? Almost always because lateral runout has drifted past about 0.20 mm, and the blade starts beating the core instead of slicing it. A 610 mm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to ≤0.15 mm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
+          "Por que uma serra para toras amassa os tubos de papelão? Quase sempre porque o desvio lateral ultrapassou cerca de 0,20 mm, e a lâmina começa a bater no tubo em vez de cortá-lo. Uma lâmina de 610 mm girando em alta rotação (RPM) pode entortar se não estiver devidamente tensionada. Tensionamos por CNC e micro-retificamos cada lâmina de serra para torção lateral ≤0,15 mm, garantindo que ela corte perfeitamente em linha reta, sem oscilar e sem amassar o frágil tubo de papelão.",
       },
       {
         id: "cbn-compatible",
-        tag: "METALLURGY",
-        title: "In-Line CBN Sharpening Ready",
+        tag: "METALURGIA",
+        title: "Pronto para afiação com CBN em linha",
         description:
-          "D2 and Cr12MoV blades heat-treated to HRC 58–60. This specific hardness range responds cleanly to continuous CBN grinding wheels without loading or glazing them, maintaining a razor edge and protecting your sharpening equipment.",
+          "Lâminas de D2 e Cr12MoV submetidas a tratamento térmico para atingir HRC 58–60. Essa faixa específica de dureza responde bem ao uso contínuo de rebolos de CBN, sem sobrecarregá-los nem causar vitrificação, mantendo um fio afiado como uma lâmina de barbear e protegendo seu equipamento de afiação.",
       },
       {
         id: "anti-friction",
-        tag: "COATINGS",
-        title: "Teflon & Chrome Finishes",
+        tag: "REVESTIMENTOS",
+        title: "Acabamentos em Teflon e cromo",
         description:
-          "Friction generates heat and explosive paper dust. Hard Chrome or Teflon (PTFE) coated blades lower the coefficient of friction, yielding pristine cut edges on premium 3-ply kitchen towel logs and extending Mean Time Between sharpening cycles.",
+          "O atrito gera calor e poeira explosiva de papel. Lâminas revestidas com cromo duro ou Teflon (PTFE) reduzem o coeficiente de atrito, proporcionando bordas de corte impecáveis em rolos de papel-toalha de cozinha premium de três camadas e prolongando o tempo médio entre os ciclos de afiação.",
       },
     ],
     dimensionLabels: {
-      col0: "Target Machine / Log Type",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore / ID (mm)",
-      col3: "Thickness (mm)",
+      col0: "Máquina de destino / Tipo de log",
+      col1: "Diâmetro externo (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard dimensions for major tissue converting OEMs. Custom drive-pin holes, keyways, and sizes up to Ø1200 mm for JRT industrial rolls manufactured to exact specifications.",
+        "* Dimensões padrão para os principais fabricantes de produtos de papel e papelão (OEMs). Orifícios personalizados para pinos de acionamento, ranhuras para chavetas e diâmetros de até Ø1200 mm para rolos industriais da JRT, fabricados de acordo com especificações exatas.",
     },
     standardDimensions: [
       {
@@ -1371,64 +1382,65 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is my log saw crushing the cardboard cores of the toilet rolls?",
+            "Por que minha serra para toras está amassando os tubos de papelão dos rolos de papel higiênico?",
           answer:
-            "Core crushing is primarily caused by excessive blade wobble (lateral runout) or a dull cutting edge. When lateral runout exceeds 0.20 mm, the blade physically beats against the core rather than slicing it. Our blades are tension-leveled and CMM-verified to ≤0.15 mm lateral runout. Also verify that your in-line CBN sharpening stones are correctly aligned and actively dressing the blade on every cycle.",
+            "A quebra do núcleo é causada principalmente pela oscilação excessiva da lâmina (desvio lateral) ou por uma aresta de corte cega. Quando o desvio lateral excede 0,20 mm, a lâmina bate fisicamente contra o núcleo, em vez de cortá-lo. Nossas lâminas são niveladas por tensão e verificadas por CMM para um desvio lateral ≤0,15 mm. Verifique também se suas pedras de afiamento CBN em linha estão corretamente alinhadas e se estão retificando ativamente a lâmina a cada ciclo.",
         },
         {
           question:
-            "How do I minimize dust and fiber tearing during tissue cross-cutting?",
+            "Como posso minimizar a formação de poeira e o rasgo das fibras durante o corte transversal de lenços de papel?",
           answer:
-            "Dust is generated when a high-friction blade tears tissue fibers instead of shearing them. We engineer a shallow bevel angle (15°–25°) combined with a mirror-polished face (Ra ≤0.2 μm). For maximum dust reduction, upgrade to our Teflon (PTFE) coated blades, which drastically lower friction and allow the blade to glide through the log with minimal fiber displacement.",
+            "A poeira é gerada quando uma lâmina de alto atrito rasga as fibras do tecido em vez de cortá-las. Nós projetamos um ângulo de bisel raso (15°–25°) combinado com uma superfície polida espelhada (Ra ≤ 0,2 μm). Para obter a máxima redução de poeira, opte por nossas lâminas revestidas com Teflon (PTFE), que reduzem drasticamente o atrito e permitem que a lâmina deslize pelo tronco com deslocamento mínimo das fibras.",
         },
         {
           question:
-            "Can you supply blades for Fabio Perini, PCMC, Casmatic, or Gambini log saws?",
+            "Vocês fornecem lâminas para serras de toras das marcas Fabio Perini, PCMC, Casmatic ou Gambini?",
           answer:
-            "Yes. The standard Ø68.26 mm (+0.05 mm) bore fits Fabio Perini and PCMC Forte/Elite log saws directly. The Ø82.55 mm bore covers Casmatic and equivalent platforms. For Gambini and Bretting machines we build to the measured geometry of your existing blade or your own drawing, so the replacement drops in without retooling. Send us the machine model, a worn blade, or a dimensioned sketch and we confirm fitment before quoting.",
+            "Sim. O furo padrão de Ø68,26 mm (+0,05 mm) é compatível diretamente com as serras para toras Fabio Perini e PCMC Forte/Elite. O furo de Ø82,55 mm é compatível com as plataformas Casmatic e equivalentes. Para máquinas Gambini e Bretting, fabricamos de acordo com a geometria medida da sua lâmina existente ou com base no seu próprio desenho, para que a lâmina de reposição se encaixe perfeitamente sem a necessidade de reajustes. Envie-nos o modelo da máquina, uma lâmina desgastada ou um esboço com as dimensões, e confirmaremos a compatibilidade antes de apresentar o orçamento.",
         },
         {
           question:
-            "How does the blade interact with the machine’s continuous CBN sharpening system?",
+            "Como a lâmina interage com o sistema de afiação contínua com CBN da máquina?",
           answer:
-            "Log saws use synchronized CBN (Cubic Boron Nitride) stones to hone the blade continuously during operation. If the blade material is too hard or soft, it will load or glaze the stones, rendering them ineffective. Our D2 blades heat-treated to HRC 58–60 shed micro-chips cleanly without clogging your CBN wheels.",
+            "As serras para toras utilizam pedras de CBN (nitreto de boro cúbico) sincronizadas para afiar a lâmina continuamente durante a operação. Se o material da lâmina for muito duro ou muito macio, ele causará acúmulo de resíduos ou vitrificação nas pedras, tornando-as ineficazes. Nossas lâminas D2, submetidas a tratamento térmico para atingir HRC 58–60, eliminam microlascas de forma limpa, sem entupir seus discos de CBN.",
         },
         {
-          question: "What is the longest blade diameter you can manufacture?",
+          question:
+            "Qual é o maior diâmetro de lâmina que vocês conseguem fabricar?",
           answer:
-            "We manufacture tissue log saw blades up to Ø1200 mm for large-format industrial wiper and jumbo roll (JRT) production lines. These require our large-format vacuum heat treatment furnaces and CNC grinding equipment. Standard lead time is 10 working days from drawing sign-off.",
+            "Fabricamos tecidos lâminas de serra para bobinas de até Ø1200 mm para linhas de produção de lenços de papel industriais de grande formato e rolos jumbo (JRT). Para isso, são necessários nossos fornos a vácuo de grande formato tratamento térmico e equipamentos de retificação CNC. O prazo de entrega padrão é de 10 dias úteis a partir da aprovação do desenho.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Você é um fabricante ou uma empresa comercial?",
           answer:
-            "Direct manufacturer. We forge, grind, and quality-inspect every blade in-house under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
+            "Fabricante direto. Nós forjamos, afiamos e inspecionamos a qualidade de cada lâmina em nossas instalações, de acordo com a certificação ISO 9001:2015. Você se comunica diretamente com os engenheiros de produção que fabricaram suas lâminas — sem margem de lucro de revendedores.",
         },
         {
           question:
-            "Do you supply matched CBN sharpening wheels alongside the blades?",
+            "Vocês fornecem rebolos de afiação de CBN compatíveis junto com as lâminas?",
           answer:
-            "Yes. We supply matched sets of CBN sharpening stones engineered for our log saw blades, ensuring correct grinding angle, bond hardness, and abrasive grit for maximum blade life and minimum stone wear.",
+            "Sim. Fornecemos conjuntos combinados de pedras de afiar CBN projetadas especificamente para o nosso lâminas de serra para bobinas, garantindo o ângulo de afiação correto, a dureza do aglutinante e o grão abrasivo adequados para maximizar a vida útil da lâmina e minimizar o desgaste da pedra.",
         },
         {
-          question: "What quality certifications does Sureay hold?",
+          question: "Quais certificações de qualidade a Sureay possui?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a CMM dimensional inspection record, and a heat treatment batch certificate. Mill certificates and full material traceability reports are available on request.",
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional por CMM e um certificado de lote tratamento térmico. Certificados de fábrica e relatórios completos de rastreabilidade de materiais estão disponíveis mediante solicitação.",
         },
       ],
     },
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Nonwoven Log Saw Blades",
+    name: "Lâminas de serra para toras em tecido não tecido",
     fullName:
-      "Corrosion-Resistant Log Saw Blades for Nonwoven & Hygiene Converting",
+      "Lâminas de serra para toras resistentes à corrosão para a transformação de não tecidos e produtos de higiene",
     category: "log_saw_blades",
     sector: "converting",
-    categoryDisplay: "Nonwoven Converting Blades",
+    categoryDisplay: "Lâminas para processamento de não tecidos",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anti-Corrosion",
+    badge: "Anticorrosão",
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
@@ -1436,9 +1448,9 @@ export const blades: Blade[] = [
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Log saw blades engineered for nonwoven and hygiene converting lines — baby wipes, wet wipes, feminine hygiene, and adult incontinence rolls. D2 tool steel with corrosion-resistant TiN or hard chrome coating resists alcohol-based solutions, lotions, and surfactants. Micro-ground to ≤0.15 mm lateral runout for fraying-free cuts on spunbond, meltblown, SMS, and airlaid substrates. Compatible with Fameccanica, GDM, Curt G. Joa, and Zuiko converting lines. Custom diameters in 10 working days.",
+      "Lâminas de serra para toras projetadas para linhas de conversão de não tecidos e produtos de higiene — lenços umedecidos para bebês, lenços umedecidos, produtos de higiene feminina e rolos para incontinência adulta. Aço para ferramentas D2 com revestimento TiN resistente à corrosão ou cromo duro, que resiste a soluções à base de álcool, loções e surfactantes. Microafiação para um desvio lateral ≤0,15 mm, garantindo cortes sem desfiamento em substratos spunbond, meltblown, SMS e airlaid. Compatíveis com linhas de conversão da Fameccanica, GDM, Curt G. Joa e Zuiko. Diâmetros personalizados em 10 dias úteis.",
     fullDescription:
-      "Nonwoven hygiene converting lines present a fundamentally different set of blade demands compared to tissue paper operations. Where tissue log saws must manage paper dust and core crushing, nonwoven log saws face two distinct failure modes: fibre fraying from synthetic substrates that resist clean shear, and accelerated corrosion from the chemical environment on lines running alcohol, lotions, preservatives (phenoxyethanol), and surfactants at high humidity.\n\nSureay nonwoven log saw blades are built from D2 (1.2379) high-carbon, high-chromium tool steel and are available with application-specific corrosion-resistant coatings. Every blade is vacuum-hardened, tension-leveled, and CMM-verified before dispatch.\n\n## Why Tissue Blades Fail on Nonwoven Lines\n\nSpunbond polypropylene, meltblown, and SMS composite webs are fundamentally tougher to shear cleanly than cellulosic tissue. Synthetic fibres are elastic — they deflect ahead of a dull or slightly wobbly blade instead of separating cleanly, producing the frayed, stringy cut edges that cause downstream folding and packaging failures. A blade optimised for tissue (shallower bevel, softer matrix for CBN compatibility) will produce visible fibre pull-out on spunbond substrates within a fraction of the run time it would achieve on tissue.\n\nThe chemical environment compounds the problem. Wet wipe lines run saturation ratios of 2.0–3.5× (solution weight to substrate weight), meaning the blade is continuously exposed to the impregnation chemistry: typically 80–95% purified water plus preservatives, humectants, and surfactants. Standard D2 without a surface treatment will develop micro-pitting at the cutting edge within weeks, accelerating edge degradation and increasing particulate contamination risk in a hygiene-critical product.\n\n## Coating Options for Hygiene Environments\n\n**TiN PVD Coating (2–3 µm, HV 2300+):** Physical vapour deposition titanium nitride provides a chemically inert barrier with excellent adhesion. Blocks alcohol and surfactant ingress to the blade substrate, extends edge service intervals, and adds a hardness layer that resists micro-abrasion from SAP (superabsorbent polymer) particles present in absorbent core lines. Recommended for wet wipe and adult incontinence converting.\n\n**Hard Chrome Plating:** Electrodeposited hard chrome (20–30 µm) provides outstanding corrosion resistance in high-humidity environments (≥75% RH) and reduces the coefficient of friction against synthetic fibre webs. The thicker layer also fills surface micro-pores, creating a sealing effect against cleaning agent ingress during washdown cycles.\n\n**Uncoated D2 (standard):** Suitable for dry nonwoven converting lines — airlaid, thermobond, spunlace — where no saturation chemistry is present. Hardness HRC 58–60, CBN sharpening compatible.\n\n## Bevel Geometry for Synthetic Fibre\n\nNonwoven substrates require a slightly steeper primary bevel angle (25°–35°) compared to tissue (15°–25°). The steeper geometry concentrates cutting force at the edge contact point, initiating a clean fibre separation rather than the elastic deflection that causes fraying. For lotion-impregnated wet wipe logs with high cohesive strength, a compound bevel (primary + secondary relief) delivers the cleanest cut face with minimal edge rollover over extended run cycles.\n\n## Dimensional Tolerances\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Surface finish:** Mirror polished (Ra ≤0.2 µm)\n\n## OEM Platform Compatibility\n\nNonwoven hygiene converting log saws differ in bore specification and diameter from tissue lines. Common platforms:\n\n**Fameccanica (Italy):** Baby diaper and femcare converting lines; blade diameters typically Ø400–Ø550 mm depending on product format and roll diameter.\n\n**GDM (Italy):** High-speed hygiene product lines; blade specifications to customer drawing.\n\n**Curt G. Joa (USA):** North American adult incontinence and femcare lines; imperial bore specifications available.\n\n**Zuiko (Japan):** Baby diaper converting; blade dimensions to OEM drawing.\n\n**Chinese domestic OEMs (Zlink, Dachang, Quanzhou-based builders):** Blade specifications supplied to drawing or sample reverse-engineering.\n\nCustom OD from Ø350 mm to Ø700 mm manufactured to order. Drawing review and first-article dimensional sign-off available.",
+      "As linhas de conversão de produtos higiênicos não tecidos apresentam um conjunto de exigências em relação às lâminas fundamentalmente diferente daquele das operações com papel-toalha. Enquanto as serras para rolos de papel-toalha precisam lidar com o pó de papel e a trituração do tubo central, as serras para rolos de tecido não tecido enfrentam dois modos distintos de falha: o desfiamento das fibras provenientes de substratos sintéticos que resistem ao cisalhamento limpo e a corrosão acelerada causada pelo ambiente químico em linhas que processam álcool, loções, conservantes (fenoxietanol) e surfactantes em condições de alta umidade.\n\nAs lâminas lâminas de serra para bobinas da Sureay para não tecidos são fabricadas em aço-ferramenta D2 (1.2379) de alto carbono e alto cromo e estão disponíveis com revestimentos resistentes à corrosão específicos para cada aplicação. Cada lâmina é endurecida a vácuo, nivelada por tensão e verificada por CMM antes do envio.\n\n## Por que as lâminas para papel-toalha falham em linhas de não tecidos\n\nAs telas de polipropileno spunbond, meltblown e compósitas SMS são fundamentalmente mais resistentes ao corte limpo do que o papel-toalha celulósico. As fibras sintéticas são elásticas — elas se deformam diante de uma lâmina cega ou ligeiramente instável, em vez de se separarem de maneira limpa, produzindo bordas de corte desfiadas e fibrosas que causam falhas na dobragem e na embalagem nas etapas posteriores. Uma lâmina otimizada para papel-toalha (chanfro mais raso, matriz mais macia para compatibilidade com CBN) produzirá arrancamento visível de fibras em substratos spunbond em uma fração do tempo de operação que levaria no papel-toalha.\n\nO ambiente químico agrava o problema. As linhas de produção de lenços umedecidos operam com índices de saturação de 2,0 a 3,5× (peso da solução em relação ao peso do substrato), o que significa que a lâmina fica continuamente exposta à composição química da impregnação: normalmente 80 a 95% de água purificada, além de conservantes, umectantes e surfactantes. O D2 padrão, sem tratamento de superfície, desenvolverá microcorrosões na aresta de corte em poucas semanas, acelerando a degradação da aresta e aumentando o risco de contaminação por partículas em um produto de higiene crítica.\n\n## Opções de revestimento para ambientes de higiene\n\n**Revestimento TiN por PVD (2–3 µm, HV 2300+):** O nitreto de titânio aplicado por deposição física de vapor (PVD) oferece uma barreira quimicamente inerte com excelente adesão. Impede a penetração de álcool e surfactantes no substrato da lâmina, prolonga os intervalos de manutenção da borda e adiciona uma camada de dureza que resiste à microabrasão causada pelas partículas de SAP (polímero superabsorvente) presentes nas linhas de núcleos absorventes. Recomendado para a fabricação de lenços umedecidos e produtos para incontinência adulta.\n\n**Cromagem dura:** O cromo duro eletrodepositado (20–30 µm) oferece excelente resistência à corrosão em ambientes de alta umidade (≥75% UR) e reduz o coeficiente de atrito contra teias de fibras sintéticas. A camada mais espessa também preenche os microporos da superfície, criando um efeito de vedação contra a penetração de agentes de limpeza durante os ciclos de lavagem.\n\n**D2 sem revestimento (padrão):** Adequado para linhas de conversão de não tecidos a seco — airlaid, thermobond, spunlace — onde não há presença de produtos químicos de saturação. Dureza HRC 58–60, compatível com afiação por CBN.\n\n## Geometria do bisel para fibras sintéticas\n\nSubstratos não tecidos exigem um ângulo de bisel primário ligeiramente mais acentuado (25°–35°) em comparação com o papel-toalha (15°–25°). A geometria mais inclinada concentra a força de corte no ponto de contato da aresta, iniciando uma separação limpa das fibras em vez da deflexão elástica que causa desfiamento. Para rolos de lenços umedecidos impregnados com loção e com alta resistência coesiva, um bisel composto (alívio primário + secundário) proporciona a superfície de corte mais limpa com mínimo enrolamento da aresta durante ciclos de operação prolongados.\n\n## Tolerâncias dimensionais\n\n- **Desvio lateral:** ≤0,15 mm\n- **Desvio da borda:** ≤0,10 mm\n- **Paralelismo da face:** 0,05 mm\n- **Concentricidade (diâmetro externo em relação ao furo):** ≤0,30 mm\n- **Acabamento superficial:** Polimento espelhado (Ra ≤0,2 µm)\n\n## Compatibilidade com plataformas OEM\n\nAs serras para rolos de produtos higiênicos de não-tecido diferem nas especificações do furo e no diâmetro em relação às linhas de papel higiênico. Plataformas comuns:\n\n**Fameccanica (Itália):** Linhas de conversão de fraldas infantis e produtos de higiene feminina; diâmetros das lâminas normalmente variam de Ø400 a Ø550 mm, dependendo do formato do produto e do diâmetro do rolo.\n\n**GDM (Itália):** Linhas de alta velocidade para produtos de higiene; especificações das lâminas de acordo com o desenho do cliente.\n\n**Curt G. Joa (EUA):** Linhas norte-americanas de produtos para incontinência adulta e higiene feminina; especificações de furo no sistema imperial disponíveis.\n\n**Zuiko (Japão):** Produção de fraldas infantis; dimensões da lâmina de acordo com o desenho do OEM.\n\n**Fabricantes OEM chineses (Zlink, Dachang, fabricantes sediados em Quanzhou):** Especificações das lâminas fornecidas conforme desenho ou por engenharia reversa a partir de amostra.\n\nDiâmetro externo personalizado de Ø350 mm a Ø700 mm fabricado sob encomenda. Análise de desenhos e aprovação dimensional do primeiro artigo disponíveis.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1478,33 +1490,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "corrosion-coating",
-        tag: "COATINGS",
-        title: "TiN & Hard Chrome for Chemical Resistance",
+        tag: "REVESTIMENTOS",
+        title: "TiN e cromo duro para resistência química",
         description:
-          "Wet wipe and hygiene converting lines run continuous exposure to alcohols, surfactants, and preservatives that corrode bare tool steel edges within weeks. Our TiN PVD coating (HV 2300+) and hard chrome plating create a chemically inert barrier, blocking ingress at the cutting edge and extending the clean-running interval between regrinding cycles.",
+          "As linhas de produção de lenços umedecidos e produtos de higiene estão constantemente expostas a álcoois, surfactantes e conservantes que corroem as arestas de aço para ferramentas sem revestimento em questão de semanas. Nosso revestimento TiN PVD (HV 2300+) e o cromagem dura criam uma barreira quimicamente inerte, impedindo a penetração de substâncias na aresta de corte e prolongando o intervalo de operação sem problemas entre os ciclos de reafiação.",
       },
       {
         id: "nonwoven-bevel",
-        tag: "GEOMETRY",
-        title: "Synthetic-Fibre Bevel Profile",
+        tag: "GEOMETRIA",
+        title: "Perfil biselado de fibra sintética",
         description:
-          "Spunbond, meltblown, and SMS webs deflect elastically ahead of a tissue-spec bevel, causing visible fibre fraying on the cut face. We apply a steeper primary bevel (25°–35°) with a compound secondary relief that initiates clean fibre separation on first contact — eliminating the stringing and edge densification that drives packaging line rejects.",
+          "As telas spunbond, meltblown e SMS se deformam elasticamente antes de um chanfro específico para papel-toalha, causando desfiamento visível das fibras na superfície de corte. Aplicamos um bisel primário mais inclinado (25°–35°) com um relevo secundário composto que inicia a separação limpa das fibras logo no primeiro contato — eliminando o formação de fios e a densificação das bordas que causam rejeições na linha de embalagem.",
       },
       {
         id: "runout-hygiene",
-        tag: "PRECISION",
-        title: "≤0.15 mm Runout for Fraying-Free Cuts",
+        tag: "PRECISÃO",
+        title: "Desvio ≤ 0,15 mm para cortes sem desfiamento",
         description:
-          "Nonwoven logs are softer and more compressible than tissue logs. Any lateral blade wobble translates directly into a compressed, ragged cut face rather than a clean shear plane. Every blade is tension-leveled and CMM-verified to ≤0.15 mm lateral runout before dispatch, ensuring the blade enters the log at a consistent angle on every stroke.",
+          "As bobinas de tecido não tecido são mais macias e mais compressíveis do que as bobinas de papel-toalha. Qualquer oscilação lateral da lâmina resulta diretamente em uma superfície de corte comprimida e irregular, em vez de um plano de corte limpo. Cada lâmina é nivelada por tensão e verificada por CMM para um desvio lateral ≤0,15 mm antes da expedição, garantindo que a lâmina penetre na tora em um ângulo consistente a cada corte.",
       },
     ],
     dimensionLabels: {
-      col0: "Machine Platform / Product Format",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore / ID (mm)",
-      col3: "Thickness (mm)",
+      col0: "Plataforma da máquina / Formato do produto",
+      col1: "Diâmetro externo (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Reference dimensions for common nonwoven hygiene converting platforms. Bore patterns, keyways, and drive-pin holes manufactured to customer drawing. Custom OD Ø350–Ø700 mm available with 10-working-day lead time.",
+        "* Dimensões de referência para plataformas comuns de conversão de produtos higiênicos não tecidos. Padrões de furos, ranhuras de chaveta e furos para pinos de acionamento fabricados de acordo com o desenho do cliente. Diâmetros externos personalizados de Ø350 a Ø700 mm disponíveis com prazo de entrega de 10 dias úteis.",
     },
     standardDimensions: [
       {
@@ -1553,64 +1565,66 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why do my blades corrode quickly on our wet wipe converting line?",
+            "Por que minhas lâminas se corroem rapidamente na nossa linha de produção de lenços umedecidos?",
           answer:
-            "Wet wipe lines continuously expose blades to preservatives (phenoxyethanol), surfactants, and alcohol-based solutions at elevated humidity. Bare D2 tool steel develops micro-pitting at the cutting edge within weeks under these conditions, accelerating wear and creating a particulate contamination risk. The solution is a corrosion-resistant surface treatment: TiN PVD coating (2–3 µm, HV 2300+) provides a chemically inert barrier against alcohol and surfactant ingress, while hard chrome plating seals surface micro-pores against cleaning agent penetration during washdown cycles.",
+            "As linhas de produção de lenços umedecidos expõem continuamente as lâminas a conservantes (fenoxietanol), surfactantes e soluções à base de álcool em condições de umidade elevada. O aço para ferramentas D2, sem revestimento, desenvolve microcorrosão na aresta de corte em questão de semanas nessas condições, acelerando o desgaste e criando um risco de contaminação por partículas. A solução é um tratamento de superfície resistente à corrosão: o revestimento PVD de TiN (2–3 µm, HV 2300+) oferece uma barreira quimicamente inerte contra a penetração de álcool e surfactantes, enquanto o cromagem dura sela os microporos da superfície, impedindo a penetração de agentes de limpeza durante os ciclos de lavagem.",
         },
         {
           question:
-            "My blades are leaving frayed, stringy cut edges on spunbond nonwoven logs. What is causing this?",
+            "Minhas lâminas estão deixando bordas de corte desfiadas e fibrosas nos rolos de tecido não tecido spunbond. O que está causando isso?",
           answer:
-            "Fraying on spunbond PP or SMS substrates is caused by two factors: incorrect bevel geometry and/or excessive lateral runout. Synthetic fibres are elastic — they deflect ahead of a shallow tissue-spec bevel (15°–25°) instead of shearing cleanly. Nonwoven substrates require a steeper primary bevel (25°–35°) to concentrate cutting force at the fibre contact point. Additionally, lateral runout above 0.20 mm causes the blade to compress the log rather than shear it, producing ragged edges. Our nonwoven blades are CMM-verified to ≤0.15 mm lateral runout and ground with a compound bevel profile optimised for synthetic fibre.",
+            "O desgaste em substratos de PP spunbond ou SMS é causado por dois fatores: geometria incorreta do bisel e/ou desvio lateral excessivo. As fibras sintéticas são elásticas — elas se deformam antes de um bisel raso próprio para tecido (15°–25°), em vez de serem cortadas de forma limpa. Substratos não tecidos exigem um bisel primário mais acentuado (25°–35°) para concentrar a força de corte no ponto de contato com a fibra. Além disso, um desvio lateral acima de 0,20 mm faz com que a lâmina comprima a bobina em vez de cortá-la, produzindo bordas irregulares. Nossas lâminas para não tecidos são verificadas por CMM com desvio lateral ≤0,15 mm e retificadas com um perfil de bisel composto otimizado para fibras sintéticas.",
         },
         {
           question:
-            "Can you supply blades compatible with Fameccanica or GDM hygiene converting machines?",
+            "Vocês podem fornecer lâminas compatíveis com as máquinas de conversão para produtos de higiene da Fameccanica ou da GDM?",
           answer:
-            "Yes. We manufacture to customer drawing or sample for Fameccanica, GDM, Curt G. Joa, Zuiko, and Chinese domestic OEM platforms. Bore diameter, drive-pin hole pattern, OD, and thickness are all customisable. Send us your OEM drawing or a worn blade sample and we will provide a dimensional confirmation and first-article sign-off before full production.",
+            "Sim. Fabricamos de acordo com o desenho ou amostra do cliente para as marcas Fameccanica, GDM, Curt G. Joa, Zuiko e plataformas OEM do mercado interno chinês. O diâmetro interno, o padrão dos furos dos pinos de acionamento, o diâmetro externo e a espessura são todos personalizáveis. Envie-nos seu desenho OEM ou uma amostra de lâmina desgastada e forneceremos uma confirmação dimensional e a aprovação do primeiro artigo antes do início da produção em série.",
         },
         {
           question:
-            "What is the difference between TiN coating and hard chrome plating for hygiene blades?",
+            "Qual é a diferença entre o revestimento de TiN e o cromagem dura para lâminas de uso higiênico?",
           answer:
-            "TiN PVD (titanium nitride) is a thin, extremely hard coating (2–3 µm, HV 2300+) applied in a vacuum chamber. It provides an inert barrier against chemical corrosion, adds surface hardness that resists micro-abrasion from SAP particles in absorbent core lines, and extends edge service intervals. Hard chrome is a thicker electrodeposited layer (20–30 µm) that offers excellent corrosion resistance in high-humidity environments and reduces friction coefficient against synthetic fibre webs. For wet wipe lines with aggressive chemistry, TiN is the preferred option. For dry or semi-dry nonwoven lines in high-humidity mill environments, hard chrome is cost-effective.",
+            "O TiN PVD (nitreto de titânio) é um revestimento fino e extremamente duro (2–3 µm, HV 2300+) aplicado em uma câmara de vácuo. Ele proporciona uma barreira inerte contra a corrosão química, confere dureza à superfície que resiste à microabrasão causada por partículas de SAP nas linhas de núcleos absorventes e prolonga os intervalos de manutenção das bordas. O cromo duro é uma camada eletrodepositada mais espessa (20–30 µm) que oferece excelente resistência à corrosão em ambientes de alta umidade e reduz o coeficiente de atrito contra as teias de fibras sintéticas. Para linhas de lenços umedecidos com produtos químicos agressivos, o TiN é a opção preferida. Para linhas de não-tecidos secos ou semissecos em ambientes de fábrica com alta umidade, o cromo duro é uma opção econômica.",
         },
         {
           question:
-            "Do these blades work with in-line CBN sharpening systems on nonwoven lines?",
+            "Essas lâminas são compatíveis com sistemas de afiação CBN em linha em linhas de produção de não-tecidos?",
           answer:
-            "Most nonwoven hygiene converting log saws do not use continuous in-line CBN sharpening systems (unlike tissue lines). Blades are typically replaced on a scheduled interval rather than continuously dressed. However, if your line does use in-line CBN grinding, our D2 blades hardened to HRC 58–60 are compatible with standard CBN wheel specifications. The TiN coating will be removed by CBN contact at the cutting edge, which is normal — the protective benefit applies to the blade body, not the actively sharpened edge zone.",
+            "A maioria das serras circulares utilizadas na conversão de produtos higiênicos não tecidos não utiliza sistemas contínuos de afiamento em linha com CBN (ao contrário das linhas de produção de papel higiênico). As lâminas são normalmente substituídas em intervalos programados, em vez de serem afiadas continuamente. No entanto, se sua linha utilizar afiamento CBN em linha, nossas lâminas D2, temperadas a HRC 58–60, são compatíveis com as especificações padrão dos discos de CBN. O revestimento de TiN será removido pelo contato com o CBN na aresta de corte, o que é normal — a proteção se aplica ao corpo da lâmina, e não à zona da aresta que está sendo afiada ativamente.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Você é um fabricante ou uma empresa comercial?",
           answer:
-            "Direct manufacturer. We forge, grind, coat, and quality-inspect every blade in-house at our 15,000 m² facility in Ma'anshan, Anhui Province, under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
+            "Fabricante direto. Nós forjamos, retificamos, revestimos e inspecionamos a qualidade de cada lâmina internamente em nossas instalações de 15.000 m² em Ma’anshan, na província de Anhui, de acordo com a certificação ISO 9001:2015. Você se comunica diretamente com os engenheiros de produção que fabricaram suas lâminas — sem margem de lucro de revendedores.",
         },
         {
           question:
-            "Can you reverse-engineer a blade from a worn sample or OEM drawing?",
+            "É possível fazer a engenharia reversa de uma lâmina a partir de uma amostra desgastada ou de um desenho do fabricante original (OEM)?",
           answer:
-            "Yes. Send us your worn blade or OEM dimensional drawing and we will produce a CMM measurement report and dimensional confirmation before committing to production. First-article inspection reports are available on request for new tooling projects.",
+            "Sim. Envie-nos sua lâmina desgastada ou o desenho dimensional do fabricante original (OEM) e elaboraremos um relatório de medição por CMM e uma confirmação dimensional antes de dar início à produção. Relatórios de inspeção do primeiro artigo estão disponíveis mediante solicitação para novos projetos de ferramentas.",
         },
         {
-          question: "What is the minimum order quantity and lead time?",
+          question:
+            "Qual é a quantidade mínima de pedido e o prazo de entrega?",
           answer:
-            "Minimum order is typically 2–5 blades depending on diameter. Standard lead time is 10 working days from drawing sign-off. Rush orders can be accommodated — contact us with your timeline.",
+            "O pedido mínimo é normalmente de 2 a 5 lâminas, dependendo do diâmetro. O prazo de entrega padrão é de 10 dias úteis a partir da aprovação do desenho. Podemos atender a pedidos urgentes — entre em contato conosco informando seu prazo.",
         },
       ],
     },
   },
   {
     id: "paper-cutting-blades",
-    name: "Paper Cutting Blades",
-    fullName: "Premium Guillotine Paper Cutter Blades (HSS & TCT)",
+    name: "Lâminas para corte de papel",
+    fullName:
+      "Lâminas premium para cortadores de papel tipo guilhotina (HSS e TCT)",
     category: "shear_blades",
     sector: "paper",
-    categoryDisplay: "Paper Cutting Blades",
+    categoryDisplay: "Lâminas para corte de papel",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-    badge: "OEM Precision",
+    badge: "Precisão OEM",
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
@@ -1618,9 +1632,9 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
     description:
-      "Eliminate paper draw and dust with replacement guillotine blades for Polar, Wohlenberg, and Perfecta cutters. Available in 18% Tungsten High-Speed Steel (HSS) and Tungsten Carbide Tipped (TCT) inlays. Micro-ground to a precise 21° bevel with full-length face flatness ≤0.05 mm for perfectly square cuts on high-volume print runs.",
+      "Elimine o arrasto de papel e a poeira com a lâmina de reposição facas de guilhotina para cortadoras Polar, Wohlenberg e Perfecta. Disponível com inserções em aço rápido (HSS) com 18% de tungstênio e com ponta de carboneto de tungstênio (TCT). Micro-retificado com um bisel preciso de 21°, com planicidade da face em todo o comprimento ≤0,05 mm, para cortes perfeitamente retos em tiragens de grande volume.",
     fullDescription:
-      "Guillotine paper cutter replacement blades are consumed components whose alloy grade, edge geometry, and full-length dimensional accuracy directly determine cut quality across the entire ream stack—from 450mm office cutter blades to 2050mm double-beam commercial pressroom guillotines.\n\nSureay paper cutting blades are offered in three metallurgical grades, matched to cut volume, substrate, and total cost of ownership requirements:\n\n## Material Grades\n\n**Standard Tool Steel (T10, 9CrSi — HRC 57–60):** Cost-effective for moderate-volume print shops and finishing operations cutting bond paper, newsprint, and uncoated stock up to 80 gsm. T10 high-carbon steel is hardened to HRC 57–60 and provides reliable edge sharpness at the lowest unit cost. Suited to Polar, Schneider Senator, and Challenge 305 class machines in moderate daily-cycle environments.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** The premium choice for high-volume commercial printing, book publishing, and label-converting guillotines running multiple ream stacks per hour. M2 and SKH-51 HSS retain full hardness at the elevated cutting temperatures generated by high-cycle operation—delivering 4–6× longer service life between resharpening events compared to standard carbon steel blades. Recommended for coated art paper, board, laminated packaging stock, and multi-layer adhesive label sheets where edge wear accelerates rapidly.\n\n**TCT Inlay — Tungsten Carbide Tipped (YG15 / YG20):** Nitrogen furnace-brazed carbide edge inlay for the most abrasion-intensive substrates: carbonless copy paper (CBS coating), high-calcium-carbonate-filled packaging board, coated cartonboard, abrasive specialty papers, and fibre-reinforced technical papers. TCT blades outlast HSS on these substrates by a factor of 3–5× and maintain slit-edge quality well beyond the point where HSS would require resharpening.\n\n## Precision Grinding Standards\n\n- **Bevel angle:** 21° (standard guillotine geometry, single-bevel)\n- **Length tolerance:** +2 / −1 mm\n- **Width tolerance:** ±1 mm\n- **Edge thickness tolerance:** 0 / −0.1 mm\n- **Face flatness (full length):** ≤ 0.05 mm\n\nFlatness deviation above 0.08mm across the blade length causes uneven blade-to-sideboard contact, producing a tapered cut and requiring operator correction shims—a production inefficiency that accumulates to measurable downtime on high-volume cutting lines.\n\n## Machine Compatibility & Supply States\n\nStandard stock lengths from 450 mm to 2050 mm. Compatible with Polar 115/137/155/176/200 series, Schneider Senator, Perfecta, Wohlenberg, Prism, and Challenge guillotine brands. Custom lengths, mounting hole patterns, and back-edge profiles manufactured to drawing within 7 working days.\n\n**Available supply conditions:** Sharp-ground edge (ready to install) / Semi-finished edge (for on-site final dressing to machine specification) / Blank knife (unground, for customers with in-house regrinding capability).",
+      "As lâminas de reposição para cortadores de papel tipo guilhotina são componentes de consumo cujo tipo de liga, geometria do fio de corte e precisão dimensional em todo o comprimento determinam diretamente a qualidade do corte em toda a pilha de resmas — desde lâminas para cortadores de escritório de 450 mm até guilhotinas comerciais de dupla viga para salas de impressão de 2.050 mm.\n\nAs lâminas de corte de papel da Sureay são oferecidas em três classes metalúrgicas, adequadas aos requisitos de volume de corte, substrato e custo total de propriedade:\n\n## Classes de Material\n\n**Aço para ferramentas padrão (T10, 9CrSi — HRC 57–60):** Custo-benefício para gráficas de volume moderado e operações de acabamento que cortam papel bond, papel de jornal e papéis não revestidos de até 80 g/m². O aço de alto carbono T10 é temperado a HRC 57–60 e oferece afiação confiável do fio com o menor custo unitário. Adequado para máquinas das classes Polar, Schneider Senator e Challenge 305 em ambientes com ciclo diário moderado.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** A escolha premium para impressão comercial de alto volume, publicação de livros e guilhotinas de conversão de etiquetas que processam várias pilhas de resmas por hora. As lâminas M2 e SKH-51 HSS mantêm a dureza total nas altas temperaturas de corte geradas pela operação de alto ciclo — proporcionando uma vida útil 4 a 6 vezes maior entre os reafiamamentos, em comparação com lâminas padrão de aço carbono. Recomendadas para papel arte revestido, cartolina, materiais de embalagem laminados e folhas de etiquetas adesivas multicamadas, onde o desgaste das bordas se acelera rapidamente.\n\n**Incrustação TCT — Ponta de carboneto de tungstênio (YG15 / YG20):** Incrustação de ponta de carboneto soldada em forno a nitrogênio para os substratos que apresentam maior abrasão: papel autocopiativo (revestimento CBS), papelão de embalagem com alto teor de carbonato de cálcio, papelão revestido, papéis especiais abrasivos e papéis técnicos reforçados com fibras. As lâminas TCT duram de 3 a 5 vezes mais do que as de HSS nesses substratos e mantêm a qualidade da borda de corte muito além do ponto em que as lâminas de HSS precisariam ser reafiasadas.\n\n## Padrões de retificação de precisão\n\n- **Ângulo de bisel:** 21° (geometria padrão de guilhotina, bisel único)\n- **Tolerância de comprimento:** +2 / −1 mm\n- **Tolerância de largura:** ±1 mm\n- **Tolerância de espessura da aresta:** 0 / −0,1 mm\n- **Planicidade da face (comprimento total):** ≤ 0,05 mm\n\nUm desvio de planicidade superior a 0,08 mm ao longo do comprimento da lâmina causa contato irregular entre a lâmina e a placa lateral, produzindo um corte cônico e exigindo o uso de calços de correção pelo operador — uma ineficiência de produção que se acumula, resultando em tempo de inatividade mensurável em linhas de corte de alto volume.\n\n## Compatibilidade com máquinas e condições de fornecimento\n\nComprimentos padrão em estoque de 450 mm a 2.050 mm. Compatível com as séries Polar 115/137/155/176/200 e com as marcas de guilhotinas Schneider Senator, Perfecta, Wohlenberg, Prism e Challenge. Comprimentos personalizados, padrões de furos de montagem e perfis de borda traseira fabricados conforme desenho em até 7 dias úteis.\n\n**Condições de fornecimento disponíveis:** Lâmina afiada (pronta para instalação) / Lâmina semiacabada (para acabamento final no local, de acordo com as especificações da máquina) / Lâmina em bruto (não afiada, para clientes com capacidade interna de reafiamento).",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1661,34 +1675,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "tct-inlay",
-        tag: "METALLURGY",
-        title: "Tungsten Carbide Inlays",
+        tag: "METALURGIA",
+        title: "Incrustações de carboneto de tungstênio",
         description:
-          "Standard blades dull rapidly when cutting abrasive, calcium-carbonate-filled papers. Our Tungsten Carbide Tipped (TCT) blades maintain their razor edge 3 – 5× longer than HSS, drastically reducing machine downtime for blade changes on carbonless copy and coated art stock.",
+          "As lâminas padrão perdem o fio rapidamente ao cortar papéis abrasivos com alto teor de carbonato de cálcio. Nossas lâminas com ponta de carboneto de tungstênio (TCT) mantêm seu fio afiado de 3 a 5 vezes mais tempo do que as de aço rápido (HSS), reduzindo drasticamente o tempo de inatividade da máquina para trocas de lâmina em papéis autocopiativos e papéis artísticos revestidos.",
       },
       {
         id: "face-flatness",
-        tag: "PRECISION",
-        title: "Zero Paper Draw",
+        tag: "PRECISÃO",
+        title: "Sorteio “Zero Papel”",
         description:
-          "If a blade is bowed even slightly, hydraulic pressure causes it to deflect mid-cut, producing unequal sizes from the top to the bottom of the stack. We grind our blades to a full-length face flatness of ≤0.05 mm to ensure flawlessly straight vertical cuts through every ream.",
+          "Se uma lâmina estiver curvada, mesmo que ligeiramente, a pressão hidráulica faz com que ela se desvie no meio do corte, resultando em tamanhos desiguais da parte superior à parte inferior da pilha. Afiamos nossas lâminas para obter uma planicidade da face em todo o comprimento de ≤0,05 mm, a fim de garantir cortes verticais perfeitamente retos em todas as resmas.",
       },
       {
         id: "oem-compatibility",
-        tag: "FITMENT",
-        title: "Exact OEM Replacement",
+        tag: "COMPATIBILIDADE",
+        title: "Substituição exata do fabricante original (OEM)",
         description:
-          "We hold engineering blueprints for Polar, Wohlenberg, Perfecta, and Schneider Senator guillotines. Mounting holes, threads, and back-edge slots are CNC-machined for a guaranteed drop-in fit — no shimming or modification required.",
+          "Dispomos de desenhos técnicos para guilhotinas das marcas Polar, Wohlenberg, Perfecta e Schneider Senator. Os orifícios de montagem, as roscas e as ranhuras da borda traseira são usinados por CNC para garantir um encaixe perfeito — sem necessidade de calços ou modificações.",
       },
     ],
     dimensionLabels: {
-      col0: "Specification (mm)",
-      col1: "Length",
-      col2: "Width",
-      col3: "Edge Thickness",
-      col4: "Body Thickness",
+      col0: "Especificações (mm)",
+      col1: "Comprimento",
+      col2: "Largura",
+      col3: "Espessura da borda",
+      col4: "Espessura do corpo",
       caption:
-        "* Standard sizes listed above. Custom dimensions available on request.",
+        "* Tamanhos padrão listados acima. Dimensões personalizadas disponíveis mediante solicitação.",
     },
     standardDimensions: [
       {
@@ -1757,76 +1771,77 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I choose M2 HSS or Tungsten Carbide Tipped (TCT) blades for my guillotine?",
+            "Devo escolher lâminas M2 HSS ou com ponta de carboneto de tungstênio (TCT) para minha guilhotina?",
           answer:
-            "M2 HSS is the correct choice for coated art paper, bond paper, and standard label stock in high-volume print shops — delivering 4–6× longer life than standard carbon steel. Upgrade to TCT (YG15/YG20 carbide inlay) only when cutting carbonless copy paper, high-calcium-carbonate packaging board, or abrasive specialty papers. TCT outperforms HSS 3–5× on these substrates but carries a higher unit cost.",
+            "A M2 HSS é a escolha certa para papel artístico revestido, papel bond e papel para etiquetas padrão em gráficas de alto volume — proporcionando uma vida útil de 4 a 6 vezes maior do que o aço carbono padrão. Opte pelo TCT (inserção de carboneto YG15/YG20) apenas ao cortar papel autocopiativo, papelão de embalagem com alto teor de carbonato de cálcio ou papéis especiais abrasivos. O TCT apresenta desempenho 3 a 5 vezes superior ao HSS nesses substratos, mas tem um custo unitário mais elevado.",
         },
         {
           question:
-            "How does your blade geometry prevent dust when guillotining thick paper reams?",
+            "Como a geometria da sua lâmina evita a formação de poeira ao cortar resmas de papel grosso com a guilhotina?",
           answer:
-            "We grind every guillotine blade to a precision 21° bevel with face flatness ≤0.05mm across the full length. The sharp, shallow bevel shears each sheet progressively through the ream rather than crushing through the stack — dust is generated by dull or incorrectly bevelled edges that compress paper fibres instead of shearing them. HSS M2 and TCT grades retain this precision bevel geometry significantly longer than carbon steel, so fewer resharpening events mean fewer dust-generating dull-blade cutting cycles per year.",
+            "Afiamos cada lâmina de guilhotina com um bisel de precisão de 21°, com planicidade da face ≤0,05 mm em todo o comprimento. O bisel afiado e raso corta cada folha progressivamente ao longo da resma, em vez de esmagá-la — a poeira é gerada por bordas cegas ou com bisel incorreto, que comprimem as fibras do papel em vez de cortá-las. As classes HSS M2 e TCT mantêm essa geometria de bisel de precisão por muito mais tempo do que o aço carbono; assim, menos operações de reafiação significam menos ciclos de corte com lâminas cegas — que geram poeira — por ano.",
         },
         {
           question:
-            "Can you supply blades in the exact length and mounting hole pattern my Polar or Wohlenberg machine requires?",
+            "Vocês podem fornecer lâminas com o comprimento exato e o padrão de furos de montagem que minha máquina Polar ou Wohlenberg exige?",
           answer:
-            "Yes. We stock standard lengths from 450mm to 2050mm to cover Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta, and Challenge series guillotines. Custom lengths, back-edge profiles, and mounting hole patterns are manufactured to drawing within 7 working days. Blades can be supplied sharp-ground, semi-finished, or blank to suit your on-site regrinding setup.",
+            "Sim. Temos em estoque comprimentos padrão de 450 mm a 2.050 mm para atender às guilhotinas das séries Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta e Challenge. Comprimentos personalizados, perfis da borda traseira e padrões de furos de montagem são fabricados conforme desenho em até 7 dias úteis. As lâminas podem ser fornecidas afiadas, semiacabadas ou em bruto, para se adequarem à sua configuração de reafiamento no local.",
         },
         {
           question:
-            "How should guillotine blades be stored and handled to prevent premature edge damage before installation?",
+            "Como o facas de guilhotina deve ser armazenado e manuseado para evitar danos prematuros nas bordas antes da instalação?",
           answer:
-            "Store blades horizontally in original packaging on padded wooden cradles — never stack vertically or allow metal-to-metal contact on the cutting edge. Use plastic or rubber edge guards during handling. Inspect under a 10× loupe before mounting: a 0.2mm edge nick doubles local wear rate within the first 10,000 cuts. Avoid dragging the edge against guide rails during installation.",
+            "Armazene as lâminas horizontalmente na embalagem original, sobre suportes de madeira acolchoados — nunca as empilhe verticalmente nem permita o contato metal com metal na borda de corte. Utilize protetores de borda de plástico ou borracha durante o manuseio. Inspecione com uma lupa de 10× antes da montagem: uma lasca de 0,2 mm na borda dobra a taxa de desgaste local nos primeiros 10.000 cortes. Evite arrastar a borda contra os trilhos-guia durante a instalação.",
         },
         {
           question:
-            "Can you supply paper guillotine blades in semi-finished condition for in-house regrinding?",
+            "Vocês podem fornecer o papel facas de guilhotina em estado semiacabado para remoagem interna?",
           answer:
-            "Yes. Semi-finished blanks are available in all standard lengths with the body ground to final dimensions but the edge left in pre-ground condition for final dressing to your specific bevel angle and finish. This supply state suits print shops with surface grinding capability, reduces unit cost by 15–20%, and gives full control over final edge geometry and sharpness.",
+            "Sim. As peças semiacabadas estão disponíveis em todos os comprimentos padrão, com o corpo retificado nas dimensões finais, mas com a borda deixada na condição de pré-retificação para o acabamento final de acordo com seu ângulo de bisel e acabamento específicos. Esse estado de fornecimento é adequado para gráficas com capacidade de retificação de superfícies, reduz o custo unitário em 15 a 20% e oferece controle total sobre a geometria e o fio da borda final.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question: "Vocês são uma empresa comercial ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+            "Ao contrário do temperamento convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, aumentando a resistência ao desgaste em até 40% e garantindo uma dureza uniforme em toda a aresta de corte.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo padrão de entrega das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com ferramentas até que o ajuste seja confirmado.",
         },
       ],
     },
   },
   {
     id: "single-shaft-shredder-blades",
-    name: "Single Shaft Rotor Inserts",
-    fullName: "High-Impact Single Shaft Shredder Rotor Inserts (Crown Cutters)",
+    name: "Inserções para rotor de eixo único",
+    fullName:
+      "Inserções para rotores de trituradores de eixo único de alto impacto (cortadores de coroa)",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Rotor Inserts",
+    categoryDisplay: "Inserções para rotores de eixo único",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
-    badge: "Heavy Duty",
+    badge: "Para serviços pesados",
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
@@ -1834,9 +1849,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "DC53, D2 (1.2379), and Cr12MoV cold-work tool steel rotor inserts for low-speed, high-torque single-shaft shredders. Vacuum-hardened and cryogenically processed to HRC 58–62, CNC-machined to ±0.02mm face tolerance. Features 4-way indexable square geometry. Drop-in compatible with Vecoplan, Weima, Lindner, and Zerma platforms.",
+      "Inserções de rotor DC53, D2 (1.2379) e Cr12MoV aço-ferramenta para trabalho a frio para trituradores de eixo único de baixa velocidade e alto torque. Têm endurecimento a vácuo e tratamento criogênico para atingir HRC 58–62, com usinagem CNC para tolerância de face de ±0,02 mm. Apresentam geometria quadrada indexável em 4 posições. Compatíveis diretamente com as plataformas Vecoplan, Weima, Lindner e Zerma.",
     fullDescription:
-      "Single-shaft shredders operate at 80–150 RPM under extremely high torque, driving block-style rotor inserts into a stationary bed knife at tight shear clearances of 0.2–1.5mm. At these mechanical parameters, the primary cause of blade failure is impact-induced edge microchipping or thermal softening from sustained high-cycle torque peaks, rather than progressive wear.\n\nSureay addresses these failure modes through strict metallurgy. Standard D2 (1.2379) tool steel inserts provide excellent wear resistance at a cost-effective price point. For applications involving hard engineering plastics (PA66-GF, PC, PEEK) or heavy purge lumps, DC53 is specified—delivering 17% higher transverse rupture strength to prevent edge chipping under heavy impact.\n\n## ±0.02mm CNC Machining Tolerance\n\nCutting clearance between the rotor insert face and the stationary bed knife governs shred particle size and motor load. Inconsistent clearances cause material wrap-back and rotor stalls. Sureay rotor inserts are CNC-machined to ±0.02mm face flatness, ensuring a perfect and repeatable shear gap across the entire rotor length when paired with a quality bed knife.\n\n## 4-Way Indexable Geometry\n\nThe symmetrical square block format provides four independent cutting edges per insert. When one edge dulls, the operator loosens the countersunk mounting bolt, rotates the insert 90° to a fresh edge, and retorques. A full rotor complement can be indexed rapidly without shaft extraction, effectively reducing annual tooling expenditure by 75%.\n\n## Deep Cryogenic Treatment (−196°C)\n\nAll Sureay single-shaft inserts undergo vacuum hardening to HRC 58–62, followed by a mandatory deep cryogenic soak at −196°C. This critical final stage eliminates retained austenite and stabilizes the martensitic microstructure, drastically reducing the risk of bulk fracture when the rotor encounters unexpected foreign metal inclusions.",
+      "Os trituradores de eixo único operam a 80–150 RPM sob torque extremamente alto, impulsionando insertos de rotor em formato de bloco contra uma lâmina fixa, com folgas de cisalhamento reduzidas de 0,2–1,5 mm. Com esses parâmetros mecânicos, a principal causa de falha das lâminas é a microfratura nas bordas induzida por impacto ou o amolecimento térmico causado por picos de torque de alto ciclo sustentados, e não o desgaste progressivo.\n\nA Sureay resolve esses modos de falha por meio de uma metalurgia rigorosa. Os insertos de aço para ferramentas D2 (1.2379) padrão oferecem excelente resistência ao desgaste a um preço acessível. Para aplicações envolvendo plásticos de engenharia duros (PA66-GF, PC, PEEK) ou pedaços volumosos de purga, especifica-se o DC53 — que oferece resistência à ruptura transversal 17% maior para evitar lascas nas arestas sob forte impacto.\n\n## Tolerância de usinagem CNC de ±0,02 mm\n\nA folga de corte entre a face da pastilha do rotor e a lâmina fixa determina o tamanho das partículas trituradas e a carga do motor. Folgas inconsistentes causam o retorno do material e o travamento do rotor. As pastilhas de rotor da Sureay são usinadas em CNC com planicidade da face de ±0,02 mm, garantindo uma folga de cisalhamento perfeita e repetível em todo o comprimento do rotor quando combinadas com uma lâmina fixa de qualidade.\n\n## Geometria indexável em 4 direções\n\nO formato simétrico de bloco quadrado oferece quatro arestas de corte independentes por inserto. Quando uma aresta fica cega, o operador afrouxa o parafuso de montagem escareado, gira o inserto 90° para uma aresta nova e reaplica o torque. Um conjunto completo de rotores pode ser indexado rapidamente sem a necessidade de extração do eixo, reduzindo efetivamente as despesas anuais com ferramentas em 75%.\n\n## Tratamento criogênico profundo (−196 °C)\n\nTodos os insertos de eixo único da Sureay passam por um processo de endurecimento a vácuo até HRC 58–62, seguido por um tratamento criogênico profundo obrigatório a −196 °C. Essa etapa final crítica elimina a austenita retida e estabiliza a microestrutura martensítica, reduzindo drasticamente o risco de fratura em massa quando o rotor encontra inclusões metálicas estranhas inesperadas.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1891,33 +1906,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "indexable-design",
-        tag: "TCO REDUCTION",
-        title: "4-Way Indexable Edges",
+        tag: "REDUÇÃO DO CUSTO TOTAL DE POSSE (TCO)",
+        title: "Lâminas indexáveis em 4 posições",
         description:
-          "The symmetrical square design allows for a 90° rotation when dull. This quadruples the lifespan of a single blade, cutting replacement costs by 75% and minimizing maintenance downtime.",
+          "O design quadrado simétrico permite uma rotação de 90° quando a lâmina fica cega. Isso quadruplica a vida útil de uma única lâmina, reduzindo os custos de reposição em 75% e minimizando o tempo de inatividade para manutenção.",
       },
       {
         id: "concave-profile",
-        tag: "SHEAR EFFICIENCY",
-        title: "Aggressive Concave Profiling",
+        tag: "EFICIÊNCIA DE CORTE",
+        title: "Perfil côncavo agressivo",
         description:
-          "Precision CNC-machined concave faces ensure an aggressive bite into smooth, dense plastic lumps, preventing material from bouncing or bridging on the rotor during low-speed shredding.",
+          "As faces côncavas usinadas com precisão por CNC garantem uma penetração agressiva em pedaços de plástico lisos e densos, impedindo que o material salte ou forme pontes no rotor durante a trituração em baixa velocidade.",
       },
       {
         id: "cryo-treatment",
-        tag: "EXTREME RELIABILITY",
-        title: "Deep Cryogenic Tempering",
+        tag: "CONFIABILIDADE EXTREMA",
+        title: "Têmpera criogênica profunda",
         description:
-          "Processed at −196°C to eliminate internal residual stress. This guarantees the blade will absorb massive kinetic shocks without shattering when hitting hidden metal inclusions.",
+          "Submetida a um tratamento a −196 °C para eliminar tensões residuais internas. Isso garante que a lâmina absorva choques cinéticos intensos sem se quebrar ao atingir inclusões metálicas ocultas.",
       },
     ],
     dimensionLabels: {
-      col1: "Insert Dimensions (L × W × T)",
-      col2: "Bolt Size",
-      col3: "Insert Profile",
-      col4: "Typical OEM Platform",
+      col1: "Dimensões da inserção (C × L × P)",
+      col2: "Tamanho do parafuso",
+      col3: "Inserir perfil",
+      col4: "Plataforma típica de OEM",
       caption:
-        "* Stator bed knives and custom rotor blade profiles available. Compatible with major global single-shaft shredder brands.",
+        "* Estão disponíveis facas de base do estator e perfis personalizados de lâminas do rotor. Compatível com as principais marcas mundiais de trituradores de eixo único.",
     },
     standardDimensions: [
       {
@@ -1971,67 +1986,69 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Which alloy offers better edge retention for cutting rigid purges: D2 or DC53?",
+            "Qual liga oferece melhor retenção do fio de corte para o corte de resíduos rígidos: D2 ou DC53?",
           answer:
-            "For dense injection-moulding purges and thick-wall HDPE on single-shaft rotors at 80–120 RPM, DC53 consistently outperforms D2. Single-shaft impact loading exposes DC53's 17% higher transverse rupture strength, resisting the micro-chipping at the cutting face that D2 typically develops on rigid purge material after 300–500 operating hours.",
+            "Em purgas densas de moldagem por injeção e HDPE de parede espessa em rotores de eixo único a 80–120 RPM, o DC53 apresenta desempenho consistentemente superior ao do D2. A carga de impacto em rotores de eixo único revela que o DC53 possui uma resistência à ruptura transversal 17% maior, resistindo às microfraturas na face de corte que o D2 normalmente apresenta em materiais de purga rígidos após 300–500 horas de operação.",
         },
         {
-          question: "What causes material wrap-back and rotor stalling?",
+          question: "O que causa o retorno do material e o bloqueio do rotor?",
           answer:
-            "Wrap-back is usually caused by inconsistent face flatness across the rotor insert stack, creating uneven knife-to-bed clearance. Material passes through wide gaps instead of being sheared, circulates back, and clogs the rotor pocket. Our inserts are CNC-machined to ±0.02mm face flatness to eliminate this.",
-        },
-        {
-          question:
-            "How does the four-edge indexable design reduce tooling costs?",
-          answer:
-            "Each square insert has four independent cutting edges. When one edge dulls, loosen the single mounting bolt, rotate the insert 90° to a fresh edge, and retorque. This quadruples the effective service life per blade purchased, reducing annual tooling expenditure by approximately 75% versus non-indexable alternatives.",
+            "O “wrap-back” geralmente é causado pela falta de uniformidade na planicidade da face ao longo da pilha de insertos do rotor, o que gera uma folga irregular entre a lâmina e a base. O material passa por aberturas largas em vez de ser cortado, circula de volta e obstrui o compartimento do rotor. Nossos insertos são usinados em CNC com planicidade da face de ±0,02 mm para eliminar esse problema.",
         },
         {
           question:
-            "What insert geometry is required for shredding large-format IBC totes and HDPE drums?",
+            "De que forma o design com quatro arestas indexáveis reduz os custos com ferramentas?",
           answer:
-            "For thick-wall containers, specify concave-faced inserts (50×50mm or 60×60mm). The concave profile creates a positive rake geometry, preventing the blade from skiving across the smooth HDPE surface at initial impact and ensuring immediate penetration during the downstroke.",
+            "Cada pastilha quadrada possui quatro arestas de corte independentes. Quando uma aresta ficar cega, afrouxe o único parafuso de fixação, gire a pastilha 90° para expor uma aresta nova e reaparafuse com o torque adequado. Isso quadruplica a vida útil efetiva por lâmina adquirida, reduzindo os gastos anuais com ferramentas em aproximadamente 75% em comparação com alternativas não indexáveis.",
         },
         {
-          question: "Can Sureay supply the matching stationary bed knife?",
+          question:
+            "Qual geometria de inserto é necessária para triturar caixas IBC de grande formato e tambores de HDPE?",
           answer:
-            "Yes. Stationary bed knives are manufactured as matched sets with rotor inserts, with the clearance face ground to the same ±0.02mm tolerance. A matched bed knife eliminates the clearance guesswork introduced when sourcing rotor inserts and bed knives from separate suppliers.",
+            "Para recipientes de parede espessa, especifique insertos com face côncava (50 × 50 mm ou 60 × 60 mm). O perfil côncavo cria uma geometria de inclinação positiva, impedindo que a lâmina deslize pela superfície lisa do HDPE no impacto inicial e garantindo a penetração imediata durante o movimento descendente.",
+        },
+        {
+          question: "A Sureay pode fornecer a lâmina fixa correspondente?",
+          answer:
+            "Sim. As lâminas fixas são fabricadas em conjuntos combinados com os insertos do rotor, com a superfície de folga retificada com a mesma tolerância de ±0,02 mm. Uma lâmina fixa combinada elimina as incertezas quanto à folga que surgem quando os insertos do rotor e as lâminas fixas são adquiridos de fornecedores diferentes.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Vocês são uma empresa de comércio ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement inserts typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders.",
-        },
-        {
-          question: "Can we trial a sample set before a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 inserts) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
+            "Sim, exportamos para mais de 50 países. As pastilhas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Podemos testar um lote de amostras antes de fazer um pedido de produção em grande escala?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 insertos) para verificação do ajuste na máquina e testes de vida útil das arestas. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis.",
+        },
+        {
+          question:
+            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
+          answer:
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
         },
       ],
     },
   },
   {
     id: "single-shaft-bed-knives",
-    name: "Single Shaft Bed Knives",
-    fullName: "Single Shaft Shredder Bed Knives (Stator Knives)",
+    name: "Facas de base de eixo único",
+    fullName: "Facas fixas para trituradores de eixo único (facas do estator)",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Bed Knives",
+    categoryDisplay: "Facas de base de eixo único",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-    badge: "Precision Ground",
+    badge: "Retificado com precisão",
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
@@ -2039,9 +2056,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Heavy-duty stator knives (bed knives) for single-shaft shredders. Manufactured from D2 (1.2379) and specialized high-alloy steels. Press-quenched and precision-ground to strict straightness tolerances (≤ 0.05mm/m) to ensure uniform rotor-to-bed shear clearance. Custom slotted hole patterns for exact clearance adjustment. Compatible with Vecoplan, Weima, Lindner, and Zerma.",
+      "Lâminas de estator para serviços pesados (lâminas de base) para trituradores de eixo único. Fabricadas em D2 (1.2379) e aços de alta liga especializados. Têm endurecimento por prensagem e retificação de precisão, com tolerâncias rigorosas de retidão (≤ 0,05 mm/m), para garantir uma folga de cisalhamento uniforme entre o rotor e a base. Padrões de furos com ranhuras personalizados para ajuste exato da folga. Compatíveis com Vecoplan, Weima, Lindner e Zerma.",
     fullDescription:
-      "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Em um sistema de trituração de eixo único, a lâmina fixa (estator) atua como a borda rígida de contra-corte contra a qual as pastilhas rotativas cortam o material. Como essas lâminas abrangem toda a largura do rotor do triturador — frequentemente ultrapassando 2.000 mm de comprimento —, sua fabricação exige controle absoluto sobre a distorção térmica.\n\n## A importância da retidão\n\nUma lâmina fixa empenada é a principal causa da ineficiência do triturador. Se a lâmina se curvar, a folga de corte torna-se irregular: muito apertada no centro (correm-se riscos de colisão catastrófica com o rotor) e muito folgada nas extremidades (causando o retorno do material e derretimento por atrito). As facas de base da Sureay passam por um processo especializado de têmpera por prensagem durante o tratamento térmico, seguido por retificação de superfície de precisão. Garantimos uma tolerância de retidão de ≤ 0,05 mm por metro linear, assegurando uma folga de corte perfeitamente uniforme em todo o rotor.\n\n## Endurecimento profundo para múltiplas retificações\n\nAo contrário das pastilhas do rotor, que são descartadas ou indexadas, as facas de base pesadas representam um investimento de capital significativo e devem ser reafiáveis. Utilizamos o tratamento térmico a vácuo para alcançar uma dureza uniforme de HRC 56–60 em toda a seção transversal da lâmina, não apenas na superfície. Isso permite que os operadores reafiem a aresta chanfrada várias vezes sem expor um núcleo macio, maximizando a vida útil total da lâmina.\n\n## Montagem com ranhuras e furos alargados\n\nManter a folga de cisalhamento ideal de 0,2 mm a 1,0 mm é fundamental, pois tanto as lâminas do rotor quanto as do estator sofrem desgaste. Nossas lâminas de base apresentam orifícios com ranhuras usinados com precisão por CNC ou furos cônicos superdimensionados, projetados para se adequarem perfeitamente aos mecanismos de ajuste da sua máquina OEM. Isso garante que as equipes de manutenção possam avançar a lâmina de base com precisão e travá-la com segurança mesmo sob forte vibração.\n\n## Encomenda do conjunto completo de peças de desgaste\n\nA folga de cisalhamento é definida por duas peças, não por uma. Substituir uma faca de base enquanto as inserções do rotor desgastadas permanecem no eixo faz com que a folga de 0,2 mm a 1,0 mm fique fora das especificações em todas as posições das inserções, e a nova lâmina da faca de base arcar com a carga desigual. As pastilhas do rotor, os suportes da lâmina, as barras de fixação, os calços de ajuste e os espaçadores são fabricados internamente e enviados no mesmo pedido — adquirir o conjunto de três fornecedores significa três acumulações de tolerância, e a folga que pode ser alcançada na remontagem é limitada pela mais folgada delas.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2096,40 +2113,40 @@ export const blades: Blade[] = [
     components: [
       {
         id: "straightness-control",
-        tag: "TOLERANCE",
-        title: "Zero-Distortion Straightness",
+        tag: "TOLERÂNCIA",
+        title: "Retilineidade sem distorção",
         description:
-          "Press-quenched and precision-ground to eliminate bowing. A perfectly straight bed knife guarantees a uniform shear gap, preventing material from slipping through uncut.",
+          "Têm endurecimento por prensagem e retificação de precisão para eliminar a curvatura. Uma lâmina fixa perfeitamente reta garante uma folga de corte uniforme, impedindo que o material escorregue sem ser cortado.",
       },
       {
         id: "deep-hardening",
-        tag: "LIFESPAN",
-        title: "Through-Hardened Core",
+        tag: "EXPERIÊNCIA DE VIDA",
+        title: "Núcleo temperado em toda a sua extensão",
         description:
-          "Vacuum heat-treated to ensure consistent hardness (HRC 56–60) deep into the core. You can regrind the bevel multiple times without performance loss.",
+          "Submetido a tratamento térmico a vácuo para garantir dureza consistente (HRC 56–60) até o centro do material. É possível reafiar o fio várias vezes sem perda de desempenho.",
       },
       {
         id: "adjustable-mounting",
-        tag: "MAINTENANCE",
-        title: "Precision Adjustment Slots",
+        tag: "MANUTENÇÃO",
+        title: "Ranhuras de ajuste de precisão",
         description:
-          "CNC-milled mounting slots allow technicians to easily advance the bed knife toward the rotor to compensate for wear, maintaining peak shredding efficiency.",
+          "As ranhuras de montagem usinadas por CNC permitem que os técnicos aproximem facilmente a lâmina fixa do rotor para compensar o desgaste, mantendo a eficiência máxima de trituração.",
       },
       {
         id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
+        tag: "FORNECIMENTO",
+        title: "Conjunto completo de lâminas de corte",
         description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
+          "A folga de cisalhamento é definida conjuntamente pela pastilha do rotor e pela lâmina fixa. As pastilhas do rotor, os suportes de lâmina, as barras de fixação e os calços de ajuste correspondentes são fabricados internamente e enviados em um único pedido, de modo que todo o conjunto de peças de desgaste seja substituído em uma única parada da linha de produção.",
       },
     ],
     dimensionLabels: {
-      col0: "Overall Length (mm)",
-      col1: "Width (mm)",
-      col2: "Thickness (mm)",
-      col3: "Hole / Mounting Configuration",
+      col0: "Comprimento total (mm)",
+      col1: "Largura (mm)",
+      col2: "Espessura (mm)",
+      col3: "Configuração de furos / montagem",
       caption:
-        "* Bed knives are highly machine-specific. Standard reference sizes shown in mm — we manufacture to exact OEM drawings or custom customer specs. Single-piece seamless up to 3,500 mm.",
+        "* As lâminas de base são altamente específicas para cada máquina. As dimensões padrão de referência são apresentadas em mm — fabricamos de acordo com desenhos exatos do fabricante original (OEM) ou com especificações personalizadas do cliente. Peças únicas sem emendas de até 3.500 mm.",
     },
     standardDimensions: [
       {
@@ -2178,62 +2195,65 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is the straightness tolerance of a bed knife so important?",
+            "Por que a tolerância de retidão de uma lâmina fixa é tão importante?",
           answer:
-            "If a bed knife is warped by even 0.5mm, the clearance between the rotor inserts and the bed knife becomes inconsistent. Where the gap is too tight, the rotor knives will strike the bed knife, causing catastrophic damage. Where the gap is too wide, material will fold and wrap around the rotor instead of being sheared. Our ≤ 0.05mm/m straightness tolerance prevents both issues.",
-        },
-        {
-          question: "How many times can a Sureay bed knife be reground?",
-          answer:
-            "Because we through-harden our bed knives (ensuring the core is as hard as the surface), they can be reground repeatedly until the dimensional limit of the machine's adjustment mechanism is reached. Typically, a heavy-duty D2 bed knife can undergo 5 to 10 regrind cycles depending on the depth of wear.",
+            "Se uma lâmina fixa estiver empenada, mesmo que seja apenas 0,5 mm, a folga entre as lâminas do rotor e a lâmina fixa torna-se irregular. Nos pontos em que a folga for muito estreita, as lâminas do rotor baterão na lâmina fixa, causando danos catastróficos. Nos pontos em que a folga for muito ampla, o material se dobrará e se enrolará ao redor do rotor, em vez de ser cortado. Nossa tolerância de retidão de ≤ 0,05 mm/m evita ambos os problemas.",
         },
         {
           question:
-            "How do I ensure the replacement bed knife aligns with my machine's adjustment pushers?",
+            "Quantas vezes uma lâmina fixa da Sureay pode ser reafiada?",
           answer:
-            "Bed knives utilize slotted holes or specific counter-bore patterns to integrate with the shredder's rear adjustment bolts (pushers). We maintain a vast database of OEM drawings for brands like Weima, Vecoplan, and Lindner. Supplying us with your machine model or a basic drawing ensures the slots are milled to the exact OEM coordinates.",
+            "Como realizamos o endurecimento completo de nossas lâminas de base (garantindo que o núcleo tenha a mesma dureza da superfície), elas podem ser reafiadas repetidamente até que seja atingido o limite dimensional do mecanismo de ajuste da máquina. Normalmente, uma lâmina de base D2 para serviços pesados pode passar por 5 a 10 ciclos de reafiação, dependendo da profundidade do desgaste.",
         },
         {
           question:
-            "Should I replace the bed knife when I replace the rotor inserts?",
+            "Como faço para garantir que a lâmina de corte de reposição fique alinhada com os empurradores de ajuste da minha máquina?",
           answer:
-            "Not necessarily every time. Rotor inserts wear out much faster. However, if the bed knife's cutting edge is severely rounded or chipped, placing new rotor inserts against a dull bed knife will drastically reduce the lifespan of the new inserts and decrease throughput. We recommend inspecting the bed knife edge during every rotor indexing cycle and regrinding or replacing it when a sharp edge can no longer be maintained.",
+            "As lâminas fixas utilizam orifícios com ranhuras ou padrões específicos de rebaixamento para se encaixarem nos parafusos de ajuste traseiros (empurradores) do triturador. Mantemos um vasto banco de dados de desenhos originais (OEM) de marcas como Weima, Vecoplan e Lindner. Ao nos fornecer o modelo da sua máquina ou um desenho básico, garantimos que as ranhuras sejam fresadas de acordo com as coordenadas exatas do fabricante original (OEM).",
         },
         {
           question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+            "Devo trocar a lâmina fixa ao substituir as pastilhas do rotor?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Não necessariamente todas as vezes. As pastilhas do rotor se desgastam muito mais rápido. No entanto, se a aresta de corte da lâmina fixa estiver muito arredondada ou lascada, a instalação de novas pastilhas do rotor em contato com uma lâmina fixa cega reduzirá drasticamente a vida útil das novas pastilhas e diminuirá a produtividade. Recomendamos inspecionar a lâmina fixa a cada ciclo de indexação do rotor e reafirá-la ou substituí-la quando não for mais possível manter uma borda afiada.",
+        },
+        {
+          question:
+            "Vocês podem fornecer os insertos de rotor, suportes e calços correspondentes no mesmo pedido?",
+          answer:
+            "Sim. As pastilhas do rotor, os suportes das facas, as barras de fixação, os calços de ajuste e os espaçadores são fabricados internamente e normalmente enviados junto com as facas da base. É assim que recomendamos fazer o pedido, pois a folga entre o rotor e a base é definida por ambas as peças: instalar uma nova lâmina de base contra insertos desgastados deixa a folga fora das especificações em todas as posições dos insertos, e a borda nova absorve a carga desigual. Uma remessa consolidada também significa uma parada na produção em vez de duas e uma soma de tolerâncias em vez de três.",
         },
       ],
       company: [
         {
           question:
-            "Do you have the manufacturing capacity for blades over 2 meters long?",
+            "Vocês têm capacidade de fabricação para pás com mais de 2 metros de comprimento?",
           answer:
-            "Yes. Our facility is equipped with heavy-duty surface grinders and extended vacuum heat treatment furnaces capable of processing seamless, single-piece bed knives up to 3,500mm in length without inducing thermal distortion.",
+            "Sim. Nossa unidade está equipada com retificadoras de superfície para serviços pesados e fornos a vácuo de comprimento estendido tratamento térmico, capazes de processar facas de leito sem costura, de peça única, com até 3.500 mm de comprimento, sem causar distorção térmica.",
         },
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Vocês são uma empresa de comércio ou um fabricante direto?",
           answer:
-            "We are a direct OEM manufacturer. This allows us to strictly control the heat treatment and grinding processes critical for long stator knives, eliminating the quality inconsistencies common with trading companies.",
+            "Somos um fabricante OEM direto. Isso nos permite controlar rigorosamente os processos tratamento térmico e de retificação, essenciais para facas longas de estator, eliminando as inconsistências de qualidade comuns às empresas comerciais.",
         },
         {
-          question: "What is the lead time for custom bed knives?",
+          question:
+            "Qual é o prazo de entrega para facas de cama personalizadas?",
           answer:
-            "For standard OEM replacements, we often ship within 3–5 days. For custom lengths or specific alloy requirements, production lead time is typically 15–20 working days, inclusive of the deep thermal cycling processes required for dimensional stability.",
+            "Para peças de reposição OEM padrão, geralmente enviamos em até 3 a 5 dias. Para comprimentos personalizados ou requisitos específicos de liga, o prazo de produção é normalmente de 15 a 20 dias úteis, incluindo os processos de ciclos térmicos intensivos necessários para garantir a estabilidade dimensional.",
         },
       ],
     },
   },
   {
     id: "granulator-blades",
-    name: "Granulator Blades",
+    name: "Lâminas para granuladores",
     fullName:
-      "Industrial Plastic Crusher & Granulator Knives for PET, PVC & PP Recycling",
+      "Facas para trituradores e granuladores industriais de plástico para reciclagem de PET, PVC e PP",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Granulator Blades",
+    categoryDisplay: "Lâminas para granuladores",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2241,15 +2261,15 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "D2, SKD-11, and Cr12MoV granulator rotor and stator knives precision-ground to ±0.02mm bolt-hole tolerance for Cumberland, Conair/Wortex, Herbold, and Rapid granulators. Bevel angles from 30° to 55° are matched to polymer type-delivering clean, low-fines regrind. Vacuum hardening plus deep cryogenic processing stabilizes HRC 58–62 for extended edge retention.",
+      "Lâminas de rotor e estator para granuladores em D2, SKD-11 e Cr12MoV, retificadas com precisão para uma tolerância de ±0,02 mm nos furos dos parafusos, destinadas aos granuladores Cumberland, Conair/Wortex, Herbold e Rapid. Ângulos de bisel de 30° a 55° são adaptados ao tipo de polímero, proporcionando uma remoagem limpa e com baixo teor de partículas finas. O endurecimento a vácuo, aliado ao processamento criogênico profundo, estabiliza a dureza HRC 58–62, garantindo maior retenção do fio de corte.",
     fullDescription:
-      "Granulator rotor and stator knives are the highest-wear components in any closed-loop plastic recycling line. Incorrect alloy selection or substandard geometry tolerances directly translate into enlarged particle size distribution, excessive dust and fines, elevated motor amp draw, and shortened sharpening intervals-all of which degrade regrind pellet quality and increase cost per tonne processed.\n\nSureay granulator blades are manufactured from D2 (1.2379), SKD-11, DC53, and Cr12MoV cold-work tool steels-selected based on the specific polymer and abrasive filler content being processed. Calcium carbonate-filled PVC and glass-fibre-reinforced nylon demand SKD-11 or DC53 for maximum abrasion resistance. Impact-loaded applications such as thick-wall HDPE containers, cold nylon runners, and heavy sprues require the higher toughness-to-hardness ratio of Cr12MoV.\n\nAll blades are vacuum-hardened and deep-cryogenically processed at -196°C to achieve a stabilized HRC 58–62 microstructure. The cryogenic step eliminates retained austenite, reduces internal compressive stress, and significantly extends the time between sharpening cycles by improving carbide dispersion uniformity across the cutting edge.\n\n## Precision Grinding Standards\nThe cutting clearance between rotor and stator knives is the single most influential variable controlling regrind particle size and fines fraction. Sureay granulator blades are machined to the following tolerances to ensure consistent rotor-to-bed gap across the full cutting width:\n\n- Bolt-hole positional tolerance: ±0.02 mm\n- Face flatness: 0.05 mm\n- Parallelism (top face to bottom face): 0.03 mm\n- Bevel angle: 30°–55° (application-optimized per polymer and rotor speed)\n\nA face flatness deviation above 0.08mm allows rotor knife rocking under load, progressively widening the cutting gap and increasing the coarse fraction in regrind-a defect that causes downstream extruder feed inconsistency.\n\n## Polymer-Specific Bevel Angle Selection\n30°–35° bevel: Soft thermoplastics (LDPE, LLDPE, EVA, foam PP). Low included angle delivers maximum sharpness for clean shearing of compliant materials.\n\n40°–45° bevel: General-purpose engineering plastics (HDPE, ABS, standard PP/PET regrind). Balanced edge strength and sharpness for the most common granulator feedstocks.\n\n50°–55° bevel: Highly abrasive or filled compounds (glass-filled nylon, calcium carbonate PVC, UHMW-PE). Wider bevel distributes abrasive wear over a larger cutting face, extending sharpening intervals.\n\n## Machine Compatibility\nDimensions are reverse-engineered to match Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid, and Ramco configurations. Both double-hole and multi-hole (triple, quadra) mounting patterns are carried in standard stock.",
+      "As lâminas do rotor e do estator do granulador são os componentes que sofrem maior desgaste em qualquer linha de reciclagem de plástico em circuito fechado. A seleção incorreta da liga ou tolerâncias geométricas abaixo do padrão se traduzem diretamente em maior distribuição granulométrica, excesso de pó e partículas finas, aumento do consumo de corrente do motor e intervalos de afiação mais curtos — fatores que prejudicam a qualidade dos pellets de material triturado e aumentam o custo por tonelada processada.\n\nAs facas Sureay facas para granuladores são fabricadas em D2 (1.2379), SKD-11, DC53 e Cr12MoV aço-ferramenta para trabalho a frio — selecionadas com base no polímero específico e no teor de enchimento abrasivo que está sendo processado. O PVC com enchimento de carbonato de cálcio e o nylon reforçado com fibra de vidro exigem SKD-11 ou DC53 para máxima resistência à abrasão. Aplicações sujeitas a impactos, como recipientes de HDPE de parede espessa, canais de nylon a frio e canais de injeção pesados, requerem a maior relação tenacidade/dureza do Cr12MoV.\n\nTodas as lâminas são endurecidas a vácuo e submetidas a um tratamento criogênico profundo a -196 °C para obter uma microestrutura estabilizada de HRC 58–62. A etapa criogênica elimina a austenita retida, reduz a tensão compressiva interna e prolonga significativamente o tempo entre os ciclos de afiamento, melhorando a uniformidade da dispersão de carbonetos ao longo da aresta de corte.\n\n## Padrões de retificação de precisão\nA folga de corte entre as facas do rotor e do estator é a variável mais influente no controle do tamanho das partículas de remoagem e da fração de finos. As facas Sureay facas para granuladores são usinadas de acordo com as seguintes tolerâncias para garantir uma folga consistente entre o rotor e a base ao longo de toda a largura de corte:\n\n- Tolerância posicional dos furos dos parafusos: ±0,02 mm\n- Planicidade da face: 0,05 mm\n- Paralelismo (face superior em relação à face inferior): 0,03 mm\n- Ângulo de bisel: 30°–55° (otimizado para a aplicação de acordo com o polímero e a velocidade do rotor)\n\nUm desvio na planicidade da face superior a 0,08 mm permite que a lâmina do rotor balance sob carga, alargando progressivamente a folga de corte e aumentando a fração grossa no material remoído — um defeito que causa inconsistência na alimentação da extrusora a jusante.\n\n## Seleção do ângulo de bisel específico para cada polímero\nBisel de 30°–35°: Termoplásticos macios (LDPE, LLDPE, EVA, PP expandido). O baixo ângulo de inclinação proporciona máxima nitidez para um corte limpo de materiais flexíveis.\n\nChanfro de 40°–45°: Plásticos de engenharia de uso geral (HDPE, ABS, material reciclado padrão de PP/PET). Equilíbrio entre resistência da aresta e nitidez para as matérias-primas mais comuns em granuladores.\n\nBisel de 50°–55°: Compostos altamente abrasivos ou com enchimento (nylon com enchimento de vidro, PVC com carbonato de cálcio, UHMW-PE). O bisel mais amplo distribui o desgaste abrasivo por uma superfície de corte maior, prolongando os intervalos entre afiações.\n\n## Compatibilidade com máquinas\nAs dimensões são projetadas por engenharia reversa para se adequarem às configurações das marcas Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid e Ramco. Os padrões de montagem com dois furos e com vários furos (três, quatro) estão disponíveis em estoque padrão.",
     link: "/products/granulator-blades",
     isFeatured: true,
     rfqPlaceholder:
-      "E.g., rotor and bed knives for a Rapid granulator, D2 steel, 3 sets — drawing attached",
+      "Por exemplo, lâminas do rotor e da base para um granulador Rapid, aço D2, 3 conjuntos — desenho em anexo",
     introNote:
-      "Rotor knives and bed knives wear at different rates and are rarely replaced on the same schedule. Rotor knives take the primary cutting load and typically need sharpening two to three times more often than the bed knife, but the cutting gap is set between the two — so a fresh rotor knife against a rounded bed knife still tears material and generates fines. Sureay supplies both as a matched set, ground from the same steel batch, so the gap holds after the first regrind. Bed knives (also called stator or fixed knives) are available in the same D2, SKD-11, DC53 and Cr12MoV grades.",
+      "As lâminas do rotor e as lâminas fixas se desgastam em ritmos diferentes e raramente são substituídas no mesmo intervalo. As lâminas do rotor suportam a carga principal de corte e, normalmente, precisam ser afiadas duas a três vezes mais frequentemente do que as lâminas fixas; no entanto, a folga de corte é ajustada entre as duas — de modo que uma lâmina do rotor nova, quando em contato com uma lâmina fixa desgastada, ainda rasga o material e gera partículas finas. A Sureay fornece ambas como um conjunto combinado, retificado a partir do mesmo lote de aço, de modo que a folga se mantenha após o primeiro reafiamento. As lâminas fixas (também chamadas de lâminas do estator ou lâminas fixas) estão disponíveis nos mesmos tipos de aço: D2, SKD-11, DC53 e Cr12MoV.",
     compatibleMachines: [
       "Rapid Granulator",
       "Herbold Meckesheim",
@@ -2301,32 +2321,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "maximized-regrind-quality",
-        tag: "QUALITY",
-        title: "Maximized Regrind Quality",
+        tag: "QUALIDADE",
+        title: "Qualidade máxima do material triturado",
         description:
-          "Ultra-sharp, precisely aligned cutting edges shear plastic cleanly rather than tearing it, drastically reducing the generation of unwanted dust and fines.",
+          "As lâminas ultraprecisas e perfeitamente alinhadas cortam o plástico de forma limpa, em vez de rasgá-lo, reduzindo drasticamente a geração de poeira e partículas indesejadas.",
       },
       {
         id: "extended-mtbr",
-        tag: "RELIABILITY",
-        title: "Extended MTBR (Mean Time Between Replacements)",
+        tag: "CONFIABILIDADE",
+        title: "MTBR (Tempo Médio entre Substituições) estendido",
         description:
-          "High wear resistance minimizes the frequency of blade sharpening and replacement, keeping your recycling line running continuously.",
+          "A alta resistência ao desgaste reduz a frequência de afiamento e substituição das lâminas, mantendo sua linha de reciclagem em operação contínua.",
       },
       {
         id: "reduced-motor-load",
-        tag: "EFFICIENCY",
-        title: "Reduced Motor Load",
+        tag: "EFICIÊNCIA",
+        title: "Carga reduzida do motor",
         description:
-          "Optimized cutting angles decrease the shearing force required, lowering the electrical amp draw on your granulator's motor and reducing energy costs per ton.",
+          "Os ângulos de corte otimizados diminuem a força de cisalhamento necessária, reduzindo o consumo de corrente elétrica do motor do seu granulador e diminuindo os custos de energia por tonelada.",
       },
     ],
     dimensionLabels: {
-      col0: "Hole Configuration",
-      col1: "Dimensions (L × W × T)",
-      col2: "Hole Center Pitch",
+      col0: "Configuração dos furos",
+      col1: "Dimensões (C × L × P)",
+      col2: "Distância entre os centros dos furos",
       caption:
-        "* Standard dimensions for rotor and stator knives in millimeters (mm). Custom profiles to drawing within 10 days.",
+        "* Dimensões padrão para lâminas de rotor e estator em milímetros (mm). Perfis personalizados conforme desenho em até 10 dias.",
     },
     standardDimensions: [
       {
@@ -2383,82 +2403,86 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How do I choose between D2, DC53, and Cr12MoV for my granulator?",
+            "Como faço para escolher entre D2, DC53 e Cr12MoV para o meu granulador?",
           answer:
-            "D2 is the industry standard for clean plastics like PET and PP. For glass-filled or abrasive polymers, DC53 offers superior wear resistance. If your feed contains occasional metal impurities (like wire or staples), Cr12MoV provides higher impact toughness to prevent edge chipping.",
+            "O D2 é o padrão da indústria para plásticos puros, como PET e PP. Para polímeros reforçados com fibra de vidro ou abrasivos, o DC53 oferece resistência superior ao desgaste. Se o seu material de alimentação contiver impurezas metálicas ocasionais (como fios ou grampos), o Cr12MoV proporciona maior tenacidade ao impacto para evitar lascas nas bordas.",
         },
         {
           question:
-            "What causes excessive dust and fines during plastic granulation?",
+            "O que causa o excesso de poeira e partículas finas durante a granulação de plástico?",
           answer:
-            "It's usually caused by blunt edges or an incorrect bevel angle tearing the plastic instead of shearing it. We optimize the bevel angle (30°–55°) based on your specific polymer to ensure clean cutting, which maximizes your regrind quality and pellet value.",
+            "Isso geralmente é causado por bordas sem corte ou por um ângulo de bisel incorreto, que rasga o plástico em vez de cortá-lo. Otimizamos o ângulo de bisel (30°–55°) com base no seu polímero específico para garantir um corte limpo, o que maximiza a qualidade do material triturado e o valor dos grânulos.",
         },
         {
           question:
-            "Can you match the exact bolt-hole patterns for my specific machine?",
+            "Vocês conseguem reproduzir os padrões exatos de furos para parafusos da minha máquina específica?",
           answer:
-            "Absolutely. We maintain a vast database of OEM blueprints for Cumberland, Herbold, Rapid, Weima, and more. We CNC-mill all counter-bores to a strict ±0.02mm tolerance to guarantee a perfect drop-in fit without micro-rocking.",
+            "Com certeza. Mantemos um vasto banco de dados de desenhos técnicos originais (OEM) das marcas Cumberland, Herbold, Rapid, Weima e outras. Usinamos todos os rebaixamentos em fresadora CNC com uma tolerância rigorosa de ±0,02 mm para garantir um encaixe perfeito, sem microoscilações.",
         },
         {
           question:
-            "What rotor knife geometry produces the lowest fines fraction in beside-the-press granulators?",
+            "Qual geometria da lâmina do rotor produz a menor fração de partículas finas nos granuladores instalados ao lado da prensa?",
           answer:
-            "For beside-the-press in-line granulators on injection moulding lines, a 40°–45° bevel angle with a polished rake face (Ra ≤ 0.8μm) delivers the cleanest, lowest-fines regrind on runner and sprue material. The polished face reduces adhesion in the cutting zone, preventing the micro-welding of HDPE and PP material that generates fines at the high cycle rates typical of continuous injection moulding production.",
+            "Para granuladores em linha instalados ao lado da máquina em linhas de moldagem por injeção, um ângulo de bisel de 40°–45° com uma face de inclinação polida (Ra ≤ 0,8 μm) proporciona o material triturado mais limpo e com menor teor de partículas finas a partir do material do canal de injeção e do beiral. A face polida reduz a adesão na zona de corte, evitando a microsoldagem de materiais de HDPE e PP que gera partículas finas nas altas taxas de ciclo típicas da produção contínua de moldagem por injeção.",
         },
         {
           question:
-            "When should I sharpen versus replace my granulator rotor knives?",
+            "Quando devo afiar ou substituir as lâminas do rotor do meu granulador?",
           answer:
-            "The primary indicator is regrind particle size distribution - when the oversize fraction exceeds 8–10% of output weight, rotor knives need sharpening. Secondary indicators are a 15%+ increase in motor amp draw above baseline and elevated dust fraction. Each Sureay blade can typically be resharpened 3–5 times before the bevel geometry reaches minimum usable material depth, at which point replacement is more economical.",
+            "O indicador principal é a distribuição granulométrica do material triturado — quando a fração de partículas acima do tamanho nominal ultrapassa 8–10% do peso da produção, as lâminas do rotor precisam ser afiadas. Os indicadores secundários são um aumento de 15% ou mais no consumo de corrente do motor em relação ao valor de referência e uma fração elevada de pó. Cada lâmina Sureay pode, normalmente, ser reafiada de 3 a 5 vezes antes que a geometria do bisel atinja a profundidade mínima utilizável do material; nesse ponto, a substituição se torna mais econômica.",
         },
         {
-          question: "Do blades or the screen control my regrind particle size?",
+          question:
+            "São as lâminas ou a peneira que determinam o tamanho das partículas do material moído?",
           answer:
-            "The screen sets the particle size — material stays in the cutting chamber until it is small enough to pass through. Blades control something different: how cleanly that material is cut on the way there. Dull or badly angled knives tear rather than shear, which produces dust and fines that pass the screen but lower the value of your regrind. If your particle size is wrong, change the screen. If your particle size is right but the fines fraction is climbing, look at the knives and the cutting gap.",
+            "A peneira define o tamanho das partículas — o material permanece na câmara de corte até ficar pequeno o suficiente para passar por ela. As lâminas controlam algo diferente: a precisão com que o material é cortado ao longo do percurso. Lâminas cegas ou com ângulo inadequado rasgam em vez de cortar, o que produz poeira e partículas finas que passam pela peneira, mas reduzem o valor do seu material triturado. Se o tamanho das partículas estiver incorreto, troque a tela. Se o tamanho das partículas estiver correto, mas a fração de finos estiver aumentando, verifique as lâminas e a folga de corte.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Vocês são uma empresa de comércio ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, which raises wear resistance and, more importantly, keeps hardness uniform along the full length of the cutting edge — the single biggest cause of uneven wear on long granulator knives is a soft section left by incomplete transformation.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Ao contrário do temperamento convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, o que aumenta a resistência ao desgaste e, mais importante ainda, mantém a dureza uniforme ao longo de todo o comprimento da aresta de corte — a principal causa do desgaste irregular em facas longas de granuladores é uma seção mais macia resultante de uma transformação incompleta.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences - no tooling commitment until fit is confirmed.",
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com ferramentas até que o ajuste seja confirmado.",
         },
       ],
     },
   },
   {
     id: "metal-coil-slitting-knives",
-    name: "Metal Coil Slitting Knives",
-    fullName: "Heavy-Duty Rotary Slitting Knives for Steel Coil Processing",
+    name: "Facas para corte de bobinas metálicas",
+    fullName:
+      "Facas rotativas de corte para serviços pesados, destinadas ao processamento de bobinas de aço",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Slitting Blades",
+    categoryDisplay: "Lâminas de corte de metal",
     image:
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Heavy Duty",
+    badge: "Para serviços pesados",
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
@@ -2466,9 +2490,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
     description:
-      "Complete rotary coil slitting tooling for metal service centers and steel mills. D2, SKD-11, and H13 circular slitter knives lapped to Ra ≤ 0.2μm with ±0.001mm thickness tolerance. Engineered for burr-free shearing of cold-rolled (CR), hot-rolled (HR) steel, galvanized coils, and heavy silicon steel.",
+      "Conjunto completo de ferramentas para corte rotativo de bobinas destinado a centros de serviços de metalurgia e siderúrgicas. Facas circulares para cortadoras D2, SKD-11 e H13, lapidadas com rugosidade Ra ≤ 0,2 μm e tolerância de espessura de ±0,001 mm. Projetadas para o corte sem rebarbas de aço laminado a frio (CR), aço laminado a quente (HR), bobinas galvanizadas e aço de silício pesado.",
     fullDescription:
-      "Precision coil slitting demands a dimensional tolerance standard that most industrial cutting applications never approach. On a high-speed slitting line running heavy steel coils at 200–400 m/min across a multi-knife arbor stack, a cumulative thickness error of just 0.01mm per knife produces measurable slit-width deviation, severe edge burrs, and coil camber that exceeds the quality limits for automotive and appliance manufacturing.\n\nSureay circular metal slitter knives are manufactured to extreme verified tolerances. All knife side faces are finish-lapped to Ra ≤ 0.2μm. This mirror face finish is not merely aesthetic—it ensures full metal-to-metal contact between blades and spacers in the arbor stack, eliminating microscopic air gaps that allow individual blade deflection under lateral slitting loads.\n\n## Heavy Alloy Selection by Strip Material\n\n**Cold-Rolled & Galvanized Steel (CR, EG, HDG):** D2 (1.2379) or SKD-11, hardened to HRC 60–62 via vacuum quench. High chromium carbide content resists the abrasive wear from zinc spangle and surface scale. Recommended for continuous-shift CR steel service centers.\n\n**Hot-Rolled Steel & Heavy Gauge Plate:** H13 (SKD-61) hot-work tool steel or 6CrW2Si. Hot-rolled steel slitting generates massive impact forces and elevated ambient temperatures. H13's superior toughness prevents the catastrophic brittle fracture that destroys standard D2 blades on heavy-gauge lines.\n\n**Silicon Steel (CRGO / CRNO Electrical Grade):** Cr12MoV or PM powder-metallurgy grades. Silicon steel's extreme abrasiveness—primarily caused by silica inclusions—demands maximum wear resistance to maintain slit-width tolerances throughout a full transformer laminate production run.\n\n## Complete Slitting Arbor Tooling\n\nThe cutting knife is only one component of a precision coil slitting system. Steel spacers, bonded rubber stripper rings, and overarm separator discs must be dimensionally matched to the knife set to ensure uniform arbor preload and consistent strip tension. Sureay supplies fully integrated slitting tooling packages—verified as a matched system to eliminate tolerance stack-up errors.",
+      "O corte de bobinas de precisão exige um padrão de tolerância dimensional que a maioria das aplicações de corte industrial nunca chega nem perto de atingir. Em uma linha de corte de alta velocidade que processa bobinas de aço pesado a 200–400 m/min através de um conjunto de eixos com múltiplas lâminas, um erro cumulativo de espessura de apenas 0,01 mm por lâmina produz um desvio mensurável na largura do corte, rebarbas graves nas bordas e curvatura da bobina que excede os limites de qualidade para a fabricação de automóveis e eletrodomésticos.\n\nAs lâminas circulares para corte de metal da Sureay são fabricadas com tolerâncias extremas e verificadas. Todas as faces laterais das lâminas são lapidadas com acabamento de Ra ≤ 0,2 μm. Esse acabamento espelhado não é meramente estético — ele garante contato total metal com metal entre as lâminas e os espaçadores no conjunto de eixos, eliminando folgas microscópicas de ar que permitem a deflexão de lâminas individuais sob cargas laterais de corte.\n\n## Seleção de ligas pesadas de acordo com o material da tira\n\n**Aço laminado a frio e galvanizado (CR, EG, HDG):** D2 (1.2379) ou SKD-11, endurecido a HRC 60–62 por têmpera a vácuo. O alto teor de carboneto de cromo resiste ao desgaste abrasivo causado por partículas de zinco e escamas superficiais. Recomendado para centros de serviços de aço CR em turnos contínuos.\n\n**Aço laminado a quente e chapas de espessura elevada:** Aço para ferramentas de trabalho a quente H13 (SKD-61) ou 6CrW2Si. O corte de aço laminado a quente gera forças de impacto enormes e temperaturas ambientes elevadas. A tenacidade superior do H13 evita a fratura frágil catastrófica que destrói as lâminas D2 padrão em linhas de espessuras grossas.\n\n**Aço silicônico (grau elétrico CRGO / CRNO):** Cr12MoV ou graus PM de metalurgia do pó. A extrema abrasividade do aço silicônico — causada principalmente por inclusões de sílica — exige resistência máxima ao desgaste para manter as tolerâncias de largura de corte durante toda a produção de chapas laminadas para transformadores.\n\n## Conjunto completo de ferramentas para o eixo de corte\n\nA lâmina de corte é apenas um componente de um sistema de corte de bobinas de precisão. Espaçadores de aço, anéis separadores de borracha colados e discos separadores de braço superior devem ter dimensões compatíveis com o conjunto de lâminas para garantir pré-carga uniforme no eixo e tensão consistente da tira. A Sureay fornece pacotes de ferramentas de corte totalmente integrados — verificados como um sistema compatível para eliminar erros de acúmulo de tolerâncias.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2512,33 +2536,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "micron-tolerance",
-        tag: "PRECISION",
-        title: "Micro-Tolerance Engineering",
+        tag: "PRECISÃO",
+        title: "Engenharia de Microtolerância",
         description:
-          "Engineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm. This guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor.",
+          "Projetado com uma tolerância de espessura de ±0,001 mm e paralelismo de 0,002 mm. Isso garante erro cumulativo zero ao empilhar várias lâminas pesadas e espaçadores no eixo da cortadora.",
       },
       {
         id: "alloy-toughness",
-        tag: "METALLURGY",
-        title: "Heavy-Duty Alloy Selection",
+        tag: "METALURGIA",
+        title: "Seleção de ligas para serviços pesados",
         description:
-          "From high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills. Each blade is vacuum hardened to deliver exceptional edge strength.",
+          "Desde o D2/SKD11 com alto teor de cromo, para aço laminado a frio e galvanizado, até o H13 resistente a impactos, para laminadores pesados de aço laminado a quente. Cada lâmina é temperada a vácuo para oferecer uma resistência excepcional ao gume.",
       },
       {
         id: "complete-setup",
-        tag: "SYSTEM",
-        title: "Complete Arbor Tooling",
+        tag: "SISTEMA",
+        title: "Conjunto completo de ferramentas para torneiros",
         description:
-          "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs. A fully integrated system ensures perfect strip tension and burr-free coil rewinding.",
+          "Além das lâminas, fornecemos espaçadores de aço com encaixe perfeito, anéis de descascamento revestidos de borracha e discos separadores de braço superior. Um sistema totalmente integrado garante a tensão perfeita da tira e o rebobinamento da bobina sem rebarbas.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Machine / Line Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Tipo típico de máquina/linha",
+      col1: "Diâmetro externo",
+      col2: "Diâmetro interno",
+      col3: "Espessura",
       caption:
-        "* Dimensions shown are standard examples. We manufacture up to Ø 1500 mm for heavy-gauge plate slitting lines. Custom keyways and drive pin holes machined to exact OEM blueprints.",
+        "* As dimensões apresentadas são exemplos padrão. Fabricamos peças de até Ø 1.500 mm para linhas de corte de chapas de alta espessura. Ranhuras de chaveta e orifícios para pinos de acionamento personalizados, usinados de acordo com os projetos originais exatos do fabricante (OEM).",
     },
     standardDimensions: [
       {
@@ -2585,55 +2609,55 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What knife clearance should I set for cold-rolled steel versus silicon steel?",
+            "Qual folga da faca devo definir para o aço laminado a frio em comparação com o aço ao silício?",
           answer:
-            "For cold-rolled mild steel (CR, EG), set horizontal clearance at 8–10% of material thickness. For silicon steel (CRGO/CRNO), tighten clearance to 5–8% — silicon steel's extreme hardness and brittleness demand a tighter shear gap to prevent the edge fracturing that produces burrs on transformer laminate strips.",
+            "Para aço macio laminado a frio (CR, EG), defina a folga horizontal entre 8% e 10% da espessura do material. Para o aço ao silício (CRGO/CRNO), reduza a folga para 5 a 8% — a extrema dureza e fragilidade do aço ao silício exigem uma folga de cisalhamento menor para evitar a fratura das bordas, que gera rebarbas nas tiras laminadas do transformador.",
         },
         {
           question:
-            "Why does my slit-width drift across the full coil width after the first coil?",
+            "Por que a largura da fenda varia ao longo de toda a largura da bobina após a primeira bobina?",
           answer:
-            "Slit-width drift is caused by blade-to-spacer face contact loss from varying thickness tolerances in the arbor stack. Even a 0.002mm blade-thickness inconsistency in a 20-knife stack creates a cumulative 0.04mm lateral shift. Our blades and spacers are lapped to ±0.001mm thickness tolerance and Ra ≤ 0.2μm face finish, eliminating the air gaps that allow individual blade deflection.",
+            "O desvio na largura da fenda é causado pela perda de contato entre a lâmina e a superfície do espaçador, devido às variações nas tolerâncias de espessura na pilha de eixos. Mesmo uma variação de 0,002 mm na espessura das lâminas em uma pilha de 20 facas gera um deslocamento lateral cumulativo de 0,04 mm. Nossas lâminas e espaçadores são lapidados com tolerância de espessura de ±0,001 mm e acabamento superficial Ra ≤ 0,2 μm, eliminando as folgas de ar que permitem a deflexão de lâminas individuais.",
         },
         {
           question:
-            "Should I use D2 or H13 for slitting 8mm thick Hot-Rolled (HR) steel plate?",
+            "Devo usar D2 ou H13 para cortar chapas de aço laminadas a quente (HR) com 8 mm de espessura?",
           answer:
-            "For 8mm HR plate, you must use H13 or 6CrW2Si. Slitting heavy-gauge hot-rolled steel generates massive impact shock at the bite point. D2 (at HRC 60) is too brittle and will likely shatter or suffer severe micro-chipping under these loads. H13 (tempered to HRC 54–56) provides the massive core toughness required to absorb these impact forces reliably.",
+            "Para chapas HR de 8 mm, é necessário utilizar H13 ou 6CrW2Si. O corte longitudinal de aço laminado a quente de espessura elevada gera um impacto enorme no ponto de corte. O D2 (com HRC 60) é muito frágil e provavelmente se fragmentará ou sofrerá micro-lascas graves sob essas cargas. O H13 (temperado a HRC 54–56) oferece a alta tenacidade necessária para absorver essas forças de impacto de maneira confiável.",
         },
         {
           question:
-            "What maintenance inspection schedule maximizes circular slitter knife service life?",
+            "Qual é o cronograma de inspeção de manutenção que maximiza a vida útil das lâminas de corte circular?",
           answer:
-            "Inspect knife faces weekly under 10× magnification for edge chipping (indicates clearance drift or hard material inclusions). Re-lap side faces when surface roughness exceeds Ra 0.4μm to restore full arbor contact. Store removed knives vertically in rust-inhibitor oil to prevent corrosive pitting during idle periods.",
+            "Inspecione semanalmente as faces das facas sob ampliação de 10× para verificar se há lascas no fio (o que indica desvio da folga ou inclusões de material duro). Reafine as faces laterais quando a rugosidade da superfície exceder Ra 0,4 μm para restaurar o contato total com o eixo. Armazene as facas removidas na vertical em óleo inibidor de ferrugem para evitar corrosão por pite durante os períodos de inatividade.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply a complete integrated tooling package including spacers and stripper rings?",
+            "A Sureay pode fornecer um pacote completo e integrado de ferramentas, incluindo espaçadores e anéis de remoção?",
           answer:
-            "Yes. We supply complete matched slitting tooling systems: knife sets, precision steel spacers (ground to ±0.001mm), bonded rubber stripper rings, and overarm separator discs. Sourcing all components from a single verified tolerance stack eliminates the cumulative errors that appear when mixing tooling from separate suppliers.",
+            "Sim. Fornecemos sistemas completos e compatíveis de ferramentas para corte longitudinal: conjuntos de lâminas, espaçadores de aço de precisão (retificados com tolerância de ±0,001 mm), anéis separadores de borracha colados e discos separadores de braço superior. A aquisição de todos os componentes a partir de uma única pilha de tolerâncias verificada elimina os erros cumulativos que surgem ao combinar ferramentas de fornecedores distintos.",
         },
         {
           question:
-            "Do you manufacture large diameter slitter knives for heavy plate mills?",
+            "Vocês fabricam lâminas de corte de grande diâmetro para laminadores de chapas grossas?",
           answer:
-            "Yes, our heavy grinding and heat treatment facilities can process circular slitting knives up to 1500mm in outer diameter, specifically designed for heavy gauge hot-rolled coil and plate mill edge-trimming applications.",
+            "Sim, nossas instalações de retificação pesada e tratamento térmico são capazes de processar facas de corte circular com diâmetro externo de até 1.500 mm, projetadas especificamente para aplicações de corte de bordas em bobinas e chapas laminadas a quente de espessura elevada.",
         },
       ],
     },
   },
   {
     id: "metal-shear-knives",
-    name: "Metal Shear Knives",
+    name: "Facas de corte para metal",
     fullName:
-      "Heavy-Duty Guillotine & Scrap Shear Knives for Metal Fabrication",
+      "Lâminas para guilhotinas e tesouras de sucata de alta resistência para fabricação de metais",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Metal Shear Knives",
+    categoryDisplay: "Facas de corte para metal",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Heavy Shearing",
+    badge: "Corte intenso",
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
@@ -2641,9 +2665,9 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
     description:
-      "Premium straight shear blades for hydraulic guillotines, alligator shears, and heavy scrap metal shears. Forged from D2, S1 (6CrW2Si), and H13 tool steels. Surface-ground to ±0.05 mm full-length parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap billets.",
+      "Lâmina reta premium facas de cisalhamento para guilhotinas hidráulicas, tesouras tipo jacaré e tesouras para sucata pesada. Forjadas a partir dos aços para ferramentas D2, S1 (6CrW2Si) e H13. Retificadas superficialmente para obter um paralelismo de ±0,05 mm em todo o comprimento, garantindo um corte sem rebarbas de aço macio, chapas de aço inoxidável e lingotes pesados de sucata.",
     fullDescription:
-      "Guillotine and scrap shear blades operate under conditions that expose every weakness in alloy selection, heat treatment depth, and grinding parallelism. The upper shear blade is driven against the lower under actuator forces from 40 to over 2000 tonnes on heavy plate shearing lines. Premature failure modes—edge rollover on mild steel, brittle fracture on stainless, or shattering on heavy scrap—are each attributable to metallurgical mismatch or grinding parallelism deviations that concentrate extreme forces at a single point.\n\nSureay metal shear blades are supplied in three specific metallurgical grades, each matched to a defined mechanical regime:\n\n## Alloy Selection by Shearing Application\n\n**Cold Shearing (Mild Steel):** Standard high-carbon tool steels hardened to HRC 57–59. This provides sharp, stable edge geometry at an economical cost, making it the correct specification for general fabrication shops and structural steel contractors cutting standard A3/A36 mild steel plate up to 8 mm.\n\n**Heavy Plate & Stainless Shearing:** D2 (Cr12MoV) equivalent grades hardened to HRC 58–60. Specified for maximum wear resistance on austenitic stainless steel (304, 316L) and high-strength alloy plates (Hardox). The high chromium-carbide matrix withstands the severe work-hardening wear imposed by these tough metals.\n\n**Scrap Recycling & Hot Shearing:** S1 (6CrW2Si) shock-resisting steel and H13 hot-work tool steel. When shearing mixed scrap metal, rebar, or hot steel billets (900–1100°C), extreme impact toughness is prioritized over hardness. These alloys absorb massive shock loads without the brittle fracture that destroys standard D2 blades.\n\n## The Parallelism Imperative (±0.05 mm)\nImproper parallelism is the single most common preventable cause of premature shear blade failure. Uneven face contact concentrates the full shearing load onto a reduced length of the blade edge, producing edge rollover or chipping within hours. All Sureay shear blades are precision surface-ground on both cutting faces to guarantee a standard parallelism tolerance of ±0.05 mm over a 1000 mm length (with premium ±0.02 mm tolerances available for aerospace and precision stainless applications).",
+      "A guilhotina e a sucata facas de cisalhamento operam em condições que expõem todas as deficiências na seleção da liga, na profundidade tratamento térmico e no paralelismo da retificação. A lâmina de corte superior é pressionada contra a inferior sob forças do atuador que variam de 40 a mais de 2.000 toneladas em linhas de corte de chapas pesadas. Os modos de falha prematura — enrolamento da borda em aço macio, fratura frágil em aço inoxidável ou fragmentação em sucata pesada — são, cada um, atribuíveis a incompatibilidade metalúrgica ou a desvios no paralelismo do retificado que concentram forças extremas em um único ponto.\n\nAs lâminas Sureay metal facas de cisalhamento são fornecidas em três classes metalúrgicas específicas, cada uma adaptada a um regime mecânico definido:\n\n## Seleção de Liga por Aplicação de Corte\n\n**Corte a frio (aço macio):** Aços para ferramentas padrão de alto carbono, temperados a HRC 57–59. Isso proporciona uma geometria de aresta afiada e estável a um custo econômico, tornando-a a especificação correta para oficinas de fabricação em geral e empreiteiras de aço estrutural que cortam chapas de aço macio padrão A3/A36 de até 8 mm.\n\n**Corte de chapas pesadas e aço inoxidável:** Classes equivalentes a D2 (Cr12MoV) temperadas a HRC 58–60. Especificadas para máxima resistência ao desgaste em aço inoxidável austenítico (304, 316L) e chapas de ligas de alta resistência (Hardox). A matriz rica em carboneto de cromo resiste ao desgaste severo causado pelo endurecimento por deformação imposto por esses metais resistentes.\n\n**Reciclagem de sucata e corte a quente:** aço resistente a impactos S1 (6CrW2Si) e aço para ferramentas de trabalho a quente H13. Ao cortar sucata mista, vergalhões ou tarugos de aço quentes (900–1100 °C), a resistência extrema ao impacto tem prioridade sobre a dureza. Essas ligas absorvem cargas de choque intensas sem a fratura frágil que destrói as lâminas D2 padrão.\n\n## A Importância do Paralelismo (±0,05 mm)\nO paralelismo inadequado é a causa evitável mais comum de falha prematura da lâmina de cisalhamento. O contato irregular da face concentra toda a carga de cisalhamento em um comprimento reduzido da aresta da lâmina, causando o enrolamento da aresta ou lascas em questão de horas. Todas as lâminas Sureay facas de cisalhamento são retificadas com precisão em ambas as faces de corte para garantir uma tolerância padrão de paralelismo de ±0,05 mm ao longo de um comprimento de 1.000 mm (com tolerâncias premium de ±0,02 mm disponíveis para aplicações aeroespaciais e de aço inoxidável de precisão).",
     link: "/products/metal-shear-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2692,33 +2716,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "stainless-shearing",
-        tag: "HEAVY DUTY",
-        title: "D2 for Stainless & Heavy Plate",
+        tag: "PARA SERVIÇO PESADO",
+        title: "D2 para chapas de aço inoxidável e chapas grossas",
         description:
-          "Utilizing premium D2 (Cr12MoV) steel deep-hardened to HRC 58–60. It withstands the extreme abrasive wear and work-hardening forces when shearing stainless steel and thick alloy plates.",
+          "Fabricada com aço D2 (Cr12MoV) de alta qualidade, com endurecimento profundo até HRC 58–60. Ela resiste ao desgaste abrasivo extremo e às forças de endurecimento por deformação durante o corte de chapas de aço inoxidável e chapas grossas de liga metálica.",
       },
       {
         id: "scrap-shearing",
-        tag: "HIGH IMPACT",
-        title: "S1 Shock-Resisting Steel for Scrap",
+        tag: "ALTO IMPACTO",
+        title: "Aço S1 resistente a impactos para sucata",
         description:
-          "For alligator shears and heavy scrap balers, standard blades shatter. We forge these blades from S1 (6CrW2Si) shock-resisting steel, providing massive core toughness to shear rebar and I-beams without fracturing.",
+          "Em tesouras tipo “alligator” e enfardadeiras para sucata pesada, as lâminas padrão se quebram. Nós forjamos essas lâminas em aço S1 (6CrW2Si) resistente a impactos, proporcionando uma enorme tenacidade ao núcleo para cortar vergalhões e vigas em I sem se fraturarem.",
       },
       {
         id: "precision-parallelism",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
+        tag: "TOLERÂNCIA",
+        title: "Paralelismo de precisão (±0,05 mm)",
         description:
-          "Surface-ground to absolute perfection. Maintaining strict parallelism across lengths up to 6 meters ensures your machine maintains a uniform shear gap, delivering burr-free cuts every time.",
+          "Retificado com perfeição absoluta. A manutenção de um paralelismo rigoroso em comprimentos de até 6 metros garante que sua máquina mantenha uma folga de cisalhamento uniforme, proporcionando cortes sem rebarbas em todas as ocasiões.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Size (L × W × T)",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Dimensões típicas (C × L × P)",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard dimensions for common hydraulic guillotine shear models. Custom lengths to 6000 mm, multi-segment designs, and single / double / quad-edge profiles available.",
+        "* Dimensões padrão para modelos comuns de tesouras hidráulicas do tipo guilhotina. Estão disponíveis comprimentos personalizados de até 6.000 mm, projetos com vários segmentos e perfis de uma, duas ou quatro arestas.",
     },
     standardDimensions: [
       {
@@ -2782,57 +2806,56 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Which alloy should I use for shearing 304 stainless steel?",
+          question: "Que liga devo usar para cortar aço inoxidável 304?",
           answer:
-            "We recommend D2 (Cr12MoV) for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide matrix withstands the severe work-hardening wear imposed by austenitic stainless. For standard mild steel, high-carbon tool steel provides maximum toughness at a lower cost.",
+            "Recomendamos o D2 (Cr12MoV) para aço inoxidável (304, 316L) e chapas de alta resistência, como o Hardox. A matriz rica em carboneto de cromo do D2 resiste ao desgaste severo causado pelo endurecimento por deformação imposto pelo aço inoxidável austenítico. Para o aço macio padrão, o aço para ferramentas de alto carbono oferece máxima tenacidade a um custo menor.",
         },
         {
           question:
-            "Our blades keep chipping when cutting mixed scrap metal. What is wrong?",
+            "Nossas lâminas ficam lascando ao cortar sucata mista. O que está acontecendo?",
           answer:
-            "You are likely using a blade that is too hard (like D2). Mixed scrap contains unpredictable, heavy solids (like rebar or bolts). When extreme impact hits a hard, brittle blade, it chips or shatters. You need to switch to a shock-resisting alloy like S1 (6CrW2Si) or H13, tempered to a slightly lower hardness (HRC 54–56) to absorb the massive kinetic shocks elastically.",
+            "Provavelmente você está usando uma lâmina muito dura (como a D2). A sucata mista contém sólidos pesados e imprevisíveis (como vergalhões ou parafusos). Quando um impacto extremo atinge uma lâmina dura e frágil, ela lasca ou se estilhaça. Você precisa mudar para uma liga resistente a choques, como a S1 (6CrW2Si) ou a H13, temperada para uma dureza ligeiramente menor (HRC 54–56), a fim de absorver os enormes choques cinéticos de forma elástica.",
         },
         {
           question:
-            "What edge profile minimizes burrs when shearing high-tensile steel plates?",
+            "Qual perfil de lâmina minimiza as rebarbas ao cortar chapas de aço de alta resistência?",
           answer:
-            "The critical factor is contact uniformity. Uneven blade-to-blade contact concentrates shear force at one end, producing the compressive rollover and tearing burr characteristic of high-work-hardening steels. Our standard tolerance is ±0.05 mm parallelism over 1000 mm; premium ±0.02 mm is specified for stainless and precision applications.",
+            "O fator crítico é a uniformidade do contato. O contato irregular entre as lâminas concentra a força de cisalhamento em uma das extremidades, produzindo o rolamento compressivo e a rebarba de rasgo característicos dos aços de alto endurecimento por deformação. Nossa tolerância padrão é de ±0,05 mm de paralelismo em 1.000 mm; a tolerância premium de ±0,02 mm é especificada para aplicações em aço inoxidável e de precisão.",
         },
         {
           question:
-            "How do double-edge reversible blades reduce my annual tooling cost?",
+            "Como as lâminas reversíveis de dupla face reduzem meu custo anual com ferramentas?",
           answer:
-            "A double-edge (or 4-edge) reversible blade provides multiple independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, flip or rotate the blade, and retorque. This multiplies the blade's lifespan before regrinding is required, reducing per-cut tooling costs drastically.",
+            "Uma lâmina reversível de dupla face (ou de 4 faces) oferece várias faces de corte independentes a partir de um único corpo de lâmina. Quando a face 1 apresentar desgaste, afrouxe os parafusos de fixação, vire ou gire a lâmina e reaparafuse com o torque adequado. Isso multiplica a vida útil da lâmina antes que seja necessário reafiar, reduzindo drasticamente os custos com ferramentas por corte.",
         },
       ],
       company: [
         {
           question:
-            "Can you manufacture blades to match my TRUMPF, AMADA, or Durma guillotine exactly?",
+            "Vocês podem fabricar lâminas que se encaixem perfeitamente na minha guilhotina TRUMPF, AMADA ou Durma?",
           answer:
-            "Yes. We carry OEM-matching dimensions for TRUMPF, AMADA, BYSTRONIC, Durma, and Haco platforms. Single-piece blades up to 6000 mm, multi-segment designs for longer tables, and single, double, or quad-edge profiles are all available. Custom lengths are manufactured to drawing within 15 working days.",
+            "Sim. Oferecemos dimensões compatíveis com as do fabricante original (OEM) para as plataformas TRUMPF, AMADA, BYSTRONIC, Durma e Haco. Estão disponíveis lâminas de peça única de até 6.000 mm, modelos com vários segmentos para mesas mais longas e perfis com uma, duas ou quatro arestas. Comprimentos personalizados são fabricados conforme desenho em até 15 dias úteis.",
         },
         {
           question:
-            "Can Sureay manufacture replacement blades for obsolete heavy scrap shears?",
+            "A Sureay pode fabricar lâminas de reposição para tesouras pesadas para sucata que estão fora de linha?",
           answer:
-            "Yes. For heavy scrap shears (Lefort, Harris, Genesis) or obsolete models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile and counter-sunk mounting holes.",
+            "Sim. No caso de tesouras para sucata pesada (Lefort, Harris, Genesis) ou modelos obsoletos, trabalhamos com base em desenhos fornecidos pelo cliente ou em amostras físicas das lâminas. Um gabarito de levantamento dimensional está disponível mediante solicitação para a medição precisa do perfil da lâmina e dos orifícios de montagem escareados.",
         },
       ],
     },
   },
   {
     id: "guillotine-shear-blades",
-    name: "Guillotine Shear Blades",
+    name: "Lâminas de tesoura guilhotina",
     fullName:
-      "Precision Guillotine Shear Blades for Hydraulic & Mechanical Sheet Metal Shearing Machines",
+      "Lâminas de precisão para tesouras guilhotina destinadas a máquinas hidráulicas e mecânicas de corte de chapas metálicas",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Guillotine Shear Blades",
+    categoryDisplay: "Lâminas de tesoura guilhotina",
     image:
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
-    badge: "Sheet Metal",
+    badge: "Chapa metálica",
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
@@ -2840,9 +2863,9 @@ export const blades: Blade[] = [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
     description:
-      "High-precision guillotine shear blades in D2 (Cr12MoV), 6CrW2Si, and 9CrSi tool steels for hydraulic and mechanical shearing machines. Surface-ground to ±0.05 mm full-length parallelism. Upper and lower blade sets for machines up to 16 mm × 4000 mm capacity. OEM-compatible replacements for TRUMPF, AMADA, LVD, Durma, and Bystronic guillotines.",
+      "Lâminas de guilhotina de alta precisão facas de cisalhamento em aços para ferramentas D2 (Cr12MoV), 6CrW2Si e 9CrSi, destinadas a máquinas de corte hidráulicas e mecânicas. Retificado superficialmente para obter paralelismo em todo o comprimento com tolerância de ±0,05 mm. Conjuntos de lâminas superiores e inferiores para máquinas com capacidade de até 16 mm × 4.000 mm. Peças de reposição compatíveis com OEM para guilhotinas TRUMPF, AMADA, LVD, Durma e Bystronic.",
     fullDescription:
-      "Guillotine shear blades are the critical cutting components in hydraulic and mechanical plate shearing machines used across steel service centers, shipyards, structural fabrication shops, and automotive stamping plants. Every cut cycle subjects the blade to enormous shear force concentrated along a narrow edge line — the blade must maintain razor-sharp edge geometry, absolute parallelism, and uniform hardness across its full length to deliver burr-free, distortion-free sheet metal cuts.\n\nSureay manufactures guillotine shear blades from premium tool steels — D2 (Cr12MoV), 6CrW2Si, and 9CrSi — each selected for a specific thickness range and material hardness profile. Every blade is vacuum heat-treated in-house and precision surface-ground to ±0.05 mm full-length parallelism, ensuring the shear gap between upper and lower blades remains uniform from end to end. This eliminates the twist, bow, and edge burring that plague poorly manufactured replacement blades.\n\n## Alloy Selection by Shearing Application\n\n**D2 / Cr12MoV (HRC 58–62):** The premium specification for shearing stainless steel (304, 316L), high-strength low-alloy (HSLA) plates, Hardox wear plate, and pre-painted coil. D2's 12% chromium-carbide matrix provides the extreme abrasion resistance needed when cutting work-hardening austenitic stainless steels that rapidly dull softer blade grades.\n\n**6CrW2Si (HRC 55–58):** A shock-resisting alloy that combines excellent edge hardness with core toughness. Specified for medium-to-heavy plate shearing (6–25 mm mild steel) and mixed-material production environments where the blade occasionally encounters harder-than-expected stock. The tungsten and chromium content provides high-temperature temper resistance.\n\n**9CrSi (HRC 55–60):** A cost-effective alloy for high-volume mild steel and carbon steel shearing (up to 12 mm). 9CrSi delivers reliable edge life on standard structural steel, galvanized sheet, and floor plate at a lower per-blade cost than D2.\n\n## Upper & Lower Blade Sets\n\nGuillotine shearing machines operate with paired upper (moving ram) and lower (fixed bed) blades. Sureay supplies matched upper and lower blade sets ground from the same steel batch, ensuring identical hardness and thermal expansion behavior across the pair. Each set is supplied with mounting holes drilled to the exact OEM bolt pattern of your machine.\n\n## Multi-Edge Reversible Blades\n\nFor standard rectangular-section blades, we offer 2-edge and 4-edge reversible profiles. When one cutting edge wears, the operator loosens the mounting bolts, flips or rotates the blade to expose a fresh edge, and retorques. This multiplies effective blade life by 2× to 4× before regrinding or replacement is required — drastically reducing annual tooling cost per cut.\n\n## Segment Blade Systems for Long Tables\n\nFor shearing machines wider than 3200 mm, single-piece blades become impractical due to heat treatment distortion risk. Sureay manufactures precision segment blade systems — multiple shorter blades indexed end-to-end on the machine bed — with matched end-to-end height tolerance (±0.02 mm) to ensure a continuous, gap-free shear line across the full table width.",
+      "As guilhotinas facas de cisalhamento são os componentes essenciais de corte em máquinas hidráulicas e mecânicas de corte de chapas, utilizadas em centros de serviços siderúrgicos, estaleiros, oficinas de fabricação de estruturas e fábricas de estampagem automotiva. Cada ciclo de corte submete a lâmina a uma enorme força de cisalhamento concentrada ao longo de uma linha estreita na borda — a lâmina deve manter uma geometria de borda afiada como uma lâmina de barbear, paralelismo absoluto e dureza uniforme em todo o seu comprimento para proporcionar cortes em chapas metálicas sem rebarbas e sem distorções.\n\nA Sureay fabrica as guilhotinas facas de cisalhamento a partir de aços para ferramentas de alta qualidade — D2 (Cr12MoV), 6CrW2Si e 9CrSi —, cada um selecionado para uma faixa específica de espessura e perfil de dureza do material. Cada lâmina é submetida a tratamento térmico a vácuo em nossas instalações e retificada com precisão na superfície para um paralelismo em todo o comprimento de ±0,05 mm, garantindo que a folga de cisalhamento entre as lâminas superior e inferior permaneça uniforme de ponta a ponta. Isso elimina a torção, o arqueamento e as rebarbas nas bordas que afetam as lâminas de reposição mal fabricadas.\n\n## Seleção de liga por aplicação de cisalhamento\n\n**D2 / Cr12MoV (HRC 58–62):** A especificação premium para cisalhamento de aço inoxidável (304, 316L), chapas de alta resistência e baixa liga (HSLA), chapas de desgaste Hardox e bobinas pré-pintadas. A matriz de 12% de carboneto de cromo da D2 oferece a extrema resistência à abrasão necessária ao cortar aços inoxidáveis austeníticos com endurecimento por deformação, que rapidamente embotam as lâminas de classes mais macias.\n\n**6CrW2Si (HRC 55–58):** Uma liga resistente a impactos que combina excelente dureza de gume com tenacidade do núcleo. Indicada para cisalhamento de chapas de espessura média a grossa (6–25 mm de aço macio) e ambientes de produção com materiais mistos, nos quais a lâmina ocasionalmente encontra material mais duro do que o esperado. O teor de tungstênio e cromo proporciona resistência ao revenimento em altas temperaturas.\n\n**9CrSi (HRC 55–60):** Uma liga econômica para corte em grande volume de aço macio e aço carbono (até 12 mm). A 9CrSi oferece vida útil confiável da lâmina em aço estrutural padrão, chapas galvanizadas e chapas de piso a um custo por lâmina menor do que o da D2.\n\n## Conjuntos de lâminas superior e inferior\n\nAs máquinas de corte por guilhotina operam com pares de lâminas superiores (curso móvel) e inferiores (base fixa). A Sureay fornece conjuntos combinados de lâminas superiores e inferiores retificadas a partir do mesmo lote de aço, garantindo dureza e comportamento de expansão térmica idênticos em todo o par. Cada conjunto é fornecido com furos de montagem perfurados de acordo com o padrão exato de parafusos OEM da sua máquina.\n\n## Lâminas reversíveis com múltiplas arestas\n\nPara lâminas padrão de seção retangular, oferecemos perfis reversíveis de 2 e 4 arestas. Quando uma aresta de corte se desgasta, o operador afrouxa os parafusos de fixação, vira ou gira a lâmina para expor uma aresta nova e reapertá-la. Isso multiplica a vida útil efetiva da lâmina por 2 a 4 vezes antes que seja necessário reafiar ou substituir — reduzindo drasticamente o custo anual de ferramentas por corte.\n\n## Sistemas de lâminas segmentadas para mesas longas\n\nPara máquinas de cisalhamento com largura superior a 3.200 mm, as lâminas de peça única tornam-se impraticáveis devido ao risco de distorção. A Sureay fabrica sistemas de lâminas segmentadas de precisão — várias lâminas mais curtas indexadas de ponta a ponta na base da máquina — com tolerância de altura combinada de ponta a ponta (±0,02 mm) para garantir uma linha de corte contínua e sem folgas em toda a largura da mesa.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2892,41 +2915,41 @@ export const blades: Blade[] = [
     components: [
       {
         id: "d2-stainless-shearing",
-        tag: "HEAVY PLATE",
-        title: "D2 for Stainless & HSLA Plate",
+        tag: "CHAPA GROSSA",
+        title: "D2 para chapas de aço inoxidável e HSLA",
         description:
-          "Premium D2 (Cr12MoV) deep-hardened to HRC 58–62. The high chromium-carbide matrix withstands the extreme abrasive wear and work-hardening forces encountered when shearing 304/316L stainless steel, HSLA plate, and pre-painted coil stock.",
+          "Aço Premium D2 (Cr12MoV) com endurecimento profundo a HRC 58–62. A matriz rica em carboneto de cromo resiste ao desgaste abrasivo extremo e às forças de endurecimento por deformação encontradas durante o corte de aço inoxidável 304/316L, chapas HSLA e bobinas pré-pintadas.",
       },
       {
         id: "6crw2si-shock",
-        tag: "SHOCK RESISTANCE",
-        title: "6CrW2Si for Medium-Heavy Plate",
+        tag: "RESISTÊNCIA A IMPACTOS",
+        title: "6CrW2Si para chapas de espessura média a pesada",
         description:
-          "Shock-resisting 6CrW2Si alloy combines hard cutting edges (HRC 55–58) with massive core toughness. Engineered for 6–25 mm mild steel plate and mixed-material production where unexpected hard inclusions would chip a brittle blade.",
+          "A liga 6CrW2Si, resistente a impactos, combina arestas de corte duras (HRC 55–58) com alta tenacidade no núcleo. Projetada para chapas de aço macio de 6 a 25 mm e para a produção de materiais mistos, onde inclusões duras inesperadas poderiam causar lascas em uma lâmina frágil.",
       },
       {
         id: "parallelism-precision",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
+        tag: "TOLERÂNCIA",
+        title: "Paralelismo de precisão (±0,05 mm)",
         description:
-          "Every blade is surface-ground to ±0.05 mm full-length parallelism across lengths up to 4000 mm. This ensures a uniform shear gap between upper and lower blades, delivering burr-free cuts and preventing twist and bow in the sheared sheet.",
+          "Cada lâmina é retificada superficialmente para garantir um paralelismo em todo o comprimento de ±0,05 mm, em comprimentos de até 4.000 mm. Isso garante uma folga de corte uniforme entre as lâminas superior e inferior, proporcionando cortes sem rebarbas e evitando torções e empenamentos na chapa cortada.",
       },
       {
         id: "discontinued-machine-matching",
-        tag: "OEM MATCHING",
-        title: "Discontinued Machine? Send the Old Blade",
+        tag: "COMPATIBILIDADE COM OEM",
+        title: "Máquina fora de linha? Envie a lâmina antiga",
         description:
-          "We build from a worn sample, not a catalogue number. Length, width, thickness, bevel and hole pattern are measured off the blade you send and reproduced to drawing — which is how we supply machines whose manufacturer stopped listing parts years ago. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira and Ursviken sets are held as standard geometry; everything else is matched to your sample.",
+          "Trabalhamos a partir de uma amostra usada, e não de um número de catálogo. Comprimento, largura, espessura, chanfro e padrão de furos são medidos na lâmina que você enviar e reproduzidos de acordo com o desenho — e é assim que fornecemos máquinas cujo fabricante deixou de listar peças há anos. Os conjuntos da TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira e Ursviken são mantidos como geometria padrão; todo o restante é adaptado à sua amostra.",
       },
     ],
     dimensionLabels: {
-      col0: "Machine Capacity",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      col4: "Pcs / Set",
+      col0: "Capacidade da máquina",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
+      col4: "Unidades / Conjunto",
       caption:
-        "* Standard dimensions for common hydraulic & mechanical guillotine shearing machines. Each set includes upper and lower blades. Segment designs for tables wider than 4000 mm available on request. Custom lengths, multi-edge profiles, and OEM bolt patterns manufactured to drawing.",
+        "* Dimensões padrão para máquinas de corte tipo guilhotina hidráulicas e mecânicas comuns. Cada conjunto inclui lâminas superior e inferior. Modelos segmentados para mesas com largura superior a 4.000 mm disponíveis mediante solicitação. Comprimentos personalizados, perfis com múltiplas arestas e padrões de parafusos OEM fabricados conforme desenho.",
     },
     standardDimensions: [
       {
@@ -2999,89 +3022,91 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "What blade clearance should I set on a guillotine shear?",
+          question:
+            "Qual deve ser a folga entre as lâminas em uma tesoura guilhotina?",
           answer:
-            "Clearance is set as a percentage of material thickness, not as a fixed number, and it has to move when the material does. Mild and structural steel (S235, A36) runs at 4–6%. Stainless 304 and 316L needs 6–9%, because it work-hardens at the cut edge and mild-steel clearance overloads the blade. Aluminium wants 3–4% — it is soft enough that a wide gap lets it draw and roll instead of fracturing. HSLA and high-strength plate takes 7–10%. Galvanized and pre-painted sheet sits at the lower end of 4–6%, since a wide gap drags and flakes the coating along the cut line. To put that in millimetres: 6 mm mild steel at 5% wants about 0.30 mm of gap, while the same 6 mm in 304 at 8% wants closer to 0.48 mm. Treat these as starting points — your machine manual is the authority, and blade condition, rake angle and hold-down pressure all shift the practical window.",
+            "A folga é definida como uma porcentagem da espessura do material, e não como um valor fixo, e deve se ajustar conforme o movimento do material. O aço macio e o aço estrutural (S235, A36) operam com uma folga de 4 a 6%. O aço inoxidável 304 e 316L requer 6 a 9%, pois sofre endurecimento por deformação na borda de corte, e a folga utilizada para o aço macio sobrecarrega a lâmina. O alumínio requer 3 a 4% — ele é macio o suficiente para que uma folga ampla permita que ele se deforme e enrole, em vez de se fraturar. O aço HSLA e as chapas de alta resistência exigem 7–10%. Chapas galvanizadas e pré-pintadas ficam na faixa inferior de 4–6%, já que uma folga ampla arrasta e descama o revestimento ao longo da linha de corte. Em milímetros: o aço macio de 6 mm com 5% requer uma folga de cerca de 0,30 mm, enquanto o mesmo aço de 6 mm do tipo 304 com 8% requer uma folga mais próxima de 0,48 mm. Considere esses valores como pontos de partida — o manual da sua máquina é a referência definitiva, e as condições da lâmina, o ângulo de inclinação e a pressão de fixação alteram a faixa prática.",
         },
         {
           question:
-            "Which steel grade should I choose for shearing 304 stainless steel on a hydraulic guillotine?",
+            "Qual tipo de aço devo escolher para cortar aço inoxidável 304 em uma guilhotina hidráulica?",
           answer:
-            "D2 (Cr12MoV) hardened to HRC 58–62 is the recommended grade for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide content withstands the severe work-hardening abrasion imposed by austenitic stainless. For standard mild steel, 9CrSi provides excellent edge life at a lower cost.",
+            "O D2 (Cr12MoV), temperado a HRC 58–62, é a liga recomendada para aço inoxidável (304, 316L) e chapas de alta resistência, como o Hardox. O alto teor de carboneto de cromo do D2 resiste à severa abrasão causada pelo endurecimento por deformação imposta pelo aço inoxidável austenítico. Para o aço macio padrão, o 9CrSi oferece excelente vida útil do fio de corte a um custo menor.",
         },
         {
           question:
-            "Why do my guillotine shear blades chip when cutting mixed or heavier plate?",
+            "Por que minha guilhotina facas de cisalhamento apresenta falhas ao cortar chapas mistas ou mais pesadas?",
           answer:
-            "Chipping usually indicates the blade alloy is too hard and brittle for the shearing load. If you are cutting 10–25 mm mixed plate or occasionally encounter harder stock, switch from D2 to 6CrW2Si. This shock-resisting alloy provides a controlled lower hardness (HRC 55–58) with massive core toughness, absorbing impact loads elastically instead of chipping.",
+            "A lasca geralmente indica que a liga da lâmina é dura e frágil demais para a carga de cisalhamento. Se você estiver cortando chapas mistas de 10 a 25 mm ou, ocasionalmente, se deparar com materiais mais duros, troque a D2 pela 6CrW2Si. Essa liga resistente a choques oferece uma dureza controlada mais baixa (HRC 55–58) com alta tenacidade no núcleo, absorvendo cargas de impacto de forma elástica em vez de lascar.",
         },
         {
           question:
-            "What causes burrs and twist on the sheared edge, and how do guillotine shear blades solve this?",
+            "O que causa rebarbas e torção na borda cortada, e como a guilhotina facas de cisalhamento resolve esse problema?",
           answer:
-            "Burrs and twist are almost always caused by uneven blade-to-blade contact — when the shear gap varies from one end of the blade to the other. This concentrates shear force at one point, producing compressive rollover burrs and sheet distortion. Our blades are surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform gap across the entire cut length for clean, burr-free shearing.",
+            "Rebarbas e torção são quase sempre causadas pelo contato irregular entre as lâminas — quando a folga de corte varia de uma extremidade da lâmina à outra. Isso concentra a força de cisalhamento em um único ponto, produzindo rebarbas compressivas por rolagem e distorção da chapa. Nossas lâminas são retificadas superficialmente para garantir um paralelismo de ±0,05 mm em todo o comprimento, assegurando uma folga uniforme ao longo de todo o comprimento de corte para um corte limpo e sem rebarbas.",
         },
         {
           question:
-            "How do 4-edge reversible guillotine shear blades reduce my annual tooling cost?",
+            "Como a guilhotina reversível de 4 lâminas facas de cisalhamento reduz meu custo anual com ferramentas?",
           answer:
-            "A 4-edge reversible blade provides four independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, rotate the blade 90° to expose a fresh edge, and retorque. This multiplies the blade's installed lifespan by 4× before regrinding is required, drastically reducing per-cut tooling cost on high-volume shearing lines.",
+            "Uma lâmina reversível de 4 gumes oferece quatro faces de corte independentes a partir de um único corpo de lâmina. Quando o gume 1 apresentar desgaste, afrouxe os parafusos de fixação, gire a lâmina 90° para expor um gume novo e reaparafuse com o torque adequado. Isso multiplica por 4 a vida útil da lâmina antes que seja necessário reafiar, reduzindo drasticamente o custo de ferramentas por corte em linhas de corte de alto volume.",
         },
         {
           question:
-            "What is the maximum single-piece blade length Sureay can manufacture?",
+            "Qual é o comprimento máximo de uma lâmina individual que a Sureay pode fabricar?",
           answer:
-            "We manufacture single-piece guillotine shear blades up to 4000 mm in length. For machines wider than 4000 mm, we produce precision segment blade sets — multiple blades indexed end-to-end with matched height tolerance (±0.02 mm) — to create a continuous, gap-free shear line across the full table width.",
+            "Fabricamos guilhotinas de peça única facas de cisalhamento com comprimento de até 4.000 mm. Para máquinas com largura superior a 4.000 mm, produzimos conjuntos de lâminas segmentadas de precisão — várias lâminas indexadas de ponta a ponta com tolerância de altura compatível (±0,02 mm) — para criar uma linha de corte contínua e sem intervalos em toda a largura da mesa.",
         },
         {
           question:
-            "How do I select the correct blade dimensions for my specific guillotine shearing machine?",
+            "Como faço para selecionar as dimensões corretas da lâmina para a minha máquina de corte guilhotina específica?",
           answer:
-            "Blade dimensions are determined by your machine's cutting capacity (maximum sheet thickness × table width). For example, a 6 × 3200 mm machine uses blades sized 1100 × 80 × 20 mm, supplied as a 6-piece segmented set. Send us your machine model number or a drawing of your existing blade, and we will confirm the exact dimensions, bolt pattern, and recommended steel grade.",
+            "As dimensões da lâmina são determinadas pela capacidade de corte da sua máquina (espessura máxima da chapa × largura da mesa). Por exemplo, uma máquina de 6 × 3.200 mm utiliza lâminas com as dimensões 1.100 × 80 × 20 mm, fornecidas como um conjunto segmentado de 6 peças. Envie-nos o número do modelo da sua máquina ou um desenho da lâmina atual, e confirmaremos as dimensões exatas, o padrão de fixação e o tipo de aço recomendado.",
         },
       ],
       company: [
         {
           question:
-            "Can you manufacture replacement blades to match my TRUMPF, AMADA, LVD, or Durma guillotine exactly?",
+            "Vocês podem fabricar lâminas de reposição que se encaixem perfeitamente na minha guilhotina TRUMPF, AMADA, LVD ou Durma?",
           answer:
-            "Yes. We carry OEM-matching dimensions and bolt patterns for TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, and Adira shearing machines. Supply your machine model number or a worn blade sample and we will confirm fitment. Custom lengths are manufactured to drawing within 15 working days.",
+            "Sim. Oferecemos dimensões e padrões de parafusos compatíveis com os originais (OEM) para máquinas de corte TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati e Adira. Forneça o número do modelo da sua máquina ou uma amostra de lâmina desgastada e confirmaremos a compatibilidade. Comprimentos personalizados são fabricados conforme desenho em até 15 dias úteis.",
         },
         {
           question:
-            "Do you supply both upper and lower guillotine shear blade sets?",
+            "Vocês fornecem conjuntos de lâminas de corte tipo guilhotina, tanto para a parte superior quanto para a inferior?",
           answer:
-            "Yes. Every standard order includes matched upper (ram) and lower (bed) blade sets, ground from the same steel batch to ensure identical hardness, grain structure, and thermal expansion behavior across the pair. Mounting holes are drilled to your exact OEM bolt pattern.",
+            "Sim. Todo pedido padrão inclui conjuntos de lâminas superiores (ram) e inferiores (bed) combinadas, retificadas a partir do mesmo lote de aço para garantir dureza, estrutura de grão e comportamento de expansão térmica idênticos em todo o par. Os orifícios de montagem são perfurados de acordo com o padrão exato dos parafusos do fabricante original (OEM).",
         },
         {
           question:
-            "Can Sureay manufacture replacement blades for older or discontinued shearing machines?",
+            "A Sureay pode fabricar lâminas de reposição para máquinas de corte mais antigas ou fora de linha?",
           answer:
-            "Yes. For discontinued or rare guillotine models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile, edge angles, and counter-sunk mounting holes. We have successfully produced replacements for machines dating back to the 1980s.",
-        },
-        {
-          question: "What quality documentation ships with each blade set?",
-          answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record verifying full-length parallelism, and a heat treatment batch certificate. For OEM qualification programs, full CMM reports and steel mill material certificates are available on request.",
+            "Sim. No caso de modelos de guilhotinas descontinuados ou raros, trabalhamos com base em desenhos fornecidos pelo cliente ou em amostras físicas das lâminas. Um modelo de levantamento dimensional está disponível mediante solicitação para a medição precisa do perfil da lâmina, dos ângulos das arestas e dos orifícios de montagem escareados. Já produzimos com sucesso peças de reposição para máquinas que datam da década de 1980.",
         },
         {
           question:
-            "What is the typical lead time for standard guillotine shear blades?",
+            "Que tipo de documentação é fornecida com cada conjunto de lâminas?",
           answer:
-            "Standard sizes (listed in our dimension table) ship within 7–10 working days. Custom sizes, special alloy grades, or high-volume orders typically require 15–20 working days. We offer expedited production on request for urgent machine-down situations.",
+            "Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional que comprova o paralelismo em todo o comprimento e um certificado de lote tratamento térmico. Para programas de qualificação de fabricantes de equipamentos originais (OEM), relatórios completos de CMM e certificados de material da siderúrgica estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Qual é o prazo de entrega normal para a guilhotina padrão facas de cisalhamento?",
+          answer:
+            "Os tamanhos padrão (listados em nossa tabela de dimensões) são enviados em até 7 a 10 dias úteis. Tamanhos personalizados, tipos especiais de ligas ou pedidos de grande volume geralmente levam de 15 a 20 dias úteis. Oferecemos produção acelerada, mediante solicitação, para situações urgentes de paralisação de máquinas.",
         },
       ],
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Three-Knife Trimmer Blades",
+    name: "Lâminas para cortador de três facas",
     fullName:
-      "Premium HSS & Carbide Three-Knife Trimmer Blades for Bookbinding",
+      "Lâminas de corte de três facas de alta qualidade em HSS e metal duro para encadernação",
     category: "shear_blades",
     sector: "paper",
-    categoryDisplay: "Bookbinding Knives",
-    badge: "OEM Fit",
+    categoryDisplay: "Facas para encadernação",
+    badge: "Compatibilidade OEM",
     badgeColor: "blue",
     image:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
@@ -3091,9 +3116,9 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
     description:
-      "Matched 3-knife replacement sets (1 Front, 2 Sides) for high-volume print finishing. Bimetallic construction with 18% Tungsten HSS or solid Tungsten Carbide (TC) cutting edges. Direct OEM fit for Müller Martini, Kolbus, and Wohlenberg trimmers.",
+      "Conjuntos de substituição de 3 lâminas combinadas (1 frontal, 2 laterais) para acabamento de impressão de alto volume. Construção bimetálica com gumes de corte em HSS com 18% de tungstênio ou carboneto de tungstênio (TC) maciço. Compatibilidade direta com o equipamento original (OEM) para cortadoras Müller Martini, Kolbus e Wohlenberg.",
     fullDescription:
-      "In high-speed commercial bindery and print finishing operations, the three-knife trimmer is the final, critical step before packaging. Substandard trimmer blades cause spine splitting, cover chipping, and PUR/EVA glue build-up, turning finished books into expensive scrap.\n\nSureay Three-Knife Trimmer sets are manufactured to precise OEM specifications to guarantee flawless fore-edges, heads, and tails on thick catalogs, magazines, and perfect-bound books. This three-knife assembly — front, left, and right — is also referred to in the trade as a **combi head** or combination trim head.\n\n## Advanced Bimetallic Construction\n\nSolid high-speed steel blades of this size are too brittle and prone to snapping under the immense clamping pressure of a book trimmer. We utilize an advanced **Bimetallic Inlay** manufacturing process. A premium cutting edge—either 18% Tungsten HSS or micro-grain Tungsten Carbide—is vacuum-brazed onto a shock-absorbing, high-tensile spring steel body. This delivers the ultimate combination: an incredibly hard, wear-resistant cutting edge backed by a flexible, shatter-proof core.\n\n## Material Grades for the Bindery\n\n- **18% Tungsten HSS (High-Speed Steel):** The industry standard for general commercial printing. Delivers an extremely sharp, fine edge that easily handles standard uncoated and lightly coated book stocks.\n- **Tungsten Carbide (TC / Widia Equivalent):** The absolute top-tier specification. TC blades deliver up to **5× to 10× the service life** of HSS. They are mandatory when cutting heavy recycled paper, highly abrasive gloss-coated art paper, or books bound with tough PUR adhesives.\n\n## Anti-Glue Mirror Finish\n\nModern perfect-bound books use aggressive EVA or PUR adhesives. During the trim cycle, friction heats the glue, causing it to smear and stick to the blade face. Sureay trimmer blades are precision-lapped to a Ra ≤0.1 μm mirror finish, significantly reducing friction and adhesive adherence, ensuring a clean cut cycle after cycle.",
+      "Em operações comerciais de encadernação e acabamento de impressão em alta velocidade, o cortador de três lâminas é a etapa final e crítica antes da embalagem. Lâminas de corte de baixa qualidade causam rachaduras na lombada, lascas na capa e acúmulo de cola PUR/EVA, transformando livros acabados em sucata cara.\n\nOs conjuntos de cortadores de três lâminas da Sureay são fabricados de acordo com especificações precisas dos fabricantes de equipamentos originais (OEM) para garantir bordas frontais, cabeças e caudas impecáveis em catálogos grossos, revistas e livros com encadernação perfeita. Esse conjunto de três lâminas — dianteira, esquerda e direita — também é conhecido no setor como **cabeçote combinado** ou cabeçote de corte combinado.\n\n## Construção bimetálica avançada\n\nLâminas sólidas de aço rápido desse tamanho são muito frágeis e propensas a quebrar sob a imensa pressão de fixação de uma cortadora de livros. Utilizamos um processo avançado de fabricação com **incrustração bimetálica**. Uma lâmina de corte premium — seja de aço rápido com 18% de tungstênio (HSS) ou de carboneto de tungstênio de microgrão — é soldada a vácuo em um corpo de aço para molas de alta resistência à tração e com propriedades de absorção de choque. Isso proporciona a combinação definitiva: uma lâmina de corte incrivelmente dura e resistente ao desgaste, apoiada por um núcleo flexível e à prova de quebra.\n\n## Tipos de materiais para encadernação\n\n- **Aço de alta velocidade (HSS) com 18% de tungstênio:** O padrão da indústria para impressão comercial em geral. Oferece uma lâmina extremamente afiada e fina, que lida facilmente com papéis para livros padrão, não revestidos e levemente revestidos.\n- **Carboneto de tungstênio (TC / equivalente a Widia):** A especificação de nível mais alto. As lâminas de TC oferecem uma vida útil de até **5 a 10 vezes maior** do que as de HSS. Elas são obrigatórias ao cortar papel reciclado pesado, papel artístico com revestimento brilhante altamente abrasivo ou livros encadernados com adesivos PUR resistentes.\n\n## Acabamento espelhado anti-cola\n\nOs livros modernos com encadernação perfeita utilizam adesivos EVA ou PUR agressivos. Durante o ciclo de corte, o atrito aquece a cola, fazendo com que ela se espalhe e grude na superfície da lâmina. As lâminas de corte da Sureay são lapidadas com precisão até um acabamento espelhado com Ra ≤0,1 μm, reduzindo significativamente o atrito e a aderência da cola, garantindo um corte limpo ciclo após ciclo.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3133,33 +3158,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "bimetallic-inlay",
-        tag: "METALLURGY",
-        title: "Bimetallic Inlay Technology",
+        tag: "METALURGIA",
+        title: "Tecnologia de incrustação bimetálica",
         description:
-          "We braze a premium High-Speed Steel (HSS) or Tungsten Carbide edge onto a tough, flexible alloy steel body. This gives you the extreme wear resistance needed for coated paper, without the risk of the blade snapping under heavy clamping pressure.",
+          "Soldamos uma lâmina de alta qualidade em aço rápido (HSS) ou carboneto de tungstênio a um corpo de liga de aço resistente e flexível. Isso proporciona a extrema resistência ao desgaste necessária para papel revestido, sem o risco de a lâmina se partir sob forte pressão de fixação.",
       },
       {
         id: "matched-sets",
-        tag: "CONFIGURATION",
-        title: "Matched 3-Piece Sets",
+        tag: "CONFIGURAÇÃO",
+        title: "Conjuntos de 3 peças combinadas",
         description:
-          "Supplied as a ready-to-install set (1 Front, 1 Left, 1 Right). All three blades are precision surface-ground in the same batch to a ±0.01 mm thickness tolerance, ensuring zero-downtime installation and perfect alignment.",
+          "Fornecido como um conjunto pronto para instalação (1 frontal, 1 esquerda, 1 direita). Todas as três lâminas são retificadas com precisão no mesmo lote, com uma tolerância de espessura de ±0,01 mm, garantindo uma instalação sem tempo de inatividade e um alinhamento perfeito.",
       },
       {
         id: "anti-glue-finish",
-        tag: "PERFORMANCE",
-        title: "Anti-Glue Mirror Finish",
+        tag: "DESEMPENHO",
+        title: "Acabamento espelhado antiaderente",
         description:
-          "Cutting through book spines exposes the blade to hot, sticky PUR and EVA adhesives. Our blades are lapped to a microscopic mirror finish, preventing glue drag that would otherwise smear across the book’s edge.",
+          "O corte das lombadas dos livros expõe a lâmina a adesivos PUR e EVA quentes e pegajosos. Nossas lâminas são polidas até atingirem um acabamento espelhado microscópico, evitando que a cola se espalhe pela borda do livro.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Machine Model",
-      col1: "Blade Position",
-      col2: "Dimensions (L × W × T)",
-      col3: "Mounting Holes / Slots",
+      col0: "Modelo da máquina OEM",
+      col1: "Posição da lâmina",
+      col2: "Dimensões (C × L × P)",
+      col3: "Orifícios de montagem / Ranhuras",
       caption:
-        "* Dimensions reflect standard Müller Martini and Kolbus models. We carry OEM blueprints for Wohlenberg and Perfecta. Custom hole patterns machined to order.",
+        "* As dimensões correspondem aos modelos padrão da Müller Martini e da Kolbus. Dispomos de desenhos técnicos originais (OEM) para a Wohlenberg e a Perfecta. Padrões de furos personalizados usinados sob encomenda.",
     },
     standardDimensions: [
       {
@@ -3208,67 +3233,68 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "When should I upgrade from HSS to Tungsten Carbide (TC) trimmer blades?",
+            "Quando devo trocar as lâminas de corte HSS pelas de carboneto de tungstênio (TC)?",
           answer:
-            "You should upgrade to Tungsten Carbide (TC) when cutting high volumes of recycled paper, gloss-coated art paper, or thick books bound with heavy PUR adhesive. Coated papers contain clay and minerals that dull HSS very quickly. TC blades provide 5 to 10 times the cutting life of HSS, drastically reducing machine downtime for blade changes.",
+            "Você deve optar por lâminas de carboneto de tungstênio (TC) ao cortar grandes volumes de papel reciclado, papel artístico com revestimento brilhante ou livros grossos encadernados com adesivo PUR de alta densidade. Papéis revestidos contêm argila e minerais que embotam o HSS muito rapidamente. As lâminas de TC oferecem uma vida útil de corte de 5 a 10 vezes maior do que a do HSS, reduzindo drasticamente o tempo de inatividade da máquina para trocas de lâmina.",
         },
         {
           question:
-            "Why do my trimmer blades keep tearing or chipping the book spine?",
+            "Por que as lâminas do meu cortador ficam rasgando ou lascando a lombada do livro?",
           answer:
-            "Spine tearing is usually caused by one of three things: (1) The blade is dull and needs changing; (2) The bevel angle is incorrect for the type of paper/glue being cut; or (3) Adhesive build-up on the back of the blade is causing ‘drag’. Ensure your blades have a mirror-lapped finish to prevent glue adhesion, and consider upgrading to HSS or Carbide for better edge retention.",
-        },
-        {
-          question: "Can Tungsten Carbide (TC) trimmer blades be resharpened?",
-          answer:
-            "Yes, but they must be sharpened using specialized diamond grinding wheels. Using standard aluminum oxide or silicon carbide wheels will destroy the carbide edge and generate micro-cracks. If your local sharpening service does not have the correct diamond wheel equipment, we recommend sending them to a specialized industrial grinder.",
+            "O rasgo da espinha é geralmente causado por um destes três fatores: (1) A lâmina está cega e precisa ser trocada; (2) O ângulo de bisel está incorreto para o tipo de papel/cola que está sendo cortado; ou (3) O acúmulo de adesivo na parte de trás da lâmina está causando “resistência”. Certifique-se de que suas lâminas tenham um acabamento polido espelhado para evitar a aderência da cola e considere a possibilidade de trocar por lâminas de HSS ou carboneto para uma melhor retenção do fio.",
         },
         {
           question:
-            "What is the correct installation sequence for a three-knife set?",
+            "As lâminas de aparador de carboneto de tungstênio (TC) podem ser reafiadas?",
           answer:
-            "Because the side knives often shear slightly against the cutting stick or front knife path, alignment is critical. Install all three blades loosely first. Set and torque the front knife to establish the head datum, then alternate tightening the side knives. Since our 3-piece sets are ground to an identical thickness tolerance, they prevent the uneven clamping pressure that causes binding.",
+            "Sim, mas elas devem ser afiadas com rebolos de diamante especializados. O uso de rebolos comuns de óxido de alumínio ou carboneto de silício destruirá o gume de carboneto e causará microfissuras. Se o serviço de afiação da sua região não dispuser do equipamento adequado com rebolos de diamante, recomendamos enviá-las a uma empresa especializada em afiação industrial.",
         },
         {
           question:
-            "What does 'combi head' or 'spare knives for combi head' mean?",
+            "Qual é a sequência correta de instalação de um conjunto de três lâminas?",
           answer:
-            "The combi head (or combination trim head) is the three-knife assembly on a perfect binder or three-knife trimmer that cuts a book's head, tail, and foredge in a single cycle. 'Spare knives for combi head' refers to the replacement front + side knife set for that assembly — exactly what we supply here.",
+            "Como as lâminas laterais costumam deslizar levemente contra a barra de corte ou o trajeto da lâmina frontal, o alinhamento é fundamental. Instale primeiro as três lâminas sem apertá-las totalmente. Ajuste e aperte a lâmina frontal para estabelecer o ponto de referência do cabeçote e, em seguida, vá apertando as lâminas laterais alternadamente. Como nossos conjuntos de três peças são retificados com uma tolerância de espessura idêntica, eles evitam a pressão de fixação desigual que causa o emperramento.",
+        },
+        {
+          question:
+            "O que significa “cabeçote combinado” ou “facas sobressalentes para cabeçote combinado”?",
+          answer:
+            "A cabeça combinada (ou cabeça de corte combinada) é o conjunto de três lâminas presente em uma encadernadora ou cortadora de três lâminas que corta a cabeça, a cauda e a borda frontal de um livro em um único ciclo. “Lâminas sobressalentes para cabeça combinada” refere-se ao conjunto de lâminas dianteiras e laterais de reposição para esse conjunto — exatamente o que fornecemos aqui.",
         },
       ],
       company: [
         {
           question:
-            "Do your trimmer blades fit Kolbus, Wohlenberg, and Perfecta machines?",
+            "As lâminas do seu cortador são compatíveis com as máquinas Kolbus, Wohlenberg e Perfecta?",
           answer:
-            "Yes. We maintain a comprehensive database of exact OEM blueprints for all major European and Japanese bookbinding lines, including Müller Martini, Kolbus, Wohlenberg, Perfecta, and Horizon. The mounting holes, slots, and threaded inserts will be a perfect drop-in fit.",
+            "Sim. Mantemos um banco de dados abrangente com desenhos técnicos originais (OEM) precisos para todas as principais linhas de encadernação europeias e japonesas, incluindo Müller Martini, Kolbus, Wohlenberg, Perfecta e Horizon. Os orifícios de montagem, as ranhuras e as inserções roscadas se encaixam perfeitamente.",
         },
         {
           question:
-            "My Wohlenberg trimmer model isn't listed in the dimension table above — can you still supply blades?",
+            "O modelo da minha cortadora Wohlenberg não consta na tabela de dimensões acima — vocês ainda podem fornecer lâminas?",
           answer:
-            "Yes. The table above shows our most common stock sizes (Müller Martini and Kolbus). For Wohlenberg and other models not listed, send us your machine model number, a blueprint, or a worn blade sample — we'll confirm the exact length, width, thickness, and mounting pattern before quoting.",
+            "Sim. A tabela acima mostra os tamanhos de lâmina mais comuns que oferecemos (Müller Martini e Kolbus). Para a Wohlenberg e outros modelos não listados, envie-nos o número do modelo da sua máquina, uma planta ou uma amostra de lâmina desgastada — confirmaremos o comprimento, a largura, a espessura e o padrão de montagem exatos antes de elaborarmos o orçamento.",
         },
         {
           question:
-            "What is the lead time for a custom Tungsten Carbide trimmer set?",
+            "Qual é o prazo de entrega de um conjunto personalizado de lâminas de corte de carboneto de tungstênio?",
           answer:
-            "Standard HSS sets for popular Müller Martini and Kolbus models are often in stock. Custom Tungsten Carbide (TC) inlaid sets typically require 15–20 working days to manufacture, due to the complex vacuum brazing and diamond grinding processes required for carbide.",
+            "Conjuntos padrão de HSS para os modelos mais comuns da Müller Martini e da Kolbus costumam estar em estoque. Conjuntos personalizados com incrustações de carboneto de tungstênio (TC) geralmente levam de 15 a 20 dias úteis para serem fabricados, devido aos complexos processos de brasagem a vácuo e retificação com diamante necessários para o carboneto.",
         },
       ],
     },
   },
   {
     id: "lithium-battery-slitting-knives",
-    name: "Battery Slitting Knives",
+    name: "Facas para corte longitudinal de baterias",
     fullName:
-      "Tungsten Carbide Circular Slitting Knives for Lithium Battery Electrode Foil",
+      "Facas circulares de corte de carboneto de tungstênio para folhas de eletrodo de baterias de lítio",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Battery Precision Blades",
+    categoryDisplay: "Lâminas de precisão a bateria",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "New Energy",
+    badge: "Nova Energia",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
@@ -3276,9 +3302,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
     ],
     description:
-      "Mirror-finish tungsten carbide circular slitting knives for lithium-ion battery electrode foil. Zero-notch Ra ≤ 0.05μm edge quality prevents micro-burrs on Al cathode and Cu anode foil, maintaining ISO Class 7 cell assembly cleanliness. Tolerance: ±0.001mm thickness, ≤0.01mm T.I.R.",
+      "Facas de corte circular metal duro com acabamento espelhado para folhas de eletrodo de baterias de íons de lítio. A qualidade da borda com entalhe zero e Ra ≤ 0,05 μm evita micro-rebarbas nas folhas de alumínio do cátodo e de cobre do ânodo, mantendo a limpeza da montagem das células de acordo com a Classe 7 da ISO. Tolerância: ±0,001 mm de espessura, ≤0,01 mm de T.I.R.",
     fullDescription:
-      "Lithium battery electrode slitting is among the most demanding precision cutting applications in industrial manufacturing. A single micro-burr or edge notch on the cut foil edge can penetrate the separator membrane during cell assembly, causing internal short-circuit and catastrophic battery failure. Sureay lithium battery slitting knives are engineered to eliminate this risk through extreme dimensional precision and surface metallurgy.\n\nEvery knife is manufactured from ultra-fine grain tungsten carbide (WC-Co, grain size ≤ 0.5μm) and precision ground to a Ra ≤ 0.05μm mirror finish on the cutting bevel. Thickness tolerance is held to ±0.001mm across the full disc face — three times tighter than standard slitter knife specifications — and total indicated runout (T.I.R.) is verified at ≤0.01mm on every unit before shipment. This zero-notch edge geometry prevents micro-delamination at the foil cut edge and eliminates the metallic particle generation that contaminates dry-room cell assembly environments.\n\n## Electrode Foil Applications\n\n**Aluminum Cathode Foil (LFP, NMC, NCA Cells):** Thickness range 12–20μm. The hard, brittle oxide layer on battery-grade Al foil rapidly abrades standard HSS and D2 edges within a single roll. Tungsten carbide grades maintain a geometric edge life 8–12× longer, reducing unplanned stops on high-speed winder lines running at 80–120 m/min.\n\n**Copper Anode Foil (LFP, NMC, Solid-State Cells):** Thickness range 6–12μm. Ultra-thin Cu foil requires the knife/anvil clearance to be set within ±0.002mm to prevent foil wrinkling and telescoping on the rewind roll. Our diameter-matched knife pairs are ground as mated sets with clearance pre-verified to your machine specification.\n\n**PVDF Separator Film (Dry Process):** Ceramic-coated separator film for dry-electrode processes (used in Gen 4 solid-state cell lines) presents an extremely abrasive cutting substrate. Cermet-grade or solid PCD (polycrystalline diamond) knives are available for this application on request.\n\n## Cleanroom Compatibility\n\nAll knives are ultrasonically cleaned, individually packaged in sealed anti-static bags, and certified particulate-free to ISO Class 7 standards. Packaging and material certificates are compliant with IATF 16949 documentation requirements for EV battery supply chains.",
+      "O corte de eletrodos de baterias de lítio está entre as aplicações de corte de precisão mais exigentes na fabricação industrial. Uma única micro-rebarba ou entalhe na borda da folha cortada pode penetrar na membrana separadora durante a montagem da célula, causando curto-circuito interno e falha catastrófica da bateria. As lâminas de corte para baterias de lítio da Sureay são projetadas para eliminar esse risco por meio de extrema precisão dimensional e metalurgia de superfície.\n\nCada lâmina é fabricada com metal duro de grão ultrafino (WC-Co, tamanho de grão ≤ 0,5 μm) e retificada com precisão para um acabamento espelhado com Ra ≤ 0,05 μm no bisel de corte. A tolerância de espessura é mantida em ±0,001 mm em toda a face do disco — três vezes mais rigorosa do que as especificações padrão para lâminas de corte — e o desvio total indicado (T.I.R.) é verificado em ≤0,01 mm em cada unidade antes do envio. Essa geometria de borda sem entalhe evita a microdelaminação na borda de corte da folha e elimina a geração de partículas metálicas que contaminam os ambientes de montagem de células em salas secas.\n\n## Aplicações de folhas de eletrodo\n\n**Folha de cátodo de alumínio (células LFP, NMC, NCA):** Faixa de espessura de 12–20 μm. A camada de óxido dura e frágil na folha de alumínio de grau para baterias desgasta rapidamente as lâminas padrão de HSS e D2 em um único rolo. Os tipos de carboneto de tungstênio mantêm uma vida útil geométrica da borda 8 a 12 vezes maior, reduzindo paradas não planejadas em linhas de enrolamento de alta velocidade operando a 80–120 m/min.\n\n**Folha de ânodo de cobre (células LFP, NMC, de estado sólido):** Faixa de espessura de 6–12 μm. A folha de cobre ultrafina exige que a folga entre a lâmina e a bigorna seja ajustada dentro de ±0,002 mm para evitar que a folha enrugue e se sobreponha no rolo de rebobinagem. Nossos pares de lâminas com diâmetros compatíveis são retificados como conjuntos combinados, com a folga pré-verificada de acordo com as especificações da sua máquina.\n\n**Filme separador de PVDF (processo a seco):** O filme separador com revestimento cerâmico para processos de eletrodo a seco (utilizado nas linhas de células de estado sólido da 4ª geração) apresenta um substrato de corte extremamente abrasivo. Facas de cermet ou PCD (diamante policristalino) sólido estão disponíveis para essa aplicação, mediante solicitação.\n\n## Compatibilidade com sala limpa\n\nTodas as lâminas são limpas por ultrassom, embaladas individualmente em sacos antiestáticos selados e certificadas como livres de partículas de acordo com as normas ISO Classe 7. As certificações de embalagem e de materiais estão em conformidade com os requisitos de documentação da IATF 16949 para cadeias de suprimentos de baterias de veículos elétricos.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -3319,32 +3345,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "zero-notch-edge",
-        tag: "PRECISION",
-        title: "Zero-Notch Mirror Finish",
+        tag: "PRECISÃO",
+        title: "Acabamento espelhado sem entalhes",
         description:
-          "Every cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding. This eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture.",
+          "Cada bisel de corte é lapidado até atingir um Ra ≤ 0,05 μm — o mesmo padrão de qualidade de superfície utilizado no polimento de lentes ópticas. Isso elimina os microentalhes que geram partículas metálicas em ambientes de montagem de células em salas secas e evita a perfuração da membrana separadora.",
       },
       {
         id: "ultra-fine-carbide",
-        tag: "METALLURGY",
-        title: "Ultra-Fine WC-Co Carbide Grade",
+        tag: "METALURGIA",
+        title: "Tipo de carboneto WC-Co ultrafino",
         description:
-          "Standard industrial carbide uses grain sizes of 1–3μm. Our battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles.",
+          "O carboneto industrial padrão utiliza granulometrias de 1 a 3 μm. Nossas lâminas para baterias são fabricadas com WC-Co submicrônico de ≤0,5 μm, proporcionando uma dureza de aresta significativamente maior (HRA 91–93), resistência superior à abrasão em folhas finas de Al e Cu e uma vida útil mais longa, com possibilidade de polimento, entre os ciclos de reafiação.",
       },
       {
         id: "matched-knife-pairs",
-        tag: "PROCESS CAPABILITY",
-        title: "Pre-Verified Clearance Pairs",
+        tag: "CAPACIDADE DO PROCESSO",
+        title: "Par de autorizações pré-verificadas",
         description:
-          "Upper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil). Each pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation.",
+          "Os conjuntos de lâminas superior e inferior são retificados como pares com diâmetros compatíveis, com a folga pré-verificada de acordo com as especificações da sua máquina de bobinagem (normalmente 0,002–0,005 mm para folha de cobre). Cada par é fornecido com uma ficha técnica que registra o diâmetro externo (OD), o diâmetro interno (ID), a espessura e a folga medida, permitindo uma reinstalação consistente na linha de produção.",
       },
     ],
     dimensionLabels: {
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Thickness",
+      col1: "Diâmetro externo (DE)",
+      col2: "Diâmetro interno (DI)",
+      col3: "Espessura",
       caption:
-        "* Standard dimensions for battery electrode foil slitting. Custom OD/ID and thickness available for all winding machine models. Matched top/bottom pairs supplied with pre-verified clearance data sheet.",
+        "* Dimensões padrão para o corte de folhas de eletrodo de bateria. Diâmetros externo e interno e espessuras personalizados disponíveis para todos os modelos de máquinas de enrolamento. Pares correspondentes de partes superior e inferior fornecidos com folha de dados de folga pré-verificada.",
     },
     standardDimensions: [
       {
@@ -3397,53 +3423,53 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What surface finish standard is required to prevent micro-burrs on battery electrode foil?",
+            "Qual é a norma de acabamento superficial exigida para evitar micro-rebarbas na folha de eletrodo da bateria?",
           answer:
-            "For lithium-ion battery electrode slitting, the cutting bevel must be polished to Ra ≤ 0.05μm (mirror finish) and verified for zero notches under 400× magnification. Any surface irregularity above this threshold generates micro-metallic particles that contaminate ISO Class 7 dry-room environments and can penetrate the separator, causing internal short-circuit in the finished cell.",
+            "Para o corte de eletrodos de baterias de íons de lítio, o chanfro de corte deve ser polido até atingir um Ra ≤ 0,05 μm (acabamento espelhado) e verificado quanto à ausência de entalhes sob ampliação de 400×. Qualquer irregularidade superficial acima desse limite gera micropartículas metálicas que contaminam ambientes de sala seca da Classe 7 da ISO e podem penetrar no separador, causando curto-circuito interno na célula finalizada.",
         },
         {
           question:
-            "How do I set the knife-to-knife clearance for ultra-thin copper anode foil?",
+            "Como faço para definir a distância entre as lâminas para uma folha de ânodo de cobre ultrafina?",
           answer:
-            "For 6–12μm Cu anode foil, the upper/lower knife clearance should be set at 0.002–0.005mm (2–5% of foil thickness). Clearance below this range causes burr formation; above it results in foil wrinkling and rewind telescoping. Our matched pairs are pre-verified to your specified clearance and supplied with a dimensional data sheet for consistent line-side installation.",
+            "Para folhas de ânodo de cobre de 6 a 12 μm, a folga entre as lâminas superior e inferior deve ser ajustada entre 0,002 e 0,005 mm (2 a 5% da espessura da folha). Uma folga abaixo dessa faixa causa a formação de rebarbas; acima dela, resulta em enrugamento da folha e telescopagem durante o rebobinamento. Nossos pares combinados são pré-verificados de acordo com a folga especificada por você e fornecidos com uma ficha técnica dimensional para garantir uma instalação consistente na linha de produção.",
         },
         {
           question:
-            "What carbide grade should I specify for aluminum cathode foil vs. copper anode foil?",
+            "Que tipo de carboneto devo especificar para a folha de cátodo de alumínio em comparação com a folha de ânodo de cobre?",
           answer:
-            "Both foil types benefit from submicron WC-Co (≤0.5μm grain, HRA 91–93). For Al cathode foil, the hard oxide surface layer is the primary abrasion driver — a standard K10/K20 carbide grade provides acceptable edge life. For Cu anode foil, the priority shifts to achieving the lowest possible surface roughness (Ra ≤ 0.05μm) to prevent adhesive transfer and foil marking at the cut edge.",
+            "Ambos os tipos de folha se beneficiam do WC-Co submicrométrico (grão ≤ 0,5 μm, HRA 91–93). Para a folha de cátodo de Al, a camada superficial de óxido duro é o principal fator de abrasão — um tipo padrão de carboneto K10/K20 proporciona uma vida útil aceitável da borda. Para a folha de ânodo de Cu, a prioridade passa a ser alcançar a menor rugosidade superficial possível (Ra ≤ 0,05 μm) para evitar a transferência de adesivo e marcas na borda de corte.",
         },
         {
           question:
-            "What is the typical regrinding cycle on battery slitting knives?",
+            "Qual é o ciclo típico de reafiação das facas de corte de baterias?",
           answer:
-            "On a standard 600mm-wide foil slitting line running 80 m/min, submicron WC-Co knives typically sustain acceptable edge quality for 4–6 months of continuous operation before regrinding is required. Edge degradation appears first as increased cut-edge roughness (Ra climbing above 0.1μm) visible under SEM inspection, not as catastrophic chipping. We offer a regrinding service with full dimensional re-certification.",
+            "Em uma linha padrão de corte de folha metálica com 600 mm de largura, operando a 80 m/min, as lâminas de WC-Co submicrônicas normalmente mantêm uma qualidade de aresta aceitável por 4 a 6 meses de operação contínua antes que seja necessário reafiar. A degradação do fio se manifesta inicialmente como um aumento da rugosidade da borda de corte (Ra superior a 0,1 μm), visível na inspeção por microscópio eletrônico de varredura (SEM), e não como lascas catastróficas. Oferecemos um serviço de reafiação com recertificação dimensional completa.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply battery slitting knives certified to IATF 16949 requirements?",
+            "A Sureay pode fornecer facas para corte de baterias certificadas de acordo com os requisitos da norma IATF 16949?",
           answer:
-            "Yes. We supply full material traceability documentation for EV battery supply chain qualification: WC-Co raw material mill certificates, hardness test reports (HRA per ASTM E18), surface roughness measurement records (Ra per ISO 4287), and dimensional CMM reports. All documentation is referenced to your purchase order batch number.",
+            "Sim. Fornecemos documentação completa de rastreabilidade de materiais para a qualificação da cadeia de suprimentos de baterias para veículos elétricos: certificados da usina de matéria-prima da WC-Co, relatórios de testes de dureza (HRA conforme a norma ASTM E18), registros de medição de rugosidade superficial (Ra conforme a norma ISO 4287) e relatórios dimensionais de CMM. Toda a documentação está referenciada ao número de lote da sua ordem de compra.",
         },
         {
           question:
-            "What is the lead time for standard and custom battery slitting knife orders?",
+            "Qual é o prazo de entrega para pedidos de facas de corte para baterias, tanto padrão quanto personalizadas?",
           answer:
-            "Standard stock dimensions: 3–5 working days. Custom OD/ID dimensions not held in stock: 10–15 working days including full QC documentation. For initial OEM qualification orders requiring sample verification before full production, allow 7–10 working days for first-article samples.",
+            "Dimensões padrão em estoque: 3 a 5 dias úteis. Dimensões personalizadas de diâmetro externo (OD) e diâmetro interno (ID) não disponíveis em estoque: 10 a 15 dias úteis, incluindo toda a documentação de controle de qualidade. Para pedidos iniciais de qualificação OEM que exijam verificação de amostras antes da produção em massa, considere um prazo de 7 a 10 dias úteis para as amostras de primeiro artigo.",
         },
       ],
     },
   },
   {
     id: "corrugated-slitter-scorer-blades",
-    name: "Corrugated Slitter Blades",
+    name: "Lâminas para cortadoras de papel ondulado",
     fullName:
-      "Tungsten Carbide Thin Slitter Blades for Corrugator Dry-End Lines",
+      "Lâminas finas de corte de carboneto de tungstênio para linhas de secagem de máquinas de papelão ondulado",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Corrugated Blades",
+    categoryDisplay: "Lâminas onduladas",
     image:
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
     badge: "Zero Crush",
@@ -3454,9 +3480,9 @@ export const blades: Blade[] = [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
     description:
-      "Solid Tungsten Carbide thin slitter blades engineered for zero-crush corrugated board slitting. Exact OEM replacements for BHS, Fosber, and Marquip. As a complete box plant tooling manufacturer, we also supply slotter knives, Z cut-off knives, scorer/creaser knives, and stitch lap knives.",
+      "Lâminas finas de corte para cortadoras, fabricadas em carboneto de tungstênio maciço, projetadas para o corte de papelão ondulado sem esmagamento. Substituições exatas de peças originais (OEM) para as marcas BHS, Fosber e Marquip. Como fabricante completo de ferramentas para fábricas de caixas, também fornecemos facas para ranhuradoras, facas de corte em Z, facas para marcadoras/vincoadoras e facas para costura sobreposta.",
     fullDescription:
-      "On a high-speed corrugating line running at over 250 m/min, the dry-end slitter-scorer dictates the final quality of the corrugated board. Using inferior blades results in crushed flutes, ragged edges, and excessive paper dust. Sureay Corrugated Thin Slitter Blades are manufactured from 100% solid, sub-micron grain Tungsten Carbide via HIP (Hot Isostatic Pressing) sintering, delivering unparalleled transverse rupture strength and edge stability.\n\n## The 'Zero-Crush' Razor Geometry\n\nThe term 'Thin Blade' refers to the cutting edge, not the entire blade body. To prevent high-speed wobble, our blade bodies are machined to a rigid 1.0mm to 1.2mm thickness. The cutting edge is then precision-lapped by diamond wheels to a microscopic razor profile (typically 0.3mm wide at the apex). This specific geometry slices through heavy double-wall boards purely by shearing action, generating zero compressive force and completely eliminating flute crushing.\n\n## Continuous In-Line Sharpening\n\nModern corrugators utilize automatic, in-line CBN grinding wheels to hone the slitter blades during operation. Sureay specifically formulates our Tungsten Carbide matrix to balance extreme wear resistance with perfect grindability, ensuring the blade sheds material cleanly without glazing or loading the machine's grinding stones.\n\n## Complete Corrugated Tooling Portfolio\n\nWhile our Tungsten Carbide thin slitters are the heartbeat of the corrugator dry-end, Sureay is a comprehensive tooling partner for the entire box plant. Beyond slitter blades, we manufacture and supply:\n- **Slotter Knives (Slotting) & Beam Slot Knives:** For clean, tear-free slots on Flexo Folder Gluers (FFG).\n- **Z Cut-off Knives:** High-speed cross-cutting serrated blades for the dry-end cutoff station.\n- **Stitch Lap Knives:** Precision blades for cutting the critical glue/stitch tab on folding cartons.\n- **Scorer & Creaser Knives:** Male/female scoring rings that create the perfect folding hinge.\n- **Split Top and Bottom Circular Knives:** Two-piece design for rapid in-machine replacement, saving hours of arbor maintenance downtime.",
+      "Em uma linha de ondulação de alta velocidade operando a mais de 250 m/min, a cortadora-marcadora da extremidade seca determina a qualidade final do papelão ondulado. O uso de lâminas de baixa qualidade resulta em canais amassados, bordas irregulares e excesso de pó de papel. As lâminas finas para cortadoras da Sureay Corrugated são fabricadas em carboneto de tungstênio 100% sólido, com grãos submicrométricos, por meio de sinterização HIP (Prensagem Isostática a Quente), proporcionando resistência à ruptura transversal e estabilidade de borda incomparáveis.\n\n## A geometria de lâmina tipo “lâmina de barbear” “Zero-Crush”\n\nO termo “lâmina fina” refere-se à aresta de corte, não ao corpo inteiro da lâmina. Para evitar oscilações em alta velocidade, os corpos de nossas lâminas são usinados com uma espessura rígida de 1,0 mm a 1,2 mm. A aresta de corte é então lapidada com precisão por rebolos de diamante até atingir um perfil microscópico de lâmina de barbear (normalmente com 0,3 mm de largura no ápice). Essa geometria específica corta placas pesadas de parede dupla exclusivamente por meio de ação de cisalhamento, gerando força compressiva zero e eliminando completamente o esmagamento das ranhuras.\n\n## Afiamento contínuo em linha\n\nAs modernas máquinas de ondulação utilizam rebolos CBN automáticos em linha para afiar as lâminas cortadoras durante a operação. A Sureay formula especificamente nossa matriz de carboneto de tungstênio para equilibrar extrema resistência ao desgaste com perfeita capacidade de afiação, garantindo que a lâmina remova material de forma limpa, sem formar camada vítrea nem sobrecarregar as pedras de afiação da máquina.\n\n## Portfólio completo de ferramentas para papelão ondulado\n\nEmbora nossas lâminas finas de corte de papelão ondulado em carboneto de tungstênio sejam o coração da seção seca da onduladora, a Sureay é uma parceira abrangente em ferramentas para toda a fábrica de caixas. Além das lâminas de corte, fabricamos e fornecemos:\n- **Facas para ranhuras (slotting) e facas para ranhuras em viga:** Para ranhuras limpas e sem rasgos em dobradoras-coladoras flexográficas (FFG).\n- **Facas de corte em Z:** Lâminas serrilhadas de corte transversal de alta velocidade para a estação de corte da seção seca.\n- **Lâminas para sobreposição de costura:** Lâminas de precisão para cortar a aba crítica de cola/costura em caixas dobráveis.\n- **Lâminas para ranhuradoras e bigas:** Anéis de ranhura macho/fêmea que criam a dobradiça perfeita.\n- **Lâminas circulares com topo e fundo divididos:** Design em duas peças para troca rápida dentro da máquina, economizando horas de tempo de inatividade para manutenção do eixo.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3506,33 +3532,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "hip-sintering",
-        tag: "METALLURGY",
-        title: "HIP Sintered Carbide",
+        tag: "METALURGIA",
+        title: "Carboneto sinterizado HIP",
         description:
-          "Hot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores. This ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact.",
+          "O processo de prensagem isostática a quente (HIP) garante que nossas lâminas finas para cortadoras não apresentem poros microscópicos. Essa estrutura ultradensa mantém um fio de lâmina impecável (ponta de ~0,3 mm) sem microlascas, mesmo sob o impacto de papelão ondulado em alta velocidade.",
       },
       {
         id: "zero-crush",
-        tag: "GEOMETRY",
-        title: "Zero-Crush Razor Edge",
+        tag: "GEOMETRIA",
+        title: "Lâmina de barbear Zero-Crush",
         description:
-          "A thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish. This slices the flutes cleanly instead of pressing them down.",
+          "O corpo espesso da lâmina (1,0–1,2 mm) proporciona estabilidade absoluta contra a oscilação lateral em alta velocidade, enquanto o fio é profundamente cônico e polido com diamante até atingir um acabamento afiado como uma lâmina de barbear. Isso corta as ranhuras de forma limpa, em vez de pressioná-las para baixo.",
       },
       {
         id: "full-portfolio",
-        tag: "MANUFACTURING CAPABILITY",
-        title: "Complete Box Plant Tooling",
+        tag: "CAPACIDADE DE FABRICAÇÃO",
+        title: "Conjunto completo de ferramentas para fábrica de caixas",
         description:
-          "From Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant.",
+          "Desde lâminas finas de carboneto de tungstênio na onduladora até facas de corte em Z, anéis de ranhura e facas de ranhura superiores/inferiores na sua dobradeira-coladora flexográfica — projetamos toda a gama de soluções de corte para a sua fábrica de caixas.",
       },
     ],
     dimensionLabels: {
-      col0: "Target Corrugator OEM",
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Body Thickness",
+      col0: "Fabricante de máquinas de papelão ondulado (OEM)",
+      col1: "Diâmetro externo (DE)",
+      col2: "Diâmetro interno (DI)",
+      col3: "Espessura do corpo",
       caption:
-        "* Dimensions above are standard OEM specifications for Thin Slitter Blades. Drive pin holes are machined to brand tolerances. Slotter, Scorer, and Z Cut-off knives are manufactured to exact customer or OEM blueprints.",
+        "* As dimensões acima correspondem às especificações padrão do fabricante original (OEM) para lâminas finas de corte. Os orifícios dos pinos de acionamento são usinados de acordo com as tolerâncias da marca. As lâminas para ranhuradoras, marcadoras e cortadoras em Z são fabricadas de acordo com os projetos exatos do cliente ou do fabricante original (OEM).",
     },
     standardDimensions: [
       {
@@ -3591,48 +3617,49 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why are my thin slitter blades crushing the flutes on E and F flute boards?",
+            "Por que minhas lâminas finas do cortador estão amassando as ondulações nas placas com ondulações E e F?",
           answer:
-            "Flute crushing is caused by a blade that has lost its razor geometry. This happens if the blade carbide is wearing too fast, or if your automatic in-line sharpening stones are glazed. Switching to our HIP-sintered Tungsten Carbide blades ensures the edge stays microscopically sharp, shearing the flutes cleanly without compressive force.",
+            "O esmagamento das ranhuras é causado por uma lâmina que perdeu sua geometria de lâmina de barbear. Isso ocorre se o carboneto da lâmina estiver se desgastando muito rapidamente ou se as pedras de afiamento automáticas em linha estiverem vitrificadas. A adoção de nossas lâminas de carboneto de tungstênio sinterizadas por HIP garante que o fio permaneça microscopicamente afiado, cortando as ranhuras de forma limpa, sem força compressiva.",
         },
         {
           question:
-            "How do your blades interact with automatic slitter-scorer sharpening systems?",
+            "Como suas lâminas interagem com os sistemas automáticos de afiação para cortadoras-marcadoras?",
           answer:
-            "Our blades are engineered specifically for continuous in-line sharpening (common on Fosber and BHS lines). The carbide grain structure and cobalt binder ratio are balanced so that the blade sheds material cleanly when hit by the CBN stones, keeping the blade sharp without loading (glazing) the sharpening wheels.",
+            "Nossas lâminas são projetadas especificamente para afiação contínua em linha (comum nas linhas da Fosber e da BHS). A estrutura dos grãos de carboneto e a proporção do aglutinante de cobalto são equilibradas de forma que a lâmina libere material de maneira limpa ao entrar em contato com as pedras de CBN, mantendo a lâmina afiada sem obstruir (esmaltar) os discos de afiação.",
         },
         {
           question:
-            "What is the advantage of a Split Top and Bottom Circular Knife?",
+            "Qual é a vantagem de uma lâmina circular dividida na parte superior e na parte inferior?",
           answer:
-            "On legacy slitter-scorers, changing a worn solid circular knife requires operators to pull the entire heavy shaft out of the machine. Split circular knives are manufactured in two interlocking halves. You simply bolt the halves directly around the shaft in minutes, saving hours of maintenance downtime.",
+            "Nas máquinas de corte e ranhura de geração anterior, a troca de uma lâmina circular maciça desgastada exige que os operadores retirem todo o eixo pesado da máquina. As lâminas facas circulares são fabricadas em duas metades que se encaixam. Basta aparafusar as metades diretamente ao redor do eixo em questão de minutos, economizando horas de tempo de inatividade para manutenção.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply the entire knife package for a new corrugator and FFG installation?",
+            "A Sureay pode fornecer o conjunto completo de lâminas para uma nova instalação de onduladora e FFG?",
           answer:
-            "Absolutely. We are a comprehensive tooling partner for box plants. In addition to Tungsten Carbide thin slitters, we manufacture the complete converting spectrum: Slotter knives, Beam slot knives, Stitch lap knives, Scorer/Creaser knives, and Z cut-off knives.",
+            "Com certeza. Somos um parceiro completo na área de ferramentas para fábricas de caixas. Além das lâminas finas de carboneto de tungstênio, fabricamos toda a linha de ferramentas para conversão: lâminas para ranhuradoras, lâminas para ranhuras em viga, lâminas para sobreposição de costura, lâminas para ranhuradoras/vincoadoras e lâminas para corte em Z.",
         },
         {
           question:
-            "Do you maintain dimensions for Bobst / Martin Flexo Folder Gluers?",
+            "Vocês mantêm as dimensões das dobradoras-coladoras flexográficas Bobst / Martin?",
           answer:
-            "Yes, we have an extensive database of OEM blueprints covering the slitting, slotting, and scoring sections of major converting machines including Bobst, Martin, Isowa, Ward, and TCY. Your replacement knives will be an exact drop-in fit.",
+            "Sim, dispomos de um amplo banco de dados de desenhos técnicos originais (OEM) que abrangem as seções de corte longitudinal, ranhura e marcagem das principais máquinas de conversão, incluindo Bobst, Martin, Isowa, Ward e TCY. Suas lâminas de reposição se encaixarão perfeitamente.",
         },
       ],
     },
   },
   {
     id: "tire-shredder-blades",
-    name: "Tire Shredder Blades",
-    fullName: "Heavy-Duty 3-Claw Rotary Shear Blades for Tire Recycling",
+    name: "Lâminas para triturador de pneus",
+    fullName:
+      "Lâminas de corte rotativas de alta resistência com 3 garras para reciclagem de pneus",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Tire Shredder Blades",
+    categoryDisplay: "Lâminas para triturador de pneus",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-    badge: "OEM Standard",
+    badge: "Padrão OEM",
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
@@ -3640,9 +3667,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      'Premium 3-claw rotary shear blades engineered for primary tire shredding and TDF (Tire Derived Fuel) production. Manufactured from OEM-grade Cru-Wear (PGK) and Modified A8 tool steels to withstand extreme impact from bead wires. Precision machined to exact ±0.05mm (0.002") tolerances to ensure tires are cleanly cut rather than torn.',
+      'Rotativo premium de 3 garras facas de cisalhamento, projetado para a trituração primária de pneus e a produção de TDF (combustível derivado de pneus). Fabricado com aços para ferramentas Cru-Wear (PGK) e A8 modificado, de qualidade OEM, para suportar o impacto extremo dos fios do talão. Usinado com precisão para tolerâncias exatas de ±0,05 mm (0,002"), garantindo que os pneus sejam cortados de forma limpa, em vez de rasgados.',
     fullDescription:
-      "Primary tire shredding is arguably the most brutal application in the size-reduction industry. Rotary blades must simultaneously slice through elastic rubber while repeatedly impacting high-tensile steel bead wires. Standard shredder alloys fail prematurely in this environment, either through rapid edge rounding or catastrophic brittle fracture.\n\n## Premium Tire-Grade Metallurgy\n\nWe manufacture our tire shredder blades using the exact premium material grades proven in top-tier OEM equipment (such as Barclay and CM shredders):\n\n**Cru-Wear (PGK):** The ultimate factory-standard material. It offers an exceptionally high vanadium and tungsten carbide volume, delivering superior wear resistance while maintaining the extreme toughness required to shear thick steel belts without micro-chipping.\n\n**Modified A8:** Offers an excellent balance of performance and cost-effectiveness, providing massive impact resistance for operations focused on minimizing upfront tooling costs.\n\n## The Two-Thousandths (0.05mm) Tolerance Rule\n\nThe difference between an efficient tire shredder and a constantly jammed machine lies in the cutting clearance. All our tire knives, regardless of material, are ground to precise thickness tolerances — two thousandths of an inch (0.05mm) to be exact.\n\nThis precision ensures that elastic tires and steel wires are cleanly **cut** as opposed to being **torn** and stretched. A proper shearing action drastically reduces pulling forces on the rotor shafts, lowers electrical energy consumption (amp draw), and prevents exposed steel wires from wrapping around the rotor block.\n\n## 3-Claw Geometry & TDF Sizing\n\nThe standard 3-claw (hook) geometry provides the optimal bite-angle to grab whole passenger and light truck tires, pulling them aggressively into the cutting chamber. Blade thickness (typically 2-inch / 50mm) directly dictates the size of your Tire Derived Fuel (TDF) chips, ensuring a consistent, high-quality end product suitable for cement kilns or downstream wire liberation.",
+      "A trituração primária de pneus é, sem dúvida, a aplicação mais severa no setor de redução de tamanho. As lâminas rotativas precisam, simultaneamente, cortar a borracha elástica e impactar repetidamente os fios de aço de alta resistência da talha. As ligas padrão para trituradores apresentam falhas prematuras nesse ambiente, seja por meio do rápido arredondamento das arestas ou de fraturas frágeis catastróficas.\n\n## Metalurgia Premium para Pneus\n\nFabricamos nosso facas para trituradores para pneus utilizando exatamente os tipos de materiais premium comprovados em equipamentos OEM de primeira linha (como os trituradores Barclay e CM):\n\n**Cru-Wear (PGK):** O material padrão de fábrica definitivo. Oferece um teor excepcionalmente alto de vanádio e metal duro, proporcionando resistência superior ao desgaste ao mesmo tempo em que mantém a extrema tenacidade necessária para cortar cintos de aço espessos sem microlascas.\n\n**A8 Modificado:** Oferece um excelente equilíbrio entre desempenho e custo-benefício, proporcionando enorme resistência ao impacto para operações focadas na minimização dos custos iniciais com ferramentas.\n\n## A Regra da Tolerância de Dois Milésimos (0,05 mm)\n\nA diferença entre um triturador de pneus eficiente e uma máquina que fica constantemente emperrada está na folga de corte. Todas as nossas lâminas para pneus, independentemente do material, são retificadas com tolerâncias precisas de espessura — dois milésimos de polegada (0,05 mm), para ser exato.\n\nEssa precisão garante que os pneus elásticos e os fios de aço sejam **cortados** de forma limpa, em vez de serem **rasgados** e esticados. Uma ação de cisalhamento adequada reduz drasticamente as forças de tração nos eixos do rotor, diminui o consumo de energia elétrica (consumo de amperagem) e evita que os fios de aço expostos se enrolem no bloco do rotor.\n\n## Geometria de 3 garras e dimensionamento do TDF\n\nA geometria padrão de 3 garras (ganchos) oferece o ângulo de mordida ideal para agarrar pneus inteiros de veículos de passageiros e caminhonetes, puxando-os com força para dentro da câmara de corte. A espessura da lâmina (normalmente 2 polegadas / 50 mm) determina diretamente o tamanho das lascas de Combustível Derivado de Pneus (TDF), garantindo um produto final consistente e de alta qualidade, adequado para fornos de cimento ou para a liberação de fios em etapas posteriores do processo.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3684,34 +3711,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "premium-metallurgy",
-        tag: "MATERIALS",
-        title: "Cru-Wear (PGK) & Modified A8",
+        tag: "MATERIAIS",
+        title: "Cru-Wear (PGK) e A8 modificado",
         description:
-          "Utilizing OEM-grade premium alloys. Cru-Wear provides ultimate toughness and durability for high-volume lines, while Modified A8 offers the best balance of cost and performance.",
+          "Utilizando ligas premium de nível OEM. A Cru-Wear oferece resistência e durabilidade máximas para linhas de alto volume, enquanto a Modified A8 proporciona o melhor equilíbrio entre custo e desempenho.",
       },
       {
         id: "precise-cutting",
-        tag: "EFFICIENCY",
-        title: "Cut, Don't Tear",
+        tag: "EFICIÊNCIA",
+        title: "Corte, não rasgue",
         description:
-          "Precision ground to ±0.05mm. This ensures a true scissor-like cutting action, preventing wire pull-out, reducing machine wear, and drastically lowering energy consumption.",
+          "Retificado com precisão de ±0,05 mm. Isso garante um movimento de corte semelhante ao de uma tesoura, evitando que o fio se solte, reduzindo o desgaste da máquina e diminuindo drasticamente o consumo de energia.",
       },
       {
         id: "consistent-tdf",
-        tag: "OUTPUT QUALITY",
-        title: "Consistent TDF Chips",
+        tag: "QUALIDADE DA SAÍDA",
+        title: "Chips TDF consistentes",
         description:
-          "Exact blade thicknesses (e.g., 2-inch standard) combined with zero-clearance shearing produce uniform, high-quality Tire Derived Fuel (TDF) chips with minimal exposed wire.",
+          "Espessuras exatas das lâminas (por exemplo, padrão de 2 polegadas), combinadas com o corte sem folga, produzem lascas uniformes e de alta qualidade de Combustível Derivado de Pneus (TDF), com o mínimo de fio exposto.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform",
-      col1: "Outer Diameter",
-      col2: "Thickness (Chip Size)",
-      col3: "Bore (Inner Hole)",
-      col4: "Claw Count",
+      col0: "Plataforma OEM",
+      col1: "Diâmetro externo",
+      col2: "Espessura (tamanho da lasca)",
+      col3: "Diâmetro interno (furo interno)",
+      col4: "Contagem de garras",
       caption:
-        "* Dimensions shown are industry standard examples. We manufacture strictly to your exact machine specifications and required TDF chip size.",
+        "* As dimensões apresentadas são exemplos padrão do setor. Fabricamos estritamente de acordo com as especificações exatas da sua máquina e com o tamanho de cavacos TDF exigido.",
     },
     standardDimensions: [
       {
@@ -3755,48 +3782,49 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why should I upgrade to Cru-Wear (PGK) from standard D2 tool steel?",
+            "Por que eu deveria mudar do aço para ferramentas D2 padrão para o Cru-Wear (PGK)?",
           answer:
-            "Tires contain high-tensile bead wires that act as extreme impact loads. Standard D2 is highly wear-resistant but brittle; the edge will chip when it strikes bead wire. Cru-Wear (PGK) is engineered with a different carbide structure, making it significantly tougher and more durable than D2, absorbing the impact without fracturing while maintaining excellent edge retention.",
+            "Os pneus contêm fios de talão de alta resistência à tração que suportam cargas de impacto extremas. O D2 padrão é altamente resistente ao desgaste, mas frágil; o gume se lasca ao entrar em contato com o fio de reforço do talão. O Cru-Wear (PGK) foi projetado com uma estrutura de carboneto diferente, tornando-o significativamente mais resistente e durável do que o D2, absorvendo o impacto sem fraturar e mantendo, ao mesmo tempo, excelente retenção do gume.",
         },
         {
           question:
-            "How does blade tolerance affect my shredder's energy consumption?",
+            "Como a tolerância das lâminas afeta o consumo de energia do meu triturador?",
           answer:
-            "If the thickness tolerance of the rotary blades varies by more than 0.05mm (0.002\"), a gap forms between the counter-rotating knives. Instead of shearing the elastic tire, the machine tries to stretch and tear it. This pulling action requires massive amounts of torque, which spikes the motor's amp draw and wastes energy. Precision tolerances ensure a low-friction, clean cut.",
+            'Se a tolerância de espessura das lâminas rotativas variar em mais de 0,05 mm (0,002"), forma-se uma folga entre as lâminas contrarrotativas. Em vez de cortar o pneu elástico, a máquina tenta esticá-lo e rasgá-lo. Essa ação de tração exige uma quantidade enorme de torque, o que provoca picos no consumo de corrente do motor e desperdiça energia. Tolerâncias precisas garantem um corte limpo e de baixo atrito.',
         },
         {
-          question: "How does the 3-claw design benefit whole tire processing?",
+          question:
+            "De que forma o design com três garras beneficia o processamento de pneus inteiros?",
           answer:
-            "A 3-claw geometry provides the ideal bite angle and spacing. If there are too many claws (e.g., 8 or 10), the tire will bounce on top of the rotor because the hook gaps are too small to grab the thick rubber. 3 claws provide a massive opening that hooks into the tire cavity and pulls the entire tire down into the cutting chamber.",
+            "Uma geometria de 3 garras proporciona o ângulo de mordida e o espaçamento ideais. Se houver garras em excesso (por exemplo, 8 ou 10), o pneu vai quicar sobre o rotor, pois os espaços entre os ganchos são muito pequenos para agarrar a borracha espessa. Três garras proporcionam uma abertura ampla que se encaixa na cavidade do pneu e puxa o pneu inteiro para dentro da câmara de corte.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply spacers and cleaning fingers (scraper plates) to match the blades?",
+            "Vocês podem fornecer espaçadores e pentes de limpeza (placas raspadoras) compatíveis com as lâminas?",
           answer:
-            "Yes. A complete tire shredding rotor requires matched blades, spacers, and cleaning fingers. We manufacture the complete set to the same strict tolerances to ensure zero-gap assembly across the entire length of the rotor shaft.",
+            "Sim. Um rotor completo para trituração de pneus requer lâminas, espaçadores e dedos de limpeza compatíveis. Fabricamos o conjunto completo de acordo com as mesmas tolerâncias rigorosas para garantir uma montagem sem folga ao longo de todo o comprimento do eixo do rotor.",
         },
         {
-          question: "Do you have the blueprints for Barclay or CM shredders?",
+          question: "Você tem as plantas dos trituradores Barclay ou CM?",
           answer:
-            "We maintain a comprehensive database of OEM blade drawings for major tire shredding platforms. Supplying us with your machine model or a basic confirmation drawing allows us to manufacture exact drop-in replacements.",
+            "Mantemos um banco de dados abrangente com desenhos originais de lâminas para as principais plataformas de trituração de pneus. Ao nos fornecer o modelo da sua máquina ou um desenho básico de referência, podemos fabricar peças de reposição exatamente compatíveis.",
         },
       ],
     },
   },
   {
     id: "nonwoven-slitter-knives",
-    name: "Nonwoven Slitter Knives",
+    name: "Facas para cortadoras de não-tecido",
     fullName:
-      "M2 HSS Circular Slitter Knives for Spunbond, Meltblown & SMS Nonwoven Fabrics",
+      "Lâminas circulares de corte M2 HSS para tecidos não tecidos do tipo spunbond, meltblown e SMS",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte",
     image:
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-    badge: "Medical Grade",
+    badge: "Grau médico",
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
@@ -3804,9 +3832,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
     description:
-      "M2 HSS and D2 circular slitter knives for spunbond PP, meltblown, SMS, and SMMS nonwoven fabrics. Specialised rake angle geometry prevents fibre fraying and slub formation on loose-structure materials. Used in hygiene, medical, filtration, and geotextile slitting lines.",
+      "Lâminas circulares de corte M2 HSS e D2 para tecidos não tecidos de PP spunbond, meltblown, SMS e SMMS. A geometria especializada do ângulo de inclinação evita o desfiamento das fibras e a formação de nódulos em materiais de estrutura solta. Utilizadas em linhas de corte para produtos de higiene, médicos, de filtração e geotêxteis.",
     fullDescription:
-      "Nonwoven fabric slitting presents a fundamentally different challenge from film or paper converting: the material has no grain direction, low tensile strength in the cross-machine direction, and a loose, fibrous structure that can fray, distort, or pill at the slit edge if the knife geometry is not matched to the fabric construction and line tension.\n\nSureay nonwoven slitter knives are manufactured from M2 high-speed steel with a specialist rake angle geometry developed specifically for loose-structure spunbond, meltblown, and hydroentangled materials. The optimised positive rake angle shears through fibre bundles cleanly rather than pushing them aside, eliminating the frayed edge and loose fibre slub that cause downstream quality rejections in baby diaper, feminine hygiene, and surgical drape converting lines.\n\n## Nonwoven Fabric Types\n\n**Spunbond PP (S, SS, SSS structures):** The most common nonwoven substrate. Available in 8–120 GSM. Standard M2 HSS at Ra ≤ 0.4μm surface finish, positive rake 15°–20°. Used in hygiene absorbent product converting, geotextile roll slitting, and agricultural mulch film.\n\n**Meltblown (M layer):** Ultra-fine fibre (1–5μm diameter) layers used as the filtration core in N95/FFP2 respirators and surgical masks. Extremely fragile and sensitive to lateral tensile loading. Requires reduced slit speed (60–100 m/min), low-mass knife body to minimise vibration, and electrostatic discharge (ESD) coatings to prevent fibre attraction to the blade face.\n\n**SMS / SMMS Medical Fabrics:** Spunbond-Meltblown-Spunbond composite used in surgical gowns, drapes, and sterilisation wraps. Medical-grade SMS requires validated equipment — we supply material certificates and dimensional reports traceable to your batch number for regulatory compliance.\n\n**Hydroentangled / Wetlaid Nonwovens:** Higher basis weight (50–200 GSM) fabric with more coherent structure. Closer to foam or paper in cutting characteristics — standard D2 or 52100 steel knives perform well on these substrates.\n\n## ESD Coating Option\n\nFor meltblown and electrospun filtration media slitting, an ESD (electrostatic discharge) conductive surface treatment is available that prevents static charge accumulation on the blade face. Static buildup causes lightweight fibres (particularly PP meltblown at <15 GSM) to cling to the blade and transfer as contamination to the reslitted roll edge.",
+      "O corte de tecidos não tecidos apresenta um desafio fundamentalmente diferente do processamento de filmes ou papéis: o material não possui direção de fibra, apresenta baixa resistência à tração na direção transversal à máquina e possui uma estrutura fibrosa e solta que pode desfiar, distorcer-se ou formar bolinhas na borda de corte se a geometria da lâmina não for adequada à composição do tecido e à tensão da linha.\n\nAs lâminas de corte para não tecidos da Sureay são fabricadas em aço rápido M2 com uma geometria especializada do ângulo de inclinação, desenvolvida especificamente para materiais de estrutura solta, como spunbond, meltblown e hidroentrelaçados. O ângulo de inclinação positivo otimizado corta os feixes de fibras de maneira limpa, em vez de empurrá-los para o lado, eliminando a borda desfiada e os grumos de fibras soltas que causam rejeições de qualidade nas linhas de conversão de fraldas infantis, produtos de higiene feminina e campos cirúrgicos.\n\n## Tipos de tecidos não tecidos\n\n**Spunbond PP (estruturas S, SS, SSS):** O substrato não tecido mais comum. Disponível em 8–120 GSM. Aço rápido M2 padrão com acabamento superficial Ra ≤ 0,4 μm e ângulo de inclinação positivo de 15°–20°. Utilizado na conversão de produtos absorventes de higiene, no corte de rolos de geotêxteis e em filmes de cobertura agrícola.\n\n**Meltblown (camada M):** Camadas de fibras ultrafinas (diâmetro de 1 a 5 μm) utilizadas como núcleo de filtragem em respiradores N95/FFP2 e máscaras cirúrgicas. Extremamente frágeis e sensíveis à carga de tração lateral. Requerem velocidade de corte reduzida (60–100 m/min), corpo de lâmina de baixa massa para minimizar a vibração e revestimentos contra descargas eletrostáticas (ESD) para evitar a atração das fibras pela face da lâmina.\n\n**Tecidos médicos SMS / SMMS:** Composto Spunbond-Meltblown-Spunbond utilizado em aventais cirúrgicos, campos cirúrgicos e embalagens de esterilização. O SMS de grau médico requer equipamentos validados — fornecemos certificados de material e relatórios dimensionais rastreáveis ao seu número de lote para conformidade regulatória.\n\n**Tecidos não tecidos hidroentrelaçados / wetlaid:** Tecido com maior gramatura (50–200 GSM) e estrutura mais coesa. Com características de corte mais próximas das da espuma ou do papel — lâminas de aço padrão D2 ou 52100 apresentam bom desempenho nesses substratos.\n\n## Opção de revestimento ESD\n\nPara o corte de meios de filtração meltblown e eletrofiados, está disponível um tratamento de superfície condutivo ESD (descarga eletrostática) que evita o acúmulo de carga estática na face da lâmina. O acúmulo de carga estática faz com que fibras leves (principalmente PP meltblown com <15 GSM) adiram à lâmina e sejam transferidas como contaminação para a borda do rolo recortado.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
     compatibleMachines: [
@@ -3846,32 +3874,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "rake-geometry",
-        tag: "EDGE DESIGN",
-        title: "Nonwoven-Optimised Rake Angle",
+        tag: "DESIGN DE BORDAS",
+        title: "Ângulo de inclinação otimizado para não-tecidos",
         description:
-          "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min.",
+          "As geometrias padrão das lâminas de corte projetadas para papel e filmes plásticos utilizam um ângulo de inclinação positivo ou neutro de 5° a 10°. No caso de não tecidos de estrutura solta, essa geometria empurra as fibras lateralmente antes do corte, causando a borda desfiada que é considerada um defeito de qualidade na inspeção de produtos de higiene. Nossa lâmina com ângulo de inclinação positivo de 15° a 20° corta os feixes de fibras em uma única ação progressiva, produzindo uma borda de corte limpa e bem ajustada em velocidades de linha de até 400 m/min.",
       },
       {
         id: "esd-coating",
-        tag: "SURFACE TREATMENT",
-        title: "ESD Conductive Coating",
+        tag: "TRATAMENTO DE SUPERFÍCIE",
+        title: "Revestimento condutor ESD",
         description:
-          "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction.",
+          "A carga eletrostática é gerada quando o tecido não tecido leve de PP passa sobre superfícies metálicas em alta velocidade. Em camadas de tecido meltblown (<15 GSM), essa carga faz com que as fibras adiram à superfície da lâmina e sejam transferidas como contaminação para a borda do rolo recortado. Nosso revestimento condutor ESD dissipa continuamente a carga da superfície da lâmina, eliminando a atração das fibras sem a necessidade de reduzir a velocidade do processo.",
       },
       {
         id: "medical-traceability",
-        tag: "COMPLIANCE",
-        title: "Medical Batch Traceability",
+        tag: "CONFORMIDADE",
+        title: "Rastreabilidade de lotes de produtos médicos",
         description:
-          "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file.",
+          "Para as linhas de produção que abastecem fabricantes de campos cirúrgicos, aventais e embalagens de esterilização, oferecemos rastreabilidade completa do lote: certificados da siderúrgica M2, registros de testes de dureza e relatórios dimensionais de CMM referenciados ao número do lote da sua ordem de compra. A documentação é formatada para inclusão no seu arquivo de qualificação de fornecedores.",
       },
     ],
     dimensionLabels: {
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Thickness",
+      col1: "Diâmetro externo (DE)",
+      col2: "Diâmetro interno (DI)",
+      col3: "Espessura",
       caption:
-        "* Standard dimensions for common nonwoven slitting machine models. Custom OD, ID, and edge geometry available. ESD coating (+10–15% on unit price) available for all sizes.",
+        "* Dimensões padrão para modelos comuns de máquinas de corte de não-tecido. Diâmetro externo (OD), diâmetro interno (ID) e geometria das bordas personalizados disponíveis. Revestimento ESD (+10–15% sobre o preço unitário) disponível para todos os tamanhos.",
     },
     standardDimensions: [
       {
@@ -3918,38 +3946,38 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What rake angle should I specify for spunbond polypropylene at 200 m/min?",
+            "Qual ângulo de inclinação devo especificar para o polipropileno spunbond a 200 m/min?",
           answer:
-            "For spunbond PP at 200 m/min in basis weights 15–80 GSM, specify 15° positive rake on the cutting bevel. This geometry shears polypropylene fibres cleanly at the contact point without the lateral displacement that causes fraying. For heavier basis weights (80–150 GSM SSS or SMMS), a 20° positive rake with a slightly wider bevel width provides better stability at reduced line speed (150 m/min).",
+            "Para PP spunbond a 200 m/min, com gramaturas de 15 a 80 GSM, especifique um ângulo de inclinação positivo de 15° no bisel de corte. Essa geometria corta as fibras de polipropileno de forma limpa no ponto de contato, sem o deslocamento lateral que causa o desfiado. Para gramaturas mais altas (80–150 GSM SSS ou SMMS), um ângulo de inclinação positivo de 20°, com uma largura de bisel ligeiramente maior, proporciona melhor estabilidade em velocidades de linha reduzidas (150 m/min).",
         },
         {
           question:
-            "My meltblown slitting produces visible fibre transfer on the blade face. What is the cause?",
+            "No meu processo de corte de tecido meltblown, observa-se transferência visível de fibras na superfície da lâmina. Qual é a causa?",
           answer:
-            "Fibre transfer on meltblown fabric (particularly <10 GSM layers) is caused by electrostatic charge accumulation on the blade face, not edge geometry. PP meltblown fibres at 1–5μm diameter are extremely susceptible to static attraction. Specify the ESD conductive coating option on your next order and ensure the slitter machine frame is properly earthed. This typically eliminates visible blade-face contamination within one production shift.",
+            "A transferência de fibras no tecido meltblown (especialmente em camadas com menos de 10 GSM) é causada pelo acúmulo de carga eletrostática na superfície da lâmina, e não pela geometria da borda. As fibras de PP meltblown com diâmetro de 1 a 5 μm são extremamente suscetíveis à atração estática. Especifique a opção de revestimento condutor ESD em seu próximo pedido e certifique-se de que a estrutura da máquina cortadora esteja devidamente aterrada. Isso normalmente elimina a contaminação visível na superfície da lâmina em um único turno de produção.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply nonwoven slitter knives with a certificate of conformance for our medical device supplier audit?",
+            "A Sureay pode fornecer facas para cortadoras de não-tecido acompanhadas de um certificado de conformidade para a auditoria do nosso fornecedor de dispositivos médicos?",
           answer:
-            "Yes. We issue a Certificate of Conformance (CoC) with each batch referencing the purchase order number, steel grade (M2 AISI M2 / DIN 1.3343), hardness range (HRC 62–64), and dimensional verification results. For full medical device supplier qualification, we can also provide the steel mill certificate and heat treatment batch record on request.",
+            "Sim. Emitimos um Certificado de Conformidade (CoC) para cada lote, indicando o número do pedido de compra, o tipo de aço (M2 AISI M2 / DIN 1.3343), a faixa de dureza (HRC 62–64) e os resultados da verificação dimensional. Para a qualificação completa do fornecedor de dispositivos médicos, também podemos fornecer, mediante solicitação, o certificado da siderúrgica e o registro de lote tratamento térmico.",
         },
       ],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Bottom Grooved Anvil Knives",
+    name: "Facas de bigorna com ranhura na parte inferior",
     fullName:
-      "Bottom Grooved Anvil Knives for Shear Slitting — Film, Paper & Metal Foil Converting",
+      "Facas de bigorna com ranhura na parte inferior para corte por cisalhamento — Processamento de filmes, papel e folhas metálicas",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte longitudinal",
     image:
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "OEM Matched Pairs",
+    badge: "Paros compatíveis com OEM",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
@@ -3957,13 +3985,13 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
     ],
     description:
-      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Single and twin-groove anvil profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
+      "Lâminas de bigorna com ranhuras na parte inferior, retificadas com precisão, para corte por cisalhamento de filmes, papel, folhas metálicas e fitas. Compatíveis com os sistemas de eixos de facas superiores das marcas Tidland, Kampf, Atlas, Goebel e BHS. Perfis de bigorna com ranhura única ou dupla em D2, M2 HSS e metal duro maciço. Fornecidas como pares de cisalhamento verificados ou como peças de reposição individuais para a bigorna inferior.",
     fullDescription:
-      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with a slotted groove profile that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
+      "No corte por cisalhamento, a lâmina de bigorna com ranhura inferior é a metade inferior fixa do par de lâminas — mas é frequentemente subdimensionada. Quando a geometria da ranhura da bigorna não corresponde ao ângulo de curvatura da lâmina superior, ou quando a tolerância do furo da bigorna se desvia do projeto do eixo, o resultado é uma folga de cisalhamento descontrolada, rebarbas nas bordas e desgaste prematuro em ambas as lâminas simultaneamente.\n\nAs facas de bigorna com ranhura inferior da Sureay são fabricadas com a mesma tolerância de espessura de ±0,002 mm e especificação de excentricidade (T.I.R.) de ≤0,02 mm que nossas facas de corte superiores. Cada bigorna é retificada de acordo com o perfil da ranhura da sua plataforma OEM — seja uma bigorna Tidland de ranhura única, uma Kampf de ranhura dupla ou uma Goebel/BHS de corpo largo — e verificada em relação à lâmina superior correspondente antes do envio.\n\n## Por que as facas inferiores da bigorna precisam de atenção individual\n\n**O perfil da ranhura determina a folga:** A largura e a profundidade da ranhura na lâmina de bigorna controlam diretamente a folga de cisalhamento de trabalho entre o par de lâminas superior e inferior. Uma ranhura desgastada ou com perfil incorreto aumenta a folga efetiva, produzindo uma borda de corte irregular mesmo quando a lâmina superior é nova. Nós retificamos o perfil de cada ranhura da bigorna de acordo com suas especificações OEM (largura da ranhura ±0,01 mm) para restaurar a folga projetada de fábrica.\n\n**Taxa de desgaste diferente, ciclo de substituição diferente:** As facas da bigorna inferior operam sob carga compressiva, ao contrário da carga predominantemente de cisalhamento exercida sobre a lâmina superior. Isso significa que a bigorna normalmente dura de 3 a 5 vezes mais do que a lâmina superior — mas, quando se desgasta, a face da ranhura se arredonda gradualmente, causando uma deterioração progressiva na qualidade do corte que é fácil de passar despercebida até que as taxas de rejeição aumentem. Encomendar bigornas de reposição independentemente das lâminas superiores evita o descarte desnecessário dessas últimas.\n\n**O diâmetro interno e a planicidade da face são fundamentais:** A lâmina de bigorna se encaixa no eixo inferior e deve funcionar com precisão. Um desvio no diâmetro interno de 0,02 mm induz oscilação da lâmina, o que se traduz diretamente em variação da largura do corte em uma pilha de eixos com múltiplas lâminas. Todos os furos das garras Sureay são retificados com acabamento na tolerância H6 e a face é lapidada para obter paralelismo ≤0,003 mm.\n\n## Áreas de aplicação\n\n**Corte de filmes flexíveis e embalagens:** BOPP, BOPET, CPP, filme extensível de PE, manga retrátil. Anvil padrão D2 ou M2 de aço rápido (HSS) com perfil de ranhura simples ou dupla. O revestimento opcional de TiN PVD na face da ranhura prolonga a vida útil contra desgaste por contato em linhas de filme de alta velocidade operando a 400–600 m/min.\n\n**Conversão de papel e papelão:** Papel-toalha, papel kraft, papel revestido. Para corte por compressão (faca contra o rolo de bigorna), a bigorna é fabricada com um perfil de ranhura com fenda que comprime e fratura as fibras do papel sem rasgá-lo. Aço D2 ou 52100, HRC 58–62.\n\n**Corte de folhas metálicas:** Folha de cátodo de alumínio, folha de ânodo de cobre, tira de aço silicônico. A lâmina de anvil para folhas metálicas deve resistir ao desgaste adesivo causado pelo substrato metálico. Aço ASP23 PM ou carboneto sólido com grau compatível com a liga da lâmina superior; tolerância da forma da ranhura mantida em ±0,005 mm.\n\n**Fitas e etiquetas sensíveis à pressão:** Fita de máscara, espuma de dupla face, adesivo de transferência. A contaminação por adesivo na face da ranhura é a principal causa de falha. As faces da ranhura revestidas com Teflon ou DLC reduzem os intervalos de acúmulo de adesivo em 60–80%.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
     disambiguation:
-      "These are disc anvils carrying one to three OEM-matched grooves. If you need a wide ring carrying many slit positions on one body, see [Groove Bottom Knives](/products/groove-bottom-knives).",
+      "Trata-se de bigornas em disco com uma a três ranhuras compatíveis com os equipamentos originais (OEM). Se você precisar de um anel largo com várias posições de ranhura em um único corpo, consulte [Facas para fundo de ranhura](/products/groove-bottom-knives).",
     compatibleMachines: [
       "Tidland",
       "Kampf",
@@ -4003,33 +4031,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "groove-geometry-control",
-        tag: "PRECISION GRINDING",
-        title: "OEM-Profile Groove Geometry",
+        tag: "RETIFICAÇÃO DE PRECISÃO",
+        title: "Geometria da ranhura do perfil OEM",
         description:
-          "The groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm. Correct groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile.",
+          "A largura e a profundidade da ranhura de cada lâmina de bigorna são retificadas de acordo com as especificações da sua plataforma OEM — ranhura única Tidland, ranhura dupla Kampf ou corpo largo Goebel — e mantidas com uma tolerância de ±0,01 mm. A geometria correta da ranhura restaura a folga de cisalhamento projetada de fábrica e elimina a deterioração progressiva da borda da fenda causada pelo desgaste do perfil da bigorna.",
       },
       {
         id: "bore-face-flatness",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "H6 Bore & Lapped Face Flatness",
+        tag: "PRECISÃO DIMENSIONAL",
+        title: "H6: Diâmetro interno e planicidade da face lapidada",
         description:
-          "All anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism. A bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch.",
+          "Todos os furos das bigornas são retificados com acabamento na tolerância H6 e lapidados na face para obter um paralelismo de ≤0,003 mm. Um desvio de 0,02 mm no furo do eixo inferior provoca oscilação da lâmina, o que se traduz diretamente em variação da largura da fenda em uma pilha de lâminas múltiplas. Nossas tolerâncias de furo e face são verificadas em uma CMM para cada lote.",
       },
       {
         id: "anti-adhesion-groove-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Anti-Adhesion Groove Coatings",
+        tag: "TRATAMENTO DE SUPERFÍCIES",
+        title: "Revestimentos com ranhuras antiaderentes",
         description:
-          "For pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%. Coated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops.",
+          "No corte de fitas sensíveis à pressão e laminados adesivos, os revestimentos de Teflon e DLC PVD na face de contato da ranhura reduzem os intervalos de acúmulo de adesivo em 60 a 80%. As bigornas revestidas operam sem problemas durante turnos de produção de 8 a 12 horas, sem contaminação da ranhura que prejudique a folga de cisalhamento e force paradas não planejadas.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform / Type",
-      col1: "OD × ID (mm)",
-      col2: "Thickness (mm)",
-      col3: "Groove (W × D / Angle)",
+      col0: "Plataforma OEM / Tipo",
+      col1: "Diâmetro externo × Diâmetro interno (mm)",
+      col2: "Espessura (mm)",
+      col3: "Ranhura (L × P / Ângulo)",
       caption:
-        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Anvils carrying more than three slots are supplied as bottom cutter rings — see groove bottom knives.",
+        "* Dimensões padrão das bigornas, compatíveis com as do fabricante original (OEM). A geometria exata das ranhuras garante um encaixe sem oscilação com os cortadores superiores. As bigornas com mais de três ranhuras são fornecidas como anéis cortadores inferiores — consulte as facas inferiores para ranhuras.",
     },
     standardDimensions: [
       {
@@ -4076,57 +4104,59 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How often should I replace the bottom grooved anvil knife versus the top blade?",
+            "Com que frequência devo substituir a faca de bigorna ranhurada inferior em comparação com a lâmina superior?",
           answer:
-            "Bottom anvil knives operate under compressive groove-face loading and typically last 3–5× longer than the top shear blade. However, because wear is gradual — the groove face rounds off slowly — the deterioration in slit quality is easy to miss until scrap rates climb. We recommend inspecting groove face geometry (groove width and depth) every 3 top-blade replacement cycles and replacing the anvil when groove width deviation exceeds ±0.03 mm from the OEM specification.",
+            "As facas da bigorna inferior operam sob carga compressiva na face da ranhura e, normalmente, duram de 3 a 5 vezes mais do que a lâmina de corte superior. No entanto, como o desgaste é gradual — a face da ranhura se arredonda lentamente —, é fácil não perceber a deterioração na qualidade do corte até que as taxas de refugo aumentem. Recomendamos inspecionar a geometria da face da ranhura (largura e profundidade da ranhura) a cada 3 ciclos de substituição da lâmina superior e substituir a bigorna quando o desvio da largura da ranhura exceder ±0,03 mm em relação à especificação do fabricante original (OEM).",
         },
         {
           question:
-            "What shear clearance should I set between the top blade and bottom anvil groove?",
+            "Qual deve ser a folga de cisalhamento entre a lâmina superior e a ranhura da bigorna inferior?",
           answer:
-            "Shear clearance is substrate-dependent. For flexible plastic films (BOPP, BOPET, CPP) at 0.02–0.05 mm per side is standard. For kraft paper and board, 0.05–0.10 mm. For aluminium and copper foils, 0.01–0.03 mm per side. We pre-verify matched top/bottom pairs to your specified clearance and record the setting on an engineering data sheet that ships with each order, allowing operators to replicate the clearance on every reinstallation.",
+            "A folga de cisalhamento depende do substrato. Para filmes plásticos flexíveis (BOPP, BOPET, CPP), o padrão é de 0,02 a 0,05 mm de cada lado. Para papel kraft e papelão, de 0,05 a 0,10 mm. Para folhas de alumínio e cobre, o padrão é de 0,01 a 0,03 mm por lado. Verificamos previamente os pares de partes superior e inferior para garantir que estejam de acordo com a folga especificada por você e registramos a configuração em uma ficha técnica de engenharia que acompanha cada pedido, permitindo que os operadores reproduzam a folga em todas as reinstalações.",
         },
         {
           question:
-            "Can I order replacement anvil knives without buying a full matched pair?",
+            "Posso encomendar lâminas de bigorna de reposição sem comprar um par completo?",
           answer:
-            "Yes. We supply bottom anvil knives as standalone replacements machined to the groove profile and OD/ID of your existing top-knife arbor system. Provide your OEM platform (Tidland, Kampf, Atlas, etc.) and the top knife OD/ID, and we will match the anvil to the mating geometry. If you supply a worn anvil as a sample, we can reverse-engineer the original groove profile before regrinding.",
+            "Sim. Fornecemos facas de bigorna inferiores como peças de reposição avulsas, usinadas de acordo com o perfil da ranhura e o diâmetro externo/interno do seu sistema de eixo de faca superior existente. Informe-nos a plataforma do fabricante original (Tidland, Kampf, Atlas, etc.) e o diâmetro externo/interno da faca superior, e nós adaptaremos a bigorna à geometria de acoplamento. Se você nos fornecer uma bigorna desgastada como amostra, podemos fazer a engenharia reversa do perfil original da ranhura antes do reafiamento.",
         },
         {
           question:
-            "Why does my slit edge quality degrade even after I replace the top blade with a new one?",
+            "Por que a qualidade do corte continua piorando mesmo depois de trocar a lâmina superior por uma nova?",
           answer:
-            "If new top blades do not restore slit quality, the anvil groove is almost certainly worn beyond its specification. A rounded or widened groove face increases effective shear clearance regardless of top-blade condition, producing a ragged, feathered slit edge. Inspect the groove width and depth with a groove gauge or profilometer. If groove deviation exceeds ±0.03 mm from OEM spec, anvil replacement or regrinding is required.",
+            "Se as novas lâminas superiores não restaurarem a qualidade do corte, é quase certo que a ranhura da bigorna esteja desgastada além das especificações. Uma face da ranhura arredondada ou alargada aumenta a folga efetiva de cisalhamento, independentemente da condição das lâminas superiores, produzindo uma borda de corte irregular e com franjas. Inspecione a largura e a profundidade da ranhura com um medidor de ranhura ou um perfilômetro. Se o desvio da ranhura exceder ±0,03 mm em relação às especificações do fabricante original (OEM), será necessária a substituição ou o reafiamento da bigorna.",
         },
       ],
       company: [
         {
           question:
-            "Do you supply bottom anvil knives as part of a matched pair, or only individually?",
+            "Vocês fornecem facas de bigorna inferior como parte de um par combinado ou apenas individualmente?",
           answer:
-            "Both options are available. For new installations or full arbor rebuilds, we recommend matched pairs — top blade and bottom anvil verified to a specified shear clearance, with a joint engineering data sheet. For replacement orders on existing lines, standalone anvil knives machined to your OEM groove profile are available with standard 5–7 day lead time.",
+            "Ambas as opções estão disponíveis. Para novas instalações ou reconstruções completas de eixos, recomendamos pares combinados — lâmina superior e bigorna inferior verificadas de acordo com uma folga de cisalhamento especificada, acompanhadas de uma ficha técnica conjunta. Para pedidos de reposição em linhas existentes, estão disponíveis facas de bigorna avulsas, usinadas de acordo com o perfil de ranhura do fabricante original (OEM), com prazo de entrega padrão de 5 a 7 dias.",
         },
         {
           question:
-            "What OEM platforms does Sureay supply matched anvil knives for?",
+            "Para quais plataformas de fabricantes de equipamentos originais (OEM) a Sureay fornece facas de bigorna compatíveis?",
           answer:
-            "We currently stock and supply groove-profiled anvil knives for Tidland (single-groove and double-groove arbors), Kampf (narrow and wide arbor series), Atlas Converting Equipment, Goebel, BHS, Agnati, and Dusenbery. For other OEM platforms, provide the arbor drawing or worn sample and we will engineer a matched replacement.",
+            "Atualmente, mantemos em estoque e fornecemos facas de bigorna com perfil ranhurado para as marcas Tidland (eixos de ranhura única e dupla), Kampf (séries de eixos estreitos e largos), Atlas Converting Equipment, Goebel, BHS, Agnati e Dusenbery. Para outras plataformas OEM, forneça o desenho do eixo ou uma amostra desgastada e nós projetaremos uma peça de reposição compatível.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question:
+            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM-profile anvil knives ship within 48–72 hours. Custom groove profiles take 7–12 working days. We partner with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Sim, exportamos para mais de 50 países. As facas de bigorna com perfil OEM padrão são enviadas em 48 a 72 horas. Os perfis de ranhura personalizados levam de 7 a 12 dias úteis. Trabalhamos em parceria com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
         },
       ],
     },
   },
   {
     id: "tungsten-carbide-slitter-knives",
-    name: "Tungsten Carbide Slitter Knives",
-    fullName: "Tungsten Carbide Slitter Knives for High-Wear Slitting",
+    name: "Facas de corte de carboneto de tungstênio",
+    fullName:
+      "Lâminas de corte de carboneto de tungstênio para corte com alto desgaste",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte",
     image:
       "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
     gallery: [
@@ -4134,13 +4164,13 @@ export const blades: Blade[] = [
       "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
     ],
     galleryAlts: [
-      "Tungsten carbide slitter knives, three ground circular blades with polished faces",
-      "Carbide slitter knife detail showing centre bore, mounting holes and ground cutting edge",
+      "Facas de corte de carboneto de tungstênio, três lâminas circulares retificadas com faces polidas",
+      "Detalhe de uma lâmina de corte de carboneto, mostrando o furo central, os orifícios de fixação e a aresta de corte retificada",
     ],
     description:
-      "Solid carbide costs six to ten times what D2 does. It earns that premium back in exactly two situations: when your web carries abrasive filler, or when your run lengths are long enough that changeover downtime — not blade price — is what actually costs you money. Micro-grain YG6, YG6X, YG8 and YG10X (ISO K10–K30) at 89.5–92.5 HRA, ground to ±0.002 mm, with a hardness and dimensional report in every shipment.",
+      "O metal duro custa de seis a dez vezes mais do que o D2. Esse custo adicional se justifica exatamente em duas situações: quando a banda transporta material de enchimento abrasivo ou quando as tiragens são longas o suficiente para que o tempo de inatividade devido à troca — e não o preço da lâmina — seja o que realmente gera custo para você. Microgrãos YG6, YG6X, YG8 e YG10X (ISO K10–K30) com dureza de 89,5–92,5 HRA, retificados com tolerância de ±0,002 mm, acompanhados de um laudo de dureza e dimensões em cada remessa.",
     fullDescription:
-      "Tungsten carbide slitter knives are a wear-resistance decision, not a general upgrade. If you are slitting clear BOPP on short runs, D2 or ASP23 PM will serve you better and cost you less, and we will tell you that before you order. This page is for the jobs where tool steel genuinely cannot hold an edge: mineral-filled films, glass-reinforced laminates, abrasive nonwovens, coated foils and high-speed board.\n\n## When the Upgrade Pays\n\nCarbide is worth it when the cost of stopping the line exceeds the cost of the blade. Take your blade changes per month, multiply by the downtime cost per changeover, and compare that against the price difference. On a line where a changeover costs an hour of production, a 10× edge life usually pays back within one or two blade cycles. On a line where changeovers are quick and cheap, it will not.\n\n## Where Carbide Earns Its Cost\n\n**Mineral- and filler-loaded films:** TiO₂-loaded BOPP, calcium-carbonate filled PE, matte and cavitated grades. The filler is what destroys steel edges; hardness is the only defence.\n\n**Glass-reinforced and composite laminates:** FR-4 and prepreg trim, glass-fibre reinforced tapes, aluminium-composite webs. Glass content is deeply abrasive and dulls HSS within a shift.\n\n**Abrasive nonwovens:** mineral-loaded meltblown, spunbond with filler, abrasive-backing and wipe substrates where fibre fuzzing appears the moment the edge softens.\n\n**Metal foil, coated strip and battery electrode:** aluminium and copper foil, coated and laminated strip, where burr-free edges must hold across a full coil run.\n\n**High-speed coated board and paper:** clay- and pigment-coated stock on lines where a knife change costs an hour of production and the blade price is a rounding error against that.\n\n## Where Carbide Is the Wrong Choice\n\n**Shock and interrupted cuts.** Carbide is brittle. If the web snags, if splice tape runs through, or if the knife can contact the anvil metal-to-metal, carbide chips where D2 would deform and survive.\n\n**Clean, unfilled substrates on short runs.** Slitting clear BOPP, plain kraft or unfilled PE? D2 or ASP23 PM will hold an edge long enough, at a fraction of the cost.\n\n**No diamond grinding access.** If neither you nor your service partner can regrind on diamond wheels, a dulled carbide blade becomes scrap rather than a re-sharpenable asset — and the economics invert.\n\n**Loose or unverified clearance.** Carbide amplifies whatever your setup already does. It will not compensate for a worn arbor, an out-of-true knife holder, or clearance nobody has measured.",
+      "As lâminas de corte em carboneto de tungstênio são uma opção para resistência ao desgaste, não uma atualização geral. Se você estiver cortando BOPP transparente em tiragens curtas, as lâminas D2 ou ASP23 PM serão mais adequadas e mais econômicas, e nós lhe informaremos isso antes de você fazer o pedido. Esta página é destinada aos trabalhos em que o aço para ferramentas realmente não consegue manter o fio: filmes com enchimento mineral, laminados reforçados com fibra de vidro, não tecidos abrasivos, folhas revestidas e papelão de alta velocidade.\n\n## Quando a atualização compensa\n\nO carboneto vale a pena quando o custo da parada da linha excede o custo da lâmina. Calcule o número de trocas de lâmina por mês, multiplique pelo custo do tempo de inatividade por troca e compare esse valor com a diferença de preço. Em uma linha em que uma troca custa uma hora de produção, uma vida útil 10 vezes maior geralmente se paga em um ou dois ciclos de lâmina. Em uma linha em que as trocas são rápidas e baratas, isso não acontecerá.\n\n## Onde o carboneto compensa o custo\n\n**Filmes com adição de minerais e cargas:** BOPP com adição de TiO₂, PE com carga de carbonato de cálcio, tipos foscos e com cavitação. A carga é o que destrói as lâminas de aço; a dureza é a única defesa.\n\n**Laminados reforçados com fibra de vidro e compósitos:** acabamentos em FR-4 e pré-impregnados, fitas reforçadas com fibra de vidro, telas de compósito de alumínio. O conteúdo de vidro é altamente abrasivo e embota o HSS em um turno.\n\n**Não tecidos abrasivos:** meltblown com adição de minerais, spunbond com enchimento, substratos com revestimento abrasivo e de limpeza, nos quais o fiapo das fibras aparece no momento em que a aresta amolece.\n\n**Folhas metálicas, tiras revestidas e eletrodos de bateria:** folhas de alumínio e cobre, tiras revestidas e laminadas, onde as bordas sem rebarbas devem se manter em toda a extensão da bobina.\n\n**Papelão e papel revestidos de alta velocidade:** matérias-primas revestidas com argila e pigmentos em linhas onde a troca de lâmina custa uma hora de produção e o preço da lâmina é insignificante em comparação com isso.\n\n## Onde o carboneto é a escolha errada\n\n**Cortes com impacto e intermitentes.** O metal duro é frágil. Se a banda ficar presa, se a fita de emenda passar pela lâmina ou se a lâmina entrar em contato metal com metal com a bigorna, o metal duro se lasca, enquanto o D2 se deforma e sobrevive.\n\n**Substratos limpos e sem enchimento em tiragens curtas.** Cortar BOPP transparente, papel kraft comum ou PE sem enchimento? O D2 ou o ASP23 PM mantêm o fio por tempo suficiente, por uma fração do custo.\n\n**Sem acesso à afiação com diamante.** Se nem você nem seu parceiro de serviços puderem reafiar com rebolos de diamante, uma lâmina de metal duro cega se torna sucata, em vez de um ativo que pode ser reafiado — e a relação custo-benefício se inverte.\n\n**Folga solta ou não verificada.** O metal duro amplifica o que quer que sua configuração já faça. Ele não compensará um eixo desgastado, um porta-lâmina desalinhado ou uma folga que ninguém tenha medido.",
     link: "/products/tungsten-carbide-slitter-knives",
     compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
     specs: [
@@ -4194,83 +4224,89 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Cobalt content is the trade-off dial: more cobalt means tougher and less brittle, but the edge dulls sooner. The four carbide grades below are shown against the tool steels they replace, so the upgrade decision is visible in one table. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+        "O teor de cobalto é o fator de equilíbrio: quanto mais cobalto, mais resistente e menos frágil, mas o fio fica cego mais cedo. Os quatro tipos de carboneto abaixo são apresentados em comparação com os aços para ferramentas que substituem, de modo que a decisão de atualização fica clara em uma única tabela. Se suas lâminas de aço atuais estão ficando cegas, opte por um material mais duro. Se estiverem lascando, opte por um material mais resistente. Se ocorrerem os dois problemas, a causa geralmente é a folga, e não o material.",
       rows: [
         {
           grade: "D2",
           hardness: "HRC 58–62",
-          bestFor: "General-purpose slitting of clean, unfilled substrates",
+          bestFor:
+            "Corte longitudinal de uso geral de substratos limpos e sem enchimento",
           tradeoff:
-            "Baseline edge life and baseline cost. Regrinds on conventional wheels.",
+            "Vida útil inicial da aresta e custo inicial. Material triturado em rebolos convencionais.",
         },
         {
           grade: "M2 HSS",
           hardness: "HRC 62–65",
-          bestFor: "Moderate wear at higher line speeds",
-          tradeoff: "2–3× the edge life of D2 at roughly 1.5× the cost.",
+          bestFor: "Desgaste moderado em velocidades de linha mais altas",
+          tradeoff:
+            "2 a 3 vezes a vida útil do D2, a um custo de aproximadamente 1,5 vez o do D2.",
         },
         {
           grade: "ASP23 PM",
           hardness: "HRC 66–68",
-          bestFor: "High-speed, high-wear work short of true abrasives",
+          bestFor:
+            "Trabalhos de alta velocidade e alto desgaste que não envolvam abrasivos propriamente ditos",
           tradeoff:
-            "4–6× the edge life of D2 at roughly 3× the cost — frequently the better commercial choice.",
+            "Vida útil 4 a 6 vezes maior do que a do D2, a um custo de aproximadamente 3 vezes maior — frequentemente, a melhor opção comercial.",
         },
         {
           grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor: "Steady, low-shock slitting of abrasive film and paper",
+          hardness: "89,5–91,5 HRA",
+          bestFor:
+            "Corte contínuo e com baixo impacto de filmes abrasivos e papel",
           tradeoff:
-            "6% cobalt. The hardest of the four carbide grades and the least forgiving of shock.",
+            "6% de cobalto. O mais duro dos quatro tipos de carboneto e o menos resistente a impactos.",
         },
         {
           grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor: "Thin gauge, tight tolerance, best achievable edge quality",
+          hardness: "91–92,5 HRA",
+          bestFor:
+            "Espessura fina, tolerância estreita, a melhor qualidade de borda possível",
           tradeoff:
-            "6% cobalt, ultra-fine grain. Sharpest edge, most sensitive to interrupted cuts.",
+            "6% de cobalto, grão ultrafino. Lâmina mais afiada, mais sensível a cortes intermitentes.",
         },
         {
           grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor: "Nonwovens, foil, anywhere the web may snag",
+          hardness: "88,5–90,5 HRA",
+          bestFor:
+            "Tecidos não tecidos, folhas metálicas, em qualquer lugar onde a tela possa ficar presa",
           tradeoff:
-            "8% cobalt. Tougher and shock tolerant, at the cost of some edge life.",
+            "8% de cobalto. Mais resistente e tolerante a impactos, em troca de uma menor durabilidade das arestas.",
         },
         {
           grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Interrupted cuts, laminates and heavier stock",
+          hardness: "90,5–91,5 HRA",
+          bestFor: "Cortes interrompidos, laminados e papéis mais pesados",
           tradeoff:
-            "10% cobalt, ultra-fine grain. Best toughness-to-wear balance of the range.",
+            "10% de cobalto, grão ultrafino. O melhor equilíbrio entre tenacidade e resistência ao desgaste da linha.",
         },
       ],
       outro:
-        "Across the range, carbide delivers roughly 10–30× the edge life of D2 at 6–10× the cost, takes fewer regrind cycles, and can only be reground on diamond wheels. How to run the arithmetic: carbide is worth it when the cost of stopping the line exceeds the cost of the blade. Tell us the material and the failure you are seeing now, and we will pick the grade.",
+        "Em toda a linha de produtos, o metal duro oferece uma vida útil da lâmina cerca de 10 a 30 vezes maior do que a do D2, a um custo de 6 a 10 vezes maior, requer menos ciclos de reafiação e só pode ser reafiado em rebolos de diamante. Como fazer as contas: o metal duro vale a pena quando o custo de parar a linha de produção excede o custo da lâmina. Informe-nos o material e o tipo de falha que você está observando no momento, e nós escolheremos a classe adequada.",
     },
     componentsIntro:
-      "Send a worn blade and your machine model — we will reverse-engineer the clearance and quote within 2 hours.",
+      "Envie uma lâmina gasta e o modelo da sua máquina — faremos a engenharia reversa da folga e apresentaremos um orçamento em até 2 horas.",
     components: [
       {
         id: "carbide-when-it-pays",
-        tag: "APPLICATION FIT",
-        title: "Where Carbide Earns Its Cost",
+        tag: "ADAPTAÇÃO DA APLICAÇÃO",
+        title: "Onde o carboneto justifica seu custo",
         description:
-          "Abrasive fill is what destroys steel edges, and hardness is the only defence. TiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one.",
+          "O enchimento abrasivo é o que destrói as bordas de aço, e a dureza é a única defesa. BOPP com adição de TiO₂, PE com enchimento de carbonato de cálcio, FR-4 e acabamentos em pré-impregnado, fita reforçada com fibra de vidro, tecido fundido com adição de minerais, folhas revestidas de alumínio e cobre e cartolina revestida com argila — todos desgastam a lâmina de aço para ferramentas mais rapidamente do que o comprimento de produção permite. A mesma lógica de classificação se aplica independentemente do substrato — trata-se de uma decisão relacionada ao material, não à aplicação.",
       },
       {
         id: "carbide-when-not-to",
-        tag: "HONEST LIMITS",
-        title: "Where Carbide Is the Wrong Choice",
+        tag: "LIMITES HONESTOS",
+        title: "Quando o carboneto não é a escolha certa",
         description:
-          "Carbide is a wear-resistance solution, not a general upgrade. It chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel.",
+          "O carboneto é uma solução para resistência ao desgaste, não uma melhoria geral. Ele lasca onde o D2 se deformaria — em emendas, obstruções e cortes interrompidos, ou onde a lâmina pode entrar em contato metal com metal com a bigorna. Em substratos limpos e sem enchimento e em tiragens curtas, o D2 ou o ASP23 PM mantêm o fio por tempo suficiente por uma fração do preço. E sem acesso ao reafiamento com disco de diamante, uma lâmina de carboneto cega é lixo, e não um ativo. Se alguma dessas características se aplicar à sua linha de produção, informe-nos quando fizer sua consulta — preferimos indicar o aço correto.",
       },
       {
         id: "carbide-grade-selection",
-        tag: "METALLURGY",
-        title: "Micro-Grain Substrate, Chosen Per Job",
+        tag: "METALURGIA",
+        title: "Substrato de microgrãos, escolhido de acordo com cada trabalho",
         description:
-          "We select from four grades against your material and your current failure mode rather than shipping one grade for everything. Sub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box.",
+          "Selecionamos entre quatro classes de acordo com o seu material e o seu modo de falha atual, em vez de enviar uma única classe para todas as aplicações. As classes submicrométricas apresentam um fio mais afiado; as classes com maior teor de cobalto resistem a impactos. O carboneto só pode ser acabado em rebolos de diamante, e a geometria do fio, o paralelismo e o desvio são submetidos ao mesmo padrão de inspeção que nossa retificação de aço para ferramentas — cada lâmina é medida antes da expedição, com um relatório de teste de dureza e um registro dimensional incluídos na embalagem.",
       },
     ],
     relatedBladeIds: [
@@ -4285,77 +4321,83 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "When should I choose solid carbide over M2 HSS or D2?",
+          question:
+            "Quando devo optar pelo metal duro em vez do aço rápido M2 ou do D2?",
           answer:
-            "Only when your web carries abrasive filler, or when your run lengths are long enough that regrind and changeover savings cover the 6–10× price difference. For standard clear film, plain paper or unfilled PE, D2 or ASP23 PM is usually the better commercial choice — and we will say so.",
-        },
-        {
-          question: "How many times can a carbide slitter knife be reground?",
-          answer:
-            "It depends on the thickness allowance designed into the blade, not on the material. Each regrind removes stock; the practical limit is where the blade thins past its clearance tolerance. Carbide typically takes fewer regrinds than D2 but delivers far more running time between each one, which is where the economics actually sit. Diamond wheels are required — conventional aluminium-oxide wheels will glaze and will not cut carbide.",
+            "Somente quando sua tela contém enchimento abrasivo ou quando suas tiragens são longas o suficiente para que a economia com material moído e com a troca de molde cubra a diferença de preço de 6 a 10 vezes. Para filmes transparentes padrão, papel comum ou PE sem enchimento, o PM D2 ou ASP23 costuma ser a melhor opção comercial — e é isso que vamos dizer.",
         },
         {
           question:
-            "My carbide blade chipped on the first run — what went wrong?",
+            "Quantas vezes uma lâmina de corte de carboneto pode ser reafiada?",
           answer:
-            "Almost always one of three things. Handling: a carbide blade dropped on a concrete floor develops internal stress and cracks that stay invisible until load is applied. Clearance: set too tight, the knife makes metal-to-metal contact with the anvil and micro-chips along the edge. Or the application has shock in it — a splice, a snag, an interrupted cut — that carbide's brittleness cannot absorb. Send us a photo of the chipped edge; the fracture pattern usually identifies which of the three it was.",
+            "Isso depende da margem de espessura prevista no projeto da lâmina, e não do material. Cada reafiação remove material; o limite prático é atingido quando a lâmina fica mais fina do que sua tolerância de folga. O metal duro normalmente requer menos reafiações do que o D2, mas oferece um tempo de operação muito maior entre cada uma delas, e é aí que reside a vantagem econômica. São necessários discos de diamante — os discos convencionais de óxido de alumínio ficam vitrificados e não cortam o metal duro.",
         },
         {
-          question: "YG6 or YG8 — which grade should I specify?",
+          question:
+            "Minha lâmina de carboneto lascou logo na primeira passagem — o que deu errado?",
           answer:
-            "YG6 (ISO K10) is harder and lasts longer on steady, clean, abrasive work. YG8 (ISO K20) carries more cobalt, so it is tougher and tolerates shock at the cost of some edge life. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+            "Quase sempre é uma dessas três coisas. Manuseio: uma lâmina de carboneto que cai no chão de concreto desenvolve tensão interna e rachaduras que permanecem invisíveis até que seja aplicada uma carga. Folga: se ajustada muito apertada, a faca entra em contato metal com metal com a bigorna e apresenta microlascas ao longo do fio. Ou a aplicação envolve um impacto — uma emenda, um empecilho, um corte interrompido — que a fragilidade do carboneto não consegue absorver. Envie-nos uma foto do gume lascado; o padrão de fratura geralmente identifica qual das três causas foi a responsável.",
         },
         {
-          question: "Can a carbide top knife run against a steel bottom anvil?",
+          question: "YG6 ou YG8 — qual grau devo especificar?",
           answer:
-            "Yes, and it is common — but the anvil then becomes the wear part and will need attention sooner than before. If the anvil is softer, verify clearance more often, since anvil wear opens the gap and the first symptom is a ragged edge that looks like a knife problem. Matched carbide pairs are available where anvil wear is the limiting factor.",
+            "O YG6 (ISO K10) é mais duro e tem maior durabilidade em trabalhos abrasivos constantes e limpos. O YG8 (ISO K20) contém mais cobalto, por isso é mais resistente e tolera impactos, embora isso reduza um pouco a vida útil do fio. Se suas lâminas de aço atuais estão ficando cegas, opte por uma de maior dureza. Se estiverem lascando, opte por uma mais resistente. Se ocorrerem ambos os problemas, a causa geralmente está na folga, e não no material.",
         },
         {
-          question: "How should carbide blades be stored and handled?",
+          question:
+            "Uma lâmina superior de carboneto pode funcionar contra uma bigorna inferior de aço?",
           answer:
-            "Individually separated, never stacked bare metal-to-metal, in a dry environment. Most carbide failures we investigate started in the stockroom or in transit, not on the machine. Blades ship in protective packaging that is worth keeping for the ones you are not running.",
+            "Sim, e isso é comum — mas, nesse caso, a bigorna passa a ser a peça sujeita a desgaste e precisará de manutenção mais cedo do que antes. Se a bigorna for mais macia, verifique a folga com mais frequência, pois o desgaste da bigorna aumenta a folga e o primeiro sintoma é uma borda irregular que parece um problema com a lâmina. Estão disponíveis pares combinados de metal duro nos casos em que o desgaste da bigorna é o fator limitante.",
+        },
+        {
+          question:
+            "Como as lâminas de carboneto devem ser armazenadas e manuseadas?",
+          answer:
+            "Separadas individualmente, nunca empilhadas com contato direto de metal com metal, em um ambiente seco. A maioria das falhas em carbonetos que investigamos teve início no almoxarifado ou durante o transporte, e não na máquina. As lâminas são enviadas em embalagens protetoras que vale a pena guardar para aquelas que você não estiver utilizando.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Você é um fabricante ou uma empresa comercial?",
           answer:
-            "We manufacture. Grinding, heat treatment control and inspection are done in our own ISO 9001:2015 certified facility, in operation since 2008 and shipping to 50+ countries. That is why we can quote against a worn sample and stand behind the dimensional record that ships with it.",
-        },
-        {
-          question: "Can you make carbide blades without an OEM drawing?",
-          answer:
-            "Yes — send a worn blade and your machine model. We measure the sample, reverse-engineer the working clearance from the wear pattern, and produce a matched replacement; the wear pattern usually tells us more about how the knife is actually running than the original drawing does. Bore, keyway, mounting-hole pattern and thickness are matched to the arbors you already run, so there is no holder change and no retooling.",
-        },
-        {
-          question: "What documentation ships with a carbide order?",
-          answer:
-            "A hardness test report and a dimensional inspection record with every shipment, from an ISO 9001:2015 certified facility. If your incoming inspection needs full CMM data, ask when you order and it ships with the blades. Where several knives share a shaft, they are ground and shipped as a verified matched set so stack-up error does not accumulate across positions.",
+            "Nós fabricamos. A retificação, o controle tratamento térmico e a inspeção são realizados em nossas próprias instalações, certificadas pela ISO 9001:2015, em operação desde 2008 e com remessas para mais de 50 países. É por isso que podemos apresentar uma cotação com base em uma amostra desgastada e garantir a precisão das medidas que acompanham a remessa.",
         },
         {
           question:
-            "Can we trial a small carbide set before committing to a full order?",
+            "É possível fabricar lâminas de carboneto sem um desenho do fabricante original?",
           answer:
-            "Yes. We supply trial sets — typically 2–5 blades — for machine fit verification and edge life testing against your current steel blades. We would rather you prove the payback on your own line than take our word for the multiplier. For custom profiles, a dimensional sign-off sample is produced before full production starts.",
+            "Sim — envie uma lâmina desgastada e o modelo da sua máquina. Medimos a amostra, fazemos a engenharia reversa da folga de trabalho a partir do padrão de desgaste e produzimos uma peça de reposição compatível; o padrão de desgaste geralmente nos fornece mais informações sobre como a lâmina está realmente funcionando do que o desenho original. O diâmetro interno, a ranhura de chaveta, o padrão dos furos de fixação e a espessura são adaptados aos eixos que você já utiliza, de modo que não há necessidade de trocar o porta-fresas nem de reajustar o equipamento.",
         },
         {
-          question: "What is the lead time on carbide slitter knives?",
+          question: "Que documentação acompanha um pedido de carboneto?",
           answer:
-            "Standard profiles in stocked grades ship in 7–12 working days; custom geometry and non-standard diameters take 15–20. Carbide runs longer than tool steel because sintered blanks and diamond-wheel finishing cannot be rushed without costing you edge quality. Blades ship individually separated in protective packaging — most carbide damage we investigate happened in transit or storage, not on the machine.",
+            "Um relatório de teste de dureza e um registro de inspeção dimensional acompanham cada remessa, provenientes de uma unidade certificada pela ISO 9001:2015. Caso sua inspeção de recebimento exija dados completos da CMM, solicite-os no momento do pedido e eles serão enviados junto com as lâminas. Quando várias facas compartilham um eixo, elas são retificadas e enviadas como um conjunto verificado e combinada, de modo que o erro de empilhamento não se acumule entre as posições.",
+        },
+        {
+          question:
+            "Será que podemos testar um pequeno conjunto de carbonetos antes de fechar um pedido completo?",
+          answer:
+            "Sim. Fornecemos conjuntos de teste — geralmente de 2 a 5 lâminas — para verificação do ajuste na máquina e testes de durabilidade do fio de corte em comparação com suas lâminas de aço atuais. Preferimos que você comprove o retorno do investimento em sua própria linha de produção, em vez de acreditar apenas na nossa palavra quanto ao fator de multiplicação. Para perfis personalizados, é produzida uma amostra de aprovação dimensional antes do início da produção em escala.",
+        },
+        {
+          question:
+            "Qual é o prazo de entrega das lâminas de corte de metal duro?",
+          answer:
+            "Os perfis padrão em classes em estoque são enviados em 7 a 12 dias úteis; geometrias personalizadas e diâmetros fora do padrão levam de 15 a 20 dias. O metal duro tem vida útil mais longa do que o aço para ferramentas, pois a fabricação de peças sinterizadas e o acabamento com disco de diamante não podem ser apressados sem comprometer a qualidade do fio. As lâminas são enviadas separadas individualmente em embalagens protetoras — a maioria dos danos ao metal duro que investigamos ocorreu durante o transporte ou o armazenamento, e não na máquina.",
         },
       ],
     },
   },
   {
     id: "metal-cold-saw-blades",
-    name: "Metal Cold Saw Blades",
+    name: "Lâminas de serra a frio para metal",
     fullName:
-      "HSS & TCT Cold Circular Saw Blades for Metal Tube and Profile Cutting",
+      "Lâminas de serra circular a frio HSS e TCT para corte de tubos e perfis metálicos",
     category: "cold_saw_blades",
     sector: "metal",
-    categoryDisplay: "Metal Processing Blades",
+    categoryDisplay: "Lâminas para processamento de metais",
     image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Burr-Free Cut",
+    badge: "Corte sem rebarbas",
     badgeColor: "purple",
     gallery: [
       "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
@@ -4363,9 +4405,9 @@ export const blades: Blade[] = [
       "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
     ],
     description:
-      "Premium HSS (M2 / M35 Cobalt) and TCT cold saw blades for cutting steel tubes, solid bars, aluminum profiles, and stainless steel. The cold cutting process produces a precise, burr-free end with no heat-affected zone (HAZ)—ready for immediate welding or threading.",
+      "Lâminas de serra a frio Premium HSS (M2 / M35 cobalto) e TCT para o corte de tubos de aço, barras maciças, perfis de alumínio e aço inoxidável. O processo de corte a frio produz uma extremidade precisa e sem rebarbas, sem zona afetada pelo calor (HAZ) — pronta para soldagem ou rosqueamento imediatos.",
     fullDescription:
-      "Cold circular sawing is the preferred metal cutting process for tube mills, structural fabrication, and precision bar stock applications. Unlike abrasive cut-off wheels or bandsaws, a cold circular saw blade cuts by metal-removal (chip formation) rather than high-friction abrasion. This keeps the material cool, producing a smooth, perfectly square end-face with zero thermal distortion and no secondary deburring required.\n\nSureay cold saw blades are manufactured from M2 (Standard HSS), M35 (5% Cobalt HSS), and TCT (Tungsten Carbide Tipped) configurations. All blades are manufactured to strict DIN 1837/1840 standards and are available in standard diameters from 200 mm to 450 mm with tooth configurations and PVD coatings matched to the workpiece material.\n\n## Material & Grade Selection Guide\n\n**M2 HSS (Standard / Steam Treated):** The baseline grade for cold sawing mild steel pipes, structural tubing, and angle sections up to 400 MPa tensile strength. Provides excellent toughness for interrupted cuts on hollow sections. Typically supplied with a black oxide (steam treated) finish to retain coolant and prevent micro-welding.\n\n**M35 Cobalt HSS (Recommended for Stainless):** The addition of 5% cobalt dramatically elevates the blade’s red-hardness (hot hardness) and wear resistance. This is essential when cutting 304/316 austenitic stainless steel, which work-hardens rapidly under the blade. M35 maintains sharp edge geometry through the elevated cutting temperatures generated by stainless steel.\n\n**TCT (Tungsten Carbide Tipped):** Brazed carbide inserts on a high-alloy steel body. Best for high-volume tube mill applications and non-ferrous metals (aluminum extrusions, copper pipes) running at elevated cutting speeds. Delivers 5–8× longer service life vs HSS on aluminum profiles.\n\n## Advanced PVD Coatings\nTo significantly extend blade life and reduce cutting friction, we offer advanced PVD coatings:\n- **TiN (Titanium Nitride — Gold):** Lowers the friction coefficient, ideal for cutting standard steel tubes at higher speeds.\n- **TiAlN (Titanium Aluminum Nitride — Violet/Black):** Forms a hard aluminum oxide layer during cutting, protecting the teeth from extreme heat. The ultimate choice for cutting stainless steel, cast iron, and high-tensile alloys.",
+      "O corte com serra circular a frio é o processo preferido de corte de metal para usinas de tubos, fabricação de estruturas e aplicações de barras de precisão. Ao contrário dos discos de corte abrasivos ou das serras de fita, uma lâmina de serra circular a frio corta por remoção de metal (formação de cavacos), em vez de abrasão por alto atrito. Isso mantém o material resfriado, produzindo uma face de corte lisa e perfeitamente perpendicular, sem distorção térmica e sem a necessidade de rebarbação secundária.\n\nAs lâminas de serra a frio da Sureay são fabricadas nas configurações M2 (HSS padrão), M35 (HSS com 5% de cobalto) e TCT (com pontas de carboneto de tungstênio). Todas as lâminas são fabricadas de acordo com as rigorosas normas DIN 1837/1840 e estão disponíveis em diâmetros padrão de 200 mm a 450 mm, com configurações de dentes e revestimentos PVD adequados ao material da peça de trabalho.\n\n## Guia de seleção de materiais e classes\n\n**M2 HSS (padrão / tratado a vapor):** A classe básica para o corte a frio de tubos de aço macio, tubos estruturais e perfis angulares com resistência à tração de até 400 MPa. Oferece excelente tenacidade para cortes interrompidos em perfis ocos. Normalmente fornecida com acabamento de óxido preto (tratada a vapor) para reter o refrigerante e evitar a microsoldagem.\n\n**M35 HSS com cobalto (recomendada para aço inoxidável):** A adição de 5% de cobalto eleva drasticamente a dureza a quente da lâmina e sua resistência ao desgaste. Isso é essencial ao cortar aço inoxidável austenítico 304/316, que se endurece rapidamente sob a lâmina. O M35 mantém a geometria afiada do gume mesmo sob as elevadas temperaturas de corte geradas pelo aço inoxidável.\n\n**TCT (com ponta de carboneto de tungstênio):** Insertos de carboneto soldados por brasagem em um corpo de aço de alta liga. Ideal para aplicações em usinarias de tubos de alto volume e metais não ferrosos (extrusões de alumínio, tubos de cobre) operando em altas velocidades de corte. Proporciona vida útil 5 a 8 vezes maior em comparação com o HSS em perfis de alumínio.\n\n## Revestimentos PVD avançados\nPara prolongar significativamente a vida útil da lâmina e reduzir o atrito de corte, oferecemos revestimentos PVD avançados:\n- **TiN (Nitreto de titânio — Dourado):** Reduz o coeficiente de atrito, ideal para o corte de tubos de aço padrão em velocidades mais altas.\n- **TiAlN (nitreto de titânio-alumínio — violeta/preto):** Forma uma camada dura de óxido de alumínio durante o corte, protegendo os dentes do calor extremo. A escolha definitiva para o corte de aço inoxidável, ferro fundido e ligas de alta resistência.",
     link: "/products/metal-cold-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4402,34 +4444,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "cold-cut-quality",
-        tag: "PROCESS ADVANTAGE",
-        title: "Cold Cut vs. Abrasive Wheels",
+        tag: "VANTAGEM DO PROCESSO",
+        title: "Discos de corte a frio x discos abrasivos",
         description:
-          "Abrasive wheels generate temperatures above 800°C, producing a heat-affected zone (HAZ) and heavy slag that must be ground off. Cold circular sawing operates at low RPM with coolant, keeping the cut face below 200°C. The result is a clean, weld-ready surface right off the machine.",
+          "Os discos abrasivos geram temperaturas acima de 800 °C, produzindo uma zona afetada pelo calor (HAZ) e escória pesada que precisa ser removida por esmerilhamento. O corte com serra circular a frio opera em baixa rotação com líquido de refrigeração, mantendo a superfície de corte abaixo de 200 °C. O resultado é uma superfície limpa e pronta para soldagem assim que sai da máquina.",
       },
       {
         id: "grade-cobalt",
-        tag: "METALLURGY",
-        title: "M35 Cobalt for Stainless",
+        tag: "METALURGIA",
+        title: "M35 Cobalto para aço inoxidável",
         description:
-          "Stainless steel (304/316) work-hardens under cutting pressure, instantly dulling standard M2 blades. Our M35 grade contains 5% Cobalt, granting it extreme ‘red hardness’ to slice through austenitic stainless steel without losing edge geometry.",
+          "O aço inoxidável (304/316) sofre endurecimento por deformação sob pressão de corte, o que embota instantaneamente as lâminas M2 padrão. Nossa classe M35 contém 5% de cobalto, o que lhe confere extrema “dureza vermelha” para cortar o aço inoxidável austenítico sem perder a geometria do fio.",
       },
       {
         id: "pvd-coatings",
-        tag: "SURFACE TECH",
-        title: "TiN & TiAlN Coatings",
+        tag: "TECNOLOGIA DE SUPERFÍCIE",
+        title: "Revestimentos de TiN e TiAlN",
         description:
-          "While standard steam-treated blades are great for mild steel, upgrading to TiN (Titanium Nitride) or TiAlN PVD coatings drastically reduces friction and heat. This allows for faster feed rates and prevents material from cold-welding to the saw teeth.",
+          "Embora as lâminas padrão tratadas a vapor sejam excelentes para aço carbono, a mudança para revestimentos PVD de TiN (nitreto de titânio) ou TiAlN reduz drasticamente o atrito e o calor. Isso permite velocidades de avanço mais rápidas e evita que o material se solde a frio aos dentes da serra.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Grade & Finish",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore (mm)",
-      col3: "Thickness (mm)",
-      col4: "Teeth (Z)",
+      col0: "Tipo e acabamento da lâmina",
+      col1: "Diâmetro externo (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura (mm)",
+      col4: "Dentes (Z)",
       caption:
-        "* Standard dimensions for Kaltenbach, Bewo, and MEP machines. Tooth count (Z) is selected based on your pipe wall thickness. Custom drive pin holes machined to order.",
+        "* Dimensões padrão para máquinas Kaltenbach, Bewo e MEP. O número de dentes (Z) é selecionado com base na espessura da parede do tubo. Orifícios personalizados para pinos de acionamento usinados sob encomenda.",
     },
     standardDimensions: [
       {
@@ -4483,52 +4525,55 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "How do I choose between M2 and M35 Cobalt HSS grades?",
+          question:
+            "Como faço para escolher entre as classes de aço HSS M2 e M35 Cobalt?",
           answer:
-            "For standard structural steel, mild steel pipes, and box sections, M2 HSS provides excellent toughness and value. If you are cutting stainless steel (304, 316), high-tensile steel, or using high-speed automatic saws, you must upgrade to M35. M35 contains 5% Cobalt, which prevents the teeth from softening under high friction heat.",
+            "Para aço estrutural padrão, tubos de aço macio e perfis em caixa, o M2 HSS oferece excelente tenacidade e custo-benefício. Se você estiver cortando aço inoxidável (304, 316), aço de alta resistência ou utilizando serras automáticas de alta velocidade, é necessário optar pela M35. A M35 contém 5% de cobalto, o que evita que os dentes amoleçam devido ao calor gerado pelo alto atrito.",
         },
         {
           question:
-            "How many teeth (TPI / Pitch) do I need for my steel pipes?",
+            "Quantos dentes (TPI / Passo) preciso para meus tubos de aço?",
           answer:
-            "The golden rule of cold sawing is to always have 3 to 4 teeth simultaneously engaged in the material thickness. If you are cutting thin-walled tubes (e.g., 1.5 mm wall), you need a fine pitch (high tooth count, e.g., 220Z or 240Z) to prevent the teeth from hooking and snapping. If you are cutting thick solid bars (e.g., 40 mm solid), you need a coarse pitch (low tooth count, e.g., 120Z) to allow room for the massive metal chips to escape.",
+            "A regra de ouro do corte a frio é ter sempre de 3 a 4 dentes em contato simultâneo com a espessura do material. Se você estiver cortando tubos de parede fina (por exemplo, parede de 1,5 mm), é necessário um passo fino (alto número de dentes, por exemplo, 220Z ou 240Z) para evitar que os dentes fiquem presos e se quebrem. Se você estiver cortando barras maciças grossas (por exemplo, 40 mm de diâmetro), precisará de um passo grosso (baixo número de dentes, por exemplo, 120Z) para permitir que as grandes limalhas de metal sejam expelidas.",
         },
         {
-          question: "Can HSS cold saw blades be resharpened?",
+          question: "As lâminas de serra a frio HSS podem ser reafiadas?",
           answer:
-            "Yes. This is the biggest advantage of HSS cold saw blades. Unlike abrasive discs that are thrown away, an HSS blade can be CNC-resharpened 10 to 15 times before the diameter becomes too small to use. We offer professional regrinding and recoating services to restore factory-new performance.",
+            "Sim. Essa é a maior vantagem das lâminas de serra a frio HSS. Ao contrário dos discos abrasivos, que são descartados, uma lâmina HSS pode ser reafiada por CNC de 10 a 15 vezes antes que o diâmetro fique pequeno demais para ser utilizada. Oferecemos serviços profissionais de reafiagem e recobrimento para restaurar o desempenho original de fábrica.",
         },
         {
-          question: "Should I use coolant when cutting with HSS cold saws?",
+          question:
+            "Devo usar líquido de arrefecimento ao cortar com serras a frio HSS?",
           answer:
-            "Absolutely. You must use a flood coolant (water-soluble synthetic or semi-synthetic oil, mixed at about 8–10%) directed right at the cutting teeth. Coolant flushes away the metal chips and keeps the blade cool. Cutting dry with an HSS blade will burn the teeth instantly. Only specialized TCT blades on high-end machines are designed for dry cutting.",
+            "Com certeza. É preciso usar um fluido de refrigeração de jato (óleo sintético ou semissintético solúvel em água, misturado em uma proporção de cerca de 8 a 10%) direcionado diretamente para os dentes de corte. O fluido de refrigeração remove as limalhas de metal e mantém a lâmina resfriada. O corte a seco com uma lâmina HSS queimará os dentes instantaneamente. Apenas lâminas TCT especializadas em máquinas de última geração são projetadas para corte a seco.",
         },
       ],
       company: [
         {
-          question: "Will these blades fit my specific cold saw machine?",
+          question:
+            "Essas lâminas são compatíveis com a minha serra a frio específica?",
           answer:
-            "Our blades feature standard bore sizes (e.g., 32 mm, 40 mm, 50 mm) and universal drive pin hole patterns that fit 95% of the market, including Kaltenbach, Bewo, MEP, Macc, Pedrazzoli, and Kasto. If your machine has a non-standard drive pin layout, we can CNC-machine the exact mounting holes before shipping.",
+            "Nossas lâminas apresentam diâmetros de furo padrão (por exemplo, 32 mm, 40 mm, 50 mm) e padrões universais de orifícios para pinos de acionamento que se adaptam a 95% do mercado, incluindo Kaltenbach, Bewo, MEP, Macc, Pedrazzoli e Kasto. Se sua máquina tiver um layout de pinos de acionamento fora do padrão, podemos usinar os furos de montagem exatos em uma máquina CNC antes do envio.",
         },
         {
           question:
-            "What is the lead time for M35 Cobalt or TiAlN coated blades?",
+            "Qual é o prazo de entrega das lâminas revestidas com cobalto M35 ou TiAlN?",
           answer:
-            "Standard M2 (Steam Treated) blades in common sizes are often in stock and ship within 3–5 days. Premium M35 Cobalt blades and customized PVD coatings (TiN, TiAlN) typically require 10–15 working days.",
+            "As lâminas padrão M2 (tratadas a vapor) nos tamanhos mais comuns costumam estar em estoque e são enviadas em 3 a 5 dias. As lâminas Premium M35 de cobalto e os revestimentos PVD personalizados (TiN, TiAlN) geralmente levam de 10 a 15 dias úteis.",
         },
       ],
     },
   },
   {
     id: "scrap-chopper-blades",
-    name: "Scrap Chopper Blades",
+    name: "Lâminas para triturador de sucata",
     fullName:
-      "Heavy-Duty Scrap Chopper Blades for Metal Slitting & Coil Processing Lines",
+      "Lâminas de triturador de sucata para serviços pesados, destinadas a linhas de corte de metal e processamento de bobinas",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Scrap Chopper Blades",
+    categoryDisplay: "Lâminas para triturador de sucata",
     image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
-    badge: "Extreme Impact",
+    badge: "Impacto Extremo",
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
@@ -4536,9 +4581,9 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
     description:
-      "Specifically engineered to survive the chaotic, extreme-impact environments of processing line edge-trim chopping. Forged from S7 shock-resisting tool steel or featuring specialized carbide-inlaid geometries, these blades cleanly fracture and reduce irregular steel strips, aluminum strip trim, and copper foil edge scrap without suffering catastrophic blade failure or chipping.",
+      "Projetadas especificamente para resistir aos ambientes caóticos e de impacto extremo do corte de sobras de bordas em linhas de processamento. Forjadas em aço para ferramentas S7 resistente a impactos ou com geometrias especializadas com incrustações de metal duro, essas lâminas fraturam e reduzem de forma limpa tiras irregulares de aço, sobras de tiras de alumínio e resíduos de folhas de cobre, sem sofrer falhas catastróficas ou lascas.",
     fullDescription:
-      "Located at the terminus of metal slitting and conversion lines, scrap choppers are tasked with destroying the irregular, edge-trim waste generated during processing. The operating environment involves severe, unpredictable impact loads capable of shattering standard blades. Consequently, scrap chopper blades are forged from high-impact, shock-resistant alloys such as S7 tool steel, or employ heavily supported carbide-inlaid designs to cleanly fracture steel, aluminum, and copper waste without failing.\n\n## Operating Environment & Challenges\n\nScrap choppers operate under conditions fundamentally different from precision slitting or shearing:\n\n**Unpredictable Material Geometry:** Edge trim from slitting lines arrives at the chopper in irregular, curled, and twisted configurations. Unlike straight sheet shearing, the blade must engage the scrap at random angles, creating variable impact loads that can exceed 3–5× the nominal rated force.\n\n**Metal Inclusions & Contamination:** The scrap stream frequently contains metal fasteners, weld spatter, and mill scale that create localized stress concentrations. Standard high-hardness blades (D2 at HRC 60–62) are brittle and catastrophically fracture when impacted by such inclusions.\n\n**High Cycle Frequency:** Scrap choppers operate at 40–120 chops per minute depending on line speed. Each chop imparts a shock load, and the blade must resist fatigue crack propagation over millions of cycles.\n\n## Metallurgical Solutions\n\n**S7 Shock-Resisting Tool Steel:** S7 is a chromium-molybdenum-tungsten tool steel specifically developed for impact tooling applications. Unlike D2 (which achieves wear resistance through 12% chromium carbide precipitates), S7 utilizes a lower carbon content (0.50% C vs. 1.55% C in D2) and a balanced alloy system that produces a tough, resilient matrix. Heat-treated to HRC 54–58, S7 delivers twice the impact toughness of D2, virtually eliminating catastrophic blade fracture.\n\n**H13 Hot-Work Tool Steel:** H13 (5% chromium, 1.5% molybdenum, 1% vanadium) is the workhorse grade for aluminum and copper scrap chopping. Its austenitic structure at operating temperature provides excellent shock absorption, and the low carbide volume fraction prevents brittle fracture on metal inclusion impacts. Best suited for non-ferrous scrap streams.\n\n**Carbide-Inlaid Edges:** For steel service centers processing high-tensile and stainless steel trim, tungsten carbide edge inserts are mechanically supported in an S7 or H13 body. The carbide provides localized wear resistance at the cutting edge, while the tool steel body absorbs the gross impact energy. This hybrid construction delivers 3–5× longer service life than solid S7 in heavily contaminated scrap streams.",
+      "Localizados no final das linhas de corte e transformação de metais, os trituradores de sucata têm a função de destruir os resíduos irregulares e as sobras de corte gerados durante o processamento. O ambiente operacional envolve cargas de impacto severas e imprevisíveis, capazes de quebrar lâminas padrão. Consequentemente, as lâminas dos trituradores de sucata são forjadas a partir de ligas de alto impacto e resistentes a choques, como o aço para ferramentas S7, ou empregam designs com incrustações de carboneto e reforço robusto para fraturar de forma limpa resíduos de aço, alumínio e cobre sem falhar.\n\n## Ambiente Operacional e Desafios\n\nOs trituradores de sucata operam em condições fundamentalmente diferentes das do corte de precisão ou da cisalhamento:\n\n**Geometria imprevisível do material:** Os resíduos de corte das linhas de corte chegam ao triturador em configurações irregulares, enroladas e torcidas. Diferentemente do corte reto de chapas, a lâmina deve entrar em contato com a sucata em ângulos aleatórios, criando cargas de impacto variáveis que podem exceder 3 a 5 vezes a força nominal.\n\n**Inclusões metálicas e contaminação:** O fluxo de sucata frequentemente contém fixadores metálicos, respingos de solda e escória de laminação que criam concentrações de tensão localizadas. Lâminas padrão de alta dureza (D2 com HRC 60–62) são frágeis e sofrem fraturas catastróficas quando impactadas por tais inclusões.\n\n**Alta frequência de ciclos:** Os trituradores de sucata operam a 40–120 cortes por minuto, dependendo da velocidade da linha. Cada corte aplica uma carga de choque, e a lâmina deve resistir à propagação de trincas por fadiga ao longo de milhões de ciclos.\n\n## Soluções metalúrgicas\n\n**Aço para ferramentas S7 resistente a choques:** O S7 é um aço para ferramentas de cromo-molibdênio-tungstênio desenvolvido especificamente para aplicações em ferramentas de impacto. Ao contrário do D2 (que alcança resistência ao desgaste por meio de precipitados de carboneto de cromo a 12%), o S7 utiliza um teor de carbono mais baixo (0,50% de C contra 1,55% de C no D2) e um sistema de liga equilibrado que produz uma matriz tenaz e resiliente. Submetido a tratamento térmico para HRC 54–58, o S7 oferece o dobro da tenacidade ao impacto do D2, praticamente eliminando a fratura catastrófica da lâmina.\n\n**Aço para ferramentas de trabalho a quente H13:** O H13 (5% de cromo, 1,5% de molibdênio, 1% de vanádio) é a classe mais utilizada para o corte de sucata de alumínio e cobre. Sua estrutura austenítica à temperatura de operação proporciona excelente absorção de choques, e a baixa fração volumétrica de carbonetos evita a fratura frágil em impactos com inclusões metálicas. Mais adequado para fluxos de sucata não ferrosa.\n\n**Bordas com incrustações de carboneto:** Para centros de serviços de aço que processam sobras de aço de alta resistência e aço inoxidável, as pastilhas de borda metal duro são fixadas mecanicamente em um corpo de S7 ou H13. O carboneto proporciona resistência localizada ao desgaste na aresta de corte, enquanto o corpo em aço para ferramentas absorve a energia bruta do impacto. Essa construção híbrida oferece vida útil 3 a 5 vezes maior do que o S7 maciço em fluxos de sucata altamente contaminados.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4580,33 +4625,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "s7-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "S7 Shock-Resisting Alloy Structure",
+        tag: "CIÊNCIA DOS MATERIAIS",
+        title: "Estrutura em liga resistente a impactos S7",
         description:
-          "S7 tool steel achieves its superior toughness through a carefully balanced alloy system: 0.50% carbon (vs. 1.55% in D2) minimizes brittle carbide formation, while chromium (3.25%), molybdenum (1.40%), and tungsten (1.80%) additions provide hardenability and temper resistance. Heat treated to HRC 54–58 rather than the HRC 60–62 typical of D2, S7 sacrifices some abrasion resistance in exchange for double the Charpy impact energy. This is the critical trade-off for scrap chopper applications: the blade must absorb unpredictable shock loads without shattering.",
+          "O aço para ferramentas S7 alcança sua tenacidade superior por meio de um sistema de liga cuidadosamente equilibrado: 0,50% de carbono (em comparação com 1,55% no D2) minimiza a formação de carbonetos frágeis, enquanto as adições de cromo (3,25%), o molibdênio (1,40%) e o tungstênio (1,80%) proporcionam temperabilidade e resistência ao revenimento. Submetido a tratamento térmico para HRC 54–58, em vez dos HRC 60–62 típicos do D2, o S7 sacrifica parte da resistência à abrasão em troca do dobro da energia de impacto Charpy. Essa é a compensação crítica para aplicações em trituradores de sucata: a lâmina deve absorver cargas de choque imprevisíveis sem se fragmentar.",
       },
       {
         id: "4-edge-design",
-        tag: "DESIGN EFFICIENCY",
-        title: "Four-Edge Reversible Configuration",
+        tag: "EFICIÊNCIA DO PROJETO",
+        title: "Configuração reversível de quatro bordas",
         description:
-          "Scrap chopper blades are manufactured as rectangular blocks with four usable cutting edges. When the active edge exhibits visible wear (typically indicated by increased chopping noise or incomplete scrap fracture), the operator indexes the blade 90° to present a fresh edge. This design quadruples the effective service life compared to single-edge blades and reduces non-productive downtime. The blade body geometry is precision-ground to ensure all four edges are parallel within ±0.05mm, preventing uneven loading that would cause premature wear on indexed edges.",
+          "As lâminas do triturador de sucata são fabricadas na forma de blocos retangulares com quatro arestas de corte utilizáveis. Quando a aresta ativa apresenta desgaste visível (normalmente indicado por aumento do ruído de trituração ou fratura incompleta da sucata), o operador gira a lâmina em 90° para expor uma aresta nova. Esse projeto quadruplica a vida útil efetiva em comparação com lâminas de aresta única e reduz o tempo de inatividade improdutivo. A geometria do corpo da lâmina é retificada com precisão para garantir que todas as quatro arestas fiquem paralelas com uma tolerância de ±0,05 mm, evitando cargas desiguais que causariam desgaste prematuro nas arestas giradas.",
       },
       {
         id: "carbide-inlay",
-        tag: "ADVANCED OPTION",
-        title: "Carbide-Inlaid Hybrid Construction",
+        tag: "OPÇÃO AVANÇADA",
+        title: "Construção híbrida com incrustações de carboneto",
         description:
-          "For steel service centers processing high-carbon or stainless steel trim with heavy mill scale contamination, we offer carbide-inlaid scrap chopper blades. A tungsten carbide insert (typically 6–10mm wide, full blade thickness) is mechanically locked into a precision-ground slot in the S7 body using a shrink-fit or brazed joint. The carbide provides localized wear resistance where the blade contacts the scrap, while the S7 body absorbs the gross impact energy. This construction is the optimal solution for contaminated scrap streams where solid carbide would fracture and solid S7 wears too rapidly.",
+          "Para centros de serviços siderúrgicos que processam sobras de aço de alto teor de carbono ou aço inoxidável com forte contaminação por escória de laminação, oferecemos lâminas de triturador de sucata com incrustações de carboneto. Um inserto metal duro (normalmente com 6 a 10 mm de largura, correspondendo à espessura total da lâmina) é travado mecanicamente em uma ranhura retificada com precisão no corpo S7, por meio de uma junta por contração térmica ou soldagem por brasagem. O carboneto proporciona resistência localizada ao desgaste nos pontos de contato da lâmina com a sucata, enquanto o corpo S7 absorve a energia bruta do impacto. Essa construção é a solução ideal para fluxos de sucata contaminados, nos quais o carboneto maciço se fraturaria e o S7 maciço se desgastaria muito rapidamente.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Machine / Duty",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Máquina típica / Função",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard dimensions for common scrap chopper models. Custom sizes available. All blades are 4-edge reversible. Carbide-inlaid option available for all dimensions (+30–40% unit price premium).",
+        "* Dimensões padrão para modelos comuns de trituradores de sucata. Tamanhos personalizados disponíveis. Todas as lâminas são reversíveis e possuem quatro gumes. Opção com incrustações de metal duro disponível para todas as dimensões (acrescenta +30–40% ao preço unitário).",
     },
     standardDimensions: [
       {
@@ -4655,47 +4700,49 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I use S7 or H13 for chopping stainless steel edge trim?",
+            "Devo usar a S7 ou a H13 para cortar a guarnição de borda de aço inoxidável?",
           answer:
-            "For stainless steel trim (304, 316, or duplex grades), specify S7 at HRC 54–58. Stainless generates higher cutting forces than mild steel due to work hardening, and S7's balanced alloy system provides better edge retention than H13 in this application. H13 is optimized for aluminum and copper scrap where the lower cutting forces allow the softer H13 matrix to absorb impact without excessive edge deformation. For heavily contaminated stainless scrap with weld spatter or fasteners, upgrade to carbide-inlaid S7.",
+            "Para acabamentos em aço inoxidável (tipos 304, 316 ou duplex), especifique S7 com HRC 54–58. O aço inoxidável gera forças de corte maiores do que o aço macio devido ao endurecimento por deformação, e o sistema de liga equilibrado do S7 proporciona melhor retenção do fio do que o H13 nessa aplicação. O H13 é otimizado para sucata de alumínio e cobre, onde as forças de corte mais baixas permitem que a matriz mais macia do H13 absorva o impacto sem deformação excessiva do gume. Para sucata de aço inoxidável altamente contaminada com respingos de solda ou fixadores, opte pelo S7 com incrustações de carboneto.",
         },
         {
           question:
-            "How do I know when to index the blade to the next cutting edge?",
+            "Como sei quando devo ajustar a lâmina para a próxima aresta de corte?",
           answer:
-            "The primary indicator is increased chopping noise or vibration, which signals that the active edge has developed a wear flat and is no longer cleanly fracturing the scrap. Visually, inspect the active edge every 8–12 hours of operation. When the wear flat (the dulled, polished zone on the cutting corner) exceeds 1.0–1.5mm width, it is time to index to the next edge. Indexing before the wear flat contacts the blade body prevents accelerated wear on the holder and frame.",
+            "O principal indicador é o aumento do ruído de corte ou da vibração, o que sinaliza que a aresta ativa desenvolveu uma zona de desgaste e não está mais fraturando a sucata de maneira limpa. Inspecione visualmente a aresta ativa a cada 8 a 12 horas de operação. Quando a área de desgaste (a zona sem corte, polida no canto de corte) exceder 1,0 a 1,5 mm de largura, é hora de avançar para a próxima aresta. Avançar antes que a área de desgaste entre em contato com o corpo da lâmina evita o desgaste acelerado do suporte e da estrutura.",
         },
         {
-          question: "Can scrap chopper blades be resharpened or reground?",
+          question:
+            "As lâminas de trituradores de sucata podem ser reafiadas ou retificadas?",
           answer:
-            "Scrap chopper blades are a wear consumable and are not typically reground. The 4-edge reversible design already provides extended service life, and regrinding would require re-heat-treatment and precision grinding to restore the edge geometry and hardness. The cost of regrinding approaches 60–70% of new blade cost, making replacement more economical. However, for very large custom blades (above 500mm length), regrinding may be cost-effective — contact us with your blade dimensions.",
+            "As lâminas do triturador de sucata são um consumível sujeito a desgaste e, normalmente, não são reafiadas. O design reversível de quatro gumes já proporciona uma vida útil prolongada, e a reafiação exigiria um novo tratamento térmico e retificação de precisão para restaurar a geometria e a dureza dos gumes. O custo do reafiamento chega a 60–70% do custo de uma lâmina nova, tornando a substituição mais econômica. No entanto, para lâminas personalizadas muito grandes (com mais de 500 mm de comprimento), o reafiamento pode ser economicamente viável — entre em contato conosco informando as dimensões da sua lâmina.",
         },
       ],
       company: [
         {
           question:
-            "Does Sureay stock scrap chopper blades, or are they made to order?",
+            "A Sureay tem em estoque lâminas para trituradores de sucata ou elas são fabricadas sob encomenda?",
           answer:
-            "We maintain stock inventory of standard S7 scrap chopper blades in the six most common sizes (100×40×15mm through 400×100×30mm). Stock blades ship within 3–5 working days. Custom dimensions, H13 material, and carbide-inlaid configurations are manufactured to order with lead times of 12–18 working days from drawing approval. Rush production (7–10 days) available for standard sizes subject to heat-treat schedule availability.",
+            "Mantemos em estoque lâminas padrão para trituradores de sucata S7 nos seis tamanhos mais comuns (de 100×40×15 mm a 400×100×30 mm). As lâminas em estoque são enviadas em 3 a 5 dias úteis. Dimensões personalizadas, material H13 e configurações com incrustações de carboneto são fabricadas sob encomenda, com prazos de entrega de 12 a 18 dias úteis a partir da aprovação do desenho. Produção urgente (7 a 10 dias) disponível para tamanhos padrão, sujeita à disponibilidade da programação de tratamento térmico.",
         },
         {
           question:
-            "Can Sureay supply scrap chopper blades that match our existing blade dimensions?",
+            "A Sureay pode fornecer lâminas para trituradores de sucata que correspondam às dimensões das nossas lâminas atuais?",
           answer:
-            "Yes. Send us a sample blade, technical drawing, or the chopper machine make and model number. We will confirm the length, width, thickness, mounting hole pattern (if applicable), and material grade. Most chopper blades are standard rectangular blocks without mounting holes, but some models use clamped or bolted retention that requires specific hole locations. We can replicate any existing blade geometry.",
+            "Sim. Envie-nos uma amostra da lâmina, um desenho técnico ou a marca e o número do modelo da máquina picadora. Confirmaremos o comprimento, a largura, a espessura, o padrão dos furos de fixação (se aplicável) e o tipo de material. A maioria das lâminas de picadoras são blocos retangulares padrão sem furos de fixação, mas alguns modelos utilizam fixação por grampos ou parafusos, o que requer posições específicas para os furos. Podemos reproduzir qualquer geometria de lâmina existente.",
         },
       ],
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Strand Pelletizer Rotors",
-    fullName: "High-Precision Strand Pelletizer Rotors for Compounding Lines",
+    name: "Rotores do peletizador Strand",
+    fullName:
+      "Rotores de peletizador de fios de alta precisão para linhas de compounding",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Pelletizer Blades",
+    categoryDisplay: "Lâminas para peletizadoras",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
-    badge: "PM-HSS & Carbide",
+    badge: "PM-HSS e carboneto",
     badgeColor: "blue",
     gallery: [
       "/images/products/blades/strand-pelletizer-rotor-01.webp",
@@ -4703,9 +4750,9 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Strand pelletizer rotors and pelletizing cutter rotors for plastic compounding and recycling lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005 mm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
+      "Rotores para peletizadores de fio e rotores cortadores para peletização em linhas de composição e reciclagem de plásticos. PM-HSS (ASP2023, ASP2052) e construção sólida metal duro. Geometria helicoidal com concentricidade ≤0,005 mm, balanceamento dinâmico conforme a norma ISO 1940-1 G2.5. Substituição direta para peletizadores das marcas Maag, Coperion, Cumberland, Conair e Reduction Engineering.",
     fullDescription:
-      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2 µm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005 mm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports. We also offer pelletizer rotor repair and regrinding services — restoring worn helical rotors and granulator rotor shafts to factory-new concentricity at a fraction of replacement cost.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
+      "Projetados para linhas de composição contínuas e de alto volume, os rotores do peletizador de fios da Sureay produzem micropeletas impecáveis e uniformes, sem resíduos. Fabricados com aços de alta velocidade por metalurgia do pó (PM-HSS) e carboneto de tungstênio maciço, nossos rotores helicoidais são projetados para suportar o desgaste abrasivo extremo causado por polímeros reforçados com fibra de vidro (GF), reforçados com carbono e altamente pigmentados. Cada rotor passa por um rigoroso balanceamento dinâmico e retificação de perfil de precisão para garantir concentricidade perfeita, reduzindo o desgaste dos rolamentos e a vibração mesmo em rotações máximas.\n\n## Tipos de rotores\n\n**Rotores helicoidais (em espiral):** A configuração padrão para composição contínua em alta velocidade. O passo helicoidal constante em toda a largura de corte garante uma ação de cisalhamento progressiva — um dente se engata a cada instante, em vez de toda a borda impactar simultaneamente. Isso reduz drasticamente a força de corte de pico, a carga do motor e os eventos de ruptura de fios. Os centros de retificação CNC de 5 eixos da Sureay mantêm a constância do passo helicoidal com uma tolerância de ±0,01° em toda a face do rotor.\n\n**Rotores de borda reta:** Indicados para elastômeros mais macios e polímeros fundidos de baixa viscosidade, nos quais a força de cisalhamento helicoidal é excessiva. A ação de corte simultâneo em toda a largura proporciona um comprimento de pelotas limpo e consistente em fios de TPE, TPU e TPV.\n\n**Rotores com inserções de carboneto soldadas a vácuo:** A solução ideal para a composição abrasiva de compostos com enchimento de vidro (GF), carbono (CF) e minerais. As inserções de corte de carboneto de tungstênio são soldadas a vácuo em corpos de rotor de HSS usinados com precisão. As arestas de carboneto proporcionam uma vida útil 5 a 10 vezes maior em comparação com o M2 padrão em compostos GF40 e CF30, enquanto o corpo resistente de HSS absorve cargas de choque provenientes de fios intermitentes e eventos de partida a frio sem fratura por fragilidade.\n\n**Rotores de carboneto maciço:** A especificação definitiva para compostos extremamente abrasivos com rendimento moderado. Utilizados na composição especializada de polímeros ultraabrasivos recheados com cerâmica, nitreto de boro e SiC, nos quais até mesmo as pontas de carboneto soldadas se desgastam rapidamente.\n\n## Seleção de materiais por aplicação\n\n**M2, M35 HSS (compostação padrão):** Custo-benefício para termoplásticos não recheados — PA6, PA66, PC, POM, PBT — em temperaturas padrão de compostação. A classe de cobalto M35 prolonga a vida útil em enchimentos moderadamente abrasivos (talco, CaCO₃) em 30–40% em comparação com o M2 padrão.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Compostos Abrasivos):** A fabricação por metalurgia do pó produz uma distribuição ultrafina e homogênea de carboneto que o HSS convencional não consegue alcançar. O ASP2023 proporciona vida útil da aresta 2 a 3 vezes maior em compostos GF20 e CF15. O ASP2052 e o CPM10V aumentam a vida útil da ferramenta para 4 a 6 vezes a do M2 nos compostos com enchimento mais exigentes. A microestrutura da metalurgia do pó também reduz a microfratura da aresta, que causa a formação de partículas finas e contaminação por poeira.\n\n**Carboneto de tungstênio sólido (WC) e pontas de carboneto soldadas (desgaste extremo):** Para compostos de fibra de vidro longa (LGF), polímeros reforçados com fibra de carbono e masterbatch com alto teor mineral. O carboneto mantém sua aresta de corte sob carga abrasiva sustentada que desgastaria o PM-HSS em questão de horas.\n\n## Cenários de aplicação\n\n**Compostos de fibra de vidro longa (LGF) e fibra de carbono:** Os rotores metal duro soldados mantêm sua aresta de corte por um período de 5 a 10 vezes maior do que o HSS padrão ao cortar compósitos estruturais altamente abrasivos. O processo de soldagem a vácuo garante que os dentes de carboneto não se soltem, mesmo sob cargas de choque severas decorrentes de partidas a frio do fio.\n\n**Produção de masterbatches e materiais com alto teor de pigmento:** As ranhuras dos dentes com polimento espelhado (Ra 0,2 µm) evitam o acúmulo de cor, permitindo mudanças rápidas de cor e zero contaminação cruzada entre lotes.\n\n**Termoplásticos de engenharia (PA, PC, POM, PBT):** A concentricidade ultraprecisa (≤0,005 mm) permite que os operadores definam microespaços extremamente estreitos, resultando em um corte limpo, semelhante ao de uma tesoura, que elimina partículas finas, poeira e resíduos em forma de “pele de cobra”.\n\n**Elastômeros macios (TPE, TPU, TPV):** Ângulos de corte agudos otimizados evitam o alongamento e o esmaecimento de fios macios, eliminando o temido efeito de rabo.\n\n## Compatibilidade com OEM\n\nA Sureay fabrica rotores de reposição com encaixe perfeito para as principais plataformas de peletizadoras. Todos os rotores de reposição são projetados por engenharia reversa a partir de desenhos dos fabricantes originais (OEM) ou amostras dos clientes, verificados em CMM e fornecidos com relatórios completos de inspeção dimensional. Também oferecemos serviços de reparo e reafiação de rotores de peletizadores — restaurando rotores helicoidais desgastados e eixos de rotores de granuladores à concentricidade de fábrica por uma fração do custo de reposição.\n\n*Todos os nomes de fabricantes e modelos são utilizados apenas para fins de referência e compatibilidade.*",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4755,34 +4802,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "dynamic-balancing",
-        tag: "PRECISION ENGINEERING",
-        title: "Zero-Defect Dynamic Balancing",
+        tag: "ENGENHARIA DE PRECISÃO",
+        title: "Equilíbrio dinâmico com tolerância zero a defeitos",
         description:
-          "Operating at high speeds, unbalanced rotors destroy bearings and ruin clearances. Every Sureay rotor is dynamically balanced at operating speeds to ISO 1940-1 G2.5 standards, ensuring whisper-quiet, vibration-free operation and protecting the pelletizer's bearing investment.",
+          "Ao operarem em altas velocidades, os rotores desbalanceados danificam os rolamentos e prejudicam as folgas. Todos os rotores Sureay são balanceados dinamicamente nas velocidades de operação, de acordo com as normas ISO 1940-1 G2.5, garantindo um funcionamento silencioso e sem vibrações, além de proteger o investimento em rolamentos do peletizador.",
       },
       {
         id: "helical-geometry",
-        tag: "5-AXIS CNC GRINDING",
-        title: "Flawless Helical Geometry",
+        tag: "RETIFICAÇÃO CNC DE 5 EIXOS",
+        title: "Geometria helicoidal impecável",
         description:
-          "Using state-of-the-art 5-axis CNC grinding centers, we guarantee the helical pitch is constant across the entire cutting width. This ensures constant shear force, reducing motor load and preventing strand snapping on high-speed compounding lines.",
+          "Utilizando centros de retificação CNC de 5 eixos de última geração, garantimos que o passo helicoidal seja constante em toda a largura de corte. Isso assegura uma força de cisalhamento constante, reduzindo a carga no motor e evitando a ruptura dos fios em linhas de composição de alta velocidade.",
       },
       {
         id: "vacuum-brazing",
-        tag: "CARBIDE TECHNOLOGY",
-        title: "Proprietary Vacuum Brazing",
+        tag: "TECNOLOGIA DE CARBIDO",
+        title: "Brasagem a vácuo de tecnologia exclusiva",
         description:
-          "For carbide-tipped rotors, a specialized high-strength vacuum brazing process guarantees that carbide teeth will never detach, even under severe shock loads from cold strand starts or intermittent strand feed conditions.",
+          "No caso dos rotores com dentes de carboneto, um processo especializado de brasagem a vácuo de alta resistência garante que os dentes de carboneto nunca se soltem, mesmo sob cargas de choque severas decorrentes de partidas a frio do fio ou condições de alimentação intermitente do fio.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform",
-      col1: "Rotor Diameter (mm)",
-      col2: "Cutting Width (mm)",
-      col3: "Tooth Count",
-      col4: "Helix Angle",
+      col0: "Plataforma OEM",
+      col1: "Diâmetro do rotor (mm)",
+      col2: "Largura de corte (mm)",
+      col3: "Número de dentes",
+      col4: "Ângulo da hélice",
       caption:
-        "* Representative dimensions for common strand pelletizer platforms. All rotors manufactured to exact OEM blueprints or customer sample. Custom diameters, widths, tooth counts, and helix angles available on request.",
+        "* Dimensões representativas para plataformas comuns de peletizadores de fio contínuo. Todos os rotores são fabricados de acordo com projetos originais precisos do fabricante ou com base em amostras do cliente. Diâmetros, larguras, número de dentes e ângulos de hélice personalizados estão disponíveis mediante solicitação.",
     },
     standardDimensions: [
       {
@@ -4835,61 +4882,61 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "We process 40% Glass-Filled Nylon (PA66 GF40). Standard M2 rotors wear out in days. What is your solution?",
+            "Processamos nylon com 40% de fibra de vidro (PA66 GF40). Os rotores M2 padrão se desgastam em poucos dias. Qual é a sua solução?",
           answer:
-            "For extreme abrasive wear, M2 steel is insufficient. We recommend our PM-HSS grades (ASP2023 or ASP2052) or our brazed Tungsten Carbide rotors. While the initial investment is higher, tool life is extended by up to 1000%, drastically reducing machine downtime and lowering your cost-per-ton of compound. For PA66 GF40 specifically, brazed carbide inlay rotors are the most cost-effective long-term solution — the HSS body handles shock loading while the carbide cutting edges resist abrasion.",
+            "Para desgaste abrasivo extremo, o aço M2 é insuficiente. Recomendamos nossas classes PM-HSS (ASP2023 ou ASP2052) ou nossos rotores de carboneto de tungstênio soldados. Embora o investimento inicial seja maior, a vida útil da ferramenta é prolongada em até 1.000%, reduzindo drasticamente o tempo de inatividade da máquina e diminuindo seu custo por tonelada de composto. Especificamente para o PA66 GF40, os rotores com inserções de carboneto soldadas são a solução de longo prazo mais econômica — o corpo em HSS suporta cargas de choque, enquanto as arestas de corte em carboneto resistem à abrasão.",
         },
         {
           question:
-            "Why are we getting 'tails' on our pellets, and how can your rotors fix this?",
+            "Por que nossos pellets estão ficando com “caudas” e como seus rotores podem resolver isso?",
           answer:
-            "Tailing occurs when the polymer strand is torn or melted rather than cleanly sheared. This is caused by blunt rotor teeth, irregular helical angles, or excessive clearance from rotor runout. Sureay rotors feature a concentricity of ≤0.005 mm, allowing your technicians to set a micro-gap against the bed knife for a perfect, scissor-like cut. The polished flute surface (Ra 0.2 µm) also prevents polymer sticking that creates drag and uneven shear force.",
+            "O “tailing” ocorre quando a cadeia de polímero é rasgada ou derretida, em vez de ser cortada de forma limpa. Isso é causado por dentes de rotor cegos, ângulos helicoidais irregulares ou folga excessiva devido ao desvio do rotor. Os rotores Sureay apresentam uma concentricidade de ≤0,005 mm, permitindo que seus técnicos ajustem uma microfenda em relação à lâmina fixa para um corte perfeito, semelhante ao de uma tesoura. A superfície polida da ranhura (Ra 0,2 µm) também evita que o polímero grude, o que gera resistência e força de cisalhamento irregular.",
         },
         {
           question:
-            "What is the difference between helical and straight-edge rotors, and when should I use each?",
+            "Qual é a diferença entre rotores helicoidais e retos, e quando devo usar cada um deles?",
           answer:
-            "Helical rotors produce a progressive shear action — only one tooth segment engages at a time — which reduces peak cutting force, motor amperage spikes, and strand snap events. This makes them the standard choice for rigid thermoplastics and filled compounds on high-speed lines. Straight-edge rotors engage the full cutting width simultaneously, which is preferred for soft elastomers (TPE, TPU, TPV) where the gradual helical shear force can stretch and deform the strand rather than cutting it cleanly.",
+            "Os rotores helicoidais produzem uma ação de cisalhamento progressiva — apenas um segmento de dente se engata por vez —, o que reduz o pico de força de corte, os picos de amperagem do motor e os casos de ruptura dos fios. Isso os torna a escolha padrão para termoplásticos rígidos e compostos com enchimento em linhas de alta velocidade. Os rotores de borda reta engatam toda a largura de corte simultaneamente, o que é preferível para elastômeros macios (TPE, TPU, TPV), nos quais a força de cisalhamento helicoidal gradual pode esticar e deformar o fio em vez de cortá-lo de forma limpa.",
         },
         {
           question:
-            "Can you duplicate a custom rotor if we send a physical sample or CAD drawing?",
+            "É possível reproduzir um rotor personalizado se enviarmos uma amostra física ou um desenho em CAD?",
           answer:
-            "Absolutely. As a direct manufacturing facility, we have full reverse-engineering capabilities. You can send us your worn rotor or technical blueprints, and we will produce a detailed CAD drawing for your approval before manufacturing the exact replacement. Dimensional verification on CMM is performed before shipment.",
+            "Com certeza. Como somos uma fábrica de produção direta, dispomos de recursos completos de engenharia reversa. Você pode nos enviar seu rotor desgastado ou desenhos técnicos, e nós produziremos um desenho CAD detalhado para sua aprovação antes de fabricarmos a peça de reposição exata. A verificação dimensional em CMM é realizada antes do envio.",
         },
         {
           question:
-            "How do I know when to replace or regrind my strand pelletizer rotor?",
+            "Como posso saber quando devo substituir ou reafiar o rotor do meu peletizador de fios?",
           answer:
-            "Key indicators: (1) increasing pellet fines and dust in the pellet stream — dulled teeth tear rather than shear; (2) rising motor amperage on the pelletizer drive — blunt edges require more force; (3) strand snapping becoming more frequent — irregular shear force from worn geometry increases tension spikes; (4) tailing reappearing despite correct gap setting — worn concentricity causes gap variation around the rotor circumference. For PM-HSS rotors, precision regrinding to OEM geometry is cost-effective. For carbide-tipped rotors, carbide can be re-tipped once before full rotor replacement is required.",
+            "Indicadores-chave: (1) aumento das partículas finas e do pó no fluxo de pelotas — dentes cegos rasgam em vez de cortar; (2) aumento da amperagem do motor do acionamento do peletizador — bordas cegas exigem mais força; (3) rompimento de fios cada vez mais frequente — a força de cisalhamento irregular causada pela geometria desgastada aumenta os picos de tensão; (4) reaparecimento de resíduos, apesar do ajuste correto da folga — a concentricidade desgastada causa variação na folga ao redor da circunferência do rotor. Para rotores PM-HSS, o reafiamento de precisão de acordo com a geometria do fabricante original (OEM) é economicamente viável. Para rotores com pontas de metal duro, o metal duro pode ser reafilado uma vez antes que seja necessária a substituição completa do rotor.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply matched rotor and bed knife (stator) sets?",
+            "A Sureay pode fornecer conjuntos compatíveis de rotor e lâmina fixa (estator)?",
           answer:
-            "Yes, and we strongly recommend purchasing them as matched pairs. We manufacture stator bed knives in Stellite 6 (for HSS rotors) and Solid Carbide (for carbide-tipped rotors). A matched pair ensures the cutting gap geometry and hardness differential are optimized together, delivering zero-tail pelletizing from the first strand. Mismatched rotor-stator combinations are a leading cause of premature wear and tailing on otherwise well-maintained lines.",
+            "Sim, e recomendamos enfaticamente que sejam adquiridas em pares combinados. Fabricamos facas de base do estator em Stellite 6 (para rotores HSS) e em metal duro maciço (para rotores com pontas de metal duro). Um par combinado garante que a geometria da abertura de corte e o diferencial de dureza sejam otimizados em conjunto, proporcionando peletização sem resíduos desde o primeiro fio. Combinações incompatíveis de rotor e estator são uma das principais causas de desgaste prematuro e formação de resíduos em linhas que, de outra forma, estariam bem conservadas.",
         },
         {
           question:
-            "What lead times and documentation can Sureay provide for replacement rotors?",
+            "Quais são os prazos de entrega e a documentação que a Sureay pode fornecer para rotores de reposição?",
           answer:
-            "Standard PM-HSS replacement rotors for common OEM platforms (Maag, Coperion, Cumberland) ship in 10–15 working days from drawing approval. Custom helix angles or non-standard tooth counts require 15–20 working days. Every rotor ships with: CMM dimensional inspection certificate, dynamic balancing report (ISO 1940-1 G2.5), hardness test certificate, and steel mill material traceability. Rush production available subject to schedule.",
+            "Os rotores de reposição PM-HSS padrão para plataformas OEM comuns (Maag, Coperion, Cumberland) são enviados em 10 a 15 dias úteis a partir da aprovação do desenho. Ângulos de hélice personalizados ou números de dentes fora do padrão exigem 15 a 20 dias úteis. Cada rotor é enviado com: certificado de inspeção dimensional por CMM, relatório de balanceamento dinâmico (ISO 1940-1 G2.5), certificado de teste de dureza e rastreabilidade do material da siderúrgica. Produção urgente disponível, sujeita à programação.",
         },
       ],
     },
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Melt Filter Scraper Blades",
+    name: "Lâminas raspadoras para filtros de fusão",
     fullName:
-      "Premium Scraper Blades & Filter Plates for Continuous Melt Filters",
+      "Lâminas raspadoras e placas filtrantes premium para filtros de fusão contínua",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Melt Filter Scraper Blades",
+    categoryDisplay: "Lâminas raspadoras para filtro de fusão",
     image: "/images/products/blades/scraper-blades.webp",
-    badge: "PCR Recycling",
+    badge: "Reciclagem PCR",
     badgeColor: "orange",
     gallery: [
       "/images/products/blades/scraper-blades.webp",
@@ -4897,9 +4944,9 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Precision D2/H13/Carbide scraper blades & laser-drilled conical filter plates for PCR continuous melt filters. Engineered hardness synergy (blade HRC 58–62 vs. plasma-nitrided plate HV 1,000+) protects filter plate capital investment. HCl-resistant alloys for PVC blends. Backflush-compatible with EREMA, Gneuß, Ettlinger & FIMIC.",
+      "Lâminas raspadoras de precisão D2/H13/carboneto e placas de filtro cônicas perfuradas a laser para filtros de fusão contínua de PCR. A sinergia de dureza projetada (lâmina HRC 58–62 vs. placa nitretada a plasma HV 1.000+) protege o investimento em ativos das placas de filtro. Ligas resistentes ao HCl para misturas de PVC. Compatíveis com retrolavagem nos sistemas EREMA, Gneuß, Ettlinger e FIMIC.",
     fullDescription:
-      "Continuous melt filters are the heart of any high-throughput PCR plastic recycling line. When processing heavily contaminated post-consumer regrind — containing mineral fillers, glass fibers, carbonized residues, and hard foreign particles — the scraper blade is the single component under the most extreme combined load: abrasive wear from hard contaminants, thermal fatigue from cyclic melt temperature exposure (220–300 °C), and cyclic bending stress from the rotation mechanism. A blade that fails prematurely forces an emergency line stop, costing hours of restarting time and wasting significant volumes of in-process melt.\n\nSureay continuous melt filter scraper blades are precision-manufactured from premium D2 cold-work tool steel and H13 hot-work tool steel — two alloys specifically selected for this dual wear-plus-heat-resistance requirement — and vacuum heat-treated to HRC 58–62 with deep cryogenic post-treatment to eliminate retained austenite and extend wear life by 30–40% versus standard heat treatment.\n\n## Alloy Selection by Contamination Level\n\n**D2 Tool Steel (HRC 60–62):** The standard specification for PCR HDPE, PP, and mixed rigid plastics with moderate contamination (< 3% mineral filler content). The 12% chromium and 1.5% carbon content delivers excellent abrasion resistance against glass particles and calcium carbonate fillers at melt processing temperatures up to 260 °C. Cost-effective for medium-duty continuous filtration at throughputs of 300–800 kg/h.\n\n**H13 Hot-Work Tool Steel (HRC 48–52):** Selected for heavily contaminated streams — post-consumer film regrind, agricultural mulch film, WEEE plastics — where melt temperatures exceed 280 °C and thermal cycling is severe. H13's molybdenum-vanadium carbide matrix maintains dimensional stability and edge geometry under sustained thermal loading that would cause D2 to soften and deform.\n\n**Solid Tungsten Carbide (HRA 88–91):** The ultimate specification for ultra-abrasive feedstocks: glass-filled engineering plastics (PA-GF30, PBT-GF), ceramic-contaminated streams, and silicon-rich agricultural film with embedded soil particles. Carbide scrapers deliver 5–8× longer service life versus D2 on these feedstocks, reducing blade change frequency to once per 1,000+ operating hours.\n\n## Precision-Ground Blade Geometry\n\nThe scraper blade's edge geometry directly controls filtration screen surface cleanliness and therefore melt pressure consistency. A worn or incorrectly profiled scraper leaves a residual contamination layer on the filter screen, causing progressive pressure build-up, reduced throughput, and ultimately screen breakthrough. Sureay blades are precision-ground to ±0.05 mm dimensional tolerance with edge bevel profiles matched to each filter OEM's screen contact geometry. The result is a consistent, reproducible scraping action that maintains screen cleanliness throughout the full blade service life.\n\n## Drop-In OEM Compatibility\n\nScraper blade geometry is machine-specific: each continuous melt filter OEM uses proprietary rotor dimensions, blade mounting interfaces, and screen diameters. Sureay reverse-engineers replacement blades from OEM drawings or customer samples, verifying fit on a coordinate measuring machine (CMM) before production. Compatible with EREMA Continuous Filter, Gneuß Rotary Filtration System, Ettlinger ERF series, FIMIC RAS series, Kreyenborg KSF series, and Nordson BKG continuous screen changers.\n\n## Laser-Drilled Conical Filter Plate Micro-Perforations\n\nThe filter plate's hole geometry is as critical as the scraper blade material. Standard punched or drilled cylindrical holes create a flat-wall channel where molten polymer and suspended contaminants can stagnate — carbonizing inside the hole under sustained heat, progressively reducing effective open area, and eventually causing premature screen blockage. Sureay filter plates use laser-drilled conical (tapered) micro-perforations: the hole is narrowest at the upstream melt-contact surface and widens progressively toward the downstream outlet. This conical profile exploits melt-side hydraulic pressure: once a contaminant particle passes the narrow inlet restriction, the expanding channel geometry immediately expels it toward the outlet with no dead-zone stagnation. The result is a filter plate that maintains consistent differential pressure and open-area percentage over a significantly longer service interval — particularly critical on heavily contaminated PCR streams where cylindrical-hole plates would require frequent replacement.\n\nAvailable filtration fineness: 80 µm (food-contact rPET/rHDPE), 150–200 µm (film-grade PCR), 300–500 µm (injection-grade PCR), 500–2,000 µm (coarse pre-filtration). Conical profile available across all fineness grades.\n\n## Hardness Synergy: Protecting Your Filter Plate Capital Investment\n\nA common and justified concern when sourcing aftermarket scraper blades is whether a high-hardness replacement blade will score or gouge the filter plate — a capital component that costs significantly more than the blade itself. Sureay engineers a deliberate and verified hardness differential between the scraper blade and the filter plate surface.\n\nThe filter plate's upstream face is plasma nitrided to HV 1,000+ (approximately equivalent to HRC 70+), creating an extremely hard, wear-resistant ceramic-like surface layer 0.1–0.3 mm deep. The scraper blade is intentionally manufactured to a lower HRC 58–62. This differential means that under all operating conditions, the blade is the controlled-wear consumable: it wears gradually against the harder plate surface without generating metal-transfer scoring or gouging. The filter plate surface remains intact across multiple blade replacement cycles. Every Sureay blade shipment includes a hardness test certificate confirming the blade is within the specified HRC range — verifiable documentation that the controlled-wear principle is maintained in every production batch.\n\n## Chemical & Corrosion Resistance for PVC and Mixed-Plastic Streams\n\nProcessing washed post-consumer PVC, mixed flexible films, or WEEE-derived plastics releases aggressive corrosive outgassing — primarily hydrochloric acid (HCl) and organochlorine compounds — at melt temperatures of 200–260 °C. Standard D2 and H13 tool steels corrode under sustained HCl exposure: surface pitting initiates at grain boundaries, progressively degrading the micro-perforation edge geometry and enlarging hole diameters beyond specification, compromising filtration quality without any visible external indication.\n\nFor PVC-inclusive streams, Sureay applies two protective measures: (1) base alloy upgrade to corrosion-resistant PM (powder-metallurgy) steel grades with homogeneous chromium distribution that resists acid grain-boundary attack; (2) physical vapour deposition (PVD) barrier coatings on filter plate surfaces that seal the micro-perforation walls against HCl diffusion. This combination extends filter plate service life by 2–3× versus uncoated standard-alloy plates on PVC-containing feedstocks, and prevents the insidious hole-enlargement failure mode that undermines filtration efficiency without triggering a pressure alarm.\n\n## Backflush Compatibility\n\nHigh-end continuous melt filters (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporate automated backflushing mechanisms: a high-pressure reverse pulse of clean melt is periodically fired backward through a localized section of the filter plate to expel embedded contaminant cake from the micro-perforations, restoring open area without stopping the line. The backflush pulse generates a localized reverse pressure spike — typically 150–400 bar depending on the OEM — applied to a small area of the filter plate.\n\nSureay filter plates are designed and manufactured to withstand OEM-rated backflush pressures without micro-cracking or deformation. The conical hole geometry is dimensionally optimized for this: the wider downstream outlet of each conical perforation acts as a flared nozzle that accelerates the backflush pulse, improving contaminant ejection efficiency versus cylindrical holes. Structural integrity under repeated high-pressure reverse cycles is validated through finite element analysis (FEA) of the inter-hole ligament stress distribution. Replacement Sureay plates maintain 100% compatibility with OEM backflush timing, pressure, and hole-array layout — no recalibration of the backflush controller is required.\n\n## Failure Analysis: Diagnosing & Eliminating Common Scraper and Filter Failures\n\nEngineers sourcing replacement components are typically dealing with a specific failure mode. The correct material upgrade depends on the root cause.\n\n**Edge Chipping (Brittle Fracture at Blade Tip):** Caused by a single high-energy impact from tramp metal — bolts, nuts, wire fragments — embedded in the PCR regrind feedstock. D2 and standard carbide grades are vulnerable to brittle fracture under this impulse loading. **Upgrade:** Specify H13 (higher impact toughness than D2) for mixed-contamination streams where tramp metal risk is moderate, or a toughness-optimized carbide grade (Co content ≥ 12%) for high-risk streams. Add upstream magnet and/or metal detector to reduce tramp metal frequency.\n\n**Progressive Surface Scoring on Filter Plate:** Fine parallel grooves on the filter plate face, accompanied by rising differential pressure and shortened blade intervals. Caused by incorrect blade hardness (blade harder than plate), incorrect bevel angle causing concentrated edge loading, or grit contamination in the blade-plate interface. **Upgrade:** Verify blade hardness certificate (must be ≤ HRC 62). Confirm edge bevel angle matches OEM screen contact geometry (±0.5°). Inspect plate surface for plasma-nitride layer depletion — if scoring has reached the base metal, the plate requires replacement before installing new blades.\n\n**Rapid Blade Wear (< 200 Hours on Standard PCR):** Unexpectedly short service life on a nominally moderate feedstock indicates higher-than-declared contamination: elevated glass-fiber, silica, or ceramic filler content in the regrind. Submit regrind sample for XRF contamination analysis. **Upgrade:** Step from D2 to H13 first; if service life remains inadequate, move to solid tungsten carbide which delivers 5–8× longer life on abrasive-dominated failure streams.\n\n**Hole Enlargement / Filtration Quality Degradation Without Pressure Alarm:** Filter plate micro-perforations gradually enlarge over time, allowing oversized contaminant particles through at stable differential pressure. Root cause: HCl corrosion from PVC outgassing dissolving hole-wall material. No pressure alarm because the enlarged holes maintain low resistance. **Upgrade:** Specify PVD-coated, corrosion-resistant PM steel filter plates for all streams containing ≥ 5% PVC by weight.",
+      "Os filtros de fusão contínua são o coração de qualquer linha de reciclagem de plástico com PCR de alto rendimento. Ao processar material triturado pós-consumo altamente contaminado — contendo enchimentos minerais, fibras de vidro, resíduos carbonizados e partículas estranhas duras —, a lâmina raspadora é o único componente submetido à carga combinada mais extrema: desgaste abrasivo causado por contaminantes duros, fadiga térmica decorrente da exposição cíclica à temperatura da massa fundida (220–300 °C) e tensão de flexão cíclica proveniente do mecanismo de rotação. Uma lâmina que falha prematuramente força uma parada de emergência da linha, custando horas de tempo de reinício e desperdiçando volumes significativos de massa fundida em processo.\n\nAs lâminas raspadoras do filtro de fusão contínua da Sureay são fabricadas com precisão a partir de aço para ferramentas de trabalho a quente D2 aço-ferramenta para trabalho a frio e H13 de alta qualidade — duas ligas selecionadas especificamente para esse duplo requisito de resistência ao desgaste eresistência ao calor — e são submetidas a tratamento térmico a vácuo até HRC 58–62, seguido de pós-tratamento criogênico profundo para eliminar a austenita retida e prolongar a vida útil em 30–40% em comparação com o tratamento térmico padrão.\n\n## Seleção de liga por nível de contaminação\n\n**Aço para ferramentas D2 (HRC 60–62):** A especificação padrão para PCR de HDPE, PP e plásticos rígidos mistos com contaminação moderada (< 3% de teor de enchimento mineral). O teor de 12% de cromo e 1,5% de carbono proporciona excelente resistência à abrasão contra partículas de vidro e enchimentos de carbonato de cálcio em temperaturas de processamento de fusão de até 260 °C. Custo-benefício para filtração contínua de carga média com taxas de produção de 300–800 kg/h.\n\n**Aço para ferramentas de trabalho a quente H13 (HRC 48–52):** Selecionado para fluxos altamente contaminados — resíduos triturados de filmes pós-consumo, filmes de cobertura agrícola, plásticos de REEE — onde as temperaturas de fusão excedem 280 °C e os ciclos térmicos são severos. A matriz de carboneto de molibdênio-vanádio do H13 mantém a estabilidade dimensional e a geometria das arestas sob carga térmica sustentada que causaria o amolecimento e a deformação do D2.\n\n**Carboneto de tungstênio maciço (HRA 88–91):** A especificação definitiva para matérias-primas ultraabrasivas: plásticos de engenharia reforçados com fibra de vidro (PA-GF30, PBT-GF), fluxos contaminados com cerâmica e filmes agrícolas ricos em silício com partículas de solo incrustadas. Os raspadores de carboneto oferecem vida útil 5 a 8 vezes maior em comparação com o D2 nessas matérias-primas, reduzindo a frequência de troca da lâmina para uma vez a cada mais de 1.000 horas de operação.\n\n## Geometria da lâmina retificada com precisão\n\nA geometria do fio da lâmina do raspador controla diretamente a limpeza da superfície da tela de filtragem e, portanto, a consistência da pressão da massa fundida. Um raspador desgastado ou com perfil incorreto deixa uma camada residual de contaminação na tela do filtro, causando aumento progressivo da pressão, redução da produtividade e, por fim, rompimento da tela. As lâminas da Sureay são retificadas com precisão, com tolerância dimensional de ±0,05 mm, e os perfis de chanfro das bordas são adaptados à geometria de contato com a tela de cada fabricante original (OEM) do filtro. O resultado é uma ação de raspagem consistente e reproduzível que mantém a limpeza da tela durante toda a vida útil da lâmina.\n\n## Compatibilidade direta com OEMs\n\nA geometria da lâmina raspadora é específica para cada máquina: cada fabricante de filtros contínuos de material fundido utiliza dimensões proprietárias do rotor, interfaces de montagem das lâminas e diâmetros de tela. A Sureay realiza a engenharia reversa de lâminas de reposição a partir de desenhos dos fabricantes ou amostras dos clientes, verificando o encaixe em uma máquina de medição por coordenadas (CMM) antes da produção. Compatível com o filtro contínuo EREMA, o sistema de filtração rotativo Gneuß, a série ERF da Ettlinger, a série RAS da FIMIC, a série KSF da Kreyenborg e os trocadores contínuos de tela BKG da Nordson.\n\n## Microperfurações cônicas na placa de filtro feitas a laser\n\nA geometria dos orifícios da placa de filtro é tão crítica quanto o material da lâmina raspadora. Orifícios cilíndricos padrão, perfurados ou puncionados, criam um canal de parede plana onde o polímero fundido e os contaminantes em suspensão podem estagnar — carbonizando-se dentro do orifício sob calor contínuo, reduzindo progressivamente a área aberta efetiva e, eventualmente, causando o entupimento prematuro da tela. As placas de filtro Sureay utilizam microperfurações cônicas (afuniladas) feitas a laser: o orifício é mais estreito na superfície de contato com o material fundido a montante e se alarga progressivamente em direção à saída a jusante. Esse perfil cônico aproveita a pressão hidráulica do lado da massa fundida: assim que uma partícula de contaminante passa pela restrição estreita da entrada, a geometria do canal em expansão a expulsa imediatamente em direção à saída, sem estagnação em zonas mortas. O resultado é uma placa de filtragem que mantém pressão diferencial e porcentagem de área aberta consistentes ao longo de um intervalo de serviço significativamente mais longo — o que é particularmente crítico em fluxos de PCR altamente contaminados, nos quais placas com orifícios cilíndricos exigiriam substituição frequente.\n\nFiness de filtragem disponível: 80 µm (rPET/rHDPE para contato com alimentos), 150–200 µm (PCR de grau de filme), 300–500 µm (PCR de grau de injeção), 500–2.000 µm (pré-filtração grossa). Perfil cônico disponível em todos os graus de finura.\n\n## Sinergia de dureza: protegendo seu investimento em placas de filtro\n\nUma preocupação comum e justificada ao adquirir lâminas raspadoras de reposição é se uma lâmina de reposição de alta dureza irá riscar ou danificar a placa de filtragem — um componente essencial que custa significativamente mais do que a própria lâmina. A Sureay projeta um diferencial de dureza deliberado e comprovado entre a lâmina raspadora e a superfície da placa de filtragem.\n\nA face a montante da placa de filtragem é nitretada a plasma até HV 1.000+ (aproximadamente equivalente a HRC 70+), criando uma camada superficial extremamente dura e resistente ao desgaste, semelhante à cerâmica, com profundidade de 0,1 a 0,3 mm. A lâmina raspadora é fabricada intencionalmente com uma dureza HRC mais baixa, entre 58 e 62. Esse diferencial significa que, em todas as condições operacionais, a lâmina é o consumível de desgaste controlado: ela se desgasta gradualmente contra a superfície mais dura da placa, sem gerar arranhões ou sulcos por transferência de metal. A superfície da placa filtrante permanece intacta ao longo de vários ciclos de substituição da lâmina. Cada remessa de lâminas Sureay inclui um certificado de teste de dureza confirmando que a lâmina está dentro da faixa de HRC especificada — documentação verificável de que o princípio de desgaste controlado é mantido em todos os lotes de produção.\n\n## Resistência química e à corrosão para fluxos de PVC e plásticos mistos\n\nO processamento de PVC pós-consumo lavado, filmes flexíveis mistos ou plásticos derivados de REEE libera gases corrosivos agressivos — principalmente ácido clorídrico (HCl) e compostos organoclorados — em temperaturas de fusão de 200 a 260 °C. Os aços para ferramentas padrão D2 e H13 sofrem corrosão sob exposição prolongada ao HCl: a corrosão por pite se inicia nos limites dos grãos, degradando progressivamente a geometria da borda com microperfurações e aumentando os diâmetros dos orifícios além das especificações, comprometendo a qualidade da filtragem sem qualquer indício externo visível.\n\nPara fluxos que incluem PVC, a Sureay aplica duas medidas de proteção: (1) atualização da liga de base para classes de aço PM (metalurgia do pó) resistentes à corrosão, com distribuição homogênea de cromo que resiste ao ataque ácido nos limites dos grãos; (2) revestimentos de barreira por deposição física de vapor (PVD) nas superfícies das placas filtrantes, que vedam as paredes das microperfurações contra a difusão do HCl. Essa combinação prolonga a vida útil das placas de filtragem em 2 a 3 vezes em comparação com placas de liga padrão sem revestimento em matérias-primas contendo PVC e previne o modo de falha insidioso de aumento do diâmetro dos orifícios, que prejudica a eficiência da filtragem sem acionar um alarme de pressão.\n\n## Compatibilidade com retrolavagem\n\nFiltros contínuos de fusão de alta tecnologia (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporam mecanismos automatizados de retrolavagem: um pulso reverso de alta pressão de material fundido limpo é periodicamente disparado para trás através de uma seção localizada da placa filtrante para expelir o bolo de contaminantes incrustado nas microperfurações, restaurando a área aberta sem interromper a linha. O pulso de retrolavagem gera um pico de pressão reversa localizado — normalmente de 150 a 400 bar, dependendo do fabricante original (OEM) — aplicado a uma pequena área da placa de filtragem.\n\nAs placas de filtragem Sureay são projetadas e fabricadas para suportar as pressões de retrolavagem especificadas pelos fabricantes originais (OEM) sem microfissuras ou deformações. A geometria cônica dos orifícios é dimensionalmente otimizada para isso: a saída a jusante mais larga de cada perfuração cônica atua como um bocal alargado que acelera o pulso de retrolavagem, melhorando a eficiência de ejeção de contaminantes em comparação com orifícios cilíndricos. A integridade estrutural sob ciclos repetidos de alta pressão reversa é validada por meio da análise de elementos finitos (FEA) da distribuição de tensão nos ligamentos entre os orifícios. As placas de reposição da Sureay mantêm 100% de compatibilidade com o tempo, a pressão e o layout da matriz de orifícios da retrolavagem do fabricante original — não é necessária nenhuma recalibração do controlador de retrolavagem.\n\n## Análise de Falhas: Diagnóstico e Eliminação de Falhas Comuns em Raspadores e Filtros\n\nEngenheiros que buscam componentes de reposição geralmente lidam com um modo específico de falha. A escolha correta do material depende da causa raiz.\n\n**Lasca na borda (fratura frágil na ponta da lâmina):** Causada por um único impacto de alta energia proveniente de metais estranhos — parafusos, porcas, fragmentos de fio — incrustados na matéria-prima de remoagem PCR. Os tipos de carboneto D2 e padrão são vulneráveis à fratura frágil sob essa carga de impulso. **Atualização:** Especifique H13 (maior tenacidade ao impacto do que o D2) para fluxos com contaminação mista, nos quais o risco de metais estranhos é moderado, ou uma classe de carboneto com tenacidade otimizada (teor de Co ≥ 12%) para fluxos de alto risco. Adicione um ímã e/ou detector de metais a montante para reduzir a frequência de metais estranhos.\n\n**Riscas progressivas na superfície da placa de filtragem:** Sulcos finos e paralelos na face da placa de filtragem, acompanhados por aumento da pressão diferencial e intervalos reduzidos entre as lâminas. Causado por dureza incorreta da lâmina (lâmina mais dura que a placa), ângulo de bisel incorreto causando carga concentrada na borda ou contaminação por areia na interface lâmina-placa. **Atualização:** Verifique o certificado de dureza das lâminas (deve ser ≤ HRC 62). Confirme se o ângulo de chanfro da borda corresponde à geometria de contato da tela do fabricante original (OEM) (±0,5°). Inspecione a superfície da placa quanto ao desgaste da camada de nitreto de plasma — se o arranhão tiver atingido o metal base, a placa precisa ser substituída antes da instalação de novas lâminas.\n\n**Desgaste rápido das lâminas (< 200 horas em PCR padrão):** Vida útil inesperadamente curta em uma matéria-prima nominalmente moderada indica contaminação superior à declarada: elevado teor de fibra de vidro, sílica ou enchimento cerâmico no material triturado. Envie uma amostra do material triturado para análise de contaminação por XRF. **Atualização:** Passe primeiro do D2 para o H13; se a vida útil continuar inadequada, mude para o metal duro sólido, que proporciona uma vida útil de 5 a 8 vezes maior em fluxos de falha dominados por abrasivos.\n\n**Alargamento dos orifícios / Degradação da qualidade da filtragem sem alarme de pressão:** As microperfurações da placa filtrante se alargam gradualmente com o tempo, permitindo a passagem de partículas de contaminantes de grandes dimensões sob pressão diferencial estável. Causa raiz: corrosão por HCl decorrente da desgaseificação do PVC, que dissolve o material das paredes dos orifícios. Não há alarme de pressão porque os orifícios ampliados mantêm baixa resistência. **Atualização:** Especifique placas de filtro de aço PM com revestimento PVD e resistentes à corrosão para todos os fluxos contendo ≥ 5% de PVC em peso.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4947,33 +4994,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "hardness-synergy",
-        tag: "ASSET PROTECTION",
-        title: "Engineered Hardness Synergy",
+        tag: "PROTEÇÃO DE BENS",
+        title: "Sinergia de dureza projetada",
         description:
-          "Filter plates are plasma nitrided to HV 1,000+ (≈ HRC 70+). Scraper blades are deliberately held at HRC 58–62. This verified differential makes the blade the controlled-wear consumable — it wears against the harder plate surface without scoring or gouging. Every shipment includes a hardness certificate confirming the blade is within range.",
+          "As placas de filtro são submetidas a nitretação a plasma até atingir uma dureza HV 1.000+ (≈ HRC 70+). As lâminas raspadoras são mantidas deliberadamente na faixa de HRC 58–62. Essa diferença comprovada faz com que a lâmina seja o consumível de desgaste controlado — ela se desgasta contra a superfície mais dura da placa sem riscar nem arranhar. Cada remessa inclui um certificado de dureza que confirma que a lâmina está dentro da faixa especificada.",
       },
       {
         id: "conical-laser-plates",
-        tag: "FILTRATION TECHNOLOGY",
-        title: "Conical Laser-Drilled Micro-Perforations",
+        tag: "TECNOLOGIA DE FILTRAGEM",
+        title: "Microperfurações cônicas feitas a laser",
         description:
-          "Tapered hole geometry (narrow inlet, wide outlet) exploits melt pressure to immediately expel contaminants rather than allowing them to stagnate inside cylindrical-wall holes. Prevents carbonization-driven hole blockage, maintains consistent differential pressure, and supports OEM backflush pulse dynamics at 150–400 bar without micro-cracking.",
+          "A geometria cônica do orifício (entrada estreita, saída larga) aproveita a pressão do material fundido para expelir imediatamente os contaminantes, em vez de permitir que eles fiquem estagnados dentro de orifícios com paredes cilíndricas. Evita o entupimento dos orifícios causado pela carbonização, mantém uma pressão diferencial consistente e suporta a dinâmica de pulsos de retrolavagem do fabricante original (OEM) na faixa de 150 a 400 bar sem a formação de microfissuras.",
       },
       {
         id: "failure-upgrade-path",
-        tag: "FAILURE ANALYSIS",
-        title: "Diagnostic Upgrade Path",
+        tag: "ANÁLISE DE FALHAS",
+        title: "Plano de atualização do diagnóstico",
         description:
-          "Edge chipping from tramp metal → upgrade to H13 or toughness-grade carbide. Progressive plate scoring → verify blade HRC certificate and bevel angle. Service life < 200 h on standard PCR → step to solid carbide for abrasion-dominated failure. Silent hole enlargement → specify PVD-coated corrosion-resistant PM plates for PVC-containing streams.",
+          "Lasca nas bordas causada por metais estranhos → mude para H13 ou metal duro de alta tenacidade. Riscos progressivos na placa → verifique o certificado HRC da lâmina e o ângulo de bisel. Vida útil < 200 h em PCR padrão → opte por metal duro maciço em caso de falha predominantemente por abrasão. Alargamento silencioso do furo → especifique placas PM com revestimento PVD resistentes à corrosão para fluxos contendo PVC.",
       },
     ],
     dimensionLabels: {
-      col0: "Filter Model / OEM",
-      col1: "Blade Length (mm)",
-      col2: "Blade Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Modelo do filtro / OEM",
+      col1: "Comprimento da lâmina (mm)",
+      col2: "Largura da lâmina (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Representative dimensions for common continuous melt filter platforms. All blades reverse-engineered to exact OEM drawing or customer sample. Custom geometries and mounting interfaces available on request.",
+        "* Dimensões representativas para plataformas comuns de filtros de fusão contínua. Todas as lâminas são projetadas por engenharia reversa de acordo com o desenho exato do fabricante original (OEM) ou com a amostra fornecida pelo cliente. Geometrias e interfaces de montagem personalizadas estão disponíveis mediante solicitação.",
     },
     standardDimensions: [
       {
@@ -5026,78 +5073,78 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "When should I upgrade from D2 to H13 for my scraper blades?",
+            "Quando devo trocar as lâminas do raspador do modelo D2 pelo modelo H13?",
           answer:
-            "Upgrade to H13 when your melt processing temperature consistently exceeds 260 °C, or when you are processing highly contaminated streams such as post-consumer agricultural film, WEEE plastics, or heavily printed packaging waste. These feedstocks generate significant thermal cycling stress that causes D2 to soften and lose edge geometry within 200–400 operating hours. H13's molybdenum-vanadium carbide matrix maintains hardness and dimensional stability up to 300 °C, extending scraper service life by 60–80% on these feedstocks.",
+            "Mude para o H13 quando a temperatura de processamento da massa fundida exceder consistentemente 260 °C ou quando estiver processando fluxos altamente contaminados, como filmes agrícolas pós-consumo, plásticos de resíduos de equipamentos elétricos e eletrônicos (REEE) ou resíduos de embalagens com impressão intensa. Essas matérias-primas geram um estresse significativo devido aos ciclos térmicos, o que faz com que o D2 amoleça e perca a geometria das bordas em 200 a 400 horas de operação. A matriz de carboneto de molibdênio-vanádio do H13 mantém a dureza e a estabilidade dimensional até 300 °C, prolongando a vida útil do raspador em 60 a 80% com essas matérias-primas.",
         },
         {
           question:
-            "How does scraper blade wear affect melt pressure and throughput on a continuous filter?",
+            "Como o desgaste da lâmina raspadora afeta a pressão de fusão e a produtividade em um filtro contínuo?",
           answer:
-            "A worn scraper blade leaves a residual contamination film on the filter screen surface after each rotation. This film progressively reduces the effective open screen area, causing melt pressure to rise and throughput to fall. On a heavily loaded PCR line, a blade worn beyond its service limit can cause a 15–25% throughput reduction and accelerate screen clogging to the point of breakthrough failure. Monitoring melt pressure differential across the filter is the most reliable wear indicator — we recommend blade inspection when differential pressure rises more than 20% above baseline.",
+            "Uma lâmina raspadora desgastada deixa uma película de contaminação residual na superfície da tela do filtro após cada rotação. Essa película reduz progressivamente a área efetiva aberta da tela, fazendo com que a pressão do material fundido aumente e a produtividade diminua. Em uma linha de PCR com carga pesada, uma lâmina desgastada além de seu limite de vida útil pode causar uma redução de 15 a 25% na produtividade e acelerar o entupimento da tela a ponto de ocorrer falha por rompimento. O monitoramento do diferencial de pressão da massa fundida no filtro é o indicador de desgaste mais confiável — recomendamos a inspeção da lâmina quando o diferencial de pressão subir mais de 20% acima do valor de referência.",
         },
         {
           question:
-            "What filtration fineness should I specify for recycled HDPE and PP pellet production?",
+            "Que grau de finura de filtração devo especificar para a produção de pellets reciclados de HDPE e PP?",
           answer:
-            "For standard PCR HDPE and PP pellet production targeting film or injection moulding applications, specify 300–500 µm filtration fineness. This removes hard particles that cause die-face streaking and surface defects without excessive pressure drop on moderately contaminated feedstock. For food-grade contact recycled resin (rHDPE, rPP under EU 10/2011), specify 150–200 µm to meet the stricter contamination removal requirements. For highly contaminated agricultural film or MSW-derived feedstock, start with 500–800 µm to manage pressure and step down as the input quality improves.",
+            "Para a produção padrão de pellets de HDPE e PP por PCR destinados a aplicações de filmes ou moldagem por injeção, especifique uma finura de filtração de 300–500 µm. Isso remove partículas duras que causam riscos na face da matriz e defeitos superficiais, sem queda excessiva de pressão em matéria-prima moderadamente contaminada. Para resinas recicladas de contato com alimentos (rHDPE, rPP de acordo com a norma UE 10/2011), especifique 150–200 µm para atender aos requisitos mais rigorosos de remoção de contaminação. Para filmes agrícolas altamente contaminados ou matéria-prima derivada de resíduos sólidos urbanos (RSU), comece com 500–800 µm para controlar a pressão e reduza gradualmente à medida que a qualidade da matéria-prima melhora.",
         },
         {
           question:
-            "Will high-hardness aftermarket scraper blades score or damage my filter plates?",
+            "As lâminas raspadoras de reposição de alta dureza podem riscar ou danificar minhas placas de filtro?",
           answer:
-            "This is the most important question to ask any aftermarket blade supplier. Sureay engineers a deliberate hardness differential: filter plates are plasma nitrided to HV 1,000+ (approximately HRC 70+), and scraper blades are manufactured to a strictly controlled HRC 58–62. The blade is always softer than the plate surface — it functions as a controlled-wear consumable that gradually wears away without generating metal-transfer scoring or gouging on the harder plate face. Every shipment includes a Rockwell HRC test certificate confirming the blade is within this range. If a supplier cannot provide this certificate, you have no guarantee the hardness differential is correct.",
+            "Essa é a pergunta mais importante a se fazer a qualquer fornecedor de lâminas de reposição. A Sureay projeta um diferencial de dureza deliberado: as placas de filtro são submetidas a nitretação a plasma até HV 1.000+ (aproximadamente HRC 70+), e as lâminas raspadoras são fabricadas com um nível de dureza estritamente controlado entre HRC 58 e 62. A lâmina é sempre mais macia do que a superfície da placa — ela funciona como um consumível de desgaste controlado que se desgasta gradualmente sem causar riscos ou sulcos por transferência de metal na face mais dura da placa. Cada remessa inclui um certificado de teste Rockwell HRC confirmando que a lâmina está dentro dessa faixa. Se um fornecedor não puder apresentar esse certificado, você não terá garantia de que o diferencial de dureza esteja correto.",
         },
         {
           question:
-            "Are Sureay filter plates compatible with automated backflushing on Ettlinger and Gneuß systems?",
+            "As placas de filtragem da Sureay são compatíveis com a retrolavagem automatizada nos sistemas da Ettlinger e da Gneuß?",
           answer:
-            "Yes, fully compatible. Sureay filter plates are designed and FEA-validated for OEM-rated backflush pulse pressures (typically 150–400 bar on Ettlinger ERF and Gneuß RSFgenius systems). The conical laser-drilled hole geometry enhances backflush efficiency: the wider downstream outlet acts as a nozzle that accelerates the reverse pulse through each perforation, improving contaminant ejection versus cylindrical-hole plates. Hole array layout and plate dimensions replicate OEM specifications exactly — no recalibration of backflush timing, pressure, or controller parameters is required after installation.",
+            "Sim, totalmente compatíveis. As placas filtrantes Sureay são projetadas e validadas por análise de elementos finitos (FEA) para pressões de pulso de retrolavagem nominal do fabricante original (normalmente 150–400 bar nos sistemas Ettlinger ERF e Gneuß RSFgenius). A geometria cônica dos orifícios perfurados a laser aumenta a eficiência da retrolavagem: a saída a jusante mais ampla atua como um bocal que acelera o pulso reverso através de cada perfuração, melhorando a ejeção de contaminantes em comparação com placas de orifícios cilíndricos. O layout do arranjo de orifícios e as dimensões das placas reproduzem exatamente as especificações do fabricante original — não é necessária nenhuma recalibração do tempo de retrolavagem, da pressão ou dos parâmetros do controlador após a instalação.",
         },
         {
           question:
-            "My filter is losing filtration quality without a differential pressure alarm. How do I diagnose this?",
+            "Meu filtro está perdendo qualidade de filtragem sem que haja um alarme de pressão diferencial. Como posso diagnosticar esse problema?",
           answer:
-            "This is the symptom of silent hole enlargement — a failure mode where filter plate micro-perforations gradually widen due to chemical corrosion of the hole walls rather than mechanical wear. Enlarged holes allow oversized contaminant particles through while maintaining low differential pressure because the wider holes offer less resistance. The root cause is almost always HCl outgassing from PVC or organochlorine contamination in the feedstock reacting with standard tool steel at melt temperatures. Confirm by: (1) measuring output melt contamination particle size — if oversized particles are present without pressure rise, hole enlargement is confirmed; (2) inspect a removed plate under magnification for hole-wall pitting or rounding. The solution is to specify Sureay PVD-coated, corrosion-resistant PM steel filter plates, which seal the micro-perforation walls against acid diffusion and prevent the insidious progressive enlargement.",
+            "Esse é o sintoma do alargamento silencioso dos orifícios — um modo de falha em que as microperfurações da placa filtrante se alargam gradualmente devido à corrosão química das paredes dos orifícios, e não ao desgaste mecânico. Os orifícios alargados permitem a passagem de partículas de contaminantes de tamanho excessivo, mantendo, ao mesmo tempo, uma baixa pressão diferencial, pois os orifícios mais largos oferecem menor resistência. A causa principal é quase sempre a liberação de HCl do PVC ou a contaminação por organoclorados na matéria-prima, que reagem com o aço-ferramenta padrão em temperaturas de fusão. Confirme da seguinte forma: (1) medindo o tamanho das partículas de contaminação na massa fundida de saída — se houver partículas de tamanho excessivo sem aumento de pressão, o aumento do diâmetro dos orifícios está confirmado; (2) inspecionar uma placa removida sob ampliação para verificar se há corrosão por pite ou arredondamento nas paredes dos orifícios. A solução é especificar placas de filtro de aço PM resistentes à corrosão com revestimento PVD da Sureay, que vedam as paredes das microperfurações contra a difusão de ácido e impedem o alargamento progressivo e insidioso.",
         },
         {
           question:
-            "Can Sureay match our existing EREMA or Gneuß scraper blade dimensions?",
+            "A Sureay consegue fabricar lâminas raspadoras com as mesmas dimensões das nossas lâminas EREMA ou Gneuß atuais?",
           answer:
-            "Yes. Send us your existing blade sample or the OEM part number and machine model. We will dimensionally verify the blade profile on our CMM, confirm the mounting interface, edge bevel angle, and material specification, and supply direct drop-in replacements. For EREMA Continuous Filter and Gneuß Rotary Filtration Systems, we maintain reference drawings for the most common platform sizes. Lead time for standard replacement blades is 7–12 working days from dimension confirmation.",
+            "Sim. Envie-nos uma amostra da lâmina que você possui ou o número de peça do fabricante original (OEM) e o modelo da máquina. Verificaremos as dimensões do perfil da lâmina em nossa máquina de medição por coordenadas (CMM), confirmaremos a interface de montagem, o ângulo de bisel da borda e as especificações do material, e forneceremos peças de reposição diretas, prontas para uso. Para os sistemas de filtragem contínua da EREMA e os sistemas de filtragem rotativa da Gneuß, mantemos desenhos de referência para os tamanhos de plataforma mais comuns. O prazo de entrega para lâminas de reposição padrão é de 7 a 12 dias úteis a partir da confirmação das dimensões.",
         },
         {
           question:
-            "How many operating hours can I expect from D2 scraper blades on a mixed PCR line?",
+            "Quantas horas de operação posso esperar das lâminas raspadoras D2 em uma linha de PCR mista?",
           answer:
-            "On a mixed PCR rigid plastics line (HDPE/PP, < 3% mineral contamination, melt temperature 230–260 °C), D2 scraper blades typically deliver 400–700 operating hours before the edge profile degrades to the point of rising differential pressure. H13 blades on the same line extend service intervals to 600–1,000 hours. On highly abrasive streams (glass-filled compounds, agricultural film with embedded soil), D2 service life drops to 150–300 hours; H13 extends this to 250–450 hours; solid carbide delivers 1,000–2,000+ hours on these feedstocks.",
+            "Em uma linha de produção de plásticos rígidos por PCR misto (HDPE/PP, < 3% de contaminação mineral, temperatura de fusão de 230 a 260 °C), as lâminas raspadoras D2 geralmente proporcionam de 400 a 700 horas de operação antes que o perfil da borda se degrade a ponto de causar aumento da pressão diferencial. As lâminas H13 na mesma linha prolongam os intervalos de manutenção para 600–1.000 horas. Em fluxos altamente abrasivos (compostos com enchimento de vidro, filme agrícola com solo incrustado), a vida útil das lâminas D2 cai para 150–300 horas; as lâminas H13 estendem esse tempo para 250–450 horas; o metal duro proporciona 1.000–2.000+ horas nessas matérias-primas.",
         },
       ],
       company: [
         {
           question:
-            "Are your melt filter scraper blades direct OEM replacements or aftermarket parts?",
+            "As lâminas raspadoras do filtro de fusão são peças de reposição originais (OEM) ou peças de reposição do mercado paralelo?",
           answer:
-            "They are precision aftermarket replacements manufactured to OEM dimensional specifications. We reverse-engineer each blade from OEM drawings or customer samples, verify fit on a CMM, and supply with a dimensional inspection certificate. Our blades are not rebranded OEM parts — they are manufactured directly in our facility using premium D2, H13, or carbide materials with our full quality documentation package.",
+            "Trata-se de peças de reposição de precisão fabricadas de acordo com as especificações dimensionais do fabricante original (OEM). Realizamos a engenharia reversa de cada lâmina a partir de desenhos do fabricante original ou amostras do cliente, verificamos o encaixe em uma máquina de medição por coordenadas (CMM) e fornecemos um certificado de inspeção dimensional. Nossas lâminas não são peças originais com nova marca — elas são fabricadas diretamente em nossas instalações utilizando materiais premium D2, H13 ou carboneto, acompanhadas de nosso pacote completo de documentação de qualidade.",
         },
         {
           question:
-            "What quality documentation is included with scraper blade shipments?",
+            "Que tipo de documentação de qualidade é fornecida junto com as remessas de lâminas raspadoras?",
           answer:
-            "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
+            "Cada remessa inclui: certificado de ensaio de dureza Rockwell HRC, relatório de inspeção dimensional por CMM confirmando o perfil das arestas e as tolerâncias da interface de montagem, certificado de rastreabilidade do material da siderúrgica e certificado de lote tratamento térmico. Para clientes que necessitem de documentação mais detalhada para a certificação ISO 9001 ou para a qualificação de processos de reciclagem, relatórios completos de ensaios de materiais e registros de processo estão disponíveis mediante solicitação.",
         },
       ],
     },
   },
   {
     id: "shredder-screens",
-    name: "Shredder Screens",
-    fullName: "Shredder Screens, Baskets & Screen Plates",
+    name: "Peneiras para trituradores",
+    fullName: "Peneiras, cestas e placas de peneiramento para trituradores",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Shredder Screens",
+    categoryDisplay: "Peneiras para trituradores",
     image: "/images/products/shredder-screens/shredder-screens-04.webp",
-    badge: "Wear Parts",
+    badge: "Peças de desgaste",
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
@@ -5105,16 +5152,16 @@ export const blades: Blade[] = [
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
-      "Half-round perforated shredder screen basket with mounting flanges, showing staggered round hole pattern",
-      "Batch of perforated shredder screen baskets prepared for export shipment",
-      "Stack of curved shredder screen plates on a pallet, showing staggered round hole pattern",
+      "Cesto de peneira perfurado semicircular para triturador, com flanges de montagem, apresentando um padrão de orifícios redondos dispostos em escalonamento",
+      "Lote de cestas perfuradas para trituradores, preparadas para remessa de exportação",
+      "Pilha de placas curvas de peneira para triturador em um palete, mostrando um padrão de orifícios redondos dispostos em escalonamento",
     ],
     description:
-      "Perforated shredder screens, baskets and screen plates in S355J2 and Hardox 400–500. Hole Ø 8–80 mm, 12–30 mm thick, reverse-engineered from your worn screen.",
+      "Peneiras perfuradas para trituradores, cestas e placas de peneira em S355J2 e Hardox 400–500. Diâmetro dos furos: 8–80 mm; espessura: 12–30 mm; projetadas com base na sua peneira desgastada.",
     fullDescription:
-      "The screen is the component that actually decides your output particle size — the rotor and knives only reduce material until it is small enough to pass through. Yet it is the part most operators treat as an afterthought, running a blinded or bell-mouthed screen for months while blaming falling throughput on the knives. On a size-reduction line, screen condition and screen specification together account for more lost capacity than blade wear does.\n\nSureay manufactures shredder screens as engineered wear parts, not as generic perforated plate. Each screen is rolled to the exact rotor radius, so the gap between rotor tip and screen surface stays uniform across the full cutting width. An uneven gap means material is dragged and ground rather than cut, which raises motor amp draw, generates heat and fines, and accelerates knife wear on the very blades the screen was supposed to protect.\n\n## The Three Screen Forms\n\n**Screen Basket (half-round or full-round):** The standard geometry for single-shaft and twin-shaft shredders. Supplied as a half-shell that cradles the rotor, or as two halves clamped into a full cylinder. Basket screens carry the largest open area and are the highest-wear form because the entire inner surface is in contact with circulating material.\n\n**Screen Plate (flat):** Used on granulators and beside-the-press crushers where the cutting chamber geometry is flat rather than cylindrical. Easier to manufacture and to reverse-engineer, and usually the cheapest form to replace.\n\n**Sickle Screen:** A curved partial screen fitted where the discharge geometry does not allow a full basket. Common on compact and mobile shredders.\n\n**Cassette Screen:** A framed, quick-change insert. Higher initial cost, dramatically lower changeover time — worth specifying on lines that run several particle sizes on the same machine.\n\n## Specifying a Screen: Three Numbers That Matter\n\nEvery screen is defined by three interacting dimensions, and changing one forces a change in the others:\n\n- **Hole diameter (Ø)** sets the maximum particle size passing through. It is the number buyers usually quote, and the only one they usually quote.\n- **Plate thickness (t)** sets how long the screen survives. A thicker plate resists deformation and bell-mouthing but reduces effective open area, because each hole becomes a longer channel that material must clear.\n- **Ligament width** — the web of steel between adjacent holes — sets the screen's structural strength. Push the ligament too narrow chasing open area and the screen cracks between holes under impact, usually starting at the discharge edge.\n\nOpen area follows directly from hole diameter and ligament. For round holes on a 60° staggered pitch, open area ≈ 90.7 × (d / p)², where p is the hole centre pitch. Going from a 20 mm hole on a 28 mm pitch to a 20 mm hole on a 24 mm pitch lifts open area from roughly 46% to 63% — and cuts the ligament from 8 mm to 4 mm, which on a plastics shredder handling occasional metal contamination will fail early.\n\n## Why Screens Should Not Be Made From Tool Steel\n\nThis is the most common specification error we correct. A screen is not a cutting tool. It is a perforated structural member that absorbs continuous impact and abrasion while holding its shape. Hardening a screen to HRC 58–62 like a blade makes it brittle: the ligaments crack, and a fractured screen can drop steel fragments into the rotor and destroy a full knife set.\n\nWhat a screen needs is toughness with adequate abrasion resistance:\n\n- **S355J2 structural plate** — the default for clean plastics, film, paper and light MSW. Tough, cheap, easy to re-drill and repair.\n- **Hardox 400 / 450** — for mixed post-consumer waste, wood with grit, and moderately abrasive feed. Roughly 2–3× the service life of S355 at a modest cost premium.\n- **Hardox 500 or hardfaced surfaces** — for glass-filled compounds, contaminated demolition wood, C&D waste and other severely abrasive streams. Hardfacing is applied selectively to the high-wear inner face while the base plate stays tough.\n\n## Reverse Engineering From a Worn Screen\n\nMost replacement orders arrive without a drawing. Send photographs of the worn screen with a tape measure across the hole pitch, plus the machine make and model, and we will produce a manufacturing drawing for your approval before cutting steel. Where the original screen has bell-mouthed, we work from the unworn hole geometry at the edges rather than the enlarged centre holes, so the replacement restores the original particle size rather than reproducing the worn condition.",
+      "A tela é o componente que realmente determina o tamanho das partículas na saída — o rotor e as lâminas apenas reduzem o material até que ele fique pequeno o suficiente para passar. No entanto, é a peça que a maioria dos operadores trata como algo secundário, operando uma tela cega ou em forma de sino por meses enquanto atribuem a queda na produtividade às lâminas. Em uma linha de redução de tamanho, as condições e as especificações da tela, juntas, são responsáveis por mais perda de capacidade do que o desgaste das lâminas.\n\nA Sureay fabrica telas para trituradores como peças de desgaste projetadas especificamente, e não como placas perfuradas genéricas. Cada tela é laminada de acordo com o raio exato do rotor, de modo que a folga entre a ponta do rotor e a superfície da tela permaneça uniforme em toda a largura de corte. Uma folga irregular faz com que o material seja arrastado e triturado em vez de cortado, o que aumenta o consumo de amperagem do motor, gera calor e partículas finas, além de acelerar o desgaste das próprias lâminas que a tela deveria proteger.\n\n## As três formas de tela\n\n**Cesto de tela (semicircular ou circular):** A geometria padrão para trituradores de eixo único e de eixo duplo. Fornecida como uma meia concha que envolve o rotor ou como duas metades fixadas em um cilindro completo. As peneiras tipo cesta apresentam a maior área aberta e são a forma que sofre maior desgaste, pois toda a superfície interna está em contato com o material em circulação.\n\n**Plaqueta de peneira (plana):** Utilizada em granuladores e trituradores ao lado da prensa, onde a geometria da câmara de corte é plana, em vez de cilíndrica. Mais fácil de fabricar e de fazer a engenharia reversa, e geralmente a forma mais barata de substituir.\n\n**Peneira em forma de foice:** Uma tela parcial curva instalada onde a geometria de descarga não permite o uso de uma cesta completa. Comum em trituradores compactos e móveis.\n\n**Tela tipo cassete:** Um inserto emoldurado de troca rápida. Custo inicial mais alto, tempo de troca drasticamente menor — vale a pena especificá-la em linhas que processam partículas de vários tamanhos na mesma máquina.\n\n## Especificação de uma tela: três números que importam\n\nToda tela é definida por três dimensões que interagem entre si, e a alteração de uma delas força uma mudança nas outras:\n\n- **Diâmetro do orifício (Ø)** define o tamanho máximo das partículas que passam. É o número que os compradores geralmente citam, e o único que costumam citar.\n- **Espessura da chapa (t)** determina a vida útil da tela. Uma chapa mais espessa resiste à deformação e ao alargamento dos orifícios, mas reduz a área aberta efetiva, pois cada orifício se torna um canal mais longo pelo qual o material precisa passar.\n- **Largura do ligamento** — a tira de aço entre orifícios adjacentes — determina a resistência estrutural da tela. Se o ligamento for muito estreito na tentativa de aumentar a área aberta, a tela racha entre os orifícios sob impacto, geralmente começando na borda de descarga.\n\nA área aberta decorre diretamente do diâmetro do furo e da largura do ligamento. Para furos redondos com passo escalonado de 60°, a área aberta ≈ 90,7 × (d / p)², onde p é o passo entre os centros dos furos. Passar de um orifício de 20 mm com passo de 28 mm para um orifício de 20 mm com passo de 24 mm aumenta a área aberta de aproximadamente 46% para 63% — e reduz a largura do ligamento de 8 mm para 4 mm, o que, em um triturador de plásticos que lida com contaminação ocasional por metais, levará à falha precoce.\n\n## Por que as telas não devem ser feitas de aço para ferramentas\n\nEsse é o erro de especificação mais comum que corrigimos. Uma tela não é uma ferramenta de corte. É um elemento estrutural perfurado que absorve impactos e abrasão contínuos enquanto mantém sua forma. Endurecer uma tela até HRC 58–62, como se fosse uma lâmina, torna-a frágil: os ligamentos racham, e uma tela fraturada pode lançar fragmentos de aço no rotor e destruir um conjunto completo de facas.\n\nO que uma tela precisa é de tenacidade com resistência adequada à abrasão:\n\n- **Chapa estrutural S355J2** — a opção padrão para plásticos limpos, filmes, papel e resíduos sólidos urbanos leves. Tenaz, barata, fácil de perfurar novamente e reparar.\n- **Hardox 400 / 450** — para resíduos pós-consumo mistos, madeira com areia e material de alimentação moderadamente abrasivo. Vida útil cerca de 2 a 3 vezes maior que a da S355, com um custo adicional modesto.\n- **Hardox 500 ou superfícies com revestimento duro** — para compostos com enchimento de vidro, madeira de demolição contaminada, resíduos de construção e demolição e outros fluxos altamente abrasivos. O revestimento duro é aplicado seletivamente na face interna de alto desgaste, enquanto a chapa base permanece resistente.\n\n## Engenharia reversa a partir de uma peneira desgastada\n\nA maioria dos pedidos de reposição chega sem um desenho técnico. Envie fotografias da peneira desgastada com uma fita métrica colocada ao longo do espaçamento entre os orifícios, além da marca e do modelo da máquina, e nós produziremos um desenho de fabricação para sua aprovação antes de cortar o aço. Quando a tela original apresenta orifícios alargados em forma de sino, trabalhamos com base na geometria dos orifícios não desgastados nas bordas, em vez dos orifícios centrais ampliados; assim, a peça de reposição restaura o tamanho original das partículas, em vez de reproduzir a condição desgastada.",
     disambiguation:
-      "Looking for the cutting tools rather than the sizing screen? See [Single Shaft Shredder Blades](/products/single-shaft-shredder-blades) for rotor inserts, bed knives and holders.",
+      "Está procurando ferramentas de corte em vez da peneira de classificação? Consulte [Lâminas para trituradores de eixo único](/products/single-shaft-shredder-blades) para encontrar insertos de rotor, facas fixas e suportes.",
     link: "/products/shredder-screens",
     compatibleMachines: [
       "Lindner",
@@ -5165,37 +5212,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "A screen is judged on three things: whether it holds the particle size you specified, how long it holds it, and whether it survives the contamination in your feed without cracking.",
+      "Uma peneira é avaliada com base em três critérios: se retém o tamanho de partícula que você especificou, por quanto tempo a retém e se resiste à contaminação presente na matéria-prima sem rachar.",
     components: [
       {
         id: "aperture-sets-particle-size",
-        tag: "SIZING",
-        title: "The Screen Sets Your Output, Not the Rotor",
+        tag: "TAMANHOS",
+        title: "É a tela que determina o resultado, não o rotor",
         description:
-          "Rolled to your exact rotor radius so the tip-to-screen gap stays uniform across the full width. A consistent gap means material is cut once and discharged, instead of being recirculated and ground into heat and fines.",
+          "Laminado de acordo com o raio exato do seu rotor, para que a distância entre a ponta e a tela permaneça uniforme em toda a largura. Uma distância consistente significa que o material é cortado uma única vez e descarregado, em vez de ser recirculado e triturado até gerar calor e partículas finas.",
       },
       {
         id: "toughness-not-hardness",
-        tag: "METALLURGY",
-        title: "Toughness, Not Blade Hardness",
+        tag: "METALURGIA",
+        title: "Resistência, e não dureza da lâmina",
         description:
-          "Screens are specified in S355J2, Hardox 400–500 or selectively hardfaced plate — never hardened to blade HRC. A brittle screen cracks at the ligaments and can drop steel into the rotor, taking a full knife set with it.",
+          "As telas são especificadas em S355J2, Hardox 400–500 ou chapa com revestimento de dureza seletiva — nunca temperadas até atingir a dureza HRC das lâminas. Uma tela frágil racha nos pontos de ligação e pode fazer com que pedaços de aço caiam no rotor, levando consigo um conjunto completo de lâminas.",
       },
       {
         id: "screen-knife-system",
-        tag: "SYSTEM",
-        title: "Screens, Counter Knives and Holders as One Order",
+        tag: "SISTEMA",
+        title: "Peneiras, facas de balcão e suportes em um único pedido",
         description:
-          "A blinded or bell-mouthed screen accelerates knife wear, and worn knives blind the screen faster. We supply screens together with counter knives, knife holders, clamping bars and spacers so the whole wear set is replaced on the same shutdown.",
+          "Uma tela entupida ou com abertura em forma de sino acelera o desgaste das lâminas, e lâminas desgastadas entopem a tela mais rapidamente. Fornecemos telas juntamente com contra-lâminas, suportes de lâminas, barras de fixação e espaçadores, para que todo o conjunto de peças de desgaste seja substituído na mesma parada da produção.",
       },
     ],
     dimensionLabels: {
-      col0: "Output Class",
-      col1: "Hole Ø (mm)",
-      col2: "Plate Thickness (mm)",
-      col3: "Ligament (mm)",
+      col0: "Classe de saída",
+      col1: "Diâmetro do furo (mm)",
+      col2: "Espessura da chapa (mm)",
+      col3: "Ligamento (mm)",
       caption:
-        "* Representative round-hole specifications on a 60° staggered pitch. Square, slotted and mixed-pattern screens available. Every screen is rolled to the customer's rotor radius — send the machine model or a photograph of the worn screen for reverse engineering.",
+        "* Especificações representativas de orifícios redondos com passo escalonado de 60°. Estão disponíveis peneiras quadradas, com fendas e de padrão misto. Cada peneira é laminada de acordo com o raio do rotor do cliente — envie o modelo da máquina ou uma fotografia da peneira desgastada para engenharia reversa.",
     },
     standardDimensions: [
       {
@@ -5266,71 +5313,71 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "My throughput has dropped. Should I replace the screen or the knives first?",
+            "Minha produtividade caiu. Devo trocar a tela ou as lâminas primeiro?",
           answer:
-            "Inspect the screen first, because it is cheaper to check and more often the cause. Look for bell-mouthing — holes that have worn conical and enlarged on the inner face — and for blinding, where softened plastic has plugged the apertures. If holes have grown more than about 10% over nominal, the screen is already passing oversize particles and should be replaced regardless of knife condition. In practice the two wear together: a dull knife pushes material against the screen instead of cutting it, and a blinded screen recirculates material that grinds the knife edge. Replacing only one usually means a second shutdown within weeks.",
+            "Inspecione primeiro a tela, pois é mais barato verificar e, na maioria das vezes, é essa a causa. Procure por “bell-mouthing” — orifícios que se desgastaram de forma cônica e se ampliaram na face interna — e por “blinding”, quando o plástico amolecido obstruiu as aberturas. Se os orifícios tiverem aumentado mais de cerca de 10% em relação ao tamanho nominal, a tela já está deixando passar partículas acima do tamanho permitido e deve ser substituída, independentemente do estado da lâmina. Na prática, os dois se desgastam juntos: uma lâmina cega empurra o material contra a tela em vez de cortá-lo, e uma tela obstruída recircula o material que desgasta o fio da lâmina. Substituir apenas um deles geralmente significa uma segunda parada da produção em poucas semanas.",
         },
         {
           question:
-            "What actually causes screen blinding, and how do I stop it?",
+            "O que realmente causa o efeito de ofuscamento da tela e como posso evitar isso?",
           answer:
-            "Blinding is almost always a heat problem, not a hole-size problem. When knives are dull or the rotor-to-screen gap has opened, material is smeared and worked rather than cut. Frictional heat softens the polymer, which then extrudes into the apertures and sets. Fitting a larger screen usually makes the coarse fraction unacceptable without fixing the cause. The durable fixes are sharpening or replacing the knives, restoring the correct rotor gap, and — for heat-sensitive polymers like LDPE and PP film — reducing feed rate or adding cooling. A thicker plate makes blinding worse, not better, because each hole becomes a longer channel to clear.",
+            "O entupimento é quase sempre um problema de aquecimento, e não de tamanho dos orifícios. Quando as lâminas estão cegas ou a folga entre o rotor e a tela aumentou, o material é espalhado e malhado, em vez de ser cortado. O calor gerado pelo atrito amolece o polímero, que então é extrudado para dentro das aberturas e solidifica. Instalar uma tela maior geralmente torna a fração grossa inaceitável, a menos que a causa seja corrigida. As soluções duradouras são afiar ou substituir as lâminas, restaurar a folga correta do rotor e — para polímeros sensíveis ao calor, como o LDPE e o filme de PP — reduzir a taxa de alimentação ou adicionar resfriamento. Uma placa mais espessa agrava o entupimento, em vez de melhorá-lo, pois cada orifício se torna um canal mais longo a ser desobstruído.",
         },
         {
           question:
-            "How much open area can I add before the screen becomes structurally unsafe?",
+            "Quanta área aberta posso adicionar antes que a tela se torne estruturalmente insegura?",
           answer:
-            "The limit is set by ligament width, not by open-area percentage. As a working rule, keep the ligament at or above 0.4× the hole diameter for clean plastics and at or above 0.6× for feed that may contain metal, stone or other hard contamination. A 20 mm hole with an 8 mm ligament gives roughly 46% open area and survives contaminated feed; the same hole with a 4 mm ligament reaches about 63% open area but will crack between holes under impact, typically starting at the discharge edge. On abrasive streams we would rather increase plate thickness and accept slightly lower open area than chase throughput with a thin ligament.",
+            "O limite é determinado pela largura do ligamento, e não pela porcentagem de área aberta. Como regra prática, mantenha o ligamento com largura igual ou superior a 0,4× o diâmetro do orifício para plásticos puros e igual ou superior a 0,6× para matérias-primas que possam conter metal, pedras ou outros resíduos duros. Um orifício de 20 mm com um ligamento de 8 mm proporciona aproximadamente 46% de área aberta e resiste ao material contaminado; o mesmo orifício com um ligamento de 4 mm atinge cerca de 63% de área aberta, mas rachará entre os orifícios sob impacto, geralmente começando na borda de descarga. Em fluxos abrasivos, preferimos aumentar a espessura da placa e aceitar uma área aberta ligeiramente menor do que buscar maior rendimento com um ligamento fino.",
         },
         {
           question:
-            "Why shouldn't a screen be hardened to the same HRC as the blades?",
+            "Por que uma tela não deveria ser endurecida até atingir o mesmo HRC das lâminas?",
           answer:
-            "Because a screen fails differently from a blade. A blade needs edge retention and works in compression at the cutting edge; a screen is a perforated structural member absorbing continuous impact across a large span. Hardened to HRC 58–62, the ligaments lose the ductility they need to absorb shock and crack rather than deform. A cracked screen is far more expensive than a worn one, because fragments entering the rotor can destroy an entire knife set. We specify S355J2 for clean plastics, Hardox 400/450 for mixed post-consumer feed, and Hardox 500 or selective hardfacing for severely abrasive material — all chosen for toughness first.",
+            "Porque uma tela se danifica de maneira diferente de uma lâmina. Uma lâmina precisa manter a retenção do fio e opera sob compressão na borda de corte; uma tela é um elemento estrutural perfurado que absorve impactos contínuos ao longo de uma grande extensão. Endurecidos a HRC 58–62, os ligamentos perdem a ductilidade necessária para absorver choques e acabam rachando em vez de se deformarem. Uma tela rachada é muito mais cara do que uma desgastada, pois fragmentos que entram no rotor podem destruir um conjunto inteiro de facas. Especificamos o S355J2 para plásticos puros, o Hardox 400/450 para matérias-primas mistas pós-consumo e o Hardox 500 ou revestimento seletivo para materiais altamente abrasivos — todos escolhidos, em primeiro lugar, por sua tenacidade.",
         },
         {
           question:
-            "Can you manufacture a screen from my worn one if I have no drawing?",
+            "Vocês conseguem fabricar uma tela a partir da minha, que está gasta, caso eu não tenha um desenho?",
           answer:
-            "Yes, and this is how most of our screen orders start. Send photographs of the worn screen with a tape measure laid across the hole pitch, plus the machine make and model and, where possible, the overall arc length and end-plate detail. We produce a manufacturing drawing for your written approval before any steel is cut. One important detail: we take hole geometry from the unworn edges rather than the enlarged centre holes, so the new screen restores your original particle size instead of reproducing the worn condition.",
+            "Sim, e é assim que a maioria dos nossos pedidos de peneiras começa. Envie fotos da peneira desgastada com uma fita métrica colocada ao longo do espaçamento entre os orifícios, além da marca e do modelo da máquina e, quando possível, o comprimento total do arco e os detalhes da placa terminal. Elaboramos um desenho de fabricação para sua aprovação por escrito antes de qualquer corte no aço. Um detalhe importante: determinamos a geometria dos orifícios a partir das bordas não desgastadas, e não dos orifícios centrais alargados, de modo que a nova tela restaure o tamanho original das partículas, em vez de reproduzir a condição de desgaste.",
         },
         {
           question:
-            "Do you supply the counter knives, holders and clamping bars as well?",
+            "Vocês também fornecem as lâminas de contra-corte, os suportes e as barras de fixação?",
           answer:
-            "Yes. Screens, counter knives, knife holders, clamping bars and spacers are all manufactured in-house and routinely shipped together, which is how we recommend ordering them. Replacing the screen while leaving worn counter knives in place means the new screen blinds faster, and a single consolidated shipment reduces both freight cost and the number of production shutdowns.",
+            "Sim. As telas, as facas contrárias, os suportes das facas, as barras de fixação e os espaçadores são todos fabricados internamente e normalmente enviados juntos, e é assim que recomendamos que sejam encomendados. Substituir a tela sem retirar as facas contrárias desgastadas significa que a nova tela ficará entupida mais rapidamente, e uma única remessa consolidada reduz tanto o custo de frete quanto o número de interrupções na produção.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Você é um fabricante ou uma empresa comercial?",
           answer:
-            "We are a direct manufacturer established in 2008. Screens are cut, rolled, drilled and — where specified — hardfaced in our own workshop, which is why we can work from a photograph of a worn part rather than requiring a finished drawing.",
+            "Somos um fabricante direto fundado em 2008. As telas são cortadas, laminadas, perfuradas e — quando especificado — revestidas com metal duro em nossa própria oficina; é por isso que podemos trabalhar a partir de uma fotografia de uma peça desgastada, em vez de precisarmos de um desenho finalizado.",
         },
         {
           question:
-            "What is the lead time on a reverse-engineered screen, and how is it packed?",
+            "Qual é o prazo de entrega de uma tela produzida por engenharia reversa e como ela é embalada?",
           answer:
-            "Standard screens in stocked plate thicknesses ship in 10–15 working days from drawing approval. Reverse-engineered screens add roughly 3–5 days for the drawing and approval cycle. Screens are shipped on fumigated wooden pallets with edge protection and steel strapping; large-diameter baskets are nested to reduce volumetric freight cost.",
+            "As telas padrão, nas espessuras de chapa disponíveis em estoque, são enviadas em 10 a 15 dias úteis a partir da aprovação do desenho. As telas projetadas por engenharia reversa levam cerca de 3 a 5 dias a mais para o ciclo de desenho e aprovação. As telas são enviadas em paletes de madeira fumigadas, com proteção nas bordas e cintas de aço; as cestas de grande diâmetro são encaixadas umas nas outras para reduzir o custo volumétrico do frete.",
         },
         {
-          question: "What documentation ships with a screen order?",
+          question: "Que documentação acompanha um pedido de tela?",
           answer:
-            "Every order includes a dimensional inspection record against the approved drawing and a material certificate for the plate — including the Hardox mill certificate where Hardox grades are specified. Hardfaced screens additionally carry a record of the hardfacing consumable and deposited hardness.",
+            "Cada pedido inclui um registro de inspeção dimensional em relação ao desenho aprovado e um certificado do material da chapa — incluindo o certificado de fábrica da Hardox, quando forem especificadas as classes Hardox. As peneiras com revestimento duro, além disso, vêm acompanhadas de um registro do consumível de revestimento e da dureza depositada.",
         },
       ],
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Cutter Compactor Blades",
-    fullName: "Cutter Compactor Rotor & Stator Knives",
+    name: "Lâminas do compactador de corte",
+    fullName: "Facas do rotor e do estator do compactador cortador",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Cutter Compactor Blades",
+    categoryDisplay: "Lâminas do compactador cortador",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-    badge: "PCR Recycling",
+    badge: "Reciclagem PCR",
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
@@ -5338,14 +5385,14 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Pair of cutter compactor stator knives showing the ground bevel and countersunk mounting",
-      "Cutter compactor blade set — rotor knife, knife holder block and stator knife",
-      "Long cutter compactor rotor knife with ground cutting edge and counterbored fixing hole",
+      "Par de facas do estator do compactador cortador, mostrando o chanfro retificado e a fixação com cabeça escareada",
+      "Conjunto de lâminas do compactador — lâmina do rotor, bloco de fixação da lâmina e lâmina do estator",
+      "Faca de rotor de compactador com lâmina longa, com aresta de corte retificada e orifício de fixação escareado",
     ],
     description:
-      "Rotor and stator knives for cutter compactors and agglomerators in D2, M2 HSS and carbide-tipped. Drop-in fit for EREMA, NGR, Starlinger and Previero.",
+      "Lâminas de rotor e estator para compactadores com cortador e aglomeradores em D2, M2 HSS e com ponta de metal duro. Encaixe direto para EREMA, NGR, Starlinger e Previero.",
     fullDescription:
-      "In a cutter compactor — also sold as an agglomerator, densifier or preconditioning unit — rotating knives cut and friction-heat loose film, fibre or PET flake until it softens and densifies into a free-flowing crumb the extruder can actually feed. The knives do two jobs at once: they cut, and they generate the controlled frictional heat that makes densification work. That dual duty is why they wear faster than any other tool on the line, typically needing replacement every three to six months on continuous film and PET operations.\n\nSureay manufactures both the rotating knives and the fixed stator knives, plus the holder blocks and pre-cutter blades that mount with them. Blades are ground flat and parallel across their full length, because on a compactor the flatness of the mounting face is what determines whether the cutting gap you set at installation is the gap you still have at the far end of the knife.\n\n## Cutting Gap: The Variable That Controls Everything\n\nThe gap between the rotating knife and the fixed stator knife is the single most consequential setting on a cutter compactor, and the one most often left unchecked between blade changes.\n\n**Gap too wide.** Material is kneaded rather than cut. Frictional heat climbs beyond the intended window, film smears into lumps instead of forming a uniform crumb, bulk density becomes inconsistent, and the extruder downstream sees a fluctuating feed. On PET flake, excess heat drives moisture-related degradation before the material ever reaches the dryer. Throughput falls while power consumption rises — the classic signature of a worn or badly set gap.\n\n**Gap too narrow.** The knives contact under load. Edges chip, motor current spikes on every heavy charge, and in the worst case a rotating knife strikes the stator hard enough to damage the holder block or the rotor disc itself — a repair an order of magnitude more expensive than the blades.\n\nTypical working gaps run in the region of 0.2–0.5 mm depending on machine size and material, but the correct figure is the one in your machine manual. What matters is that the gap can actually be held: if the blade's mounting face is not flat, or if the rotor knife and stator knife have worn by different amounts, the gap varies along the cutting length no matter how carefully it was set.\n\n## Why Rotor and Stator Knives Are Replaced as a Set\n\nRotating and fixed knives wear at different rates and in different geometries — the rotor knife loses its edge, while the stator knife tends to wear a radius and to hollow slightly where the material stream concentrates. Fitting a new rotor knife against a worn stator restores only half the cutting geometry: the gap becomes uneven along its length, the new blade carries the whole cutting load, and it dulls far faster than it should. Replacing both together costs more per shutdown and less per tonne.\n\n## Material Selection by Feedstock\n\n**D2 (1.2379), HRC 58–61** — the general-purpose choice for clean LDPE, LLDPE and PP film, woven bags and pre-consumer production scrap. Good edge retention, forgiving of the occasional impact, and the most economical to re-sharpen.\n\n**M2 HSS (1.3343), HRC 62–64** — for PET flake, printed and heavily dusted film, and post-consumer material carrying paper label residue or fine mineral contamination. Retains its edge at the elevated temperatures inside a working compactor, where D2 begins to soften.\n\n**Carbide-tipped, HRA 89–91 at the edge** — for glass-fibre reinforced compounds, mineral-filled material, carbon-black masterbatch and high-ash feedstocks. Substantially longer intervals between changes on streams that destroy tool steel, at a higher unit price and with less tolerance for impact.\n\n## Machine Compatibility\n\nBlades are reverse-engineered to EREMA (INTAREMA, TVEplus and RegrindPro preconditioning units), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac and Munchy machines. Send the machine model and a photograph of the worn blade, or the blade itself, and we will produce a drawing for approval before manufacture.",
+      "Em um compactador com lâminas — também conhecido como aglomerador, densificador ou unidade de pré-condicionamento —, as lâminas giratórias cortam e aquecem por atrito a película solta, a fibra ou os flocos de PET até que amoleçam e se densifiquem, formando uma farofa solta que a extrusora possa realmente alimentar. As lâminas desempenham duas funções ao mesmo tempo: cortam e geram o calor por atrito controlado que possibilita a densificação. Essa dupla função é o motivo pelo qual elas se desgastam mais rapidamente do que qualquer outra ferramenta da linha, precisando normalmente de substituição a cada três a seis meses em operações contínuas com filme e PET.\n\nA Sureay fabrica tanto as facas rotativas quanto as facas fixas do estator, além dos blocos de fixação e das lâminas de pré-corte que são montadas junto com elas. As lâminas são retificadas de forma plana e paralela em todo o seu comprimento, pois, em um compactador, é a planicidade da face de montagem que determina se a folga de corte definida na instalação é a mesma que ainda se mantém na extremidade oposta da lâmina.\n\n## Folga de corte: a variável que controla tudo\n\nA folga entre a lâmina rotativa e a lâmina fixa do estator é o ajuste de maior importância em um cortador-compactador e o que mais frequentemente é deixado sem verificação entre as trocas de lâminas.\n\n**Folga muito larga.** O material é amassado em vez de cortado. O calor de atrito ultrapassa o intervalo pretendido, o filme se espalha formando grumos em vez de formar uma farofa uniforme, a densidade aparente torna-se inconsistente e a extrusora a jusante recebe uma alimentação instável. No caso de flocos de PET, o excesso de calor provoca degradação relacionada à umidade antes mesmo que o material chegue ao secador. A produtividade cai enquanto o consumo de energia aumenta — a característica clássica de uma folga desgastada ou mal ajustada.\n\n**Folga muito estreita.** As lâminas entram em contato sob carga. As bordas lascam, a corrente do motor apresenta picos a cada carga pesada e, na pior das hipóteses, uma lâmina giratória atinge o estator com força suficiente para danificar o bloco de fixação ou o próprio disco do rotor — um reparo uma ordem de magnitude mais caro do que as lâminas.\n\nAs aberturas de trabalho típicas variam entre 0,2 e 0,5 mm, dependendo do tamanho da máquina e do material, mas o valor correto é aquele indicado no manual da sua máquina. O que importa é que a folga possa realmente ser mantida: se a face de montagem da lâmina não for plana, ou se a lâmina do rotor e a do estator se desgastarem em graus diferentes, a folga varia ao longo do comprimento de corte, independentemente do cuidado com que tenha sido ajustada.\n\n## Por que as lâminas do rotor e do estator são substituídas como um conjunto\n\nAs lâminas rotativas e fixas se desgastam em ritmos diferentes e com geometrias distintas — a lâmina do rotor perde o fio, enquanto a lâmina do estator tende a se desgastar em forma de raio e a se cavar levemente onde o fluxo de material se concentra. Ajustar uma nova lâmina do rotor contra um estator desgastado restaura apenas metade da geometria de corte: a folga torna-se irregular ao longo de seu comprimento, a lâmina nova suporta toda a carga de corte e fica cega muito mais rápido do que deveria. Substituir ambas juntas custa mais por parada, mas menos por tonelada.\n\n## Seleção de material por tipo de matéria-prima\n\n**D2 (1.2379), HRC 58–61** — a escolha de uso geral para filmes limpos de LDPE, LLDPE e PP, sacos tecidos e resíduos de produção pré-consumo. Boa retenção do fio, tolerante a impactos ocasionais e a opção mais econômica para reafiar.\n\n**M2 HSS (1,3343), HRC 62–64** — para flocos de PET, filmes impressos e com grande acúmulo de pó, e material pós-consumo com resíduos de etiquetas de papel ou contaminação por minerais finos. Mantém o fio em temperaturas elevadas no interior de um compactador em operação, onde o D2 começa a amolecer.\n\n**Com ponta de carboneto, HRA 89–91 no fio** — para compostos reforçados com fibra de vidro, materiais com enchimento mineral, masterbatch de negro de fumo e matérias-primas com alto teor de cinzas. Intervalos substancialmente mais longos entre as trocas em fluxos que danificam o aço para ferramentas, a um preço unitário mais alto e com menor tolerância a impactos.\n\n## Compatibilidade com máquinas\n\nAs lâminas são projetadas por engenharia reversa para máquinas EREMA (unidades de pré-condicionamento INTAREMA, TVEplus e RegrindPro), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac e Munchy. Envie o modelo da máquina e uma fotografia da lâmina desgastada, ou a própria lâmina, e elaboraremos um desenho para aprovação antes da fabricação.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5396,37 +5443,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "Compactor blades fail in one of three ways: the edge goes, the gap drifts, or the blade chips on contamination. Each has a different fix, and specifying for the wrong one wastes money.",
+      "As lâminas dos compactadores apresentam falhas de uma das três maneiras a seguir: o fio da lâmina se desgasta, a folga se altera ou a lâmina lasca devido à contaminação. Cada uma delas requer uma solução diferente, e escolher a solução errada representa um desperdício de dinheiro.",
     components: [
       {
         id: "gap-holding-geometry",
-        tag: "GEOMETRY",
-        title: "A Gap You Set Once and Keep",
+        tag: "GEOMETRIA",
+        title: "Uma meta que você define uma vez e mantém",
         description:
-          "Ground to ≤0.03 mm flatness and ≤0.02 mm parallelism over the full blade length. The gap you dial in at installation stays uniform end to end, instead of opening at one end and closing at the other as load is applied.",
+          "Retificado com planicidade ≤0,03 mm e paralelismo ≤0,02 mm ao longo de todo o comprimento da lâmina. A folga ajustada durante a instalação permanece uniforme de ponta a ponta, em vez de se abrir em uma extremidade e fechar na outra à medida que a carga é aplicada.",
       },
       {
         id: "feedstock-matched-alloy",
-        tag: "METALLURGY",
-        title: "Alloy Matched to What You Actually Run",
+        tag: "METALURGIA",
+        title: "Liga metálica adequada ao que você realmente utiliza",
         description:
-          "D2 for clean PE and PP film, M2 HSS for PET flake and dusted post-consumer material that softens D2 at working temperature, carbide-tipped for glass-filled and high-ash streams. Specified from your feedstock, not from a default.",
+          "D2 para filmes limpos de PE e PP; M2 HSS para flocos de PET e material pós-consumo em pó que amolece o D2 na temperatura de trabalho; com ponta de carboneto para fluxos com enchimento de vidro e alto teor de cinzas. Especificado com base na sua matéria-prima, e não a partir de uma configuração padrão.",
       },
       {
         id: "matched-rotor-stator-sets",
-        tag: "SERVICE LIFE",
-        title: "Supplied as Matched Rotor + Stator Sets",
+        tag: "VIDA ÚTIL",
+        title: "Fornecidos como conjuntos combinados de rotor e estator",
         description:
-          "Rotor and stator knives wear to different geometries. Fitting a new rotor knife against a worn stator leaves the gap uneven and loads the new blade alone — it dulls in a fraction of its rated life. We quote and ship them as sets.",
+          "As lâminas do rotor e do estator sofrem desgaste, assumindo geometrias diferentes. A instalação de uma lâmina nova no rotor em contato com um estator desgastado deixa a folga irregular e sobrecarrega apenas a lâmina nova — fazendo com que ela perca o fio em uma fração de sua vida útil nominal. Nós as vendemos e enviamos em conjuntos.",
       },
     ],
     dimensionLabels: {
-      col0: "Knife Type",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Tipo de faca",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Representative envelope sizes across common compactor platforms. Every blade is manufactured to the OEM drawing or reverse-engineered from your sample — send the machine model and a photograph of the worn blade for an exact quotation.",
+        "* Tamanhos representativos de lâminas para as principais plataformas de compactadores. Cada lâmina é fabricada de acordo com o desenho do fabricante original (OEM) ou por meio de engenharia reversa a partir da sua amostra — envie o modelo da máquina e uma foto da lâmina desgastada para obter um orçamento exato.",
     },
     standardDimensions: [
       {
@@ -5479,62 +5526,63 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What cutting gap should I set between the rotor and stator knives?",
+            "Qual deve ser a folga de corte entre o rotor e as lâminas do estator?",
           answer:
-            "Use the figure in your machine manual — it is machine- and material-specific, and typically falls somewhere in the 0.2–0.5 mm range. The more useful question is whether the gap stays where you set it. If the blade mounting face is not flat, or if you have fitted a new rotor knife against a worn stator, the gap will vary along the cutting length regardless of how carefully it was dialled in. Set the gap with feeler gauges at both ends and the centre of the blade, not at a single point, and re-check it after the first few hours of running once everything has seated and reached working temperature.",
+            "Use o valor indicado no manual da sua máquina — ele é específico para cada máquina e material e, normalmente, fica na faixa de 0,2 a 0,5 mm. A questão mais importante é se a folga permanece no valor definido. Se a superfície de montagem da lâmina não estiver plana, ou se você tiver instalado uma nova lâmina do rotor em um estator desgastado, a folga irá variar ao longo do comprimento de corte, independentemente do cuidado com que tenha sido ajustada. Ajuste a folga com calibres de folga nas duas extremidades e no centro da lâmina, e não em um único ponto, e verifique novamente após as primeiras horas de funcionamento, quando tudo estiver assentado e tiver atingido a temperatura de operação.",
         },
         {
           question:
-            "My compactor is running hot and the output is lumpy instead of a uniform crumb. What's wrong?",
+            "Meu compactador está superaquecendo e o produto final está grumoso, em vez de ter uma textura uniforme. O que está acontecendo?",
           answer:
-            "That is the classic signature of an over-wide cutting gap, usually from worn blades. When the gap opens, material is kneaded rather than cut, so frictional heat rises past the intended window, film smears into lumps, and bulk density becomes erratic — which the extruder sees as a fluctuating feed. You will typically also see power consumption up and throughput down at the same time. Check the gap and the blade edges before adjusting temperature setpoints or feed rate, because those are compensations for the real problem rather than fixes.",
+            "Essa é a característica clássica de uma folga de corte excessivamente larga, geralmente causada por lâminas desgastadas. Quando a folga aumenta, o material é amassado em vez de cortado; assim, o calor de atrito ultrapassa o intervalo pretendido, o filme se aglomera em pedaços e a densidade aparente torna-se irregular — o que a extrusora interpreta como uma alimentação flutuante. Normalmente, você também observará um aumento no consumo de energia e uma queda na produtividade ao mesmo tempo. Verifique a folga e as bordas das lâminas antes de ajustar os pontos de ajuste de temperatura ou a taxa de alimentação, pois essas são compensações para o problema real, e não soluções.",
         },
         {
           question:
-            "Can I replace only the rotor knives and keep the stator knives?",
+            "Posso substituir apenas as lâminas do rotor e manter as do estator?",
           answer:
-            "You can, but it is usually a false economy. The two wear to different geometries — the rotor knife loses its edge while the stator tends to wear a radius and hollow where the material stream concentrates. A new rotor knife running against a worn stator carries the entire cutting load across an uneven gap and will dull far faster than its rated life, so you end up back at the same shutdown sooner. Replacing both together costs more per changeover and less per tonne processed.",
+            "É possível, mas geralmente é uma economia ilusória. Os dois se desgastam de maneiras diferentes — a lâmina do rotor perde o fio, enquanto o estator tende a apresentar um desgaste radial e a formar uma cavidade no local onde o fluxo de material se concentra. Uma faca do rotor nova operando contra um estator desgastado carrega toda a carga de corte por uma abertura irregular e ficará cega muito mais rápido do que sua vida útil nominal, de modo que você acaba tendo que interromper a operação novamente mais cedo. Substituir as duas peças juntas custa mais por troca, mas menos por tonelada processada.",
         },
         {
           question:
-            "How do I choose between D2, M2 HSS and carbide-tipped blades?",
+            "Como faço para escolher entre lâminas D2, M2 HSS e com ponta de metal duro?",
           answer:
-            "Match the alloy to your feedstock. D2 at HRC 58–61 is the economical default for clean LDPE, LLDPE and PP film, woven bags and pre-consumer scrap. Move to M2 HSS at HRC 62–64 for PET flake and for printed or dusty post-consumer film — M2 holds its edge at the elevated temperature inside a working compactor, where D2 starts to soften. Reserve carbide-tipped blades for glass-fibre reinforced compounds, mineral-filled material and high-ash streams; they last dramatically longer on those feeds but cost more and tolerate impact less well, so they are the wrong choice if your feed contains occasional metal.",
+            "Escolha a liga adequada à sua matéria-prima. A D2 com HRC 58–61 é a opção padrão econômica para filmes limpos de LDPE, LLDPE e PP, sacos tecidos e resíduos pré-consumo. Opte pelo M2 HSS com dureza HRC 62–64 para flocos de PET e para filmes pós-consumo impressos ou empoeirados — o M2 mantém o fio da lâmina mesmo nas altas temperaturas dentro de um compactador em funcionamento, onde o D2 começa a amolecer. Reserve as lâminas com ponta de carboneto para compostos reforçados com fibra de vidro, materiais com enchimento mineral e fluxos com alto teor de cinzas; elas duram significativamente mais nessas matérias-primas, mas custam mais e toleram menos bem os impactos, portanto, são a escolha errada se sua matéria-prima contiver metais ocasionalmente.",
         },
         {
           question:
-            "How many times can a cutter compactor blade be re-sharpened?",
+            "Quantas vezes é possível reafiar uma lâmina de compactador cortante?",
           answer:
-            "Three to five regrinds is typical for D2 and M2 blades before the blade reaches its minimum usable height and the gap can no longer be adjusted to compensate. Each regrind removes material from the cutting face, so the blade sits progressively lower in its holder — most machines allow this to be taken up with shims up to a point. Carbide-tipped blades are re-ground on the carbide only and generally allow fewer cycles. We mark the minimum height on the manufacturing drawing so your maintenance team knows when a blade is finished rather than guessing.",
+            "É comum que as lâminas D2 e M2 passem por três a cinco reafiações antes que a lâmina atinja sua altura mínima utilizável e a folga não possa mais ser ajustada para compensar. Cada reafiação remove material da face de corte, de modo que a lâmina fica progressivamente mais baixa em seu suporte — a maioria das máquinas permite compensar isso com calços até certo ponto. As lâminas com ponta de metal duro são reafiadas apenas no metal duro e, geralmente, permitem menos ciclos. Marcamos a altura mínima no desenho de fabricação para que sua equipe de manutenção saiba quando uma lâmina está no fim de sua vida útil, em vez de ter que adivinhar.",
         },
       ],
       company: [
         {
           question:
-            "Can you make blades for my compactor without an OEM drawing?",
+            "Vocês conseguem fabricar lâminas para o meu compactador sem um desenho do fabricante original?",
           answer:
-            "Yes — this is the majority of what we do on this product. Send the machine make and model plus a worn blade, or clear photographs with measurements across length, width, thickness and the mounting hole positions. We produce a manufacturing drawing for your written approval before cutting steel, and we keep it on file so repeat orders need no re-measurement.",
+            "Sim — isso representa a maior parte do que fazemos com esse produto. Envie a marca e o modelo da máquina, além de uma lâmina desgastada ou fotos nítidas com as medidas de comprimento, largura, espessura e as posições dos orifícios de fixação. Elaboramos um desenho de fabricação para sua aprovação por escrito antes de cortar o aço e o mantemos em nossos arquivos, de modo que pedidos repetidos não precisem de novas medições.",
         },
         {
-          question: "What is the lead time, and can I trial a set first?",
+          question:
+            "Qual é o prazo de entrega? Posso experimentar um conjunto primeiro?",
           answer:
-            "Blades manufactured to an existing drawing ship in 10–15 working days. First-time reverse-engineered blades add roughly 3–5 days for drawing and approval. We supply trial sets for machine-fit verification and edge-life testing before you commit to a production quantity — for custom profiles we produce a dimensional sign-off sample first, so there is no tooling commitment until fit is confirmed.",
+            "As lâminas fabricadas a partir de um desenho existente são enviadas em 10 a 15 dias úteis. No caso de lâminas criadas pela primeira vez por meio de engenharia reversa, há um acréscimo de aproximadamente 3 a 5 dias para a elaboração do desenho e a aprovação. Fornecemos conjuntos de teste para verificação do ajuste na máquina e testes de vida útil das arestas antes de você se comprometer com uma quantidade de produção — para perfis personalizados, produzimos primeiro uma amostra dimensional para aprovação, de modo que não há compromisso com ferramentas até que o ajuste seja confirmado.",
         },
         {
-          question: "What documentation comes with the blades?",
+          question: "Que documentação acompanha as lâminas?",
           answer:
-            "Each shipment includes a Rockwell hardness test certificate, a dimensional inspection record against the approved drawing, a steel mill material traceability certificate and a heat treatment batch record. Full CMM dimensional reports are available on request for OEM qualification.",
+            "Cada remessa inclui um certificado de teste dureza Rockwell, um registro de inspeção dimensional em relação ao desenho aprovado, um certificado de rastreabilidade do material da siderúrgica e um registro de lote tratamento térmico. Relatórios dimensionais completos de CMM estão disponíveis mediante solicitação para qualificação de OEM.",
         },
       ],
     },
   },
   {
     id: "die-face-cutting-knives",
-    name: "Die Face Cutting Knives & Pelletizer Blades",
-    fullName: "Die Face Cutting Knives & Pelletizer Blades",
+    name: "Facas de corte frontal e lâminas para peletizadoras",
+    fullName: "Facas de corte com matriz e lâminas para peletizadoras",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Die Face Cutting Knives",
+    categoryDisplay: "Facas de corte para matrizes",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
     badge: "Die-Safe",
@@ -5545,16 +5593,16 @@ export const blades: Blade[] = [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
-      "Range of die face cutting knife profiles — straight, forked, stepped and tapered geometries",
-      "Close-up of a single die face cutting knife showing the ground cutting edge and twin mounting slots",
-      "Pair of die face cutting knives on a white background showing slot geometry and edge finish",
+      "Gama de perfis de facas de corte para matrizes — geometrias retas, bifurcadas, escalonadas e cônicas",
+      "Close-up de uma faca de corte com uma única face de matriz, mostrando a aresta de corte retificada e as duas ranhuras de fixação",
+      "Par de facas de corte da face da matriz sobre fundo branco, mostrando a geometria da ranhura e o acabamento da borda",
     ],
     description:
-      "Die face cutting knives for underwater, water-ring and hot die face pelletizers, ground softer than your die plate. Fits Gala, Nordson BKG, Maag, ECON.",
+      "Facas de corte para peletizadores subaquáticos, de anel de água e de face quente, com dureza inferior à da placa de molde. Compatíveis com Gala, Nordson BKG, Maag e ECON.",
     fullDescription:
-      "A die face cutting knife — also sold as an underwater pelletizer blade, die face cutter knife, hot die face knife or UWP knife — is a consumable running in permanent sliding contact with a die plate worth tens of thousands of dollars. That asymmetry defines the entire specification problem: the blade must be hard enough to hold a cutting edge against hot polymer, and deliberately softer than the die face it rides on, so that wear is absorbed by the part you intend to replace.\n\nThis is the same controlled-wear logic Sureay applies to continuous melt filter scraper blades, and it is why we quote a hardness differential rather than simply the highest hardness available. A blade harder than the die plate does not last longer — it scores the die face, opens the cutting gap, and turns a routine blade change into a die refurbishment.\n\n## Three Pelletizing Methods, Three Different Blades\n\n**Underwater pelletizing (UWP).** The die face is fully submerged in a temperature-controlled water box. Pellets are cut directly at the die face and carried away as a slurry. Blades run wet and warm, which makes corrosion resistance a genuine selection factor — 440C stainless earns its place here despite lower edge retention than tool steel.\n\n**Water-ring pelletizing.** An annular water curtain cools pellets after they are cut, but the die face itself runs in air. Thermal cycling on the blade edge is more severe than in true underwater cutting, favouring tougher grades over the hardest ones.\n\n**Hot die face pelletizing.** Cutting happens dry against a heated die, with pellets conveyed away by air. The highest edge temperature of the three methods, and the strongest case for PM-HSS or carbide.\n\n## Blade Geometry\n\nEdge form is chosen from polymer viscosity and the pellet shape you want:\n\n- **45° bevel** — the general-purpose geometry. Good balance of edge strength and cutting sharpness across commodity polyolefins.\n- **90° square edge** — maximum edge strength for stiff, filled or highly abrasive compounds where a fine bevel would chip.\n- **Stepped bevel** — a two-stage relief that keeps a sharp cutting line while leaving a robust land behind it. Used where a fine edge is needed but blade life on a 45° would be unacceptable.\n- **Curved / hooked** — draws the melt strand into the cut rather than pushing it away. Suited to low-viscosity and tacky polymers that smear against a straight edge.\n\n## Why Thickness Consistency Within a Set Decides Blade Life\n\nA pelletizer runs a full set of blades on one cutter hub, held against the die face by a common preload. If the blades in that set vary in thickness, the thickest blades carry a disproportionate share of the contact pressure while the thinnest barely touch. The result is a set that wears unevenly, a cut quality that degrades long before the average blade is worn out, and localized die face scoring under the high blades.\n\nWe grind blades in matched sets and verify thickness consistency across the set on a CMM, rather than inspecting to a per-piece tolerance alone. Flatness matters for the same reason: a blade that is not flat contacts the die on an edge rather than across its land.\n\n## Material Selection\n\n**D2 (1.2379)** — economical general-purpose grade for clean commodity polyolefins.\n**M2 HSS (1.3343)** — better hot hardness for higher-temperature and engineering polymers.\n**T42 (1.3207)** — high-tungsten HSS for sustained elevated-temperature cutting.\n**PM powder-metallurgy HSS** — uniform fine carbide structure, the best combination of edge retention and toughness for abrasive and filled compounds.\n**440C stainless** — for underwater service where corrosion resistance outweighs peak edge life, particularly on lines that sit idle between campaigns.\n**Tungsten carbide** — maximum life on glass-filled and mineral-filled compounds, where its brittleness is an acceptable trade.\n\n## Machine Compatibility\n\nBlades are manufactured to suit Gala, Nordson BKG (including AH series), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec and WRP pelletizing systems. Send the machine model with a sample blade or a photograph with measurements, and we will produce a drawing for approval. Cutter hubs, die plates, threaded rods, blade screws and O-rings are supplied alongside the blades.",
+      "Uma faca de corte para a face da matriz — também conhecida como lâmina para peletizador subaquático, faca cortadora para a face da matriz, faca para face da matriz a quente ou faca UWP — é um consumível que opera em contato deslizante permanente com uma placa de matriz que custa dezenas de milhares de dólares. Essa assimetria define todo o problema de especificação: a lâmina deve ser dura o suficiente para manter uma aresta de corte contra o polímero quente e, deliberadamente, mais macia do que a face do molde sobre a qual desliza, de modo que o desgaste seja absorvido pela peça que se pretende substituir.\n\nEssa é a mesma lógica de desgaste controlado que a Sureay aplica às lâminas raspadoras de filtro de fusão contínua, e é por isso que indicamos um diferencial de dureza em vez de simplesmente a maior dureza disponível. Uma lâmina mais dura do que a placa da matriz não dura mais — ela risca a face da matriz, abre a abertura de corte e transforma uma troca rotineira de lâmina em um recondicionamento da matriz.\n\n## Três métodos de peletização, três lâminas diferentes\n\n**Peletização subaquática (UWP).** A face da matriz fica totalmente submersa em uma caixa de água com temperatura controlada. Os pellets são cortados diretamente na face da matriz e transportados como uma pasta. As lâminas operam em ambiente úmido e quente, o que torna a resistência à corrosão um fator de seleção genuíno — o aço inoxidável 440C se destaca aqui, apesar de apresentar menor retenção de fio do que o aço para ferramentas.\n\n**Pelletização por anel de água.** Uma cortina de água anular resfria os pellets após o corte, mas a face da matriz em si opera ao ar livre. O ciclo térmico na aresta da lâmina é mais severo do que no corte subaquático propriamente dito, favorecendo classes de aço mais resistentes em detrimento das mais duras.\n\n**Peletização com face da matriz aquecida.** O corte ocorre a seco contra uma matriz aquecida, com os pellets sendo transportados pelo ar. A temperatura da aresta mais alta dos três métodos e o caso mais forte para PM-HSS ou carboneto.\n\n## Geometria da lâmina\n\nA forma da aresta é escolhida com base na viscosidade do polímero e na forma desejada do pellet:\n\n- **Chanfro de 45°** — a geometria de uso geral. Bom equilíbrio entre resistência da aresta e nitidez de corte em poliolefinas comuns.\n- **Aresta reta de 90°** — resistência máxima da aresta para compostos rígidos, com enchimento ou altamente abrasivos, nos quais um chanfro fino se lascaria.\n- **Chanfro escalonado** — um alívio em duas etapas que mantém uma linha de corte afiada, deixando uma área de apoio robusta atrás dela. Utilizado quando é necessária uma borda fina, mas a vida útil da lâmina com um ângulo de 45° seria inaceitável.\n- **Curvada/em gancho** — atrai o fio de material fundido para dentro do corte, em vez de empurrá-lo para fora. Adequado para polímeros de baixa viscosidade e pegajosos que se espalham contra uma aresta reta.\n\n## Por que a consistência da espessura dentro de um conjunto determina a vida útil da lâmina\n\nUm peletizador opera com um conjunto completo de lâminas em um cubo cortador, mantidas contra a face da matriz por uma pré-carga comum. Se as lâminas desse conjunto apresentarem espessuras diferentes, as mais grossas suportam uma parcela desproporcional da pressão de contato, enquanto as mais finas mal tocam a matriz. O resultado é um conjunto que se desgasta de forma desigual, uma qualidade de corte que se degrada muito antes que a lâmina média se desgaste e arranhões localizados na face da matriz sob as lâminas mais altas.\n\nNós retificamos as lâminas em conjuntos combinados e verificamos a consistência da espessura em todo o conjunto em uma CMM, em vez de inspecionar apenas a tolerância por peça. A planicidade é importante pela mesma razão: uma lâmina que não é plana entra em contato com a matriz por uma borda, em vez de por toda a sua superfície de contato.\n\n## Seleção de Materiais\n\n**D2 (1.2379)** — grau econômico de uso geral para poliolefinas comuns de alta pureza.\n**M2 HSS (1.3343)** — melhor dureza a quente para polímeros de alta temperatura e de engenharia.\n**T42 (1.3207)** — HSS com alto teor de tungstênio para corte prolongado em temperaturas elevadas.\n**HSS de metalurgia do pó (PM)** — estrutura fina e uniforme de carboneto, a melhor combinação de retenção de fio e tenacidade para compostos abrasivos e com enchimento.\n**Aço inoxidável 440C** — para serviços subaquáticos em que a resistência à corrosão é mais importante do que a vida útil máxima do fio de corte, especialmente em linhas que ficam paradas entre campanhas.\n**Carboneto de tungstênio** — vida útil máxima em compostos com enchimento de vidro e minerais, onde sua fragilidade é uma contrapartida aceitável.\n\n## Compatibilidade com máquinas\n\nAs lâminas são fabricadas para se adequarem aos sistemas de peletização Gala, Nordson BKG (incluindo a série AH), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec e WRP. Envie o modelo da máquina junto com uma amostra da lâmina ou uma fotografia com as medidas, e nós elaboraremos um desenho para aprovação. Cubos de corte, placas de matriz, hastes roscadas, parafusos de lâmina e anéis de vedação são fornecidos junto com as lâminas.",
     disambiguation:
-      "Cutting extruded strands in air rather than at the die face? See [Strand Pelletizer Rotors](/products/strand-pelletizer-rotors) for helical rotor and bed knife sets.",
+      "Cortar fios extrudados no ar, em vez de na face da matriz? Consulte [Rotores para peletizadores de fios](/products/strand-pelletizer-rotors) para conhecer os conjuntos de rotores helicoidais e facas fixas.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -5604,37 +5652,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "The die plate is the asset; the blade is the consumable. Everything below follows from keeping that relationship the right way round.",
+      "A placa de corte é o ativo; a lâmina é o consumível. Tudo o que vem a seguir decorre de manter essa relação na ordem correta.",
     components: [
       {
         id: "die-plate-protection",
-        tag: "CONTROLLED WEAR",
-        title: "Your Die Plate Outlives the Blade",
+        tag: "DESGASTE CONTROLADO",
+        title: "Sua placa de corte dura mais do que a lâmina",
         description:
-          "Blade hardness is specified below the die face hardness so the consumable absorbs the wear. A blade harder than the die does not last longer — it scores the die face, opens the cutting gap and turns a blade change into a die refurbishment.",
+          "A dureza da lâmina é especificada como inferior à dureza da face da matriz, para que o consumível absorva o desgaste. Uma lâmina mais dura que a matriz não dura mais tempo — ela risca a face da matriz, aumenta a folga de corte e transforma a troca da lâmina em um recondicionamento da matriz.",
       },
       {
         id: "matched-set-grinding",
-        tag: "PRECISION",
-        title: "Ground and Verified as a Matched Set",
+        tag: "PRECISÃO",
+        title: "Ajustado e verificado como um conjunto correspondente",
         description:
-          "Thickness consistency within ≤0.01 mm across the set, CMM-verified. A full set shares one preload against the die: thick blades take the load and score the die, thin ones never cut. Per-piece tolerance alone does not prevent this.",
+          "Consistência de espessura de ≤0,01 mm em todo o conjunto, verificada por CMM. Um conjunto completo compartilha uma única pré-carga contra a matriz: as lâminas mais grossas absorvem a carga e marcam a matriz, enquanto as mais finas nunca cortam. A tolerância por peça, por si só, não evita isso.",
       },
       {
         id: "geometry-by-polymer",
-        tag: "GEOMETRY",
-        title: "Edge Form Chosen From Your Polymer",
+        tag: "GEOMETRIA",
+        title: "Formato da borda escolhido a partir do seu polímero",
         description:
-          "45° for commodity polyolefins, 90° for filled and abrasive compounds, stepped bevel where a fine edge is needed but must survive, hooked for low-viscosity and tacky melts that smear against a straight edge.",
+          "45° para poliolefinas comuns, 90° para compostos com enchimento e abrasivos; bisel escalonado quando for necessária uma borda fina, mas que deva resistir; em forma de gancho para massas fundidas de baixa viscosidade e pegajosas que mancham contra uma borda reta.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Profile",
-      col1: "Length × Width (mm)",
-      col2: "Thickness (mm)",
-      col3: "Mounting",
+      col0: "Perfil da lâmina",
+      col1: "Comprimento × Largura (mm)",
+      col2: "Espessura (mm)",
+      col3: "Montagem",
       caption:
-        "* Representative geometries from blades currently in production. Underwater pelletizer blades are made to the specific cutter hub — send the machine model with a sample blade or a dimensioned photograph for an exact quotation.",
+        "* Geometrias representativas das lâminas atualmente em produção. As lâminas subaquáticas facas para peletizadoras são fabricadas sob medida para o cubo específico do cortador — envie o modelo da máquina junto com uma amostra da lâmina ou uma fotografia com as dimensões para obter um orçamento exato.",
     },
     standardDimensions: [
       {
@@ -5676,62 +5724,63 @@ export const blades: Blade[] = [
     ],
     drawings: {
       intro:
-        "Most pelletizer blade orders reach us without an OEM drawing — a customer sends a worn blade, or a photograph and a machine model. The geometries below are drawings we produced that way, from measurement to approved manufacturing print. They show the range of body shapes, slot patterns and flank angles we hold in production, and what your own blade would look like once reverse-engineered.",
+        "A maioria dos pedidos de lâminas para peletizadoras chega até nós sem um desenho do fabricante original — o cliente envia uma lâmina desgastada, ou uma fotografia e o modelo da máquina. As geometrias abaixo são desenhos que produzimos dessa forma, desde a medição até o desenho de fabricação aprovado. Elas mostram a variedade de formatos do corpo, padrões de ranhuras e ângulos de flanco que mantemos em produção, e como seria a sua própria lâmina após a engenharia reversa.",
       items: [
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-00.webp",
-          caption: "Straight body, twin slot — 45 × 25 mm, Ø5.5 slots",
+          caption: "Corpo reto, ranhura dupla — 45 × 25 mm, ranhuras de Ø5,5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-01.webp",
-          caption: "Forked, three open slots — 55 × 34 mm, R3.5",
+          caption: "Bifurcada, três ranhuras abertas — 55 × 34 mm, R3.5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-02.webp",
-          caption: "Straight body, twin slot — 60 × 28 mm, 15 mm pitch",
+          caption: "Corpo reto, ranhura dupla — 60 × 28 mm, passo de 15 mm",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-03.webp",
-          caption: "Straight body, twin slot — 60 × 30 mm, R3.5",
+          caption: "Corpo reto, ranhura dupla — 60 × 30 mm, R3,5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-04.webp",
-          caption: "Straight body, long slot — 60 × 34 mm, R3.3",
+          caption: "Corpo reto, ranhura longa — 60 × 34 mm, R3.3",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-05.webp",
-          caption: "Stepped shoulder, 129° flank — 60 × 35 mm",
+          caption: "Ombro escalonado, flanco de 129° — 60 × 35 mm",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-06.webp",
-          caption: "Wide body, radiused heel — 60 × 46 mm, 2 × R5",
+          caption: "Corpo largo, talão arredondado — 60 × 46 mm, 2 × R5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-07.webp",
-          caption: "Wide body, offset slots — 60 × 46 mm, 2 × R5",
+          caption: "Corpo largo, ranhuras deslocadas — 60 × 46 mm, 2 × R5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-08.webp",
-          caption: "Wide body, centred slots — 60 × 46 mm, 16 mm pitch",
+          caption:
+            "Corpo largo, ranhuras centralizadas — 60 × 46 mm, passo de 16 mm",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-09.webp",
-          caption: "Tall body, twin slot — 69 × 34 mm, Ø7 slots",
+          caption: "Corpo alto, ranhura dupla — 69 × 34 mm, Ø7 ranhuras",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-10.webp",
-          caption: "Tapered neck, 63° flanks — 70 mm, 60 → 25 mm",
+          caption: "Pescoço cônico, flancos de 63° — 70 mm, 60 → 25 mm",
         },
       ],
     },
@@ -5747,73 +5796,76 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Will your blades damage my die plate?",
+          question: "As suas lâminas vão danificar a minha placa de moldagem?",
           answer:
-            "Not if the hardness relationship is specified correctly, and that is the first thing we establish on any enquiry. The blade is deliberately held below the hardness of the die face so wear is absorbed by the consumable. A blade harder than the die plate does not give you longer life — it scores the die face, which opens the cutting gap, degrades pellet quality and eventually requires the die to be re-ground or replaced. Tell us the die plate material and hardness, or the machine model if you do not have it, and we specify the blade against it. Every shipment carries a hardness certificate so you can verify the relationship before the blades go on.",
+            "Não, desde que a relação de dureza seja especificada corretamente, e essa é a primeira coisa que verificamos em qualquer consulta. A lâmina é mantida deliberadamente com dureza inferior à da face da matriz, de modo que o desgaste seja absorvido pelo consumível. Uma lâmina mais dura do que a placa da matriz não proporciona maior vida útil — ela risca a superfície da matriz, o que aumenta a abertura do espaço de corte, prejudica a qualidade dos pellets e, eventualmente, exige que a matriz seja reafiada ou substituída. Informe-nos o material e a dureza da placa da matriz, ou o modelo da máquina caso não tenha esses dados, e nós especificaremos a lâmina de acordo com essas informações. Cada remessa vem acompanhada de um certificado de dureza para que você possa verificar essa relação antes da instalação das lâminas.",
         },
         {
           question:
-            "Why does one blade in my set wear out much faster than the others?",
+            "Por que uma lâmina do meu conjunto se desgasta muito mais rápido do que as outras?",
           answer:
-            "Almost always uneven thickness within the set. A full set of blades shares one preload against the die face, so if thickness varies from blade to blade the thickest ones carry a disproportionate share of the contact pressure — they wear rapidly and score the die, while the thinnest blades barely make contact and never cut properly. The set fails long before the average blade is worn out. This is why we grind blades in matched sets and CMM-verify thickness consistency across the set to within 0.01 mm, rather than inspecting each blade to a tolerance in isolation.",
+            "Quase sempre há espessura irregular dentro do conjunto. Um conjunto completo de lâminas compartilha uma pré-carga contra a face da matriz; portanto, se a espessura variar de lâmina para lâmina, as mais grossas suportam uma parcela desproporcional da pressão de contato — elas se desgastam rapidamente e riscam a matriz, enquanto as lâminas mais finas mal fazem contato e nunca cortam adequadamente. O conjunto falha muito antes que a lâmina média se desgaste. É por isso que retificamos as lâminas em conjuntos combinados e verificamos, por meio de CMM, a consistência da espessura em todo o conjunto com uma tolerância de até 0,01 mm, em vez de inspecionar cada lâmina isoladamente de acordo com uma tolerância específica.",
         },
         {
           question:
-            "Which edge geometry should I use — 45°, 90°, stepped or hooked?",
+            "Que geometria de aresta devo usar — 45°, 90°, escalonada ou em gancho?",
           answer:
-            "Choose from polymer viscosity and filler content. A 45° bevel is the general-purpose geometry and the right default for commodity polyolefins. Move to a 90° square edge for stiff, mineral-filled or highly abrasive compounds where a fine bevel would chip. A stepped bevel gives you a sharp cutting line with a robust land behind it, for cases where you need the fine edge but a plain 45° will not survive. Curved or hooked geometry draws the melt into the cut instead of pushing it away, which is what you want on low-viscosity or tacky polymers that smear against a straight edge.",
+            "Escolha entre a viscosidade do polímero e o teor de enchimento. Um bisel de 45° é a geometria de uso geral e a configuração padrão adequada para poliolefinas comuns. Opte por uma aresta reta de 90° para compostos rígidos, com enchimento mineral ou altamente abrasivos, nos quais um chanfro fino se lascaria. Um chanfro escalonado proporciona uma linha de corte nítida com uma área de apoio robusta atrás dela, para casos em que você precisa de uma aresta fina, mas um chanfro simples de 45° não resistiria. A geometria curva ou em gancho atrai a massa fundida para dentro do corte, em vez de empurrá-la para fora, o que é ideal para polímeros de baixa viscosidade ou pegajosos que se espalham contra uma aresta reta.",
         },
         {
           question:
-            "Should I use stainless steel blades for underwater pelletizing?",
+            "Devo usar lâminas de aço inoxidável para a peletização subaquática?",
           answer:
-            "440C stainless is worth specifying when corrosion is a real operating factor — particularly on lines that sit idle between campaigns, where a tool steel blade can develop surface rust in the water box that then scores the die on restart. The trade-off is edge retention: 440C will not hold an edge as long as M2 or PM-HSS at the same duty. If your line runs continuously and the water chemistry is controlled, tool steel or PM-HSS usually gives better cost per tonne. If it stops and starts, or the water box is not drained, the stainless option often pays for itself.",
+            "Vale a pena especificar o aço inoxidável 440C quando a corrosão é um fator operacional real — especialmente em linhas que ficam ociosas entre campanhas, onde uma lâmina de aço para ferramentas pode desenvolver ferrugem superficial na caixa de água, o que, por sua vez, risca a matriz no reinício da operação. A desvantagem é a retenção do fio: o 440C não mantém o fio por tanto tempo quanto o M2 ou o PM-HSS nas mesmas condições de trabalho. Se sua linha operar continuamente e a composição química da água for controlada, o aço para ferramentas ou o PM-HSS geralmente oferecem melhor custo por tonelada. Se houver paradas e reinícios, ou se a caixa de água não for drenada, a opção de aço inoxidável muitas vezes se paga sozinha.",
         },
         {
           question:
-            "How do underwater, water-ring and hot die face blades differ?",
+            "Quais são as diferenças entre as lâminas subaquáticas, as de anel de água e as de face quente?",
           answer:
-            "They differ mainly in the thermal and corrosive environment at the edge. Underwater blades run submerged and warm, so corrosion resistance is a genuine selection factor. Water-ring blades cut at a die face running in air with the water curtain downstream, which subjects the edge to more severe thermal cycling and favours tougher grades over the hardest ones. Hot die face blades cut dry against a heated die and see the highest edge temperature of the three, which is where PM-HSS and carbide earn their premium. Tell us which method your line uses — it changes the recommended grade even when the blade dimensions are identical.",
+            "Elas diferem principalmente no ambiente térmico e corrosivo na borda. As lâminas subaquáticas operam submersas e aquecidas, portanto, a resistência à corrosão é um fator de seleção determinante. As lâminas de anel de água cortam na face da matriz, que opera ao ar livre com a cortina de água a jusante, o que submete a borda a ciclos térmicos mais severos e favorece ligas mais tenazes em detrimento das mais duras. As lâminas de face de matriz quente cortam a seco contra uma matriz aquecida e atingem a temperatura de aresta mais alta entre as três, e é nesse ponto que o PM-HSS e o carboneto se destacam. Informe-nos qual método sua linha utiliza — isso altera a classe recomendada, mesmo quando as dimensões das lâminas são idênticas.",
         },
         {
           question:
-            "Do you supply cutter hubs and die plates as well as blades?",
+            "Vocês fornecem cubos de corte e placas de matriz, além de lâminas?",
           answer:
-            "Yes. Cutter hubs, die plates, threaded rods, blade fixing screws and O-rings are all available, and ordering the wear set together avoids the mismatch that causes uneven blade loading. If you are replacing a hub as well as blades, we recommend supplying them together so the blade seating faces and the hub are verified against each other before shipment.",
+            "Sim. Cubos de corte, placas de matriz, hastes roscadas, parafusos de fixação das lâminas e anéis O-ring estão todos disponíveis, e encomendar o conjunto de peças de desgaste como um todo evita a incompatibilidade que causa uma distribuição desigual da carga nas lâminas. Se você estiver substituindo um cubo além das lâminas, recomendamos que os forneça juntos para que as superfícies de encaixe das lâminas e o cubo sejam verificados em relação um ao outro antes do envio.",
         },
       ],
       company: [
         {
           question:
-            "Can you reverse-engineer blades from a sample without an OEM drawing?",
+            "É possível fazer a engenharia reversa de lâminas a partir de uma amostra, sem um desenho do fabricante original?",
           answer:
-            "Yes, and it is how most pelletizer blade orders begin. Send a sample blade — ideally an unworn one, or a worn one together with the machine model — and we produce a full dimensional drawing on our CMM for your approval before manufacture. We keep the approved drawing on file so repeat orders require no re-measurement. Your drawings and samples remain your intellectual property and are never shared.",
+            "Sim, e é assim que a maioria dos pedidos de lâminas para peletizadoras começa. Envie uma amostra de lâmina — de preferência uma que não esteja desgastada, ou uma desgastada acompanhada do modelo da máquina — e elaboraremos um desenho com todas as dimensões em nossa CMM para sua aprovação antes da fabricação. Mantemos o desenho aprovado em nossos arquivos, de modo que pedidos repetidos não exijam novas medições. Seus desenhos e amostras permanecem como sua propriedade intelectual e nunca são compartilhados.",
         },
         {
-          question: "What is the lead time, and can I run a trial set first?",
+          question:
+            "Qual é o prazo de entrega? Posso testar um conjunto experimental primeiro?",
           answer:
-            "Blades made to an existing approved drawing ship in 10–15 working days; first-time reverse-engineered sets add roughly 3–5 days for measurement, drawing and approval. We supply trial sets for fit verification and edge-life comparison against your current supplier before you commit to a production quantity.",
+            "As lâminas fabricadas com base em um desenho aprovado já existente são entregues em 10 a 15 dias úteis; os primeiros conjuntos produzidos por engenharia reversa levam cerca de 3 a 5 dias a mais para medição, elaboração do desenho e aprovação. Fornecemos conjuntos de teste para verificação do ajuste e comparação da vida útil das lâminas com as do seu fornecedor atual antes de você se comprometer com uma quantidade de produção.",
         },
         {
-          question: "What documentation ships with a pelletizer blade set?",
+          question:
+            "Que tipo de documentação acompanha um conjunto de lâminas para peletizador?",
           answer:
-            "Every set includes a Rockwell hardness certificate — the document that lets you verify the blade-to-die hardness relationship before installation — plus a CMM dimensional report covering thickness consistency across the set, a steel mill material traceability certificate and a heat treatment batch record.",
+            "Cada conjunto inclui um certificado dureza Rockwell — o documento que permite verificar a relação entre a dureza da lâmina e da matriz antes da instalação —, além de um relatório dimensional de CMM que abrange a uniformidade da espessura em todo o conjunto, um certificado de rastreabilidade do material da siderúrgica e um registro de lote tratamento térmico.",
         },
       ],
     },
   },
   {
     id: "special-shaped-blades",
-    name: "Special-Shaped Blades",
-    fullName: "Custom Profile & Special-Shaped Industrial Blades",
+    name: "Lâminas com formatos especiais",
+    fullName:
+      "Lâminas industriais com perfil personalizado e formatos especiais",
     category: "custom_profile",
     sector: "other",
-    categoryDisplay: "Custom Profile Blades",
+    categoryDisplay: "Lâminas com perfil personalizado",
     image: "/images/products/blades/special-shaped-knife.webp",
-    badge: "OEM Custom",
+    badge: "Personalização OEM",
     badgeColor: "teal",
     description:
-      "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. Any profile, any industry.",
+      "Lâminas industriais com perfis personalizados e formatos especiais, fabricadas com precisão a partir de desenhos DXF/DWG fornecidos pelo cliente ou de amostras físicas. Aços D2, H13, PM-HSS e metal duro maciço. Tolerâncias de ±0,02 mm. Qualquer perfil, qualquer setor.",
     link: "/custom",
     specs: [
       {
@@ -5840,14 +5892,14 @@ export const blades: Blade[] = [
   },
   {
     id: "wood-chipper-blades",
-    name: "Wood Chipper Blades",
+    name: "Lâminas para trituradores de madeira",
     fullName:
-      "Heavy-Duty Drum & Disc Chipper Knives for Biomass, Forestry & Wood Recycling",
+      "Lâminas de alta resistência para trituradores de tambor e disco, destinadas à biomassa, silvicultura e reciclagem de madeira",
     category: "wood_chipper",
     sector: "wood",
-    categoryDisplay: "Wood Chipper Blades",
+    categoryDisplay: "Lâminas para trituradores de madeira",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-    badge: "Forestry Grade",
+    badge: "Curso de Silvicultura",
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
@@ -5855,9 +5907,9 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Premium D2, Cr12MoV & TCT drum and disc chipper knives for biomass processing, forestry operations & wood recycling. Through-hardened HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry. Drop-in OEM fit for Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz chippers.",
+      "Lâminas de triturador de tambor e disco Premium D2, Cr12MoV e TCT para processamento de biomassa, operações florestais e reciclagem de madeira. Têm endurecimento completo com dureza HRC 57–62 e tratamento criogênico profundo. Retificadas com precisão, com tolerância de espessura de ±0,05 mm, para uma geometria de lascas limpa e uniforme. Encaixe direto (OEM) para trituradores das marcas Bandit, Vermeer, Morbark, Peterson, Doppstadt e Jenz.",
     fullDescription:
-      "Wood chipper blades operate under some of the most punishing conditions in the size-reduction industry. Every rotation drives the cutting edge into dense hardwood, green timber with high moisture content, contaminated demolition wood, or recycled pallets embedded with nails and staples. A blade that lacks the correct balance of hardness and toughness will either dull within hours on clean hardwood or shatter on the first nail strike in contaminated feedstock.\n\nSureay wood chipper blades are forged from premium tool steels — D2 (1.2379), Cr12MoV, and high-carbon chipper knife steel — vacuum heat-treated to HRC 57–62, followed by a mandatory deep cryogenic soak at −196°C. This processing sequence produces a fully stabilised martensitic microstructure with uniform carbide distribution across the entire blade cross-section, delivering the dual performance requirement of wood chipping: abrasion resistance to hold a sharp edge through hundreds of cubic meters of timber, combined with sufficient core toughness to survive impacts from embedded metal contaminants without catastrophic fracture.\n\n## Chipper Type & Blade Geometry\n\n### Drum Chipper Blades\n\nDrum chippers (Vermeer BC1800, Bandit 1990, Morbark 40/36) use rectangular straight knives bolted to a high-speed rotating drum (typically 1,000–2,500 RPM). The blade acts as a planer knife — each revolution peels a chip from the infeed timber at the programmed depth of cut. Blade length corresponds to the drum width (typically 200–600 mm), and thickness (typically 12–30 mm) determines maximum chip depth.\n\nCritical parameters for drum chipper performance:\n- **Bevel angle:** 30°–37° (hardwood) or 25°–30° (softwood/green timber)\n- **Thickness parallelism:** ≤ 0.05 mm — uneven blade thickness causes drum imbalance, destructive vibration, and inconsistent chip size\n- **Bolt-hole positional tolerance:** ±0.10 mm — ensures the cutting edge projects evenly across the full drum width after mounting\n\n### Disc Chipper Blades\n\nDisc chippers (Peterson 5710, Morbark 50/48, Precision Husky) mount blades radially on a heavy rotating disc. The timber is fed axially into the disc face, and the blades produce chips by a combination of shearing and splitting action. Disc chipper blades are typically shorter but thicker than drum chipper knives, and are subjected to higher individual impact loads from large-diameter logs.\n\nDisc chipper blades require maximum toughness specification: Cr12MoV or modified chipper knife steel at HRC 55–58 is recommended for whole-log disc chippers processing hardwood above 300 mm diameter.\n\n### Whole-Tree / Biomass Chipper Blades\n\nBiomass and whole-tree chippers (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) process entire trees including branches, root balls, and brush. The feedstock contains embedded soil, stones, and occasional metal debris. Blades for these applications are manufactured from impact-optimised steel at HRC 55–58, with a wider bevel angle (35°–42°) that distributes impact forces across a broader cutting face and prevents edge rollover on contaminated feedstock.\n\n## Material Selection by Feedstock\n\n**High-Carbon Chipper Knife Steel (HRC 55–58):** The industry-standard grade for general forestry and green timber chipping. Cost-effective, easily resharpened on standard surface grinders, and tough enough for moderate nail contamination. Suited to landscape contractors, tree service companies, and municipal green waste operations.\n\n**D2 / Cr12MoV Cold-Work Tool Steel (HRC 58–62):** Premium specification for high-volume commercial wood recycling and biomass fuel chip production. The 12% chromium carbide matrix provides 2–3× longer edge life versus standard carbon steel on abrasive hardwoods (oak, hickory, ironbark) and dry recycled timber. Recommended for industrial drum chippers running 8–16 hour continuous shifts.\n\n**TCT — Tungsten Carbide Tipped (Brazed Inserts):** The ultimate specification for extreme-duty biomass processing. Carbide-tipped chipper knives deliver 5–10× the service life of D2 on contaminated demolition wood, railroad ties, and heavily soiled root balls. The carbide cutting edge is vacuum-brazed onto a tough alloy steel body that absorbs the gross impact energy without transmitting brittle fracture to the carbide insert.\n\n## Precision Grinding for Chip Quality\n\nChip geometry is the primary product quality metric in biomass fuel production: pulp mills, biomass power plants, and pellet manufacturers specify strict chip size distribution standards (e.g., EN 17225-4 / TAPPI T257). Uneven blade thickness or inconsistent bevel angles across a multi-blade drum or disc produce oversized and undersized chips that fail screening specifications, requiring secondary processing or causing price deductions.\n\nSureay chipper blades are precision surface-ground to:\n- **Thickness tolerance:** ±0.05 mm across the full blade length\n- **Bevel angle:** ±0.5° (verified by optical comparator)\n- **Face flatness:** ≤ 0.05 mm per 300 mm length\n- **Surface finish:** Ra ≤ 1.6 μm on the rake face for reduced friction and clean chip ejection\n\n## Counter-Knife (Anvil) & Wear Plate Supply\n\nThe counter-knife (anvil or bed knife) sets the clearance gap that determines minimum chip thickness. Worn or misaligned counter-knives negate the benefit of new chipper blades. Sureay manufactures matched counter-knives and replaceable wear plates in D2 and manganese steel, supplied as integrated sets with pre-verified clearance specifications for your chipper model.\n\n## Resharpening Capability\n\nUnlike shredder blades, chipper knives are designed for multiple regrinding cycles. Our through-hardened heat treatment ensures uniform hardness from the surface to the core — each regrind exposes steel of identical hardness and wear characteristics. A standard D2 chipper blade can be reground 8–12 times before reaching minimum safe thickness, making the total cost of ownership extremely competitive.",
+      "As lâminas dos trituradores de madeira operam em algumas das condições mais adversas do setor de redução de tamanho. A cada rotação, a aresta de corte penetra em madeira densa de folhosas, madeira verde com alto teor de umidade, madeira contaminada proveniente de demolições ou paletes recicladas com pregos e grampos incrustados. Uma lâmina que não possua o equilíbrio correto entre dureza e tenacidade ficará cega em poucas horas ao cortar madeira de folhosas limpa ou se quebrará ao atingir o primeiro prego em material contaminado.\n\nAs lâminas para trituradores de madeira da Sureay são forjadas a partir de aços para ferramentas de alta qualidade — D2 (1.2379), Cr12MoV e aço de alto carbono para lâminas de trituradores — submetidas a tratamento térmico a vácuo até HRC 57–62, seguido por um recozimento criogênico profundo obrigatório a −196 °C. Essa sequência de processamento produz uma microestrutura martensítica totalmente estabilizada, com distribuição uniforme de carbonetos em toda a seção transversal da lâmina, atendendo aos dois requisitos de desempenho do triturador de madeira: resistência à abrasão para manter o fio afiado ao longo de centenas de metros cúbicos de madeira, combinada com tenacidade suficiente no núcleo para resistir a impactos de contaminantes metálicos incrustados sem fraturas catastróficas.\n\n## Tipo de triturador e geometria da lâmina\n\n### Lâminas para trituradores de tambor\n\nOs trituradores de tambor (Vermeer BC1800, Bandit 1990, Morbark 40/36) utilizam lâminas retas retangulares aparafusadas a um tambor giratório de alta velocidade (normalmente 1.000–2.500 RPM). A lâmina atua como uma faca de plaina — cada revolução descasca um lascamento da madeira alimentada na profundidade de corte programada. O comprimento da lâmina corresponde à largura do tambor (normalmente 200–600 mm), e a espessura (normalmente 12–30 mm) determina a profundidade máxima do lascamento.\n\nParâmetros críticos para o desempenho do picador de tambor:\n- **Ângulo de bisel:** 30°–37° (madeira de folhosas) ou 25°–30° (madeira de coníferas/madeira verde)\n- **Paralelismo da espessura:** ≤ 0,05 mm — a espessura irregular da lâmina causa desequilíbrio no tambor, vibração destrutiva e tamanho inconsistente das lascas\n- **Tolerância posicional dos furos dos parafusos:** ±0,10 mm — garante que a aresta de corte se projete uniformemente por toda a largura do tambor após a montagem\n\n### Lâminas para trituradores de disco\n\nOs trituradores de disco (Peterson 5710, Morbark 50/48, Precision Husky) montam as lâminas radialmente em um disco giratório robusto. A madeira é alimentada axialmente na face do disco, e as lâminas produzem lascas por meio de uma combinação de ação de cisalhamento e fenda. As lâminas para trituradores de disco são normalmente mais curtas, porém mais espessas do que as facas para trituradores de tambor, e estão sujeitas a cargas de impacto individuais mais elevadas provenientes de toras de grande diâmetro.\n\nAs lâminas para trituradores de disco exigem especificações de tenacidade máxima: recomenda-se o uso de Cr12MoV ou aço modificado para lâminas de triturador com dureza HRC 55–58 em trituradores de disco para toras inteiras que processam madeira de lei com diâmetro superior a 300 mm.\n\n### Lâminas para trituradores de árvores inteiras / biomassa\n\nOs trituradores de biomassa e de árvores inteiras (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) processam árvores inteiras, incluindo galhos, torrões de raiz e vegetação rasteira. A matéria-prima contém solo incrustado, pedras e, ocasionalmente, detritos metálicos. As lâminas para essas aplicações são fabricadas em aço otimizado para impacto com dureza HRC 55–58, com um ângulo de bisel mais amplo (35°–42°) que distribui as forças de impacto por uma face de corte mais ampla e evita o enrolamento da borda em matéria-prima contaminada.\n\n## Seleção de material de acordo com a matéria-prima\n\n**Aço de alto carbono para lâminas de trituradores (HRC 55–58):** O grau padrão do setor para trituração florestal em geral e de madeira verde. Econômico, facilmente reafiável em retificadoras de superfície padrão e resistente o suficiente para contaminação moderada por pregos. Adequado para empreiteiras de paisagismo, empresas de serviços florestais e operações municipais de resíduos verdes.\n\n**Aço para ferramentas de trabalho a frio D2 / Cr12MoV (HRC 58–62):** Especificação premium para reciclagem comercial de madeira em grande volume e produção de cavacos para combustível de biomassa. A matriz de carboneto de cromo a 12% proporciona vida útil da lâmina 2 a 3 vezes maior em comparação com o aço carbono padrão em madeiras duras abrasivas (carvalho, nogueira-americana, eucalipto) e madeira reciclada seca. Recomendado para picadores industriais de tambor que operam em turnos contínuos de 8 a 16 horas.\n\n**TCT — Com ponta de carboneto de tungstênio (insertos soldados):** A especificação definitiva para o processamento de biomassa em condições extremas. As lâminas de picador com ponta de carboneto oferecem uma vida útil de 5 a 10 vezes maior do que a do aço D2 em madeira de demolição contaminada, dormentes ferroviários e torrões de raízes fortemente sujos. A aresta de corte de carboneto é soldada a vácuo em um corpo de liga de aço resistente que absorve a energia bruta do impacto sem transmitir fratura frágil ao inserto de carboneto.\n\n## Retificação de precisão para a qualidade das lascas\n\nA geometria das lascas é o principal indicador de qualidade do produto na produção de combustível de biomassa: fábricas de celulose, usinas de energia de biomassa e fabricantes de pellets especificam padrões rigorosos de distribuição do tamanho das lascas (por exemplo, EN 17225-4 / TAPPI T257). Espessura irregular das lâminas ou ângulos de bisel inconsistentes em um tambor ou disco com múltiplas lâminas produzem lascas acima ou abaixo do tamanho especificado, que não atendem às especificações de peneiramento, exigindo processamento secundário ou causando deduções no preço.\n\nAs lâminas dos picadores Sureay são retificadas com precisão para:\n- **Tolerância de espessura:** ±0,05 mm em todo o comprimento da lâmina\n- **Ângulo de bisel:** ±0,5° (verificado por comparador óptico)\n- **Planicidade da face:** ≤ 0,05 mm por 300 mm de comprimento\n- **Acabamento superficial:** Ra ≤ 1,6 μm na face de corte para reduzir o atrito e garantir a ejeção limpa das lascas\n\n## Fornecimento de contra-faca (bigorna) e placa de desgaste\n\nA contra-lâmina (bigorna ou lâmina de base) define a folga que determina a espessura mínima do cavaco. Contra-lâminas desgastadas ou desalinhadas anulam o benefício das lâminas novas do triturador. A Sureay fabrica contra-facas combinadas e placas de desgaste substituíveis em aço D2 e manganês, fornecidas como conjuntos integrados com especificações de folga pré-verificadas para o seu modelo de triturador.\n\n## Capacidade de reafiamento\n\nAo contrário do facas para trituradores, as lâminas de triturador são projetadas para múltiplos ciclos de reafiamento. Nosso tratamento térmico, com endurecimento completo, garante dureza uniforme da superfície até o núcleo — cada reafiação expõe aço com dureza e características de desgaste idênticas. Uma lâmina padrão de triturador em D2 pode ser reafiada de 8 a 12 vezes antes de atingir a espessura mínima de segurança, tornando o custo total de propriedade extremamente competitivo.",
     link: "/products/wood-chipper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -5907,33 +5959,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "through-hardened-core",
-        tag: "METALLURGY",
-        title: "Through-Hardened for Maximum Regrind Life",
+        tag: "METALURGIA",
+        title:
+          "Têm endurecimento total para garantir a máxima vida útil após o reafiamento",
         description:
-          "Unlike case-hardened alternatives that expose a soft core after the first regrind, Sureay chipper blades are vacuum heat-treated to achieve uniform hardness (HRC 57–62) from surface to core. Each regrind delivers identical edge performance to a new blade, yielding 8–12 productive service cycles per blade.",
+          "Ao contrário das alternativas com cementação, que expõem um núcleo macio após o primeiro reafiamento, as lâminas do triturador Sureay são submetidas a tratamento térmico a vácuo para atingir uma dureza uniforme (HRC 57–62) da superfície ao núcleo. Cada reafiamento proporciona um desempenho de corte idêntico ao de uma lâmina nova, resultando em 8 a 12 ciclos de serviço produtivos por lâmina.",
       },
       {
         id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Nail & Contaminant Resistance",
+        tag: "DURABILIDADE",
+        title: "Resistência a pregos e contaminantes",
         description:
-          "Contaminated demolition wood, recycled pallets, and urban green waste contain hidden nails, screws, and stones. Our deep cryogenic treatment (−196°C) stabilises the martensitic microstructure, delivering the core toughness needed to absorb metal-strike impacts without brittle edge fracture or blade cracking.",
+          "Madeira contaminada proveniente de demolições, paletes recicladas e resíduos verdes urbanos contêm pregos, parafusos e pedras ocultos. Nosso tratamento criogênico profundo (−196 °C) estabiliza a microestrutura martensítica, proporcionando a tenacidade necessária ao núcleo para absorver impactos contra metais sem causar fraturas frágeis nas bordas ou rachaduras na lâmina.",
       },
       {
         id: "chip-quality",
-        tag: "OUTPUT QUALITY",
-        title: "Precision Bevel for Uniform Chip Size",
+        tag: "QUALIDADE DA SAÍDA",
+        title: "Chanfro de precisão para tamanho uniforme de cavacos",
         description:
-          "Biomass power plants and pulp mills penalise off-spec chip size distributions. Every blade is surface-ground to ±0.05 mm thickness and ±0.5° bevel angle, ensuring consistent chip geometry across the full drum or disc width that meets EN 17225 and TAPPI T257 standards.",
+          "As usinas de energia de biomassa e as fábricas de celulose não toleram distribuições de tamanho de lascas fora das especificações. Cada lâmina é retificada superficialmente para uma espessura de ±0,05 mm e um ângulo de bisel de ±0,5°, garantindo uma geometria consistente das lascas em toda a largura do tambor ou do disco, em conformidade com as normas EN 17225 e TAPPI T257.",
       },
     ],
     dimensionLabels: {
-      col0: "Chipper Type / OEM Platform",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Tipo de triturador / Plataforma OEM",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm.",
+        "* Dimensões padrão para os principais fabricantes de picadores. Padrões de furos para 2, 3 e 4 parafusos, usinados em CNC de acordo com as especificações exatas dos fabricantes. Facas contrárias e placas de desgaste disponíveis em conjuntos combinados. Comprimentos personalizados de até 800 mm.",
     },
     standardDimensions: [
       {
@@ -5999,95 +6052,97 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What blade material should I use for chipping clean green timber versus contaminated demolition wood?",
+            "Que material de lâmina devo usar para triturar madeira verde limpa em comparação com madeira de demolição contaminada?",
           answer:
-            "For clean green timber (forestry, tree service, land clearing), standard high-carbon chipper knife steel at HRC 55–58 delivers excellent edge life at the lowest cost per regrind cycle. For contaminated demolition wood, recycled pallets, or urban green waste with embedded nails, screws, and stones, upgrade to Cr12MoV or D2 at HRC 58–60. The chromium-carbide matrix provides 2–3× longer edge life on abrasive dry wood while maintaining sufficient toughness to survive moderate metal impacts. For heavily contaminated streams (railroad ties, C&D debris), specify TCT carbide-tipped blades that deliver 5–10× longer service life than D2.",
+            "Para madeira limpa e verde (silvicultura, serviços de poda de árvores, limpeza de terrenos), o aço padrão de alto carbono para lâminas de triturador, com dureza HRC 55–58, oferece excelente vida útil do fio de corte com o menor custo por ciclo de reafiamento. Para madeira contaminada proveniente de demolições, paletes recicladas ou resíduos verdes urbanos com pregos, parafusos e pedras incrustados, opte pelo Cr12MoV ou D2 com dureza HRC 58–60. A matriz de carboneto de cromo proporciona uma vida útil do fio 2 a 3 vezes maior em madeira seca abrasiva, mantendo resiliência suficiente para resistir a impactos moderados de metal. Para fluxos altamente contaminados (dormentes ferroviários, entulho de construção e demolição), especifique lâminas com ponta de carboneto TCT, que oferecem vida útil 5 a 10 vezes maior do que o D2.",
         },
         {
           question:
-            "How does blade thickness tolerance affect chip quality and drum vibration?",
+            "Como a tolerância na espessura da lâmina afeta a qualidade da limalha e a vibração do tambor?",
           answer:
-            "Blade thickness directly controls chip depth and influences drum balance. If blade thicknesses vary by more than 0.10 mm across a multi-blade drum, the thicker blades cut deeper and produce oversized chips while thinner blades produce undersized chips — both conditions fail biomass fuel screening specifications (EN 17225-4). Additionally, uneven blade mass creates dynamic imbalance at operating RPM (1,000–2,500 RPM), causing destructive vibration that accelerates bearing failure and fatigues the drum housing. Our ±0.05 mm thickness tolerance eliminates both issues.",
+            "A espessura da lâmina controla diretamente a profundidade do corte e influencia o equilíbrio do tambor. Se as espessuras das lâminas variarem em mais de 0,10 mm em um tambor com várias lâminas, as lâminas mais espessas cortam mais profundamente e produzem cavacos maiores do que o permitido, enquanto as lâminas mais finas produzem cavacos menores do que o permitido — ambas as condições não atendem às especificações de classificação de combustível de biomassa (EN 17225-4). Além disso, a massa irregular das lâminas cria um desequilíbrio dinâmico na rotação de operação (1.000–2.500 RPM), causando vibrações destrutivas que aceleram a falha dos rolamentos e causam fadiga na carcaça do tambor. Nossa tolerância de espessura de ±0,05 mm elimina ambos os problemas.",
         },
         {
           question:
-            "What bevel angle should I specify for hardwood versus softwood chipping?",
+            "Que ângulo de bisel devo especificar para a trituração de madeira de folhosas em comparação com a de madeiras de coníferas?",
           answer:
-            "For softwood and green timber with high moisture content (pine, spruce, poplar), specify 25°–30° bevel angle. The sharper included angle slices through soft, fibrous wood with minimum cutting force and produces clean chip faces with low fibre tear. For dry hardwood (oak, hickory, eucalyptus), increase to 30°–37° to strengthen the cutting edge against the higher density and impact loading. For contaminated biomass and whole-tree chipping with soil and stone contamination, specify 35°–42° — the wider bevel distributes impact forces across a broader cutting face, preventing edge rollover.",
+            "Para madeiras de coníferas e madeiras verdes com alto teor de umidade (pinheiro, abeto, álamo), especifique um ângulo de bisel de 25°–30°. O ângulo entre os lados mais agudo corta madeiras macias e fibrosas com o mínimo de força de corte e produz faces de lascas limpas com baixo rasgo das fibras. Para madeira dura seca (carvalho, nogueira-americana, eucalipto), aumente para 30°–37° a fim de reforçar a aresta de corte contra a maior densidade e a carga de impacto. Para biomassa contaminada e trituração de árvores inteiras com contaminação por solo e pedras, especifique 35°–42° — o bisel mais amplo distribui as forças de impacto por uma superfície de corte mais ampla, evitando o rolamento da aresta.",
         },
         {
           question:
-            "How many times can Sureay chipper blades be resharpened, and what is the correct regrinding procedure?",
+            "Quantas vezes as lâminas do triturador Sureay podem ser reafiadas e qual é o procedimento correto de reafiação?",
           answer:
-            "Our through-hardened chipper blades can be resharpened 8–12 times before reaching minimum safe thickness (typically 60–70% of original thickness). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass to prevent thermal damage to the heat-treated edge. Never dry-grind chipper knives — the localised overheating above 200°C draws the temper and softens the edge. After grinding, verify the bevel angle with an optical comparator or digital protractor. We also offer a professional regrinding service with hardness re-verification.",
+            "Nossas lâminas de triturador com endurecimento total podem ser reafiadas de 8 a 12 vezes antes de atingirem a espessura mínima de segurança (normalmente 60% a 70% da espessura original). Reafie em uma retificadora de superfície úmida usando um disco de óxido de alumínio (grão 46–60) a uma profundidade de 0,02–0,05 mm por passagem para evitar danos térmicos à aresta tratada termicamente. Nunca afie as lâminas do triturador a seco — o superaquecimento localizado acima de 200 °C retira a têmpera e amolece a aresta. Após o afiamento, verifique o ângulo de bisel com um comparador óptico ou um transferidor digital. Também oferecemos um serviço profissional de reafiamento com nova verificação da dureza.",
         },
         {
           question:
-            "What causes premature edge rollover on my chipper blades, and how do I prevent it?",
+            "O que causa o enrolamento prematuro das bordas nas lâminas do meu triturador e como posso evitar isso?",
           answer:
-            "Edge rollover (the cutting edge folding over rather than chipping or wearing gradually) indicates the blade hardness is too low for the feedstock, or the bevel angle is too acute for the impact loading. On standard carbon steel blades processing dry hardwood, the edge lacks sufficient carbide reinforcement to resist plastic deformation. Upgrade to D2 or Cr12MoV at HRC 58–62 and increase the bevel angle by 3°–5°. Also verify counter-knife clearance: excessive clearance (> 1.5 mm) forces the blade to fracture the wood by bending rather than shearing, dramatically increasing edge loading.",
+            "A dobragem da aresta (quando a aresta de corte se dobra em vez de lascar ou se desgastar gradualmente) indica que a dureza da lâmina é baixa demais para o material a ser processado ou que o ângulo de bisel é muito agudo para a carga de impacto. Em lâminas padrão de aço carbono que processam madeira dura seca, a aresta não possui reforço de carboneto suficiente para resistir à deformação plástica. Mude para D2 ou Cr12MoV com dureza HRC 58–62 e aumente o ângulo de bisel em 3°–5°. Verifique também a folga da contra-lâmina: uma folga excessiva (> 1,5 mm) força a lâmina a fraturar a madeira por flexão, em vez de cisalhamento, aumentando drasticamente a carga sobre a aresta.",
         },
         {
           question:
-            "Should I replace the counter-knife (anvil) when I install new chipper blades?",
+            "Devo substituir a lâmina contrária (biqueira) ao instalar novas lâminas no triturador?",
           answer:
-            "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife with a rounded or chipped edge forces new blades to work against an inconsistent shear gap, reducing their effective service life by 30–50% and producing poor chip quality. Replace or regrind the counter-knife when the cutting edge shows visible rounding exceeding 1.0 mm or chipping deeper than 0.5 mm. We supply matched counter-knives manufactured from D2 or manganese steel as integrated sets with pre-verified clearance.",
+            "A contra-lâmina deve ser inspecionada sempre que as lâminas do triturador forem trocadas. Uma contra-lâmina desgastada, com o gume arredondado ou lascado, obriga as lâminas novas a trabalharem contra uma folga de cisalhamento irregular, reduzindo sua vida útil efetiva em 30–50% e produzindo aparas de baixa qualidade. Substitua ou reafie a contra-lâmina quando a aresta de corte apresentar um arredondamento visível superior a 1,0 mm ou lascas com profundidade superior a 0,5 mm. Fornecemos contra-lâminas compatíveis, fabricadas em aço D2 ou manganês, como conjuntos integrados com folga pré-verificada.",
         },
         {
           question:
-            "What chip size distribution should I target for biomass fuel production versus pulp mill supply?",
+            "Qual distribuição de tamanho de lascas devo buscar para a produção de combustível de biomassa em comparação com o abastecimento de fábricas de celulose?",
           answer:
-            "Biomass power plants typically require chips within 3–50 mm (EN 17225-4 Class P31s or P45s) with less than 5% fines (< 3 mm) and less than 1% oversized (> 63 mm). Pulp mills require tighter specifications per TAPPI T257: typically 80% acceptance in 7–25 mm range with strict limits on pin chips and overthick pieces. Achieving these specifications requires consistent blade thickness (±0.05 mm), correct bevel angle, proper counter-knife clearance (0.5–1.0 mm), and uniform drum speed. We can recommend the optimal blade geometry for your target specification.",
+            "As usinas de energia de biomassa normalmente exigem lascas com dimensões entre 3 e 50 mm (EN 17225-4 Classe P31s ou P45s), com menos de 5% de partículas finas (< 3 mm) e menos de 1% de peças acima do tamanho permitido (> 63 mm). As fábricas de celulose exigem especificações mais rigorosas de acordo com a norma TAPPI T257: normalmente, 80% de aceitação na faixa de 7 a 25 mm, com limites estritos para lascas em forma de pino e pedaços com espessura excessiva. Para atender a essas especificações, é necessário que a lâmina tenha espessura consistente (±0,05 mm), ângulo de bisel correto, folga adequada entre a lâmina e a contra-lâmina (0,5–1,0 mm) e velocidade uniforme do tambor. Podemos recomendar a geometria ideal da lâmina para a especificação desejada.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Vocês são uma empresa de comércio ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
         },
         {
           question:
-            "Can you supply blades for my specific chipper model if it is not listed in your standard dimensions?",
+            "Vocês podem fornecer lâminas para o meu modelo específico de triturador, caso ele não conste na lista de dimensões padrão?",
           answer:
-            "Yes. Send us your existing blade sample, a technical drawing, or your chipper make and model number. We will confirm the length, width, thickness, bevel angle, and bolt-hole pattern, and manufacture exact drop-in replacements. We maintain an extensive database of OEM chipper blade blueprints for Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz, and CBI platforms. Custom dimensions are manufactured to drawing within 10–15 working days.",
+            "Sim. Envie-nos uma amostra da lâmina que você possui, um desenho técnico ou a marca e o número do modelo do seu triturador. Confirmaremos o comprimento, a largura, a espessura, o ângulo de bisel e o padrão dos furos dos parafusos, e fabricaremos peças de reposição exatas, prontas para instalação. Mantemos um extenso banco de dados de desenhos técnicos de lâminas de trituradores OEM para as plataformas Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz e CBI. Dimensões personalizadas são fabricadas de acordo com o desenho em um prazo de 10 a 15 dias úteis.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
           answer:
-            "Unlike standard quench-and-temper processes, every Sureay chipper blade undergoes vacuum hardening followed by deep cryogenic treatment at −196°C. The cryogenic step transforms retained austenite into stable martensite, improving wear resistance by up to 40% and ensuring uniform hardness from surface to core. This means every regrind exposes steel of identical quality — cheap blades often expose a softer core after the first regrind, halving the edge life of subsequent sharpening cycles.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement chipper blades in stock sizes typically ship within 48–72 hours. Custom profiles and TCT carbide-tipped blades take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Ao contrário dos processos padrão de têmpera e revenimento, todas as lâminas dos trituradores Sureay passam por um processo de endurecimento a vácuo, seguido de um tratamento criogênico profundo a −196 °C. A etapa criogênica transforma a austenita retida em martensita estável, melhorando a resistência ao desgaste em até 40% e garantindo dureza uniforme da superfície até o núcleo. Isso significa que cada reafiação revela aço de qualidade idêntica — lâminas baratas costumam revelar um núcleo mais macio após a primeira reafiação, reduzindo pela metade a vida útil do fio nos ciclos de afiação subsequentes.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Vocês fazem entregas para o exterior e quanto tempo demora?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (thickness, bevel angle, bolt-hole positions), and a heat treatment batch certificate. For large-volume biomass operations requiring full traceability, steel mill composition certificates and CMM dimensional reports are available on request.",
+            "Sim, exportamos para mais de 50 países. As lâminas padrão para trituradores, em tamanhos em estoque, geralmente são enviadas em 48 a 72 horas. Perfis personalizados e lâminas com ponta de carboneto TCT levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agentes de frete marítimo internacional para garantir uma entrega porta a porta confiável.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
           answer:
-            "Yes. We offer sample sets (typically 2–4 blades) for machine fit verification and edge life benchmarking against your current supplier. Standard sample lead time is 5–7 working days. For TCT carbide-tipped blades, sample lead time is 10–12 working days.",
+            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional (espessura, ângulo de chanfro, posições dos furos para parafusos) e um certificado de lote tratamento térmico. Para operações de biomassa de grande volume que exijam rastreabilidade total, certificados de composição da siderúrgica e relatórios dimensionais da CMM estão disponíveis mediante solicitação.",
+        },
+        {
+          question:
+            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
+          answer:
+            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 4 lâminas) para verificação do ajuste na máquina e comparação da vida útil do fio de corte com a do seu fornecedor atual. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para lâminas com ponta de metal duro TCT, o prazo de entrega das amostras é de 10 a 12 dias úteis.",
         },
       ],
     },
   },
   {
     id: "wood-chipper-anvils",
-    name: "Wood Chipper Anvils",
+    name: "Bigornas para trituradores de madeira",
     fullName:
-      "Heavy-Duty Counter-Knives & Bed Knife Anvils for Drum & Disc Wood Chippers",
+      "Lâminas de contra-corte e bigornas para lâminas de base de alta resistência para trituradores de madeira do tipo tambor e disco",
     category: "wood_chipper",
     sector: "wood",
-    categoryDisplay: "Counter-Knives & Anvils",
+    categoryDisplay: "Facas de bancada e bigornas",
     image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-    badge: "Matched Sets",
+    badge: "Conjuntos combinados",
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
@@ -6095,9 +6150,9 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
     description:
-      "Wood chipper anvils and counter-knives (bed knives) for drum and disc chippers. D2, Cr12MoV, and A8 Modified tool steel, through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
+      "Anéis de corte e contra-lâminas (lâminas de base) para trituradores de tambor e de disco. Aço para ferramentas D2, Cr12MoV e A8 Modificado, temperado em toda a espessura com dureza HRC 55–60 para máxima vida útil de reafiamento. Define a folga entre a lâmina e a bigorna, que controla a espessura das lascas e a eficiência do triturador. Retificado superficialmente para garantir paralelismo em todo o comprimento com precisão de ±0,05 mm. Peças de reposição compatíveis com os fabricantes originais (OEM) para trituradores Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen e Jenz.",
     fullDescription:
-      "The anvil — also called the counter-knife, bed knife, or stationary blade — is the fixed cutting edge inside a wood chipper that the rotating drum or disc blade cuts against. Together, the chipper blade and anvil form a scissor-like shearing pair: the blade slices chips from the timber, and the anvil sets the clearance gap that determines minimum chip thickness, cutting efficiency, and motor load.\n\nA worn or misaligned anvil is the single most overlooked cause of poor chipper performance. When the anvil edge rounds off, the blade-to-anvil clearance gap widens progressively. Instead of a clean shearing action, the timber is torn and crushed rather than cut — spiking fuel consumption by 15–25%, producing ragged chips that fail screening specs, and accelerating wear on the chipper blades themselves. Replacing chipper blades without inspecting the anvil is throwing away money: new blades working against a dull anvil deliver only 50–70% of their potential service life.\n\n## Why the Anvil Matters as Much as the Blade\n\n**Clearance Gap Control:** The blade-to-anvil clearance gap — typically set at 0.5–1.5 mm for drum chippers and 0.8–2.0 mm for disc chippers — directly controls minimum chip thickness. A worn anvil increases this gap beyond specification, producing oversized chips and long fibrous slivers that fail biomass fuel screening standards (EN 17225-4). Our anvils are precision surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform shear gap across the entire cutting width.\n\n**Impact Absorption:** Unlike the chipper blade (which rotates at high speed), the anvil absorbs the full reaction force of every cut as a static impact load. Over millions of chipping cycles, this sustained impact loading causes edge deformation, micro-cracking, and eventual bulk fracture in poorly heat-treated anvils. Sureay anvils are through-hardened to HRC 55–60 via vacuum heat treatment — hard enough to hold a sharp edge against abrasive timber, yet tough enough to absorb repeated impact without brittle fracture.\n\n**Different Wear Rate, Different Replacement Cycle:** The anvil typically outlasts chipper blades by a factor of 2–4× because it operates under compressive (static) loading rather than the dynamic shear loading on the blade. However, because anvil wear is gradual, operators often miss the progressive deterioration until chip quality has degraded significantly. We recommend inspecting the anvil edge every time chipper blades are changed or sharpened.\n\n## Material Selection\n\n**D2 / Cr12MoV Tool Steel (HRC 58–60):** The premium specification for high-volume commercial wood processing and biomass operations. The 12% chromium-carbide matrix provides outstanding abrasion resistance against dense hardwoods and bark-heavy feedstock. Recommended for industrial drum chippers (Morbark, Vermeer HG series, Doppstadt) running continuous 8–16 hour shifts.\n\n**A8 Modified Tool Steel (HRC 54–58):** The industry-standard OEM grade used by Bandit, Morbark, and Vermeer for factory-original anvils. A8 Modified provides an excellent balance of wear resistance and impact toughness — critical for anvils that must absorb millions of impact cycles without micro-cracking. The correct choice for general forestry and tree service operations processing mixed species with moderate contamination.\n\n**42CrMo / Manganese Steel (HRC 50–55):** A cost-effective, high-toughness option for operators processing heavily contaminated demolition wood, railroad ties, and urban green waste where the feedstock contains significant metal debris. The lower hardness prioritises impact absorption over wear resistance, preventing the catastrophic anvil fracture that can damage the drum housing.\n\n## Adjustable Mounting & Clearance Setting\n\nMost chipper OEMs provide a mechanical adjustment system — typically shim plates or adjustable mounting bolts — to advance the anvil toward the blade as both components wear, maintaining the designed clearance gap. Sureay anvils are CNC-machined with slotted or oversized mounting holes that match your OEM's adjustment mechanism precisely, ensuring maintenance teams can set the gap accurately and lock it down securely.\n\n## Matched Blade + Anvil Sets\n\nFor operators changing both blades and anvil simultaneously, we offer matched sets: chipper blades and counter-knife manufactured from the same steel batch, heat-treated in the same vacuum furnace cycle, and surface-ground to the same parallelism tolerance. A matched set eliminates the hardness mismatch between blade and anvil that causes accelerated wear when sourcing components from different suppliers.",
+      "A bigorna — também chamada de contra-lâmina, lâmina fixa ou lâmina estacionária — é a lâmina fixa dentro de um triturador de madeira contra a qual o tambor giratório ou a lâmina de disco realiza o corte. Juntas, a lâmina do triturador e a bigorna formam um par de corte semelhante a uma tesoura: a lâmina corta lascas da madeira, e a bigorna define a folga que determina a espessura mínima das lascas, a eficiência de corte e a carga do motor.\n\nUma bigorna desgastada ou desalinhada é a causa mais negligenciada do baixo desempenho do triturador. Quando a aresta da bigorna fica arredondada, a folga entre a lâmina e a bigorna aumenta progressivamente. Em vez de uma ação de corte limpa, a madeira é rasgada e esmagada em vez de ser cortada — aumentando o consumo de combustível em 15 a 25%, produzindo lascas irregulares que não atendem às especificações de triagem e acelerando o desgaste das próprias lâminas do triturador. Substituir as lâminas do triturador sem inspecionar a bigorna é jogar dinheiro fora: lâminas novas trabalhando contra uma bigorna cega atingem apenas 50–70% de sua vida útil potencial.\n\n## Por que a bigorna é tão importante quanto a lâmina\n\n**Controle da folga:** A folga entre a lâmina e a bigorna — normalmente ajustada entre 0,5 e 1,5 mm para picadores de tambor e entre 0,8 e 2,0 mm para picadores de disco — controla diretamente a espessura mínima das lascas. Uma bigorna desgastada aumenta essa folga além das especificações, produzindo lascas superdimensionadas e lascas longas e fibrosas que não atendem aos padrões de classificação de combustível de biomassa (EN 17225-4). Nossas bigornas são retificadas com precisão para um paralelismo em todo o comprimento de ±0,05 mm, garantindo uma folga de cisalhamento uniforme em toda a largura de corte.\n\n**Absorção de impacto:** Ao contrário da lâmina do picador (que gira em alta velocidade), a bigorna absorve toda a força de reação de cada corte como uma carga de impacto estática. Ao longo de milhões de ciclos de trituração, essa carga de impacto sustentada causa deformação das arestas, microfissuras e, eventualmente, fratura em massa em bigornas com tratamento térmico inadequado. As bigornas da Sureay são temperadas em toda a espessura até HRC 55–60 por meio do processo tratamento térmico a vácuo — duras o suficiente para manter uma aresta afiada contra madeira abrasiva, mas resistentes o suficiente para absorver impactos repetidos sem fratura por fragilidade.\n\n**Taxa de desgaste diferente, ciclo de substituição diferente:** A bigorna normalmente dura de 2 a 4 vezes mais do que as lâminas do picador, pois opera sob carga compressiva (estática), em vez da carga de cisalhamento dinâmica exercida sobre a lâmina. No entanto, como o desgaste da bigorna é gradual, os operadores muitas vezes não percebem a deterioração progressiva até que a qualidade das lascas tenha se degradado significativamente. Recomendamos inspecionar o fio da bigorna sempre que as lâminas do picador forem trocadas ou afiadas.\n\n## Seleção de materiais\n\n**Aço para ferramentas D2 / Cr12MoV (HRC 58–60):** A especificação premium para operações comerciais de grande volume de processamento de madeira e biomassa. A matriz com 12% de carboneto de cromo oferece excelente resistência à abrasão contra madeiras duras densas e matérias-primas com grande quantidade de casca. Recomendada para picadores industriais de tambor (Morbark, série HG da Vermeer, Doppstadt) que operam em turnos contínuos de 8 a 16 horas.\n\n**Aço para ferramentas A8 modificado (HRC 54–58):** O padrão da indústria de grau OEM utilizado pela Bandit, Morbark e Vermeer para bigornas originais de fábrica. O A8 Modificado oferece um excelente equilíbrio entre resistência ao desgaste e tenacidade ao impacto — aspectos essenciais para bigornas que precisam absorver milhões de ciclos de impacto sem apresentar microfissuras. A escolha correta para operações gerais de silvicultura e serviços florestais que processam espécies mistas com contaminação moderada.\n\n**42CrMo / Aço de manganês (HRC 50–55):** Uma opção econômica e de alta tenacidade para operadores que processam madeira de demolição altamente contaminada, dormentes ferroviários e resíduos verdes urbanos, nos quais a matéria-prima contém detritos metálicos significativos. A menor dureza prioriza a absorção de impactos em detrimento da resistência ao desgaste, evitando a fratura catastrófica do bigorna que pode danificar o compartimento do tambor.\n\n## Ajuste de montagem e folga\n\nA maioria dos fabricantes de picadores (OEMs) fornece um sistema de ajuste mecânico — normalmente placas de calço ou parafusos de montagem ajustáveis — para avançar a bigorna em direção à lâmina à medida que ambos os componentes se desgastam, mantendo a folga projetada. As bigornas Sureay são usinadas em CNC com furos de montagem ranhurados ou sobredimensionados que se encaixam com precisão no mecanismo de ajuste do seu fabricante original, garantindo que as equipes de manutenção possam definir a folga com exatidão e travá-la com segurança.\n\n## Conjuntos combinados de lâmina + bigorna\n\nPara operadores que trocam simultaneamente as lâminas e a bigorna, oferecemos conjuntos combinados: lâminas de triturador e contra-lâmina fabricadas a partir do mesmo lote de aço, tratadas termicamente no mesmo ciclo de forno a vácuo e retificadas superficialmente com a mesma tolerância de paralelismo. Um conjunto combinado elimina a incompatibilidade de dureza entre a lâmina e a bigorna, que causa desgaste acelerado quando os componentes são adquiridos de fornecedores diferentes.",
     link: "/products/wood-chipper-anvils",
     isFeatured: true,
     compatibleMachines: [
@@ -6146,33 +6201,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "clearance-gap-control",
-        tag: "CUTTING EFFICIENCY",
-        title: "Precision Clearance Gap Control",
+        tag: "EFICIÊNCIA DE CORTE",
+        title: "Controle de folga de precisão",
         description:
-          "The blade-to-anvil gap determines chip thickness, cutting force, and fuel consumption. A rounded anvil edge widens this gap beyond specification, turning clean shearing into inefficient crushing. Our anvils are surface-ground to ±0.05 mm parallelism to maintain the designed clearance across the full cutting width — restoring the self-feeding bite and reducing motor load by up to 20%.",
+          "A folga entre a lâmina e a bigorna determina a espessura da limalha, a força de corte e o consumo de combustível. Uma borda arredondada da bigorna aumenta essa folga além das especificações, transformando o corte limpo em um esmagamento ineficiente. Nossas bigornas são retificadas superficialmente com paralelismo de ±0,05 mm para manter a folga projetada em toda a largura de corte — restaurando a penetração com alimentação automática e reduzindo a carga do motor em até 20%.",
       },
       {
         id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Static Impact Resistance",
+        tag: "DURABILIDADE",
+        title: "Resistência ao impacto estático",
         description:
-          "The anvil absorbs the full reaction force of every cut as a static impact load — millions of hits per shift. Through-hardened D2 and A8 Modified steel at HRC 54–60 provides the correct balance: hard enough to hold a sharp edge against abrasive timber, tough enough to absorb repeated impacts without micro-cracking or catastrophic fracture.",
+          "A bigorna absorve toda a força de reação de cada corte como uma carga de impacto estática — milhões de golpes por turno. O aço D2 e A8 Modificado, temperado em toda a espessura, com dureza HRC 54–60, oferece o equilíbrio ideal: duro o suficiente para manter o fio afiado diante da madeira abrasiva e resistente o suficiente para absorver impactos repetidos sem microfissuras ou fraturas catastróficas.",
       },
       {
         id: "matched-sets",
-        tag: "SYSTEM INTEGRATION",
-        title: "Matched Blade + Anvil Sets",
+        tag: "INTEGRAÇÃO DE SISTEMAS",
+        title: "Conjuntos de lâmina e bigorna combinados",
         description:
-          "Chipper blades and counter-knives from different suppliers often have mismatched hardness — a harder anvil wears the blade prematurely, or a softer anvil degrades faster than expected. Our matched sets are manufactured from the same steel batch and heat-treated in the same cycle, ensuring balanced wear rates and maximum combined service life.",
+          "As lâminas de triturador e as contra-lâminas de diferentes fornecedores costumam apresentar durezas incompatíveis — uma bigorna mais dura desgasta a lâmina prematuramente, ou uma bigorna mais macia se desgasta mais rápido do que o esperado. Nossos conjuntos combinados são fabricados a partir do mesmo lote de aço e submetidos ao mesmo ciclo de tratamento térmico, garantindo taxas de desgaste equilibradas e a máxima vida útil combinada.",
       },
     ],
     dimensionLabels: {
-      col0: "Chipper OEM / Model",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Fabricante / Modelo do triturador",
+      col1: "Comprimento (mm)",
+      col2: "Largura (mm)",
+      col3: "Espessura (mm)",
       caption:
-        "* Standard OEM replacement anvil dimensions. Slotted mounting holes CNC-machined to exact OEM clearance adjustment patterns. Matched blade + anvil sets available for all sizes. Custom lengths up to 600 mm.",
+        "* Dimensões padrão da bigorna de reposição OEM. Orifícios de montagem com ranhuras usinados por CNC de acordo com os padrões exatos de ajuste de folga do OEM. Conjuntos de lâmina + bigorna compatíveis disponíveis para todos os tamanhos. Comprimentos personalizados de até 600 mm.",
     },
     standardDimensions: [
       {
@@ -6238,89 +6293,89 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "What does the anvil do in a wood chipper?",
+          question: "Qual é a função da bigorna em um triturador de madeira?",
           answer:
-            "The anvil (also called the bed knife or counter-knife) is the fixed cutting edge that the rotating chipper blades shear against. Wood is sliced cleanly in the gap between the spinning knife and the stationary anvil. A correctly set anvil-to-knife clearance (typically 0.5–1.5 mm) produces uniform chips, reduces knife wear, and prevents stringy or oversized output. A worn or misaligned anvil is the most common cause of poor chip quality and accelerated blade dulling.",
+            "A bigorna (também chamada de lâmina fixa ou contra-lâmina) é a lâmina fixa contra a qual as lâminas giratórias do picador cortam. A madeira é cortada de forma limpa no espaço entre a lâmina giratória e a bigorna fixa. Uma folga corretamente ajustada entre a bigorna e a lâmina (normalmente de 0,5 a 1,5 mm) produz lascas uniformes, reduz o desgaste da lâmina e evita a produção de lascas fibrosas ou excessivamente grandes. Uma bigorna desgastada ou desalinhada é a causa mais comum de má qualidade das lascas e do embotamento acelerado da lâmina.",
         },
         {
           question:
-            "How often should I replace or resharpen the anvil compared to the chipper blades?",
+            "Com que frequência devo substituir ou reafiar a bigorna em comparação com as lâminas do triturador?",
           answer:
-            "The anvil typically outlasts chipper blades by 2–4× because it operates under static compressive loading rather than the dynamic shear loading on the blade. However, we recommend inspecting the anvil edge every time chipper blades are changed or flipped. When the anvil edge shows visible rounding exceeding 1.0 mm (check with a straightedge under bright light), regrind or replace it. Installing new chipper blades against a worn anvil delivers only 50–70% of their potential edge life and produces poor chip quality regardless of blade sharpness.",
+            "A bigorna geralmente dura de 2 a 4 vezes mais do que as lâminas do triturador, pois opera sob carga compressiva estática, ao invés da carga de cisalhamento dinâmica a que a lâmina está sujeita. No entanto, recomendamos inspecionar a borda da bigorna sempre que as lâminas do triturador forem trocadas ou viradas. Quando a borda da bigorna apresentar um arredondamento visível superior a 1,0 mm (verifique com uma régua sob luz forte), reafie-a ou substitua-a. A instalação de novas lâminas de triturador contra uma bigorna desgastada proporciona apenas 50 a 70% de sua vida útil potencial e produz aparas de baixa qualidade, independentemente do grau de afiação das lâminas.",
         },
         {
           question:
-            "What clearance gap should I set between the chipper blade and the anvil?",
+            "Qual deve ser a folga entre a lâmina do triturador e a bigorna?",
           answer:
-            "Clearance varies by chipper type and timber species. For drum chippers processing green softwood: 0.5–1.0 mm. For drum chippers on dry hardwood: 0.8–1.5 mm. For disc chippers: 1.0–2.0 mm. Always refer to your chipper OEM manual for the exact specification. The gap should be measured at multiple points across the full anvil width using a feeler gauge. If the gap varies by more than 0.3 mm from end to end, the anvil face parallelism has degraded and the anvil needs regrinding or replacement.",
+            "A folga varia de acordo com o tipo de triturador e a espécie de madeira. Para trituradores de tambor que processam madeira macia verde: 0,5–1,0 mm. Para trituradores de tambor que processam madeira dura seca: 0,8–1,5 mm. Para trituradores de disco: 1,0–2,0 mm. Sempre consulte o manual do fabricante do triturador para obter as especificações exatas. A folga deve ser medida em vários pontos ao longo de toda a largura da bigorna, utilizando um calibrador de folga. Se a folga variar mais de 0,3 mm de uma extremidade à outra, o paralelismo da face da bigorna está comprometido e a bigorna precisa ser reafiada ou substituída.",
         },
         {
           question:
-            "Should I use the same steel grade for the anvil as the chipper blade?",
+            "Devo usar o mesmo tipo de aço para a bigorna e para a lâmina do triturador?",
           answer:
-            "Not necessarily — the anvil and blade have different wear modes and therefore different optimal metallurgy. The blade experiences dynamic shear loading at high speed and benefits from maximum edge hardness (HRC 58–62). The anvil experiences static compressive impact and benefits from a slightly lower hardness (HRC 54–58) that provides greater impact absorption. A8 Modified at HRC 54–58 is the industry-standard anvil grade for this reason. However, for high-volume biomass operations on clean hardwood, upgrading both blade and anvil to D2 at HRC 58–60 is recommended.",
+            "Não necessariamente — a bigorna e a lâmina apresentam modos de desgaste diferentes e, portanto, metalurgias ideais distintas. A lâmina sofre cargas dinâmicas de cisalhamento em alta velocidade e se beneficia de uma dureza máxima na aresta (HRC 58–62). A bigorna sofre impacto compressivo estático e se beneficia de uma dureza ligeiramente menor (HRC 54–58), que proporciona maior absorção de impacto. Por esse motivo, o A8 Modificado com HRC 54–58 é o tipo de bigorna padrão do setor. No entanto, para operações de biomassa de alto volume com madeira de lei limpa, recomenda-se a atualização tanto da lâmina quanto da bigorna para o D2 com HRC 58–60.",
         },
         {
           question:
-            "What causes a chipper to stop self-feeding even with sharp blades?",
+            "O que faz com que um triturador pare de alimentar-se automaticamente, mesmo com lâminas afiadas?",
           answer:
-            "If the chipper stops pulling timber into the cutting chamber despite having freshly sharpened or new blades, the anvil is almost certainly worn. A rounded anvil edge increases the effective clearance gap, which means the blade can no longer bite into the timber with sufficient depth to generate the pulling force. The timber bounces on the blade surface instead of being grabbed and drawn in. Inspect and regrind or replace the anvil, then reset the clearance gap to OEM specification.",
+            "Se o triturador deixar de puxar a madeira para dentro da câmara de corte, mesmo com lâminas recém-afiladas ou novas, é quase certo que a bigorna esteja desgastada. Uma borda arredondada da bigorna aumenta a folga efetiva, o que significa que a lâmina não consegue mais penetrar na madeira com profundidade suficiente para gerar a força de tração. A madeira ricocheteia na superfície da lâmina em vez de ser agarrada e puxada para dentro. Inspecione e reafie ou substitua a bigorna e, em seguida, reajuste a folga de acordo com as especificações do fabricante original (OEM).",
         },
         {
           question:
-            "Can I sharpen the anvil with the same tools I use for chipper blades?",
+            "Posso afiar a bigorna com as mesmas ferramentas que uso para as lâminas do triturador?",
           answer:
-            "Yes — the same wet surface grinder and aluminum oxide wheel (46–60 grit) used for chipper blades works for anvils. The same rules apply: light passes (0.02–0.05 mm per pass), never dry-grind without quenching, and verify the bevel angle with a protractor after grinding. The anvil bevel angle should match the chipper OEM specification (typically 30°–37°). Some operators neglect the anvil during regrinding because it appears less worn than the blade — this is a false economy that shortens blade life and degrades chip quality.",
+            "Sim — a mesma retificadora de superfície úmida e o mesmo disco de óxido de alumínio (grão 46–60) usados para lâminas de triturador também servem para bigornas. As mesmas regras se aplicam: passadas leves (0,02–0,05 mm por passada), nunca retifique a seco sem resfriamento e verifique o ângulo de bisel com um transferidor após a retificação. O ângulo de bisel da bigorna deve corresponder à especificação do fabricante original (OEM) do triturador (normalmente 30°–37°). Alguns operadores negligenciam a bigorna durante o reafiamento porque ela parece menos desgastada do que a lâmina — essa é uma falsa economia que reduz a vida útil da lâmina e prejudica a qualidade das lascas.",
         },
         {
           question:
-            "Why does my chipper produce long, stringy fibres instead of clean chips?",
+            "Por que meu triturador produz fibras longas e finas em vez de lascas bem cortadas?",
           answer:
-            "Long fibrous slivers — sometimes called 'spaghetti' or 'stringers' — indicate the blade-to-anvil clearance gap is too wide. The timber is being torn and pulled apart rather than sheared cleanly. This happens when the anvil edge has rounded off or when the anvil has been improperly shimmed after blade replacement. Reset the clearance to OEM specification using a feeler gauge. If the anvil edge cannot be resharpened to a clean, straight edge (due to deep chips or cracks), replace the anvil.",
+            "Lascas longas e fibrosas — às vezes chamadas de “espaguete” ou “fios” — indicam que a folga entre a lâmina e a bigorna está muito grande. A madeira está sendo rasgada e separada, em vez de ser cortada de forma limpa. Isso ocorre quando a borda da bigorna está desgastada ou quando a bigorna foi calçada incorretamente após a troca da lâmina. Reajuste a folga de acordo com as especificações do fabricante original (OEM) usando um calibrador de folga. Se a borda da bigorna não puder ser reafiada para ficar lisa e reta (devido a lascas profundas ou rachaduras), substitua a bigorna.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question: "Vocês são uma empresa comercial ou um fabricante direto?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades and anvils.",
+            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas e bigornas.",
         },
         {
           question:
-            "Can you supply matched blade + anvil sets for my specific chipper model?",
+            "Vocês podem fornecer conjuntos de lâminas e bigornas compatíveis com o meu modelo específico de triturador?",
           answer:
-            "Yes. We strongly recommend purchasing blades and anvils as matched sets — manufactured from the same steel batch and heat-treated in the same vacuum furnace cycle. This ensures balanced hardness and wear rates across both components. Provide your chipper make and model number, and we will supply a complete matched set with pre-verified clearance recommendations. Matched sets are available for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck, and Forst platforms.",
+            "Sim. Recomendamos enfaticamente a compra de lâminas e bigornas como conjuntos combinados — fabricados a partir do mesmo lote de aço e submetidos a tratamento térmico no mesmo ciclo de forno a vácuo. Isso garante dureza e taxas de desgaste equilibradas em ambos os componentes. Forneça a marca e o número do modelo do seu triturador, e nós forneceremos um conjunto completo combinado com recomendações de folga pré-verificadas. Conjuntos combinados estão disponíveis para as plataformas Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck e Forst.",
         },
         {
           question:
-            "Can you manufacture an anvil for my chipper if it is not listed in your standard dimensions?",
+            "Vocês podem fabricar uma bigorna para o meu triturador, caso ela não esteja listada nas dimensões padrão de vocês?",
           answer:
-            "Yes. Send us your existing anvil, a technical drawing, or your chipper make and model number. We reverse-engineer replacement anvils from OEM drawings or physical samples, verifying fit on a CMM before production. Custom lengths up to 600 mm are manufactured within 10–15 working days.",
+            "Sim. Envie-nos sua bigorna atual, um desenho técnico ou a marca e o número do modelo do seu triturador. Realizamos a engenharia reversa de bigornas de reposição a partir de desenhos do fabricante original (OEM) ou amostras físicas, verificando o encaixe em uma máquina de medição por coordenadas (CMM) antes da produção. Comprimentos personalizados de até 600 mm são fabricados em um prazo de 10 a 15 dias úteis.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement anvils in stock sizes typically ship within 48–72 hours. Custom dimensions take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Sim, exportamos para mais de 50 países. As bigornas de reposição OEM padrão, nos tamanhos disponíveis em estoque, geralmente são despachadas em 48 a 72 horas. As dimensões personalizadas levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
         },
         {
-          question: "What quality documentation ships with each anvil?",
+          question: "Que tipo de documentação é fornecida com cada bigorna?",
           answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
+            "Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional (comprimento, largura, espessura, paralelismo e posições dos furos de montagem) e um certificado de lote tratamento térmico. Para conjuntos combinados de lâmina e bigorna, um relatório de inspeção combinado documenta a dureza de ambos os componentes para verificar o diferencial de dureza projetado.",
         },
       ],
     },
   },
   {
     id: "slitter-rewinder-bottom-knives",
-    name: "Slitter Rewinder Bottom Knives",
+    name: "Facas inferiores de cortadoras-rebobinadoras",
     fullName:
-      "Carbide Slitter Rewinder Bottom Knives for Paper & Film Rewinding Lines",
+      "Facas inferiores de cortadoras-rebobinadoras de carboneto para linhas de rebobinagem de papel e filme",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte",
     image:
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Mirror Finish",
+    badge: "Acabamento espelhado",
     badgeColor: "blue",
     gallery: [
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
@@ -6328,17 +6383,17 @@ export const blades: Blade[] = [
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
     ],
     galleryAlts: [
-      "Range of slitter rewinder bottom knives and blade rings in four diameters",
-      "Pair of carbide slitter rewinder bottom knives showing bore and bolt holes",
-      "Single slitter rewinder bottom knife ring with mirror-finished running face",
+      "Linha de facas inferiores e anéis de lâmina para cortadoras-rebobinadoras em quatro diâmetros",
+      "Par de facas inferiores de cortadora-rebobinadora de carboneto, mostrando o furo central e os orifícios para parafusos",
+      "Anel de lâmina inferior para cortadora-rebobinadora simples com superfície de contato com acabamento espelhado",
     ],
     description:
-      "Solid and carbide-tipped bottom knives for high-speed paper slitter rewinders. Mirror-finished faces, burr-free cutting and reduced dust in the wound roll. Φ250–Φ254 stock sizes in thicknesses from 15 to 50 mm, custom bores to machine. Fits Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban and other electric rewinder platforms.",
+      "Lâminas inferiores sólidas e com ponta de metal duro para cortadoras-rebobinadoras de papel de alta velocidade. Superfícies com acabamento espelhado, corte sem rebarbas e redução da poeira no rolo enrolado. Tamanhos padrão de Φ250–Φ254 em espessuras de 15 a 50 mm, furos personalizados para a máquina. Compatível com Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban e outras plataformas de rebobinadoras elétricas.",
     fullDescription:
-      "The bottom knife on a slitter rewinder is the fixed half of a shear pair, and it is deliberately the harder half. That hardness differential between top and bottom knife is not incidental — it is the mechanism that keeps the cut clean. When the two knives are close in hardness, the shear zone deforms rather than shears, and the result is a burred slit edge and dust carried into the wound roll.\n\nSureay bottom knives are supplied in solid tungsten carbide and carbide-tipped construction, with mirror-finished faces and a keen, precisely located edge. On the tipped version the carbide is set by a controlled hot-setting process so the inserts stay bonded under high-speed running rather than loosening in service, and worn inserts can be replaced without scrapping the body.\n\n## Why Dust in the Roll Is a Bottom Knife Problem\n\nOperators usually chase dust upstream — web cleaners, static bars, extraction. Often the source is the slit itself. A bottom knife whose edge has rounded or whose face has lost its finish stops shearing and starts crushing, and crushed paper fibre becomes airborne dust that is wound directly into the roll and shows up as a converting defect two processes later. If dust appeared gradually rather than after a grade change, the bottom knife is the first thing to inspect.\n\n## Materials by Substrate\n\nSolid tungsten carbide is the longest-life choice and the right answer on abrasive and heavily coated stocks. Carbide-tipped is the best cost-to-life balance for general paper, and it has the practical advantage of being re-tippable. HSS remains reasonable for short runs on soft stocks and lowest unit cost.\n\n## Applications\n\nPaper, film, foil and similar web materials on electric slitter rewinder platforms — reel slitting, roll converting and rewinding lines running coated and uncoated paper, board, and light flexible substrates.\n\n## The Hardness Differential Is the Whole Mechanism\n\nA shear cut needs a hardness differential to stay a shear cut. When top and bottom knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and the outputs are a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often, and why replacing both on the same cycle wastes serviceable tooling. Matching the two hardnesses is a common and expensive specification mistake, and it is worth checking on any line where slit quality has drifted after a tooling change.\n\n## Dust in the Roll Usually Starts at the Slit\n\nOperators chase dust upstream — web cleaners, static bars, extraction — when the source is frequently the cut itself. A bottom knife whose edge has rounded, or whose face finish has dulled, stops shearing and starts crushing; crushed fibre is wound directly into the roll and shows up as a converting defect two processes later. The timing is the tell: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish rather than testing sharpness by feel, because face finish degrades before the edge does and raises dust well before anyone would call the knife blunt.\n\n## Solid Carbide or Carbide-Tipped\n\nSolid tungsten carbide gives the longest single service life and is the right answer on abrasive and heavily coated stocks, but when the edge is spent the knife is spent. Carbide-tipped costs less, lasts less per cycle, and is re-tippable: provided the body is straight and true and the braze seats are sound, worn inserts are replaced and the knife returns to service. That re-tippability is usually the deciding factor when the economics between the two are close. On the tipped construction the inserts are hot-set under controlled conditions so they stay bonded at rewinder speeds rather than loosening in service — braze quality, not carbide grade, is what limits the life of a badly made tipped knife.\n\n## What We Need to Match Your Machine\n\nBottom knives are made to the machine in every case, so the listed rewinder platforms are the ones we see most often rather than a limit. To quote, send the OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, the line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption. Knives ship individually with the edge protected and VCI paper against corrosion, crated for the larger diameters, because a bottom knife that arrives with a nicked edge is useless however well it was ground.",
+      "A lâmina inferior de uma cortadora-rebobinadora é a metade fixa de um par de lâminas de corte e é, propositalmente, a metade mais dura. Essa diferença de dureza entre a lâmina superior e a inferior não é acidental — é o mecanismo que garante um corte limpo. Quando as duas lâminas têm durezas próximas, a zona de corte se deforma em vez de cortar, e o resultado é uma borda de corte com rebarbas e poeira transportada para o rolo enrolado.\n\nAs lâminas inferiores da Sureay são fornecidas na construção sólida metal duro e com ponta de metal duro, com faces com acabamento espelhado e um fio afiado e posicionado com precisão. Na versão com ponta de metal duro, o metal duro é fixado por um processo controlado de fixação a quente, de modo que as inserções permaneçam fixadas durante a operação em alta velocidade, em vez de se soltarem durante o uso, e as inserções desgastadas possam ser substituídas sem a necessidade de descartar o corpo da lâmina.\n\n## Por que a poeira no rolo é um problema da lâmina inferior\n\nOs operadores geralmente tentam eliminar a poeira a montante — limpadores de banda, barras estáticas, extração. Muitas vezes, a fonte é a própria fenda. Uma lâmina inferior cujo gume esteja arredondado ou cuja face tenha perdido o acabamento deixa de cortar e passa a esmagar, e as fibras de papel esmagadas se transformam em poeira suspensa no ar que é enrolada diretamente no rolo e aparece como um defeito de conversão dois processos depois. Se a poeira surgir gradualmente, em vez de após uma mudança de tipo de papel, a faca inferior é a primeira coisa a ser inspecionada.\n\n## Materiais por substrato\n\nA lâmina sólida metal duro é a opção de maior durabilidade e a escolha certa para materiais abrasivos e com revestimento espesso. A lâmina com ponta de carboneto oferece o melhor equilíbrio entre custo e durabilidade para papel comum, além de ter a vantagem prática de permitir a recarga da ponta. O HSS continua sendo uma opção razoável para tiragens curtas em materiais macios e com o menor custo unitário.\n\n## Aplicações\n\nPapel, filme, folha metálica e materiais em banda semelhantes em plataformas elétricas de corte e rebobinagem — linhas de corte de bobinas, conversão de rolos e rebobinagem que processam papel revestido e não revestido, papelão e substratos flexíveis leves.\n\n## O diferencial de dureza é o mecanismo fundamental\n\nUm corte por cisalhamento precisa de um diferencial de dureza para permanecer como tal. Quando as lâminas superior e inferior têm durezas próximas, o material na zona de cisalhamento se deforma em vez de se separar de forma limpa, e os resultados são uma borda de corte com rebarbas e fibras esmagadas que se transformam em pó no rolo. A lâmina inferior, mais dura, mantém uma geometria estável da borda, enquanto a lâmina superior, mais macia, arca com o desgaste — e é também por isso que se espera que a lâmina superior seja trocada com mais frequência, e por que a substituição de ambas no mesmo ciclo desperdiça ferramentas ainda em bom estado. Equiparar as duas durezas é um erro comum e dispendioso de especificação, e vale a pena verificar em qualquer linha em que a qualidade do corte tenha se deteriorado após uma troca de ferramentas.\n\n## A poeira no rolo geralmente começa no corte\n\nOs operadores procuram a origem da poeira a montante — limpadores de banda, barras estáticas, extração — quando a fonte é, com frequência, o próprio corte. Uma lâmina inferior cujo fio ficou arredondado, ou cujo acabamento da face ficou opaco, deixa de cortar e começa a esmagar; a fibra esmagada é enrolada diretamente no rolo e aparece como um defeito de conversão dois processos depois. O momento em que ocorre é o indício: poeira que apareceu gradualmente aponta para a lâmina; poeira que apareceu após uma mudança de tipo de material aponta para o substrato. Inspecione a aresta sob ampliação e verifique o acabamento da face, em vez de testar o fio pelo toque, pois o acabamento da face se degrada antes da aresta e gera poeira bem antes que alguém considere a lâmina cega.\n\n## Metal duro maciço ou com ponta de metal duro\n\nO metal duro maciço oferece a maior vida útil única e é a escolha certa para materiais abrasivos e com revestimento espesso, mas, quando a lâmina se desgasta, a faca fica inutilizada. A faca com ponta de metal duro custa menos, dura menos por ciclo e permite a substituição da ponta: desde que o corpo esteja reto e alinhado e os assentos de brasagem estejam em boas condições, os insertos desgastados são substituídos e a faca volta a funcionar. Essa possibilidade de substituição da ponta costuma ser o fator decisivo quando a relação custo-benefício entre as duas opções é semelhante. Na construção com ponta, os insertos são fixados a quente sob condições controladas para que permaneçam unidos nas velocidades da rebobinadora, em vez de se soltarem durante o uso — a qualidade da soldagem, e não o tipo de metal duro, é o que limita a vida útil de uma faca com ponta mal fabricada.\n\n## O que precisamos para adequar à sua máquina\n\nAs facas inferiores são fabricadas sob medida para a máquina em todos os casos; portanto, as plataformas de rebobinadoras listadas são aquelas que vemos com mais frequência, e não um limite. Para solicitar um orçamento, envie o diâmetro externo (OD), o furo e a espessura da faca que você utiliza atualmente, a especificação da faca superior correspondente, o material que você está cortando, a velocidade da linha e o número de cortes. Caso algum desses dados seja desconhecido, envie a faca desgastada ou fotografias com um paquímetro em quadro — preferimos fazer engenharia reversa a partir de uma amostra do que fazer um orçamento com base em suposições. As lâminas são enviadas individualmente com o gume protegido e papel VCI contra corrosão, embaladas em caixotes para os diâmetros maiores, pois uma lâmina inferior que chega com o gume lascado é inútil, por melhor que tenha sido afiada.",
     link: "/products/slitter-rewinder-bottom-knives",
     disambiguation:
-      "These are circular bottom knives that run as a shear pair with a top knife on rewinding lines. If you need flat anvils for crush cutting instead, see [Bottom Grooved Anvil Knives](/products/bottom-grooved-anvil-knives).",
+      "Trata-se de facas inferiores circulares que funcionam como um par de cisalhamento com uma faca superior em linhas de rebobinagem. Se você precisar, em vez disso, de bigornas planas para corte por esmagamento, consulte [Facas com bigorna ranhurada na parte inferior](/products/bottom-grooved-anvil-knives).",
     compatibleMachines: [
       "Beck",
       "Bielomatik",
@@ -6384,11 +6439,11 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "Item",
-      col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
+      col1: "Diâmetro externo × Diâmetro interno (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura T (mm)",
       caption:
-        "* Standard rewinder bottom knife sizes. Bore, thickness and edge geometry are matched to the machine — send the OD/ID/T of the knife you run now plus the matching top knife spec.",
+        "* Tamanhos padrão das lâminas inferiores do rebobinador. O diâmetro interno, a espessura e a geometria do gume são adaptados à máquina — envie o diâmetro externo (OD), o diâmetro interno (ID) e a espessura (T) da lâmina que você utiliza atualmente, além das especificações da lâmina superior correspondente.",
     },
     standardDimensions: [
       {
@@ -6418,56 +6473,57 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "The bottom knife should always be the harder half of the pair. Within that rule, the grade is chosen on how abrasive the substrate is and on whether you want a re-tippable body.",
+        "A lâmina inferior deve ser sempre a mais dura do par. Dentro dessa regra, o grau é escolhido com base no grau de abrasividade do substrato e na necessidade de um corpo com ponta recarregável.",
       rows: [
         {
-          grade: "Solid tungsten carbide",
+          grade: "Sólido metal duro",
           hardness: "HRA 89–91",
           bestFor:
-            "Abrasive and heavily coated stocks; the longest interval between changes",
+            "Lâminas abrasivas e com revestimento espesso; o maior intervalo entre as trocas",
           tradeoff:
-            "Highest unit price, and the whole knife is scrapped when the edge is spent",
+            "O preço unitário é o mais alto, e a faca inteira é descartada quando o fio se desgasta",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
+          grade: "Com ponta de carboneto",
+          hardness: "HRA 89–91 na ponta",
           bestFor:
-            "General paper and board — the best cost-to-life balance, and re-tippable",
+            "Papel comum e papelão — a melhor relação custo-duração, além de poderem ser reutilizados",
           tradeoff:
-            "Braze quality decides service life; poorly set inserts loosen at speed",
+            "A qualidade da soldagem determina a vida útil; os insertos mal fixados se soltam com a velocidade",
         },
         {
           grade: "HSS",
           hardness: "62–64 HRC",
-          bestFor: "Short runs, soft uncoated stocks, lowest unit cost",
+          bestFor:
+            "Pequenas tiragens, papéis não revestidos e macios, menor custo unitário",
           tradeoff:
-            "Edge rounds quickly at rewinder speeds, which is where dust in the roll begins",
+            "A borda fica arredondada rapidamente às velocidades do rebobinador, que é onde começa a formação de poeira no rolo",
         },
       ],
       outro:
-        "Whichever grade you choose, keep the hardness differential with the top knife. Matching the two hardnesses is a common and expensive mistake — it removes the shear and leaves you crushing the web.",
+        "Seja qual for o grau que você escolher, mantenha a diferença de dureza em relação à lâmina superior. Igualar as duas durezas é um erro comum e caro — isso elimina o cisalhamento e faz com que você acabe esmagando a banda.",
     },
     components: [
       {
         id: "hardness-differential",
-        tag: "SHEAR MECHANICS",
-        title: "Deliberately Harder Than the Top Knife",
+        tag: "MECÂNICA DE CORTES",
+        title: "Deliberadamente mais duro do que a lâmina superior",
         description:
-          "The bottom knife is specified harder than its mating top knife on purpose. That differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll.",
+          "A lâmina inferior é propositalmente mais dura do que a lâmina superior com a qual se acopla. Essa diferença é o que faz com que o par realize o corte por cisalhamento, em vez de deformar a banda, e é a causa direta das bordas cortadas sem rebarbas e do baixo transporte de poeira para o rolo enrolado.",
       },
       {
         id: "mirror-face-finish",
-        tag: "SURFACE FINISH",
-        title: "Mirror-Finished Running Face",
+        tag: "ACABAMENTO DA SUPERFÍCIE",
+        title: "Superfície de trabalho com acabamento espelhado",
         description:
-          "A polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut. Face finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out.",
+          "Uma face polida desliza sobre a tela em vez de arrastar-se nela, o que mantém a fenda limpa e reduz o calor de atrito no ponto de corte. O acabamento da face é uma das primeiras coisas a se desgastar durante o uso e uma das últimas que os operadores verificam — uma face sem brilho levanta poeira muito antes que a própria borda esteja desgastada.",
       },
       {
         id: "hot-set-carbide",
-        tag: "CONSTRUCTION",
-        title: "Controlled Hot-Set Carbide Inserts",
+        tag: "CONSTRUÇÃO",
+        title: "Insertos de carboneto com endurecimento a quente controlado",
         description:
-          "On the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running. The practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped.",
+          "Na construção com ponta removível, os insertos são fixados a quente em condições controladas, de modo que permaneçam firmemente fixados durante a operação em alta velocidade. A vantagem prática é um corpo com ponta removível: os insertos desgastados são substituídos e a faca volta a funcionar, em vez de ser descartada.",
       },
     ],
     relatedBladeIds: [
@@ -6476,61 +6532,65 @@ export const blades: Blade[] = [
       "tungsten-carbide-slitter-knives",
     ],
     rfqPlaceholder:
-      "Example: Jagenberg rewinder, bottom knife Φ250 × Φ188 × 25 mm, matched to a Φ200 top knife. Slitting 120 gsm coated paper at 800 m/min, 12 slits. Getting dust in the roll and a slightly burred edge.",
+      "Exemplo: Rebobinadora Jagenberg, lâmina inferior Φ250 × Φ188 × 25 mm, combinada com uma lâmina superior de Φ200. Corte transversal de papel revestido de 120 g/m² a 800 m/min, com 12 cortes. Observa-se a presença de poeira no rolo e uma borda ligeiramente com rebarbas.",
     faqs: {
       technical: [
         {
-          question: "Why should the bottom knife be harder than the top knife?",
+          question:
+            "Por que a lâmina inferior deveria ser mais dura do que a lâmina superior?",
           answer:
-            "Because a shear cut needs a hardness differential to stay a shear cut. When the two knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and you get a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often. Matching the hardnesses is a common and expensive mistake.",
+            "Isso porque um corte por cisalhamento precisa de um diferencial de dureza para se manter como tal. Quando as duas lâminas têm durezas próximas, o material na zona de cisalhamento se deforma em vez de se separar de forma limpa, e o resultado é uma borda de corte com rebarbas e fibras esmagadas que se transformam em pó no rolo. A lâmina inferior, mais dura, mantém uma geometria de corte estável, enquanto a lâmina superior, mais macia, arca com o desgaste — e é também por isso que a lâmina superior é aquela que você espera trocar com mais frequência. Equilibrar as durezas é um erro comum e caro.",
         },
         {
           question:
-            "I am getting dust in the wound roll. Where should I look first?",
+            "Está entrando poeira na bobina de ferimento. Onde devo procurar primeiro?",
           answer:
-            "At the slit itself, before the web cleaners and static bars. A bottom knife whose edge has rounded or whose face finish has dulled stops shearing and starts crushing, and crushed fibre goes straight into the roll — often showing up as a defect two processes later. The tell is timing: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish, not just sharpness by feel.",
+            "Na própria fenda, antes dos limpadores de banda e das barras estáticas. Uma lâmina inferior cujo gume esteja arredondado ou cujo acabamento da face esteja embotado deixa de cortar e passa a esmagar, e a fibra esmagada vai diretamente para o rolo — muitas vezes aparecendo como um defeito duas etapas depois. O indício está no momento em que o problema ocorre: poeira que apareceu gradualmente aponta para a lâmina; poeira que apareceu após uma mudança de tipo de papel aponta para o substrato. Inspecione o fio sob ampliação e verifique o acabamento da superfície, não apenas o afiamento pelo toque.",
         },
         {
           question:
-            "Can I order bottom knives without replacing the top knives?",
+            "Posso encomendar facas inferiores sem substituir as facas superiores?",
           answer:
-            "Yes, and it is the normal way these are bought. Bottom knives typically outlast top knives by a wide margin, so replacing them on the same cycle wastes serviceable tooling. Give us the bottom knife OD/ID/thickness and the matching top knife specification, and we will match the mating geometry and the hardness differential to what you already run.",
+            "Sim, e essa é a forma padrão como elas são adquiridas. As lâminas inferiores geralmente duram muito mais do que as superiores, portanto, substituí-las no mesmo ciclo representa um desperdício de ferramentas ainda em bom estado. Forneça-nos o diâmetro externo (OD), o diâmetro interno (ID) e a espessura da lâmina inferior, bem como as especificações da lâmina superior correspondente, e nós ajustaremos a geometria de encaixe e o diferencial de dureza de acordo com o que vocês já utilizam.",
         },
         {
-          question: "Can worn carbide-tipped knives be re-tipped?",
+          question:
+            "É possível refazer a ponta de facas com ponta de carboneto que estão gastas?",
           answer:
-            "Yes, provided the body is straight and true and the braze seats are sound. Re-tipping is substantially cheaper than a new knife and is the reason to choose tipped over solid carbide when the economics are close. Solid carbide cannot be re-tipped — when the edge is spent the knife is spent, which is the trade you accept for the longest single service life.",
+            "Sim, desde que o corpo esteja reto e alinhado e que os assentos de soldagem estejam em boas condições. A troca da ponta é consideravelmente mais barata do que uma faca nova e é o motivo para se optar por facas com ponta substituível em vez das de metal duro maciço quando os custos são semelhantes. As lâminas de metal duro maciço não podem ter a ponta substituída — quando o fio se desgasta, a lâmina está inutilizada, o que é a contrapartida que você aceita em troca da vida útil mais longa.",
         },
       ],
       company: [
         {
-          question: "What do you need to quote a bottom knife?",
+          question:
+            "O que é necessário para fazer um orçamento de uma lâmina inferior?",
           answer:
-            "OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption.",
+            "Diâmetro externo (OD), diâmetro interno e espessura da lâmina que você utiliza atualmente, as especificações da lâmina superior correspondente, o material que está sendo cortado, a velocidade da linha de produção e o número de cortes. Caso algum desses dados seja desconhecido, envie a lâmina desgastada ou fotografias com um paquímetro em quadro — preferimos fazer a engenharia reversa a partir de uma amostra do que fornecer um orçamento com base em suposições.",
         },
         {
           question:
-            "Do you supply for rewinder brands outside the list on this page?",
+            "Vocês fornecem peças para marcas de rebobinadoras que não constam na lista desta página?",
           answer:
-            "Yes. The listed platforms are the ones we see most often, not a limit — bottom knives are made to the machine in every case. Any electric slitter rewinder is in scope once we have the mounting dimensions and the mating top knife specification.",
+            "Sim. As plataformas listadas são as que vemos com mais frequência, mas não representam um limite — as lâminas inferiores são fabricadas sob medida para a máquina em todos os casos. Qualquer cortadora-rebobinadora elétrica está dentro do escopo, desde que tenhamos as dimensões de montagem e as especificações da lâmina superior correspondente.",
         },
         {
-          question: "How are these packed?",
+          question: "Como eles são embalados?",
           answer:
-            "Individually, with the edge protected and VCI paper against corrosion, in a fitted crate for the larger diameters. Bottom knives that arrive with a nicked edge are useless regardless of how they were made, so the packing is specified for the transit rather than for the shelf.",
+            "Em embalagens individuais, com a lâmina protegida e papel VCI contra corrosão; para os diâmetros maiores, em uma caixa sob medida. As lâminas inferiores que chegam com o fio danificado são inutilizáveis, independentemente de como foram fabricadas; portanto, a embalagem é especificada para o transporte, e não para o armazenamento.",
         },
       ],
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Box Slotting Knives",
-    fullName: "Precision Carbide Slotting Knives for Rigid & Gift Box Grooving",
+    name: "Facas para ranhuras em caixas",
+    fullName:
+      "Facas de corte em metal duro de precisão para ranhuras em caixas rígidas e de presente",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Packaging & Board Knives",
+    categoryDisplay: "Facas para embalagens e papelão",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Left / Right Pairs",
+    badge: "Pares esquerda/direita",
     badgeColor: "teal",
     gallery: [
       "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
@@ -6538,14 +6598,14 @@ export const blades: Blade[] = [
       "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
     ],
     galleryAlts: [
-      "Six carbide box slotting knives fanned out to show the stock length and width range",
-      "Pair of carbide box slotting knives showing the ground grooving bevel",
-      "Box slotting knives in labelled protective cases alongside two loose knives",
+      "Seis facas de ranhura em caixa de metal duro dispostas em leque para mostrar a variação do comprimento e da largura do material em bruto",
+      "Par de facas de corte para caixas de carboneto, mostrando o bisel retificado para ranhura",
+      "Facas para entalhar caixas em estojos protetores rotulados, juntamente com duas facas avulsas",
     ],
     description:
-      "Carbide slotting knives for greyboard V-grooving on rigid and gift box lines. Supplied as left- and right-hand pairs in five stock sizes from 50 × 12 mm to 60 × 15 mm, 2.0 / 2.2 mm thick, in GS05U wear-optimised and GS20U tough carbide grades. Clean grooves without tearing or fraying the board face, adjustable to board thickness.",
+      "Facas de corte em metal duro para ranhura em V em papelão cinza em linhas de produção de caixas rígidas e de presente. Fornecidas em pares para o lado esquerdo e direito em cinco tamanhos padrão, de 50 × 12 mm a 60 × 15 mm, com espessura de 2,0 / 2,2 mm, nas classes de metal duro GS05U, otimizada para resistência ao desgaste, e GS20U, de alta resistência. Ranhuras limpas, sem rasgar ou desfiar a superfície do papelão, ajustáveis à espessura do papelão.",
     fullDescription:
-      "A rigid box is only as good as its groove. The V-groove cut into greyboard controls how the board folds, and a groove that tears or frays the face liner shows through the wrap as a visible defect on a product that is bought precisely because it looks expensive. On gift and luxury box work there is no acceptable tolerance for a ragged groove.\n\nSureay slotting knives are ground from high-grade tungsten carbide and supplied as matched left- and right-hand pairs, because that is how they cut. The two knives work together to form the groove walls; running a new knife against a worn one produces an asymmetric groove that folds off-square, which is why we quote and ship them as pairs rather than as units.\n\n## Two Grades, One Decision\n\nGS05U is the higher-hardness, wear-optimised grade and the right choice for standard greyboard on long runs. GS20U trades some hardness for toughness and is the grade for thick board and for recycled board carrying inclusions — the same distinction that runs through every carbide application, expressed here in board terms. Choosing GS05U for recycled board with grit in it is the most common way these knives get chipped.\n\n## Adjustable to Board Thickness\n\nThe knife gap is set to the board being run, so one pair covers a range of board calipers rather than being locked to a single thickness. In practice that means a rigid box line changing between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width is within range.\n\n## Applications\n\nGreyboard V-grooving on rigid box and gift box lines: luxury packaging, cosmetics and spirits boxes, presentation cases, hardcover book board, and standard rigid cartons.\n\n## Why We Quote in Pairs\n\nThe two knives form the groove walls together, so they are ground, matched and shipped as a pair, and they should be changed as one. Running a new knife against a worn one cuts an asymmetric groove, and an asymmetric groove folds off-square — a defect that shows through the wrap on precisely the products that can least afford it. Replacing a single knife is also usually a missed diagnosis: an early single-knife failure normally means an inclusion strike or a setting fault, and both will happen again to the replacement. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month and we will quote a schedule rather than a one-off quantity, because most rigid box lines are better served by a standing order than by ordering when the last pair fails.\n\n## GS05U or GS20U — Decide on the Board, Not the Run Length\n\nGS05U is harder and wears more slowly, which makes it right for clean virgin greyboard. GS20U trades hardness for toughness and survives inclusions, which makes it right for thick board and recycled stock. The failure modes differ and that is the entire decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year even though it tests softer and shows shorter edge life on a clean-board trial. Choosing the hardest available grade for contaminated board is the most common way these knives get destroyed.\n\n## Fraying Grooves: Edge or Setting\n\nA fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it. Check the edges first. If they are still keen, look at the knife gap relative to board caliper — too wide and the board is torn open rather than cut, too tight and the face is crushed. The timing separates the two causes reliably: setting problems appear immediately after a changeover, edge problems appear gradually over a run. Because the knife gap is set to the board rather than fixed, a single pair covers a range of calipers, so a line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools provided the groove width stays in range.\n\n## Sizes and Machines Outside the List\n\nThe five stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing, and any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. If you have no drawing, send a worn knife or photographs with a caliper in frame and we return a dimensioned drawing for approval before manufacture. We would rather work from your actual tooling than from a compatibility claim. Stock sizes typically ship within a few working days; made-to-drawing geometries run 15–25 working days from drawing approval, and repeat orders against an approved drawing quote the same day.",
+      "A qualidade de uma caixa rígida depende inteiramente da qualidade de sua ranhura. A ranhura em V cortada no papelão cinza controla a forma como a placa se dobra, e uma ranhura que rasga ou desfiou o revestimento externo fica visível através do revestimento externo como um defeito perceptível em um produto que é comprado justamente por parecer caro. No trabalho com caixas para presentes e de luxo, não há tolerância aceitável para uma ranhura irregular.\n\nAs lâminas de ranhura Sureay são retificadas a partir de zGTR0 de alta qualidade e fornecidas em pares combinados de esquerda e direita, pois é assim que elas cortam. As duas lâminas trabalham juntas para formar as paredes da ranhura; usar uma lâmina nova junto com uma desgastada produz uma ranhura assimétrica que se dobra fora de esquadria, e é por isso que as cotamos e enviamos em pares, em vez de unidades avulsas.\n\n## Dois tipos, uma decisão\n\nO GS05U é a classe de maior dureza, otimizada contra desgaste, e a escolha certa para papelão cinza padrão em tiragens longas. O GS20U troca um pouco de dureza por tenacidade e é a classe indicada para papelão espesso e para papelão reciclado com inclusões — a mesma distinção que se aplica a todas as aplicações de carboneto, expressa aqui em termos de papelão. Escolher a GS05U para papelão reciclado com partículas de areia é a causa mais comum de lascas nessas lâminas.\n\n## Ajustável à espessura do papelão\n\nA abertura entre as lâminas é ajustada de acordo com o papelão em produção, de modo que um par cobre uma variedade de espessuras de papelão, em vez de ficar restrito a uma única espessura. Na prática, isso significa que uma linha de caixas rígidas que alterna entre papelão cinza de 1,5 mm e 3 mm de espessura se ajusta em vez de precisar de reequipamento, desde que a largura do sulco esteja dentro da faixa permitida.\n\n## Aplicações\n\nRanhura em V em papelão cinza em linhas de caixas rígidas e caixas para presentes: embalagens de luxo, caixas para cosméticos e bebidas alcoólicas, estojos de apresentação, papelão para capas duras de livros e caixas rígidas padrão.\n\n## Por que fazemos cotações em pares\n\nAs duas lâminas formam juntas as paredes da ranhura; portanto, são afiadas, combinadas e enviadas como um par, e devem ser trocadas juntas. Utilizar uma lâmina nova junto com uma desgastada resulta em uma ranhura assimétrica, e uma ranhura assimétrica faz com que a dobra fique desalinhada — um defeito que fica visível através do revestimento justamente nos produtos que menos podem arcar com isso. Substituir uma única lâmina também costuma ser um diagnóstico incorreto: uma falha precoce em uma única lâmina normalmente significa um impacto de inclusão ou uma falha de ajuste, e ambos ocorrerão novamente com a lâmina de reposição. Informe-nos quantas estações de ranhura a linha possui e quantos pares vocês consomem em um mês típico, e nós apresentaremos um cronograma de fornecimento em vez de uma cotação para uma quantidade única, pois a maioria das linhas de caixas rígidas se beneficia mais de um pedido contínuo do que de encomendas feitas apenas quando o último par falha.\n\n## GS05U ou GS20U — Decida com base no tipo de papelão, não na extensão da tiragem\n\nO GS05U é mais duro e se desgasta mais lentamente, o que o torna ideal para papelão cinza virgem limpo. O GS20U troca a dureza pela resistência e resiste a inclusões, o que o torna ideal para papelão espesso e material reciclado. Os modos de falha diferem e essa é a essência da decisão: uma lâmina desgastada é reafiada e volta ao serviço, enquanto uma lascada é descartada. Se sua mistura de papelão incluir qualquer material reciclado, o GS20U geralmente custa menos ao longo de um ano, mesmo que seja mais macio nos testes e apresente menor vida útil da lâmina em um teste com papelão limpo. Escolher o grau mais duro disponível para papelão contaminado é a maneira mais comum de essas lâminas serem destruídas.\n\n## Ranhuras Desgastadas: Lâmina ou Ajuste\n\nUma face de ranhura desgastada é o sinal de uma lâmina que parou de cortar a fibra e começou a empurrá-la. Verifique primeiro as lâminas. Se elas ainda estiverem afiadas, observe a folga da faca em relação à espessura da placa — se estiver muito larga, a placa é rasgada em vez de cortada; se estiver muito apertada, a superfície fica amassada. O tempo de ocorrência diferencia as duas causas de maneira confiável: problemas de ajuste aparecem imediatamente após uma troca, enquanto problemas na lâmina surgem gradualmente ao longo de uma tiragem. Como a abertura da lâmina é ajustada à placa em vez de ser fixa, um único par cobre uma faixa de espessuras; assim, uma linha que trabalhe com papelão cinza com espessuras entre 1,5 mm e 3 mm se ajusta em vez de exigir troca de ferramentas, desde que a largura do sulco permaneça dentro da faixa.\n\n## Tamanhos e máquinas fora da lista\n\nOs cinco tamanhos padrão são os mais solicitados, mas não constituem um limite — comprimentos, larguras e geometria das bordas são fabricados conforme desenho, e qualquer linha de ranhura em V em papelão cinza ou de ranhura em caixas rígidas está dentro do escopo, desde que tenhamos a geometria das lâminas. Caso você não tenha um desenho, envie uma lâmina desgastada ou fotografias com um paquímetro no enquadramento, e nós enviaremos um desenho com dimensões para aprovação antes da fabricação. Preferimos trabalhar com base em suas ferramentas reais do que em uma alegação de compatibilidade. Os tamanhos padrão são normalmente enviados em poucos dias úteis; geometrias feitas sob medida levam de 15 a 25 dias úteis a partir da aprovação do desenho, e pedidos repetidos com base em um desenho aprovado são cotados no mesmo dia.",
     link: "/products/box-slotting-knives",
     specs: [
       {
@@ -6579,10 +6639,10 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "Item",
-      col1: "L × W (mm)",
-      col2: "Thickness T (mm)",
+      col1: "C × L (mm)",
+      col2: "Espessura T (mm)",
       caption:
-        "* Five stock sizes, supplied as left- and right-hand pairs. Other lengths, widths and edge geometries made to drawing or reverse-engineered from a worn knife.",
+        "* Cinco tamanhos padrão, fornecidos em pares para a mão esquerda e direita. Outros comprimentos, larguras e geometrias de lâmina são fabricados conforme desenho ou por engenharia reversa a partir de uma faca desgastada.",
     },
     standardDimensions: [
       {
@@ -6613,48 +6673,49 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "The grade decision on slotting knives is wear against toughness, and the board tells you which one you need. Clean virgin greyboard wears an edge; recycled board with inclusions chips it.",
+        "A escolha do tipo de lâmina para corte depende do equilíbrio entre desgaste e resistência, e o tipo de papelão indica qual você precisa. O papelão cinza virgem limpo desgasta a lâmina; o papelão reciclado com inclusões a lasca.",
       rows: [
         {
           grade: "GS05U",
-          hardness: "Higher hardness, wear-optimised",
+          hardness: "Maior dureza, otimizado contra o desgaste",
           bestFor:
-            "Standard virgin greyboard on long production runs — the default grade",
+            "Papelão cinza virgem padrão em tiragens longas — o tipo padrão",
           tradeoff:
-            "Less forgiving of inclusions; chips rather than wears if the board is contaminated",
+            "Menos tolerante a impurezas; apresenta lascas em vez de desgaste se a placa estiver contaminada",
         },
         {
           grade: "GS20U",
-          hardness: "Higher toughness",
+          hardness: "Maior tenacidade",
           bestFor:
-            "Thick board and recycled board carrying grit or other inclusions",
-          tradeoff: "Shorter edge life on clean board than GS05U",
+            "Papelão espesso e papelão reciclado contendo areia ou outras inclusões",
+          tradeoff:
+            "A vida útil das lâminas é menor na placa limpa do que no GS05U",
         },
       ],
       outro:
-        "If your board mix includes recycled stock at all, GS20U usually wins on total cost even though it loses on edge life — a chipped knife is scrapped, a worn one is reground.",
+        "Se a composição da sua placa incluir qualquer quantidade de material reciclado, o GS20U geralmente se sai melhor em termos de custo total, mesmo que tenha menor vida útil do gume — uma lâmina lascada é descartada, enquanto uma desgastada é reafiada.",
     },
     components: [
       {
         id: "matched-pairs",
-        tag: "SUPPLY FORMAT",
-        title: "Left and Right Supplied as a Pair",
+        tag: "FORMATO DE FORNECIMENTO",
+        title: "Esquerda e direita fornecidas em conjunto",
         description:
-          "The two knives form the groove walls together, so they are ground, matched and shipped as a pair. Running a new knife against a worn one produces an asymmetric groove that folds off-square — a defect that shows through the wrap on exactly the products that can least afford it.",
+          "As duas lâminas formam juntas as paredes da ranhura; por isso, são afiadas, ajustadas e enviadas como um par. Ao utilizar uma lâmina nova junto com uma desgastada, forma-se uma ranhura assimétrica que fica desalinhada — um defeito que fica visível através da embalagem justamente nos produtos que menos podem arcar com isso.",
       },
       {
         id: "clean-groove-edge",
-        tag: "SURFACE QUALITY",
-        title: "Grooves That Do Not Tear the Face",
+        tag: "QUALIDADE DA SUPERFÍCIE",
+        title: "Ranhuras que não arranham o rosto",
         description:
-          "Edge geometry is ground to sever greyboard fibre rather than push it, so the groove walls stay clean and the face liner does not fray. On rigid and gift box work the groove is the difference between a fold that looks machined and one that looks damaged.",
+          "A geometria da borda é retificada para cortar as fibras do papelão cinza, em vez de empurrá-las, de modo que as paredes da ranhura permaneçam limpas e o revestimento superficial não se desfaça. Em trabalhos com papelão rígido e caixas para presente, a ranhura é o que faz a diferença entre uma dobra com aparência de ter sido feita à máquina e uma que parece danificada.",
       },
       {
         id: "adjustable-gap",
-        tag: "PROCESS FLEXIBILITY",
-        title: "Adjustable to Board Caliper",
+        tag: "FLEXIBILIDADE DO PROCESSO",
+        title: "Ajustável ao calibrador de pranchas",
         description:
-          "Knife gap is set to the board being run, so a single pair covers a range of calipers instead of being locked to one thickness. A line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width stays in range.",
+          "A abertura entre as lâminas é ajustada de acordo com a placa que está sendo processada; assim, um único par de lâminas abrange uma variedade de espessuras, em vez de ficar limitado a uma única espessura. Uma linha de produção que trabalhe com papelão cinza com espessuras entre 1,5 mm e 3 mm se adapta à variação, sem necessidade de reajustes nas ferramentas, desde que a largura da ranhura permaneça dentro desse intervalo.",
       },
     ],
     relatedBladeIds: [
@@ -6663,61 +6724,63 @@ export const blades: Blade[] = [
       "paper-straw-slitting-blades",
     ],
     rfqPlaceholder:
-      "Example: rigid box V-grooving line, knives 50 × 15 × 2.2 mm left and right. Running 2 mm greyboard, some recycled. Groove width 2 mm. Need 10 pairs, and a recommendation on grade.",
+      "Exemplo: linha de ranhura em V para caixas rígidas, lâminas de 50 × 15 × 2,2 mm à esquerda e à direita. Processamento de papelão cinza de 2 mm, parte dele reciclado. Largura da ranhura: 2 mm. São necessários 10 pares e uma recomendação quanto à qualidade.",
     faqs: {
       technical: [
         {
           question:
-            "Can I replace just one knife of a pair when only one is worn?",
+            "Posso substituir apenas uma faca de um par quando apenas uma está desgastada?",
           answer:
-            "You can, but it is usually a false economy. The two knives form the groove walls together, so a new knife working against a worn one cuts an asymmetric groove and the board folds off-square. On rigid and gift box work that shows through the wrap. If one knife of a pair has failed early, it is worth finding out why — an early single-knife failure normally means an inclusion strike or a setting problem, and both will happen again to the replacement.",
+            "É possível, mas geralmente não vale a pena. As duas lâminas formam juntas as paredes da ranhura; portanto, uma lâmina nova trabalhando ao lado de uma desgastada corta uma ranhura assimétrica, e a placa acaba ficando torto. Em trabalhos com materiais rígidos e caixas de presente, isso fica visível através do revestimento. Se uma das lâminas de um par falhar prematuramente, vale a pena descobrir o motivo — uma falha precoce de uma única lâmina normalmente indica um impacto de inclusão ou um problema de ajuste, e ambos ocorrerão novamente na lâmina de reposição.",
         },
         {
-          question: "GS05U or GS20U — how do I choose?",
+          question: "GS05U ou GS20U — como faço para escolher?",
           answer:
-            "By what is in the board, not by how long the run is. GS05U is harder and wears more slowly, which makes it the right grade for clean virgin greyboard. GS20U is tougher and survives inclusions, which makes it the right grade for thick board and recycled stock. The failure modes are different and that is the whole decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year.",
+            "Depende da composição do papelão, e não do comprimento da tiragem. O GS05U é mais duro e se desgasta mais lentamente, o que o torna o tipo ideal para papelão cinza virgem puro. O GS20U é mais resistente e suporta inclusões, o que o torna o tipo ideal para papelões espessos e material reciclado. Os modos de falha são diferentes e é isso que determina a decisão: uma lâmina desgastada é reafiada e volta a ser utilizada; uma lâmina lascada é descartada. Se a sua mistura de papelão incluir qualquer quantidade de material reciclado, o GS20U geralmente sai mais barato ao longo de um ano.",
         },
         {
           question:
-            "My grooves are fraying at the face. Is that the knife or the setting?",
+            "As ranhuras da minha lâmina estão se desgastando na parte frontal. Isso é culpa da faca ou do ajuste?",
           answer:
-            "Check the edge first. A fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it — the same failure that shows as a furry cut on any board application. If the edges are still keen, look at the knife gap relative to board caliper: too wide and the board is torn open rather than cut, too tight and the face is crushed. Setting problems tend to appear immediately after a changeover, edge problems appear gradually.",
+            "Verifique primeiro a lâmina. Uma superfície sulcada e desgastada é sinal de que a lâmina deixou de cortar as fibras e passou a empurrá-las — a mesma falha que se manifesta como um corte irregular em qualquer aplicação em tábuas. Se as arestas ainda estiverem afiadas, observe a folga da lâmina em relação à espessura da tábua: se estiver muito larga, a tábua será rasgada em vez de cortada; se estiver muito apertada, a superfície ficará amassada. Problemas de ajuste tendem a aparecer imediatamente após uma troca, enquanto problemas nas arestas surgem gradualmente.",
         },
         {
-          question: "Can you make lengths outside 50 and 60 mm?",
+          question:
+            "É possível fabricar comprimentos diferentes de 50 e 60 mm?",
           answer:
-            "Yes. The stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing. If you do not have a drawing, send a worn knife or photographs with a caliper in frame and we will produce a dimensioned drawing for your approval before manufacture.",
+            "Sim. Os tamanhos padrão são aqueles mais solicitados, mas não representam um limite — comprimentos, larguras e geometria das bordas são fabricados de acordo com o desenho. Caso não tenha um desenho, envie uma faca gasta ou fotografias com um paquímetro em cena, e nós elaboraremos um desenho dimensionado para sua aprovação antes da fabricação.",
         },
       ],
       company: [
         {
-          question: "Are these quoted per knife or per pair?",
+          question: "Esses preços são por faca ou por par?",
           answer:
-            "Per pair, because that is how they cut and how they should be changed. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month, and we will quote a schedule rather than a one-off quantity — most rigid box lines are better served by a standing order than by ordering when the last pair fails.",
+            "Por par, pois é assim que eles são cortados e como devem ser trocados. Informe-nos quantas estações de ranhura a linha possui e quantos pares vocês consomem em um mês típico, e nós apresentaremos uma cotação com base em um cronograma, em vez de uma quantidade pontual — para a maioria das linhas de caixas rígidas, é mais vantajoso ter um pedido recorrente do que fazer o pedido somente quando o último par falhar.",
         },
         {
-          question: "Which slotting machines do you supply for?",
+          question: "Para quais máquinas de encaixe vocês fornecem produtos?",
           answer:
-            "Knives are made to the machine, so any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. Send the machine make and model together with the dimensions of the knives you run now — or a worn sample — and we will match them. We would rather work from your actual tooling than from a compatibility claim.",
+            "As lâminas são fabricadas sob medida para a máquina; portanto, qualquer linha de ranhura em V para papelão cinza ou de ranhura para caixas rígidas está dentro do nosso escopo, desde que tenhamos a geometria da lâmina. Envie a marca e o modelo da máquina, juntamente com as dimensões das lâminas que você utiliza atualmente — ou uma amostra desgastada — e nós faremos a adaptação. Preferimos trabalhar com base em suas ferramentas reais do que em uma simples declaração de compatibilidade.",
         },
         {
-          question: "What is the lead time?",
+          question: "Qual é o prazo de entrega?",
           answer:
-            "Stock sizes typically ship within a few working days of order confirmation. Made-to-drawing geometries run 15–25 working days from drawing approval. Repeat orders against an approved drawing quote same-day, since the geometry stays on file.",
+            "Os tamanhos em estoque são normalmente enviados em poucos dias úteis após a confirmação do pedido. As geometrias fabricadas sob desenho levam de 15 a 25 dias úteis a partir da aprovação do desenho. Pedidos repetidos com base em um desenho aprovado recebem cotação no mesmo dia, já que a geometria permanece arquivada.",
         },
       ],
     },
   },
   {
     id: "paper-straw-slitting-blades",
-    name: "Paper Straw & Filter Rod Slitting Blades",
-    fullName: "Carbide Circular Slitting Blades for Paper Straws & Filter Rods",
+    name: "Lâminas de corte para canudos de papel e hastes de filtro",
+    fullName:
+      "Lâminas circulares de corte de metal duro para canudos de papel e hastes de filtro",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte longitudinal",
     image:
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Non-Stick Coated",
+    badge: "Com revestimento antiaderente",
     badgeColor: "green",
     gallery: [
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
@@ -6725,17 +6788,17 @@ export const blades: Blade[] = [
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
     ],
     galleryAlts: [
-      "Carbide circular slitting blade for paper straw and filter rod cutting, full face and centre bore",
-      "Pair of carbide circular slitting blades for paper straw cutting, face and centre bore",
-      "Close-up of the mirror-finished face and cutting edge of a paper straw slitting blade",
+      "Lâmina circular de corte de carboneto para corte de canudos de papel e hastes de filtro, com face completa e furo central",
+      "Par de lâminas circulares de corte de carboneto para corte de canudos de papel, com furo frontal e central",
+      "Close-up da superfície com acabamento espelhado e da borda de corte de uma lâmina para corte de canudos de papel",
     ],
     description:
-      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100 outside diameter, 0.15–0.30 mm thick, in six stock sizes. Anti-stick coating resists water-based adhesive build-up so the cut edge stays square and fray-free through long runs on high-speed straw and filter rod makers.",
+      "Lâminas circulares de carboneto antiaderentes para corte de canudos de papel e hastes de filtro. Diâmetro externo de Φ88–Φ100, espessura de 0,15–0,30 mm, disponíveis em seis tamanhos padrão. O revestimento antiaderente resiste ao acúmulo de adesivo à base de água, de modo que a borda de corte permanece reta e sem desfiados durante longas tiragens em máquinas de alta velocidade para a produção de canudos e hastes de filtro.",
     fullDescription:
-      "On a paper straw line the blade usually does not fail by wearing out. It fails by picking up glue. Water-based adhesive transfers to the blade face, builds into a ridge along the cutting edge, and from that point the blade stops cutting the tube and starts dragging it — which is exactly what a frayed straw end is. Sharpness is not the variable that fixes it.\n\nThat is why these blades are specified around adhesive release rather than around hardness alone. A carbide substrate holds the edge; the anti-stick coating keeps the face clean so the edge can keep working. On a line running water-based adhesive, the coating does more for cut quality than another point of hardness would.\n\n## Paper Straw Lines Are Not Filter Rod Lines\n\nThe two applications share machinery ancestry and blade geometry but not their failure conditions. Filter rod cutting on tobacco machinery runs at very high speed on a consistent, well-characterised material. Paper straw lines are newer, run a wider spread of paper plies and grammages, and use adhesives that vary between producers — so blade life on a straw line is far more sensitive to the adhesive than to the paper. If you are commissioning a new straw line, expect to tune blade specification against your adhesive rather than against your paper.\n\n## Thin Blades, Real Consequences\n\nAt 0.15 to 0.30 mm these are thin blades, and thickness is a process decision. A thinner blade removes less material and leaves a squarer end on a thin-walled tube; a thicker blade is more stable at speed and more forgiving of a machine with runout. Getting this wrong shows up as either a ragged end or a blade that flexes and wanders.\n\n## Applications\n\nPaper straw winding and cut-off machines; cigarette filter rod makers including Hauni platforms; paper tube and core cut-off on comparable high-speed converting equipment.\n\n## Diagnosing a Frayed Straw End\n\nIf the ends fray while the edge still feels sharp, the cause is almost always adhesive pick-up rather than wear. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge underneath can be perfectly serviceable. Wipe the face and inspect it under a light before changing the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade. Chasing this as a sharpness problem is the standard way a straw line burns through blades it did not need to replace.\n\n## Thickness Is a Process Choice\n\nAt 0.15 to 0.30 mm the thickness is not a leftover dimension. A thinner blade removes less material and leaves a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which makes it the safer choice on older machinery or thicker multi-ply tube. Getting it wrong produces either a ragged end or a blade that flexes and wanders, and the two faults look nothing alike — tell us the ply count, grammage and machine and we will recommend rather than leave you to guess.\n\n## Filter Rod Heritage, Straw Reality\n\nMany straw lines were built on filter rod machinery, and the blade geometry often interchanges dimensionally. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent, well-characterised material; straw lines run a wider spread of papers and, critically, adhesives that vary between producers. A blade that performs on a Hauni filter rod maker can gum up within hours on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry — the adhesive is the single most useful piece of information you can give us on this application and the one most buyers leave out.\n\n## Coatings, Regrinding and Commissioning a New Line\n\nThe anti-stick coating is a surface layer, and grinding the edge removes it where it matters most, so coated blades of this type are run to end of life and replaced rather than built into a regrind cycle. If your economics favour regrinding we will quote uncoated carbide instead, and you accept more frequent face cleaning as the trade. On a line still being commissioned, the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. A fortnight of that tells you more than any datasheet comparison and sets the standing-order specification correctly from the start. Stock sizes generally ship within a few working days; custom diameters, bores and thicknesses run 15–25 working days from drawing approval, with a few days added for the coating cycle.",
+      "Em uma linha de produção de canudos de papel, a lâmina geralmente não falha por desgaste. Ela falha por acumular cola. O adesivo à base de água se transfere para a superfície da lâmina, formando uma saliência ao longo da aresta de corte e, a partir desse ponto, a lâmina para de cortar o tubo e passa a arrastá-lo — o que é exatamente o que ocorre quando a ponta do canudo fica desfiada. O fio da lâmina não é a variável que resolve o problema.\n\nÉ por isso que essas lâminas são especificadas com base na resistência à aderência do adesivo, e não apenas na dureza. Um substrato de carboneto mantém a aresta afiada; o revestimento antiaderente mantém a superfície limpa para que a aresta possa continuar funcionando. Em uma linha que utiliza adesivo à base de água, o revestimento contribui mais para a qualidade do corte do que um nível diferente de dureza.\n\n## Linhas de canudos de papel não são linhas de hastes de filtro\n\nAs duas aplicações compartilham a mesma origem das máquinas e a geometria das lâminas, mas não suas condições de falha. O corte de hastes de filtro em máquinas de tabaco ocorre em velocidade muito alta em um material consistente e bem caracterizado. As linhas de canudos de papel são mais recentes, processam uma variedade maior de camadas de papel e gramaturas e utilizam adesivos que variam entre os fabricantes — portanto, a vida útil da lâmina em uma linha de canudos é muito mais sensível ao adesivo do que ao papel. Se você estiver colocando em operação uma nova linha de canudos, espere ajustar as especificações da lâmina de acordo com o seu adesivo, e não com o seu papel.\n\n## Lâminas Finas, Consequências Reais\n\nCom espessuras de 0,15 a 0,30 mm, essas são lâminas finas, e a espessura é uma decisão do processo. Uma lâmina mais fina remove menos material e deixa uma extremidade mais reta em um tubo de parede fina; uma lâmina mais grossa é mais estável em alta velocidade e mais tolerante a máquinas com desvio axial. Errar nessa escolha resulta em uma extremidade irregular ou em uma lâmina que flexiona e se desvia.\n\n## Aplicações\n\nMáquinas de enrolamento e corte de canudos de papel; fabricantes de hastes para filtros de cigarro, incluindo plataformas Hauni; corte de tubos e núcleos de papel em equipamentos de conversão de alta velocidade comparáveis.\n\n## Diagnóstico de uma extremidade de canudo desfiada\n\nSe as extremidades ficarem desfiadas enquanto a borda ainda parecer afiada, a causa é quase sempre a acumulação de adesivo, e não o desgaste. O adesivo à base de água se transfere para a face da lâmina e forma uma saliência ao longo da aresta de corte; a partir desse ponto, a lâmina arrasta o tubo em vez de cortá-lo, e um tubo arrastado fica desfiado. A borda por baixo pode estar em perfeitas condições de uso. Limpe a face da lâmina e inspecione-a sob uma luz antes de trocá-la — se o depósito for visível, a solução é um revestimento ou um intervalo de limpeza, e não uma lâmina mais afiada. Tratar isso como um problema de afiação é a maneira padrão pela qual uma linha de produção de canudos desgasta lâminas que não precisavam ser substituídas.\n\n## A espessura é uma escolha de processo\n\nEntre 0,15 e 0,30 mm, a espessura não é uma dimensão residual. Uma lâmina mais fina remove menos material e deixa uma extremidade mais reta em tubos de parede fina e poucas camadas, razão pela qual é a escolha preferida em trabalhos com tubos de alta qualidade. Uma lâmina mais espessa é mais rígida, funciona de maneira mais estável em alta velocidade e tolera o desvio do eixo, o que a torna a escolha mais segura em máquinas mais antigas ou em tubos de camadas múltiplas mais espessos. Escolher errado resulta em uma extremidade irregular ou em uma lâmina que flexiona e se desvia, e as duas falhas não se parecem em nada — informe-nos o número de camadas, a gramatura e o tipo de máquina, e nós faremos a recomendação, em vez de deixar você adivinhar.\n\n## Tradição das hastes de filtro, realidade dos canudos\n\nMuitas linhas de canudos foram construídas com base em máquinas de hastes de filtro, e a geometria da lâmina costuma ser dimensionalmente intercambiável. O que não se transfere é a lógica das especificações. O corte de hastes de filtro ocorre em velocidade muito alta em um material consistente e bem caracterizado; as linhas de canudos processam uma variedade maior de papéis e, fundamentalmente, adesivos que variam entre os fabricantes. Uma lâmina que tem bom desempenho em uma máquina de hastes filtrantes da Hauni pode ficar grudenta em questão de horas em uma linha de canudos que utiliza uma cola diferente. Especifique com base no adesivo, não na origem da máquina — o adesivo é a informação mais útil que você pode nos fornecer sobre essa aplicação e a que a maioria dos compradores deixa de fora.\n\n## Revestimentos, reafiação e comissionamento de uma nova linha\n\nO revestimento antiaderente é uma camada superficial, e a afiação da borda o remove exatamente onde é mais importante; portanto, lâminas revestidas desse tipo são utilizadas até o fim de sua vida útil e substituídas, em vez de serem incluídas em um ciclo de reafiação. Se sua análise econômica favorecer a reafiação, faremos uma cotação para lâminas de metal duro sem revestimento, e você aceitará uma limpeza mais frequente da face como contrapartida. Em uma linha ainda em fase de comissionamento, o primeiro passo útil é testar uma pequena quantidade experimental com duas especificações — normalmente uma lâmina revestida e outra com espessura diferente — operando com seu adesivo e papel reais. Duas semanas desse teste fornecem mais informações do que qualquer comparação de fichas técnicas e definem corretamente a especificação do pedido permanente desde o início. Tamanhos em estoque geralmente são enviados em poucos dias úteis; diâmetros, furos e espessuras personalizados levam de 15 a 25 dias úteis a partir da aprovação do desenho, com alguns dias adicionais para o ciclo de revestimento.",
     link: "/products/paper-straw-slitting-blades",
     introNote:
-      "Paper straw production is where most of the demand for these blades now sits. If your line runs water-based adhesive, tell us which adhesive — it predicts blade life on this application better than the paper specification does.",
+      "A produção de canudos de papel é onde atualmente se concentra a maior parte da demanda por essas lâminas. Se sua linha utiliza adesivo à base de água, informe-nos qual é o tipo de adesivo — isso permite prever a vida útil da lâmina nessa aplicação com mais precisão do que as especificações do papel.",
     compatibleMachines: ["Hauni"],
     specs: [
       {
@@ -6765,11 +6828,11 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "Item",
-      col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
+      col1: "Diâmetro externo (ØD) (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura T (mm)",
       caption:
-        "* Six stock sizes. Other diameters, bores and thicknesses made to drawing — send the machine model, straw ply count and adhesive type and we will specify the blade against them.",
+        "* Seis tamanhos padrão. Outros diâmetros, furos e espessuras fabricados conforme desenho — envie o modelo da máquina, o número de camadas da palha e o tipo de adesivo, e nós especificaremos a lâmina de acordo com esses dados.",
     },
     standardDimensions: [
       {
@@ -6811,55 +6874,56 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "On adhesive-bearing work the surface matters more than the substrate. Choose the coating for the adhesive you run, then choose the substrate for the paper.",
+        "Em trabalhos com adesivo, a superfície é mais importante do que o substrato. Escolha o revestimento adequado ao adesivo que você utiliza e, em seguida, escolha o substrato para o papel.",
       rows: [
         {
-          grade: "Carbide + anti-stick coating",
+          grade: "Carboneto + revestimento antiaderente",
           hardness: "HRA 89–91",
           bestFor:
-            "Water-based adhesive straw lines and filter rod cutting — the default specification",
+            "Linhas de palha com adesivo à base de água e corte de hastes de filtro — a especificação padrão",
           tradeoff:
-            "Higher unit price; the coating is a consumable layer and does not survive a regrind",
+            "Preço unitário mais alto; o revestimento é uma camada consumível e não resiste à remoagem",
         },
         {
-          grade: "Uncoated carbide",
+          grade: "Carboneto sem revestimento",
           hardness: "HRA 89–91",
           bestFor:
-            "Dry or low-tack applications, and paper tube cut-off without adhesive at the cut line",
+            "Aplicações a seco ou com baixa aderência e corte de tubos de papel sem adesivo na linha de corte",
           tradeoff:
-            "Picks up adhesive quickly on glued lines; cut edge frays long before the edge is worn",
+            "Absorve rapidamente o adesivo nas linhas coladas; a borda cortada desfia muito antes de se desgastar",
         },
         {
-          grade: "Tool steel",
+          grade: "Aço para ferramentas",
           hardness: "60–63 HRC",
           bestFor:
-            "Trials, short runs and low-speed lines where cost dominates",
+            "Testes, tiragens curtas e linhas de baixa velocidade, onde o custo é o fator determinante",
           tradeoff:
-            "Loses the edge quickly at straw-line speeds; not viable on continuous production",
+            "Perde o fio rapidamente em velocidades de linha de palha; não é viável para produção contínua",
         },
       ],
     },
     components: [
       {
         id: "adhesive-release-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Coated for Adhesive Release, Not Just Hardness",
+        tag: "TRATAMENTO DE SUPERFÍCIES",
+        title:
+          "Revestido para facilitar a remoção do adesivo, não apenas para conferir dureza",
         description:
-          "On water-based adhesive lines the blade fails by pick-up, not by wear. The anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end.",
+          "Nas linhas de adesivos à base de água, a lâmina se danifica devido à aderência, e não ao desgaste. O revestimento antiaderente mantém a superfície limpa, de modo que a lâmina continua cortando o tubo em vez de arrastá-lo — e esse é o mecanismo por trás de uma ponta de canudo sem desfiados.",
       },
       {
         id: "thin-section-stability",
-        tag: "BLADE GEOMETRY",
-        title: "0.15–0.30 mm, Specified to the Cut",
+        tag: "GEOMETRIA DA LÂMINA",
+        title: "0,15–0,30 mm, conforme especificado para o corte",
         description:
-          "Thickness is a process choice, not a leftover. Thinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number.",
+          "A espessura é uma escolha de processo, não um resíduo. Lâminas mais finas removem menos material e deixam uma extremidade mais reta em tubos de parede fina; lâminas mais grossas funcionam de forma mais estável em alta velocidade e toleram melhor o desvio da máquina. Nós a especificamos de acordo com o número de camadas e o tipo de máquina, em vez de adotar um valor padrão.",
       },
       {
         id: "straw-line-tuning",
-        tag: "APPLICATION ENGINEERING",
-        title: "Tuned to the Adhesive, Not Only the Paper",
+        tag: "ENGENHARIA DE APLICAÇÕES",
+        title: "Adaptado ao adesivo, não apenas ao papel",
         description:
-          "Paper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive. Tell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application.",
+          "As linhas de canudos de papel variam muito mais em termos de adesivo do que em termos de papel, e a vida útil da lâmina depende do adesivo. Informe-nos qual linha você utiliza e nós especificaremos o revestimento e a geometria adequados a ela — essa é a informação mais útil que você pode nos fornecer sobre essa aplicação.",
       },
     ],
     relatedBladeIds: [
@@ -6868,60 +6932,62 @@ export const blades: Blade[] = [
       "nonwoven-slitter-knives",
     ],
     rfqPlaceholder:
-      "Example: paper straw cut-off station, blade Φ100 × Φ15 × 0.20 mm. Three-ply straw, 60 gsm kraft, water-based adhesive. Blades are gumming up after about 6 hours and the straw ends fray. Need 50 pcs, coated.",
+      "Exemplo: estação de corte de canudos de papel, lâmina Φ100 × Φ15 × 0,20 mm. Canudo de três camadas, papel kraft de 60 g/m², adesivo à base de água. As lâminas ficam obstruídas após cerca de 6 horas e as pontas dos canudos ficam desfiadas. São necessárias 50 unidades, revestidas.",
     faqs: {
       technical: [
         {
           question:
-            "My straw ends are fraying but the blade edge still feels sharp. What is happening?",
+            "As pontas da minha palha estão se desfazendo, mas a lâmina ainda parece afiada. O que está acontecendo?",
           answer:
-            "Almost certainly adhesive pick-up. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge itself can be perfectly serviceable underneath. Wipe the face and inspect it under a light before you change the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade.",
+            "É quase certo que se trata de acúmulo de adesivo. O adesivo à base de água se transfere para a superfície da lâmina e forma uma saliência ao longo da borda de corte; a partir desse ponto, a lâmina arrasta o tubo em vez de cortá-lo, e um tubo arrastado se desfia. A própria borda pode estar em perfeitas condições logo abaixo dessa saliência. Limpe a superfície e inspecione-a sob uma luz antes de trocar a lâmina — se o resíduo estiver visível, a solução é aplicar um revestimento ou realizar a limpeza, e não usar uma lâmina mais afiada.",
         },
         {
-          question: "Should I run 0.15 mm or 0.30 mm?",
+          question: "Devo usar 0,15 mm ou 0,30 mm?",
           answer:
-            "It depends on the tube and the machine. A thinner blade removes less material and gives a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which is why it is the safer choice on older machinery or on thicker multi-ply tube. Tell us the ply count, grammage and machine and we will recommend rather than leaving you to guess.",
+            "Isso depende do tubo e da máquina. Uma lâmina mais fina remove menos material e proporciona uma extremidade mais quadrada em canudos de parede fina e com poucas camadas, e é por isso que ela é a escolha ideal para trabalhos com canudos de alta qualidade. Uma lâmina mais grossa é mais rígida, funciona de maneira mais estável em alta velocidade e tolera melhor o desvio do eixo, razão pela qual é a escolha mais segura em máquinas mais antigas ou em tubos mais grossos de várias camadas. Informe-nos o número de camadas, a gramatura e o tipo de máquina, e nós faremos a recomendação, em vez de deixar que você tenha que adivinhar.",
         },
         {
-          question: "Does the coating survive regrinding?",
+          question: "O revestimento resiste ao reafiamento?",
           answer:
-            "No. The coating is a surface layer, and grinding the edge removes it where it matters most. On coated blades of this type the practical approach is to run them to end of life and replace, rather than to build a regrind cycle around them. If your economics favour regrinding, we can quote uncoated carbide instead and you accept more frequent face cleaning as the trade.",
+            "Não. O revestimento é uma camada superficial, e o afiamento da borda o remove justamente onde é mais importante. Em lâminas revestidas desse tipo, a abordagem prática é utilizá-las até o fim da vida útil e substituí-las, em vez de planejar um ciclo de reafiamento para elas. Se sua análise econômica for a favor do reafiamento, podemos oferecer um orçamento para carboneto não revestido e, em troca, você aceita uma limpeza mais frequente da face da lâmina.",
         },
         {
-          question: "Do filter rod blades and paper straw blades interchange?",
+          question:
+            "As lâminas das varetas de filtro e as lâminas das canudinhas de papel são intercambiáveis?",
           answer:
-            "Dimensionally they often do — the geometry lineage is the same and many straw lines were built on filter rod machinery. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent material; straw lines run varied paper and, critically, varied adhesive. A blade that performs on a Hauni filter rod maker may gum up on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry.",
+            "Em termos dimensionais, muitas vezes sim — a linhagem geométrica é a mesma e muitas linhas de canudos foram construídas com máquinas para hastes de filtro. O que não se transfere é a lógica das especificações. O corte de hastes de filtro ocorre em velocidade muito alta com um material consistente; as linhas de canudos utilizam papéis variados e, fundamentalmente, adesivos variados. Uma lâmina que funciona bem em uma máquina de fabricação de hastes de filtro da Hauni pode ficar grudenta em uma linha de canudos que utiliza uma cola diferente. Especifique com base no adesivo, não na origem da máquina.",
         },
       ],
       company: [
         {
-          question: "What information do you need to quote?",
+          question: "Quais informações você precisa para fazer um orçamento?",
           answer:
-            "Outside diameter, bore and thickness; the machine model; straw ply count and paper grammage; the adhesive type; and your current change interval. The adhesive is the item most buyers leave out and the one that predicts blade life best on this application, so include it even if you are not sure it matters.",
+            "Diâmetro externo, diâmetro interno e espessura; o modelo da máquina; o número de camadas de palha e a gramatura do papel; o tipo de adesivo; e o seu intervalo atual de troca. O adesivo é o item que a maioria dos compradores deixa de fora e o que melhor prediz a vida útil da lâmina nessa aplicação; portanto, inclua essa informação mesmo que não tenha certeza de que seja relevante.",
         },
         {
           question:
-            "Can you supply for a straw line we are still commissioning?",
+            "Vocês poderiam fornecer material para uma linha de tubulação de palha que ainda estamos colocando em operação?",
           answer:
-            "Yes, and it is worth involving us early. On a new line the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. That tells you more in a fortnight than a datasheet comparison will, and it sets the standing order specification correctly from the start.",
+            "Sim, e vale a pena nos envolver desde o início. Em uma nova linha de produção, o primeiro passo recomendável é realizar um pequeno teste com duas especificações — geralmente uma lâmina revestida e uma espessura diferente — utilizando seu próprio adesivo e papel. Isso fornece mais informações em duas semanas do que uma simples comparação de fichas técnicas e define corretamente as especificações do pedido permanente desde o início.",
         },
         {
-          question: "What are the lead times?",
+          question: "Quais são os prazos de entrega?",
           answer:
-            "Stock sizes generally ship within a few working days. Custom diameters, bores and thicknesses run 15–25 working days from drawing approval. Coated blades add a few days over uncoated for the coating cycle, so factor that in when you are planning a first trial.",
+            "Os tamanhos padrão geralmente são enviados em poucos dias úteis. Diâmetros, furos e espessuras personalizados levam de 15 a 25 dias úteis a partir da aprovação do desenho. As lâminas revestidas levam alguns dias a mais do que as não revestidas devido ao ciclo de revestimento; portanto, leve isso em consideração ao planejar um primeiro teste.",
         },
       ],
     },
   },
   {
     id: "groove-bottom-knives",
-    name: "Groove Bottom Knives",
-    fullName: "Multi-Groove Bottom Knives & Cutter Rings for Shear Slitting",
+    name: "Facas para fundo de ranhura",
+    fullName:
+      "Lâminas inferiores com ranhuras múltiplas e anéis de corte para corte por cisalhamento",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Lâminas de corte",
     image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Pitch from 5 mm",
+    badge: "Passo de 5 mm",
     badgeColor: "blue",
     gallery: [
       "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
@@ -6929,19 +6995,19 @@ export const blades: Blade[] = [
       "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
     ],
     galleryAlts: [
-      "Multi-groove bottom knife ring with parallel precision-ground grooves for shear slitting",
-      "Multi-groove bottom knife rings with a smooth spacer ring and flat bottom knives",
-      "Multi-groove bottom cutter ring showing groove pitch and ground bore",
+      "Anel de faca inferior com múltiplas ranhuras, com ranhuras paralelas retificadas com precisão para corte por cisalhamento",
+      "Anéis de facas inferiores com múltiplas ranhuras, com um anel espaçador liso e facas inferiores planas",
+      "Anel cortador inferior com múltiplas ranhuras, mostrando o passo das ranhuras e o furo retificado",
     ],
     description:
-      "Multi-groove bottom knife rings for shear slitting on paper, board and film rewinders. Slit width is changed by moving the top knife to another groove instead of re-tooling. Groove pitch from 5 mm, OD to Φ406 mm, plain bore for air shafts or set-screw for solid shafts. Single or double cutting edge, one-piece or split ring. Also supplied as single-groove and smooth spacer rings.",
+      "Anéis de lâmina inferiores com múltiplas ranhuras para corte por cisalhamento em rebobinadoras de papel, papelão e filmes. A largura do corte é ajustada movendo-se a lâmina superior para outra ranhura, sem a necessidade de troca de ferramentas. Passo das ranhuras a partir de 5 mm, diâmetro externo (OD) até Φ406 mm, furo liso para eixos pneumáticos ou parafuso de fixação para eixos maciços. Gume de corte simples ou duplo, anel de uma peça ou dividido. Também são fornecidos como anéis de ranhura única e espaçadores lisos.",
     fullDescription:
-      "A multi-groove bottom knife — also called a multi-groove bottom slitter, a multi-groove anvil, or an MKB — is one wide ring carrying many parallel precision-ground grooves. Every groove is a usable cutting position, so a width change means moving the top knife into a different groove rather than stripping the shaft and rebuilding the knife stack. On a line that changes order width often, that difference is measured in shift hours, not in blade cost.\n\nThe grooves are what make the cut, so they are what has to be right. Groove position sets slit width, groove width sets the working shear clearance against the mating top knife, and groove edge condition sets whether the web shears or tears. All three are ground in one setup on the same ring, which is why a multi-groove ring holds width accuracy across the full stack better than an equivalent number of separate anvil knives assembled with spacers.\n\n## Where the Format Earns Its Price\n\nA single-groove bottom knife is cheaper per piece and perfectly adequate on a line that runs one width for weeks. The multi-groove ring wins where order width changes frequently, where slit counts are high, or where re-setting a spacer stack has become the real changeover bottleneck. It also removes a whole class of setting error: with fixed groove positions ground into one body, width cannot drift because someone stacked the spacers a millimetre out.\n\n## Mounting: Air Shaft or Solid Shaft\n\nTwo mounting styles cover almost every rewinder. A plain bore clamps onto an expandable air shaft, which is the fast-change option and the usual choice on modern converting lines. A set-screw design fixes onto a solid bottom shaft, which is more common on older machines and on heavy board lines where shaft rigidity matters more than change speed. Tell us which shaft you run — it changes the bore specification, not just the fixing, and a ring bored for the wrong system will not seat true.\n\n## One Piece or Split\n\nStandard rings are one-piece. A two-piece split ring costs more but comes off and goes back on without breaking down the shaft assembly, which on a wide machine can turn a planned stop into a running change. If your rings are currently changed by pulling the whole shaft, the split version is usually the first thing worth quoting.\n\n## Single or Double Cutting Edge\n\nRings are ground with a single cutting edge or with cutting edges on both sides of each groove. Double-edged geometry doubles the usable positions and lets the ring be reversed when one side is worn, at the cost of a more demanding grind and a higher unit price. Which is right depends on how your slit positions are distributed across the ring, so send the width schedule rather than only the groove count.\n\n## Groove Pitch Is Made to Your Schedule\n\nCutting edge division — the distance from one cutting edge to the next, also called the pitch — is custom in almost every case and can go as narrow as 5 mm (0.200 in). Outside diameters run up to Φ406 mm (16 in). There is no useful standard table here, which is why we quote from your width schedule or from a drawing: give us the OD, bore, ring width, the widths you actually run, and the mating top knife, and we grind the groove positions to that schedule.\n\n## The Rest of the Ring Set\n\nA working shaft is rarely all multi-groove rings. Single-groove cutter rings cover fixed positions, and smooth rings act as spacers and web supports between cutting positions. We supply all three to the same bore and runout specification so they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and hard-to-diagnose source of slit-width variation.\n\n## Applications\n\nPaper, board, tissue and corrugated converting; film, foil, label stock, adhesive tape, non-wovens and textiles on shear-slitting rewinders.",
+      "Uma faca inferior com múltiplas ranhuras — também chamada de cortador inferior com múltiplas ranhuras, bigorna com múltiplas ranhuras ou MKB — é um anel largo que apresenta várias ranhuras paralelas retificadas com precisão. Cada ranhura é uma posição de corte utilizável; portanto, uma mudança na largura significa deslocar a faca superior para uma ranhura diferente, em vez de desmontar o eixo e remontar a pilha de facas. Em uma linha que altera frequentemente a largura do produto, essa diferença é medida em horas de turno, e não no custo das lâminas.\n\nSão as ranhuras que realizam o corte; portanto, é nelas que tudo deve estar correto. A posição da ranhura define a largura do corte, a largura da ranhura define a folga de cisalhamento de trabalho em relação à faca superior correspondente e o estado da borda da ranhura determina se a tira será cortada ou rasgada. Todos os três são retificados em uma única configuração no mesmo anel, e é por isso que um anel com múltiplas ranhuras mantém a precisão da largura em toda a pilha de lâminas melhor do que um número equivalente de lâminas de bigorna separadas, montadas com espaçadores.\n\n## Onde o formato justifica seu preço\n\nUma lâmina inferior de ranhura única é mais barata por peça e perfeitamente adequada em uma linha que opera com uma única largura por semanas. O anel com múltiplas ranhuras se destaca quando a largura do pedido muda com frequência, quando o número de cortes é alto ou quando o reajuste de uma pilha de espaçadores se tornou o verdadeiro gargalo na troca de formato. Ele também elimina toda uma classe de erros de ajuste: com posições fixas das ranhuras retificadas em um único corpo, a largura não pode sofrer desvios porque alguém empilhou os espaçadores com um deslocamento de um milímetro.\n\n## Montagem: eixo pneumático ou eixo sólido\n\nDois estilos de montagem atendem a praticamente todos os rebobinadores. Um furo liso é fixado em um eixo pneumático expansível, que é a opção de troca rápida e a escolha usual em linhas de conversão modernas. Um projeto com parafuso de fixação prende-se a um eixo sólido, mais comum em máquinas mais antigas e em linhas de cartolina pesada, onde a rigidez do eixo é mais importante do que a velocidade de troca. Informe-nos qual eixo você utiliza — isso altera a especificação do furo, não apenas a fixação, e um anel com furo para o sistema errado não se encaixará corretamente.\n\n## De peça única ou dividido\n\nOs anéis padrão são de peça única. Um anel dividido em duas peças custa mais, mas pode ser removido e recolocado sem desmontar o conjunto do eixo, o que, em uma máquina de grande largura, pode transformar uma parada planejada em uma troca em operação. Se atualmente seus anéis são trocados puxando-se o eixo inteiro, a versão dividida é geralmente a primeira opção que vale a pena considerar.\n\n## Borda de corte simples ou dupla\n\nOs anéis são retificados com uma única borda de corte ou com bordas de corte em ambos os lados de cada ranhura. A geometria de dupla aresta de corte dobra as posições utilizáveis e permite que o anel seja invertido quando um lado estiver desgastado, ao custo de um retificado mais exigente e de um preço unitário mais alto. A escolha correta depende de como as posições das ranhuras estão distribuídas ao longo do anel; portanto, envie a tabela de larguras, em vez de apenas o número de ranhuras.\n\n## O passo das ranhuras é feito de acordo com sua especificação\n\nA divisão das arestas de corte — a distância entre uma aresta de corte e a seguinte, também chamada de passo — é personalizada em quase todos os casos e pode chegar a apenas 5 mm (0,200 pol.). Os diâmetros externos chegam a Φ406 mm (16 pol.). Não existe uma tabela-padrão útil para isso, e é por isso que fazemos a cotação com base na sua tabela de larguras ou em um desenho: forneça-nos o diâmetro externo (OD), o furo, a largura do anel, as larguras que você realmente utiliza e a faca superior correspondente, e nós retificaremos as posições das ranhuras de acordo com essa tabela.\n\n## O restante do conjunto de anéis\n\nUm eixo em operação raramente é composto inteiramente por anéis com múltiplas ranhuras. Anéis de corte com ranhura única cobrem posições fixas, e anéis lisos atuam como espaçadores e suportes de alma entre as posições de corte. Fornecemos os três tipos com as mesmas especificações de furo e excentricidade, para que se encaixem sem causar oscilação — misturar anéis de diferentes fornecedores em um mesmo eixo é uma fonte comum e difícil de diagnosticar de variação na largura do corte.\n\n## Aplicações\n\nConversão de papel, papelão, papel-toalha e papelão ondulado; filmes, folhas metálicas, etiquetas, fitas adesivas, não-tecidos e têxteis em rebobinadoras com corte por cisalhamento.",
     link: "/products/groove-bottom-knives",
     disambiguation:
-      "This page covers multi-groove rings that carry many slit positions on one body. For the single-edge circular bottom knives that pair with a top knife on paper rewinders, see [Slitter Rewinder Bottom Knives](/products/slitter-rewinder-bottom-knives).",
+      "Esta página aborda os anéis com múltiplas ranhuras, que apresentam várias posições de corte em um único corpo. Para as facas inferiores circulares de lâmina única que são combinadas com uma faca superior em rebobinadoras de papel, consulte [Facas inferiores para cortadoras-rebobinadoras](/products/slitter-rewinder-bottom-knives).",
     introNote:
-      "Groove pitch, groove count and bore are made to your width schedule — there is no meaningful standard size for this product. Send the widths you actually run, the shaft type (air or solid) and the mating top knife, and we grind the groove positions to that schedule.",
+      "O passo da ranhura, o número de ranhuras e o diâmetro interno são fabricados de acordo com sua especificação de larguras — não existe um tamanho padrão significativo para este produto. Envie as larguras que você realmente utiliza, o tipo de eixo (ocoso ou maciço) e a faca superior correspondente, e nós retificaremos as posições das ranhuras de acordo com essa especificação.",
     compatibleMachines: [
       "Kampf",
       "Goebel",
@@ -6984,12 +7050,12 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Configuration",
-      col1: "Outer Diameter",
-      col2: "Mounting",
-      col3: "Groove Pitch / Edges",
+      col0: "Configuração",
+      col1: "Diâmetro externo",
+      col2: "Montagem",
+      col3: "Passo da ranhura / Arestas",
       caption:
-        "* Groove pitch, groove count, ring width and bore are made to your width schedule — there is no standard size table for this product. Send the widths you run, the shaft type and the mating top knife specification, or a drawing, and we grind the groove positions to match.",
+        "* O passo da ranhura, o número de ranhuras, a largura do anel e o diâmetro interno são fabricados de acordo com sua tabela de larguras — não há uma tabela de tamanhos padrão para este produto. Envie as larguras que você utiliza, o tipo de eixo e as especificações da faca superior correspondente, ou um desenho, e nós retificaremos as posições das ranhuras para que se ajustem a elas.",
     },
     standardDimensions: [
       {
@@ -7031,64 +7097,65 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Grade choice on a multi-groove ring is governed by how abrasive the web is, because the groove edges wear where the web passes rather than where the knife strikes. A ring is also a large, expensive body to scrap, so grades that can be reground repeatedly are usually the better economics.",
+        "A escolha do grau em um anel com múltiplas ranhuras depende do grau de abrasividade da banda, pois as bordas das ranhuras se desgastam no ponto por onde a banda passa, e não onde a lâmina atinge. Além disso, um anel é uma peça grande e cara para ser descartada; portanto, os graus que podem ser reafiados repetidamente costumam ser a opção mais econômica.",
       rows: [
         {
           grade: "Cr12MoV / SKD-11",
           hardness: "HRC 58–62",
           bestFor:
-            "General paper, board and film — the standard specification and the best all-round balance of wear life and regrindability",
+            "Papel comum, papelão e filme — a especificação padrão e o melhor equilíbrio geral entre vida útil e capacidade de trituração",
           tradeoff:
-            "Outlasted by carbide-tipped on heavily coated or filled stocks",
+            "Menor vida útil quando utilizadas com pontas de carboneto em matérias-primas com revestimento espesso ou com alto teor de enchimento",
         },
         {
           grade: "9CrSi / 65Mn",
           hardness: "HRC 56–60",
           bestFor:
-            "Soft uncoated stocks, tissue and lower line speeds where unit price drives the decision",
+            "Papéis macios não revestidos, papel-toalha e velocidades de linha mais baixas, em que o preço unitário é o fator determinante na decisão",
           tradeoff:
-            "Groove edges round off sooner, so expect a shorter interval between regrinds",
+            "As bordas das ranhuras se desgastam mais rapidamente; portanto, espere um intervalo mais curto entre as retificações",
         },
         {
           grade: "HSS",
           hardness: "HRC 62–64",
           bestFor:
-            "Higher line speeds and mixed job schedules where the ring must hold edge through long runs",
-          tradeoff: "Higher cost than tool steel; still wears on filled stocks",
+            "Velocidades de linha mais altas e programas de produção mistos, nos quais o anel deve manter a estabilidade das bordas durante tiragens longas",
+          tradeoff:
+            "Custo mais elevado do que o do aço para ferramentas; ainda assim, sofre desgaste em matérias-primas preenchidas",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
+          grade: "Com ponta de carboneto",
+          hardness: "HRA 89–91 na ponta",
           bestFor:
-            "Abrasive coated, filled and laminated webs where tool steel grooves wear out in weeks",
+            "Fitas com revestimento abrasivo, reforçadas e laminadas, nas quais as ranhuras do aço para ferramentas se desgastam em poucas semanas",
           tradeoff:
-            "Highest price, and the tips chip rather than wear if the shaft runs out of true",
+            "É o mais caro, e as pontas se lascam em vez de se desgastarem caso o eixo fique desalinhado",
         },
       ],
       outro:
-        "If you are unsure, send the substrate and your present regrind interval and we will size the recommendation against your own consumption rather than a generic table.",
+        "Caso tenha dúvidas, envie-nos o substrato e o intervalo atual de moagem, e faremos uma recomendação com base no seu próprio consumo, em vez de nos basearmos em uma tabela genérica.",
     },
     components: [
       {
         id: "one-ring-many-widths",
-        tag: "CHANGEOVER TIME",
-        title: "One Ring, Many Slit Positions",
+        tag: "TEMPO DE TROCA",
+        title: "Um anel, várias posições de fenda",
         description:
-          "Every groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack. On lines that change order width often, this is a changeover-time product before it is a consumable.",
+          "Cada ranhura é uma posição de corte utilizável; portanto, uma mudança na largura implica reposicionar a lâmina superior, em vez de desmontar o eixo e remontar uma pilha de espaçadores. Em linhas que alteram frequentemente a largura dos pedidos, trata-se de um item que reduz o tempo de troca, mais do que um consumível.",
       },
       {
         id: "ground-in-one-setup",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "All Grooves Ground in One Setup",
+        tag: "PRECISÃO DIMENSIONAL",
+        title: "Todas as ranhuras usinadas em uma única configuração",
         description:
-          "Groove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out. Bore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true.",
+          "As posições das ranhuras são retificadas em um único corpo em uma única operação, de modo que a largura da fenda não pode sofrer desvios, como ocorre quando um operador remontar uma pilha de espaçadores com um desvio de um milímetro. O diâmetro interno e o desvio radial são mantidos dentro da mesma especificação em anéis com múltiplas ranhuras, com ranhura única e lisos, de modo que um eixo misto ainda seja montado corretamente.",
       },
       {
         id: "mounting-and-split",
-        tag: "MOUNTING OPTIONS",
-        title: "Air Shaft, Solid Shaft, or Split Ring",
+        tag: "OPÇÕES DE MONTAGEM",
+        title: "Eixo de ar, eixo maciço ou anel dividido",
         description:
-          "Plain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft. A two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change.",
+          "A braçadeira de furo liso é fixada em um eixo pneumático expansível; um sistema de parafuso de fixação a prende a um eixo inferior sólido. Um anel dividido em duas partes pode ser removido sem desmontar o conjunto do eixo, o que, em uma máquina de grande porte, transforma uma parada programada em uma troca em operação.",
       },
     ],
     relatedBladeIds: [
@@ -7097,49 +7164,49 @@ export const blades: Blade[] = [
       "rotary-slitter-knives-paper",
     ],
     rfqPlaceholder:
-      "Example: Kampf rewinder, expandable air shaft, bottom ring Φ180 × 100 mm wide, 12 grooves at 25 mm pitch, single edge. Slitting 120 gsm coated board, 8 slits, changing width twice a week. Need 4 rings plus 2 smooth spacer rings.",
+      "Exemplo: Rebobinador Kampf, eixo pneumático expansível, anel inferior com Φ180 × 100 mm de largura, 12 ranhuras com passo de 25 mm, borda única. Corte longitudinal de cartolina revestida de 120 g/m², 8 cortes, com mudança de largura duas vezes por semana. São necessários 4 anéis, além de 2 anéis espaçadores lisos.",
     faqs: {
       technical: [
         {
           question:
-            "How is a multi-groove bottom knife different from a grooved anvil knife?",
+            "Em que difere uma faca de fundo com várias ranhuras de uma faca de bigorna com ranhuras?",
           answer:
-            "Scale and purpose. A grooved anvil knife is a disc carrying one to three grooves, ground to an OEM shear-pair profile and used mainly on film, foil and tape lines — see our bottom grooved anvil knives page for that product. A multi-groove ring is a much wider body carrying many parallel grooves, and its point is that a single ring covers many slit positions so width changes do not require re-tooling. If you change width often, you want the ring; if you run one width against a specified OEM anvil profile, you want the anvil.",
+            "Dimensões e finalidade. Uma lâmina de bigorna com ranhuras é um disco com uma a três ranhuras, retificada de acordo com o perfil de um par de lâminas OEM e utilizada principalmente em linhas de produção de filmes, folhas metálicas e fitas — consulte nossa página sobre lâminas de bigorna com ranhuras inferiores para obter informações sobre esse produto. Um anel com múltiplas ranhuras é um corpo muito mais largo, com várias ranhuras paralelas, e sua vantagem é que um único anel cobre várias posições de corte, de modo que as mudanças de largura não exigem a troca de ferramentas. Se você altera a largura com frequência, opte pelo anel; se opera com uma única largura de acordo com um perfil de bigorna OEM específico, opte pela bigorna.",
         },
         {
           question:
-            "What groove pitch can you actually grind, and how do I specify it?",
+            "Qual é o passo de ranhura que você consegue realmente retificar, e como faço para especificá-lo?",
           answer:
-            "Cutting edge division — the distance from one cutting edge to the next — is custom in nearly every case and can go as narrow as 5 mm (0.200 in). Do not specify it as a single number: send the list of slit widths you actually run and we will lay out the groove positions so your common widths all land on a groove. That is the difference between a ring that covers your schedule and one that covers half of it and forces a spacer stack for the rest.",
+            "A distância entre as arestas de corte — a distância de uma aresta de corte à seguinte — é personalizada em quase todos os casos e pode chegar a apenas 5 mm (0,200 pol.). Não a especifique como um único número: envie a lista das larguras de fenda que você realmente utiliza e nós definiremos as posições das ranhuras de modo que todas as suas larguras comuns fiquem alinhadas em uma ranhura. Essa é a diferença entre um anel que atende à sua programação e outro que atende apenas à metade dela, obrigando o uso de uma pilha de espaçadores para o restante.",
         },
         {
-          question: "Should I order plain bore or set screw?",
+          question: "Devo pedir com furo liso ou com parafuso de fixação?",
           answer:
-            "It follows your bottom shaft, not your preference. A plain bore clamps onto an expandable air shaft and is the fast-change option found on most modern converting lines. A set-screw design fixes onto a solid bottom shaft and is common on older machines and heavy board lines. The two are not interchangeable — the bore specification differs — so a ring bored for the wrong system will not seat true and will read as runout at the slit. If you are unsure, photograph the shaft end with the existing rings on it.",
+            "Isso depende do eixo inferior, e não da sua preferência. Um anel de furo liso é fixado em um eixo pneumático expansível e é a opção de troca rápida encontrada na maioria das linhas de conversão modernas. Um modelo com parafuso de fixação é montado em um eixo inferior sólido e é comum em máquinas mais antigas e em linhas de cartolina pesada. Os dois não são intercambiáveis — a especificação do furo difere —, portanto, um anel com furo para o sistema errado não se encaixará corretamente e será interpretado como desvio na fenda. Se você não tiver certeza, tire uma foto da extremidade do eixo com os anéis existentes nele.",
         },
         {
           question:
-            "My slit widths have started drifting across the shaft. Is the ring the problem?",
+            "As larguras das fendas começaram a variar ao longo do eixo. O anel é o problema?",
           answer:
-            "Check runout and the ring stack before the grooves. Groove positions are ground in one setup and do not move, so a ring that was accurate on installation is rarely the source of progressive width drift. The usual causes are a bore seating on a worn or contaminated shaft, or rings from different suppliers mixed on one shaft with slightly different bore and face specifications, which stacks a small wobble into a measurable width error. Worn groove edges show as a deteriorating cut edge and rising dust, not as width drift.",
+            "Verifique o desvio radial e o conjunto de anéis antes das ranhuras. As posições das ranhuras são retificadas em uma única configuração e não se alteram; portanto, um anel que estava preciso na instalação raramente é a causa de um desvio progressivo na largura. As causas mais comuns são o assentamento do furo em um eixo desgastado ou contaminado, ou a mistura de anéis de diferentes fornecedores em um único eixo com especificações de furo e face ligeiramente diferentes, o que acumula uma pequena oscilação, resultando em um erro de largura mensurável. Bordas de ranhuras desgastadas se manifestam como uma borda de corte deteriorada e aumento de poeira, e não como desvio de largura.",
         },
       ],
       company: [
         {
-          question: "What do you need in order to quote?",
+          question: "O que é necessário para fazer um orçamento?",
           answer:
-            "Outer diameter, bore, ring width, groove count and pitch, the shaft type (expandable air shaft or solid shaft), the mating top knife specification, and the substrate and line speed. The single most useful extra is your list of running widths — it lets us lay out groove positions against your real schedule instead of copying a pitch. A drawing or a worn ring shortens the quote further; we reverse-engineer from samples as routine work.",
+            "Diâmetro externo, diâmetro interno, largura do anel, número de ranhuras e passo, tipo de eixo (eixo pneumático expansível ou eixo maciço), especificação da faca superior correspondente, bem como o substrato e a velocidade da linha. O dado adicional mais útil é a sua lista de larguras de produção — isso nos permite definir as posições das ranhuras de acordo com sua programação real, em vez de simplesmente copiar um passo. Um desenho ou um anel desgastado reduz ainda mais o tempo de elaboração do orçamento; fazemos engenharia reversa a partir de amostras como parte de nosso trabalho de rotina.",
         },
         {
           question:
-            "Do you supply single-groove and smooth rings as well, or only multi-groove?",
+            "Vocês também fornecem anéis de ranhura única e lisos, ou apenas os de ranhuras múltiplas?",
           answer:
-            "All three, and we recommend buying them together. Single-groove cutter rings cover fixed positions and smooth rings act as spacers and web supports between cutting positions. Because they are made to the same bore and runout specification they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and genuinely hard-to-diagnose source of slit-width variation.",
+            "Todos os três, e recomendamos comprá-los juntos. Os anéis de corte com ranhura única cobrem posições fixas, enquanto os anéis lisos atuam como espaçadores e suportes de banda entre as posições de corte. Como são fabricados com as mesmas especificações de diâmetro interno e excentricidade, eles se encaixam sem causar oscilações — misturar anéis de diferentes fornecedores em um único eixo é uma causa comum e realmente difícil de diagnosticar para variações na largura do corte.",
         },
         {
-          question: "Can these be reground, and how many times?",
+          question: "É possível retificá-los, e quantas vezes?",
           answer:
-            "Yes, and regrinding is central to the economics because a ring is a large body to scrap. How many cycles you get depends on groove depth and how much material each regrind takes; tool-steel rings typically give several cycles before groove geometry can no longer be restored. We regrind rings we manufactured and, in most cases, rings we did not, provided the body is true and the bore is undamaged — and we will tell you plainly when a ring is not worth the work.",
+            "Sim, e o reafiamento é fundamental do ponto de vista econômico, pois um anel é uma peça grande para ser descartada. O número de ciclos que se consegue depende da profundidade da ranhura e da quantidade de material removida a cada reafiamento; anéis de aço para ferramentas geralmente permitem vários ciclos antes que a geometria da ranhura não possa mais ser restaurada. Reafiamos anéis que fabricamos e, na maioria dos casos, também aqueles que não fabricamos, desde que o corpo esteja em boas condições e o furo não esteja danificado — e informaremos claramente quando um anel não valer a pena o trabalho.",
         },
       ],
     },

@@ -1,280 +1,284 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    blade-categories.ts
 // Target:    tr
-// Generated: 2026-09-20T07:45:01.157Z
-// Provider:  manual (scripts/gen-blade-locale.ts)
-
+// Generated: 2026-09-20T07:57:34.649Z
+// Provider:  deepl
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "slitter-knives",
     category: "slitter_knives",
-    title: "Slitter Knives & Circular Blades",
-    seoTitle: "Rotary Slitter Knives & Circular Slitting Blades",
-    shortName: "Slitter Knives",
-    tagline: "Precision-ground rotary blades for film, paper & metal foil",
+    title: "Kesme Bıçakları ve Dairesel Bıçaklar",
+    seoTitle: "Döner Dilme Bıçakları ve Dairesel Dilme Bıçakları",
+    shortName: "Kesme Bıçakları",
+    tagline: "Film, kağıt ve metal folyo için hassas taşlanmış döner bıçaklar",
     heroImage: "/images/categories/slitter-knives-nav.webp",
     description:
-      "Rotary slitter knives for shear, score & razor cutting — film, paper, nonwovens & metal foil. ±0.002mm tolerance. M2 HSS, D2, ASP23 PM & carbide.",
+      "döner dilimleme bıçakları: kesme, yiv açma ve jilet kesimi için — film, kağıt, dokunmamış kumaşlar ve metal folyo. ±0,002 mm tolerans. M2 HSS, D2, ASP23 PM ve karbür.",
     specItems: [
       {
-        label: "Thickness Tolerance",
-        value: "±0.002 mm",
+        label: "Kalınlık Toleransı",
+        value: "±0,002 mm",
       },
       {
-        label: "T.I.R. Runout",
-        value: "≤0.02 mm",
+        label: "T.I.R. Sapması",
+        value: "≤0,02 mm",
       },
       {
-        label: "Materials",
-        value: "M2 HSS · D2 · ASP23 PM · Carbide",
+        label: "Malzemeler",
+        value: "M2 HSS · D2 · ASP23 PM · Karbür",
       },
       {
-        label: "Coatings",
+        label: "Kaplamalar",
         value: "TiN · DLC · Teflon",
       },
       {
-        label: "Cutting Modes",
-        value: "Shear · Score · Razor",
+        label: "Kesme Modları",
+        value: "Kesme · Çizme · Jilet",
       },
       {
-        label: "Applications",
-        value: "Film · Paper · Nonwovens · Foil",
+        label: "Başvurular",
+        value: "Film · Kağıt · Dokumasız kumaşlar · Folyo",
       },
     ],
   },
   {
     slug: "shredder-blades",
     category: "shredder_blades",
-    title: "Shredder Blades & Cutter Inserts",
-    shortName: "Shredder Blades",
-    tagline: "Twin-shaft, single-shaft and tire shredder cutting tools",
+    title: "Parçalayıcı Bıçakları ve Kesici Uçları",
+    shortName: "Parçalayıcı Bıçakları",
+    tagline: "Çift şaftlı, tek şaftlı ve lastik parçalayıcı kesici aletler",
     heroImage: "/images/categories/shredder-blades-nav.webp",
     description:
-      "Heavy-duty shredder blades for plastic, metal, tire & battery recycling. D2/SKD11/Cr12MoV, cryo & vacuum heat treated. Drop-in OEM fit, twin & single-shaft.",
+      "Plastik, metal, lastik ve akü geri dönüşümü için ağır hizmet tipi parçalayıcı bıçakları. D2/SKD11/Cr12MoV, kriyojenik ve vakumlu ısıl işlemden geçirilmiş. OEM'e tam uyumlu, çift ve tek şaftlı.",
     specItems: [
       {
-        label: "Materials",
+        label: "Malzemeler",
         value: "D2 · SKD11 · Cr12MoV",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "58–62 HRC",
       },
       {
-        label: "Heat Treatment",
-        value: "Cryogenic + Vacuum",
+        label: "Isıl İşlem",
+        value: "Kriyojenik + Vakum",
       },
       {
-        label: "Platforms",
-        value: "Twin-shaft · Single-shaft",
+        label: "Platformlar",
+        value: "Çift şaftlı · Tek şaftlı",
       },
       {
-        label: "Applications",
-        value: "Plastic · Metal · Tire · Battery",
+        label: "Başvurular",
+        value: "Plastik · Metal · Lastik · Pil",
       },
       {
-        label: "Fit",
-        value: "Drop-in OEM replacement",
+        label: "Uyum",
+        value: "Doğrudan takılabilen OEM yedek parça",
       },
     ],
   },
   {
     slug: "granulator-blades",
     category: "granulator_blades",
-    title: "Plastic Size-Reduction Blades: Granulator, Pelletizer & Compactor",
-    seoTitle: "Granulator, Pelletizer & Compactor Blades",
-    shortName: "Granulator Blades",
-    tagline: "Maximized regrind quality, extended MTBR",
+    title:
+      "Plastik Parçalama Bıçakları: Granülatör, Peletleyici ve Sıkıştırıcı",
+    seoTitle: "Granülatör, Peletleme Makinesi ve Sıkıştırıcı Bıçakları",
+    shortName: "Öğütücü Bıçakları",
+    tagline:
+      "Yeniden öğütme kalitesinin en üst düzeye çıkarılması, MTBR’nin uzatılması",
     heroImage: "/images/categories/granulator-blades-nav.webp",
     description:
-      "Choose between granulator rotor and bed knives, strand pelletizer rotors, die-face cutting knives, compactor blades and melt filter scrapers.",
+      "Granülatör rotorları ve yatak bıçakları, şerit peletleyici rotorları, kalıp yüzeyi kesme bıçakları, sıkıştırıcı bıçakları ve eriyik filtresi sıyırıcıları arasından seçim yapın.",
     specItems: [
       {
-        label: "Materials",
-        value: "H13 · D2 · M2 HSS · Carbide",
+        label: "Malzemeler",
+        value: "H13 · D2 · M2 HSS · Karbür",
       },
       {
-        label: "Geometry",
-        value: "Optimized rake angle",
+        label: "Geometri",
+        value: "Optimize edilmiş eğim açısı",
       },
       {
-        label: "Machines",
-        value: "Rotary · Claw · Hopper · Pelletizing",
+        label: "Makineler",
+        value: "Döner · Pençe · Hazne · Peletleme",
       },
       {
-        label: "Benefit",
-        value: "Lower motor load · Less dust",
+        label: "Avantaj",
+        value: "Daha düşük motor yükü · Daha az toz",
       },
       {
-        label: "Applications",
-        value: "Plastic regrind · Size reduction",
+        label: "Başvurular",
+        value: "Plastik öğütme · Parçacık boyutunun küçültülmesi",
       },
       {
-        label: "Regrindable",
-        value: "Yes — multiple cycles",
+        label: "Yeniden öğütülebilir",
+        value: "Evet — birden fazla döngü",
       },
     ],
   },
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Tissue & Log Saw Blades",
-    shortName: "Log Saw Blades",
-    tagline: "Zero dust. Burr-free tissue and napkin cutting.",
+    title: "Kağıt Havlu ve Kütük Testere Bıçakları",
+    shortName: "Tomruk Testere Bıçakları",
+    tagline: "Sıfır toz. Çapak bırakmayan kağıt mendil ve peçete kesimi.",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
-      "Circular log saw blades for tissue, kitchen towel & napkin converting. CBN-compatible, controlled runout, anti-friction coating for dust-free perforation.",
+      "Kağıt mendil, mutfak havlusu ve peçete üretiminde kullanılan log testere bıçakları tipi dairesel bıçak. CBN ile uyumlu, kontrollü salgı, tozsuz delme için sürtünme önleyici kaplamalı.",
     routingCopy:
-      "Two log saw blade families, split by what you are cutting. Tissue and towel logs on Perini, PCMC, Casmatic, Gambini and Bretting machines take the Ø610–1200 mm tissue blades. Nonwoven and wipes logs run smaller Ø350–700 mm blades with a different bevel. Pick the one that matches your line, or send us the machine model and we will point you at the right one.",
+      "Keseceğiniz malzemeye göre ayrılan iki rulo testere bıçağı grubu bulunmaktadır. Perini, PCMC, Casmatic, Gambini ve Bretting makinelerinde işlenen kağıt mendil ve havlu ruloları için Ø610–1200 mm’lik kağıt mendil bıçakları kullanılır. Dokunmamış kumaş ve mendil ruloları ise farklı bir eğime sahip, daha küçük Ø350–700 mm'lik bıçaklarla kesilir. Üretim hattınıza uygun olanı seçin veya bize makine modelini gönderin, size doğru bıçağı önerelim.",
     oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
     specItems: [
       {
-        label: "Profile",
-        value: "CBN-compatible",
+        label: "Profil",
+        value: "CBN uyumlu",
       },
       {
-        label: "Surface",
-        value: "Anti-friction treatment",
+        label: "Yüzey",
+        value: "Sürtünme önleyici işlem",
       },
       {
-        label: "Cut Quality",
-        value: "Dust-free perforation",
+        label: "Kesim Kalitesi",
+        value: "Tozsuz delme",
       },
       {
-        label: "Speed",
-        value: "Optimized for high line speeds",
+        label: "Hız",
+        value: "Yüksek hat hızları için optimize edilmiştir",
       },
       {
-        label: "Applications",
-        value: "Tissue · Kitchen towel · Napkin",
+        label: "Başvurular",
+        value: "Kağıt mendil · Mutfak havlusu · Peçete",
       },
       {
-        label: "Serration",
-        value: "Custom geometry available",
+        label: "Tırtıl",
+        value: "Özel geometri seçenekleri mevcuttur",
       },
     ],
   },
   {
     slug: "shear-blades",
     category: "shear_blades",
-    title: "Shear & Guillotine Blades",
-    seoTitle: "Guillotine Blades & Industrial Shear Knives",
-    shortName: "Shear Blades",
-    tagline: "Guillotine shear knives, metal shear blades and paper trim sets",
+    title: "Kesme ve Giyotin Bıçakları",
+    seoTitle: "Giyotin Bıçakları ve Endüstriyel Kesme Bıçakları",
+    shortName: "Kesme Bıçakları",
+    tagline:
+      "Giyotin kesme bıçakları, metal makaslama bıçakları ve kağıt kesme setleri",
     heroImage: "/images/categories/shear-blades-nav.webp",
     description:
-      "Guillotine blades for sheet metal shears, paper cutters and three-knife trimmers. D2, 6CrW2Si, HSS and TCT-inlay edges, ground to drawing or to sample.",
+      "Sac kesme makinaları, kağıt kesiciler ve üç bıçaklı kesiciler için giyotin bıçakları. D2, 6CrW2Si, HSS ve TCT kaplamalı kesici kenarlar; teknik çizim veya numuneye göre taşlanmıştır.",
     specItems: [
       {
-        label: "Edge Construction",
-        value: "TCT-inlay · Bimetallic · Solid HSS",
+        label: "Kenar Yapısı",
+        value: "TCT kaplamalı · Bimetalik · Katı HSS",
       },
       {
-        label: "Face Flatness",
-        value: "Maintained over full length",
+        label: "Yüzey Düzgünlüğü",
+        value: "Tüm uzunluk boyunca korunmuştur",
       },
       {
-        label: "Supply Format",
-        value: "Matched OEM sets",
+        label: "Tedarik Biçimi",
+        value: "OEM uyumlu setler",
       },
       {
-        label: "Machines",
-        value: "Hydraulic guillotine · Plate shear · Three-knife trimmer",
+        label: "Makineler",
+        value: "Hidrolik giyotin · Levha kesici · Üç bıçaklı kesme makinesi",
       },
       {
-        label: "Applications",
-        value: "Steel sheet · Paper · Board · Book block",
+        label: "Başvurular",
+        value: "Çelik sac · Kağıt · Karton · Kitap bloğu",
       },
       {
-        label: "Regrindable",
-        value: "Yes",
+        label: "Yeniden öğütülebilir",
+        value: "Evet",
       },
     ],
   },
   {
     slug: "cold-saw-blades",
     category: "cold_saw_blades",
-    title: "Metal Cold Saw Blades",
-    shortName: "Cold Saw Blades",
-    tagline: "HSS and carbide circular blades for cold-cutting steel and tube",
+    title: "Metal Soğuk Testere Bıçakları",
+    shortName: "Soğuk Testere Bıçakları",
+    tagline:
+      "Çelik ve boruların soğuk kesimi için HSS ve karbür dairesel bıçaklar",
     heroImage:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
     description:
-      "Cold circular saw blades for burr-free cutting of steel tube, solid bar & structural profiles. HSS-E (M35/M42) & TCT carbide-tipped, dry/flood/MQL cutting.",
+      "Çelik boru, kesme çubuğu ve yapı profillerinin çapak bırakmadan kesilmesi için soğuk kesim dairesel testere bıçakları. HSS-E (M35/M42) ve TCT karbür uçlu, kuru/sulu/MQL kesim.",
     specItems: [
       {
-        label: "Materials",
-        value: "HSS-E M35/M42 · TCT carbide-tipped",
+        label: "Malzemeler",
+        value: "HSS-E M35/M42 · TCT karbür uçlu",
       },
       {
-        label: "Cut Quality",
-        value: "Burr-free, no heat-affected zone",
+        label: "Kesim Kalitesi",
+        value: "Çapak bırakmaz, ısıdan etkilenmiş bölge yoktur",
       },
       {
-        label: "Cutting Conditions",
-        value: "Dry · Flood coolant · MQL",
+        label: "Kesme Koşulları",
+        value: "Kuru · Su soğutmalı · MQL",
       },
       {
-        label: "Applications",
-        value: "Steel tube · Solid bar · Structural profile",
+        label: "Başvurular",
+        value: "Çelik boru · Dolu çubuk · Yapısal profil",
       },
       {
-        label: "Supply Format",
-        value: "OEM replacement or custom OD/ID/pitch",
+        label: "Tedarik Biçimi",
+        value: "OEM yedek parçası veya özel dış çap/iç çap/adım",
       },
       {
-        label: "Regrindable",
-        value: "Yes — multiple cycles",
+        label: "Yeniden öğütülebilir",
+        value: "Evet — birden fazla döngü",
       },
     ],
   },
   {
     slug: "custom-profile",
     category: "custom_profile",
-    title: "Custom & Special-Shaped Blades",
-    shortName: "Custom Blades",
-    tagline: "Any geometry · any alloy · from DXF, DWG or sample",
+    title: "Özel ve Özel Şekilli Bıçaklar",
+    shortName: "Özel Bıçaklar",
+    tagline: "Her türlü geometri · her türlü alaşım · DXF, DWG veya numuneden",
     heroImage: "/images/products/blades/special-shaped-knife.webp",
     description:
-      "Custom profile and special-shaped industrial blades manufactured from your DXF/DWG/STEP drawings or physical samples. D2, H13, PM-HSS and solid carbide options with tolerances to ±0.02 mm — any profile, any industry.",
+      "DXF/DWG/STEP çizimlerinizden veya fiziksel numunelerinizden üretilen özel profilli ve özel şekilli endüstriyel bıçaklar. ±0,02 mm toleranslı D2, H13, PM-HSS ve katı karbür seçenekleri — her türlü profil, her türlü endüstri.",
   },
   {
     slug: "wood-chipper-blades",
     category: "wood_chipper",
-    title: "Wood Chipper Blades",
-    shortName: "Wood Chipper Blades",
+    title: "Ağaç Öğütücü Bıçakları",
+    shortName: "Ağaç Öğütücü Bıçakları",
     tagline:
-      "Drum & disc chipper knives for forestry, biomass & wood recycling",
+      "Ormancılık, biyokütle ve odun geri dönüşümü için tamburlu ve diskli yonga kesme bıçakları",
     heroImage:
       "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
     description:
-      "Heavy-duty drum and disc chipper knives manufactured from D2, Cr12MoV and TCT carbide-tipped steel. Vacuum heat-treated to HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry.",
+      "D2, Cr12MoV ve TCT karbür uçlu çelikten imal edilmiş ağır hizmet tipi tambur ve diskli yonga kesme bıçakları. Derin kriyojenik işlem ile HRC 57–62 sertliğine kadar vakumla ısıl işleme tabi tutulmuştur. Temiz ve düzgün yonga geometrisi için ±0,05 mm kalınlık toleransında hassas taşlama işlemine tabi tutulmuştur.",
     specItems: [
       {
-        label: "Materials",
-        value: "High-Carbon Steel · D2/Cr12MoV · TCT Carbide-Tipped",
+        label: "Malzemeler",
+        value: "Yüksek Karbonlu Çelik · D2/Cr12MoV · TCT Karbür Uçlu",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–58 (standard) · HRC 58–62 (D2) · HRA 89–91 (TCT)",
+        label: "Sertlik",
+        value: "HRC 55–58 (standart) · HRC 58–62 (D2) · HRA 89–91 (TCT)",
       },
       {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm",
+        label: "Kalınlık Toleransı",
+        value: "±0,05 mm",
       },
       {
-        label: "Applications",
-        value: "Drum chippers · Disc chippers · Biomass whole-tree chippers",
+        label: "Başvurular",
+        value:
+          "Tamburlu yongalama makineleri · Diskli yongalama makineleri · Biyokütle için bütün ağaç yongalama makineleri",
       },
       {
-        label: "OEM Compatibility",
+        label: "OEM Uyumluluğu",
         value: "Bandit · Vermeer · Morbark · Peterson · Doppstadt · Jenz",
       },
       {
-        label: "Regrindable",
-        value: "Yes — 8–12 cycles (through-hardened)",
+        label: "Yeniden öğütülebilir",
+        value: "Evet — 8–12 döngü (tam sertleştirilmiş)",
       },
     ],
   },

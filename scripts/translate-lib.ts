@@ -10,7 +10,7 @@
  *   vi           → MyMemory (free, no key required)
  */
 
-export type LangCode = "es" | "fr" | "ru" | "vi";
+export type LangCode = "es" | "fr" | "ru" | "vi" | "ar" | "pt" | "tr";
 
 // ── Field extraction ─────────────────────────────────────────────────────────
 
@@ -66,7 +66,8 @@ export const NON_TRANSLATABLE_KEYS = new Set([
 ]);
 
 const URL_LIKE = /^(https?:\/\/|\/[A-Za-z0-9_\-/]|mailto:|tel:)/;
-const FILE_LIKE = /\.(webp|png|jpg|jpeg|svg|gif|pdf|mp4|webm|avif|dxf|dwg|step|stp)(\?|$)/i;
+const FILE_LIKE =
+  /\.(webp|png|jpg|jpeg|svg|gif|pdf|mp4|webm|avif|dxf|dwg|step|stp)(\?|$)/i;
 
 function isTranslatableString(s: string): boolean {
   const trimmed = s.trim();
@@ -143,7 +144,7 @@ export function applyTranslations<T>(
 // Order matters: list longer phrases BEFORE their substrings so the regex
 // doesn't shadow ("rotary slitter knives" before "slitter").
 
-export const GLOSSARY: Record<LangCode, Record<string, string>> = {
+export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   es: {
     "Rotary slitter knives": "cuchillas rotativas de corte longitudinal",
     "rotary slitter knives": "cuchillas rotativas de corte longitudinal",
@@ -216,6 +217,42 @@ export const GLOSSARY: Record<LangCode, Record<string, string>> = {
     "vacuum heat treatment": "xử lý nhiệt chân không",
     "CMM inspection": "kiểm tra CMM",
   },
+  pt: {
+    "Rotary slitter knives": "facas circulares de corte longitudinal",
+    "rotary slitter knives": "facas circulares de corte longitudinal",
+    "granulator blades": "facas para granuladores",
+    "shredder blades": "facas para trituradores",
+    "tungsten carbide": "metal duro",
+    "pelletizer blades": "facas para peletizadoras",
+    "guillotine blades": "facas de guilhotina",
+    "shear blades": "facas de cisalhamento",
+    "circular knives": "facas circulares",
+    "log saw blades": "lâminas de serra para bobinas",
+    "heat treatment": "tratamento térmico",
+    "Rockwell hardness": "dureza Rockwell",
+    "powder metallurgy": "metalurgia do pó",
+    "cold-work tool steel": "aço-ferramenta para trabalho a frio",
+    "vacuum heat treatment": "tratamento térmico a vácuo",
+    "CMM inspection": "inspeção CMM",
+  },
+  tr: {
+    "Rotary slitter knives": "döner dilimleme bıçakları",
+    "rotary slitter knives": "döner dilimleme bıçakları",
+    "granulator blades": "granülatör bıçakları",
+    "shredder blades": "parçalayıcı bıçakları",
+    "tungsten carbide": "tungsten karbür",
+    "pelletizer blades": "peletleyici bıçakları",
+    "guillotine blades": "giyotin bıçakları",
+    "shear blades": "makaslama bıçakları",
+    "circular knives": "dairesel bıçaklar",
+    "log saw blades": "log testere bıçakları",
+    "heat treatment": "ısıl işlem",
+    "Rockwell hardness": "Rockwell sertliği",
+    "powder metallurgy": "toz metalurjisi",
+    "cold-work tool steel": "soğuk iş takım çeliği",
+    "vacuum heat treatment": "vakumda ısıl işlem",
+    "CMM inspection": "CMM ölçümü",
+  },
 };
 
 /**
@@ -279,11 +316,20 @@ const DEEPL_LANG_MAP: Record<string, string> = {
   es: "ES",
   fr: "FR",
   ru: "RU",
+  // Brazilian Portuguese — Brazil is the target market, not Portugal.
+  pt: "PT-BR",
+  tr: "TR",
 };
 
 export class DeepLProvider implements TranslationProvider {
   readonly name = "deepl";
-  readonly supportedLangs: ReadonlyArray<LangCode> = ["es", "fr", "ru"];
+  readonly supportedLangs: ReadonlyArray<LangCode> = [
+    "es",
+    "fr",
+    "ru",
+    "pt",
+    "tr",
+  ];
 
   constructor(
     private readonly apiKey: string,
@@ -350,10 +396,7 @@ export class GoogleTranslateUnofficialProvider implements TranslationProvider {
     private readonly endpoint = "https://translate.googleapis.com/translate_a/single"
   ) {}
 
-  private async fetchOne(
-    text: string,
-    targetLang: LangCode
-  ): Promise<string> {
+  private async fetchOne(text: string, targetLang: LangCode): Promise<string> {
     const url = new URL(this.endpoint);
     url.searchParams.set("client", "gtx");
     url.searchParams.set("sl", "en");
@@ -423,10 +466,7 @@ export class MyMemoryProvider implements TranslationProvider {
     private readonly maxRetries = 5
   ) {}
 
-  private async fetchOne(
-    text: string,
-    targetLang: LangCode
-  ): Promise<string> {
+  private async fetchOne(text: string, targetLang: LangCode): Promise<string> {
     const params = new URLSearchParams({
       q: text,
       langpair: `en|${targetLang}`,
@@ -444,8 +484,11 @@ export class MyMemoryProvider implements TranslationProvider {
         if (!res.ok) {
           if (res.status === 429) {
             lastErr = new Error(`MyMemory http 429`);
-            const wait = BACKOFF_429_MS[Math.min(attempt, BACKOFF_429_MS.length - 1)];
-            process.stdout.write(`\n      [rate-limit] sleeping ${wait / 1000}s…\n`);
+            const wait =
+              BACKOFF_429_MS[Math.min(attempt, BACKOFF_429_MS.length - 1)];
+            process.stdout.write(
+              `\n      [rate-limit] sleeping ${wait / 1000}s…\n`
+            );
             await new Promise(r => setTimeout(r, wait));
             continue;
           }
@@ -468,7 +511,8 @@ export class MyMemoryProvider implements TranslationProvider {
           // Body-level 429 — daily quota. Same backoff path; if we keep hitting
           // it after multiple retries the caller will see a hard failure.
           lastErr = new Error(`MyMemory body 429 (quota)`);
-          const wait = BACKOFF_429_MS[Math.min(attempt, BACKOFF_429_MS.length - 1)];
+          const wait =
+            BACKOFF_429_MS[Math.min(attempt, BACKOFF_429_MS.length - 1)];
           process.stdout.write(`\n      [quota] sleeping ${wait / 1000}s…\n`);
           await new Promise(r => setTimeout(r, wait));
           continue;
@@ -511,12 +555,13 @@ export async function translateAll(
   provider: TranslationProvider,
   texts: string[],
   targetLang: LangCode,
-  options: { batchSize?: number; onProgress?: (done: number, total: number) => void } = {}
+  options: {
+    batchSize?: number;
+    onProgress?: (done: number, total: number) => void;
+  } = {}
 ): Promise<string[]> {
   if (!provider.supportedLangs.includes(targetLang)) {
-    throw new Error(
-      `Provider ${provider.name} does not support ${targetLang}`
-    );
+    throw new Error(`Provider ${provider.name} does not support ${targetLang}`);
   }
   const batchSize = options.batchSize ?? (provider.name === "deepl" ? 50 : 1);
 
@@ -529,10 +574,16 @@ export async function translateAll(
     const batch = sources.slice(i, i + batchSize);
     const translated = await provider.translateBatch(batch, targetLang);
     for (let j = 0; j < translated.length; j++) {
-      const restored = postprocessGlossary(translated[j], prepped[i + j].placeholders);
+      const restored = postprocessGlossary(
+        translated[j],
+        prepped[i + j].placeholders
+      );
       results.push(restored);
     }
-    options.onProgress?.(Math.min(i + batchSize, sources.length), sources.length);
+    options.onProgress?.(
+      Math.min(i + batchSize, sources.length),
+      sources.length
+    );
   }
 
   return results;

@@ -1,7 +1,7 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    mixerParts.ts
 // Target:    tr
-// Generated: 2026-09-20T07:44:37.573Z
+// Generated: 2026-09-20T08:00:26.687Z
 // Provider:  manual (scripts/gen-mixer-locale.ts)
 
 import type { MixerPart, MixerCategory, MixerFaq } from "../mixerParts";
@@ -9,11 +9,11 @@ import type { MixerPart, MixerCategory, MixerFaq } from "../mixerParts";
 export const mixerParts: MixerPart[] = [
   {
     id: "concrete-mixing-arm",
-    name: "Concrete Mixing Arm",
-    fullName: "Concrete Mixing Plant Mixing Arm (ZG310-570 Cast Steel)",
+    name: "Beton Karıştırma Kolu",
+    fullName: "Beton Karıştırma Tesisi Karıştırma Kolu (ZG310-570 Dökme Çelik)",
     category: "concrete_mixing_plant",
     sector: "mixing_arm",
-    categoryDisplay: "Concrete Mixing Plant",
+    categoryDisplay: "Beton Karıştırma Tesisi",
     image:
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-00.webp",
     gallery: [
@@ -21,15 +21,15 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-01.webp",
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-02.webp",
     ],
-    badge: "OEM-Fit",
+    badge: "OEM Uyumlu",
     badgeColor: "blue",
     description:
-      "Concrete mixing plant mixing arm in ZG310-570 cast steel - links the drive shaft to the blades and scrapers; lost-foam cast for OEM-fit replacement.",
+      "ZG310-570 dökme çelikten imal edilmiş beton karıştırma tesisi karıştırma kolu – tahrik milini kanatlara ve sıyırıcılara bağlar; OEM uyumlu yedek parça olarak köpük kalıplama yöntemiyle üretilmiştir.",
     fullDescription:
-      "The mixing arm is the load-bearing link between the rotating shaft and the blades and scrapers that actually move the concrete. Every batch it carries the full reversing torque of the aggregate load. When an arm starts to crack at the hub or its bolt bosses elongate, blade spacing drifts out of position, the mix turns uneven, and a fully detached arm can gouge the liner plates or jam the drum - turning a low-cost wear item into an unplanned plant shutdown.\n\nSureay casts these arms from ZG310-570 cast steel, a grade chosen for impact toughness rather than surface hardness, so the arm absorbs shock and flexes slightly instead of fracturing. Each arm is produced on our lost-foam casting line for repeatable wall thickness and clean hub geometry, then machined to the original bolt pattern so it indexes onto the shaft without shimming or field grinding.\n\nArms are supplied to fit common twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. Arms typically serve 12-18 months. Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval. We recommend renewing arms as a set with the blades and scrapers so the whole mixing tool stays inside the same wear window.",
+      "Karıştırma kolu, dönen mil ile betonu fiilen hareket ettiren kanatlar ve sıyırıcılar arasındaki yük taşıyan bağlantıdır. Her parti sırasında, agrega yükünün tam ters torkunu taşır. Bir kolun göbeğinde çatlak oluşmaya başladığında veya cıvata çıkıntıları uzadığında, bıçak aralıkları kayar, karışım düzensiz hale gelir ve tamamen kopan bir kol, astar plakalarını oyabilir veya tamburu sıkıştırabilir; bu da düşük maliyetli bir aşınma parçasını, plan dışı bir tesis duruşuna dönüştürür.\n\nSureay, bu kolları ZG310-570 dökme çelikten dökmektedir; bu kalite, yüzey sertliğinden ziyade darbe dayanıklılığı nedeniyle seçilmiştir; böylece kol, kırılmak yerine darbeleri emer ve hafifçe esner. Her kol, tekrarlanabilir duvar kalınlığı ve temiz göbek geometrisi sağlamak üzere kaybolan köpük döküm hattımızda üretilir; ardından orijinal cıvata düzenine göre işlenir, böylece şimleme veya sahada taşlama gerektirmeden mil üzerine tam olarak oturur.\n\nKollar, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalarının yaygın çift şaftlı ve planet tipi tesislerine uyacak şekilde tedarik edilmektedir. Kolların hizmet ömrü genellikle 12-18 aydır. Hizmet ömrü, üretim kapasitesine, agrega sertliğine ve çalışma döngüsüne bağlıdır — OEM servis aralığınızla karşılaştırarak doğrulayın. Tüm karıştırma aletinin aynı aşınma aralığında kalması için kolların bıçaklar ve sıyırıcılarla birlikte bir set halinde yenilenmesini öneririz.",
     link: "/mixer-wear-parts/concrete-mixing-plant/concrete-mixing-arm",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "Impact-Resistant Cast Steel",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "Darbeye Dayanıklı Dökme Çelik",
     isFeatured: true,
     compatibleMachines: [
       "Sicoma",
@@ -48,24 +48,24 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "ZG310-570 cast steel",
+        label: "Malzeme",
+        value: "ZG310-570 dökme çelik",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value:
-          "Alloy steel casting, toughness-optimized (not surface-hardened)",
+          "Alaşımlı çelik döküm, tokluk açısından optimize edilmiş (yüzey sertleştirilmemiş)",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, machined to OEM bolt pattern",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, OEM cıvata düzenine göre işlenmiş",
       },
       {
-        label: "Application",
-        value: "Twin-shaft & planetary concrete mixers",
+        label: "Başvuru",
+        value: "Çift şaftlı ve planet tipi beton karıştırıcılar",
       },
       {
-        label: "OEM Fit",
+        label: "OEM Uyumluluğu",
         value:
           "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS, Eirich",
       },
@@ -73,84 +73,84 @@ export const mixerParts: MixerPart[] = [
     components: [
       {
         id: "toughness-first-casting",
-        tag: "METALLURGY",
-        title: "Toughness-First Cast Steel",
+        tag: "METALURJİ",
+        title: "Dayanıklılık Öncelikli Dökme Çelik",
         description:
-          "ZG310-570 puts impact resistance ahead of raw hardness. Under the reversing shock load of a full aggregate batch the arm absorbs energy and deforms slightly rather than cracking at the hub - the failure mode that takes liners and shafts down with it.",
+          "ZG310-570, ham sertlikten ziyade darbe direncine öncelik verir. Tam bir agrega partisinin ters yönlü şok yükü altında, kol enerjiyi emer ve göbek kısmında çatlak oluşması yerine hafifçe deforme olur; zira göbek kısmında çatlak oluşması, astarları ve milleri de beraberinde hasara uğratan bir arıza şeklidir.",
       },
       {
         id: "indexed-bolt-pattern",
-        tag: "FITMENT",
-        title: "Machined OEM Bolt Pattern",
+        tag: "UYUM",
+        title: "İşlenmiş OEM Cıvata Dizisi",
         description:
-          "Hubs and bolt bosses are machined to the original-equipment pattern, so each arm seats on the shaft and holds blade spacing without shims or field grinding - keeping a swap to a routine maintenance task.",
+          "Göbekler ve cıvata yuvaları orijinal ekipman şablonuna göre işlenmiştir; bu sayede her bir kol, şim kullanmaya veya yerinde taşlamaya gerek kalmadan mil üzerine oturur ve bıçak aralığını korur; böylece değiştirme işlemi rutin bir bakım görevi haline gelir.",
       },
       {
         id: "oem-odm-sourcing",
         tag: "OEM / ODM",
-        title: "Reproduced From Your Sample",
+        title: "Örneğinizden Alıntı",
         description:
-          "No drawing on file is no problem. Send a worn arm or the plant model and we reverse-engineer a drop-in casting on the lost-foam line - the standard route for older or less common mixers.",
+          "Elimizde çizim olmaması sorun değil. Aşınmış bir kolu veya tesis modelini gönderin; biz de kayıp köpük yöntemiyle doğrudan takılabilen bir döküm parçası tasarlayalım – bu, eski veya daha az yaygın karıştırıcılar için standart yöntemdir.",
       },
     ],
     faq: [
       {
-        question: "How often should concrete mixer arms be replaced?",
+        question: "Beton karıştırıcı kolları ne sıklıkla değiştirilmelidir?",
         answer:
-          "Most plants renew mixing arms every 12-18 months, though high-output operations running hard, abrasive aggregate can reach the wear limit sooner. The practical signal is bolt-hole elongation or blade spacing that no longer holds adjustment. Replacing arms together with the blades and scrapers keeps the whole mixing tool on one wear cycle.",
+          "Çoğu tesis, karıştırma kollarını her 12-18 ayda bir yeniler; ancak sert ve aşındırıcı agregalarla yoğun bir şekilde çalışan yüksek verimli tesislerde aşınma sınırına daha erken ulaşılabilir. Bunun pratikteki belirtisi, cıvata deliklerinin uzaması veya bıçak aralıklarının artık ayarlanamamasıdır. Kolların bıçaklar ve sıyırıcılarla birlikte değiştirilmesi, tüm karıştırma aletinin tek bir aşınma döngüsünde kalmasını sağlar.",
       },
       {
         question:
-          "Will a replacement arm fit my existing shaft without modification?",
+          "Yedek kol, herhangi bir değişiklik yapılmadan mevcut şaftıma uyacak mı?",
         answer:
-          "Yes. Arms are machined to the original OEM bolt pattern for the listed plants, so they index onto the shaft and locate the blades without shimming or drilling. Send us the plant model and a photo of the hub and we confirm the pattern before shipping.",
+          "Evet. Kollar, listelenen tesisler için orijinal OEM cıvata düzenine göre işlenmiştir; bu sayede şafta tam olarak oturur ve herhangi bir ara parça veya delme işlemi gerektirmeden kanatları yerine oturtur. Bize tesis modelini ve göbeğin bir fotoğrafını gönderin; sevkiyat öncesinde cıvata düzenini teyit edelim.",
       },
       {
         question:
-          "Why are mixing arms cast in tougher steel instead of a harder grade?",
+          "Karıştırma kolları neden daha sert bir çelik türü yerine daha dayanıklı bir çelikten dökülür?",
         answer:
-          "Arms fail from shock and fatigue, not abrasion, so toughness matters more than hardness here - a very hard, brittle arm would crack at the hub under reversing batch loads. The hard, high-chromium material is reserved for the blades, scrapers and liners that take the direct grinding.",
+          "Kollar, aşınma nedeniyle değil, darbe ve yorgunluktan dolayı kırılır; bu nedenle burada sertlikten çok tokluk önemlidir — çok sert ve kırılgan bir kol, ters yönde gelen aralıklı yükler altında göbek kısmından çatlar. Sert, yüksek krom içerikli malzeme, doğrudan öğütme yükünü üstlenen bıçaklar, sıyırıcılar ve astarlar için ayrılmıştır.",
       },
       {
-        question: "Which concrete mixing plants do your mixing arms fit?",
+        question: "Karıştırma kollarınız hangi beton santrallerine uyuyor?",
         answer:
-          "Our concrete mixing arms are cast to fit twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. Tell us the plant make and model and we match the bolt pattern and shaft bore; arms for other brands can be reverse-engineered from a worn sample.",
-      },
-      {
-        question:
-          "Can you make a concrete mixing arm from a worn sample or drawing?",
-        answer:
-          "Yes - OEM/ODM is welcome. Send a worn arm, a dimensioned sketch or the plant model and we cast a drop-in replacement on our lost-foam line, matched to the original hub geometry and bolt pattern. This is the usual route for older or less common mixers.",
+          "Beton karıştırma kollarımız, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalarının çift şaftlı ve planet tipi tesislerine uyacak şekilde döküm olarak üretilmektedir. Tesisin markasını ve modelini bize bildirirseniz, cıvata düzenini ve mil deliğini buna göre ayarlarız; diğer markalara ait kollar ise aşınmış bir numuneden tersine mühendislik yoluyla üretilebilir.",
       },
       {
         question:
-          "What is ZG310-570 cast steel and why is it used for mixing arms?",
+          "Aşınmış bir numune veya çizimden beton karıştırma kolu yapabilir misiniz?",
         answer:
-          "ZG310-570 is a medium-strength cast carbon steel chosen for toughness rather than surface hardness. A mixing arm carries reversing shock loads every batch, so it has to absorb impact and flex slightly instead of cracking - the abrasion-resistant Ni-Hard and high-chrome grades are reserved for the blades and liners.",
+          "Evet – OEM/ODM taleplerini memnuniyetle kabul ediyoruz. Aşınmış bir kol, boyutları belirtilmiş bir çizim veya tesis modelini bize gönderin; biz de kayıp köpük üretim hattımızda, orijinal göbek geometrisi ve cıvata düzenine uygun, doğrudan takılabilen bir yedek parça dökümünü yapalım. Bu, eski veya daha az yaygın karıştırıcılar için genellikle izlenen yoldur.",
       },
       {
         question:
-          "What is the minimum order quantity and lead time for mixing arms?",
+          "ZG310-570 dökme çelik nedir ve karıştırma kolları için neden kullanılır?",
         answer:
-          "We ship factory-direct and keep the MOQ low on replacement wear parts; exact quantity and lead time depend on the model and whether tooling already exists. Send your plant model for a quote - most repeat items ship in a few weeks, and a material and hardness report can be included on request.",
+          "ZG310-570, yüzey sertliğinden ziyade tokluk özelliği nedeniyle tercih edilen orta mukavemetli bir dökme karbon çeliğidir. Karıştırma kolu her partide ters yönlü darbe yüklerine maruz kaldığından, çatlamak yerine darbeyi emmeli ve hafifçe esnemelidir; aşınmaya dayanıklı Ni-Hard ve yüksek kromlu kaliteler ise bıçaklar ve astarlar için ayrılmıştır.",
+      },
+      {
+        question:
+          "Karıştırma kollarının minimum sipariş miktarı ve teslim süresi nedir?",
+        answer:
+          "Yedek aşınma parçalarını doğrudan fabrikadan sevk ediyoruz ve minimum sipariş miktarını (MOQ) düşük tutuyoruz; kesin miktar ve teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin – tekrar sipariş edilen ürünlerin çoğu birkaç hafta içinde sevk edilir ve talep üzerine malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "Standard ZG310-570",
-        note: "Tough cast-steel baseline for general twin-shaft and planetary plants.",
+        grade: "ZG310-570 Standardı",
+        note: "Genel çift şaftlı ve planet dişli tesisler için sağlam dökme çelik taban.",
       },
       {
-        grade: "High-Strength Alloy",
-        note: "Upgraded alloy steel for higher reversing torque and longer fatigue life.",
+        grade: "Yüksek Mukavemetli Alaşım",
+        note: "Daha yüksek ters dönme torku ve daha uzun yorulma ömrü için geliştirilmiş alaşımlı çelik.",
       },
       {
-        grade: "Heavy-Duty High-Output",
-        note: "Reinforced hub section for plants running hard, abrasive aggregate at volume.",
+        grade: "Ağır Hizmet Tipi Yüksek Verimli",
+        note: "Yüksek hacimde sert ve aşındırıcı agrega işleyen tesisler için güçlendirilmiş göbek bölümü.",
       },
       {
-        grade: "OEM-Pattern Match",
-        note: "Machined to a specific plant's bolt pattern and shaft bore on request.",
+        grade: "OEM Desen Eşleşmesi",
+        note: "Talep üzerine belirli bir tesisin cıvata düzenine ve mil deliğine göre işlenir.",
       },
     ],
     relatedIds: [
@@ -162,11 +162,12 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "concrete-liner-plate",
-    name: "Concrete Liner Plate",
-    fullName: "Concrete Mixing Plant Liner Plate (Ni-Hard / High-Chrome Iron)",
+    name: "Beton Kaplama Levhası",
+    fullName:
+      "Beton Karıştırma Tesisi Astar Plakası (Ni-Hard / Yüksek Kromlu Demir)",
     category: "concrete_mixing_plant",
     sector: "liner",
-    categoryDisplay: "Concrete Mixing Plant",
+    categoryDisplay: "Beton Karıştırma Tesisi",
     image:
       "/images/mixer-parts/concrete-liner-plate/concrete-liner-plate-00.webp",
     gallery: [
@@ -177,12 +178,12 @@ export const mixerParts: MixerPart[] = [
     badge: "HB600+",
     badgeColor: "slate",
     description:
-      "Concrete mixing plant liner plate in Ni-Hard / high-chrome iron, HB600+ - shields the drum interior from aggregate abrasion; bolt-in replacement.",
+      "Ni-Hard / yüksek kromlu demirden imal edilmiş beton karıştırma tesisi astar plakası, HB600+ - tamburun iç kısmını agrega aşınmasına karşı korur; cıvatalı yedek parça.",
     fullDescription:
-      "Liner plates are the sacrificial skin of the mixing drum. They take the constant grinding of sand, gravel and cement against the chamber wall so the drum shell itself never wears. Once a liner thins through or a fixing bolt pulls loose, abrasive aggregate reaches the structural drum - a repair an order of magnitude more expensive than a liner swap, and one that can write off the chamber entirely.\n\nSureay liners are cast in Ni-Hard and high-chromium iron with a working hardness above HB 600, putting the wear face well beyond the hardness of the aggregate attacking it. Plates are produced on our lost-foam and DISA green-sand lines for a consistent profile and accurate bolt-hole position, so each segment sits flush against its neighbour with no exposed lip for material to catch and pry up.\n\nLiner sets bolt straight into twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. Liners typically last 6-18 months. Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval. Rotating the most-worn positions and keeping a spare set on the shelf avoids the long lead time that turns a worn liner into lost production.",
+      "Astar plakaları, karıştırma tamburunun aşınmaya maruz kalan dış tabakasıdır. Kum, çakıl ve çimentonun hazne duvarına sürekli olarak sürtünmesini üstlenirler; böylece tambur gövdesi asla aşınmaz. Bir astar inceldiğinde veya bir sabitleme cıvatası gevşediğinde, aşındırıcı agrega yapısal tambura ulaşır; bu durum, astar değişiminden çok daha pahalı bir onarım gerektirir ve hazneyi tamamen kullanılamaz hale getirebilir.\n\nSureay astar plakaları, çalışma sertliği HB 600'ün üzerinde olan Ni-Hard ve yüksek kromlu demirden dökülür; böylece aşınma yüzeyi, kendisine saldıran agreganın sertliğinin çok ötesine geçer. Plakalar, tutarlı bir profil ve doğru cıvata deliği konumu sağlamak için kayıp köpük ve DISA yeşil kum hatlarımızda üretilir; böylece her bir segment, malzemenin takılıp yukarı doğru kaldırmasına neden olacak açık bir kenar bırakmadan komşusuna tam olarak oturur.\n\nAstar setleri, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalı çift şaftlı ve planet tipi tesislerin cıvatalarına doğrudan takılabilir. Astarların ömrü genellikle 6-18 aydır. Hizmet ömrü, üretim hacmine, agrega sertliğine ve çalışma döngüsüne bağlıdır — OEM servis aralığınızla karşılaştırarak doğrulayın. En çok aşınan pozisyonları dönüşümlü olarak kullanmak ve yedek bir seti elinizin altında bulundurmak, aşınmış bir astarın üretim kaybına yol açmasına neden olan uzun teslim süresini önler.",
     link: "/mixer-wear-parts/concrete-mixing-plant/concrete-liner-plate",
-    trustProcess: "Lost-Foam & DISA Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük ve DISA Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     compatibleMachines: [
       "Sicoma",
       "Liebherr",
@@ -200,23 +201,23 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "Ni-Hard / high-chromium cast iron",
+        label: "Malzeme",
+        value: "Ni-Hard / yüksek kromlu dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam / DISA green-sand casting",
+        label: "Süreç",
+        value: "Kayıp köpük / DISA yeşil kum dökümü",
       },
       {
-        label: "Application",
-        value: "Concrete mixer drum & chamber lining",
+        label: "Başvuru",
+        value: "Beton karıştırıcı tamburu ve hazne kaplaması",
       },
       {
-        label: "OEM Fit",
+        label: "OEM Uyumluluğu",
         value:
           "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS, Eirich",
       },
@@ -225,86 +226,88 @@ export const mixerParts: MixerPart[] = [
       {
         id: "abrasion-barrier",
         tag: "WEAR LIFE",
-        title: "HB600+ Abrasion Barrier",
+        title: "HB600+ Aşınma Bariyeri",
         description:
-          "Ni-Hard and high-chromium iron carry the wear face above HB 600 - harder than the sand and gravel that grind against it. The result is a sacrificial plate that wears predictably and protects the structural drum behind it.",
+          "Ni-Hard ve yüksek kromlu demir, HB 600'ün üzerinde bir aşınma yüzeyine sahiptir; bu, ona sürtünen kum ve çakıldan daha serttir. Sonuç olarak, öngörülebilir şekilde aşınan ve arkasındaki yapısal tamburu koruyan bir fedakar levha elde edilir.",
       },
       {
         id: "flush-bolt-fit",
-        tag: "FITMENT",
-        title: "Flush Bolt-On Segments",
+        tag: "UYUM",
+        title: "Gömme Tipi Cıvatalı Segmentler",
         description:
-          "Accurate bolt-hole position from the DISA green-sand line means each plate sits flush against its neighbour, leaving no proud edge for aggregate to catch, lift and tear out early.",
+          "DISA yeşil kum üretim hattından elde edilen hassas cıvata deliği konumları sayesinde, her bir plaka komşusuna tam olarak hizalanır ve agreganın takılıp kaldırarak erken aşınmasına neden olabilecek çıkıntılı kenarlar oluşmaz.",
       },
       {
         id: "grade-matched-aggregate",
-        tag: "GRADE",
-        title: "Grade Matched to Your Aggregate",
+        tag: "NOT",
+        title: "Aggregatınıza Uygun Sınıf",
         description:
-          "Ni-Hard for general duty, high-chromium iron for the hardest, most abrasive aggregate - we match the carbide structure to your material and output instead of shipping a one-size plate.",
+          "Genel kullanım için Ni-Hard, en sert ve en aşındırıcı agrega için yüksek kromlu demir – tek tip bir plaka göndermek yerine, karbür yapısını malzemenize ve üretim hacminize göre uyarlıyoruz.",
       },
     ],
     faq: [
       {
-        question: "How do I know when concrete liner plates need replacing?",
+        question:
+          "Beton kaplama levhalarının ne zaman değiştirilmesi gerektiğini nasıl anlarım?",
         answer:
-          "Measure the remaining plate thickness at the highest-wear zones and watch the bolt heads - once they stand proud of the worn surface or start to round off, the liner is near the end of its life. Replacing before the plate thins through keeps abrasive aggregate off the structural drum, which is far costlier to repair.",
+          "En fazla aşınma görülen bölgelerde kalan plaka kalınlığını ölçün ve cıvata başlarına dikkat edin; cıvata başları aşınmış yüzeyden dışarı çıkmaya başladığında veya yuvarlanmaya başladığında, astarın kullanım ömrü sona yaklaşmış demektir. Plaka tamamen incelenmeden önce değiştirilmesi, aşındırıcı agregaların yapısal tambura temas etmesini önler; bu tamburun onarımı çok daha maliyetlidir.",
       },
       {
         question:
-          "What is the difference between Ni-Hard and high-chromium liner plates?",
+          "Ni-Hard ile yüksek kromlu astar plakaları arasındaki fark nedir?",
         answer:
-          "Both run above HB 600, but the carbide structure differs: Ni-Hard offers good general abrasion resistance at a lower cost, while high-chromium iron carries a higher carbide volume for tougher, more abrasive aggregate and longer life. We match the grade to your aggregate hardness and output.",
+          "Her ikisi de HB 600’ün üzerindedir, ancak karbür yapıları farklıdır: Ni-Hard, daha düşük maliyetle iyi bir genel aşınma direnci sunarken, yüksek kromlu demir, daha sert ve aşındırıcı agregalar ile daha uzun kullanım ömrü için daha yüksek karbür hacmine sahiptir. Sınıfı, agreganızın sertliğine ve üretim hacminize göre uyumlu hale getiriyoruz.",
       },
       {
-        question: "Which concrete mixers do your liner plates fit?",
+        question: "Astar plakalarınız hangi beton karıştırıcılarına uyar?",
         answer:
-          "Liner plates are supplied to fit twin-shaft and planetary concrete mixers from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. We match the plate profile, thickness and bolt-hole layout to your specific drum; plates for other plants can be copied from a worn sample.",
-      },
-      {
-        question:
-          "Can you supply concrete liner plates in custom sizes and thicknesses?",
-        answer:
-          "Yes. Liner plates are made to your drum's dimensions, including non-standard thicknesses and bolt patterns. Send the worn plate or a dimensioned drawing and we cast a matching set; we can also lift the grade to suit harder or more abrasive aggregate.",
+          "Astar plakaları, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalı çift şaftlı ve planet tipi beton karıştırıcılarına uyacak şekilde tedarik edilmektedir. Plaka profilini, kalınlığını ve cıvata delik düzenini tamburunuza özel olarak uyarlarız; diğer tesisler için gerekli plakalar, aşınmış bir numuneden kopyalanabilir.",
       },
       {
         question:
-          "Do you sell a full concrete mixer liner set or individual plates?",
+          "Özel boyut ve kalınlıklarda beton kaplama levhaları tedarik edebilir misiniz?",
         answer:
-          "Both. Order a complete liner set for a full reline, or individual plates to renew the highest-wear positions. Because liners share a wear cycle, most plants reline as a set and keep a spare on the shelf to avoid downtime waiting on lead time.",
-      },
-      {
-        question: "How are concrete mixer liner plates fixed inside the drum?",
-        answer:
-          "Liner plates bolt to the drum wall through cast or machined holes and sit flush against each neighbour, so no edge is left for aggregate to catch and pry up. Renew the fixing bolts with the plates - worn bolts are a common cause of a liner working loose early.",
+          "Evet. Astar plakaları, standart dışı kalınlıklar ve cıvata düzenleri de dahil olmak üzere, tamburunuzun boyutlarına göre üretilir. Aşınmış plakayı veya boyutları belirtilmiş bir çizimi bize gönderin, biz de buna uygun bir set döküm yapalım; ayrıca daha sert veya aşındırıcı agrega türlerine uyum sağlamak için malzeme kalitesini de artırabiliriz.",
       },
       {
         question:
-          "What is the minimum order quantity and lead time for liner plates?",
+          "Beton karıştırıcı için tam bir astar seti mi satıyorsunuz, yoksa tek tek levhalar mı?",
         answer:
-          "We ship factory-direct and keep the MOQ low on replacement wear parts; exact quantity and lead time depend on the model and whether tooling already exists. Send your plant model for a quote - most repeat items ship in a few weeks, and a material and hardness report can be included on request.",
+          "Her ikisi de. Tam bir astar seti sipariş ederek tüm astarları yenileyebilir veya aşınmanın en fazla olduğu bölgeleri yenilemek için tek tek plakalar sipariş edebilirsiniz. Astarlar aynı aşınma döngüsünü paylaştığından, çoğu tesis astarları set halinde yeniler ve teslim süresini beklerken üretim kesintisini önlemek için rafta yedek bir set bulundurur.",
+      },
+      {
+        question:
+          "Beton karıştırıcısının astar plakaları tamburun içine nasıl sabitlenir?",
+        answer:
+          "Astar plakaları, döküm veya işlenmiş delikler aracılığıyla tambur duvarına cıvatalarla sabitlenir ve komşu plakalarla aynı hizada oturur; böylece agreganın takılıp yukarı doğru kaldırmasına neden olacak herhangi bir kenar kalmaz. Plakalarla birlikte sabitleme cıvatalarını da yenileyin – aşınmış cıvatalar, astarın erken gevşemesinin en yaygın nedenlerinden biridir.",
+      },
+      {
+        question:
+          "Astar plakaları için minimum sipariş miktarı ve teslim süresi nedir?",
+        answer:
+          "Yedek aşınma parçalarını doğrudan fabrikadan sevk ediyoruz ve minimum sipariş miktarını (MOQ) düşük tutuyoruz; kesin miktar ve teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin – tekrar sipariş edilen ürünlerin çoğu birkaç hafta içinde sevk edilir ve talep üzerine malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "High-Hardness",
-        note: "Maximum surface hardness for the most abrasive sand and gravel.",
+        grade: "Yüksek Sertlik",
+        note: "En aşındırıcı kum ve çakıl için maksimum yüzey sertliği.",
       },
       {
-        grade: "High-Wear High-Chrome",
-        note: "High carbide volume for the longest service life under heavy throughput.",
+        grade: "Yüksek Aşınmaya Dayanıklı, Yüksek Krom İçerikli",
+        note: "Yüksek karbür hacmi, yoğun iş yükü altında en uzun hizmet ömrü sağlar.",
       },
       {
-        grade: "Impact-Resistant Ni-Hard",
-        note: "Tougher grade where large or recycled aggregate strikes the wall hard.",
+        grade: "Darbeye Dayanıklı Ni-Hard",
+        note: "Büyük veya geri dönüştürülmüş agrega parçalarının duvara sert bir şekilde çarptığı daha zorlu bir sınıf.",
       },
       {
-        grade: "General-Duty",
-        note: "Balanced, economical plate for standard-output plants.",
+        grade: "Genel Görev",
+        note: "Standart kapasiteli tesisler için dengeli ve ekonomik bir plaka.",
       },
       {
-        grade: "OEM / Full-Series",
-        note: "Complete plate set matched to a specific plant model and layout.",
+        grade: "OEM / Tam Seri",
+        note: "Belirli bir tesis modeline ve yerleşim planına uygun eksiksiz plaka seti.",
       },
     ],
     relatedIds: [
@@ -316,26 +319,27 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "concrete-scraper",
-    name: "Concrete Scraper",
-    fullName: "Concrete Mixing Plant Scraper Blade (High-Chrome, Drum-Wall)",
+    name: "Beton Sıyırıcı",
+    fullName:
+      "Beton Karıştırma Tesisi Sıyırıcı Bıçağı (Yüksek Kromlu, Tambur Duvarı)",
     category: "concrete_mixing_plant",
     sector: "scraper",
-    categoryDisplay: "Concrete Mixing Plant",
+    categoryDisplay: "Beton Karıştırma Tesisi",
     image: "/images/mixer-parts/concrete-scraper/concrete-scraper-00.webp",
     gallery: [
       "/images/mixer-parts/concrete-scraper/concrete-scraper-00.webp",
       "/images/mixer-parts/concrete-scraper/concrete-scraper-01.webp",
       "/images/mixer-parts/concrete-scraper/concrete-scraper-02.webp",
     ],
-    badge: "High-Chrome",
+    badge: "Yüksek Krom İçerikli",
     badgeColor: "slate",
     description:
-      "Concrete mixing plant scraper in high-chrome iron - keeps the drum walls and floor clean so every batch fully discharges and won't build up.",
+      "Yüksek kromlu demirden üretilmiş beton karıştırma tesisi sıyırıcısı – tambur duvarlarını ve tabanını temiz tutarak her partinin tamamen boşalmasını sağlar ve birikmeyi önler.",
     fullDescription:
-      "The scraper rides closest to the drum wall and floor, sweeping the last of the concrete toward the discharge gate and keeping the chamber surfaces clean between batches. It is the part that decides whether a mixer empties completely or leaves a skin of material behind.\n\nWhen the scraper edge wears back and the wall clearance opens up, residue is left to harden on the drum. That build-up steals batch volume, throws the mixing action out of balance, and eventually has to be chipped out by hand - lost production on top of an avoidable cleaning job. A scraper held to its set clearance keeps discharge clean and the rated batch size intact.\n\nSureay scrapers are cast in high-chromium iron above HB 600 and finished to a precise edge profile, with an adjustable mount so wall clearance can be reset as the part wears. They fit twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich, and typically last 6-18 months. Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval.",
+      "Sıyırıcı, tambur duvarına ve tabanına en yakın şekilde hareket ederek, kalan son beton parçasını boşaltma kapağına doğru süpürür ve partiler arasında hazne yüzeylerini temiz tutar. Bu parça, karıştırıcının tamamen boşalmasını mı yoksa arkasında bir malzeme tabakası bırakmasını mı belirleyen unsurdur.\n\nSıyırıcının kenarı aşınarak duvarla arasındaki boşluk genişlediğinde, tambur üzerinde sertleşen kalıntılar kalır. Bu birikinti, parti hacmini azaltır, karıştırma işleminin dengesini bozar ve sonunda elle kazınarak çıkarılması gerekir; bu da önlenebilir bir temizlik işinin yanı sıra üretim kaybına da yol açar. Ayarlanan boşluk mesafesinde tutulan bir sıyırıcı, boşaltma işlemini temiz tutar ve nominal parti hacmini korur.\n\nSureay sıyırıcılar, HB 600'ün üzerinde yüksek kromlu demirden dökülür ve hassas bir kenar profiline sahip olarak işlenir; ayrıca, parça aşındıkça duvar boşluğu mesafesinin yeniden ayarlanabilmesi için ayarlanabilir bir montaj sistemine sahiptir. Bu sıyırıcılar Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalarının çift şaftlı ve planet tipi tesislerine uyumludur ve genellikle 6-18 ay dayanır. Hizmet ömrü, üretim hacmi, agrega sertliği ve çalışma döngüsüne bağlıdır — OEM servis aralığınızla karşılaştırarak doğrulayın.",
     link: "/mixer-wear-parts/concrete-mixing-plant/concrete-scraper",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     compatibleMachines: [
       "Sicoma",
       "Liebherr",
@@ -353,23 +357,23 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "High-chromium cast iron",
+        label: "Malzeme",
+        value: "Yüksek kromlu dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, precision-ground edge",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, hassas taşlanmış kenar",
       },
       {
-        label: "Application",
-        value: "Drum-wall & floor cleaning, batch discharge",
+        label: "Başvuru",
+        value: "Tambur duvarı ve zemin temizliği, parti bazında boşaltma",
       },
       {
-        label: "OEM Fit",
+        label: "OEM Uyumluluğu",
         value:
           "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS, Eirich",
       },
@@ -377,84 +381,86 @@ export const mixerParts: MixerPart[] = [
     components: [
       {
         id: "set-clearance-edge",
-        tag: "PRECISION",
-        title: "Precise, Resettable Wall Clearance",
+        tag: "HASSASİYET",
+        title: "Hassas, Sıfırlanabilir Duvar Boşluğu",
         description:
-          "A ground edge profile on an adjustable mount lets operators hold a tight wall clearance and reset it as the scraper wears - the single factor that keeps the drum discharging clean instead of glazing over with hardened residue.",
+          "Ayarlanabilir bir montaj parçası üzerindeki zemin kenar profili, operatörlerin duvarla aralığı dar tutmalarını ve sıyırıcının aşınmasıyla birlikte bu aralığı yeniden ayarlamalarını sağlar; bu, tamburun sertleşmiş kalıntılarla kaplanmak yerine temiz bir şekilde boşaltılmasını sağlayan tek faktördür.",
       },
       {
         id: "high-chrome-edge",
         tag: "WEAR LIFE",
-        title: "HB600+ High-Chrome Edge",
+        title: "HB600+ Yüksek Kromlu Kenar",
         description:
-          "Cast in high-chromium iron above HB 600, the ground edge holds its profile against abrasive aggregate, so wall clearance stays tight for longer between resets.",
+          "HB 600'ün üzerinde bir krom içeriğine sahip demirden dökülmüş olan taşlanmış kenar, aşındırıcı agrega karşısında şeklini korur; böylece yeniden ayarlama işlemleri arasında duvarla arasındaki boşluk daha uzun süre dar kalır.",
       },
       {
         id: "protects-liner",
-        tag: "PROTECTION",
-        title: "Protects the Liner Behind It",
+        tag: "KORUMA",
+        title: "Arkasındaki astarı korur",
         description:
-          "A scraper renewed on schedule keeps discharge clean and stops residue glazing the drum - run past its adjustment range it wears its own mount and the liner it rides against.",
+          "Zamanında yenilenen bir sıyırıcı, boşaltılan malzemenin temiz kalmasını sağlar ve kalıntıların tambur üzerinde tabaka oluşturmasını önler; ayar aralığının ötesinde çalıştırıldığında ise kendi yuvasını ve üzerinde kaydığı astarı aşındırır.",
       },
     ],
     faq: [
       {
-        question: "Why is my concrete mixer leaving residue after discharge?",
+        question:
+          "Beton karıştırıcım boşaltma işleminden sonra neden kalıntı bırakıyor?",
         answer:
-          "The most common cause is a worn scraper or an opened-up wall clearance: once the edge no longer reaches the drum surface, a film of concrete is left to harden each cycle. Renewing the scraper and resetting clearance restores clean discharge and recovers the batch volume lost to build-up.",
+          "En yaygın neden, aşınmış bir sıyırıcı ya da genişlemiş bir duvar aralığıdır: Kenar artık tambur yüzeyine ulaşmadığında, her döngüde sertleşecek bir beton tabakası kalır. Sıyırıcının yenilenmesi ve aralığın yeniden ayarlanması, temiz boşaltımı sağlar ve birikme nedeniyle kaybedilen parti hacmini geri kazandırır.",
       },
       {
-        question: "How long does a concrete mixer scraper last?",
+        question: "Bir beton karıştırıcı sıyırıcısının ömrü ne kadardır?",
         answer:
-          "Typically 6-18 months. Service life depends on throughput and aggregate hardness, and on how often clearance is reset - a scraper run past its adjustment range wears its mount and the liner behind it, so renewing on schedule protects neighbouring parts too.",
+          "Genellikle 6-18 ay. Hizmet ömrü, işleme kapasitesine, agrega sertliğine ve boşluğun ne sıklıkla yeniden ayarlandığına bağlıdır — ayar aralığının ötesine geçen bir sıyırıcı, yuvasını ve arkasındaki astarı aşındırır; bu nedenle, zamanında yenileme yapılması komşu parçaları da korur.",
       },
       {
-        question: "Which concrete mixing plants do your scrapers fit?",
+        question: "Sıyırıcılarınız hangi beton karıştırma tesislerine uyuyor?",
         answer:
-          "Our concrete scrapers fit twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. We match the mount and edge profile to your mixer; scrapers for other brands can be reproduced from a worn part or drawing.",
+          "Beton sıyırıcılarımız, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalarının çift şaftlı ve planet tipi karıştırıcılarına uygundur. Montaj parçasını ve kenar profilini karıştırıcınıza göre uyarlarız; diğer markalara ait sıyırıcılar ise aşınmış bir parça veya teknik çizimden yeniden üretilebilir.",
       },
       {
-        question: "What material is a concrete mixer scraper made of?",
+        question: "Beton karıştırıcı sıyırıcısı hangi malzemeden yapılmıştır?",
         answer:
-          "Scrapers are cast in high-chromium iron above HB 600, hard enough to hold a clean edge against abrasive aggregate while sweeping the drum wall and floor. The edge is precision-ground so the scraper sits to a tight, repeatable wall clearance.",
-      },
-      {
-        question: "How do I set and adjust the concrete scraper clearance?",
-        answer:
-          "The scraper sits on an adjustable mount, so the edge can be set close to the drum wall and reset as it wears. Holding a tight clearance is what keeps the drum discharging clean; a scraper run past its adjustment range leaves residue and wears the liner behind it.",
-      },
-      {
-        question: "Why is my concrete mixer not discharging fully?",
-        answer:
-          "Incomplete discharge is usually a worn scraper or an opened-up wall clearance that leaves a film of concrete to harden each cycle. Renewing the scraper and resetting clearance restores clean discharge and recovers the batch volume lost to build-up.",
+          "Sıyırıcılar, HB 600'ün üzerinde sertliğe sahip yüksek kromlu demirden dökülür; bu sertlik, tambur duvarını ve tabanını temizlerken aşındırıcı agrega karşısında keskin bir kenar tutacak kadar yeterlidir. Kenar hassas bir şekilde taşlanmıştır; böylece sıyırıcı, duvarla sıkı ve tekrarlanabilir bir boşluk bırakacak şekilde oturur.",
       },
       {
         question:
-          "What is the minimum order quantity and lead time for scrapers?",
+          "Beton sıyırıcısının boşluğunu nasıl ayarlayabilirim ve nasıl düzeltebilirim?",
         answer:
-          "We ship factory-direct and keep the MOQ low on replacement wear parts; exact quantity and lead time depend on the model and whether tooling already exists. Send your plant model for a quote - most repeat items ship in a few weeks, and a material and hardness report can be included on request.",
+          "Sıyırıcı, ayarlanabilir bir yuvaya oturtulmuştur; böylece kenarı tambur duvarına yakın bir şekilde ayarlanabilir ve aşınmaya bağlı olarak yeniden ayarlanabilir. Dar bir açıklığın korunması, tamburdan temiz bir boşaltma sağlanmasını sağlar; ayar aralığının ötesine geçen bir sıyırıcı, kalıntı bırakır ve arkasındaki astarı aşındırır.",
+      },
+      {
+        question: "Beton karıştırıcım neden tamamen boşalmıyor?",
+        answer:
+          "Boşaltmanın tam olarak gerçekleşmemesi genellikle aşınmış bir sıyırıcıdan ya da genişlemiş bir duvar aralığından kaynaklanır; bu durum her döngüde sertleşecek bir beton tabakasının kalmasına neden olur. Sıyırıcının yenilenmesi ve aralığın yeniden ayarlanması, temiz boşaltmayı sağlar ve birikme nedeniyle kaybedilen parti hacmini geri kazandırır.",
+      },
+      {
+        question:
+          "Sıyırıcılar için minimum sipariş miktarı ve teslim süresi nedir?",
+        answer:
+          "Yedek aşınma parçalarını doğrudan fabrikadan sevk ediyoruz ve minimum sipariş miktarını (MOQ) düşük tutuyoruz; kesin miktar ve teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin – tekrar sipariş edilen ürünlerin çoğu birkaç hafta içinde sevk edilir ve talep üzerine malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "High-Precision Edge",
-        note: "Tight-tolerance ground edge for the cleanest wall and floor clearance.",
+        grade: "Yüksek Hassasiyetli Kenar",
+        note: "En temiz duvar ve zemin açıklığı için sıkı toleranslı taşlanmış kenar.",
       },
       {
-        grade: "High-Toughness",
-        note: "Shock-tolerant grade for plants handling coarse or recycled aggregate.",
+        grade: "Yüksek Dayanıklılık",
+        note: "Kaba veya geri dönüştürülmüş agrega işleyen tesisler için darbeye dayanıklı sınıf.",
       },
       {
-        grade: "Corrosion-Resistant",
-        note: "Added corrosion resistance for high-moisture or additive-heavy mixes.",
+        grade: "Korozyona Dayanıklı",
+        note: "Yüksek nem içeren veya katkı maddesi yoğun karışımlar için artırılmış korozyon direnci.",
       },
       {
-        grade: "High-Efficiency",
-        note: "Optimised profile that clears more material per pass.",
+        grade: "Yüksek Verimli",
+        note: "Her geçişte daha fazla malzemeyi temizleyen optimize edilmiş profil.",
       },
       {
-        grade: "OEM-Match",
-        note: "Mount and edge profile cut to a specific plant on request.",
+        grade: "OEM Uyumu",
+        note: "Talep üzerine belirli bir tesise göre montaj ve kenar profili kesimi yapılır.",
       },
     ],
     relatedIds: [
@@ -466,11 +472,11 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "concrete-mixer-blade",
-    name: "Concrete Mixer Blade",
-    fullName: "Concrete Mixer Blade / Paddle (Bolt-On Ni-Hard)",
+    name: "Beton Karıştırıcı Bıçağı",
+    fullName: "Beton Karıştırıcı Bıçağı / Kanadı (Cıvatalı Ni-Hard)",
     category: "concrete_mixing_plant",
     sector: "blade",
-    categoryDisplay: "Concrete Mixing Plant",
+    categoryDisplay: "Beton Karıştırma Tesisi",
     image:
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
     gallery: [
@@ -478,15 +484,15 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-01.webp",
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-02.webp",
     ],
-    badge: "Best Value",
+    badge: "En İyi Fiyat-Performans Oranı",
     badgeColor: "green",
     description:
-      "Concrete mixer blade in Ni-Hard iron - economical, abrasion- and corrosion-resistant bolt-on paddle that folds and lifts aggregate for a uniform mix.",
+      "Ni-Hard demirden üretilmiş beton karıştırıcı kanadı – ekonomik, aşınmaya ve korozyona dayanıklı, cıvatalı kanat; agregayı katlayarak ve kaldırarak homojen bir karışım sağlar.",
     fullDescription:
-      "Mixer blades do the actual work of the machine: bolted to the arms, they fold, lift and shear the aggregate, cement and water into a homogeneous batch on every revolution. The blade profile and its clearance to the liner set how fast and how evenly the plant mixes.\n\nAs the leading edge rounds off and clearance widens, mixing slows - cycle times stretch, batches finish unevenly or segregated, and the plant burns more energy to reach the same result. Concrete that leaves the mixer under-mixed shows up later as inconsistent strength, the kind of quality problem that is hard to trace back to a worn paddle. Renewing blades on schedule is the cheapest way to protect both throughput and batch consistency.\n\nSureay supplies bolt-on blades cast in Ni-Hard iron above HB 600 - a deliberately economical, abrasion- and corrosion-resistant choice for a part that is replaced on a regular cycle. They drop onto the existing arms of Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich plants, and typically run 6-18 months. Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval.",
+      "Karıştırıcı bıçakları, makinenin asıl işini yapar: kollara cıvatalarla sabitlenmiş olan bu bıçaklar, her devirde agrega, çimento ve suyu katlayarak, kaldırarak ve keserek homojen bir karışım haline getirir. Bıçak profili ve astar ile arasındaki boşluk, tesisin ne kadar hızlı ve ne kadar homojen bir şekilde karıştırma yapacağını belirler.\n\nBıçakların ön kenarları yuvarlaklaştıkça ve açıklık genişledikçe karıştırma yavaşlar; döngü süreleri uzar, harçlar düzensiz veya ayrışmış halde tamamlanır ve tesis aynı sonuca ulaşmak için daha fazla enerji harcar. Karıştırıcıdan yetersiz karıştırılmış halde çıkan beton, daha sonra tutarsız mukavemet olarak ortaya çıkar; bu tür kalite sorunlarının, aşınmış bir bıçağa kadar izlenmesi zordur. Kanatları zamanında yenilemek, hem üretim kapasitesini hem de parti tutarlılığını korumanın en ekonomik yoludur.\n\nSureay, HB 600’ün üzerinde sertliğe sahip Ni-Hard demirden dökümlenmiş, cıvatalı kanatlar tedarik eder; bu, düzenli aralıklarla değiştirilen bir parça için bilinçli olarak ekonomik, aşınmaya ve korozyona dayanıklı bir seçimdir. Bu bıçaklar, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich tesislerinin mevcut kollarına takılabilir ve genellikle 6-18 ay boyunca hizmet verir. Hizmet ömrü, üretim hacmine, agrega sertliğine ve çalışma döngüsüne bağlıdır — OEM servis aralığınızla karşılaştırarak doğrulayın.",
     link: "/mixer-wear-parts/concrete-mixing-plant/concrete-mixer-blade",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     isFeatured: true,
     compatibleMachines: [
       "Sicoma",
@@ -505,23 +511,23 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "Ni-Hard cast iron",
+        label: "Malzeme",
+        value: "Ni-Hard dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, bolt-on mounting",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, cıvatalı montaj",
       },
       {
-        label: "Application",
-        value: "Folding & lifting aggregate, primary mix",
+        label: "Başvuru",
+        value: "Katlama ve kaldırma agregası, birincil karışım",
       },
       {
-        label: "OEM Fit",
+        label: "OEM Uyumluluğu",
         value:
           "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS, Eirich",
       },
@@ -529,82 +535,84 @@ export const mixerParts: MixerPart[] = [
     components: [
       {
         id: "economical-bolt-on",
-        tag: "VALUE",
-        title: "Economical Bolt-On Replacement",
+        tag: "DEĞER",
+        title: "Uygun Fiyatlı, Cıvatalı Yedek Parça",
         description:
-          "Ni-Hard delivers the abrasion and corrosion resistance a mixing paddle needs at a cost that suits a part on a regular renewal cycle. Bolt-on mounting means no welding - blades change out fast during routine maintenance.",
+          "Ni-Hard, karıştırma kanadının ihtiyaç duyduğu aşınma ve korozyon direncini, düzenli yenileme döngüsüne sahip bir parça için uygun bir maliyetle sunar. Cıvatalı montaj sayesinde kaynak yapılmasına gerek kalmaz; rutin bakım sırasında kanatlar hızlı bir şekilde değiştirilebilir.",
       },
       {
         id: "mix-uniformity",
-        tag: "PERFORMANCE",
-        title: "Profile That Protects Mix Quality",
+        tag: "PERFORMANS",
+        title: "Miks Kalitesini Koruyan Profil",
         description:
-          "A correct leading-edge profile and tight liner clearance keep cycle times short and the batch homogeneous. Renewing blades before the edge rounds off guards against the under-mixing that quietly erodes concrete strength.",
+          "Doğru bir ön kenar profili ve dar astar açıklığı, döngü sürelerini kısa tutar ve partinin homojen olmasını sağlar. Kenar yuvarlanmadan önce bıçakların yenilenmesi, beton mukavemetini sessizce zayıflatan yetersiz karıştırma durumuna karşı koruma sağlar.",
       },
       {
         id: "grade-options-output",
-        tag: "GRADE",
-        title: "Economy or Long-Life Grade",
+        tag: "NOT",
+        title: "Ekonomik veya Uzun Ömürlü Sınıf",
         description:
-          "Choose economical Ni-Hard for a part on a regular renewal cycle, or high-chromium iron for longer life under harder aggregate - matched to your output rather than a single stock grade.",
+          "Düzenli yenileme döngüsüne sahip bir parça için ekonomik Ni-Hard’ı veya daha sert agrega koşullarında daha uzun ömür için yüksek kromlu demiri tercih edin – tek bir stok kalitesi yerine, üretim hacminize uygun olanı seçin.",
       },
     ],
     faq: [
       {
-        question: "How often should concrete mixer blades be replaced?",
+        question: "Beton karıştırıcı bıçakları ne sıklıkla değiştirilmelidir?",
         answer:
-          "As a rule of thumb, every 6-18 months - high-output plants running abrasive aggregate sit at the shorter end. Rather than wait for a fixed date, watch for longer cycle times, uneven batches or a visibly rounded leading edge and widened liner clearance; these are the signs the blade is no longer mixing efficiently.",
-      },
-      {
-        question: "Are bolt-on mixer blades better than welded blades?",
-        answer:
-          "For most plants, yes. Bolt-on blades change out in minutes without welding, hot work permits or grinding, so maintenance is faster and safer, and the arm underneath is not heat-affected by repeated welding. Our Ni-Hard blades are designed as bolt-on replacements for the listed OEM mixers.",
-      },
-      {
-        question: "Which concrete mixers do your blades and paddles fit?",
-        answer:
-          "Bolt-on blades are supplied for twin-shaft and planetary mixers from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. We match the blade profile and bolt holes to your arms; blades for other plants can be copied from a worn sample.",
+          "Genel bir kural olarak, her 6-18 ayda bir – aşındırıcı agrega işleyen yüksek kapasiteli tesisler bu aralığın daha kısa ucunda yer alır. Sabit bir tarihi beklemek yerine, döngü sürelerinin uzamasını, partiler arasında tutarsızlıkları veya bıçağın ön kenarının gözle görülür şekilde yuvarlanmasını ve astar boşluğunun genişlemesini takip edin; bunlar, bıçağın artık verimli bir şekilde karıştırma yapmadığının işaretleridir.",
       },
       {
         question:
-          "What is the difference between Ni-Hard and high-chrome mixer blades?",
+          "Vidalı karıştırıcı bıçakları, kaynaklı bıçaklardan daha mı iyidir?",
         answer:
-          "Ni-Hard is an economical, abrasion- and corrosion-resistant grade well suited to a paddle renewed on a regular cycle. High-chromium iron carries a higher carbide volume for longer life under harder, more abrasive aggregate. We match the grade to your output and aggregate hardness.",
+          "Çoğu tesis için evet. Cıvatalı bıçaklar, kaynak, sıcak iş izni veya taşlama gerektirmeden dakikalar içinde değiştirilebilir; böylece bakım işlemleri daha hızlı ve güvenli bir şekilde gerçekleştirilir ve altındaki kol, tekrarlanan kaynak işlemlerinden kaynaklanan ısı etkisine maruz kalmaz. Ni-Hard bıçaklarımız, listelenen OEM karıştırıcılar için cıvatalı yedek parçalar olarak tasarlanmıştır.",
       },
       {
         question:
-          "Can you supply concrete mixer blades to a sample or drawing?",
+          "Bıçaklarınız ve kanatlarınız hangi beton karıştırıcılarına uyuyor?",
         answer:
-          "Yes - send a worn blade, a sketch with dimensions or the plant model and we cast bolt-on replacements that drop onto your existing arms. OEM/ODM work is welcome, including non-standard profiles and bolt patterns.",
-      },
-      {
-        question: "Why is my concrete mixing slowly or unevenly?",
-        answer:
-          "As the blade leading edge rounds off and clearance to the liner widens, mixing slows and batches finish unevenly or segregated. Renewing blades before the edge wears back keeps cycle times short and protects batch consistency - under-mixed concrete shows up later as inconsistent strength.",
+          "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalı çift şaftlı ve planet tipi karıştırıcılar için cıvatalı kanatlar tedarik edilmektedir. Kanat profilini ve cıvata deliklerini kollarınıza uyumlu hale getiriyoruz; diğer tesisler için gerekli kanatlar ise aşınmış bir numuneden kopyalanabilir.",
       },
       {
         question:
-          "What is the minimum order quantity and lead time for mixer blades?",
+          "Ni-Hard ve yüksek kromlu karıştırıcı bıçakları arasındaki fark nedir?",
         answer:
-          "We ship factory-direct and keep the MOQ low on replacement wear parts; exact quantity and lead time depend on the model and whether tooling already exists. Send your plant model for a quote - most repeat items ship in a few weeks, and a material and hardness report can be included on request.",
+          "Ni-Hard, düzenli aralıklarla yenilenen kanatlar için son derece uygun, ekonomik, aşınmaya ve korozyona dayanıklı bir kalitedir. Yüksek kromlu demir, daha sert ve aşındırıcı agregalar altında daha uzun ömür sağlamak üzere daha yüksek karbür hacmine sahiptir. Bu kaliteyi, üretim hacminize ve agrega sertliğine göre uyarlıyoruz.",
+      },
+      {
+        question:
+          "Bir numune veya çizim temelinde beton karıştırıcı bıçakları tedarik edebilir misiniz?",
+        answer:
+          "Evet – kullanılmış bir bıçak, boyutları belirtilmiş bir çizim veya makine modelini bize gönderin; biz de mevcut kollarınıza doğrudan takılabilen cıvatalı yedek parçalar üretelim. Standart dışı profiller ve cıvata düzenleri de dahil olmak üzere OEM/ODM işlerini memnuniyetle kabul ediyoruz.",
+      },
+      {
+        question: "Betonum neden yavaş veya düzensiz bir şekilde karışıyor?",
+        answer:
+          "Bıçağın ön kenarı yuvarlaklaştıkça ve astar ile arasındaki boşluk genişledikçe, karıştırma işlemi yavaşlar ve partiler düzensiz bir şekilde tamamlanır ya da ayrışır. Kenar aşınmadan önce bıçakların yenilenmesi, döngü sürelerini kısa tutar ve parti tutarlılığını korur; yeterince karıştırılmamış beton, daha sonra tutarsız mukavemet olarak ortaya çıkar.",
+      },
+      {
+        question:
+          "Karıştırıcı bıçakları için minimum sipariş miktarı ve teslim süresi nedir?",
+        answer:
+          "Yedek aşınma parçalarını doğrudan fabrikadan sevk ediyoruz ve minimum sipariş miktarını (MOQ) düşük tutuyoruz; kesin miktar ve teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin – tekrar sipariş edilen ürünlerin çoğu birkaç hafta içinde sevk edilir ve talep üzerine malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "Economy Ni-Hard",
-        note: "Best-value bolt-on for plants that renew blades on a regular cycle.",
+        grade: "Ekonomik Ni-Hard",
+        note: "Bıçaklarını düzenli aralıklarla yenileyen tesisler için en uygun fiyatlı ek parça.",
       },
       {
-        grade: "High-Wear High-Chrome",
-        note: "Longer life for abrasive aggregate and higher output.",
+        grade: "Yüksek Aşınmaya Dayanıklı, Yüksek Krom İçerikli",
+        note: "Aşındırıcı agreganın ömrünün uzaması ve daha yüksek verim.",
       },
       {
-        grade: "Impact-Resistant",
-        note: "Tougher grade where large aggregate loads the leading edge hard.",
+        grade: "Darbeye Dayanıklı",
+        note: "Daha sert bir sınıf; burada iri agrega, ön kenarı sert bir şekilde aşındırır.",
       },
       {
-        grade: "OEM-Pattern",
-        note: "Bolt holes and profile matched to a specific plant's arms.",
+        grade: "OEM Deseni",
+        note: "Belirli bir tesisin kollarına uygun cıvata delikleri ve profil.",
       },
     ],
     relatedIds: [
@@ -616,26 +624,26 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "concrete-wear-seal",
-    name: "Concrete Wear Seal",
-    fullName: "Concrete Mixing Plant Shaft Wear Seal (Anti-Leak)",
+    name: "Beton Aşınma Sızdırmazlığı",
+    fullName: "Beton Karıştırma Tesisi Şaft Aşınma Contası (Sızıntı Önleyici)",
     category: "concrete_mixing_plant",
     sector: "seal",
-    categoryDisplay: "Concrete Mixing Plant",
+    categoryDisplay: "Beton Karıştırma Tesisi",
     image: "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-00.webp",
     gallery: [
       "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-00.webp",
       "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-01.webp",
       "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-02.webp",
     ],
-    badge: "Anti-Leak",
+    badge: "Sızıntı Önleyici",
     badgeColor: "teal",
     description:
-      "Concrete mixing plant wear seal - guards the shaft ends against slurry and dust leakage, keeping grout in the drum and grit out of the bearings.",
+      "Beton karıştırma tesisi aşınma contası – mil uçlarını çamur ve toz sızıntısına karşı korur; böylece harç tamburda kalır ve kum rulmanlara girmez.",
     fullDescription:
-      "The wear seal sits where the mixing shaft passes through the drum end - a junction under constant pressure from wet slurry on the inside and fine cement dust working its way out. It is the barrier that keeps grout from bleeding out of the chamber and abrasive grit from reaching the shaft bearings.\n\nWhen a seal hardens, splits or works loose the failure is rarely dramatic but always expensive: slurry weeps from the shaft ends, cement dust packs into the bearing housing, and the bearing itself - an order of magnitude dearer than the seal - begins to grind. Run too long, a leaking seal can take out the whole shaft-seal assembly and a day of production with it.\n\nSureay wear seals are built for the pressure and abrasion of concrete service and formed to the shaft and housing dimensions of the listed plants, so they seat square and run concentric without modification. They suit twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich, and are best renewed whenever the shaft is opened for blade or arm work. Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval.",
+      "Aşınma contası, karıştırma milinin tambur ucundan geçtiği noktada yer alır; bu birleşme noktası, iç kısımdaki ıslak çamurdan gelen sürekli basınç ve dışarı sızan ince çimento tozuna maruz kalır. Bu conta, harçın hazneden dışarı sızmasını ve aşındırıcı kum tanelerinin mil yataklarına ulaşmasını engelleyen bariyerdir.\n\nBir conta sertleştiğinde, çatladığında veya gevşediğinde, arıza nadiren ciddi boyutlara ulaşır ancak her zaman maliyetlidir: şlam şaft uçlarından sızar, çimento tozu yatak yuvasına birikir ve contadan çok daha pahalı olan yatağın kendisi aşınmaya başlar. Çok uzun süre çalışırsa, sızıntı yapan bir conta tüm şaft-conta grubunu devre dışı bırakabilir ve bununla birlikte bir günlük üretimi de durdurabilir.\n\nSureay aşınma contaları, beton uygulamalarının basınç ve aşındırma koşullarına dayanacak şekilde üretilir ve listelenen tesislerin şaft ve yuva boyutlarına göre şekillendirilir; böylece herhangi bir değişiklik yapılmasına gerek kalmadan tam oturur ve eşmerkezli çalışır. Bu contalar Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalarının çift şaftlı ve planet tipi santrallerine uygundur ve en iyi şekilde, bıçak veya kol çalışması için şaft açıldığında yenilenmelidir. Kullanım ömrü, üretim kapasitesine, agrega sertliğine ve çalışma döngüsüne bağlıdır — OEM servis aralığınızla karşılaştırarak kontrol ediniz.",
     link: "/mixer-wear-parts/concrete-mixing-plant/concrete-wear-seal",
-    trustProcess: "Precision-Molded",
-    trustProperty: "Leak-Tight, Abrasion-Resistant Seal",
+    trustProcess: "Hassas Kalıplama",
+    trustProperty: "Sızdırmaz, Aşınmaya Dayanıklı Conta",
     compatibleMachines: [
       "Sicoma",
       "Liebherr",
@@ -653,23 +661,24 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "Wear- & corrosion-resistant sealing compound",
+        label: "Malzeme",
+        value: "Aşınmaya ve korozyona dayanıklı sızdırmazlık macunu",
       },
       {
-        label: "Hardness",
-        value: "Resilient sealing grade (not a cast wear face)",
+        label: "Sertlik",
+        value: "Dayanıklı sızdırmazlık sınıfı (döküm aşınma yüzeyi değildir)",
       },
       {
-        label: "Process",
-        value: "Precision-formed to shaft & housing dimensions",
+        label: "Süreç",
+        value:
+          "Mil ve yuva boyutlarına göre hassas bir şekilde şekillendirilmiştir",
       },
       {
-        label: "Application",
-        value: "Shaft-end sealing, slurry & dust containment",
+        label: "Başvuru",
+        value: "Şaft ucu sızdırmazlığı, çamur ve toz tutma",
       },
       {
-        label: "OEM Fit",
+        label: "OEM Uyumluluğu",
         value:
           "Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS, Eirich",
       },
@@ -677,81 +686,82 @@ export const mixerParts: MixerPart[] = [
     components: [
       {
         id: "dual-barrier",
-        tag: "SEALING",
-        title: "Two-Way Slurry & Dust Barrier",
+        tag: "SIZDIRMAZLIK",
+        title: "Çift Yönlü Çamur ve Toz Bariyeri",
         description:
-          "The seal holds wet grout inside the drum while blocking fine cement dust from migrating out to the bearings - the two-way duty that protects both batch consistency and the shaft assembly behind it.",
+          "Conta, ıslak harcı tamburun içinde tutarken, ince çimento tozunun yataklara sızmasını engeller; bu çift işlevli yapı, hem harç karışımının tutarlılığını hem de arkasındaki şaft grubunu korur.",
       },
       {
         id: "true-seat",
-        tag: "FITMENT",
-        title: "Machined to Seat Square",
+        tag: "UYUM",
+        title: "Yuvaya tam oturacak şekilde işlenmiş",
         description:
-          "Formed to the shaft and housing dimensions of the listed plants, the seal seats square and runs concentric, so it wears evenly instead of channelling and leaking on one side.",
+          "Listelenen tesislerin şaft ve gövde boyutlarına göre şekillendirilen conta, gövdeye tam oturur ve eşmerkezli bir şekilde çalışır; böylece tek tarafta aşınma kanalları oluşup sızıntı meydana gelmek yerine, eşit bir şekilde aşınır.",
       },
       {
         id: "bearing-protection",
-        tag: "PROTECTION",
-        title: "Guards the Shaft Bearings",
+        tag: "KORUMA",
+        title: "Şaft Yataklarını Korur",
         description:
-          "The seal is a low-cost part standing between abrasive grit and the shaft bearings behind it. Renewing it on time keeps cement dust out of the bearing housing and avoids a far costlier bearing failure.",
+          "Conta, aşındırıcı kum taneleri ile arkasında bulunan mil yatakları arasında yer alan, düşük maliyetli bir parçadır. Bu contanın zamanında değiştirilmesi, çimento tozunun yatak yuvasına girmesini önler ve çok daha maliyetli bir yatak arızasının ortaya çıkmasını engeller.",
       },
     ],
     faq: [
       {
-        question: "What happens if a concrete mixer shaft seal fails?",
+        question: "Beton karıştırıcısının şaft contası arızalanırsa ne olur?",
         answer:
-          "A failed seal lets slurry weep from the shaft ends and cement dust pack into the bearing housing. The seal is cheap; the bearing and shaft it protects are not. Renewing the seal at the first sign of weeping or dust tracking keeps a minor part from causing a major repair.",
+          "Arızalı bir conta, şaft uçlarından çamurun sızmasına ve çimento tozunun yatak yuvasına girmesine neden olur. Conta ucuzdur; ancak koruduğu yatak ve şaft öyle değildir. Sızıntı veya toz girişinin ilk belirtisinde contayı değiştirmek, küçük bir parçanın büyük bir onarım gerektirmesine engel olur.",
       },
       {
-        question: "When should the concrete mixer wear seal be replaced?",
+        question: "Beton karıştırıcısının contası ne zaman değiştirilmelidir?",
         answer:
-          "Renew the seal whenever the shaft is opened for blade or arm service rather than on a fixed calendar. Grout leaking at the shaft ends or grit in the bearing grease means the seal is already past its limit and should be changed without delay.",
+          "Sabit bir takvime göre değil, bıçak veya kol bakımı için şaft her açıldığında contayı yenileyin. Şaft uçlarından sızan harç veya yatak gresindeki kum taneleri, contanın ömrünün çoktan dolduğunu gösterir ve gecikmeden değiştirilmesi gerekir.",
       },
       {
-        question: "Which concrete mixers do your wear seals fit?",
+        question: "Aşınma contalarınız hangi beton karıştırıcılarına uyuyor?",
         answer:
-          "Wear seals are formed to the shaft and housing dimensions of twin-shaft and planetary plants from Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. Send the plant model or the worn seal and we match the size and section.",
+          "Aşınma contaları, Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS ve Eirich markalı çift şaftlı ve planet tipi tesislerin şaft ve gövde boyutlarına göre üretilmektedir. Tesis modelini veya aşınmış contayı bize gönderin; biz de boyut ve kesit uyumu sağlayalım.",
       },
       {
-        question: "What is a concrete mixer wear seal made of?",
+        question: "Beton karıştırıcı aşınma contası neyden yapılır?",
         answer:
-          "The seal uses a wear- and corrosion-resistant sealing compound engineered for compression and shaft contact rather than the cast hardness of the blades and liners. The aim is a resilient, two-way barrier that holds grout in and keeps cement dust off the bearings.",
-      },
-      {
-        question: "Can you supply concrete mixer wear seals from a sample?",
-        answer:
-          "Yes. Send a worn seal or the shaft and housing dimensions and we supply a matching replacement. Renewing the seal whenever the shaft is opened for blade or arm work is the cheapest way to protect the bearings behind it.",
+          "Bu conta, kanatların ve astarların döküm sertliğinden ziyade, sıkıştırma ve mil teması için tasarlanmış, aşınmaya ve korozyona dayanıklı bir sızdırmazlık bileşiği kullanır. Amaç, harcı içeride tutan ve çimento tozunun yataklara ulaşmasını engelleyen esnek, çift yönlü bir bariyer oluşturmaktır.",
       },
       {
         question:
-          "How do I stop slurry leaking at the concrete mixer shaft ends?",
+          "Bir numuneye göre beton karıştırıcı aşınma contaları tedarik edebilir misiniz?",
         answer:
-          "Slurry weeping at the shaft ends almost always means the wear seal has hardened, split or worked loose. Replacing the seal restores the barrier and stops cement dust packing into the bearing housing - left too long, a leaking seal can take out the far costlier bearing and shaft assembly.",
+          "Evet. Aşınmış bir contayı veya mil ile yuva ölçülerini bize gönderin; size uygun bir yedek parça temin edelim. Bıçak veya kol ile ilgili çalışmalar için mil her açıldığında contayı yenilemek, arkasındaki rulmanları korumak için en ekonomik yoldur.",
       },
       {
         question:
-          "What is the minimum order quantity and lead time for wear seals?",
+          "Beton karıştırıcısının şaft uçlarından çamur sızmasını nasıl önleyebilirim?",
         answer:
-          "We ship factory-direct and keep the MOQ low on replacement wear parts; exact quantity and lead time depend on the model and whether tooling already exists. Send your plant model for a quote - most repeat items ship in a few weeks, and a material and hardness report can be included on request.",
+          "Mil uçlarından çamur sızması, neredeyse her zaman aşınma contasının sertleştiği, yırtıldığı veya yerinden çıktığı anlamına gelir. Contanın değiştirilmesi, sızdırmazlığı yeniden sağlar ve çimento tozunun yatak yuvasına girmesini engeller; sızıntı yapan bir conta çok uzun süre ihmal edilirse, çok daha pahalı olan yatak ve mil grubunun bozulmasına neden olabilir.",
+      },
+      {
+        question:
+          "Aşınma contaları için minimum sipariş miktarı ve teslim süresi nedir?",
+        answer:
+          "Yedek aşınma parçalarını doğrudan fabrikadan sevk ediyoruz ve minimum sipariş miktarını (MOQ) düşük tutuyoruz; kesin miktar ve teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin – tekrar sipariş edilen ürünlerin çoğu birkaç hafta içinde sevk edilir ve talep üzerine malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "Standard Service",
-        note: "Baseline sealing grade for typical batch plants and moderate output.",
+        grade: "Standart Hizmet",
+        note: "Tipik beton santralleri ve orta düzeyde üretim için temel sızdırmazlık derecesi.",
       },
       {
-        grade: "High-Pressure / High-Output",
-        note: "Firmer compound and reinforced lip for long shifts and higher internal pressure.",
+        grade: "Yüksek Basınç / Yüksek Verim",
+        note: "Uzun vardiyalar ve daha yüksek iç basınç için daha sert bileşim ve güçlendirilmiş kenar.",
       },
       {
-        grade: "Heavy-Dust Duty",
-        note: "Extra dust-side protection where dry, fine aggregate loads the seal harder.",
+        grade: "Ağır Toz Koşulları",
+        note: "Kuru ve ince agrega, contaya daha fazla yük bindirdiği durumlarda ekstra toz tarafı koruması.",
       },
       {
-        grade: "OEM-Spec Match",
-        note: "Formed to a specific plant's shaft and housing dimensions on request.",
+        grade: "OEM Spesifikasyonlarına Uygunluk",
+        note: "Talep üzerine belirli bir tesisin şaft ve gövde boyutlarına göre imal edilir.",
       },
     ],
     relatedIds: [
@@ -763,26 +773,27 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-mixing-arm",
-    name: "Asphalt Mixing Arm",
-    fullName: "Asphalt Mixing Plant Mixing Arm (High-Temperature Alloy Steel)",
+    name: "Asfalt Karıştırma Kolu",
+    fullName:
+      "Asfalt Karıştırma Tesisi Karıştırma Kolu (Yüksek Sıcaklık Alaşımlı Çelik)",
     category: "asphalt_mixing_plant",
     sector: "mixing_arm",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image: "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-00.webp",
     gallery: [
       "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-00.webp",
       "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-01.webp",
       "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-02.webp",
     ],
-    badge: "Hot-Mix",
+    badge: "Sıcak Karışım",
     badgeColor: "orange",
     description:
-      "Asphalt mixing plant mixing arm in high-temp alloy steel - holds the blade tips through hot bituminous mix without sagging; lost-foam cast OEM fit.",
+      "Yüksek sıcaklığa dayanıklı alaşımlı çelikten imal edilmiş asfalt karıştırma tesisi karıştırma kolu – bıçak uçlarını sıcak bitümlü karışımın içinde sarkma olmadan sabit tutar; kayıp köpük döküm yöntemiyle üretilmiş, OEM uyumlu.",
     fullDescription:
-      "In a pugmill or twin-shaft asphalt mixer, the arm holds each blade tip at its set radius while the shaft drives it through hot bituminous mix batch after batch. Unlike a concrete arm, it does this at sustained high temperature, where ordinary steel loses strength and begins to creep.\n\nIf an arm softens, bends or cracks under that combined heat and load, blade tips drop out of position, the mix coats unevenly, and a failed arm can foul the liners or stall the shaft mid-batch - an expensive stop on a plant that has to keep hot mix moving. Holding the blade geometry steady through the heat is exactly the arm's job.\n\nSureay casts these arms from heat-resistant alloy steel that keeps its strength and toughness at mixing temperature, produced on the lost-foam line and machined to the original bolt pattern for a no-shim fit. They suit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, as well as generic batch mixers, and typically serve 6-18 months depending on output and aggregate hardness.",
+      "Bir pugmill veya çift şaftlı asfalt karıştırıcısında, kol her bir bıçak ucunu ayarlanan yarıçapında tutarken, şaft onu parti parti sıcak bitümlü karışımın içinden geçirir. Beton kolundan farklı olarak, bunu sürekli yüksek sıcaklıkta gerçekleştirir; bu sıcaklıkta sıradan çelik mukavemetini kaybeder ve sünmeye başlar.\n\nKol, bu birleşik ısı ve yük altında yumuşarsa, bükülürse veya çatlarsa, bıçak uçları konumlarından kayar, karışım düzensiz bir şekilde kaplanır ve arızalı bir kol, astarları kirletebilir veya parti ortasında şaftın durmasına neden olabilir; bu da sıcak karışımı sürekli hareket halinde tutması gereken bir tesiste pahalı bir duruşa yol açar. Isı altında bıçak geometrisini sabit tutmak, tam olarak kolun görevidir.\n\nSureay, bu kolları karıştırma sıcaklığında mukavemetini ve tokluğunu koruyan ısıya dayanıklı alaşımlı çelikten döküm olarak üretir; bu kollar, kaybolan köpük yöntemiyle üretilir ve şim gerektirmeyen bir uyum için orijinal cıvata düzenine göre işlenir. Bu kollar, Ammann, Marini, Benninghoven, MEKA ve Astec markalarına ait pugmill ve çift şaftlı tesislerin yanı sıra genel amaçlı parti karıştırıcılara da uygundur ve üretim hacmi ile agrega sertliğine bağlı olarak genellikle 6-18 ay hizmet ömrü sunar.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-mixing-arm",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "Heat-Resistant Alloy Steel",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "Isıya Dayanıklı Alaşımlı Çelik",
     isFeatured: true,
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
@@ -791,100 +802,104 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "Heat-resistant alloy steel casting",
+        label: "Malzeme",
+        value: "Isıya dayanıklı alaşımlı çelik döküm",
       },
       {
-        label: "Hardness",
-        value: "Toughness-optimized for hot service (not surface-hardened)",
+        label: "Sertlik",
+        value:
+          "Yüksek sıcaklıkta çalışmaya uygun şekilde sertlik açısından optimize edilmiştir (yüzey sertleştirilmemiştir)",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, machined to OEM bolt pattern",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, OEM cıvata düzenine göre işlenmiş",
       },
       {
-        label: "Application",
-        value: "Pugmill & twin-shaft asphalt mixers (hot mix)",
+        label: "Başvuru",
+        value: "Pugmill ve çift şaftlı asfalt karıştırıcılar (sıcak karışım)",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "hot-strength-alloy",
-        tag: "METALLURGY",
-        title: "Hot-Strength Alloy Steel",
+        tag: "METALURJİ",
+        title: "Yüksek Sıcaklık Dayanımlı Alaşımlı Çelik",
         description:
-          "The arm is cast from an alloy steel that retains strength and toughness at mixing temperature, resisting the creep and softening that bend an ordinary-steel arm out of position over a hot production season.",
+          "Kol, karıştırma sıcaklığında mukavemetini ve tokluğunu koruyan bir alaşımlı çelikten dökülmüştür; bu sayede, sıcak üretim sezonunda sıradan çelikten yapılmış bir kolun yerinden kaymasına neden olan sünme ve yumuşamaya karşı direnç gösterir.",
       },
       {
         id: "geometry-hold",
-        tag: "FITMENT",
-        title: "Holds Blade Geometry Through Heat",
+        tag: "UYUM",
+        title: "Isıya Karşı Bıçak Geometrisini Korur",
         description:
-          "Machined to the OEM bolt pattern and dimensioned for thermal load, the arm keeps each blade tip at its set radius batch after batch, so hot mix stays evenly coated and the shaft stays clear.",
+          "OEM cıvata düzenine göre işlenmiş ve termal yüke uygun boyutlandırılmış olan kol, her parti boyunca her bir bıçak ucunu ayarlanan yarıçapında tutar; böylece sıcak karışım eşit bir şekilde kaplanır ve şaft temiz kalır.",
       },
       {
         id: "oem-odm-sourcing",
         tag: "OEM / ODM",
-        title: "Reproduced From Your Sample",
+        title: "Örneğinizden Alıntı",
         description:
-          "Send a worn arm, a drawing or the plant model and we cast a heat-resistant replacement matched to the original hub and bolt pattern - the usual route for older or less common asphalt plants.",
+          "Aşınmış bir kolu, bir çizimi veya tesis modelini bize gönderin; biz de orijinal göbek ve cıvata düzenine uygun, ısıya dayanıklı bir yedek parça dökümünü yapalım – bu, eski veya daha az yaygın asfalt tesisleri için genel olarak izlenen yoldur.",
       },
     ],
     faq: [
       {
         question:
-          "Why do asphalt mixer arms use alloy steel instead of cast iron?",
+          "Asfalt karıştırıcı kolları neden dökme demir yerine alaşımlı çelik kullanır?",
         answer:
-          "Asphalt arms work under sustained high temperature where strength must not fade. Heat-resistant alloy steel keeps its strength and toughness hot, resisting the creep and cracking that would let a brittle or low-grade arm drop the blade tips out of position. The hard, abrasion-resistant material is reserved for the blades and liners.",
-      },
-      {
-        question: "How often should asphalt mixing plant arms be replaced?",
-        answer:
-          "Most plants renew arms every 6-18 months, with high-output, hard-aggregate operations at the shorter end. The signals are bolt-hole elongation and blade tips that no longer hold their set radius. Changing arms alongside blades and scrapers keeps the whole mixing tool on one wear cycle.",
-      },
-      {
-        question: "Which asphalt mixing plants do your mixing arms fit?",
-        answer:
-          "Asphalt mixing arms are cast to fit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, as well as generic batch mixers. Send the plant make and model and we match the bolt pattern and bore; arms for other brands can be copied from a worn sample.",
+          "Asfalt kolları, mukavemetinin kesinlikle azalmaması gereken sürekli yüksek sıcaklık koşullarında çalışır. Isıya dayanıklı alaşımlı çelik, yüksek sıcaklıkta da mukavemetini ve tokluğunu korur; kırılgan veya düşük kaliteli bir kolun bıçak uçlarını yerinden kaymasına neden olabilecek sünme ve çatlamaya karşı direnç gösterir. Sert ve aşınmaya dayanıklı malzeme, bıçaklar ve astarlar için ayrılmıştır.",
       },
       {
         question:
-          "Can your asphalt mixing arms handle continuous high-temperature service?",
+          "Asfalt karıştırma tesisi kolları ne sıklıkla değiştirilmelidir?",
         answer:
-          "Yes - they are cast from heat-resistant alloy steel that keeps its strength and toughness at mixing temperature, resisting the creep and softening that bend an ordinary-steel arm out of position over a hot production season.",
+          "Çoğu tesis, kolları 6-18 ayda bir yeniler; yüksek verimli, sert agrega işlemlerinde bu süre daha kısadır. Bunun belirtileri, cıvata deliklerinin uzaması ve bıçak uçlarının artık ayarlanan yarıçapını koruyamamasıdır. Kolları, bıçaklar ve sıyırıcılarla birlikte değiştirmek, tüm karıştırma aletinin tek bir aşınma döngüsünde kalmasını sağlar.",
       },
       {
         question:
-          "Can you cast an asphalt mixing arm from a worn sample or drawing?",
+          "Karıştırma kollarınız hangi asfalt karıştırma tesislerine uyar?",
         answer:
-          "Yes, OEM/ODM is welcome. Send a worn arm, a dimensioned drawing or the plant model and we produce a drop-in replacement matched to the original hub and bolt pattern - the usual route for older or less common asphalt plants.",
+          "Asfalt karıştırma kolları, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerin yanı sıra genel amaçlı kesikli karıştırıcılara uyacak şekilde döküm olarak üretilmektedir. Tesisin markasını ve modelini bize bildirirseniz, cıvata düzenini ve delik çapını buna göre ayarlarız; diğer markalara ait kollar ise aşınmış bir numuneden kopyalanabilir.",
       },
       {
-        question: "What is the lead time and MOQ for asphalt mixing arms?",
+        question:
+          "Asfalt karıştırma kollarınız, sürekli yüksek sıcaklıkta çalışmaya dayanabilir mi?",
         answer:
-          "We ship factory-direct with a low MOQ on replacement wear parts; lead time depends on the model and whether tooling exists. Send your plant model for a quote, and a material and hardness report can be included with the order.",
+          "Evet – bunlar, karıştırma sıcaklığında mukavemetini ve tokluğunu koruyan, ısıya dayanıklı alaşımlı çelikten dökülmüştür; bu sayede, sıcak bir üretim sezonu boyunca sıradan çelikten yapılmış bir kolun yerinden kaymasına neden olan sünme ve yumuşamaya karşı direnç gösterirler.",
+      },
+      {
+        question:
+          "Aşınmış bir numune veya çizimden asfalt karıştırma kolu kalıbı yapabilir misiniz?",
+        answer:
+          "Evet, OEM/ODM taleplerini memnuniyetle kabul ediyoruz. Aşınmış bir kol, boyutlu bir çizim veya tesis modelini bize gönderin; biz de orijinal göbek ve cıvata düzenine uygun, doğrudan takılabilen bir yedek parça üretelim – bu, eski veya daha az yaygın asfalt tesisleri için genel olarak izlenen yoldur.",
+      },
+      {
+        question:
+          "Asfalt karıştırma kolları için teslim süresi ve minimum sipariş miktarı nedir?",
+        answer:
+          "Yedek aşınma parçaları için düşük minimum sipariş miktarı (MOQ) ile fabrikadan doğrudan sevkiyat yapıyoruz; teslim süresi, modele ve kalıpların mevcut olup olmadığına bağlıdır. Fiyat teklifi almak için tesisinizin modelini gönderin; siparişinize malzeme ve sertlik raporu da eklenebilir.",
       },
     ],
     variants: [
       {
-        grade: "Standard Heat-Resistant",
-        note: "Baseline hot-service alloy steel for typical pugmill plants.",
+        grade: "Standart Isıya Dayanıklı",
+        note: "Tipik pugmill tesisleri için temel sıcak işleme alaşımlı çelik.",
       },
       {
-        grade: "High-Strength",
-        note: "Upgraded grade for higher load and longer hot-season life.",
+        grade: "Yüksek Mukavemetli",
+        note: "Daha yüksek yük ve sıcak mevsimde daha uzun ömür için geliştirilmiş kalite sınıfı.",
       },
       {
-        grade: "Heavy-Duty High-Output",
-        note: "Reinforced section for continuous, high-volume hot-mix production.",
+        grade: "Ağır Hizmet Tipi Yüksek Verimli",
+        note: "Sürekli ve yüksek hacimli sıcak karışım üretimi için güçlendirilmiş bölüm.",
       },
       {
-        grade: "OEM-Pattern Match",
-        note: "Machined to a specific plant's bolt pattern and shaft bore.",
+        grade: "OEM Desen Eşleşmesi",
+        note: "Belirli bir tesisin cıvata düzenine ve mil deliğine göre işlenmiştir.",
       },
     ],
     relatedIds: [
@@ -897,12 +912,12 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-liner-plate",
-    name: "Asphalt Liner Plate",
+    name: "Asfalt Kaplama Levhası",
     fullName:
-      "Asphalt Mixing Plant Liner Plate (High-Temperature Wear-Resistant)",
+      "Asfalt Karıştırma Tesisi Astar Plakası (Yüksek Sıcaklığa Dayanıklı, Aşınmaya Dayanıklı)",
     category: "asphalt_mixing_plant",
     sector: "liner",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image:
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-00.webp",
     gallery: [
@@ -911,13 +926,14 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-02.webp",
     ],
     description:
-      "OEM asphalt mixing/batching plant liner & lining plates, HB600+ high-chrome iron. Fits Ammann, Marini, Benninghoven, MEKA, Astec. Bolt-in, factory-direct.",
-    seoTitle: "Asphalt Mixing Plant Liner & Lining Plate — HB600+ OEM Fit",
+      "OEM asfalt karıştırma/harmanlama tesisi astarları ve kaplama plakaları, HB600+ yüksek kromlu demir. Ammann, Marini, Benninghoven, MEKA ve Astec markalarına uygundur. Cıvatalı montaj, fabrikadan doğrudan temin.",
+    seoTitle:
+      "Asfalt Karıştırma Tesisi Astarı ve Kaplama Plakası — HB600+ OEM Uyumlu",
     fullDescription:
-      "Liner plates protect the inside of the pugmill from the twin assault of hot, sticky bituminous mix and the sharp mineral aggregate carried in it. They are the barrier that keeps abrasion and heat off the structural mixer shell.\n\nWhen a liner wears thin or a bolt backs out, hot mix works its way to the shell and to the gap behind the plate, where it packs, hardens and accelerates the next failure. Left too long, the damage moves from a cheap liner swap to a shell repair and extended downtime in the middle of a paving season - the worst possible time to lose a plant.\n\nSureay asphalt liners are cast in high-chromium iron above HB 600, selected to hold up to abrasion at mixing temperature, and produced on the lost-foam and DISA green-sand lines for accurate, flush-fitting segments. They bolt into pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, with a typical 6-18 month service life depending on throughput and aggregate hardness.",
+      "Astar plakaları, pugmill’in iç kısmını hem sıcak ve yapışkan bitümlü karışımın hem de içinde taşınan keskin mineral agregaların çifte etkisinden korur. Bu plakalar, yapısal karıştırıcı gövdesini aşınma ve ısıdan koruyan bir bariyer görevi görür.\n\nBir astar aşınarak inceldiğinde veya bir cıvata gevşediğinde, sıcak karışım gövdeye ve plakanın arkasındaki boşluğa sızar; burada birikip sertleşerek bir sonraki arızayı hızlandırır. Bu durum çok uzun süre ihmal edilirse, hasar, ucuz bir astar değişiminden, asfalt serim sezonunun ortasında bir gövde onarımına ve uzun süreli duruşa dönüşür; bu da tesisi kaybetmek için olabilecek en kötü zamandır.\n\nSureay asfalt astarları, karıştırma sıcaklığında aşınmaya dayanacak şekilde seçilmiş, HB 600'ün üzerinde yüksek kromlu demirden dökülür ve hassas, tam oturan segmentler elde etmek için kayıp köpük ve DISA yeşil kum hatlarında üretilir. Bu astarlar, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislere cıvatalarla monte edilir ve üretim kapasitesi ile agrega sertliğine bağlı olarak genellikle 6-18 ay arasında bir hizmet ömrüne sahiptir.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-liner-plate",
-    trustProcess: "Lost-Foam & DISA Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük ve DISA Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
       lowPrice: 40,
@@ -925,102 +941,106 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "High-chromium cast iron",
+        label: "Malzeme",
+        value: "Yüksek kromlu dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam / DISA green-sand casting",
+        label: "Süreç",
+        value: "Kayıp köpük / DISA yeşil kum dökümü",
       },
       {
-        label: "Application",
-        value: "Pugmill / mixer shell lining (hot mix)",
+        label: "Başvuru",
+        value: "Karıştırıcı / karıştırıcı gövdesi astarı (sıcak karışım)",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "hot-abrasion-resistance",
         tag: "WEAR LIFE",
-        title: "Hot-Mix Abrasion Resistance",
+        title: "Sıcak Karışım Aşınma Direnci",
         description:
-          "High-chromium iron above HB 600 stands up to sharp mineral aggregate at mixing temperature, giving a sacrificial wear face that protects the structural mixer shell from both abrasion and heat.",
+          "HB 600 değerinin üzerindeki yüksek kromlu demir, karıştırma sıcaklığında keskin mineral agregalara karşı dayanıklılık gösterir ve yapısal karıştırıcı gövdesini hem aşınmaya hem de ısıya karşı koruyan bir aşınma tabakası oluşturur.",
       },
       {
         id: "sealed-fit",
-        tag: "FITMENT",
-        title: "Flush, Sealed Segments",
+        tag: "UYUM",
+        title: "Düz, Sızdırmaz Segmentler",
         description:
-          "Accurate green-sand casting keeps each plate flush so hot mix cannot pack behind the liner, where trapped, hardened material would pry plates loose and shorten the life of the whole set.",
+          "Hassas yeşil kum dökümü, her bir plakanın yüzeyinin düz kalmasını sağlar; böylece sıcak karışım astarın arkasına sıkışamaz. Aksi takdirde, burada sıkışıp sertleşen malzeme plakaları yerinden söküp tüm setin ömrünü kısaltabilir.",
       },
       {
         id: "shell-protection",
-        tag: "PROTECTION",
-        title: "Shields the Structural Shell",
+        tag: "KORUMA",
+        title: "Yapısal Kabuğu Korur",
         description:
-          "The liner is the sacrificial barrier that takes hot-mix abrasion and heat so the mixer shell never does. Replacing before it thins through keeps the repair at liner cost, not shell cost.",
+          "Astar, sıcak karışımın aşındırıcı etkisini ve ısısını üstlenen, dolayısıyla karıştırıcı gövdesinin bu etkilerden asla zarar görmemesini sağlayan bir koruma tabakasıdır. Astar incelenmeden önce değiştirilmesi, onarım maliyetini gövde maliyetinden ziyade astar maliyetiyle sınırlı tutar.",
       },
     ],
     faq: [
       {
-        question: "What causes asphalt plant liner plates to fail early?",
+        question:
+          "Asfalt tesisi astar plakalarının erken arızalanmasına ne sebep olur?",
         answer:
-          "Usually it is mix packing behind a plate through a worn bolt or an uneven seam: trapped hot mix hardens, lifts the plate and exposes the shell. Flush-fitting plates and routine bolt checks prevent it. Replacing before a liner thins through keeps the repair at liner cost rather than shell cost.",
+          "Genellikle sorun, aşınmış bir cıvata veya düzensiz bir birleşim yeri nedeniyle plakanın arkasına karışık dolgu malzemesinin girmesinden kaynaklanır: sıkışan sıcak karışım sertleşir, plakayı yukarı kaldırır ve gövdeyi ortaya çıkarır. Plakaların gövdeye tam oturması ve rutin cıvata kontrolleri bu sorunu önler. Astar incelmeden önce değiştirilmesi, onarım maliyetinin gövde masrafı yerine astar masrafı düzeyinde kalmasını sağlar.",
       },
       {
         question:
-          "Can the same liner plates be used for concrete and asphalt mixers?",
+          "Aynı astar plakaları hem beton hem de asfalt karıştırıcılarında kullanılabilir mi?",
         answer:
-          "The material family is similar - high-chromium iron above HB 600 - but the profiles and fixings differ by plant, and asphalt service adds sustained heat. We supply liners matched to your specific asphalt plant model rather than a generic plate, so fit and sealing are correct.",
+          "Malzeme grubu benzerdir — HB 600’ün üzerinde yüksek kromlu demir — ancak profiller ve sabitleme elemanları tesise göre farklılık gösterir; ayrıca asfalt işleme süreci sürekli ısı yükü oluşturur. Genel amaçlı bir plaka yerine, asfalt tesisinizin spesifik modeline uygun astarlar tedarik ediyoruz; böylece doğru oturma ve sızdırmazlık sağlanır.",
       },
       {
-        question: "Which asphalt mixing plants do your liner plates fit?",
+        question:
+          "Astar plakalarınız hangi asfalt karıştırma tesislerine uyuyor?",
         answer:
-          "Liner plates are supplied for pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, plus generic pugmills. We match the plate profile, thickness and bolt layout to your mixer; plates for other plants can be reproduced from a worn sample.",
+          "Ammann, Marini, Benninghoven, MEKA ve Astec markalı karıştırıcılar ile çift şaftlı tesisler ve ayrıca genel amaçlı karıştırıcılar için astar plakaları tedarik edilmektedir. Plakaların profilini, kalınlığını ve cıvata düzenini karıştırıcınıza göre uyumlu hale getiriyoruz; diğer tesisler için gerekli plakalar ise aşınmış bir numuneden yeniden üretilebilir.",
       },
       {
-        question: "How long do asphalt pugmill liner plates last?",
+        question: "Asfalt karıştırıcı astar plakalarının ömrü ne kadardır?",
         answer:
-          "Typically 6-18 months, depending on output and aggregate hardness. Watch the remaining plate thickness and the fixing bolts - replacing before a liner thins through keeps hot mix off the structural shell, which is far costlier to repair than a liner swap.",
+          "Genellikle 6-18 ay sürer; bu süre, üretim hacmine ve agrega sertliğine bağlı olarak değişir. Kalan plaka kalınlığını ve sabitleme cıvatalarını dikkatle izleyin; astarın tamamen incelmeden önce değiştirilmesi, sıcak karışımın yapısal kabuğa temas etmesini önler; zira yapısal kabuğun onarımı, astarın değiştirilmesinden çok daha maliyetlidir.",
       },
       {
-        question: "Can you supply asphalt liner plates in custom sizes?",
+        question:
+          "Özel boyutlarda asfalt astar plakaları tedarik edebilir misiniz?",
         answer:
-          "Yes. Liner plates are made to your pugmill's dimensions, including non-standard thicknesses and bolt patterns, and matched to your aggregate hardness. Send a worn plate or a dimensioned drawing and we cast a matching set.",
+          "Evet. Astar plakaları, pugmillinizin boyutlarına göre üretilir; buna standart dışı kalınlıklar ve cıvata düzenleri de dahildir ve agregalarınızın sertliğine uygun olarak hazırlanır. Aşınmış bir plaka veya boyutları belirtilmiş bir çizim gönderin, biz de buna uygun bir set döküm yapalım.",
       },
       {
-        question: "How are asphalt liner plates fixed inside the mixer?",
+        question:
+          "Asfalt astar plakaları karıştırıcının içine nasıl sabitlenir?",
         answer:
-          "Liner plates bolt to the mixer shell and sit flush against each neighbour so hot mix cannot pack behind them. Renew the fixing bolts with the plates - a backed-out bolt lets hot mix work behind the liner, where it hardens and pries plates loose.",
+          "Astar plakaları karıştırıcı gövdesine cıvatalarla sabitlenir ve komşu plakalarla aynı hizada durur; böylece sıcak karışım bunların arkasına sıkışamaz. Plakalarla birlikte sabitleme cıvatalarını da yenileyin – gevşemiş bir cıvata, sıcak karışımın astarın arkasına girmesine neden olur; burada karışım sertleşir ve plakaları yerinden söker.",
       },
     ],
     variants: [
       {
-        grade: "High-Hardness Hot-Service",
-        note: "Maximum hardness for sharp aggregate at mixing temperature.",
+        grade: "Yüksek Sertlikli Sıcak Hizmet",
+        note: "Karıştırma sıcaklığında keskin agreganın maksimum sertliği.",
       },
       {
-        grade: "High-Wear High-Chrome",
-        note: "High carbide volume for the longest life under heavy hot-mix output.",
+        grade: "Yüksek Aşınmaya Dayanıklı, Yüksek Krom İçerikli",
+        note: "Ağır sıcak karışım üretim koşullarında en uzun hizmet ömrü için yüksek karbür hacmi.",
       },
       {
-        grade: "Impact-Resistant",
-        note: "Tougher grade for large or recycled aggregate.",
+        grade: "Darbeye Dayanıklı",
+        note: "Büyük veya geri dönüştürülmüş agrega için daha sert sınıf.",
       },
       {
-        grade: "General-Duty",
-        note: "Balanced, economical plate for standard plants.",
+        grade: "Genel Görev",
+        note: "Standart tesisler için dengeli ve ekonomik bir plaka.",
       },
       {
-        grade: "OEM / Full-Series",
-        note: "Complete liner set matched to a specific plant model.",
+        grade: "OEM / Tam Seri",
+        note: "Belirli bir tesis modeline uygun eksiksiz astar seti.",
       },
     ],
     relatedIds: [
@@ -1033,11 +1053,12 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-side-lining",
-    name: "Asphalt Side Lining",
-    fullName: "Asphalt Mixing Plant Side Lining (Edge Wear Protection)",
+    name: "Asfalt Kenar Kaplaması",
+    fullName:
+      "Asfalt Karıştırma Tesisi Kenar Kaplaması (Kenar Aşınma Koruması)",
     category: "asphalt_mixing_plant",
     sector: "liner",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image:
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-00.webp",
     gallery: [
@@ -1045,15 +1066,15 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-01.webp",
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-02.webp",
     ],
-    badge: "Hot-Mix",
+    badge: "Sıcak Karışım",
     badgeColor: "orange",
     description:
-      "Asphalt mixing plant side lining - high-chrome edge plates that protect the pugmill end walls and corners where hot mix wears fastest.",
+      "Asfalt karıştırma tesisi yan kaplaması – sıcak karışımın en hızlı aşındığı pugmill uç duvarlarını ve köşelerini koruyan yüksek krom içerikli kenar plakaları.",
     fullDescription:
-      "Side linings guard the end walls and side corners of the pugmill - the edges the main floor and wall liners cannot reach. In a twin-shaft asphalt mixer these corners take a concentrated, swirling wear pattern as hot mix is thrown against them at the ends of each shaft.\n\nBecause the wear is concentrated, a side lining thins through faster than the flat liners around it. Once it does, hot mix attacks the structural end wall and packs into the seam between panels, so what should have been an edge-plate swap becomes an end-wall repair and a longer shutdown if the worn lining is run too far.\n\nSureay side linings are cast in high-chromium iron above HB 600 for abrasion resistance at mixing temperature and shaped to the corner and end-wall profiles of pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec. Renewing them with the main liner set keeps the whole chamber on one wear cycle.",
+      "Yan astarlar, pugmill’in uç duvarlarını ve yan köşelerini korur — ana zemin ve duvar astarlarının ulaşamadığı kenarları. Çift şaftlı bir asfalt karıştırıcısında, her şaftın uçlarında sıcak karışım bu köşelere çarptığı için bu köşelerde yoğun ve girdap şeklinde bir aşınma deseni oluşur.\n\nAşınma yoğun olduğu için, bir yan astar, etrafındaki düz astarlara göre daha hızlı incelir. Bu gerçekleştiğinde, sıcak karışım yapısal uç duvara zarar verir ve paneller arasındaki derze dolarak, aşınmış astar çok fazla kullanılmışsa, sadece kenar plakasının değiştirilmesi gereken bir işlem, uç duvar onarımına ve daha uzun bir duruş süresine dönüşür.\n\nSureay yan astarları, karıştırma sıcaklığında aşınma direnci sağlamak üzere HB 600'ün üzerinde bir sertliğe sahip yüksek kromlu demirden dökülür ve Ammann, Marini, Benninghoven, MEKA ve Astec firmalarının pugmill ve çift şaftlı tesislerinin köşe ve uç duvar profillerine göre şekillendirilir. Ana astar setiyle birlikte yenilenmeleri, tüm haznenin tek bir aşınma döngüsünde kalmasını sağlar.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-side-lining",
-    trustProcess: "Lost-Foam & DISA Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük ve DISA Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
       lowPrice: 35,
@@ -1061,98 +1082,102 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "High-chromium cast iron",
+        label: "Malzeme",
+        value: "Yüksek kromlu dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam / DISA green-sand casting, profiled to corner",
+        label: "Süreç",
+        value:
+          "Kayıp köpük / DISA yeşil kum döküm, köşelere göre şekillendirilmiş",
       },
       {
-        label: "Application",
-        value: "Pugmill end-wall & side-corner wear protection (hot mix)",
+        label: "Başvuru",
+        value: "Pugmill uç duvarı ve yan köşe aşınma koruması (sıcak karışım)",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "corner-coverage",
-        tag: "GEOMETRY",
-        title: "Profiled Corner & End-Wall Coverage",
+        tag: "GEOMETRİ",
+        title: "Profilli Köşe ve Uç Duvar Kaplaması",
         description:
-          "Shaped to the contour the flat liners miss, the side lining covers the concentrated wear zone at each shaft end, where swirling hot mix would otherwise cut straight into the structural wall.",
+          "Düz astarların ulaşamadığı kontura göre şekillendirilen yan astar, her bir şaft ucundaki yoğun aşınma bölgesini kaplar; aksi takdirde, dönen sıcak karışım doğrudan yapısal duvarı aşındırırdı.",
       },
       {
         id: "hot-abrasion-edge",
         tag: "WEAR LIFE",
-        title: "HB600+ at Mixing Temperature",
+        title: "Karıştırma Sıcaklığında HB600+",
         description:
-          "High-chromium iron above HB 600 resists sharp aggregate at hot-mix temperature, so the most heavily loaded edges of the chamber last as long as the flatter, lower-wear panels.",
+          "HB 600 değerinin üzerindeki yüksek kromlu demir, sıcak karışım sıcaklığında keskin agrega parçacıklarına karşı direnç gösterir; bu sayede, haznenin en fazla yük alan kenarları, daha düz ve aşınmaya daha az maruz kalan paneller kadar uzun ömürlü olur.",
       },
       {
         id: "custom-corner-profile",
-        tag: "FITMENT",
-        title: "Cast to Your Corner Profile",
+        tag: "UYUM",
+        title: "Köşe Profiline Aktar",
         description:
-          "Corner and end-wall shapes vary by plant, so side linings are cast to your specific contour from a worn part or drawing - matching the profile is what stops hot mix cutting past into the end wall.",
+          "Köşe ve uç duvar şekilleri tesise göre değişiklik gösterdiğinden, yan kaplamalar aşınmış bir parça veya çizimden yola çıkılarak tesisinize özgü kontura göre dökülür; profilin tam olarak uyumlu olması, sıcak karışımın uç duvarın ötesine geçmesini engeller.",
       },
     ],
     faq: [
       {
         question:
-          "Why do asphalt pugmill corners wear out faster than the walls?",
+          "Asfalt karıştırıcısının köşeleri neden duvarlarından daha hızlı aşınır?",
         answer:
-          "Hot mix is thrown against the end walls and corners in a concentrated, swirling pattern at each shaft end, so abrasion there is higher than across the flat liners. A dedicated side lining puts the hardest, most wear-resistant plate exactly where the wear is worst.",
+          "Sıcak karışım, her şaft ucunda yoğun ve girdap şeklinde bir desenle uç duvarlara ve köşelere çarpar; bu nedenle bu bölgelerdeki aşınma, düz astarlara kıyasla daha fazladır. Özel bir yan astar, en sert ve aşınmaya en dayanıklı levhayı tam da aşınmanın en şiddetli olduğu yere yerleştirir.",
       },
       {
-        question: "Can I replace just the side lining, or the whole liner set?",
+        question:
+          "Sadece yan astarı mı değiştirebilirim, yoksa tüm astar setini mi?",
         answer:
-          "Side linings can be changed on their own when only the corners are worn, but because they share a wear cycle with the floor and wall liners, most plants renew them together to avoid a second shutdown weeks later.",
+          "Yalnızca köşeler aşındığında yan kaplamalar tek başına değiştirilebilir; ancak bu kaplamalar, zemin ve duvar kaplamalarıyla aynı aşınma döngüsünü paylaştıkları için, çoğu tesis birkaç hafta sonra ikinci bir duruşu önlemek amacıyla bunları hep birlikte yeniler.",
       },
       {
-        question: "Which asphalt mixing plants do your side linings fit?",
+        question:
+          "Yan kaplamalarınız hangi asfalt karıştırma tesislerine uygundur?",
         answer:
-          "Side linings are shaped to the corner and end-wall profiles of pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec. Send your plant model or a worn part and we match the contour.",
+          "Yan kaplamalar, Ammann, Marini, Benninghoven, MEKA ve Astec markalı karıştırıcı ve çift şaftlı tesislerin köşe ve uç duvar profillerine göre şekillendirilmiştir. Tesis modelinizi veya aşınmış bir parçayı bize gönderin, biz de konturu uyumlu hale getirelim.",
       },
       {
-        question: "What material are asphalt side linings made of?",
+        question: "Asfalt kenar kaplamaları hangi malzemeden yapılmıştır?",
         answer:
-          "Side linings are cast in high-chromium iron above HB 600 for abrasion resistance at mixing temperature, putting the hardest wear face exactly where the swirling hot mix attacks the chamber corners hardest.",
+          "Yan astarlar, karıştırma sıcaklığında aşınma direnci sağlamak amacıyla HB 600’ün üzerinde bir sertliğe sahip yüksek kromlu demirden dökülür; böylece en sert aşınma yüzeyi, dönen sıcak karışımın hazne köşelerine en şiddetli şekilde çarptığı noktaya tam olarak yerleştirilir.",
       },
       {
-        question: "Can you make side linings to my pugmill's corner profile?",
+        question:
+          "Pugmill’imin köşe profiline uygun yan kaplamalar yapabilir misiniz?",
         answer:
-          "Yes. Because corner and end-wall shapes vary by plant, side linings are cast to your specific contour from a worn part or a drawing. Matching the profile is what stops hot mix cutting past the lining into the structural end wall.",
+          "Evet. Köşe ve uç duvar şekilleri tesise göre değişiklik gösterdiğinden, yan astarlar, aşınmış bir parça veya bir çizimden yola çıkılarak tesisinize özgü kontura göre dökülür. Profilin uyumlu hale getirilmesi, sıcak karışımın astarı aşarak yapısal uç duvara kadar kesilmesini önler.",
       },
       {
-        question: "How long do asphalt side linings last?",
+        question: "Asfalt kenar kaplamalarının ömrü ne kadardır?",
         answer:
-          "Side linings sit in a concentrated wear zone, so they thin faster than the flat liners and are usually renewed with the main liner set every 6-18 months. Running a worn side lining too long lets hot mix reach the end wall and turns an edge-plate swap into a wall repair.",
+          "Yan astarlar, aşınmanın yoğun olduğu bir bölgede yer aldıkları için düz astarlara göre daha hızlı aşınırlar ve genellikle her 6-18 ayda bir ana astar setiyle birlikte yenilenirler. Aşınmış bir yan astarın çok uzun süre kullanılması, sıcak karışımın uç duvarına ulaşmasına neden olur ve kenar plakası değişimini bir duvar onarımına dönüştürür.",
       },
     ],
     variants: [
       {
-        grade: "Standard High-Chrome",
-        note: "General hot-mix corner protection for typical output.",
+        grade: "Standart Yüksek Kromlu",
+        note: "Tipik üretim kapasitesi için genel sıcak karışımlı köşe koruması.",
       },
       {
-        grade: "High-Wear",
-        note: "Higher carbide volume for hard, abrasive aggregate or long shifts.",
+        grade: "Aşınmaya Dayanıklı",
+        note: "Sert, aşındırıcı agrega veya uzun vardiyalar için daha yüksek karbür hacmi.",
       },
       {
-        grade: "Impact-Resistant",
-        note: "Tougher grade where large or recycled aggregate hits the corners hard.",
+        grade: "Darbeye Dayanıklı",
+        note: "Büyük veya geri dönüştürülmüş agregaların köşelere sert bir şekilde çarptığı, daha dayanıklı bir sınıf.",
       },
       {
-        grade: "OEM-Profile Match",
-        note: "Cast to a specific plant's corner and end-wall contour.",
+        grade: "OEM Profili Uyumu",
+        note: "Belirli bir tesisin köşesi ve uç duvarının konturuna göre kalıplanmıştır.",
       },
     ],
     relatedIds: [
@@ -1165,11 +1190,12 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-spiral-blade",
-    name: "Asphalt Spiral Blade",
-    fullName: "Asphalt Mixing Plant Spiral / Paddle Blade (Hot-Mix Conveying)",
+    name: "Asfalt Spiral Bıçağı",
+    fullName:
+      "Asfalt Karıştırma Tesisi Spiral / Paddle Bıçağı (Sıcak Karışım Taşıma)",
     category: "asphalt_mixing_plant",
     sector: "blade",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
     gallery: [
@@ -1177,17 +1203,17 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-01.webp",
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-02.webp",
     ],
-    badge: "Hot-Mix",
+    badge: "Sıcak Karışım",
     badgeColor: "orange",
     seoTitle:
-      "Asphalt Mixing Plant Spiral Blade — HB600+ OEM Fit for Ammann, Marini, Benninghoven",
+      "Asfalt Karıştırma Tesisi Spiral Bıçağı — HB600+ Ammann, Marini ve Benninghoven için OEM Uyumlu",
     description:
-      "Asphalt mixing plant spiral/paddle blade, high-chrome alloy, HB600+. Fits Ammann, Marini, Benninghoven, MEKA, Astec. Bolt-on, weld-free replacement.",
+      "Asfalt karıştırma tesisi spiral/kanatlı bıçak, yüksek krom alaşımı, HB600+. Ammann, Marini, Benninghoven, MEKA ve Astec markalarına uygundur. Cıvatalı, kaynak gerektirmeyen yedek parça.",
     fullDescription:
-      "Spiral blades are the conveying and mixing tool of the pugmill. Pitched along the shaft, they push hot aggregate from one end of the chamber to the other while folding it back through the bitumen, so every stone is fully and evenly coated before discharge.\n\nWhen the spiral profile wears down, that conveying action weakens: material lingers, dead zones form, and aggregate leaves the mixer unevenly coated or segregated - off-spec hot mix that fails at the lab or, worse, on the road. Because the blade controls both throughput and coating quality, a worn spiral quietly costs both rate and product quality at once.\n\nSureay spiral blades are cast in high-chromium alloy iron above HB 600 to resist abrasion at mixing temperature, with a bolt-on mount for fast, weld-free changes. They fit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, and typically last 6-18 months depending on output and aggregate hardness.",
+      "Spiral bıçaklar, pugmill’in taşıma ve karıştırma aletleridir. Mil boyunca eğimli bir şekilde yerleştirilmiş olan bu bıçaklar, sıcak agregayı haznenin bir ucundan diğer ucuna iterken onu bitümün içinden geri katlar; böylece her bir taş, boşaltılmadan önce tam ve eşit bir şekilde kaplanır.\n\nSpiral profil aşındığında, bu taşıma işlevi zayıflar: malzeme birikir, ölü bölgeler oluşur ve agrega karıştırıcıdan düzensiz bir şekilde kaplanmış veya ayrışmış halde çıkar; bu da laboratuvarda veya daha da kötüsü, yolda başarısız olan, spesifikasyonlara uymayan sıcak karışımlara yol açar. Bıçak hem üretim kapasitesini hem de kaplama kalitesini kontrol ettiği için, aşınmış bir spiral hem üretim hızını hem de ürün kalitesini aynı anda sessizce düşürür.\n\nSureay spiral bıçakları, karıştırma sıcaklığında aşınmaya direnmek üzere HB 600'ün üzerinde yüksek kromlu alaşımlı demirden dökülür ve hızlı, kaynaksız değiştirme için cıvatalı bir montaj sistemine sahiptir. Bu bıçaklar, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerle uyumludur ve üretim hacmi ile agrega sertliğine bağlı olarak genellikle 6-18 ay dayanır.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-spiral-blade",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     isFeatured: true,
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
@@ -1196,99 +1222,101 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "High-chromium alloy cast iron",
+        label: "Malzeme",
+        value: "Yüksek kromlu alaşımlı dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, bolt-on mounting",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, cıvatalı montaj",
       },
       {
-        label: "Application",
-        value: "Conveying & folding hot mix, bitumen coating",
+        label: "Başvuru",
+        value: "Sıcak karışımın taşınması ve katlanması, bitümlü kaplama",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "coating-action",
-        tag: "PERFORMANCE",
-        title: "Even Conveying & Coating",
+        tag: "PERFORMANS",
+        title: "Düzgün Dağıtma ve Kaplama",
         description:
-          "A correct spiral pitch and profile keep hot aggregate moving and folding through the bitumen, eliminating the dead zones that leave stones uncoated and push a batch off-spec.",
+          "Doğru bir spiral aralığı ve profili, sıcak agrega tanelerinin bitüm içinde hareket etmesini ve katlanmasını sağlayarak, taşların kaplanmamış kalmasına ve bir partinin teknik özelliklerin dışına çıkmasına neden olan ölü bölgeleri ortadan kaldırır.",
       },
       {
         id: "hot-wear-alloy",
         tag: "WEAR LIFE",
-        title: "Hot-Service High-Chrome",
+        title: "Sıcak Hizmet Tipi Yüksek Kromlu",
         description:
-          "High-chromium alloy iron above HB 600 holds its edge against sharp aggregate at mixing temperature, so the conveying profile lasts instead of rounding off mid-season. Bolt-on mounting keeps changes quick.",
+          "HB 600 değerinin üzerindeki yüksek kromlu alaşımlı demir, karıştırma sıcaklığında keskin agrega parçalarına karşı keskinliğini korur; böylece taşıma profili sezon ortasında yuvarlanmak yerine uzun süre dayanır. Cıvatalı montaj sistemi, değiştirme işlemlerinin hızlı bir şekilde yapılmasını sağlar.",
       },
       {
         id: "bolt-on-change",
-        tag: "FITMENT",
-        title: "Bolt-On, Weld-Free Change",
+        tag: "UYUM",
+        title: "Cıvatalı, Kaynaksız Değişim",
         description:
-          "The spiral mounts bolt-on for fast maintenance with no welding or hot-work permit, and the pitch and bolt pattern are matched to your shaft so it drops straight on.",
+          "Spiral montaj parçaları, kaynak veya sıcak iş izni gerektirmeden hızlı bakım için cıvatalı olarak takılır; ayrıca diş aralığı ve cıvata düzeni milinize uyumlu olduğundan, doğrudan yerine oturur.",
       },
     ],
     faq: [
       {
-        question: "How long do asphalt mixer spiral blades last?",
+        question:
+          "Asfalt karıştırıcısının spiral bıçaklarının ömrü ne kadardır?",
         answer:
-          "Typically 6-18 months, with high-output plants and hard, abrasive aggregate at the shorter end. The clearest sign of a worn spiral is falling mixing efficiency - longer cycle times, dead zones in the chamber, or aggregate leaving the mixer unevenly coated.",
+          "Genellikle 6-18 ay sürer; yüksek verimli tesislerde ve sert, aşındırıcı agregaların kullanıldığı durumlarda bu süre daha kısadır. Spiralin aşındığının en belirgin işareti, karıştırma verimliliğindeki düşüştür: döngü sürelerinin uzaması, haznede ölü bölgelerin oluşması veya agregaların karıştırıcıdan düzensiz bir şekilde kaplanmış olarak çıkması.",
       },
       {
         question:
-          "What happens to hot mix quality when spiral blades wear out?",
+          "Spiral bıçaklar aşındığında sıcak karışımın kalitesine ne olur?",
         answer:
-          "As the spiral profile rounds off, conveying and folding weaken, so material lingers and aggregate is no longer fully coated with bitumen. The result is uneven or segregated hot mix that can fail specification. Renewing the blades restores both throughput and coating consistency.",
-      },
-      {
-        question: "Which asphalt mixing plants do your spiral blades fit?",
-        answer:
-          "Spiral and paddle blades are supplied for pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, plus generic pugmills. We match the pitch and mount to your shaft; blades for other plants can be copied from a worn sample.",
-      },
-      {
-        question: "What material are asphalt spiral blades made of?",
-        answer:
-          "Spiral blades are cast in high-chromium alloy iron above HB 600 to hold their conveying edge against sharp aggregate at mixing temperature, so the spiral profile lasts instead of rounding off mid-season.",
-      },
-      {
-        question: "Are your asphalt spiral blades bolt-on replacements?",
-        answer:
-          "Yes - they mount bolt-on for fast, weld-free changes during routine maintenance. Send the plant model or a worn blade and we match the pitch, profile and bolt pattern so they drop straight onto your shaft.",
+          "Spiral profilin ucu yuvarlaklaştıkça, taşıma ve katlama işlemleri zayıflar; bu nedenle malzeme birikmeye başlar ve agrega artık bitümle tam olarak kaplanmaz. Sonuç olarak, teknik şartnamelere uymayabilecek düzensiz veya ayrışmış bir sıcak karışım ortaya çıkar. Bıçakların yenilenmesi, hem üretim kapasitesini hem de kaplama tutarlılığını geri kazandırır.",
       },
       {
         question:
-          "Can you supply asphalt spiral blades to a sample or drawing?",
+          "Spiral bıçaklarınız hangi asfalt karıştırma tesislerine uyuyor?",
         answer:
-          "Yes, OEM/ODM is welcome. A worn blade or a dimensioned drawing lets us reproduce the correct spiral pitch and profile - the geometry that controls both throughput and how evenly the hot mix is coated.",
+          "Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerin yanı sıra genel amaçlı pugmill’ler için spiral ve kanatlı bıçaklar tedarik edilmektedir. Bıçakların aralığını ve montaj şeklini şaftınıza uyumlu hale getiriyoruz; diğer tesisler için gerekli bıçaklar ise aşınmış bir numuneden kopyalanabilir.",
+      },
+      {
+        question: "Asfalt spiral bıçakları hangi malzemeden yapılmıştır?",
+        answer:
+          "Spiral bıçaklar, karıştırma sıcaklığında keskin agrega parçalarına karşı taşıma kenarlarını korumak için HB 600'ün üzerinde bir krom içeriğine sahip alaşımlı demirden dökülür; böylece spiral profil, sezon ortasında yuvarlanmak yerine uzun süre dayanır.",
+      },
+      {
+        question: "Asfalt spiral bıçaklarınız cıvatalı yedek parçalar mı?",
+        answer:
+          "Evet – rutin bakım sırasında hızlı ve kaynak gerektirmeyen değişimler için cıvatalı olarak takılabilirler. Tesis modelini veya aşınmış bir bıçağı bize gönderin; biz de adım, profil ve cıvata düzenini ayarlayalım ki bıçaklar milinize tam otursun.",
+      },
+      {
+        question:
+          "Bir numune veya çizim temelinde asfalt spiral bıçakları tedarik edebilir misiniz?",
+        answer:
+          "Evet, OEM/ODM taleplerini memnuniyetle kabul ediyoruz. Aşınmış bir bıçak veya boyutlu bir çizim, doğru spiral aralığını ve profili – yani hem üretim kapasitesini hem de sıcak karışımın ne kadar eşit bir şekilde kaplandığını belirleyen geometriyi – yeniden üretmemizi sağlar.",
       },
     ],
     variants: [
       {
-        grade: "Standard High-Chrome",
-        note: "General hot-service conveying blade for typical pugmill output.",
+        grade: "Standart Yüksek Kromlu",
+        note: "Tipik hamur karıştırıcısından çıkan malzeme için genel sıcak hizmet taşıma bıçağı.",
       },
       {
-        grade: "High-Wear",
-        note: "Higher carbide grade for abrasive aggregate and long shifts.",
+        grade: "Aşınmaya Dayanıklı",
+        note: "Aşındırıcı agrega ve uzun vardiyalar için daha yüksek karbür kalitesi.",
       },
       {
-        grade: "High-Efficiency Pitch",
-        note: "Optimised spiral pitch for faster, more even hot-mix conveying.",
+        grade: "Yüksek Verimli Adım",
+        note: "Daha hızlı ve daha düzgün sıcak karışım taşıma için optimize edilmiş spiral aralığı.",
       },
       {
-        grade: "OEM-Pattern",
-        note: "Pitch and mount matched to a specific plant's shaft.",
+        grade: "OEM Deseni",
+        note: "Belirli bir tesisin şaftına uygun olarak ayarlanmış ve monte edilmiş.",
       },
     ],
     relatedIds: [
@@ -1301,11 +1329,12 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-scraper",
-    name: "Asphalt Scraper (W-Type)",
-    fullName: "Asphalt Mixing Plant Scraper Blade (W-Type, Hot-Mix)",
+    name: "Asfalt Kazıyıcı (W Tipi)",
+    fullName:
+      "Asfalt Karıştırma Tesisi Kazıyıcı Bıçağı (W Tipi, Sıcak Karışım)",
     category: "asphalt_mixing_plant",
     sector: "scraper",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image: "/images/mixer-parts/asphalt-scraper/asphalt-scraper-00.webp",
     gallery: [
       "/images/mixer-parts/asphalt-scraper/asphalt-scraper-00.webp",
@@ -1313,13 +1342,13 @@ export const mixerParts: MixerPart[] = [
       "/images/mixer-parts/asphalt-scraper/asphalt-scraper-02.webp",
     ],
     description:
-      "W-type scraper blade for asphalt pugmills, HB600+ chrome iron — fits Ammann, Marini, Benninghoven, MEKA & Astec. Adjustable mount, bolt-in fit.",
-    seoTitle: "Asphalt Mixer W-Type Scraper Blade — OEM Fit",
+      "Asfalt karıştırıcıları için W tipi sıyırıcı bıçak, HB600+ kromlu demir — Ammann, Marini, Benninghoven, MEKA ve Astec markalarına uyar. Ayarlanabilir montaj, cıvatalı bağlantı.",
+    seoTitle: "Asfalt Karıştırıcı W Tipi Sıyırıcı Bıçak — OEM Uyumlu",
     fullDescription:
-      "The W-type scraper works the floor and lower walls of the pugmill, sweeping hot mix toward the discharge gate so the chamber empties cleanly at the end of each batch. Its W profile reaches the contours an ordinary straight scraper leaves behind.\n\nLet the scraper wear and clearance open up, and hot mix is left to cling, cool and carbonize on the chamber surfaces. That baked-on build-up reduces effective batch volume, can break loose and contaminate later batches, and eventually has to be burned or chipped out during a forced shutdown. A scraper held to its clearance keeps discharge clean and the chamber free of carbon deposits.\n\nSureay W-type scrapers are cast in high-chromium iron above HB 600 for abrasion resistance at mixing temperature, on adjustable mounts so clearance can be reset as they wear. They fit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, with a typical 6-18 month service life depending on output and aggregate hardness.",
+      "W tipi sıyırıcı, karıştırıcının tabanını ve alt duvarlarını temizler; sıcak karışımı boşaltma kapağına doğru süpürerek her partinin sonunda haznenin tamamen boşalmasını sağlar. W şeklindeki profili, sıradan düz bir sıyırıcının geride bıraktığı konturlara ulaşır.\n\nSıyırıcının aşınmasına ve açıklığının genişlemesine izin verilirse, sıcak karışım hazne yüzeylerine yapışır, soğur ve karbonlaşır. Bu yapışmış birikinti, etkili parti hacmini azaltır, koparak sonraki partileri kirletebilir ve sonunda zorunlu bir duruş sırasında yakılması veya kazınarak çıkarılması gerekir. Boşluğu doğru ayarlanmış bir sıyırıcı, boşaltmayı temiz tutar ve hazneyi karbon birikintilerinden arındırır.\n\nSureay W tipi sıyırıcılar, karıştırma sıcaklığında aşınma direnci sağlamak üzere HB 600’ün üzerinde yüksek kromlu demirden dökülür ve aşınmaya bağlı olarak boşluğun yeniden ayarlanabilmesi için ayarlanabilir yuvalara monte edilir. Bu sıyırıcılar, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerle uyumludur; üretim miktarına ve agrega sertliğine bağlı olarak tipik olarak 6-18 aylık bir hizmet ömrüne sahiptir.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-scraper",
-    trustProcess: "Lost-Foam Cast",
-    trustProperty: "HB 600+ Wear Hardness",
+    trustProcess: "Kayıp Köpük Döküm",
+    trustProperty: "HB 600+ Aşınma Sertliği",
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
       lowPrice: 45,
@@ -1327,101 +1356,107 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "High-chromium cast iron",
+        label: "Malzeme",
+        value: "Yüksek kromlu dökme demir",
       },
       {
-        label: "Hardness",
+        label: "Sertlik",
         value: "HB 600-700",
       },
       {
-        label: "Process",
-        value: "Lost foam casting, W-type profile",
+        label: "Süreç",
+        value: "Kayıp köpük döküm, W tipi profil",
       },
       {
-        label: "Application",
-        value: "Pugmill floor & wall cleaning, batch discharge",
+        label: "Başvuru",
+        value: "Pugmill zemin ve duvar temizliği, parti boşaltma",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "w-profile-reach",
-        tag: "GEOMETRY",
-        title: "W-Type Contour Reach",
+        tag: "GEOMETRİ",
+        title: "W Tipi Kontur Ulaşım Mesafesi",
         description:
-          "The W profile follows the floor and lower-wall contours that a straight scraper skips, clearing hot mix from the corners where carbon build-up otherwise starts and spreads.",
+          "W profili, düz bir sıyırıcının atladığı zemin ve duvarın alt kısmındaki konturları takip ederek, aksi takdirde karbon birikiminin başlayıp yayıldığı köşelerden sıcak karışımı temizler.",
       },
       {
         id: "resettable-clearance",
-        tag: "PRECISION",
-        title: "Resettable Hot Clearance",
+        tag: "HASSASİYET",
+        title: "Sıfırlanabilir Acil Boşluk",
         description:
-          "An adjustable mount lets operators hold and reset the floor clearance as the scraper wears - the practical control that keeps discharge clean and the chamber free of baked-on deposits.",
+          "Ayarlanabilir bir montaj sistemi, sıyırıcının aşınmasıyla birlikte operatörlerin zemin açıklığını ayarlayıp sıfırlamasına olanak tanır; bu pratik kontrol özelliği, boşaltma işleminin temiz kalmasını ve haznenin yapışmış birikintilerden arındırılmış olmasını sağlar.",
       },
       {
         id: "high-chrome-hot-edge",
         tag: "WEAR LIFE",
-        title: "HB600+ High-Chrome at Temperature",
+        title: "HB600+ Yüksek Kromlu, Sıcaklıkta",
         description:
-          "Cast in high-chromium iron above HB 600, the W-profile edge resists sharp aggregate at mixing temperature, holding a clean floor clearance that keeps the chamber free of baked-on carbon.",
+          "HB 600'ün üzerinde bir sertliğe sahip yüksek kromlu demirden dökülmüş olan W profilli kenar, karıştırma sıcaklığında keskin agregalara karşı dayanıklıdır ve hazneyi yapışmış karbon birikintilerinden arındıran temiz bir taban açıklığını korur.",
       },
     ],
     faq: [
       {
-        question: "What causes carbon build-up in an asphalt pugmill?",
+        question:
+          "Asfalt karıştırıcısında karbon birikiminin nedenleri nelerdir?",
         answer:
-          "Hot mix left on the floor and walls after discharge cools and carbonizes layer by layer. The usual root cause is a worn scraper or opened-up clearance that no longer clears the chamber. A W-type scraper held to its set clearance sweeps the surfaces clean each cycle and stops deposits forming.",
+          "Boşaltma işleminden sonra zeminde ve duvarlarda kalan sıcak karışım, soğudukça katman katman karbonlaşır. Bunun en yaygın nedeni, aşınmış bir sıyırıcı ya da artık hazneyi temizleyemeyen genişlemiş bir açıklıktır. Ayarlanan açıklığa göre sabit tutulan bir W tipi sıyırıcı, her döngüde yüzeyleri temizler ve birikintilerin oluşmasını engeller.",
       },
       {
-        question: "How often should asphalt mixer scrapers be replaced?",
+        question:
+          "Asfalt karıştırıcı sıyırıcıları ne sıklıkla değiştirilmelidir?",
         answer:
-          "Plan on 6-18 months depending on output and aggregate hardness, and reset clearance regularly in between. A scraper run past its adjustment range leaves residue to carbonize and wears the liner behind it, so renewing on schedule protects neighbouring parts as well as discharge quality.",
+          "Çıkış miktarına ve agrega sertliğine bağlı olarak 6-18 aylık bir süre öngörün ve bu süre zarfında açıklığı düzenli olarak yeniden ayarlayın. Ayar aralığının ötesinde çalışan bir sıyırıcı, karbonlaşacak kalıntılar bırakır ve arkasındaki astarı aşındırır; bu nedenle, zamanında yenileme yapmak hem komşu parçaları korur hem de boşaltım kalitesini güvence altına alır.",
       },
       {
-        question: "Which asphalt mixing plants do your scrapers fit?",
+        question:
+          "Skraperleriniz hangi asfalt karıştırma tesislerine uygundur?",
         answer:
-          "W-type scrapers are supplied for pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, plus generic pugmills. We match the profile and mount to your mixer; scrapers for other plants can be copied from a worn sample.",
+          "W tipi sıyırıcılar, Ammann, Marini, Benninghoven, MEKA ve Astec markalı hamur karıştırıcı ve çift şaftlı tesislerin yanı sıra genel amaçlı hamur karıştırıcılar için tedarik edilmektedir. Sıyırıcıların profilini ve montaj şeklini karıştırıcınıza uyumlu hale getiriyoruz; diğer tesisler için gerekli sıyırıcılar ise aşınmış bir numuneden kopyalanarak üretilebilir.",
       },
       {
-        question: "What is a W3-type asphalt scraper and how is it different?",
+        question:
+          "W3 tipi asfalt kazıyıcı nedir ve diğerlerinden ne farkı vardır?",
         answer:
-          "The W3 profile is a three-lobe contour that follows the pugmill floor and lower-wall corners a straight scraper skips, clearing hot mix from exactly the spots where carbon build-up starts. Other W-profiles and custom shapes are available to suit your chamber.",
+          "W3 profili, karıştırıcı tabanını ve alt duvar köşelerini takip eden üç loblu bir konturdur; düz bir sıyırıcı, karbon birikiminin başladığı noktalardan tam olarak sıcak karışımı temizler. Haznenize uygun diğer W profilleri ve özel şekiller de mevcuttur.",
       },
       {
-        question: "Can the asphalt scraper clearance be reset as it wears?",
+        question:
+          "Asfalt sıyırıcısının boşluğu, aşınmaya bağlı olarak yeniden ayarlanabilir mi?",
         answer:
-          "Yes. Scrapers sit on an adjustable mount so floor clearance can be held and reset over the part's life. Keeping clearance tight is what sweeps the chamber clean each cycle; a scraper run past its adjustment range leaves residue to carbonize and wears the liner behind it.",
+          "Evet. Kazıyıcılar, parçanın kullanım ömrü boyunca zemin açıklığının korunabilmesi ve yeniden ayarlanabilmesi için ayarlanabilir bir montaj parçası üzerine yerleştirilmiştir. Açıklığı dar tutmak, her döngüde hazneyi temizlemenizi sağlar; ayar aralığının ötesine geçen bir kazıyıcı, karbonlaşacak kalıntılar bırakır ve arkasındaki astarı aşındırır.",
       },
       {
-        question: "What material are asphalt mixer scrapers made of?",
+        question:
+          "Asfalt karıştırıcı sıyırıcıları hangi malzemeden yapılmıştır?",
         answer:
-          "Scrapers are cast in high-chromium iron above HB 600 for abrasion resistance at hot-mix temperature, with a precision-finished edge so they hold a clean, repeatable floor clearance.",
+          "Sıyırıcılar, sıcak karışım sıcaklığında aşınma direnci sağlamak üzere HB 600’ün üzerinde bir sertliğe sahip yüksek kromlu demirden dökülür ve temiz, tekrarlanabilir bir zemin boşluğu sağlayabilmeleri için kenarları hassas bir şekilde işlenmiştir.",
       },
     ],
     variants: [
       {
-        grade: "W3 Profile",
-        note: "Three-lobe W contour for maximum pugmill floor and corner reach.",
+        grade: "W3 Profili",
+        note: "Pugmill tabanına ve köşelere maksimum erişim sağlayan üç loblu W konturu.",
       },
       {
-        grade: "High-Precision",
-        note: "Tight-tolerance edge for the cleanest hot-mix discharge.",
+        grade: "Yüksek Hassasiyetli",
+        note: "En temiz sıcak karışım boşaltımı için sıkı toleranslı kenar.",
       },
       {
-        grade: "High-Toughness",
-        note: "Shock-tolerant grade for coarse or recycled aggregate.",
+        grade: "Yüksek Dayanıklılık",
+        note: "Kaba veya geri dönüştürülmüş agrega için darbeye dayanıklı sınıf.",
       },
       {
-        grade: "Corrosion-Resistant",
-        note: "Added resistance for additive-heavy or high-moisture mixes.",
+        grade: "Korozyona Dayanıklı",
+        note: "Katkı maddesi içeriği yüksek veya nem oranı yüksek karışımlar için ek direnç.",
       },
       {
-        grade: "OEM-Match",
-        note: "Profile and mount cut to a specific plant on request.",
+        grade: "OEM Uyumu",
+        note: "Talep üzerine belirli bir bitkiye göre profil ve destek kesilir.",
       },
     ],
     relatedIds: [
@@ -1434,26 +1469,27 @@ export const mixerParts: MixerPart[] = [
   },
   {
     id: "asphalt-sealing",
-    name: "Asphalt Sealing Element",
-    fullName: "Asphalt Mixing Plant Shaft Sealing Element (High-Temp)",
+    name: "Asfalt Sızdırmazlık Elemanı",
+    fullName:
+      "Asfalt Karıştırma Tesisi Mil Sızdırmazlık Elemanı (Yüksek Sıcaklık)",
     category: "asphalt_mixing_plant",
     sector: "seal",
-    categoryDisplay: "Asphalt Mixing Plant",
+    categoryDisplay: "Asfalt Karıştırma Tesisi",
     image: "/images/mixer-parts/asphalt-sealing/asphalt-sealing-00.webp",
     gallery: [
       "/images/mixer-parts/asphalt-sealing/asphalt-sealing-00.webp",
       "/images/mixer-parts/asphalt-sealing/asphalt-sealing-01.webp",
       "/images/mixer-parts/asphalt-sealing/asphalt-sealing-02.webp",
     ],
-    badge: "Hot-Mix",
+    badge: "Sıcak Karışım",
     badgeColor: "orange",
     description:
-      "Asphalt mixing plant sealing element - high-temp shaft seal that keeps hot bitumen, dust and moisture from reaching the pugmill bearings.",
+      "Asfalt karıştırma tesisi sızdırmazlık elemanı - sıcak bitüm, toz ve nemin pugmill yataklarına ulaşmasını önleyen yüksek sıcaklık şaft contası.",
     fullDescription:
-      "The sealing element closes the gap where each mixing shaft passes through the pugmill end, working at sustained high temperature against hot bitumen, mineral dust and the moisture that flashes off the aggregate. It keeps that mix inside the chamber and away from the shaft bearings.\n\nHeat is what makes this seal a wear part: an under-spec element hardens and cracks, and once it does, hot bitumen and fine dust track straight into the bearing housing. Contaminated bearings run hot, seize, and can stop a plant mid-batch - an emergency repair on a machine that has to keep hot mix moving to stay on grade.\n\nSureay sealing elements are built from heat-resistant sealing materials and dimensioned to the shaft and housing of the listed plants, so they seat correctly and hold their seal through the temperature cycle. They suit pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, and are best renewed whenever the shaft is opened for blade or arm work.",
+      "Sızdırmazlık elemanı, her bir karıştırma milinin pugmill ucundan geçtiği boşluğu kapatır ve sürekli yüksek sıcaklıkta çalışarak sıcak bitüm, mineral tozu ve agregadan buharlaşan neme karşı direnç gösterir. Bu eleman, karışımı haznenin içinde tutar ve mil yataklarından uzak tutar.\n\nIsı, bu contayı bir aşınma parçası haline getirir: spesifikasyonların altında kalan bir eleman sertleşir ve çatlar; bu gerçekleştiğinde, sıcak bitüm ve ince toz doğrudan yatak yuvasına girer. Kirlenmiş yataklar aşırı ısınır, sıkışır ve tesisin üretim sürecini yarıda durdurabilir; bu da, kalite standartlarını korumak için sıcak karışımı sürekli hareket halinde tutması gereken bir makinede acil onarım gerektirir.\n\nSureay sızdırmazlık elemanları, ısıya dayanıklı sızdırmazlık malzemelerinden üretilir ve listelenen tesislerin şaftı ile yuvasına göre boyutlandırılır; böylece doğru şekilde oturur ve sıcaklık döngüsü boyunca sızdırmazlığını korur. Bu sızdırmazlık elemanları, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerle uyumludur ve en iyi şekilde, bıçak veya kol çalışmaları için şaft açıldığında yenilenmelidir.",
     link: "/mixer-wear-parts/asphalt-mixing-plant/asphalt-sealing",
-    trustProcess: "Precision-Molded",
-    trustProperty: "Heat-Resistant, Leak-Tight Seal",
+    trustProcess: "Hassas Kalıplama",
+    trustProperty: "Isıya Dayanıklı, Sızdırmaz Conta",
     compatibleMachines: ["Ammann", "Marini", "Benninghoven", "MEKA", "Astec"],
     offers: {
       lowPrice: 25,
@@ -1461,97 +1497,103 @@ export const mixerParts: MixerPart[] = [
     },
     specs: [
       {
-        label: "Material",
-        value: "Heat-resistant sealing material",
+        label: "Malzeme",
+        value: "Isıya dayanıklı sızdırmazlık malzemesi",
       },
       {
-        label: "Hardness",
-        value: "Hot-service compression grade (not a cast wear face)",
+        label: "Sertlik",
+        value: "Sıcak hizmet sıkıştırma sınıfı (döküm aşınma yüzeyi değildir)",
       },
       {
-        label: "Process",
-        value: "Formed to shaft & housing dimensions",
+        label: "Süreç",
+        value: "Mil ve yuva boyutlarına göre şekillendirilmiş",
       },
       {
-        label: "Application",
-        value: "High-temp shaft sealing, bitumen/dust/moisture containment",
+        label: "Başvuru",
+        value: "Yüksek sıcaklıkta mil sızdırmazlığı, bitüm/toz/nem tutma",
       },
       {
-        label: "OEM Fit",
-        value: "Ammann, Marini, Benninghoven, MEKA, Astec, generic pugmill",
+        label: "OEM Uyumluluğu",
+        value: "Ammann, Marini, Benninghoven, MEKA, Astec, markasız pugmill",
       },
     ],
     components: [
       {
         id: "heat-hold",
-        tag: "SEALING",
-        title: "Holds Its Seal Through the Heat Cycle",
+        tag: "SIZDIRMAZLIK",
+        title: "Isıl döngü boyunca sızdırmazlığını korur",
         description:
-          "Built from heat-resistant sealing materials, the element keeps hot bitumen and dust inside the chamber instead of hardening and cracking the way an ordinary seal does after a few production cycles.",
+          "Isıya dayanıklı sızdırmazlık malzemelerinden üretilen bu eleman, sıcak bitüm ve tozu haznenin içinde tutar; böylece sıradan bir sızdırmazlık elemanının birkaç üretim döngüsünden sonra sertleşip çatlaması gibi bir durum yaşanmaz.",
       },
       {
         id: "bearing-guard",
-        tag: "PROTECTION",
-        title: "Keeps Contaminants Off the Bearings",
+        tag: "KORUMA",
+        title: "Rulmanlarda Kirletici Maddelerin Birikmesini Önler",
         description:
-          "By sealing the shaft pass-through, the element stops hot mix, fine dust and moisture from reaching the bearing housing - the contamination path that turns a low-cost seal into a seized-bearing shutdown.",
+          "Mil geçişini sızdırmaz hale getirerek, bu eleman sıcak asfalt karışımının, ince tozun ve nemin rulman yuvasına ulaşmasını engeller – bu kirlilik yolu, düşük maliyetli bir contanın, rulmanın sıkışmasına ve sistemin durmasına neden olabilir.",
       },
       {
         id: "formed-to-plant",
-        tag: "FITMENT",
-        title: "Formed to Shaft & Housing",
+        tag: "UYUM",
+        title: "Şaft ve Muhafaza Üzerinde Şekillendirilmiş",
         description:
-          "Each element is dimensioned to your plant's shaft and housing so it seats correctly and holds its seal through the temperature cycle - send the plant model or a worn seal and we match the size and section.",
+          "Her bir parça, tesisinizin şaftı ve gövdesine göre boyutlandırılmıştır; böylece doğru şekilde oturur ve sıcaklık döngüsü boyunca sızdırmazlığını korur. Tesis modelini veya aşınmış bir contayı bize gönderin; biz de boyut ve kesitini uyumlu hale getirelim.",
       },
     ],
     faq: [
       {
-        question: "Why do asphalt plant shaft seals need to be heat-resistant?",
+        question:
+          "Asfalt tesisi şaft contalarının neden ısıya dayanıklı olması gerekir?",
         answer:
-          "They work at sustained mixing temperature against hot bitumen and dust. An ordinary seal hardens and cracks in that heat, then lets contaminants into the bearings. A heat-resistant sealing element holds its seal through the temperature cycle, which is why it lasts where a standard seal fails.",
+          "Sıcak bitüm ve toza maruz kalarak sürekli karıştırma sıcaklığında çalışırlar. Sıradan bir conta bu ısıda sertleşir ve çatlar, ardından kirletici maddelerin yataklara girmesine yol açar. Isıya dayanıklı bir sızdırmazlık elemanı, sıcaklık döngüsü boyunca sızdırmazlığını korur; bu nedenle standart bir contanın arızalandığı koşullarda bile uzun ömürlüdür.",
       },
       {
-        question: "How often should asphalt mixer sealing elements be changed?",
+        question:
+          "Asfalt karıştırıcısının sızdırmazlık elemanları ne sıklıkla değiştirilmelidir?",
         answer:
-          "Renew them whenever the shaft is opened for blade or arm service, and immediately if you see bitumen weeping at the shaft ends or dust in the bearing grease. Catching a tired seal early is far cheaper than replacing the bearings it protects.",
+          "Bıçak veya kol bakımı için şaft her açıldığında contaları yenileyin; şaft uçlarından bitüm sızması veya yatak gresinde toz görürseniz ise derhal yenileyin. Aşınmış bir contayı erken tespit etmek, koruduğu yatakları değiştirmekten çok daha ucuzdur.",
       },
       {
-        question: "Which asphalt mixing plants do your sealing elements fit?",
+        question:
+          "Sızdırmazlık elemanlarınız hangi asfalt karıştırma tesislerine uyuyor?",
         answer:
-          "Sealing elements are dimensioned to the shaft and housing of pugmill and twin-shaft plants from Ammann, Marini, Benninghoven, MEKA and Astec, plus generic pugmills. Send your plant model or the worn seal and we match the size and section.",
+          "Sızdırmazlık elemanları, Ammann, Marini, Benninghoven, MEKA ve Astec markalı pugmill ve çift şaftlı tesislerin yanı sıra genel amaçlı pugmill’lerin şaft ve gövdelerine göre boyutlandırılmıştır. Tesis modelinizi veya aşınmış contayı bize gönderin; biz de boyut ve kesit uyumu sağlayalım.",
       },
       {
-        question: "What material is an asphalt shaft sealing element made of?",
+        question:
+          "Asfalt şaft sızdırmazlık elemanı hangi malzemeden yapılmıştır?",
         answer:
-          "The element is built from heat-resistant sealing materials chosen to hold their seal at sustained mixing temperature, where an ordinary seal would harden and crack and let hot bitumen and dust into the bearings.",
+          "Bu eleman, sürekli karıştırma sıcaklığında sızdırmazlığını koruyacak şekilde seçilmiş ısıya dayanıklı sızdırmazlık malzemelerinden üretilmiştir; oysa sıradan bir sızdırmazlık elemanı bu sıcaklıkta sertleşip çatlayarak sıcak bitüm ve tozun yataklara girmesine neden olur.",
       },
       {
-        question: "Can you supply asphalt sealing elements from a sample?",
+        question:
+          "Bir numuneye göre asfalt sızdırmazlık elemanları tedarik edebilir misiniz?",
         answer:
-          "Yes. Send a worn element or the shaft and housing dimensions and we supply a matching replacement. Renewing the seal whenever the shaft is opened for blade or arm work is far cheaper than replacing the bearings it protects.",
+          "Evet. Aşınmış parçayı veya mil ile yuvanın boyutlarını bize gönderin; size uygun bir yedek parça temin edelim. Bıçak veya kol ile ilgili çalışmalar için mil her açıldığında contayı yenilemek, contanın koruduğu rulmanları değiştirmekten çok daha ucuzdur.",
       },
       {
-        question: "How do I stop bitumen leaking at the asphalt mixer shaft?",
+        question:
+          "Asfalt karıştırıcı şaftından bitüm sızıntısını nasıl önleyebilirim?",
         answer:
-          "Bitumen weeping at the shaft ends means the sealing element has hardened or cracked in the heat. Replacing it restores the seal and keeps hot mix, dust and moisture out of the bearing housing - contaminated bearings run hot and can stop the plant mid-batch.",
+          "Mil uçlarından bitüm sızması, sızdırmazlık elemanının ısı nedeniyle sertleştiği veya çatladığı anlamına gelir. Bu parçanın değiştirilmesi, sızdırmazlığı yeniden sağlar ve sıcak karışımın, tozun ve nemin yatak muhafazasına girmesini önler – kirlenmiş yataklar aşırı ısınır ve tesisin üretim sürecini parti ortasında durdurabilir.",
       },
     ],
     variants: [
       {
-        grade: "Standard High-Temp",
-        note: "Baseline heat-resistant seal for typical asphalt output.",
+        grade: "Standart Yüksek Sıcaklık",
+        note: "Tipik asfalt üretimi için temel ısıya dayanıklı conta.",
       },
       {
-        grade: "Extended Hot-Service",
-        note: "Higher heat tolerance for plants running long, continuous shifts.",
+        grade: "Genişletilmiş Sıcak Servis",
+        note: "Uzun ve kesintisiz vardiyalarda çalışan bitkiler için daha yüksek ısı dayanıklılığı.",
       },
       {
-        grade: "Dust & Moisture Barrier",
-        note: "Added protection where damp or fine aggregate loads the dust side harder.",
+        grade: "Toz ve Nem Engelleyici",
+        note: "Nemli ortamlarda veya ince agregaların toz tarafına daha fazla yük bindirdiği durumlarda ek koruma sağlanır.",
       },
       {
-        grade: "OEM-Spec Match",
-        note: "Formed to a specific plant's shaft and housing dimensions.",
+        grade: "OEM Spesifikasyonlarına Uygunluk",
+        note: "Belirli bir tesisin şaftı ve gövdesinin boyutlarına göre şekillendirilmiştir.",
       },
     ],
     relatedIds: [
@@ -1568,10 +1610,11 @@ export const mixerCategories: MixerCategory[] = [
   {
     id: "concrete-mixing-plant",
     category: "concrete_mixing_plant",
-    name: "Concrete Mixing Plant Parts",
-    seoTitle: "Concrete Mixer Wear Parts — OEM Replacement (Ni-Hard)",
+    name: "Beton Karıştırma Tesisi Parçaları",
+    seoTitle:
+      "Beton Karıştırıcı Aşınma Parçaları — Orijinal Ekipman Üreticisi (OEM) Yedek Parçaları (Ni-Hard)",
     description:
-      "OEM-fit replacement wear parts for Sicoma, Liebherr & MEKA concrete mixers — arms, liner plates, scrapers in Ni-Hard & high-chrome iron.",
+      "Sicoma, Liebherr ve MEKA beton karıştırıcıları için OEM standartlarına uygun yedek aşınma parçaları — Ni-Hard ve yüksek kromlu demirden üretilmiş kollar, astar plakaları ve sıyırıcılar.",
     image:
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
     link: "/mixer-wear-parts/concrete-mixing-plant",
@@ -1579,11 +1622,11 @@ export const mixerCategories: MixerCategory[] = [
   {
     id: "asphalt-mixing-plant",
     category: "asphalt_mixing_plant",
-    name: "Asphalt Mixing Plant Parts",
+    name: "Asfalt Karıştırma Tesisi Parçaları",
     seoTitle:
-      "Asphalt Mixing Plant Wear Parts — OEM Fit for Ammann, Marini, Benninghoven",
+      "Asfalt Karıştırma Tesisi Aşınma Parçaları — Ammann, Marini ve Benninghoven için OEM Uyumlu",
     description:
-      "Complete asphalt plant wear parts — arms, liners, spiral blades & scrapers for Ammann, Marini, Benninghoven, MEKA, Astec. ISO 9001:2015, factory-direct.",
+      "Ammann, Marini, Benninghoven, MEKA ve Astec markaları için eksiksiz asfalt santrali aşınma parçaları — kollar, astarlar, spiral bıçaklar ve sıyırıcılar. ISO 9001:2015 sertifikalı, fabrikadan doğrudan.",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
     link: "/mixer-wear-parts/asphalt-mixing-plant",
@@ -1592,18 +1635,20 @@ export const mixerCategories: MixerCategory[] = [
 
 export const mixerCompanyFaq: MixerFaq[] = [
   {
-    question: "Is Sureay a direct manufacturer or a trading company?",
+    question: "Sureay doğrudan bir üretici mi yoksa bir ticaret şirketi mi?",
     answer:
-      "We are a direct factory. Most mixer wear parts are cast and machined in-house on our lost-foam and DISA green-sand lines, while sealing components are precision-molded - either way you deal with the people who actually make the parts and skip the trading-company markup.",
+      "Biz doğrudan fabrikayız. Mikserlerin aşınma parçalarının çoğu, kayıp köpük ve DISA yeşil kum hatlarımızda tesis içinde döküm ve işleme işlemlerinden geçirilirken, sızdırmazlık bileşenleri ise hassas kalıplama yöntemiyle üretilir – her iki durumda da parçaları fiilen üreten kişilerle doğrudan iş yaparsınız ve ticaret şirketlerinin kâr marjını ortadan kaldırırsınız.",
   },
   {
-    question: "Can you supply parts to fit a specific OEM mixer model?",
+    question:
+      "Belirli bir OEM mikser modeline uygun parçalar temin edebilir misiniz?",
     answer:
-      "Yes. Send the plant make and model, or a photo and key dimensions of the worn part, and we match the casting and bolt pattern. We supply OEM-fit replacement wear parts for the major concrete and asphalt plant brands and welcome OEM/ODM work.",
+      "Evet. Tesisin markasını ve modelini ya da aşınmış parçanın bir fotoğrafını ve temel boyutlarını bize gönderin; biz de döküm ve cıvata düzenini buna göre uyarlayalım. Önde gelen beton ve asfalt tesisi markaları için OEM standartlarına uygun yedek aşınma parçaları tedarik ediyoruz ve OEM/ODM işlerini memnuniyetle kabul ediyoruz.",
   },
   {
-    question: "Are you ISO certified and do you ship internationally?",
+    question:
+      "ISO sertifikasına sahip misiniz ve yurt dışına gönderim yapıyor musunuz?",
     answer:
-      "Sureay is ISO 9001:2015 certified and ships factory-direct to over 50 countries. Each order can include a material and hardness report on request.",
+      "Sureay, ISO 9001:2015 sertifikasına sahiptir ve 50’den fazla ülkeye fabrikadan doğrudan sevkiyat yapmaktadır. Her siparişe, talep edilmesi halinde malzeme ve sertlik raporu eklenebilir.",
   },
 ];

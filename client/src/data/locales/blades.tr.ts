@@ -1,23 +1,21 @@
 // AUTO-GENERATED — do not edit by hand.
 // Source:    blades.ts
 // Target:    tr
-// Generated: 2026-09-20T07:45:01.147Z
-// Provider:  manual (scripts/gen-blade-locale.ts)
+// Generated: 2026-09-20T07:59:04.414Z
+// Provider:  deepl (incremental: faqs + components)
 
 import type { Blade } from "../blades";
-
 export const blades: Blade[] = [
   {
     id: "rotary-slitter-knives",
-    name: "Film & Tape Slitter Knives",
-    fullName:
-      "Precision Slitter Knives for Film, Tape & Flexible Packaging Converting",
+    name: "Film ve Bant Kesme Bıçakları",
+    fullName: "Film, Bant ve Esnek Ambalaj İşleme için Hassas Kesme Bıçakları",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Film & Tape Slitter Knives",
+    categoryDisplay: "Film ve Bant Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Best Seller",
+    badge: "En Çok Satanlar",
     badgeColor: "green",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
@@ -25,11 +23,11 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
     ],
     description:
-      "Precision-ground circular slitter blades for BOPP, BOPET & CPP film, PE stretch film, PSA tape & nonwoven converting. ±0.002 mm thickness tolerance, ≤0.02 mm T.I.R. runout. Shear, score & razor profiles in M2 HSS, D2 & ASP23 PM steel with optional TiN & DLC anti-stick coatings. Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery slitter systems.",
+      "BOPP, BOPET ve CPP film, PE streç film, PSA bant ve dokunmamış kumaş işleme uygulamaları için hassas taşlanmış dairesel kesme bıçakları. ±0,002 mm kalınlık toleransı, ≤0,02 mm T.I.R. eksantriklik. M2 HSS, D2 ve ASP23 PM çelikten üretilmiş kesme, çentik ve jilet profilleri; isteğe bağlı TiN ve DLC yapışmayı önleyici kaplamalar. Tidland, Kampf, Atlas ve Dusenbery kesme sistemlerine doğrudan takılabilen OEM uyumlu.",
     fullDescription:
-      "Circular film and tape slitter knives operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400–600 m/min, a slitting blade thickness tolerance error of 0.005 mm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay film and tape slitter blades are manufactured to ±0.002 mm thickness tolerance and ≤20.02 mm total indicated runout (T.I.R.)—tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates—battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners—require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05–0.15 mm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500 m/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60–80%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
+      "Dairesel film ve bant kesme bıçakları, boyutsal hassasiyet ile malzeme biliminin kesiştiği noktada çalışır. BOPP veya BOPET filmin 400–600 m/dk hızında işlendiği bir dönüştürme hattında, bıçak başına 0,005 mm’lik bir kesme bıçağı kalınlık tolerans hatası, çok bıçaklı mil yığını boyunca birikerek gözle görülür kesim genişliği sapmalarına, kenar kıvrılmalarına ve sonraki sarma ve paketleme ekipmanlarını kirleten toz oluşumuna neden olur. Sureay film ve bant kesme bıçakları, ±0,002 mm kalınlık toleransı ve ≤20,02 mm toplam gösterilen salgı (T.I.R.) değerlerinde üretilir; bu toleranslar sadece delik çapında değil, tüm üretim çapı boyunca geçerlidir.\n\nAlaşım seçimi, uygulamaya göre belirlenir. Kaplamalı kağıt ve kraft kartonun standart işlenmesinde 52100 rulman çeliği veya D2 soğuk iş takım çeliği kullanılır. Aşındırıcı alt tabakalar — elektrikli araç (EV) lityum hücreleri için pil sınıfı alüminyum ve bakır elektrot folyoları, cam elyaf takviyeli ambalajlar, silikon kaplı ayırma tabakaları — kabul edilebilir kenar ömrü için ASP23 veya ASP52 toz metalurjisi (PM) çeliği veya katı karbür gerektirir. Esnek plastik filmler (BOPP, BOPET, CPP, PE streç film), yapışkan film aktarımını önlemek ve sürtünmeden kaynaklanan tabaka ısınmasını azaltmak için isteğe bağlı TiN veya DLC PVD yüzey kaplamalı M2 HSS bıçaklarla rutin olarak işlenir.\n\n## Kesme Yöntemine Göre\n\n**Kesme Yöntemi (Eşleşmiş Üst ve Alt Bıçak Çiftleri):** Çukurlu üst bıçak ile oluklu alt örs bıçağı arasındaki makas hareketi, şerit üzerinde sıfır çekme yükü ile temiz bir kesim sağlar. Bıçaklar arası boşluk genellikle 0,05–0,15 mm olarak ayarlanır (alt tabakaya bağlı olarak); taşlama toleranslarımız, bu boşluğun tüm kesme genişliği boyunca tutarlı olmasını sağlar. Kenar deformasyonunun kabul edilemez olduğu kağıt, dokunmamış kumaşlar ve hafif esnek filmler için hayati önem taşır.\n\n**Ezme/Çentik Kesme (Lastik Örs Silindirine Karşı Dairesel Bıçak):** Sertleştirilmiş, keskin kenarlı bir bıçak, kontrollü sertlikte bir lastik örse karşı basınca duyarlı yapışkan laminat, köpük veya çok katmanlı ambalaj ağını deler. Kesici bıçak profili geometrisi ve eğim açısı, kesilen kenarda yapıştırıcının dışarı sızmasını ve tabakaların ayrılmasını önlemek için alt tabakaya göre optimize edilmiştir. Basınca duyarlı bant, köpük kalıp kesimi ve tıbbi ambalajların ayrılması için standart seçimdir.\n\n**Jilet Kesimi (Serbest Yüzen veya Sabit Tek Bıçak):** Ultra keskin, ince profilli bıçaklar, 500 m/dk'nın üzerindeki hızlarda döküm film ekstrüzyon hatlarından, yönlendirilmiş film hatlarından ve dokunmamış spunbond üretiminden kenar atıklarını keser. Bıçak geometrisi, minimum şerit sürtünmesi ve maksimum kenar temizliği sağlayacak şekilde optimize edilmiştir; bu sayede, yüksek hızlı hatlarda şerit kopmalarına neden olan kenar kıvrılması ve elektrostatik deşarj önlenir.\n\n## Malzeme ve Sektöre Göre\n\n**Esnek Ambalaj Filmleri:** BOPP, BOPET, CPP, PE/PP streç film, büzüşen kılıf. Yüksek hızlı film dilimleme, bıçağın sallanmasından kaynaklanan web gerginliği artışlarını önlemek için hassas devrilme kontrolü gerektirir. İsteğe bağlı DLC kaplamalı M2 HSS, bıçak yüzeyinde film transferi yapışmasını ortadan kaldırır.\n\n**Dokumasız Kumaşlar ve Tıbbi Kumaşlar:** Spunbond PP, meltblown, SMS tıbbi kumaşlar, HEPA filtre malzemeleri. Özel tırmık açıları, yüksek hat gerilimlerinde gevşek yapılı malzemelerin kesilmesi sırasında liflerin yıpranmasını ve web kaymasını önler.\n\n**Basınca Duyarlı Bantlar ve Etiketler:** Maskeleme bandı, koli bandı, çift taraflı köpük bant, etiket stoğu, transfer yapıştırıcısı. TiN ve Teflon yapışma önleyici kaplamalar, temizlik sıklığını %60–80 oranında azaltarak en zorlu bant kesme uygulamalarında Değiştirme Arası Ortalama Süreyi (MTBF) uzatır.",
     disambiguation:
-      "Running paper, tissue or board instead of film? See our [Paper Slitter Knives](/products/rotary-slitter-knives-paper) page for shear clearance data and regrind intervals on cellulose substrates.",
+      "Film yerine kağıt, kağıt mendil veya karton mu işliyorsunuz? Selüloz alt tabakalar için kesme açıklığı verileri ve yeniden bileme aralıkları hakkında bilgi almak için [Kağıt Kesme Bıçakları](/products/rotary-slitter-knives-paper) sayfamıza göz atın.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -72,33 +70,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "multi-material-compatibility",
-        tag: "METALLURGY",
-        title: "Application-Specific Tool Steels",
+        tag: "METALURJİ",
+        title: "Uygulamaya Özel Takım Çelikleri",
         description:
-          "Material matched to your web. 52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery.",
+          "Webinize uygun malzeme. Standart ambalaj filmi astarları ve kaplamalı alt tabakalar için 52100 karbon çeliği; aşındırıcı plastik filmler için M2 HSS; silika kaplı ayırma astarları ve cam elyaf takviyeli laminatlar için ASP23 PM veya katı karbür. Her kalite stokta mevcuttur ve hızlı teslimat için OEM siparişlerine hazırdır.",
       },
       {
         id: "advanced-coating-systems",
-        tag: "EDGE RETENTION",
-        title: "Anti-Stick PVD Coatings",
+        tag: "KENAR TUTUNMASI",
+        title: "Yapışmayı Önleyici PVD Kaplamalar",
         description:
-          "TiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting. Lower friction means cooler running, longer edge life, and fewer cleaning stops per shift.",
+          "TiN ve DLC kaplamaları, yüzey yapışmasını %80’e varan oranda azaltarak, PSA bant ve yapışkanlı laminat kesim işlemleri sırasında bıçak yüzeylerinde yapışkan birikmesini ortadan kaldırır. Sürtünmenin azalması, daha az ısınma, daha uzun kesici kenar ömrü ve vardiya başına daha az temizlik molası anlamına gelir.",
       },
       {
         id: "five-cutting-applications",
-        tag: "PROCESS CAPABILITY",
-        title: "Optimized Edge Geometries",
+        tag: "ÜRETİM YETENEKLERİ",
+        title: "Optimize Edilmiş Kenar Geometrileri",
         description:
-          "Single bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim. Profiled for your line speed and web tension — specify cutting method and substrate and we match the geometry.",
+          "Kesme çiftleri, ezme/çentikleme örs kesimi ve jilet kesimi için tasarlanmış tek eğimli, çift eğimli ve keskin olmayan kenarlı profiller. Hat hızınıza ve şerit geriliminize göre profillenmiştir — kesme yöntemini ve alt tabakayı belirtin, biz de geometriyi buna göre ayarlayalım.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Type / Application",
+      col0: "Bıçak Türü / Kullanım Alanı",
       col1: "OD (mm)",
       col2: "ID (mm)",
-      col3: "Thickness (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard shear-pair dimensions. Top (dished) and bottom (anvil groove) blades supplied as matched pairs. Custom OD / ID and groove profiles on request.",
+        "* Standart kesme çifti boyutları. Üst (çukurlu) ve alt (örs oluğu) bıçaklar, birbirine uygun çiftler halinde tedarik edilir. Talep üzerine özel dış çap / iç çap ve oluk profilleri.",
     },
     standardDimensions: [
       {
@@ -153,89 +151,92 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What thickness tolerance should I specify for blades on a multi-knife arbor stack?",
+            "Çok bıçaklı mil yığını üzerindeki bıçaklar için hangi kalınlık toleransını belirtmeliyim?",
           answer:
-            "For shear slitting of flexible films and foils, specify ±0.002 mm thickness tolerance and ≤20.02 mm T.I.R. runout. A 0.005 mm error per blade compounds across a 12-knife stack, producing visible slit-width deviation and web tension spikes. We grind every blade to these tolerances and verify on a CMM before dispatch.",
+            "Esnek filmlerin ve folyoların kesme yırtma işlemi için ±0,002 mm kalınlık toleransı ve ≤20,02 mm T.I.R. eksantrikliği belirtiniz. Her bir bıçak başına 0,005 mm'lik bir hata, 12 bıçaklık bir yığın boyunca birikerek gözle görülür kesim genişliği sapmalarına ve şerit gerginliğinde ani artışlara neden olur. Her bıçağı bu toleranslara göre taşlayarak, sevkiyat öncesinde bir CMM üzerinde kontrol ediyoruz.",
         },
         {
           question:
-            "What is ‘over-speed ratio’ for top/bottom shear knives and why does it matter?",
+            "Üst/alt kesme bıçakları için “aşırı hız oranı” nedir ve neden önemlidir?",
           answer:
-            "Over-speed ratio is the intentional rotational speed differential between the top knife arbor and bottom anvil arbor—typically set at 2–5% above web speed. This differential creates a micro-shear action at the cut point, producing a cleaner edge and reducing heat build-up versus a purely tangential cut. At higher over-speed ratios cut quality improves but edge wear accelerates; at zero differential the blade acts more like a crush cutter. Your slitter OEM specifies the designed over-speed ratio; we supply matched pairs optimized for that setting.",
+            "Aşırı hız oranı, üst bıçak mili ile alt örs mili arasındaki kasıtlı dönme hızı farkıdır; genellikle şerit hızının %2–5 üzerinde ayarlanır. Bu fark, kesim noktasında mikro kesme etkisi yaratarak, tamamen teğetsel bir kesime kıyasla daha temiz bir kenar elde edilmesini sağlar ve ısı birikimini azaltır. Daha yüksek aşırı hız oranlarında kesim kalitesi artar ancak kenar aşınması hızlanır; fark sıfır olduğunda bıçak daha çok bir ezme kesici gibi davranır. Dilimleyici OEM’iniz tasarlanan aşırı hız oranını belirler; biz de bu ayar için optimize edilmiş uyumlu çiftleri tedarik ederiz.",
         },
         {
           question:
-            "How do I prevent adhesive film transfer and build-up on slitter blade faces?",
+            "Kesme bıçağı yüzeylerinde yapışkan filmin bulaşmasını ve birikmesini nasıl önleyebilirim?",
           answer:
-            "Adhesive build-up on blade faces increases friction, raises web temperature, and causes material transfer contamination. We offer TiN (titanium nitride) and DLC (diamond-like carbon) PVD coatings that reduce surface adhesion by up to 80%, extending clean-running intervals on pressure-sensitive tape and adhesive laminate slitting applications.",
+            "Bıçak yüzeylerinde biriken yapışkan madde sürtünmeyi artırır, şerit sıcaklığını yükseltir ve malzeme transferi kaynaklı kirlenmeye neden olur. Yüzey yapışmasını %80'e kadar azaltan TiN (titanyum nitrür) ve DLC (elmas benzeri karbon) PVD kaplamaları sunuyoruz; bu kaplamalar, basınca duyarlı bant ve yapışkan laminat kesme uygulamalarında temiz çalışma aralıklarını uzatır.",
         },
         {
           question:
-            "When should I upgrade from D2 to powder-metallurgy (PM) steel for flexible film slitting?",
+            "Esnek film kesimi için D2’den toz metalurjisi (PM) çeliğine ne zaman geçmeliyim?",
           answer:
-            "PM steel (ASP23, ASP52) is recommended when slitting highly abrasive flexible substrates such as fiberglass-reinforced packaging films, silica-coated release liners, or ceramic-filled barrier films. These materials exceed the abrasion ceiling of D2 within a single production run due to hard mineral filler particles. PM grades deliver uniform carbide distribution and 50–80% longer edge life on highly abrasive flexible substrates.",
+            "Fiberglas takviyeli ambalaj filmleri, silika kaplamalı ayırma tabakaları veya seramik dolgulu bariyer filmleri gibi aşındırıcılığı yüksek esnek alt tabakaların kesilmesi sırasında PM çeliği (ASP23, ASP52) kullanılması önerilir. Bu malzemeler, sert mineral dolgu parçacıkları nedeniyle tek bir üretim döngüsü içinde D2 aşındırma sınırını aşmaktadır. PM sınıfları, yüksek aşındırıcı esnek alt tabakalarda homojen karbür dağılımı ve %50–80 daha uzun kesici kenar ömrü sağlar.",
         },
         {
           question:
-            "What surface coating is best for slitting pressure-sensitive adhesive tapes at high speed?",
+            "Basınca duyarlı yapışkan bantları yüksek hızda kesmek için en uygun yüzey kaplaması hangisidir?",
           answer:
-            "DLC (diamond-like carbon) PVD coating is the top specification for double-coated foam tape and transfer adhesive slitting. It reduces contact angle on the blade face by approximately 35° versus uncoated D2, maintaining consistent slip through 8–12 hour production runs without cleaning stops. TiN is effective for single-faced masking tape and lightly adhesive label stock at a lower coating cost.",
+            "DLC (elmas benzeri karbon) PVD kaplama, çift taraflı kaplamalı köpük bant ve transfer yapıştırıcılı şerit kesim işlemleri için en üst düzey teknik özelliktir. Kaplamasız D2’ye kıyasla bıçak yüzeyindeki temas açısını yaklaşık 35° azaltır ve temizlik molaları olmaksızın 8–12 saatlik üretim süreçleri boyunca tutarlı kayma özelliğini korur. TiN, daha düşük kaplama maliyetiyle tek yüzlü maskeleme bandı ve hafif yapışkanlı etiket malzemeleri için etkilidir.",
         },
         {
           question:
-            "Can Sureay supply matched top and bottom knife pairs verified to a specified shear clearance?",
+            "Sureay, belirtilen kesme açıklığına göre doğrulanmış, birbiriyle uyumlu üst ve alt bıçak çiftleri tedarik edebilir mi?",
           answer:
-            "Yes. Matched shear pairs—dished top blade and grooved anvil bottom blade—are supplied with knife-to-knife clearance pre-verified against your substrate specification. We record OD, ID, thickness, and designed shear clearance for each matched pair on an engineering data sheet that ships with the tooling, allowing line operators to replicate the clearance setting on every reinstallation.",
+            "Evet. Eşleştirilmiş kesme çiftleri — bombeli üst bıçak ve oluklu örs alt bıçağı — alt tabaka spesifikasyonunuza göre önceden doğrulanmış bıçak-bıçak açıklığıyla birlikte tedarik edilir. Her eşleştirilmiş çift için dış çap (OD), iç çap (ID), kalınlık ve tasarlanmış kesme açıklığını, takımla birlikte gönderilen mühendislik veri sayfasında kaydederiz; böylece hat operatörleri, her yeniden kurulumda bu açıklık ayarını aynı şekilde uygulayabilirler.",
         },
         {
           question:
-            "What blade edge geometry is recommended for slitting meltblown nonwoven fabric without fiber fraying?",
+            "Elyafların yıpranmaması için eritilerek üflenmiş dokunmamış kumaşın kesilmesinde hangi bıçak kenarı geometrisi önerilir?",
           answer:
-            "For meltblown and spunbond nonwoven fabrics (8–80 GSM), specify a positive rake angle (15°–20°) with Ra ≤0.4 μm surface finish. This geometry shears through the loose fiber structure cleanly without lateral fiber displacement that causes frayed edges. For very lightweight meltblown (<15 GSM), an optional ESD (electrostatic discharge) coating prevents static-induced fiber attraction to the blade face.",
+            "Eritilerek üflenmiş (meltblown) ve eğrilerek bağlanmış (spunbond) dokunmamış kumaşlar (8–80 GSM) için, Ra ≤0,4 μm yüzey pürüzlülüğüne sahip pozitif eğim açısı (15°–20°) belirtin. Bu geometri, kenarların yıpranmasına neden olan yanal lif kayması olmaksızın gevşek lif yapısını temiz bir şekilde keser. Çok hafif meltblown (<15 GSM) kumaşlar için, isteğe bağlı bir ESD (elektrostatik deşarj) kaplama, statik elektrik nedeniyle liflerin bıçak yüzeyine yapışmasını önler.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisiyiz. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı döven ve taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "What makes Sureay’s heat treatment different from cheaper alternatives?",
+            "Sureay’in ısıl işlem modelini daha ucuz alternatiflerden ayıran nedir?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Standart su verme işleminden farklı olarak, her bir Sureay bıçağı vakumla sertleştirme işleminden sonra derin kriyojenik işleme tabi tutulur. Bu işlem, kalıntı östeniti martensite dönüştürerek aşınma direncini %40’a kadar artırır ve kesici kenarın tamamında homojen bir sertlik sağlar.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek bıçaklar genellikle 48 saat içinde sevk edilir. Özel profillerin teslimatı ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Sureay hangi kalite sertifikalarına sahiptir ve malzeme test raporlarını sağlayabilir misiniz?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences—no tooling commitment until fit is confirmed.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyatta bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası bulunur. OEM onay süreci için, talep üzerine eksiksiz CMM boyutsal raporları ve çelik fabrikası sertifikaları temin edilebilir.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makineye uyum doğrulaması ve kesici kenar ömrü testi için numune setleri (genellikle 2–5 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür. Özel profiller için, tam üretime geçilmeden önce boyut onay numuneleri üretilir; uyum teyit edilene kadar kalıp taahhüdü söz konusu değildir.",
         },
       ],
     },
   },
   {
     id: "rotary-slitter-knives-paper",
-    name: "Paper Slitter Knives",
-    fullName: "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
+    name: "Kağıt Kesme Bıçakları",
+    fullName:
+      "Yüksek Hızlı İşleme Hatları için Kağıt ve Kağıt Mendil Kesme Bıçakları",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Paper Slitter Knives",
+    categoryDisplay: "Kağıt Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Paper Converting",
+    badge: "Kağıt İşleme",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
@@ -243,18 +244,18 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
     ],
     galleryAlts: [
-      "Circular paper slitter knife with dished shear profile and precision-ground bore",
-      "Matched top and bottom paper slitter knife pair for shear cutting",
-      "Paper converting line with rotary slitter knives scoring and slitting the web",
+      "Çukurlu kesme profiline ve hassas taşlanmış deliğe sahip dairesel kağıt kesme bıçağı",
+      "Kesme işlemi için birbiriyle uyumlu üst ve alt kağıt kesme bıçağı çifti",
+      "döner dilimleme bıçakları ile kağıt şeritlerinin çentiklenmesi ve kesilmesini sağlayan kağıt işleme hattı",
     ],
     description:
-      "Paper slitter knives ground for cellulose, not repurposed from film tooling. Matched top and bottom shear pairs in D2, M2 HSS or 52100, held to ±0.002mm on thickness and ≤0.02mm runout, with clearance pre-set to the substrate you are running: 0.02–0.05mm for tissue, 0.05–0.10mm for kraft. Rated to 600 m/min on tissue lines. Send a drawing, a worn blade or just your machine model and we will confirm fitment.",
+      "Selüloz için taşlanmış kağıt kesme bıçakları; film kalıplarından yeniden uyarlanmış değildir. D2, M2 HSS veya 52100 malzemelerinden üretilmiş, kalınlık ±0,002 mm ve eksantriklik ≤0,02 mm sınırları içinde tutulmuş, kullandığınız alt tabakaya göre önceden ayarlanmış boşluklu: kağıt mendil için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm. Kağıt mendil hatlarında 600 m/dk hıza uygun. Bir çizim, aşınmış bir bıçak veya sadece makinenizin modelini gönderin, uygunluğunu teyit edelim.",
     fullDescription:
-      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with a slotted groove profile that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
+      "Kağıt işleme hatları, çok vardiyalı üretim süreçleri boyunca tutarlı ve lif tozu içermeyen kesimler sağlayan dilimleme bıçaklarına ihtiyaç duyar. Sureay kağıt sınıfı döner dilimleme bıçakları bıçakları, bıçağın sallanmasını önleyen ve homojen bir kesim kalitesi sağlayan titiz boyutsal toleranslara göre D2 takım çeliğinden (standart kağıt ve karton için) veya M2 yüksek hız çeliğinden (yüksek hızlı kağıt mendil ve özel kağıtlar için) hassas bir şekilde taşlanarak üretilir.\n\n## Kağıda Özgü Metalurji\n\nPlastik film veya metal folyo kesiminden farklı olarak, kağıt işleme sürecinde bıçak kenarı, selüloz lifleri, yapıştırma maddeleri ve mineral dolgu maddeleri (kalsiyum karbonat, kaolin) nedeniyle sürekli aşındırıcı yıpranmaya maruz kalır. Bıçak alaşımlarını özellikle kağıt uygulamaları için seçeriz:\n\n**D2 Takım Çeliği (HRC 60–62):** Kraft kağıt, kutu kartonu ve oluklu mukavva işleme için standart sınıftır. %12 krom içeriği, lignin bakımından zengin liflere ve mineral dolgu bileşiklerine karşı mükemmel aşınma direnci sağlar.\n\n**M2 Yüksek Hızlı Çelik (HRC 62–64):** Hat hızlarının 400 m/dk'yı aştığı yüksek hızlı kağıt mendil ve hijyenik kağıt işleme uygulamaları için tercih edilir. Molibden ve tungsten karbürs, ultra yüksek hızlı kesimin neden olduğu termal gerilim altında bıçak kenarı geometrisini korur.\n\n**52100 Rulman Çeliği (HRC 58–60):** Aşınma oranlarının orta düzeyde olduğu standart gazete kağıdı, dergi kağıdı ve düşük kaliteli geri dönüştürülmüş elyaf işleme uygulamaları için uygun maliyetli bir seçenektir.\n\n**Tungsten Karbür (Katı veya Karbür Uçlu):** Mineral dolgu maddelerinin çelik kenarı değiştirme aralıkları arasında hızla aşındırdığı yüksek kül içerikli kaplamalı kağıt, sanat kağıdı ve oluklu mukavva işleme uygulamaları için bir üst seviye seçenektir. Daha küçük çaplı bıçaklarda katı karbür olarak veya tam karbür gövdenin maliyet açısından uygun olmadığı daha büyük çaplı bıçaklarda karbür uçlu (çelik gövdeye lehimlenmiş karbür kenar) olarak tedarik edilir.\n\n## Kağıt Kesiminde Kesme ve Ezme Yöntemleri\n\nKağıt işleme sektöründe iki temel dilme yöntemi kullanılır:\n\n**Kesme Dilme (Üst/Alt Bıçak Çiftleri):** Zıt yönlerde dönen iki dairesel bıçaklar bıçağı, makas benzeri bir kesme hareketi oluşturur. Bu, lif çekilmesinin ve toz oluşumunun en aza indirilmesi gereken kuşe kağıtlar, kağıt mendil ve hafif ambalaj kağıtları için standart yöntemdir. Kontrollü kesme boşluğuna sahip eşleştirilmiş çiftler sunmaktayız (genellikle kağıt mendil için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm).\n\n**Ezme Kesimi (Bıçak-Örs Yöntemi):** Sertleştirilmiş dairesel bir bıçak, kağıt şeridini oluklu bir örs silindirine karşı ezerek keser. Kesme açıklığının korunmasının pratik olmadığı ağır oluklu mukavva ve çok katlı ambalaj malzemeleri için kullanılır. Örs bıçağı (alt konum), kağıt liflerini sıkıştıran ve kıran oluklu bir profille üretilir.\n\n## Lif Tozu Üretmeyen Performans\n\nKesim kenarında oluşan lif tozu, kağıt fabrikasındaki sarma istasyonlarını kirletir, kağıt mendil ve hijyenik kağıt türlerinde ürün kalitesini düşürür ve plan dışı temizlik duruşlarına neden olur. Kağıt sınıfı kesme bıçaklarımız, Ra 0,2–0,4 μm yüzey kalitesine ulaşacak şekilde hassas bir şekilde taşlanmıştır ve kontrollü kenar eğim açıları sayesinde selüloz lif demetlerini yırtmak veya çekmek yerine temiz bir şekilde keser. Bu, standart endüstriyel bıçak sınıflarına kıyasla havadaki lif tozunu yaklaşık %60–70 oranında azaltır.",
     disambiguation:
-      "Slitting film, tape or flexible packaging? Those blades are on our [Film & Tape Slitter Knives](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
+      "Film, bant veya esnek ambalaj kesimi mi yapıyorsunuz? Bu bıçaklar, [Film ve Bant Kesme Bıçakları](/products/rotary-slitter-knives) sayfamızda yer almaktadır. Bu sayfa yalnızca kağıt alt tabakaları kapsamaktadır.",
     categoryCardAnchorText:
-      "Paper Slitter Knives — tissue, kraft & coated paper",
+      "Kağıt Kesme Bıçakları — kağıt mendil, kraft kağıt ve kaplamalı kağıt",
     link: "/products/rotary-slitter-knives-paper",
     isFeatured: false,
     compatibleMachines: [
@@ -298,73 +299,73 @@ export const blades: Blade[] = [
     components: [
       {
         id: "paper-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "Which steel grade should paper slitter knives use?",
+        tag: "MALZEME BİLİMİ",
+        title: "Kağıt kesme bıçaklarında hangi çelik kalitesi kullanılmalıdır?",
         description:
-          "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.",
+          "Kağıt lifleri, standart bıçak çeliklerini hızla köreltmeye neden olan aşındırıcı mineral dolgu maddeleri (kalsiyum karbonat, kaolin, titanyum dioksit) içerir. D2 ve M2 HSS kalitelerimiz, kağıt işleme uygulamaları için özel olarak ısıl işleme tabi tutulmuştur ve kaplamalı ve dolgulu kağıt yüzeylerde genel amaçlı kesme bıçaklarına kıyasla %40–60 daha uzun kesici kenar ömrü sunar.",
       },
       {
         id: "shear-clearance",
-        tag: "CUTTING PRECISION",
-        title: "What shear clearance stops fibre dust at the slit edge?",
+        tag: "KESME HASSASİYETİ",
+        title: "Yarık kenarında elyaf tozunu durduran kesme boşluğu nedir?",
         description:
-          "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.",
+          "Eşleştirilmiş üst/alt kesme çifti, doku sınıfı açıklık spesifikasyonlarına göre önceden doğrulanmıştır (ultra ince doku için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm). Bu kontrollü açıklığa sahip makaslar, selüloz lif demetlerini yırtmadan veya sarma istasyonlarını kirleten ve ürün kalitesini düşüren havada asılı lif tozu oluşturmadan temiz bir şekilde keser.",
       },
       {
         id: "bore-locking-options",
-        tag: "MACHINE FIT",
-        title: "What bore, locking, and bevel options are available?",
+        tag: "MAKİNE UYUMU",
+        title: "Hangi delik çapı, kilitleme ve eğim seçenekleri mevcuttur?",
         description:
-          "Paper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses. Top blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original.",
+          "Kağıt kesme bıçakları, milinize uyacak şekilde düz, oluklu veya bayonet deliğiyle sevk edilir ve kesme makineniz veya sarma makineniz hangisini kullanıyorsa ona göre oluklu, ayar vidası, oluklu eksantrik veya oluksuz eksantrik sıkıştırma yöntemiyle yerine sabitlenir. Üst bıçaklar, 15°–20°'lik tek eğimli çukurlu bir profille taşlanmıştır; kenar dayanıklılığının jilet inceliğindeki bir yaklaşma açısından daha önemli olduğu durumlarda, bileşik (iki aşamalı) eğim veya oyuk taşlanmış arka yüz seçenekleri de mevcuttur. Mevcut bıçağınızın veya milinizin çizimini bize gönderin; çeliği kesmeden önce delik çapını, kilitleme sistemini ve eğimi teyit edelim, böylece yedek bıçak orijinaliyle tam olarak aynı şekilde oturur, kilitlenir ve kesim yapar.",
       },
     ],
     steelGrades: {
       intro:
-        "Paper fibers wear a blade differently than film or foil — the abrasive load comes from mineral fillers in the furnish, not the fiber itself. The grades below cover the range we quote for paper, tissue, and board.",
+        "Kağıt lifleri, bıçağı film veya folyodan farklı bir şekilde aşındırır — aşındırıcı yük, lifin kendisinden değil, ham maddedeki mineral dolgu maddelerinden kaynaklanır. Aşağıdaki sınıflar, kağıt, kağıt mendil ve karton için teklif ettiğimiz aralığı kapsamaktadır.",
       rows: [
         {
-          grade: "D2 Tool Steel",
+          grade: "D2 Takım Çeliği",
           hardness: "HRC 58–61",
           bestFor:
-            "Standard kraft paper, boxboard, and corrugated converting — our default paper grade.",
+            "Standart kraft kağıt, kutu kartonu ve oluklu mukavva işleme — standart kağıt kalitemiz.",
           tradeoff:
-            "Good all-round value; edge life falls off faster than M2 or carbide on heavily filled or coated stock.",
+            "Genel olarak iyi bir fiyat-performans oranı; yoğun dolgulu veya kaplamalı malzemelerde kesici kenar ömrü, M2 veya karbüre göre daha hızlı azalır.",
         },
         {
-          grade: "M2 High-Speed Steel",
+          grade: "M2 Yüksek Hızlı Çelik",
           hardness: "HRC 62–64",
           bestFor:
-            "High-speed tissue and sanitary paper above 400 m/min, where the edge has to hold geometry under thermal cycling.",
+            "400 m/dk’nın üzerindeki yüksek hızlı kağıt ve hijyenik kağıtlarda, kenarın termal döngü koşulları altında geometrisini koruması gereken durumlar.",
           tradeoff:
-            "Costs more than D2; regrind interval is still shorter than carbide on abrasive furnish.",
+            "Fiyatı D2’den daha pahalıdır; aşındırıcı malzeme üzerinde yeniden taşlama aralığı karbidden yine de daha kısadır.",
         },
         {
-          grade: "52100 Bearing Steel",
+          grade: "52100 Rulman Çeliği",
           hardness: "HRC 58–60",
           bestFor:
-            "Standard newsprint, magazine paper, and lower-grade recycled fiber where wear rates are moderate.",
+            "Aşınma oranlarının orta düzeyde olduğu standart gazete kağıdı, dergi kağıdı ve düşük kaliteli geri dönüştürülmüş elyaf.",
           tradeoff:
-            "Lower abrasion resistance than D2 on filled or coated stock — best reserved for cleaner furnish.",
+            "Dolgu maddeli veya kaplamalı ham kağıtlarda D2’ye göre daha düşük aşınma direnci gösterir — en iyi sonuçlar, daha temiz ham kağıtlarda elde edilir.",
         },
         {
-          grade: "Tungsten Carbide",
+          grade: "Tungsten Karbür",
           hardness: "HRA 90–92",
           bestFor:
-            "High-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied solid or carbide-tipped.",
+            "Mineral dolgu maddelerinin, kesim aralarında çelik kenarı hızla aşındırdığı yüksek kül içerikli kaplamalı kağıt, sanat kağıdı ve oluklu mukavva. Düz veya karbür uçlu olarak temin edilir.",
           tradeoff:
-            "Highest unit cost and more brittle under impact than tool steel — needs consistent feed and clean alignment to avoid edge chipping.",
+            "Birim maliyeti en yüksek olan ve darbe altında takım çeliğinden daha kırılgan bir malzemedir — kenarlarında yontulmayı önlemek için sabit ilerleme hızı ve düzgün hizalama gerektirir.",
         },
       ],
       outro:
-        "Solid and carbide-tipped paper slitter knives are both available. Tell us your furnish (virgin, recycled, coated, or filled), line speed, and current regrind interval, and we'll confirm the grade that lowers total cost per cut, not just the sticker price.",
+        "Hem katı hem de karbür uçlu kağıt kesme bıçakları mevcuttur. Hammadde türünüzü (işlenmemiş, geri dönüştürülmüş, kaplamalı veya dolgu içerikli), hat hızınızı ve mevcut yeniden bileme aralığınızı bize bildirin; biz de sadece etiket fiyatını değil, kesim başına toplam maliyeti düşüren kalite sınıfını size teyit edelim.",
     },
     dimensionLabels: {
-      col0: "Blade Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Bıçak Tipi",
+      col1: "Dış Çap",
+      col2: "İç Çap",
+      col3: "Kalınlık",
       caption:
-        "* Standard dimensions for paper converting. Top blades (dished profile for shear cutting) and bottom blades (grooved anvil for crush cutting). We manufacture paper slitter and anvil blades from roughly 50–320mm OD, 20–100mm bore, and 0.8–20mm thickness (thin dished top blades through heavy grooved anvils) — outside the three sets above, send your machine model and we confirm the closest match or cut to your dimensions.",
+        "* Kağıt işleme için standart boyutlar. Üst bıçaklar (kesme işlemi için çukur profilli) ve alt bıçaklar (ezme kesimi için oluklu örs). Dış çapı yaklaşık 50–320 mm, 20–100 mm iç çap ve 0,8–20 mm kalınlık aralığında (ince çukurlu üst bıçaklardan ağır oluklu örs bıçaklara kadar) kağıt kesme ve örs bıçakları üretiyoruz — yukarıdaki üç setin dışında kalan ölçüler için makine modelinizi bize gönderin, ölçülerinize en yakın uyumu veya kesimi teyit edelim.",
     },
     standardDimensions: [
       {
@@ -417,67 +418,68 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What material grade should I use for high-speed tissue converting at 500 m/min?",
+            "500 m/dk hızında yüksek hızlı kağıt mendil üretiminde hangi malzeme sınıfını kullanmalıyım?",
           answer:
-            "Specify M2 high-speed steel at HRC 62–64 for tissue converting above 400 m/min. The molybdenum and tungsten carbides in M2 maintain edge geometry under the thermal cycling generated by ultra-high-speed cutting, delivering 2–3× longer campaign life than D2 on lightweight tissue grades (12–18 GSM).",
+            "400 m/dk’nın üzerindeki kağıt doku işleme uygulamaları için HRC 62–64 sertliğinde M2 yüksek hız çeliği kullanın. M2'deki molibden ve tungsten karbür'ler, ultra yüksek hızlı kesim sırasında oluşan termal döngü koşullarında kenar geometrisini korur ve hafif kağıt türlerinde (12–18 GSM) D2'ye kıyasla 2–3 kat daha uzun çalışma ömrü sağlar.",
         },
         {
           question:
-            "How do I prevent fiber dust contamination at the slit edge?",
+            "Yarık kenarında elyaf tozu birikmesini nasıl önleyebilirim?",
           answer:
-            "Fiber dust is primarily caused by excessive shear clearance (>0.10mm on tissue) or rough blade surface finish (Ra >0.6μm) that tears fiber bundles rather than shearing cleanly. Specify matched shear pairs with pre-verified clearance (0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper) and Ra ≤0.4μm surface finish. This reduces airborne dust by 60–70% compared to standard industrial knife grades.",
+            "Lif tozu, esas olarak aşırı kesme boşluğu (kağıt mendilde >0,10 mm) veya pürüzlü bıçak yüzey kalitesinden (Ra >0,6 μm) kaynaklanır; bu durum, lif demetlerinin düzgün bir şekilde kesilmesini engelleyerek yırtılmasına neden olur. Önceden doğrulanmış boşluk aralığına (kağıt için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm) ve Ra ≤ 0,4 μm yüzey pürüzlülüğüne sahip, birbiriyle uyumlu kesme bıçağı çiftleri belirtin. Bu, standart endüstriyel bıçak kalitelerine kıyasla havada asılı tozu %60–70 oranında azaltır.",
         },
         {
           question:
-            "Should I use shear slitting or crush cutting for corrugated board converting?",
+            "Oluklu mukavva işleme sürecinde kesme veya ezme kesimini mi kullanmalıyım?",
           answer:
-            "For corrugated board (B/C/E flute), crush cutting against a grooved anvil roll is the standard method. The anvil blade compresses and fractures the paper fibers cleanly without requiring precise shear clearance maintenance. Shear slitting is reserved for lightweight coated papers and tissue where fiber pull must be minimized. For corrugated applications above 200 m/min, specify tungsten carbide anvil blades to resist the compressive wear from multi-ply board stock.",
+            "Oluklu mukavvada (B/C/E oluğu), oluklu bir örs silindiri karşısında ezme kesimi standart yöntemdir. Örs bıçağı, hassas kesme açıklığı ayarının yapılmasını gerektirmeden kağıt liflerini sıkıştırır ve temiz bir şekilde kırar. Kesme dilimleme yöntemi ise, lif çekilmesinin en aza indirilmesi gereken hafif kaplamalı kağıtlar ve kağıt mendiller için kullanılır. 200 m/dk'nın üzerindeki oluklu mukavva uygulamaları için, çok katlı mukavva stokundan kaynaklanan sıkıştırma aşınmasına direnç sağlamak üzere tungsten karbür örs bıçaklarını belirtin.",
         },
         {
           question:
-            "How often should paper slitter knives be reground, and how many regrinds are possible?",
+            "Kağıt kesme bıçakları ne sıklıkla yeniden bilemeli ve kaç kez yeniden bileme yapılabilir?",
           answer:
-            "Paper slitter knives on tissue converting lines (400–600 m/min) typically require regrinding every 40–60 operating hours due to the high cutting speeds and abrasive mineral fillers in tissue paper. For kraft paper and board converting (200–300 m/min), the regrind interval extends to 80–120 hours. M2 HSS and D2 knives can be reground 4–6 times before the OD falls below minimum operational diameter. We offer a regrinding service with hardness re-verification and CMM dimensional check included.",
+            "Kağıt mendil işleme hatlarındaki (400–600 m/dk) kağıt kesme bıçakları, yüksek kesme hızları ve kağıt mendildeki aşındırıcı mineral dolgu maddeleri nedeniyle genellikle her 40–60 çalışma saatinde bir yeniden bileme gerektirir. Kraft kağıt ve karton işleme hatlarında (200–300 m/dk) ise yeniden bileme aralığı 80–120 saate kadar uzar. M2 HSS ve D2 bıçaklar, dış çap (OD) minimum çalışma çapının altına düşmeden önce 4–6 kez yeniden bileme işlemine tabi tutulabilir. Sertlik yeniden doğrulaması ve CMM boyutsal kontrolünü içeren bir yeniden bileme hizmeti sunuyoruz.",
         },
         {
           question:
-            "What causes uneven slit edge quality across the full width of the paper web?",
+            "Kağıt şeridinin tüm genişliği boyunca kesik kenar kalitesinin dengesiz olmasının nedeni nedir?",
           answer:
-            "Uneven slit quality (clean cut on one side, fiber pull on the other) indicates uneven blade mounting or differential thermal expansion across the arbor. Verify that all knives on the arbor are ground to ±0.002mm thickness tolerance and that the arbor shaft runout is ≤0.02mm T.I.R. Thermal expansion can be mitigated by using matched metallurgy (all D2 or all M2) across the full knife set, ensuring uniform thermal expansion coefficients during high-speed operation.",
+            "Düzensiz kesim kalitesi (bir tarafta temiz kesim, diğer tarafta lif çekilmesi), bıçakların dengesiz takıldığını veya mil boyunca farklı termal genleşme olduğunu gösterir. Mil üzerindeki tüm bıçakların ±0,002 mm kalınlık toleransı dahilinde taşlandığından ve mil şaftının salınımının ≤0,02 mm T.I.R. olduğundan emin olun. Termal genleşme, tüm bıçak setinde uyumlu metalurji (tamamı D2 veya tamamı M2) kullanılarak azaltılabilir; bu sayede yüksek hızda çalışma sırasında tekdüze termal genleşme katsayıları sağlanır.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply knives compatible with our existing Atlas Converting or Kampf slitter/rewinder?",
+            "Sureay, mevcut Atlas Converting veya Kampf kesme/sarma makinelerimizle uyumlu bıçaklar tedarik edebilir mi?",
           answer:
-            "Yes. Send us your current knife sample or machine model number. We will confirm OD, ID, bore profile, and blade thickness, and supply direct-replacement knives manufactured to OEM specifications. Custom groove patterns for anvil rolls are available for specific corrugated and board converting applications.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Evet. Bize mevcut bıçak numunenizi veya makine model numaranızı gönderin. Dış çap (OD), iç çap (ID), delik profili ve bıçak kalınlığını teyit edip, OEM spesifikasyonlarına göre üretilmiş doğrudan değiştirilebilir bıçaklar tedarik edeceğiz. Belirli oluklu mukavva ve karton işleme uygulamaları için örs silindirlerine özel oluk desenleri de mevcuttur.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek bıçaklar genellikle 48 saat içinde sevk edilir. Özel profillerin teslimatı ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makineye uyum doğrulaması ve kesici kenar ömrü testi için numune setleri (genellikle 2–5 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür. Özel profiller için, tam üretime geçilmeden önce boyut onay numuneleri üretilir — uyum onaylanana kadar kalıp taahhüdü söz konusu değildir.",
         },
       ],
     },
   },
   {
     id: "metal-foil-strip-slitter-knives",
-    name: "Coil & Strip Slitters",
+    name: "Rulo ve Şerit Kesme Makineleri",
     fullName:
-      "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
+      "Metal Şerit, Rulo ve İnce Kalınlıklı Folyo Kesimi için Hassas Döner Kesme Bıçakları",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Strip Slitter Knives",
+    categoryDisplay: "Metal Şerit Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Metal Processing",
+    badge: "Metal İşleme",
     badgeColor: "purple",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
@@ -485,9 +487,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
     ],
     description:
-      "High-precision circular slitter knives for metal service centers and cold rolling mills. ASP23/ASP52 PM tool steel and solid tungsten carbide ground to strict ±0.001 mm thickness tolerance. Engineered for burr-free gang slitting of aluminum strip & coil, copper strip, stainless steel, and grain-oriented silicon steel.",
+      "Metal hizmet merkezleri ve soğuk haddeleme tesisleri için yüksek hassasiyetli dairesel kesme bıçakları. ASP23/ASP52 PM takım çeliği ve katı tungsten karbür, ±0,001 mm'lik sıkı kalınlık toleransına göre taşlanmıştır. Alüminyum şerit ve bobin, bakır şerit, paslanmaz çelik ve tane yönlü silikon çeliğin çapak bırakmadan toplu olarak kesilmesi için tasarlanmıştır.",
     fullDescription:
-      "Precision metal strip and foil slitting demands metallurgical performance and dimensional accuracy far exceeding standard shearing applications. When processing thin-gauge metals (0.01mm to 1.5mm), even a microscopic blade defect or thickness deviation will induce camber (lateral bow), edge burrs, and rejected coils. Sureay rotary slitter knives are precision-ground to ±0.001mm thickness tolerance with ≤0.01mm total indicated runout (T.I.R.), ensuring perfect alignment across multi-knife arbor stacks.\n\n## Advanced Metallurgy for Thin Metals\n\nSlitting different metal alloys requires specific blade materials to prevent rapid dulling, edge chipping, or material galling (cold welding).\n\n**ASP23 Powder Metallurgy (PM) Steel:** A massive upgrade over conventional D2. Its ultra-fine, uniform carbide structure delivers 3–5× longer edge life on aluminum packaging foil, brass strips, and general thin-gauge carbon steel without micro-chipping.\n\n**ASP52 PM Steel:** Engineered for high-tensile materials. With 11% vanadium content, ASP52 provides the extreme abrasion resistance required for slitting hard stainless steel strips, grain-oriented silicon steel (transformer cores), and beryllium copper.\n\n**Solid Tungsten Carbide:** The ultimate specification for ultra-thin foils (<0.05mm) where razor-sharp, zero-burr edges are mandatory over extended, high-speed production campaigns.\n\n## Defeating Cumulative Arbor Error\n\nOn gang slitting lines, 10 to 40 circular knives may be stacked on a single arbor. Each knife's thickness error compounds cumulatively: a ±0.003mm error per blade yields a massive ±0.060mm error across a 20-knife stack, guaranteeing out-of-spec coil widths. We grind every metal-grade slitter knife and matching spacer to a strict ±0.001mm thickness tolerance, verifying them on CMM equipment to ensure zero cumulative error.\n\n## Anti-Galling Surface Finish\n\nWhen slitting non-ferrous metals like aluminum and soft copper, metal dust tends to adhere to the blade face (galling), which severely scratches the surface of the slit coils. Sureay metal slitter knives feature a highly polished, mirror-lapped side finish (Ra ≤0.02μm) that drastically reduces friction and prevents material adhesion, ensuring pristine coil edges.",
+      "Hassas metal şerit ve folyo kesme işlemleri, standart kesme uygulamalarının çok ötesinde metalurjik performans ve boyutsal hassasiyet gerektirir. İnce kalınlıktaki metallerin (0,01 mm ila 1,5 mm) işlenmesinde, mikroskobik bir bıçak kusuru veya kalınlık sapması bile kamber (yanal eğrilik), kenar çapakları ve reddedilen rulolara neden olur. Sureay döner dilimleme bıçakları bıçakları, ±0,001 mm kalınlık toleransı ve ≤0,01 mm toplam gösterilen salgı (T.I.R.) ile hassas bir şekilde taşlanmıştır; bu sayede çok bıçaklı mil yığınları boyunca mükemmel hizalama sağlanır.\n\n## İnce Metaller için Gelişmiş Metalurji\n\nFarklı metal alaşımlarının kesilmesi, hızlı körelmeyi, kenar çatlamasını veya malzeme aşınmasını (soğuk kaynak) önlemek için özel bıçak malzemeleri gerektirir.\n\n**ASP23 Toz Metalurjisi (PM) Çeliği:** Geleneksel D2'ye göre büyük bir gelişme. Ultra ince, homojen karbür yapısı, alüminyum ambalaj folyosu, pirinç şeritler ve genel ince kalınlıkta karbon çeliğinde mikro çentiklenme olmadan 3–5 kat daha uzun kenar ömrü sağlar.\n\n**ASP52 PM Çeliği:** Yüksek gerilimli malzemeler için tasarlanmıştır. %11 vanadyum içeriğine sahip ASP52, sert paslanmaz çelik şeritlerin, tane yönlü silikon çeliğin (transformatör çekirdekleri) ve berilyum bakırın kesilmesi için gereken olağanüstü aşınma direncini sağlar.\n\n**Katı Tungsten Karbür:** Uzun süreli, yüksek hızlı üretim kampanyalarında jilet keskinliğinde, çapak bırakmayan kenarların zorunlu olduğu ultra ince folyolar (<0,05 mm) için en üst düzey özellik.\n\n## Birikimli Mil Hatasını Ortadan Kaldırma\n\nÇoklu dilme hatlarında, tek bir mil üzerine 10 ila 40 adet dairesel bıçaklar istiflenebilir. Her bıçağın kalınlık hatası kümülatif olarak artar: bıçak başına ±0,003 mm'lik bir hata, 20 bıçaklık bir yığında ±0,060 mm'lik büyük bir hataya yol açar ve bu da bobin genişliklerinin spesifikasyonların dışında kalmasına neden olur. Her metal sınıfı dilme bıçağını ve uyumlu ara parçasını sıkı bir ±0,001 mm kalınlık toleransı ile taşlayarak, CMM ekipmanında kontrol eder ve kümülatif hatanın sıfır olmasını sağlarız.\n\n## Sürtünme Önleyici Yüzey İşlemi\n\nAlüminyum ve yumuşak bakır gibi demir dışı metalleri keserken, metal tozu bıçak yüzeyine yapışmaya (sürtünme) meyillidir; bu da kesilen bobinlerin yüzeyinde ciddi çiziklere neden olur. Sureay metal kesme bıçakları, sürtünmeyi önemli ölçüde azaltan ve malzeme yapışmasını önleyen, son derece parlak, ayna cilalı bir yüzey kaplamasına (Ra ≤0,02 μm) sahiptir ve bu sayede bobin kenarlarının kusursuz kalmasını sağlar.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -530,33 +532,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "pm-metallurgy",
-        tag: "DURABILITY",
-        title: "Powder Metallurgy (PM) Steel",
+        tag: "DAYANIKLILIK",
+        title: "Toz Metalurjisi (PM) Çeliği",
         description:
-          "ASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2. This sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips.",
+          "ASP23 ve ASP52 PM çelikleri, döküm D2'de görülen şeritli karbür ayrışmasını ortadan kaldırır. Bu mikron altı tane yapısı, sert, yüksek mukavemetli paslanmaz veya silikon çelik şeritlerin kesilmesi sırasında kenar kırılmasını önler.",
       },
       {
         id: "cumulative-tolerance",
-        tag: "PRECISION",
-        title: "Zero Cumulative Error",
+        tag: "HASSASİYET",
+        title: "Sıfır Kümülatif Hata",
         description:
-          "On gang slitting setups, blade thickness errors stack up quickly. Our ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time.",
+          "Seri kesim kurulumlarında, bıçak kalınlığı hataları hızla birikir. ±0,001 mm hassasiyetindeki taşlama işlemimiz, mil boyutlarınızın teknik özellikler dahilinde kusursuz bir şekilde kalmasını sağlar ve kurulum ile ayar için harcanan saatlerden tasarruf etmenizi sağlar.",
       },
       {
         id: "anti-galling",
-        tag: "SURFACE QUALITY",
-        title: "Anti-Galling Polish",
+        tag: "YÜZEY KALİTESİ",
+        title: "Aşınmayı Önleyici Parlatıcı",
         description:
-          "Slitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge. Our mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely.",
+          "Alüminyum ve bakırın kesilmesi sırasında metal tozunun bıçağa “soğuk kaynak” yapması ve bobin kenarını çizmesi sıkça görülür. Ayna pürüzsüzlüğünde yan yüzeylerimiz (Ra ≤0,02 μm), sürtünmeyi önemli ölçüde azaltarak malzemenin bıçağa yapışmasını tamamen önler.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Application",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Tipik Uygulama",
+      col1: "Dış Çap",
+      col2: "İç Çap",
+      col3: "Kalınlık",
       caption:
-        "* Dimensions represent common metal service center standards. We manufacture to exact machine specifications and can supply matching high-precision spacers ground to the same ±0.001mm tolerance.",
+        "* Boyutlar, yaygın metal hizmet merkezi standartlarını yansıtmaktadır. Üretimimizi makine teknik özelliklerine tam olarak uygun olarak gerçekleştiriyoruz ve aynı ±0,001 mm toleransına göre taşlanmış, uyumlu yüksek hassasiyetli ara parçalar tedarik edebiliyoruz.",
     },
     standardDimensions: [
       {
@@ -603,50 +605,51 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I use D2 or ASP23 for slitting stainless steel strips?",
+            "Paslanmaz çelik şeritleri kesmek için D2 mi yoksa ASP23 mi kullanmalıyım?",
           answer:
-            "While D2 is adequate for soft carbon steels, slitting high-tensile stainless steel causes rapid wear and micro-chipping on D2 edges. ASP23 Powder Metallurgy steel is highly recommended for stainless strips under 1.0mm thickness. Its uniform carbide structure resists chipping, delivering 3 to 5 times the edge life of D2 and minimizing machine downtime.",
+            "D2, yumuşak karbon çelikler için yeterli olsa da, yüksek mukavemetli paslanmaz çeliğin dilimlenmesi, D2 bıçak kenarlarında hızlı aşınmaya ve mikro yontulmalara neden olur. 1,0 mm kalınlığın altındaki paslanmaz çelik şeritler için ASP23 Toz Metalurjisi çeliği şiddetle tavsiye edilir. Düzgün karbür yapısı ufalanmaya karşı direnç gösterir, D2'ye kıyasla 3 ila 5 kat daha uzun kesici kenar ömrü sağlar ve makinenin duruş süresini en aza indirir.",
         },
         {
           question:
-            "How do you prevent 'galling' or metal build-up when slitting aluminum?",
+            "Alüminyumu dilimlerken “aşınma” veya metal birikmesini nasıl önlersiniz?",
           answer:
-            "Aluminum is highly susceptible to galling (cold welding to the blade). We prevent this by mirror-lapping the side faces of the blades to a surface roughness of Ra ≤0.02μm. This ultra-smooth finish reduces the friction coefficient, preventing aluminum particles from adhering to the knife and scratching your finished coils.",
+            "Alüminyum, sürtünme nedeniyle yapışmaya (bıçağa soğuk kaynaklanma) son derece yatkındır. Bıçakların yan yüzeylerini Ra ≤0,02 μm yüzey pürüzlülüğüne ulaşacak şekilde ayna parlatarak bu sorunu önlüyoruz. Bu son derece pürüzsüz yüzey, sürtünme katsayısını düşürerek alüminyum parçacıklarının bıçağa yapışmasını ve işlenmiş bobinlerinizi çizmesini engeller.",
         },
         {
-          question: "Why is a ±0.001mm thickness tolerance necessary?",
+          question: "Neden ±0,001 mm'lik bir kalınlık toleransı gereklidir?",
           answer:
-            "In gang slitting operations, multiple knives and spacers are stacked on the arbor. If a blade has a ±0.005mm tolerance, stacking 20 blades creates a cumulative error of ±0.100mm. This will cause the slit coils to be out of width specification and induce camber (bowing). Our ±0.001mm tolerance ensures absolute precision across the entire arbor stack.",
+            "Toplu dilme işlemlerinde, mil üzerine birden fazla bıçak ve ara parçası istiflenir. Bir bıçağın toleransı ±0,005 mm ise, 20 bıçağın istiflenmesi ±0,100 mm’lik bir birikimli hata oluşturur. Bu durum, dilinmiş ruloların genişlik spesifikasyonunun dışına çıkmasına ve eğrilik (kamber) oluşmasına neden olur. ±0,001 mm'lik toleransımız, mil üzerindeki tüm yığın boyunca mutlak hassasiyet sağlar.",
         },
         {
-          question: "Can you supply matching precision spacers?",
+          question: "Uygun hassas ara parçaları tedarik edebilir misiniz?",
           answer:
-            "Yes, precision slitting requires both knives and spacers to have identical tolerances. We manufacture lightweight aluminum, steel, and bonded-rubber strippers/spacers ground to the same ±0.001mm thickness tolerances as our slitter knives.",
+            "Evet, hassas dilimleme işlemi için hem bıçakların hem de ara parçaların aynı toleranslara sahip olması gerekir. Dilimleme bıçaklarımızla aynı ±0,001 mm kalınlık toleranslarına göre taşlanmış hafif alüminyum, çelik ve kauçuk kaplı sıyırıcılar/ara parçalar üretiyoruz.",
         },
       ],
       company: [
         {
-          question: "Do you supply matched knife sets with inspection reports?",
+          question:
+            "Denetim raporları ile birlikte uyumlu bıçak setleri tedarik ediyor musunuz?",
           answer:
-            "Yes. For multi-knife gang slitting arbors, we supply matched sets accompanied by a CMM inspection report. This documents the exact thickness of each individual knife, guaranteeing the set meets your cumulative tolerance requirements before installation.",
+            "Evet. Çok bıçaklı grup kesme milleri için, CMM ölçümü raporu ile birlikte uyumlu setler tedarik ediyoruz. Bu rapor, her bir bıçağın tam kalınlığını belgelemekte ve kurulum öncesinde setin toplam tolerans gereksinimlerinizi karşıladığını garanti etmektedir.",
         },
         {
           question:
-            "What is the lead time for PM steel or Carbide slitter knives?",
+            "PM çeliğinden veya karbürden üretilen kesme bıçaklarının teslim süresi ne kadardır?",
           answer:
-            "Standard D2 and basic PM steel sizes can typically be manufactured in 10–15 working days. Solid Tungsten Carbide and highly specialized PM alloys require complex lapping and grinding, usually taking 15–25 working days depending on the OD and tolerance requirements.",
+            "Standart D2 ve temel PM çelik boyutları genellikle 10–15 iş günü içinde üretilebilir. Katı tungsten karbür ve son derece özel PM alaşımları, karmaşık lepleme ve taşlama işlemleri gerektirir; bu işlemler, dış çap ve tolerans gereksinimlerine bağlı olarak genellikle 15–25 iş günü sürer.",
         },
       ],
     },
   },
   {
     id: "twin-shaft-blades-recycling",
-    name: "Twin Shaft Shredder Blades",
+    name: "Çift Mil Parçalayıcı Bıçakları",
     fullName:
-      "Heavy-Duty D2/SKD11 Twin Shaft Claw Blades for Plastic, MSW & Wood Recycling",
+      "Plastik, Katı Evsel Atık ve Odun Geri Dönüşümü için Ağır Hizmet Tipi D2/SKD11 Çift Mil Pençe Bıçakları",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Shredder Blades",
+    categoryDisplay: "Parçalayıcı Bıçakları",
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
     gallery: [
       "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
@@ -654,9 +657,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Twin shaft (double shaft) shredder blades for plastic, tire, metal & MSW recycling. Chromium carbide D2/SKD11, vacuum-hardened HRC 55–62 with deep cryogenic treatment. Engineered on the intersecting scissor-action principle for high-volume shredding. Custom 3–12 claw geometries. Wire-EDM bores for zero-backlash fit on Weima, Untha, SSI & Vecoplan rotors.",
+      "Plastik, lastik, metal ve kentsel katı atık (MSW) geri dönüşümü için çift şaftlı (duble şaftlı) parçalayıcı bıçakları. Krom karbür D2/SKD11, vakumla sertleştirilmiş HRC 55–62, derin kriyojenik işlemden geçirilmiş. Yüksek hacimli parçalama için kesişen makas hareketi prensibine göre tasarlanmıştır. Özel 3–12 pençe geometrisi. Weima, Untha, SSI ve Vecoplan rotorlarına sıfır boşluklu oturması için tel EDM delikleri.",
     fullDescription:
-      "Twin-shaft shredder blades operate on the intersecting scissor-action principle—two counter-rotating shafts with interlocking claw blades that shear feedstock through a scissor interface, delivering aggressive grabbing force with low torque demand.\n\nWhen processing highly abrasive bulky waste—such as metal-contaminated MSW, thick-wall plastic purges, or mixed rigid plastic bales—substandard blades suffer from premature edge rounding, bore elongation, and catastrophic hook fracture.\n\nSureay multi-shaft shredder blades are manufactured from D2 (1.2379), SKD11, and 42CrMo tool steels, vacuum-hardened and tempered through 4–5 cycles to achieve a fully stabilized martensitic microstructure (HRC 55–62). The deep cryogenic sub-zero treatment stage (−196°C, 24-hour soak) eliminates retained austenite and substantially increases wear resistance without sacrificing the toughness margin needed to prevent bulk fracture on contaminated feedstocks.\n\n## FEA-Optimized Hook Geometry\n\nThe profile of the cutting hook dictates grabbing efficiency and resistance to fatigue. Sureay utilizes Finite Element Analysis (FEA) simulation to optimize stress distribution across the blade during high-torque impacts. Three-claw (3C) designs deliver aggressive grabbing force for large timber and IBC totes; 8-claw (8C) configurations are optimized for mixed rigid plastics and MSW; 12-claw (12C) variants produce finer output particle sizing for downstream processing. All hook profiles are reinforced at the root radius to resist deformation under sustained cyclic loading.\n\n## Precision Wire-EDM Bores\n\nA loose fit between the blade bore and the rotor shaft creates micro-impacts that progressively elongate the bore and destroy the shaft. Sureay eliminates this failure mode: all inner mounting bores—hexagonal, octagonal, or splined—are processed using precision Wire-EDM, guaranteeing a zero-backlash, drop-in fit for SSI, Untha, Weima, and Vecoplan rotor systems.\n\n## Alloy Selection by Feedstock\n\nD2 (1.2379) — Mixed Plastics & Light Waste: Post-consumer HDPE bottles, PET trays, PP moulded parts, and mixed rigid plastic bales. Cost-effective chromium-carbide abrasion resistance for general recycling lines.\n\nSKD11 — Abrasive Contaminated Streams: Glass-filled engineering plastics, dirty agricultural films, and high-contamination post-industrial scrap. SKD11's superior toughness extends insert service life on hard-face materials within contaminated streams.\n\n42CrMo — Timber & Metal-Inclusive Waste: Wood pallets, bulky MSW, and post-industrial scrap with metal contamination risk. 42CrMo's higher impact energy absorption prevents brittle fracture that causes catastrophic rotor damage on a metal strike.\n\nSureay twin shaft shredder blades are proven in demanding applications worldwide: plastic shredder blades for post-consumer recycling, tire shredder blades for TDF and crumb rubber production, and metal shredder blades for light-gauge ferrous and non-ferrous scrap processing.",
+      "Çift şaftlı parçalayıcı bıçakları, kesişen makas hareketi prensibiyle çalışır: birbirine kenetlenen pençe bıçaklara sahip iki ters yönde dönen şaft, hammaddeyi makas arayüzü üzerinden keserek, düşük tork gereksinimi ile yüksek kavrama gücü sağlar.\n\nMetal bulaşmış kentsel katı atıklar, kalın cidarlı plastik döküntüler veya karışık sert plastik balyalar gibi aşındırıcı özelliği yüksek hacimli atıkların işlenmesinde, standartların altında kalan bıçaklar erken kenar yuvarlanması, delik uzaması ve ciddi kanca kırılmalarına maruz kalır.\n\nSureay çok şaftlı parçalayıcı bıçakları, D2 (1.2379), SKD11 ve 42CrMo takım çeliklerinden üretilir; tamamen stabilize martensitik mikroyapı (HRC 55–62) elde etmek için vakumla sertleştirilir ve 4–5 döngü boyunca temperlenir. Derin kriyojenik sıfırın altı işleme aşaması (−196°C, 24 saat bekletme), kalıntı östeniti ortadan kaldırır ve kirlenmiş hammaddelerde kütle kırılmasını önlemek için gerekli tokluk marjından ödün vermeden aşınma direncini önemli ölçüde artırır.\n\n## FEA ile Optimize Edilmiş Kanca Geometrisi\n\nKesme kancasının profili, kavrama verimliliğini ve yorgunluk direncini belirler. Sureay, yüksek torklu darbeler sırasında bıçak üzerindeki gerilim dağılımını optimize etmek için Sonlu Elemanlar Analizi (FEA) simülasyonunu kullanır. Üç pençeli (3C) tasarımlar, büyük kereste ve IBC konteynerleri için güçlü kavrama kuvveti sağlar; 8 pençeli (8C) konfigürasyonlar, karışık sert plastikler ve katı atıklar (MSW) için optimize edilmiştir; 12 pençeli (12C) varyantlar ise sonraki işleme aşamaları için daha ince parçacık boyutları sağlar. Tüm kanca profilleri, sürekli döngüsel yükleme altında deformasyona direnmek için kök yarıçapından güçlendirilmiştir.\n\n## Hassas Tel-EDM Delikler\n\nBıçak deliği ile rotor mili arasındaki gevşek oturma, deliği giderek uzatan ve mili tahrip eden mikro darbeler yaratır. Sureay bu arıza türünü ortadan kaldırır: altıgen, sekizgen veya yivli tüm iç montaj delikleri, hassas Tel-EDM kullanılarak işlenir; bu sayede SSI, Untha, Weima ve Vecoplan rotor sistemleri için sıfır boşluklu, tak-çalıştır uyumu garanti edilir.\n\n## Hammaddeye Göre Alaşım Seçimi\n\nD2 (1.2379) — Karışık Plastikler ve Hafif Atıklar: Tüketici sonrası HDPE şişeler, PET tepsiler, PP kalıplı parçalar ve karışık sert plastik balyalar. Genel geri dönüşüm hatları için uygun maliyetli krom-karbür aşınma direnci.\n\nSKD11 — Aşındırıcı İçeren Akışlar: Cam takviyeli mühendislik plastikleri, kirli tarım filmleri ve yüksek kirlilik içeren endüstriyel atıklar. SKD11'in üstün tokluğu, kirli akışlardaki sert yüzeyli malzemelerde uçların hizmet ömrünü uzatır.\n\n42CrMo — Ahşap ve Metal İçeren Atıklar: Ahşap paletler, hacimli kentsel katı atıklar ve metal kirlenme riski taşıyan endüstriyel atıklar. 42CrMo'nun daha yüksek darbe enerjisi emilimi, metale çarpma durumunda rotorda ciddi hasara yol açan kırılgan kırılmayı önler.\n\nSureay çift şaftlı parçalayıcı bıçakları serisi, dünya çapında zorlu uygulamalarda kendini kanıtlamıştır: tüketici sonrası geri dönüşüm için plastik parçalayıcı bıçakları, TDF ve kırıntı kauçuk üretimi için lastik parçalayıcı bıçakları ve ince kalınlıktaki demirli ve demirsiz hurda işleme için metal parçalayıcı bıçakları.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
     compatibleMachines: [
@@ -702,34 +705,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "fea-geometry",
-        tag: "ENGINEERING",
-        title: "FEA-Optimized Hook Profile",
+        tag: "MÜHENDİSLİK",
+        title: "FEA ile Optimize Edilmiş Kanca Profili",
         description:
-          "Hook geometry designed via Finite Element Analysis to eliminate stress concentrators. 3-claw, 8-claw, and 12-claw configurations provide the correct grabbing force for every feedstock type.",
+          "Gerilim yoğunlaşmalarını ortadan kaldırmak amacıyla Sonlu Elemanlar Analizi yoluyla tasarlanmış kanca geometrisi. 3 tırnaklı, 8 tırnaklı ve 12 tırnaklı konfigürasyonlar, her hammadde türü için doğru kavrama kuvveti sağlar.",
       },
       {
         id: "wire-edm",
-        tag: "PRECISION",
-        title: "Precision Wire-EDM Bores",
+        tag: "HASSASİYET",
+        title: "Hassas Tel Elektrokimyasal İşleme (EDM) Delikleri",
         description:
-          "All mounting bores are cut by Wire-EDM to ±0.01mm, guaranteeing a zero-backlash drop-in fit that eliminates the micro-rocking that causes shaft damage and bore elongation.",
+          "Tüm montaj delikleri, ±0,01 mm hassasiyetle Tel-EDM ile açılmıştır; bu sayede, mil hasarına ve delik uzamasına neden olan mikro sallantıyı ortadan kaldıran, boşluksuz ve tam oturan bir uyum sağlanmaktadır.",
       },
       {
         id: "cryogenic-treatment",
-        tag: "METALLURGY",
-        title: "Deep Cryogenic Treatment",
+        tag: "METALURJİ",
+        title: "Derin Kriyojenik İşlem",
         description:
-          "Post-hardening cryogenic processing at −196°C eliminates retained austenite, stabilizing the martensite microstructure for up to 40% greater wear resistance without reducing toughness.",
+          "Sertleştirme sonrası −196 °C’de gerçekleştirilen kriyojenik işlem, kalıntı östeniti ortadan kaldırarak martensit mikro yapısını stabilize eder ve tokluğu azaltmadan aşınma direncini %40’a kadar artırır.",
       },
     ],
     dimensionLabels: {
-      col0: "Shredder Series",
-      col1: "Blade Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Size",
-      col4: "Claw Configuration",
+      col0: "Shredder Serisi",
+      col1: "Bıçak Dış Çapı",
+      col2: "Bıçak Kalınlığı",
+      col3: "Delik Çapı",
+      col4: "Pençe Yapılandırması",
       caption:
-        "* Standard series Φ150–Φ450 mm. Custom OD up to Φ800 mm, bore hex/octagonal/splined, and claw profiles available on request.",
+        "* Standart seri: Φ150–Φ450 mm. Talep üzerine Φ800 mm’ye kadar özel dış çaplar, altıgen/sekizgen/yivli iç çaplar ve pençe profilleri temin edilebilir.",
     },
     standardDimensions: [
       {
@@ -802,75 +805,78 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How do I choose between 3-claw, 8-claw, and 12-claw blade designs?",
+            "3 tırnaklı, 8 tırnaklı ve 12 tırnaklı bıçak tasarımları arasında nasıl seçim yapabilirim?",
           answer:
-            "Claw count directly controls the blade's grabbing frequency and output particle size. 3-claw (3C) blades are designed for high-torque primary shredding of bulky stock—wooden pallets and large HDPE containers—where aggressive hook geometry provides maximum bite. 8-claw (8C) is the general-purpose standard for mixed MSW, plastic bales, and post-industrial scrap. 12-claw (12C) configurations produce finer output particles from lighter feedstocks such as rigid household plastics and packaging.",
+            "Pençe sayısı, bıçağın kavrama sıklığını ve çıktı parçacık boyutunu doğrudan belirler. 3 pençeli (3C) bıçaklar, ahşap paletler ve büyük HDPE konteynerler gibi hacimli malzemelerin yüksek torklu birincil parçalanması için tasarlanmıştır; bu bıçaklarda agresif kanca geometrisi, maksimum kavrama gücü sağlar. 8 tırnaklı (8C) bıçaklar, karışık kentsel katı atıklar, plastik balyalar ve endüstriyel atıklar için genel amaçlı standarttır. 12 tırnaklı (12C) konfigürasyonlar, sert evsel plastikler ve ambalajlar gibi daha hafif besleme malzemelerinden daha ince parçacıklar üretir.",
         },
         {
           question:
-            "Why does Sureay use Wire-EDM for inner bores instead of broaching?",
+            "Sureay, iç delikler için neden broşlama yerine Tel-EDM yöntemini kullanıyor?",
           answer:
-            "Standard broaching creates dimensional tolerances of ±0.1–0.2mm and introduces residual surface stress in the bore wall. Over millions of rotor cycles, this gap allows micro-rocking—progressive bore elongation that eventually destroys the rotor shaft. Precision Wire-EDM machines bores to ±0.01mm accuracy with a stress-free cut surface, eliminating the clearance that causes micro-rocking.",
+            "Standart broşlama işlemi, ±0,1–0,2 mm boyut toleransları oluşturur ve delik duvarında kalıntı yüzey gerilimi meydana getirir. Milyonlarca rotor devri boyunca bu boşluk, mikro sallanmaya yol açar; bu da delikte kademeli bir uzamaya neden olur ve sonunda rotor milini tahrip eder. Hassas Tel Elektrikli Aşındırma (Wire-EDM) makineleri, delikleri ±0,01 mm hassasiyetle gerilimsiz bir kesme yüzeyi oluşturarak işler ve mikro sallanmaya neden olan boşluğu ortadan kaldırır.",
         },
         {
           question:
-            "How do I choose between D2, SKD11, and 42CrMo for contaminated plastic or MSW shredding?",
+            "Kirlenmiş plastik veya katı atıkların parçalanması için D2, SKD11 ve 42CrMo arasında nasıl seçim yapabilirim?",
           answer:
-            "D2 (1.2379) is correct for post-consumer plastic bales with residual dirt and trace contamination. Upgrade to SKD11 when your feedstock includes glass-reinforced engineering plastics (PA66-GF30, ABS) mixed into contaminated streams. Select 42CrMo for timber or industrial scrap with high metal contamination risk—its higher impact energy absorption prevents brittle fracture on a metal strike.",
+            "D2 (1.2379), üzerinde kalıntı kir ve eser miktarda kirlenme bulunan tüketim sonrası plastik balyalar için uygundur. Hammaddinizde kirlenmiş akışlara karışmış cam takviyeli mühendislik plastikleri (PA66-GF30, ABS) bulunuyorsa SKD11'e geçin. Metal kirlenme riski yüksek olan kereste veya endüstriyel hurdalar için 42CrMo'yu seçin; bu malzemenin daha yüksek darbe enerjisi emilimi, metale çarptığında kırılmayı önler.",
         },
         {
           question:
-            "How often should twin-shaft shredder blades be indexed or replaced on a continuous recycling line?",
+            "Sürekli geri dönüşüm hattında çift şaftlı parçalayıcı bıçakları ne sıklıkla ayarlanmalı veya değiştirilmelidir?",
           answer:
-            "On a 16-hour continuous line processing post-consumer HDPE and PP, schedule first indexing at 400–600 operating hours with D2, and 600–800 hours with SKD11 on clean feedstock. Contaminated or glass-filled streams reduce these intervals by 30–40%. Fixed tonnage-milestone indexing is recommended rather than waiting for visible edge rounding.",
+            "Tüketici kaynaklı HDPE ve PP’yi işleyen 16 saatlik kesintisiz hatlarda, temiz hammadde kullanıldığında ilk indeksleme işlemini D2 ile 400–600 çalışma saatinde, SKD11 ile ise 600–800 saatinde planlayınız. Kirlenmiş veya cam dolgulu akışlarda bu aralıklar %30–40 oranında azalır. Kenarlarda gözle görülür yuvarlanma oluşmasını beklemek yerine, sabit tonaj hedeflerine göre indeksleme yapılması önerilir.",
         },
         {
           question:
-            "Do you supply counter-knives and sizing screens as a complete tooling system?",
+            "Tezgah bıçaklarını ve eleme eleklerini eksiksiz bir takım sistemi olarak tedarik ediyor musunuz?",
           answer:
-            "Yes. We manufacture matched stationary counter-knives and perforated sizing screens as a complete twin-shaft shredding tooling system. Supplying rotor blades and counter-knives from the same grinding run ensures consistent shear clearance across the full rotor-to-bed interface.",
+            "Evet. Tam bir çift şaftlı parçalama alet sistemi olarak, birbiriyle uyumlu sabit karşı bıçaklar ve delikli boyutlandırma elekleri üretiyoruz. Rotor bıçakları ile karşı bıçakları aynı taşlama işleminden temin etmek, rotor ile yatak arasındaki tüm temas yüzeyinde tutarlı bir kesme aralığı sağlar.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisiyiz. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı dövüp taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "Sureay’in ısıl işlem modelini daha ucuz alternatiflerden ayıran nedir?",
           answer:
-            "Unlike standard single-cycle quenching, every Sureay shredder blade undergoes vacuum hardening followed by 4–5 tempering cycles and deep cryogenic treatment at −196°C. This stabilizes the full martensite microstructure, boosting wear resistance by up to 40%.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question: "What quality certifications does Sureay hold?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Standart tek döngülü su verme işleminden farklı olarak, her bir Sureay parçalayıcı bıçağı vakumla sertleştirme işleminden geçirildikten sonra 4–5 temperleme döngüsüne tabi tutulur ve −196 °C’de derin kriyojenik işleme tabi tutulur. Bu işlem, tam martensit mikro yapısını stabilize ederek aşınma direncini %40’a kadar artırır.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek bıçaklar genellikle 48 saat içinde sevk edilir. Özel profillerin sevkiyatı ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
+        },
+        {
+          question: "Sureay hangi kalite sertifikalarına sahiptir?",
+          answer:
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası eklenir. OEM onay süreci için, talep üzerine eksiksiz CMM boyutsal raporları ve çelik fabrikası sertifikaları temin edilebilir.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makineye uyum kontrolü ve kesici kenar ömrü testi için numune setleri (genellikle 2–5 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür.",
         },
       ],
     },
   },
   {
     id: "multi-shaft-blades-metal",
-    name: "Metal Shredder Blades",
-    fullName: "High-Impact Multi-Shaft Blades for Scrap Metal, ELV & E-Waste",
+    name: "Metal Parçalayıcı Bıçakları",
+    fullName:
+      "Hurda Metal, Hurda Araçlar ve Elektronik Atıklar için Yüksek Etkili Çok Şaftlı Bıçaklar",
     category: "shredder_blades",
     sector: "metal",
-    categoryDisplay: "Metal Shredder Blades",
+    categoryDisplay: "Metal Parçalayıcı Bıçakları",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
-    badge: "Heavy Duty",
+    badge: "Ağır Hizmet Tipi",
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/shredder-blades-05.webp",
@@ -878,9 +884,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Designed to survive the catastrophic shock loads of scrap metal, ELV (end-of-life vehicle), and e-waste twin-shaft shredding. Forged from premium H13 and 42CrMo (AISI 4140) alloy steels. These heavy-duty blades prioritize core toughness to prevent brittle fracture when striking solid metal inclusions.",
+      "Hurda metal, kullanım ömrü dolmuş araçlar (ELV) ve elektronik atıkların çift şaftlı parçalama işlemi sırasında ortaya çıkan yıkıcı darbe yüklerine dayanacak şekilde tasarlanmıştır. Birinci sınıf H13 ve 42CrMo (AISI 4140) alaşımlı çeliklerden dövülmüştür. Bu ağır hizmet tipi bıçaklar, katı metal kalıntılara çarptığında kırılmayı önlemek için çekirdek sertliğine öncelik verir.",
     fullDescription:
-      "When a twin-shaft shredder encounters an engine block, a steel I-beam, or compacted e-waste, the blades face catastrophic shock loads measured in tens of thousands of Newtons per millisecond. Using standard high-carbon tool steels (like D2) in these applications leads to immediate brittle fracture and shattered hooks—causing severe rotor damage, unplanned downtime, and potentially dangerous projectile fragments.\n\nFor heavy metal processing, toughness is paramount over extreme hardness. Sureay engineers these specific blades from **H13 (AISI H13 / 1.2344)** hot-work tool steel and high-strength **42CrMo (AISI 4140)** alloy through a specialized deep-tempering thermal cycle. Surface hardness is held deliberately at HRC 50–54. This controlled lower hardness provides massive core elasticity, allowing the blade to absorb extreme kinetic impacts without chipping or shattering.\n\n## Low-Profile Hook Geometry for Maximum Biting Force\n\nMetal shredding requires immense biting force rather than grabbing frequency. Sureay designs 1-hook, 2-hook, and 3-hook low-profile geometries with heavy root thickness. These robust claw profiles can grip and shear thick metal casings, aluminum profiles, and automotive sub-assemblies without hook fracture.\n\n## Heavy Splined Bores: Zero-Slippage Torque Transfer\n\nHeavy scrap metal generates massive rotor reaction torques that can shear standard keyed bores. Sureay machines all inner bores for heavy metal shredders using precision Wire-EDM-cut spline profiles. This provides full circumferential torque engagement between the blade and the shaft—eliminating the key-shear failure mode and preventing the progressive bore-to-shaft fretting that destroys rotors in standard metal shredding operations.\n\n## Alloy Selection by Scrap Profile\n\n**H13 (1.2344) — E-Waste & Light Mixed Scrap:** Circuit board assemblies, aluminum extrusions, copper cable bundles, and ICT equipment. H13's superior hot-toughness handles the friction-induced heating peaks typical of electronics scrap.\n\n**42CrMo (AISI 4140) — ELV & Heavy Scrap:** Engine blocks, transmission casings, steel coil offcuts, and structural steel. 42CrMo's exceptional impact energy absorption (Charpy V-notch > 35J) is the definitive choice for the heaviest shock-load applications in automotive and metal demolition.",
+      "Çift şaftlı bir parçalayıcı bir motor bloğu, çelik I-kiriş veya sıkıştırılmış elektronik atıkla karşılaştığında, bıçaklar milisaniye başına on binlerce Newton cinsinden ölçülen yıkıcı darbe yüklerine maruz kalır. Bu uygulamalarda standart yüksek karbonlu takım çeliklerinin (D2 gibi) kullanılması, anında gevrek kırılmaya ve kancaların parçalanmasına yol açar; bu da rotorda ciddi hasara, planlanmamış duruş sürelerine ve potansiyel olarak tehlikeli fırlayan parçacıklara neden olur.\n\nAğır metal işleme için, aşırı sertlikten çok tokluk önceliklidir. Sureay, bu özel bıçakları **H13 (AISI H13 / 1.2344)** sıcak işleme takım çeliği ve yüksek mukavemetli **42CrMo (AISI 4140)** alaşımından, özel bir derin tavlama ısıl döngüsü aracılığıyla tasarlar. Yüzey sertliği kasıtlı olarak HRC 50–54 seviyesinde tutulur. Bu kontrollü düşük sertlik, çekirdeğe muazzam bir esneklik sağlar ve bıçağın ufalanma veya parçalanma olmadan aşırı kinetik darbeleri emmesini mümkün kılar.\n\n## Maksimum Isırma Gücü için Düşük Profilli Kanca Geometrisi\n\nMetal parçalama işlemi, kavrama sıklığından ziyade muazzam bir ısırma kuvveti gerektirir. Sureay, kalın kök kalınlığına sahip 1 kancalı, 2 kancalı ve 3 kancalı düşük profilli geometriler tasarlar. Bu sağlam pençe profilleri, kanca kırılması olmadan kalın metal kasaları, alüminyum profilleri ve otomotiv alt gruplarını kavrayıp kesebilir.\n\n## Ağır Yivli Delikler: Kaymasız Tork Aktarımı\n\nAğır hurda metal, standart kama deliklerini kesebilecek kadar büyük rotor tepki torkları oluşturur. Sureay, ağır metal parçalayıcılar için tüm iç delikleri hassas Tel-EDM kesimli yiv profilleri kullanarak işler. Bu, bıçak ile mil arasında tam çevresel tork bağlantısı sağlar; böylece standart metal parçalama işlemlerinde rotorları tahrip eden kama kopması arıza modunu ortadan kaldırır ve delik ile mil arasında giderek artan sürtünmeyi önler.\n\n## Hurda Profiline Göre Alaşım Seçimi\n\n**H13 (1.2344) — Elektronik Atıklar ve Hafif Karışık Hurda:** Devre kartı grupları, alüminyum ekstrüzyonlar, bakır kablo demetleri ve ICT ekipmanları. H13'ün üstün sıcak dayanımı, elektronik hurdalarda tipik olarak görülen sürtünmeden kaynaklanan ısınma zirvelerinin üstesinden gelir.\n\n**42CrMo (AISI 4140) — Kullanım Ömrü Sonu Araçlar (ELV) ve Ağır Hurda:** Motor blokları, şanzıman gövdeleri, çelik bobin kesik parçaları ve yapısal çelik. 42CrMo'nun olağanüstü darbe enerjisi emilimi (Charpy V-çentik > 35J), otomotiv ve metal yıkım sektörlerindeki en ağır darbe yükü uygulamaları için kesin tercihtir.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
     compatibleMachines: [
@@ -924,34 +930,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "impact-alloy",
-        tag: "METALLURGY",
-        title: "Massive Core Toughness",
+        tag: "METALURJİ",
+        title: "Olağanüstü Çekirdek Dayanıklılığı",
         description:
-          "Held at HRC 50–54, H13 and 42CrMo alloys provide the massive core elasticity needed to absorb extreme kinetic impacts, avoiding the catastrophic shattering typical of D2 blades.",
+          "HRC 50–54 sertlik aralığında üretilen H13 ve 42CrMo alaşımları, aşırı kinetik darbeleri emmek için gereken yüksek çekirdek esnekliğini sağlar ve D2 bıçaklarında sıkça görülen yıkıcı parçalanmayı önler.",
       },
       {
         id: "heavy-spline",
-        tag: "TORQUE TRANSFER",
-        title: "Zero-Slippage Splines",
+        tag: "TORK AKTARIMI",
+        title: "Kaymasız Spline'lar",
         description:
-          "Full-circumference spline bores machined by Wire-EDM to ±0.01mm ensure zero-slippage torque transfer under extreme shredding loads, eliminating rotor shaft damage.",
+          "Tel Erodizasyon (Wire-EDM) yöntemiyle ±0,01 mm hassasiyetle işlenen tam çevresi boyunca uzanan spline delikleri, aşırı parçalama yükleri altında kaymasız tork aktarımını garanti eder ve rotor milinin hasar görmesini önler.",
       },
       {
         id: "low-profile-hooks",
-        tag: "GEOMETRY",
-        title: "Low-Profile Biting Hooks",
+        tag: "GEOMETRİ",
+        title: "Düşük Profilli Isırma Kancaları",
         description:
-          "1 to 3 heavy-root-thickness hooks provide maximum biting force per stroke for shearing thick metal casings, without the fracture risks associated with multi-claw designs.",
+          "1 ila 3 adet kalın kök kalınlığına sahip kanca, çok pençeli tasarımlarda görülen kırılma riski olmaksızın, kalın metal gövdeleri kesmek için her vuruşta maksimum kesme kuvveti sağlar.",
       },
     ],
     dimensionLabels: {
-      col0: "Scrap Class",
-      col1: "Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Configuration",
-      col4: "Recommended Hooks",
+      col0: "Hurda Sınıfı",
+      col1: "Dış Çap",
+      col2: "Bıçak Kalınlığı",
+      col3: "Delik Yapısı",
+      col4: "Önerilen Kancalar",
       caption:
-        "* Custom OD up to Ø800+ mm, specific spline profiles, and custom thicknesses available. Send us your rotor shaft drawing for an exact match.",
+        "* Ø800+ mm’ye kadar özel dış çaplar, özel spline profilleri ve özel kalınlıklar mevcuttur. Tam uyumlu bir ürün için rotor mili çiziminizi bize gönderin.",
     },
     standardDimensions: [
       {
@@ -985,61 +991,60 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why choose H13 or 42CrMo over D2 for metal shredding applications?",
+            "Metal parçalama uygulamalarında neden D2 yerine H13 veya 42CrMo tercih edilmelidir?",
           answer:
-            "D2 is optimized for wear resistance at the expense of toughness—it reaches HRC 58–62 but becomes brittle under extreme shock loading. When a D2 blade strikes an engine block, the impact energy exceeds the material's fracture toughness in microseconds, causing catastrophic hook shattering. H13 and 42CrMo (AISI 4140) possess inherently superior toughness; at HRC 50–54, they absorb the same impact energy elastically rather than fracturing.",
+            "D2, tokluktan ödün vererek aşınma direncine göre optimize edilmiştir; HRC 58–62 sertliğine ulaşır, ancak aşırı darbe yüklemesi altında kırılgan hale gelir. Bir D2 bıçağı motor bloğuna çarptığında, darbe enerjisi mikrosaniyeler içinde malzemenin kırılma tokluğunu aşar ve kancanın feci şekilde parçalanmasına neden olur. H13 ve 42CrMo (AISI 4140) ise doğası gereği üstün tokluğa sahiptir; HRC 50–54 sertlik aralığında, aynı darbe enerjisini kırılmak yerine elastik olarak emerler.",
         },
         {
           question:
-            "What hook count and profile should I specify for ELV automotive shredding?",
+            "ELV otomotiv parçalama işlemi için hangi kanca sayısı ve profilini belirtmeliyim?",
           answer:
-            "For ELV primary shredding (car bodies, engine subassemblies), specify 1-hook or 2-hook low-profile designs with maximum root thickness. A low claw count concentrates the available machine torque onto fewer, robust hook contacts, generating the massive biting force needed to penetrate thick steel. High claw counts spread torque too thinly, causing the blade to slide over the metal rather than biting into it.",
+            "ELV birincil parçalama işlemleri (otomobil gövdeleri, motor alt grupları) için, maksimum kök kalınlığına sahip 1 kancalı veya 2 kancalı düşük profilli tasarımları tercih edin. Düşük pençe sayısı, makinenin mevcut torkunu daha az sayıda, sağlam kanca temas noktasına yoğunlaştırarak kalın çeliği delmek için gereken muazzam ısırma kuvvetini oluşturur. Yüksek pençe sayısı ise torku çok ince bir alana yayar ve bıçağın metale saplanmak yerine üzerinde kaymasına neden olur.",
         },
         {
           question:
-            "How do splined bores prevent rotor shaft damage in heavy metal shredding?",
+            "Yivli delikler, ağır metal parçalama işlemlerinde rotor milinin hasar görmesini nasıl önler?",
           answer:
-            "In heavy metal shredding, peak rotor torque spikes to 3–5× steady-state load during a hard strike. Standard single-keyed bores concentrate all this torque on one point, progressively widening the keyway and ultimately shearing the key. Wire-EDM splined bores distribute this massive torque evenly across 10 to 20 contact faces around the full circumference, reducing peak stress and protecting your expensive rotor shaft.",
+            "Ağır metal parçalama işlemlerinde, sert bir darbe sırasında rotor torku, kararlı durum yükünün 3–5 katına kadar yükselir. Standart tek kanallı delikler, tüm bu torku tek bir noktada yoğunlaştırır; bu da kanalın giderek genişlemesine ve sonunda kanalin kopmasına neden olur. Tel EDM ile işlenmiş yivli delikler, bu muazzam torku tam çevredeki 10 ila 20 temas yüzeyine eşit olarak dağıtır, böylece tepe gerilimi azaltılır ve pahalı rotor miliniz korunur.",
         },
         {
           question:
-            "What are the warning signs that metal shredder blades need replacement?",
+            "parçalayıcı bıçakları metal parçasının değiştirilmesi gerektiğini gösteren uyarı işaretleri nelerdir?",
           answer:
-            "Key indicators include: (1) Visible hairline fractures at the hook root; (2) Outer diameter (OD) wear exceeding 10–15mm below nominal, indicating a loss of shear clearance; (3) Bore elongation, meaning the blade rocks on the shaft even under full tightening torque; (4) A throughput reduction of >20% at a constant motor load, indicating the blades are pushing rather than shearing the scrap.",
+            "Anahtar göstergeler şunlardır: (1) Kanca kökünde gözle görülür ince çatlaklar; (2) Nominal değerin 10–15 mm altına düşen dış çap (OD) aşınması; bu durum kesme boşluğunun kaybolduğunu gösterir; (3) Delik uzaması; bu, bıçağın tam sıkma torkunda bile şaft üzerinde sallanması anlamına gelir; (4) Sabit motor yükünde %20'den fazla verim düşüşü; bu durum, bıçakların hurdayı kesmek yerine ittiğini gösterir.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply blades for Shred-Tech, Arjes, or Forus shredding platforms?",
+            "Shred-Tech, Arjes veya Forus öğütme platformları için bıçak tedarik edebilir misiniz?",
           answer:
-            "Yes. We reverse-engineer replacement blades from factory-measured OEM samples for Shred-Tech ST series, Arjes Imperator/Orion, Forus heavy-duty shredders, and SSI platforms. Custom spline profiles and counter-bore patterns are produced with extreme precision using Wire-EDM.",
+            "Evet. Shred-Tech ST serisi, Arjes Imperator/Orion, Forus ağır hizmet tipi parçalayıcılar ve SSI platformları için fabrika tarafından ölçülmüş OEM numunelerinden yola çıkarak yedek bıçakların tersine mühendislik çalışmasını gerçekleştiriyoruz. Özel spline profilleri ve havşa desenleri, Tel-EDM yöntemi kullanılarak son derece hassas bir şekilde üretilmektedir.",
         },
         {
           question:
-            "What is the lead time for heavy-duty metal shredder blades?",
+            "Ağır hizmet tipi metal parçalayıcı bıçakları ürününün teslim süresi ne kadardır?",
           answer:
-            "Standard H13 and 42CrMo grades in common dimensions are held in semi-finished stock and typically ship within 10–15 working days. For non-standard massive ODs or custom spline profiles requiring new tooling, lead time is 20–25 working days.",
+            "Yaygın boyutlardaki standart H13 ve 42CrMo kaliteleri yarı mamul stokta bulundurulur ve genellikle 10–15 iş günü içinde sevk edilir. Yeni kalıplar gerektiren standart dışı büyük dış çaplar veya özel spline profilleri için teslim süresi 20–25 iş günüdür.",
         },
         {
-          question:
-            "What quality certifications and documentation do you provide?",
+          question: "Hangi kalite sertifikaları ve belgeleri sunuyorsunuz?",
           answer:
-            "Sureay is ISO 9001:2015 certified. For heavy metal shredder blades, we provide full traceability: Rockwell HRC hardness test reports (minimum 5 points per blade), Charpy impact test certificates for 42CrMo grades, CMM dimensional inspection records, and steel mill composition certificates.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Ağır metal parçalayıcı bıçakları için tam izlenebilirlik sağlıyoruz: Rockwell HRC sertlik test raporları (bıçak başına en az 5 nokta), 42CrMo kaliteleri için Charpy darbe testi sertifikaları, CMM boyutsal kontrol kayıtları ve çelik fabrikası bileşim sertifikaları.",
         },
       ],
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Battery Recycling Blades",
+    name: "Pil Geri Dönüşüm Bıçakları",
     fullName:
-      "Precision Twin Shaft Shredder Blades for Li-Ion Battery Recycling",
+      "Lityum-İyon Pil Geri Dönüşümü için Hassas Çift Mil Parçalayıcı Bıçakları",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Shredder Blades",
+    categoryDisplay: "Parçalayıcı Bıçakları",
     image: "/images/products/shredder-blades/shredder-blades.webp",
-    badge: "New Energy",
+    badge: "Yeni Enerji",
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-blades/shredder-blades.webp",
@@ -1047,9 +1052,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Engineered for the critical pre-shredding of EV lithium-ion battery packs, modules, and cells under inert gas environments. Precision ground to ±0.02mm thickness parallelism to ensure exacting shear clearances that prevent foil tearing and thermal runaway. Specialized alloy selection and surface treatments resist the highly corrosive effects of LiPF6 battery electrolytes.",
+      "Elektrikli araçların lityum-iyon pil paketleri, modülleri ve hücrelerinin inert gaz ortamlarında gerçekleştirilen kritik ön parçalama işlemi için tasarlanmıştır. Folyo yırtılmasını ve termal kaçışı önleyen hassas kesme boşluklarını sağlamak için ±0,02 mm kalınlık paralelliğinde hassas bir şekilde taşlanmıştır. Özel alaşım seçimi ve yüzey işlemleri, LiPF6 pil elektrolitlerinin son derece aşındırıcı etkilerine karşı direnç sağlar.",
     fullDescription:
-      "The recycling of lithium-ion (Li-ion) batteries presents unique mechanical and chemical challenges that standard shredder blades cannot reliably handle. Pre-shredding of battery packs and cylindrical cells frequently occurs in nitrogen-purged atmospheres to suppress fire and thermal runaway risk. Standard shredder blades fail prematurely in this environment through two distinct mechanisms: electrolyte corrosion from LiPF6 and HF acid released during cell breach, and mechanical failure caused by imprecise shear clearances that fold—rather than cut—the thin copper (8–12μm) and aluminum (15–20μm) current collector foils inside battery cells.\n\n## Micro-Clearance Precision Grinding (±0.02mm)\n\nIf the gap between counter-rotating twin-shaft blades is too wide, battery foils do not shear—they fold, stretch, and wrap around the rotor, causing immediate jams in an inert gas environment. Clearing a rotor jam under nitrogen requires complete system shutdown, purge, and manual removal—hours of downtime consuming significant N₂. Sureay battery shredder blades are precision ground to ±0.02mm thickness parallelism across the full blade face, ensuring minimum consistent shear clearance across the entire rotor for clean, controlled cuts on pouch cells, prismatic modules, and cylindrical 18650/21700 battery packs.\n\n## Electrolyte Corrosion Resistance\n\nLiPF6 electrolytes hydrolyze on contact with atmospheric moisture to produce hydrofluoric acid (HF)—one of the most aggressively corrosive industrial chemicals. Standard D2 or SKD11 tool steels corrode rapidly in this environment, with surface pitting initiating at grain boundaries within 200–500 operating hours. Sureay applies specialized anti-corrosion surface treatments and selects corrosion-resistant alloy grades for battery recycling applications, significantly extending service intervals.\n\n## Precision Wire-EDM Bore Profiles\n\nBattery pre-shredders operate at precise, computer-controlled rotor speeds where bore-to-shaft backlash directly affects blade position accuracy and shear gap consistency. All bore profiles are Wire-EDM machined to ±0.01mm, ensuring zero rotational play that could cause shear clearance inconsistency during the precision shredding of battery foil stacks.",
+      "Lityum-iyon (Li-ion) pillerin geri dönüşümü, standart parçalayıcı bıçakları’nin güvenilir bir şekilde üstesinden gelemediği benzersiz mekanik ve kimyasal zorluklar ortaya koymaktadır. Yangın ve termal kaçak riskini önlemek amacıyla pil paketlerinin ve silindirik hücrelerin ön parçalanması işlemi genellikle azotla temizlenmiş ortamlarda gerçekleştirilir. Standart parçalayıcı bıçakları, bu ortamda iki farklı mekanizma nedeniyle erken arızalanır: Hücrelerin kırılması sırasında açığa çıkan LiPF6 ve HF asitlerinden kaynaklanan elektrolit korozyonu ve pil hücrelerinin içindeki ince bakır (8–12 μm) ve alüminyum (15–20 μm) akım toplayıcı folyolarını kesmek yerine katlayan, hatalı kesme açıklıklarından kaynaklanan mekanik arızalar.\n\n## Mikro Boşluklu Hassas Taşlama (±0,02 mm)\n\nTers yönde dönen çift şaftlı bıçaklar arasındaki boşluk çok genişse, pil folyoları kesilmez; katlanır, gerilir ve rotorun etrafına sarılır, bu da inert gaz ortamında anında sıkışmalara neden olur. Azot ortamında bir rotor sıkışmasını gidermek, sistemin tamamen kapatılmasını, gazın boşaltılmasını ve manuel olarak çıkarılmasını gerektirir; bu da saatler süren duruş süresine ve önemli miktarda N₂ tüketimine yol açar. Sureay pil parçalayıcı bıçakları bıçakları, bıçak yüzeyinin tamamında ±0,02 mm kalınlık paralelliği ile hassas bir şekilde taşlanmıştır; bu sayede, poşet hücreler, prizmatik modüller ve silindirik 18650/21700 pil paketlerinde temiz ve kontrollü kesimler için tüm rotor boyunca minimum ve tutarlı kesme açıklığı sağlanır.\n\n## Elektrolit Korozyon Direnci\n\nLiPF₆ elektrolitleri, atmosferik nemle temas ettiğinde hidrolize olur ve en agresif korozif endüstriyel kimyasallardan biri olan hidroflorik asit (HF) üretir. Standart D2 veya SKD11 takım çelikleri bu ortamda hızla korozyona uğrar ve 200–500 çalışma saati içinde tane sınırlarında yüzey çukurlaşması başlar. Sureay, pil geri dönüşüm uygulamaları için özel korozyon önleyici yüzey işlemleri uygular ve korozyona dayanıklı alaşım kaliteleri seçerek servis aralıklarını önemli ölçüde uzatır.\n\n## Hassas Tel-EDM Delik Profilleri\n\nPil ön parçalayıcıları, bilgisayar kontrollü hassas rotor hızlarında çalışır; bu sistemlerde delik-mil boşluğu, bıçak konumunun doğruluğunu ve kesme aralığının tutarlılığını doğrudan etkiler. Tüm delik profilleri, ±0,01 mm hassasiyetle Tel-EDM ile işlenir; bu sayede, pil folyo yığınlarının hassas parçalanması sırasında kesme aralığı tutarsızlığına neden olabilecek dönme boşluğu tamamen ortadan kaldırılır.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
@@ -1081,34 +1086,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "micro-clearance",
-        tag: "PRECISION",
-        title: "±0.02mm Thickness Parallelism",
+        tag: "HASSASİYET",
+        title: "±0,02 mm Kalınlık Paralelliği",
         description:
-          "Precision ground to ultra-tight thickness tolerances, ensuring consistent shear clearance across the full rotor for clean cuts on copper and aluminum battery foils without folding or rotor wrap-arounds.",
+          "Ultra dar kalınlık toleranslarına göre hassas bir şekilde taşlanmış olup, rotorun tamamında tutarlı bir kesme açıklığı sağlayarak bakır ve alüminyum pil folyolarında katlanma veya rotorun folyoyu sarması gibi sorunlar olmadan temiz kesimler yapılmasını garanti eder.",
       },
       {
         id: "corrosion-resistance",
-        tag: "DURABILITY",
-        title: "Electrolyte Corrosion Resistance",
+        tag: "DAYANIKLILIK",
+        title: "Elektrolit Korozyon Direnci",
         description:
-          "Specialized metallurgy and surface treatments provide enhanced resistance to LiPF6-derived HF acid corrosion, extending blade service intervals in aggressive battery recycling chemical environments.",
+          "Özel metalurji ve yüzey işlemleri, LiPF6 kaynaklı HF asidi korozyonuna karşı daha yüksek direnç sağlayarak, agresif pil geri dönüşüm kimyasal ortamlarında bıçakların bakım aralıklarını uzatır.",
       },
       {
         id: "wire-edm-bore",
-        tag: "FITMENT",
-        title: "Wire-EDM Precision Bores",
+        tag: "MONTAJ",
+        title: "Tel EDM ile Hassas Delikler",
         description:
-          "All bore profiles are machined to ±0.01mm via Wire-EDM, eliminating rotational play that causes shear gap inconsistency during precision battery foil stack processing.",
+          "Tüm delik profilleri, Tel-EDM yöntemiyle ±0,01 mm hassasiyetinde işlenir; bu sayede, hassas pil folyo yığını işleme sürecinde kesme aralığı tutarsızlığına neden olan dönme boşluğu ortadan kaldırılır.",
       },
     ],
     dimensionLabels: {
-      col0: "Cell / Module Type",
-      col1: "Blade Outer Diameter",
-      col2: "Blade Thickness",
-      col3: "Bore Profile",
-      col4: "Thickness Tolerance",
+      col0: "Hücre / Modül Türü",
+      col1: "Bıçak Dış Çapı",
+      col2: "Bıçak Kalınlığı",
+      col3: "Delik Profili",
+      col4: "Kalınlık Toleransı",
       caption:
-        "* Exact bore profiles, OD, and thickness supplied to customer drawings. Inert-gas compatible material options available.",
+        "* Müşteri çizimlerine uygun hassas iç çap profilleri, dış çap ve kalınlık. İnert gazla uyumlu malzeme seçenekleri mevcuttur.",
     },
     standardDimensions: [
       {
@@ -1138,58 +1143,59 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is ±0.02mm thickness tolerance critical for battery pack pre-shredding?",
+            "Pil paketinin ön parçalanması için ±0,02 mm kalınlık toleransı neden kritik öneme sahiptir?",
           answer:
-            "Battery packs contain copper and aluminum current collector foils that are 8–20μm thick. When the shear gap between counter-rotating blades exceeds approximately 0.05mm, the foils deform plastically rather than shearing—folding and wrapping around the rotor, causing operational jams. In a nitrogen-purged environment, clearing a rotor jam requires complete shutdown of the inert gas system, evacuation, and manual removal—hours of downtime consuming significant N₂. Holding blade thickness parallelism to ±0.02mm guarantees a consistent minimum shear gap across the full rotor length, preventing foil wrap-arounds under normal operating conditions.",
+            "Pil paketleri, 8–20 μm kalınlığında bakır ve alüminyum akım toplayıcı folyolar içerir. Ters yönde dönen kanatlar arasındaki kesme aralığı yaklaşık 0,05 mm’yi aştığında, folyolar kesilmek yerine plastik olarak deforme olur; katlanarak rotorun etrafına sarılır ve çalışmada sıkışmalara neden olur. Azotla temizlenmiş bir ortamda, rotor sıkışmasını gidermek için inert gaz sisteminin tamamen kapatılması, havanın boşaltılması ve manuel olarak çıkarılması gerekir; bu da saatler süren arıza süresi ve önemli miktarda N₂ tüketimi anlamına gelir. Kanat kalınlığı paralelliğini ±0,02 mm aralığında tutmak, rotorun tüm uzunluğu boyunca tutarlı bir minimum kesme aralığı sağlar ve normal çalışma koşullarında folyoların sarılmasını önler.",
         },
         {
           question:
-            "What causes blade corrosion in lithium-ion battery shredding environments?",
+            "Lityum-iyon pil parçalama ortamlarında bıçak korozyonuna ne sebep olur?",
           answer:
-            "LiPF6, the most common lithium-ion electrolyte salt, reacts with trace atmospheric moisture to produce HF (hydrofluoric acid). In a cell breach event during pre-shredding, even a nitrogen atmosphere contains enough residual moisture for partial hydrolysis. Standard tool steel grades (D2, SKD11) corrode rapidly in HF—surface pitting initiates at grain boundaries within 200–500 hours, degrading edge geometry and reducing shear efficiency. Sureay applies specialized anti-corrosion surface treatments to extend service intervals significantly beyond standard tool steels in battery recycling lines.",
+            "En yaygın lityum-iyon elektrolit tuzu olan LiPF₆, atmosferdeki eser miktardaki nemle reaksiyona girerek HF (hidroflorik asit) oluşturur. Parçalama öncesi aşamada bir hücre sızıntısı meydana geldiğinde, nitrojen atmosferi bile kısmi hidroliz için yeterli miktarda kalıntı nem içerir. Standart takım çeliği kaliteleri (D2, SKD11), HF içinde hızla korozyona uğrar; 200–500 saat içinde tane sınırlarında yüzey çukurlaşması başlar, bu da kenar geometrisini bozar ve kesme verimliliğini düşürür. Sureay, pil geri dönüşüm hatlarında hizmet aralıklarını standart takım çeliklerine kıyasla önemli ölçüde uzatmak için özel korozyon önleyici yüzey işlemleri uygular.",
         },
         {
           question:
-            "Should twin-shaft or single-shaft shredders be used for Li-ion battery pre-processing?",
+            "Lityum-iyon pil ön işleme sürecinde çift şaftlı mı yoksa tek şaftlı öğütücüler mi kullanılmalıdır?",
           answer:
-            "Twin-shaft (dual-shaft) shredders are standard for EV battery pack primary size reduction because the counter-rotating, low-speed high-torque design subjects cells to controlled shear rather than impact. This controlled failure mode reduces acute thermal events compared to high-speed single-shaft impactors. Precision twin-shaft blades with controlled shear clearances are therefore the mechanical first-stage standard, followed by further downstream processing.",
+            "Çift şaftlı (ikili şaftlı) parçalayıcılar, elektrikli araç pil paketlerinin birincil boyut küçültme işleminde standart olarak kullanılır; zira ters yönde dönen, düşük hızlı ve yüksek torklu tasarım, hücreleri darbe yerine kontrollü kesme kuvvetine maruz bırakır. Bu kontrollü kırılma şekli, yüksek hızlı tek şaftlı darbe makinelerine kıyasla ani ısınma olaylarını azaltır. Bu nedenle, kontrollü kesme aralıklarına sahip hassas çift şaftlı bıçaklar, mekanik ilk aşama standardıdır ve bunu daha sonraki işleme aşamaları izler.",
         },
         {
           question:
-            "What bore profiles are required for nitrogen-purged battery shredder platforms?",
+            "Azotla temizlenen pil parçalayıcı platformları için hangi delik profilleri gereklidir?",
           answer:
-            "Battery pre-shredders from specialist manufacturers (Erdwich, Hosokawa, Metso, and Andritz battery recycling lines) use proprietary rotor shaft profiles more precisely toleranced than general industrial shredders. Wire-EDM splined and hexagonal bores to ±0.01mm are required for zero-play rotor mounting—any rotational backlash at operating speed causes consistent shear gap variation and foil jam risk. We manufacture bore profiles to custom shaft drawings; please provide the rotor shaft profile drawing for exact bore specification.",
+            "Uzman üreticilerin (Erdwich, Hosokawa, Metso ve Andritz pil geri dönüşüm hatları) ürettiği pil ön parçalayıcıları, genel endüstriyel parçalayıcılara kıyasla daha hassas toleranslara sahip özel rotor mili profilleri kullanır. Sıfır boşluklu rotor montajı için ±0,01 mm hassasiyetinde tel-EDM ile işlenmiş yivli ve altıgen delikler gereklidir; çalışma hızında herhangi bir dönme boşluğu, kesme aralığında tutarlı bir sapmaya ve folyo sıkışması riskine neden olur. Delik profillerini özel mil çizimlerine göre üretiyoruz; kesin delik özellikleri için lütfen rotor mil profili çizimini sağlayın.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply matched rotor and counter-knife sets for battery pre-shredders?",
+            "Pil ön parçalayıcıları için birbiriyle uyumlu rotor ve karşı bıçak setleri tedarik edebilir misiniz?",
           answer:
-            "Yes. For battery recycling lines where shear clearance consistency is paramount, we supply rotor blade sets and stationary counter-knives ground together as a matched pair to ensure the composite shear gap meets specification. All matched sets include a clearance verification certificate documenting the measured gap at multiple points across the rotor length.",
+            "Evet. Kesme aralığının tutarlılığının hayati önem taşıdığı pil geri dönüşüm hatları için, kompozit kesme aralığının teknik şartnamelere uygun olmasını sağlamak üzere, birbiriyle uyumlu bir çift olarak birlikte taşlanmış rotor bıçak setleri ve sabit karşı bıçaklar tedarik ediyoruz. Tüm uyumlu setler, rotor uzunluğu boyunca çeşitli noktalarda ölçülen aralığı belgeleyen bir aralık doğrulama sertifikası içerir.",
         },
         {
           question:
-            "What quality documentation is provided for battery recycling plant qualification?",
+            "Pil geri dönüşüm tesisinin yeterlilik değerlendirmesi için hangi nitelikteki belgeler sunulmaktadır?",
           answer:
-            "Battery recycling facilities frequently require enhanced quality documentation for process validation. We supply: CMM dimensional inspection reports, roundness and parallelism measurement records, surface treatment process certificates, material traceability from certified steel mill CoA through to final inspection, and hardness test results per blade. Application-specific documentation packages can be provided for IATF 16949 or ISO 45001 controlled environments.",
+            "Pil geri dönüşüm tesisleri, süreç doğrulaması için sıklıkla daha kapsamlı kalite belgeleri talep eder. Sunduğumuz belgeler şunlardır: CMM boyut kontrol raporları, yuvarlaklık ve paralellik ölçüm kayıtları, yüzey işleme süreç sertifikaları, sertifikalı çelik fabrikası CoA'sından son kontrole kadar malzeme izlenebilirliği ve her bir bıçak için sertlik testi sonuçları. IATF 16949 veya ISO 45001 kontrollü ortamlar için uygulamaya özel belge paketleri sağlanabilir.",
         },
         {
           question:
-            "Do you offer sample blades for process validation before full production orders?",
+            "Tam üretim siparişlerinden önce süreç doğrulama amacıyla numune bıçaklar sunuyor musunuz?",
           answer:
-            "Yes. Battery recycling process qualification typically requires 2–4 sample blades for fit verification and electrolyte resistance testing before production commitment. Sample lead time is 10–15 working days for battery-grade specifications. We can participate in customer technical review calls during the validation process.",
+            "Evet. Pil geri dönüşüm sürecine ilişkin uygunluk değerlendirmesi için, üretim taahhüdü verilmeden önce genellikle uyum doğrulaması ve elektrolit direnci testleri amacıyla 2–4 adet numune bıçağı gereklidir. Pil sınıfı teknik özellikler için numune teslim süresi 10–15 iş günüdür. Doğrulama süreci boyunca müşterinin teknik inceleme toplantılarına katılabiliriz.",
         },
       ],
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Tissue Log Saw Blades",
-    fullName: "Premium Circular Log Saw Blades for Tissue & Towel Converting",
+    name: "Kağıt Rulo Testere Bıçakları",
+    fullName:
+      "Kağıt Mendil ve Havlu Üretimine Yönelik Üst Sınıf Dairesel Kütük Testere Bıçakları",
     category: "log_saw_blades",
     sector: "paper",
-    categoryDisplay: "Tissue Paper Blades",
+    categoryDisplay: "Kağıt Mendil Bıçakları",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
     badge: "Zero Core Crush",
     badgeColor: "blue",
@@ -1202,17 +1208,17 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Tissue log saw blade render showing mirror-polished face and drive pin hole pattern",
-      "Stack of finished tissue log saw blades in a wooden packing crate at Sureay",
-      "Tissue log saw blade packed in a wooden crate with edge protector before shipment",
-      "Ø610 mm D2 tissue log saw blade, mirror-polished face with drive pin holes",
-      "Ø68.26 mm bore and drive pin hole pattern for Fabio Perini log saws",
-      "Tissue log saw blade face showing mirror-polished finish under workshop lighting",
+      "Aynalı cilalı yüzey ve tahrik pimi delik düzenini gösteren doku kütük testere bıçağı görüntüsü",
+      "Sureay’de ahşap bir ambalaj sandığı içindeki bitmiş log testere bıçakları kağıt mendil yığını",
+      "Sevkiyat öncesinde kenar koruyucusu ile birlikte ahşap bir kasaya paketlenmiş doku kütük testere bıçağı",
+      "Ø610 mm D2 kağıt rulosu testere bıçağı, tahrik pimi delikleri bulunan ayna cilalı yüzey",
+      "Fabio Perini kütük testereleri için Ø68,26 mm çaplı delik ve tahrik pimi delik düzeni",
+      "Atölye aydınlatması altında ayna parlaklığında cilalanmış yüzeyi görülen doku kütük testere bıçağı",
     ],
     description:
-      "Tissue log saw blades Ø610–Ø1200 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
+      "Kağıt mendil log testere bıçakları Ø610–Ø1200 mm — vakumla sertleştirilmiş D2/Cr12MoV (HRC 58–60), sallanmasız çapraz kesim için ≤0,15 mm yanal sapma değerine kadar mikro taşlanmış. Kağıt mendil, mutfak havlusu ve JRT hatlarında ezilmiş çekirdekleri ve kağıt tozunu ortadan kaldırır. Hat içi CBN bileme ile uyumludur. Fabio Perini, PCMC, Casmatic, Gambini ve Bretting için doğrudan takılabilen OEM uyumludur. Özel çaplar 10 iş günü içinde teslim edilir. Dünya çapında kağıt mendil işleme hatları için güvenilir log testere bıçakları.",
     fullDescription:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage—crushed cardboard cores, excessive dust generation, or angled cut faces—propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.\n\nSureay tissue log saw blades are manufactured from premium D2 (1.2379) and Cr12MoV cold-work tool steels. Because these massive blades (up to Ø1200 mm) spin at extreme RPMs, stability is everything. Every blade is vacuum-hardened, tension-leveled, and micro-ground to strict dimensional tolerances verified on a calibrated CMM before dispatch:\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Bore tolerance:** Ø68.26 mm (+0.05 / 0.00 mm)\n\n## Continuous Sharpening Compatibility\n\nUnlike standard circular knives, tissue log saws are continuously sharpened *during* operation by synchronized CBN (Cubic Boron Nitride) grinding wheels. Sureay’s heat treatment targets HRC 58–60. This specific hardness range ensures the blade hones cleanly against the CBN stones without loading or glazing them, maintaining a razor-sharp edge cycle after cycle without consuming your expensive sharpening wheels.\n\n## Bevel Geometry & Dust Reduction\n\nTissue is a low-density, high-surface-area web with near-zero compressive strength. Cutting it with too steep a bevel creates compression, leading to excessive paper dust (a major fire hazard in spray-glued towel lines) and edge densification that reduces roll softness. We utilize a shallow bevel angle (15°–25°) that separates fibers by pure shear. Combined with a mirror-polished blade face (Ra ≤0.2 μm), this delivers flawless cuts on premium 2-ply and 3-ply bath tissue.\n\n## Bore Compatibility by OEM Platform\n\n**Ø68.26 mm (+0.05 mm):** Fabio Perini (all series), PCMC Forte/Elite, Körber/MTC log saws.\n\n**Ø82.55 mm:** Casmatic (Kimberly-Clark licensed platforms), Italian and Spanish third-party OEM log saw systems.\n\n**Ø60.00 mm:** Large-format log saws for industrial wiper, jumbo roll (JRT), and coreless bath tissue production (OD 870–1000 mm).\n\nCustom OD from Ø610 mm to Ø1200 mm manufactured to order with a standard 10-working-day lead time. Drawing review and dimensional sign-off available on first-order tooling.\n\n## Advanced Surface Coatings\n\n**Hard Chrome Plating:** Provides corrosion resistance in high-humidity paper mill environments (≥75% RH) and reduces tissue fiber adhesion coefficient, extending the clean-running interval between blade dressing cycles.\n\n**Teflon (PTFE) Coating:** Creates a highly lubricated surface that glides through dense kitchen towel logs, drastically reducing motor amp draw and eliminating burn marks on the paper edges. The top specification for premium 3-ply kitchen towel lines.\n\n**TiN PVD Coating:** Physical vapour deposition titanium nitride (2–3 μm, HV 2300+) extends the sharp-edge service interval in high-cycle operation. Recommended for premium tissue brands with strict dust contamination specifications.",
+      "Kağıt mendil kütüğünün enine kesimi, kağıt mendil işleme hattındaki en riskli kesme işlemidir. Bu aşamadaki bir boyut hatası — ezilmiş karton göbekler, aşırı toz oluşumu veya eğimli kesim yüzeyleri — anında paketleme istasyonlarına yayılır ve hat durmalarına ve tüketici kalitesinde reddedilmelere yol açar.\n\nSureay kağıt mendil log testere bıçakları bıçakları, birinci sınıf D2 (1.2379) ve Cr12MoV soğuk iş takım çeliği malzemelerinden üretilir. Bu devasa bıçaklar (Ø1200 mm'ye kadar) aşırı devirlerde döndüğü için, stabilite her şeyden önemlidir. Her bıçak, sevkiyat öncesinde kalibre edilmiş bir CMM üzerinde doğrulanmış sıkı boyutsal toleranslara göre vakumla sertleştirilir, gerilim dengelenir ve mikro taşlama işleminden geçirilir:\n\n- **Yanal salgı:** ≤0,15 mm\n- **Kenar sapması:** ≤0,10 mm\n- **Yüzey paralelliği:** 0,05 mm\n- **Eşmerkezlilik (dış çap – iç çap):** ≤0,30 mm\n- **Delik toleransı:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Sürekli Bileme Uyumluluğu\n\nStandart dairesel bıçaklar'den farklı olarak, doku kütük testereleri, senkronize CBN (Kübik Bor Nitrür) bileme taşları tarafından çalışma *sırasında* sürekli olarak bilinir. Sureay’in ısıl işlem modeli, HRC 58–60 sertlik aralığını hedefler. Bu özel sertlik aralığı, bıçağın CBN taşlarına yük bindirmeden veya taşları parlatmadan temiz bir şekilde bilenenmesini sağlar; böylece pahalı bileme taşlarınızı tüketmeden her döngüde jilet keskinliğinde bir kenar elde edersiniz.\n\n## Eğim Geometrisi ve Toz Azaltma\n\nKağıt mendil, sıkıştırma mukavemeti neredeyse sıfır olan, düşük yoğunluklu, geniş yüzey alanlı bir tabakadır. Çok dik bir eğim açısıyla kesilmesi sıkıştırmaya yol açar; bu da aşırı kağıt tozu oluşumuna (sprey yapıştırmalı havlu üretim hatlarında önemli bir yangın tehlikesi) ve rulonun yumuşaklığını azaltan kenar yoğunlaşmasına neden olur. Lifleri sadece kesme kuvveti ile ayıran sığ bir eğim açısı (15°–25°) kullanıyoruz. Ayna parlaklığında cilalanmış bıçak yüzeyi (Ra ≤0,2 μm) ile birleştiğinde, bu özellik birinci sınıf 2 katlı ve 3 katlı tuvalet kağıtlarında kusursuz kesimler sağlar.\n\n## OEM Platformuna Göre Delik Uyumluluğu\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (tüm seriler), PCMC Forte/Elite, Körber/MTC kütük testereleri.\n\n**Ø82,55 mm:** Casmatic (Kimberly-Clark lisanslı platformlar), İtalyan ve İspanyol üçüncü taraf OEM kütük testere sistemleri.\n\n**Ø60,00 mm:** Endüstriyel silme mendili, jumbo rulo (JRT) ve çekirdeksiz tuvalet kağıdı üretimi için geniş format kütük testereleri (dış çap 870–1000 mm).\n\nØ610 mm ile Ø1200 mm arası özel dış çaplar, standart 10 iş günü teslim süresi ile sipariş üzerine üretilir. İlk sipariş kalıplarında çizim incelemesi ve boyut onayı mevcuttur.\n\n## Gelişmiş Yüzey Kaplamaları\n\n**Sert Krom Kaplama:** Yüksek nemli kağıt fabrikası ortamlarında (≥%75 bağıl nem) korozyon direnci sağlar ve kağıt liflerinin yapışma katsayısını azaltarak bıçak bileme döngüleri arasındaki temiz çalışma aralığını uzatır.\n\n**Teflon (PTFE) Kaplama:** Yoğun mutfak havlusu ruloları arasında kayan, yüksek oranda yağlanmış bir yüzey oluşturur; bu sayede motorun amper çekişini önemli ölçüde azaltır ve kağıt kenarlarında yanık izlerini ortadan kaldırır. Üst sınıf 3 katlı mutfak havlusu hatları için en üst düzey özellik.\n\n**TiN PVD Kaplama:** Fiziksel buhar biriktirme yöntemiyle uygulanan titanyum nitrür (2–3 μm, HV 2300+) kaplaması, yüksek devirli çalışmalarda keskin kenarların hizmet aralığını uzatır. Toz kirliliği konusunda sıkı spesifikasyonlara sahip premium kağıt mendil markaları için önerilir.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1269,60 +1275,60 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Log saw blade life on a tissue line is decided by how the steel behaves under continuous CBN honing, not by hardness alone. The two grades below cover almost every tissue and towel application we quote.",
+        "Kağıt mendil üretim hattında kütük testere bıçağının kullanım ömrü, yalnızca sertliğe değil, çeliğin sürekli CBN honlama işlemi altında nasıl davrandığına bağlıdır. Aşağıdaki iki kalite sınıfı, teklif verdiğimiz hemen hemen tüm kağıt mendil ve havlu uygulamalarını kapsamaktadır.",
       rows: [
         {
-          grade: "D2 / 1.2379",
+          grade: "D2 / 1,2379",
           hardness: "HRC 58–60",
           bestFor:
-            "Standard bath tissue and kitchen towel lines running in-line CBN sharpening. Our default grade.",
+            "Sıralı CBN bileme işleminden geçen standart tuvalet kağıdı ve mutfak havlusu üretim hatları. Varsayılan kalitemiz.",
           tradeoff:
-            "Highest all-round value. Not the longest life on heavily recycled, high-ash furnish.",
+            "En yüksek genel değer. Yüksek oranda geri dönüştürülmüş, kül içeriği yüksek ham maddede en uzun ömürlü değildir.",
         },
         {
           grade: "Cr12MoV",
           hardness: "HRC 58–60",
           bestFor:
-            "Lines where blade cost per cut matters more than absolute edge life; widely available regrind support.",
+            "Kesim başına bıçak maliyetinin, bıçağın mutlak kesme ömründen daha önemli olduğu uygulamalar; yaygın olarak sunulan bıçak bileme desteği.",
           tradeoff:
-            "Slightly lower wear resistance than D2 on abrasive recycled fibre.",
+            "Aşındırıcı geri dönüştürülmüş elyaf üzerinde D2’ye kıyasla biraz daha düşük aşınma direnci.",
         },
       ],
       outro:
-        "For high-speed lines running heavily recycled fibre with abrasive filler, we also quote M2 HSS, which holds the edge longest between grinds but is more sensitive to CBN wheel condition. If you are not sure which grade your line needs, tell us the furnish (virgin or recycled), the log density, and how many cuts per minute you run. We match the grade to the line, not the other way round.",
+        "Aşındırıcı dolgu maddesi içeren yüksek oranda geri dönüştürülmüş elyafın işlendiği yüksek hızlı hatlar için, bileme aralıkları arasında kesici kenar ömrünü en uzun süre koruyan ancak CBN taşının durumuna daha duyarlı olan M2 HSS'yi de öneriyoruz. Hattınızın hangi sınıfa ihtiyaç duyduğundan emin değilseniz, hammadde türünü (işlenmemiş veya geri dönüştürülmüş), kütük yoğunluğunu ve dakikada kaç kesim yaptığınızı bize bildirin. Sınıfı hatta uyarlarız, tersini yapmayız.",
     },
     componentsIntro:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage—crushed cardboard cores, excessive dust generation, or angled cut faces—propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.",
+      "Kağıt mendil üretim hattında, rulo kesme işlemi en büyük risk barındıran tek kesme işlemidir. Bu aşamadaki boyut hataları — ezilmiş karton göbekler, aşırı toz oluşumu veya eğri kesim yüzeyleri — anında paketleme istasyonlarına yansır ve bu da üretim hattının durmasına ve tüketici tarafından reddedilen ürünlerin ortaya çıkmasına neden olur.",
     components: [
       {
         id: "runout-control",
-        tag: "PRECISION",
-        title: "Zero-Wobble Tensioning",
+        tag: "HASSASİYET",
+        title: "Sallanmasız Gerdirme",
         description:
-          "Why does a log saw crush cardboard cores? Almost always because lateral runout has drifted past about 0.20 mm, and the blade starts beating the core instead of slicing it. A 610 mm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to ≤0.15 mm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
+          "Tomruk testeresinin karton göbekleri neden eziyor? Neredeyse her zaman yanal sapmanın yaklaşık 0,20 mm’yi aşması ve bıçağın göbeği kesmek yerine ona vurmaya başlaması nedeniyledir. Yüksek devirde dönen 610 mm’lik bir bıçak, uygun şekilde gerilmezse eğrilir. Her kütük testere bıçağını CNC ile gerdirip mikro taşlama yaparak yanal salgıyı ≤0,15 mm'ye indirgiyoruz; böylece bıçağın titreşmeden ve kırılgan karton göbeği ezmeden mükemmel bir şekilde düz kesim yapmasını sağlıyoruz.",
       },
       {
         id: "cbn-compatible",
-        tag: "METALLURGY",
-        title: "In-Line CBN Sharpening Ready",
+        tag: "METALURJİ",
+        title: "Sıralı CBN Bileme Hazır",
         description:
-          "D2 and Cr12MoV blades heat-treated to HRC 58–60. This specific hardness range responds cleanly to continuous CBN grinding wheels without loading or glazing them, maintaining a razor edge and protecting your sharpening equipment.",
+          "HRC 58–60 sertlik derecesine kadar ısıl işleme tabi tutulmuş D2 ve Cr12MoV bıçaklar. Bu özel sertlik aralığı, sürekli CBN taşlara karşı sorunsuz bir şekilde tepki verir; taşların tıkanmasına veya parlaklaşmasına neden olmaz, jilet gibi keskin bir kenar sağlar ve bileme ekipmanınızı korur.",
       },
       {
         id: "anti-friction",
-        tag: "COATINGS",
-        title: "Teflon & Chrome Finishes",
+        tag: "KAPLAMALAR",
+        title: "Teflon ve Krom Kaplamalar",
         description:
-          "Friction generates heat and explosive paper dust. Hard Chrome or Teflon (PTFE) coated blades lower the coefficient of friction, yielding pristine cut edges on premium 3-ply kitchen towel logs and extending Mean Time Between sharpening cycles.",
+          "Sürtünme, ısı ve patlayıcı kağıt tozu oluşturur. Sert krom veya Teflon (PTFE) kaplamalı bıçaklar sürtünme katsayısını düşürerek, birinci sınıf 3 katlı mutfak havlusu rulolarında kusursuz kesim kenarları sağlar ve bileme döngüleri arasındaki ortalama süreyi uzatır.",
       },
     ],
     dimensionLabels: {
-      col0: "Target Machine / Log Type",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore / ID (mm)",
-      col3: "Thickness (mm)",
+      col0: "Hedef Makine / Günlük Türü",
+      col1: "Dış Çap (mm)",
+      col2: "Delik Çapı / İç Çap (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard dimensions for major tissue converting OEMs. Custom drive-pin holes, keyways, and sizes up to Ø1200 mm for JRT industrial rolls manufactured to exact specifications.",
+        "* Önde gelen kağıt işleme OEM’leri için standart boyutlar. JRT endüstriyel rulolar için, kesin teknik özelliklere göre üretilen özel tahrik pimi delikleri, kama yuvaları ve Ø1200 mm’ye kadar boyutlar.",
     },
     standardDimensions: [
       {
@@ -1371,64 +1377,64 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is my log saw crushing the cardboard cores of the toilet rolls?",
+            "Neden kütük testere, tuvalet kağıdı rulolarının karton göbeklerini ezip parçalıyor?",
           answer:
-            "Core crushing is primarily caused by excessive blade wobble (lateral runout) or a dull cutting edge. When lateral runout exceeds 0.20 mm, the blade physically beats against the core rather than slicing it. Our blades are tension-leveled and CMM-verified to ≤0.15 mm lateral runout. Also verify that your in-line CBN sharpening stones are correctly aligned and actively dressing the blade on every cycle.",
+            "Çekirdek ezilmesi, öncelikle bıçağın aşırı sallanması (yan sapma) veya kesici kenarın körelmesinden kaynaklanır. Yan sapma 0,20 mm’yi aştığında, bıçak çekirdeği kesmek yerine fiziksel olarak ona çarpar. Bıçaklarımız gerilimle düzleştirilmiş olup, yanal sapma ≤0,15 mm olacak şekilde CMM ile doğrulanmıştır. Ayrıca, hat içi CBN bileme taşlarınızın doğru şekilde hizalandığından ve her döngüde bıçağı etkin bir şekilde bilediğinden emin olun.",
         },
         {
           question:
-            "How do I minimize dust and fiber tearing during tissue cross-cutting?",
+            "Kağıt mendillerin enine kesimi sırasında toz oluşumunu ve lif kopmasını nasıl en aza indirebilirim?",
           answer:
-            "Dust is generated when a high-friction blade tears tissue fibers instead of shearing them. We engineer a shallow bevel angle (15°–25°) combined with a mirror-polished face (Ra ≤0.2 μm). For maximum dust reduction, upgrade to our Teflon (PTFE) coated blades, which drastically lower friction and allow the blade to glide through the log with minimal fiber displacement.",
+            "Toz, yüksek sürtünmeli bir bıçak doku liflerini kesmek yerine yırtdığında oluşur. Düşük bir eğim açısı (15°–25°) ile ayna parlaklığında cilalanmış bir yüzeyi (Ra ≤0,2 μm) bir araya getiren bir tasarım geliştiriyoruz. Toz oluşumunu en aza indirmek için, sürtünmeyi önemli ölçüde azaltan ve bıçağın tomruk üzerinde liflerin yer değiştirmesini en aza indirerek kaymasını sağlayan Teflon (PTFE) kaplı bıçaklarımıza geçin.",
         },
         {
           question:
-            "Can you supply blades for Fabio Perini, PCMC, Casmatic, or Gambini log saws?",
+            "Fabio Perini, PCMC, Casmatic veya Gambini kütük testereleri için bıçak tedarik edebilir misiniz?",
           answer:
-            "Yes. The standard Ø68.26 mm (+0.05 mm) bore fits Fabio Perini and PCMC Forte/Elite log saws directly. The Ø82.55 mm bore covers Casmatic and equivalent platforms. For Gambini and Bretting machines we build to the measured geometry of your existing blade or your own drawing, so the replacement drops in without retooling. Send us the machine model, a worn blade, or a dimensioned sketch and we confirm fitment before quoting.",
+            "Evet. Standart Ø68,26 mm (+0,05 mm) delik çapı, Fabio Perini ve PCMC Forte/Elite kütük testerelerine doğrudan uyar. Ø82,55 mm delik çapı ise Casmatic ve eşdeğer platformları kapsar. Gambini ve Bretting makineleri için, mevcut bıçağınızın ölçü geometrisine veya kendi çiziminize göre üretim yapıyoruz; böylece yedek parça, herhangi bir alet değişikliği gerekmeden yerine takılabilir. Bize makine modelini, aşınmış bir bıçağı veya boyutları belirtilmiş bir çizimi gönderin; fiyat teklifi vermeden önce uyumunu teyit edelim.",
         },
         {
           question:
-            "How does the blade interact with the machine’s continuous CBN sharpening system?",
+            "Bıçak, makinenin sürekli CBN bileme sistemi ile nasıl etkileşime girer?",
           answer:
-            "Log saws use synchronized CBN (Cubic Boron Nitride) stones to hone the blade continuously during operation. If the blade material is too hard or soft, it will load or glaze the stones, rendering them ineffective. Our D2 blades heat-treated to HRC 58–60 shed micro-chips cleanly without clogging your CBN wheels.",
+            "Tomruk testereleri, çalışma sırasında bıçağı sürekli olarak bilemek için senkronize CBN (Kübik Bor Nitrür) taşları kullanır. Bıçak malzemesi çok sert veya çok yumuşaksa, taşlarda birikinti oluşur veya taşlar camlaşır ve bu da taşların etkisiz kalmasına neden olur. HRC 58–60 sertlik seviyesine kadar ısıl işleme tabi tutulmuş D2 bıçaklarımız, CBN taşlarınızı tıkamadan mikro talaşları temiz bir şekilde atar.",
         },
         {
-          question: "What is the longest blade diameter you can manufacture?",
+          question: "Üretebileceğiniz en uzun bıçak çapı nedir?",
           answer:
-            "We manufacture tissue log saw blades up to Ø1200 mm for large-format industrial wiper and jumbo roll (JRT) production lines. These require our large-format vacuum heat treatment furnaces and CNC grinding equipment. Standard lead time is 10 working days from drawing sign-off.",
+            "Büyük formatlı endüstriyel mendil ve jumbo rulo (JRT) üretim hatları için Ø1200 mm’ye kadar log testere bıçakları doku üretiyoruz. Bu üretim için büyük formatlı vakumlu ısıl işlem fırınlarımız ve CNC taşlama ekipmanlarımız gereklidir. Standart teslim süresi, çizimin onaylanmasından itibaren 10 iş günüdür.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Üretici misiniz yoksa ticaret şirketi misiniz?",
           answer:
-            "Direct manufacturer. We forge, grind, and quality-inspect every blade in-house under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
+            "Doğrudan üreticiyiz. Her bir bıçağı, ISO 9001:2015 sertifikası kapsamında tesisimizde dövüyor, taşlıyor ve kalite kontrolünden geçiriyoruz. Bıçaklarınızı üreten üretim mühendisleriyle doğrudan iletişim kurarsınız — aracı kâr marjı yoktur.",
         },
         {
           question:
-            "Do you supply matched CBN sharpening wheels alongside the blades?",
+            "Bıçaklarla birlikte uyumlu CBN bileme taşları da tedarik ediyor musunuz?",
           answer:
-            "Yes. We supply matched sets of CBN sharpening stones engineered for our log saw blades, ensuring correct grinding angle, bond hardness, and abrasive grit for maximum blade life and minimum stone wear.",
+            "Evet. log testere bıçakları modelimiz için özel olarak tasarlanmış, birbiriyle uyumlu CBN bileme taşları setleri sunuyoruz; bu setler, bıçağın ömrünü en üst düzeye çıkarmak ve taşın aşınmasını en aza indirmek için doğru bileme açısı, bağ sertliği ve aşındırıcı tanecik boyutunu garanti eder.",
         },
         {
-          question: "What quality certifications does Sureay hold?",
+          question: "Sureay hangi kalite sertifikalarına sahiptir?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a CMM dimensional inspection record, and a heat treatment batch certificate. Mill certificates and full material traceability reports are available on request.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyatta bir Rockwell HRC sertlik test raporu, bir CMM boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası bulunur. Talep üzerine fabrikadan alınan sertifikalar ve eksiksiz malzeme izlenebilirlik raporları da temin edilebilir.",
         },
       ],
     },
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Nonwoven Log Saw Blades",
+    name: "Dokumasız Kütük Testere Bıçakları",
     fullName:
-      "Corrosion-Resistant Log Saw Blades for Nonwoven & Hygiene Converting",
+      "Dokumasız Kumaş ve Hijyen Ürünleri İşleme Sektörü için Korozyona Dayanıklı Kütük Testere Bıçakları",
     category: "log_saw_blades",
     sector: "converting",
-    categoryDisplay: "Nonwoven Converting Blades",
+    categoryDisplay: "Dokumasız Kumaş İşleme Bıçakları",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anti-Corrosion",
+    badge: "Korozyon Önleyici",
     badgeColor: "teal",
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
@@ -1436,9 +1442,9 @@ export const blades: Blade[] = [
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Log saw blades engineered for nonwoven and hygiene converting lines — baby wipes, wet wipes, feminine hygiene, and adult incontinence rolls. D2 tool steel with corrosion-resistant TiN or hard chrome coating resists alcohol-based solutions, lotions, and surfactants. Micro-ground to ≤0.15 mm lateral runout for fraying-free cuts on spunbond, meltblown, SMS, and airlaid substrates. Compatible with Fameccanica, GDM, Curt G. Joa, and Zuiko converting lines. Custom diameters in 10 working days.",
+      "Dokumasız kumaş ve hijyen ürünleri üretim hatları için tasarlanmış kütük testere bıçakları — bebek mendilleri, ıslak mendiller, kadın hijyeni ürünleri ve yetişkinler için inkontinans ruloları. Korozyona dayanıklı TiN veya sert krom kaplamalı D2 takım çeliği, alkol bazlı çözeltilere, losyonlara ve yüzey aktif maddelere karşı dayanıklıdır. Spunbond, meltblown, SMS ve airlaid alt tabakalarda yıpranma yapmayan kesimler için ≤0,15 mm yanal sapma değerine kadar mikro taşlama işleminden geçirilmiştir. Fameccanica, GDM, Curt G. Joa ve Zuiko işleme hatlarıyla uyumludur. Özel çaplar 10 iş günü içinde temin edilebilir.",
     fullDescription:
-      "Nonwoven hygiene converting lines present a fundamentally different set of blade demands compared to tissue paper operations. Where tissue log saws must manage paper dust and core crushing, nonwoven log saws face two distinct failure modes: fibre fraying from synthetic substrates that resist clean shear, and accelerated corrosion from the chemical environment on lines running alcohol, lotions, preservatives (phenoxyethanol), and surfactants at high humidity.\n\nSureay nonwoven log saw blades are built from D2 (1.2379) high-carbon, high-chromium tool steel and are available with application-specific corrosion-resistant coatings. Every blade is vacuum-hardened, tension-leveled, and CMM-verified before dispatch.\n\n## Why Tissue Blades Fail on Nonwoven Lines\n\nSpunbond polypropylene, meltblown, and SMS composite webs are fundamentally tougher to shear cleanly than cellulosic tissue. Synthetic fibres are elastic — they deflect ahead of a dull or slightly wobbly blade instead of separating cleanly, producing the frayed, stringy cut edges that cause downstream folding and packaging failures. A blade optimised for tissue (shallower bevel, softer matrix for CBN compatibility) will produce visible fibre pull-out on spunbond substrates within a fraction of the run time it would achieve on tissue.\n\nThe chemical environment compounds the problem. Wet wipe lines run saturation ratios of 2.0–3.5× (solution weight to substrate weight), meaning the blade is continuously exposed to the impregnation chemistry: typically 80–95% purified water plus preservatives, humectants, and surfactants. Standard D2 without a surface treatment will develop micro-pitting at the cutting edge within weeks, accelerating edge degradation and increasing particulate contamination risk in a hygiene-critical product.\n\n## Coating Options for Hygiene Environments\n\n**TiN PVD Coating (2–3 µm, HV 2300+):** Physical vapour deposition titanium nitride provides a chemically inert barrier with excellent adhesion. Blocks alcohol and surfactant ingress to the blade substrate, extends edge service intervals, and adds a hardness layer that resists micro-abrasion from SAP (superabsorbent polymer) particles present in absorbent core lines. Recommended for wet wipe and adult incontinence converting.\n\n**Hard Chrome Plating:** Electrodeposited hard chrome (20–30 µm) provides outstanding corrosion resistance in high-humidity environments (≥75% RH) and reduces the coefficient of friction against synthetic fibre webs. The thicker layer also fills surface micro-pores, creating a sealing effect against cleaning agent ingress during washdown cycles.\n\n**Uncoated D2 (standard):** Suitable for dry nonwoven converting lines — airlaid, thermobond, spunlace — where no saturation chemistry is present. Hardness HRC 58–60, CBN sharpening compatible.\n\n## Bevel Geometry for Synthetic Fibre\n\nNonwoven substrates require a slightly steeper primary bevel angle (25°–35°) compared to tissue (15°–25°). The steeper geometry concentrates cutting force at the edge contact point, initiating a clean fibre separation rather than the elastic deflection that causes fraying. For lotion-impregnated wet wipe logs with high cohesive strength, a compound bevel (primary + secondary relief) delivers the cleanest cut face with minimal edge rollover over extended run cycles.\n\n## Dimensional Tolerances\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Surface finish:** Mirror polished (Ra ≤0.2 µm)\n\n## OEM Platform Compatibility\n\nNonwoven hygiene converting log saws differ in bore specification and diameter from tissue lines. Common platforms:\n\n**Fameccanica (Italy):** Baby diaper and femcare converting lines; blade diameters typically Ø400–Ø550 mm depending on product format and roll diameter.\n\n**GDM (Italy):** High-speed hygiene product lines; blade specifications to customer drawing.\n\n**Curt G. Joa (USA):** North American adult incontinence and femcare lines; imperial bore specifications available.\n\n**Zuiko (Japan):** Baby diaper converting; blade dimensions to OEM drawing.\n\n**Chinese domestic OEMs (Zlink, Dachang, Quanzhou-based builders):** Blade specifications supplied to drawing or sample reverse-engineering.\n\nCustom OD from Ø350 mm to Ø700 mm manufactured to order. Drawing review and first-article dimensional sign-off available.",
+      "Dokumasız hijyen ürün işleme hatları, kağıt mendil üretim süreçlerine kıyasla temelde farklı bir dizi bıçak gereksinimi ortaya koymaktadır. Kağıt rulo testereleri kağıt tozu ve göbek ezme sorunlarıyla başa çıkmak zorundayken, dokunmamış kumaş rulo testereleri iki farklı arıza türüyle karşı karşıyadır: temiz kesmeye dirençli sentetik alt tabakalardan kaynaklanan elyaf yıpranması ve yüksek nemde alkol, losyonlar, koruyucular (fenoksietanol) ve yüzey aktif maddeler kullanılan hatlardaki kimyasal ortamdan kaynaklanan hızlandırılmış korozyon.\n\nSureay dokunmamış log testere bıçakları bıçakları, D2 (1.2379) yüksek karbonlu, yüksek kromlu takım çeliğinden üretilir ve uygulamaya özel korozyona dayanıklı kaplamalarla sunulur. Her bıçak, sevk edilmeden önce vakumla sertleştirilir, gerilim dengeleme işleminden geçirilir ve CMM ile doğrulanır.\n\n## Dokusuz Kumaş Hatlarında Kağıt Mendil Bıçakları Neden Arıza Verir?\n\nSpunbond polipropilen, eriyik üflemeli ve SMS kompozit ağlar, selülozik kağıt mendillere kıyasla temiz bir şekilde kesilmesi açısından temelde daha zordur. Sentetik lifler elastiktir; keskinliğini kaybetmiş veya hafifçe sallanan bir bıçağın önünde temiz bir şekilde ayrılmak yerine sapma gösterirler ve bu da sonraki aşamalarda katlama ve paketleme hatalarına neden olan püsküleşmiş, ipliksi kesim kenarları oluşturur. Kağıt mendil için optimize edilmiş bir bıçak (daha sığ eğim, CBN uyumluluğu için daha yumuşak matris), kağıt mendilde elde edeceği çalışma süresinin çok küçük bir kısmında spunbond alt tabakalarında gözle görülür elyaf kopmalarına neden olur.\n\nKimyasal ortam sorunu daha da karmaşık hale getirir. Islak mendil üretim hatları, 2,0–3,5× (çözelti ağırlığı/alt tabaka ağırlığı) doygunluk oranlarında çalışır; bu da bıçağın emprenye kimyasallarına sürekli maruz kaldığı anlamına gelir: tipik olarak %80–95 arıtılmış su artı koruyucular, nemlendiriciler ve yüzey aktif maddeler. Yüzey işleme uygulanmamış standart D2 bıçaklarda, kesme kenarında birkaç hafta içinde mikro çukurlar oluşur; bu da kenar aşınmasını hızlandırır ve hijyen açısından kritik öneme sahip bir üründe partikül kontaminasyonu riskini artırır.\n\n## Hijyen Ortamları için Kaplama Seçenekleri\n\n**TiN PVD Kaplama (2–3 µm, HV 2300+):** Fiziksel buhar biriktirme yöntemiyle uygulanan titanyum nitrür, mükemmel yapışma özelliğine sahip kimyasal olarak inert bir bariyer sağlar. Alkol ve yüzey aktif maddelerin bıçak alt tabakasına girmesini engeller, kenar bakım aralıklarını uzatır ve emici çekirdek hatlarında bulunan SAP (süper emici polimer) parçacıklarının neden olduğu mikro aşınmaya dirençli bir sertlik tabakası ekler. Islak mendil ve yetişkin inkontinans ürünleri imalatı için önerilir.\n\n**Sert Krom Kaplama:** Elektrokaplama sert krom (20–30 µm), yüksek nemli ortamlarda (≥%75 bağıl nem) olağanüstü korozyon direnci sağlar ve sentetik elyaf tabakalarına karşı sürtünme katsayısını azaltır. Daha kalın tabaka ayrıca yüzeydeki mikro gözenekleri doldurarak, yıkama döngüleri sırasında temizlik maddesinin girişine karşı sızdırmazlık etkisi yaratır.\n\n**Kaplamasız D2 (standart):** Doygunluk kimyasallarının kullanılmadığı kuru dokunmamış kumaş üretim hatları — hava ile serme, termobond, spunlace — için uygundur. Sertlik HRC 58–60, CBN bileme ile uyumludur.\n\n## Sentetik Elyaf için Eğim Geometrisi\n\nDokumasız alt tabakalar, kağıt mendillere (15°–25°) kıyasla biraz daha dik bir birincil eğim açısı (25°–35°) gerektirir. Daha dik geometri, kesme kuvvetini kenar temas noktasında yoğunlaştırarak, yıpranmaya neden olan elastik sapma yerine temiz bir elyaf ayrımı sağlar. Yüksek kohezif mukavemete sahip losyon emdirilmiş ıslak mendil ruloları için, bileşik eğim (birincil + ikincil rahatlama) uzun çalışma döngüleri boyunca minimum kenar kıvrılmasıyla en temiz kesim yüzeyini sağlar.\n\n## Boyutsal Toleranslar\n\n- **Yanal sapma:** ≤0,15 mm\n- **Kenar sapma:** ≤0,10 mm\n- **Yüzey paralelliği:** 0,05 mm\n- **Eşmerkezlilik (dış çap – iç çap):** ≤0,30 mm\n- **Yüzey kalitesi:** Ayna cilalı (Ra ≤0,2 µm)\n\n## OEM Platform Uyumluluğu\n\nDokunmamış hijyen ürünleri işleme ruloları için kullanılan testereler, delik özellikleri ve çapları bakımından kağıt mendil hatlarından farklılık gösterir. Yaygın platformlar:\n\n**Fameccanica (İtalya):** Bebek bezi ve kadın hijyen ürünleri üretim hatları; bıçak çapları, ürün formatına ve rulo çapına bağlı olarak genellikle Ø400–Ø550 mm arasındadır.\n\n**GDM (İtalya):** Yüksek hızlı hijyen ürünleri üretim hatları; bıçak özellikleri müşteri çizimine göre belirlenir.\n\n**Curt G. Joa (ABD):** Kuzey Amerika yetişkin inkontinans ve kadın bakım ürünleri hatları; İngiliz ölçü birimlerinde delik özellikleri mevcuttur.\n\n**Zuiko (Japonya):** Bebek bezi üretim hatları; bıçak boyutları OEM çizimlerine göre belirlenir.\n\n**Çinli yerli OEM'ler (Zlink, Dachang, Quanzhou merkezli üreticiler):** Bıçak özellikleri, çizimlere göre veya numune tersine mühendislik yoluyla sağlanır.\n\nSipariş üzerine Ø350 mm ile Ø700 mm arası özel dış çaplar üretilir. Çizim incelemesi ve ilk ürün boyut onayı mevcuttur.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1478,33 +1484,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "corrosion-coating",
-        tag: "COATINGS",
-        title: "TiN & Hard Chrome for Chemical Resistance",
+        tag: "KAPLAMALAR",
+        title: "Kimyasal Dayanıklılık için TiN ve Sert Krom",
         description:
-          "Wet wipe and hygiene converting lines run continuous exposure to alcohols, surfactants, and preservatives that corrode bare tool steel edges within weeks. Our TiN PVD coating (HV 2300+) and hard chrome plating create a chemically inert barrier, blocking ingress at the cutting edge and extending the clean-running interval between regrinding cycles.",
+          "Islak mendil ve hijyen ürünleri üretim hatları, alkol, yüzey aktif maddeler ve koruyuculara sürekli maruz kalır; bu maddeler, çıplak takım çeliği kenarlarını birkaç hafta içinde aşındırır. TiN PVD kaplamamız (HV 2300+) ve sert krom kaplamamız, kimyasal olarak inert bir bariyer oluşturarak kesici kenara madde girişini engeller ve yeniden bileme döngüleri arasındaki temiz çalışma aralığını uzatır.",
       },
       {
         id: "nonwoven-bevel",
-        tag: "GEOMETRY",
-        title: "Synthetic-Fibre Bevel Profile",
+        tag: "GEOMETRİ",
+        title: "Sentetik Elyaf Eğimli Profil",
         description:
-          "Spunbond, meltblown, and SMS webs deflect elastically ahead of a tissue-spec bevel, causing visible fibre fraying on the cut face. We apply a steeper primary bevel (25°–35°) with a compound secondary relief that initiates clean fibre separation on first contact — eliminating the stringing and edge densification that drives packaging line rejects.",
+          "Spunbond, meltblown ve SMS ağları, kağıt mendil tipi eğimden önce elastik olarak saparak kesim yüzeyinde gözle görülür lif yıpranmasına neden olur. İlk temasta temiz lif ayrılmasını sağlayan, birleşik ikincil bir rahatlama ile daha dik bir birincil eğim (25°–35°) uyguluyoruz; bu sayede, paketleme hattındaki reddedilmelere neden olan ipleşme ve kenar yoğunlaşmasını ortadan kaldırıyoruz.",
       },
       {
         id: "runout-hygiene",
-        tag: "PRECISION",
-        title: "≤0.15 mm Runout for Fraying-Free Cuts",
+        tag: "HASSASİYET",
+        title: "Yıpranmayan Kesimler İçin ≤0,15 mm Eğrilik",
         description:
-          "Nonwoven logs are softer and more compressible than tissue logs. Any lateral blade wobble translates directly into a compressed, ragged cut face rather than a clean shear plane. Every blade is tension-leveled and CMM-verified to ≤0.15 mm lateral runout before dispatch, ensuring the blade enters the log at a consistent angle on every stroke.",
+          "Dokumasız kütükler, kağıt mendil kütüklerine kıyasla daha yumuşak ve daha kolay sıkıştırılabilir. Bıçağın herhangi bir yanal sallanması, temiz bir kesme düzlemi yerine doğrudan sıkışmış ve pürüzlü bir kesim yüzeyine yol açar. Her bıçak, sevk edilmeden önce gerilim dengeleme işleminden geçirilir ve CMM ile ≤0,15 mm yanal salgı açısından doğrulanır; bu sayede bıçağın her vuruşta kütüğe tutarlı bir açıyla girmesi sağlanır.",
       },
     ],
     dimensionLabels: {
-      col0: "Machine Platform / Product Format",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore / ID (mm)",
-      col3: "Thickness (mm)",
+      col0: "Makine Platformu / Ürün Formatı",
+      col1: "Dış Çap (mm)",
+      col2: "Delik Çapı / İç Çap (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Reference dimensions for common nonwoven hygiene converting platforms. Bore patterns, keyways, and drive-pin holes manufactured to customer drawing. Custom OD Ø350–Ø700 mm available with 10-working-day lead time.",
+        "* Yaygın olarak kullanılan dokumasız hijyen ürünleri üretim platformları için referans boyutlar. Delik düzenleri, kama yuvaları ve tahrik pimi delikleri müşteri çizimine göre üretilir. Ø350–Ø700 mm dış çaplı özel ürünler, 10 iş günü teslim süresiyle temin edilebilir.",
     },
     standardDimensions: [
       {
@@ -1553,64 +1559,64 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why do my blades corrode quickly on our wet wipe converting line?",
+            "Islak mendil üretim hattımızda bıçaklarım neden bu kadar çabuk paslanıyor?",
           answer:
-            "Wet wipe lines continuously expose blades to preservatives (phenoxyethanol), surfactants, and alcohol-based solutions at elevated humidity. Bare D2 tool steel develops micro-pitting at the cutting edge within weeks under these conditions, accelerating wear and creating a particulate contamination risk. The solution is a corrosion-resistant surface treatment: TiN PVD coating (2–3 µm, HV 2300+) provides a chemically inert barrier against alcohol and surfactant ingress, while hard chrome plating seals surface micro-pores against cleaning agent penetration during washdown cycles.",
+            "Islak mendil üretim hatları, bıçakları sürekli olarak yüksek nem koşullarında koruyucu maddelere (fenoksietanol), yüzey aktif maddelere ve alkol bazlı çözeltilere maruz bırakır. Bu koşullar altında, kaplamasız D2 takım çeliği birkaç hafta içinde kesici kenarında mikro çukurlaşmalar geliştirir; bu da aşınmayı hızlandırır ve partikül kirliliği riski yaratır. Çözüm, korozyona dayanıklı bir yüzey işlemidir: TiN PVD kaplama (2–3 µm, HV 2300+), alkol ve yüzey aktif maddelerin girişine karşı kimyasal olarak inert bir bariyer sağlarken, sert krom kaplama ise yıkama döngüleri sırasında temizlik maddelerinin nüfuz etmesini önlemek için yüzeydeki mikro gözenekleri kapatır.",
         },
         {
           question:
-            "My blades are leaving frayed, stringy cut edges on spunbond nonwoven logs. What is causing this?",
+            "Bıçaklarım, spunbond dokumasız rulolarda pürüzlü, ipliksi kesik kenarlar bırakıyor. Bunun nedeni nedir?",
           answer:
-            "Fraying on spunbond PP or SMS substrates is caused by two factors: incorrect bevel geometry and/or excessive lateral runout. Synthetic fibres are elastic — they deflect ahead of a shallow tissue-spec bevel (15°–25°) instead of shearing cleanly. Nonwoven substrates require a steeper primary bevel (25°–35°) to concentrate cutting force at the fibre contact point. Additionally, lateral runout above 0.20 mm causes the blade to compress the log rather than shear it, producing ragged edges. Our nonwoven blades are CMM-verified to ≤0.15 mm lateral runout and ground with a compound bevel profile optimised for synthetic fibre.",
+            "Spunbond PP veya SMS alt tabakalarda görülen yıpranma, iki faktörden kaynaklanır: yanlış eğim geometrisi ve/veya aşırı yanal sapma. Sentetik lifler elastiktir — temiz bir kesim yapmak yerine, kağıt mendil tipi sığ bir eğim açısının (15°–25°) önünde sapma gösterirler. Dokunmamış alt tabakalar, kesme kuvvetini elyaf temas noktasında yoğunlaştırmak için daha dik bir birincil eğim açısı (25°–35°) gerektirir. Ayrıca, 0,20 mm'nin üzerindeki yanal sapma, bıçağın rulo malzemesini kesmek yerine sıkıştırmasına neden olarak pürüzlü kenarlar oluşturur. Dokumasız bıçaklarımız, CMM ile ≤0,15 mm yanal sapma değerine göre doğrulanmış olup, sentetik elyaf için optimize edilmiş bileşik eğim profiliyle taşlanmıştır.",
         },
         {
           question:
-            "Can you supply blades compatible with Fameccanica or GDM hygiene converting machines?",
+            "Fameccanica veya GDM hijyenik işleme makineleriyle uyumlu bıçaklar tedarik edebilir misiniz?",
           answer:
-            "Yes. We manufacture to customer drawing or sample for Fameccanica, GDM, Curt G. Joa, Zuiko, and Chinese domestic OEM platforms. Bore diameter, drive-pin hole pattern, OD, and thickness are all customisable. Send us your OEM drawing or a worn blade sample and we will provide a dimensional confirmation and first-article sign-off before full production.",
+            "Evet. Fameccanica, GDM, Curt G. Joa, Zuiko ve Çin’deki yerli OEM platformları için müşteri çizimleri veya numunelerine göre üretim yapıyoruz. İç çap, tahrik pimi delik düzeni, dış çap ve kalınlık; hepsi özelleştirilebilir. Bize OEM çiziminizi veya aşınmış bıçak numunenizi gönderin; tam üretime geçmeden önce boyut onayı ve ilk ürün onayını size sunalım.",
         },
         {
           question:
-            "What is the difference between TiN coating and hard chrome plating for hygiene blades?",
+            "Hijyen bıçakları için TiN kaplama ile sert krom kaplama arasındaki fark nedir?",
           answer:
-            "TiN PVD (titanium nitride) is a thin, extremely hard coating (2–3 µm, HV 2300+) applied in a vacuum chamber. It provides an inert barrier against chemical corrosion, adds surface hardness that resists micro-abrasion from SAP particles in absorbent core lines, and extends edge service intervals. Hard chrome is a thicker electrodeposited layer (20–30 µm) that offers excellent corrosion resistance in high-humidity environments and reduces friction coefficient against synthetic fibre webs. For wet wipe lines with aggressive chemistry, TiN is the preferred option. For dry or semi-dry nonwoven lines in high-humidity mill environments, hard chrome is cost-effective.",
+            "TiN PVD (titanyum nitrür), vakum odasında uygulanan ince ve son derece sert bir kaplamadır (2–3 µm, HV 2300+). Kimyasal korozyona karşı inert bir bariyer sağlar, emici çekirdek üretim hatlarındaki SAP parçacıklarının neden olduğu mikro aşınmaya dirençli yüzey sertliği kazandırır ve kenar bakım aralıklarını uzatır. Sert krom, yüksek nemli ortamlarda mükemmel korozyon direnci sağlayan ve sentetik elyaf tabakalarına karşı sürtünme katsayısını azaltan, daha kalın bir elektrokaplama tabakasıdır (20–30 µm). Agresif kimyasalların kullanıldığı ıslak mendil üretim hatları için TiN tercih edilen seçenektir. Yüksek nemli fabrika ortamlarındaki kuru veya yarı kuru dokunmamış kumaş hatları için sert krom, maliyet açısından etkilidir.",
         },
         {
           question:
-            "Do these blades work with in-line CBN sharpening systems on nonwoven lines?",
+            "Bu bıçaklar, dokumasız kumaş üretim hatlarındaki sıralı CBN bileme sistemleriyle uyumlu mu?",
           answer:
-            "Most nonwoven hygiene converting log saws do not use continuous in-line CBN sharpening systems (unlike tissue lines). Blades are typically replaced on a scheduled interval rather than continuously dressed. However, if your line does use in-line CBN grinding, our D2 blades hardened to HRC 58–60 are compatible with standard CBN wheel specifications. The TiN coating will be removed by CBN contact at the cutting edge, which is normal — the protective benefit applies to the blade body, not the actively sharpened edge zone.",
+            "Çoğu dokunmamış hijyen ürünleri işleme testere hattında (kağıt mendil hatlarının aksine) sürekli hat içi CBN bileme sistemleri kullanılmamaktadır. Bıçaklar genellikle sürekli bileme yerine, planlanmış aralıklarla değiştirilir. Ancak, hattınızda sıralı CBN bileme kullanılıyorsa, HRC 58–60 sertliğine sahip D2 bıçaklarımız standart CBN çarkı özellikleriyle uyumludur. TiN kaplaması, kesici kenarda CBN ile temas sonucu aşınarak kalkacaktır; bu normaldir — koruyucu etki, aktif olarak bilenen kenar bölgesi değil, bıçak gövdesi için geçerlidir.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Üretici misiniz yoksa ticaret şirketi misiniz?",
           answer:
-            "Direct manufacturer. We forge, grind, coat, and quality-inspect every blade in-house at our 15,000 m² facility in Ma'anshan, Anhui Province, under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
+            "Doğrudan üretici. Anhui Eyaleti, Ma'anshan'daki 15.000 m²'lik tesisimizde, ISO 9001:2015 sertifikası kapsamında her bir bıçağı kendi tesisimizde dövüyor, taşlıyor, kaplıyor ve kalite kontrolünden geçiriyoruz. Bıçaklarınızı üreten üretim mühendisleriyle doğrudan iletişim kurarsınız — aracı kâr marjı yoktur.",
         },
         {
           question:
-            "Can you reverse-engineer a blade from a worn sample or OEM drawing?",
+            "Aşınmış bir numune veya OEM çiziminden bir bıçağın tersine mühendisliğini yapabilir misiniz?",
           answer:
-            "Yes. Send us your worn blade or OEM dimensional drawing and we will produce a CMM measurement report and dimensional confirmation before committing to production. First-article inspection reports are available on request for new tooling projects.",
+            "Evet. Aşınmış bıçağınızı veya OEM boyut çiziminizi bize gönderin; üretime geçmeden önce bir CMM ölçüm raporu ve boyut onayı hazırlayacağız. Yeni kalıp projeleri için talep üzerine ilk parça denetim raporları da sunulmaktadır.",
         },
         {
-          question: "What is the minimum order quantity and lead time?",
+          question: "Asgari sipariş miktarı ve teslim süresi nedir?",
           answer:
-            "Minimum order is typically 2–5 blades depending on diameter. Standard lead time is 10 working days from drawing sign-off. Rush orders can be accommodated — contact us with your timeline.",
+            "Çapına bağlı olarak minimum sipariş miktarı genellikle 2–5 bıçaktır. Standart teslim süresi, çizimin onaylanmasından itibaren 10 iş günüdür. Acele siparişler de karşılanabilir — zaman çizelgenizle birlikte bizimle iletişime geçin.",
         },
       ],
     },
   },
   {
     id: "paper-cutting-blades",
-    name: "Paper Cutting Blades",
-    fullName: "Premium Guillotine Paper Cutter Blades (HSS & TCT)",
+    name: "Kağıt Kesme Bıçakları",
+    fullName: "Üst Sınıf Giyotin Kağıt Kesici Bıçakları (HSS ve TCT)",
     category: "shear_blades",
     sector: "paper",
-    categoryDisplay: "Paper Cutting Blades",
+    categoryDisplay: "Kağıt Kesme Bıçakları",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
-    badge: "OEM Precision",
+    badge: "OEM Hassasiyeti",
     badgeColor: "teal",
     gallery: [
       "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
@@ -1618,9 +1624,9 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
     ],
     description:
-      "Eliminate paper draw and dust with replacement guillotine blades for Polar, Wohlenberg, and Perfecta cutters. Available in 18% Tungsten High-Speed Steel (HSS) and Tungsten Carbide Tipped (TCT) inlays. Micro-ground to a precise 21° bevel with full-length face flatness ≤0.05 mm for perfectly square cuts on high-volume print runs.",
+      "Polar, Wohlenberg ve Perfecta kesiciler için giyotin bıçakları yedek bıçaklarla kağıt çekilmesini ve tozu ortadan kaldırın. %18 Tungsten Yüksek Hızlı Çelik (HSS) ve Tungsten Karbür Uçlu (TCT) iç parçalar halinde mevcuttur. Yüksek hacimli baskı işlerinde kusursuz dik kesimler elde etmek için, tam boy yüz düzlüğü ≤0,05 mm olacak şekilde hassas bir 21° eğime mikro taşlanmıştır.",
     fullDescription:
-      "Guillotine paper cutter replacement blades are consumed components whose alloy grade, edge geometry, and full-length dimensional accuracy directly determine cut quality across the entire ream stack—from 450mm office cutter blades to 2050mm double-beam commercial pressroom guillotines.\n\nSureay paper cutting blades are offered in three metallurgical grades, matched to cut volume, substrate, and total cost of ownership requirements:\n\n## Material Grades\n\n**Standard Tool Steel (T10, 9CrSi — HRC 57–60):** Cost-effective for moderate-volume print shops and finishing operations cutting bond paper, newsprint, and uncoated stock up to 80 gsm. T10 high-carbon steel is hardened to HRC 57–60 and provides reliable edge sharpness at the lowest unit cost. Suited to Polar, Schneider Senator, and Challenge 305 class machines in moderate daily-cycle environments.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** The premium choice for high-volume commercial printing, book publishing, and label-converting guillotines running multiple ream stacks per hour. M2 and SKH-51 HSS retain full hardness at the elevated cutting temperatures generated by high-cycle operation—delivering 4–6× longer service life between resharpening events compared to standard carbon steel blades. Recommended for coated art paper, board, laminated packaging stock, and multi-layer adhesive label sheets where edge wear accelerates rapidly.\n\n**TCT Inlay — Tungsten Carbide Tipped (YG15 / YG20):** Nitrogen furnace-brazed carbide edge inlay for the most abrasion-intensive substrates: carbonless copy paper (CBS coating), high-calcium-carbonate-filled packaging board, coated cartonboard, abrasive specialty papers, and fibre-reinforced technical papers. TCT blades outlast HSS on these substrates by a factor of 3–5× and maintain slit-edge quality well beyond the point where HSS would require resharpening.\n\n## Precision Grinding Standards\n\n- **Bevel angle:** 21° (standard guillotine geometry, single-bevel)\n- **Length tolerance:** +2 / −1 mm\n- **Width tolerance:** ±1 mm\n- **Edge thickness tolerance:** 0 / −0.1 mm\n- **Face flatness (full length):** ≤ 0.05 mm\n\nFlatness deviation above 0.08mm across the blade length causes uneven blade-to-sideboard contact, producing a tapered cut and requiring operator correction shims—a production inefficiency that accumulates to measurable downtime on high-volume cutting lines.\n\n## Machine Compatibility & Supply States\n\nStandard stock lengths from 450 mm to 2050 mm. Compatible with Polar 115/137/155/176/200 series, Schneider Senator, Perfecta, Wohlenberg, Prism, and Challenge guillotine brands. Custom lengths, mounting hole patterns, and back-edge profiles manufactured to drawing within 7 working days.\n\n**Available supply conditions:** Sharp-ground edge (ready to install) / Semi-finished edge (for on-site final dressing to machine specification) / Blank knife (unground, for customers with in-house regrinding capability).",
+      "Giyotin kağıt kesici yedek bıçakları, alaşım kalitesi, kenar geometrisi ve tam boyutsal doğruluğu, 450 mm’lik ofis kesici bıçaklarından 2050 mm’lik çift kirişli ticari baskı odası giyotinlerine kadar tüm kağıt destesi boyunca kesim kalitesini doğrudan belirleyen sarf malzemeleridir.\n\nSureay kağıt kesme bıçakları, kesim hacmi, alt tabaka ve toplam sahip olma maliyeti gereksinimlerine uygun olarak üç farklı metalurjik kalitede sunulmaktadır:\n\n## Malzeme Kaliteleri\n\n**Standart Takım Çeliği (T10, 9CrSi — HRC 57–60):** Orta hacimli matbaalar ve sonlandırma işlemleri için uygun maliyetli olup, bond kağıdı, gazete kağıdı ve 80 g/m²'ye kadar kaplamasız kağıtların kesiminde kullanılır. T10 yüksek karbonlu çelik, HRC 57–60 sertliğine kadar sertleştirilmiştir ve en düşük birim maliyetle güvenilir kenar keskinliği sağlar. Orta düzeyde günlük iş hacmine sahip ortamlarda Polar, Schneider Senator ve Challenge 305 sınıfı makineler için uygundur.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** Saatte birden fazla ream yığını işleyen yüksek hacimli ticari baskı, kitap yayıncılığı ve etiket işleme giyotinleri için en üst düzey seçimdir. M2 ve SKH-51 HSS, yüksek döngülü çalışmanın yarattığı yüksek kesme sıcaklıklarında tam sertliğini korur; böylece standart karbon çelik bıçaklara kıyasla yeniden bileme işlemleri arasında 4–6 kat daha uzun hizmet ömrü sunar. Kenar aşınmasının hızla arttığı kuşe kağıt, karton, lamine ambalaj malzemesi ve çok katmanlı yapışkanlı etiket sayfaları için önerilir.\n\n**TCT Inlay — Tungsten Karbür Uçlu (YG15 / YG20):** Aşınmanın en yoğun olduğu malzemeler için azot fırınında lehimlenmiş karbür kenar kaplaması: karbonsuz kopya kağıdı (CBS kaplama), yüksek kalsiyum karbonat dolgulu ambalaj kartonu, kaplamalı karton, aşındırıcı özel kağıtlar ve elyaf takviyeli teknik kağıtlar. TCT bıçakları, bu alt tabakalarda HSS’ye göre 3–5 kat daha uzun ömürlüdür ve HSS’nin yeniden bileme gerektireceği noktanın çok ötesine kadar kesim kenarı kalitesini korur.\n\n## Hassas Taşlama Standartları\n\n- **Eğim açısı:** 21° (standart giyotin geometrisi, tek eğimli)\n- **Uzunluk toleransı:** +2 / −1 mm\n- **Genişlik toleransı:** ±1 mm\n- **Kenar kalınlığı toleransı:** 0 / −0,1 mm\n- **Yüzey düzlüğü (tam uzunluk):** ≤ 0,05 mm\n\nBıçak uzunluğu boyunca 0,08 mm'nin üzerindeki düzlük sapması, bıçak ile yan panel arasında dengesiz bir temasa neden olur; bu da konik bir kesim oluşturur ve operatörün düzeltme şimleri kullanmasını gerektirir. Bu durum, yüksek hacimli kesim hatlarında ölçülebilir arıza süresine yol açan bir üretim verimsizliğidir.\n\n## Makine Uyumluluğu ve Tedarik Koşulları\n\n450 mm ile 2050 mm arası standart stok uzunlukları. Polar 115/137/155/176/200 serisi, Schneider Senator, Perfecta, Wohlenberg, Prism ve Challenge giyotin markalarıyla uyumludur. Özel uzunluklar, montaj deliği düzenleri ve arka kenar profilleri, çizimlere göre 7 iş günü içinde üretilir.\n\n**Mevcut tedarik koşulları:** Keskin taşlanmış kenar (montaja hazır) / Yarı işlenmiş kenar (makine spesifikasyonlarına göre yerinde son işlem için) / Boş bıçak (taşlanmamış, kendi bünyesinde yeniden taşlama kapasitesi olan müşteriler için).",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1661,34 +1667,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "tct-inlay",
-        tag: "METALLURGY",
-        title: "Tungsten Carbide Inlays",
+        tag: "METALURJİ",
+        title: "Tungsten Karbür Dolgu Parçaları",
         description:
-          "Standard blades dull rapidly when cutting abrasive, calcium-carbonate-filled papers. Our Tungsten Carbide Tipped (TCT) blades maintain their razor edge 3 – 5× longer than HSS, drastically reducing machine downtime for blade changes on carbonless copy and coated art stock.",
+          "Standart bıçaklar, aşındırıcı ve kalsiyum karbonat içeren kağıtları keserken hızla körelir. Tungsten Karbür Uçlu (TCT) bıçaklarımız, HSS bıçaklara kıyasla keskinliklerini 3–5 kat daha uzun süre korur ve karbonsuz kopya kağıtları ile kaplamalı sanat kağıtlarında bıçak değişimi nedeniyle oluşan makine duruş sürelerini önemli ölçüde azaltır.",
       },
       {
         id: "face-flatness",
-        tag: "PRECISION",
-        title: "Zero Paper Draw",
+        tag: "HASSASİYET",
+        title: "Kağıtsız Çekiliş",
         description:
-          "If a blade is bowed even slightly, hydraulic pressure causes it to deflect mid-cut, producing unequal sizes from the top to the bottom of the stack. We grind our blades to a full-length face flatness of ≤0.05 mm to ensure flawlessly straight vertical cuts through every ream.",
+          "Bir bıçak en ufak bir eğrilik gösterirse, hidrolik basınç kesim sırasında bıçağın sapmasına neden olur ve yığının üstünden altına doğru eşit olmayan boyutlarda kesimler ortaya çıkar. Her bir riyondan kusursuz derecede düz dikey kesimler elde etmek için bıçaklarımızı, tam uzunlukta yüzey düzlüğü ≤0,05 mm olacak şekilde taşlıyoruz.",
       },
       {
         id: "oem-compatibility",
-        tag: "FITMENT",
-        title: "Exact OEM Replacement",
+        tag: "MONTAJ",
+        title: "Orijinal Üretici Parçası ile Tam Uyumlu Yedek Parça",
         description:
-          "We hold engineering blueprints for Polar, Wohlenberg, Perfecta, and Schneider Senator guillotines. Mounting holes, threads, and back-edge slots are CNC-machined for a guaranteed drop-in fit — no shimming or modification required.",
+          "Polar, Wohlenberg, Perfecta ve Schneider Senator kesme makinelerine ait mühendislik çizimlerine sahibiz. Montaj delikleri, dişler ve arka kenar yuvaları, CNC ile işlenmiştir; bu sayede parçaların tam uyumu garanti edilir — ara parça eklemeye veya herhangi bir değişiklik yapmaya gerek yoktur.",
       },
     ],
     dimensionLabels: {
-      col0: "Specification (mm)",
-      col1: "Length",
-      col2: "Width",
-      col3: "Edge Thickness",
-      col4: "Body Thickness",
+      col0: "Teknik Özellikler (mm)",
+      col1: "Uzunluk",
+      col2: "Genişlik",
+      col3: "Kenar Kalınlığı",
+      col4: "Gövde Kalınlığı",
       caption:
-        "* Standard sizes listed above. Custom dimensions available on request.",
+        "* Yukarıda belirtilen standart boyutlar. Talep üzerine özel boyutlar da temin edilebilir.",
     },
     standardDimensions: [
       {
@@ -1757,76 +1763,79 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I choose M2 HSS or Tungsten Carbide Tipped (TCT) blades for my guillotine?",
+            "Giyotinim için M2 HSS mi yoksa Tungsten Karbür Uçlu (TCT) bıçakları mı seçmeliyim?",
           answer:
-            "M2 HSS is the correct choice for coated art paper, bond paper, and standard label stock in high-volume print shops — delivering 4–6× longer life than standard carbon steel. Upgrade to TCT (YG15/YG20 carbide inlay) only when cutting carbonless copy paper, high-calcium-carbonate packaging board, or abrasive specialty papers. TCT outperforms HSS 3–5× on these substrates but carries a higher unit cost.",
+            "M2 HSS, yüksek hacimli baskı atölyelerinde kaplamalı sanat kağıdı, bond kağıdı ve standart etiket kağıdı için doğru seçimdir; standart karbon çeliğine kıyasla 4–6 kat daha uzun ömür sunar. Yalnızca karbonsuz kopya kağıdı, yüksek kalsiyum karbonatlı ambalaj kartonu veya aşındırıcı özel kağıtları keserken TCT'ye (YG15/YG20 karbür kaplama) geçin. TCT, bu malzemelerde HSS'den 3–5 kat daha iyi performans gösterir, ancak birim maliyeti daha yüksektir.",
         },
         {
           question:
-            "How does your blade geometry prevent dust when guillotining thick paper reams?",
+            "Kalın kağıt destelerini keserken bıçak geometrisiniz toz oluşumunu nasıl önlüyor?",
           answer:
-            "We grind every guillotine blade to a precision 21° bevel with face flatness ≤0.05mm across the full length. The sharp, shallow bevel shears each sheet progressively through the ream rather than crushing through the stack — dust is generated by dull or incorrectly bevelled edges that compress paper fibres instead of shearing them. HSS M2 and TCT grades retain this precision bevel geometry significantly longer than carbon steel, so fewer resharpening events mean fewer dust-generating dull-blade cutting cycles per year.",
+            "Her giyotin bıçağını, tüm uzunluğu boyunca yüzey düzlüğü ≤0,05 mm olacak şekilde 21°’lik hassas bir eğime sahip olacak şekilde taşlıyoruz. Keskin ve sığ eğim, her bir sayfayı yığın içinde ezmek yerine, kağıt destesi boyunca kademeli olarak keser — toz, kağıt liflerini kesmek yerine sıkıştıran keskin olmayan veya yanlış eğimli kenarlardan kaynaklanır. HSS M2 ve TCT kaliteleri, bu hassas eğim geometrisini karbon çeliğinden önemli ölçüde daha uzun süre korur; dolayısıyla, daha az yeniden bileme işlemi, yılda toz üreten keskinliğini yitirmiş bıçaklı kesme döngülerinin sayısının azalması anlamına gelir.",
         },
         {
           question:
-            "Can you supply blades in the exact length and mounting hole pattern my Polar or Wohlenberg machine requires?",
+            "Polar veya Wohlenberg makinem için gerekli olan tam uzunlukta ve montaj deliği düzeninde bıçaklar tedarik edebilir misiniz?",
           answer:
-            "Yes. We stock standard lengths from 450mm to 2050mm to cover Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta, and Challenge series guillotines. Custom lengths, back-edge profiles, and mounting hole patterns are manufactured to drawing within 7 working days. Blades can be supplied sharp-ground, semi-finished, or blank to suit your on-site regrinding setup.",
+            "Evet. Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta ve Challenge serisi kesme makinelerine uygun olarak 450 mm ile 2050 mm arası standart uzunluklarda stoklarımızda bulunmaktadır. Özel uzunluklar, arka kenar profilleri ve montaj deliği düzenleri, çizimlere göre 7 iş günü içinde üretilmektedir. Bıçaklar, tesisinizdeki yeniden bileme düzeninize uygun olarak keskin bilinmiş, yarı işlenmiş veya ham olarak tedarik edilebilir.",
         },
         {
           question:
-            "How should guillotine blades be stored and handled to prevent premature edge damage before installation?",
+            "Kurulumdan önce kenarların erken aşınmasını önlemek için giyotin bıçakları nasıl saklanmalı ve taşınmalıdır?",
           answer:
-            "Store blades horizontally in original packaging on padded wooden cradles — never stack vertically or allow metal-to-metal contact on the cutting edge. Use plastic or rubber edge guards during handling. Inspect under a 10× loupe before mounting: a 0.2mm edge nick doubles local wear rate within the first 10,000 cuts. Avoid dragging the edge against guide rails during installation.",
+            "Bıçakları, orijinal ambalajlarında yastıklı ahşap destekler üzerinde yatay olarak saklayın — asla dikey olarak istiflemeyin veya kesici kenarda metal-metal teması oluşmasına izin vermeyin. Taşıma sırasında plastik veya kauçuk kenar koruyucuları kullanın. Montajdan önce 10× büyüteçle inceleyin: 0,2 mm'lik bir kenar çentiği, ilk 10.000 kesimde yerel aşınma oranını iki katına çıkarır. Montaj sırasında kenarı kılavuz raylara sürtmekten kaçının.",
         },
         {
           question:
-            "Can you supply paper guillotine blades in semi-finished condition for in-house regrinding?",
+            "Şirket içi yeniden taşlama işlemi için giyotin bıçakları kağıdını yarı işlenmiş halde tedarik edebilir misiniz?",
           answer:
-            "Yes. Semi-finished blanks are available in all standard lengths with the body ground to final dimensions but the edge left in pre-ground condition for final dressing to your specific bevel angle and finish. This supply state suits print shops with surface grinding capability, reduces unit cost by 15–20%, and gives full control over final edge geometry and sharpness.",
+            "Evet. Yarı mamul işlenmemiş parçalar, gövdesi nihai boyutlara göre taşlanmış ancak kenarları, sizin belirlediğiniz eğim açısı ve yüzey kalitesine göre son işlemden geçirilmek üzere ön taşlama durumunda bırakılmış olarak tüm standart uzunluklarda temin edilebilir. Bu tedarik şekli, yüzey taşlama kapasitesine sahip matbaalar için uygundur, birim maliyeti %15–20 oranında düşürür ve nihai kenar geometrisi ile keskinliği üzerinde tam kontrol sağlar.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisi bir firmayız. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı döven ve bileten mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "Sureay’in ısıl işlem modelini daha ucuz alternatiflerden ayıran nedir?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Standart su verme işleminden farklı olarak, her Sureay bıçağı vakumla sertleştirme işleminden sonra derin kriyojenik işleme tabi tutulur. Bu işlem, kalıntı östeniti martensite dönüştürerek aşınma direncini %40’a kadar artırır ve kesici kenarın tamamında homojen bir sertlik sağlar.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek bıçaklar genellikle 48 saat içinde kargoya verilir. Özel profillerin teslimatı ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Sureay hangi kalite sertifikalarına sahiptir ve malzeme test raporlarını sunabilir misiniz?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası eklenir. OEM onay süreci için, talep üzerine eksiksiz CMM boyutsal raporları ve çelik fabrikası sertifikaları temin edilebilir.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneme imkânımız var mı?",
+          answer:
+            "Evet. Makineye uyum doğrulaması ve kesici kenar ömrü testi için numune setleri (genellikle 2–5 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür. Özel profiller için, tam üretime geçilmeden önce boyut onay numuneleri üretilir — uyum onaylanana kadar kalıp taahhüdü yoktur.",
         },
       ],
     },
   },
   {
     id: "single-shaft-shredder-blades",
-    name: "Single Shaft Rotor Inserts",
-    fullName: "High-Impact Single Shaft Shredder Rotor Inserts (Crown Cutters)",
+    name: "Tek Şaftlı Rotor Ek Parçaları",
+    fullName:
+      "Yüksek Darbe Dayanımlı Tek Şaftlı Öğütücü Rotor Ek Parçaları (Taç Kesiciler)",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Rotor Inserts",
+    categoryDisplay: "Tek Şaftlı Rotor Ek Parçaları",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
-    badge: "Heavy Duty",
+    badge: "Ağır Hizmet Tipi",
     badgeColor: "orange",
     gallery: [
       "/images/products/shredder-blades/single-shredder-blades-06.webp",
@@ -1834,9 +1843,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "DC53, D2 (1.2379), and Cr12MoV cold-work tool steel rotor inserts for low-speed, high-torque single-shaft shredders. Vacuum-hardened and cryogenically processed to HRC 58–62, CNC-machined to ±0.02mm face tolerance. Features 4-way indexable square geometry. Drop-in compatible with Vecoplan, Weima, Lindner, and Zerma platforms.",
+      "Düşük hızda, yüksek torklu tek şaftlı öğütücüler için DC53, D2 (1.2379) ve Cr12MoV soğuk iş takım çeliği rotor uçları. HRC 58–62 sertlik seviyesine kadar vakumla sertleştirilmiş ve kriyojenik işlemden geçirilmiş, ±0,02 mm yüzey toleransı ile CNC ile işlenmiştir. 4 yönlü değiştirilebilir kare geometriye sahiptir. Vecoplan, Weima, Lindner ve Zerma platformlarıyla doğrudan uyumludur.",
     fullDescription:
-      "Single-shaft shredders operate at 80–150 RPM under extremely high torque, driving block-style rotor inserts into a stationary bed knife at tight shear clearances of 0.2–1.5mm. At these mechanical parameters, the primary cause of blade failure is impact-induced edge microchipping or thermal softening from sustained high-cycle torque peaks, rather than progressive wear.\n\nSureay addresses these failure modes through strict metallurgy. Standard D2 (1.2379) tool steel inserts provide excellent wear resistance at a cost-effective price point. For applications involving hard engineering plastics (PA66-GF, PC, PEEK) or heavy purge lumps, DC53 is specified—delivering 17% higher transverse rupture strength to prevent edge chipping under heavy impact.\n\n## ±0.02mm CNC Machining Tolerance\n\nCutting clearance between the rotor insert face and the stationary bed knife governs shred particle size and motor load. Inconsistent clearances cause material wrap-back and rotor stalls. Sureay rotor inserts are CNC-machined to ±0.02mm face flatness, ensuring a perfect and repeatable shear gap across the entire rotor length when paired with a quality bed knife.\n\n## 4-Way Indexable Geometry\n\nThe symmetrical square block format provides four independent cutting edges per insert. When one edge dulls, the operator loosens the countersunk mounting bolt, rotates the insert 90° to a fresh edge, and retorques. A full rotor complement can be indexed rapidly without shaft extraction, effectively reducing annual tooling expenditure by 75%.\n\n## Deep Cryogenic Treatment (−196°C)\n\nAll Sureay single-shaft inserts undergo vacuum hardening to HRC 58–62, followed by a mandatory deep cryogenic soak at −196°C. This critical final stage eliminates retained austenite and stabilizes the martensitic microstructure, drastically reducing the risk of bulk fracture when the rotor encounters unexpected foreign metal inclusions.",
+      "Tek şaftlı öğütücüler, son derece yüksek tork altında 80–150 dev/dak hızında çalışır ve blok tipindeki rotor eklerini, 0,2–1,5 mm’lik dar kesme boşluklarında sabit bir yatay bıçağa doğru iter. Bu mekanik parametrelerde, bıçak arızalarının başlıca nedeni, aşınmanın ilerlemesinden ziyade, darbe kaynaklı kenar mikro çatlakları veya sürekli yüksek döngülü tork tepe noktalarından kaynaklanan termal yumuşamadır.\n\nSureay, sıkı metalurji standartları uygulayarak bu arıza türlerini ortadan kaldırır. Standart D2 (1.2379) takım çeliği uçlar, uygun bir fiyatla mükemmel aşınma direnci sağlar. Sert mühendislik plastikleri (PA66-GF, PC, PEEK) veya ağır tahliye topaklarının bulunduğu uygulamalar için DC53 kullanılır; bu malzeme, ağır darbelere karşı kenar yontulmasını önlemek üzere %17 daha yüksek enine kopma mukavemeti sağlar.\n\n## ±0,02 mm CNC İşleme Toleransı\n\nRotor kesici ucu yüzeyi ile sabit yatay bıçak arasındaki kesme boşluğu, parçalanma parçacık boyutunu ve motor yükünü belirler. Tutarsız boşluklar, malzemenin geri sarılmasına ve rotorun durmasına neden olur. Sureay rotor kesici uçları, ±0,02 mm yüzey düzlüğünde CNC ile işlenir; bu sayede, kaliteli bir yatay bıçakla birlikte kullanıldığında rotorun tüm uzunluğu boyunca mükemmel ve tekrarlanabilir bir kesme aralığı sağlanır.\n\n## 4 Yönlü Değiştirilebilir Geometri\n\nSimetrik kare blok formatı, her uçta dört bağımsız kesme kenarı sağlar. Bir kenar körelirse, operatör havşa başlı montaj cıvatasını gevşetir, ucu 90° döndürerek yeni bir kenara getirir ve cıvatayı yeniden sıkar. Şaftı çıkarmaya gerek kalmadan tüm rotor takımı hızlı bir şekilde döndürülebilir, bu da yıllık takım harcamalarını %75 oranında etkili bir şekilde azaltır.\n\n## Derin Kriyojenik İşlem (−196°C)\n\nTüm Sureay tek şaftlı kesici uçlar, HRC 58–62 sertliğine ulaşana kadar vakumla sertleştirilir ve ardından −196°C’de zorunlu bir derin kriyojenik ıslatma işleminden geçirilir. Bu kritik son aşama, kalıntı östeniti ortadan kaldırır ve martensitik mikro yapıyı stabilize eder; böylece rotorun beklenmedik yabancı metal kalıntılarıyla karşılaşması durumunda kütle kırılması riskini önemli ölçüde azaltır.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1891,33 +1900,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "indexable-design",
-        tag: "TCO REDUCTION",
-        title: "4-Way Indexable Edges",
+        tag: "TOPLAM SAHİPLİK MALİYETİNİN AZALTILMASI",
+        title: "4 Yönlü Değiştirilebilir Kesici Kenarlar",
         description:
-          "The symmetrical square design allows for a 90° rotation when dull. This quadruples the lifespan of a single blade, cutting replacement costs by 75% and minimizing maintenance downtime.",
+          "Simetrik kare tasarımı, bıçak körelirse 90° döndürülmesine olanak tanır. Bu, tek bir bıçağın kullanım ömrünü dört katına çıkararak, değiştirme maliyetlerini %75 oranında azaltır ve bakım nedeniyle oluşan duruş sürelerini en aza indirir.",
       },
       {
         id: "concave-profile",
-        tag: "SHEAR EFFICIENCY",
-        title: "Aggressive Concave Profiling",
+        tag: "KESME VERİMLİLİĞİ",
+        title: "Sert İçbükey Profil Oluşturma",
         description:
-          "Precision CNC-machined concave faces ensure an aggressive bite into smooth, dense plastic lumps, preventing material from bouncing or bridging on the rotor during low-speed shredding.",
+          "Hassas CNC işlemeyle üretilmiş içbükey yüzeyler, pürüzsüz ve yoğun plastik topaklara güçlü bir şekilde tutunarak, düşük hızda parçalama işlemi sırasında malzemenin rotorda sekmesini veya köprü oluşturmasını önler.",
       },
       {
         id: "cryo-treatment",
-        tag: "EXTREME RELIABILITY",
-        title: "Deep Cryogenic Tempering",
+        tag: "OLAĞANÜSTÜ GÜVENİLİRLİK",
+        title: "Derin Kriyojenik Tavlama",
         description:
-          "Processed at −196°C to eliminate internal residual stress. This guarantees the blade will absorb massive kinetic shocks without shattering when hitting hidden metal inclusions.",
+          "İç kalıntı gerilimi ortadan kaldırmak için −196°C’de işlenmiştir. Bu işlem, bıçağın gizli metal kalıntılara çarptığında parçalanmadan büyük kinetik darbeleri emmesini garanti eder.",
       },
     ],
     dimensionLabels: {
-      col1: "Insert Dimensions (L × W × T)",
-      col2: "Bolt Size",
-      col3: "Insert Profile",
-      col4: "Typical OEM Platform",
+      col1: "Yerleştirme Boyutları (U × G × Y)",
+      col2: "Cıvata Boyutu",
+      col3: "Profil Ekle",
+      col4: "Tipik OEM Platformu",
       caption:
-        "* Stator bed knives and custom rotor blade profiles available. Compatible with major global single-shaft shredder brands.",
+        "* Stator yatak bıçakları ve özel rotor kanat profilleri mevcuttur. Dünyanın önde gelen tek şaftlı parçalayıcı markalarıyla uyumludur.",
     },
     standardDimensions: [
       {
@@ -1971,67 +1980,71 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Which alloy offers better edge retention for cutting rigid purges: D2 or DC53?",
+            "Sert temizleme parçalarının kesilmesinde hangi alaşım daha iyi kenar dayanıklılığı sağlar: D2 mi, yoksa DC53 mi?",
           answer:
-            "For dense injection-moulding purges and thick-wall HDPE on single-shaft rotors at 80–120 RPM, DC53 consistently outperforms D2. Single-shaft impact loading exposes DC53's 17% higher transverse rupture strength, resisting the micro-chipping at the cutting face that D2 typically develops on rigid purge material after 300–500 operating hours.",
-        },
-        {
-          question: "What causes material wrap-back and rotor stalling?",
-          answer:
-            "Wrap-back is usually caused by inconsistent face flatness across the rotor insert stack, creating uneven knife-to-bed clearance. Material passes through wide gaps instead of being sheared, circulates back, and clogs the rotor pocket. Our inserts are CNC-machined to ±0.02mm face flatness to eliminate this.",
+            "Yoğun enjeksiyon kalıplama temizlemelerinde ve 80–120 RPM hızındaki tek şaftlı rotorlarda kalın cidarlı HDPE uygulamalarında, DC53, D2’den tutarlı bir şekilde daha iyi performans gösterir. Tek şaftlı darbe yüklemesi, DC53'ün %17 daha yüksek enine kopma mukavemetini ortaya çıkarır; bu sayede, D2'nin tipik olarak 300–500 çalışma saatinden sonra sert temizleme malzemesinde kesme yüzeyinde ortaya çıkan mikro yontulmalara karşı direnç gösterir.",
         },
         {
           question:
-            "How does the four-edge indexable design reduce tooling costs?",
+            "Malzemenin geri sarılması ve rotorun durmasına ne sebep olur?",
           answer:
-            "Each square insert has four independent cutting edges. When one edge dulls, loosen the single mounting bolt, rotate the insert 90° to a fresh edge, and retorque. This quadruples the effective service life per blade purchased, reducing annual tooling expenditure by approximately 75% versus non-indexable alternatives.",
+            "Geri sarılma sorunu genellikle rotor kesici uç yığınında yüzey düzgünlüğünün tutarsız olmasından kaynaklanır ve bu da bıçak ile yatak arasındaki boşluğun dengesiz olmasına yol açar. Malzeme kesilmek yerine geniş boşluklardan geçer, geri döner ve rotor yuvasını tıkar. Kesici uçlarımız, bu sorunu ortadan kaldırmak için ±0,02 mm yüzey düzgünlüğü ile CNC ile işlenmiştir.",
         },
         {
           question:
-            "What insert geometry is required for shredding large-format IBC totes and HDPE drums?",
+            "Dört kenarlı değiştirilebilir uç tasarımı, takım maliyetlerini nasıl düşürür?",
           answer:
-            "For thick-wall containers, specify concave-faced inserts (50×50mm or 60×60mm). The concave profile creates a positive rake geometry, preventing the blade from skiving across the smooth HDPE surface at initial impact and ensuring immediate penetration during the downstroke.",
+            "Her kare uçta dört adet bağımsız kesme kenarı bulunur. Bir kenar körelirse, tek sabitleme cıvatasını gevşetin, ucu 90° döndürerek yeni bir kenara getirin ve cıvatayı tekrar sıkın. Bu işlem, satın alınan her bıçak için etkili hizmet ömrünü dört katına çıkarır ve değiştirilebilir uçlara sahip olmayan alternatiflere kıyasla yıllık takım harcamalarını yaklaşık %75 oranında azaltır.",
         },
         {
-          question: "Can Sureay supply the matching stationary bed knife?",
+          question:
+            "Büyük boyutlu IBC konteynerleri ve HDPE varillerin parçalanması için hangi kesici geometrisi gereklidir?",
           answer:
-            "Yes. Stationary bed knives are manufactured as matched sets with rotor inserts, with the clearance face ground to the same ±0.02mm tolerance. A matched bed knife eliminates the clearance guesswork introduced when sourcing rotor inserts and bed knives from separate suppliers.",
+            "Kalın cidarlı kaplar için içbükey yüzeyli kesici uçlar (50×50 mm veya 60×60 mm) belirtin. İçbükey profil, pozitif eğim geometrisi oluşturarak bıçağın ilk çarpışmada pürüzsüz HDPE yüzeyi üzerinde kaymasını önler ve aşağı doğru hareket sırasında anında delme işlemini sağlar.",
+        },
+        {
+          question: "Sureay, buna uygun sabit yatay bıçağı temin edebilir mi?",
+          answer:
+            "Evet. Sabit yatak bıçakları, rotor uçlarıyla uyumlu setler halinde üretilir ve aralık yüzeyi aynı ±0,02 mm toleransına göre taşlanmıştır. Uyumlu bir yatak bıçağı, rotor uçlarını ve yatak bıçaklarını ayrı tedarikçilerden temin ederken ortaya çıkan aralık tahminlerini ortadan kaldırır.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement inserts typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders.",
-        },
-        {
-          question: "Can we trial a sample set before a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 inserts) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisiyiz. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı dövüp taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek uçlar genellikle 48 saat içinde sevk edilir. Özel profillerin sevkiyatı ise 10–15 iş günü sürer. DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
+        },
+        {
+          question:
+            "Tam üretim siparişinden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makine uyumluluğunun doğrulanması ve kenar ömrü testleri için numune setleri (genellikle 2–5 adet ek parça) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür.",
+        },
+        {
+          question:
+            "Sureay hangi kalite sertifikalarına sahiptir ve malzeme test raporlarını sunabilir misiniz?",
+          answer:
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası eklenir. OEM onay süreci için, talep üzerine eksiksiz CMM boyutsal raporları ve çelik fabrikası sertifikaları temin edilebilir.",
         },
       ],
     },
   },
   {
     id: "single-shaft-bed-knives",
-    name: "Single Shaft Bed Knives",
-    fullName: "Single Shaft Shredder Bed Knives (Stator Knives)",
+    name: "Tek Mil Yatak Bıçakları",
+    fullName: "Tek Şaftlı Parçalayıcı Yatak Bıçakları (Stator Bıçakları)",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Bed Knives",
+    categoryDisplay: "Tek Mil Yatak Bıçakları",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
-    badge: "Precision Ground",
+    badge: "Hassas Taşlama",
     badgeColor: "blue",
     gallery: [
       "/images/products/shredder-blades/single-shredder-bed-knives.webp",
@@ -2039,9 +2052,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Heavy-duty stator knives (bed knives) for single-shaft shredders. Manufactured from D2 (1.2379) and specialized high-alloy steels. Press-quenched and precision-ground to strict straightness tolerances (≤ 0.05mm/m) to ensure uniform rotor-to-bed shear clearance. Custom slotted hole patterns for exact clearance adjustment. Compatible with Vecoplan, Weima, Lindner, and Zerma.",
+      "Tek şaftlı parçalayıcılar için ağır hizmet tipi stator bıçakları (yatak bıçakları). D2 (1.2379) ve özel yüksek alaşımlı çeliklerden üretilmiştir. Rotor ile yatak arasındaki kesme boşluğunun eşit olmasını sağlamak için, sıkı düzlük toleranslarına (≤ 0,05 mm/m) göre presle söndürülmüş ve hassas bir şekilde taşlanmıştır. Boşluğun tam olarak ayarlanabilmesi için özel oluklu delik desenleri. Vecoplan, Weima, Lindner ve Zerma ile uyumludur.",
     fullDescription:
-      "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Tek şaftlı bir parçalama sisteminde, yatay bıçak (stator), dönen kesici uçların malzemeyi keserken karşılaştığı sabit kesme kenarı işlevi görür. Bu bıçaklar, parçalayıcı rotorunun tüm genişliğini kapladığından —genellikle 2.000 mm’yi aşan uzunlukta olduğundan— bunların imalatı, termal bozulma üzerinde mutlak bir kontrol gerektirir.\n\n## Düzlük Zorunluluğu\n\nÇarpık bir yatak bıçağı, parçalayıcının verimsiz çalışmasının başlıca nedenidir. Bıçak eğrilirse, kesme aralığı dengesiz hale gelir: merkezde çok dar (rotorun ciddi bir çarpışma riskine yol açar) ve uçlarda çok gevşek (malzemenin geri sarılmasına ve sürtünmeyle erimesine neden olur). Sureay yatak bıçakları, ısıl işlem işlemi sırasında özel bir presle su verme işleminden geçirilir ve ardından hassas yüzey taşlaması uygulanır. Metre başına ≤ 0,05 mm'lik bir düzlük toleransı garanti ederek, rotorun tamamı boyunca mükemmel şekilde homojen bir kesme boşluğu sağlarız.\n\n## Birden Fazla Yeniden Bileme için Derin Sertleştirme\n\nAtılan veya sırayla değiştirilen rotor uçlarından farklı olarak, ağır yatak bıçakları önemli bir sermaye yatırımıdır ve yeniden bilenen olabilmelidir. Sadece yüzeyde değil, bıçağın tüm kesiti boyunca HRC 56–60 arasında homojen bir sertlik elde etmek için vakumlu ısıl işlem yöntemini kullanıyoruz. Bu sayede operatörler, yumuşak çekirdeği ortaya çıkarmadan eğimli kenarı birçok kez yeniden bileme olanağına sahip olur ve bıçağın toplam çalışma ömrünü en üst düzeye çıkarır.\n\n## Yivli ve Havşa Açıklı Montaj\n\nHem rotor hem de stator bıçakları aşındıkça, optimum 0,2 mm–1,0 mm kesme aralığını korumak hayati önem taşır. Yatak bıçaklarımız, OEM makinenizin ayar mekanizmalarına mükemmel şekilde uyacak şekilde tasarlanmış, hassas CNC ile işlenmiş oluklu delikler veya büyük çaplı havşalara sahiptir. Bu, bakım ekiplerinin yatak bıçağını hassas bir şekilde ilerletebilmesini ve şiddetli titreşim altında güvenli bir şekilde sabitleyebilmesini sağlar.\n\n## Komple Aşınma Setinin Siparişi\n\nKesme aralığı tek bir parça ile değil, iki parça ile ayarlanır. Aşınmış rotor uçları şaftta kalmışken bir yatak bıçağının değiştirilmesi, her uç konumunda 0,2 mm–1,0 mm'lik açıklığın teknik şartname dışına çıkmasına neden olur ve yeni yatak bıçağı kenarı dengesiz yükü üstlenir. Rotor uçları, bıçak tutucular, sıkıştırma çubukları, ayar şimleri ve ara parçalar şirket içinde üretilir ve aynı siparişle gönderilir — seti üç farklı tedarikçiden temin etmek, üç farklı tolerans yığını anlamına gelir ve yeniden montajda elde edilebilecek boşluk, en gevşek olanı tarafından sınırlanır.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2096,40 +2109,40 @@ export const blades: Blade[] = [
     components: [
       {
         id: "straightness-control",
-        tag: "TOLERANCE",
-        title: "Zero-Distortion Straightness",
+        tag: "HOŞGÖRÜ",
+        title: "Sıfır Bozulmalı Düzlük",
         description:
-          "Press-quenched and precision-ground to eliminate bowing. A perfectly straight bed knife guarantees a uniform shear gap, preventing material from slipping through uncut.",
+          "Eğriliği ortadan kaldırmak için presle sertleştirilmiş ve hassas bir şekilde taşlanmıştır. Mükemmel derecede düz bir yatak bıçağı, kesme aralığının eşit olmasını garanti eder ve malzemenin kesilmeden kayıp geçmesini önler.",
       },
       {
         id: "deep-hardening",
-        tag: "LIFESPAN",
-        title: "Through-Hardened Core",
+        tag: "YAŞAM SÜRESİ",
+        title: "Tam Sertleştirilmiş Çekirdek",
         description:
-          "Vacuum heat-treated to ensure consistent hardness (HRC 56–60) deep into the core. You can regrind the bevel multiple times without performance loss.",
+          "Çekirdeğin derinliklerine kadar tutarlı bir sertlik (HRC 56–60) sağlamak için vakumda ısıl işleme tabi tutulmuştur. Performans kaybı yaşamadan kesici kenarı defalarca yeniden bileme yapabilirsiniz.",
       },
       {
         id: "adjustable-mounting",
-        tag: "MAINTENANCE",
-        title: "Precision Adjustment Slots",
+        tag: "BAKIM",
+        title: "Hassas Ayar Yuvaları",
         description:
-          "CNC-milled mounting slots allow technicians to easily advance the bed knife toward the rotor to compensate for wear, maintaining peak shredding efficiency.",
+          "CNC ile frezelenmiş montaj yuvaları, teknisyenlerin aşınmayı telafi etmek için yatay bıçağı rotora doğru kolayca ilerletmelerine olanak tanıyarak, parçalama verimliliğinin en üst düzeyde kalmasını sağlar.",
       },
       {
         id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
+        tag: "TEDARİK",
+        title: "Komple Yatak Bıçağı Aşınma Seti",
         description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
+          "Kesme aralığı, rotor ucu ve yatay bıçak tarafından birlikte belirlenir. Birbiriyle uyumlu rotor uçları, bıçak tutucular, sıkıştırma çubukları ve ayar şimleri şirket içinde üretilir ve tek bir siparişle sevk edilir; böylece tüm aşınma seti, tek bir duruş sırasında değiştirilebilir.",
       },
     ],
     dimensionLabels: {
-      col0: "Overall Length (mm)",
-      col1: "Width (mm)",
-      col2: "Thickness (mm)",
-      col3: "Hole / Mounting Configuration",
+      col0: "Toplam Uzunluk (mm)",
+      col1: "Genişlik (mm)",
+      col2: "Kalınlık (mm)",
+      col3: "Delik / Montaj Düzeni",
       caption:
-        "* Bed knives are highly machine-specific. Standard reference sizes shown in mm — we manufacture to exact OEM drawings or custom customer specs. Single-piece seamless up to 3,500 mm.",
+        "* Yatak bıçakları, makineye göre büyük farklılıklar gösterir. Standart referans boyutlar mm cinsinden belirtilmiştir — ürünlerimizi, OEM çizimlerine tam olarak uygun olarak veya müşterinin özel taleplerine göre üretiyoruz. Tek parça ve dikişsiz olarak 3.500 mm’ye kadar.",
     },
     standardDimensions: [
       {
@@ -2178,62 +2191,62 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why is the straightness tolerance of a bed knife so important?",
+            "Bir yatay bıçağın düzlük toleransı neden bu kadar önemlidir?",
           answer:
-            "If a bed knife is warped by even 0.5mm, the clearance between the rotor inserts and the bed knife becomes inconsistent. Where the gap is too tight, the rotor knives will strike the bed knife, causing catastrophic damage. Where the gap is too wide, material will fold and wrap around the rotor instead of being sheared. Our ≤ 0.05mm/m straightness tolerance prevents both issues.",
+            "Bir yatak bıçağı 0,5 mm kadar bile eğrilmişse, rotor bıçakları ile yatak bıçağı arasındaki boşluk düzensiz hale gelir. Boşluğun çok dar olduğu yerlerde, rotor bıçakları yatak bıçağına çarparak ciddi hasara yol açar. Boşluğun çok geniş olduğu yerlerde ise malzeme kesilmek yerine kıvrılır ve rotorun etrafına sarılır. ≤ 0,05 mm/m'lik düzlük toleransımız her iki sorunu da önler.",
         },
         {
-          question: "How many times can a Sureay bed knife be reground?",
+          question: "Bir Sureay yatay bıçağı kaç kez yeniden bilenenebilir?",
           answer:
-            "Because we through-harden our bed knives (ensuring the core is as hard as the surface), they can be reground repeatedly until the dimensional limit of the machine's adjustment mechanism is reached. Typically, a heavy-duty D2 bed knife can undergo 5 to 10 regrind cycles depending on the depth of wear.",
-        },
-        {
-          question:
-            "How do I ensure the replacement bed knife aligns with my machine's adjustment pushers?",
-          answer:
-            "Bed knives utilize slotted holes or specific counter-bore patterns to integrate with the shredder's rear adjustment bolts (pushers). We maintain a vast database of OEM drawings for brands like Weima, Vecoplan, and Lindner. Supplying us with your machine model or a basic drawing ensures the slots are milled to the exact OEM coordinates.",
+            "Yatak bıçaklarımızı tam sertleştirme işlemine tabi tuttuğumuzdan (böylece çekirdeğin yüzey kadar sert olmasını sağladığımızdan), makinenin ayar mekanizmasının boyut sınırına ulaşılana kadar defalarca yeniden bilenenebilirler. Genellikle, ağır hizmet tipi bir D2 yatak bıçağı, aşınma derinliğine bağlı olarak 5 ila 10 kez yeniden bileme işlemine tabi tutulabilir.",
         },
         {
           question:
-            "Should I replace the bed knife when I replace the rotor inserts?",
+            "Yedek yatay bıçağın, makinemdeki ayar iticileriyle hizalanmasını nasıl sağlarım?",
           answer:
-            "Not necessarily every time. Rotor inserts wear out much faster. However, if the bed knife's cutting edge is severely rounded or chipped, placing new rotor inserts against a dull bed knife will drastically reduce the lifespan of the new inserts and decrease throughput. We recommend inspecting the bed knife edge during every rotor indexing cycle and regrinding or replacing it when a sharp edge can no longer be maintained.",
+            "Yatak bıçakları, parçalayıcının arka ayar cıvatalarıyla (iticiler) entegre olmak üzere oluklu delikler veya belirli havşa desenleri kullanır. Weima, Vecoplan ve Lindner gibi markalara ait geniş bir OEM çizim veritabanına sahibiz. Makinenizin modelini veya temel bir çizimini bize iletmeniz, yuvaların tam olarak OEM koordinatlarına göre frezelenmesini sağlar.",
         },
         {
           question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+            "Rotor uçlarını değiştirirken yatay bıçağı da değiştirmeli miyim?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Her seferinde olmak zorunda değildir. Rotor uçları çok daha hızlı aşınır. Ancak, yatay bıçağın kesici kenarı ciddi şekilde yuvarlanmış veya çentiklenmişse, yeni rotor uçlarını körelmiş bir yatay bıçağa takmak, yeni uçların ömrünü önemli ölçüde kısaltacak ve üretim kapasitesini düşürecektir. Her rotor indeksleme döngüsü sırasında yatay bıçağın kenarını kontrol etmenizi ve keskin kenarın artık korunamadığı durumlarda yeniden bilemenizi veya değiştirmenizi öneririz.",
+        },
+        {
+          question:
+            "Aynı sipariş kapsamında uygun rotor ek parçalarını, tutucuları ve ayar pullarını tedarik edebilir misiniz?",
+          answer:
+            "Evet. Rotor uçları, bıçak tutucular, sıkıştırma çubukları, ayar şimleri ve ara parçalar şirket içinde üretilmekte ve rutin olarak yatak bıçaklarıyla birlikte sevk edilmektedir. Siparişlerin bu şekilde verilmesini öneriyoruz, çünkü rotor ile yatak arasındaki boşluk her iki parça tarafından belirlenir: Aşınmış uçlara yeni bir yatak bıçağı takmak, her uç konumunda boşluğun teknik özelliklerin dışında kalmasına neden olur ve yeni kenar, dengesiz yükü üstlenir. Tek bir toplu sevkiyat, iki yerine tek bir üretim durdurma ve üç yerine tek bir tolerans birikimi anlamına gelir.",
         },
       ],
       company: [
         {
+          question: "2 metreden uzun kanatlar üretme kapasiteniz var mı?",
+          answer:
+            "Evet. Tesisimiz, 3.500 mm uzunluğa kadar dikişsiz, tek parça yatak bıçaklarını termal bozulmaya yol açmadan işleyebilen ağır hizmet tipi yüzey taşlama makineleri ve genişletilmiş vakumlu ısıl işlem fırınlarıyla donatılmıştır.",
+        },
+        {
           question:
-            "Do you have the manufacturing capacity for blades over 2 meters long?",
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "Yes. Our facility is equipped with heavy-duty surface grinders and extended vacuum heat treatment furnaces capable of processing seamless, single-piece bed knives up to 3,500mm in length without inducing thermal distortion.",
+            "Biz doğrudan OEM üreticisiyiz. Bu sayede, uzun stator bıçakları için hayati önem taşıyan ısıl işlem ve taşlama süreçlerini sıkı bir şekilde kontrol edebiliyoruz ve ticaret şirketlerinde sıklıkla görülen kalite tutarsızlıklarını ortadan kaldırıyoruz.",
         },
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question: "Özel üretim yatak bıçaklarının teslim süresi ne kadardır?",
           answer:
-            "We are a direct OEM manufacturer. This allows us to strictly control the heat treatment and grinding processes critical for long stator knives, eliminating the quality inconsistencies common with trading companies.",
-        },
-        {
-          question: "What is the lead time for custom bed knives?",
-          answer:
-            "For standard OEM replacements, we often ship within 3–5 days. For custom lengths or specific alloy requirements, production lead time is typically 15–20 working days, inclusive of the deep thermal cycling processes required for dimensional stability.",
+            "Standart OEM yedek parçaları için genellikle 3–5 gün içinde sevkiyat yapıyoruz. Özel uzunluklar veya belirli alaşım gereksinimleri söz konusu olduğunda, üretim süresi – boyutsal kararlılık için gerekli olan derin termal döngü işlemleri de dahil olmak üzere – genellikle 15–20 iş günüdür.",
         },
       ],
     },
   },
   {
     id: "granulator-blades",
-    name: "Granulator Blades",
+    name: "Öğütücü Bıçakları",
     fullName:
-      "Industrial Plastic Crusher & Granulator Knives for PET, PVC & PP Recycling",
+      "PET, PVC ve PP Geri Dönüşümü için Endüstriyel Plastik Kırıcı ve Öğütücü Bıçakları",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Granulator Blades",
+    categoryDisplay: "Öğütücü Bıçakları",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2241,15 +2254,15 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "D2, SKD-11, and Cr12MoV granulator rotor and stator knives precision-ground to ±0.02mm bolt-hole tolerance for Cumberland, Conair/Wortex, Herbold, and Rapid granulators. Bevel angles from 30° to 55° are matched to polymer type-delivering clean, low-fines regrind. Vacuum hardening plus deep cryogenic processing stabilizes HRC 58–62 for extended edge retention.",
+      "Cumberland, Conair/Wortex, Herbold ve Rapid öğütücüler için ±0,02 mm cıvata deliği toleransına göre hassas bir şekilde taşlanmış D2, SKD-11 ve Cr12MoV öğütücü rotor ve stator bıçakları. 30° ile 55° arasındaki eğim açıları, polimer türüne göre ayarlanarak temiz ve ince parçacık oranı düşük bir öğütme sonucu sağlar. Vakumla sertleştirme ve derin kriyojenik işleme, HRC 58–62 sertlik seviyesini sabitleyerek kesici kenarların uzun süre dayanmasını sağlar.",
     fullDescription:
-      "Granulator rotor and stator knives are the highest-wear components in any closed-loop plastic recycling line. Incorrect alloy selection or substandard geometry tolerances directly translate into enlarged particle size distribution, excessive dust and fines, elevated motor amp draw, and shortened sharpening intervals-all of which degrade regrind pellet quality and increase cost per tonne processed.\n\nSureay granulator blades are manufactured from D2 (1.2379), SKD-11, DC53, and Cr12MoV cold-work tool steels-selected based on the specific polymer and abrasive filler content being processed. Calcium carbonate-filled PVC and glass-fibre-reinforced nylon demand SKD-11 or DC53 for maximum abrasion resistance. Impact-loaded applications such as thick-wall HDPE containers, cold nylon runners, and heavy sprues require the higher toughness-to-hardness ratio of Cr12MoV.\n\nAll blades are vacuum-hardened and deep-cryogenically processed at -196°C to achieve a stabilized HRC 58–62 microstructure. The cryogenic step eliminates retained austenite, reduces internal compressive stress, and significantly extends the time between sharpening cycles by improving carbide dispersion uniformity across the cutting edge.\n\n## Precision Grinding Standards\nThe cutting clearance between rotor and stator knives is the single most influential variable controlling regrind particle size and fines fraction. Sureay granulator blades are machined to the following tolerances to ensure consistent rotor-to-bed gap across the full cutting width:\n\n- Bolt-hole positional tolerance: ±0.02 mm\n- Face flatness: 0.05 mm\n- Parallelism (top face to bottom face): 0.03 mm\n- Bevel angle: 30°–55° (application-optimized per polymer and rotor speed)\n\nA face flatness deviation above 0.08mm allows rotor knife rocking under load, progressively widening the cutting gap and increasing the coarse fraction in regrind-a defect that causes downstream extruder feed inconsistency.\n\n## Polymer-Specific Bevel Angle Selection\n30°–35° bevel: Soft thermoplastics (LDPE, LLDPE, EVA, foam PP). Low included angle delivers maximum sharpness for clean shearing of compliant materials.\n\n40°–45° bevel: General-purpose engineering plastics (HDPE, ABS, standard PP/PET regrind). Balanced edge strength and sharpness for the most common granulator feedstocks.\n\n50°–55° bevel: Highly abrasive or filled compounds (glass-filled nylon, calcium carbonate PVC, UHMW-PE). Wider bevel distributes abrasive wear over a larger cutting face, extending sharpening intervals.\n\n## Machine Compatibility\nDimensions are reverse-engineered to match Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid, and Ramco configurations. Both double-hole and multi-hole (triple, quadra) mounting patterns are carried in standard stock.",
+      "Granülatör rotor ve stator bıçakları, herhangi bir kapalı devre plastik geri dönüşüm hattında en fazla aşınmaya maruz kalan bileşenlerdir. Yanlış alaşım seçimi veya standartların altındaki geometri toleransları, doğrudan parçacık boyutu dağılımının genişlemesine, aşırı toz ve ince parçacık oluşumuna, motor akım çekişinin artmasına ve bileme aralıklarının kısalmasına yol açar; bunların tümü, yeniden öğütülmüş pelet kalitesini düşürür ve işlenen ton başına maliyeti artırır.\n\nSureay zGTR0 zGTR'ler, işlenmekte olan spesifik polimer ve aşındırıcı dolgu maddesine göre seçilen D2 (1.2379), SKD-11, DC53 ve Cr12MoV zGTR1 zGTR'lerden üretilir. Kalsiyum karbonat dolgulu PVC ve cam elyaf takviyeli naylon, maksimum aşınma direnci için SKD-11 veya DC53 gerektirir. Kalın cidarlı HDPE kaplar, soğuk naylon kızaklar ve ağır döküm kanalları gibi darbeye maruz kalan uygulamalar, Cr12MoV’nin daha yüksek tokluk-sertlik oranını gerektirir.\n\nTüm bıçaklar, stabilize edilmiş HRC 58–62 mikroyapısı elde etmek için vakumla sertleştirilir ve -196°C'de derin kriyojenik işleme tabi tutulur. Kriyojenik işlem, kalıntı östeniti ortadan kaldırır, iç basınç gerilimini azaltır ve kesme kenarı boyunca karbür dağılımının homojenliğini artırarak bileme döngüleri arasındaki süreyi önemli ölçüde uzatır.\n\n## Hassas Taşlama Standartları\nRotor ve stator bıçakları arasındaki kesme boşluğu, yeniden öğütme partikül boyutunu ve ince parçacık oranını kontrol eden en etkili tek değişkendir. Sureay granülatör bıçakları, tüm kesme genişliği boyunca rotor ile yatak arasında tutarlı bir boşluk sağlamak için aşağıdaki toleranslara göre işlenmiştir:\n\n- Cıvata deliği konum toleransı: ±0,02 mm\n- Yüzey düzlüğü: 0,05 mm\n- Paralellik (üst yüzey ile alt yüzey arasında): 0,03 mm\n- Eğim açısı: 30°–55° (polimer ve rotor hızına göre uygulamaya optimize edilmiştir)\n\n0,08 mm'nin üzerindeki yüzey düzgünlüğü sapması, yük altında rotor bıçağının sallanmasına neden olur; bu da kesme boşluğunu giderek genişletir ve yeniden öğütülmüş malzemedeki iri parçacık oranını artırır – bu kusur, sonraki aşamadaki ekstrüder beslemesinde tutarsızlığa yol açar.\n\n## Polimere Özgü Eğim Açısı Seçimi\n30°–35° eğim: Yumuşak termoplastikler (LDPE, LLDPE, EVA, köpük PP). Düşük iç açı, esnek malzemelerin temiz bir şekilde kesilmesi için maksimum keskinlik sağlar.\n\n40°–45° eğim: Genel amaçlı mühendislik plastikleri (HDPE, ABS, standart PP/PET öğütülmüş malzeme). En yaygın granülatör hammaddeleri için dengeli kenar mukavemeti ve keskinlik.\n\n50°–55° eğim: Aşındırıcı etkisi yüksek veya dolgu içeren bileşikler (cam elyaf takviyeli naylon, kalsiyum karbonatlı PVC, UHMW-PE). Daha geniş eğim, aşındırıcı yıpranmayı daha geniş bir kesme yüzeyine dağıtır ve bileme aralıklarını uzatır.\n\n## Makine Uyumluluğu\nBoyutlar, Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid ve Ramco konfigürasyonlarına uyacak şekilde tersine mühendislik uygulanarak belirlenmiştir. Hem çift delikli hem de çok delikli (üçlü, dörtlü) montaj şemaları standart stokta bulundurulmaktadır.",
     link: "/products/granulator-blades",
     isFeatured: true,
     rfqPlaceholder:
-      "E.g., rotor and bed knives for a Rapid granulator, D2 steel, 3 sets — drawing attached",
+      "Örneğin, Rapid granülatör için rotor ve yatak bıçakları, D2 çeliği, 3 set — çizim ekte yer almaktadır",
     introNote:
-      "Rotor knives and bed knives wear at different rates and are rarely replaced on the same schedule. Rotor knives take the primary cutting load and typically need sharpening two to three times more often than the bed knife, but the cutting gap is set between the two — so a fresh rotor knife against a rounded bed knife still tears material and generates fines. Sureay supplies both as a matched set, ground from the same steel batch, so the gap holds after the first regrind. Bed knives (also called stator or fixed knives) are available in the same D2, SKD-11, DC53 and Cr12MoV grades.",
+      "Rotor bıçakları ve yatak bıçakları farklı hızlarda aşınır ve nadiren aynı zamanlamayla değiştirilir. Rotor bıçakları birincil kesme yükünü üstlenir ve genellikle yatak bıçağına göre iki ila üç kat daha sık bileme gerektirir; ancak kesme aralığı ikisi arasında ayarlanır — bu sayede, yuvarlaklaşmış bir yatak bıçağına karşı yeni bir rotor bıçağı yine de malzemeyi yırtarak ince parçacıklar üretir. Sureay, her ikisini de aynı çelik partisinden taşlanmış, birbirine uyumlu bir set halinde tedarik eder; böylece ilk yeniden bileme işleminden sonra boşluk korunur. Yatak bıçakları (stator veya sabit bıçaklar olarak da adlandırılır), aynı D2, SKD-11, DC53 ve Cr12MoV kalitelerinde mevcuttur.",
     compatibleMachines: [
       "Rapid Granulator",
       "Herbold Meckesheim",
@@ -2301,32 +2314,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "maximized-regrind-quality",
-        tag: "QUALITY",
-        title: "Maximized Regrind Quality",
+        tag: "KALİTE",
+        title: "En Üst Düzeyde Yeniden Öğütme Kalitesi",
         description:
-          "Ultra-sharp, precisely aligned cutting edges shear plastic cleanly rather than tearing it, drastically reducing the generation of unwanted dust and fines.",
+          "Son derece keskin ve hassas bir şekilde hizalanmış kesme kenarları, plastiği yırtmak yerine temiz bir şekilde keser ve böylece istenmeyen toz ve ince parçacıkların oluşumunu önemli ölçüde azaltır.",
       },
       {
         id: "extended-mtbr",
-        tag: "RELIABILITY",
-        title: "Extended MTBR (Mean Time Between Replacements)",
+        tag: "GÜVENİLİRLİK",
+        title: "Uzatılmış MTBR (Değiştirme Arası Ortalama Süre)",
         description:
-          "High wear resistance minimizes the frequency of blade sharpening and replacement, keeping your recycling line running continuously.",
+          "Yüksek aşınma direnci, bıçakların bileme ve değiştirme sıklığını en aza indirerek geri dönüşüm hattınızın kesintisiz çalışmasını sağlar.",
       },
       {
         id: "reduced-motor-load",
-        tag: "EFFICIENCY",
-        title: "Reduced Motor Load",
+        tag: "VERİMLİLİK",
+        title: "Azaltılmış Motor Yükü",
         description:
-          "Optimized cutting angles decrease the shearing force required, lowering the electrical amp draw on your granulator's motor and reducing energy costs per ton.",
+          "Optimize edilmiş kesme açıları, gereken kesme kuvvetini azaltarak granülatörünüzün motorundaki elektrik akımı çekişini düşürür ve ton başına enerji maliyetlerini azaltır.",
       },
     ],
     dimensionLabels: {
-      col0: "Hole Configuration",
-      col1: "Dimensions (L × W × T)",
-      col2: "Hole Center Pitch",
+      col0: "Delik Düzeni",
+      col1: "Boyutlar (U × G × Y)",
+      col2: "Delik Merkez Aralığı",
       caption:
-        "* Standard dimensions for rotor and stator knives in millimeters (mm). Custom profiles to drawing within 10 days.",
+        "* Rotor ve stator bıçakları için standart boyutlar milimetre (mm) cinsindendir. Çizimlere göre özel profiller 10 gün içinde hazırlanabilir.",
     },
     standardDimensions: [
       {
@@ -2383,82 +2396,85 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How do I choose between D2, DC53, and Cr12MoV for my granulator?",
+            "Granülatörüm için D2, DC53 ve Cr12MoV arasında nasıl seçim yapmalıyım?",
           answer:
-            "D2 is the industry standard for clean plastics like PET and PP. For glass-filled or abrasive polymers, DC53 offers superior wear resistance. If your feed contains occasional metal impurities (like wire or staples), Cr12MoV provides higher impact toughness to prevent edge chipping.",
+            "D2, PET ve PP gibi temiz plastikler için endüstri standardıdır. Cam takviyeli veya aşındırıcı polimerler için DC53, üstün aşınma direnci sunar. Besleme malzemesinde ara sıra metal yabancı maddeler (tel veya zımba teli gibi) bulunuyorsa, Cr12MoV, kenarların ufalanmasını önlemek için daha yüksek darbe dayanımı sağlar.",
         },
         {
           question:
-            "What causes excessive dust and fines during plastic granulation?",
+            "Plastik granülasyonu sırasında aşırı toz ve ince parçacıkların oluşmasına ne sebep olur?",
           answer:
-            "It's usually caused by blunt edges or an incorrect bevel angle tearing the plastic instead of shearing it. We optimize the bevel angle (30°–55°) based on your specific polymer to ensure clean cutting, which maximizes your regrind quality and pellet value.",
+            "Bu durum genellikle, keskin olmayan kenarlar veya yanlış bir eğim açısı nedeniyle plastiğin kesilmek yerine yırtılmasıyla ortaya çıkar. Temiz bir kesim sağlamak için, kullandığınız polimere göre eğim açısını (30°–55°) optimize ediyoruz; bu da yeniden öğütme kalitenizi ve pelet değerinizi en üst düzeye çıkarır.",
         },
         {
           question:
-            "Can you match the exact bolt-hole patterns for my specific machine?",
+            "Benim makinem için tam olarak aynı cıvata delik düzenlerini sağlayabilir misiniz?",
           answer:
-            "Absolutely. We maintain a vast database of OEM blueprints for Cumberland, Herbold, Rapid, Weima, and more. We CNC-mill all counter-bores to a strict ±0.02mm tolerance to guarantee a perfect drop-in fit without micro-rocking.",
+            "Kesinlikle. Cumberland, Herbold, Rapid, Weima ve daha birçok marka için kapsamlı bir OEM teknik çizim veritabanına sahibiz. Mikro sallanma olmadan kusursuz bir şekilde yerine oturmasını garanti etmek için tüm konik delikleri ±0,02 mm’lik sıkı bir toleransla CNC frezeliyoruz.",
         },
         {
           question:
-            "What rotor knife geometry produces the lowest fines fraction in beside-the-press granulators?",
+            "Pres yanındaki granülatörlerde en düşük ince parçacık oranını sağlayan rotor bıçağı geometrisi hangisidir?",
           answer:
-            "For beside-the-press in-line granulators on injection moulding lines, a 40°–45° bevel angle with a polished rake face (Ra ≤ 0.8μm) delivers the cleanest, lowest-fines regrind on runner and sprue material. The polished face reduces adhesion in the cutting zone, preventing the micro-welding of HDPE and PP material that generates fines at the high cycle rates typical of continuous injection moulding production.",
+            "Enjeksiyon kalıplama hatlarındaki pres yanına yerleştirilen sıralı öğütücülerde, cilalı eğim yüzeyi (Ra ≤ 0,8 μm) ile 40°–45°'lik bir eğim açısı, kanal ve besleme borusu malzemesinden en temiz ve en az ince parçacık içeren öğütülmüş malzeme elde edilmesini sağlar. Parlatılmış yüzey, kesme bölgesindeki yapışmayı azaltarak, sürekli enjeksiyon kalıplama üretiminde tipik olan yüksek döngü hızlarında ince parçacıkların oluşmasına neden olan HDPE ve PP malzemelerinin mikro kaynaklanmasını önler.",
         },
         {
           question:
-            "When should I sharpen versus replace my granulator rotor knives?",
+            "Granülatör rotor bıçaklarımı ne zaman bilemeliyim, ne zaman değiştirmeliyim?",
           answer:
-            "The primary indicator is regrind particle size distribution - when the oversize fraction exceeds 8–10% of output weight, rotor knives need sharpening. Secondary indicators are a 15%+ increase in motor amp draw above baseline and elevated dust fraction. Each Sureay blade can typically be resharpened 3–5 times before the bevel geometry reaches minimum usable material depth, at which point replacement is more economical.",
+            "Birincil gösterge, yeniden öğütülmüş parçacıkların boyut dağılımıdır; büyük boyutlu fraksiyon, çıktı ağırlığının %8–10’unu aştığında rotor bıçaklarının bilenmesi gerekir. İkincil göstergeler ise, motor akım çekişinde referans değerin %15'in üzerinde bir artış ve toz oranındaki artıştır. Her bir Sureay bıçağı, eğimli kenar geometrisi minimum kullanılabilir malzeme derinliğine ulaşana kadar genellikle 3–5 kez yeniden bilenebilir; bu noktada bıçağın değiştirilmesi daha ekonomiktir.",
         },
         {
-          question: "Do blades or the screen control my regrind particle size?",
+          question:
+            "Yeniden öğütme partikül boyutumu bıçaklar mı yoksa elek mi belirliyor?",
           answer:
-            "The screen sets the particle size — material stays in the cutting chamber until it is small enough to pass through. Blades control something different: how cleanly that material is cut on the way there. Dull or badly angled knives tear rather than shear, which produces dust and fines that pass the screen but lower the value of your regrind. If your particle size is wrong, change the screen. If your particle size is right but the fines fraction is climbing, look at the knives and the cutting gap.",
+            "Elektre, parçacık boyutunu belirler — malzeme, elekten geçecek kadar küçük hale gelene kadar kesme haznesinde kalır. Bıçaklar ise farklı bir unsuru kontrol eder: malzemenin bu süre içinde ne kadar temiz bir şekilde kesildiğini. Körelmiş veya açısı yanlış ayarlanmış bıçaklar, kesmek yerine yırtmaya neden olur; bu da elekten geçen ancak yeniden öğütülmüş malzemenizin değerini düşüren toz ve ince parçacıkların oluşmasına yol açar. Parçacık boyutunuz yanlışsa, eleği değiştirin. Parçacık boyutunuz doğru ancak ince parçacık oranı artıyorsa, bıçaklara ve kesme aralığına bakın.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisiyiz. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı dövüp taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "Sureay’in ısıl işlem modelini daha ucuz alternatiflerden ayıran nedir?",
           answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, which raises wear resistance and, more importantly, keeps hardness uniform along the full length of the cutting edge — the single biggest cause of uneven wear on long granulator knives is a soft section left by incomplete transformation.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Standart su verme işleminden farklı olarak, her Sureay bıçağı vakumla sertleştirme işleminden sonra derin kriyojenik işleme tabi tutulur. Bu işlem, kalıntı östeniti martensite dönüştürür; bu da aşınma direncini artırır ve daha da önemlisi, kesici kenarın tüm uzunluğu boyunca sertliği homojen tutar — uzun granülatör bıçaklarında dengesiz aşınmanın en büyük tek nedeni, dönüşümün tam olarak gerçekleşmemesi sonucu kalan yumuşak bölgedir.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Dünya çapında gönderim yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM yedek bıçaklar genellikle 48 saat içinde sevk edilir. Özel profillerin teslimatı ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye firmalarıyla doğrudan iş birliği yapıyoruz.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Sureay hangi kalite sertifikalarına sahiptir ve malzeme test raporlarını sunabilir misiniz?",
           answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences - no tooling commitment until fit is confirmed.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası eklenir. OEM onay süreci için, talep üzerine eksiksiz CMM boyutsal raporları ve çelik fabrikası sertifikaları temin edilebilir.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makineye uyum doğrulaması ve kesici kenar ömrü testi için numune setleri (genellikle 2–5 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür. Özel profiller için, tam üretime geçilmeden önce boyut onay numuneleri üretilir; uyum onaylanana kadar kalıp yapımı taahhüdü verilmez.",
         },
       ],
     },
   },
   {
     id: "metal-coil-slitting-knives",
-    name: "Metal Coil Slitting Knives",
-    fullName: "Heavy-Duty Rotary Slitting Knives for Steel Coil Processing",
+    name: "Metal Rulo Dilimleme Bıçakları",
+    fullName: "Çelik Rulo İşleme için Ağır Hizmet Tipi Döner Kesme Bıçakları",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Slitting Blades",
+    categoryDisplay: "Metal Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Heavy Duty",
+    badge: "Ağır Hizmet",
     badgeColor: "red",
     gallery: [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
@@ -2466,9 +2482,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
     ],
     description:
-      "Complete rotary coil slitting tooling for metal service centers and steel mills. D2, SKD-11, and H13 circular slitter knives lapped to Ra ≤ 0.2μm with ±0.001mm thickness tolerance. Engineered for burr-free shearing of cold-rolled (CR), hot-rolled (HR) steel, galvanized coils, and heavy silicon steel.",
+      "Metal hizmet merkezleri ve çelik fabrikaları için eksiksiz döner bobin kesme takımları. Ra ≤ 0,2 μm'ye kadar alıştırılmış, ±0,001 mm kalınlık toleransına sahip D2, SKD-11 ve H13 dairesel kesme bıçakları. Soğuk haddelenmiş (CR), sıcak haddelenmiş (HR) çelik, galvanizli bobinler ve ağır silikonlu çeliğin çapak bırakmadan kesilmesi için tasarlanmıştır.",
     fullDescription:
-      "Precision coil slitting demands a dimensional tolerance standard that most industrial cutting applications never approach. On a high-speed slitting line running heavy steel coils at 200–400 m/min across a multi-knife arbor stack, a cumulative thickness error of just 0.01mm per knife produces measurable slit-width deviation, severe edge burrs, and coil camber that exceeds the quality limits for automotive and appliance manufacturing.\n\nSureay circular metal slitter knives are manufactured to extreme verified tolerances. All knife side faces are finish-lapped to Ra ≤ 0.2μm. This mirror face finish is not merely aesthetic—it ensures full metal-to-metal contact between blades and spacers in the arbor stack, eliminating microscopic air gaps that allow individual blade deflection under lateral slitting loads.\n\n## Heavy Alloy Selection by Strip Material\n\n**Cold-Rolled & Galvanized Steel (CR, EG, HDG):** D2 (1.2379) or SKD-11, hardened to HRC 60–62 via vacuum quench. High chromium carbide content resists the abrasive wear from zinc spangle and surface scale. Recommended for continuous-shift CR steel service centers.\n\n**Hot-Rolled Steel & Heavy Gauge Plate:** H13 (SKD-61) hot-work tool steel or 6CrW2Si. Hot-rolled steel slitting generates massive impact forces and elevated ambient temperatures. H13's superior toughness prevents the catastrophic brittle fracture that destroys standard D2 blades on heavy-gauge lines.\n\n**Silicon Steel (CRGO / CRNO Electrical Grade):** Cr12MoV or PM powder-metallurgy grades. Silicon steel's extreme abrasiveness—primarily caused by silica inclusions—demands maximum wear resistance to maintain slit-width tolerances throughout a full transformer laminate production run.\n\n## Complete Slitting Arbor Tooling\n\nThe cutting knife is only one component of a precision coil slitting system. Steel spacers, bonded rubber stripper rings, and overarm separator discs must be dimensionally matched to the knife set to ensure uniform arbor preload and consistent strip tension. Sureay supplies fully integrated slitting tooling packages—verified as a matched system to eliminate tolerance stack-up errors.",
+      "Hassas bobin kesme işlemi, çoğu endüstriyel kesme uygulamasının asla yaklaşamadığı bir boyutsal tolerans standardı gerektirir. Ağır çelik bobinleri 200–400 m/dk hızında çok bıçaklı bir mil yığını üzerinden işleyen bir yüksek hızlı kesme hattında, bıçak başına sadece 0,01 mm’lik bir kümülatif kalınlık hatası, ölçülebilir kesme genişliği sapmasına, ciddi kenar çapakları ve otomotiv ile beyaz eşya imalatı için kalite sınırlarını aşan rulo eğriliğine yol açar.\n\nSureay dairesel metal dilme bıçakları, doğrulanmış aşırı sıkı toleranslara göre üretilir. Tüm bıçak yan yüzeyleri, Ra ≤ 0,2 μm değerine kadar son işlemle parlatılır. Bu ayna yüzey kalitesi sadece estetik bir özellik değildir; aynı zamanda mil yığınındaki bıçaklar ve ara parçalar arasında tam metal-metal teması sağlayarak, yanal dileme yükleri altında tek tek bıçakların sapmasına neden olan mikroskobik hava boşluklarını ortadan kaldırır.\n\n## Şerit Malzemesine Göre Ağır Alaşım Seçimi\n\n**Soğuk Haddelenmiş ve Galvanizli Çelik (CR, EG, HDG):** D2 (1.2379) veya SKD-11, vakumla söndürme yoluyla HRC 60–62 sertliğe getirilir. Yüksek krom karbür içeriği, çinko parçacıkları ve yüzey kabuğundan kaynaklanan aşındırıcı aşınmaya direnç sağlar. Sürekli vardiyalı CR çelik hizmet merkezleri için önerilir.\n\n**Sıcak Haddelenmiş Çelik ve Kalın Levha:** H13 (SKD-61) sıcak işleme takım çeliği veya 6CrW2Si. Sıcak haddelenmiş çeliğin kesilmesi, büyük darbe kuvvetlerine ve yüksek ortam sıcaklıklarına neden olur. H13'ün üstün tokluğu, kalın sac hatlarında standart D2 bıçaklarını tahrip eden felaket niteliğindeki kırılmayı önler.\n\n**Silikonlu Çelik (CRGO / CRNO Elektrik Sınıfı):** Cr12MoV veya PM toz metalurjisi sınıfları. Silikonlu çeliğin —esas olarak silika kalıntılarından kaynaklanan— aşırı aşındırıcılığı, tam bir transformatör laminat üretim döngüsü boyunca kesme genişliği toleranslarını korumak için maksimum aşınma direnci gerektirir.\n\n## Eksiksiz Dilme Mili Takım Seti\n\nKesme bıçağı, hassas bobin dilme sisteminin yalnızca bir bileşenidir. Çelik ara parçalar, yapıştırılmış kauçuk sıyırma halkaları ve üst kol ayırıcı disklerin, mil ön yükünün eşit ve şerit gerginliğinin tutarlı olmasını sağlamak için bıçak setiyle boyutsal olarak uyumlu olması gerekir. Sureay, tolerans birikimi hatalarını ortadan kaldırmak üzere uyumlu bir sistem olarak doğrulanmış, tam entegre kesme takım paketleri sunmaktadır.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2512,33 +2528,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "micron-tolerance",
-        tag: "PRECISION",
-        title: "Micro-Tolerance Engineering",
+        tag: "HASSASİYET",
+        title: "Mikro Tolerans Mühendisliği",
         description:
-          "Engineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm. This guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor.",
+          "±0,001 mm kalınlık toleransı ve 0,002 mm paralellik ile tasarlanmıştır. Bu özellik, kesme miline birden fazla ağır bıçak ve ara parçanın istiflenmesi sırasında kümülatif hatanın sıfır olmasını garanti eder.",
       },
       {
         id: "alloy-toughness",
-        tag: "METALLURGY",
-        title: "Heavy-Duty Alloy Selection",
+        tag: "METALURJİ",
+        title: "Ağır Hizmet Tipi Alaşım Seçimi",
         description:
-          "From high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills. Each blade is vacuum hardened to deliver exceptional edge strength.",
+          "Aşındırıcı soğuk haddelenmiş ve galvanizli çelikler için yüksek krom içerikli D2/SKD11'den, ağır sıcak haddeleme tesisleri için darbeye dayanıklı H13'e kadar. Her bıçak, olağanüstü kenar mukavemeti sağlamak üzere vakumla sertleştirilmiştir.",
       },
       {
         id: "complete-setup",
-        tag: "SYSTEM",
-        title: "Complete Arbor Tooling",
+        tag: "SİSTEM",
+        title: "Eksiksiz Ağaç Kesme Aletleri",
         description:
-          "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs. A fully integrated system ensures perfect strip tension and burr-free coil rewinding.",
+          "Bıçakların yanı sıra, tam uyumlu çelik ara parçalar, kauçuk kaplı sıyırma halkaları ve üst kol ayırıcı diskler de sunuyoruz. Tamamen entegre bir sistem, mükemmel şerit gerginliği ve çapak bırakmayan bobin sarımını garanti eder.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Machine / Line Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
+      col0: "Tipik Makine / Hat Türü",
+      col1: "Dış Çap",
+      col2: "İç Çap",
+      col3: "Kalınlık",
       caption:
-        "* Dimensions shown are standard examples. We manufacture up to Ø 1500 mm for heavy-gauge plate slitting lines. Custom keyways and drive pin holes machined to exact OEM blueprints.",
+        "* Gösterilen boyutlar standart örneklerdir. Kalın sac kesme hatları için Ø 1500 mm’ye kadar üretim yapmaktayız. Özel kama yuvaları ve tahrik pimi delikleri, OEM teknik çizimlerine tam olarak uygun olarak işlenmektedir.",
     },
     standardDimensions: [
       {
@@ -2585,55 +2601,55 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What knife clearance should I set for cold-rolled steel versus silicon steel?",
+            "Soğuk haddelenmiş çelik ile silikonlu çelik arasında bıçak açıklığını ne kadar ayarlamalıyım?",
           answer:
-            "For cold-rolled mild steel (CR, EG), set horizontal clearance at 8–10% of material thickness. For silicon steel (CRGO/CRNO), tighten clearance to 5–8% — silicon steel's extreme hardness and brittleness demand a tighter shear gap to prevent the edge fracturing that produces burrs on transformer laminate strips.",
+            "Soğuk haddelenmiş yumuşak çelik (CR, EG) için yatay boşluğu malzeme kalınlığının %8–10’u olarak ayarlayın. Silikonlu çelik (CRGO/CRNO) için boşluğu %5–8'e kadar daraltın — silikonlu çeliğin aşırı sertliği ve kırılganlığı, transformatör laminat şeritlerinde çapaklara neden olan kenar kırılmalarını önlemek için daha dar bir kesme boşluğu gerektirir.",
         },
         {
           question:
-            "Why does my slit-width drift across the full coil width after the first coil?",
+            "Neden ilk bobinden sonra yarık genişliğim bobinin tüm genişliği boyunca değişiyor?",
           answer:
-            "Slit-width drift is caused by blade-to-spacer face contact loss from varying thickness tolerances in the arbor stack. Even a 0.002mm blade-thickness inconsistency in a 20-knife stack creates a cumulative 0.04mm lateral shift. Our blades and spacers are lapped to ±0.001mm thickness tolerance and Ra ≤ 0.2μm face finish, eliminating the air gaps that allow individual blade deflection.",
+            "Çentik genişliğindeki sapma, mil yığınındaki değişken kalınlık toleransları nedeniyle bıçak ile ara parça yüzeyi arasındaki temasın kaybolmasından kaynaklanır. 20 bıçaklık bir yığında 0,002 mm’lik bir bıçak kalınlığı tutarsızlığı bile, toplamda 0,04 mm’lik bir yanal kaymaya neden olur. Bıçaklarımız ve ara parçalarımız, ±0,001 mm kalınlık toleransı ve Ra ≤ 0,2 μm yüzey pürüzlülüğü değerlerine göre alıştırılarak işlenir; bu sayede, tek tek bıçakların sapmasına neden olan hava boşlukları ortadan kaldırılır.",
         },
         {
           question:
-            "Should I use D2 or H13 for slitting 8mm thick Hot-Rolled (HR) steel plate?",
+            "8 mm kalınlığındaki sıcak haddelenmiş (HR) çelik levhayı kesmek için D2 mi yoksa H13 mi kullanmalıyım?",
           answer:
-            "For 8mm HR plate, you must use H13 or 6CrW2Si. Slitting heavy-gauge hot-rolled steel generates massive impact shock at the bite point. D2 (at HRC 60) is too brittle and will likely shatter or suffer severe micro-chipping under these loads. H13 (tempered to HRC 54–56) provides the massive core toughness required to absorb these impact forces reliably.",
+            "8 mm HR levha için H13 veya 6CrW2Si kullanmanız gerekir. Kalın sıcak haddelenmiş çeliğin dilimlenmesi, kesme noktasında muazzam bir darbe şoku oluşturur. D2 (HRC 60 sertliğinde) çok kırılgandır ve bu yükler altında muhtemelen parçalanacak veya ciddi mikro çentiklenmelere maruz kalacaktır. H13 (HRC 54–56 sertliğinde temperlenmiş), bu darbe kuvvetlerini güvenilir bir şekilde emmek için gereken yüksek çekirdek tokluğunu sağlar.",
         },
         {
           question:
-            "What maintenance inspection schedule maximizes circular slitter knife service life?",
+            "Dairesel kesme bıçağının hizmet ömrünü en üst düzeye çıkaran bakım ve denetim programı hangisidir?",
           answer:
-            "Inspect knife faces weekly under 10× magnification for edge chipping (indicates clearance drift or hard material inclusions). Re-lap side faces when surface roughness exceeds Ra 0.4μm to restore full arbor contact. Store removed knives vertically in rust-inhibitor oil to prevent corrosive pitting during idle periods.",
+            "Bıçak yüzlerini haftada bir 10× büyütme altında inceleyerek kenarlarında kırılma olup olmadığını kontrol edin (bu durum, boşluk sapması veya sert malzeme kalıntılarını gösterir). Yüzey pürüzlülüğü Ra 0,4 μm’yi aştığında, mil ile tam teması sağlamak için yan yüzleri yeniden taşlayın. Kullanılmadıkları dönemlerde korozyona bağlı çukurlaşmayı önlemek için sökülen bıçakları pas önleyici yağ içinde dikey olarak saklayın.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply a complete integrated tooling package including spacers and stripper rings?",
+            "Sureay, ara parçalar ve çıkarma halkaları dahil olmak üzere eksiksiz bir entegre kalıp paketi tedarik edebilir mi?",
           answer:
-            "Yes. We supply complete matched slitting tooling systems: knife sets, precision steel spacers (ground to ±0.001mm), bonded rubber stripper rings, and overarm separator discs. Sourcing all components from a single verified tolerance stack eliminates the cumulative errors that appear when mixing tooling from separate suppliers.",
+            "Evet. Tamamen birbiriyle uyumlu kesme takım sistemleri sunuyoruz: bıçak setleri, hassas çelik ara parçalar (±0,001 mm hassasiyetinde taşlanmış), yapıştırılmış kauçuk ayırıcı halkalar ve üst kol ayırıcı diskler. Tüm bileşenleri tek bir onaylanmış tolerans yığınından temin etmek, farklı tedarikçilerden gelen takımların bir araya getirilmesi durumunda ortaya çıkan birikimli hataları ortadan kaldırır.",
         },
         {
           question:
-            "Do you manufacture large diameter slitter knives for heavy plate mills?",
+            "Ağır sac haddehaneleri için geniş çaplı dilimleme bıçakları üretiyor musunuz?",
           answer:
-            "Yes, our heavy grinding and heat treatment facilities can process circular slitting knives up to 1500mm in outer diameter, specifically designed for heavy gauge hot-rolled coil and plate mill edge-trimming applications.",
+            "Evet, ağır taşlama ve ısıl işlem tesislerimiz, özellikle kalın sıcak haddelenmiş rulo ve levha fabrikalarındaki kenar kesme uygulamaları için tasarlanmış, dış çapı 1500 mm’ye kadar olan dairesel kesme bıçaklarını işleyebilmektedir.",
         },
       ],
     },
   },
   {
     id: "metal-shear-knives",
-    name: "Metal Shear Knives",
+    name: "Metal Kesme Bıçakları",
     fullName:
-      "Heavy-Duty Guillotine & Scrap Shear Knives for Metal Fabrication",
+      "Metal İşleme için Ağır Hizmet Tipi Giyotin ve Hurda Kesme Bıçakları",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Metal Shear Knives",
+    categoryDisplay: "Metal Kesme Bıçakları",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Heavy Shearing",
+    badge: "Ağır Kesme",
     badgeColor: "blue",
     gallery: [
       "/images/products/granulator-blades/metal-shear-blades-00.webp",
@@ -2641,9 +2657,9 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/metal-shear-blades-02.webp",
     ],
     description:
-      "Premium straight shear blades for hydraulic guillotines, alligator shears, and heavy scrap metal shears. Forged from D2, S1 (6CrW2Si), and H13 tool steels. Surface-ground to ±0.05 mm full-length parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap billets.",
+      "Hidrolik giyotinler, timsah makasları ve ağır hurda metal makasları için birinci sınıf düz makaslama bıçakları. D2, S1 (6CrW2Si) ve H13 takım çeliklerinden dövülmüştür. Yumuşak çelik, paslanmaz levha ve ağır hurda kütüklerinin çapak bırakmadan kesilebilmesi için, tüm uzunluk boyunca ±0,05 mm paralellikte yüzey taşlamalıdır.",
     fullDescription:
-      "Guillotine and scrap shear blades operate under conditions that expose every weakness in alloy selection, heat treatment depth, and grinding parallelism. The upper shear blade is driven against the lower under actuator forces from 40 to over 2000 tonnes on heavy plate shearing lines. Premature failure modes—edge rollover on mild steel, brittle fracture on stainless, or shattering on heavy scrap—are each attributable to metallurgical mismatch or grinding parallelism deviations that concentrate extreme forces at a single point.\n\nSureay metal shear blades are supplied in three specific metallurgical grades, each matched to a defined mechanical regime:\n\n## Alloy Selection by Shearing Application\n\n**Cold Shearing (Mild Steel):** Standard high-carbon tool steels hardened to HRC 57–59. This provides sharp, stable edge geometry at an economical cost, making it the correct specification for general fabrication shops and structural steel contractors cutting standard A3/A36 mild steel plate up to 8 mm.\n\n**Heavy Plate & Stainless Shearing:** D2 (Cr12MoV) equivalent grades hardened to HRC 58–60. Specified for maximum wear resistance on austenitic stainless steel (304, 316L) and high-strength alloy plates (Hardox). The high chromium-carbide matrix withstands the severe work-hardening wear imposed by these tough metals.\n\n**Scrap Recycling & Hot Shearing:** S1 (6CrW2Si) shock-resisting steel and H13 hot-work tool steel. When shearing mixed scrap metal, rebar, or hot steel billets (900–1100°C), extreme impact toughness is prioritized over hardness. These alloys absorb massive shock loads without the brittle fracture that destroys standard D2 blades.\n\n## The Parallelism Imperative (±0.05 mm)\nImproper parallelism is the single most common preventable cause of premature shear blade failure. Uneven face contact concentrates the full shearing load onto a reduced length of the blade edge, producing edge rollover or chipping within hours. All Sureay shear blades are precision surface-ground on both cutting faces to guarantee a standard parallelism tolerance of ±0.05 mm over a 1000 mm length (with premium ±0.02 mm tolerances available for aerospace and precision stainless applications).",
+      "Giyotin ve hurda kesme makineleri makaslama bıçakları, alaşım seçimi, ısıl işlem derinliği ve taşlama paralelliğindeki her türlü zayıflığı ortaya çıkaran koşullarda çalışır. Ağır sac kesme hatlarında üst kesme bıçağı, 40 ila 2000 tonun üzerindeki aktüatör kuvvetleri altında alt bıçağa doğru itilir. Erken arıza türleri — yumuşak çelikte kenar yuvarlanması, paslanmaz çelikte gevrek kırılma veya ağır hurdada parçalanma — her biri, aşırı kuvvetleri tek bir noktada yoğunlaştıran metalurjik uyumsuzluk veya taşlama paralelliği sapmalarına atfedilebilir.\n\nSureay metal makaslama bıçakları, her biri tanımlanmış bir mekanik rejime uyarlanmış üç özel metalurjik sınıfta tedarik edilir:\n\n## Kesme Uygulamasına Göre Alaşım Seçimi\n\n**Soğuk Kesme (Yumuşak Çelik):** HRC 57–59 sertliğine kadar sertleştirilmiş standart yüksek karbonlu takım çelikleri. Bu, ekonomik bir maliyetle keskin ve istikrarlı bir kenar geometrisi sağlar; bu da ürünü, 8 mm’ye kadar standart A3/A36 yumuşak çelik sacları kesen genel imalat atölyeleri ve yapısal çelik müteahhitleri için doğru seçim haline getirir.\n\n**Ağır Levha ve Paslanmaz Çelik Kesme:** HRC 58–60 sertliğine sertleştirilmiş D2 (Cr12MoV) eşdeğer kaliteler. Östenitik paslanmaz çelik (304, 316L) ve yüksek mukavemetli alaşımlı levhalar (Hardox) üzerinde maksimum aşınma direnci sağlamak üzere tasarlanmıştır. Yüksek krom-karbür matris, bu sert metallerin neden olduğu şiddetli iş sertleşmesi aşınmasına dayanır.\n\n**Hurda Geri Dönüşümü ve Sıcak Kesme:** S1 (6CrW2Si) darbeye dayanıklı çelik ve H13 sıcak işleme takım çeliği. Karışık hurda metal, inşaat demiri veya sıcak çelik kütükleri (900–1100°C) keserken, sertlikten çok aşırı darbe dayanıklılığı öncelenir. Bu alaşımlar, standart D2 bıçaklarını tahrip eden kırılgan kırılma olmaksızın muazzam darbe yüklerini emer.\n\n## Paralellik Zorunluluğu (±0,05 mm)\nYanlış paralellik, kesme bıçağının erken arızalanmasının önlenebilir en yaygın tek nedenidir. Düzensiz yüzey teması, tüm kesme yükünü bıçak kenarının daha kısa bir bölümüne yoğunlaştırır ve birkaç saat içinde kenarın kıvrılmasına veya ufalanmasına neden olur. Tüm Sureay makaslama bıçakları bıçakları, 1000 mm uzunluk üzerinde ±0,05 mm’lik standart bir paralellik toleransını garanti etmek üzere her iki kesme yüzeyinde hassas yüzey taşlamasına tabi tutulur (havacılık ve hassas paslanmaz çelik uygulamaları için ±0,02 mm’lik üstün toleranslar da mevcuttur).",
     link: "/products/metal-shear-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -2692,33 +2708,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "stainless-shearing",
-        tag: "HEAVY DUTY",
-        title: "D2 for Stainless & Heavy Plate",
+        tag: "AĞIR HİZMET",
+        title: "Paslanmaz Çelik ve Kalın Saclar için D2",
         description:
-          "Utilizing premium D2 (Cr12MoV) steel deep-hardened to HRC 58–60. It withstands the extreme abrasive wear and work-hardening forces when shearing stainless steel and thick alloy plates.",
+          "HRC 58–60 sertliğine kadar derinlemesine sertleştirilmiş birinci sınıf D2 (Cr12MoV) çeliği kullanılır. Paslanmaz çelik ve kalın alaşımlı levhaların kesilmesi sırasında ortaya çıkan aşırı aşındırıcı aşınmaya ve iş sertleşmesine neden olan kuvvetlere dayanır.",
       },
       {
         id: "scrap-shearing",
-        tag: "HIGH IMPACT",
-        title: "S1 Shock-Resisting Steel for Scrap",
+        tag: "YÜKSEK ETKİ",
+        title: "Hurda için S1 Darbeye Dayanıklı Çelik",
         description:
-          "For alligator shears and heavy scrap balers, standard blades shatter. We forge these blades from S1 (6CrW2Si) shock-resisting steel, providing massive core toughness to shear rebar and I-beams without fracturing.",
+          "Timsah makasları ve ağır hurda balya makineleri için standart bıçaklar kolayca kırılır. Bu bıçakları, S1 (6CrW2Si) darbeye dayanıklı çelikten döverek üretiyoruz; böylece, inşaat demirlerini ve I-kirişlerini kırılmadan kesebilecek kadar yüksek çekirdek tokluğu sağlıyoruz.",
       },
       {
         id: "precision-parallelism",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
+        tag: "HOŞGÖRÜ",
+        title: "Hassas Paralellik (±0,05 mm)",
         description:
-          "Surface-ground to absolute perfection. Maintaining strict parallelism across lengths up to 6 meters ensures your machine maintains a uniform shear gap, delivering burr-free cuts every time.",
+          "Yüzey, mutlak mükemmelliğe ulaşacak şekilde taşlanmıştır. 6 metreye varan uzunluklar boyunca sıkı bir paralelizm sağlanması, makinenizin kesme aralığını sabit tutmasını garanti eder ve her seferinde çapak bırakmayan kesimler sunar.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Size (L × W × T)",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Tipik Boyut (U × G × Y)",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard dimensions for common hydraulic guillotine shear models. Custom lengths to 6000 mm, multi-segment designs, and single / double / quad-edge profiles available.",
+        "* Yaygın hidrolik giyotin kesme makinesi modelleri için standart boyutlar. 6000 mm’ye kadar özel uzunluklar, çok parçalı tasarımlar ve tek / çift / dört kenarlı profiller mevcuttur.",
     },
     standardDimensions: [
       {
@@ -2783,56 +2799,56 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Which alloy should I use for shearing 304 stainless steel?",
+            "304 paslanmaz çeliği kesmek için hangi alaşımı kullanmalıyım?",
           answer:
-            "We recommend D2 (Cr12MoV) for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide matrix withstands the severe work-hardening wear imposed by austenitic stainless. For standard mild steel, high-carbon tool steel provides maximum toughness at a lower cost.",
+            "Paslanmaz çelik (304, 316L) ve Hardox gibi yüksek mukavemetli levhalar için D2 (Cr12MoV) kullanmanızı öneririz. D2'nin yüksek krom-karbür matrisi, östenitik paslanmaz çeliğin neden olduğu şiddetli iş sertleşmesi aşınmasına karşı dayanıklıdır. Standart yumuşak çelik için ise, yüksek karbonlu takım çeliği daha düşük maliyetle maksimum tokluk sağlar.",
         },
         {
           question:
-            "Our blades keep chipping when cutting mixed scrap metal. What is wrong?",
+            "Karışık hurda metali keserken bıçaklarımız sürekli kırılıyor. Sorun nedir?",
           answer:
-            "You are likely using a blade that is too hard (like D2). Mixed scrap contains unpredictable, heavy solids (like rebar or bolts). When extreme impact hits a hard, brittle blade, it chips or shatters. You need to switch to a shock-resisting alloy like S1 (6CrW2Si) or H13, tempered to a slightly lower hardness (HRC 54–56) to absorb the massive kinetic shocks elastically.",
+            "Muhtemelen çok sert bir bıçak (D2 gibi) kullanıyorsunuz. Karışık hurda, öngörülemez ve ağır katı maddeler (inşaat demiri veya cıvatalar gibi) içerir. Aşırı darbe, sert ve kırılgan bir bıçağa çarptığında, bıçak yontulur veya parçalanır. Büyük kinetik darbeleri esnek bir şekilde emmek için, S1 (6CrW2Si) veya H13 gibi darbeye dayanıklı bir alaşıma geçmeniz ve bıçağı biraz daha düşük bir sertliğe (HRC 54–56) temperlemeniz gerekir.",
         },
         {
           question:
-            "What edge profile minimizes burrs when shearing high-tensile steel plates?",
+            "Yüksek mukavemetli çelik levhaların kesilmesi sırasında çapak oluşumunu en aza indiren kenar profili hangisidir?",
           answer:
-            "The critical factor is contact uniformity. Uneven blade-to-blade contact concentrates shear force at one end, producing the compressive rollover and tearing burr characteristic of high-work-hardening steels. Our standard tolerance is ±0.05 mm parallelism over 1000 mm; premium ±0.02 mm is specified for stainless and precision applications.",
+            "Buradaki kritik faktör, temasın homojenliğidir. Bıçaklar arası dengesiz temas, kesme kuvvetini bir uçta yoğunlaştırarak, yüksek iş sertleşmesine sahip çeliklere özgü sıkıştırma kaynaklı bükülme ve yırtılma çapaklarının oluşmasına neden olur. Standart toleransımız, 1000 mm uzunlukta ±0,05 mm paralelliktir; paslanmaz çelik ve hassas uygulamalar için ise ±0,02 mm’lik üstün kalitede tolerans belirtilmiştir.",
         },
         {
           question:
-            "How do double-edge reversible blades reduce my annual tooling cost?",
+            "Çift kenarlı ters çevrilebilir bıçaklar yıllık alet maliyetimi nasıl azaltır?",
           answer:
-            "A double-edge (or 4-edge) reversible blade provides multiple independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, flip or rotate the blade, and retorque. This multiplies the blade's lifespan before regrinding is required, reducing per-cut tooling costs drastically.",
+            "Çift kenarlı (veya 4 kenarlı) ters çevrilebilir bıçak, tek bir bıçak gövdesinden birden fazla bağımsız kesme yüzeyi sağlar. 1 numaralı kenarda aşınma görüldüğünde, sabitleme cıvatalarını gevşetin, bıçağı ters çevirin veya döndürün ve cıvataları yeniden sıkın. Bu, bıçağın yeniden bileme gerektirene kadar kullanım ömrünü uzatarak kesim başına takım maliyetlerini önemli ölçüde azaltır.",
         },
       ],
       company: [
         {
           question:
-            "Can you manufacture blades to match my TRUMPF, AMADA, or Durma guillotine exactly?",
+            "TRUMPF, AMADA veya Durma marka kesme makinelerime tam olarak uyacak bıçaklar üretebilir misiniz?",
           answer:
-            "Yes. We carry OEM-matching dimensions for TRUMPF, AMADA, BYSTRONIC, Durma, and Haco platforms. Single-piece blades up to 6000 mm, multi-segment designs for longer tables, and single, double, or quad-edge profiles are all available. Custom lengths are manufactured to drawing within 15 working days.",
+            "Evet. TRUMPF, AMADA, BYSTRONIC, Durma ve Haco platformları için OEM ile uyumlu boyutlarda ürünler sunuyoruz. 6000 mm’ye kadar tek parça bıçaklar, daha uzun masalar için çok parçalı tasarımlar ve tek, çift veya dört kenarlı profiller mevcuttur. Özel uzunluklar, çizimlere göre 15 iş günü içinde üretilir.",
         },
         {
           question:
-            "Can Sureay manufacture replacement blades for obsolete heavy scrap shears?",
+            "Sureay, üretimden kaldırılmış ağır hurda makasları için yedek bıçaklar üretebilir mi?",
           answer:
-            "Yes. For heavy scrap shears (Lefort, Harris, Genesis) or obsolete models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile and counter-sunk mounting holes.",
+            "Evet. Ağır hurda kesme makineleri (Lefort, Harris, Genesis) veya üretimden kaldırılmış modeller için, müşteri tarafından sağlanan çizimler veya fiziksel bıçak numuneleri temelinde çalışıyoruz. Bıçak profilinin ve gömme montaj deliklerinin doğru şekilde ölçülmesi için talep üzerine bir boyut ölçüm şablonu temin edilebilir.",
         },
       ],
     },
   },
   {
     id: "guillotine-shear-blades",
-    name: "Guillotine Shear Blades",
+    name: "Giyotin Makas Bıçakları",
     fullName:
-      "Precision Guillotine Shear Blades for Hydraulic & Mechanical Sheet Metal Shearing Machines",
+      "Hidrolik ve Mekanik Sac Kesme Makineleri için Hassas Giyotin Kesme Bıçakları",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Guillotine Shear Blades",
+    categoryDisplay: "Giyotin Makas Bıçakları",
     image:
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
-    badge: "Sheet Metal",
+    badge: "Sac Metal",
     badgeColor: "blue",
     gallery: [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
@@ -2840,9 +2856,9 @@ export const blades: Blade[] = [
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
     ],
     description:
-      "High-precision guillotine shear blades in D2 (Cr12MoV), 6CrW2Si, and 9CrSi tool steels for hydraulic and mechanical shearing machines. Surface-ground to ±0.05 mm full-length parallelism. Upper and lower blade sets for machines up to 16 mm × 4000 mm capacity. OEM-compatible replacements for TRUMPF, AMADA, LVD, Durma, and Bystronic guillotines.",
+      "Hidrolik ve mekanik kesme makineleri için D2 (Cr12MoV), 6CrW2Si ve 9CrSi takım çeliklerinden üretilmiş yüksek hassasiyetli makaslama bıçakları giyotin bıçakları. Yüzey, ±0,05 mm tam uzunlukta paralellik olacak şekilde taşlanmıştır. 16 mm × 4000 mm kapasiteye kadar olan makineler için üst ve alt bıçak setleri. TRUMPF, AMADA, LVD, Durma ve Bystronic giyotinleri için OEM uyumlu yedek parçalar.",
     fullDescription:
-      "Guillotine shear blades are the critical cutting components in hydraulic and mechanical plate shearing machines used across steel service centers, shipyards, structural fabrication shops, and automotive stamping plants. Every cut cycle subjects the blade to enormous shear force concentrated along a narrow edge line — the blade must maintain razor-sharp edge geometry, absolute parallelism, and uniform hardness across its full length to deliver burr-free, distortion-free sheet metal cuts.\n\nSureay manufactures guillotine shear blades from premium tool steels — D2 (Cr12MoV), 6CrW2Si, and 9CrSi — each selected for a specific thickness range and material hardness profile. Every blade is vacuum heat-treated in-house and precision surface-ground to ±0.05 mm full-length parallelism, ensuring the shear gap between upper and lower blades remains uniform from end to end. This eliminates the twist, bow, and edge burring that plague poorly manufactured replacement blades.\n\n## Alloy Selection by Shearing Application\n\n**D2 / Cr12MoV (HRC 58–62):** The premium specification for shearing stainless steel (304, 316L), high-strength low-alloy (HSLA) plates, Hardox wear plate, and pre-painted coil. D2's 12% chromium-carbide matrix provides the extreme abrasion resistance needed when cutting work-hardening austenitic stainless steels that rapidly dull softer blade grades.\n\n**6CrW2Si (HRC 55–58):** A shock-resisting alloy that combines excellent edge hardness with core toughness. Specified for medium-to-heavy plate shearing (6–25 mm mild steel) and mixed-material production environments where the blade occasionally encounters harder-than-expected stock. The tungsten and chromium content provides high-temperature temper resistance.\n\n**9CrSi (HRC 55–60):** A cost-effective alloy for high-volume mild steel and carbon steel shearing (up to 12 mm). 9CrSi delivers reliable edge life on standard structural steel, galvanized sheet, and floor plate at a lower per-blade cost than D2.\n\n## Upper & Lower Blade Sets\n\nGuillotine shearing machines operate with paired upper (moving ram) and lower (fixed bed) blades. Sureay supplies matched upper and lower blade sets ground from the same steel batch, ensuring identical hardness and thermal expansion behavior across the pair. Each set is supplied with mounting holes drilled to the exact OEM bolt pattern of your machine.\n\n## Multi-Edge Reversible Blades\n\nFor standard rectangular-section blades, we offer 2-edge and 4-edge reversible profiles. When one cutting edge wears, the operator loosens the mounting bolts, flips or rotates the blade to expose a fresh edge, and retorques. This multiplies effective blade life by 2× to 4× before regrinding or replacement is required — drastically reducing annual tooling cost per cut.\n\n## Segment Blade Systems for Long Tables\n\nFor shearing machines wider than 3200 mm, single-piece blades become impractical due to heat treatment distortion risk. Sureay manufactures precision segment blade systems — multiple shorter blades indexed end-to-end on the machine bed — with matched end-to-end height tolerance (±0.02 mm) to ensure a continuous, gap-free shear line across the full table width.",
+      "Guillotine makaslama bıçakları bıçakları, çelik hizmet merkezleri, tersaneler, yapısal imalat atölyeleri ve otomotiv presleme tesislerinde kullanılan hidrolik ve mekanik sac kesme makinelerinin hayati kesme bileşenleridir. Her kesme döngüsü, bıçağı dar bir kenar hattı boyunca yoğunlaşan muazzam bir kesme kuvvetine maruz bırakır — bıçak, çapak ve bozulma içermeyen sac kesimleri sağlamak için tüm uzunluğu boyunca jilet keskinliğinde kenar geometrisini, mutlak paralelliği ve homojen sertliği korumalıdır.\n\nSureay, guillotine makaslama bıçakları bıçaklarını, her biri belirli bir kalınlık aralığı ve malzeme sertlik profili için seçilmiş birinci sınıf takım çeliklerinden (D2 (Cr12MoV), 6CrW2Si ve 9CrSi) üretmektedir. Her bıçak, şirket içinde vakumla ısıl işleme tabi tutulur ve ±0,05 mm tam uzunluk paralelliğine göre hassas yüzey taşlamasından geçirilir; böylece üst ve alt bıçaklar arasındaki kesme aralığının uçtan uca eşit kalması sağlanır. Bu, kalitesiz üretilmiş yedek bıçaklarda sıkça görülen bükülme, eğrilme ve kenar çapaklarını ortadan kaldırır.\n\n## Kesme Uygulamasına Göre Alaşım Seçimi\n\n**D2 / Cr12MoV (HRC 58–62):** Paslanmaz çelik (304, 316L), yüksek mukavemetli düşük alaşımlı (HSLA) levhalar, Hardox aşınma levhası ve önceden boyanmış bobinlerin kesilmesi için en üst düzey özellik. D2'nin %12 krom-karbür matrisi, daha yumuşak bıçak sınıflarını hızla körelten iş sertleşmeli östenitik paslanmaz çeliklerin kesilmesinde gereken olağanüstü aşınma direncini sağlar.\n\n**6CrW2Si (HRC 55–58):** Mükemmel kenar sertliğini çekirdek tokluğuyla birleştiren, darbeye dayanıklı bir alaşımdır. Orta ila ağır levha kesimi (6–25 mm yumuşak çelik) ve bıçağın zaman zaman beklenenden daha sert malzemelerle karşılaştığı karma malzeme üretim ortamları için tasarlanmıştır. Tungsten ve krom içeriği, yüksek sıcaklıkta temper direnci sağlar.\n\n**9CrSi (HRC 55–60):** Yüksek hacimli yumuşak çelik ve karbon çeliği kesimi (12 mm’ye kadar) için uygun maliyetli bir alaşımdır. 9CrSi, standart yapısal çelik, galvanizli sac ve zemin levhalarında D2’ye göre bıçak başına daha düşük maliyetle güvenilir kenar ömrü sunar.\n\n## Üst ve Alt Bıçak Setleri\n\nGiyotin kesme makineleri, eşleştirilmiş üst (hareketli koç) ve alt (sabit tabla) bıçaklarla çalışır. Sureay, aynı çelik partisinden taşlanmış, birbiriyle uyumlu üst ve alt bıçak setleri tedarik ederek, çift boyunca aynı sertlik ve termal genleşme davranışını garanti eder. Her set, makinenizin orijinal ekipman üreticisi (OEM) cıvata düzenine tam olarak uygun olarak delinmiş montaj delikleriyle birlikte tedarik edilir.\n\n## Çok Kenarlı Ters Çevrilebilir Bıçaklar\n\nStandart dikdörtgen kesitli bıçaklar için 2 kenarlı ve 4 kenarlı ters çevrilebilir profiller sunuyoruz. Bir kesme kenarı aşındığında, operatör montaj cıvatalarını gevşetir, bıçağı ters çevirir veya döndürerek yeni bir kenarı ortaya çıkarır ve cıvataları yeniden sıkar. Bu, yeniden taşlama veya değiştirme gerekene kadar bıçağın etkin ömrünü 2× ila 4× katına çıkarır — kesim başına yıllık takım maliyetini önemli ölçüde azaltır.\n\n## Uzun Masalar için Segmentli Bıçak Sistemleri\n\n3200 mm'den daha geniş kesme makineleri için, ısıl işlem bozulma riski nedeniyle tek parça bıçaklar pratik olmaktan çıkar. Sureay, makine yatağı üzerinde uç uca dizilmiş birden fazla kısa bıçaktan oluşan hassas segmentli bıçak sistemleri üretir. Bu sistemler, masa genişliğinin tamamı boyunca kesintisiz ve boşluksuz bir kesim hattı sağlamak için uç uca yükseklik toleransı (±0,02 mm) açısından birbiriyle uyumludur.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2892,41 +2908,41 @@ export const blades: Blade[] = [
     components: [
       {
         id: "d2-stainless-shearing",
-        tag: "HEAVY PLATE",
-        title: "D2 for Stainless & HSLA Plate",
+        tag: "AĞIR LEVHA",
+        title: "Paslanmaz ve HSLA Levhalar için D2",
         description:
-          "Premium D2 (Cr12MoV) deep-hardened to HRC 58–62. The high chromium-carbide matrix withstands the extreme abrasive wear and work-hardening forces encountered when shearing 304/316L stainless steel, HSLA plate, and pre-painted coil stock.",
+          "HRC 58–62 sertliğine kadar derinlemesine sertleştirilmiş Premium D2 (Cr12MoV). Yüksek krom-karbür matrisi, 304/316L paslanmaz çelik, HSLA levha ve ön boyalı rulo malzemelerin kesilmesi sırasında karşılaşılan aşırı aşındırıcı aşınmaya ve iş sertleşmesine karşı dayanıklıdır.",
       },
       {
         id: "6crw2si-shock",
-        tag: "SHOCK RESISTANCE",
-        title: "6CrW2Si for Medium-Heavy Plate",
+        tag: "DARBE DAYANIMI",
+        title: "Orta-Ağır Levha için 6CrW2Si",
         description:
-          "Shock-resisting 6CrW2Si alloy combines hard cutting edges (HRC 55–58) with massive core toughness. Engineered for 6–25 mm mild steel plate and mixed-material production where unexpected hard inclusions would chip a brittle blade.",
+          "Darbeye dayanıklı 6CrW2Si alaşımı, sert kesme kenarlarını (HRC 55–58) yüksek çekirdek tokluğuyla birleştirir. Beklenmedik sert kalıntıların kırılgan bir bıçağı çatlataabileceği 6–25 mm kalınlığındaki yumuşak çelik sac ve karışık malzeme imalatı için tasarlanmıştır.",
       },
       {
         id: "parallelism-precision",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
+        tag: "HOŞGÖRÜ",
+        title: "Hassas Paralellik (±0,05 mm)",
         description:
-          "Every blade is surface-ground to ±0.05 mm full-length parallelism across lengths up to 4000 mm. This ensures a uniform shear gap between upper and lower blades, delivering burr-free cuts and preventing twist and bow in the sheared sheet.",
+          "Her bıçak, 4000 mm’ye kadar olan uzunluklar boyunca ±0,05 mm’lik tam uzunlukta paralellik sağlayacak şekilde yüzey taşlamasından geçirilmiştir. Bu, üst ve alt bıçaklar arasında homojen bir kesme aralığı sağlayarak, çapak bırakmayan kesimler elde edilmesini ve kesilen sacda bükülme ve eğrilmenin önlenmesini sağlar.",
       },
       {
         id: "discontinued-machine-matching",
-        tag: "OEM MATCHING",
-        title: "Discontinued Machine? Send the Old Blade",
+        tag: "OEM UYUMLULUĞU",
+        title: "Üretimi Durdurulan Makine mi? Eski Bıçağı Gönderin",
         description:
-          "We build from a worn sample, not a catalogue number. Length, width, thickness, bevel and hole pattern are measured off the blade you send and reproduced to drawing — which is how we supply machines whose manufacturer stopped listing parts years ago. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira and Ursviken sets are held as standard geometry; everything else is matched to your sample.",
+          "Katalog numarasına göre değil, aşınmış bir numuneye göre üretim yapıyoruz. Uzunluk, genişlik, kalınlık, eğim ve delik düzeni, gönderdiğiniz bıçaktan ölçülür ve çizime göre yeniden üretilir — işte bu sayede, üreticisi yıllar önce yedek parça listelemesini durdurmuş makineleri bile tedarik edebiliyoruz. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira ve Ursviken setleri standart geometri olarak stoklarımızda bulunur; diğer tüm ürünler ise numunenize göre uyarlanır.",
       },
     ],
     dimensionLabels: {
-      col0: "Machine Capacity",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      col4: "Pcs / Set",
+      col0: "Makine Kapasitesi",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
+      col4: "Adet / Set",
       caption:
-        "* Standard dimensions for common hydraulic & mechanical guillotine shearing machines. Each set includes upper and lower blades. Segment designs for tables wider than 4000 mm available on request. Custom lengths, multi-edge profiles, and OEM bolt patterns manufactured to drawing.",
+        "* Yaygın olarak kullanılan hidrolik ve mekanik giyotin kesme makineleri için standart boyutlar. Her set, üst ve alt bıçakları içerir. 4000 mm’den daha geniş masalar için segment tasarımları istek üzerine temin edilebilir. Özel uzunluklar, çok kenarlı profiller ve OEM cıvata düzenleri, çizimlere göre üretilir.",
     },
     standardDimensions: [
       {
@@ -2999,89 +3015,90 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "What blade clearance should I set on a guillotine shear?",
+          question: "Giyotin makasında bıçak aralığını ne kadar ayarlamalıyım?",
           answer:
-            "Clearance is set as a percentage of material thickness, not as a fixed number, and it has to move when the material does. Mild and structural steel (S235, A36) runs at 4–6%. Stainless 304 and 316L needs 6–9%, because it work-hardens at the cut edge and mild-steel clearance overloads the blade. Aluminium wants 3–4% — it is soft enough that a wide gap lets it draw and roll instead of fracturing. HSLA and high-strength plate takes 7–10%. Galvanized and pre-painted sheet sits at the lower end of 4–6%, since a wide gap drags and flakes the coating along the cut line. To put that in millimetres: 6 mm mild steel at 5% wants about 0.30 mm of gap, while the same 6 mm in 304 at 8% wants closer to 0.48 mm. Treat these as starting points — your machine manual is the authority, and blade condition, rake angle and hold-down pressure all shift the practical window.",
+            "Boşluk, sabit bir sayı olarak değil, malzeme kalınlığının yüzdesi olarak belirlenir ve malzeme hareket ettiğinde buna uyacak şekilde değişmelidir. Yumuşak ve yapı çeliği (S235, A36) için bu oran %4–6 arasındadır. Paslanmaz 304 ve 316L için %6–9 boşluk gereklidir; çünkü bu malzemeler kesim kenarında iş sertleşmesine uğrar ve yumuşak çelik boşluğu bıçağa aşırı yük bindirir. Alüminyum için %3–4 boşluk yeterlidir — alüminyum yeterince yumuşaktır, bu nedenle geniş bir boşluk kırılma yerine çekilme ve yuvarlanmaya neden olur. HSLA ve yüksek mukavemetli levhalar %7–10 boşluk gerektirir. Galvanizli ve önceden boyanmış saclar %4–6 aralığının alt sınırında kalır; çünkü geniş bir boşluk, kesim hattı boyunca kaplamayı sürükler ve pul pul dökülmesine neden olur. Bunu milimetre cinsinden ifade etmek gerekirse: %5 sertlikteki 6 mm yumuşak çelik için yaklaşık 0,30 mm boşluk gerekirken, %8 sertlikteki aynı 6 mm 304 çelik için 0,48 mm’ye yakın bir boşluk gerekir. Bunları başlangıç noktaları olarak değerlendirin — makinenizin kullanım kılavuzu nihai referanstır; bıçak durumu, eğim açısı ve bastırma basıncı da pratik aralığı etkiler.",
         },
         {
           question:
-            "Which steel grade should I choose for shearing 304 stainless steel on a hydraulic guillotine?",
+            "Hidrolik giyotinle 304 paslanmaz çeliği kesmek için hangi çelik kalitesini seçmeliyim?",
           answer:
-            "D2 (Cr12MoV) hardened to HRC 58–62 is the recommended grade for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide content withstands the severe work-hardening abrasion imposed by austenitic stainless. For standard mild steel, 9CrSi provides excellent edge life at a lower cost.",
+            "HRC 58–62 sertliğine sertleştirilmiş D2 (Cr12MoV), paslanmaz çelik (304, 316L) ve Hardox gibi yüksek mukavemetli levhalar için önerilen çelik kalitesidir. D2'nin yüksek krom karbür içeriği, östenitik paslanmaz çeliğin neden olduğu şiddetli iş sertleşmesi aşınmasına karşı dayanıklılık sağlar. Standart yumuşak çelik için ise 9CrSi, daha düşük maliyetle mükemmel kesici kenar ömrü sunar.",
         },
         {
           question:
-            "Why do my guillotine shear blades chip when cutting mixed or heavier plate?",
+            "Karışık veya daha kalın sac keserken giyotinim neden “makaslama bıçakları” hatası veriyor?",
           answer:
-            "Chipping usually indicates the blade alloy is too hard and brittle for the shearing load. If you are cutting 10–25 mm mixed plate or occasionally encounter harder stock, switch from D2 to 6CrW2Si. This shock-resisting alloy provides a controlled lower hardness (HRC 55–58) with massive core toughness, absorbing impact loads elastically instead of chipping.",
+            "Çatlama genellikle bıçak alaşımının kesme yükü için fazla sert ve kırılgan olduğunu gösterir. 10–25 mm kalınlığındaki karışık sacları kesiyorsanız veya ara sıra daha sert malzemelerle karşılaşıyorsanız, D2 yerine 6CrW2Si'yi tercih edin. Bu darbeye dayanıklı alaşım, kontrollü bir şekilde daha düşük sertlik (HRC 55–58) ve yüksek çekirdek tokluğu sunarak, darbe yüklerini ufalanma yerine elastik bir şekilde emer.",
         },
         {
           question:
-            "What causes burrs and twist on the sheared edge, and how do guillotine shear blades solve this?",
+            "Kesilen kenarda çapak ve bükülmenin nedenleri nelerdir ve makaslama bıçakları giyotin kesici bu sorunu nasıl çözer?",
           answer:
-            "Burrs and twist are almost always caused by uneven blade-to-blade contact — when the shear gap varies from one end of the blade to the other. This concentrates shear force at one point, producing compressive rollover burrs and sheet distortion. Our blades are surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform gap across the entire cut length for clean, burr-free shearing.",
+            "Çapaklar ve bükülmeler neredeyse her zaman bıçaklar arasındaki düzensiz temastan kaynaklanır — yani kesme aralığı bıçağın bir ucundan diğer ucuna doğru değiştiğinde. Bu durum kesme kuvvetini tek bir noktada yoğunlaştırarak, sıkıştırma kaynaklı yuvarlanma çapaklarına ve sacın bükülmesine yol açar. Bıçaklarımız, ±0,05 mm tam uzunlukta paralellik sağlayacak şekilde yüzey taşlanmıştır; bu sayede kesim uzunluğu boyunca eşit bir boşluk sağlanarak temiz ve çapak içermeyen kesim elde edilir.",
         },
         {
           question:
-            "How do 4-edge reversible guillotine shear blades reduce my annual tooling cost?",
+            "4 kenarlı, ters çevrilebilir makaslama bıçakları giyotin, yıllık kalıp maliyetimi nasıl azaltır?",
           answer:
-            "A 4-edge reversible blade provides four independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, rotate the blade 90° to expose a fresh edge, and retorque. This multiplies the blade's installed lifespan by 4× before regrinding is required, drastically reducing per-cut tooling cost on high-volume shearing lines.",
+            "4 kenarlı ters çevrilebilir bıçak, tek bir bıçak gövdesinden dört bağımsız kesme yüzeyi sağlar. 1 numaralı kenar aşınmaya uğradığında, sabitleme cıvatalarını gevşetin, bıçağı 90° döndürerek yeni bir kenarı ortaya çıkarın ve cıvataları tekrar sıkın. Bu, bıçağın yeniden bileme gerektirmeden önce kullanım ömrünü 4 katına çıkarır ve yüksek hacimli kesme hatlarında kesim başına takım maliyetini önemli ölçüde azaltır.",
         },
         {
           question:
-            "What is the maximum single-piece blade length Sureay can manufacture?",
+            "Sureay’in üretebileceği tek parça bıçağın maksimum uzunluğu ne kadardır?",
           answer:
-            "We manufacture single-piece guillotine shear blades up to 4000 mm in length. For machines wider than 4000 mm, we produce precision segment blade sets — multiple blades indexed end-to-end with matched height tolerance (±0.02 mm) — to create a continuous, gap-free shear line across the full table width.",
+            "4000 mm uzunluğa kadar tek parça giyotin makaslama bıçakları üretiyoruz. 4000 mm'den daha geniş makineler için, masa genişliğinin tamamı boyunca kesintisiz ve boşluksuz bir kesme hattı oluşturmak üzere, birbiriyle eşleşen yükseklik toleransı (±0,02 mm) ile uç uca dizilmiş çoklu bıçaklardan oluşan hassas segment bıçak setleri üretiyoruz.",
         },
         {
           question:
-            "How do I select the correct blade dimensions for my specific guillotine shearing machine?",
+            "Kendi giyotin kesme makinem için doğru bıçak boyutlarını nasıl seçebilirim?",
           answer:
-            "Blade dimensions are determined by your machine's cutting capacity (maximum sheet thickness × table width). For example, a 6 × 3200 mm machine uses blades sized 1100 × 80 × 20 mm, supplied as a 6-piece segmented set. Send us your machine model number or a drawing of your existing blade, and we will confirm the exact dimensions, bolt pattern, and recommended steel grade.",
+            "Bıçak boyutları, makinenizin kesme kapasitesine (maksimum sac kalınlığı × masa genişliği) göre belirlenir. Örneğin, 6 × 3200 mm’lik bir makine, 6 parçalı segmentli bir set halinde tedarik edilen 1100 × 80 × 20 mm boyutlarındaki bıçakları kullanır. Bize makinenizin model numarasını veya mevcut bıçağınızın çizimini gönderin; biz de kesin boyutları, cıvata düzenini ve önerilen çelik kalitesini teyit edelim.",
         },
       ],
       company: [
         {
           question:
-            "Can you manufacture replacement blades to match my TRUMPF, AMADA, LVD, or Durma guillotine exactly?",
+            "TRUMPF, AMADA, LVD veya Durma marka kesme makinelerime tam olarak uyacak yedek bıçaklar üretebilir misiniz?",
           answer:
-            "Yes. We carry OEM-matching dimensions and bolt patterns for TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, and Adira shearing machines. Supply your machine model number or a worn blade sample and we will confirm fitment. Custom lengths are manufactured to drawing within 15 working days.",
+            "Evet. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati ve Adira kesme makineleri için OEM ile uyumlu boyutlar ve cıvata düzenleri sunuyoruz. Makinenizin model numarasını veya aşınmış bir bıçak örneğini bize iletin; uyumluluğunu teyit edelim. Özel uzunluklar, çizimlere göre 15 iş günü içinde üretilir.",
         },
         {
           question:
-            "Do you supply both upper and lower guillotine shear blade sets?",
+            "Hem üst hem de alt giyotin kesme bıçak setleri tedarik ediyor musunuz?",
           answer:
-            "Yes. Every standard order includes matched upper (ram) and lower (bed) blade sets, ground from the same steel batch to ensure identical hardness, grain structure, and thermal expansion behavior across the pair. Mounting holes are drilled to your exact OEM bolt pattern.",
+            "Evet. Her standart sipariş, çiftin tamamında aynı sertlik, tanecik yapısı ve termal genleşme davranışını sağlamak üzere aynı çelik partisinden taşlanmış, birbiriyle uyumlu üst (ram) ve alt (yatak) bıçak setlerini içerir. Montaj delikleri, tam olarak sizin OEM cıvata düzeninize göre açılır.",
         },
         {
           question:
-            "Can Sureay manufacture replacement blades for older or discontinued shearing machines?",
+            "Sureay, eski model veya üretimden kaldırılmış kesme makineleri için yedek bıçaklar üretebilir mi?",
           answer:
-            "Yes. For discontinued or rare guillotine models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile, edge angles, and counter-sunk mounting holes. We have successfully produced replacements for machines dating back to the 1980s.",
-        },
-        {
-          question: "What quality documentation ships with each blade set?",
-          answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record verifying full-length parallelism, and a heat treatment batch certificate. For OEM qualification programs, full CMM reports and steel mill material certificates are available on request.",
+            "Evet. Üretimi durdurulmuş veya nadir bulunan giyotin modelleri için, müşterilerimiz tarafından sağlanan çizimler veya fiziksel bıçak numuneleri temelinde çalışıyoruz. Bıçak profilinin, kenar açılarının ve gömme montaj deliklerinin doğru bir şekilde ölçülmesi için talep üzerine bir boyut ölçüm şablonu temin edilebilir. 1980’lere kadar uzanan makineler için yedek parçaları başarıyla ürettik.",
         },
         {
           question:
-            "What is the typical lead time for standard guillotine shear blades?",
+            "Her bıçak setiyle birlikte hangi tür kullanım kılavuzları verilmektedir?",
           answer:
-            "Standard sizes (listed in our dimension table) ship within 7–10 working days. Custom sizes, special alloy grades, or high-volume orders typically require 15–20 working days. We offer expedited production on request for urgent machine-down situations.",
+            "Her sevkiyata bir Rockwell HRC sertlik test raporu, tam uzunlukta paralelliği doğrulayan bir boyutsal kontrol kaydı ve bir ısıl işlem parti sertifikası dahildir. OEM onay programları için, talep üzerine eksiksiz CMM raporları ve çelik fabrikası malzeme sertifikaları temin edilebilir.",
+        },
+        {
+          question:
+            "Standart gilotin makaslama bıçakları için tipik teslim süresi ne kadardır?",
+          answer:
+            "Standart boyutlar (boyut tablomuzda listelenenler) 7–10 iş günü içinde sevk edilir. Özel boyutlar, özel alaşım türleri veya yüksek hacimli siparişler genellikle 15–20 iş günü sürer. Acil makine arızası durumları için talep üzerine hızlandırılmış üretim hizmeti sunuyoruz.",
         },
       ],
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Three-Knife Trimmer Blades",
+    name: "Üç Bıçaklı Kesme Bıçakları",
     fullName:
-      "Premium HSS & Carbide Three-Knife Trimmer Blades for Bookbinding",
+      "Kitap Ciltleme için Üst Sınıf HSS ve Karbür Üç Bıçaklı Kesme Bıçakları",
     category: "shear_blades",
     sector: "paper",
-    categoryDisplay: "Bookbinding Knives",
-    badge: "OEM Fit",
+    categoryDisplay: "Ciltçilik Bıçakları",
+    badge: "OEM Uyumluluğu",
     badgeColor: "blue",
     image:
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
@@ -3091,9 +3108,9 @@ export const blades: Blade[] = [
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
     ],
     description:
-      "Matched 3-knife replacement sets (1 Front, 2 Sides) for high-volume print finishing. Bimetallic construction with 18% Tungsten HSS or solid Tungsten Carbide (TC) cutting edges. Direct OEM fit for Müller Martini, Kolbus, and Wohlenberg trimmers.",
+      "Yüksek hacimli baskı sonlandırma işlemleri için uyumlu 3 bıçaklı yedek setler (1 ön, 2 yan). %18 tungsten içeren HSS veya katı tungsten karbür (TC) kesici kenarlara sahip bimetalik yapı. Müller Martini, Kolbus ve Wohlenberg kesme makinelerine doğrudan OEM uyumu.",
     fullDescription:
-      "In high-speed commercial bindery and print finishing operations, the three-knife trimmer is the final, critical step before packaging. Substandard trimmer blades cause spine splitting, cover chipping, and PUR/EVA glue build-up, turning finished books into expensive scrap.\n\nSureay Three-Knife Trimmer sets are manufactured to precise OEM specifications to guarantee flawless fore-edges, heads, and tails on thick catalogs, magazines, and perfect-bound books. This three-knife assembly — front, left, and right — is also referred to in the trade as a **combi head** or combination trim head.\n\n## Advanced Bimetallic Construction\n\nSolid high-speed steel blades of this size are too brittle and prone to snapping under the immense clamping pressure of a book trimmer. We utilize an advanced **Bimetallic Inlay** manufacturing process. A premium cutting edge—either 18% Tungsten HSS or micro-grain Tungsten Carbide—is vacuum-brazed onto a shock-absorbing, high-tensile spring steel body. This delivers the ultimate combination: an incredibly hard, wear-resistant cutting edge backed by a flexible, shatter-proof core.\n\n## Material Grades for the Bindery\n\n- **18% Tungsten HSS (High-Speed Steel):** The industry standard for general commercial printing. Delivers an extremely sharp, fine edge that easily handles standard uncoated and lightly coated book stocks.\n- **Tungsten Carbide (TC / Widia Equivalent):** The absolute top-tier specification. TC blades deliver up to **5× to 10× the service life** of HSS. They are mandatory when cutting heavy recycled paper, highly abrasive gloss-coated art paper, or books bound with tough PUR adhesives.\n\n## Anti-Glue Mirror Finish\n\nModern perfect-bound books use aggressive EVA or PUR adhesives. During the trim cycle, friction heats the glue, causing it to smear and stick to the blade face. Sureay trimmer blades are precision-lapped to a Ra ≤0.1 μm mirror finish, significantly reducing friction and adhesive adherence, ensuring a clean cut cycle after cycle.",
+      "Yüksek hızlı ticari ciltleme ve baskı sonlandırma işlemlerinde, üç bıçaklı kesici, paketlemeden önceki son ve kritik adımdır. Standartlara uygun olmayan kesici bıçakları, sırtın yarılmasına, kapakta ufalanmaya ve PUR/EVA yapıştırıcı birikmesine neden olarak, bitmiş kitapları pahalı hurdaya dönüştürür.\n\nSureay Üç Bıçaklı Kesici setleri, kalın kataloglar, dergiler ve ciltli kitaplarda kusursuz ön kenarlar, baş ve kuyruklar sağlamak üzere hassas OEM spesifikasyonlarına göre üretilmektedir. Bu üç bıçaklı tertibat — ön, sol ve sağ — sektörde **kombi kafa** veya kombinasyon kesme kafası olarak da adlandırılır.\n\n## Gelişmiş Bimetalik Yapı\n\nBu boyuttaki katı yüksek hız çeliği bıçaklar, kitap kesicinin muazzam sıkıştırma basıncı altında çok kırılgandır ve kırılmaya meyillidir. Biz, gelişmiş bir **Bimetalik Kakma** üretim süreci kullanıyoruz. Birinci sınıf kesici kenar — %18 Tungsten HSS veya mikro taneli Tungsten Karbür — darbe emici, yüksek gerilimli yay çeliği gövdeye vakumla lehimlenir. Bu, esnek ve kırılmaya karşı dayanıklı bir çekirdekle desteklenen, inanılmaz derecede sert ve aşınmaya dayanıklı bir kesici kenar gibi mükemmel bir kombinasyon sağlar.\n\n## Ciltçilik Sektörü için Malzeme Sınıfları\n\n- **%18 Tungsten HSS (Yüksek Hızlı Çelik):** Genel ticari baskı için endüstri standardıdır. Standart kaplamasız ve hafif kaplamalı kitap kağıtlarını kolayca kesebilen, son derece keskin ve ince bir kenar sağlar.\n- **Tungsten Karbür (TC / Widia Eşdeğeri):** Kesinlikle en üst düzey özellik. TC bıçaklar, HSS’ye kıyasla **5 ila 10 kat daha uzun hizmet ömrü** sunar. Ağır geri dönüştürülmüş kağıt, aşındırıcı özelliği yüksek parlak kaplamalı sanat kağıdı veya dayanıklı PUR yapıştırıcılarla ciltlenmiş kitapları keserken bu bıçakların kullanılması zorunludur.\n\n## Yapıştırıcıya Karşı Dayanıklı Ayna Parlaklığı\n\nModern yapıştırmalı ciltli kitaplarda güçlü EVA veya PUR yapıştırıcılar kullanılır. Kesme işlemi sırasında sürtünme, yapıştırıcıyı ısıtır ve yapıştırıcının bıçak yüzeyine bulaşmasına ve yapışmasına neden olur. Sureay kesici bıçakları, Ra ≤0,1 μm ayna parlaklığına kadar hassas bir şekilde cilalanmıştır; bu da sürtünmeyi ve yapıştırıcının bıçağa yapışmasını önemli ölçüde azaltarak her kesim döngüsünde temiz bir kesim sağlar.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3133,33 +3150,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "bimetallic-inlay",
-        tag: "METALLURGY",
-        title: "Bimetallic Inlay Technology",
+        tag: "METALURJİ",
+        title: "Bimetalik Dolgu Teknolojisi",
         description:
-          "We braze a premium High-Speed Steel (HSS) or Tungsten Carbide edge onto a tough, flexible alloy steel body. This gives you the extreme wear resistance needed for coated paper, without the risk of the blade snapping under heavy clamping pressure.",
+          "Sert ve esnek bir alaşımlı çelik gövdeye, birinci sınıf bir Yüksek Hızlı Çelik (HSS) veya Tungsten Karbür kenar lehimliyoruz. Bu sayede, kaplamalı kağıtlar için gerekli olan olağanüstü aşınma direncini elde ederken, bıçağın yüksek sıkıştırma basıncı altında kırılma riski ortadan kalkar.",
       },
       {
         id: "matched-sets",
-        tag: "CONFIGURATION",
-        title: "Matched 3-Piece Sets",
+        tag: "YAPILANDIRMA",
+        title: "Eşleşen 3 Parçalı Setler",
         description:
-          "Supplied as a ready-to-install set (1 Front, 1 Left, 1 Right). All three blades are precision surface-ground in the same batch to a ±0.01 mm thickness tolerance, ensuring zero-downtime installation and perfect alignment.",
+          "Kuruluma hazır bir set halinde tedarik edilir (1 adet ön, 1 adet sol, 1 adet sağ). Üç bıçağın tamamı, aynı üretim partisinde ±0,01 mm kalınlık toleransına göre hassas yüzey taşlama işleminden geçirilmiştir; bu sayede kurulum sırasında kesinti yaşanmaz ve mükemmel hizalama sağlanır.",
       },
       {
         id: "anti-glue-finish",
-        tag: "PERFORMANCE",
-        title: "Anti-Glue Mirror Finish",
+        tag: "PERFORMANS",
+        title: "Yapışmayı Önleyici Ayna Parlaklığı",
         description:
-          "Cutting through book spines exposes the blade to hot, sticky PUR and EVA adhesives. Our blades are lapped to a microscopic mirror finish, preventing glue drag that would otherwise smear across the book’s edge.",
+          "Kitap sırtlarını kesmek, bıçağı sıcak ve yapışkan PUR ve EVA yapıştırıcılara maruz bırakır. Bıçaklarımız mikroskobik düzeyde ayna parlaklığına getirildiğinden, aksi takdirde kitabın kenarına bulaşacak olan yapıştırıcı izlerini önler.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Machine Model",
-      col1: "Blade Position",
-      col2: "Dimensions (L × W × T)",
-      col3: "Mounting Holes / Slots",
+      col0: "OEM Makine Modeli",
+      col1: "Bıçak Konumu",
+      col2: "Boyutlar (U × G × Y)",
+      col3: "Montaj Delikleri / Yuvaları",
       caption:
-        "* Dimensions reflect standard Müller Martini and Kolbus models. We carry OEM blueprints for Wohlenberg and Perfecta. Custom hole patterns machined to order.",
+        "* Boyutlar, standart Müller Martini ve Kolbus modellerine aittir. Wohlenberg ve Perfecta markaları için orijinal üretici (OEM) teknik çizimlerini bulunduruyoruz. Özel delik düzenleri sipariş üzerine işlenmektedir.",
     },
     standardDimensions: [
       {
@@ -3208,67 +3225,67 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "When should I upgrade from HSS to Tungsten Carbide (TC) trimmer blades?",
+            "HSS kesici bıçaklarından tungsten karbür (TC) kesici bıçaklarına ne zaman geçmeliyim?",
           answer:
-            "You should upgrade to Tungsten Carbide (TC) when cutting high volumes of recycled paper, gloss-coated art paper, or thick books bound with heavy PUR adhesive. Coated papers contain clay and minerals that dull HSS very quickly. TC blades provide 5 to 10 times the cutting life of HSS, drastically reducing machine downtime for blade changes.",
+            "Yüksek miktarda geri dönüştürülmüş kağıt, parlak kaplamalı sanat kağıdı veya ağır PUR yapıştırıcıyla ciltlenmiş kalın kitapları keserken Tungsten Karbür (TC) bıçaklara geçmelisiniz. Kaplamalı kağıtlar, HSS bıçaklarını çok hızlı bir şekilde körelten kil ve mineraller içerir. TC bıçaklar, HSS bıçaklarına kıyasla 5 ila 10 kat daha uzun kesme ömrü sunar ve bıçak değişimi nedeniyle makinenin durma süresini önemli ölçüde azaltır.",
         },
         {
           question:
-            "Why do my trimmer blades keep tearing or chipping the book spine?",
+            "Neden kesici bıçaklarım kitabın sırtını sürekli yırtıyor ya da ufak parçalar halinde koparıyor?",
           answer:
-            "Spine tearing is usually caused by one of three things: (1) The blade is dull and needs changing; (2) The bevel angle is incorrect for the type of paper/glue being cut; or (3) Adhesive build-up on the back of the blade is causing ‘drag’. Ensure your blades have a mirror-lapped finish to prevent glue adhesion, and consider upgrading to HSS or Carbide for better edge retention.",
-        },
-        {
-          question: "Can Tungsten Carbide (TC) trimmer blades be resharpened?",
-          answer:
-            "Yes, but they must be sharpened using specialized diamond grinding wheels. Using standard aluminum oxide or silicon carbide wheels will destroy the carbide edge and generate micro-cracks. If your local sharpening service does not have the correct diamond wheel equipment, we recommend sending them to a specialized industrial grinder.",
+            'Bıçak sırtında yırtılma genellikle şu üç nedenden birinden kaynaklanır: (1) Bıçak körelmiştir ve değiştirilmesi gerekmektedir; (2) Kesilen kağıt/yapıştırıcı türü için eğim açısı yanlış; veya (3) Bıçağın arka yüzünde biriken yapıştırıcı, "sürtünme"ye neden oluyor. Yapıştırıcının bıçağa yapışmasını önlemek için bıçaklarınızın ayna parlaklığında bir yüzeye sahip olduğundan emin olun ve daha iyi kesici kenar dayanıklılığı için HSS veya Karbür bıçaklara geçmeyi düşünün.',
         },
         {
           question:
-            "What is the correct installation sequence for a three-knife set?",
+            "Tungsten Karbür (TC) kesme bıçakları yeniden bilenebilir mi?",
           answer:
-            "Because the side knives often shear slightly against the cutting stick or front knife path, alignment is critical. Install all three blades loosely first. Set and torque the front knife to establish the head datum, then alternate tightening the side knives. Since our 3-piece sets are ground to an identical thickness tolerance, they prevent the uneven clamping pressure that causes binding.",
+            "Evet, ancak bunlar özel elmas taşlama diskleri kullanılarak keskinleştirilmelidir. Standart alüminyum oksit veya silikon karbür disklerin kullanılması, karbür kenarı tahrip eder ve mikro çatlaklara neden olur. Yerel bileme hizmetinizde doğru elmas taşlama ekipmanı bulunmuyorsa, bunları uzman bir endüstriyel bileme tesisine göndermenizi öneririz.",
+        },
+        {
+          question: "Üç bıçaklı bir set için doğru kurulum sırası nedir?",
+          answer:
+            "Yan bıçaklar genellikle kesme çubuğuna veya ön bıçağın izine hafifçe sürtündüğü için hizalama son derece önemlidir. Öncelikle üç bıçağı da gevşek bir şekilde takın. Baş referans noktasını belirlemek için ön bıçağı yerleştirip tork uygulayın, ardından yan bıçakları sırayla sıkın. 3 parçalı setlerimiz aynı kalınlık toleransına göre taşlanmış olduğundan, sıkışmaya neden olan dengesiz sıkıştırma basıncını önlerler.",
         },
         {
           question:
-            "What does 'combi head' or 'spare knives for combi head' mean?",
+            "“Kombi başlığı” veya “kombi başlığı için yedek bıçaklar” ne anlama gelir?",
           answer:
-            "The combi head (or combination trim head) is the three-knife assembly on a perfect binder or three-knife trimmer that cuts a book's head, tail, and foredge in a single cycle. 'Spare knives for combi head' refers to the replacement front + side knife set for that assembly — exactly what we supply here.",
+            'Kombine kesme kafası (veya kombinasyon kesme kafası), bir kitabın üst kenarını, alt kenarını ve ön kenarını tek bir döngüde kesen, mükemmel ciltleme makinesinde veya üç bıçaklı kesme makinesinde bulunan üç bıçaklı tertibattır. "Kombi kafa yedek bıçakları", bu tertibat için yedek ön + yan bıçak setini ifade eder — tam da burada sunduğumuz ürün budur.',
         },
       ],
       company: [
         {
           question:
-            "Do your trimmer blades fit Kolbus, Wohlenberg, and Perfecta machines?",
+            "Tıraş bıçaklarınız Kolbus, Wohlenberg ve Perfecta makinelerine uyuyor mu?",
           answer:
-            "Yes. We maintain a comprehensive database of exact OEM blueprints for all major European and Japanese bookbinding lines, including Müller Martini, Kolbus, Wohlenberg, Perfecta, and Horizon. The mounting holes, slots, and threaded inserts will be a perfect drop-in fit.",
+            "Evet. Müller Martini, Kolbus, Wohlenberg, Perfecta ve Horizon dahil olmak üzere tüm büyük Avrupa ve Japon ciltleme hatlarına ait orijinal OEM teknik çizimlerinden oluşan kapsamlı bir veritabanı tutuyoruz. Montaj delikleri, yarıklar ve dişli ek parçalar, mevcut sistemlere tam olarak uyacak şekilde tasarlanmıştır.",
         },
         {
           question:
-            "My Wohlenberg trimmer model isn't listed in the dimension table above — can you still supply blades?",
+            "Yukarıdaki boyut tablosunda benim Wohlenberg kesici modelim yer almıyor — yine de bıçak temin edebilir misiniz?",
           answer:
-            "Yes. The table above shows our most common stock sizes (Müller Martini and Kolbus). For Wohlenberg and other models not listed, send us your machine model number, a blueprint, or a worn blade sample — we'll confirm the exact length, width, thickness, and mounting pattern before quoting.",
+            "Evet. Yukarıdaki tabloda en yaygın stok ölçülerimiz (Müller Martini ve Kolbus) gösterilmektedir. Wohlenberg ve listede yer almayan diğer modeller için bize makinenizin model numarasını, bir teknik çizimini veya aşınmış bir bıçak örneğini gönderin; fiyat teklifi vermeden önce tam uzunluk, genişlik, kalınlık ve montaj şemasını teyit edeceğiz.",
         },
         {
           question:
-            "What is the lead time for a custom Tungsten Carbide trimmer set?",
+            "Özel üretim bir tungsten karbür kesici setinin teslim süresi ne kadardır?",
           answer:
-            "Standard HSS sets for popular Müller Martini and Kolbus models are often in stock. Custom Tungsten Carbide (TC) inlaid sets typically require 15–20 working days to manufacture, due to the complex vacuum brazing and diamond grinding processes required for carbide.",
+            "Popüler Müller Martini ve Kolbus modelleri için standart HSS setleri genellikle stokta bulunur. Özel tungsten karbür (TC) kakmalı setlerin üretimi, karbür için gerekli olan karmaşık vakumlu lehimleme ve elmas taşlama işlemleri nedeniyle genellikle 15–20 iş günü sürer.",
         },
       ],
     },
   },
   {
     id: "lithium-battery-slitting-knives",
-    name: "Battery Slitting Knives",
+    name: "Pil Kesme Bıçakları",
     fullName:
-      "Tungsten Carbide Circular Slitting Knives for Lithium Battery Electrode Foil",
+      "Lityum Pil Elektrot Folyosu için Tungsten Karbür Dairesel Kesme Bıçakları",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Battery Precision Blades",
+    categoryDisplay: "Battery Hassas Bıçaklar",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "New Energy",
+    badge: "Yeni Enerji",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
@@ -3276,9 +3293,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
     ],
     description:
-      "Mirror-finish tungsten carbide circular slitting knives for lithium-ion battery electrode foil. Zero-notch Ra ≤ 0.05μm edge quality prevents micro-burrs on Al cathode and Cu anode foil, maintaining ISO Class 7 cell assembly cleanliness. Tolerance: ±0.001mm thickness, ≤0.01mm T.I.R.",
+      "Lityum-iyon pil elektrot folyosu için ayna parlaklığında tungsten karbür dairesel kesme bıçakları. Sıfır çentikli Ra ≤ 0,05 μm kenar kalitesi, Al katot ve Cu anot folyolarında mikro çapak oluşumunu önleyerek ISO Sınıf 7 hücre montaj temizliğini korur. Tolerans: ±0,001 mm kalınlık, ≤0,01 mm T.I.R.",
     fullDescription:
-      "Lithium battery electrode slitting is among the most demanding precision cutting applications in industrial manufacturing. A single micro-burr or edge notch on the cut foil edge can penetrate the separator membrane during cell assembly, causing internal short-circuit and catastrophic battery failure. Sureay lithium battery slitting knives are engineered to eliminate this risk through extreme dimensional precision and surface metallurgy.\n\nEvery knife is manufactured from ultra-fine grain tungsten carbide (WC-Co, grain size ≤ 0.5μm) and precision ground to a Ra ≤ 0.05μm mirror finish on the cutting bevel. Thickness tolerance is held to ±0.001mm across the full disc face — three times tighter than standard slitter knife specifications — and total indicated runout (T.I.R.) is verified at ≤0.01mm on every unit before shipment. This zero-notch edge geometry prevents micro-delamination at the foil cut edge and eliminates the metallic particle generation that contaminates dry-room cell assembly environments.\n\n## Electrode Foil Applications\n\n**Aluminum Cathode Foil (LFP, NMC, NCA Cells):** Thickness range 12–20μm. The hard, brittle oxide layer on battery-grade Al foil rapidly abrades standard HSS and D2 edges within a single roll. Tungsten carbide grades maintain a geometric edge life 8–12× longer, reducing unplanned stops on high-speed winder lines running at 80–120 m/min.\n\n**Copper Anode Foil (LFP, NMC, Solid-State Cells):** Thickness range 6–12μm. Ultra-thin Cu foil requires the knife/anvil clearance to be set within ±0.002mm to prevent foil wrinkling and telescoping on the rewind roll. Our diameter-matched knife pairs are ground as mated sets with clearance pre-verified to your machine specification.\n\n**PVDF Separator Film (Dry Process):** Ceramic-coated separator film for dry-electrode processes (used in Gen 4 solid-state cell lines) presents an extremely abrasive cutting substrate. Cermet-grade or solid PCD (polycrystalline diamond) knives are available for this application on request.\n\n## Cleanroom Compatibility\n\nAll knives are ultrasonically cleaned, individually packaged in sealed anti-static bags, and certified particulate-free to ISO Class 7 standards. Packaging and material certificates are compliant with IATF 16949 documentation requirements for EV battery supply chains.",
+      "Lityum pil elektrotlarının kesilmesi, endüstriyel üretimde en zorlu hassas kesim uygulamaları arasında yer almaktadır. Kesilen folyo kenarındaki tek bir mikro çapak veya kenar çentiği bile, hücre montajı sırasında ayırıcı membranı delerek iç kısa devreye ve pilin ciddi şekilde arızalanmasına neden olabilir. Sureay lityum pil kesme bıçakları, olağanüstü boyutsal hassasiyet ve yüzey metalurjisi sayesinde bu riski ortadan kaldırmak üzere tasarlanmıştır.\n\nHer bıçak, ultra ince taneli tungsten karbür (WC-Co, tane boyutu ≤ 0,5 μm) malzemeden üretilir ve kesme eğiminde Ra ≤ 0,05 μm ayna parlaklığına ulaşacak şekilde hassas bir şekilde taşlanır. Kalınlık toleransı, disk yüzeyinin tamamında ±0,001 mm olarak tutulur — bu, standart kesme bıçağı spesifikasyonlarından üç kat daha sıkıdır — ve toplam gösterilen salgı (T.I.R.), sevkiyat öncesinde her birimde ≤0,01 mm olarak doğrulanır. Bu sıfır çentikli kenar geometrisi, folyo kesim kenarında mikro delaminasyonu önler ve kuru oda pil montaj ortamlarını kirleten metalik parçacık oluşumunu ortadan kaldırır.\n\n## Elektrot Folyo Uygulamaları\n\n**Alüminyum Katot Folyosu (LFP, NMC, NCA Hücreleri):** Kalınlık aralığı 12–20 μm. Pil sınıfı alüminyum folyo üzerindeki sert ve kırılgan oksit tabakası, standart HSS ve D2 kenarlarını tek bir ruloda hızla aşındırır. Tungsten karbür kaliteleri, kenar ömrünü 8–12 kat daha uzun tutarak, 80–120 m/dk hızında çalışan yüksek hızlı sarma hatlarında plan dışı duruşları azaltır.\n\n**Bakır Anot Folyosu (LFP, NMC, Katı Hal Hücreleri):** Kalınlık aralığı 6–12 μm'dir. Ultra ince Cu folyo, folyonun geri sarma silindirinde kırışmasını ve teleskopikleşmesini önlemek için bıçak/örs açıklığının ±0,002 mm aralığında ayarlanmasını gerektirir. Çap uyumlu bıçak çiftlerimiz, makinenizin teknik özelliklerine göre önceden doğrulanmış açıklık değerleriyle eşleştirilmiş setler halinde taşlanmıştır.\n\n**PVDF Ayırıcı Film (Kuru İşlem):** Kuru elektrot işlemleri için seramik kaplamalı ayırıcı film (4. nesil katı hal hücre hatlarında kullanılır), son derece aşındırıcı bir kesme alt tabakası oluşturur. Talep üzerine, bu uygulama için sermet sınıfı veya katı PCD (polikristalin elmas) bıçaklar temin edilebilir.\n\n## Temiz Oda Uyumluluğu\n\nTüm bıçaklar ultrasonik olarak temizlenir, sızdırmaz antistatik torbalarda tek tek paketlenir ve ISO Sınıf 7 standartlarına göre partikül içermediği sertifikalandırılır. Ambalaj ve malzeme sertifikaları, elektrikli araç (EV) pil tedarik zincirleri için IATF 16949 belgeleme gerekliliklerine uygundur.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -3319,32 +3336,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "zero-notch-edge",
-        tag: "PRECISION",
-        title: "Zero-Notch Mirror Finish",
+        tag: "HASSASİYET",
+        title: "Sıfır Çentikli Ayna Parlaklığı",
         description:
-          "Every cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding. This eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture.",
+          "Her kesme eğimi, optik lens taşlamada kullanılanla aynı yüzey kalitesi standardı olan Ra ≤ 0,05 μm değerine göre alıştırılır. Bu, kuru oda hücre montaj ortamlarında metalik parçacıkların oluşmasına neden olan mikro çentiklenmeyi ortadan kaldırır ve ayırıcı membranın delinmesini önler.",
       },
       {
         id: "ultra-fine-carbide",
-        tag: "METALLURGY",
-        title: "Ultra-Fine WC-Co Carbide Grade",
+        tag: "METALURJİ",
+        title: "Ultra İnce WC-Co Karbür Sınıfı",
         description:
-          "Standard industrial carbide uses grain sizes of 1–3μm. Our battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles.",
+          "Standart endüstriyel karbürlerde 1–3 μm tane boyutları kullanılır. Pil sınıfı bıçaklarımız, ≤0,5 μm submikron WC-Co'dan üretilir ve önemli ölçüde daha yüksek kenar sertliği (HRA 91–93), ince Al ve Cu folyolar üzerinde üstün aşınma direnci ve yeniden bileme döngüleri arasında daha uzun cilalanabilir hizmet ömrü sağlar.",
       },
       {
         id: "matched-knife-pairs",
-        tag: "PROCESS CAPABILITY",
-        title: "Pre-Verified Clearance Pairs",
+        tag: "ÜRETİM YETENEĞİ",
+        title: "Önceden Doğrulanmış Yetki Çiftleri",
         description:
-          "Upper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil). Each pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation.",
+          "Üst ve alt bıçak setleri, sargı makinenizin teknik özelliklerine göre önceden doğrulanmış boşluk aralığına sahip, çapları birbirine uyumlu çiftler halinde taşlanmıştır (Cu folyo için tipik olarak 0,002–0,005 mm). Her çift, dış çap (OD), iç çap (ID), kalınlık ve ölçülen boşluk aralığını içeren bir teknik veri sayfasıyla birlikte gönderilir; bu sayede üretim hattında tutarlı bir şekilde yeniden takılabilmesi sağlanır.",
       },
     ],
     dimensionLabels: {
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Thickness",
+      col1: "Dış Çap (OD)",
+      col2: "İç Çap (ID)",
+      col3: "Kalınlık",
       caption:
-        "* Standard dimensions for battery electrode foil slitting. Custom OD/ID and thickness available for all winding machine models. Matched top/bottom pairs supplied with pre-verified clearance data sheet.",
+        "* Pil elektrot folyosu kesimi için standart boyutlar. Tüm sarma makinesi modelleri için özel dış çap (OD)/iç çap (ID) ve kalınlık seçenekleri mevcuttur. Uyumlu üst/alt çiftler, önceden doğrulanmış açıklık veri sayfasıyla birlikte tedarik edilir.",
     },
     standardDimensions: [
       {
@@ -3397,56 +3414,56 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What surface finish standard is required to prevent micro-burrs on battery electrode foil?",
+            "Pil elektrot folyasında mikro çapakların oluşmasını önlemek için hangi yüzey kalitesi standardı gereklidir?",
           answer:
-            "For lithium-ion battery electrode slitting, the cutting bevel must be polished to Ra ≤ 0.05μm (mirror finish) and verified for zero notches under 400× magnification. Any surface irregularity above this threshold generates micro-metallic particles that contaminate ISO Class 7 dry-room environments and can penetrate the separator, causing internal short-circuit in the finished cell.",
+            "Lityum-iyon pil elektrotlarının dilimlenmesi işleminde, kesim eğimi Ra ≤ 0,05 μm (ayna parlaklığı) seviyesine kadar parlatılmalı ve 400× büyütme altında çentik bulunmadığı doğrulanmalıdır. Bu eşiğin üzerindeki herhangi bir yüzey düzensizliği, ISO Sınıf 7 kuru oda ortamlarını kirleten ve ayırıcıya nüfuz ederek bitmiş hücrede iç kısa devreye neden olabilecek mikro metalik parçacıklar oluşturur.",
         },
         {
           question:
-            "How do I set the knife-to-knife clearance for ultra-thin copper anode foil?",
+            "Ultra ince bakır anot folyosu için bıçaklar arası açıklığı nasıl ayarlarım?",
           answer:
-            "For 6–12μm Cu anode foil, the upper/lower knife clearance should be set at 0.002–0.005mm (2–5% of foil thickness). Clearance below this range causes burr formation; above it results in foil wrinkling and rewind telescoping. Our matched pairs are pre-verified to your specified clearance and supplied with a dimensional data sheet for consistent line-side installation.",
+            "6–12 μm kalınlığındaki Cu anot folyosu için, üst/alt bıçak aralığı 0,002–0,005 mm (folyo kalınlığının %2–5’i) olarak ayarlanmalıdır. Bu aralığın altındaki aralıklar çapak oluşumuna; üstündeki aralıklar ise folyonun kırışmasına ve sarma sırasında teleskopik etkiye neden olur. Eşleştirilmiş çiftlerimiz, belirttiğiniz boşluğa göre önceden doğrulanmış olup, hat tarafında tutarlı kurulum için boyut veri sayfası ile birlikte tedarik edilir.",
         },
         {
           question:
-            "What carbide grade should I specify for aluminum cathode foil vs. copper anode foil?",
+            "Alüminyum katot folyosu ile bakır anot folyosu için hangi karbür kalitesini belirtmeliyim?",
           answer:
-            "Both foil types benefit from submicron WC-Co (≤0.5μm grain, HRA 91–93). For Al cathode foil, the hard oxide surface layer is the primary abrasion driver — a standard K10/K20 carbide grade provides acceptable edge life. For Cu anode foil, the priority shifts to achieving the lowest possible surface roughness (Ra ≤ 0.05μm) to prevent adhesive transfer and foil marking at the cut edge.",
+            "Her iki folyo türü de mikron altı WC-Co’dan (≤0,5 μm tane boyutu, HRA 91–93) yararlanmaktadır. Al katot folyosu için sert oksit yüzey tabakası, aşınmanın başlıca nedenidir — standart bir K10/K20 karbür sınıfı, kabul edilebilir bir kenar ömrü sağlar. Cu anot folyosu için ise öncelik, kesim kenarında yapışkan transferini ve folyo izlenmesini önlemek amacıyla mümkün olan en düşük yüzey pürüzlülüğüne (Ra ≤ 0,05 μm) ulaşmaya kaymaktadır.",
         },
         {
           question:
-            "What is the typical regrinding cycle on battery slitting knives?",
+            "Akü kesme bıçaklarında tipik bir yeniden bileme döngüsü ne kadardır?",
           answer:
-            "On a standard 600mm-wide foil slitting line running 80 m/min, submicron WC-Co knives typically sustain acceptable edge quality for 4–6 months of continuous operation before regrinding is required. Edge degradation appears first as increased cut-edge roughness (Ra climbing above 0.1μm) visible under SEM inspection, not as catastrophic chipping. We offer a regrinding service with full dimensional re-certification.",
+            "80 m/dk hızında çalışan standart 600 mm genişliğindeki bir folyo dilme hattında, mikron altındaki WC-Co bıçaklar genellikle yeniden bileme gerekliliğine kadar 4–6 ay boyunca kesintisiz çalışmada kabul edilebilir kenar kalitesini korur. Kenar bozulması, ilk olarak SEM incelemesinde görülebilen kesme kenarı pürüzlülüğünün artması (Ra değerinin 0,1 μm’nin üzerine çıkması) şeklinde ortaya çıkar; ani ve ciddi bir kırılma şeklinde değildir. Tam boyutsal yeniden sertifikalandırma içeren bir yeniden bileme hizmeti sunuyoruz.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply battery slitting knives certified to IATF 16949 requirements?",
+            "Sureay, IATF 16949 gerekliliklerine uygun sertifikalı pil kesme bıçakları tedarik edebilir mi?",
           answer:
-            "Yes. We supply full material traceability documentation for EV battery supply chain qualification: WC-Co raw material mill certificates, hardness test reports (HRA per ASTM E18), surface roughness measurement records (Ra per ISO 4287), and dimensional CMM reports. All documentation is referenced to your purchase order batch number.",
+            "Evet. Elektrikli araç akü tedarik zinciri sertifikasyonu için eksiksiz malzeme izlenebilirlik belgeleri sunuyoruz: WC-Co hammadde fabrikası sertifikaları, sertlik test raporları (ASTM E18 standardına göre HRA), yüzey pürüzlülüğü ölçüm kayıtları (ISO 4287 standardına göre Ra) ve boyutsal CMM raporları. Tüm belgeler, satın alma siparişinizin parti numarasına göre düzenlenmiştir.",
         },
         {
           question:
-            "What is the lead time for standard and custom battery slitting knife orders?",
+            "Standart ve özel pil kesme bıçağı siparişlerinin teslim süresi ne kadardır?",
           answer:
-            "Standard stock dimensions: 3–5 working days. Custom OD/ID dimensions not held in stock: 10–15 working days including full QC documentation. For initial OEM qualification orders requiring sample verification before full production, allow 7–10 working days for first-article samples.",
+            "Standart stok boyutları: 3–5 iş günü. Stokta bulunmayan özel dış çap/iç çap boyutları: Tam kalite kontrol belgeleri dahil 10–15 iş günü. Tam üretime geçmeden önce numune doğrulaması gerektiren ilk OEM onay siparişleri için, ilk numunelerin hazırlanması 7–10 iş günü sürer.",
         },
       ],
     },
   },
   {
     id: "corrugated-slitter-scorer-blades",
-    name: "Corrugated Slitter Blades",
+    name: "Oluklu Mukavva Kesme Bıçakları",
     fullName:
-      "Tungsten Carbide Thin Slitter Blades for Corrugator Dry-End Lines",
+      "Oluklu Mukavva Üretim Hattının Kuru Uç Hattı için Tungsten Karbür İnce Kesme Bıçakları",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Corrugated Blades",
+    categoryDisplay: "Oluklu Bıçaklar",
     image:
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Zero Crush",
+    badge: "Sıfır Ezilme",
     badgeColor: "orange",
     gallery: [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
@@ -3454,9 +3471,9 @@ export const blades: Blade[] = [
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
     ],
     description:
-      "Solid Tungsten Carbide thin slitter blades engineered for zero-crush corrugated board slitting. Exact OEM replacements for BHS, Fosber, and Marquip. As a complete box plant tooling manufacturer, we also supply slotter knives, Z cut-off knives, scorer/creaser knives, and stitch lap knives.",
+      "Oluklu mukavvayın ezilmeden kesilmesi için tasarlanmış katı tungsten karbür ince dilimleme bıçakları. BHS, Fosber ve Marquip markaları için tam uyumlu OEM yedek parçalar. Kutu üretim tesisleri için eksiksiz bir alet üreticisi olarak, ayrıca yarık açma bıçakları, Z kesme bıçakları, çizme/katlama bıçakları ve dikiş bindirme bıçakları da tedarik etmekteyiz.",
     fullDescription:
-      "On a high-speed corrugating line running at over 250 m/min, the dry-end slitter-scorer dictates the final quality of the corrugated board. Using inferior blades results in crushed flutes, ragged edges, and excessive paper dust. Sureay Corrugated Thin Slitter Blades are manufactured from 100% solid, sub-micron grain Tungsten Carbide via HIP (Hot Isostatic Pressing) sintering, delivering unparalleled transverse rupture strength and edge stability.\n\n## The 'Zero-Crush' Razor Geometry\n\nThe term 'Thin Blade' refers to the cutting edge, not the entire blade body. To prevent high-speed wobble, our blade bodies are machined to a rigid 1.0mm to 1.2mm thickness. The cutting edge is then precision-lapped by diamond wheels to a microscopic razor profile (typically 0.3mm wide at the apex). This specific geometry slices through heavy double-wall boards purely by shearing action, generating zero compressive force and completely eliminating flute crushing.\n\n## Continuous In-Line Sharpening\n\nModern corrugators utilize automatic, in-line CBN grinding wheels to hone the slitter blades during operation. Sureay specifically formulates our Tungsten Carbide matrix to balance extreme wear resistance with perfect grindability, ensuring the blade sheds material cleanly without glazing or loading the machine's grinding stones.\n\n## Complete Corrugated Tooling Portfolio\n\nWhile our Tungsten Carbide thin slitters are the heartbeat of the corrugator dry-end, Sureay is a comprehensive tooling partner for the entire box plant. Beyond slitter blades, we manufacture and supply:\n- **Slotter Knives (Slotting) & Beam Slot Knives:** For clean, tear-free slots on Flexo Folder Gluers (FFG).\n- **Z Cut-off Knives:** High-speed cross-cutting serrated blades for the dry-end cutoff station.\n- **Stitch Lap Knives:** Precision blades for cutting the critical glue/stitch tab on folding cartons.\n- **Scorer & Creaser Knives:** Male/female scoring rings that create the perfect folding hinge.\n- **Split Top and Bottom Circular Knives:** Two-piece design for rapid in-machine replacement, saving hours of arbor maintenance downtime.",
+      "250 m/dk’nın üzerinde çalışan bir yüksek hızlı oluklu mukavva üretim hattında, kuru uç kesme-çizme makinesi oluklu mukavvanın nihai kalitesini belirler. Kalitesiz bıçakların kullanılması, olukların ezilmesine, kenarların pürüzlü olmasına ve aşırı kağıt tozu oluşmasına neden olur. Sureay Oluklu Mukavva İnce Kesme Bıçakları, HIP (Sıcak İzostatik Presleme) sinterleme yöntemiyle %100 katı, mikron altı taneli Tungsten Karbür'den üretilir ve benzersiz enine kopma mukavemeti ile kenar stabilitesi sağlar.\n\n## “Sıkıştırmasız” Jilet Geometrisi\n\n“İnce Bıçak” terimi, bıçağın tüm gövdesini değil, kesici kenarını ifade eder. Yüksek hızda sallanmayı önlemek için bıçak gövdelerimiz 1,0 mm ila 1,2 mm kalınlığında sert bir şekilde işlenir. Kesici kenar daha sonra elmas disklerle mikroskobik bir tıraş bıçağı profiline (genellikle tepe noktasında 0,3 mm genişliğinde) hassas bir şekilde taşlanır. Bu özel geometri, ağır çift cidarlı levhaları tamamen kesme hareketiyle dilimler, sıfır sıkıştırma kuvveti oluşturur ve oluk ezilmesini tamamen ortadan kaldırır.\n\n## Sürekli Hat İçi Bileme\n\nModern oluklu mukavva makineleri, çalışma sırasında kesici bıçakları bilemek için otomatik, hat içi CBN taşlama diskleri kullanır. Sureay, aşırı aşınma direncini mükemmel taşlanabilirlikle dengelemek için Tungsten Karbür matrisimizi özel olarak formüle eder; böylece bıçağın, camlaşma olmadan veya makinenin taşlama taşlarını tıkamadan malzemeyi temiz bir şekilde dökmesini sağlar.\n\n## Eksiksiz Oluklu Mukavva Takım Portföyü\n\nTungsten Karbür ince kesme bıçaklarımız, oluklu mukavva makinesinin kuru bölümünün kalbi olsa da, Sureay tüm kutu üretim tesisi için kapsamlı bir takım ortağıdır. Kesme bıçaklarının yanı sıra aşağıdakileri de üretip tedarik ediyoruz:\n- **Yiv Açma Bıçakları (Slotting) ve Kiriş Yiv Bıçakları:** Flekso Katlama-Yapıştırma Makinelerinde (FFG) temiz, yırtılmayan yivler açmak için.\n- **Z Kesme Bıçakları:** Kuru bölüm kesme istasyonu için yüksek hızlı çapraz kesim tırtıklı bıçaklar.\n- **Dikiş Katlama Bıçakları:** Katlanır kartonlardaki kritik tutkal/dikiş dilimini kesmek için hassas bıçaklar.\n- **Çizici ve Katlama Bıçakları:** Mükemmel katlama menteşesi oluşturan erkek/dişi çizme halkaları.\n- **Üst ve Alt Bölünmüş Dairesel Bıçaklar:** Makine içinde hızlı değiştirme imkanı sağlayan iki parçalı tasarım, mil bakımından kaynaklanan saatlerce süren duruş sürelerini ortadan kaldırır.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3506,33 +3523,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "hip-sintering",
-        tag: "METALLURGY",
-        title: "HIP Sintered Carbide",
+        tag: "METALURJİ",
+        title: "HIP Sinterlenmiş Karbür",
         description:
-          "Hot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores. This ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact.",
+          "Sıcak İzostatik Presleme (HIP) teknolojisi, ince kesme bıçaklarımızın mikroskobik gözenek içermediğini garanti eder. Bu ultra yoğun yapı, yüksek hızda oluklu mukavva darbesine maruz kaldığında mikro çatlaklar oluşmadan kusursuz bir jilet keskinliği (~0,3 mm uç) sağlar.",
       },
       {
         id: "zero-crush",
-        tag: "GEOMETRY",
-        title: "Zero-Crush Razor Edge",
+        tag: "GEOMETRİ",
+        title: "Ezip Bükülmeyen Tıraş Bıçağı Kenarı",
         description:
-          "A thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish. This slices the flutes cleanly instead of pressing them down.",
+          "Kalın bıçak gövdesi (1,0–1,2 mm), yüksek hızda yan sallantılara karşı mutlak stabilite sağlarken, kesici kenar derin bir şekilde konikleştirilmiş ve elmasla parlatılarak jilet gibi keskin bir yüzeye kavuşturulmuştur. Bu sayede olukları aşağı doğru bastırmak yerine temiz bir şekilde keser.",
       },
       {
         id: "full-portfolio",
-        tag: "MANUFACTURING CAPABILITY",
-        title: "Complete Box Plant Tooling",
+        tag: "ÜRETİM KAPASİTESİ",
+        title: "Komple Kutu Tesisi Ekipmanları",
         description:
-          "From Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant.",
+          "Oluklu mukavva makinesindeki tungsten karbür ince kesme bıçaklarından, Z kesme bıçaklarına, çizme halkalarına ve flekso katlama-yapıştırma makinenizdeki üst/alt yarık açma bıçaklarına kadar — kutu üretim tesisiniz için kesme işlemlerinin tüm yelpazesini tasarlıyoruz.",
       },
     ],
     dimensionLabels: {
-      col0: "Target Corrugator OEM",
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Body Thickness",
+      col0: "Hedef: Oluklu Mukavva Üreticisi (OEM)",
+      col1: "Dış Çap (OD)",
+      col2: "İç Çap (ID)",
+      col3: "Gövde Kalınlığı",
       caption:
-        "* Dimensions above are standard OEM specifications for Thin Slitter Blades. Drive pin holes are machined to brand tolerances. Slotter, Scorer, and Z Cut-off knives are manufactured to exact customer or OEM blueprints.",
+        "* Yukarıdaki boyutlar, İnce Kesme Bıçakları için standart OEM teknik özellikleridir. Tahrik pimi delikleri, markanın toleranslarına göre işlenmiştir. Yiv Açma, Çizme ve Z Kesme bıçakları, müşterinin veya OEM’in kesin teknik çizimlerine göre üretilmektedir.",
     },
     standardDimensions: [
       {
@@ -3591,48 +3608,49 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why are my thin slitter blades crushing the flutes on E and F flute boards?",
+            "Neden ince kesme bıçaklarım E ve F oluklu levhalardaki olukları ezip duruyor?",
           answer:
-            "Flute crushing is caused by a blade that has lost its razor geometry. This happens if the blade carbide is wearing too fast, or if your automatic in-line sharpening stones are glazed. Switching to our HIP-sintered Tungsten Carbide blades ensures the edge stays microscopically sharp, shearing the flutes cleanly without compressive force.",
+            "Flüt ezilmesi, jilet gibi keskinliğini yitirmiş bir bıçaktan kaynaklanır. Bu durum, bıçağın karbür kısmının çok hızlı aşınması ya da otomatik sıralı bileme taşlarınızın cilalanması halinde ortaya çıkar. HIP sinterleme yöntemiyle üretilmiş Tungsten Karbür bıçaklarımıza geçmek, bıçak kenarının mikroskobik düzeyde keskin kalmasını sağlar ve sıkıştırma kuvveti uygulamadan olukları temiz bir şekilde keser.",
         },
         {
           question:
-            "How do your blades interact with automatic slitter-scorer sharpening systems?",
+            "Bıçaklarınız, otomatik dilimleyici-çentikleyici bileme sistemleriyle nasıl etkileşime giriyor?",
           answer:
-            "Our blades are engineered specifically for continuous in-line sharpening (common on Fosber and BHS lines). The carbide grain structure and cobalt binder ratio are balanced so that the blade sheds material cleanly when hit by the CBN stones, keeping the blade sharp without loading (glazing) the sharpening wheels.",
+            "Bıçaklarımız, özellikle sürekli sıralı bileme işlemleri için tasarlanmıştır (Fosber ve BHS hatlarında yaygın olarak kullanılır). Karbür tane yapısı ve kobalt bağlayıcı oranı, bıçağın CBN taşlarına çarptığında malzemeyi temiz bir şekilde dökmesi ve bileme taşlarında birikme (parlaklaşma) oluşmadan bıçağın keskinliğini koruması için dengelenmiştir.",
         },
         {
           question:
-            "What is the advantage of a Split Top and Bottom Circular Knife?",
+            "Üst ve alt kısımları ayrık dairesel bıçağın avantajı nedir?",
           answer:
-            "On legacy slitter-scorers, changing a worn solid circular knife requires operators to pull the entire heavy shaft out of the machine. Split circular knives are manufactured in two interlocking halves. You simply bolt the halves directly around the shaft in minutes, saving hours of maintenance downtime.",
+            "Eski tip kesme-çentikleme makinelerinde, aşınmış tek parça dairesel bıçağın değiştirilmesi için operatörlerin ağır şaftın tamamını makineden çıkarmaları gerekir. Split dairesel bıçaklar bıçakları, birbirine geçmeli iki yarıdan oluşur. Yarıları birkaç dakika içinde şaftın etrafına doğrudan cıvatalarla sabitleyebilirsiniz; böylece bakım nedeniyle oluşan saatlerce süren kesinti süresinden tasarruf edersiniz.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply the entire knife package for a new corrugator and FFG installation?",
+            "Sureay, yeni bir oluklu mukavva makinesi ve FFG kurulumuna yönelik bıçak setinin tamamını tedarik edebilir mi?",
           answer:
-            "Absolutely. We are a comprehensive tooling partner for box plants. In addition to Tungsten Carbide thin slitters, we manufacture the complete converting spectrum: Slotter knives, Beam slot knives, Stitch lap knives, Scorer/Creaser knives, and Z cut-off knives.",
+            "Kesinlikle. Karton fabrikaları için kapsamlı bir kalıp üretim ortağıyız. Tungsten Karbür ince kesme bıçaklarının yanı sıra, dönüştürme işlemlerinin tüm yelpazesini kapsayan ürünleri üretiyoruz: Yarıp kesme bıçakları, Kiriş yarık bıçakları, Dikişli bindirme bıçakları, Çizme/Kırma bıçakları ve Z kesme bıçakları.",
         },
         {
           question:
-            "Do you maintain dimensions for Bobst / Martin Flexo Folder Gluers?",
+            "Bobst / Martin Flexo Katlama-Yapıştırma Makineleri için boyut verileri bulunduruyor musunuz?",
           answer:
-            "Yes, we have an extensive database of OEM blueprints covering the slitting, slotting, and scoring sections of major converting machines including Bobst, Martin, Isowa, Ward, and TCY. Your replacement knives will be an exact drop-in fit.",
+            "Evet, Bobst, Martin, Isowa, Ward ve TCY gibi önde gelen işleme makinelerinin dilme, oluk açma ve çizme bölümlerini kapsayan kapsamlı bir OEM teknik çizim veritabanına sahibiz. Yedek bıçaklarınız, makineye tam olarak uyacak şekilde tasarlanmıştır.",
         },
       ],
     },
   },
   {
     id: "tire-shredder-blades",
-    name: "Tire Shredder Blades",
-    fullName: "Heavy-Duty 3-Claw Rotary Shear Blades for Tire Recycling",
+    name: "Lastik Parçalayıcı Bıçakları",
+    fullName:
+      "Lastik Geri Dönüşümü için Ağır Hizmet Tipi 3 Pençeli Döner Kesme Bıçakları",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Tire Shredder Blades",
+    categoryDisplay: "Lastik Parçalayıcı Bıçakları",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
-    badge: "OEM Standard",
+    badge: "OEM Standardı",
     badgeColor: "red",
     gallery: [
       "/images/products/shredder-blades/3-claw-shredder-blades.webp",
@@ -3640,9 +3658,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      'Premium 3-claw rotary shear blades engineered for primary tire shredding and TDF (Tire Derived Fuel) production. Manufactured from OEM-grade Cru-Wear (PGK) and Modified A8 tool steels to withstand extreme impact from bead wires. Precision machined to exact ±0.05mm (0.002") tolerances to ensure tires are cleanly cut rather than torn.',
+      'Birincil lastik parçalama ve TDF (Lastikten Elde Edilen Yakıt) üretimi için tasarlanmış birinci sınıf 3 pençeli döner makaslama bıçakları. Lastik kenar tellerinden kaynaklanan aşırı darbelere dayanabilmesi için OEM kalitesinde Cru-Wear (PGK) ve Modifiye A8 takım çeliklerinden üretilmiştir. Lastiklerin yırtılmak yerine temiz bir şekilde kesilmesini sağlamak için ±0,05 mm (0,002") toleransla hassas bir şekilde işlenmiştir.',
     fullDescription:
-      "Primary tire shredding is arguably the most brutal application in the size-reduction industry. Rotary blades must simultaneously slice through elastic rubber while repeatedly impacting high-tensile steel bead wires. Standard shredder alloys fail prematurely in this environment, either through rapid edge rounding or catastrophic brittle fracture.\n\n## Premium Tire-Grade Metallurgy\n\nWe manufacture our tire shredder blades using the exact premium material grades proven in top-tier OEM equipment (such as Barclay and CM shredders):\n\n**Cru-Wear (PGK):** The ultimate factory-standard material. It offers an exceptionally high vanadium and tungsten carbide volume, delivering superior wear resistance while maintaining the extreme toughness required to shear thick steel belts without micro-chipping.\n\n**Modified A8:** Offers an excellent balance of performance and cost-effectiveness, providing massive impact resistance for operations focused on minimizing upfront tooling costs.\n\n## The Two-Thousandths (0.05mm) Tolerance Rule\n\nThe difference between an efficient tire shredder and a constantly jammed machine lies in the cutting clearance. All our tire knives, regardless of material, are ground to precise thickness tolerances — two thousandths of an inch (0.05mm) to be exact.\n\nThis precision ensures that elastic tires and steel wires are cleanly **cut** as opposed to being **torn** and stretched. A proper shearing action drastically reduces pulling forces on the rotor shafts, lowers electrical energy consumption (amp draw), and prevents exposed steel wires from wrapping around the rotor block.\n\n## 3-Claw Geometry & TDF Sizing\n\nThe standard 3-claw (hook) geometry provides the optimal bite-angle to grab whole passenger and light truck tires, pulling them aggressively into the cutting chamber. Blade thickness (typically 2-inch / 50mm) directly dictates the size of your Tire Derived Fuel (TDF) chips, ensuring a consistent, high-quality end product suitable for cement kilns or downstream wire liberation.",
+      "Birincil lastik parçalama işlemi, boyut küçültme endüstrisindeki tartışmasız en zorlu uygulamadır. Döner bıçaklar, elastik kauçuğu keserken aynı anda yüksek gerilimli çelik jant teline tekrar tekrar çarpmak zorundadır. Standart parçalayıcı alaşımları, bu ortamda ya kenarların hızla yuvarlanması ya da felaket niteliğinde bir kırılma sonucu erken arızalanır.\n\n## Üst Sınıf Lastik Sınıfı Metalurji\n\nLastik parçalayıcı bıçakları ürünümüzü, birinci sınıf OEM ekipmanlarında (Barclay ve CM parçalayıcıları gibi) kendini kanıtlamış tam olarak aynı üst sınıf malzeme sınıflarını kullanarak üretiyoruz:\n\n**Cru-Wear (PGK):** En üst düzey fabrika standardı malzeme. Olağanüstü yüksek vanadyum ve tungsten karbür içeriği sunarak, mikro yontulmalar olmadan kalın çelik kemerleri kesmek için gereken aşırı tokluğu korurken üstün aşınma direnci sağlar.\n\n**Modifiye A8:** Performans ve maliyet etkinliği arasında mükemmel bir denge sunar; ön takım maliyetlerini en aza indirmeye odaklanan operasyonlar için muazzam darbe direnci sağlar.\n\n## İki Binde Bir (0,05 mm) Tolerans Kuralı\n\nVerimli bir lastik parçalayıcı ile sürekli sıkışan bir makine arasındaki fark, kesme boşluğunda yatmaktadır. Malzemesi ne olursa olsun tüm lastik bıçaklarımız, kesin kalınlık toleranslarına göre taşlanmıştır — tam olarak iki binde bir inç (0,05 mm).\n\nBu hassasiyet, elastik lastiklerin ve çelik tellerin **yırtılmak** ve gerilmek yerine temiz bir şekilde **kesilmesini** sağlar. Doğru bir kesme işlemi, rotor milleri üzerindeki çekme kuvvetlerini önemli ölçüde azaltır, elektrik enerjisi tüketimini (amper çekişi) düşürür ve açıkta kalan çelik tellerin rotor bloğuna dolanmasını önler.\n\n## 3 Pençeli Geometri ve TDF Boyutlandırması\n\nStandart 3 pençeli (kanca) geometri, binek ve hafif kamyon lastiklerini bütün olarak kavramak ve bunları kesme haznesine kuvvetli bir şekilde çekmek için optimum kavrama açısını sağlar. Bıçak kalınlığı (genellikle 2 inç / 50 mm), Lastik Kaynaklı Yakıt (TDF) yongalarının boyutunu doğrudan belirler ve çimento fırınları veya sonraki aşamalarda tel ayrıştırma işlemleri için uygun, tutarlı ve yüksek kaliteli bir son ürün elde edilmesini sağlar.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3684,34 +3702,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "premium-metallurgy",
-        tag: "MATERIALS",
-        title: "Cru-Wear (PGK) & Modified A8",
+        tag: "MALZEMELER",
+        title: "Cru-Wear (PGK) ve Modifiye A8",
         description:
-          "Utilizing OEM-grade premium alloys. Cru-Wear provides ultimate toughness and durability for high-volume lines, while Modified A8 offers the best balance of cost and performance.",
+          "OEM kalitesinde birinci sınıf alaşımlar kullanılır. Cru-Wear, yüksek hacimli üretim hatları için en üst düzeyde dayanıklılık ve uzun ömür sağlarken, Modified A8 ise maliyet ve performans arasında en iyi dengeyi sunar.",
       },
       {
         id: "precise-cutting",
-        tag: "EFFICIENCY",
-        title: "Cut, Don't Tear",
+        tag: "VERİMLİLİK",
+        title: "Kes, Yırtma",
         description:
-          "Precision ground to ±0.05mm. This ensures a true scissor-like cutting action, preventing wire pull-out, reducing machine wear, and drastically lowering energy consumption.",
+          "±0,05 mm hassasiyetinde taşlanmıştır. Bu, gerçek bir makas benzeri kesme hareketi sağlar; telin çıkmasını önler, makine aşınmasını azaltır ve enerji tüketimini önemli ölçüde düşürür.",
       },
       {
         id: "consistent-tdf",
-        tag: "OUTPUT QUALITY",
-        title: "Consistent TDF Chips",
+        tag: "ÇIKIŞ KALİTESİ",
+        title: "Tutarlı TDF Yongaları",
         description:
-          "Exact blade thicknesses (e.g., 2-inch standard) combined with zero-clearance shearing produce uniform, high-quality Tire Derived Fuel (TDF) chips with minimal exposed wire.",
+          "Keskin bıçak kalınlıkları (örneğin, 2 inçlik standart) ile sıfır boşluklu kesme işleminin bir araya gelmesi, açıkta kalan tel miktarı en aza indirgenmiş, homojen ve yüksek kaliteli Lastik Kaynaklı Yakıt (TDF) yongaları elde edilmesini sağlar.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform",
-      col1: "Outer Diameter",
-      col2: "Thickness (Chip Size)",
-      col3: "Bore (Inner Hole)",
-      col4: "Claw Count",
+      col0: "OEM Platformu",
+      col1: "Dış Çap",
+      col2: "Kalınlık (Yonga Boyutu)",
+      col3: "Çap (İç Delik)",
+      col4: "Pençe Sayısı",
       caption:
-        "* Dimensions shown are industry standard examples. We manufacture strictly to your exact machine specifications and required TDF chip size.",
+        "* Gösterilen boyutlar, sektör standardına uygun örneklerdir. Üretimimizi, makinenizin tam teknik özelliklerine ve istenen TDF talaş boyutuna sıkı sıkıya uygun olarak gerçekleştiriyoruz.",
     },
     standardDimensions: [
       {
@@ -3755,48 +3773,50 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Why should I upgrade to Cru-Wear (PGK) from standard D2 tool steel?",
+            "Neden standart D2 takım çeliğinden Cru-Wear (PGK) çeliğine geçmeliyim?",
           answer:
-            "Tires contain high-tensile bead wires that act as extreme impact loads. Standard D2 is highly wear-resistant but brittle; the edge will chip when it strikes bead wire. Cru-Wear (PGK) is engineered with a different carbide structure, making it significantly tougher and more durable than D2, absorbing the impact without fracturing while maintaining excellent edge retention.",
+            "Lastikler, aşırı darbe yükleri olarak işlev gören yüksek gerilimli jant teli içerir. Standart D2, aşınmaya karşı son derece dayanıklıdır ancak kırılgandır; kenarı, jant teline çarptığında ufalanır. Cru-Wear (PGK), farklı bir karbür yapısı ile tasarlanmıştır; bu sayede D2'den önemli ölçüde daha sağlam ve dayanıklıdır, mükemmel kenar tutma özelliğini korurken kırılmadan darbeyi emer.",
         },
         {
           question:
-            "How does blade tolerance affect my shredder's energy consumption?",
+            "Bıçak toleransı, parçalayıcımın enerji tüketimini nasıl etkiler?",
           answer:
-            "If the thickness tolerance of the rotary blades varies by more than 0.05mm (0.002\"), a gap forms between the counter-rotating knives. Instead of shearing the elastic tire, the machine tries to stretch and tear it. This pulling action requires massive amounts of torque, which spikes the motor's amp draw and wastes energy. Precision tolerances ensure a low-friction, clean cut.",
+            "Dönen bıçakların kalınlık toleransı 0,05 mm'den (0,002\") fazla farklılık gösterirse, ters yönde dönen bıçaklar arasında bir boşluk oluşur. Makine, elastik lastiği kesmek yerine onu germek ve yırtmaya çalışır. Bu çekme hareketi çok büyük miktarda tork gerektirir; bu da motorun akım çekimini ani olarak artırır ve enerji israfına yol açar. Hassas toleranslar, sürtünmenin az olduğu ve temiz bir kesim yapılmasını sağlar.",
         },
         {
-          question: "How does the 3-claw design benefit whole tire processing?",
+          question:
+            "3 pençeli tasarım, lastiğin bütünsel işlenmesine nasıl bir fayda sağlar?",
           answer:
-            "A 3-claw geometry provides the ideal bite angle and spacing. If there are too many claws (e.g., 8 or 10), the tire will bounce on top of the rotor because the hook gaps are too small to grab the thick rubber. 3 claws provide a massive opening that hooks into the tire cavity and pulls the entire tire down into the cutting chamber.",
+            "3 tırnaklı geometri, ideal ısırma açısı ve aralığını sağlar. Çenelerin sayısı çok fazla olursa (örneğin 8 veya 10), kanca aralıkları kalın lastiği kavramak için çok küçük olduğundan lastik rotorun üzerinde zıplar. 3 çeneli tasarım, lastiğin iç boşluğuna kenetlenen ve lastiğin tamamını kesme odasına çeken geniş bir açıklık sağlar.",
         },
       ],
       company: [
         {
           question:
-            "Can you supply spacers and cleaning fingers (scraper plates) to match the blades?",
+            "Bıçaklara uygun ara parçalar ve temizleme parmakları (kazıyıcı plakalar) temin edebilir misiniz?",
           answer:
-            "Yes. A complete tire shredding rotor requires matched blades, spacers, and cleaning fingers. We manufacture the complete set to the same strict tolerances to ensure zero-gap assembly across the entire length of the rotor shaft.",
+            "Evet. Tam donanımlı bir lastik parçalama rotoru, birbiriyle uyumlu bıçaklar, ara parçalar ve temizleme parmaklarından oluşur. Rotor milinin tüm uzunluğu boyunca boşluksuz bir montaj sağlamak için, komple seti aynı sıkı toleranslara göre üretiyoruz.",
         },
         {
-          question: "Do you have the blueprints for Barclay or CM shredders?",
+          question:
+            "Barclay veya CM öğütücülerinin teknik çizimleri sizde var mı?",
           answer:
-            "We maintain a comprehensive database of OEM blade drawings for major tire shredding platforms. Supplying us with your machine model or a basic confirmation drawing allows us to manufacture exact drop-in replacements.",
+            "Önemli lastik parçalama platformlarına ait OEM bıçak çizimlerinden oluşan kapsamlı bir veritabanı tutuyoruz. Makine modelinizi veya temel bir onay çizimini bize iletmeniz, tam olarak uyumlu yedek parçalar üretmemizi sağlar.",
         },
       ],
     },
   },
   {
     id: "nonwoven-slitter-knives",
-    name: "Nonwoven Slitter Knives",
+    name: "Dokumasız Kumaş Kesme Bıçakları",
     fullName:
-      "M2 HSS Circular Slitter Knives for Spunbond, Meltblown & SMS Nonwoven Fabrics",
+      "Spunbond, Meltblown ve SMS Dokumasız Kumaşlar için M2 HSS Dairesel Kesme Bıçakları",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-    badge: "Medical Grade",
+    badge: "Tıbbi Sınıf",
     badgeColor: "teal",
     gallery: [
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
@@ -3804,9 +3824,9 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
     ],
     description:
-      "M2 HSS and D2 circular slitter knives for spunbond PP, meltblown, SMS, and SMMS nonwoven fabrics. Specialised rake angle geometry prevents fibre fraying and slub formation on loose-structure materials. Used in hygiene, medical, filtration, and geotextile slitting lines.",
+      "Spunbond PP, meltblown, SMS ve SMMS dokunmamış kumaşlar için M2 HSS ve D2 dairesel kesme bıçakları. Özel eğim açısı geometrisi, gevşek yapılı malzemelerde liflerin yıpranmasını ve topak oluşumunu önler. Hijyen, medikal, filtrasyon ve jeotekstil kesme hatlarında kullanılır.",
     fullDescription:
-      "Nonwoven fabric slitting presents a fundamentally different challenge from film or paper converting: the material has no grain direction, low tensile strength in the cross-machine direction, and a loose, fibrous structure that can fray, distort, or pill at the slit edge if the knife geometry is not matched to the fabric construction and line tension.\n\nSureay nonwoven slitter knives are manufactured from M2 high-speed steel with a specialist rake angle geometry developed specifically for loose-structure spunbond, meltblown, and hydroentangled materials. The optimised positive rake angle shears through fibre bundles cleanly rather than pushing them aside, eliminating the frayed edge and loose fibre slub that cause downstream quality rejections in baby diaper, feminine hygiene, and surgical drape converting lines.\n\n## Nonwoven Fabric Types\n\n**Spunbond PP (S, SS, SSS structures):** The most common nonwoven substrate. Available in 8–120 GSM. Standard M2 HSS at Ra ≤ 0.4μm surface finish, positive rake 15°–20°. Used in hygiene absorbent product converting, geotextile roll slitting, and agricultural mulch film.\n\n**Meltblown (M layer):** Ultra-fine fibre (1–5μm diameter) layers used as the filtration core in N95/FFP2 respirators and surgical masks. Extremely fragile and sensitive to lateral tensile loading. Requires reduced slit speed (60–100 m/min), low-mass knife body to minimise vibration, and electrostatic discharge (ESD) coatings to prevent fibre attraction to the blade face.\n\n**SMS / SMMS Medical Fabrics:** Spunbond-Meltblown-Spunbond composite used in surgical gowns, drapes, and sterilisation wraps. Medical-grade SMS requires validated equipment — we supply material certificates and dimensional reports traceable to your batch number for regulatory compliance.\n\n**Hydroentangled / Wetlaid Nonwovens:** Higher basis weight (50–200 GSM) fabric with more coherent structure. Closer to foam or paper in cutting characteristics — standard D2 or 52100 steel knives perform well on these substrates.\n\n## ESD Coating Option\n\nFor meltblown and electrospun filtration media slitting, an ESD (electrostatic discharge) conductive surface treatment is available that prevents static charge accumulation on the blade face. Static buildup causes lightweight fibres (particularly PP meltblown at <15 GSM) to cling to the blade and transfer as contamination to the reslitted roll edge.",
+      "Dokumasız kumaş kesimi, film veya kağıt işlemeyle karşılaştırıldığında temelde farklı bir zorluk ortaya çıkarır: Malzemenin lif yönü yoktur, makine enine yönde çekme mukavemeti düşüktür ve gevşek, lifli bir yapıya sahiptir; bıçak geometrisi, kumaş yapısı ve hat gerginliğine uygun değilse, kesim kenarında yıpranma, bozulma veya tüylenme meydana gelebilir.\n\nSureay dokunmamış kumaş kesme bıçakları, gevşek yapılı spunbond, meltblown ve hidro-dolaşımlı malzemeler için özel olarak geliştirilmiş bir eğim açısı geometrisine sahip M2 yüksek hızlı çelikten üretilmektedir. Optimize edilmiş pozitif eğim açısı, elyaf demetlerini kenara itmek yerine temiz bir şekilde keser; böylece bebek bezi, kadın hijyeni ve cerrahi örtü işleme hatlarında sonraki aşamalarda kalite redlerine neden olan yıpranmış kenarları ve gevşek elyaf topaklarını ortadan kaldırır.\n\n## Dokumasız Kumaş Türleri\n\n**Spunbond PP (S, SS, SSS yapıları):** En yaygın dokumasız alt tabaka. 8–120 GSM aralığında mevcuttur. Ra ≤ 0,4 μm yüzey kalitesinde standart M2 HSS, pozitif eğim açısı 15°–20°. Hijyenik emici ürünlerin işlenmesinde, jeotekstil rulo kesiminde ve tarımsal malç filmlerinde kullanılır.\n\n**Meltblown (M tabakası):** N95/FFP2 solunum maskeleri ve cerrahi maskelerde filtre çekirdeği olarak kullanılan ultra ince elyaf (1–5μm çap) tabakaları. Son derece kırılgandır ve yanal çekme yüküne karşı hassastır. Titreşimi en aza indirmek için düşük kesme hızı (60–100 m/dk), düşük kütleli bıçak gövdesi ve liflerin bıçak yüzeyine yapışmasını önlemek için elektrostatik deşarj (ESD) kaplamaları gerektirir.\n\n**SMS / SMMS Tıbbi Kumaşlar:** Cerrahi önlükler, örtüler ve sterilizasyon sargılarında kullanılan Spunbond-Meltblown-Spunbond kompozit. Tıbbi sınıf SMS, onaylanmış ekipman gerektirir — mevzuata uygunluk için parti numaranıza kadar izlenebilir malzeme sertifikaları ve boyut raporları sağlıyoruz.\n\n**Hidroentangle / Wetlaid Nonwovenlar:** Daha tutarlı bir yapıya sahip, daha yüksek baz ağırlıklı (50–200 GSM) kumaşlar. Kesme özellikleri açısından köpük veya kağıda daha yakındır — standart D2 veya 52100 çelik bıçaklar bu alt tabakalarda iyi performans gösterir.\n\n## ESD Kaplama Seçeneği\n\nMeltblown ve elektrospun filtre malzemelerinin dilimlenmesi için, bıçak yüzeyinde statik elektrik yükü birikmesini önleyen bir ESD (elektrostatik deşarj) iletken yüzey işleme seçeneği mevcuttur. Statik elektrik birikimi, hafif liflerin (özellikle <15 GSM'lik PP eriyik üflemeli) bıçağa yapışmasına ve yeniden kesilen rulo kenarına kir olarak aktarılmasına neden olur.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
     compatibleMachines: [
@@ -3846,32 +3866,32 @@ export const blades: Blade[] = [
     components: [
       {
         id: "rake-geometry",
-        tag: "EDGE DESIGN",
-        title: "Nonwoven-Optimised Rake Angle",
+        tag: "KENAR TASARIMI",
+        title: "Dokumasız Malzemeler İçin Optimize Edilmiş Tırmık Açısı",
         description:
-          "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min.",
+          "Kağıt ve plastik film için tasarlanmış standart kesme bıçağı geometrileri, 5°–10° arasında pozitif veya nötr eğim açısı kullanır. Gevşek yapılı dokunmamış kumaşlarda bu geometri, kesme işleminden önce lifleri yana doğru iter ve hijyen ürünleri denetiminde kalite kusuru olarak değerlendirilen yıpranmış kenarın oluşmasına neden olur. 15°–20° pozitif eğimli bıçağımız, tek bir aşamalı hareketle lif demetlerini keserek, 400 m/dk’ya varan hat hızlarında temiz ve sıkı bir kesim kenarı oluşturur.",
       },
       {
         id: "esd-coating",
-        tag: "SURFACE TREATMENT",
-        title: "ESD Conductive Coating",
+        tag: "YÜZEY İŞLEMİ",
+        title: "ESD İletken Kaplama",
         description:
-          "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction.",
+          "Hafif PP dokunmamış kumaş, metal yüzeyler üzerinde yüksek hızda ilerlediğinde elektrostatik yük oluşur. Eritme üflemeli katmanlarda (<15 GSM), bu yük, liflerin bıçak yüzeyine yapışmasına ve yeniden kesilen rulo kenarına kir olarak aktarılmasına neden olur. ESD iletken kaplamamız, bıçak yüzeyindeki yükü sürekli olarak dağıtır ve işlem hızının düşürülmesine gerek kalmadan liflerin yapışmasını önler.",
       },
       {
         id: "medical-traceability",
-        tag: "COMPLIANCE",
-        title: "Medical Batch Traceability",
+        tag: "UYUM",
+        title: "Tıbbi Ürün Partilerinin İzlenebilirliği",
         description:
-          "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file.",
+          "Cerrahi örtü, önlük ve sterilizasyon sargısı üreticilerine malzeme tedarik eden tedarik zincirleri için, sipariş numaranıza göre tam parti izlenebilirliği sağlıyoruz: M2 çelik fabrikası sertifikaları, sertlik testi kayıtları ve boyutsal CMM raporları. Belgeler, tedarikçi yeterlilik dosyanıza eklenebilecek şekilde düzenlenmiştir.",
       },
     ],
     dimensionLabels: {
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Thickness",
+      col1: "Dış Çap (OD)",
+      col2: "İç Çap (ID)",
+      col3: "Kalınlık",
       caption:
-        "* Standard dimensions for common nonwoven slitting machine models. Custom OD, ID, and edge geometry available. ESD coating (+10–15% on unit price) available for all sizes.",
+        "* Yaygın olarak kullanılan dokumasız kumaş kesme makinesi modelleri için standart boyutlar. Özel dış çap, iç çap ve kenar geometrisi seçenekleri mevcuttur. Tüm boyutlar için ESD kaplama (birim fiyat üzerine %10–15 ek ücret) seçeneği mevcuttur.",
     },
     standardDimensions: [
       {
@@ -3918,38 +3938,38 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What rake angle should I specify for spunbond polypropylene at 200 m/min?",
+            "200 m/dk hızında spunbond polipropilen için hangi eğim açısını belirtmeliyim?",
           answer:
-            "For spunbond PP at 200 m/min in basis weights 15–80 GSM, specify 15° positive rake on the cutting bevel. This geometry shears polypropylene fibres cleanly at the contact point without the lateral displacement that causes fraying. For heavier basis weights (80–150 GSM SSS or SMMS), a 20° positive rake with a slightly wider bevel width provides better stability at reduced line speed (150 m/min).",
+            "15–80 GSM gramaj aralığındaki, 200 m/dk hızında üretilen spunbond PP için, kesme eğiminde 15° pozitif eğim belirtin. Bu geometri, polipropilen liflerini temas noktasında, yıpranmaya neden olan yanal kayma olmaksızın temiz bir şekilde keser. Daha yüksek gramajlar (80–150 GSM SSS veya SMMS) için, biraz daha geniş bir eğim genişliğine sahip 20° pozitif eğim açısı, daha düşük hat hızında (150 m/dk) daha iyi stabilite sağlar.",
         },
         {
           question:
-            "My meltblown slitting produces visible fibre transfer on the blade face. What is the cause?",
+            "Meltblown kesim işlemim sırasında bıçak yüzeyinde gözle görülür lif aktarımı meydana geliyor. Bunun nedeni nedir?",
           answer:
-            "Fibre transfer on meltblown fabric (particularly <10 GSM layers) is caused by electrostatic charge accumulation on the blade face, not edge geometry. PP meltblown fibres at 1–5μm diameter are extremely susceptible to static attraction. Specify the ESD conductive coating option on your next order and ensure the slitter machine frame is properly earthed. This typically eliminates visible blade-face contamination within one production shift.",
+            "Eritmeyle üflenmiş kumaşta (özellikle <10 GSM katmanlarda) lif aktarımı, bıçak kenarının geometrisinden değil, bıçak yüzeyinde biriken elektrostatik yükten kaynaklanır. Çapı 1–5 μm olan PP eritmeyle üflenmiş lifler, statik çekime karşı son derece duyarlıdır. Bir sonraki siparişinizde ESD iletken kaplama seçeneğini belirtin ve kesme makinesinin şasisinin uygun şekilde topraklanmış olduğundan emin olun. Bu önlem, genellikle bir üretim vardiyası içinde bıçak yüzeyindeki gözle görülür kirlenmeyi ortadan kaldırır.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply nonwoven slitter knives with a certificate of conformance for our medical device supplier audit?",
+            "Sureay, tıbbi cihaz tedarikçisi denetimimiz için uygunluk belgesi bulunan dokumasız kumaş kesme bıçakları tedarik edebilir mi?",
           answer:
-            "Yes. We issue a Certificate of Conformance (CoC) with each batch referencing the purchase order number, steel grade (M2 AISI M2 / DIN 1.3343), hardness range (HRC 62–64), and dimensional verification results. For full medical device supplier qualification, we can also provide the steel mill certificate and heat treatment batch record on request.",
+            "Evet. Her parti için, satın alma sipariş numarası, çelik kalitesi (AISI M2 / DIN 1.3343), sertlik aralığı (HRC 62–64) ve boyutsal doğrulama sonuçlarını içeren bir Uygunluk Sertifikası (CoC) düzenliyoruz. Tıbbi cihaz tedarikçisi yeterliliğinin tam olarak sağlanması için, talep üzerine çelik fabrikası sertifikası ve ısıl işlem parti kayıt belgesini de temin edebiliriz.",
         },
       ],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Bottom Grooved Anvil Knives",
+    name: "Alt Kısmında Yivli Örs Bıçakları",
     fullName:
-      "Bottom Grooved Anvil Knives for Shear Slitting — Film, Paper & Metal Foil Converting",
+      "Kesme ve Dilimleme için Alt Kısımda Yivli Örs Bıçakları — Film, Kağıt ve Metal Folyo İşleme",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image:
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "OEM Matched Pairs",
+    badge: "OEM Uyumlu Çiftler",
     badgeColor: "blue",
     gallery: [
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
@@ -3957,13 +3977,13 @@ export const blades: Blade[] = [
       "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
     ],
     description:
-      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Single and twin-groove anvil profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
+      "Film, kağıt, folyo ve bantların kesme ve yiv açma işlemleri için hassas taşlanmış, tabanı yivli örs bıçakları. Tidland, Kampf, Atlas, Goebel ve BHS üst bıçak mil sistemleriyle uyumludur. D2, M2 HSS ve katı karbür malzemeden tek ve çift oluklu örs profilleri. Doğrulanmış kesme çifti olarak veya tek başına alt örs yedek parçası olarak tedarik edilir.",
     fullDescription:
-      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with a slotted groove profile that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
+      "Kesme dilimlemede, alt yivli örs bıçağı, makas çiftinin sabit alt yarısıdır — ancak bu bıçak genellikle gerekli özelliklere sahip değildir. Örs oluğunun geometrisi üst bıçağın çanak açısıyla uyuşmadığında veya örs deliğinin toleransı mil tasarımından saptığında, sonuç olarak kontrolsüz kesme boşluğu, kenar çapakları ve her iki bıçakta aynı anda erken aşınma meydana gelir.\n\nSureay alt oluklu örs bıçakları, üst kesici bıçaklarımızla aynı ±0,002 mm kalınlık toleransı ve ≤0,02 mm T.I.R. dairesel sapma spesifikasyonuna göre üretilir. Her örs, OEM platformunuzun oluk profiline göre taşlanır — ister Tidland tek oluklu, ister Kampf çift oluklu, ister Goebel / BHS geniş gövdeli örs olsun — ve sevkiyat öncesinde eşleşen üst bıçakla karşılaştırılarak doğrulanır.\n\n## Alt Örs Bıçaklarına Neden Özel Dikkat Gerekiyor?\n\n**Yiv Profili Boşluğu Belirler:** Örs bıçağındaki yiv genişliği ve derinliği, üst ve alt bıçak çifti arasındaki çalışma kesme boşluğunu doğrudan kontrol eder. Aşınmış veya yanlış profilli bir yiv, etkin boşluğu artırır ve üst bıçak yeni olsa bile pürüzlü bir kesim kenarı oluşturur. Fabrika tarafından tasarlanan boşluğu yeniden sağlamak için her örs oluğunu OEM spesifikasyonunuza göre (oluk genişliği ±0,01 mm) profilleştirerek taşlarız.\n\n**Farklı Aşınma Hızı, Farklı Değiştirme Süresi:** Alt örs bıçakları, üst bıçağındaki kesme ağırlıklı yükleme yerine sıkıştırma yükü altında çalışır. Bu, örsün genellikle üst bıçağa göre 3–5 kat daha uzun ömürlü olduğu anlamına gelir — ancak aşındığında, oluk yüzeyi kademeli olarak yuvarlanır ve reddedilme oranları artana kadar fark edilmesi zor olan kesim kalitesinde giderek artan bir bozulmaya neden olur. Yedek örsleri üst bıçaklardan bağımsız olarak sipariş etmek, gereksiz üst bıçak atımını önler.\n\n**Delik Çapı ve Yüzey Düzlüğü Kritik Önem Taşır:** Örs bıçağı alt mil üzerine oturur ve ekseninde düzgün dönmelidir. 0,02 mm'lik bir delik çapı sapması, bıçağın sallanmasına neden olur ve bu da çok bıçaklı mil yığını boyunca kesim genişliğinde doğrudan bir değişime yol açar. Tüm Sureay örs delikleri, H6 toleransına göre son işlemle taşlanmış ve yüzeyleri ≤0,003 mm paralellikte alıştırılmıştır.\n\n## Uygulama Alanları\n\n**Esnek Film ve Ambalaj Kesme:** BOPP, BOPET, CPP, PE streç film, büzüşen kılıf. Tek veya çift oluklu profilli standart D2 veya M2 HSS örs. Oluk yüzeyinde isteğe bağlı TiN PVD kaplama, 400–600 m/dk hızında çalışan yüksek hızlı film hatlarında temas aşınmasına karşı ömrü uzatır.\n\n**Kağıt ve Karton İşleme:** Kağıt mendil, kraft, kuşe kağıt. Ezme kesimi (bıçak ile anvil silindiri arasında) için anvil, kağıt liflerini yırtmadan sıkıştıran ve kıran oluklu bir profille üretilir. D2 veya 52100 çeliği, HRC 58–62.\n\n**Metal Folyo Dilimleme:** Alüminyum katot folyosu, bakır anot folyosu, silikonlu çelik şerit. Metal folyo için kullanılan anvil bıçağı, metal alt tabakadan kaynaklanan yapışkan aşınmaya karşı dayanıklı olmalıdır. Üst bıçak alaşımına uygun ASP23 PM çeliği veya katı karbür sınıfı; oluk şekli toleransı ±0,005 mm olarak tutulur.\n\n**Basınca Duyarlı Bantlar ve Etiketler:** Maskeleme bandı, çift kaplamalı köpük, transfer yapıştırıcısı. Oluk yüzeyindeki yapıştırıcı kirlenmesi başlıca arıza nedenidir. Teflon veya DLC kaplamalı oluk yüzeyleri, yapıştırıcı birikme aralıklarını %60–80 oranında azaltır.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
     disambiguation:
-      "These are disc anvils carrying one to three OEM-matched grooves. If you need a wide ring carrying many slit positions on one body, see [Groove Bottom Knives](/products/groove-bottom-knives).",
+      "Bunlar, bir ila üç adet OEM uyumlu oluk barındıran disk örslerdir. Tek bir gövdede çok sayıda oluk konumu bulunan geniş bir halka arıyorsanız, [Oluk Taban Bıçakları](/products/groove-bottom-knives) sayfasına bakın.",
     compatibleMachines: [
       "Tidland",
       "Kampf",
@@ -4003,33 +4023,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "groove-geometry-control",
-        tag: "PRECISION GRINDING",
-        title: "OEM-Profile Groove Geometry",
+        tag: "HASSAS TAŞLAMA",
+        title: "OEM Profili Oluk Geometrisi",
         description:
-          "The groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm. Correct groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile.",
+          "Her bir örs bıçağının oluk genişliği ve derinliği, OEM platform spesifikasyonunuza göre — Tidland tek oluklu, Kampf çift oluklu veya Goebel geniş gövdeli — profilli taşlama işlemiyle işlenir ve ±0,01 mm tolerans aralığında tutulur. Doğru oluk geometrisi, fabrikada tasarlanan kesme boşluğunu geri kazandırır ve aşınmış bir örs profilinin neden olduğu kesme kenarındaki kademeli bozulmayı ortadan kaldırır.",
       },
       {
         id: "bore-face-flatness",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "H6 Bore & Lapped Face Flatness",
+        tag: "BOYUT DOĞRULUĞU",
+        title: "H6 Çapı ve Alın Yüzeyinin Düzlüğü",
         description:
-          "All anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism. A bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch.",
+          "Tüm örs delikleri H6 toleransına göre son taşlama işleminden geçirilir ve yüzeyleri ≤0,003 mm paralellikte alıştırılır. Alt mil üzerindeki 0,02 mm’lik bir delik sapması, bıçak titremesine yol açar ve bu da çoklu bıçak dizisi boyunca kesik genişliğinde doğrudan bir değişime neden olur. Delik ve yüzey toleranslarımız her parti için bir CMM üzerinde doğrulanmaktadır.",
       },
       {
         id: "anti-adhesion-groove-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Anti-Adhesion Groove Coatings",
+        tag: "YÜZEY İŞLEMİ",
+        title: "Yapışmayı Önleyici Oluklu Kaplamalar",
         description:
-          "For pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%. Coated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops.",
+          "Basınca duyarlı bant ve yapışkan laminatların dilimlenmesi işlemlerinde, oluk temas yüzeyindeki Teflon ve DLC PVD kaplamaları, yapışkan birikme aralıklarını %60–80 oranında azaltır. Kaplamalı örsler, kesme boşluğunu bozan ve plan dışı duruşlara neden olan oluk kirliliği olmadan 8–12 saatlik üretim vardiyaları boyunca sorunsuz çalışır.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform / Type",
-      col1: "OD × ID (mm)",
-      col2: "Thickness (mm)",
-      col3: "Groove (W × D / Angle)",
+      col0: "OEM Platformu / Türü",
+      col1: "Dış Çap × İç Çap (mm)",
+      col2: "Kalınlık (mm)",
+      col3: "Yiv (Genişlik × Derinlik / Açı)",
       caption:
-        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Anvils carrying more than three slots are supplied as bottom cutter rings — see groove bottom knives.",
+        "* Standart, OEM ile uyumlu örs boyutları. Kesin oluk geometrisi, üst kesicilere sallanma olmaksızın tam uyum sağlar. Üçten fazla yuva barındıran örsler, alt kesici halkalar olarak tedarik edilir — bkz. oluk alt bıçakları.",
     },
     standardDimensions: [
       {
@@ -4076,57 +4096,59 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "How often should I replace the bottom grooved anvil knife versus the top blade?",
+            "Alttaki oluklu örs bıçağını ve üstteki bıçağı ne sıklıkla değiştirmeliyim?",
           answer:
-            "Bottom anvil knives operate under compressive groove-face loading and typically last 3–5× longer than the top shear blade. However, because wear is gradual — the groove face rounds off slowly — the deterioration in slit quality is easy to miss until scrap rates climb. We recommend inspecting groove face geometry (groove width and depth) every 3 top-blade replacement cycles and replacing the anvil when groove width deviation exceeds ±0.03 mm from the OEM specification.",
+            "Alt örs bıçakları, oluk yüzeyine uygulanan basınç yükü altında çalışır ve genellikle üst kesme bıçağından 3–5 kat daha uzun ömürlüdür. Ancak, aşınma kademeli olduğu için — oluk yüzeyi yavaşça yuvarlanır — hurda oranları artana kadar kesim kalitesindeki bozulma kolayca gözden kaçabilir. Her 3 üst bıçak değiştirme döngüsünde bir oluk yüzeyi geometrisini (oluk genişliği ve derinliği) kontrol etmenizi ve oluk genişliği sapması OEM spesifikasyonundan ±0,03 mm'yi aştığında örs bıçağını değiştirmenizi öneririz.",
         },
         {
           question:
-            "What shear clearance should I set between the top blade and bottom anvil groove?",
+            "Üst bıçak ile alt örs oluğu arasında ne kadar kesme boşluğu ayarlamalıyım?",
           answer:
-            "Shear clearance is substrate-dependent. For flexible plastic films (BOPP, BOPET, CPP) at 0.02–0.05 mm per side is standard. For kraft paper and board, 0.05–0.10 mm. For aluminium and copper foils, 0.01–0.03 mm per side. We pre-verify matched top/bottom pairs to your specified clearance and record the setting on an engineering data sheet that ships with each order, allowing operators to replicate the clearance on every reinstallation.",
+            "Kesme açıklığı, alt tabakaya bağlıdır. Esnek plastik filmler (BOPP, BOPET, CPP) için her bir tarafta 0,02–0,05 mm standarttır. Kraft kağıt ve karton için ise 0,05–0,10 mm’dir. Alüminyum ve bakır folyolar için ise her bir tarafta 0,01–0,03 mm'dir. Belirttiğiniz boşluğa uygun üst/alt çiftlerini önceden doğrular ve bu ayarı her siparişle birlikte gönderilen mühendislik veri sayfasında kaydederiz; böylece operatörler her yeniden kurulumda aynı boşluğu ayarlayabilirler.",
         },
         {
           question:
-            "Can I order replacement anvil knives without buying a full matched pair?",
+            "Tam bir eşleştirilmiş çift satın almadan yedek örs bıçakları sipariş edebilir miyim?",
           answer:
-            "Yes. We supply bottom anvil knives as standalone replacements machined to the groove profile and OD/ID of your existing top-knife arbor system. Provide your OEM platform (Tidland, Kampf, Atlas, etc.) and the top knife OD/ID, and we will match the anvil to the mating geometry. If you supply a worn anvil as a sample, we can reverse-engineer the original groove profile before regrinding.",
+            "Evet. Mevcut üst bıçak mil sisteminizin oluk profiline ve dış/iç çaplarına göre işlenmiş, tek başına yedek olarak kullanılabilen alt örs bıçakları tedarik ediyoruz. OEM platformunuzu (Tidland, Kampf, Atlas vb.) ve üst bıçağın dış/iç çaplarını belirtin; biz de örs bıçağını eşleşen geometriye göre uyarlayalım. Aşınmış bir örnekteki örsü bize gönderirseniz, yeniden taşlama işleminden önce orijinal oluk profilini tersine mühendislik yoluyla belirleyebiliriz.",
         },
         {
           question:
-            "Why does my slit edge quality degrade even after I replace the top blade with a new one?",
+            "Üst bıçağı yenisiyle değiştirdikten sonra bile kesim kenar kalitem neden düşüyor?",
           answer:
-            "If new top blades do not restore slit quality, the anvil groove is almost certainly worn beyond its specification. A rounded or widened groove face increases effective shear clearance regardless of top-blade condition, producing a ragged, feathered slit edge. Inspect the groove width and depth with a groove gauge or profilometer. If groove deviation exceeds ±0.03 mm from OEM spec, anvil replacement or regrinding is required.",
+            "Yeni üst bıçaklar kesik kalitesini geri kazandırmazsa, örs oluğu neredeyse kesin olarak teknik özelliklerinin ötesinde aşınmış demektir. Yuvarlaklaşmış veya genişlemiş bir oluk yüzeyi, üst bıçağın durumuna bakılmaksızın etkin kesme boşluğunu artırır ve pürüzlü, tüylenmiş bir kesim kenarı oluşturur. Oluk genişliğini ve derinliğini bir oluk ölçer veya profilometre ile kontrol edin. Oluk sapması OEM spesifikasyonundan ±0,03 mm'yi aşarsa, örsün değiştirilmesi veya yeniden taşlanması gerekir.",
         },
       ],
       company: [
         {
           question:
-            "Do you supply bottom anvil knives as part of a matched pair, or only individually?",
+            "Alt örs bıçaklarını eşleştirilmiş çift olarak mı, yoksa sadece tek tek mi tedarik ediyorsunuz?",
           answer:
-            "Both options are available. For new installations or full arbor rebuilds, we recommend matched pairs — top blade and bottom anvil verified to a specified shear clearance, with a joint engineering data sheet. For replacement orders on existing lines, standalone anvil knives machined to your OEM groove profile are available with standard 5–7 day lead time.",
+            "Her iki seçenek de mevcuttur. Yeni kurulumlar veya mil sistemlerinin tamamen yenilenmesi için, belirli bir kesme boşluğuna göre doğrulanmış ve ortak bir teknik veri sayfası içeren eşleştirilmiş çiftleri (üst bıçak ve alt örs) öneririz. Mevcut hatlara yönelik yedek parça siparişleri için, OEM oluk profilinize göre işlenmiş tekli örs bıçakları, standart 5–7 günlük teslim süresi ile temin edilebilir.",
         },
         {
           question:
-            "What OEM platforms does Sureay supply matched anvil knives for?",
+            "Sureay, hangi OEM platformları için uyumlu örs bıçakları tedarik etmektedir?",
           answer:
-            "We currently stock and supply groove-profiled anvil knives for Tidland (single-groove and double-groove arbors), Kampf (narrow and wide arbor series), Atlas Converting Equipment, Goebel, BHS, Agnati, and Dusenbery. For other OEM platforms, provide the arbor drawing or worn sample and we will engineer a matched replacement.",
+            "Şu anda Tidland (tek oluklu ve çift oluklu mil), Kampf (dar ve geniş mil serileri), Atlas Converting Equipment, Goebel, BHS, Agnati ve Dusenbery markaları için oluklu profilli örs bıçaklarını stoklarımızda bulunduruyor ve tedarik ediyoruz. Diğer OEM platformları için, mil çizimini veya aşınmış numuneyi bize iletin; biz de buna uygun bir yedek parça tasarlayalım.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question:
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM-profile anvil knives ship within 48–72 hours. Custom groove profiles take 7–12 working days. We partner with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Standart OEM profilli örs bıçakları 48–72 saat içinde sevk edilir. Özel oluklu profillerin sevkiyatı ise 7–12 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle iş birliği yapıyoruz.",
         },
       ],
     },
   },
   {
     id: "tungsten-carbide-slitter-knives",
-    name: "Tungsten Carbide Slitter Knives",
-    fullName: "Tungsten Carbide Slitter Knives for High-Wear Slitting",
+    name: "Tungsten Karbür Dilme Bıçakları",
+    fullName:
+      "Yüksek Aşınmalı Dilimleme İşlemleri için Tungsten Karbür Dilimleme Bıçakları",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image:
       "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
     gallery: [
@@ -4134,13 +4156,13 @@ export const blades: Blade[] = [
       "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
     ],
     galleryAlts: [
-      "Tungsten carbide slitter knives, three ground circular blades with polished faces",
-      "Carbide slitter knife detail showing centre bore, mounting holes and ground cutting edge",
+      "Tungsten karbür kesme bıçakları, cilalı yüzeyli üç adet taşlanmış dairesel bıçak",
+      "Merkez deliği, montaj delikleri ve taşlanmış kesme kenarını gösteren karbür dilimleme bıçağı detayı",
     ],
     description:
-      "Solid carbide costs six to ten times what D2 does. It earns that premium back in exactly two situations: when your web carries abrasive filler, or when your run lengths are long enough that changeover downtime — not blade price — is what actually costs you money. Micro-grain YG6, YG6X, YG8 and YG10X (ISO K10–K30) at 89.5–92.5 HRA, ground to ±0.002 mm, with a hardness and dimensional report in every shipment.",
+      "Katı karbür, D2’nin altı ila on katı kadar pahalıdır. Bu fiyat farkını tam olarak iki durumda telafi eder: kesme şeridiniz aşındırıcı dolgu maddesi içeriyorsa ya da üretim serileriniz o kadar uzunsa ki, size asıl maliyeti oluşturan bıçak fiyatı değil, makine değiştirme nedeniyle oluşan duruş süresidir. 89,5–92,5 HRA sertlikte, ±0,002 mm hassasiyetinde taşlanmış, her sevkiyatta sertlik ve boyutsal raporla birlikte sunulan mikro taneli YG6, YG6X, YG8 ve YG10X (ISO K10–K30).",
     fullDescription:
-      "Tungsten carbide slitter knives are a wear-resistance decision, not a general upgrade. If you are slitting clear BOPP on short runs, D2 or ASP23 PM will serve you better and cost you less, and we will tell you that before you order. This page is for the jobs where tool steel genuinely cannot hold an edge: mineral-filled films, glass-reinforced laminates, abrasive nonwovens, coated foils and high-speed board.\n\n## When the Upgrade Pays\n\nCarbide is worth it when the cost of stopping the line exceeds the cost of the blade. Take your blade changes per month, multiply by the downtime cost per changeover, and compare that against the price difference. On a line where a changeover costs an hour of production, a 10× edge life usually pays back within one or two blade cycles. On a line where changeovers are quick and cheap, it will not.\n\n## Where Carbide Earns Its Cost\n\n**Mineral- and filler-loaded films:** TiO₂-loaded BOPP, calcium-carbonate filled PE, matte and cavitated grades. The filler is what destroys steel edges; hardness is the only defence.\n\n**Glass-reinforced and composite laminates:** FR-4 and prepreg trim, glass-fibre reinforced tapes, aluminium-composite webs. Glass content is deeply abrasive and dulls HSS within a shift.\n\n**Abrasive nonwovens:** mineral-loaded meltblown, spunbond with filler, abrasive-backing and wipe substrates where fibre fuzzing appears the moment the edge softens.\n\n**Metal foil, coated strip and battery electrode:** aluminium and copper foil, coated and laminated strip, where burr-free edges must hold across a full coil run.\n\n**High-speed coated board and paper:** clay- and pigment-coated stock on lines where a knife change costs an hour of production and the blade price is a rounding error against that.\n\n## Where Carbide Is the Wrong Choice\n\n**Shock and interrupted cuts.** Carbide is brittle. If the web snags, if splice tape runs through, or if the knife can contact the anvil metal-to-metal, carbide chips where D2 would deform and survive.\n\n**Clean, unfilled substrates on short runs.** Slitting clear BOPP, plain kraft or unfilled PE? D2 or ASP23 PM will hold an edge long enough, at a fraction of the cost.\n\n**No diamond grinding access.** If neither you nor your service partner can regrind on diamond wheels, a dulled carbide blade becomes scrap rather than a re-sharpenable asset — and the economics invert.\n\n**Loose or unverified clearance.** Carbide amplifies whatever your setup already does. It will not compensate for a worn arbor, an out-of-true knife holder, or clearance nobody has measured.",
+      "Tungsten karbür kesme bıçakları, genel bir yükseltme değil, aşınmaya karşı direnç sağlayan bir çözümdür. Şeffaf BOPP’yi kısa tirajlarda kesiyorsanız, D2 veya ASP23 PM size daha iyi hizmet eder ve maliyeti daha düşük olur; sipariş vermeden önce size bunu bildireceğiz. Bu sayfa, takım çeliğinin gerçekten keskinliğini koruyamadığı işler içindir: mineral dolgulu filmler, cam takviyeli laminatlar, aşındırıcı dokunmamış kumaşlar, kaplamalı folyolar ve yüksek hızlı kartonlar.\n\n## Yükseltmenin Karlı Olduğu Durumlar\n\nHattı durdurmanın maliyeti bıçağın maliyetini aştığında karbür kullanmaya değer. Aylık bıçak değiştirme sayınızı alın, her değiştirme başına kesinti maliyetiyle çarpın ve bunu fiyat farkıyla karşılaştırın. Değiştirme işleminin bir saatlik üretim kaybına mal olduğu bir hatta, 10 kat daha uzun kesici kenar ömrü genellikle bir veya iki bıçak döngüsü içinde kendini amorti eder. Değiştirme işlemlerinin hızlı ve ucuz olduğu bir hatta ise bu durum geçerli değildir.\n\n## Karbürün Maliyetini Karşıladığı Uygulamalar\n\n**Mineral ve dolgu maddesi içeren filmler:** TiO₂ içeren BOPP, kalsiyum karbonat dolgulu PE, mat ve kavitasyonlu türler. Dolgu maddesi çelik kenarları yıpratır; sertlik ise tek savunmadır.\n\n**Cam takviyeli ve kompozit laminatlar:** FR-4 ve prepreg kesim parçaları, cam elyaf takviyeli bantlar, alüminyum kompozit şeritler. Cam içeriği son derece aşındırıcıdır ve HSS bıçaklarını bir vardiya içinde köreltir.\n\n**Aşındırıcı dokunmamış kumaşlar:** mineral katkılı eritilerek üflemeli kumaşlar, dolgu maddeli spunbond, aşındırıcı arka yüzeyli ve silme alt tabakaları; kenar yumuşadığında lif tüylenmesi görülür.\n\n**Metal folyo, kaplamalı şerit ve pil elektrotu:** Alüminyum ve bakır folyo, kaplamalı ve lamine şerit; bu uygulamalarda çapak içermeyen kenarların bir bobin boyunca korunması gerekir.\n\n**Yüksek hızlı kaplamalı karton ve kağıt:** Bıçak değişiminin bir saatlik üretim kaybına mal olduğu ve bıçak fiyatının buna kıyasla yuvarlama hatası düzeyinde olduğu hatlarda, kil ve pigment kaplı ham malzemeler.\n\n## Karbürün Yanlış Seçim Olduğu Durumlar\n\n**Şoklu ve kesintili kesimler.** Karbür kırılgandır. Eğer şerit takılırsa, ek bandı içinden geçerse veya bıçak örs ile metal-metal teması yaparsa, D2'nin deforme olup dayanacağı durumlarda karbür parçalanır.\n\n**Kısa tirajlarda temiz, dolgusuz alt tabakalar.** Şeffaf BOPP, düz kraft veya dolgusuz PE'yi kesiyor musunuz? D2 veya ASP23 PM, çok daha düşük bir maliyetle bıçak kenarını yeterince uzun süre keskin tutar.\n\n**Elmas taşlama imkânı yok.** Ne siz ne de servis ortağınız elmas taşlarla yeniden taşlama yapamıyorsanız, keskinliğini yitirmiş bir karbür bıçak, yeniden bilenebilecek bir varlık olmaktan çıkıp hurda haline gelir — ve ekonomik durum tersine döner.\n\n**Gevşek veya doğrulanmamış boşluk.** Karbür, kurulumunuzun halihazırda sağladığı performansı artırır. Aşınmış bir mil, eğri bıçak tutucusu veya kimsenin ölçmediği bir boşluğu telafi etmez.",
     link: "/products/tungsten-carbide-slitter-knives",
     compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
     specs: [
@@ -4194,83 +4216,88 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Cobalt content is the trade-off dial: more cobalt means tougher and less brittle, but the edge dulls sooner. The four carbide grades below are shown against the tool steels they replace, so the upgrade decision is visible in one table. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+        "Kobalt içeriği, bir denge unsuru oluşturur: Daha fazla kobalt, daha yüksek sertlik ve daha az kırılganlık anlamına gelir; ancak kesici kenar daha çabuk körelir. Aşağıdaki dört karbür sınıfı, yerini aldıkları takım çelikleriyle karşılaştırmalı olarak gösterilmiştir; böylece yükseltme kararı tek bir tabloda görülebilir. Mevcut çelik bıçaklarınız körelmişse, daha sert bir malzeme tercih edin. Bıçaklarınızda kırılma varsa, daha dayanıklı bir malzeme tercih edin. Her iki sorun da varsa, sorun genellikle malzemeden ziyade boşluktan kaynaklanır.",
       rows: [
         {
           grade: "D2",
           hardness: "HRC 58–62",
-          bestFor: "General-purpose slitting of clean, unfilled substrates",
+          bestFor:
+            "Temiz, dolgu maddesi içermeyen alt tabakaların genel amaçlı dilimlenmesi",
           tradeoff:
-            "Baseline edge life and baseline cost. Regrinds on conventional wheels.",
+            "Temel kesici kenar ömrü ve temel maliyet. Geleneksel taşlarda yeniden taşlama.",
         },
         {
           grade: "M2 HSS",
           hardness: "HRC 62–65",
-          bestFor: "Moderate wear at higher line speeds",
-          tradeoff: "2–3× the edge life of D2 at roughly 1.5× the cost.",
+          bestFor: "Daha yüksek hat hızlarında orta derecede aşınma",
+          tradeoff:
+            "D2’nin kenar ömrünün 2–3 katı, maliyeti ise yaklaşık 1,5 katıdır.",
         },
         {
           grade: "ASP23 PM",
           hardness: "HRC 66–68",
-          bestFor: "High-speed, high-wear work short of true abrasives",
+          bestFor:
+            "Gerçek aşındırıcı maddeler içermeyen, yüksek hızda ve yüksek aşınma gerektiren işler",
           tradeoff:
-            "4–6× the edge life of D2 at roughly 3× the cost — frequently the better commercial choice.",
+            "D2’nin kenar ömrünün 4–6 katı, maliyeti ise yaklaşık 3 katı — genellikle ticari açıdan daha iyi bir seçimdir.",
         },
         {
           grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor: "Steady, low-shock slitting of abrasive film and paper",
+          hardness: "89,5–91,5 HRA",
+          bestFor:
+            "Aşındırıcı film ve kağıdın sarsıntısız, düşük darbeyle kesilmesi",
           tradeoff:
-            "6% cobalt. The hardest of the four carbide grades and the least forgiving of shock.",
+            "%6 kobalt. Dört karbür kalitesinden en sert olanı ve darbelere karşı en az dayanıklı olanıdır.",
         },
         {
           grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor: "Thin gauge, tight tolerance, best achievable edge quality",
+          hardness: "91–92,5 HRA",
+          bestFor:
+            "İnce kalınlık, sıkı tolerans, elde edilebilecek en iyi kenar kalitesi",
           tradeoff:
-            "6% cobalt, ultra-fine grain. Sharpest edge, most sensitive to interrupted cuts.",
+            "%6 kobalt, ultra ince taneli. En keskin kenar, kesintili kesimlere karşı en hassas olanıdır.",
         },
         {
           grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor: "Nonwovens, foil, anywhere the web may snag",
+          hardness: "88,5–90,5 HRA",
+          bestFor: "Dokumasız kumaşlar, folyo, ağın takılabileceği her yer",
           tradeoff:
-            "8% cobalt. Tougher and shock tolerant, at the cost of some edge life.",
+            "%8 kobalt. Kenar ömründen bir miktar ödün verilmesi karşılığında daha sağlam ve darbeye dayanıklıdır.",
         },
         {
           grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Interrupted cuts, laminates and heavier stock",
+          hardness: "90,5–91,5 HRA",
+          bestFor: "Kesintili kesimler, laminatlar ve daha kalın kağıtlar",
           tradeoff:
-            "10% cobalt, ultra-fine grain. Best toughness-to-wear balance of the range.",
+            "%10 kobalt, ultra ince taneli. Bu ürün yelpazesindeki en iyi tokluk-aşınma dengesi.",
         },
       ],
       outro:
-        "Across the range, carbide delivers roughly 10–30× the edge life of D2 at 6–10× the cost, takes fewer regrind cycles, and can only be reground on diamond wheels. How to run the arithmetic: carbide is worth it when the cost of stopping the line exceeds the cost of the blade. Tell us the material and the failure you are seeing now, and we will pick the grade.",
+        "Ürün yelpazesi genelinde, karbür, D2’ye kıyasla yaklaşık 10–30 kat daha uzun kesici kenar ömrü sunarken maliyeti 6–10 kat daha yüksektir; daha az yeniden bileme döngüsü gerektirir ve yalnızca elmas taşlarla yeniden bilinebilir. Hesaplama şu şekildedir: Üretim hattını durdurmanın maliyeti bıçağın maliyetini aştığında karbür kullanılması kârlıdır. Kullandığınız malzemeyi ve şu anda karşılaştığınız arıza türünü bize bildirin, biz de uygun kaliteyi seçelim.",
     },
     componentsIntro:
-      "Send a worn blade and your machine model — we will reverse-engineer the clearance and quote within 2 hours.",
+      "Aşınmış bir bıçağı ve makinenizin modelini bize gönderin — boşluğu tersine mühendislik yoluyla belirleyip 2 saat içinde fiyat teklifi sunacağız.",
     components: [
       {
         id: "carbide-when-it-pays",
-        tag: "APPLICATION FIT",
-        title: "Where Carbide Earns Its Cost",
+        tag: "UYGULAMA UYUMU",
+        title: "Karbürün Maliyetini Karşıladığı Alanlar",
         description:
-          "Abrasive fill is what destroys steel edges, and hardness is the only defence. TiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one.",
+          "Çelik kenarları aşındıran şey aşındırıcı dolgu maddesidir ve sertlik tek savunma yoludur. TiO₂ katkılı BOPP, kalsiyum karbonat dolgulu PE, FR-4 ve prepreg kesim, cam elyaf takviyeli bant, mineral katkılı meltblown, kaplamalı alüminyum ve bakır folyo ile kil kaplı levha; hepsi, üretim uzunluğunun izin verdiğinden daha hızlı bir şekilde takım çeliği kenarını aşındırır. Hangi alt tabaka kullanılırsa kullanılsın aynı kalite mantığı geçerlidir — bu, uygulamayla ilgili değil, malzemeyle ilgili bir karardır.",
       },
       {
         id: "carbide-when-not-to",
-        tag: "HONEST LIMITS",
-        title: "Where Carbide Is the Wrong Choice",
+        tag: "DÜRÜSTLÜĞÜN SINIRLARI",
+        title: "Karbürün Uygun Olmadığı Durumlar",
         description:
-          "Carbide is a wear-resistance solution, not a general upgrade. It chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel.",
+          "Karbür, genel bir iyileştirme değil, aşınma direnci için bir çözümdür. D2’nin deforme olacağı yerlerde — birleşme noktalarında, takılmalarda ve kesintili kesimlerde ya da bıçağın örs ile metal-metale temas edebileceği yerlerde — ufalanır. Temiz, dolgusuz alt tabakalar ve kısa üretim serilerinde, D2 veya ASP23 PM, çok daha düşük bir maliyetle bıçak kenarını yeterince uzun süre keskin tutar. Ayrıca, elmas diskle yeniden bileme imkânı olmadan, keskinliğini yitirmiş bir karbür bıçak, bir varlık olmaktan ziyade hurda haline gelir. Eğer bu durumlardan herhangi biri üretim hattınızı tanımlıyorsa, talepte bulunurken bunu belirtin — size doğru çeliği önermeyi tercih ederiz.",
       },
       {
         id: "carbide-grade-selection",
-        tag: "METALLURGY",
-        title: "Micro-Grain Substrate, Chosen Per Job",
+        tag: "METALURJİ",
+        title: "İş Başına Seçilen Mikro Taneli Alt Tabaka",
         description:
-          "We select from four grades against your material and your current failure mode rather than shipping one grade for everything. Sub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box.",
+          "Her durum için tek bir kalite seviyesi göndermek yerine, malzemenize ve mevcut arıza türünüze göre dört farklı kalite seviyesinden seçim yapıyoruz. Mikron altı sınıflar daha keskin bir kenara sahiptir; yüksek kobalt içerikli sınıflar darbelere karşı dayanıklıdır. Karbür, yalnızca elmas taşlarla işlenebilir ve kenar geometrisi, paralellik ve salgı, takım çeliği taşlama işlemimizle aynı denetim standartlarına tabidir — her bıçak sevk edilmeden önce ölçülür ve kutunun içinde bir sertlik testi raporu ile boyut kaydı bulunur.",
       },
     ],
     relatedBladeIds: [
@@ -4285,77 +4312,80 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "When should I choose solid carbide over M2 HSS or D2?",
+          question:
+            "M2 HSS veya D2 yerine ne zaman karbür ucu tercih etmeliyim?",
           answer:
-            "Only when your web carries abrasive filler, or when your run lengths are long enough that regrind and changeover savings cover the 6–10× price difference. For standard clear film, plain paper or unfilled PE, D2 or ASP23 PM is usually the better commercial choice — and we will say so.",
+            "Ancak, webiniz aşındırıcı dolgu maddesi içeriyorsa ya da üretim hacimleriniz, yeniden öğütme ve makine değiştirme tasarruflarının 6–10 katlık fiyat farkını karşılayacak kadar büyükse. Standart şeffaf film, düz kağıt veya dolgusuz PE için D2 veya ASP23 PM genellikle ticari açıdan daha iyi bir seçimdir — ve biz de bunu açıkça belirtiriz.",
         },
         {
-          question: "How many times can a carbide slitter knife be reground?",
+          question: "Bir karbür kesme bıçağı kaç kez yeniden bilenenebilir?",
           answer:
-            "It depends on the thickness allowance designed into the blade, not on the material. Each regrind removes stock; the practical limit is where the blade thins past its clearance tolerance. Carbide typically takes fewer regrinds than D2 but delivers far more running time between each one, which is where the economics actually sit. Diamond wheels are required — conventional aluminium-oxide wheels will glaze and will not cut carbide.",
+            "Bu, malzemeye değil, bıçağın tasarımında öngörülen kalınlık toleransına bağlıdır. Her yeniden bileme işlemi malzemeyi aşındırır; pratik sınır, bıçağın açıklık toleransının ötesine inceldiği noktadır. Karbür, genellikle D2'ye göre daha az sayıda yeniden bileme gerektirir ancak her bileme arasında çok daha uzun çalışma süresi sağlar; asıl ekonomik avantaj da buradan kaynaklanır. Elmas taşların kullanılması gerekir — geleneksel alüminyum oksit taşlar yüzeyde camsı bir tabaka oluşturur ve karbürü kesemez.",
+        },
+        {
+          question: "Karbür bıçağım ilk kullanımda kırıldı — ne yanlış gitti?",
+          answer:
+            "Neredeyse her zaman üç durumdan biridir. Kullanım: Beton zemine düşen bir karbür bıçak, yük uygulanana kadar görünmeyen iç gerilim ve çatlaklar oluşturur. Boşluk: Çok sıkı ayarlandığında bıçak, örs ile metal-metal teması kurar ve kenar boyunca mikro yontmalar oluşur. Ya da kesim işlemi sırasında karbürün kırılganlığının ememeyeceği bir darbe meydana gelir — bir ek yeri, bir takılma, kesimin kesintiye uğraması gibi. Yontulmuş kenarın bir fotoğrafını bize gönderin; kırılma şekli genellikle bu üç durumdan hangisinin söz konusu olduğunu ortaya çıkarır.",
+        },
+        {
+          question: "YG6 mu yoksa YG8 mi — hangi sınıfı belirtmeliyim?",
+          answer:
+            "YG6 (ISO K10), sabit, temiz ve aşındırıcı işlerde daha serttir ve daha uzun ömürlüdür. YG8 (ISO K20) daha fazla kobalt içerir, bu nedenle daha tok olup darbelere daha iyi dayanır, ancak bunun karşılığında kesici kenar ömrü biraz azalır. Mevcut çelik bıçaklarınız körelmişse daha sert bir bıçak tercih edin. Bıçaklarınızda kırılma varsa daha tok bir bıçak tercih edin. Her iki sorun da varsa, sorun genellikle malzemeden ziyade boşluktan kaynaklanır.",
         },
         {
           question:
-            "My carbide blade chipped on the first run — what went wrong?",
+            "Karbür üst bıçak, çelik alt örs üzerinde çalıştırılabilir mi?",
           answer:
-            "Almost always one of three things. Handling: a carbide blade dropped on a concrete floor develops internal stress and cracks that stay invisible until load is applied. Clearance: set too tight, the knife makes metal-to-metal contact with the anvil and micro-chips along the edge. Or the application has shock in it — a splice, a snag, an interrupted cut — that carbide's brittleness cannot absorb. Send us a photo of the chipped edge; the fracture pattern usually identifies which of the three it was.",
+            "Evet, bu yaygın bir durumdur — ancak bu durumda örs aşınan parça haline gelir ve eskisinden daha erken bir zamanda bakım gerektirir. Örs daha yumuşaksa, açıklığı daha sık kontrol edin; çünkü örsün aşınması açıklığı genişletir ve ilk belirti, bıçak sorununa benzeyen pürüzlü bir kenardır. Örs aşınmasının sınırlayıcı faktör olduğu durumlarda, birbirine uygun karbür çiftleri mevcuttur.",
         },
         {
-          question: "YG6 or YG8 — which grade should I specify?",
+          question:
+            "Karbür bıçaklar nasıl saklanmalı ve nasıl kullanılmalıdır?",
           answer:
-            "YG6 (ISO K10) is harder and lasts longer on steady, clean, abrasive work. YG8 (ISO K20) carries more cobalt, so it is tougher and tolerates shock at the cost of some edge life. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
-        },
-        {
-          question: "Can a carbide top knife run against a steel bottom anvil?",
-          answer:
-            "Yes, and it is common — but the anvil then becomes the wear part and will need attention sooner than before. If the anvil is softer, verify clearance more often, since anvil wear opens the gap and the first symptom is a ragged edge that looks like a knife problem. Matched carbide pairs are available where anvil wear is the limiting factor.",
-        },
-        {
-          question: "How should carbide blades be stored and handled?",
-          answer:
-            "Individually separated, never stacked bare metal-to-metal, in a dry environment. Most carbide failures we investigate started in the stockroom or in transit, not on the machine. Blades ship in protective packaging that is worth keeping for the ones you are not running.",
+            "Kuru bir ortamda, tek tek ayrılmış halde, asla çıplak metal-metal temas halinde üst üste konulmamalıdır. İncelediğimiz karbür arızalarının çoğu, makinede değil, depoda veya nakliye sırasında başlamıştır. Bıçaklar, kullanmadığınız bıçaklar için saklamaya değer koruyucu ambalajlarda sevk edilir.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Üretici misiniz yoksa ticaret şirketi misiniz?",
           answer:
-            "We manufacture. Grinding, heat treatment control and inspection are done in our own ISO 9001:2015 certified facility, in operation since 2008 and shipping to 50+ countries. That is why we can quote against a worn sample and stand behind the dimensional record that ships with it.",
+            "Üretim yapıyoruz. Taşlama, ısıl işlem kontrolü ve denetim işlemleri, 2008 yılından beri faaliyette olan ve 50’den fazla ülkeye sevkiyat yapan, ISO 9001:2015 sertifikalı kendi tesisimizde gerçekleştirilmektedir. Bu nedenle, aşınmış bir numuneye dayalı olarak fiyat teklifi verebiliyor ve numuneyle birlikte gönderilen boyutsal kayıtların doğruluğunu garanti edebiliyoruz.",
         },
         {
-          question: "Can you make carbide blades without an OEM drawing?",
+          question: "OEM çizimi olmadan karbür bıçak üretebilir misiniz?",
           answer:
-            "Yes — send a worn blade and your machine model. We measure the sample, reverse-engineer the working clearance from the wear pattern, and produce a matched replacement; the wear pattern usually tells us more about how the knife is actually running than the original drawing does. Bore, keyway, mounting-hole pattern and thickness are matched to the arbors you already run, so there is no holder change and no retooling.",
-        },
-        {
-          question: "What documentation ships with a carbide order?",
-          answer:
-            "A hardness test report and a dimensional inspection record with every shipment, from an ISO 9001:2015 certified facility. If your incoming inspection needs full CMM data, ask when you order and it ships with the blades. Where several knives share a shaft, they are ground and shipped as a verified matched set so stack-up error does not accumulate across positions.",
+            "Evet — aşınmış bir bıçağı ve makinenizin modelini bize gönderin. Örneği ölçeriz, aşınma izlerinden çalışma açıklığını tersine mühendislik yoluyla belirleriz ve buna uygun bir yedek parça üretiriz; aşınma izleri, bıçağın gerçekte nasıl çalıştığı konusunda genellikle orijinal çizimden daha fazla bilgi verir. Delik çapı, kama yuvası, montaj deliği düzeni ve kalınlık, halihazırda kullandığınız mil uçlarına uyarlanır; böylece tutucu değişimi veya aletlerin yeniden ayarlanması gerekmez.",
         },
         {
           question:
-            "Can we trial a small carbide set before committing to a full order?",
+            "Bir karbür siparişiyle birlikte hangi belgeler gönderilir?",
           answer:
-            "Yes. We supply trial sets — typically 2–5 blades — for machine fit verification and edge life testing against your current steel blades. We would rather you prove the payback on your own line than take our word for the multiplier. For custom profiles, a dimensional sign-off sample is produced before full production starts.",
+            "ISO 9001:2015 sertifikalı bir tesisten gelen her sevkiyatta bir sertlik test raporu ve bir boyutsal kontrol kaydı bulunur. Gelen mal kontrolünüz için tam CMM verileri gerekiyorsa, sipariş verirken talepte bulunun; bu veriler bıçaklarla birlikte gönderilir. Birden fazla bıçağın aynı mili paylaştığı durumlarda, bıçaklar taşlanarak doğrulanmış ve eşleştirilmiş bir set halinde sevk edilir; böylece farklı konumlarda istifleme hatası birikmez.",
         },
         {
-          question: "What is the lead time on carbide slitter knives?",
+          question:
+            "Tam bir sipariş vermeden önce küçük bir karbür setini deneme imkânımız var mı?",
           answer:
-            "Standard profiles in stocked grades ship in 7–12 working days; custom geometry and non-standard diameters take 15–20. Carbide runs longer than tool steel because sintered blanks and diamond-wheel finishing cannot be rushed without costing you edge quality. Blades ship individually separated in protective packaging — most carbide damage we investigate happened in transit or storage, not on the machine.",
+            "Evet. Makineye uyum doğrulaması ve mevcut çelik bıçaklarınızla karşılaştırmalı kesici kenar ömrü testi için deneme setleri — genellikle 2–5 bıçak — temin ediyoruz. Çoğaltma oranına ilişkin bizim sözümüze güvenmek yerine, kendi üretim hattınızda bu yatırımın kendini amorti ettiğini kanıtlamanızı tercih ederiz. Özel profiller için, tam üretime geçilmeden önce boyut onayına yönelik bir numune üretilir.",
+        },
+        {
+          question: "Karbür kesme bıçaklarının teslim süresi ne kadardır?",
+          answer:
+            "Stokta bulunan kalitelerdeki standart profiller 7–12 iş günü içinde sevk edilir; özel geometri ve standart dışı çaplar için bu süre 15–20 iş günüdür. Karbür, takım çeliğinden daha uzun ömürlüdür; çünkü sinterlenmiş ham parçalar ve elmas diskli son işlem, kesici kenar kalitesinden ödün vermeden aceleye getirilemez. Bıçaklar, koruyucu ambalajlarda tek tek ayrılmış olarak sevk edilir — incelediğimiz karbür hasarlarının çoğu, makinede değil, nakliye veya depolama sırasında meydana gelmiştir.",
         },
       ],
     },
   },
   {
     id: "metal-cold-saw-blades",
-    name: "Metal Cold Saw Blades",
+    name: "Metal Soğuk Testere Bıçakları",
     fullName:
-      "HSS & TCT Cold Circular Saw Blades for Metal Tube and Profile Cutting",
+      "Metal Boru ve Profil Kesimi için HSS ve TCT Soğuk Dairesel Testere Bıçakları",
     category: "cold_saw_blades",
     sector: "metal",
-    categoryDisplay: "Metal Processing Blades",
+    categoryDisplay: "Metal İşleme Bıçakları",
     image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Burr-Free Cut",
+    badge: "Çapak Bırakmayan Kesim",
     badgeColor: "purple",
     gallery: [
       "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
@@ -4363,9 +4393,9 @@ export const blades: Blade[] = [
       "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
     ],
     description:
-      "Premium HSS (M2 / M35 Cobalt) and TCT cold saw blades for cutting steel tubes, solid bars, aluminum profiles, and stainless steel. The cold cutting process produces a precise, burr-free end with no heat-affected zone (HAZ)—ready for immediate welding or threading.",
+      "Çelik boruları, yuvarlak çubukları, alüminyum profilleri ve paslanmaz çeliği kesmek için tasarlanmış Premium HSS (M2 / M35 Kobalt) ve TCT soğuk kesme bıçakları. Soğuk kesme işlemi, ısıdan etkilenen bölge (HAZ) içermeyen, hassas ve çapak bırakmayan bir kesim yüzeyi sağlar; bu sayede kesilen parçalar hemen kaynaklanmaya veya diş açılmaya hazır hale gelir.",
     fullDescription:
-      "Cold circular sawing is the preferred metal cutting process for tube mills, structural fabrication, and precision bar stock applications. Unlike abrasive cut-off wheels or bandsaws, a cold circular saw blade cuts by metal-removal (chip formation) rather than high-friction abrasion. This keeps the material cool, producing a smooth, perfectly square end-face with zero thermal distortion and no secondary deburring required.\n\nSureay cold saw blades are manufactured from M2 (Standard HSS), M35 (5% Cobalt HSS), and TCT (Tungsten Carbide Tipped) configurations. All blades are manufactured to strict DIN 1837/1840 standards and are available in standard diameters from 200 mm to 450 mm with tooth configurations and PVD coatings matched to the workpiece material.\n\n## Material & Grade Selection Guide\n\n**M2 HSS (Standard / Steam Treated):** The baseline grade for cold sawing mild steel pipes, structural tubing, and angle sections up to 400 MPa tensile strength. Provides excellent toughness for interrupted cuts on hollow sections. Typically supplied with a black oxide (steam treated) finish to retain coolant and prevent micro-welding.\n\n**M35 Cobalt HSS (Recommended for Stainless):** The addition of 5% cobalt dramatically elevates the blade’s red-hardness (hot hardness) and wear resistance. This is essential when cutting 304/316 austenitic stainless steel, which work-hardens rapidly under the blade. M35 maintains sharp edge geometry through the elevated cutting temperatures generated by stainless steel.\n\n**TCT (Tungsten Carbide Tipped):** Brazed carbide inserts on a high-alloy steel body. Best for high-volume tube mill applications and non-ferrous metals (aluminum extrusions, copper pipes) running at elevated cutting speeds. Delivers 5–8× longer service life vs HSS on aluminum profiles.\n\n## Advanced PVD Coatings\nTo significantly extend blade life and reduce cutting friction, we offer advanced PVD coatings:\n- **TiN (Titanium Nitride — Gold):** Lowers the friction coefficient, ideal for cutting standard steel tubes at higher speeds.\n- **TiAlN (Titanium Aluminum Nitride — Violet/Black):** Forms a hard aluminum oxide layer during cutting, protecting the teeth from extreme heat. The ultimate choice for cutting stainless steel, cast iron, and high-tensile alloys.",
+      "Soğuk daire testere kesimi, boru fabrikaları, yapısal imalat ve hassas çubuk stok uygulamaları için tercih edilen metal kesme işlemidir. Aşındırıcı kesme disklerinden veya şerit testerelerden farklı olarak, soğuk daire testere bıçağı, yüksek sürtünmeli aşındırma yerine metal kaldırma (talaş oluşumu) yoluyla kesim yapar. Bu, malzemenin soğuk kalmasını sağlar ve termal bozulma olmadan pürüzsüz, mükemmel derecede dikdörtgen bir kesim yüzeyi oluşturur; ayrıca ikincil çapak alma işlemi gerektirmez.\n\nSureay soğuk testere bıçakları, M2 (Standart HSS), M35 (%5 Kobalt HSS) ve TCT (Tungsten Karbür Uçlu) konfigürasyonlarında üretilmektedir. Tüm bıçaklar, sıkı DIN 1837/1840 standartlarına uygun olarak üretilir ve iş parçası malzemesine uyumlu diş konfigürasyonları ve PVD kaplamalarıyla 200 mm ila 450 mm arası standart çaplarda mevcuttur.\n\n## Malzeme ve Sınıf Seçim Kılavuzu\n\n**M2 HSS (Standart / Buhar İşlemli):** Çekme mukavemeti 400 MPa’ya kadar olan yumuşak çelik boruların, yapısal boruların ve köşebent profillerin soğuk kesimi için temel sınıftır. İçi boş profillerde kesintili kesimler için mükemmel tokluk sağlar. Genellikle, soğutma sıvısını tutmak ve mikro kaynaklanmayı önlemek için siyah oksit (buharla işlenmiş) kaplamalı olarak tedarik edilir.\n\n**M35 Kobalt HSS (Paslanmaz Çelik için Önerilir):** %5 kobalt ilavesi, bıçağın kızıl sertliğini (sıcak sertlik) ve aşınma direncini önemli ölçüde artırır. Bu, bıçağın altında hızla iş sertleşmesi gösteren 304/316 östenitik paslanmaz çeliği keserken çok önemlidir. M35, paslanmaz çeliğin oluşturduğu yüksek kesme sıcaklıklarında keskin kenar geometrisini korur.\n\n**TCT (Tungsten Karbür Uçlu):** Yüksek alaşımlı çelik gövde üzerine lehimlenmiş karbür uçlar. Yüksek hacimli boru fabrikası uygulamaları ve yüksek kesme hızlarında işlenen demir dışı metaller (alüminyum ekstrüzyonlar, bakır borular) için idealdir. Alüminyum profillerde HSS'ye kıyasla 5–8 kat daha uzun hizmet ömrü sağlar.\n\n## Gelişmiş PVD Kaplamalar\nBıçak ömrünü önemli ölçüde uzatmak ve kesme sürtünmesini azaltmak için gelişmiş PVD kaplamalar sunuyoruz:\n- **TiN (Titanyum Nitrür — Altın):** Sürtünme katsayısını düşürür; standart çelik boruları yüksek hızlarda kesmek için idealdir.\n- **TiAlN (Titanyum Alüminyum Nitrür — Menekşe/Siyah):** Kesim sırasında sert bir alüminyum oksit tabakası oluşturarak dişleri aşırı ısıdan korur. Paslanmaz çelik, dökme demir ve yüksek mukavemetli alaşımların kesimi için en iyi seçimdir.",
     link: "/products/metal-cold-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4402,34 +4432,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "cold-cut-quality",
-        tag: "PROCESS ADVANTAGE",
-        title: "Cold Cut vs. Abrasive Wheels",
+        tag: "ÜRETİM SÜRECİNİN AVANTAJLARI",
+        title: "Soğuk Kesim ve Aşındırıcı Diskler",
         description:
-          "Abrasive wheels generate temperatures above 800°C, producing a heat-affected zone (HAZ) and heavy slag that must be ground off. Cold circular sawing operates at low RPM with coolant, keeping the cut face below 200°C. The result is a clean, weld-ready surface right off the machine.",
+          "Aşındırıcı diskler 800 °C’nin üzerinde sıcaklıklara ulaşarak, ısıdan etkilenen bölge (HAZ) ve taşlanması gereken yoğun cüruf oluşumuna neden olur. Soğuk dairesel testere kesimi ise düşük devirde ve soğutma sıvısı kullanılarak gerçekleştirilir; bu sayede kesim yüzeyinin sıcaklığı 200 °C’nin altında tutulur. Sonuç olarak, makineden çıktığı anda kaynaklamaya hazır, temiz bir yüzey elde edilir.",
       },
       {
         id: "grade-cobalt",
-        tag: "METALLURGY",
-        title: "M35 Cobalt for Stainless",
+        tag: "METALURJİ",
+        title: "Paslanmaz Çelik için M35 Kobalt",
         description:
-          "Stainless steel (304/316) work-hardens under cutting pressure, instantly dulling standard M2 blades. Our M35 grade contains 5% Cobalt, granting it extreme ‘red hardness’ to slice through austenitic stainless steel without losing edge geometry.",
+          "Paslanmaz çelik (304/316), kesme basıncı altında iş sertleşmesine uğrar ve standart M2 bıçakların keskinliğini anında kaybettirir. %5 kobalt içeren M35 kalitemiz, kenar geometrisini kaybetmeden östenitik paslanmaz çeliği kesebilmesini sağlayan olağanüstü bir “kırmızı sertlik” sunar.",
       },
       {
         id: "pvd-coatings",
-        tag: "SURFACE TECH",
-        title: "TiN & TiAlN Coatings",
+        tag: "YÜZEY TEKNOLOJİSİ",
+        title: "TiN ve TiAlN Kaplamaları",
         description:
-          "While standard steam-treated blades are great for mild steel, upgrading to TiN (Titanium Nitride) or TiAlN PVD coatings drastically reduces friction and heat. This allows for faster feed rates and prevents material from cold-welding to the saw teeth.",
+          "Standart buharla işlenmiş bıçaklar yumuşak çelik için mükemmel olsa da, TiN (Titanyum Nitrür) veya TiAlN PVD kaplamalara geçilmesi sürtünmeyi ve ısınmayı önemli ölçüde azaltır. Bu sayede daha yüksek ilerleme hızları elde edilir ve malzemenin testere dişlerine soğuk kaynakla yapışması önlenir.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Grade & Finish",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore (mm)",
-      col3: "Thickness (mm)",
-      col4: "Teeth (Z)",
+      col0: "Bıçak Kalitesi ve Yüzey İşlemi",
+      col1: "Dış Çap (mm)",
+      col2: "Çap (mm)",
+      col3: "Kalınlık (mm)",
+      col4: "Dişler (Z)",
       caption:
-        "* Standard dimensions for Kaltenbach, Bewo, and MEP machines. Tooth count (Z) is selected based on your pipe wall thickness. Custom drive pin holes machined to order.",
+        "* Kaltenbach, Bewo ve MEP makineleri için standart boyutlar. Diş sayısı (Z), boru duvar kalınlığınıza göre seçilir. Özel tahrik pimi delikleri sipariş üzerine işlenir.",
     },
     standardDimensions: [
       {
@@ -4483,52 +4513,54 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "How do I choose between M2 and M35 Cobalt HSS grades?",
+          question:
+            "M2 ve M35 Kobalt HSS kaliteleri arasında nasıl seçim yapabilirim?",
           answer:
-            "For standard structural steel, mild steel pipes, and box sections, M2 HSS provides excellent toughness and value. If you are cutting stainless steel (304, 316), high-tensile steel, or using high-speed automatic saws, you must upgrade to M35. M35 contains 5% Cobalt, which prevents the teeth from softening under high friction heat.",
+            "Standart yapı çeliği, yumuşak çelik borular ve kutu profiller için M2 HSS, mükemmel tokluk ve fiyat-performans oranı sunar. Paslanmaz çelik (304, 316) veya yüksek mukavemetli çelik kesiyorsanız ya da yüksek hızlı otomatik testereler kullanıyorsanız, M35'e geçmeniz gerekir. M35, %5 kobalt içerir ve bu sayede dişlerin yüksek sürtünme ısısı altında yumuşamasını önler.",
+        },
+        {
+          question: "Çelik borularım için kaç diş (TPI / Adım) gerekir?",
+          answer:
+            "Soğuk testereyle kesimin altın kuralı, her zaman 3 ila 4 dişin malzeme kalınlığına aynı anda temas etmesini sağlamaktır. İnce cidarlı boruları (örn. 1,5 mm cidar kalınlığı) kesiyorsanız, dişlerin takılıp kırılmasını önlemek için ince diş aralığına (yüksek diş sayısı, örn. 220Z veya 240Z) ihtiyacınız vardır. Kalın yuvarlak çubukları (örn. 40 mm yuvarlak çubuk) kesiyorsanız, büyük metal talaşlarının dışarı çıkması için yer açmak amacıyla kaba diş aralığına (düşük diş sayısı, örn. 120Z) ihtiyacınız vardır.",
+        },
+        {
+          question: "HSS soğuk testere bıçakları yeniden bilenenebilir mi?",
+          answer:
+            "Evet. Bu, HSS soğuk testere bıçaklarının en büyük avantajıdır. Tek kullanımlık aşındırıcı disklerin aksine, bir HSS bıçağı, çapı kullanılamayacak kadar küçülmeden önce 10 ila 15 kez CNC ile yeniden bilenenebilir. Fabrika çıkışı performansını geri kazandırmak için profesyonel yeniden bileme ve kaplama hizmetleri sunuyoruz.",
         },
         {
           question:
-            "How many teeth (TPI / Pitch) do I need for my steel pipes?",
+            "HSS soğuk testerelerle kesim yaparken soğutma sıvısı kullanmalı mıyım?",
           answer:
-            "The golden rule of cold sawing is to always have 3 to 4 teeth simultaneously engaged in the material thickness. If you are cutting thin-walled tubes (e.g., 1.5 mm wall), you need a fine pitch (high tooth count, e.g., 220Z or 240Z) to prevent the teeth from hooking and snapping. If you are cutting thick solid bars (e.g., 40 mm solid), you need a coarse pitch (low tooth count, e.g., 120Z) to allow room for the massive metal chips to escape.",
-        },
-        {
-          question: "Can HSS cold saw blades be resharpened?",
-          answer:
-            "Yes. This is the biggest advantage of HSS cold saw blades. Unlike abrasive discs that are thrown away, an HSS blade can be CNC-resharpened 10 to 15 times before the diameter becomes too small to use. We offer professional regrinding and recoating services to restore factory-new performance.",
-        },
-        {
-          question: "Should I use coolant when cutting with HSS cold saws?",
-          answer:
-            "Absolutely. You must use a flood coolant (water-soluble synthetic or semi-synthetic oil, mixed at about 8–10%) directed right at the cutting teeth. Coolant flushes away the metal chips and keeps the blade cool. Cutting dry with an HSS blade will burn the teeth instantly. Only specialized TCT blades on high-end machines are designed for dry cutting.",
+            "Kesinlikle. Kesme dişlerine doğrudan yönlendirilmiş bir bol soğutma sıvısı (yaklaşık %8–10 oranında karıştırılmış, suda çözünür sentetik veya yarı sentetik yağ) kullanmalısınız. Soğutma sıvısı, metal talaşlarını uzaklaştırır ve bıçağı serin tutar. HSS bıçakla kuru kesim yapmak, dişleri anında yakar. Yalnızca üst düzey makinelerde kullanılan özel TCT bıçaklar kuru kesim için tasarlanmıştır.",
         },
       ],
       company: [
         {
-          question: "Will these blades fit my specific cold saw machine?",
+          question:
+            "Bu bıçaklar benim kullandığım soğuk testere makinesine uyacak mı?",
           answer:
-            "Our blades feature standard bore sizes (e.g., 32 mm, 40 mm, 50 mm) and universal drive pin hole patterns that fit 95% of the market, including Kaltenbach, Bewo, MEP, Macc, Pedrazzoli, and Kasto. If your machine has a non-standard drive pin layout, we can CNC-machine the exact mounting holes before shipping.",
+            "Bıçaklarımız, standart delik çaplarına (örn. 32 mm, 40 mm, 50 mm) ve Kaltenbach, Bewo, MEP, Macc, Pedrazzoli ve Kasto dahil olmak üzere, piyasadaki ürünlerin %95'ine uyum sağlar. Makinenizde standart dışı bir tahrik pimi düzeni varsa, sevkiyat öncesinde tam olarak uyumlu montaj deliklerini CNC ile işleyebiliriz.",
         },
         {
           question:
-            "What is the lead time for M35 Cobalt or TiAlN coated blades?",
+            "M35 Kobalt veya TiAlN kaplamalı bıçakların teslim süresi ne kadardır?",
           answer:
-            "Standard M2 (Steam Treated) blades in common sizes are often in stock and ship within 3–5 days. Premium M35 Cobalt blades and customized PVD coatings (TiN, TiAlN) typically require 10–15 working days.",
+            "Yaygın boyutlardaki Standart M2 (buharla işlenmiş) bıçaklar genellikle stokta bulunur ve 3–5 gün içinde sevk edilir. Premium M35 Kobalt bıçaklar ve özel PVD kaplamalar (TiN, TiAlN) için genellikle 10–15 iş günü gerekir.",
         },
       ],
     },
   },
   {
     id: "scrap-chopper-blades",
-    name: "Scrap Chopper Blades",
+    name: "Hurda Kıyma Makinesi Bıçakları",
     fullName:
-      "Heavy-Duty Scrap Chopper Blades for Metal Slitting & Coil Processing Lines",
+      "Metal Dilimleme ve Rulo İşleme Hatları için Ağır Hizmet Tipi Hurda Kesme Bıçakları",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Scrap Chopper Blades",
+    categoryDisplay: "Hurda Kıyma Makinesi Bıçakları",
     image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
-    badge: "Extreme Impact",
+    badge: "Aşırı Etki",
     badgeColor: "orange",
     gallery: [
       "/images/products/granulator-blades/scrap-chopper-blades.webp",
@@ -4536,9 +4568,9 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
     ],
     description:
-      "Specifically engineered to survive the chaotic, extreme-impact environments of processing line edge-trim chopping. Forged from S7 shock-resisting tool steel or featuring specialized carbide-inlaid geometries, these blades cleanly fracture and reduce irregular steel strips, aluminum strip trim, and copper foil edge scrap without suffering catastrophic blade failure or chipping.",
+      "İşleme hattındaki kenar kesme ve parçalama işlemlerinin kaotik ve aşırı darbeye maruz kalan ortamlarında dayanacak şekilde özel olarak tasarlanmıştır. S7 darbeye dayanıklı takım çeliğinden dövülmüş veya özel karbür kaplamalı geometrilere sahip olan bu bıçaklar, düzensiz çelik şeritleri, alüminyum şerit kesintilerini ve bakır folyo kenar hurdalarını, bıçakta ciddi hasar veya kırılma yaşanmadan temiz bir şekilde kırar ve parçalar.",
     fullDescription:
-      "Located at the terminus of metal slitting and conversion lines, scrap choppers are tasked with destroying the irregular, edge-trim waste generated during processing. The operating environment involves severe, unpredictable impact loads capable of shattering standard blades. Consequently, scrap chopper blades are forged from high-impact, shock-resistant alloys such as S7 tool steel, or employ heavily supported carbide-inlaid designs to cleanly fracture steel, aluminum, and copper waste without failing.\n\n## Operating Environment & Challenges\n\nScrap choppers operate under conditions fundamentally different from precision slitting or shearing:\n\n**Unpredictable Material Geometry:** Edge trim from slitting lines arrives at the chopper in irregular, curled, and twisted configurations. Unlike straight sheet shearing, the blade must engage the scrap at random angles, creating variable impact loads that can exceed 3–5× the nominal rated force.\n\n**Metal Inclusions & Contamination:** The scrap stream frequently contains metal fasteners, weld spatter, and mill scale that create localized stress concentrations. Standard high-hardness blades (D2 at HRC 60–62) are brittle and catastrophically fracture when impacted by such inclusions.\n\n**High Cycle Frequency:** Scrap choppers operate at 40–120 chops per minute depending on line speed. Each chop imparts a shock load, and the blade must resist fatigue crack propagation over millions of cycles.\n\n## Metallurgical Solutions\n\n**S7 Shock-Resisting Tool Steel:** S7 is a chromium-molybdenum-tungsten tool steel specifically developed for impact tooling applications. Unlike D2 (which achieves wear resistance through 12% chromium carbide precipitates), S7 utilizes a lower carbon content (0.50% C vs. 1.55% C in D2) and a balanced alloy system that produces a tough, resilient matrix. Heat-treated to HRC 54–58, S7 delivers twice the impact toughness of D2, virtually eliminating catastrophic blade fracture.\n\n**H13 Hot-Work Tool Steel:** H13 (5% chromium, 1.5% molybdenum, 1% vanadium) is the workhorse grade for aluminum and copper scrap chopping. Its austenitic structure at operating temperature provides excellent shock absorption, and the low carbide volume fraction prevents brittle fracture on metal inclusion impacts. Best suited for non-ferrous scrap streams.\n\n**Carbide-Inlaid Edges:** For steel service centers processing high-tensile and stainless steel trim, tungsten carbide edge inserts are mechanically supported in an S7 or H13 body. The carbide provides localized wear resistance at the cutting edge, while the tool steel body absorbs the gross impact energy. This hybrid construction delivers 3–5× longer service life than solid S7 in heavily contaminated scrap streams.",
+      "Metal kesme ve işleme hatlarının son aşamasında yer alan hurda parçalayıcılar, işleme sırasında ortaya çıkan düzensiz, kenar kesim atıklarını parçalamakla görevlidir. Çalışma ortamı, standart bıçakları parçalayabilecek şiddetli ve öngörülemez darbe yüklerini içerir. Bu nedenle, hurda kesici bıçakları, S7 takım çeliği gibi darbeye dayanıklı, şoka dirençli alaşımlardan dövülür veya çelik, alüminyum ve bakır atıkları sorunsuz bir şekilde kırmak için sağlam destekli karbür kaplamalı tasarımlar kullanılır.\n\n## Çalışma Ortamı ve Zorluklar\n\nHurda kesiciler, hassas dilimleme veya kesme işlemlerinden temelde farklı koşullar altında çalışır:\n\n**Öngörülemez Malzeme Geometrisi:** Dilimleme hatlarından gelen kenar kesintileri, kesiciye düzensiz, kıvrılmış ve bükülmüş şekillerde ulaşır. Düz sac kesiminden farklı olarak, bıçak hurdaya rastgele açılarda temas etmek zorundadır; bu da nominal nominal kuvvetin 3–5 katını aşabilen değişken darbe yükleri oluşturur.\n\n**Metal Kalıntılar ve Kirlenme:** Hurda akışında sıklıkla metal bağlantı elemanları, kaynak sıçramaları ve hadde kabuğu bulunur; bunlar yerel gerilme yoğunlaşmalarına neden olur. Standart yüksek sertlikli bıçaklar (HRC 60–62 sertlikteki D2) kırılgandır ve bu tür kalıntılarla çarpıştıklarında ciddi şekilde kırılırlar.\n\n**Yüksek Döngü Sıklığı:** Hurda kesiciler, hat hızına bağlı olarak dakikada 40–120 kesim hızında çalışır. Her kesme işlemi bir şok yükü oluşturur ve bıçak, milyonlarca döngü boyunca yorulma çatlağının yayılmasına direnmelidir.\n\n## Metalurjik Çözümler\n\n**S7 Darbeye Dayanıklı Takım Çeliği:** S7, darbeye maruz kalan takım uygulamaları için özel olarak geliştirilmiş bir krom-molibden-tungsten takım çeliğidir. D2’den farklı olarak (D2, %12 krom karbür çökeltileriyle aşınma direnci sağlar), S7 daha düşük bir karbon içeriği (D2’deki %1,55 C’ye karşılık %0,50 C) ve sert, esnek bir matris oluşturan dengeli bir alaşım sistemi kullanır. HRC 54–58 seviyesine kadar ısıl işleme tabi tutulan S7, D2'nin iki katı darbe tokluğuna sahiptir ve bıçaklarda meydana gelen ciddi kırılmaları neredeyse tamamen ortadan kaldırır.\n\n**H13 Sıcak İşleme Takım Çeliği:** H13 (%5 krom, %1,5 molibden, %1 vanadyum), alüminyum ve bakır hurda kesimi için en çok kullanılan kalitedir. Çalışma sıcaklığındaki östenitik yapısı mükemmel şok emilimi sağlar ve düşük karbür hacim oranı, metal kalıntıların çarpması sonucu meydana gelen kırılgan kırılmaları önler. Demir dışı hurda akışları için en uygun seçenektir.\n\n**Karbür Kaplı Kenarlar:** Yüksek mukavemetli ve paslanmaz çelik kesimlerini işleyen çelik hizmet merkezleri için, tungsten karbür kenar uçları bir S7 veya H13 gövdede mekanik olarak desteklenir. Karbür, kesme kenarında yerel aşınma direnci sağlarken, takım çeliği gövde ise brüt darbe enerjisini emer. Bu hibrit yapı, yoğun kirlenmiş hurda akışlarında katı S7'ye kıyasla 3–5 kat daha uzun hizmet ömrü sunar.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4580,33 +4612,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "s7-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "S7 Shock-Resisting Alloy Structure",
+        tag: "MALZEME BİLİMİ",
+        title: "S7 Darbeye Dayanıklı Alaşım Yapısı",
         description:
-          "S7 tool steel achieves its superior toughness through a carefully balanced alloy system: 0.50% carbon (vs. 1.55% in D2) minimizes brittle carbide formation, while chromium (3.25%), molybdenum (1.40%), and tungsten (1.80%) additions provide hardenability and temper resistance. Heat treated to HRC 54–58 rather than the HRC 60–62 typical of D2, S7 sacrifices some abrasion resistance in exchange for double the Charpy impact energy. This is the critical trade-off for scrap chopper applications: the blade must absorb unpredictable shock loads without shattering.",
+          "S7 takım çeliği, özenle dengelenmiş bir alaşım sistemi sayesinde üstün tokluğunu elde eder: %0,50 karbon (D2’deki %1,55’e kıyasla) kırılgan karbür oluşumunu en aza indirirken, krom (%3,25), molibden (%1,40) ve tungsten (%1,80) ilaveleri sertleşebilirlik ve temper direnci sağlar. D2'de tipik olan HRC 60–62 yerine HRC 54–58'e kadar ısıl işleme tabi tutulan S7, Charpy darbe enerjisini iki katına çıkarmak karşılığında bir miktar aşınma direncinden ödün verir. Bu, hurda parçalayıcı uygulamaları için kritik bir ödünleşmedir: bıçak, parçalanmadan öngörülemeyen şok yüklerini emmelidir.",
       },
       {
         id: "4-edge-design",
-        tag: "DESIGN EFFICIENCY",
-        title: "Four-Edge Reversible Configuration",
+        tag: "TASARIM VERİMLİLİĞİ",
+        title: "Dört Kenarlı Çift Yönlü Yapılandırma",
         description:
-          "Scrap chopper blades are manufactured as rectangular blocks with four usable cutting edges. When the active edge exhibits visible wear (typically indicated by increased chopping noise or incomplete scrap fracture), the operator indexes the blade 90° to present a fresh edge. This design quadruples the effective service life compared to single-edge blades and reduces non-productive downtime. The blade body geometry is precision-ground to ensure all four edges are parallel within ±0.05mm, preventing uneven loading that would cause premature wear on indexed edges.",
+          "Hurda kesme bıçakları, dört adet kullanılabilir kesme kenarına sahip dikdörtgen bloklar halinde üretilir. Aktif kenarda gözle görülür bir aşınma ortaya çıktığında (genellikle kesme sesinin artması veya hurdanın tam olarak kırılmaması ile anlaşılır), operatör bıçağı 90° döndürerek yeni bir kenarı devreye sokar. Bu tasarım, tek kenarlı bıçaklara kıyasla etkili hizmet ömrünü dört katına çıkarır ve verimsiz duruş sürelerini azaltır. Bıçak gövdesi geometrisi, dört kenarın da ±0,05 mm içinde paralel olmasını sağlayacak şekilde hassas bir şekilde taşlanmıştır; bu sayede, döndürülen kenarlarda erken aşınmaya neden olabilecek dengesiz yükleme önlenir.",
       },
       {
         id: "carbide-inlay",
-        tag: "ADVANCED OPTION",
-        title: "Carbide-Inlaid Hybrid Construction",
+        tag: "GELİŞMİŞ SEÇENEK",
+        title: "Karbür Kaplamalı Hibrit Yapı",
         description:
-          "For steel service centers processing high-carbon or stainless steel trim with heavy mill scale contamination, we offer carbide-inlaid scrap chopper blades. A tungsten carbide insert (typically 6–10mm wide, full blade thickness) is mechanically locked into a precision-ground slot in the S7 body using a shrink-fit or brazed joint. The carbide provides localized wear resistance where the blade contacts the scrap, while the S7 body absorbs the gross impact energy. This construction is the optimal solution for contaminated scrap streams where solid carbide would fracture and solid S7 wears too rapidly.",
+          "Yüksek karbonlu veya paslanmaz çelik kesim parçalarını işleyen ve üzerinde yoğun hadde kabuğu birikintisi bulunan çelik hizmet merkezleri için, karbür kaplamalı hurda kesme bıçakları sunuyoruz. Bir tungsten karbür kesici uç (genellikle 6–10 mm genişliğinde, bıçağın tam kalınlığı kadar), büzülme geçme veya lehimli bir bağlantı kullanılarak S7 gövdesindeki hassas taşlanmış bir yuvaya mekanik olarak sabitlenir. Karbür, bıçağın hurdayla temas ettiği noktalarda yerel aşınma direnci sağlarken, S7 gövdesi brüt darbe enerjisini emer. Bu yapı, katı karbürün kırılacağı ve katı S7’nin çok hızlı aşınacağı kirli hurda akışları için en uygun çözümdür.",
       },
     ],
     dimensionLabels: {
-      col0: "Typical Machine / Duty",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Tipik Makine / Çalışma Koşulları",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard dimensions for common scrap chopper models. Custom sizes available. All blades are 4-edge reversible. Carbide-inlaid option available for all dimensions (+30–40% unit price premium).",
+        "* Yaygın hurda parçalayıcı modelleri için standart boyutlar. Özel boyutlar da mevcuttur. Tüm bıçaklar 4 kenarlı ve ters çevrilebilir. Tüm boyutlar için karbür kaplama seçeneği mevcuttur (+%30–40 birim fiyat farkı).",
     },
     standardDimensions: [
       {
@@ -4655,47 +4687,49 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Should I use S7 or H13 for chopping stainless steel edge trim?",
+            "Paslanmaz çelik kenar süslemesini kesmek için S7 mi yoksa H13 mi kullanmalıyım?",
           answer:
-            "For stainless steel trim (304, 316, or duplex grades), specify S7 at HRC 54–58. Stainless generates higher cutting forces than mild steel due to work hardening, and S7's balanced alloy system provides better edge retention than H13 in this application. H13 is optimized for aluminum and copper scrap where the lower cutting forces allow the softer H13 matrix to absorb impact without excessive edge deformation. For heavily contaminated stainless scrap with weld spatter or fasteners, upgrade to carbide-inlaid S7.",
+            "Paslanmaz çelik profiller (304, 316 veya dubleks kaliteler) için HRC 54–58 sertlikte S7'yi tercih edin. Paslanmaz çelik, iş sertleşmesi nedeniyle yumuşak çeliğe göre daha yüksek kesme kuvvetleri oluşturur ve S7'nin dengeli alaşım sistemi, bu uygulamada H13'e kıyasla daha iyi kenar dayanıklılığı sağlar. H13, alüminyum ve bakır hurdaları için optimize edilmiştir; bu uygulamalarda daha düşük kesme kuvvetleri, daha yumuşak olan H13 matrisinin aşırı kenar deformasyonu olmadan darbeyi emmesini sağlar. Kaynak sıçramaları veya bağlantı elemanları içeren yoğun kirlenmiş paslanmaz çelik hurdaları için karbür kaplamalı S7'ye geçin.",
         },
         {
           question:
-            "How do I know when to index the blade to the next cutting edge?",
+            "Bıçağı bir sonraki kesici kenara ne zaman hizalamam gerektiğini nasıl anlarım?",
           answer:
-            "The primary indicator is increased chopping noise or vibration, which signals that the active edge has developed a wear flat and is no longer cleanly fracturing the scrap. Visually, inspect the active edge every 8–12 hours of operation. When the wear flat (the dulled, polished zone on the cutting corner) exceeds 1.0–1.5mm width, it is time to index to the next edge. Indexing before the wear flat contacts the blade body prevents accelerated wear on the holder and frame.",
+            "En önemli gösterge, kesme gürültüsünün veya titreşimin artmasıdır; bu durum, kesici kenarda bir aşınma düzlüğü oluştuğunu ve artık hurdayı düzgün bir şekilde kesemediğini gösterir. Çalışma süresince her 8–12 saatte bir aktif kenarı gözle inceleyin. Aşınma düzlüğü (kesme köşesindeki körelmiş, cilalanmış bölge) 1,0–1,5 mm genişliği aştığında, bir sonraki kenara geçme zamanı gelmiştir. Aşınma düzlüğü bıçak gövdesine temas etmeden önce kenar değiştirme işlemi yapmak, tutucu ve çerçeve üzerinde aşırı aşınmayı önler.",
         },
         {
-          question: "Can scrap chopper blades be resharpened or reground?",
+          question:
+            "Hurda parçalayıcı bıçakları yeniden bilenebilir mi veya taşlanabilir mi?",
           answer:
-            "Scrap chopper blades are a wear consumable and are not typically reground. The 4-edge reversible design already provides extended service life, and regrinding would require re-heat-treatment and precision grinding to restore the edge geometry and hardness. The cost of regrinding approaches 60–70% of new blade cost, making replacement more economical. However, for very large custom blades (above 500mm length), regrinding may be cost-effective — contact us with your blade dimensions.",
+            "Hurda kıyma bıçakları aşınmaya maruz kalan sarf malzemeleridir ve genellikle yeniden bileme işlemine tabi tutulmazlar. 4 kenarlı ters çevrilebilir tasarım, zaten uzun bir hizmet ömrü sağlar; yeniden bileme işlemi ise kenar geometrisini ve sertliğini geri kazanmak için yeniden ısıl işlem ve hassas bileme gerektirir. Yeniden bileme maliyeti, yeni bıçak maliyetinin %60–70’ine yaklaşır; bu da bıçağı değiştirmek daha ekonomik bir seçenek haline getirir. Ancak, çok büyük özel bıçaklar (500 mm’den uzun olanlar) için yeniden bileme maliyet açısından avantajlı olabilir — bıçak boyutlarınızı bize bildiriniz.",
         },
       ],
       company: [
         {
           question:
-            "Does Sureay stock scrap chopper blades, or are they made to order?",
+            "Sureay, hurda parçalayıcı bıçaklarını stokta bulunduruyor mu, yoksa bunlar sipariş üzerine mi üretiliyor?",
           answer:
-            "We maintain stock inventory of standard S7 scrap chopper blades in the six most common sizes (100×40×15mm through 400×100×30mm). Stock blades ship within 3–5 working days. Custom dimensions, H13 material, and carbide-inlaid configurations are manufactured to order with lead times of 12–18 working days from drawing approval. Rush production (7–10 days) available for standard sizes subject to heat-treat schedule availability.",
+            "En yaygın altı boyutta (100×40×15 mm’den 400×100×30 mm’ye kadar) standart S7 hurda kıyma bıçaklarının stokunu bulunduruyoruz. Stokta bulunan bıçaklar 3–5 iş günü içinde sevk edilir. Özel boyutlar, H13 malzemesi ve karbür kaplamalı konfigürasyonlar, çizim onayından itibaren 12–18 iş günü teslim süresi ile sipariş üzerine üretilir. Isıl işlem programının uygunluğuna bağlı olarak, standart boyutlar için acil üretim (7–10 gün) seçeneği mevcuttur.",
         },
         {
           question:
-            "Can Sureay supply scrap chopper blades that match our existing blade dimensions?",
+            "Sureay, mevcut bıçak boyutlarımıza uygun hurda parçalayıcı bıçakları tedarik edebilir mi?",
           answer:
-            "Yes. Send us a sample blade, technical drawing, or the chopper machine make and model number. We will confirm the length, width, thickness, mounting hole pattern (if applicable), and material grade. Most chopper blades are standard rectangular blocks without mounting holes, but some models use clamped or bolted retention that requires specific hole locations. We can replicate any existing blade geometry.",
+            "Evet. Bize bir bıçak örneği, teknik çizim veya kıyma makinesinin markasını ve model numarasını gönderin. Uzunluk, genişlik, kalınlık, montaj deliği düzeni (varsa) ve malzeme sınıfını teyit edeceğiz. Çoğu kıyma bıçağı, montaj delikleri olmayan standart dikdörtgen bloklardır; ancak bazı modellerde, belirli delik konumları gerektiren kelepçeli veya cıvatalı tutma sistemleri kullanılır. Mevcut herhangi bir bıçak geometrisini taklit edebiliriz.",
         },
       ],
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Strand Pelletizer Rotors",
-    fullName: "High-Precision Strand Pelletizer Rotors for Compounding Lines",
+    name: "Strand Peletleme Rotorları",
+    fullName:
+      "Kompozit Üretim Hatları için Yüksek Hassasiyetli Şerit Peletleme Rotorları",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Pelletizer Blades",
+    categoryDisplay: "Peletleme Bıçakları",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
-    badge: "PM-HSS & Carbide",
+    badge: "PM-HSS ve Karbür",
     badgeColor: "blue",
     gallery: [
       "/images/products/blades/strand-pelletizer-rotor-01.webp",
@@ -4703,9 +4737,9 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Strand pelletizer rotors and pelletizing cutter rotors for plastic compounding and recycling lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005 mm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
+      "Plastik kompozitleme ve geri dönüşüm hatları için şerit peletleme rotorları ve peletleme kesici rotorları. PM-HSS (ASP2023, ASP2052) ve tungsten karbür tipi sağlam yapı. ≤0,005 mm eşmerkezlilik değerine sahip sarmal geometri, ISO 1940-1 G2.5 standardına uygun dinamik dengeleme. Maag, Coperion, Cumberland, Conair ve Reduction Engineering peletleyiciler için doğrudan değiştirilebilir yedek parça.",
     fullDescription:
-      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2 µm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005 mm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports. We also offer pelletizer rotor repair and regrinding services — restoring worn helical rotors and granulator rotor shafts to factory-new concentricity at a fraction of replacement cost.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
+      "Sürekli ve yüksek hacimli kompozit üretim hatları için tasarlanan Sureay’in şerit peletleyici rotorları, atık madde içermeyen kusursuz ve homojen mikro peletler üretir. Gelişmiş Toz Metalurjisi Yüksek Hızlı Çelikleri (PM-HSS) ve Katı Tungsten Karbürden üretilen sarmal rotorlarımız, cam takviyeli (GF), karbon takviyeli ve yoğun pigmentli polimerlerin neden olduğu aşırı aşındırıcı yıpranmaya dayanacak şekilde tasarlanmıştır. Her rotor, mükemmel eşmerkezliliği sağlamak için titiz dinamik dengeleme ve hassas profil taşlama işlemlerinden geçirilir; bu sayede en yüksek devirlerde bile yatak aşınması ve titreşim azaltılır.\n\n## Rotor Türleri\n\n**Helisel (Spiral) Rotorlar:** Yüksek hızlı sürekli kompozitleme için standart konfigürasyon. Kesme genişliğinin tamamı boyunca sabit kalan helisel aralık, kademeli bir kesme hareketi sağlar — kenarın tamamı aynı anda çarpmak yerine, herhangi bir anda tek bir diş devreye girer. Bu, en yüksek kesme kuvvetini, motor yükünü ve tel kopma olaylarını önemli ölçüde azaltır. Sureay’in 5 eksenli CNC taşlama merkezleri, tüm rotor yüzeyi boyunca helisel aralık sabitliğini ±0,01° hassasiyetinde korur.\n\n**Düz Kenarlı Rotorlar:** Helisel kesme kuvvetinin aşırı olduğu daha yumuşak elastomerler ve düşük viskoziteli polimer eriyikleri için tasarlanmıştır. Tam genişlikte eşzamanlı kesme hareketi, TPE, TPU ve TPV şeritlerinde temiz ve tutarlı pelet uzunluğu sağlar.\n\n**Lehimli Karbür Kaplamalı Rotorlar:** Cam dolgulu (GF), karbon dolgulu (CF) ve mineral dolgulu bileşiklerin aşındırıcı kompanzasyonu için en uygun çözümdür. Tungsten karbür kesme uçları, hassas işlenmiş HSS rotor gövdelerine vakumla lehimlenir. Karbür kenarlar, GF40 ve CF30 bileşiklerinde standart M2'ye kıyasla 5–10 kat daha uzun hizmet ömrü sağlarken, dayanıklı HSS gövdesi aralıklı şeritlerden ve soğuk çalıştırma olaylarından kaynaklanan darbe yüklerini kırılma olmadan emer.\n\n**Katı Karbür Rotorlar:** Orta düzeyde üretim hacminde aşırı aşındırıcı bileşikler için en üst düzey teknik özellik. Lehimli karbür uçların bile hızla aşındığı ultra aşındırıcı seramik, bor nitrür ve SiC dolgulu polimerlerin özel bileşik üretiminde kullanılır.\n\n## Uygulamaya Göre Malzeme Seçimi\n\n**M2, M35 HSS (Standart Kompozit Üretimi):** Standart kompozit üretim sıcaklıklarında, dolgu maddesi içermeyen termoplastikler — PA6, PA66, PC, POM, PBT — için uygun maliyetli bir seçenektir. M35 kobalt sınıfı, standart M2'ye kıyasla orta derecede aşındırıcı dolgu maddelerinde (talk, CaCO₃) hizmet ömrünü %30–40 oranında uzatır.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Aşındırıcı Bileşim):** Toz metalurjisi üretimi, geleneksel HSS'nin sağlayamadığı ultra ince, homojen bir karbür dağılımı sağlar. ASP2023, GF20 ve CF15 bileşiklerinde 2–3 kat daha uzun kesici kenar ömrü sağlar. ASP2052 ve CPM10V, en zorlu dolgu bileşiklerinde takım ömrünü M2’ye kıyasla 4–6 katına çıkarır. PM mikroyapısı ayrıca, pelet ince parçacıklarına ve toz kirliliğine neden olan kesici kenar mikro-çatlamalarını da azaltır.\n\n**Katı Tungsten Karbür (WC) ve Lehimli Karbür Uçlar (Aşırı Aşınma):** Uzun cam elyaf (LGF) bileşikleri, karbon elyaf takviyeli polimerler ve yüksek mineral içerikli masterbatch için. Karbür, PM-HSS'yi birkaç saat içinde aşındıracak sürekli aşındırıcı yük altında kesici kenarını korur.\n\n## Uygulama Senaryoları\n\n**Uzun Cam Elyaf (LGF) ve Karbon Elyaf Bileşikleri:** Lehimli tungsten karbür rotorlar, yüksek aşındırıcı yapısal kompozitleri keserken kesici kenarlarını standart HSS'ye göre 5–10 kat daha uzun süre korur. Vakum lehimleme işlemi, soğuk şerit başlangıçlarından kaynaklanan şiddetli darbe yükleri altında bile karbür dişlerin kopmamasını garanti eder.\n\n**Masterbatch ve Yüksek Pigmentli Üretim:** Ayna parlaklığında cilalanmış diş olukları (Ra 0,2 µm), renk birikimini önleyerek hızlı renk değişikliklerine ve partiler arasında sıfır çapraz kontaminasyona olanak tanır.\n\n**Mühendislik Termoplastikleri (PA, PC, POM, PBT):** Ultra sıkı eşmerkezlilik (≤0,005 mm), operatörlerin son derece küçük mikro boşluklar ayarlamasına olanak tanır; bu da ince parçacıkları, tozu ve yılan derisi benzeri kalıntıları ortadan kaldıran temiz, makas benzeri bir kesim sağlar.\n\n**Yumuşak Elastomerler (TPE, TPU, TPV):** Optimize edilmiş keskin kesme açıları, yumuşak şeritlerin gerilmesini ve bulaşmasını önleyerek, korkulan kuyruk oluşumunu ortadan kaldırır.\n\n## OEM Uyumluluğu\n\nSureay, başlıca peletleme platformları için tam uyumlu yedek rotorlar üretmektedir. Tüm yedek rotorlar, OEM çizimlerinden veya müşteri numunelerinden tersine mühendislik yoluyla üretilir, CMM üzerinde doğrulanır ve eksiksiz boyutsal denetim raporlarıyla birlikte teslim edilir. Ayrıca, peletleyici rotor onarım ve yeniden taşlama hizmetleri de sunuyoruz; aşınmış helisel rotorları ve granülatör rotor millerini, değiştirme maliyetinin çok altında bir maliyetle fabrika çıkışı gibi yeni eşmerkezliliğe kavuşturuyoruz.\n\n*Tüm üretici isimleri ve modelleri yalnızca referans ve uyumluluk amacıyla kullanılmaktadır.*",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4755,34 +4789,34 @@ export const blades: Blade[] = [
     components: [
       {
         id: "dynamic-balancing",
-        tag: "PRECISION ENGINEERING",
-        title: "Zero-Defect Dynamic Balancing",
+        tag: "HASSAS MÜHENDİSLİK",
+        title: "Sıfır Hata Dinamik Dengeleme",
         description:
-          "Operating at high speeds, unbalanced rotors destroy bearings and ruin clearances. Every Sureay rotor is dynamically balanced at operating speeds to ISO 1940-1 G2.5 standards, ensuring whisper-quiet, vibration-free operation and protecting the pelletizer's bearing investment.",
+          "Yüksek hızlarda çalışan dengesiz rotorlar, yatakları tahrip eder ve boşluk ayarlarını bozar. Her Sureay rotoru, ISO 1940-1 G2.5 standartlarına göre çalışma hızlarında dinamik olarak dengelenir; bu sayede son derece sessiz ve titreşimsiz bir çalışma sağlanır ve peletleme makinesinin yatak yatırımları korunur.",
       },
       {
         id: "helical-geometry",
-        tag: "5-AXIS CNC GRINDING",
-        title: "Flawless Helical Geometry",
+        tag: "5 EKSENLİ CNC TAŞLAMA",
+        title: "Kusursuz Helisel Geometri",
         description:
-          "Using state-of-the-art 5-axis CNC grinding centers, we guarantee the helical pitch is constant across the entire cutting width. This ensures constant shear force, reducing motor load and preventing strand snapping on high-speed compounding lines.",
+          "En son teknolojiye sahip 5 eksenli CNC taşlama merkezlerini kullanarak, kesme genişliğinin tamamında sarmal aralığın sabit kalmasını garanti ediyoruz. Bu sayede sabit kesme kuvveti sağlanır, motor yükü azalır ve yüksek hızlı kompozit üretim hatlarında tel kopması önlenir.",
       },
       {
         id: "vacuum-brazing",
-        tag: "CARBIDE TECHNOLOGY",
-        title: "Proprietary Vacuum Brazing",
+        tag: "KARBİT TEKNOLOJİSİ",
+        title: "Tescilli Vakumla Lehimleme",
         description:
-          "For carbide-tipped rotors, a specialized high-strength vacuum brazing process guarantees that carbide teeth will never detach, even under severe shock loads from cold strand starts or intermittent strand feed conditions.",
+          "Karbür uçlu rotorlarda, özel bir yüksek mukavemetli vakumlu lehimleme işlemi, soğuk tel başlangıçlarından veya aralıklı tel besleme koşullarından kaynaklanan şiddetli darbe yükleri altında bile karbür dişlerin asla kopmamasını garanti eder.",
       },
     ],
     dimensionLabels: {
-      col0: "OEM Platform",
-      col1: "Rotor Diameter (mm)",
-      col2: "Cutting Width (mm)",
-      col3: "Tooth Count",
-      col4: "Helix Angle",
+      col0: "OEM Platformu",
+      col1: "Rotor Çapı (mm)",
+      col2: "Kesme Genişliği (mm)",
+      col3: "Diş Sayısı",
+      col4: "Heliks Açısı",
       caption:
-        "* Representative dimensions for common strand pelletizer platforms. All rotors manufactured to exact OEM blueprints or customer sample. Custom diameters, widths, tooth counts, and helix angles available on request.",
+        "* Yaygın olarak kullanılan şerit tipi peletleme platformları için tipik boyutlar. Tüm rotorlar, orijinal ekipman üreticisinin (OEM) kesin teknik çizimlerine veya müşteri numunesine göre üretilmektedir. Talep üzerine özel çaplar, genişlikler, diş sayıları ve sarmal açıları da temin edilebilir.",
     },
     standardDimensions: [
       {
@@ -4835,61 +4869,61 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "We process 40% Glass-Filled Nylon (PA66 GF40). Standard M2 rotors wear out in days. What is your solution?",
+            "%40 cam elyaf takviyeli naylon (PA66 GF40) işliyoruz. Standart M2 rotorlar birkaç gün içinde aşınıyor. Bu konuda çözümünüz nedir?",
           answer:
-            "For extreme abrasive wear, M2 steel is insufficient. We recommend our PM-HSS grades (ASP2023 or ASP2052) or our brazed Tungsten Carbide rotors. While the initial investment is higher, tool life is extended by up to 1000%, drastically reducing machine downtime and lowering your cost-per-ton of compound. For PA66 GF40 specifically, brazed carbide inlay rotors are the most cost-effective long-term solution — the HSS body handles shock loading while the carbide cutting edges resist abrasion.",
+            "Aşırı aşındırıcı aşınma durumlarında M2 çeliği yetersiz kalır. PM-HSS sınıflarımızı (ASP2023 veya ASP2052) veya lehimli Tungsten Karbür rotorlarımızı öneririz. İlk yatırım maliyeti daha yüksek olsa da, takım ömrü %1000'e kadar uzar; bu da makine duruş süresini önemli ölçüde azaltır ve ton başına bileşik maliyetinizi düşürür. Özellikle PA66 GF40 için, lehimli karbür kaplamalı rotorlar en uygun maliyetli uzun vadeli çözümdür — HSS gövdesi darbe yüklerini karşılarken, karbür kesici kenarlar aşınmaya direnir.",
         },
         {
           question:
-            "Why are we getting 'tails' on our pellets, and how can your rotors fix this?",
+            "Peletlerimizin üzerinde neden 'kuyruklar' oluşuyor ve rotorlarınız bu sorunu nasıl çözebilir?",
           answer:
-            "Tailing occurs when the polymer strand is torn or melted rather than cleanly sheared. This is caused by blunt rotor teeth, irregular helical angles, or excessive clearance from rotor runout. Sureay rotors feature a concentricity of ≤0.005 mm, allowing your technicians to set a micro-gap against the bed knife for a perfect, scissor-like cut. The polished flute surface (Ra 0.2 µm) also prevents polymer sticking that creates drag and uneven shear force.",
+            "Kuyruk oluşumu, polimer şeridin düzgün bir şekilde kesilmeyip yırtılması veya erimesi durumunda meydana gelir. Bunun nedenleri arasında körelmiş rotor dişleri, düzensiz sarmal açılar veya rotorun eksantrikliğinden kaynaklanan aşırı boşluk sayılabilir. Sureay rotorları ≤0,005 mm'lik bir eşmerkezlilik özelliğine sahiptir; bu sayede teknisyenleriniz, mükemmel ve makas gibi bir kesim elde etmek için yatay bıçağa karşı mikro bir boşluk ayarlayabilir. Cilalı oluk yüzeyi (Ra 0,2 µm) ayrıca sürtünmeye ve dengesiz kesme kuvvetine neden olan polimer yapışmasını da önler.",
         },
         {
           question:
-            "What is the difference between helical and straight-edge rotors, and when should I use each?",
+            "Helisel ve düz kenarlı rotorlar arasındaki fark nedir ve her birini ne zaman kullanmalıyım?",
           answer:
-            "Helical rotors produce a progressive shear action — only one tooth segment engages at a time — which reduces peak cutting force, motor amperage spikes, and strand snap events. This makes them the standard choice for rigid thermoplastics and filled compounds on high-speed lines. Straight-edge rotors engage the full cutting width simultaneously, which is preferred for soft elastomers (TPE, TPU, TPV) where the gradual helical shear force can stretch and deform the strand rather than cutting it cleanly.",
+            "Helisel rotorlar kademeli bir kesme hareketi oluşturur — her seferinde yalnızca bir diş segmenti devreye girer — bu da en yüksek kesme kuvvetini, motor akımındaki ani artışları ve şerit kopma olaylarını azaltır. Bu özellikleri, onları yüksek hızlı hatlarda sert termoplastikler ve dolgu maddeli bileşikler için standart seçim haline getirir. Düz kenarlı rotorlar ise kesme genişliğinin tamamını aynı anda keser; bu özellik, kademeli sarmal kesme kuvvetinin ipliği temiz bir şekilde kesmek yerine gerip deforme edebileceği yumuşak elastomerler (TPE, TPU, TPV) için tercih edilir.",
         },
         {
           question:
-            "Can you duplicate a custom rotor if we send a physical sample or CAD drawing?",
+            "Fiziksel bir numune veya CAD çizimi gönderirsek, özel bir rotorun aynısını üretebilir misiniz?",
           answer:
-            "Absolutely. As a direct manufacturing facility, we have full reverse-engineering capabilities. You can send us your worn rotor or technical blueprints, and we will produce a detailed CAD drawing for your approval before manufacturing the exact replacement. Dimensional verification on CMM is performed before shipment.",
+            "Kesinlikle. Doğrudan üretim yapan bir tesis olarak, tam tersine mühendislik yeteneklerine sahibiz. Bize aşınmış rotorunuzu veya teknik çizimlerinizi gönderebilirsiniz; biz de tam olarak aynı yedek parçayı üretmeden önce onayınıza sunmak üzere ayrıntılı bir CAD çizimi hazırlayacağız. Sevkiyat öncesinde CMM üzerinde boyutsal kontrol yapılır.",
         },
         {
           question:
-            "How do I know when to replace or regrind my strand pelletizer rotor?",
+            "Şerit peletleyici rotorumu ne zaman değiştirmem veya yeniden taşlamam gerektiğini nasıl anlarım?",
           answer:
-            "Key indicators: (1) increasing pellet fines and dust in the pellet stream — dulled teeth tear rather than shear; (2) rising motor amperage on the pelletizer drive — blunt edges require more force; (3) strand snapping becoming more frequent — irregular shear force from worn geometry increases tension spikes; (4) tailing reappearing despite correct gap setting — worn concentricity causes gap variation around the rotor circumference. For PM-HSS rotors, precision regrinding to OEM geometry is cost-effective. For carbide-tipped rotors, carbide can be re-tipped once before full rotor replacement is required.",
+            "Anahtar göstergeler: (1) pelet akışında ince parçacık ve toz miktarının artması — körelmiş dişler kesmek yerine yırtma eylemi gerçekleştirir; (2) peletleyici tahrik motorunda amper değerinin yükselmesi — körelmiş kenarlar daha fazla kuvvet gerektirir; (3) şerit kopmalarının sıklaşması — aşınmış geometriden kaynaklanan düzensiz kesme kuvveti, gerilim dalgalanmalarını artırır; (4) doğru boşluk ayarına rağmen atıkların yeniden ortaya çıkması — aşınmış eşmerkezlilik, rotor çevresi boyunca boşluk değişkenliğine neden olur. PM-HSS rotorlar için, OEM geometrisine göre hassas yeniden taşlama mali açıdan verimlidir. Karbür uçlu rotorlar için, rotorun tamamen değiştirilmesi gerekmeden önce karbür uçlar bir kez yenilenebilir.",
         },
       ],
       company: [
         {
           question:
-            "Can Sureay supply matched rotor and bed knife (stator) sets?",
+            "Sureay, birbiriyle uyumlu rotor ve sabit bıçak (stator) setleri tedarik edebilir mi?",
           answer:
-            "Yes, and we strongly recommend purchasing them as matched pairs. We manufacture stator bed knives in Stellite 6 (for HSS rotors) and Solid Carbide (for carbide-tipped rotors). A matched pair ensures the cutting gap geometry and hardness differential are optimized together, delivering zero-tail pelletizing from the first strand. Mismatched rotor-stator combinations are a leading cause of premature wear and tailing on otherwise well-maintained lines.",
+            "Evet, bunları eşleştirilmiş çiftler halinde satın almanızı şiddetle tavsiye ederiz. Stator yatak bıçaklarını Stellite 6 (HSS rotorlar için) ve Katı Karbür (karbür uçlu rotorlar için) malzemelerinden üretiyoruz. Eşleştirilmiş bir çift, kesme aralığı geometrisinin ve sertlik farkının birlikte optimize edilmesini sağlayarak, ilk şeritten itibaren sıfır kuyruklu peletleme sağlar. Uyumsuz rotor-stator kombinasyonları, bakımları iyi yapılan hatlarda bile erken aşınma ve kuyruk oluşumunun başlıca nedenidir.",
         },
         {
           question:
-            "What lead times and documentation can Sureay provide for replacement rotors?",
+            "Sureay, yedek rotorlar için hangi teslim sürelerini ve belgeleri sunabilir?",
           answer:
-            "Standard PM-HSS replacement rotors for common OEM platforms (Maag, Coperion, Cumberland) ship in 10–15 working days from drawing approval. Custom helix angles or non-standard tooth counts require 15–20 working days. Every rotor ships with: CMM dimensional inspection certificate, dynamic balancing report (ISO 1940-1 G2.5), hardness test certificate, and steel mill material traceability. Rush production available subject to schedule.",
+            "Yaygın OEM platformları (Maag, Coperion, Cumberland) için standart PM-HSS yedek rotorlar, çizim onayından itibaren 10–15 iş günü içinde sevk edilir. Özel sarmal açıları veya standart dışı diş sayıları için 15–20 iş günü gereklidir. Her rotor şu belgelerle birlikte sevk edilir: CMM boyutsal kontrol sertifikası, dinamik balans raporu (ISO 1940-1 G2.5), sertlik testi sertifikası ve çelik fabrikası malzeme izlenebilirliği. Programına bağlı olarak acil üretim imkanı mevcuttur.",
         },
       ],
     },
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Melt Filter Scraper Blades",
+    name: "Ergitme Filtresi Sıyırıcı Bıçakları",
     fullName:
-      "Premium Scraper Blades & Filter Plates for Continuous Melt Filters",
+      "Sürekli Erime Filtreleri için Üst Sınıf Kazıyıcı Bıçakları ve Filtre Plakaları",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Melt Filter Scraper Blades",
+    categoryDisplay: "Erimiş Filtre Sıyırıcı Bıçakları",
     image: "/images/products/blades/scraper-blades.webp",
-    badge: "PCR Recycling",
+    badge: "PCR Geri Dönüşümü",
     badgeColor: "orange",
     gallery: [
       "/images/products/blades/scraper-blades.webp",
@@ -4897,9 +4931,9 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Precision D2/H13/Carbide scraper blades & laser-drilled conical filter plates for PCR continuous melt filters. Engineered hardness synergy (blade HRC 58–62 vs. plasma-nitrided plate HV 1,000+) protects filter plate capital investment. HCl-resistant alloys for PVC blends. Backflush-compatible with EREMA, Gneuß, Ettlinger & FIMIC.",
+      "PCR sürekli erime filtreleri için Hassas D2/H13/Karbür sıyırıcı bıçaklar ve lazerle delilmiş konik filtre plakaları. Özel olarak tasarlanmış sertlik sinerjisi (bıçak HRC 58–62 ile plazma nitrürlenmiş plaka HV 1.000+), filtre plakalarına yapılan sermaye yatırımını korur. PVC karışımları için HCl'ye dayanıklı alaşımlar. EREMA, Gneuß, Ettlinger ve FIMIC ile ters yıkama uyumludur.",
     fullDescription:
-      "Continuous melt filters are the heart of any high-throughput PCR plastic recycling line. When processing heavily contaminated post-consumer regrind — containing mineral fillers, glass fibers, carbonized residues, and hard foreign particles — the scraper blade is the single component under the most extreme combined load: abrasive wear from hard contaminants, thermal fatigue from cyclic melt temperature exposure (220–300 °C), and cyclic bending stress from the rotation mechanism. A blade that fails prematurely forces an emergency line stop, costing hours of restarting time and wasting significant volumes of in-process melt.\n\nSureay continuous melt filter scraper blades are precision-manufactured from premium D2 cold-work tool steel and H13 hot-work tool steel — two alloys specifically selected for this dual wear-plus-heat-resistance requirement — and vacuum heat-treated to HRC 58–62 with deep cryogenic post-treatment to eliminate retained austenite and extend wear life by 30–40% versus standard heat treatment.\n\n## Alloy Selection by Contamination Level\n\n**D2 Tool Steel (HRC 60–62):** The standard specification for PCR HDPE, PP, and mixed rigid plastics with moderate contamination (< 3% mineral filler content). The 12% chromium and 1.5% carbon content delivers excellent abrasion resistance against glass particles and calcium carbonate fillers at melt processing temperatures up to 260 °C. Cost-effective for medium-duty continuous filtration at throughputs of 300–800 kg/h.\n\n**H13 Hot-Work Tool Steel (HRC 48–52):** Selected for heavily contaminated streams — post-consumer film regrind, agricultural mulch film, WEEE plastics — where melt temperatures exceed 280 °C and thermal cycling is severe. H13's molybdenum-vanadium carbide matrix maintains dimensional stability and edge geometry under sustained thermal loading that would cause D2 to soften and deform.\n\n**Solid Tungsten Carbide (HRA 88–91):** The ultimate specification for ultra-abrasive feedstocks: glass-filled engineering plastics (PA-GF30, PBT-GF), ceramic-contaminated streams, and silicon-rich agricultural film with embedded soil particles. Carbide scrapers deliver 5–8× longer service life versus D2 on these feedstocks, reducing blade change frequency to once per 1,000+ operating hours.\n\n## Precision-Ground Blade Geometry\n\nThe scraper blade's edge geometry directly controls filtration screen surface cleanliness and therefore melt pressure consistency. A worn or incorrectly profiled scraper leaves a residual contamination layer on the filter screen, causing progressive pressure build-up, reduced throughput, and ultimately screen breakthrough. Sureay blades are precision-ground to ±0.05 mm dimensional tolerance with edge bevel profiles matched to each filter OEM's screen contact geometry. The result is a consistent, reproducible scraping action that maintains screen cleanliness throughout the full blade service life.\n\n## Drop-In OEM Compatibility\n\nScraper blade geometry is machine-specific: each continuous melt filter OEM uses proprietary rotor dimensions, blade mounting interfaces, and screen diameters. Sureay reverse-engineers replacement blades from OEM drawings or customer samples, verifying fit on a coordinate measuring machine (CMM) before production. Compatible with EREMA Continuous Filter, Gneuß Rotary Filtration System, Ettlinger ERF series, FIMIC RAS series, Kreyenborg KSF series, and Nordson BKG continuous screen changers.\n\n## Laser-Drilled Conical Filter Plate Micro-Perforations\n\nThe filter plate's hole geometry is as critical as the scraper blade material. Standard punched or drilled cylindrical holes create a flat-wall channel where molten polymer and suspended contaminants can stagnate — carbonizing inside the hole under sustained heat, progressively reducing effective open area, and eventually causing premature screen blockage. Sureay filter plates use laser-drilled conical (tapered) micro-perforations: the hole is narrowest at the upstream melt-contact surface and widens progressively toward the downstream outlet. This conical profile exploits melt-side hydraulic pressure: once a contaminant particle passes the narrow inlet restriction, the expanding channel geometry immediately expels it toward the outlet with no dead-zone stagnation. The result is a filter plate that maintains consistent differential pressure and open-area percentage over a significantly longer service interval — particularly critical on heavily contaminated PCR streams where cylindrical-hole plates would require frequent replacement.\n\nAvailable filtration fineness: 80 µm (food-contact rPET/rHDPE), 150–200 µm (film-grade PCR), 300–500 µm (injection-grade PCR), 500–2,000 µm (coarse pre-filtration). Conical profile available across all fineness grades.\n\n## Hardness Synergy: Protecting Your Filter Plate Capital Investment\n\nA common and justified concern when sourcing aftermarket scraper blades is whether a high-hardness replacement blade will score or gouge the filter plate — a capital component that costs significantly more than the blade itself. Sureay engineers a deliberate and verified hardness differential between the scraper blade and the filter plate surface.\n\nThe filter plate's upstream face is plasma nitrided to HV 1,000+ (approximately equivalent to HRC 70+), creating an extremely hard, wear-resistant ceramic-like surface layer 0.1–0.3 mm deep. The scraper blade is intentionally manufactured to a lower HRC 58–62. This differential means that under all operating conditions, the blade is the controlled-wear consumable: it wears gradually against the harder plate surface without generating metal-transfer scoring or gouging. The filter plate surface remains intact across multiple blade replacement cycles. Every Sureay blade shipment includes a hardness test certificate confirming the blade is within the specified HRC range — verifiable documentation that the controlled-wear principle is maintained in every production batch.\n\n## Chemical & Corrosion Resistance for PVC and Mixed-Plastic Streams\n\nProcessing washed post-consumer PVC, mixed flexible films, or WEEE-derived plastics releases aggressive corrosive outgassing — primarily hydrochloric acid (HCl) and organochlorine compounds — at melt temperatures of 200–260 °C. Standard D2 and H13 tool steels corrode under sustained HCl exposure: surface pitting initiates at grain boundaries, progressively degrading the micro-perforation edge geometry and enlarging hole diameters beyond specification, compromising filtration quality without any visible external indication.\n\nFor PVC-inclusive streams, Sureay applies two protective measures: (1) base alloy upgrade to corrosion-resistant PM (powder-metallurgy) steel grades with homogeneous chromium distribution that resists acid grain-boundary attack; (2) physical vapour deposition (PVD) barrier coatings on filter plate surfaces that seal the micro-perforation walls against HCl diffusion. This combination extends filter plate service life by 2–3× versus uncoated standard-alloy plates on PVC-containing feedstocks, and prevents the insidious hole-enlargement failure mode that undermines filtration efficiency without triggering a pressure alarm.\n\n## Backflush Compatibility\n\nHigh-end continuous melt filters (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporate automated backflushing mechanisms: a high-pressure reverse pulse of clean melt is periodically fired backward through a localized section of the filter plate to expel embedded contaminant cake from the micro-perforations, restoring open area without stopping the line. The backflush pulse generates a localized reverse pressure spike — typically 150–400 bar depending on the OEM — applied to a small area of the filter plate.\n\nSureay filter plates are designed and manufactured to withstand OEM-rated backflush pressures without micro-cracking or deformation. The conical hole geometry is dimensionally optimized for this: the wider downstream outlet of each conical perforation acts as a flared nozzle that accelerates the backflush pulse, improving contaminant ejection efficiency versus cylindrical holes. Structural integrity under repeated high-pressure reverse cycles is validated through finite element analysis (FEA) of the inter-hole ligament stress distribution. Replacement Sureay plates maintain 100% compatibility with OEM backflush timing, pressure, and hole-array layout — no recalibration of the backflush controller is required.\n\n## Failure Analysis: Diagnosing & Eliminating Common Scraper and Filter Failures\n\nEngineers sourcing replacement components are typically dealing with a specific failure mode. The correct material upgrade depends on the root cause.\n\n**Edge Chipping (Brittle Fracture at Blade Tip):** Caused by a single high-energy impact from tramp metal — bolts, nuts, wire fragments — embedded in the PCR regrind feedstock. D2 and standard carbide grades are vulnerable to brittle fracture under this impulse loading. **Upgrade:** Specify H13 (higher impact toughness than D2) for mixed-contamination streams where tramp metal risk is moderate, or a toughness-optimized carbide grade (Co content ≥ 12%) for high-risk streams. Add upstream magnet and/or metal detector to reduce tramp metal frequency.\n\n**Progressive Surface Scoring on Filter Plate:** Fine parallel grooves on the filter plate face, accompanied by rising differential pressure and shortened blade intervals. Caused by incorrect blade hardness (blade harder than plate), incorrect bevel angle causing concentrated edge loading, or grit contamination in the blade-plate interface. **Upgrade:** Verify blade hardness certificate (must be ≤ HRC 62). Confirm edge bevel angle matches OEM screen contact geometry (±0.5°). Inspect plate surface for plasma-nitride layer depletion — if scoring has reached the base metal, the plate requires replacement before installing new blades.\n\n**Rapid Blade Wear (< 200 Hours on Standard PCR):** Unexpectedly short service life on a nominally moderate feedstock indicates higher-than-declared contamination: elevated glass-fiber, silica, or ceramic filler content in the regrind. Submit regrind sample for XRF contamination analysis. **Upgrade:** Step from D2 to H13 first; if service life remains inadequate, move to solid tungsten carbide which delivers 5–8× longer life on abrasive-dominated failure streams.\n\n**Hole Enlargement / Filtration Quality Degradation Without Pressure Alarm:** Filter plate micro-perforations gradually enlarge over time, allowing oversized contaminant particles through at stable differential pressure. Root cause: HCl corrosion from PVC outgassing dissolving hole-wall material. No pressure alarm because the enlarged holes maintain low resistance. **Upgrade:** Specify PVD-coated, corrosion-resistant PM steel filter plates for all streams containing ≥ 5% PVC by weight.",
+      "Sürekli eriyik filtreleri, yüksek verimli herhangi bir PCR plastik geri dönüşüm hattının kalbini oluşturur. Mineral dolgu maddeleri, cam elyafları, karbonlaşmış kalıntılar ve sert yabancı parçacıklar içeren, yoğun şekilde kirlenmiş tüketici sonrası öğütülmüş malzemenin işlenmesinde, sıyırıcı bıçak en aşırı birleşik yüke maruz kalan tek bileşendir: sert kirleticilerden kaynaklanan aşındırıcı aşınma, döngüsel eriyik sıcaklığına maruz kalma (220–300 °C) nedeniyle oluşan termal yorgunluk ve dönme mekanizmasından kaynaklanan döngüsel eğilme gerilimi. Erken arızalanan bir bıçak, hattın acil olarak durdurulmasına neden olur; bu da yeniden başlatma için saatler süren bir zaman kaybına ve işlenmekte olan eriyikten önemli miktarda israfına yol açar.\n\nSureay sürekli eriyik filtre sıyırıcı bıçakları, bu çift aşınma artı-ısı direnci gereksinimi için özel olarak seçilmiş iki alaşım — HRC 58–62 sertliğine kadar vakumla ısıl işleme tabi tutulur ve kalıntı östeniti ortadan kaldırmak ve standart ısıl işlem’ye kıyasla aşınma ömrünü %30–40 oranında uzatmak amacıyla derin kriyojenik son işlemden geçirilir.\n\n## Kirlenme Düzeyine Göre Alaşım Seçimi\n\n**D2 Takım Çeliği (HRC 60–62):** Orta düzeyde kirliliğe sahip (< %3 mineral dolgu maddesi içeriği) PCR HDPE, PP ve karışık sert plastikler için standart spesifikasyondur. %12 krom ve %1,5 karbon içeriği, 260 °C’ye kadar eriyik işleme sıcaklıklarında cam parçacıklarına ve kalsiyum karbonat dolgu maddelerine karşı mükemmel aşınma direnci sağlar. 300–800 kg/saat işleme kapasitesinde orta yükte sürekli filtrasyon için maliyet etkin bir seçenektir.\n\n**H13 Sıcak İşleme Takım Çeliği (HRC 48–52):** Erime sıcaklıklarının 280 °C'yi aştığı ve termal döngü koşullarının zorlu olduğu, yoğun kirlenmiş akışlar — tüketim sonrası film öğütme artıkları, tarımsal malç filmi, WEEE plastikleri — için seçilmiştir. H13'ün molibden-vanadyum karbür matrisi, D2'nin yumuşamasına ve deforme olmasına neden olacak sürekli termal yük altında boyutsal kararlılığı ve kenar geometrisini korur.\n\n**Katı Tungsten Karbür (HRA 88–91):** Ultra aşındırıcı hammaddeler için en üst düzey özellikler sunar: cam elyaf takviyeli mühendislik plastikleri (PA-GF30, PBT-GF), seramik kalıntıları içeren akışlar ve toprak parçacıkları barındıran silikon bakımından zengin tarım filmleri. Karbür sıyırıcılar, bu hammaddelerde D2'ye kıyasla 5–8 kat daha uzun hizmet ömrü sunarak bıçak değiştirme sıklığını 1.000+ çalışma saatinde bir kez olacak şekilde azaltır.\n\n## Hassas Taşlanmış Bıçak Geometrisi\n\nSıyırıcı bıçağının kenar geometrisi, filtre eleği yüzeyinin temizliğini ve dolayısıyla eriyik basıncının tutarlılığını doğrudan kontrol eder. Aşınmış veya yanlış profilli bir sıyırıcı, filtre eleği üzerinde kalıntı kirlilik tabakası bırakarak kademeli basınç artışına, verim düşüşüne ve nihayetinde eleğin delinmesine neden olur. Sureay bıçakları, her bir filtre OEM’sinin elek temas geometrisine uyarlanmış kenar eğim profilleriyle ±0,05 mm boyut toleransında hassas taşlanmıştır. Sonuç olarak, bıçağın tüm hizmet ömrü boyunca elek temizliğini koruyan tutarlı ve tekrarlanabilir bir sıyırma hareketi elde edilir.\n\n## OEM ile Anında Uyumluluk\n\nSıyırıcı bıçak geometrisi makineye özeldir: Her sürekli eriyik filtresi OEM'si kendine özgü rotor boyutları, bıçak montaj arayüzleri ve elek çapları kullanır. Sureay, yedek bıçakları OEM çizimlerinden veya müşteri numunelerinden tersine mühendislik yoluyla tasarlar ve üretim öncesinde koordinat ölçüm makinesinde (CMM) uyumunu doğrular. EREMA Sürekli Filtre, Gneuß Döner Filtrasyon Sistemi, Ettlinger ERF serisi, FIMIC RAS serisi, Kreyenborg KSF serisi ve Nordson BKG sürekli elek değiştiricilerle uyumludur.\n\n## Lazerle Delinmiş Konik Filtre Plakası Mikro Delikleri\n\nFiltre plakasının delik geometrisi, sıyırıcı bıçak malzemesi kadar önemlidir. Standart olarak zımbalanmış veya delinmiş silindirik delikler, erimiş polimer ve süspansiyon halindeki kirleticilerin birikebileceği düz duvarlı bir kanal oluşturur — bu maddeler sürekli ısı altında deliğin içinde karbonize olur, etkili açık alanı giderek azaltır ve sonunda süzgecin erken tıkanmasına neden olur. Sureay filtre plakaları, lazerle delinmiş konik (konik) mikro delikler kullanır: delik, eriyikle temas eden giriş tarafında en dar olup, çıkış tarafına doğru giderek genişler. Bu konik profil, eriyik tarafındaki hidrolik basıncı kullanır: Bir kirletici parçacık dar giriş kısıtlamasını geçtiğinde, genişleyen kanal geometrisi onu ölü bölge durgunluğu olmadan hemen çıkışa doğru dışarı atar. Sonuç olarak, önemli ölçüde daha uzun bir hizmet aralığı boyunca tutarlı bir basınç farkı ve açık alan yüzdesini koruyan bir filtre plakası elde edilir — bu, silindirik delikli plakaların sık sık değiştirilmesini gerektiren, yoğun kirlenmiş PCR akışlarında özellikle önemlidir.\n\nMevcut filtreleme inceliği: 80 µm (gıda ile temas eden rPET/rHDPE), 150–200 µm (film sınıfı PCR), 300–500 µm (enjeksiyon sınıfı PCR), 500–2.000 µm (kaba ön filtreleme). Konik profil, tüm incelik sınıflarında mevcuttur.\n\n## Sertlik Sinerjisi: Filtre Plakasına Yaptığınız Sermaye Yatırımını Koruma\n\nYedek parça piyasasından sıyırıcı bıçakları tedarik ederken sıkça karşılaşılan ve haklı bir endişe, yüksek sertlikteki yedek bıçağın, bıçağın kendisinden çok daha pahalı olan bir sermaye bileşeni olan filtre plakasını çizip oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oyup oy\n\nFiltre plakasının akış yönündeki yüzü, HV 1.000+ (yaklaşık olarak HRC 70+'ya eşdeğer) sertliğe ulaşacak şekilde plazma nitrürlenir; bu işlem, 0,1–0,3 mm derinliğinde son derece sert, aşınmaya dayanıklı, seramik benzeri bir yüzey tabakası oluşturur. Sıyırıcı bıçak ise kasıtlı olarak daha düşük bir sertlikte, yani HRC 58–62 aralığında üretilmektedir. Bu fark, tüm çalışma koşullarında bıçağın kontrollü aşınmaya sahip bir sarf malzemesi olduğu anlamına gelir: bıçak, daha sert plaka yüzeyine karşı metal transferine bağlı çizik veya oyuk oluşturmadan kademeli olarak aşınır. Filtre plakası yüzeyi, birden fazla bıçak değiştirme döngüsü boyunca bozulmadan kalır. Her Sureay bıçak sevkiyatında, bıçağın belirtilen HRC aralığı içinde olduğunu teyit eden bir sertlik testi sertifikası bulunur; bu, her üretim partisinde kontrollü aşınma ilkesinin korunduğunu gösteren doğrulanabilir bir belgedir.\n\n## PVC ve Karışık Plastik Akışları için Kimyasal ve Korozyon Direnci\n\nYıkanmış tüketim sonrası PVC, karışık esnek filmler veya WEEE kaynaklı plastiklerin işlenmesi, 200–260 °C erime sıcaklıklarında agresif korozif gaz salınımına (özellikle hidroklorik asit (HCl) ve organoklor bileşikleri) neden olur. Standart D2 ve H13 takım çelikleri, sürekli HCl maruziyeti altında korozyona uğrar: Yüzey çukurlaşması tane sınırlarında başlar, mikro delikli kenar geometrisini kademeli olarak bozar ve delik çaplarını spesifikasyonun ötesine genişletir; bu da görünür bir dış belirti olmaksızın filtrasyon kalitesini düşürür.\n\nPVC içeren akışlar için Sureay iki koruyucu önlem uygular: (1) asit tanecik sınırı saldırısına dirençli, homojen krom dağılımına sahip korozyona dayanıklı PM (toz metalurjisi) çelik sınıflarına temel alaşım yükseltmesi; (2) filtre plakası yüzeylerine, mikro delik duvarlarını HCl difüzyonuna karşı sızdırmaz hale getiren fiziksel buhar biriktirme (PVD) bariyer kaplamaları uygulanır. Bu kombinasyon, PVC içeren hammaddelerde kaplamasız standart alaşımlı plakalara kıyasla filtre plakasının hizmet ömrünü 2–3 kat uzatır ve basınç alarmını tetiklemeden filtrasyon verimliliğini bozan sinsi delik genişlemesi arıza modunu önler.\n\n## Ters Yıkama Uyumluluğu\n\nÜst düzey sürekli eriyik filtreleri (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF), otomatik geri yıkama mekanizmalarına sahiptir: Temiz eriyikten oluşan yüksek basınçlı bir ters darbe, filtre plakasının belirli bir bölümü üzerinden periyodik olarak geriye doğru püskürtülür; böylece mikro deliklere yerleşmiş kir tabakası dışarı atılır ve hat durdurulmadan açık alan geri kazanılır. Ters yıkama darbesi, filtre plakasının küçük bir alanına uygulanan, OEM'e bağlı olarak tipik olarak 150–400 bar arasında değişen yerel bir ters basınç artışına neden olur.\n\nSureay filtre plakaları, mikro çatlaklar veya deformasyon oluşmadan OEM tarafından belirlenen ters yıkama basınçlarına dayanacak şekilde tasarlanmış ve üretilmiştir. Konik delik geometrisi bu amaç için boyutsal olarak optimize edilmiştir: Her konik delik açığının akış yönünde daha geniş olan çıkışı, ters yıkama darbesini hızlandıran genişletilmiş bir nozul görevi görür ve silindirik deliklere kıyasla kirletici atma verimliliğini artırır. Tekrarlanan yüksek basınçlı ters yıkama döngüleri altında yapısal bütünlük, delikler arası bağlantı gerilimi dağılımının sonlu elemanlar analizi (FEA) yoluyla doğrulanır. Yedek Sureay plakaları, OEM ters yıkama zamanlaması, basıncı ve delik dizilişi ile %100 uyumluluk sağlar; ters yıkama kontrolörünün yeniden kalibre edilmesine gerek yoktur.\n\n## Arıza Analizi: Yaygın Kazıyıcı ve Filtre Arızalarının Teşhisi ve Giderilmesi\n\nYedek parça tedarik eden mühendisler genellikle belirli bir arıza türüyle karşı karşıyadır. Doğru malzeme yükseltmesi, arızanın temel nedenine bağlıdır.\n\n**Kenar Çatlaması (Bıçak Ucunda Kırılgan Kırılma):** PCR öğütülmüş hammaddeye gömülü yabancı metallerden (cıvatalar, somunlar, tel parçaları) kaynaklanan tek bir yüksek enerjili darbe nedeniyle oluşur. D2 ve standart karbür kaliteleri, bu darbe yükü altında kırılgan kırılmaya karşı savunmasızdır. **Yükseltme:** Yabancı metal riskinin orta düzeyde olduğu karışık kirlilik akışları için H13'ü (D2'den daha yüksek darbe tokluğu) veya yüksek riskli akışlar için tokluğu optimize edilmiş bir karbür sınıfını (Co içeriği ≥ %12) belirtin. Yabancı metal sıklığını azaltmak için besleme hattının başına bir mıknatıs ve/veya metal dedektörü ekleyin.\n\n**Filtre Plakasında Kademeli Yüzey Çizilmeleri:** Filtre plakası yüzeyinde ince paralel oluklar; buna artan diferansiyel basınç ve kısalan bıçak aralıkları eşlik eder. Nedenleri arasında yanlış bıçak sertliği (bıçağın plakadan daha sert olması), yoğun kenar yüklemesine neden olan yanlış eğim açısı veya bıçak-plaka arayüzündeki kum kirliliği sayılabilir. **Geliştirme:** Bıçak sertlik sertifikasını doğrulayın (HRC 62 veya altında olmalıdır). Kenar eğim açısının OEM elek temas geometrisiyle (±0,5°) uyumlu olduğunu teyit edin. Plaka yüzeyinde plazma nitrür tabakasının aşınmasını kontrol edin — çizikler ana metale ulaşmışsa, yeni bıçaklar takılmadan önce plakanın değiştirilmesi gerekir.\n\n**Hızlı Bıçak Aşınması (Standart PCR'de < 200 Saat):** Nominal olarak orta derecede bir hammadde üzerinde beklenmedik derecede kısa hizmet ömrü, beyan edilenden daha yüksek kirliliğe işaret eder: öğütülmüş malzeme içinde yüksek cam elyafı, silika veya seramik dolgu maddesi içeriği. XRF kirlilik analizi için öğütülmüş malzeme numunesi gönderin. **Yükseltme:** Önce D2'den H13'e geçin; hizmet ömrü hala yetersizse, aşındırıcı maddelerin baskın olduğu arıza akışlarında 5–8 kat daha uzun ömür sağlayan katı tungsten karbür'ye geçin.\n\n**Basınç Alarmı Olmadan Delik Genişlemesi / Filtrasyon Kalitesinde Düşüş:** Filtre plakası mikro delikleri zamanla kademeli olarak genişler ve sabit bir diferansiyel basınçta aşırı büyük kirletici parçacıkların geçmesine izin verir. Temel neden: PVC'den çıkan gazların neden olduğu HCl korozyonu, delik duvarındaki malzemeyi çözer. Genişleyen delikler düşük direnci koruduğu için basınç alarmı çalmaz. **Yükseltme:** Ağırlıkça %5 veya daha fazla PVC içeren tüm akışlar için PVD kaplamalı, korozyona dayanıklı PM çelik filtre plakaları kullanın.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4947,33 +4981,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "hardness-synergy",
-        tag: "ASSET PROTECTION",
-        title: "Engineered Hardness Synergy",
+        tag: "VARLIK KORUMA",
+        title: "Tasarlanmış Sertlik Sinerjisi",
         description:
-          "Filter plates are plasma nitrided to HV 1,000+ (≈ HRC 70+). Scraper blades are deliberately held at HRC 58–62. This verified differential makes the blade the controlled-wear consumable — it wears against the harder plate surface without scoring or gouging. Every shipment includes a hardness certificate confirming the blade is within range.",
+          "Filtre plakaları, HV 1.000+ (≈ HRC 70+) sertliğe ulaşacak şekilde plazma nitrürlenir. Kazıyıcı bıçaklar ise kasıtlı olarak HRC 58–62 aralığında tutulur. Bu doğrulanmış sertlik farkı, bıçağı kontrollü aşınmalı bir sarf malzemesi haline getirir — bıçak, daha sert plaka yüzeyine sürtünürken çizik veya oyuk oluşturmadan aşınır. Her sevkiyatta, bıçağın sertlik değerinin belirtilen aralıkta olduğunu teyit eden bir sertlik sertifikası bulunur.",
       },
       {
         id: "conical-laser-plates",
-        tag: "FILTRATION TECHNOLOGY",
-        title: "Conical Laser-Drilled Micro-Perforations",
+        tag: "FİLTRASYON TEKNOLOJİSİ",
+        title: "Konik Şekilli, Lazerle Açılmış Mikro Delikler",
         description:
-          "Tapered hole geometry (narrow inlet, wide outlet) exploits melt pressure to immediately expel contaminants rather than allowing them to stagnate inside cylindrical-wall holes. Prevents carbonization-driven hole blockage, maintains consistent differential pressure, and supports OEM backflush pulse dynamics at 150–400 bar without micro-cracking.",
+          "Konik delik geometrisi (dar giriş, geniş çıkış), kirletici maddelerin silindirik duvarlı deliklerin içinde birikmesine izin vermek yerine, eriyik basıncından yararlanarak bunları anında dışarı atar. Karbonizasyon kaynaklı delik tıkanmasını önler, tutarlı bir diferansiyel basınç sağlar ve mikro çatlak oluşmadan 150–400 bar basınç aralığında OEM ters yıkama darbe dinamiklerini destekler.",
       },
       {
         id: "failure-upgrade-path",
-        tag: "FAILURE ANALYSIS",
-        title: "Diagnostic Upgrade Path",
+        tag: "ARIZA ANALİZİ",
+        title: "Teşhis Güncelleme Süreci",
         description:
-          "Edge chipping from tramp metal → upgrade to H13 or toughness-grade carbide. Progressive plate scoring → verify blade HRC certificate and bevel angle. Service life < 200 h on standard PCR → step to solid carbide for abrasion-dominated failure. Silent hole enlargement → specify PVD-coated corrosion-resistant PM plates for PVC-containing streams.",
+          "Yabancı metal kaynaklı kenar çentiklenmesi → H13’e veya tokluk sınıfı karbide geçin. Aşamalı plaka çizilmesi → bıçağın HRC sertifikasını ve eğim açısını kontrol edin. Standart PCR’de hizmet ömrü < 200 saat → aşınma kaynaklı arızalarda katı karbide geçin. Sessiz delik genişlemesi → PVC içeren akışlar için PVD kaplamalı, korozyona dayanıklı PM plakaları belirtin.",
       },
     ],
     dimensionLabels: {
-      col0: "Filter Model / OEM",
-      col1: "Blade Length (mm)",
-      col2: "Blade Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Filtre Modeli / OEM",
+      col1: "Bıçak Uzunluğu (mm)",
+      col2: "Bıçak Genişliği (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Representative dimensions for common continuous melt filter platforms. All blades reverse-engineered to exact OEM drawing or customer sample. Custom geometries and mounting interfaces available on request.",
+        "* Yaygın olarak kullanılan sürekli eriyik filtre platformları için temsili boyutlar. Tüm kanatlar, orijinal üretici (OEM) çizimlerine veya müşteri numunelerine tam olarak uygun olacak şekilde tersine mühendislikle üretilmiştir. Talep üzerine özel geometriler ve montaj arayüzleri de temin edilebilir.",
     },
     standardDimensions: [
       {
@@ -5026,78 +5060,78 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "When should I upgrade from D2 to H13 for my scraper blades?",
+            "Sıyırıcı bıçaklarım için D2’den H13’e ne zaman geçmeliyim?",
           answer:
-            "Upgrade to H13 when your melt processing temperature consistently exceeds 260 °C, or when you are processing highly contaminated streams such as post-consumer agricultural film, WEEE plastics, or heavily printed packaging waste. These feedstocks generate significant thermal cycling stress that causes D2 to soften and lose edge geometry within 200–400 operating hours. H13's molybdenum-vanadium carbide matrix maintains hardness and dimensional stability up to 300 °C, extending scraper service life by 60–80% on these feedstocks.",
+            "Eritme işleme sıcaklığınız sürekli olarak 260 °C’yi aştığında veya tüketiciden çıkan tarım filmleri, WEEE plastikleri ya da yoğun baskılı ambalaj atıkları gibi yüksek düzeyde kirlenmiş akışları işlediğinizde H13’e geçin. Bu hammaddeler, D2'nin 200–400 çalışma saati içinde yumuşamasına ve kenar geometrisini kaybetmesine neden olan önemli termal döngü gerilimi oluşturur. H13'ün molibden-vanadyum karbür matrisi, 300 °C'ye kadar sertliği ve boyutsal kararlılığı korur; bu sayede söz konusu hammadde türlerinde sıyırıcının hizmet ömrünü %60–80 oranında uzatır.",
         },
         {
           question:
-            "How does scraper blade wear affect melt pressure and throughput on a continuous filter?",
+            "Sürekli filtrede sıyırıcı bıçağın aşınması, eriyik basıncını ve üretim kapasitesini nasıl etkiler?",
           answer:
-            "A worn scraper blade leaves a residual contamination film on the filter screen surface after each rotation. This film progressively reduces the effective open screen area, causing melt pressure to rise and throughput to fall. On a heavily loaded PCR line, a blade worn beyond its service limit can cause a 15–25% throughput reduction and accelerate screen clogging to the point of breakthrough failure. Monitoring melt pressure differential across the filter is the most reliable wear indicator — we recommend blade inspection when differential pressure rises more than 20% above baseline.",
+            "Aşınmış bir sıyırıcı bıçağı, her dönüşün ardından filtre eleği yüzeyinde kalıntı kirlilik tabakası bırakır. Bu tabaka, etkin açık elek alanını giderek azaltır; bu da eriyik basıncının yükselmesine ve üretim kapasitesinin düşmesine neden olur. Yüksek yük altındaki bir PCR hattında, hizmet ömrü sınırını aşan bir bıçak, verimde %15–25'lik bir düşüşe neden olabilir ve elek tıkanmasını, delme arızasına varacak kadar hızlandırabilir. Filtre üzerindeki eriyik basınç farkını izlemek en güvenilir aşınma göstergesidir — basınç farkı referans değerinin %20'sinden fazla arttığında bıçak muayenesi yapılmasını öneririz.",
         },
         {
           question:
-            "What filtration fineness should I specify for recycled HDPE and PP pellet production?",
+            "Geri dönüştürülmüş HDPE ve PP pelet üretimi için hangi filtreleme inceliğini belirtmeliyim?",
           answer:
-            "For standard PCR HDPE and PP pellet production targeting film or injection moulding applications, specify 300–500 µm filtration fineness. This removes hard particles that cause die-face streaking and surface defects without excessive pressure drop on moderately contaminated feedstock. For food-grade contact recycled resin (rHDPE, rPP under EU 10/2011), specify 150–200 µm to meet the stricter contamination removal requirements. For highly contaminated agricultural film or MSW-derived feedstock, start with 500–800 µm to manage pressure and step down as the input quality improves.",
+            "Film veya enjeksiyon kalıplama uygulamalarına yönelik standart PCR HDPE ve PP pelet üretimi için 300–500 µm filtreleme inceliği belirtin. Bu, orta derecede kirlenmiş hammadde üzerinde aşırı basınç düşüşüne yol açmadan, kalıp yüzeyinde çizgilere ve yüzey kusurlarına neden olan sert parçacıkları giderir. Gıda sınıfı temaslı geri dönüştürülmüş reçine (AB 10/2011 kapsamındaki rHDPE, rPP) için, daha katı kirlilik giderme gerekliliklerini karşılamak üzere 150–200 µm değerini belirtin. Yüksek derecede kirlenmiş tarım filmi veya katı atıklardan elde edilen hammadde için, basıncı kontrol altında tutmak amacıyla 500–800 µm ile başlayın ve hammadde kalitesi iyileştikçe bu değeri kademeli olarak düşürün.",
         },
         {
           question:
-            "Will high-hardness aftermarket scraper blades score or damage my filter plates?",
+            "Yüksek sertlikteki orijinal olmayan sıyırıcı bıçaklar, filtre plakalarımda çiziklere neden olur mu yoksa hasar verir mi?",
           answer:
-            "This is the most important question to ask any aftermarket blade supplier. Sureay engineers a deliberate hardness differential: filter plates are plasma nitrided to HV 1,000+ (approximately HRC 70+), and scraper blades are manufactured to a strictly controlled HRC 58–62. The blade is always softer than the plate surface — it functions as a controlled-wear consumable that gradually wears away without generating metal-transfer scoring or gouging on the harder plate face. Every shipment includes a Rockwell HRC test certificate confirming the blade is within this range. If a supplier cannot provide this certificate, you have no guarantee the hardness differential is correct.",
+            "Bu, herhangi bir yedek parça bıçak tedarikçisine sorulması gereken en önemli sorudur. Sureay, kasıtlı bir sertlik farkı tasarlar: filtre plakaları HV 1.000+ (yaklaşık HRC 70+) seviyesine kadar plazma nitrürleme işlemine tabi tutulurken, sıyırıcı bıçaklar sıkı bir şekilde kontrol edilen HRC 58–62 aralığında üretilir. Bıçak, plaka yüzeyinden her zaman daha yumuşaktır — daha sert plaka yüzeyinde metal transferi kaynaklı çizikler veya oyuklar oluşturmadan kademeli olarak aşınan, kontrollü aşınmalı bir sarf malzemesi olarak işlev görür. Her sevkiyata, bıçağın bu aralıkta olduğunu teyit eden bir Rockwell HRC test sertifikası eklenir. Bir tedarikçi bu sertifikayı sunamazsa, sertlik farkının doğru olduğuna dair hiçbir garantiniz olmaz.",
         },
         {
           question:
-            "Are Sureay filter plates compatible with automated backflushing on Ettlinger and Gneuß systems?",
+            "Sureay filtre plakaları, Ettlinger ve Gneuß sistemlerinde otomatik ters yıkama ile uyumlu mudur?",
           answer:
-            "Yes, fully compatible. Sureay filter plates are designed and FEA-validated for OEM-rated backflush pulse pressures (typically 150–400 bar on Ettlinger ERF and Gneuß RSFgenius systems). The conical laser-drilled hole geometry enhances backflush efficiency: the wider downstream outlet acts as a nozzle that accelerates the reverse pulse through each perforation, improving contaminant ejection versus cylindrical-hole plates. Hole array layout and plate dimensions replicate OEM specifications exactly — no recalibration of backflush timing, pressure, or controller parameters is required after installation.",
+            "Evet, tamamen uyumludur. Sureay filtre plakaları, OEM tarafından belirlenen ters yıkama darbe basınçları (Ettlinger ERF ve Gneuß RSFgenius sistemlerinde tipik olarak 150–400 bar) için tasarlanmış ve FEA ile doğrulanmıştır. Konik lazerle delinmiş delik geometrisi ters yıkama verimliliğini artırır: daha geniş akış aşağı çıkışı, her bir delikten geçen ters darbeli akımı hızlandıran bir nozul görevi görür ve silindirik delikli plakalara kıyasla kirletici maddelerin atılmasını iyileştirir. Delik dizisi düzeni ve plaka boyutları, OEM spesifikasyonlarını tam olarak yansıtmaktadır — kurulumdan sonra geri yıkama zamanlaması, basıncı veya kontrolör parametrelerinin yeniden kalibre edilmesine gerek yoktur.",
         },
         {
           question:
-            "My filter is losing filtration quality without a differential pressure alarm. How do I diagnose this?",
+            "Filtremde basınç farkı alarmı çalmamasına rağmen filtreleme kalitesi düşüyor. Bu sorunu nasıl teşhis edebilirim?",
           answer:
-            "This is the symptom of silent hole enlargement — a failure mode where filter plate micro-perforations gradually widen due to chemical corrosion of the hole walls rather than mechanical wear. Enlarged holes allow oversized contaminant particles through while maintaining low differential pressure because the wider holes offer less resistance. The root cause is almost always HCl outgassing from PVC or organochlorine contamination in the feedstock reacting with standard tool steel at melt temperatures. Confirm by: (1) measuring output melt contamination particle size — if oversized particles are present without pressure rise, hole enlargement is confirmed; (2) inspect a removed plate under magnification for hole-wall pitting or rounding. The solution is to specify Sureay PVD-coated, corrosion-resistant PM steel filter plates, which seal the micro-perforation walls against acid diffusion and prevent the insidious progressive enlargement.",
+            "Bu, “sessiz delik genişlemesi”nin belirtisidir — mekanik aşınmadan ziyade delik duvarlarının kimyasal korozyonu nedeniyle filtre plakasındaki mikro deliklerin kademeli olarak genişlediği bir arıza türüdür. Genişleyen delikler, daha az direnç sundukları için düşük diferansiyel basıncı korurken, boyutları normalin üzerinde olan kirletici parçacıkların geçişine izin verir. Bunun temel nedeni, neredeyse her zaman eriyik sıcaklıklarında standart takım çeliği ile reaksiyona giren hammaddedeki PVC'den veya organoklorlu kirleticilerden kaynaklanan HCl gaz salınımıdır. Bunu şu şekilde doğrulayın: (1) çıkış eriyikindeki kirletici partikül boyutunu ölçün — basınç artışı olmadan aşırı büyük partiküller varsa, delik genişlemesi doğrulanmış demektir; (2) sökülen bir plakayı büyüteç altında inceleyerek delik duvarlarında çukurlaşma veya yuvarlanma olup olmadığını kontrol edin. Çözüm, mikro delik duvarlarını asit difüzyonuna karşı sızdırmaz hale getiren ve sinsi bir şekilde ilerleyen genişlemeyi önleyen Sureay PVD kaplamalı, korozyona dayanıklı PM çelik filtre plakalarının kullanılmasıdır.",
         },
         {
           question:
-            "Can Sureay match our existing EREMA or Gneuß scraper blade dimensions?",
+            "Sureay, mevcut EREMA veya Gneuß sıyırıcı bıçak boyutlarımızla uyumlu olabilir mi?",
           answer:
-            "Yes. Send us your existing blade sample or the OEM part number and machine model. We will dimensionally verify the blade profile on our CMM, confirm the mounting interface, edge bevel angle, and material specification, and supply direct drop-in replacements. For EREMA Continuous Filter and Gneuß Rotary Filtration Systems, we maintain reference drawings for the most common platform sizes. Lead time for standard replacement blades is 7–12 working days from dimension confirmation.",
+            "Evet. Mevcut bıçak numunenizi veya OEM parça numaranızı ve makine modelinizi bize gönderin. Bıçak profilini CMM cihazımızda boyutsal olarak doğrulayacak, montaj arayüzünü, kenar eğim açısını ve malzeme özelliklerini teyit edecek ve doğrudan takılabilen yedek parçalar tedarik edeceğiz. EREMA Sürekli Filtre ve Gneuß Döner Filtreleme Sistemleri için, en yaygın platform boyutlarına ait referans çizimlerini elimizde bulunduruyoruz. Standart yedek bıçaklar için teslim süresi, boyutların onaylanmasından itibaren 7–12 iş günüdür.",
         },
         {
           question:
-            "How many operating hours can I expect from D2 scraper blades on a mixed PCR line?",
+            "Karışık bir PCR üretim hattında D2 sıyırıcı bıçaklarından kaç çalışma saati bekleyebilirim?",
           answer:
-            "On a mixed PCR rigid plastics line (HDPE/PP, < 3% mineral contamination, melt temperature 230–260 °C), D2 scraper blades typically deliver 400–700 operating hours before the edge profile degrades to the point of rising differential pressure. H13 blades on the same line extend service intervals to 600–1,000 hours. On highly abrasive streams (glass-filled compounds, agricultural film with embedded soil), D2 service life drops to 150–300 hours; H13 extends this to 250–450 hours; solid carbide delivers 1,000–2,000+ hours on these feedstocks.",
+            "Karışık PCR sert plastik üretim hattında (HDPE/PP, %3’ten az mineral kirliliği, erime sıcaklığı 230–260 °C), D2 sıyırıcı bıçakları, kenar profili diferansiyel basıncın artmasına neden olacak kadar bozulana kadar genellikle 400–700 çalışma saati hizmet verir. Aynı hattaki H13 bıçakları ise servis aralıklarını 600–1.000 saate uzatır. Aşındırıcılığı yüksek akışlarda (cam elyaf takviyeli bileşikler, içine toprak karışmış tarım filmi), D2'nin hizmet ömrü 150–300 saate düşer; H13 bunu 250–450 saate uzatır; katı karbür ise bu hammaddelerde 1.000–2.000+ saatlik hizmet ömrü sağlar.",
         },
       ],
       company: [
         {
           question:
-            "Are your melt filter scraper blades direct OEM replacements or aftermarket parts?",
+            "Eritme filtresi sıyırıcı bıçaklarınız, doğrudan OEM yedek parçaları mı yoksa satış sonrası parçalar mı?",
           answer:
-            "They are precision aftermarket replacements manufactured to OEM dimensional specifications. We reverse-engineer each blade from OEM drawings or customer samples, verify fit on a CMM, and supply with a dimensional inspection certificate. Our blades are not rebranded OEM parts — they are manufactured directly in our facility using premium D2, H13, or carbide materials with our full quality documentation package.",
+            "Bunlar, OEM boyut spesifikasyonlarına göre üretilmiş hassas yedek parçalardır. Her bir bıçağı OEM çizimlerinden veya müşteri numunelerinden tersine mühendislik uygulayarak tasarlar, CMM üzerinde uyumunu doğrular ve boyutsal kontrol sertifikası ile birlikte teslim ederiz. Bıçaklarımız, markası değiştirilmiş OEM parçaları değildir; birinci sınıf D2, H13 veya karbür malzemeler kullanılarak tesisimizde doğrudan üretilir ve eksiksiz kalite belgeleri ile birlikte sunulur.",
         },
         {
           question:
-            "What quality documentation is included with scraper blade shipments?",
+            "Sıyırma bıçağı gönderileriyle birlikte hangi kalite belgeleri sunulmaktadır?",
           answer:
-            "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
+            "Her sevkiyata şunlar dahildir: Rockwell HRC sertlik testi sertifikası, kenar profili ve montaj arayüz toleranslarını teyit eden CMM boyutsal kontrol raporu, çelik fabrikası malzeme izlenebilirlik sertifikası ve ısıl işlem parti sertifikası. ISO 9001 veya geri dönüşüm süreci onaylaması için daha kapsamlı belgelere ihtiyaç duyan müşterilerimiz için, talep üzerine eksiksiz malzeme test raporları ve süreç kayıtları temin edilebilir.",
         },
       ],
     },
   },
   {
     id: "shredder-screens",
-    name: "Shredder Screens",
-    fullName: "Shredder Screens, Baskets & Screen Plates",
+    name: "Parçalayıcı Elekleri",
+    fullName: "Öğütücü Elekleri, Sepetleri ve Elek Plakaları",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Shredder Screens",
+    categoryDisplay: "Parçalayıcı Elekleri",
     image: "/images/products/shredder-screens/shredder-screens-04.webp",
-    badge: "Wear Parts",
+    badge: "Aşınan Parçalar",
     badgeColor: "teal",
     gallery: [
       "/images/products/shredder-screens/shredder-screens-04.webp",
@@ -5105,16 +5139,16 @@ export const blades: Blade[] = [
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
     galleryAlts: [
-      "Half-round perforated shredder screen basket with mounting flanges, showing staggered round hole pattern",
-      "Batch of perforated shredder screen baskets prepared for export shipment",
-      "Stack of curved shredder screen plates on a pallet, showing staggered round hole pattern",
+      "Montaj flanşlarına sahip, yarım daire şeklinde delikli öğütücü elek sepeti; üzerinde kademeli dairesel delik düzeni görülmektedir",
+      "İhracat sevkiyatı için hazırlanan delikli öğütücü elek sepetleri partisi",
+      "Bir palet üzerinde, kademeli yuvarlak delik desenini gösteren kavisli parçalayıcı elek plakaları yığını",
     ],
     description:
-      "Perforated shredder screens, baskets and screen plates in S355J2 and Hardox 400–500. Hole Ø 8–80 mm, 12–30 mm thick, reverse-engineered from your worn screen.",
+      "S355J2 ve Hardox 400–500 malzemeden üretilmiş delikli parçalayıcı elekleri, sepetleri ve elek plakaları. Delik çapı 8–80 mm, kalınlık 12–30 mm; aşınmış eleklerinizden tersine mühendislik yoluyla üretilir.",
     fullDescription:
-      "The screen is the component that actually decides your output particle size — the rotor and knives only reduce material until it is small enough to pass through. Yet it is the part most operators treat as an afterthought, running a blinded or bell-mouthed screen for months while blaming falling throughput on the knives. On a size-reduction line, screen condition and screen specification together account for more lost capacity than blade wear does.\n\nSureay manufactures shredder screens as engineered wear parts, not as generic perforated plate. Each screen is rolled to the exact rotor radius, so the gap between rotor tip and screen surface stays uniform across the full cutting width. An uneven gap means material is dragged and ground rather than cut, which raises motor amp draw, generates heat and fines, and accelerates knife wear on the very blades the screen was supposed to protect.\n\n## The Three Screen Forms\n\n**Screen Basket (half-round or full-round):** The standard geometry for single-shaft and twin-shaft shredders. Supplied as a half-shell that cradles the rotor, or as two halves clamped into a full cylinder. Basket screens carry the largest open area and are the highest-wear form because the entire inner surface is in contact with circulating material.\n\n**Screen Plate (flat):** Used on granulators and beside-the-press crushers where the cutting chamber geometry is flat rather than cylindrical. Easier to manufacture and to reverse-engineer, and usually the cheapest form to replace.\n\n**Sickle Screen:** A curved partial screen fitted where the discharge geometry does not allow a full basket. Common on compact and mobile shredders.\n\n**Cassette Screen:** A framed, quick-change insert. Higher initial cost, dramatically lower changeover time — worth specifying on lines that run several particle sizes on the same machine.\n\n## Specifying a Screen: Three Numbers That Matter\n\nEvery screen is defined by three interacting dimensions, and changing one forces a change in the others:\n\n- **Hole diameter (Ø)** sets the maximum particle size passing through. It is the number buyers usually quote, and the only one they usually quote.\n- **Plate thickness (t)** sets how long the screen survives. A thicker plate resists deformation and bell-mouthing but reduces effective open area, because each hole becomes a longer channel that material must clear.\n- **Ligament width** — the web of steel between adjacent holes — sets the screen's structural strength. Push the ligament too narrow chasing open area and the screen cracks between holes under impact, usually starting at the discharge edge.\n\nOpen area follows directly from hole diameter and ligament. For round holes on a 60° staggered pitch, open area ≈ 90.7 × (d / p)², where p is the hole centre pitch. Going from a 20 mm hole on a 28 mm pitch to a 20 mm hole on a 24 mm pitch lifts open area from roughly 46% to 63% — and cuts the ligament from 8 mm to 4 mm, which on a plastics shredder handling occasional metal contamination will fail early.\n\n## Why Screens Should Not Be Made From Tool Steel\n\nThis is the most common specification error we correct. A screen is not a cutting tool. It is a perforated structural member that absorbs continuous impact and abrasion while holding its shape. Hardening a screen to HRC 58–62 like a blade makes it brittle: the ligaments crack, and a fractured screen can drop steel fragments into the rotor and destroy a full knife set.\n\nWhat a screen needs is toughness with adequate abrasion resistance:\n\n- **S355J2 structural plate** — the default for clean plastics, film, paper and light MSW. Tough, cheap, easy to re-drill and repair.\n- **Hardox 400 / 450** — for mixed post-consumer waste, wood with grit, and moderately abrasive feed. Roughly 2–3× the service life of S355 at a modest cost premium.\n- **Hardox 500 or hardfaced surfaces** — for glass-filled compounds, contaminated demolition wood, C&D waste and other severely abrasive streams. Hardfacing is applied selectively to the high-wear inner face while the base plate stays tough.\n\n## Reverse Engineering From a Worn Screen\n\nMost replacement orders arrive without a drawing. Send photographs of the worn screen with a tape measure across the hole pitch, plus the machine make and model, and we will produce a manufacturing drawing for your approval before cutting steel. Where the original screen has bell-mouthed, we work from the unworn hole geometry at the edges rather than the enlarged centre holes, so the replacement restores the original particle size rather than reproducing the worn condition.",
+      "Elektik, çıktı parçacık boyutunu fiilen belirleyen bileşendir — rotor ve bıçaklar, malzemeyi yalnızca elekten geçecek kadar küçük hale gelene kadar parçalar. Oysa bu parça, çoğu operatörün ikinci planda tuttuğu bir parçadır; operatörler, aylarca kör veya çan ağızlı bir elek kullanırken, düşen üretim kapasitesini bıçaklara yüklerler. Bir boyut küçültme hattında, elek durumu ve elek özellikleri, bıçak aşınmasından daha fazla kapasite kaybına neden olur.\n\nSureay, parçalayıcı eleklerini genel delikli levha olarak değil, mühendislik ürünü aşınma parçaları olarak üretir. Her elek, rotorun yarıçapına tam olarak uyacak şekilde haddelenir; böylece rotor ucu ile elek yüzeyi arasındaki boşluk, tüm kesme genişliği boyunca sabit kalır. Düzensiz bir boşluk, malzemenin kesilmek yerine sürüklenip öğütülmesine neden olur; bu da motorun amper çekişini artırır, ısı ve ince parçacıklar üretir ve tam da süzgecin koruması gereken bıçakların aşınmasını hızlandırır.\n\n## Üç Süzgeç Şekli\n\n**Süzgeç Sepeti (yarım yuvarlak veya tam yuvarlak):** Tek şaftlı ve çift şaftlı parçalayıcılar için standart geometri. Rotoru saran yarım kabuk şeklinde veya tam bir silindire sıkıştırılmış iki yarım parça olarak tedarik edilir. Sepet elekler en geniş açık alana sahiptir ve iç yüzeyinin tamamı dolaşan malzemeyle temas halinde olduğu için en fazla aşınmaya maruz kalan şekildir.\n\n**Ekran Plakası (düz):** Kesme odası geometrisinin silindirik değil düz olduğu granülatörlerde ve pres yanındaki kırıcılarda kullanılır. Üretimi ve tersine mühendisliği daha kolaydır ve genellikle değiştirilmesi en ucuz olan formdur.\n\n**Orak Ekran:** Boşaltma geometrisinin tam bir sepetin kullanılmasına izin vermediği yerlere takılan, kavisli bir kısmi elek. Kompakt ve mobil parçalayıcılarda yaygındır.\n\n**Kaset Elek:** Çerçeveli, hızlı değiştirilebilir bir ek parça. İlk maliyeti daha yüksek olmakla birlikte, değiştirme süresi önemli ölçüde daha kısadır — aynı makinede çeşitli parçacık boyutlarında işleme yapılan hatlarda tercih edilmeye değerdir.\n\n## Elek Seçimi: Önemli Olan Üç Rakam\n\nHer elek, birbiriyle etkileşim halindeki üç boyutla tanımlanır ve bunlardan birinin değiştirilmesi, diğerlerinde de değişikliğe yol açar:\n\n- **Delik çapı (Ø)**, elekten geçebilen maksimum parçacık boyutunu belirler. Alıcıların genellikle belirttiği ve genellikle tek başına belirttiği rakam budur.\n- **Plaka kalınlığı (t)**, eleklerin ne kadar uzun süre dayanacağını belirler. Daha kalın bir plaka, deformasyona ve çanaklaşmaya karşı direnç gösterir; ancak her delik, malzemenin geçmesi gereken daha uzun bir kanal haline geldiği için etkili açık alanı azaltır.\n- **Bağ genişliği** — bitişik delikler arasındaki çelik ağ — eleklerin yapısal mukavemetini belirler. Açık alanı artırmak için bağı çok dar tutarsanız, darbe altında elek delikler arasında çatlar; bu çatlaklar genellikle boşaltma kenarından başlar.\n\nAçık alan, delik çapı ve bağlantı genişliğinden doğrudan hesaplanır. 60°'lik kademeli aralıktaki yuvarlak delikler için açık alan ≈ 90,7 × (d / p)²'dir; burada p, delik merkez aralığıdır. 28 mm aralıktaki 20 mm'lik delikten 24 mm aralıktaki 20 mm'lik deliğe geçildiğinde, açık alan yaklaşık %46'dan %63'e çıkar ve bağ genişliği 8 mm'den 4 mm'ye düşer; bu da, ara sıra metal kirlenmesiyle karşı karşıya kalan bir plastik parçalayıcıda erken arızaya neden olur.\n\n## Elekler Neden Takım Çeliğinden Yapılmamalıdır?\n\nBu, düzelttiğimiz en yaygın spesifikasyon hatasıdır. Bir elek, kesici bir alet değildir. Elek, şeklini korurken sürekli darbe ve aşınmayı emen delikli bir yapı elemanıdır. Bir eleki bıçak gibi HRC 58–62 sertliğine kadar sertleştirmek onu kırılgan hale getirir: bağlantı elemanları çatlar ve kırılan bir elek, çelik parçalarını rotora düşürerek tüm bıçak setini tahrip edebilir.\n\nBir elek için gerekli olan, yeterli aşınma direncine sahip tokluğudur:\n\n- **S355J2 yapısal levha** — temiz plastikler, film, kağıt ve hafif katı atıklar için standart seçimdir. Tok, ucuz, yeniden delilmesi ve onarımı kolaydır.\n- **Hardox 400 / 450** — karışık tüketici sonrası atıklar, kum içeren ahşap ve orta derecede aşındırıcı beslemeler için. Makul bir maliyet farkıyla S355’in yaklaşık 2–3 katı hizmet ömrü sunar.\n- **Hardox 500 veya sert kaplamalı yüzeyler** — cam takviyeli bileşikler, kirlenmiş yıkıntı ahşabı, inşaat ve yıkıntı atıkları ile diğer aşırı aşındırıcı akışlar için. Sert kaplama, yüksek aşınmaya maruz kalan iç yüzeye seçici olarak uygulanırken, ana levha dayanıklılığını korur.\n\n## Aşınmış Bir Elek Üzerinden Tersine Mühendislik\n\nYedek parça siparişlerinin çoğu çizim olmadan gelir. Delik aralığının üzerine bir mezura yerleştirerek aşınmış elek fotoğraflarını, ayrıca makinenin markasını ve modelini gönderin; biz de çeliği kesmeden önce onayınız için bir üretim çizimi hazırlayalım. Orijinal elekte çanak şeklinde genişleme varsa, genişlemiş merkez delikler yerine kenarlardaki aşınmamış delik geometrisini esas alırız; böylece yedek parça, aşınmış durumu yeniden üretmek yerine orijinal parçacık boyutunu geri kazandırır.",
     disambiguation:
-      "Looking for the cutting tools rather than the sizing screen? See [Single Shaft Shredder Blades](/products/single-shaft-shredder-blades) for rotor inserts, bed knives and holders.",
+      "Eleme eleği yerine kesme aletleri mi arıyorsunuz? Rotor uçları, yatak bıçakları ve tutucular için [Tek Şaftlı Öğütücü Bıçakları](/products/single-shaft-shredder-blades) sayfasına göz atın.",
     link: "/products/shredder-screens",
     compatibleMachines: [
       "Lindner",
@@ -5165,37 +5199,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "A screen is judged on three things: whether it holds the particle size you specified, how long it holds it, and whether it survives the contamination in your feed without cracking.",
+      "Bir elek üç kritere göre değerlendirilir: Belirttiğiniz parçacık boyutunu tutabiliyor mu, ne kadar süreyle tutabiliyor ve beslemedeki kirlenmeye çatlamadan dayanabiliyor mu?",
     components: [
       {
         id: "aperture-sets-particle-size",
-        tag: "SIZING",
-        title: "The Screen Sets Your Output, Not the Rotor",
+        tag: "BEDEN BİLGİLERİ",
+        title: "Çıkışınızı belirleyen ekran, rotor değil",
         description:
-          "Rolled to your exact rotor radius so the tip-to-screen gap stays uniform across the full width. A consistent gap means material is cut once and discharged, instead of being recirculated and ground into heat and fines.",
+          "Rotor yarıçapınıza tam olarak uyacak şekilde haddelenmiştir; böylece uç ile elek arasındaki boşluk, tüm genişlik boyunca sabit kalır. Boşluğun sabit olması, malzemenin yeniden devridaim edilip ısıya dönüşerek ince parçacıklara öğütülmek yerine, tek seferde kesilip boşaltılması anlamına gelir.",
       },
       {
         id: "toughness-not-hardness",
-        tag: "METALLURGY",
-        title: "Toughness, Not Blade Hardness",
+        tag: "METALURJİ",
+        title: "Sertlik, Bıçak Sertliği Değil",
         description:
-          "Screens are specified in S355J2, Hardox 400–500 or selectively hardfaced plate — never hardened to blade HRC. A brittle screen cracks at the ligaments and can drop steel into the rotor, taking a full knife set with it.",
+          "Ekranlar, S355J2, Hardox 400–500 veya seçici olarak sertleştirilmiş levha olarak belirtilir — hiçbir zaman bıçak sertliği (HRC) seviyesine sertleştirilmez. Kırılgan bir ekran, bağlantı noktalarından çatlar ve çeliği rotora düşürebilir; bu durumda tüm bıçak seti de beraberinde gider.",
       },
       {
         id: "screen-knife-system",
-        tag: "SYSTEM",
-        title: "Screens, Counter Knives and Holders as One Order",
+        tag: "SİSTEM",
+        title: "Ekranlar, Tezgah Bıçakları ve Tutucular Tek Sipariş Olarak",
         description:
-          "A blinded or bell-mouthed screen accelerates knife wear, and worn knives blind the screen faster. We supply screens together with counter knives, knife holders, clamping bars and spacers so the whole wear set is replaced on the same shutdown.",
+          "Körleşmiş veya ağzı genişlemiş bir elek, bıçakların aşınmasını hızlandırır; aşınmış bıçaklar ise eleklerin daha hızlı körleşmesine neden olur. Elekleri, karşı bıçaklar, bıçak tutucular, sıkıştırma çubukları ve ara parçalarıyla birlikte tedarik ediyoruz; böylece tüm aşınma seti aynı duruş sırasında değiştirilebiliyor.",
       },
     ],
     dimensionLabels: {
-      col0: "Output Class",
-      col1: "Hole Ø (mm)",
-      col2: "Plate Thickness (mm)",
-      col3: "Ligament (mm)",
+      col0: "Çıktı Sınıfı",
+      col1: "Delik Çapı (mm)",
+      col2: "Levha Kalınlığı (mm)",
+      col3: "Bağ (mm)",
       caption:
-        "* Representative round-hole specifications on a 60° staggered pitch. Square, slotted and mixed-pattern screens available. Every screen is rolled to the customer's rotor radius — send the machine model or a photograph of the worn screen for reverse engineering.",
+        "* 60°’lik kademeli aralıkta tipik yuvarlak delikli teknik özellikler. Kare, yarık ve karışık desenli elekler mevcuttur. Her elek, müşterinin rotor yarıçapına göre haddelenir — tersine mühendislik için makine modelini veya aşınmış elek fotoğrafını gönderin.",
     },
     standardDimensions: [
       {
@@ -5266,71 +5300,71 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "My throughput has dropped. Should I replace the screen or the knives first?",
+            "İşlem kapasitem düştü. Önce eleği mi, yoksa bıçakları mı değiştirmeliyim?",
           answer:
-            "Inspect the screen first, because it is cheaper to check and more often the cause. Look for bell-mouthing — holes that have worn conical and enlarged on the inner face — and for blinding, where softened plastic has plugged the apertures. If holes have grown more than about 10% over nominal, the screen is already passing oversize particles and should be replaced regardless of knife condition. In practice the two wear together: a dull knife pushes material against the screen instead of cutting it, and a blinded screen recirculates material that grinds the knife edge. Replacing only one usually means a second shutdown within weeks.",
+            'Öncelikle elekleri inceleyin; çünkü kontrol etmek daha ucuzdur ve sorun genellikle buradan kaynaklanır. İç yüzeyinde konik bir şekilde aşınarak genişlemiş delikler olan "bell-mouthing" ve yumuşamış plastiğin açıklıkları tıkadığı "blinding" durumlarını arayın. Delikler nominal boyutun yaklaşık %10\'undan fazla büyümüşse, elek zaten boyut aşımı parçacıkları geçirmektedir ve bıçağın durumuna bakılmaksızın değiştirilmelidir. Uygulamada bu iki unsur birlikte aşınır: keskinliğini yitirmiş bir bıçak, malzemeyi kesmek yerine eleğe doğru iter; tıkanmış bir elek ise bıçak kenarını aşındıran malzemeyi tekrar devreye sokar. Genellikle sadece birinin değiştirilmesi, birkaç hafta içinde ikinci bir duruşa neden olur.',
         },
         {
           question:
-            "What actually causes screen blinding, and how do I stop it?",
+            "Ekranın parlamasına aslında ne sebep oluyor ve bunu nasıl önleyebilirim?",
           answer:
-            "Blinding is almost always a heat problem, not a hole-size problem. When knives are dull or the rotor-to-screen gap has opened, material is smeared and worked rather than cut. Frictional heat softens the polymer, which then extrudes into the apertures and sets. Fitting a larger screen usually makes the coarse fraction unacceptable without fixing the cause. The durable fixes are sharpening or replacing the knives, restoring the correct rotor gap, and — for heat-sensitive polymers like LDPE and PP film — reducing feed rate or adding cooling. A thicker plate makes blinding worse, not better, because each hole becomes a longer channel to clear.",
+            "Tıkanma sorunu neredeyse her zaman ısı kaynaklı bir sorundur, delik boyutu ile ilgili bir sorun değildir. Bıçaklar körleştiğinde veya rotor ile elek arasındaki boşluk genişlediğinde, malzeme kesilmek yerine yayılır ve işlenir. Sürtünmeden kaynaklanan ısı, polimeri yumuşatır; polimer daha sonra deliklere sıkışarak sertleşir. Daha büyük bir elek takmak, sorunun nedenini gidermeden genellikle iri parçacıkların kabul edilemez hale gelmesine neden olur. Kalıcı çözümler arasında bıçakları bilemek veya değiştirmek, doğru rotor boşluğunu yeniden ayarlamak ve — LDPE ve PP film gibi ısıya duyarlı polimerler için — besleme hızını azaltmak veya soğutma eklemek yer alır. Daha kalın bir plaka, tıkanmayı iyileştirmez, aksine daha da kötüleştirir; çünkü her delik, temizlenmesi gereken daha uzun bir kanal haline gelir.",
         },
         {
           question:
-            "How much open area can I add before the screen becomes structurally unsafe?",
+            "Ekran yapısal olarak güvenli olmaktan çıkmadan önce ne kadar açık alan ekleyebilirim?",
           answer:
-            "The limit is set by ligament width, not by open-area percentage. As a working rule, keep the ligament at or above 0.4× the hole diameter for clean plastics and at or above 0.6× for feed that may contain metal, stone or other hard contamination. A 20 mm hole with an 8 mm ligament gives roughly 46% open area and survives contaminated feed; the same hole with a 4 mm ligament reaches about 63% open area but will crack between holes under impact, typically starting at the discharge edge. On abrasive streams we would rather increase plate thickness and accept slightly lower open area than chase throughput with a thin ligament.",
+            "Sınır, açık alan yüzdesine göre değil, bağ genişliğine göre belirlenir. Genel bir kural olarak, temiz plastikler için bağ genişliğini delik çapının 0,4 katı veya üzerinde, metal, taş veya diğer sert yabancı maddeler içerebilecek beslemeler için ise 0,6 katı veya üzerinde tutun. 8 mm'lik bir bağa sahip 20 mm'lik bir delik, yaklaşık %46 açık alan sağlar ve kirlenmiş besleme maddelerine dayanır; 4 mm'lik bir bağa sahip aynı delik, yaklaşık %63 açık alana ulaşır, ancak darbe altında delikler arasında çatlar; bu çatlama genellikle boşaltma kenarından başlar. Aşındırıcı akışlarda, ince bir bağ ile verimi artırmaya çalışmaktansa, plaka kalınlığını artırmayı ve biraz daha düşük açık alan oranını kabul etmeyi tercih ederiz.",
         },
         {
           question:
-            "Why shouldn't a screen be hardened to the same HRC as the blades?",
+            "Bir ekran neden bıçaklarla aynı HRC sertliğine getirilmesin ki?",
           answer:
-            "Because a screen fails differently from a blade. A blade needs edge retention and works in compression at the cutting edge; a screen is a perforated structural member absorbing continuous impact across a large span. Hardened to HRC 58–62, the ligaments lose the ductility they need to absorb shock and crack rather than deform. A cracked screen is far more expensive than a worn one, because fragments entering the rotor can destroy an entire knife set. We specify S355J2 for clean plastics, Hardox 400/450 for mixed post-consumer feed, and Hardox 500 or selective hardfacing for severely abrasive material — all chosen for toughness first.",
+            "Çünkü bir elek, bir bıçakla aynı şekilde arızalanmaz. Bir bıçağın kesici kenarının keskinliğini koruması gerekir ve kesici kenarında sıkıştırma kuvveti altında çalışır; bir elek ise geniş bir açıklık boyunca sürekli darbeyi emen delikli bir yapı elemanıdır. HRC 58–62 sertliğine sahip olan bağlantı elemanları, darbeyi emmek için ihtiyaç duydukları sünekliği yitirir ve deforme olmak yerine çatlar. Çatlamış bir elek, aşınmış bir elekten çok daha pahalıdır; çünkü rotora giren parçalar tüm bıçak setini tahrip edebilir. Temiz plastikler için S355J2’yi, karışık tüketici sonrası atıklar için Hardox 400/450’yi ve aşırı aşındırıcı malzemeler için Hardox 500’ü veya seçici sert kaplamayı öneriyoruz — hepsi öncelikle tokluk kriterine göre seçilmiştir.",
         },
         {
           question:
-            "Can you manufacture a screen from my worn one if I have no drawing?",
+            "Elimde çizim yoksa, eskimiş ekranımdan yeni bir ekran üretebilir misiniz?",
           answer:
-            "Yes, and this is how most of our screen orders start. Send photographs of the worn screen with a tape measure laid across the hole pitch, plus the machine make and model and, where possible, the overall arc length and end-plate detail. We produce a manufacturing drawing for your written approval before any steel is cut. One important detail: we take hole geometry from the unworn edges rather than the enlarged centre holes, so the new screen restores your original particle size instead of reproducing the worn condition.",
+            "Evet, ekran siparişlerimizin çoğu işte bu şekilde başlar. Delik aralığının üzerine bir mezura yerleştirilmiş şekilde aşınmış ekranın fotoğraflarını, makinenin markasını ve modelini ve mümkünse toplam yay uzunluğunu ve uç plaka detaylarını gönderin. Çelik kesilmeden önce, yazılı onayınız için bir üretim çizimi hazırlıyoruz. Önemli bir ayrıntı: Delik geometrisini, genişlemiş merkez deliklerinden ziyade aşınmamış kenarlardan alıyoruz; böylece yeni elek, aşınmış durumu yeniden üretmek yerine orijinal parçacık boyutunuzu geri kazandırır.",
         },
         {
           question:
-            "Do you supply the counter knives, holders and clamping bars as well?",
+            "Karşı bıçakları, tutucuları ve sıkıştırma çubuklarını da tedarik ediyor musunuz?",
           answer:
-            "Yes. Screens, counter knives, knife holders, clamping bars and spacers are all manufactured in-house and routinely shipped together, which is how we recommend ordering them. Replacing the screen while leaving worn counter knives in place means the new screen blinds faster, and a single consolidated shipment reduces both freight cost and the number of production shutdowns.",
+            "Evet. Elekler, karşı bıçaklar, bıçak tutucular, sıkıştırma çubukları ve ara parçaların tamamı kendi tesislerimizde üretilmekte ve genellikle birlikte sevk edilmektedir; bu nedenle bunları bu şekilde sipariş etmenizi öneririz. Aşınmış karşı bıçakları yerinde bırakarak elekleri değiştirmek, yeni eleklerin daha çabuk tıkanmasına neden olur; tek bir toplu sevkiyat ise hem nakliye maliyetini hem de üretim kesintilerinin sayısını azaltır.",
         },
       ],
       company: [
         {
-          question: "Are you a manufacturer or a trading company?",
+          question: "Üretici misiniz yoksa ticaret şirketi misiniz?",
           answer:
-            "We are a direct manufacturer established in 2008. Screens are cut, rolled, drilled and — where specified — hardfaced in our own workshop, which is why we can work from a photograph of a worn part rather than requiring a finished drawing.",
+            "2008 yılında kurulmuş bir doğrudan üretici firmayız. Eleme ızgaraları, kendi atölyemizde kesilir, sarılır, delinir ve — talep edildiği durumlarda — sert kaplama işlemine tabi tutulur; bu sayede, hazır bir çizim yerine aşınmış bir parçanın fotoğrafını kullanarak da üretim yapabiliyoruz.",
         },
         {
           question:
-            "What is the lead time on a reverse-engineered screen, and how is it packed?",
+            "Tersine mühendislik yoluyla üretilen bir ekranın teslim süresi ne kadardır ve nasıl paketlenir?",
           answer:
-            "Standard screens in stocked plate thicknesses ship in 10–15 working days from drawing approval. Reverse-engineered screens add roughly 3–5 days for the drawing and approval cycle. Screens are shipped on fumigated wooden pallets with edge protection and steel strapping; large-diameter baskets are nested to reduce volumetric freight cost.",
+            "Stokta bulunan levha kalınlıklarında standart elekler, çizimin onaylanmasından itibaren 10–15 iş günü içinde sevk edilir. Tersine mühendislik yoluyla üretilen eleklerde ise çizim ve onay süreci için yaklaşık 3–5 gün daha eklenir. Elekler, kenar korumalı ve çelik şeritlerle bağlanmış, fumigasyon işleminden geçirilmiş ahşap paletler üzerinde sevk edilir; büyük çaplı sepetler, hacimsel nakliye maliyetini azaltmak amacıyla iç içe yerleştirilir.",
         },
         {
-          question: "What documentation ships with a screen order?",
+          question: "Bir ekran siparişiyle birlikte hangi belgeler gönderilir?",
           answer:
-            "Every order includes a dimensional inspection record against the approved drawing and a material certificate for the plate — including the Hardox mill certificate where Hardox grades are specified. Hardfaced screens additionally carry a record of the hardfacing consumable and deposited hardness.",
+            "Her sipariş, onaylanmış çizime göre hazırlanmış bir boyut kontrol raporu ve levha için bir malzeme sertifikası içerir — Hardox kalitelerinin belirtildiği durumlarda Hardox fabrikası sertifikası da buna dahildir. Sert kaplamalı elekler ayrıca, sert kaplama malzemesi ve kaplama sertliği bilgilerini içeren bir rapora sahiptir.",
         },
       ],
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Cutter Compactor Blades",
-    fullName: "Cutter Compactor Rotor & Stator Knives",
+    name: "Kesici Sıkıştırıcı Bıçakları",
+    fullName: "Kesici Sıkıştırıcı Rotor ve Stator Bıçakları",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Cutter Compactor Blades",
+    categoryDisplay: "Kesici Sıkıştırıcı Bıçakları",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-    badge: "PCR Recycling",
+    badge: "PCR Geri Dönüşümü",
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
@@ -5338,14 +5372,14 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Pair of cutter compactor stator knives showing the ground bevel and countersunk mounting",
-      "Cutter compactor blade set — rotor knife, knife holder block and stator knife",
-      "Long cutter compactor rotor knife with ground cutting edge and counterbored fixing hole",
+      "Taşlanmış eğim ve havşa açıklı montajı gösteren bir çift kesici sıkıştırıcı stator bıçağı",
+      "Kesici sıkıştırıcı bıçak seti — rotor bıçağı, bıçak tutucu bloğu ve stator bıçağı",
+      "Taşlanmış kesme kenarına ve havşa açılmış sabitleme deliğine sahip uzun kesici sıkıştırıcı rotor bıçağı",
     ],
     description:
-      "Rotor and stator knives for cutter compactors and agglomerators in D2, M2 HSS and carbide-tipped. Drop-in fit for EREMA, NGR, Starlinger and Previero.",
+      "Kesici sıkıştırıcılar ve aglomera makineleri için D2, M2 HSS ve karbür uçlu rotor ve stator bıçakları. EREMA, NGR, Starlinger ve Previero makinelerine doğrudan takılabilir.",
     fullDescription:
-      "In a cutter compactor — also sold as an agglomerator, densifier or preconditioning unit — rotating knives cut and friction-heat loose film, fibre or PET flake until it softens and densifies into a free-flowing crumb the extruder can actually feed. The knives do two jobs at once: they cut, and they generate the controlled frictional heat that makes densification work. That dual duty is why they wear faster than any other tool on the line, typically needing replacement every three to six months on continuous film and PET operations.\n\nSureay manufactures both the rotating knives and the fixed stator knives, plus the holder blocks and pre-cutter blades that mount with them. Blades are ground flat and parallel across their full length, because on a compactor the flatness of the mounting face is what determines whether the cutting gap you set at installation is the gap you still have at the far end of the knife.\n\n## Cutting Gap: The Variable That Controls Everything\n\nThe gap between the rotating knife and the fixed stator knife is the single most consequential setting on a cutter compactor, and the one most often left unchecked between blade changes.\n\n**Gap too wide.** Material is kneaded rather than cut. Frictional heat climbs beyond the intended window, film smears into lumps instead of forming a uniform crumb, bulk density becomes inconsistent, and the extruder downstream sees a fluctuating feed. On PET flake, excess heat drives moisture-related degradation before the material ever reaches the dryer. Throughput falls while power consumption rises — the classic signature of a worn or badly set gap.\n\n**Gap too narrow.** The knives contact under load. Edges chip, motor current spikes on every heavy charge, and in the worst case a rotating knife strikes the stator hard enough to damage the holder block or the rotor disc itself — a repair an order of magnitude more expensive than the blades.\n\nTypical working gaps run in the region of 0.2–0.5 mm depending on machine size and material, but the correct figure is the one in your machine manual. What matters is that the gap can actually be held: if the blade's mounting face is not flat, or if the rotor knife and stator knife have worn by different amounts, the gap varies along the cutting length no matter how carefully it was set.\n\n## Why Rotor and Stator Knives Are Replaced as a Set\n\nRotating and fixed knives wear at different rates and in different geometries — the rotor knife loses its edge, while the stator knife tends to wear a radius and to hollow slightly where the material stream concentrates. Fitting a new rotor knife against a worn stator restores only half the cutting geometry: the gap becomes uneven along its length, the new blade carries the whole cutting load, and it dulls far faster than it should. Replacing both together costs more per shutdown and less per tonne.\n\n## Material Selection by Feedstock\n\n**D2 (1.2379), HRC 58–61** — the general-purpose choice for clean LDPE, LLDPE and PP film, woven bags and pre-consumer production scrap. Good edge retention, forgiving of the occasional impact, and the most economical to re-sharpen.\n\n**M2 HSS (1.3343), HRC 62–64** — for PET flake, printed and heavily dusted film, and post-consumer material carrying paper label residue or fine mineral contamination. Retains its edge at the elevated temperatures inside a working compactor, where D2 begins to soften.\n\n**Carbide-tipped, HRA 89–91 at the edge** — for glass-fibre reinforced compounds, mineral-filled material, carbon-black masterbatch and high-ash feedstocks. Substantially longer intervals between changes on streams that destroy tool steel, at a higher unit price and with less tolerance for impact.\n\n## Machine Compatibility\n\nBlades are reverse-engineered to EREMA (INTAREMA, TVEplus and RegrindPro preconditioning units), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac and Munchy machines. Send the machine model and a photograph of the worn blade, or the blade itself, and we will produce a drawing for approval before manufacture.",
+      "Bir kesici sıkıştırıcıda — aynı zamanda aglomeratör, yoğunlaştırıcı veya ön işleme ünitesi olarak da satılır — dönen bıçaklar, gevşek film, elyaf veya PET pullarını, yumuşayıp ekstrüderin besleyebileceği serbest akışlı bir kırıntıya dönüşene kadar keser ve sürtünme ısısı ile ısıtır. Bıçaklar aynı anda iki iş yapar: keserler ve yoğunlaştırma işlemini sağlayan kontrollü sürtünme ısısını üretirler. Bu çift işlev, bıçakların üretim hattındaki diğer tüm aletlerden daha hızlı aşınmasına neden olur; sürekli film ve PET işlemlerinde genellikle her üç ila altı ayda bir değiştirilmeleri gerekir.\n\nSureay, hem döner bıçakları hem de sabit stator bıçaklarını, ayrıca bunlarla birlikte monte edilen tutucu blokları ve ön kesici bıçaklarını üretmektedir. Bıçaklar, tüm uzunlukları boyunca düz ve paralel olarak taşlanır; çünkü bir sıkıştırıcıda, montaj yüzeyinin düzlüğü, kurulum sırasında ayarladığınız kesme aralığının bıçağın uzak ucunda da aynı kalıp kalmayacağını belirler.\n\n## Kesme Boşluğu: Her Şeyi Kontrol Eden Değişken\n\nDönen bıçak ile sabit stator bıçağı arasındaki boşluk, bir kesici kompaktördeki en önemli ayardır ve bıçak değişimleri arasında en sık kontrol edilmeyen ayardır.\n\n**Boşluk çok genişse.** Malzeme kesilmek yerine yoğrulur. Sürtünme ısısı istenen aralığın üzerine çıkar, film homojen bir kırıntı oluşturmak yerine topaklara dönüşür, yığın yoğunluğu tutarsız hale gelir ve ekstrüderin aşağısında dalgalı bir besleme görülür. PET pullarında, aşırı ısı, malzeme kurutucuya ulaşmadan önce nem kaynaklı bozulmaya neden olur. Verim düşerken güç tüketimi artar — bu, aşınmış veya yanlış ayarlanmış aralığın klasik belirtisidir.\n\n**Boşluk çok dar.** Bıçaklar yük altında birbirine temas eder. Kenarlar yontulur, her ağır yüklemede motor akımı ani artışlar gösterir ve en kötü durumda dönen bir bıçak, tutucu bloğuna veya rotor diskine zarar verecek kadar sert bir şekilde statora çarpar — bu onarım, bıçaklardan bir mertebe daha pahalıdır.\n\nTipik çalışma aralıkları, makine boyutuna ve malzemeye bağlı olarak 0,2–0,5 mm aralığındadır, ancak doğru değer makine kılavuzunuzda belirtilen değerdir. Önemli olan, boşluğun gerçekten korunabilmesidir: bıçağın montaj yüzeyi düz değilse veya rotor bıçağı ile stator bıçağı farklı oranlarda aşınmışsa, ne kadar dikkatli ayarlanmış olursa olsun boşluk kesme uzunluğu boyunca değişir.\n\n## Rotor ve Stator Bıçakları Neden Bir Set Olarak Değiştirilir?\n\nDönen ve sabit bıçaklar farklı hızlarda ve farklı geometrik şekillerde aşınır — rotor bıçağı keskinliğini kaybederken, stator bıçağı malzeme akışının yoğunlaştığı yerlerde yarıçap şeklinde aşınmaya ve hafifçe oyulmaya meyillidir. Aşınmış bir statora yeni bir rotor bıçağı takmak, kesme geometrisinin yalnızca yarısını geri kazandırır: boşluk, uzunluğu boyunca düzensiz hale gelir, yeni bıçak tüm kesme yükünü üstlenir ve olması gerekenden çok daha hızlı körelir. Her ikisini birlikte değiştirmek, her duruş başına maliyet açısından daha pahalı, ton başına maliyet açısından ise daha ucuzdur.\n\n## Hammaddeye Göre Malzeme Seçimi\n\n**D2 (1.2379), HRC 58–61** — temiz LDPE, LLDPE ve PP film, dokuma torbalar ve tüketim öncesi üretim artıkları için genel amaçlı seçimdir. Keskinliğini iyi korur, ara sıra meydana gelen darbelere dayanıklıdır ve yeniden bileme açısından en ekonomiktir.\n\n**M2 HSS (1.3343), HRC 62–64** — PET pulları, baskılı ve yoğun tozlu filmler ile kağıt etiket kalıntıları veya ince mineral kirliliği içeren tüketici sonrası malzemeler içindir. D2'nin yumuşamaya başladığı, çalışan bir sıkıştırıcı içindeki yüksek sıcaklıklarda keskinliğini korur.\n\n**Karbür uçlu, kenarında HRA 89–91** — cam elyaf takviyeli bileşikler, mineral dolgulu malzemeler, karbon siyahı masterbatch ve yüksek kül içerikli hammaddeler için. Takım çeliğini yıpratan akışlarda, daha yüksek birim fiyat ve darbeye karşı daha az toleransla, değiştirme aralıkları önemli ölçüde uzar.\n\n## Makine Uyumluluğu\n\nBıçaklar, EREMA (INTAREMA, TVEplus ve RegrindPro ön işleme üniteleri), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac ve Munchy makinelerine uyumlu olacak şekilde tersine mühendislik uygulanarak tasarlanmıştır. Makine modelini ve aşınmış bıçağın bir fotoğrafını veya bıçağın kendisini bize gönderin; üretimden önce onayınız için bir çizim hazırlayalım.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5396,37 +5430,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "Compactor blades fail in one of three ways: the edge goes, the gap drifts, or the blade chips on contamination. Each has a different fix, and specifying for the wrong one wastes money.",
+      "Sıkıştırıcı bıçaklarında üç tür arıza görülür: kesici kenar aşınır, boşluk kayar veya bıçak kir nedeniyle ufalanır. Her birinin farklı bir çözüm yolu vardır ve yanlış çözümü seçmek para israfına yol açar.",
     components: [
       {
         id: "gap-holding-geometry",
-        tag: "GEOMETRY",
-        title: "A Gap You Set Once and Keep",
+        tag: "GEOMETRİ",
+        title: "Bir Kez Belirlediğiniz ve Korumaya Devam Ettiğiniz Bir Boşluk",
         description:
-          "Ground to ≤0.03 mm flatness and ≤0.02 mm parallelism over the full blade length. The gap you dial in at installation stays uniform end to end, instead of opening at one end and closing at the other as load is applied.",
+          "Bıçağın tüm uzunluğu boyunca ≤0,03 mm düzlük ve ≤0,02 mm paralellik sağlanır. Montaj sırasında ayarladığınız boşluk, yük uygulandığında bir uçta açılıp diğer uçta kapanmak yerine, uçtan uca sabit kalır.",
       },
       {
         id: "feedstock-matched-alloy",
-        tag: "METALLURGY",
-        title: "Alloy Matched to What You Actually Run",
+        tag: "METALURJİ",
+        title: "Kullandığınız Araçla Uyumlu Alaşım",
         description:
-          "D2 for clean PE and PP film, M2 HSS for PET flake and dusted post-consumer material that softens D2 at working temperature, carbide-tipped for glass-filled and high-ash streams. Specified from your feedstock, not from a default.",
+          "Temiz PE ve PP filmler için D2, PET pulları ve çalışma sıcaklığında D2’yi yumuşatan toz halindeki tüketici sonrası malzemeler için M2 HSS; cam dolgulu ve yüksek kül içerikli akışlar için karbür uçlu. Varsayılan ayarlara göre değil, hammaddanıza göre belirlenir.",
       },
       {
         id: "matched-rotor-stator-sets",
-        tag: "SERVICE LIFE",
-        title: "Supplied as Matched Rotor + Stator Sets",
+        tag: "KULLANIM ÖMRÜ",
+        title: "Eşleştirilmiş Rotor + Stator Setleri Olarak Tedarik Edilir",
         description:
-          "Rotor and stator knives wear to different geometries. Fitting a new rotor knife against a worn stator leaves the gap uneven and loads the new blade alone — it dulls in a fraction of its rated life. We quote and ship them as sets.",
+          "Rotor ve stator bıçakları zamanla farklı geometrik şekillere dönüşür. Aşınmış bir statora yeni bir rotor bıçağı takmak, aralığın dengesiz kalmasına neden olur ve yükü tek başına yeni bıçağın omuzlarına yükler — bu da bıçağın nominal ömrünün çok küçük bir kısmında körelmesine yol açar. Bu bıçakları set halinde fiyatlandırıp sevk ediyoruz.",
       },
     ],
     dimensionLabels: {
-      col0: "Knife Type",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Bıçak Türü",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Representative envelope sizes across common compactor platforms. Every blade is manufactured to the OEM drawing or reverse-engineered from your sample — send the machine model and a photograph of the worn blade for an exact quotation.",
+        "* Yaygın olarak kullanılan sıkıştırıcı platformlarında kullanılan tipik bıçak boyutları. Her bıçak, OEM çizimine göre üretilir veya numunenizden tersine mühendislik yoluyla tasarlanır — kesin bir fiyat teklifi almak için makine modelini ve aşınmış bıçağın bir fotoğrafını gönderin.",
     },
     standardDimensions: [
       {
@@ -5479,62 +5513,63 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What cutting gap should I set between the rotor and stator knives?",
+            "Rotor ve stator bıçakları arasında hangi kesme aralığını ayarlamalıyım?",
           answer:
-            "Use the figure in your machine manual — it is machine- and material-specific, and typically falls somewhere in the 0.2–0.5 mm range. The more useful question is whether the gap stays where you set it. If the blade mounting face is not flat, or if you have fitted a new rotor knife against a worn stator, the gap will vary along the cutting length regardless of how carefully it was dialled in. Set the gap with feeler gauges at both ends and the centre of the blade, not at a single point, and re-check it after the first few hours of running once everything has seated and reached working temperature.",
+            "Makine kılavuzunuzdaki değeri kullanın — bu değer makineye ve malzemeye özeldir ve genellikle 0,2–0,5 mm aralığında yer alır. Daha önemli olan soru, boşluğun ayarladığınız konumda kalıp kalmadığıdır. Bıçak montaj yüzeyi düz değilse veya aşınmış bir statorun üzerine yeni bir rotor bıçağı takmışsanız, ne kadar dikkatli ayarlanmış olursa olsun boşluk kesme uzunluğu boyunca değişecektir. Boşluğu tek bir noktada değil, bıçağın her iki ucunda ve ortasında kalınlık ölçerlerle ayarlayın ve her şey yerine oturup çalışma sıcaklığına ulaştıktan sonra, çalışmanın ilk birkaç saatinden sonra tekrar kontrol edin.",
         },
         {
           question:
-            "My compactor is running hot and the output is lumpy instead of a uniform crumb. What's wrong?",
+            "Sıkıştırıcım aşırı ısınmış durumda ve çıktı, homojen bir kırıntı yerine topak topak çıkıyor. Sorun nedir?",
           answer:
-            "That is the classic signature of an over-wide cutting gap, usually from worn blades. When the gap opens, material is kneaded rather than cut, so frictional heat rises past the intended window, film smears into lumps, and bulk density becomes erratic — which the extruder sees as a fluctuating feed. You will typically also see power consumption up and throughput down at the same time. Check the gap and the blade edges before adjusting temperature setpoints or feed rate, because those are compensations for the real problem rather than fixes.",
+            "Bu, genellikle aşınmış bıçaklardan kaynaklanan aşırı geniş kesme aralığının klasik belirtisidir. Aralık genişlediğinde malzeme kesilmek yerine yoğrulur; bu nedenle sürtünme ısısı istenen aralığın üzerine çıkar, film topaklar halinde yayılır ve yığın yoğunluğu düzensiz hale gelir — ekstrüder bunu dalgalanan bir besleme olarak algılar. Genellikle aynı anda hem güç tüketiminin arttığını hem de üretim veriminin düştüğünü de gözlemlersiniz. Sıcaklık ayar değerlerini veya besleme hızını ayarlamadan önce kesme aralığını ve bıçak kenarlarını kontrol edin; çünkü bunlar asıl sorunun çözümü değil, sadece telafisidir.",
         },
         {
           question:
-            "Can I replace only the rotor knives and keep the stator knives?",
+            "Sadece rotor bıçaklarını değiştirip stator bıçaklarını kullanmaya devam edebilir miyim?",
           answer:
-            "You can, but it is usually a false economy. The two wear to different geometries — the rotor knife loses its edge while the stator tends to wear a radius and hollow where the material stream concentrates. A new rotor knife running against a worn stator carries the entire cutting load across an uneven gap and will dull far faster than its rated life, so you end up back at the same shutdown sooner. Replacing both together costs more per changeover and less per tonne processed.",
+            "Bunu yapabilirsiniz, ancak genellikle bu bir yanılsamadır. İkisi farklı şekillerde aşınır — rotor bıçağı keskinliğini kaybederken, stator ise malzeme akışının yoğunlaştığı yerde yarıçap ve oyuk şeklinde aşınmaya meyillidir. Aşınmış bir stator karşısında çalışan yeni bir rotor bıçağı, tüm kesme yükünü düzensiz bir boşluktan geçirir ve nominal ömründen çok daha hızlı körelir; bu nedenle, daha kısa sürede yine aynı duruş durumuna geri dönersiniz. İkisini birlikte değiştirmek, her değişim başına maliyeti artırır, ancak işlenen ton başına maliyeti düşürür.",
         },
         {
           question:
-            "How do I choose between D2, M2 HSS and carbide-tipped blades?",
+            "D2, M2 HSS ve karbür uçlu bıçaklar arasında nasıl seçim yapmalıyım?",
           answer:
-            "Match the alloy to your feedstock. D2 at HRC 58–61 is the economical default for clean LDPE, LLDPE and PP film, woven bags and pre-consumer scrap. Move to M2 HSS at HRC 62–64 for PET flake and for printed or dusty post-consumer film — M2 holds its edge at the elevated temperature inside a working compactor, where D2 starts to soften. Reserve carbide-tipped blades for glass-fibre reinforced compounds, mineral-filled material and high-ash streams; they last dramatically longer on those feeds but cost more and tolerate impact less well, so they are the wrong choice if your feed contains occasional metal.",
+            "Alaşımı hammaddenize uygun seçin. HRC 58–61 sertliğindeki D2, temiz LDPE, LLDPE ve PP filmler, dokuma torbalar ve tüketim öncesi atıklar için ekonomik bir standart seçenektir. PET pulları ve baskılı veya tozlu tüketim sonrası filmler için HRC 62–64 sertlikteki M2 HSS'ye geçin — M2, D2'nin yumuşamaya başladığı çalışma sıkıştırıcısının içindeki yüksek sıcaklıkta keskinliğini korur. Karbür uçlu bıçakları cam elyaf takviyeli bileşikler, mineral dolgulu malzemeler ve yüksek kül içerikli akışlar için saklayın; bu hammaddelerde bıçaklar çok daha uzun süre dayanır ancak maliyeti daha yüksektir ve darbelere karşı daha az dayanıklıdır; bu nedenle, hammaddenizde ara sıra metal bulunuyorsa bu bıçaklar yanlış seçimdir.",
         },
         {
           question:
-            "How many times can a cutter compactor blade be re-sharpened?",
+            "Bir kesici sıkıştırıcı bıçağı kaç kez yeniden bilenebilir?",
           answer:
-            "Three to five regrinds is typical for D2 and M2 blades before the blade reaches its minimum usable height and the gap can no longer be adjusted to compensate. Each regrind removes material from the cutting face, so the blade sits progressively lower in its holder — most machines allow this to be taken up with shims up to a point. Carbide-tipped blades are re-ground on the carbide only and generally allow fewer cycles. We mark the minimum height on the manufacturing drawing so your maintenance team knows when a blade is finished rather than guessing.",
+            "D2 ve M2 bıçaklarda, bıçak minimum kullanım yüksekliğine ulaşana ve boşluk artık telafi edilemeyecek hale gelene kadar genellikle üç ila beş kez yeniden bileme yapılır. Her yeniden bileme işlemi kesme yüzeyinden malzeme kaldırır, bu nedenle bıçak tutucusunda giderek daha alçak bir konuma gelir — çoğu makine, bir noktaya kadar bu durumu şimlerle telafi etmeye izin verir. Karbür uçlu bıçaklar yalnızca karbür kısmı üzerinden yeniden bileme işlemine tabi tutulur ve genellikle daha az bileme döngüsüne izin verir. Bakım ekibinizin tahminde bulunmak yerine bir bıçağın kullanım ömrünün ne zaman sona erdiğini tam olarak bilmesi için, üretim çiziminde minimum yüksekliği işaretliyoruz.",
         },
       ],
       company: [
         {
           question:
-            "Can you make blades for my compactor without an OEM drawing?",
+            "OEM çizimi olmadan sıkıştırıcım için bıçaklar üretebilir misiniz?",
           answer:
-            "Yes — this is the majority of what we do on this product. Send the machine make and model plus a worn blade, or clear photographs with measurements across length, width, thickness and the mounting hole positions. We produce a manufacturing drawing for your written approval before cutting steel, and we keep it on file so repeat orders need no re-measurement.",
+            "Evet — bu ürünle ilgili yaptığımız işlerin büyük bir kısmını bu oluşturuyor. Makinenin markasını ve modelini, ayrıca aşınmış bir bıçağı ya da uzunluk, genişlik, kalınlık ve montaj deliklerinin konumlarını gösteren net fotoğrafları bize gönderin. Çeliği kesmeden önce yazılı onayınız için bir üretim çizimi hazırlıyoruz ve bunu arşivimizde saklıyoruz; böylece tekrar siparişlerde yeniden ölçüm yapmaya gerek kalmaz.",
         },
         {
-          question: "What is the lead time, and can I trial a set first?",
+          question:
+            "Teslim süresi ne kadardır ve bir seti önce deneme fırsatım var mı?",
           answer:
-            "Blades manufactured to an existing drawing ship in 10–15 working days. First-time reverse-engineered blades add roughly 3–5 days for drawing and approval. We supply trial sets for machine-fit verification and edge-life testing before you commit to a production quantity — for custom profiles we produce a dimensional sign-off sample first, so there is no tooling commitment until fit is confirmed.",
+            "Mevcut bir çizim temelinde üretilen bıçaklar 10–15 iş günü içinde sevk edilir. İlk kez tersine mühendislik yoluyla tasarlanan bıçaklarda ise çizim ve onay süreci için yaklaşık 3–5 gün ek süre gerekir. Üretim miktarına karar vermeden önce, makineye uyum doğrulaması ve kesici kenar ömrü testi için deneme setleri sağlıyoruz. Özel profiller için ise öncelikle boyut onay numunesi üretiyoruz; böylece uyum onaylanana kadar kalıp taahhüdü söz konusu olmaz.",
         },
         {
-          question: "What documentation comes with the blades?",
+          question: "Bıçaklarla birlikte hangi belgeler veriliyor?",
           answer:
-            "Each shipment includes a Rockwell hardness test certificate, a dimensional inspection record against the approved drawing, a steel mill material traceability certificate and a heat treatment batch record. Full CMM dimensional reports are available on request for OEM qualification.",
+            "Her sevkiyatta bir Rockwell sertliği test sertifikası, onaylı çizime göre hazırlanmış boyutsal kontrol kaydı, çelik fabrikası malzeme izlenebilirlik sertifikası ve bir ısıl işlem parti kaydı bulunmaktadır. OEM onay süreci için talep üzerine eksiksiz CMM boyutsal raporları temin edilebilir.",
         },
       ],
     },
   },
   {
     id: "die-face-cutting-knives",
-    name: "Die Face Cutting Knives & Pelletizer Blades",
-    fullName: "Die Face Cutting Knives & Pelletizer Blades",
+    name: "Kalıp Yüzü Kesme Bıçakları ve Peletleme Bıçakları",
+    fullName: "Kalıp Yüzü Kesme Bıçakları ve Peletleme Bıçakları",
     category: "granulator_blades",
     sector: "recycling",
-    categoryDisplay: "Die Face Cutting Knives",
+    categoryDisplay: "Kalıp Yüzü Kesme Bıçakları",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
     badge: "Die-Safe",
@@ -5545,16 +5580,16 @@ export const blades: Blade[] = [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
     ],
     galleryAlts: [
-      "Range of die face cutting knife profiles — straight, forked, stepped and tapered geometries",
-      "Close-up of a single die face cutting knife showing the ground cutting edge and twin mounting slots",
-      "Pair of die face cutting knives on a white background showing slot geometry and edge finish",
+      "Kalıp yüzeyi kesme bıçağı profilleri yelpazesi — düz, çatallı, kademeli ve konik geometriler",
+      "Tek bir kalıp yüzüne ait kesme bıçağının yakın çekimi; bu görüntüde taşlanmış kesme kenarı ve ikiz montaj yuvaları görülmektedir",
+      "Beyaz zemin üzerinde, yuva geometrisini ve kenar yüzey kalitesini gösteren bir çift kalıp yüzeyi kesme bıçağı",
     ],
     description:
-      "Die face cutting knives for underwater, water-ring and hot die face pelletizers, ground softer than your die plate. Fits Gala, Nordson BKG, Maag, ECON.",
+      "Sualtı, su halkalı ve sıcak kalıp yüzlü peletleyiciler için kalıp yüzü kesme bıçakları, kalıp plakanızdan daha yumuşak taşlanmıştır. Gala, Nordson BKG, Maag ve ECON markalarına uygundur.",
     fullDescription:
-      "A die face cutting knife — also sold as an underwater pelletizer blade, die face cutter knife, hot die face knife or UWP knife — is a consumable running in permanent sliding contact with a die plate worth tens of thousands of dollars. That asymmetry defines the entire specification problem: the blade must be hard enough to hold a cutting edge against hot polymer, and deliberately softer than the die face it rides on, so that wear is absorbed by the part you intend to replace.\n\nThis is the same controlled-wear logic Sureay applies to continuous melt filter scraper blades, and it is why we quote a hardness differential rather than simply the highest hardness available. A blade harder than the die plate does not last longer — it scores the die face, opens the cutting gap, and turns a routine blade change into a die refurbishment.\n\n## Three Pelletizing Methods, Three Different Blades\n\n**Underwater pelletizing (UWP).** The die face is fully submerged in a temperature-controlled water box. Pellets are cut directly at the die face and carried away as a slurry. Blades run wet and warm, which makes corrosion resistance a genuine selection factor — 440C stainless earns its place here despite lower edge retention than tool steel.\n\n**Water-ring pelletizing.** An annular water curtain cools pellets after they are cut, but the die face itself runs in air. Thermal cycling on the blade edge is more severe than in true underwater cutting, favouring tougher grades over the hardest ones.\n\n**Hot die face pelletizing.** Cutting happens dry against a heated die, with pellets conveyed away by air. The highest edge temperature of the three methods, and the strongest case for PM-HSS or carbide.\n\n## Blade Geometry\n\nEdge form is chosen from polymer viscosity and the pellet shape you want:\n\n- **45° bevel** — the general-purpose geometry. Good balance of edge strength and cutting sharpness across commodity polyolefins.\n- **90° square edge** — maximum edge strength for stiff, filled or highly abrasive compounds where a fine bevel would chip.\n- **Stepped bevel** — a two-stage relief that keeps a sharp cutting line while leaving a robust land behind it. Used where a fine edge is needed but blade life on a 45° would be unacceptable.\n- **Curved / hooked** — draws the melt strand into the cut rather than pushing it away. Suited to low-viscosity and tacky polymers that smear against a straight edge.\n\n## Why Thickness Consistency Within a Set Decides Blade Life\n\nA pelletizer runs a full set of blades on one cutter hub, held against the die face by a common preload. If the blades in that set vary in thickness, the thickest blades carry a disproportionate share of the contact pressure while the thinnest barely touch. The result is a set that wears unevenly, a cut quality that degrades long before the average blade is worn out, and localized die face scoring under the high blades.\n\nWe grind blades in matched sets and verify thickness consistency across the set on a CMM, rather than inspecting to a per-piece tolerance alone. Flatness matters for the same reason: a blade that is not flat contacts the die on an edge rather than across its land.\n\n## Material Selection\n\n**D2 (1.2379)** — economical general-purpose grade for clean commodity polyolefins.\n**M2 HSS (1.3343)** — better hot hardness for higher-temperature and engineering polymers.\n**T42 (1.3207)** — high-tungsten HSS for sustained elevated-temperature cutting.\n**PM powder-metallurgy HSS** — uniform fine carbide structure, the best combination of edge retention and toughness for abrasive and filled compounds.\n**440C stainless** — for underwater service where corrosion resistance outweighs peak edge life, particularly on lines that sit idle between campaigns.\n**Tungsten carbide** — maximum life on glass-filled and mineral-filled compounds, where its brittleness is an acceptable trade.\n\n## Machine Compatibility\n\nBlades are manufactured to suit Gala, Nordson BKG (including AH series), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec and WRP pelletizing systems. Send the machine model with a sample blade or a photograph with measurements, and we will produce a drawing for approval. Cutter hubs, die plates, threaded rods, blade screws and O-rings are supplied alongside the blades.",
+      "Kalıp yüzeyi kesme bıçağı — aynı zamanda su altı peletleme bıçağı, kalıp yüzeyi kesici bıçağı, sıcak kalıp yüzeyi bıçağı veya UWP bıçağı olarak da satılır — on binlerce dolar değerindeki bir kalıp plakasıyla sürekli kayma teması halinde çalışan bir sarf malzemesidir. Bu asimetri, tüm teknik özellik sorununu tanımlar: bıçak, sıcak polimere karşı kesici kenarını koruyacak kadar sert olmalı ve üzerinde kayacağı kalıp yüzeyinden kasıtlı olarak daha yumuşak olmalıdır; böylece aşınma, değiştirmeyi planladığınız parça tarafından emilir.\n\nBu, Sureay’in sürekli eriyik filtre sıyırıcı bıçaklarına uyguladığı kontrollü aşınma mantığıyla aynıdır ve bu nedenle, sadece mevcut en yüksek sertlik değerini değil, bir sertlik farkını belirtiriz. Kalıp plakasından daha sert bir bıçak daha uzun ömürlü olmaz — kalıp yüzeyinde çizikler oluşturur, kesme aralığını genişletir ve rutin bir bıçak değişimini kalıp yenileme işlemine dönüştürür.\n\n## Üç Peletleme Yöntemi, Üç Farklı Bıçak\n\n**Sualtı peletleme (UWP).** Kalıp yüzeyi, sıcaklığı kontrol edilen bir su kutusuna tamamen daldırılır. Peletler doğrudan kalıp yüzeyinde kesilir ve çamur halindeyken uzaklaştırılır. Bıçaklar ıslak ve sıcak ortamda çalışır; bu da korozyon direncini gerçek bir seçim faktörü haline getirir — 440C paslanmaz çelik, takım çeliğine kıyasla kenar tutma özelliği daha düşük olmasına rağmen burada yerini hak eder.\n\n**Su halkalı peletleme.** Peletler kesildikten sonra dairesel bir su perdesi ile soğutulur, ancak kalıp yüzeyi havada çalışır. Bıçak kenarındaki termal döngü, gerçek su altı kesiminden daha şiddetlidir; bu da en sert çelikler yerine daha dayanıklı çelik sınıflarının tercih edilmesini sağlar.\n\n**Sıcak kalıp yüzeyi peletleme.** Kesme işlemi, ısıtılmış bir kalıba karşı kuru olarak gerçekleşir ve peletler hava ile taşınır. Üç yöntem arasında en yüksek kenar sıcaklığı bu yöntemdedir ve PM-HSS veya karbür için en uygun seçenektir.\n\n## Bıçak Geometrisi\n\nKenar şekli, polimer viskozitesine ve istediğiniz pelet şekline göre seçilir:\n\n- **45° eğim** — genel amaçlı geometri. Ticari poliolefinlerde kenar mukavemeti ve kesme keskinliği arasında iyi bir denge sağlar.\n- **90° kare kenar** — ince bir eğimin ufalanmasına neden olacağı sert, dolgulu veya aşındırıcı özelliği yüksek bileşikler için maksimum kenar mukavemeti sağlar.\n- **Kademeli eğim** — keskin bir kesim çizgisi sağlarken arkasında sağlam bir kenar bırakan iki aşamalı bir rahatlama. İnce bir kenarın gerekli olduğu ancak 45°'lik bir bıçak ömrünün kabul edilemez olacağı durumlarda kullanılır.\n- **Kavisli / kancalı** — erimiş şeritleri itmek yerine kesime doğru çeker. Düz bir kenara sürtünerek leke bırakan düşük viskoziteli ve yapışkan polimerler için uygundur.\n\n## Bir Set İçindeki Kalınlık Tutarlılığı Neden Bıçak Ömrünü Belirler?\n\nBir peletleyici, tek bir kesici göbeği üzerinde tam bir bıçak seti çalıştırır; bu bıçaklar, ortak bir ön yükleme ile kalıp yüzeyine bastırılır. Eğer bu setteki bıçakların kalınlıkları farklıysa, en kalın bıçaklar temas basıncının orantısız bir kısmını üstlenirken, en ince bıçaklar kalıba zar zor temas eder. Sonuç olarak, set düzensiz bir şekilde aşınır, ortalama bir bıçak aşınmadan çok önce kesim kalitesi düşer ve yüksek bıçakların altında kalıp yüzeyinde yerel çizikler oluşur.\n\nBıçakları eşleştirilmiş setler halinde taşlar ve tek tek parça toleranslarını kontrol etmek yerine, bir CMM üzerinde set genelinde kalınlık tutarlılığını doğrularız. Düzlük de aynı nedenden dolayı önemlidir: düz olmayan bir bıçak, kalıba geniş yüzeyinden değil, kenarından temas eder.\n\n## Malzeme Seçimi\n\n**D2 (1.2379)** — temiz ticari poliolefinler için ekonomik, genel amaçlı sınıf.\n**M2 HSS (1.3343)** — yüksek sıcaklıkta ve mühendislik polimerleri için daha iyi sıcak sertlik.\n**T42 (1.3207)** — sürekli yüksek sıcaklıkta kesim için yüksek tungstenli HSS.\n**PM toz metalurjisi HSS** — homojen ince karbür yapısı; aşındırıcı ve dolgulu bileşikler için kenar tutma ve tokluğun en iyi kombinasyonu.\n**440C paslanmaz** — korozyon direncinin maksimum kesici kenar ömründen daha önemli olduğu su altı uygulamaları için, özellikle de işler arasında atıl durumda kalan hatlarda.\n**Tungsten karbür** — kırılganlığının kabul edilebilir bir ödün olduğu, cam dolgulu ve mineral dolgulu bileşiklerde maksimum ömür.\n\n## Makine Uyumluluğu\n\nBıçaklar, Gala, Nordson BKG (AH serisi dahil), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec ve WRP peletleme sistemlerine uyacak şekilde üretilmektedir. Makine modelini bir bıçak örneği veya ölçüleri içeren bir fotoğrafla birlikte gönderin; onayınız için bir çizim hazırlayalım. Kesici göbekleri, kalıp plakaları, dişli çubuklar, bıçak vidaları ve O-ringler bıçaklarla birlikte tedarik edilir.",
     disambiguation:
-      "Cutting extruded strands in air rather than at the die face? See [Strand Pelletizer Rotors](/products/strand-pelletizer-rotors) for helical rotor and bed knife sets.",
+      "Ekstrüde şeritleri kalıp yüzeyinde değil de havada kesmek mi istiyorsunuz? Helisel rotor ve yatay bıçak setleri için [Şerit Peletleyici Rotorları](/products/strand-pelletizer-rotors) sayfasına bakın.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -5604,37 +5639,37 @@ export const blades: Blade[] = [
       },
     ],
     componentsIntro:
-      "The die plate is the asset; the blade is the consumable. Everything below follows from keeping that relationship the right way round.",
+      "Kalıp plakası ana unsurdur; bıçak ise sarf malzemesidir. Aşağıdaki her şey, bu ilişkinin doğru şekilde korunmasından kaynaklanmaktadır.",
     components: [
       {
         id: "die-plate-protection",
-        tag: "CONTROLLED WEAR",
-        title: "Your Die Plate Outlives the Blade",
+        tag: "KONTROLLÜ AŞINMA",
+        title: "Kalıp Plakanız, Bıçağınızdan Daha Uzun Ömürlüdür",
         description:
-          "Blade hardness is specified below the die face hardness so the consumable absorbs the wear. A blade harder than the die does not last longer — it scores the die face, opens the cutting gap and turns a blade change into a die refurbishment.",
+          "Bıçak sertliği, kalıp yüzeyinin sertliğinden daha düşük olarak belirlenir; böylece aşınma, sarf malzemesi tarafından karşılanır. Kalıptan daha sert bir bıçak, daha uzun ömürlü olmaz — kalıp yüzeyinde çizikler oluşturur, kesme aralığını genişletir ve bıçak değişimini kalıp yenileme işlemine dönüştürür.",
       },
       {
         id: "matched-set-grinding",
-        tag: "PRECISION",
-        title: "Ground and Verified as a Matched Set",
+        tag: "HASSASİYET",
+        title: "Eşleşen Bir Küme Olarak İşlenmiş ve Doğrulanmış",
         description:
-          "Thickness consistency within ≤0.01 mm across the set, CMM-verified. A full set shares one preload against the die: thick blades take the load and score the die, thin ones never cut. Per-piece tolerance alone does not prevent this.",
+          "Set genelinde ≤0,01 mm'lik kalınlık tutarlılığı, CMM ile doğrulanmıştır. Tam bir set, kalıba karşı tek bir ön yükü paylaşır: kalın bıçaklar yükü üstlenir ve kalıba iz bırakır; ince olanlar ise hiçbir zaman kesim yapmaz. Tek başına parça başına tolerans bu durumu önleyemez.",
       },
       {
         id: "geometry-by-polymer",
-        tag: "GEOMETRY",
-        title: "Edge Form Chosen From Your Polymer",
+        tag: "GEOMETRİ",
+        title: "Polimerinizden Seçilen Kenar Şekli",
         description:
-          "45° for commodity polyolefins, 90° for filled and abrasive compounds, stepped bevel where a fine edge is needed but must survive, hooked for low-viscosity and tacky melts that smear against a straight edge.",
+          "Ticari poliolefinler için 45°, dolgu maddeli ve aşındırıcı bileşikler için 90°, ince bir kenarın gerekli olduğu ancak bu kenarın sağlam kalması gereken durumlarda kademeli eğimli kenar; düz kenara sürtünerek bulaşan düşük viskoziteli ve yapışkan eriyikler için ise kancalı kenar.",
       },
     ],
     dimensionLabels: {
-      col0: "Blade Profile",
-      col1: "Length × Width (mm)",
-      col2: "Thickness (mm)",
-      col3: "Mounting",
+      col0: "Bıçak Profili",
+      col1: "Uzunluk × Genişlik (mm)",
+      col2: "Kalınlık (mm)",
+      col3: "Montaj",
       caption:
-        "* Representative geometries from blades currently in production. Underwater pelletizer blades are made to the specific cutter hub — send the machine model with a sample blade or a dimensioned photograph for an exact quotation.",
+        "* Halen üretimde olan bıçaklardan örnek geometriler. Su altı tipi peletleyici bıçakları bıçakları, kesici göbeğine özel olarak üretilmektedir — kesin bir fiyat teklifi almak için makine modelini bir bıçak örneği veya boyutları belirtilmiş bir fotoğrafla birlikte gönderin.",
     },
     standardDimensions: [
       {
@@ -5676,62 +5711,62 @@ export const blades: Blade[] = [
     ],
     drawings: {
       intro:
-        "Most pelletizer blade orders reach us without an OEM drawing — a customer sends a worn blade, or a photograph and a machine model. The geometries below are drawings we produced that way, from measurement to approved manufacturing print. They show the range of body shapes, slot patterns and flank angles we hold in production, and what your own blade would look like once reverse-engineered.",
+        "Peletleme bıçağı siparişlerinin çoğu bize OEM çizimi olmadan ulaşır — müşteri, aşınmış bir bıçak ya da bir fotoğraf ve makine modelini gönderir. Aşağıdaki geometriler, ölçümden onaylı üretim çizimine kadar bu şekilde hazırladığımız çizimlerdir. Bunlar, üretimde bulundurduğumuz gövde şekilleri, yuva desenleri ve yan yüzey açılarının çeşitliliğini ve tersine mühendislik uygulandığında bıçağınızın nasıl görüneceğini göstermektedir.",
       items: [
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-00.webp",
-          caption: "Straight body, twin slot — 45 × 25 mm, Ø5.5 slots",
+          caption: "Düz gövde, çift yuvalı — 45 × 25 mm, Ø5,5 yuvalı",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-01.webp",
-          caption: "Forked, three open slots — 55 × 34 mm, R3.5",
+          caption: "Çatallı, üç açık yuva — 55 × 34 mm, R3.5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-02.webp",
-          caption: "Straight body, twin slot — 60 × 28 mm, 15 mm pitch",
+          caption: "Düz gövde, çift yuvalı — 60 × 28 mm, 15 mm aralık",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-03.webp",
-          caption: "Straight body, twin slot — 60 × 30 mm, R3.5",
+          caption: "Düz gövdeli, çift yuvalı — 60 × 30 mm, R3.5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-04.webp",
-          caption: "Straight body, long slot — 60 × 34 mm, R3.3",
+          caption: "Düz gövde, uzun yarık — 60 × 34 mm, R3.3",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-05.webp",
-          caption: "Stepped shoulder, 129° flank — 60 × 35 mm",
+          caption: "Kademeli omuz, 129° yan yüzey — 60 × 35 mm",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-06.webp",
-          caption: "Wide body, radiused heel — 60 × 46 mm, 2 × R5",
+          caption: "Geniş gövde, yuvarlatılmış topuk — 60 × 46 mm, 2 × R5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-07.webp",
-          caption: "Wide body, offset slots — 60 × 46 mm, 2 × R5",
+          caption: "Geniş gövde, kaydırmalı yuvalar — 60 × 46 mm, 2 × R5",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-08.webp",
-          caption: "Wide body, centred slots — 60 × 46 mm, 16 mm pitch",
+          caption: "Geniş gövde, ortalanmış yuvalar — 60 × 46 mm, 16 mm aralık",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-09.webp",
-          caption: "Tall body, twin slot — 69 × 34 mm, Ø7 slots",
+          caption: "Yüksek gövde, çift yuvalı — 69 × 34 mm, Ø7 yuva",
         },
         {
           image:
             "/images/products/die-face-cutting-knives/die-face-cutting-knife-drawing-10.webp",
-          caption: "Tapered neck, 63° flanks — 70 mm, 60 → 25 mm",
+          caption: "Konik boyun, 63° yan yüzeyler — 70 mm, 60 → 25 mm",
         },
       ],
     },
@@ -5747,73 +5782,75 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Will your blades damage my die plate?",
+          question: "Bıçaklarınız kalıp plakama zarar verir mi?",
           answer:
-            "Not if the hardness relationship is specified correctly, and that is the first thing we establish on any enquiry. The blade is deliberately held below the hardness of the die face so wear is absorbed by the consumable. A blade harder than the die plate does not give you longer life — it scores the die face, which opens the cutting gap, degrades pellet quality and eventually requires the die to be re-ground or replaced. Tell us the die plate material and hardness, or the machine model if you do not have it, and we specify the blade against it. Every shipment carries a hardness certificate so you can verify the relationship before the blades go on.",
+            "Sertlik ilişkisi doğru bir şekilde belirlenmişse böyle bir durum söz konusu olmaz ve bu, herhangi bir talep geldiğinde ilk olarak belirlediğimiz husustur. Bıçak, aşınmanın sarf malzemesi tarafından emilmesi için kask yüzeyinin sertliğinin altında kalacak şekilde kasıtlı olarak ayarlanır. Kalıp plakasından daha sert bir bıçak, size daha uzun ömür sağlamaz — kalıp yüzeyinde çizikler oluşturur, bu da kesme aralığını genişletir, pelet kalitesini düşürür ve sonunda kalıbın yeniden taşlanmasını veya değiştirilmesini gerektirir. Bize kalıp plakasının malzemesini ve sertliğini veya elinizde bu bilgi yoksa makine modelini bildirin; biz de buna uygun bıçağı belirleyelim. Her sevkiyata bir sertlik sertifikası eklenir; böylece bıçaklar takılmadan önce bu ilişkiyi doğrulayabilirsiniz.",
         },
         {
           question:
-            "Why does one blade in my set wear out much faster than the others?",
+            "Setimdeki bıçaklardan biri neden diğerlerine göre çok daha çabuk aşınıyor?",
           answer:
-            "Almost always uneven thickness within the set. A full set of blades shares one preload against the die face, so if thickness varies from blade to blade the thickest ones carry a disproportionate share of the contact pressure — they wear rapidly and score the die, while the thinnest blades barely make contact and never cut properly. The set fails long before the average blade is worn out. This is why we grind blades in matched sets and CMM-verify thickness consistency across the set to within 0.01 mm, rather than inspecting each blade to a tolerance in isolation.",
+            "Set içindeki bıçakların kalınlığı neredeyse her zaman dengesizdir. Tam bir bıçak seti, kalıp yüzeyine karşı tek bir ön yükü paylaşır; dolayısıyla bıçaklar arasında kalınlık farklılığı varsa, en kalın olanlar temas basıncının orantısız bir kısmını üstlenir — bu bıçaklar hızla aşınır ve kalıpta çizikler oluştururken, en ince bıçaklar ise neredeyse hiç temas etmez ve hiçbir zaman düzgün kesim yapamaz. Set, ortalama bir bıçak aşınmadan çok önce işlevini yitirir. Bu nedenle bıçakları eşleştirilmiş setler halinde taşlıyoruz ve her bir bıçağı tek tek tolerans sınırları içinde denetlemek yerine, set genelinde kalınlık tutarlılığını CMM ile 0,01 mm hassasiyetinde doğruluyoruz.",
         },
         {
           question:
-            "Which edge geometry should I use — 45°, 90°, stepped or hooked?",
+            "Hangi kenar geometrisini kullanmalıyım — 45°, 90°, kademeli mi yoksa kancalı mı?",
           answer:
-            "Choose from polymer viscosity and filler content. A 45° bevel is the general-purpose geometry and the right default for commodity polyolefins. Move to a 90° square edge for stiff, mineral-filled or highly abrasive compounds where a fine bevel would chip. A stepped bevel gives you a sharp cutting line with a robust land behind it, for cases where you need the fine edge but a plain 45° will not survive. Curved or hooked geometry draws the melt into the cut instead of pushing it away, which is what you want on low-viscosity or tacky polymers that smear against a straight edge.",
+            "Polimer viskozitesi ve dolgu maddesi içeriği arasından seçim yapın. 45°'lik bir eğim, genel amaçlı bir geometridir ve ticari poliolefinler için doğru varsayılan seçenektir. İnce bir eğimin kırılabileceği sert, mineral dolgulu veya aşındırıcı özelliği yüksek bileşikler için 90° kare kenara geçin. Kademeli bir eğim, ince kenara ihtiyacınız olduğu ancak düz 45°'nin dayanamayacağı durumlarda, arkasında sağlam bir yüzey bulunan keskin bir kesim çizgisi sağlar. Kavisli veya kancalı geometri, eriyiği kesimden uzaklaştırmak yerine kesimin içine çeker; bu, düz kenara yapışan düşük viskoziteli veya yapışkan polimerlerde istediğiniz sonuçtur.",
         },
         {
           question:
-            "Should I use stainless steel blades for underwater pelletizing?",
+            "Su altı peletleme işlemi için paslanmaz çelik bıçaklar kullanmalı mıyım?",
           answer:
-            "440C stainless is worth specifying when corrosion is a real operating factor — particularly on lines that sit idle between campaigns, where a tool steel blade can develop surface rust in the water box that then scores the die on restart. The trade-off is edge retention: 440C will not hold an edge as long as M2 or PM-HSS at the same duty. If your line runs continuously and the water chemistry is controlled, tool steel or PM-HSS usually gives better cost per tonne. If it stops and starts, or the water box is not drained, the stainless option often pays for itself.",
+            "Korozyonun gerçek bir çalışma faktörü olduğu durumlarda — özellikle kampanyalar arasında atıl durumda kalan hatlarda, burada takım çeliğinden yapılmış bir bıçağın su haznesinde yüzey pası oluşması ve bu pasın yeniden çalıştırma sırasında kalıbı çizmesi söz konusu olduğunda — 440C paslanmaz çeliğin tercih edilmesi önemlidir. Bunun karşılığında keskinlik ömründen ödün verilir: 440C, aynı çalışma koşullarında M2 veya PM-HSS kadar uzun süre keskinliğini koruyamaz. Hattınız kesintisiz çalışıyorsa ve su kimyası kontrol altındaysa, takım çeliği veya PM-HSS genellikle ton başına daha iyi maliyet sağlar. Hattınız durup kalkıyorsa veya su kutusu boşaltılmıyorsa, paslanmaz çelik seçeneği genellikle kendini amorti eder.",
         },
         {
           question:
-            "How do underwater, water-ring and hot die face blades differ?",
+            "Sualtı bıçakları, su halkalı bıçaklar ve sıcak kalıp yüzey bıçakları birbirlerinden nasıl farklıdır?",
           answer:
-            "They differ mainly in the thermal and corrosive environment at the edge. Underwater blades run submerged and warm, so corrosion resistance is a genuine selection factor. Water-ring blades cut at a die face running in air with the water curtain downstream, which subjects the edge to more severe thermal cycling and favours tougher grades over the hardest ones. Hot die face blades cut dry against a heated die and see the highest edge temperature of the three, which is where PM-HSS and carbide earn their premium. Tell us which method your line uses — it changes the recommended grade even when the blade dimensions are identical.",
+            "Bu bıçaklar, esas olarak kesici kenardaki termal ve korozif ortam bakımından farklılık gösterir. Sualtı bıçakları su altında ve sıcak ortamda çalıştığından, korozyon direnci önemli bir seçim kriteridir. Su halkalı bıçaklar ise, su perdesi akış yönünün aşağısında, havada çalışan bir kalıp yüzeyinde kesim yapar; bu durum, kesici kenarı daha şiddetli termal döngülere maruz bırakır ve en sert kaliteler yerine daha dayanıklı kalitelerin tercih edilmesini sağlar. Sıcak kalıp yüzeyi bıçakları ise ısıtılmış bir kalıba karşı kuru kesim yapar ve üçü arasında en yüksek kenar sıcaklığına maruz kalır; işte bu noktada PM-HSS ve karbür sınıfları üstünlüklerini gösterir. Hattınızda hangi yöntemin kullanıldığını bize bildirin — bıçak boyutları aynı olsa bile önerilen sınıf bu bilgiye göre değişir.",
         },
         {
           question:
-            "Do you supply cutter hubs and die plates as well as blades?",
+            "Bıçakların yanı sıra kesici göbekleri ve kalıp plakaları da tedarik ediyor musunuz?",
           answer:
-            "Yes. Cutter hubs, die plates, threaded rods, blade fixing screws and O-rings are all available, and ordering the wear set together avoids the mismatch that causes uneven blade loading. If you are replacing a hub as well as blades, we recommend supplying them together so the blade seating faces and the hub are verified against each other before shipment.",
+            "Evet. Kesici göbekleri, kalıp plakaları, dişli çubuklar, bıçak sabitleme vidaları ve O-halkaları mevcuttur; aşınma setini bir arada sipariş etmek, bıçaklara dengesiz yükleme neden olan uyumsuzluğu önler. Bıçakların yanı sıra bir göbeği de değiştiriyorsanız, sevkiyat öncesinde bıçak oturtma yüzeyleri ile göbeğin birbirine uygunluğunun kontrol edilebilmesi için bunları birlikte temin etmenizi öneririz.",
         },
       ],
       company: [
         {
           question:
-            "Can you reverse-engineer blades from a sample without an OEM drawing?",
+            "OEM çizimi olmadan bir numuneden bıçakların tersine mühendisliğini yapabilir misiniz?",
           answer:
-            "Yes, and it is how most pelletizer blade orders begin. Send a sample blade — ideally an unworn one, or a worn one together with the machine model — and we produce a full dimensional drawing on our CMM for your approval before manufacture. We keep the approved drawing on file so repeat orders require no re-measurement. Your drawings and samples remain your intellectual property and are never shared.",
+            "Evet, çoğu peletleyici bıçak siparişi işte böyle başlar. Bir bıçak numunesi gönderin — tercihen aşınmamış bir bıçak ya da aşınmış bir bıçakla birlikte makine modelini de belirtin — biz de üretimden önce onayınız için CMM cihazımızda tam boyutlu bir çizim hazırlarız. Onaylanan çizimi dosyalarımızda saklarız, böylece tekrar siparişlerde yeniden ölçüm yapmaya gerek kalmaz. Çizimleriniz ve numuneleriniz sizin fikri mülkiyetiniz olarak kalır ve asla paylaşılmaz.",
         },
         {
-          question: "What is the lead time, and can I run a trial set first?",
+          question:
+            "Teslim süresi ne kadardır ve önce bir deneme seti kullanabilir miyim?",
           answer:
-            "Blades made to an existing approved drawing ship in 10–15 working days; first-time reverse-engineered sets add roughly 3–5 days for measurement, drawing and approval. We supply trial sets for fit verification and edge-life comparison against your current supplier before you commit to a production quantity.",
+            "Mevcut onaylı bir çizime göre üretilen bıçaklar 10–15 iş günü içinde sevk edilir; tersine mühendislik yoluyla ilk kez üretilen setlerde ise ölçüm, çizim ve onay işlemleri için yaklaşık 3–5 gün ek süre gerekir. Üretim miktarına karar vermeden önce, mevcut tedarikçinizle karşılaştırmalı olarak uyum doğrulaması ve kesici kenar ömrü karşılaştırması yapabilmeniz için deneme setleri sağlıyoruz.",
         },
         {
-          question: "What documentation ships with a pelletizer blade set?",
+          question:
+            "Bir peletleme bıçağı setiyle birlikte hangi belgeler verilir?",
           answer:
-            "Every set includes a Rockwell hardness certificate — the document that lets you verify the blade-to-die hardness relationship before installation — plus a CMM dimensional report covering thickness consistency across the set, a steel mill material traceability certificate and a heat treatment batch record.",
+            "Her sette, kurulum öncesinde bıçak ile kalıp arasındaki sertlik ilişkisini doğrulamanızı sağlayan Rockwell sertliği sertifikası; set genelinde kalınlık tutarlılığını gösteren bir CMM boyutsal raporu; bir çelik fabrikası malzeme izlenebilirlik sertifikası ve bir ısıl işlem parti kaydı bulunmaktadır.",
         },
       ],
     },
   },
   {
     id: "special-shaped-blades",
-    name: "Special-Shaped Blades",
-    fullName: "Custom Profile & Special-Shaped Industrial Blades",
+    name: "Özel Şekilli Bıçaklar",
+    fullName: "Özel Profilli ve Özel Şekilli Endüstriyel Bıçaklar",
     category: "custom_profile",
     sector: "other",
-    categoryDisplay: "Custom Profile Blades",
+    categoryDisplay: "Özel Profilli Bıçaklar",
     image: "/images/products/blades/special-shaped-knife.webp",
-    badge: "OEM Custom",
+    badge: "OEM Özel Üretim",
     badgeColor: "teal",
     description:
-      "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. Any profile, any industry.",
+      "Müşterinin DXF/DWG çizimleri veya fiziksel numunelerinden üretilen, hassas imalatla hazırlanmış özel profilli ve özel şekilli endüstriyel bıçaklar. D2, H13, PM-HSS ve katı karbür. Toleranslar ±0,02 mm’ye kadar. Her türlü profil, her türlü endüstri.",
     link: "/custom",
     specs: [
       {
@@ -5840,14 +5877,14 @@ export const blades: Blade[] = [
   },
   {
     id: "wood-chipper-blades",
-    name: "Wood Chipper Blades",
+    name: "Ağaç Öğütücü Bıçakları",
     fullName:
-      "Heavy-Duty Drum & Disc Chipper Knives for Biomass, Forestry & Wood Recycling",
+      "Biyokütle, Ormancılık ve Ahşap Geri Dönüşümü için Ağır Hizmet Tipi Tamburlu ve Diskli Öğütücü Bıçakları",
     category: "wood_chipper",
     sector: "wood",
-    categoryDisplay: "Wood Chipper Blades",
+    categoryDisplay: "Ağaç Öğütücü Bıçakları",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-    badge: "Forestry Grade",
+    badge: "Ormancılık Sınıfı",
     badgeColor: "green",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
@@ -5855,9 +5892,9 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Premium D2, Cr12MoV & TCT drum and disc chipper knives for biomass processing, forestry operations & wood recycling. Through-hardened HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry. Drop-in OEM fit for Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz chippers.",
+      "Biyokütle işleme, ormancılık faaliyetleri ve odun geri dönüşümü için Premium D2, Cr12MoV ve TCT tamburlu ve diskli yongalama bıçakları. Derin kriyojenik işlem uygulanmış, HRC 57–62 sertlikte tam sertleştirilmiş. Temiz ve düzgün yonga geometrisi için ±0,05 mm kalınlık toleransına göre hassas taşlanmış. Bandit, Vermeer, Morbark, Peterson, Doppstadt ve Jenz yongalama makinelerine doğrudan takılabilen OEM uyumlu.",
     fullDescription:
-      "Wood chipper blades operate under some of the most punishing conditions in the size-reduction industry. Every rotation drives the cutting edge into dense hardwood, green timber with high moisture content, contaminated demolition wood, or recycled pallets embedded with nails and staples. A blade that lacks the correct balance of hardness and toughness will either dull within hours on clean hardwood or shatter on the first nail strike in contaminated feedstock.\n\nSureay wood chipper blades are forged from premium tool steels — D2 (1.2379), Cr12MoV, and high-carbon chipper knife steel — vacuum heat-treated to HRC 57–62, followed by a mandatory deep cryogenic soak at −196°C. This processing sequence produces a fully stabilised martensitic microstructure with uniform carbide distribution across the entire blade cross-section, delivering the dual performance requirement of wood chipping: abrasion resistance to hold a sharp edge through hundreds of cubic meters of timber, combined with sufficient core toughness to survive impacts from embedded metal contaminants without catastrophic fracture.\n\n## Chipper Type & Blade Geometry\n\n### Drum Chipper Blades\n\nDrum chippers (Vermeer BC1800, Bandit 1990, Morbark 40/36) use rectangular straight knives bolted to a high-speed rotating drum (typically 1,000–2,500 RPM). The blade acts as a planer knife — each revolution peels a chip from the infeed timber at the programmed depth of cut. Blade length corresponds to the drum width (typically 200–600 mm), and thickness (typically 12–30 mm) determines maximum chip depth.\n\nCritical parameters for drum chipper performance:\n- **Bevel angle:** 30°–37° (hardwood) or 25°–30° (softwood/green timber)\n- **Thickness parallelism:** ≤ 0.05 mm — uneven blade thickness causes drum imbalance, destructive vibration, and inconsistent chip size\n- **Bolt-hole positional tolerance:** ±0.10 mm — ensures the cutting edge projects evenly across the full drum width after mounting\n\n### Disc Chipper Blades\n\nDisc chippers (Peterson 5710, Morbark 50/48, Precision Husky) mount blades radially on a heavy rotating disc. The timber is fed axially into the disc face, and the blades produce chips by a combination of shearing and splitting action. Disc chipper blades are typically shorter but thicker than drum chipper knives, and are subjected to higher individual impact loads from large-diameter logs.\n\nDisc chipper blades require maximum toughness specification: Cr12MoV or modified chipper knife steel at HRC 55–58 is recommended for whole-log disc chippers processing hardwood above 300 mm diameter.\n\n### Whole-Tree / Biomass Chipper Blades\n\nBiomass and whole-tree chippers (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) process entire trees including branches, root balls, and brush. The feedstock contains embedded soil, stones, and occasional metal debris. Blades for these applications are manufactured from impact-optimised steel at HRC 55–58, with a wider bevel angle (35°–42°) that distributes impact forces across a broader cutting face and prevents edge rollover on contaminated feedstock.\n\n## Material Selection by Feedstock\n\n**High-Carbon Chipper Knife Steel (HRC 55–58):** The industry-standard grade for general forestry and green timber chipping. Cost-effective, easily resharpened on standard surface grinders, and tough enough for moderate nail contamination. Suited to landscape contractors, tree service companies, and municipal green waste operations.\n\n**D2 / Cr12MoV Cold-Work Tool Steel (HRC 58–62):** Premium specification for high-volume commercial wood recycling and biomass fuel chip production. The 12% chromium carbide matrix provides 2–3× longer edge life versus standard carbon steel on abrasive hardwoods (oak, hickory, ironbark) and dry recycled timber. Recommended for industrial drum chippers running 8–16 hour continuous shifts.\n\n**TCT — Tungsten Carbide Tipped (Brazed Inserts):** The ultimate specification for extreme-duty biomass processing. Carbide-tipped chipper knives deliver 5–10× the service life of D2 on contaminated demolition wood, railroad ties, and heavily soiled root balls. The carbide cutting edge is vacuum-brazed onto a tough alloy steel body that absorbs the gross impact energy without transmitting brittle fracture to the carbide insert.\n\n## Precision Grinding for Chip Quality\n\nChip geometry is the primary product quality metric in biomass fuel production: pulp mills, biomass power plants, and pellet manufacturers specify strict chip size distribution standards (e.g., EN 17225-4 / TAPPI T257). Uneven blade thickness or inconsistent bevel angles across a multi-blade drum or disc produce oversized and undersized chips that fail screening specifications, requiring secondary processing or causing price deductions.\n\nSureay chipper blades are precision surface-ground to:\n- **Thickness tolerance:** ±0.05 mm across the full blade length\n- **Bevel angle:** ±0.5° (verified by optical comparator)\n- **Face flatness:** ≤ 0.05 mm per 300 mm length\n- **Surface finish:** Ra ≤ 1.6 μm on the rake face for reduced friction and clean chip ejection\n\n## Counter-Knife (Anvil) & Wear Plate Supply\n\nThe counter-knife (anvil or bed knife) sets the clearance gap that determines minimum chip thickness. Worn or misaligned counter-knives negate the benefit of new chipper blades. Sureay manufactures matched counter-knives and replaceable wear plates in D2 and manganese steel, supplied as integrated sets with pre-verified clearance specifications for your chipper model.\n\n## Resharpening Capability\n\nUnlike shredder blades, chipper knives are designed for multiple regrinding cycles. Our through-hardened heat treatment ensures uniform hardness from the surface to the core — each regrind exposes steel of identical hardness and wear characteristics. A standard D2 chipper blade can be reground 8–12 times before reaching minimum safe thickness, making the total cost of ownership extremely competitive.",
+      "Odun öğütücü bıçakları, parçalama endüstrisindeki en zorlu koşullardan bazılarında çalışır. Her dönüşte kesici kenar, yoğun sert ağaçlara, nem içeriği yüksek taze keresteye, kirli yıkıntı ahşaplarına veya çivi ve zımba teli içeren geri dönüştürülmüş paletlere batar. Sertlik ve tokluk arasında doğru dengeye sahip olmayan bir bıçak, temiz sert ağaçta birkaç saat içinde körelir veya kirli hammaddeye ilk çivi çarpışında parçalanır.\n\nSureay odun parçalayıcı bıçakları, birinci sınıf takım çeliklerinden — D2 (1.2379), Cr12MoV ve yüksek karbonlu parçalayıcı bıçak çeliği — dövülerek üretilir; HRC 57–62 seviyesine kadar vakumla ısıl işleme tabi tutulur ve ardından −196°C'de zorunlu derin kriyojenik ıslatma işlemine tabi tutulur. Bu işleme sırası, bıçağın tüm kesitinde homojen karbür dağılımına sahip, tamamen stabilize edilmiş bir martensitik mikro yapı oluşturur ve odun parçalama işleminin iki temel performans gereksinimini karşılar: yüzlerce metreküp odun boyunca keskin kenarı koruyacak aşınma direnci ile gömülü metal kirleticilerin çarpmalarına karşı felaket niteliğinde kırılma yaşamadan dayanacak yeterli çekirdek tokluğu.\n\n## Yonga Makinesi Tipi ve Bıçak Geometrisi\n\n### Tamburlu Yonga Makinesi Bıçakları\n\nTamburlu yongalama makineleri (Vermeer BC1800, Bandit 1990, Morbark 40/36), yüksek hızda dönen bir tambura (genellikle 1.000–2.500 RPM) cıvatalanmış dikdörtgen şekilli düz bıçaklar kullanır. Bıçak, bir planya bıçağı gibi işlev görür — her devrede, programlanan kesme derinliğinde beslenen keresteden bir yonga soyulur. Bıçak uzunluğu tambur genişliğine (genellikle 200–600 mm) karşılık gelir ve kalınlık (genellikle 12–30 mm) maksimum yonga derinliğini belirler.\n\nTamburlu yongalama makinesinin performansı için kritik parametreler:\n- **Eğim açısı:** 30°–37° (sert ağaç) veya 25°–30° (yumuşak ağaç/yeşil kereste)\n- **Kalınlık paralelliği:** ≤ 0,05 mm — bıçak kalınlığındaki düzensizlik, tambur dengesizliğine, tahrip edici titreşime ve tutarsız yonga boyutuna neden olur\n- **Cıvata deliği konum toleransı:** ±0,10 mm — montajdan sonra kesme kenarının tamburun tüm genişliği boyunca eşit bir şekilde uzanmasını sağlar\n\n### Diskli Yonga Makinesi Bıçakları\n\nDiskli yonga makineleri (Peterson 5710, Morbark 50/48, Precision Husky), bıçakları ağır bir dönen diske radyal olarak monte eder. Kereste, diskin yüzeyine eksenel olarak beslenir ve bıçaklar, kesme ve yarma hareketlerinin birleşimiyle yongalar üretir. Diskli yongalama bıçakları, genellikle tamburlu yongalama bıçaklarından daha kısa ancak daha kalındır ve büyük çaplı kütüklerden kaynaklanan daha yüksek bireysel darbe yüklerine maruz kalır.\n\nDiskli yongalama bıçakları için maksimum tokluk özellikleri gereklidir: Çapı 300 mm'nin üzerindeki sert ağaçları işleyen bütün kütük diskli yongalama makineleri için HRC 55–58 sertliğinde Cr12MoV veya modifiye yongalama bıçağı çeliği önerilir.\n\n### Bütün Ağaç / Biyokütle Parçalayıcı Bıçakları\n\nBiyokütle ve bütün ağaç parçalayıcıları (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force), dallar, kök topakları ve çalılar dahil olmak üzere bütün ağaçları işler. Hammadde, içine gömülmüş toprak, taşlar ve ara sıra metal kalıntıları içerir. Bu uygulamalara yönelik bıçaklar, darbeye karşı optimize edilmiş HRC 55–58 sertlikteki çelikten üretilir; daha geniş bir eğim açısı (35°–42°) sayesinde darbe kuvvetleri daha geniş bir kesme yüzeyine dağıtılır ve kirli hammadde üzerinde kenarın yuvarlanması önlenir.\n\n## Hammaddeye Göre Malzeme Seçimi\n\n**Yüksek Karbonlu Parçalayıcı Bıçak Çeliği (HRC 55–58):** Genel ormancılık ve yeşil odun parçalama işlemleri için endüstri standardı sınıftır. Maliyet etkin olup, standart yüzey taşlama makinelerinde kolayca yeniden bilenen bu bıçaklar, orta derecede çivi kirliliğine karşı yeterince dayanıklıdır. Peyzaj müteahhitleri, ağaç bakım şirketleri ve belediye yeşil atık işlemlerine uygundur.\n\n**D2 / Cr12MoV Soğuk İşleme Takım Çeliği (HRC 58–62):** Yüksek hacimli ticari odun geri dönüşümü ve biyokütle yakıt yongası üretimi için üstün özellikli bir seçenektir. %12 krom karbür matrisi, aşındırıcı sert ağaçlarda (meşe, hickory, demir kabuğu) ve kuru geri dönüştürülmüş kerestede standart karbon çeliğine kıyasla 2–3 kat daha uzun kesici kenar ömrü sağlar. 8–16 saatlik kesintisiz vardiyalarda çalışan endüstriyel tamburlu yongalama makineleri için önerilir.\n\n**TCT — Tungsten Karbür Uçlu (Lehimli Uçlar):** Aşırı zorlu biyokütle işleme için en üstün özellik. Karbür uçlu yonga makinesi bıçakları, kirlenmiş yıkıntı ahşabı, demiryolu traversleri ve aşırı kirli kök topaklarında D2'ye kıyasla 5–10 kat daha uzun hizmet ömrü sunar. Karbür kesici kenar, karbür uca kırılgan kırılma iletmeden brüt darbe enerjisini emen sağlam bir alaşımlı çelik gövdeye vakumla lehimlenmiştir.\n\n## Talaş Kalitesi için Hassas Taşlama\n\nTalaş geometrisi, biyokütle yakıt üretiminde birincil ürün kalite ölçütüdür: kağıt hamuru fabrikaları, biyokütle enerji santralleri ve pelet üreticileri, katı talaş boyut dağılımı standartları belirler (örn. EN 17225-4 / TAPPI T257). Çok bıçaklı bir tambur veya disk üzerinde bıçak kalınlığının dengesiz olması veya eğim açılarının tutarsız olması, eleme şartnamelerine uymayan aşırı büyük ve aşırı küçük yongaların oluşmasına neden olur; bu da ikincil işleme gerektirir veya fiyat indirimlerine yol açar.\n\nSureay yonga kesici bıçakları, aşağıdaki özelliklere ulaşacak şekilde hassas yüzey taşlamasına tabi tutulur:\n- **Kalınlık toleransı:** Bıçak uzunluğunun tamamında ±0,05 mm\n- **Eğim açısı:** ±0,5° (optik komparatör ile doğrulanır)\n- **Yüzey düzlüğü:** 300 mm uzunluk başına ≤ 0,05 mm\n- **Yüzey kalitesi:** Sürtünmeyi azaltmak ve talaşın temiz bir şekilde atılmasını sağlamak için tırmık yüzeyinde Ra ≤ 1,6 μm\n\n## Karşı Bıçak (Örs) ve Aşınma Plakası Tedariği\n\nKarşı bıçak (örs veya yatak bıçağı), minimum talaş kalınlığını belirleyen boşluk aralığını ayarlar. Aşınmış veya yanlış hizalanmış karşı bıçaklar, yeni yongalama bıçaklarının sağladığı avantajı ortadan kaldırır. Sureay, D2 ve manganez çelikten üretilmiş uyumlu karşı bıçaklar ve değiştirilebilir aşınma plakaları üretir; bunlar, yongalama makinesi modeliniz için önceden doğrulanmış boşluk özelliklerine sahip entegre setler halinde tedarik edilir.\n\n## Yeniden Bileme Özelliği\n\nparçalayıcı bıçakları'den farklı olarak, yongalama bıçakları çok sayıda yeniden bileme döngüsü için tasarlanmıştır. Tam sertleştirilmiş ısıl işlem ürünümüz, yüzeyden çekirdeğe kadar homojen sertlik sağlar — her yeniden bileme işleminde aynı sertlik ve aşınma özelliklerine sahip çelik ortaya çıkar. Standart bir D2 yonga makinesi bıçağı, minimum güvenli kalınlığa ulaşana kadar 8–12 kez yeniden bilenebilir, bu da toplam sahip olma maliyetini son derece rekabetçi hale getirir.",
     link: "/products/wood-chipper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -5907,33 +5944,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "through-hardened-core",
-        tag: "METALLURGY",
-        title: "Through-Hardened for Maximum Regrind Life",
+        tag: "METALURJİ",
+        title: "Maksimum Yeniden Taşlama Ömrü için Tam Sertleştirilmiş",
         description:
-          "Unlike case-hardened alternatives that expose a soft core after the first regrind, Sureay chipper blades are vacuum heat-treated to achieve uniform hardness (HRC 57–62) from surface to core. Each regrind delivers identical edge performance to a new blade, yielding 8–12 productive service cycles per blade.",
+          "İlk yeniden bileme işleminden sonra yumuşak bir çekirdek ortaya çıkaran yüzey sertleştirilmiş alternatiflerin aksine, Sureay yonga kesici bıçakları, yüzeyden çekirdeğe kadar homojen bir sertlik (HRC 57–62) elde etmek için vakumla ısıl işleme tabi tutulur. Her yeniden bileme işlemi, yeni bir bıçakla aynı kesme performansı sunar ve bıçak başına 8–12 verimli hizmet döngüsü sağlar.",
       },
       {
         id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Nail & Contaminant Resistance",
+        tag: "DAYANIKLILIK",
+        title: "Çivi ve Kirletici Maddelere Karşı Dayanıklılık",
         description:
-          "Contaminated demolition wood, recycled pallets, and urban green waste contain hidden nails, screws, and stones. Our deep cryogenic treatment (−196°C) stabilises the martensitic microstructure, delivering the core toughness needed to absorb metal-strike impacts without brittle edge fracture or blade cracking.",
+          "Kirlenmiş yıkıntı ahşabı, geri dönüştürülmüş paletler ve kentsel yeşil atıklar, görünmeyen çiviler, vidalar ve taşlar içerir. Derin kriyojenik işlemimiz (−196 °C), martensitik mikro yapıyı stabilize ederek, kenarlarda kırılma veya bıçakta çatlama olmaksızın metal çarpma darbelerini emmek için gereken çekirdek tokluğunu sağlar.",
       },
       {
         id: "chip-quality",
-        tag: "OUTPUT QUALITY",
-        title: "Precision Bevel for Uniform Chip Size",
+        tag: "ÇIKIŞ KALİTESİ",
+        title: "Tekdüze Talaş Boyutu için Hassas Eğim",
         description:
-          "Biomass power plants and pulp mills penalise off-spec chip size distributions. Every blade is surface-ground to ±0.05 mm thickness and ±0.5° bevel angle, ensuring consistent chip geometry across the full drum or disc width that meets EN 17225 and TAPPI T257 standards.",
+          "Biyokütle enerji santralleri ve kağıt hamuru fabrikaları, teknik şartnamelere uymayan yonga boyut dağılımlarını kabul etmez. Her bir bıçak, ±0,05 mm kalınlık ve ±0,5° eğim açısı olacak şekilde yüzey taşlanarak, EN 17225 ve TAPPI T257 standartlarına uygun, tambur veya diskin tüm genişliği boyunca tutarlı bir yonga geometrisi sağlanır.",
       },
     ],
     dimensionLabels: {
-      col0: "Chipper Type / OEM Platform",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Öğütücü Tipi / OEM Platformu",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm.",
+        "* Önde gelen yongalama makinesi üreticileri için standart boyutlar. 2 delikli, 3 delikli ve 4 delikli cıvata düzenleri, OEM teknik çizimlerine tam olarak uygun şekilde CNC ile işlenmiştir. Karşı bıçaklar ve aşınma plakaları, uyumlu setler halinde mevcuttur. 800 mm’ye kadar özel uzunluklar.",
     },
     standardDimensions: [
       {
@@ -5999,95 +6036,97 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "What blade material should I use for chipping clean green timber versus contaminated demolition wood?",
+            "Temiz yeşil kereste ile kirlenmiş yıkıntı kerestesini yontmak için hangi bıçak malzemesini kullanmalıyım?",
           answer:
-            "For clean green timber (forestry, tree service, land clearing), standard high-carbon chipper knife steel at HRC 55–58 delivers excellent edge life at the lowest cost per regrind cycle. For contaminated demolition wood, recycled pallets, or urban green waste with embedded nails, screws, and stones, upgrade to Cr12MoV or D2 at HRC 58–60. The chromium-carbide matrix provides 2–3× longer edge life on abrasive dry wood while maintaining sufficient toughness to survive moderate metal impacts. For heavily contaminated streams (railroad ties, C&D debris), specify TCT carbide-tipped blades that deliver 5–10× longer service life than D2.",
+            "Temiz yeşil kereste (ormancılık, ağaç bakımı, arazi temizliği) için, HRC 55–58 sertlik derecesine sahip standart yüksek karbonlu parçalayıcı bıçak çeliği, yeniden bileme döngüsü başına en düşük maliyetle mükemmel kesici kenar ömrü sunar. Kirlenmiş yıkıntı ahşabı, geri dönüştürülmüş paletler veya içinde çivi, vida ve taş bulunan kentsel yeşil atıklar için, HRC 58–60 sertlik değerindeki Cr12MoV veya D2 çeliklerine geçin. Krom-karbür matris, aşındırıcı kuru ahşap üzerinde 2–3 kat daha uzun kesici kenar ömrü sağlarken, orta şiddetteki metal darbelerine dayanacak yeterli tokluğu da korur. Aşırı kirlenmiş atık akışları (demiryolu traversleri, inşaat ve yıkıntı molozları) için, D2'ye göre 5–10 kat daha uzun hizmet ömrü sunan TCT karbür uçlu bıçakları tercih edin.",
         },
         {
           question:
-            "How does blade thickness tolerance affect chip quality and drum vibration?",
+            "Bıçak kalınlığı toleransı, talaş kalitesini ve tambur titreşimini nasıl etkiler?",
           answer:
-            "Blade thickness directly controls chip depth and influences drum balance. If blade thicknesses vary by more than 0.10 mm across a multi-blade drum, the thicker blades cut deeper and produce oversized chips while thinner blades produce undersized chips — both conditions fail biomass fuel screening specifications (EN 17225-4). Additionally, uneven blade mass creates dynamic imbalance at operating RPM (1,000–2,500 RPM), causing destructive vibration that accelerates bearing failure and fatigues the drum housing. Our ±0.05 mm thickness tolerance eliminates both issues.",
+            "Bıçak kalınlığı, talaş derinliğini doğrudan belirler ve tambur dengesini etkiler. Çok bıçaklı bir tamburda bıçak kalınlıkları 0,10 mm’den fazla farklılık gösterirse, daha kalın bıçaklar daha derine keserek aşırı büyük talaşlar üretirken, daha ince bıçaklar ise aşırı küçük talaşlar üretir — her iki durum da biyokütle yakıt eleme spesifikasyonlarına (EN 17225-4) uymaz. Ayrıca, bıçak kütlesindeki dengesizlik, çalışma devri (1.000–2.500 dev/dk) sırasında dinamik dengesizliğe yol açarak, rulman arızasını hızlandıran ve tambur gövdesinde yorgunluğa neden olan tahrip edici titreşimlere neden olur. ±0,05 mm'lik kalınlık toleransımız, her iki sorunu da ortadan kaldırır.",
         },
         {
           question:
-            "What bevel angle should I specify for hardwood versus softwood chipping?",
+            "Sert ağaç ve yumuşak ağaç yongalama işlemleri için hangi eğim açısını belirlemeliyim?",
           answer:
-            "For softwood and green timber with high moisture content (pine, spruce, poplar), specify 25°–30° bevel angle. The sharper included angle slices through soft, fibrous wood with minimum cutting force and produces clean chip faces with low fibre tear. For dry hardwood (oak, hickory, eucalyptus), increase to 30°–37° to strengthen the cutting edge against the higher density and impact loading. For contaminated biomass and whole-tree chipping with soil and stone contamination, specify 35°–42° — the wider bevel distributes impact forces across a broader cutting face, preventing edge rollover.",
+            "Yüksek nem içeriğine sahip yumuşak odun ve taze kereste (çam, ladin, kavak) için 25°–30° eğim açısı belirtin. Daha keskin iç açı, yumuşak ve lifli ahşabı minimum kesme kuvveti ile keser ve lif yırtılmasının az olduğu temiz talaş yüzeyleri oluşturur. Kuru sert ağaçlar (meşe, hickory, okaliptüs) için, daha yüksek yoğunluk ve darbe yüküne karşı kesme kenarını güçlendirmek amacıyla açıyı 30°–37°'ye çıkarın. Kirlenmiş biyokütle ve toprak ile taş içeren bütün ağaç yongalama işlemleri için 35°–42°'yi seçin — daha geniş eğim açısı, darbe kuvvetlerini daha geniş bir kesme yüzeyine dağıtır ve kenarın devrilmesini önler.",
         },
         {
           question:
-            "How many times can Sureay chipper blades be resharpened, and what is the correct regrinding procedure?",
+            "Sureay parçalayıcı bıçakları kaç kez yeniden bilenenebilir ve doğru yeniden bileme prosedürü nedir?",
           answer:
-            "Our through-hardened chipper blades can be resharpened 8–12 times before reaching minimum safe thickness (typically 60–70% of original thickness). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass to prevent thermal damage to the heat-treated edge. Never dry-grind chipper knives — the localised overheating above 200°C draws the temper and softens the edge. After grinding, verify the bevel angle with an optical comparator or digital protractor. We also offer a professional regrinding service with hardness re-verification.",
+            "Tam sertleştirilmiş yongalama bıçaklarımız, minimum güvenlik kalınlığına (genellikle orijinal kalınlığın %60–70’i) ulaşana kadar 8–12 kez yeniden bilenenebilir. Isıl işlem görmüş kenarda termal hasarı önlemek için, alüminyum oksit taş (46–60 grit) kullanarak ıslak yüzey taşlama makinesinde her geçişte 0,02–0,05 mm derinlikte yeniden bileme yapın. Kırıcı bıçaklarını asla kuru bilemeyin — 200°C'nin üzerindeki yerel aşırı ısınma, bıçağın sertliğini bozar ve kenarı yumuşatır. Bileme işleminden sonra, optik komparatör veya dijital açıölçer ile eğim açısını kontrol edin. Ayrıca, sertlik yeniden doğrulaması dahil olmak üzere profesyonel bir yeniden bileme hizmeti de sunuyoruz.",
         },
         {
           question:
-            "What causes premature edge rollover on my chipper blades, and how do I prevent it?",
+            "Kırıcı bıçaklarımda erken kenar kıvrılmasının nedeni nedir ve bunu nasıl önleyebilirim?",
           answer:
-            "Edge rollover (the cutting edge folding over rather than chipping or wearing gradually) indicates the blade hardness is too low for the feedstock, or the bevel angle is too acute for the impact loading. On standard carbon steel blades processing dry hardwood, the edge lacks sufficient carbide reinforcement to resist plastic deformation. Upgrade to D2 or Cr12MoV at HRC 58–62 and increase the bevel angle by 3°–5°. Also verify counter-knife clearance: excessive clearance (> 1.5 mm) forces the blade to fracture the wood by bending rather than shearing, dramatically increasing edge loading.",
+            "Kenar kıvrılması (kesici kenarın yavaş yavaş aşınması veya ufalanması yerine katlanması), bıçağın sertliğinin işlenecek malzeme için yetersiz olduğunu ya da eğim açısının darbe yükü için fazla keskin olduğunu gösterir. Kuru sert ahşabı işleyen standart karbon çelik bıçaklarda, kenar plastik deformasyona direnmek için yeterli karbür takviyesine sahip değildir. HRC 58–62 sertlikte D2 veya Cr12MoV çeliğine geçin ve eğim açısını 3°–5° artırın. Ayrıca karşı bıçak açıklığını da kontrol edin: Aşırı açıklık (> 1,5 mm), bıçağın ahşabı kesmek yerine bükerek kırmasına neden olur ve bu da kenar yükünü önemli ölçüde artırır.",
         },
         {
           question:
-            "Should I replace the counter-knife (anvil) when I install new chipper blades?",
+            "Yeni öğütücü bıçaklarını takarken karşı bıçağı (örs) da değiştirmeli miyim?",
           answer:
-            "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife with a rounded or chipped edge forces new blades to work against an inconsistent shear gap, reducing their effective service life by 30–50% and producing poor chip quality. Replace or regrind the counter-knife when the cutting edge shows visible rounding exceeding 1.0 mm or chipping deeper than 0.5 mm. We supply matched counter-knives manufactured from D2 or manganese steel as integrated sets with pre-verified clearance.",
+            "Kırıcı bıçakları her değiştirildiğinde karşı bıçak da kontrol edilmelidir. Kenarı yuvarlanmış veya çentiklenmiş aşınmış bir karşı bıçak, yeni bıçakların tutarsız bir kesme aralığına karşı çalışmasına neden olur; bu da bıçakların etkin hizmet ömrünü %30–50 oranında azaltır ve düşük kaliteli talaş oluşmasına yol açar. Kesici kenarda 1,0 mm'yi aşan gözle görülür yuvarlanma veya 0,5 mm'den daha derin çentikler görüldüğünde karşı bıçağı değiştirin veya yeniden bileme yaptırın. D2 veya manganez çeliğinden üretilmiş, önceden kontrol edilmiş boşluk aralığına sahip uyumlu karşı bıçak setlerini entegre setler halinde tedarik ediyoruz.",
         },
         {
           question:
-            "What chip size distribution should I target for biomass fuel production versus pulp mill supply?",
+            "Biyokütle yakıt üretimi ile kağıt hamuru fabrikasına tedarik arasında hangi yonga boyut dağılımını hedeflemeliyim?",
           answer:
-            "Biomass power plants typically require chips within 3–50 mm (EN 17225-4 Class P31s or P45s) with less than 5% fines (< 3 mm) and less than 1% oversized (> 63 mm). Pulp mills require tighter specifications per TAPPI T257: typically 80% acceptance in 7–25 mm range with strict limits on pin chips and overthick pieces. Achieving these specifications requires consistent blade thickness (±0.05 mm), correct bevel angle, proper counter-knife clearance (0.5–1.0 mm), and uniform drum speed. We can recommend the optimal blade geometry for your target specification.",
+            "Biyokütle enerji santralleri genellikle 3–50 mm aralığında (EN 17225-4 Sınıf P31 veya P45) yongalara ihtiyaç duyar; bu yongalarda ince parçaların oranı %5’ten az (< 3 mm) ve aşırı büyük parçaların oranı %1’den az (> 63 mm) olmalıdır. Kağıt hamuru fabrikaları ise TAPPI T257 standardına göre daha sıkı şartnamelere tabidir: genellikle 7–25 mm aralığında %80 kabul oranı ile iğne yongaları ve aşırı kalın parçalar için katı sınırlar uygulanır. Bu şartnamelere ulaşmak için tutarlı bıçak kalınlığı (±0,05 mm), doğru eğim açısı, uygun karşı bıçak açıklığı (0,5–1,0 mm) ve sabit tambur hızı gereklidir. Hedeflediğiniz şartnameye uygun en uygun bıçak geometrisini önerebiliriz.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+            "2008 yılında kurulan, %100 doğrudan OEM üreticisiyiz. Sureay’den satın aldığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı döven ve taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "Can you supply blades for my specific chipper model if it is not listed in your standard dimensions?",
+            "Standart boyutlarınızda listelenmemiş olsa bile, sahip olduğum özel öğütücü modeline uygun bıçaklar tedarik edebilir misiniz?",
           answer:
-            "Yes. Send us your existing blade sample, a technical drawing, or your chipper make and model number. We will confirm the length, width, thickness, bevel angle, and bolt-hole pattern, and manufacture exact drop-in replacements. We maintain an extensive database of OEM chipper blade blueprints for Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz, and CBI platforms. Custom dimensions are manufactured to drawing within 10–15 working days.",
+            "Evet. Elinizdeki bıçak örneğini, teknik çizimini veya parçalayıcınızın markasını ve model numarasını bize gönderin. Uzunluk, genişlik, kalınlık, eğim açısı ve cıvata deliği düzenini teyit edip, tam olarak uyumlu yedek parçalar üreteceğiz. Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz ve CBI platformları için kapsamlı bir OEM yonga parçalayıcı bıçak teknik çizim veritabanına sahibiz. Özel boyutlardaki bıçaklar, çizimlere göre 10–15 iş günü içinde üretilir.",
         },
         {
           question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
+            "Sureay’in ısıl işlem modelini daha ucuz alternatiflerden ayıran nedir?",
           answer:
-            "Unlike standard quench-and-temper processes, every Sureay chipper blade undergoes vacuum hardening followed by deep cryogenic treatment at −196°C. The cryogenic step transforms retained austenite into stable martensite, improving wear resistance by up to 40% and ensuring uniform hardness from surface to core. This means every regrind exposes steel of identical quality — cheap blades often expose a softer core after the first regrind, halving the edge life of subsequent sharpening cycles.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement chipper blades in stock sizes typically ship within 48–72 hours. Custom profiles and TCT carbide-tipped blades take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Standart su verme ve tavlama işlemlerinden farklı olarak, her bir Sureay yongalama bıçağı vakumla sertleştirme işleminden geçirildikten sonra −196 °C’de derin kriyojenik işleme tabi tutulur. Kriyojenik işlem, kalıntı östeniti kararlı martensite dönüştürerek aşınma direncini %40'a kadar artırır ve yüzeyden çekirdeğe kadar homojen bir sertlik sağlar. Bu, her yeniden bileme işleminde aynı kalitede çeliğin ortaya çıktığı anlamına gelir — ucuz bıçaklarda ise ilk yeniden bileme işleminden sonra genellikle daha yumuşak bir çekirdek ortaya çıkar ve bu da sonraki bileme döngülerinde kesici kenarın ömrünü yarıya indirir.",
         },
         {
           question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve teslimat ne kadar sürer?",
           answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (thickness, bevel angle, bolt-hole positions), and a heat treatment batch certificate. For large-volume biomass operations requiring full traceability, steel mill composition certificates and CMM dimensional reports are available on request.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Stokta bulunan standart OEM yedek parçalama bıçakları genellikle 48–72 saat içinde sevk edilir. Özel profiller ve TCT karbür uçlu bıçaklar için ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye firmalarıyla doğrudan iş birliği yapıyoruz.",
         },
         {
           question:
-            "Can we trial a sample set before committing to a full production order?",
+            "Sureay hangi kalite sertifikalarına sahiptir ve malzeme test raporlarını sunabilir misiniz?",
           answer:
-            "Yes. We offer sample sets (typically 2–4 blades) for machine fit verification and edge life benchmarking against your current supplier. Standard sample lead time is 5–7 working days. For TCT carbide-tipped blades, sample lead time is 10–12 working days.",
+            "Sureay, ISO 9001:2015 sertifikasına sahiptir. Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı (kalınlık, faz açısı, cıvata deliği konumları) ve bir ısıl işlem parti sertifikası eklenir. Tam izlenebilirlik gerektiren büyük hacimli biyokütle operasyonları için, talep üzerine çelik fabrikası bileşim sertifikaları ve CMM boyutsal raporları sağlanabilir.",
+        },
+        {
+          question:
+            "Tam bir üretim siparişi vermeden önce bir numune setini deneyebilir miyiz?",
+          answer:
+            "Evet. Makineye uyum kontrolü ve mevcut tedarikçinizle karşılaştırmalı kesici kenar ömrü değerlendirmesi için numune setleri (genellikle 2–4 bıçak) sunuyoruz. Standart numune teslim süresi 5–7 iş günüdür. TCT karbür uçlu bıçaklar için numune teslim süresi 10–12 iş günüdür.",
         },
       ],
     },
   },
   {
     id: "wood-chipper-anvils",
-    name: "Wood Chipper Anvils",
+    name: "Ağaç Öğütücü Örsleri",
     fullName:
-      "Heavy-Duty Counter-Knives & Bed Knife Anvils for Drum & Disc Wood Chippers",
+      "Tamburlu ve Diskli Odun Öğütücüler için Ağır Hizmet Tipi Karşı Bıçaklar ve Taban Bıçağı Örsleri",
     category: "wood_chipper",
     sector: "wood",
-    categoryDisplay: "Counter-Knives & Anvils",
+    categoryDisplay: "Tezgah Bıçakları ve Örsler",
     image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-    badge: "Matched Sets",
+    badge: "Eşleştirilmiş Setler",
     badgeColor: "blue",
     gallery: [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
@@ -6095,9 +6134,9 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
     description:
-      "Wood chipper anvils and counter-knives (bed knives) for drum and disc chippers. D2, Cr12MoV, and A8 Modified tool steel, through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
+      "Tamburlu ve diskli öğütücüler için odun öğütücü örsleri ve karşı bıçakları (yatak bıçakları). D2, Cr12MoV ve A8 Modifiye takım çeliği; maksimum yeniden bileme ömrü için HRC 55–60 sertlikte tam sertleştirilmiş. Yonga kalınlığını ve parçalayıcının verimliliğini kontrol eden bıçak-örs açıklığını ayarlar. ±0,05 mm tam uzunlukta paralellik sağlayacak şekilde yüzey taşlanmıştır. Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen ve Jenz parçalayıcıları için OEM uyumlu yedek parçalar.",
     fullDescription:
-      "The anvil — also called the counter-knife, bed knife, or stationary blade — is the fixed cutting edge inside a wood chipper that the rotating drum or disc blade cuts against. Together, the chipper blade and anvil form a scissor-like shearing pair: the blade slices chips from the timber, and the anvil sets the clearance gap that determines minimum chip thickness, cutting efficiency, and motor load.\n\nA worn or misaligned anvil is the single most overlooked cause of poor chipper performance. When the anvil edge rounds off, the blade-to-anvil clearance gap widens progressively. Instead of a clean shearing action, the timber is torn and crushed rather than cut — spiking fuel consumption by 15–25%, producing ragged chips that fail screening specs, and accelerating wear on the chipper blades themselves. Replacing chipper blades without inspecting the anvil is throwing away money: new blades working against a dull anvil deliver only 50–70% of their potential service life.\n\n## Why the Anvil Matters as Much as the Blade\n\n**Clearance Gap Control:** The blade-to-anvil clearance gap — typically set at 0.5–1.5 mm for drum chippers and 0.8–2.0 mm for disc chippers — directly controls minimum chip thickness. A worn anvil increases this gap beyond specification, producing oversized chips and long fibrous slivers that fail biomass fuel screening standards (EN 17225-4). Our anvils are precision surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform shear gap across the entire cutting width.\n\n**Impact Absorption:** Unlike the chipper blade (which rotates at high speed), the anvil absorbs the full reaction force of every cut as a static impact load. Over millions of chipping cycles, this sustained impact loading causes edge deformation, micro-cracking, and eventual bulk fracture in poorly heat-treated anvils. Sureay anvils are through-hardened to HRC 55–60 via vacuum heat treatment — hard enough to hold a sharp edge against abrasive timber, yet tough enough to absorb repeated impact without brittle fracture.\n\n**Different Wear Rate, Different Replacement Cycle:** The anvil typically outlasts chipper blades by a factor of 2–4× because it operates under compressive (static) loading rather than the dynamic shear loading on the blade. However, because anvil wear is gradual, operators often miss the progressive deterioration until chip quality has degraded significantly. We recommend inspecting the anvil edge every time chipper blades are changed or sharpened.\n\n## Material Selection\n\n**D2 / Cr12MoV Tool Steel (HRC 58–60):** The premium specification for high-volume commercial wood processing and biomass operations. The 12% chromium-carbide matrix provides outstanding abrasion resistance against dense hardwoods and bark-heavy feedstock. Recommended for industrial drum chippers (Morbark, Vermeer HG series, Doppstadt) running continuous 8–16 hour shifts.\n\n**A8 Modified Tool Steel (HRC 54–58):** The industry-standard OEM grade used by Bandit, Morbark, and Vermeer for factory-original anvils. A8 Modified provides an excellent balance of wear resistance and impact toughness — critical for anvils that must absorb millions of impact cycles without micro-cracking. The correct choice for general forestry and tree service operations processing mixed species with moderate contamination.\n\n**42CrMo / Manganese Steel (HRC 50–55):** A cost-effective, high-toughness option for operators processing heavily contaminated demolition wood, railroad ties, and urban green waste where the feedstock contains significant metal debris. The lower hardness prioritises impact absorption over wear resistance, preventing the catastrophic anvil fracture that can damage the drum housing.\n\n## Adjustable Mounting & Clearance Setting\n\nMost chipper OEMs provide a mechanical adjustment system — typically shim plates or adjustable mounting bolts — to advance the anvil toward the blade as both components wear, maintaining the designed clearance gap. Sureay anvils are CNC-machined with slotted or oversized mounting holes that match your OEM's adjustment mechanism precisely, ensuring maintenance teams can set the gap accurately and lock it down securely.\n\n## Matched Blade + Anvil Sets\n\nFor operators changing both blades and anvil simultaneously, we offer matched sets: chipper blades and counter-knife manufactured from the same steel batch, heat-treated in the same vacuum furnace cycle, and surface-ground to the same parallelism tolerance. A matched set eliminates the hardness mismatch between blade and anvil that causes accelerated wear when sourcing components from different suppliers.",
+      "Örs — karşı bıçak, yatak bıçağı veya sabit bıçak olarak da adlandırılır — bir odun parçalayıcının içinde, dönen tambur veya disk bıçağının kesim yaptığı sabit kesme kenarıdır. Öğütücü bıçağı ve örs birlikte makas benzeri bir kesme çifti oluşturur: bıçak, keresteden yongaları keser; örs ise minimum yonga kalınlığını, kesme verimliliğini ve motor yükünü belirleyen açıklık aralığını ayarlar.\n\nAşınmış veya yanlış hizalanmış bir örs, öğütücünün düşük performans göstermesinin en çok göz ardı edilen tek nedenidir. Örs kenarı yuvarlandığında, bıçak ile örs arasındaki boşluk giderek genişler. Temiz bir kesme işlemi yerine, odun kesilmek yerine yırtılır ve ezilir — bu da yakıt tüketimini %15–25 oranında artırır, eleme spesifikasyonlarını karşılamayan pürüzlü yongalar üretir ve yongalama bıçaklarının kendilerindeki aşınmayı hızlandırır. Örsü kontrol etmeden yongalama bıçaklarını değiştirmek, parayı boşa harcamaktır: körelmiş bir örsle çalışan yeni bıçaklar, potansiyel hizmet ömürlerinin yalnızca %50–70’ini sağlayabilir.\n\n## Örs Neden Bıçak Kadar Önemlidir?\n\n**Boşluk Kontrolü:** Bıçak ile örs arasındaki boşluk — genellikle tamburlu yongalama makineleri için 0,5–1,5 mm ve diskli yongalama makineleri için 0,8–2,0 mm olarak ayarlanır — minimum yonga kalınlığını doğrudan kontrol eder. Aşınmış bir örs, bu boşluğu teknik özelliklerin ötesine çıkararak, biyokütle yakıt eleme standartlarına (EN 17225-4) uymayan aşırı büyük yongalar ve uzun lifli parçacıklar üretir. Örslerimiz, tüm kesme genişliği boyunca tekdüze bir kesme boşluğu sağlayacak şekilde, ±0,05 mm tam uzunluk paralelliğine göre hassas yüzey taşlamasına tabi tutulur.\n\n**Darbe Emilimi:** (Yüksek hızda dönen) yonga makinesi bıçağının aksine, örs her kesimdeki tüm tepki kuvvetini statik bir darbe yükü olarak emer. Milyonlarca yongalama döngüsü boyunca, bu sürekli darbe yükü, ısıl işlemden yetersiz şekilde geçirilmiş örslerde kenar deformasyonuna, mikro çatlaklara ve sonunda büyük kırılmalara neden olur. Sureay örsleri, vakum ısıl işlem yöntemi ile HRC 55–60 sertliğine kadar tam sertleştirilmiştir — aşındırıcı ahşaba karşı keskin bir kenarı koruyacak kadar sert, ancak kırılgan kırılma olmadan tekrarlanan darbeleri emecek kadar dayanıklıdır.\n\n**Farklı Aşınma Hızı, Farklı Değiştirme Süresi:** Örs, bıçak üzerindeki dinamik kesme yükü yerine sıkıştırma (statik) yükü altında çalıştığı için genellikle yongalama bıçaklarından 2–4 kat daha uzun ömürlüdür. Ancak, örsün aşınması kademeli olduğu için operatörler, yonga kalitesi önemli ölçüde bozulana kadar bu kademeli bozulmayı genellikle fark edemezler. Yonga makinesi bıçakları her değiştirildiğinde veya bilendiğinde örs kenarının da kontrol edilmesini öneririz.\n\n## Malzeme Seçimi\n\n**D2 / Cr12MoV Takım Çeliği (HRC 58–60):** Yüksek hacimli ticari odun işleme ve biyokütle operasyonları için birinci sınıf özellikler sunar. %12 krom-karbür matrisi, yoğun sert ağaçlara ve kabuk içeriği yüksek hammaddelere karşı olağanüstü aşınma direnci sağlar. 8–16 saatlik kesintisiz vardiyalarda çalışan endüstriyel tamburlu yongalama makineleri (Morbark, Vermeer HG serisi, Doppstadt) için önerilir.\n\n**A8 Modifiye Takım Çeliği (HRC 54–58):** Bandit, Morbark ve Vermeer tarafından fabrika orijinal örsler için kullanılan endüstri standardı OEM sınıfı. A8 Modifiye, aşınma direnci ve darbe tokluğu arasında mükemmel bir denge sağlar; bu, mikro çatlaklar oluşmadan milyonlarca darbe döngüsünü emmesi gereken örsler için hayati önem taşır. Orta derecede kirlenmiş karışık türleri işleyen genel ormancılık ve ağaç bakım işlemleri için doğru seçimdir.\n\n**42CrMo / Manganez Çeliği (HRC 50–55):** Hammadde içinde önemli miktarda metal kalıntısı bulunan, aşırı kirlenmiş yıkıntı ahşabı, demiryolu traversleri ve kentsel yeşil atıkları işleyen operatörler için uygun maliyetli, yüksek tokluğa sahip bir seçenektir. Daha düşük sertlik, aşınma direncinden ziyade darbe emilimine öncelik vererek, tambur gövdesine zarar verebilecek felaket niteliğindeki örs kırılmalarını önler.\n\n## Ayarlanabilir Montaj ve Boşluk Ayarı\n\nÇoğu yonga makinesi OEM'i, her iki bileşen de aşındıkça örsü bıçağa doğru ilerletmek ve tasarlanan boşluk aralığını korumak için mekanik bir ayar sistemi (genellikle şim plakaları veya ayarlanabilir montaj cıvataları) sunar. Sureay örsleri, OEM'inizin ayar mekanizmasına tam olarak uyan oluklu veya büyük boy montaj delikleriyle CNC ile işlenmiştir; bu sayede bakım ekipleri boşluğu doğru bir şekilde ayarlayabilir ve güvenli bir şekilde kilitleyebilir.\n\n## Eşleştirilmiş Bıçak + Örs Setleri\n\nHem bıçakları hem de örsü aynı anda değiştiren operatörler için, aynı çelik partisinden üretilmiş, aynı vakum fırını döngüsünde ısıl işlem görmüş ve aynı paralellik toleransına göre yüzey taşlaması yapılmış yongalama bıçakları ve karşı bıçaklardan oluşan eşleştirilmiş setler sunuyoruz. Eşleştirilmiş bir set, farklı tedarikçilerden temin edilen bileşenlerde aşınmayı hızlandıran bıçak ve anvil arasındaki sertlik uyumsuzluğunu ortadan kaldırır.",
     link: "/products/wood-chipper-anvils",
     isFeatured: true,
     compatibleMachines: [
@@ -6146,33 +6185,33 @@ export const blades: Blade[] = [
     components: [
       {
         id: "clearance-gap-control",
-        tag: "CUTTING EFFICIENCY",
-        title: "Precision Clearance Gap Control",
+        tag: "KESME VERİMLİLİĞİ",
+        title: "Hassas Boşluk Kontrolü",
         description:
-          "The blade-to-anvil gap determines chip thickness, cutting force, and fuel consumption. A rounded anvil edge widens this gap beyond specification, turning clean shearing into inefficient crushing. Our anvils are surface-ground to ±0.05 mm parallelism to maintain the designed clearance across the full cutting width — restoring the self-feeding bite and reducing motor load by up to 20%.",
+          "Bıçak ile örs arasındaki boşluk, talaş kalınlığını, kesme kuvvetini ve yakıt tüketimini belirler. Yuvarlatılmış bir örs kenarı, bu boşluğu teknik özelliklerin ötesinde genişleterek, temiz kesme işlemini verimsiz bir ezme işlemine dönüştürür. Örgü baltalarımız, tüm kesme genişliği boyunca tasarlanan açıklığı korumak için ±0,05 mm paralellikte yüzey taşlanmıştır — bu sayede kendinden beslemeli kesme özelliği geri kazanılır ve motor yükü %20'ye kadar azaltılır.",
       },
       {
         id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Static Impact Resistance",
+        tag: "DAYANIKLILIK",
+        title: "Statik Darbe Dayanımı",
         description:
-          "The anvil absorbs the full reaction force of every cut as a static impact load — millions of hits per shift. Through-hardened D2 and A8 Modified steel at HRC 54–60 provides the correct balance: hard enough to hold a sharp edge against abrasive timber, tough enough to absorb repeated impacts without micro-cracking or catastrophic fracture.",
+          "Örs, her kesimin tüm tepki kuvvetini statik darbe yükü olarak emer — vardiya başına milyonlarca darbe. HRC 54–60 sertlik derecesine sahip, tam sertleştirilmiş D2 ve A8 Modifiye çelik, doğru dengeyi sağlar: aşındırıcı ahşaba karşı keskin bir kenarı koruyacak kadar sert, mikro çatlaklar veya ciddi kırılmalar olmadan tekrarlanan darbeleri emecek kadar dayanıklıdır.",
       },
       {
         id: "matched-sets",
-        tag: "SYSTEM INTEGRATION",
-        title: "Matched Blade + Anvil Sets",
+        tag: "SİSTEM ENTEGRASYONU",
+        title: "Eşleştirilmiş Bıçak + Örs Setleri",
         description:
-          "Chipper blades and counter-knives from different suppliers often have mismatched hardness — a harder anvil wears the blade prematurely, or a softer anvil degrades faster than expected. Our matched sets are manufactured from the same steel batch and heat-treated in the same cycle, ensuring balanced wear rates and maximum combined service life.",
+          "Farklı tedarikçilerden temin edilen yonga kesme bıçakları ve karşı bıçakların sertlik dereceleri genellikle birbiriyle uyuşmaz — daha sert bir örs, bıçağın erken aşınmasına neden olur; daha yumuşak bir örs ise beklenenden daha hızlı yıpranır. Eşleştirilmiş setlerimiz, aynı çelik partisinden üretilir ve aynı ısıl işlem döngüsünden geçirilir; bu sayede dengeli aşınma oranları ve maksimum toplam hizmet ömrü sağlanır.",
       },
     ],
     dimensionLabels: {
-      col0: "Chipper OEM / Model",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
+      col0: "Özgün Ekipman Üreticisi (OEM) / Model",
+      col1: "Uzunluk (mm)",
+      col2: "Genişlik (mm)",
+      col3: "Kalınlık (mm)",
       caption:
-        "* Standard OEM replacement anvil dimensions. Slotted mounting holes CNC-machined to exact OEM clearance adjustment patterns. Matched blade + anvil sets available for all sizes. Custom lengths up to 600 mm.",
+        "* Standart OEM yedek örs boyutları. Yivli montaj delikleri, OEM boşluk ayar şemalarına tam olarak uyacak şekilde CNC ile işlenmiştir. Tüm boyutlar için uyumlu bıçak + örs setleri mevcuttur. 600 mm’ye kadar özel uzunluklar.",
     },
     standardDimensions: [
       {
@@ -6238,89 +6277,92 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "What does the anvil do in a wood chipper?",
+          question: "Odun öğütücüsünde örsün işlevi nedir?",
           answer:
-            "The anvil (also called the bed knife or counter-knife) is the fixed cutting edge that the rotating chipper blades shear against. Wood is sliced cleanly in the gap between the spinning knife and the stationary anvil. A correctly set anvil-to-knife clearance (typically 0.5–1.5 mm) produces uniform chips, reduces knife wear, and prevents stringy or oversized output. A worn or misaligned anvil is the most common cause of poor chip quality and accelerated blade dulling.",
+            "Örs (yatay bıçak veya karşı bıçak olarak da adlandırılır), dönen yongalama bıçaklarının kesme hareketi sırasında sürtündüğü sabit kesici kenardır. Ahşap, dönen bıçak ile sabit örs arasındaki boşlukta temiz bir şekilde dilimlenir. Örgü bıçağı ile örs arasındaki boşluğun doğru ayarlanması (genellikle 0,5–1,5 mm), homojen yongalar elde edilmesini sağlar, bıçak aşınmasını azaltır ve lifli veya aşırı büyük parçaların oluşmasını önler. Aşınmış veya yanlış hizalanmış bir örs, düşük yonga kalitesinin ve bıçakların hızla körelmesinin en yaygın nedenidir.",
         },
         {
           question:
-            "How often should I replace or resharpen the anvil compared to the chipper blades?",
+            "Öğütücü bıçaklarına kıyasla örsü ne sıklıkla değiştirmeli veya yeniden bilemeliyim?",
           answer:
-            "The anvil typically outlasts chipper blades by 2–4× because it operates under static compressive loading rather than the dynamic shear loading on the blade. However, we recommend inspecting the anvil edge every time chipper blades are changed or flipped. When the anvil edge shows visible rounding exceeding 1.0 mm (check with a straightedge under bright light), regrind or replace it. Installing new chipper blades against a worn anvil delivers only 50–70% of their potential edge life and produces poor chip quality regardless of blade sharpness.",
+            "Örs, bıçaklarda görülen dinamik kesme yükü yerine statik basınç yükü altında çalıştığı için genellikle yongalama bıçaklarından 2–4 kat daha uzun ömürlüdür. Bununla birlikte, yongalama bıçakları her değiştirildiğinde veya ters çevrildiğinde örs kenarının da kontrol edilmesini öneririz. Örs kenarında 1,0 mm'yi aşan gözle görülür bir yuvarlanma varsa (parlak ışık altında bir cetvelle kontrol edin), örsü yeniden bileme veya değiştirin. Aşınmış bir örs üzerine yeni yongalama bıçakları takmak, bıçakların potansiyel kenar ömrünün yalnızca %50–70'ini sağlar ve bıçağın keskinliğine bakılmaksızın düşük kaliteli yongalar üretir.",
         },
         {
           question:
-            "What clearance gap should I set between the chipper blade and the anvil?",
+            "Parçalayıcı bıçağı ile örs arasında ne kadar boşluk bırakmalıyım?",
           answer:
-            "Clearance varies by chipper type and timber species. For drum chippers processing green softwood: 0.5–1.0 mm. For drum chippers on dry hardwood: 0.8–1.5 mm. For disc chippers: 1.0–2.0 mm. Always refer to your chipper OEM manual for the exact specification. The gap should be measured at multiple points across the full anvil width using a feeler gauge. If the gap varies by more than 0.3 mm from end to end, the anvil face parallelism has degraded and the anvil needs regrinding or replacement.",
+            "Boşluk, parçalayıcı tipine ve odun türüne göre değişiklik gösterir. Yeşil iğne yapraklı odun işleyen tamburlu parçalayıcılar için: 0,5–1,0 mm. Kuru sert odun işleyen tamburlu parçalayıcılar için: 0,8–1,5 mm. Diskli parçalayıcılar için: 1,0–2,0 mm. Kesin teknik özellikler için daima yonga makinesinin orijinal üretici kılavuzuna başvurun. Boşluk, bir kalınlık ölçer kullanılarak örsün tüm genişliği boyunca birden fazla noktadan ölçülmelidir. Boşluk, uçtan uca 0,3 mm'den fazla farklılık gösteriyorsa, örs yüzeyinin paralelliği bozulmuştur ve örsün yeniden taşlanması veya değiştirilmesi gerekir.",
         },
         {
           question:
-            "Should I use the same steel grade for the anvil as the chipper blade?",
+            "Örs için, yonga kesici bıçağıyla aynı çelik kalitesini kullanmalı mıyım?",
           answer:
-            "Not necessarily — the anvil and blade have different wear modes and therefore different optimal metallurgy. The blade experiences dynamic shear loading at high speed and benefits from maximum edge hardness (HRC 58–62). The anvil experiences static compressive impact and benefits from a slightly lower hardness (HRC 54–58) that provides greater impact absorption. A8 Modified at HRC 54–58 is the industry-standard anvil grade for this reason. However, for high-volume biomass operations on clean hardwood, upgrading both blade and anvil to D2 at HRC 58–60 is recommended.",
+            "İlle de öyle değil — örs ve bıçak farklı aşınma koşullarına maruz kalır ve bu nedenle optimum metalurji özellikleri de farklıdır. Bıçak, yüksek hızda dinamik kesme yüküne maruz kalır ve maksimum kenar sertliğinden (HRC 58–62) fayda sağlar. Örs ise statik basınçlı darbeye maruz kalır ve daha fazla darbe emilimi sağlayan biraz daha düşük bir sertlikten (HRC 54–58) yararlanır. Bu nedenle, HRC 54–58 sertliğinde modifiye edilmiş A8, endüstri standardı örs kalitesidir. Bununla birlikte, temiz sert ağaç üzerinde yüksek hacimli biyokütle işlemleri için hem bıçağın hem de örsün HRC 58–60 değerinde D2 kalitesine yükseltilmesi önerilir.",
         },
         {
           question:
-            "What causes a chipper to stop self-feeding even with sharp blades?",
+            "Kesici bıçaklar keskin olsa bile, parçalayıcının otomatik besleme işlevinin durmasının nedeni nedir?",
           answer:
-            "If the chipper stops pulling timber into the cutting chamber despite having freshly sharpened or new blades, the anvil is almost certainly worn. A rounded anvil edge increases the effective clearance gap, which means the blade can no longer bite into the timber with sufficient depth to generate the pulling force. The timber bounces on the blade surface instead of being grabbed and drawn in. Inspect and regrind or replace the anvil, then reset the clearance gap to OEM specification.",
+            "Bıçaklar yeni bilenmiş veya yeniyken bile parçalayıcı, odunu kesme odasına çekmeyi durdurursa, örsün aşınmış olması neredeyse kesindir. Örs kenarının yuvarlanmış olması, etkili boşluk aralığını artırır; bu da bıçağın, çekme kuvveti oluşturacak kadar yeterli derinlikte keresteye girememesi anlamına gelir. Kereste, kavranıp içeri çekilmek yerine bıçak yüzeyinde sekip geri döner. Örsu inceleyin ve yeniden bileme yapın veya değiştirin, ardından boşluk aralığını OEM spesifikasyonlarına göre yeniden ayarlayın.",
         },
         {
           question:
-            "Can I sharpen the anvil with the same tools I use for chipper blades?",
+            "Öğütücü bıçakları için kullandığım aletlerle örsü de bileyebilir miyim?",
           answer:
-            "Yes — the same wet surface grinder and aluminum oxide wheel (46–60 grit) used for chipper blades works for anvils. The same rules apply: light passes (0.02–0.05 mm per pass), never dry-grind without quenching, and verify the bevel angle with a protractor after grinding. The anvil bevel angle should match the chipper OEM specification (typically 30°–37°). Some operators neglect the anvil during regrinding because it appears less worn than the blade — this is a false economy that shortens blade life and degrades chip quality.",
+            "Evet — yonga kesici bıçaklar için kullanılan aynı ıslak yüzey taşlama makinesi ve alüminyum oksit taş (46–60 grit), örsler için de işe yarar. Aynı kurallar geçerlidir: hafif geçişler (her geçişte 0,02–0,05 mm), suyla soğutma yapmadan asla kuru taşlama yapmayın ve taşlama işleminden sonra açıölçer ile eğim açısını kontrol edin. Örs eğim açısı, yonga makinesinin OEM spesifikasyonuna (genellikle 30°–37°) uygun olmalıdır. Bazı operatörler, örsün bıçaktan daha az aşınmış göründüğü için yeniden taşlama sırasında örsü ihmal ederler — bu, bıçak ömrünü kısaltan ve talaş kalitesini düşüren yanlış bir tasarruf yöntemidir.",
         },
         {
           question:
-            "Why does my chipper produce long, stringy fibres instead of clean chips?",
+            "Neden parçalayıcım temiz yongalar yerine uzun, ipliksi lifler üretiyor?",
           answer:
-            "Long fibrous slivers — sometimes called 'spaghetti' or 'stringers' — indicate the blade-to-anvil clearance gap is too wide. The timber is being torn and pulled apart rather than sheared cleanly. This happens when the anvil edge has rounded off or when the anvil has been improperly shimmed after blade replacement. Reset the clearance to OEM specification using a feeler gauge. If the anvil edge cannot be resharpened to a clean, straight edge (due to deep chips or cracks), replace the anvil.",
+            "Uzun lifli şeritler — bazen “spagetti” veya “şeritler” olarak da adlandırılır — bıçak ile örs arasındaki açıklığın çok geniş olduğunu gösterir. Kereste, düzgün bir şekilde kesilmek yerine yırtılıp parçalanmaktadır. Bu durum, örs kenarının yuvarlanmış olması veya bıçak değiştirildikten sonra örse uygun olmayan şekilde altlık yerleştirilmesi halinde ortaya çıkar. Bir kalınlık ölçer kullanarak boşluğu OEM spesifikasyonlarına göre yeniden ayarlayın. Örs kenarı (derin yontuklar veya çatlaklar nedeniyle) temiz ve düz bir kenara yeniden bilenemiyorsa, örsü değiştirin.",
         },
       ],
       company: [
         {
-          question: "Are you a trading company or a direct manufacturer?",
+          question:
+            "Bir ticaret şirketi misiniz yoksa doğrudan üretici misiniz?",
           answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades and anvils.",
+            "2008 yılında kurulmuş, %100 doğrudan OEM üreticisiyiz. Sureay’den alışveriş yaptığınızda, aracıların kâr marjlarını ortadan kaldırmış olursunuz ve bıçaklarınızı ve örslerinizi dövüp taşlayan mühendislerle doğrudan iletişim kurarsınız.",
         },
         {
           question:
-            "Can you supply matched blade + anvil sets for my specific chipper model?",
+            "Kullandığım özel yonga makinesi modelim için birbiriyle uyumlu bıçak + örs setleri temin edebilir misiniz?",
           answer:
-            "Yes. We strongly recommend purchasing blades and anvils as matched sets — manufactured from the same steel batch and heat-treated in the same vacuum furnace cycle. This ensures balanced hardness and wear rates across both components. Provide your chipper make and model number, and we will supply a complete matched set with pre-verified clearance recommendations. Matched sets are available for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck, and Forst platforms.",
+            "Evet. Bıçakları ve örsleri, aynı çelik partisinden üretilmiş ve aynı vakum fırını döngüsünde ısıl işleme tabi tutulmuş uyumlu setler halinde satın almanızı şiddetle tavsiye ederiz. Bu, her iki bileşende dengeli sertlik ve aşınma oranları sağlar. Öğütücünüzün markasını ve model numarasını bize bildirirseniz, önceden doğrulanmış boşluk önerileriyle birlikte eksiksiz bir uyumlu set temin edeceğiz. Eşleştirilmiş setler Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck ve Forst platformları için mevcuttur.",
         },
         {
           question:
-            "Can you manufacture an anvil for my chipper if it is not listed in your standard dimensions?",
+            "Standart boyutlarınızda yer almayan bir parçalayıcım için bir örs üretebilir misiniz?",
           answer:
-            "Yes. Send us your existing anvil, a technical drawing, or your chipper make and model number. We reverse-engineer replacement anvils from OEM drawings or physical samples, verifying fit on a CMM before production. Custom lengths up to 600 mm are manufactured within 10–15 working days.",
+            "Evet. Mevcut örsünüzü, teknik çiziminizi veya yongalama makinenizin markasını ve model numarasını bize gönderin. Yedek örsleri, OEM çizimlerinden veya fiziksel numunelerden tersine mühendislik yoluyla üretiyoruz ve üretimden önce CMM üzerinde uyumunu kontrol ediyoruz. 600 mm’ye kadar özel uzunluklarda örsler 10–15 iş günü içinde üretilmektedir.",
         },
         {
-          question: "Do you ship globally and how long does it take?",
+          question:
+            "Dünya çapında kargo gönderimi yapıyor musunuz ve bu ne kadar sürer?",
           answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement anvils in stock sizes typically ship within 48–72 hours. Custom dimensions take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+            "Evet, 50'den fazla ülkeye ihracat yapıyoruz. Stokta bulunan standart OEM yedek örsler genellikle 48–72 saat içinde sevk edilir. Özel boyutlu siparişler ise 10–15 iş günü sürer. Güvenilir kapıdan kapıya teslimat için DHL, FedEx ve uluslararası deniz nakliye şirketleriyle doğrudan iş birliği yapıyoruz.",
         },
         {
-          question: "What quality documentation ships with each anvil?",
+          question:
+            "Her bir örsle birlikte hangi kaliteli belgeler verilmektedir?",
           answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
+            "Her sevkiyata bir Rockwell HRC sertlik test raporu, bir boyutsal kontrol kaydı (uzunluk, genişlik, kalınlık, paralellik, montaj deliği konumları) ve bir ısıl işlem parti sertifikası dahildir. Eşleştirilmiş bıçak + örs setleri için, tasarlanan sertlik farkını doğrulamak üzere her iki bileşenin sertliğini belgeleyen birleşik bir kontrol raporu sunulur.",
         },
       ],
     },
   },
   {
     id: "slitter-rewinder-bottom-knives",
-    name: "Slitter Rewinder Bottom Knives",
+    name: "Kesme-Sarma Makinesi Alt Bıçakları",
     fullName:
-      "Carbide Slitter Rewinder Bottom Knives for Paper & Film Rewinding Lines",
+      "Kağıt ve Film Sarma Hatları için Karbür Kesici-Sarıcı Alt Bıçakları",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image:
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Mirror Finish",
+    badge: "Ayna Parlaklığı",
     badgeColor: "blue",
     gallery: [
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
@@ -6328,17 +6370,17 @@ export const blades: Blade[] = [
       "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
     ],
     galleryAlts: [
-      "Range of slitter rewinder bottom knives and blade rings in four diameters",
-      "Pair of carbide slitter rewinder bottom knives showing bore and bolt holes",
-      "Single slitter rewinder bottom knife ring with mirror-finished running face",
+      "Dört farklı çapta sunulan dilimleyici-sarma makinesi alt bıçakları ve bıçak halkaları serisi",
+      "Delik ve cıvata deliklerini gösteren bir çift karbür dilimleyici-sarıcı alt bıçağı",
+      "Ayna cilalı çalışma yüzeyine sahip tekli kesici-sarma makinesi alt bıçak halkası",
     ],
     description:
-      "Solid and carbide-tipped bottom knives for high-speed paper slitter rewinders. Mirror-finished faces, burr-free cutting and reduced dust in the wound roll. Φ250–Φ254 stock sizes in thicknesses from 15 to 50 mm, custom bores to machine. Fits Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban and other electric rewinder platforms.",
+      "Yüksek hızlı kağıt kesme-sarma makineleri için katı ve karbür uçlu alt bıçaklar. Ayna parlaklığında yüzeyler, çapak bırakmayan kesim ve sarılmış ruloda daha az toz. 15 ila 50 mm kalınlık aralığında Φ250–Φ254 stok boyutları, makineye göre özel delikler. Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban ve diğer elektrikli sarma makinesi platformlarına uygundur.",
     fullDescription:
-      "The bottom knife on a slitter rewinder is the fixed half of a shear pair, and it is deliberately the harder half. That hardness differential between top and bottom knife is not incidental — it is the mechanism that keeps the cut clean. When the two knives are close in hardness, the shear zone deforms rather than shears, and the result is a burred slit edge and dust carried into the wound roll.\n\nSureay bottom knives are supplied in solid tungsten carbide and carbide-tipped construction, with mirror-finished faces and a keen, precisely located edge. On the tipped version the carbide is set by a controlled hot-setting process so the inserts stay bonded under high-speed running rather than loosening in service, and worn inserts can be replaced without scrapping the body.\n\n## Why Dust in the Roll Is a Bottom Knife Problem\n\nOperators usually chase dust upstream — web cleaners, static bars, extraction. Often the source is the slit itself. A bottom knife whose edge has rounded or whose face has lost its finish stops shearing and starts crushing, and crushed paper fibre becomes airborne dust that is wound directly into the roll and shows up as a converting defect two processes later. If dust appeared gradually rather than after a grade change, the bottom knife is the first thing to inspect.\n\n## Materials by Substrate\n\nSolid tungsten carbide is the longest-life choice and the right answer on abrasive and heavily coated stocks. Carbide-tipped is the best cost-to-life balance for general paper, and it has the practical advantage of being re-tippable. HSS remains reasonable for short runs on soft stocks and lowest unit cost.\n\n## Applications\n\nPaper, film, foil and similar web materials on electric slitter rewinder platforms — reel slitting, roll converting and rewinding lines running coated and uncoated paper, board, and light flexible substrates.\n\n## The Hardness Differential Is the Whole Mechanism\n\nA shear cut needs a hardness differential to stay a shear cut. When top and bottom knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and the outputs are a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often, and why replacing both on the same cycle wastes serviceable tooling. Matching the two hardnesses is a common and expensive specification mistake, and it is worth checking on any line where slit quality has drifted after a tooling change.\n\n## Dust in the Roll Usually Starts at the Slit\n\nOperators chase dust upstream — web cleaners, static bars, extraction — when the source is frequently the cut itself. A bottom knife whose edge has rounded, or whose face finish has dulled, stops shearing and starts crushing; crushed fibre is wound directly into the roll and shows up as a converting defect two processes later. The timing is the tell: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish rather than testing sharpness by feel, because face finish degrades before the edge does and raises dust well before anyone would call the knife blunt.\n\n## Solid Carbide or Carbide-Tipped\n\nSolid tungsten carbide gives the longest single service life and is the right answer on abrasive and heavily coated stocks, but when the edge is spent the knife is spent. Carbide-tipped costs less, lasts less per cycle, and is re-tippable: provided the body is straight and true and the braze seats are sound, worn inserts are replaced and the knife returns to service. That re-tippability is usually the deciding factor when the economics between the two are close. On the tipped construction the inserts are hot-set under controlled conditions so they stay bonded at rewinder speeds rather than loosening in service — braze quality, not carbide grade, is what limits the life of a badly made tipped knife.\n\n## What We Need to Match Your Machine\n\nBottom knives are made to the machine in every case, so the listed rewinder platforms are the ones we see most often rather than a limit. To quote, send the OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, the line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption. Knives ship individually with the edge protected and VCI paper against corrosion, crated for the larger diameters, because a bottom knife that arrives with a nicked edge is useless however well it was ground.",
+      "Bir dilimleyici-sarma makinesindeki alt bıçak, bir kesme çifti oluşturur ve kasıtlı olarak daha sert olan yarıdır. Üst ve alt bıçak arasındaki bu sertlik farkı tesadüfi değildir — bu, kesimin temiz olmasını sağlayan mekanizmadır. İki bıçağın sertlikleri birbirine yakın olduğunda, kesme bölgesi kesilmek yerine deforme olur ve sonuç olarak kesilen kenarda çapak oluşur ve sarılmış ruloya toz karışır.\n\nSureay alt bıçakları, aynalı yüzeyli ve keskin, hassas bir şekilde konumlandırılmış kenara sahip, katı tungsten karbür ve karbür uçlu yapıya sahiptir. Uçlu versiyonda karbür, kontrollü bir sıcak sabitleme işlemiyle yerleştirilir; böylece uçlar, kullanım sırasında gevşemek yerine yüksek hızda çalışırken de yapışık kalır ve aşınmış uçlar, gövdeyi hurdaya çıkarmadan değiştirilebilir.\n\n## Rulodaki Toz Neden Alt Bıçak Sorunudur?\n\nOperatörler genellikle tozu yukarı akış yönünde takip eder — şerit temizleyiciler, statik çubuklar, emme sistemleri. Çoğu zaman kaynak, kesik yerin kendisidir. Kenarı yuvarlanmış veya yüzey kaplaması bozulmuş bir alt bıçak, kesme işlemini durdurur ve ezmeye başlar; ezilen kağıt lifleri havada asılı toz haline gelir, doğrudan silindire sarılır ve iki işlem sonra bir işleme kusuru olarak ortaya çıkar. Toz, kağıt kalitesinde bir değişiklikten sonra değil de kademeli olarak ortaya çıkıyorsa, ilk olarak alt bıçak kontrol edilmelidir.\n\n## Alt Tabakaya Göre Malzemeler\n\nKatı tungsten karbür, en uzun ömürlü seçenektir ve aşındırıcı ve yoğun kaplamalı malzemeler için doğru çözümdür. Karbür uçlu bıçaklar, genel kağıtlar için en iyi maliyet-ömür dengesini sunar ve uçlarının yeniden takılabilmesi gibi pratik bir avantaja sahiptir. HSS, yumuşak malzemeler üzerinde kısa üretim serileri ve en düşük birim maliyet için makul bir seçenektir.\n\n## Uygulamalar\n\nElektrikli kesme-sarma platformlarında kağıt, film, folyo ve benzeri şerit malzemeler — kaplamalı ve kaplamasız kağıt, karton ve hafif esnek alt tabakaları işleyen makara kesme, rulo işleme ve sarma hatları.\n\n## Sertlik Farkı, Tüm Mekanizmanın Temelidir\n\nBir kesme işleminin kesme olarak kalabilmesi için sertlik farkı gereklidir. Üst ve alt bıçakların sertlikleri birbirine yakın olduğunda, kesme bölgesindeki malzeme temiz bir şekilde ayrılmak yerine deforme olur ve sonuçta çapaklı bir kesim kenarı ile rulo içinde toza dönüşen ezilmiş lifler ortaya çıkar. Daha sert olan alt bıçak, kenar geometrisini sabit tutarken, daha yumuşak olan üst bıçak aşınmayı üstlenir — bu da üst bıçağın daha sık değiştirilmesini gerektirmesinin ve her iki bıçağın aynı döngüde değiştirilmesinin kullanılabilir takımların israfına yol açmasının nedenidir. İki sertliği eşleştirmek yaygın ve maliyetli bir teknik özellik hatasıdır; takım değişiminden sonra kesim kalitesinde sapma görülen her üretim hattında bu hususun kontrol edilmesi önemlidir.\n\n## Rulodaki Toz Genellikle Kesim Noktasından Başlar\n\nOperatörler, kaynağın genellikle kesim işleminin kendisi olmasına rağmen tozu yukarı akış yönünde (şerit temizleyiciler, statik çubuklar, emme sistemleri) ararlar. Kenarı yuvarlaklaşmış veya yüzey pürüzlülüğü azalmış bir alt bıçak, kesmeyi durdurur ve ezmeye başlar; ezilmiş elyaf doğrudan ruloya sarılır ve iki işlem sonra bir işleme kusuru olarak ortaya çıkar. Zamanlama ipucudur: Yavaş yavaş ortaya çıkan toz bıçağı işaret ederken, malzeme sınıfı değişikliğinden sonra ortaya çıkan toz ise alt tabakayı işaret eder. Keskinliği dokunarak test etmek yerine, kenarı büyüteç altında inceleyin ve yüzey kalitesini kontrol edin; çünkü yüzey kalitesi kenardan önce bozulur ve kimse bıçağın köreldiğini fark etmeden çok önce toz oluşumuna neden olur.\n\n## Katı Karbür veya Karbür Uçlu\n\nKatı tungsten karbür, en uzun tek kullanım ömrünü sunar ve aşındırıcı ve yoğun kaplamalı malzemeler için doğru seçimdir; ancak kenar aşındığında bıçak da kullanılamaz hale gelir. Karbür uçlu bıçaklar daha ucuzdur, döngü başına ömrü daha kısadır ve uçları değiştirilebilir: gövdenin düz ve doğru olması ve lehim yuvalarının sağlam olması koşuluyla, aşınmış uçlar değiştirilir ve bıçak tekrar hizmete girer. Bu uç değiştirilebilirlik, iki seçenek arasındaki ekonomik farkın az olduğu durumlarda genellikle belirleyici faktördür. Uçlu yapıda, uçlar kontrollü koşullar altında sıcakla sabitlenir; böylece kullanım sırasında gevşemek yerine, sarma makinesinin hızlarında bile yapışık kalırlar — kötü yapılmış bir uçlu bıçağın ömrünü sınırlayan, karbür kalitesi değil, lehim kalitesidir.\n\n## Makinenize Uygun Olanı Belirlemek İçin İhtiyacımız Olanlar\n\nAlt bıçaklar her durumda makineye özel olarak üretilir; bu nedenle listelenen sarma makinesi platformları bir sınırlama değil, en sık karşılaştığımız modellerdir. Fiyat teklifi almak için, şu anda kullandığınız bıçağın dış çapını (OD), iç çapını ve kalınlığını, buna uygun üst bıçak özelliklerini, neyi dilimlediğinizi, hat hızını ve dilim sayısını gönderin. Bu bilgilerden herhangi biri bilinmiyorsa, aşınmış bıçağı veya çerçeve içinde bir kumpasla çekilmiş fotoğraflarını gönderin — varsayımlara dayalı bir teklif vermek yerine, bir numuneden tersine mühendislik yapmayı tercih ederiz. Bıçaklar, kesici kenarı korunmuş ve korozyona karşı VCI kağıdıyla sarılmış olarak tek tek gönderilir; büyük çaplı bıçaklar ise kasaya yerleştirilir. Çünkü kesici kenarı çentikli olarak gelen bir alt bıçak, ne kadar iyi taşlanmış olursa olsun kullanılamaz hale gelir.",
     link: "/products/slitter-rewinder-bottom-knives",
     disambiguation:
-      "These are circular bottom knives that run as a shear pair with a top knife on rewinding lines. If you need flat anvils for crush cutting instead, see [Bottom Grooved Anvil Knives](/products/bottom-grooved-anvil-knives).",
+      "Bunlar, sarma hatlarında üst bıçakla birlikte kesme çifti olarak çalışan dairesel tabanlı bıçaklardır. Bunun yerine ezme kesimi için düz örs bıçaklarına ihtiyacınız varsa, [Alt Yivli Örs Bıçakları](/products/bottom-grooved-anvil-knives) sayfasına bakın.",
     compatibleMachines: [
       "Beck",
       "Bielomatik",
@@ -6383,12 +6425,12 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Item",
+      col0: "Ürün",
       col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
+      col2: "Delik Çapı (mm)",
+      col3: "Kalınlık T (mm)",
       caption:
-        "* Standard rewinder bottom knife sizes. Bore, thickness and edge geometry are matched to the machine — send the OD/ID/T of the knife you run now plus the matching top knife spec.",
+        "* Standart sarma makinesi alt bıçak boyutları. Delik çapı, kalınlık ve kenar geometrisi makineye göre ayarlanır — şu anda kullandığınız bıçağın dış çapı (OD), iç çapı (ID) ve kalınlığı (T) ile buna uygun üst bıçak teknik özelliklerini bize gönderin.",
     },
     standardDimensions: [
       {
@@ -6418,56 +6460,57 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "The bottom knife should always be the harder half of the pair. Within that rule, the grade is chosen on how abrasive the substrate is and on whether you want a re-tippable body.",
+        "Alt bıçak her zaman çifti oluşturan parçalar arasında daha sert olanı olmalıdır. Bu kural çerçevesinde, malzemenin aşındırıcılık derecesine ve bıçak gövdesinin uçlarının yeniden takılabilir olup olmamasına göre uygun kalite seçilir.",
       rows: [
         {
-          grade: "Solid tungsten carbide",
+          grade: "Katı tungsten karbür",
           hardness: "HRA 89–91",
           bestFor:
-            "Abrasive and heavily coated stocks; the longest interval between changes",
+            "Aşındırıcı ve yoğun kaplamalı kağıtlar; değiştirme aralıkları arasında en uzun süre",
           tradeoff:
-            "Highest unit price, and the whole knife is scrapped when the edge is spent",
+            "En yüksek birim fiyat; bıçağın kesici kenarı aşındığında bıçağın tamamı hurdaya ayrılır",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
+          grade: "Karbür uçlu",
+          hardness: "HRA 89–91, uç kısmında",
           bestFor:
-            "General paper and board — the best cost-to-life balance, and re-tippable",
+            "Genel kağıt ve karton — maliyet-kullanım ömrü açısından en iyi denge ve yeniden doldurulabilir",
           tradeoff:
-            "Braze quality decides service life; poorly set inserts loosen at speed",
+            "Lehim kalitesi hizmet ömrünü belirler; yanlış takılmış uçlar yüksek hızda gevşer",
         },
         {
           grade: "HSS",
           hardness: "62–64 HRC",
-          bestFor: "Short runs, soft uncoated stocks, lowest unit cost",
+          bestFor:
+            "Küçük tirajlar, yumuşak, kaplamasız kağıtlar, en düşük birim maliyet",
           tradeoff:
-            "Edge rounds quickly at rewinder speeds, which is where dust in the roll begins",
+            "Kenar, sarma makinesinin hızında hızla yuvarlanır; rulodaki toz da işte bu aşamada oluşmaya başlar",
         },
       ],
       outro:
-        "Whichever grade you choose, keep the hardness differential with the top knife. Matching the two hardnesses is a common and expensive mistake — it removes the shear and leaves you crushing the web.",
+        "Hangi kaliteyi seçerseniz seçin, üst bıçakla sertlik farkını koruyun. İki sertliği birbirine uydurmak yaygın ve maliyetli bir hatadır — bu, kesme etkisini ortadan kaldırır ve ağın ezilmesine neden olur.",
     },
     components: [
       {
         id: "hardness-differential",
-        tag: "SHEAR MECHANICS",
-        title: "Deliberately Harder Than the Top Knife",
+        tag: "KESME MEKANİĞİ",
+        title: "En Üstteki Bıçaktan Kasıtlı Olarak Daha Sert",
         description:
-          "The bottom knife is specified harder than its mating top knife on purpose. That differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll.",
+          "Alt bıçak, eşleşen üst bıçaktan kasıtlı olarak daha sert olarak belirlenmiştir. Bu sertlik farkı, bıçak çiftinin şeridi deforme etmek yerine kesmesini sağlayan unsurdur ve çapak içermeyen kesim kenarlarının oluşmasının yanı sıra sarılmış ruloya az miktarda toz taşınmasının da doğrudan nedenidir.",
       },
       {
         id: "mirror-face-finish",
-        tag: "SURFACE FINISH",
-        title: "Mirror-Finished Running Face",
+        tag: "YÜZEY KALİTESİ",
+        title: "Ayna Cilalı Çalışma Yüzeyi",
         description:
-          "A polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut. Face finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out.",
+          "Pürüzsüz bir kesme yüzeyi, ağın üzerinde sürtünmek yerine onu serbest bırakır; bu da kesik kısmını temiz tutar ve kesim noktasındaki sürtünme ısısını azaltır. Kesme yüzeyinin pürüzsüzlüğü, kullanım sırasında ilk bozulan unsurlardan biridir ve operatörlerin en son kontrol ettikleri unsurlardan biridir — kesme yüzeyinin matlaşması, kenarın kendisi aşınmadan çok önce toz oluşumuna neden olur.",
       },
       {
         id: "hot-set-carbide",
-        tag: "CONSTRUCTION",
-        title: "Controlled Hot-Set Carbide Inserts",
+        tag: "İNŞAAT",
+        title: "Kontrollü Sıcak Sertleşmeli Karbür Uçlar",
         description:
-          "On the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running. The practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped.",
+          "Eğimli yapıda, kesici uçlar kontrollü koşullar altında sıcakla sabitlenir; böylece yüksek hızda çalışma sırasında sağlam bir şekilde yapışık kalırlar. Bunun pratik faydası, yeniden eğilebilir bir gövde olmasıdır: Aşınmış kesici uçlar değiştirilir ve bıçak hurdaya ayrılmak yerine tekrar kullanıma hazır hale gelir.",
       },
     ],
     relatedBladeIds: [
@@ -6476,61 +6519,62 @@ export const blades: Blade[] = [
       "tungsten-carbide-slitter-knives",
     ],
     rfqPlaceholder:
-      "Example: Jagenberg rewinder, bottom knife Φ250 × Φ188 × 25 mm, matched to a Φ200 top knife. Slitting 120 gsm coated paper at 800 m/min, 12 slits. Getting dust in the roll and a slightly burred edge.",
+      "Örnek: Jagenberg sarma makinesi, alt bıçak Φ250 × Φ188 × 25 mm, Φ200'lük üst bıçakla eşleştirilmiş. 120 g/m²'lik kaplamalı kağıdın 800 m/dk hızında, 12 kesim olarak dilimlenmesi. Ruloda toz birikmesi ve kenarlarda hafif çapak oluşumu.",
     faqs: {
       technical: [
         {
-          question: "Why should the bottom knife be harder than the top knife?",
+          question: "Alt bıçak neden üst bıçaktan daha sert olmalı?",
           answer:
-            "Because a shear cut needs a hardness differential to stay a shear cut. When the two knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and you get a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often. Matching the hardnesses is a common and expensive mistake.",
+            "Çünkü bir kesme işleminin kesme özelliği korunabilmesi için sertlik farkı gereklidir. İki bıçağın sertlik değerleri birbirine yakın olduğunda, kesme bölgesindeki malzeme temiz bir şekilde ayrılmak yerine deforme olur ve kenarlarında çapaklar oluşan bir kesik ile ezilmiş lifler ortaya çıkar; bu lifler rulo içinde toza dönüşür. Daha sert olan alt bıçak, kenar geometrisini sabit tutarken, daha yumuşak olan üst bıçak aşınmayı üstlenir — bu da üst bıçağın daha sık değiştirilmesi gerekmesinin nedenidir. Sertlikleri eşleştirmek yaygın ve maliyetli bir hatadır.",
+        },
+        {
+          question: "Yara bandının içine toz giriyor. Önce nereye bakmalıyım?",
+          answer:
+            "Yarıkta, ağ temizleyiciler ve statik çubuklardan önce. Kenarı yuvarlaklaşmış veya yüzey pürüzlülüğü bozulmuş bir alt bıçak, kesme işlemini durdurur ve ezmeye başlar; ezilmiş elyaf ise doğrudan silindire girer — bu durum genellikle iki işlem sonra bir kusur olarak ortaya çıkar. Bunu anlamanın yolu zamanlamadır: Yavaş yavaş ortaya çıkan toz bıçağı işaret ederken, kalite değişikliğinden sonra ortaya çıkan toz alt tabakayı işaret eder. Kenarı büyüteç altında inceleyin ve sadece dokunarak keskinliğini kontrol etmekle kalmayın, yüzey kalitesini de kontrol edin.",
         },
         {
           question:
-            "I am getting dust in the wound roll. Where should I look first?",
+            "Üst bıçakları değiştirmeden alt bıçakları sipariş edebilir miyim?",
           answer:
-            "At the slit itself, before the web cleaners and static bars. A bottom knife whose edge has rounded or whose face finish has dulled stops shearing and starts crushing, and crushed fibre goes straight into the roll — often showing up as a defect two processes later. The tell is timing: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish, not just sharpness by feel.",
+            "Evet, bu tür parçaların satın alınmasında genel olarak izlenen yöntem budur. Alt bıçaklar genellikle üst bıçaklara kıyasla çok daha uzun ömürlüdür; bu nedenle aynı değiştirme döngüsünde alt bıçakları da değiştirmek, hâlâ kullanılabilir durumdaki takımların boşa harcanmasına neden olur. Bize alt bıçağın dış çapı (OD), iç çapı (ID) ve kalınlığını ile buna uygun üst bıçak özelliklerini bildirirseniz, eşleşme geometrisini ve sertlik farkını halihazırda kullandığınız bıçaklara uyumlu hale getireceğiz.",
         },
         {
-          question:
-            "Can I order bottom knives without replacing the top knives?",
+          question: "Aşınmış karbür uçlu bıçakların uçları yenilenebilir mi?",
           answer:
-            "Yes, and it is the normal way these are bought. Bottom knives typically outlast top knives by a wide margin, so replacing them on the same cycle wastes serviceable tooling. Give us the bottom knife OD/ID/thickness and the matching top knife specification, and we will match the mating geometry and the hardness differential to what you already run.",
-        },
-        {
-          question: "Can worn carbide-tipped knives be re-tipped?",
-          answer:
-            "Yes, provided the body is straight and true and the braze seats are sound. Re-tipping is substantially cheaper than a new knife and is the reason to choose tipped over solid carbide when the economics are close. Solid carbide cannot be re-tipped — when the edge is spent the knife is spent, which is the trade you accept for the longest single service life.",
+            "Evet, gövdenin düz ve sağlam olması ve lehim yuvalarının sağlam olması şartıyla. Uç değiştirme, yeni bir bıçaktan önemli ölçüde daha ucuzdur ve maliyetler birbirine yakın olduğunda, katı karbür yerine uçlu bıçağı tercih etmenin nedenidir. Katı karbür bıçaklara uç takılamaz — kesici kenar aşındığında bıçak da kullanılamaz hale gelir; bu, en uzun tek kullanım ömrü karşılığında kabul ettiğiniz bir ödün.",
         },
       ],
       company: [
         {
-          question: "What do you need to quote a bottom knife?",
+          question:
+            "Alt bıçağın fiyatını belirlemek için nelere ihtiyacınız var?",
           answer:
-            "OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption.",
+            "Şu anda kullandığınız bıçağın dış çapı (OD), iç çapı ve kalınlığı, buna uygun üst bıçak özellikleri, dilimlediğiniz malzeme, hat hızı ve dilim sayısı. Bu bilgilerden herhangi biri bilinmiyorsa, aşınmış bıçağı veya çerçeve içinde bir kumpasla çekilmiş fotoğraflarını gönderin — varsayımlara dayalı bir fiyat teklifi vermek yerine, bir numuneden tersine mühendislik yoluyla analiz etmeyi tercih ederiz.",
         },
         {
           question:
-            "Do you supply for rewinder brands outside the list on this page?",
+            "Bu sayfadaki listenin dışında kalan sarıcı markaları için de tedarik sağlıyor musunuz?",
           answer:
-            "Yes. The listed platforms are the ones we see most often, not a limit — bottom knives are made to the machine in every case. Any electric slitter rewinder is in scope once we have the mounting dimensions and the mating top knife specification.",
+            "Evet. Listelenen platformlar en sık karşılaştıklarımızdır, ancak bu bir sınırlama değildir — alt bıçaklar her durumda makineye göre üretilir. Montaj boyutları ve eşleşen üst bıçak özellikleri elimizde olduğu sürece, herhangi bir elektrikli kesme-sarma makinesi kapsam dahilindedir.",
         },
         {
-          question: "How are these packed?",
+          question: "Bunlar nasıl paketleniyor?",
           answer:
-            "Individually, with the edge protected and VCI paper against corrosion, in a fitted crate for the larger diameters. Bottom knives that arrive with a nicked edge are useless regardless of how they were made, so the packing is specified for the transit rather than for the shelf.",
+            "Her bir parça ayrı ayrı, kenarları korunmuş ve korozyona karşı VCI kağıdıyla sarılmış olarak; daha büyük çaplı olanlar için ise özel olarak tasarlanmış bir sandık içinde paketlenir. Kenarları çentikli olarak gelen alt bıçaklar, üretim şekli ne olursa olsun kullanılamaz; bu nedenle ambalaj, rafta saklanmak yerine nakliye koşullarına uygun olarak tasarlanmıştır.",
         },
       ],
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Box Slotting Knives",
-    fullName: "Precision Carbide Slotting Knives for Rigid & Gift Box Grooving",
+    name: "Kutu Yiv Açma Bıçakları",
+    fullName:
+      "Sert Malzemeler ve Hediye Kutuları için Hassas Karbür Oluk Açma Bıçakları",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Packaging & Board Knives",
+    categoryDisplay: "Ambalaj ve Karton Bıçakları",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Left / Right Pairs",
+    badge: "Sol / Sağ Çiftleri",
     badgeColor: "teal",
     gallery: [
       "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
@@ -6538,14 +6582,14 @@ export const blades: Blade[] = [
       "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
     ],
     galleryAlts: [
-      "Six carbide box slotting knives fanned out to show the stock length and width range",
-      "Pair of carbide box slotting knives showing the ground grooving bevel",
-      "Box slotting knives in labelled protective cases alongside two loose knives",
+      "Hammadde uzunluğu ve genişlik aralığını göstermek üzere yelpaze şeklinde dizilmiş altı adet karbür kutu oluk açma bıçağı",
+      "Taşlanmış oluk açma eğimini gösteren bir çift karbür kutu oluk açma bıçağı",
+      "Etiketli koruyucu kutularda bulunan kutu yarık açma bıçakları ile birlikte iki adet ayrı bıçak",
     ],
     description:
-      "Carbide slotting knives for greyboard V-grooving on rigid and gift box lines. Supplied as left- and right-hand pairs in five stock sizes from 50 × 12 mm to 60 × 15 mm, 2.0 / 2.2 mm thick, in GS05U wear-optimised and GS20U tough carbide grades. Clean grooves without tearing or fraying the board face, adjustable to board thickness.",
+      "Sert karton ve hediye kutusu üretim hatlarında gri kartona V-oluk açmak için kullanılan karbür oluk açma bıçakları. 50 × 12 mm'den 60 × 15 mm'ye kadar beş farklı stok boyutunda, 2,0 / 2,2 mm kalınlığında, aşınmaya karşı optimize edilmiş GS05U ve dayanıklı GS20U karbür kalitelerinde sol ve sağ el çiftleri halinde tedarik edilir. Karton yüzeyini yırtmadan veya yıpratmadan temiz oluklar açar, karton kalınlığına göre ayarlanabilir.",
     fullDescription:
-      "A rigid box is only as good as its groove. The V-groove cut into greyboard controls how the board folds, and a groove that tears or frays the face liner shows through the wrap as a visible defect on a product that is bought precisely because it looks expensive. On gift and luxury box work there is no acceptable tolerance for a ragged groove.\n\nSureay slotting knives are ground from high-grade tungsten carbide and supplied as matched left- and right-hand pairs, because that is how they cut. The two knives work together to form the groove walls; running a new knife against a worn one produces an asymmetric groove that folds off-square, which is why we quote and ship them as pairs rather than as units.\n\n## Two Grades, One Decision\n\nGS05U is the higher-hardness, wear-optimised grade and the right choice for standard greyboard on long runs. GS20U trades some hardness for toughness and is the grade for thick board and for recycled board carrying inclusions — the same distinction that runs through every carbide application, expressed here in board terms. Choosing GS05U for recycled board with grit in it is the most common way these knives get chipped.\n\n## Adjustable to Board Thickness\n\nThe knife gap is set to the board being run, so one pair covers a range of board calipers rather than being locked to a single thickness. In practice that means a rigid box line changing between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width is within range.\n\n## Applications\n\nGreyboard V-grooving on rigid box and gift box lines: luxury packaging, cosmetics and spirits boxes, presentation cases, hardcover book board, and standard rigid cartons.\n\n## Why We Quote in Pairs\n\nThe two knives form the groove walls together, so they are ground, matched and shipped as a pair, and they should be changed as one. Running a new knife against a worn one cuts an asymmetric groove, and an asymmetric groove folds off-square — a defect that shows through the wrap on precisely the products that can least afford it. Replacing a single knife is also usually a missed diagnosis: an early single-knife failure normally means an inclusion strike or a setting fault, and both will happen again to the replacement. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month and we will quote a schedule rather than a one-off quantity, because most rigid box lines are better served by a standing order than by ordering when the last pair fails.\n\n## GS05U or GS20U — Decide on the Board, Not the Run Length\n\nGS05U is harder and wears more slowly, which makes it right for clean virgin greyboard. GS20U trades hardness for toughness and survives inclusions, which makes it right for thick board and recycled stock. The failure modes differ and that is the entire decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year even though it tests softer and shows shorter edge life on a clean-board trial. Choosing the hardest available grade for contaminated board is the most common way these knives get destroyed.\n\n## Fraying Grooves: Edge or Setting\n\nA fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it. Check the edges first. If they are still keen, look at the knife gap relative to board caliper — too wide and the board is torn open rather than cut, too tight and the face is crushed. The timing separates the two causes reliably: setting problems appear immediately after a changeover, edge problems appear gradually over a run. Because the knife gap is set to the board rather than fixed, a single pair covers a range of calipers, so a line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools provided the groove width stays in range.\n\n## Sizes and Machines Outside the List\n\nThe five stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing, and any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. If you have no drawing, send a worn knife or photographs with a caliper in frame and we return a dimensioned drawing for approval before manufacture. We would rather work from your actual tooling than from a compatibility claim. Stock sizes typically ship within a few working days; made-to-drawing geometries run 15–25 working days from drawing approval, and repeat orders against an approved drawing quote the same day.",
+      "Sert bir kutunun kalitesi, oluğunun kalitesiyle ölçülür. Gri kartona açılan V oluğu, kartonun nasıl katlanacağını belirler; yüzey kaplamasını yırtan veya yıpratan bir oluk, tam da pahalı göründüğü için satın alınan bir üründe, ambalajın içinden görünür bir kusur olarak ortaya çıkar. Hediye ve lüks kutu üretiminde, pürüzlü bir oluğa ilişkin kabul edilebilir bir tolerans yoktur.\n\nSureay oluk açma bıçakları, yüksek kaliteli tungsten karbür malzemesinden taşlanarak üretilir ve kesim işleminin bu şekilde gerçekleştirilmesi nedeniyle eşleştirilmiş sol ve sağ el çiftleri halinde tedarik edilir. İki bıçak birlikte çalışarak oluk duvarlarını oluşturur; yeni bir bıçağı aşınmış bir bıçağa karşı kullanmak, dikdörtgen şeklinde katlanmayan asimetrik bir oluk oluşturur; bu nedenle bıçakları tek tek değil, çiftler halinde fiyatlandırıp sevk ediyoruz.\n\n## İki Sınıf, Tek Karar\n\nGS05U, daha yüksek sertliğe sahip, aşınmaya karşı optimize edilmiş bir sınıftır ve uzun üretim serilerinde standart gri karton için doğru seçimdir. GS20U, sertlikten bir miktar ödün vererek dayanıklılığı ön plana çıkarır ve kalın kartonlar ile içlerinde yabancı maddeler bulunan geri dönüştürülmüş kartonlar için idealdir — bu, her karbür uygulamasında geçerli olan ve burada karton terimleriyle ifade edilen aynı ayrımdır. İçinde kum bulunan geri dönüştürülmüş kartonlar için GS05U'yu seçmek, bu bıçakların en sık kırılma nedenidir.\n\n## Karton Kalınlığına Göre Ayarlanabilir\n\nBıçak aralığı, işlenecek kartona göre ayarlanır; böylece tek bir kalınlığa sabitlenmek yerine, bir çift bıçak çeşitli karton kalınlıklarını kapsayabilir. Pratikte bu, oluk genişliği aralık içinde olduğu sürece, 1,5 mm ile 3 mm arasında değişen gri karton kullanan bir sert kutu üretim hattında, aletlerin değiştirilmesi yerine ayarlamanın yeterli olduğu anlamına gelir.\n\n## Uygulama Alanları\n\nSert kutu ve hediye kutusu hatlarında gri kartona V-oluk açma: lüks ambalajlar, kozmetik ve alkollü içecek kutuları, sunum kutuları, ciltli kitap kartonları ve standart sert kartonlar.\n\n## Neden Çift Olarak Fiyat Veriyoruz\n\nİki bıçak birlikte oluk duvarlarını oluşturur; bu nedenle bir çift olarak taşlanır, eşleştirilir ve sevk edilir; ayrıca bir bütün olarak değiştirilmelidir. Aşınmış bir bıçağın yanında yeni bir bıçağın çalıştırılması asimetrik bir oluk açar ve asimetrik oluk, kutuyu dikdörtgen şeklinde katlamaya engel olur — bu kusur, en çok buna tahammül edemeyecek ürünlerde ambalajın üzerinden açıkça görülür. Tek bir bıçağın değiştirilmesi de genellikle yanlış bir teşhis anlamına gelir: Erken dönemde tek bir bıçağın arızalanması, normalde bir yabancı cisim çarpması veya ayar hatası anlamına gelir ve her ikisi de yedek bıçakta tekrar meydana gelecektir. Hattınızda kaç adet oluk açma istasyonu çalıştığını ve tipik bir ayda kaç çift tükettiğinizi bize bildirin; biz de tek seferlik bir miktar yerine bir program sunalım, çünkü çoğu sert kutu hattı için son çift arızalandığında sipariş vermektense sürekli sipariş vermek daha uygun olur.\n\n## GS05U mu GS20U mu — Üretim Adedine Değil, Karton Türüne Göre Karar Verin\n\nGS05U daha serttir ve daha yavaş aşınır; bu da onu temiz, işlenmemiş gri karton için ideal kılar. GS20U ise sertliği dayanıklılıkla takas eder ve yabancı cisimlere karşı dirençlidir; bu da onu kalın karton ve geri dönüştürülmüş hammadde için uygun kılar. Arıza türleri farklıdır ve kararın özü budur: Aşınmış bir bıçak yeniden bilinir ve hizmete geri döner; kenarı kırılmış bir bıçak ise hurdaya ayrılır. Karton karışımınızda geri dönüştürülmüş malzeme varsa, temiz karton denemesinde daha yumuşak çıkmasına ve daha kısa kesici kenar ömrü göstermesine rağmen, GS20U genellikle bir yıllık maliyet açısından daha ucuzdur. Kirlenmiş karton için mevcut en sert kaliteyi seçmek, bu bıçakların tahrip olmasının en yaygın nedenidir.\n\n## Yıpranmış Oluklar: Bıçak Kenarı mı, Ayar mı?\n\nYıpranmış bir oluk yüzeyi, bıçak kenarının lifleri kesmeyi bırakıp itmeye başladığının işaretidir. Önce kenarları kontrol edin. Hâlâ keskinlerse, bıçak aralığını karton kalınlığına göre inceleyin — çok genişse karton kesilmez, yırtılır; çok darssa yüzey ezilir. Zamanlama, bu iki nedeni güvenilir bir şekilde birbirinden ayırır: ayar sorunları, değişimden hemen sonra ortaya çıkar; kenar sorunları ise üretim süresince kademeli olarak ortaya çıkar. Bıçak aralığı sabit değil, kartona göre ayarlandığından, tek bir çift çeşitli kalınlıkları kapsar; bu nedenle, oluk genişliği aralıkta kaldığı sürece, 1,5 mm ile 3 mm arasında değişen bir gri karton hattı için aletin değiştirilmesi yerine ayar yapılması yeterlidir.\n\n## Listede Yer Almayan Boyutlar ve Makineler\n\nBeş standart boyut, en sık sipariş edilenlerdendir; bir sınır değildir — uzunluklar, genişlikler ve kenar geometrisi çizime göre üretilir ve bıçak geometrisini aldığımızda, herhangi bir gri karton V-oluk açma veya sert kutu yarık açma hattı kapsam dahilindedir. Elinizde çizim yoksa, aşınmış bir bıçak veya kaliperin çerçeve içinde gösterildiği fotoğraflar gönderin; üretimden önce onayınız için boyutlu bir çizim göndeririz. Uyumluluk iddiasından ziyade, mevcut takımlarınızı temel alarak çalışmayı tercih ederiz. Stok boyutları genellikle birkaç iş günü içinde sevk edilir; çizime göre üretilen geometriler, çizimin onaylanmasından itibaren 15–25 iş günü sürer ve onaylanmış bir çizime dayalı tekrar siparişler aynı gün fiyatlandırılır.",
     link: "/products/box-slotting-knives",
     specs: [
       {
@@ -6578,11 +6622,11 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Item",
-      col1: "L × W (mm)",
-      col2: "Thickness T (mm)",
+      col0: "Ürün",
+      col1: "U × G (mm)",
+      col2: "Kalınlık T (mm)",
       caption:
-        "* Five stock sizes, supplied as left- and right-hand pairs. Other lengths, widths and edge geometries made to drawing or reverse-engineered from a worn knife.",
+        "* Beş standart boyut, sol ve sağ taraflı çiftler halinde tedarik edilir. Diğer uzunluklar, genişlikler ve kenar geometrileri, teknik çizime göre üretilir veya aşınmış bir bıçaktan tersine mühendislik yoluyla elde edilir.",
     },
     standardDimensions: [
       {
@@ -6613,48 +6657,48 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "The grade decision on slotting knives is wear against toughness, and the board tells you which one you need. Clean virgin greyboard wears an edge; recycled board with inclusions chips it.",
+        "Kesme bıçaklarının malzeme seçimi, aşınma ile tokluk arasındaki dengede belirlenir ve karton türü, hangisine ihtiyacınız olduğunu belirler. Temiz, işlenmemiş gri karton bıçağın kenarını aşındırır; içlerinde yabancı maddeler bulunan geri dönüştürülmüş karton ise bıçağın kenarını ufalar.",
       rows: [
         {
           grade: "GS05U",
-          hardness: "Higher hardness, wear-optimised",
+          hardness: "Daha yüksek sertlik, aşınmaya karşı optimize edilmiş",
           bestFor:
-            "Standard virgin greyboard on long production runs — the default grade",
+            "Uzun üretim serilerinde standart işlenmemiş gri karton — varsayılan kalite sınıfı",
           tradeoff:
-            "Less forgiving of inclusions; chips rather than wears if the board is contaminated",
+            "Kirliliklere karşı daha az toleranslıdır; kart kirlenmişse aşınma yerine kırılmalar meydana gelir",
         },
         {
           grade: "GS20U",
-          hardness: "Higher toughness",
+          hardness: "Daha yüksek tokluk",
           bestFor:
-            "Thick board and recycled board carrying grit or other inclusions",
-          tradeoff: "Shorter edge life on clean board than GS05U",
+            "Kum veya başka kalıntılar içeren kalın levha ve geri dönüştürülmüş levha",
+          tradeoff: "Temiz kartta kenar ömrü, GS05U’ya göre daha kısadır",
         },
       ],
       outro:
-        "If your board mix includes recycled stock at all, GS20U usually wins on total cost even though it loses on edge life — a chipped knife is scrapped, a worn one is reground.",
+        "Levha karışımınızda geri dönüştürülmüş malzeme bulunuyorsa, GS20U, kesici kenar ömrü açısından dezavantajlı olsa da genellikle toplam maliyet açısından daha avantajlıdır — ucu kırılan bıçak hurdaya ayrılırken, aşınmış olan bıçak yeniden bilendirilir.",
     },
     components: [
       {
         id: "matched-pairs",
-        tag: "SUPPLY FORMAT",
-        title: "Left and Right Supplied as a Pair",
+        tag: "TESLİMAT FORMATI",
+        title: "Sol ve Sağ, Çift Olarak Teslim Edilir",
         description:
-          "The two knives form the groove walls together, so they are ground, matched and shipped as a pair. Running a new knife against a worn one produces an asymmetric groove that folds off-square — a defect that shows through the wrap on exactly the products that can least afford it.",
+          "Bu iki bıçak birlikte oluk duvarlarını oluşturur; bu nedenle bir çift olarak taşlanıp birbirine uyumlu hale getirildikten sonra sevk edilir. Yeni bir bıçağı aşınmış bir bıçağa sürtmek, dik açılı olmayan asimetrik bir oluk oluşturur — bu kusur, en çok buna tahammül edemeyecek ürünlerde ambalajın üzerinden açıkça görülür.",
       },
       {
         id: "clean-groove-edge",
-        tag: "SURFACE QUALITY",
-        title: "Grooves That Do Not Tear the Face",
+        tag: "YÜZEY KALİTESİ",
+        title: "Yüzü Yırtmayan Oluklar",
         description:
-          "Edge geometry is ground to sever greyboard fibre rather than push it, so the groove walls stay clean and the face liner does not fray. On rigid and gift box work the groove is the difference between a fold that looks machined and one that looks damaged.",
+          "Kenar geometrisi, gri karton liflerini itmek yerine kesmek üzere taşlanmıştır; böylece oluk duvarları temiz kalır ve yüzey kaplaması yıpranmaz. Sert karton ve hediye kutusu imalatında oluk, makineyle işlenmiş gibi görünen bir katlama ile hasarlı görünen bir katlama arasındaki farkı belirler.",
       },
       {
         id: "adjustable-gap",
-        tag: "PROCESS FLEXIBILITY",
-        title: "Adjustable to Board Caliper",
+        tag: "ÜRETİM ESNEKLİĞİ",
+        title: "Kaliper Plakasına Uyarlanabilir",
         description:
-          "Knife gap is set to the board being run, so a single pair covers a range of calipers instead of being locked to one thickness. A line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width stays in range.",
+          "Bıçak aralığı işlenecek kartona göre ayarlanır; bu sayede tek bir çift, tek bir kalınlığa sabitlenmek yerine çeşitli kalınlıklardaki kartonları işleyebilir. Oluk genişliği aralık içinde kaldığı sürece, 1,5 mm ile 3 mm arasında değişen kalınlıktaki gri kartonlar arasında hareket eden bir hat, aletin yeniden ayarlanmasına gerek kalmadan otomatik olarak uyum sağlar.",
       },
     ],
     relatedBladeIds: [
@@ -6663,61 +6707,64 @@ export const blades: Blade[] = [
       "paper-straw-slitting-blades",
     ],
     rfqPlaceholder:
-      "Example: rigid box V-grooving line, knives 50 × 15 × 2.2 mm left and right. Running 2 mm greyboard, some recycled. Groove width 2 mm. Need 10 pairs, and a recommendation on grade.",
+      "Örnek: Sert kutu V-oluk açma hattı, sol ve sağda 50 × 15 × 2,2 mm boyutlarında bıçaklar. 2 mm kalınlığında gri karton kullanılıyor, bir kısmı geri dönüştürülmüş. Oluk genişliği 2 mm. 10 çifte ihtiyaç var ve kalite sınıfı konusunda bir öneri isteniyor.",
     faqs: {
       technical: [
         {
           question:
-            "Can I replace just one knife of a pair when only one is worn?",
+            "Bir çift bıçaktan sadece biri aşınmışsa, sadece o bıçağı değiştirebilir miyim?",
           answer:
-            "You can, but it is usually a false economy. The two knives form the groove walls together, so a new knife working against a worn one cuts an asymmetric groove and the board folds off-square. On rigid and gift box work that shows through the wrap. If one knife of a pair has failed early, it is worth finding out why — an early single-knife failure normally means an inclusion strike or a setting problem, and both will happen again to the replacement.",
+            "Bunu yapabilirsiniz, ancak genellikle bu bir yanılgıdır. İki bıçak birlikte oluk duvarlarını oluşturur; bu nedenle, aşınmış bir bıçağa karşı çalışan yeni bir bıçak asimetrik bir oluk açar ve tahta dik açıda katlanmaz. Sert malzemeler ve ambalajın içini gösterdiği hediye kutuları üzerinde yapılan işlerde. Bir çift bıçaktan biri erken arızalanmışsa, bunun nedenini araştırmaya değer — tek bir bıçağın erken arızalanması genellikle bir yabancı cisim çarpması veya ayar sorununu gösterir ve her ikisi de yedek bıçakta da tekrar meydana gelecektir.",
         },
         {
-          question: "GS05U or GS20U — how do I choose?",
+          question: "GS05U mu, yoksa GS20U mu — hangisini seçmeliyim?",
           answer:
-            "By what is in the board, not by how long the run is. GS05U is harder and wears more slowly, which makes it the right grade for clean virgin greyboard. GS20U is tougher and survives inclusions, which makes it the right grade for thick board and recycled stock. The failure modes are different and that is the whole decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year.",
+            "Karşılanan levhanın içeriğine göre belirlenir, kesim uzunluğuna göre değil. GS05U daha serttir ve daha yavaş aşınır; bu da onu temiz, işlenmemiş gri levha için doğru sınıf yapar. GS20U ise daha dayanıklıdır ve içindeki yabancı maddeleri tolere eder; bu da onu kalın levha ve geri dönüştürülmüş malzeme için doğru sınıf yapar. Arıza türleri farklıdır ve kararın temelinde bu yatar: aşınmış bir bıçak yeniden bilinir ve hizmete geri döner, çentiklenmiş bir bıçak ise hurdaya ayrılır. Karton karışımınızda geri dönüştürülmüş malzeme varsa, GS20U genellikle bir yıllık kullanımda daha az maliyetlidir.",
         },
         {
           question:
-            "My grooves are fraying at the face. Is that the knife or the setting?",
+            "Yivlerimin ön yüzü yıpranıyor. Bunun sebebi bıçak mı, yoksa ayar mı?",
           answer:
-            "Check the edge first. A fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it — the same failure that shows as a furry cut on any board application. If the edges are still keen, look at the knife gap relative to board caliper: too wide and the board is torn open rather than cut, too tight and the face is crushed. Setting problems tend to appear immediately after a changeover, edge problems appear gradually.",
+            "Önce bıçağın kenarını kontrol edin. Yıpranmış bir oluk yüzeyi, bıçağın lifleri kesmeyi bırakıp itmeye başladığının işaretidir — bu, herhangi bir tahta uygulamasında tüylü bir kesim olarak görülen aynı arızadır. Kenarlar hala keskinse, bıçak aralığını levha kalınlığına göre kontrol edin: aralık çok genişse levha kesilmez, yırtılır; çok dar ise yüzey ezilir. Ayar sorunları genellikle levha değişiminden hemen sonra ortaya çıkar, kenar sorunları ise kademeli olarak ortaya çıkar.",
         },
         {
-          question: "Can you make lengths outside 50 and 60 mm?",
+          question:
+            "50 ve 60 mm dışındaki uzunluklarda da üretim yapabilir misiniz?",
           answer:
-            "Yes. The stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing. If you do not have a drawing, send a worn knife or photographs with a caliper in frame and we will produce a dimensioned drawing for your approval before manufacture.",
+            "Evet. Stok ölçüleri, en sık sipariş edilen ölçülerdir; bir sınırlama değildir — uzunluklar, genişlikler ve kenar geometrisi çizimlere göre üretilir. Elinizde bir çizim yoksa, aşınmış bir bıçak veya çerçeve içinde bir kumpasla çekilmiş fotoğraflar gönderin; üretimden önce onayınız için boyutlandırılmış bir çizim hazırlayacağız.",
         },
       ],
       company: [
         {
-          question: "Are these quoted per knife or per pair?",
+          question:
+            "Bu fiyatlar bıçak başına mı, yoksa çift başına mı verilmiş?",
           answer:
-            "Per pair, because that is how they cut and how they should be changed. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month, and we will quote a schedule rather than a one-off quantity — most rigid box lines are better served by a standing order than by ordering when the last pair fails.",
+            "Çift bazında, çünkü ürünler bu şekilde kesiliyor ve bu şekilde değiştirilmeleri gerekiyor. Bize üretim hattınızda kaç adet oluk açma istasyonu çalıştığını ve tipik bir ayda kaç çift tükettiğinizi bildirin; biz de tek seferlik bir miktar yerine bir program temelinde fiyat teklifi sunalım — çoğu sert kutu üretim hattı için, son çift bozulduğunda sipariş vermektense düzenli sipariş vermek daha uygun olur.",
         },
         {
-          question: "Which slotting machines do you supply for?",
+          question: "Hangi slot makineleri için tedarik sağlıyorsunuz?",
           answer:
-            "Knives are made to the machine, so any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. Send the machine make and model together with the dimensions of the knives you run now — or a worn sample — and we will match them. We would rather work from your actual tooling than from a compatibility claim.",
+            "Bıçaklar makineye göre üretilir; bu nedenle, bıçak geometrisini aldığımızda, herhangi bir gri karton V-oluk açma veya sert kutu yarık açma hattı kapsam dahilindedir. Makinenizin markasını ve modelini, şu anda kullandığınız bıçakların boyutlarıyla birlikte — ya da aşınmış bir numune — gönderin; biz de bunlara uygun bıçakları hazırlayalım. Uyumluluk iddiasına dayanarak çalışmaktansa, mevcut takımlarınızı temel alarak çalışmayı tercih ederiz.",
         },
         {
-          question: "What is the lead time?",
+          question: "Teslim süresi ne kadardır?",
           answer:
-            "Stock sizes typically ship within a few working days of order confirmation. Made-to-drawing geometries run 15–25 working days from drawing approval. Repeat orders against an approved drawing quote same-day, since the geometry stays on file.",
+            "Stokta bulunan boyutlar genellikle sipariş onayı alındıktan sonra birkaç iş günü içinde sevk edilir. Çizim bazlı geometriler ise çizimin onaylanmasından itibaren 15–25 iş günü içinde teslim edilir. Onaylanmış bir çizime dayalı tekrar siparişler, geometri dosyada saklandığından aynı gün içinde işleme alınır.",
         },
       ],
     },
   },
   {
     id: "paper-straw-slitting-blades",
-    name: "Paper Straw & Filter Rod Slitting Blades",
-    fullName: "Carbide Circular Slitting Blades for Paper Straws & Filter Rods",
+    name: "Kağıt Pipet ve Filtre Çubuğu Dilme Bıçakları",
+    fullName:
+      "Kağıt Pipetler ve Filtre Çubukları için Karbür Dairesel Dilme Bıçakları",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image:
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Non-Stick Coated",
+    badge: "Yapışmaz Kaplamalı",
     badgeColor: "green",
     gallery: [
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
@@ -6725,17 +6772,17 @@ export const blades: Blade[] = [
       "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
     ],
     galleryAlts: [
-      "Carbide circular slitting blade for paper straw and filter rod cutting, full face and centre bore",
-      "Pair of carbide circular slitting blades for paper straw cutting, face and centre bore",
-      "Close-up of the mirror-finished face and cutting edge of a paper straw slitting blade",
+      "Kağıt pipet ve filtre çubuklarının kesilmesi için karbür dairesel kesme bıçağı, tam yüzlü ve merkez delikli",
+      "Kağıt pipet kesimi için karbür dairesel kesme bıçakları çifti, yüz ve merkez deliği",
+      "Kağıt pipet kesme bıçağının ayna parlaklığında yüzeyinin ve kesici kenarının yakın çekimi",
     ],
     description:
-      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100 outside diameter, 0.15–0.30 mm thick, in six stock sizes. Anti-stick coating resists water-based adhesive build-up so the cut edge stays square and fray-free through long runs on high-speed straw and filter rod makers.",
+      "Kağıt pipet ve filtre çubuğu kesimi için yapışmaz karbür dairesel bıçaklar. Φ88–Φ100 dış çap, 0,15–0,30 mm kalınlık, altı farklı standart boyutta. Yapışmayı önleyici kaplama, su bazlı yapıştırıcı birikimine karşı direnç gösterir; böylece yüksek hızlı pipet ve filtre çubuğu üretim makinelerinde uzun süreli çalışmalarda kesim kenarı düzgün ve pürüzsüz kalır.",
     fullDescription:
-      "On a paper straw line the blade usually does not fail by wearing out. It fails by picking up glue. Water-based adhesive transfers to the blade face, builds into a ridge along the cutting edge, and from that point the blade stops cutting the tube and starts dragging it — which is exactly what a frayed straw end is. Sharpness is not the variable that fixes it.\n\nThat is why these blades are specified around adhesive release rather than around hardness alone. A carbide substrate holds the edge; the anti-stick coating keeps the face clean so the edge can keep working. On a line running water-based adhesive, the coating does more for cut quality than another point of hardness would.\n\n## Paper Straw Lines Are Not Filter Rod Lines\n\nThe two applications share machinery ancestry and blade geometry but not their failure conditions. Filter rod cutting on tobacco machinery runs at very high speed on a consistent, well-characterised material. Paper straw lines are newer, run a wider spread of paper plies and grammages, and use adhesives that vary between producers — so blade life on a straw line is far more sensitive to the adhesive than to the paper. If you are commissioning a new straw line, expect to tune blade specification against your adhesive rather than against your paper.\n\n## Thin Blades, Real Consequences\n\nAt 0.15 to 0.30 mm these are thin blades, and thickness is a process decision. A thinner blade removes less material and leaves a squarer end on a thin-walled tube; a thicker blade is more stable at speed and more forgiving of a machine with runout. Getting this wrong shows up as either a ragged end or a blade that flexes and wanders.\n\n## Applications\n\nPaper straw winding and cut-off machines; cigarette filter rod makers including Hauni platforms; paper tube and core cut-off on comparable high-speed converting equipment.\n\n## Diagnosing a Frayed Straw End\n\nIf the ends fray while the edge still feels sharp, the cause is almost always adhesive pick-up rather than wear. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge underneath can be perfectly serviceable. Wipe the face and inspect it under a light before changing the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade. Chasing this as a sharpness problem is the standard way a straw line burns through blades it did not need to replace.\n\n## Thickness Is a Process Choice\n\nAt 0.15 to 0.30 mm the thickness is not a leftover dimension. A thinner blade removes less material and leaves a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which makes it the safer choice on older machinery or thicker multi-ply tube. Getting it wrong produces either a ragged end or a blade that flexes and wanders, and the two faults look nothing alike — tell us the ply count, grammage and machine and we will recommend rather than leave you to guess.\n\n## Filter Rod Heritage, Straw Reality\n\nMany straw lines were built on filter rod machinery, and the blade geometry often interchanges dimensionally. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent, well-characterised material; straw lines run a wider spread of papers and, critically, adhesives that vary between producers. A blade that performs on a Hauni filter rod maker can gum up within hours on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry — the adhesive is the single most useful piece of information you can give us on this application and the one most buyers leave out.\n\n## Coatings, Regrinding and Commissioning a New Line\n\nThe anti-stick coating is a surface layer, and grinding the edge removes it where it matters most, so coated blades of this type are run to end of life and replaced rather than built into a regrind cycle. If your economics favour regrinding we will quote uncoated carbide instead, and you accept more frequent face cleaning as the trade. On a line still being commissioned, the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. A fortnight of that tells you more than any datasheet comparison and sets the standing-order specification correctly from the start. Stock sizes generally ship within a few working days; custom diameters, bores and thicknesses run 15–25 working days from drawing approval, with a few days added for the coating cycle.",
+      "Kağıt pipet üretim hattında bıçak genellikle aşınma nedeniyle arızalanmaz. Arızalanma nedeni, bıçağın üzerine yapıştırıcı birikmesidir. Su bazlı yapıştırıcı bıçak yüzeyine geçer, kesme kenarı boyunca bir çıkıntı oluşturur ve bu noktadan itibaren bıçak tüpü kesmeyi bırakıp sürüklemeye başlar — yıpranmış pipet ucu da tam olarak budur. Keskinlik, bu sorunu çözen değişken değildir.\n\nBu nedenle bu bıçaklar, yalnızca sertlik yerine yapıştırıcı salınımı kriterine göre seçilir. Karbür alt tabaka kesici kenarı korur; yapışmaz kaplama ise bıçak yüzeyini temiz tutarak kesici kenarın çalışmaya devam etmesini sağlar. Su bazlı yapıştırıcının kullanıldığı bir üretim hattında, kaplama kesim kalitesine başka bir sertlik derecesinden daha fazla katkı sağlar.\n\n## Kağıt Pipet Hatları, Filtre Çubuğu Hatları Değildir\n\nBu iki uygulama, makine kökenini ve bıçak geometrisini paylaşır ancak arıza koşulları aynı değildir. Tütün makinelerinde filtre çubuğu kesimi, tutarlı ve özellikleri iyi bilinen bir malzeme üzerinde çok yüksek hızda gerçekleştirilir. Kağıt pipet hatları daha yenidir, daha geniş bir kağıt kat ve gramaj yelpazesinde çalışır ve üreticiler arasında farklılık gösteren yapıştırıcılar kullanılır — bu nedenle bir pipet hattındaki bıçak ömrü, kağıda kıyasla yapıştırıcıya çok daha duyarlıdır. Yeni bir pipet hattını devreye alıyorsanız, bıçak özelliklerini kağıdınıza göre değil, kullandığınız yapıştırıcıya göre ayarlamanız gerekecektir.\n\n## İnce Bıçaklar, Ciddi Sonuçlar\n\n0,15 ila 0,30 mm kalınlığındaki bıçaklar ince bıçaklar olarak kabul edilir ve kalınlık, üretim sürecine ilişkin bir karardır. Daha ince bir bıçak, daha az malzeme kaldırır ve ince cidarlı bir tüpte daha dikdörtgen bir uç bırakır; daha kalın bir bıçak ise yüksek hızda daha stabildir ve eksantriklik sorunu olan makinelerde daha toleranslıdır. Bu konuda yanlış bir seçim yapılması, ya pürüzlü bir uç ya da bıçağın esneyip kaymasına neden olur.\n\n## Uygulamalar\n\nKağıt pipet sarma ve kesme makineleri; Hauni platformları dahil olmak üzere sigara filtre çubuğu üreticileri; benzer yüksek hızlı işleme ekipmanlarında kağıt tüp ve göbek kesme işlemleri.\n\n## Yıpranmış Pipet Ucunun Teşhisi\n\nKenar hala keskin hissedilirken uçlar yıpranıyorsa, bunun nedeni neredeyse her zaman aşınma değil, yapıştırıcı birikmesidir. Su bazlı yapıştırıcı bıçak yüzeyine geçer ve kesme kenarı boyunca bir çıkıntı oluşturur; bu noktadan sonra bıçak tüpü kesmek yerine sürükler ve sürüklenen tüp yıpranır. Altındaki kenar ise tamamen kullanılabilir durumda olabilir. Bıçağı değiştirmeden önce yüzeyi silin ve ışık altında inceleyin — birikinti görünüyorsa, çözüm daha keskin bir bıçak değil, kaplama uygulaması veya temizlik aralığıdır. Bunu keskinlik sorunu olarak değerlendirmek, pipet üretim hattının değiştirilmesi gerekmeyen bıçakları gereksiz yere yıpratmasının standart yoludur.\n\n## Kalınlık Bir İşlem Tercihidir\n\n0,15 ila 0,30 mm aralığındaki kalınlık, artakalan bir boyut değildir. Daha ince bir bıçak, daha az malzeme kaldırır ve ince cidarlı, az katlı kamışlarda daha dikdörtgen bir uç bırakır; bu nedenle, birinci sınıf kamış işlerinde tercih edilen seçenektir. Daha kalın bir bıçak daha serttir, yüksek hızda daha istikrarlı çalışır ve mil sapmasına karşı daha dayanıklıdır; bu da onu eski makinelerde veya daha kalın, çok katmanlı borularda daha güvenli bir seçim haline getirir. Yanlış seçim, ya pürüzlü bir uç ya da esneyip kayan bir bıçakla sonuçlanır ve bu iki kusur birbirine hiç benzemez — kat sayısını, gramajı ve makineyi bize bildirin, tahmin etmenize gerek kalmadan size en uygun olanı önerelim.\n\n## Filtre Çubuğu Geleneği, Pipet Gerçeği\n\nBirçok pipet üretim hattı, filtre çubuğu makineleri üzerine kurulmuştur ve bıçak geometrisi genellikle boyut olarak birbiriyle değiştirilebilir. Ancak aktarılmayan şey, teknik özellik mantığıdır. Filtre çubuğu kesimi, tutarlı ve özellikleri iyi tanımlanmış bir malzeme üzerinde çok yüksek hızda gerçekleştirilir; pipet üretim hatları ise daha geniş bir kağıt yelpazesini ve en önemlisi, üreticiler arasında farklılık gösteren yapıştırıcıları işler. Hauni filtre çubuğu makinesinde iyi performans gösteren bir bıçak, farklı bir yapıştırıcı kullanılan bir pipet üretim hattında birkaç saat içinde yapışabilir. Makinenin geçmişine göre değil, yapıştırıcıya göre özellikleri belirleyin — yapıştırıcı, bu uygulama hakkında bize verebileceğiniz en yararlı bilgidir ve çoğu alıcının göz ardı ettiği bilgidir.\n\n## Kaplamalar, Yeniden Taşlama ve Yeni Bir Hattın Devreye Alınması\n\nYapışmayı önleyici kaplama bir yüzey tabakasıdır ve kenarın taşlanması, bu kaplamayı en önemli yerlerden kaldırır; bu nedenle bu tür kaplamalı bıçaklar, yeniden taşlama döngüsüne dahil edilmeyip kullanım ömürlerinin sonuna kadar çalıştırıldıktan sonra değiştirilir. Ekonomik açıdan yeniden bileme daha uygunsa, bunun yerine kaplamasız karbür için fiyat teklifi sunarız ve siz de bunun karşılığında daha sık yüzey temizliği yapmayı kabul edersiniz. Hala devreye alınmakta olan bir üretim hattında, faydalı ilk adım, iki farklı spesifikasyonda — genellikle kaplamalı bir bıçak ve farklı bir kalınlık — gerçek yapıştırıcınız ve kağıdınızla çalıştırılacak küçük bir deneme miktarıdır. Bunu iki hafta boyunca denemeniz, herhangi bir teknik veri sayfası karşılaştırmasından daha fazla bilgi verir ve düzenli sipariş spesifikasyonunu baştan doğru bir şekilde belirler. Stok boyutları genellikle birkaç iş günü içinde sevk edilir; özel çaplar, delikler ve kalınlıklar ise çizim onayından itibaren 15–25 iş günü sürer; kaplama döngüsü için birkaç gün daha eklenir.",
     link: "/products/paper-straw-slitting-blades",
     introNote:
-      "Paper straw production is where most of the demand for these blades now sits. If your line runs water-based adhesive, tell us which adhesive — it predicts blade life on this application better than the paper specification does.",
+      "Kağıt pipet üretimi, şu anda bu bıçaklara yönelik talebin en büyük kısmının yoğunlaştığı alandır. Üretim hattınızda su bazlı yapıştırıcı kullanılıyorsa, hangi yapıştırıcı olduğunu bize bildiriniz — bu bilgi, kağıt özelliklerinden daha iyi bir şekilde bu uygulamada bıçak ömrünü tahmin etmemizi sağlar.",
     compatibleMachines: ["Hauni"],
     specs: [
       {
@@ -6764,12 +6811,12 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Item",
+      col0: "Ürün",
       col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
+      col2: "Delik Çapı (mm)",
+      col3: "Kalınlık T (mm)",
       caption:
-        "* Six stock sizes. Other diameters, bores and thicknesses made to drawing — send the machine model, straw ply count and adhesive type and we will specify the blade against them.",
+        "* Altı standart boyut. Diğer çaplar, iç çaplar ve kalınlıklar çizimlere göre üretilir — makine modelini, pipet kat sayısını ve yapıştırıcı türünü bize iletin; biz de bu bilgilere göre bıçağı belirleyeceğiz.",
     },
     standardDimensions: [
       {
@@ -6811,55 +6858,56 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "On adhesive-bearing work the surface matters more than the substrate. Choose the coating for the adhesive you run, then choose the substrate for the paper.",
+        "Yapıştırıcı kullanılan işlerde yüzey, alt tabakadan daha önemlidir. Kullandığınız yapıştırıcıya uygun kaplamayı seçin, ardından kağıt için alt tabakayı seçin.",
       rows: [
         {
-          grade: "Carbide + anti-stick coating",
+          grade: "Karbür + yapışmaz kaplama",
           hardness: "HRA 89–91",
           bestFor:
-            "Water-based adhesive straw lines and filter rod cutting — the default specification",
+            "Su bazlı yapıştırıcı ile pipet hatları ve filtre çubuğu kesimi — varsayılan teknik özellikler",
           tradeoff:
-            "Higher unit price; the coating is a consumable layer and does not survive a regrind",
+            "Daha yüksek birim fiyat; kaplama, sarf malzemesi niteliğinde bir tabakadır ve yeniden öğütme işleminden sonra bozulur",
         },
         {
-          grade: "Uncoated carbide",
+          grade: "Kaplamasız karbür",
           hardness: "HRA 89–91",
           bestFor:
-            "Dry or low-tack applications, and paper tube cut-off without adhesive at the cut line",
+            "Kuru veya düşük yapışkanlı uygulamalar ve kesim çizgisinde yapıştırıcı kullanılmadan kağıt tüpün kesilmesi",
           tradeoff:
-            "Picks up adhesive quickly on glued lines; cut edge frays long before the edge is worn",
+            "Yapıştırılmış hatlarda yapıştırıcıyı hızla emer; kenar aşınmadan çok önce kesik kenar yıpranır",
         },
         {
-          grade: "Tool steel",
+          grade: "Takım çeliği",
           hardness: "60–63 HRC",
           bestFor:
-            "Trials, short runs and low-speed lines where cost dominates",
+            "Maliyetin ön planda olduğu deneme sürüşleri, kısa mesafeli seferler ve düşük hızlı hatlar",
           tradeoff:
-            "Loses the edge quickly at straw-line speeds; not viable on continuous production",
+            "Saman hattı hızlarında hızla keskinliğini yitirir; sürekli üretimde kullanılamaz",
         },
       ],
     },
     components: [
       {
         id: "adhesive-release-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Coated for Adhesive Release, Not Just Hardness",
+        tag: "YÜZEY İŞLEMİ",
+        title:
+          "Sadece Sertlik İçin Değil, Yapıştırıcının Ayrılması İçin Kaplanmıştır",
         description:
-          "On water-based adhesive lines the blade fails by pick-up, not by wear. The anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end.",
+          "Su bazlı yapıştırıcı hatlarında bıçak, aşınma nedeniyle değil, yapışmaya bağlı olarak bozulur. Yapışmayı önleyici kaplama, bıçak yüzeyini temiz tutar; böylece bıçak kenarı tüpü sürüklemek yerine kesmeye devam eder — işte bu, pipet ucunun yıpranmamasının ardındaki asıl mekanizmadır.",
       },
       {
         id: "thin-section-stability",
-        tag: "BLADE GEOMETRY",
-        title: "0.15–0.30 mm, Specified to the Cut",
+        tag: "BİÇAK GEOMETRİSİ",
+        title: "0,15–0,30 mm, Kesime Göre Belirlenir",
         description:
-          "Thickness is a process choice, not a leftover. Thinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number.",
+          "Kalınlık, bir üretim süreci tercihidir; bir artık değildir. Daha ince bıçaklar daha az malzeme kaldırır ve ince cidarlı borularda daha dikdörtgen bir uç bırakır; daha kalın bıçaklar ise yüksek hızda daha istikrarlı çalışır ve makinenin eksantrikliğini daha iyi tolere eder. Varsayılan bir değer belirlemek yerine, kat sayınıza ve makinenize göre kalınlığı belirliyoruz.",
       },
       {
         id: "straw-line-tuning",
-        tag: "APPLICATION ENGINEERING",
-        title: "Tuned to the Adhesive, Not Only the Paper",
+        tag: "UYGULAMA MÜHENDİSLİĞİ",
+        title: "Sadece Kağıda Değil, Yapıştırıcıya da Uyum Sağlanmıştır",
         description:
-          "Paper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive. Tell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application.",
+          "Kağıt pipet hatlarında yapıştırıcıdaki farklılıklar, kağıttakinden çok daha fazladır ve bıçak ömrü de yapıştırıcıya bağlıdır. Hangi hattı kullandığınızı bize bildirirseniz, buna uygun kaplama ve geometriyi belirleyeceğiz — bu uygulama konusunda bize verebileceğiniz en yararlı bilgi budur.",
       },
     ],
     relatedBladeIds: [
@@ -6868,60 +6916,63 @@ export const blades: Blade[] = [
       "nonwoven-slitter-knives",
     ],
     rfqPlaceholder:
-      "Example: paper straw cut-off station, blade Φ100 × Φ15 × 0.20 mm. Three-ply straw, 60 gsm kraft, water-based adhesive. Blades are gumming up after about 6 hours and the straw ends fray. Need 50 pcs, coated.",
+      "Örnek: Kağıt pipet kesme istasyonu, bıçak Φ100 × Φ15 × 0,20 mm. Üç katlı pipet, 60 g/m² kraft kağıt, su bazlı yapıştırıcı. Bıçaklar yaklaşık 6 saat sonra yapışkanla tıkanıyor ve pipet uçları yıpranıyor. 50 adet kaplamalı bıçak gerekiyor.",
     faqs: {
       technical: [
         {
           question:
-            "My straw ends are fraying but the blade edge still feels sharp. What is happening?",
+            "Pipetimin uçları yıpranıyor ama bıçak kenarı hâlâ keskin gibi geliyor. Neler oluyor?",
           answer:
-            "Almost certainly adhesive pick-up. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge itself can be perfectly serviceable underneath. Wipe the face and inspect it under a light before you change the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade.",
+            "Neredeyse kesin olarak yapıştırıcı birikmesidir. Su bazlı yapıştırıcı bıçak yüzeyine bulaşır ve kesme kenarı boyunca bir çıkıntı oluşturur; bu noktadan sonra bıçak, tüpü kesmek yerine sürükler ve sürüklenen tüp yıpranır. Kenarın kendisi ise alt kısmında gayet iyi durumda olabilir. Bıçağı değiştirmeden önce yüzeyi silin ve ışık altında inceleyin — birikinti görünüyorsa, çözüm daha keskin bir bıçak değil, kaplama veya temizlik aralığıdır.",
         },
         {
-          question: "Should I run 0.15 mm or 0.30 mm?",
+          question: "0,15 mm mi yoksa 0,30 mm mi kullanmalıyım?",
           answer:
-            "It depends on the tube and the machine. A thinner blade removes less material and gives a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which is why it is the safer choice on older machinery or on thicker multi-ply tube. Tell us the ply count, grammage and machine and we will recommend rather than leaving you to guess.",
+            "Bu, boruya ve makineye bağlıdır. Daha ince bir bıçak, daha az malzeme alır ve ince cidarlı, az katmanlı pipetlerde daha köşeli bir uç sağlar; bu nedenle de birinci sınıf pipet işlerinde tercih edilir. Daha kalın bir bıçak daha serttir, yüksek hızda daha istikrarlı çalışır ve mil sapmasını daha iyi tolere eder; bu nedenle eski makinelerde veya daha kalın, çok katmanlı borularda daha güvenli bir seçimdir. Katman sayısını, gramajı ve makine modelini bize bildirirseniz, tahminde bulunmanıza gerek kalmadan size en uygun seçeneği öneririz.",
         },
         {
-          question: "Does the coating survive regrinding?",
+          question: "Kaplama, yeniden taşlama işleminden sonra da bozulmaz mı?",
           answer:
-            "No. The coating is a surface layer, and grinding the edge removes it where it matters most. On coated blades of this type the practical approach is to run them to end of life and replace, rather than to build a regrind cycle around them. If your economics favour regrinding, we can quote uncoated carbide instead and you accept more frequent face cleaning as the trade.",
+            "Hayır. Kaplama bir yüzey tabakasıdır ve kenarın taşlanması, en önemli bölgede bu kaplamayı ortadan kaldırır. Bu tür kaplamalı bıçaklarda pratik yaklaşım, bıçaklar için bir yeniden taşlama döngüsü oluşturmak yerine, kullanım ömürlerinin sonuna kadar kullanıp değiştirmektir. Eğer ekonomik açıdan yeniden taşlama sizin için daha uygunsa, bunun yerine kaplamasız karbür bıçaklar için fiyat teklifi verebiliriz; karşılığında ise daha sık yüzey temizliği yapmayı kabul etmeniz gerekir.",
         },
         {
-          question: "Do filter rod blades and paper straw blades interchange?",
+          question:
+            "Filtre çubuğu bıçakları ile kağıt pipet bıçakları birbirinin yerine kullanılabilir mi?",
           answer:
-            "Dimensionally they often do — the geometry lineage is the same and many straw lines were built on filter rod machinery. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent material; straw lines run varied paper and, critically, varied adhesive. A blade that performs on a Hauni filter rod maker may gum up on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry.",
+            "Boyutlar açısından genellikle öyledir — geometrik yapı aynıdır ve birçok pipet üretim hattı, filtre çubuğu makineleri üzerine kurulmuştur. Aktarılmayan şey ise teknik özellik mantığıdır. Filtre çubuğu kesimi, tutarlı bir malzeme üzerinde çok yüksek hızda gerçekleştirilir; pipet hatlarında ise çeşitli kağıtlar ve, daha da önemlisi, çeşitli yapıştırıcılar kullanılır. Hauni filtre çubuğu makinesinde iyi performans gösteren bir bıçak, farklı bir yapıştırıcı kullanılan bir pipet hattında yapışıp kalabilir. Makinenin kökenine göre değil, yapıştırıcıya göre spesifikasyon belirleyin.",
         },
       ],
       company: [
         {
-          question: "What information do you need to quote?",
+          question:
+            "Fiyat teklifi verebilmek için hangi bilgilere ihtiyacınız var?",
           answer:
-            "Outside diameter, bore and thickness; the machine model; straw ply count and paper grammage; the adhesive type; and your current change interval. The adhesive is the item most buyers leave out and the one that predicts blade life best on this application, so include it even if you are not sure it matters.",
+            "Dış çap, iç çap ve kalınlık; makine modeli; saman tabakası sayısı ve kağıt gramajı; yapıştırıcı türü; ve mevcut bakım aralığınız. Yapıştırıcı, çoğu alıcının göz ardı ettiği ve bu uygulamada bıçak ömrünü en iyi şekilde belirleyen unsurdur; bu nedenle, bunun önemli olup olmadığından emin olmasanız bile bu bilgiyi de ekleyin.",
         },
         {
           question:
-            "Can you supply for a straw line we are still commissioning?",
+            "Halen devreye alma aşamasında olan bir pipet hattı için malzeme tedarik edebilir misiniz?",
           answer:
-            "Yes, and it is worth involving us early. On a new line the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. That tells you more in a fortnight than a datasheet comparison will, and it sets the standing order specification correctly from the start.",
+            "Evet, bu konuda bize erken aşamada danışmanızda fayda var. Yeni bir üretim hattında atılacak ilk adım, iki farklı spesifikasyona sahip — genellikle kaplamalı bir bıçak ve farklı bir kalınlık — küçük bir deneme partisini, kullandığınız gerçek yapıştırıcı ve kağıtla birlikte test etmektir. Bu, iki hafta içinde bir teknik veri sayfası karşılaştırmasından elde edeceğiniz bilgiden daha fazlasını size sunar ve kalıcı sipariş şartnamesini baştan doğru bir şekilde belirler.",
         },
         {
-          question: "What are the lead times?",
+          question: "Teslimat süreleri ne kadardır?",
           answer:
-            "Stock sizes generally ship within a few working days. Custom diameters, bores and thicknesses run 15–25 working days from drawing approval. Coated blades add a few days over uncoated for the coating cycle, so factor that in when you are planning a first trial.",
+            "Stokta bulunan boyutlar genellikle birkaç iş günü içinde sevk edilir. Özel çap, iç çap ve kalınlıklarda üretim, çizimin onaylanmasından itibaren 15–25 iş günü sürer. Kaplamalı bıçaklar, kaplama süreci nedeniyle kaplamasız bıçaklara kıyasla birkaç gün daha fazla süre gerektirir; bu nedenle ilk denemeyi planlarken bunu hesaba katınız.",
         },
       ],
     },
   },
   {
     id: "groove-bottom-knives",
-    name: "Groove Bottom Knives",
-    fullName: "Multi-Groove Bottom Knives & Cutter Rings for Shear Slitting",
+    name: "Oluklu Alt Bıçaklar",
+    fullName:
+      "Kesme Dilimleme için Çok Kanallı Alt Bıçaklar ve Kesici Halkalar",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Kesme Bıçakları",
     image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Pitch from 5 mm",
+    badge: "5 mm'den başlayan aralık",
     badgeColor: "blue",
     gallery: [
       "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
@@ -6929,19 +6980,19 @@ export const blades: Blade[] = [
       "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
     ],
     galleryAlts: [
-      "Multi-groove bottom knife ring with parallel precision-ground grooves for shear slitting",
-      "Multi-groove bottom knife rings with a smooth spacer ring and flat bottom knives",
-      "Multi-groove bottom cutter ring showing groove pitch and ground bore",
+      "Kesme yırtma işlemi için paralel, hassas taşlanmış oluklara sahip çok oluklu alt bıçak halkası",
+      "Pürüzsüz ara halkalı ve düz tabanlı bıçaklara sahip, çok oluklu alt bıçak halkaları",
+      "Yiv aralığı ve taşlanmış deliği gösteren çok yivli alt kesici halka",
     ],
     description:
-      "Multi-groove bottom knife rings for shear slitting on paper, board and film rewinders. Slit width is changed by moving the top knife to another groove instead of re-tooling. Groove pitch from 5 mm, OD to Φ406 mm, plain bore for air shafts or set-screw for solid shafts. Single or double cutting edge, one-piece or split ring. Also supplied as single-groove and smooth spacer rings.",
+      "Kağıt, karton ve film sarma makinelerinde kesme yivleme işlemi için çok yivli alt bıçak halkaları. Yiv genişliği, aletin değiştirilmesi yerine üst bıçağın başka bir yive kaydırılmasıyla ayarlanır. Yiv aralığı 5 mm’den itibaren, dış çap Φ406 mm’ye kadar; havalı şaftlar için düz delikli veya dolu şaftlar için ayar vidası. Tek veya çift kesme kenarı, tek parça veya bölünmüş halka. Tek oluklu ve pürüzsüz ara halkalar olarak da temin edilir.",
     fullDescription:
-      "A multi-groove bottom knife — also called a multi-groove bottom slitter, a multi-groove anvil, or an MKB — is one wide ring carrying many parallel precision-ground grooves. Every groove is a usable cutting position, so a width change means moving the top knife into a different groove rather than stripping the shaft and rebuilding the knife stack. On a line that changes order width often, that difference is measured in shift hours, not in blade cost.\n\nThe grooves are what make the cut, so they are what has to be right. Groove position sets slit width, groove width sets the working shear clearance against the mating top knife, and groove edge condition sets whether the web shears or tears. All three are ground in one setup on the same ring, which is why a multi-groove ring holds width accuracy across the full stack better than an equivalent number of separate anvil knives assembled with spacers.\n\n## Where the Format Earns Its Price\n\nA single-groove bottom knife is cheaper per piece and perfectly adequate on a line that runs one width for weeks. The multi-groove ring wins where order width changes frequently, where slit counts are high, or where re-setting a spacer stack has become the real changeover bottleneck. It also removes a whole class of setting error: with fixed groove positions ground into one body, width cannot drift because someone stacked the spacers a millimetre out.\n\n## Mounting: Air Shaft or Solid Shaft\n\nTwo mounting styles cover almost every rewinder. A plain bore clamps onto an expandable air shaft, which is the fast-change option and the usual choice on modern converting lines. A set-screw design fixes onto a solid bottom shaft, which is more common on older machines and on heavy board lines where shaft rigidity matters more than change speed. Tell us which shaft you run — it changes the bore specification, not just the fixing, and a ring bored for the wrong system will not seat true.\n\n## One Piece or Split\n\nStandard rings are one-piece. A two-piece split ring costs more but comes off and goes back on without breaking down the shaft assembly, which on a wide machine can turn a planned stop into a running change. If your rings are currently changed by pulling the whole shaft, the split version is usually the first thing worth quoting.\n\n## Single or Double Cutting Edge\n\nRings are ground with a single cutting edge or with cutting edges on both sides of each groove. Double-edged geometry doubles the usable positions and lets the ring be reversed when one side is worn, at the cost of a more demanding grind and a higher unit price. Which is right depends on how your slit positions are distributed across the ring, so send the width schedule rather than only the groove count.\n\n## Groove Pitch Is Made to Your Schedule\n\nCutting edge division — the distance from one cutting edge to the next, also called the pitch — is custom in almost every case and can go as narrow as 5 mm (0.200 in). Outside diameters run up to Φ406 mm (16 in). There is no useful standard table here, which is why we quote from your width schedule or from a drawing: give us the OD, bore, ring width, the widths you actually run, and the mating top knife, and we grind the groove positions to that schedule.\n\n## The Rest of the Ring Set\n\nA working shaft is rarely all multi-groove rings. Single-groove cutter rings cover fixed positions, and smooth rings act as spacers and web supports between cutting positions. We supply all three to the same bore and runout specification so they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and hard-to-diagnose source of slit-width variation.\n\n## Applications\n\nPaper, board, tissue and corrugated converting; film, foil, label stock, adhesive tape, non-wovens and textiles on shear-slitting rewinders.",
+      "Çok oluklu alt bıçak — çok oluklu alt kesici, çok oluklu örs veya MKB olarak da adlandırılır — üzerinde çok sayıda paralel, hassas taşlanmış oluk bulunan geniş bir halkadır. Her oluk, kullanılabilir bir kesme konumudur; bu nedenle, genişlik değişikliği, mili söküp bıçak yığınını yeniden oluşturmak yerine, üst bıçağı farklı bir oluğa kaydırmak anlamına gelir. Sipariş genişliğinin sık sık değiştiği bir üretim hattında, bu fark bıçak maliyetiyle değil, vardiya saatleriyle ölçülür.\n\nKesimi gerçekleştiren oluklardır; dolayısıyla doğru olması gereken de budur. Oluk konumu kesme genişliğini, oluk genişliği ise eşleşen üst bıçağa karşı çalışma kesme açıklığını belirler; oluk kenarının durumu ise şeridin kesilip kesilmeyeceğini veya yırtılıp yırtılmayacağını belirler. Bu üç unsur da aynı halka üzerinde tek bir ayar ile taşlanır; bu nedenle, çok oluklu bir halka, ara parçalarla birleştirilmiş eşdeğer sayıda ayrı örs bıçağına kıyasla tüm yığın boyunca genişlik doğruluğunu daha iyi korur.\n\n## Formanın Fiyatını Hak Ettiği Nokta\n\nTek oluklu alt bıçak, adet başına daha ucuzdur ve haftalarca tek bir genişlikte çalışan bir hat için gayet yeterlidir. Çok oluklu halka ise sipariş genişliğinin sık sık değiştiği, kesim sayısının yüksek olduğu veya ara parça yığınının yeniden ayarlanmasının gerçek bir geçiş darboğazı haline geldiği durumlarda avantaj sağlar. Ayrıca, bir dizi ayar hatasını da ortadan kaldırır: sabit oluk konumları tek bir gövdeye taşlanmış olduğundan, birinin ara parçaları bir milimetre sapma ile istiflemesi nedeniyle genişlik kayması yaşanmaz.\n\n## Montaj: Hava Şaftı veya Katı Şaft\n\nİki montaj stili neredeyse tüm sarma makinelerini kapsar. Düz delikli tip, genişletilebilir bir hava şaftına kelepçelenir; bu, hızlı değiştirme seçeneğidir ve modern dönüştürme hatlarında yaygın olarak tercih edilir. Ayar vidası tasarımlı model ise, sağlam bir alt şafta sabitlenir; bu, eski makinelerde ve şaft sertliğinin değiştirme hızından daha önemli olduğu ağır karton hatlarında daha yaygındır. Hangi şaftı kullandığınızı bize bildirin — bu sadece sabitleme yöntemini değil, delik özelliklerini de değiştirir ve yanlış sistem için delilmiş bir halka doğru şekilde oturmayacaktır.\n\n## Tek Parça mı, Bölünmüş mü\n\nStandart halkalar tek parçalıdır. İki parçalı bölünmüş halka daha pahalıdır ancak mil grubunu sökmeye gerek kalmadan çıkarılabilir ve takılabilir; bu da geniş bir makinede planlı bir duruşu çalışırken yapılan bir değişime dönüştürebilir. Halkalarınız şu anda milin tamamını çekerek değiştiriliyorsa, bölünmüş versiyon genellikle teklif verilmesi gereken ilk seçenektir.\n\n## Tek veya Çift Kesici Kenar\n\nHalkalar, tek bir kesici kenarla veya her oluğun her iki tarafında kesici kenarlar olacak şekilde taşlanır. Çift kenarlı geometri, kullanılabilir konum sayısını ikiye katlar ve bir tarafı aşındığında halkayı ters çevirmeye olanak tanır; bunun bedeli ise daha zorlu bir taşlama işlemi ve daha yüksek birim fiyattır. Hangisinin doğru olduğu, yarık konumlarınızın halka üzerinde nasıl dağıldığına bağlıdır; bu nedenle, sadece oluk sayısını değil, genişlik çizelgesini de gönderin.\n\n## Oluk Aralığı Talimatlarınıza Göre Belirlenir\n\nKesme kenarı aralığı — bir kesme kenarından diğerine olan mesafe, diğer adıyla aralık — hemen hemen her durumda özel olarak belirlenir ve 5 mm (0,200 inç) kadar dar olabilir. Dış çaplar Φ406 mm'ye (16 inç) kadar çıkabilir. Bu konuda kullanışlı bir standart tablo bulunmadığından, fiyat teklifimizi genişlik çizelgenize veya bir çizime göre hazırlıyoruz: bize dış çapı (OD), iç çapı, halka genişliğini, fiilen kullandığınız genişlikleri ve eşleşen üst bıçağı verin; biz de oluk konumlarını bu çizelgeye göre taşlayalım.\n\n## Halka Setinin Geri Kalan Kısmı\n\nÇalışan bir şaftta nadiren tüm halkalar çok olukludur. Tek oluklu kesici halkalar sabit konumları kaplar ve pürüzsüz halkalar, kesme konumları arasında ara parçalar ve ağ destekleri görevi görür. Bu üç tür halkayı da aynı delik çapı ve salgı spesifikasyonuna göre tedarik ediyoruz; böylece sallanma olmadan üst üste istiflenebilirler — farklı tedarikçilerden gelen halkaları tek bir şaftta karıştırmak, kesik genişliği değişkenliğinin yaygın ve teşhis edilmesi zor bir nedenidir.\n\n## Uygulamalar\n\nKağıt, karton, kağıt mendil ve oluklu mukavva işleme; kesme-yarıma ve sarma makinelerinde film, folyo, etiket stoğu, yapışkan bant, dokunmamış kumaşlar ve tekstil ürünleri.",
     link: "/products/groove-bottom-knives",
     disambiguation:
-      "This page covers multi-groove rings that carry many slit positions on one body. For the single-edge circular bottom knives that pair with a top knife on paper rewinders, see [Slitter Rewinder Bottom Knives](/products/slitter-rewinder-bottom-knives).",
+      "Bu sayfada, tek bir gövdede çok sayıda kesik konumu barındıran çok oluklu halkalar ele alınmaktadır. Kağıt sarma makinelerinde üst bıçakla eşleştirilen tek kenarlı dairesel alt bıçaklar için bkz. [Kesici-Sarma Makinesi Alt Bıçakları](/products/slitter-rewinder-bottom-knives).",
     introNote:
-      "Groove pitch, groove count and bore are made to your width schedule — there is no meaningful standard size for this product. Send the widths you actually run, the shaft type (air or solid) and the mating top knife, and we grind the groove positions to that schedule.",
+      "Oluk aralığı, oluk sayısı ve delik çapı, belirttiğiniz genişlik çizelgesine göre ayarlanır — bu ürün için geçerli bir standart boyut bulunmamaktadır. Gerçekte kullandığınız genişlikleri, şaft tipini (havalı veya dolu) ve eşleşen üst bıçağı bize bildiriniz; biz de oluk konumlarını bu çizelgeye göre taşlayalım.",
     compatibleMachines: [
       "Kampf",
       "Goebel",
@@ -6984,12 +7035,12 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Configuration",
-      col1: "Outer Diameter",
-      col2: "Mounting",
-      col3: "Groove Pitch / Edges",
+      col0: "Yapılandırma",
+      col1: "Dış Çap",
+      col2: "Montaj",
+      col3: "Yiv Aralığı / Kenarlar",
       caption:
-        "* Groove pitch, groove count, ring width and bore are made to your width schedule — there is no standard size table for this product. Send the widths you run, the shaft type and the mating top knife specification, or a drawing, and we grind the groove positions to match.",
+        "* Oluk aralığı, oluk sayısı, halka genişliği ve delik çapı, sizin genişlik programınıza göre üretilir — bu ürün için standart bir boyut tablosu bulunmamaktadır. Kullandığınız genişlikleri, mil tipini ve eşleşen üst bıçağın teknik özelliklerini ya da bir çizim gönderin; biz de oluk konumlarını buna uygun şekilde taşlayalım.",
     },
     standardDimensions: [
       {
@@ -7031,64 +7082,65 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Grade choice on a multi-groove ring is governed by how abrasive the web is, because the groove edges wear where the web passes rather than where the knife strikes. A ring is also a large, expensive body to scrap, so grades that can be reground repeatedly are usually the better economics.",
+        "Çok oluklu bir halkada kalite seçimi, ağın ne kadar aşındırıcı olduğuna bağlıdır; çünkü oluk kenarları, bıçağın vurduğu yerden ziyade ağın geçtiği yerde aşınır. Ayrıca bir halka, hurdaya ayrılması açısından büyük ve pahalı bir parçadır; bu nedenle, tekrar tekrar bilinebilen kaliteler genellikle ekonomik açıdan daha avantajlıdır.",
       rows: [
         {
           grade: "Cr12MoV / SKD-11",
           hardness: "HRC 58–62",
           bestFor:
-            "General paper, board and film — the standard specification and the best all-round balance of wear life and regrindability",
+            "Genel kağıt, karton ve film — standart teknik özellikler ile aşınma ömrü ve yeniden öğütme kabiliyeti arasında en iyi genel denge",
           tradeoff:
-            "Outlasted by carbide-tipped on heavily coated or filled stocks",
+            "Ağır kaplamalı veya dolgulu kütüklerde karbür uçlu aletlere göre daha uzun ömürlüdür",
         },
         {
           grade: "9CrSi / 65Mn",
           hardness: "HRC 56–60",
           bestFor:
-            "Soft uncoated stocks, tissue and lower line speeds where unit price drives the decision",
+            "Yumuşak, kaplamasız kağıtlar, kağıt mendiller ve birim fiyatın karar verici faktör olduğu düşük hat hızları",
           tradeoff:
-            "Groove edges round off sooner, so expect a shorter interval between regrinds",
+            "Yiv kenarları daha çabuk yuvarlanır, bu nedenle yeniden bileme işlemleri arasındaki sürenin daha kısa olacağını bekleyin",
         },
         {
           grade: "HSS",
           hardness: "HRC 62–64",
           bestFor:
-            "Higher line speeds and mixed job schedules where the ring must hold edge through long runs",
-          tradeoff: "Higher cost than tool steel; still wears on filled stocks",
+            "Daha yüksek hat hızları ve halkanın uzun üretim serileri boyunca kenar tutuşunu koruması gereken karma iş programları",
+          tradeoff:
+            "Takım çeliğinden daha pahalıdır; yine de dolgulu iş parçalarında aşınmaya uğrar",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
+          grade: "Karbür uçlu",
+          hardness: "HRA 89–91, uç kısımda",
           bestFor:
-            "Abrasive coated, filled and laminated webs where tool steel grooves wear out in weeks",
+            "Aşındırıcı kaplamalı, dolgulu ve lamine şeritlerde, takım çeliğinden yapılmış oluklar birkaç hafta içinde aşınır",
           tradeoff:
-            "Highest price, and the tips chip rather than wear if the shaft runs out of true",
+            "En yüksek fiyat; ayrıca şaftın ekseni bozulursa uçlar aşınmak yerine kırılır",
         },
       ],
       outro:
-        "If you are unsure, send the substrate and your present regrind interval and we will size the recommendation against your own consumption rather than a generic table.",
+        "Eğer emin değilseniz, alt tabakayı ve mevcut öğütme aralığınızı bize gönderin; biz de genel bir tablo yerine kendi tüketim verilerinize göre bir öneri sunalım.",
     },
     components: [
       {
         id: "one-ring-many-widths",
-        tag: "CHANGEOVER TIME",
-        title: "One Ring, Many Slit Positions",
+        tag: "DEĞİŞİM SÜRESİ",
+        title: "Tek Yüzük, Birçok Yarık Konumu",
         description:
-          "Every groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack. On lines that change order width often, this is a changeover-time product before it is a consumable.",
+          "Her oluk, kullanılabilir bir kesme pozisyonudur; bu nedenle genişlik değişikliği, mili söküp ara parça yığınını yeniden oluşturmak yerine üst bıçağın konumunun değiştirilmesini gerektirir. Sipariş genişliğinin sık sık değiştiği hatlarda bu ürün, bir sarf malzemesi olmaktan çok, değiştirme süresini kısaltan bir unsurdur.",
       },
       {
         id: "ground-in-one-setup",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "All Grooves Ground in One Setup",
+        tag: "BOYUT DOĞRULUĞU",
+        title: "Tek Ayar ile Tüm Yivler Taşlanıyor",
         description:
-          "Groove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out. Bore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true.",
+          "Yiv konumları tek bir kurulumda tek bir gövdeye taşlanarak işlenir; bu sayede, bir operatörün ara parça yığınını bir milimetre sapma ile yeniden oluşturması durumunda olduğu gibi, yarık genişliğinde sapma meydana gelmez. Delik çapı ve eksantriklik, çok yivli, tek yivli ve pürüzsüz halkalarda aynı teknik özelliklere göre tutulur; böylece karışık şaftlar da doğru şekilde yığılabilir.",
       },
       {
         id: "mounting-and-split",
-        tag: "MOUNTING OPTIONS",
-        title: "Air Shaft, Solid Shaft, or Split Ring",
+        tag: "MONTAJ SEÇENEKLERİ",
+        title: "Hava Mili, Tek Parça Mil veya Bölünmüş Halka",
         description:
-          "Plain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft. A two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change.",
+          "Düz delikli kelepçe, genişletilebilir bir hava miline sıkıştırılır; ayar vidası tasarımı sayesinde sağlam bir alt mile sabitlenir. İki parçalı ayrılabilir halka, mil grubunu sökmeden çıkarılabilir; bu da geniş bir makinede planlanmış bir durdurmayı çalışırken yapılan bir değişime dönüştürür.",
       },
     ],
     relatedBladeIds: [
@@ -7097,49 +7149,50 @@ export const blades: Blade[] = [
       "rotary-slitter-knives-paper",
     ],
     rfqPlaceholder:
-      "Example: Kampf rewinder, expandable air shaft, bottom ring Φ180 × 100 mm wide, 12 grooves at 25 mm pitch, single edge. Slitting 120 gsm coated board, 8 slits, changing width twice a week. Need 4 rings plus 2 smooth spacer rings.",
+      "Örnek: Kampf sarma makinesi, genişletilebilir hava mili, alt halka Φ180 × 100 mm genişliğinde, 25 mm aralıklı 12 oluklu, tek kenarlı. 120 g/m² kaplamalı kartonun kesilmesi, 8 kesim, haftada iki kez genişlik değişikliği. 4 halka ve 2 adet düz ara halkaya ihtiyaç vardır.",
     faqs: {
       technical: [
         {
           question:
-            "How is a multi-groove bottom knife different from a grooved anvil knife?",
+            "Çok oluklu alt bıçak, oluklu örs bıçağından ne açıdan farklıdır?",
           answer:
-            "Scale and purpose. A grooved anvil knife is a disc carrying one to three grooves, ground to an OEM shear-pair profile and used mainly on film, foil and tape lines — see our bottom grooved anvil knives page for that product. A multi-groove ring is a much wider body carrying many parallel grooves, and its point is that a single ring covers many slit positions so width changes do not require re-tooling. If you change width often, you want the ring; if you run one width against a specified OEM anvil profile, you want the anvil.",
+            "Boyut ve kullanım amacı. Oluklu örs bıçağı, bir ila üç oluk içeren, OEM kesme çifti profiline göre taşlanmış ve esas olarak film, folyo ve bant üretim hatlarında kullanılan bir disktir — bu ürünle ilgili olarak “alt oluklu örs bıçakları” sayfamıza bakınız. Çok oluklu halka ise, birçok paralel oluk barındıran çok daha geniş bir gövdedir; bu ürünün avantajı, tek bir halkanın birçok kesme konumunu kapsamasından kaynaklanır; böylece genişlik değişiklikleri için aletin yeniden ayarlanması gerekmez. Genişliği sık sık değiştiriyorsanız halka modelini tercih etmelisiniz; belirli bir OEM örs profiline göre tek bir genişlikte üretim yapıyorsanız örs modelini tercih etmelisiniz.",
         },
         {
           question:
-            "What groove pitch can you actually grind, and how do I specify it?",
+            "Gerçekte hangi oluk aralığını taşlayabilirsiniz ve bunu nasıl belirtmeliyim?",
           answer:
-            "Cutting edge division — the distance from one cutting edge to the next — is custom in nearly every case and can go as narrow as 5 mm (0.200 in). Do not specify it as a single number: send the list of slit widths you actually run and we will lay out the groove positions so your common widths all land on a groove. That is the difference between a ring that covers your schedule and one that covers half of it and forces a spacer stack for the rest.",
-        },
-        {
-          question: "Should I order plain bore or set screw?",
-          answer:
-            "It follows your bottom shaft, not your preference. A plain bore clamps onto an expandable air shaft and is the fast-change option found on most modern converting lines. A set-screw design fixes onto a solid bottom shaft and is common on older machines and heavy board lines. The two are not interchangeable — the bore specification differs — so a ring bored for the wrong system will not seat true and will read as runout at the slit. If you are unsure, photograph the shaft end with the existing rings on it.",
+            "Kesici kenar aralığı — bir kesici kenardan diğerine olan mesafe — hemen hemen her durumda özel olarak belirlenir ve 5 mm (0,200 inç) kadar dar olabilir. Bunu tek bir sayı olarak belirtmeyin: Gerçekte kullandığınız yarık genişliklerinin listesini gönderin; biz de yaygın olarak kullandığınız genişliklerin hepsinin bir oluğa denk gelmesi için oluk konumlarını düzenleyelim. İşte bu, programınızı tamamen karşılayan bir halka ile programınızın yarısını karşılayıp geri kalanı için ara parça yığınına ihtiyaç duyulan bir halka arasındaki farktır.",
         },
         {
           question:
-            "My slit widths have started drifting across the shaft. Is the ring the problem?",
+            "Düz delikli mi yoksa ayar vidası olanı mı sipariş etmeliyim?",
           answer:
-            "Check runout and the ring stack before the grooves. Groove positions are ground in one setup and do not move, so a ring that was accurate on installation is rarely the source of progressive width drift. The usual causes are a bore seating on a worn or contaminated shaft, or rings from different suppliers mixed on one shaft with slightly different bore and face specifications, which stacks a small wobble into a measurable width error. Worn groove edges show as a deteriorating cut edge and rising dust, not as width drift.",
+            "Bu, tercihinize değil, alt milinize göre belirlenir. Düz delikli halka, genleşebilir hava miline sıkıştırılarak takılır ve çoğu modern işleme hattında bulunan hızlı değiştirme seçeneğidir. Ayar vidası tasarımlı halka ise sağlam bir alt mile sabitlenir ve eski makinelerde ve ağır karton hatlarında yaygın olarak kullanılır. Bu iki tip birbirinin yerine kullanılamaz — delik özellikleri farklıdır — bu nedenle yanlış sistem için delinmiş bir halka doğru şekilde oturmaz ve kesim yerinde eksantriklik olarak okunur. Emin değilseniz, üzerinde mevcut halkalar bulunan şaft ucunun fotoğrafını çekin.",
+        },
+        {
+          question:
+            "Şaft boyunca yarık genişliklerimde sapma görülmeye başladı. Sorun halkada mı?",
+          answer:
+            "Yiv açma işleminden önce eksantriklik ve halka dizisini kontrol edin. Yiv konumları tek bir kurulumda taşlanmıştır ve yer değiştirmez; bu nedenle, montaj sırasında doğru olan bir halka, ilerleyen genişlik sapmasının kaynağı olma ihtimali çok düşüktür. Genel nedenler arasında, aşınmış veya kirlenmiş bir şafta oturan delik veya delik ve yüzey özellikleri birbirinden biraz farklı olan, farklı tedarikçilerden gelen halkaların tek bir şaftta karıştırılması sayılabilir; bu durum, küçük bir sallantıyı ölçülebilir bir genişlik hatasına dönüştürür. Aşınmış oluk kenarları, genişlik sapması olarak değil, bozulmuş kesme kenarı ve artan toz olarak kendini gösterir.",
         },
       ],
       company: [
         {
-          question: "What do you need in order to quote?",
+          question: "Fiyat teklifi verebilmek için nelere ihtiyacınız var?",
           answer:
-            "Outer diameter, bore, ring width, groove count and pitch, the shaft type (expandable air shaft or solid shaft), the mating top knife specification, and the substrate and line speed. The single most useful extra is your list of running widths — it lets us lay out groove positions against your real schedule instead of copying a pitch. A drawing or a worn ring shortens the quote further; we reverse-engineer from samples as routine work.",
+            "Dış çap, iç çap, halka genişliği, oluk sayısı ve aralığı, mil türü (genişletilebilir hava mili veya dolu mil), eşleşen üst bıçağın teknik özellikleri, alt tabaka ve hat hızı. En yararlı ek bilgi, çalışma genişlikleri listenizdir — bu sayede, sabit bir aralığı kopyalamak yerine oluk konumlarını gerçek programınıza göre belirleyebiliyoruz. Bir çizim veya aşınmış bir halka, teklif süresini daha da kısaltır; numunelerden tersine mühendislik yapmak rutin işlerimizden biridir.",
         },
         {
           question:
-            "Do you supply single-groove and smooth rings as well, or only multi-groove?",
+            "Tek oluklu ve pürüzsüz halkalar da tedarik ediyor musunuz, yoksa sadece çok oluklu halkalar mı?",
           answer:
-            "All three, and we recommend buying them together. Single-groove cutter rings cover fixed positions and smooth rings act as spacers and web supports between cutting positions. Because they are made to the same bore and runout specification they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and genuinely hard-to-diagnose source of slit-width variation.",
+            "Üçü de; bunları birlikte satın almanızı öneririz. Tek oluklu kesici halkalar sabit konumları kaplarken, düz halkalar kesme konumları arasında ara parçası ve ağ desteği görevi görür. Aynı delik çapı ve salgı spesifikasyonlarına göre üretildikleri için, sallanma yaratmadan üst üste istiflenebilirler — farklı tedarikçilerden gelen halkaları tek bir şaftta karıştırmak, kesik genişliğindeki değişkenliğin yaygın ve gerçekten teşhis edilmesi zor bir nedenidir.",
         },
         {
-          question: "Can these be reground, and how many times?",
+          question: "Bunlar yeniden taşlanabilir mi ve kaç kez?",
           answer:
-            "Yes, and regrinding is central to the economics because a ring is a large body to scrap. How many cycles you get depends on groove depth and how much material each regrind takes; tool-steel rings typically give several cycles before groove geometry can no longer be restored. We regrind rings we manufactured and, in most cases, rings we did not, provided the body is true and the bore is undamaged — and we will tell you plainly when a ring is not worth the work.",
+            "Evet, yeniden taşlama ekonomik açıdan hayati önem taşır; çünkü bir segman hurdaya ayrılması zor büyük bir parçadır. Kaç döngü elde edeceğiniz, oluk derinliğine ve her yeniden taşlama işleminde ne kadar malzeme alınacağına bağlıdır; takım çeliği segmanlar genellikle oluk geometrisinin artık geri kazanılamayacağı noktaya gelene kadar birkaç döngü sağlar. Ürettiğimiz halkaları yeniden taşlıyoruz ve çoğu durumda, gövde düzgün ve iç çap hasarsız olduğu sürece, bizim üretmediğimiz halkaları da yeniden taşlıyoruz — bir halkanın bu işleme değmeyeceğini düşünürsek bunu size açıkça bildiririz.",
         },
       ],
     },
