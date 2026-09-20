@@ -91,6 +91,256 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "concrete-mixing-plant-parts-reorder-guide",
+    tag: "TECHNICAL GUIDE",
+    date: "20.SEP.2026",
+    title:
+      "Concrete Mixing Plant Parts: What to Read Off a Casting Before You Reorder",
+    excerpt:
+      "The long cast number identifies the part. The small boxed mark next to it does not. What the numbers, position pads and bolt-hole shapes on a concrete mixer casting tell you before the worn one goes to scrap.",
+    image: "/images/news/concrete-mixing-plant-parts-range.webp",
+    readTime: "6 MIN",
+    seoTitle: "Concrete Mixing Plant Parts: Reorder Guide | Sureay",
+    metaDescription:
+      "How to read a concrete mixer casting before reordering: pattern numbers, position pads, slotted vs round bolt holes, and why liner plates go in as a set.",
+    keywords:
+      "concrete mixing plant parts, concrete mixer wear parts, mixer liner plate, concrete mixing arm, mixer scraper blade, cast pattern number, twin-shaft mixer parts, planetary mixer wear parts",
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A purchase order arrives with one line on it: mixing arm, eight pieces. The plant is a twin-shaft, there are eight arm positions on the shafts, so eight arms. Reasonable. It is also unquotable, because those eight positions are rarely eight of the same casting — and the one mark that would have settled it was cast into the back of the part that went into the scrap skip last Friday.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Concrete mixing plant parts carry more identification than most buyers use. The numbers, the pads and the shape of the bolt holes each answer a different question, and reading them before the old part leaves the plant turns a two-round quote into a one-round quote.",
+      },
+      {
+        type: "h2",
+        value: "The Long Cast Number Is the Part. The Boxed Mark Is Not.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "On a cast mixer wear part, the long raised number — 11336330, 11336331, 11336332 — is the pattern identifier, and it is the only mark that uniquely specifies that casting. The small boxed two-letter mark sitting next to it is a casting mark. It does not identify the part.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Buyers quote the boxed mark constantly, because it is short and looks like a code. It gets you nowhere: the same mark appears on every part that came off that line, in every size. The long number is what the pattern shop, the foundry and the machining fixture are all indexed to.",
+      },
+      {
+        type: "paragraph",
+        value:
+          'Consecutive numbers matter too. A block like 11336330 / 11336331 / 11336332 is almost always one tool family: different positions in the same machine, not three sizes of the same part. That is exactly why an order line reading "eight arms" cannot be filled. The eight positions may draw on three or four different pattern numbers, in quantities that are not equal.',
+      },
+      {
+        type: "paragraph",
+        value:
+          "Then there is the position number — a single digit cast into its own recessed square pad, telling you which slot in the drum that casting belongs to. If the pad on your worn part is blank or unreadable, check the drum wall. Plants often paint or stamp positions during assembly.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/concrete-mixing-plant-parts-cast-pattern-number.webp",
+      },
+      {
+        type: "h2",
+        value:
+          "Slotted Bolt Holes and Round Bolt Bosses Are Not the Same Fitment",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A slotted hole exists so the part can be moved. A round hole on a machined boss exists so it cannot. That is the whole distinction, and it decides whether a replacement drops in or fights you.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Mixing blades and scrapers run at a set clearance to the liner. As the working edge wears, that gap opens and the part stops sweeping material off the wall. Slotted mounting holes let a maintenance crew pull the casting back toward the liner and recover the original clearance without replacing anything, several times over the life of the part. Round holes on raised bosses do the opposite job: they index the casting to one repeatable position so blade spacing along the shaft does not drift batch after batch.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "So if the worn part you pulled has slots and the replacement quoted to you has round holes, that is not a small difference in fit. It is a different position in the machine, or a different generation of the machine.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "There is a useful signal hiding in the slot as well. Pull the part and look at which end of the slot has gone oval. An oval slot end means the crew has been taking up wear with adjustment and has run out of travel, so the part is finished regardless of how much material is left on it. Order on that, not on the calendar.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/concrete-mixing-plant-parts-slotted-bolt-holes.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our [concrete scraper blades](/mixer-wear-parts/concrete-mixing-plant/concrete-scraper) and [bolt-on mixer blades](/mixer-wear-parts/concrete-mixing-plant/concrete-mixer-blade) are cast in high-chromium and Ni-Hard iron at HB 600-700 and machined to the original mounting geometry, slots included. The adjustment travel is part of the specification, not something to be ground in on site.",
+      },
+      {
+        type: "h2",
+        value: "Why Liner Plates Are a Set Problem, Not a Piece Problem",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Replacing a single liner plate in a worn row does not just wear that plate out faster. It creates a lip that tears the row loose.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Each plate seats on a central bolt, flush against the drum wall and flush against its neighbours. Drop a full-thickness plate into a row that has already lost several millimetres and it stands proud by exactly that amount. Aggregate catches the raised edge on every revolution, the bolt takes shock loading it was never designed for, and a plate rated for 6-18 months can work loose in weeks.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That is why [concrete liner plates](/mixer-wear-parts/concrete-mixing-plant/concrete-liner-plate) ship by the pallet rather than the piece. Cast in Ni-Hard or high-chromium iron at HB 600-700, they are the cheapest component in the drum and the most expensive one to get wrong, because the failure takes the drum wall with it.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/concrete-mixing-plant-parts-liner-plates-pallet.webp",
+      },
+      {
+        type: "h2",
+        value: "The Arm and the Parts Bolted to It Never Wear Out Together",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Arms and wear faces are cast in different materials for different failure modes, so they reach their limits at different times. Plan around that rather than against it.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Part", "Material", "Hardness", "Typical service life"],
+        tableRows: [
+          [
+            "Mixing arm",
+            "ZG310-570 cast steel",
+            "Toughness-optimized, not surface-hardened",
+            "12-18 months",
+          ],
+          [
+            "Liner plate",
+            "Ni-Hard / high-chrome iron",
+            "HB 600-700",
+            "6-18 months",
+          ],
+          [
+            "Scraper blade",
+            "High-chromium cast iron",
+            "HB 600-700",
+            "6-18 months",
+          ],
+          [
+            "Mixer blade / paddle",
+            "Ni-Hard cast iron",
+            "HB 600-700",
+            "6-18 months",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "Service life depends on output, aggregate hardness and duty cycle — verify against your OEM service interval.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The [mixing arm](/mixer-wear-parts/concrete-mixing-plant/concrete-mixing-arm) does not fail from abrasion. It fails from fatigue: hub cracking and bolt-boss elongation under the reversing torque of a full batch. Which gives you a rule worth applying at every blade change. Before you bolt new blades onto an old arm, check the bosses. An elongated boss will not hold the new casting in position, so a perfectly good blade runs at the wrong clearance from its first batch, and you will be back inside the drum long before the wear chart says you should be.",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/concrete-mixing-plant-parts-matched-set-castings.webp",
+      },
+      {
+        type: "h2",
+        value: "What to Send With a Reorder",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["What to look for", "Where it is", "What it settles"],
+        tableRows: [
+          [
+            "Long cast number",
+            "Raised pad on the back or side face",
+            "The pattern — the only mark that identifies the part",
+          ],
+          [
+            "Single-digit position number",
+            "Its own recessed square pad",
+            "Which slot in the drum the casting belongs to",
+          ],
+          [
+            "Small boxed letter mark",
+            "Beside the number",
+            "Casting mark only — does not identify the part",
+          ],
+          [
+            "Slotted or round bolt holes",
+            "Mounting face",
+            "Whether the part is adjustable or fixed-indexed",
+          ],
+          [
+            "Bolt centre-to-centre distance",
+            "Measured across two holes",
+            "Fitment when no number survives",
+          ],
+          [
+            "Wear at one end of a slot",
+            "Mounting face",
+            "Adjustment travel is used up — reorder now",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "Photograph the part before it goes to scrap, cast marks and wear face both. A clear shot of a pattern number beats a plant model number every time: the model tells us which family to look in, the number tells us which part.",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "Can I order concrete mixing plant parts with only the plant model?",
+            answer:
+              "For common twin-shaft and planetary plants, yes — we hold patterns for Sicoma, Liebherr, MEKA, Simem, SANY, Zoomlion, Teka, BHS and Eirich. The model tells us which family of castings to look in, but not how many of each position you need, which is where most quotes stall. A photo of the cast number on one worn part settles that in a single round.",
+          },
+          {
+            question:
+              "The cast number on my part does not match my OEM parts list. Why?",
+            answer:
+              "A pattern number and an OEM catalogue number are two different numbering systems. The number cast into the part belongs to the tooling it was made from; the catalogue number belongs to the spare-parts book. Both identify the same part, so send whichever you have — the cast number is usually the one still readable on a worn casting.",
+          },
+          {
+            question: "Do I have to replace all the liner plates at once?",
+            answer:
+              "Replace a full row or section rather than individual plates. A new full-thickness plate among worn neighbours stands proud by whatever they have lost, and that raised edge catches aggregate on every revolution until the bolt loosens. Mixing a new plate into a nearly-new row is fine; mixing it into a half-worn one is not.",
+          },
+          {
+            question: "How long do concrete mixer wear parts last?",
+            answer:
+              "Mixing arms typically run 12-18 months and liner plates, scrapers and blades 6-18 months, but output, aggregate hardness and duty cycle move both figures considerably. Verify against your OEM service interval. The more reliable signals are physical: bolt-hole elongation on an arm, and adjustment travel run out on a slotted blade or scraper.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "Selection Tip: Photograph the cast number and the wear face before a worn part goes to scrap — it is the fastest route to a correct quote. [Send us the photos](/contact) and we will confirm the pattern and the set quantities.",
+      },
+    ],
+  },
+  {
     id: "groove-bottom-knives-vs-spacer-stacks",
     tag: "TECHNICAL GUIDE",
     date: "09.SEP.2026",
@@ -6298,6 +6548,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "concrete-mixing-plant-parts-reorder-guide": "Eric",
   "groove-bottom-knives-vs-spacer-stacks": "lynn",
   "cutter-compactor-blade-film-vs-flake-wear": "Eric",
   "nonwoven-log-saw-blade-corrosion": "Eric",
