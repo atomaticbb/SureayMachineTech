@@ -60,7 +60,7 @@ const CANONICAL_ROUTES: string[] = [
   ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
     c => `/categories/${c.slug}`
   ),
-  // mixer wear parts (English-only): overview + 2 categories + 8 products
+  // mixer wear parts: overview + 2 categories + 11 products (multilingual)
   "/mixer-wear-parts",
   ...mixerCategories.map(c => c.link),
   ...mixerParts.map(p => p.link),
@@ -78,14 +78,12 @@ const PRERENDER_LANGS_RAW = (
 ).toLowerCase();
 const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 
-// News, mixer, and legal routes are English-only — exclude from multilingual
-// expansion.
+// News and legal routes are English-only — exclude from multilingual
+// expansion. Mixer wear parts are translated and expand like product pages.
 const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
-const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
 const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
 const isEnglishOnlyRoute = (r: string) =>
   isNewsRoute(r) ||
-  isMixerRoute(r) ||
   isLegalRoute(r) ||
   isEnglishOnlyProductPath(r) ||
   r === "/404";

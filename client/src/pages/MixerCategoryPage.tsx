@@ -21,34 +21,39 @@ import ProductGrid from "@/components/product/ProductGrid";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
+import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 import {
   getMixerCategoryBySlug,
   getMixerPartsByCategory,
-  mixerCompanyFaq,
-} from "@/data/mixerParts";
+  getMixerCompanyFaq,
+  getMixerContent,
+} from "@/data/locales";
 import { mixerToBlade } from "@/lib/mixerToBlade";
-import {
-  CATEGORY_CONTENT,
-  CONTENT_LAST_REVIEWED,
-  CONTENT_REVIEWER,
-  ORDER_STEPS,
-  TRUST_ITEMS,
-} from "@/data/mixerContent";
 
 export default function MixerCategoryPage() {
+  const lang = useLang();
+  const { t } = useTranslation();
   const [, params] = useRoute("/mixer-wear-parts/:slug");
-  const meta = getMixerCategoryBySlug(params?.slug ?? "");
+  const meta = getMixerCategoryBySlug(params?.slug ?? "", lang);
 
   if (!meta) {
     return <Redirect to="/mixer-wear-parts" />;
   }
 
-  const parts = getMixerPartsByCategory(meta.category);
+  const {
+    categoryContent,
+    trustItems,
+    orderSteps,
+    contentReviewer,
+    contentLastReviewed,
+  } = getMixerContent(lang);
+  const parts = getMixerPartsByCategory(meta.category, lang);
   const blades = parts.map(mixerToBlade);
   const oemMachines = Array.from(
     new Set(parts.flatMap(p => p.compatibleMachines))
   );
-  const content = CATEGORY_CONTENT[meta.category];
+  const content = categoryContent[meta.category];
   const sceneImage = `/images/mixer-parts/hero/${meta.id}-scene.webp`;
 
   const scrollToRfq = (e: React.MouseEvent) => {
@@ -63,8 +68,8 @@ export default function MixerCategoryPage() {
         description={meta.description}
         canonicalUrl={meta.link}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.mixerWearParts"), url: "/mixer-wear-parts" },
           { name: meta.name, url: meta.link },
         ]}
       />
@@ -92,7 +97,7 @@ export default function MixerCategoryPage() {
       <section className="relative mt-[74px] h-[300px] lg:h-[380px] overflow-hidden border-b border-slate-200 bg-[#001229]">
         <img
           src={sceneImage}
-          alt={`${meta.name} — plant`}
+          alt={t("mixer.category.heroImageAlt").replace("{{name}}", meta.name)}
           className="absolute inset-0 h-full w-full object-cover object-[70%_center]"
           width={1300}
           height={795}
@@ -110,7 +115,7 @@ export default function MixerCategoryPage() {
         <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex flex-col justify-center">
           <div className="max-w-2xl">
             <p className="text-[11px] font-semibold tracking-[0.28em] text-white/50 mb-4 uppercase">
-              Mixer Wear Parts
+              {t("nav.mixerWearParts")}
             </p>
             <h1 className="text-[clamp(1.9rem,4.4vw,3rem)] font-black text-white tracking-tight leading-[1.05] mb-4">
               {meta.name}
@@ -119,7 +124,7 @@ export default function MixerCategoryPage() {
               {content.heroTagline}
             </p>
             <ul className="hidden lg:flex flex-wrap gap-x-6 gap-y-2 mt-7">
-              {TRUST_ITEMS.map(item => (
+              {trustItems.map(item => (
                 <li
                   key={item}
                   className="font-mono text-[11px] text-white/60 tracking-widest"
@@ -134,24 +139,30 @@ export default function MixerCategoryPage() {
 
       <Breadcrumbs
         items={[
-          { label: "Home", href: "/" },
-          { label: "Mixer Wear Parts", href: "/mixer-wear-parts" },
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.mixerWearParts"), href: "/mixer-wear-parts" },
           { label: meta.name },
         ]}
       />
 
       {/* 2 · Products */}
       <section
-        aria-label="Wear part configurations"
+        aria-label={t("mixer.category.productsAria")}
         className="bg-white border-b border-slate-200"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-10 pb-16">
           <div className="border-b border-slate-200 pb-6 mb-10 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
             <h2 className="text-[26px] lg:text-[32px] font-black text-[#001f4d] tracking-tight">
-              All {meta.name.toLowerCase()}
+              {t("mixer.category.allHeading").replace(
+                "{{name}}",
+                meta.name.toLowerCase()
+              )}
             </h2>
             <p className="text-[12px] text-slate-400 font-medium">
-              {parts.length} wear parts · click any card for the full spec sheet
+              {t("mixer.category.countLine").replace(
+                "{{count}}",
+                String(parts.length)
+              )}
             </p>
           </div>
           <ProductGrid blades={blades} layout="grid" />
@@ -160,31 +171,31 @@ export default function MixerCategoryPage() {
 
       {/* 3 · Overview — unique category prose */}
       <section
-        aria-label="Overview"
+        aria-label={t("mixer.category.overview.eyebrow")}
         className="border-b border-slate-200 bg-slate-50"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
           <aside className="lg:col-span-4">
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              Overview
+              {t("mixer.category.overview.eyebrow")}
             </p>
             <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1]">
               {content.overviewLead}
             </h2>
             <div className="mt-6 border-t border-slate-200 pt-4">
               <p className="text-[13px] text-slate-600 leading-relaxed">
-                Technical content reviewed by{" "}
+                {t("mixer.category.reviewedBy")}{" "}
                 <span className="font-bold text-[#001f4d]">
-                  {CONTENT_REVIEWER.name}
+                  {contentReviewer.name}
                 </span>
-                , {CONTENT_REVIEWER.title}
+                , {contentReviewer.title}
               </p>
               <p className="font-mono text-[10px] text-slate-400 tracking-[0.18em] mt-1.5 uppercase">
-                Last reviewed · {CONTENT_LAST_REVIEWED}
+                {t("mixer.category.lastReviewed")} · {contentLastReviewed}
               </p>
               <Link href="/about#certifications" asChild>
                 <a className="group inline-flex items-center gap-2 pb-1 mt-4 text-[13px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
-                  View our ISO 9001:2015 certificate
+                  {t("mixer.category.isoLink")}
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
               </Link>
@@ -205,16 +216,16 @@ export default function MixerCategoryPage() {
 
       {/* 4 · Materials & grade selection */}
       <section
-        aria-label="Materials and grade selection"
+        aria-label={t("mixer.category.materials.eyebrow")}
         className="border-b border-slate-200 bg-white"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
           <aside className="lg:col-span-4">
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              Materials &amp; Grade
+              {t("mixer.category.materials.eyebrow")}
             </p>
             <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
-              Matched to your duty
+              {t("mixer.category.materials.heading")}
             </h2>
             <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
               {content.gradeNote}
@@ -242,29 +253,27 @@ export default function MixerCategoryPage() {
 
       {/* 5 · How to order */}
       <section
-        aria-label="How to order"
+        aria-label={t("mixer.order.eyebrow")}
         className="border-b border-slate-200 bg-slate-50"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
-            How to Order
+            {t("mixer.order.eyebrow")}
           </p>
           <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-4">
-            Made to fit your plant — from a sample or a model
+            {t("mixer.order.heading")}
           </h2>
           <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-4">
-            Every part is cast to order. There is no catalogue number to look up
-            — we reverse-engineer the fit from your worn part or plant model, so
-            you get an exact replacement rather than a near-miss.
+            {t("mixer.order.lead")}
           </p>
           <Link href="/news/mixer-wear-parts-oem-matching" asChild>
             <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
-              Read: How we match a part with no drawing on file
+              {t("mixer.order.articleLink")}
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </Link>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
-            {ORDER_STEPS.map(step => (
+            {orderSteps.map(step => (
               <div key={step.tag} className="bg-white p-6 flex flex-col">
                 <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
                   {step.tag}
@@ -284,12 +293,12 @@ export default function MixerCategoryPage() {
       {/* 5b · Case study — real matched-part case (only where material exists) */}
       {content.caseStudy && (
         <section
-          aria-label="Case study"
+          aria-label={t("mixer.category.caseStudy.eyebrow")}
           className="border-b border-slate-200 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
-              From the Workshop
+              {t("mixer.category.caseStudy.eyebrow")}
             </p>
             <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-8 max-w-3xl">
               {content.caseStudy.title}
@@ -306,7 +315,7 @@ export default function MixerCategoryPage() {
                 ))}
                 <Link href={content.caseStudy.articleLink} asChild>
                   <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
-                    Read the full matching guide
+                    {t("mixer.category.caseStudy.link")}
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
                 </Link>
@@ -337,20 +346,19 @@ export default function MixerCategoryPage() {
       {/* 6 · OEM compatibility */}
       {oemMachines.length > 0 && (
         <section
-          aria-label="OEM compatibility"
+          aria-label={t("mixer.oem.eyebrow")}
           className="border-b border-slate-200 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
             <aside className="lg:col-span-4">
               <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-                OEM Compatibility
+                {t("mixer.oem.eyebrow")}
               </p>
               <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
-                Drop-in fit, no retooling
+                {t("mixer.oem.heading")}
               </h2>
               <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
-                Sureay manufactures replacement wear parts to fit the listed
-                mixing plants and is not affiliated with these manufacturers.
+                {t("mixer.oem.plantNote")}
               </p>
             </aside>
             <div className="lg:col-span-8 flex flex-col justify-center">
@@ -375,15 +383,17 @@ export default function MixerCategoryPage() {
       )}
 
       {/* 7 · Full-set RFQ CTA */}
-      <section aria-label="Request a quote" className="bg-[#001f4d]">
+      <section
+        aria-label={t("mixer.category.cta.eyebrow")}
+        className="bg-[#001f4d]"
+      >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
           <div>
             <p className="font-mono text-[10px] text-white/40 tracking-[0.28em] mb-2 uppercase">
-              Request a Quote
+              {t("mixer.category.cta.eyebrow")}
             </p>
             <p className="text-white text-lg lg:text-xl font-black tracking-tight max-w-2xl">
-              Send your plant model or a worn sample — we quote individual parts
-              or a full reline set.
+              {t("mixer.category.cta.lead")}
             </p>
           </div>
           <a
@@ -391,7 +401,7 @@ export default function MixerCategoryPage() {
             onClick={scrollToRfq}
             className="shrink-0 inline-flex items-center gap-3 bg-white text-[#001f4d] hover:bg-slate-100 font-black text-sm tracking-widest px-6 py-4 rounded-none transition-colors duration-200"
           >
-            Get a Quote
+            {t("mixer.category.cta.button")}
             <ArrowRight className="w-4 h-4 shrink-0" />
           </a>
         </div>
@@ -400,11 +410,11 @@ export default function MixerCategoryPage() {
       {/* 8 · FAQ — category-level (distinct from per-part FAQs) */}
       {content.faq.length > 0 && (
         <section
-          aria-label="Frequently asked questions"
+          aria-label={t("mixer.faq.ariaLabel")}
           className="bg-slate-50 border-b border-slate-200 py-14 lg:py-20"
         >
           <ProductFAQ
-            faqs={{ technical: content.faq, company: mixerCompanyFaq }}
+            faqs={{ technical: content.faq, company: getMixerCompanyFaq(lang) }}
             productName={meta.name}
           />
         </section>

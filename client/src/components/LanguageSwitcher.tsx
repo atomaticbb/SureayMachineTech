@@ -62,17 +62,13 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
 
   // English-only sections — language switcher links must not add a prefix;
   // they point to the English canonical URL instead. Mirrors the
-  // isEnglishOnly grouping in SEO.tsx (news, mixer wear parts, legal pages).
+  // isEnglishOnly grouping in SEO.tsx (news, legal pages).
   const isNewsPath =
     canonicalPath === "/news" || canonicalPath.startsWith("/news/");
-  const isMixerPath = canonicalPath.startsWith("/mixer-wear-parts");
   const isLegalPath =
     canonicalPath === "/privacy-policy" || canonicalPath === "/terms";
   const isEnglishOnlyPath =
-    isNewsPath ||
-    isMixerPath ||
-    isLegalPath ||
-    isEnglishOnlyProductPath(canonicalPath);
+    isNewsPath || isLegalPath || isEnglishOnlyProductPath(canonicalPath);
 
   // Close on outside click.
   useEffect(() => {

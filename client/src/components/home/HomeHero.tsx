@@ -45,12 +45,12 @@ export default function HomeHero() {
             </Link>
             <Link href="/products">
               <button className="bg-transparent text-white border-2 border-white/70 hover:bg-white hover:text-[#003366] hover:border-white px-7 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
-                Industrial Blades
+                {t("nav.industrialBlades")}
               </button>
             </Link>
             <Link href="/mixer-wear-parts">
               <button className="bg-transparent text-white border-2 border-white/70 hover:bg-white hover:text-[#003366] hover:border-white px-7 py-3.5 min-h-[44px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none">
-                Mixer Wear Parts
+                {t("nav.mixerWearParts")}
               </button>
             </Link>
           </div>

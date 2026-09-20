@@ -7,29 +7,33 @@
 
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { mixerCategories } from "@/data/mixerParts";
+import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
+import { getMixerCategories } from "@/data/locales";
 
 export default function MixerWearPartsTeaser() {
+  const lang = useLang();
+  const { t } = useTranslation();
+  const mixerCategories = getMixerCategories(lang);
+
   return (
     <section
-      aria-label="Mixer Wear Parts"
+      aria-label={t("nav.mixerWearParts")}
       className="border-y border-slate-200 bg-slate-50"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-24">
         {/* Header — mirrors the TabEcosystem "Markets We Serve" section */}
         <div className="mb-10 lg:mb-14">
           <p className="text-slate-500 font-bold text-xs tracking-[0.3em] mb-3">
-            Beyond Blades
+            {t("mixer.teaser.eyebrow")}
           </p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] max-w-xl">
-              Concrete &amp; Asphalt <br />
-              Mixing Plant Wear Parts
+              {t("mixer.hub.hero.titleLine1")} <br />
+              {t("mixer.teaser.titleLine2")}
             </h2>
             <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
-              Cast mixing arms, liners, scrapers and blades in Ni-Hard and
-              high-chromium iron — OEM-fit replacements that drop into the plant
-              you already run.
+              {t("mixer.teaser.lead")}
             </p>
           </div>
           <div className="w-14 h-[3px] bg-slate-300 mt-8" />
@@ -52,7 +56,10 @@ export default function MixerWearPartsTeaser() {
                   {/* On hover — the parts in this category */}
                   <img
                     src={`/images/mixer-parts/hero/${cat.id}-products.webp`}
-                    alt={`Wear parts for ${cat.name}`}
+                    alt={t("mixer.hub.cardPartsAlt").replace(
+                      "{{name}}",
+                      cat.name
+                    )}
                     className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                     loading="lazy"
                     decoding="async"
@@ -73,7 +80,7 @@ export default function MixerWearPartsTeaser() {
                     </p>
                   </div>
                   <span className="inline-flex shrink-0 items-center gap-2 text-[11px] font-black tracking-[0.18em] text-[#001f4d] group-hover:gap-3 transition-all">
-                    VIEW PARTS
+                    {t("mixer.hub.viewParts")}
                     <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>

@@ -55,7 +55,7 @@ const CANONICAL_ROUTES: string[] = [
     c => `/categories/${c.slug}`
   ),
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
-  // mixer wear parts (English-only): overview + 2 categories + 8 products
+  // mixer wear parts: overview + 2 categories + 11 products (multilingual)
   "/mixer-wear-parts",
   ...mixerCategories.map(c => c.link),
   ...mixerParts.map(p => p.link),
@@ -66,15 +66,12 @@ const PRERENDER_LANGS_RAW = (
 ).toLowerCase();
 const EXPECT_MULTI_LANG = PRERENDER_LANGS_RAW !== "en";
 
-// English-only routes: no /{lang}/* variants and no hreflang.
+// English-only routes: no /{lang}/* variants and no hreflang. Mixer wear
+// parts are translated and are checked like any other multilingual route.
 const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
-const isMixerRoute = (r: string) => r.startsWith("/mixer-wear-parts");
 const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
 const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) ||
-  isMixerRoute(r) ||
-  isLegalRoute(r) ||
-  isEnglishOnlyProductPath(r);
+  isNewsRoute(r) || isLegalRoute(r) || isEnglishOnlyProductPath(r);
 
 const failures: string[] = [];
 

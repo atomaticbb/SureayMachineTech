@@ -111,7 +111,7 @@ const corePages: UrlEntry[] = [
 ];
 
 // Privacy Policy / Terms — English-only (no multilingual variants), same as
-// news and mixer wear parts.
+// news.
 const legalPages: UrlEntry[] = [
   {
     path: "/privacy-policy",
@@ -192,8 +192,8 @@ const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
   priority: "0.85",
 }));
 
-// Mixer Wear Parts — English-only for this batch (no multilingual variants).
-// 11 URLs: 1 overview + 2 categories + 8 products.
+// Mixer Wear Parts — fully translated, so these expand with hreflang like
+// product pages. 14 canonical URLs: 1 overview + 2 categories + 11 products.
 const mixerPages: UrlEntry[] = [
   {
     path: "/mixer-wear-parts",
@@ -265,8 +265,8 @@ const sections = [
   "  <!-- Product Detail Pages (English only — translations not shipped) -->",
   ...englishOnlyProductPages.map(singleUrlEntry),
   "",
-  "  <!-- Mixer Wear Parts (English only — no multilingual variants) -->",
-  ...mixerPages.map(singleUrlEntry),
+  "  <!-- Mixer Wear Parts -->",
+  ...mixerPages.flatMap(expandUrlEntry),
   "",
   "  <!-- Legal Pages (English only — no multilingual variants) -->",
   ...legalPages.map(singleUrlEntry),
@@ -292,18 +292,17 @@ const multiLangCount =
   corePages.length +
   industryPages.length +
   categoryPages.length +
-  productPages.length;
+  productPages.length +
+  mixerPages.length;
 const newsCount = 1 + newsArticles.length;
-const mixerCount = mixerPages.length;
 const legalCount = legalPages.length;
 const enOnlyProductCount = englishOnlyProductPages.length;
 const totalUrlCount =
   multiLangCount * SUPPORTED_LANGS.length +
   newsCount +
-  mixerCount +
   legalCount +
   enOnlyProductCount;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${mixerCount} mixer + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${SUPPORTED_LANGS.length} langs + ${newsCount} news + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
 );

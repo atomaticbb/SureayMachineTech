@@ -15,9 +15,13 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { getBlades, getCategories } from "@/data/locales";
-import { mixerCategories, getMixerPartsByCategory } from "@/data/mixerParts";
-import { TRUST_ITEMS } from "@/data/mixerContent";
+import {
+  getBlades,
+  getCategories,
+  getMixerCategories,
+  getMixerPartsByCategory,
+  getMixerContent,
+} from "@/data/locales";
 import { useLang } from "@/contexts/LangContext";
 import { useTranslation } from "@/lib/useTranslation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -250,10 +254,11 @@ function ProductsMegaMenu({ onClose }: { onClose: () => void }) {
 
 // ── Mixer Wear Parts mega menu (Industry-style: plant-type nav + grid + image) ──
 function MixerMenu({ onClose }: { onClose: () => void }) {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [activeIdx, setActiveIdx] = useState(0);
+  const mixerCategories = getMixerCategories(lang);
   const active = mixerCategories[activeIdx];
-  const parts = getMixerPartsByCategory(active.category);
+  const parts = getMixerPartsByCategory(active.category, lang);
   const scene = `/images/mixer-parts/hero/${active.id}-scene.webp`;
 
   return (
@@ -356,7 +361,7 @@ function MixerMenu({ onClose }: { onClose: () => void }) {
             </div>
           </Link>
           <p className="mt-3 font-mono text-[10px] text-slate-400 tracking-[0.15em] leading-relaxed">
-            ■ {TRUST_ITEMS.join(" · ")}
+            ■ {getMixerContent(lang).trustItems.join(" · ")}
           </p>
         </div>
       </div>
@@ -381,6 +386,7 @@ const MOBILE_CATEGORY_ORDER = [
 export default function Navbar() {
   const { t, lang } = useTranslation();
   const categories = getCategories(lang);
+  const mixerCategories = getMixerCategories(lang);
   const mobileCategories = useMemo(
     () =>
       [...categories].sort(

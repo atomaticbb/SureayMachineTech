@@ -116,18 +116,16 @@ export default function SEO({
   const fullTitle = normalizeTitle(title);
 
   // English-only sections — no language prefix or multilingual hreflang.
-  // News, Mixer Wear Parts, Privacy Policy, and Terms exist only in English,
-  // as do product pages whose translations have not shipped yet.
+  // News, Privacy Policy, and Terms exist only in English, as do product
+  // pages whose translations have not shipped yet.
   const isNewsPath =
     canonicalUrl === "/news" || (canonicalUrl?.startsWith("/news/") ?? false);
-  const isMixerPath = canonicalUrl?.startsWith("/mixer-wear-parts") ?? false;
   const isLegalPath =
     canonicalUrl === "/privacy-policy" || canonicalUrl === "/terms";
   const isUntranslatedProduct = canonicalUrl
     ? isEnglishOnlyProductPath(canonicalUrl)
     : false;
-  const isEnglishOnly =
-    isNewsPath || isMixerPath || isLegalPath || isUntranslatedProduct;
+  const isEnglishOnly = isNewsPath || isLegalPath || isUntranslatedProduct;
 
   // Canonical for the CURRENT page (lang-localized). Callers pass the
   // language-agnostic canonical (e.g. "/products/granulator-blades") and
@@ -137,7 +135,7 @@ export default function SEO({
     : undefined;
 
   // hreflang alternates — one link per supported language plus x-default.
-  // English-only sections (news, mixer) are excluded: no localized variants.
+  // English-only sections (news, legal) are excluded: no localized variants.
   const hreflangs =
     canonicalUrl && !isEnglishOnly
       ? SUPPORTED_LANGS.map(altLang => ({

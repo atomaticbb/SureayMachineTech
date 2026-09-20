@@ -24,6 +24,30 @@ export const TRUST_ITEMS = [
   "Ships to 50+ Countries",
 ];
 
+// ── Hub "why Sureay" story cards (overview page) ─────────────────────────────
+export const STORY = [
+  {
+    tag: "MATERIALS",
+    title: "Ni-Hard & High-Chromium Iron",
+    body: "Liners, blades and scrapers are cast in Ni-Hard and high-chromium iron above HB 600, harder than the aggregate that grinds against them. Mixing arms use tough alloy-steel casting that takes shock load without cracking.",
+  },
+  {
+    tag: "FOUNDRY",
+    title: "Lost-Foam & DISA Casting",
+    body: "The same foundry and metallurgy team behind our industrial blade business casts every wear part on lost-foam and DISA green-sand lines, then machines it to the original bolt pattern for a flush, drop-in fit.",
+  },
+  {
+    tag: "MADE TO FIT",
+    title: "Reverse-Engineered to Fit",
+    body: "There is no catalogue number to look up. Every part is reverse-engineered from your worn sample or plant model and machined to the original bore, bolt circle and profile — so it drops onto the shaft without shimming, drilling or field grinding.",
+  },
+  {
+    tag: "QUALITY",
+    title: "ISO 9001:2015, Factory-Direct",
+    body: "Sureay is ISO 9001:2015 certified and ships factory-direct to over 50 countries, with material and hardness reports available on request. OEM/ODM programmes are welcome.",
+  },
+];
+
 // ── Grade-selection guidance (general engineering, not per-SKU data) ─────────
 // Grouped by part family so each page shows advice relevant to its own part.
 export type GradeGuide = {
@@ -346,4 +370,32 @@ export const CATEGORY_CONTENT: Record<MixerCategoryType, CategoryContent> = {
       },
     ],
   },
+};
+
+// ── Localizable bundle ──────────────────────────────────────────────────────
+// Every translatable string above, gathered into one object so each locale can
+// ship a single parallel copy (client/src/data/locales/mixer-content.<lang>.ts)
+// the same way blades.<lang>.ts mirrors blades.ts. `gradeGroupForSector` is
+// pure logic and deliberately stays out of it.
+
+export interface MixerContent {
+  contentLastReviewed: string;
+  contentReviewer: { name: string; title: string };
+  trustItems: string[];
+  story: { tag: string; title: string; body: string }[];
+  gradeGuide: Record<GradeGroup, GradeGuide>;
+  orderSteps: { tag: string; title: string; body: string }[];
+  hubFaq: { question: string; answer: string }[];
+  categoryContent: Record<MixerCategoryType, CategoryContent>;
+}
+
+export const MIXER_CONTENT: MixerContent = {
+  contentLastReviewed: CONTENT_LAST_REVIEWED,
+  contentReviewer: CONTENT_REVIEWER,
+  trustItems: TRUST_ITEMS,
+  story: STORY,
+  gradeGuide: GRADE_GUIDE,
+  orderSteps: ORDER_STEPS,
+  hubFaq: HUB_FAQ,
+  categoryContent: CATEGORY_CONTENT,
 };

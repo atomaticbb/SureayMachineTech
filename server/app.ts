@@ -69,10 +69,11 @@ export function createApp({
     });
   };
 
-  // News, Mixer Wear Parts and the legal pages ship in English only.
-  app.get(
-    /^\/(?:es|fr|ru|vi|ar)\/(?:news|mixer-wear-parts)(?:\/.*)?$/,
-    (_req, res) => sendGone(res)
+  // News and the legal pages ship in English only. Mixer Wear Parts used to
+  // be in this group; it is fully translated now, so /{lang}/mixer-wear-parts
+  // serves a real page instead of 410.
+  app.get(/^\/(?:es|fr|ru|vi|ar)\/news(?:\/.*)?$/, (_req, res) =>
+    sendGone(res)
   );
   app.get(/^\/(?:es|fr|ru|vi|ar)\/(?:privacy-policy|terms)\/?$/, (_req, res) =>
     sendGone(res)

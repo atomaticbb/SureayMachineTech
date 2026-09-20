@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent } from "@/lib/gtag";
-import { mixerCategories } from "@/data/mixerParts";
+import { getMixerCategories } from "@/data/locales";
 
 const PRODUCT_LINKS = [
   {
@@ -36,7 +36,7 @@ const MORE =
   "text-[13px] font-bold text-slate-300 tracking-wide hover:text-white transition-colors";
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const year = new Date().getFullYear();
 
   const industries = [
@@ -127,7 +127,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className={HEAD}>{t("footer.wearParts")}</h4>
             <ul className="space-y-3">
-              {mixerCategories.map(c => (
+              {getMixerCategories(lang).map(c => (
                 <li key={c.id}>
                   <Link href={c.link} className={LINK}>
                     {c.name}

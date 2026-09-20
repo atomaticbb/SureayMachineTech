@@ -26,18 +26,18 @@ import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ProductGrid from "@/components/product/ProductGrid";
 
+import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
+import { DEFAULT_LANG } from "@/lib/i18n";
 import {
   getMixerPartById,
   getRelatedMixerParts,
   getMixerCategoryByType,
-  mixerCompanyFaq,
-} from "@/data/mixerParts";
+  getMixerCompanyFaq,
+  getMixerContent,
+} from "@/data/locales";
 import { mixerToBlade } from "@/lib/mixerToBlade";
-import {
-  GRADE_GUIDE,
-  gradeGroupForSector,
-  ORDER_STEPS,
-} from "@/data/mixerContent";
+import { gradeGroupForSector } from "@/data/mixerContent";
 
 const DOT_GRID_STYLE = {
   backgroundImage: "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
@@ -49,10 +49,12 @@ const DOT_GRID_STYLE = {
 // falling back to the old globals so any part without them still renders.
 
 export default function MixerProductDetail() {
+  const lang = useLang();
+  const { t } = useTranslation();
   const [, params] = useRoute("/mixer-wear-parts/:slug/:id");
   const [activeImg, setActiveImg] = useState(0);
   const slug = params?.slug ?? "";
-  const part = getMixerPartById(params?.id ?? "");
+  const part = getMixerPartById(params?.id ?? "", lang);
 
   // Reset the gallery to the hero shot when navigating between products
   // (the route stays mounted, so state would otherwise carry over).
@@ -63,8 +65,8 @@ export default function MixerProductDetail() {
     return (
       <>
         <SEO
-          title="404 — Mixer Wear Part Not Found"
-          description="The requested mixer wear part page does not exist."
+          title={t("mixer.product.notFound.title")}
+          description={t("mixer.product.notFound.description")}
           noIndex
         />
         <Navbar />
@@ -72,11 +74,11 @@ export default function MixerProductDetail() {
           <div className="text-center px-6">
             <h1 className="text-6xl font-black text-[#001f4d] mb-4">404</h1>
             <p className="text-xl text-slate-600 mb-8">
-              Mixer wear part not found
+              {t("mixer.product.notFound.message")}
             </p>
             <Link href="/mixer-wear-parts" asChild>
               <a className="inline-block px-8 py-3 bg-[#003366] text-white font-black tracking-widest rounded-none hover:bg-[#001f4d] transition-colors duration-200">
-                Back to Mixer Wear Parts
+                {t("mixer.product.notFound.back")}
               </a>
             </Link>
           </div>
@@ -86,7 +88,7 @@ export default function MixerProductDetail() {
     );
   }
 
-  const category = getMixerCategoryByType(part.category);
+  const category = getMixerCategoryByType(part.category, lang);
 
   // The category slug in the URL must match the product's actual category;
   // otherwise send the crawler/user to the one canonical 3-segment path.
@@ -94,29 +96,42 @@ export default function MixerProductDetail() {
     return <Redirect to={part.link} />;
   }
 
+  const { gradeGuide, orderSteps, trustItems } = getMixerContent(lang);
   const bladeLike = mixerToBlade(part);
-  const related = getRelatedMixerParts(part.id, 4).map(mixerToBlade);
+  const related = getRelatedMixerParts(part.id, lang, 4).map(mixerToBlade);
   const galleryImages =
     part.gallery && part.gallery.length > 0 ? part.gallery : [part.image];
   const activeSrc =
     galleryImages[Math.min(activeImg, galleryImages.length - 1)];
-  const material = part.specs.find(s => s.label === "Material")?.value;
+
+  // Spec labels are translated per locale, so "Material" / "Application" are
+  // matched against the English array and read back by index — the locale
+  // files are generated from it, so the two always line up.
+  const enSpecLabels = (
+    getMixerPartById(part.id, DEFAULT_LANG) ?? part
+  ).specs.map(s => s.label);
+  const isSpec = (i: number, re: RegExp) => re.test(enSpecLabels[i] ?? "");
+  const material = part.specs.find((_, i) => isSpec(i, /^material$/i))?.value;
   const heroSpecs = part.specs.filter(
-    s => /^material$/i.test(s.label) || /^application$/i.test(s.label)
+    (_, i) => isSpec(i, /^material$/i) || isSpec(i, /^application$/i)
   );
 
-  const trustItems = [
-    "ISO 9001:2015 Certified",
-    part.trustProcess ?? "Lost-Foam & DISA Casting",
-    part.trustProperty ?? "HB 600+ Wear Hardness",
-    "Ships to 50+ Countries",
+  const productTrustItems = [
+    trustItems[0],
+    part.trustProcess ?? trustItems[1],
+    part.trustProperty ?? trustItems[2],
+    trustItems[3],
   ];
 
-  const gradeGuide = GRADE_GUIDE[gradeGroupForSector(part.sector)];
+  const guide = gradeGuide[gradeGroupForSector(part.sector)];
 
   // SEO title keeps the high-intent OEM names; brand suffix added by <SEO>.
   const oemTop = part.compatibleMachines.slice(0, 2).join(" & ");
-  const seoTitle = part.seoTitle ?? `${part.name} for ${oemTop}`;
+  const seoTitle =
+    part.seoTitle ??
+    t("mixer.product.seoTitle")
+      .replace("{{name}}", part.name)
+      .replace("{{oem}}", oemTop);
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
@@ -125,8 +140,8 @@ export default function MixerProductDetail() {
         description={part.description}
         canonicalUrl={part.link}
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.mixerWearParts"), url: "/mixer-wear-parts" },
           ...(category ? [{ name: category.name, url: category.link }] : []),
           { name: part.name, url: part.link },
         ]}
@@ -149,8 +164,8 @@ export default function MixerProductDetail() {
       <main className="flex-grow pt-[68px]">
         <Breadcrumbs
           items={[
-            { label: "Home", href: "/" },
-            { label: "Mixer Wear Parts", href: "/mixer-wear-parts" },
+            { label: t("nav.home"), href: "/" },
+            { label: t("nav.mixerWearParts"), href: "/mixer-wear-parts" },
             ...(category
               ? [{ label: category.name, href: category.link }]
               : []),
@@ -162,7 +177,7 @@ export default function MixerProductDetail() {
           <div className="flex flex-col gap-y-8">
             {/* Zone 1 — Hero */}
             <section
-              aria-label={`${part.fullName || part.name} — product hero`}
+              aria-label={part.fullName || part.name}
               className="flex flex-col lg:flex-row overflow-hidden"
             >
               <div className="lg:w-[580px] lg:shrink-0 border-r border-slate-200">
@@ -190,7 +205,9 @@ export default function MixerProductDetail() {
                         key={src}
                         type="button"
                         onClick={() => setActiveImg(i)}
-                        aria-label={`View image ${i + 1} of ${part.name}`}
+                        aria-label={t("mixer.product.thumbAria")
+                          .replace("{{n}}", String(i + 1))
+                          .replace("{{name}}", part.name)}
                         aria-current={i === activeImg}
                         className={`h-16 w-16 lg:h-20 lg:w-20 shrink-0 border overflow-hidden transition-colors ${
                           i === activeImg
@@ -257,7 +274,7 @@ export default function MixerProductDetail() {
                     }}
                     className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
                   >
-                    <span>Request Engineering Quote</span>
+                    <span>{t("mixer.product.requestQuote")}</span>
                     <ArrowRight className="w-5 h-5 shrink-0" />
                   </a>
                 </div>
@@ -267,12 +284,12 @@ export default function MixerProductDetail() {
             {/* Zone 1b — Trust strip */}
             <div className="-mx-4 sm:-mx-8">
               <section
-                aria-label="Trust credentials"
+                aria-label={t("mixer.product.trustAria")}
                 className="border-y border-slate-700 bg-white py-4"
               >
                 <div className="max-w-7xl mx-auto px-6 sm:px-8">
                   <div className="flex flex-wrap items-center justify-center lg:justify-between gap-x-8 gap-y-3">
-                    {trustItems.map((item, i) => (
+                    {productTrustItems.map((item, i) => (
                       <p
                         key={i}
                         className="font-mono text-[11px] text-slate-700 tracking-widest"
@@ -295,20 +312,20 @@ export default function MixerProductDetail() {
             {/* Zone 2b — Grade selection guidance (how to choose) */}
             <div className="-mx-4 sm:-mx-8 pt-8">
               <section
-                aria-label="Choosing the right grade"
+                aria-label={t("mixer.grade.heading")}
                 className="max-w-7xl mx-auto px-6 sm:px-8"
               >
                 <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                  [ Grade Selection ]
+                  [ {t("mixer.grade.eyebrow")} ]
                 </p>
                 <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-4">
-                  Choosing the Right Grade
+                  {t("mixer.grade.heading")}
                 </h2>
                 <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-8">
-                  {gradeGuide.intro}
+                  {guide.intro}
                 </p>
                 <div className="border border-slate-300 divide-y divide-slate-200">
-                  {gradeGuide.rows.map(row => (
+                  {guide.rows.map(row => (
                     <div
                       key={row.duty}
                       className="grid grid-cols-1 sm:grid-cols-[minmax(0,16rem)_1fr] gap-x-6 gap-y-1 px-5 py-4"
@@ -323,9 +340,7 @@ export default function MixerProductDetail() {
                   ))}
                 </div>
                 <p className="text-[13px] text-slate-500 leading-[1.7] mt-5 max-w-3xl">
-                  Not sure which grade fits your plant? Send your aggregate
-                  type, output and plant model and we recommend the grade with
-                  your quote.
+                  {t("mixer.grade.footnote")}
                 </p>
               </section>
             </div>
@@ -334,19 +349,17 @@ export default function MixerProductDetail() {
             {part.variants && part.variants.length > 0 && (
               <div className="-mx-4 sm:-mx-8 pt-8">
                 <section
-                  aria-label="Available grades and variants"
+                  aria-label={t("mixer.variants.heading")}
                   className="max-w-7xl mx-auto px-6 sm:px-8"
                 >
                   <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                    [ Available Grades / Variants ]
+                    [ {t("mixer.variants.eyebrow")} ]
                   </p>
                   <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-4">
-                    Available Grades &amp; Variants
+                    {t("mixer.variants.heading")}
                   </h2>
                   <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-8">
-                    This part ships in several cast grades. Send your output,
-                    aggregate hardness and plant model and we match the grade —
-                    or cast to your exact OEM specification.
+                    {t("mixer.variants.lead")}
                   </p>
                   <div className="border border-slate-300 divide-y divide-slate-200">
                     {part.variants.map(v => (
@@ -376,14 +389,14 @@ export default function MixerProductDetail() {
             {part.compatibleMachines.length > 0 && (
               <div className="-mx-4 sm:-mx-8">
                 <section
-                  aria-label="Compatible mixing plant brands"
+                  aria-label={t("mixer.product.oemHeading")}
                   className="max-w-7xl mx-auto px-6 sm:px-8"
                 >
                   <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                    [ OEM Compatibility ]
+                    [ {t("mixer.oem.eyebrow")} ]
                   </p>
                   <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-10">
-                    Compatible Mixing Plant Brands
+                    {t("mixer.product.oemHeading")}
                   </h2>
                   <div className="flex flex-wrap gap-3">
                     {part.compatibleMachines.map(brand => (
@@ -396,8 +409,7 @@ export default function MixerProductDetail() {
                     ))}
                   </div>
                   <p className="font-mono text-[11px] text-slate-500 tracking-widest mt-6">
-                    &#174; Registered trademarks are property of their
-                    respective owners.
+                    &#174; {t("mixer.oem.trademarkNote")}
                   </p>
                 </section>
               </div>
@@ -414,15 +426,15 @@ export default function MixerProductDetail() {
         {part.fullDescription && (
           <div className="mt-16">
             <section
-              aria-label={`${part.name} overview`}
+              aria-label={t("mixer.product.overview.heading")}
               className="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-6"
             >
               <aside className="lg:col-span-4">
                 <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                  [ Overview ]
+                  [ {t("mixer.category.overview.eyebrow")} ]
                 </p>
                 <h2 className="font-black text-3xl lg:text-4xl text-[#001f4d] tracking-tight leading-[1.1]">
-                  About this part
+                  {t("mixer.product.overview.heading")}
                 </h2>
                 <div
                   className="mt-6 aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
@@ -457,22 +469,20 @@ export default function MixerProductDetail() {
         {/* How to Order — reverse-engineer process (primes the decision) */}
         <div className="mt-16">
           <section
-            aria-label="How to order"
+            aria-label={t("mixer.order.eyebrow")}
             className="max-w-7xl mx-auto px-6 sm:px-8"
           >
             <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-              [ How to Order ]
+              [ {t("mixer.order.eyebrow")} ]
             </p>
             <h2 className="font-black text-3xl lg:text-4xl text-[#001f4d] tracking-tight mb-4">
-              Made to fit your plant — from a sample or a model
+              {t("mixer.order.heading")}
             </h2>
             <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-10">
-              Every part is cast to order. There is no catalogue number to look
-              up — we reverse-engineer the fit from your worn part or plant
-              model, so you get an exact replacement rather than a near-miss.
+              {t("mixer.order.lead")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
-              {ORDER_STEPS.map(step => (
+              {orderSteps.map(step => (
                 <div key={step.tag} className="bg-white p-6 flex flex-col">
                   <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
                     {step.tag}
@@ -493,20 +503,23 @@ export default function MixerProductDetail() {
         {related.length > 0 && (
           <div className="mt-16">
             <section
-              aria-label="Related mixer wear parts"
+              aria-label={t("mixer.product.related.eyebrow")}
               className="max-w-7xl mx-auto px-6 sm:px-8"
             >
               <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                [ Same Mixing Plant ]
+                [ {t("mixer.product.related.eyebrow")} ]
               </p>
               <div className="flex items-end justify-between gap-4 mb-6">
                 <h2 className="font-black text-3xl text-[#001f4d] tracking-tight">
-                  Related {part.categoryDisplay} Parts
+                  {t("mixer.product.related.heading").replace(
+                    "{{category}}",
+                    part.categoryDisplay
+                  )}
                 </h2>
                 {category && (
                   <Link href={category.link}>
                     <span className="font-mono text-[10px] text-slate-700 tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
-                      View All →
+                      {t("mixer.product.viewAll")} →
                     </span>
                   </Link>
                 )}
@@ -519,7 +532,10 @@ export default function MixerProductDetail() {
         {/* Zone 6 — FAQ (reused) */}
         <div className="mt-16">
           <ProductFAQ
-            faqs={{ technical: part.faq ?? [], company: mixerCompanyFaq }}
+            faqs={{
+              technical: part.faq ?? [],
+              company: getMixerCompanyFaq(lang),
+            }}
             productName={part.fullName || part.name}
           />
         </div>
@@ -532,15 +548,16 @@ export default function MixerProductDetail() {
         {/* OEM-brand disclaimer (page footer) */}
         <div className="border-t border-slate-200 bg-slate-50">
           <p className="max-w-7xl mx-auto px-6 sm:px-8 py-6 font-mono text-[11px] text-slate-500 tracking-wide leading-relaxed">
-            Sureay manufactures replacement wear parts to fit the listed OEM
-            machines and is not affiliated with these manufacturers. All brand
-            names and trademarks are the property of their respective owners.
+            {t("mixer.oem.disclaimer")}
           </p>
         </div>
       </main>
 
       <FloatingContactButtons
-        whatsappPrefillText={`Hi, I'm interested in your ${part.name}. Please send me more information.`}
+        whatsappPrefillText={t("mixer.product.whatsappPrefill").replace(
+          "{{name}}",
+          part.name
+        )}
         rfqAnchorId="rfq"
       />
       <Footer />

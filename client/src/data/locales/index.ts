@@ -36,6 +36,19 @@ import {
   SEO_CONFIG as seoEn,
   type PageSEO,
 } from "../../utils/seo-config";
+import {
+  mixerParts as mixerPartsEn,
+  mixerCategories as mixerCategoriesEn,
+  mixerCompanyFaq as mixerCompanyFaqEn,
+  type MixerPart,
+  type MixerCategory,
+  type MixerCategoryType,
+  type MixerFaq,
+} from "../mixerParts";
+import {
+  MIXER_CONTENT as mixerContentEn,
+  type MixerContent,
+} from "../mixerContent";
 
 // English data is always synchronously available.
 // Non-English entries are populated by preloadLocale() below.
@@ -45,6 +58,22 @@ const categoriesByLang: Partial<Record<Lang, BladeCategoryMeta[]>> = {
 };
 const seoByLang: Partial<Record<Lang, Record<string, PageSEO>>> = {
   en: seoEn,
+};
+
+// Mixer Wear Parts — parallel business line, same per-locale pattern.
+interface MixerLocale {
+  parts: MixerPart[];
+  categories: MixerCategory[];
+  companyFaq: MixerFaq[];
+  content: MixerContent;
+}
+const mixerByLang: Partial<Record<Lang, MixerLocale>> = {
+  en: {
+    parts: mixerPartsEn,
+    categories: mixerCategoriesEn,
+    companyFaq: mixerCompanyFaqEn,
+    content: mixerContentEn,
+  },
 };
 
 // ── Dynamic locale loaders ──────────────────────────────────────────────────
@@ -59,55 +88,95 @@ const LOCALE_LOADERS: Record<NonEnLang, () => Promise<void>> = {
       import("./blades.es"),
       import("./blade-categories.es"),
       import("./seo-config.es"),
+      import("./mixer-parts.es"),
+      import("./mixer-content.es"),
       loadDictionary("es"),
-    ]).then(([b, c, s]) => {
+    ]).then(([b, c, s, mp, mc]) => {
       bladesByLang.es = b.blades;
       categoriesByLang.es = c.BLADE_CATEGORIES;
       seoByLang.es = s.SEO_CONFIG;
+      mixerByLang.es = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
     }),
   fr: () =>
     Promise.all([
       import("./blades.fr"),
       import("./blade-categories.fr"),
       import("./seo-config.fr"),
+      import("./mixer-parts.fr"),
+      import("./mixer-content.fr"),
       loadDictionary("fr"),
-    ]).then(([b, c, s]) => {
+    ]).then(([b, c, s, mp, mc]) => {
       bladesByLang.fr = b.blades;
       categoriesByLang.fr = c.BLADE_CATEGORIES;
       seoByLang.fr = s.SEO_CONFIG;
+      mixerByLang.fr = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
     }),
   ru: () =>
     Promise.all([
       import("./blades.ru"),
       import("./blade-categories.ru"),
       import("./seo-config.ru"),
+      import("./mixer-parts.ru"),
+      import("./mixer-content.ru"),
       loadDictionary("ru"),
-    ]).then(([b, c, s]) => {
+    ]).then(([b, c, s, mp, mc]) => {
       bladesByLang.ru = b.blades;
       categoriesByLang.ru = c.BLADE_CATEGORIES;
       seoByLang.ru = s.SEO_CONFIG;
+      mixerByLang.ru = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
     }),
   vi: () =>
     Promise.all([
       import("./blades.vi"),
       import("./blade-categories.vi"),
       import("./seo-config.vi"),
+      import("./mixer-parts.vi"),
+      import("./mixer-content.vi"),
       loadDictionary("vi"),
-    ]).then(([b, c, s]) => {
+    ]).then(([b, c, s, mp, mc]) => {
       bladesByLang.vi = b.blades;
       categoriesByLang.vi = c.BLADE_CATEGORIES;
       seoByLang.vi = s.SEO_CONFIG;
+      mixerByLang.vi = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
     }),
   ar: () =>
     Promise.all([
       import("./blades.ar"),
       import("./blade-categories.ar"),
       import("./seo-config.ar"),
+      import("./mixer-parts.ar"),
+      import("./mixer-content.ar"),
       loadDictionary("ar"),
-    ]).then(([b, c, s]) => {
+    ]).then(([b, c, s, mp, mc]) => {
       bladesByLang.ar = b.blades;
       categoriesByLang.ar = c.BLADE_CATEGORIES;
       seoByLang.ar = s.SEO_CONFIG;
+      mixerByLang.ar = {
+        parts: mp.mixerParts,
+        categories: mp.mixerCategories,
+        companyFaq: mp.mixerCompanyFaq,
+        content: mc.MIXER_CONTENT,
+      };
     }),
 };
 
@@ -239,4 +308,76 @@ export function getSEO(pageKey: string, lang: Lang): PageSEO {
     seoByLang[DEFAULT_LANG]![pageKey] ??
     ({} as PageSEO)
   );
+}
+
+// ── Mixer Wear Parts accessors ──────────────────────────────────────────────
+// Language-aware mirrors of the lookups in ../mixerParts.ts. Slugs (`id`),
+// links and image paths stay English in every locale, exactly like blades.
+
+function mixerLocale(lang: Lang): MixerLocale {
+  return mixerByLang[lang] ?? mixerByLang[DEFAULT_LANG]!;
+}
+
+export function getMixerParts(lang: Lang): MixerPart[] {
+  return mixerLocale(lang).parts;
+}
+
+export function getMixerCategories(lang: Lang): MixerCategory[] {
+  return mixerLocale(lang).categories;
+}
+
+export function getMixerCompanyFaq(lang: Lang): MixerFaq[] {
+  return mixerLocale(lang).companyFaq;
+}
+
+export function getMixerContent(lang: Lang): MixerContent {
+  return mixerLocale(lang).content;
+}
+
+export function getMixerPartById(
+  id: string,
+  lang: Lang
+): MixerPart | undefined {
+  return getMixerParts(lang).find(p => p.id === id);
+}
+
+export function getMixerPartsByCategory(
+  category: MixerCategoryType,
+  lang: Lang
+): MixerPart[] {
+  return getMixerParts(lang).filter(p => p.category === category);
+}
+
+export function getRelatedMixerParts(
+  id: string,
+  lang: Lang,
+  limit = 4
+): MixerPart[] {
+  const parts = getMixerParts(lang);
+  const current = parts.find(p => p.id === id);
+  if (!current) return [];
+  return current.relatedIds
+    .map(rid => parts.find(p => p.id === rid))
+    .filter((p): p is MixerPart => !!p)
+    .slice(0, limit);
+}
+
+export function getMixerCategoryBySlug(
+  slug: string,
+  lang: Lang
+): MixerCategory | undefined {
+  return getMixerCategories(lang).find(c => c.id === slug);
+}
+
+export function getMixerCategoryByType(
+  category: MixerCategoryType,
+  lang: Lang
+): MixerCategory | undefined {
+  return getMixerCategories(lang).find(c => c.category === category);
+}
+
+export function getFeaturedMixerParts(lang: Lang, limit = 4): MixerPart[] {
+  return getMixerParts(lang)
+    .filter(p => p.isFeatured)
+    .slice(0, limit);
 }

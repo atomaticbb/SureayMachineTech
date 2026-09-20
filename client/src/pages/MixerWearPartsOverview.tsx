@@ -18,52 +18,30 @@ import ProductGrid from "@/components/product/ProductGrid";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
 import ContactRFQ from "@/components/home/ContactRFQ";
 
+import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 import {
-  mixerCategories,
+  getMixerCategories,
   getFeaturedMixerParts,
   getMixerPartsByCategory,
-  mixerCompanyFaq,
-} from "@/data/mixerParts";
+  getMixerCompanyFaq,
+  getMixerContent,
+} from "@/data/locales";
 import { mixerToBlade } from "@/lib/mixerToBlade";
-import { ORDER_STEPS, HUB_FAQ } from "@/data/mixerContent";
-
-const STORY = [
-  {
-    tag: "MATERIALS",
-    title: "Ni-Hard & High-Chromium Iron",
-    body: "Liners, blades and scrapers are cast in Ni-Hard and high-chromium iron above HB 600, harder than the aggregate that grinds against them. Mixing arms use tough alloy-steel casting that takes shock load without cracking.",
-  },
-  {
-    tag: "FOUNDRY",
-    title: "Lost-Foam & DISA Casting",
-    body: "The same foundry and metallurgy team behind our industrial blade business casts every wear part on lost-foam and DISA green-sand lines, then machines it to the original bolt pattern for a flush, drop-in fit.",
-  },
-  {
-    tag: "MADE TO FIT",
-    title: "Reverse-Engineered to Fit",
-    body: "There is no catalogue number to look up. Every part is reverse-engineered from your worn sample or plant model and machined to the original bore, bolt circle and profile — so it drops onto the shaft without shimming, drilling or field grinding.",
-  },
-  {
-    tag: "QUALITY",
-    title: "ISO 9001:2015, Factory-Direct",
-    body: "Sureay is ISO 9001:2015 certified and ships factory-direct to over 50 countries, with material and hardness reports available on request. OEM/ODM programmes are welcome.",
-  },
-];
-
-const HERO_TRUST = [
-  "ISO 9001:2015 Certified",
-  "Ni-Hard / High-Chrome Cast",
-  "Made to Order",
-  "Ships to 50+ Countries",
-];
 
 export default function MixerWearPartsOverview() {
-  const featured = getFeaturedMixerParts(4).map(mixerToBlade);
+  const lang = useLang();
+  const { t } = useTranslation();
+  const mixerCategories = getMixerCategories(lang);
+  const { story, trustItems, orderSteps, hubFaq } = getMixerContent(lang);
+  const featured = getFeaturedMixerParts(lang, 4).map(mixerToBlade);
   const oemByCategory = mixerCategories.map(cat => ({
     cat,
     brands: Array.from(
       new Set(
-        getMixerPartsByCategory(cat.category).flatMap(p => p.compatibleMachines)
+        getMixerPartsByCategory(cat.category, lang).flatMap(
+          p => p.compatibleMachines
+        )
       )
     ),
   }));
@@ -74,10 +52,9 @@ export default function MixerWearPartsOverview() {
   const collectionLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Concrete & Asphalt Mixing Plant Wear Parts",
+    name: t("mixer.hub.title"),
     url: "https://sureay.com/mixer-wear-parts",
-    description:
-      "Cast wear parts for concrete and asphalt mixing plants — mixing arms, liner plates, scrapers, blades and seals, reverse-engineered to fit the plant you run.",
+    description: t("mixer.hub.collectionDescription"),
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: mixerCategories.length,
@@ -94,12 +71,12 @@ export default function MixerWearPartsOverview() {
   return (
     <div className="min-h-screen bg-white antialiased">
       <SEO
-        title="Concrete & Asphalt Mixing Plant Wear Parts"
-        description="Factory-direct mixing arms, liner plates, scrapers and blades for concrete and asphalt mixing plants. Ni-Hard / high-chrome cast wear parts, OEM-fit, ISO 9001:2015."
+        title={t("mixer.hub.title")}
+        description={t("mixer.hub.seoDescription")}
         canonicalUrl="/mixer-wear-parts"
         breadcrumbs={[
-          { name: "Home", url: "/" },
-          { name: "Mixer Wear Parts", url: "/mixer-wear-parts" },
+          { name: t("nav.home"), url: "/" },
+          { name: t("nav.mixerWearParts"), url: "/mixer-wear-parts" },
         ]}
         extraJsonLd={[collectionLd]}
       />
@@ -113,7 +90,7 @@ export default function MixerWearPartsOverview() {
             src="/images/mixer-parts/hero/mixer-wear-parts-hero.webp"
             srcSet="/images/mixer-parts/hero/mixer-wear-parts-hero-800w.webp 800w, /images/mixer-parts/hero/mixer-wear-parts-hero.webp 1600w"
             sizes="(max-width: 1024px) 100vw, 46vw"
-            alt="Cast steel mixing arm for concrete and asphalt mixers in a foundry setting"
+            alt={t("mixer.hub.hero.imageAlt")}
             className="h-full w-full object-cover object-right"
             width={1600}
             height={900}
@@ -131,24 +108,22 @@ export default function MixerWearPartsOverview() {
         >
           <div>
             <p className="text-[11px] font-semibold tracking-[0.28em] text-white/40 mb-6 uppercase">
-              Cast Wear Parts · Made to Fit Your Plant
+              {t("mixer.hub.hero.eyebrow")}
             </p>
             <h1 className="text-[clamp(2.1rem,5.2vw,3.6rem)] font-black text-white tracking-tight leading-none mb-6">
-              Concrete &amp; Asphalt
+              {t("mixer.hub.hero.titleLine1")}
               <br />
-              Mixing Plant
+              {t("mixer.hub.hero.titleLine2")}
               <br />
-              Wear Parts
+              {t("mixer.hub.hero.titleLine3")}
             </h1>
             <div className="w-12 h-[3px] bg-white/30 mb-6" />
             <p className="text-white/70 text-[15px] lg:text-[16px] leading-relaxed max-w-lg">
-              Mixing arms, liners, scrapers, blades and seals —
-              reverse-engineered from your worn part or plant model to drop into
-              the mixer you run.
+              {t("mixer.hub.hero.lead")}
             </p>
           </div>
           <ul className="hidden lg:flex flex-wrap gap-x-6 gap-y-2">
-            {HERO_TRUST.map(item => (
+            {trustItems.map(item => (
               <li
                 key={item}
                 className="font-mono text-[11px] text-white/60 tracking-widest"
@@ -161,20 +136,23 @@ export default function MixerWearPartsOverview() {
       </section>
 
       <Breadcrumbs
-        items={[{ label: "Home", href: "/" }, { label: "Mixer Wear Parts" }]}
+        items={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.mixerWearParts") },
+        ]}
       />
 
       {/* Two Plant Types — primary navigation, directly under the hero */}
       <section
-        aria-label="Choose a plant type"
+        aria-label={t("mixer.hub.plantTypes.eyebrow")}
         className="border-b border-slate-200 bg-slate-50"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-12 lg:py-16">
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-            Two Plant Types
+            {t("mixer.hub.plantTypes.eyebrow")}
           </p>
           <h2 className="text-[26px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-8">
-            Find parts for your plant
+            {t("mixer.hub.plantTypes.heading")}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {mixerCategories.map(cat => (
@@ -192,7 +170,10 @@ export default function MixerWearPartsOverview() {
                     {/* On hover — the parts in this category */}
                     <img
                       src={`/images/mixer-parts/hero/${cat.id}-products.webp`}
-                      alt={`Wear parts for ${cat.name}`}
+                      alt={t("mixer.hub.cardPartsAlt").replace(
+                        "{{name}}",
+                        cat.name
+                      )}
                       className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                       loading="lazy"
                       decoding="async"
@@ -213,7 +194,7 @@ export default function MixerWearPartsOverview() {
                       </p>
                     </div>
                     <span className="inline-flex shrink-0 items-center gap-2 text-[11px] font-black tracking-[0.18em] text-[#001f4d] group-hover:gap-3 transition-all">
-                      VIEW PARTS
+                      {t("mixer.hub.viewParts")}
                       <ArrowRight className="w-3.5 h-3.5" />
                     </span>
                   </div>
@@ -226,18 +207,18 @@ export default function MixerWearPartsOverview() {
 
       {/* 2 · Story */}
       <section
-        aria-label="Why Sureay mixer wear parts"
+        aria-label={t("mixer.hub.story.eyebrow")}
         className="border-b border-slate-200 bg-white"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-24">
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-            Wear Parts, Engineered
+            {t("mixer.hub.story.eyebrow")}
           </p>
           <h2 className="text-[30px] lg:text-[40px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-12 max-w-3xl">
-            The metallurgy and foundry behind every part
+            {t("mixer.hub.story.heading")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
-            {STORY.map(item => (
+            {story.map(item => (
               <div key={item.tag} className="bg-white p-6 lg:p-8 flex flex-col">
                 <span className="font-mono text-[9px] text-[#003a8c] tracking-[0.28em] uppercase mb-3">
                   {item.tag}
@@ -257,15 +238,15 @@ export default function MixerWearPartsOverview() {
       {/* 3 · Featured parts */}
       {featured.length > 0 && (
         <section
-          aria-label="Featured wear parts"
+          aria-label={t("mixer.hub.featured.heading")}
           className="border-b border-slate-200 bg-white"
         >
           <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-24">
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              Featured
+              {t("mixer.hub.featured.eyebrow")}
             </p>
             <h2 className="text-[30px] lg:text-[40px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-12">
-              Popular replacements
+              {t("mixer.hub.featured.heading")}
             </h2>
             <ProductGrid blades={featured} layout="grid" />
           </div>
@@ -274,29 +255,27 @@ export default function MixerWearPartsOverview() {
 
       {/* 4 · How to order */}
       <section
-        aria-label="How to order"
+        aria-label={t("mixer.order.eyebrow")}
         className="border-b border-slate-200 bg-slate-50"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
           <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
-            How to Order
+            {t("mixer.order.eyebrow")}
           </p>
           <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-4">
-            Made to fit your plant — from a sample or a model
+            {t("mixer.order.heading")}
           </h2>
           <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-4">
-            Every part is cast to order. There is no catalogue number to look up
-            — we reverse-engineer the fit from your worn part or plant model, so
-            you get an exact replacement rather than a near-miss.
+            {t("mixer.order.lead")}
           </p>
           <Link href="/news/mixer-wear-parts-oem-matching" asChild>
             <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
-              Read: How we match a part with no drawing on file
+              {t("mixer.order.articleLink")}
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </Link>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
-            {ORDER_STEPS.map(step => (
+            {orderSteps.map(step => (
               <div key={step.tag} className="bg-white p-6 flex flex-col">
                 <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
                   {step.tag}
@@ -315,20 +294,19 @@ export default function MixerWearPartsOverview() {
 
       {/* 5 · OEM compatibility — brand names grouped by plant type */}
       <section
-        aria-label="OEM compatibility"
+        aria-label={t("mixer.oem.eyebrow")}
         className="border-b border-slate-200 bg-white"
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
           <aside className="lg:col-span-4">
             <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              OEM Compatibility
+              {t("mixer.oem.eyebrow")}
             </p>
             <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
-              Drop-in fit, no retooling
+              {t("mixer.oem.heading")}
             </h2>
             <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
-              Sureay manufactures replacement wear parts to fit the listed
-              mixing plants and is not affiliated with these manufacturers.
+              {t("mixer.oem.plantNote")}
             </p>
           </aside>
           <div className="lg:col-span-8 flex flex-col justify-center gap-8">
@@ -363,12 +341,12 @@ export default function MixerWearPartsOverview() {
 
       {/* 6 · FAQ — hub-level (distinct from category and per-part FAQs) */}
       <section
-        aria-label="Frequently asked questions"
+        aria-label={t("mixer.faq.ariaLabel")}
         className="bg-slate-50 border-b border-slate-200 py-14 lg:py-20"
       >
         <ProductFAQ
-          faqs={{ technical: HUB_FAQ, company: mixerCompanyFaq }}
-          productName="Mixer Wear Parts"
+          faqs={{ technical: hubFaq, company: getMixerCompanyFaq(lang) }}
+          productName={t("nav.mixerWearParts")}
         />
       </section>
 
