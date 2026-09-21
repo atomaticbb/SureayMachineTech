@@ -413,15 +413,15 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Qué grado de material debo utilizar para la transformación de tejidos a alta velocidad de 500 m/min?",
+            "¿Qué grado de material debo utilizar para la transformación de papel tisú a alta velocidad de 500 m/min?",
           answer:
-            "Especifique acero de alta velocidad M2 con HRC 62-64 para la conversión de tejidos por encima de 400 m/min. El molibdeno y los carburo de tungsteno de M2 mantienen la geometría del filo bajo los ciclos térmicos generados por el corte a ultra alta velocidad, lo que proporciona una vida útil de la campaña entre 2 y 3 veces superior a la de D2 en calidades de tejido ligeras (12-18 GSM).",
+            "Especifique acero de alta velocidad M2 con HRC 62-64 para la conversión de papel tisú por encima de 400 m/min. El molibdeno y los carburo de tungsteno de M2 mantienen la geometría del filo bajo los ciclos térmicos generados por el corte a ultra alta velocidad, lo que proporciona una vida útil de la campaña entre 2 y 3 veces superior a la de D2 en calidades de papel tisú ligeras (12-18 GSM).",
         },
         {
           question:
             "¿Cómo puedo evitar la contaminación por polvo de fibra en el borde de la hendidura?",
           answer:
-            "El polvo de fibras se debe principalmente a una holgura excesiva de la cizalla (>0,10 mm en el papel tisú) o a un acabado rugoso de la superficie de la cuchilla (Ra >0,6μm) que desgarra los haces de fibras en lugar de cizallarlos limpiamente. Especifique pares de cizallas emparejadas con holgura verificada previamente (0,02-0,05 mm para tejido, 0,05-0,10 mm para papel kraft) y acabado superficial Ra ≤0,4μm. Esto reduce el polvo en suspensión en un 60-70% en comparación con las cuchillas industriales estándar.",
+            "El polvo de fibras se debe principalmente a una holgura excesiva de la cizalla (>0,10 mm en el papel tisú) o a un acabado rugoso de la superficie de la cuchilla (Ra >0,6μm) que desgarra los haces de fibras en lugar de cizallarlos limpiamente. Especifique pares de cizallas emparejadas con holgura verificada previamente (0,02-0,05 mm para papel tisú, 0,05-0,10 mm para papel kraft) y acabado superficial Ra ≤0,4μm. Esto reduce el polvo en suspensión en un 60-70% en comparación con las cuchillas industriales estándar.",
         },
         {
           question:

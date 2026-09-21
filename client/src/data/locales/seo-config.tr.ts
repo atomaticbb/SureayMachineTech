@@ -17,7 +17,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   products: {
     title: "Endüstriyel Bıçak Ürünleri | Hassas Kesme Aletleri | Sureay",
     description:
-      "Endüstriyel kesme bıçaklarından oluşan eksiksiz ürün yelpazemize göz atın: döner dilimleme bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kağıt mendil bıçakları log testere bıçakları ve metal kesme bıçakları. D2'den karbüre kadar özel metalurji. Mikron düzeyinde toleranslar.",
+      "Endüstriyel kesme bıçaklarından oluşan eksiksiz ürün yelpazemize göz atın: döner dilimleme bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kağıt mendil bıçakları kağıt rulo testere bıçakları ve metal kesme bıçakları. D2'den karbüre kadar özel metalurji. Mikron düzeyinde toleranslar.",
     keywords:
       "endüstriyel bıçak kataloğu, kesici aletler, döner bıçaklar, parçalayıcı bıçakları, granülatör bıçakları",
   },
@@ -61,9 +61,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title:
       "Kağıt İşleme Bıçakları | Kağıt Havlu Rulo Testereleri ve Giyotin Bıçakları | Sureay",
     description:
-      "Kağıt mendil işleme ve ticari baskı için yüksek hassasiyetli bıçaklar: Ø610 log testere bıçakları, ayna cilalı, giyotin kesme bıçakları. Islak ortamlar için TiN kaplama seçeneği mevcuttur. Son derece temiz kesimler, sıfır toz oluşumu.",
+      "Kağıt mendil işleme ve ticari baskı için yüksek hassasiyetli bıçaklar: Ø610 kağıt rulo testere bıçakları, ayna cilalı, giyotin kesme bıçakları. Islak ortamlar için TiN kaplama seçeneği mevcuttur. Son derece temiz kesimler, sıfır toz oluşumu.",
     keywords:
-      "log testere bıçakları kağıt kesme bıçakları, giyotin bıçakları, kağıt işleme, baskı endüstrisi bıçakları",
+      "kağıt rulo testere bıçakları kağıt kesme bıçakları, giyotin bıçakları, kağıt işleme, baskı endüstrisi bıçakları",
   },
   "rotary-slitter-knives": {
     title: "Esnek Ambalajlar için Film ve Bant Kesme Bıçakları",
@@ -112,9 +112,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   "tissue-log-saw-blades": {
     title: "Kağıt Rulo Testere Bıçakları | D2 Ø610–1200 mm | Sureay",
     description:
-      "log testere bıçakları tipi doku, Ø610–1200 mm, D2 HRC 58–60, ayna cilalı, ≤0,15 mm eksantriklik. TiN kaplamalı. Perini, PCMC, Gambini markalarına uyumlu. Hızlı fiyat teklifi.",
+      "kağıt rulo testere bıçakları, Ø610–1200 mm, D2 HRC 58–60, ayna cilalı, ≤0,15 mm eksantriklik. TiN kaplamalı. Perini, PCMC, Gambini markalarına uyumlu. Hızlı fiyat teklifi.",
     keywords:
-      "log testere bıçakları doku, log testere bıçakları doku, log testere bıçakları, kağıt testere bıçakları, işleme dairesel testereleri, D2 testere bıçakları",
+      "kağıt rulo testere bıçakları, kağıt rulo testere bıçakları, kağıt rulo testere bıçakları, kağıt testere bıçakları, işleme dairesel testereleri, D2 testere bıçakları",
   },
   "granulator-blades": {
     title: "Plastik Öğütücü Bıçakları ve Kırıcı Bıçakları | OEM",

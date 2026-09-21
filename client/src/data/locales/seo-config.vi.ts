@@ -212,7 +212,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     description:
       "Dao xén cắt rạch và cắt nghiền cho giấy lụa, kraft và giấy tráng. D2, M2 HSS và 52100 với dung sai độ dày ±0,002mm. OEM phù hợp với Atlas, Kampf, Goebel IMS, Perini.",
     keywords:
-      "lưỡi xén giấy, dao xén giấy, dao xén sóng, lưỡi chuyển đổi mô, máy xén giấy kraft, lưỡi xẻng cưa gỗ, cặp cắt giấy, rạch không bụi",
+      "lưỡi xén giấy, dao xén giấy, dao xén sóng, lưỡi chuyển đổi khăn giấy, máy xén giấy kraft, lưỡi xẻng cưa gỗ, cặp cắt giấy, rạch không bụi",
   },
   "guillotine-shear-blades": {
     title: "Lưỡi cắt chém | D2 & 6CrW2Si cho máy cắt thủy lực | Sureay",

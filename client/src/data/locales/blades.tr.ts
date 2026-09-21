@@ -309,7 +309,7 @@ export const blades: Blade[] = [
         tag: "KESME HASSASİYETİ",
         title: "Yarık kenarında elyaf tozunu durduran kesme boşluğu nedir?",
         description:
-          "Eşleştirilmiş üst/alt kesme çifti, doku sınıfı açıklık spesifikasyonlarına göre önceden doğrulanmıştır (ultra ince doku için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm). Bu kontrollü açıklığa sahip makaslar, selüloz lif demetlerini yırtmadan veya sarma istasyonlarını kirleten ve ürün kalitesini düşüren havada asılı lif tozu oluşturmadan temiz bir şekilde keser.",
+          "Eşleştirilmiş üst/alt kesme çifti, kağıt sınıfı açıklık spesifikasyonlarına göre önceden doğrulanmıştır (ultra ince kağıt için 0,02–0,05 mm, kraft kağıt için 0,05–0,10 mm). Bu kontrollü açıklığa sahip makaslar, selüloz lif demetlerini yırtmadan veya sarma istasyonlarını kirleten ve ürün kalitesini düşüren havada asılı lif tozu oluşturmadan temiz bir şekilde keser.",
       },
       {
         id: "bore-locking-options",
@@ -420,7 +420,7 @@ export const blades: Blade[] = [
           question:
             "500 m/dk hızında yüksek hızlı kağıt mendil üretiminde hangi malzeme sınıfını kullanmalıyım?",
           answer:
-            "400 m/dk’nın üzerindeki kağıt doku işleme uygulamaları için HRC 62–64 sertliğinde M2 yüksek hız çeliği kullanın. M2'deki molibden ve tungsten karbür'ler, ultra yüksek hızlı kesim sırasında oluşan termal döngü koşullarında kenar geometrisini korur ve hafif kağıt türlerinde (12–18 GSM) D2'ye kıyasla 2–3 kat daha uzun çalışma ömrü sağlar.",
+            "400 m/dk’nın üzerindeki kağıt işleme uygulamaları için HRC 62–64 sertliğinde M2 yüksek hız çeliği kullanın. M2'deki molibden ve tungsten karbür'ler, ultra yüksek hızlı kesim sırasında oluşan termal döngü koşullarında kenar geometrisini korur ve hafif kağıt türlerinde (12–18 GSM) D2'ye kıyasla 2–3 kat daha uzun çalışma ömrü sağlar.",
         },
         {
           question:

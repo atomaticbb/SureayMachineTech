@@ -297,7 +297,7 @@ export const blades: Blade[] = [
         tag: "CẮT CHÍNH XÁC",
         title: "Độ hở cắt nào ngăn bụi sợi ở mép khe?",
         description:
-          "Các cặp cắt trên/dưới phù hợp được xác minh trước theo thông số kỹ thuật về độ hở cấp mô (0,02–0,05mm đối với giấy siêu mỏng, 0,05–0,10mm đối với giấy kraft). Khoảng hở được kiểm soát này cắt sạch các bó sợi xenlulo mà không làm rách hoặc tạo ra bụi sợi trong không khí làm nhiễm bẩn các trạm tua lại và làm giảm chất lượng sản phẩm.",
+          "Các cặp cắt trên/dưới phù hợp được xác minh trước theo thông số kỹ thuật về độ hở cấp khăn giấy (0,02–0,05mm đối với giấy siêu mỏng, 0,05–0,10mm đối với giấy kraft). Khoảng hở được kiểm soát này cắt sạch các bó sợi xenlulo mà không làm rách hoặc tạo ra bụi sợi trong không khí làm nhiễm bẩn các trạm tua lại và làm giảm chất lượng sản phẩm.",
       },
       {
         id: "bore-locking-options",
@@ -366,14 +366,14 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Tôi nên sử dụng loại vật liệu nào để chuyển đổi mô tốc độ cao ở tốc độ 500 m/phút?",
+            "Tôi nên sử dụng loại vật liệu nào để chuyển đổi khăn giấy tốc độ cao ở tốc độ 500 m/phút?",
           answer:
-            "Chỉ định thép tốc độ cao M2 ở HRC 62–64 để chuyển đổi mô trên 400 m/phút. Molypden và hợp kim cacbua vonfram trong M2 duy trì hình dạng cạnh trong chu kỳ nhiệt được tạo ra bằng cách cắt tốc độ cực cao, mang lại tuổi thọ chiến dịch dài hơn 2–3× so với D2 trên các loại mô nhẹ (12–18 GSM).",
+            "Chỉ định thép tốc độ cao M2 ở HRC 62–64 để chuyển đổi khăn giấy trên 400 m/phút. Molypden và hợp kim cacbua vonfram trong M2 duy trì hình dạng cạnh trong chu kỳ nhiệt được tạo ra bằng cách cắt tốc độ cực cao, mang lại tuổi thọ chiến dịch dài hơn 2–3× so với D2 trên các loại khăn giấy nhẹ (12–18 GSM).",
         },
         {
           question: "Làm cách nào để ngăn ngừa ô nhiễm bụi sợi ở mép khe?",
           answer:
-            "Bụi sợi chủ yếu là do độ hở cắt quá mức (>0,10 mm trên mô) hoặc bề mặt lưỡi thô (Ra >0,6μm) làm rách các bó sợi thay vì cắt sạch. Chỉ định các cặp cắt phù hợp với độ hở đã được xác minh trước (0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft) và độ hoàn thiện bề mặt Ra ≤0,4μm. Điều này giúp giảm 60–70% bụi trong không khí so với các loại dao công nghiệp tiêu chuẩn.",
+            "Bụi sợi chủ yếu là do độ hở cắt quá mức (>0,10 mm trên khăn giấy) hoặc bề mặt lưỡi thô (Ra >0,6μm) làm rách các bó sợi thay vì cắt sạch. Chỉ định các cặp cắt phù hợp với độ hở đã được xác minh trước (0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft) và độ hoàn thiện bề mặt Ra ≤0,4μm. Điều này giúp giảm 60–70% bụi trong không khí so với các loại dao công nghiệp tiêu chuẩn.",
         },
         {
           question:
@@ -385,7 +385,7 @@ export const blades: Blade[] = [
           question:
             "Dao xén giấy nên được mài lại bao lâu một lần và có thể mài lại bao nhiêu lần?",
           answer:
-            "Dao xén giấy trên dây chuyền chuyển đổi mô (400–600 m/phút) thường yêu cầu mài lại sau mỗi 40–60 giờ hoạt động do tốc độ cắt cao và chất độn khoáng có tính mài mòn trong giấy lụa. Đối với chuyển đổi giấy và bìa kraft (200–300 m/phút), thời gian nghiền lại kéo dài đến 80–120 giờ. Dao M2 HSS và D2 ​​có thể được mài lại 4–6 lần trước khi OD giảm xuống dưới đường kính hoạt động tối thiểu. Chúng tôi cung cấp dịch vụ mài lại bao gồm xác minh lại độ cứng và kiểm tra kích thước CMM.",
+            "Dao xén giấy trên dây chuyền chuyển đổi khăn giấy (400–600 m/phút) thường yêu cầu mài lại sau mỗi 40–60 giờ hoạt động do tốc độ cắt cao và chất độn khoáng có tính mài mòn trong giấy lụa. Đối với chuyển đổi giấy và bìa kraft (200–300 m/phút), thời gian nghiền lại kéo dài đến 80–120 giờ. Dao M2 HSS và D2 ​​có thể được mài lại 4–6 lần trước khi OD giảm xuống dưới đường kính hoạt động tối thiểu. Chúng tôi cung cấp dịch vụ mài lại bao gồm xác minh lại độ cứng và kiểm tra kích thước CMM.",
         },
         {
           question:

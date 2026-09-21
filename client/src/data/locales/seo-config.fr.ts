@@ -220,9 +220,9 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "lames de broyeur de ferraille, lames pour le traitement des bobines, broyeur de ferraille, couteaux de broyeur pour ligne de refendage, lames de broyeur S7",
   },
   "rotary-slitter-knives-paper": {
-    title: "Couteaux coupe-papier | Tissu & Kraft | D2, M2 HSS | Sureay",
+    title: "Couteaux coupe-papier | Papier tissu & Kraft | D2, M2 HSS | Sureay",
     description:
-      "Couteaux de refendage par cisaillement et par écrasement pour le tissu, le kraft et le papier couché. D2, M2 HSS et 52100 à ±0,002mm d'épaisseur. Compatible avec Atlas, Kampf, Goebel IMS, Perini.",
+      "Couteaux de refendage par cisaillement et par écrasement pour le papier tissu, le kraft et le papier couché. D2, M2 HSS et 52100 à ±0,002mm d'épaisseur. Compatible avec Atlas, Kampf, Goebel IMS, Perini.",
     keywords:
       "lames de découpe de papier, couteaux de découpe de papier, couteaux de découpe de carton ondulé, lames de transformation de papier, découpe de papier kraft, lames de découpe de scie à bûches, paires de cisailles à papier, découpe sans poussière de fibres",
   },
