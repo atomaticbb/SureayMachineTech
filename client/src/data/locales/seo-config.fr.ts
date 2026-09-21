@@ -19,7 +19,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title:
       "Produits lames industrielles | Outils de coupe de précision | Sureay",
     description:
-      "Consultez notre gamme complète de lames de coupe industrielles : couteaux rotatifs de refente, lames de broyeur, couteaux de broyeur, lames de scie circulaire pour rondins pour tissus, et couteaux de cisaille à métaux. Métallurgie personnalisée, du D2 au carbure. Tolérances de l'ordre du micron.",
+      "Consultez notre gamme complète de lames de coupe industrielles : couteaux rotatifs de refente, lames de broyeur, couteaux de broyeur, lames de scie circulaire pour bûches de papier tissu, et couteaux de cisaille à métaux. Métallurgie personnalisée, du D2 au carbure. Tolérances de l'ordre du micron.",
     keywords:
       "catalogue de lames industrielles, outils de coupe, lames rotatives, couteaux de broyeur, lames de granulateur",
   },
@@ -63,11 +63,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   paperIndustry: {
     title:
-      "Lames pour la transformation du papier | Scies à grumes et couteaux de guillotine pour tissus | Sureay",
+      "Lames pour la transformation du papier | Scies à bûches et couteaux de guillotine pour papier tissus | Sureay",
     description:
-      "Lames de haute précision pour la transformation du papier de soie et l'impression commerciale : Ø610 lames de scie circulaire pour rondins avec polissage miroir, couteaux de coupe guillotine. Revêtement TiN disponible pour les environnements humides. Coupes ultra-propres, pas de production de poussière.",
+      "Lames de haute précision pour la transformation du papier de soie et l'impression commerciale : Ø610 lames de scie circulaire pour bûches avec polissage miroir, couteaux de coupe guillotine. Revêtement TiN disponible pour les environnements humides. Coupes ultra-propres, pas de production de poussière.",
     keywords:
-      "tissu lames de scie circulaire pour rondins, couteaux pour la coupe du papier, lames de guillotine, lames pour la transformation du papier et l'industrie de l'impression",
+      "tissu lames de scie circulaire pour bûches, couteaux pour la coupe du papier, lames de guillotine, lames pour la transformation du papier et l'industrie de l'impression",
   },
   "rotary-slitter-knives": {
     title: "Couteaux rotatifs pour films, rubans et emballages",
@@ -115,11 +115,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "batterie lames de broyeur, lames de recyclage de batteries au lithium, broyeur de batteries EV, traitement de batteries Li-ion, pré-broyage de batteries",
   },
   "tissue-log-saw-blades": {
-    title: "Lames de scie à bûches en tissu | D2 Ø610-1200mm | Sureay",
+    title: "Lames de scie à bûches de papier tissu | D2 Ø610-1200mm | Sureay",
     description:
-      "Tissu lames de scie circulaire pour rondins Ø610-1200mm, D2 HRC 58-60, poli miroir, ≤0.15mm faux-rond. Revêtement TiN. Convient à Perini, PCMC, Gambini. Devis rapide.",
+      "Papier tissu lames de scie circulaire pour bûches Ø610-1200mm, D2 HRC 58-60, poli miroir, ≤0.15mm faux-rond. Revêtement TiN. Convient à Perini, PCMC, Gambini. Devis rapide.",
     keywords:
-      "tissu lames de scie circulaire pour rondins, tissu lames de scie circulaire pour rondins, lames de scie circulaire pour rondins, lames de scie à papier, scies circulaires de conversion, lames de scie D2",
+      "tissu lames de scie circulaire pour bûches, tissu lames de scie circulaire pour bûches, lames de scie circulaire pour bûches, lames de scie à papier, scies circulaires de conversion, lames de scie D2",
   },
   "granulator-blades": {
     title: "Lames de broyeur de plastique et couteaux de broyeur | OEM",

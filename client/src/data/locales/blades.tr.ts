@@ -1192,7 +1192,7 @@ export const blades: Blade[] = [
     id: "tissue-log-saw-blades",
     name: "Kağıt Rulo Testere Bıçakları",
     fullName:
-      "Kağıt Mendil ve Havlu Üretimine Yönelik Üst Sınıf Dairesel Kütük Testere Bıçakları",
+      "Kağıt Mendil ve Havlu Üretimine Yönelik Üst Sınıf Dairesel Rulo Testere Bıçakları",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Kağıt Mendil Bıçakları",
@@ -1208,17 +1208,17 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Aynalı cilalı yüzey ve tahrik pimi delik düzenini gösteren doku kütük testere bıçağı görüntüsü",
+      "Aynalı cilalı yüzey ve tahrik pimi delik düzenini gösteren kağıt rulo testere bıçağı görüntüsü",
       "Sureay’de ahşap bir ambalaj sandığı içindeki bitmiş log testere bıçakları kağıt mendil yığını",
-      "Sevkiyat öncesinde kenar koruyucusu ile birlikte ahşap bir kasaya paketlenmiş doku kütük testere bıçağı",
+      "Sevkiyat öncesinde kenar koruyucusu ile birlikte ahşap bir kasaya paketlenmiş kağıt rulo testere bıçağı",
       "Ø610 mm D2 kağıt rulosu testere bıçağı, tahrik pimi delikleri bulunan ayna cilalı yüzey",
-      "Fabio Perini kütük testereleri için Ø68,26 mm çaplı delik ve tahrik pimi delik düzeni",
-      "Atölye aydınlatması altında ayna parlaklığında cilalanmış yüzeyi görülen doku kütük testere bıçağı",
+      "Fabio Perini rulo testereleri için Ø68,26 mm çaplı delik ve tahrik pimi delik düzeni",
+      "Atölye aydınlatması altında ayna parlaklığında cilalanmış yüzeyi görülen kağıt rulo testere bıçağı",
     ],
     description:
       "Kağıt mendil log testere bıçakları Ø610–Ø1200 mm — vakumla sertleştirilmiş D2/Cr12MoV (HRC 58–60), sallanmasız çapraz kesim için ≤0,15 mm yanal sapma değerine kadar mikro taşlanmış. Kağıt mendil, mutfak havlusu ve JRT hatlarında ezilmiş çekirdekleri ve kağıt tozunu ortadan kaldırır. Hat içi CBN bileme ile uyumludur. Fabio Perini, PCMC, Casmatic, Gambini ve Bretting için doğrudan takılabilen OEM uyumludur. Özel çaplar 10 iş günü içinde teslim edilir. Dünya çapında kağıt mendil işleme hatları için güvenilir log testere bıçakları.",
     fullDescription:
-      "Kağıt mendil kütüğünün enine kesimi, kağıt mendil işleme hattındaki en riskli kesme işlemidir. Bu aşamadaki bir boyut hatası — ezilmiş karton göbekler, aşırı toz oluşumu veya eğimli kesim yüzeyleri — anında paketleme istasyonlarına yayılır ve hat durmalarına ve tüketici kalitesinde reddedilmelere yol açar.\n\nSureay kağıt mendil log testere bıçakları bıçakları, birinci sınıf D2 (1.2379) ve Cr12MoV soğuk iş takım çeliği malzemelerinden üretilir. Bu devasa bıçaklar (Ø1200 mm'ye kadar) aşırı devirlerde döndüğü için, stabilite her şeyden önemlidir. Her bıçak, sevkiyat öncesinde kalibre edilmiş bir CMM üzerinde doğrulanmış sıkı boyutsal toleranslara göre vakumla sertleştirilir, gerilim dengelenir ve mikro taşlama işleminden geçirilir:\n\n- **Yanal salgı:** ≤0,15 mm\n- **Kenar sapması:** ≤0,10 mm\n- **Yüzey paralelliği:** 0,05 mm\n- **Eşmerkezlilik (dış çap – iç çap):** ≤0,30 mm\n- **Delik toleransı:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Sürekli Bileme Uyumluluğu\n\nStandart dairesel bıçaklar'den farklı olarak, doku kütük testereleri, senkronize CBN (Kübik Bor Nitrür) bileme taşları tarafından çalışma *sırasında* sürekli olarak bilinir. Sureay’in ısıl işlem modeli, HRC 58–60 sertlik aralığını hedefler. Bu özel sertlik aralığı, bıçağın CBN taşlarına yük bindirmeden veya taşları parlatmadan temiz bir şekilde bilenenmesini sağlar; böylece pahalı bileme taşlarınızı tüketmeden her döngüde jilet keskinliğinde bir kenar elde edersiniz.\n\n## Eğim Geometrisi ve Toz Azaltma\n\nKağıt mendil, sıkıştırma mukavemeti neredeyse sıfır olan, düşük yoğunluklu, geniş yüzey alanlı bir tabakadır. Çok dik bir eğim açısıyla kesilmesi sıkıştırmaya yol açar; bu da aşırı kağıt tozu oluşumuna (sprey yapıştırmalı havlu üretim hatlarında önemli bir yangın tehlikesi) ve rulonun yumuşaklığını azaltan kenar yoğunlaşmasına neden olur. Lifleri sadece kesme kuvveti ile ayıran sığ bir eğim açısı (15°–25°) kullanıyoruz. Ayna parlaklığında cilalanmış bıçak yüzeyi (Ra ≤0,2 μm) ile birleştiğinde, bu özellik birinci sınıf 2 katlı ve 3 katlı tuvalet kağıtlarında kusursuz kesimler sağlar.\n\n## OEM Platformuna Göre Delik Uyumluluğu\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (tüm seriler), PCMC Forte/Elite, Körber/MTC kütük testereleri.\n\n**Ø82,55 mm:** Casmatic (Kimberly-Clark lisanslı platformlar), İtalyan ve İspanyol üçüncü taraf OEM kütük testere sistemleri.\n\n**Ø60,00 mm:** Endüstriyel silme mendili, jumbo rulo (JRT) ve çekirdeksiz tuvalet kağıdı üretimi için geniş format kütük testereleri (dış çap 870–1000 mm).\n\nØ610 mm ile Ø1200 mm arası özel dış çaplar, standart 10 iş günü teslim süresi ile sipariş üzerine üretilir. İlk sipariş kalıplarında çizim incelemesi ve boyut onayı mevcuttur.\n\n## Gelişmiş Yüzey Kaplamaları\n\n**Sert Krom Kaplama:** Yüksek nemli kağıt fabrikası ortamlarında (≥%75 bağıl nem) korozyon direnci sağlar ve kağıt liflerinin yapışma katsayısını azaltarak bıçak bileme döngüleri arasındaki temiz çalışma aralığını uzatır.\n\n**Teflon (PTFE) Kaplama:** Yoğun mutfak havlusu ruloları arasında kayan, yüksek oranda yağlanmış bir yüzey oluşturur; bu sayede motorun amper çekişini önemli ölçüde azaltır ve kağıt kenarlarında yanık izlerini ortadan kaldırır. Üst sınıf 3 katlı mutfak havlusu hatları için en üst düzey özellik.\n\n**TiN PVD Kaplama:** Fiziksel buhar biriktirme yöntemiyle uygulanan titanyum nitrür (2–3 μm, HV 2300+) kaplaması, yüksek devirli çalışmalarda keskin kenarların hizmet aralığını uzatır. Toz kirliliği konusunda sıkı spesifikasyonlara sahip premium kağıt mendil markaları için önerilir.",
+      "Kağıt mendil kütüğünün enine kesimi, kağıt mendil işleme hattındaki en riskli kesme işlemidir. Bu aşamadaki bir boyut hatası — ezilmiş karton göbekler, aşırı toz oluşumu veya eğimli kesim yüzeyleri — anında paketleme istasyonlarına yayılır ve hat durmalarına ve tüketici kalitesinde reddedilmelere yol açar.\n\nSureay kağıt mendil log testere bıçakları bıçakları, birinci sınıf D2 (1.2379) ve Cr12MoV soğuk iş takım çeliği malzemelerinden üretilir. Bu devasa bıçaklar (Ø1200 mm'ye kadar) aşırı devirlerde döndüğü için, stabilite her şeyden önemlidir. Her bıçak, sevkiyat öncesinde kalibre edilmiş bir CMM üzerinde doğrulanmış sıkı boyutsal toleranslara göre vakumla sertleştirilir, gerilim dengelenir ve mikro taşlama işleminden geçirilir:\n\n- **Yanal salgı:** ≤0,15 mm\n- **Kenar sapması:** ≤0,10 mm\n- **Yüzey paralelliği:** 0,05 mm\n- **Eşmerkezlilik (dış çap – iç çap):** ≤0,30 mm\n- **Delik toleransı:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Sürekli Bileme Uyumluluğu\n\nStandart dairesel bıçaklar'den farklı olarak, kağıt rulo testereleri, senkronize CBN (Kübik Bor Nitrür) bileme taşları tarafından çalışma *sırasında* sürekli olarak bilinir. Sureay’in ısıl işlem modeli, HRC 58–60 sertlik aralığını hedefler. Bu özel sertlik aralığı, bıçağın CBN taşlarına yük bindirmeden veya taşları parlatmadan temiz bir şekilde bilenenmesini sağlar; böylece pahalı bileme taşlarınızı tüketmeden her döngüde jilet keskinliğinde bir kenar elde edersiniz.\n\n## Eğim Geometrisi ve Toz Azaltma\n\nKağıt mendil, sıkıştırma mukavemeti neredeyse sıfır olan, düşük yoğunluklu, geniş yüzey alanlı bir tabakadır. Çok dik bir eğim açısıyla kesilmesi sıkıştırmaya yol açar; bu da aşırı kağıt tozu oluşumuna (sprey yapıştırmalı havlu üretim hatlarında önemli bir yangın tehlikesi) ve rulonun yumuşaklığını azaltan kenar yoğunlaşmasına neden olur. Lifleri sadece kesme kuvveti ile ayıran sığ bir eğim açısı (15°–25°) kullanıyoruz. Ayna parlaklığında cilalanmış bıçak yüzeyi (Ra ≤0,2 μm) ile birleştiğinde, bu özellik birinci sınıf 2 katlı ve 3 katlı tuvalet kağıtlarında kusursuz kesimler sağlar.\n\n## OEM Platformuna Göre Delik Uyumluluğu\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (tüm seriler), PCMC Forte/Elite, Körber/MTC rulo testereleri.\n\n**Ø82,55 mm:** Casmatic (Kimberly-Clark lisanslı platformlar), İtalyan ve İspanyol üçüncü taraf OEM rulo testere sistemleri.\n\n**Ø60,00 mm:** Endüstriyel silme mendili, jumbo rulo (JRT) ve çekirdeksiz tuvalet kağıdı üretimi için geniş format rulo testereleri (dış çap 870–1000 mm).\n\nØ610 mm ile Ø1200 mm arası özel dış çaplar, standart 10 iş günü teslim süresi ile sipariş üzerine üretilir. İlk sipariş kalıplarında çizim incelemesi ve boyut onayı mevcuttur.\n\n## Gelişmiş Yüzey Kaplamaları\n\n**Sert Krom Kaplama:** Yüksek nemli kağıt fabrikası ortamlarında (≥%75 bağıl nem) korozyon direnci sağlar ve kağıt liflerinin yapışma katsayısını azaltarak bıçak bileme döngüleri arasındaki temiz çalışma aralığını uzatır.\n\n**Teflon (PTFE) Kaplama:** Yoğun mutfak havlusu ruloları arasında kayan, yüksek oranda yağlanmış bir yüzey oluşturur; bu sayede motorun amper çekişini önemli ölçüde azaltır ve kağıt kenarlarında yanık izlerini ortadan kaldırır. Üst sınıf 3 katlı mutfak havlusu hatları için en üst düzey özellik.\n\n**TiN PVD Kaplama:** Fiziksel buhar biriktirme yöntemiyle uygulanan titanyum nitrür (2–3 μm, HV 2300+) kaplaması, yüksek devirli çalışmalarda keskin kenarların hizmet aralığını uzatır. Toz kirliliği konusunda sıkı spesifikasyonlara sahip premium kağıt mendil markaları için önerilir.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1275,7 +1275,7 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Kağıt mendil üretim hattında kütük testere bıçağının kullanım ömrü, yalnızca sertliğe değil, çeliğin sürekli CBN honlama işlemi altında nasıl davrandığına bağlıdır. Aşağıdaki iki kalite sınıfı, teklif verdiğimiz hemen hemen tüm kağıt mendil ve havlu uygulamalarını kapsamaktadır.",
+        "Kağıt mendil üretim hattında rulo testere bıçağının kullanım ömrü, yalnızca sertliğe değil, çeliğin sürekli CBN honlama işlemi altında nasıl davrandığına bağlıdır. Aşağıdaki iki kalite sınıfı, teklif verdiğimiz hemen hemen tüm kağıt mendil ve havlu uygulamalarını kapsamaktadır.",
       rows: [
         {
           grade: "D2 / 1,2379",
@@ -1295,7 +1295,7 @@ export const blades: Blade[] = [
         },
       ],
       outro:
-        "Aşındırıcı dolgu maddesi içeren yüksek oranda geri dönüştürülmüş elyafın işlendiği yüksek hızlı hatlar için, bileme aralıkları arasında kesici kenar ömrünü en uzun süre koruyan ancak CBN taşının durumuna daha duyarlı olan M2 HSS'yi de öneriyoruz. Hattınızın hangi sınıfa ihtiyaç duyduğundan emin değilseniz, hammadde türünü (işlenmemiş veya geri dönüştürülmüş), kütük yoğunluğunu ve dakikada kaç kesim yaptığınızı bize bildirin. Sınıfı hatta uyarlarız, tersini yapmayız.",
+        "Aşındırıcı dolgu maddesi içeren yüksek oranda geri dönüştürülmüş elyafın işlendiği yüksek hızlı hatlar için, bileme aralıkları arasında kesici kenar ömrünü en uzun süre koruyan ancak CBN taşının durumuna daha duyarlı olan M2 HSS'yi de öneriyoruz. Hattınızın hangi sınıfa ihtiyaç duyduğundan emin değilseniz, hammadde türünü (işlenmemiş veya geri dönüştürülmüş), rulo yoğunluğunu ve dakikada kaç kesim yaptığınızı bize bildirin. Sınıfı hatta uyarlarız, tersini yapmayız.",
     },
     componentsIntro:
       "Kağıt mendil üretim hattında, rulo kesme işlemi en büyük risk barındıran tek kesme işlemidir. Bu aşamadaki boyut hataları — ezilmiş karton göbekler, aşırı toz oluşumu veya eğri kesim yüzeyleri — anında paketleme istasyonlarına yansır ve bu da üretim hattının durmasına ve tüketici tarafından reddedilen ürünlerin ortaya çıkmasına neden olur.",
@@ -1305,7 +1305,7 @@ export const blades: Blade[] = [
         tag: "HASSASİYET",
         title: "Sallanmasız Gerdirme",
         description:
-          "Tomruk testeresinin karton göbekleri neden eziyor? Neredeyse her zaman yanal sapmanın yaklaşık 0,20 mm’yi aşması ve bıçağın göbeği kesmek yerine ona vurmaya başlaması nedeniyledir. Yüksek devirde dönen 610 mm’lik bir bıçak, uygun şekilde gerilmezse eğrilir. Her kütük testere bıçağını CNC ile gerdirip mikro taşlama yaparak yanal salgıyı ≤0,15 mm'ye indirgiyoruz; böylece bıçağın titreşmeden ve kırılgan karton göbeği ezmeden mükemmel bir şekilde düz kesim yapmasını sağlıyoruz.",
+          "Rulo testeresinin karton göbekleri neden eziyor? Neredeyse her zaman yanal sapmanın yaklaşık 0,20 mm’yi aşması ve bıçağın göbeği kesmek yerine ona vurmaya başlaması nedeniyledir. Yüksek devirde dönen 610 mm’lik bir bıçak, uygun şekilde gerilmezse eğrilir. Her rulo testere bıçağını CNC ile gerdirip mikro taşlama yaparak yanal salgıyı ≤0,15 mm'ye indirgiyoruz; böylece bıçağın titreşmeden ve kırılgan karton göbeği ezmeden mükemmel bir şekilde düz kesim yapmasını sağlıyoruz.",
       },
       {
         id: "cbn-compatible",
@@ -1323,7 +1323,7 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Hedef Makine / Günlük Türü",
+      col0: "Hedef Makine / Rulo Tipi",
       col1: "Dış Çap (mm)",
       col2: "Delik Çapı / İç Çap (mm)",
       col3: "Kalınlık (mm)",
@@ -1377,7 +1377,7 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Neden kütük testere, tuvalet kağıdı rulolarının karton göbeklerini ezip parçalıyor?",
+            "Neden rulo testere, tuvalet kağıdı rulolarının karton göbeklerini ezip parçalıyor?",
           answer:
             "Çekirdek ezilmesi, öncelikle bıçağın aşırı sallanması (yan sapma) veya kesici kenarın körelmesinden kaynaklanır. Yan sapma 0,20 mm’yi aştığında, bıçak çekirdeği kesmek yerine fiziksel olarak ona çarpar. Bıçaklarımız gerilimle düzleştirilmiş olup, yanal sapma ≤0,15 mm olacak şekilde CMM ile doğrulanmıştır. Ayrıca, hat içi CBN bileme taşlarınızın doğru şekilde hizalandığından ve her döngüde bıçağı etkin bir şekilde bilediğinden emin olun.",
         },
@@ -1385,24 +1385,24 @@ export const blades: Blade[] = [
           question:
             "Kağıt mendillerin enine kesimi sırasında toz oluşumunu ve lif kopmasını nasıl en aza indirebilirim?",
           answer:
-            "Toz, yüksek sürtünmeli bir bıçak doku liflerini kesmek yerine yırtdığında oluşur. Düşük bir eğim açısı (15°–25°) ile ayna parlaklığında cilalanmış bir yüzeyi (Ra ≤0,2 μm) bir araya getiren bir tasarım geliştiriyoruz. Toz oluşumunu en aza indirmek için, sürtünmeyi önemli ölçüde azaltan ve bıçağın tomruk üzerinde liflerin yer değiştirmesini en aza indirerek kaymasını sağlayan Teflon (PTFE) kaplı bıçaklarımıza geçin.",
+            "Toz, yüksek sürtünmeli bir bıçak kağıt liflerini kesmek yerine yırtdığında oluşur. Düşük bir eğim açısı (15°–25°) ile ayna parlaklığında cilalanmış bir yüzeyi (Ra ≤0,2 μm) bir araya getiren bir tasarım geliştiriyoruz. Toz oluşumunu en aza indirmek için, sürtünmeyi önemli ölçüde azaltan ve bıçağın rulo üzerinde liflerin yer değiştirmesini en aza indirerek kaymasını sağlayan Teflon (PTFE) kaplı bıçaklarımıza geçin.",
         },
         {
           question:
-            "Fabio Perini, PCMC, Casmatic veya Gambini kütük testereleri için bıçak tedarik edebilir misiniz?",
+            "Fabio Perini, PCMC, Casmatic veya Gambini rulo testereleri için bıçak tedarik edebilir misiniz?",
           answer:
-            "Evet. Standart Ø68,26 mm (+0,05 mm) delik çapı, Fabio Perini ve PCMC Forte/Elite kütük testerelerine doğrudan uyar. Ø82,55 mm delik çapı ise Casmatic ve eşdeğer platformları kapsar. Gambini ve Bretting makineleri için, mevcut bıçağınızın ölçü geometrisine veya kendi çiziminize göre üretim yapıyoruz; böylece yedek parça, herhangi bir alet değişikliği gerekmeden yerine takılabilir. Bize makine modelini, aşınmış bir bıçağı veya boyutları belirtilmiş bir çizimi gönderin; fiyat teklifi vermeden önce uyumunu teyit edelim.",
+            "Evet. Standart Ø68,26 mm (+0,05 mm) delik çapı, Fabio Perini ve PCMC Forte/Elite rulo testerelerine doğrudan uyar. Ø82,55 mm delik çapı ise Casmatic ve eşdeğer platformları kapsar. Gambini ve Bretting makineleri için, mevcut bıçağınızın ölçü geometrisine veya kendi çiziminize göre üretim yapıyoruz; böylece yedek parça, herhangi bir alet değişikliği gerekmeden yerine takılabilir. Bize makine modelini, aşınmış bir bıçağı veya boyutları belirtilmiş bir çizimi gönderin; fiyat teklifi vermeden önce uyumunu teyit edelim.",
         },
         {
           question:
             "Bıçak, makinenin sürekli CBN bileme sistemi ile nasıl etkileşime girer?",
           answer:
-            "Tomruk testereleri, çalışma sırasında bıçağı sürekli olarak bilemek için senkronize CBN (Kübik Bor Nitrür) taşları kullanır. Bıçak malzemesi çok sert veya çok yumuşaksa, taşlarda birikinti oluşur veya taşlar camlaşır ve bu da taşların etkisiz kalmasına neden olur. HRC 58–60 sertlik seviyesine kadar ısıl işleme tabi tutulmuş D2 bıçaklarımız, CBN taşlarınızı tıkamadan mikro talaşları temiz bir şekilde atar.",
+            "Rulo testereleri, çalışma sırasında bıçağı sürekli olarak bilemek için senkronize CBN (Kübik Bor Nitrür) taşları kullanır. Bıçak malzemesi çok sert veya çok yumuşaksa, taşlarda birikinti oluşur veya taşlar camlaşır ve bu da taşların etkisiz kalmasına neden olur. HRC 58–60 sertlik seviyesine kadar ısıl işleme tabi tutulmuş D2 bıçaklarımız, CBN taşlarınızı tıkamadan mikro talaşları temiz bir şekilde atar.",
         },
         {
           question: "Üretebileceğiniz en uzun bıçak çapı nedir?",
           answer:
-            "Büyük formatlı endüstriyel mendil ve jumbo rulo (JRT) üretim hatları için Ø1200 mm’ye kadar log testere bıçakları doku üretiyoruz. Bu üretim için büyük formatlı vakumlu ısıl işlem fırınlarımız ve CNC taşlama ekipmanlarımız gereklidir. Standart teslim süresi, çizimin onaylanmasından itibaren 10 iş günüdür.",
+            "Büyük formatlı endüstriyel mendil ve jumbo rulo (JRT) üretim hatları için Ø1200 mm’ye kadar log testere bıçakları kağıt üretiyoruz. Bu üretim için büyük formatlı vakumlu ısıl işlem fırınlarımız ve CNC taşlama ekipmanlarımız gereklidir. Standart teslim süresi, çizimin onaylanmasından itibaren 10 iş günüdür.",
         },
       ],
       company: [
@@ -1427,9 +1427,9 @@ export const blades: Blade[] = [
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Dokumasız Kütük Testere Bıçakları",
+    name: "Dokumasız Rulo Testere Bıçakları",
     fullName:
-      "Dokumasız Kumaş ve Hijyen Ürünleri İşleme Sektörü için Korozyona Dayanıklı Kütük Testere Bıçakları",
+      "Dokumasız Kumaş ve Hijyen Ürünleri İşleme Sektörü için Korozyona Dayanıklı Rulo Testere Bıçakları",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Dokumasız Kumaş İşleme Bıçakları",
@@ -1442,7 +1442,7 @@ export const blades: Blade[] = [
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Dokumasız kumaş ve hijyen ürünleri üretim hatları için tasarlanmış kütük testere bıçakları — bebek mendilleri, ıslak mendiller, kadın hijyeni ürünleri ve yetişkinler için inkontinans ruloları. Korozyona dayanıklı TiN veya sert krom kaplamalı D2 takım çeliği, alkol bazlı çözeltilere, losyonlara ve yüzey aktif maddelere karşı dayanıklıdır. Spunbond, meltblown, SMS ve airlaid alt tabakalarda yıpranma yapmayan kesimler için ≤0,15 mm yanal sapma değerine kadar mikro taşlama işleminden geçirilmiştir. Fameccanica, GDM, Curt G. Joa ve Zuiko işleme hatlarıyla uyumludur. Özel çaplar 10 iş günü içinde temin edilebilir.",
+      "Dokumasız kumaş ve hijyen ürünleri üretim hatları için tasarlanmış rulo testere bıçakları — bebek mendilleri, ıslak mendiller, kadın hijyeni ürünleri ve yetişkinler için inkontinans ruloları. Korozyona dayanıklı TiN veya sert krom kaplamalı D2 takım çeliği, alkol bazlı çözeltilere, losyonlara ve yüzey aktif maddelere karşı dayanıklıdır. Spunbond, meltblown, SMS ve airlaid alt tabakalarda yıpranma yapmayan kesimler için ≤0,15 mm yanal sapma değerine kadar mikro taşlama işleminden geçirilmiştir. Fameccanica, GDM, Curt G. Joa ve Zuiko işleme hatlarıyla uyumludur. Özel çaplar 10 iş günü içinde temin edilebilir.",
     fullDescription:
       "Dokumasız hijyen ürün işleme hatları, kağıt mendil üretim süreçlerine kıyasla temelde farklı bir dizi bıçak gereksinimi ortaya koymaktadır. Kağıt rulo testereleri kağıt tozu ve göbek ezme sorunlarıyla başa çıkmak zorundayken, dokunmamış kumaş rulo testereleri iki farklı arıza türüyle karşı karşıyadır: temiz kesmeye dirençli sentetik alt tabakalardan kaynaklanan elyaf yıpranması ve yüksek nemde alkol, losyonlar, koruyucular (fenoksietanol) ve yüzey aktif maddeler kullanılan hatlardaki kimyasal ortamdan kaynaklanan hızlandırılmış korozyon.\n\nSureay dokunmamış log testere bıçakları bıçakları, D2 (1.2379) yüksek karbonlu, yüksek kromlu takım çeliğinden üretilir ve uygulamaya özel korozyona dayanıklı kaplamalarla sunulur. Her bıçak, sevk edilmeden önce vakumla sertleştirilir, gerilim dengeleme işleminden geçirilir ve CMM ile doğrulanır.\n\n## Dokusuz Kumaş Hatlarında Kağıt Mendil Bıçakları Neden Arıza Verir?\n\nSpunbond polipropilen, eriyik üflemeli ve SMS kompozit ağlar, selülozik kağıt mendillere kıyasla temiz bir şekilde kesilmesi açısından temelde daha zordur. Sentetik lifler elastiktir; keskinliğini kaybetmiş veya hafifçe sallanan bir bıçağın önünde temiz bir şekilde ayrılmak yerine sapma gösterirler ve bu da sonraki aşamalarda katlama ve paketleme hatalarına neden olan püsküleşmiş, ipliksi kesim kenarları oluşturur. Kağıt mendil için optimize edilmiş bir bıçak (daha sığ eğim, CBN uyumluluğu için daha yumuşak matris), kağıt mendilde elde edeceği çalışma süresinin çok küçük bir kısmında spunbond alt tabakalarında gözle görülür elyaf kopmalarına neden olur.\n\nKimyasal ortam sorunu daha da karmaşık hale getirir. Islak mendil üretim hatları, 2,0–3,5× (çözelti ağırlığı/alt tabaka ağırlığı) doygunluk oranlarında çalışır; bu da bıçağın emprenye kimyasallarına sürekli maruz kaldığı anlamına gelir: tipik olarak %80–95 arıtılmış su artı koruyucular, nemlendiriciler ve yüzey aktif maddeler. Yüzey işleme uygulanmamış standart D2 bıçaklarda, kesme kenarında birkaç hafta içinde mikro çukurlar oluşur; bu da kenar aşınmasını hızlandırır ve hijyen açısından kritik öneme sahip bir üründe partikül kontaminasyonu riskini artırır.\n\n## Hijyen Ortamları için Kaplama Seçenekleri\n\n**TiN PVD Kaplama (2–3 µm, HV 2300+):** Fiziksel buhar biriktirme yöntemiyle uygulanan titanyum nitrür, mükemmel yapışma özelliğine sahip kimyasal olarak inert bir bariyer sağlar. Alkol ve yüzey aktif maddelerin bıçak alt tabakasına girmesini engeller, kenar bakım aralıklarını uzatır ve emici çekirdek hatlarında bulunan SAP (süper emici polimer) parçacıklarının neden olduğu mikro aşınmaya dirençli bir sertlik tabakası ekler. Islak mendil ve yetişkin inkontinans ürünleri imalatı için önerilir.\n\n**Sert Krom Kaplama:** Elektrokaplama sert krom (20–30 µm), yüksek nemli ortamlarda (≥%75 bağıl nem) olağanüstü korozyon direnci sağlar ve sentetik elyaf tabakalarına karşı sürtünme katsayısını azaltır. Daha kalın tabaka ayrıca yüzeydeki mikro gözenekleri doldurarak, yıkama döngüleri sırasında temizlik maddesinin girişine karşı sızdırmazlık etkisi yaratır.\n\n**Kaplamasız D2 (standart):** Doygunluk kimyasallarının kullanılmadığı kuru dokunmamış kumaş üretim hatları — hava ile serme, termobond, spunlace — için uygundur. Sertlik HRC 58–60, CBN bileme ile uyumludur.\n\n## Sentetik Elyaf için Eğim Geometrisi\n\nDokumasız alt tabakalar, kağıt mendillere (15°–25°) kıyasla biraz daha dik bir birincil eğim açısı (25°–35°) gerektirir. Daha dik geometri, kesme kuvvetini kenar temas noktasında yoğunlaştırarak, yıpranmaya neden olan elastik sapma yerine temiz bir elyaf ayrımı sağlar. Yüksek kohezif mukavemete sahip losyon emdirilmiş ıslak mendil ruloları için, bileşik eğim (birincil + ikincil rahatlama) uzun çalışma döngüleri boyunca minimum kenar kıvrılmasıyla en temiz kesim yüzeyini sağlar.\n\n## Boyutsal Toleranslar\n\n- **Yanal sapma:** ≤0,15 mm\n- **Kenar sapma:** ≤0,10 mm\n- **Yüzey paralelliği:** 0,05 mm\n- **Eşmerkezlilik (dış çap – iç çap):** ≤0,30 mm\n- **Yüzey kalitesi:** Ayna cilalı (Ra ≤0,2 µm)\n\n## OEM Platform Uyumluluğu\n\nDokunmamış hijyen ürünleri işleme ruloları için kullanılan testereler, delik özellikleri ve çapları bakımından kağıt mendil hatlarından farklılık gösterir. Yaygın platformlar:\n\n**Fameccanica (İtalya):** Bebek bezi ve kadın hijyen ürünleri üretim hatları; bıçak çapları, ürün formatına ve rulo çapına bağlı olarak genellikle Ø400–Ø550 mm arasındadır.\n\n**GDM (İtalya):** Yüksek hızlı hijyen ürünleri üretim hatları; bıçak özellikleri müşteri çizimine göre belirlenir.\n\n**Curt G. Joa (ABD):** Kuzey Amerika yetişkin inkontinans ve kadın bakım ürünleri hatları; İngiliz ölçü birimlerinde delik özellikleri mevcuttur.\n\n**Zuiko (Japonya):** Bebek bezi üretim hatları; bıçak boyutları OEM çizimlerine göre belirlenir.\n\n**Çinli yerli OEM'ler (Zlink, Dachang, Quanzhou merkezli üreticiler):** Bıçak özellikleri, çizimlere göre veya numune tersine mühendislik yoluyla sağlanır.\n\nSipariş üzerine Ø350 mm ile Ø700 mm arası özel dış çaplar üretilir. Çizim incelemesi ve ilk ürün boyut onayı mevcuttur.",
     link: "/products/nonwoven-log-saw-blades",
@@ -1501,7 +1501,7 @@ export const blades: Blade[] = [
         tag: "HASSASİYET",
         title: "Yıpranmayan Kesimler İçin ≤0,15 mm Eğrilik",
         description:
-          "Dokumasız kütükler, kağıt mendil kütüklerine kıyasla daha yumuşak ve daha kolay sıkıştırılabilir. Bıçağın herhangi bir yanal sallanması, temiz bir kesme düzlemi yerine doğrudan sıkışmış ve pürüzlü bir kesim yüzeyine yol açar. Her bıçak, sevk edilmeden önce gerilim dengeleme işleminden geçirilir ve CMM ile ≤0,15 mm yanal salgı açısından doğrulanır; bu sayede bıçağın her vuruşta kütüğe tutarlı bir açıyla girmesi sağlanır.",
+          "Dokumasız rulolar, kağıt mendil rulolarına kıyasla daha yumuşak ve daha kolay sıkıştırılabilir. Bıçağın herhangi bir yanal sallanması, temiz bir kesme düzlemi yerine doğrudan sıkışmış ve pürüzlü bir kesim yüzeyine yol açar. Her bıçak, sevk edilmeden önce gerilim dengeleme işleminden geçirilir ve CMM ile ≤0,15 mm yanal salgı açısından doğrulanır; bu sayede bıçağın her vuruşta kütüğe tutarlı bir açıyla girmesi sağlanır.",
       },
     ],
     dimensionLabels: {
@@ -7090,7 +7090,7 @@ export const blades: Blade[] = [
           bestFor:
             "Genel kağıt, karton ve film — standart teknik özellikler ile aşınma ömrü ve yeniden öğütme kabiliyeti arasında en iyi genel denge",
           tradeoff:
-            "Ağır kaplamalı veya dolgulu kütüklerde karbür uçlu aletlere göre daha uzun ömürlüdür",
+            "Ağır kaplamalı veya dolgulu kağıtlarda karbür uçlu aletlere göre daha uzun ömürlüdür",
         },
         {
           grade: "9CrSi / 65Mn",

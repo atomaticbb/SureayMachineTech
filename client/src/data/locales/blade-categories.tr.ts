@@ -121,8 +121,8 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Kağıt Havlu ve Kütük Testere Bıçakları",
-    shortName: "Tomruk Testere Bıçakları",
+    title: "Kağıt Havlu ve Rulo Testere Bıçakları",
+    shortName: "Rulo Testere Bıçakları",
     tagline: "Sıfır toz. Çapak bırakmayan kağıt mendil ve peçete kesimi.",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:

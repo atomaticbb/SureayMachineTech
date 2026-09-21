@@ -115,11 +115,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "batería cuchillas trituradoras, cuchillas de reciclaje de baterías de litio, trituradora de baterías EV, procesamiento de baterías Li-ion, pretrituración de baterías",
   },
   "tissue-log-saw-blades": {
-    title: "Hojas de sierra para troncos | D2 Ø610-1200mm | Sureay",
+    title: "Hojas de sierra para troncos de papel tisú | D2 Ø610-1200mm | Sureay",
     description:
-      "Tejido sierras circulares para troncos Ø610-1200mm, D2 HRC 58-60, pulido espejo, desviación ≤0,15mm. Recubierto de TiN. Para Perini, PCMC, Gambini. Presupuesto rápido.",
+      "Papel tisú sierras circulares para troncos Ø610-1200mm, D2 HRC 58-60, pulido espejo, desviación ≤0,15mm. Recubierto de TiN. Para Perini, PCMC, Gambini. Presupuesto rápido.",
     keywords:
-      "tejido sierras circulares para troncos, tejido sierras circulares para troncos, sierras circulares para troncos, hojas de sierra para papel, conversión de sierras circulares, hojas de sierra D2",
+      "papel tisú sierras circulares para troncos, papel tisú sierras circulares para troncos, sierras circulares para troncos, hojas de sierra para papel, conversión de sierras circulares, hojas de sierra D2",
   },
   "granulator-blades": {
     title:

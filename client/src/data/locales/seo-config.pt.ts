@@ -68,7 +68,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     description:
       "Lâminas de alta precisão para a transformação de papel-toalha e impressão comercial: Ø610 lâminas de serra para bobinas com polimento espelhado, lâminas de corte tipo guilhotina. Revestimento TiN disponível para ambientes úmidos. Cortes ultralimpos, sem geração de poeira.",
     keywords:
-      "tecido lâminas de serra para bobinas, facas para corte de papel, facas de guilhotina, transformação de papel, lâminas para a indústria gráfica",
+      "papel tissue lâminas de serra para bobinas, facas para corte de papel, facas de guilhotina, transformação de papel, lâminas para a indústria gráfica",
   },
   "rotary-slitter-knives": {
     title: "Facas para corte de filmes e fitas para embalagens flexíveis",
@@ -118,11 +118,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "bateria facas para trituradores, lâminas para reciclagem de baterias de lítio, triturador de baterias de veículos elétricos, processamento de baterias de íon-lítio, pré-trituração de baterias",
   },
   "tissue-log-saw-blades": {
-    title: "Lâminas de serra para toras de papel | D2 Ø610–1200 mm | Sureay",
+    title: "Lâminas de serra para troncos de papel | D2 Ø610–1200 mm | Sureay",
     description:
-      "Tecido lâminas de serra para bobinas Ø610–1200 mm, D2 HRC 58–60, polimento espelhado, excentricidade ≤0,15 mm. Revestimento de TiN. Compatível com Perini, PCMC, Gambini. Orçamento rápido.",
+      "Papel tissue lâminas de serra para bobinas Ø610–1200 mm, D2 HRC 58–60, polimento espelhado, excentricidade ≤0,15 mm. Revestimento de TiN. Compatível com Perini, PCMC, Gambini. Orçamento rápido.",
     keywords:
-      "tecido lâminas de serra para bobinas, tecido lâminas de serra para bobinas, lâminas de serra para bobinas, lâminas de serra para papel, serras circulares para processamento, lâminas de serra D2",
+      "papel tissue lâminas de serra para bobinas, papel tissue lâminas de serra para bobinas, lâminas de serra para bobinas, lâminas de serra para papel, serras circulares para processamento, lâminas de serra D2",
   },
   "granulator-blades": {
     title:
@@ -230,7 +230,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     description:
       "Lâminas de corte por cisalhamento e esmagamento para papel-toalha, papel kraft e papel revestido. D2, M2 HSS e 52100 com espessura de ±0,002 mm. Compatíveis com Atlas, Kampf, Goebel IMS e Perini.",
     keywords:
-      "lâminas para cortadoras de papel-toalha, facas para cortadoras de papel, facas para cortadoras de papel ondulado, lâminas para processamento de papel-toalha, cortadora de papel kraft, lâminas para cortadoras de toras, pares de tesouras para papel, corte sem geração de pó de fibra",
+      "lâminas para cortadoras de papel-toalha, facas para cortadoras de papel, facas para cortadoras de papel ondulado, lâminas para processamento de papel-toalha, cortadora de papel kraft, lâminas para cortadoras de troncos, pares de tesouras para papel, corte sem geração de pó de fibra",
   },
   "guillotine-shear-blades": {
     title:

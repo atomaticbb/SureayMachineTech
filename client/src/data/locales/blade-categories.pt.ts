@@ -123,12 +123,12 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Lâminas de serra para papel-toalha e toras",
-    shortName: "Lâminas de serra para toras",
+    title: "Lâminas de serra para papel-toalha e troncos",
+    shortName: "Lâminas de serra para troncos",
     tagline: "Sem poeira. Corte de lenços de papel e guardanapos sem rebarbas.",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
-      "Lâmina circular lâminas de serra para bobinas para a conversão de tecidos, papel-toalha e guardanapos. Compatível com CBN, desvio controlado, revestimento antifricção para perfuração sem poeira.",
+      "Lâmina circular lâminas de serra para bobinas para a conversão de papel tissue, papel-toalha e guardanapos. Compatível com CBN, desvio controlado, revestimento antifricção para perfuração sem poeira.",
     routingCopy:
       "Existem duas famílias de lâminas para serras de rolos, diferenciadas de acordo com o que você está cortando. Os rolos de papel-toalha e lenços de papel nas máquinas Perini, PCMC, Casmatic, Gambini e Bretting utilizam as lâminas para papel-toalha com diâmetro de Ø610–1200 mm. Os rolos de não tecidos e toalhas umedecidas utilizam lâminas menores, com diâmetro de Ø350–700 mm e um chanfro diferente. Escolha a que for compatível com a sua linha de produção ou envie-nos o modelo da máquina, e nós indicaremos a opção correta.",
     oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],

@@ -1174,8 +1174,8 @@ export const blades: Blade[] = [
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Lưỡi cưa mô",
-    fullName: "Lưỡi cưa gỗ tròn cao cấp để chuyển đổi khăn giấy và khăn tắm",
+    name: "Lưỡi cưa cuộn khăn giấy",
+    fullName: "Lưỡi cưa cuộn cao cấp để chuyển đổi khăn giấy và khăn tắm",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Lưỡi giấy lụa",
@@ -1191,17 +1191,17 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Hình dựng lưỡi cưa tròn cho gỗ tròn từ khăn giấy với mặt được đánh bóng như gương và các lỗ chốt truyền động",
-      "Chồng lưỡi cưa tròn cho gỗ tròn từ khăn giấy đã hoàn thiện trong thùng gỗ tại Sureay",
-      "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy được đóng gói trong thùng gỗ với miếng bảo vệ cạnh trước khi vận chuyển",
-      "Lưỡi cưa tròn cho gỗ tròn từ khăn giấy Ø610mm D2, mặt được đánh bóng như gương với các lỗ chốt truyền động",
-      "Lỗ khoan Ø68,26mm và mẫu lỗ chốt truyền động cho máy cưa gỗ Fabio Perini",
-      "Mặt lưỡi cưa tròn cho gỗ tròn từ khăn giấy cho thấy lớp hoàn thiện đánh bóng như gương dưới ánh sáng xưởng",
+      "Hình dựng lưỡi cưa cuộn từ khăn giấy với mặt được đánh bóng như gương và các lỗ chốt truyền động",
+      "Chồng lưỡi cưa cuộn từ khăn giấy đã hoàn thiện trong thùng gỗ tại Sureay",
+      "Lưỡi cưa cuộn từ khăn giấy được đóng gói trong thùng gỗ với miếng bảo vệ cạnh trước khi vận chuyển",
+      "Lưỡi cưa cuộn từ khăn giấy Ø610mm D2, mặt được đánh bóng như gương với các lỗ chốt truyền động",
+      "Lỗ khoan Ø68,26mm và mẫu lỗ chốt truyền động cho máy cưa cuộn Fabio Perini",
+      "Mặt lưỡi cưa cuộn từ khăn giấy cho thấy lớp hoàn thiện đánh bóng như gương dưới ánh sáng xưởng",
     ],
     description:
-      "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–Ø1200mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
+      "Khăn giấy lưỡi cưa cuộn Ø610–Ø1200mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
     fullDescription:
-      "Cắt ngang mô là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi mô. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.\n\nKhăn giấy Sureay lưỡi cưa tròn cho gỗ tròn được sản xuất từ ​​D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội cao cấp. Bởi vì những lưỡi dao khổng lồ này (lên tới Ø1200mm) quay với tốc độ RPM cực cao nên độ ổn định là trên hết. Mỗi lưỡi dao đều được làm cứng bằng chân không, được cân bằng độ căng và được mài nhỏ đến dung sai kích thước nghiêm ngặt được xác minh trên CMM đã hiệu chuẩn trước khi gửi đi:\n\n- **Độ đảo bên:** ≤0,15mm\n- **Độ đảo cạnh:** ≤0,10mm\n- **Mặt song song:** 0,05mm\n- **Độ đồng tâm (OD đến lỗ khoan):** ≤0,30mm\n- **Dung sai lỗ khoan:** Ø68,26mm (+0,05/0,00mm)\n\n## Khả năng tương thích mài sắc liên tục\n\nKhông giống như dao tròn tiêu chuẩn, máy cưa gỗ được mài sắc liên tục *trong* khi vận hành bằng bánh mài CBN (Cubic Boron Nitride) đồng bộ. xử lý nhiệt của Sureay nhắm tới HRC58–60. Phạm vi độ cứng cụ thể này đảm bảo lưỡi dao mài sạch với đá CBN mà không cần tải hoặc tráng men, duy trì chu kỳ cạnh sắc như dao cạo sau chu kỳ mà không tiêu tốn bánh mài đắt tiền của bạn.\n\n## Hình học góc xiên & Giảm bụi\n\nMô là một mạng lưới có mật độ thấp, diện tích bề mặt cao với cường độ nén gần như bằng không. Cắt nó với góc xiên quá dốc sẽ tạo ra lực nén, dẫn đến có quá nhiều bụi giấy (nguy cơ cháy nổ lớn đối với các dòng khăn được dán bằng keo xịt) và độ đặc của cạnh làm giảm độ mềm của cuộn. Chúng tôi sử dụng góc vát nông (15°–25°) để tách các sợi bằng lực cắt thuần túy. Kết hợp với mặt lưỡi được đánh bóng như gương (Ra<0,2μm), điều này mang lại những đường cắt hoàn hảo trên khăn giấy tắm 2 lớp và 3 lớp cao cấp.\n\n## Khả năng tương thích lỗ khoan của nền tảng OEM\n\n**Ø68,26mm (+0,05mm):** Fabio Perini (tất cả các dòng), máy cưa gỗ PCMC Forte/Elite, Körber/MTC.\n\n**Ø82,55mm:** Casmatic (nền tảng được cấp phép của Kimberly-Clark), hệ thống cưa gỗ OEM của bên thứ ba của Ý và Tây Ban Nha.\n\n**Ø60,00mm:** Máy cưa gỗ khổ lớn dành cho khăn lau công nghiệp, cuộn jumbo (JRT) và sản xuất giấy tắm không lõi (OD 870–1000mm).\n\nOD tùy chỉnh từ Ø610mm đến Ø1200mm được sản xuất theo đơn đặt hàng với thời gian thực hiện tiêu chuẩn là 10 ngày làm việc. Việc xem xét bản vẽ và xác nhận kích thước có sẵn trên công cụ đặt hàng đầu tiên.\n\n## Lớp phủ bề mặt tiên tiến\n\n**Mạ Chrome cứng:** Cung cấp khả năng chống ăn mòn trong môi trường nhà máy giấy có độ ẩm cao (>75% RH) và giảm hệ số bám dính của sợi mô, kéo dài khoảng thời gian chạy sạch giữa các chu kỳ mài lưỡi.\n\n**Lớp phủ Teflon (PTFE):** Tạo ra bề mặt có độ bôi trơn cao lướt qua các cuộn khăn bếp dày đặc, giảm đáng kể lực hút của động cơ và loại bỏ vết cháy trên mép giấy. Thông số kỹ thuật hàng đầu của dòng khăn bếp 3 lớp cao cấp.\n\n**Lớp phủ TiN PVD:** Titan nitrit lắng đọng hơi vật lý (2–3μm, HV2300+) kéo dài thời gian bảo dưỡng sắc bén trong hoạt động chu kỳ cao. Được khuyên dùng cho các nhãn hiệu khăn giấy cao cấp có thông số kỹ thuật nghiêm ngặt về ô nhiễm bụi.",
+      "Cắt ngang khăn giấy là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi khăn giấy. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.\n\nKhăn giấy Sureay lưỡi cưa cuộn được sản xuất từ ​​D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội cao cấp. Bởi vì những lưỡi dao khổng lồ này (lên tới Ø1200mm) quay với tốc độ RPM cực cao nên độ ổn định là trên hết. Mỗi lưỡi dao đều được làm cứng bằng chân không, được cân bằng độ căng và được mài nhỏ đến dung sai kích thước nghiêm ngặt được xác minh trên CMM đã hiệu chuẩn trước khi gửi đi:\n\n- **Độ đảo bên:** ≤0,15mm\n- **Độ đảo cạnh:** ≤0,10mm\n- **Mặt song song:** 0,05mm\n- **Độ đồng tâm (OD đến lỗ khoan):** ≤0,30mm\n- **Dung sai lỗ khoan:** Ø68,26mm (+0,05/0,00mm)\n\n## Khả năng tương thích mài sắc liên tục\n\nKhông giống như dao tròn tiêu chuẩn, máy cưa cuộn được mài sắc liên tục *trong* khi vận hành bằng bánh mài CBN (Cubic Boron Nitride) đồng bộ. xử lý nhiệt của Sureay nhắm tới HRC58–60. Phạm vi độ cứng cụ thể này đảm bảo lưỡi dao mài sạch với đá CBN mà không cần tải hoặc tráng men, duy trì chu kỳ cạnh sắc như dao cạo sau chu kỳ mà không tiêu tốn bánh mài đắt tiền của bạn.\n\n## Hình học góc xiên & Giảm bụi\n\nMô là một mạng lưới có mật độ thấp, diện tích bề mặt cao với cường độ nén gần như bằng không. Cắt nó với góc xiên quá dốc sẽ tạo ra lực nén, dẫn đến có quá nhiều bụi giấy (nguy cơ cháy nổ lớn đối với các dòng khăn được dán bằng keo xịt) và độ đặc của cạnh làm giảm độ mềm của cuộn. Chúng tôi sử dụng góc vát nông (15°–25°) để tách các sợi bằng lực cắt thuần túy. Kết hợp với mặt lưỡi được đánh bóng như gương (Ra<0,2μm), điều này mang lại những đường cắt hoàn hảo trên khăn giấy tắm 2 lớp và 3 lớp cao cấp.\n\n## Khả năng tương thích lỗ khoan của nền tảng OEM\n\n**Ø68,26mm (+0,05mm):** Fabio Perini (tất cả các dòng), máy cưa cuộn PCMC Forte/Elite, Körber/MTC.\n\n**Ø82,55mm:** Casmatic (nền tảng được cấp phép của Kimberly-Clark), hệ thống cưa cuộn OEM của bên thứ ba của Ý và Tây Ban Nha.\n\n**Ø60,00mm:** Máy cưa cuộn khổ lớn dành cho khăn lau công nghiệp, cuộn jumbo (JRT) và sản xuất giấy tắm không lõi (OD 870–1000mm).\n\nOD tùy chỉnh từ Ø610mm đến Ø1200mm được sản xuất theo đơn đặt hàng với thời gian thực hiện tiêu chuẩn là 10 ngày làm việc. Việc xem xét bản vẽ và xác nhận kích thước có sẵn trên công cụ đặt hàng đầu tiên.\n\n## Lớp phủ bề mặt tiên tiến\n\n**Mạ Chrome cứng:** Cung cấp khả năng chống ăn mòn trong môi trường nhà máy giấy có độ ẩm cao (>75% RH) và giảm hệ số bám dính của sợi khăn giấy, kéo dài khoảng thời gian chạy sạch giữa các chu kỳ mài lưỡi.\n\n**Lớp phủ Teflon (PTFE):** Tạo ra bề mặt có độ bôi trơn cao lướt qua các cuộn khăn bếp dày đặc, giảm đáng kể lực hút của động cơ và loại bỏ vết cháy trên mép giấy. Thông số kỹ thuật hàng đầu của dòng khăn bếp 3 lớp cao cấp.\n\n**Lớp phủ TiN PVD:** Titan nitrit lắng đọng hơi vật lý (2–3μm, HV2300+) kéo dài thời gian bảo dưỡng sắc bén trong hoạt động chu kỳ cao. Được khuyên dùng cho các nhãn hiệu khăn giấy cao cấp có thông số kỹ thuật nghiêm ngặt về ô nhiễm bụi.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1258,7 +1258,7 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "Tuổi thọ của lưỡi cưa gỗ tròn trên dây chuyền khăn giấy phụ thuộc vào cách thép phản ứng dưới quá trình mài CBN liên tục, chứ không chỉ dựa vào độ cứng. Hai loại thép dưới đây bao gồm hầu hết các ứng dụng khăn giấy và khăn bếp mà chúng tôi báo giá.",
+        "Tuổi thọ của lưỡi cưa cuộn trên dây chuyền khăn giấy phụ thuộc vào cách thép phản ứng dưới quá trình mài CBN liên tục, chứ không chỉ dựa vào độ cứng. Hai loại thép dưới đây bao gồm hầu hết các ứng dụng khăn giấy và khăn bếp mà chúng tôi báo giá.",
       rows: [
         {
           grade: "D2 / 1.2379",
@@ -1278,17 +1278,17 @@ export const blades: Blade[] = [
         },
       ],
       outro:
-        "Đối với các dây chuyền tốc độ cao chạy sợi tái chế có tính mài mòn cao với chất độn mài mòn, chúng tôi cũng báo giá thép M2 HSS, loại thép giữ được cạnh sắc lâu nhất giữa các lần mài nhưng nhạy cảm hơn với tình trạng của bánh mài CBN. Nếu bạn không chắc dây chuyền của mình cần loại thép nào, hãy cho chúng tôi biết loại sợi (nguyên chất hay tái chế), mật độ gỗ tròn và số lần cắt mỗi phút bạn thực hiện. Chúng tôi chọn loại thép phù hợp với dây chuyền, chứ không phải ngược lại.",
+        "Đối với các dây chuyền tốc độ cao chạy sợi tái chế có tính mài mòn cao với chất độn mài mòn, chúng tôi cũng báo giá thép M2 HSS, loại thép giữ được cạnh sắc lâu nhất giữa các lần mài nhưng nhạy cảm hơn với tình trạng của bánh mài CBN. Nếu bạn không chắc dây chuyền của mình cần loại thép nào, hãy cho chúng tôi biết loại sợi (nguyên chất hay tái chế), mật độ cuộn và số lần cắt mỗi phút bạn thực hiện. Chúng tôi chọn loại thép phù hợp với dây chuyền, chứ không phải ngược lại.",
     },
     componentsIntro:
-      "Cắt ngang mô là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi mô. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.",
+      "Cắt ngang khăn giấy là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi khăn giấy. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.",
     components: [
       {
         id: "runout-control",
         tag: "CHÍNH XÁC",
         title: "Căng thẳng không lắc lư",
         description:
-          "Tại sao cưa gỗ lại nghiền nát lõi bìa cứng? Hầu như luôn là do độ đảo bên đã vượt quá khoảng 0,20mm, và lưỡi dao bắt đầu đập vào lõi thay vì cắt nó. Lưỡi dao 610mm quay với tốc độ RPM cao sẽ bị cong vênh nếu không được căng đúng cách. Chúng tôi gia công CNC và mài vi mô từng lưỡi cưa khúc gỗ đến độ lệch bên ≤0,15mm, đảm bảo lưỡi cưa cắt thẳng hoàn hảo mà không dao động và làm nát lõi bìa cứng mỏng manh.",
+          "Tại sao cưa cuộn lại nghiền nát lõi bìa cứng? Hầu như luôn là do độ đảo bên đã vượt quá khoảng 0,20mm, và lưỡi dao bắt đầu đập vào lõi thay vì cắt nó. Lưỡi dao 610mm quay với tốc độ RPM cao sẽ bị cong vênh nếu không được căng đúng cách. Chúng tôi gia công CNC và mài vi mô từng lưỡi cưa cuộn đến độ lệch bên ≤0,15mm, đảm bảo lưỡi cưa cắt thẳng hoàn hảo mà không dao động và làm nát lõi bìa cứng mỏng manh.",
       },
       {
         id: "cbn-compatible",
@@ -1306,12 +1306,12 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Máy mục tiêu / Loại nhật ký",
+      col0: "Máy mục tiêu / Loại cuộn",
       col1: "Đường kính ngoài (mm)",
       col2: "Lỗ khoan / ID (mm)",
       col3: "Độ dày (mm)",
       caption:
-        "* Kích thước tiêu chuẩn cho các OEM chuyển đổi mô lớn. Các lỗ chốt truyền động, rãnh then và kích thước lên tới Ø1200mm dành cho cuộn công nghiệp JRT được sản xuất theo thông số kỹ thuật chính xác.",
+        "* Kích thước tiêu chuẩn cho các OEM chuyển đổi khăn giấy lớn. Các lỗ chốt truyền động, rãnh then và kích thước lên tới Ø1200mm dành cho cuộn công nghiệp JRT được sản xuất theo thông số kỹ thuật chính xác.",
     },
     standardDimensions: [
       {
@@ -1360,33 +1360,33 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Tại sao cưa gỗ của tôi lại nghiền nát lõi bìa cứng của cuộn giấy vệ sinh?",
+            "Tại sao cưa cuộn của tôi lại nghiền nát lõi bìa cứng của cuộn giấy vệ sinh?",
           answer:
             "Nghiền lõi chủ yếu là do lưỡi dao bị lung lay quá mức (chảo ngang) hoặc lưỡi cắt bị cùn. Khi độ lệch bên vượt quá 0,20mm, lưỡi dao sẽ đập vào lõi thay vì cắt nó. Các lưỡi của chúng tôi có độ căng được cân bằng và được CMM xác minh là có độ đảo ngang ≤0,15mm. Đồng thời, hãy xác minh rằng đá mài CBN trong dây chuyền của bạn được căn chỉnh chính xác và tích cực mài lưỡi dao trong mỗi chu kỳ.",
         },
         {
           question:
-            "Làm cách nào để giảm thiểu bụi và rách xơ trong quá trình cắt ngang mô?",
+            "Làm cách nào để giảm thiểu bụi và rách xơ trong quá trình cắt ngang khăn giấy?",
           answer:
-            "Bụi được tạo ra khi lưỡi dao có độ ma sát cao làm rách các sợi mô thay vì cắt chúng. Chúng tôi thiết kế góc vát nông (15°–25°) kết hợp với bề mặt được đánh bóng như gương (Ra<0,2μm). Để giảm bụi tối đa, hãy nâng cấp lên các lưỡi được phủ Teflon (PTFE) của chúng tôi, giúp giảm ma sát đáng kể và cho phép lưỡi dao lướt qua khúc gỗ với sự dịch chuyển sợi tối thiểu.",
+            "Bụi được tạo ra khi lưỡi dao có độ ma sát cao làm rách các sợi khăn giấy thay vì cắt chúng. Chúng tôi thiết kế góc vát nông (15°–25°) kết hợp với bề mặt được đánh bóng như gương (Ra<0,2μm). Để giảm bụi tối đa, hãy nâng cấp lên các lưỡi được phủ Teflon (PTFE) của chúng tôi, giúp giảm ma sát đáng kể và cho phép lưỡi dao lướt qua cuộn với sự dịch chuyển sợi tối thiểu.",
         },
         {
           question:
-            "Bạn có thể cung cấp lưỡi cưa cho máy cưa gỗ Fabio Perini, PCMC, Casmatic hoặc Gambini không?",
+            "Bạn có thể cung cấp lưỡi cưa cho máy cưa cuộn Fabio Perini, PCMC, Casmatic hoặc Gambini không?",
           answer:
-            "Đúng. Lỗ khoan Ø68,26mm (+0,05mm) tiêu chuẩn phù hợp trực tiếp với máy cưa gỗ Fabio Perini và PCMC Forte/Elite. Lỗ khoan Ø82,55mm bao gồm Casmatic và các nền tảng tương đương. Đối với máy Gambini và Bretting, chúng tôi sản xuất theo hình học đo được của lưỡi dao hiện tại của bạn hoặc bản vẽ riêng của bạn, để phần thay thế lắp vừa mà không cần điều chỉnh lại máy. Hãy gửi cho chúng tôi model máy, một lưỡi dao đã mòn, hoặc một bản phác thảo có kích thước và chúng tôi sẽ xác nhận độ vừa vặn trước khi báo giá.",
+            "Đúng. Lỗ khoan Ø68,26mm (+0,05mm) tiêu chuẩn phù hợp trực tiếp với máy cưa cuộn Fabio Perini và PCMC Forte/Elite. Lỗ khoan Ø82,55mm bao gồm Casmatic và các nền tảng tương đương. Đối với máy Gambini và Bretting, chúng tôi sản xuất theo hình học đo được của lưỡi dao hiện tại của bạn hoặc bản vẽ riêng của bạn, để phần thay thế lắp vừa mà không cần điều chỉnh lại máy. Hãy gửi cho chúng tôi model máy, một lưỡi dao đã mòn, hoặc một bản phác thảo có kích thước và chúng tôi sẽ xác nhận độ vừa vặn trước khi báo giá.",
         },
         {
           question:
             "Lưỡi dao tương tác với hệ thống mài CBN liên tục của máy như thế nào?",
           answer:
-            "Máy cưa gỗ sử dụng đá CBN (Cubic Boron Nitride) đồng bộ để mài lưỡi liên tục trong quá trình vận hành. Nếu vật liệu làm lưỡi quá cứng hoặc quá mềm, nó sẽ tải hoặc tráng men đá, khiến chúng không còn hiệu quả. Lưỡi D2 của chúng tôi được xử lý nhiệt đến HRC58–60 loại bỏ các vi chip một cách sạch sẽ mà không làm tắc nghẽn bánh xe CBN của bạn.",
+            "Máy cưa cuộn sử dụng đá CBN (Cubic Boron Nitride) đồng bộ để mài lưỡi liên tục trong quá trình vận hành. Nếu vật liệu làm lưỡi quá cứng hoặc quá mềm, nó sẽ tải hoặc tráng men đá, khiến chúng không còn hiệu quả. Lưỡi D2 của chúng tôi được xử lý nhiệt đến HRC58–60 loại bỏ các vi chip một cách sạch sẽ mà không làm tắc nghẽn bánh xe CBN của bạn.",
         },
         {
           question:
             "Đường kính lưỡi dài nhất bạn có thể sản xuất là bao nhiêu?",
           answer:
-            "Chúng tôi sản xuất khăn giấy lưỡi cưa tròn cho gỗ tròn có đường kính lên đến Ø1200mm cho dây chuyền sản xuất khăn lau công nghiệp khổ lớn và cuộn jumbo (JRT). Những công việc này đòi hỏi phải có lò nung chân không xử lý nhiệt khổ lớn và thiết bị mài CNC của chúng tôi. Thời gian thực hiện tiêu chuẩn là 10 ngày làm việc kể từ khi ký kết bản vẽ.",
+            "Chúng tôi sản xuất khăn giấy lưỡi cưa cuộn có đường kính lên đến Ø1200mm cho dây chuyền sản xuất khăn lau công nghiệp khổ lớn và cuộn jumbo (JRT). Những công việc này đòi hỏi phải có lò nung chân không xử lý nhiệt khổ lớn và thiết bị mài CNC của chúng tôi. Thời gian thực hiện tiêu chuẩn là 10 ngày làm việc kể từ khi ký kết bản vẽ.",
         },
       ],
       company: [
@@ -1399,7 +1399,7 @@ export const blades: Blade[] = [
           question:
             "Bạn có cung cấp bánh mài CBN phù hợp cùng với lưỡi dao không?",
           answer:
-            "Đúng. Chúng tôi cung cấp các bộ đá mài CBN phù hợp được thiết kế cho lưỡi cưa tròn cho gỗ tròn của chúng tôi, đảm bảo góc mài chính xác, độ cứng liên kết và hạt mài mòn để có tuổi thọ lưỡi tối đa và độ mòn đá tối thiểu.",
+            "Đúng. Chúng tôi cung cấp các bộ đá mài CBN phù hợp được thiết kế cho lưỡi cưa cuộn của chúng tôi, đảm bảo góc mài chính xác, độ cứng liên kết và hạt mài mòn để có tuổi thọ lưỡi tối đa và độ mòn đá tối thiểu.",
         },
         {
           question: "Sureay có những chứng nhận chất lượng nào?",
@@ -1411,9 +1411,9 @@ export const blades: Blade[] = [
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Lưỡi cưa gỗ tròn cho vải không dệt",
+    name: "Lưỡi cưa cuộn cho vải không dệt",
     fullName:
-      "Lưỡi cưa gỗ tròn chống ăn mòn cho chuyển đổi vải không dệt và sản phẩm vệ sinh",
+      "Lưỡi cưa cuộn chống ăn mòn cho chuyển đổi vải không dệt và sản phẩm vệ sinh",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Lưỡi dao chuyển đổi vải không dệt",
@@ -1426,9 +1426,9 @@ export const blades: Blade[] = [
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Lưỡi cưa gỗ tròn được thiết kế cho các dây chuyền chuyển đổi vải không dệt và sản phẩm vệ sinh — khăn ướt cho bé, khăn ướt, sản phẩm vệ sinh phụ nữ và tã người lớn. Thép dụng cụ D2 với lớp phủ chống ăn mòn TiN hoặc mạ crôm cứng chịu được dung dịch gốc cồn, kem dưỡng và chất hoạt động bề mặt. Mài tinh đến độ đảo hướng tâm ≤0,15 mm cho vết cắt không xơ tước trên nền vải spunbond, meltblown, SMS và airlaid. Tương thích với các dây chuyền Fameccanica, GDM, Curt G. Joa và Zuiko. Đường kính tùy chỉnh trong 10 ngày làm việc.",
+      "Lưỡi cưa cuộn được thiết kế cho các dây chuyền chuyển đổi vải không dệt và sản phẩm vệ sinh — khăn ướt cho bé, khăn ướt, sản phẩm vệ sinh phụ nữ và tã người lớn. Thép dụng cụ D2 với lớp phủ chống ăn mòn TiN hoặc mạ crôm cứng chịu được dung dịch gốc cồn, kem dưỡng và chất hoạt động bề mặt. Mài tinh đến độ đảo hướng tâm ≤0,15 mm cho vết cắt không xơ tước trên nền vải spunbond, meltblown, SMS và airlaid. Tương thích với các dây chuyền Fameccanica, GDM, Curt G. Joa và Zuiko. Đường kính tùy chỉnh trong 10 ngày làm việc.",
     fullDescription:
-      "Các dây chuyền chuyển đổi vải không dệt cho sản phẩm vệ sinh đặt ra những yêu cầu về lưỡi dao hoàn toàn khác so với hoạt động sản xuất giấy mô (tissue). Trong khi lưỡi cưa gỗ tròn cho giấy mô phải xử lý bụi giấy và tình trạng dập lõi, lưỡi cưa cho vải không dệt lại gặp phải hai kiểu hỏng hóc khác biệt: xơ tước sợi do nền vải tổng hợp chống lại việc cắt gọn, và ăn mòn tăng nhanh do môi trường hóa chất trên các dây chuyền sử dụng cồn, kem dưỡng, chất bảo quản (phenoxyethanol) và chất hoạt động bề mặt trong điều kiện độ ẩm cao.\n\nLưỡi cưa gỗ tròn cho vải không dệt của Sureay được chế tạo từ thép dụng cụ D2 (1.2379) hàm lượng carbon cao, crôm cao, và có sẵn với các lớp phủ chống ăn mòn phù hợp theo từng ứng dụng. Mỗi lưỡi dao đều được tôi chân không, cân bằng ứng suất và kiểm tra bằng máy đo tọa độ (CMM) trước khi xuất xưởng.\n\n## Vì sao lưỡi dao cho giấy mô không phù hợp với dây chuyền vải không dệt\n\nCác loại màng composite polypropylene spunbond, meltblown và SMS về cơ bản khó cắt gọn hơn nhiều so với giấy mô xenlulo. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một lưỡi dao cùn hoặc hơi đảo thay vì tách gọn, tạo ra các cạnh cắt xơ tước, có sợi thừa gây ra lỗi gấp và đóng gói ở công đoạn sau. Một lưỡi dao được tối ưu cho giấy mô (góc vát nông hơn, nền mềm hơn để tương thích với đá mài CBN) sẽ gây ra hiện tượng bung sợi rõ rệt trên nền spunbond chỉ sau một phần nhỏ thời gian vận hành mà nó đạt được trên giấy mô.\n\nMôi trường hóa chất càng làm trầm trọng thêm vấn đề này. Các dây chuyền khăn ướt vận hành với tỷ lệ tẩm ướt 2,0–3,5× (khối lượng dung dịch so với khối lượng nền vải), nghĩa là lưỡi dao liên tục tiếp xúc với hóa chất tẩm: thường là 80–95% nước tinh khiết cộng với chất bảo quản, chất giữ ẩm và chất hoạt động bề mặt. Thép D2 tiêu chuẩn không qua xử lý bề mặt sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần, làm tăng tốc độ suy giảm lưỡi cắt và tăng nguy cơ nhiễm hạt trong sản phẩm vốn đòi hỏi độ vệ sinh nghiêm ngặt.\n\n## Các lựa chọn lớp phủ cho môi trường vệ sinh\n\n**Lớp phủ TiN PVD (2–3 µm, HV 2300+):** Titan nitride lắng đọng bằng phương pháp hơi vật lý tạo ra một lớp rào cản trơ về mặt hóa học với độ bám dính tuyệt vời. Ngăn cồn và chất hoạt động bề mặt xâm nhập vào nền lưỡi dao, kéo dài chu kỳ bảo dưỡng lưỡi cắt và bổ sung một lớp cứng chống mài mòn vi mô từ các hạt SAP (polymer siêu thấm) có trong dây chuyền lõi thấm hút. Khuyến nghị cho chuyển đổi khăn ướt và tã người lớn.\n\n**Mạ crôm cứng:** Lớp crôm cứng mạ điện (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao (≥75% RH) và giảm hệ số ma sát với màng sợi tổng hợp. Lớp dày hơn cũng lấp đầy các lỗ vi mô trên bề mặt, tạo hiệu ứng bịt kín chống lại sự xâm nhập của chất tẩy rửa trong các chu kỳ rửa.\n\n**D2 không phủ (tiêu chuẩn):** Phù hợp cho các dây chuyền chuyển đổi vải không dệt khô — airlaid, thermobond, spunlace — nơi không có hóa chất tẩm ướt. Độ cứng HRC 58–60, tương thích với mài đá CBN.\n\n## Hình học góc vát cho sợi tổng hợp\n\nNền vải không dệt yêu cầu góc vát chính hơi dốc hơn (25°–35°) so với giấy mô (15°–25°). Hình học dốc hơn tập trung lực cắt tại điểm tiếp xúc của lưỡi cắt, khởi động sự tách sợi gọn gàng thay vì độ lệch đàn hồi gây ra xơ tước. Đối với các cuộn khăn ướt tẩm kem dưỡng có độ liên kết cao, góc vát kép (vát chính + vát phụ) mang lại bề mặt cắt sạch nhất với độ cuộn mép tối thiểu trong các chu kỳ vận hành kéo dài.\n\n## Dung sai kích thước\n\n- **Độ đảo hướng tâm:** ≤0,15 mm\n- **Độ đảo mép cắt:** ≤0,10 mm\n- **Độ song song bề mặt:** 0,05 mm\n- **Độ đồng tâm (đường kính ngoài so với lỗ trục):** ≤0,30 mm\n- **Độ hoàn thiện bề mặt:** Đánh bóng gương (Ra ≤0,2 µm)\n\n## Khả năng tương thích với nền tảng OEM\n\nLưỡi cưa gỗ tròn cho chuyển đổi vải không dệt vệ sinh khác với dây chuyền giấy mô về thông số lỗ trục và đường kính. Các nền tảng phổ biến:\n\n**Fameccanica (Ý):** Dây chuyền chuyển đổi tã em bé và sản phẩm vệ sinh phụ nữ; đường kính lưỡi dao thường từ Ø400–Ø550 mm tùy theo định dạng sản phẩm và đường kính cuộn.\n\n**GDM (Ý):** Dây chuyền sản phẩm vệ sinh tốc độ cao; thông số lưỡi dao theo bản vẽ của khách hàng.\n\n**Curt G. Joa (Mỹ):** Dây chuyền tã người lớn và sản phẩm vệ sinh phụ nữ tại Bắc Mỹ; có sẵn thông số lỗ trục theo hệ inch.\n\n**Zuiko (Nhật Bản):** Chuyển đổi tã em bé; kích thước lưỡi dao theo bản vẽ OEM.\n\n**Các nhà sản xuất OEM nội địa Trung Quốc (Zlink, Dachang, các nhà chế tạo tại khu vực Tuyền Châu):** Thông số lưỡi dao được cung cấp theo bản vẽ hoặc dịch ngược từ mẫu.\n\nĐường kính ngoài tùy chỉnh từ Ø350 mm đến Ø700 mm được sản xuất theo đơn đặt hàng. Có sẵn dịch vụ xem xét bản vẽ và phê duyệt kích thước mẫu đầu tiên.",
+      "Các dây chuyền chuyển đổi vải không dệt cho sản phẩm vệ sinh đặt ra những yêu cầu về lưỡi dao hoàn toàn khác so với hoạt động sản xuất khăn giấy. Trong khi lưỡi cưa cuộn cho khăn giấy phải xử lý bụi giấy và tình trạng dập lõi, lưỡi cưa cho vải không dệt lại gặp phải hai kiểu hỏng hóc khác biệt: xơ tước sợi do nền vải tổng hợp chống lại việc cắt gọn, và ăn mòn tăng nhanh do môi trường hóa chất trên các dây chuyền sử dụng cồn, kem dưỡng, chất bảo quản (phenoxyethanol) và chất hoạt động bề mặt trong điều kiện độ ẩm cao.\n\nLưỡi cưa cuộn cho vải không dệt của Sureay được chế tạo từ thép dụng cụ D2 (1.2379) hàm lượng carbon cao, crôm cao, và có sẵn với các lớp phủ chống ăn mòn phù hợp theo từng ứng dụng. Mỗi lưỡi dao đều được tôi chân không, cân bằng ứng suất và kiểm tra bằng máy đo tọa độ (CMM) trước khi xuất xưởng.\n\n## Vì sao lưỡi dao cho khăn giấy không phù hợp với dây chuyền vải không dệt\n\nCác loại màng composite polypropylene spunbond, meltblown và SMS về cơ bản khó cắt gọn hơn nhiều so với khăn giấy xenlulo. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một lưỡi dao cùn hoặc hơi đảo thay vì tách gọn, tạo ra các cạnh cắt xơ tước, có sợi thừa gây ra lỗi gấp và đóng gói ở công đoạn sau. Một lưỡi dao được tối ưu cho khăn giấy (góc vát nông hơn, nền mềm hơn để tương thích với đá mài CBN) sẽ gây ra hiện tượng bung sợi rõ rệt trên nền spunbond chỉ sau một phần nhỏ thời gian vận hành mà nó đạt được trên khăn giấy.\n\nMôi trường hóa chất càng làm trầm trọng thêm vấn đề này. Các dây chuyền khăn ướt vận hành với tỷ lệ tẩm ướt 2,0–3,5× (khối lượng dung dịch so với khối lượng nền vải), nghĩa là lưỡi dao liên tục tiếp xúc với hóa chất tẩm: thường là 80–95% nước tinh khiết cộng với chất bảo quản, chất giữ ẩm và chất hoạt động bề mặt. Thép D2 tiêu chuẩn không qua xử lý bề mặt sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần, làm tăng tốc độ suy giảm lưỡi cắt và tăng nguy cơ nhiễm hạt trong sản phẩm vốn đòi hỏi độ vệ sinh nghiêm ngặt.\n\n## Các lựa chọn lớp phủ cho môi trường vệ sinh\n\n**Lớp phủ TiN PVD (2–3 µm, HV 2300+):** Titan nitride lắng đọng bằng phương pháp hơi vật lý tạo ra một lớp rào cản trơ về mặt hóa học với độ bám dính tuyệt vời. Ngăn cồn và chất hoạt động bề mặt xâm nhập vào nền lưỡi dao, kéo dài chu kỳ bảo dưỡng lưỡi cắt và bổ sung một lớp cứng chống mài mòn vi mô từ các hạt SAP (polymer siêu thấm) có trong dây chuyền lõi thấm hút. Khuyến nghị cho chuyển đổi khăn ướt và tã người lớn.\n\n**Mạ crôm cứng:** Lớp crôm cứng mạ điện (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao (≥75% RH) và giảm hệ số ma sát với màng sợi tổng hợp. Lớp dày hơn cũng lấp đầy các lỗ vi mô trên bề mặt, tạo hiệu ứng bịt kín chống lại sự xâm nhập của chất tẩy rửa trong các chu kỳ rửa.\n\n**D2 không phủ (tiêu chuẩn):** Phù hợp cho các dây chuyền chuyển đổi vải không dệt khô — airlaid, thermobond, spunlace — nơi không có hóa chất tẩm ướt. Độ cứng HRC 58–60, tương thích với mài đá CBN.\n\n## Hình học góc vát cho sợi tổng hợp\n\nNền vải không dệt yêu cầu góc vát chính hơi dốc hơn (25°–35°) so với khăn giấy (15°–25°). Hình học dốc hơn tập trung lực cắt tại điểm tiếp xúc của lưỡi cắt, khởi động sự tách sợi gọn gàng thay vì độ lệch đàn hồi gây ra xơ tước. Đối với các cuộn khăn ướt tẩm kem dưỡng có độ liên kết cao, góc vát kép (vát chính + vát phụ) mang lại bề mặt cắt sạch nhất với độ cuộn mép tối thiểu trong các chu kỳ vận hành kéo dài.\n\n## Dung sai kích thước\n\n- **Độ đảo hướng tâm:** ≤0,15 mm\n- **Độ đảo mép cắt:** ≤0,10 mm\n- **Độ song song bề mặt:** 0,05 mm\n- **Độ đồng tâm (đường kính ngoài so với lỗ trục):** ≤0,30 mm\n- **Độ hoàn thiện bề mặt:** Đánh bóng gương (Ra ≤0,2 µm)\n\n## Khả năng tương thích với nền tảng OEM\n\nLưỡi cưa cuộn cho chuyển đổi vải không dệt vệ sinh khác với dây chuyền khăn giấy về thông số lỗ trục và đường kính. Các nền tảng phổ biến:\n\n**Fameccanica (Ý):** Dây chuyền chuyển đổi tã em bé và sản phẩm vệ sinh phụ nữ; đường kính lưỡi dao thường từ Ø400–Ø550 mm tùy theo định dạng sản phẩm và đường kính cuộn.\n\n**GDM (Ý):** Dây chuyền sản phẩm vệ sinh tốc độ cao; thông số lưỡi dao theo bản vẽ của khách hàng.\n\n**Curt G. Joa (Mỹ):** Dây chuyền tã người lớn và sản phẩm vệ sinh phụ nữ tại Bắc Mỹ; có sẵn thông số lỗ trục theo hệ inch.\n\n**Zuiko (Nhật Bản):** Chuyển đổi tã em bé; kích thước lưỡi dao theo bản vẽ OEM.\n\n**Các nhà sản xuất OEM nội địa Trung Quốc (Zlink, Dachang, các nhà chế tạo tại khu vực Tuyền Châu):** Thông số lưỡi dao được cung cấp theo bản vẽ hoặc dịch ngược từ mẫu.\n\nĐường kính ngoài tùy chỉnh từ Ø350 mm đến Ø700 mm được sản xuất theo đơn đặt hàng. Có sẵn dịch vụ xem xét bản vẽ và phê duyệt kích thước mẫu đầu tiên.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1478,14 +1478,14 @@ export const blades: Blade[] = [
         tag: "HÌNH HỌC",
         title: "Biên dạng góc vát cho sợi tổng hợp",
         description:
-          "Các màng spunbond, meltblown và SMS bị lệch đàn hồi trước một góc vát theo tiêu chuẩn giấy mô, gây ra hiện tượng xơ tước sợi rõ rệt trên bề mặt cắt. Chúng tôi áp dụng góc vát chính dốc hơn (25°–35°) với vát phụ kép, giúp khởi động sự tách sợi gọn gàng ngay từ lần tiếp xúc đầu tiên — loại bỏ hiện tượng bung sợi và dồn nén mép cắt vốn gây ra phế phẩm trên dây chuyền đóng gói.",
+          "Các màng spunbond, meltblown và SMS bị lệch đàn hồi trước một góc vát theo tiêu chuẩn khăn giấy, gây ra hiện tượng xơ tước sợi rõ rệt trên bề mặt cắt. Chúng tôi áp dụng góc vát chính dốc hơn (25°–35°) với vát phụ kép, giúp khởi động sự tách sợi gọn gàng ngay từ lần tiếp xúc đầu tiên — loại bỏ hiện tượng bung sợi và dồn nén mép cắt vốn gây ra phế phẩm trên dây chuyền đóng gói.",
       },
       {
         id: "runout-hygiene",
         tag: "ĐỘ CHÍNH XÁC",
         title: "Độ đảo ≤0,15 mm cho vết cắt không xơ tước",
         description:
-          "Cuộn vải không dệt mềm hơn và dễ nén hơn so với cuộn giấy mô. Bất kỳ độ đảo hướng tâm nào của lưỡi dao đều trực tiếp dẫn đến bề mặt cắt bị nén, xù xì thay vì một mặt phẳng cắt gọn gàng. Mỗi lưỡi dao đều được cân bằng ứng suất và kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm trước khi xuất xưởng, đảm bảo lưỡi dao đi vào cuộn vải theo một góc ổn định ở mỗi nhát cắt.",
+          "Cuộn vải không dệt mềm hơn và dễ nén hơn so với cuộn khăn giấy. Bất kỳ độ đảo hướng tâm nào của lưỡi dao đều trực tiếp dẫn đến bề mặt cắt bị nén, xù xì thay vì một mặt phẳng cắt gọn gàng. Mỗi lưỡi dao đều được cân bằng ứng suất và kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm trước khi xuất xưởng, đảm bảo lưỡi dao đi vào cuộn vải theo một góc ổn định ở mỗi nhát cắt.",
       },
     ],
     dimensionLabels: {
@@ -1551,7 +1551,7 @@ export const blades: Blade[] = [
           question:
             "Lưỡi dao của chúng tôi để lại cạnh cắt xơ tước, có sợi thừa trên cuộn vải không dệt spunbond. Nguyên nhân là gì?",
           answer:
-            "Hiện tượng xơ tước trên nền PP spunbond hoặc SMS do hai yếu tố gây ra: hình học góc vát không đúng và/hoặc độ đảo hướng tâm quá mức. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một góc vát nông theo tiêu chuẩn giấy mô (15°–25°) thay vì cắt gọn. Nền vải không dệt cần góc vát chính dốc hơn (25°–35°) để tập trung lực cắt tại điểm tiếp xúc với sợi. Ngoài ra, độ đảo hướng tâm vượt quá 0,20 mm khiến lưỡi dao nén cuộn vải thay vì cắt, tạo ra các cạnh xù xì. Lưỡi dao cho vải không dệt của chúng tôi được kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm và được mài với biên dạng góc vát kép tối ưu cho sợi tổng hợp.",
+            "Hiện tượng xơ tước trên nền PP spunbond hoặc SMS do hai yếu tố gây ra: hình học góc vát không đúng và/hoặc độ đảo hướng tâm quá mức. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một góc vát nông theo tiêu chuẩn khăn giấy (15°–25°) thay vì cắt gọn. Nền vải không dệt cần góc vát chính dốc hơn (25°–35°) để tập trung lực cắt tại điểm tiếp xúc với sợi. Ngoài ra, độ đảo hướng tâm vượt quá 0,20 mm khiến lưỡi dao nén cuộn vải thay vì cắt, tạo ra các cạnh xù xì. Lưỡi dao cho vải không dệt của chúng tôi được kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm và được mài với biên dạng góc vát kép tối ưu cho sợi tổng hợp.",
         },
         {
           question:
@@ -1569,7 +1569,7 @@ export const blades: Blade[] = [
           question:
             "Những lưỡi dao này có hoạt động được với hệ thống mài CBN trực tuyến trên dây chuyền vải không dệt không?",
           answer:
-            "Hầu hết các lưỡi cưa gỗ tròn cho chuyển đổi vải không dệt vệ sinh không sử dụng hệ thống mài CBN trực tuyến liên tục (khác với dây chuyền giấy mô). Lưỡi dao thường được thay thế theo lịch trình định kỳ thay vì được mài liên tục. Tuy nhiên, nếu dây chuyền của quý công ty có sử dụng mài CBN trực tuyến, lưỡi dao D2 của chúng tôi được tôi cứng đến HRC 58–60 tương thích với các thông số đá mài CBN tiêu chuẩn. Lớp phủ TiN sẽ bị loại bỏ do tiếp xúc với CBN tại lưỡi cắt, đây là điều bình thường — lợi ích bảo vệ áp dụng cho thân lưỡi dao, không phải vùng lưỡi cắt đang được mài tích cực.",
+            "Hầu hết các lưỡi cưa cuộn cho chuyển đổi vải không dệt vệ sinh không sử dụng hệ thống mài CBN trực tuyến liên tục (khác với dây chuyền khăn giấy). Lưỡi dao thường được thay thế theo lịch trình định kỳ thay vì được mài liên tục. Tuy nhiên, nếu dây chuyền của quý công ty có sử dụng mài CBN trực tuyến, lưỡi dao D2 của chúng tôi được tôi cứng đến HRC 58–60 tương thích với các thông số đá mài CBN tiêu chuẩn. Lớp phủ TiN sẽ bị loại bỏ do tiếp xúc với CBN tại lưỡi cắt, đây là điều bình thường — lợi ích bảo vệ áp dụng cho thân lưỡi dao, không phải vùng lưỡi cắt đang được mài tích cực.",
         },
       ],
       company: [

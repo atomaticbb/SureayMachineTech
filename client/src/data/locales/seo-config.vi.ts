@@ -18,7 +18,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   products: {
     title: "Sản phẩm lưỡi công nghiệp | Dụng cụ cắt chính xác | Sureay",
     description:
-      "Duyệt qua toàn bộ dòng sản phẩm lưỡi cắt công nghiệp của chúng tôi: dao cắt rotary, dao máy cắt, dao tạo hạt, khăn giấy lưỡi cưa tròn cho gỗ tròn và dao cắt kim loại. Luyện kim tùy chỉnh từ D2 đến cacbua. Dung sai ở cấp độ micron.",
+      "Duyệt qua toàn bộ dòng sản phẩm lưỡi cắt công nghiệp của chúng tôi: dao cắt rotary, dao máy cắt, dao tạo hạt, lưỡi cưa cuộn khăn giấy và dao cắt kim loại. Luyện kim tùy chỉnh từ D2 đến cacbua. Dung sai ở cấp độ micron.",
     keywords:
       "danh mục lưỡi dao công nghiệp, dụng cụ cắt, lưỡi quay, dao cắt tài liệu, dao máy nghiền",
   },
@@ -60,11 +60,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "dao rạch kim loại, máy chém dao cắt thép, gia công cuộn, cắt thép, lưỡi chế tạo kim loại",
   },
   paperIndustry: {
-    title: "Lưỡi chuyển đổi giấy | Máy cưa khúc gỗ & Dao chém | Sureay",
+    title: "Lưỡi chuyển đổi giấy | Máy cưa cuộn & Dao chém | Sureay",
     description:
-      "Lưỡi dao có độ chính xác cao để chuyển đổi giấy lụa và in ấn thương mại: Ø610 lưỡi cưa tròn cho gỗ tròn với chất đánh bóng gương, dao cắt chém. Lớp phủ TiN có sẵn cho môi trường ẩm ướt. Vết cắt siêu sạch, không tạo bụi.",
+      "Lưỡi dao có độ chính xác cao để chuyển đổi giấy lụa và in ấn thương mại: Ø610 lưỡi cưa cuộn với chất đánh bóng gương, dao cắt chém. Lớp phủ TiN có sẵn cho môi trường ẩm ướt. Vết cắt siêu sạch, không tạo bụi.",
     keywords:
-      "khăn giấy lưỡi cưa tròn cho gỗ tròn, dao cắt giấy, dao cắt giấy, chuyển đổi giấy, lưỡi dao ngành in",
+      "khăn giấy lưỡi cưa cuộn, dao cắt giấy, dao cắt giấy, chuyển đổi giấy, lưỡi dao ngành in",
   },
   "rotary-slitter-knives": {
     title: "Dao xén quay cho màng, băng & bao bì",
@@ -109,11 +109,11 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "pin dao máy cắt, lưỡi tái chế pin lithium, máy hủy pin EV, xử lý pin Li-ion, băm nhỏ pin",
   },
   "tissue-log-saw-blades": {
-    title: "Lưỡi cưa gỗ mô | D2 Ø610–1200mm | Sureay",
+    title: "Lưỡi cưa cuộn khăn giấy | D2 Ø610–1200mm | Sureay",
     description:
-      "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–1200mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
+      "Khăn giấy lưỡi cưa cuộn Ø610–1200mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
     keywords:
-      "khăn giấy lưỡi cưa tròn cho gỗ tròn, khăn giấy lưỡi cưa tròn cho gỗ tròn, lưỡi cưa tròn cho gỗ tròn, lưỡi cưa giấy, cưa đĩa chuyển đổi, lưỡi cưa D2",
+      "khăn giấy lưỡi cưa cuộn, khăn giấy lưỡi cưa cuộn, lưỡi cưa cuộn, lưỡi cưa giấy, cưa đĩa chuyển đổi, lưỡi cưa D2",
   },
   "granulator-blades": {
     title: "Lưỡi tạo hạt nhựa & Dao nghiền | OEM",

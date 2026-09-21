@@ -1183,7 +1183,7 @@ export const blades: Blade[] = [
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Hojas de sierra para troncos",
+    name: "Hojas de sierra para troncos de papel tisú",
     fullName:
       "Hojas de sierra circulares de alta calidad para la fabricación de toallas y pañuelos de papel",
     category: "log_saw_blades",
@@ -1201,17 +1201,17 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Render de hoja de sierra circular para troncos de tejido con cara pulida a espejo y patrón de orificios para pasadores de arrastre",
-      "Pila de hojas de sierra circulares para troncos de tejido terminadas en un cajón de madera en Sureay",
-      "Hoja de sierra circular para troncos de tejido embalada en un cajón de madera con protector de borde antes del envío",
-      "Hoja de sierra circular para troncos de tejido Ø610 mm D2, cara pulida a espejo con orificios para pasadores de arrastre",
+      "Render de hoja de sierra circular para troncos de papel tisú con cara pulida a espejo y patrón de orificios para pasadores de arrastre",
+      "Pila de hojas de sierra circulares para troncos de papel tisú terminadas en un cajón de madera en Sureay",
+      "Hoja de sierra circular para troncos de papel tisú embalada en un cajón de madera con protector de borde antes del envío",
+      "Hoja de sierra circular para troncos de papel tisú Ø610 mm D2, cara pulida a espejo con orificios para pasadores de arrastre",
       "Diámetro interior de Ø68,26 mm y patrón de orificios para pasadores de arrastre para sierras de troncos Fabio Perini",
-      "Cara de la hoja de sierra circular para troncos de tejido mostrando el acabado pulido a espejo bajo luz de taller",
+      "Cara de la hoja de sierra circular para troncos de papel tisú mostrando el acabado pulido a espejo bajo luz de taller",
     ],
     description:
       "Tissue sierras circulares para troncos Ø610-Ø1200 mm - endurecido al vacío D2/Cr12MoV (HRC 58-60), microrectificado a ≤0,15 mm de excentricidad lateral para corte transversal sin oscilación. Elimina los núcleos aplastados y el polvo de papel en las líneas de pañuelos de papel, papel de cocina y JRT. Compatible con afilado CBN en línea. Compatible con Fabio Perini, PCMC, Casmatic, Gambini y Bretting. Diámetros personalizados en 10 días laborables.",
     fullDescription:
-      "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.\n\nLas cuchillas de tejido Sureay sierras circulares para troncos se fabrican con D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío de primera calidad. Dado que estas enormes cuchillas (de hasta Ø1200 mm) giran a revoluciones extremas, la estabilidad lo es todo. Todas las cuchillas se endurecen al vacío, se nivelan en tensión y se rectifican según estrictas tolerancias dimensionales verificadas en una MMC calibrada antes de su envío:\n\n- **Desviación lateral:** ≤0,15 mm\n- **Desviación del borde:** ≤0,10 mm\n- **Paralelismo de la cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Tolerancia del agujero:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidad con afilado continuo\n\nA diferencia de la cuchillas circulares estándar, las sierras de troncos de tejido se afilan continuamente *durante* el funcionamiento mediante muelas CBN (nitruro de boro cúbico) sincronizadas. El objetivo de la tratamiento térmico de Sureay es HRC 58-60. Este rango de dureza específico garantiza que la cuchilla se afile limpiamente contra las piedras CBN sin cargarlas ni satinarlas, manteniendo un filo afilado ciclo tras ciclo sin consumir sus costosas muelas de afilado.\n\n## Geometría del bisel y reducción del polvo\n\nEl tejido es un material de baja densidad y gran superficie con una resistencia a la compresión casi nula. Cortarlo con un bisel demasiado pronunciado crea compresión, lo que provoca un exceso de polvo de papel (un importante peligro de incendio en las líneas de toallas encoladas por pulverización) y una densificación de los bordes que reduce la suavidad del rollo. Utilizamos un ángulo de bisel poco pronunciado (15°-25°) que separa las fibras por cizallamiento puro. Combinado con una cara de la cuchilla pulida a espejo (Ra ≤0,2 μm), esto proporciona cortes impecables en papel de baño de 2 y 3 capas de primera calidad.\n\n## Compatibilidad de diámetro interior por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas las series), PCMC Forte/Elite, sierras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas con licencia de Kimberly-Clark), sistemas de sierras de troncos OEM de terceros italianos y españoles.\n\n**Ø60,00 mm:** Sierras de troncos de gran formato para la producción industrial de paños, rollos gigantes (JRT) y papel de baño sin núcleo (DE 870-1000 mm).\n\nOD personalizados de Ø610 mm a Ø1200 mm fabricados bajo pedido con un plazo de entrega estándar de 10 días laborables. Revisión de planos y aprobación dimensional disponibles en el primer pedido de herramientas.\n\n## Recubrimientos superficiales avanzados\n\n**Cromado duro:** Proporciona resistencia a la corrosión en entornos de fábricas de papel de alta humedad (≥75% HR) y reduce el coeficiente de adherencia de la fibra del tejido, ampliando el intervalo de funcionamiento limpio entre los ciclos de reavivado de la cuchilla.\n\n**Recubrimiento de Teflón (PTFE):** Crea una superficie altamente lubricada que se desliza a través de los densos troncos de papel de cocina, reduciendo drásticamente el consumo de amperios del motor y eliminando las marcas de quemaduras en los bordes del papel. La especificación superior para líneas de papel de cocina de 3 capas de primera calidad.\n\n**Recubrimiento TiN PVD:** El nitruro de titanio por deposición física de vapor (2-3 μm, HV 2300+) prolonga el intervalo de servicio de los bordes afilados en funcionamiento de ciclo alto. Recomendado para marcas de papel tisú premium con estrictas especificaciones de contaminación por polvo.",
+      "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.\n\nLas cuchillas de papel tisú Sureay sierras circulares para troncos se fabrican con D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío de primera calidad. Dado que estas enormes cuchillas (de hasta Ø1200 mm) giran a revoluciones extremas, la estabilidad lo es todo. Todas las cuchillas se endurecen al vacío, se nivelan en tensión y se rectifican según estrictas tolerancias dimensionales verificadas en una MMC calibrada antes de su envío:\n\n- **Desviación lateral:** ≤0,15 mm\n- **Desviación del borde:** ≤0,10 mm\n- **Paralelismo de la cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Tolerancia del agujero:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidad con afilado continuo\n\nA diferencia de la cuchillas circulares estándar, las sierras de troncos de papel tisú se afilan continuamente *durante* el funcionamiento mediante muelas CBN (nitruro de boro cúbico) sincronizadas. El objetivo de la tratamiento térmico de Sureay es HRC 58-60. Este rango de dureza específico garantiza que la cuchilla se afile limpiamente contra las piedras CBN sin cargarlas ni satinarlas, manteniendo un filo afilado ciclo tras ciclo sin consumir sus costosas muelas de afilado.\n\n## Geometría del bisel y reducción del polvo\n\nEl papel tisú es un material de baja densidad y gran superficie con una resistencia a la compresión casi nula. Cortarlo con un bisel demasiado pronunciado crea compresión, lo que provoca un exceso de polvo de papel (un importante peligro de incendio en las líneas de toallas encoladas por pulverización) y una densificación de los bordes que reduce la suavidad del rollo. Utilizamos un ángulo de bisel poco pronunciado (15°-25°) que separa las fibras por cizallamiento puro. Combinado con una cara de la cuchilla pulida a espejo (Ra ≤0,2 μm), esto proporciona cortes impecables en papel de baño de 2 y 3 capas de primera calidad.\n\n## Compatibilidad de diámetro interior por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas las series), PCMC Forte/Elite, sierras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas con licencia de Kimberly-Clark), sistemas de sierras de troncos OEM de terceros italianos y españoles.\n\n**Ø60,00 mm:** Sierras de troncos de gran formato para la producción industrial de paños, rollos gigantes (JRT) y papel de baño sin núcleo (DE 870-1000 mm).\n\nOD personalizados de Ø610 mm a Ø1200 mm fabricados bajo pedido con un plazo de entrega estándar de 10 días laborables. Revisión de planos y aprobación dimensional disponibles en el primer pedido de herramientas.\n\n## Recubrimientos superficiales avanzados\n\n**Cromado duro:** Proporciona resistencia a la corrosión en entornos de fábricas de papel de alta humedad (≥75% HR) y reduce el coeficiente de adherencia de la fibra del papel tisú, ampliando el intervalo de funcionamiento limpio entre los ciclos de reavivado de la cuchilla.\n\n**Recubrimiento de Teflón (PTFE):** Crea una superficie altamente lubricada que se desliza a través de los densos troncos de papel de cocina, reduciendo drásticamente el consumo de amperios del motor y eliminando las marcas de quemaduras en los bordes del papel. La especificación superior para líneas de papel de cocina de 3 capas de primera calidad.\n\n**Recubrimiento TiN PVD:** El nitruro de titanio por deposición física de vapor (2-3 μm, HV 2300+) prolonga el intervalo de servicio de los bordes afilados en funcionamiento de ciclo alto. Recomendado para marcas de papel tisú premium con estrictas especificaciones de contaminación por polvo.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1268,7 +1268,7 @@ export const blades: Blade[] = [
     ],
     steelGrades: {
       intro:
-        "La vida útil de una hoja de sierra para troncos en una línea de tejido depende de cómo se comporta el acero bajo el afilado continuo con CBN, no solo de la dureza. Los dos grados siguientes cubren prácticamente todas las aplicaciones de tejido y papel de cocina que cotizamos.",
+        "La vida útil de una hoja de sierra para troncos en una línea de papel tisú depende de cómo se comporta el acero bajo el afilado continuo con CBN, no solo de la dureza. Los dos grados siguientes cubren prácticamente todas las aplicaciones de papel tisú y papel de cocina que cotizamos.",
       rows: [
         {
           grade: "D2 / 1.2379",
@@ -1316,7 +1316,7 @@ export const blades: Blade[] = [
       },
     ],
     dimensionLabels: {
-      col0: "Máquina de destino / Tipo de registro",
+      col0: "Máquina de destino / Tipo de tronco",
       col1: "Diámetro exterior (mm)",
       col2: "Diámetro / ID (mm)",
       col3: "Espesor (mm)",
@@ -1376,9 +1376,9 @@ export const blades: Blade[] = [
         },
         {
           question:
-            "¿Cómo minimizar el polvo y el desgarro de fibras durante el corte transversal de tejidos?",
+            "¿Cómo minimizar el polvo y el desgarro de fibras durante el corte transversal de papel tisú?",
           answer:
-            "El polvo se genera cuando una cuchilla de alta fricción desgarra las fibras de tejido en lugar de cortarlas. Diseñamos un ángulo de bisel poco profundo (15°-25°) combinado con una cara pulida a espejo (Ra ≤0,2 μm). Para una reducción máxima del polvo, utilice nuestras cuchillas con revestimiento de teflón (PTFE), que reducen drásticamente la fricción y permiten que la cuchilla se deslice por el tronco con un desplazamiento mínimo de las fibras.",
+            "El polvo se genera cuando una cuchilla de alta fricción desgarra las fibras de papel tisú en lugar de cortarlas. Diseñamos un ángulo de bisel poco profundo (15°-25°) combinado con una cara pulida a espejo (Ra ≤0,2 μm). Para una reducción máxima del polvo, utilice nuestras cuchillas con revestimiento de teflón (PTFE), que reducen drásticamente la fricción y permiten que la cuchilla se deslice por el tronco con un desplazamiento mínimo de las fibras.",
         },
         {
           question:
@@ -1396,7 +1396,7 @@ export const blades: Blade[] = [
           question:
             "¿Cuál es el diámetro de hoja más largo que se puede fabricar?",
           answer:
-            "Fabricamos tejidos sierras circulares para troncos de hasta Ø1200 mm para líneas de producción de rascadores industriales de gran formato y rollos jumbo (JRT). Para ello se necesitan nuestros hornos de vacío de gran formato tratamiento térmico y equipos de rectificado CNC. El plazo de entrega estándar es de 10 días laborables a partir de la firma del plano.",
+            "Fabricamos papel tisú sierras circulares para troncos de hasta Ø1200 mm para líneas de producción de rascadores industriales de gran formato y rollos jumbo (JRT). Para ello se necesitan nuestros hornos de vacío de gran formato tratamiento térmico y equipos de rectificado CNC. El plazo de entrega estándar es de 10 días laborables a partir de la firma del plano.",
         },
       ],
       company: [

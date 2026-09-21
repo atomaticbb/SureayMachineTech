@@ -148,6 +148,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   es: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "hojas de sierra para troncos",
+    "Log Saw Blades": "Hojas de sierra para troncos",
+    "log saws": "sierras para troncos",
+    "Log Saws": "Sierras para troncos",
+    "log saw": "sierra para troncos",
+    "Log Saw": "Sierra para troncos",
+    "tissue log": "tronco de papel tisú",
+    "Tissue Log": "Tronco de papel tisú",
+    "tissue paper": "papel tisú",
     "Rotary slitter knives": "cuchillas rotativas de corte longitudinal",
     "rotary slitter knives": "cuchillas rotativas de corte longitudinal",
     "granulator blades": "cuchillas de granulador",
@@ -168,6 +180,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   fr: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "lames de scie à bûches",
+    "Log Saw Blades": "Lames de scie à bûches",
+    "log saws": "scies à bûches",
+    "Log Saws": "Scies à bûches",
+    "log saw": "scie à bûches",
+    "Log Saw": "Scie à bûches",
+    "tissue log": "bûche de papier tissu",
+    "Tissue Log": "Bûche de papier tissu",
+    "tissue paper": "papier tissu",
     "Rotary slitter knives": "couteaux rotatifs de refente",
     "rotary slitter knives": "couteaux rotatifs de refente",
     "granulator blades": "lames de granulateur",
@@ -188,6 +212,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   ru: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "пильные диски для логов",
+    "Log Saw Blades": "Пильные диски для логов",
+    "log saws": "логорезные машины",
+    "Log Saws": "Логорезные машины",
+    "log saw": "логорезная машина",
+    "Log Saw": "Логорезная машина",
+    "tissue log": "лог тиссью",
+    "Tissue Log": "Лог тиссью",
+    "tissue paper": "бумага тиссью",
     "Rotary slitter knives": "ротационные ножи для продольной резки",
     "rotary slitter knives": "ротационные ножи для продольной резки",
     "granulator blades": "ножи для гранулятора",
@@ -208,6 +244,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   vi: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "lưỡi cưa cuộn",
+    "Log Saw Blades": "Lưỡi cưa cuộn",
+    "log saws": "máy cưa cuộn",
+    "Log Saws": "Máy cưa cuộn",
+    "log saw": "cưa cuộn",
+    "Log Saw": "Cưa cuộn",
+    "tissue log": "cuộn khăn giấy",
+    "Tissue Log": "Cuộn khăn giấy",
+    "tissue paper": "khăn giấy",
     "Rotary slitter knives": "dao cắt rotary",
     "rotary slitter knives": "dao cắt rotary",
     "granulator blades": "dao máy nghiền",
@@ -228,6 +276,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   pt: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "lâminas de serra para troncos",
+    "Log Saw Blades": "Lâminas de serra para troncos",
+    "log saws": "serras para troncos",
+    "Log Saws": "Serras para troncos",
+    "log saw": "serra para troncos",
+    "Log Saw": "Serra para troncos",
+    "tissue log": "tronco de papel tissue",
+    "Tissue Log": "Tronco de papel tissue",
+    "tissue paper": "papel tissue",
     "Rotary slitter knives": "facas circulares de corte longitudinal",
     "rotary slitter knives": "facas circulares de corte longitudinal",
     "granulator blades": "facas para granuladores",
@@ -265,6 +325,18 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   tr: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
+    // never timber and never a logbook. Machine translation got this wrong
+    // on both log-saw products; pinned so a regeneration cannot undo it.
+    "log saw blades": "rulo testere bıçakları",
+    "Log Saw Blades": "Rulo testere bıçakları",
+    "log saws": "rulo testereleri",
+    "Log Saws": "Rulo testereleri",
+    "log saw": "rulo testere",
+    "Log Saw": "Rulo testere",
+    "tissue log": "kağıt rulosu",
+    "Tissue Log": "Kağıt rulosu",
+    "tissue paper": "kağıt mendil",
     "Rotary slitter knives": "döner dilimleme bıçakları",
     "rotary slitter knives": "döner dilimleme bıçakları",
     "granulator blades": "granülatör bıçakları",
