@@ -7,12 +7,11 @@ import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
-    title:
-      "Cuchillas industriales de precisión y soluciones de reciclaje | Cuchillas Sureay",
+    title: "Cuchillas industriales para reciclaje, metalurgia y transformación",
     description:
-      "Fabricante líder de cuchillas industriales de precisión para el reciclado de plásticos, el tratamiento de metales y la transformación de papel. Certificado ISO 9001. Rectificado CNC personalizado, tratamiento térmico y cuchillas de repuesto OEM de coincidencia exacta. Prestamos servicio a fabricantes de todo el mundo desde 2008.",
+      "Sureay fabrica cuchillas industriales, cuchillas para trituradoras, herramientas para cortadoras y cuchillas a medida para fabricantes de equipos originales (OEM) destinadas al reciclaje de plástico y a la transformación de metales y papel.",
     keywords:
-      "cuchillas industriales, cuchillas de granulador, cuchillas trituradoras, cuchillas cortadoras, herramientas de corte de precisión, cuchillas para reciclaje de plástico, cuchillas para procesamiento de metales",
+      "fabricante de cuchillas industriales, cuchillas a medida para maquinaria, cuchillas para trituradoras, cuchillas para granuladoras, cuchillas para cortadoras, cuchillas para cizallas, cuchillas a medida para fabricantes de equipos originales (OEM)",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {
@@ -259,7 +258,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   "bottom-grooved-anvil-knives": {
     title:
-      "Cuchillas de yunque con ranura inferior para corte longitudinal con cizalla",
+      "Cuchillas de yunque con ranura inferior | Yunques para tijeras (par) | Sureay",
   },
   "continuous-melt-filter-scraper-blades": {
     title: "Filtro de fusión Cuchillas rascadoras y placas filtrantes",

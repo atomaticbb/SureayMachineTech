@@ -146,6 +146,8 @@ export function applyTranslations<T>(
 
 export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   es: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "cuchillas rotativas de corte longitudinal",
     "rotary slitter knives": "cuchillas rotativas de corte longitudinal",
     "granulator blades": "cuchillas de granulador",
@@ -164,6 +166,8 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "CMM inspection": "inspección CMM",
   },
   fr: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "couteaux rotatifs de refente",
     "rotary slitter knives": "couteaux rotatifs de refente",
     "granulator blades": "lames de granulateur",
@@ -182,6 +186,8 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "CMM inspection": "contrôle CMM",
   },
   ru: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "ротационные ножи для продольной резки",
     "rotary slitter knives": "ротационные ножи для продольной резки",
     "granulator blades": "ножи для гранулятора",
@@ -200,6 +206,8 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "CMM inspection": "контроль на КИМ",
   },
   vi: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "dao cắt rotary",
     "rotary slitter knives": "dao cắt rotary",
     "granulator blades": "dao máy nghiền",
@@ -218,6 +226,8 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "CMM inspection": "kiểm tra CMM",
   },
   pt: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "facas circulares de corte longitudinal",
     "rotary slitter knives": "facas circulares de corte longitudinal",
     "granulator blades": "facas para granuladores",
@@ -235,7 +245,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "vacuum heat treatment": "tratamento térmico a vácuo",
     "CMM inspection": "inspeção CMM",
   },
+  ar: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
+  },
   tr: {
+    "Sureay Machinery": "Sureay Machinery",
+    Sureay: "Sureay",
     "Rotary slitter knives": "döner dilimleme bıçakları",
     "rotary slitter knives": "döner dilimleme bıçakları",
     "granulator blades": "granülatör bıçakları",

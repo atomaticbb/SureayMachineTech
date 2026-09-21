@@ -7,12 +7,11 @@ import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
-    title:
-      "Lâminas Industriais de Precisão e Soluções para Reciclagem | Sureay Machinery",
+    title: "Lâminas industriais para reciclagem, metalurgia e transformação",
     description:
-      "Fabricante líder de lâminas industriais de precisão para reciclagem de plástico, processamento de metais e transformação de papel. Certificado pela ISO 9001. Retificação CNC personalizada, tratamento térmico e lâminas de reposição OEM com correspondência exata. Atendendo fabricantes em todo o mundo desde 2008.",
+      "A Sureay fabrica lâminas industriais, facas para trituradores, ferramentas para cortadoras e facas personalizadas para máquinas OEM destinadas à reciclagem de plástico e à transformação de metal e papel.",
     keywords:
-      "lâminas industriais, facas para granuladores, facas para trituradores, facas para cortadoras, ferramentas de corte de precisão, lâminas para reciclagem de plástico, facas para usinagem de metais",
+      "fabricante de lâminas industriais, facas para máquinas sob medida, lâminas para trituradores, facas para granuladores, lâminas para cortadoras, lâminas para tesouras, lâminas sob medida para OEM",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {

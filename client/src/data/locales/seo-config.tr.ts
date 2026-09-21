@@ -7,12 +7,11 @@ import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
-    title:
-      "Hassas Endüstriyel Bıçaklar ve Geri Dönüşüm Çözümleri | Sureay Machinery",
+    title: "Geri Dönüşüm, Metal ve İşleme Sektörleri için Endüstriyel Bıçaklar",
     description:
-      "Plastik geri dönüşümü, metal işleme ve kağıt işleme sektörleri için hassas endüstriyel bıçakların önde gelen üreticisi. ISO 9001 sertifikalı. Özel CNC taşlama, ısıl işlem ve orijinal parçalarla tam uyumlu OEM yedek bıçaklar. 2008 yılından bu yana dünya çapındaki üreticilere hizmet vermektedir.",
+      "Sureay, plastik geri dönüşümü, metal ve kağıt işleme sektörleri için endüstriyel bıçaklar, parçalayıcı bıçakları, kesme aletleri ve özel OEM makine bıçakları üretmektedir.",
     keywords:
-      "endüstriyel bıçaklar, granülatör bıçakları, parçalayıcı bıçakları, dilimleme bıçakları, hassas kesme aletleri, plastik geri dönüşüm bıçakları, metal işleme bıçakları",
+      "endüstriyel bıçak üreticisi, özel makine bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kesme bıçakları, makas bıçakları, OEM özel bıçaklar",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {

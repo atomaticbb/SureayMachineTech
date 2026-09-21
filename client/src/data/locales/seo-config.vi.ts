@@ -8,15 +8,15 @@ import type { PageSEO } from "../../utils/seo-config";
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
     title:
-      "Lưỡi công nghiệp chính xác & Giải pháp tái chế | Lưỡi dao chắc chắn",
+      "Lưỡi dao công nghiệp dùng trong tái chế, gia công kim loại và chế biến",
     description:
-      "Nhà sản xuất hàng đầu về lưỡi công nghiệp chính xác để tái chế nhựa, gia công kim loại và chuyển đổi giấy. Chứng nhận ISO 9001. Mài CNC tùy chỉnh, xử lý nhiệt và các lưỡi thay thế OEM phù hợp chính xác. Phục vụ các nhà sản xuất toàn cầu từ năm 2008.",
+      "Sureay sản xuất lưỡi dao công nghiệp, dao băm, bộ dụng cụ cắt dọc và các loại dao máy OEM theo yêu cầu dành cho ngành tái chế nhựa, gia công kim loại và giấy.",
     keywords:
-      "lưỡi công nghiệp, dao máy nghiền, dao máy cắt, dao xén, dụng cụ cắt chính xác, lưỡi tái chế nhựa, dao gia công kim loại",
+      "nhà sản xuất lưỡi dao công nghiệp, lưỡi dao máy theo yêu cầu, lưỡi dao máy nghiền, lưỡi dao máy nghiền hạt, lưỡi dao máy cắt dọc, lưỡi dao cắt, lưỡi dao OEM theo yêu cầu",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {
-    title: "Sản phẩm lưỡi công nghiệp | Dụng cụ cắt chính xác | Chắc chắn rồi",
+    title: "Sản phẩm lưỡi công nghiệp | Dụng cụ cắt chính xác | Sureay",
     description:
       "Duyệt qua toàn bộ dòng sản phẩm lưỡi cắt công nghiệp của chúng tôi: dao cắt rotary, dao máy cắt, dao tạo hạt, khăn giấy lưỡi cưa tròn cho gỗ tròn và dao cắt kim loại. Luyện kim tùy chỉnh từ D2 đến cacbua. Dung sai ở cấp độ micron.",
     keywords:
@@ -46,21 +46,21 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "công nghệ lưỡi cắt, tin tức sản xuất, hướng dẫn kỹ thuật, hiểu biết sâu sắc về cắt công nghiệp",
   },
   plasticIndustry: {
-    title: "Lưỡi tái chế nhựa | Dao tạo hạt & Máy hủy tài liệu | Chắc chắn rồi",
+    title: "Lưỡi tái chế nhựa | Dao tạo hạt & Máy hủy tài liệu | Sureay",
     description:
       "Lưỡi dao chuyên dụng cho hoạt động tái chế nhựa: trục đơn & trục kép dao máy cắt, dao tạo hạt để xử lý PET/PVC/PP. Thép D2/DC53 được xử lý đông lạnh sâu. Giảm thời gian ngừng hoạt động và cải thiện chất lượng xay lại.",
     keywords:
       "lưỡi tái chế nhựa, dao tạo hạt, dao máy cắt, tái chế PET, gia công PVC",
   },
   metalIndustry: {
-    title: "Lưỡi gia công kim loại | Dao Rạch & Cắt | Chắc chắn rồi",
+    title: "Lưỡi gia công kim loại | Dao Rạch & Cắt | Sureay",
     description:
       "Giải pháp cắt kim loại chính xác: dao cắt rotary để gia công cuộn, chém dao cắt thép để chế tạo thép. Kỹ thuật dung sai vi mô (± 0,001mm). Hệ thống dụng cụ hoàn chỉnh với miếng đệm và vòng cao su.",
     keywords:
       "dao rạch kim loại, máy chém dao cắt thép, gia công cuộn, cắt thép, lưỡi chế tạo kim loại",
   },
   paperIndustry: {
-    title: "Lưỡi chuyển đổi giấy | Máy cưa khúc gỗ & Dao chém | Chắc chắn rồi",
+    title: "Lưỡi chuyển đổi giấy | Máy cưa khúc gỗ & Dao chém | Sureay",
     description:
       "Lưỡi dao có độ chính xác cao để chuyển đổi giấy lụa và in ấn thương mại: Ø610 lưỡi cưa tròn cho gỗ tròn với chất đánh bóng gương, dao cắt chém. Lớp phủ TiN có sẵn cho môi trường ẩm ướt. Vết cắt siêu sạch, không tạo bụi.",
     keywords:
@@ -81,8 +81,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "dao xẻ hợp kim cứng, lưỡi dao carbide vonfram, dao xẻ carbide, lưỡi xẻ hợp kim cứng, dao cắt hợp kim cứng, dao xẻ YG6, lưỡi carbide YG8, carbide K10, hợp kim cứng hạt siêu mịn",
   },
   "metal-foil-strip-slitter-knives": {
-    title:
-      "Dao xẻ lá nhôm & kim loại | Thép ASP23/ASP52 PM, ±0,001mm | Chắc chắn rồi",
+    title: "Dao xẻ lá nhôm & kim loại | Thép ASP23/ASP52 PM, ±0,001mm | Sureay",
     description:
       "Thép công cụ ASP23/ASP52 PM & dao xẻ hợp kim cacbua vonfram dành cho các trung tâm dịch vụ kim loại. Dung sai độ dày ± 0,001mm, Ra được tráng gương 0,02μm đối với việc rạch nhóm không có gờ trên lá nhôm, dải đồng, thép không gỉ và thép silicon. Bán buôn trực tiếp tại nhà máy - MOQ thấp, yêu cầu thông số kỹ thuật.",
     keywords:
@@ -110,7 +109,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "pin dao máy cắt, lưỡi tái chế pin lithium, máy hủy pin EV, xử lý pin Li-ion, băm nhỏ pin",
   },
   "tissue-log-saw-blades": {
-    title: "Lưỡi cưa gỗ mô | D2 Ø610–1200mm | Chắc chắn rồi",
+    title: "Lưỡi cưa gỗ mô | D2 Ø610–1200mm | Sureay",
     description:
       "Khăn giấy lưỡi cưa tròn cho gỗ tròn Ø610–1200mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
     keywords:
@@ -124,7 +123,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "nhà cung cấp nhựa dao máy nghiền, dao máy nghiền, dao máy nghiền, dao nghiền nhựa, dao tạo hạt, lưỡi stato rôto, lưỡi tái chế PET",
   },
   "tire-shredder-blades": {
-    title: "Lưỡi máy hủy lốp | Máy cắt quay 3 móng cho TDF | Chắc chắn rồi",
+    title: "Lưỡi máy hủy lốp | Máy cắt quay 3 móng cho TDF | Sureay",
     description:
       "Máy quay 3 càng cao cấp dao cắt thép dùng để băm lốp sơ cấp và sản xuất TDF. Các loại thép Cru-Wear (PGK) và thép A8 cải tiến. Dung sai độ dày ± 0,05mm. OEM phù hợp với Barclay, CM, SSI, Untha, Granutech-Saturn. Cắt nhỏ toàn bộ lốp và OTR.",
     keywords:
@@ -137,7 +136,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords: "lưỡi cắt giấy, dao cắt giấy, lưỡi in, dao chém giấy",
   },
   "three-knife-trimmer-blades": {
-    title: "Lưỡi tông đơ & Dao dự phòng cho Đầu Combi | Chắc chắn rồi",
+    title: "Lưỡi tông đơ & Dao dự phòng cho Đầu Combi | Sureay",
     description:
       "Lưỡi tông đơ ba dao HSS & TC, dao dự phòng cho đầu lược. OEM phù hợp với Müller Martini, Heidelberg, Kolbus. Có sẵn bộ mặt trước + mặt bên.",
     keywords:
@@ -146,7 +145,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Mảnh dao rôto trục đơn | Dao cắt vương miện | Chắc chắn rồi",
+    title: "Mảnh dao rôto trục đơn | Dao cắt vương miện | Sureay",
     description:
       "Rôto máy hủy tài liệu một trục có tác động cao giúp giảm kích thước mạnh mẽ. Cấu hình lõm, vương miện và rãnh chữ V. 4 lưỡi cắt có thể sử dụng được cho mỗi hạt dao. Điều trị đông lạnh sâu. Dành cho nhựa cồng kềnh, thùng chứa có thành dày và MSW.",
     keywords:
@@ -216,14 +215,14 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "lưỡi xén giấy, dao xén giấy, dao xén sóng, lưỡi chuyển đổi mô, máy xén giấy kraft, lưỡi xẻng cưa gỗ, cặp cắt giấy, rạch không bụi",
   },
   "guillotine-shear-blades": {
-    title: "Lưỡi cắt chém | D2 & 6CrW2Si cho máy cắt thủy lực | Chắc chắn rồi",
+    title: "Lưỡi cắt chém | D2 & 6CrW2Si cho máy cắt thủy lực | Sureay",
     description:
       "Máy chém D2 (Cr12MoV), 6CrW2Si & 9CrSi dao cắt thép được nối đất đến độ song song toàn chiều dài ±0,05 mm. Bộ trên và dưới cho máy có kích thước lên tới 16mm × 4000mm. Tương thích OEM với TRUMPF, AMADA, LVD, Durma & Bystronic.",
     keywords:
       "máy chém dao cắt thép, thủy lực dao cắt thép, D2 dao cắt thép, dao cắt 6CrW2Si, tấm kim loại dao cắt thép, lưỡi thay thế AMADA, dao cắt TRUMPF",
   },
   "wood-chipper-blades": {
-    title: "Lưỡi Chipper Gỗ | Dao Chipper Trống & Đĩa D2 & TCT | Chắc chắn rồi",
+    title: "Lưỡi Chipper Gỗ | Dao Chipper Trống & Đĩa D2 & TCT | Sureay",
     description:
       "Dao băm trống và đĩa D2, Cr12MoV & TCT, HRC 57–62, dung sai độ dày ±0,05mm. OEM phù hợp cho Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz. 8–12 chu kỳ xay lại.",
     keywords:
@@ -231,7 +230,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   "wood-chipper-anvils": {
     title:
-      "Đe băm gỗ & dao phản công | D2 · A8 Đã sửa đổi | Bộ phù hợp | Chắc chắn rồi",
+      "Đe băm gỗ & dao phản công | D2 · A8 Đã sửa đổi | Bộ phù hợp | Sureay",
     description:
       "Đe băm gỗ được mài chính xác (dao phản công/dao giường) bằng thép biến tính D2, Cr12MoV và A8. HRC 54–60 được làm cứng hoàn toàn. Độ song song ± 0,05 mm. OEM phù hợp cho Bandit, Vermeer, Morbark, Timberwolf & Schliesing. Bộ lưỡi dao + đe phù hợp có sẵn.",
     keywords:
@@ -239,14 +238,14 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   "special-shaped-blades": {
     title:
-      "Lưỡi dao có hình dạng đặc biệt tùy chỉnh | Mọi hồ sơ, mọi hợp kim | Chắc chắn rồi",
+      "Lưỡi dao có hình dạng đặc biệt tùy chỉnh | Mọi hồ sơ, mọi hợp kim | Sureay",
     description:
       "Lưỡi công nghiệp có hình dạng đặc biệt và có cấu hình tùy chỉnh được sản xuất từ ​​bản vẽ DXF/DWG/STEP hoặc mẫu vật lý. D2, H13, PM-HSS & cacbua. Dung sai đến ± 0,02mm. Bất kỳ ngành nào, bất kỳ hình học nào.",
     keywords:
       "lưỡi tùy chỉnh, dao có hình dạng đặc biệt, lưỡi định hình tùy chỉnh, lưỡi tùy chỉnh OEM, dao công nghiệp đặt riêng, sản xuất lưỡi DXF",
   },
   "bottom-grooved-anvil-knives": {
-    title: "Dao đe có rãnh đáy để rạch cắt",
+    title: "Dao đe có rãnh ở đáy | Bộ đe cắt | Sureay",
   },
   "continuous-melt-filter-scraper-blades": {
     title: "Lưỡi cạo và tấm lọc lọc nóng chảy",

@@ -2,6 +2,9 @@ import { Suspense } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
+import { useLang } from "@/contexts/LangContext";
+import { getSEO } from "@/data/locales";
+import { SEO_CONFIG as EN_SEO } from "@/utils/seo-config";
 import HomeHero from "@/components/home/HomeHero";
 import AuthorityCarousel from "@/components/home/AuthorityCarousel";
 import TabEcosystem from "@/components/home/TabEcosystem";
@@ -84,13 +87,21 @@ const ITEM_LIST_LD = JSON.stringify({
 });
 
 export default function Home() {
+  const lang = useLang();
+  // Was hardcoded English, so every /{lang}/ homepage shipped the English
+  // title and description — eight URLs sharing one snippet.
+  // getSEO already falls back to English when a key is missing; the second
+  // fallback is only here because every PageSEO field is optional.
+  const pageSeo = getSEO("home", lang);
+  const enHome = EN_SEO.home;
+
   return (
     <>
       <SEO
-        title="Industrial Blades for Recycling, Metal & Converting"
-        description="Sureay manufactures industrial blades, shredder knives, slitter tooling & custom OEM machine knives for plastic recycling, metal & paper converting."
+        title={pageSeo.title || enHome.title || ""}
+        description={pageSeo.description || enHome.description || ""}
         canonicalUrl="/"
-        keywords="industrial blades manufacturer, custom machine knives, shredder blades, granulator knives, slitter blades, shear blades, OEM custom blades"
+        keywords={pageSeo.keywords || enHome.keywords}
         preloadImage="/images/hero/homehero.webp"
       />
       {/* Rendered outside <Helmet> to avoid React 19 script-hoisting interference */}

@@ -8,11 +8,11 @@ import type { PageSEO } from "../../utils/seo-config";
 export const SEO_CONFIG: Record<string, PageSEO> = {
   home: {
     title:
-      "Lames industrielles de précision et solutions de recyclage | Lames Sureay",
+      "Lames industrielles pour le recyclage, la métallurgie et la transformation",
     description:
-      "Fabricant leader de lames industrielles de précision pour le recyclage du plastique, le traitement des métaux et la transformation du papier. Certifié ISO 9001. Affûtage CNC sur mesure, traitement thermique, et lames de remplacement OEM parfaitement adaptées. Au service des fabricants mondiaux depuis 2008.",
+      "Sureay fabrique des lames industrielles, des couteaux pour broyeurs, des outils de découpe et des lames sur mesure pour machines OEM destinées au recyclage du plastique ainsi qu’à la transformation du métal et du papier.",
     keywords:
-      "lames industrielles, lames de granulateur, lames de broyeur, couteaux de coupe, outils de coupe de précision, lames pour le recyclage des plastiques, couteaux pour le traitement des métaux",
+      "fabricant de lames industrielles, couteaux sur mesure pour machines, lames de broyeurs, couteaux de granulateurs, lames de découpeuses, lames de cisailles, lames sur mesure pour équipementiers (OEM)",
     ogImage: "/images/hero/homehero.webp",
   },
   products: {
@@ -260,7 +260,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   "bottom-grooved-anvil-knives": {
     title:
-      "Couteaux à enclume à rainure inférieure pour la refente par cisaillement",
+      "Couteaux à enclume rainurés dans leur partie inférieure | Paires d'enclumes de cisailles | Sureay",
   },
   "continuous-melt-filter-scraper-blades": {
     title: "Lames de raclage et plaques filtrantes pour filtres à fusion",

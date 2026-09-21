@@ -14,13 +14,17 @@ export interface PageSEO {
 // ── Core Pages ────────────────────────────────────────────────────────────
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
+  // These values were previously hardcoded in Home.tsx, which meant all seven
+  // localized homepages served the English title and description. Home.tsx now
+  // reads this entry via getSEO(), so the copy below is the single source and
+  // the locale files carry its translations. Kept byte-identical to what was
+  // already live in English so the homepage's search snippet does not change.
   home: {
-    title:
-      "Precision Industrial Blades & Recycling Solutions | Sureay Machinery",
+    title: "Industrial Blades for Recycling, Metal & Converting",
     description:
-      "Leading manufacturer of precision industrial blades for plastic recycling, metal processing, and paper converting. ISO 9001 certified. Custom CNC grinding, heat treatment, and exact-match OEM replacement blades. Serving global manufacturers since 2008.",
+      "Sureay manufactures industrial blades, shredder knives, slitter tooling & custom OEM machine knives for plastic recycling, metal & paper converting.",
     keywords:
-      "industrial blades, granulator blades, shredder blades, slitter knives, precision cutting tools, plastic recycling blades, metal processing knives",
+      "industrial blades manufacturer, custom machine knives, shredder blades, granulator knives, slitter blades, shear blades, OEM custom blades",
     ogImage: "/images/hero/homehero.webp",
   },
 
