@@ -310,7 +310,15 @@ function Router() {
           </Switch>
         </LocalePreloader>
       </Suspense>
-      <GlobalMobileCTA />
+      {/* Its own preloader, not the page one: the bar reads globalCta.* from the
+          locale dictionary, so it has to wait for the chunk the same way pages
+          do. Kept outside the page <Suspense> so route changes don't flash it
+          away. preloadLocale memoises, so this shares the page's fetch. */}
+      <Suspense fallback={null}>
+        <LocalePreloader>
+          <GlobalMobileCTA />
+        </LocalePreloader>
+      </Suspense>
     </>
   );
 }

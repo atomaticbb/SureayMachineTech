@@ -204,7 +204,10 @@ export default function ProductDetail() {
       </main>
 
       <FloatingContactButtons
-        whatsappPrefillText={`Hi, I'm interested in your ${blade.name}. Please send me more information.`}
+        whatsappPrefillText={t("productDetail.whatsappPrefill").replace(
+          "{{name}}",
+          blade.name
+        )}
         rfqAnchorId="rfq"
       />
       <Footer />

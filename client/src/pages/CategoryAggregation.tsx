@@ -67,7 +67,10 @@ export default function CategoryAggregation() {
   const oemMachinesFiltered = meta.oemExcludeList
     ? oemMachines.filter(m => !meta.oemExcludeList!.includes(m))
     : oemMachines;
-  const whatsappPrefillText = `Hi, I'm interested in your ${meta.shortName.toLowerCase()}. My machine model is: `;
+  const whatsappPrefillText = t("categoryPage.whatsappPrefill").replace(
+    "{{name}}",
+    meta.shortName.toLowerCase()
+  );
 
   function scrollToContact(e: { preventDefault: () => void }) {
     e.preventDefault();

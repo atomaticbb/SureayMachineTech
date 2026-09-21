@@ -406,7 +406,9 @@ export default function Contact() {
                 {t("contactPage.directory.whatsappLabel")}
               </p>
               <a
-                href="https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20custom%20blade%20solutions"
+                href={`https://wa.me/8618005550657?text=${encodeURIComponent(
+                  t("contactPage.whatsappPrefill")
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => gtagEvent("whatsapp_click", { link_location: "contact_page" })}

@@ -8,8 +8,7 @@ import { useLocation } from "wouter";
 import { gtagEvent } from "@/lib/gtag";
 import { useTranslation } from "@/lib/useTranslation";
 
-const WA_URL =
-  "https://wa.me/8618005550657?text=Hi%2C%20I%27m%20interested%20in%20your%20industrial%20blades.%20Please%20send%20me%20more%20information.";
+const WA_PHONE = "8618005550657";
 
 export default function GlobalMobileCTA() {
   const { t } = useTranslation();
@@ -20,6 +19,10 @@ export default function GlobalMobileCTA() {
   // Category Hub pages have their own MobileContactBar with an equivalent
   // bar — avoid stacking two floating contact bars on those pages.
   if (location.startsWith("/categories/")) return null;
+
+  const waUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(
+    t("globalCta.whatsappPrefill")
+  )}`;
 
   const handleQuote = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -42,7 +45,7 @@ export default function GlobalMobileCTA() {
         <div className="px-4 py-3 flex items-center gap-2">
           {/* WhatsApp */}
           <a
-            href={WA_URL}
+            href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() =>
