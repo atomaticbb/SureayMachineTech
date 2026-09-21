@@ -248,6 +248,19 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   ar: {
     "Sureay Machinery": "Sureay Machinery",
     Sureay: "Sureay",
+    // A "log" in this catalogue is a wound roll of tissue or nonwoven web.
+    // Machine translation read it as a logbook on one product and a tree
+    // trunk on the other, and "tissue" as biological tissue. Pinned here so a
+    // regeneration cannot bring either reading back.
+    "log saw blades": "شفرات منشار اللفات",
+    "Log Saw Blades": "شفرات منشار اللفات",
+    "log saws": "مناشير اللفات",
+    "Log Saws": "مناشير اللفات",
+    "log saw": "منشار اللفات",
+    "Log Saw": "منشار اللفات",
+    "tissue log": "لفة التيشو",
+    "Tissue Log": "لفة التيشو",
+    "tissue paper": "ورق التيشو",
   },
   tr: {
     "Sureay Machinery": "Sureay Machinery",
