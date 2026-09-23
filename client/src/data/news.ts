@@ -91,6 +91,272 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "paper-straw-blade-adhesive-pickup",
+    tag: "TECHNICAL GUIDE",
+    date: "22.SEP.2026",
+    title: "It's the Glue, Not the Blade: Why Paper Straw Ends Fray",
+    excerpt:
+      "Four blades in one shift and the ends still fray. On a paper straw line the usual cause is water-based adhesive building a ridge on the blade face, not a worn edge. How to tell the difference in one shift.",
+    image: "/images/news/paper-straw-blade-adhesive-ridge.webp",
+    readTime: "6 MIN",
+    seoTitle: "Frayed Paper Straw Ends: Adhesive, Not Blade Wear | Sureay",
+    metaDescription:
+      "Paper straw ends fraying while the blade still feels sharp? It is adhesive pick-up, not wear. How to diagnose it, why coating beats hardness, and how to pick blade thickness.",
+    relatedProductIds: [
+      "paper-straw-slitting-blades",
+      "tungsten-carbide-slitter-knives",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "An operator on a straw line pulls a blade because the ends have started to fray. New blade goes in, the cut comes back square, everyone moves on. Two hours later the fray is back, so he pulls that one too.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "By the end of the shift he has been through four blades and the line is still making rejects. Nothing was wrong with any of them.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is the most common misdiagnosis on paper straw work, and it burns more blades than genuine wear does. We see it from the buying end: the enquiry arrives asking for a harder grade, and the description of the fault underneath it points somewhere else entirely. The blade did not go blunt. It got sticky.",
+      },
+      {
+        type: "h2",
+        value: "Why Does a Paper Straw Blade Stop Cutting Cleanly?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Because water-based adhesive transfers from the tube onto the blade face and builds into a ridge along the cutting edge. Once that ridge exists the blade stops severing the tube wall and starts dragging it. A dragged tube frays. The edge underneath the deposit is often still perfectly serviceable.",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-straw-blade-adhesive-ridge-macro.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That mechanism explains why a fresh blade appears to fix the problem for an hour or two. The new blade is clean. It then picks up glue at the same rate as the one before it, reaches the same deposit thickness, and fails in the same way. Swapping blades treats the symptom on a two-hour cycle.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sharpness is not the variable here. On a line running water-based adhesive, adhesive release does more for cut quality than another point of hardness ever will, which is why [paper straw slitting blades](/products/paper-straw-slitting-blades) are specified around a non-stick surface rather than around hardness alone. The carbide substrate holds the edge. The coating keeps the face clean so the edge can keep working.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "One scope note before going further. Everything below assumes a line running water-based adhesive, which is where most paper straw production currently sits. Run a different adhesive system and the build-up behaviour changes, so tell us which one rather than assuming this article describes your line.",
+      },
+      {
+        type: "h2",
+        value: "How to Tell Adhesive Pick-Up From a Worn Edge",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Wipe the face and look at it under a raking light before changing anything. A visible film or ridge along the cutting edge settles it, and a sharper blade will not help you.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Rule the machine out first, because it is the one cause that can imitate both of the others. If the fray appeared the moment a changeover finished, or if cut length is drifting through the run alongside the end quality, you are looking at spindle runout or a setting fault rather than the blade. A blade that flexes and wanders produces a ragged end for purely mechanical reasons, and no coating or regrind will touch it.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "With the machine cleared, two signals separate the remaining causes without any inspection at all:",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Signal", "Adhesive pick-up", "Genuine edge wear"],
+        tableRows: [
+          [
+            "Onset",
+            "Sudden, then repeats on a regular short interval",
+            "Gradual, worsens across a run",
+          ],
+          ["Blade face", "Visible ridge or film along the edge", "Clean"],
+          [
+            "Edge under magnification",
+            "Still keen",
+            "Rounded, or micro-chipped",
+          ],
+          [
+            "Response to a new blade",
+            "Recovers, then fails again on the same interval",
+            "Recovers and stays good",
+          ],
+          [
+            "The fix",
+            "Cleaning interval, or a non-stick coating",
+            "Replace the blade",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "The timing test is the useful one on a running line. Adhesive builds on a clock; wear accumulates over a production run. If your fray interval is suspiciously regular and much shorter than the blade life you were quoted, stop buying blades and look at the glue.",
+      },
+      {
+        type: "h2",
+        value: "Specify Against the Adhesive, Not the Machine",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Plenty of straw lines were built on filter rod machinery, and the blade geometry often interchanges dimensionally. Same diameter, same bore, same thickness. A blade that runs for weeks on a Hauni filter rod maker can still gum up within hours on a straw line.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "What transfers is the geometry. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent, well-characterised material that the tobacco industry spent decades standardising. Paper straw lines are newer, run a wider spread of plies and grammages, and use adhesives that vary between producers with no equivalent standardisation behind them.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "So the single most useful thing you can tell us about this application is the adhesive. It predicts blade life better than the paper specification does, and it is the detail left out of almost every enquiry we receive. The machine model and straw diameter tell us what will fit. The adhesive tells us what will last.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Commissioning a new line? Expect to tune blade specification against your glue rather than against your paper, and budget for a trial period to do it.",
+      },
+      {
+        type: "h2",
+        value: "What We Won't Give You: A Blade Life Figure",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Ask five suppliers how many hours a paper straw blade lasts and you will get five numbers. Treat all of them as marketing.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "We do not publish a blade life figure for this application, and the reason is the argument above. Where adhesive pick-up sets the change interval, blade life is a property of your glue, your paper and your cleaning regime at least as much as it is a property of the blade. A figure generated on somebody else's line tells you nothing you can plan around. Quoting one would make this page look more authoritative and leave you worse off.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "What we will do is put a number on your line. A small trial quantity across two specifications, typically a coated blade against a different thickness, run for a fortnight on your actual adhesive and paper, gives you a figure that holds for your process. That is the only blade life number worth having, and it is cheap to generate.",
+      },
+      {
+        type: "h2",
+        value:
+          "Blade Thickness Is a Process Decision, Not a Leftover Dimension",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Item", "OD (mm)", "Bore (mm)", "Thickness (mm)"],
+        tableRows: [
+          ["1", "Φ88", "Φ16", "0.26"],
+          ["2", "Φ89", "Φ15", "0.30"],
+          ["3", "Φ90", "Φ15", "0.30"],
+          ["4", "Φ100", "Φ15", "0.15"],
+          ["5", "Φ100", "Φ15", "0.30"],
+          ["6", "Φ100", "Φ45", "0.20"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "At 0.15 to 0.30 mm, thickness is chosen rather than inherited, and the two ends of that range do different jobs.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A thinner blade displaces less material and leaves a squarer end on a thin-walled, low-ply straw. That makes it the choice on premium work where the cut end is visible to whoever drinks through it. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which makes it the safer choice on older machinery or on thicker multi-ply tube.",
+      },
+      {
+        type: "image",
+        value: "/images/news/paper-straw-blade-thickness-comparison.webp",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The two failure modes look nothing alike, so a wrong choice is easy to spot. Too thick on a thin-walled straw crushes the end. Too thin on a machine with runout and the blade flexes and wanders, so cut length drifts through the run.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Look at items 4 and 5 in the table: identical diameter, identical bore, 0.15 mm against 0.30 mm. That is not a stocking quirk. It is one blade specified for two different jobs, and choosing between them is a decision about your tube and your spindle rather than about price.",
+      },
+      {
+        type: "h2",
+        value: "Coating or Regrinding. You Get One.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The anti-stick coating is a surface layer, and grinding the edge removes it exactly where it does the most work. Coated blades of this type are run to end of life and replaced, not built into a regrind cycle.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If your economics favour regrinding, ask for uncoated [tungsten carbide slitter knives](/products/tungsten-carbide-slitter-knives) instead and accept more frequent face cleaning as the trade. That is a reasonable choice on a line with an established grinding relationship and the labour to wipe faces between runs. It is the wrong choice on three-shift production where every cleaning stop is lost output.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "What does not work is buying coated blades and regrinding them anyway. You pay for the coating, remove it on the first pass, and then diagnose the returning fray as a coating failure.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "We manufacture both versions, so weigh that against the recommendation and check it with your own numbers. Count the cleaning stops over a week, price the lost output, and set it against the coating premium on a year's consumption. If cleaning wins on your line, buy uncoated. We would rather quote the cheaper part than argue about the dearer one six months later.",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "Can I just clean the blades instead of buying coated ones?",
+            answer:
+              "Yes, and on some lines that is the cheaper answer. Cleaning works because it addresses the actual fault, and if you have the labour to wipe faces at every changeover it may be all you need. The question is how often the line has to stop. Count the cleaning stops over a week and price the lost output against the coating premium. Single-shift operations often come out ahead cleaning; three-shift lines almost never do.",
+          },
+          {
+            question: "Will a harder carbide grade stop the fraying?",
+            answer:
+              "No, and this is the upgrade buyers most often pay for without benefit. Hardness governs how long an edge resists wear. Adhesive pick-up is a surface chemistry and release problem that happens on the blade face, not at the edge, and a harder substrate gums up on exactly the same schedule. If the wipe test shows a deposit, the grade is not what is failing you.",
+          },
+          {
+            question:
+              "My filter rod blades work fine. Why won't they work on my straw line?",
+            answer:
+              "Because the blade is not what changed. Filter rod machinery runs a consistent, long-standardised material, while straw lines run varied papers and, critically, adhesives that differ from producer to producer. The same blade geometry that performs on a Hauni filter rod maker can gum up within hours against a different glue. Geometry interchanges; specification logic does not.",
+          },
+          {
+            question:
+              "What do you need from me to quote a paper straw slitting blade?",
+            answer:
+              "Machine make and model, straw diameter, ply count and paper grammage, plus the blade OD, bore and thickness if you have a sample to measure. Then the adhesive, which is the detail most enquiries omit and the one that predicts blade life best. With no drawing, photographs of a worn blade with a caliper in frame are enough for us to produce a dimensioned drawing for approval, and nothing is manufactured until you have approved it. Sureay has been a direct manufacturer of industrial blades since 2008 and works to ISO 9001:2015. Stock sizes usually ship within a few working days; made-to-drawing geometries run 15 to 25 working days from drawing approval, plus a few days for the coating cycle.",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        value: "Run the Timing Test Before You Order Anything",
+      },
+      {
+        type: "paragraph",
+        value:
+          "One shift of observation costs nothing and settles the question. If the fray returns on a predictable interval, it is glue, and you need a coating or a cleaning schedule. If it creeps in gradually across the run, it is the edge, and you need a blade. If it arrived with a changeover, it is the machine, and you need neither.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Those are three different answers and only two of them are a purchase order. You need nothing from us to run the test, which is the point: most straw lines that believe they have a blade quality problem have never established that the blade is what failed.",
+      },
+    ],
+  },
+  {
     id: "concrete-mixing-plant-parts-reorder-guide",
     tag: "TECHNICAL GUIDE",
     date: "20.SEP.2026",
@@ -6548,6 +6814,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "paper-straw-blade-adhesive-pickup": "Eric",
   "concrete-mixing-plant-parts-reorder-guide": "Eric",
   "groove-bottom-knives-vs-spacer-stacks": "lynn",
   "cutter-compactor-blade-film-vs-flake-wear": "Eric",
