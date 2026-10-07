@@ -91,6 +91,286 @@ function sortDispatchesByDate(
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
   {
+    id: "shredder-screen-hole-size-vs-blade-configuration",
+    tag: "TECHNICAL GUIDE",
+    date: "07.OCT.2026",
+    title:
+      "Shredder Screen Hole Size vs Blade Configuration: Why Output Size Is Not Set by Blades Alone",
+    excerpt:
+      "If a recycling line is making oversize pieces or too many fines, the blade is only one suspect. Screen hole size, rotor bite, counter-knife clearance, and feed behaviour decide the real output size together.",
+    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    readTime: "7 MIN",
+    seoTitle:
+      "Shredder Screen Hole Size vs Blade Configuration | Sureay",
+    metaDescription:
+      "Output size in a plastic shredder is not set by blade sharpness alone. Learn how screen hole size, blade hook geometry, rotor speed, and bed knife clearance control oversize particles and fines.",
+    keywords:
+      "shredder screen hole size, shredder blade configuration, shredder output size, single shaft shredder screen, shredder blades and screens, reduce fines in shredding, plastic recycling shredder screen",
+    relatedProductIds: [
+      "shredder-screens",
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "twin-shaft-blades-recycling",
+    ],
+    keyFacts: {
+      intro:
+        "On a recycling shredder, the blade starts the cut. The screen decides what is allowed to leave the chamber.",
+      bullets: [
+        "Screen hole diameter sets the maximum particle size that can pass out of a single-shaft shredder chamber.",
+        "Blade hook depth, tooth count, and edge condition control how aggressively material is pulled and pre-cut before it reaches the screen.",
+        "Counter-knife clearance changes cutting efficiency, heat, dust, and fines generation.",
+        "Oversize output usually points to screen wear, broken screens, bypass gaps, or material leaving before it is fully cut.",
+        "Excessive fines usually point to too many recuts, dull knives, tight clearance, high rotor speed, or a screen that is too small for the feedstock.",
+      ],
+    },
+    content: [
+      {
+        type: "paragraph",
+        value:
+          "A buyer writes in with a familiar sentence: the shredder blades are not making the right particle size. Sometimes that is true. Often it is only half true.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In a single-shaft plastic recycling shredder, output size is not set by blade sharpness alone. The rotor inserts cut, pull, and fracture the material. The bed knives create the shearing edge. The screen holds material in the chamber until it is small enough to pass. Change one part and the result may improve for a week, then drift back because the rest of the cutting system was never checked.",
+      },
+      {
+        type: "image",
+        value: "/images/products/shredder-screens/shredder-screens-04.webp",
+      },
+      {
+        type: "h2",
+        value: "What Does the Shredder Screen Actually Control?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The screen controls the discharge limit. If the hole is 40 mm, a particle larger than the effective opening should stay in the cutting chamber until further cuts make it small enough to pass. That is the simple version. The practical version is less tidy, because screen wear, hole shape, plate thickness, open area, rotor speed, and bypass gaps all affect what happens before the material exits.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A worn screen does not just get thinner. Hole edges round over, slots elongate, cracks open near bolt holes, and panels can lift away from the housing. Once that happens, oversize pieces may leave the machine even when the nominal screen size on the maintenance sheet has not changed. This is why [shredder screens](/products/shredder-screens) should be inspected as wear parts, not treated as fixed machine structure.",
+      },
+      {
+        type: "callout",
+        value:
+          "Field rule: if oversize particles appear suddenly after months of stable output, inspect the screen and screen seating before changing blade material. Steel grade rarely changes overnight; a cracked screen panel can.",
+      },
+      {
+        type: "h2",
+        value: "What Does Blade Configuration Control?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Blade configuration controls the first cut and the bite. On a single-shaft rotor, crown cutters or rotor inserts grab the feedstock, pull it against the fixed bed knives, and decide how much material is presented to the screen after each rotation. Hook depth, cutting face width, tooth count, and edge angle all change how the shredder behaves.",
+      },
+      {
+        type: "image",
+        value: "/images/news/single-shaft-shredder-face-profile-comparison.webp",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "Blade / rotor choice",
+          "What it changes",
+          "Typical result",
+        ],
+        tableRows: [
+          [
+            "Aggressive hook profile",
+            "Pulls more material per bite",
+            "Higher throughput, higher peak load, more risk of oversize chunks on tough feed",
+          ],
+          [
+            "Smaller bite profile",
+            "Limits the amount pulled into each cut",
+            "More controlled particle size, usually lower throughput",
+          ],
+          [
+            "More cutting edges around the rotor",
+            "Raises cutting frequency per revolution",
+            "More recutting, tighter size distribution, potentially more fines",
+          ],
+          [
+            "Dull or rounded insert edge",
+            "Crushes and tears instead of shearing",
+            "Heat, dust, unstable output, higher motor load",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "That is why a blade-only reorder can miss the cause. If the machine is producing oversize pieces, a more aggressive [single shaft rotor insert](/products/single-shaft-shredder-blades) may make throughput better and particle control worse. If the machine is producing too much dust, a sharper insert helps only if the screen size and bed-knife clearance are not forcing material to be cut again and again after it is already small enough for the downstream process.",
+      },
+      {
+        type: "h2",
+        value: "Screen Hole Size vs Blade Configuration: The Decision Table",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: [
+          "Symptom on the line",
+          "Check first",
+          "Likely correction",
+        ],
+        tableRows: [
+          [
+            "Oversize pieces in the output",
+            "Screen cracks, elongated holes, loose screen frame, bypass gaps",
+            "Replace or reseat the screen before changing blade steel",
+          ],
+          [
+            "Output is mostly correct but throughput is low",
+            "Screen open area and hole size compared with target particle size",
+            "Increase open area or review screen size if downstream process allows",
+          ],
+          [
+            "Too many fines or powder",
+            "Dull blade edge, tight clearance, small screen holes, high recut time",
+            "Reset clearance, sharpen/replace knives, or use a larger screen where acceptable",
+          ],
+          [
+            "Motor load spikes when bulky feed enters",
+            "Blade hook depth and bite aggressiveness",
+            "Use a less aggressive rotor profile or staged pre-cutting",
+          ],
+          [
+            "Screen clogs with film or flexible scrap",
+            "Hole shape, screen thickness, material temperature, rotor speed",
+            "Use a screen geometry matched to film behaviour, not only smaller holes",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "Why Smaller Screen Holes Can Create More Fines",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A smaller hole does not simply make a cleaner small particle. It keeps material in the chamber longer. Every extra second in the chamber is another chance for the rotor to hit material that is already close to target size. That repeated cutting creates fines, heat, and sometimes melted edges on thermoplastics.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For rigid HDPE or PP crates, that may still be acceptable because the downstream granulator needs a controlled feed. For flexible film, agricultural film, or woven bags, a too-small screen can create heat and wrapping before it creates useful particle control. The right question is not the smallest particle size the shredder can make. It is the largest particle size your next machine can accept without choking.",
+      },
+      {
+        type: "h2",
+        value: "Counter-Knife Clearance Is the Hidden Variable",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The bed knife, also called the stator or counter knife, sets the fixed cutting edge. If the clearance between rotor insert and bed knife is too wide, material bends and tears before it shears. Output becomes stringy, the motor works harder, and the screen has to do more of the sizing work. If clearance is too tight, heat and impact rise, edges chip faster, and fines increase.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That is why [single shaft bed knives](/products/single-shaft-bed-knives) should be ordered and checked as part of the cutting set. A fresh rotor insert working against a rounded bed knife will not behave like a fresh cutting system. It behaves like a new moving edge hitting an old fixed edge.",
+      },
+      {
+        type: "image",
+        value: "/images/products/shredder-blades/single-shredder-bed-knives-03.webp",
+      },
+      {
+        type: "h2",
+        value: "A Practical Diagnostic Sequence Before Reordering",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before ordering harder blades, run the checks in this order. It is the same sequence we use when a customer sends photos of bad output but no machine history.",
+      },
+      {
+        type: "table",
+        value: "",
+        tableHeaders: ["Step", "What to record", "Why it matters"],
+        tableRows: [
+          [
+            "1. Measure actual output",
+            "Largest pieces, fines percentage, and whether size drift is sudden or gradual",
+            "Separates screen failure from blade wear",
+          ],
+          [
+            "2. Inspect the screen",
+            "Hole wear, cracks, missing fasteners, lifted panels, blocked holes",
+            "The screen is the discharge gate",
+          ],
+          [
+            "3. Check rotor and bed knives together",
+            "Edge rounding, chipped corners, clearance, bolt security",
+            "Cut quality depends on both moving and fixed edges",
+          ],
+          [
+            "4. Match the feedstock",
+            "Film, rigid plastic, wood, MSW, rubber, contamination level",
+            "Different feedstocks need different bite and screen behaviour",
+          ],
+          [
+            "5. Review the downstream process",
+            "Granulator inlet size, conveyor tolerance, washing line requirement",
+            "The shredder output target should come from the next machine",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        value: "What Sureay Needs to Quote the Correct Set",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For a useful quotation, send the shredder make and model, rotor photos, current screen hole size, target output size, material being shredded, and photos of the worn blades and screen. If you have an old screen panel, measure hole diameter, plate thickness, overall panel size, bolt pattern, and any curved radius. For blades, measure length, width, thickness, hole pattern, hook profile, and current steel grade if known.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay manufactures [twin-shaft shredder blades](/products/twin-shaft-blades-recycling), single-shaft rotor inserts, bed knives, and shredder screens, so the recommendation can be made as a cutting system rather than as one isolated replacement part. That does not always mean replacing everything. It means checking which part is actually setting the output problem before money is spent.",
+      },
+      {
+        type: "faq",
+        value: "",
+        faqItems: [
+          {
+            question:
+              "Does the shredder blade or the screen decide output size?",
+            answer:
+              "The screen sets the maximum size allowed to leave the cutting chamber, while the blade configuration controls how material is pulled, fractured, and recut before it reaches the screen. In practice, output size comes from both parts working with the bed knife clearance and feedstock behaviour.",
+          },
+          {
+            question:
+              "Should I use a smaller shredder screen to get finer output?",
+            answer:
+              "Only if the downstream process truly needs finer output. A smaller screen keeps material in the chamber longer, which can increase fines, heat, clogging, and blade wear. Check whether the next machine can accept a larger particle size before reducing screen holes.",
+          },
+          {
+            question:
+              "Why do I still get oversize pieces with new shredder blades?",
+            answer:
+              "Common causes include worn or cracked screens, bypass gaps around the screen frame, rounded bed knives, excessive rotor-to-bed clearance, or feedstock that is too bulky for the current blade bite. New blades cannot correct a discharge path that lets oversize pieces escape.",
+          },
+          {
+            question:
+              "What information is needed to order replacement shredder screens?",
+            answer:
+              "Send screen panel length, width, thickness, hole diameter or slot size, hole pitch, bolt pattern, curved radius if present, machine model, and the target output size. Photos of the installed screen and worn areas help confirm whether the failure is abrasion, impact cracking, or clogging.",
+          },
+        ],
+      },
+      {
+        type: "callout",
+        value:
+          "If your shredder output changed, send photos of the blades, bed knives, screen, and sample output before ordering. Sureay can review whether the problem is blade wear, screen wear, clearance, or feedstock mismatch. [Contact the engineering team](/contact).",
+      },
+    ],
+  },
+  {
     id: "paper-straw-blade-adhesive-pickup",
     tag: "TECHNICAL GUIDE",
     date: "22.SEP.2026",
@@ -6814,6 +7094,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "shredder-screen-hole-size-vs-blade-configuration": "Eric",
   "paper-straw-blade-adhesive-pickup": "Eric",
   "concrete-mixing-plant-parts-reorder-guide": "Eric",
   "groove-bottom-knives-vs-spacer-stacks": "lynn",
