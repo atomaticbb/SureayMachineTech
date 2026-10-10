@@ -449,13 +449,14 @@ export default function NewsDetail() {
                   }
                   case "image": {
                     figIdx += 1;
-                    const cap = captionFromUrl(block.value);
+                    const cap = block.imageCaption ?? captionFromUrl(block.value);
+                    const alt = block.imageAlt ?? cap ?? formatHeadingCase(article.title);
                     return (
                       <div key={i} className="my-10 sm:my-12">
                         <div className="max-w-[760px] border border-slate-200 bg-white overflow-hidden">
                           <img
                             src={block.value}
-                            alt={cap || formatHeadingCase(article.title)}
+                            alt={alt}
                             className="w-full max-h-[400px] object-contain bg-slate-50"
                             loading="lazy"
                             decoding="async"
