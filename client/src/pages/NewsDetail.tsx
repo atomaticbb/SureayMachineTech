@@ -22,19 +22,38 @@ import { getBladeById } from "@/data/locales";
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function renderInlineLinks(text: string): React.ReactNode {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  const parts = text.split(
+    /(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*|\*[^*]+\*)/g
+  );
   if (parts.length === 1) return text;
 
   return parts.map((part, i) => {
     const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
     if (match) {
+      if (/^https?:\/\//.test(match[2])) {
+        return (
+          <a
+            key={i}
+            href={match[2]}
+            className="text-[#001f4d] underline underline-offset-2 decoration-[#001f4d]/40 hover:text-[#c49a2a] hover:decoration-[#e8b84b] transition-colors font-medium"
+          >
+            {renderInlineLinks(match[1])}
+          </a>
+        );
+      }
       return (
         <Link key={i} href={match[2]} asChild>
           <a className="text-[#001f4d] underline underline-offset-2 decoration-[#001f4d]/40 hover:text-[#c49a2a] hover:decoration-[#e8b84b] transition-colors font-medium">
-            {match[1]}
+            {renderInlineLinks(match[1])}
           </a>
         </Link>
       );
+    }
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i}>{renderInlineLinks(part.slice(2, -2))}</strong>;
+    }
+    if (part.startsWith("*") && part.endsWith("*")) {
+      return <em key={i}>{renderInlineLinks(part.slice(1, -1))}</em>;
     }
     return part;
   });
@@ -304,7 +323,7 @@ export default function NewsDetail() {
                     srcSet: `${article.image.replace(/\.webp$/i, "-640w.webp")} 640w, ${article.image} 1672w`,
                     sizes: "(max-width: 1024px) 100vw, 460px",
                   })}
-                  alt={formatHeadingCase(article.title)}
+                  alt={article.imageAlt ?? formatHeadingCase(article.title)}
                   className="w-full aspect-[4/3] lg:aspect-auto lg:h-[420px] object-cover"
                   width={920}
                   height={690}
@@ -431,6 +450,21 @@ export default function NewsDetail() {
                         {formatHeadingCase(block.value)}
                       </h3>
                     );
+                  case "list": {
+                    const List = block.ordered ? "ol" : "ul";
+                    return (
+                      <List
+                        key={i}
+                        className={`max-w-[760px] pl-6 mb-6 space-y-2 text-[15px] leading-[1.85] text-slate-700 ${
+                          block.ordered ? "list-decimal" : "list-disc"
+                        }`}
+                      >
+                        {(block.items ?? []).map((item, itemIndex) => (
+                          <li key={itemIndex}>{renderInlineLinks(item)}</li>
+                        ))}
+                      </List>
+                    );
+                  }
                   case "callout": {
                     const { label, body } = parseCalloutLabel(block.value);
                     return (
@@ -449,13 +483,15 @@ export default function NewsDetail() {
                   }
                   case "image": {
                     figIdx += 1;
-                    const cap = captionFromUrl(block.value);
+                    const cap = block.caption ?? captionFromUrl(block.value);
                     return (
                       <div key={i} className="my-10 sm:my-12">
                         <div className="max-w-[760px] border border-slate-200 bg-white overflow-hidden">
                           <img
                             src={block.value}
-                            alt={cap || formatHeadingCase(article.title)}
+                            alt={
+                              block.alt ?? (cap || formatHeadingCase(article.title))
+                            }
                             className="w-full max-h-[400px] object-contain bg-slate-50"
                             loading="lazy"
                             decoding="async"

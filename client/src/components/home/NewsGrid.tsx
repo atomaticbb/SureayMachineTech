@@ -39,7 +39,7 @@ export default function NewsGrid() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-slate-100 border-b border-slate-200">
                   <img
                     src={article.image}
-                    alt={article.title}
+                    alt={article.imageAlt ?? article.title}
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
