@@ -253,11 +253,11 @@ export default function About() {
 
           <div className="relative flex-1 overflow-hidden min-h-[340px] lg:min-h-0">
             <img
-              src="/images/about/factory-image-02.webp"
-              alt={t("about.hero.imageAlt")}
-              className="absolute inset-0 w-full h-full object-cover"
-              width={1272}
-              height={702}
+              src="/images/about/panoramas/factory-panorama-front-v1.webp"
+              alt={t("home.hero.imageAlt")}
+              className="absolute inset-0 w-full h-full object-cover object-[30%_50%]"
+              width={1774}
+              height={887}
               decoding="async"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
@@ -347,13 +347,13 @@ export default function About() {
               <div className="flex flex-col gap-2">
                 <div className="relative overflow-hidden h-[220px]">
                   <img
-                    src="/images/about/factory-image-01.webp"
-                    alt={t("about.story.image1Alt")}
+                    src="/images/about/panoramas/factory-panorama-left-v1.webp"
+                    alt={t("home.hero.imageAlt")}
                     className="w-full h-full object-cover brightness-75"
                     loading="lazy"
                     decoding="async"
-                    width={1920}
-                    height={1078}
+                    width={1774}
+                    height={887}
                   />
                 </div>
                 <div className="relative overflow-hidden h-[220px]">
