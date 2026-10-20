@@ -6,11 +6,23 @@
 // ── Interfaces ────────────────────────────────────────────────────────────────
 
 export interface NewsContent {
-  type: "paragraph" | "h2" | "h3" | "callout" | "image" | "table" | "faq";
+  type:
+    | "paragraph"
+    | "h2"
+    | "h3"
+    | "callout"
+    | "image"
+    | "table"
+    | "faq"
+    | "list";
   value: string;
   /** Optional accessible description and visible caption for article figures. */
   imageAlt?: string;
   imageCaption?: string;
+  alt?: string;
+  caption?: string;
+  items?: string[];
+  ordered?: boolean;
   tableHeaders?: string[];
   tableRows?: string[][];
   /** Only used when type === "faq" — rendered as a visible Q&A list and
@@ -25,6 +37,7 @@ export interface DispatchArticle {
   title: string;
   excerpt: string;
   image: string;
+  imageAlt?: string;
   readTime: string;
   isFeatured?: boolean;
   seoTitle?: string;
@@ -3225,119 +3238,662 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
   {
     id: "rotary-slitter-knives-overspeed-ratio",
     tag: "TECHNICAL GUIDE",
-    date: "03.AUG.2026",
+    date: "14.OCT.2026",
     title:
-      "Rotary Slitter Knives for Film Slitting: Why Over-Speed Ratio Is the Setting Most Buyers Get Wrong",
+      "Rotary Slitter Knife Overspeed: How to Set It—and When the Blade Is the Real Problem",
     excerpt:
-      "Over-speed ratio — the 2-5% speed differential between the top knife and the anvil roll — is the film-slitting spec buyers ask about least and get wrong most. Here's how to read edge failures and match material to the job.",
+      "A practical guide to checking rotary slitter knife overspeed, diagnosing poor slit quality after speed is verified, and deciding when a worn knife should be reground or replaced.",
     image: "/images/news/rotary-slitter-knives-overspeed-ratio-cover.webp",
-    readTime: "4 MIN",
+    readTime: "11 MIN",
     seoTitle:
-      "Rotary Slitter Knives: Getting Over-Speed Ratio Right for Film Slitting | Sureay",
+      "Rotary Slitter Knife Overspeed: Setup & Replacement Guide | Sureay",
     metaDescription:
-      "Over-speed ratio is the film-slitting spec buyers get wrong most. Learn to read edge failures and match rotary slitter knife steel and coating to the job.",
-    keywords:
-      "rotary slitter knives, over-speed ratio, film slitting knives, BOPP slitter blade, BOPET slitting knife, shear cutting film, DLC coated slitter knife, TiN coated slitter knife",
+      "Learn how rotary slitter knife overspeed works, why 3–5% is a common starting point, how regrinding changes actual surface speed, and when poor slit quality points to blade replacement instead of machine adjustment.",
     relatedProductIds: ["rotary-slitter-knives"],
     content: [
       {
         type: "paragraph",
         value:
-          "A BOPP line running clean for months suddenly starts throwing ragged, fuzzy edges on one lane. Nobody changed the blade. Nobody changed the film. What changed is wear on the knife-to-anvil clearance, and the operator compensated the only way the HMI lets them — by nudging the top arbor speed. That single adjustment, made without understanding what it does, is usually where the trouble starts.",
+          "For many rotary shear slitting systems with a **driven bottom knife and a friction-driven top knife**, running the bottom knife slightly faster than the web is a normal part of setup. A **3–5% bottom-knife overspeed** is a widely used starting range for tangential shear slitting, but it is not a universal setting for every machine, holder, substrate, or web path.",
       },
       {
         type: "paragraph",
         value:
-          "The setting in question is over-speed ratio, and it's the spec buyers ask about least and get wrong most.",
+          "The important point is that overspeed is only **one part of the cutting system**.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If slit quality remains poor after the actual knife speed has been checked, continuing to increase overspeed can hide the real problem. The cause may instead be incorrect overlap, cant angle, side force, runout, a worn cutting edge, or a blade that no longer fits the operating range after repeated regrinding.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "This guide shows how to verify overspeed first, then decide whether the next action should be **machine adjustment, knife regrinding, or replacement**.",
+      },
+      {
+        type: "image",
+        value: "/images/news/nonwoven-slitter-knife-line-context.webp",
+        alt: "Circular knives behind a clear safety guard slit a white web into parallel strips",
+        caption:
+          "Rotary slitting station with a guarded knife shaft and web path.",
       },
       {
         type: "h2",
-        value: "What Over-Speed Ratio Actually Does",
+        value: "What Is Rotary Slitter Knife Overspeed?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In a common tangential shear-slitting arrangement, the **bottom knife (female/anvil knife)** is driven and the **top knife (male knife)** follows by friction at the cutting point.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Overspeed means that the peripheral surface speed of the driven bottom knife is set slightly higher than the linear web speed.",
+      },
+      {
+        type: "paragraph",
+        value: "A useful way to express it is:",
+      },
+      {
+        type: "paragraph",
+        value: "**Overspeed Ratio = V(knife) / V(web)**",
+      },
+      {
+        type: "paragraph",
+        value: "where:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "V(knife) = peripheral speed of the driven bottom knife",
+          "V(web) = web speed",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the ratio is **1.03**, the bottom knife surface is running approximately **3% faster than the web**.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Dienes' *Slitting Reference Guide* describes 3–5% bottom-knife overspeed as sufficient for most tangential-web applications in which the top knife is friction driven. It also notes an important exception: in systems where **both knife shafts are positively driven**, bottom-knife overspeed may not be required.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "That is why the machine or knifeholder manufacturer's setup instructions should always take priority over a generic percentage.",
+      },
+      {
+        type: "h2",
+        value: "How to Calculate Actual Bottom-Knife Surface Speed",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the machine gives you bottom-shaft RPM rather than knife surface speed, calculate the peripheral speed from the knife's **actual measured outside diameter**:",
+      },
+      {
+        type: "paragraph",
+        value: "**V(knife) = π × D × N / 1000**",
+      },
+      {
+        type: "paragraph",
+        value: "where:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "D = actual bottom-knife outside diameter in mm",
+          "N = bottom-shaft speed in rev/min",
+          "V(knife) = knife peripheral speed in m/min",
+        ],
+      },
+      {
+        type: "paragraph",
+        value: "Then:",
+      },
+      {
+        type: "paragraph",
+        value: "**Overspeed % = (V(knife) / V(web) − 1) × 100**",
+      },
+      {
+        type: "h3",
+        value: "Example",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If the web is running at **500 m/min** and the measured bottom-knife surface speed is **515 m/min**:",
+      },
+      {
+        type: "paragraph",
+        value: "**515 / 500 = 1.03**",
+      },
+      {
+        type: "paragraph",
+        value: "The actual overspeed is **3%**.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For routine troubleshooting, the calculation is simple. The more common problem is that the value entered in the machine no longer matches the knife that is physically installed.",
+      },
+      {
+        type: "h2",
+        value: "The Regrind Diameter Trap",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Repeated regrinding reduces the outside diameter of a bottom knife. If the control system still calculates surface speed using the **original knife diameter**, the displayed speed ratio can look correct while the real peripheral speed is lower.",
+      },
+      {
+        type: "paragraph",
+        value: "For example:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "Original bottom-knife OD: **200.0 mm**",
+          "Original target ratio: **1.03**",
+          "Actual OD after several regrinds: **195.0 mm**",
+        ],
+      },
+      {
+        type: "paragraph",
+        value: "If shaft RPM is left unchanged:",
+      },
+      {
+        type: "paragraph",
+        value: "**1.03 × (195 / 200) ≈ 1.004**",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The machine that appears to be running at 3% overspeed is now operating at only about **0.4% actual overspeed**.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "On a friction-driven top-knife system, that difference can matter.",
+      },
+      {
+        type: "h3",
+        value: "What to verify after regrinding",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Before changing air pressure, overlap, or knife material, check:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: true,
+        items: [
+          "The **actual OD** of the installed bottom knife.",
+          "The OD value stored in the HMI or drive calculation.",
+          "The real shaft RPM.",
+          "The current web speed.",
+          "Whether the top knife is friction driven or independently driven.",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "This is a useful first check whenever cutting problems appear soon after a reground knife set is installed.",
       },
       {
         type: "image",
         value:
-          "/images/news/rotary-slitter-knives-overspeed-ratio-diagram.webp",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Over-speed ratio is the intentional speed differential between the rotating top knife and the bottom anvil roll — typically 2-5% above web speed. At zero differential, the blade behaves like a crush cutter: it presses through the film rather than shearing it, which works fine for soft PE stretch film but tears BOPET and CPP. Push the differential too high and you get a cleaner cut initially, then accelerated edge wear as the knife scrubs against the anvil surface on every rotation instead of meeting it.",
-      },
-      {
-        type: "paragraph",
-        value:
-          "The right number depends on the film. A 12-micron BOPET line running at 300+ m/min needs a tighter, lower differential than a heavier PE stretch film application — get this backwards and you'll spend a shift chasing dust and burr instead of one five-minute clearance check.",
-      },
-      {
-        type: "paragraph",
-        value:
-          "That guidance is film-specific. Paper and tissue lines aren't tuned by over-speed ratio at all — they're specified by fixed shear clearance instead. If you're converting paper rather than film, see our [paper slitter knives](/products/rotary-slitter-knives-paper) page for substrate-specific clearance data.",
+          "/images/news/carbide-slitting-knives-marked-with-dimensions.webp",
+        alt: "Two circular slitter knives marked 100 × 65 × 2 and 100 × 65 × 0.7",
+        caption:
+          "Marked dimensions identify the original knife size. Measure the current outside diameter after regrinding.",
       },
       {
         type: "h2",
-        value: "Reading the Failure Instead of Guessing at It",
+        value:
+          "Correct Overspeed but Poor Slit Quality? Check These Four Areas",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A correct speed ratio does not guarantee a good cut. Rotary shear slitting depends on several geometrical and mechanical conditions working together.",
+      },
+      {
+        type: "h3",
+        value: "1. Inspect the Cutting Edge",
+      },
+      {
+        type: "paragraph",
+        value:
+          "A knife can still look acceptable from a distance while the cutting edge is rounded, chipped, burred, or locally damaged.",
+      },
+      {
+        type: "paragraph",
+        value: "Look for:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "a visible reflective line along the apex",
+          "small chips or edge interruptions",
+          "local burrs",
+          "polished wear bands",
+          "contamination close to the cutting edge",
+          "damage concentrated in one section of the circumference",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          'If the knife produces a poor cut only after a predictable production interval, record the substrate, line speed, cleaning frequency, and operating hours. That information is more useful for selecting a replacement material than simply specifying "a harder blade."',
+      },
+      {
+        type: "h3",
+        value: "2. Verify Cant Angle and Cut Point",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The cant or shear angle creates the knife contact point. Too little effective angle can produce an unstable or open cut; too much angle can increase wear and dust.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Dienes notes that the angle should be kept to the **minimum required for the material**, with approximately 1/4–1/2 degree used as a general reference for many applications rather than as a universal setting.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The correct value depends on the knifeholder and process. Use the holder manufacturer's setup method before changing the blade specification.",
+      },
+      {
+        type: "h3",
+        value: "3. Verify Overlap and Side Force",
+      },
+      {
+        type: "paragraph",
+        value:
+          "More overlap or more side force does **not** automatically produce a cleaner slit.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Excessive engagement can increase blade loading and accelerate wear. Too little engagement can make the cut unstable. Knifeholder condition and calibration also matter, particularly when pneumatic holders are used across a wide web.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If operators repeatedly compensate for poor cuts by increasing pressure, inspect the blade edge and holder setup before continuing to add load.",
+      },
+      {
+        type: "h3",
+        value: "4. Check Axial and Radial Runout",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Runout changes the knife contact condition during every revolution.",
+      },
+      {
+        type: "paragraph",
+        value: "At higher operating speeds, poor runout can contribute to:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "cyclic loading",
+          "changing overlap",
+          "intermittent knife contact",
+          "vibration",
+          "uneven blade wear",
+          "inconsistent slit quality across the machine",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "Check the **assembled knife on the actual shaft or holder**, not only the loose blade. Shaft condition, mounting clearance, dirt on mating surfaces, and knife geometry can all contribute to the measured result.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For Sureay film and tape slitter knives, our current published standard specification lists **±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout**. If your application needs a tighter condition, send the machine and knife requirements for engineering review rather than assuming one tolerance is appropriate for every slitting system.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "[View Sureay Film & Tape Slitter Knives](/products/rotary-slitter-knives)",
       },
       {
         type: "image",
         value:
           "/images/news/rotary-slitter-knives-overspeed-ratio-edge-comparison.webp",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Three symptoms point to three different causes, and they don't respond to the same fix: dust and fiber fuzzing at the cut edge usually means the differential is too low — the film is being crushed, not sheared. A visible burr on one side only points to arbor misalignment, not the ratio at all — no amount of speed adjustment fixes a bent shaft. Rapid edge dulling with good initial cut quality is the over-speed ratio running too hot for the coating and steel grade in use.",
-      },
-      {
-        type: "paragraph",
-        value:
-          "That last one is the case where material choice actually matters. A DLC-coated D2 blade tolerates a higher differential than an uncoated M2 HSS knife before the wear curve turns steep.",
+        alt: "Magnified slit edges side by side, with a smooth edge on the left and a frayed edge on the right",
+        caption:
+          "Smooth and frayed slit edges: inspect tooling condition and machine setup before assigning a cause.",
       },
       {
         type: "h2",
-        value: "Matching Material and Coating to the Application",
+        value: "Quick Diagnostic Table: Machine Setup or Blade Problem?",
+      },
+      {
+        type: "table",
+        value: "Quick diagnostic table: machine setup or blade problem?",
+        tableHeaders: [
+          "What you observe",
+          "Check first",
+          "What it may tell you about the knife",
+        ],
+        tableRows: [
+          [
+            "Web pulls or tears at the cut",
+            "Actual bottom-knife surface speed, web tension, cut point",
+            "The knife may be sharp enough; verify setup before replacing it",
+          ],
+          [
+            "Cut becomes fuzzy after a stable production period",
+            "Edge condition, overlap, cant angle",
+            "A rounded edge may be ready for regrinding",
+          ],
+          [
+            "One section of the blade wears faster",
+            "Axial/radial runout, holder condition, mounting face",
+            "Uneven wear may return after regrinding unless the mechanical cause is corrected",
+          ],
+          [
+            "Adhesive or polymer builds up near the edge",
+            "Cleaning interval, surface finish, blade profile",
+            "A different finish, geometry, or coating may be worth evaluating",
+          ],
+          [
+            "Operators keep increasing side pressure",
+            "Edge wear, holder calibration, overlap",
+            "The blade may be dull or the setup may be compensating for another fault",
+          ],
+          [
+            "Reground knife no longer runs correctly at the previous settings",
+            "Actual knife OD and machine diameter parameter",
+            "The reduced OD may have changed the real speed ratio or adjustment range",
+          ],
+          [
+            "Edge is chipped, cracked, distorted, or repeatedly fails after regrinding",
+            "Blade condition and application specification",
+            "Replacement is usually more appropriate than another routine regrind",
+          ],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "The purpose of this table is not to diagnose every machine remotely. It is to prevent a common maintenance mistake: **replacing a blade to solve a setup problem, or repeatedly adjusting the machine to compensate for a blade that is already at the end of its useful service life.**",
+      },
+      {
+        type: "h2",
+        value: "Regrind or Replace the Rotary Slitter Knife?",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Regrinding is often economical when wear is normal and enough blade geometry remains. Replacement becomes more appropriate when regrinding can no longer restore the required working condition.",
+      },
+      {
+        type: "h3",
+        value: "Regrinding is usually worth considering when:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "the edge is uniformly dull rather than severely damaged",
+          "there is enough remaining OD for the holder and machine setup",
+          "the blade body and mounting surfaces are undamaged",
+          "runout remains acceptable after correct mounting",
+          "the original material and geometry are suitable for the application",
+          "previous regrinds have produced consistent service life",
+        ],
+      },
+      {
+        type: "h3",
+        value: "Replacement should be considered when:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "edge chipping is too deep to remove economically",
+          "cracks, distortion, or severe impact damage are present",
+          "the remaining OD is outside the machine's useful adjustment range",
+          "repeated regrinding has significantly changed the blade geometry",
+          "the blade continues to wear prematurely after machine setup is verified",
+          "the existing material or edge profile is a poor match for the substrate",
+          "downtime and repeated grinding cost more than a new matched set",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "The decision should be based on the **usable geometry and process result**, not only on how many times the blade has already been reground.",
       },
       {
         type: "image",
-        value:
-          "/images/news/rotary-slitter-knives-overspeed-ratio-coatings.webp",
-      },
-      {
-        type: "paragraph",
-        value:
-          "[Rotary slitter knives](/products/rotary-slitter-knives) for film work aren't a one-grade-fits-all product. M2 HSS holds an edge well on PE stretch film and is easy to resharpen in-house. D2 and ASP23 powder-metallurgy steel hold tolerance longer on BOPP and BOPET runs at higher line speeds. Solid carbide earns its cost premium only where the film carries filler or the run length genuinely justifies it — most converters overspec carbide for standard clear film and never recover the price difference in regrind savings.",
-      },
-      {
-        type: "paragraph",
-        value:
-          "Coating solves a different problem than steel grade solves. TiN and DLC PVD coatings reduce surface adhesion on the blade face by roughly 80% versus bare steel, which matters on PSA tape and any adhesive-backed web where film transfer builds up faster than the wear itself degrades the edge. If your line runs tape or laminate and you're seeing gummy residue rather than dullness, that's a coating problem, not a steel problem — don't reach for a harder material to fix it.",
+        value: "/images/news/sureay-cylindrical-grinder.png",
+        alt: "Green cylindrical grinding machine with a grinding wheel and workholding centers in Sureay's workshop",
+        caption:
+          "Cylindrical grinding equipment in Sureay's workshop. Regrinding requires enough remaining blade geometry.",
       },
       {
         type: "h2",
-        value: "Getting the Spec Right Before the Blade Ships",
+        value: "When Blade Specification Becomes the Real Issue",
       },
       {
         type: "paragraph",
         value:
-          "Most slitter systems — Tidland, Kampf, Atlas, and Dusenbery arbors among them — have a designed over-speed ratio built into the OEM spec sheet. The blade should match that number, not a generic default. If you don't have the OEM documentation, a worn sample and the machine model are usually enough for a supplier to reverse-engineer the working clearance and match it.",
+          "If overspeed, overlap, cant angle, side force, holder condition, and runout are all under control but knife life is still unacceptable, the replacement specification deserves a closer look.",
+      },
+      {
+        type: "paragraph",
+        value: "Relevant variables include:",
+      },
+      {
+        type: "h3",
+        value: "Blade material",
       },
       {
         type: "paragraph",
         value:
-          'The decision rule that saves the most rework: fix alignment issues first, adjust over-speed ratio second, and only change steel grade or coating once the first two are confirmed correct. Buyers who skip straight to "we need a harder blade" often reorder the same problem in a different material.',
+          "Different steels and carbide grades trade off toughness, wear resistance, edge stability, and cost. The best choice depends on what is being slit and how the blade fails.",
+      },
+      {
+        type: "paragraph",
+        value: "Sureay supplies rotary slitter knives in materials including:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "52100 bearing steel",
+          "D2 tool steel",
+          "M2 high-speed steel",
+          "ASP23 powder-metallurgy steel",
+          "solid tungsten carbide",
+        ],
       },
       {
         type: "paragraph",
         value:
-          "Every batch we ship carries a Rockwell hardness test report and a dimensional inspection record, so if a converter wants to confirm the over-speed ratio their supplier actually built the blade to, that's the paperwork to ask for — not just a spec sheet promise.",
+          "A higher-cost material is not automatically the best choice. A blade that chips from impact, for example, may need a different toughness/geometry balance rather than simply higher hardness.",
       },
       {
-        type: "callout",
+        type: "h3",
+        value: "Edge and blade geometry",
+      },
+      {
+        type: "paragraph",
         value:
-          "Send us a worn sample or your arbor's OEM spec — Tidland, Kampf, Atlas, Dusenbery, or otherwise — and we'll confirm the over-speed ratio, steel grade, and coating before any steel gets cut. [Talk to our engineering team](/contact).",
+          "The substrate, knifeholder, speed, and side-force requirements influence whether the application needs a flat, dished, single-bevel, double-bevel, relieved, or other profile.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "If an existing knife has performed well, reproducing the proven geometry is normally safer than changing several variables at once.",
+      },
+      {
+        type: "h3",
+        value: "Surface condition and coating",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For film, tape, and adhesive converting, buildup on the blade can become a production problem even when the metal edge is still usable.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "In these cases, surface finish, cleaning practice, blade geometry, and—where appropriate—an anti-stick coating can be evaluated as part of the replacement specification.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The correct approach is to solve the **observed failure mode**, not to add a coating simply because the line is running faster.",
+      },
+      {
+        type: "h2",
+        value: "What to Send When Ordering Replacement Rotary Slitter Knives",
+      },
+      {
+        type: "paragraph",
+        value:
+          "You do not need to know every metallurgical detail before requesting a replacement knife.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For an engineering review or quotation, send as much of the following as you have:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: false,
+        items: [
+          "**OD × ID × thickness**",
+          "top knife, bottom knife, or matched pair",
+          "drawing or clear photos of both blade faces",
+          "bevel/profile dimensions if available",
+          "machine or knifeholder model",
+          "substrate being slit",
+          "normal line speed",
+          "current blade material, if known",
+          "typical time between regrinds",
+          "remaining OD after regrinding",
+          "description or close-up photo of the failure mode",
+          "quantity required",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "A **worn physical sample** is especially useful when no drawing exists. It allows the replacement manufacturer to inspect the bore, mounting faces, thickness, edge profile, and remaining geometry rather than guessing from a machine name alone.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay manufactures made-to-order rotary slitter knives for film, tape, paper, nonwoven, foil, and other converting applications. Replacement knives can be reviewed from a drawing, dimensional specification, or worn sample.",
+      },
+      {
+        type: "paragraph",
+        value: "[Request an Engineering Quote](/contact)",
+      },
+      {
+        type: "h2",
+        value: "A Practical Troubleshooting Order",
+      },
+      {
+        type: "paragraph",
+        value:
+          "When a rotary shear slitter starts producing poor edges, use this sequence before changing multiple settings at once:",
+      },
+      {
+        type: "list",
+        value: "",
+        ordered: true,
+        items: [
+          "**Confirm the machine configuration** — friction-driven top knife or positively driven shafts?",
+          "**Measure the current bottom-knife OD.**",
+          "**Verify actual knife peripheral speed against web speed.**",
+          "**Check web tension and cut point.**",
+          "**Verify cant angle, overlap, and side force using the holder manufacturer's procedure.**",
+          "**Measure mounted runout and inspect the holder/mating surfaces.**",
+          "**Inspect the cutting edge under magnification.**",
+          "**Decide whether the knife is suitable for regrinding.**",
+          "**If failures repeat after setup is correct, review the blade material and geometry before ordering the next set.**",
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "This order keeps machine adjustment and tooling decisions separate. It also gives your knife supplier enough information to recommend a replacement based on the actual application rather than on blade dimensions alone.",
+      },
+      {
+        type: "h2",
+        value: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        value: "Frequently Asked Questions",
+        faqItems: [
+          {
+            question:
+              "Is 3–5% overspeed always correct for rotary slitter knives?",
+            answer:
+              "No. It is a common reference range for many tangential shear-slitting systems with a driven bottom knife and friction-driven top knife. Positively driven dual-shaft systems may use a different strategy and may not require bottom-knife overspeed. Follow the machine and knifeholder manufacturer's specification first.",
+          },
+          {
+            question: "Does higher overspeed improve slit quality?",
+            answer:
+              "Not necessarily. If the real problem is a worn edge, incorrect overlap, unstable web tension, runout, or holder condition, increasing speed ratio does not correct the root cause. Verify the setup systematically instead of treating overspeed as the only adjustment.",
+          },
+          {
+            question: "Should the knife diameter be updated after regrinding?",
+            answer:
+              "If the control system calculates surface speed from knife diameter and shaft RPM, yes. Use the actual measured OD after regrinding. Otherwise, the displayed ratio may differ from the real peripheral-speed ratio.",
+          },
+          {
+            question: "Can a worn slitter knife always be reground?",
+            answer:
+              "No. Regrinding is appropriate only when enough usable geometry remains and the blade body is still serviceable. Severe chips, cracks, distortion, insufficient remaining OD, or repeated failure after correct setup can make replacement the better option.",
+          },
+          {
+            question:
+              "What information does Sureay need to quote a replacement knife?",
+            answer:
+              "At minimum, send the knife dimensions and photos. For a more useful engineering review, also include the substrate, line speed, machine or holder model, current blade material if known, and a photo of the worn cutting edge.",
+          },
+        ],
       },
     ],
+    imageAlt:
+      "Two polished circular slitter knives with keyed bores resting on a metal workbench",
   },
+
   {
     id: "custom-length-guillotine-paper-cutter-blades",
     tag: "TECHNICAL GUIDE",
@@ -7396,6 +7952,7 @@ export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
   "concrete-mixing-plant-parts-complete-guide": "Xu Zhengnan",
   "shredder-screen-hole-size-vs-blade-configuration": "Eric",
+  "rotary-slitter-knives-overspeed-ratio": "Eric",
   "paper-straw-blade-adhesive-pickup": "Eric",
   "concrete-mixing-plant-parts-reorder-guide": "Eric",
   "groove-bottom-knives-vs-spacer-stacks": "lynn",

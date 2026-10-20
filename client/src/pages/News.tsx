@@ -138,7 +138,7 @@ export default function CorporateDispatches() {
                     <div className="relative aspect-[16/9] overflow-hidden bg-slate-100 border-b border-slate-200">
                       <img
                         src={post.image}
-                        alt={post.title}
+                        alt={post.imageAlt ?? post.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                         loading="lazy"
                         decoding="async"
