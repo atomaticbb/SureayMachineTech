@@ -516,6 +516,101 @@ export default function NewsDetail() {
                       </div>
                     );
                   }
+                  case "gallery":
+                    return (
+                      <section
+                        key={i}
+                        aria-label={block.value}
+                        className="max-w-[760px] my-10 grid grid-cols-1 sm:grid-cols-2 gap-5"
+                      >
+                        {(block.images ?? []).map((image, imageIndex) => (
+                          <figure
+                            key={imageIndex}
+                            className="rounded-none border border-slate-200 bg-white overflow-hidden"
+                          >
+                            <img
+                              src={image.src}
+                              alt={image.alt}
+                              className="w-full aspect-[4/3] object-contain bg-slate-50"
+                              loading="lazy"
+                              decoding="async"
+                              width={640}
+                              height={480}
+                            />
+                            <figcaption className="border-t border-slate-200 px-4 py-3 text-[13px] leading-relaxed text-slate-600">
+                              {image.href ? (
+                                <Link href={image.href} asChild>
+                                  <a className="font-semibold text-[#001f4d] underline underline-offset-4 decoration-[#e8b84b] hover:text-[#9b7119] transition-colors">
+                                    {image.caption}
+                                  </a>
+                                </Link>
+                              ) : (
+                                image.caption
+                              )}
+                            </figcaption>
+                          </figure>
+                        ))}
+                      </section>
+                    );
+                  case "stats":
+                    return (
+                      <section
+                        key={i}
+                        aria-label={block.value}
+                        className="max-w-[760px] my-8 rounded-none bg-[#001f4d] px-6 py-7 text-white"
+                      >
+                        <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-white/75 mb-6">
+                          {block.value}
+                        </p>
+                        <dl className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                          {(block.stats ?? []).map((stat, statIndex) => (
+                            <div key={statIndex} className="flex flex-col gap-2">
+                              <dt className="text-[13px] leading-relaxed text-white/80">
+                                {stat.label}
+                              </dt>
+                              <dd className="order-first text-3xl font-black tracking-tight text-[#e8b84b]">
+                                {stat.value}
+                              </dd>
+                            </div>
+                          ))}
+                        </dl>
+                      </section>
+                    );
+                  case "cta":
+                    return (
+                      <section
+                        key={i}
+                        aria-labelledby={`article-cta-${i}`}
+                        className="max-w-[760px] my-10 rounded-none border-t-[3px] border-[#e8b84b] bg-[#001f4d] px-6 py-8 sm:px-8 text-white"
+                      >
+                        <h3
+                          id={`article-cta-${i}`}
+                          className="text-xl sm:text-2xl font-bold tracking-tight"
+                        >
+                          {block.value}
+                        </h3>
+                        {block.description && (
+                          <p className="mt-3 text-[14px] leading-relaxed text-white/80">
+                            {block.description}
+                          </p>
+                        )}
+                        <div className="mt-6 flex flex-col sm:flex-row flex-wrap gap-3">
+                          {(block.links ?? []).map((link, linkIndex) => (
+                            <Link key={linkIndex} href={link.href} asChild>
+                              <a
+                                className={`rounded-none px-5 py-3 text-[13px] font-semibold text-center transition-colors ${
+                                  linkIndex === 0
+                                    ? "bg-[#e8b84b] text-[#001f4d] hover:bg-[#f2cb72]"
+                                    : "border border-white/50 text-white hover:bg-white/10"
+                                }`}
+                              >
+                                {link.label}
+                              </a>
+                            </Link>
+                          ))}
+                        </div>
+                      </section>
+                    );
                   case "faq":
                     return (
                       <div key={i} className="max-w-[760px] my-8 space-y-5">

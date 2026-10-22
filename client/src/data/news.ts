@@ -14,8 +14,15 @@ export interface NewsContent {
     | "image"
     | "table"
     | "faq"
+    | "gallery"
+    | "stats"
+    | "cta"
     | "list";
   value: string;
+  images?: { src: string; alt: string; caption: string; href?: string }[];
+  stats?: { value: string; label: string }[];
+  description?: string;
+  links?: { label: string; href: string }[];
   /** Optional accessible description and visible caption for article figures. */
   imageAlt?: string;
   imageCaption?: string;
@@ -110,6 +117,361 @@ function sortDispatchesByDate(
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
+  {
+    id: "concrete-mixer-wear-parts",
+    tag: "PRODUCT INSIGHT",
+    date: "21.OCT.2026",
+    title: "Concrete Mixer Wear Parts: Liners, Blades, Mixing Arms & Shaft Seals",
+    excerpt:
+      "Replacement liners, blades, mixing arms, scrapers and shaft seal components for concrete batching plants. Explore Sureay’s wear-part range and the casting capability behind it.",
+    image: "/images/news/mixer-wear-parts-oem-matching-arms.webp",
+    imageAlt:
+      "Concrete mixer mixing arms and liner plates arranged on the workshop floor",
+    readTime: "6 MIN",
+    seoTitle: "Concrete Mixer Wear Parts: Liners, Blades & Arms | Sureay",
+    metaDescription:
+      "Explore Sureay concrete mixer wear parts: liners, blades, mixing arms, scrapers and shaft seals, backed by lost foam casting and wear-resistant materials.",
+    keywords:
+      "concrete mixer wear parts, concrete mixer spare parts, concrete mixer liners, concrete mixer blades, mixing arms, mixer shaft seals, twin shaft mixer wear parts, aftermarket concrete mixer parts, lost foam casting",
+    content: [
+      {
+        type: "h2",
+        value: "Concrete Mixer Wear Parts for Batching Plants",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay supplies **concrete mixer wear parts** for the abrasive conditions inside concrete batching plant mixers. Our range brings together liner plates, mixing blades and paddles, mixing arms, scrapers and shaft seal components, with replacement options for widely used mixer brands and series.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "From an individual replacement blade to a complete liner set, the range covers the parts that keep material moving through the mixing chamber. Wear-resistant iron castings, tough cast-steel arms and shaft-end sealing components serve ready-mix and precast concrete production.",
+      },
+      {
+        type: "cta",
+        value: "Find Your Concrete Mixer Wear Parts",
+        description: "Explore the range or contact Sureay for replacement parts.",
+        links: [
+          {
+            label: "Request a Quote",
+            href: "/contact",
+          },
+          {
+            label: "View Concrete Mixer Parts",
+            href: "/mixer-wear-parts/concrete-mixing-plant",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        value: "Main Concrete Mixer Wear Parts We Supply",
+      },
+      {
+        type: "list",
+        value: "Main concrete mixer wear parts",
+        items: [
+          "[**Liner Plates**](/mixer-wear-parts/concrete-mixing-plant/concrete-liner-plate) — Chamber protection, supplied as individual plates or complete sets.",
+          "[**Blades & Paddles**](/mixer-wear-parts/concrete-mixing-plant/concrete-mixer-blade) — Wear-resistant castings that move and mix the batch.",
+          "[**Mixing Arms**](/mixer-wear-parts/concrete-mixing-plant/concrete-mixing-arm) — Tough cast-steel supports for mixer blades and scrapers.",
+          "[**Scraper Blades**](/mixer-wear-parts/concrete-mixing-plant/concrete-scraper) — Replacement wear parts for chamber walls and floors.",
+          "[**Shaft Seal Components**](/mixer-wear-parts/concrete-mixing-plant/concrete-wear-seal) — Sealing parts for slurry containment and shaft-end protection.",
+        ],
+      },
+      {
+        type: "gallery",
+        value: "Concrete mixer wear parts gallery",
+        images: [
+          {
+            src: "/images/news/concrete-mixer-wear-parts/liner-plates.webp",
+            alt: "Concrete mixer liner plate with two recessed mounting holes",
+            caption: "Concrete mixer liner plates",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-liner-plate",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/mixer-blades.webp",
+            alt: "Cast concrete mixer blade with two mounting holes",
+            caption: "Mixing blades and paddles",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-mixer-blade",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/mixing-arms.webp",
+            alt: "Concrete mixer mixing arm with a split hub and slotted mounting holes",
+            caption: "Concrete mixer mixing arm",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-mixing-arm",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/scraper-blades.webp",
+            alt: "Concrete mixer replacement scraper blade",
+            caption: "Concrete mixer scrapers",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-scraper",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/shaft-seal-components.webp",
+            alt: "Concrete mixer inner seal ring for the shaft sealing assembly",
+            caption: "Shaft seal components: inner seal ring",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-wear-seal",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/mixing-paddles.webp",
+            alt: "Cast paddle for a concrete mixer replacement application",
+            caption: "Replacement mixing paddles",
+            href: "/mixer-wear-parts/concrete-mixing-plant/concrete-mixer-blade",
+          },
+        ],
+      },
+      {
+        type: "h2",
+        value: "Replacement Parts for Popular Concrete Mixer Brands",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Sureay’s concrete mixer wear-part catalog covers replacement applications for **SICOMA, BHS, Liebherr, MEKA, Simem, SANY, Zoomlion, TEKA and Eirich** equipment. The range includes liners, blades, arms, scrapers and sealing components for the mixer configurations used in batching plants worldwide.",
+      },
+      {
+        type: "h3",
+        value: "Core Mixer Series and Model Examples",
+      },
+      {
+        type: "table",
+        value: "Popular concrete mixer brands and representative models",
+        tableHeaders: ["Brand", "Core series / model examples", "Mixer type"],
+        tableRows: [
+          [
+            "SICOMA",
+            "MAO 1500, MAO 2000, MAO 3000; MPC 1000, MPC 1500, MPC 2000",
+            "MAO: twin-shaft; MPC: planetary",
+          ],
+          ["BHS", "DKX 2.25, DKX 3.00, DKX 4.50", "Twin-shaft batch mixer"],
+          [
+            "Liebherr",
+            "DW 2.5, DW 3.0, DW 4.5; RIM 1.5-D, RIM 2.25-D",
+            "DW: twin-shaft; RIM: ring-pan",
+          ],
+          [
+            "MEKA",
+            "MB-T 1.0, MB-T 2.0, MB-T 3.33; MB-P 0.5, MB-P 1.0, MB-P 2.0",
+            "MB-T: twin-shaft; MB-P: planetary",
+          ],
+          [
+            "SIMEM",
+            "MSO; SUN 751, SUN 1501, SUN 2501",
+            "MSO: twin-shaft; SUN: planetary",
+          ],
+          [
+            "TEKA",
+            "THZ 1500, THZ 3000; TPZ 750, TPZ 2250",
+            "THZ: pan; TPZ: planetary",
+          ],
+          ["Eirich", "R12, RV16, RV19, RV24", "Intensive mixer"],
+          ["SANY", "JS1500, JS2000CK, JS3000E", "Twin-shaft mixer"],
+          ["Zoomlion", "JS1000, JS1500, JS2000, JS3000", "Twin-shaft mixer"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our aftermarket range gives plant operators, spare-parts distributors and service companies access to individual components and grouped wear-part supply. Looking for replacement parts for your mixer brand or series? [Contact Sureay](/contact) for available options.",
+      },
+      {
+        type: "h2",
+        value: "Twin-Shaft and Planetary Mixer Wear Parts",
+      },
+      {
+        type: "paragraph",
+        value:
+          "**Twin-shaft mixer wear parts** include chamber liners, mixing paddles, supporting arms, scrapers and shaft-end seals. Sureay brings these product families together for plants sourcing parts for both shafts and the surrounding mixing chamber.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "The range also serves planetary concrete mixer applications, with wear components for the chamber surfaces and rotating mixing tools. Whether the order is for replacement paddles or a wider set of chamber parts, our [concrete mixing plant range](/mixer-wear-parts/concrete-mixing-plant) provides a direct starting point.",
+      },
+      {
+        type: "h2",
+        value: "Wear-Resistant Materials for Mixer Parts",
+      },
+      {
+        type: "h3",
+        value: "High-Chromium Cast Iron",
+      },
+      {
+        type: "paragraph",
+        value:
+          "High-chromium cast iron is available for liners, blades and scrapers exposed to abrasive aggregate. Its hard carbide structure provides wear resistance on the surfaces that work directly against the batch. Controlled casting and heat treatment support the intended properties of the finished wear component.",
+      },
+      {
+        type: "h3",
+        value: "Ni-Hard Cast Iron",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Ni-Hard is an established wear-resistant cast iron used in abrasive industrial service. Sureay offers Ni-Hard options within the concrete mixer wear-part range, including chamber liners. It provides another casting option for replacement components working in repeated mixing cycles.",
+      },
+      {
+        type: "h3",
+        value: "Tough Cast Steel for Mixing Arms",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Load-bearing mixing arms use tough cast steel, including ZG310-570, to carry the forces between the shaft and the mixing tools. The range combines abrasion-resistant iron for wear faces with cast-steel options for supporting components.",
+      },
+      {
+        type: "h2",
+        value: "Lost Foam Casting for Concrete Mixer Wear Parts",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Lost foam casting is a key process behind Sureay’s cast mixer wear parts. A shaped foam pattern defines the component, and molten metal replaces the pattern during pouring. This approach supports complex contours, shaped arm bodies and mounting features within a single casting.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "For mixer wear parts, that flexibility supports repeatable profiles across liners, blades and arms. Producing more of the component’s shape during casting can also reduce the amount of material that needs to be removed during finishing.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our manufacturing approach brings together **wear-resistant materials, controlled casting and heat treatment** to support consistent wear performance and long service life. The focus is a well-made finished component: the casting shape, material structure and working surfaces all contribute.",
+      },
+      {
+        type: "h2",
+        value: "Large-Scale Casting Capability",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Our mixer wear-part production combines multiple molding processes with **six automatic melting furnace systems**. Our annual casting capacity reaches **83,000 tonnes** across our production lines, including a dedicated lost foam casting line.",
+      },
+      {
+        type: "stats",
+        value: "Our casting capacity",
+        stats: [
+          {
+            value: "83,000",
+            label: "tonnes / year across casting lines",
+          },
+          {
+            value: "6",
+            label: "automatic melting furnace systems",
+          },
+          {
+            value: "15,000",
+            label: "tonnes / year in lost foam casting",
+          },
+        ],
+      },
+      {
+        type: "table",
+        value: "Our casting lines",
+        tableHeaders: ["Casting process", "Annual capacity"],
+        tableRows: [
+          ["DISA vertical molding", "30,000 tonnes"],
+          ["Automated digital cold-core-box / shell molding", "36,000 tonnes"],
+          ["Lost foam casting", "15,000 tonnes"],
+          ["Sodium silicate and coated-sand molding", "2,000 tonnes"],
+        ],
+      },
+      {
+        type: "paragraph",
+        value:
+          "This mix of casting processes provides the manufacturing base behind a broad range of wear-part shapes and batch production. Melting, molding and downstream finishing work together to support repeat replacement supply.",
+      },
+      {
+        type: "h2",
+        value: "Heat Treatment & Finished-Part Quality",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Heat treatment develops the intended material properties of wear-resistant castings. Our facilities include a tunnel-type heat-treatment line rated at **25 tonnes per day**, a gas-fired furnace at **50 tonnes per day**, a car-bottom furnace at **20 tonnes per day**, and additional heat-treatment equipment rated at **10 tonnes per day**.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "Alongside casting and heat treatment, our equipment range includes physical testing facilities and coordinate measurement. We use these capabilities to support material testing and dimensional inspection as castings move toward finished parts.",
+      },
+      {
+        type: "h3",
+        value: "From Casting to Finished Mixer Wear Parts",
+      },
+      {
+        type: "gallery",
+        value: "Our casting and heat-treatment facilities",
+        images: [
+          {
+            src: "/images/news/concrete-mixer-wear-parts/shell-moulding-line.webp",
+            alt: "Our automated shell molding production equipment",
+            caption: "Our automated shell molding line",
+          },
+          {
+            src: "/images/news/concrete-mixer-wear-parts/heat-treatment-line.webp",
+            alt: "Our gas-fired tunnel heat-treatment line",
+            caption: "Our gas-fired tunnel heat-treatment line",
+          },
+        ],
+      },
+      {
+        type: "list",
+        value: "Manufacturing stages",
+        ordered: true,
+        items: [
+          "**Melting and molding:** prepare the alloy and form the part geometry through lost foam or other molding processes.",
+          "**Heat treatment:** develop the specified material properties for the casting.",
+          "**Cleaning and finishing:** remove molding residue and finish the surfaces and mounting features.",
+          "**Inspection:** check the finished components before packing for supply.",
+        ],
+      },
+      {
+        type: "h2",
+        value: "Why Choose Sureay for Concrete Mixer Wear Parts",
+      },
+      {
+        type: "image",
+        value:
+          "/images/news/concrete-mixer-wear-parts/physical-testing-laboratory.webp",
+        imageAlt: "Physical testing equipment in our laboratory",
+        imageCaption:
+          "Our physical testing laboratory supporting casting quality control.",
+      },
+      {
+        type: "paragraph",
+        value:
+          "We combine a focused mixer wear-part range with casting expertise and established production facilities. Our team brings the main chamber wear components and shaft seal products together in one product range.",
+      },
+      {
+        type: "list",
+        value: "Sureay supply capabilities",
+        items: [
+          "**A broad product range:** concrete mixer liners, blades, paddles, arms, scrapers and shaft seal components.",
+          "**Replacement supply for established mixer brands:** options across twin-shaft and planetary applications.",
+          "**Wear-resistant material options:** high-chromium iron, Ni-Hard and tough cast steel for different component roles.",
+          "**Casting and finishing capability:** lost foam casting, multiple molding processes, heat treatment and inspection.",
+          "**Individual parts and grouped supply:** from a replacement component to liner sets and wider wear-part orders.",
+        ],
+      },
+      {
+        type: "cta",
+        value: "Get Concrete Mixer Wear Parts from Sureay",
+        description:
+          "Contact our team for replacement liners, blades, mixing arms, scrapers and shaft seal components for your concrete plant.",
+        links: [
+          {
+            label: "Request a Quote",
+            href: "/contact",
+          },
+          {
+            label: "Explore the Product Range",
+            href: "/mixer-wear-parts/concrete-mixing-plant",
+          },
+        ],
+      },
+    ],
+  },
   {
     id: "concrete-mixing-plant-parts-complete-guide",
     tag: "TECHNICAL GUIDE",
@@ -7950,6 +8312,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "concrete-mixer-wear-parts": "Eric",
   "concrete-mixing-plant-parts-complete-guide": "Xu Zhengnan",
   "shredder-screen-hole-size-vs-blade-configuration": "Eric",
   "rotary-slitter-knives-overspeed-ratio": "Eric",
