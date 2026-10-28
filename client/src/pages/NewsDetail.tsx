@@ -153,7 +153,7 @@ export default function NewsDetail() {
   const h2Sections = article.content
     .filter((b) => b.type === "h2")
     .map((b, i) => ({
-      id: `section-${i}`,
+      id: b.id ?? `section-${i}`,
       label: formatHeadingCase(b.value),
     }));
 
@@ -171,6 +171,8 @@ export default function NewsDetail() {
     <div className="min-h-screen bg-[#f4f6f8] antialiased">
       <SEO
         title={article.seoTitle ?? article.title}
+        exactTitle={article.exactSeoTitle}
+        ogType="article"
         description={article.metaDescription ?? article.excerpt}
         canonicalUrl={`/news/${article.id}`}
         keywords={article.keywords}
@@ -188,11 +190,15 @@ export default function NewsDetail() {
             description: article.excerpt,
             image: [`https://sureay.com${article.image}`],
             datePublished: formatDisplayDate(article.date),
-            dateModified: formatDisplayDate(article.date),
+            dateModified: formatDisplayDate(
+              article.modifiedDate ?? article.date
+            ),
             author: {
-              "@type": "Person",
+              "@type": article.authorType ?? "Person",
               name: author,
-              jobTitle: authorInfo.title,
+              ...(article.authorType === "Organization"
+                ? { url: "https://sureay.com/about" }
+                : { jobTitle: authorInfo.title }),
             },
             publisher: {
               "@type": "Organization",
@@ -250,7 +256,10 @@ export default function NewsDetail() {
                       className="h-3 w-px bg-slate-300"
                       aria-hidden="true"
                     />
-                    <time className="font-mono text-[10px] font-semibold text-slate-600">
+                    <time
+                      dateTime={formatDisplayDate(article.date)}
+                      className="font-mono text-[10px] font-semibold text-slate-600"
+                    >
                       {formatDisplayDate(article.date)}
                     </time>
                     <span className="text-slate-300 select-none" aria-hidden="true">
@@ -268,20 +277,29 @@ export default function NewsDetail() {
                 </h1>
 
                 {/* Excerpt */}
-                <p className="mt-5 text-[16px] text-slate-600 leading-relaxed max-w-[60ch]">
-                  {article.excerpt}
-                </p>
+                {!article.keyFacts?.label && (
+                  <p className="mt-5 text-[16px] text-slate-600 leading-relaxed max-w-[60ch]">
+                    {article.excerpt}
+                  </p>
+                )}
 
                 {/* Answer-first key facts */}
                 {article.keyFacts && (
                   <div className="mt-6 max-w-[60ch] border border-slate-200 bg-slate-50/60 px-5 py-4">
+                    {article.keyFacts.label && (
+                      <p className="font-mono text-[11px] font-bold text-[#001f4d] tracking-[0.12em] mb-3 uppercase">
+                        {article.keyFacts.label}
+                      </p>
+                    )}
                     <p className="text-[14px] text-slate-700 leading-relaxed">
                       {article.keyFacts.intro}
                     </p>
-                    <p className="font-mono text-[9px] text-slate-500 tracking-[0.18em] mt-4 mb-2 uppercase">
-                      Quick Numbers
-                    </p>
-                    <ul className="space-y-1.5">
+                    {!article.keyFacts.label && (
+                      <p className="font-mono text-[9px] text-slate-500 tracking-[0.18em] mt-4 mb-2 uppercase">
+                        Quick Numbers
+                      </p>
+                    )}
+                    <ul className="space-y-1.5 mt-3">
                       {article.keyFacts.bullets.map((b, i) => (
                         <li
                           key={i}
@@ -295,6 +313,19 @@ export default function NewsDetail() {
                       ))}
                     </ul>
                   </div>
+                )}
+
+                {article.modifiedDate && (
+                  <p className="mt-4 text-[12px] text-slate-500">
+                    Published{" "}
+                    <time dateTime={formatDisplayDate(article.date)}>
+                      {formatDisplayDate(article.date)}
+                    </time>{" "}
+                    · Updated{" "}
+                    <time dateTime={formatDisplayDate(article.modifiedDate)}>
+                      {formatDisplayDate(article.modifiedDate)}
+                    </time>
+                  </p>
                 )}
 
                 {/* Author row */}
@@ -325,8 +356,9 @@ export default function NewsDetail() {
                   })}
                   alt={article.imageAlt ?? formatHeadingCase(article.title)}
                   className="w-full aspect-[4/3] lg:aspect-auto lg:h-[420px] object-cover"
-                  width={920}
-                  height={690}
+                  width={article.imageWidth ?? 920}
+                  height={article.imageHeight ?? 690}
+                  loading="eager"
                   fetchPriority="high"
                   decoding="async"
                 />
@@ -341,10 +373,13 @@ export default function NewsDetail() {
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
           {/* Mobile TOC */}
           {h2Sections.length > 0 && (
-            <details className="lg:hidden mb-8 border border-slate-200 bg-white group">
+            <details
+              open={!!article.keyFacts?.label}
+              className="lg:hidden mb-8 border border-slate-200 bg-white group"
+            >
               <summary className="px-5 py-3.5 cursor-pointer list-none flex items-center justify-between select-none">
                 <span className="font-mono text-[10px] text-slate-600 tracking-widest">
-                  JUMP TO SECTION
+                  In this guide
                 </span>
                 <svg
                   className="w-4 h-4 text-slate-400 group-open:rotate-180 transition-transform"
@@ -360,8 +395,11 @@ export default function NewsDetail() {
                   />
                 </svg>
               </summary>
-              <nav className="border-t border-slate-200 px-5 py-3">
-                {h2Sections.map((s) => (
+              <nav
+                aria-label="In this guide"
+                className="border-t border-slate-200 px-5 py-3"
+              >
+                {h2Sections.map(s => (
                   <a
                     key={s.id}
                     href={`#${s.id}`}
@@ -383,10 +421,10 @@ export default function NewsDetail() {
                   <div className="border border-slate-200 bg-white">
                     <div className="border-b border-slate-200 px-5 py-3">
                       <p className="font-mono text-[11px] text-slate-600 tracking-widest font-semibold">
-                        Contents
+                        In this guide
                       </p>
                     </div>
-                    <nav className="px-5 py-3">
+                    <nav aria-label="In this guide" className="px-5 py-3">
                       {h2Sections.map((s, si) => (
                         <a
                           key={s.id}
@@ -430,7 +468,7 @@ export default function NewsDetail() {
               {article.content.map((block, i) => {
                 switch (block.type) {
                   case "h2": {
-                    const sectionId = `section-${h2Idx++}`;
+                    const sectionId = h2Sections[h2Idx++].id;
                     return (
                       <h2
                         key={i}
@@ -500,8 +538,8 @@ export default function NewsDetail() {
                             className="w-full max-h-[400px] object-contain bg-slate-50"
                             loading="lazy"
                             decoding="async"
-                            width={1200}
-                            height={800}
+                            width={block.imageWidth ?? 1200}
+                            height={block.imageHeight ?? 800}
                           />
                           <div className="border-t border-slate-200 bg-[#f8fafc] px-5 py-3 flex items-center gap-3">
                             <span className="font-mono text-[9px] text-[#001f4d] tracking-[0.18em] font-bold flex-shrink-0">
@@ -636,6 +674,11 @@ export default function NewsDetail() {
                         className="my-10 -mx-6 px-6 sm:mx-0 sm:px-0 overflow-x-auto"
                       >
                         <table className="w-full min-w-[520px] border-collapse text-[13px] lg:text-[14px]">
+                          {block.tableCaption && (
+                            <caption className="text-left text-[13px] text-slate-600 mb-3">
+                              {block.tableCaption}
+                            </caption>
+                          )}
                           {block.tableHeaders &&
                             block.tableHeaders.length > 0 && (
                               <thead>
@@ -643,6 +686,7 @@ export default function NewsDetail() {
                                   {block.tableHeaders.map((header, hi) => (
                                     <th
                                       key={hi}
+                                      scope="col"
                                       className="px-4 py-3.5 text-left font-mono text-[9px] tracking-widest text-white border-r border-white/10 last:border-r-0"
                                     >
                                       {header}

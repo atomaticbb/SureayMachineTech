@@ -72,6 +72,8 @@ export interface BreadcrumbItem {
 
 export interface SEOProps {
   title: string;
+  exactTitle?: boolean;
+  ogType?: "website" | "article";
   description: string;
   canonicalUrl?: string;
   productData?: ProductData;
@@ -103,6 +105,8 @@ function safeJson(value: unknown): string {
 
 export default function SEO({
   title,
+  exactTitle = false,
+  ogType = "website",
   description,
   canonicalUrl,
   productData,
@@ -113,7 +117,7 @@ export default function SEO({
   preloadImage,
 }: SEOProps) {
   const lang = useLang();
-  const fullTitle = normalizeTitle(title);
+  const fullTitle = exactTitle ? title.trim() : normalizeTitle(title);
 
   // English-only sections — no language prefix or multilingual hreflang.
   // News, Privacy Policy, and Terms exist only in English, as do product
@@ -297,7 +301,7 @@ export default function SEO({
       )}
 
       {/* Open Graph */}
-      <meta property="og:type" content={productData ? "product" : "website"} />
+      <meta property="og:type" content={productData ? "product" : ogType} />
       <meta property="og:locale" content={ogLocale[lang]} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />

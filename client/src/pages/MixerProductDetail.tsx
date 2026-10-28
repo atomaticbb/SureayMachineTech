@@ -499,6 +499,34 @@ export default function MixerProductDetail() {
           </section>
         </div>
 
+        {lang === "en" &&
+          [
+            "concrete-liner-plate",
+            "concrete-mixer-blade",
+            "concrete-mixing-arm",
+          ].includes(part.id) && (
+            <section
+              aria-label="Mixer material selection guide"
+              className="max-w-7xl mx-auto px-6 sm:px-8 mt-12"
+            >
+              <div className="border-l-[3px] border-[#e8b84b] bg-slate-50 p-6">
+                <h2 className="font-bold text-xl text-[#001f4d] mb-3">
+                  Choose the material for your mixer duty
+                </h2>
+                <p className="text-sm text-slate-600 mb-4">
+                  Compare cast wear irons and wear plate for liners, blade tips
+                  and structural components.
+                </p>
+                <Link
+                  href="/news/concrete-mixer-liner-material-ni-hard-vs-high-chrome"
+                  className="font-semibold text-[#001f4d] underline underline-offset-4"
+                >
+                  Concrete mixer liners: Ni-Hard vs high-chrome vs wear plate →
+                </Link>
+              </div>
+            </section>
+          )}
+
         {/* Zone 5 — Related mixer parts (same category only) */}
         {related.length > 0 && (
           <div className="mt-16">

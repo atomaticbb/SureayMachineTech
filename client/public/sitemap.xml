@@ -8071,7 +8071,7 @@
   <!-- News (English only — no multilingual variants) -->
   <url>
     <loc>https://sureay.com/news</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -8358,4 +8358,10 @@
     <priority>0.6</priority>
   </url>
 
+  <url>
+    <loc>https://sureay.com/news/concrete-mixer-liner-material-ni-hard-vs-high-chrome</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

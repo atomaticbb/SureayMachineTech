@@ -3,6 +3,8 @@
  * Single source of truth for all news/dispatch articles.
  */
 
+import { mixerLinerMaterialArticle } from "./mixerLinerMaterialArticle";
+
 // ── Interfaces ────────────────────────────────────────────────────────────────
 
 export interface NewsContent {
@@ -19,6 +21,10 @@ export interface NewsContent {
     | "cta"
     | "list";
   value: string;
+  id?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  tableCaption?: string;
   images?: { src: string; alt: string; caption: string; href?: string }[];
   stats?: { value: string; label: string }[];
   description?: string;
@@ -41,10 +47,15 @@ export interface DispatchArticle {
   id: string;
   tag: string;
   date: string;
+  modifiedDate?: string;
+  authorType?: "Person" | "Organization";
+  exactSeoTitle?: boolean;
   title: string;
   excerpt: string;
   image: string;
   imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   readTime: string;
   isFeatured?: boolean;
   seoTitle?: string;
@@ -53,11 +64,15 @@ export interface DispatchArticle {
   relatedProductIds?: string[];
   /** Answer-first key facts, rendered between the excerpt and author byline
    *  so AI engines and skimming readers get a direct answer above the fold. */
-  keyFacts?: { intro: string; bullets: string[] };
+  keyFacts?: { label?: string; intro: string; bullets: string[] };
   content: NewsContent[];
 }
 
-export type DispatchAuthor = "Eric" | "lynn" | "Xu Zhengnan";
+export type DispatchAuthor =
+  | "Eric"
+  | "lynn"
+  | "Xu Zhengnan"
+  | "Sureay Machinery Technology";
 
 interface DispatchAuthorInfo {
   title: string;
@@ -65,6 +80,10 @@ interface DispatchAuthorInfo {
 }
 
 const DISPATCH_AUTHOR_INFO: Record<DispatchAuthor, DispatchAuthorInfo> = {
+  "Sureay Machinery Technology": {
+    title: "Mixer wear parts supplier",
+    bio: "Sureay supplies cast liners, mixing blades, mixing arms and scrapers for concrete mixing plants. This guide combines our published product range with cited materials research and technical specifications.",
+  },
   Eric: {
     title: "International Sales Manager",
     bio: "Eric specializes in the cross-border B2B trade of industrial machine blades, offering practical expertise in material selection (such as D2 and Tungsten Carbide) and customized cutting solutions to help global clients maximize production efficiency.",
@@ -117,6 +136,7 @@ function sortDispatchesByDate(
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
+  mixerLinerMaterialArticle,
   {
     id: "concrete-mixer-wear-parts",
     tag: "PRODUCT INSIGHT",
@@ -8312,6 +8332,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  "concrete-mixer-liner-material-ni-hard-vs-high-chrome":
+    "Sureay Machinery Technology",
   "concrete-mixer-wear-parts": "Eric",
   "concrete-mixing-plant-parts-complete-guide": "Xu Zhengnan",
   "shredder-screen-hole-size-vs-blade-configuration": "Eric",
