@@ -12,7 +12,8 @@
  */
 
 import { useState, useEffect, useRef, useMemo } from "react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
+import Link from "@/components/common/SiteLink";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import {

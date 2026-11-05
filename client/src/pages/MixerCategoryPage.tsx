@@ -9,7 +9,8 @@
  * FAQPage schema does not duplicate the product pages'.
  */
 
-import { useRoute, Redirect, Link } from "wouter";
+import { useRoute, Redirect } from "wouter";
+import Link from "@/components/common/SiteLink";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight } from "lucide-react";
 

@@ -17,6 +17,8 @@ import ProductFAQ, {
   type ProductFaqData,
 } from "@/components/product-detail/ProductFAQ";
 import { useTranslation } from "@/lib/useTranslation";
+import { useLang } from "@/contexts/LangContext";
+import { getBladeById } from "@/data/locales";
 
 // ─── Capabilities ─────────────────────────────────────────────────────────────
 // keys resolve via t() at render time — see client/src/locales/*.json "custom.*"
@@ -216,6 +218,7 @@ const FAQ_KEYS = {
 
 export default function CustomBlades() {
   const { t } = useTranslation();
+  const specialBlade = getBladeById("special-shaped-blades", useLang());
 
   const faqData: ProductFaqData = {
     technical: FAQ_KEYS.technical.map(({ q, a }) => ({
@@ -401,6 +404,14 @@ export default function CustomBlades() {
             </h2>
             <div className="w-12 h-[3px] bg-slate-300 mt-6" />
 
+            {specialBlade && (
+              <Link
+                href={`/products/${specialBlade.id}`}
+                className="mt-6 inline-block font-semibold text-[#001f4d] underline underline-offset-4"
+              >
+                {specialBlade.fullName}
+              </Link>
+            )}
             <div className="mt-10 lg:mt-14">
               {SHOWCASE.map((block, index) => {
                 const reverse = index % 2 === 1;

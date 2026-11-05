@@ -76,6 +76,9 @@ export default function BladeListPage() {
   const lang = useLang();
   const { t } = useTranslation();
   const blades = getBlades(lang);
+  const specialBlade = blades.find(
+    blade => blade.id === "special-shaped-blades"
+  );
   // The query string is the single source of truth for facets + page, so a
   // filtered view is shareable and the back button steps through it.
   const [searchParams, setSearchParams] = useSearchParams();
@@ -466,6 +469,14 @@ export default function BladeListPage() {
             </div>
 
             <div className="mt-6 lg:mt-0">
+              {specialBlade && (
+                <Link
+                  href={`/products/${specialBlade.id}`}
+                  className="mb-4 inline-block font-semibold text-[#001f4d] underline underline-offset-4"
+                >
+                  {specialBlade.fullName}
+                </Link>
+              )}
               {/* Result count + removable active-facet pills — one slim row so
                   the cards start as high up the page as possible. */}
               <div className="flex items-center flex-wrap gap-1.5 pb-3 mb-4 border-b border-slate-200">

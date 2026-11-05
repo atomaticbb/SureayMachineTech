@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import Link from "@/components/common/SiteLink";
 import { ArrowRight } from "lucide-react";
 import { SORTED_DISPATCHES } from "@/data/news";
 import { useTranslation } from "@/lib/useTranslation";

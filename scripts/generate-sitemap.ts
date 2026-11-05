@@ -31,7 +31,7 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT = path.resolve(__dirname, "../client/public/sitemap.xml");
 const BASE_URL = "https://sureay.com";
-const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+// Omit lastmod when no verified content modification date is available.
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -54,14 +54,14 @@ const MONTH_MAP: Record<string, string> = {
 function parseDate(raw: string): string {
   const [dd, mon, yyyy] = raw.split(".");
   const mm = MONTH_MAP[mon?.toUpperCase()];
-  if (!mm || !dd || !yyyy) return TODAY;
+  if (!mm || !dd || !yyyy) return "";
   return `${yyyy}-${mm}-${dd.padStart(2, "0")}`;
 }
 
 interface UrlEntry {
   /** Canonical path (without language prefix), e.g. "/products/granulator-blades". */
   path: string;
-  lastmod: string;
+  lastmod?: string;
   changefreq: string;
   priority: string;
 }
@@ -93,7 +93,7 @@ function expandUrlEntry(entry: UrlEntry): string[] {
       "  <url>",
       `    <loc>${loc}</loc>`,
       ...alternateLines,
-      `    <lastmod>${entry.lastmod}</lastmod>`,
+      ...(entry.lastmod ? [`    <lastmod>${entry.lastmod}</lastmod>`] : []),
       `    <changefreq>${entry.changefreq}</changefreq>`,
       `    <priority>${entry.priority}</priority>`,
       "  </url>",
@@ -104,10 +104,10 @@ function expandUrlEntry(entry: UrlEntry): string[] {
 // ── Route definitions ─────────────────────────────────────────────────────────
 
 const corePages: UrlEntry[] = [
-  { path: "/", lastmod: TODAY, changefreq: "weekly", priority: "1.0" },
-  { path: "/products", lastmod: TODAY, changefreq: "weekly", priority: "0.9" },
-  { path: "/about", lastmod: TODAY, changefreq: "yearly", priority: "0.6" },
-  { path: "/contact", lastmod: TODAY, changefreq: "yearly", priority: "0.7" },
+  { path: "/", changefreq: "weekly", priority: "1.0" },
+  { path: "/products", changefreq: "weekly", priority: "0.9" },
+  { path: "/about", changefreq: "yearly", priority: "0.6" },
+  { path: "/contact", changefreq: "yearly", priority: "0.7" },
 ];
 
 // Privacy Policy / Terms — English-only (no multilingual variants), same as
@@ -115,51 +115,44 @@ const corePages: UrlEntry[] = [
 const legalPages: UrlEntry[] = [
   {
     path: "/privacy-policy",
-    lastmod: TODAY,
     changefreq: "yearly",
     priority: "0.3",
   },
-  { path: "/terms", lastmod: TODAY, changefreq: "yearly", priority: "0.3" },
+  { path: "/terms", changefreq: "yearly", priority: "0.3" },
 ];
 
 const industryPages: UrlEntry[] = [
   {
     path: "/plastic-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/metal-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/paper-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/new-energy-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/converting-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
   {
     path: "/wood-industry",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.8",
   },
-  { path: "/custom", lastmod: TODAY, changefreq: "monthly", priority: "0.8" },
+  { path: "/custom", changefreq: "monthly", priority: "0.8" },
 ];
 
 const EXCLUDED_CATEGORY_SLUGS = new Set([
@@ -169,7 +162,6 @@ const EXCLUDED_CATEGORY_SLUGS = new Set([
 
 const allProductPages: UrlEntry[] = blades.map(b => ({
   path: `/products/${b.id}`,
-  lastmod: TODAY,
   changefreq: "monthly",
   priority: "0.85",
 }));
@@ -187,7 +179,6 @@ const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
   c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug)
 ).map(c => ({
   path: `/categories/${c.slug}`,
-  lastmod: TODAY,
   changefreq: "monthly",
   priority: "0.85",
 }));
@@ -197,19 +188,16 @@ const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
 const mixerPages: UrlEntry[] = [
   {
     path: "/mixer-wear-parts",
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.9",
   },
   ...mixerCategories.map(c => ({
     path: c.link,
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.85",
   })),
   ...mixerParts.map(p => ({
     path: p.link,
-    lastmod: TODAY,
     changefreq: "monthly",
     priority: "0.85",
   })),
@@ -218,7 +206,7 @@ const mixerPages: UrlEntry[] = [
 const latestNewsDate = ALL_DISPATCHES.reduce((latest, article) => {
   const parsed = parseDate(article.date);
   return parsed > latest ? parsed : latest;
-}, TODAY);
+}, "");
 
 const newsListPage: UrlEntry = {
   path: "/news",
@@ -242,7 +230,7 @@ function singleUrlEntry(entry: UrlEntry): string {
   return [
     "  <url>",
     `    <loc>${BASE_URL}${entry.path}</loc>`,
-    `    <lastmod>${entry.lastmod}</lastmod>`,
+    ...(entry.lastmod ? [`    <lastmod>${entry.lastmod}</lastmod>`] : []),
     `    <changefreq>${entry.changefreq}</changefreq>`,
     `    <priority>${entry.priority}</priority>`,
     "  </url>",

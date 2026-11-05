@@ -157,7 +157,7 @@ export default function Contact() {
             {t("contactPage.hero.eyebrow")}
           </p>
 
-          <h1 className="text-[clamp(1.9rem,4.2vw,3.25rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 whitespace-nowrap">
+          <h1 className="text-[clamp(1.9rem,4.2vw,3.25rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 break-words">
             {t("contactPage.hero.headline")}
           </h1>
 

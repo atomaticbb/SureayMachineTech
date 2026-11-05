@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import Link from "@/components/common/SiteLink";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent } from "@/lib/gtag";
 import { getMixerCategories } from "@/data/locales";

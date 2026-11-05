@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "wouter";
+import Link from "@/components/common/SiteLink";
 import type { ContactSubmissionResponse } from "@shared/types";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent, trackLead } from "@/lib/gtag";

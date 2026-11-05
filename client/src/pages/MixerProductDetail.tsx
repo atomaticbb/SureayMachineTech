@@ -10,7 +10,8 @@
  */
 
 import { useEffect, useState } from "react";
-import { useRoute, Redirect, Link } from "wouter";
+import { useRoute, Redirect } from "wouter";
+import Link from "@/components/common/SiteLink";
 import { ArrowRight } from "lucide-react";
 
 import Navbar from "@/components/layout/Navbar";
